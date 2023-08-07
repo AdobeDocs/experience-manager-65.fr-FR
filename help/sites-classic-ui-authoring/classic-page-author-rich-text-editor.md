@@ -1,6 +1,6 @@
 ---
 title: Éditeur de texte enrichi
-description: L’éditeur de texte enrichi est un élément de base de la saisie de contenu texte dans AEM.
+description: L’éditeur de texte enrichi est un bloc de création de base permettant de saisir du contenu texte dans AEM.
 uuid: 4bcce45a-e14f-41b7-8c6f-89d1e1bb595c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,13 +10,13 @@ exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1843'
-ht-degree: 42%
+ht-degree: 99%
 
 ---
 
 # Éditeur de texte enrichi {#rich-text-editor}
 
-L’éditeur de texte enrichi est un élément de base de la saisie de contenu texte dans AEM. Il constitue la base de divers composants, notamment :
+L’éditeur de texte enrichi est un bloc de création de base permettant de saisir du contenu texte dans AEM. Il constitue la base de divers composants, notamment :
 
 * Texte
 * Image du texte
@@ -24,7 +24,7 @@ L’éditeur de texte enrichi est un élément de base de la saisie de contenu t
 
 ## Éditeur de texte enrichi {#rich-text-editor-1}
 
-La boîte de dialogue de modification WYSIWYG offre un large éventail de fonctionnalités :
+La boîte de dialogue de modification WYSIWYG offre un large éventail de fonctionnalités :
 
 ![cq55_rte_basicchars](assets/cq55_rte_basicchars.png)
 
@@ -34,9 +34,9 @@ La boîte de dialogue de modification WYSIWYG offre un large éventail de foncti
 
 ## Édition statique {#in-place-editing}
 
-Outre le mode d’édition de texte enrichi basé sur une boîte de dialogue, AEM fournit également le mode d’édition statique, qui permet de modifier directement le texte tel qu’il est affiché dans la mise en page.
+Outre le mode de modification de texte enrichi basé sur la boîte de dialogue, AEM propose un mode de modification intégré qui permet la modification directe du texte tel qu’il est affiché dans la disposition de la page.
 
-Cliquez deux fois sur un paragraphe (double-clic lent) pour passer en mode d’édition statique (la bordure du composant devient orange).
+Cliquez deux fois sur un paragraphe (double-clic lent) pour passer en mode de modification intégré (la bordure du composant devient orange).
 
 Vous pourrez modifier directement le texte sur la page, plutôt que dans une boîte de dialogue. Il vous suffit d’apporter vos modifications qui seront automatiquement enregistrées.
 
@@ -48,13 +48,13 @@ Vous pourrez modifier directement le texte sur la page, plutôt que dans une bo�
 >
 >Si l’outil de recherche de contenu n’est pas ouvert, la barre d’outils ne s’affiche pas.
 
-Actuellement, le mode d’édition statique est activé pour les éléments de page générés par la variable **Texte** et **Titre** composants.
+Actuellement, le mode de modification intégré est activé pour les éléments de page générés par les composants **Texte** et **Titre**.
 
 >[!NOTE]
 >
->Le [!UICONTROL Titre] est conçu pour contenir un texte court sans sauts de ligne. Lorsque vous modifiez un titre en mode d’édition statique, la saisie d’un saut de ligne ouvre une nouvelle **Texte** sous le titre.
+>Le composant [!UICONTROL Titre] est conçu pour contenir un texte court sans sauts de ligne. Lorsque vous modifiez un titre en mode de modification intégré, la saisie d’un saut de ligne ouvre un nouveau composant **Texte** sous le titre.
 
-## Fonctions de l’éditeur de texte enrichi {#features-of-the-rich-text-editor}
+## Fonctionnalités de l’éditeur de texte enrichi {#features-of-the-rich-text-editor}
 
 L’éditeur de texte enrichi fournit diverses fonctions, [selon la configuration](/help/sites-administering/rich-text-editor.md) du composant. Ces fonctions sont disponibles dans les deux interfaces utilisateur (classique et optimisée pour les écrans tactiles).
 
@@ -62,7 +62,7 @@ L’éditeur de texte enrichi fournit diverses fonctions, [selon la configuratio
 
 ![Barre d’outils Format de caractère](do-not-localize/cq55_rte_basicchars.png)
 
-Vous pouvez y appliquer une mise en forme aux caractères que vous avez sélectionnés (mis en surbrillance). certaines options comportent également des touches de raccourci :
+Vous pouvez y appliquer une mise en forme aux caractères que vous avez sélectionnés (mis en surbrillance). Certaines options comportent également des raccourcis clavier :
 
 * Gras (Ctrl+B)
 * Italique (Ctrl+I)
@@ -72,15 +72,15 @@ Vous pouvez y appliquer une mise en forme aux caractères que vous avez sélecti
 
 ![cq55_rte_basicchars_use](assets/cq55_rte_basicchars_use.png)
 
-Tous fonctionnent comme un bouton d’activation/désactivation. La résélection supprime donc le format.
+Tous fonctionnent comme un bouton bascule. La résélection supprime donc le format.
 
 ### Styles et formats prédéfinis {#predefined-styles-and-formats}
 
 ![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
-Votre installation peut inclure des styles et des formats prédéfinis. Ils sont disponibles avec les **[!UICONTROL Style]** et **[!UICONTROL Format]** liste déroulante et peut être appliqué au texte que vous avez sélectionné.
+Votre installation peut inclure des styles et des formats prédéfinis. Ils sont disponibles avec les listes déroulantes **[!UICONTROL Style]** et **[!UICONTROL Format]** et peuvent être appliqués au texte que vous avez sélectionné.
 
-Un style peut être appliqué à une chaîne spécifique (un style correspond à CSS) :
+Un style peut être appliqué à une chaîne spécifique (un style correspond à CSS) :
 
 ![cq55_rte_styles_use](assets/cq55_rte_styles_use.png)
 
@@ -88,9 +88,9 @@ Tandis qu’une disposition est appliquée à l’intégralité d’un paragraph
 
 ![cq55_rte_paragraph_use](assets/cq55_rte_paragraph_use.png)
 
-Un format spécifique ne peut être modifié que (la valeur par défaut est **[!UICONTROL Paragraphe]**).
+Seul un format spécifique peut être modifié (la valeur par défaut est **[!UICONTROL Paragraphe]**).
 
-Un style peut être supprimé. placez le curseur dans le texte auquel le style a été appliqué, puis cliquez sur l’icône Supprimer :
+Un style peut être supprimé. Placez le curseur dans le texte auquel le style a été appliqué, puis cliquez sur l’icône Supprimer :
 
 >[!CAUTION]
 >
@@ -98,9 +98,9 @@ Un style peut être supprimé. placez le curseur dans le texte auquel le style a
 
 ### Couper, Copier, Coller {#cut-copy-paste}
 
-![Couper, Copier, Coller, barre d’outils](do-not-localize/cq55_rte_cutcopypaste.png)
+![Barre d’outils Couper, Copier, Coller](do-not-localize/cq55_rte_cutcopypaste.png)
 
-Les fonctions standard de **[!UICONTROL Couper]** et **[!UICONTROL Copier]** sont disponibles. Plusieurs versions de **[!UICONTROL Coller]** sont fournis pour prendre en charge différents formats.
+Les fonctionnalités standard **[!UICONTROL Couper]** et **[!UICONTROL Copier]** sont disponibles. Plusieurs versions de **[!UICONTROL Coller]** sont fournies pour prendre en charge différents formats.
 
 * Couper (Ctrl-X)
 * Copier (Ctrl-C)
@@ -111,11 +111,11 @@ Mécanisme de collage par défaut (Ctrl-V) pour le composant ; dans le cas d’
 
 * Coller à partir de Word : cette option colle le contenu au format HTML (avec la remise en forme nécessaire).
 
-### Annuler, Rétablir {#undo-redo}
+### Annuler, rétablir {#undo-redo}
 
-![Annuler, barre d’outils Rétablir](do-not-localize/cq55_rte_undoredo.png)
+![Annuler, rétablir la barre d’outils](do-not-localize/cq55_rte_undoredo.png)
 
-AEM conserve un historique de vos 50 dernières actions dans le composant actuel, dans l’ordre chronologique. Si nécessaire, ces actions peuvent être annulées (puis rétablies) dans un ordre strict.
+AEM conserve un enregistrement de vos 50 dernières actions dans le composant actuel, dans l’ordre chronologique. Si nécessaire, ces actions peuvent être annulées (puis rétablies) dans un ordre strict.
 
 >[!CAUTION]
 >
@@ -123,7 +123,7 @@ AEM conserve un historique de vos 50 dernières actions dans le composant actuel
 
 >[!NOTE]
 >
->Cinquante est le nombre de tâches par défaut. Il peut s’agir d’une opération différente pour votre installation.
+>Le nombre de tâches par défaut est de cinquante. Cela peut être différent pour votre installation.
 
 ### Alignement {#alignment}
 
@@ -135,7 +135,7 @@ Votre texte peut être aligné à gauche, au centre ou à droite.
 
 ### Indentation {#indentation}
 
-![Barre d’outils de retrait](do-not-localize/cq55_rte_indent.png)
+![Barre d’outils de mise en retrait](do-not-localize/cq55_rte_indent.png)
 
 La mise en retrait d’un paragraphe peut être augmentée ou réduite. Le paragraphe sélectionné est mis en retrait, tout nouveau texte saisi conserve le niveau de mise en retrait actuel.
 
@@ -143,23 +143,23 @@ La mise en retrait d’un paragraphe peut être augmentée ou réduite. Le parag
 
 ### Listes {#lists}
 
-![Barre d’outils Listes](do-not-localize/cq55_rte_lists.png)
+![Barre d’outils des listes](do-not-localize/cq55_rte_lists.png)
 
-Vous pouvez créer des listes à puces et numérotées dans votre texte. Sélectionnez le type de liste et commencez à saisir ou mettez en surbrillance le texte à convertir. Dans les deux cas, un flux de ligne lance un nouvel élément de liste.
+Vous pouvez créer des listes à puces et numérotées dans votre texte. Sélectionnez le type de liste et commencez à saisir ou mettez en surbrillance le texte à convertir. Dans les deux cas, un changement de ligne lance un nouvel élément de liste.
 
 Vous pouvez créer des listes imbriquées en mettant en retrait un ou plusieurs éléments de liste.
 
-Vous pouvez modifier le style d’une liste en positionnant simplement le curseur dans la liste, puis en sélectionnant l’autre style. Une sous-liste peut également avoir un style différent de la liste contenante. Vous pouvez l’appliquer une fois la sous-liste créée (par mise en retrait).
+Vous pouvez modifier le style d’une liste en positionnant simplement le curseur dans la liste, puis en sélectionnant l’autre style. Une sous-liste peut également avoir un style différent de la liste de contenu. Vous pouvez l’appliquer une fois la sous-liste créée (par mise en retrait).
 
 ![cq55_rte_lists_use](assets/cq55_rte_lists_use.png)
 
 ### Liens {#links}
 
-![Barre d’outils Liens](do-not-localize/cq55_rte_links.png)
+![Barre d’outils de liens](do-not-localize/cq55_rte_links.png)
 
 Pour générer un lien vers une URL (que ce soit à l’intérieur de votre site Web ou un emplacement externe) mettez en surbrillance le texte requis, puis cliquez sur l’icône Lien hypertexte :
 
-![Icône Hyperlien](do-not-localize/chlimage_1-9.png)
+![Icône Lien hypertexte](do-not-localize/chlimage_1-9.png)
 
 Une boîte de dialogue vous permet de spécifier l’URL cible, ainsi que de déterminer si elle doit s’ouvrir dans une nouvelle fenêtre.
 
@@ -169,7 +169,7 @@ Vous pouvez :
 
 * saisir directement une URI ;
 * utiliser un plan de site (sitemap) pour sélectionner une page de votre site Web ;
-* Saisissez l’URI, puis ajoutez l’ancre cible. par exemple, `www.TargetUri.org#AnchorName`
+* Saisissez l’URI, puis ajoutez l’ancre cible ; par exemple, `www.TargetUri.org#AnchorName`
 * saisir une ancre seule (pour faire référence à la « page en cours »), `#anchor`#, par exemple ;
 * rechercher une page dans l’outil de recherche de contenu, puis faire glisser son icône dans la boîte de dialogue Lien hypertexte.
 
@@ -177,15 +177,15 @@ Vous pouvez :
 >
 >Vous pouvez faire précéder l’URI de l’un des protocoles configurés pour votre installation. Dans une installation standard, ces protocoles sont `https://`, `ftp://` et `mailto:`. Les protocoles non configurés pour votre installation seront rejetés et marqués comme non valides.
 
-Pour rompre le lien, placez le curseur n’importe où dans le texte du lien et cliquez sur le bouton [!UICONTROL Dissocier] icon :
+Pour rompre le lien, placez le curseur n’importe où dans le texte du lien et cliquez sur l’icône [!UICONTROL Dissocier] :
 
 ![Icône Dissocier](do-not-localize/chlimage_1-10.png)
 
-### Ancre {#anchors}
+### Ancres {#anchors}
 
-![Barre d’outils Ancres](do-not-localize/cq55_rte_anchor.png)
+![Barre d’outils des ancres](do-not-localize/cq55_rte_anchor.png)
 
-Une ancre peut être créée n’importe où dans le texte en positionnant le curseur ou en sélectionnant du texte. Cliquez ensuite sur le bouton **Ancre** pour ouvrir la boîte de dialogue.
+Vous pouvez créer une ancre n’importe où dans le texte en positionnant le curseur ou en sélectionnant du texte. Cliquez ensuite sur l’icône **Ancre** pour ouvrir la boîte de dialogue.
 
 Saisissez le nom de l’ancre, puis cliquez sur **OK** pour enregistrer.
 
@@ -199,9 +199,9 @@ L’ancre s’affiche lorsque le composant est en cours d’édition ; elle peu
 
 ![Barre d’outils Rechercher et remplacer](do-not-localize/cq55_rte_findreplace.png)
 
-AEM fournit à la fois une **Rechercher** et un **Remplacer** (rechercher et remplacer).
+AEM fournit à la fois une fonction **Rechercher** et **Remplacer** (rechercher et remplacer).
 
-Les deux ont une **Rechercher suivant** pour rechercher le texte spécifié dans le composant ouvert. Vous pouvez également indiquer si la casse (supérieure/inférieure) doit être mise en correspondance.
+Les deux ont un bouton **Rechercher suivant** pour rechercher le texte spécifié dans le composant ouvert. Vous pouvez également indiquer si la casse (majuscule/minuscule) doit être mise en correspondance.
 
 La recherche commence toujours à partir de la position actuelle du curseur dans le texte. Lorsque la fin du composant est atteinte, un message vous informe que la prochaine opération de recherche démarre à partir du haut.
 
@@ -237,13 +237,13 @@ Toute faute d’orthographe est mise en surbrillance :
 
 ### Tableaux {#tables}
 
-Les tableaux sont disponibles dans les deux cas :
+Les tableaux sont disponibles dans les deux cas :
 
-* Comme la variable **Tableau** component
+* Comme composant **Tableau**
 
-  ![Composant du tableau](assets/chlimage_1-105.png)
+  ![Composant Tableau](assets/chlimage_1-105.png)
 
-* à l’intérieur du composant **Texte**
+* À l’intérieur du composant **Texte**
 
   ![Barre d’outils Texte](do-not-localize/chlimage_1-11.png)
 
@@ -257,9 +257,9 @@ Dans les composants **Texte** et **Tableau**, la fonctionnalité de tableau est 
 
 >[!NOTE]
 >
->Dans le **Tableau** , une barre d’outils spécialisée est également disponible, notamment diverses fonctions standard de l’éditeur de texte enrichi, ainsi qu’un sous-ensemble de fonctions spécifiques au tableau.
+>Dans le composant **Tableau**, une barre d’outils spécialisée est également disponible comprenant diverses fonctions standards d’éditeur de texte enrichi, ainsi qu’un sous-ensemble de fonctions spécifiques au tableau.
 
-Les fonctions spécifiques au tableau sont les suivantes :
+Les fonctions spécifiques au tableau sont les suivantes :
 
 * [Propriétés du tableau](#table-properties)
 * [Propriétés de la cellule](#cell-properties)
@@ -316,9 +316,9 @@ Les propriétés d’une cellule spécifique ou d’une série de cellules peuve
 
 ![cq55_rte_rows](assets/cq55_rte_rows.png)
 
-Les lignes peuvent être ajoutées au-dessus ou au-dessous de la ligne actuelle.
+Vous pouvez ajouter des lignes au-dessus ou au-dessous de la ligne active.
 
-La ligne actuelle peut également être supprimée.
+Vous pouvez également supprimer la ligne active.
 
 #### Ajouter ou supprimer des colonnes {#add-or-delete-columns}
 
@@ -326,7 +326,7 @@ La ligne actuelle peut également être supprimée.
 
 Vous pouvez ajouter des colonnes à gauche ou à droite de la colonne active.
 
-La colonne actuelle peut également être supprimée.
+Vous pouvez également supprimer la colonne active.
 
 #### Sélectionner des lignes ou colonnes entières {#selecting-entire-rows-or-columns}
 
@@ -339,16 +339,16 @@ Sélectionne toute la ligne ou la colonne active. Des actions spécifiques (par 
 ![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png) ![cq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 
 * Si vous avez sélectionné un groupe de cellules, vous pouvez les fusionner en une seule.
-* Si une seule cellule est sélectionnée, vous pouvez la fusionner avec la cellule à droite ou en dessous.
+* Si vous avez sélectionné une seule cellule, vous pouvez la fusionner avec la cellule à droite ou en dessous.
 
 #### Diviser des cellules {#split-cells}
 
 ![cq55_rte_cellsplit](assets/cq55_rte_cellsplit.png)
 
-Sélectionnez une seule cellule pour la fractionner :
+Sélectionnez une seule cellule pour la diviser :
 
-* Le fractionnement horizontal d’une cellule génère une nouvelle cellule à droite de la cellule active, dans la colonne active.
-* Le fractionnement vertical d’une cellule génère une nouvelle cellule sous la cellule active, mais dans la ligne actuelle.
+* Diviser horizontalement une cellule génère une nouvelle cellule à droite de la cellule active, dans la colonne active.
+* Diviser verticalement une cellule génère une nouvelle cellule sous la cellule active, mais dans la ligne active.
 
 #### Création de tableaux imbriqués {#creating-nested-tables}
 
@@ -358,9 +358,9 @@ La création d’un tableau imbriqué crée un tableau autonome dans la cellule 
 
 >[!NOTE]
 >
->Certains comportements supplémentaires dépendent du navigateur :
+>Certains comportements supplémentaires dépendent du navigateur :
 >
->* Windows IE : Utilisez les touches Ctrl+Principal-clic-bouton-souris (généralement gauche) pour sélectionner plusieurs cellules.
+>* Windows IE : utilisez les touches Ctrl + clic principal de la souris (généralement le gauche) pour sélectionner plusieurs cellules.
 >* Firefox : faites glisser le pointeur pour sélectionner une plage de cellules.
 
 #### Supprimer le tableau {#remove-table}
@@ -373,19 +373,19 @@ Utilisez cette option pour supprimer le tableau du composant **[!UICONTROL Texte
 
 ![Barre d’outils Caractères spéciaux](do-not-localize/cq55_rte_specialchars.png)
 
-Des caractères spéciaux peuvent être mis à la disposition de votre éditeur de texte enrichi ; elles peuvent varier en fonction de votre installation.
+Des caractères spéciaux peuvent être mis à la disposition de votre éditeur de texte enrichi. Ils peuvent varier en fonction de votre installation.
 
 ![cq55_rte_specialchars_use](assets/cq55_rte_specialchars_use.png)
 
-Pointez la souris pour afficher une version agrandie du caractère, puis cliquez pour qu’il soit inclus à l’emplacement actuel dans votre texte.
+Survolez avec la souris pour afficher une version agrandie du caractère, puis cliquez pour qu’il soit inclus à l’emplacement actuel dans votre texte.
 
-### Mode d’édition de la source {#source-editing-mode}
+### Mode de modification de la source {#source-editing-mode}
 
-![Barre d’outils du mode d’édition source](do-not-localize/cq55_rte_sourceedit.png)
+![Barre d’outils du mode de modification de la source](do-not-localize/cq55_rte_sourceedit.png)
 
-Le mode d’édition source vous permet d’afficher et de modifier le HTML sous-jacent du composant.
+Le mode de modification de la source vous permet d’afficher et de modifier le HTML sous-jacent du composant.
 
-Donc le texte :
+Le texte suivant :
 
 ![cq55_rte_sourcemode_1](assets/cq55_rte_sourcemode_1.png)
 

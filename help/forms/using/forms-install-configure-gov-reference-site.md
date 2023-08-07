@@ -111,7 +111,7 @@ Cette section contient des informations sur l’installation du package de démo
 
 ### Installer une nouvelle version de package {#installing-new-package-versions}
 
-Pour installer une nouvelle version de package, suivez les étapes définies aux sections 4.1 et 4.2. L&#39;installation d&#39;une version de package plus récente alors qu&#39;un autre package plus ancien est déjà installé est possible, mais il est recommandé de désinstaller d&#39;abord l&#39;ancienne version de package. Pour ce faire, procédez comme suit.
+Pour installer une nouvelle version de package, suivez les étapes définies dans les versions 4.1 et 4.2. L’installation d’une version de package plus récente alors qu’un autre package plus ancien est déjà installé est possible, mais il est recommandé de désinstaller d’abord l’ancienne version de package. Pour ce faire, procédez comme suit.
 
 1. Accédez à *https://&lt;serveur_aem>:&lt;port>/crx/packmgr/index.jsp*.
 1. Recherchez l’ancien fichier **we-gov-forms.pkg.all-&lt;version>.zip**.
@@ -132,7 +132,7 @@ Cette section contient des informations détaillées et des instructions sur la 
 1. Connectez-vous en tant qu’administrateur pour effectuer les tâches ci-dessous.
 1. Faites défiler la page jusqu’à la fin pour charger tous les groupes d’utilisateurs.
 1. Recherchez « **workflow** ».
-1. Sélectionnez le **workflow-users**&quot; et cliquez sur &quot;Propriétés&quot;.
+1. Sélectionnez le **workflow-users**&quot; et cliquez sur Propriétés.
 1. Accédez à l’onglet « Membres ».
 1. Dans le champ « Sélectionner un utilisateur ou un groupe », saisissez **wegov**.
 1. Dans la liste déroulante, sélectionnez « **Utilisateurs We.Gov Forms** ».
@@ -222,7 +222,7 @@ Cette section contient des informations détaillées et des instructions sur la 
 **Références:**
 
 1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [Configuration de Microsoft® Dynamics pour AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html)
+1. [Configuration de Microsoft® Dynamics pour AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html?lang=fr)
 
 #### Service cloud OData MS® Dynamics {#ms-dynamics-odata-cloud-service}
 
@@ -425,7 +425,7 @@ Les données AEM Forms Analytics sont disponibles hors ligne ou sans configurati
 
    ![Analysis et Recommendations](assets/analytics_recommendations.jpg)
 
-1. Sur cette page, vous verrez les informations récupérées d’Adobe Analytics qui se rapportent à la page AEM Sites (remarque : par conception, ces informations sont régulièrement actualisées à partir d’Adobe Analytics et ne s’affichent pas en temps réel).
+1. Sur cette page, vous verrez les informations récupérées d’Adobe Analytics qui se rapportent à la page AEM Sites (remarque : de par leur conception, ces informations sont régulièrement actualisées à partir d’Adobe Analytics et ne sont pas affichées en temps réel).
 
    ![Analyse AEM Sites](assets/sites_analysis.jpg)
 
@@ -750,7 +750,7 @@ Cette section contient des informations sur les fonctionnalités de démonstrati
 
 ### Activer le module complémentaire Chrome Test d’accessibilité {#enable-chrome-add-on}
 
-Pour effectuer des tests d’accessibilité, installez le module externe Chrome disponible ici à l’adresse `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, please fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
+Pour effectuer les tests d’accessibilité, installez le plug-in Chrome qui se trouve sur `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, please fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
 Une fois installé, chargez la page que vous souhaitez tester dans le navigateur Chrome. (Note : étant donné que l’ouverture de plusieurs onglets peut avoir une incidence sur votre score, il est préférable de n’ouvrir qu’un seul onglet). Une fois la page chargée, **clic droit** sur la page et sélectionnez **Audits** . Les développeurs peuvent sélectionner le type de contrôle à effectuer par le plug-in Accessibilité. Une fois toutes les options sélectionnées, l’utilisateur ou l’utilisatrice peut cliquer sur le bouton Générer le rapport. Cela génère un document PDF qui indique la note globale d’accessibilité et ce qui peut être utilisé pour augmenter la note d’accessibilité globale.
 

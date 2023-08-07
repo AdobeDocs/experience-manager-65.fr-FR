@@ -1,7 +1,7 @@
 ---
 title: Identity Management
 seo-title: Identity Management
-description: Découvrez la gestion des identités dans AEM.
+description: Découvrez Identity Management dans AEM.
 seo-description: Learn about identity management in AEM.
 uuid: d9b83cd7-c47a-41a5-baa4-bbf385d13bfd
 contentOwner: Guillaume Carlino
@@ -14,7 +14,7 @@ exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
 source-git-commit: 1036127ae508ec76c868db5fb67709c104c51123
 workflow-type: tm+mt
 source-wordcount: '1250'
-ht-degree: 64%
+ht-degree: 96%
 
 ---
 
@@ -44,20 +44,20 @@ La fonctionnalité de connexion (et de déconnexion) est mise à disposition par
 
   Si vous disposez d’un petit nombre de profils, qui devront de toute façon être autorisés, vous pouvez décider de les enregistrer directement.
 
-Pour permettre aux visiteurs de s’enregistrer, une série de composants et de formulaires peut être utilisée pour recueillir les informations d’identification nécessaires, puis d’autres informations de profil (facultatives). Une fois enregistré, il doit également pouvoir vérifier et mettre à jour les détails qu’il a soumis.
+Pour permettre aux visiteurs de s’enregistrer, une série de composants et de formulaires peut être utilisée pour recueillir les informations d’identification nécessaires, puis d’autres informations de profil (facultatives). Une fois enregistré.e.s, les visiteurs et visiteuses doivent également pouvoir vérifier et mettre à jour les détails qu’ils ou elles ont envoyés.
 
-D’autres fonctionnalités peuvent être configurées ou développées :
+D’autres fonctionnalités peuvent être configurées ou développées :
 
 * Configurez toute réplication inverse requise.
-* Permet à un utilisateur de supprimer son profil, en développant un formulaire avec un workflow.
+* Permettez à un utilisateur ou une utilisatrice de supprimer son profil en développant un formulaire avec un workflow.
 
 >[!NOTE]
 >
->Les informations spécifiées dans le profil peuvent également être utilisées pour fournir à l’utilisateur du contenu ciblé via [Segments](/help/sites-administering/campaign-segmentation.md) et [Campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
+>Les informations spécifiées dans le profil peuvent également être utilisées pour fournir à l’utilisateur ou l’utilisatrice du contenu ciblé via [Segments](/help/sites-administering/campaign-segmentation.md) et [Campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
-## Enregistrement de Forms {#registration-forms}
+## Formulaires d’enregistrement {#registration-forms}
 
-A [formulaire](/help/sites-authoring/default-components.md#form-component) peut être utilisé pour collecter les informations d’enregistrement, puis générer le nouveau compte et le nouveau profil.
+Un [formulaire](/help/sites-authoring/default-components.md#form-component) peut être utilisé pour collecter les informations d’enregistrement, puis générer le nouveau compte et le nouveau profil.
 
 Par exemple, les utilisateurs peuvent demander un nouveau profil à l’aide de la page Geometrixx
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
@@ -103,13 +103,13 @@ Vous pouvez afficher un autre profil à l’aide du [contexte du client](/help/s
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
-1. Cliquez sur **Mon profil** dans le coin supérieur droit. Le profil de votre compte actuel s’affiche. par exemple l’administrateur.
-1. Press **control-alt-C** pour ouvrir le contexte client.
-1. Dans le coin supérieur gauche du contexte client, cliquez sur le bouton **Chargement d’un profil** bouton .
+1. Cliquez sur **Mon profil** dans le coin supérieur droit. Le profil de votre compte actuel s’affiche, en tant par exemple qu’administrateur ou administratrice.
+1. Appuyez sur **Control-Alt-C** pour ouvrir le contexte client.
+1. Dans le coin supérieur gauche du contexte client, cliquez sur le bouton **Charger un profil**.
 
    ![Icône Chargement d’un profil](do-not-localize/loadprofile.png)
 
-1. Sélectionnez un autre profil dans la liste déroulante de la boîte de dialogue ; par exemple, **Alison Parker**.
+1. Sélectionnez un autre profil dans la liste déroulante de la boîte de dialogue : par exemple, **Alison Parker**.
 1. Cliquez sur **OK**.
 1. Cliquez de nouveau sur **Mon profil**. Le formulaire sera mis à jour avec les détails d’Alison.
 
@@ -117,7 +117,7 @@ Vous pouvez afficher un autre profil à l’aide du [contexte du client](/help/s
 
 1. Vous pouvez désormais utiliser **Modifier le profil** ou **Modifier le mot de passe** pour mettre à jour les détails.
 
-## Ajout de champs à la définition de profil {#adding-fields-to-the-profile-definition}
+## Ajout de champs à la définition d’un profil {#adding-fields-to-the-profile-definition}
 
 Vous pouvez ajouter des champs à la définition d’un profil. Par exemple, pour ajouter un champ Couleur préférée au profil Geometrixx :
 
@@ -147,13 +147,13 @@ Vous pouvez ajouter des champs à la définition d’un profil. Par exemple, pou
 
 Différents cas d’utilisation nécessitent de savoir si un utilisateur (ou plutôt son profil) est dans un *état spécifique* ou non.
 
-Cela implique de définir une propriété appropriée dans le profil utilisateur de manière à :
+Cela implique de définir une propriété appropriée dans le profil utilisateur de manière à :
 
-* est visible et accessible pour l’utilisateur ;
-* définit deux états pour chaque propriété ;
-* permet de basculer entre les deux états définis.
+* être visible et accessible pour l’utilisateur ou l’utilisatrice
+* définir deux états pour chaque propriété
+* permettre de basculer entre les deux états définis
 
-Pour ce faire, procédez comme suit :
+Pour ce faire, procédez comme suit :
 
 * [Fournisseurs d’état](#state-providers)
 
@@ -172,14 +172,14 @@ Différents états peuvent être définis. Dans Geometrixx, par exemple, il s’
 
 Un fournisseur d’état gère le statut actuel de la propriété en question, ainsi que les transitions entre les deux états possibles.
 
-Les fournisseurs d’état sont mis en œuvre sous forme de composants et peuvent donc être personnalisés pour votre projet. En Geometrixx, ces éléments sont les suivants :
+Les fournisseurs d’état sont mis en œuvre sous forme de composants et peuvent donc être personnalisés pour votre projet. Dans Geometrixx, ces éléments sont les suivants :
 
 * S&#39;abonner/Se désabonner du sujet du forum
-* Ajouter/Supprimer un ami
+* Ajouter/Supprimer un ami ou une amie
 
 ### Workflows {#workflows}
 
-Les fournisseurs d’état gèrent une propriété de profil et ses états.
+Les fournisseurs ou fournisseuses d’état gèrent une propriété de profil et ses états.
 
 Un workflow est nécessaire à la mise en œuvre des actions associées aux états. Par exemple, lors de l’abonnement aux notifications, le workflow gère l’action réelle d’abonnement effective. Lors du désabonnement des notifications, le workflow gère la suppression de l’utilisateur de la liste d’abonnement.
 
@@ -191,22 +191,22 @@ Le profil se trouve sous `/home/users/geometrixx` :
 
 ![Profils affichés dans CRXDE](assets/chlimage_1-138.png)
 
-Dans une configuration standard (création ou publication), chacun possède un accès en lecture à toutes les informations de profil de tous les utilisateurs. Chacun est un *groupe intégré contenant automatiquement tous les utilisateurs et groupes existants. La liste des membres ne peut pas être modifiée.*&quot;.
+Dans une configuration standard (création ou publication), chacun possède un accès en lecture à toutes les informations de profil de tous les utilisateurs. Chacun est un *groupe intégré contenant automatiquement tous les utilisateurs et groupes existants. La liste des membres ne peut pas être modifiée.*.
 
-Ces droits d’accès sont définis par la liste de contrôle d’accès générique suivante :
+Ces droits d’accès sont définis par l’ACL des caractères génériques suivantes :
 
 /home everyone allow jcr:read rep:glob = &#42;/profile&#42;
 
-Cela permet :
+Cela permet :
 
-* forum, commentaires ou publications de blog pour afficher des informations (telles qu’une icône ou un nom complet) à partir du profil approprié.
-* liens vers les pages de profil geometrixx
+* de publier sur le forum, de faire des commentaires ou de publier des articles de blog pour afficher des informations (telles qu’une icône ou un nom complet) à partir du profil approprié.
+* d’afficher des liens vers les pages de profil Geometrixx
 
 Si cet accès n’est pas adapté à votre installation, vous pouvez modifier ces paramètres par défaut.
 
 À cet effet, utilisez l’onglet **[Contrôle d’accès](/help/sites-administering/user-group-ac-admin.md#access-right-management)** :
 
-![Gestion des listes de contrôle d’accès dans CRXDE](assets/aclmanager.png)
+![Gestion des listes ACL dans CRXDE](assets/aclmanager.png)
 
 ## Composants de profil {#profile-components}
 
@@ -214,29 +214,29 @@ Plusieurs composants de profil sont également disponibles pour définir les exi
 
 ### Champ du mot de passe vérifié {#checked-password-field}
 
-Ce composant vous donne deux champs pour :
+Ce composant vous fournit deux champs pour :
 
 * la saisie d’un mot de passe
 * une vérification pour confirmer que le mot de passe a été saisi correctement.
 
-Avec les paramètres par défaut, le composant s’affiche comme suit :
+Avec les paramètres par défaut, le composant apparaîtra comme suit :
 
 ![Boîte de dialogue Vérifier le mot de passe](assets/dc_profiles_checkedpassword.png)
 
 ### Photo de l’avatar du profil {#profile-avatar-photo}
 
-Ce composant fournit à l’utilisateur un mécanisme permettant de sélectionner et de charger un fichier photo d’avatar.
+Ce composant fournit à l’utilisateur ou l’utilisatrice un mécanisme permettant de sélectionner et de charger un fichier photo d’avatar.
 
 ![Sélecteur d’avatar](assets/dc_profiles_avatarphoto.png)
 
 ### Nom détaillé du profil {#profile-detailed-name}
 
-Ce composant permet à l’utilisateur de saisir un nom détaillé.
+Ce composant permet à l’utilisateur ou l’utilisatrice de saisir un nom détaillé.
 
 ![Boîte de dialogue de nom détaillé](assets/dc_profiles_detailedname.png)
 
 ### Sexe du profil {#profile-gender}
 
-Ce composant permet à l’utilisateur de saisir son sexe.
+Ce composant permet à l’utilisateur ou l’utilisatrice d’indiquer son sexe.
 
 ![Sélecteur de genre](assets/dc_profiles_gender.png)

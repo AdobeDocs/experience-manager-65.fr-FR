@@ -1,7 +1,7 @@
 ---
 title: Configuration des sources de données
 seo-title: Configure data sources
-description: Découvrez comment configurer différents types de sources de données et utiliser pour créer des modèles de données de formulaire.
+description: Découvrez comment configurer différents types de sources de données et les utiliser pour créer des modèles de données de formulaire.
 seo-description: Learn how to configure different types of data sources and leverage to create form data models.
 uuid: 12360c8c-b596-4f9b-837a-10a8ff5c7448
 topic-tags: integration
@@ -13,7 +13,7 @@ exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
 source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
 source-wordcount: '2112'
-ht-degree: 84%
+ht-degree: 99%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 84%
 
 ![Intégration de données](do-not-localize/data-integeration.png)
 
-L’intégration de données AEM Forms permet de configurer des sources de données disparates et de s’y connecter. Les types suivants sont pris en charge par défaut. Toutefois, avec peu de personnalisation, vous pouvez intégrer d’autres sources de données.
+L’intégration de données AEM Forms permet de configurer des sources de données disparates et de s’y connecter. Les types suivants sont pris en charge par défaut : Toutefois, avec peu de personnalisation, vous pouvez intégrer d’autres sources de données.
 
 * Bases de données relationnelles : MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS et Sybase.
 * Profil utilisateur AEM
@@ -39,28 +39,28 @@ L’intégration de données prend en charge l’authentification OAuth2.0, ([Co
 
 ## Configurer la base de données relationnelle {#configure-relational-database}
 
-Vous pouvez configurer des bases de données relationnelles à l’aide de la configuration de la console Web d’AEM. Procédez comme suit :
+Vous pouvez configurer des bases de données relationnelles à l’aide de la configuration de la console web AEM. Procédez comme suit :
 
 1. Accédez à la console web AEM à l’adresse `https://server:host/system/console/configMgr`.
-1. Rechercher **[!UICONTROL Source de données en pool de la connexion Apache Sling]** configuration. Appuyez pour ouvrir la configuration en mode d’édition.
+1. Recherchez la configuration **[!UICONTROL Apache Sling Connection Pooled DataSource]**. Appuyez pour ouvrir la configuration en mode d’édition.
 1. Dans la boîte de dialogue de configuration, spécifiez les détails de la base de données que vous souhaitez configurer, tels que :
 
    * Nom de la source de données
-   * Propriété du service de source de données qui stocke le nom de la source de données
-   * Nom de classe Java pour le pilote JDBC
+   * Propriété du service de source de données qui stocke le Data Source Name.
+   * Nom de la classe Java pour le pilote JDBC
    * URI de connexion JDBC
    * Nom d’utilisateur et mot de passe pour établir la connexion au pilote JDBC
 
    >[!NOTE]
    >
-   >Assurez-vous de chiffrer les informations sensibles telles que les mots de passe avant de configurer la source de données. Pour chiffrer :
+   >Veillez à chiffrer les informations sensibles telles que les mots de passe avant de configurer la source de données. Pour chiffrer :
    >
    > 1. Accédez à https://&#39;[server]:[port]&#39;/system/console/crypto.
    > 1. Dans le champ **[!UICONTROL Texte brut]**, indiquez le mot de passe ou toute chaîne à chiffrer et cliquez sur **[!UICONTROL Protéger]**.
    >
    >Le texte chiffré apparaît dans le champ Texte protégé que vous pouvez spécifier dans la configuration.
 
-1. Activer **[!UICONTROL Test lors de l’emprunt]** ou **[!UICONTROL Test en retour]** pour indiquer que les objets sont validés avant d’être empruntés ou renvoyés respectivement à et au pool.
+1. Activez **[!UICONTROL Test lors de l’emprunt]** ou **[!UICONTROL Test lors du renvoi]** pour indiquer que les objets sont validés avant d’être empruntés ou renvoyés au pool, respectivement.
 1. Spécifiez une requête SQL SELECT dans le champ **[!UICONTROL Requête de validation]** pour valider les connexions du pool. La requête doit renvoyer au moins une ligne. En fonction de votre base de données, définissez l’une des options suivantes :
 
    * SELECT 1 (MySQL et MS SQL)
@@ -72,9 +72,9 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
    >
    > Si votre modèle de données de formulaire contient un objet qui est un mot-clé réservé à votre base de données relationnelle, cela peut entraîner des problèmes d’ajout, de mise à jour ou de récupération de données. Ainsi, évitez d’utiliser de tels objets dans votre modèle de données de formulaire.
 
-## Configuration d’AEM profil utilisateur {#configure-aem-user-profile}
+## Configurer un profil utilisateur AEM {#configure-aem-user-profile}
 
-Vous pouvez configurer AEM profil utilisateur à l’aide de la configuration du connecteur de profil utilisateur dans AEM console web. Procédez comme suit :
+Vous pouvez configurer un profil utilisateur AEM à l’aide de la configuration du connecteur de profil utilisateur dans la console web d’AEM. Procédez comme suit :
 
 1. Accédez à la console web AEM à l’adresse https://&#39;[server]:[port]&#39;system/console/configMgr.
 1. Recherchez **[!UICONTROL Intégrations de données AEM Forms - Configuration du connecteur de profil utilisateur]** et appuyez pour ouvrir la configuration en mode édition.
@@ -114,7 +114,7 @@ Pour configurer le dossier pour les configurations de service cloud :
    1. Appuyez sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer la configuration et fermer la boîte de dialogue.
 
 1. Dans le **[!UICONTROL navigateur de configuration]**, appuyez sur **[!UICONTROL Créer]**.
-1. Dans le **[!UICONTROL Créer une configuration]** , spécifiez un titre pour le dossier et activez **[!UICONTROL Configurations du cloud]**.
+1. Dans la boîte de dialogue **[!UICONTROL Créer une configuration]**, indiquez un titre pour le dossier et activez les **[!UICONTROL Configurations cloud]**.
 1. Appuyez sur **[!UICONTROL Créer]** pour créer le dossier activé pour les configurations de service cloud.
 
 ## Configuration des services web RESTful {#configure-restful-web-services}
@@ -138,7 +138,7 @@ Procédez comme suit pour configurer les services RESTful :
       * Chemin d’accès de base : le préfixe d’URL de tous les chemins d’API. Ce champ est facultatif.\
         Si nécessaire, modifiez les valeurs prérenseignées pour ces champs.
 
-   * Sélectionnez le type d’authentification : Aucun, OAuth2.0([Code d’autorisation](https://oauth.net/2/grant-types/authorization-code/), [Informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), Authentification de base, clé API, authentification personnalisée ou authentification mutuelle : pour accéder au service RESTful et fournir en conséquence des détails pour l’authentification.
+   * Sélectionnez le type d’authentification : aucune, OAuth2.0 ([code d’authentification](https://oauth.net/2/grant-types/authorization-code/), [informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), authentification de base, clé API, authentification personnalisée ou authentification mutuelle, pour accéder au service RESTful et spécifiez les détails de l’authentification.
 
    Si vous sélectionnez **[!UICONTROL Clé API]** comme type d’authentification, spécifiez la valeur de la clé API. La clé API peut être envoyée en tant qu’en-tête de requête ou en tant que paramètre de requête. Sélectionnez l’une de ces options dans la liste déroulante **[!UICONTROL Emplacement]** et indiquez le nom de l’en-tête ou du paramètre de requête dans le champ **[!UICONTROL Nom du paramètre]**.
 
@@ -169,7 +169,7 @@ Effectuez les étapes suivantes pour configurer le client HTTP du modèle de don
 
 ## Configuration des services web SOAP {#configure-soap-web-services}
 
-Les services web SOAP sont décrits à l’aide des [spécifications WSDL (Web Services Description Language)](https://www.w3.org/TR/wsdl). Pour configurer le service Web SOAP dans les services cloud AEM, vérifiez que vous disposez de l’URL WSDL du service Web et procédez comme suit :
+Les services web SOAP sont décrits à l’aide des [spécifications WSDL (Web Services Description Language)](https://www.w3.org/TR/wsdl). Pour configurer le service web SOAP dans les services cloud AEM, vérifiez que vous disposez de l’URL WSDL pour le service web et procédez comme suit :
 
 1. Accédez à **[!UICONTROL Outils > Cloud Services > Sources de données]**. Appuyez pour sélectionner le dossier dans lequel vous souhaitez créer une configuration cloud.
 
@@ -180,7 +180,7 @@ Les services web SOAP sont décrits à l’aide des [spécifications WSDL (Web S
 
    * URL WSDL du service web.
    * Point d’entrée du service. Spécifiez une valeur dans ce champ pour remplacer le point d’entrée du service mentionné dans WSDL.
-   * Sélectionnez le type d’authentification : Aucun, OAuth2.0([Code d’autorisation](https://oauth.net/2/grant-types/authorization-code/), [Informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), Authentification de base, Authentification personnalisée, Jeton X509 ou Authentification mutuelle pour accéder au service SOAP et fournir en conséquence les détails de l’authentification.
+   * Sélectionnez le type d’authentification : aucune, OAuth2.0 ([code d’authentification,](https://oauth.net/2/grant-types/authorization-code/),[informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), authentification de base, authentification personnalisée, jeton X509 ou authentification mutuelle, pour accéder au service SOAP et spécifiez les détails de l’authentification.
 
      Si vous sélectionnez **[!UICONTROL Jeton X509]** comme type d’authentification, configurez le certificat X509. Pour plus d’informations, voir [Configurer des certificats](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
 Indiquez l’alias KeyStore du certificat X509 dans le champ **[!UICONTROL Alias Key]**. Indiquez la durée, en secondes, pendant laquelle la demande d’authentification reste valide, dans le champ **[!UICONTROL Durée de vie]**. Vous pouvez également choisir de signer le corps du message ou l’en-tête d’horodatage, voire les deux.
@@ -191,12 +191,12 @@ Indiquez l’alias KeyStore du certificat X509 dans le champ **[!UICONTROL Alias
 
 ## Configuration des services OData {#config-odata}
 
-Un service OData est identifié par son URL racine de service. Pour configurer un service OData dans les services cloud AEM, vérifiez que vous disposez de l’URL racine du service et procédez comme suit :
+Un service OData est identifié par son URL racine de service. Pour configurer un service OData dans les services cloud AEM, vérifiez que vous disposez de l’URL racine du service et procédez comme suit :
 
 >[!NOTE]
 >
 >Le modèle de données de formulaire prend en charge [OData version 4](https://www.odata.org/documentation/).
->Pour obtenir un guide détaillé sur la configuration de Microsoft Dynamics 365, en ligne ou sur site, voir [Configuration OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
+>Pour obtenir un guide pas à pas sur la configuration de Microsoft Dynamics 365, en ligne ou sur site, voir [Configuration OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Accédez à **[!UICONTROL Outils > Cloud Services > Sources de données]**. Appuyez pour sélectionner le dossier dans lequel vous souhaitez créer une configuration cloud.
 
@@ -206,7 +206,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 1. Spécifiez les informations suivantes pour le service OData :
 
    * URL racine du service pour le service OData à configurer.
-   * Sélectionnez le type d’authentification : Aucun, OAuth2.0([Code d’autorisation](https://oauth.net/2/grant-types/authorization-code/), [Informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), Authentification de base ou Authentification personnalisée pour accéder au service OData et fournir en conséquence les détails de l’authentification.
+   * Sélectionnez le type d’authentification (Aucune, OAuth2.0 [[Code d’autorisation](https://oauth.net/2/grant-types/authorization-code/), [Informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)], authentification de base ou authentification personnalisée) pour accéder au service OData et fournissez les informations d’authentification.
 
    >[!NOTE]
    >
@@ -216,7 +216,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 
 ## Authentification mutuelle basée sur des certificats pour les services Web RESTful et SOAP {#mutual-authentication}
 
-Lorsque vous activez l’authentification mutuelle pour le modèle de données de formulaire, la source de données et AEM serveur exécutant le modèle de données de formulaire authentifient l’identité de l’autre avant de partager des données. Vous pouvez utiliser l’authentification mutuelle pour les connexions REST et SOAP (sources de données). Pour configurer l’authentification mutuelle pour un modèle de données de formulaire dans votre environnement AEM Forms :
+Lorsque vous activez l’authentification mutuelle pour le modèle de données de formulaire, la source de données et le serveur AEM qui exécutent le modèle de données de formulaire authentifient l’identité de l’un et l’autre avant de partager des données. Vous pouvez utiliser l’authentification mutuelle pour les connexions REST et SOAP (sources de données). Pour configurer l’authentification mutuelle pour un modèle de données de formulaire dans votre environnement AEM Forms :
 
 1. Téléchargez la clé privée (certificat) vers le serveur [!DNL AEM Forms]. Pour charger la clé privée :
    1. Connectez-vous à votre serveur [!DNL AEM Forms] en tant qu’administrateur.

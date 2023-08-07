@@ -1,7 +1,7 @@
 ---
 title: Éditeur
 seo-title: Editor
-description: Découvrez comment revenir à l’éditeur d’interface utilisateur classique.
+description: Découvrez comment revenir à l’éditeur de l’interface utilisateur classique.
 seo-description: Learn how to switch back to the Classic UI Editor.
 uuid: ca8b07e7-014f-428e-82bd-87f3aae12f6e
 contentOwner: Chris Bohnert
@@ -14,16 +14,16 @@ exl-id: 8540e1f0-22d7-4f48-85d9-7c44eb7185df
 source-git-commit: 1c89ac7c4740222a3f51abd677e0ce71a7004377
 workflow-type: tm+mt
 source-wordcount: '108'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
 
 # Éditeur{#editor}
 
-Par défaut, la possibilité de basculer vers l’IU classique à partir de l’éditeur a été désactivée.
+Par défaut, la possibilité de basculer vers l’interface utilisateur classique à partir de l’éditeur a été désactivée.
 
-Pour réactiver l’option **Ouvrir dans l’interface utilisateur classique** dans le **Informations sur la page** , procédez comme suit.
+Pour réactiver l’option **Ouvrir dans l’interface utilisateur classique** dans le menu **Informations sur la page**, procédez comme suit.
 
 1. À l’aide de CRXDE Lite, recherchez le nœud suivant :
 
@@ -37,7 +37,7 @@ Pour réactiver l’option **Ouvrir dans l’interface utilisateur classique** d
 
    * **Chemin** : `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
    * **Emplacement du recouvrement** : `/apps/`
-   * **Faire correspondre les types de noeud**: principal (cochez la case)
+   * **Faire correspondre les types de nœud** : actif (cochez la case)
 
 1. Ajoutez la propriété de texte à valeurs multiples ci-dessous au nœud de recouvrement :
 
@@ -45,4 +45,4 @@ Pour réactiver l’option **Ouvrir dans l’interface utilisateur classique** d
 
 1. L’option **Ouvrir dans l’IU classique** est toujours disponible dans le menu des **Informations de la page** lors de la modification des pages.
 
-   ![Ouvrir dans l’option de l’IU classique à partir des informations de page](assets/syui-03-2019-02-27-15-19-48.png)
+   ![Ouvrir dans l’option de l’interface utilisateur classique à partir des informations sur la page](assets/syui-03-2019-02-27-15-19-48.png)

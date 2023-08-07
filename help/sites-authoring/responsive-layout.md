@@ -11,7 +11,7 @@ exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1806'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
 
 1. Sélectionnez l’icône **Émulateur** dans la barre d’outils supérieure :
 
-   ![Emulateur](do-not-localize/screen_shot_2018-03-23at084256.png)
+   ![Émulateur](do-not-localize/screen_shot_2018-03-23at084256.png)
 
 1. La barre d’outils de l’émulateur s’ouvre.
 
@@ -111,11 +111,11 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
 
    * **Rotation du périphérique** : permet de faire pivoter un appareil de l’orientation verticale (portrait) à l’orientation horizontale (paysage), et inversement.
 
-     ![Rotation du périphérique](do-not-localize/screen_shot_2018-03-23at084612.png) ![Rotation du périphérique](do-not-localize/screen_shot_2018-03-23at084637.png)
+     ![Rotation de l’appareil](do-not-localize/screen_shot_2018-03-23at084612.png) ![Rotation de l’appareil](do-not-localize/screen_shot_2018-03-23at084637.png)
 
    * **Sélectionner un appareil** : permet de sélectionner un appareil spécifique à émuler dans une liste (pour plus d’informations, voir l’étape suivante).
 
-     ![Sélectionner un périphérique](do-not-localize/screen_shot_2018-03-23at084743.png)
+     ![Sélectionner un appareil](do-not-localize/screen_shot_2018-03-23at084743.png)
 
 1. Pour sélectionner un appareil spécifique à émuler, vous pouvez effectuer l’une des opérations suivantes :
 
@@ -170,7 +170,7 @@ Un **conteneur de mises en page** est un système de paragraphes qui présente l
 
    Vous devez sélectionner l’option **Parent**.
 
-   ![Option parente](do-not-localize/screen_shot_2018-03-23at085417.png)
+   ![Option parent](do-not-localize/screen_shot_2018-03-23at085417.png)
 
 1. Si le composant de mise en page est imbriqué, la sélection de l’option **Parent** présente une sélection déroulante, ce qui vous permet de sélectionner le conteneur de mise en page imbriqué ou ses parents.
 
@@ -244,9 +244,9 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
      ![Afficher les composants masqués](do-not-localize/screen_shot_2018-03-23at091007.png)
 
-   * **Rétablir la disposition du point d’arrêt** : rétablit la mise en page par défaut. Aucune mise en page personnalisée n’est donc imposée.
+   * **Rétablir la disposition du point d’arrêt** : rétablit la disposition par défaut. Aucune disposition personnalisée n’est donc imposée.
 
-     ![Redéfinir la disposition du point d’arrêt](do-not-localize/screen_shot_2018-03-23at091013.png)
+     ![Rétablir la disposition du point d’arrêt](do-not-localize/screen_shot_2018-03-23at091013.png)
 
    * **Flotter sur une nouvelle ligne** : déplace le composant d’une position vers le haut si l’espace est suffisant.
 

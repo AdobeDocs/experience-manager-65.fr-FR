@@ -12,7 +12,7 @@ exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
 source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
 source-wordcount: '5375'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -177,7 +177,7 @@ Affichez des aperçus de vos pages dans différents formats de fenêtre d’affi
 
 ![chlimage_1-5](assets/chlimage_1-5a.png)
 
-Pour activer l’aperçu de périphérique dans le **[!UICONTROL sidekick]**, vous devez configurer la page et le service **[!UICONTROL MobileEmulatorProvider]**. Une autre option de configuration de page permet de déterminer les appareils affichés dans la liste **[!UICONTROL Appareils]**.
+Pour activer l’aperçu d’appareil dans le **[!UICONTROL sidekick]**, vous devez configurer la page et le service **[!UICONTROL MobileEmulatorProvider]**. Une autre option de configuration de page permet de déterminer les appareils affichés dans la liste **[!UICONTROL Appareils]**.
 
 ### Ajout de la liste des appareils {#adding-the-devices-list}
 

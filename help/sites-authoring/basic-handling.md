@@ -12,7 +12,7 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '3025'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -146,7 +146,7 @@ L’en-tête est toujours affiché en haut de l’écran. Bien que la plupart de
 
   Sélectionnez le lien **Adobe Experience Manager** pour naviguer entre les consoles.
 
-  ![lien Adobe Experience Manager](assets/screen_shot_2018-03-23at103615.png)
+  ![Lien Adobe Experience Manager](assets/screen_shot_2018-03-23at103615.png)
 
 * [Recherche](/help/sites-authoring/search.md)
 
@@ -178,15 +178,15 @@ L’en-tête est toujours affiché en haut de l’écran. Bien que la plupart de
 
 * [Sélecteur de rail](/help/sites-authoring/basic-handling.md#rail-selector)
 
-  ![Liste du sélecteur de rail affichée sur le côté gauche de l’écran Adobe Experience Manager.](do-not-localize/screen_shot_2018-03-23at103943.png)
+  ![La liste du sélecteur de rail s’affiche sur le côté gauche de l’écran Adobe Experience Manager.](do-not-localize/screen_shot_2018-03-23at103943.png)
 
   Les options présentées dépendent de la console active. Par exemple, dans la console **Sites**, vous ne pouvez sélectionner que le contenu (valeur par défaut), la frise chronologique, les références ou le panneau latéral de filtrage.
 
   ![Sélecteur de rail](assets/screen_shot_2018-03-23at104029.png)
 
-* Chemin de navigation
+* Chemins de navigation
 
-  ![Chemin de navigation](assets/bh-05.png)
+  ![Chemins de navigation](assets/bh-05.png)
 
   Le chemin de navigation est situé au milieu du rail. Il affiche toujours la description de l’élément sélectionné et vous permet de naviguer au sein d’une console spécifique. Dans la console Sites, vous pouvez parcourir les différents niveaux de votre site Web.
 
@@ -210,7 +210,7 @@ L’en-tête est toujours affiché en haut de l’écran. Bien que la plupart de
 
   L’icône Vues se trouve à l’extrémité droite de la barre d’outils AEM. Comme elle indique également la vue actuelle, elle change. Par exemple, la vue par défaut, **Mode Colonnes** affiche :
 
-  ![Mode Colonnes](assets/bh-07.png)
+  ![Vue Colonnes](assets/bh-07.png)
 
   Vous pouvez basculer entre les vues Colonne, Carte et Liste. Dans la vue Liste, les paramètres de vue sont également affichés.
 
@@ -391,7 +391,7 @@ Quel que soit le mode, vous pouvez désélectionner tous les éléments en appuy
 
 1. Par exemple, en mode Carte :
 
-   ![Sélectionner - Mode Carte](assets/bh-15.png)
+   ![Sélectionner - Vue Carte](assets/bh-15.png)
 
 1. Une fois que vous avez sélectionné une ressource, l’en-tête de premier niveau est couvert par la [barre d’outils Actions](#actionstoolbar), qui permet d’accéder aux actions actuellement applicables à la ressource sélectionnée.
 
@@ -399,7 +399,7 @@ Quel que soit le mode, vous pouvez désélectionner tous les éléments en appuy
 
 ### Mode Colonnes {#column-view}
 
-![Mode Colonnes](assets/bh-16.png)
+![Vue Colonnes](assets/bh-16.png)
 
 Le mode Colonnes permet de naviguer visuellement dans une arborescence de contenu à travers une série de colonnes en cascade. Ce mode vous permet de visualiser et de parcourir l’arborescence de votre site web.
 
@@ -409,7 +409,7 @@ Si vous sélectionnez une ressource dans la colonne la plus à gauche, les resso
 
    * Le nom de la ressource et le chevron sont mis en surbrillance lorsque vous appuyez ou cliquez dessus.
 
-     ![Mode Colonnes](assets/bh-17.png)
+     ![Vue Colonnes](assets/bh-17.png)
 
    * Les enfants de la ressource sur laquelle vous avez cliqué/appuyé s’affichent dans la colonne située à droite de cette ressource.
    * Si vous appuyez ou cliquez sur un nom de ressource sans enfant, les détails s’affichent dans la dernière colonne.
@@ -420,7 +420,7 @@ Si vous sélectionnez une ressource dans la colonne la plus à gauche, les resso
    * Les détails de la ressource sélectionnée sont affichés dans la dernière colonne.
    * La barre d’outils des actions apparaît.
 
-     ![Mode Colonnes](assets/bh-18.png)
+     ![Vue Colonnes](assets/bh-18.png)
 
   Lorsque vous sélectionnez une page en mode Colonnes, la page sélectionnée s’affiche dans la dernière colonne avec les détails suivants :
 
@@ -447,7 +447,7 @@ Si vous sélectionnez une ressource dans la colonne la plus à gauche, les resso
 
 * Les [actions rapides](#quick-actions) sont également disponibles dans ce mode, comme la sélection et les actions courantes, telles que la modification.
 
-  ![Mode Carte - Actions rapides](assets/bh-13-1.png)
+  ![Vue Carte - Actions rapides](assets/bh-13-1.png)
 
 * Vous pouvez parcourir l’arborescence vers le bas en appuyant/cliquant sur des cartes (en veillant à éviter les actions rapides), ou vers le haut en utilisant le [chemin de navigation dans l’en-tête](/help/sites-authoring/basic-handling.md#the-header).
 
@@ -460,7 +460,7 @@ Si vous sélectionnez une ressource dans la colonne la plus à gauche, les resso
 
 * Pour sélectionner facilement tous les éléments de la liste, utilisez la case à cocher située dans le coin supérieur gauche de la liste.
 
-  ![Mode Liste - Sélectionner tout](assets/bh-20.png)
+  ![Vue Liste - Tout sélectionner](assets/bh-20.png)
 
    * Cette case apparaît cochée lorsque tous les éléments de la liste sont sélectionnés.
 
@@ -485,7 +485,7 @@ Si vous sélectionnez une ressource dans la colonne la plus à gauche, les resso
 
   ![Paramètres d’affichage - Configurer les colonnes](assets/bh-21.png)
 
-  Par défaut, la colonne **Nom** est affichée ; ce nom fait partie de l’URL de la page. Dans certains cas, l’auteur peut avoir besoin d’accéder à des pages dans une autre langue et voir le nom de la page (qui reste généralement inchangé) peut s’avérer très utile si l’auteur ne connaît pas la langue de la page.
+  Par défaut, la colonne **Nom** est affichée ; ce nom fait partie de l’URL de la page. Dans certains cas, l’auteur ou l’autrice doit accéder à des pages rédigées dans une autre langue. Le fait de voir le nom de la page (qui ne change généralement pas) peut s’avérer très utile si l’auteur ou l’autrice ne comprend pas la langue de la page.
 
 * Modifiez l’ordre des éléments à l’aide de la barre verticale en pointillés tout à droite de chaque élément de la liste.
 
@@ -561,7 +561,7 @@ La colonne Chronologie permet d’effectuer les actions suivantes :
    * [enregistrer une version](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui) ;.
    * [Démarrer un workflow](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
 
-Ces options sont accessibles via le chevron en regard du champ **Commentaire** champ .
+Ces fonctionnalités sont accessibles par le biais du chevron en regard du champ **Commentaires**.
 
 ![Chronologie](assets/bh-27.png)
 

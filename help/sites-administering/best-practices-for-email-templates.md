@@ -1,6 +1,6 @@
 ---
 title: Bonnes pratiques relatives aux modèles d’e-mail
-description: Découvrez les bonnes pratiques pour créer des modèles d’email dans AEM.
+description: Découvrez les bonnes pratiques pour créer des modèles d’e-mail dans AEM.
 uuid: 07417a63-7ca6-484c-b55d-57b319428329
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
 source-git-commit: 3f48e059ec8b0b255caf7d29749930e0534a37f7
 workflow-type: tm+mt
 source-wordcount: '1081'
-ht-degree: 47%
+ht-degree: 99%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 47%
 
 >[!CAUTION]
 >
->Cet article s’applique aux composants Foundation obsolètes basés sur AEM composants de messagerie électronique.
+>Cet article s’applique aux composants de base obsolètes basés sur les composants d’e-mail AEM.
 >
->Les utilisateurs sont encouragés à utiliser les [Composants principaux : composants de messagerie électronique.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
+>Les utilisateurs et utilisatrices sont encouragés à utiliser les [composants principaux modernes : composants d’e-mail.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=fr)
 
-Ce document décrit certaines des bonnes pratiques concernant la conception d’emails, ce qui se traduit par un modèle de campagne email bien développé.
+Ce document décrit certaines des bonnes pratiques concernant la conception d’e-mails, ce qui se traduit par un modèle de campagne par e-mail bien développé.
 
-La campagne de démonstration disponible dans AEM observe toutes ces meilleures pratiques. La manière dont les bonnes pratiques sont mises en oeuvre dans la campagne de démonstration est décrite pour chaque bonne pratique.
+La campagne de démonstration disponible dans AEM observe toutes ces meilleures pratiques. La manière dont les bonnes pratiques sont mises en œuvre dans la campagne de démonstration est décrite pour chaque bonne pratique.
 
 Utilisez ces bonnes pratiques lors de la création de votre propre newsletter.
 
@@ -39,15 +39,15 @@ Utilisez ces bonnes pratiques lors de la création de votre propre newsletter.
 >
 >`/content/campaigns/teasers/en/campaign-promotion-global`
 >
->Assurez-vous qu’il réside sous un `master` page
+>Vous devez vous assurer qu’elle se trouve sous une page `master`
 >
 >`/content/campaigns/teasers/master/en/campaign-promotion-global`
 
 >[!NOTE]
 >
->Lors de la création d’un modèle de courrier électronique pour Adobe Campaign, vous devez inclure la propriété . **acMapping** avec la valeur **mapRecipient** dans le **jcr:content** du modèle. Dans le cas contraire, vous ne pouvez pas sélectionner le modèle Adobe Campaign dans **Propriétés de la page** de Experience Manager (le champ est désactivé).
+>Lors de la création d’un modèle d’e-mail pour Adobe Campaign, vous devez inclure la propriété **acMapping** avec la valeur **mapRecipient** dans le nœud **jcr:content** du modèle. Sinon, vous ne pouvez pas sélectionner le modèle Adobe Campaign dans **Propriétés de la page** d’Experience Manager (le champ est désactivé).
 
-## Composant Modèle/page {#template-page-component}
+## Composant du modèle/de la page {#template-page-component}
 
 ***/libs/mcm/campaign/components/campaign_newsletterpage***
 
@@ -70,8 +70,8 @@ Utilisez ces bonnes pratiques lors de la création de votre propre newsletter.
    <td><p>Les tableaux sont utilisés dans tout le modèle pour structurer le contenu. Actuellement, il est possible d’utiliser un maximum de quatre tableaux imbriqués (1 tableau de base + max. 3 niveaux d’imbrication).</p> <p>Les balises &lt;div&gt; ne sont utilisées qu’en mode création pour garantir la modification correcte des composants.</p> </td>
   </tr>
   <tr>
-   <td>Utilisez des attributs d’élément (par exemple, cellpadding, valign et width) pour définir les dimensions de table. Cette méthode force une structure de modèle de boîte.</td>
-   <td><p>Toutes les tables contiennent les attributs nécessaires, tels que <i>border</i>, <i>cellpadding</i>, <i>cellspacing</i>, et <i>width</i>.</p> <p>Pour que le positionnement des éléments dans les tableaux soit harmonisé, toutes les cellules des tableaux doive avoir l’attribut <i>valign="top"</i> défini.</p> </td>
+   <td>Utilisez des attributs d’élément (par exemple, cellpadding, valign et width) pour définir les dimensions de table. Vous forcez ainsi une structure boîte-modèle.</td>
+   <td><p>Toutes les tables contiennent les attributs nécessaires, tels que <i>border</i>, <i>cellpadding</i>, <i>cellspacing</i> et <i>width</i>.</p> <p>Pour que le positionnement des éléments dans les tableaux soit harmonisé, toutes les cellules des tableaux doive avoir l’attribut <i>valign="top"</i> défini.</p> </td>
   </tr>
   <tr>
    <td><p>Prenez en compte, si possible, de la convivialité des appareils mobiles. Utilisez les requêtes multimédias pour augmenter la taille du texte sur les petits écrans et fournir des zones actives de la taille d’une vignette pour les liens.</p> <p>Rendez un e-mail interactif si la conception l’autorise.</p> </td>
@@ -79,15 +79,15 @@ Utilisez ces bonnes pratiques lors de la création de votre propre newsletter.
   </tr>
   <tr>
    <td>Les styles CSS intégrés sont un meilleur choix que l’insertion de tous les styles CSS au début.</td>
-   <td><p>Pour mieux démontrer la structure de HTML sous-jacente et faciliter la personnalisation de la structure de newsletter, seules certaines définitions CSS ont été insérées.</p> <p>Les styles de base et les variations de modèle ont été extraits dans un bloc de style dans l’élément &lt;head&gt; de la page. Lors de l’envoi final de la newsletter, ces définitions CSS sont insérées dans le HTML. Un mécanisme de mise en ligne automatique est prévu, mais actuellement pas disponible.</p> </td>
+   <td><p>Pour mieux mettre en évidence la structure HTML sous-jacente et faciliter la possibilité de personnaliser la structure de newsletter, seules certaines définitions CSS ont été intégrées.</p> <p>Les styles de base et les variations de modèle ont été extraits dans un bloc de style dans l’élément &lt;head&gt; de la page. À l’envoi final de la newsletter, ces définitions CSS doivent être intégrées dans la structure HTML. Un mécanisme d’intégration automatique est prévu, mais actuellement pas disponible.</p> </td>
   </tr>
   <tr>
-   <td>Restez simple avec votre CSS. Évitez les déclarations de style composées, le code court, les propriétés de mise en page CSS, les sélecteurs complexes et les pseudo-éléments.</td>
+   <td>Restez simple avec votre CSS. Évitez les déclarations de style composées, les formes courtes de code, les propriétés de mise en page CSS, les sélecteurs complexes et les pseudo-éléments.</td>
    <td>Même si les styles CSS sont utilisés pour illustrer le design de démonstration, les recommandations CSS sont observées.</td>
   </tr>
   <tr>
-   <td>Les e-mails doivent présenter une largeur maximale de 600 à 800 pixels. Ce dimensionnement les rend plus performants dans la taille du volet d’aperçu fournie par de nombreux clients.</td>
-   <td>Le <i>width</i> du tableau de contenu est limité à 600 pixels dans la conception de démonstration.</td>
+   <td>Les e-mails doivent présenter une largeur maximale de 600 à 800 pixels. Ils auront ainsi un meilleur comportement dans le volet d’aperçu de la plupart des clients et clientes.</td>
+   <td>La <i>largeur</i> des tableaux de contenu est limitée à 600 pixels dans le design de démonstration.</td>
   </tr>
  </tbody>
 </table>
@@ -101,7 +101,7 @@ Utilisez ces bonnes pratiques lors de la création de votre propre newsletter.
 | Ajoutez des attributs *alt* aux images. | L’attribut *alt* a été défini comme obligatoire pour le composant d’image. |
 | Utilisez le format *jpg* au lieu du format *png* pour les images. | Les images sont toujours diffusées en tant que JPG par le composant d’image. |
 | Utilisez l’élément `<img>` au lieu des images d’arrière-plan dans un tableau. | Aucune donnée d’image d’arrière-plan n’est utilisée dans les modèles. |
-| Ajoutez l’attribut style=&quot;bloc d’affichage&quot; dans les images. Cela leur permet de bien s&#39;afficher sur Gmail. | Toutes les images contiennent par défaut l’attribut *style=&quot;display block&quot;*. |
+| Ajoutez l’attribut style=&quot;bloc d’affichage&quot; dans les images. Cela leur permet de bien s’afficher sur Gmail. | Toutes les images contiennent par défaut l’attribut *style=&quot;display block&quot;*. |
 
 ### Texte et liens {#text-and-links}
 
@@ -115,11 +115,11 @@ Utilisez ces bonnes pratiques lors de la création de votre propre newsletter.
   </tr>
   <tr>
    <td>Utilisez du code html &lt;font&gt; plutôt que du style dans CSS (famille de polices).</td>
-   <td>L’éditeur de texte enrichi (par exemple, dans le composant textimage) prend désormais en charge le choix et l’application de familles de polices et de tailles de police aux textes sélectionnés. Ils sont rendus sous la forme de balises.</td>
+   <td>L’éditeur de texte enrichi (par exemple, dans le composant textimage) prend désormais en charge le choix et l’application de familles de polices et de tailles de police aux textes sélectionnés. Ils sont rendus en tant que balises &lt;font&gt;.</td>
   </tr>
   <tr>
-   <td>Utilisez des polices de base interplateformes, telles que <i>Arial®, Verdana, Géorgie</i>, et <i>Times New Roman®</i>.</td>
-   <td><p>Dépend de la conception de la newsletter.</p> <p>Pour la conception de démonstration, la police "Helvetica®" est utilisée, mais elle revient à une police sans-serif générique, si elle n’est pas présente.</p> </td>
+   <td>Utilisez des polices de base sur plusieurs plateformes, telles qu’<i>Arial, Verdana, Georgia</i> et <i>Times New Roman®</i>.</td>
+   <td><p>Dépend de la conception de la newsletter.</p> <p>Le design de démonstration utilise la police « Helvetica® », mais celle-ci est remplacée par une police sans-serif générique si elle est absente.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -128,9 +128,9 @@ Utilisez ces bonnes pratiques lors de la création de votre propre newsletter.
 
 | **Bonne pratique** | **Mise en œuvre** |
 |---|---|
-| Utilisez le validateur W3C pour corriger le code du HTML. Assurez-vous que toutes les balises ouvertes sont correctement fermées. | Le code doit être validé. Pour le Doctype de transition XHTML uniquement, l’attribut xmlns manquant pour `<html>` élément est manquant. |
-| Évitez d’utiliser JavaScript ou Flash : ces technologies ne sont souvent pas prises en charge par les clients de messagerie. | JavaScript ou Flash n’est pas utilisé dans le modèle de newsletter. |
-| Ajoutez une version en texte brut pour l’envoi multipartie. | Un nouveau widget a été intégré aux propriétés de la page pour extraire facilement une version en texte brut du contenu de la page. Vous pouvez l’utiliser comme point de départ pour la version finale en texte brut. |
+| Utilisez le validateur W3C pour corriger le code du HTML. Assurez-vous que toutes les balises ouvertes sont correctement fermées. | Le code doit être validé. Pour le composant Doctype de transition XHTML seulement, l’attribut xmlns manquant pour l’élément `<html>` est manquant. |
+| Évitez d’utiliser JavaScript ou Flash, car ces technologies ne sont souvent pas prises en charge par les clients de messagerie. | JavaScript et Flash ne sont pas utilisés dans le modèle de newsletter. |
+| Ajoutez une version en texte brut pour l’envoi multipartie. | Un nouveau widget a été intégré aux propriétés de page pour extraire facilement une version en texte brut à partir du contenu de page. Vous pouvez l’utiliser comme point de départ pour la version en texte brut finale. |
 
 ## Modèles et exemples de newsletter Campaign {#campaign-newsletter-templates-and-examples}
 
@@ -138,15 +138,15 @@ AEM est fourni avec des modèles et des composants clé en main vous permettant 
 
 ### Modèles {#templates}
 
-Pour offrir une base solide et élargir la variété des possibilités de flux de contenu, trois types de modèles légèrement différents sont disponibles d’usine. Vous pouvez facilement utiliser ces trois types pour créer une newsletter personnalisée.
+Pour offrir une base solide et élargir la variété de possibilités de flux de contenu, trois types de modèles légèrement différents prêts à l’emploi sont disponibles. Vous pouvez facilement utiliser ces trois types pour créer une newsletter personnalisée.
 
-Tous ont une **header**, un **pied de page**, et a **corps** . Sous la section de corps, chaque modèle diffère en **conception de colonne** (une, deux ou trois colonnes).
+Tous comportent une section **en-tête**, **bas de page** et **corps**. Dans le corps, chaque modèle a une **conception des colonnes** différente (une, deux ou trois colonnes).
 
 ![Variantes de newsletters possibles](assets/chlimage_1-69.png)
 
 ### Composants {#components}
 
-[Sept composants sont actuellement disponibles dans les modèles de campagne](/help/sites-authoring/adobe-campaign-components.md). Ces composants sont tous basés sur le langage de balisage d’Adobe. **HTL**.
+[Sept composants sont actuellement disponibles dans les modèles de campagne](/help/sites-authoring/adobe-campaign-components.md). Ces composants sont tous basés sur le langage de balisage d’Adobe **HTL**.
 
 | **Nom du composant** | **Chemin du composant** |
 |---|---|
@@ -162,4 +162,4 @@ Tous ont une **header**, un **pied de page**, et a **corps** . Sous la section d
 >
 >Ces composants sont optimisés pour le contenu de courrier électronique. En d’autres termes, ils respectent les meilleures pratiques décrites dans ce document. L’utilisation d’autres composants prêts à l’emploi enfreint généralement ces règles.
 
-Ces composants sont décrits en détail à la section [Composants Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md).
+Ces composants sont décrits en détail dans la section [Composants d’Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md).

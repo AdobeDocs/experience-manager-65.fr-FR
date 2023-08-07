@@ -1,6 +1,6 @@
 ---
 title: Admin Consoles
-description: Découvrez comment utiliser les Admin Console disponibles dans AEM.
+description: Découvrez comment utiliser les Admin Consoles disponibles dans AEM.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -10,7 +10,7 @@ exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
 source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
 source-wordcount: '226'
-ht-degree: 52%
+ht-degree: 75%
 
 ---
 
@@ -31,7 +31,7 @@ Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
    [`https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
 
-1. Sélectionnez le nœud correspondant à la console pour laquelle vous souhaitez réactiver l’IU classique. Dans notre exemple, nous réactiverons l’IU classique pour la console Sites.
+1. Sélectionnez le nœud correspondant à la console pour laquelle vous souhaitez réactiver l’IU classique. Dans notre exemple, nous réactiverons l’interface utilisateur classique pour la console Sites.
 
    `/libs/cq/core/content/nav/sites`
 
@@ -39,14 +39,14 @@ Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
    * **Chemin** : `/apps/cq/core/content/nav/sites`
    * **Emplacement du recouvrement** : `/apps/`
-   * **Faire correspondre les types de noeud**: principal (cochez la case)
+   * **Faire correspondre les types de nœud** : actif (cochez la case)
 
 1. Ajoutez la propriété booléenne suivante au nœud recouvert :
 
    `enableDesktopOnly = {Boolean}true`
 
-1. Le **IU classique** est à nouveau disponible en tant qu’option contextuelle dans le Admin Console.
+1. La variable **IU classique** est à nouveau disponible en tant qu’option contextuelle dans le Admin Console.
 
-   ![Option contextuelle de l’IU classique](assets/syui-01-2019-02-27-15-16-55.png)
+   ![pption contextuelle de l’UI classique](assets/syui-01-2019-02-27-15-16-55.png)
 
-Répétez ces étapes pour chaque console pour laquelle vous souhaitez réactiver l’accès à la version de l’interface utilisateur classique.
+Répétez ces étapes pour chaque console pour laquelle vous souhaitez réactiver l’accès à la version de l’UI classique.

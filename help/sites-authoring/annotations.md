@@ -86,7 +86,7 @@ Le mode Annotation vous permet de créer, modifier, déplacer ou supprimer des a
 
      ![Esquisse](do-not-localize/screen_shot_2018-03-22at110640.png)
 
-   * Choisissez/changez la couleur :
+   * Choisissez/modifiez la couleur :
 
      ![Choisir/modifier la couleur](do-not-localize/chlimage_1-19.png)
 

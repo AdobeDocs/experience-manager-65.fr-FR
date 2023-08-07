@@ -14,7 +14,7 @@ ht-degree: 80%
 
 ---
 
-# Fragments d’expérience {#experience-fragments}
+# Fragments d’expérience{#experience-fragments}
 
 ## Principes élémentaires {#the-basics}
 
@@ -69,7 +69,7 @@ Il est recommandé de configurer la réécriture à l’aide d’un recouvrement
 
 ## Variations sociales {#social-variations}
 
-Les variations sociales peuvent être publiées sur les réseaux sociaux (texte et image). Dans Adobe Experience Manager (AEM), ces variantes sociales peuvent contenir des composants ; par exemple, les composants texte et image.
+Les variations sociales peuvent être publiées sur les réseaux sociaux (texte et image). Dans Adobe Experience Manager (AEM), ces variantes sociales peuvent contenir des composants ; par exemple, des composants de texte ou d’image.
 
 L’image et le texte de la publication sur le réseau social peuvent être extraits de n’importe quel type de ressource d’image ou de ressource de texte, à n’importe quel niveau de profondeur (dans le bloc fonctionnel ou dans le conteneur de mises en page).
 
@@ -167,7 +167,7 @@ Une fois la page HTML générée, le pipeline Sling Rewriter apporte des modific
    >
    >En règle générale, les liens internes du HTML sont des liens relatifs, mais il peut arriver que des composants personnalisés fournissent des URL complètes dans le HTML. Par défaut, AEM ignore ces URL complètes et n’effectue aucune modification.
 
-   Les liens de ces attributs sont exécutés via l’externaliseur de liens AEM `publishLink()` pour recréer l’URL comme si elle se trouvait sur une instance publiée et, de ce fait, accessible au public.
+   Les liens de ces attributs sont exécutés via l’externaliseur de liens AEM `publishLink()` pour recréer l’URL comme si elle se trouvait sur une instance publiée et, de ce fait, disponible publiquement.
 
 Lors de l’utilisation d’une implémentation prête à l’emploi, le processus décrit ci-dessus doit être suffisant pour générer l’offre Target à partir du fragment d’expérience, puis l’exporter vers Adobe Target. Toutefois, certains cas d’utilisation ne sont pas pris en compte dans ce processus, à savoir :
 
@@ -290,7 +290,7 @@ S’agissant de la variation du fragment d’expérience concernée par le proce
 En entrée, la méthode reçoit les paramètres suivants :
 
 * `link`
-Le `String` Représentation du lien en cours de traitement. Il s’agit généralement d’une URL relative pointant vers la ressource sur l’instance de création.
+La variable `String` Représentation du lien en cours de traitement. Il s’agit généralement d’une URL relative pointant vers la ressource sur l’instance de création.
 
 * `tag`
 Nom de l’élément de HTML en cours de traitement.
@@ -298,7 +298,7 @@ Nom de l’élément de HTML en cours de traitement.
 * `attribute`
 Nom exact de l’attribut.
 
-Par exemple, si le système Exporter vers Target traite cet élément, vous pouvez définir `CSSInclude` comme :
+Par exemple, si le système Exporter vers Target traite cet élément, vous pouvez définir `CSSInclude` en tant que :
 
 ```java
 <link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.css" type="text/css">

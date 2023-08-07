@@ -12,7 +12,7 @@ exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
 source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
 source-wordcount: '1040'
-ht-degree: 92%
+ht-degree: 95%
 
 ---
 
@@ -68,7 +68,7 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
    >
    >Si un site contient des racines de langue sous le niveau supérieur, les pages et les branches d’un lancement doivent se trouver sous une racine de langue commune.
    >
-   >Si vous essayez de créer un lancement avec une page parent ou enfant dans le chemin source, il échoue et renvoie l’erreur &quot;La destination existe déjà à l’emplacement : chemin d’accès à la page&quot;.
+   >Si vous essayez de créer un lancement avec une page parent ou enfant dans le chemin source, il échoue et renvoie l’erreur « La destination existe déjà à l’emplacement : chemin d’accès à la page ».
 
 1. Pour chaque entrée, vous pouvez indiquer si :
 
@@ -102,7 +102,7 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
 
 ### Création d’un lancement avec un nouveau modèle {#create-launch-with-new-template}
 
-When [création d’un lancement](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) vous pouvez choisir d’utiliser un nouveau modèle avec l’option : **utilisation d’un nouveau modèle pour remplacer la page**
+When [créer un lancement](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) vous pouvez choisir d’utiliser un nouveau modèle avec l’option : **utilisation d’un nouveau modèle pour remplacer la page**
 
 >[!CAUTION]
 >

@@ -398,7 +398,7 @@ Ensuite, intégrez vos paramètres OAuth2 à AEM :
 
 Une fois configurés, les paramètres doivent se présenter comme suit :
 
-![Configuration SMTP OAuth2 de CQ Mailer terminée](assets/oauth-outlook-smptconfig.png)
+![Configuration SMTP OAuth2 du courrier CQ terminée](assets/oauth-outlook-smptconfig.png)
 
 Maintenant, activez les composants OAuth. Vous pouvez le faire en procédant comme suit :
 

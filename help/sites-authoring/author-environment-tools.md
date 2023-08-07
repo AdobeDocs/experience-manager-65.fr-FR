@@ -12,7 +12,7 @@ exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '2245'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -166,7 +166,7 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
 
 Si vous devez modifier rapidement une ressource, vous pouvez lancer [l’éditeur de ressources](/help/assets/manage-assets.md) directement depuis l’explorateur de ressources en cliquant sur l’icône Modifier affichée en regard du nom de la ressource.
 
-![Explorateur de ressources Périphérique de bureau](do-not-localize/screen_shot_2018-03-22at142448.png)
+![Périphérique de bureau explorateur de ressources](do-not-localize/screen_shot_2018-03-22at142448.png)
 
 ## Arborescence de contenu {#content-tree}
 
@@ -202,7 +202,7 @@ Cliquez sur le composant pour le mettre en surbrillance dans l’éditeur de pag
 
   Si le composant sur lequel vous cliquez est éditable, une icône de clé à molette s’affiche à droite du nom. Cliquez sur cette icône pour lancer directement la boîte de dialogue de modification du composant.
 
-  ![Icône de clé à molette - Modifier](do-not-localize/screen_shot_2018-03-22at142725.png)
+  ![Icône de clé à molette : modifier](do-not-localize/screen_shot_2018-03-22at142725.png)
 
 * Une page faisant partie d’une page [Live Copy](/help/sites-administering/msm.md), où les composants sont hérités d’une autre page, par exemple :
 

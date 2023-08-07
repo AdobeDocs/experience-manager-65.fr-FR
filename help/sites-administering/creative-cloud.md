@@ -1,6 +1,6 @@
 ---
-title: Partage de dossiers avec Adobe Creative Cloud
-description: En savoir plus sur le partage de dossier avec Adobe Creative Cloud
+title: Partage de dossiers avec Adobe Creative Cloud
+description: En savoir plus sur le partage de dossier avec Adobe Creative Cloud.
 uuid: 4d93df7d-36da-43bb-a069-42993c607b2b
 contentOwner: asgupta
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,16 +11,16 @@ docset: aem65
 source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
 source-wordcount: '68'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
 
-# Partage de dossiers avec Adobe Creative Cloud {#folder-sharing-with-adobe-creative-cloud}
+# Partage de dossiers avec Adobe Creative Cloud {#folder-sharing-with-adobe-creative-cloud}
 
 >[!CAUTION]
 >
->La fonction de partage de dossiers entre AEM et Creative Cloud est obsolète. Il est conseillé aux clients d’utiliser des fonctionnalités plus récentes, telles que [Adobe d’un lien de ressource](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) ou [Application de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr). En savoir plus sur les [bonnes pratiques d’intégration d’AEM et de Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>La fonction de partage de dossiers entre AEM et Creative Cloud est obsolète. Les clientes et clients sont fortement invités à utiliser les nouvelles fonctionnalités, telles qu’[Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) ou l’[application de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr). En savoir plus sur les [bonnes pratiques d’intégration d’AEM et de Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 <!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 

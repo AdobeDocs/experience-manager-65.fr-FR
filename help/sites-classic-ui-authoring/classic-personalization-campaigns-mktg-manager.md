@@ -1,7 +1,7 @@
 ---
 title: Utiliser Marketing Campaign Manager
 seo-title: Working with the Marketing Campaign Manager
-description: La console Marketing Campaign Manager (MCM) vous aide à gérer des campagnes multicanaux. Grâce à ce logiciel d’automatisation du marketing, vous pouvez gérer toutes vos marques, campagnes et expériences, ainsi que les segments, listes, pistes et rapports associés.
+description: La console Marketing Campaign Manager (MCM) vous aide à gérer des campagnes multicanaux. Grâce à ce logiciel d’automatisation du marketing, vous pouvez gérer toutes vos marques, campagnes et expériences, ainsi que les segments, listes, prospects et rapports associés.
 seo-description: The Marketing Campaign Manager (MCM) is a console that helps you manage multi-channel campaigns. With this marketing automation software you can manage all your brands, campaigns and experiences together with the related segments, lists, leads, and reports.
 uuid: 63b817e4-34b9-42b8-845b-e0b7d9af3a96
 contentOwner: User
@@ -14,15 +14,15 @@ exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1180'
-ht-degree: 44%
+ht-degree: 98%
 
 ---
 
 # Utiliser Marketing Campaign Manager{#working-with-the-marketing-campaign-manager}
 
-Marketing Campaign Manager (MCM) est une console disponible dans AEM qui vous aide à gérer vos campagnes multicanal. Grâce à ce logiciel d’automatisation du marketing, vous pouvez gérer toutes vos marques, campagnes et expériences, ainsi que les segments, listes, pistes et rapports associés.
+Marketing Campaign Manager (MCM) est une console disponible dans AEM qui vous aide à gérer vos campagnes multicanal. Grâce à ce logiciel d’automatisation du marketing, vous pouvez gérer toutes vos marques, campagnes et expériences, ainsi que les segments, listes, prospects et rapports associés.
 
-MCM est accessible à partir de divers emplacements dans AEM. par exemple, l’écran d’accueil, à l’aide de l’icône Campagnes ou avec l’URL :
+MCM est accessible à partir de divers emplacements dans AEM, par exemple, l’écran d’accueil, à l’aide de l’icône Campagnes ou avec l’URL :
 
 `https://<hostname>:<port>/libs/mcm/content/admin.html`
 
@@ -63,7 +63,7 @@ Ce volet vous permet de gérer vos marques, campagnes et expériences.
 
 ## Tableau de bord {#dashboard}
 
-Le tableau de bord présente quatre volets qui vous donnent un aperçu de vos listes (de pistes), segments, rapports et campagnes. L’accès aux fonctionnalités de base de ces fonctionnalités est également disponible ici.
+Le tableau de bord présente quatre volets qui vous donnent un aperçu de vos listes (de prospects), segments, rapports et campagnes. L’accès aux fonctionnalités de base pour ceux-ci est également disponible ici.
 
 ![mcm_dashboard](assets/mcm_dashboard.png)
 
@@ -74,9 +74,9 @@ Le tableau de bord présente quatre volets qui vous donnent un aperçu de vos li
 >Adobe ne prévoit pas d’optimiser cette fonctionnalité (gestion des prospects).
 > Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
 
-Dans AEM MCM, vous pouvez organiser et ajouter des pistes en les saisissant manuellement ou en important une liste séparée par des virgules. par exemple, une liste de diffusion. Pour générer des pistes, il existe d’autres méthodes comme les abonnements aux newsletters ou les inscriptions aux communautés (s’ils sont configurés de la sorte, ils peuvent déclencher un workflow pour renseigner les pistes). Les pistes sont généralement classées et mises dans une liste afin que vous puissiez ensuite effectuer des actions sur l’ensemble de la liste. par exemple, envoyer un email personnalisé à une certaine liste.
+Dans AEM MCM, vous pouvez organiser et ajouter des prospects en les saisissant manuellement ou en important une liste séparée par des virgules. par exemple, une liste de diffusion. Pour générer des pistes, il existe d’autres méthodes comme les abonnements aux newsletters ou les inscriptions aux communautés (s’ils sont configurés de la sorte, ils peuvent déclencher un workflow pour renseigner les pistes). Les prospects sont généralement catégorisés et mis dans une liste afin que vous puissiez ensuite effectuer des actions sur l’ensemble de la liste ; par exemple, envoyer un email personnalisé à une certaine liste.
 
-Sous **Pistes** dans le volet de gauche, vous pouvez créer, importer, modifier et supprimer vos pistes, puis les activer ou les désactiver selon vos besoins. Vous pouvez ajouter une piste à une liste ou voir à quelles listes elle appartient déjà.
+Sous **Prospects** dans le volet de gauche, vous pouvez créer, importer, modifier et supprimer vos prospects, puis les activer ou les désactiver selon vos besoins. Vous pouvez ajouter un prospect à une liste ou voir à quelles listes il appartient déjà.
 
 >[!NOTE]
 >
@@ -91,9 +91,9 @@ Sous **Pistes** dans le volet de gauche, vous pouvez créer, importer, modifier 
 >Adobe ne prévoit pas d’optimiser cette fonctionnalité (gestion des listes).
 > Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
 
-Les listes vous permettent d’organiser vos pistes en groupes. Avec les listes, vous pouvez cibler vos campagnes marketing sur un groupe de personnes sélectionné. par exemple, vous pouvez envoyer une newsletter ciblée à une liste.
+Les listes vous permettent d’organiser vos prospects en groupes. Avec les listes, vous pouvez cibler vos campagnes marketing sur un groupe de personnes sélectionné ; par exemple, vous pouvez envoyer une newsletter ciblée à une liste.
 
-Sous **Listes**, vous pouvez gérer vos listes en créant, important, éditant, fusionnant et supprimant des listes que vous pourrez ensuite activer ou désactiver selon vos besoins. Vous pouvez également afficher les pistes de cette liste, voir si la liste est membre d’une autre liste ou afficher la description.
+Sous **Listes**, vous pouvez gérer vos listes en créant, important, éditant, fusionnant et supprimant des listes que vous pourrez ensuite activer ou désactiver selon vos besoins. Vous pouvez également afficher les prospects de cette liste, voir si la liste est membre d’une autre liste ou afficher la description.
 
 >[!NOTE]
 >
@@ -113,58 +113,58 @@ Pour accéder aux campagnes existantes, dans le MCM, cliquez sur **Campagnes**.
 
 * **Dans le volet de gauche** :
 Vous voyez la liste de toutes les marques et campagnes.
-Un seul clic sur une marque permet d’effectuer les deux opérations suivantes :
+Un seul clic sur une marque permet d’effectuer les deux opérations suivantes :
 
-   * développez la liste pour afficher toutes les campagnes associées dans le volet de gauche ; cette liste indique également le nombre d’expériences qui existent pour chaque campagne.
-   * ouvrez l’aperçu de la marque dans le volet de droite.
+   * développer la liste pour afficher toutes les campagnes associées dans le volet de gauche ; cette liste indique également le nombre d’expériences qui existent pour chaque campagne ;
+   * ouvrir l’aperçu de la marque dans le volet de droite.
 
 * **Dans le volet de droite** :
 Des icônes sont affichées pour chaque marque (les anciennes campagnes ne sont pas visibles).
 Vous pouvez double-cliquer dessus pour ouvrir l’aperçu de la marque.
 
-#### Présentation de la marque {#brand-overview}
+#### Vue d’ensemble de la marque {#brand-overview}
 
 ![mcm_brandoverview](assets/mcm_brandoverview.png)
 
 Vous pouvez effectuer les opérations suivantes à partir de cette fenêtre :
 
 * Afficher le nombre de campagnes et d’expériences (nombre affiché dans le volet de gauche) qui existent pour cette marque.
-* Créez un **Nouveau...** campagne pour cette marque.
+* Sous **Nouveau...**, créer une campagne pour cette marque.
 
-* modifier le calendrier affiché ; select **Semaine**, **Mois** ou **Trimestre**, utilisez les flèches pour sélectionner des périodes spécifiques ou revenez à **Aujourd&#39;hui**.
+* Modifier le calendrier affiché ; sélectionnez **Semaine**, **Mois** ou **Trimestre**, utilisez les flèches pour sélectionner des périodes spécifiques ou revenez à **Aujourd’hui**.
 
-* Sélectionnez une opération (dans le volet de droite) pour :
+* Sélectionnez une campagne (dans le volet de droite) pour :
 
-   * Modifiez la variable **Propriétés...**
+   * Modifier les **Propriétés...**.
    * **Supprimer** la campagne.
 
-* Ouvrez la vue d’ensemble des campagnes (double-cliquez sur une campagne dans le volet de droite ou cliquez une seule fois dans le volet de gauche).
+* Ouvrez la vue d’ensemble des campagnes (double-cliquez sur une campagne dans le volet de droite ou faites un simple clic dans le volet de gauche).
 
-#### Présentation de la campagne {#campaign-overview}
+#### Vue d’ensemble de la campagne {#campaign-overview}
 
-Pour chaque campagne, deux vues sont disponibles :
+Pour chaque campagne individuelle, deux vues sont disponibles :
 
 1. **Mode Calendrier**
 
-   Utilisez l’icône :
+   Utilisez l’icône :
 
    ![Vue Calendrier](do-not-localize/mcm_iconcalendarview.png)
 
-   Ceci présente une liste de tous les points de contact (gris) avec une période horizontale des expériences (vert) connectées à ce point de contact :
+   Elle présente une liste de tous les points de contact (gris) avec une période horizontale des expériences (vert) connectées à ce point de contact :
 
    ![mcm_banner_calendarview](assets/mcm_banner_calendarview.png)
 
    Vous pouvez effectuer les opérations suivantes à partir de cette fenêtre :
 
-   * Modifiez la période que vous affichez à l’aide des flèches ou revenez à **Aujourd&#39;hui**.
+   * Modifiez la période que vous affichez à l’aide des flèches ou revenez à **Aujourd’hui**.
 
-   * Utilisation **Ajouter un point de contact...** pour ajouter un nouveau point de contact pour une expérience existante.
+   * Utilisez **Ajouter un point de contact...** pour ajouter un nouveau point de contact pour une expérience existante.
 
    * Cliquez sur un teaser (dans le volet de droite) pour définir la variable **Heure d’activation** et **Heure de désactivation**.
 
 1. **Vue Liste**
 
-   Utilisez l’icône :
+   Utilisez l’icône :
 
    ![Vue Liste](do-not-localize/mcm_icon_listview.png)
 
@@ -175,26 +175,26 @@ Pour chaque campagne, deux vues sont disponibles :
    Vous pouvez effectuer les opérations suivantes à partir de cette fenêtre :
 
    * Créez une **nouvelle** expérience, par exemple, des newsletters, des teasers et des offres Adobe Target.
-   * **Modifier** les détails d’une page de teaser ou d’une newsletter spécifique (un double-clic peut également être utilisé).
-   * Définissez la variable **Propriétés...** pour une newsletter ou une page de teaser spécifique.
+   * **Modifiez** les informations d’une page de teaser ou d’une newsletter spécifique (un double-clic peut également être utilisé).
+   * Définissez les **Propriétés...** pour une newsletter ou une page de teaser spécifique.
    * **Simulez** l’aspect et la fonctionnalité d’une expérience (newsletter ou page de teaser).
 Lorsque la page simulée est ouverte, vous pouvez ensuite ouvrir le sidekick pour passer en mode d’édition pour cette page.
 
-   * **Analyser...** les impressions générées pour une page.
+   * **Analysez** les impressions générées pour une page.
 
-   * **Supprimer** éléments lorsqu’ils ne sont plus nécessaires.
+   * **Supprimez** les éléments lorsqu’ils ne sont plus nécessaires.
    * **Recherchez** votre texte (la recherche porte sur le champ Titre de l’expérience).
-   * Utilisation **Avancé** pour appliquer des filtres à la recherche.
+   * Utilisez le mode **Avancé** de la recherche pour appliquer des filtres à la recherche.
 
-### Simulation des expériences de campagne {#simulating-your-campaign-experiences}
+### Simuler des expériences de campagne {#simulating-your-campaign-experiences}
 
-Dans le MCM, cliquez sur **Campagnes**. Assurez-vous que le mode Liste est principal, sélectionnez l’expérience de campagne requise, puis cliquez sur **Simuler**. Le point de contact (page de teaser ou de newsletter) s’ouvre pour afficher l’expérience que vous avez sélectionnée, comme le visiteur le verra.
+Dans le MCM, cliquez sur **Campagnes**. Assurez-vous que la vue Liste est active, puis sélectionnez l’expérience de campagne requise et cliquez sur **Simuler**. Le point de contact (page de teaser ou de newsletter) s’ouvre pour afficher l’expérience que vous avez sélectionnée, tel que le visiteur ou la visiteuse la verra.
 
 ![mcm_simulateexperience](assets/mcm_simulateexperience.png)
 
 À partir de là, vous pouvez également ouvrir le sidekick (cliquez sur la petite flèche vers le bas) pour passer en mode d’édition afin de mettre à jour la page.
 
-### Analyse de vos expériences de campagne {#analyzing-your-campaign-experiences}
+### Analyser vos expériences de campagne {#analyzing-your-campaign-experiences}
 
 Dans le MCM, cliquez sur **Campagnes**. Assurez-vous que la vue Liste est active, puis sélectionnez l’expérience de campagne requise et cliquez sur **Analyser...** Un graphique des impressions de page s’affiche au fil du temps.
 

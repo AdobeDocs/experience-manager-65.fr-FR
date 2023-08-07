@@ -12,7 +12,7 @@ feature: Forms Service
 source-git-commit: fc148a5f5e0fcaac2980dc73004fa92ac3b91fb3
 workflow-type: tm+mt
 source-wordcount: '3889'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -128,7 +128,7 @@ ht-degree: 98%
    + [Présentation de l’intégration des données AEM Forms](using/data-integration.md)
    + [Configuration des sources de données](using/configure-data-sources.md)
    + [Configuration du service OData de Microsoft Dynamics](using/ms-dynamics-odata-configuration.md)
-   + [Intégration de Salesforce à l’aide de l’autorisation de flux d’informations d’identification du client OAuth 2.0](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+   + [Intégration de Salesforce à l’aide du flux d’informations d’identification du client OAuth 2.0 authorization](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
    + [Création d’un modèle de données de formulaire](using/create-form-data-models.md)
    + [Utilisation d’un modèle de données de formulaire](using/work-with-form-data-model.md)
    + [Utilisation d’un modèle de données de formulaire](using/using-form-data-model.md)
@@ -139,7 +139,7 @@ ht-degree: 98%
 + Formulaires adaptatifs - Création de base {#adaptive-forms-basic-authoring}
    + [Meilleures pratiques pour travailler avec les formulaires adaptatifs](using/adaptive-forms-best-practices.md)
    + [Création d’un formulaire adaptatif](using/creating-adaptive-form.md)
-   + [Création ou ajout d’un formulaire adaptatif à une page AEM Sites](using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+   + [Créer ou ajouter un formulaire adaptatif à une page AEM Sites](using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
    + [Fragments de formulaire adaptatif](using/adaptive-form-fragments.md)
    + [Configuration de l’action d’envoi](using/configuring-submit-actions.md)
    + [Utilisation de CAPTCHA dans les formulaires adaptifs](using/captcha-adaptive-forms.md)
@@ -521,7 +521,7 @@ ht-degree: 98%
       + [Définition des polices à incorporer](/help/forms/using/admin-help/specify-fonts-embed.md)
       + [Définition des paramètres de protection](/help/forms/using/admin-help/specify-security-settings.md)
       + [Modification du jeu de caractères](/help/forms/using/admin-help/change-character-set.md)
-   + Configuration du processus des formulaires {#configure-forms-workflow}
+   + Configuration du processus des formulaires{#configure-forms-workflow}
       + [A propos de la terminologie concernant l’administration et les processus](/help/forms/using/admin-help/administration-process-terminology.md)
       + [Gestion de processus](/help/forms/using/admin-help/processes.md)
       + [Configuration des calendriers professionnels](/help/forms/using/admin-help/configuring-business-calendars.md)

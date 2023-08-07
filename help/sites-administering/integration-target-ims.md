@@ -5,7 +5,7 @@ exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1549'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -59,7 +59,7 @@ La première étape de la configuration consiste à créer une configuration IMS
    >
    >Gardez cette configuration ouverte. Elle sera nécessaire à nouveau lors de la [Réalisation de la configuration IMS dans AEM](#completing-the-ims-configuration-in-aem).
 
-   ![Message d’information pour l’ajout d’un certificat sur Adobe I/O](assets/integrate-target-io-02.png)
+   ![Message d’information pour ajouter un certificat sur Adobe I/O](assets/integrate-target-io-02.png)
 
 ## Configuration d’IMS pour l’intégration d’Adobe Target à AEM {#configuring-ims-for-adobe-target-integration-with-aem}
 

@@ -8,7 +8,7 @@ exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '753'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -90,7 +90,7 @@ Adobe propose deux versions de framework d’intégration de Commerce :
   </tr>
   <tr>
    <td>Quand l’utiliser</td>
-   <td>Cas d’utilisation limités : Par exemple, dans les cas où de petits catalogues statiques peuvent avoir besoin d’être importés.</td>
+   <td>Cas d’utilisation limités : par exemple, cas où de petits catalogues statiques peuvent avoir besoin d’être importés</td>
    <td>Solution préférée dans la plupart des cas d’utilisation</td>
   </tr>
  </tbody>
@@ -137,7 +137,7 @@ AEM e-commerce fournit :
    * Bons
    * et autres
 
-  ![exemple de composants geometrixx](/help/sites-administering/assets/chlimage_1-130.png)
+  ![Exemple de composants geometrixx.](/help/sites-administering/assets/chlimage_1-130.png)
 
   >[!NOTE]
   >
@@ -148,13 +148,13 @@ AEM e-commerce fournit :
    * La recherche AEM
    * La recherche du système e-commerce
    * Une recherche tierce
-   * Ou une combinaison de ces trois fonctions
+   * Ou une combinaison de ces trois fonctions.
 
-  ![exemple de recherche](/help/sites-administering/assets/chlimage_1-131.png)
+  ![Exemple de recherche.](/help/sites-administering/assets/chlimage_1-131.png)
 
 * Utilise les capacités d’AEM de **présenter du contenu sur plusieurs canaux**, qu’il s’agisse d’une fenêtre de navigateur ou d’un appareil mobile. Ainsi, vous proposez votre contenu au format adapté pour vos visiteurs.
 
-  ![exemple de vue mobile](/help/sites-administering/assets/chlimage_1-132.png)
+  ![Exemple de vue mobile.](/help/sites-administering/assets/chlimage_1-132.png)
 
 * La possibilité de **développer votre propre mise en œuvre de l’intégration en fonction du [framework d’AEM eCommerce](#the-framework)**.
 
@@ -167,11 +167,11 @@ AEM e-commerce fournit :
 
   Dans l’exemple ci-dessous, un teaser est affiché, car le contenu du panier est inférieur à 75 $ :
 
-  ![panier avec contexte client](/help/sites-administering/assets/chlimage_1-133.png)
+  ![Panier avec contexte client.](/help/sites-administering/assets/chlimage_1-133.png)
 
   Cela peut être modifié lorsque le contenu du panier est supérieur à 75 $ :
 
-  ![panier avec contexte client après modification](/help/sites-administering/assets/chlimage_1-134.png)
+  ![Panier avec contexte client après modification.](/help/sites-administering/assets/chlimage_1-134.png)
 
 * Et d’autres fonctionnalités, notamment :
 

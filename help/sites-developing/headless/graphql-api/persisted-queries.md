@@ -5,13 +5,13 @@ exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1423'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
 # Requêtes GraphQL persistantes {#persisted-queries-caching}
 
-Les requêtes persistantes sont des requêtes GraphQL qui sont créées et stockées sur le serveur Adobe Experience Manager (AEM). Elles peuvent être demandées avec une requête GET par les applications clientes. La réponse d’une requête GET peut être mise en cache au niveau du Dispatcher et du réseau de diffusion de contenu (CDN), ce qui améliore finalement les performances de l’application cliente qui la demande. Elle est en cela différente de la requête GraphQL standard, qui est exécutée à l’aide de requêtes POST dans lesquelles la réponse ne peut pas être facilement mise en cache.
+Les requêtes persistantes sont des requêtes GraphQL qui sont créées et stockées sur le serveur Adobe Experience Manager (AEM). Elles peuvent être demandées avec une requête GET par les applications clientes. La réponse d’une requête GET peut être mise en cache au niveau du Dispatcher et du réseau de diffusion de contenu (CDN), ce qui améliore finalement les performances de l’application cliente qui la demande. Elle est en cela différente de la requête GraphQL standard, qui est exécutée à l’aide de requêtes POST dans lesquelles la réponse ne peut pas être facilement mise en cache.
 
 <!--
 >[!NOTE]

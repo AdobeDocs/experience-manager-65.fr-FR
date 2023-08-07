@@ -60,13 +60,13 @@ La barre d’outils permet d’accéder à de nombreuses options. Selon votre co
 
   Fait basculer la [barre d’outils de l’émulateur](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate) utilisée pour émuler l’aspect de la page sur un autre dispositif. Cette option est automatiquement basculée en mode de mise en page.
 
-  ![Emulateur](do-not-localize/screen_shot_2018-03-22at111442.png)
+  ![Émulateur](do-not-localize/screen_shot_2018-03-22at111442.png)
 
 * **ContextHub**
 
   Ouvre [ContextHub](/help/sites-authoring/ch-previewing.md). Uniquement disponible en mode Aperçu.
 
-  ![Context Hub](assets/screen_shot_2018-03-22at111543.png)
+  ![ContextHub](assets/screen_shot_2018-03-22at111543.png)
 
 * **Titre de la page**
 
@@ -122,7 +122,7 @@ L’espace réservé indique le positionnement du composant que vous déposez. P
 
 * Lors de l’ajout d’un nouveau composant à la page (en le faisant glisser depuis l’explorateur de composants) :
 
-  ![ajout d’un nouveau composant](assets/screen_shot_2018-03-22at111928.png)
+  ![ajouter un nouveau composant](assets/screen_shot_2018-03-22at111928.png)
 
 * Lors du déplacement d’un composant existant :
 
@@ -294,7 +294,7 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient 
 
   Cette option permet de modifier la [disposition](/help/sites-authoring/editing-content.md#edit-component-layout) du composant sélectionné. Cela s’applique uniquement au composant sélectionné et n’active pas le [mode de disposition](/help/sites-authoring/author-environment-tools.md#page-modes) pour la page entière.
 
-  ![Mise en page](do-not-localize/screen_shot_2018-03-22at113044.png)
+  ![Disposition](do-not-localize/screen_shot_2018-03-22at113044.png)
 
 * **Convertir en variation de fragment d’expérience**
 
