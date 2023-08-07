@@ -10,9 +10,9 @@ discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
 source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2839'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ Vous pouvez faire glisser et déposer une image à partir de l’[explorateur de
 
 Une fois l’image chargée (pas avant), vous pouvez utiliser la [modification statique](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) pour recadrer/faire pivoter l’image, au besoin :
 
-![Barre d’outils d’édition statique](do-not-localize/chlimage_1-10.png)
+![Barre d’outils de la modification statique](do-not-localize/chlimage_1-10.png)
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Une fois l’image chargée (pas avant), vous pouvez utiliser la [modification s
 
 Différentes autres options sont disponibles en mode Plein écran. Par exemple, Carte et Zoom :
 
-![Mode de modification plein écran](do-not-localize/chlimage_1-11.png)
+![Mode de modification Plein écran](do-not-localize/chlimage_1-11.png)
 
 Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
 
@@ -103,7 +103,7 @@ Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
 Pour mapper une image, sélectionnez Mapper. Vous pouvez spécifier ensuite comment créer la zone cliquable (rectangle, polygone, etc.) et l’emplacement sur lequel la zone doit pointer.
 
 * **Recadrer**
-Sélectionnez recadrer pour effectuer un recadrage d’une image. Utilisez la souris pour effectuer le recadrage.
+Sélectionnez Recadrer pour effectuer un recadrage d’une image. Utilisez la souris pour effectuer le recadrage.
 
 * **Rotation**
 Pour faire pivoter une image, sélectionnez Rotation. Répétez l’opération jusqu’à ce que l’image ait pivoté comme vous le souhaitez.
