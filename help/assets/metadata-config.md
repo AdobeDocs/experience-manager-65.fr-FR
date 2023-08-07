@@ -7,9 +7,9 @@ feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2000'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -150,12 +150,12 @@ Utilisez l’éditeur Formulaires de schéma de métadonnées de dossier pour cr
 
 ### Modification des formulaires de schéma de métadonnées de dossier {#edit-folder-metadata-schema-forms}
 
-Vous pouvez modifier un formulaire de schéma de métadonnées existant ou nouvellement ajouté, qui comprend les éléments suivants :
+Vous pouvez modifier un formulaire de schéma de métadonnées existant ou nouvellement ajouté, qui comprend les éléments suivants :
 
 * Onglets
 * Éléments de formulaire dans des onglets.
 
-Vous pouvez associer ou configurer ces éléments de formulaire dans un champ au sein d’un nœud de métadonnées dans le référentiel CRX. Vous pouvez ajouter de nouveaux onglets ou éléments de formulaire au formulaire de schéma de métadonnées.
+Vous pouvez associer ou configurer ces éléments de formulaire dans un champ au sein d’un nœud de métadonnées dans le référentiel CRX. Vous pouvez ajouter des onglets ou des éléments de formulaire au formulaire de schéma de métadonnées.
 
 1. Sur la page Formulaires de schéma, sélectionnez le formulaire que vous avez créé, puis sélectionnez l’option **[!UICONTROL Modifier]** dans la barre d’outils.
 1. Sur la page Éditeur de schéma de métadonnées de dossier, cliquez sur `+` pour ajouter un onglet au formulaire. Pour renommer l’onglet, cliquez sur le nom par défaut, puis indiquez le nouveau nom sous **[!UICONTROL Paramètres]**.
@@ -199,7 +199,7 @@ Pour modifier les propriétés d’éléments de formulaire, cliquez sur le comp
 
 **[!UICONTROL Libellé du champ]** : nom de la propriété de métadonnées qui s’affiche sur la page des propriétés du dossier.
 
-**[!UICONTROL Associer à la propriété]**: Cette propriété spécifie le chemin d’accès relatif du noeud de dossier dans le référentiel CRX où il est enregistré. Elle commence par &quot;**./**&quot;, qui indique que le chemin d’accès se trouve sous le noeud du dossier.
+**[!UICONTROL Associer à la propriété]** : cette propriété spécifie le chemin d’accès relatif du nœud de dossier dans le référentiel CRX où il est enregistré. Elle commence par « **./** », qui indique que le chemin d’accès se trouve sous le nœud du dossier.
 
 Les valeurs admises pour cette propriété sont les suivantes :
 
@@ -211,13 +211,13 @@ Pour vous assurer que le composant est affiché correctement dans le formulaire 
 
 **[!UICONTROL Chemin JSON]** : utilisez cette propriété pour indiquer le chemin d’accès au fichier JSON où vous spécifiez des paires clé/valeur pour les options.
 
-**[!UICONTROL Espace réservé]**: Utilisez cette propriété pour spécifier le texte d’espace réservé approprié concernant la propriété de métadonnées.
+**[!UICONTROL Espace réservé]** : utilisez cette propriété pour spécifier le texte d’espace réservé approprié concernant la propriété de métadonnées.
 
 **[!UICONTROL Choix]** : utilisez cette propriété pour spécifier des choix dans une liste.
 
 **[!UICONTROL Description]** : utilisez cette propriété pour ajouter une brève description pour le composant de métadonnées.
 
-**[!UICONTROL Classe]**: Classe d’objet à laquelle la propriété est associée.
+**[!UICONTROL Classe]** : classe d’objet à laquelle la propriété est associée.
 
 ### Suppression de formulaires de schéma de métadonnées de dossier {#delete-folder-metadata-schema-forms}
 
@@ -248,11 +248,11 @@ Si vous configurez un schéma de métadonnées pour un dossier, le chemin d’ac
 
 #### Affectation d’un schéma lors de la création d’un dossier {#assign-a-schema-when-creating-a-folder}
 
-Vous pouvez attribuer un schéma de métadonnées de dossier lors de la création d’un dossier. Si au moins un schéma de métadonnées de dossier existe dans le système, une liste supplémentaire s’affiche dans la variable **[!UICONTROL Créer un dossier]** boîte de dialogue. Vous pouvez sélectionner le schéma souhaité. Par défaut, aucun schéma n’est sélectionné.
+Vous pouvez attribuer un schéma de métadonnées de dossier lors de la création d’un dossier. Si au moins un schéma de métadonnées de dossier existe dans le système, une liste supplémentaire s’affiche dans la boîte de dialogue **[!UICONTROL Créer un dossier]**. Vous pouvez sélectionner le schéma souhaité. Par défaut, aucun schéma n’est sélectionné.
 
 1. Dans l’interface utilisateur [!DNL Experience Manager Assets], cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
-1. Indiquez un titre et un nom pour le dossier.
-1. Dans la liste Schéma de métadonnées de dossier , sélectionnez le schéma souhaité. Cliquez ensuite sur **[!UICONTROL Créer]**.
+1. Indiquez un titre et un nom de dossier.
+1. Dans la liste Schéma de métadonnées de dossier, sélectionnez le schéma souhaité. Cliquez ensuite sur **[!UICONTROL Créer]**.
 
    ![select_schema](assets/select_schema.png)
 
@@ -281,4 +281,3 @@ Saisissez les valeurs de métadonnées dans les différents champs, puis cliquez
 >* [Profils de traitement des métadonnées, des images et des vidéos](processing-profiles.md).
 >* [Bonnes pratiques d’organisation des ressources numériques à utiliser pour le traitement des profils](/help/assets/organize-assets.md).
 >* [Écriture différée XMP](/help/assets/xmp-writeback.md).
-
