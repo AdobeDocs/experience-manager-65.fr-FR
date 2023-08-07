@@ -7,9 +7,9 @@ feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1031'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,6 @@ ht-degree: 95%
 >
 >* Vous devez disposer de l’autorisation `Edit ACL` pour le dossier ou la ressource que vous souhaitez partager sous forme d’un lien.
 >* Pour envoyer des e-mails aux utilisateurs, configurez les détails du serveur SMTP dans le [Service de messagerie Day CQ](#configmailservice).
-
 
 ## Partager des ressources {#share-assets}
 
@@ -49,9 +48,9 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
    >
    >Si vous saisissez l’ID d’e-mail d’une personne qui ne fait pas partie de votre entreprise, les mots [!UICONTROL Utilisateur externe] sont ajoutés à son ID d’e-mail.
 
-1. Dans le **[!UICONTROL Objet]** , saisissez l’objet de la ressource que vous souhaitez partager.
+1. Dans la zone **[!UICONTROL Objet]**, indiquez l’objet de la ressource que vous souhaitez partager.
 
-1. Dans le **[!UICONTROL Message]** , saisissez un message facultatif.
+1. Dans la zone **[!UICONTROL Message]**, saisissez un message facultatif.
 
 1. Dans le champ **[!UICONTROL Expiration]**, spécifiez la date et l’heure d’expiration du lien à l’aide du sélecteur de date. Le délai d’expiration par défaut du lien est de 1 jour.
 
@@ -83,8 +82,8 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 1. Dans la liste des services, recherchez le **[!UICONTROL service de messagerie Day CQ]**.
 1. Cliquez sur **[!UICONTROL Modifier]** en regard du service, puis configurez les paramètres suivants pour le **[!UICONTROL service de messagerie Day CQ]** avec les détails mentionnés par rapport à leur nom :
 
-   * SMTP server host name : nom d’hôte du serveur de messagerie
-   * Port du serveur SMTP : port du serveur de messagerie
+   * Nom d’hôte du serveur SMTP : nom d’hôte du serveur de messagerie
+   * Port du serveur SMTP : port du serveur de messagerie
    * Utilisateur SMTP : nom d’utilisateur du serveur de messagerie
    * Mot de passe SMTP : mot de passe du serveur de messagerie
 
@@ -106,7 +105,7 @@ Lorsque vous téléchargez des ressources via le lien partagé avec la fonction 
 
 ## Bonnes pratiques et résolution des problèmes {#best-practices-and-troubleshooting}
 
-* Les dossiers de ressources ou les collections dont le nom contient un espace blanc peuvent ne pas être partagés.
+* Les collections ou les dossiers de ressources dont le nom contient un espace blanc risquent de ne pas être partagés.
 * Si des personnes ne peuvent pas télécharger les ressources partagées, contactez votre équipe d’administration [!DNL Experience Manager] pour connaître les [limites de téléchargement](#configure-maximum-data-size).
 * Si vous ne pouvez pas envoyer d’e-mail avec des liens vers des ressources partagées ou si les autres personnes ne peuvent pas recevoir votre e-mail, contactez votre équipe d’administration [!DNL Experience Manager] pour savoir si le [service de messagerie](#configure-day-cq-mail-service) est configuré ou non.
 * Si vous ne pouvez pas partager des fichiers à l’aide de la fonctionnalité de partage de liens, assurez-vous que vous disposez des autorisations appropriées. Voir [Partager des fichiers](#share-assets).
@@ -117,4 +116,5 @@ Lorsque vous téléchargez des ressources via le lien partagé avec la fonction 
    * `http://[aem_server]:[port]/linkshare.html`
    * `http://[aem_server]:[port]/linksharepreview.html`
    * `http://[aem_server]:[port]/linkexpired.html`
-   Dans l’interface d’[!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**. Ouvrez la configuration de **[!UICONTROL l’externaliseur de liens Day CQ]** et modifiez les propriétés suivantes dans le champ **[!UICONTROL Domaines]** avec les valeurs correspondantes pour : `local`, `author` et `publish`. Pour les propriétés `local` et `author`, saisissez respectivement l’URL du site local et l’URL de l’instance d’auteur. Si vous exécutez une seule Instance de création [!DNL Experience Manager], utilisez la même valeur pour les propriétés `local` et `author`. Pour les instances de Publication, indiquez l’URL de l’instance de publication [!DNL Experience Manager].
+
+  Dans l’interface d’[!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**. Ouvrez la configuration de **[!UICONTROL l’externaliseur de liens Day CQ]** et modifiez les propriétés suivantes dans le champ **[!UICONTROL Domaines]** avec les valeurs correspondantes pour : `local`, `author` et `publish`. Pour les propriétés `local` et `author`, saisissez respectivement l’URL du site local et l’URL de l’instance d’auteur. Si vous exécutez une seule Instance de création [!DNL Experience Manager], utilisez la même valeur pour les propriétés `local` et `author`. Pour les instances de Publication, indiquez l’URL de l’instance de publication [!DNL Experience Manager].
