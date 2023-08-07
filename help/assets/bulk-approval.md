@@ -7,9 +7,9 @@ role: User
 exl-id: 23c90e10-aa03-450e-9fb0-2f5be0c5066b
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '807'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -24,11 +24,11 @@ Mettez en place des workflows de révision pour les ressources dans un dossier o
 
 [!DNL Adobe Experience Manager Assets] permet de configurer un workflow de révision ad hoc pour les ressources situées dans un dossier ou une collection et de partager ce workflow avec des réviseurs ou des partenaires de conception afin d’obtenir leurs commentaires.
 
-Vous pouvez associer le workflow de révision à un projet ou créer une tâche de révision indépendante.
+Vous pouvez soit associer le workflow de révision à un projet, soit créer une tâche de révision indépendante.
 
-Une fois que vous avez partagé les ressources, les réviseurs peuvent les approuver ou les rejeter. Les notifications sont envoyées à différentes étapes du workflow pour informer les destinataires prévus de l&#39;achèvement de diverses tâches. Par exemple, lorsque vous partagez un dossier ou une collection, le réviseur reçoit une notification lui indiquant qu’un dossier/une collection a été partagé pour la révision.
+Une fois que vous avez partagé les ressources, les réviseurs ou les réviseuses peuvent les approuver ou les rejeter. Les notifications sont envoyées à différentes étapes du workflow pour informer les destinataires prévus de l&#39;achèvement de diverses tâches. Par exemple, lorsque vous partagez un dossier ou une collection, le réviseur reçoit une notification lui indiquant qu’un dossier/une collection a été partagé pour la révision.
 
-Une fois que le réviseur a terminé la révision (approuve ou refuse les ressources), vous recevez une notification de fin de révision.
+Une fois que le réviseur ou la réviseuse a terminé la révision (en approuvant ou refusant les ressources), vous recevez une notification de fin de révision.
 
 ## Création d’une tâche de révision pour des dossiers {#creating-a-review-task-for-folders}
 
@@ -39,7 +39,7 @@ Une fois que le réviseur a terminé la révision (approuve ou refuse les ressou
 
    >[!NOTE]
    >
-   >Seuls les projets pour lesquels vous disposez d’autorisations de niveau Éditeur (ou supérieur) sont visibles dans la variable **[!UICONTROL Projets]** liste.
+   >Seuls les projets pour lesquels vous disposez d’autorisations de niveau Éditeur (ou supérieur) s’affichent dans la liste **[!UICONTROL Projets]**.
 
 1. Entrez un nom pour la tâche de révision, puis sélectionnez un approbateur dans la liste **[!UICONTROL Affecter à.]**
 
@@ -85,7 +85,7 @@ Une fois que le réviseur a terminé la révision (approuve ou refuse les ressou
 
    >[!NOTE]
    >
-   >Seuls les projets pour lesquels vous disposez d’autorisations de niveau Éditeur (ou supérieur) sont visibles dans la variable **[!UICONTROL Projets]** liste.
+   >Seuls les projets pour lesquels vous disposez d’autorisations de niveau Éditeur (ou supérieur) s’affichent dans la liste **[!UICONTROL Projets]**.
 
 1. Entrez un nom pour la tâche de révision, puis sélectionnez un approbateur dans la liste **[!UICONTROL Affecter à.]**
 
@@ -105,7 +105,7 @@ Une fois que le réviseur a terminé la révision (approuve ou refuse les ressou
    ![review_task_collection](assets/review_task_collection.png)
 
 1. Cliquez sur **[!UICONTROL Terminé]** dans la barre d’outils. Dans la boîte de dialogue, saisissez un commentaire, puis cliquez sur **[!UICONTROL Terminé]** pour confirmer.
-1. Accédez à la console Collections et ouvrez la collection. Les icônes d’état d’approbation des ressources s’affichent en mode Carte et Liste.
+1. Accédez à la console Collections et ouvrez la collection. Les icônes de statut d’approbation des ressources s’affichent en mode Carte et Liste.
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
 
