@@ -12,9 +12,9 @@ discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
 feature: Upgrading
 exl-id: ef3895b9-8d35-4881-8188-c864ae3f0b4c
 source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1220'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -24,24 +24,24 @@ ht-degree: 59%
 
 CRX2Oak est un outil conçu pour migrer les données entre différents référentiels.
 
-Il peut être utilisé pour migrer des données des anciennes versions de CQ basées sur Apache Jackrabbit 2 vers Oak, et il peut également être utilisé pour copier des données entre des référentiels Oak.
+Il peut être utilisé pour migrer des données des anciennes versions de CQ basées sur Apache Jackrabbit 2 vers Oak, et il peut également être utilisé pour copier des données entre des référentiels Oak.
 
 Vous pouvez télécharger la version la plus récente de crx2oak à partir du référentiel public Adobe via :
 [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
 
 >[!NOTE]
 >
->Pour plus d’informations sur Apache Oak et les concepts clés de persistance AEM, voir [Présentation de la plateforme AEM](/help/sites-deploying/platform.md).
+>Pour plus d’informations sur Apache Oak et les concepts clés de persistance AEM, voir [Présentation de la plateforme AEM](/help/sites-deploying/platform.md).
 
-## Cas d’utilisation de la migration {#migration-use-cases}
+## Cas d’utilisation de migration {#migration-use-cases}
 
-L’outil peut être utilisé pour :
+L’outil peut être utilisé pour :
 
-* Migration d’anciennes versions de CQ 5 vers AEM 6
-* Copie de données entre plusieurs référentiels Oak
-* Conversion de données entre différentes implémentations Oak MicroKernel.
+* migrer d’anciennes versions de CQ 5 vers AEM 6 ;
+* copier des données entre plusieurs référentiels Oak ;
+* convertir des données entre différentes implémentations Oak Microkernel.
 
-La prise en charge de la migration de référentiels à l’aide de magasins Blob externes (communément appelés entrepôts de données) est fournie dans différentes combinaisons. Un chemin de migration possible va du référentiel CRX2 utilisant un `FileDataStore` externe vers un référentiel Oak à l’aide d’un `S3DataStore`.
+La prise en charge de la migration de référentiels à l’aide de magasins Blob externes (communément appelés magasins de données) est fournie dans différentes combinaisons. Un chemin de migration possible va du référentiel CRX2 utilisant un `FileDataStore` externe vers un référentiel Oak à l’aide d’un `S3DataStore`.
 
 Le diagramme ci-dessous montre toutes les combinaisons de migration possibles prises en charge par CRX2Oak :
 
@@ -49,19 +49,19 @@ Le diagramme ci-dessous montre toutes les combinaisons de migration possibles pr
 
 ## Fonctions {#features}
 
-CRX2Oak est appelé lors des mises à niveau d’AEM de manière à ce que l’utilisateur puisse spécifier un profil de migration prédéfini qui automatise la reconfiguration des modes de persistance. Il s’agit du mode de démarrage rapide.
+CRX2Oak est appelé lors des mises à niveau d’AEM de manière à ce que l’utilisateur ou l’utilisatrice puisse spécifier un profil de migration prédéfini qui automatise la reconfiguration des modes de persistance. Il s’agit du mode de démarrage rapide.
 
-Il peut également être exécuté séparément s’il nécessite davantage de personnalisation. Notez toutefois que dans ce mode, les modifications sont apportées uniquement au référentiel et toute reconfiguration supplémentaire de l’AEM doit être effectuée manuellement. On parle alors de mode autonome.
+Il peut également être exécuté séparément s’il nécessite davantage de personnalisation. Notez toutefois que dans ce mode, les modifications sont apportées uniquement au référentiel et toute reconfiguration supplémentaire d’AEM doit être effectuée manuellement. Il s’agit alors du mode autonome.
 
-Notez également qu’avec les paramètres par défaut en mode autonome, seul le magasin de noeuds sera migré et le nouveau référentiel réutilisera l’ancien stockage binaire.
+Notez également qu’avec les paramètres par défaut en mode autonome, seul le magasin de nœuds sera migré et le nouveau référentiel réutilisera l’ancien stockage binaire.
 
 ### Mode de démarrage rapide automatisé {#automated-quickstart-mode}
 
-Depuis AEM 6.3, CRX2Oak est en mesure de gérer les profils de migration définis par l’utilisateur qui peuvent être configurés avec toutes les options de migration déjà disponibles. Cela offre une flexibilité supérieure et la possibilité d’automatiser la configuration des AEM, fonctionnalités qui ne sont pas disponibles si vous utilisez l’outil en mode autonome.
+Depuis AEM 6.3, CRX2Oak est en mesure de gérer les profils de migration définis par les utilisateurs ou utilisatrices qui peuvent être configurés avec toutes les options de migration déjà disponibles. Cela offre une flexibilité supérieure et la possibilité d’automatiser la configuration d’AEM, des fonctionnalités qui ne sont pas disponibles si vous utilisez l’outil en mode autonome.
 
-Pour passer CRX2Oak en mode de démarrage rapide, vous devez définir le chemin d’accès au dossier crx-quickstart dans le répertoire d’installation AEM via cette variable d’environnement du système d’exploitation :
+Pour passer CRX2Oak en mode de démarrage rapide, vous devez définir le chemin d’accès au dossier crx-quickstart dans le répertoire d’installation AEM via cette variable d’environnement du système d’exploitation :
 
-**Pour les systèmes UNIX et macOS :**
+**Pour les systèmes UNIX et macOS :**
 
 ```shell
 export SLING_HOME="/path/to/crx-quickstart"
@@ -103,7 +103,7 @@ Si la copie des données doit être partagée sur deux référentiels différent
 
 #### Prise en charge des versions {#version-support}
 
-Par défaut, AEM crée une version de chaque noeud ou page qui est modifié et la stocke dans le référentiel. Les versions peuvent ensuite être utilisées pour restaurer la page à un état antérieur.
+Par défaut, AEM crée une version de chaque page ou nœud qui est modifié(e) et la stocke dans le référentiel. Les versions peuvent ensuite être utilisées pour restaurer la page à un état antérieur.
 
 Toutefois, ces versions ne sont jamais purgées, même si la page d’origine est supprimée. Les migrations effectuées avec des référentiels utilisés depuis très longtemps peuvent avoir besoin de traiter beaucoup de données redondantes, à cause des versions orphelines.
 
@@ -115,19 +115,19 @@ Les deux paramètres prennent également en charge le format de date `YYYY-MM-DD
 
 ![chlimage_1-153](assets/chlimage_1-153.png)
 
-#### Version Open Source {#open-source-version}
+#### Version open source {#open-source-version}
 
-Une version Open Source de CRX2Oak est disponible sous la forme d’une mise à niveau Oak. Il prend en charge toutes les fonctionnalités, à l’exception des suivantes :
+Une version open source de CRX2Oak est disponible sous la forme oak-upgrade. Elle prend en charge toutes les fonctionnalités, à l’exception des suivantes :
 
-* Prise en charge de CRX2
-* Prise en charge des profils de migration
-* Prise en charge de la reconfiguration automatisée des AEM
+* prise en charge de CRX2 ;
+* prise en charge des profils de migration ;
+* prise en charge de la reconfiguration automatisée d’AEM.
 
 Consultez la [documentation Apache](https://jackrabbit.apache.org/oak/docs/migration.html) pour en savoir plus.
 
 ## Paramètres {#parameters}
 
-### Options de magasin de noeuds {#node-store-options}
+### Options de magasin de nœuds {#node-store-options}
 
 * `--cache` : taille du cache en Mo (la valeur par défaut est `256`)
 
@@ -144,7 +144,7 @@ Consultez la [documentation Apache](https://jackrabbit.apache.org/oak/docs/migra
 
 * `--early-shutdown` : arrête le référentiel source JCR2 après la duplication des nœuds et avant l’application des commit hooks.
 * `--fail-on-error` : impose l’échec de la migration si les nœuds ne peuvent pas être lus à partir du référentiel source.
-* `--ldap` : effectue la migration des utilisateurs LDAP d’une instance CQ 5.x vers une instance basée sur Oak. Pour que cela fonctionne, le fournisseur d’identité dans la configuration Oak doit être nommé ldap. Pour plus d’informations, voir [Documentation LDAP](/help/sites-administering/ldap-config.md).
+* `--ldap` : effectue la migration des utilisateurs LDAP d’une instance CQ 5.x vers une instance basée sur Oak. Pour que cela fonctionne, le fournisseur d’identité dans la configuration Oak doit être nommé ldap. Pour plus d’informations, voir la [documentation LDAP](/help/sites-administering/ldap-config.md).
 
 * `--ldap-config:` Utilisez ce paramètre conjointement avec le paramètre `--ldap` pour les référentiels CQ 5.x qui ont utilisé plusieurs serveurs ldap pour l’authentification. Vous pouvez l’utiliser pour pointer vers les fichiers de configuration CQ 5.x `ldap_login.conf` ou `jaas.conf`. Le format est `--ldapconfig=path/to/ldap_login.conf`.
 
@@ -186,7 +186,7 @@ Consultez la [documentation Apache](https://jackrabbit.apache.org/oak/docs/migra
 
 ## Débogage {#debugging}
 
-Vous pouvez également activer les informations de débogage pour le processus de migration afin de résoudre les problèmes qui peuvent apparaître pendant le processus. Vous pouvez effectuer cette opération différemment selon le mode sur lequel vous souhaitez exécuter l’outil :
+Vous pouvez également activer les informations de débogage pour le processus de migration afin de résoudre les éventuels problèmes pouvant survenir pendant le processus. Vous pouvez effectuer cette opération différemment selon le mode sur lequel vous souhaitez exécuter l’outil :
 
 <table>
  <tbody>
