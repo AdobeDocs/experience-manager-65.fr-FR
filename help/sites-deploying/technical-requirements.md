@@ -4,9 +4,9 @@ description: Liste des plateformes clientes et serveur prises en charge pour Ado
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 source-git-commit: 3b08d5001e7d3c683caa021ecf051f44762bb9ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3526'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
 | Azul Zulu OpenJDK 8 - 64 bits | A : prise en charge de `[3]` | |
 
 1. Oracle est passé à un modèle de « support à long terme » (LTS) pour les produits Oracle Java™ SE. Java™ 9, Java™ 10 et Java™ 12 sont des versions non-LTS fournies par Oracle (consultez la [feuille de route de la prise en charge d’Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement d’exploitation, Adobe assure uniquement la prise en charge des versions LTS de Java™. La prise en charge et la distribution du JDK Oracle Java™ SE, y compris toutes les mises à jour de maintenance des versions LTS après la fin des mises à niveau publiques, sont directement prises en charge par Adobe pour tous les clients et clientes AEM utilisant la technologie Oracle Java™ SE. Consultez la [Politique de prise en charge Java™ pour Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-   **Important : Oracle Java™ 11 est pris en charge jusqu’en septembre 2026 au minimum. La prise en charge d’Oracle Java™ 17 est en cours de préparation.**
+   **Important : Oracle Java™ 11 est pris en charge au moins jusqu’en septembre 2026. La prise en charge d’Oracle Java™ 17 est en cours de préparation.**
 
 1. IBM® JRE est pris en charge uniquement avec le serveur d’applications WebSphere®.
 
@@ -207,8 +207,8 @@ Si vous installez AEM Forms 6.5, assurez-vous d’avoir installé le redistribu
 * Redistribuable Microsoft® Visual C++ 2008
 * Redistribuable Microsoft® Visual C++ 2010
 * Redistribuable Microsoft® Visual C++ 2012
-* Redistribuable Microsoft® Visual C++ 2013
-* Redistribuable Microsoft® Visual C++ 2019 (VC14.28 ou version ultérieure)
+* Microsoft® Visual C++ 2013 redistribuable
+* Microsoft® Visual C++ 2019 (VC14.28 ou version ultérieure) redistribuable
 
 
 
@@ -512,9 +512,9 @@ En outre :
 * 2,35 Go d’espace disponible sur le disque dur
 * Résolution d’écran de 1 024 x 768 pixels ou plus
 * Accélération matérielle de la vidéo (facultatif)
-* Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC
-* Droits d’administrateur pour l’installation de Designer
-* Microsoft Visual C++ 2019 (VC 14.28 ou version ultérieure) Runtime 32 bits
+* Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC
+* Droits d’administration pour l’installation de Designer
+* Microsoft Visual C++ 2019 (VC 14.28 ou version ultérieure) Runtime 32 bits
 
 ### Conditions requises pour l’écriture différée des métadonnées AEM Assets XMP {#requirements-for-aem-assets-xmp-metadata-write-back}
 
