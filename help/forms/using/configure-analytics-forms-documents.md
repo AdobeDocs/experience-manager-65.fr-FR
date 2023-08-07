@@ -1,7 +1,7 @@
 ---
 title: Configuration des analyses et des rapports
 seo-title: Configuring analytics and reports
-description: Découvrez comment configurer Adobe Analytics pour découvrir les schémas d’interaction et les problèmes auxquels les utilisateurs sont confrontés lors de l’utilisation de formulaires adaptatifs, de documents adaptatifs et de formulaires HTML5.
+description: Découvrez comment configurer Adobe Analytics pour déterminer les schémas et les problèmes d’interaction auxquels sont confrontés les utilisateurs et utilisatrices lorsqu’ils utilisent des formulaires adaptatifs, des documents adaptatifs et des formulaires HTML5.
 seo-description: Learn how to configure Adobe Analytics to discover interaction patterns and problems users face while using adaptive forms, adaptive documents, and HTML5 forms.
 uuid: ac5d1300-f303-40e8-a33e-4859a54ac10d
 content-type: reference
@@ -11,9 +11,9 @@ discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
 source-git-commit: fef4f47794942b1fca4b30ce518b2faa8951f482
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1533'
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ AEM Forms s’intègre à Analytics, ce qui permet la capture et le suivi des me
 
 >[!NOTE]
 >
->La fonctionnalité d’analyse d’AEM Forms est disponible dans le package complémentaire d’AEM Forms. Pour plus d’informations sur l’installation du module complémentaire, voir [Installation et configuration d’AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
+>La fonctionnalité d’analyse d’AEM Forms est disponible dans le package complémentaire d’AEM Forms. Pour plus d’informations sur l’installation du package de modules complémentaires, voir [Installation et configuration d’AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
 >
->Outre le module complémentaire, vous avez besoin d’un compte Adobe Analytics et de privilèges d’administrateur sur l’instance AEM. Pour plus d’informations sur la solution, voir [Adobe Analytics](https://www.adobe.com/fr/solutions/digital-analytics.html).
+>Outre le package de modules complémentaires, vous devez disposer d’un compte Adobe Analytics et de droits d’administration sur l’instance AEM. Pour plus d’informations sur la solution, voir [Adobe Analytics](https://www.adobe.com/fr/solutions/digital-analytics.html).
 
 Vous pouvez également effectuer des analyses à l’aide d’Adobe Launch. Pour plus d’informations sur l’intégration d’AEM Forms à Adobe Launch, reportez-vous à [Analytics avec Adobe Launch](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md).
 
@@ -33,21 +33,21 @@ Vous pouvez également effectuer des analyses à l’aide d’Adobe Launch. Pour
 
 Vous pouvez utiliser Adobe Analytics pour identifier les schémas et les problèmes d’interaction auxquels sont confrontés les utilisateurs lorsqu’ils utilisent des formulaires adaptatifs, des formulaires HTML5 et des communications interactives. D’emblée, Adobe Analytics permet d’effectuer le suivi et d’enregistrer les informations sur les paramètres suivants :
 
-* **Durée moyenne de remplissage**: Durée moyenne de remplissage du formulaire.
-* **Rendus**: Nombre d’ouvertures d’un formulaire.
-* **Brouillons**: Nombre de fois où un formulaire est enregistré à l’état de brouillon.
-* **Envois**: Nombre de fois où un formulaire est envoyé.
-* **Abandonner**: Nombre de fois où les utilisateurs quittent le site sans remplir le formulaire.
+* **Durée moyenne de remplissage** : temps moyen passé au remplissage du formulaire.
+* **Rendus** : nombre de fois qu’un formulaire est ouvert.
+* **Brouillons** : nombre de fois qu’un formulaire est enregistré comme brouillon.
+* **Envois** : nombre de fois qu’un formulaire est envoyé.
+* **Abandons** : nombre de fois que les utilisateurs et utilisatrices ont quitté le site sans remplir le formulaire.
 
-Vous pouvez personnaliser Adobe Analytics pour ajouter ou supprimer d’autres paramètres. Outre les informations ci-dessus, le rapport contient les informations suivantes sur chaque panneau du HTML 5 et du formulaire adaptatif :
+Vous pouvez personnaliser Adobe Analytics pour ajouter ou supprimer d’autres paramètres. Outre les informations ci-dessus, le rapport répertorie les informations suivantes à propos de chaque panneau du formulaire adaptatif et HTML5 :
 
-* **Heure**: Durée de consultation du panneau et des champs du panneau.
+* **Heure** :temps passé sur le panneau et les champs du panneau.
 * **Erreur** : nombre d’erreurs survenues sur le panneau et sur les champs du panneau.
 * **Aide** : nombre de fois qu’un utilisateur ouvre l’aide d’un panneau et des champs du panneau.
 
 ## Création d’une suite de rapports {#creating-report-suite}
 
-Les données Analytics sont stockées dans des référentiels spécifiques aux clients appelés suites de rapports. Pour créer une suite de rapports et utiliser Adobe Analytics, vous devez disposer d’un compte Adobe Marketing Cloud valide. Avant d’effectuer les étapes suivantes, vérifiez que vous disposez d’un compte Adobe Marketing Cloud valide.
+Les données Analytics sont stockées dans des référentiels spécifiques aux utilisateurs et utilisatrices, appelés suites de rapports. Pour créer une suite de rapports et utiliser Adobe Analytics, vous devez disposer d’un compte Adobe Marketing Cloud valide. Avant d’effectuer les étapes suivantes, vérifiez que vous disposez d’un compte Adobe Marketing Cloud valide.
 
 Procédez comme suit pour créer une suite de rapports.
 
@@ -60,12 +60,12 @@ Procédez comme suit pour créer une suite de rapports.
    Création d’une suite de rapports
 
 1. Veillez à ce que la première liste déroulante soit définie sur **Créer à partir d’un modèle**, puis sélectionnez **Commerce**.
-1. Recherchez la variable **Identifiant de suite de rapports** et ajoutez un nouvel identifiant de suite de rapports. Par exemple, JJEsquire. Un identifiant de suite de rapports s’affiche sous le champ Identifiant de suite de rapports . Il contient un préfixe automatique, généralement le nom de la société.
-1. Ajouter **Titre du site**. Par exemple, JJEsquire Getting Started Suite. Ce titre est utilisé dans l’interface utilisateur d’Analytics. Utilisez l’identifiant de la suite de rapports dans votre code.
+1. Localisez le champ **Identifiant de suite de rapports** et ajoutez le nouvel identifiant de suite de rapports. Par exemple, JJEsquire. Un identifiant de suite de rapports apparaît sous le champ Identifiant de suite de rapports. Il contient un préfixe automatique, généralement le nom de la société.
+1. Ajoutez un nouveau **Titre du site**. Par exemple, suite de démarrage JJEsquire. Ce titre est utilisé dans l’interface utilisateur d’Analytics. Utilisez l’identifiant de la suite de rapports dans votre code.
 1. Sélectionnez un **Fuseau horaire** dans la liste déroulante. Toutes les données incluses dans cette suite de rapports sont enregistrées selon le fuseau horaire défini.
 1. Laissez les champs **URL de base** et **Page par défaut** vides. Ces deux valeurs sont utilisées uniquement dans l’interface Adobe Marketing Cloud pour établir le lien vers votre site Web.
 1. Laissez le champ **Date d’activation** défini sur aujourd’hui. La date d’activation détermine le jour d’activation de la suite de rapports.
-1. Dans le **Estimation du nombre de pages vues par jour** champ, saisissez 100. Utilisez ce champ pour donner une estimation du nombre de pages vues par jour que vous prévoyez sur votre site Web. Cette estimation permet à Adobe de mettre en place les ressources matérielles appropriées pour traiter les données que vous collecterez.
+1. Dans le champ **Estimation du nombre de pages vues par jour**, entrez 100. Utilisez ce champ pour donner une estimation du nombre de pages vues par jour que vous prévoyez sur votre site Web. Cette estimation permet à Adobe de mettre en place les ressources matérielles appropriées pour traiter les données que vous collecterez.
 1. Sélectionnez une **devise de base** dans la liste déroulante. Toutes les données de devise incluses dans cette suite de rapports seront converties et stockées dans ce format de devise.
 1. Cliquez sur **Créer une suite de rapports**. La page s’actualise avec un message indiquant que votre suite de rapports a été créée.
 1. Sélectionnez la nouvelle suite de rapports. Cliquez sur **Modifier les paramètres** > **Général** > **Paramètres du compte général**.
@@ -78,14 +78,14 @@ Procédez comme suit pour créer une suite de rapports.
 1. Cliquez sur **Modifier les paramètres** > **Trafic** > **Variables de trafic**.
 1. Dans la suite de rapports, configurez et activez les variables de trafic suivantes.
 
-   * **formName**: Identifiant d’un formulaire adaptatif.
-   * **formInstance**: Identifiant d’une instance de formulaire adaptatif. Activez les rapports Chemin d’accès pour cette variable.
+   * **formName** : identifiant d’un formulaire adaptatif.
+   * **formInstance** : identifiant d’une instance de formulaire adaptatif. Activez les rapports Chemin d’accès pour cette variable.
    * **fieldName** : identifiant d’un champ de formulaire adaptatif. Activez les rapports Chemin pour cette variable.
    * **panelName** : identifiant d’un panneau de formulaire adaptatif. Activez les rapports Chemin d’accès pour cette variable.
-   * **formTitle**: Titre du formulaire.
+   * **formTitle** : titre du formulaire.
    * **fieldTitle** : titre du champ de formulaire.
    * **panelTitle** : titre du panneau de formulaire.
-   * **analyticsVersion**: Version de l’analyse de formulaire.
+   * **analyticsVersion** : version de l’analyse de formulaire.
 
 1. Cliquez sur **Modifier les paramètres** > **Conversion** > **Événements de succès**. Définissez et activez les événements de succès suivants :
 
@@ -105,32 +105,32 @@ Procédez comme suit pour créer une suite de rapports.
    >
    >Les numéros d’événements et de propriétés utilisés pour configurer AEM Forms Analytics doivent être différents des numéros d’événements et de propriétés utilisés dans la configuration d’[AEM Analytics](/help/sites-administering/adobeanalytics.md).
 
-1. Déconnectez-vous du compte Adobe Marketing Cloud.
+1. Déconnectez-vous du compte Adobe Marketing Cloud.
 
-## Création d’une configuration de Cloud Service {#creating-cloud-service-configuration}
+## Création de la configuration du service cloud {#creating-cloud-service-configuration}
 
-La configuration du Cloud Service contient des informations sur votre compte Adobe Analytics. La configuration permet à Adobe Experience Manager (AEM) de se connecter à Adobe Analytics. Créez une configuration distincte pour chaque compte Analytics que vous utilisez.
+La configuration du service cloud rassemble les informations sur votre compte Adobe Analytics. Elle permet à Adobe Experience Manager (AEM) de se connecter à Adobe Analytics. Créez une configuration distincte pour chaque compte Analytics que vous utilisez.
 
 1. Connectez-vous à votre instance d’auteur en tant qu’administrateur AEM.
-1. Dans le coin supérieur gauche, cliquez sur **Adobe Experience Manager** > **Outils** ![icône en forme de marteau](/help/forms/using/assets/tools.png) > **Cloud Services** > **Cloud Services hérités**.
+1. Dans le coin supérieur gauche, cliquez sur **Adobe Experience Manager** > **Outils** ![icône en forme de marteau](/help/forms/using/assets/tools.png) > **Services cloud** > **Services cloud hérités**.
 1. Recherchez l’icône **Adobe Analytics**. Cliquez sur **Afficher les configurations**, puis sur **[+]** pour ajouter une nouvelle configuration.
 
    Si vous êtes un utilisateur novice, cliquez sur **Configurer maintenant**.
 
-1. Ajoutez un Titre à votre nouvelle configuration (le champ Nom est facultatif). Par exemple, la configuration Mes analyses. Cliquez sur **Créer**.
+1. Ajoutez un titre à votre nouvelle configuration (le champ Nom est facultatif). Par exemple, Configuration de mes analyses. Cliquez sur **Créer**.
 
-1. Lorsque le panneau Modifier s’ouvre sur la page de configuration, renseignez les champs suivants :
+1. Lorsque le panneau Modifier s’ouvre sur la page de configuration, renseignez les champs suivants :
 
-   * **Société**: Nom de votre société tel qu’il est présenté dans Adobe Analytics.
-   * **Nom d’utilisateur**: Nom utilisé pour se connecter à Adobe Analytics.
+   * **Entreprise** : le nom de votre entreprise comme présenté dans Adobe Analytics.
+   * **Nom d’utilisateur** : nom utilisé pour se connecter à Adobe Analytics.
    * **Mot de passe** : mot de passe Adobe Analytics pour le compte ci-dessus.
    * **Centre de données** : centre de données de votre compte Adobe Analytics.
 
-1. Cliquez sur **Se connecter à Analytics**. Une boîte de dialogue s’affiche, indiquant que la connexion a réussi. Cliquez sur **OK**.
+1. Cliquez sur **Se connecter à Analytics**. Une boîte de dialogue s’affiche pour indiquer que la connexion a réussi. Cliquez sur **OK**.
 
-## Création d’une structure de Cloud Service {#creating-cloud-service-framework}
+## Création du framework de service cloud {#creating-cloud-service-framework}
 
-Une structure Adobe Analytics est un ensemble de mappages entre les variables Adobe Analytics et les variables AEM. Utilisez une structure pour configurer la manière dont vos formulaires renseignent les données dans les rapports Adobe Analytics. Les frameworks sont associés à une configuration Adobe Analytics. Vous pouvez créer plusieurs structures pour chaque configuration.
+Un framework Adobe Analytics est un ensemble de mappages entre les variables Adobe Analytics et les variables AEM. Utilisez un framework pour configurer la façon dont vos formulaires renseignent les données dans les rapports Adobe Analytics. Les frameworks sont associés à une configuration Adobe Analytics. Vous pouvez créer plusieurs structures pour chaque configuration.
 
 1. Sur la console de services Cloud AEM, cliquez sur **Afficher les configurations**, sous Adobe Analytics.
 1. Cliquez sur le lien **[+]** en regard de votre configuration Analytics.
@@ -163,10 +163,10 @@ Une structure Adobe Analytics est un ensemble de mappages entre les variables Ad
 
 1. Indiquez les valeurs appropriées pour les champs suivants, puis cliquez sur **Enregistrer**.
 
-   * **Structure de SiteCatalyst**: Sélectionnez la structure/la configuration que vous avez définie dans la section Configuration d’une structure pour le suivi .
-   * **Ligne de base du suivi du temps champ**: Indiquez la durée, en secondes, après laquelle la visite du champ doit être suivie. La valeur par défaut est 0. Lorsque la valeur est supérieure à 0 (zéro), deux événements de suivi distincts sont envoyés au serveur Adobe Analytics. Le premier événement indique au serveur d’analyse d’arrêter le suivi du champ de sortie. Le second événement est envoyé une fois la durée spécifiée écoulée. Le second événement indique au serveur d’analyse de commencer le suivi du champ visité. L’utilisation de deux événements distincts permet de mesurer précisément le temps passé sur un champ. Lorsque la valeur est définie sur 0 (zéro), l’événement de suivi unique est envoyé au serveur Adobe Analytics.
+   * **Framework de SiteCatalyst** : sélectionnez le framework ou la configuration que vous avez définie dans la section Configuration d’un framework pour le suivi .
+   * **Ligne de base du suivi du temps passé sur le champ** : indiquez la durée, en secondes, après laquelle un suivi doit être effectué sur la visite du champ. La valeur par défaut est 0. Lorsque la valeur est supérieure à 0 (zéro), deux événements de suivi distincts sont envoyés au serveur Adobe Analytics. Le premier événement indique au serveur d’analyse d’arrêter le suivi du champ désactivé. Le second événement est envoyé une fois la durée spécifiée écoulée. Le second événement indique au serveur d’analyse de commencer le suivi du champ activé. L’utilisation de deux événements distincts permet de mesurer précisément le temps passé dans un champ. Lorsque la valeur est définie sur 0 (zéro), l’événement de suivi unique est envoyé au serveur Adobe Analytics.
 
-   * **Analytics report sync cron**: Spécifiez l’expression cron pour récupérer les rapports à partir d’Adobe Analytics. La valeur par défaut est 0 0 2 ? &#42; &#42;.
+   * **Expression cron de synchronisation des rapports d&#39;analyse** : spécifiez l’expression cron pour récupérer les rapports d’Adobe Analytics. La valeur par défaut est 0 0 2 ? &#42; &#42;.
 
    * **Délai de rapport d’extraction :** spécifiez la durée, en secondes, à attendre pour que le serveur réponde au rapport d’analyse. La valeur par défaut est de 120 secondes.
 
