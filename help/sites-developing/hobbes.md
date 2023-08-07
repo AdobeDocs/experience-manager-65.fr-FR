@@ -10,9 +10,9 @@ discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
 source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '771'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 67%
 >
 >Consultez les [Fonctionnalités obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md). 
 
-AEM fournit un framework pour l’automatisation des tests pour votre IU AEM. Grâce au framework, vous développez et exécutez des tests d’IU directement dans un navigateur web. La structure fournit une API JavaScript pour la création de tests.
+AEM fournit un framework pour l’automatisation des tests pour votre IU AEM. Grâce au framework, vous développez et exécutez des tests d’IU directement dans un navigateur web. Ce framework fournit une API Javascript dédiée à la création de tests.
 
-La structure de test d’AEM utilise Hobbes.js, une bibliothèque de tests écrite en JavaScript. Le framework Hobbes.js a été développé pour tester AEM dans le cadre du processus de développement. Le framework est aujourd’hui disponible au public pour tester les applications AEM.
+Le framework de test AEM utilise Hobbes.js, une bibliothèque de tests développée en JavaScript. Le framework Hobbes.js a été développé pour tester AEM dans le cadre du processus de développement. Le framework est aujourd’hui disponible au public pour tester les applications AEM.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ La structure de test d’AEM utilise Hobbes.js, une bibliothèque de tests écri
 
 ## Structure des tests {#structure-of-tests}
 
-Lors de l’utilisation de tests automatisés dans AEM, il est important de comprendre les termes suivants :
+Lors de l’utilisation de tests automatisés dans AEM, il est important de comprendre les termes suivants :
 
 | Action | Une **action** est une activité spécifique sur une page web, par exemple, un clic sur un lien ou un bouton. |
 |---|---|
@@ -47,7 +47,7 @@ Lors de l’utilisation de tests automatisés dans AEM, il est important de comp
 
 Ouvrez la console de test pour voir les suites de tests enregistrées. Le panneau Tests contient une liste des suites de tests et de leurs cas de test.
 
-Accédez à la console Outils via **Navigation globale -> Outils > Opérations -> Test**.
+Accédez à la console Outils via **Navigation globale -> Outils > Opérations -> Test**.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -59,15 +59,15 @@ Lors de l’ouverture de la console, les suites de tests sont répertoriées à 
 
 Les suites de tests peuvent être exécutées séparément. Lorsque vous lancez une suite de tests, la page change au fur et à mesure que les cas de tests et leurs actions sont exécutés et une fois que les résultats apparaissent à la fin du test. Les icônes indiquent les résultats.
 
-Une icône de coche indique qu’un test a réussi :
+Une icône en forme de coche indique un test réussi :
 
-![Icône de coche.](do-not-localize/chlimage_1-2.png)
+![Icône en forme de coche.](do-not-localize/chlimage_1-2.png)
 
 Une icône « X » indique l’échec d’un test :
 
-![Icône de test en échec indiquée par un X dans un cercle.](do-not-localize/chlimage_1-3.png)
+![Icône de test ayant échoué représentée par un X dans un cercle.](do-not-localize/chlimage_1-3.png)
 
-Pour exécuter une suite de tests :
+Pour exécuter une suite de tests, procédez comme suit :
 
 1. Dans le panneau Tests, cliquez ou appuyez sur le nom du cas de test que vous souhaitez exécuter pour développer les détails des actions.
 
@@ -75,27 +75,27 @@ Pour exécuter une suite de tests :
 
 1. Cliquez sur **Exécuter le test**.
 
-   ![Image du bouton Exécuter les tests, indiquée par un pointeur orienté à droite dans un cercle.](do-not-localize/chlimage_1-4.png)
+   ![Image du bouton Exécuter les tests, représenté par un pointeur orienté à droite dans un cercle.](do-not-localize/chlimage_1-4.png)
 
 1. L’espace réservé est remplacé par le contenu de la page lors de l’exécution du test.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. Passez en revue les résultats du cas de test en cliquant ou en appuyant sur la description pour ouvrir le panneau **Résultat**. Appuyez ou cliquez sur le nom de votre cas de test dans la **Résultat** affiche tous les détails.
+1. Passez en revue les résultats du cas de test en cliquant ou en appuyant sur la description pour ouvrir le panneau **Résultat**. Appuyez ou cliquez sur le nom de votre cas de test dans le panneau **Résultat** pour afficher tous les détails.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
 ### Exécution de plusieurs tests {#running-multiple-tests}
 
-Les suites de tests s’exécutent séquentiellement dans l’ordre dans lequel elles sont visibles dans la console. Vous pouvez approfondir l’analyse d’un test pour afficher les résultats détaillés.
+Les suites de tests s’exécutent séquentiellement dans l’ordre dans lequel elles sont visibles dans la console. Vous pouvez analyser en profondeur un test pour afficher les résultats détaillés.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
 1. Dans le panneau Tests, appuyez ou cliquez sur le bouton **Exécuter tous les tests** ou sur le bouton **Exécuter les tests** sous le titre de la suite de tests que vous souhaitez exécuter.
 
-   ![Une image du bouton Exécuter tous les tests et du bouton Exécuter les tests , indiqué par un pointeur orienté à droite dans un cercle.](do-not-localize/chlimage_1-5.png)
+   ![Une image du bouton Exécuter tous les tests et du bouton Exécuter les tests, indiqué par un pointeur orienté vers la droite dans un cercle.](do-not-localize/chlimage_1-5.png)
 
-1. Pour afficher les résultats de chaque cas de test, cliquez sur le titre du cas de test. Cliquez sur le nom de votre test dans la variable **Résultat** affiche tous les détails.
+1. Pour afficher les résultats de chaque cas de test, cliquez sur le titre du cas de test. Cliquez sur le nom de votre test dans le panneau **Résultat** pour afficher tous les détails.
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
