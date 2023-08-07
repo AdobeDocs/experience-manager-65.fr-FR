@@ -1,11 +1,11 @@
 ---
-title: Hub des guides de l’utilisateur d’AEM 6.5
-description: Présentation des ressources essentielles pour comprendre, installer, gérer et utiliser AEM 6.5
+title: Hub des guides d’utilisation d’AEM 6.5
+description: Vue d’ensemble de toutes les ressources essentielles pour comprendre, installer, gérer et utiliser AEM 6.5.
 exl-id: 51788662-6214-408e-98d9-692950c366be
 source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '212'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Les délégués de l’assistance peuvent obtenir de l’aide via :
 
 >[!NOTE]
 >
->Pas sûr si vous êtes un **délégué du support**? Découvrez si : [le type d’utilisateur s’applique à vous](https://helpx.adobe.com/fr/experience-cloud/supported-users.html) et en savoir plus sur Adobe [conditions d’assistance aux entreprises](https://helpx.adobe.com/fr/support/programs/enterprise-support-terms.html).
+>Vous n’avez pas la certitude de disposer du statut de **délégué ou de déléguée de l’assistance** ? Découvrez si ce [type d’utilisateur s’applique à vous](https://helpx.adobe.com/fr/experience-cloud/supported-users.html) et découvrez les [conditions d’assistance aux entreprises](https://helpx.adobe.com/fr/support/programs/enterprise-support-terms.html) d’Adobe.
 
 ## Communauté {#community}
 
