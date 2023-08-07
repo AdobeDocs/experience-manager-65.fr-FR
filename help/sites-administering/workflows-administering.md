@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
 source-git-commit: 25f7218355b7715949273c84eb72ddde3d6a0a65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '994'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -27,11 +27,11 @@ La console de workflows fournit plusieurs outils permettant d’administrer les 
 
 Différentes consoles sont à votre disposition pour administrer les workflows. Utilisez la [navigation globale](/help/sites-authoring/basic-handling.md#global-navigation) pour ouvrir le panneau **Outils**, puis sélectionnez **Workflows** :
 
-* **Modèles**: Gestion des définitions de workflow
+* **Modèles** : gérez les définitions des workflows.
 * **Instances** : affichez et gérez l’exécution des instances de workflow.
-* **Lanceurs**: Gérer le lancement des workflows
-* **Archiver**: Afficher l’historique des workflows qui se sont terminés avec succès
-* **Échecs**: Afficher l’historique des workflows qui se sont terminés avec des erreurs
+* **Lanceurs** : gérez le lancement des workflows.
+* **Archive** : affichez l’historique des workflows correctement terminés.
+* **Échecs** : affichez l’historique des workflows terminés avec des erreurs.
 * **Attribution automatique** : configurez l’attribution automatique des workflows aux modèles
 
 ## Suivi du statut des instances de workflow {#monitoring-the-status-of-workflow-instances}
@@ -83,11 +83,10 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 
    >[!NOTE]
    >
-   >L’état d’abandon est considéré comme une interruption réussie, car il se produit suite à une action de l’utilisateur ; par exemple :
+   >L’état d’abandon est considéré comme une interruption réussie, car il se produit suite à une action de l’utilisateur ou de l’utilisatrice, comme par exemple :
    >
-   >* l’utilisation de la fonction **Arrêter** action
+   >* L’utilisation de la fonction **Terminer**.
    >* Lorsqu’une page, qui est soumise à un workflow, est supprimée (de force), le workflow est arrêté.
-
 
 1. Sélectionnez un élément spécifique, puis **Ouvrir l’historique** pour afficher plus de détails :
 
@@ -98,8 +97,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 Lorsqu’un workflow échoue, AEM fournit la console **Échecs** pour vous permettre d’enquêter et de prendre la mesure appropriée une fois la cause d’origine traitée :
 
 * **Détails de l’échec**
-Ouvre une fenêtre pour afficher le 
-**Message d’échec**, l’**Étape** et la **Pile des échecs**.
+Ouvre une fenêtre pour afficher le **Message d’échec**, l’**Étape** et la **Pile des échecs**.
 
 * **Ouvrir l’historique**
 Affiche des détails sur l’historique des workflows.
@@ -112,7 +110,7 @@ Pour examiner les échecs, puis reprendre ou arrêter le workflow par la suite, 
 
 1. Avec la navigation, sélectionnez **Outil**, puis **Workflows**.
 1. Sélectionnez **Échecs** pour afficher la liste des instances de workflow qui ne se sont pas terminées avec succès.
-1. Sélectionnez un élément spécifique, puis l’action appropriée :
+1. Sélectionnez un élément spécifique, puis l’action appropriée :
 
    ![wf-47](assets/wf-47.png)
 
@@ -139,7 +137,7 @@ Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-de
 <table>
  <tbody>
   <tr>
-   <th>Nom de la propriété (console web)</th>
+   <th>Nom de propriété (console web)</th>
    <th>Nom de propriété OSGi</th>
    <th>Description</th>
   </tr>
@@ -149,9 +147,9 @@ Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-de
    <td>Nom explicite de la purge planifiée.</td>
   </tr>
   <tr>
-   <td>État du processus</td>
+   <td>Statut du workflow</td>
    <td>scheduledpurge.workflowStatus</td>
-   <td><p>Statut des instances de workflow à purger. Les valeurs suivantes sont valides :</p>
+   <td><p>Statut des instances de workflow à purger. Les valeurs suivantes sont valides :</p>
     <ul>
      <li>TERMINÉ : les instances de workflow terminées sont purgées.</li>
      <li>EN COURS : les instances de workflow en cours d’exécution sont purgées.</li>
@@ -164,7 +162,7 @@ Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-de
   </tr>
   <tr>
    <td>Âge du workflow</td>
-   <td>scheduledpurge.daysold</td>
+   <td>scheduledpurge.daysell</td>
    <td>L’âge des instances de workflow à purger, exprimé en jours.</td>
   </tr>
  </tbody>
@@ -180,7 +178,7 @@ Vous pouvez définir la taille maximale de la boîte de réception en configuran
 >
 >`com.adobe.granite.workflow.core.WorkflowSessionFactory`.
 
-| Nom de la propriété (console web) | Nom de propriété OSGi |
+| Nom de propriété (console web) | Nom de propriété OSGi |
 |---|---|
 | Taille de requête de boîte de réception maximale | granite.workflow.inboxQuerySize |
 
