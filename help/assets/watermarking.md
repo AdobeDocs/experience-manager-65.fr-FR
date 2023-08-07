@@ -7,9 +7,9 @@ feature: Asset Management
 exl-id: bc0cfb0e-3f70-4377-8831-326a7cae73bd
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '328'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -37,8 +37,8 @@ Pour appliquer le filigrane sur les ressources, ajoutez l’étape d’ajout d�
    >
    >Placez l’étape [!UICONTROL Ajouter un filigrane] n’importe où avant l’étape [!UICONTROL Traitement de la miniature].
 
-1. Ouvrez le **[!UICONTROL Ajouter un filigrane]** pour afficher ses propriétés.
-1. Dans le **[!UICONTROL Arguments]** , spécifiez des valeurs valides dans les différents champs, notamment le texte, le type de police, la taille, la couleur, la position, l’orientation, etc. Pour confirmer les modifications, cliquez sur **[!UICONTROL Terminé]**.
+1. Ouvrez l’étape **[!UICONTROL Ajouter un filigrane]** pour afficher ses propriétés.
+1. Dans l’onglet **[!UICONTROL Arguments]**, spécifiez des valeurs valides dans les différents champs, notamment le texte, le type de police, la taille, la couleur, la position, l’orientation, etc. Pour confirmer les modifications, cliquez sur **[!UICONTROL Terminé]**.
 
    ![Indiquer les arguments dans l’étape Ajouter un filigrane dans [!DNL Assets]](assets/arguments_add_watermark_aem_assets.png)
 
