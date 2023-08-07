@@ -8,9 +8,9 @@ role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2359'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -71,10 +71,10 @@ L’écriture différée XMP est prise en charge et activée pour les plateforme
 
 ## Modification des propriétés de métadonnées de plusieurs ressources {#editing-metadata-properties-of-multiple-assets}
 
-[!DNL Adobe Enterprise Manager Assets] vous permet de modifier les métadonnées de plusieurs ressources simultanément afin de propager rapidement et en bloc les modifications de métadonnées communes vers les ressources. Vous pouvez également modifier en bloc les métadonnées de plusieurs collections. Utilisez la page Propriétés pour effectuer des modifications de métadonnées sur plusieurs ressources ou collections :
+[!DNL Adobe Enterprise Manager Assets] vous permet de modifier les métadonnées de plusieurs ressources simultanément afin de propager rapidement et en bloc les modifications de métadonnées communes vers les ressources. Vous pouvez également modifier en bloc les métadonnées de plusieurs collections. Utilisez la page des propriétés pour effectuer des modifications de métadonnées sur plusieurs ressources ou collections :
 
-* Modification des propriétés de métadonnées en une valeur commune
-* Ajout ou modification de balises
+* Modifier les propriétés des métadonnées en une valeur commune
+* Ajouter ou modifier des balises
 
 Pour personnaliser la page des propriétés de métadonnées, notamment ajouter, modifier et supprimer des propriétés de métadonnées, utilisez l’[éditeur de schéma](metadata-config.md#folder-metadata-schema).
 
@@ -98,9 +98,9 @@ Pour personnaliser la page des propriétés de métadonnées, notamment ajouter,
 
 ## Importation de métadonnées {#import-metadata}
 
-[!DNL Assets] permet d’importer des métadonnées de ressources en bloc à l’aide d’un fichier CSV. Vous pouvez effectuer des mises à jour en masse des ressources récemment chargées ou des ressources existantes en important un fichier CSV. Vous pouvez également ingérer des métadonnées de ressources en masse à partir d’un système tiers au format CSV.
+[!DNL Assets] permet d’importer des métadonnées de ressources en bloc à l’aide d’un fichier CSV. Vous pouvez effectuer des mises à jour en bloc pour les ressources récemment chargées ou des ressources existantes en important un fichier CSV. Vous pouvez également ingérer des métadonnées de ressources en bloc au format CSV à partir d’un système tiers.
 
-L’importation de métadonnées est asynchrone et ne nuit pas aux performances du système. La mise à jour simultanée des métadonnées de plusieurs ressources peut être gourmande en ressources en raison de l’activité d’écriture différée XMP si l’indicateur de workflow est coché. Planifiez un tel import pendant l’utilisation du serveur afin que les performances des autres utilisateurs ne soient pas affectées.
+L’importation de métadonnées est asynchrone et ne nuit pas aux performances du système. La mise à jour simultanée des métadonnées de plusieurs ressources peut être gourmande en ressources en raison de l’activité d’écriture différée XMP si l’indicateur de workflow est coché. Planifiez une telle importation pendant une période de faible utilisation du serveur afin que les performances des autres utilisateurs et utilisatrices ne soient pas affectées.
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ L’importation de métadonnées est asynchrone et ne nuit pas aux performances 
 
    | Paramètres d’importation des métadonnées | Description |
    |:---|:---|
-   | [!UICONTROL Taille du lot] | Nombre de ressources d’un lot pour lesquelles des métadonnées doivent être importées. La valeur par défaut est 50. La valeur maximale est 100. |
+   | [!UICONTROL Taille du lot] | Nombre de ressources dans un lot pour lesquelles des métadonnées doivent être importées. La valeur par défaut est 50. La valeur maximale est 100. |
    | [!UICONTROL Séparateur de champs] | La valeur par défaut est `,` (une virgule). Vous pouvez spécifier n’importe quel autre caractère. |
    | [!UICONTROL Délimiteur à plusieurs valeurs] | Séparateur des valeurs de métadonnées. La valeur par défaut est `|`. |
    | [!UICONTROL Lancer les workflows] | False par défaut. Lorsque la valeur est définie sur `true` et que les paramètres par défaut sont utilisés pour le workflow [!UICONTROL Écriture différée des métadonnées de gestion des ressources numériques] (qui inscrit des métadonnées dans les données XMP binaires). L’activation de ces workflows ralentit le système. |
@@ -133,11 +133,11 @@ Pour ajouter une date et un horodatage au cours de l’importation de métadonn�
 
 Vous pouvez exporter des métadonnées pour plusieurs ressources au format CSV. Les métadonnées sont exportées de manière asynchrone et n’ont aucun impact sur les performances du système. Pour exporter des métadonnées, [!DNL Experience Manager] parcourt les propriétés du nœud de ressource `jcr:content/metadata` et de ses nœuds enfants et exporte les propriétés de métadonnées dans un fichier CSV.
 
-Voici quelques cas d’utilisation pour l’exportation de métadonnées en bloc :
+Voici quelques cas d’utilisation pour l’exportation de métadonnées en bloc :
 
 * Importez les métadonnées dans un système tiers lors de la migration des ressources.
-* Partagez des métadonnées de ressource avec une équipe de projet plus étendue.
-* Testez ou contrôlez les métadonnées en vue de leur conformité.
+* Partagez des métadonnées de ressources avec une équipe de projet plus large.
+* Testez ou effectuez un audit des métadonnées à des fins de conformité.
 * Externalisastion de métadonnées pour les localiser séparément.
 
 1. Sélectionnez le dossier de ressources pour lequel vous souhaitez exporter des métadonnées. Dans la barre d’outils, sélectionnez **[!UICONTROL Exporter les métadonnées]**.
@@ -150,7 +150,7 @@ Voici quelques cas d’utilisation pour l’exportation de métadonnées en bloc
 
 1. Dans le champ **[!UICONTROL Propriétés à exporter]**, indiquez si vous voulez exporter toutes les propriétés ou certaines propriétés. Si vous choisissez Propriétés sélectives à exporter, ajoutez les propriétés souhaitées.
 
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Exporter]**. Un message confirme l’exportation des métadonnées. Fermez le message.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Exporter]**. Un message confirme l’exportation de l’image. Fermez le message.
 
 1. Ouvrez la notification de la boîte de réception pour la tâche d’exportation. Sélectionnez la tâche et cliquez sur **[!UICONTROL Ouvrir]** dans la barre d’outils. Pour télécharger le fichier CSV avec les métadonnées, cliquez sur **[!UICONTROL Téléchargement du CSV]** dans la barre d’outils. Cliquez sur **[!UICONTROL Fermer]**.
 
@@ -167,9 +167,9 @@ Pour plus d’informations, consultez la section [Affichage et modification des 
 <!-- TBD: Review this overview.
 -->
 
-Lorsque vous affectez un profil de métadonnées à un dossier, tous les sous-dossiers héritent automatiquement du profil de son dossier parent. Cela signifie que vous ne pouvez affecter qu’un seul profil de métadonnées à un dossier. Ainsi, réfléchissez soigneusement à la structure de dossiers de l’emplacement où vous chargez, stockez, utilisez et archivez les ressources.
+Lorsque vous affectez un profil de métadonnées à un dossier, tous les sous-dossiers héritent automatiquement du profil de son dossier parent. Cela signifie que vous ne pouvez attribuer qu’un seul profil de métadonnées à un dossier. Ainsi, réfléchissez soigneusement à la structure des dossiers de l’emplacement où vous chargez, stockez, utilisez et archivez les ressources.
 
-Si vous avez affecté un profil de métadonnées différent à un dossier, le nouveau profil remplace le précédent. Les ressources du dossier précédent restent inchangées. Le nouveau profil est appliqué aux ressources ajoutées ultérieurement au dossier.
+Si vous avez attribué un profil de métadonnées différent à un dossier, le nouveau profil remplace le précédent. Les ressources du dossier précédent restent inchangées. Le nouveau profil est appliqué aux ressources ajoutées ultérieurement au dossier.
 
 Les dossiers auxquels un profil est affecté sont indiqués dans l’interface utilisateur par le nom du profil apparaissant dans le nom de la carte.
 
@@ -241,7 +241,6 @@ Vous pouvez supprimer un profil de métadonnées d’un dossier à partir de la 
 >* [Concepts et compréhension des métadonnées](metadata-concepts.md).
 >* [Modification des propriétés de métadonnées de plusieurs collections](manage-collections.md#editing-collection-metadata-in-bulk)
 >* [Importation et exportation des métadonnées dans Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html?lang=fr)
-
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 
