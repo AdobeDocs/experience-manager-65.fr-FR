@@ -7,9 +7,9 @@ feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1421'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -93,7 +93,7 @@ La console [!DNL Assets] peut afficher différents états des ressources. En fon
 1. Dans l’interface utilisateur [!DNL Assets], sélectionnez une ressource.
 1. Cliquez sur **[!UICONTROL Publier]** dans la barre d’outils. Si vous ne voyez pas l’option **Publier** dans la barre d’outils, cliquez sur **[!UICONTROL Plus]** dans la barre d’outils et recherchez l’option **[!UICONTROL Publier]** ![option Publier](assets/do-not-localize/publish-globe.png).
 1. Sélectionnez **[!UICONTROL Publier]** dans le menu, puis fermez la boîte de dialogue de confirmation.
-1. Quittez le mode de sélection. L’état de publication de la ressource s’affiche au bas de la miniature de la ressource en mode Carte. Dans la vue Liste, la colonne Publié indique le moment auquel la ressource a été publiée.
+1. Quittez le mode de sélection. Le statut de publication de la ressource s’affiche dans la partie inférieure de sa miniature en mode Carte. Dans la vue Liste, la colonne Publié indique le moment auquel la ressource a été publiée.
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
@@ -112,7 +112,7 @@ La console [!DNL Assets] peut afficher différents états des ressources. En fon
 
 1. Dans la console [!DNL Assets], sélectionnez un dossier et créez une tâche de révision sur le dossier.
 1. Recherchez et approuvez/rejetez les ressources dans la tâche de révision, puis cliquez sur **[!UICONTROL Terminé]**.
-1. Accédez au dossier pour lequel vous avez créé la tâche de révision. L’état des ressources que vous avez approuvées/rejetées s’affiche en bas en mode Carte. Dans la vue Liste, les états d’approbation et d’expiration sont affichés dans les colonnes correspondantes.
+1. Accédez au dossier pour lequel vous avez créé la tâche de révision. Le statut des ressources que vous avez approuvées/rejetées s’affiche dans la partie inférieure en mode Carte. Dans la vue Liste, les états d’approbation et d’expiration sont affichés dans les colonnes correspondantes.
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
@@ -142,7 +142,7 @@ Si vous sélectionnez une ressource protégée et que vous cliquez ensuite sur *
 
 Si la sélection contient plusieurs ressources protégées, sélectionnez-en une à la fois, acceptez le contrat de licence et procédez au téléchargement de la ressource.
 
-Une ressource est considérée comme protégée si l’une de ces conditions est remplie :
+Une ressource est considérée comme protégée si l’une de ces conditions est remplie :
 
 * La propriété de métadonnées de la ressource `xmpRights:WebStatement` pointe vers le chemin d’accès de la page qui contient le contrat de licence approprié.
 * La valeur de la propriété de métadonnées de la ressource `adobe_dam:restrictions` est un code HTML brut qui spécifie le contrat de licence.
