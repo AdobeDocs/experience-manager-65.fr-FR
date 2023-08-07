@@ -11,20 +11,20 @@ content-type: reference
 discoiquuid: e26bf608-c57c-4346-88fb-32a82cfa82d2
 exl-id: 46c2fbd0-7eff-4a6c-a088-57560ad2c5e4
 source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '93'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 # Offres Target{#target-offers}
 
-## Création d’une expérience d’offre Test&amp;Target {#creating-a-test-target-offer-experience}
+## Créer une expérience d’offre Test&amp;Target {#creating-a-test-target-offer-experience}
 
-1. Sélectionnez votre nouvelle campagne dans le volet de gauche ou double-cliquez dessus dans le volet de droite.
-1. Sélectionnez la vue Liste à l’aide de l’icône :
+1. Sélectionnez votre nouvelle campagne dans le volet de gauche ou double-cliquez dans le volet de droite.
+1. Sélectionnez la vue Liste à l’aide de l’icône :
 
-   ![Vue Liste](do-not-localize/chlimage_1-11.png)
+   ![Vue Liste.](do-not-localize/chlimage_1-11.png)
 
 1. Cliquez sur **Nouveau ...**
 1. Vous pouvez indiquer le **Titre**, le **Nom** et le type d’expérience à créer ; dans ce cas, Offre Test&amp;Target.
