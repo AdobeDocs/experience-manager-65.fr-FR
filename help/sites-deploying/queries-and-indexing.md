@@ -8,10 +8,10 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 2adc33b5f3ecb2a88f7ed2c5ac5cc31f98506989
 workflow-type: tm+mt
-source-wordcount: '2619'
-ht-degree: 35%
+source-wordcount: '3033'
+ht-degree: 31%
 
 ---
 
@@ -64,7 +64,7 @@ Ensuite, chaque index est consulté pour estimer le coût de la requête. Une fo
 
 >[!NOTE]
 >
->Pour un référentiel de grande taille, créer un index est une opération qui demande beaucoup de temps. Cela est vrai pour la création initiale d’un index et pour la réindexation (reconstruction d’un index après modification de la définition). Voir aussi [Dépannage des index Oak](/help/sites-deploying/troubleshooting-oak-indexes.md) et [Prévention d’une réindexation lente](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
+>Pour un référentiel de grande taille, créer un index est une opération qui demande beaucoup de temps. C’est le cas aussi bien pour la création initiale d’un index que pour la réindexation (reconstruction d’un index après modification de la définition). Voir aussi [Dépannage des index Oak](/help/sites-deploying/troubleshooting-oak-indexes.md) et [Prévention d’une réindexation lente](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
 
 Si la réindexation est nécessaire dans les référentiels volumineux, en particulier lorsque vous utilisez MongoDB et pour les index de texte intégral, envisagez la pré-extraction de texte et l’utilisation de oak-run pour créer l’index initial et réindexer.
 
@@ -90,14 +90,14 @@ L’index de propriété est utile pour les requêtes qui ont des contraintes de
 
 L’index de propriété comporte les options de configuration suivantes :
 
-* Le **type** spécifie le type d’index. Dans ce cas, il doit être défini sur **property**
+* La variable **type** spécifie le type d’index. Dans ce cas, il doit être défini sur **property**
 
-* Le **propertyNames** indique la liste des propriétés qui seront stockées dans l’index. En cas d’absence, le nom du noeud est utilisé comme valeur de référence de nom de propriété. Dans cet exemple, la variable **jcr:uuid** dont la tâche est d’exposer l’identifiant unique (UUID) de son noeud est ajouté à l’index.
+* La variable **propertyNames** indique la liste des propriétés qui seront stockées dans l’index. En cas d’absence, le nom du noeud est utilisé comme valeur de référence de nom de propriété. Dans cet exemple, la variable **jcr:uuid** dont la tâche est d’exposer l’identifiant unique (UUID) de son noeud est ajouté à l’index.
 
 * L’indicateur **unique**, qui, défini sur **true**, ajoute une limite d’unicité à l’index de propriété.
 
-* Le **déclarationNodeTypes** permet de spécifier un certain type de noeud auquel l’index s’appliquera uniquement.
-* Le **reindex** qui, s’il est défini sur **true**, déclenche une réindexation complète du contenu.
+* La variable **déclarationNodeTypes** permet de spécifier un certain type de noeud auquel l’index s’appliquera uniquement.
+* La variable **reindex** qui, s’il est défini sur **true**, déclenche une réindexation complète du contenu.
 
 ### Index ordonné {#the-ordered-index}
 
@@ -126,11 +126,89 @@ Vous pouvez configurer un index de texte intégral Lucene en suivant la procédu
 
 L’index Lucene présente les options de configuration suivantes :
 
-* Le **type** qui spécifie le type d’index doit être défini sur **lucene**
-* Le **async** qui doit être définie sur **async**. Cela envoie le processus de mise à jour de l’index à un thread d’arrière-plan.
-* Le **includePropertyTypes** qui définit le sous-ensemble des types de propriétés inclus dans l’index.
-* Le **excludePropertyNames** qui définit une liste de noms de propriétés - propriétés qui doivent être exclues de l’index.
-* Le **reindex** Indicateur qui, lorsqu’il est défini sur **true**, déclenche une réindexation complète du contenu.
+* La variable **type** qui spécifie le type d’index doit être défini sur **lucene**
+* La variable **async** qui doit être définie sur **async**. Cela envoie le processus de mise à jour de l’index à un thread d’arrière-plan.
+* La variable **includePropertyTypes** qui définit le sous-ensemble des types de propriétés inclus dans l’index.
+* La variable **excludePropertyNames** qui définit une liste de noms de propriété : propriétés à exclure de l’index.
+* La variable **reindex** qui, lorsqu’il est défini sur **true**, déclenche une réindexation complète du contenu.
+
+### Présentation de la recherche de texte intégral {#understanding-fulltext-search}
+
+La documentation de cette section s’applique à Apache Lucene, Elasticsearch, ainsi qu’aux index en texte intégral, par exemple PostgreSQL, SQLite, MySQL. L’exemple suivant concerne AEM / Oak / Lucene.
+
+<b>Données à indexer</b>
+
+Le point de départ est les données qui doivent être indexées. Prenez les documents suivants comme exemple :
+
+| <b>Document ID</b> | <b>Chemin</b> | <b>Texte intégral</b> |
+| --- | --- | --- |
+| 100 | /content/rubik | &quot;Rubik est une marque finlandaise.&quot; |
+| 200 | /content/rubiksCube | &quot;Le Rubik&#39;s Cube a été inventé en 1974.&quot; |
+| 300 | /content/cube | &quot;Un cube est un objet à 3 dimensions.&quot; |
+
+
+<b>Index inversé</b>
+
+Le mécanisme d’indexation divise le texte intégral en mots appelés &quot;jetons&quot; et crée un index appelé &quot;index inversé&quot;. Cet index contient la liste des documents où il apparaît pour chaque mot.
+
+Très courts, les mots courants (également appelés &quot;stopwords&quot;) ne sont pas indexés. Tous les jetons sont convertis en minuscules et l’ordre est appliqué.
+
+Remarquez les caractères spéciaux tels que *&quot;-&quot;* ne sont pas indexés.
+
+| <b>Jeton</b> | <b>ID de document</b> |
+| --- | --- |
+| 194 | ..., 200,... |
+| marque | ..., 100,... |
+| cube | ..., 200, 300,... |
+| dimension | 300 |
+| finlandais | ..., 100,... |
+| invent | 200 |
+| objet | ..., 300,... |
+| rubik | .., 100, 200,... |
+
+La liste des documents est triée. Cela deviendra pratique lors de l’interrogation.
+
+<b>Recherche en cours</b>
+
+Vous trouverez ci-dessous un exemple de requête. Notez que tous les caractères spéciaux (tels que *&#39;*) ont été remplacés par un espace :
+
+```
+/jcr:root/content//element(\*; cq:Page)`[` jcr:contains('Rubik s Cube')`]`
+```
+
+Les mots sont segmentés en unités lexicales et filtrés de la même manière que lors de l’indexation (les mots d’un seul caractère sont supprimés, par exemple). Dans ce cas, la recherche porte donc sur :
+
+```
++:fulltext:rubik +:fulltext:cube
+```
+
+L&#39;index consultera alors la liste des documents pour ces mots. S&#39;il y a beaucoup de documents, les listes peuvent être très volumineuses. Par exemple, supposons qu’ils contiennent les éléments suivants :
+
+
+| <b>Jeton</b> | <b>ID de document</b> |
+| --- | --- |
+| rubik | 10, 100, 200, 1000 |
+| cube | 30, 200, 300, 2000 |
+
+
+Lucene va basculer entre les deux listes (ou tourbillon) `n` lors de la recherche de `n` words) :
+
+* Lisez dans le &quot;rubik&quot; reçoit la première entrée : il en trouve 10
+* La lecture dans le &quot;cube&quot; reçoit la première entrée `>` = 10. 10 est introuvable, le suivant est 30.
+* La lecture dans le &quot;rubik&quot; reçoit la première entrée `>` = 30 : 100.
+* La lecture dans le &quot;cube&quot; reçoit la première entrée `>` = 100 : 200.
+* La lecture dans le &quot;rubik&quot; reçoit la première entrée `>` = 200. 200 est trouvé. Le document 200 correspond donc aux deux termes. On se souvient de ça.
+* Lisez dans le &quot;rubik&quot; obtient la prochaine entrée : 1000.
+* La lecture dans le &quot;cube&quot; reçoit la première entrée `>` = 1000 : 2000.
+* La lecture dans le &quot;rubik&quot; reçoit la première entrée `>` = 2000 : fin de la liste.
+* Enfin, nous pouvons arrêter la recherche.
+
+Le seul document qui contient les deux termes est 200, comme dans l’exemple ci-dessous :
+
+| 200 | /content/rubiksCube | &quot;Le Rubik&#39;s Cube a été inventé en 1974.&quot; |
+| --- | --- | --- |
+
+Lorsque plusieurs entrées sont trouvées, elles sont ensuite triées par score.
 
 ### Index de propriété Lucene {#the-lucene-property-index}
 
@@ -390,7 +468,7 @@ La façon la plus simple d’obtenir les informations requises pour la requête 
 
 Si cela n’est pas possible pour une raison quelconque, vous pouvez rassembler les logs d’indexation dans un seul fichier et les utiliser pour résoudre votre problème particulier.
 
-#### Activation de la journalisation {#enable-logging}
+#### Activer la journalisation {#enable-logging}
 
 Pour activer la journalisation, vous devez activer **DEBUG** des logs de niveau pour les catégories relatives à l’indexation et aux requêtes Oak. Ces catégories sont les suivantes :
 
@@ -398,7 +476,7 @@ Pour activer la journalisation, vous devez activer **DEBUG** des logs de niveau 
 * org.apache.jackrabbit.oak.query
 * com.day.cq.search
 
-Le **com.day.cq.search** ne s’applique que si vous utilisez l’utilitaire QueryBuilder fourni par AEM.
+La variable **com.day.cq.search** ne s’applique que si vous utilisez l’utilitaire QueryBuilder fourni par AEM.
 
 >[!NOTE]
 >
