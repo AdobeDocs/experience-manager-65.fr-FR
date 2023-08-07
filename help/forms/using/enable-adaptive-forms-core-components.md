@@ -8,10 +8,10 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 00f8b2c72aab37a57ab76e684f432250d2de3470
+source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 7%
+source-wordcount: '889'
+ht-degree: 9%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 7%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=fr) |
 | AEM 6.5 | Cet article |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
 
 **S’applique à :** ✅ Composants principaux de formulaire adaptatif ❎ Composants de base de formulaire adaptatif.
 
@@ -81,7 +81,7 @@ Pour créer un archétype AEM 41 ou [later](https://github.com/adobe/aem-project
 
    * Ne modifiez pas la valeur de la variable `aemVersion` de `6.5.15.0` à tout autre chose.
 
-   * Définissez la variable `archetypeVersion` de `41` ou plus tard. Pour obtenir la dernière version, reportez-vous à la section Configuration requise dans [AEM Archétype de projet](https://github.com/adobe/aem-project-archetype) documentation.
+   * Définissez la variable `archetypeVersion` de `41` ou plus tard. Pour obtenir la dernière version, reportez-vous à la section Configuration requise dans [AEM Archétype de projet](https://github.com/adobe/aem-project-archetype) la documentation.
 
    * Mettez à jour la commande afin de refléter les valeurs spécifiques de votre environnement, y compris le `appTitle`, `appId`, et `groupId`. Définissez également la valeur de la variable  `includeFormsenrollment` de `y`. Si vous utilisez Forms Portal, définissez la variable `includeExamples=y` pour inclure les composants principaux du portail Forms dans votre projet.
 
@@ -100,7 +100,7 @@ Pour créer un archétype AEM 41 ou [later](https://github.com/adobe/aem-project
       </sly>
       ```
 
-      ![Ajoutez le code mentionné ci-dessus à la ligne 21.](/help/forms/using/assets/code-to-enable-themes.png)
+      ![Ajouter le code mentionné ci-dessus à la ligne 21](/help/forms/using/assets/code-to-enable-themes.png)
 
    1. Enregistrez et fermez le fichier.
 
@@ -142,7 +142,7 @@ Les composants principaux sont activés pour votre environnement. Un modèle de 
 
 ### Que sont les composants principaux ?
 
-Le [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) sont un ensemble de composants WCM (Web Content Management, gestion de contenu web) normalisés permettant d’AEM accélérer le temps de développement et de réduire les coûts de maintenance de vos sites web.
+La variable [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) sont un ensemble de composants WCM (Web Content Management, gestion de contenu web) normalisés permettant d’AEM accélérer le temps de développement et de réduire les coûts de maintenance de vos sites web.
 
 ### Quelles sont les fonctionnalités ajoutées pour activer les composants principaux ?
 
