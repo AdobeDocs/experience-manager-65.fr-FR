@@ -1,11 +1,11 @@
 ---
-title: Ressources pour les nouveaux utilisateurs d’Adobe Experience Manager
-description: Questions, réponses et ressources destinées aux utilisateurs qui découvrent Adobe Experience Manager
+title: Ressources pour les nouveaux utilisateurs et utilisatrices d’Adobe Experience Manager
+description: Questions, réponses et ressources destinées aux utilisateurs et utilisatrices qui découvrent Adobe Experience Manager
 exl-id: a238954f-011c-416b-81af-6cdf78ddaf85
 source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '300'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -28,13 +28,13 @@ Consultez [AEM Sustenance Hub](https://experienceleague.adobe.com/docs/experie
 
 ## Comment puis-je obtenir une assistance officielle pour AEM ? {#official-support}
 
-Si vous disposez d’une licence, vous pouvez bénéficier d’une assistance pour AEM en vous adressant à notre [équipe d’assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&amp;lang=fr#support). Vous pouvez également nous poser des questions dans la section [Communauté AEM](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) ou sur la gestion Twitter d’AdobeExpCare à l’adresse `https://twitter.com/adobeexpcare`.
+Si vous disposez d’une licence, vous pouvez bénéficier d’une assistance pour AEM en vous adressant à notre [équipe d’assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&amp;lang=fr#support). Vous pouvez également poser des questions aux spécialistes de la [Communauté AEM](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) ou poser vos questions sur notre compte Twitter @AdobeExpCare sur `https://twitter.com/adobeexpcare`.
 
 ## Où se trouve la documentation concernant les autres versions d’AEM ? {#versions}
 
-Vous êtes au bon endroit pour la documentation AEM 6.5.
+Vous êtes au bon endroit pour la documentation AEM 6.5.
 
-Nous disposons également de la documentation pour les anciennes versions d’Adobe Experience Manager. Vous pouvez y jeter un oeil. [Anciennes versions de la documentation d’Adobe Experience Manager, de CQ et de CRX](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) pour plus d’informations.
+Nous disposons également de la documentation pour les anciennes versions d’Adobe Experience Manager. Vous pouvez consulter la [documentation sur les anciennes versions d’Adobe Experience Manager, de CQ et de CRX](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) pour plus d’informations.
 
 ## Où se trouvent les notes de mise à jour de la version 6.5 d’AEM ? {#release-notes}
 
@@ -43,4 +43,4 @@ Vous pouvez rechercher toutes les notes de mise à jour d’AEM à l’adresse s
 * [Notes de mise à jour d’AEM 6.5](/help/release-notes/home.md)
 * [Liste des fonctionnalités supprimées et obsolètes dans AEM 6.5](/help/release-notes/deprecated-removed-features.md)
 
-Si vous avez des questions, contactez le [Équipe de la communauté AEM](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) ou contactez le gestionnaire Twitter d’AdobeExpCare à l’adresse `https://twitter.com/adobeexpcare`.
+Si vous avez des questions, vous pouvez contacter notre [équipe de la communauté AEM](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) ou nous contacter sur notre compte Twitter @AdobeExpCare sur `https://twitter.com/adobeexpcare`.
