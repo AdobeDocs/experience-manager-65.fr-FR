@@ -9,10 +9,10 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: d958f616803f92190493cc3f1ef474d0987991bd
+source-git-commit: d9abdc92c8c4fdb60c8aa827c57c0aa928fd6543
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 51%
+source-wordcount: '1796'
+ht-degree: 49%
 
 ---
 
@@ -43,15 +43,22 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 
 * **Activation des composants principaux de Forms adaptatif pour votre environnement**: AEM projet Archetype version 41 ou ultérieure est requis pour [Activation des composants principaux pour votre environnement](/help/forms/using/enable-adaptive-forms-core-components.md). Lors de l’activation des composants principaux pour votre environnement, la variable **Forms adaptatif (composant principal)** modèle et thème Zone de travail sont ajoutés à votre environnement.
 
-* **Un modèle de formulaire adaptatif** : un modèle fournit une structure de base et définit l’aspect, c’est-à-dire la mise en page et les styles, d’un formulaire adaptatif. Il comporte des composants pré-formatés contenant certaines propriétés et une certaine structure de contenu. Il fournit également les options permettant de définir un thème et une action d’envoi. Le thème définit l’aspect et l’action d’envoi définit l’action à entreprendre lors de l’envoi d’un formulaire adaptatif.
+* **Un modèle de formulaire adaptatif** : un modèle fournit une structure de base et définit l’aspect, c’est-à-dire la mise en page et les styles, d’un formulaire adaptatif. Il comporte des composants pré-formatés contenant certaines propriétés et une certaine structure de contenu. Il fournit également les options permettant de définir un thème et une action d’envoi. Le thème définit l’aspect et l’action d’envoi définit l’action à entreprendre lors de l’envoi d’un formulaire adaptatif. Vous pouvez également déployer un exemple [templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) à votre environnement. Ces fonctions vous aident à créer rapidement des formulaires.
 
   >[!NOTE]
   >
   > Si vous n’avez pas le modèle **Formulaires adaptatifs (composant principal)** sur votre environnement, vous devez [activer les composants principaux des formulaires adaptatifs pour votre environnement](/help/forms/using/enable-adaptive-forms-core-components.md). Quand vous activez des composants principaux pour votre environnement, le modèle **Formulaires adaptatifs (composant principal)** est ajouté à votre environnement.
 
-* **Un thème de formulaire adaptatif** : un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants.  La variable `Canvas` est ajouté par défaut lorsque vous activez les composants principaux pour votre environnement. Vous pouvez également [télécharger et personnaliser les thèmes standard](create-or-customize-themes-for-adaptive-forms-core-components.md).
+* **Un thème de formulaire adaptatif** : un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants.  La variable `Canvas` est ajouté par défaut lorsque vous activez les composants principaux pour votre environnement. Vous pouvez  [télécharger et personnaliser les thèmes standard](create-or-customize-themes-for-adaptive-forms-core-components.md). Pour **prêt à l’emploi** thèmes à déployer [sample](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) thèmes de votre environnement. Ces fonctions vous aident à commencer à mettre en forme vos formulaires et fournissent une structure de base pour créer ou personnaliser un thème en fonction des besoins de votre entreprise.
 
 * **Autorisations** : ajoutez vos utilisateurs et utilisatrices au groupe [!DNL forms-users]. Les membres du groupe [!DNL forms-users] ont les autorisations de créer un formulaire adaptatif. Pour obtenir la liste détaillée des groupes d’utilisateurs spécifiques aux formulaires, voir [Groupes et autorisations](forms-groups-privileges-tasks.md).
+
+<!--
+>[!NOTE]
+>
+>
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
+-->
 
 ## Création d’un formulaire adaptatif {#create-an-adaptive-form}
 
