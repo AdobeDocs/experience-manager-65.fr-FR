@@ -131,7 +131,7 @@ Pour résoudre ce problème, procédez comme suit :
 * Le Dispatcher AEM ou le proxy inverse doit être configuré pour transmettre le protocole d’origine en tant qu’en-tête.
 * Le **Filtre SSL du service HTTP Apache Felix** dans la configuration OSGi d’AEM doit être configuré avec les paramètres d’en-tête requis.
    * `https://<host>:<port>/system/console/configMgr`
-   * Voir [https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter](&#39;https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter)
+   * Voir [https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter](https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter)
 
 ## Un modèle personnalisé ne peut pas être sélectionné dans les propriétés de la page. {#if-the-custom-template-i-created-cannot-be-selected-in-page-properties}
 
