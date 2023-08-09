@@ -298,7 +298,7 @@ Si vous modifiez le contenu ciblé, vous devez cliquer ou appuyer sur **Commence
    >Les administrateurs peuvent déterminer si la définition de cette configuration est nécessaire en consultant **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
    >
    >
-   Pour obliger les utilisateurs à saisir un emplacement, cochez la case **Forcer à indiquer l’emplacement**.
+   >Pour obliger les utilisateurs à saisir un emplacement, cochez la case **Forcer à indiquer l’emplacement**.
 
 1. Sélectionnez l’expérience pour laquelle vous souhaitez créer l’offre.
 1. Créez l’offre :
@@ -580,13 +580,13 @@ Pour configurer des objectifs et des paramètres en cas d’utilisation d’Adob
 
    >[!NOTE]
    >
-   Un objectif au moins doit être défini.
+   >Un objectif au moins doit être défini.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
    >[!NOTE]
    >
-   S’il manque des informations dans votre mesure, une ligne rouge entoure la mesure.
+   >S’il manque des informations dans votre mesure, une ligne rouge entoure la mesure.
 
 1. Cliquez sur **Ajouter une nouvelle mesure** pour configurer d’autres mesures de succès.
 
@@ -594,7 +594,7 @@ Pour configurer des objectifs et des paramètres en cas d’utilisation d’Adob
 
    >[!NOTE]
    >
-   Vous pouvez supprimer d’autres objectifs en cliquant ou en appuyant sur les points de suspension ou sur **Supprimer**. AEM nécessite qu’au moins un objectif soit défini.
+   >Vous pouvez supprimer d’autres objectifs en cliquant ou en appuyant sur les points de suspension ou sur **Supprimer**. AEM nécessite qu’au moins un objectif soit défini.
 
 1. Si vous souhaitez mieux contrôler la méthode de comptabilisation des mesures de succès, cliquez ou appuyez sur **Paramètres avancés** pour y accéder.
 1. Cliquez sur **Enregistrer**.
@@ -617,7 +617,7 @@ Si du contenu inattendu s’affiche sur la page lors du chargement d’un profil
 
 >[!NOTE]
 >
-Si vous utilisez des tests A/B, les expériences de simulation sont affichées en fonction du pourcentage de trafic. Ceci est contrôlé par Adobe Target, ce qui peut entraîner des résultats inattendus pour les créateurs et créatrices. (L’activité _author est synchronisée avec des paramètres spécifiques qui permettent une réévaluation lors de la simulation.) Les créateurs et créatrices peuvent avoir besoin d’actualiser pour afficher les autres expériences en fonction de leurs paramètres de trafic.
+>Si vous utilisez des tests A/B, les expériences de simulation sont affichées en fonction du pourcentage de trafic. Ceci est contrôlé par Adobe Target, ce qui peut entraîner des résultats inattendus pour les créateurs et créatrices. (L’activité _author est synchronisée avec des paramètres spécifiques qui permettent une réévaluation lors de la simulation.) Les créateurs et créatrices peuvent avoir besoin d’actualiser pour afficher les autres expériences en fonction de leurs paramètres de trafic.
 
 Pour simuler l’expérience du visiteur ou de la visiteuse, utilisez les outils suivants :
 
@@ -711,7 +711,7 @@ Si vous sélectionnez Adobe Target comme moteur :
 
 >[!NOTE]
 >
-Lorsque vous sélectionnez un composant et le rendez ciblable, AEM remplace également le composant et injecte un composant Adobe Target. (Le composant Adobe Target est non seulement utilisé lorsque vous l’ajoutez manuellement à la page, mais également lorsque vous ciblez un composant existant.)
+>Lorsque vous sélectionnez un composant et le rendez ciblable, AEM remplace également le composant et injecte un composant Adobe Target. (Le composant Adobe Target est non seulement utilisé lorsque vous l’ajoutez manuellement à la page, mais également lorsque vous ciblez un composant existant.)
 
 Si vous sélectionnez ClientContext (côté client) comme moteur :
 

@@ -24,7 +24,7 @@ Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en app
 >[!IMPORTANT]
 >
 >• Le recadrage intelligent est disponible uniquement dans Dynamic Media en mode Scene7.
-• Les profils d’image ne s’appliquent pas aux fichiers PDF, GIF animé ou INDD (Adobe InDesign).
+>• Les profils d’image ne s’appliquent pas aux fichiers PDF, GIF animé ou INDD (Adobe InDesign).
 
 ## Options de recadrage {#crop-options}
 
@@ -57,8 +57,8 @@ Vous avez le choix entre deux options de recadrage d’image : recadrage de pix
 
 >[!IMPORTANT]
 >
-• Adobe vous recommande d’examiner tous les recadrages et tous les échantillons générés afin de vous assurer qu’ils sont appropriés et pertinents pour votre marque et vos valeurs.
-• Le format d’image CMJN n’est pas pris en charge avec le recadrage intelligent.
+>• Adobe vous recommande d’examiner tous les recadrages et tous les échantillons générés afin de vous assurer qu’ils sont appropriés et pertinents pour votre marque et vos valeurs.
+>• Le format d’image CMJN n’est pas pris en charge avec le recadrage intelligent.
 
 | Option | Quand l’utiliser | Description |
 | --- | --- | --- |
@@ -72,7 +72,7 @@ Utilisez le masque **[!UICONTROL Accentuation]** pour affiner l’effet d’un f
 
 >[!NOTE]
 >
-L’accentuation n’est appliquée qu’aux rendus réduits au sein du PTIFF (pyramid tiff), dont la résolution est réduite de plus de 50 %. Cela signifie que les rendus de taille supérieure à l’intérieur du ptiff ne sont pas affectés par l’accentuation tandis que les rendus de plus petite taille, comme les miniatures, sont modifiés (et accentués).
+>L’accentuation n’est appliquée qu’aux rendus réduits au sein du PTIFF (pyramid tiff), dont la résolution est réduite de plus de 50 %. Cela signifie que les rendus de taille supérieure à l’intérieur du ptiff ne sont pas affectés par l’accentuation tandis que les rendus de plus petite taille, comme les miniatures, sont modifiés (et accentués).
 
 L’option **[!UICONTROL Accentuation]** propose les options de filtre suivantes :
 
@@ -178,7 +178,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 >[!IMPORTANT]
 >
-• Le recadrage intelligent est disponible uniquement dans Dynamic Media en mode Scene7.
+>• Le recadrage intelligent est disponible uniquement dans Dynamic Media en mode Scene7.
 
 Vous pouvez réaligner ou redimensionner manuellement la fenêtre de recadrage intelligent d’une image afin d’affiner davantage son point focal.
 
@@ -209,7 +209,7 @@ Voir aussi [Modification du recadrage intelligent ou de l’échantillon intelli
 
 >[!IMPORTANT]
 >
-• Le recadrage intelligent est disponible uniquement dans Dynamic Media en mode Scene7.
+>• Le recadrage intelligent est disponible uniquement dans Dynamic Media en mode Scene7.
 
 Après l’application d’un profil d’image (contenant un recadrage intelligent) sur un dossier, un recadrage est appliqué à toutes les images de ce dossier. Si vous le souhaitez, vous pouvez réaligner ou redimensionner *manuellement* la fenêtre de recadrage intelligent dans plusieurs images pour affiner davantage leur point focal.
 
