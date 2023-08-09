@@ -80,44 +80,44 @@ Pour activer la fonctionnalité complète du composant Conteneur de formulaires 
 
 1. Ouvrez le fichier `/apps/[your-sites-project]/components/page/customheaderlibs.html` et ajoutez le code suivant au fichier :
 
-       ```
+     ```
      //Customheaderlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
      &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
      &lt;/sly>
      
      ```
-   
+
 1. Ouvrez le fichier `/apps/[your-sites-project]/components/page/customfooterlibs.html` et ajoutez le code suivant au fichier :
 
-       ```
+     ```
      
      //customfooterlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
      &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&#39;core.forms.components.runtime.all&#39;, async=true}&quot;/>
      &lt;/sly>
      ```
-   
+
 1. Ouvrez le fichier `/apps/[your-sites-project]/components/xfpage/customheaderlibs.html` et ajoutez le code suivant au fichier :
 
-       ```
+     ```
      //Customheaderlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
      &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
      &lt;/sly>
      
      ```
-   
+
 1. Ouvrez le fichier `/apps/[your-sites-project]/components/customfooterlibs.html` et ajoutez le code suivant au fichier :
 
-       ```
+     ```
      
      //customfooterlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
      &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&#39;core.forms.components.runtime.all&#39;, async=true}&quot;/>
      &lt;/sly>
      ```
-   
+
 1. Répétez les étapes ci-dessus pour toutes les instances de création et de publication dans votre environnement.
 
 +++
