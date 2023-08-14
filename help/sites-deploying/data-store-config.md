@@ -6,10 +6,10 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
-workflow-type: ht
-source-wordcount: '3521'
-ht-degree: 100%
+source-git-commit: 2ed19ac8c60dbf49422b8f1f665be4004689e00e
+workflow-type: tm+mt
+source-wordcount: '3550'
+ht-degree: 99%
 
 ---
 
@@ -139,6 +139,10 @@ Voici les options de configuration disponibles :
 
 AEM peut être configuré pour stocker des donnés dans le service Simple Storage Service (S3) d’Amazon. Celui-ci utilise le PID `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` pour la configuration.
 
+>[!NOTE]
+>
+>AEM 6.5 prend en charge le stockage de données dans Amazon S3, mais la prise en charge n’est pas étendue au stockage de données dans d’autres plateformes, dont les fournisseurs peuvent avoir leurs propres implémentations des API Amazon S3.
+
 Pour activer la fonctionnalité du magasin de données S3, un pack de fonctionnalités contenant le connecteur du magasin de données S3 doit être téléchargé et installé. Accédez au [référentiel Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/), puis téléchargez la dernière version des versions 1.10.x du pack de fonctionnalités (par exemple, com.adobe.granite.oak.s3connector-1.10.0.zip). En outre, vous devez également télécharger et installer le dernier pack de services AEM, comme indiqué à la page [Notes de mise à jour d’AEM 6.5](/help/release-notes/release-notes.md).
 
 >[!NOTE]
@@ -230,8 +234,8 @@ Vous pouvez utiliser le fichier de configuration avec les options présentées c
 
 | Clé | Description | Valeur par défaut | Requise |
 | --- | --- | --- | --- |
-| accessKey | Identifiant de clé d’accès de l’utilisateur IAM ayant accès au compartiment. |  | Oui, lorsque vous n’utilisez pas les rôles IAM. |
-| secretKey | Clé d’accès secrète de l’utilisateur IAM ayant accès au compartiment. |  | Oui, lorsque vous n’utilisez pas les rôles IAM. |
+| accessKey | Identifiant de clé d’accès de l’utilisateur IAM ayant accès au compartiment. | | Oui, lorsque vous n’utilisez pas les rôles IAM. |
+| secretKey | Clé d’accès secrète de l’utilisateur IAM ayant accès au compartiment. | | Oui, lorsque vous n’utilisez pas les rôles IAM. |
 | cacheSize | Taille (en octets) du cache local. | 64 Go | Nombre |
 | connectionTimeout | Définissez la durée d’attente (en millisecondes) avant l’expiration lors de l’établissement initial d’une connexion. | 10 000 | Nombre |
 | maxCachedBinarySize | Les fichiers binaires dont la taille est inférieure ou égale à cette valeur (en octets) seront stockés dans le cache de mémoire. | 17 408 (17 Ko) | Nombre |
@@ -239,10 +243,10 @@ Vous pouvez utiliser le fichier de configuration avec les options présentées c
 | maxErrorRetry | Définissez le nombre maximal de nouvelles tentatives pour les requêtes (pouvant être retentées) ayant échoué. | 3 | Nombre |
 | minRecordLength | Taille minimale d’un objet (en octets) devant être enregistré dans l’entrepôt de données. | 16384 | Nombre |
 | path | Chemin d’accès local de l’entrepôt de données AEM. | `crx-quickstart/repository/datastore` | Nombre |
-| proxyHost | Définissez l’hôte proxy facultatif par lequel le client ou la cliente se connectera. |  | Nombre |
-| proxyPort | Définissez le port proxy facultatif par lequel le client ou la cliente se connectera. |  | Nombre |
-| s3Bucket | Nom du compartiment S3. |  | Oui |
-| s3EndPoint | Point d’entrée de l’API REST S3. |  | Nombre |
+| proxyHost | Définissez l’hôte proxy facultatif par lequel le client ou la cliente se connectera. | | Nombre |
+| proxyPort | Définissez le port proxy facultatif par lequel le client ou la cliente se connectera. | | Nombre |
+| s3Bucket | Nom du compartiment S3. | | Oui |
+| s3EndPoint | Point d’entrée de l’API REST S3. | | Nombre |
 | s3Region | Région où réside le compartiment. Consultez cette [page](https://docs.aws.amazon.com/general/latest/gr/s3.html) pour plus de détails. | Région dans laquelle l’instance AWS est en cours d’exécution. | Nombre |
 | socketTimeout | Définissez la durée d’attente (en millisecondes) pour que les données soient transférées au cours d’une connexion ouverte établie avant que la connexion n’expire et ne soit coupée. | 50 000 | Nombre |
 | stagingPurgeInterval | Intervalle (en secondes) pour purger les téléchargements terminés à partir du cache intermédiaire. | 300 | Nombre |
@@ -391,7 +395,8 @@ Pour configurer la réplication sans binaires avec S3, les étapes suivantes son
    >
    >    * Pour les versions **1.2.x** d’Oak, utilisez Oak-run **1.2.12 ou une version ultérieure**.
    >    * Pour des versions d’Oak **plus récentes que celle ci-dessus**, utilisez la version d’Oak-run qui correspond au système Oak de votre installation AEM.
-
+   >
+   >
 
 1. Enfin, validez la configuration. Pour valider, recherchez un fichier unique ajouté au magasin de données par chaque référentiel qui le partage. Le format des fichiers est `repository-[UUID]`, où l’UUID est l’identifiant unique de chaque référentiel.
 
@@ -500,7 +505,6 @@ Vous pouvez exécuter le nettoyage de la mémoire du magasin de données en :
 >2. Ajoutez le paramètre `blobTrackSnapshotIntervalInSecs=L"0"` dans le fichier `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`. Ce paramètre nécessite Oak 1.12.0, 1.10.2 ou une version ultérieure.
 >3. Redémarrez l’instance AEM.
 
-
 Avec des versions plus récentes d’AEM, le nettoyage de la mémoire du magasin de données peut également être effectué sur des magasins de données partagés par plusieurs référentiels. Pour pouvoir exécuter la récupération de l’espace mémoire dumagasin de données sur un magasin de données partagé, procédez comme suit :
 
 1. Vérifiez que les tâches de maintenance configurées pour le nettoyage de la mémoire du magasin de données sont désactivées sur toutes les instances de référentiel partageant le magasin de données.
@@ -513,4 +517,5 @@ Avec des versions plus récentes d’AEM, le nettoyage de la mémoire du magasin
    1. Accédez à la console JMX, puis sélectionnez le gestionnaire de référentiel MBean.
    1. Cliquez sur le lien **Cliquez sur startDataStoreGC(boolean markOnly)**.
    1. Dans la boîte de dialogue suivante, saisissez à nouveau `false` pour le paramètre `markOnly`.
+
    Cela permettra d’assembler tous les fichiers trouvés à l’aide de la phase de repérage utilisée précédemment et de supprimer ensuite le reste de fichiers non utilisés du magasin de données.
