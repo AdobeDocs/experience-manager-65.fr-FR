@@ -1,18 +1,14 @@
 ---
 title: Générez l’application Android AEM Forms.
-seo-title: Build the AEM Forms Android app
-description: Procédure d’installation du projet Android Studio et de génération du fichier .apk pour l’application AEM Forms pour Android
-seo-description: Steps to set up the Android Studio project and build the .apk file for the AEM Forms app for Android
-uuid: 2e140aaf-5be5-4d5d-9941-9d1f4bf2debd
+description: Procédure de configuration du projet Android Studio et de création du fichier .apk pour l’application AEM Forms pour Android
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: f5d6d9bd-4f36-4a4f-8008-15fb853a9219
 exl-id: 3fb069cf-d3ed-47b0-b6bf-82e110b3b059
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '721'
-ht-degree: 100%
+source-git-commit: f8643f6118e0bc6bfb2ee0e093155cf0907eb5d3
+workflow-type: tm+mt
+source-wordcount: '720'
+ht-degree: 83%
 
 ---
 
@@ -33,9 +29,9 @@ Procédez comme suit pour télécharger le fichier `adobe-aemfd-forms-app-src-p
 1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
 1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
 1. Dans la section **[!UICONTROL Filtres]** :
-   1. Sélectionnez **[!UICONTROL Formulaires]** dans la liste déroulante **[!UICONTROL Solution]**.
+   1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]**.
    2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Rechercher des téléchargements]** pour filtrer les résultats.
-1. Appuyez sur le nom applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les conditions du CLUF]**, puis appuyez sur **[!UICONTROL Télécharger]**.
+1. Appuyez sur le nom de package applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les conditions du CLUF]**, puis appuyez sur **[!UICONTROL Télécharger]**.
 1. Ouvrez [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
 1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 1. Pour télécharger l’archive du code source, ouvrez **https://&lt;server>:&lt;port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-&lt;version>.zip** dans votre navigateur. Le fichier .zip de l’application Android est téléchargé sur votre appareil.
@@ -47,11 +43,11 @@ L’image suivante affiche la structure du dossier `adobe-lc-mobileworkspace-src
 
 ## Définir les variables d’environnement {#set-environment-variable-android}
 
-Définissez les variables d’environnement suivantes avant de démarrer le processus de génération pour l’application AEM Forms :
+Définissez les variables d’environnement suivantes avant de démarrer le processus de création pour l’application AEM Forms :
 
 * Définissez la variable d’environnement JAVA_HOME sur l’emplacement du logiciel JDK sur le système de fichiers local. Par exemple, C:\Program Files\Java\jdk1.8.0_181
 * Définissez la variable d’environnement système `ANDROID_SDK_ROOT` sur l’emplacement du SDK pour Android. Par exemple, C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk.
-* Définissez la variable d’environnement système `Path` pour inclure les outils de la plate-forme et les emplacements de dossier d’outils pour Android. Par exemple, C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\platform-tools et C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\tools.
+* Définissez la variable d’environnement système `Path` pour inclure les outils de la plateforme et les emplacements de dossier d’outils pour Android. Par exemple, C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\platform-tools et C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\tools.
 
 ## Génération d’une application AEM Forms standard {#set-up-the-xcode-project}
 
@@ -62,7 +58,7 @@ Une fois que vous avez enregistré le fichier adobe-lc-mobileworkspace-src-&lt;
 
 ### Générer l’application AEM Forms à l’aide d’Android Studio {#using-android-studio}
 
-Procédez comme suit pour générer l’application AEM Forms à l’aide d’Android Studio :
+Effectuez les étapes suivantes pour créer une application AEM Forms à l’aide d’Android Studio :
 
 1. Lancez l’application Android Studio sur votre ordinateur.
 1. Cliquez sur **Ouvrir un projet Android Studio existant**. Si la boîte de dialogue pour ouvrir un projet existant ne s’affiche pas automatiquement, sélectionnez **Fichier** > **Ouvrir**.
@@ -81,11 +77,11 @@ Procédez comme suit pour générer l’application AEM Forms à l’aide d’An
    * [Personnalisation du thème](/help/forms/using/theme-customization.md)
    * [Personnalisation de mouvement](/help/forms/using/gesture-customization.md)
 
-   Après avoir appliqué les personnalisations appropriées à votre application, vous pouvez générer le fichier .apk pour le distribuer.
+   Après avoir appliqué les personnalisations appropriées à votre application, vous pouvez générer le fichier .apk à des fins de distribution.
 
 ### Générez le fichier .apk à l’aide d’Android Studio {#generate-apk-android-studio}
 
-Exécutez les étapes suivantes pour générer le fichier .apk à l’aide d’Android Studio :
+Exécutez les étapes suivantes pour générer le fichier .apk à l’aide d’Android Studio :
 
 1. Lancez l’application Android Studio sur votre ordinateur.
 1. Sélectionnez **Ouvrir un projet Android Studio existant**. Si la boîte de dialogue pour ouvrir un projet existant ne s’affiche pas automatiquement, sélectionnez **Fichier** > **Ouvrir**.
@@ -99,7 +95,7 @@ Exécutez les étapes suivantes pour générer le fichier .apk à l’aide d’A
 
 ## Utilisation d’Android Debug Bridge {#build-android-debug-bridge}
 
-Une fois le fichier .apk généré, exécutez la commande suivante pour installer l’application sur un appareil Android en utilisant [Android Debug Bridge](https://developer.android.com/tools/help/adb.html).
+Une fois le fichier .apk généré, exécutez la commande suivante pour installer l’application sur un appareil Android en utilisant [Android Debug Bridge](https://developer.android.com/tools/adb).
 
 **Utilisateurs de Windows :** `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
 
