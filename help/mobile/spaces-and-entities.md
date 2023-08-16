@@ -1,7 +1,7 @@
 ---
 title: Espaces et entités
 seo-title: Developing AEM Mobile Content Services
-description: Cette page sert de page d’entrée pour le développement d’AEM Mobile Content Services.
+description: Cette page sert de landing page pour le développement d’AEM Mobile Content Services.
 seo-description: This page serves a landing page for developing AEM Mobile Content Services.
 uuid: eab5a61b-a9e8-4863-90a3-df1f18510cd8
 contentOwner: Jyotika Syal
@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: ef568577-c74e-4fc2-b66e-eedac2948310
 exl-id: 44591900-b01b-4a33-9910-839564477e7d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1191'
 ht-degree: 3%
 
 ---
@@ -36,7 +36,7 @@ Pour la première fois, si un utilisateur n’a pas configuré les services de c
 
 >[!CAUTION]
 >
->**Conditions préalables pour l’ajout d’un espace**
+>**Conditions préalables pour ajouter un espace**
 >
 >Vérifiez les **Activation d’AEM Content Services** pour utiliser des espaces et l’activer dans le tableau de bord de votre application AEM Mobile.
 >
@@ -75,7 +75,7 @@ Vous pouvez afficher les propriétés de l’espace, supprimer l’espace ou pub
 
 >[!NOTE]
 >
->Vous pouvez **Annuler la publication** un espace qui supprime l’espace de l’instance de publication.
+>Vous pouvez **Dépublier** un espace qui supprime l’espace de l’instance de publication.
 >
 >L’image suivante illustre les actions qui peuvent être effectuées après la publication de l’espace.
 
@@ -87,7 +87,7 @@ Les espaces peuvent inclure des dossiers pour mieux organiser le contenu et les 
 
 ### Création d’un dossier {#creating-a-folder}
 
-1. Cliquez sur l’espace dans la liste de la console des espaces, puis cliquez sur **Créer un dossier**
+1. Cliquez sur l’espace dans la liste de la console Espace et cliquez sur **Créer un dossier**
 
    ![chlimage_1-87](assets/chlimage_1-87.png)
 
@@ -103,13 +103,13 @@ Les espaces peuvent inclure des dossiers pour mieux organiser le contenu et les 
 >
 >La copie de langue n’est pas entièrement fonctionnelle dans cette version. Il ne fait que configurer la structure.
 
-Le **Copie de la langue** permet aux auteurs de copier leur copie de langue principale, puis de créer un projet et un workflow pour traduire automatiquement le contenu. Copie de langue crée la structure appropriée. Une fois que vous avez ajouté un dossier dans un espace, vous pouvez y ajouter une copie de la langue.
+La variable **Copie de la langue** permet aux auteurs de copier leur copie de langue principale, puis de créer un projet et un workflow pour traduire automatiquement le contenu. Copie de langue crée la structure appropriée. Une fois que vous avez ajouté un dossier dans un espace, vous pouvez y ajouter une copie de la langue.
 
 >[!NOTE]
 >
 >Il est recommandé de placer tout contenu pouvant être traduit sous le noeud Copie de la langue .
 
-### Ajout d’une copie de langue {#adding-language-copy}
+### Ajout d’une copie de la langue {#adding-language-copy}
 
 1. Une fois que vous avez créé l’espace, cliquez sur cet espace pour créer une copie de langue.
 
@@ -154,7 +154,7 @@ Si les enfants d’entités, qui sont d’autres entités, sont collectés pour 
 
 >[!NOTE]
 >
->Les entités sont toujours associées à un espace. La plupart de l’interface utilisateur de l’entité est donc accessible par le biais de la console d’espace.
+>Les entités sont toujours associées à un espace. Par conséquent, la plupart de l’interface utilisateur de l’entité est accessible par le biais de la console d’espace.
 
 ### Création d’une entité {#creating-an-entity}
 
@@ -212,7 +212,7 @@ Si les enfants d’entités, qui sont d’autres entités, sont collectés pour 
 
    >[!NOTE]
    >
-   >Une fois que vous avez ajouté une entité, elle doit être enregistrée pour que le lien Aperçu fonctionne. Pour afficher l’aperçu, cliquez sur **Enregistrer**. Cliquez sur le **Aperçu** affiche le fichier json de la ressource ajoutée, comme illustré dans la figure ci-dessous :
+   >Une fois que vous avez ajouté une entité, elle doit être enregistrée pour que le lien Aperçu fonctionne. Pour afficher l’aperçu, cliquez sur **Enregistrer**. Cliquez sur le bouton **Aperçu** affiche le fichier json de la ressource ajoutée, comme illustré dans la figure ci-dessous :
 
    ![chlimage_1-101](assets/chlimage_1-101.png)
 

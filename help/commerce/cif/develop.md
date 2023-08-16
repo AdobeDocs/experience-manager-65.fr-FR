@@ -7,10 +7,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 48479725-8b52-4ff2-a599-d20958b26ee6
-source-git-commit: 78359fb8ecbcc0227ab5a3910175aed73d823902
-workflow-type: ht
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
 source-wordcount: '871'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Un environnement de développement local est recommandé pour travailler avec de
 >
 >Les instructions suivantes vous aident à configurer un environnement de développement d’AEM local pour AEM Commerce à l’aide de CIF avec la cible d’action pour la version 6.5 d’AEM). Si vous utilisez AEM as a Cloud Service, reportez-vous à la documentation [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=fr).
 
-Le module complémentaire AEM Commerce pour AEM 6.5, alias CIF, est également disponible pour le développement local et est fourni sous la forme d’un module AEM. Il peut être téléchargé à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) en tant que pack de fonctionnalités.
+Le module complémentaire AEM Commerce pour AEM 6.5, alias CIF, est également disponible pour le développement local et est fourni sous la forme d’un package AEM. Il peut être téléchargé à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) en tant que pack de fonctionnalités.
 
 ### Logiciels requis
 
@@ -57,7 +57,7 @@ Le module complémentaire CIF peut être téléchargé à partir du [portail de 
 
 Pour le développement de projet CIF local à l’aide d’AEM et du module complémentaire CIF, procédez comme suit :
 
-1. Procurez-vous la version AEM 6.5 et installez le pack de services AEM 6.5. Le pack de services 7 d’AEM 6.5 est requis, mais nous vous recommandons d’installer le dernier pack de services disponible.
+1. Procurez-vous la version AEM 6.5 et installez le pack de services AEM 6.5. AEM 6.5 Service Pack 7 est requis, mais Adobe recommande d’installer le dernier Service Pack disponible.
 
 1. Décompressez le fichier AEM .jar pour créer le dossier `crx-quickstart` et exécutez :
 
@@ -67,15 +67,15 @@ Pour le développement de projet CIF local à l’aide d’AEM et du module comp
 
 1. Créez un dossier `crx-quickstart/install`.
 
-1. Copiez tous les modules complémentaires CIF, téléchargés à partir du portail de distribution logicielle, dans le dossier `crx-quickstart/install`.
+1. Copiez tous les packages complémentaires CIF, téléchargés à partir du portail de distribution logicielle, dans le dossier `crx-quickstart/install`.
 
 >[!TIP]
 >
->Le module complémentaire CIF peut également être installé via le gestionnaire de modules.
+>Le package complémentaire CIF peut également être installé via le gestionnaire de packages.
 
 1. Démarrage rapide AEM
 
-Vérifiez la configuration via la console OSGI : `http://localhost:4502/system/console/osgi-installer`. La liste doit inclure les lots liés au module complémentaire CIF, les configurations de module de contenu et OSGI. Assurez-vous que tous les lots sont démarrés.
+Vérifiez la configuration via la console OSGI : `http://localhost:4502/system/console/osgi-installer`. La liste doit inclure les lots liés au package complémentaire CIF, le package de contenu et les configurations OSGI. Assurez-vous que tous les lots sont démarrés.
 
 ## Configuration du projet {#project}
 
@@ -106,7 +106,7 @@ mvn -B archetype:generate \
  -D includeCommerce=y
 ```
 
-Les composants principaux CIF peuvent être utilisés dans n’importe quel projet en incluant le module `all` fourni ou individuellement en utilisant le module de contenu CIF et les bundles OSGI associés. Pour ajouter manuellement des composants principaux CIF à un projet, utilisez les dépendances suivantes :
+Les composants principaux CIF peuvent être utilisés dans n’importe quel projet en incluant le package `all` fourni ou individuellement en utilisant le package de contenu CIF et les bundles OSGI associés. Pour ajouter manuellement des composants principaux CIF à un projet, utilisez les dépendances suivantes :
 
 ```java
 <dependency>

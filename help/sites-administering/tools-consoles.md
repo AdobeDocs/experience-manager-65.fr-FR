@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: ht
-source-wordcount: '607'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '604'
+ht-degree: 93%
 
 ---
 
@@ -183,7 +183,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td> </td>
-   <td>Configuration des statistiques</td>
+   <td>Configuration d’Insights</td>
   </tr>
   <tr>
    <td> </td>
@@ -394,7 +394,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td>Tableaux de bord</td>
-   <td>Permet de créer des tableaux de bord de rapports. Ces derniers offrent un moyen personnalisable de définir des pages qui affichent des données consolidées.</td>
+   <td>Vous permet de créer des tableaux de bord de rapports ; ils offrent un moyen personnalisable de définir des pages qui affichent des données consolidées.</td>
   </tr>
   <tr>
    <td>Documentation personnalisée</td>
@@ -430,7 +430,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td>Rapports</td>
-   <td>AEM fournit toute une gamme de rapports personnalisés, vous permettant de créer des rapports personnalisés et/ou de développer vos propres rapports.</td>
+   <td>AEM fournit toute une gamme de rapports personnalisés, vous permet de créer des rapports personnalisés et/ou de développer les vôtres.</td>
   </tr>
   <tr>
    <td>Génération de modèles automatique de page par défaut</td>

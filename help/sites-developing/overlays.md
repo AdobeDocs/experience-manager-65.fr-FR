@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: e57a6971-6a6f-427b-a8cd-a2f2e8cdf9e2
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '604'
 ht-degree: 35%
 
 ---
 
 # Recouvrements{#overlays}
 
-Adobe Experience Manager (AEM), et auparavant CQ, applique depuis longtemps le principe des incrustations pour vous permettre d’étendre et de personnaliser le [consoles](/help/sites-developing/customizing-consoles-touch.md) et d’autres fonctionnalités (par exemple, [création de pages](/help/sites-developing/customizing-page-authoring-touch.md)).
+Adobe Experience Manager (AEM), et auparavant CQ, applique depuis longtemps le principe des incrustations pour vous permettre d’étendre et de personnaliser les [consoles](/help/sites-developing/customizing-consoles-touch.md) et d’autres fonctionnalités (par exemple, [création de pages](/help/sites-developing/customizing-page-authoring-touch.md)).
 
 Recouvrement est un terme utilisé dans de nombreux contextes. Dans ce contexte (extension d’AEM), une superposition signifie prendre la fonctionnalité prédéfinie et y imposer vos propres définitions (pour personnaliser la fonctionnalité standard).
 
@@ -54,7 +54,7 @@ Depuis AEM 6.0, des modifications ont été apportées à la manière dont les s
 
 >[!CAUTION]
 >
->Le [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) et les méthodes associées ne peuvent être utilisées qu’avec [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). Cela signifie que la création d’un recouvrement avec une ossature n’est appropriée que pour l’interface utilisateur (IU) tactile standard.
+>La variable [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) et les méthodes associées ne peuvent être utilisées qu’avec [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). Cela signifie que la création d’un recouvrement avec une ossature n’est appropriée que pour l’interface utilisateur (IU) tactile standard.
 >
 >Les superpositions pour d’autres zones (y compris l’interface utilisateur classique) impliquent la copie du noeud approprié et de l’ensemble de la sous-structure, puis l’apport des modifications requises.
 
@@ -64,9 +64,9 @@ Les recouvrements sont la méthode recommandée pour de nombreuses modifications
 
    * mise à niveau sur votre instance
    * appliquer un correctif ;
-   * installation d’un Feature Pack ;
+   * installer un Feature Pack ;
 
-* Ils centralisent vos modifications à un seul emplacement ; facilite le suivi, la migration, la sauvegarde ou le débogage de vos modifications, si nécessaire.
+* Ils centralisent vos modifications à un seul emplacement ; ce qui facilite le suivi, la migration, la sauvegarde ou le débogage de vos modifications, le cas échéant.
 
 ## Configuration des chemins de recherche {#configuring-the-search-paths}
 
@@ -75,7 +75,7 @@ Pour les superpositions, la ressource diffusée est un agrégat des ressources e
 * La ressource **Resolver Search Path**, telle qu’elle est définie dans la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) pour **Apache Sling Resource Resolver Factory**.
 
    * L’ordre descendant des chemins de recherche indique leurs priorités respectives.
-   * Dans une installation standard, les Principaux paramètres par défaut sont les suivants : `/apps`, `/libs` - pour que le contenu de `/apps` a une priorité plus élevée que celle de `/libs` (c’est-à-dire : *superpositions* it).
+   * Dans une installation standard, les principales valeurs par défaut sont les suivantes : `/apps`, `/libs` - pour que le contenu de `/apps` a une priorité plus élevée que celle de `/libs` (c’est-à-dire : *superpositions* it).
 
 * Deux utilisateurs du service ont besoin d’un accès JCR:READ à l’emplacement de stockage des scripts. Ces utilisateurs sont : components-search-service (utilisé par les composants de cache et d’accès com.day.cq.wcm.coreto) et sling-scripting (utilisé par org.apache.sling.servlets.resolver pour rechercher des servlets).
 * La configuration suivante doit également être définie en fonction de l’emplacement de stockage des scripts (dans cet exemple sous /etc, /libs ou /apps).

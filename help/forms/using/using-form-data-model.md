@@ -10,10 +10,10 @@ discoiquuid: 87f5f9f5-2d03-4565-830e-eacc3757e542
 docset: aem65
 feature: Form Data Model
 exl-id: 9a73a643-7ad4-49aa-a971-08d52679158d
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 52%
+source-wordcount: '1273'
+ht-degree: 50%
 
 ---
 
@@ -45,7 +45,7 @@ Un modèle de données de formulaire est une extension du schéma JSON que vous 
 
 ## Créer des formulaires adaptatifs et des fragments {#create-af}
 
-Vous pouvez créer des [formulaires adaptatifs](../../forms/using/creating-adaptive-form.md) et [Fragments de formulaire adaptatif](../../forms/using/adaptive-form-fragments.md) selon un modèle de données de formulaire. Procédez comme suit pour utiliser un modèle de données de formulaire lors de la création d’un formulaire adaptatif ou d’un fragment de formulaire adaptatif :
+Vous pouvez créer [formulaires adaptatifs](../../forms/using/creating-adaptive-form.md) et [Fragments de formulaire adaptatif](../../forms/using/adaptive-form-fragments.md) sur la base d’un modèle de données de formulaire. Procédez comme suit pour utiliser un modèle de données de formulaire lors de la création d’un formulaire adaptatif ou d’un fragment de formulaire adaptatif :
 
 1. Dans l’onglet Modèle de formulaire de l’écran Ajouter des propriétés, sélectionnez **[!UICONTROL Modèle de données de formulaire]** dans la liste déroulante **[!UICONTROL Sélectionner à partir de]**.
 
@@ -111,7 +111,7 @@ De même, pour prévisualiser un formulaire adaptatif avec des exemples de donn�
 
 AEM Forms fournit un service de préremplissage de modèle de données de formulaire prêt à l’emploi que vous pouvez activer pour les formulaires adaptatifs et les communications interactives basées sur le modèle de données de formulaire. Le service de préremplissage interroge les sources de données pour les objets de modèle de données dans le formulaire adaptatif et la communication interactive et préremplit en conséquence les données lors du rendu du formulaire ou de la communication.
 
-Pour activer le service de préremplissage de modèle de données de formulaire pour un formulaire adaptatif, ouvrez les propriétés du conteneur de formulaires adaptatifs et sélectionnez **[!UICONTROL Service de préremplissage de modèle de données de formulaire]** de la **[!UICONTROL Service de préremplissage]** menu déroulant dans l’accordéon De base . Ensuite, enregistrez les propriétés.
+Pour activer le service de préremplissage de modèle de données de formulaire pour un formulaire adaptatif, ouvrez les propriétés du conteneur de formulaires adaptatifs et sélectionnez **[!UICONTROL Service Form Data Model Prefill]** de la **[!UICONTROL Service de préremplissage]** menu déroulant dans l’accordéon De base . Ensuite, enregistrez les propriétés.
 
 ![prefill-service](assets/prefill-service.png)
 
@@ -144,7 +144,7 @@ Vous pouvez également envoyer des pièces jointes de formulaire à une source d
 
 ## Appeler des services dans des formulaires adaptatifs à l’aide de règles {#invoke-services}
 
-Dans un formulaire adaptatif basé sur un modèle de données de formulaire, vous pouvez [créer des règles](../../forms/using/rule-editor.md) pour appeler les services configurés dans le modèle de données de formulaire. L’opération **[!UICONTROL Appeler des services]** dans une règle répertorie tous les services disponibles dans le modèle de données de formulaire et vous permet de sélectionner des champs d’entrée et de sortie pour le service. Vous pouvez également utiliser la variable **Définir la valeur** type de règle pour appeler un service de modèle de données de formulaire et définir la valeur d’un champ sur la sortie renvoyée par le service.
+Dans un formulaire adaptatif basé sur un modèle de données de formulaire, vous pouvez [créer des règles](../../forms/using/rule-editor.md) pour appeler les services configurés dans le modèle de données de formulaire. La variable **[!UICONTROL Appeler les services]** dans une règle répertorie tous les services disponibles dans le modèle de données de formulaire et vous permet de sélectionner les champs d’entrée et de sortie du service. Vous pouvez également utiliser la variable **Définir la valeur** type de règle pour appeler un service de modèle de données de formulaire et définir la valeur d’un champ sur la sortie renvoyée par le service.
 
 Par exemple, la règle suivante appelle un service get qui utilise l’ID d’employé comme entrée et les valeurs renvoyées sont renseignées dans les champs ID, Nom, Prénom et Sexe correspondants du formulaire.
 

@@ -7,10 +7,10 @@ topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 72cd0594-8b5e-4d14-bc6f-bca26bae50f2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '841'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '840'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ L’utilisateur connecté doit être membre du groupe `workflow-users`. Il peut 
 
 ## Partage d’un ou de tous les éléments de votre boîte de réception avec un autre utilisateur
 
-La boîte de réception AEM vous permet de partager un ou tous les éléments avec un autre utilisateur.
+AEM Boîte de réception vous permet de partager un seul ou tous les éléments de votre boîte de réception avec un autre utilisateur.
 
 ### Partage de tous les éléments de la boîte de réception
 

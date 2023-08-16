@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 4537c1fb-f99c-42e2-a222-b037794bdb52
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '2137'
 ht-degree: 55%
 
 ---
@@ -35,7 +35,7 @@ CRXDE Lite est recommandé si vous ne disposez pas d’un accès direct au serv
 
 >[!NOTE]
 >
->Il est recommandé d’utiliser la variable [AEM Outils de développement pour Eclipse](/help/sites-developing/aem-eclipse.md) et le [AEM extension HTL Brackets](/help/sites-developing/aem-brackets.md) pendant le développement du projet.
+>Il est recommandé d’utiliser la variable [AEM Outils de développement pour Eclipse](/help/sites-developing/aem-eclipse.md) et la variable [AEM extension HTL Brackets](/help/sites-developing/aem-brackets.md) pendant le développement du projet.
 
 ## Prise en main de CRXDE Lite {#getting-started-with-crxde-lite}
 
@@ -73,7 +73,7 @@ CRXDE Lite offre les fonctionnalités suivantes :
   </tr>
   <tr>
    <td>Volet Modifier</td>
-   <td><p><strong>Accueil</strong> tab : vous permet de rechercher du contenu et/ou de la documentation et d’accéder aux ressources des développeurs (documentation, blog de développeur, base de connaissances) et à l’assistance (page d’accueil et centre d’assistance d’Adobe).<br /> </p> <p>Double-cliquez sur un fichier dans le volet de <strong>l’explorateur</strong> pour afficher son contenu, par exemple un fichier .jsp ou un fichier .java. Vous pouvez ensuite le modifier et enregistrer les modifications.</p> <p>Une fois qu’un fichier est modifié dans la fonction <strong>Modifier</strong> , les outils suivants sont disponibles dans la barre d’outils :<br /> </p> - <strong>Afficher dans l’arborescence : </strong>affiche le fichier dans l’arborescence du référentiel.<br /> - <strong>Rechercher/remplacer...</strong>: effectuez une recherche ou un remplacement.<br /> <br /> Double-cliquez sur la ligne d’état du <strong>Modifier</strong> ouvre la fenêtre <strong>Aller à la ligne</strong> pour saisir un numéro de ligne spécifique à laquelle vous souhaitez accéder.<br /> </td>
+   <td><p><strong>Accueil</strong> onglet : vous permet de rechercher du contenu et/ou de la documentation et d’accéder aux ressources des développeurs (documentation, blog des développeurs, base de connaissances) et à l’assistance (page d’accueil et centre d’assistance d’Adobe).<br /> </p> <p>Double-cliquez sur un fichier dans le volet de <strong>l’explorateur</strong> pour afficher son contenu, par exemple un fichier .jsp ou un fichier .java. Vous pouvez ensuite le modifier et enregistrer les modifications.</p> <p>Une fois qu’un fichier est modifié dans la fonction <strong>Modifier</strong> , les outils suivants sont disponibles dans la barre d’outils :<br /> </p> - <strong>Afficher dans l’arborescence : </strong>affiche le fichier dans l’arborescence du référentiel.<br /> - <strong>Rechercher/remplacer...</strong>: effectuez une recherche ou un remplacement.<br /> <br /> Double-cliquez sur la ligne d’état du <strong>Modifier</strong> ouvre la fenêtre <strong>Aller à la ligne</strong> pour saisir un numéro de ligne spécifique à laquelle vous souhaitez accéder.<br /> </td>
   </tr>
   <tr>
    <td>Onglet Propriétés.<br /> </td>
@@ -81,7 +81,7 @@ CRXDE Lite offre les fonctionnalités suivantes :
   </tr>
   <tr>
    <td>Onglet Contrôle d’accès</td>
-   <td><p>Afficher les autorisations en fonction du chemin d’accès, du niveau du référentiel ou de l’entité de sécurité actuelle.</p> <p>Les autorisations sont divisées en</p> <p>- <strong>Stratégie de contrôle d’accès applicable</strong>: Stratégies pouvant être appliquées à la sélection en cours.</p> <p>- <strong>Stratégies de contrôle d’accès locales</strong>: Stratégies actuelles appliquées localement à la sélection actuelle.</p> <p>- <strong>Stratégies de contrôle d’accès efficaces</strong>: Les stratégies actuelles appliquées à la sélection actuelle peuvent être définies localement ou héritées des noeuds parents.</p> <p>Remarque. Pour pouvoir voir les informations de contrôle d’accès, l’utilisateur connecté à CRXDE Lite doit avoir le droit de lire les entrées ACL. L’utilisateur anonyme ne peut pas voir ces informations par défaut. Connectez-vous en tant qu’administrateur, par exemple, pour les voir.</p> </td>
+   <td><p>Afficher les autorisations en fonction du chemin d’accès, du niveau du référentiel ou de l’entité de sécurité actuelle.</p> <p>Les autorisations sont divisées en</p> <p>- <strong>Stratégie de contrôle d’accès applicable</strong>: stratégies pouvant être appliquées à la sélection en cours.</p> <p>- <strong>Stratégies de contrôle d’accès locales</strong>: stratégies actuelles appliquées localement à la sélection en cours.</p> <p>- <strong>Stratégies de contrôle d’accès efficaces</strong>: les stratégies actuelles appliquées à la sélection actuelle peuvent être définies localement ou héritées des noeuds parents.</p> <p>Remarque. Pour pouvoir voir les informations de contrôle d’accès, l’utilisateur connecté à CRXDE Lite doit avoir le droit de lire les entrées ACL. L’utilisateur anonyme ne peut pas voir ces informations par défaut. Connectez-vous en tant qu’administrateur, par exemple, pour les voir.</p> </td>
   </tr>
   <tr>
    <td>Onglet Réplication</td>
@@ -101,11 +101,11 @@ CRXDE Lite offre les fonctionnalités suivantes :
   </tr>
   <tr>
    <td>Enregistrer tout</td>
-   <td><p><strong>Enregistrer tout</strong>:<br /> </p> <p>Enregistre tous les changements que vous avez apportés. Tant que vous n’avez pas cliqué sur Enregistrer, les modifications sont temporaires et seront perdues lorsque vous quitterez la console.</p> <p><strong>Rétablir</strong> :</p> <p>Ignore toutes les modifications que vous avez apportées au noeud sélectionné depuis la dernière action d’enregistrement, puis recharge l’état actuel du référentiel pour le noeud sélectionné.</p> <p><strong>Tout rétablir</strong>:</p> <p>Ignore toutes les modifications que vous avez apportées à l’ensemble du référentiel depuis la dernière action d’enregistrement, puis recharge l’état actuel du référentiel.</p> </td>
+   <td><p><strong>Enregistrer tout</strong>:<br /> </p> <p>Enregistre tous les changements que vous avez apportés. Tant que vous n’avez pas cliqué sur Enregistrer, les modifications sont temporaires et seront perdues lorsque vous quitterez la console.</p> <p><strong>Rétablir</strong> :</p> <p>Ignore toutes les modifications que vous avez apportées au noeud sélectionné depuis la dernière action d’enregistrement, puis recharge l’état actuel du référentiel pour le noeud sélectionné.</p> <p><strong>Tout rétablir</strong>:</p> <p>Ignore toutes les modifications que vous avez apportées dans tout le référentiel depuis la dernière action d’enregistrement, puis recharge l’état actuel du référentiel.</p> </td>
   </tr>
   <tr>
    <td>Créer ...<br /> </td>
-   <td><p>Menu déroulant permettant de créer les éléments suivants sous le noeud sélectionné :<br /> </p> <p>- <strong>Noeud</strong>: un noeud avec un type de noeud arbitraire ;<br /> </p> <p>- <strong>Fichier</strong> : nœud nt:file et son sous-nœud nt:resource</p> <p>- <strong>Dossier</strong>: nt:folder node</p> <p>- <strong>Modèle</strong>: Modèle AEM</p> <p>- <strong>Composant</strong>: Composant AEM</p> <p>- <strong>Boîte de dialogue</strong>: Boîte de dialogue AEM</p> </td>
+   <td><p>Menu déroulant permettant de créer les éléments suivants sous le noeud sélectionné :<br /> </p> <p>- <strong>Noeud</strong>: un noeud avec un type de noeud arbitraire<br /> </p> <p>- <strong>Fichier</strong> : nœud nt:file et son sous-nœud nt:resource</p> <p>- <strong>Dossier</strong>: noeud nt:folder</p> <p>- <strong>Modèle</strong>: modèle AEM</p> <p>- <strong>Composant</strong>: composant AEM</p> <p>- <strong>Boîte de dialogue</strong>: boîte de dialogue AEM</p> </td>
   </tr>
   <tr>
    <td>Supprimer<br /> </td>
@@ -129,11 +129,11 @@ CRXDE Lite offre les fonctionnalités suivantes :
   </tr>
   <tr>
    <td>Mixins ...<br /> </td>
-   <td>Permet d’ajouter des types mixin au type de nœud. Les types de mixin sont principalement utilisés pour ajouter des fonctionnalités avancées telles que le contrôle de version, le contrôle d’accès, le référencement et le verrouillage au noeud.</td>
+   <td>Permet d’ajouter des types de mixin au type de noeud. Les types de mixin sont principalement utilisés pour ajouter des fonctionnalités avancées telles que le contrôle de version, le contrôle d’accès, le référencement et le verrouillage au noeud.</td>
   </tr>
   <tr>
    <td>Outils<br /> </td>
-   <td><p>Menu déroulant avec les outils suivants :</p> <p>- <strong>Configuration du serveur ...</strong>: pour accéder à la console Felix.</p> <p>- <strong>Requête ...</strong>: pour interroger le référentiel.</p> <p>- <strong>Privilèges ...</strong>: pour ouvrir la gestion des privilèges, où vous pouvez afficher et ajouter des privilèges.</p> <p>- <strong>Tester le contrôle d’accès ...</strong>: un emplacement où vous pouvez tester l’autorisation pour un chemin et/ou une entité.</p> <p>- <strong>Exporter le type de noeud</strong>: pour exporter les types de noeud dans le système en tant que notation cnd.</p> <p>- <strong>Importer le type de noeud...</strong>: pour importer des types de noeuds à l’aide de la notation cnd.</p> <p>- <strong>Installer SiteCatalyst Debugger...</strong>: instructions sur l’installation d’Analytics Debugger.</p> </td>
+   <td><p>Menu déroulant avec les outils suivants :</p> <p>- <strong>Configuration du serveur ...</strong>: pour accéder à la console Felix.</p> <p>- <strong>Requête ...</strong>: pour interroger le référentiel.</p> <p>- <strong>Privilèges ...</strong>: pour ouvrir la gestion des privilèges, où vous pouvez afficher et ajouter des privilèges.</p> <p>- <strong>Tester le contrôle d’accès ...</strong>: emplacement où vous pouvez tester l’autorisation pour un certain chemin et/ou une entité principale.</p> <p>- <strong>Exporter le type de noeud</strong>: pour exporter les types de noeuds dans le système en tant que notation cnd.</p> <p>- <strong>Importer le type de noeud...</strong>: pour importer des types de noeuds à l’aide de la notation cnd.</p> <p>- <strong>Installer SiteCatalyst Debugger...</strong>: instructions pour l’installation d’Analytics Debugger.</p> </td>
   </tr>
   <tr>
    <td>Widget de connexion<br /> </td>
@@ -176,7 +176,7 @@ Il crée les éléments suivants :
 
 * un nœud enfant de type `cq:PageContent` avec les propriétés de contenu de page.
 
-Vous pouvez ajouter des propriétés à votre modèle : reportez-vous à la section [Création d’une propriété](#creating-a-property) .
+Vous pouvez ajouter des propriétés à votre modèle : voir [Création d’une propriété](#creating-a-property) .
 
 ## Création d’un composant {#creating-a-component}
 
@@ -254,7 +254,7 @@ Pour créer une propriété avec CRXDE Lite :
 Pour créer un script :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
-1. Dans le volet de navigation, cliquez avec le bouton droit de la souris sur le composant dans lequel vous souhaitez créer le script, puis sélectionnez **Créer ...**, puis **Créer un fichier ...**.
+1. Dans le volet de navigation, cliquez avec le bouton droit sur le composant dans lequel vous souhaitez créer le script, puis sélectionnez **Créer ...**, puis **Créer un fichier ...**.
 
 1. Entrez le **nom** du fichier, y compris son extension. Cliquez sur **OK**.
 
@@ -295,7 +295,7 @@ CRXDE Lite permet d’afficher le fichier `error.log` qui se trouve sur le syst
 Vous pouvez :
 
 * Ajuster les paramètres du journal dans la console Felix en cliquant sur l’icône **Configurations de journalisation**.
-* Effacez les messages en cliquant sur le bouton **Pinceau** icône .
+* Effacez les messages en cliquant sur le bouton **Pinceau** Icône
 * Épingler le message à la sélection en cours en cliquant sur l’icône **Épingler**.
 * Activer ou désactiver l’affichage des messages en cliquant sur l’icône **Stop**.
 

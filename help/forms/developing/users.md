@@ -1,7 +1,7 @@
 ---
 title: Gestion des utilisateurs
 seo-title: Managing Users
-description: Utilisez l’API User Management pour créer des applications clientes capables de gérer les rôles, les autorisations et les entités (qui peuvent être des utilisateurs ou des groupes), ainsi que d’authentifier les utilisateurs.
+description: Utilisez l’API User Management pour créer des applications clientes capables de gérer les rôles, les autorisations et les principaux (qui peuvent être des utilisateurs ou des groupes), ainsi que d’authentifier les utilisateurs.
 seo-description: Use the User Management API to create client applications that can manage roles, permissions, and principals (which can be users or groups), as well as authenticate users.
 uuid: 68d8a0bc-6e3d-4286-ba5c-534dcf58cb84
 contentOwner: admin
@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
-workflow-type: ht
-source-wordcount: '6228'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '6226'
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 **À propos de User Management**
 
-Vous pouvez utiliser l’API User Management pour créer des applications clientes qui peuvent gérer des rôles, des autorisations et des entités (qui peuvent être des utilisateurs ou des groupes), mais aussi authentifier des utilisateurs. L’API User Management se compose des API AEM Forms suivantes :
+Vous pouvez utiliser l’API User Management pour créer des applications clientes qui peuvent gérer des rôles, des autorisations et des principaux (qui peuvent être des utilisateurs ou des groupes), mais aussi authentifier des utilisateurs. L’API User Management se compose des API AEM Forms suivantes :
 
 * API du service Directory Manager
 * API du service Authentication Manager
@@ -85,7 +85,7 @@ Le tableau suivant décrit chaque étape du processus d’authentification.
 
 >[!NOTE]
 >
->Si le fuseau horaire du serveur est différent du fuseau horaire du client, lors de l’utilisation du WSDL pour le service AEM Forms Generate PDF sur une pile SOAP native à l’aide d’un client .NET sur une grappe WebSphere Application Server, l’erreur d’authentification User Management suivante peut se produire :
+>Si le fuseau horaire du serveur est différent du fuseau horaire du client, lors de l’utilisation du WSDL pour le service AEM Forms Generate PDF sur une pile SOAP native à l’aide d’un client .NET sur un cluster WebSphere Application Server, l’erreur d’authentification User Management suivante peut se produire :
 
 `[com.adobe.idp.um.webservices.WSSecurityHandler] errorCode:12803 errorCodeHEX:0x3203 message:WSSecurityHandler: UM authenticate returns exception : An error was discovered processing the <wsse:Security> header. (WSSecurityEngine: Invalid timestamp The security semantics of message have expired).`
 
@@ -135,7 +135,7 @@ Lorsque vous ajoutez un nouvel utilisateur à l’aide de l’API Directory Man
 
 * **Nom de domaine** : domaine auquel appartient l’utilisateur (par exemple, `DefaultDom`).
 * **Valeur d’identificateur de lʼutilisateur** : valeur de l’identifiant de l’utilisateur (par exemple, `wblue`).
-* **Type dʼentité** : type d’utilisateur (par exemple, vous pouvez spécifier `USER)`.
+* **Type de principal** : type d’utilisateur (par exemple, vous pouvez spécifier `USER)`.
 * **Prénom** : prénom de l’utilisateur (par exemple, `Wendy`).
 * **Nom de famille** : nom de famille de l’utilisateur (par exemple, `Blue)`.
 * **Paramètres régionaux** : informations sur les paramètres régionaux de l’utilisateur.
@@ -176,7 +176,7 @@ Pour ajouter des utilisateurs à l’aide de l’API Directory Manager Service
 
    * Créez un objet `UserImpl` en utilisant son constructeur.
    * Définissez le nom de domaine en appelant la méthode `setDomainName` de l’objet `UserImpl`. Transmettez une valeur de chaîne qui spécifie le nom de domaine.
-   * Définissez le type d’entité en appelant la méthode `setPrincipalType` de l’objet `UserImpl`. Transmettez une valeur de chaîne qui spécifie le type d’utilisateur. Par exemple, vous pouvez spécifier la variable `USER`.
+   * Définissez le type de principal en appelant la méthode `setPrincipalType` de l’objet `UserImpl`. Transmettez une valeur de chaîne qui spécifie le type d’utilisateur. Par exemple, vous pouvez spécifier la variable `USER`.
    * Définissez la valeur de l’identifiant utilisateur en appelant la méthode `setUserid` de l’objet `UserImpl`. Transmettez une valeur de chaîne qui spécifie la valeur de l’identifiant utilisateur. Par exemple, vous pouvez spécifier la variable `wblue`.
    * Définissez le nom canonique en appelant la méthode `setCanonicalName` de l’objet `UserImpl`. Transmettez une valeur de chaîne qui spécifie le nom canonique de l’utilisateur. Par exemple, vous pouvez spécifier la variable `wblue`.
    * Définissez le nom donné en appelant la fonction méthode `setGivenName` de l’objet `UserImpl`. Transmettez une valeur de chaîne qui spécifie le prénom de l’utilisateur. Par exemple, vous pouvez spécifier la variable `Wendy`.
@@ -240,7 +240,7 @@ Ajoutez des utilisateurs à l’aide de l’API du service Directory Manager (se
 
    * Créez un objet `UserImpl` en utilisant son constructeur.
    * Définissez le nom du domaine en attribuant une valeur de chaîne au champ `domainName` de lʼobjet `UserImpl`.
-   * Définissez le type dʼentité en attribuant une valeur de chaîne au champ `principalType` de lʼobjet `UserImpl`. Par exemple, vous pouvez spécifier `USER`.
+   * Définissez le type de principal en attribuant une valeur de chaîne au champ `principalType` de lʼobjet `UserImpl`. Par exemple, vous pouvez spécifier `USER`.
    * Définissez la valeur de l’identifiant dʼutilisateur en attribuant une valeur de chaîne au champ `userid` de lʼobjet `UserImpl`.
    * Définissez la valeur du nom canonique en attribuant une valeur de chaîne au champ `canonicalName` de lʼobjet `UserImpl`.
    * Définissez la valeur du prénom en attribuant une valeur de chaîne au champ `givenName` de lʼobjet `UserImpl`.
@@ -416,7 +416,7 @@ Avant d’effectuer une opération de service Directory Manager par programmatio
 
 **Déterminer si le groupe existe déjà**
 
-Lorsque vous créez un groupe, assurez-vous qu’il n’existe pas déjà dans le même domaine. En d’autres termes, deux groupes dans le même domaine ne peuvent pas porter le même nom. Pour ce faire, effectuez une recherche et filtrez ses résultats en fonction de deux valeurs. Définissez le type d’entité sur `com.adobe.idp.um.api.infomodel.Principal.PRINCIPALTYPE_GROUP` pour vous assurer que seuls les groupes sont renvoyés. Veillez également à spécifier le nom du domaine.
+Lorsque vous créez un groupe, assurez-vous qu’il n’existe pas déjà dans le même domaine. En d’autres termes, deux groupes dans le même domaine ne peuvent pas porter le même nom. Pour ce faire, effectuez une recherche et filtrez ses résultats en fonction de deux valeurs. Définissez le type de principal sur `com.adobe.idp.um.api.infomodel.Principal.PRINCIPALTYPE_GROUP` pour vous assurer que seuls les groupes sont renvoyés. Veillez également à spécifier le nom du domaine.
 
 **Créer le groupe**
 
@@ -457,9 +457,9 @@ Créez un groupe à l’aide de l’API Directory Manager Service (Java) :
 1. Déterminez si le groupe existe.
 
    * Créez un objet `PrincipalSearchFilter` en utilisant son constructeur.
-   * Définissez le type d’entité en appelant l’objet `setPrincipalType` de `PrincipalSearchFilter`. Transmettez la valeur `com.adobe.idp.um.api.infomodel.Principal.PRINCIPALTYPE_GROUP`.
+   * Définissez le type de principal en appelant l’objet `setPrincipalType` de `PrincipalSearchFilter`. Transmettez la valeur `com.adobe.idp.um.api.infomodel.Principal.PRINCIPALTYPE_GROUP`.
    * Définissez le domaine en appelant l’objet `setSpecificDomainName` de `PrincipalSearchFilter`. Transmettez une valeur de chaîne qui spécifie le nom de domaine.
-   * Pour rechercher un groupe, appelez la méthode `findPrincipals` de l’objet `DirectoryManagerServiceClient` (une entité peut être un groupe). Transmettez l’objet `PrincipalSearchFilter`, qui indique le type d’entité et le nom de domaine. Cette méthode renvoie une instance `java.util.List`, où chaque élément est une instance `Group`. Chaque instance de groupe est conforme au filtre spécifié à l’aide de l’objet `PrincipalSearchFilter`.
+   * Pour rechercher un groupe, appelez la méthode `findPrincipals` de l’objet `DirectoryManagerServiceClient` (un principal peut être un groupe). Transmettez l’objet `PrincipalSearchFilter`, qui indique le type de principal et le nom de domaine. Cette méthode renvoie une instance `java.util.List`, où chaque élément est une instance `Group`. Chaque instance de groupe est conforme au filtre spécifié à l’aide de l’objet `PrincipalSearchFilter`.
    * Effectuez une itération au sein de l’instance `java.util.List`. Pour chaque élément, récupérez le nom du groupe. Assurez-vous que le nom du groupe est différent du nouveau nom de groupe.
 
 1. Créez le groupe.
@@ -519,7 +519,7 @@ Avant d’effectuer une opération de service Directory Manager par programmatio
 
 **Appeler les opérations d’utilisateur ou de groupe appropriées**
 
-Une fois le client de service créé, vous pouvez appeler les opérations de gestion des utilisateurs ou des groupes. Le client de service vous permet d’affecter, de supprimer et de demander des domaines, des utilisateurs et des groupes. Notez qu’il est possible d’ajouter une entité de répertoire ou une entité locale à un groupe local, mais qu’il n’est pas possible d’ajouter une entité locale à un groupe de répertoires.
+Une fois le client de service créé, vous pouvez appeler les opérations de gestion des utilisateurs ou des groupes. Le client de service vous permet d’affecter, de supprimer et de demander des domaines, des utilisateurs et des groupes. Notez qu’il est possible d’ajouter un principal de répertoire ou un principal local à un groupe local, mais qu’il n’est pas possible d’ajouter un principal local à un groupe de répertoires.
 
 **Voir également**
 
@@ -547,11 +547,11 @@ Pour gérer par programmation les utilisateurs, les groupes et les domaines à l
 
 1. Appelez les opérations d’utilisateur ou de groupe appropriées.
 
-   Pour rechercher un utilisateur ou un groupe, appelez l’une des méthodes `DirectoryManagerServiceClient` d’objet de recherche des entités (puisqu’une entité peut être un utilisateur ou un groupe). Dans l’exemple ci-dessous, la méthode `findPrincipals` est appelée à l’aide d’un filtre de recherche (un objet `PrincipalSearchFilter`).
+   Pour rechercher un utilisateur ou un groupe, appelez l’une des méthodes `DirectoryManagerServiceClient` d’objet de recherche des principaux (puisqu’une entité peut être un utilisateur ou un groupe). Dans l’exemple ci-dessous, la méthode `findPrincipals` est appelée à l’aide d’un filtre de recherche (un objet `PrincipalSearchFilter`).
 
    Puisque la valeur renvoyée est une `java.util.List` contenant des objets `Principal`, itérez à travers le résultat et convertissez les objets `Principal` en des objets `User` ou `Group`.
 
-   En vous servant de la résultante `User` ou de l’objet `Group` (qui héritent toutes deux de l’interface `Principal`), récupérez les informations dont vous avez besoin dans vos workflows. Par exemple, les valeurs de nom de domaine et de nom canonique, combinées, identifient de manière unique une entité. Ils sont récupérés en appelant la méthode `Principal` respectives des objets `getDomainName` et `getCanonicalName`.
+   En vous servant de la résultante `User` ou de l’objet `Group` (qui héritent toutes deux de l’interface `Principal`), récupérez les informations dont vous avez besoin dans vos workflows. Par exemple, les valeurs de nom de domaine et de nom canonique, combinées, identifient de manière unique un principal. Ils sont récupérés en appelant la méthode `Principal` respectives des objets `getDomainName` et `getCanonicalName`.
 
    Pour supprimer un utilisateur local, appelez la méthode `DirectoryManagerServiceClient` de l’objet `deleteLocalUser` et transmettez l’identifiant de l’utilisateur.
 
@@ -580,7 +580,7 @@ Pour gérer les utilisateurs, groupes et domaines par programme à l’aide de l
 
 1. Appelez les opérations d’utilisateur ou de groupe appropriées.
 
-   Pour rechercher un utilisateur ou un groupe, appelez l’une des méthodes de recherche d’entités de l’objet `DirectoryManagerServiceService` (une entité peut en effet être un utilisateur ou un groupe). Dans l’exemple ci-dessous, la méthode `findPrincipalsWithFilter` est appelée à l’aide d’un filtre de recherche (un objet `PrincipalSearchFilter`). Lors de l’utilisation d’un objet `PrincipalSearchFilter`, les entités locales ne sont renvoyées que si la propriété `isLocal` est définie sur `true`. Ce comportement est différent de ce qui se produirait avec l’API Java.
+   Pour rechercher un utilisateur ou un groupe, appelez l’une des méthodes `DirectoryManagerServiceService` d’objet de recherche des principaux (puisqu’une entité peut être un utilisateur ou un groupe). Dans l’exemple ci-dessous, la méthode `findPrincipalsWithFilter` est appelée à l’aide d’un filtre de recherche (un objet `PrincipalSearchFilter`). Lors de l’utilisation d’un objet `PrincipalSearchFilter`, les principaux locaux ne sont renvoyés que si la propriété `isLocal` est définie sur `true`. Ce comportement est différent de ce qui se produirait avec l’API Java.
 
    >[!NOTE]
    >
@@ -588,7 +588,7 @@ Pour gérer les utilisateurs, groupes et domaines par programme à l’aide de l
 
    Étant donné que dans ce cas, la valeur renvoyée est une valeur `object[]` contenant des objets `Principal`, effectuez une itération sur le résultat et convertissez les objets `Principal` en objets `User` ou `Group`.
 
-   En utilisant l’objet `User` ou `Group` obtenu (qui héritent tous deux de l’interface `Principal`), récupérez les informations dont vous avez besoin dans vos workflows. Par exemple, les valeurs de nom de domaine et de nom canonique, combinées, identifient de manière unique une entité. Elles sont récupérées en appelant les champs `domainName` et `canonicalName` de l’objet `Principal`, respectivement.
+   En utilisant l’objet `User` ou `Group` obtenu (qui héritent tous deux de l’interface `Principal`), récupérez les informations dont vous avez besoin dans vos workflows. Par exemple, les valeurs de nom de domaine et de nom canonique, combinées, identifient de manière unique un principal. Elles sont récupérées en appelant les champs `domainName` et `canonicalName` de l’objet `Principal`, respectivement.
 
    Pour supprimer un utilisateur local, appelez la méthode `deleteLocalUser` de l’objet `DirectoryManagerServiceService` et transmettez l’identifiant de l’utilisateur.
 
@@ -666,7 +666,6 @@ Pour gérer les rôles et les autorisations à l’aide de l’API Authorization
    * Un objet `java.lang.String` contenant l’identifiant du rôle.
    * Un tableau d’objets `java.lang.String` contenant les identifiants des principaux.
 
-
 **Voir également**
 
 [Résumé des étapes](users.md#summary-of-steps)
@@ -707,13 +706,12 @@ Gérez les rôles et les autorisations à l’aide de l’API Authorization Mana
    Pour attribuer un rôle à un principal, appelez la méthode `assignRole` de l’objet `AuthorizationManagerServiceClient` et transmettez les valeurs suivantes :
 
    * Objet `string` contenant l’identifiant de rôle
-   * Objet `MyArrayOf_xsd_string` contenant les identifiants des entités.
+   * Objet `MyArrayOf_xsd_string` contenant les identifiants des principaux.
 
    Pour supprimer un rôle d’un principal, appelez la méthode `unassignRole` de l’objet `AuthorizationManagerServiceService` et transmettez les valeurs suivantes :
 
    * Un objet `string` contenant l’identifiant du rôle.
    * Un tableau d’objets `string` contenant les identifiants des principaux.
-
 
 **Voir également**
 

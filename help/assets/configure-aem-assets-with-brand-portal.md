@@ -13,10 +13,10 @@ feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
-source-git-commit: 14988b55c21131391fdcb033373774ee170f5305
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2124'
-ht-degree: 97%
+source-wordcount: '2123'
+ht-degree: 96%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 97%
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
-Adobe Experience Manager Assets Brand Portal permet de publier des ressources de marque approuvées d’Adobe Experience Manager Assets vers Brand Portal et de les distribuer aux utilisateurs de Brand Portal.
+Adobe Experience Manager Assets Brand Portal vous permet de publier des ressources de marque approuvées de Adobe Experience Manager Assets sur Brand Portal et de les distribuer aux utilisateurs de Brand Portal.
 
 AEM Assets est configuré avec Brand Portal via la console Adobe Developer, qui fournit un jeton de compte Adobe Identity Management Services (IMS) pour l’autorisation du client Brand Portal.
 

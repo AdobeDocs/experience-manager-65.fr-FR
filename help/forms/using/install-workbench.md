@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 18cfefb794382b5314b18a62645f1fba28d314a2
-workflow-type: ht
-source-wordcount: '2232'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '2231'
+ht-degree: 99%
 
 ---
 
@@ -121,7 +121,7 @@ Différentes versions de Designer peuvent coexister sur le même système (par e
   </tr>
   <tr>
    <td><p>Designer (autonome)</p> </td>
-   <td><p>Aucune. <br />La version de Designer incluse avec Workbench est en anglais uniquement. <br />Le programme d’installation de Workbench ne réinstallera pas une nouvelle version de Designer. À la place, une version mise à jour, fournie avec le programme d’installation de Workbench, est corrigée. Cela vous permet également d’utiliser votre version traduite de Designer dans Workbench.<br /> </p> </td>
+   <td><p>Aucune. <br />La version de Designer incluse avec Workbench est en anglais uniquement. <br />Le programme d’installation de Workbench ne réinstallera pas une nouvelle version de Designer. À la place, une version mise à jour, fournie avec le programme d’installation de Workbench, est corrigée. Vous pouvez ainsi utiliser votre version localisée de Designer dans Workbench.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -159,12 +159,14 @@ Avant d’installer Workbench, vérifiez que votre environnement inclut les logi
 1. (Facultatif) Sélectionnez Installer Adobe Designer si vous avez besoin de cet outil pour créer et modifier des formulaires.
 
    >[!NOTE]
-   >Vous pouvez continuer à utiliser Designer installé avec Acrobat 10 en laissant cette option désactivée.
+   >
+   Vous pouvez continuer à utiliser Designer installé avec Acrobat 10 en laissant cette option désactivée.
 
 1. Acceptez le répertoire par défaut proposé comme indiqué ou cliquez sur Choisir et accédez au répertoire dans lequel vous désirez installer Workbench, puis cliquez sur Suivant.
 
    >[!NOTE]
-   >Le chemin d’accès du répertoire d’installation ne doit pas contenir les caractères # (livre) et $ (dollar).
+   >
+   Le chemin d’accès du répertoire d’installation ne doit pas contenir les caractères # (livre) et $ (dollar).
 
 1. Vérifiez le compte-rendu de préinstallation, puis cliquez sur Installer. Le programme d’installation affiche la progression de l’installation.
 1. Vérifiez le récapitulatif de l’installation. Sélectionnez Démarrer AEM Forms Workbench pour lancer Workbench, puis cliquez sur Suivant.
@@ -183,7 +185,8 @@ Les processus AEM Forms sur JEE peuvent être mis à niveau vers les applicati
 Pour utiliser Workbench, vous devez disposer d’une instance AEM Forms en cours d’exécution, généralement sur un ordinateur distinct. Vous devez disposer d’un nom d’utilisateur et d’un mot de passe pour vous connecter à AEM Forms, ainsi que des détails concernant l’emplacement du serveur.
 
 >[!NOTE]
->Si vous avez configuré AEM Forms pour utiliser le fournisseur de référentiels EMC Documentum® ou IBM® FileNet et que vous voulez vous connecter à un référentiel autre que le référentiel configuré par défaut dans la console d’administration d’AEM Forms, indiquez le nom d’utilisateur au format nom_utilisateur@Repository.
+>
+Si vous avez configuré AEM Forms pour utiliser le fournisseur de référentiels EMC Documentum® ou IBM® FileNet et que vous voulez vous connecter à un référentiel autre que le référentiel configuré par défaut dans la console d’administration d’AEM Forms, indiquez le nom d’utilisateur au format nom_utilisateur@Repository.
 
 ### Configurer les paramètres de délai d’expiration {#configuring-timeout-settings}
 
@@ -194,7 +197,8 @@ Par défaut, Workbench arrive à expiration après deux heures, peu importe l’
 Pour connecter Workbench au serveur AEM Forms via HTTPS, assurez-vous que l’autorité de certification (CA) émettrice de la clé publique sera identifiée comme approuvée par Workbench. Si le certificat n’est pas reconnu comme provenant d’une source approuvée, vous devez mettre à jour le fichier cacert situé dans le répertoire [Workbench_EMPLACEMENT]/workbench/jre/lib/security.
 
 >[!NOTE]
->[Workbench_EMPLACEMENT] représente le répertoire où vous avez installé Workbench. L’emplacement par défaut est C:\Program Files (x86)\Adobe Experience Manager Forms Workbench.
+>
+[Workbench_EMPLACEMENT] représente le répertoire où vous avez installé Workbench. L’emplacement par défaut est C:\Program Files (x86)\Adobe Experience Manager Forms Workbench.
 
 Assurez-vous de vous connecter à HTTPS en utilisant le nom spécifié dans le certificat. Ce nom est généralement le nom d’hôte complet.
 
@@ -202,7 +206,8 @@ Assurez-vous de vous connecter à HTTPS en utilisant le nom spécifié dans le c
 1. Assurez-vous que vous disposez d’une copie du certificat SSL (Secure Sockets Layer). Contactez l’administrateur ou l’administratrice qui a configuré le serveur SSL ou exportez le certificat à l’aide d’un navigateur web.
 
    >[!NOTE]
-   >Pour exporter le certificat, ouvrez un navigateur web et connectez-vous à la console d’administration, installez le certificat dans le navigateur, puis exportez-le du navigateur vers un emplacement de stockage temporaire (ou directement dans le répertoire [Workbench_EMPLACEMENT]/workbench/jre/lib/security).
+   >
+   Pour exporter le certificat, ouvrez un navigateur web et connectez-vous à la console d’administration, installez le certificat dans le navigateur, puis exportez-le du navigateur vers un emplacement de stockage temporaire (ou directement dans le répertoire [Workbench_EMPLACEMENT]/workbench/jre/lib/security).
 
 1. Copiez le certificat dans le répertoire [Workbench_EMPLACEMENT]/workbench/jre/lib/security.
 
@@ -227,8 +232,8 @@ Lorsque le générateur ou la sortie de formulaires recherche ou met à jour les
 * **Horodatage** : le fichier modèle contient un horodatage utilisé pour déterminer l’heure de la dernière mise à jour du formulaire.
 * **UUID modèle** : Designer insère dans chaque modèle un identifiant unique (UUID) pour le formulaire et sa version. Chaque fois que le formulaire est mis à jour, l’UUID intégré est mis à jour. Par exemple, un modèle XDP peut afficher le contenu suivant :
 
-   `<?xml version="1.0" encoding="UTF-8"?>`
-   `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=https://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="https://www.xfa.org/schema/xfa-template/2.6/">`
+  `<?xml version="1.0" encoding="UTF-8"?>`
+  `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=https://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="https://www.xfa.org/schema/xfa-template/2.6/">`
 
 * **Options de rendu** : dans le cache de formulaire rendu, le contenu du cache est stocké séparément pour chaque ensemble d’options de rendu uniques.
 
@@ -260,7 +265,7 @@ Utilisez l’outil d’ajout ou de suppression de programmes du Panneau de confi
 
 Avec XDC Editor, les administrateurs et administratrices d’imprimantes réseau peuvent créer et modifier des fichiers XDC (XML Forms Architecture Device Configuration). Les fichiers XDC décrivent les fonctionnalités des imprimantes, telles que le langage d’imprimante ou la corrélation entre le format de papier et l’emplacement du bac.
 
-Pour que votre administrateur d’imprimantes réseau utilise XDC Editor, déplacez les fichiers XDC échantillons et reportez-vous à la section Création de profils de périphériques à l’aide de XDC Editor.
+Pour que votre administrateur d’imprimantes réseau utilise XDC Editor, déplacez les fichiers XDC échantillons et reportez-vous à la section Création de profils d’appareils à l’aide de XDC Editor.
 
 **Pour obtenir les fichiers XDC échantillons, procédez comme suit** :
 1. Sur le serveur d’AEM Forms, localisez le dossier XDC dans [répertoire racine d’AEM Forms]\sdk\samples\Output\IVS.
@@ -268,4 +273,4 @@ Pour que votre administrateur d’imprimantes réseau utilise XDC Editor, dépla
 
 **Pour accéder à l’aide de XDC Editor, procédez comme suit** :
 1. Visitez le site web de documentation d’AEM Forms.
-1. Cliquez sur l’onglet **Développer** et accédez à Création de profils de périphériques à l’aide de XDC Editor. Téléchargez le fichier xdc_editor_help_web.zip et installez les fichiers d’aide en suivant les instructions fournies dans le fichier Lisez-moi.
+1. Cliquez sur l’onglet **Développer** et accédez à Création de profils d’appareils à l’aide de XDC Editor. Téléchargez le fichier xdc_editor_help_web.zip et installez les fichiers d’aide en suivant les instructions fournies dans le fichier Lisez-moi.

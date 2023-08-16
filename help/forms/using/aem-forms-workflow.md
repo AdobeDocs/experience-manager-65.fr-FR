@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3682'
-ht-degree: 59%
+source-wordcount: '3681'
+ht-degree: 58%
 
 ---
 
@@ -42,14 +42,14 @@ Le diagramme suivant illustre le processus complet de création, d’exécution 
 
 ## Avant de commencer {#before-you-start}
 
-* Un workflow est une représentation d’un processus d’entreprise réel. Préparez votre processus d’entreprise réel et la liste des participants au processus d’entreprise. Par ailleurs, préparez le document (formulaires adaptatifs, documents de PDF, etc.) avant de commencer à créer un processus.
+* Un workflow est une représentation d’un processus d’entreprise réel. Préparez votre processus d’entreprise réel et la liste des participants au processus d’entreprise. Par ailleurs, préparez le document (formulaires adaptatifs, documents de PDF, etc.) avant de commencer la création d’un processus.
 * Un workflow peut comporter plusieurs étapes. Ces étapes sont affichées dans la boîte de réception AEM et permettent de signaler la progression du workflow. Divisez votre processus d’entreprise en étapes logiques.
-* Vous pouvez configurer l’étape Affecter une tâche de AEM Workflows pour envoyer des notifications par e-mail aux utilisateurs ou aux personnes désignées. Donc, [activer les notifications par e-mail ;](#configure-email-service).
+* Vous pouvez configurer l’étape Affecter une tâche de AEM Workflows pour envoyer des notifications par e-mail aux utilisateurs ou aux personnes désignées. Donc, [activer les notifications par e-mail](#configure-email-service).
 * Un workflow peut également utiliser Adobe Sign pour les signatures numériques. Si vous envisagez d’utiliser Adobe Sign dans un processus, [configure Adobe Sign pour AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md) avant de l’utiliser dans un processus.
 
 ## Créer un modèle de processus {#create-a-workflow-model}
 
-Un modèle de workflow est constitué de la logique et du flux d’un processus d’entreprise. Il est composé d&#39;une série d&#39;étapes. Ces étapes sont des composants AEM. Vous pouvez étendre les étapes de workflow avec des paramètres et des scripts pour proposer davantage de fonctionnalités et de contrôle, selon les besoins. AEM Forms fournit quelques étapes en plus de AEM étapes prêtes à l’emploi. Pour obtenir la liste détaillée des étapes AEM et AEM Forms, voir [Référence AEM étape de processus](/help/sites-developing/workflows-step-ref.md) et [Processus basé sur l’utilisation de Forms sur OSGi - Référence des étapes](../../forms/using/aem-forms-workflow.md).
+Un modèle de workflow est constitué de la logique et du flux d’un processus d’entreprise. Il est composé d&#39;une série d&#39;étapes. Ces étapes sont des composants AEM. Vous pouvez étendre les étapes de workflow avec des paramètres et des scripts pour proposer davantage de fonctionnalités et de contrôle, selon les besoins. AEM Forms fournit quelques étapes en plus de AEM étapes prêtes à l’emploi. Pour obtenir la liste détaillée des étapes d’AEM et d’AEM Forms, voir [Référence AEM étape de processus](/help/sites-developing/workflows-step-ref.md) et [Processus basé sur l’utilisation de Forms sur OSGi - Référence des étapes](../../forms/using/aem-forms-workflow.md).
 
 AEM fournit une interface utilisateur intuitive pour créer un modèle de workflow à l’aide des étapes de workflow fournies. Pour obtenir des instructions détaillées sur la création d’un modèle de processus, voir [Création de modèles de processus](/help/sites-developing/workflows-models.md). L’exemple suivant fournit des instructions étape par étape pour créer un modèle de processus pour un processus d’approbation et de révision :
 
@@ -72,7 +72,7 @@ L’exemple crée un modèle de workflow dans lequel une demande de prêt immobi
 1. Saisissez **Titre** et **Nom** (facultatif). par exemple, une demande de prêt immobilier. Appuyez sur **Terminé**.
 1. Sélectionnez le processus nouvellement créé et appuyez sur **Modifier**. Désormais, vous pouvez ajouter des étapes de processus pour créer une logique d’entreprise. Lorsque vous créez un modèle de processus pour la première fois, il contient :
 
-   * Les étapes : Début de flux et Fin de flux. Ces étapes représentent le début et la fin du workflow. Ces étapes sont requises et ne peuvent pas être modifiées ni supprimées.
+   * Les étapes : Début du flux et Fin du flux. Ces étapes représentent le début et la fin du workflow. Ces étapes sont requises et ne peuvent pas être modifiées ni supprimées.
    * Un exemple d’étape Participant, dont le nom est Étape 1. Cette étape est configurée pour affecter un élément de travail à l’utilisateur administrateur. Supprimez cette étape.
 
 1. Activez les notifications électroniques. Vous pouvez configurer le processus basé sur l’utilisation de Forms sur OSGi pour qu’il envoie des notifications électroniques aux utilisateurs ou personnes désignées. Effectuez les configurations suivantes pour activer les notifications électroniques :
@@ -205,7 +205,7 @@ La demande de processus que vous avez créée est disponible en tant qu’applic
 
 ### Envoyant une demande depuis l’application AEM Forms {#afa}
 
-L’application AEM Forms se synchronise avec un serveur AEM Forms et vous permet de modifier les données de formulaire, les tâches, les demandes de processus et les informations enregistrées (brouillons/modèles) dans votre compte. Pour plus d’informations, consultez [Application AEM Forms](/help/forms/using/aem-forms-app.md) et les articles connexes.
+L’application AEM Forms se synchronise avec un serveur AEM Forms et vous permet d’apporter des modifications aux données de formulaire, aux tâches, aux applications de workflow et aux informations enregistrées (brouillons/modèles) dans votre compte. Pour plus d’informations, consultez [Application AEM Forms](/help/forms/using/aem-forms-app.md) et les articles connexes.
 
 ### Envoi d’un formulaire adaptatif {#af}
 
@@ -215,7 +215,7 @@ Vous pouvez configurer un formulaire adaptatif pour synchroniser, envoyer et dé
 
 ### Utiliser un dossier de contrôle {#watched}
 
-Un administrateur (membre du groupe fd-administrateurs) peut configurer un dossier réseau pour exécuter un workflow préconfiguré lorsqu’un utilisateur y place un fichier (tel qu’un fichier de PDF). Une fois le workflow terminé, il peut enregistrer le fichier de résultat dans un dossier de sortie spécifié. Ce dossier est connu sous le nom de [Watched Folder](../../forms/using/watched-folder-in-aem-forms.md). Procédez comme suit pour configurer un dossier de contrôle afin de lancer un workflow :
+Un administrateur (membre du groupe fd-administrateurs) peut configurer un dossier réseau pour exécuter un workflow préconfiguré lorsqu’un utilisateur y place un fichier (tel qu’un fichier de PDF). Une fois le workflow terminé, il peut enregistrer le fichier de résultat dans un dossier de sortie spécifié. Ce dossier est appelé [Watched Folder](../../forms/using/watched-folder-in-aem-forms.md). Procédez comme suit pour configurer un dossier de contrôle afin de lancer un workflow :
 
 1. Sur votre instance d’auteur AEM, accédez à ![Outils-1](assets/tools-1.png) > **[!UICONTROL Formulaires]** > **[!UICONTROL Configurer le dossier de contrôle]**.  Une liste de dossiers de contrôle déjà configurés s’affiche.
 1. Appuyez sur **[!UICONTROL Nouveau]**. Une liste de champs s’affiche. Spécifiez une valeur pour les champs suivants afin de configurer un dossier de contrôle pour un workflow :
@@ -236,7 +236,7 @@ Un administrateur (membre du groupe fd-administrateurs) peut configurer un dossi
   </tr>
   <tr>
    <td><span class="uicontrol">Traiter les fichiers avec</code></td>
-   <td>Sélectionnez la <span class="uicontrol">Workflow </code>option. </td>
+   <td>Sélectionnez la variable <span class="uicontrol">Workflow </code>option. </td>
   </tr>
   <tr>
    <td><span class="uicontrol">Modèle de processus</code></td>

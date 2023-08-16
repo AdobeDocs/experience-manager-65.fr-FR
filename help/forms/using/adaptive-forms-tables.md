@@ -10,10 +10,10 @@ discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 feature: Adaptive Forms
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2478'
-ht-degree: 93%
+source-wordcount: '2475'
+ht-degree: 91%
 
 ---
 
@@ -63,7 +63,7 @@ Vous pouvez fusionner deux cellules du corps ou plus en sélectionnant les cellu
 
 Vous pouvez ajouter et supprimer une ligne ou une colonne, et déplacer une ligne vers le haut ou vers le bas dans un tableau.
 
-Pour ajouter ou supprimer une ligne ou une colonne ou déplacer une ligne, cliquez sur une cellule dans une ligne ou une colonne. Un menu déroulant s’affiche en haut de la colonne et à gauche de la ligne. Le menu supérieur fournit des options pour ajouter ou supprimer la colonne, tandis que le menu de gauche permet d’ajouter, de supprimer ou de déplacer la ligne.
+Pour ajouter ou supprimer une ligne ou une colonne ou déplacer une ligne, cliquez sur une cellule dans une ligne ou une colonne. Un menu déroulant s’affiche en haut de la colonne et à gauche de la ligne. Le menu supérieur propose des options pour ajouter ou supprimer la colonne, tandis que le menu de gauche permet d’ajouter, de supprimer ou de déplacer la ligne.
 
 * L’opération Ajouter ajoute une ligne au-dessous ou une colonne à droite de la ligne ou de la colonne sélectionnée.
 * L’opération Supprimer supprime la ligne ou la colonne sélectionnée.
@@ -157,7 +157,7 @@ Lors de l’exécution, vous verrez les boutons **+** et *-* pour ajouter ou sup
 
 ## Expressions dans un tableau {#expressions-in-a-table}
 
-Les tableaux des formulaires adaptatifs permettent d’écrire des expressions en JavaScript pour induire des comportements, tels qu’afficher ou masquer un tableau ou une ligne, ajouter tous les nombres et afficher le total dans une cellule, activer ou désactiver une cellule, valider une entrée utilisateur, etc. Ces expressions utilisent le modèle de script API des formulaires adaptatifs.
+Les tableaux des formulaires adaptatifs vous permettent d’écrire des expressions dans JavaScript pour induire des comportements, tels qu’afficher ou masquer un tableau ou une ligne, additionner tous les nombres et afficher le total dans une cellule, activer ou désactiver une cellule, valider la saisie de l’utilisateur, etc. Ces expressions utilisent le modèle de script API des formulaires adaptatifs.
 
 Alors que les tableaux et les lignes ne prennent en charge que les expressions de visibilité pour contrôler leur visibilité en fonction de la valeur renvoyée par une expression, les cellules prennent en charge les expressions suivantes :
 
@@ -215,7 +215,7 @@ Colonne développée d’un tableau sur un appareil mobile
 
 ## Fusion de données dans un tableau {#merge-data-in-a-table}
 
-Les tableaux des formulaires adaptatifs permettent de renseigner le tableau lors de l’exécution avec des données provenant d’un fichier XML. Le fichier XML de données peut résider dans le système de fichiers local de l’ordinateur sur lequel le serveur AEM Forms s’exécute ou dans le référentiel CRX.
+Les tableaux des formulaires adaptatifs vous permettent de remplir le tableau au moment de l’exécution à l’aide des données d’un fichier XML. Le fichier XML de données peut résider dans le système de fichiers local de l’ordinateur sur lequel le serveur AEM Forms s’exécute ou dans le référentiel CRX.
 
 Prenons l’exemple du tableau récapitulatif de transaction bancaire suivant, que nous voulons renseigner avec des données provenant d’un fichier XML.
 

@@ -10,24 +10,24 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 2d374e88-ea09-43d5-986c-5d77b0705b93
 exl-id: 6df5fb10-a7f1-4d5d-ac00-b4be3d5d3d18
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '247'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 64%
 
 ---
 
 # Test d’une mise en page en responsive design dans We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-Toutes les pages We.Retail utilisent le composant Conteneur de mises en page pour implémenter le responsive design. Le conteneur offre un système de paragraphe qui permet de positionner des composants sur une grille réactive. Cette grille peut réorganiser la mise en page en fonction de l’appareil/de la taille de fenêtre et du format. Le composant est utilisé en mode **Mise en page** de l’éditeur de page, ce qui permet de créer et de modifier une mise en page en mode responsive design, selon les caractéristiques de l’appareil.
+Toutes les pages We.Retail utilisent le composant Conteneur de mises en page pour implémenter le responsive design. Le conteneur de mises en page fournit un système de paragraphes qui vous permet de positionner des composants dans une grille réactive. Cette grille peut réorganiser la mise en page en fonction de l’appareil/de la taille de fenêtre et du format. Le composant est utilisé conjointement avec la fonction **Disposition** dans l’éditeur de page, qui vous permet de créer et de modifier votre mise en page réactive en fonction de l’appareil.
 
-## Test {#trying-it-out}
+## Essayer de le faire {#trying-it-out}
 
-1. Modifiez la page Arctic Surfing dans la section Experiences de la branche master de langue.
+1. Modifiez la page Arctic Surfing dans la section Expériences de la branche principale de langue.
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html
 
-1. Passez à **Aperçu** pour voir la page telle qu’elle serait affichée pour un internaute. Faites défiler vers le bas pour accéder au contenu de l’article *Aloha spirits in Norther Norway*.
+1. Passez à **Aperçu** pour voir la page telle qu’elle serait affichée pour un internaute. Faites défiler jusqu’au contenu de l’article *Esprit Aloha dans le nord de la Norvège*.
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 
@@ -35,7 +35,7 @@ Toutes les pages We.Retail utilisent le composant Conteneur de mises en page pou
 
    ![chlimage_1-179](assets/chlimage_1-179.png)
 
-1. Passez en mode Mise en page. La barre d’outils de l’émulateur est automatiquement affichée et vous permet de planifier votre mise en page par appareil ciblé.
+1. Passez en mode Mise en page. La barre d’outils de l’émulateur s’affiche automatiquement, ce qui vous permet de planifier votre mise en page par appareil ciblé.
 
    La sélection d’un composant affiche des options de flottement et de masquage dans le menu d’édition, ainsi que des poignées de redimensionnement pour le composant.
 

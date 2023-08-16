@@ -10,9 +10,9 @@ discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 feature: Adaptive Forms
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2111'
 ht-degree: 38%
 
 ---
@@ -41,8 +41,8 @@ Vous pouvez créer entièrement un fragment de formulaire adaptatif ou enregistr
 
 1. Cliquez pour ouvrir l’onglet **Modèle de formulaire**, puis dans le menu déroulant **Choisir parmi**, sélectionnez l’un des modèles de fragment suivants :
 
-   * **Aucun**: Indique de créer le fragment à partir de zéro sans utiliser de modèle de formulaire.
-   * **Modèle de formulaire**: Indique de créer le fragment à l’aide d’un modèle XDP téléchargé vers AEM Forms. Sélectionnez le modèle XDP correspondant en tant que modèle de formulaire pour le fragment.
+   * **Aucun**: indique de créer le fragment à partir de zéro sans utiliser de modèle de formulaire.
+   * **Modèle de formulaire**: indique de créer le fragment à l’aide d’un modèle XDP téléchargé vers AEM Forms. Sélectionnez le modèle XDP correspondant en tant que modèle de formulaire pour le fragment.
 
    ![Création d’un formulaire adaptatif avec le modèle de formulaire comme modèle](assets/form-template-model.png)
 
@@ -64,7 +64,7 @@ Vous pouvez créer entièrement un fragment de formulaire adaptatif ou enregistr
 
 En mode d’édition, vous pouvez faire glisser n’importe quel composant de formulaire adaptatif du sidekick d’AEM sur le fragment. Pour plus d’informations sur les composants de formulaire adaptatif, voir [Présentation de la création de formulaires adaptatifs](../../forms/using/introduction-forms-authoring.md).
 
-En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire XDP comme modèle de formulaire pour votre fragment, un nouvel onglet affichant la hiérarchie des modèles de formulaire apparaît dans l’outil de recherche de contenu. Il vous permet de faire glisser des éléments du modèle de formulaire sur le fragment. Les éléments de modèle de formulaire ajoutés sont convertis en composants de formulaire tout en conservant les propriétés d’origine du fichier XDP ou XSD associé.
+En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire XDP comme modèle de formulaire pour votre fragment, un nouvel onglet affichant la hiérarchie des modèles de formulaire apparaît dans l’outil de recherche de contenu. Il vous permet de faire glisser des éléments de modèle de formulaire sur le fragment. Les éléments de modèle de formulaire ajoutés sont convertis en composants de formulaire tout en conservant les propriétés d’origine du fichier XDP ou XSD associé.
 
 ### Enregistrement du panneau en tant que fragment {#save-panel-as-a-fragment}
 
@@ -92,12 +92,12 @@ En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire 
 
    * **Modèle de formulaire** : selon le modèle de formulaire pour le formulaire adaptatif, ce champ affiche le **schéma XML**,**modèle de formulaire** ou **aucun**. Ce champ n’est pas modifiable.
 
-   * **Racine du modèle de fragment**: Apparaît uniquement dans les formulaires adaptatifs XSD. Il spécifie la racine du modèle de fragment. Vous pouvez choisir **/** ou le type complexe de schéma XSD dans la liste déroulante. Notez que vous pouvez réutiliser le fragment dans un autre formulaire adaptatif que si vous avez sélectionné le type complexe sous forme de fragment racine du modèle.
+   * **Racine du modèle de fragment**: s’affiche uniquement dans les formulaires adaptatifs XSD. Il spécifie la racine du modèle de fragment. Vous pouvez choisir **/** ou le type complexe de schéma XSD dans la liste déroulante. Notez que vous pouvez réutiliser le fragment dans un autre formulaire adaptatif que si vous avez sélectionné le type complexe sous forme de fragment racine du modèle.
 Si vous choisissez **/** comme racine du modèle de fragment, l’arborescence complète de schéma XSD depuis la racine est visible dans l’onglet de modèle de données de formulaire adaptatif. Pour une racine de modèle de fragment de type complexe, seuls les descendants du type complexe sélectionné sont visibles dans l’onglet du modèle de données de formulaire adaptatif. 
 
    * **Référence de schéma XSD** : s’affiche uniquement dans les formulaires adaptatifs XSD. Il indique l’emplacement du schéma XML.
 
-   * **Référence XDP**: Apparaît uniquement dans les formulaires adaptatifs XDP. Il indique l’emplacement du modèle de formulaire XDP.
+   * **Référence XDP**: s’affiche uniquement dans les formulaires adaptatifs XDP. Il indique l’emplacement du modèle de formulaire XDP.
 
    ![save-fragment](assets/save-fragment.png)
 
@@ -236,7 +236,7 @@ Pour localiser un formulaire adaptatif contenant des fragments de formulaire ada
 * Dans un formulaire adaptatif basé sur XDP, si vous enregistrez un panneau en tant que fragment contenant un autre fragment XDP, le fragment résultant sera automatiquement lié au fragment XDP enfant. Dans le cas d’un formulaire adaptatif basé sur un schéma XSD, le fragment obtenu sera associé à la racine de schéma.
 * Lorsque vous créez un fragment de formulaire adaptatif, un nœud de fragment est créé, similaire au nœud guideContainer pour un formulaire adaptatif, dans CRXDe Lite.
 * Un fragment dans un formulaire adaptatif qui utilise un modèle de données de formulaire différent n’est pas pris en charge. Par exemple, un fragment basé sur XDP n’est pas pris en charge dans un formulaire adaptatif basé sur XSD et vice versa.
-* Les fragments de formulaire adaptatif peuvent être utilisés via l’onglet Fragments de formulaire adaptatif dans l’outil de recherche de contenu AEM.
+* Les fragments de formulaire adaptatif peuvent être utilisés via l’onglet Fragments de formulaire adaptatif de l’outil de recherche de contenu d’AEM.
 * Toute expression, script ou style d’un fragment de formulaire adaptatif autonome est conservé lorsqu’il est inséré par référence ou incorporé dans un formulaire adaptatif.
 * Vous ne pouvez pas modifier un fragment de formulaire adaptatif, inséré par référence, depuis un formulaire adaptatif. Pour le modifier, vous modifiez le fragment de formulaire adaptatif autonome ou vous incorporez le fragment dans le formulaire adaptatif.
 * Lorsque vous publiez un formulaire adaptatif, vous devez publier les fragments de formulaire adaptatif autonomes insérés par référence dans le formulaire adaptatif.

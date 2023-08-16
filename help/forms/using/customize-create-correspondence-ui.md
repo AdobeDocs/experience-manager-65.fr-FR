@@ -11,10 +11,10 @@ discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 82%
+source-wordcount: '1086'
+ht-degree: 80%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 82%
 
 ## Présentation {#overview}
 
-Correspondence Management vous permet d’adapter le modèle de solution à l’identité graphique de votre société afin de conserver la valorisation de votre marque. Le changement d’identité graphique de l’interface utilisateur comprend la modification du logo de la société, qui est affiché dans le coin supérieur gauche de l’interface utilisateur de création de correspondance.
+Correspondence Management vous permet de redéfinir l’identité graphique de son modèle de solution pour une meilleure valorisation de marque et respecter les normes de branding de votre entreprise. Le changement d’identité graphique de l’interface utilisateur comprend la modification du logo de la société, qui est affiché dans le coin supérieur gauche de l’interface utilisateur de création de correspondance.
 
 Vous pouvez changer le logo dans l’interface utilisateur de création de correspondance pour le remplacer par le logo de votre entreprise.
 

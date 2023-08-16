@@ -8,16 +8,16 @@ content-type: reference
 topic-tags: platform
 docset: aem65
 exl-id: da63c576-34cd-40ce-81de-d7391a331364
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '145'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '144'
+ht-degree: 97%
 
 ---
 
 # eCommerce{#ecommerce}
 
-La structure d’intégration comprend une couche d’intégration avec une API. Vous pouvez ainsi effectuer les opérations suivantes :
+La structure d’intégration comprend une couche d’intégration avec une API. Vous pouvez ainsi :
 
 * connecter un système e-commerce et extraire des données de produit dans AEM ;
 * créer des composants AEM pour les fonctionnalités de commerce indépendamment du moteur d’e-commerce spécifique.

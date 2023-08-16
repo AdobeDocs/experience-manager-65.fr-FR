@@ -11,10 +11,10 @@ discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3161'
-ht-degree: 62%
+source-wordcount: '3156'
+ht-degree: 61%
 
 ---
 
@@ -26,9 +26,9 @@ ht-degree: 62%
 | AEM 6.5 | Cet article |
 
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
-Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. AEM Forms fournit une interface utilisateur intuitive et des composants prêts à l’emploi pour la création et l’utilisation de formulaires adaptatifs. Vous pouvez choisir de créer un formulaire adaptatif basé sur un modèle ou un schéma de formulaire ou sans modèle de formulaire. Il est important de choisir avec soin le modèle de formulaire qui convient non seulement à vos besoins, mais qui étend également vos investissements et vos ressources d’infrastructure existantes. Vous pouvez choisir parmi les options suivantes pour créer un formulaire adaptatif :
+Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. AEM Forms fournit une interface utilisateur intuitive et des composants prêts à l’emploi pour créer et utiliser des formulaires adaptatifs. Vous pouvez choisir de créer un formulaire adaptatif basé sur un modèle ou un schéma de formulaire ou sans modèle de formulaire. Il est important de choisir avec soin le modèle de formulaire qui convient non seulement à vos besoins, mais qui étend également vos investissements et vos ressources d’infrastructure existantes. Vous pouvez choisir parmi les options suivantes pour créer un formulaire adaptatif :
 
 * **Utilisation d’un modèle de données de formulaire**
   L’[intégration de données](../../forms/using/data-integration.md) vous permet d’intégrer des entités et des services provenant de sources de données disparates dans un modèle de données de formulaire que vous pouvez utiliser pour créer des formulaires adaptatifs. Choisissez le modèle de données de formulaire si le formulaire adaptatif que vous créez implique l’extraction et l’écriture de données depuis et vers plusieurs sources de données.
@@ -51,7 +51,7 @@ L’interface utilisateur optimisée pour les écrans tactiles pour la création
 * Composants standard de formulaire
 * Référentiel intégré de ressources
 
-Lorsque vous créez un formulaire adaptatif ou en modifiez un existant, vous utilisez les éléments suivants de l’interface utilisateur :
+Lorsque vous créez ou modifiez un formulaire adaptatif existant, vous utilisez les éléments suivants de l’interface utilisateur :
 
 * [Barre latérale](#sidebar)
 * [Barre d’outils de la page](#page-toolbar)
@@ -88,7 +88,7 @@ Affiche la hiérarchie des objets du formulaire. L’auteur peut accéder au com
 
    * **Objets de modèle de données**
 Permet de voir la hiérarchie des modèles de formulaire.
-Il vous permet de faire glisser des éléments du modèle de formulaire sur le formulaire adaptatif. Les éléments ajoutés sont automatiquement convertis en composants de formulaire tout en conservant leurs propriétés d’origine. Vous pouvez voir des objets de modèle de données lorsque votre formulaire utilise un schéma XML, un schéma JSON ou un modèle XDP.
+Il vous permet de faire glisser des éléments de modèle de formulaire sur le formulaire adaptatif. Les éléments ajoutés sont automatiquement convertis en composants de formulaire tout en conservant leurs propriétés d’origine. Vous pouvez voir des objets de modèle de données lorsque votre formulaire utilise un schéma XML, un schéma JSON ou un modèle XDP.
 
 * **Explorateur de propriétés**
 
@@ -144,7 +144,7 @@ Il vous permet de faire glisser des éléments du modèle de formulaire sur le f
   </tr>
   <tr>
    <td>Groupe de fragments de document</td>
-   <td>Vous permet d’ajouter un groupe de fragments de document associés que vous pouvez utiliser dans un modèle de lettre en tant qu’unité unique.</td>
+   <td>Vous permet d’ajouter un groupe de fragments de document associés que vous pouvez utiliser dans un modèle de lettre comme une seule unité.</td>
   </tr>
   <tr>
    <td>Liste déroulante</td>
@@ -172,7 +172,7 @@ Il vous permet de faire glisser des éléments du modèle de formulaire sur le f
   </tr>
   <tr>
    <td>Image</td>
-   <td>Vous permet d’insérer une image.</td>
+   <td>Permet d’insérer une image.</td>
   </tr>
   <tr>
    <td>Choix d’image</td>
@@ -208,7 +208,7 @@ Il vous permet de faire glisser des éléments du modèle de formulaire sur le f
   </tr>
   <tr>
    <td>Bouton de réinitialisation</td>
-   <td>Ajoute un bouton pour réinitialiser les champs de formulaire.</td>
+   <td>Ajoute un bouton permettant de réinitialiser les champs du formulaire.</td>
   </tr>
   <tr>
    <td>Bouton Enregistrer</td>
@@ -299,7 +299,7 @@ Voici quelques bonnes pratiques et points clés à retenir lorsque vous utilisez
 * Vous pouvez activer les composants Zone de texte, Adresse électronique et Téléphone pour remplir automatiquement les champs tels que le nom, l’adresse, la carte de crédit, le téléphone et l’adresse électronique à partir des informations stockées dans les paramètres de remplissage automatique du navigateur. Pour activer cette fonctionnalité, sélectionnez **[!UICONTROL Activer le remplissage automatique]** dans les propriétés du composant et sélectionnez un **[!UICONTROL attribut de remplissage automatique]**. Lorsqu’un utilisateur remplit un formulaire adaptatif, les valeurs sont proposées à partir du profil de remplissage automatique dans le navigateur ou en fonction des valeurs précédemment renseignées par l’utilisateur. Notez que le remplissage automatique fonctionne si les paramètres de remplissage automatique dans le navigateur de l’utilisateur sont activés.
 
 * Spécifiez des valeurs pour les éléments Bouton radio et Case à cocher au format `{value}={text}` dans les propriétés du composant.
-* Par défaut, le composant Pièce jointe permet à un utilisateur de joindre un seul fichier. Cependant, vous pouvez configurer les propriétés du composant pour prendre en charge plusieurs pièces jointes. En outre, si un utilisateur joint plusieurs fichiers avec le même nom de fichier, les pièces jointes peuvent entraîner des problèmes. Par conséquent, il est recommandé d’associer un identifiant unique pour chaque pièce jointe envoyée lors de l’envoi du formulaire. Pour ce faire :
+* Par défaut, le composant Pièce jointe permet à un utilisateur de joindre un seul fichier. Cependant, vous pouvez configurer les propriétés du composant pour prendre en charge plusieurs pièces jointes. En outre, si un utilisateur joint plusieurs fichiers avec le même nom de fichier, les pièces jointes peuvent entraîner des problèmes. Il est donc recommandé d’associer un identifiant unique pour chaque pièce jointe envoyée lors de l’envoi du formulaire. Pour ce faire :
 
    1. Sur votre serveur AEM Forms, accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console Web]**.
    1. Recherchez **[!UICONTROL Service de configuration de formulaires adaptatifs]** et appuyez dessus.
@@ -368,7 +368,7 @@ Par exemple, si vous tapez **[!UICONTROL Parent]** pour une zone de texte, vous
 * guideRootPanel
 * Conteneur de formulaires adaptatifs
 
-J. **Autres**: Fournit d’autres options pour utiliser le composant sélectionné.
+J. **Autres**: fournit d’autres options pour l’utilisation du composant sélectionné.
 
 * Afficher l’expression SOM
 * Enregistrement d’un panneau en tant que fragment (pour les panneaux uniquement)
@@ -386,12 +386,12 @@ La structure de contenu contient généralement les composants principaux ci-des
 
 * **guideContainer** : racine d’un formulaire adaptatif, indiquée sous la forme **[!UICONTROL Début du formulaire adaptatif]** dans l’interface utilisateur du formulaire. Dans ce composant, vous pouvez spécifier les éléments suivants :
 
-   * *Disposition mobile du formulaire adaptatif*: Définit l’aspect du formulaire sur les périphériques mobiles.
-   * *Page de remerciement*: Définit la page vers laquelle l’utilisateur est redirigé après l’envoi du formulaire.
-   * *Action Envoyer*: Définit le mode de traitement du formulaire sur le serveur une fois que l’utilisateur l’a envoyé.
-   * *Style*: Spécifie le chemin d’accès au fichier CSS utilisé pour personnaliser l’aspect du formulaire.
+   * *Disposition mobile du formulaire adaptatif*: définit l’aspect du formulaire sur les périphériques mobiles.
+   * *Page de remerciement*: définit la page vers laquelle l’utilisateur est redirigé après l’envoi du formulaire.
+   * *Action Envoyer*: définit le mode de traitement du formulaire sur le serveur une fois que l’utilisateur l’a envoyé.
+   * *Style*: indique le chemin d’accès au fichier CSS utilisé pour personnaliser l’aspect du formulaire.
 
-* **rootPanel** : panneau racine d’un formulaire adaptatif. Il peut contenir des sous-panneaux sous le noeud éléments . Une disposition peut être associée à chaque panneau, y compris le panneau racine. La disposition du panneau détermine la disposition du formulaire. Par exemple, dans la mise en page en accordéon, les éléments constitutifs sont disposés sous la forme d’étapes en accordéon.
+* **rootPanel** : panneau racine d’un formulaire adaptatif. Il peut contenir des sous-panneaux sous le noeud éléments . Une mise en page peut être associée à chaque panneau, y compris le panneau racine. La disposition du panneau détermine la disposition du formulaire. Par exemple, dans la mise en page en accordéon, les éléments constitutifs sont disposés sous la forme d’étapes en accordéon.
 
 * **barre d’outils** : une barre d’outils globale est associée à un conteneur de formulaires adaptatifs. Il s’agit d’une barre d’outils à l’échelle du formulaire. Cette barre d’outils peut être ajoutée à l’aide de l’action **[!UICONTROL Ajouter une barre d’outils]** de la barre d’édition, ce qui permet aux auteurs d’ajouter des actions telles que Envoyer, Enregistrer, réinitialiser, etc.
 

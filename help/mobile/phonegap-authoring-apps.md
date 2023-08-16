@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1013'
 ht-degree: 1%
 
 ---
@@ -23,13 +23,13 @@ ht-degree: 1%
 
 Le tableau de bord AEM Mobile vous permet de créer, de créer et de déployer votre application mobile, de créer, de supprimer et de modifier les métadonnées de l’application. Une fois votre application activée, vous pouvez analyser les analyses de l’application, y compris les mesures de cycle de vie et d’utilisation, afin d’améliorer la conversion des clients et la fidélité à la marque.
 
-Pour créer votre application AEM Mobile, reportez-vous à la section [Création d’applications mobiles](/help/mobile/building-app-mobile-phonegap.md) page.
+Pour créer votre application AEM Mobile, voir [Création d’applications mobiles](/help/mobile/building-app-mobile-phonegap.md) page.
 
 Pour configurer votre environnement et commencer, voir [Administration d’AEM pour utiliser AEM PhoneGap Enterprise](/help/mobile/administer-phonegap.md).
 
 ## Catalogue des applications AEM Mobile {#the-aem-mobile-apps-catalog}
 
-Le [Catalogue d’applications AEM Mobile](http://localhost:4502/aem/apps.html/content/phonegap) affiche l’ensemble de votre application mobile gérée dans AEM.
+La variable [Catalogue d’applications AEM Mobile](http://localhost:4502/aem/apps.html/content/phonegap) affiche l’ensemble de votre application mobile gérée dans AEM.
 
 Considérez ce catalogue comme la &quot;page d’entrée&quot; d’AEM Mobile, où les administrateurs peuvent démarrer une nouvelle application AEM Mobile en créant une application à partir d’un modèle ou en chargeant une application existante déjà lancée par un développeur mobile.
 
@@ -45,7 +45,7 @@ Pour accéder à la page d’entrée du catalogue d’applications, procédez co
 
 La sélection d’une application AEM Mobile dans le catalogue affiche son tableau de bord. Vous pouvez y gérer votre application, afficher des statistiques, créer, déployer et gérer le contenu de votre application mobile.
 
-Vous pouvez développer chaque mosaïque du tableau de bord AEM Mobile pour afficher ou modifier les détails en cliquant sur &quot;...&quot;. dans le coin inférieur droit.
+Vous pouvez développer chaque mosaïque du tableau de bord AEM Mobile pour afficher ou modifier les détails en cliquant sur &quot;...&quot; dans le coin inférieur droit.
 
 ![Centre de commandes des applications AEM Mobile](assets/chlimage_1-136.png)
 
@@ -59,7 +59,7 @@ Cliquez sur [here](/help/mobile/phonegap-app-details-tile.md) pour plus d’info
 
 ### Mosaïque Gérer le contenu de la page {#the-manage-page-content-tile}
 
-Le contenu peut être créé, mis à jour et supprimé dans AEM Mobile de la même manière que vous le faites dans AEM Sites. Le **Mosaïque Gestion du contenu de la page** affiche le nombre de pages de contenu géré et de la dernière modification. Vous pouvez analyser le contenu pour créer, copier, déplacer, supprimer et mettre à jour des pages en cliquant sur chaque enregistrement de la mosaïque. Une fois que le contenu a été mis à jour, vous pouvez envoyer une mise à jour de contenu à vos clients via le **Mosaïque Gestion des packages de contenu .**
+Le contenu peut être créé, mis à jour et supprimé dans AEM Mobile de la même manière que vous le faites dans AEM Sites. La variable **Mosaïque Gestion du contenu de la page** affiche le nombre de pages de contenu géré et de la dernière modification. Vous pouvez analyser le contenu pour créer, copier, déplacer, supprimer et mettre à jour des pages en cliquant sur chaque enregistrement de la mosaïque. Une fois que le contenu a été mis à jour, vous pouvez envoyer une mise à jour de contenu à vos clients via le **Mosaïque Gestion des packages de contenu .**
 
 ![Mosaïque Contenu](assets/chlimage_1-138.png)
 
@@ -69,17 +69,17 @@ Une fois que vous avez ajouté ou modifié votre contenu par le biais de la mosa
 
 Le module de contenu permet à AEM’auteur d’applications de gérer le contenu de la page dans AEM et de demander à votre équipe de développement d’apporter des modifications à votre application Shell PhoneGap (c’est-à-dire la structure ou l’infrastructure de l’application), puis d’envoyer ces modifications rapidement à vos clients, sans avoir à enrôler un développeur pour qu’il les soumette à nouveau aux différentes boutiques pour distribution.
 
-Le module de contenu crée un fichier ZIP, considéré comme un module de version de contenu, pour chaque mise à jour. Ces modules contiennent des ressources HTML et des pages HTML générées lors du rendu de l’application. Ils sont suffisamment intelligents pour ne compresser que les fichiers modifiés depuis la dernière mise à jour.
+Le module de contenu crée un fichier ZIP, considéré comme un module de version de contenu, pour chaque mise à jour. Ces modules contiennent des ressources HTML et des pages HTML générées lors du rendu de l’application. Ils sont suffisamment intelligents pour ne compresser que les fichiers qui ont été modifiés depuis la dernière mise à jour.
 
 Mosaïque Gérer le module de contenu **Type** La colonne affiche &quot;Application&quot; pour désigner le contenu du shell d’application, par exemple la structure ou l’infrastructure de l’application gérée par un développeur, ou &quot;Contenu&quot; pour représenter le contenu de la page géré par l’auteur du contenu.
 
 Le contenu peut être représenté sous la forme d’une langue ou d’une partie particulière de l’application où plusieurs modules de publication de contenu sont utilisés par l’application. Le choix du mode de regroupement de votre contenu est flexible et dépend entièrement de la manière dont vous souhaitez gérer le contenu de votre application.
 
-Le **Modifié** indique le moment où les pages ont été modifiées le plus récemment.
+La variable **Modifié** indique le moment où les pages ont été modifiées le plus récemment.
 
-Le **Intermédiaire** affiche la date de la dernière mise à jour du contenu. Pour créer une mise à jour de contenu et préparer vos modifications, ouvrez n’importe quel enregistrement dans la mosaïque et créez une mise à jour.
+La variable **Intermédiaire** affiche la date de la dernière mise à jour du contenu. Pour créer une mise à jour de contenu et préparer vos modifications, ouvrez n’importe quel enregistrement dans la mosaïque et créez une mise à jour.
 
-Le **Publié** La colonne indique le moment où la dernière mise à jour du contenu a été publiée et mise à la disposition de vos clients. Pour publier du contenu, vous devez d’abord en faire l’étape, puis publier la mise à jour en parcourant cette mosaïque et en la publiant à partir de la console Détails de la version de contenu .
+La variable **Publié** La colonne indique le moment où la dernière mise à jour du contenu a été publiée et mise à la disposition de vos clients. Pour publier du contenu, vous devez d’abord en faire l’étape, puis publier la mise à jour en parcourant cette mosaïque et en la publiant à partir de la console Détails de la version de contenu .
 
 ![Mosaïque Version du contenu](assets/chlimage_1-139.png) ![Package ContentSync pour l’interpréteur d’application](do-not-localize/chlimage_1-5.png)
 
@@ -91,7 +91,7 @@ Ces icônes représentent un module de version du contenu pour le contenu de l�
 
 ### Mosaïque PhoneGap Build {#the-phonegap-build-tile}
 
-Le **Mosaïque PhoneGap Build** se connecte à `https://build.phonegap.com` pour créer et héberger des versions distantes. Une fois créée, la version est disponible en téléchargement ou directement sur votre appareil via un code QR.
+La variable **Mosaïque PhoneGap Build** se connecte à `https://build.phonegap.com` pour créer et héberger des versions distantes. Une fois créée, la version est disponible en téléchargement ou directement sur votre appareil via un code QR.
 
 Vous pouvez également télécharger la source du périphérique à créer localement via l’interface de ligne de commande PhoneGap (`https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html`).
 
@@ -107,7 +107,7 @@ Vous pouvez également télécharger la source du périphérique à créer local
 
 AEM Mobile s’intègre à Adobe Analytics via [SDK Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile.html?lang=en) (AMS).
 
-Le Centre de contrôle **Mosaïque Mesures** affiche les analyses récapitulatives extraites d’AMS pour votre application. Vous pouvez accéder au tableau de bord des analyses en cliquant sur &quot;...&quot;. en bas à droite.
+Le Centre de contrôle **Mosaïque Mesures** affiche les analyses récapitulatives extraites d’AMS pour votre application. Vous pouvez parcourir le tableau de bord des analyses en cliquant sur &quot;...&quot; en bas à droite.
 
 ![Mosaïque Mesures](assets/chlimage_1-141.png)
 
@@ -117,7 +117,7 @@ La mosaïque Gérer le contenu des entités vous permet d’ajouter et de gérer
 
 Cliquez sur [here](/help/mobile/phonegap-app-definitions.md) pour créer et gérer les définitions de votre application.
 
-Vous pouvez accéder au tableau de bord de gestion du contenu des entités en cliquant sur &quot;...&quot;. en bas à droite.
+Vous pouvez accéder au tableau de bord de gestion du contenu des entités en cliquant sur &quot;...&quot; en bas à droite.
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 

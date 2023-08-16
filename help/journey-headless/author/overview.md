@@ -2,10 +2,10 @@
 title: Parcours de création de contenu découplé AEM
 description: Faites vos premiers pas dans cette visite guidée pour découvrir les fonctionnalités découplées puissantes et flexibles d’AEM, ses capacités et comment créer du contenu dans votre projet.
 exl-id: b8cdbd0f-c034-4c9f-976f-5e39b1bd33bf
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '849'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '848'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ Le contenu découplé n’est pas basé sur la structure traditionnelle des page
 
 Dans AEM, cette création est rendue possible avec les fragments de contenu. Vous créez le contenu dans des fragments de contenu individuels qui sont ensuite rendus disponibles pour qu’une application puisse les sélectionner et les utiliser selon les besoins.
 
-Cette flexibilité signifie que le découplage est un modèle de développement moderne et dynamique permettant la mise en œuvre d’expériences numériques.
+Cette flexibilité signifie que le découplage est un modèle de développement moderne et dynamique permettant la mise en œuvre d’expériences digitales.
 
 Ce guide détaille les sujets les plus importants afin que vous puissiez :
 
@@ -49,14 +49,14 @@ Les informations présentées dans ce parcours peuvent bien sûr être utiles à
 
 Vous découvrirez de nombreux sujets dans ce parcours. Les articles suivants vous donnent une connaissance fondamentale sur les projets découplés dans AEM et vous proposent des liens vers une documentation technique détaillée.
 
-Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si le concept de découplage dans AEM est nouveau pour vous, nous vous recommandons de commencer par le début et de progresser de manière chronologique.
+Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si vous n’avez pas d’interface en AEM, Adobe vous recommande de commencer par le début et de progresser de manière séquentielle.
 
 | Numéro | Article | Description |
 |---|---|---|
 | 0 | Parcours de création de contenu découplé AEM | Ce document |
 | 1 | [Création pour AEM découplé – Introduction](introduction.md) | Cette section présente les fonctionnalités découplées d’Adobe Experience Manager et explique comment créer du contenu pour votre projet. |
 | 2 | [Principes de base de la création découplée avec AEM](basics.md) | Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS Headless à l’aide de fragments de contenu. |
-| 3 | [En savoir plus sur l’utilisation de références dans les fragments de contenu](references.md) | Découvrez comment utiliser les références dans les fragments de contenu. Ils vous permettent également de créer et de gérer plusieurs niveaux de structure pour votre CMS découplé à l’aide de fragments imbriqués. |
+| 3 | [En savoir plus sur l’utilisation de références dans les fragments de contenu](references.md) | Découvrez comment utiliser les références dans les fragments de contenu. Ils vous permettent également de créer et de gérer plusieurs niveaux de structure pour votre CMS sans affichage à l’aide de fragments imbriqués. |
 | 4 | [En savoir plus sur la définition de métadonnées et sur le balisage pour les fragments de contenu](metadata-tagging.md) | Découvrez comment définir des métadonnées et des balises pour les fragments de contenu. |
 
 ## Prochaines étapes {#what-is-next}

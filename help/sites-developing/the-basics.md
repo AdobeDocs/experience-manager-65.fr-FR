@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3327'
-ht-degree: 98%
+source-wordcount: '3325'
+ht-degree: 97%
 
 ---
 
@@ -303,7 +303,7 @@ Pour ce faire, vous pouvez utiliser la commande sling:include(&quot;/&lt;chemin>
 
 ## OSGI {#osgi}
 
-OSGi désigne une architecture permettant de développer et de déployer des applications et des bibliothèques modulaires (également connu sous le nom de Dynamic Module System for Java). Les conteneurs OSGi vous permettent de décomposer votre application en modules distincts (des fichiers jar contenant des méta-informations supplémentaires appelés « bundles » dans le jargon OSGi) et de gérer les interdépendances qui existent entre eux avec :
+OSGi désigne une architecture permettant de développer et de déployer des applications et des bibliothèques modulaires (également connu sous le nom de Dynamic Module System for Java). Les conteneurs OSGi vous permettent de diviser votre application en modules individuels (il s’agit de fichiers jar contenant des méta-informations supplémentaires et appelés bundles dans la terminologie OSGi) et de gérer les interdépendances entre eux avec :
 
 * Services mis en œuvre dans le conteneur
 * Contrat entre le conteneur et votre application
@@ -318,7 +318,7 @@ Un framework OSGi vous offre ensuite un chargement/déchargement dynamique, une 
 >
 >En particulier, la page Basic Education (formation de base) contient un ensemble de présentations et de tutoriels.
 
-Cette architecture vous permet d’étendre Sling en lui ajoutant des modules spécifiques aux applications. Sling, et donc CQ5, utilise l’implémentation [Apache Felix](https://felix.apache.org/documentation/index.html) d’OSGI (Open Services Gateway Initiative) et est basé sur les spécifications OSGi Service Platform Release 4, Version 4.2. Les deux sont des groupes de lots OSGi qui s’exécutent dans un framework OSGi.
+Cette architecture vous permet d’étendre Sling avec des modules spécifiques à l’application. Sling, et donc CQ5, utilise l’implémentation [Apache Felix](https://felix.apache.org/documentation/index.html) d’OSGI (Open Services Gateway Initiative) et est basé sur les spécifications OSGi Service Platform Release 4, Version 4.2. Les deux sont des groupes de lots OSGi qui s’exécutent dans un framework OSGi.
 
 Vous pouvez ainsi effectuer les actions suivantes sur l’un des packages de votre installation :
 

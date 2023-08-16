@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 97%
+source-wordcount: '745'
+ht-degree: 92%
 
 ---
 
 # Modes d’exécution{#run-modes}
 
-Les modes d’exécution vous permettent d’ajuster votre instance d’AEM à des fins spécifiques. par exemple, pour la création ou la publication, le test, le développement, l’intranet et plus encore.
+Les modes d’exécution vous permettent d’ajuster votre instance AEM à des fins spécifiques, par exemple pour créer ou publier, tester, développer, intranet ou autre.
 
 Vous pouvez :
 
@@ -85,7 +85,7 @@ Le mode d’exécution nosamplecontent est conçu pour les installations de prod
 
 Une collection de valeurs pour les propriétés de configuration, utilisée pour un mode d’exécution spécifique, peut être enregistrée dans le référentiel.
 
-Le mode d’exécution est indiqué par un suffixe sur le nom du dossier. Vous pouvez ainsi stocker toutes les configurations dans un seul référentiel. Par exemple :
+Le mode d’exécution est indiqué par un suffixe sur le nom du dossier. Vous pouvez ainsi stocker toutes les configurations dans un seul référentiel sous la forme . Par exemple :
 
 * `config`
 

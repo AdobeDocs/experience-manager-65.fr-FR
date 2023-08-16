@@ -1,7 +1,7 @@
 ---
 title: Personnaliser les consoles
 seo-title: Customizing the Consoles
-description: AEM fournit divers mécanismes pour vous permettre de personnaliser les consoles de votre instance de création.
+description: AEM fournit divers mécanismes pour vous permettre de personnaliser les consoles de votre instance de création
 seo-description: AEM provides various mechanisms to enable you to customize the consoles of your authoring instance
 uuid: 8ecce9ff-5907-41e1-af3b-a8646352d633
 contentOwner: User
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
 exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 53%
+source-wordcount: '669'
+ht-degree: 47%
 
 ---
 
@@ -26,11 +26,9 @@ ht-degree: 53%
 
 AEM fournit divers mécanismes pour vous permettre de personnaliser les consoles (et les [fonctionnalité de création de pages](/help/sites-developing/customizing-page-authoring-touch.md)) de votre instance de création.
 
-* Clientlibs
-Les bibliothèques clientes (clientlibs) vous permettent d’étendre l’implémentation par défaut afin d’obtenir la nouvelle fonctionnalité, tout en réutilisant les fonctions, objets et méthodes standard. Lors de la personnalisation, vous pouvez créer votre propre bibliothèque cliente sous `/apps.` Par exemple, il peut contenir le code requis pour votre composant personnalisé.
+* Clientlibs Clientlibs vous permet d’étendre l’implémentation par défaut pour créer de nouvelles fonctionnalités, tout en réutilisant les fonctions, objets et méthodes standard. Lors de la personnalisation, vous pouvez créer votre propre bibliothèque cliente sous `/apps.` Par exemple, il peut contenir le code requis pour votre composant personnalisé.
 
-* Recouvrements
-Les recouvrements reposent sur des définitions de nœud et vous permettent de superposer votre fonctionnalité personnalisée (dans `/libs`) sur la fonctionnalité standard (dans `/apps`). Lors de la création d’une superposition, une copie 1:1 de l’original n’est pas nécessaire, car Sling Resource Merger permet l’héritage.
+* Recouvrements Les superpositions reposent sur des définitions de noeud et vous permettent de superposer la fonctionnalité standard (dans `/libs`) avec vos propres fonctionnalités personnalisées (dans `/apps`). Lors de la création d’une incrustation, une copie 1:1 de l’original n’est pas nécessaire, car Sling Resource Merger permet l’héritage.
 
 Elles peuvent être utilisées de différentes manières pour étendre vos consoles AEM. Une petite sélection est abordée ci-dessous (à un niveau élevé).
 
@@ -95,7 +93,7 @@ Vous pouvez personnaliser la vue par défaut (colonne, carte, liste) d’une con
 
 ### Ajouter une nouvelle action à la barre d’outils {#add-new-action-to-the-toolbar}
 
-1. Vous pouvez créer vos propres composants et inclure les bibliothèques clientes correspondantes pour les actions personnalisées. Par exemple, un **Convertir en Twitter** Action à l’adresse :
+1. Vous pouvez créer vos propres composants et inclure les bibliothèques clientes correspondantes pour les actions personnalisées. Par exemple, un **Promouvoir le Twitter** Action à l’adresse :
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 

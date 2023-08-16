@@ -1,7 +1,7 @@
 ---
 title: Textes dans les communications interactives
 seo-title: Text in Interactive Communications
-description: Création et modification de fragments de document texte à utiliser dans les communications interactives - Texte est l’un des quatre types de fragments de document utilisés pour créer des communications interactives. Les trois autres sont des fragments de condition, de liste et de mise en page.
+description: 'Création et modification de fragments de document texte à utiliser dans les communications interactives : le texte est l’un des quatre types de fragments de document utilisés pour créer des communications interactives. Les trois autres sont des fragments de conditions, de listes et de mise en page.  '
 seo-description: Creating and editing text document fragments to be used in Interactive Communications
 uuid: fdac3dd8-c6d0-418e-b969-fc791b7bd509
 topic-tags: interactive-communications
@@ -10,10 +10,10 @@ discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+workflow-type: tm+mt
 source-wordcount: '2477'
-ht-degree: 100%
+ht-degree: 67%
 
 ---
 
@@ -36,17 +36,17 @@ Le fragment de document texte dans la communication interactive prend en charge 
 1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Texte]**.
 1. Saisissez les informations suivantes :
 
-   * **[!UICONTROL Titre]** : (facultatif) saisissez le titre du fragment de document texte. Les titres ne doivent pas nécessairement être uniques et peuvent contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les textes sont référencés par leur titre (le cas échéant) comme dans les vignettes et les propriétés.
-   * **[!UICONTROL Nom]** : nom unique du texte, dans un dossier. Aucun fragment de document (texte, condition ou liste), quel que soit son état, ne peut porter le même nom qu’un autre fragment de document dans un dossier. Dans le champ nom, vous ne pouvez entrer que les caractères, les chiffres et les tirets d’anglais. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
+   * **[!UICONTROL Titre]** : (facultatif) saisissez le titre du fragment de document texte. Les titres n’ont pas besoin d’être uniques et peuvent contenir des caractères spéciaux et des caractères non anglais. Les textes sont référencés par leur titre (le cas échéant) comme dans les vignettes et les propriétés.
+   * **[!UICONTROL Nom]** : nom unique du texte, dans un dossier. Aucun fragment de document (texte, condition ou liste), quel que soit son état, ne peut porter le même nom qu’un autre fragment de document dans un dossier. Dans le champ Nom, vous pouvez saisir uniquement des caractères, des chiffres et des tirets de langue anglaise. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
 
-   * **[!UICONTROL Description]** : entrez une description du texte.
-   * **[!UICONTROL Modèle de données de formulaire]** : facultativement, sélectionnez le bouton radio Modèle de données de formulaire pour créer le texte en fonction d’un modèle de données de formulaire. Lorsque vous sélectionnez le bouton radio Modèle de données de formulaire, le champ **[!UICONTROL Modèle de données de formulaire]** s’affiche. Recherchez et sélectionnez un modèle de données de formulaire. Lorsque vous créez un texte et une condition pour une communication interactive, veillez à utiliser le même modèle de données que celui que vous avez l’intention d’utiliser dans la communication interactive. Pour plus d’informations sur le modèle de données de formulaire, consultez la section [Intégration de données](/help/forms/using/data-integration.md).
+   * **[!UICONTROL Description]**: saisissez une description du texte.
+   * **[!UICONTROL Modèle de données de formulaire]** : facultativement, sélectionnez le bouton radio Modèle de données de formulaire pour créer le texte en fonction d’un modèle de données de formulaire. Lorsque vous sélectionnez le bouton radio Modèle de données de formulaire, le champ **[!UICONTROL Modèle de données de formulaire]** s’affiche. Recherchez et sélectionnez un modèle de données de formulaire. Lors de la création de texte et de condition pour une communication interactive, veillez à utiliser le même modèle de données que celui que vous avez l’intention d’utiliser dans la communication interactive. Pour plus d’informations sur le modèle de données de formulaire, consultez la section [Intégration de données](/help/forms/using/data-integration.md).
 
    * **[!UICONTROL Balises]** : Eventuellement, pour créer une balise personnalisée, entrez la valeur dans le champ de texte et appuyez sur Entrée. Lorsque vous enregistrez ce texte, les balises nouvellement ajoutées sont créées.
 
 1. Appuyez sur **[!UICONTROL Suivant]**.
 
-   La page Créer du texte s’affiche. Si vous avez choisi de créer un texte basé sur un modèle de données de formulaire, les propriétés du modèle de données de formulaire s’affichent dans le volet de gauche.
+   La page Créer un texte s’affiche. Si vous avez choisi de créer un texte basé sur un modèle de données de formulaire, les propriétés du modèle de données de formulaire apparaissent dans le volet de gauche.
 
 1. Tapez le texte et utilisez les options suivantes pour formater et insérer des propriétés et des variables de modèle de données de formulaire dans votre texte et pour leur attribuer des conditions :
 
@@ -58,6 +58,7 @@ Le fragment de document texte dans la communication interactive prend en charge 
       * [Copier-coller du texte formaté depuis d’autres applications](#paste)
 
       * [Parties du texte en surbrillance](#highlight)
+
    * [Répéter](/help/forms/using/cm-inline-condition.md)
    * [Caractères spéciaux](#special)
    * [Recherche et remplacement de texte](#searching)
@@ -73,7 +74,7 @@ Le fragment de document texte dans la communication interactive prend en charge 
 
 ## Modifier du texte {#edittext}
 
-Vous pouvez modifier un fragment de document texte existant en suivant les étapes ci-dessous. Vous pouvez également choisir de modifier un fragment de document texte à partir d’un éditeur de communication interactive.
+Vous pouvez modifier un fragment de document texte existant en procédant comme suit. Vous pouvez également choisir de modifier un fragment de document texte à partir d’un éditeur de communication interactive.
 
 1. Sélectionnez **[!UICONTROL Formulaires]** > **[!UICONTROL Fragments de document]**.
 1. Accédez à un fragment de document texte et sélectionnez-le.
@@ -81,7 +82,7 @@ Vous pouvez modifier un fragment de document texte existant en suivant les étap
 1. Effectuez les modifications nécessaires. Pour plus d’informations sur les options dans le texte, consultez [Créer du texte](#createtext).
 1. Appuyez sur **[!UICONTROL Enregistrer]** puis sur **[!UICONTROL Fermer]**.
 
-## Personnalisation d’un fragment de document texte à l’aide de propriétés de modèle de données de formulaire {#formdatamodel}
+## Personnalisation d’un fragment de document texte à l’aide des propriétés de modèle de données de formulaire {#formdatamodel}
 
 Vous pouvez personnaliser les fragments de document texte en insérant les propriétés du modèle de données de formulaire. En insérant des propriétés de modèle de données de formulaire dans le texte, vous pouvez extraire et remplir des données spécifiques au destinataire à partir de la source de données associée tout en prévisualisant une communication interactive. Pour plus d’informations sur le modèle de données de formulaire, consultez [Intégration de données AEM Forms](/help/forms/using/data-integration.md).
 
@@ -95,17 +96,17 @@ Vous pouvez également rechercher et ajouter une propriété de modèle de donn�
 
 * Pour permettre aux agents de modifier la valeur d’une propriété de modèle de données de formulaire dans l’interface utilisateur de l’agent tout en [préparant et en envoyant une communication interactive](/help/forms/using/prepare-send-interactive-communication.md) à l’aide de l’interface utilisateur de l’agent, cliquez sur l’icône de verrouillage **[[D]]** de cette propriété et assurez-vous qu’elle est à l’état déverrouillé. L’état par défaut de la propriété est verrouillé et un agent ne peut pas modifier la propriété dans l’interface utilisateur de l’agent.
 
-Vous pouvez également utiliser les propriétés du modèle de données de formulaire pour construire des règles d’affichage ou de masquage de parties du contenu. Pour en savoir plus, consultez [Créer des règles dans le texte](#rules).
+Vous pouvez également utiliser les propriétés de modèle de données de formulaire pour créer des règles d’affichage ou de masquage de parties de contenu. Pour plus d’informations, voir [Créer des règles dans le texte](#rules).
 
 ## Création et utilisation de variables dans un fragment de document texte {#variables}
 
-Les variables sont des espaces réservés qui peuvent être liés lors de la création d’une communication interactive. Les variables peuvent être liées à une propriété de modèle de données de formulaire ou à un fragment de texte. Les variables peuvent également être laissées à l’agent pour qu’il les remplisse.
+Les variables sont des espaces réservés qui peuvent être liés lors de la création d’une communication interactive. Les variables peuvent être liées à une propriété de modèle de données de formulaire ou à un fragment de texte. Il est également possible de laisser les variables à remplir par l’agent.
 
-Vous pouvez utiliser des variables plutôt que des propriétés du modèle de données de formulaire lorsque :
+Vous pouvez utiliser des variables au lieu de propriétés de modèle de données de formulaire lorsque :
 
 * Un fragment de document texte doit être utilisé dans plusieurs communications interactives où la liaison doit être différente pour différentes communications interactives.
-* Le fragment de document texte ne dispose pas de modèle de données de formulaire au moment de sa création. Vous pouvez insérer des variables et les lier ensuite aux propriétés du modèle de données du formulaire au moment de la création de la communication interactive.
-* Vous devez lier et récupérer du texte à partir d’un fragment de document texte. Seuls ces fragments de document texte peuvent être liés à des variables qui ne contiennent aucune variable.
+* Le fragment de document texte ne comporte pas de modèle de données de formulaire au moment de sa création. Vous pouvez insérer des variables et les lier ultérieurement aux propriétés du modèle de données de formulaire au moment de la création de la communication interactive.
+* Vous devez lier et récupérer du texte d’un fragment de document texte. Seuls les fragments de document texte pouvant être liés à des variables ne doivent pas comporter de variables dans .
 
 Lors de la création ou de la modification d’un fragment de document texte, vous pouvez créer et insérer des variables. Les variables que vous créez apparaissent dans l’onglet Données de l’interface utilisateur de l’agent. L’agent spécifie les valeurs des variables lors de la [préparation et de l’envoi d’une communication interactive à l’aide de l’interface utilisateur de l’agent](/help/forms/using/prepare-send-interactive-communication.md).
 
@@ -119,7 +120,7 @@ Lors de la création ou de la modification d’un fragment de document texte, vo
 
 1. Appuyez sur **[!UICONTROL Créer]**.
 
-   Le volet Créer des variables apparaît.
+   Le volet Créer des variables s’affiche.
 
 1. Saisissez les informations suivantes et appuyez sur **[!UICONTROL Créer]** :
 
@@ -144,14 +145,14 @@ Lors de la création ou de la modification d’un fragment de document texte, vo
 
 ## Créer des règles dans le texte {#rules}
 
-L’éditeur de règles dans un texte permet de créer des règles pour afficher ou masquer des chaînes de texte ou des éléments de contenu en fonction de **conditions prédéfinies**. Ces conditions peuvent être construites en fonction des éléments suivants :
+À l’aide de l’éditeur de règles dans un texte, vous pouvez créer des règles pour afficher ou masquer des chaînes de texte ou des éléments de contenu en fonction de **conditions prédéfinies**. Ces conditions peuvent être construites sur la base des éléments suivants :
 
 * Chaînes
 * Nombres
 * Expression mathématique
 * Dates
 * Propriétés du modèle de données de formulaire associé
-* Toute variable que vous avez potentiellement créée dans le texte
+* Toute variable que vous avez peut-être créée dans le texte
 
 ### Créer des règles dans le texte {#create-rules-in-text}
 
@@ -161,10 +162,10 @@ L’éditeur de règles dans un texte permet de créer des règles pour afficher
 
 1. Appuyez sur **[!UICONTROL Créer une règle]**.
 
-   La boîte de dialogue Créer une règle s’affiche. En plus de la chaîne, du nombre, de l’expression mathématique et de la date, les éléments suivants sont également disponibles dans l’éditeur de règles pour la création d’instructions :
+   La boîte de dialogue Créer une règle s’affiche. Outre la chaîne, le nombre, l’expression mathématique et la date, les éléments suivants sont également disponibles dans l’éditeur de règles pour la création d’instructions des règles :
 
    * Propriétés du modèle de données de formulaire associé
-   * Toute variable que vous avez créée
+   * Toutes les variables que vous avez créées
 
    Sélectionnez l’option pertinente à évaluer.
 
@@ -184,25 +185,25 @@ L’éditeur de règles dans un texte permet de créer des règles pour afficher
 
    Règle d’affichage du texte sélectionné si le destinataire se situe aux Etats-Unis selon les données source FDM
 
-   * Lors de la création ou de la modification d’une règle, vous pouvez également appuyer sur ![icon_resize](assets/icon_resize.png) (redimensionnement) pour développer la boîte de dialogue Créer une règle / Modifier la règle. La boîte de dialogue développée, pleine fenêtre, vous permet de glisser-déposer des propriétés de modèle de données de formulaire et des variables pour construire des règles. Appuyez à nouveau sur Redimensionner pour revenir à la boîte de dialogue Créer une règle.
+   * Lors de la création ou de la modification d’une règle, vous pouvez également appuyer sur ![icon_resize](assets/icon_resize.png) (redimensionnement) pour développer la boîte de dialogue Créer une règle / Modifier la règle. La boîte de dialogue développée, pleine fenêtre, vous permet de faire glisser des propriétés et des variables de modèle de données de formulaire pour créer des règles. Appuyez à nouveau sur Redimensionner pour revenir à la boîte de dialogue Créer une règle.
    * Vous pouvez également créer plusieurs conditions dans une règle.
    * Vous pouvez également créer des règles qui se chevauchent, dans lesquelles une règle s’applique à une partie d’un contenu auquel s’applique déjà une règle.
 
 1. Appuyez sur **[!UICONTROL Terminé]**.
 
-   La règle est appliquée. Le texte ou le contenu auquel la règle s’applique est surligné en vert. Lorsque vous passez le curseur sur la poignée gauche de la partie en surbrillance, la règle appliquée apparaît.
+   La règle est appliquée. Le texte ou le contenu auquel la règle est appliquée est mis en surbrillance en vert. Lorsque vous placez le pointeur de la souris sur la poignée gauche de la mise en surbrillance, la règle appliquée s’affiche.
 
    ![appliedruletext](assets/appliedruletext.png)
 
    En cliquant sur la poignée gauche de la règle appliquée, vous obtenez les options de modification ou de suppression de la règle.
 
-## Formatage du texte {#formatting}
+## Formatage de texte {#formatting}
 
-Lors de la création ou de la modification d’un texte, la barre d’outils change selon le type de modifications que vous souhaitez effectuer : paragraphes, alignement ou liste :
+Lors de la création ou de la modification de texte, la barre d’outils change en fonction du type de modification que vous choisissez d’effectuer : paragraphe, alignement ou liste :
 
 ![Sélectionnez le type de barre d’outils](do-not-localize/toolbarselection.png)
 
-Sélectionnez le type de barre d’outils : Paragraphe, alignement ou liste
+Sélectionner le type de barre d’outils : paragraphe, alignement ou liste
 
 ![Barre d’outils d’édition de polices](do-not-localize/paragraphtoolbar.png)
 
@@ -216,9 +217,9 @@ Barre d’outils d’alignement
 
 Barre d’outils Liste
 
-### Mettre en surbrillance/en évidence des parties de texte {#highlight}
+### Mettre des parties de texte en surbrillance/mettre en surbrillance {#highlight}
 
-Pour mettre en surbrillance\en évidence des parties de texte dans un fragment de document modifiable, sélectionnez le texte et appuyez sur Couleur de surbrillance.
+Pour mettre en surbrillance/mettre en évidence des parties de texte dans un fragment de document modifiable, sélectionnez le texte et appuyez sur Couleur de surbrillance.
 
 ![textbackgroundcolorapplied-1](assets/textbackgroundcolorapplied-1.png)
 
@@ -230,13 +231,13 @@ Si vous le souhaitez, vous pouvez également accéder à l’onglet Avancé afin
 
 ### Coller le texte formaté {#paste}
 
-Pour réutiliser un ou plusieurs paragraphes de texte existant dans une autre application, comme par exemple du texte issu de Microsoft® Word ou des pages HTML, copiez et collez le texte dans l’éditeur de texte. La mise en forme du texte copié est conservée dans l’éditeur de texte.
+Pour réutiliser un ou plusieurs paragraphes de texte existant dans une autre application, comme des pages Microsoft® Word ou HTML, copiez et collez le texte dans l’éditeur de texte. La mise en forme du texte copié est conservée dans l’éditeur de texte.
 
-Vous pouvez copier et coller un ou plusieurs paragraphes de texte dans un fragment de document modifiable. Par exemple, vous pouvez disposer d’un document Microsoft® Word contenant une liste à puces de preuves de résidence acceptables comme suit :
+Vous pouvez copier et coller un ou plusieurs paragraphes de texte dans un fragment de document texte modifiable. Par exemple, vous pouvez disposer d’un document Microsoft® Word avec une liste à puces de bons à tirer de votre lieu de résidence, comme suit :
 
 ![pastetextmsword-2](assets/pastetextmsword-2.png)
 
-Vous pouvez directement copier et coller le texte à partir du document Microsoft® Word vers un fragment de texte modifiable. La mise en forme, telle que la liste à puces, la police et la couleur du texte, est conservée dans le fragment de texte.
+Vous pouvez directement copier et coller le texte du document Microsoft® Word dans un fragment de document texte modifiable. La mise en forme, telle que la liste à puces, la police et la couleur du texte, est conservée dans le fragment de document texte.
 
 ![pastetexteditablemodule-1](assets/pastetexteditablemodule-1.png)
 
@@ -260,7 +261,7 @@ L’éditeur de texte offre une prise en charge intégrée de 210 caractères s
 
 Lorsque vous travaillez avec des fragments de document texte contenant une grande quantité de texte, vous pouvez avoir besoin de rechercher une chaîne de caractères précise. Voire de remplacer une chaîne de caractères précise par une autre chaîne.
 
-La fonction Rechercher et remplacer vous permet de rechercher (et de remplacer) n’importe quelle chaîne de caractères dans un fragment de document de texte. La fonction comprend également une recherche d’expression régulière puissante.
+La fonction Rechercher et remplacer permet de rechercher (et de remplacer) n’importe quelle chaîne de texte dans un fragment de document texte. La fonction comprend également une recherche d’expression régulière puissante.
 
 1. Ouvrez un fragment de document texte pour [modification](#edittext).
 1. Appuyez sur **[!UICONTROL Rechercher et remplacer]**.
@@ -269,8 +270,8 @@ La fonction Rechercher et remplacer vous permet de rechercher (et de remplacer) 
 
 1. Si le texte recherché est trouvé, il est remplacé par le texte de remplacement.
 
-   * Si une autre occurrence du texte de recherche est trouvée, elle est mise en surbrillance dans le fragment de document texte. Si vous appuyez à nouveau sur **[!UICONTROL Remplacer]**, l’occurrence mise en surbrillance est remplacée et, si une troisième occurrence est trouvée, le curseur se déplace vers le bas.
-   * Si aucune autre instance n’est trouvée, la boîte de dialogue Rechercher et remplacer affiche un message : Fin du module atteinte.
+   * Si une autre instance du texte de recherche est trouvée, cette instance est mise en surbrillance dans le fragment de document texte. Si vous appuyez sur **[!UICONTROL Remplacer]** une fois de plus, l’instance mise en surbrillance est remplacée et le curseur se déplace vers l’avant, si une troisième instance est trouvée.
+   * Si aucune autre instance n’est trouvée, la boîte de dialogue Rechercher et remplacer affiche le message : Fin du module atteinte.
 
    Vous pouvez également appuyer sur Remplacer tout pour remplacer toutes les correspondances en une seule fois.
 

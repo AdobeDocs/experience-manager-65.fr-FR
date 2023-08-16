@@ -1,19 +1,15 @@
 ---
 title: Utilisation de bibliothèques côté client
-seo-title: Using Client-Side Libraries
-description: AEM fournit des dossiers de bibliothèque côté client, qui vous permettent de stocker votre code côté client dans le référentiel, de l’organiser en catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client.
-seo-description: AEM provides Client-side Library Folders, which allow you to store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client
-uuid: f12b13cc-6651-4c9a-9c52-19a22bb82b28
+description: AEM fournit des dossiers de bibliothèque côté client, grâce auxquels vous pouvez stocker votre code côté client dans le référentiel, l’organiser en catégories et définir quand et comment chaque catégorie de code doit être diffusée au client.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2862'
+source-wordcount: '2860'
 ht-degree: 79%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 79%
 
 Les sites web modernes reposent largement sur un traitement côté client piloté par un code JavaScript et CSS complexe. Organiser et optimiser la diffusion de ce code est une opération qui peut se révéler complexe.
 
-Pour résoudre ce problème, AEM fournit **Dossiers de bibliothèques côté client**, qui vous permettent de stocker votre code côté client dans le référentiel, de l’organiser en catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page Web finale pour charger le code correct.
+Pour résoudre ce problème, AEM fournit **Dossiers de bibliothèques côté client**, qui vous permet de stocker votre code côté client dans le référentiel, de l’organiser en catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page Web finale pour charger le code correct.
 
 ## Fonctionnement des bibliothèques côté client dans AEM {#how-client-side-libraries-work-in-aem}
 
@@ -171,7 +167,7 @@ Vous pouvez définir la propriété `allowProxy` sur `foo` sur true.
 
    * Nom : categories
    * Type : chaîne
-   * Valeur : Nom de la catégorie
+   * Valeur : nom de la catégorie
    * Multi : sélection
 
 1. Ajoutez des fichiers source au dossier de bibliothèque par tous les moyens. Par exemple, utilisez un client WebDav pour copier des fichiers ou créez un fichier et créez le contenu manuellement.
@@ -330,7 +326,7 @@ Les préprocesseurs enfichables permettent une utilisation flexible, notamment :
 * Définition de ScriptProcessors pouvant traiter des sources de script
 * Les processeurs peuvent être configurés avec des options
 * Les processeurs peuvent être utilisés pour la minification, mais également pour les cas non minimisés.
-* La bibliothèque cliente peut définir le processeur à utiliser.
+* La bibliothèque cliente peut définir le processeur à utiliser
 
 >[!NOTE]
 >
@@ -457,8 +453,8 @@ Le composant `dumplibs` comprend un sélecteur de test qui affiche le code sourc
 
 Le service Gestionnaire de bibliothèques HTML traite les balises `cq:ClientLibraryFolder` et génère les bibliothèques au moment de l’exécution. Le type d’environnement, de développement ou de production détermine comment configurer le service :
 
-* Augmenter la sécurité : Désactiver le débogage
-* Amélioration des performances : Supprimez les espaces et compressez les bibliothèques.
-* Amélioration de la lisibilité : Incluez des espaces et ne compressez pas.
+* Sécurité renforcée : désactivation du débogage
+* Amélioration des performances : supprimez les espaces blancs et compressez les bibliothèques.
+* Amélioration de la lisibilité : incluez des espaces blancs et ne compressez pas.
 
 Pour plus d’informations sur la configuration du service, voir [Gestionnaire de bibliothèques de HTMLS AEM](/help/sites-deploying/osgi-configuration-settings.md#aemhtmllibrarymanager).

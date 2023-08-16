@@ -11,10 +11,10 @@ topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '9902'
-ht-degree: 98%
+source-wordcount: '9901'
+ht-degree: 90%
 
 ---
 
@@ -231,7 +231,7 @@ Le protocole de transmission pour les objets `BLOB` renvoyés dépend de plusieu
 
    * Le paramètre de point d’entrée SOAP du service Default Protocol for Output Blob Objects est défini sur Smart.
 
-     Pour chaque service ayant un point d’entrée SOAP, la console d’administration vous offre la possibilité de spécifier le protocole de transmission pour les objets Blob renvoyés. (Voir [Aide d’administration](https://www.adobe.com/go/learn_aemforms_admin_63_fr).)
+     Pour chaque service avec un point d’entrée SOAP, la console d’administration vous permet de spécifier le protocole de transmission des objets Blob retournés. (Voir [Aide d’administration](https://www.adobe.com/go/learn_aemforms_admin_63_fr).)
 
    * Le service AEM Forms prend un ou plusieurs documents en entrée.
 
@@ -441,7 +441,7 @@ Vous pouvez utiliser JAX-WS pour convertir un WSDL de service Forms en classes p
    * Sélectionnez le package `com.adobe.idp.services`, puis importez les fichiers JAVA du dossier adobe/idp/services dans le package.
    * Si nécessaire, créez un package `org/apache/xml/xmlsoap` dans le dossier Source.
    * Sélectionnez le dossier source, puis importez les fichiers JAVA situés dans le dossier org/apache/xml/xmlsoap.
-   * Définissez le niveau de conformité du compilateur Java sur 5.0 ou valeur supérieure.
+   * Définissez le niveau de conformité du compilateur Java sur 5.0 ou version ultérieure.
    * Créez le projet.
    * Exportez le projet sous la forme d’un fichier JAR.
    * Importez ce fichier JAR dans le chemin de classe d’un projet client. Importez également tous les fichiers JAR situés dans &lt;Répertoire dʼinstallation>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty.
@@ -516,7 +516,7 @@ Vous pouvez générer des fichiers de bibliothèque Java Axis en procédant comm
 
    Les fichiers JAVA sont écrits dans le dossier C:\JavaFiles tel que spécifié par la propriété `output`. Pour réussir à appeler le service Forms, importez ces fichiers JAVA dans votre chemin de classe.
 
-   Par défaut, ces fichiers appartiennent à un package Java nommé `com.adobe.idp.services`. Il est recommandé de placer ces fichiers JAVA dans un fichier JAR. Importez ensuite le fichier JAR dans le chemin de classe de votre application client.
+   Par défaut, ces fichiers appartiennent à un package Java nommé `com.adobe.idp.services`. Il est recommandé de placer ces fichiers JAVA dans un fichier JAR. Importez ensuite le fichier JAR dans le chemin de classe de votre application cliente.
 
    >[!NOTE]
    >
@@ -534,7 +534,7 @@ Vous pouvez générer des fichiers de bibliothèque Java Axis en procédant comm
     http://localhost:8080/soap/services/EncryptionService?blob=base64;
    ```
 
-1. Ajoutez les fichiers Axis JAR suivants au chemin de classe de votre projet Java :
+1. Ajoutez les fichiers JAR Axes suivants au chemin de classe de votre projet Java :
 
    * activation.jar
    * axis.jar
@@ -648,17 +648,17 @@ Vous pouvez appeler le service `MyApplication/EncryptDocument` (qui a été cré
 1. Créez un assemblage client Microsoft .NET qui utilise le WSDL du service `MyApplication/EncryptDocument`.
 1. Créez un projet client Microsoft .NET. Référencez l’assemblage client Microsoft .NET dans le projet client. Référencez également `System.Web.Services`.
 1. À l’aide de l’assemblage client Microsoft .NET, créez un objet `MyApplication_EncryptDocumentService` en appelant son constructeur par défaut.
-1. Définissez la propriété `Credentials` de lʼobjet `MyApplication_EncryptDocumentService` avec un objet `System.Net.NetworkCredential`. Dans le constructeur `System.Net.NetworkCredential`, indiquez un nom d’utilisateur AEM Forms et son mot de passe. Définissez les valeurs d’authentification pour permettre à votre application client .NET d’échanger des messages SOAP avec AEM Forms.
+1. Définissez la variable `MyApplication_EncryptDocumentService` de `Credentials` avec une propriété `System.Net.NetworkCredential` . Dans le constructeur `System.Net.NetworkCredential`, indiquez un nom d’utilisateur AEM Forms et son mot de passe. Définissez les valeurs d’authentification pour permettre à votre application client .NET d’échanger des messages SOAP avec AEM Forms.
 1. Créez un objet `BLOB` en utilisant son constructeur. Lʼobjet `BLOB` sert à stocker un document PDF transmis au processus `MyApplication/EncryptDocument`.
 1. Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur de chaîne qui représente l’emplacement du fichier du document PDF et son mode d’ouverture.
-1. Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-1. Renseignez le tableau d’octets avec le flux de données en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
-1. Renseignez lʼobjet `BLOB` en assignant à sa propriété `binaryData` le contenu du tableau dʼoctets.
-1. Appelez le processus `MyApplication/EncryptDocument` en appelant la méthode `invoke` de lʼobjet `MyApplication_EncryptDocumentService` et en transmettant lʼobjet `BLOB` qui contient le document PDF. Ce processus renvoie un document PDF chiffré dans un objet `BLOB`.
+1. Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
+1. Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` . Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
+1. Renseignez l’objet `BLOB` en attribuant le contenu du tableau d’octets à sa propriété `binaryData`.
+1. Appeler la variable `MyApplication/EncryptDocument` en appelant la méthode `MyApplication_EncryptDocumentService` de `invoke` et transmission de la méthode `BLOB` contenant le document du PDF. Ce processus renvoie un document PDF chiffré dans un objet `BLOB`.
 1. Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document chiffré par mot de passe.
-1. Créez un tableau d’octets qui stocke le contenu des données de lʼobjet `BLOB` renvoyé par la méthode `invoke` de lʼobjet `MyApplicationEncryptDocumentService`. Renseignez le tableau dʼoctets en obtenant la valeur du membre de données `binaryData` de lʼobjet `BLOB`.
-1. Créez un objet `System.IO.BinaryWriter` en appelant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-1. Enregistrez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de lʼobjet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
+1. Créez un tableau d’octets qui stocke le contenu des données de la variable `BLOB` renvoyé par l’objet `MyApplicationEncryptDocumentService` de `invoke` . Renseignez le tableau d’octets en obtenant la valeur de la variable `BLOB` de `binaryData` membre de données.
+1. Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
+1. Ecrivez le contenu du tableau d’octets dans un fichier de PDF en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
 
 ### Appeler un service à l’aide de classes proxy Java et du codage Base64 {#invoking-a-service-using-java-proxy-classes-and-base64-encoding}
 
@@ -680,15 +680,15 @@ Vous pouvez appeler un service AEM Forms à l’aide des classes proxy Java et 
    dans le chemin de classe de votre projet client Java.
 
 1. Créez un objet `MyApplicationEncryptDocumentService` en utilisant son constructeur.
-1. Créez un objet `MyApplicationEncryptDocument` en appelant la méthode `getEncryptDocument` de lʼobjet `MyApplicationEncryptDocumentService`.
+1. Créez un `MyApplicationEncryptDocument` en appelant la méthode `MyApplicationEncryptDocumentService` de `getEncryptDocument` .
 1. Définissez les valeurs de connexion requises pour appeler AEM Forms en affectant des valeurs aux membres de données suivants :
 
-   * Attribuez le point d’entrée WSDL et le type de codage au champ `ENDPOINT_ADDRESS_PROPERTY` de lʼobjet `javax.xml.ws.BindingProvider`. Pour appeler le service `MyApplication/EncryptDocument` en utilisant le codage Base64, spécifiez la valeur dʼURL suivante :
+   * Affectez le point d’entrée WSDL et le type de codage au `javax.xml.ws.BindingProvider` de `ENDPOINT_ADDRESS_PROPERTY` champ . Pour appeler le service `MyApplication/EncryptDocument` en utilisant le codage Base64, spécifiez la valeur dʼURL suivante :
 
      `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64`
 
-   * Attribuez lʼutilisateur AEM Forms au champ `USERNAME_PROPERTY` de lʼobjet `javax.xml.ws.BindingProvider`.
-   * Attribuez la valeur du mot de passe correspondant au champ `PASSWORD_PROPERTY` de lʼobjet `javax.xml.ws.BindingProvider`.
+   * Affectez l’utilisateur d’AEM forms à la variable `javax.xml.ws.BindingProvider` de `USERNAME_PROPERTY` champ .
+   * Attribuez la valeur de mot de passe correspondante à la variable `javax.xml.ws.BindingProvider` de `PASSWORD_PROPERTY` champ .
 
    L’exemple de code suivant illustre cette logique d’application :
 
@@ -705,9 +705,9 @@ Vous pouvez appeler un service AEM Forms à l’aide des classes proxy Java et 
 1. Récupérez le document PDF à envoyer au processus `MyApplication/EncryptDocument` en créant un objet `java.io.FileInputStream` au moyen de son constructeur. Transmettez une valeur de chaîne qui spécifie l’emplacement du document PDF.
 1. Créez un tableau d’octets et renseignez-le avec le contenu de lʼobjet `java.io.FileInputStream`.
 1. Créez un objet `BLOB` en utilisant son constructeur.
-1. Renseignez lʼobjet `BLOB` en appelant sa méthode `setBinaryData` et transmettez le tableau d’octets. La méthode `setBinaryData` de lʼobjet `BLOB` est celle à appeler lors de l’utilisation du codage Base64. Consultez la section « Fournir des objets BLOB dans les demandes de service ».
-1. Appelez le processus `MyApplication/EncryptDocument` en appelant la méthode `invoke` de lʼobjet `MyApplicationEncryptDocument`. Transmettez lʼobjet `BLOB` contenant le document PDF. La méthode invoke renvoie un objet `BLOB` contenant le document PDF chiffré.
-1. Créez un tableau d’octets contenant le document PDF chiffré en appelant la méthode `getBinaryData` de lʼobjet `BLOB`.
+1. Renseignez lʼobjet `BLOB` en appelant sa méthode `setBinaryData` et transmettez le tableau d’octets. La variable `BLOB` de `setBinaryData` est la méthode à appeler lors de l’utilisation de l’encodage Base64. Consultez la section « Fournir des objets BLOB dans les demandes de service ».
+1. Appeler la variable `MyApplication/EncryptDocument` en appelant la méthode `MyApplicationEncryptDocument` de `invoke` . Transmettez lʼobjet `BLOB` contenant le document PDF. La méthode invoke renvoie un objet `BLOB` contenant le document PDF chiffré.
+1. Créez un tableau d’octets contenant le document de PDF chiffré en appelant la méthode `BLOB` de `getBinaryData` .
 1. Enregistrez le document PDF chiffré en tant que fichier PDF. Enregistrez le tableau d’octets dans un fichier.
 
 **Voir également**
@@ -786,7 +786,7 @@ Prenons lʼexemple dʼun processus `MyApplication/EncryptDocument` qui accepte u
    >Remplacez `hiro-xp` *par l’adresse IP du serveur d’applications J2EE hébergeant AEM Forms*.
 
 1. Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du membre de données `EncryptDocumentClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-1. Définissez le membre de données `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+1. Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` membre de données à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
 1. Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
    * Attribuez le nom d’utilisateur AEM Forms au membre de données `MyApplication_EncryptDocumentClient.ClientCredentials.UserName.UserName`.
@@ -809,14 +809,14 @@ Prenons lʼexemple dʼun processus `MyApplication/EncryptDocument` qui accepte u
 
 1. Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF à transmettre au processus `MyApplication/EncryptDocument`.
 1. Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur de chaîne qui représente l’emplacement du fichier du document PDF et son mode d’ouverture.
-1. Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-1. Renseignez le tableau d’octets avec le flux de données en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
+1. Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
+1. Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` . Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
 1. Renseignez l’objet `BLOB` en attribuant à son membre de données `MTOM` le contenu du tableau d’octets.
-1. Appelez le processus `MyApplication/EncryptDocument` en appelant la méthode `invoke` de l’objet `MyApplication_EncryptDocumentClient`. Transmettez l’objet `BLOB` contenant le document PDF. Ce processus renvoie un document PDF chiffré dans un objet `BLOB`.
+1. Appeler la variable `MyApplication/EncryptDocument` en appelant la méthode `MyApplication_EncryptDocumentClient` de `invoke` . Transmettez l’objet `BLOB` contenant le document PDF. Ce processus renvoie un document PDF chiffré dans un objet `BLOB`.
 1. Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF sécurisé.
-1. Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` qui a été renvoyé par la méthode `invoke`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
+1. Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` qui a été renvoyé par la méthode `invoke`. Renseignez le tableau d’octets en obtenant la valeur de la variable `BLOB` de `MTOM` membre de données.
 1. Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-1. Ecrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
+1. Ecrivez le contenu du tableau d’octets dans un fichier de PDF en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
 
 >[!NOTE]
 >
@@ -875,15 +875,15 @@ Pour appeler le processus `MyApplication/EncryptDocument` en utilisant des fichi
    dans le chemin de classe de votre projet client Java.
 
 1. Créez un objet `MyApplicationEncryptDocumentService` en utilisant son constructeur.
-1. Créez un objet `MyApplicationEncryptDocument` en appelant la méthode `getEncryptDocument` de lʼobjet `MyApplicationEncryptDocumentService`.
+1. Créez un `MyApplicationEncryptDocument` en appelant la méthode `MyApplicationEncryptDocumentService` de `getEncryptDocument` .
 1. Définissez les valeurs de connexion requises pour appeler AEM Forms en affectant des valeurs aux membres de données suivants :
 
-   * Affectez le point d’entrée WSDL et le type de codage au champ `ENDPOINT_ADDRESS_PROPERTY` de l’objet `javax.xml.ws.BindingProvider`. Pour appeler le service `MyApplication/EncryptDocument` à l’aide du codage SwaRef, spécifiez la valeur d’URL suivante :
+   * Affectez le point d’entrée WSDL et le type de codage au `javax.xml.ws.BindingProvider` de `ENDPOINT_ADDRESS_PROPERTY` champ . Pour appeler le service `MyApplication/EncryptDocument` à l’aide du codage SwaRef, spécifiez la valeur d’URL suivante :
 
      ` https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=swaref`
 
-   * Affectez l’utilisateur d’AEM forms au champ `USERNAME_PROPERTY` de l’objet `javax.xml.ws.BindingProvider`.
-   * Attribuez la valeur du mot de passe correspondant au champ `PASSWORD_PROPERTY` de lʼobjet `javax.xml.ws.BindingProvider`.
+   * Affectez l’utilisateur d’AEM forms à la variable `javax.xml.ws.BindingProvider` de `USERNAME_PROPERTY` champ .
+   * Attribuez la valeur de mot de passe correspondante à la variable `javax.xml.ws.BindingProvider` de `PASSWORD_PROPERTY` champ .
 
    L’exemple de code suivant illustre cette logique d’application :
 
@@ -902,9 +902,9 @@ Pour appeler le processus `MyApplication/EncryptDocument` en utilisant des fichi
 1. Créez un objet `javax.activation.DataHandler` en utilisant son constructeur et en transmettant l’objet `javax.activation.DataSource`. 
 1. Créez un objet `BLOB` en utilisant son constructeur.
 1. Renseignez l’objet `BLOB` en appelant sa méthode `setSwaRef` et en transmettant l’objet `javax.activation.DataHandler`.
-1. Appelez le processus `MyApplication/EncryptDocument` en appelant la méthode `invoke` de l’objet `MyApplicationEncryptDocument` et en transmettant l’objet `BLOB` contenant le document PDF. La méthode appelée renvoie un objet `BLOB` contenant un document PDF chiffré.
-1. Renseignez un objet `javax.activation.DataHandler` en appelant la méthode `getSwaRef` de l’objet `BLOB`.
-1. Convertissez l’objet `javax.activation.DataHandler` en une instance `java.io.InputSteam` en appelant la méthode `getInputStream` de l’objet `javax.activation.DataHandler`.
+1. Appeler la variable `MyApplication/EncryptDocument` en appelant la méthode `MyApplicationEncryptDocument` de `invoke` et transmission de la méthode `BLOB` contenant le document du PDF. La méthode appelée renvoie un objet `BLOB` contenant un document PDF chiffré.
+1. Renseignez un `javax.activation.DataHandler` en appelant la méthode `BLOB` de `getSwaRef` .
+1. Convertir la variable `javax.activation.DataHandler` vers un objet `java.io.InputSteam` en appelant la méthode `javax.activation.DataHandler` de `getInputStream` .
 1. Écrivez l’instance `java.io.InputSteam` à un fichier PDF qui représente le document PDF chiffré.
 
 >[!NOTE]
@@ -932,7 +932,7 @@ Lorsque ce processus est appelé, il effectue les actions suivantes :
 
 >[!NOTE]
 >
->Il est recommandé de vous familiariser avec l’appel d’AEM Forms à l’aide de SOAP. (Consultez la section [Appeler AEM Forms à l’aide de services web](#invoking-aem-forms-using-web-services)).
+>Il est recommandé de bien connaître l’appel d’AEM Forms à l’aide de SOAP. (Consultez la section [Appeler AEM Forms à l’aide de services web](#invoking-aem-forms-using-web-services)).
 
 ### Créer un assemblage client .NET qui utilise des données via HTTP {#creating-a-net-client-assembly-that-uses-data-over-http}
 
@@ -964,15 +964,15 @@ Vous pouvez appeler le service `MyApplication/EncryptDocument` (qui a été cré
 1. Créez l’assemblage client .NET.
 1. Référencez l’assemblage client Microsoft .NET. Créez un projet client Microsoft .NET. Référencez l’assemblage client Microsoft .NET dans le projet client. Référencez également `System.Web.Services`.
 1. À l’aide de l’assemblage client Microsoft .NET, créez un objet `MyApplication_EncryptDocumentService` en appelant son constructeur par défaut.
-1. Définissez la propriété `Credentials` de lʼobjet `MyApplication_EncryptDocumentService` avec un objet `System.Net.NetworkCredential`. Dans le constructeur `System.Net.NetworkCredential`, indiquez un nom d’utilisateur AEM Forms et son mot de passe. Définissez les valeurs d’authentification pour permettre à votre application client .NET d’échanger des messages SOAP avec AEM Forms.
+1. Définissez la variable `MyApplication_EncryptDocumentService` de `Credentials` avec une propriété `System.Net.NetworkCredential` . Dans le constructeur `System.Net.NetworkCredential`, indiquez un nom d’utilisateur AEM Forms et son mot de passe. Définissez les valeurs d’authentification pour permettre à votre application client .NET d’échanger des messages SOAP avec AEM Forms.
 1. Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` est utilisé pour transmettre des données au processus `MyApplication/EncryptDocument`.
-1. Affectez une valeur de chaîne au membre de données `remoteURL` de l’objet `BLOB` qui spécifie l’emplacement URI d’un document PDF à transmettre au service `MyApplication/EncryptDocument`.
-1. Appelez le processus `MyApplication/EncryptDocument` en appelant la méthode `invoke` de l’objet `MyApplication_EncryptDocumentService` et en transmettant l’objet `BLOB`. Ce processus renvoie un document PDF chiffré dans un objet `BLOB`.
-1. Créez un objet `System.UriBuilder` en utilisant son constructeur et en transmettant la valeur du membre de données `remoteURL` de l’objet `BLOB`.
+1. Attribuez une valeur string à la variable `BLOB` de `remoteURL` membre de données qui spécifie l’emplacement URI d’un document de PDF à transmettre au `MyApplication/EncryptDocument`service.
+1. Appeler la variable `MyApplication/EncryptDocument` en appelant la méthode `MyApplication_EncryptDocumentService` de `invoke` et transmission de la méthode `BLOB` . Ce processus renvoie un document PDF chiffré dans un objet `BLOB`.
+1. Créez un `System.UriBuilder` en utilisant son constructeur et en transmettant la valeur de la valeur renvoyée `BLOB` de `remoteURL` membre de données.
 1. Convertissez l’objet `System.UriBuilder` en un objet `System.IO.Stream`. (Le démarrage rapide C# qui suit cette liste illustre la manière d’effectuer cette tâche.)
 1. Créez un tableau d’octets et renseignez-le avec les données situées dans l’objet `System.IO.Stream`.
 1. Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-1. Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
+1. Ecrivez le contenu du tableau d’octets dans un fichier de PDF en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
 
 ### Appeler un service à l’aide de classes proxy Java et de données BLOB via HTTP {#invoking-a-service-using-java-proxy-classes-and-blob-data-over-http}
 
@@ -998,15 +998,15 @@ Vous pouvez appeler un service AEM Forms à l’aide de classes proxy Java et de
    dans le chemin de classe de votre projet client Java.
 
 1. Créez un objet `MyApplicationEncryptDocumentService` en utilisant son constructeur.
-1. Créez un objet `MyApplicationEncryptDocument` en appelant la méthode `getEncryptDocument` de lʼobjet `MyApplicationEncryptDocumentService`.
+1. Créez un `MyApplicationEncryptDocument` en appelant la méthode `MyApplicationEncryptDocumentService` de `getEncryptDocument` .
 1. Définissez les valeurs de connexion requises pour appeler AEM Forms en affectant des valeurs aux membres de données suivants :
 
-   * Affectez le point d’entrée WSDL et le type de codage au champ `ENDPOINT_ADDRESS_PROPERTY` de l’objet `javax.xml.ws.BindingProvider`. Pour appeler le service `MyApplication/EncryptDocument` à l’aide de l’encodage BLOB sur HTTP, spécifiez la valeur d’URL suivante :
+   * Affectez le point d’entrée WSDL et le type de codage au `javax.xml.ws.BindingProvider` de `ENDPOINT_ADDRESS_PROPERTY` champ . Pour appeler le service `MyApplication/EncryptDocument` à l’aide de l’encodage BLOB sur HTTP, spécifiez la valeur d’URL suivante :
 
      `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=http`
 
-   * Affectez l’utilisateur d’AEM forms au champ `USERNAME_PROPERTY` de l’objet `javax.xml.ws.BindingProvider`.
-   * Attribuez la valeur du mot de passe correspondant au champ `PASSWORD_PROPERTY` de lʼobjet `javax.xml.ws.BindingProvider`.
+   * Affectez l’utilisateur d’AEM forms à la variable `javax.xml.ws.BindingProvider` de `USERNAME_PROPERTY` champ .
+   * Attribuez la valeur de mot de passe correspondante à la variable `javax.xml.ws.BindingProvider` de `PASSWORD_PROPERTY` champ .
 
    L’exemple de code suivant illustre cette logique d’application :
 
@@ -1022,11 +1022,11 @@ Vous pouvez appeler un service AEM Forms à l’aide de classes proxy Java et de
 
 1. Créez un objet `BLOB` en utilisant son constructeur.
 1. Renseignez l’objet `BLOB` en appelant sa méthode `setRemoteURL`. Transmettez une valeur de chaîne qui spécifie l’emplacement d’URI d’un document PDF à transmettre au service `MyApplication/EncryptDocument`.
-1. Appelez le processus `MyApplication/EncryptDocument` en appelant la méthode `invoke` de l’objet `MyApplicationEncryptDocument` et en transmettant l’objet `BLOB` contenant le document PDF. Ce processus renvoie un document PDF chiffré dans un objet `BLOB`.
-1. Créez un tableau d’octets pour stocker le flux de données qui représente le document PDF chiffré. Appelez la méthode `getRemoteURL` de l’objet `BLOB` (utilisez l’objet `BLOB` renvoyé par la méthode `invoke`).
+1. Appeler la variable `MyApplication/EncryptDocument` en appelant la méthode `MyApplicationEncryptDocument` de `invoke` et transmission de la méthode `BLOB` contenant le document du PDF. Ce processus renvoie un document PDF chiffré dans un objet `BLOB`.
+1. Créez un tableau d’octets pour stocker le flux de données qui représente le document PDF chiffré. Appeler la variable `BLOB` de `getRemoteURL` (utilisez la méthode `BLOB` renvoyé par l’objet `invoke` ).
 1. Créez un objet `java.io.File` en utilisant son constructeur. Cet objet représente le document PDF chiffré.
 1. Créez un objet `java.io.FileOutputStream` en utilisant son constructeur et en transmettant l’objet `java.io.File`. 
-1. Appelez la méthode `write` de l’objet `java.io.FileOutputStream`. Transmettez le tableau d’octets contenant le flux de données qui représente le document PDF chiffré.
+1. Appeler la variable `java.io.FileOutputStream` de `write` . Transmettez le tableau d’octets contenant le flux de données qui représente le document de PDF chiffré.
 
 ## Appeler AEM Forms à l’aide de DIME {#invoking-aem-forms-using-dime}
 
@@ -1097,7 +1097,7 @@ Vous pouvez appeler un service Forms à l’aide de DIME. Prenez en compte le pr
 
 1. Créez un projet Microsoft .NET qui vous permet d’appeler un service Forms à l’aide de DIME. Veillez à inclure Web Services Enhancements 2.0 et à créer une référence web au service AEM Forms.
 1. Après avoir défini une référence web au processus `MyApplication/EncryptDocument`, créez un objet `EncryptDocumentServiceWse` en utilisant son constructeur par défaut.
-1. Définissez le membre de données `Credentials` de l’objet `EncryptDocumentServiceWse` avec une valeur `System.Net.NetworkCredential` qui indique le nom d’utilisateur et le mot de passe AEM forms.
+1. Définissez la variable `EncryptDocumentServiceWse` de `Credentials` membre de données avec un `System.Net.NetworkCredential` qui spécifie le nom d’utilisateur et le mot de passe d’AEM forms.
 1. Créez un objet `Microsoft.Web.Services2.Dime.DimeAttachment` en utilisant son constructeur et en transmettant les valeurs suivantes :
 
    * Une valeur de chaîne qui indique une valeur GUID. Vous pouvez obtenir une valeur GUID en appelant la méthode `System.Guid.NewGuid.ToString`.
@@ -1106,16 +1106,16 @@ Vous pouvez appeler un service Forms à l’aide de DIME. Prenez en compte le pr
    * Une valeur de chaîne qui indique l’emplacement du document PDF à transmettre au processus AEM Forms.
 
 1. Créez un objet `BLOB` en utilisant son constructeur.
-1. Ajoutez la pièce jointe DIME à l’objet `BLOB` en attribuant valeur du membre de données `Id` de l’objet `Microsoft.Web.Services2.Dime.DimeAttachment` au membre de données `attachmentID` de l’objet `BLOB`.
+1. Ajoutez la pièce jointe DIME à l’objet `BLOB` en attribuant l’objet `Microsoft.Web.Services2.Dime.DimeAttachment` de `Id` de la valeur du membre de données au `BLOB` de `attachmentID` membre de données.
 1. Appelez la méthode `EncryptDocumentServiceWse.RequestSoapContext.Attachments.Add` et transmettez l’objet `Microsoft.Web.Services2.Dime.DimeAttachment`.
-1. Appelez le processus `MyApplication/EncryptDocument` en appelant la méthode `invoke` de l’objet `EncryptDocumentServiceWse` et en transmettant l’objet `BLOB` contenant la pièce jointe DIME. Ce processus renvoie un document PDF chiffré dans un objet `BLOB`.
-1. Obtenez la valeur de l’identificateur de pièce jointe en obtenant la valeur du membre de données `attachmentID` de l’objet `BLOB` renvoyé.
+1. Appeler la variable `MyApplication/EncryptDocument` en appelant la méthode `EncryptDocumentServiceWse` de `invoke` et transmission de la méthode `BLOB` qui contient la pièce jointe DIME. Ce processus renvoie un document PDF chiffré dans un objet `BLOB`.
+1. Obtenez la valeur de l’identifiant de pièce jointe en obtenant la valeur de la valeur renvoyée `BLOB` de `attachmentID` membre de données.
 1. Effectuez une itération sur les pièces jointes situées dans `EncryptDocumentServiceWse.ResponseSoapContext.Attachments` et utilisez la valeur de l’identificateur de pièce jointe pour obtenir le document PDF chiffré.
-1. Obtenez un objet `System.IO.Stream` en obtenant la valeur du membre de données `Stream` de l’objet `Attachment`.
-1. Créez un tableau d’octets et transmettez-le à la méthode `Read` de l’objet `System.IO.Stream`. Cette méthode renseigne le tableau d’octets avec un flux de données représentant le document PDF chiffré.
+1. Obtention d’un `System.IO.Stream` en obtenant la valeur de la variable `Attachment` de `Stream` membre de données.
+1. Créez un tableau d’octets et transmettez ce tableau d’octets à la variable `System.IO.Stream` de `Read` . Cette méthode renseigne le tableau d’octets avec un flux de données représentant le document PDF chiffré.
 1. Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente un emplacement du fichier PDF. Cet objet représente le document PDF chiffré.
 1. Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-1. Écrivez le contenu du tableau d’octets dans le fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
+1. Ecrivez le contenu du tableau d’octets dans le fichier du PDF en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
 
 ### Créer des classes proxy Java Apache Axis qui utilisent DIME {#creating-apache-axis-java-proxy-classes-that-use-dime}
 
@@ -1135,7 +1135,7 @@ Pour appeler le service `MyApplication/EncryptDocument` (créé dans Workbench) 
    ```
 
 1. Créez un objet `EncryptDocumentSoapBindingStub` en appelant son constructeur et en transmettant les objets `MyApplicationEncryptDocumentServiceLocator` et `URL`.
-1. Définissez la valeur du nom d’utilisateur et du mot de passe AEM Forms en appelant les méthodes `setUsername` et `setPassword` de l’objet `EncryptDocumentSoapBindingStub`.
+1. Définissez la valeur du nom d’utilisateur et du mot de passe d’AEM forms en appelant la variable `EncryptDocumentSoapBindingStub` de `setUsername` et `setPassword` méthodes.
 
    ```java
     encryptionClientStub.setUsername("administrator");
@@ -1145,18 +1145,18 @@ Pour appeler le service `MyApplication/EncryptDocument` (créé dans Workbench) 
 1. Récupérez le document PDF à envoyer au service `MyApplication/EncryptDocument` en créant un objet `java.io.File`. Transmettez une valeur de chaîne qui indique l’emplacement du document PDF.
 1. Créez un objet `javax.activation.DataHandler` en utilisant son constructeur et en transmettant un objet `javax.activation.FileDataSource`. L’objet `javax.activation.FileDataSource` peut être créé en utilisant son constructeur et en transmettant l’objet `java.io.File` qui représente le document PDF.
 1. Créez un objet `org.apache.axis.attachments.AttachmentPart` en utilisant son constructeur et en transmettant l’objet `javax.activation.DataHandler`.
-1. Ajoutez la pièce jointe en appelant la méthode `addAttachment` de l’objet `EncryptDocumentSoapBindingStub` et en transmettant l’objet `org.apache.axis.attachments.AttachmentPart`.
-1. Créez un objet `BLOB` en utilisant son constructeur. Renseignez l’objet `BLOB` avec la valeur de l’identificateur de la pièce jointe en appelant la méthode `setAttachmentID` de l’objet `BLOB` et en transmettant la valeur de l’identificateur de la pièce jointe. Cette valeur peut être obtenue en appelant la méthode `getContentId` de l’objet `org.apache.axis.attachments.AttachmentPart`.
-1. Appelez le processus `MyApplication/EncryptDocument` en appelant la méthode `invoke` de lʼobjet `EncryptDocumentSoapBindingStub`. Transmettez lʼobjet `BLOB` contenant la pièce jointe DIME. Ce processus renvoie un document PDF chiffré dans un objet `BLOB`.
-1. Obtenez la valeur de l’identifiant de la pièce jointe en appelant la méthode `getAttachmentID` de lʼobjet `BLOB`. Cette méthode renvoie une valeur string qui représente la valeur de l’identifiant de la pièce jointe renvoyée.
-1. Récupérez les pièces jointes en appelant la méthode `getAttachments` de lʼobjet `EncryptDocumentSoapBindingStub`. Cette méthode renvoie un tableau dʼ`Objects` qui représente les pièces jointes.
+1. Joindre la pièce jointe en appelant la fonction `EncryptDocumentSoapBindingStub` de `addAttachment` et transmission de la méthode `org.apache.axis.attachments.AttachmentPart` .
+1. Créez un objet `BLOB` en utilisant son constructeur. Renseignez la variable `BLOB` avec la valeur de l’identifiant de la pièce jointe en appelant `BLOB` de `setAttachmentID` et transmission de la valeur de l’identifiant de la pièce jointe. Cette valeur peut être obtenue en appelant la méthode `org.apache.axis.attachments.AttachmentPart` de `getContentId` .
+1. Appeler la variable `MyApplication/EncryptDocument` en appelant la méthode `EncryptDocumentSoapBindingStub` de `invoke` . Transmettez lʼobjet `BLOB` contenant la pièce jointe DIME. Ce processus renvoie un document PDF chiffré dans un objet `BLOB`.
+1. Obtenez la valeur de l’identifiant de la pièce jointe en appelant le `BLOB` de `getAttachmentID` . Cette méthode renvoie une valeur string qui représente la valeur de l’identifiant de la pièce jointe renvoyée.
+1. Récupérez les pièces jointes en appelant la méthode `EncryptDocumentSoapBindingStub` de `getAttachments` . Cette méthode renvoie un tableau dʼ`Objects` qui représente les pièces jointes.
 1. Effectuez une itération au sein des pièces jointes (le tableau `Object`) et utilisez la valeur de l’identifiant de la pièce jointe pour obtenir le document PDF chiffré. Chaque élément est un objet `org.apache.axis.attachments.AttachmentPart`.
-1. Obtenez lʼobjet `javax.activation.DataHandler` associé à la pièce jointe en appelant la méthode `getDataHandler` de lʼobjet `org.apache.axis.attachments.AttachmentPart`.
-1. Obtenez un objet `java.io.FileStream` en appelant la méthode `getInputStream` de lʼobjet `javax.activation.DataHandler`.
-1. Créez un tableau d’octets et transmettez-le à la méthode `read` de lʼobjet `java.io.FileStream`. Cette méthode renseigne le tableau d’octets avec un flux de données qui représente le document PDF chiffré.
+1. Obtention de la variable `javax.activation.DataHandler` d’un objet associé à la pièce jointe en appelant la fonction `org.apache.axis.attachments.AttachmentPart` de `getDataHandler` .
+1. Obtention d’un `java.io.FileStream` en appelant la méthode `javax.activation.DataHandler` de `getInputStream` .
+1. Créez un tableau d’octets et transmettez ce tableau d’octets à la variable `java.io.FileStream` de `read` . Cette méthode renseigne le tableau d’octets avec un flux de données qui représente le document PDF chiffré.
 1. Créez un objet `java.io.File` en utilisant son constructeur. Cet objet représente le document PDF chiffré.
 1. Créez un objet `java.io.FileOutputStream` en utilisant son constructeur et en transmettant l’objet `java.io.File`. 
-1. Appelez la méthode `write` de lʼobjet `java.io.FileOutputStream` et transmettez le tableau dʼoctets qui contient le flux de données représentant le document PDF chiffré.
+1. Appeler la variable `java.io.FileOutputStream` de `write` et transmettez le tableau byte qui contient le flux de données qui représente le document de PDF chiffré.
 
 **Voir également**
 
@@ -1451,7 +1451,7 @@ Parfois, des problèmes surviennent lors de l’appel de certaines opérations d
 
 ### Appeler des opérations de service de manière asynchrone {#invoking-service-operations-asynchronously}
 
-Si vous tentez d’appeler de manière asynchrone une opération de service AEM Forms, telle que l’opération `htmlToPDF` de Generate PDF, une exception `SoapFaultException` survient. Pour résoudre ce problème, créez un fichier XML de liaison personnalisée qui mappe lʼélément `ExportPDF_Result` et d’autres éléments dans différentes classes. Le code XML suivant représente un fichier de liaison personnalisée.
+Si vous tentez d’appeler une opération de service AEM Forms de manière asynchrone, telle que le PDF Generate `htmlToPDF` une opération `SoapFaultException` survient. Pour résoudre ce problème, créez un fichier XML de liaison personnalisée qui mappe lʼélément `ExportPDF_Result` et d’autres éléments dans différentes classes. Le code XML suivant représente un fichier de liaison personnalisée.
 
 ```xml
  <bindings

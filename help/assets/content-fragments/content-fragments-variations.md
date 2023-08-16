@@ -4,16 +4,16 @@ description: Découvrez comment les variations peuvent rendre votre contenu déc
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2428'
-ht-degree: 82%
+source-wordcount: '2422'
+ht-degree: 80%
 
 ---
 
-# Variations – création de contenu de fragment{#variations-authoring-fragment-content}
+# Variations – créer du contenu de fragment{#variations-authoring-fragment-content}
 
-Les [variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sont une fonction importante des fragments de contenu AEM car elles permettent de créer et de modifier des copies du contenu maître pour une utilisation sur des canaux spécifiques ou dans des cas spécifiques, ce qui rend la diffusion de votre contenu découplé encore plus flexible.
+[Variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sont une fonctionnalité importante des fragments de contenu d’AEM, car ils permettent de créer et de modifier des copies du contenu maître pour les utiliser sur des canaux spécifiques et/ou dans des scénarios, ce qui rend la diffusion de contenu sans interface encore plus flexible.
 
 À partir de l’onglet **Variations**, vous pouvez :
 
@@ -114,7 +114,7 @@ Le format peut être sélectionné dans l’éditeur plein écran.
 
 ### Texte enrichi {#rich-text}
 
-La modification de texte enrichi permet de mettre en forme :
+L&#39;édition de texte enrichi permet de mettre en forme :
 
 * Gras
 * Italique
@@ -149,7 +149,7 @@ Le texte brut permet de saisir du contenu de manière rapide, sans formatage ni 
 
 >[!NOTE]
 >
->Pour plus d’informations, voir [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) documentation.
+>Pour plus d’informations, voir [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) la documentation.
 
 Vous pouvez ainsi mettre en forme votre texte à l’aide de Markdown. Vous pouvez définir :
 
@@ -324,7 +324,7 @@ Les annotations :
 
 Pour simplifier le processus de création de fragments de contenu, vous pouvez ajouter directement des [Ressources](/help/assets/manage-assets.md) (images) au fragment.
 
-Elles seront ajoutées à la séquence de paragraphes du fragment sans mise en forme ; le formatage peut être effectué lorsque la variable [fragment utilisé/référencé sur une page](/help/sites-authoring/content-fragments.md).
+Elles seront ajoutées à la séquence de paragraphes du fragment sans aucune mise en forme ; le formatage peut être effectué lorsque la fonction [fragment utilisé/référencé sur une page](/help/sites-authoring/content-fragments.md).
 
 >[!CAUTION]
 >

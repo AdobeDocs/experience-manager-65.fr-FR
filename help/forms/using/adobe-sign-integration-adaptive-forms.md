@@ -11,10 +11,10 @@ discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2055'
-ht-degree: 96%
+source-wordcount: '2054'
+ht-degree: 94%
 
 ---
 
@@ -181,7 +181,7 @@ Avant de commencer à connecter AEM Forms à Adobe Acrobat Sign Solutions :
 
 #### Partager l’URL de redirection et les champs d’application avec l’équipe Adobe Sign et recevoir des informations d’identification
 
-L’équipe Adobe Acrobat Sign Solutions pour le gouvernement exige que la `re-direct URL` et certains champs d’application soient activés pour votre application Adobe Acrobat Sign (répertoriés ci-dessous) afin de générer les informations d’identification (identifiant client et secret client) qui vous permettent de connecter AEM Forms à Adobe Acrobat Sign Solutions pour le gouvernement.
+L’équipe Adobe Acrobat Sign for Government Solutions a besoin des `re-direct URL` et les portées spécifiques à activer pour votre application Adobe Acrobat Sign (répertoriées ci-dessous) pour générer les informations d’identification (identifiant client et secret client) qui vous permettent de connecter AEM Forms à Adobe Acrobat Sign Solutions for Government.
 
 Partagez les `scopes` (répertoriés ci-dessous) et la `re-direct URL` créés et notés à la dernière étape de la section précédente avec votre personne représentante d’Adobe Acrobat Sign Solution pour le gouvernement [membre de l’équipe Adobe Professional Services](https://opensource.adobe.com/acrobat-sign/signgov/gstarted.html#password).
 

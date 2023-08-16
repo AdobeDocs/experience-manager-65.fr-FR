@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 5afe864d-5794-4ffa-99e7-a3233f982aff
 docset: aem65
 exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: ht
-source-wordcount: '2534'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '2531'
+ht-degree: 98%
 
 ---
 
@@ -113,6 +113,7 @@ Permet de définir la hauteur et la largeur de l’image.
 >Pour enregistrer l’image, vous devez renseigner le champ **Texte de remplacement** sur l’**onglet Avancé**. Sinon, le message d’erreur ci-dessous s’affiche :
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 L’exemple ci-dessous présente le composant Image (Campaign) affiché.
 
@@ -133,8 +134,7 @@ Légende du lien. Il s’agit du texte que les utilisateurs voient.
 Ajoute des informations supplémentaires sur l’utilisation du lien.
 
 * **LinkType**
-Dans la liste déroulante, sélectionnez entre une 
-**URL personnalisée** et un **Document adaptatif**. Ce champ est obligatoire. Si vous sélectionnez URL personnalisée, vous pouvez fournir l’URL du lien. Si vous sélectionnez Document adaptatif, vous pouvez fournir le chemin du document.
+Dans la liste déroulante, sélectionnez entre une **URL personnalisée** et un **Document adaptatif**. Ce champ est obligatoire. Si vous sélectionnez URL personnalisée, vous pouvez fournir l’URL du lien. Si vous sélectionnez Document adaptatif, vous pouvez fournir le chemin du document.
 
 * **Paramètre d’URL supplémentaire**
 Ajoutez des paramètres d’URL supplémentaires. Cliquez sur Ajouter un élément pour ajouter plusieurs éléments.
@@ -144,6 +144,7 @@ Ajoutez des paramètres d’URL supplémentaires. Cliquez sur Ajouter un éléme
 >Pour enregistrer le composant, vous devez renseigner le champ **Type de lien** sur l’onglet **Informations sur l’URL**. Autrement, le message d’erreur ci-dessous s’affiche :
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 L’exemple ci-dessous présente le composant Lien (Campaign) affiché.
 
@@ -171,8 +172,7 @@ Permet de saisir du texte. Utilisez la barre d’outils pour modifier la mise en
 * **Image**
 Faites glisser une image à partir de l’Outil de recherche de contenu ou cliquez pour accéder à une image. Vous pouvez la recadrer ou la faire pivoter le cas échéant.
 
-* **Propriétés de l’image** (**Propriétés d’image avancées**)
-Permet de spécifier ce qui suit :
+* **Propriétés de l’image** (**Propriétés d’image avancées**) Permet de spécifier les éléments suivants :
 
    * **Titre**
 Titre du bloc de texte ; il s’affiche lorsque l’utilisateur pointe dessus avec la souris.
@@ -194,6 +194,7 @@ Permet de définir la hauteur et la largeur de l’image.
 >Le champ **Texte de remplacement** sur l’onglet **Avancé** est obligatoire. Autrement, vous ne pouvez pas enregistrer le composant, et le message d’erreur ci-dessous s’affiche :
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 L’exemple ci-dessous présente le composant Texte et image (Campaign) affiché.
 
@@ -203,7 +204,7 @@ L’exemple ci-dessous présente le composant Texte et image (Campaign) affiché
 
 Le composant Texte et personnalisation (Campaign) permet de saisir un bloc de texte en utilisant un éditeur WYSIWYG, avec les fonctionnalités de l’[éditeur de texte enrichi](/help/sites-authoring/rich-text-editor.md). De plus, ce composant permet d’utiliser des champs de contexte et des blocs de personnalisation, disponibles dans Adobe Campaign. Reportez-vous également à la section [Insertion d’une personnalisation](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
 
-Une série d’icônes permet de mettre en forme le texte (attributs de police, alignement, liens, listes et mise en retrait).
+La sélection des icônes vous permet de mettre en forme le texte, notamment les caractéristiques de police, l’alignement, les liens, les listes et la mise en retrait.
 
 Ajoutez du texte comme vous le feriez normalement dans l’éditeur de texte enrichi. Ajoutez une personnalisation en sélectionnant la liste déroulante Adobe Campaign et en sélectionnant les champs appropriés.
 
@@ -364,7 +365,7 @@ L’exemple suivant présente le composant Affichage d’erreur (Campaign) affic
 
 ### Clé de réconciliation masquée (Campaign) {#hidden-reconciliation-key-campaign}
 
-Le composant Clé de réconciliation masquée (Campaign) permet d’ajouter des champs masqués dans le cadre de la clé de réconciliation d’un formulaire.
+Le composant Clé de réconciliation masquée (Campaign) permet d&#39;ajouter des champs masqués dans le cadre de la clé de réconciliation d&#39;un formulaire.
 
 Vous pouvez configurer les éléments ci-dessous dans le composant Clé de réconciliation masquée (Campaign) :
 

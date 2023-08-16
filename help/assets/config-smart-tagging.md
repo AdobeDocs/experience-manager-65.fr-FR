@@ -5,10 +5,10 @@ contentOwner: AG
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
-workflow-type: ht
-source-wordcount: '2245'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '2244'
+ht-degree: 99%
 
 ---
 
@@ -47,7 +47,7 @@ Pour configurer le service de contenu dynamique, procédez comme suit :
 
 ### Obtention d’un certificat public en créant la configuration du service de contenu dynamique {#obtain-public-certificate}
 
-Un certificat public permet d’authentifier votre profil sur la console Adobe Developer.
+Un certificat public permet d’authentifier votre profil sur la console Adobe Developer.
 
 1. Dans l’interface utilisateur [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Services cloud hérités]**.
 

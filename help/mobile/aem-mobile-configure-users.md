@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 exl-id: 58b7d1b9-a851-442a-9d02-212cad8abbed
-source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '511'
 ht-degree: 2%
 
 ---
@@ -58,7 +58,7 @@ Les membres du groupe app-author sont chargés de la création AEM contenu de l�
 
 Les membres du groupe app-admins peuvent créer du contenu d’application avec les mêmes autorisations que celles incluses avec app-authors. **ET** en outre, il est également chargé des tâches suivantes :
 
-* Mises à jour OTA ContentSync de l’application intermédiaire, de publication et d’effacement
+* Mise à jour OTA ContentSync de l’application intermédiaire, publication et effacement
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Les membres du groupe app-admins peuvent créer du contenu d’application avec 
 
    * (Lecture) sur /etc/contentsync pour accéder aux modèles d’exportation
    * (Lecture) sur /var pour la traversée du chemin en lecture
-   * (Lecture, Écriture, Modification, Suppression) sur /var/contentsync pour écrire, lire et nettoyer le contenu d’exportation mis en cache ContentSync
+   * (Lecture, écriture, modification, suppression) sur /var/contentsync pour écrire, lire et nettoyer le contenu d’exportation mis en cache ContentSync
 
 ### Ressources supplémentaires {#additional-resources}
 

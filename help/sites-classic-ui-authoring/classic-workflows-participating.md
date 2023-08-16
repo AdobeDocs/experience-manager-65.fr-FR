@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '543'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 97%
 
 ---
 
@@ -25,13 +25,13 @@ Vous pouvez effectuer les actions suivantes pour traiter un élément de travail
 
 * **Terminé**
 
-   Vous pouvez terminer un élément pour permettre au workflow de passer à l’étape suivante.
+  Vous pouvez terminer un élément pour permettre au workflow de passer à l’étape suivante.
 
 * **Déléguer**
 
-   Si une étape vous a été affectée, mais que vous ne pouvez pas effectuer d’action pour une raison quelconque, vous pouvez la déléguer à un autre utilisateur, une autre utilisatrice ou à un autre groupe.
+  Si une étape vous a été affectée, mais que vous ne pouvez pas effectuer d’action pour une raison quelconque, vous pouvez la déléguer à un autre utilisateur, une autre utilisatrice ou à un autre groupe.
 
-   Les utilisateurs et les utilisatrices pouvant faire l’objet d’une délégation dépendent de la personne à qui l’élément de travail a été affecté :
+  Les utilisateurs et les utilisatrices pouvant faire l’objet d’une délégation dépendent de la personne à qui l’élément de travail a été affecté :
 
    * Si l’élément de travail a été affecté à un groupe, les membres du groupe sont disponibles.
    * Si l’élément de travail a été attribué à un groupe puis délégué à un utilisateur, les membres du groupe et le groupe sont disponibles.
@@ -39,7 +39,7 @@ Vous pouvez effectuer les actions suivantes pour traiter un élément de travail
 
 * **Revenir en arrière**
 
-   Si vous découvrez qu’une étape, ou une série d’étapes, doit être répétée, vous pouvez revenir à une étape antérieure. Cela vous permet de sélectionner une étape qui s’est produite plus tôt dans le workflow pour la traiter à nouveau. Le workflow revient à l’étape que vous spécifiez, puis continue à partir de là.
+  Si vous découvrez qu’une étape, ou une série d’étapes, doit être répétée, vous pouvez revenir à une étape antérieure. Vous pouvez ainsi sélectionner une étape, qui s’est produite plus tôt dans le workflow, pour le retraitement. Le workflow revient à l’étape que vous spécifiez, puis continue à partir de là.
 
 ## Participation à un workflow {#participating-in-a-workflow}
 
@@ -49,11 +49,11 @@ Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**),
 
 * La colonne **Statut** de la console Sites web indique quand une page se trouve dans un workflow :
 
-   ![workflowstatus-1](assets/workflowstatus-1.png)
+  ![workflowstatus-1](assets/workflowstatus-1.png)
 
 * Lorsque vous ou un groupe auquel vous appartenez vous voyez attribuer un élément de travail dans le cadre d’un workflow, l’élément de travail apparaît dans votre boîte de réception Workflow AEM.
 
-   ![workflowinbox](assets/workflowinbox.png)
+  ![workflowinbox](assets/workflowinbox.png)
 
 ### Réalisation d’une étape de participant {#completing-a-participant-step}
 

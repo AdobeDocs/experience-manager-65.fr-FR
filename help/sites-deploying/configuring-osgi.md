@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: bf55fcb855cbdad72c669058662ca70fe57e6632
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1973'
-ht-degree: 97%
+source-wordcount: '1971'
+ht-degree: 96%
 
 ---
 
@@ -56,9 +56,9 @@ L’une ou l’autre des méthodes peut être utilisée bien qu’il existe des 
 Quelle que soit la méthode utilisée, toutes ces méthodes de configuration :
 
 * garantissent que la copie ou la réplication du contenu du référentiel recrée des configurations identiques ;
-* vous permettent d’extraire des configurations vers FileVault ou Subversion, soit pour des raisons de sécurité, soit pour d’autres mises à jour ;
+* Permet d’extraire des configurations vers FileVault ou Subversion, soit pour des raisons de sécurité, soit pour d’autres mises à jour.
 * peuvent être enregistrées dans des packages à utiliser lors de la configuration d’autres instances ;
-* Vous permettent d’effectuer des déploiements de configuration à l’aide de scripts pour propager les détails de configuration.
+* Vous permet d’effectuer des déploiements de configuration à l’aide de scripts pour propager les détails de configuration.
 
 >[!NOTE]
 >

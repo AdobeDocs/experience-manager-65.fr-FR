@@ -1,7 +1,7 @@
 ---
 title: Création d’une page du portail Formulaires
 seo-title: Creating a forms portal page
-description: Forms Portal fournit aux développeurs Web des composants pour la création et la personnalisation d’un portail de formulaires sur les sites Web créés à l’aide d’Adobe Experience Manager (AEM).
+description: Forms Portal fournit aux développeurs Web des composants pour la création et la personnalisation d’un portail de formulaires sur les sites Web créés à l’aide de Adobe Experience Manager (AEM).
 seo-description: Forms Portal equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
 uuid: a5017de5-616c-4ce4-81aa-f28c741f8e8f
 content-type: reference
@@ -11,10 +11,10 @@ discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1663'
-ht-degree: 54%
+source-wordcount: '1661'
+ht-degree: 53%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 54%
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
 | AEM 6.5 | Cet article |
 
-Les composants du portail Forms fournissent aux développeurs Web des composants pour créer et personnaliser un portail de formulaires sur les sites Web créés à l’aide d’Adobe Experience Manager (AEM). Pour un aperçu rapide de Forms Portal, reportez-vous à la section [Présentation de la publication de formulaires sur un portail](../../forms/using/introduction-publishing-forms.md).
+Les composants de portail Forms fournissent aux développeurs Web des composants pour créer et personnaliser un portail de formulaires sur les sites Web créés à l’aide de Adobe Experience Manager (AEM). Pour un aperçu rapide de Forms Portal, reportez-vous à la section [Présentation de la publication de formulaires sur un portail](../../forms/using/introduction-publishing-forms.md).
 
 ## Prérequis {#prerequisites}
 
@@ -151,7 +151,7 @@ La boîte de dialogue **Modifier** comprend plusieurs onglets fournissant des op
   <tr>
    <td><span class="uicontrol"><strong>Style</strong></code></td>
    <td>Type de style</td>
-   <td>Vous permet de spécifier <strong>Aucun style, Style par défaut</strong> ou <strong>Style personnalisé</strong> pour répertorier les formulaires.</td>
+   <td>Permet de spécifier les <strong>Aucun style, style par défaut</strong>, ou <strong>Style personnalisé </strong>pour répertorier les formulaires.</td>
   </tr>
   <tr>
    <td> </td>
@@ -235,7 +235,7 @@ Pour répertorier les formulaires sur une page, ajoutez le composant **[!UICONTR
 
 Pour lier un formulaire à partir de n’importe quel emplacement de la page, utilisez le composant Lien . Pour en savoir plus sur le composant Link, consultez la section [Intégrer le composant Link dans une page](../../forms/using/embedding-link-component-page.md).
 
-Pour répertorier les formulaires qui sont à l’état de brouillon et ceux qui sont déjà envoyés, utilisez la méthode **[!UICONTROL Brouillons et envois]** composant. Pour plus d’informations, voir [Personnalisation du composant Drafts and Submissions](../../forms/using/draft-submission-component.md).
+Pour répertorier les formulaires qui sont à l’état de brouillon et ceux qui sont déjà envoyés, utilisez le **[!UICONTROL Brouillons et envois]** composant. Pour plus d’informations, voir [Personnalisation du composant Drafts and Submissions](../../forms/using/draft-submission-component.md).
 
 ## Compatibilité avec les appareils mobiles {#mobile-device-friendliness}
 

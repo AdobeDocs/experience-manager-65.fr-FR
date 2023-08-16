@@ -1,20 +1,16 @@
 ---
 title: Ajout d’une action personnalisée à la vue Liste des ressources
-seo-title: Add custom action to the Asset Listing view
 description: Cet article explique comment ajouter une action personnalisée à la vue liste des ressources.
-seo-description: This article teaches how to add custom action to the Asset Listing view
-uuid: 45f25cfb-f08f-42c6-99c5-01900dd8cdee
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '1354'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 100%
 
 ## Présentation {#overview}
 
-La solution Correspondence Management vous permet d’ajouter des actions personnalisées à l’interface utilisateur Gérer les ressources.
+La solution Correspondence Management vous permet d’ajouter des actions personnalisées à l’interface utilisateur de gestion des actifs.
 
 Vous pouvez ajouter une action personnalisée à la vue liste des ressources pour :
 

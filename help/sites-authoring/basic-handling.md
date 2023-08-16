@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3025'
-ht-degree: 99%
+source-wordcount: '3017'
+ht-degree: 95%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 99%
 
 ### Interface utilisateur pour écrans tactiles {#a-touch-enabled-ui}
 
-L’interface utilisateur d’AEM est désormais adaptée aux écrans tactiles. Les interfaces de ce type permettent d’interagir de manière tactile avec le logiciel en appuyant sur l’écran, en maintenant la pression du doigt ou en le faisant glisser. L’expérience est totalement différente des actions de l’interface de bureau classique, où le clic, le double-clic, le bouton droit et le pointage avec la souris avaient pignon sur rue.
+L’interface utilisateur d’AEM est désormais adaptée aux écrans tactiles. Une interface tactile vous permet d’interagir avec le logiciel en appuyant sur l’écran, en maintenant la touche enfoncée et en le faisant glisser. L’expérience est totalement différente des actions de l’interface de bureau classique, où le clic, le double-clic, le bouton droit et le pointage avec la souris avaient pignon sur rue.
 
 Étant donné que l’interface utilisateur de AEM est tactile, vous pouvez utiliser les gestes tactiles sur vos appareils tactiles (par exemple, téléphone mobile ou tablette) et les actions de la souris sur un poste de travail classique.
 
@@ -97,11 +97,11 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
   </tr>
   <tr>
    <td>Communities</td>
-   <td>Cette console vous permet de créer et de gérer des <a href="/help/communities/sites-console.md">sites de la communauté</a>, à des fins d’<a href="/help/communities/overview.md#engagement-community">engagement</a> et d’<a href="/help/communities/overview.md#enablement-community">activation</a>.</td>
+   <td>Cette console vous permet de créer et de gérer des <a href="/help/communities/sites-console.md">sites communautaires</a> pour <a href="/help/communities/overview.md#engagement-community">engagement</a> et <a href="/help/communities/overview.md#enablement-community">activation</a>.</td>
   </tr>
   <tr>
-   <td>Commerce </td>
-   <td>Cela vous permet de gérer les produits, les catalogues de produits et les commandes liés à vos sites de <a href="/help/commerce/cif-classic/administering/ecommerce.md">commerce</a>.</td>
+   <td>Commerce</td>
+   <td>Vous pouvez ainsi gérer des produits, des catalogues de produits et des commandes liés à vos <a href="/help/commerce/cif-classic/administering/ecommerce.md">Commerce</a> sites.</td>
   </tr>
   <tr>
    <td>Fragments d’expérience</td>
@@ -121,7 +121,7 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=fr">Screens</a> vous permet de gérer tous vos écrans orientés clients, quelle que soit leur taille et leur emplacement.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=fr">Screens</a> vous permettra de gérer tous vos écrans, quelle que soit leur taille et leur emplacement.</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -178,7 +178,7 @@ L’en-tête est toujours affiché en haut de l’écran. Bien que la plupart de
 
 * [Sélecteur de rail](/help/sites-authoring/basic-handling.md#rail-selector)
 
-  ![La liste du sélecteur de rail s’affiche sur le côté gauche de l’écran Adobe Experience Manager.](do-not-localize/screen_shot_2018-03-23at103943.png)
+  ![Liste du sélecteur de rail affichée sur le côté gauche de l’écran Adobe Experience Manager.](do-not-localize/screen_shot_2018-03-23at103943.png)
 
   Les options présentées dépendent de la console active. Par exemple, dans la console **Sites**, vous ne pouvez sélectionner que le contenu (valeur par défaut), la frise chronologique, les références ou le panneau latéral de filtrage.
 
@@ -188,7 +188,7 @@ L’en-tête est toujours affiché en haut de l’écran. Bien que la plupart de
 
   ![Chemins de navigation](assets/bh-05.png)
 
-  Le chemin de navigation est situé au milieu du rail. Il affiche toujours la description de l’élément sélectionné et vous permet de naviguer au sein d’une console spécifique. Dans la console Sites, vous pouvez parcourir les différents niveaux de votre site Web.
+  Situé au milieu du rail et affichant toujours la description de l’élément sélectionné, le chemin de navigation vous permet de naviguer dans une console spécifique. Dans la console Sites, vous pouvez parcourir les différents niveaux de votre site Web.
 
   Il vous suffit de cliquer sur le texte du chemin de navigation pour afficher une liste déroulante des niveaux de la hiérarchie de l’élément sélectionné. Cliquez sur une entrée pour accéder à cet emplacement.
 
@@ -537,7 +537,7 @@ Grâce au panneau latéral de l’arborescence de contenu associé à un mode Li
 
 La frise chronologique peut être utilisée pour afficher et/ou lancer des événements qui se sont produits sur la ressource sélectionnée. Pour ouvrir la colonne Chronologie, utilisez le sélecteur de rail :
 
-La colonne Chronologie permet d’effectuer les actions suivantes :
+La colonne Chronologie permet d’effectuer les opérations suivantes :
 
 * [Afficher divers événements liés à un élément sélectionné.](#timelineviewevents)
 

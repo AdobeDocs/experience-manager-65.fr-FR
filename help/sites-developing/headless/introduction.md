@@ -2,10 +2,10 @@
 title: Développement découplé pour AEM 6.5 Sites
 description: Découvrez comment les puissantes fonctionnalités d’AEM 6.5, telles que les modèles de contenu, les fragments de contenu et l’API GraphQL, fonctionnent ensemble pour vous permettre de gérer vos expériences de manière centralisée et de les diffuser sur l’ensemble des canaux.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
-source-git-commit: ac70fb534a95c9eee6f8340d9b8720a607b9f79f
-workflow-type: ht
-source-wordcount: '493'
-ht-degree: 100%
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+workflow-type: tm+mt
+source-wordcount: '495'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ L’implémentation découplée renonce à la gestion des pages et des composant
 
 ## Comparaison entre couplage et découplage {#headful-headless}
 
-Ce document se concentre sur le modèle de mise en œuvre entièrement découplée d’AEM. Pour autant, le choix entre couplage et découplage n’est pas nécessairement binaire dans AEM. Vous pouvez utiliser des fonctions découplées afin de gérer et diffuser votre contenu pour différents points d’entrée tout en permettant aux auteurs de contenu de modifier des applications sur une seule page. Le tout dans AEM.
+Ce document se concentre sur le modèle de mise en œuvre entièrement découplée d’AEM. Cependant, l’affichage tête contre tête n’a pas besoin d’être un choix binaire dans AEM. Vous pouvez utiliser des fonctions découplées afin de gérer et diffuser votre contenu pour différents points d’entrée tout en permettant aux auteurs de contenu de modifier des applications sur une seule page. Le tout dans AEM.
 
 >[!TIP]
 >

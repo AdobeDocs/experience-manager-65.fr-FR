@@ -7,9 +7,9 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1158'
 ht-degree: 39%
 
 ---
@@ -32,7 +32,7 @@ Cette section décrit comment utiliser l’éditeur en bloc dans le **Outils** c
 
 >[!CAUTION]
 >
->Avec le [abandon de l’interface utilisateur classique](/help/release-notes/deprecated-removed-features.md) dans AEM 6.4, l’éditeur en bloc a également été abandonné et, par conséquent, Adobe ne prévoit pas d’améliorer davantage l’éditeur en bloc.
+>Avec la variable [abandon de l’interface utilisateur classique](/help/release-notes/deprecated-removed-features.md) dans AEM 6.4, l’éditeur en bloc a également été abandonné et, par conséquent, Adobe ne prévoit pas d’améliorer davantage l’éditeur en bloc.
 
 ## Exemple de cas d’utilisation pour l’éditeur en bloc {#example-use-case-for-the-bulk-editor}
 
@@ -41,11 +41,11 @@ Par exemple, si vous avez besoin de tous les noms et adresses électroniques des
 Le site web de Geometrixx fournit un exemple illustrant ce cas pratique :
 
 1. Accédez au **Assistance** puis à la page **Satisfaction de la clientèle** enquête.
-1. **Modifiez** le paragraphe **Début du formulaire**. Dans la boîte de dialogue, cliquez sur **Avancé** , développez l’onglet **Configuration d’action**, puis cliquez sur **Afficher les données...**.
+1. **Modifiez** le paragraphe **Début du formulaire**. Cliquez sur la **Avancé** , développez la **Configuration d’action**, puis cliquez sur **Afficher les données...**.
 
    ![Exemple d&#39;enquête sur la satisfaction client](assets/custsatsurvey.png)
 
-1. L’éditeur en bloc est entièrement personnalisable. Cependant, dans cet exemple, il ne permet pas aux utilisateurs de modifier le contenu, mais seulement d’exporter les informations vers une feuille de calcul.
+1. L’éditeur en bloc est entièrement personnalisable, bien que dans cet exemple, il ne permet pas aux utilisateurs de modifier le contenu, mais seulement d’exporter les informations vers une feuille de calcul.
 
    ![Console de l’éditeur en bloc](assets/bulkeditor.png)
 
@@ -62,7 +62,7 @@ L’éditeur en bloc vous permet d’effectuer les opérations suivantes :
 
 Pour utiliser l’éditeur en bloc afin de modifier plusieurs éléments simultanément :
 
-1. Dans le **Outils** , cliquez sur la console **Importateurs** pour le développer.
+1. Dans le **Outils** , cliquez sur **Importateurs** pour le développer.
 1. Double-cliquez sur le **Éditeur en bloc** pour l’ouvrir.
 1. Saisissez vos exigences de sélection :
 
@@ -78,7 +78,7 @@ Pour utiliser l’éditeur en bloc afin de modifier plusieurs éléments simulta
   </tr>
   <tr>
    <td>Paramètres de requête</td>
-   <td>À l’aide des paramètres GQL, saisissez la chaîne de recherche que l’éditeur en bloc doit rechercher dans le référentiel. par exemple, <code>type:Page</code> recherche toutes les pages du chemin racine, <code>text:professional</code> recherche toutes les pages qui contiennent le mot "professionnel", et <code>"jcr:title":English</code> recherche toutes les pages dont le titre est "Anglais". Vous pouvez rechercher uniquement des chaînes.</td>
+   <td>À l’aide des paramètres GQL, saisissez la chaîne de recherche que l’éditeur en bloc doit rechercher dans le référentiel ; par exemple, <code>type:Page</code> recherche toutes les pages du chemin racine, <code>text:professional</code> recherche toutes les pages qui contiennent le mot "professionnel", et <code>"jcr:title":English</code> recherche toutes les pages dont le titre est "Anglais". Vous pouvez rechercher uniquement des chaînes.</td>
   </tr>
   <tr>
    <td>Case à cocher Mode Contenu</td>
@@ -117,7 +117,7 @@ Pour l’exemple ci-dessus, toutes les pages qui correspondent aux critères de 
 #### Paramètres de requête GQL supplémentaires {#additional-gql-query-parameters}
 
 * **path :** effectue une recherche uniquement sur les nœuds sous ce chemin d’accès. Si vous spécifiez plusieurs termes avec un préfixe de chemin, seul le dernier est pris en compte.
-* **type :** renvoie uniquement les nœuds des types déterminés. Cela inclut les types Principal et mixin. Vous pouvez spécifier plusieurs types de noeuds séparés par des virgules. GQL renvoie les noeuds de l’un des types spécifiés.
+* **type :** renvoie uniquement les nœuds des types déterminés. Cela inclut les types principal et mixin. Vous pouvez spécifier plusieurs types de noeuds séparés par des virgules. GQL renvoie les noeuds de l’un des types spécifiés.
 * **order :** organise le résultat en fonction des propriétés données. Vous pouvez spécifier plusieurs noms de propriétés séparés par des virgules. Pour contrôler le résultat dans l’ordre descendant, ajoutez simplement le préfixe « - » (moins) au nom de la propriété. Par exemple, order:-name. L’utilisation d’un signe plus renvoie le résultat dans l’ordre croissant, qui est également la valeur par défaut.
 * **limit :** limite le nombre de résultats à l’aide d’un intervalle. Par exemple, limit:10.20 L’intervalle est de base zéro, le début est inclusif et la fin est exclusive. Vous pouvez également spécifier un intervalle ouvert :limit:10.. ou limit:..20. Si les points sont omis et qu’une seule valeur est spécifiée, GQL renvoie, au maximum, ce nombre de résultats. Par exemple, limit:10 (renvoie les dix premiers résultats).
 
@@ -143,7 +143,7 @@ Pour exporter du contenu :
 
 ### Importation de contenu {#importing-content}
 
-Par défaut, la fonctionnalité d’importation est masquée lorsque vous ouvrez l’éditeur en bloc. Il vous suffit d’ajouter le paramètre . `hib=false` L’URL affiche la variable **Importer** sur la page Éditeur en bloc. Vous pouvez importer du contenu à partir de n’importe quel fichier de données séparées par des tabulations (`.tsv`). Pour que l’importation fonctionne correctement, les en-têtes de colonne (première ligne de cellules) doivent correspondre aux en-têtes de colonne du tableau dans lequel vous importez.
+Par défaut, la fonctionnalité d’importation est masquée lorsque vous ouvrez l’éditeur en bloc. Il vous suffit d’ajouter le paramètre `hib=false` L’URL affiche la variable **Importer** sur la page Éditeur en bloc. Vous pouvez importer du contenu à partir de n’importe quel fichier de données séparées par des tabulations (`.tsv`). Pour que l’importation fonctionne correctement, les en-têtes de colonne (première ligne de cellules) doivent correspondre aux en-têtes de colonne du tableau dans lequel vous importez.
 
 >[!NOTE]
 >

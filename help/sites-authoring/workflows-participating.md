@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: f170613c-329e-446b-9ac3-350615f1bfb6
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
-workflow-type: ht
-source-wordcount: '1526'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1525'
+ht-degree: 99%
 
 ---
 
@@ -172,7 +172,7 @@ Vous pouvez également utiliser la chronologie pour déléguer et/ou attribuer u
 
 ### Revenir d’une étape de participant en arrière {#performing-step-back-on-a-participant-step}
 
-Si vous découvrez qu’une étape, ou une série d’étapes, doit être répétée, vous pouvez revenir à une étape antérieure. Cela vous permet de sélectionner une étape qui s’est produite plus tôt dans le workflow pour la traiter à nouveau. Le workflow revient à l’étape que vous spécifiez, puis continue à partir de là.
+Si vous découvrez qu’une étape, ou une série d’étapes, doit être répétée, vous pouvez revenir à une étape antérieure. Vous pouvez ainsi sélectionner une étape, qui s’est produite plus tôt dans le workflow, pour le retraitement. Le workflow revient à l’étape que vous spécifiez, puis continue à partir de là.
 
 Sur cette action, vous pouvez indiquer :
 

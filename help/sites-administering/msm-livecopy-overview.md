@@ -11,21 +11,21 @@ content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
-source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 55%
+source-wordcount: '551'
+ht-degree: 54%
 
 ---
 
 # Console Aperçu de Live Copy{#live-copy-overview-console}
 
-Le **Présentation de la Live Copy** vous permet de :
+La variable **Présentation de la Live Copy** permet d’effectuer les opérations suivantes :
 
 * Afficher/gérer l’héritage sur un site :
 
    * Afficher l’arborescence du plan directeur et la structure de Live Copy correspondante, ainsi que leur état d’héritage
-   * Modifiez l’état d’héritage ; par exemple, suspendre, reprendre
+   * Modifier l’état d’héritage ; par exemple, suspendre, reprendre
    * Affichage des propriétés de plan directeur et de Live Copy
 
 * d’exécuter des actions de déploiement
@@ -55,10 +55,10 @@ L’**aperçu de la Live Copy** peut être ouvert via le panneau latéral **Ré
 
 ### Ouverture de l’aperçu de la Live Copy - Propriétés d’une page de plan directeur {#opening-live-copy-overview-properties-of-a-blueprint-page}
 
-Le **Présentation de la Live Copy** peut être ouvert lors de l’affichage des propriétés d’une page de plan directeur :
+La variable **Présentation de la Live Copy** peut être ouvert lors de l’affichage des propriétés d’une page de plan directeur :
 
 1. Ouvrir **Propriétés** pour la page de plan directeur appropriée.
-1. Ouvrez le **Blueprint** tab - **Présentation de la Live Copy** s’affiche dans la barre d’outils supérieure :
+1. Ouvrez le **Blueprint** de l’onglet **Présentation de la Live Copy** s’affiche dans la barre d’outils supérieure :
 
    ![Onglet Plan directeur - Aperçu de la Live Copy](assets/chlimage_1-360.png)
 
@@ -72,10 +72,10 @@ Le **Présentation de la Live Copy** peut être ouvert lors de l’affichage des
 
 ## Utilisation de l’aperçu de la Live Copy {#using-the-live-copy-overview}
 
-Le **Présentation de la Live Copy** peut également être utilisé pour exécuter des actions sur la Live Copy :
+La variable **Présentation de la Live Copy** peut également être utilisé pour exécuter des actions sur la Live Copy :
 
 1. Ouvrez l’**aperçu de la Live Copy**.
-1. Sélectionnez la page de plan directeur ou de Live Copy requise. La barre d’outils est mise à jour pour afficher les actions disponibles. Le [actions](/help/sites-administering/msm.md#terms-used) disponible selon que vous sélectionnez une [plan directeur](#actions-for-a-blueprint-page) ou [Live Copy](#actions-for-a-live-copy-page) page :
+1. Sélectionnez la page de plan directeur ou de Live Copy requise. La barre d’outils est mise à jour pour afficher les actions disponibles. La variable [actions](/help/sites-administering/msm.md#terms-used) disponible selon que vous sélectionnez une [plan directeur](#actions-for-a-blueprint-page) ou [Live Copy](#actions-for-a-live-copy-page) page :
 
 ### Actions d’une page de plan directeur {#actions-for-a-blueprint-page}
 
@@ -119,9 +119,9 @@ Lorsque vous sélectionnez une page Live Copy, les actions suivantes sont dispon
 
 * [Reprise](/help/sites-administering/msm-livecopy.md#resuming-inheritance-for-a-page)
 
-   * La reprise vous permet de rétablir une relation suspendue.
+   * Reprendre vous permet de rétablir une relation suspendue.
 
-* [Désolidarisation](/help/sites-administering/msm.md#detaching-a-live-copy)
+* [Désolidariser](/help/sites-administering/msm.md#detaching-a-live-copy)
 
    * Supprime de façon permanente la relation en direct entre une Live Copy et sa page de plan directeur.
 

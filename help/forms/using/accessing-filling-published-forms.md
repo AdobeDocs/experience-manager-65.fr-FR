@@ -1,15 +1,15 @@
 ---
 title: Accès et remplissage des formulaires publiés
-description: Forms Portal fournit aux développeurs Web des composants pour la création et la personnalisation d’un portail de formulaires sur les sites Web créés à l’aide d’Adobe Experience Manager (AEM).
+description: Forms Portal fournit aux développeurs Web des composants pour la création et la personnalisation d’un portail de formulaires sur les sites Web créés à l’aide de Adobe Experience Manager (AEM).
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 21%
+source-wordcount: '924'
+ht-degree: 20%
 
 ---
 
@@ -19,7 +19,7 @@ Dans une configuration de déploiement de portail axée sur les formulaires, le 
 
 Cela entraîne souvent des problèmes lors de la gestion des délais de configuration et de production. Par exemple, si une version plus récente d’un formulaire est disponible dans le référentiel, le concepteur de formulaire remplace le formulaire sur la plateforme web, modifie l’application web et redéploie le formulaire sur le site public. Le redéploiement de l’application web peut entraîner un temps d’arrêt du serveur. Les temps d’arrêt du serveur étant une activité planifiée, les modifications ne peuvent pas être transférées immédiatement sur le site public.
 
-Forms Portal réduit les surcharges de gestion et les délais de production. Il fournit aux développeurs Web des composants pour la création et la personnalisation d’un portail de formulaires sur les sites Web créés à l’aide d’Adobe Experience Manager (AEM).
+Forms Portal réduit les surcharges de gestion et les délais de production. Il fournit aux développeurs Web des composants pour la création et la personnalisation d’un portail de formulaires sur les sites Web créés à l’aide de Adobe Experience Manager (AEM).
 
 Pour plus d’informations sur le portail des formulaires et ses fonctions, reportez-vous à la section [Présentation de la publication de formulaires sur un portail](/help/forms/using/introduction-publishing-forms.md).
 
@@ -35,9 +35,9 @@ Exemple de page de Forms Portal.
 
 ### Recherche et énumérateur {#search-and-lister}
 
-Le composant Search and Lister vous permet d’ajouter les fonctionnalités suivantes à votre portail de formulaires :
+Le composant Search and Lister vous permet d’ajouter les fonctionnalités suivantes à votre portail de formulaires :
 
-* Répertorier les formulaires en mode d’affichage Panneau, Carte ou Grille qui sont disponibles en standard. Il prend également en charge les formulaires templatesList personnalisés à partir de dossiers spécifiques dans Forms Manager.
+* Répertorier les formulaires en mode d’affichage Panneau, Carte ou Grille qui sont prêts à l’emploi. Il prend également en charge les formulaires templatesList personnalisés à partir de dossiers spécifiques dans Forms Manager.
 * Spécifiez le mode de rendu des formulaires : HTML5, PDF ou les deux.
 * Spécifiez le mode de rendu des formulaires PDF et XFA - HTML5, PDF ou les deux. Formulaires non-XFA au format HTML5.
 * Activation de la recherche de formulaires en fonction de critères tels que les propriétés, les métadonnées et les balises de formulaire.

@@ -1,17 +1,13 @@
 ---
 title: Ajouter un bouton d’action personnalisé dans l’interface utilisateur de création de correspondance
-seo-title: Add custom action/button in Create Correspondence UI
-description: Découvrez comment ajouter une action/un bouton personnalisé(e) dans l’interface utilisateur de création de correspondance
-seo-description: Learn how to add custom action/button in Create Correspondence UI
-uuid: 1b2b00bb-93ef-4bfe-9fc5-25c45e4cb4b1
+description: Découvrez comment ajouter une action ou un bouton personnalisé dans l’interface utilisateur de création de correspondance
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '1880'
 ht-degree: 79%
@@ -33,7 +29,7 @@ Pour terminer ce scénario, vous devez disposer des éléments suivants :
 * Connaissance de CRX et JavaScript
 * LiveCycle Server
 
-## Scénario : Création du bouton dans l’interface utilisateur de création de correspondance pour envoyer une lettre à réviser {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
+## Scénario : création du bouton dans l’interface utilisateur de création de correspondance pour envoyer une lettre à réviser {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
 
 L’ajout d’un bouton avec une action (ici, envoyer une lettre pour révision) à l’interface utilisateur de création de correspondance comprend :
 
@@ -73,7 +69,7 @@ L’ajout d’un bouton avec une action (ici, envoyer une lettre pour révision)
 
       ![Copie du fichier acmExtensionsConfig.xml](assets/3_acmextensionsconfig_xml_copy.png)
 
-   1. Cliquez avec le bouton droit de la souris sur le **defaultApp** dossier à l’emplacement &quot;/apps/fd/cm/config/defaultApp/&quot;, puis sélectionnez **Coller**.
+   1. Cliquez avec le bouton droit de la souris sur le **defaultApp** dossier sous &quot;/apps/fd/cm/config/defaultApp/&quot;, puis sélectionnez **Coller**.
    1. Cliquez sur **Enregistrer tout**.
 
 1. Double-cliquez sur la copie du fichier acmExtentionsConfig.xml que vous venez de créer dans le dossier des applications. Le fichier s’ouvre pour modification.
@@ -124,7 +120,7 @@ L’ajout d’un bouton avec une action (ici, envoyer une lettre pour révision)
 
 1. Cliquez sur **Enregistrer tout**.
 
-#### Création d’un dossier de paramètres régionaux avec le fichier de propriétés dans la branche /apps {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
+#### Créez un dossier de paramètres régionaux avec le fichier de propriétés dans la branche /apps {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
 
 Le fichier ACMExtensionsMessages.properties comprend des libellés et des messages d’info-bulles correspondant à plusieurs champs de l’interface utilisateur de création de correspondance. Effectuez une copie de ce fichier dans la branche /apps afin que les actions/boutons personnalisé(e)s fonctionnent.
 

@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 8%
+source-wordcount: '572'
+ht-degree: 7%
 
 ---
 
@@ -66,7 +66,7 @@ Utilisation de CRXDE Lite:
    %>
    ```
 
-1. Conscient des balises de script d’ouverture/de fermeture, remplacez &quot;/ TODO...&quot;. avec des inclusions de scripts pour les parties head et body de &lt;html>.
+1. Tenant compte des balises de script d’ouverture/de fermeture, remplacez &quot;/ TODO ...&quot; par des scripts pour les parties head et body de &lt;html>.
 
    Avec un super type de `foundation/components/page`, tout script non défini dans ce même dossier sera résolu en tant que script dans `/apps/foundation/components/page` dossier (s’il existe), sinon un script dans `/libs/foundation/components/page` dossier.
 
@@ -88,15 +88,16 @@ Utilisation de CRXDE Lite:
    </html>
    ```
 
-1. Le script de base `head.jsp` ne doivent pas être superposées, mais le script de base `body.jsp` est vide.
+1. Le script de base `head.jsp` ne doit pas être superposé, mais le script de base `body.jsp` est vide.
 
    Pour configurer la création, superposition `body.jsp` avec un script local et inclure un système de paragraphes (parsys) dans le corps :
 
-   1. Accéder à `/apps/an-scf-sandbox/components`.
-   1. Sélectionnez la `playpage` noeud .
+   1. Accédez à `/apps/an-scf-sandbox/components`.
+   1. Sélectionnez le nœud `playpage`.
    1. Cliquez avec le bouton droit et sélectionnez `Create > Create File...`
 
       * Nom : **body.jsp**
+
    1. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
    Ouvrir `/apps/an-scf-sandbox/components/playpage/body.jsp` et collez-les dans le texte suivant :
@@ -129,17 +130,17 @@ Le panneau latéral Ressources/Composant s’affiche lorsque le panneau latéral
 
 ![view-page](assets/view-page.png)
 
-* Interface utilisateur classique: `http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html`
+* Interface utilisateur classique : `http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html`
 
 Voici comment la page de lecture s’affiche dans l’IU classique, y compris avec l’outil de recherche de contenu (cf) :
 
 ![play-page-view](assets/play-page-view.png)
 
-## Composants d’AEM Communities {#communities-components}
+## Composants Communities {#communities-components}
 
 Pour activer les composants Communities pour la création, commencez par suivre les instructions suivantes :
 
-* [Accès aux composants d’AEM Communities](basics.md#accessing-communities-components)
+* [Accès aux composants Communities](basics.md#accessing-communities-components)
 
 Pour les besoins de cet environnement de test, commencez par ces **Communautés** composants (activer en cochant la case) :
 
@@ -148,7 +149,7 @@ Pour les besoins de cet environnement de test, commencez par ces **Communautés*
 * Évaluation
 * Révisions
 * Résumé des révisions (affichage)
-* Vote
+* Votant
 
 En outre, choisissez **[!UICONTROL Général]** les composants, tels que
 
@@ -161,9 +162,9 @@ En outre, choisissez **[!UICONTROL Général]** les composants, tels que
 >
 >Les composants activés pour la partie page sont stockés dans le référentiel comme valeur de la propriété `components` de la propriété
 >
->`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` node.
+>`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` noeud .
 
-## Page d’entrée {#landing-page}
+## Page de destination {#landing-page}
 
 Dans un environnement multilingue, la page racine inclut un script qui analyse la requête du client pour déterminer la langue souhaitée.
 
@@ -175,7 +176,7 @@ Remplacez l’URL du navigateur par la page racine : `http://localhost:4502/edit
 * Sélectionner **[!UICONTROL Ouvrir les propriétés]**
 * Dans l’onglet AVANCÉ
 
-   * Pour l’entrée de redirection, accédez à **[!UICONTROL Sites web]** > **[!UICONTROL SCF Sandbox Site]** > **[!UICONTROL Sandbox SCF]**
+   * Pour l’entrée de redirection, accédez à **[!UICONTROL Sites web]** > **[!UICONTROL SCF Sandbox Site]** > **[!UICONTROL Environnement de test SCF]**
    * Cliquez sur **[!UICONTROL OK]**
 
 * Cliquez sur **[!UICONTROL OK]**

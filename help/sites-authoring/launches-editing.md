@@ -10,10 +10,10 @@ discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: ht
-source-wordcount: '524'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '523'
+ht-degree: 95%
 
 ---
 
@@ -32,7 +32,6 @@ Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez
 >
 >* Avertissement : Cette page est la source du lancement. Le déplacement de cette page n’est pas autorisé.
 
-
 ### Modification de l’objet des pages de lancement en Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
 Si votre lancement est basé sur une [Live Copy](/help/sites-administering/msm.md), vous devriez :
@@ -44,7 +43,7 @@ Une Live Copy est utilisée pour synchroniser le contenu *depuis* la branche sou
 
 Vous pouvez apporter des modifications de la même manière que vous pouvez modifier une Live Copy standard, par exemple :
 
-* en cliquant sur un cadenas fermé, vous interrompez cette synchronisation et vous pouvez procéder à de nouvelles mises à jour du contenu de votre lancement. Une fois déverrouillées (cadenas ouvert), vos modifications ne seront pas remplacées par d’autres modifications effectuées au même endroit dans la branche source.
+* Cliquer sur un cadenas fermé interrompt cette synchronisation et vous permet d’apporter de nouvelles mises à jour au contenu de votre lancement. Une fois déverrouillées (cadenas ouvert), vos modifications ne seront pas remplacées par d’autres modifications effectuées au même endroit dans la branche source.
 * **Suspendre** (et **Reprendre**) l’héritage pour une page spécifique.
 
 Pour plus d’informations, voir [Modification du contenu d’une Live Copy](/help/sites-administering/msm-livecopy.md#changing-live-copy-content).
@@ -72,6 +71,7 @@ Vous pouvez à tout moment ajouter ou supprimer des pages vers/depuis la plage d
    * la [console Lancements](/help/sites-authoring/launches.md#the-launches-console) ;
 
       * Sélectionnez **Modifier**.
+
    * [Références (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) pour afficher les actions disponibles :
 
       * Sélectionnez **Modifier le lancement**.
@@ -93,6 +93,7 @@ Vous pouvez à tout moment modifier les propriétés d’un lancement :
    * la [console Lancements](/help/sites-authoring/launches.md#the-launches-console) ;
 
       * Sélectionnez **Propriétés**.
+
    * [Références (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) pour afficher les actions disponibles :
 
       * Sélectionnez **Modifier les propriétés**.

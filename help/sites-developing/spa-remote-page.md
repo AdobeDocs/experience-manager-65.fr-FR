@@ -2,10 +2,10 @@
 title: Composant RemotePage
 description: Le composant RemotePage est un composant de page personnalisé permettant de modifier les SPA React distantes dans AEM.
 exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
-source-git-commit: 41aac3b4ea3b100e9d927bef161929477d667a95
-workflow-type: ht
-source-wordcount: '394'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ Lorsque vous décidez du niveau d’intégration vous souhaitez avoir entre votr
 
 Le composant RemotePage récupère toutes les ressources nécessaires à partir du `asset-manifest.json` généré par l’application et l’utilise pour effectuer le rendu des SPA dans AEM.
 
-* Le composant RemotePage vous permet d’injecter les scripts et feuilles de style d’un SPA dans le corps d’un composant Page AEM.
+* La RemotePage vous permet d’injecter les scripts et les feuilles de style d’un SPA dans le corps d’un composant AEM Page.
 * Les composants virtuels en front-end permettent d’indiquer les sections qui sont modifiables dans l’éditeur d’application monopage d’AEM.
 * Grâce à cela, un SPA hébergé sur un autre domaine peut être rendu modifiable dans AEM.
 
@@ -33,7 +33,7 @@ Consultez l’article [Modification d’un SPA externe dans AEM](spa-edit-extern
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
 
-   ![Points d’entrée](assets/asset-manifest-entrypoints.png)
+  ![Points d’entrée](assets/asset-manifest-entrypoints.png)
 
 * L’application doit pouvoir être initialisée dans un `<div id="root"></div>` sous l’élément de corps. Si une balise différente est attendue pour l’application, elle doit être ajustée en conséquence dans les scripts HTL du composant proxy avec `sling:resourceSuperType="spa-project-core/components/remotepage`.
 

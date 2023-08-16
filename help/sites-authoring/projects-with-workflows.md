@@ -1,7 +1,7 @@
 ---
 title: Utilisation des workflows de projet
 seo-title: Working with Project Workflows
-description: Plusieurs workflows de projet sont directement disponibles.
+description: Divers workflows de projet sont disponibles prêts à l’emploi.
 seo-description: A variety of project workflows are available out of the box.
 uuid: 376922ca-e09e-4ac8-88c8-23dac2b49dbe
 contentOwner: Guillaume Carlino
@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
-source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
-workflow-type: ht
-source-wordcount: '798'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '797'
+ht-degree: 69%
 
 ---
 
@@ -22,24 +22,24 @@ ht-degree: 100%
 
 Les workflows de projet disponibles et prêts à l’emploi sont les suivants :
 
-* **Workflow d’approbation de projet** : Ce workflow vous permet d’attribuer le contenu à un utilisateur, de le passer en revue, puis de l’approuver.
+* **Workflow d’approbation de projet** - Ce workflow vous permet d’affecter du contenu à un utilisateur, de le passer en revue, puis de l’approuver.
 * **Demander le lancement** : ce workflow demande un lancement.
-* **Demander la page d’entrée** : ce workflow demande une page d’entrée.
+* **Demander la page de destination** : ce workflow demande une page de destination.
 * **Demander l’adresse électronique** : ce workflow demande une adresse électronique.
 * **Séance photo du produit et séance photo du produit (Commerce)** - Associe les ressources aux produits.
 * **Gestion des actifs numériques (DAM) – Créer et traduire la copie et Gestion des actifs numériques (DAM) – Créer une copie de langue** : crée des fichiers binaires, des métadonnées et des balises traduits pour les ressources et les dossiers.
 
-Selon le modèle de projet sélectionné, certains workflows sont disponibles :
+En fonction du modèle de projet que vous sélectionnez, certains workflows sont disponibles :
 
-|  | **Projet simple** | **Projet de média** | **Projet de séance photo du produit** | **Projet de traduction** |
+|   | **Projet simple** | **Projet de média** | **Projet de séance photo du produit** | **Projet de traduction** |
 |---|:-:|:-:|:-:|:-:|
 | Demander la copie |  | x |  |  |
 | Séance photo du produit |  | x | x |  |
 | Séance photo du produit  (Commerce) |  |  | x |  |
-| Approbation de projet | x |  |  |  |
+| Approbation du projet | x |  |  |  |
 | Demander le lancement | x |  |  |  |
-| Demander la page d’entrée | x |  |  |  |
-| Adresse de demande | x |  |  |  |
+| Demander la page de destination | x |  |  |  |
+| Demander une adresse | x |  |  |  |
 | DAM Créer copie de langue&amp;ast; |  |  |  | x |
 | DAM Créer et traduire copie de langue&amp;ast; |  |  |  | x |
 
@@ -47,9 +47,9 @@ Selon le modèle de projet sélectionné, certains workflows sont disponibles :
 >
 >&amp;ast; Ces workflows ne sont pas lancés via la mosaïque **Workflow** dans les projets. Reportez-vous à la section [Création de copies de langue pour les ressources](/help/sites-administering/tc-manage.md).
 
-Les étapes permettant de lancer et de terminer les workflows sont identiques quel que soit le workflow choisi. Seules les étapes changent.
+Les étapes de démarrage et d’achèvement des workflows sont les mêmes, quel que soit le workflow que vous choisissez. Seules les étapes changent.
 
-Vous commencez un workflow directement dans les projets (à l’exception de Gestion des actifs numériques (DAM) – Créer une copie de langue ou Gestion des actifs numériques (DAM) – Créer et traduire la copie de langue). Les informations sur les tâches en attente d’un projet sont répertoriées dans la mosaïque **Tâches**. Les notifications correspondant aux tâches à achever s’affichent en regard de l’icône d’utilisateur.
+Vous commencez un workflow directement dans les projets (à l’exception de Gestion des actifs numériques (DAM) – Créer une copie de langue ou Gestion des actifs numériques (DAM) – Créer et traduire la copie de langue). Les informations sur les tâches en attente d’un projet sont répertoriées dans la section **Tâche** mosaïque. Les notifications relatives aux tâches à effectuer s’affichent en regard de l’icône utilisateur.
 
 Pour plus d’informations sur l’utilisation des workflows dans AEM, reportez-vous aux documents suivants :
 
@@ -61,11 +61,11 @@ Cette section décrit les workflows disponibles pour les projets.
 
 ## Workflow de demande de copie {#request-copy-workflow}
 
-Ce workflow vous permet de demander un manuscrit à un utilisateur, puis de l’approuver. Pour démarrer le workflow de demande de copie :
+Ce workflow permet de demander un manuscrit à un utilisateur, puis de le valider. Pour démarrer le workflow de copie de requête :
 
 1. Dans un projet multimédia, appuyez ou cliquez sur le chevron descendant en haut à droite de la mosaïque **Workflows** et sélectionnez **Démarrer le workflow**.
 1. Dans l’assistant de workflow, sélectionnez **Demander la copie** et cliquez sur **Suivant**.
-1. Saisissez un titre de manuscrit et un bref résumé de votre demande. Le cas échéant, entrez un nombre de mots cible, la priorité de la tâche et une date d’échéance.
+1. Saisissez un titre de manuscrit et un bref résumé de ce que vous demandez. Le cas échéant, saisissez un nombre de mots cible, une priorité de tâche et une date d’échéance.
 
    ![Workflow de demande de copie](assets/project-request-copy-workflow.png)
 
@@ -97,7 +97,7 @@ Ce workflow vous permet de demander un lancement.
 
 1. Dans un projet simple, appuyez ou cliquez sur le chevron descendant en haut à droite de la mosaïque **Workflows** et sélectionnez **Démarrer le processus**.
 1. Dans l’assistant de workflow, sélectionnez **Workflow de lancement de requête** et cliquez sur **Suivant**.
-1. Entrez le titre du lancement et indiquez le chemin d’accès à la source du lancement. Vous pouvez également ajouter une description et une date active, le cas échéant. Sélectionnez l’option Hériter des données actives de la page source ou excluez les sous-pages selon la manière dont le lancement doit se produire.
+1. Saisissez un titre pour le lancement et indiquez le chemin d’accès source du lancement. Vous pouvez également ajouter une description et une date d’activation, le cas échéant. Sélectionnez Hériter des données actives de la page source ou excluez des sous-pages selon le comportement souhaité du lancement.
 
    ![Workflow Demander le lancement](assets/project-request-launch-workflow.png)
 
@@ -111,21 +111,21 @@ Ce workflow vous permet de demander une page de destination.
 
 1. Dans un projet simple, appuyez ou cliquez sur le chevron descendant en haut à droite de la mosaïque **Workflows** et sélectionnez **Démarrer le processus**.
 1. Dans l’assistant de workflow, sélectionnez **Demander la page de destination** et cliquez sur **Suivant**.
-1. Saisissez un titre pour votre page d’entrée et le chemin d’accès parent. Le cas échéant, entrez une date active ou choisissez un fichier pour votre page d’entrée.
+1. Saisissez un titre pour votre landing page et le chemin parent. Le cas échéant, saisissez une date d’activation ou choisissez un fichier pour votre landing page.
 
-   ![Workflow Demander la page d’entrée](assets/project-request-landing-page-workflow.png)
+   ![Workflow Demander la page de destination](assets/project-request-landing-page-workflow.png)
 
 1. Cliquez sur **Envoyer**.
 
 Le workflow commence. La tâche apparaît sur la carte **Tâches**.
 
-## Worfklow de demande d’adresse électronique {#request-email-workflow}
+## Workflow de demande de courrier électronique {#request-email-workflow}
 
-Ce workflow vous permet de demander une adresse électronique. Il s’agit du même workflow que celui qui s’affiche dans la mosaïque **Courriels**.
+Ce workflow permet de demander un email. Il s’agit du même workflow qui apparaît dans la variable **Emails** mosaïque.
 
 1. Dans un projet simple, appuyez ou cliquez sur le chevron descendant en haut à droite de la mosaïque **Workflows** et sélectionnez **Démarrer le processus**.
 1. Dans l’assistant de workflow, sélectionnez **Demander l’e-mail** et cliquez sur **Suivant**.
-1. Entrez un titre de courrier électronique, ainsi que les chemins d’accès à la campagne et au modèle. Vous pouvez également spécifier un nom, une description et une date active.
+1. Saisissez un titre d’email, ainsi que les chemins d’accès aux campagnes et aux modèles. En outre, vous pouvez fournir un nom, une description et une date d’activation.
 
    ![Workflow de demande d’e-mail](assets/project-request-email-workflow.png)
 

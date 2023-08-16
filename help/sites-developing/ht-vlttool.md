@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2716'
+source-wordcount: '2715'
 ht-degree: 86%
 
 ---
@@ -554,7 +554,7 @@ Annule le statut **conflictuel** des fichiers ou répertoires de travail.
 
 >[!NOTE]
 >
->Cette commande ne résout pas sémantiquement les conflits ni ne supprime les marqueurs de conflit. il supprime simplement les fichiers d’artefact liés au conflit et permet à PATH d’être à nouveau validé.
+>Cette commande ne résout pas sémantiquement les conflits ni ne supprime les marqueurs de conflit ; elle supprime simplement les fichiers d’artefacts liés au conflit et permet à PATH d’être à nouveau validé.
 
 #### Syntaxe {#syntax-9}
 
@@ -869,7 +869,7 @@ Chaque dossier de synchronisation stocke la configuration et le statut dans troi
 * `.vlt-sync.log` : fichier journal contenant des informations sur les opérations effectuées lors de la synchronisation
 * `.vlt-sync-filter.xml` : filtres qui définissent les parties du référentiel qui sont synchronisées Le format de ce fichier est décrit dans la section [Extraction filtrée](#performing-a-filtered-checkout).
 
-Le fichier `.vlt-sync-config.properties` permet de configurer les propriétés suivantes :
+La variable `.vlt-sync-config.properties` permet de configurer les propriétés suivantes :
 
 **désactivé** Active ou désactive la synchronisation. Par défaut, ce paramètre est défini sur false pour permettre la synchronisation.
 

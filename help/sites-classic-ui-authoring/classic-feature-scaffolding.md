@@ -7,16 +7,16 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1431'
 ht-degree: 59%
 
 ---
 
 # Génération de modèles automatique{#scaffolding}
 
-Parfois, vous devrez peut-être créer un grand ensemble de pages qui partagent une structure mais un contenu différent. Par le biais de l’interface Adobe Experience Manager (AEM) standard, vous devez créer chaque page, faire glisser les composants appropriés sur la page et les remplir individuellement.
+Parfois, vous devrez peut-être créer un grand ensemble de pages qui partagent une structure mais un contenu différent. Par le biais de l’interface Adobe Experience Manager (AEM) standard, vous devez créer chaque page, faire glisser les composants appropriés sur la page, puis les remplir individuellement.
 
 Avec la génération de modèles automatique, vous pouvez créer un formulaire (un modèle automatique) avec des champs qui reflètent la structure souhaitée pour vos pages, puis utiliser ce formulaire pour créer facilement des pages en fonction de cette structure.
 
@@ -42,8 +42,8 @@ Les propriétés de la page de génération de modèles automatique sont les sui
 
 * **Texte du titre** : il s’agit du nom de cette page de génération de modèles automatique. Dans cet exemple, il s’appelle &quot;Actualités&quot;.
 * **Description** : elle s’affiche sous le titre de la page de génération de modèles automatique.
-* **Modèle cible**: Il s’agit du modèle que ce modèle automatique utilisera lors de la création d’une page. Dans cet exemple, il s’agit d’une *Page de contenu Geometrixx* modèle.
-* **Chemin cible**: Il s’agit du chemin d’accès de la page parente au-dessous de laquelle ce modèle automatique va créer des pages. Dans cet exemple, le chemin est : */content/geometrixx/fr/news*.
+* **Modèle cible**: il s’agit du modèle que ce modèle automatique utilisera lors de la création d’une page. Dans cet exemple, il s’agit d’une *Page de contenu Geometrixx* modèle.
+* **Chemin cible**: il s’agit du chemin d’accès de la page parente au-dessous de laquelle ce modèle automatique va créer des pages. Dans cet exemple, le chemin est : */content/geometrixx/fr/news*.
 
 Le contenu du modèle automatique est le formulaire. Lorsqu’un utilisateur souhaite crée une page à l’aide du modèle automatique, il remplit le formulaire et clique sur *Créer*, au bas du formulaire. Dans l’exemple **Actualités** ci-dessus, le formulaire se compose des champs suivants :
 
@@ -62,7 +62,7 @@ Pour créer un modèle automatique, accédez au **Outils** console, puis **Gén�
 
 Accédez au **Propriétés de la page** de la nouvelle page et définissez la variable *Texte du titre*, *Description*, *Modèle cible*, et *Chemin cible*, comme décrit ci-dessus.
 
-Vous devez ensuite définir la structure de la page qui sera créée par ce modèle automatique. Pour ce faire, accédez à la section **[mode de conception](/help/sites-authoring/page-authoring.md#sidekick)** sur la page scaffold. Un lien s’affiche alors pour vous permettre de modifier le modèle automatique dans l’**éditeur de boîte de dialogue**.
+Vous devez ensuite définir la structure de la page qui sera créée par ce modèle automatique. Pour ce faire, accédez à **[mode de conception](/help/sites-authoring/page-authoring.md#sidekick)** sur la page scaffold. Un lien s’affiche alors pour vous permettre de modifier le modèle automatique dans l’**éditeur de boîte de dialogue**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
@@ -141,7 +141,7 @@ Dans l’IU classique, la génération de modèles automatique est entièrement 
 
 Lorsque vous ouvrez une page en mode **Génération de modèles automatique** (à l’aide de l’icône située dans la partie inférieure du sidekick), tous les composants soumis à l’héritage sont indiqués par :
 
-* un symbole représentant un verrou (pour la plupart des composants); par exemple, Texte et titre)
+* symbole de verrouillage (pour la plupart des composants, par exemple Texte et Titre)
 * un masque avec le texte **Cliquez pour annuler l’héritage** (pour les composants Image).
 
 Elles indiquent que le composant ne peut pas être modifié tant que l’héritage n’a pas été annulé.
@@ -154,7 +154,7 @@ Elles indiquent que le composant ne peut pas être modifié tant que l’hérita
 
 Cliquez sur le symbole de verrouillage ou sur l’icône d’image pour rompre l’héritage :
 
-* le symbole se transforme en cadenas ouvert.
+* le symbole devient un cadenas ouvert.
 * Une fois déverrouillé, vous pouvez modifier le contenu.
 
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)

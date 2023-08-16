@@ -11,18 +11,18 @@ discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '2613'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '2612'
+ht-degree: 85%
 
 ---
 
 # Utilisation de graphiques dans les communications interactives{#using-charts-in-interactive-communications}
 
-Un diagramme ou un graphique est une représentation visuelle des données. Elle concentre une grande quantité d’informations dans un format visuel simple à interpréter et permet aux destinataires de la communication interactive de mieux visualiser, interpréter et analyser les données complexes.
+Un graphique ou un graphique est une représentation visuelle des données. Il condense de grandes quantités d’informations dans un format visuel facile à comprendre, ce qui permet aux destinataires de la communication interactive de mieux visualiser, interpréter et analyser les données complexes.
 
-Lors de la création d’une communication interactive, vous pouvez ajouter des graphiques pour représenter visuellement des données bidimensionnelles à partir du modèle de données de formulaire de la communication interactive. Le composant de graphique vous permet d’ajouter et de configurer les types de graphiques suivants : circulaire, à colonnes, en anneau, à barres, linéaire, linéaire et à points, à points, en aires et à quadrants.
+Lors de la création d’une communication interactive, vous pouvez ajouter des graphiques pour représenter visuellement des données bidimensionnelles à partir du modèle de données de formulaire de la communication interactive. Le composant Graphique vous permet d’ajouter et de configurer les types de graphiques suivants : Circulaire, Colonne, Anneau, Barre, Ligne, Ligne et Point, Point, Zone et Quadrant.
 
 ## Ajouter et configurer un graphique dans une communication interactive {#add-and-configure-chart-in-an-interactive-communication}
 
@@ -153,7 +153,7 @@ Configurez les propriétés suivantes lors de la création de graphiques pour le
   </tr>
   <tr>
    <td>Info-bulle</td>
-   <td><p>Format dans lequel l’info-bulle s’affiche lorsque le curseur de la souris survole un point de données du graphique dans le canal web. La valeur par défaut est ${x}(${y}). En fonction du type de graphique, lorsque vous passez le curseur sur un point, une barre ou une tranche du graphique, les variables ${x} et ${y} sont remplacées de manière dynamique par les valeurs correspondantes sur l’axe X et l’axe Y et elles s’affichent dans l’info-bulle.</p> <p>Pour désactiver l’info-bulle, laissez le champ <span class="uicontrol">Info-bulle</code> vide. Cette option ne s’applique pas aux graphiques en ligne ni en points. Par exemple, consultez <a href="#chartoutputprintweb">Exemple 1 : sortie du graphique sur papier et sur le Web</a>.</code></p> </td>
+   <td><p>Format dans lequel l’info-bulle s’affiche lorsque le curseur de la souris survole un point de données du graphique dans le canal web. La valeur par défaut est ${x}(${y}). En fonction du type de graphique, lorsque vous passez le curseur sur un point, une barre ou une tranche du graphique, les variables ${x} et ${y} sont remplacées de manière dynamique par les valeurs correspondantes sur l’axe X et l’axe Y et elles s’affichent dans l’info-bulle.</p> <p>Pour désactiver l’info-bulle, laissez le champ <span class="uicontrol">Info-bulle</code> champ vide. Cette option ne s’applique pas aux graphiques en ligne ni en points. Par exemple, consultez <a href="#chartoutputprintweb">Exemple 1 : sortie du graphique sur papier et sur le Web</a>.</p> </td>
    <td>Web</td>
   </tr>
   <tr>
@@ -167,12 +167,12 @@ Configurez les propriétés suivantes lors de la création de graphiques pour le
      <li><strong>Couleur du point</strong> : disponible pour les graphiques à points et linéaires et à points, pour spécifier la couleur des points dans le graphique.<br /> </li>
      <li><strong>Couleur de zone</strong> : disponible pour les graphiques en aires pour spécifier la couleur pour la zone située sous la ligne dans le graphique.</li>
      <li><strong>Point de référence &gt; Type de liaison : </strong>disponible pour les graphiques a quadrants pour<strong> </strong>spécifier le type de liaison du point de référence. Utilisez le texte statique ou la propriété de l’objet de modèle de données pour définir la valeur du point de référence.</li>
-     <li><strong>Point de référence &gt; Axe X : </strong>disponible pour les graphiques à quadrants si vous sélectionnez <span class="uicontrol">Statique</code> dans la liste déroulante Type de liaison pour spécifier la valeur de l’axe X pour le point de référence.</code></li>
-     <li><strong>Point de référence &gt; Axe Y : </strong>disponible pour les graphiques à quadrants si vous sélectionnez <span class="uicontrol">Statique</code> dans la liste déroulante Type de liaison pour spécifier la valeur de l’axe Y pour le point de référence.</code></li>
-     <li><strong>Point de référence &gt; Objet de modèle de données pour les séries : </strong>disponible pour plusieurs séries de graphiques à quadrants si vous sélectionnez <span class="uicontrol">Objet de modèle de données</code> dans la liste déroulante Type de liaison. Définissez la propriété de l’objet de modèle de données du formulaire pour identifier la série pour le point de référence. </code></li>
-     <li><strong>Point de référence &gt; Valeur d’objet de modèle de données pour les séries : </strong>disponible pour plusieurs séries de graphiques à quadrants si vous sélectionnez <span class="uicontrol">Objet de modèle de données</code> dans la liste déroulante Type de liaison. Utilisez la propriété de l’objet de modèle de données du formulaire pour la série et la valeur définie dans ce champ afin d’identifier la série pour le point de référence.</code></li>
-     <li><strong>Point de référence &gt; Objet de modèle de données pour le point de référence : </strong>disponible pour les graphiques à quadrants si vous sélectionnez <span class="uicontrol">Objet de modèle de données</code> dans la liste déroulante Type de liaison. Définissez une propriété d’objet de modèle de données de formulaire qui est apparentée aux propriétés tracées sur l’axe X et l’axe Y. En outre, pour les séries multiples, définissez une propriété d’objet de modèle de données qui est une entité enfant de la propriété d’objet de modèle de données définie pour la série.</code></li>
-     <li><strong>Point de référence &gt; Valeur d’objet de modèle de données pour le point de référence : </strong>disponible pour les graphiques à quadrants si vous sélectionnez <span class="uicontrol">Objet de modèle de données</code> dans la liste déroulante Type de liaison. Utilisez la propriété d’objet de modèle de données de formulaire pour le point de référence et la valeur définie dans ce champ pour identifier le point de référence du graphique.<br /> <strong>Libellés du quadrant &gt; En haut à gauche :</strong> disponible pour les graphiques à quadrants afin de spécifier le nom du quadrant supérieur gauche.</code></li>
+     <li><strong>Point de référence &gt; Axe X : </strong>Disponible pour les graphiques quadrant si vous sélectionnez <span class="uicontrol">Statique</code> dans la liste déroulante Type de liaison pour spécifier la valeur de l’axe X pour le point de référence.</li>
+     <li><strong>Point de référence &gt; Axe Y : </strong>Disponible pour les graphiques quadrant si vous sélectionnez <span class="uicontrol">Statique</code> dans la liste déroulante Type de liaison pour spécifier la valeur de l’axe Y du point de référence.</li>
+     <li><strong>Point de référence &gt; Objet de modèle de données pour les séries : </strong>Disponible pour plusieurs séries de Quadrant si vous sélectionnez <span class="uicontrol">Objet de modèle de données</code> dans la liste déroulante Type de liaison . Définissez la propriété de l’objet de modèle de données du formulaire pour identifier la série pour le point de référence. </li>
+     <li><strong>Point de référence &gt; Valeur d’objet de modèle de données pour les séries : </strong>Disponible pour plusieurs séries de Quadrant si vous sélectionnez <span class="uicontrol">Objet de modèle de données</code> dans la liste déroulante Type de liaison . Utilisez la propriété de l’objet de modèle de données du formulaire pour la série et la valeur définie dans ce champ afin d’identifier la série pour le point de référence.</li>
+     <li><strong>Point de référence &gt; Objet de modèle de données pour le point de référence : </strong>Disponible pour les graphiques quadrant si vous sélectionnez <span class="uicontrol">Objet de modèle de données</code> dans la liste déroulante Type de liaison . Définissez une propriété d’objet de modèle de données de formulaire qui est apparentée aux propriétés tracées sur l’axe X et l’axe Y. En outre, pour les séries multiples, définissez une propriété d’objet de modèle de données qui est une entité enfant de la propriété d’objet de modèle de données définie pour la série.</li>
+     <li><strong>Point de référence &gt; Valeur d’objet de modèle de données pour le point de référence : </strong>Disponible pour les graphiques quadrant si vous sélectionnez <span class="uicontrol">Objet de modèle de données</code> dans la liste déroulante Type de liaison . Utilisez la propriété d’objet de modèle de données de formulaire pour le point de référence et la valeur définie dans ce champ pour identifier le point de référence du graphique.<br /> <strong>Libellés du quadrant &gt; En haut à gauche :</strong> disponible pour les graphiques à quadrants afin de spécifier le nom du quadrant supérieur gauche.</li>
      <li><strong>Libellés du quadrant &gt; En haut à droite :</strong> disponible pour les graphiques à quadrants afin de spécifier le nom du quadrant supérieur droit.</li>
      <li><strong>Libellés du quadrant &gt; En bas à droite : </strong>disponible pour les graphiques à quadrants afin de spécifier le nom du quadrant inférieur droit.</li>
      <li><strong>Libellés du quadrant &gt; En bas à gauche : </strong>disponible pour les graphiques à quadrants afin de spécifier le nom du quadrant inférieur gauche.</li>
@@ -184,7 +184,7 @@ Configurez les propriétés suivantes lors de la création de graphiques pour le
 
 ## Utilisation des fonctions dans le graphique {#use-functions-in-chart}
 
-Vous pouvez configurer un graphique de sorte qu’il utilise des fonctions statistiques pour calculer des valeurs à partir des données source pour un mappage sur le graphique. L’application de fonctions dans un graphique vous permet de tracer des données qui ne sont pas directement fournies par le modèle de données de formulaire.
+Vous pouvez configurer un graphique pour qu’il utilise des fonctions statistiques afin de calculer des valeurs à partir des données source pour un graphique sur le graphique. L’application de fonctions dans un graphique vous permet de tracer des données qui ne sont pas directement fournies par le modèle de données de formulaire.
 
 ![Fonctions dans les graphiques](assets/functions_charts_new.png)
 
@@ -212,7 +212,7 @@ Pour plus d’informations, consultez la section [Exemple 2 : application des 
 
 ### Fonctions personnalisées dans le canal web {#customfunctionsweb}
 
-En plus d’utiliser les fonctions par défaut dans les graphiques, vous pouvez rédiger des fonctions personnalisées dans JavaScript™ et les rendre disponibles dans la liste des fonctions du composant de graphique du canal web.
+Outre l’utilisation des fonctions par défaut dans les graphiques, vous pouvez créer des fonctions personnalisées dans JavaScript™ et les rendre disponibles dans la liste des fonctions du composant de graphique pour le canal web.
 
 Une fonction prend un tableau ou des valeurs et un nom de catégorie comme entrées et renvoie une valeur. Par exemple :
 
@@ -228,7 +228,7 @@ Multiply(valueArray, category) {
 
 Une fois que vous avez rédigé une fonction personnalisée, procédez comme suit pour la rendre disponible pour une utilisation dans la configuration du graphique :
 
-1. Ajoutez la fonction personnalisée à la bibliothèque client associée à la communication interactive concernée. Pour plus d’informations, consultez les sections [Configurer l’action d’envoi](/help/forms/using/configuring-submit-actions.md) et [Utiliser les bibliothèques côté client](/help/sites-developing/clientlibs.md).
+1. Ajoutez la fonction personnalisée dans la bibliothèque cliente associée à la communication interactive appropriée. Pour plus d’informations, consultez les sections [Configurer l’action d’envoi](/help/forms/using/configuring-submit-actions.md) et [Utiliser les bibliothèques côté client](/help/sites-developing/clientlibs.md).
 
 1. Pour afficher la fonction personnalisée dans le menu déroulant Fonction dans CRXDe Lite, créez un nœud `nt:unstructured` dans le dossier d’applications avec les propriétés suivantes :
 
@@ -241,13 +241,13 @@ Une fois que vous avez rédigé une fonction personnalisée, procédez comme sui
 
 1. Cliquez sur **Enregistrer tout** pour enregistrer la configuration.
 
-Cette fonctionnalité est désormais disponible dans le graphique.
+La fonction peut désormais être utilisée dans le graphique.
 
 ## Exemple 1 : sortie du graphique sur papier et sur le web {#chartoutputprintweb}
 
 Dans l’onglet Réglages de base, définissez le type de graphique, les propriétés de modèle de données du formulaire source contenant des données, les libellés à mapper sur l’axe X et l’axe Y du graphique et éventuellement la fonction statistique pour calculer les valeurs à tracer sur le graphique.
 
-Examinons en détail les informations minimales requises de ces propriétés de base à l’aide d’un relevé de carte généré via une communication interactive. Imaginons que vous souhaitez générer un graphique pour décrire le montant total des différentes dépenses dans le relevé. Vous souhaitez utiliser différents types de graphiques pour l’impression et la sortie web de la communication interactive.
+Examinons en détail les informations minimales requises de ces propriétés de base à l’aide d’un relevé de carte généré via une communication interactive. Supposons que vous souhaitiez générer un graphique afin de représenter le montant des différentes dépenses dans le relevé. Vous souhaitez utiliser différents types de graphiques pour l’impression et la sortie web de la communication interactive.
 
 ### Graphique à colonnes pour l’impression {#columnchartprint}
 
@@ -284,9 +284,9 @@ L’application de fonctions dans un graphique vous permet de tracer des donnée
 
 Graphique linéaire sans fonction comportant deux transactions « Debit for AirBnB »
 
-### Fonction Somme {#sum-function}
+### Sum, fonction {#sum-function}
 
-Vous pouvez appliquer la fonction Somme pour additionner des valeurs de plusieurs instances de la même propriété Data et ne l’afficher qu’une seule fois. Par exemple, dans le graphique suivant, la fonction Somme s’applique à l’axe Y et additionne le montant des deux transactions « Debit for AirBnB » (2050 et 1050) pour afficher une seule transaction (3100).
+Vous pouvez appliquer la fonction sum pour additionner les valeurs de plusieurs instances d’une même propriété de données et les afficher une seule fois. Par exemple, dans le graphique suivant, la fonction Somme s’applique à l’axe Y et additionne le montant des deux transactions « Debit for AirBnB » (2050 et 1050) pour afficher une seule transaction (3100).
 
 La fonction Somme peut rendre le graphique plus utile si vous souhaitez assembler et afficher la somme de plusieurs instances de la même propriété Data.
 

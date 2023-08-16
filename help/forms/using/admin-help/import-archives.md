@@ -10,159 +10,159 @@ geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archiv
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
 exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1454'
-ht-degree: 100%
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+workflow-type: tm+mt
+source-wordcount: '1456'
+ht-degree: 26%
 
 ---
 
 # Importer et gérer des archives {#import-and-manage-archives}
 
-Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Archives.
+Utilisez l’onglet Archives pour importer et gérer les fichiers LCA créés dans Workbench.
 
 ## Importation d’une archive {#import-an-archive}
 
-1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications, puis sur l’onglet Archives.
+1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications, puis cliquez sur l’onglet Archives.
 1. Cliquez sur Importer.
-1. Cliquez sur Parcourir pour localiser l’archive à importer puis sur Aperçu.
-1. Passez en revue la liste des ressources et des objets qui seront installés avec l’archive. Assurez-vous de l’absence de conflits avec des ressources, objets ou configurations de services existants, car il n’existe pas de fonctionnalité d’annulation.
+1. Cliquez sur Parcourir pour localiser l’archive à importer, puis sur Aperçu.
+1. Consultez la liste des ressources et des objets qui seront installés avec l’archive. Assurez-vous qu’il n’existe aucun conflit avec les ressources, objets et configurations de service existants, car aucune fonctionnalité d’annulation n’est disponible.
 
-   Si vous choisissez d’importer les configurations de services, AEM forms importe tous les fichiers de configuration de processus (points de fin, profils de sécurité et paramètres de configuration des services) utilisés par les processus dans l’archive LCA.
+   Si vous choisissez d’importer les configurations de service, AEM forms importe tous les fichiers de configuration de processus (points de terminaison, profils de sécurité et paramètres de configuration de service) utilisés par les processus dans l’archive LCA.
 
 1. Cliquez sur Importer.
 1. Vérifiez les résultats de l’importation, puis cliquez sur Ignorer la configuration pour terminer le processus d’importation ou sur Configurer pour configurer l’archive.
 
    >[!NOTE]
    >
-   >Si vous cliquez sur Ignorer la configuration, vous pourrez configurer l’archive ultérieurement.
+   >Si vous cliquez sur Ignorer la configuration, vous pouvez configurer l’archive ultérieurement.
 
-1. Si vous cliquez sur Configurer, vous pouvez apporter les modifications voulues dans la page de configuration des points de fin qui s’affiche :
-
-   * Pour renommer un point de fin ou modifier sa description, cliquez dessus.
-   * Pour ajouter un point de fin TaskManager, cliquez sur Ajouter un point de fin TaskManager. Pour plus d’informations sur les paramètres de Task Manager, voir [Paramètres des points de fin Task Manager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
-   * Pour ajouter un point de fin WatchedFolder, cliquez sur Ajouter un point de fin WatchedFolder. Pour plus d’informations sur les paramètres de Watched Folder, voir [Paramètres des points de fin Watched Folder](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
-   * Pour ajouter un point de fin courrier électronique, cliquez sur Ajouter une adresse électronique. Pour plus de précisions sur les paramètres de courrier électronique, voir [Paramètres des points de fin de courrier électronique](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
-   * Pour ajouter un point de fin EJB, cliquez sur Ajouter un point de fin EJB et spécifiez un nom et une description pour le point de fin.
-   * Pour ajouter un point de fin SOAP, cliquez sur Ajouter un point de fin SOAP et spécifiez un nom et une description pour le point de fin.
-   * Pour ajouter un point de fin Remoting, cliquez sur Ajouter un point de fin Remoting. Pour plus de précisions sur les paramètres de points de fin Remoting, voir [Paramètres des points de fin Remoting](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
-   * Pour ajouter un point de fin REST, cliquez sur Ajouter un point de fin REST et spécifiez un nom et une description pour ce dernier. Conservez l’URL d’invocation REST qui s’affiche sur la page Ajouter un point de fin REST.
-   * Pour supprimer un point de fin, sélectionnez la case à cocher en regard du point de fin et cliquez sur Supprimer.
-
-1. Cliquez sur Suivant.
-1. Si un processus ou un service de l’archive LCA possède des paramètres de configuration, une page de configuration des paramètres apparaît. Configurez les paramètres du service et cliquez sur Suivant.
-1. Vous pouvez apporter toutes les modifications voulues dans la page de configuration du profil de sécurité :
-
-   * **Demander aux appelants de s’authentifier :** ce paramètre indique si le service peut être appelé sans informations d’identification.
-
-      Si le message *Les appelants sont actuellement tenus de s’authentifier* s’affiche, l’appelant du service doit être authentifié et l’entité de sécurité utilisateur de cet appelant doit être autorisée à appeler le service ; si ce n’est pas le cas, la tentative d’appel est refusée. Pour supprimer l’obligation d’authentification, cliquez sur Autoriser des appelants non authentifiés.
-
-      Si le message *Les appelants ne sont pas tenus de s’authentifier* s’affiche, l’appelant du service peut être ou ne pas être authentifié. L’appel du service réussit toujours puisqu’aucune vérification des autorisations n’est effectuée. Pour exiger une authentification, cliquez sur Demander aux appelants de s’authentifier.
-
-   * **Exécuter en tant que :** indique l’identité d’exécution utilisée par un service après son appel. Pour modifier cette option, cliquez sur Changer. Faites votre choix parmi les options suivantes :
-
-      **Non spécifié :** le comportement par défaut est utilisé.
-
-      **Invocateur :** utilise l’identité de l’utilisateur qui a appelé le service.
-
-      **Système :** exécute le service avec des droits illimités. Il s’agit du paramètre par défaut pour les processus de longue durée.
-
-      **Utilisateur nommé :** vous permet d’exécuter le service en tant qu’utilisateur spécifique. Il s’agit du paramètre par défaut pour les processus de courte durée. Lors de la sélection de cette option, cliquez sur Sélectionner un utilisateur pour afficher la page Sélectionner une entité de sécurité, qui vous permet de rechercher et sélectionner l’utilisateur.
-
-   * Pour ajouter une entité de sécurité au profil de sécurité, cliquez sur Ajouter une entité de sécurité et sélectionnez ensuite l’utilisateur ou le groupe à ajouter en tant qu’entité de sécurité. Cliquez sur Suivant et sélectionnez ensuite les autorisations à affecter à cette entité de sécurité :
-
-      **INVOKE_PERM :** invocation de toutes les opérations sur le service.
-
-      **MODIFY_CONFIG_PERM :** modification de la configuration d’un service.
-
-      **SUPERVISOR_PERM :** affichage des données d’instance de processus d’un service créé à partir d’un processus.
-
-      **START_STOP_PERM :** démarrage et arrêt d’un service.
-
-      **ADD_REMOVE_ENDPOINTS_PERM :** ajout, suppression et modification des points de fin d’un service.
-
-      **CREATE_VERSION_PERM :** création d’une nouvelle version du service.
-
-      **DELETE_VERSION_PERM :** suppression d’une version du service.
-
-      **MODIFY_VERSION_PERM :** modification d’une version du service.
-
-      **READ_PERM :** affichage du service.
-
-      Cliquez sur Terminé pour ajouter l’entité de sécurité au profil de sécurité.
-
-1. Cliquez sur Terminé pour achever la configuration.
-
-## Configuration des services AEM forms faisant partie d’un fichier d’archive {#configure-the-aem-forms-that-are-part-of-an-archive-file}
-
-1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications, puis sur l’onglet Archives.
-1. Dans la page Gestion des archives, sélectionnez le fichier d’archives à configurer.
-1. Dans la page Afficher l’archive, sélectionnez la ressource de l’archive mise en surbrillance.
-1. Configurez le fichier d’archives de processus importé.
-
-## Configuration des services AEM forms faisant partie d’un fichier d’archive à l’aide de l’assistant de configuration {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
-
-1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications, puis sur l’onglet Archives.
-1. Cliquez sur Configurer en regard du fichier d’archives à configurer.
-1. Vous pouvez apporter les modifications voulues dans la page de configuration des points de fin qui s’affiche :
+1. Si vous cliquez sur Configurer, la page Configurer les points de fin s’affiche. Vous pouvez y apporter les modifications nécessaires :
 
    * Pour renommer un point de fin ou modifier sa description, cliquez dessus.
-   * Pour ajouter un point de fin TaskManager, cliquez sur Ajouter un point de fin TaskManager. Pour plus d’informations sur les paramètres de Task Manager, voir [Paramètres des points de fin Task Manager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
-   * Pour ajouter un point de fin WatchedFolder, cliquez sur Ajouter un point de fin WatchedFolder. Pour plus d’informations sur les paramètres de Watched Folder, voir [Paramètres des points de fin Watched Folder](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
-   * Pour ajouter un point de fin courrier électronique, cliquez sur Ajouter une adresse électronique. Pour plus de précisions sur les paramètres de courrier électronique, voir [Paramètres des points de fin de courrier électronique](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
-   * Pour ajouter un point de fin EJB, cliquez sur Ajouter un point de fin EJB et spécifiez un nom et une description pour le point de fin.
-   * Pour ajouter un point de fin SOAP, cliquez sur Ajouter un point de fin SOAP et spécifiez un nom et une description pour le point de fin.
-   * Pour ajouter un point de fin Remoting, cliquez sur Ajouter un point de fin Remoting. Pour plus de précisions sur les paramètres de points de fin Remoting, voir [Paramètres des points de fin Remoting](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
-   * Pour ajouter un point de fin REST, cliquez sur Ajouter un point de fin REST et spécifiez un nom et une description pour ce dernier. Conservez l’URL d’invocation REST qui s’affiche sur la page Ajouter un point de fin REST.
-   * Pour supprimer un point de fin, sélectionnez la case à cocher en regard du point de fin et cliquez sur Supprimer.
+   * Pour ajouter un point de fin TaskManager, cliquez sur Ajouter un point de fin TaskManager. Pour plus d’informations sur les paramètres de Task Manager, voir [Configuration des points de fin TaskManager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
+   * Pour ajouter un point de fin Watched Folder, cliquez sur Ajouter un point de fin Watched Folder. Pour plus d’informations sur les paramètres du dossier de contrôle, voir [Paramètres des points de fin Watched Folder](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
+   * Pour ajouter un point de fin Email, cliquez sur Ajouter un message électronique. Pour plus d’informations sur les paramètres de courrier électronique, voir [Paramètres des points de fin de courrier électronique](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
+   * Pour ajouter un point de fin EJB, cliquez sur Ajouter un point de fin EJB et indiquez un nom et une description pour le point de fin.
+   * Pour ajouter un point de fin SOAP, cliquez sur Ajouter un point de fin SOAP et indiquez un nom et une description pour le point de fin.
+   * Pour ajouter un point de fin Remoting, cliquez sur Ajouter un point de fin Remoting. Pour plus d’informations sur les paramètres d’installation à distance, voir [Paramètres des points de fin Remoting](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
+   * Pour ajouter un point de fin REST, cliquez sur Ajouter un point de fin REST et indiquez un nom et une description pour le point de fin. Notez l’URL d’appel REST affichée sur la page Ajouter un point de fin REST .
+   * Pour supprimer un point de fin, cochez la case en regard de celui-ci et cliquez sur Supprimer.
 
 1. Cliquez sur Suivant.
-1. Si un processus ou un service de l’archive LCA possède des paramètres de configuration, une page de configuration des paramètres apparaît. Configurez les paramètres du service et cliquez sur Suivant.
-1. Vous pouvez apporter toutes les modifications voulues dans la page de configuration du profil de sécurité :
+1. Si un processus ou un service de l’archive LCA comporte des paramètres de configuration, une page Configurer les paramètres s’affiche, dans laquelle vous configurez les paramètres de service et cliquez sur Suivant.
+1. Sur la page Configurer le profil de sécurité , apportez les modifications nécessaires :
 
-   * **Demander aux appelants de s’authentifier :** ce paramètre indique si le service peut être appelé sans informations d’identification.
+   * **Exiger que les appelants s’authentifient :** Ce paramètre indique si le service peut être appelé avec ou sans informations d’identification.
 
-      Si le message *Les appelants sont actuellement tenus de s’authentifier* s’affiche, l’appelant du service doit être authentifié et l’entité de sécurité utilisateur de cet appelant doit être autorisée à appeler le service ; si ce n’est pas le cas, la tentative d’appel est refusée. Pour supprimer l’obligation d’authentification, cliquez sur Autoriser des appelants non authentifiés.
+     Si le message *Les appelants sont actuellement tenus de s’authentifier* s’affiche, l’appelant du service doit être authentifié et le principal de cet appelant doit être autorisé à appeler le service ; si ce n’est pas le cas, la tentative d’appel est refusée. Pour supprimer la nécessité de s’authentifier, cliquez sur Autoriser les appelants non authentifiés.
 
-      Si le message *Les appelants ne sont pas tenus de s’authentifier* s’affiche, l’appelant du service peut être ou non authentifié. L’appel du service réussit toujours puisqu’aucune vérification des autorisations n’est effectuée. Pour exiger une authentification, cliquez sur Demander aux appelants de s’authentifier.
+     If *Les appelants ne sont pas tenus de s’authentifier* s’affiche, l’appelant du service ne doit pas être authentifié. L’appel du service réussit toujours car il n’y a pas de vérification d’autorisation. Pour exiger une authentification, cliquez sur Demander aux appelants de s’authentifier.
 
-   * **Exécuter en tant que :** indique l’identité d’exécution utilisée par un service après son appel. Pour modifier cette option, cliquez sur Changer. Faites votre choix parmi les options suivantes :
+   * **Exécutez comme :** Indique l’identité d’exécution utilisée par un service après son appel. Pour modifier cette option, cliquez sur Modifier. Faites votre choix parmi les options suivantes :
 
-      **Non spécifié :** le comportement par défaut est utilisé.
+     **Non spécifié :** le comportement par défaut est utilisé.
 
-      **Invocateur :** utilise l’identité de l’utilisateur qui a appelé le service.
+     **Invocateur :** utilise l’identité de l’utilisateur qui a appelé le service.
 
-      **Système :** exécute le service avec des droits illimités. Il s’agit du paramètre par défaut pour les processus de longue durée.
+     **Système :** exécute le service avec des droits illimités. Il s’agit du paramètre par défaut pour les processus de longue durée.
 
-      **Utilisateur nommé :** vous permet d’exécuter le service en tant qu’utilisateur spécifique. Il s’agit du paramètre par défaut pour les processus de courte durée. Lors de la sélection de cette option, cliquez sur Sélectionner un utilisateur pour afficher la page Sélectionner une entité de sécurité, qui vous permet de rechercher et sélectionner l’utilisateur.
+     **Utilisateur nommé :** vous permet d’exécuter le service en tant qu’utilisateur spécifique. Il s’agit du paramètre par défaut pour les processus de courte durée. Lorsque vous sélectionnez cette option, cliquez sur Sélectionner un utilisateur pour afficher la page Sélectionner une entité de sécurité, dans laquelle vous pouvez rechercher et sélectionner l’utilisateur.
 
-   * Pour ajouter une entité de sécurité au profil de sécurité, cliquez sur Ajouter une entité de sécurité et sélectionnez ensuite l’utilisateur ou le groupe à ajouter en tant qu’entité de sécurité. Cliquez sur Suivant et sélectionnez ensuite les autorisations à affecter à cette entité de sécurité :
+   * Pour ajouter une entité de sécurité au profil de sécurité, cliquez sur Ajouter une entité de sécurité et sélectionnez l’utilisateur ou le groupe à ajouter comme entité de sécurité. Cliquez sur Suivant , puis sélectionnez les autorisations à attribuer à cette entité :
 
-      **INVOKE_PERM :** invocation de toutes les opérations sur le service.
+     **INVOKE_PERM :** invocation de toutes les opérations sur le service.
 
-      **MODIFY_CONFIG_PERM :** modification de la configuration d’un service.
+     **MODIFY_CONFIG_PERM :** modification de la configuration d’un service.
 
-      **SUPERVISOR_PERM :** affichage des données d’instance de processus d’un service créé à partir d’un processus.
+     **SUPERVISOR_PERM :** affichage des données d’instance de processus d’un service créé à partir d’un processus.
 
-      **START_STOP_PERM :** démarrage et arrêt d’un service.
+     **START_STOP_PERM :** démarrage et arrêt d’un service.
 
-      **ADD_REMOVE_ENDPOINTS_PERM :** ajout, suppression et modification des points de fin d’un service.
+     **ADD_REMOVE_ENDPOINTS_PERM :** ajout, suppression et modification des points d’entrée d’un service.
 
-      **CREATE_VERSION_PERM :** création d’une nouvelle version du service.
+     **CREATE_VERSION_PERM :** création d’une nouvelle version du service.
 
-      **DELETE_VERSION_PERM :** suppression d’une version du service.
+     **DELETE_VERSION_PERM :** suppression d’une version du service.
 
-      **MODIFY_VERSION_PERM :** modification d’une version du service.
+     **MODIFY_VERSION_PERM :** modification d’une version du service.
 
-      **READ_PERM :** affichage du service.
+     **READ_PERM :** affichage du service.
 
-      Cliquez sur Terminé pour ajouter l’entité de sécurité au profil de sécurité.
+     Cliquez sur Terminé pour ajouter l&#39;entité de sécurité au profil de sécurité.
+
+1. Cliquez sur Terminé pour terminer la configuration.
+
+## Configuration des AEM forms faisant partie d’un fichier d’archive {#configure-the-aem-forms-that-are-part-of-an-archive-file}
+
+1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications, puis cliquez sur l’onglet Archives.
+1. Sur la page Gestion des archives, sélectionnez le fichier d’archive à configurer.
+1. Sur la page Afficher l’archive , sélectionnez la ressource d’archive mise en surbrillance.
+1. Configurez le fichier d’archive de processus importé.
+
+## Utilisation de l’assistant de configuration pour configurer les formulaires AEM qui font partie d’un fichier d’archive {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
+
+1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications, puis cliquez sur l’onglet Archives.
+1. Cliquez sur Configurer en regard du fichier d’archive à configurer.
+1. La page Configurer les points de fin s’affiche, dans laquelle vous pouvez apporter les modifications nécessaires :
+
+   * Pour renommer un point de fin ou modifier sa description, cliquez dessus.
+   * Pour ajouter un point de fin TaskManager, cliquez sur Ajouter un point de fin TaskManager. Pour plus d’informations sur les paramètres de Task Manager, voir [Configuration des points de fin TaskManager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
+   * Pour ajouter un point de fin Watched Folder, cliquez sur Ajouter un point de fin Watched Folder. Pour plus d’informations sur les paramètres du dossier de contrôle, voir [Paramètres des points de fin Watched Folder](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
+   * Pour ajouter un point de fin Email, cliquez sur Ajouter un message électronique. Pour plus d’informations sur les paramètres de courrier électronique, voir [Paramètres des points de fin de courrier électronique](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
+   * Pour ajouter un point de fin EJB, cliquez sur Ajouter un point de fin EJB et indiquez un nom et une description pour le point de fin.
+   * Pour ajouter un point de fin SOAP, cliquez sur Ajouter un point de fin SOAP et indiquez un nom et une description pour le point de fin.
+   * Pour ajouter un point de fin Remoting, cliquez sur Ajouter un point de fin Remoting. Pour plus d’informations sur les paramètres d’installation à distance, voir [Paramètres des points de fin Remoting](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
+   * Pour ajouter un point de fin REST, cliquez sur Ajouter un point de fin REST et indiquez un nom et une description pour le point de fin. Notez l’URL d’appel REST affichée sur la page Ajouter un point de fin REST .
+   * Pour supprimer un point de fin, cochez la case en regard de celui-ci et cliquez sur Supprimer.
+
+1. Cliquez sur Suivant.
+1. Si un processus ou un service de l’archive LCA comporte des paramètres de configuration, une page Configurer les paramètres s’affiche, dans laquelle vous configurez les paramètres de service et cliquez sur Suivant.
+1. Sur la page Configurer le profil de sécurité , vous pouvez apporter les modifications nécessaires :
+
+   * **Exiger que les appelants s’authentifient :** Ce paramètre indique si le service peut être appelé avec ou sans informations d’identification.
+
+     Si le message *Les appelants sont actuellement tenus de s’authentifier* s’affiche, l’appelant du service doit être authentifié et le principal de cet appelant doit être autorisé à appeler le service ; si ce n’est pas le cas, la tentative d’appel est refusée. Pour supprimer la nécessité de s’authentifier, cliquez sur Autoriser les appelants non authentifiés.
+
+     If *Les appelants ne sont pas tenus de s’authentifier* s’affiche, l’appelant du service peut être authentifié ou non. L’appel du service réussit toujours car il n’y a pas de vérification d’autorisation. Pour exiger une authentification, cliquez sur Demander aux appelants de s’authentifier.
+
+   * **Exécutez comme :** Indique l’identité d’exécution utilisée par un service après son appel. Pour modifier cette option, cliquez sur Modifier. Faites votre choix parmi les options suivantes :
+
+     **Non spécifié :** le comportement par défaut est utilisé.
+
+     **Invocateur :** utilise l’identité de l’utilisateur qui a appelé le service.
+
+     **Système :** exécute le service avec des droits illimités. Il s’agit du paramètre par défaut pour les processus de longue durée.
+
+     **Utilisateur nommé :** vous permet d’exécuter le service en tant qu’utilisateur spécifique. Il s’agit du paramètre par défaut pour les processus de courte durée. Lorsque vous sélectionnez cette option, cliquez sur Sélectionner un utilisateur pour afficher la page Sélectionner une entité de sécurité, dans laquelle vous pouvez rechercher et sélectionner l’utilisateur.
+
+   * Pour ajouter une entité de sécurité au profil de sécurité, cliquez sur Ajouter une entité de sécurité et sélectionnez l’utilisateur ou le groupe à ajouter comme entité de sécurité. Cliquez sur Suivant , puis sélectionnez les autorisations à attribuer à cette entité :
+
+     **INVOKE_PERM :** invocation de toutes les opérations sur le service.
+
+     **MODIFY_CONFIG_PERM :** modification de la configuration d’un service.
+
+     **SUPERVISOR_PERM :** affichage des données d’instance de processus d’un service créé à partir d’un processus.
+
+     **START_STOP_PERM :** démarrage et arrêt d’un service.
+
+     **ADD_REMOVE_ENDPOINTS_PERM :** ajout, suppression et modification des points d’entrée d’un service.
+
+     **CREATE_VERSION_PERM :** création d’une nouvelle version du service.
+
+     **DELETE_VERSION_PERM :** suppression d’une version du service.
+
+     **MODIFY_VERSION_PERM :** modification d’une version du service.
+
+     **READ_PERM :** affichage du service.
+
+     Cliquez sur Terminé pour ajouter l&#39;entité de sécurité au profil de sécurité.
 
 ## Suppression d’une archive {#remove-an-archive}
 
 >[!NOTE]
 >
->pour supprimer une archive contenant des actifs stockés dans un référentiel tiers (EMC Documentum Content Server, IBM FileNet Content Manager ou IBM Content Manager), vous devez également supprimer les fichiers d’actifs du référentiel à l’aide de Workbench.
+>Pour supprimer une archive contenant des ressources stockées dans un référentiel tiers (EMC Documentum Content Server, IBM FileNet Content Manager ou IBM Content Manager), vous devez également supprimer les fichiers de ressources du référentiel à l’aide de Workbench.
 
-1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des archives.
-1. Dans la page Gestion des archives, cochez la case correspondant à l’archive à supprimer, puis cliquez sur Supprimer.
+1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des archives.
+1. Sur la page Gestion des archives, cochez la case correspondant à l’archive à supprimer, puis cliquez sur Supprimer.

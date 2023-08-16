@@ -1,22 +1,18 @@
 ---
 title: Référence sur les étapes du workflow basé sur l’utilisation de Forms on OSGi
-seo-title: Forms-centric workflow on OSGi - Step Reference
 description: Les processus basés sur Forms sur les étapes OSGi vous permettent de créer rapidement des processus basés sur des formulaires adaptatifs.
-seo-description: Forms-centric workflow on OSGi steps allow you rapidly build adaptive forms based workflows.
-uuid: 6f791c45-0e35-4c55-9106-5340caab94b7
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '7594'
-ht-degree: 83%
+source-wordcount: '7589'
+ht-degree: 82%
 
 ---
 
-# Référence sur les étapes du processus basé sur l’utilisation de Forms on OSGi {#forms-centric-workflow-on-osgi-step-reference}
+# Référence sur les étapes du workflow basé sur l’utilisation de Forms on OSGi {#forms-centric-workflow-on-osgi-step-reference}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -27,9 +23,9 @@ Vous utilisez des modèles de processus pour convertir une logique métier en pr
 
 ## Étapes de processus Forms {#forms-workflow-steps}
 
-Les étapes du workflow Forms effectuent des opérations spécifiques à AEM Forms dans un workflow AEM. Ces étapes vous permettent de créer rapidement un processus Forms basé sur des formulaires adaptatifs sur OSGi. Ces workflows peuvent être utilisés pour développer des processus de révision et d’approbation de base, des workflows métier internes et sur le pare-feu. Vous pouvez également utiliser des étapes Forms Workflow pour démarrer Document Services, intégrer le processus de signature Adobe Sign et effectuer d’autres opérations AEM Forms. Vous avez besoin de [Module complémentaire AEM Forms](https://www.adobe.com/go/learn_aemforms_documentation_63_fr) pour utiliser ces étapes dans un workflow.
+Les étapes du workflow Forms exécutent des opérations spécifiques à AEM Forms dans un workflow AEM. Ces étapes vous permettent de créer rapidement un processus Forms basé sur des formulaires adaptatifs sur OSGi. Ces workflows peuvent être utilisés pour développer des processus de révision et d’approbation de base, des workflows métier internes et sur le pare-feu. Vous pouvez également utiliser des étapes Forms Workflow pour démarrer Document Services, intégrer le processus de signature Adobe Sign et effectuer d’autres opérations AEM Forms. Vous avez besoin de [Module complémentaire AEM Forms](https://www.adobe.com/go/learn_aemforms_documentation_63_fr) pour utiliser ces étapes dans un workflow.
 
-Les étapes de processus orientés formulaire effectuent des opérations spécifiques à AEM Forms dans un processus AEM. Ces étapes vous permettent de créer rapidement des formulaires adaptatifs à partir de processus orientés Forms on OSGi. Ces workflows peuvent être utilisés pour développer des workflows de révision et d’approbation de base, des processus métier internes et sur le pare-feu.
+Les étapes de processus orientés formulaire effectuent des opérations spécifiques à AEM Forms dans un processus AEM. Ces étapes vous permettent de créer rapidement un processus Forms basé sur Adaptive Forms sur OSGi. Ces workflows peuvent être utilisés pour développer des workflows de révision et d’approbation de base, des processus métier internes et sur le pare-feu.
 
 >[!NOTE]
 >
@@ -44,7 +40,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **Titre :** Titre de la tâche. Le titre s’affiche dans la boîte de réception AEM.
 * **Description :** Explication des opérations en cours dans la tâche. Ces informations sont utiles pour d’autres développeurs de processus lorsque vous travaillez dans un environnement de développement partagé.
 
-* **Chemin de la miniature :** Chemin d’accès de la miniature de la tâche. Si aucun chemin n’est spécifié, une miniature par défaut de formulaire adaptatif s’affiche et une icône par défaut s’affiche pour le document d’enregistrement.
+* **Chemin d’accès de la miniature :** Chemin de la miniature de la tâche. Si aucun chemin n’est spécifié, une miniature par défaut de formulaire adaptatif s’affiche et une icône par défaut s’affiche pour le document d’enregistrement.
 * **Phase de processus :** un processus peut se composer de plusieurs phases. Ces phases sont affichées dans la boîte de réception AEM. Vous pouvez définir ces phases dans les propriétés du modèle (Sidekick > Page > Propriétés de la page > Phases).
 * **Priorité :** la priorité sélectionnée s’affiche dans la boîte de réception AEM. Les options disponibles sont les suivantes : Élevée, Moyenne et Faible. La valeur par défaut est Moyenne.
 * **Date d’échéance :** Indiquez le nombre de jours ou d’heures après lesquels la tâche est marquée comme en retard. Si vous sélectionnez **Désactivé**, la tâche n’est jamais marquée comme En retard. Vous pouvez également spécifier un gestionnaire de dépassement de délai pour effectuer des tâches spécifiées dès que la tâche est marquée comme En retard.
@@ -66,7 +62,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 
 * **Chemin d’accès du formulaire adaptatif ou de la communication interactive :** spécifiez le chemin du formulaire adaptatif ou de la communication interactive. Vous pouvez utiliser le formulaire adaptatif ou la communication interactive qui est soumis au workflow, disponible au niveau d’un chemin d’accès absolu, ou récupérer le formulaire adaptatif à partir d’un chemin stocké dans une variable de type de données chaîne.
 * **Sélectionner le fichier PDF d’entrée en utilisant :** indiquez le chemin d’accès d’un document PDF non interactif. Le champ apparaît lorsque vous sélectionnez un document PDF non interactif dans le champ Type. Vous pouvez sélectionner le fichier PDF d’entrée à l’aide du chemin d’accès relatif à la charge utile, enregistré à un chemin absolu ou à l’aide d’une variable de type de données Document. Par exemple, [Répertoire_Charge_utile]/Workflow/PDF/credit-card.pdf. Le chemin n’existe pas dans le référentiel CRX. Un administrateur crée le chemin d’accès avant de l’utiliser. Vous avez besoin d’une option Document d’enregistrement activée ou de formulaires adaptatifs basés sur un modèle de formulaire pour utiliser l’option Chemin du PDF .
-* **Pour la tâche terminée, effectuez le rendu du formulaire adaptatif comme**: Lorsqu’une tâche est marquée comme terminée, vous pouvez effectuer le rendu du formulaire adaptatif en tant que formulaire adaptatif en lecture seule ou document de PDF. Vous avez besoin d’une option Document d’enregistrement activée ou de formulaires adaptatifs basés sur un modèle de formulaire pour générer le formulaire adaptatif en tant que document d’enregistrement.
+* **Pour la tâche terminée, effectuez le rendu du formulaire adaptatif comme**: lorsqu’une tâche est marquée comme terminée, vous pouvez effectuer le rendu du formulaire adaptatif en tant que formulaire adaptatif en lecture seule ou document de PDF. Vous avez besoin d’une option Document d’enregistrement activée ou de formulaires adaptatifs basés sur un modèle de formulaire pour générer le formulaire adaptatif en tant que document d’enregistrement.
 * **Prérempli :** les champs répertoriés ci-dessous servent d’entrées à la tâche :
 
    * **[!UICONTROL Sélectionnez le fichier de données d’entrée en utilisant :]** chemin d’accès du fichier de données d’entrée (.json, .xml, .doc ou modèle de données de formulaire). Vous pouvez récupérer le fichier de données d’entrée à l’aide d’un chemin d’accès relatif à la charge utile ou récupérer le fichier stocké dans une variable de type de données Document, XML ou JSON. Par exemple, le fichier contient les données envoyées pour le formulaire via une application de boîte de réception AEM. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/workflow/data.
@@ -92,11 +88,11 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **Personne désignée > options d’affectation :** indiquez la méthode d’affectation de la tâche à un utilisateur. Vous pouvez affecter la tâche de manière dynamique à un utilisateur ou un groupe à l’aide du script Programme de sélection des participants ou affecter la tâche à un utilisateur ou à un groupe AEM spécifique.
 * **Programme de sélection des participants :** Cette option est disponible lorsque la variable **À un utilisateur ou à un groupe de manière dynamique** est sélectionnée dans le champ Options d’affectation . Vous pouvez utiliser un ECMAScript ou un service pour sélectionner un utilisateur ou une utilisatrice, ou un groupe de manière dynamique. Pour en savoir plus, veuillez consulter [Affectation dynamique d’un workflow aux utilisateurs](https://helpx.adobe.com/fr/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) et [Création d’une étape de participant dynamique Adobe Experience Manager personnalisée.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&amp;CID=RedirectAEMCommunityKautuk)
 
-* **Participants :** le champ est disponible lorsque l’option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** est sélectionnée dans le champ **Programme de sélection des participants**. Le champ vous permet de sélectionner des utilisateurs ou des groupes pour l’option RandomParticipantChooser.
+* **Participants :** le champ est disponible lorsque l’option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** est sélectionnée dans le champ **Programme de sélection des participants**. Le champ vous permet de sélectionner des utilisateurs ou des groupes pour l’option RandomParticipantChooser .
 
-* **Personne désignée :** ce champ est disponible lorsque l’option **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** est sélectionnée dans le champ **Programme de sélection des participants**. Ce champ vous permet de sélectionner une variable de type Chaîne pour définir la personne désignée.
+* **Personne désignée :** ce champ est disponible lorsque l’option **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** est sélectionnée dans le champ **Programme de sélection des participants**. Le champ vous permet de sélectionner une variable de type Données de chaîne pour définir la personne désignée.
 
-* **Arguments :** le champ est disponible lorsqu’un script autre que le script RandomParticipantChoose est sélectionné dans le champ Programme de sélection des participants. Le champ vous permet de fournir une liste d’arguments séparés par des virgules pour le script sélectionné dans le champ Programme de sélection des participants.
+* **Arguments :** le champ est disponible lorsqu’un script autre que le script RandomParticipantChoose est sélectionné dans le champ Programme de sélection des participants. Le champ vous permet de fournir une liste d’arguments séparés par des virgules pour le script sélectionné dans le champ Programme de sélection des participants .
 
 * **Utilisateur ou groupe :** la tâche est affectée à l’utilisateur ou au groupe sélectionné. Cette option est disponible lorsque l’option **À un utilisateur ou un groupe spécifique** est activée dans le champ **Options d’affectation**. Le champ répertorie tous les utilisateurs et groupes du groupe d’utilisateurs du processus.\
   Le menu déroulant **Utilisateur ou groupe** répertorie les utilisateurs et les groupes auxquels l’utilisateur connecté a accès. L’affichage du nom d’utilisateur dépend des autorisations d’accès sur le nœud **users** dans crx-repository pour cet utilisateur particulier.
@@ -113,14 +109,14 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 
 * **Actions et actions par défaut :** les actions Prêt à l’emploi, Envoyer, Enregistrer et Réinitialiser sont disponibles. Par défaut, toutes les actions par défaut sont activées.
 * **Variable d’itinéraire :** Nom de la variable d’itinéraire. La variable d’itinéraire capture les actions personnalisées qu’un utilisateur sélectionne dans la boîte de réception AEM.
-* **Itinéraires :** Une tâche peut se branche à différents itinéraires. Lorsque cette option est sélectionnée dans la boîte de réception AEM, l’itinéraire renvoie une valeur et les branches du processus en fonction de l’itinéraire sélectionné. Vous pouvez stocker des itinéraires dans une variable de tableau de type de données Chaîne ou sélectionner **Littéral** pour ajouter manuellement des itinéraires.
+* **Itinéraires** Une tâche peut se branche à différents itinéraires. Lorsque cette option est sélectionnée dans la boîte de réception AEM, l’itinéraire renvoie une valeur et les branches du processus en fonction de l’itinéraire sélectionné. Vous pouvez stocker des itinéraires dans une variable de tableau de type de données Chaîne ou sélectionner **Littéral** pour ajouter manuellement des itinéraires.
 
 * **Titre** : indiquez le titre de l’itinéraire. Il s’affiche dans la boîte de réception AEM.
 * **Icône Coral** : spécifiez l’attribut HTML d’une icône Coral. La bibliothèque Adobe CoralUI fournit un vaste ensemble d’icônes tactiles. Vous pouvez choisir et utiliser une icône pour l’itinéraire. Elle s’affiche avec le titre dans la boîte de réception AEM. Si vous stockez les itinéraires dans une variable, ils utilisent une icône de corail Balises par défaut.
 * **Autoriser les personnes désignées à ajouter des commentaires** : sélectionnez cette option pour activer les commentaires pour la tâche. Une personne désignée peut ajouter des commentaires à partir de la boîte de réception AEM au moment de l’envoi de la tâche.
 * **Enregistrer le commentaire dans la variable** : enregistrez le commentaire dans une variable de type de données Chaîne. Cette option s’affiche uniquement si vous cochez la case **Autoriser la personne désignée à ajouter un commentaire**.
 
-* **Autoriser les personnes désignées à ajouter des pièces jointes à la tâche**: Sélectionnez cette option pour activer les pièces jointes pour la tâche. Une personne désignée peut ajouter des pièces jointes à partir de la boîte de réception AEM au moment de l’envoi de la tâche.
+* **Autoriser les personnes désignées à ajouter des pièces jointes à la tâche**: sélectionnez cette option pour activer les pièces jointes pour la tâche. Une personne désignée peut ajouter des pièces jointes à partir de la boîte de réception AEM au moment de l’envoi de la tâche.
 * **Enregistrez les pièces jointes de la tâche de sortie en utilisant** : spécifiez l’emplacement du dossier des pièces jointes. Vous pouvez enregistrer les pièces jointes de la tâche de sortie à l’aide d’un chemin d’accès relatif à la charge utile ou dans une variable de tableau de type de données Document. Cette option s’affiche uniquement si vous cochez la case **Autoriser les personnes désignées à ajouter des pièces jointes à la tâche** et sélectionnez **Formulaire adaptatif**, **Formulaire adaptatif en lecture seule** ou **document PDF non interactif** dans la liste déroulante **Type** dans l’onglet **Formulaire/Document**.
 
 >[!NOTE]
@@ -141,7 +137,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 
 Utilisez l’étape Envoyer un courrier électronique pour envoyer un courrier électronique, par exemple un courrier électronique contenant un document d’enregistrement, un lien d’un formulaire adaptatif, un lien d’une communication interactive ou un document de PDF joint. L’étape Envoyer un e-mail prend en charge l’[e-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Les e-mails HTML sont réactifs et s’adaptent à la taille de l’écran et au client de messagerie du ou de la destinataire. Vous pouvez utiliser un modèle de courrier électronique HTML pour définir l’aspect, le modèle de couleurs et le comportement du courrier électronique.
 
-L’étape Envoyer un courrier électronique utilise le service de messagerie Day CQ pour envoyer des messages. Avant d’utiliser l’étape de courrier électronique, assurez-vous que la variable [service de messagerie électronique](../../forms/using/aem-forms-workflow.md) est configuré. L’étape Envoyer un courrier électronique possède les propriétés suivantes :
+L’étape Envoyer un courrier électronique utilise le service de messagerie Day CQ pour envoyer des messages. Avant d’utiliser l’étape de courrier électronique, assurez-vous que la variable [service email](../../forms/using/aem-forms-workflow.md) est configuré. L’étape Envoyer un courrier électronique possède les propriétés suivantes :
 
 **Titre :** Le titre de l’étape permet d’identifier l’étape dans l’éditeur de workflow.
 
@@ -163,7 +159,7 @@ L’étape Envoyer un courrier électronique utilise le service de messagerie Da
 * **URL de la ressource :** utilisez cette option pour inclure un lien web d’une communication interactive à l’e-mail. Après avoir sélectionné cette option, recherchez et sélectionnez la communication interactive à inclure. La ressource peut se trouver sur le serveur de création ou de publication.
 * **Image :** Utilisez l’option pour incorporer une image dans le courrier électronique. Après avoir sélectionné cette option, recherchez et sélectionnez l’image. L’option image est uniquement disponible pour les balises d’image (&lt;img src=&quot;&#42;&quot;/>) disponibles dans le modèle d’e-mail.
 
-**Adresse électronique de l’expéditeur/du destinataire :** Sélectionnez la **Littéral** pour spécifier manuellement une adresse électronique ou sélectionner l’option **Récupération à partir des métadonnées de workflow** pour récupérer l’adresse électronique à partir d’une propriété de métadonnées. Vous pouvez également spécifier une liste de tableaux de propriété de métadonnées pour l’option **Récupérez à partir des métadonnées de processus**. Sélectionnez l’option **Variable** pour récupérer l’adresse électronique à partir de la valeur stockée dans une variable de type de données Chaîne.
+**Adresse électronique de l’expéditeur/du destinataire :** Sélectionnez la variable **Littéral** pour spécifier manuellement une adresse électronique ou sélectionner l’option **Récupération à partir des métadonnées de workflow** pour récupérer l’adresse électronique à partir d’une propriété de métadonnées. Vous pouvez également spécifier une liste de tableaux de propriété de métadonnées pour l’option **Récupérez à partir des métadonnées de processus**. Sélectionnez l’option **Variable** pour récupérer l’adresse électronique à partir de la valeur stockée dans une variable de type de données Chaîne.
 
 **Pièce jointe du fichier :** la ressource disponible à l’emplacement spécifié est jointe à l’e-mail. Le chemin d’accès de l’actif peut être lié à la charge utile ou au chemin d’accès absolu. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/attachments/.
 
@@ -337,7 +333,7 @@ Générer un document de PDF à partir d’un fichier d’entrée. Le document d
 
 ### Créer un PDF à partir de l’étape URL/HTML/ZIP {#create-pdf-from-url-html-zip-step}
 
-Génère un document de PDF à partir de l’URL, du HTML et du fichier ZIP fournis.
+Génère un document de PDF à partir d’une URL, d’un HTML et d’un fichier ZIP fournis.
 
 ### Étape Exporter les données {#export-data-step}
 
@@ -397,8 +393,8 @@ Chiffrez, signez et certifiez un document. AEM Forms prend en charge le chiffrem
 
 Envoyez directement un document à une imprimante. Il prend en charge les mécanismes d’accès à l’impression suivants :
 
-* **Imprimante accessible directement**: Une imprimante installée sur le même ordinateur s’appelle une imprimante accessible directement, et l’ordinateur s’appelle hôte de l’imprimante. Ce type d’imprimante peut être une imprimante locale directement reliée à l’ordinateur.
-* **Imprimante accessible indirectement**: L’imprimante installée sur un serveur d’impression est accessible à partir d’autres ordinateurs. Les technologies de type CUPS (Common Unix® Printing System) et le protocole LPD (Line Printer Daemon) permettent de se connecter à une imprimante réseau. Pour accéder à une imprimante accessible indirectement, indiquez l’adresse IP ou le nom d’hôte du serveur d’impression. Grâce à ce mécanisme, vous pouvez envoyer un document à un URI LPD lorsque le réseau dispose d’un LPD en cours d’exécution. Le mécanisme permet d’acheminer le document vers n’importe quelle imprimante connectée au réseau sur lequel un protocole LPD est en cours d’exécution.
+* **Imprimante accessible directement**: une imprimante installée sur le même ordinateur est appelée imprimante accessible directement et l’ordinateur est appelé hôte d’imprimante. Ce type d’imprimante peut être une imprimante locale directement reliée à l’ordinateur.
+* **Imprimante accessible indirectement**: l’imprimante installée sur un serveur d’impression est accessible à partir d’autres ordinateurs. Les technologies de type CUPS (Common Unix® Printing System) et le protocole LPD (Line Printer Daemon) permettent de se connecter à une imprimante réseau. Pour accéder à une imprimante accessible indirectement, indiquez l’adresse IP ou le nom d’hôte du serveur d’impression. Grâce à ce mécanisme, vous pouvez envoyer un document à un URI LPD lorsque le réseau dispose d’un LPD en cours d’exécution. Le mécanisme permet d’acheminer le document vers n’importe quelle imprimante connectée au réseau sur lequel un protocole LPD est exécuté.
 
 ### Générer l’étape de sortie imprimée {#generatePrintedOutput}
 

@@ -10,10 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c21debc3-ecf4-4aa9-ab5a-18ddd5cf2fff
 exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2668'
-ht-degree: 67%
+source-wordcount: '2663'
+ht-degree: 65%
 
 ---
 
@@ -24,7 +24,7 @@ Multi Site Manager (MSM) vous permet d’utiliser le même contenu à plusieurs 
 * Avec MSM, vous pouvez :
 
    * créer une fois un contenu ;
-   * Copiez ce contenu et réutilisez-le dans d’autres zones ([Live copies](#live-copies)) du même site ou d’autres sites.
+   * Copiez ce contenu dans d’autres zones et réutilisez-le dans ([Live Copies](#live-copies)) du même site ou d’autres sites.
 
 * MSM conserve ensuite les relations (en direct) entre votre contenu source et ses Live Copies afin que :
 
@@ -117,7 +117,7 @@ Il existe de nombreux cas d’utilisation pour MSM et les Live Copies. Voici que
   >
   >De l’autre :
   >
-  >  * Le nombre de copies individuelles à ajuster.
+  >  * La quantité de copies individuelles à ajuster.
 
 ## MSM à partir de l’interface utilisateur {#msm-from-the-ui}
 
@@ -125,14 +125,14 @@ MSM est directement accessible dans l’interface utilisateur à l’aide de dif
 
 * **Créer un site** (**Sites**)
 
-   * MSM vous aide à gérer plusieurs sites web qui partagent du contenu commun. Par exemple, les sites web sont souvent créés pour un public international, de sorte que la majeure partie du contenu est commune à tous les pays, avec un sous-ensemble du contenu spécifique à chaque pays. MSM vous permet de [créer des Live Copies qui mettent automatiquement à jour un ou plusieurs sites en fonction de votre site source](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Cela vous permet également d’appliquer une structure de base commune, d’utiliser le contenu commun dans tous les sites, de conserver la même apparence et de concentrer les efforts sur la gestion du contenu qui diffère réellement d’un site à l’autre.
+   * MSM vous aide à gérer plusieurs sites web qui partagent du contenu commun. Par exemple, les sites web sont souvent créés pour un public international, de sorte que la majeure partie du contenu est commune à tous les pays, avec un sous-ensemble du contenu spécifique à chaque pays. MSM vous permet de [créer des Live Copies qui mettent automatiquement à jour un ou plusieurs sites en fonction de votre site source ;](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Cela vous permet également d’appliquer une structure de base commune, d’utiliser le contenu commun dans tous les sites, de conserver la même apparence et de concentrer les efforts sur la gestion du contenu qui diffère réellement d’un site à l’autre.
    * Requiert une configuration de plan directeur prédéfinie pour spécifier la source.
    * Crée une Live Copy de la source (prédéfinie).
    * Fournit à l’utilisateur l’accès **Déploiement** bouton .
 
 * **Créer une Live Copy** (**Sites**)
 
-   * MSM vous permet de [créer une Live Copy ad hoc (ponctuelle) d’une page ou sous-branche individuelle d’un site web ;](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page); par exemple, la duplication d’une sous-branche afin de fournir des informations sur une nouvelle version/mise à jour d’un produit.
+   * MSM vous permet de [créer une Live Copy ad hoc (ponctuelle) d’une page ou sous-branche individuelle d’un site web ;](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page); par exemple, la duplication d’une sous-branche pour fournir des informations sur une nouvelle version/mise à jour d’un produit.
    * Crée une Live Copy ad hoc (aucune configuration de plan directeur n’est requise).
    * Peut être utilisé pour (immédiatement) créer une Live Copy de n’importe quelle page/branche.
    * Nécessite de **Synchroniser** (ne fournit pas le bouton **Déployer**).
@@ -147,19 +147,19 @@ MSM est directement accessible dans l’interface utilisateur à l’aide de dif
 
 * **Aperçu de la Live Copy** (**Sites**)
 
-   * Cette console vous permet de [afficher et gérer votre plan directeur et ses Live Copies ;](/help/sites-administering/msm-livecopy-overview.md).
+   * Cette console vous permet de : [afficher et gérer votre plan directeur et ses Live Copies ;](/help/sites-administering/msm-livecopy-overview.md).
 
 * **Plans directeurs** (**Outils** – **Sites**)
 
-   * Cette console vous permet de [créer et de gérer vos configurations de plan directeur](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
+   * Cette console vous permet de : [créer et gérer vos configurations de plan directeur ;](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
 
 >[!NOTE]
 >
->Les aspects de la fonctionnalité MSM sont utilisés dans plusieurs autres fonctions AEM (par exemple, Lancements, Catalogue) ; dans ce cas, la Live Copy est gérée par cette fonctionnalité.
+>Les aspects de la fonctionnalité MSM sont utilisés dans plusieurs autres fonctions AEM (par exemple, Lancements, Catalogue) ; dans ce cas, la Live Copy est gérée par cette fonction.
 
 ### Termes utilisés {#terms-used}
 
-Le tableau suivant présente un aperçu des principaux termes utilisés avec MSM. ces informations seront détaillées dans les sections et pages suivantes :
+Le tableau suivant présente une vue d’ensemble des principaux termes utilisés avec MSM. Ces termes seront abordés plus en détail dans les sections et pages suivantes :
 
 <table>
  <tbody>
@@ -337,7 +337,7 @@ Une Live Copy est appelée Live Copy empilée lorsqu’elle est créée en tant 
 
 N’importe quelle page ou branche de pages peut être utilisée comme source d’une Live Copy.
 
-Toutefois, MSM vous permet également de définir une configuration de plan directeur qui spécifie un chemin d’accès source. Les avantages liés à l’utilisation d’une configuration de plan directeur sont les suivants :
+Cependant, MSM vous permet également de définir une configuration de plan directeur qui spécifie un chemin source. Les avantages liés à l’utilisation d’une configuration de plan directeur sont les suivants :
 
 * Permet à l’auteur d’utiliser l’option **Déploiement** sur un plan directeur afin de pousser (explicitement) les modifications vers les Live Copies qui héritent de ce plan directeur.
 * Permet à l’auteur d’utiliser **Créer un site**. L’utilisateur peut ainsi sélectionner facilement les langues et configurer la structure de la Live Copy.
@@ -362,7 +362,7 @@ La source forme le plan directeur de la Live Copy. Le plan directeur est défini
 Le déploiement est l’action MSM centrale qui synchronise les Live Copies avec leur source. Vous pouvez exécuter des déploiements manuellement ou ils peuvent se produire automatiquement :
 
 * Une [configuration de déploiement](#rollout-configurations) peut être définie de sorte que des [événements](/help/sites-administering/msm-sync.md#rollout-triggers) spécifiques puissent provoquer l’exécution automatique d’un déploiement.
-* Lors de la création d’une page de plan directeur, vous pouvez utiliser la variable [Déploiement](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) pour transmettre les modifications à la Live Copy.
+* Lors de la création d’une page de plan directeur, vous pouvez utiliser le [Déploiement](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) pour transmettre les modifications à la Live Copy.
 
   **La commande Déployer** est disponible sur une page de plan directeur référencée par une configuration de plan directeur.
 
@@ -370,7 +370,7 @@ Le déploiement est l’action MSM centrale qui synchronise les Live Copies avec
 
 * Lors de la création d’une page Live Copy, vous pouvez utiliser la variable [Synchroniser](/help/sites-administering/msm-livecopy.md#synchronizing-a-live-copy) pour extraire les modifications de la source vers la Live Copy.
 
-  Le **Synchroniser** est toujours disponible sur la page Live Copy (que la page source/plan directeur soit englobée ou non par une configuration de plan directeur).
+  La variable **Synchroniser** est toujours disponible sur la page Live Copy (que la page source/plan directeur soit englobée ou non par une configuration de plan directeur).
 
   ![Synchroniser](assets/chlimage_1-371.png)
 
@@ -416,7 +416,7 @@ L’action Désolidariser supprime définitivement les relations en direct entre
 
 >[!NOTE]
 >
->Voir [Désolidarisation d’une Live Copy](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) pour des détails complets ; y compris l’impact associé sur les sous-pages et les pages parentes.
+>Voir [Désolidarisation d’une Live Copy](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) pour plus d’informations, y compris l’impact associé sur les sous-pages et les pages parentes.
 
 ## Étapes standard d’utilisation de MSM {#standard-steps-for-using-msm}
 
@@ -426,7 +426,7 @@ Les étapes suivantes décrivent la procédure standard d’utilisation de MSM p
 1. Déterminez la configuration de déploiement à utiliser.
 
    1. MSM [installe plusieurs configurations de déploiement](/help/sites-administering/msm-sync.md#installed-rollout-configurations) pouvant répondre à un certain nombre de cas d’utilisation.
-   1. En option, vous pouvez [créer une configuration de déploiement ;](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) si nécessaire.
+   1. Vous pouvez éventuellement [créer une configuration de déploiement ;](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) si nécessaire.
 
 1. Déterminer où vous devez [spécifier les configurations de déploiement à utiliser ;](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use) et effectuez la configuration selon les besoins.
 1. Si nécessaire, [créez une configuration de plan directeur](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration) qui identifie le contenu source de la Live Copy.

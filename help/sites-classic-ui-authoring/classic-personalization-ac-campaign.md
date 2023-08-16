@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1169'
+source-wordcount: '1168'
 ht-degree: 55%
 
 ---
@@ -127,11 +127,11 @@ Voir [Composants Adobe Campaign](/help/sites-classic-ui-authoring/classic-person
 >
 
 1. Insérez un nouveau composant **Newsletter** > **Texte et personnalisation (Campaign)**.
-1. Ouvrez le composant en double-cliquant dessus. Le **Modifier** dispose d’une fonctionnalité permettant d’insérer les éléments de personnalisation.
+1. Ouvrez le composant en double-cliquant dessus. La variable **Modifier** dispose d’une fonctionnalité permettant d’insérer les éléments de personnalisation.
 
    >[!NOTE]
    >
-   >Les champs de contexte disponibles correspondent à la variable **Profils** dimension de ciblage dans Adobe Campaign.
+   >Les champs de contexte disponibles correspondent au **Profils** dimension de ciblage dans Adobe Campaign.
    >
    >Reportez-vous à la section [Liaison d’une page AEM à un e-mail Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#linkinganaempagetoanadobecampaignemail).
 

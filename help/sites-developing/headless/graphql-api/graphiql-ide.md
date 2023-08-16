@@ -2,10 +2,10 @@
 title: Utilisation de l’IDE GraphiQL dans AEM
 description: Découvrez comment utiliser l’IDE GraphiQL dans Adobe Experience Manager.
 exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 98%
+source-wordcount: '788'
+ht-degree: 92%
 
 ---
 
@@ -22,7 +22,7 @@ Une mise en œuvre de l’IDE [GraphiQL](https://graphql.org/learn/serving-over-
 >[!NOTE]
 >Vous devez avoir [configuré vos points d’entrée](/help/sites-developing/headless/graphql-api/graphql-endpoint.md) dans le [navigateur de configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md) avant d’utiliser l’IDE GraphiQL.
 
-L’outil **GraphiQL** vous permet de tester et de déboguer vos requêtes GraphQL en vous permettant de :
+La variable **GraphiQL** vous permet de tester et de déboguer vos requêtes GraphQL en vous permettant :
 
 * sélectionner le **Point d’entrée** approprié pour la configuration Sites que vous souhaitez utiliser pour vos requêtes ;
 * saisir directement de nouvelles requêtes ;
@@ -89,7 +89,7 @@ Dans les deux cas, la requête affichée dans le panneau de l’éditeur est la 
 
 <!-- more details needed here? -->
 
-L’IDE GraphiQL vous permet également de gérer vos [variables de requête](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-variables).
+L’IDE GraphiQL vous permet également de gérer votre [Variables de requête](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-variables).
 
 Par exemple :
 
@@ -140,7 +140,7 @@ Une fois que vous avez sélectionné votre [requête persistante](/help/sites-de
 
 ## Copie de l’URL pour accéder directement à la requête {#copy-url}
 
-L’option **Copier l’URL** vous permet de simuler une requête en copiant l’URL utilisée pour accéder directement à la requête persistante et consulter les résultats. Elle peut ensuite être utilisée à des fins de test ; par exemple, en y accédant par le biais d’un navigateur :
+La variable **Copier l’URL** permet de simuler une requête, en copiant l&#39;URL utilisée pour accéder directement à la requête conservée et visualiser les résultats. Elle peut ensuite être utilisée à des fins de test ; par exemple, en y accédant par le biais d’un navigateur :
 
 <!--
   >[!NOTE]

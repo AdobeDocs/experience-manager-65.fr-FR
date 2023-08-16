@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 84%
+source-wordcount: '1557'
+ht-degree: 83%
 
 ---
 
@@ -75,7 +75,7 @@ Il existe plusieurs moyens de rechercher une page. Vous pouvez soit naviguer, so
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
-1. Remontez dans l’arborescence à l’aide du [chemin de navigation de l’en-tête](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs) pour revenir à l’emplacement sélectionné :
+1. Remontez dans l’arborescence à l’aide de [chemin de navigation dans l’en-tête](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs), qui permet de revenir à l’emplacement sélectionné :
 
    ![qgtap-01](assets/qgtap-01.png)
 

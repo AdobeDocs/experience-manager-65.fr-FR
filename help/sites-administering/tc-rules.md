@@ -1,7 +1,7 @@
 ---
 title: Identification du contenu à traduire
 seo-title: Identifying Content to Translate
-description: Apprenez à identifier le contenu à traduire.
+description: Découvrez comment identifier le contenu qui doit être traduit.
 seo-description: Learn how to identify content that needs translating.
 uuid: 81b9575c-1c7a-4955-b03f-3f26cbd4f956
 contentOwner: Guillaume Carlino
@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: eedff940-4a46-4c24-894e-a5aa1080d23d
 feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
-source-wordcount: '1150'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1149'
+ht-degree: 83%
 
 ---
 
 # Identification du contenu à traduire{#identifying-content-to-translate}
 
-Les règles de traduction identifient le contenu à traduire pour les pages, les composants et les ressources incluses ou exclues dans les projets de traduction. Lorsqu’une page ou une ressource est en cours de traduction, AEM extrait ce contenu pour qu’il puisse être envoyé au service de traduction.
+Les règles de traduction identifient le contenu à traduire pour les pages, les composants et les ressources incluses ou exclues dans les projets de traduction. Lorsqu’une page ou une ressource est en cours de traduction, AEM extrait ce contenu afin qu’il puisse être envoyé au service de traduction.
 
 Les pages et les ressources sont représentées sous forme de nœuds dans le référentiel JCR. Le contenu qui est extrait est constitué d’une ou plusieurs valeurs de propriété des nœuds. Les règles de traduction identifient les propriétés qui contiennent le contenu à extraire.
 
@@ -43,7 +43,7 @@ Les règles comprennent les informations suivantes :
 
 Par exemple, vous pouvez créer une règle traduisant le contenu que les auteurs ajoutent à tous les composants Texte de base d’AEM sur vos pages. La règle peut identifier le nœud `/content` et la propriété `text` du composant `foundation/components/text`.
 
-Une [console](#translation-rules-ui) a été ajoutée pour configurer les règles de traduction. Les définitions dans l’interface utilisateur renseignent le fichier pour vous.
+Une [console](#translation-rules-ui) a été ajoutée pour configurer les règles de traduction. Les définitions de l’interface utilisateur renseignent le fichier à votre place.
 
 Pour une présentation des fonctions de traduction de contenu d’AEM, voir [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md).
 
@@ -111,7 +111,7 @@ Chaque élément `assetNode` présente les caractéristiques suivantes :
 * Un attribut `resourceType` qui est égal au chemin d’accès correspondant au composant 
 * Un attribut `assetReferenceAttribute` qui est égal au nom de la propriété stockant le fichier binaire de ressource (pour les ressources incorporées) ou le chemin d’accès à la ressource référencée
 
-L’exemple suivant extrait les images à partir du composant Image de base :
+L’exemple suivant extrait des images du composant Image de base :
 
 ```xml
 <assetNode resourceType="foundation/components/image" assetReferenceAttribute="fileReference"/>
@@ -163,7 +163,7 @@ Pour y accéder, procédez comme suit :
 
    ![chlimage_1-56](assets/chlimage_1-56.jpeg)
 
-De là, vous pouvez **Ajouter du contexte**. Ceci vous permet d’ajouter un chemin d’accès.
+De là, vous pouvez **Ajouter du contexte**. Vous pouvez ainsi ajouter un chemin.
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
@@ -173,7 +173,7 @@ Vous devez ensuite sélectionner votre contexte et cliquer sur **Modifier**. Cet
 
 Vous pouvez modifier 4 attributs via l’interface utilisateur : `isDeep`, `inherit`, `translate` et `updateDestinationLanguage`.
 
-**isDeep** Cet attribut s’applique sur les filtres de nœud et a la valeur true par défaut. Il vérifie si le nœud (ou ses ancêtres) contient cette propriété avec la valeur de propriété spécifiée dans le filtre. S’il a la valeur false, il vérifie uniquement le nœud actuel.
+**isDeep** Cet attribut s’applique sur les filtres de nœud et a la valeur true par défaut. Il vérifie si le nœud (ou ses ancêtres) contient cette propriété avec la valeur de propriété spécifiée dans le filtre. Si la valeur est false, il vérifie uniquement le noeud actif.
 
 Par exemple, les nœuds enfants sont ajoutés dans une tâche de traduction même lorsque la propriété `draftOnly` du nœud parent est définie sur true pour marquer le contenu comme brouillon. `isDeep` entre ici en jeu et vérifie si les nœuds parents disposent de la propriété `draftOnly` définie sur true et exclut ces nœuds enfants.
 
@@ -189,7 +189,7 @@ Voici un exemple du fichier xml obtenu lorsque l’option **Est profond** n’es
 </filter>
 ```
 
-**inherit** Ceci s’applique aux propriétés. Par défaut, chaque propriété est héritée, mais si vous souhaitez qu’une propriété ne soit pas héritée sur l’enfant, vous pouvez marquer cette propriété comme étant égale à « false » pour qu’elle soit appliquée uniquement sur ce nœud spécifique.
+**inherit** Ceci s’applique aux propriétés. Par défaut, chaque propriété est héritée, mais si vous souhaitez qu’une propriété ne soit pas héritée sur l’enfant, vous pouvez la marquer comme étant fausse afin qu’elle ne soit appliquée qu’à ce noeud spécifique.
 
 Dans l’interface utilisateur, vous pouvez cocher/décocher **Hériter** dans l’onglet **Propriétés**.
 
@@ -199,7 +199,7 @@ Dans l’interface utilisateur, vous pouvez cocher/décocher **Hériter** dans l
 
 Dans l’interface utilisateur, vous pouvez cocher/décocher **Traduire** dans l’onglet **Propriétés**.
 
-**updateDestinationLanguage** Cet attribut est utilisé pour les propriétés qui n’ont pas de texte mais qui comportent des codes de langue (par exemple, jcr:language). L’utilisateur ne traduit pas le texte, mais le paramètre régional de langue de la source vers la cible. Ces propriétés ne sont pas envoyées en traduction.
+**updateDestinationLanguage** Cet attribut est utilisé pour les propriétés qui n’ont pas de texte mais qui comportent des codes de langue (par exemple, jcr:language). L’utilisateur ne traduit pas le texte, mais le paramètre régional de langue de la source vers la cible. Ces propriétés ne sont pas envoyées pour traduction.
 
 Dans l’interface utilisateur, vous pouvez cocher/décocher **Traduire** dans l’onglet **Propriétés**, mais pour les propriétés spécifiques ayant comme valeur des codes de langue.
 
@@ -216,13 +216,13 @@ Le résultat dans le fichier xml ressemble à ce qui suit :
 
 ## Modification manuelle du fichier de règles {#editing-the-rules-file-manually}
 
-Le fichier translation_rules.xml qui est installé avec AEM contient un ensemble par défaut de règles de traduction. Vous pouvez modifier le fichier pour prendre en charge les exigences de vos projets de traduction. Par exemple, vous pouvez ajouter des règles de sorte que le contenu de vos composants personnalisés soit traduit.
+Le fichier translation_rules.xml qui est installé avec AEM contient un ensemble par défaut de règles de traduction. Vous pouvez modifier le fichier pour prendre en charge les exigences de vos projets de traduction. Par exemple, vous pouvez ajouter des règles afin que le contenu de vos composants personnalisés soit traduit.
 
-Si vous modifiez le fichier translation_rules.xml, conservez une copie de sauvegarde dans un module de contenu. L’installation des service packs AEM ou la réinstallation de certains modules AEM peut remplacer le fichier translation_rules.xml actuel par la version originale. Pour restaurer vos règles dans cette situation, vous pouvez installer le module contenant votre copie de sauvegarde.
+Si vous modifiez le fichier translation_rules.xml, conservez une copie de sauvegarde dans un package de contenu. L’installation des service packs AEM ou la réinstallation de certains packages AEM peut remplacer le fichier translation_rules.xml actuel par la version originale. Pour restaurer vos règles dans ce cas, vous pouvez installer le package contenant votre copie de sauvegarde.
 
 >[!NOTE]
 >
->Après avoir créé le module de contenu, recréez le module chaque fois que vous modifiez le fichier.
+>Après avoir créé le module de contenu, recréez-le chaque fois que vous modifiez le fichier.
 
 ## Exemple de fichier de règles de traduction {#example-translation-rules-file}
 

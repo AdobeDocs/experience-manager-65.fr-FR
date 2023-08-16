@@ -8,9 +8,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: d958f616803f92190493cc3f1ef474d0987991bd
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '1973'
 ht-degree: 10%
 
 ---
@@ -58,7 +58,7 @@ AEM Forms 6.5 fournit les thèmes répertoriés ci-dessous pour le Forms adaptat
 * [Thème WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Thème EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
-Vous pouvez [personnaliser l’un de ces thèmes pour créer un thème ;](#customize-a-theme-core-components).
+Vous pouvez [personnaliser n’importe lequel de ces thèmes pour créer un thème ;](#customize-a-theme-core-components).
 
 ## Personnalisation d’un thème {#customize-a-theme-core-components-based-adaptive-forms}
 

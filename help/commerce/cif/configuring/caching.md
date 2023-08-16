@@ -2,10 +2,10 @@
 title: Mise en cache et performances
 description: Découvrez les différentes configurations disponibles pour activer GraphQL et la mise en cache de contenu afin d’optimiser les performances de votre implémentation commerciale.
 exl-id: ecce64bf-5960-4ddb-b6e3-dad401038c11
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '849'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ Avant d’envoyer une requête GraphQL, le client vérifie si cette requête **e
 
 ### Exemples
 
-Nous vous recommandons de configurer une certaine mise en cache pour le service de recherche qui récupère toutes les valeurs d’agrégations/de facettes disponibles affichées sur les pages de recherche de produits et de catégories. Ces valeurs ne changent généralement que lorsqu’un nouvel attribut est par exemple ajouté à des produits. Par conséquent, la durée de cette entrée de cache peut être « importante » si l’ensemble d’attributs de produit ne change pas souvent. Bien que cela soit spécifique au projet, nous recommandons des valeurs de quelques minutes dans les phases de développement du projet et de quelques heures sur des systèmes de production stables.
+Nous vous recommandons de configurer une certaine mise en cache pour le service de recherche qui récupère toutes les valeurs d’agrégations/de facettes disponibles affichées sur les pages de recherche de produits et de catégories. Ces valeurs ne changent généralement que lorsqu’un nouvel attribut est par exemple ajouté à des produits. Par conséquent, la durée de cette entrée de cache peut être « importante » si l’ensemble d’attributs de produit ne change pas souvent. Bien qu’il s’agisse d’un projet spécifique, Adobe recommande des valeurs de quelques minutes dans les phases de développement du projet et de quelques heures sur les systèmes de production stables.
 
 Ces valeurs sont généralement configurées avec l’entrée de cache suivante :
 

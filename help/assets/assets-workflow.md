@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Workflow, Renditions
 role: User, Admin
 exl-id: e7c84385-efb3-4997-83ff-7a7f31582469
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: ht
-source-wordcount: '961'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '960'
+ht-degree: 95%
 
 ---
 
 # Traitement des ressources numériques {#process-assets}
 
-[!DNL Adobe Experience Manager Assets] vous permet de travailler sur vos ressources numériques de différentes manières pour permettre un traitement des ressources robuste. Vous pouvez utiliser les méthodes de traitement par défaut ou personnalisées pour garantir la fin des processus d’entreprise de bout en bout, les audits et la conformité, la découverte et la distribution, ainsi que l’intégrité de base de vos ressources numériques. Vous pouvez effectuer les tâches de gestion des ressources tout en respectant l’échelle et la personnalisation requises.
+[!DNL Adobe Experience Manager Assets] vous permet de travailler sur vos ressources numériques de différentes manières pour un traitement des ressources robuste. Vous pouvez utiliser les méthodes de traitement par défaut ou personnalisées pour garantir la fin des processus d’entreprise de bout en bout, les audits et la conformité, la découverte et la distribution, ainsi que l’intégrité de base de vos ressources numériques. Vous pouvez effectuer les tâches de gestion des ressources tout en respectant l’échelle et la personnalisation requises.
 
 ## Présentation des workflows {#understand-workflows}
 
@@ -34,7 +34,7 @@ Pour consulter les différents modèles de workflow disponibles par défaut, con
 
 L’application de workflow aux ressources numériques est identique à l’application de workflow aux pages d’un site Web. Pour obtenir des informations complètes sur la création et l’utilisation de processus, reportez-vous à la section [démarrer des workflows](/help/sites-authoring/workflows-participating.md).
 
-Utilisez les workflows dans les ressources numériques pour activer les ressources ou créer des filigranes. La plupart des workflow destinés aux ressources sont automatiquement activés, comme le workflow permettant de créer automatiquement un rendu après la modification d’une image.
+Utilisez les workflows dans les ressources numériques pour activer les ressources ou créer des filigranes. La plupart des workflows des ressources sont automatiquement activés. Par exemple, le workflow qui crée automatiquement un rendu après la modification d’une image est automatiquement activé.
 
 >[!NOTE]
 >
@@ -91,7 +91,7 @@ Consultez [Appliquer un workflow à une collection](/help/assets/manage-collecti
 
 Les administrateurs peuvent configurer un workflow pour exécuter et traiter automatiquement les ressources en fonction de conditions prédéfinies. Cette fonctionnalité est utile pour les utilisateurs et les spécialistes du marketing du secteur, par exemple pour créer un workflow personnalisé sur des dossiers spécifiques. Disons que toutes les ressources de la séance photo d’une agence peuvent recevoir un filigrane ou que toutes les ressources téléchargées par un programme de travail indépendant peuvent être traitées pour créer des rendus spécifiques.
 
-Pour chaque modèle de workflow, les utilisateurs peuvent créer un lanceur de workflow qui l’exécute. Un lanceur de workflow surveille les modifications du référentiel de contenu et exécute le workflow lorsque les conditions prédéfinies sont remplies. Les administrateurs peuvent donner accès aux marketeurs pour leur permettre de créer les workflows et de configurer le lanceur. Les utilisateurs peuvent modifier le workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques] par défaut pour ajouter les étapes supplémentaires requises pour traiter des ressources spécifiques. Le workflow s’exécute sur toutes les ressources nouvellement chargées. Utilisez l’une des méthodes suivantes pour limiter l’exécution des étapes supplémentaires sur des ressources spécifiques :
+Pour chaque modèle de workflow, les utilisateurs peuvent créer un lanceur de workflow qui l’exécute. Un lanceur de workflow surveille les modifications du référentiel de contenu et exécute le workflow lorsque les conditions prédéfinies sont remplies. Les administrateurs peuvent donner accès aux spécialistes marketing pour leur permettre de créer les workflows et de configurer le lanceur. Les utilisateurs peuvent modifier le workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques] par défaut pour ajouter les étapes supplémentaires requises pour traiter des ressources spécifiques. Le workflow s’exécute sur toutes les ressources nouvellement chargées. Utilisez l’une des méthodes suivantes pour limiter l’exécution des étapes supplémentaires sur des ressources spécifiques :
 
 * Effectuez une copie du workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques] et modifiez-la pour l’exécuter sur une hiérarchie de dossiers spécifique. Cette approche est utile pour quelques dossiers.
 * Les étapes de traitement supplémentaires peuvent être ajoutées à l’aide d’une [Division OU](/help/sites-developing/workflows-step-ref.md#or-split) qui s’applique de manière conditionnelle au plus grand nombre de dossiers requis.
@@ -107,4 +107,3 @@ Pour chaque modèle de workflow, les utilisateurs peuvent créer un lanceur de w
 >* [Création de modèles de workflow et extension de la fonctionnalité de workflow](/help/sites-developing/workflows.md)
 >* [Méthodes d’exécution de workflows](/help/sites-administering/workflows-starting.md)
 >* [Bonnes pratiques relatives aux workflows](/help/sites-developing/workflows-best-practices.md)
-

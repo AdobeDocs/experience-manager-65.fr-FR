@@ -1,21 +1,21 @@
 ---
-title: Structure de l’interface utilisateur tactile d’Adobe Experience Manager
-description: L’interface utilisateur optimisée pour les écrans tactiles, telle qu’elle est implémentée dans Adobe Experience Manager, comporte plusieurs principes sous-jacents et se compose de plusieurs éléments clés.
+title: Structure de l’interface utilisateur tactile de Adobe Experience Manager
+description: L’IU optimisée pour les écrans tactiles, telle qu’elle est implémentée dans Adobe Experience Manager, comporte plusieurs principes sous-jacents et se compose de plusieurs éléments clés.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: e562b289-5d8b-4fa8-ad1c-fff5f807a45e
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 37%
+source-wordcount: '855'
+ht-degree: 36%
 
 ---
 
-# Structure de l’interface utilisateur tactile d’Adobe Experience Manager{#structure-of-the-aem-touch-enabled-ui}
+# Structure de l’interface utilisateur tactile de Adobe Experience Manager{#structure-of-the-aem-touch-enabled-ui}
 
-L’interface utilisateur tactile d’Adobe Experience Manager (AEM) s’accompagne de plusieurs principes sous-jacents et se compose de plusieurs éléments clés :
+L’interface utilisateur tactile de Adobe Experience Manager (AEM) s’accompagne de plusieurs principes sous-jacents et se compose de plusieurs éléments clés :
 
 ## Consoles {#consoles}
 
@@ -39,11 +39,11 @@ Par exemple, si la résolution passe sous 1 024 pixels (comme c’est le cas s
 
 La barre d’en-tête affiche des éléments globaux, parmi lesquels :
 
-* le logo et le produit ou la solution spécifique que vous utilisez actuellement ; pour AEM, cela forme également un lien vers la navigation globale
+* le logo et le produit/la solution spécifique(s) que vous utilisez actuellement ; pour AEM, cela forme également un lien vers la navigation globale.
 * Rechercher
 * pour accéder aux ressources d’aide
 * Icône d’accès à d’autres solutions
-* un indicateur pour les alertes ou les éléments de boîte de réception qui vous attendent (et leur accès) ;
+* un indicateur pour les alertes ou les éléments de boîte de réception qui vous attendent (ainsi que l’accès à)
 * L’icône de l’utilisateur, ainsi qu’un lien vers la gestion de votre profil
 
 ### Barre d’outils {#toolbar}
@@ -91,7 +91,7 @@ Le cadre d’éditeur est un conteneur (abstrait) pour l’ensemble des *éléme
 * la barre d’outils supérieure ;
 * panneau latéral
 * toutes les superpositions
-* tout autre élément de création de page ; par exemple, la barre d’outils du composant
+* tout autre élément de création de page ; la barre d’outils du composant, par exemple
 
 ![chlimage_1-149](assets/chlimage_1-149.png)
 
@@ -99,7 +99,7 @@ Le cadre d’éditeur est un conteneur (abstrait) pour l’ensemble des *éléme
 
 Il contient deux onglets par défaut qui vous permettent de sélectionner des ressources et des composants. Ils peuvent être déplacés d’ici et déplacés sur la page.
 
-Par défaut, le panneau latéral est masqué. Lorsque cette option est sélectionnée, elle s’affiche sur le côté gauche ou elle s’affiche sur toute la fenêtre (lorsque la largeur de la fenêtre est inférieure à 1 024 px). par exemple, sur un appareil mobile).
+Par défaut, le panneau latéral est masqué. Lorsqu’elle est sélectionnée, elle s’affiche sur le côté gauche ou elle s’affiche sur l’ensemble de la fenêtre (lorsque la largeur de la fenêtre est inférieure à 1 024 px, par exemple sur un appareil mobile).
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
 
@@ -134,11 +134,11 @@ Les recouvrements résident dans le cadre d’éditeur (avec tous les autres él
 Un calque est un groupe indépendant de fonctionnalités pouvant être activées pour :
 
 * fournir une vue différente de la page ;
-* vous permettre de manipuler et/ou d’interagir avec une page ;
+* vous permet de manipuler une page et/ou d’interagir avec celle-ci.
 
 Les calques fournissent des fonctionnalités sophistiquées pour toute la page, par opposition aux actions spécifiques sur un composant individuel.
 
-AEM est fourni avec plusieurs calques déjà implémentés pour la création de pages ; par exemple, modifier, prévisualiser, annoter.
+AEM s’accompagne de plusieurs calques déjà implémentés pour la création de pages ; par exemple, modifier, prévisualiser, annoter.
 
 >[!NOTE]
 >
@@ -162,6 +162,6 @@ En fonction de l’espace disponible, les barres d’outils de composant sont pl
 
 ## Informations supplémentaires {#further-information}
 
-Pour plus d’informations sur les concepts liés à l’IU tactile, consultez la rubrique [Concepts de l’interface utilisateur tactile d’AEM](/help/sites-developing/touch-ui-concepts.md).
+Pour plus d’informations sur les concepts liés à l’IU tactile, consultez la rubrique [Concepts de l’IU tactile AEM](/help/sites-developing/touch-ui-concepts.md).
 
 Pour plus d’informations techniques, voir [Jeu de documentation JS](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) pour l’éditeur de page tactile.

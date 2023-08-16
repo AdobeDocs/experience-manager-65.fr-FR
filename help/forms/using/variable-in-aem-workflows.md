@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2230'
-ht-degree: 99%
+source-wordcount: '2229'
+ht-degree: 98%
 
 ---
 
@@ -181,7 +181,7 @@ Pour consulter d’autres exemples, consultez la section [Créer un modèle de w
 
 #### Étape d’accès {#go-to-step}
 
-L’**étape d’accès** permet de spécifier l’étape suivante du modèle de processus à exécuter, selon le résultat d’une expression de routage.
+La variable **Atteindre l’étape** permet de spécifier l’étape suivante du modèle de workflow à exécuter, en fonction du résultat d’une expression de routage.
 
 Tout comme l’étape de division OU, vous pouvez définir l’expression de routage de l’étape d’accès à l’aide d’une définition de règle, d’un script ECMA ou d’un script externe.
 

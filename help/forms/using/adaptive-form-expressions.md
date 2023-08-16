@@ -10,9 +10,9 @@ discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 feature: Adaptive Forms
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2802'
 ht-degree: 59%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 59%
 
 <span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/using/create-an-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
 
-Les formulaires adaptatifs offrent aux utilisateurs finaux une expérience de remplissage simplifiée et optimisée de formulaires avec des fonctionnalités de script dynamique. Vous pouvez ainsi écrire des expressions afin d’ajouter différents comportements tels que les champs et panneaux dynamiques d’affichage et de masquage. Vous pouvez également ajouter des champs calculés, afficher les champs en lecture seule, ajouter une logique de validation, et bien d’autres fonctionnalités. Le comportement dynamique se base sur les entrées de l’utilisateur ou les données pré-renseignées.
+Les formulaires adaptatifs offrent aux utilisateurs finaux une expérience de remplissage simplifiée et optimisée de formulaires avec des fonctionnalités de script dynamique. Il vous permet d’écrire des expressions pour ajouter divers comportements tels que des champs et des panneaux dynamiques d’affichage/masquage. Vous pouvez également ajouter des champs calculés, afficher les champs en lecture seule, ajouter une logique de validation, et bien d’autres fonctionnalités. Le comportement dynamique se base sur les entrées de l’utilisateur ou les données pré-renseignées.
 
 JavaScript est le langage d’expression des formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides et utilisent des API de modèle de script de formulaires adaptatifs. Ces expressions renvoient des valeurs de certains types. Pour obtenir la liste complète des classes de formulaires adaptatifs, des événements, des objets et des API publiques, consultez [Référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javascript-api/index.html).
 
@@ -54,7 +54,7 @@ Dans les formulaires adaptatifs, vous pouvez écrire des expressions afin d’aj
 * **[Expressions de calcul](#calculate-expression)** : pour calculer automatiquement la valeur d’un champ.
 * **[Expression de clic](#click-expression)** : pour gérer les actions en utilisant l’événement clic d’un bouton.
 * **[Script d’initialisation](#initialization-script) :** effectuez une action lors de l’initialisation d’un champ.
-* **[Expression d’options](#options-expression)**: pour remplir de façon dynamique une liste déroulante.
+* **[Expression d’options](#options-expression)**: pour remplir de manière dynamique une liste déroulante.
 * **[Expression récapitulative](#summary)**: pour calculer dynamiquement le titre d’un accordéon.
 * **[Validation des expressions](#validate-expression)**: pour valider un champ.
 * **[Script de validation de valeur](#value-commit-script):** : pour modifier les composants d’un formulaire après modification de la valeur d’un champ.
@@ -65,9 +65,9 @@ Dans les formulaires adaptatifs, vous pouvez écrire des expressions afin d’aj
 
 Vous pouvez utiliser l’expression d’accès pour activer ou désactiver un champ. Si l’expression utilise la valeur d’un champ, à chaque fois que la valeur du champ est modifiée, l’expression est redéclenchée.
 
-**S’applique à**: fields
+**S’applique à**: champs
 
-**Type de retour**: L’expression renvoie une valeur booléenne, qui indique si le champ est activé ou désactivé. **true** représente que le champ est activé et **false** représente que le champ est désactivé.
+**Type de retour**: l’expression renvoie une valeur booléenne, qui indique si le champ est activé ou désactivé. **true** représente que le champ est activé et **false** représente que le champ est désactivé.
 
 **Exemple** : pour activer un champ uniquement lorsque la valeur **field1** est définie sur **X**, l’expression d’accès est : `field1.value == "X"`
 
@@ -75,9 +75,9 @@ Vous pouvez utiliser l’expression d’accès pour activer ou désactiver un ch
 
 L’expression calculate est utilisée pour calculer automatiquement la valeur d’un champ à l’aide d’une expression. En règle générale, une telle expression utilise la propriété value d’un autre champ. Par exemple, `field2.value + field3.value`. Dès lors que la valeur de `field2`ou `field3`est modifiée, l’expression est redéclenchée et la valeur est recalculée.
 
-**S’applique à**: fields
+**S’applique à**: champs
 
-**Type de retour**: L’expression renvoie une valeur compatible avec le champ dans lequel le résultat de l’expression est affiché (décimal, par exemple).
+**Type de retour**: l’expression renvoie une valeur compatible avec le champ dans lequel le résultat de l’expression est affiché (décimal, par exemple).
 
 **Exemple** : l’expression de calcul pour afficher la somme de deux champs dans **field1** est
 `field2.value + field3.value`
@@ -113,13 +113,13 @@ L’expression d’options est utilisée pour remplir dynamiquement les options 
 
 **Application pour** : champs de liste déroulante
 
-**Type de retour**: L’expression options renvoie un tableau de valeurs de chaîne. Chaque valeur peut être une chaîne simple, telle que **Masculin** ou dans un format de paire clé=valeur, tel que **1=Homme**
+**Type de retour**: l’expression d’options renvoie un tableau de valeurs de chaîne. Chaque valeur peut être une chaîne simple, telle que **Masculin** ou dans un format de paire clé=valeur, tel que **1=Homme**
 
-**Exemple**: Pour renseigner la valeur d’un champ, en fonction de la valeur d’un autre champ, fournissez une expression d’options simple. Par exemple, pour remplir un champ, **Nombre d’enfants**, selon la valeur d’**Etat civil** exprimé dans un autre champ, l’expression est :
+**Exemple**: pour renseigner la valeur d’un champ, en fonction de la valeur d’un autre champ, fournissez une expression d’options simple. Par exemple, pour remplir un champ, **Nombre d’enfants**, selon la valeur d’**Etat civil** exprimé dans un autre champ, l’expression est :
 
 **`marital_status.value == "married" ? ["1=One", "2=two"] : ["0=Zero"]`.**
 
-Lorsque la valeur de **marital_status** change de champ, l’expression est redéclenchée. Vous pouvez également remplir la liste déroulante d’un service REST. Pour plus d’informations, voir [Remplissage dynamique des listes déroulantes](../../forms/using/dynamically-populate-dropdowns.md).
+Lorsque la valeur de **marital_status** change, l’expression est redéclenchée. Vous pouvez également remplir la liste déroulante d’un service REST. Pour plus d’informations, voir [Remplissage dynamique des listes déroulantes](../../forms/using/dynamically-populate-dropdowns.md).
 
 ### Expression récapitulative {#summary}
 
@@ -137,7 +137,7 @@ L’expression récapitulative est généralement utilisée pour répéter les e
 
 L’expression de validation est utilisée pour valider les champs à l’aide de l’expression donnée. En règle générale, de telles expressions utilisent des expressions régulières ainsi que la valeur de champ pour valider un champ. L’expression est redéclenchée et l’état de validation du champ est recalculé à tout changement de la valeur d’un champ.
 
-**S’applique à**: fields
+**S’applique à**: champs
 
 **Type de valeur renvoyée** : l’expression renvoie une valeur booléenne, représentant l’état de validation du champ. La valeur **false** indique que le champ n’est pas valide et **true** indique que le champ est valide.
 **Exemple** : pour un champ représentant un code postal du Royaume-Uni, l’expression de validation est :
@@ -182,11 +182,11 @@ L&#39;expression Visibilité est utilisée pour contrôler la visibilité du cha
 
 L’expression d’achèvement de l’étape est utilisée pour empêcher un utilisateur d’accéder à l’étape suivante d’une mise en page d’assistant. Ces expressions sont utilisées lorsque les panneaux ont une mise en page d’assistant (un formulaire à plusieurs étapes affichant une étape à la fois). L’utilisateur peut passer à l’étape, à la sous-section ou au panneau suivant uniquement une fois que toutes les valeurs requises de la section actuelle sont renseignées et valides.
 
-**S’applique à**: Panneaux avec mise en page de l’élément défini sur l’assistant.
+**S’applique à**: panneaux avec mise en page de l’élément défini sur l’assistant.
 
-**Type de retour**: L’expression renvoie une valeur booléenne, qui indique que le panneau actuel est valide ou non. **True** indique que le panneau actuel est valide et l’utilisateur peut accéder au prochain panneau.
+**Type de retour**: l’expression renvoie une valeur booléenne, qui indique que le panneau actuel est valide ou non. **True** indique que le panneau actuel est valide et l’utilisateur peut accéder au prochain panneau.
 
-**Exemple**: Dans un formulaire organisé en différents panneaux, avant d’accéder au panneau suivant, le panneau actif est validé. Dans ce cas, les expressions d’achèvement de l’étape sont utilisées. En règle générale, ces expressions utilisent l’API de validation GuideBridge. Un exemple d’expression d’achèvement de l’étape est :
+**Exemple**: dans un formulaire organisé en différents panneaux, avant d’accéder au panneau suivant, le panneau actif est validé. Dans ce cas, les expressions d’achèvement de l’étape sont utilisées. En règle générale, ces expressions utilisent l’API de validation GuideBridge. Un exemple d’expression d’achèvement de l’étape est :
 `window.guideBridge.validate([],this.panel.navigationContext.currentItem.somExpression)`
 
 ## Validations dans un formulaire adaptatif {#validations-in-adaptive-form}

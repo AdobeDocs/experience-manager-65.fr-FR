@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b657f95d-7be3-4409-a31b-d47fb2bfa550
 docset: aem65
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '262'
 ht-degree: 61%
 
 ---
@@ -47,7 +47,7 @@ Pour afficher des détails sur un composant spécifique, appuyez/cliquez sur la 
   L’onglet Propriétés vous permet d’effectuer les opérations suivantes :
 
    * Afficher les propriétés générales du composant.
-   * Afficher le mode de [une icône ou une abréviation a été définie.](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) pour le composant.
+   * Afficher le mode de [l’icône ou l’abréviation a été définie.](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) pour le composant.
 
       * Cliquez sur la source de l’icône pour accéder à ce composant.
 

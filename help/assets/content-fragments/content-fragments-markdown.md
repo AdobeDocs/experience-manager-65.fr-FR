@@ -1,23 +1,23 @@
 ---
-title: Texte (Markdown)
-description: Découvrez comment l’éditeur de fragment de contenu utilise la syntaxe Markdown pour vous permettre de créer facilement du contenu découplé.
+title: Markdown
+description: Découvrez comment l’éditeur de fragment de contenu utilise la syntaxe Markdown pour vous permettre de créer facilement du contenu sans affichage.
 feature: Content Fragments
 role: User
 exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
-source-wordcount: '522'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 65%
 
 ---
 
-# Texte (Markdown) {#markdown}
+# Markdown {#markdown}
 
-Lors du processus de [création](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’éditeur de fragments de contenu utilise la syntaxe *markdown* pour vous permettre d’écrire aisément du contenu découplé :
+Quand vous êtes [création](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’éditeur de fragment de contenu utilise *markdown* pour écrire facilement du contenu sans tête :
 
 ![Éditeur de balisage](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
-Vous pouvez définir :
+Vous pouvez définir :
 
 * [Notation d’en-tête](/help/assets/content-fragments/content-fragments-markdown.md#heading-notation)
 * [Paragraphes et sauts de ligne](/help/assets/content-fragments/content-fragments-markdown.md#paragraphs-and-line-breaks)
@@ -31,7 +31,7 @@ Vous pouvez définir :
 
 ## Notation d’en-tête {#heading-notation}
 
-Pour créer un en-tête en plaçant un hashtag (#) devant le titre. Un hashtag (#) est utilisé pour un H1, deux hashtags (##) pour un H2, etc. Vous pouvez utiliser jusqu’à 6 hashtags. Par exemple :
+Pour créer un en-tête en plaçant un hashtag (#) devant le titre. Un hashtag (#) est utilisé pour un H1, deux hashtags (##) pour un H2, etc. Vous pouvez utiliser jusqu’à 6 hashtags. Par exemple :
 
     `## This is an H2`
 
@@ -51,7 +51,7 @@ Si vous le souhaitez, vous pouvez créer une balise H1 en soulignant le texte pa
 
 ## Paragraphes et sauts de ligne {#paragraphs-and-line-breaks}
 
-Un paragraphe est simplement une ou plusieurs lignes de texte consécutives, séparées par une ou plusieurs lignes vierges. Une ligne vierge est une ligne ne contenant que des espaces ou des tabulations. Les paragraphes normaux ne doivent pas être mis en retrait avec des espaces ou des tabulations.
+Un paragraphe est simplement une ou plusieurs lignes consécutives de texte, séparées par une ou plusieurs lignes vierges. Une ligne vierge est une ligne ne contenant rien d’autre que des espaces ou des onglets. Les paragraphes normaux ne doivent pas être mis en retrait avec des espaces ou des tabulations.
 
 Un saut de ligne est créé en terminant une ligne par deux espaces ou plus puis un retour.
 
@@ -105,7 +105,7 @@ Où « id » est le nom d’une référence d’image définie. Les référenc
 
 ## Blocs de citations {#block-quotes}
 
-Vous pouvez inclure des citations en ajoutant le symbole > avant le texte. Par exemple :
+Vous pouvez placer un texte entre guillemets en ajoutant le symbole > avant le texte. Par exemple :
 
     `>This is block quotes`
 
@@ -113,7 +113,7 @@ Vous pouvez inclure des citations en ajoutant le symbole > avant le texte. Par e
 
     `>asdfahsdlfasdfj`
 
-Vous pouvez utiliser des blocs de citations imbriqués. Par exemple :
+Vous pouvez avoir des guillemets de bloc imbriqués. Par exemple :
 
     `> This is the first level of quoting.`
 
@@ -137,7 +137,7 @@ Pour créer une liste non ordonnée, insérez le symbole * avant les éléments 
 
     `* item in list`
 
-Pour créer une liste ordonnée, ajoutez les chiffres, suivis d’un point, avant chaque élément de la liste. Par exemple :
+Pour créer une liste ordonnée, ajoutez les nombres, suivis d’un point, avant chaque élément de la liste. Par exemple :
 
     `1. First item in list.`
 
@@ -173,7 +173,7 @@ Par exemple :
 
 ## Blocs de code {#code-blocks}
 
-Les blocs de code sont généralement utilisés pour illustrer le code source. Vous pouvez créer des blocs de code en mettant le code en retrait à l’aide d’une tabulation ou d’au moins 4 espaces. Par exemple :
+Les blocs de code sont généralement utilisés pour illustrer le code source. Vous pouvez créer des blocs de code en mettant le code en retrait à l’aide d’un onglet ou d’un minimum de 4 espaces. Par exemple :
 
     `This is a normal paragraph.`
 

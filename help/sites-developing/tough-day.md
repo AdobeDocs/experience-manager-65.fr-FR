@@ -4,18 +4,18 @@ description: Le test Tough Day simule la charge quotidienne d’environ 1 000 au
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1824'
-ht-degree: 63%
+source-wordcount: '1823'
+ht-degree: 62%
 
 ---
 
 # Tough Day{#tough-day}
 
-## Qu’est-ce que Tough Day 2 ? {#what-is-tough-day}
+## Qu’est-ce que Tough Day 2 {#what-is-tough-day}
 
-« Tough Day 2 » est une application qui vous permet de tester les limites de votre instance AEM. Prête à l’emploi, elle peut être exécutée avec la suite de tests par défaut ou configurée pour répondre à vos impératifs de test. Vous pouvez regarder [cet enregistrement](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) pour une présentation de l’application.
+&quot;Tough Day 2&quot; est une application qui vous permet de tester les limites de votre instance AEM. Prête à l’emploi, elle peut être exécutée avec la suite de tests par défaut ou configurée pour répondre à vos impératifs de test. Vous pouvez regarder [cet enregistrement](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) pour une présentation de l’application.
 
 >[!CAUTION]
 >
@@ -140,7 +140,7 @@ Vous trouverez les paramètres appropriés dans la liste ci-dessous :
 
 ## Personnalisation {#customizing}
 
-La personnalisation peut être réalisée de deux manières : paramètres de ligne de commande ou fichiers de configuration yaml. **Les fichiers de configuration sont utilisés pour les suites personnalisées volumineuses et remplacent les paramètres par défaut de Tough Day 2. Les paramètres de ligne de commande remplacent les fichiers de configuration et les paramètres par défaut.**
+La personnalisation peut être réalisée de deux façons : les paramètres de ligne de commande ou les fichiers de configuration yaml. **Les fichiers de configuration sont utilisés pour les suites personnalisées volumineuses et remplacent les paramètres par défaut de Tough Day 2. Les paramètres de ligne de commande remplacent les fichiers de configuration et les paramètres par défaut.**
 
 La seule façon d’enregistrer une configuration de test consiste à la copier au format yaml.
 
@@ -370,7 +370,7 @@ Ces mesures sont écrites à l’aide d’éditeurs qui peuvent être ajoutés a
 
 Par défaut, les deux éditeurs sont activés.
 
-Il existe également deux modes dans lesquels les mesures sont signalées :
+Il existe également deux modes dans lesquels les mesures sont consignées :
 
 * Le mode de publication **simple** fait état des résultats depuis le début de l’exécution jusqu’au moment de leur publication.
 * Le mode de publication **d’intervalle** publie les résultats selon un intervalle de temps donné. Vous pouvez définir cet intervalle avec le paramètre **interval** du mode de publication.
@@ -397,7 +397,7 @@ publishmode:
 
 Tough Day 2 crée un dossier .logs dans le répertoire où vous avez exécuté Tough Day 2. Ce dossier contient deux types de journaux :
 
-* **toughday.log**: contient des messages liés à l’état de l’application, des informations de débogage et des messages globaux.
+* **toughday.log**: contient les messages liés à l’état de l’application, les informations de débogage et les messages globaux.
 * **toughday_&lt;testname>.log**: messages liés au test spécifié.
 
 Les journaux ne sont pas remplacés, les exécutions suivantes ajoutent des messages aux journaux existants. Les journaux ont plusieurs niveaux. Pour plus d’informations, consultez la section ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.

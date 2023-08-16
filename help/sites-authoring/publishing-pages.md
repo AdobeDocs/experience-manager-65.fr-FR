@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1663'
-ht-degree: 98%
+source-wordcount: '1662'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ Vous pouvez publier/dépublier une page tout de suite ou à une date/heure post�
 >  Ces termes sont synonymes de publication/dépublication.
 >
 >* **Répliquer/Réplication**
->  Il s’agit de termes techniques décrivant le déplacement des données (contenu de page, fichiers, code, commentaires d’utilisateur, par exemple) d’un environnement à un autre, comme lors de la publication ou de la réplication inverse des commentaires d’utilisateur.
+>  Il s’agit de termes techniques décrivant le déplacement des données (contenu de page, fichiers, code, commentaires utilisateur, par exemple) d’un environnement à un autre, comme lors de la publication ou de la réplication inverse des commentaires utilisateur.
 >
 
 >[!NOTE]
@@ -126,7 +126,7 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
    ![pp-02-1](assets/pp-02-1.png)
 
-1. L’assistant **Gérer la publication** démarre. La première étape, **Options**, vous permet d’effectuer les opérations suivantes :
+1. L’assistant **Gérer la publication** démarre. la première étape, **Options**, vous permet :
 
    * Publier ou dépublier des pages sélectionnées.
    * Vous pouvez choisir d’effectuer cette action maintenant ou ultérieurement.

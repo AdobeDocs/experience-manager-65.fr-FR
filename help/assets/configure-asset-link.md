@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
 exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
-source-git-commit: 84b16dd1a60f731b568dd87ef89699875cb86596
-workflow-type: ht
-source-wordcount: '3149'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '3148'
+ht-degree: 99%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 100%
 
 Pour configurer Experience Manager Assets pour l’utiliser avec Asset Link, implémentez les tâches suivantes. Utilisez le compte administrateur d’Experience Manager pour effectuer la configuration :
 
-1. Installez les modules nécessaires. Vous trouverez les détails dans les [conditions préalables](#prerequisites).
+1. Installez les packages nécessaires. Vous trouverez les détails dans les [conditions préalables](#prerequisites).
 
-1. Configurez Experience Manager [manuellement](#manual-configuration) ou en utilisant un [module](#configure-using-package).
+1. Configurez Experience Manager [manuellement](#manual-configuration) ou en utilisant un [package](#configure-using-package).
 
 1. Pour mapper des utilisateurs sous licence Creative Cloud à des utilisateurs d’Experience Manager, gérez le [contrôle d’accès utilisateur](#user-access).
 
@@ -33,20 +33,20 @@ Assurez-vous d’installer le pack de services et le package appropriés, si né
 | Fonctionnalité d’Assets | Version d’Experience Manager et configuration requises pour la prise en charge |
 |--- |--- |
 | Asset Link fonctionne par défaut. | Experience Manager 6,5 6.5.2 ou version ultérieure. </br> Experience Manager 6.4.4 et 6.4.6, ou une version ultérieure </br> Adobe recommande d’installer la dernière version du [pack de services (SP) Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr) avant d’utiliser AAL. |
-| Asset Link fonctionne après l’installation d’un module. | Pour Experience Manager 6.4.0 à 6.4.3, installez le module [adobe-asset-link-support](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support). |
+| Asset Link fonctionne après l’installation d’un package. | Pour Experience Manager 6.4.0 à 6.4.3, installez le package [adobe-asset-link-support](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support). |
 | Intégration d’Adobe Stock | Experience Manager 6.4.2 ou version ultérieure |
 | Recherche visuelle ou par analogie | Experience Manager 6.5.0 ou version ultérieure |
 
 
-## Configuration d’Experience Manager à l’aide du module de configuration {#configure-using-package}
+## Configuration d’Experience Manager à l’aide du package de configuration {#configure-using-package}
 
-Adobe recommande d’installer le module de configuration [adobe-asset-link-config](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/adobe-asset-link-config) pour automatiser la plupart des tâches de configuration, suivi de quelques tâches manuelles. Vous pouvez également utiliser une [configuration manuelle](#manual-configuration).
+Adobe recommande d’installer le package de configuration [adobe-asset-link-config](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/adobe-asset-link-config) pour automatiser la plupart des tâches de configuration, suivi de quelques tâches manuelles. Vous pouvez également utiliser une [configuration manuelle](#manual-configuration).
 
 >[!CAUTION]
 >
->Si votre instance d’Experience Manager est configurée pour la connexion utilisateur avec des comptes Adobe IMS, n’utilisez pas le module de configuration. Au lieu de cela, [configurez manuellement](#manual-configuration) votre instance d’Experience Manager.
+>Si votre instance d’Experience Manager est configurée pour la connexion utilisateur avec des comptes Adobe IMS, n’utilisez pas le package de configuration. Au lieu de cela, [configurez manuellement](#manual-configuration) votre instance d’Experience Manager.
 
-1. Pour ouvrir le gestionnaire de modules, dans l’interface Web d’Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Partage de modules]**. Installer le module `adobe-asset-link-config`.
+1. Pour ouvrir le gestionnaire de packages, dans l’interface web d’Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Partage de packages]**. Installer le package `adobe-asset-link-config`.
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console Web]**. Localisez la configuration du **[!UICONTROL fournisseur IMS OAuth Adobe Granite]** et cliquez pour la modifier.
 
@@ -62,7 +62,7 @@ Adobe recommande d’installer le module de configuration [adobe-asset-link-conf
 
 ## Configuration manuelle d’Experience Manager {#manual-configuration}
 
-Configurez manuellement Experience Manager si vous choisissez de ne pas utiliser de module de configuration ou si votre déploiement d’Experience Manager est configuré pour prendre en charge la connexion utilisateur avec des comptes Adobe IMS.
+Configurez manuellement Experience Manager si vous choisissez de ne pas utiliser de package de configuration ou si votre déploiement d’Experience Manager est configuré pour prendre en charge la connexion utilisateur avec des comptes Adobe IMS.
 
 Pour configurer manuellement Experience Manager :
 
@@ -125,11 +125,10 @@ Une configuration supplémentaire n’est requise que si vous utilisez différen
 >* La configuration existante continue de fonctionner si vous utilisez la même organisation Adobe IMS avec Experience Manager et CCE.
 
 
-
 **Conditions préalables**
 
 1. Une instance d’Experience Manager en cours d’exécution avec l’authentification du porteur configurée pour AAL
-1. Installez le module suivant (pack de services 11) sur votre instance Experience Manager 6.5.
+1. Installez le package suivant (pack de services 11) sur votre instance Experience Manager 6.5.
 
    [Téléchargement d’Experience Manager 6.5.11.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
 
@@ -179,9 +178,9 @@ Les règles suivantes s’appliquent aux mappages de groupes dans Experience Ma
 * L’abonnement à un groupe d’utilisateurs Asset Link d’Adobe est évalué lorsque l’utilisateur s’authentifie et que la période définie dans la propriété **[!UICONTROL Délai d’expiration de l’utilisateur]** dans le **[!UICONTROL Gestionnaire de synchronisation par défaut Apache Jackrabbit Oak]** a expiré. Actuellement, les utilisateurs peuvent être ajoutés et supprimés des groupes dans Experience Manager pour se synchroniser avec ce qui se trouve dans Adobe IMS.
 * Évitez les conflits de nom de groupe. Assurez-vous que les noms utilisés pour les groupes créés dans Adobe IMS (pour gérer les utilisateurs) sont différents de tous les noms des groupes système d’Experience Manager.
 
-   Par exemple, assurez-vous qu’ils sont différents du groupe `dam-users` et des groupes créés par l’administrateur d’Experience Manager.
+  Par exemple, assurez-vous qu’ils sont différents du groupe `dam-users` et des groupes créés par l’administrateur d’Experience Manager.
 
-   Un groupe Adobe IMS dont le nom est en conflit avec le nom d’un groupe système d’Experience Manager ou d’un groupe créé manuellement n’est pas utilisé pour contrôler les autorisations utilisateur.
+  Un groupe Adobe IMS dont le nom est en conflit avec le nom d’un groupe système d’Experience Manager ou d’un groupe créé manuellement n’est pas utilisé pour contrôler les autorisations utilisateur.
 * Si un utilisateur Adobe IMS se connecte à une instance d’Experience Manager sur laquelle le nom de l’utilisateur entre en conflit avec un utilisateur Experience Manager créé précédemment, l’utilisateur Adobe IMS se voit attribuer un autre nom, avec des numéros ajoutés, pour le rendre unique.
 
 **Configuration du contrôle d’accès pour la première fois**
@@ -261,7 +260,7 @@ Experience Manager contient des index utilisés pour l’interrogation. Créez 
 
 ## Configuration de la recherche visuelle ou par analogie {#configure-visual-similarity-search}
 
-La fonctionnalité de recherche visuelle vous permet de rechercher des ressources visuellement similaires dans le référentiel AEM Assets à l’aide du panneau Adobe Asset Link. Cette fonctionnalité est disponible dans la version 6.5.0 ou une version ultérieure et seules les ressources indexées sont recherchées. Pour plus d’informations, consultez [Comment configurer la recherche visuelle](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=fr#configvisualsearch).
+La fonctionnalité de recherche visuelle vous permet de rechercher des ressources visuellement similaires dans le référentiel AEM Assets à l’aide du panneau Adobe Asset Link . Cette fonctionnalité est disponible dans la version 6.5.0 ou une version ultérieure et seules les ressources indexées sont recherchées. Pour plus d’informations, consultez [Comment configurer la recherche visuelle](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=fr#configvisualsearch).
 
 ## Génération de rendus pour placement uniquement pour Adobe InDesign {#fpo-renditions}
 
@@ -270,7 +269,7 @@ Experience Manager fournit des rendus utilisés uniquement pour placement (FPO)
 
 ## Intégration à Adobe Stock {#adobe-stock-integration}
 
-Les organisations intègrent leurs comptes Adobe Stock à Experience Manager Assets. Cela permet aux marketeurs de mettre à disposition des photos, des vecteurs, des illustrations, des vidéos, des modèles et des ressources 3D de haute qualité et libres de droits pour leurs projets de création et de marketing. Les professionnels de la création peuvent utiliser ces ressources à l’aide du panneau Asset Link.
+Les organisations intègrent leurs comptes Adobe Stock à Experience Manager Assets. Cela permet aux spécialistes marketing de mettre à disposition des photos, des vecteurs, des illustrations, des vidéos, des modèles et des ressources 3D de haute qualité et libres de droits pour leurs projets de création et de marketing. Les professionnels de la création peuvent utiliser ces ressources à l’aide du panneau Asset Link.
 
 Pour procéder à l’intégration avec Adobe Stock, reportez-vous à la section [Ressources Adobe Stock dans Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md). Vous avez besoin d’Experience Manager 6.4.2 ou d’une version ultérieure pour l’intégration à Adobe Stock.
 
@@ -280,7 +279,7 @@ Pour procéder à l’intégration avec Adobe Stock, reportez-vous à la sectio
 
 Si vous rencontrez des problèmes lors de la configuration ou de l’utilisation d’Adobe Asset Link, essayez les méthodes suivantes :
 
-* Assurez-vous que votre déploiement respecte les conditions préalables. Plus précisément, assurez-vous que les pack de fonctionnalités ou les modules appropriés sont installés.
+* Assurez-vous que votre déploiement respecte les conditions préalables. Plus précisément, assurez-vous que les pack de fonctionnalités ou les packages appropriés sont installés.
 * Contactez le partenaire ou l’intégrateur système de votre entreprise.
 * Si les utilisateurs de votre Creative Cloud ne peuvent pas vérifier les ressources extraites, vérifiez la casse des noms de domaine dans les ID d’e-mail. Pour résoudre ce problème, consultez [configuration manuelle](#manual-configuration).
 * Pour plus d’informations, consultez [Dépannage d’Asset Link](https://helpx.adobe.com/fr/enterprise/kb/asset-link-troubleshooting.html).
@@ -291,4 +290,3 @@ Si vous rencontrez des problèmes lors de la configuration ou de l’utilisation
 >* [À propos d’Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html)
 >* [Utilisation d’Asset Link dans l’appli de bureau Creative Cloud et gestion des ressources](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html)
 >* [Configuration d’Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/fr/enterprise/using/configure-aem-assets-for-asset-link.html).
-

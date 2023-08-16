@@ -2,10 +2,10 @@
 title: Création de contenu accessible pour Adobe Experience Manager (conformité au WCAG 2.1)
 description: Utilisez AEM pour rendre le contenu Web accessible et utilisable par les personnes en situation de handicap
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
-workflow-type: ht
-source-wordcount: '13818'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '13817'
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,6 @@ La section suivante présente les [différents aspects des règles WCAG 2.1](ht
 >
 >* les [noms courts des règles WCAG 2.1](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) ;
 >* la [numérotation utilisée dans les règles WCAG 2.1](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) afin de simplifier les références croisées avec le site web WCAG.
-
 
 ## Principe 1 : perceptible {#principle-perceivable}
 
@@ -109,7 +108,7 @@ Voici quelques-uns des types spécifiques de contenu non textuel auquel un texte
 >
 >Le niveau de contraste entre l’arrière-plan et le texte au premier plan doit être suffisant. Cela est décrit de manière plus détaillée à la section [Contraste (minimum) (1.4.3)](#contrast-minimum).
 
-#### En savoir plus – Contenu non textuel (1.1.1) {#more-information-non-text-content}
+#### En savoir plus – Contenu non textuel (1.1.1) {#more-information-non-text-content}
 
 * [Compréhension du critère de réussite 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
 * [Comment remplir le critère de réussite 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
@@ -282,7 +281,7 @@ Suivez les instructions de la section [Audio-description ou version de remplacem
 
 ### Adaptable (1.3) {#adaptable}
 
-[Règle 1.3 – Adaptable : créez un contenu qui peut être présenté de différentes façons (par exemple avec une disposition plus simple) sans perdre d’informations ni de structure.](https://www.w3.org/TR/WCAG/#adaptable)
+[Règle 1.3 - Adaptable : crée un contenu qui peut être présenté de différentes manières sans perte d’information ni de structure (par exemple avec une mise en page simplifiée).](https://www.w3.org/TR/WCAG/#adaptable)
 
 Cette règle couvre les exigences nécessaires pour proposer un contenu adapté aux personnes qui :
 
@@ -314,9 +313,9 @@ Vous pouvez veiller à ce que vos pages web aient la structure appropriée en ut
    * L’élément `<ul>` est utilisé pour les listes *non triées* (à puces). Les éléments de liste individuels sont identifiés à l’aide de l’élément `<li>`. Dans l’éditeur de texte enrichi, cliquez sur l’icône **Liste à puces**.
    * L’élément `<ol>` est utilisé pour les listes *numérotées*. Les éléments de liste individuels sont identifiés à l’aide de l’élément `<li>`. Dans l’éditeur de texte enrichi, cliquez sur l’icône **Liste numérotée**.
 
-   Pour modifier le contenu existant d’un type de liste particulier, surlignez le texte concerné, puis sélectionnez le type de liste approprié. Comme dans l’exemple précédent illustrant la saisie du texte du paragraphe, les éléments de liste appropriés sont automatiquement ajoutés au fichier HTML.
+  Pour modifier le contenu existant d’un type de liste particulier, surlignez le texte concerné, puis sélectionnez le type de liste approprié. Comme dans l’exemple précédent illustrant la saisie du texte du paragraphe, les éléments de liste appropriés sont automatiquement ajoutés au fichier HTML.
 
-   En mode Plein écran, les icônes **Liste à puces** et **Liste numérotée** sont visibles. Lorsque vous n’êtes pas en mode Plein écran, les deux options sont disponibles derrière l’icône **Listes** unique.
+  En mode Plein écran, les icônes **Liste à puces** et **Liste numérotée** sont visibles. Lorsque vous n’êtes pas en mode Plein écran, les deux options sont disponibles derrière l’icône **Listes** unique.
 
 * **Tableaux** : les tableaux de données doivent être identifiés à l’aide des éléments de tableau HTML :
    * un élément `<table>` ;
@@ -324,76 +323,76 @@ Vous pouvez veiller à ce que vos pages web aient la structure appropriée en ut
    * un élément `<th>` pour chaque en-tête de ligne et de colonne ;
    * un élément `<td>` pour chaque cellule de données.
 
-   En outre, les tableaux accessibles utilisent les éléments et attributs suivants :
+  En outre, les tableaux accessibles utilisent les éléments et attributs suivants :
 
    * L’élément `<caption>` sert à fournir une légende visible pour le tableau. Les légendes apparaissent par défaut centrées au-dessus du tableau, mais peuvent être positionnées de manière appropriée à l’aide de CSS. La légende est associée au tableau par programmation, ce qui en fait une méthode utile pour fournir une introduction au contenu.
    * L’élément `<summary>` aide les utilisateurs non voyants à comprendre plus facilement les informations présentées dans un tableau, en fournissant une synthèse de ce qu’un utilisateur voyant peut voir. Cela s’avère particulièrement utile lors de l’utilisation de mises en page de tableau complexes ou non conventionnelles (cet attribut n’est pas affiché dans le navigateur, il est uniquement lu pour les technologies d’assistance).
    * L’attribut `scope` de l’élément `<th>` sert à indiquer si une cellule représente un en-tête pour une ligne ou une colonne particulière. Une approche similaire consiste à utiliser les attributs header et id dans des tableaux complexes, où les cellules de données peuvent être associées à un ou plusieurs en-têtes.
 
-   >[!NOTE]
-   >
-   >Par défaut, ces éléments et attributs ne sont pas directement disponibles, mais l’administrateur du système peut ajouter la prise en charge de ces valeurs dans la boîte de dialogue **Propriétés du tableau[ (voir** Ajout de la prise en charge des éléments et attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
+  >[!NOTE]
+  >
+  >Par défaut, ces éléments et attributs ne sont pas directement disponibles, mais l’administrateur du système peut ajouter la prise en charge de ces valeurs dans la boîte de dialogue **Propriétés du tableau[ (voir** Ajout de la prise en charge des éléments et attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
 
-   Pour ouvrir la boîte de dialogue **Tableau** dans laquelle vous pouvez sélectionner l’onglet **Propriétés du tableau** :
+  Pour ouvrir la boîte de dialogue **Tableau** dans laquelle vous pouvez sélectionner l’onglet **Propriétés du tableau** :
 
    * Définissez une **légende** appropriée.
    * Idéalement, supprimez toutes les valeurs par défaut pour **Largeur**, **Hauteur**, **Bordure**, **Marge intérieure des cellules** et **Espacement des cellules**. En effet, ces propriétés peuvent être définies dans une feuille de style globale.
 
-   Vous pouvez ensuite utiliser les **propriétés de cellule** pour définir si la cellule est une cellule de données ou d’en-tête :
+  Vous pouvez ensuite utiliser les **propriétés de cellule** pour définir si la cellule est une cellule de données ou d’en-tête :
 
 * **Mise en évidence** : utilisez l’élément `<strong>` ou `<em>` pour indiquer la mise en évidence. N’utilisez pas d’en-têtes pour mettre le texte en évidence au sein des paragraphes.
    * Surlignez le texte à mettre en évidence ;
    * Cliquez sur l’icône **B** (pour `<strong>`) ou l’icône **I** (pour `<em>`) affichée dans le panneau **Propriétés** (assurez-vous que HTML est sélectionné).
 
-      >[!NOTE]
-      >
-      >Dans une installation AEM standard, l’éditeur de texte enrichi est configuré pour utiliser :
-      >
-      >* `<b>` pour `<strong>`
-      >* `<i>` pour `<em>`
-      >
-      >Ils sont identiques dans la pratique, mais `<strong>` et `<em>` sont préférables, car il s’agit de code HTML correct sémantiquement. Votre équipe de développement peut configurer l’éditeur de texte enrichi pour qu’il utilise `<strong>` et `<em>` (au lieu de `<b>` et `<i>`) lors du développement de votre instance de projet.
+     >[!NOTE]
+     >
+     >Dans une installation AEM standard, l’éditeur de texte enrichi est configuré pour utiliser :
+     >
+     >* `<b>` pour `<strong>`
+     >* `<i>` pour `<em>`
+     >
+     >Ils sont identiques dans la pratique, mais `<strong>` et `<em>` sont préférables, car il s’agit de code HTML correct sémantiquement. Votre équipe de développement peut configurer l’éditeur de texte enrichi pour qu’il utilise `<strong>` et `<em>` (au lieu de `<b>` et `<i>`) lors du développement de votre instance de projet.
 
 * **Tableaux de données complexes** : dans certains cas, lorsqu’il existe des tableaux complexes comportant deux niveaux ou plus d’en-têtes, les propriétés de base du tableau peuvent ne pas suffire à fournir toutes les informations structurelles nécessaires. Pour ce type de tableaux complexes, il est nécessaire de créer des relations directes entre les en-têtes et leurs cellules associées à l’aide des attributs **en-tête** et **ID**.
 
-   >[!NOTE]
-   >
-   >L’attribut id n’est pas disponible dans une installation prête à l’emploi. Il peut être activé en configurant les règles HTML et le sérialiseur dans l’éditeur de texte enrichi.
+  >[!NOTE]
+  >
+  >L’attribut id n’est pas disponible dans une installation prête à l’emploi. Il peut être activé en configurant les règles HTML et le sérialiseur dans l’éditeur de texte enrichi.
 
-   Par exemple, dans le tableau ci-dessous, les attributs header et id correspondent de façon à créer une association de programmation pour les utilisateurs de technologies d’assistance.
+  Par exemple, dans le tableau ci-dessous, les attributs header et id correspondent de façon à créer une association de programmation pour les utilisateurs de technologies d’assistance.
 
-   ```xml
-     <table>
-       <tr>
-         <th rowspan="2" id="h">Homework</th>
-         <th colspan="3" id="e">Exams</th>
-         <th colspan="3" id="p">Projects</th>
-       </tr>
-       <tr>
-         <th id="e1" headers="e">1</th>
-         <th id="e2" headers="e">2</th>
-         <th id="ef" headers="e">Final</th>
-         <th id="p1" headers="p">1</th>
-         <th id="p2" headers="p">2</th>
-         <th id="pf" headers="p">Final</th>
-       </tr>
-       <tr>
-         <td headers="h">15%</td>
-         <td headers="e e1">15%</td>
-         <td headers="e e2">15%</td>
-         <td headers="e ef">20%</td>
-         <td headers="p p1">10%</td>
-         <td headers="p p2">10%</td>
-         <td headers="p pf">15%</td>
-       </tr>
-     </table>
-   ```
+  ```xml
+    <table>
+      <tr>
+        <th rowspan="2" id="h">Homework</th>
+        <th colspan="3" id="e">Exams</th>
+        <th colspan="3" id="p">Projects</th>
+      </tr>
+      <tr>
+        <th id="e1" headers="e">1</th>
+        <th id="e2" headers="e">2</th>
+        <th id="ef" headers="e">Final</th>
+        <th id="p1" headers="p">1</th>
+        <th id="p2" headers="p">2</th>
+        <th id="pf" headers="p">Final</th>
+      </tr>
+      <tr>
+        <td headers="h">15%</td>
+        <td headers="e e1">15%</td>
+        <td headers="e e2">15%</td>
+        <td headers="e ef">20%</td>
+        <td headers="p p1">10%</td>
+        <td headers="p p2">10%</td>
+        <td headers="p pf">15%</td>
+      </tr>
+    </table>
+  ```
 
-   Dans AEM, ajoutez les balises directement à l’aide du mode d’édition de la source.
+  Dans AEM, ajoutez les balises directement à l’aide du mode d’édition de la source.
 
-   >[!NOTE]
-   >
-   >Cette fonctionnalité n’est pas disponible immédiatement dans une installation standard. Il faut pour cela configurer l’éditeur de texte enrichi, les règles de HTML et le sérialiseur.
+  >[!NOTE]
+  >
+  >Cette fonctionnalité n’est pas disponible immédiatement dans une installation standard. Il faut pour cela configurer l’éditeur de texte enrichi, les règles de HTML et le sérialiseur.
 
 #### En savoir plus – Informations et relations (1.3.1) {#more-information-info-and-relationships}
 
@@ -408,7 +407,7 @@ Vous pouvez veiller à ce que vos pages web aient la structure appropriée en ut
 
 #### Objectif – Séquence significative (1.3.2) {#purpose-meaningful-sequence}
 
-Ce critère de réussite a pour but de permettre à un agent utilisateur de proposer une autre présentation du contenu tout en préservant l’ordre de lecture nécessaire pour comprendre sa signification. Il est important de pouvoir déterminer par programmation au moins une séquence de contenu compréhensible. Si le contenu ne répond pas à ce critère de réussite, il est possible que les utilisateurs soient troublés ou désorientés dans le cas où la technologie d’assistance lit le contenu dans le désordre ou si d’autres feuilles de style ou modifications de mise en forme sont appliquées.
+Ce critère de succès a pour but de permettre à un agent utilisateur de proposer une autre présentation du contenu tout en préservant l’ordre de lecture nécessaire pour comprendre sa signification. Il est important de pouvoir déterminer par programmation au moins une séquence de contenu compréhensible. Si le contenu ne répond pas à ce critère de succès, il est possible que les utilisatrices et les utilisateurs soient troublés ou désorientés dans le cas où la technologie d’assistance lit le contenu dans le désordre ou si d’autres feuilles de style ou modifications de mise en forme sont appliquées.
 
 #### Comment procéder – Séquence significative (1.3.2) {#how-to-meet-meaningful-sequence}
 
@@ -475,7 +474,7 @@ En outre, les personnes qui utilisent des navigateurs de texte seul, des apparei
 
 De plus, l’état *sélectionné* d’un élément d’interface (par exemple, les onglets, boutons (bascule), etc.) doit également être transmis d’une autre manière que par la couleur, et au-delà de la seule présentation visuelle. Pour ces éléments, l’utilisation supplémentaire de modèles, de formes et d’informations de programmation est utile pour créer une expérience utilisateur pleinement inclusive non limitée à un sens spécifique.
 
-#### Comment procéder – Utilisation de la couleur (1.4.1) {#how-to-meet-use-of-color}
+#### Comment procéder – Utilisation de la couleur (1.4.1) {#how-to-meet-use-of-color}
 
 Si la couleur sert à véhiculer l’information, veillez à ce que cette information soit accessible sans recourir à la couleur.
 
@@ -522,9 +521,9 @@ Appliquez les règles indiquées dans la section [Comment remplir le critère de
    * Texte décoratif : aucune exigence de contraste pour le texte ou le texte sous forme d’image intégré à un composant d’interface utilisateur inactif. Il s’agit d’un élément [purement décoratif](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), invisible de tous et toutes ou intégré à une partie d’une image contenant un autre contenu significatif.
    * Logotypes : aucune exigence de contraste pour le texte faisant partie d’un logo ou d’un nom de marque.
 
-   >[!NOTE]
-   >
-   >Pour plus d’informations, consultez [Présentation du contraste non textuel](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) afin de vous assurer que les personnes chargées de la création de contenu comprennent les autres exigences relatives aux éléments non textuels (notamment les icônes et les éléments d’interface).
+  >[!NOTE]
+  >
+  >Pour plus d’informations, consultez [Présentation du contraste non textuel](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) afin de vous assurer que les personnes chargées de la création de contenu comprennent les autres exigences relatives aux éléments non textuels (notamment les icônes et les éléments d’interface).
 
 #### Objectif – Contraste (minimum) (1.4.3) {#purpose-contrast-minimum}
 
@@ -559,14 +558,13 @@ Veillez à ce que le texte soit suffisamment contrasté par rapport à son arri�
 >* Consultez « Conversion des tailles de polices : pixel-point-em-rem-percent » à l’adresse `https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/`.
 >* Consultez PMtoEM.com : conversion PX/EM simplifiée à l’adresse `http://pxtoem.com/`.
 
-
 Pour vérifier les rapports de contraste, utilisez un outil de contraste des couleurs, tel que l’[analyseur de contraste des couleurs du groupe Paciello](https://www.paciellogroup.com/resources/contrast-analyser.html) ou le [vérificateur de contraste des couleurs WebAIM](https://webaim.org/resources/contrastchecker/). Ces outils vous permettent de vérifier des paires de couleurs et de signaler tout problème de contraste.
 
 Si vous accordez moins d’importance à l’apparence de votre page, vous pouvez choisir de ne pas spécifier de couleurs de texte d’arrière-plan et de premier plan. Aucune vérification du contraste n’est requise, car le navigateur de l’utilisateur ou de l’utilisatrice détermine les couleurs du texte et de l’arrière-plan.
 
 S’il est impossible de respecter les niveaux de contraste recommandés, fournissez un lien vers une version équivalente alternative de la page (qui ne présente aucun problème de contraste des couleurs). Vous pouvez également laisser l’utilisateur ou l’utilisatrice régler le contraste du modèle de couleurs de la page selon ses besoins.
 
-#### En savoir plus – Contraste (minimum) (1.4.3) {#more-information-contrast-minimum}
+#### En savoir plus – Contraste (minimum) (1.4.3) {#more-information-contrast-minimum}
 
 * [Compréhension du critère de réussite 1.4.3](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
 * [Comment remplir le critère de réussite 1.4.3](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)
@@ -608,7 +606,7 @@ Les images de texte sont souvent utilisées lorsqu’un style de texte particuli
 
 #### Comment procéder – Texte sous forme d’image (1.4.5) {#how-to-meet-images-of-text}
 
-Si des images de texte doivent être utilisées, utilisez CSS pour remplacer les images de texte par du texte équivalent en HTML afin que le texte soit disponible de manière personnalisable. Pour un exemple sur la manière d’y parvenir, consultez [C30 : utilisation de CSS pour remplacer le texte par des images de texte et mise à disposition de commandes d’interface utilisateur pour passer d’un texte à l’autre (en anglais)](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30).
+Si des images de texte doivent être utilisées, utilisez le CSS pour remplacer les images de texte par du texte équivalent en HTML afin que le texte soit disponible de manière personnalisable. Pour un exemple, consultez [C30: Using CSS to replace text with images of text and providing user interface controls to switch](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30) (C30 : utiliser le CSS pour remplacer le texte par des images de texte et fournir des commandes dans l’UI pour basculer).
 
 #### En savoir plus – Texte sous forme d’image (1.4.5) {#more-information-images-of-text}
 
@@ -629,7 +627,7 @@ Il s’agit de veiller à ce que les utilisateurs puissent accéder à toutes le
 
 * Critère de réussite 2.1.1
 * Niveau A
-* Clavier : toutes les fonctionnalités du contenu sont exploitables à l’aide d’une interface clavier, sans nécessiter de minutage spécifique pour les touches individuelles, sauf lorsque la fonction sous-jacente nécessite une entrée dépendant du chemin du mouvement de l’utilisateur et pas seulement des points de terminaison.
+* Clavier : toutes les fonctionnalités du contenu sont exploitables à l’aide d’une interface clavier, sans nécessiter de minutage spécifique pour les touches individuelles, sauf lorsque la fonction sous-jacente nécessite une entrée dépendant du chemin du mouvement de l’utilisateur et pas seulement des points d’entrée.
 
 #### Objectif - Clavier (2.1.1) {#purpose-keyboard}
 
@@ -709,7 +707,7 @@ Remarques :
 
 Certains utilisateurs et utilisatrices peuvent trouver les contenus mobiles gênants, voire douloureux physiquement, ce qui crée pour eux des difficultés à se concentrer sur d’autres parties de la page. De plus, un tel contenu peut se révéler difficile à lire pour les personnes qui ont des difficultés à suivre un texte mobile.
 
-#### Comment procéder – Mettre en pause, arrêter, masquer (2.2.2) {#how-to-meet-pause-stop-hide}
+#### Comment procéder – Mettre en pause, arrêter, masquer (2.2.2) {#how-to-meet-pause-stop-hide}
 
 Selon la nature du contenu, vous pouvez appliquer une ou plusieurs des suggestions suivantes lorsque vous créez des pages web qui contiennent du mouvement, des flashs ou des clignotements :
 
@@ -736,7 +734,7 @@ Selon la nature du contenu, vous pouvez appliquer une ou plusieurs des suggestio
 
 >[!NOTE]
 >
->Comme tout contenu qui ne remplit pas ce critère de succès peut interférer avec la capacité de l’utilisateur ou de l’utilisatrice à exploiter la page entière, tout le contenu présent dans la page web (qu’il soit utilisé pour remplir d’autres critères de réussite ou non) doit remplir ce critère de succès. Consultez [Exigence de conformité 5 : non-interférence](https://www.w3.org/TR/WCAG/#cc5).
+>Comme tout contenu qui ne remplit pas ce critère de succès peut interférer avec la capacité de l’utilisateur ou de l’utilisatrice à exploiter la page entière, tout le contenu présent dans la page web (qu’il soit utilisé pour remplir d’autres critères de réussite ou non) doit remplir ce critère de succès. Consultez [Exigence de conformité 5 : non interférence](https://www.w3.org/TR/WCAG/#cc5).
 
 #### Objectif – Pas plus de trois flashs ou sous le seuil critique (2.3.1) {#purpose-three-flashes-or-below-threshold}
 
@@ -756,7 +754,7 @@ Assurez-vous d’appliquer les techniques suivantes :
 
 ### Navigabilité (2.4) {#navigable}
 
-[Règle 2.4 – Navigabilité : mettre à disposition les moyens nécessaires pour aider les utilisateurs à naviguer, trouver du contenu et déterminer leur localisation.](https://www.w3.org/TR/WCAG/#navigable)
+[Règle 2.4 – Navigable : fournir à l’utilisateur des éléments d’orientation pour naviguer, trouver le contenu et se situer dans le site.](https://www.w3.org/TR/WCAG/#navigable)
 
 Cette règle permet de s’assurer que la navigation pour accéder au contenu soit simple et facile pour les utilisateurs.
 
@@ -808,7 +806,7 @@ Vous pouvez également changer le titre d’une page que vous modifiez en sélec
 
 #### Objectif – Ordre de focus (2.4.3) {#purpose-focus-order}
 
-Ce critère de réussite a pour but de s’assurer que, lorsque les utilisateurs naviguent de manière séquentielle dans le contenu, ils rencontrent des informations dans un ordre compatible avec la signification de ce contenu et qu’il puisse être utilisé à l’aide du clavier. Ce critère diminue la confusion en permettant aux utilisateurs de former un modèle mental cohérent du contenu. Différents ordres correspondant aux relations logiques au sein du contenu peuvent coexister. Il peut s’agir, par exemple, de parcourir des composants dans un formulaire en ligne composé de différents champs et/ou étapes, en correspondance avec les relations logiques au sein du contenu.
+Ce critère de succès a pour but de s’assurer que, lorsque les utilisateurs et les utilisatrices naviguent de manière séquentielle dans le contenu, ils rencontrent des informations dans un ordre compatible avec la signification de ce contenu et qu’il puisse être utilisé à l’aide du clavier. Ce critère diminue la confusion en permettant aux utilisateurs de former un modèle mental cohérent du contenu. Différents ordres correspondant aux relations logiques au sein du contenu peuvent coexister. Il peut s’agir, par exemple, de parcourir des composants dans un formulaire en ligne composé de différents champs et/ou étapes, en correspondance avec les relations logiques au sein du contenu.
 
 #### Comment procéder – Ordre de focus (2.4.3) {#how-to-meet-focus-order}
 
@@ -825,7 +823,7 @@ Appliquez les règles indiquées dans la section [Comment remplir le critère de
 * Niveau A
 * Fonction du lien (selon le contexte) : la fonction de chaque lien est déterminée par le texte du lien seul ou par le texte du lien associé à un contexte du lien déterminé par un programme informatique, sauf si la fonction du lien est ambiguë pour tout utilisateur.
 
-#### Objectif – Fonction du lien (selon le contexte) (2.4.4) {#purpose-link-purpose-in-context}
+#### Objectif – Fonction du lien (selon le contexte) (2.4.4) {#purpose-link-purpose-in-context}
 
 Pour tous les utilisateurs et utilisatrices, qu’ils aient une déficience ou non, il est essentiel d’indiquer clairement la direction d’un lien avec le texte du lien approprié. Cela permet aux utilisateurs et aux utilisatrices de décider s’ils souhaitent réellement suivre un lien. Pour les utilisateurs et utilisatrices voyants, un texte de lien significatif est utile lorsqu’il existe plusieurs liens sur une page (en particulier si la page contient beaucoup de texte), car il fournit une indication plus claire de la fonctionnalité de la page cible. D’un autre côté, les utilisateurs et utilisatrices de technologies d’assistance peuvent générer une liste de tous les liens sur une seule page, et ainsi comprendre plus facilement le texte du lien hors contexte, s’il est à la fois unique et informatif. Les personnes voyantes souffrant d’un handicap cognitif peuvent être perturbées si un lien ne donne pas suffisamment d’informations sur sa destination.
 
@@ -972,10 +970,10 @@ Ce critère de réussite garantit que ce texte et tout autre contenu linguistiqu
 Pour que ce critère de réussite soit satisfait, la langue par défaut d’une page web peut être identifiée à l’aide de l’attribut `lang` dans l’élément `<html>` en haut de la page. Par exemple :
 
 * Si une page est écrite en anglais, l’élément `<html>` doit être :
-   `<html lang = "en">`
+  `<html lang = "en">`
 
 * En revanche, pour une page à restituer en espagnol, l’attribut doit être défini comme suit :
-   `<html lang = "es">`
+  `<html lang = "es">`
 
 Dans AEM, la langue par défaut de la page est définie lors de la création de la page. Elle peut aussi être redéfinie en modifiant les [propriétés de la page](/help/sites-authoring/editing-page-properties.md).
 
@@ -1007,7 +1005,7 @@ Les pages qui appliquent ce critère de succès ont les avantages suivants :
 
 #### Comment procéder – Langue d’un passage (3.1.2) {#how-to-meet-language-of-parts}
 
-L’attribut `lang` peut être utilisé pour identifier les modifications dans la langue du contenu. Par exemple, une citation en allemand (code ISO 639-1 « de ») peut s’afficher comme suit :
+L’attribut `lang` peut être utilisé pour identifier les changements de langue du contenu. Par exemple, une citation en allemand (code ISO 639-1 « de ») peut s’afficher comme suit :
 
 ```xml
 <blockquote cite = "John F. Kennedy" lang = "de">
@@ -1177,9 +1175,9 @@ Appliquez les règles indiquées dans la section [Comment remplir le critère de
 
 Fournir des instructions pour aider les personnes à remplir des formulaires est une partie essentielle des bonnes pratiques en matière d’utilisation de l’interface. Cela s’avère utile pour les personnes ayant des déficiences visuelles ou cognitives qui auraient autrement des difficultés à comprendre la mise en page d’un formulaire et le type de données à fournir dans un champ de formulaire particulier.
 
-##### Formulaires
+##### Forms
 
-Dans le projet de démonstration AEM WKND, une étiquette par défaut est ajoutée lorsque vous ajoutez un composant de formulaire à la page, par exemple un **champ de texte**. Ce titre par défaut dépend du type de composant. Vous pouvez ajouter votre propre titre dans l’onglet **Titre et texte** de la boîte de dialogue de modification de ce champ. Il est important de s’assurer que les étiquettes aident les utilisateurs à comprendre les données associées à chaque composant de formulaire.
+Dans le projet de démonstration AEM WKND, une étiquette par défaut est ajoutée lorsque vous ajoutez un composant de formulaire à la page, par exemple un **champ de texte**. Ce titre par défaut dépend du type de composant. Vous pouvez ajouter votre propre titre dans l’onglet **Titre et Texte** de la boîte de dialogue de modification de ce champ. Il est important de s’assurer que les libellés aident les utilisateurs et les utilisatrices à comprendre les données associées à chaque composant de formulaire.
 
 Utilisez ce champ **Titre** pour les éléments de champ, car il fournit un libellé accessible par les technologies d’assistance. Le simple fait d’écrire un libellé dans le texte en regard du champ ne suffit pas.
 
@@ -1227,7 +1225,7 @@ Ce critère de réussite a pour but de s’assurer que les utilisateurs reçoive
 
 Le critère de réussite 3.3.1 prévoit la notification des erreurs. Cependant, les personnes atteintes de limitations cognitives peuvent avoir du mal à comprendre comment corriger les erreurs. Celles atteintes de déficiences visuelles ne seront peut-être pas en mesure de déterminer exactement comment corriger l’erreur. Dans le cas d’un envoi de formulaire infructueux, les utilisateurs risquent d’abandonner faute de savoir comment corriger l’erreur, même s’ils savent qu’elle s’est produite.
 
-L’auteur du contenu peut donner la description de l’erreur ou l’agent utilisateur peut fournir la description de l’erreur en fonction d’informations spécifiques à la technologie et déterminées par programmation.
+La personne en charge de la création du contenu peut donner la description de l’erreur ou l’agent utilisateur peut fournir la description de l’erreur en fonction d’informations spécifiques à la technologie et déterminées par programmation.
 
 #### Comment procéder – Suggestion d’erreur (3.3.3) {#how-to-meet-error-suggestion}
 

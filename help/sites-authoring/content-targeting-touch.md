@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
-workflow-type: ht
-source-wordcount: '5390'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '5388'
+ht-degree: 98%
 
 ---
 
@@ -298,7 +298,7 @@ Si vous modifiez le contenu ciblé, vous devez cliquer ou appuyer sur **Commence
    >Les administrateurs peuvent déterminer si la définition de cette configuration est nécessaire en consultant **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
    >
    >
-   >Pour obliger les utilisateurs à saisir un emplacement, cochez la case **Forcer à indiquer l’emplacement**.
+   Pour obliger les utilisateurs à saisir un emplacement, cochez la case **Forcer à indiquer l’emplacement**.
 
 1. Sélectionnez l’expérience pour laquelle vous souhaitez créer l’offre.
 1. Créez l’offre :
@@ -398,7 +398,7 @@ Ouvrez une offre de bibliothèque à partir d’une expérience en mode Ciblé p
 
 ## Cible : configuration des audiences {#target-configuring-the-audiences}
 
-L’étape Cibler du [processus de ciblage](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) implique le mappage des audiences avec les expériences que vous avez utilisées à l’étape Créer. La page cible affiche les audiences que chaque expérience cible. Vous pouvez spécifier ou modifier l’audience de chaque expérience. Si vous utilisez Adobe Target, vous pouvez également créer des tests A/B qui vous permettent de cibler un pourcentage du trafic pour une audience sur une expérience particulière.
+L’étape Cibler du [processus de ciblage](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) implique le mappage des audiences avec les expériences que vous avez utilisées à l’étape Créer. La page cible affiche les audiences que chaque expérience cible. Vous pouvez spécifier ou modifier l’audience de chaque expérience. Si vous utilisez Adobe Target, vous pouvez également créer des tests A/B qui vous permettent de cibler un pourcentage du trafic pour une audience sur une expérience particulière.
 
 ### Si vous utilisez le ciblage d’AEM ou d’Adobe Target (ciblage d’expériences)…  {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
@@ -555,7 +555,7 @@ Pour configurer des objectifs et des paramètres en cas d’utilisation d’Adob
 
 1. Pour spécifier le moment où l’activité commence, utilisez le menu déroulant **Démarrer** pour sélectionner l’une des valeurs suivantes :
 
-   * **Lorsqu’elle est activée** :l’activité commence lorsque la page qui contient le contenu ciblé est activée.
+   * **Lorsqu’elle est activée** : l’activité commence lorsque la page qui contient le contenu ciblé est activée.
    * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez ou appuyez sur l’icône du calendrier, sélectionnez une date et indiquez l’heure de début de l’activité.
 
 1. Pour spécifier le moment où l’activité se termine, utilisez le menu déroulant **Fin** pour sélectionner l’une des valeurs suivantes :
@@ -580,13 +580,13 @@ Pour configurer des objectifs et des paramètres en cas d’utilisation d’Adob
 
    >[!NOTE]
    >
-   >Un objectif au moins doit être défini.
+   Un objectif au moins doit être défini.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
    >[!NOTE]
    >
-   >S’il manque des informations dans votre mesure, une ligne rouge entoure la mesure.
+   S’il manque des informations dans votre mesure, une ligne rouge entoure la mesure.
 
 1. Cliquez sur **Ajouter une nouvelle mesure** pour configurer d’autres mesures de succès.
 
@@ -594,7 +594,7 @@ Pour configurer des objectifs et des paramètres en cas d’utilisation d’Adob
 
    >[!NOTE]
    >
-   >Vous pouvez supprimer d’autres objectifs en cliquant ou en appuyant sur les points de suspension ou sur **Supprimer**. AEM nécessite qu’au moins un objectif soit défini.
+   Vous pouvez supprimer d’autres objectifs en cliquant ou en appuyant sur les points de suspension ou sur **Supprimer**. AEM nécessite qu’au moins un objectif soit défini.
 
 1. Si vous souhaitez mieux contrôler la méthode de comptabilisation des mesures de succès, cliquez ou appuyez sur **Paramètres avancés** pour y accéder.
 1. Cliquez sur **Enregistrer**.
@@ -617,7 +617,7 @@ Si du contenu inattendu s’affiche sur la page lors du chargement d’un profil
 
 >[!NOTE]
 >
->Si vous utilisez des tests A/B, les expériences de simulation sont affichées en fonction du pourcentage de trafic. Ceci est contrôlé par Adobe Target, ce qui peut entraîner des résultats inattendus pour les créateurs et créatrices. (L’activité _author est synchronisée avec des paramètres spécifiques qui permettent une réévaluation lors de la simulation.) Les créateurs et créatrices peuvent avoir besoin d’actualiser pour afficher les autres expériences en fonction de leurs paramètres de trafic.
+Si vous utilisez des tests A/B, les expériences de simulation sont affichées en fonction du pourcentage de trafic. Ceci est contrôlé par Adobe Target, ce qui peut entraîner des résultats inattendus pour les créateurs et créatrices. (L’activité _author est synchronisée avec des paramètres spécifiques qui permettent une réévaluation lors de la simulation.) Les créateurs et créatrices peuvent avoir besoin d’actualiser pour afficher les autres expériences en fonction de leurs paramètres de trafic.
 
 Pour simuler l’expérience du visiteur ou de la visiteuse, utilisez les outils suivants :
 
@@ -692,7 +692,7 @@ Si vous sélectionnez Adobe Target comme moteur :
   </tr>
   <tr>
    <td><strong>Inclure les segments résolus</strong></td>
-   <td><p>Si vous cochez cette case, tous les segments résolus dans l’appel de mbox et les paramètres configurés dans la page et dans le framework sont inclus.</p> <p>Cela ne fonctionne que dans les situations où vous utilisez une API XML, pour synchronisez les segments AEM. Si des segments dans AEM ne sont pas gérés par Adobe Target (comme les segments de script), alors cette option vous permet de résoudre le segment dans AEM et d’envoyer à Adobe Target des informations indiquant que le segment est actif.</p> </td>
+   <td><p>Si vous cochez cette case, tous les segments résolus dans l’appel de mbox et les paramètres configurés dans la page et dans le framework sont inclus.</p> <p>Cela ne fonctionne que dans les situations où vous utilisez une API XML, pour synchronisez les segments AEM. Si des segments dans AEM ne sont pas gérés par Adobe Target (comme les segments de script), cette option vous permet de résoudre le segment dans AEM et d’envoyer à Adobe Target des informations indiquant que le segment est actif.</p> </td>
   </tr>
   <tr>
    <td><strong>Paramètres contextuels hérités</strong></td>
@@ -711,7 +711,7 @@ Si vous sélectionnez Adobe Target comme moteur :
 
 >[!NOTE]
 >
->Lorsque vous sélectionnez un composant et le rendez ciblable, AEM remplace également le composant et injecte un composant Adobe Target. (Le composant Adobe Target est non seulement utilisé lorsque vous l’ajoutez manuellement à la page, mais également lorsque vous ciblez un composant existant.)
+Lorsque vous sélectionnez un composant et le rendez ciblable, AEM remplace également le composant et injecte un composant Adobe Target. (Le composant Adobe Target est non seulement utilisé lorsque vous l’ajoutez manuellement à la page, mais également lorsque vous ciblez un composant existant.)
 
 Si vous sélectionnez ClientContext (côté client) comme moteur :
 

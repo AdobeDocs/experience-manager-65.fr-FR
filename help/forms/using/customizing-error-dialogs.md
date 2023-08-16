@@ -1,7 +1,7 @@
 ---
 title: Personnalisation des boîtes de dialogue d’erreur
 seo-title: Customizing error dialogs
-description: Comment personnaliser les boîtes de dialogue d’erreur de l’espace de travail LiveCycle AEM Forms pour ajouter des descriptions d’erreur différentes.
+description: Comment personnaliser les boîtes de dialogue d’erreur de l’espace de travail AEM Forms LiveCycle pour ajouter différentes descriptions d’erreur.
 seo-description: How-to customize the error dialogs of LiveCycle AEM Forms workspace to add different fault descriptions.
 uuid: 5ed1da68-bd5b-4a36-9a14-9d61733237e6
 content-type: reference
@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
 exl-id: 8d2b07f5-5c4e-4111-8f78-eb1b156221bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '152'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '151'
+ht-degree: 74%
 
 ---
 
@@ -228,7 +228,7 @@ L’espace de travail AEM Forms vous permet de personnaliser les boîtes de dial
 
 ## Exemples {#examples}
 
-* **Pour personnaliser la boîte de dialogue d’erreur, modifiez les éléments suivants :**
+* **Pour personnaliser la boîte de dialogue d’erreur, modifiez les éléments suivants :**
 
 ```css
 .error-dialog{

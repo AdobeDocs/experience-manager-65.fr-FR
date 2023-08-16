@@ -5,10 +5,10 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 95%
+source-wordcount: '749'
+ht-degree: 89%
 
 ---
 
@@ -105,7 +105,7 @@ eCommerce, avec la gestion de l’information sur les produits (PIM), gère les 
 * Enregistrements de stockage dynamiques et centralisés
 * Interfaces web
 
-AEM eCommerce aide les spécialistes du marketing à offrir des expériences d’achat personnalisées sur le web, les appareils mobiles et les médias sociaux. L’environnement de création AEM vous permet de personnaliser les pages et les composants en fonction du contexte du visiteur ou de la visiteuse cible et des stratégies de marchandisage. Par exemple :
+AEM eCommerce aide les spécialistes du marketing à offrir des expériences d’achat personnalisées sur le web, les appareils mobiles et les médias sociaux. L’environnement de création d’AEM vous permet de personnaliser les pages et les composants en fonction du contexte du visiteur cible et des stratégies de marchandisage, par exemple :
 
 * Pages de produits
 * Composants de panier
@@ -141,7 +141,7 @@ AEM e-commerce fournit :
 
   >[!NOTE]
   >
-  >Le framework d’intégration fourni par AEM vous permet également de créer des composants AEM supplémentaires pour les fonctionnalités commerciales, indépendamment de votre moteur e-commerce spécifique.
+  >La structure d’intégration fournie par AEM vous permet également de créer des composants AEM supplémentaires pour les fonctionnalités commerciales, indépendamment de votre moteur eCommerce spécifique.
 
 * **Rechercher** avec :
 
@@ -160,10 +160,10 @@ AEM e-commerce fournit :
 
   Les deux mises en œuvre actuellement disponibles reposent sur la même base et complètent l’API générale (la structure). La mise en œuvre d’une nouvelle intégration implique seulement de mettre en œuvre les fonctionnalités dont votre intégration a besoin. Les composants frontaux peuvent être utilisés par les nouvelles mises en œuvre puisqu’ils utilisent des interfaces (et sont donc indépendants de la mise en œuvre).
 
-* Possibilité de développer un **commerce axé sur l’expérience en fonction des données et de l’activité des acheteurs**, Vous pouvez ainsi réaliser de nombreux scénarios :
+* Possibilité de développer un **commerce axé sur l’expérience en fonction des données et de l’activité des acheteurs**, Vous pouvez ainsi réaliser de nombreux scénarios :
 
    * Par exemple, une réduction des frais de livraison proposée lorsque le montant total d’une commande dépasse un montant spécifique.
-   * Une autre peut vous permettre de fournir des offres saisonnières qui utilisent les données de profil (par exemple, la localisation). Elles peuvent ensuite être mises en évidence, selon d’autres facteurs, le cas échéant.
+   * Un autre peut vous permettre de fournir des offres saisonnières qui utilisent les données de profil (par exemple, la localisation). Elles peuvent ensuite être mises en évidence, selon d’autres facteurs, le cas échéant.
 
   Dans l’exemple ci-dessous, un teaser est affiché, car le contenu du panier est inférieur à 75 $ :
 

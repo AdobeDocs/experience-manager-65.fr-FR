@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 docset: aem65
 exl-id: 2cadd9c5-4335-48d0-8d1c-941fca717409
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2961'
-ht-degree: 0%
+source-wordcount: '2959'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Ce document fait partie de la [Prise en main d’Adobe Experience Manager (AEM) Mobile](/help/mobile/getting-started-aem-mobile.md) Guide, point de départ recommandé pour la référence à AEM Mobile.
+>Ce document fait partie de la [Prise en main de Adobe Experience Manager (AEM) Mobile](/help/mobile/getting-started-aem-mobile.md) Guide, point de départ recommandé pour la référence à AEM Mobile.
 
 Utilisez Synchronisation de contenu pour regrouper le contenu afin qu’il puisse être utilisé dans des applications mobiles natives. Les pages créées dans AEM peuvent être utilisées comme contenu d’application, même lorsque l’appareil est hors ligne. De plus, comme les pages d’AEM sont basées sur des normes web, elles fonctionnent sur plusieurs plateformes et vous permettent de les incorporer dans n’importe quel wrapper natif. Cette stratégie réduit les efforts de développement et vous permet de mettre facilement à jour le contenu de l’application.
 
@@ -49,12 +49,12 @@ La séquence d’étapes suivante illustre un cas d’utilisation typique de la 
 
 Créez une configuration de synchronisation de contenu pour spécifier le contenu du fichier ZIP diffusé au client. Vous pouvez créer un nombre illimité de configurations de synchronisation de contenu. Chaque configuration a un nom à des fins d’identification.
 
-Pour créer une configuration de synchronisation de contenu, ajoutez une `cq:ContentSyncConfig` au référentiel, avec la propriété `sling:resourceType` définie sur `contentsync/config`. Le `cq:ContentSyncConfig` peut se trouver n’importe où dans le référentiel, mais le noeud doit être accessible aux utilisateurs sur l’instance de publication AEM. Par conséquent, vous devez ajouter le noeud ci-dessous. `/content`.
+Pour créer une configuration de synchronisation de contenu, ajoutez une `cq:ContentSyncConfig` au référentiel, avec la propriété `sling:resourceType` définie sur `contentsync/config`. La variable `cq:ContentSyncConfig` peut se trouver n’importe où dans le référentiel, mais le noeud doit être accessible aux utilisateurs sur l’instance de publication AEM. Par conséquent, vous devez ajouter le noeud sous `/content`.
 
 Pour spécifier le contenu du fichier ZIP de synchronisation de contenu, ajoutez des noeuds enfants au noeud cq:ContentSyncConfig . Les propriétés suivantes de chaque noeud enfant identifient un élément de contenu à inclure et la manière dont il est traité lors de son ajout :
 
-* `path`: Emplacement du contenu.
-* `type`: Nom du type de configuration à utiliser pour le traitement du contenu. Plusieurs types sont disponibles et sont décrits dans la section Types de configuration.
+* `path`: emplacement du contenu.
+* `type`: nom du type de configuration à utiliser pour le traitement du contenu. Plusieurs types sont disponibles et sont décrits dans la section Types de configuration.
 
 Voir Exemple de configuration de synchronisation de contenu.
 
@@ -74,9 +74,9 @@ Une fois AEM installé, les membres du groupe de l’administrateur peuvent, par
 
 Le service Day CQ Content Sync Manager contrôle l’accès à la synchronisation de contenu. Configurez ce service pour spécifier l’utilisateur ou le groupe pouvant être téléchargé à partir de la synchronisation de contenu par défaut.
 
-Si vous êtes [configuration du service à l’aide de la console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), saisissez le nom de l’utilisateur ou du groupe comme valeur de la propriété Fallback Cache Authorizable .
+Si vous [configuration du service à l’aide de la console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), saisissez le nom de l’utilisateur ou du groupe comme valeur de la propriété Fallback Cache Authorizable .
 
-Si vous êtes [configuration dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository), utilisez les informations suivantes sur le service :
+Si vous [configuration dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository), utilisez les informations suivantes sur le service :
 
 * PID : com.day.cq.contentsync.impl.ContentSyncManagerImpl
 * Nom de la propriété : contentsync.fallback.authorizable
@@ -87,11 +87,11 @@ Pour configurer l’accès au téléchargement pour une configuration de synchro
 
 * Nom : autorisable
 * Type : chaîne
-* Valeur : Nom de l’utilisateur ou du groupe pouvant être téléchargé.
+* Valeur : nom de l’utilisateur ou du groupe qui peut télécharger.
 
 Par exemple, votre application permet aux utilisateurs d’installer des mises à jour directement à partir de la synchronisation de contenu. Pour permettre à tous les utilisateurs de télécharger la mise à jour, définissez la valeur de la propriété autorisable sur `everyone`.
 
-Si la variable `cq:ContentSyncConfig` n’a pas de propriété autorisable, l’utilisateur ou le groupe par défaut configuré pour la propriété Fallback Cache Authorizable du service Day CQ Content Sync Manager détermine qui peut télécharger.
+Si la variable `cq:ContentSyncConfig` n’a pas de propriété autorisable, l’utilisateur ou le groupe par défaut configuré pour la propriété Fallback Cache Authorizable du service Day CQ Content Sync Manager détermine qui peut le télécharger.
 
 ### Configuration de l’utilisateur pour la mise à jour d’un cache de synchronisation de contenu {#configuring-the-user-for-updating-a-content-sync-cache}
 
@@ -103,7 +103,7 @@ Pour remplacer l’utilisateur par défaut, spécifiez un utilisateur ou un grou
 
 * Nom : updateuser
 * Type : chaîne
-* Valeur : Nom de l’utilisateur ou du groupe qui peut effectuer les mises à jour.
+* Valeur : nom de l’utilisateur ou du groupe qui peut effectuer les mises à jour.
 
 Si le noeud cq:ContentSyncConfig n’a pas `updateuser` , l’utilisateur anonyme par défaut met à jour le cache.
 
@@ -160,9 +160,9 @@ Par défaut, seuls les composants d’image avec un type de ressource foundation
 
 **rewrite** - Le noeud rewrite définit la manière dont les liens sont réécrits dans la page exportée. Les liens réécrits peuvent pointer vers les fichiers inclus dans le fichier compressé ou vers les ressources sur le serveur.
 
-Le `rewrite` doit se trouver sous le noeud `page` noeud .
+La variable `rewrite` doit se trouver sous le noeud `page` noeud .
 
-Le `rewrite` peut avoir une ou plusieurs des propriétés suivantes :
+La variable `rewrite` peut avoir une ou plusieurs des propriétés suivantes :
 
 * `clientlibs`: réécrit les chemins clientlibs.
 
@@ -171,7 +171,7 @@ Le `rewrite` peut avoir une ou plusieurs des propriétés suivantes :
 
 Chaque propriété peut avoir l’une des valeurs suivantes :
 
-* `REWRITE_RELATIVE`: réécrit le chemin d’accès avec une position relative par rapport au fichier .html de la page sur le système de fichiers.
+* `REWRITE_RELATIVE`: réécrit le chemin d’accès avec une position relative dans le fichier .html de la page sur le système de fichiers.
 
 * `REWRITE_EXTERNAL`: réécrit le chemin en pointant vers la ressource du serveur, à l’aide de l’AEM [Service Externalizer](/help/sites-developing/externalizer.md).
 
@@ -229,11 +229,11 @@ La liste ci-dessous présente un exemple de configuration pour la synchronisatio
 
 Dans cet exemple, la page de liste d’événements est censée être la page initiale. Ces informations sont fournies dans la section **indexPage** et peuvent donc être facilement modifiées à tout moment. Une deuxième propriété définit le chemin d’accès de la propriété *events.plist* fichier . Comme nous le verrons plus tard, l’application cliente peut désormais lire le manifeste et agir en fonction de ce dernier.
 
-Lors de la configuration, le contenu peut être téléchargé avec un navigateur ou tout autre client HTTP. Si vous développez pour iOS, vous pouvez utiliser la bibliothèque cliente WAppKitSync dédiée. L’emplacement de téléchargement est constitué du chemin de la configuration et de la variable *.zip* lors de l’utilisation d’une instance d’AEM locale, par exemple : *https://localhost:4502/content/weretail_go.zip*
+Lors de la configuration, le contenu peut être téléchargé avec un navigateur ou tout autre client HTTP. Si vous développez pour iOS, vous pouvez utiliser la bibliothèque cliente WAppKitSync dédiée. L’emplacement de téléchargement est constitué du chemin d’accès de la configuration et de la variable *.zip* par exemple, lorsque vous utilisez une instance d’AEM locale : *https://localhost:4502/content/weretail_go.zip*
 
 ### Console de synchronisation de contenu {#the-content-sync-console}
 
-La console Synchronisation du contenu répertorie toutes les configurations de synchronisation du contenu dans le référentiel (tous les noeuds de type `cq:ContentSyncConfig`) et pour chaque configuration vous permet d’effectuer les opérations suivantes :
+La console Synchronisation du contenu répertorie toutes les configurations de synchronisation du contenu dans le référentiel (tous les noeuds de type `cq:ContentSyncConfig`) et pour chaque configuration, vous pouvez effectuer les opérations suivantes :
 
 * Mettez à jour le cache.
 * Effacez le cache.
@@ -246,7 +246,7 @@ La console est accessible à l’adresse :
 
 `https://localhost:4502/libs/cq/contentsync/content/console.html`
 
-Il se présente comme suit :
+Elle se présente comme suit :
 
 ![chlimage_1](assets/chlimage_1.png)
 
@@ -353,7 +353,7 @@ public class LogoUpdateHandler implements ContentUpdateHandler {
 }
 ```
 
-Le `LogoUpdateHandler` met en oeuvre la classe `ContentUpdateHandler` de l’interface `updateCacheEntry(ConfigEntry, Long, String, Session, Session)` qui accepte plusieurs arguments :
+La variable `LogoUpdateHandler` met en oeuvre la classe `ContentUpdateHandler` interface d’ `updateCacheEntry(ConfigEntry, Long, String, Session, Session)` , qui accepte plusieurs arguments :
 
 * A `ConfigEntry` qui permet d’accéder à l’entrée de configuration, pour laquelle ce gestionnaire est appelé, et à ses propriétés.
 * A `lastUpdated` horodatage indiquant la dernière fois que la synchronisation de contenu a mis à jour son cache. Le contenu qui n’a pas été modifié après cet horodatage ne doit pas être mis à jour par le gestionnaire.
@@ -367,9 +367,9 @@ Vérifiez ensuite si la ressource a été modifiée depuis la dernière mise à 
 
 ## Utiliser le contenu sur le client {#using-the-content-on-the-client}
 
-Pour utiliser du contenu dans une application mobile fournie par la synchronisation de contenu, vous devez demander le contenu au moyen d’une connexion HTTP ou HTTPS. Par conséquent, le contenu récupéré (compressé dans un fichier ZIP) peut être extrait et stocké localement sur l’appareil mobile. Le contenu fait non seulement référence aux données, mais aussi à la logique, c’est-à-dire aux applications Web complètes ; par conséquent, permettre à l’utilisateur mobile d’exécuter les applications web récupérées et les données correspondantes, même sans connectivité réseau.
+Pour utiliser du contenu dans une application mobile fournie par la synchronisation de contenu, vous devez demander le contenu au moyen d’une connexion HTTP ou HTTPS. Par conséquent, le contenu récupéré (compressé dans un fichier ZIP) peut être extrait et stocké localement sur l’appareil mobile. Le contenu fait non seulement référence à des données, mais aussi à la logique, c’est-à-dire à des applications web complètes. Il permet donc à l’utilisateur mobile d’exécuter des applications web récupérées et les données correspondantes, même sans connectivité réseau.
 
-La synchronisation de contenu permet d’afficher le contenu de manière intelligente : Seules les modifications apportées aux données depuis une dernière synchronisation des données réussie sont diffusées, ce qui réduit le temps nécessaire au transfert des données. Lors de la première exécution des données d&#39;une application, des modifications sont demandées depuis le 1er janvier 1970, alors que seules les données modifiées depuis la dernière synchronisation réussie sont demandées. AEM utilise une structure de communication client pour iOS afin de simplifier la communication et le transfert des données, de sorte qu’un minimum de code natif est nécessaire pour activer une application web iOS.
+La synchronisation de contenu permet de diffuser intelligemment le contenu : seules les modifications de données depuis la dernière synchronisation des données réussie sont diffusées, ce qui réduit le temps nécessaire au transfert des données. Lors de la première exécution des données d&#39;une application, des modifications sont demandées depuis le 1er janvier 1970, alors que seules les données modifiées depuis la dernière synchronisation réussie sont demandées. AEM utilise une structure de communication client pour iOS afin de simplifier la communication et le transfert des données, de sorte qu’un minimum de code natif est nécessaire pour activer une application web iOS.
 
 Toutes les données transférées peuvent être extraites dans la même structure de répertoires. Aucune étape supplémentaire (par exemple, les contrôles de dépendance) n’est nécessaire lors de l’extraction des données. S’il existe iOS, toutes les données sont stockées dans un sous-dossier du dossier Documents de l’application iOS.
 

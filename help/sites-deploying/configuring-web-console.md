@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 discoiquuid: f934eb02-1f84-44f2-9f14-3f17250c9a90
 exl-id: bdfeaf85-e832-40c1-8769-7d027cdb021e
-source-git-commit: a17b25e55a0bf16a0df42a7ba4768503618a19e2
-workflow-type: ht
-source-wordcount: '724'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '721'
+ht-degree: 96%
 
 ---
 
@@ -48,11 +48,11 @@ L’onglet **Configuration** est accessible soit via :
 
 * Le menu déroulant :
 
-   **OSGi >**
+  **OSGi >**
 
 * L’URL ; par exemple :
 
-   `http://localhost:4502/system/console/configMgr`
+  `http://localhost:4502/system/console/configMgr`
 
 Une liste des configurations s’affiche : 
 
@@ -62,16 +62,16 @@ Il existe deux types de configurations disponibles à partir des listes déroula
 
 * **Configurations**
 
-    Vous permet de mettre à jour les configurations existantes. Elles possèdent une identité persistante (PID) et peuvent être :
+  Permet de mettre à jour les configurations existantes. Elles possèdent une identité persistante (PID) et peuvent être :
 
    * standard ou intégrales pour AEM. Elles sont nécessaires ; si elles sont supprimées, les valeurs sont renvoyées aux paramètres par défaut.
    * les instances créées à partir des configurations d’usine ; ces instances sont créées par l’utilisateur ou l’utilisatrice et la suppression supprime l’instance.
 
 * **Configurations d’usine**
 
-   Vous permettent de créer une instance de l’objet de la fonctionnalité requise.
+  Permet de créer une instance de l’objet de fonctionnalité requis.
 
-   Elles se verront attribuer une identité permanente, puis seront répertoriées dans les configurations de la liste déroulante.
+  Elles se verront attribuer une identité permanente, puis seront répertoriées dans les configurations de la liste déroulante.
 
 En sélectionnant une entrée des listes, vous pourrez voir les paramètres associés à cette configuration :
 
@@ -81,25 +81,25 @@ Vous pouvez mettre à jour les paramètres selon vos besoins et :
 
 * **Enregistrer**
 
-   Enregistrez les modifications apportées.
+  Enregistrez les modifications apportées.
 
-   Pour une configuration d’usine, cela crée une instance avec une identité permanente. La nouvelle instance est ensuite répertoriée sous Configurations.
+  Pour une configuration d’usine, cela crée une instance avec une identité permanente. La nouvelle instance est ensuite répertoriée sous Configurations.
 
 * **Réinitialiser**
 
-   Réinitialise les paramètres affichés sur l’écran pour revenir à ceux enregistrés en dernier.
+  Réinitialise les paramètres affichés sur l’écran pour revenir à ceux enregistrés en dernier.
 
 * **Supprimer**
 
-   Supprime la configuration actuelle. Si elle est standard, les paramètres sont renvoyés aux paramètres par défaut. Si elle est créée à partir d’une configuration d’usine, l’instance spécifique est supprimée.
+  Supprime la configuration actuelle. Si elle est standard, les paramètres sont renvoyés aux paramètres par défaut. Si elle est créée à partir d’une configuration d’usine, l’instance spécifique est supprimée.
 
 * **Dissocier**
 
-   Dissocie la configuration actuelle du lot.
+  Dissocie la configuration actuelle du lot.
 
 * **Annuler**
 
-   Annule toutes les modifications actuelles.
+  Annule toutes les modifications actuelles.
 
 ## Lots {#bundles}
 
@@ -107,11 +107,11 @@ L’onglet **Lots** correspond au mécanisme permettant d’installer les lots O
 
 * Le menu déroulant :
 
-   **OSGi >**
+  **OSGi >**
 
 * L’URL ; par exemple :
 
-   `http://localhost:4502/system/console/bundles`
+  `http://localhost:4502/system/console/bundles`
 
 Une liste de lots s’affiche :
 
@@ -121,33 +121,33 @@ En utilisant cet onglet vous pouvez :
 
 * **Installer ou mettre à jour**
 
-   Vous pouvez utiliser l’option **Parcourir** pour trouver le fichier contenant votre lot et spécifier s’il doit **commencer** immédiatement et à quel **niveau de départ**.
+  Vous pouvez utiliser l’option **Parcourir** pour trouver le fichier contenant votre lot et spécifier s’il doit **commencer** immédiatement et à quel **niveau de départ**.
 
 * **Recharger**
 
-   Actualise la liste affichée.
+  Actualise la liste affichée.
 
 * **Actualiser les packages**
 
-   Cela permettra de vérifier les références de tous les packages et de les actualiser au besoin.
+  Cela permettra de vérifier les références de tous les packages et de les actualiser au besoin.
 
-   Par exemple, après une mise à jour, l’ancienne et la nouvelle version peuvent toujours être exécutées en raison de références antérieures. Cette option permettra de vérifier et de déplacer toutes les références vers la nouvelle version, ce qui permettra d’arrêter l’ancienne version.
+  Par exemple, après une mise à jour, l’ancienne et la nouvelle version peuvent toujours être exécutées en raison de références antérieures. Cette option permettra de vérifier et de déplacer toutes les références vers la nouvelle version, ce qui permettra d’arrêter l’ancienne version.
 
 * **Démarrer**
 
-   Lance un lot en fonction du niveau initial spécifié.
+  Lance un lot en fonction du niveau initial spécifié.
 
 * **Arrêter**
 
-   Arrête le lot.
+  Arrête le lot.
 
 * **Désinstaller**
 
-   Permet de désinstaller le lot du système.
+  Permet de désinstaller le lot du système.
 
 * **Afficher le statut**
 
-   La liste indique le statut actuel du lot ; en cliquant sur le nom d’un lot spécifique, vous obtenez des informations supplémentaires.
+  La liste indique le statut actuel du lot ; en cliquant sur le nom d’un lot spécifique, vous obtenez des informations supplémentaires.
 
 >[!NOTE]
 >
@@ -155,15 +155,15 @@ En utilisant cet onglet vous pouvez :
 
 ## Composants {#components}
 
-L’onglet **Composants** vous permet d’activer et de désactiver divers composants. Il est accessible par les éléments suivants :
+La variable **Composants** vous permet d’activer et/ou de désactiver les différents composants. Il est accessible par les éléments suivants :
 
 * Le menu déroulant :
 
-   **Principal >**
+  **Principal >**
 
 * L’URL ; par exemple :
 
-   `http://localhost:4502/system/console/components`
+  `http://localhost:4502/system/console/components`
 
 Une liste de composants s’affiche. Plusieurs icônes sont disponibles pour vous permettre d’activer, de désactiver ou (le cas échéant) d’ouvrir les détails de la configuration pour un composant spécifique.
 

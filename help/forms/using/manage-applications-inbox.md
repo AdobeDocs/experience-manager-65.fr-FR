@@ -1,8 +1,8 @@
 ---
 title: Gestion des applications et des tâches Forms dans la boîte de réception AEM
 seo-title: Manage Forms applications and tasks in AEM Inbox
-description: La boîte de réception AEM vous permet de lancer des processus orientés formulaire via l’envoi d’applications et de tâches de gestion.
-seo-description: AEM Inbox allows you to launch Forms-centric workflows through submitting applications and manage tasks.
+description: AEM boîte de réception vous permet de lancer des processus Forms via l’envoi d’applications et la gestion des tâches.
+seo-description: AEM Inbox lets you launch Forms-centric workflows through submitting applications and manage tasks.
 uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
-workflow-type: ht
-source-wordcount: '1098'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1096'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ En outre, la boîte de réception AEM rassemble les notifications et les tâches
 
 L’interface utilisateur de la boîte de réception fournit la liste et les vues de calendrier pour afficher les tâches. Vous pouvez également configurer les paramètres d’affichage. Vous pouvez filtrer les tâches en fonction de divers paramètres. Pour plus d’informations sur la vue et les filtres, voir [Votre boîte de réception](/help/sites-authoring/inbox.md).
 
-En résumé, la boîte de réception vous permet de créer une nouvelle application et de gérer les tâches affectées.
+En résumé, la boîte de réception vous permet de créer une application et de gérer les tâches affectées.
 
 >[!NOTE]
 >
@@ -132,13 +132,13 @@ Une personne propriétaire de modèle de workflow ne peut pas afficher des élé
 
    * Créez les nœuds suivants dans CRX DE à `/oak:index/workflowDataLucene/indexRules/granite:InboxItem/properties` avec les propriétés respectives spécifiées dans le tableau suivant :
 
-      | Nœud | Propriété | Type |
-      |---|---|---|
-      | sharedWith | sharedWith | CHAÎNE |
-      | verrouillé | verrouillé | BOOLÉEN |
-      | renvoyé | renvoyé | BOOLÉEN |
-      | allowInboxSharing | allowInboxSharing | BOOLÉEN |
-      | allowExplicitSharing | allowExplicitSharing | BOOLÉEN |
+     | Nœud | Propriété | Type |
+     |---|---|---|
+     | sharedWith | sharedWith | CHAÎNE |
+     | verrouillé | verrouillé | BOOLÉEN |
+     | renvoyé | renvoyé | BOOLÉEN |
+     | allowInboxSharing | allowInboxSharing | BOOLÉEN |
+     | allowExplicitSharing | allowExplicitSharing | BOOLÉEN |
 
 
    * Déployez les index au moyen d’un package AEM. Vous pouvez utiliser un projet [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=fr) pour créer un package AEM déployable. Utilisez l’exemple de code suivant pour ajouter des index à un projet AEM Archetype :

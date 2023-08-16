@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1108'
-ht-degree: 51%
+source-wordcount: '1107'
+ht-degree: 56%
 
 ---
 
@@ -33,7 +33,7 @@ Pour publier votre email auprès du fournisseur de services de messagerie, vous 
 
 >[!NOTE]
 >
->Si vous mettez à jour les fournisseurs de messagerie, effectuez un test en ligne ou envoyez une newsletter, ces opérations échouent si la newsletter n’est pas publiée au préalable sur l’instance de publication ou si l’instance de publication n’est pas disponible. Veillez à publier votre newsletter et à ce que l’instance de publication soit en cours d’exécution.
+>Si vous mettez à jour les fournisseurs de messagerie, effectuez un test en ligne ou envoyez une newsletter. Ces opérations échouent si la newsletter n’est pas publiée au préalable sur l’instance de publication ou si l’instance de publication n’est pas disponible. Veillez à publier votre newsletter et à ce que l’instance de publication soit en cours d’exécution.
 
 ## Création d’un email {#creating-an-email}
 
@@ -109,7 +109,7 @@ Le composant **Outils de messagerie électronique** pour ExactTarget permet d’
 >
 >* Les URL renseignées dans les outils de messagerie sont remplacées (dans l’e-mail reçu) par leurs valeurs réelles seulement si l’e-mail est envoyé à l’aide de l’option **Envoi simple** ou **Envoi guidé**, mais pas **Envoi de test**.
 >
->* Deux des outils de messagerie sont requis : **Adresse postale physique (requise)** et **Centre de profils (requis)**. Lorsque le message électronique est publié sur ExactTarget, ces deux outils de messagerie sont ajoutés par défaut au bas de chaque message.
+>* Deux des outils de messagerie électronique sont requis : **Adresse postale physique (requise)** et **Centre de profils (requis)**. Lorsque le message électronique est publié sur ExactTarget, ces deux outils de messagerie sont ajoutés par défaut au bas de chaque message.
 >
 
 ### Ajout de l’outil Texte et personnalisation à votre email {#adding-text-and-personalization-tool-to-your-e-mail}
@@ -132,7 +132,7 @@ Pour appliquer la configuration de votre service de messagerie à une newsletter
 1. Créez une configuration de service de messagerie.
 1. Ouvrez votre e-mail ou newsletter.
 1. Ouvrez les paramètres de l’e-mail ou de la newsletter en cliquant sur **Paramètres** ou sur **Propriétés de page** dans le sidekick.
-1. Cliquez sur **Ajouter un service** in **Cloud Services** . La liste des services s’affiche. Sélectionnez la configuration requise, ou **ExactTarget** ou **Silverpop** : dans la liste déroulante.
+1. Cliquez sur **Ajouter un service** in **Cloud Service** . La liste des services s’affiche. Sélectionnez la configuration requise, ou **ExactTarget** ou **Silverpop** : dans la liste déroulante.
 
    ![chlimage_1-5](assets/chlimage_1-5a.jpeg)
 

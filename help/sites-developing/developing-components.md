@@ -12,10 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
-workflow-type: ht
-source-wordcount: '3456'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '3454'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ Votre composant est rendu dans le langage [HTML](https://www.w3schools.com/htmL/
 
 ### Utiliser le langage de modèle HTML {#using-the-html-template-language}
 
-Le [langage de modèle HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=fr) a été introduit avec AEM 6.0 et remplace JSP (JavaServer Pages) en tant que système de modèle côté serveur privilégié et recommandé pour HTML. Pour les développeurs et développeuses web qui souhaitent créer des sites eb d’entreprise robustes, le langage HTL permet d’améliorer la sécurité et l’efficacité du développement.
+Le [langage de modèle HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) a été introduit avec AEM 6.0 et remplace JSP (JavaServer Pages) en tant que système de modèle côté serveur privilégié et recommandé pour HTML. Pour les développeurs et développeuses web qui souhaitent créer des sites eb d’entreprise robustes, le langage HTL permet d’améliorer la sécurité et l’efficacité du développement.
 
 >[!NOTE]
 >
@@ -95,17 +95,17 @@ Le mécanisme permettant de séparer la logique de l’aspect aide à définir c
 
 ### Utilisation de Java {#using-java}
 
-[L’Use-API Java HTL permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée. ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=fr?lang=fr) Cela vous permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
+[L’Use-API Java HTL permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée. ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=fr) Cela vous permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
 
 ### Utiliser JavaScript {#using-javascript}
 
-[L’Use-API JavaScript HTL permet à un fichier HTL d’accéder au code d’assistance écrit en JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=fr). Cela permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
+[L’Use-API JavaScript HTL permet à un fichier HTL d’accéder au code d’assistance écrit en JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=fr). Vous pouvez ainsi utiliser du code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
 
 ### Utiliser les bibliothèques HTML côté client {#using-client-side-html-libraries}
 
 Les sites web modernes reposent largement sur un traitement côté client piloté par un code JavaScript et CSS complexe. Organiser et optimiser la diffusion de ce code est une opération qui peut se révéler complexe.
 
-Pour résoudre ce problème, AEM fournit des **dossiers de bibliothèques côté client** qui permettent de stocker le code côté client dans le référentiel, de le classer par catégorie et de définir quand et comment chaque catégorie de code doit être diffusée au client. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page Web finale pour charger le code correct.
+Pour résoudre ce problème, AEM fournit **Dossiers de bibliothèques côté client**, qui vous permet de stocker votre code côté client dans le référentiel, de l’organiser en catégories et de définir quand et comment chaque catégorie de code doit être diffusée au client. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page Web finale pour charger le code correct.
 
 Consultez [Utilisation de bibliothèques HTML côté client](/help/sites-developing/clientlibs.md) pour plus d’informations.
 
@@ -201,7 +201,6 @@ Pour consulter des exemples, voir :
 >* la session AEM Gems sur [Personnalisation des champs de boîte de dialogue](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=fr).
 >* l’exemple de code correspondant traité dans [Exemple de code - Comment personnaliser les champs de boîte de dialogue](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
-
 
 #### Créer un champ {#creating-a-new-field}
 
@@ -379,7 +378,6 @@ Ce comportement, et la relation ressource-à-composant requise, peuvent être co
    * Nom : `cq:authoring`
    * Type : `nt:unstructured`
 
-
 1. Sous cela, créez un nouveau nœud qui contiendra tous les mappages actif à composant :
 
    * Nom : `assetToComponentMapping`
@@ -396,27 +394,26 @@ Ce comportement, et la relation ressource-à-composant requise, peuvent être co
 
       * Type : `String`
       * Valeur : groupe auquel l’actif associé appartient, par exemple, `media`
+
    * `assetMimetype` :
 
       * Type : `String`
       * Valeur : type mime de l’actif associé, par exemple `image/*`
+
    * `droptarget` :
 
       * Type : `String`
       * Valeur : cible de dépôt, par exemple, `image`
+
    * `resourceType` :
 
       * Type : `String`
       * Valeur : ressource de composant associée, par exemple, `foundation/components/image`
+
    * `type` :
 
       * Type : `String`
       * Valeur : type, par exemple, `Images`
-
-
-
-
-
 
 Pour voir des exemples, reportez-vous à :
 
@@ -458,7 +455,7 @@ Lors de la migration d’un composant de l’IU classique vers un composant pouv
 
 * Les composants :
 
-   * migrent le code [ `cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) qui utilise des fonctions spécifiques à l’IU classique ;
+   * migrent le code [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code)  qui utilise des fonctions spécifiques à l’IU classique ;
    * Plugin RTE. Pour plus d’informations, consultez [Configuration de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md) ;
    * [migrent le code `cq:listener`](#migrating-cq-listener-code) qui utilise des fonctions spécifiques à l’IU classique.
 

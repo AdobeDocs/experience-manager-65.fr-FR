@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3335'
-ht-degree: 46%
+source-wordcount: '3333'
+ht-degree: 45%
 
 ---
 
 # Pages de destination{#landing-pages}
 
-La fonction landing pages permet d’importer rapidement et facilement une conception et un contenu directement dans une page AEM. Le code HTML et les ressources connexes préparés par un développeur web pourront être importés, en intégralité ou partiellement. Cette fonctionnalité est utile pour créer des landing pages marketing qui ne sont principales que pendant une durée limitée et qui doivent être créées rapidement.
+La fonction landing pages permet d’importer rapidement et facilement une conception et un contenu directement dans une page AEM. Le code HTML et les ressources connexes préparés par un développeur web pourront être importés, en intégralité ou partiellement. Cette fonctionnalité est utile pour créer des landing pages marketing qui ne sont actives que pendant une durée limitée et qui doivent être créées rapidement.
 
 Cette page décrit les éléments suivants :
 
@@ -86,7 +86,7 @@ Pour rendre des parties du HTML importées modifiables dans AEM, vous pouvez map
    * Lien de clic publicitaire
    * Lien graphique
 
-* Formulaire de piste CTA, pour capturer des informations sur les utilisateurs
+* Formulaire de piste CTA, pour capturer des informations sur l’utilisateur
 * Système de paragraphe (Parsys), pour permettre l’ajout de tout composant ou la conversion du composant ci-dessus.
 
 En outre, il est possible d’étendre cette fonctionnalité et de prendre en charge les composants personnalisés. Cette section décrit les composants en détail.
@@ -214,10 +214,10 @@ Bien que chacun des composants du formulaire de piste ait un objectif différent
 Lors de la configuration de l’un des composants de formulaire, les onglets suivants sont disponibles dans la boîte de dialogue :
 
 * **Titre et texte**
-Ici, vous devez spécifier les informations de base, telles que le titre du composant et tout texte d’accompagnement. Le cas échéant, il vous permet également de définir d’autres informations essentielles ; par exemple, s’il s’agit d’un champ à sélection multiple ou encore les différents éléments pouvant être sélectionnés.
+Ici, vous devez spécifier les informations de base, telles que le titre du composant et tout texte d’accompagnement. Le cas échéant, il vous permet également de définir d’autres informations clés, telles que si le champ peut être sélectionné plusieurs fois et si des éléments peuvent être sélectionnés.
 
 * **Valeurs initiales**
-Permet d’indiquer une valeur par défaut.
+Permet de spécifier une valeur par défaut.
 
 * **Contraintes**
 Permet d’indiquer si un champ est obligatoire et les contraintes qui lui sont appliquées (doit être numérique, par exemple).
@@ -286,9 +286,9 @@ Deux onglets sont disponibles pour la configuration, **Formulaire** et **Avancé
 **Options de publication** Les options de publication suivantes sont disponibles :
 
 * Créer un prospect
-* Service de messagerie électronique : Créer un abonné et l’ajouter à la liste : à utiliser si vous utilisez un fournisseur de services de messagerie tel qu’ExactTarget.
-* Service de messagerie électronique : Envoyer un message de répondeur automatique : à utiliser si vous utilisez un fournisseur de services de messagerie tel qu’ExactTarget.
-* Service de messagerie électronique : Désabonner l’utilisateur de la liste : à utiliser si vous utilisez un fournisseur de services de messagerie tel qu’ExactTarget.
+* Service de messagerie électronique : créer un abonné et l’ajouter à la liste. Utilisez cette option si vous utilisez un fournisseur de services de messagerie tel qu’ExactTarget.
+* Service de messagerie électronique : envoyer un message de répondeur automatique. Utilisez cette option si vous utilisez un fournisseur de services de messagerie tel qu’ExactTarget.
+* Service de messagerie électronique : désabonner l’utilisateur de la liste. Utilisez cette option si vous utilisez un fournisseur de services de messagerie tel qu’ExactTarget.
 * Désabonner l’utilisateur
 
 **L’identifiant de formulaire** L’identifiant de formulaire d’un prospect l’identifie de façon unique. Utilisez cet identifiant si plusieurs formulaires figurent sur une seule page ; assurez-vous qu’ils présentent des identifiants différents.
@@ -378,7 +378,7 @@ Une fois la page d’importateur créée, vous pouvez y importer un module de co
 
 En supposant que le module de conception soit prêt, les étapes suivantes décrivent comment importer le module de conception sur une page d’importateur.
 
-1. Ouvrez la page d’importateur que vous avez [créé précédemment](#creatingablankcanvaspage).
+1. Ouvrez la page d’importateur que vous utilisez. [créé précédemment](#creatingablankcanvaspage).
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
@@ -393,7 +393,7 @@ En supposant que le module de conception soit prêt, les étapes suivantes décr
 
 >[!NOTE]
 >
->Si vous rencontrez des problèmes lors de l’importation du module de conception, reportez-vous à la section [Dépannage](/help/sites-administering/extending-the-design-importer-for-landingpages.md#troubleshooting).
+>Si vous rencontrez des problèmes lors de l’importation du module de conception, voir [Dépannage](/help/sites-administering/extending-the-design-importer-for-landingpages.md#troubleshooting).
 
 ## Utilisation des landing pages {#working-with-landing-pages}
 
@@ -449,7 +449,7 @@ Pour ajouter des composants sur la page d’entrée, faites-les glisser et dépo
 
 >[!NOTE]
 >
->Si un composant de la page d’entrée ne peut pas être modifié, vous devez réimporter le fichier zip après [modification du fichier de HTML.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Cela signifie que pendant l’importation, les parties non modifiables n’ont pas été converties en composants AEM.
+>Si un composant de la landing page ne peut pas être modifié, vous devez réimporter le fichier zip après [modification du fichier de HTML.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Cela signifie que pendant l’importation, les parties non modifiables n’ont pas été converties en composants AEM.
 
 ### Supprimer une landing page {#deleting-a-landing-page}
 

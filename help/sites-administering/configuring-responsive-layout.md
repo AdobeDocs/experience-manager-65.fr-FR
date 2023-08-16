@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
-workflow-type: ht
-source-wordcount: '1288'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1285'
+ht-degree: 97%
 
 ---
 
@@ -30,11 +30,11 @@ AEM effectue une mise en page réactive de vos pages en combinant plusieurs méc
 
 * Composant [**Conteneur de mises en page**](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
 
-   Ce composant fournit un système de paragraphes/grille qui permet d’ajouter et de positionner des composants dans une grille réactive. Il peut être utilisé comme système de paragraphes (parsys) par défaut pour votre page et mis à la disposition des créateurs dans l’explorateur de composants.
+  Ce composant fournit un système de paragraphes/grille qui permet d’ajouter et de positionner des composants dans une grille réactive. Il peut être utilisé comme système de paragraphes (parsys) par défaut pour votre page et mis à la disposition des créateurs dans l’explorateur de composants.
 
    * Le composant **Conteneur de dispositions** par défaut est défini sous :
 
-      /libs/wcm/foundation/components/responsivegrid
+     /libs/wcm/foundation/components/responsivegrid
 
    * Vous pouvez définir des conteneurs de mise en page en tant que :
 
@@ -42,11 +42,10 @@ AEM effectue une mise en page réactive de vos pages en combinant plusieurs méc
       * système de paragraphes par défaut de la page ;
       * les deux.
 
-         Le conteneur de dispositions peut être utilisé de manière standard pour la page, tout en permettant à l’utilisateur d’y ajouter d’autres conteneurs de mises en page, par exemple, pour contrôler les colonnes.
+        Le conteneur de dispositions peut être utilisé de manière standard pour la page, tout en permettant à l’utilisateur d’y ajouter d’autres conteneurs de mises en page, par exemple, pour contrôler les colonnes.
 
 * **[Mode Disposition](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-Une fois que le conteneur de disposition est positionné sur la page, vous pouvez utiliser la 
-**Disposition** pour positionner le contenu dans la grille réactive.
+Une fois que le conteneur de disposition est positionné sur la page, vous pouvez utiliser la **Disposition** pour positionner le contenu dans la grille réactive.
 
 * [**Émulateur**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 Vous pouvez ainsi créer et modifier des sites web réactifs qui réorganisent la mise en page en fonction de la taille de l’appareil ou de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur ou l’utilisatrice peut alors voir comment le contenu est rendu à l’aide de l’émulateur.
@@ -68,7 +67,7 @@ Grâce à ces mécanismes de grille réactive, vous pouvez :
 
 ## Configuration de l’émulateur en responsive design {#configuring-the-responsive-emulator}
 
-Ces tâches vous permettent d’afficher l’**émulateur** en responsive design sur votre site.
+Cette tâche vous permet d’afficher la réponse **Émulateur** sur votre site.
 
 ### Enregistrer vos composants de page pour l’émulation {#register-your-page-components-for-emulation}
 
@@ -80,7 +79,7 @@ Pour spécifier les groupes d’appareils qui apparaissent dans la liste Périph
 
 ### Lier votre site aux groupes d’appareils spécifiés {#link-your-site-to-the-specified-device-groups}
 
-Pour inclure l’émulateur, liez votre site aux groupes d’appareils. Consultez [Ajout de la liste des périphériques](/help/sites-developing/responsive.md#adding-the-devices-list) (pour l’interface utilisateur classique et l’interface utilisateur optimisée pour les écrans tactiles).
+Pour inclure l’émulateur, liez votre site aux groupes d’appareils. Consultez [Ajout de la liste des appareils](/help/sites-developing/responsive.md#adding-the-devices-list) (pour l’interface utilisateur classique et l’interface utilisateur optimisée pour les écrans tactiles).
 
 ## Activation du mode Disposition pour votre site {#activate-layout-mode-for-your-site}
 
@@ -188,15 +187,15 @@ Les deux exemples ci-dessous illustrent la définition :
 
 * **HTL :**
 
-   ```xml
-   <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
-   ```
+  ```xml
+  <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
+  ```
 
 * **JSP :**
 
-   ```
-   <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
-   ```
+  ```
+  <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
+  ```
 
 ### Inclure le fichier CSS réactif {#include-the-responsive-css}
 
@@ -282,11 +281,11 @@ Pour permettre aux créateurs d’ajouter d’autres grilles responsive dans des
 
 * **Environnement de création**
 
-   Utilisez le [Mode de conception](/help/sites-authoring/default-components-designmode.md) pour activer le composant **Conteneur de mise en page** pour une page.
+  Utilisez le [Mode de conception](/help/sites-authoring/default-components-designmode.md) pour activer le composant **Conteneur de mise en page** pour une page.
 
 * **Définition du composant**
 
-   Lors de la définition du composant, utilisez `allowedComponent` ou une inclusion statique.
+  Lors de la définition du composant, utilisez `allowedComponent` ou une inclusion statique.
 
 ### Configurer la grille du Conteneur de mise en page {#configure-the-grid-of-the-layout-container}
 
@@ -309,6 +308,7 @@ Vous pouvez configurer le nombre de colonnes disponibles pour chaque instance sp
    * Nombre de colonnes disponibles :
 
       * `columns="{String}8"`
+
    * Composants qui peuvent être ajoutés au composant actif :
 
       * `components="[/libs/wcm/foundation/components/responsivegrid, ...`

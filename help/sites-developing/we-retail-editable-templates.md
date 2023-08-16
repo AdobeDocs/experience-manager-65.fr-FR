@@ -10,66 +10,66 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: ht
-source-wordcount: '481'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '479'
+ht-degree: 30%
 
 ---
 
 # Test des modèles modifiables dans We.Retail{#trying-out-editable-templates-in-we-retail}
 
-Grâce aux modèles modifiables, les tâches de création et de gestion des modèles ne sont plus réservées aux seuls développeurs. Un type d’utilisateur expérimenté, appelé créateur (ou auteur) de modèles, peut également créer des modèles. L’équipe de développement doit encore configurer l’environnement, créer des bibliothèques clientes et créer les composants à utiliser. Cependant, une fois ces bases en place, l’auteur de modèles peut créer et configurer des modèles sans projet de développement.
+Avec les modèles modifiables, la création et la gestion des modèles ne sont plus une tâche réservée aux développeurs. Un type d’utilisateur avancé, appelé auteur de modèles, peut désormais créer des modèles. L’équipe de développement doit encore configurer l’environnement, créer des bibliothèques clientes et créer les composants à utiliser. Cependant, une fois ces bases en place, l’auteur de modèles peut créer et configurer des modèles sans projet de développement.
 
-Toutes les pages We.Retail reposent sur des modèles modifiables, ce qui permet aux non-développeurs d’adapter et de personnaliser les modèles.
+Toutes les pages de We.Retail sont basées sur des modèles modifiables, ce qui permet aux non-développeurs d’adapter et de personnaliser les modèles.
 
-## Test {#trying-it-out}
+## Essayer de le faire {#trying-it-out}
 
-1. Modifiez la page Équipement de la branche principale de langue.
+1. Modifiez la page Matériel de la branche principale de langue.
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
-1. Notez que le sélecteur de mode ne propose plus de mode Conception. Toutes les pages de We.Retail reposent sur des modèles modifiables. Pour modifier la conception de ces modèles, vous devez recourir à l’éditeur de modèles.
+1. Notez que le sélecteur de mode ne propose plus de mode Conception. Toutes les pages de We.Retail sont basées sur des modèles modifiables et pour modifier la conception de modèles modifiables, elles doivent être modifiées dans l’éditeur de modèles.
 1. Dans le menu **Informations sur la page**, sélectionnez **Éditer le modèle**.
-1. Vous modifiez à présent le modèle « Page de modèle ».
+1. Vous êtes en train de modifier le modèle Page principale.
 
-   Le mode de structure de la page vous permet de modifier la structure du modèle. Cela comprend, par exemple, les composants qui sont autorisés dans le conteneur de mises en page.
+   Le mode Structure de la page permet de modifier la structure du modèle. Cela inclut, par exemple, les composants autorisés dans le conteneur de mises en page.
 
    ![chlimage_1-138](assets/chlimage_1-138.png)
 
-1. Configurez les stratégies du conteneur de mises en page pour définir les composant autorisés dans le conteneur.
+1. Configurez les stratégies du conteneur de mises en page pour définir les composants autorisés dans le conteneur.
 
-   Les stratégies correspondent aux configurations de conception.
+   Les stratégies sont l’équivalent des configurations de conception.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 
-1. Dans la boîte de dialogue de conception du conteneur de mises en page, vous pouvez effectuer les opérations suivantes :
+1. Dans la boîte de dialogue de conception du conteneur de mises en page, vous pouvez :
 
-   * Sélectionner une stratégie existante ou en créer une nouvelle pour le conteneur.
-   * Sélectionner les composants autorisés dans le conteneur.
-   * Définir les composants par défaut à placer lorsqu’une ressource est déplacée dans le conteneur.
+   * Sélectionner une stratégie existante ou créer une nouvelle stratégie pour le conteneur
+   * Sélectionner les composants autorisés dans le conteneur
+   * Définition des composants par défaut à placer lorsqu’une ressource est glissée sur le conteneur
 
    ![chlimage_1-140](assets/chlimage_1-140.png)
 
 1. De retour dans l’éditeur de modèles, vous pouvez modifier la stratégie du composant de texte dans le conteneur de mises en page.
 
-   Vous avez ainsi la possibilité d’effectuer les opérations suivantes :
+   Vous pouvez ainsi :
 
-   * Sélectionner une stratégie existante ou en créer une nouvelle pour le conteneur.
-   * Définir les fonctionnalités dont dispose le créateur de la page lorsqu’il utilise ce composant :
+   * Sélectionner une stratégie existante ou créer une nouvelle stratégie pour le conteneur
+   * Définissez les fonctionnalités disponibles pour l’auteur de page lors de l’utilisation de ce composant, telles que
 
       * Sources de collage autorisées
       * Options de mise en forme
       * Styles de paragraphe autorisés
       * Caractères spéciaux autorisés
 
-   De nombreux composants basés sur les composants principaux permettent de configurer des options au niveau du composant par le biais de modèles modifiables, rendant ainsi inutile toute personnalisation de la part des développeurs.
+   De nombreux composants basés sur les composants principaux permettent de configurer des options au niveau du composant par le biais de modèles modifiables, ce qui évite aux développeurs de devoir les personnaliser.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. De retour dans l’éditeur de modèles, vous pouvez utiliser le sélecteur de mode pour passer en mode **Contenu initial** et définir ainsi le contenu requis sur la page.
+1. De retour dans l’éditeur de modèles, vous pouvez utiliser le sélecteur de mode pour passer à **Contenu initial** pour définir le contenu requis sur la page.
 
-   Le mode **Disposition** peut être utilisé tel quel sur une page normale pour définir la mise en page du modèle.
+   **Disposition** Le mode peut être utilisé tel quel sur une page normale pour définir la mise en page du modèle.
 
 ## Informations supplémentaires {#more-information}
 

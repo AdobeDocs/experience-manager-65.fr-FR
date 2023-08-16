@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4871'
-ht-degree: 64%
+source-wordcount: '4864'
+ht-degree: 63%
 
 ---
 
@@ -24,12 +24,12 @@ Lors de la création d&#39;une page, vous devez sélectionner un modèle qui ser
 
 Grâce à **Éditeur de modèles**, la création et la maintenance de modèles ne sont plus des tâches réservées aux développeurs. Un type d’utilisateur avancé, appelé **auteur de modèles**, peut également être impliqué. Les développeurs doivent encore configurer l’environnement, créer des bibliothèques clientes et créer les composants à utiliser. Cependant, une fois ces bases en place, l’**auteur de modèles** peut créer et configurer des modèles sans projet de développement.
 
-Le **Console de modèles** permet aux auteurs de modèles de :
+La variable **Console de modèles** permet aux auteurs de modèles de :
 
 * de créer ou de copier un modèle ;
-* Gérez le cycle de vie du modèle.
+* Gérer le cycle de vie du modèle.
 
-Le **Éditeur de modèles** permet aux auteurs de modèles de :
+La variable **Éditeur de modèles** permet aux auteurs de modèles de :
 
 * Ajoutez des composants au modèle et positionnez-les sur une grille réactive.
 * de préconfigurer les composants ;
@@ -81,11 +81,11 @@ La création d’un modèle à l’aide de la **console Modèles** et de l’**�
 
       * Ce groupe affecte les privilèges et les autorisations nécessaires.
 
-   * Peut configurer l’utilisation de composants et d’autres détails de haut niveau qui nécessitent :
+   * Peut configurer l’utilisation de composants et d’autres détails de haut niveau qui nécessitent les éléments suivants :
 
       * Quelques connaissances techniques
 
-         * Par exemple, l’utilisation de modèles lors de la définition de chemins d’accès.
+         * Par exemple, l’utilisation de modèles lors de la définition de chemins.
 
       * Des informations techniques provenant du développeur.
 
@@ -116,7 +116,7 @@ Par définition, la console de modèles et l’éditeur de modèles permettent u
 
 ### Utilisation d’un modèle pour créer une page {#using-a-template-to-create-a-page}
 
-Lors de l’utilisation d’un modèle pour [créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page) il n’existe aucune différence visible et aucune indication entre les modèles statiques et modifiables. Pour la création de pages, le processus est transparent.
+Lorsque vous utilisez un modèle pour [créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page) il n’existe aucune différence visible et aucune indication entre les modèles statiques et modifiables. Pour la création de pages, le processus est transparent.
 
 ## Création et gestion des modèles {#creating-and-managing-templates}
 
@@ -192,7 +192,7 @@ Un modèle peut avoir les propriétés suivantes :
    * Image à utiliser comme [miniature du modèle](/help/sites-authoring/templates.md#template-thumbnail-image) pour faciliter la sélection, par exemple dans l’assistant Créer une page .
 
       * Peut être chargé
-      * Peut être généré en fonction du contenu du modèle.
+      * Peuvent être générées en fonction du contenu du modèle
 
 * Titre
 
@@ -265,7 +265,7 @@ Un modèle peut être rendu disponible ou indisponible pour certaines branches d
 
 1. Ouvrez l’onglet **Avancé**.
 
-1. Sous **Paramètres des modèles** use **Ajouter un champ** pour spécifier les chemins d’accès à votre ou vos modèles.
+1. Sous **Paramètres des modèles** use **Ajouter un champ** pour spécifier les chemins d’accès à vos modèles.
 
    Le chemin d’accès peut être explicite ou utiliser des modèles. Par exemple :
 
@@ -298,7 +298,7 @@ Dans la mesure où il est référencé lors du rendu d’une page, le modèle (t
 
 ## Modification des modèles   – Créateurs de modèles {#editing-templates-template-authors}
 
-Lorsque vous créez ou modifiez un modèle, vous pouvez définir différents aspects. La modification de modèles est similaire à la création de pages.
+Lors de la création ou de la modification d’un modèle, vous pouvez définir différents aspects. La modification de modèles est similaire à la création de pages.
 
 Les aspects suivants d&#39;un modèle peuvent être édités :
 
@@ -306,7 +306,7 @@ Les aspects suivants d&#39;un modèle peuvent être édités :
 
   Les composants ajoutés ici ne peuvent pas être déplacés/supprimés des pages créées par les auteurs de pages. Si vous souhaitez que les créateurs de pages puissent ajouter et supprimer des composants aux pages créées, vous devez ajouter un système de paragraphes dans le modèle.
 
-  Lorsque les composants sont verrouillés, vous pouvez ajouter du contenu qui ne peut pas être modifié par les auteurs de pages. Vous pouvez déverrouiller des composants pour définir [Contenu initial](#editingatemplateinitialcontent).
+  Lorsque les composants sont verrouillés, vous pouvez ajouter du contenu qui ne peut pas être modifié par les auteurs de pages. Vous pouvez déverrouiller des composants pour les permettre de définir [Contenu initial](#editingatemplateinitialcontent).
 
   >[!NOTE]
   >
@@ -334,7 +334,7 @@ Les aspects suivants d&#39;un modèle peuvent être édités :
 
   Pour plus d’informations, voir la [documentation sur le système de style](/help/sites-authoring/style-system.md).
 
-Le sélecteur **Mode** de la barre d’outils permet de sélectionner et de modifier l’aspect approprié du modèle :
+La variable **Mode** dans la barre d’outils, le sélecteur permet de sélectionner et d’éditer l’aspect approprié du modèle :
 
 * [Structure](#editingatemplatestructure)
 * [Contenu initial](#editingatemplateinitialcontent)
@@ -342,7 +342,7 @@ Le sélecteur **Mode** de la barre d’outils permet de sélectionner et de modi
 
 ![chlimage_1-133](assets/chlimage_1-133.png)
 
-Tandis que l’option **Politique de page** du menu **Informations sur la page**, vous permet de [sélectionner les politiques de page désirées](#editingatemplatepagepolicies) :
+Lorsque la variable **Stratégie de page** sur l’option **Informations sur la page** vous permet de [sélectionnez les stratégies de page requises.](#editingatemplatepagepolicies):
 
 ![screen_shot_2018-03-23at120604](assets/screen_shot_2018-03-23at120604.png)
 
@@ -356,7 +356,7 @@ En mode **Structure**, vous définissez les composants et le contenu de votre mo
 
 * Les composants définis dans la structure du modèle ne peuvent pas être déplacés sur une page créée ni supprimés des pages créées.
 * Si vous souhaitez que les personnes créant les pages puissent ajouter et supprimer des composants, ajoutez un système de paragraphes au modèle.
-* Les composants peuvent être déverrouillés (et reverrouillés) pour que vous puissiez définir le [contenu initial](#editingatemplateinitialcontent).
+* Les composants peuvent être déverrouillés et reverrouillés pour vous permettre de définir [contenu initial](#editingatemplateinitialcontent).
 
 * Les politiques de conception des composants et de la page sont définies.
 
@@ -395,7 +395,7 @@ Dans **Structure** du mode de l’éditeur de modèles :
 
 * **Actions des composants**
 
-  Agissez sur les composants une fois qu’ils ont été ajoutés au modèle. Chaque instance individuelle dispose d’une barre d’outils qui vous permet d’accéder aux actions disponibles. La barre d’outils dépend du type de composant.
+  Agissez sur les composants une fois qu’ils ont été ajoutés au modèle. Chaque instance individuelle dispose d’une barre d’outils qui permet d’accéder aux actions disponibles. La barre d’outils dépend du type de composant.
 
   ![screen_shot_2018-03-23at120909](assets/screen_shot_2018-03-23at120909.png)
 
@@ -417,7 +417,7 @@ Dans **Structure** du mode de l’éditeur de modèles :
 
   Les stratégies de contenu (ou de conception) définissent les propriétés de conception d’un composant. Par exemple, les composants disponibles ou les dimensions minimales/maximales. Elles s’appliquent au modèle (et aux pages créées avec le modèle).
 
-  Créez une politique de contenu ou sélectionnez-en une existante pour un composant. Cela permet de définir les détails de la conception.
+  Créez une politique de contenu ou sélectionnez-en une existante pour un composant. Vous pouvez ainsi définir les détails de la conception.
 
   ![chlimage_1-135](assets/chlimage_1-135.png) ![chlimage_1-136](assets/chlimage_1-136.png)
 
@@ -479,7 +479,7 @@ Dans **Structure** du mode de l’éditeur de modèles :
 
   *Fonctionnalités*
 
-  L’onglet **Fonctions** permet d’activer ou de désactiver des fonctions supplémentaires du composant.
+  La variable **Fonctionnalités** vous permet d’activer ou de désactiver des fonctionnalités supplémentaires du composant.
 
   Par exemple, pour un composant d’image, vous pouvez définir les proportions de recadrage, les orientations d’image autorisées et indiquer si les chargements sont autorisés.
 
@@ -624,7 +624,7 @@ La conception de la page, y compris les bibliothèques côté client requises et
 Pour accéder à la boîte de dialogue **Conception de page** :
 
 1. Dans l’**éditeur de modèles**, sélectionnez **Informations sur la page** dans la barre d’outils, puis **Conception de page** pour ouvrir la boîte de dialogue.
-1. Le **Conception de page** La boîte de dialogue s’ouvre et est divisée en deux sections :
+1. La variable **Conception de page** La boîte de dialogue s’ouvre et est divisée en deux sections :
 
    * La moitié gauche définit la variable [stratégies de page](/help/sites-authoring/templates.md#page-policies)
    * La moitié droite définit la variable [propriétés de page](/help/sites-authoring/templates.md#page-properties)

@@ -7,9 +7,9 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
-source-git-commit: 578e9eb45ab996df841cb22e89d45fadfe90592b
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3950'
+source-wordcount: '3949'
 ht-degree: 98%
 
 ---
@@ -71,7 +71,7 @@ Les différents rôles impliqués pour configurer et utiliser la fonctionnalité
 
 ### Architecture des ressources connectées {#connected-assets-architecture}
 
-Experience Manager vous permet de connecter un déploiement DAM à distance en tant que source à plusieurs déploiements [!DNL Sites] Experience Manager. Toutefois, vous pouvez connecter un déploiement [!DNL Sites] à un seul déploiement DAM à distance.
+Experience Manager vous permet de connecter un déploiement DAM distant en tant que source à plusieurs Experience Manager. [!DNL Sites] déploiements. Toutefois, vous pouvez connecter un déploiement [!DNL Sites] à un seul déploiement DAM à distance.
 
 Évaluez le nombre optimal d’instances Sites à connecter à un déploiement DAM distant. Adobe recommande de connecter progressivement les instances Sites au déploiement et de tester l’absence d’impact sur les performances au niveau de la gestion des actifs numériques distants, car chaque instance Sites connectée contribue au trafic de données sur la gestion des actifs numériques distants.
 

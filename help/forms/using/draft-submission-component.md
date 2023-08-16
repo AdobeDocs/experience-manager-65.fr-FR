@@ -1,7 +1,7 @@
 ---
 title: Composant Drafts & Submissions
 seo-title: Drafts and submissions component
-description: Le composant Drafts & Submissions dresse la liste de tous les formulaires qui sont à l’état de brouillon et des formulaires déjà envoyés. Vous pouvez personnaliser l’aspect et le style du composant
+description: Le composant Drafts & Submissions répertorie les formulaires à l’état de brouillon et qui sont déjà envoyés. Vous pouvez personnaliser l’aspect et le style du composant.
 seo-description: Drafts and submissions component lists forms that are in the draft state and are already submitted. You can customize appearance and style of the component.
 uuid: 42c205b5-3141-4b80-85d9-dad921e223a2
 content-type: reference
@@ -10,28 +10,28 @@ topic-tags: publish
 discoiquuid: ad71b423-02e1-4476-9c7c-f832cea6b0a6
 docset: aem65
 exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '747'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '745'
+ht-degree: 62%
 
 ---
 
 # Composant Drafts &amp; Submissions{#drafts-and-submissions-component}
 
-Le composant Drafts &amp; Submissions dresse la liste de tous les formulaires qui sont à l’état de brouillon et des formulaires déjà envoyés. Le composant dispose de sections distinctes (onglets) pour les brouillons et les formulaires envoyés. Les utilisateurs peuvent afficher leurs brouillons et leurs formulaires envoyés uniquement.
+Le composant Drafts &amp; Submissions répertorie tous les formulaires à l’état de brouillon et les formulaires déjà envoyés. Le composant comporte des sections distinctes (onglets) pour les brouillons et les formulaires envoyés. Les utilisateurs peuvent afficher uniquement leurs brouillons et leurs formulaires envoyés.
 
 ## Configuration du composant {#configuring-the-component}
 
-Le composant Drafts &amp; Submissions comporte deux onglets : Brouillons et envois.
+Le composant Drafts &amp; Submissions comporte deux onglets : Brouillons et envois.
 
 Pour autoriser un envoi de formulaire adaptatif à apparaître dans l’onglet des envois, définissez **Action d’envoi** sur **[Action d’envoi du Portail Formulaires](../../forms/using/configuring-submit-actions.md). Sinon,** activez l’option Action d’envoi du Portail Formulaires. Lorsqu’un utilisateur envoie le formulaire, ce formulaire est ajouté à l’onglet des envois.
 
-La fonctionnalité de brouillons est activée immédiatement. Lorsqu’un utilisateur clique sur **Enregistrer** sur un formulaire adaptatif, le formulaire est ajouté à l’onglet des brouillons.
+La fonctionnalité de brouillons est activée prête à l’emploi. Lorsqu’un utilisateur clique **Enregistrer** sur un formulaire adaptatif, le formulaire est ajouté à l’onglet brouillons.
 
-Effectuez les étapes suivantes pour ajouter et configurer le composant Drafts &amp; Submissions :
+Effectuez les étapes suivantes pour ajouter et configurer un composant Drafts &amp; Submissions :
 
-1. Faites glisser le composant **Brouillons et envois** sous la catégorie Document Services dans le navigateur de composants sur votre page.
+1. Faites glisser et déposez le **Brouillons et envois** sous la catégorie Document Services dans l’explorateur de composants sur votre page.
 1. Cliquez sur le composant, puis sur ![settings_icon](assets/settings_icon.png) pour ouvrir la boîte de dialogue Modifier du composant.
 
    ![Composant Drafts &amp; Submissions](assets/drafts-submissions-edit.png)
@@ -48,7 +48,7 @@ Effectuez les étapes suivantes pour ajouter et configurer le composant Drafts &
   <tr>
    <td>Général</td>
    <td>Résultat total</td>
-   <td>Spécifie le nombre maximal de résultats à afficher. Si le nombre de résultats augmente la limite de résultat total, un lien <strong>Plus</strong> apparaît au bas du composant. Pour afficher tous les formulaires, cliquez sur <strong>Plus. </strong> </td>
+   <td>Indique le nombre maximal de résultats à afficher. Si le nombre de résultats augmente la limite du résultat total, une <strong>Plus </strong>s’affiche au bas du composant. Pour afficher tous les formulaires, cliquez sur <strong>Plus. </strong> </td>
   </tr>
   <tr>
    <td> </td>
@@ -62,28 +62,28 @@ Effectuez les étapes suivantes pour ajouter et configurer le composant Drafts &
   </tr>
   <tr>
    <td> </td>
-   <td>Options d’affichage :</td>
+   <td>Options d’affichage</td>
    <td><p>Spécifie les onglets à afficher. Vous pouvez choisir d’afficher des brouillons de formulaires, des formulaires envoyés, ou les deux. </p> <p><strong>Remarque</strong> :<em> Pour les <strong>Options d’affichage</strong>, si vous sélectionnez une option autre que <strong>Les deux</strong>, l’option du champ <strong>Tabulation par défaut</strong> n’est pas utilisée.</em></p> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Tabulation par défaut</td>
-   <td>Spécifie l’onglet à afficher au chargement de la page du portail de formulaires. Vous pouvez choisir entre <strong>l’onglet Brouillons de formulaires</strong> et <strong>l’onglet Formulaires envoyés</strong>.</td>
+   <td>Onglet par défaut</td>
+   <td>Indique l’onglet à afficher au chargement de la page Forms Portal. Vous pouvez choisir entre <strong>l’onglet Brouillons de formulaires</strong> et <strong>l’onglet Formulaires envoyés</strong>.</td>
   </tr>
   <tr>
-   <td>Configuration de l’onglet Brouillons de formulaires</td>
+   <td>Configuration de l’onglet Brouillons de Forms</td>
    <td>Titre personnalisé</td>
-   <td>Spécifie le titre de l’onglet <strong>Brouillons de formulaires</strong>. La valeur par défaut est <strong>Brouillons de formulaires.</strong></td>
+   <td>Indique le titre de la propriété <strong>Brouillon de Forms</strong> . La valeur par défaut est <strong>Version préliminaire de Forms.</strong></td>
   </tr>
   <tr>
    <td> </td>
    <td>Modèle de disposition</td>
-   <td>Spécifie la mise en page à utiliser pour la liste Brouillons de formulaires.</td>
+   <td>Spécifie la mise en page à utiliser pour la liste Brouillons de Forms.</td>
   </tr>
   <tr>
-   <td>Configuration de l’onglet Formulaires envoyés</td>
+   <td>Configuration de l’onglet Forms envoyée</td>
    <td>Titre personnalisé </td>
-   <td>Spécifie le titre de l’onglet <strong>Formulaires envoyés</strong>. La valeur par défaut est <strong>Formulaires envoyées.</strong></td>
+   <td>Indique le titre de la propriété <strong>Submitted Forms </strong>. La valeur par défaut est <strong>Forms envoyée.</strong></td>
   </tr>
   <tr>
    <td> </td>
@@ -97,7 +97,7 @@ Effectuez les étapes suivantes pour ajouter et configurer le composant Drafts &
 
 Lorsque vous utilisez l’action d’envoi Forms Portal ou activez les données de stockage dans l’option de portail de formulaires dans un formulaire adaptatif, les données du formulaire sont stockées dans le référentiel AEM. Dans un environnement de production, il est recommandé de ne pas stocker des données de formulaire de brouillon ou envoyées dans le référentiel AEM. Au contraire, vous devez intégrer le composant de brouillons et d’envoi à un stockage sécurisé comme la base de données d’entreprise pour stocker des brouillons et des données de formulaires envoyés.
 
-Le portail Formulaires vous permet de stocker des données dans un référentiel AEM local ou distant ou dans une base de données. AEM Forms vous permet de personnaliser l’implémentation du stockage des données utilisateur pour les brouillons et les envois. Vous pouvez remplacer les méthodes par défaut pour spécifier la manière dont les données de brouillon et d’envoi sont stockées dans un espace de stockage de votre choix. Vous pouvez, par exemple, stocker les données dans un entrepôt de données implémenté au sein de votre entreprise.
+Le portail Forms permet de stocker des données dans un référentiel d’AEM local, un référentiel AEM distant ou dans une base de données. AEM Forms vous permet de personnaliser l’implémentation du stockage des données utilisateur pour les brouillons et les envois. Vous pouvez remplacer les méthodes par défaut pour spécifier la manière dont les données de brouillon et d’envoi sont stockées dans un espace de stockage de votre choix. Vous pouvez, par exemple, stocker les données dans un entrepôt de données implémenté au sein de votre entreprise.
 
 Le portail Formulaires fournit des services prêts à l’emploi (API) pour stocker des données sur le référentiel crx d’instances de publication AEM Forms locales et distantes. Vous pouvez remplacer les implémentations par défaut, décrites dans l’artickle [Configurer les services de stockage pour les brouillons et les envois](/help/forms/using/configuring-draft-submission-storage.md), par des implémentations personnalisées. Pour plus d’informations sur les méthodes requises dans le cadre d’une implémentation personnalisée visant à stocker du contenu dans un emplacement sécurisé, consultez la section [Personnaliser les services de données de brouillons et d’envois](/help/forms/using/custom-draft-submission-data-services.md) et [Stockage personnalisé des composant brouillons et envois.](/help/forms/using/adding-custom-storage-provider-forms.md)
 

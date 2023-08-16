@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 240ed4d8-b21b-46eb-80a9-9e8093b77235
-source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 45%
+source-wordcount: '1050'
+ht-degree: 44%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 45%
 
 ## Présentation des composants du portail AEM Forms {#aem-forms-portal-components-overview}
 
-Dans un scénario de déploiement de portail basé sur l’utilisation de formulaires standard, le développement de formulaires et le développement de portail sont deux activités distinctes. Lorsque les concepteurs de formulaires créent et stockent des formulaires dans un référentiel, les développeurs Web créent une application Web pour répertorier les formulaires et gérer l’envoi de formulaires. Forms est copié sur la plateforme web, car il n’existe aucune communication entre le référentiel de formulaires et l’application web.
+Dans un scénario de déploiement de portail basé sur l’utilisation de formulaires standard, le développement de formulaires et le développement de portail sont deux activités distinctes. Pendant que les concepteurs de formulaires créent et stockent des formulaires dans un référentiel, les développeurs Web créent une application Web pour répertorier les formulaires et gérer l’envoi de formulaires. Forms est copié sur la plateforme web, car il n’existe aucune communication entre le référentiel de formulaires et l’application web.
 
 De tels scénarios entraînent souvent des problèmes de gestion et des retards de production. Par exemple, si une version plus récente d’un formulaire est disponible dans le référentiel, vous devez remplacer le formulaire sur la plateforme web, modifier l’application web et redéployer le formulaire sur le site public. Le redéploiement de l’application web peut entraîner un temps d’arrêt du serveur. En règle générale, le temps d’arrêt du serveur est une activité planifiée et les modifications ne peuvent donc pas être transmises instantanément au site public.
 
@@ -31,7 +31,7 @@ AEM Forms fournit des composants de portail qui réduisent les frais de gestion
 
 ![Portail AEM Forms](assets/aem-forms-portal.png)
 
-Les composants de Forms Portal vous permettent d’ajouter les fonctionnalités suivantes :
+Les composants de Forms Portal permettent d’ajouter les fonctionnalités suivantes :
 
 * Créez une liste de formulaires dans des mises en page personnalisées. Mises en page de vues Liste, Carte et Panneau prêtes à l’emploi. Vous pouvez créer vos propres mises en page personnalisées.
 * Permet d’afficher des métadonnées et des actions personnalisées lors de leur mise en liste.
@@ -50,7 +50,7 @@ AEM Forms fournit les composants de portail suivants prêts à l’emploi, regro
 
 ### Search &amp; Lister {#search-amp-lister}
 
-Le composant Search &amp; Lister vous permet de répertorier les formulaires du référentiel de formulaires sur votre page de portail et fournit des options de configuration pour répertorier les formulaires selon des critères spécifiés. Il permet également de spécifier des critères de recherche pour permettre aux utilisateurs et utilisatrices du portail d’effectuer des recherches dans la liste des formulaires.
+Le composant Search &amp; Lister vous permet de répertorier les formulaires du référentiel de formulaires sur votre page de portail et fournit des options de configuration pour répertorier les formulaires selon des critères spécifiés. Il vous permet également de spécifier des critères de recherche pour permettre aux utilisateurs de votre portail de rechercher dans la liste des formulaires.
 
 ### Brouillons et soumissions {#drafts-amp-submissions}
 
@@ -58,20 +58,20 @@ Tandis que le composant Search &amp; Lister affiche les formulaires rendus publi
 
 ### Lien {#link}
 
-Le composant Lien vous permet de créer un lien vers un formulaire n’importe où sur la page. Supposons que vous proposiez un programme de formation et que vous souhaitiez que vos utilisateurs envoient un formulaire pour s’inscrire à la formation. Sur votre site web, vous avez publié les détails du programme. Vous trouverez ci-dessous les détails du formulaire d&#39;inscription. Le composant Lien peut vous aider à créer ce lien.
+Le composant Lien permet de créer un lien vers un formulaire n’importe où sur la page. Supposons que vous proposiez un programme de formation et que vous souhaitiez que vos utilisateurs envoient un formulaire pour s’inscrire à la formation. Sur votre site web, vous avez publié les détails du programme. Vous trouverez ci-dessous les détails du formulaire d&#39;inscription. Le composant Lien peut vous aider à créer ce lien.
 
 ## Workflow du portail Formulaires {#forms-portal-workflow}
 
 Forms Portal vous permet de répertorier les formulaires du référentiel de formulaires sur votre page de portail. Il vous permet également de spécifier des critères de recherche pour permettre aux utilisateurs de votre portail de rechercher dans la liste des formulaires. Vous pouvez également utiliser le composant Brouillons et envois pour afficher les formulaires enregistrés en tant que brouillon en vue de les remplir ultérieurement et de formulaires envoyés. Vous effectuez un certain ensemble d’opérations avant que ces fonctionnalités ne soient disponibles sur une page Sites. Suivez les étapes de la séquence répertoriée pour rendre les composants et les fonctionnalités correspondantes disponibles sur une page de Sites :
 
-1. **Activation des composants du portail Forms**: Les composants Forms Portal ne sont pas prêts à l’emploi. [Activez les composants depuis AEM sidekick](/help/forms/using/enabling-forms-portal-components.md) pour une page AEM Sites.
+1. **Activation des composants du portail Forms**: les composants Forms Portal prêts à l’emploi ne sont pas disponibles. [Activez les composants depuis AEM sidekick](/help/forms/using/enabling-forms-portal-components.md) pour une page AEM Sites.
 1. **Répertorier les formulaires sur une page (créer une page du portail Forms) :** Vous pouvez répertorier les formulaires sur les pages AEM Sites et non AEM Site. La liste contient les formulaires disponibles sur l’instance de publication. Un utilisateur peut ouvrir des formulaires et commencer à les remplir. Chaque fois qu’un utilisateur ouvre un formulaire, une nouvelle instance de formulaire est créée :
 
    1. **Répertorier les formulaires sur une page AEM Sites** : ajoutez le composant **[Search &amp; Lister](../../forms/using/creating-form-portal-page.md)** à la page et configurez le **[Volet Liste](../../forms/using/creating-form-portal-page.md#p-list-pane-p)** dans la page pour répertorier les formulaires y contenus. Ajoutez et configurez le composant **Volet Recherche** au composant **Search &amp; Lister** pour ajouter également la fonctionnalité de recherche à la page. La page avec le composant Forms Portal est appelée [Page du portail Forms](../../forms/using/creating-form-portal-page.md).
 
    1. **Répertorier les formulaires sur une page non AEM Sites :** Utilisez la variable [API de recherche du portail Forms](/help/forms/using/listing-forms-webpage-using-apis.md) pour interroger, récupérer et répertorier des formulaires sur des pages non AEM Sites.
 
-1. **Répertorier les formulaires sous forme de brouillons et envoyés sur une page du portail Forms**: Ajoutez et configurez le composant Drafts &amp; Submissions (Brouillons et envois) sur la page du portail Forms. Le composant dresse la liste de tous les formulaires qui sont à l’état de brouillon et des formulaires déjà envoyés.
+1. **Répertorier les formulaires sous forme de brouillons et envoyés sur une page Forms Portal**: ajoutez et configurez le composant Drafts &amp; Submissions (Brouillons et envois) sur la page du portail Forms. Le composant dresse la liste de tous les formulaires qui sont à l’état de brouillon et des formulaires déjà envoyés.
 
    Pour activer l’affichage d’un formulaire adaptatif envoyé dans l’onglet des envois, définissez **Action d’envoi** sur **[Action d’envoi du portail Formulaires](configuring-submit-actions.md).** Vous pouvez également activer l’option Envoyer du portail Formulaires. Lorsqu’un utilisateur envoie un formulaire, ce dernier est ajouté à l’onglet des envois.
 
@@ -82,7 +82,7 @@ Forms Portal vous permet de répertorier les formulaires du référentiel de for
 
 ## Articles connexes {#related-articles}
 
-* [Activation des composants du portail Forms](/help/forms/using/enabling-forms-portal-components.md)
+* [Activer des composants Portail Formulaires](/help/forms/using/enabling-forms-portal-components.md)
 * [Page Créer un portail Forms](../../forms/using/creating-form-portal-page.md)
 * [Affichage de la liste des formulaires sur une page Web à l’aide d’API](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Utiliser le composant Brouillons et Envois](../../forms/using/draft-submission-component.md)

@@ -2,10 +2,10 @@
 title: En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu
 description: En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu
 exl-id: b4cc1311-1ef7-409a-bd41-0456519b3436
-source-git-commit: d33abafa0478de1f7b637a14df6d2b7712000c03
-workflow-type: ht
-source-wordcount: '259'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 85%
 
 ---
 
@@ -30,15 +30,15 @@ Vous pouvez utiliser trois méthodes pour ajouter des métadonnées et des balis
 
 * Dès la création de votre fragment :
 
-   ![Créer un fragment de contenu – Indiquez le nom](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+  ![Créer un fragment de contenu – Indiquez le nom](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* L’onglet **Variations** de l’éditeur de fragment de contenu vous permet d’ajouter des **balises** depuis votre projet :
+* La variable **Variations** de l’éditeur de fragment de contenu vous permet d’ajouter des **Balises** de votre projet :
 
-   ![Éditeur de fragment de contenu – Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+  ![Éditeur de fragment de contenu – Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
-* L’onglet **Métadonnées** de l’éditeur de fragment de contenu vous permet d’ajouter différents champs de métadonnées et des **Balises** prédéfinies à partir de votre projet :
+* La variable **Métadonnées** dans l’onglet de l’éditeur de fragment de contenu, vous pouvez ajouter différents champs de métadonnées et des champs prédéfinis. **Balises** de votre projet :
 
-   ![Éditeur de fragment de contenu – Métadonnées](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
+  ![Éditeur de fragment de contenu – Métadonnées](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
    * Vous pouvez également y accéder directement à l’aide de l’option **Propriétés** dans la barre d’outils de la console Ressources.
 

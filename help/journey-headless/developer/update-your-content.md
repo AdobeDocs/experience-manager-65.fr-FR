@@ -2,10 +2,10 @@
 title: Comment mettre à jour votre contenu à l’aide des API AEM Assets
 description: Dans cette partie du parcours de développement AEM découplé, découvrez comment utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '1040'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1037'
+ht-degree: 94%
 
 ---
 
@@ -41,20 +41,20 @@ Cet article s’appuie sur ces principes de base afin que vous compreniez commen
 
 Alors pourquoi une autre API est-elle nécessaire ?
 
-L’API HTTP Assets vous permet de **Lire** votre contenu, mais elle vous permet également de **Créer**, **Mettre à jour** et **Supprimer** le contenu – des actions qui sont impossibles avec l’API GraphQL.
+L’API HTTP Assets vous permet de **Lecture** votre contenu, mais il vous permet également de **Créer**, **Mettre à jour** et **Supprimer** content : actions qui ne sont pas possibles avec l’API GraphQL.
 
 L’API REST Assets est disponible pour chaque installation prête à l’emploi d’une version récente d’Adobe Experience Manager.
 
 ## API HTTP Assets {#assets-http-api}
 
-L’API HTTP Assets englobe :
+L’API HTTP Assets englobe les éléments suivants :
 
-* l’API REST Assets,
-* y compris la prise en charge des fragments de contenu
+* API REST Assets
+* Prise en charge des fragments de contenu
 
 L’implémentation actuelle de l’API HTTP Assets repose sur le style architectural **REST** et permet d’accéder au contenu (stocké dans AEM) via les opérations **CRUD** (Create, Read, Update, Delete) pour créer, lire, mettre à jour, supprimer.
 
-Grâce à ces opérations, l’API permet d’utiliser Adobe Experience Manager en tant que système de gestion de contenu (CMS) découplé en fournissant Content Services à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON. Par exemple, les applications sur une seule page (SPA), basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
+Grâce à ces opérations, l’API vous permet d’utiliser Adobe Experience Manager en tant que système de gestion de contenu (CMS) sans interface utilisateur en fournissant Content Services à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON. Par exemple, les applications sur une seule page (SPA), basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
 
 <!--
 >[!NOTE]
@@ -224,7 +224,6 @@ Par exemple, pour accéder à `/content/dam/wknd/en/adventures/cycling-tuscany`,
 >* `/api/assets` **ne nécessite pas** l’utilisation du sélecteur `.model`.
 >* `/content/path/to/page` **nécessite** l’utilisation du sélecteur `.model`.
 
-
 ### Opération {#operation}
 
 La méthode HTTP détermine l’opération à exécuter :
@@ -243,11 +242,11 @@ Le format exact des requêtes prises en charge est défini dans la documentation
 L’utilisation peut varier selon que vous utilisez un environnement d’auteur ou de publication AEM dans votre cas d’utilisation spécifique.
 
 * Il est vivement recommandé de lier la création à une instance d’auteur (et il n’existe actuellement aucun moyen de répliquer un fragment pour publier à l’aide de cette API).
-* La diffusion est possible à partir des deux à la fois, car AEM traite le contenu demandé au format JSON uniquement.
+* La diffusion est possible à partir des deux, car AEM diffuse le contenu demandé au format JSON uniquement.
 
-   * Le stockage et la diffusion à partir d’une instance d’auteur AEM suffisent normalement pour les applications de bibliothèque multimédia opérant derrière le pare-feu.
+   * Le stockage et la diffusion depuis une instance de création AEM doivent suffire pour les applications de bibliothèque de médias situées derrière le pare-feu.
 
-   * Pour une diffusion web en direct, une instance de publication AEM est recommandée.
+   * Pour une diffusion web en direct, une instance de publication AEM est recommandée.
 
 >[!CAUTION]
 >

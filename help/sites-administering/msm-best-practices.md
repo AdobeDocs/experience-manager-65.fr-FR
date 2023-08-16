@@ -4,10 +4,10 @@ description: Découvrez les bonnes pratiques compilées par les équipes d’ing
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 75%
+source-wordcount: '1614'
+ht-degree: 74%
 
 ---
 
@@ -36,7 +36,7 @@ MSM est une structure configurable pour automatiser le déploiement de contenu. 
 >
 >Vous pouvez également utiliser le [composant Référence](/help/sites-authoring/default-components-foundation.md#reference) pour réutiliser une seule page ou un paragraphe. Gardez toutefois à l’esprit :
 >
->* MSM est plus flexible et permet un contrôle précis du contenu synchronisé et du moment où il est synchronisé.
+>* MSM est plus flexible et permet un contrôle affiné sur le contenu synchronisé et le moment où il est synchronisé.
 >* Il est désormais recommandé d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) plutôt que les composants de base.
 >
 
@@ -105,7 +105,7 @@ MSM peut aider à la création de sites web multilingues de deux façons :
 
    * Bien que MSM lui-même **ne fournisse pas la traduction de contenu**, il peut être intégré à des connecteurs de traduction tiers qui proposent ce service. Veuillez noter que :
 
-      * MSM vous permet d’annuler l’héritage au niveau des pages et/ou des composants. Cela permet d’éviter le remplacement du contenu traduit (d’une Live Copy, avec du contenu non encore traduit d’un plan directeur) lors du déploiement suivant.
+      * MSM vous permet d’annuler l’héritage au niveau de la page et/ou du composant. Cela permet d’éviter le remplacement du contenu traduit (d’une Live Copy, avec du contenu non encore traduit d’un plan directeur) lors du déploiement suivant.
       * Certains connecteurs de traduction tiers automatisent cette gestion des héritages MSM.
 
         Contactez votre prestataire de services de traduction pour plus d’informations.
@@ -186,7 +186,7 @@ Par conséquent, il est recommandé d’utiliser *uniquement* les déclencheurs 
 
 N’oubliez pas les points suivants :
 
-* En plus de personnaliser les actions de déploiement, MSM vous permet de personnaliser les propriétés des nœuds qui sont déployés. Le [La configuration OSGi MSM vous permet d’exclure les types de noeuds](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) de la copie de la source vers la Live Copy.
+* Outre la personnalisation des actions de déploiement, MSM vous permet de personnaliser les propriétés de noeud en cours de déploiement. La variable [La configuration OSGi MSM vous permet d’exclure les types de noeuds](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) de la copie de la source vers la Live Copy.
 
 ## Informations supplémentaires {#further-information}
 

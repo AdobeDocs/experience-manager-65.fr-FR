@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 99%
+source-wordcount: '1421'
+ht-degree: 97%
 
 ---
 
@@ -128,7 +128,7 @@ Les options suivantes sont disponibles dans la barre d’outils, dans le rail de
 
 * **[!UICONTROL Propriétés]** ouvre l’option [!UICONTROL Propriétés] de la sous-ressource spécifique.
 
-* **[!UICONTROL Annoter]** vous permet d’annoter la sous-ressource spécifique. Les annotations que vous utilisez sur des sous-ressources distinctes sont collectées et affichées ensemble lorsque la ressource parent est ouverte en affichage.
+* **[!UICONTROL Annoter]** permet d’annoter la sous-ressource spécifique. Les annotations que vous utilisez sur des sous-ressources distinctes sont collectées et affichées ensemble lorsque la ressource parent est ouverte en affichage.
 
 * **[!UICONTROL Aperçu de la page]** affiche toutes les sous-ressources simultanément.
 
@@ -136,7 +136,7 @@ Les options suivantes sont disponibles dans la barre d’outils, dans le rail de
 
 ## Bonnes pratiques et restrictions {#best-practice-limitation-tips}
 
-* La génération de sous-ressources peut être très gourmande en ressources, quel que soit le déploiement d’[!DNL Experience Manager]. Si vous générez des sous-ressources lors du chargement de ressources complexes, ajoutez l’étape dans le workflow Ressource de mise à jour de gestion des ressources numériques. Si vous générez des sous-ressources à la demande, créez un workflow distinct pour générer des sous-ressources. Un workflow dédié vous permet d’ignorer les autres étapes du workflow Ressource de mise à jour de gestion des ressources numériques et d’économiser en capacités de calcul.
+* La génération de sous-ressources peut être très gourmande en ressources, quel que soit le déploiement d’[!DNL Experience Manager]. Si vous générez des sous-ressources lors du chargement de ressources complexes, ajoutez l’étape dans le workflow Ressource de mise à jour de gestion des ressources numériques. Si vous générez des sous-ressources à la demande, créez un workflow distinct pour générer des sous-ressources. Un workflow dédié vous permet d’ignorer les autres étapes du workflow Ressources de mise à jour de gestion des actifs numériques et d’enregistrer les ressources de calcul.
 
 >[!MORELIKETHIS]
 >

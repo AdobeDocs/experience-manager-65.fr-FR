@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2297'
+source-wordcount: '2296'
 ht-degree: 35%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 35%
 >
 >La structure eCommerce peut être utilisée avec n’importe quelle solution de eCommerce. Certains détails et exemples traités ici se réfèrent au [hybris](https://www.sap.com/products/crm.html) solution.
 
-La structure d’intégration comprend une couche d’intégration avec une API. Vous pouvez ainsi effectuer les opérations suivantes :
+La structure d’intégration comprend une couche d’intégration avec une API. Vous pouvez ainsi :
 
 * connecter un système e-commerce et extraire des données de produit dans AEM ;
 
@@ -121,7 +121,7 @@ Pour développer pour Hybris 4, les éléments suivants sont requis :
 
 hybris utilise une session utilisateur pour stocker des informations telles que le panier du client. L’ID de session est renvoyé à partir d’Hybris dans une `JSESSIONID` qui doit être envoyé lors de requêtes ultérieures à hybris. Pour éviter de stocker l’ID de session dans le référentiel, il est codé dans un autre cookie stocké dans le navigateur de l’acheteur. Les étapes sont les suivantes :
 
-* Lors de la première demande, aucun cookie n’est défini sur la demande de l’acheteur ; une requête est donc envoyée à l’instance hybris pour créer une session.
+* Lors de la première requête, aucun cookie n’est défini sur la requête de l’acheteur. Par conséquent, une requête est envoyée à l’instance hybris pour créer une session.
 
 * Les cookies de session sont extraits à partir de la réponse, codés dans un nouveau cookie (par exemple, `hybris-session-rest`) et définis dans la réponse au client. Le codage d’un nouveau cookie est requis, car le cookie d’origine n’est valide que pour un certain chemin d’accès et ne serait pas renvoyé à partir du navigateur dans les requêtes suivantes. Les informations de chemin doivent également être ajoutées à la valeur du cookie.
 
@@ -153,7 +153,7 @@ hybris utilise une session utilisateur pour stocker des informations telles que 
 
 Les données de produit conservées dans hybris doivent être disponibles dans AEM. Le mécanisme suivant a été mis en oeuvre :
 
-* Un chargement initial d’identifiants est fourni par Hybris en tant que flux. Il peut y avoir des mises à jour de ce flux.
+* Un chargement initial d’identifiants est fourni par Hybris sous la forme d’un flux. Il peut y avoir des mises à jour de ce flux.
 * hybris fournit des informations de mise à jour via un flux (qui AEM les sondages).
 * Lorsque AEM utilise des données de produit, il renvoie les demandes à hybris pour les données actives (demande d’obtention conditionnelle à l’aide de la date de dernière modification).
 * Sur Hybris, il est possible de spécifier le contenu du flux de manière déclarative.
@@ -203,7 +203,7 @@ Les données de produit conservées dans hybris doivent être disponibles dans A
 
 #### Architecture des produits et des variantes {#architecture-of-product-and-variants}
 
-Un produit unique peut avoir plusieurs variantes ; par exemple, il peut varier en fonction de la couleur et/ou de la taille. Un produit doit définir quelles propriétés favorisent la variation ; Adobe les termes suivants *axes des variantes*.
+Un seul produit peut avoir plusieurs variantes ; par exemple, il peut varier en fonction de la couleur et/ou de la taille. Un produit doit définir les propriétés qui génèrent des variations ; les termes Adobes ces *axes des variantes*.
 
 Cependant, toutes les propriétés ne sont pas des axes de variante. Les variations peuvent également affecter d’autres propriétés ; par exemple, le prix peut dépendre de la taille. Ces propriétés ne peuvent pas être sélectionnées par l’acheteur et ne sont donc pas considérées comme des axes de variante.
 
@@ -338,7 +338,7 @@ public class AxisFilter implements VariantFilter {
 
          * Les références de produit contiennent une propriété `productData`, qui pointe vers les données de produit (généralement sous `/etc/commerce/products`).
 
-         * Les données du produit sont hiérarchisées ; les attributs de produit sont hérités des ancêtres d’un noeud de données de produit.
+         * Les données de produit sont hiérarchiques ; les attributs de produit sont hérités des ancêtres d’un noeud de données de produit.
 
          * Les références de produit peuvent également contenir des propriétés locales qui remplacent celles spécifiées dans leurs données de produit.
 
@@ -430,7 +430,7 @@ public class AxisFilter implements VariantFilter {
 
 **Personnalisation**
 
-* Toujours effectuer la personnalisation via la [ClientContext](/help/sites-administering/client-context.md).
+* Toujours effectuer la personnalisation via le [ClientContext](/help/sites-administering/client-context.md).
 * Une `/version/` du panier ClientContext est créé dans tous les cas :
 
    * Les produits doivent être ajoutés en utilisant la méthode `CommerceSession.addCartEntry()`.
@@ -544,7 +544,7 @@ Il existe plusieurs classes génériques/d’assistance fournies par le projet p
 
     Est une classe utilitaire qui fournit une méthode statique, `toParams`, utilisée pour générer les chaînes de paramètre `GET` à partir d’une liste de facettes et d’une valeur basculée. Cela s’avère utile du côté de l’interface utilisateur, où vous devez afficher un lien hypertexte pour chaque valeur de chaque facette, de sorte que lorsque l’utilisateur clique sur l’hyperlien, la valeur correspondante est basculée (c’est-à-dire, si elle a été sélectionnée, elle est supprimée de la requête, sinon ajoutée). Cela prend en charge toute la logique de gestion des facettes à plusieurs ou à une valeur, de remplacement des valeurs, etc.
 
-Le point d’entrée de l’API de recherche est la méthode `CommerceService#search` qui renvoie un objet `CommerceResult`. Voir [Documentation API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) pour plus d’informations sur cette rubrique.
+Le point d’entrée de l’API de recherche est la méthode `CommerceService#search` qui renvoie un objet `CommerceResult`. Voir [Documentation de l’API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) pour plus d’informations sur cette rubrique.
 
 ### Intégration d’utilisateurs {#user-integration}
 

@@ -8,10 +8,10 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '5530'
-ht-degree: 81%
+source-wordcount: '5529'
+ht-degree: 79%
 
 ---
 
@@ -56,7 +56,7 @@ Le module complémentaire AEM Forms est une application déployée sur AEM. En r
 
 >[!NOTE]
 >
->Bien qu’AEM Forms vous permette de configurer et d’exécuter toutes les fonctionnalités à partir d’un seul serveur, vous devez planifier la capacité, équilibrer la charge et configurer des serveurs dédiés pour des fonctionnalités spécifiques dans un environnement de production. Par exemple, pour un environnement utilisant le service PDF Generator pour convertir des milliers de pages par jour et plusieurs formulaires adaptatifs pour capturer des données, configurez des serveurs AEM Forms distincts pour le service PDF Generator et les fonctionnalités de formulaires adaptatifs. Cela permet de fournir des performances optimales et de dimensionner les serveurs indépendamment les uns des autres.
+>Bien qu’AEM Forms vous permette de configurer et d’exécuter toutes les fonctionnalités à partir d’un seul serveur, vous devez planifier la capacité, équilibrer la charge et configurer des serveurs dédiés pour des fonctionnalités spécifiques dans un environnement de production. Par exemple, pour un environnement qui utilise le service de PDF Generator pour convertir des milliers de pages par jour et plusieurs formulaires adaptatifs pour capturer des données, configurez des serveurs AEM Forms distincts pour les fonctionnalités de service de PDF Generator et de formulaires adaptatifs. Cela permet de fournir des performances optimales et de dimensionner les serveurs indépendamment les uns des autres.
 
 ## Configuration requise {#system-requirements}
 
@@ -65,10 +65,10 @@ Avant de commencer à installer et configurer AEM Forms Document Services, assur
 * Le matériel et l’infrastructure logicielle sont en place. Pour obtenir une liste détaillée des matériels et logiciels pris en charge, voir [Conditions techniques applicables](/help/sites-deploying/technical-requirements.md).
 
 * Le chemin d’installation de l’instance AEM ne contient pas d’espaces.
-* Une instance AEM est en cours d’exécution. Dans la terminologie AEM, une « instance » est une copie d’AEM s’exécutant sur un serveur en mode de création ou de publication. En règle générale, une seule instance AEM (auteur ou publication) est nécessaire pour exécuter AEM Forms Document Services :
+* Une instance AEM est en cours d’exécution. Dans la terminologie AEM, une « instance » est une copie d’AEM s’exécutant sur un serveur en mode de création ou de publication. En règle générale, vous n’avez besoin que d’une seule instance AEM (auteur ou publication) pour exécuter AEM Forms Document Services :
 
    * **Création** : instance AEM utilisée pour créer, télécharger et modifier du contenu et assurer l’administration du site web. Une fois que le contenu est publié, il est répliqué sur l’instance de publication.
-   * **Publier**: Une instance AEM qui diffuse le contenu publié au public sur Internet ou sur un réseau interne.
+   * **Publier**: instance d’AEM qui diffuse le contenu publié au public sur Internet ou sur un réseau interne.
 
 * Les exigences de mémoire sont respectées. Le package complémentaire AEM Forms nécessite :
 
@@ -225,7 +225,7 @@ Définissez des variables d’environnement pour Java Development Kit 32 bits et
   <tr>
    <td><p><strong>Adobe Acrobat</strong></p> </td>
    <td><p>Acrobat_PATH</p> </td>
-   <td><p>C:\Program Files (x86)\Adobe\Acrobat 2015\Acrobat\Acrobat.exe</p> </td>
+   <td><p>C:\Program Fichiers (x86)\Adobe\Acrobat 2015\Acrobat\Acrobat.exe</p> </td>
   </tr>
   <tr>
    <td><p><strong>Bloc-notes</strong></p> </td>
@@ -235,7 +235,7 @@ Définissez des variables d’environnement pour Java Development Kit 32 bits et
   <tr>
    <td><p><strong>OpenOffice </strong></p> </td>
    <td><p>OpenOffice_PATH</p> </td>
-   <td><p>C:\Program Files (x86)\OpenOffice.org4</p> </td>
+   <td><p>C:\Program Fichiers (x86)\OpenOffice.org4</p> </td>
   </tr>
  </tbody>
 </table>
@@ -296,7 +296,7 @@ Modifiez les paramètres du Centre de gestion de la confidentialité Microsoft®
 
 ### (Windows uniquement) Accorder le droit Remplacer un jeton de niveau processus {#grant-the-replace-a-process-level-token-privilege}
 
-Le compte utilisateur utilisé pour démarrer le serveur d’applications requiert le **Remplacer un jeton de niveau processus** privilège. Le compte système local a la variable **Remplacer un jeton de niveau processus** par défaut. Pour les serveurs s’exécutant avec un utilisateur du groupe Administrateurs locaux, le privilège doit être accordé explicitement. Effectuez les étapes suivantes pour accorder le privilège :
+Le compte utilisateur utilisé pour démarrer le serveur d’applications requiert la variable **Remplacer un jeton de niveau processus** privilège. Le compte système local a la variable **Remplacer un jeton de niveau processus** par défaut. Pour les serveurs s’exécutant avec un utilisateur du groupe Administrateurs locaux, le privilège doit être accordé explicitement. Effectuez les étapes suivantes pour accorder le privilège :
 
 1. Ouvrez l’éditeur de politique de groupe de Microsoft® Windows. Pour ouvrir l’éditeur de politique de groupe, cliquez sur **[!UICONTROL Démarrer]**, saisissez **gpedit.msc** dans la zone Lancer la recherche, puis cliquez sur **[!UICONTROL Éditeur de politique de groupe]**.
 1. Accédez à **[!UICONTROL Stratégie d’ordinateur local]** > **[!UICONTROL Configuration de l’ordinateur]** > **[!UICONTROL Paramètres Windows]** > **[!UICONTROL Paramètres de protection]** > **[!UICONTROL Stratégies locales]** > **[!UICONTROL Attribution des droits utilisateur]** et modifiez la variable **[!UICONTROL Remplacer un jeton de niveau processus]** et incluez le groupe Administrateurs .
@@ -340,7 +340,7 @@ Le service PDF Generator fournit des méthodes ou des itinéraires WebKit, Web
 
 ### (Plateformes UNIX uniquement) Configurations supplémentaires pour la conversion de fichiers HTML en PDF  {#extra-configurations-for-html-to-pdf-conversion}
 
-Sur les plateformes UNIX, le service PDF Generator prend en charge les itinéraires WebKit et PhantomJS pour convertir des fichiers HTML en documents PDF. Pour activer la conversion HTML vers PDF, effectuez les configurations suivantes, applicables à l’itinéraire de conversion de votre choix :
+Sur les plateformes UNIX, le service de PDF Generator prend en charge les itinéraires WebKit et PhantomJS pour convertir des fichiers HTML en documents PDF. Pour activer la conversion HTML vers PDF, effectuez les configurations suivantes, applicables à l’itinéraire de conversion de votre choix :
 
 ### (Plateformes UNIX uniquement) Activer la prise en charge des polices Unicode (WebKit uniquement) {#enable-support-for-unicode-fonts-webkit-only}
 
@@ -483,7 +483,7 @@ Sous Microsoft® Windows, le service PDF Generator utilise Adobe Acrobat pour c
 
 Le service PDF Generator fournit plusieurs itinéraires pour convertir des fichiers HTML en documents PDF : WebKit, Acrobat WebCapture (Windows uniquement) et PhantomJS. Adobe recommande d’utiliser l’itinéraire PhantomJS, car il peut gérer le contenu dynamique, ne dépend pas des bibliothèques 32 bits, JDK 32 bits et ne nécessite aucune police supplémentaire. En outre, l’itinéraire PhantomJS ne nécessite pas l’accès sudo ou root pour exécuter la conversion.
 
-Webkit constitue l’itinéraire Principal par défaut pour la conversion du HTML vers le PDF. Pour modifier l’itinéraire de conversion :
+Webkit constitue l’itinéraire principal par défaut pour la conversion HTML vers PDF. Pour modifier l’itinéraire de conversion :
 
 1. Sur l’instance de création AEM, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Forms]** > **[!UICONTROL Configuration de PDF Generator]**.
 
@@ -527,7 +527,7 @@ Pour configurer les certificats, procédez comme suit :
 
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]** sur la page **[!UICONTROL Modifier les paramètres utilisateur]**.
 
-### Activation d’AES-256 {#enable-aes}
+### Activer AES-256 {#enable-aes}
 
 Pour utiliser le chiffrement AES 256 pour les fichiers de PDF, récupérez et installez les fichiers Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy. Remplacez les fichiers local_policy.jar et US_export_policy.jar dans le dossier jre/lib/security. Par exemple, si vous utilisez Sun JDK, copiez les fichiers téléchargés dans le dossier `[JAVA_HOME]/jre/lib/security`.
 

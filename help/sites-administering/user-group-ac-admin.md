@@ -11,10 +11,10 @@ discoiquuid: 66674e47-d19f-418f-857f-d91cf8660b6d
 docset: aem65
 exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
-workflow-type: ht
-source-wordcount: '3120'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '3118'
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ Plusieurs thèmes sont associés à l’activation de l’accès à un référen
 * [Droits d’accès](#how-access-rights-are-evaluated) : concepts se rapportant à leur définition et à leur évaluation
 * [Administration des utilisateurs et utilisatrices](#user-administration) : gestion des comptes individuels utilisés pour l’accès
 * [Administration des groupes](#group-administration) : simplifiez la gestion des utilisateurs en formant des groupes
-* [Gestion des droits d’accès](#access-right-management) : définition des stratégies qui contrôlent comment ces utilisateurs et ces groupes peuvent accéder à des ressources
+* [Gestion des droits d’accès](#access-right-management) : définition des politiques qui contrôlent comment ces utilisateurs et ces groupes peuvent accéder à des ressources
 
 Les éléments de base sont les suivants :
 
@@ -40,7 +40,7 @@ Dans CRX, chaque compte utilisateur est un nœud dans l’espace de travail. Un 
 
 * Vous pouvez spécifier des droits d’accès pour le compte utilisateur.
 
-    En revanche, pour simplifier la gestion, il est recommandé (dans la plupart des cas) d’affecter des droits d’accès aux comptes de groupe.  L’affectation de droits d’accès à chaque personne devient très rapidement difficile à gérer (à l’exception de certains utilisateurs ou utilisatrices système lorsqu’il n’y a qu’une ou deux instances).
+  Toutefois, pour simplifier l’Adobe de gestion, il est recommandé (dans la plupart des cas) d’attribuer des droits d’accès aux comptes de groupe.  L’affectation de droits d’accès à chaque personne devient très rapidement difficile à gérer (à l’exception de certains utilisateurs ou utilisatrices système lorsqu’il n’y a qu’une ou deux instances).
 
 **Comptes de groupe** Les comptes de groupe sont des ensembles d’utilisateurs et/ou d’autres groupes. Ils sont utilisés pour simplifier la gestion, car toute modification des droits d’accès affectés à un groupe est appliquée automatiquement à tous les utilisateurs de ce groupe. Un utilisateur ou une utilisatrice n’a pas l’obligation d’appartenir à un groupe, mais il ou elle appartient souvent à plusieurs groupes.
 
@@ -56,7 +56,7 @@ Dans CRX, un groupe possède les propriétés suivantes :
 
 Cette opération est effectuée en affectant des autorisations pour autoriser ou refuser l’accès à une ressource (nœud ou chemin d’accès) dans le référentiel. Lorsque différentes autorisations peuvent être affectées, les droits d’accès doivent être évalués afin de déterminer la combinaison qui s’applique à la demande actuelle.
 
-CRX permet de configurer les droits d’accès pour des comptes utilisateur et des comptes de groupe. Les mêmes principes de base d’évaluation sont alors appliqués aux deux.
+CRX vous permet de configurer les droits d’accès pour les comptes utilisateur et de groupe. Les mêmes principes de base d’évaluation sont alors appliqués aux deux.
 
 ## Évaluation des droits d’accès {#how-access-rights-are-evaluated}
 
@@ -70,25 +70,26 @@ CRX permet de configurer les droits d’accès pour des comptes utilisateur et d
 
 CRX utilise deux concepts clés lors de l’évaluation des droits d’accès :
 
-* Une **entité de sécurité** est une entité qui transfère des droits d’accès. Les entités incluent :
+* Un **principal de sécurité** est une entité qui transfère des droits d’accès. Les entités incluent :
 
    * Un compte d’utilisateur
    * Un compte de groupe
 
-      Si un compte utilisateur appartient à un ou à plusieurs groupes, il est également associé à chacune de ces entités de groupe.
+     Si un compte utilisateur appartient à un ou à plusieurs groupes, il est également associé à chacun de ces principaux du groupe.
 
-* Un **sujet** est utilisé pour représenter la source de la demande.
+* Un **objet** est utilisé pour représenter la source de la demande.
 
-    Il est utilisé pour centraliser les droits d’accès applicables pour cette demande. Ceux-ci proviennent de :
+   Il est utilisé pour centraliser les droits d’accès applicables pour cette demande. Ceux-ci proviennent de :
 
-   * l’entité de sécurité de l’utilisateur ;
+   * le principal de sécurité de l’utilisateur ;
 
-      Les droits affectés directement au compte utilisateur
+     Les droits affectés directement au compte utilisateur
 
-   * toutes les entités de sécurité des groupes associés à cet utilisateur.
+   * tous les principaux de sécurité des groupes associés à cet utilisateur.
 
-      Tous les droits affectés aux groupes auxquels appartient l’utilisateur
-   Le résultat est ensuite utilisé pour autoriser ou refuser l’accès à la ressource demandée.
+     Tous les droits affectés aux groupes auxquels appartient l’utilisateur
+
+  Le résultat est ensuite utilisé pour autoriser ou refuser l’accès à la ressource demandée.
 
 #### Compilation de la liste des droits d’accès pour un sujet {#compiling-the-list-of-access-rights-for-a-subject}
 
@@ -111,7 +112,6 @@ La liste des droits d’accès applicables au sujet est établie à partir :
 >* L’ordre dans lequel vous définissez les groupes n’a aucune incidence sur les droits d’accès.
 >
 
-
 ### Résolution des demandes et des droits d’accès {#resolving-request-and-access-rights}
 
 Lorsque CRX gère la demande, il compare la demande d’accès du sujet à la liste de contrôle d’accès sur le nœud du référentiel :
@@ -129,7 +129,7 @@ Les droits d’accès dans CRX sont évalués comme suit :
    * leur ordre dans la liste de contrôle d’accès ;
    * leur position dans la hiérarchie des nœuds.
 
-* Pour une entité de sécurité donnée, il existe (au plus) 1 entrée de refus et 1 entrée d’autorisation sur un nœud donné. La mise en œuvre efface toujours les entrées redondantes et s’assure que les mêmes autorisations ne figurent pas à la fois dans les entrées d’autorisation et de refus.
+* Pour un principal donné, il existe (au plus) 1 entrée de refus et 1 entrée d’autorisation sur un nœud donné. La mise en œuvre efface toujours les entrées redondantes et s’assure que les mêmes autorisations ne figurent pas à la fois dans les entrées d’autorisation et de refus.
 
 >[!NOTE]
 >
@@ -191,7 +191,7 @@ Le tableau ci-dessous contient des recommandations et bonnes pratiques :
   </tr>
   <tr>
    <td><i>Soyez positif</i></td>
-   <td><p>Utilisez toujours des instructions Autoriser pour spécifier les droits d’accès de l’entité de groupe (dans la mesure du possible). Évitez d’utiliser une instruction Refuser.</p> <p>Les entités de groupe sont évaluées dans l’ordre, dans la hiérarchie et dans la liste de contrôle d’accès unique.</p> </td>
+   <td><p>Utilisez toujours des instructions Autoriser pour spécifier les droits d’accès du principal du groupe (dans la mesure du possible). Évitez d’utiliser une instruction Refuser.</p> <p>Les principaux de groupe sont évalués dans l’ordre, dans la hiérarchie et dans la liste de contrôle d’accès unique.</p> </td>
   </tr>
   <tr>
    <td><i>Restez simple</i></td>
@@ -223,19 +223,19 @@ Vous devez être connecté(e) à l’espace de travail approprié, puis vous pou
 
 * **UserID**
 
-   Nom abrégé du compte, utilisé lors de l’accès à CRX.
+  Nom abrégé du compte, utilisé lors de l’accès à CRX.
 
 * **Principal Name**
 
-   Nom entier du compte.
+  Nom entier du compte.
 
 * **Password**
 
-   Nécessaire lors de l’accès à CRX avec ce compte.
+  Nécessaire lors de l’accès à CRX avec ce compte.
 
 * **ntlmhash**
 
-   Affecté automatiquement pour chaque nouveau compte et mis à jour lorsque le mot de passe est modifié.
+  Affecté automatiquement pour chaque nouveau compte et mis à jour lorsque le mot de passe est modifié.
 
 * Vous pouvez ajouter de nouvelles propriétés en définissant un nom, un type et une valeur. Cliquez sur Enregistrer (symbole de coche verte) pour chaque nouvelle propriété.
 
@@ -269,7 +269,7 @@ Si un compte emprunte l’identité d’un autre compte, il est très difficile 
 1. Cliquez sur Enregistrer (symbole de coche verte).
 1. La boîte de dialogue sera développée afin que vous puissiez :
 
-   1. configurer les **propriétés** ;
+   1. Configurez les **propriétés**.
    1. afficher l’**appartenance à un groupe** ;
    1. définir les **emprunteurs d’identité**.
 
@@ -280,7 +280,6 @@ Si un compte emprunte l’identité d’un autre compte, il est très difficile 
 >* d’utilisateurs ;
 >* de groupes comportant de nombreux membres.
 >
-
 
 ### Mise à jour d’un compte utilisateur {#updating-a-user-account}
 
@@ -348,17 +347,17 @@ Vous devez être connecté(e) à l’espace de travail approprié, puis vous pou
 
 * **GroupID**
 
-   Nom abrégé du compte de groupe.
+  Nom abrégé du compte de groupe.
 
 * **Principal Name**
 
-   Nom textuel entier pour le compte de groupe.
+  Nom textuel entier pour le compte de groupe.
 
 * Vous pouvez ajouter de nouvelles propriétés en définissant un nom, un type et une valeur. Cliquez sur Enregistrer (symbole de coche verte) pour chaque nouvelle propriété.
 
 * **Members**
 
-   Vous pouvez ajouter des utilisateurs, ou d’autres groupes, en tant que membres de ce groupe.
+  Vous pouvez ajouter des utilisateurs, ou d’autres groupes, en tant que membres de ce groupe.
 
 **Appartenance à un groupe**
 
@@ -440,55 +439,55 @@ Vous pouvez également supprimer un membre existant avec le symbole de la corbei
 
 ## Gestion des droits d’accès {#access-right-management}
 
-Grâce à l’onglet **Contrôle d’accès** de CRXDE Lite, vous pouvez définir des stratégies de contrôle d’accès et affecter les autorisations associées.
+Grâce à l’onglet **Contrôle d’accès** de CRXDE Lite, vous pouvez définir des politiques de contrôle d’accès et affecter les autorisations associées.
 
 Par exemple, pour **Chemin d’accès actuel**, sélectionnez la ressource nécessaire dans le volet de gauche, l’onglet Contrôle d’accès dans le volet inférieur droit :
 
 ![crx_accesscontrol_tab](assets/crx_accesscontrol_tab.png)
 
-Les stratégies sont classées en fonction des éléments suivants :
+Les politiques sont classées en fonction des éléments suivants :
 
-* **Stratégies de contrôle d’accès applicables**
+* **Politiques de contrôle d’accès applicables**
 
-   Ces stratégies peuvent être appliquées.
+  Ces politiques peuvent être appliquées.
 
-    Ce sont les stratégies disponibles pour créer une stratégie locale. Une fois que vous avez sélectionné et ajouté une stratégie applicable, elle devient une stratégie locale.
+   Ce sont les politiques disponibles pour créer une politique locale. Une fois que vous avez sélectionné et ajouté une politique applicable, elle devient une politique locale.
 
-* **Stratégies de contrôle d’accès locales**
+* **Politiques de contrôle d’accès locales**
 
-   Il s’agit des stratégies de contrôle d’accès que vous avez appliquées. Vous pouvez les mettre à jour, les trier ou les supprimer.
+  Il s’agit des politiques de contrôle d’accès que vous avez appliquées. Vous pouvez les mettre à jour, les trier ou les supprimer.
 
-   La stratégie locale remplace toutes les stratégies héritées du parent.
+  La politique locale remplace toutes les politiques héritées du parent.
 
-* **Stratégies de contrôle d’accès actuelles**
+* **Politiques de contrôle d’accès actuelles**
 
-   Ce sont les stratégies de contrôle d’accès désormais en vigueur pour toutes les demandes d’accès. Elles affichent les stratégies agrégées dérivées des stratégies locales et des stratégies héritées du parent.
+  Ce sont les politiques de contrôle d’accès désormais en vigueur pour toutes les demandes d’accès. Elles affichent les politiques agrégées dérivées des politiques locales et des politiques héritées du parent.
 
-### Sélection d’une stratégie {#policy-selection}
+### Sélection d’une politique {#policy-selection}
 
-Les stratégies peuvent être sélectionnées pour les éléments suivants :
+Les politiques peuvent être sélectionnées pour les éléments suivants :
 
 * **Chemin d’accès actuel**
 
-   Comme dans l’exemple ci-dessus, sélectionnez une ressource dans le référentiel. Les stratégies de ce « chemin d’accès actuel » s’affichent.
+  Comme dans l’exemple ci-dessus, sélectionnez une ressource dans le référentiel. Les politiques de ce « chemin d’accès actuel » s’affichent.
 
 * **Référentiel**
 
-   Sélectionne le contrôle d’accès au niveau du référentiel. Par exemple, lors de la définition de l’autorisation `jcr:namespaceManagement`, qui n’est appropriée que pour le référentiel, et non pour le nœud.
+  Sélectionne le contrôle d’accès au niveau du référentiel. Par exemple, lors de la définition de l’autorisation `jcr:namespaceManagement`, qui n’est appropriée que pour le référentiel, et non pour le nœud.
 
-* **Entité de sécurité**
+* **Principal de sécurité**
 
-   Entité de sécurité enregistrée dans le référentiel.
+  Principal de sécurité enregistré dans le référentiel.
 
-   Vous pouvez saisir le nom de l’**entité de sécurité** ou cliquer sur l’icône à droite du champ pour afficher la boîte de dialogue **Sélectionner une entité de sécurité**.
+  Vous pouvez saisir le nom du **principal de sécurité** ou cliquer sur l’icône à droite du champ pour afficher la boîte de dialogue **Sélectionner un principal de sécurité**.
 
-    Cela permet de **rechercher** un **utilisateur** ou un **groupe**. Sélectionnez l’entité de sécurité nécessaire dans la liste qui s’affiche, puis cliquez sur **OK** pour reprendre la valeur dans la zone de dialogue précédente.
+  Cela vous permet de : **Rechercher** pour un **Utilisateur** ou **Groupe**. Sélectionnez le principal de sécurité nécessaire dans la liste qui s’affiche, puis cliquez sur **OK** pour reprendre la valeur dans la zone de dialogue précédente.
 
 ![crx_accesscontrol_selectprincipal](assets/crx_accesscontrol_selectprincipal.png)
 
 >[!NOTE]
 >
->Pour simplifier la gestion, nous vous recommandons d’attribuer des droits d’accès aux comptes de groupe, et non à des comptes utilisateurs individuels.
+>Pour simplifier l’Adobe de gestion, vous devez attribuer des droits d’accès aux comptes de groupe, et non à des comptes d’utilisateur individuels.
 >
 >Il est plus facile de gérer quelques groupes que de nombreux comptes utilisateurs.
 
@@ -536,7 +535,7 @@ Les autorisations ci-dessous peuvent être sélectionnées lors de l’ajout d�
   </tr>
   <tr>
    <td><code>jcr:modifyAccessControl</code></td>
-   <td>Modifier les stratégies de contrôle d’accès d’un nœud</td>
+   <td>Modifier les politiques de contrôle d’accès d’un nœud</td>
   </tr>
   <tr>
    <td><code>jcr:modifyProperties</code></td>
@@ -556,7 +555,7 @@ Les autorisations ci-dessous peuvent être sélectionnées lors de l’ajout d�
   </tr>
   <tr>
    <td><code>jcr:readAccessControl</code></td>
-   <td>Lire la stratégie de contrôle d’accès d’un nœud</td>
+   <td>Lire la politique de contrôle d’accès d’un nœud</td>
   </tr>
   <tr>
    <td><code>jcr:removeChildNodes</code></td>
@@ -607,11 +606,11 @@ Vous pouvez également enregistrer de nouvelles autorisations :
 
 1. Sélectionnez votre ressource et ouvrez l’onglet **Contrôle d’accès**.
 
-1. Pour ajouter une **stratégie de contrôle d’accès locale**, cliquez sur l’icône **+** à droite de la liste **Stratégie de contrôle d’accès applicable** :
+1. Pour ajouter une **politique de contrôle d’accès locale**, cliquez sur l’icône **+** à droite de la liste **Politique de contrôle d’accès applicable** :
 
    ![crx_accesscontrol_applicable](assets/crx_accesscontrol_applicable.png)
 
-1. Une nouvelle entrée s’affiche sous **Stratégies de contrôle d’accès locales :**
+1. Une nouvelle entrée s’affiche sous **Politiques de contrôle d’accès locales :**
 
    ![crx_accesscontrol_newlocal](assets/crx_accesscontrol_newlocal.png)
 
@@ -625,32 +624,32 @@ Vous pouvez également enregistrer de nouvelles autorisations :
    >
    >À cet effet, vous devez utiliser &quot;&quot;.
 
-1. Définissez votre stratégie de contrôle d’accès et cliquez sur **OK** pour l’enregistrer. Votre nouvelle politique :
+1. Définissez votre politique de contrôle d’accès et cliquez sur **OK** pour l’enregistrer. Votre nouvelle politique :
 
-   * est répertoriée sous **Stratégies de contrôle d’accès locales** ;
-   * comporte des modifications qui se reflètent dans les **stratégies de contrôle d’accès actuelles**.
+   * est répertoriée sous **Politiques de contrôle d’accès locales** ;
+   * comporte des modifications qui se reflètent dans les **politiques de contrôle d’accès actuelles**.
 
-CRX valide votre sélection pour une entité de sécurité donnée, il existe (au plus) 1 entrée de refus et 1 entrée d’autorisation sur un nœud donné. La mise en œuvre efface toujours les entrées redondantes et s’assure que les mêmes autorisations ne figurent pas à la fois dans les entrées d’autorisation et de refus.
+CRX valide votre sélection ; pour un principal donné, il existe (au plus) 1 entrée de refus et 1 entrée d’autorisation sur un nœud donné. La mise en œuvre efface toujours les entrées redondantes et s’assure que les mêmes autorisations ne figurent pas à la fois dans les entrées d’autorisation et de refus.
 
 ### Ordre des politiques de contrôle d’accès locales {#ordering-local-access-control-policies}
 
-L’ordre dans la liste indique l’ordre dans lequel les stratégies sont appliquées.
+L’ordre dans la liste indique l’ordre dans lequel les politiques sont appliquées.
 
-1. Dans le tableau **Stratégies de contrôle d’accès locales**, sélectionnez l’entrée souhaitée et faites-la glisser vers la nouvelle position dans le tableau.
+1. Dans le tableau **Politiques de contrôle d’accès locales**, sélectionnez l’entrée souhaitée et faites-la glisser vers la nouvelle position dans le tableau.
 
    ![crx_accesscontrol_reorder](assets/crx_accesscontrol_reorder.png)
 
-1. Les modifications sont affichées dans les tableaux pour les **stratégies de contrôle d’accès locales** et **actuelles**.
+1. Les modifications sont affichées dans les tableaux pour les **politiques de contrôle d’accès locales** et **actuelles**.
 
-### Suppression d’une stratégie de contrôle d’accès {#removing-an-access-control-policy}
+### Suppression d’une politique de contrôle d’accès {#removing-an-access-control-policy}
 
-1. Dans le tableau **Stratégies de contrôle d’accès locales**, cliquez sur l’icône rouge (-) à droite de l’entrée.
-1. L’entrée est supprimée dans les tableaux des **stratégies de contrôle d’accès locales** et **actuelles**.
+1. Dans le tableau **Politiques de contrôle d’accès locales**, cliquez sur l’icône rouge (-) à droite de l’entrée.
+1. L’entrée est supprimée dans les tableaux des **politiques de contrôle d’accès locales** et **actuelles**.
 
-### Test d’une stratégie de contrôle d’accès {#testing-an-access-control-policy}
+### Test d’une politique de contrôle d’accès {#testing-an-access-control-policy}
 
 1. Dans la barre d’outils de CRXDE Lite, sélectionnez **Outils**, puis **Tester le contrôle d’accès**.
-1. Une nouvelle boîte de dialogue s’affiche dans le volet supérieur droit. Sélectionnez le **chemin d’accès** et/ou l’**entité de sécurité** à tester.
+1. Une nouvelle boîte de dialogue s’affiche dans le volet supérieur droit. Sélectionnez le **chemin d’accès** et/ou le **principal de sécurité** à tester.
 1. Cliquez sur **Test** pour afficher les résultats de votre sélection :
 
    ![crx_accesscontrol_test](assets/crx_accesscontrol_test.png)

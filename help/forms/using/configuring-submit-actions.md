@@ -1,5 +1,5 @@
 ---
-title: Configuration de l’action d’envoi
+title: Configurer l’action d’envoi
 seo-title: Configuring the Submit action
 description: Forms vous permet de configurer une action d’envoi afin de définir le mode de traitement d’un formulaire adaptatif après envoi. Vous pouvez utiliser des actions d’envoi intégrées ou créer les vôtres à partir de zéro.
 uuid: 4368d648-88ea-4f84-a051-46296a1a084e
@@ -9,10 +9,10 @@ discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 83%
+source-wordcount: '1949'
+ht-degree: 82%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 83%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 
@@ -63,7 +63,7 @@ Vous pouvez écrire une action d’envoi personnalisée pour les formulaires ada
 
 ## Envoyer vers le point d’entrée REST {#submit-to-rest-endpoint}
 
-Le **Envoyer vers le point de fin REST** l’option d’envoi transmet les données renseignées dans le formulaire à une page de confirmation configurée dans le cadre de la demande de GET HTTP. Vous pouvez ajouter le nom des champs à demander. Le format de la requête est :
+La variable **Envoyer vers le point de fin REST** l’option d’envoi transmet les données renseignées dans le formulaire à une page de confirmation configurée dans le cadre de la demande de GET HTTP. Vous pouvez ajouter le nom des champs à demander. Le format de la requête est :
 
 `{fieldName}={request parameter name}`
 

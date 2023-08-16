@@ -8,10 +8,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1227'
-ht-degree: 99%
+source-wordcount: '1224'
+ht-degree: 95%
 
 ---
 
@@ -71,7 +71,7 @@ Tout d’abord, vérifiez que la connexion entre les instances de création et d
 
 ## Modifier le contenu d’un formulaire {#editing-form-content}
 
-Les formulaires dédiés à Adobe Campaign comportent des composants spécifiques. Ces composants disposent d’une option permettant de lier chaque champ du formulaire à un champ de la base de données d’Adobe Campaign.
+Les formulaires dédiés à Adobe Campaign comportent des composants spécifiques. Ces composants disposent d’une option permettant de lier chaque champ du formulaire à un champ de la base de données Adobe Campaign.
 
 >[!NOTE]
 >
@@ -87,9 +87,9 @@ Cette section présente uniquement les liens spécifiques à Adobe Campaign. Po
    >
    >Le cas échéant, déverrouillez la configuration en cliquant sur l’icône en forme de cadenas pour pouvoir ajouter le service Adobe Campaign.
 
-1. Accédez aux paramètres généraux du formulaire à l’aide du bouton **Modifier** situé au début du formulaire. L’onglet **Formulaire** vous permet de choisir une page de remerciements vers laquelle l’utilisateur sera redirigé après avoir validé le formulaire.
+1. Accédez aux paramètres généraux du formulaire à l’aide du bouton **Modifier** situé au début du formulaire. La variable **Formulaire** vous permet de sélectionner une page de remerciement vers laquelle l’utilisateur sera redirigé après avoir validé le formulaire.
 
-   Le formulaire **Avancé** vous permet de choisir le type de formulaire. Le champ **Options de publication** vous donne le choix entre trois types de formulaires Adobe Campaign :
+   La variable **Avancé** form permet de sélectionner le type de formulaire. Le champ **Options de publication** vous donne le choix entre trois types de formulaires Adobe Campaign :
 
    * **Adobe Campaign : Enregistrement d’un profil** : permet de créer ou de mettre à jour un ou une destinataire dans Adobe Campaign (valeur par défaut).
    * **Adobe Campaign : Abonnement aux services** : permet de gérer les abonnements d’un ou d’une destinataire dans Adobe Campaign.

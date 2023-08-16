@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2245'
-ht-degree: 100%
+source-wordcount: '2240'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ L’environnement de création d’AEM comprend divers mécanismes permettant d�
 
 ## Gestion de votre site {#managing-your-site}
 
-La console **Sites** vous permet de parcourir et de gérer votre site web à l’aide de la barre d’en-têtes, de la barre d’outils, des icônes d’action (applicable à la ressource sélectionnée), des chemins de navigation et, lorsqu’ils sont sélectionnés, des rails secondaires (par exemple, la chronologie et les références).
+La variable **Sites** La console vous permet de parcourir et de gérer votre site web à l’aide de la barre d’en-tête, de la barre d’outils, des icônes d’action (applicables à la ressource sélectionnée), des chemins de navigation et, lorsqu’ils sont sélectionnés, des rails secondaires (par exemple, la chronologie et les références).
 
 Par exemple, le mode Colonnes :
 
@@ -292,17 +292,17 @@ Le menu **Informations sur la page** peut en outre donner accès à des analyses
 Plusieurs modes sont possibles lors de la modification d’une page, ce qui permet d’effectuer différentes actions :
 
 * [Modifier](/help/sites-authoring/editing-content.md) : mode à utiliser lors de la modification du contenu de la page.
-* [Disposition](/help/sites-authoring/responsive-layout.md) : permet de créer et de modifier une disposition réactive en fonction du type d’appareil utilisé (si la page est basée sur un conteneur de mises en page).
+* [Disposition](/help/sites-authoring/responsive-layout.md) - vous permet de créer et de modifier votre mise en page réactive en fonction de l’appareil (si la page est basée sur un conteneur de mises en page).
 
 * [Génération de modèles automatique](/help/sites-authoring/scaffolding.md) : permet de créer un jeu volumineux de pages partageant la même structure, mais avec un contenu différent.
-* [Développeur](/help/sites-developing/developer-mode.md) : permet d’accomplir diverses opérations (certains droits sont requis), notamment la vérification des détails techniques d’une page et de ses composants.
+* [Développeur](/help/sites-developing/developer-mode.md) - vous permet d’effectuer diverses actions (nécessite des privilèges). Cela inclut l’inspection des détails techniques d’une page et de ses composants.
 
-* [Conception](/help/sites-authoring/default-components-designmode.md) : permet d’activer/désactiver les composants à utiliser sur une page et de configurer la conception du composant (si la page est basée sur un [modèle statique](/help/sites-authoring/templates.md#editable-and-static-templates)).
+* [Conception](/help/sites-authoring/default-components-designmode.md) - vous permet d’activer/désactiver les composants à utiliser sur une page et de configurer la conception du composant (si la page est basée sur une [modèle statique](/help/sites-authoring/templates.md#editable-and-static-templates)).
 
 * [Ciblage](/help/sites-authoring/content-targeting-touch.md) : accroît la pertinence du contenu grâce au ciblage et à la mesure sur tous les canaux.
 * [Activity Map](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) : affiche les données d’analyse de la page.
 
-* [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) : permet d’afficher le statut d’une page à un moment donné.
+* [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) - vous permet d’afficher l’état d’une page à un moment donné.
 * [Statut de la Live Copy](/help/sites-authoring/editing-content.md#live-copy-status) : donne un aperçu rapide du statut de la Live Copy et des composants qui sont ou non hérités.
 * [Aperçu](/help/sites-authoring/editing-content.md#previewing-pages) : permet d’afficher la page comme elle sera présentée dans l’environnement de publication ou de naviguer au moyen des liens figurant dans le contenu.
 

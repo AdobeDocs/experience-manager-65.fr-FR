@@ -13,10 +13,10 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
-workflow-type: ht
-source-wordcount: '7210'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '7198'
+ht-degree: 97%
 
 ---
 
@@ -120,7 +120,7 @@ Si l’image est au format JPEG, sa qualité peut aussi dépendre de la taille d
 
 #### Propriétés {#properties}
 
-La boîte de dialogue permet de modifier les propriétés pour votre instance du composant Image adaptative. Parmi ces propriétés, nombreuses sont celles qui sont communes au composant d’image sur lequel il est basé. Les propriétés sont disponibles dans deux onglets :
+La boîte de dialogue vous permet de modifier les propriétés de votre instance du composant Image adaptative, dont la plupart sont communes au composant Image sur lequel il est basé. Les propriétés sont disponibles dans deux onglets :
 
 * **Image**
 
@@ -160,7 +160,7 @@ Pour plus d’informations sur la personnalisation du composant d’image adapta
 >
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal de carrousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=fr).
 
-Le composant de carrousel vous permet d’afficher des images associées à des pages individuelles :
+Le composant Carrousel vous permet d’afficher les images associées à des pages individuelles :
 
 * une à la fois
 * pour une courte durée
@@ -473,7 +473,7 @@ Ce composant fournit un système de paragraphes/grille qui permet d’ajouter et
 >
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Liste](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=fr).
 
-Le composant Liste vous permet de configurer des critères de recherche pour l’affichage d’une liste :
+Le composant Liste permet de configurer les critères de recherche pour l’affichage d’une liste :
 
 * **Liste**
 
@@ -821,7 +821,7 @@ Pour plus d’informations sur l’application de balises, reportez-vous à la r
 >
 >Le composant de base **Texte** est basé sur l’[éditeur de texte enrichi](/help/sites-authoring/rich-text-editor.md), tout comme le composant de base **Tableau**.
 
-Le composant Texte vous permet de saisir un bloc de texte à l’aide d’un éditeur WYSIWYG, avec une fonctionnalité fournie par l’[éditeur de texte enrichi](/help/sites-authoring/rich-text-editor.md). Une série d’icônes vous permet de mettre le texte en forme (police, alignement, liens, listes et mise en retrait).
+Le composant Texte permet de saisir un bloc de texte à l’aide d’un éditeur WYSIWYG, avec les fonctionnalités fournies par [Éditeur de texte enrichi](/help/sites-authoring/rich-text-editor.md). Une sélection d’icônes vous permet de mettre en forme le texte, notamment les caractéristiques de police, l’alignement, les liens, les listes et la mise en retrait.
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -858,7 +858,7 @@ Vous pouvez configurer :
 
 * **Propriétés de l’image** (**Propriétés d’image avancées**)
 
-  Sous cet onglet, vous pouvez spécifier les paramètres suivants :
+  Permet de définir les éléments suivants :
 
    * **Ressource image**
 
@@ -1019,11 +1019,11 @@ Lors de la configuration de l’un des composants de formulaire, les onglets sui
 
 * **Titre et texte**
 
-  Cet onglet vous invite à renseigner des informations de base, telles que le titre du formulaire et tout texte d’accompagnement. Le cas échéant, il vous permet également d’apporter d’autres informations essentielles ; par exemple, s’il s’agit d’un champ à sélection multiple ou encore les différents éléments pouvant être sélectionnés.
+  Cet onglet vous invite à renseigner des informations de base, telles que le titre du formulaire et tout texte d’accompagnement. Le cas échéant, il vous permet également de définir d’autres informations clés, telles que si le champ peut être sélectionné plusieurs fois et si des éléments peuvent être sélectionnés.
 
 * **Valeurs initiales**
 
-  Permet d’indiquer une valeur par défaut.
+  Permet de spécifier une valeur par défaut.
 
 * **Contraintes**
 
@@ -1369,7 +1369,7 @@ Vous pouvez configurer différents paramètres pour ce composant, notamment un m
 >
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Options de formulaire](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html?lang=fr).
 
-Une case à cocher vous permet de créer une liste composée d’une ou de plusieurs cases à cocher (plusieurs d’entre elles peuvent être simultanément cochées).
+Une case à cocher permet de créer une liste d’une ou plusieurs cases à cocher, dont plusieurs peuvent être sélectionnées en même temps.
 
 ![dc_form_checkboxgroupuse](assets/dc_form_checkboxgroupuse.png)
 
@@ -1445,7 +1445,7 @@ Permet de créer un champ masqué. Ces champs masqués peuvent être utilisés �
 >
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Bouton de formulaire](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html?lang=fr).
 
-Un bouton d’image permet de créer un bouton comportant vos texte et image :
+Un bouton image vous permet de créer un bouton avec votre propre image et votre propre texte :
 
 ![dc_form_imagebutton](assets/dc_form_imagebutton.png)
 
@@ -1520,7 +1520,7 @@ Vous pouvez spécifier le nom de l’élément ainsi qu’un titre et une descri
 >
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Bouton de formulaire](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html?lang=fr).
 
-Ce composant vous permet de créer un bouton Envoyer avec le texte par défaut :
+Ce composant permet de créer un bouton d’envoi, avec le texte par défaut :
 
 ![dc_form_submitbutton](assets/dc_form_submitbutton.png)
 
@@ -1534,7 +1534,7 @@ Ou votre propre texte :
 >
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
 
-Ce champ vous permet de sélectionner des balises :
+Ce champ permet de sélectionner des balises :
 
 ![dc_form_tags_use](assets/dc_form_tags_use.png)
 

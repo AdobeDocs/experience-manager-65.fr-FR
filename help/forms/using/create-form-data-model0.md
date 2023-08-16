@@ -8,10 +8,10 @@ discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
 docset: aem65
 feature: Interactive Communication
 exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: ht
-source-wordcount: '2739'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '2737'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Ce tutoriel fait partie de la série [Création de votre première communication
 
 ## À propos du tutoriel {#about-the-tutorial}
 
-Le module d’intégration de données AEM Forms vous permet de créer un modèle de données de formulaire à partir de sources de données tierces telles que le profil utilisateur AEM, les services web RESTful, les services web basés sur SOAP, les services OData et les bases de données relationnelles. Vous pouvez configurer des objets et des services de modèle de données dans un modèle de données de formulaire et les associer à un formulaire adaptatif. Les champs de formulaire adaptatif sont liés aux propriétés de l’objet de modèle de données. Les services vous permettent de préremplir le formulaire adaptatif et d’écrire les données de formulaire soumises dans l’objet de modèle de données.
+Le module d’intégration des données AEM Forms permet de créer un modèle de données de formulaire à partir de sources de données principales disparates, telles que les profils utilisateur AEM, les services web RESTful, les services web SOAP, les services OData et les bases de données relationnelles. Vous pouvez configurer des objets et des services de modèle de données dans un modèle de données de formulaire et les associer à un formulaire adaptatif. Les champs de formulaire adaptatif sont liés aux propriétés de l’objet de modèle de données. Les services vous permettent de préremplir le formulaire adaptatif et d’écrire les données de formulaire soumises dans l’objet de modèle de données.
 
 Pour plus d’informations sur l’intégration des données de formulaire et sur le modèle de données du formulaire, voir [Intégration de données AEM Forms](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/data-integration.html).
 
@@ -146,6 +146,7 @@ Procédez comme suit pour configurer votre base de données MySQL :
       * **Requête de validation :** spécifiez une requête SQL SELECT pour valider les connexions du pool. La requête doit renvoyer au moins une ligne. Par exemple, **sélectionnez&#42; à partir du client ou de la cliente**.
 
       * **Isolation de transaction** : définissez la valeur sur **READ_COMMITTED**.
+
    Laissez les [valeurs](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) par défaut des autres propriétés et cliquez sur **Enregistrer**.
 
    Une configuration similaire à la suivante est créée.
@@ -193,6 +194,7 @@ La configuration d’un modèle de données de formulaire inclut :
       * factures
       * appels
       * client ou cliente
+
    * **Services :**
 
       * get
@@ -293,7 +295,7 @@ Plusieurs enregistrements d’appels sont disponibles dans le tableau des appels
    Une fois que vous avez créé une association entre les objets de modèle de données customer et calls, créez une association 1:1 entre les objets de modèle de données customer et bills.
 
 1. Cochez la case en haut d’un objet de modèle de données **client** pour le sélectionner et cliquez sur **Ajouter une association**. Le volet des propriétés **Ajouter une association** s’ouvre.
-1. Dans le volet **Ajouter une association** :
+1. Dans le panneau **Ajouter une association** :
 
    * Spécifiez un titre pour l’association. Ce champ est facultatif.
    * Sélectionnez **Un objet à un autre** dans la liste déroulante **Type**.
@@ -359,7 +361,7 @@ Après avoir créé des associations entre l’objet client ou cliente et d’au
    ![Modification des propriétés](assets/edit_properties_get_details_new.png)
 
 1. Sélectionnez le service **update** et cliquez sur **Modifier les propriétés**. Le panneau **Modifier les propriétés** s’ouvre.
-1. Dans le volet **Modifier les propriétés** :
+1. Dans le panneau **Modifier les propriétés** :
 
    * Saisissez un titre et une description facultatifs.
    * Sélectionnez **client** dans la liste déroulante **Objet de modèle d’entrée**.

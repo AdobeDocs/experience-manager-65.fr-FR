@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1843'
-ht-degree: 99%
+source-wordcount: '1840'
+ht-degree: 95%
 
 ---
 
@@ -161,7 +161,7 @@ Pour générer un lien vers une URL (que ce soit à l’intérieur de votre site
 
 ![Icône Lien hypertexte](do-not-localize/chlimage_1-9.png)
 
-Une boîte de dialogue vous permet de spécifier l’URL cible, ainsi que de déterminer si elle doit s’ouvrir dans une nouvelle fenêtre.
+Une boîte de dialogue vous permet de spécifier l’URL cible, mais aussi de spécifier si elle doit être ouverte dans une nouvelle fenêtre.
 
 ![cq55_rte_link_use](assets/cq55_rte_link_use.png)
 
@@ -207,7 +207,7 @@ La recherche commence toujours à partir de la position actuelle du curseur dans
 
 ![cq55_rte_find_use](assets/cq55_rte_find_use.png)
 
-L’option **Remplacer** permet de **rechercher**, puis de **remplacer** une instance par le texte indiqué ou de **remplacer toutes** les instances du composant actif.
+La variable **Remplacer** permet de **Rechercher**, puis **Remplacer** une instance individuelle avec le texte spécifié, ou **Remplacer tout** dans le composant actif.
 
 ![cq55_rte_findreplace_use](assets/cq55_rte_findreplace_use.png)
 
@@ -383,7 +383,7 @@ Survolez avec la souris pour afficher une version agrandie du caractère, puis c
 
 ![Barre d’outils du mode de modification de la source](do-not-localize/cq55_rte_sourceedit.png)
 
-Le mode de modification de la source vous permet d’afficher et de modifier le HTML sous-jacent du composant.
+Le mode d’édition source permet d’afficher et de modifier le HTML sous-jacent du composant.
 
 Le texte suivant :
 

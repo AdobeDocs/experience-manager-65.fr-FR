@@ -11,10 +11,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
-workflow-type: ht
-source-wordcount: '9153'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '9152'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,6 @@ ht-degree: 100%
 >* [Guide rapide relatif au WCAG 2.1](/help/managing/qg-wcag.md)
 >* [Création de contenu accessible (conformité au WCAG 2.1)](/help/sites-authoring/creating-accessible-content.md)
 
-
 Le WCAG 2.0 regroupe un ensemble de consignes et de critères de réussite qui ne sont pas associés à une technologie particulière et visant à rendre les contenus web plus accessibles aux personnes en situation de handicap.
 
 >[!NOTE]
@@ -40,7 +39,6 @@ Le WCAG 2.0 regroupe un ensemble de consignes et de critères de réussite qui 
 >* [Guide rapide relatif à WCAG 2.0](/help/managing/qg-wcag.md)
 >* [Configuration de l’éditeur de texte enrichi pour produire du contenu accessible](/help/sites-administering/rte-accessible-content.md)
 >
-
 
 Ces règles sont classées selon trois niveaux de conformité : niveau A (le plus bas), niveau AA et niveau AAA (le plus élevé). Pour résumer, les niveaux sont définis comme suit :
 
@@ -63,7 +61,6 @@ La section suivante présente les [règles du WCAG 2.0](https://www.w3.org/TR/W
 >* les noms courts des [règles WCAG 2.0](https://www.w3.org/TR/WCAG20/#guidelines) ;
 >* la numérotation utilisée dans les [règles WCAG 2.0](https://www.w3.org/TR/WCAG20/#guidelines) afin de simplifier les références croisées avec le site web WCAG.
 >
-
 
 ## Principe 1 : perceptible  {#principle-perceivable}
 
@@ -226,7 +223,7 @@ Fournir ces informations dans un format différent, tel que du texte (ou de l’
 
    * fournissez un lien juste avant ou après le contenu vers une transcription textuelle du contenu audio ;
 
-   La transcription doit être une page de HTML avec un équivalent textuel de tout le contenu non parlé important et parlé. Elle doit également indiquer qui parle, une description du décor, des expressions vocales et une description de tout autre son significatif.
+  La transcription doit être une page de HTML avec un équivalent textuel de tout le contenu non parlé important et parlé. Elle doit également indiquer qui parle, une description du décor, des expressions vocales et une description de tout autre son significatif.
 
 * Si le contenu est une animation ou une vidéo préenregistrée sans son :
 
@@ -305,8 +302,8 @@ Deux méthodes peuvent être adoptées pour satisfaire ce critère de réussite.
 
       * Les utilisateurs et utilisatrices peuvent passer de la piste audio existante (qui *ne contient pas* de description audio) à la nouvelle piste audio (qui *contient* une description audio).
       * Cette méthode permet d’éviter toute perturbation pour les utilisateurs et utilisatrices qui n’ont pas besoin d’une description supplémentaire.
-   * Créez une deuxième version du contenu vidéo pour pouvoir ajouter des audio-descriptions plus longues. Cela permet de réduire les difficultés liées à l’insertion de descriptions audio détaillées dans les espaces entre les dialogues existants, en mettant temporairement le contenu audio et vidéo en pause aux moments appropriés. Une audio-description beaucoup plus longue peut ainsi être fournie avant que l’action ne reprenne. Comme dans l’exemple précédent, il est préférable de la fournir en tant que piste audio supplémentaire en option, afin d’éviter de perturber les utilisateurs et utilisatrices qui n’ont pas besoin de la description supplémentaire.
 
+   * Créez une deuxième version du contenu vidéo pour pouvoir ajouter des audio-descriptions plus longues. Cela permet de réduire les difficultés liées à l’insertion de descriptions audio détaillées dans les espaces entre les dialogues existants, en mettant temporairement le contenu audio et vidéo en pause aux moments appropriés. Une audio-description beaucoup plus longue peut ainsi être fournie avant que l’action ne reprenne. Comme dans l’exemple précédent, il est préférable de la fournir en tant que piste audio supplémentaire en option, afin d’éviter de perturber les utilisateurs et utilisatrices qui n’ont pas besoin de la description supplémentaire.
 
 1. Fournissez une transcription textuelle formant un équivalent textuel adapté des éléments audio et visuels de la vidéo ou de l’animation. Il peut s’agir, selon les besoins, d’une indication précisant qui parle, d’une description du décor ou d’expressions vocales. Selon sa durée, vous pouvez placer la transcription sur la même page que la vidéo ou l’animation, ou sur une autre. Dans le deuxième cas, fournissez un lien vers la transcription à proximité de la vidéo ou de l’animation.
 
@@ -413,23 +410,25 @@ Mettez le texte en évidence à l’aide des éléments &lt;strong> ou &lt;em>. 
 >Dans une installation AEM standard, l’éditeur de texte enrichi est configuré pour utiliser :
 >
 >* &lt;b> pour &lt;strong> ;
->* &lt;i> pour &lt;em>.
->Ces balises sont identiques dans la pratique, mais &lt;strong> et &lt;em> sont préférables, car il s’agit de code HTML correct sémantiquement. Votre équipe de développement peut configurer l’éditeur de texte enrichi pour qu’il utilise &lt;strong> et &lt;em> (au lieu de &lt;b> et &lt;i>) lors du développement de votre instance de projet.
+* &lt;i> pour &lt;em>.
+>
+Ces balises sont identiques dans la pratique, mais &lt;strong> et &lt;em> sont préférables, car il s’agit de code HTML correct sémantiquement. Votre équipe de développement peut configurer l’éditeur de texte enrichi pour qu’il utilise &lt;strong> et &lt;em> (au lieu de &lt;b> et &lt;i>) lors du développement de votre instance de projet.
 
 * **Utiliser les listes** : vous pouvez spécifier trois différents types de listes en HTML :
 
    * L’élément `<ul>` est utilisé pour les listes *non triées* (à puces). Les éléments de liste individuels sont identifiés à l’aide de l’élément `<li>`.
 
-   Dans l’éditeur de texte enrichi, cliquez sur l’icône **Liste à puces**.
+  Dans l’éditeur de texte enrichi, cliquez sur l’icône **Liste à puces**.
 
    * L’élément `<ol>` est utilisé pour les listes *numérotées*. Les éléments de liste individuels sont identifiés à l’aide de l’élément `<li>`.
 
-   Dans l’éditeur de texte enrichi, cliquez sur l’icône **Liste numérotée**.
+  Dans l’éditeur de texte enrichi, cliquez sur l’icône **Liste numérotée**.
 
 Pour modifier le contenu existant d’un type de liste particulier, surlignez le texte concerné puis sélectionnez le type de liste approprié. Comme dans l’exemple précédent illustrant comment est entré le texte du paragraphe, les éléments de liste appropriés sont automatiquement ajoutés au fichier HTML, mais vous pouvez l’afficher en mode d’édition de la source.
 
 >[!NOTE]
->L’élément `<dl>` n’est pas pris en charge par l’éditeur de texte enrichi.
+>
+L’élément `<dl>` n’est pas pris en charge par l’éditeur de texte enrichi.
 
 * **Utiliser des tableaux** :
 
@@ -441,7 +440,8 @@ Les tableaux de données doivent être identifiés à l’aide des éléments de
     * un élément « &lt;td> » pour chaque cellule de données
 
 >[!NOTE]
->Les tableaux doivent être créés avec le composant **Tableau**. Bien qu’il soit possible de les créer dans le composant Texte, cela n’est pas recommandé.
+>
+Les tableaux doivent être créés avec le composant **Tableau**. Bien qu’il soit possible de les créer dans le composant Texte, cela n’est pas recommandé.
 
 En outre, les tableaux accessibles utilisent les éléments et attributs suivants :
 
@@ -450,7 +450,8 @@ En outre, les tableaux accessibles utilisent les éléments et attributs suivant
     * L’attribut « portée » de l’élément « &lt;th> » sert à indiquer si une cellule représente un en-tête pour une ligne ou une colonne particulière. Une approche similaire consiste à utiliser les attributs d’en-tête et d’identifiant dans des tableaux complexes, où les cellules de données peuvent être associées à un ou plusieurs en-têtes.
 
 >[!NOTE]
->Par défaut, ces éléments et attributs ne sont pas directement disponibles, mais l’administration du système peut ajouter la prise en charge de ces valeurs dans la boîte de dialogue **Propriétés du tableau** (voir [Ajout de la prise en charge des éléments et attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+>
+Par défaut, ces éléments et attributs ne sont pas directement disponibles, mais l’administration du système peut ajouter la prise en charge de ces valeurs dans la boîte de dialogue **Propriétés du tableau** (voir [Ajout de la prise en charge des éléments et attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 En ajoutant un **Tableau**, vous pouvez configurer les **Propriétés du tableau** à l’aide de la boîte de dialogue.
 
@@ -468,10 +469,12 @@ Utilisez les **Propriétés de la cellule** pour déterminer si la cellule est u
 Dans certains cas, lorsqu’il existe des tableaux complexes comportant deux niveaux ou plus d’en-têtes, les propriétés de base du tableau peuvent ne pas suffire à fournir toutes les informations structurelles nécessaires. Pour ce type de tableaux complexes, il est nécessaire de créer des relations directes entre les en-têtes et leurs cellules associées à l’aide des attributs d’**en-tête** et d’**identifiant**. Par exemple, dans le tableau ci-dessous, les attributs header et id correspondent pour créer une association de programmation pour les utilisateurs de technologies d’assistance.
 
 >[!NOTE]
->L’attribut id n’est pas disponible dans une installation prête à l’emploi. Il peut être activé en configurant les règles HTML et le sérialiseur dans l’éditeur de texte enrichi.
+>
+L’attribut id n’est pas disponible dans une installation prête à l’emploi. Il peut être activé en configurant les règles HTML et le sérialiseur dans l’éditeur de texte enrichi.
 
 >[!NOTE]
->Les tableaux doivent être créés avec le composant **Tableau**. Bien qu’il soit possible de les créer dans le composant Texte, cela n’est pas recommandé.
+>
+Les tableaux doivent être créés avec le composant **Tableau**. Bien qu’il soit possible de les créer dans le composant Texte, cela n’est pas recommandé.
 
 ```xml
 <table>
@@ -503,7 +506,8 @@ Dans certains cas, lorsqu’il existe des tableaux complexes comportant deux niv
 Pour ce faire dans AEM, vous devez ajouter le balisage directement à l’aide du mode d’édition de la source.
 
 >[!NOTE]
->Cette fonctionnalité n’est pas disponible immédiatement dans une installation standard. Elle nécessite la configuration de l’éditeur de texte enrichi, des règles HTML et du sérialiseur.
+>
+Cette fonctionnalité n’est pas disponible immédiatement dans une installation standard. Elle nécessite la configuration de l’éditeur de texte enrichi, des règles HTML et du sérialiseur.
 
 #### En savoir plus – Informations et relations (1.3.1) {#more-information-info-and-relationships}
 
@@ -523,7 +527,8 @@ Les concepteurs et conceptrices concentrent généralement leurs efforts sur le 
 De la même manière, les informations qui impliquent de distinguer différents sons (contenu verbalisé par un homme ou une femme, par exemple) présentent un obstacle à l’accessibilité pour les personnes malentendantes si elles ne sont pas reproduites dans un équivalent textuel du contenu audio.
 
 >[!NOTE]
->Pour connaître les conditions requises en rapport avec les alternatives aux couleurs, voir [Utilisation de la couleur](#use-of-color).
+>
+Pour connaître les conditions requises en rapport avec les alternatives aux couleurs, voir [Utilisation de la couleur](#use-of-color).
 
 #### Comment procéder – Caractéristiques sensorielles (1.3.3) {#how-to-meet-sensory-characteristics}
 
@@ -533,7 +538,8 @@ Assurez-vous que toutes les informations qui reposent sur les caractéristiques 
 * Ne vous limitez pas au style de texte (texte en gras ou en italique, par exemple) comme seul moyen de transmettre l’information.
 
 >[!NOTE]
->L’utilisation de termes descriptifs est acceptable s’ils ont une signification dans un contexte non visuel. Par exemple, les termes *ci-dessus* et *ci-dessous* sont généralement acceptables, puisqu’ils impliquent respectivement le contenu juste avant ou après un élément de contenu particulier. Le contenu aura toujours un sens lorsqu’il sera énoncé à haute voix.
+>
+L’utilisation de termes descriptifs est acceptable s’ils ont une signification dans un contexte non visuel. Par exemple, les termes *ci-dessus* et *ci-dessous* sont généralement acceptables, puisqu’ils impliquent respectivement le contenu juste avant ou après un élément de contenu particulier. Le contenu aura toujours un sens lorsqu’il sera énoncé à haute voix.
 
 #### En savoir plus – Caractéristiques sensorielles (1.3.3) {#more-information-sensory-characteristics}
 
@@ -551,7 +557,8 @@ Assurez-vous que toutes les informations qui reposent sur les caractéristiques 
 * Utilisation de la couleur : la couleur n’est pas utilisée comme seul moyen visuel de transmettre des informations, d’indiquer une action, de demander une réponse ou de distinguer un élément visuel.
 
 >[!NOTE]
->Ce critère de réussite traite spécifiquement de la perception des couleurs. Les autres formes de perception sont traitées à la règle [Adaptable (1.3)](#adaptable), comme l’accès à la couleur par programme informatique et les autres formes de codage de la présentation visuelle.
+>
+Ce critère de réussite traite spécifiquement de la perception des couleurs. Les autres formes de perception sont traitées à la règle [Adaptable (1.3)](#adaptable), comme l’accès à la couleur par programme informatique et les autres formes de codage de la présentation visuelle.
 
 #### Objectif – Utilisation de la couleur (1.4.1) {#purpose-use-of-color}
 
@@ -606,7 +613,7 @@ Si vous utilisez la couleur comme vecteur d’information, vous devez fournir un
    * Texte décoratif : aucune exigence de contraste pour le texte ou le texte sous forme d’image intégré à un composant d’interface utilisateur inactif. Il s’agit d’un élément purement décoratif, invisible de tous ou intégré à une partie d’une image contenant un autre contenu significatif.
    * Logotypes : aucune exigence de contraste pour le texte faisant partie d’un logo ou d’un nom de marque.
 
-#### Objectif – Contraste (minimum) (1.4.3)  {#purpose-contrast-minimum}
+#### Objectif – Contraste (minimum) (1.4.3) {#purpose-contrast-minimum}
 
 Les personnes avec certaines déficiences visuelles peuvent ne pas être en mesure de distinguer certaines paires de couleurs à faible contraste. Elles peuvent être confrontées à des obstacles à l’accessibilité si :
 
@@ -614,7 +621,8 @@ Les personnes avec certaines déficiences visuelles peuvent ne pas être en mesu
 * Le codage de la couleur du texte (tel que le texte du lien et le texte hors lien) est important pour distinguer les informations.
 
 >[!NOTE]
->Le texte utilisé uniquement à des fins décoratives est exclu de ce critère de succès.
+>
+Le texte utilisé uniquement à des fins décoratives est exclu de ce critère de succès.
 
 #### Comment procéder – Contraste (minimum) (1.4.3) {#how-to-meet-contrast-minimum}
 
@@ -645,7 +653,8 @@ S’il est impossible de respecter les niveaux de contraste recommandés, fourni
    * Essentiel : une présentation particulière du texte est essentielle à la transmission de l’information.
 
 >[!NOTE]
->Les logotypes (texte faisant partie d’un logo ou d’un nom de marque) sont considérés comme essentiels.
+>
+Les logotypes (texte faisant partie d’un logo ou d’un nom de marque) sont considérés comme essentiels.
 
 #### Objectif – Texte sous forme d’image (1.4.5) {#purpose-images-of-text}
 
@@ -710,7 +719,8 @@ Selon la nature du contenu, vous pouvez appliquer une ou plusieurs des suggestio
 * Pas plus de trois flashs ou sous le seuil critique : une page web doit être exempte de tout élément qui flashe plus de trois fois dans un intervalle d’une seconde ou ce flash doit se situer sous le seuil de flash générique et le seuil de flash rouge.
 
 >[!NOTE]
->Comme tout contenu qui ne remplit pas ce critère de succès peut interférer avec la capacité de l’utilisateur ou de l’utilisatrice à exploiter la page entière, tout le contenu présent dans la page web (qu’il soit utilisé pour remplir d’autres critères de réussite ou non) doit remplir ce critère de succès. Consultez [Exigence de conformité 5 : non interférence](https://www.w3.org/TR/WCAG20/#cc5).
+>
+Comme tout contenu qui ne remplit pas ce critère de succès peut interférer avec la capacité de l’utilisateur ou de l’utilisatrice à exploiter la page entière, tout le contenu présent dans la page web (qu’il soit utilisé pour remplir d’autres critères de réussite ou non) doit remplir ce critère de succès. Consultez [Exigence de conformité 5 : non interférence](https://www.w3.org/TR/WCAG20/#cc5).
 
 #### Objectif – Pas plus de trois flashs ou sous le seuil critique (2.3.1) {#purpose-three-flashes-or-below-threshold}
 
@@ -795,7 +805,8 @@ John Smith's publications
 ```
 
 >[!NOTE]
->L’extrait de code ci-dessus est une illustration. Il est recommandé d’utiliser le composant **Image**.
+>
+L’extrait de code ci-dessus est une illustration. Il est recommandé d’utiliser le composant **Image**.
 
 Il est conseillé de spécifier un texte du lien qui identifie l’objet du lien sans avoir besoin de contexte supplémentaire ; toutefois, cela n’est pas toujours possible. Des liens sans contexte peuvent être utilisés dans les cas suivants (vous trouverez des exemples HTML dans la section [Comment remplir le critère de réussite 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs)).
 
@@ -880,7 +891,8 @@ L’attribut `lang` peut être utilisé pour identifier les changements de langu
 ```
 
 >[!NOTE]
->Les attributs blockquote ne sont pas pris en charge dans une instance prête à l’emploi. Il est toutefois possible de développer un composant personnalisé pour prendre cette fonction en charge.
+>
+Les attributs blockquote ne sont pas pris en charge dans une instance prête à l’emploi. Il est toutefois possible de développer un composant personnalisé pour prendre cette fonction en charge.
 
 De même, le navigateur peut restituer correctement un mot ou une expression emprunté peu courant si l’élément `span` est utilisé comme suit :
 
@@ -889,7 +901,8 @@ De même, le navigateur peut restituer correctement un mot ou une expression emp
 ```
 
 >[!NOTE]
->Il n’est pas nécessaire d’adhérer à ce critère de réussite pour les noms ou villes dans différentes langues ou lors de l’utilisation de mots ou d’expressions empruntés qui sont devenus courants dans la langue par défaut (tel que *diktat* en français).
+>
+Il n’est pas nécessaire d’adhérer à ce critère de réussite pour les noms ou villes dans différentes langues ou lors de l’utilisation de mots ou d’expressions empruntés qui sont devenus courants dans la langue par défaut (tel que *diktat* en français).
 
 Pour ajouter l’élément span, avec un langage approprié, vous pouvez modifier manuellement votre balisage HTML en mode d’édition source de l’éditeur de texte enrichi afin qu’il se lise comme ci-dessus. Vous pouvez également inclure l’attribut `lang` dans l’éditeur de texte enrichi par un administrateur système (voir [Ajout de la prise en charge d’éléments et d’attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 

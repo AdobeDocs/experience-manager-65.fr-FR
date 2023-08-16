@@ -9,10 +9,10 @@ topic-tags: personalization
 discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
-workflow-type: ht
-source-wordcount: '2839'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '2836'
+ht-degree: 98%
 
 ---
 
@@ -214,8 +214,7 @@ Permet de saisir du texte. Utilisez la barre d’outils pour modifier la mise en
 * **Image**
 Faites glisser une image à partir de l’Outil de recherche de contenu ou cliquez pour accéder à une image. Vous pouvez la recadrer ou la faire pivoter le cas échéant.
 
-* **Propriétés de l’image** (**Propriétés d’image avancées**)
-Permet de spécifier ce qui suit :
+* **Propriétés de l’image** (**Propriétés d’image avancées**) Permet de spécifier les éléments suivants :
 
    * **Titre**
 Titre du bloc de texte ; il s’affiche lorsque l’utilisateur pointe dessus avec la souris.
@@ -247,7 +246,7 @@ L’exemple ci-dessous présente le composant Texte et image (Campaign) affiché
 
 Le composant Texte et personnalisation (Campaign) permet de saisir un bloc de texte en utilisant un éditeur WYSIWYG, avec les fonctionnalités de l’[éditeur de texte enrichi](/help/sites-authoring/rich-text-editor.md). De plus, ce composant permet d’utiliser des champs de contexte et des blocs de personnalisation, disponibles dans Adobe Campaign. Reportez-vous également à la section [Insertion d’une personnalisation](/help/sites-authoring/campaign.md#inserting-personalization).
 
-Une série d’icônes permet de mettre en forme le texte (attributs de police, alignement, liens, listes et retrait). Les fonctionnalités sont globalement identiques dans [les deux IU](/help/sites-authoring/editing-content.md), même si l’affichage est différent :
+La sélection des icônes vous permet de mettre en forme le texte, notamment les caractéristiques de police, l’alignement, les liens, les listes et la mise en retrait. Les fonctionnalités sont globalement identiques dans [les deux IU](/help/sites-authoring/editing-content.md), même si l’affichage est différent :
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -428,7 +427,7 @@ L’exemple suivant présente le composant Affichage d’erreur (Campaign) affic
 
 ### Clé de réconciliation masquée (Campaign) {#hidden-reconciliation-key-campaign}
 
-Le composant Clé de réconciliation masquée (Campaign) permet d’ajouter des champs masqués dans le cadre de la clé de réconciliation d’un formulaire.
+Le composant Clé de réconciliation masquée (Campaign) permet d&#39;ajouter des champs masqués dans le cadre de la clé de réconciliation d&#39;un formulaire.
 
 Vous pouvez configurer les éléments ci-dessous dans le composant Clé de réconciliation masquée (Campaign) :
 

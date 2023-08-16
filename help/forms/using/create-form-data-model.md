@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
-workflow-type: ht
-source-wordcount: '1512'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1511'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ Ce tutoriel fait partie de la série [Création de votre premier formulaire adap
 
 ## À propos du tutoriel {#about-the-tutorial}
 
-Le module d’intégration de données AEM [!DNL Forms] vous permet de créer un modèle de données de formulaire à partir de sources de données principales disparates telles que le profil utilisateur AEM, les services web RESTful, les services web basés sur SOAP, les services OData et les bases de données relationnelles. Vous pouvez configurer des objets et des services de modèle de données dans un modèle de données de formulaire et les associer à un formulaire adaptatif. Les champs de formulaire adaptatif sont liés aux propriétés de l’objet de modèle de données. Les services vous permettent de préremplir le formulaire adaptatif et d’écrire les données de formulaire soumises dans l’objet de modèle de données.
+AEM [!DNL Forms] le module d’intégration des données permet de créer un modèle de données de formulaire à partir de sources de données principales disparates, telles que les profils utilisateur AEM, les services web RESTful, les services web SOAP, les services OData et les bases de données relationnelles. Vous pouvez configurer des objets et des services de modèle de données dans un modèle de données de formulaire et les associer à un formulaire adaptatif. Les champs de formulaire adaptatif sont liés aux propriétés de l’objet de modèle de données. Les services vous permettent de préremplir le formulaire adaptatif et d’écrire les données de formulaire soumises dans l’objet de modèle de données.
 
 Pour plus d’informations sur l’intégration des données de formulaire et sur le modèle de données du formulaire, voir [Intégration de données AEM Forms](../../forms/using/data-integration.md).
 
@@ -67,11 +67,11 @@ Pour configurer votre base de données [!DNL MySQL], procédez comme suit :
 1. Configurez la base de données [!DNL MySQL] comme source de données :
 
    1. Accédez à la console web d’AEM à l’adresse [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-   1. Recherchez la configuration **Apache Sling Connection Pooled DataSource**. Appuyez pour ouvrir la configuration en mode édition.
+   1. Recherchez la configuration **Apache Sling Connection Pooled DataSource**. Appuyez pour ouvrir la configuration en mode d’édition.
    1. Dans la boîte de dialogue de configuration, indiquez ce qui suit :
 
       * **Nom de la source de données :** vous pouvez spécifier n’importe quel nom. Spécifiez par exemple **WeRetailMySQL**.
-      * **Nom de la propriété du service de la source de données** : indiquez le nom de la propriété de service contenant le nom de la source de données. Il est spécifié lors de l’enregistrement de l’instance de source de données en tant que service OSGi. Par exemple : **datasource.name**.
+      * **Nom de la propriété du service de la source de données** : indiquez le nom de la propriété de service contenant le nom de la source de données. Il est spécifié lors de l’enregistrement de l’instance de source de données en tant que service OSGi. Par exemple, **datasource.name**.
       * **Classe de pilote JDBC** : spécifiez le nom de classe Java du pilote JDBC. Pour la base de données [!DNL MySQL], spécifiez **com.mysql.jdbc.Driver**.
       * **URI de connexion JDBC** : spécifiez l’URL de connexion de la base de données. Pour la base de données [!DNL MySQL] s’exécutant sur le port 3306 et le schéma weretail, l’URL est : `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`.
 
@@ -88,16 +88,14 @@ Pour configurer votre base de données [!DNL MySQL], procédez comme suit :
 
       * **Test lors de l’emprunt :** activez l’option **[!UICONTROL Test lors de l’emprunt.]**
       * **Test lors du renvoi :** activez l’option **[!UICONTROL Test lors du renvoi.]**
-      * **Requête de validation :** spécifiez une requête SQL SELECT pour valider les connexions à partir du pool. La requête doit renvoyer au moins une ligne. Par exemple, **sélectionnez &#42; depuis customerdetails**.
+      * **Requête de validation :** spécifiez une requête SQL SELECT pour valider les connexions du pool. La requête doit renvoyer au moins une ligne. Par exemple, **sélectionnez &#42; depuis customerdetails**.
       * **Isolation de transaction** : définissez la valeur sur **READ_COMMITTED**.
 
-         Laissez les [valeurs](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) par défaut des autres propriétés et cliquez sur **[!UICONTROL Enregistrer]**.
+        Laissez les [valeurs](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) par défaut des autres propriétés et cliquez sur **[!UICONTROL Enregistrer]**.
 
-         Une configuration similaire à la suivante est créée.
+        Une configuration similaire à la suivante est créée.
 
-         ![relational-database-data-source-configuration](assets/relational-database-data-source-configuration.png)
-
-
+        ![relational-database-data-source-configuration](assets/relational-database-data-source-configuration.png)
 
 ## Étape 2 : Créer un modèle de données de formulaire {#create-fdm}
 
@@ -140,6 +138,7 @@ Pour configurer un modèle de données de formulaire, procédez comme suit :
       * city
       * state
       * zipcode
+
    * **Services :**
 
       * get
@@ -182,11 +181,11 @@ Pour configurer un modèle de données de formulaire, procédez comme suit :
       * **Titre** : indiquez le titre du service. Par exemple : récupérer l’adresse d’expédition.
       * **Description** : spécifiez la description contenant le fonctionnement détaillé du service. Par exemple :
 
-         Ce service récupère l’adresse de livraison et les autres détails du client dans la base de données [!DNL MySQL].
+        Ce service récupère l’adresse de livraison et les autres détails du client dans la base de données [!DNL MySQL].
 
       * **Objet de modèle de sortie** : sélectionnez le schéma contenant les données du client. Par exemple :
 
-         schéma customerdetail
+        schéma customerdetail
 
       * **Tableau de retour** : désactivez l’option **Tableau de retour**.
       * **Arguments** : sélectionnez l’argument nommé **ID**.
@@ -202,20 +201,19 @@ Pour configurer un modèle de données de formulaire, procédez comme suit :
       * **Titre** : indiquez le titre du service. Par exemple, Mettre à jour l’adresse d’expédition.
       * **Description** : indiquez la description contenant le fonctionnement détaillé du service. Par exemple :
 
-         Ce service met à jour l’adresse de livraison et les champs associés dans la base de données MySQL.
+        Ce service met à jour l’adresse de livraison et les champs associés dans la base de données MySQL.
 
       * **Objet de modèle d’entrée** : sélectionnez le schéma contenant les données du client. Par exemple :
 
-         schéma customerdetail
+        schéma customerdetail
 
       * **Type de sortie** : sélectionnez **VALEUR BOOLEENNE**.
 
       * **Arguments** : sélectionnez l’argument nommé **ID** et **customerdetails**.
+
       Appuyez sur **[!UICONTROL Terminé]**. Le service **[!UICONTROL update]** permettant de mettre à jour les détails du client dans la base de données est configuré.[!DNL MySQL]
 
       ![shiiping-address-update](assets/shiiping-address-update.png)
-
-
 
 L’objet du modèle de données et les services contenus dans le modèle de données de formulaire sont configurés. Vous pouvez maintenant tester le modèle de données de formulaire.
 

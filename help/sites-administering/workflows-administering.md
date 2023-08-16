@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
-source-git-commit: 25f7218355b7715949273c84eb72ddde3d6a0a65
-workflow-type: ht
-source-wordcount: '994'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '993'
+ht-degree: 96%
 
 ---
 
@@ -94,10 +94,10 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 
 ## Correction des échecs d’instance de workflows {#fixing-workflow-instance-failures}
 
-Lorsqu’un workflow échoue, AEM fournit la console **Échecs** pour vous permettre d’enquêter et de prendre la mesure appropriée une fois la cause d’origine traitée :
+Lorsqu’un workflow échoue, AEM fournit la variable **Échecs** pour vous permettre d’enquêter et de prendre les mesures appropriées une fois la cause d’origine traitée :
 
 * **Détails de l’échec**
-Ouvre une fenêtre pour afficher le **Message d’échec**, l’**Étape** et la **Pile des échecs**.
+Ouvre une fenêtre pour afficher le **Message d’échec**, **Étape**, et **Pile des échecs**.
 
 * **Ouvrir l’historique**
 Affiche des détails sur l’historique des workflows.

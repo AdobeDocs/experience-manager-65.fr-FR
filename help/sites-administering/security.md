@@ -10,10 +10,10 @@ discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '5402'
-ht-degree: 100%
+source-wordcount: '5401'
+ht-degree: 99%
 
 ---
 
@@ -413,7 +413,7 @@ Les onglets permettent d’accéder à diverses configurations :
 | Masquer les utilisateurs | Bouton (bascule) qui masque tous les utilisateurs et utilisatrices répertoriés, et affiche uniquement les groupes. Consultez la section [Dissimulation des utilisateurs et des groupes](#hiding-users-and-groups). |
 | Masquer les groupes | Bouton bascule qui masque tous les groupes répertoriés, et affiche uniquement les utilisateurs et utilisatrices. Consultez la section [Dissimulation des utilisateurs et des groupes](#hiding-users-and-groups). |
 | Modifier | Un menu vous permettant de créer et de supprimer ainsi que d’activer et de désactiver des utilisateurs ou des groupes. Consultez les sections [Création d’utilisateurs et de groupes](#creating-users-and-groups) et [Suppression d’utilisateurs et de groupes](#deleting-users-and-groups). |
-| Propriétés | Répertorie les informations sur l’utilisateur ou le groupe pouvant inclure des informations d’e-mail, une description et un nom. Vous permet également de modifier le mot de passe d’un utilisateur. Consultez les sections [Création d’utilisateurs et de groupes](#creating-users-and-groups), [Modification des propriétés d’utilisateur et de groupe](#modifying-user-and-group-properties) et [Modification d’un mot de passe utilisateur](#changing-a-user-password). |
+| Propriétés | Répertorie les informations sur l’utilisateur ou le groupe pouvant inclure des informations d’e-mail, une description et un nom. Permet également de modifier le mot de passe d’un utilisateur. Consultez les sections [Création d’utilisateurs et de groupes](#creating-users-and-groups), [Modification des propriétés d’utilisateur et de groupe](#modifying-user-and-group-properties) et [Modification d’un mot de passe utilisateur](#changing-a-user-password). |
 | Groupes | Répertorie tous les groupes auxquels l’utilisateur ou le groupe sélectionné appartient. Vous pouvez affecter l’utilisateur ou le groupe sélectionné à d’autres groupes ou les supprimer des groupes. Consultez la section [Groupes](#adding-users-or-groups-to-a-group). |
 | Membres | Disponible uniquement pour les groupes. Répertorie les membres d’un groupe spécifique. Consultez la section [Membres](#members-adding-users-or-groups-to-a-group). |
 | Autorisations | Vous pouvez attribuer des autorisations à un utilisateur ou à un groupe. Permet de contrôler les éléments suivants :<ul><li>Les autorisations liées à des pages ou des nœuds spécifiques. Consultez la section [Définition des autorisations](#setting-permissions). </li><li>Les autorisations liées à la création et la suppression de pages et à la modification de hiérarchie. ??? vous permet d’[allouer des privilèges](#settingprivileges), par exemple la modification de hiérarchie, qui permet de créer et supprimer des pages.</li><li>Les autorisations liées aux [droits de réplication](#setting-replication-privileges) (généralement de l’auteur à la publication) selon un chemin d’accès.</li></ul> |

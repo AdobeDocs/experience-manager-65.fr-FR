@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: aaeef8fcc0ed5f205aeb7ab40cc61f60912c9869
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1973'
+source-wordcount: '1969'
 ht-degree: 63%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->ClientContext a été remplacé par ContextHub. Pour plus d’informations, voir [configuration](/help/sites-developing/ch-configuring.md) et [développeur](/help/sites-developing/contexthub.md) documentation.
+>ClientContext a été remplacé par ContextHub. Pour plus d’informations, voir [configuration](/help/sites-developing/ch-configuring.md) et [développeur](/help/sites-developing/contexthub.md) la documentation.
 
 Le contexte client. est un mécanisme qui fournit certaines informations sur la page et le visiteur actifs. Il peut être ouvert via **Ctrl-Alt-C** (Windows) ou **Ctrl-Option-C** (Mac) :
 
@@ -31,10 +31,10 @@ Le contexte client. est un mécanisme qui fournit certaines informations sur la 
 
 Dans l’environnement de publication et de création, il affiche des informations sur :
 
-* le visiteur ; selon votre instance, certaines informations sont demandées ou dérivées.
+* Le visiteur ; selon votre instance, certaines informations sont demandées ou dérivées.
 * Les balises de page et le nombre d’accès à ces balises par le visiteur actuel (ceci s’affiche lorsque vous placez la souris sur une balise spécifique).
 * Informations sur la page.
-* des informations sur l&#39;environnement technique ; comme l’adresse IP, la résolution du navigateur et de l’écran.
+* Informations sur l’environnement technique, telles que l’adresse IP, le navigateur et la résolution d’écran.
 * Tout segment actuellement résolu.
 
 Les icônes (disponibles uniquement dans l’environnement de création) vous permettent de configurer les détails du contexte client :
@@ -207,7 +207,7 @@ La modification d’un contexte client peut être utilisée pour définir (ou r�
 
 ### Modification des détails d’une propriété {#editing-property-details}
 
-La modification du contexte client peut être utilisée pour définir (ou réinitialiser) les valeurs de certaines propriétés. Ceci vous permet de tester certains scénarios spécifiques (ce qui est particulièrement utile pour la [segmentation](/help/sites-administering/campaign-segmentation.md) et les [campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
+La modification du contexte client peut être utilisée pour définir (ou réinitialiser) les valeurs de certaines propriétés. Vous pouvez ainsi tester des scénarios spécifiques (particulièrement utiles pour [segmentation](/help/sites-administering/campaign-segmentation.md) et [campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
 
 ![Modification de ClientContext](assets/clientcontext_alisonparker_edit.png)
 
@@ -278,10 +278,10 @@ Utilisez les données de la boutique de session que vous avez créée à l’aid
 
 1. Double-cliquez sur le composant pour ouvrir la boîte de dialogue de modification, spécifiez les valeurs de propriété suivantes, puis cliquez sur OK :
 
-   * Magasin : wipmanie
+   * Magasin : wipmania
    * Nom de la propriété : latitude
    * Opérateur : est supérieur à
-   * Valeur de propriété : 30
+   * Valeur de la propriété : 30
 
 1. Faites glisser le composant Script vers le même conteneur ET, puis ouvrez sa boîte de dialogue de modification. Ajoutez le script suivant, puis cliquez sur OK :
 

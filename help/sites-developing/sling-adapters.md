@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 6465e2c4-28e5-4fc8-8cca-7b632f10ba5a
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2151'
-ht-degree: 58%
+source-wordcount: '2150'
+ht-degree: 57%
 
 ---
 
 # Utilisation des adaptateurs Sling{#using-sling-adapters}
 
-[Sling](https://sling.apache.org) propose un [modèle Adaptateur](https://sling.apache.org/documentation/the-sling-engine/adapters.html) permettant de convertir facilement les objets qui mettent en œuvre l’interface [Adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29). Cette interface fournit une variable générique [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) qui convertit l’objet au type de classe transmis en tant qu’argument.
+[Sling](https://sling.apache.org) propose un [modèle Adaptateur](https://sling.apache.org/documentation/the-sling-engine/adapters.html) permettant de convertir facilement les objets qui mettent en œuvre l’interface [Adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29). Cette interface fournit une variable [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) qui convertit l’objet au type de classe transmis en tant qu’argument.
 
 Par exemple, pour convertir un objet Resource en objet Node correspondant, vous pouvez simplement procéder comme suit :
 
@@ -46,7 +46,7 @@ Il existe plusieurs scénarios d’utilisation :
 Il existe plusieurs raisons à cela, notamment :
 
 * l’implémentation ne prend pas en charge le type de cible.
-* une fabrique d’adaptateur qui gère ce cas n’est pas principale (par exemple, en raison de références de service manquantes).
+* une fabrique d’adaptateur qui gère ce cas n’est pas active (par exemple, en raison de références de service manquantes).
 * la condition interne a échoué
 * Le service n’est pas disponible.
 
@@ -109,7 +109,7 @@ Pour le premier cas, les documents Java™ peuvent indiquer ce qui suit : `adapt
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">ModifiableValueMap</a></td>
-   <td>Extension de <a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a> qui vous permet de modifier les propriétés sur ce nœud</td>
+   <td>Une extension de la fonction <a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>, qui permet de modifier les propriétés sur ce noeud.</td>
   </tr>
   <tr>
    <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td>
@@ -145,7 +145,7 @@ Pour le premier cas, les documents Java™ peuvent indiquer ce qui suit : `adapt
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/components/Component.html">Composant</a></td>
-   <td>S’il s’agit d’une <code>cq:Component</code> ressource de noeud</td>
+   <td>Si c’est un <code>cq:Component</code> ressource de noeud</td>
   </tr>  
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/designer/Design.html">Conception</a></td>
@@ -153,11 +153,11 @@ Pour le premier cas, les documents Java™ peuvent indiquer ce qui suit : `adapt
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Template.html">Modèle </a></td>
-   <td>S’il s’agit d’une <code>cq:Template</code> ressource de noeud</td>
+   <td>Si c’est un <code>cq:Template</code> ressource de noeud</td>
   </tr>  
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/Blueprint.html">Plan directeur</a></td>
-   <td>S’il s’agit d’une <code>cq:Template</code> ressource de noeud</td>
+   <td>Si c’est un <code>cq:Template</code> ressource de noeud</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/dam/api/Asset.html">Asset</a></td>
@@ -169,7 +169,7 @@ Pour le premier cas, les documents Java™ peuvent indiquer ce qui suit : `adapt
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/tagging/Tag.html">Balise</a></td>
-   <td>S’il s’agit d’une <code>cq:Tag</code> ressource de noeud</td>
+   <td>Si c’est un <code>cq:Tag</code> ressource de noeud</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
@@ -201,7 +201,7 @@ Pour le premier cas, les documents Java™ peuvent indiquer ce qui suit : `adapt
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/config/package-summary.html">Config</a></td>
-   <td>S’il s’agit d’une <code>cq:ContentSyncConfig</code> ressource de noeud</td>
+   <td>Si c’est un <code>cq:ContentSyncConfig</code> ressource de noeud</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/config/package-summary.html">ConfigEntry</a></td>

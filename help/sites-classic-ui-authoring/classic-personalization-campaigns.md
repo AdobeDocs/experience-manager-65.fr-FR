@@ -1,14 +1,14 @@
 ---
 title: Gestion de campagnes
-description: La gestion des campagnes offre aux spécialistes du marketing numérique la possibilité de diffuser du contenu personnalisé et de créer ainsi des expériences dédiées pour les visiteurs et visiteuses. Il vous permet d’orchestrer vos campagnes marketing sur le Web, par e-mail et sur les services mobiles, et ainsi d’impliquer vos visiteurs.
+description: La gestion des campagnes offre aux spécialistes du marketing numérique la possibilité de diffuser du contenu personnalisé et de créer ainsi des expériences dédiées pour les visiteurs et visiteuses. Il vous permet d’orchestrer vos campagnes marketing sur le Web, par e-mail et sur les services mobiles, et d’impliquer ainsi vos visiteurs.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: d1741525-a475-4a76-bd16-55318023495e
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '621'
 ht-degree: 26%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 26%
 
 La gestion des campagnes offre aux spécialistes du marketing numérique la possibilité de diffuser du contenu personnalisé et de créer ainsi des expériences dédiées pour les visiteurs et visiteuses.
 
-Il vous permet d’orchestrer vos campagnes marketing sur le Web, par e-mail et sur les services mobiles, et ainsi d’impliquer vos visiteurs. Vous pouvez créer du contenu, segmenter les visiteurs, diffuser et promouvoir du contenu ciblé pour des profils utilisateur spécifiques et gérer des campagnes sur plusieurs canaux.
+Il vous permet d’orchestrer vos campagnes marketing sur le Web, par e-mail et sur les services mobiles, et d’impliquer ainsi vos visiteurs. Vous pouvez créer du contenu, segmenter les visiteurs, diffuser et promouvoir du contenu ciblé pour des profils utilisateur spécifiques et gérer des campagnes sur plusieurs canaux.
 
 Ce document décrit les différents éléments qui composent les campagnes. Des informations plus détaillées sont disponibles dans les documents suivants :
 

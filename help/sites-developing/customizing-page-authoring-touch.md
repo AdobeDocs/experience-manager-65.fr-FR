@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 47%
+source-wordcount: '1339'
+ht-degree: 46%
 
 ---
 
@@ -30,7 +30,7 @@ Adobe Experience Manager (AEM) fournit divers mécanismes pour vous permettre de
 
 * Recouvrements
 
-  Les recouvrements sont basés sur les définitions de nœuds et vous permettent de recouvrir la fonctionnalité standard (dans `/libs`) avec votre propre fonctionnalité personnalisée (dans `/apps`). Lors de la création d’une superposition, une copie 1:1 de l’original n’est pas nécessaire, car la fonction [fusion de ressources sling](/help/sites-developing/sling-resource-merger.md) autorise l’héritage.
+  Les superpositions reposent sur des définitions de noeud et vous permettent de superposer la fonctionnalité standard (dans `/libs`) avec vos propres fonctionnalités personnalisées (dans `/apps`). Lors de la création d’une superposition, une copie 1:1 de l’original n’est pas requise, car la variable [fusion de ressources sling](/help/sites-developing/sling-resource-merger.md) autorise l’héritage.
 
 >[!NOTE]
 >
@@ -62,11 +62,11 @@ Elles peuvent être utilisées de différentes manières pour étendre la foncti
 
 ## Ajouter un nouveau calque (mode) {#add-new-layer-mode}
 
-Lorsque vous modifiez une page, il existe plusieurs [modes](/help/sites-authoring/author-environment-tools.md#page-modes) disponible. Ces modes sont implémentés à l’aide de [calques](/help/sites-developing/touch-ui-structure.md#layer). Ils permettent d’accéder à différents types de fonctionnalités pour le même contenu de page. Les couches standard sont les suivantes : modifier, prévisualiser, annoter, développer et cibler.
+Lorsque vous modifiez une page, il existe plusieurs [modes](/help/sites-authoring/author-environment-tools.md#page-modes) disponible. Ces modes sont implémentés à l’aide de [calques](/help/sites-developing/touch-ui-structure.md#layer). Ils permettent d’accéder à différents types de fonctionnalités pour le même contenu de page. Les calques standard sont les suivants : édition, prévisualisation, annotation, développeur et ciblage.
 
 ### Exemple de calque : État de Live Copy {#layer-example-live-copy-status}
 
-Une instance d’AEM standard fournit la couche MSM. Il accède aux données relatives à [gestion multisite](/help/sites-administering/msm.md) et le surligne dans le calque.
+Une instance AEM standard fournit la couche MSM. Il accède aux données relatives à [gestion multisite](/help/sites-administering/msm.md) et le met en surbrillance dans le calque.
 
 Pour l’afficher en action, vous pouvez modifier n’importe quel [Copie de langue We.Retail](/help/sites-developing/we-retail-globalized-site-structure.md) (ou toute autre page Live Copy) et sélectionnez **État de Live Copy** mode .
 
@@ -155,7 +155,7 @@ Dans une installation AEM standard :
 
            Définit le type d’éditeur intégré utilisé lorsque la modification statique est déclenchée pour ce composant ; par exemple, `text`, `textimage`, `image`, `title`.
 
-1. Vous pouvez configurer d’autres détails de configuration de l’éditeur à l’aide d’un `config` noeud contenant des configurations et un `plugin` pour contenir les détails de configuration du module externe nécessaires.
+1. Vous pouvez configurer d’autres détails de configuration de l’éditeur à l’aide d’un `config` noeud contenant des configurations et un `plugin` pour contenir les détails de configuration du module.
 
    Voici un exemple de définition des proportions pour le module externe de recadrage d’image du composant d’image. En raison de la taille d’écran limitée, les proportions de recadrage ont été déplacées vers l’éditeur plein écran et ne peuvent être vues qu’à cet endroit.
 
@@ -201,7 +201,7 @@ Pour mettre en œuvre un nouvel éditeur statique (au sein de votre bibliothèqu
 
    * `editor.register`
 
-1. Indiquez la connexion entre l’éditeur et chaque type de ressource (comme dans le composant) qui peut l’utiliser.
+1. Fournissez la connexion entre l’éditeur et chaque type de ressource (comme dans le composant) qui peut l’utiliser.
 
 #### Exemple de code pour la création d’un éditeur statique {#code-sample-for-creating-a-new-in-place-editor}
 

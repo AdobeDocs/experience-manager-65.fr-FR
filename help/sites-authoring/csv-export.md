@@ -1,7 +1,7 @@
 ---
 title: Exporter au format CSV
 seo-title: Export to CSV
-description: Exportez les informations relatives à vos pages vers un fichier CSV situé sur votre système local
+description: Exporter des informations sur vos pages dans un fichier CSV sur votre système local
 seo-description: Export information about your pages to a CSV file on your local system
 uuid: 6eee607b-3510-4f6a-ba82-b27480a4fbe1
 contentOwner: Chris Bohnert
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
 exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '191'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 85%
 
 ---
 
@@ -30,7 +30,7 @@ L’option **Créer une exportation CSV** vous permet d’exporter les informati
 >
 >La fonction de téléchargement et la destination par défaut du navigateur sont utilisées.
 
-L’assistant **Créer une exportation CSV** vous permet de sélectionner les éléments suivants :
+La variable **Créer une exportation CSV** vous permet de sélectionner :
 
 * Propriétés à exporter
    * Métadonnées
@@ -43,7 +43,7 @@ L’assistant **Créer une exportation CSV** vous permet de sélectionner les é
       * Traduit
    * Analyses
       * Pages vues
-      * Visiteurs uniques
+      * Visiteurs et visiteuses uniques
       * Temps sur la page
 * Profondeur
    * Chemin d’accès parent
@@ -55,7 +55,7 @@ Vous pouvez ouvrir le fichier `export.csv` obtenu dans Excel (ou toute autre app
 
 ![etc-01](assets/etc-01.png)
 
-L’option **Créer une exportation CSV** est disponible lorsque vous naviguez sur la console **Sites** (en mode Liste) : il s’agit d’une option du menu déroulant **Créer** :
+L’option **Créer une exportation CSV** est disponible lorsque vous naviguez sur la console **Sites** (dans la vue Liste) : il s’agit d’une option du menu déroulant **Créer** :
 
 ![etc-02](assets/etc-02.png)
 
@@ -66,5 +66,5 @@ Pour créer une exportation CSV :
 
    ![etc-03](assets/etc-03.png)
 
-1. Sélectionnez les propriétés requises à exporter.
+1. Sélectionnez les propriétés à exporter.
 1. Sélectionnez **Créer**.

@@ -1,8 +1,8 @@
 ---
 title: Extension du suivi des événements
 seo-title: Extending Event Tracking
-description: AEM Analytics vous permet d’effectuer le suivi des interactions utilisateur sur votre site web.
-seo-description: AEM Analytics allows you to track user interaction on your website
+description: AEM Analytics vous permet de suivre les interactions utilisateur sur votre site web.
+seo-description: AEM Analytics lets you track user interaction on your website
 uuid: 722798ac-4043-4918-a6df-9eda2c85020b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,16 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
 exl-id: a71d20e6-0321-4afb-95fe-6de8b7b37245
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '487'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '485'
+ht-degree: 73%
 
 ---
 
 # Extension du suivi des événements{#extending-event-tracking}
 
-AEM Analytics vous permet d’effectuer le suivi des interactions utilisateur sur votre site web. En tant que développeur, vous pouvez avoir besoin :
+AEM Analytics vous permet d’effectuer le suivi des interactions utilisateur sur votre site web. En tant que développeur, vous devrez peut-être :
 
 * de suivre la façon dont les visiteurs interagissent avec les composants (cela peut être effectué à l’aide d’[événements personnalisés](#custom-events)) ;
 * [d’accéder aux valeurs dans le contexte client](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub) ;
@@ -33,9 +33,9 @@ AEM Analytics vous permet d’effectuer le suivi des interactions utilisateur s
 
 ## Événements personnalisés {#custom-events}
 
-Les événements personnalisés suivent tout ce qui dépend de la disponibilité d’un élément spécifique sur la page. Cela inclut également les événements spécifiques à un modèle, car le composant de page est traité comme un autre composant.
+Les événements personnalisés effectuent le suivi de tout ce qui dépend de la disponibilité d’un composant spécifique sur la page. Cela inclut également les événements spécifiques au modèle, dans la mesure où le composant de page est traité comme un autre composant.
 
-### Suivi d’événements personnalisés lors du chargement d’une page {#tracking-custom-events-on-page-load}
+### Suivi des événements personnalisés au chargement de la page {#tracking-custom-events-on-page-load}
 
 Ce type d’opération peut être réalisé en utilisant le pseudo-attribut `data-tracking` (l’ancien attribut d’enregistrement est toujours pris en charge pour la compatibilité descendante). Vous pouvez l’ajouter à n’importe quelle balise HTML.
 
@@ -43,9 +43,9 @@ La syntaxe de `data-tracking` est :
 
 * `data-tracking="{'event': ['eventName'], 'values': {'key': 'value', 'nextKey': 'nextValue'}, componentPath: 'myapp/component/mycomponent'}"`
 
-Vous pouvez transmettre n’importe quel nombre de paires clé-valeur comme second paramètre appelé charge utile.
+Vous pouvez transmettre n’importe quel nombre de paires clé-valeur comme second paramètre, appelé payload.
 
-En voici un exemple :
+Voici un exemple :
 
 ```xml
 <span data-tracking="{event:'blogEntryView',
@@ -112,6 +112,6 @@ Une boutique spécifique :
 
 Des rappels enregistrés avant et après à l’aide des fonctions `CQ_Analytics.registerBeforeCallback(callback,rank)` et `CQ_Analytics.registerAfterCallback(callback,rank)`.
 
-Les deux fonctions prennent une fonction comme premier argument et un classement comme deuxième argument, ce qui détermine l’ordre dans lequel les rappels sont exécutés.
+Les deux fonctions prennent une fonction comme premier argument et un rang comme deuxième argument, ce qui détermine l’ordre d’exécution des rappels.
 
-Si votre rappel renvoie false, les rappels suivants dans la chaîne d’exécution ne sont pas exécutés.
+Si votre rappel renvoie false, les rappels suivants dans la chaîne d’exécution ne seront pas exécutés.

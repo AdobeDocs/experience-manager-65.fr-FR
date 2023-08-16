@@ -12,20 +12,20 @@ discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2041'
 ht-degree: 4%
 
 ---
 
 # Console de modération {#moderation-console}
 
-Dans AEM Communities, en bloc [modération du contenu de la communauté](/help/communities/moderate-ugc.md) est possible à partir des environnements de création et de publication par les administrateurs et les modérateurs de la communauté (membres de la communauté approuvés affectés en tant que modérateurs).
+Dans AEM Communities, en bloc [modération du contenu communautaire](/help/communities/moderate-ugc.md) est possible à partir des environnements de création et de publication par les administrateurs et les modérateurs de la communauté (membres de la communauté approuvés affectés en tant que modérateurs).
 
 Les administrateurs et les modérateurs de la communauté peuvent également effectuer des opérations [modération en contexte](/help/communities/in-context.md) dans l’environnement de publication.
 
-Une fonctionnalité de tous les [sites communautaires](/help/communities/sites-console.md) est un `Administration` pour les utilisateurs qui se connectent avec des privilèges d’administrateur. Le `Administration` permet d’accéder à la console Modération.
+Une fonctionnalité de tous les [sites communautaires](/help/communities/sites-console.md) est un `Administration` pour les utilisateurs qui se connectent avec des privilèges d’administrateur. La variable `Administration` permet d’accéder à la console Modération.
 
 Dans la console Modération , les administrateurs et les modérateurs de communauté auront accès à tout le contenu généré par l’utilisateur pour lequel ils sont autorisés à modérer le contenu. S’il est autorisé à modérer plusieurs sites, il est possible d’afficher les publications sur tous les sites ou de filtrer selon les sites de communautés sélectionnés.
 
@@ -60,7 +60,7 @@ Uniquement lorsqu’il est connecté en tant qu’administrateur ou en tant que 
 
 >[!NOTE]
 >
->Le contenu généré par l’utilisateur de l’environnement de publication n’est visible sur l’auteur que si la SRP choisie met en oeuvre un magasin commun. Par exemple, par défaut, le stockage est JSRP, ce qui n’est pas un magasin courant pour la création et la publication. Voir [Stockage de contenu communautaire](/help/communities/working-with-srp.md).
+>Le contenu généré par l’utilisateur de l’environnement de publication n’est visible sur l’auteur que si la SRP choisie met en oeuvre un magasin commun. Par exemple, par défaut, le stockage est JSRP, ce qui n’est pas un magasin courant pour la création et la publication. Consultez la section [Stockage de contenu de la communauté](/help/communities/working-with-srp.md).
 
 ![modération-consoleauthor](assets/moderationconsoleauthor.png)
 
@@ -130,7 +130,7 @@ Cependant, si vous cochez **Question** et **En attente**, vous verrez uniquement
 
 Lorsque le rail de filtrage est ouvert, l’icône Rechercher permet de basculer entre le panneau latéral et le panneau fermé. Toutefois, pour fermer le rail de filtrage et afficher uniquement le contenu généré par l’utilisateur, cliquez sur l’icône Rechercher et sélectionnez l’option Contenu uniquement .
 
-#### Content Path (Chemin d’accès au contenu) {#content-path}
+#### Chemin d’accès au contenu {#content-path}
 
 Le chemin d’accès au contenu limite le contenu généré par l’utilisateur de référence affiché aux publications placées dans le référentiel de contenu spécifié.
 
@@ -186,8 +186,9 @@ Pour ajouter des ressources supplémentaires sur lesquelles filtrer :
 
    * Par exemple, pour filtrer selon les composants de vote inclus, saisissez :
 
-      `Voting=social/tally/components/hbs/voting`
-   ![additional-contenttype](assets/additional-contenttype.png)
+     `Voting=social/tally/components/hbs/voting`
+
+  ![additional-contenttype](assets/additional-contenttype.png)
 
 * Sélectionnez Enregistrer.
 * Actualisez la console Communautés - Modération .
@@ -196,9 +197,9 @@ Le résultat est un nouveau filtre sélectionnable pour `Voting` sous le `Conten
 
 Lorsque ce filtre est sélectionné, le contenu du tableau de bord affiche le contenu généré par l’utilisateur correspondant à l’un des types de ressources renseignés.
 
-#### État {#status}
+#### Statut {#status}
 
-État limite le contenu généré par l’utilisateur référencé aux publications dont l’état sélectionné peut être En attente, Approuvé, Refusé ou Fermé, ainsi que Version préliminaire ou Planifié pour les articles de blog et Réponse ou Non aux questions Q&amp;R. Si aucun paramètre n’est sélectionné, tous sont affichés.
+État limite le contenu généré par l’utilisateur référencé aux publications dont l’état sélectionné peut être En attente, Approuvé, Refusé ou Fermé, ainsi que Version préliminaire ou Planifié pour les articles de blog et Réponse ou Non aux questions Q&amp;R. Si aucun paramètre n’est sélectionné, tous les paramètres sont affichés.
 
 >[!NOTE]
 >
@@ -210,7 +211,7 @@ Lorsque ce filtre est sélectionné, le contenu du tableau de bord affiche le co
 
 Le marquage limite le contenu généré par l’utilisateur référencé aux publications qui sont marquées ou masquées.
 
-Une fois qu’un élément de contenu est marqué, il reste marqué jusqu’à ce que vous ne le marquiez pas en sélectionnant l’option **Indicateur** une fois de plus. Notez qu’il n’existe aucun niveau d’indicateur, tel qu’important ou suivi.
+Une fois qu’un élément de contenu est marqué, il reste marqué jusqu’à ce que vous ne le marquiez pas en sélectionnant l’option **Indicateur** à nouveau. Notez qu’il n’existe aucun niveau d’indicateur, tel qu’important ou suivi.
 
 ![indicateur](assets/flagging.png)
 
@@ -218,7 +219,7 @@ Une fois qu’un élément de contenu est marqué, il reste marqué jusqu’à c
 
 Les membres limitent le contenu créé par l’utilisateur référencé à celui publié par le nom du membre saisi.
 
-![members](assets/members.png)
+![membres](assets/members.png)
 
 #### Publié au cours du ou des derniers {#posted-in-the-last}
 
@@ -238,15 +239,15 @@ Excepté les filtres prêts à l’emploi dans [Rail de filtres](/help/communiti
 
 ![custom-tag-filter](assets/custom-tag-filter.png)
 
-Le [exemple de projet](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) sur Github implémente le filtre Balises pour filtrer la liste du contenu créé par l’utilisateur selon que les balises spécifiques sont appliquées au contenu généré par l’utilisateur. Vous pouvez suivre l’exemple de code et créer des filtres analogues pour d’autres champs de métadonnées UGC similaires.
+La variable [exemple de projet](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) sur Github implémente le filtre Balises pour filtrer la liste du contenu créé par l’utilisateur selon que les balises spécifiques sont appliquées au contenu généré par l’utilisateur. Vous pouvez suivre l’exemple de code et créer des filtres analogues pour d’autres champs de métadonnées UGC similaires.
 
 Pour installer l’exemple pour le filtre Balises :
 
-1. Ouvrez le gestionnaire de modules sur AEM Author (`https://[aem-author]:4502/crx/packmgr/index.jsp`) et AEM Publish (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
+1. Ouvrez le gestionnaire de packages sur AEM Auteur (`https://[aem-author]:4502/crx/packmgr/index.jsp`) et AEM Publier (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
 1. Création du package `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` à partir du code Github, puis installez et activez-le.
-1. Ouvrez la console de lots sur l’auteur AEM ( `https://[aem-author]:4502/system/console/bundles`) et AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`).
+1. Ouvrez la console des lots sur AEM Auteur ( `https://[aem-author]:4502/system/console/bundles`) et AEM Publier ( `https://[aem-publish]:4503/system/console/bundles`).
 1. Créez le package (`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) à partir de Github, puis installez et activez-le.
-1. Accédez à **/apps/social/modération/facettes** noeud sur l’auteur AEM (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) et Publication AEM (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
+1. Accédez à **/apps/social/modération/facettes** noeud sur AEM Auteur (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) et AEM Publier (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
 1. Ajout d’un utilisateur technique **communities-utility-reader** avec `jcr:read` autorisations.
 
 Pour afficher les filtres personnalisés sur les sites de la communauté existants :
@@ -255,7 +256,7 @@ Pour afficher les filtres personnalisés sur les sites de la communauté existan
 
    * Ajouter une nouvelle catégorie `cq.social.hbs.moderation.v2.`
 
-1. Accédez à `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
+1. Accédez à `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`.
 
    * Définir sur le nouveau composant `sling:resourceType = social/moderation/v2/filters.`
 
@@ -267,7 +268,7 @@ Pour afficher les filtres personnalisés sur les sites de la communauté existan
 
 [Actions de modération](/help/communities/moderate-ugc.md#moderation-actions) peut être effectué sur une ou plusieurs sélections effectuées dans la zone de contenu ou lors de l’affichage des détails du contenu.
 
-Pour modérer les publications en bloc, dans la zone de contenu, cliquez sur Sélectionner (![selecticon](assets/selecticon.png)) sur une publication, qui s’affiche lorsque vous pointez dessus avec la souris (bureau) ou appuyez et maintenez un doigt sur la publication (mobile). Ce faisant, vous accédez au mode de sélection multiple et pouvez désormais sélectionner les publications suivantes à modérer en bloc en cliquant simplement sur celles-ci. Utilisez les boutons affichés sur la barre d’outils pour effectuer des actions de modération sur les publications sélectionnées. Toutes les actions vous invitent à confirmer l’opération.
+Pour modérer les publications en bloc, dans la zone de contenu, cliquez sur Sélectionner (![sélecteur](assets/selecticon.png)) sur une publication, qui s’affiche lorsque vous pointez dessus avec la souris (bureau) ou appuyez et maintenez un doigt sur la publication (mobile). Ce faisant, vous accédez au mode de sélection multiple et pouvez désormais sélectionner les publications suivantes à modérer en bloc en cliquant simplement sur celles-ci. Utilisez les boutons affichés sur la barre d’outils pour effectuer des actions de modération sur les publications sélectionnées. Toutes les actions vous invitent à confirmer l’opération.
 
 Pour modérer une seule publication dans la zone de contenu, passez le curseur de la souris (bureau) ou appuyez et maintenez un doigt sur la publication (mobile) afin que les boutons s’affichent sur la publication. Lors d’un fonctionnement sur un seul détail de contenu, seule une action de suppression est appelée pour confirmation.
 
@@ -328,7 +329,7 @@ Lorsque vous travaillez avec une seule publication, l’icône Autoriser s’aff
 
 ![refuser](assets/deny.png)
 
-Le **Refuser** l’action de modération n’est disponible que pour le contenu modéré qui n’apparaît pas sur le contenu non modéré, sauf en mode multi-sélection.
+La variable **Refuser** l’action de modération n’est disponible que pour le contenu modéré qui n’apparaît pas sur le contenu non modéré, sauf en mode multi-sélection.
 
 Le contenu non modéré est toujours approuvé.
 
@@ -338,13 +339,13 @@ Le contenu qui quitte l’état en attente ne peut jamais revenir à l’état e
 
 #### Supprimer {#delete}
 
-![Supprimez](assets/delete.png)
+![delete](assets/delete.png)
 
 En mode de sélection unique ou en bloc, vous pouvez sélectionner des éléments et les supprimer. L’action de suppression génère une boîte de dialogue de confirmation. Une fois supprimés, ces éléments disparaissent immédiatement de la zone de contenu. **Une fois le contenu créé par l’utilisateur supprimé, il est définitivement supprimé du référentiel et ne peut plus être récupéré ultérieurement.**.
 
 #### Fermer {#close}
 
-![close](assets/close.png)
+![fermer](assets/close.png)
 
 Lorsque vous travaillez avec une seule publication, une icône Fermer s’affiche si le type de contenu généré par l’utilisateur permet d’empêcher d’autres publications pour cette ressource.
 

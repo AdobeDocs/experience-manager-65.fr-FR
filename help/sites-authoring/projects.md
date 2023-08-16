@@ -10,17 +10,17 @@ content-type: reference
 discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
 docset: aem65
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 85e993000c016240c0fbf398ec8192990e60eee6
-workflow-type: ht
-source-wordcount: '1366'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1365'
+ht-degree: 91%
 
 ---
 
 
 # Projets {#projects}
 
-Les projets permettent de regrouper des ressources dans une seule entité. Un environnement commun et partagé permet de gérer facilement vos projets. Dans AEM, les types de ressources que vous pouvez associer à un projet s’appellent des mosaïques. Les mosaïques peuvent inclure des informations de projet et d’équipe, des ressources numériques, des workflows et d’autres types d’informations, comme le précise en détail la section [Mosaïques de projet](#project-tiles).
+Les projets vous permettent de regrouper des ressources dans une seule entité. Un environnement commun et partagé facilite la gestion de vos projets. Les types de ressources que vous pouvez associer à un projet sont appelés mosaïques dans AEM. Les mosaïques peuvent inclure des informations de projet et d’équipe, des ressources numériques, des workflows et d’autres types d’informations, comme le précise en détail la section [Mosaïques de projet](#project-tiles).
 
 En tant qu’utilisateur, vous pouvez effectuer les actions suivantes :
 
@@ -94,7 +94,7 @@ Vous pouvez associer les mosaïques suivantes à votre projet.
 * [Liens](#links)
 * [Informations sur le projet](#project-info)
 * [Équipe](#team)
-* [Pages d’entrée](#landing-pages)
+* [Pages de destination](#landing-pages)
 * [E-mails](#emails)
 * [Workflows](#workflows)
 * [Lancements](#launches)
@@ -114,7 +114,7 @@ Vous chargez des ressources directement dans la mosaïque.
 
 ### Collections de ressources {#asset-collections}
 
-Comme avec les ressources, vous pouvez ajouter des [collections de ressources](/help/assets/manage-collections.md) directement à votre projet. Vous définissez les collections dans Assets.
+Comme pour les ressources, vous pouvez ajouter des [collections de ressources](/help/assets/manage-collections.md) directement à votre projet. Vous définissez les collections dans Assets.
 
 ![Mosaïque Collection de ressources](assets/project-tile-asset-collection.png)
 
@@ -155,13 +155,13 @@ Pour configurer votre traduction, consultez le document [Création de projets de
 
 ### Équipe {#team}
 
-Dans cette mosaïque, vous pouvez définir les membres de l’équipe de projet. En mode d’édition, vous pouvez saisir le nom des membres d’équipe et attribuer des rôles utilisateur.
+Dans cette mosaïque, vous pouvez définir les membres de l’équipe de projet. Lors de la modification, vous pouvez saisir le nom du membre de l’équipe et attribuer le rôle d’utilisateur.
 
 ![Mosaïque Équipe](assets/project-tile-team.png)
 
 Vous pouvez ajouter et supprimer des membres de l’équipe. De plus, vous pouvez modifier le [rôle utilisateur](#userroles) attribué à chaque membre de l’équipe.
 
-### Pages d’entrée {#landing-pages}
+### Pages de destination {#landing-pages}
 
 La mosaïque **pages d’entrée** vous permet de demander une nouvelle page de destination.
 
@@ -171,11 +171,11 @@ Ce workflow est décrit dans le document [Création d’un workflow de page de d
 
 ### E-mails {#emails}
 
-La mosaïque **Courriels** permet de gérer les demandes de courrier électronique. Elle lance le workflow de **demande d’e-mail**.
+La variable **Emails** vous aide à gérer les requêtes de courrier électronique. Elle lance le workflow de **demande d’e-mail**.
 
 ![Mosaïque E-mail](assets/project-tile-email.png)
 
-Pour plus d’informations, se reporter à [Worfklow de demande de courrier électronique.](/help/sites-authoring/projects-with-workflows.md#request-email-workflow) 
+Pour plus d’informations, voir la section [Workflow de demande d’e-mail.](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
 
 ### Workflows {#workflows}
 
@@ -221,7 +221,7 @@ Pour vous permettre de gérer les autorisations de sécurité et de contrôle, t
 
 | Rôle | Description | Autorisations | Appartenance à un groupe |
 |---|---|---|---|
-| Observateur | Un utilisateur disposant de ce rôle peut afficher les détails du projet, y compris son statut. | Droits en lecture seule sur un projet | Groupe `workflow-users` |
+| Observateur | Un utilisateur disposant de ce rôle peut afficher les détails du projet, y compris son statut. | Autorisations en lecture seule sur un projet | Groupe `workflow-users` |
 | Éditeur | Un utilisateur disposant de ce rôle peut charger et modifier le contenu d’un projet. | Accès en lecture et en écriture à un projet, aux métadonnées associées et aux ressources connexes<br>Droits permettant à l’utilisateur de charger une liste de plans ou une séance photo et de passer en revue et d’approuver des ressources<br>Droits en écriture sur `/etc/commerce`<br>Droits de modification sur un projet spécifique | Groupe `workflow-users` |
 | Propriétaire | Un utilisateur disposant de ce rôle peut créer un projet, lancer le travail dans un projet et déplacer les ressources approuvées dans le dossier d’exploitation. Toutes les autres tâches de projet peuvent également être visualisées et implémentées par le propriétaire. | Droits en écriture sur `/etc/commerce` | « `dam-users` » (pour pouvoir créer un projet)« <br>`project-administrators` » (pour pouvoir déplacer des ressources) |
 

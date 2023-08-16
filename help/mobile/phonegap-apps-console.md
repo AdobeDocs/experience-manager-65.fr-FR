@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2695'
+source-wordcount: '2692'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Des informations sur l’exécution des tâches du marketeur apparaissent sur ce
 
 ## Structure des applications mobiles {#the-structure-of-mobile-applications}
 
-AEM Mobile fournit le plan directeur de l’application PhoneGap pour la création d’applications mobiles. Le plan directeur définit la structure des applications que vous créez. Les applications se composent des éléments suivants :
+AEM Mobile fournit le plan directeur de l’application PhoneGap pour créer des applications mobiles. Le plan directeur définit la structure des applications que vous créez. Les applications se composent des éléments suivants :
 
 * Page racine.
 * Variations de langue de l’application.
@@ -77,8 +77,8 @@ Vous pouvez également fournir un fichier image à utiliser comme miniature de l
 
 Il existe des onglets supplémentaires (et facultatifs) pour créer le service cloud et intégrer le module SDK Mobile Services Adobe dans votre application.
 
-* Build : Cliquez sur Gérer les configurations et configurez ici votre service de génération build build.phonegap.com. Ensuite, dans la liste déroulante, vous pourrez sélectionner le nouveau service cloud PhoneGap Build.
-* Analytics : Cliquez sur Gérer les configurations et configurez vos [SDK Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) service cloud. Ensuite, dans la liste déroulante, vous pourrez sélectionner le service mobile nouvellement créé à intégrer à votre application mobile.
+* Créer : cliquez sur gérer les configurations et configurez votre build.phonegap.com service de génération ici. Ensuite, dans la liste déroulante, vous pourrez sélectionner le nouveau service cloud PhoneGap Build.
+* Analytics : cliquez sur Gérer les configurations et configurez votre [SDK Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) service cloud. Ensuite, dans la liste déroulante, vous pourrez sélectionner le service mobile nouvellement créé à intégrer à votre application mobile.
 
 >[!NOTE]
 >
@@ -171,7 +171,7 @@ Procédez comme suit sur l’instance où vous souhaitez mettre à jour le cache
 
 Il s’agit d’une fonctionnalité disponible avec les applications 6.1 Feature Pack 2 et qui permet d’exploiter facilement les modèles d’applications existants pour créer de nouvelles applications dans AEM.
 
-Qu’est-ce qu’un modèle d’application ? Considérez-le comme un ensemble de modèles de page et de composants qui représentent une ligne de base ou une base d’une application.
+Qu’est-ce qu’un modèle d’application ? Considérez-le comme un ensemble de modèles de page et de composants qui représentent une référence ou une base d’une application.
 Lors de la création d’une application basée sur le modèle d’une autre application, vous obtenez une application dont le point de départ est représentatif de l’application à partir de laquelle elle a été créée.
 
 Pour utiliser cette fonctionnalité, vous devez disposer d’un modèle d’application mobile (ou d’une application installée avec un modèle d’application).
@@ -242,7 +242,7 @@ La page Engrenage permet aux utilisateurs d’accéder aux pages de produits. Un
 
 * Saison 
 * Vêtements
-* Sexe
+* Genre
 * Activity
 
 Chaque page de catégorie utilise la même structure de contenu que la page d’engrenage. Le carrousel permet d’accéder aux pages enfants qui sont des sous-catégories de produits. Les pages de sous-catégorie contiennent des listes de produits qui fournissent des liens vers les pages de produits.
@@ -255,13 +255,13 @@ La page Produits n’est pas disponible pour les utilisateurs de l’application
 
 ### Page Révisions - Application mobile Geometrixx {#the-reviews-page-geometrixx-mobile-app}
 
-Contient un bouton Précédent. Le système de paragraphes vous permet d’ajouter des composants.
+Contient un bouton Précédent. Le système de paragraphes permet d’ajouter des composants.
 
 Lors de l’utilisation de l’application, la page Révisions est disponible à partir du carrousel sur la page en anglais.
 
 ### Page d’actualités - Application mobile Geometrixx {#the-news-page-geometrixx-mobile-app}
 
-Contient un bouton Précédent. Le système de paragraphes vous permet d’ajouter des composants.
+Contient un bouton Précédent. Le système de paragraphes permet d’ajouter des composants.
 
 Lors de l’utilisation de l’application, la page Actualités est disponible dans le carrousel sur la page en anglais.
 
@@ -293,17 +293,17 @@ Notez que les images apparaissent dans le carrousel pour les pages associées à
 
 Configurez le comportement du carrousel :
 
-* Vitesse de lecture : Durée en millisecondes pendant laquelle chaque image est affichée avant d’afficher la prochaine image.
-* Temps de transition : Durée en millisecondes de l’animation pour les transitions d’image.
-* Style des commandes : Le type de contrôles fourni pour le déplacement entre les images.
+* Vitesse de lecture : durée en millisecondes pendant laquelle chaque image est affichée avant d’afficher la prochaine image.
+* Temps de transition : durée en millisecondes de l’animation pour les transitions d’image.
+* Style des contrôles : type de contrôles fournis pour le déplacement entre les images.
 
 **Onglet Propriétés de liste**
 
 Indiquez le mode de génération de la liste de pages :
 
-* Créer la liste à l’aide de : Méthode à utiliser pour spécifier les pages à inclure dans le carrousel. Voir Création de la liste des pages.
-* Classer par : Sélectionnez une propriété de page à utiliser pour trier la liste des pages. Par exemple, sélectionnez jcr:title pour trier les pages par ordre alphabétique de titre.
-* Limite : Nombre maximal de pages à inclure. Cette propriété est appropriée pour les méthodes basées sur la recherche permettant de créer la liste de pages.
+* Créer la liste à l’aide de : méthode à utiliser pour spécifier les pages à inclure dans le carrousel. Voir Création de la liste des pages.
+* Classer par : sélectionnez une propriété de page à utiliser pour trier la liste des pages. Par exemple, sélectionnez jcr:title pour trier les pages par ordre alphabétique de titre.
+* Limite : nombre maximal de pages à inclure. Cette propriété est appropriée pour les méthodes basées sur la recherche permettant de créer la liste de pages.
 
 #### Création de la liste des pages {#building-the-page-list}
 

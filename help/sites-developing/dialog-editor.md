@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: b7ac457d-3689-4f5d-9ceb-ff6a9944e7eb
 exl-id: 57303608-c3e1-4201-8054-1a1798613e2c
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '489'
 ht-degree: 22%
 
 ---
@@ -56,7 +56,7 @@ Saisissez les informations requises, puis cliquez sur **Enregistrer tout**. Vous
 
 ### Utilisation de l’éditeur de boîte de dialogue pour les modèles automatiques {#using-the-dialog-editor-for-scaffolds}
 
-Un modèle automatique est une page spéciale contenant un formulaire qui peut être rempli et envoyé en une seule étape. Vous pouvez ainsi créer rapidement une page à partir du contenu saisi.
+Un modèle automatique est une page spéciale contenant un formulaire qui peut être rempli et envoyé en une seule étape. Vous pouvez ainsi créer rapidement une page à partir du contenu renseigné.
 
 Le formulaire qui constitue un modèle automatique est défini par une définition de boîte de dialogue, tout comme une boîte de dialogue normale, bien qu’il apparaisse sur la page de génération de modèles automatique sous une autre forme. Les définitions de boîte de dialogue étant utilisées pour définir des modèles automatiques, les modèles automatiques peuvent être conçus à l’aide de l’éditeur de boîte de dialogue. Notez que lorsque vous utilisez l’éditeur de boîtes de dialogue de cette manière, le volet Rendu affiche toujours la définition de boîte de dialogue sous la forme d’une boîte de dialogue et non d’un modèle automatique.
 

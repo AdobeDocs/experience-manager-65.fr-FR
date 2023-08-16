@@ -1,17 +1,17 @@
 ---
 title: Exportateur de page
-description: Découvrez comment utiliser l’exportateur de page d’AEM.
+description: Découvrez comment utiliser l’outil AEM d’exportation de pages.
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1065'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1063'
+ht-degree: 94%
 
 ---
 
 # Exportateur de page{#the-page-exporter}
 
-Dans AEM, vous pouvez exporter une page sous la forme d’une page web complète, comprenant des images, des fichiers `.js` et des fichiers `.css`.
+AEM permet d&#39;exporter une page sous la forme d&#39;une page web complète comprenant des images, `.js` et `.css` fichiers .
 
 Une fois la configuration effectuée, vous demandez une exportation de page à partir de votre navigateur en remplaçant `html` avec `export.zip` dans l’URL. Cette opération génère un fichier d’archive (zip) contenant la page rendue au format html, ainsi que les ressources référencées. Tous les chemins d’accès dans la page (par exemple, d’accès aux images) sont réécrits de manière à pointer vers les fichiers inclus dans le fichier compressé ou vers les ressources disponibles sur le serveur. Le fichier d’archive (zip) peut ensuite être téléchargé à partir de votre navigateur.
 
@@ -20,7 +20,6 @@ Une fois la configuration effectuée, vous demandez une exportation de page à p
 >Selon votre navigateur et les paramètres, le téléchargement sera :
 >* un fichier d’archive (`<page-name>.export.zip`) ;
 >* un dossier (`<page-name>`) ; en fait, le fichier d’archive a déjà été développé.
-
 
 ## Exportation d’une page {#exporting-a-page}
 
@@ -47,7 +46,6 @@ Sélectionnez le modèle requis pour votre site, puis confirmez avec **OK**.
    Est accessible via :
    * localhost:4502/content/we-retail/language-masters/en.export.zip
 
-
 1. Téléchargez l’archive dans votre système de fichiers. 
 
 1. Dans votre système de fichiers, décompressez le fichier si nécessaire. Une fois développé, un dossier portant le même nom que la page sélectionnée s’affiche. Ce dossier contient les éléments suivants :
@@ -55,8 +53,8 @@ Sélectionnez le modèle requis pour votre site, puis confirmez avec **OK**.
    * Le sous-dossier `content`, qui est la racine d’une série de sous-dossiers qui reflètent le chemin d’accès à la page dans le référentiel.
 
       * Cette structure comprend le fichier html pour la page sélectionnée (`<page-name>.html`).
-   * D’autres ressources (fichiers `.js`, fichiers `.css`, images, etc.) sont localisées en fonction des paramètres du modèle d’exportation.
 
+   * D’autres ressources (fichiers `.js`, fichiers `.css`, images, etc.) sont localisées en fonction des paramètres du modèle d’exportation.
 
 1. Ouvrez le fichier HTML de la page (`<unzip-dir>/<path>/<to>/<page>/<page-path>.html`) dans votre navigateur pour contrôler le rendu.
 
@@ -73,7 +71,7 @@ Une installation AEM prête à l’emploi comprend un modèle par défaut sous `
 * Le modèle `default` vous indique comment une exportation de page peut être configurée, afin de servir de base à un nouveau modèle d’exportation.
 
 * Pour afficher la structure du nœud du modèle dans le navigateur au format JSON, demandez l’adresse URL suivante :
-   `http://localhost:4502/etc/contentsync/templates/default.json`
+  `http://localhost:4502/etc/contentsync/templates/default.json`
 
 La méthode la plus simple pour créer un modèle d’exportateur de page consiste à :
 
@@ -116,24 +114,23 @@ Les nœuds ci-dessous peuvent être utilisés pour créer un modèle de d’expo
 * `page`
 Le nœud page est utilisé pour copier le code HTML de la page dans le fichier compressé. Il possède les caractéristiques suivantes :
 
-   * C’est un nœud obligatoire.
+   * est un noeud obligatoire ;
    * Se trouve sous `/etc/contentsync/templates/<mysite>`.
    * Est défini avec la propriété `Name` définie sur `page`.
    * Le type de nœud est `nt:unstructured`.
 
-   Le nœud `page` possède les propriétés suivantes :
+  Le nœud `page` possède les propriétés suivantes :
 
    * Une propriété `type` définie avec la valeur `pages`.
 
    * Il ne comporte pas de propriété `path`, car le chemin d’accès actuel à la page est copié dynamiquement dans la configuration.
-
-   <!--
+  <!--
   * The other properties are described in the Overview of configuration types section of the Content Sync framework.
   -->
 
 * `rewrite`
 Le nœud rewrite définit la façon dont les liens sont réécrits dans la page exportée. Les liens réécrits peuvent pointer vers les fichiers inclus dans le fichier compressé ou vers les ressources sur le serveur.
-   <!-- Please refer to the Content Sync page for a complete description of the `rewrite` node. -->
+  <!-- Please refer to the Content Sync page for a complete description of the `rewrite` node. -->
 
 * `design`
 Le nœud design est utilisé pour copier la conception utilisée pour la page exportée. Il possède les caractéristiques suivantes :
@@ -143,16 +140,14 @@ Le nœud design est utilisé pour copier la conception utilisée pour la page ex
    * Est défini avec la propriété `Name` définie sur `design`.
    * Le type de nœud est `nt:unstructured`.
 
-   Le nœud `design` possède les propriétés suivantes :
+  Le nœud `design` possède les propriétés suivantes :
 
    * Une propriété `type` définie avec la valeur `copy`.
 
    * Il ne comporte pas de propriété `path`, car le chemin d’accès actuel à la page est copié dynamiquement dans la configuration.
 
-
 * `generic`
-Un nœud générique est utilisé pour copier des ressources telles que les clientlibs. 
-`.js` ou `.css` dans le fichier zip. Il possède les caractéristiques suivantes :
+Un nœud générique est utilisé pour copier des ressources telles que les clientlibs. `.js` ou `.css` dans le fichier zip. Il possède les caractéristiques suivantes :
 
    * Il est facultatif.
    * Se trouve sous `/etc/contentsync/templates/<mysite>`.
@@ -160,16 +155,16 @@ Un nœud générique est utilisé pour copier des ressources telles que les clie
    * Le type de nœud est `nt:unstructured`.
    * Comporte une propriété `type` et des propriétés `type` connexes. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
-   Par exemple, le nœud de configuration ci-dessous copie les fichiers `mysite.clientlibs.js` dans le fichier compressé :
+  Par exemple, le nœud de configuration ci-dessous copie les fichiers `mysite.clientlibs.js` dans le fichier compressé :
 
-   ```xml
-   "mysite.clientlibs.js": {
-       "extension": "js",
-       "type": "clientlib",
-       "path": "/etc/designs/mysite/clientlibs",
-       "jcr:primaryType": "nt:unstructured"
-   }
-   ```
+  ```xml
+  "mysite.clientlibs.js": {
+      "extension": "js",
+      "type": "clientlib",
+      "path": "/etc/designs/mysite/clientlibs",
+      "jcr:primaryType": "nt:unstructured"
+  }
+  ```
 
 **Mise en œuvre d’une configuration personnalisée**
 
@@ -186,10 +181,10 @@ Pour répondre à certaines exigences spécifiques, vous devrez peut-être mettr
 
 ## Exportation d’une page par programmation {#programmatically-exporting-a-page}
 
-Pour exporter une page par programmation, vous pouvez utiliser le service OSGi [PageExporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html). Ce service permet ce qui suit :
+Pour exporter une page par programmation, vous pouvez utiliser le service OSGi [PageExporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html). Ce service permet :
 
-* exporter une page et écrire la réponse du servlet HTTP ;
-* exporter une page et enregistrer le fichier compressé à un emplacement spécifique.
+* Exportez une page et écrivez dans la réponse du servlet HTTP.
+* Exportez une page et enregistrez le fichier zip à un emplacement spécifique.
 
 Le servlet lié au sélecteur `export` et à l’extension `zip` utilise le service PageExporter.
 

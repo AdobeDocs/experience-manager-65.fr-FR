@@ -1,7 +1,7 @@
 ---
 title: Évaluer la complexité de la mise à niveau à l’aide de l’outil de détection des motifs
 seo-title: Assessing the Upgrade Complexity with the Pattern Detector
-description: Découvrez comment utiliser l’outil de détection des motifs pour évaluer la complexité de votre mise à niveau.
+description: Découvrez comment utiliser le détecteur de motifs pour évaluer la complexité de votre mise à niveau.
 seo-description: Learn how to use the Pattern Detector to assess the complexity of your upgrade.
 uuid: 84d0add9-3123-4188-9877-758911b1899f
 contentOwner: sarchiz
@@ -12,10 +12,10 @@ discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '522'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 47%
 
 ---
 
@@ -23,24 +23,24 @@ ht-degree: 100%
 
 ## Présentation {#overview}
 
-Cette fonctionnalité vous permet de déterminer si les instances existantes d’AEM peuvent être mises à niveau en détectant les motifs qui :
+Cette fonctionnalité vous permet de vérifier les instances AEM existantes pour leur mise à niveau en détectant les motifs en cours d’utilisation qui :
 
-1. enfreignent certaines règles et qui sont exécutés dans des zones qui seront affectées ou écrasées par la mise à niveau ;
-1. utilisent une API ou une fonctionnalité d’AEM 6.x non rétrocompatible sur AEM 6.5 et qui risque d’échouer après la mise à niveau.
+1. enfreignent certaines règles et sont effectuées dans des zones qui seront affectées ou écrasées par la mise à niveau ;
+1. Utilisez une fonctionnalité AEM 6.x ou une API qui n’est pas rétrocompatible sur AEM 6.5 et qui peut potentiellement échouer après la mise à niveau.
 
-Cela peut servir à évaluer l’ampleur des tâches de développement nécessaires pour effectuer une mise à niveau vers AEM 6.5.
+Cela peut servir à évaluer l’effort de développement impliqué dans la mise à niveau vers AEM 6.5.
 
 ## Méthode de configuration {#how-to-set-up}
 
-L’outil de détection des motifs est publié séparément sous forme de [module](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) qui fonctionne sous toutes les versions AEM sources, depuis la version 6.1 jusqu’à la version 6.5, et cible la mise à niveau AEM 6.5. Il peut être installé à l’aide du [Gestionnaire de modules](/help/sites-administering/package-manager.md).
+L’outil de détection des motifs est publié séparément sous forme de [package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) qui fonctionne sous toutes les versions AEM sources, depuis la version 6.1 jusqu’à la version 6.5, et cible la mise à niveau AEM 6.5. Il peut être installé à l’aide du [Gestionnaire de packages](/help/sites-administering/package-manager.md).
 
 ## Utilisation {#how-to-use}
 
 >[!NOTE]
 >
->L’outil de détection des motifs peut être exécuté sur n’importe quel environnement, y compris sur les instances locales de développement. Toutefois, pour :
+>L’outil de détection des motifs peut être exécuté sur n’importe quel environnement, y compris sur les instances locales de développement. Toutefois, pour :
 >
->* augmenter le taux de détection
+>* augmenter le taux de détection ;
 >* éviter les ralentissements sur les instances critiques de l’entreprise
 >
 >en même temps, il est recommandé de l’exécuter **dans des environnements d’évaluation** qui sont aussi proches que possible des environnements d’exploitation sur le plan des applications utilisateur, du contenu et des configurations.
@@ -57,28 +57,28 @@ Vous pouvez appliquer plusieurs méthodes pour vérifier le résultat de l’out
 * **Via une interface JSON standard ou une interface réactive en mode texte**
 * **Via une interface réactive en lignes JSON** qui génère un document JSON distinct dans chaque ligne.
 
-Vous trouverez, ci-dessous, une description détaillée de ces deux méthodes :
+Les deux méthodes sont présentées ci-dessous :
 
 ## Interface réactive {#reactive-interface}
 
-L’interface réactive permet de traiter le rapport d’infractions dès que l’on suspecte le moindre problème.
+L&#39;interface réactive permet le traitement du rapport de violation dès qu&#39;un soupçon est détecté.
 
-Le résultat est actuellement disponible sous 2 URL :
+La sortie est actuellement disponible sous 2 URL :
 
 1. Interface en mode texte brut
 1. Interface JSON
 
-## Gestion de l’interface en mode texte brut {#handling-the-plain-text-interface}
+## Gestion de l’interface Texte brut {#handling-the-plain-text-interface}
 
-Les informations contenues dans la sortie se présentent sous la forme d’une série d’entrées d’événement. Il existe deux canaux : un pour la publication des infractions et un autre pour la publication de la progression.
+Les informations dans la sortie sont formatées sous la forme d’une série d’entrées d’événement. Il existe deux canaux : un pour la publication des violations et l’autre pour la publication de la progression actuelle.
 
-Ils peuvent être obtenus en utilisant les commandes suivantes :
+Ils peuvent être obtenus à l’aide des commandes suivantes :
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep SUSPICION
 ```
 
-La sortie se présente comme suit :
+La sortie ressemblera à ceci :
 
 ```
 2018-02-13T14:18:32.071+01:00 [SUSPICION] The pattern=ECU/extraneous.content.usage was found by detector=ContentAccessDetector with id=a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f message="Cross-boundary overlay of internal marked path /libs/granite/operations/components/commons/commons.jsp/jcr:content referenced at /apps/granite/operations/components/commons/commons.jsp/jcr:content with properties redefined: jcr:lastModifiedBy, jcr:mimeType, jcr:data, jcr:lastModified, jcr:uuid". More info at=https://www.adobe.com/go/aem6_EC
@@ -90,7 +90,7 @@ Vous pouvez filtrer la progression à l’aide de la commande `grep` :
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep PROGRESS
 ```
 
-Ce qui donne le résultat suivant :
+Ce qui génère la sortie suivante :
 
 ```
 2018-02-13T14:19:26.909+01:00 [PROGRESS] emitted=127731/52 MB patterns (from=6.5), analysed=45780/16 MB items, found=0 suspicions so far in period=PT5.005S (throughput=34667 items/sec)
@@ -98,15 +98,15 @@ Ce qui donne le résultat suivant :
 2018-02-13T14:19:35.685+01:00 [PROGRESS] Finished in period=PT13.782
 ```
 
-## Gestion de l’interface JSON {#handling-the-json-interface}
+## Gestion de l’interface JSON {#handling-the-json-interface}
 
-De même, JSON pourra être traité à l’aide de l’[outil jq](https://stedolan.github.io/jq/) dès qu’il sera publié.
+De même, JSON peut être traité à l’aide de la variable [outil jq](https://stedolan.github.io/jq/) dès qu’il est publié.
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'
 ```
 
-Avec le résultat suivant :
+Avec la sortie :
 
 ```
 {
@@ -125,13 +125,13 @@ Avec le résultat suivant :
 }
 ```
 
-Un rapport de progression est généré toutes les 5 secondes et il est possible de récupérer les informations de progression en excluant les messages autres que ceux marqués comme suspects :
+La progression est signalée toutes les 5 secondes et peut être récupérée en excluant d&#39;autres messages que ceux marqués comme soupçons :
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == false)'
 ```
 
-Avec le résultat suivant :
+Avec la sortie :
 
 ```
 {
@@ -212,15 +212,15 @@ Avec le résultat suivant :
 >
 >La méthode recommandée consiste à enregistrer toute la sortie à partir du curl dans le fichier, puis de la traiter via `jq` ou `grep` pour effectuer un filtrage sur le type d’informations.
 
-## Domaine de détection {#scope}
+## Périmètre de détection {#scope}
 
-Actuellement, l’outil de détection des motifs permet de vérifier :
+Actuellement, l’outil de détection des motifs permet de vérifier :
 
-* l’incompatibilité des exportations et importations de lots OSGi ;
-* la surutilisation des ressources de type Sling et des super types (avec superpositions de contenu de chemin de recherche) ;
+* Les exportations et les importations des lots OSGi ne correspondent pas.
+* Types de ressources Sling et super-types (avec superpositions de contenu de chemin de recherche) surexploités
 * les définitions des index Oak (compatibilité) ;
-* les modules VLT (surutilisation) ;
-* la compatibilité des nœuds rep:User (dans le contexte de la configuration OAuth).
+* Packages VLT (surutilisation)
+* compatibilité des noeuds rep:User (dans le contexte de la configuration OAuth)
 
 >[!NOTE]
 >

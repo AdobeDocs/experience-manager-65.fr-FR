@@ -2,9 +2,9 @@
 title: Gestion de projets de traduction
 description: Découvrez comment gérer des projets de traduction dans AEM.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 106fc0e1ef6d65f13bd3875783102da44694581e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3587'
+source-wordcount: '3586'
 ht-degree: 63%
 
 ---
@@ -31,7 +31,7 @@ Les projets et les tâches de traduction sont créés avec des processus de pré
 
 >[!NOTE]
 >
->L’option 3 est indépendante de la tâche/du projet de traduction. Elle permet de copier les modifications apportées au contenu et à la structure du gabarit de langue aux copies de langue (non traduites). Vous pouvez l’utiliser pour préserver la synchronisation des gabarits de langue, même sans traduction.
+>L’option 3 est indépendante de la tâche/du projet de traduction. Il vous permet de copier le contenu et les modifications structurelles dans le gabarit de langue vers des copies de langue (non traduites). Vous pouvez l’utiliser pour préserver la synchronisation des gabarits de langue, même sans traduction.
 
 ## Exécution de traductions initiales et mise à jour de traductions existantes {#performing-initial-translations-and-updating-existing-translations}
 
@@ -222,11 +222,11 @@ Les balises sont maintenant ajoutées à la tâche de traduction.
 La mosaïque Résumé de traduction contient les propriétés configurées pour un projet de traduction. En plus du générique [informations sur le projet](/help/sites-authoring/projects.md#project-info), l’onglet Traduction contient des propriétés spécifiques à la traduction :
 
 * Langue source : langue des pages en cours de traduction.
-* Langue cible : Langue dans laquelle les pages sont traduites.
+* Langue cible : langue dans laquelle les pages sont traduites.
 * Méthode de traduction : processus de traduction. La traduction humaine ou la traduction automatique est prise en charge.
 * Fournisseur de traduction : prestataire de services de traduction qui effectue la traduction.
 * Catégorie de contenu : (traduction automatique) – La catégorie de contenu utilisée pour la traduction.
-* Configuration du cloud : Configuration cloud du connecteur de service de traduction utilisé pour le projet.
+* Configuration du cloud : configuration du cloud pour le connecteur du service de traduction utilisé pour le projet.
 
 Lorsqu’un projet est créé à l’aide du volet Ressources d’une page, ces propriétés sont automatiquement configurées en fonction des propriétés de la page source.
 
@@ -262,7 +262,7 @@ Pour afficher le statut des différents fichiers de la tâche, cliquez ou appuye
 Spécifiez la date à laquelle le fournisseur de traduction doit renvoyer les fichiers traduits. Vous pouvez définir la date d’échéance du projet ou d’une tâche spécifique :
 
 * **Projet :** Les tâches de traduction du projet héritent de la date d’échéance.
-* **Traitement :** La date d’échéance que vous définissez pour la tâche remplace la date d’échéance définie pour le projet.
+* **Tâche :** La date d’échéance que vous définissez pour la tâche remplace la date d’échéance définie pour le projet.
 
 La définition du délai ne fonctionne correctement que lorsque le fournisseur de traduction auquel vous faites appel prend en charge cette fonctionnalité.
 
@@ -418,7 +418,7 @@ Si une page source déjà traduite doit être [renommée ou déplacée](/help/si
 1. Sélectionnez la racine de la copie de langue.
 1. Ouvrez le **Références** du panneau.
 1. Sélectionner **Copies de langue**.
-1. Sélectionnez les langues cibles que vous souhaitez mettre à jour.
+1. Sélectionnez les langues cibles à mettre à jour.
 1. Sélectionner **Mise à jour des copies de langue**.
 1. Cliquez sur **Mettre à jour**. A [Launch](/help/sites-authoring/launches-promoting.md) sera créé.
 1. Accédez à la racine de langue requise et sélectionnez-la.

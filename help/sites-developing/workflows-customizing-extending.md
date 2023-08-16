@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3584'
-ht-degree: 73%
+source-wordcount: '3582'
+ht-degree: 72%
 
 ---
 
@@ -172,7 +172,7 @@ Chaque composant d’étape de base permet à l’équipe de développement des 
 
 * Étape du processus : service ou script ECMA à exécuter au moment de l’exécution.
 * Participant : ID de l’utilisateur auquel est affecté l’élément de travail généré.
-* Étape choix dynamique de participant : Le service ou script ECMA qui sélectionne l’identifiant de l’utilisateur auquel est affecté l’élément de travail.
+* Étape choix dynamique de participant : le service ou le script ECMA qui sélectionne l’identifiant de l’utilisateur auquel est affecté l’élément de travail.
 
 Pour cibler le composant en vue de l’utiliser dans un scénario de workflow spécifique, configurez la fonction clé dans la conception et supprimez la possibilité pour les développeurs de modèles de la modifier.
 
@@ -233,7 +233,7 @@ Effectuez la procédure suivante sur votre nouveau composant (voir [Création de
 
    * Nom : `DIALOG_PATH`
    * Type : `String`
-   * Valeur : Chemin d’accès résolu sur la boîte de dialogue
+   * Valeur : chemin d’accès qui résout la boîte de dialogue.
 
 ### Configuration du comportement d’exécution de l’étape de workflow {#configuring-the-workflow-step-runtime-behavior}
 
@@ -250,7 +250,7 @@ Sous le nœud `cq:Component`, ajoutez un nœud `cq:EditConfig`. En dessous, ajou
 * Nom : `DO_NOTIFY`
 
    * Type : `Boolean`
-   * Valeur : indique si des notifications électroniques doivent être envoyées pour les étapes de participation de l’utilisateur (et suppose que le serveur de messagerie est correctement configuré) ;
+   * Valeur : indique si des notifications électroniques doivent être envoyées pour les étapes de participation de l’utilisateur (et suppose que le serveur de messagerie est correctement configuré).
 
 ## Persistance et accès aux données {#persisting-and-accessing-data}
 
@@ -613,7 +613,7 @@ Pour définir une étape de participant en tant que composant de service OSGI (c
 1. Dans l’éditeur de **Modèles**, ajoutez l’étape de participant dynamique au workflow à l’aide du composant **Étape de participant dynamique** générique.
 1. Dans la boîte de dialogue de modification, sélectionnez l’onglet **Programme de sélection des participants** et choisissez votre implémentation de programme de sélection.
 1. Si vous utilisez des arguments dans votre code, définissez les **Arguments du processus**. Pour cet exemple : `/content/we-retail/de`.
-1. Enregistrez les modifications pour l’étape et le modèle de workflow.
+1. Enregistrez les modifications, tant pour l’étape que pour le modèle de workflow.
 
 ### Développement d’un sélecteur de participant à l’aide d’un script ECMA {#developing-a-participant-chooser-using-an-ecma-script}
 
@@ -777,15 +777,15 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 }
 ```
 
-## Exemple : Création d’une étape personnalisée {#example-creating-a-custom-step}
+## Exemple : création d’une étape personnalisée {#example-creating-a-custom-step}
 
-Pour commencer facilement à créer votre propre étape personnalisée, copiez une étape existante à partir de :
+Pour commencer facilement à créer votre propre étape personnalisée, copiez une étape existante depuis :
 
 `/libs/cq/workflow/components/model`
 
 ### Création de l’étape de base {#creating-the-basic-step}
 
-1. Recréez le chemin sous /apps ; par exemple :
+1. Recréez le chemin sous /apps, par exemple :
 
    `/apps/cq/workflow/components/model`
 
@@ -803,7 +803,7 @@ Pour commencer facilement à créer votre propre étape personnalisée, copiez u
    >
    >Cette étape ne s’applique pas à l’éditeur de modèle d’IU classique.
 
-1. Placez ensuite l’étape copiée dans votre dossier /apps ; par exemple, comme :
+1. Placez ensuite l’étape copiée dans votre dossier /apps ; par exemple :
 
    `/apps/cq/workflow/components/model/myCustomStep`
 
@@ -892,7 +892,7 @@ Après [Création de l’étape de base](#creating-the-basic-step), définir l�
 
 1. Configurez les propriétés sur le nœud `cq:listeners`.
 
-   Le nœud `cq:listener` et ses propriétés vous permettent de définir des gestionnaires d’événements réagissant aux événements dans l’éditeur de modèles de l’IU tactile, de glisser une étape sur une page de modèle ou de modifier les propriétés d’une étape.
+   La variable `cq:listener` et ses propriétés vous permettent de définir des gestionnaires d’événements qui réagissent aux événements dans l’éditeur de modèles de l’interface utilisateur tactile, comme faire glisser une étape sur une page de modèle ou modifier les propriétés d’une étape.
 
    **Propriétés d’intérêt :**
 
@@ -903,7 +903,7 @@ Après [Création de l’étape de base](#creating-the-basic-step), définir l�
 
    Cette configuration est essentielle au bon fonctionnement de l’éditeur. Dans la plupart des cas, cette configuration ne doit pas être modifiée.
 
-   Toutefois, la définition de `cq:inherit` sur true (dans le nœud `cq:editConfig`, tel que ci-dessus) permet d’hériter de cette configuration, sans avoir à l’inclure explicitement dans la définition de l’étape. Si aucun héritage n’est en place, vous devez ajouter ce nœud avec les propriétés et valeurs suivantes.
+   Toutefois, la définition de `cq:inherit` sur true (sur la `cq:editConfig` , voir ci-dessus) vous permet d’hériter de cette configuration, sans avoir à l’inclure explicitement dans votre définition d’étape. Si aucun héritage n’est en place, vous devez ajouter ce nœud avec les propriétés et valeurs suivantes.
 
    Dans cet exemple, l’héritage a été activé pour pouvoir supprimer le nœud `cq:listeners` et permettre à l’étape de fonctionner correctement.
 

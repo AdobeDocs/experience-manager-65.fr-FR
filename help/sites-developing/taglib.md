@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2465'
-ht-degree: 52%
+source-wordcount: '2462'
+ht-degree: 51%
 
 ---
 
@@ -216,7 +216,7 @@ Elle présente les attributs suivants :
 
 **resourceType**
 
-* Type de ressource de la ressource à inclure. Si le type de ressource est défini, le chemin doit être le chemin exact vers un objet de ressource : dans ce cas, l’ajout de paramètres, de sélecteurs et d’extensions au chemin d’accès n’est pas pris en charge.
+* Type de ressource de la ressource à inclure. Si le type de ressource est défini, le chemin d’accès doit correspondre exactement au chemin d’accès à un objet de ressource : dans ce cas, l’ajout de paramètres, de sélecteurs et d’extensions au chemin d’accès n’est pas pris en charge.
 * Si la ressource à inclure est spécifiée avec l’attribut path qui ne peut pas être résolu sur une ressource, la balise peut créer un objet de ressource synthétique en dehors du chemin et de ce type de ressource.
 * Les attributs path et resourceType ou script doivent être spécifiés.
 
@@ -248,7 +248,7 @@ Devriez-vous utiliser `<%@ include file="myScript.jsp" %>` ou `<cq:include scrip
 Devriez-vous utiliser `<cq:include>` ou `<sling:include>` ?
 
 * Lorsque vous développez des composants AEM, Adobe vous recommande d’utiliser `<cq:include>`.
-* `<cq:include>` vous permet d’inclure directement des fichiers de script en fonction de leur nom lors de l’utilisation de l’attribut script. L’héritage du type de composant et de ressource est alors pris en compte. Généralement, cela s’avère plus simple que d’observer une stricte conformité avec la résolution de script de Sling à l’aide de sélecteurs et d’extensions.
+* `<cq:include>` vous permet d’inclure directement des fichiers de script en fonction de leur nom lors de l’utilisation de l’attribut de script. L’héritage du type de composant et de ressource est alors pris en compte. Généralement, cela s’avère plus simple que d’observer une stricte conformité avec la résolution de script de Sling à l’aide de sélecteurs et d’extensions.
 
 ### &lt;cq:includeClientLib> {#cq-includeclientlib}
 
@@ -528,7 +528,7 @@ Elle présente les attributs suivants :
 
 **resourceType**
 
-* Type de ressource de la ressource à inclure. Si le type de ressource est défini, le chemin doit être le chemin exact vers un objet de ressource : dans ce cas, l’ajout de paramètres, de sélecteurs et d’extensions au chemin d’accès n’est pas pris en charge.
+* Type de ressource de la ressource à inclure. Si le type de ressource est défini, le chemin d’accès doit correspondre exactement au chemin d’accès à un objet de ressource : dans ce cas, l’ajout de paramètres, de sélecteurs et d’extensions au chemin d’accès n’est pas pris en charge.
 * Si la ressource à inclure est spécifiée avec l’attribut path qui ne peut pas être résolu sur une ressource, la balise peut créer un objet de ressource synthétique en dehors du chemin et de ce type de ressource.
 
 **replaceSelectors**
@@ -545,7 +545,7 @@ Elle présente les attributs suivants :
 
 >[!NOTE]
 >
->La résolution de la ressource et du script qui sont inclus avec la balise `<sling:include>` est la même que pour une résolution d’URL sling ordinaire. Par défaut, les sélecteurs, l’extension, etc. de la requête actuelle sont également utilisés pour le script inclus. Ils peuvent être modifiés par le biais des attributs de balise ; par exemple, `replaceSelectors="foo.bar"` vous permet de remplacer les sélecteurs.
+>La résolution de la ressource et du script qui sont inclus avec la balise `<sling:include>` est la même que pour une résolution d’URL sling ordinaire. Par défaut, les sélecteurs, l’extension, etc. de la requête actuelle sont également utilisés pour le script inclus. Ils peuvent être modifiés à l’aide des attributs de balise : par exemple `replaceSelectors="foo.bar"` permet de remplacer les sélecteurs.
 
 Exemples :
 
@@ -593,7 +593,7 @@ La balise `<sling:defineObjects>` expose les objets de script suivants, utilisé
 
 .**sling**
 
-* Objet SlingScriptHelper contenant des méthodes pratiques pour les scripts, principalement sling.include(&#39;/some/other/resource&#39;) pour inclure les réponses d’autres ressources dans cette réponse (par exemple, l’incorporation de fragments de code HTML d’en-tête) et sling.getService(foo.bar.Service.class) pour récupérer les services OSGi disponibles dans Sling (notation de classe selon le langage de script).
+* Objet SlingScriptHelper contenant des méthodes pratiques pour les scripts, principalement sling.include(&#39;/some/other/resource&#39;) pour inclure les réponses d’autres ressources dans cette réponse (par exemple, l’incorporation de fragments HTML d’en-tête) et sling.getService(foo.bar.Service.class) pour récupérer les services OSGi disponibles dans Sling (notation de classe selon le langage de script).
 
 **ressource**
 
@@ -601,7 +601,7 @@ La balise `<sling:defineObjects>` expose les objets de script suivants, utilisé
 
 **currentNode**
 
-* Si la ressource actuelle pointe vers un noeud JCR (ce qui est généralement le cas dans Sling), cela donne un accès direct à l’objet Node. Sinon, cet objet n’est pas défini.
+* Si la ressource actuelle pointe vers un noeud JCR (ce qui est généralement le cas dans Sling), cela donne un accès direct à l’objet Node. Dans le cas contraire, cet objet n’est pas défini.
 
 **log**
 
@@ -630,7 +630,7 @@ l **ogName resourceResolverName**
 
 ## Bibliothèque de balises JSTL {#jstl-tag-library}
 
-Le [Bibliothèque de balises standard JavaServer Pages](https://www.oracle.com/java/technologies/java-server-tag-library.html) contient de nombreuses balises standard utiles. Les bibliothèques de balises de base, de formatage et de fonctions sont définies par la variable `/libs/foundation/global.jsp` comme illustré dans le fragment de code suivant.
+La variable [Bibliothèque de balises standard JavaServer Pages](https://www.oracle.com/java/technologies/java-server-tag-library.html) contient de nombreuses balises standard utiles. Les bibliothèques de balises de base, de formatage et de fonctions sont définies par la variable `/libs/foundation/global.jsp` comme illustré dans le fragment de code suivant.
 
 ### Extrait de /libs/foundation/global.jsp {#extract-of-libs-foundation-global-jsp}
 

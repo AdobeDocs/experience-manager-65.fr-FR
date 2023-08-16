@@ -1,16 +1,16 @@
 ---
 title: Annotations lors de l’édition d’une page
-description: L’ajout de contenu aux pages de votre site web est souvent l’objet de discussions avant d’être réellement publié. En effet, vous pouvez utiliser plusieurs composants directement liés au contenu pour ajouter une annotation.
+description: L’ajout de contenu aux pages de votre site web est souvent l’objet de discussions avant d’être réellement publié. Pour faciliter cette opération, de nombreux composants directement liés au contenu vous permettent d’ajouter une annotation.
 page-status-flag: de-activated
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: d60e9601-d15b-4378-a33e-e90961f63195
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 53%
+source-wordcount: '764'
+ht-degree: 46%
 
 ---
 
@@ -30,7 +30,7 @@ Une annotation place une note autocollante colorée sur la page. L’annotation 
 
 >[!CAUTION]
 >
->La suppression d’une ressource (par exemple, d’un paragraphe) supprime toutes les annotations et tous les schémas associés à cette ressource ; quelle que soit leur position sur la page dans son ensemble.
+>La suppression d’une ressource (par exemple, d’un paragraphe) supprime toutes les annotations et tous les schémas associés à cette ressource, quelle que soit leur position sur la page dans son ensemble.
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ La taille de l’annotation peut également être augmentée ou réduite en fais
 
 Une confirmation est requise lorsque vous choisissez de supprimer l’annotation (la suppression d’une annotation supprime également les schémas qui lui sont associés).
 
-Les trois icônes dans la partie supérieure gauche vous permettent de minimiser l’annotation (ainsi que tout schéma qui lui est associé), de changer la couleur et d’ajouter des schémas.
+Les trois icônes en haut à gauche vous permettent de minimiser l’annotation (ainsi que les schémas associés), de modifier la couleur et d’ajouter des schémas.
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ Les trois icônes dans la partie supérieure gauche vous permettent de minimiser
 >* les esquisses existantes, créées dans un autre navigateur, ne s’affichent pas.
 >
 
-Les esquisses constituent une fonction des annotations qui vous permet de créer des graphiques en courbes simples n’importe où dans la fenêtre du navigateur (partie visible) :
+Les esquisses sont une fonction des annotations qui vous permet de créer des graphiques en courbes simples n’importe où dans la fenêtre du navigateur (partie visible) :
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
@@ -93,8 +93,8 @@ Les esquisses constituent une fonction des annotations qui vous permet de créer
 
 * Après avoir quitté le mode de schéma, vous pouvez cliquer sur une ligne de schéma pour sélectionner cette dernière.
 * Déplacez une esquisse en la sélectionnant, puis en la faisant glisser à l’emplacement souhaité.
-* Une esquisse recouvre le contenu. Cela signifie que dans les quatre coins du schéma, vous ne pouvez pas cliquer sur le paragraphe sous-jacent. Par exemple, si vous devez modifier un lien ou y accéder. Si cela pose problème (par exemple, si vous disposez d’une esquisse couvrant une grande partie de la page), réduisez l’annotation appropriée, car cela réduit également toutes les esquisses associées, vous donnant ainsi accès à la zone sous-jacente.
-* Pour supprimer une esquisse individuelle, sélectionnez-la, puis appuyez sur la touche **Supprimer** clé (**fn**-**backspace** sur Mac).
+* Une esquisse recouvre le contenu. Cela signifie que dans les quatre coins de l’esquisse, vous ne pouvez pas cliquer sur le paragraphe sous-jacent. Par exemple, si vous devez modifier un lien ou y accéder. Si cela pose problème (par exemple, si vous disposez d’une esquisse couvrant une grande partie de la page), réduisez l’annotation appropriée, car cela réduit également toutes les esquisses associées, vous donnant ainsi accès à la zone sous-jacente.
+* Pour supprimer une esquisse individuelle, sélectionnez-la, puis appuyez sur la touche **Supprimer** clé (**fn**-**backspace** sur un Mac).
 
 * Si vous déplacez ou copiez un paragraphe, toutes les annotations associées et leurs esquisses sont également déplacées ou copiées ; leur position par rapport au paragraphe reste la même.
 * Lorsque vous supprimez une annotation, toutes les esquisses qui y sont associées seront également supprimées.

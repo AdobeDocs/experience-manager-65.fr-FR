@@ -4,10 +4,10 @@ description: Découvrez comment la fonctionnalité de contenu associé d’AEM a
 feature: Content Fragments
 role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 89%
+ht-degree: 86%
 
 ---
 
@@ -30,7 +30,7 @@ Pour effectuer l’association, vous devez d’abord [ajouter les ressources mul
 1. Selon que des collections ont déjà été associées ou non, sélectionnez l’une des options suivantes :
 
    * **Associer le contenu** : il s’agira de la première collection associée
-   * **Associer la collection** : les collections associées sont déjà configurées
+   * **Associer la collection** - collections associées déjà configurées
 
 1. Sélectionnez la collection requise.
 

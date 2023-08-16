@@ -10,16 +10,16 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
-source-git-commit: fef4f47794942b1fca4b30ce518b2faa8951f482
-workflow-type: ht
-source-wordcount: '1533'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1532'
+ht-degree: 98%
 
 ---
 
 # Analytics avec le framework de service cloud {#analyticsusingcloudframework}
 
-AEM Forms s’intègre à Analytics, ce qui permet la capture et le suivi des mesures de performances des formulaires et des documents que vous avez publiés. L’analyse de ces mesures contribue à une prise de décisions éclairée fondée sur les données, eu égard aux modifications requises pour concevoir des formulaires ou des documents plus faciles à utiliser.
+AEM Forms s’intègre à Analytics afin que vous puissiez capturer et suivre les mesures de performances des formulaires et documents que vous avez publiés. L’analyse de ces mesures contribue à une prise de décisions éclairée fondée sur les données, eu égard aux modifications requises pour concevoir des formulaires ou des documents plus faciles à utiliser.
 
 >[!NOTE]
 >

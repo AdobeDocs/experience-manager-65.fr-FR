@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: f6d6fcd1f174cc32a172f70ee3da8eff15156c15
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3080'
-ht-degree: 97%
+source-wordcount: '3067'
+ht-degree: 91%
 
 ---
 
@@ -76,7 +76,7 @@ La barre d’outils permet d’accéder à de nombreuses options. Selon votre co
 
 * **Sélecteur de mode**
 
-  Affiche le [mode](/help/sites-authoring/author-environment-tools.md#page-modes) en cours et vous permet d’en sélectionner un autre, tel que Modifier, Disposition, Timewarp ou Ciblage.
+  Affiche la [mode](/help/sites-authoring/author-environment-tools.md#page-modes) et vous permet de sélectionner un autre mode, tel que l’édition, la mise en page, la temporisation ou le ciblage.
 
   ![Sélecteur de mode](assets/chlimage_1-120.png)
 
@@ -88,7 +88,7 @@ La barre d’outils permet d’accéder à de nombreuses options. Selon votre co
 
 * **Annoter**
 
-  Permet d’ajouter des [annotations](/help/sites-authoring/annotations.md) sur la page lors de la révision d’une page. Après la première annotation, l’icône prend la forme d’un nombre indiquant le nombre d’annotations sur la page.
+  Permet d’ajouter [annotations](/help/sites-authoring/annotations.md) sur la page lors de la révision d’une page. Après la première annotation, l’icône prend la forme d’un nombre indiquant le nombre d’annotations sur la page.
 
   ![Annoter](do-not-localize/screen_shot_2018-03-22at111638.png)
 
@@ -112,7 +112,7 @@ La notification répertorie le workflow qui s’exécute sur la page. Si l’uti
 
 L’utilisation de la barre de notification pour terminer et déléguer des étapes de workflow fonctionne de la même manière que la [participation à des workflows](/help/sites-authoring/workflows-participating.md) depuis la boîte de réception de notifications.
 
-Si la page est soumise à plusieurs workflows, leur nombre est indiqué à droite de la notification, avec des chevrons, pour vous permettre de les parcourir.
+Si la page est soumise à plusieurs workflows, le nombre de workflows s&#39;affiche à droite de la notification, avec des boutons fléchés pour vous permettre de les parcourir.
 
 ![Notification du nombre de workflows](assets/chlimage_1-122.png)
 
@@ -157,7 +157,7 @@ Vous pouvez ajouter un nouveau composant à l’aide de la case **Faire glisser 
 
    * Si vous utilisez un ordinateur de bureau, vous pouvez double-cliquer sur la zone **Faire glisser les composants ici**.
 
-   La boîte de dialogue **Insérer un nouveau composant** s’affiche pour vous permettre de sélectionner le composant nécessaire :
+   La variable **Insérer un nouveau composant** s’ouvre pour vous permettre de sélectionner le composant requis :
 
    ![Insertion d’un nouveau composant.](assets/screen_shot_2018-03-22at112650.png)
 
@@ -230,13 +230,13 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient 
 
 * **Modifier**
 
-  [En fonction du type de composant](/help/sites-authoring/default-components.md), vous pouvez [en modifier le contenu](#edit-content). Une barre d’outils est souvent disponible.
+  [Dépend du type de composant.](/help/sites-authoring/default-components.md) cela vous permettra de [modifier le contenu du composant ;](#edit-content). Une barre d’outils est souvent disponible.
 
   ![Modifier](do-not-localize/screen_shot_2018-03-22at112936.png)
 
 * **Configurer**
 
-  [En fonction du type de composant](/help/sites-authoring/default-components.md), vous pouvez modifier et configurer ses propriétés. En général, une boîte de dialogue s’ouvre.
+  [Dépend du type de composant.](/help/sites-authoring/default-components.md) vous pouvez ainsi modifier et configurer les propriétés du composant. En général, une boîte de dialogue s’ouvre.
 
   ![Configurer](do-not-localize/screen_shot_2018-03-22at112955.png)
 
@@ -280,25 +280,25 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient 
 
 * **Groupe**
 
-  Cette option permet de sélectionner plusieurs composants à la fois. Vous pouvez obtenir le même résultat sur un ordinateur de bureau à l’aide des commandes **Ctrl-clic** ou **Commande-clic**.
+  Vous pouvez ainsi sélectionner plusieurs composants à la fois. Vous pouvez obtenir le même résultat sur un ordinateur de bureau à l’aide des commandes **Ctrl-clic** ou **Commande-clic**.
 
   ![Groupe](do-not-localize/screen_shot_2018-03-22at113240.png)
 
 * **Parent**
 
-  Cette option permet de sélectionner le composant parent du composant sélectionné.
+  Permet de sélectionner le composant parent du composant sélectionné.
 
   ![Parent](assets/screen_shot_2018-03-22at113028.png)
 
-* **Mise en page**
+* **Disposition**
 
-  Cette option permet de modifier la [disposition](/help/sites-authoring/editing-content.md#edit-component-layout) du composant sélectionné. Cela s’applique uniquement au composant sélectionné et n’active pas le [mode de disposition](/help/sites-authoring/author-environment-tools.md#page-modes) pour la page entière.
+  Vous pouvez ainsi modifier la variable [layout](/help/sites-authoring/editing-content.md#edit-component-layout) du composant sélectionné. Cela s’applique uniquement au composant sélectionné et n’active pas le [mode de disposition](/help/sites-authoring/author-environment-tools.md#page-modes) pour la page entière.
 
   ![Disposition](do-not-localize/screen_shot_2018-03-22at113044.png)
 
 * **Convertir en variation de fragment d’expérience**
 
-  Permet de créer un [fragment d’expérience](/help/sites-authoring/experience-fragments.md) à partir du composant sélectionné ou de l’ajouter à un fragment d’expérience existant.
+  Vous pouvez ainsi créer une [fragment d’expérience](/help/sites-authoring/experience-fragments.md) du composant sélectionné ou ajoutez-le à un fragment d’expérience existant.
 
   ![Convertir en variation de fragment d’expérience](do-not-localize/screen_shot_2018-03-22at113033.png)
 
@@ -507,7 +507,7 @@ L’option **Afficher comme publié(e)** est disponible à partir du menu [Infor
 
 ## Verrouillage d’une page  {#locking-a-page}
 
-AEM vous permet de verrouiller une page, de sorte que personne d’autre ne puisse en modifier le contenu. Cela s’avère utile lorsque vous apportez de nombreuses modifications à une page spécifique ou lorsque vous devez figer une page pendant quelque temps.
+AEM permet de verrouiller une page, de sorte que personne d’autre ne puisse en modifier le contenu. Cela s’avère utile lorsque vous apportez de nombreuses modifications à une page spécifique ou lorsque vous devez figer une page pendant quelque temps.
 
 Une page peut être verrouillée à partir de :
 
@@ -549,7 +549,7 @@ Dans le menu Informations sur la page, **Déverrouiller** est répertorié comme
 
 ## Annulation et rétablissement des modifications de page {#undoing-and-redoing-page-edits}
 
-Les icônes suivantes permettent d’annuler ou de rétablir une opération. Celles-ci s’affichent dans la barre d’outils le cas échéant :
+Les icônes suivantes vous permettent d’annuler ou de rétablir une action. Elles s’affichent dans la barre d’outils, le cas échéant :
 
 ![Annuler et rétablir](do-not-localize/screen_shot_2018-03-23at093614.png)
 

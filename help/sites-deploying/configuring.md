@@ -7,10 +7,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2112'
-ht-degree: 26%
+source-wordcount: '2111'
+ht-degree: 27%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Experience Manager (AEM) est installé avec les paramètres par défaut de
 Il existe de nombreux aspects de l’AEM qui peuvent être configurés :
 
 * Certains sont [couramment configuré pour chaque installation de projet](#primary-configuration-considerations) et doivent être examinés pour confirmer s’ils s’appliquent à votre projet.
-* [Autres configurations](#further-configuration-considerations) peut être courant, mais pas impératif; en rapport avec les fonctionnalités ou les performances et la stabilité du système.
+* [Autres configurations](#further-configuration-considerations) peut être courant, mais pas impératif ; lié aux fonctionnalités ou aux performances et à la stabilité du système.
 * D’autres sont uniquement nécessaires pour certaines fonctionnalités facultatives d’AEM (elles sont documentées avec la fonctionnalité appropriée).
 
 Selon la configuration spécifique, ces modifications peuvent être effectuées à l’aide de :
@@ -56,9 +56,9 @@ Selon la configuration spécifique, ces modifications peuvent être effectuées 
 >
 >La configuration des AEM est simple. Sachez toutefois que certaines modifications peuvent avoir un impact majeur sur les applications. Pour cette raison, assurez-vous de disposer de l’expérience et des connaissances nécessaires avant de commencer à configurer AEM et d’apporter uniquement les modifications dont vous savez qu’elles sont requises. Toutes les modifications effectuées via la console OSGi sont **immédiatement** appliquée au système en cours d’exécution (aucun redémarrage n’est requis).
 
-## Considérations Principal sur la configuration {#primary-configuration-considerations}
+## Considérations sur la configuration des Principal {#primary-configuration-considerations}
 
-Cette liste décrit les Principales zones généralement configurées pour chaque nouveau projet. Toutes ces informations ne sont pas nécessaires, mais la liste doit être lue et révisée pour voir ce qui s’applique à votre projet.
+Cette liste décrit les principales zones généralement configurées pour chaque nouveau projet. Toutes ces informations ne sont pas nécessaires, mais la liste doit être lue et révisée pour voir ce qui s’applique à votre projet.
 
 La liste donne un bref aperçu de chaque aspect de configuration, ainsi que des liens vers les pages qui fournissent des détails complets.
 
@@ -116,7 +116,7 @@ Consultez [Purge de version](/help/sites-deploying/version-purging.md) pour des 
 AEM vous offre la possibilité de configurer :
 
 * paramètres globaux pour le service de journalisation central
-* la journalisation des données de demande ; une configuration de journalisation spécialisée pour les informations de requête ;
+* journalisation des données de requête ; configuration de journalisation spécialisée pour les informations de requête
 * les paramètres spécifiques des services individuels ; par exemple, un fichier journal individuel et le format des messages du journal.
 
 Consultez [Journalisation](/help/sites-deploying/configure-logging.md) pour des détails complets.
@@ -150,7 +150,7 @@ Voir [Mappage des ressources](/help/sites-deploying/resource-mapping.md) pour pl
 
 ### Agents de réplication, de réplication inverse et de réplication {#replication-reverse-replication-and-replication-agents}
 
-Les agents de réplication sont essentiels pour AEM en tant que mécanisme utilisé pour :
+Les agents de réplication sont essentiels pour AEM comme mécanisme utilisé pour :
 
 * [Publier (activer)](/help/sites-authoring/publishing-pages.md) contenu d’un auteur vers un environnement de publication.
 * Purge explicite du contenu du cache de Dispatcher.
@@ -168,7 +168,7 @@ Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramèt
 
 ### Configuration de LDAP {#configuring-ldap}
 
-L’authentification LDAP est requise pour authentifier les utilisateurs stockés dans un annuaire LDAP (central), tel que Principal Directory. Cela permet de réduire les efforts requis pour gérer les comptes d’utilisateurs.
+L’authentification LDAP est requise pour authentifier les utilisateurs stockés dans un annuaire LDAP (central), tel qu’Active Directory. Cela permet de réduire les efforts requis pour gérer les comptes d’utilisateurs.
 
 L’authentification LDAP se produit au niveau du référentiel ; elle est donc traitée directement par le référentiel. Pour plus de détails, consultez [Configuration de LDAP avec AEM](/help/sites-administering/ldap-config.md).
 
@@ -263,7 +263,7 @@ Pour éviter de telles exceptions, procédez comme suit :
 
 ### Configuration de l’éditeur de texte enrichi {#configuring-the-rich-text-editor}
 
-Le **Éditeur de texte enrichi** (**RTE**) fournit aux auteurs un large éventail de [fonctionnalité](/help/sites-authoring/rich-text-editor.md) pour modifier leur contenu textuel ; leur fournissant des icônes, des boîtes de sélection et des menus pour une expérience WYSIWYG.
+La variable **Éditeur de texte enrichi** (**RTE**) fournit aux auteurs un large éventail de [fonctionnalité](/help/sites-authoring/rich-text-editor.md) pour modifier leur contenu textuel, en leur fournissant des icônes, des boîtes de sélection et des menus pour une expérience WYSIWYG.
 
 Voir [Configuration de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md) pour plus de détails.
 
@@ -273,7 +273,7 @@ Plusieurs propriétés contrôlent le comportement des commandes Annuler et Rét
 
 ### Configuration du composant vidéo {#configuring-the-video-component}
 
-Le [Composant vidéo](/help/sites-authoring/default-components-foundation.md#video) vous permet de placer un élément vidéo prédéfini prêt à l’emploi sur votre page.
+La variable [Composant vidéo](/help/sites-authoring/default-components-foundation.md#video) vous permet de placer un élément vidéo prédéfini prêt à l’emploi sur votre page.
 
 Pour qu’un transcodage correct se produise, votre administrateur doit [Installation de FFmpeg](/help/sites-administering/config-video.md#install-ffmpeg) séparément. Ils peuvent également [Configuration des profils vidéo](/help/sites-administering/config-video.md#configure-video-profiles) à utiliser avec les éléments html5.
 
@@ -285,7 +285,7 @@ Voir [Principes de base de la personnalisation des rapports](/help/sites-adminis
 
 ### Configurer les notifications par e-mail {#configuring-email-notification}
 
-CQ envoie des notifications par courrier électronique aux utilisateurs qui :
+CQ envoie des notifications aux utilisateurs qui :
 
 * ont souscrit aux événements de pages, par exemple la modification ou la réplication ;
 * Ont souscrit aux événements de forum.

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4614'
-ht-degree: 62%
+source-wordcount: '4613'
+ht-degree: 61%
 
 ---
 
@@ -469,7 +469,7 @@ L’ensemble du magasin de noeuds est parcouru (comme spécifié par les chemins
 
 2c. Le texte extrait est stocké sur le système de fichiers dans un format ingérable par le processus de réindexation Oak (3a)
 
-Le texte pré-extrait est identifié dans le fichier CSV par l’empreinte binaire. Si le fichier binaire est le même, le même texte pré-extrait peut être utilisé sur les instances AEM. Comme la publication AEM est généralement un sous-ensemble de l’auteur AEM, le texte préextrait de l’auteur AEM peut souvent être utilisé pour réindexer la publication AEM (en supposant que l’auteur AEM ait un accès au système de fichiers pour les fichiers texte extraits).
+Le texte pré-extrait est identifié dans le fichier CSV par l’empreinte binaire. Si le fichier binaire est le même, le même texte pré-extrait peut être utilisé sur les instances AEM. Comme la publication AEM est généralement un sous-ensemble d’AEM Auteur, le texte préextrait de l’Auteur d’origine peut souvent être utilisé pour réindexer la publication d’ (en supposant que la publication d’ ait un accès au système de fichiers aux fichiers texte extraits).
 
 Le texte pré-extrait peut être ajouté de manière incrémentielle au fil du temps. La pré-extraction de texte ignore l’extraction pour les fichiers binaires précédemment extraits. Il est donc recommandé de conserver le texte pré-extrait au cas où la réindexation se reproduirait ultérieurement (en supposant que le contenu extrait n’est pas trop volumineux. Si c’est le cas, évaluez la compression du contenu entre temps, car le texte se compresse bien).
 

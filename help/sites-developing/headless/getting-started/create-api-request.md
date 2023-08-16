@@ -2,10 +2,10 @@
 title: Guide de prise en main pour l’accès et la diffusion de fragments de contenu découplés
 description: Découvrez comment utiliser l’API HTTP Assets d’AEM pour gérer les fragments de contenu et l’API GraphQL dans la diffusion de contenu de fragments de contenu en mode découplé.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 61%
+source-wordcount: '555'
+ht-degree: 55%
 
 ---
 
@@ -17,9 +17,9 @@ Découvrez comment utiliser l’API HTTP Assets d’AEM pour gérer les fragment
 
 [Maintenant que vous avez créé des fragments de contenu](create-content-fragment.md), vous pouvez utiliser les API d’AEM pour une diffusion découplée.
 
-* [L’API GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) permet de créer des requêtes d’accès et de diffusion de fragments de contenu.
+* [API GRAPHQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) permet de créer des requêtes d’accès et de diffusion de fragments de contenu.
    * Pour l’utiliser, [les points de fin doivent être définis et activés dans AEM](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint), et si nécessaire, l’événement [Interface GraphiQL installée](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface).
-* [L’API REST Assets](/help/assets/assets-api-content-fragments.md) permet de créer et de modifier des fragments de contenu (et d’autres ressources).
+* [API REST Assets](/help/assets/assets-api-content-fragments.md) vous permet de créer et de modifier des fragments de contenu (et d’autres ressources).
 
 Le reste de ce guide porte sur l’accès à GraphQL et la diffusion de fragments de contenu.
 
@@ -31,7 +31,7 @@ Les architectes d’informations doivent concevoir des requêtes pour leurs poin
    * Par exemple : `http://<host>:<port>/aem/graphiql.html`.
 
 1. GraphiQL est un éditeur de requêtes intégré au navigateur pour GraphQL. Vous pouvez l’utiliser pour créer des requêtes afin de récupérer des fragments de contenu afin de les diffuser sans problème au format JSON.
-   * Le volet de gauche permet de construire votre requête.
+   * Le panneau de gauche vous permet de créer votre requête.
    * Le volet de droite affiche les résultats.
    * L’éditeur de requêtes comprend la saisie du code et des touches d’accès rapide pour exécuter facilement la requête.
      ![Éditeur GraphiQL](assets/graphiql.png)

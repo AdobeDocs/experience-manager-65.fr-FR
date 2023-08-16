@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 26%
+source-wordcount: '936'
+ht-degree: 25%
 
 ---
 
 # Utilisation de l’outil de serveur proxy{#how-to-use-the-proxy-server-tool}
 
-Le serveur proxy joue le rôle d’un serveur intermédiaire qui relaie les demandes entre un client et un serveur. Le serveur proxy effectue le suivi de toutes les interactions client-serveur et génère un journal de l’ensemble de la communication TCP. Vous pouvez ainsi contrôler ce qui se passe exactement, sans avoir à accéder au serveur principal.
+Le serveur proxy joue le rôle d’un serveur intermédiaire qui relaie les demandes entre un client et un serveur. Le serveur proxy suit toutes les interactions client-serveur et génère un journal de l’ensemble de la communication TCP. Vous pouvez ainsi contrôler ce qui se passe exactement, sans avoir à accéder au serveur principal.
 
 Dans votre installation AEM, le serveur proxy figure à cet emplacement :
 
@@ -28,7 +28,7 @@ Vous pouvez utiliser le serveur proxy pour surveiller toutes les interactions cl
 * SMTP pour les emails
 * LDAP pour la gestion des utilisateurs
 
-Par exemple, vous pouvez positionner le serveur proxy entre deux applications qui communiquent via un réseau TCP/IP ; par exemple, un navigateur web et un AEM. Vous pouvez ainsi surveiller ce qui se passe exactement lorsque vous demandez une page CQ.
+Par exemple, vous pouvez positionner le serveur proxy entre deux applications qui communiquent via un réseau TCP/IP ; un navigateur web et une AEM, par exemple. Vous pouvez ainsi surveiller ce qui se passe exactement lorsque vous demandez une page CQ.
 
 ## Démarrage de l’outil de serveur proxy {#starting-the-proxy-server-tool}
 
@@ -70,7 +70,7 @@ Ajoute un horodatage à chaque sortie de journal. L’horodatage est en secondes
 
 **`-i <numIndentions>`** (pour ajouter une mise en retrait)
 
-Chaque connexion principale est mise en retrait pour une meilleure lisibilité. La valeur par défaut est de 16 niveaux. Cette fonctionnalité a été ajoutée à `proxy.jar version 1.16`.
+Chaque connexion active est mise en retrait pour une meilleure lisibilité. La valeur par défaut est de 16 niveaux. Cette fonctionnalité a été ajoutée à `proxy.jar version 1.16`.
 
 ### Format du journal {#log-format}
 
@@ -217,8 +217,8 @@ Pour vérifier si la persistance fonctionne :
 
 Si vous perdez des requêtes dans un paramètre de serveur complexe, par exemple avec un pare-feu et un Dispatcher, vous pouvez utiliser le serveur proxy pour déterminer où la requête a été perdue. S’il existe un pare-feu :
 
-* Démarrage d’un proxy avant un pare-feu
-* Démarrage d’un autre proxy après un pare-feu
+* Démarrer un proxy avant un pare-feu
+* Démarrer un autre proxy après un pare-feu
 * Utilisez-les pour voir jusqu’où vont les demandes.
 
 **Demandes en suspens**

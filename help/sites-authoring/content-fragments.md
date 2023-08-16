@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 97%
+source-wordcount: '1138'
+ht-degree: 92%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 97%
 
 Les fragments de contenu Adobe Experience Manager (AEM) sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments/content-fragments.md).
 
-Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). Vous pouvez ensuite utiliser ces fragments et leurs variantes lors de la création de vos pages de contenu.
+Ils vous permettent de créer du contenu neutre pour les canaux, ainsi que des variantes (éventuellement spécifiques aux canaux). Vous pouvez ensuite utiliser ces fragments et leurs variantes lors de la création de vos pages de contenu.
 
 En même temps que l’outil d’exportation JSON mis à jour, les fragments de contenu structuré peuvent également être utilisés pour diffuser du contenu AEM via Content Services à des canaux autres que des pages AEM.
 
@@ -135,7 +135,7 @@ Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionn
 
 ### Connexion rapide à l’éditeur de fragment {#quick-connection-to-fragment-editor}
 
-Vous pouvez ouvrir la source du fragment à modifier (la ressource) à l’aide de l’icône **Modifier** située dans la barre d’outils du composant. Vous pourrez ainsi [modifier et gérer le fragment de contenu](/help/assets/content-fragments/content-fragments.md).
+Vous pouvez ouvrir la source du fragment à modifier (la ressource) à l’aide de l’icône **Modifier** située dans la barre d’outils du composant. Cela vous permettra de [modifier et gérer le fragment de contenu ;](/help/assets/content-fragments/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -145,7 +145,7 @@ Vous pouvez ouvrir la source du fragment à modifier (la ressource) à l’aide 
 
 Lorsqu’un fragment de contenu spécifique est ajouté à la page, il y a un espace réservé **Faire glisser des composants ici** entre chaque paragraphe de HTML (et en haut/en bas) du fragment.
 
-Vous pouvez ainsi ajouter du contenu supplémentaire [(contenu intermédiaire)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) dans le contenu du fragment (à l’un des points disponibles), sans avoir à modifier le fragment racine.
+Vous pouvez ainsi ajouter du contenu supplémentaire. [intermédiaire (contenu intermédiaire)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) le contenu du fragment (à l’un des points disponibles), sans avoir à modifier le fragment racine.
 
 Pour le contenu intermédiaire, vous pouvez :
 

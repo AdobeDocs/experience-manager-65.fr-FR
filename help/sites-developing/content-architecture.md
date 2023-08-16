@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: bcebbdb4-20b9-4c2d-8a87-013549d686c1
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 44%
+source-wordcount: '426'
+ht-degree: 45%
 
 ---
 
@@ -35,7 +35,7 @@ Tout doit être stocké dans le référentiel plutôt que de s’appuyer sur des
 
 ### Utiliser le principe de conception &quot;d’abord le modèle de contenu&quot; {#use-the-content-model-first-design-principle}
 
-Lors de la mise au point d’une fonctionnalité, commencez toujours par concevoir la structure du contenu JCR, puis tâchez de lire et d’écrire votre contenu à l’aide des servlets Sling par défaut. Cela vous permet de vous assurer que votre mise en oeuvre fonctionne bien avec les mécanismes de contrôle d’accès prêts à l’emploi et d’éviter de générer des servlets inutiles de style CRUD.
+Lors de la mise au point d’une fonctionnalité, commencez toujours par concevoir la structure du contenu JCR, puis tâchez de lire et d’écrire votre contenu à l’aide des servlets Sling par défaut. Cela vous permet de vous assurer que votre mise en oeuvre fonctionne bien avec les mécanismes de contrôle d’accès prêts à l’emploi et d’éviter de générer des servlets inutiles de type CRUD.
 
 ### Soyez RESTful {#be-restful}
 

@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 exl-id: 59f01bb1-4ff1-42b6-afc9-56d448b1f803
-source-git-commit: 95638b6dd9527c567b38d8cd9da14633bd4142b5
-workflow-type: ht
-source-wordcount: '931'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '930'
+ht-degree: 98%
 
 ---
 
@@ -47,14 +47,14 @@ Les avantages des modèles modifiables sont les suivants :
 
 * ils peuvent être [créés](/help/sites-authoring/templates.md#creating-a-new-template-template-author) et [modifiés](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) par vos auteurs et autrices.
 
-* ils permettent de définir les éléments suivants, et ce pour toutes les pages créées avec le modèle :
+* Ils ont été introduits pour vous permettre de définir les éléments suivants pour toutes les pages créées avec le modèle :
 
    * la structure ;
    * le contenu initial ;
    * les politiques de contenu.
 
 * Une fois la page créée, une connexion dynamique est conservée entre la page et le modèle. Ce lien signifie que les modifications apportées à la structure du modèle sont reflétées sur toutes les pages créées avec ce modèle. Les modifications apportées au contenu initial ne sont pas reflétées.
-* Utilisent des stratégies de contenu (modifiés à partir de l’éditeur de modèles) pour conserver les propriétés de conception (n’utilise pas le mode Conception dans l’éditeur de page).
+* Utilisent des politiques de contenu (modifiés à partir de l’éditeur de modèles) pour conserver les propriétés de conception (n’utilise pas le mode Conception dans l’éditeur de page).
 * Sont stockés sous `/conf`.
 * Consultez les [Modèles modifiables](/help/sites-developing/page-templates-editable.md) pour plus d’informations.
 

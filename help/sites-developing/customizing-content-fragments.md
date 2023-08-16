@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: ada61b87753f3f3e70acdca0e946428511bd7b00
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2788'
-ht-degree: 58%
+source-wordcount: '2784'
+ht-degree: 57%
 
 ---
 
@@ -132,11 +132,11 @@ Pour plus d’informations, voir [Fragments de contenu – considérations sur
 >
 >Le [composant de base Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr) est désormais recommandé. Voir [Développement des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=fr) pour plus d’informations.
 
-Les fragments de contenu peuvent être référencés à partir des pages d’AEM, comme tout autre type de ressource. AEM fournit le composant principal [**Fragment de contenu**](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr), [qui permet d’inclure des fragments de contenu sur vos pages](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Vous pouvez également étendre ce composant principal **Fragment de contenu**.
+Les fragments de contenu peuvent être référencés à partir des pages d’AEM, comme tout autre type de ressource. AEM fournit la variable [**Fragment de contenu** composant principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr) - a [qui permet d’inclure des fragments de contenu sur vos pages](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Vous pouvez également étendre ce composant principal **Fragment de contenu**.
 
 * Le composant utilise la propriété `fragmentPath` pour référencer le fragment de contenu. La propriété `fragmentPath` est traitée de la même façon que les propriétés similaires d’autres types de ressources, par exemple, lorsque le fragment de contenu est déplacé vers un autre emplacement.
 
-* Le composant vous permet de sélectionner la variation à afficher.
+* Le composant permet de sélectionner la variation à afficher.
 * En outre, une plage de paragraphes peut être sélectionnée pour limiter la sortie ; par exemple, elle peut être utilisée pour la sortie à plusieurs colonnes.
 * Le composant permet [contenu intermédiaire](/help/sites-developing/components-content-fragments.md#in-between-content):
 
@@ -299,7 +299,7 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
 * **Fragment de contenu** ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
-  Cette interface vous permet d’utiliser un fragment de contenu de façon abstraite.
+  Cette interface vous permet d’utiliser un fragment de contenu de manière abstraite.
 
   >[!CAUTION]
   >
@@ -446,7 +446,7 @@ Les processus impliqués sont les suivants :
 
 * Modification
 
-   * Toutes les modifications (enregistrement automatique inclus) sont effectuées sur le principal fragment de contenu, et non dans une zone séparée et protégée.
+   * Toutes les modifications (enregistrement automatique inclus) sont effectuées sur le fragment de contenu actif, et non dans une zone séparée et protégée.
    * Par conséquent, ces modifications sont répercutées immédiatement sur AEM pages qui font référence au fragment de contenu correspondant.
 
 #### Actions {#actions}

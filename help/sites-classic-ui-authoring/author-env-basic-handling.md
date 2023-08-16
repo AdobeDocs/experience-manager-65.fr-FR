@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 49%
+source-wordcount: '1166'
+ht-degree: 48%
 
 ---
 
@@ -63,7 +63,7 @@ Les principales consoles sont les suivantes :
   </tr>
   <tr>
    <td><strong>Outils</strong></td>
-   <td>Le <a href="/help/sites-administering/tools-consoles.md">Consoles Outils</a> vous donner accès à plusieurs outils et consoles spécialisés pour la gestion des sites web, des ressources numériques et d’autres aspects du référentiel de contenu.</td>
+   <td>La variable <a href="/help/sites-administering/tools-consoles.md">Consoles Outils</a> vous donner accès à plusieurs outils et consoles spécialisés pour la gestion des sites web, des ressources numériques et d’autres aspects du référentiel de contenu.</td>
   </tr>
   <tr>
    <td><strong>Utilisateurs</strong></td>
@@ -110,7 +110,7 @@ Lors de la modification d’une page, la variable [sidekick comporte également 
 
 ## Naviguer dans la console Sites web {#navigating-with-the-websites-console}
 
-Le **Sites web** La console répertorie vos pages de contenu dans une arborescence (volet de gauche). Pour faciliter la navigation, les sections de l’arborescence peuvent être développées (+) ou réduites (-), selon les besoins :
+La variable **Sites web** La console répertorie vos pages de contenu dans une arborescence (volet de gauche). Pour faciliter la navigation, les sections de l’arborescence peuvent être développées (+) ou réduites (-), selon les besoins :
 
 * Cliquez sur le nom de la page dans le volet de gauche pour effectuer les opérations suivantes :
 

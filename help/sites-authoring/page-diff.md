@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '577'
 ht-degree: 97%
 
 ---
@@ -78,7 +78,7 @@ Si vous souhaitez vous concentrer sur un contenu spécifique, vous pouvez clique
 
 Le côté sélectionné s’affiche dans la totalité de la fenêtre, mais la barre d’en-tête reste disponible en haut de la fenêtre pour vous permettre de basculer d’une page à l’autre si vous le souhaitez.
 
-![La barre supérieure vous permet de basculer entre les pages.](assets/chlimage_1-110.png)
+![La barre supérieure permet de basculer entre les pages.](assets/chlimage_1-110.png)
 
 Vous pouvez également quitter le mode plein écran en cliquant sur l’icône de fermeture du mode plein écran.
 

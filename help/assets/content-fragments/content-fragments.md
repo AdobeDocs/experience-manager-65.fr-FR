@@ -1,19 +1,19 @@
 ---
-title: Utilisation de fragments de contenu
-description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages de façon idéale pour une diffusion découplée.
+title: Utiliser des fragments de contenu
+description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages, idéal pour une diffusion sans interface utilisateur.
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 100%
+source-wordcount: '1986'
+ht-degree: 96%
 
 ---
 
 # Utilisation de fragments de contenu {#working-with-content-fragments}
 
-Avec Adobe Experience Manager (AEM), les fragments de contenu vous permettent de concevoir, de créer, d’organiser et de [publier du contenu indépendant des pages](/help/sites-authoring/content-fragments.md). Ils vous permettent de préparer du contenu prêt à être utilisé à plusieurs emplacements ou sur plusieurs canaux, idéal pour une diffusion découplée.
+Avec Adobe Experience Manager (AEM), les fragments de contenu vous permettent de concevoir, créer, organiser et [publier du contenu indépendant des pages](/help/sites-authoring/content-fragments.md) Ils vous permettent de préparer le contenu prêt à être utilisé à plusieurs emplacements/sur plusieurs canaux, idéal pour une diffusion sans interface.
 
 Les fragments de contenu contiennent du contenu structuré :
 
@@ -62,7 +62,7 @@ Le nombre de canaux de communication augmente tous les ans. En règle générale
 
 Cependant, vous ne souhaitez (probablement) pas utiliser exactement le même contenu pour tous les canaux ; vous devez optimiser votre contenu en fonction du canal spécifique.
 
-Les fragments de contenu vous permettent de :
+Les fragments de contenu permettent :
 
 * Étudier comment atteindre efficacement les audiences cibles sur plusieurs canaux.
 * Créer et gérer du contenu éditorial neutre pour les canaux.

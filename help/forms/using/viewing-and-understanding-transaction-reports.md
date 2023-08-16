@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c04c488b-73f3-49ba-9e89-f97497965757
 docset: aem65
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
-source-git-commit: 75e1697c301dca3a649833a45caa1753fdc81514
-workflow-type: ht
-source-wordcount: '859'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '858'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ Les rapports de transaction vous permettent de capturer et de suivre le nombre d
 
 ## Configurer des rapports de transaction  {#setting-up-transaction-reports}
 
-La fonction Rapports de transaction est disponible dans le cadre du module complémentaire d’AEM Forms. Pour plus d’informations sur l’installation du module complémentaire sur toutes les instances de création et de publication, voir [Installer et configurer AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Une fois que vous avez installé le module complémentaire AEM Forms, procédez comme suit :
+La fonction Rapports de transaction est disponible dans le cadre du package complémentaire d’AEM Forms. Pour plus d’informations sur l’installation du package complémentaire sur toutes les instances de création et de publication, voir [Installer et configurer AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Une fois que vous avez installé le package complémentaire AEM Forms, procédez comme suit :
 
 * Activer la réplication inverse sur toutes les instances de publication
 * Activer les rapports de transactions
@@ -35,7 +35,6 @@ La fonction Rapports de transaction est disponible dans le cadre du module compl
 >* Avant d’utiliser les rapports de transaction, assurez-vous que la réplication inverse est activée pour toutes les instances de publication.
 >* Les données de transaction sont répliquées à l’inverse d’une instance de publication vers une instance de création ou de traitement correspondante. L’instance de création ou de traitement ne peut pas répliquer davantage les données vers une autre instance.
 >
-
 
 ### Activer la réplication inverse sur toutes les instances de publication {#enable-reverse-replication-on-all-the-publish-instances}
 

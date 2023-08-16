@@ -2,10 +2,10 @@
 title: Prise en main d’AEM découplé
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
-workflow-type: ht
-source-wordcount: '3031'
-ht-degree: 100%
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+workflow-type: tm+mt
+source-wordcount: '3024'
+ht-degree: 95%
 
 ---
 
@@ -70,7 +70,7 @@ Les modèles de fragment de contenu définissent la structure des données et du
 
 ### Fragments de contenu {#content-fragments}
 
-Les fragments de contenu permettent de concevoir, créer, organiser et publier du contenu indépendant des pages. Ils permettent de préparer le contenu prêt à être utilisé dans des emplacements multiples et sur plusieurs canaux.
+Les fragments de contenu vous permettent de concevoir, créer, organiser et publier du contenu indépendant des pages. Ils vous permettent de préparer le contenu prêt à être utilisé à plusieurs emplacements et sur plusieurs canaux.
 
 Les fragments de contenu contiennent du contenu structuré et peuvent être diffusés au format JSON.
 
@@ -78,8 +78,8 @@ Les fragments de contenu contiennent du contenu structuré et peuvent être diff
 
 Pour modifier votre contenu en mode découplé, AEM propose deux API robustes.
 
-* L’API GraphQL permet de créer des requêtes d’accès et de diffusion de fragments de contenu.
-* L’API REST Assets permet de créer et de modifier des fragments de contenu (et d’autres ressources).
+* L’API GraphQL vous permet de créer des demandes d’accès et de diffusion de fragments de contenu.
+* L’API REST Assets vous permet de créer et de modifier des fragments de contenu (et d’autres ressources).
 
 Vous découvrirez ces API et comment les utiliser dans une partie ultérieure du parcours AEM découplé. Pour plus d’informations, reportez-vous à la section [Ressources supplémentaires](#additional-resources) ci-dessous.
 
@@ -129,7 +129,7 @@ Un certain nombre d’exigences s’imposent avant de vous engager dans votre pr
 
 ### Outils {#tools}
 
-* Accès aux environnements de test pour tester le déploiement de votre projet
+* Accès aux sandbox pour tester le déploiement de votre projet
 * Instance de développement locale pour la modélisation et le test des données
 * SPA externe existante ou autre consommateur de contenu AEM découplé
 
@@ -139,9 +139,9 @@ Pour la réussite d’un projet, il est important de définir clairement non seu
 
 ### Portée {#scope}
 
-Il est très important de définir clairement la portée du projet. La portée définit les critères d’acceptation et permet d’établir une définition de l’état « terminé ».
+Il est très important de définir clairement la portée du projet. La portée informe les critères d’acceptation et vous permet d’établir une définition de &quot;terminé&quot;.
 
-La première question que vous devez vous poser est la suivante : « Quel est l’objectif que je veux atteindre grâce à AEM découplé ? » En général, la réponse devrait indiquer que vous disposez ou disposerez d’une application d’expérience créée avec vos propres outils de développement, et avec AEM. Cette application d’expérience peut être une application mobile, un site web ou toute autre application d’expérience destinée aux utilisateurs finaux. La finalité d’AEM découplé est d’alimenter votre application d’expérience en contenus créés, stockés et gérés dans AEM à l’aide d’API dernier cri. Celles-ci appellent AEM découplé pour récupérer du contenu, ou même du contenu intégralement CRUD, directement depuis votre application d’expérience. Si ce n’est pas ce que vous souhaitez faire, vous devrez probablement [revenir à la documentation d’AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr) et déterminer la section la mieux adaptée à ce que vous souhaitez accomplir.
+La première question que vous devez vous poser est la suivante : « Quel est l’objectif que je veux atteindre grâce à AEM découplé ? » La réponse doit généralement être que vous disposez ou aurez à l’avenir une application d’expérience que vous avez créée avec vos propres outils de développement et non avec AEM. Cette application d’expérience peut être une application mobile, un site web ou toute autre application d’expérience destinée aux utilisateurs finaux. La finalité d’AEM découplé est d’alimenter votre application d’expérience en contenus créés, stockés et gérés dans AEM à l’aide d’API dernier cri. Celles-ci appellent AEM découplé pour récupérer du contenu, ou même du contenu intégralement CRUD, directement depuis votre application d’expérience. Si ce n’est pas ce que vous souhaitez faire, vous devrez probablement [revenir à la documentation d’AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr) et déterminer la section la mieux adaptée à ce que vous souhaitez accomplir.
 
 ### Rôles et responsabilités {#roles-responsibilities}
 
@@ -156,7 +156,7 @@ Les rôles de chaque projet individuel varient, mais les plus importants à pren
 
 L’administrateur est responsable de l’installation et de la configuration de base de votre système. Par exemple, l’administrateur configure votre organisation dans le système de gestion des utilisateurs d’Adobe, désigné sous le nom d’IMS (Identity Management System). Il est le premier utilisateur de l’organisation à recevoir une invitation d’Adobe par e-mail, une fois votre organisation créée dans I’IMS. L’administrateur a la possibilité de se connecter à l’IMS et d’ajouter des utilisateurs d’autres personnages.
 
-Une fois les utilisateurs configurés par l’administrateur, ils possèdent les autorisations nécessaires pour accéder à toutes les ressources d’AEM. Ils pourront ainsi accomplir leur travail de contributeurs pour la diffusion de l’application d’expérience à l’aide d’AEM découplé.
+Une fois les utilisateurs configurés par l’administrateur, ils disposent des autorisations nécessaires pour accéder à toutes les ressources AEM afin d’accomplir leur travail en tant que contributeurs à la diffusion de l’application d’expérience à l’aide d’AEM Headless.
 
 L’administrateur doit être l’utilisateur qui a installé AEM et préparé l’environnement d’exécution pour permettre aux [auteurs de contenu](#content-author) de créer et de mettre à jour du contenu, et aux [développeurs](#developer) d’utiliser des API qui récupèrent ou modifient du contenu pour leurs applications d’expérience.
 
@@ -255,7 +255,7 @@ Pour comprendre le trafic et les schémas de trafic, commencez par recueillir de
 
 #### Fréquence de mise à jour {#update-frequency}
 
-Souvent, les différentes sections d’expériences ont des fréquences de mises à jour de contenu variables. Il est important de comprendre cela pour pouvoir affiner les configurations du réseau de diffusion de contenu (CDN) et du cache. Il s’agit également d’une entrée importante pour les [Architectes de contenu](#content-architects), car ils conçoivent des modèles pour représenter votre contenu. Prenez en compte les éléments suivants :
+Souvent, les différentes sections d’expériences ont des fréquences de mises à jour de contenu variables. Comprendre cela est important pour pouvoir affiner les configurations du réseau de diffusion de contenu et du cache. Il s’agit également d’une entrée importante pour les [Architectes de contenu](#content-architects), car ils conçoivent des modèles pour représenter votre contenu. Prenez en compte les éléments suivants :
 
 * Certains types de contenu doivent-ils expirer au-delà d’une certaine période ?
 * Certains éléments sont-ils spécifiques à l’utilisateur, donc sans pouvoir être mis en cache ?

@@ -11,9 +11,9 @@ discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3545'
+source-wordcount: '3544'
 ht-degree: 74%
 
 ---
@@ -312,7 +312,7 @@ Pour localiser les informations d’identité graphique que vous saisissez dans 
 
    Si vous choisissez de sélectionner un modèle personnalisé, parcourez une sélection XDP sur votre serveur AEM Forms. Si vous souhaitez utiliser un modèle qui ne se trouve pas déjà sur votre serveur AEM Forms, vous devez d’abord télécharger le fichier XDP sur votre serveur AEM Forms.
 
-1. Selon que vous sélectionnez un modèle par défaut ou personnalisé, certaines ou toutes les propriétés suivantes s’affichent dans l’onglet Document d’enregistrement. Spécifiez-les en conséquence :
+1. Selon que vous sélectionnez un modèle par défaut ou personnalisé, certaines ou toutes les propriétés suivantes s’affichent dans l’onglet Document d’enregistrement . Spécifiez-les en conséquence :
 
    * **Image du logo** : vous pouvez choisir d’utiliser l’image du logo à partir du formulaire adaptatif, en choisir une dans le gestionnaire des actifs numériques ou en télécharger une depuis votre ordinateur.
    * **Titre du formulaire**
@@ -324,7 +324,7 @@ Pour localiser les informations d’identité graphique que vous saisissez dans 
    * **Famille de polices** : la famille de polices du texte dans le document d’enregistrement PDF
    * **Pour les composants Case à cocher et Bouton radio, affichez uniquement les valeurs sélectionnées.**
    * **Séparateur pour plusieurs valeurs sélectionnées**
-   * **Inclure les objets de formulaire qui ne sont pas liés au modèle de données**
+   * **Inclure les objets de formulaire non liés au modèle de données**
    * **Exclure les champs masqués du document d’enregistrement**
    * **Masquer la description des panneaux**
 
@@ -354,7 +354,7 @@ Pour localiser les informations d’identité graphique que vous saisissez dans 
 
 ## Mises en page de tableau et de colonne pour les panneaux d’un document d’enregistrement {#table-and-column-layouts-for-panels-in-document-of-record}
 
-Votre formulaire adaptatif peut être long et comporter plusieurs champs. Vous ne souhaitez peut-être pas enregistrer un document d’enregistrement en tant que copie exacte du formulaire adaptatif. Vous pouvez désormais choisir une disposition de tableau ou de colonne pour enregistrer un ou plusieurs panneaux de formulaire adaptatif dans le document du PDF d’enregistrement.
+Votre formulaire adaptatif peut être long et comporter plusieurs champs. Vous pouvez ne pas enregistrer un document d’enregistrement en tant que copie exacte du formulaire adaptatif. Vous pouvez désormais choisir une disposition de tableau ou de colonne pour enregistrer un ou plusieurs panneaux de formulaire adaptatif dans le document du PDF d’enregistrement.
 
 Avant de générer un document d’enregistrement, sélectionnez Tableau ou Colonne dans les paramètres d’un panneau Mise en page du document d’enregistrement pour ce panneau. Les champs du panneau sont organisés en conséquence dans le document d’enregistrement.
 
@@ -374,7 +374,7 @@ Les paramètres du document d’enregistrement d’un composant sont disponibles
 
 **Paramètres sur le terrain**
 
-* **Exclure du document d’enregistrement**: La définition de la propriété true exclut le champ du document d’enregistrement. Il s’agit d’une propriété pouvant faire l’objet d’un script appelée « `excludeFromDoR` ». Son comportement dépend de la propriété au niveau du formulaire **Exclure des champs du document d’enregistrement (DE) s’il est masqué**.
+* **Exclure du document d’enregistrement**: la définition de la propriété true exclut le champ du document d’enregistrement. Il s’agit d’une propriété pouvant faire l’objet d’un script appelée « `excludeFromDoR` ». Son comportement dépend de la propriété au niveau du formulaire **Exclure des champs du document d’enregistrement (DE) s’il est masqué**.
 
 * **Afficher le panneau sous forme de tableau :** la définition de cette propriété permet d’afficher le panneau sous forme de tableau dans le document d’enregistrement si le panneau contient moins de 6 champs. Applicable au panneau uniquement.
 * **Exclure le titre du document d’enregistrement :** la définition de la propriété exclut le titre du panneau/tableau du document d’enregistrement. Applicable au panneau et à la table uniquement.

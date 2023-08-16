@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: f21b0b5cb4246ffb22c9d9a219a622f36741d9b8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6949'
+source-wordcount: '6948'
 ht-degree: 6%
 
 ---
@@ -43,19 +43,19 @@ Assurez-vous que tous les rôles ont reçu les niveaux d’accès au système re
 
 ### Liste de contrôle de sécurité des Adobes {#adobe-security-checklist}
 
-Le [Liste de contrôle de sécurité des Adobes](/help/sites-administering/security-checklist.md) est la liste de contrôle officielle fournie pour garantir la sécurité d’Adobe Experience Manager (AEM) lors de l’installation. Il contient les mesures de sécurité et les étapes de vérification que vous devez effectuer pour garantir l’intégrité de votre instance.
+La variable [Liste de contrôle de sécurité des Adobes](/help/sites-administering/security-checklist.md) est la liste de contrôle officielle fournie pour s’assurer que Adobe Experience Manager (AEM) est sécurisé lors de l’installation. Il contient les mesures de sécurité et les étapes de vérification que vous devez effectuer pour garantir l’intégrité de votre instance.
 
-### Configuration du projet du portail d’assistance à l’Adobe {#adobe-support-portal-project-set-up}
+### Configuration du projet du portail d’assistance Adobe {#adobe-support-portal-project-set-up}
 
 Le portail d’assistance à l’Adobe permet aux partenaires et aux clients de configurer l’implémentation d’AEM en tant que projet dans le portail d’assistance.
 
-Les détails peuvent être enregistrés ; par exemple, à propos des technologies et versions mises en oeuvre. Elles assurent la transparence entre le client et l’Adobe.
+Des informations détaillées peuvent être enregistrées, par exemple sur les technologies et versions mises en oeuvre. Elles assurent la transparence entre le client et l’Adobe.
 
 ### Formation des administrateurs AEM {#aem-administrator-training}
 
 Formation à la solution pour le personnel administratif. Voir [Services de formation d’Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) pour plus d’informations.
 
-### Formation des auteurs AEM {#aem-author-training}
+### Formation de création AEM {#aem-author-training}
 
 Formation destinée au personnel qui produira (créera) du contenu pour la solution. Voir [Services de formation d’Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) pour plus d’informations.
 
@@ -69,7 +69,7 @@ Assurez-vous que le personnage approprié a transmis les [examens de certificati
 
 ### Formation technique AEM {#aem-technical-training}
 
-offrir une formation technique à la personne appropriée ; par exemple, les développeurs, les architectes, les ingénieurs et les professionnels.
+Fournissez une formation technique pour le personnage approprié ; par exemple, des développeurs, des architectes, des ingénieurs et des professionnels.
 
 ### Accord sur les indicateurs de performance clés définis comme objectifs pour le projet {#agreement-on-kpis-defined-as-goals-for-the-project}
 
@@ -98,7 +98,7 @@ Il se concentre sur :
 
 ### Tâches de maintenance spécifiques à l’application définies {#application-specific-maintenance-tasks-defined}
 
-Outre les tâches de maintenance standard d’Adobe Experience Manager (AEM), vous devez définir toutes les autres tâches opérationnelles qui doivent être exécutées pour la maintenance continue de la solution.
+Outre les tâches de maintenance standard de Adobe Experience Manager (AEM), vous devez définir toutes les autres tâches opérationnelles qui doivent être exécutées pour la maintenance continue de la solution.
 
 ### Personnel correctement formé {#appropriately-trained-staff}
 
@@ -135,11 +135,11 @@ Le comité de révision doit être représentatif de toutes les parties prenante
 Scripts d’automatisation et cas d’utilisation automatisés de base :
 
 * adapté au contenu de production
-* vérifié par rapport aux IPC
+* vérifié par rapport aux indicateurs clés de performance
 
 ### Stratégie de test automatisé {#automated-testing-strategy}
 
-Cette stratégie définit un cadre pour les scripts automatisés réutilisables, ainsi que l’approche prévue par l’équipe d’assurance qualité (QA). Il décrit le plan général pour les tests d’automatisation afin de vous assurer que :
+Cette stratégie définit un cadre pour les scripts automatisés réutilisables, ainsi que l’approche prévue par l’équipe d’assurance qualité (QA). Il décrit le plan général pour les tests d’automatisation afin de garantir :
 
 * un retour sur investissement plus élevé
 * plus de couverture de test
@@ -151,7 +151,7 @@ La stratégie de test automatisé doit être validée et ajustée en fonction du
 
 ### Stratégie d’automatisation {#automation-strategy}
 
-L’automatisation des déploiements permet d’assurer des déploiements plus rapides et cohérents. La stratégie d&#39;automatisation décrit la configuration de tels mécanismes d&#39;automatisation. notamment :
+L’automatisation des déploiements permet d’assurer des déploiements plus rapides et cohérents. La stratégie d’automatisation décrit la configuration de tels mécanismes d’automatisation, notamment :
 
 * la fréquence ;
 * Outils à utiliser
@@ -190,7 +190,7 @@ Un document d’analyse de cas doit être une définition claire de toutes les o
 
 L’analyste métier doit confirmer qu’il comprend parfaitement :
 
-* la portée du projet ;
+* la portée du projet
 * toutes les attentes des clients ;
 * qu’il s’agit de la base de toutes les décisions prises par persona, par phase dans le projet
 
@@ -200,7 +200,7 @@ Les organisations utilisent des indicateurs de performances clés (IPC) pour év
 
 Les indicateurs de performance clés de l’entreprise définissent des valeurs mesurables qui montrent l’efficacité avec laquelle une entreprise atteint ses principaux objectifs commerciaux. Il est important de choisir les indicateurs de performance clés appropriés à votre entreprise/scénario et de définir clairement ce qu’ils sont, comment ils sont mesurés, comment ils sont utilisés et par qui.
 
-### Documentation sur les exigences métier {#business-requirements-documentation}
+### Documentation sur les besoins de l’entreprise {#business-requirements-documentation}
 
 Un document sur les exigences de l’entreprise (BRD) décrit la solution métier pour un projet, fournissant une spécification claire des besoins et des attentes du client en matière d’entreprise. Le BRD fait également la distinction entre la solution commerciale et la solution technique.
 
@@ -338,7 +338,7 @@ Le client (entreprise et informatique) aura des stratégies qui définissent les
 
 * Conditions requises pour réussir une évaluation des risques.
 * Conditions requises pour réussir les tests de pénétration.
-* Toutes les exigences de sécurité spécifiques ; comme l’échappement de tous les champs d’entrée, l’utilisation du chiffrement (SSL), les certificats, l’authentification et la mise en session.
+* Toutes les exigences de sécurité spécifiques, telles que l’échappement de tous les champs d’entrée, l’utilisation du chiffrement (SSL), les certificats, l’authentification et la mise en session.
 
 ### Instructions relatives aux spécifications du client {#customer-specification-guidelines}
 
@@ -353,7 +353,7 @@ Rapports du client au prospect de qualité pendant la période de test d’accep
 Toutes les personnalisations et/ou les correctifs appliqués doivent être documentés, car ils peuvent affecter les futures mises à niveau :
 
 * AEM peut être fortement personnalisé en fonction des besoins de l’entreprise. Toutes les personnalisations qui peuvent affecter la mise à niveau doivent être entièrement documentées. Par exemple, toutes les modifications majeures de l’interface utilisateur (IU) AEM.
-* Toute mise à jour requise pour la solution actuelle doit être entièrement documentée ; il peut s’agir des éléments suivants :
+* Toutes les mises à jour requises pour la solution actuelle doivent être entièrement documentées, notamment :
 
    * Cumulative Fix Packs (CFP)
    * Service Packs (SP)
@@ -364,7 +364,7 @@ Toutes les personnalisations et/ou les correctifs appliqués doivent être docum
 
 Rapports ou réunions résultant du test d’acceptation utilisateur (UAT). Ils doivent détailler :
 
-* les problèmes signalés ;
+* les problèmes signalés
 * priorisation de ces problèmes
 
 ### Sécurité par défaut activée {#default-security-enabled}
@@ -402,7 +402,7 @@ Assurez-vous que l’environnement de développement est configuré avec les out
 
 L’équipe de développement doit confirmer qu’elle comprend parfaitement :
 
-* la portée du projet ;
+* la portée du projet
 * toutes les attentes des clients ;
 * la base de toutes les décisions prises par persona, par phase dans le projet ;
 
@@ -491,7 +491,7 @@ La définition du système de secours :
 
 Test de bout en bout du système de secours.
 
-### Approbation du système de secours par les parties prenantes de l’entreprise {#fallback-system-sign-off-from-business-stakeholders}
+### Validation du système de secours par les parties prenantes de l’entreprise {#fallback-system-sign-off-from-business-stakeholders}
 
 Signez, auprès des parties prenantes de l’entreprise, que le système de secours et les procédures connexes garantissent les fonctionnalités métier essentielles.
 
@@ -526,7 +526,7 @@ Un chemin heureux est un scénario par défaut ne présentant aucune condition e
 Estimations initiales de :
 
 * le matériel nécessaire à l’installation AEM de base ;
-* toute exigence supplémentaire, en fonction de la conception de solution de haut niveau
+* toute exigence supplémentaire, en fonction de la conception de solution de haut niveau ;
 
 ### Le matériel sera disponible pour répondre aux exigences {#hardware-will-be-available-to-fulfill-requirements}
 
@@ -539,7 +539,7 @@ La définition des exigences de haut niveau fournit une ventilation générale d
 * Processus métier
 * Fonctions système majeures
 
-Les détails de base sur ces fonctions sont généralement connus. Ce document ne doit donc pas être une estimation.
+Les détails de base sur ces fonctions sont généralement connus. Par conséquent, ce document ne doit pas être une estimation.
 
 ### Conception de solutions de haut niveau {#high-level-solution-design}
 
@@ -547,7 +547,7 @@ La conception de solution de haut niveau explique l’architecture utilisée pou
 
 ### Carte système de haut niveau {#high-level-system-map}
 
-Cette carte système doit fournir un diagramme de haut niveau du système. Il diffère du contexte de la solution en ce sens qu’il s’agit d’une carte générale de tous les systèmes impliqués, il n’y a aucune interface sur ce diagramme.
+Cette carte système doit fournir un diagramme de haut niveau du système. Il diffère du contexte de la solution en ce sens qu’il s’agit d’une carte générale de tous les systèmes impliqués, il n’y a pas d’interfaces sur ce diagramme.
 
 ### Structure de contenu historique {#historical-content-structure}
 
@@ -668,14 +668,14 @@ Les détails de l’ancien système doivent être collectés afin que vous sachi
 
 ### Liste des outils de développement à utiliser {#list-of-development-tools-to-be-used}
 
-un aperçu des outils qui seront utilisés dans la mise en oeuvre ; les outils doivent inclure les éléments suivants :
+Présentation des outils qui seront utilisés dans la mise en oeuvre. Les outils doivent inclure :
 
 * outils de documentation
 * outils de suivi des problèmes
 * outils de déploiement
 * outils de création
 
-### Liste des utilisateurs qui ont besoin d’un accès au portail d’assistance à l’Adobe {#list-of-users-that-require-access-to-adobe-support-portal}
+### Liste des utilisateurs qui ont besoin d’un accès au portail d’assistance aux Adobes {#list-of-users-that-require-access-to-adobe-support-portal}
 
 Liste de tous les utilisateurs et rôles devant accéder au portail d’assistance à l’Adobe.
 
@@ -699,7 +699,7 @@ Testez et activez AEM tâches de maintenance telles que :
 
 ### Plan de migration {#migration-plan}
 
-documenter la migration ; inclusion
+documenter la migration, y compris
 
 * chronologie de la migration
 * plan de maintenance du contenu, selon la stratégie de migration
@@ -736,7 +736,7 @@ Surveillance de l’utilisation de l’espace disque par la solution :
 
 Vous devez surveiller l’utilisation en :
 
-* le référentiel ;
+* le référentiel
 * fichiers journaux
 
 ### Surveillance - Systèmes externes {#monitoring-external-system-s}
@@ -765,7 +765,7 @@ Surveillez aux points de sécurité définis.
 
 ### Surveillance - Système {#monitoring-system}
 
-surveiller l’ensemble du système ; par exemple :
+Surveillez l’ensemble du système, par exemple :
 
 * disponibilité
 * performance moyenne
@@ -778,7 +778,7 @@ Surveillance du seuil défini de la solution, ainsi que mise en oeuvre des étap
 
 ### Concept de surveillance {#monitoring-concept}
 
-les concepts de surveillance à appliquer à votre solution ; incorporation :
+Les concepts de surveillance à appliquer à votre solution, notamment :
 
 * Surveillance AEM standard
 * surveillance du système
@@ -866,7 +866,7 @@ Les tests basés sur le personnage sont une méthode basée sur les différentes
 
 Cette méthode est souvent utilisée dans les tests d’acceptation utilisateur (UAT).
 
-### Tests et vérification du point de vente par rapport à la documentation sur les exigences {#poc-tested-and-verified-against-requirement-documentation}
+### Tests et vérification du point de vente par rapport à la documentation requise {#poc-tested-and-verified-against-requirement-documentation}
 
 La preuve de concept (PDC) est évaluée par rapport aux exigences afin de s’assurer que les deux sont alignés.
 
@@ -886,7 +886,7 @@ Il est habituel d’exécuter un test de ligne de base sur une installation stan
 
 Vérifiez que l’environnement de production est prêt et que des déploiements automatisés sont en place.
 
-### Approbation de la production par les parties prenantes de l’entreprise {#production-sign-off-from-business-stakeholders}
+### Approbation de la production par les intervenants de l’entreprise {#production-sign-off-from-business-stakeholders}
 
 Avant de passer en production dans l’environnement de production, la validation de production (PSO) doit être accordée. Il s’agit du résultat d’une révision de la version qui sera en production, ainsi que de tous les problèmes connus. L’approbation est donnée dans le cadre du planning d’activation.
 
@@ -900,7 +900,7 @@ Définissez le plan de communication pour les parties prenantes de l’entrepris
 
 ### Efforts du projet - Estimations finales {#project-efforts-final-estimates}
 
-Le [estimation initiale](#project-efforts-initial-estimates) étaient de haut niveau et conformes aux exigences de haut niveau de la mise en oeuvre.
+La variable [estimation initiale](#project-efforts-initial-estimates) étaient de haut niveau et conformes aux exigences de haut niveau de la mise en oeuvre.
 
 Ils sont maintenant examinés, affinés et développés afin de fournir les estimations finales. Les estimations doivent être fournies par chaque responsable de projet approprié, y compris la gestion de projet, le conseil, l’architecture, les tests et le développement.
 
@@ -912,13 +912,13 @@ Les estimations initiales sont de haut niveau et établies en fonction des exige
 
 ### Organisation du projet {#project-organization}
 
-La documentation requise pour décrire l’organisation et la structure de création de rapports du projet et de l’équipe.
+La documentation requise pour décrire l’organisation et la structure des rapports du projet et de l’équipe.
 
 Souvent, il se présente sous la forme ou comprend un graphique pour présenter un aperçu visuel des calendriers et des responsabilités. De nombreux outils sont disponibles pour vous aider.
 
 ### Document d’étendue du projet {#project-scope-document}
 
-Le document sur la portée du projet vous demande d’identifier et de documenter une liste des éléments suivants :
+Le document de portée du projet nécessite que vous identifiiez et documentiez une liste des éléments suivants :
 
 * Objectifs spécifiques au projet
 * Deliverables
@@ -969,11 +969,11 @@ Il est utilisé avec le Runbook pour exécuter les étapes et les vérifications
 
 ### Exécution de la version dans l’environnement de production {#release-running-on-production-environment}
 
-Version finale en cours d’exécution et principale en production.
+Version finale en cours d’exécution et active en production.
 
 ### Termes du contrat pertinents {#relevant-contract-terms}
 
-mettre en évidence les termes spécifiques du contrat pertinents pour la mise en oeuvre du projet ; comme les jalons contractuels, les périodes de facture ou les besoins en personnel.
+Mettre en évidence les termes spécifiques du contrat qui sont pertinents pour la mise en oeuvre du projet, tels que les jalons contractuels, les périodes de facture ou les besoins en personnel.
 
 ### Cadence des rapports {#reporting-cadence}
 
@@ -1010,7 +1010,7 @@ Le plan d&#39;atténuation des risques comprend l&#39;évaluation des risques. E
 * les risques identifiés ;
 * des solutions possibles à ces risques s&#39;ils surviennent dans la mise en oeuvre
 
-### Attentes du retour sur investissement {#roi-expectations}
+### Attentes en matière de retour sur investissement {#roi-expectations}
 
 Définissez les attentes relatives au retour sur investissement (ROI) associées à la solution.
 
@@ -1049,7 +1049,7 @@ Ces instructions définissent la manière dont le code de développement doit ê
 
 ### Liste de contrôle de sécurité {#security-checklist}
 
-Liste de contrôle des éléments spécifiques au projet, basée sur le concept de sécurité, ainsi que toute stratégie supplémentaire requise pour garantir la conformité de la solution.
+Liste de contrôle des éléments spécifiques au projet, basée sur le concept de sécurité, ainsi que toutes les stratégies supplémentaires requises pour garantir la conformité de la solution.
 
 Souvent, cela est également inclus dans les étapes de post-déploiement du runbook.
 
@@ -1067,7 +1067,7 @@ Présentation de haut niveau couvrant la configuration de sécurité de :
 
 ### Problèmes de sécurité répertoriés et évalués {#security-issues-listed-and-assessed}
 
-tous les problèmes de sécurité de la solution répertoriés et évalués ; y compris les estimations des efforts.
+Tous les problèmes de sécurité de la solution répertoriés et évalués, y compris les estimations de l’effort.
 
 ### Approbation de la sécurité par les parties prenantes de l’entreprise {#security-sign-off-from-business-stakeholders}
 
@@ -1077,7 +1077,7 @@ Signez les parties prenantes pour vous assurer que la mise en oeuvre de la sécu
 
 Définissez les processus de prise en charge requis en place.
 
-### Contrats de niveau de service pour les systèmes tiers {#slas-for-third-party-systems}
+### Contrats de niveau de service pour systèmes tiers {#slas-for-third-party-systems}
 
 Assurez-vous que les contrats de niveau de service (SLA) sont disponibles et communiqués aux équipes de développement et d’exploitation pour utilisation pendant la mise en oeuvre et l’assistance.
 
@@ -1093,7 +1093,7 @@ Les tests de détection de fumée doivent être exécutés sur tous les système
 
 ### Stratégie d’architecture logicielle {#software-architecture-strategy}
 
-la stratégie de haut niveau pour l&#39;architecture logicielle; notamment les services, servlets, structures et autres décisions d’implémentation.
+Stratégie de haut niveau pour l’architecture logicielle, y compris les services, servlets, structures et autres décisions d’implémentation.
 
 ### Conseil d’examen des solutions établi et calendrier des réunions {#solution-review-board-established-and-meeting-cadence-set}
 
@@ -1131,7 +1131,7 @@ Un processus clair pour l’approbation des spécifications par le client doit �
 
 Personnel interne qui a besoin d’une formation pour administrer la solution.
 
-### Personnel sélectionné pour la formation de l’auteur et de l’utilisateur final {#staff-selected-for-author-and-end-user-training}
+### Personnel sélectionné pour la formation des auteurs et des utilisateurs finaux {#staff-selected-for-author-and-end-user-training}
 
 Personnel interne qui a besoin d’une formation pour créer sur la solution.
 
@@ -1150,7 +1150,7 @@ Confirmation que toutes les parties prenantes en dehors de l’équipe de mise e
 
 ### Les parties prenantes comprennent le projet et les attentes {#stakeholders-understand-project-and-expectations}
 
-Confirmation que toutes les parties prenantes en dehors de l’équipe de mise en oeuvre proprement dite sont en phase avec l’ensemble du projet et des attentes, à la fois internes à l’équipe de projet et clients.
+Confirmation que toutes les parties prenantes en dehors de l’équipe de mise en oeuvre proprement dite sont en phase avec l’ensemble du projet et des attentes, aussi bien internes à l’équipe de projet qu’au client.
 
 ### Définition du format du rapport d’état {#status-report-format-definition}
 
@@ -1184,7 +1184,7 @@ Une proposition initiale et une définition de l’architecture pour tous les en
 
 ### Documentation de l’architecture du système {#system-architecture-documentation}
 
-un document détaillant l’architecture du système ; y compris les interfaces, l’emplacement réseau et les intégrations pour tous les environnements, entre autres informations.
+Document détaillant l’architecture du système, notamment les interfaces, l’emplacement réseau et les intégrations pour tous les environnements.
 
 ### Concept de sécurité de l’architecture système {#system-architecture-security-concept}
 
@@ -1223,7 +1223,7 @@ Ces exigences sont spécifiques à la mise en oeuvre technique des services qui 
 
 Identifier et vérifier les risques techniques potentiels. Les risques techniques peuvent inclure :
 
-* cross-site scripting
+* script intersite
 * champ de saisie destiné aux utilisateurs finaux
 * infrastructure
 * ère technologique
@@ -1237,7 +1237,7 @@ La Spécification technique couvre (entre autres informations) :
 * interfaces
 * configurations
 * API
-* services qui prennent en charge les exigences de la solution
+* les services qui prennent en charge les exigences de la solution ;
 
 ### Spécification du modèle {#template-specification}
 
@@ -1259,7 +1259,7 @@ Assurez-vous que l’environnement de test est prêt, avec des déploiements aut
 
 ### Rapports de test {#test-reports}
 
-Rapports détaillant les résultats des tests ; notamment :
+Rapports détaillant les résultats des tests, notamment :
 
 * des défauts ;
 * état des cas de test exécutés
@@ -1280,7 +1280,7 @@ Suite d’automatisation et outil sélectionnés pour l’automatisation des cas
 
 ### Concept de test {#testing-concept}
 
-Le concept de test est la description détaillée des tests pour le projet. notamment les tests d’assurance qualité, d’UAT, de performance, de sécurité et d’intégration.
+Le concept de test est la description de haut niveau des tests pour le projet, y compris, l’assurance qualité, l’UAT, les performances, la sécurité et les tests d’intégration.
 
 ### Plans de test {#testing-plans}
 
@@ -1296,7 +1296,7 @@ La stratégie de test décrit la stratégie de haut niveau pour l’assurance qu
 
 ### Concept d’intégration tierce {#third-party-integration-concept}
 
-Concept d’architecture et de système pour l’intégration à des systèmes tiers.
+Concept architectural et système pour l’intégration à des systèmes tiers.
 
 ### Spécification de l’intégration tierce {#third-party-integration-specification}
 
@@ -1328,7 +1328,7 @@ Définit les valeurs clés des points de surveillance dans le système.
 Par exemple :
 
 * combien de kilo-octets (Ko) de journaux non envoyés génèrent un avertissement sur l’instance de serveur principale
-* le nombre de millisecondes de délai moyen par transaction toléré avant qu’un avertissement ne soit généré sur le serveur principal ;
+* le nombre de millisecondes de délai moyen par transaction toléré avant la génération d’un avertissement sur le serveur principal
 
 ### Chronologie et jalons {#timeline-and-milestones}
 
@@ -1339,7 +1339,7 @@ Cela doit définir les calendriers du projet et les jalons contractuels à utili
 
 ### Total des efforts du projet {#total-project-efforts}
 
-Toutes les estimations de l&#39;effort, issues de chacune des pistes du projet, doivent être consolidées ; y compris les frais généraux, le développement, l&#39;ingénierie de système, l&#39;architecture et les tests.
+Toutes les estimations de l’effort, issues de chacune des pistes du projet, doivent être consolidées, y compris les frais généraux, le développement, l’ingénierie du système, l’architecture et les efforts de test.
 
 Si l&#39;accord comporte un niveau de soutien, les efforts de soutien et d&#39;exploitation devraient également être inclus.
 
@@ -1351,7 +1351,7 @@ Matériel à utiliser dans les sessions de formation. Les documents doivent êtr
 
 Le personnage approprié doit confirmer qu’il comprend parfaitement :
 
-* la portée du projet ;
+* la portée du projet
 * toutes les attentes des clients ;
 * qu’il s’agit de la base de toutes les décisions prises par persona, par phase dans le projet
 
@@ -1401,7 +1401,7 @@ Sur la base du concept de processus, ces spécifications doivent définir, en d�
 
 La spécification de chaque workflow doit inclure (au minimum) :
 
-* cas pratique
+* cas d’utilisation
 * rôles
 * étapes
 * résultats

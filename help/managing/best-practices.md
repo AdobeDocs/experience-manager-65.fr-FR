@@ -7,9 +7,9 @@ topic-tags: managing-checklist, introduction
 content-type: reference
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3252'
+source-wordcount: '3251'
 ht-degree: 12%
 
 ---
@@ -37,7 +37,7 @@ Pour vous aider, les bonnes pratiques sont les suivantes :
 
 ## Tableau de bord de pulsation du projet {#project-heartbeat-dashboard}
 
-Le **Pulsation du projet** La feuille de calcul offre un aperçu graphique des mesures critiques pour votre projet :
+La variable **Pulsation du projet** La feuille de calcul offre un aperçu graphique des mesures critiques pour votre projet :
 
 * **Qualité de la phase**
 
@@ -53,7 +53,7 @@ Le **Pulsation du projet** La feuille de calcul offre un aperçu graphique des m
 
 ## État par rôle {#status-by-role}
 
-Le **État par rôle** La feuille de calcul affiche une ventilation détaillée de [**Santé**, **Qualité et **Complétude**](#projectheartbeat) par **[Phase](#phases-and-milestones)** et **[Persona](#persona)**.
+La variable **État par rôle** La feuille de calcul affiche une ventilation détaillée de [**Santé**, **Qualité et **Complétude**](#projectheartbeat) par **[Phase](#phases-and-milestones)** et **[Persona](#persona)**.
 
 ## Phases et jalons {#phases-and-milestones}
 
@@ -75,7 +75,7 @@ La préparation de votre projet constitue la base de l’ensemble du projet. Dé
 
 * **Portée et planification**
 
-   * Une portée de base et un calendrier approximatif doivent être mis à disposition pour définir ce qui est nécessaire et dans quel délai; si cela permet de clarifier la situation, vous pouvez également définir ce qui ne fait pas partie du champ d’application.
+   * Une portée de base et un calendrier approximatif doivent être mis à disposition pour définir ce qui est nécessaire et dans quel délai ; si cela permet de clarifier la situation, vous pouvez également définir ce qui se trouve en dehors du champ d’application.
 
 La façon dont vous préparez, planifiez et exécutez votre projet et mettez en oeuvre votre solution est affectée par les restrictions que vous opérez. Par exemple, budget fixe, calendrier fixe, quantité de contenu, qualité requise.
 
@@ -89,7 +89,7 @@ Les quatre facteurs :
 
 * **Validation**
 
-  Au cours de cette phase, vous devez valider et confirmer les objectifs du projet ; par exemple :
+  Au cours de cette phase, vous devez valider et confirmer les objectifs du projet, par exemple :
 
    * Que voulez-vous réaliser/fournir ?
    * Qui en bénéficie ?
@@ -135,7 +135,7 @@ La planification du projet consolide la préparation. Vous devez ici commencer �
 
 * **Communication**
 
-  La communication est toujours essentielle au succès d’un projet. Vous devez communiquer de manière claire et efficace pour vous assurer que chacun :
+  La communication est toujours essentielle au succès d’un projet. Vous devez communiquer de manière claire et efficace pour vous assurer que tout le monde :
 
    * Utiliser les mêmes objectifs de base
    * À partir de la même base d’informations
@@ -165,25 +165,25 @@ La planification du développement est essentielle pour vous assurer que votre p
 
 * **Architecture de contenu**
 
-  L’architecture de contenu définit et décrit l’architecture future du contenu ; notamment :
+  L’architecture de contenu définit et décrit l’architecture future du contenu, notamment :
 
-   * L’arborescence de contenu ; inclusion de ressources
-   * les structures de base; y compris les campagnes, etc.
+   * Arborescence de contenu, y compris les ressources
+   * Les structures de base, y compris les campagnes, etc.
    * Structures multisites et multilingues (MSM, traduction, etc.)
    * Contenu pris en charge (y compris les balises et les concepts de balisage)
    * Stratégies de mise en cache et de réutilisation du contenu
 
 * **Architecture du système**
 
-  L’architecture du système définit la vision conceptuelle de votre système ; y compris (entre autres informations) :
+  L’architecture du système définit la vision conceptuelle de votre système, notamment (entre autres informations) :
 
    * [Structure du système](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) pour tous les environnements requis
    * Sous-systèmes
    * Systèmes tiers
-   * les interfaces; Matériel, logiciel et interaction humaine
+   * Interfaces ; matériel, logiciel et interaction humaine
    * les serveurs pour chaque environnement, consultez les [Exigences techniques](/help/sites-deploying/technical-requirements.md) et les [Consignes de dimensionnement du matériel](/help/managing/hardware-sizing-guidelines.md) ;
 
-   * les processus pour chaque environnement ; par exemple, les exigences de déploiement et de maintenance
+   * Processus pour chaque environnement ; par exemple, exigences de déploiement et de maintenance
    * Activités de maintenance (GC de banque de données, optimisation TarPM, etc.)
    * Mise en cache du [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr)
    * [Mise en grappe de la publication/création partagée](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)
@@ -201,7 +201,7 @@ La planification du développement est essentielle pour vous assurer que votre p
   Les définitions doivent couvrir :
 
    * Structure de code de base du projet
-   * Artefacts de code (bundles, packages, etc.)
+   * Artefacts de code (lots, packages, etc.)
    * Ventilations des modèles/composants et de leurs relations
    * Détails de haut niveau sur les personnalisations requises (des superpositions spécifiques suivront ultérieurement)
    * Conception des workflows requis par la solution (par exemple, création de contenu, approbation, publication, transformations, importations et exportations)
@@ -212,7 +212,7 @@ La planification du développement est essentielle pour vous assurer que votre p
   L’intégration du système requiert que vous planifiiez (puis mettiez en oeuvre) :
 
    * Comment tous les sous-systèmes et [intégrations de solutions](/help/sites-administering/integration.md) qui seront rassemblés pour fonctionner comme un système cohérent
-   * Comment les systèmes tiers seront-ils intégrés ? ainsi que toutes les considérations spéciales, telles que la gestion hors ligne/en ligne, côté client/côté navigateur ou la gestion du basculement lorsqu’un système tiers est hors service
+   * Comment les systèmes tiers seront-ils intégrés, ainsi que toute considération spéciale, telle que hors ligne/en ligne, côté client/côté navigateur ou la gestion des basculements lorsqu’un système tiers est en panne ?
 
 * **Concept de test**
 
@@ -223,7 +223,7 @@ La planification du développement est essentielle pour vous assurer que votre p
    * Détails de tous les tests à effectuer
    * Préparation de tout contenu requis pour ces tests
    * Informations sur les outils de test à utiliser
-   * une indication générale de la personne qui sera impliquée dans les tests; en particulier les groupes en dehors de l’équipe d’assurance qualité
+   * Une indication de haut niveau de qui sera impliqué dans les tests, en particulier les groupes en dehors de l’équipe d’assurance qualité
    * Détails de l’automatisation des tests ; par exemple, avec Selenium ou le mode AEM Développeur
 
 * **Conception d’expérience**
@@ -250,7 +250,7 @@ De la même manière, les opérations doivent être correctement planifiées pou
 
   Par exemple :
 
-   * Une liste de rôles (c’est-à-dire, de groupes) avec `read`/ `write` définitions d’accès pour chaque
+   * Une liste de rôles (c’est-à-dire, de groupes) avec `read`/ `write` Définitions d’accès pour chaque
 
    * la définition des privilèges qui affectent l’environnement de publication, par exemple, `replicate`.
    * Pour les utilisateurs qui disposent des privilèges minimaux, des workflow doivent être définis.
@@ -263,7 +263,7 @@ De la même manière, les opérations doivent être correctement planifiées pou
   La surveillance et la maintenance sont des aspects essentiels pour assurer le bon fonctionnement de votre solution une fois qu’elle est activée. Pour cela, vous devez définir :
 
    * Éléments à surveiller
-   * les tâches de maintenance; aussi bien régulier que pour des cas particuliers
+   * Tâches de maintenance, régulières et pour des cas particuliers
 
   Voir aussi [Surveillance et maintenance](/help/sites-deploying/monitoring-and-maintaining.md) pour plus d’informations.
 
@@ -290,12 +290,12 @@ Le développement est une phase cruciale qui nécessite plus que du simple codag
 
       * Un environnement type se compose des éléments suivants :
 
-         * un système de suivi des problèmes ; par exemple, Jira
-         * un IDE ; comme Eclipse
-         * un outil de gestion des versions ; comme Maven
+         * un système de suivi des problèmes, tel que Jira ;
+         * un IDE, tel qu’Eclipse ;
+         * un outil de gestion des versions, tel que Maven ;
          * un outil pour l’intégration continue, comme Jenkins ;
-         * un outil de contrôle de version ; comme GIT/SVN
-         * un gestionnaire de référentiel d’artefacts de build ; par exemple Archiva/Nexus
+         * un outil de contrôle de version, tel que GIT/SVN ;
+         * un gestionnaire de référentiel d’artefacts de build, par exemple Archiva/Nexus ;
 
    * Intégration/dépendances de logiciels tiers
    * [l’intégration/les dépendances des solutions ;](/help/sites-administering/integration.md)
@@ -306,7 +306,7 @@ Le développement est une phase cruciale qui nécessite plus que du simple codag
   Planifiez et documentez votre environnement de test, notamment :
 
    * Architecture
-   * Dépendances des structures de développement; y compris les versions nocturnes
+   * Dépendances des versions de développement, y compris les versions nocturnes
    * Les possibilités ou limites du test de l’intégration/des dépendances de logiciels tiers
    * Outils de test
    * Stratégie de test automatisé
@@ -320,7 +320,7 @@ Le développement est une phase cruciale qui nécessite plus que du simple codag
    * Intégration/dépendances de logiciels tiers
    * Configuration de la sécurité
    * les performances de base vérifiées par l’exécution de [tests ToughDay](/help/sites-developing/tough-day.md) sur la configuration d’exploitation ;
-   * les exigences relatives aux tests de performance; see [Bonnes pratiques pour l’assurance qualité](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
+   * Conditions requises pour les tests de performance ; voir [Bonnes pratiques pour l’assurance qualité](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
 
 * **Intégration**
 
@@ -332,7 +332,7 @@ Le développement est une phase cruciale qui nécessite plus que du simple codag
 
 * **Migration**
 
-  planifier, documenter et tester tous les aspects de la migration de contenu ; notamment :
+  Planifiez, documentez et testez tous les aspects de la migration de contenu, notamment :
 
    * Architecture du contenu
    * Stratégie de migration
@@ -343,7 +343,7 @@ Le développement est une phase cruciale qui nécessite plus que du simple codag
 
 * **Documentation**
 
-  documenter entièrement la solution ; notamment :
+  Documentez entièrement la solution, notamment :
 
    * Manuel des opérations
    * Toutes les personnalisations pouvant affecter les mises à niveau
@@ -368,7 +368,7 @@ Une fois la nouvelle application disponible, elle doit subir des tests stricts, 
    * La solution répond aux exigences de l’utilisateur/du client.
    * Le client/les utilisateurs acceptent la solution (fonction, conception et performances)
 
-  Il doit y avoir une liste de contrôle formalisée pour la remise des clients ; idéalement automatisé et exécuté de nuit sur un instantané. Les résultats doivent être envoyés au chef de projet et à l’équipe de développement.
+  Il doit y avoir une liste de contrôle formalisée pour la remise aux clients ; idéalement automatisée et exécutée de nuit sur un instantané. Les résultats doivent être envoyés au chef de projet et à l’équipe de développement.
 
 * **Tests de performance et de chargement**
 
@@ -468,7 +468,7 @@ Il y en a aussi quelques [autre personnage](#other-persona) qui sont impliqués 
 Le sponsor du projet est :
 
 * Responsable de l’exécution/de la présentation de l’analyse de cas pour le projet.
-* la clé de l&#39;élaboration et de la définition de la portée du projet; notamment :
+* Clé pour définir et définir la portée du projet, notamment :
 
    * la définition et les critères de réussite
    * les principaux indicateurs de performance clés ;
@@ -488,7 +488,7 @@ Le chef de projet est :
 L’architecte de la solution :
 
 * est responsable de la conception de haut niveau de la solution et du système ;
-* aide à définir la stratégie de mise en œuvre d’AEM Par exemple, mettre en oeuvre une installation en grappe ou un Secondaire à froid ou créer un réseau de diffusion de contenu (CDN).
+* aide à définir la stratégie de mise en œuvre d’AEM Par exemple, la mise en oeuvre d’une installation en grappe ou d’une reprise à froid ou la nécessité d’un réseau de diffusion de contenu.
 * Définissez également l’architecture de la solution AEM en fonction des exigences du client. Cela peut inclure le concept des rôles utilisateur (avec les droits associés), la relation entre les modèles et les composants, ou le moment où utiliser la gestion multisite.
 
 ### Analyste métier {#business-analyst}
@@ -497,14 +497,14 @@ L’analyste d’entreprise :
 
 * est principalement chargé de rassembler et d’analyser les exigences de haut niveau, puis de les transformer en spécifications :
 
-   * pour que le chef de projet l’utilise lors de la planification du développement
+   * pour que le chef de projet l’utilise lors de la planification du développement.
    * pour que l’équipe de développement puisse travailler pendant la conception et le développement.
 
 * Travaille en étroite collaboration avec le client pour analyser les exigences. Ils les comparent à :
 
-   * La définition du succès.
+   * La définition de la réussite.
    * Les critères de réussite.
-   * IPC (tant métier que performance).
+   * IPC (basés à la fois sur les activités et les performances).
 
 ### Responsable du développement {#development-lead}
 
@@ -523,7 +523,7 @@ Le responsable du développement :
 
 Le prospect de qualité :
 
-* est responsable de la qualité de la diffusion ; s’assurer qu’elle répond aux critères de réussite et à tous les IPC définis par le client.
+* est responsable de la qualité de la diffusion ; s’assurer qu’elle répond aux critères de réussite et aux indicateurs de performance clés définis par le client ;
 * Définit les mesures de qualité, s’aligne sur toutes les parties prenantes, élabore les plans de test et s’assure qu’ils sont exécutés.
 * Crée et diffuse des rapports aux parties prenantes du projet.
 
@@ -535,7 +535,7 @@ L’ingénieur système :
 * est responsable de :
 
    * la configuration des environnements de développement et de test internes ;
-   * pour faire correspondre ces systèmes aux systèmes client
+   * pour faire correspondre ces systèmes aux systèmes client.
 
 * Fournit des recommandations matérielles, surveille les différentes mises en oeuvre et assure la prise en charge des opérations avant et après la mise en service.
 
@@ -544,7 +544,7 @@ L’ingénieur système :
 Le responsable de la sécurité :
 
 * est responsable du concept de sécurité global de la solution, en s’assurant qu’elle est alignée sur les exigences et stratégies du client ;
-* fournit un concept de sécurité, des opérations de sécurité et des recommandations pour tout concept de sécurité matériel ; comme les zones et les pare-feu.
+* Fournit un concept de sécurité, des opérations de sécurité et des recommandations pour tout concept de sécurité matériel, tel que les zones et les pare-feu.
 
 ### Autre personnage {#other-persona}
 
@@ -560,7 +560,7 @@ Le responsable de la sécurité :
 
    * Selon l&#39;ampleur et la nature du projet, des formateurs spécialisés peuvent être utilisés pour développer et présenter des sessions de formation pour les groupes concernés.
 
-* Rédacteurs techniques
+* Écrivains techniques
 
    * Selon l’ampleur et la nature du projet, des rédacteurs techniques spécialisés peuvent être utilisés pour écrire des directives et des manuels pour des groupes spécifiques. Par exemple, un manuel de maintenance pour les administrateurs système ou un guide de l’utilisateur pour les auteurs.
 
@@ -581,7 +581,7 @@ Les listes de contrôle couvrent les **documents requis** et les **éléments li
 
 ### Documents requis {#required-documents}
 
-Le **Documents requis** sont nécessaires pour le personnage approprié lors de la production de ses éléments livrables.
+La variable **Documents requis** sont nécessaires pour le personnage approprié lors de la production de ses éléments livrables.
 
 Pour chaque **Document requis**, le persona doit indiquer :
 

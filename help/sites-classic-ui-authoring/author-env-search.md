@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 8d32960c-47c3-4e92-b02e-ad4d8fea7b2d
 docset: aem65
 exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '470'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '469'
+ht-degree: 94%
 
 ---
 
@@ -49,7 +49,6 @@ Dans le panneau de recherche, vous pouvez effectuer des recherches dans toutes l
 >* [Optimisation](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
 >
 
-
 Exécutez la recherche en cliquant sur **Rechercher** au bas du volet. Cliquez sur **Réinitialiser** pour effacer les critères de recherche.
 
 ## Filtrer {#filter}
@@ -60,7 +59,7 @@ Exécutez la recherche en cliquant sur **Rechercher** au bas du volet. Cliquez s
 
 ## Rechercher et remplacer {#find-and-replace}
 
-Dans la console **Sites web**, l’option de menu **Rechercher et remplacer** vous permet de rechercher et de remplacer plusieurs instances d’une chaîne dans une section du site web.
+Dans le **Sites web** console **Rechercher et remplacer** l’option de menu vous permet de rechercher et de remplacer plusieurs instances d’une chaîne dans une section du site web.
 
 1. Sélectionnez la page racine, ou le dossier, dans laquelle ou lequel vous souhaitez que l’action de recherche et de remplacement soit effectuée.
 1. Sélectionnez **Outils**, puis **Rechercher et remplacer** :

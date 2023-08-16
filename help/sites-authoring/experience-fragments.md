@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: ht
-source-wordcount: '1444'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1442'
+ht-degree: 99%
 
 ---
 
@@ -43,7 +43,8 @@ Vous pouvez utiliser des fragments d’expérience :
 >Dans le cas des fragments d’expérience, l’accès en écriture exige que le compte d’utilisateur soit enregistré dans le groupe :
 >
 >    `experience-fragments-editors`
->Si vous rencontrez des problèmes, contactez votre administrateur système.
+>
+Si vous rencontrez des problèmes, contactez votre administrateur système.
 
 ## Quand utiliser les fragments d’expérience ? {#when-should-you-use-experience-fragments}
 
@@ -75,17 +76,19 @@ Nous vous encourageons à :
 
 * [configurer les modèles autorisés sur ces dossiers](#configure-allowed-templates-folder).
 
-La création de dossiers vous permet d’effectuer les opérations suivantes :
+La création de dossiers permet :
 
 * Créer une structure significative pour vos fragments d’expérience ; en fonction de la classification, par exemple
 
-   >[!NOTE]
-   >Il n’est pas nécessaire d’aligner la structure de vos fragments d’expérience sur la structure de page de votre site.
+  >[!NOTE]
+  >
+  Il n’est pas nécessaire d’aligner la structure de vos fragments d’expérience sur la structure de page de votre site.
 
 * [Allouer les modèles autorisés au niveau du dossier](#configure-allowed-templates-folder)
 
-   >[!NOTE]
-   >Vous pouvez utiliser l’[éditeur de modèles](/help/sites-authoring/templates.md) pour créer votre propre modèle.
+  >[!NOTE]
+  >
+  Vous pouvez utiliser l’[éditeur de modèles](/help/sites-authoring/templates.md) pour créer votre propre modèle.
 
 Le projet WKND structure certains fragments d’expérience en fonction de `Contributors`. La structure utilisée illustre également l’utilisation d’autres fonctionnalités, telles que la gestion multisite (y compris des copies de langue).
 
@@ -104,12 +107,14 @@ Pour créer et configurer un dossier pour vos fragments d’expérience, il est 
 1. [Configurer les modèles de fragments d’expérience autorisés pour ce dossier](#configure-allowed-templates-folder)
 
 >[!NOTE]
->Il est également possible de configurer les [modèles autorisés pour votre instance](#configure-allowed-templates-instance). Cependant, cette méthode n’est **pas** recommandée, car les valeurs peuvent être remplacées lors de la mise à niveau.
+>
+Il est également possible de configurer les [modèles autorisés pour votre instance](#configure-allowed-templates-instance). Cependant, cette méthode n’est **pas** recommandée, car les valeurs peuvent être remplacées lors de la mise à niveau.
 
 ### Configuration des modèles autorisés pour votre dossier {#configure-allowed-templates-folder}
 
 >[!NOTE]
->Il s’agit de la méthode recommandée pour spécifier les **Modèles autorisés**, car les valeurs ne sont pas remplacées lors de la mise à niveau.
+>
+Il s’agit de la méthode recommandée pour spécifier les **Modèles autorisés**, car les valeurs ne sont pas remplacées lors de la mise à niveau.
 
 1. Accédez au dossier **Fragments d’expérience** concerné.
 
@@ -126,15 +131,18 @@ Pour créer et configurer un dossier pour vos fragments d’expérience, il est 
    ![Propriétés des fragments d’expérience – Modèles autorisés](/help/sites-authoring/assets/xf-folders-templates.png)
 
    >[!NOTE]
-   >Pour plus d’informations, voir [Modèles de fragments d’expérience](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments).
+   >
+   Pour plus d’informations, voir [Modèles de fragments d’expérience](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments).
 
 1. Sélectionnez **Enregistrer et fermer**.
 
 ### Configuration des modèles autorisés pour votre instance {#configure-allowed-templates-instance}
 
 >[!CAUTION]
->Il est déconseillé de modifier les **Modèles autorisés** à l’aide de cette méthode, car les modèles spécifiés peuvent être remplacés lors de la mise à niveau.
->Veuillez utiliser cette boîte de dialogue uniquement à titre d’information.
+>
+Il est déconseillé de modifier les **Modèles autorisés** à l’aide de cette méthode, car les modèles spécifiés peuvent être remplacés lors de la mise à niveau.
+>
+Veuillez utiliser cette boîte de dialogue uniquement à titre d’information.
 
 1. Accédez à la console **Fragments d’expérience** concernée.
 
@@ -147,7 +155,8 @@ Pour créer et configurer un dossier pour vos fragments d’expérience, il est 
    ![Configurer des fragments d’expérience](assets/ef-01.png)
 
    >[!NOTE]
-   >Pour plus d’informations, voir [Modèles de fragments d’expérience](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments).
+   >
+   Pour plus d’informations, voir [Modèles de fragments d’expérience](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments).
 
 1. Sélectionnez **Enregistrer**.
 
@@ -176,8 +185,10 @@ Pour créer un fragment d’expérience :
    ![xf-04](assets/xf-04.png)
 
    >[!NOTE]
-   >Les balises du modèle de fragment d’expérience ne seront pas fusionnées avec les balises sur cette page racine de fragment d’expérience.
-   >Elles sont complètement séparées.
+   >
+   Les balises du modèle de fragment d’expérience ne seront pas fusionnées avec les balises sur cette page racine de fragment d’expérience.
+   >
+   Elles sont complètement séparées.
 
 1. Cliquez sur **Créer**.
 
@@ -192,7 +203,8 @@ Pour créer un fragment d’expérience :
 L’Éditeur de fragments d’expérience offre des fonctionnalités similaires à celles à l’Éditeur de page classique.
 
 >[!NOTE]
->Voir [Modifier le contenu d’une page](/help/sites-authoring/editing-content.md) pour plus d’informations sur l’utilisation de l’éditeur de page.
+>
+Voir [Modifier le contenu d’une page](/help/sites-authoring/editing-content.md) pour plus d’informations sur l’utilisation de l’éditeur de page.
 
 L’exemple de procédure suivant illustre la création d’un teaser pour un produit :
 
@@ -214,7 +226,7 @@ Vous pouvez créer des variantes de votre fragment d’expérience en fonction d
 
    ![xf-authoring-06](assets/xf-authoring-06.png)
 
-1. **Créer** vous permet de créer les éléments suivants :
+1. **Créer** permet de créer :
 
    * **Variation**
    * **Variation en tant que [Live Copy](/help/sites-administering/msm.md#live-copies)**.
@@ -253,7 +265,8 @@ Vous pouvez désormais utiliser votre fragment d’expérience lors de la créat
    ![xf-09](assets/xf-09.png)
 
    >[!NOTE]
-   >L’option Modifier disponible dans la barre d’outils du composant sert de raccourci pour ouvrir le fragment dans l’éditeur de fragments.
+   >
+   L’option Modifier disponible dans la barre d’outils du composant sert de raccourci pour ouvrir le fragment dans l’éditeur de fragments.
 
 ## Blocs de création {#building-blocks}
 
@@ -308,8 +321,11 @@ Les détails de votre fragment sont visibles :
    Les propriétés sont disponibles dans plusieurs onglets :
 
    >[!CAUTION]
-   >Ces onglets s’affichent lorsque vous ouvrez les **propriétés** à partir de la console Fragments d’expérience.
-   >Si vous **ouvrez les propriétés** lors de la modification d’un fragment d’expérience, les [propriétés de page](/help/sites-authoring/editing-page-properties.md) appropriées s’affichent.
+   >
+   Ces onglets s’affichent lorsque vous ouvrez les **propriétés** à partir de la console Fragments d’expérience.
+   >
+   >
+   Si vous **ouvrez les propriétés** lors de la modification d’un fragment d’expérience, les [propriétés de page](/help/sites-authoring/editing-page-properties.md) appropriées s’affichent.
 
    ![ef-05](assets/ef-05.png)
 
@@ -325,28 +341,29 @@ Les détails de votre fragment sont visibles :
       * **Nombre de variantes non-Web** - **informations uniquement**
 
       * **Nombre de pages utilisant ce fragment** – informations uniquement
+
    * **Cloud Services**
 
       * **Configuration du cloud.**
       * **Configuration de Cloud Services**
       * **Identifiant de page Facebook**
       * **Panorama Pinterest**
+
    * **Références**
 
       * Liste de références.
+
    * **État des réseaux sociaux**
 
       * Détails des variations des réseaux sociaux.
-
-
-
 
 ## Rendu HTML brut {#the-plain-html-rendition}
 
 Utiliser le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML brut à partir du navigateur.
 
 >[!NOTE]
->Même s’il est directement disponible à partir du navigateur, [le principal objectif consiste à autoriser d’autres applications (des applications web tierces et des implémentations mobiles personnalisées, par exemple) à accéder directement au contenu du composant Fragment d’expérience en utilisant uniquement l’URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
+>
+Même s’il est directement disponible à partir du navigateur, [le principal objectif consiste à autoriser d’autres applications (des applications web tierces et des implémentations mobiles personnalisées, par exemple) à accéder directement au contenu du composant Fragment d’expérience en utilisant uniquement l’URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
 
 ## Exportation de fragments d’expérience {#exporting-experience-fragments}
 

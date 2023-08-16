@@ -11,10 +11,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2481'
-ht-degree: 81%
+source-wordcount: '2479'
+ht-degree: 77%
 
 ---
 
@@ -33,12 +33,12 @@ AEM Forms est une application déployée dans AEM sous forme de package AEM. Le
 
 L’architecture d’AEM Forms comprend les composants suivants :
 
-* **Services AEM principaux :** Services de base AEM fournis à une application déployée. Ces services comprennent un référentiel de contenu compatible JCR, un conteneur de service OSGi, un moteur de workflow, un trust store, un magasin de clés, etc. Ces services sont accessibles par l’application AEM Forms mais ne sont pas fournis par les packages AEM Forms. Ces services font partie intégrante de la pile AEM globale et divers composants AEM Forms utilisent ces services.
+* **Services d’AEM principaux :** Services de base AEM fournis à une application déployée. Ces services comprennent un référentiel de contenu compatible JCR, un conteneur de service OSGi, un moteur de workflow, un trust store, un magasin de clés, etc. Ces services sont accessibles par l’application AEM Forms mais ne sont pas fournis par les packages AEM Forms. Ces services font partie intégrante de la pile AEM globale et divers composants AEM Forms utilisent ces services.
 * **Services Forms :** fournissez des fonctionnalités liées aux formulaires, telles que la création, l’assemblage, la distribution et l’archivage de documents PDF, l’ajout de signatures numériques pour limiter l’accès aux documents et le décodage de formulaires à codes-barres. Ces services sont disponibles publiquement à des fins d’utilisation par le code personnalisé co-déployé dans AEM.
 * **Couche Web :** JSP ou servlets, reposant sur les services communs et de formulaires, qui fournissent les fonctionnalités suivantes :
 
    * **Interface utilisateur frontale de création** : interface utilisateur de création et de gestion de formulaires pour créer et gérer des formulaires.
-   * **Interface frontale de rendu et d’envoi de formulaire**: Interface utilisateur destinée aux utilisateurs finaux d’AEM Forms (par exemple, les citoyens accédant à un site web gouvernemental). Cette interface fournit des fonctionnalités de rendu de formulaire (affichage du formulaire dans un navigateur web) et d’envoi.
+   * **Interface frontale de rendu et d’envoi de formulaire**: interface utilisateur destinée à être utilisée par les utilisateurs finaux d’AEM Forms (par exemple, les citoyens accédant à un site web gouvernemental). Cette interface fournit des fonctionnalités de rendu de formulaire (affichage du formulaire dans un navigateur web) et d’envoi.
    * **API REST** : les JSP et servlets exportent un sous-ensemble de services de formulaires à des fins d’utilisation distante par des clients HTTP appropriés, comme le kit SDK mobile des formulaires.
 
 **AEM Forms sur OSGi :** un environnement AEM Forms sur OSGi est un environnement dʼauteur ou de publication AEM standard sur lequel est déployé le package AEM Forms. Vous pouvez exécuter AEM Forms sur OSGi dans des [configurations à serveur unique, en batterie et en grappes](/help/sites-deploying/recommended-deploys.md). La mise en grappe n’est disponible que pour les instances dʼauteur AEM.
@@ -100,7 +100,7 @@ Les topologies d’AEM Forms sur JEE recommandées ci-dessous concernent princip
 
 Les clients AEM Forms qui envisagent d’utiliser uniquement les services de document ou les fonctionnalités de Document Security peuvent avoir une topologie similaire à celle affichée ci-dessous. Cette topologie recommande d’utiliser une seule instance d’AEM Forms. Si nécessaire, vous pouvez également créer une grappe ou une ferme de serveurs AEM Forms. Cette topologie est recommandée lorsque la plupart des utilisateurs accèdent par programme aux fonctionnalités du serveur AEM Forms et que l’intervention via l’interface utilisateur est minimale. La topologie est utile dans les opérations de traitement par lots des services de document. Par exemple, utilisez le service de sortie pour créer quotidiennement des centaines de documents PDF non modifiables.
 
-Bien qu’AEM Forms vous permette de configurer et d’exécuter toutes les fonctionnalités depuis un seul serveur, vous devez planifier la capacité, équilibrer la charge et configurer des serveurs dédiés pour des fonctionnalités spécifiques dans un environnement de production. Par exemple, pour un environnement utilisant le service PDF Generator pour convertir des milliers de pages par jour et ajouter des signatures numériques afin de limiter l’accès aux documents, configurez des serveurs AEM Forms distincts pour le service PDF Generator et les fonctionnalités de signature numérique. Cela permet de fournir des performances optimales et de dimensionner les serveurs indépendamment les uns des autres.
+Bien qu’AEM Forms vous permette de configurer et d’exécuter toutes les fonctionnalités à partir d’un seul serveur, vous devez toutefois planifier la capacité, équilibrer la charge et configurer des serveurs dédiés pour des fonctionnalités spécifiques dans un environnement de production. Par exemple, pour un environnement utilisant le service PDF Generator pour convertir des milliers de pages par jour et ajouter des signatures numériques afin de limiter l’accès aux documents, configurez des serveurs AEM Forms distincts pour le service PDF Generator et les fonctionnalités de signature numérique. Cela permet de fournir des performances optimales et de dimensionner les serveurs indépendamment les uns des autres.
 
 ![basic-features](assets/basic-features.png)
 
@@ -147,6 +147,6 @@ Les clients AEM Forms qui prévoient d’utiliser des dossiers de contrôle pour
 
 Les clients AEM Forms qui envisagent d’utiliser uniquement la fonctionnalité Document Services peuvent avoir une topologie similaire à celle affichée ci-dessous. Cette topologie recommande d’utiliser un cluster d’AEM Forms sur les serveurs OSGi. Cette topologie est recommandée lorsque la plupart des utilisateurs accèdent par programmation aux fonctionnalités du serveur AEM Forms (à l’aide des API) et que l’intervention via l’interface utilisateur est minimale. La topologie s’avère très utile dans plusieurs scénarios client de logiciels. Par exemple, plusieurs clients utilisant le service PDF Generator pour créer des documents PDF à la demande.
 
-Bien qu’AEM Forms vous permette de configurer et d’exécuter toutes les fonctionnalités à partir d’un seul serveur, vous devez planifier la capacité, équilibrer la charge et configurer des serveurs dédiés pour des fonctionnalités spécifiques dans un environnement de production. Par exemple, pour un environnement utilisant le service PDF Generator pour convertir des milliers de pages par jour et plusieurs formulaires adaptatifs pour capturer des données, configurez des serveurs AEM Forms distincts pour le service PDF Generator et les fonctionnalités de formulaires adaptatifs. Cela permet de fournir des performances optimales et de dimensionner les serveurs indépendamment les uns des autres.
+Bien qu’AEM Forms vous permette de configurer et d’exécuter toutes les fonctionnalités à partir d’un seul serveur, vous devez planifier la capacité, équilibrer la charge et configurer des serveurs dédiés pour des fonctionnalités spécifiques dans un environnement de production. Par exemple, pour un environnement qui utilise le service de PDF Generator pour convertir des milliers de pages par jour et plusieurs formulaires adaptatifs pour capturer des données, configurez des serveurs AEM Forms distincts pour les fonctionnalités de service de PDF Generator et de formulaires adaptatifs. Cela permet de fournir des performances optimales et de dimensionner les serveurs indépendamment les uns des autres.
 
 ![traitement-hors-ligne-basé-sur-l’api](assets/offline-api-based-processing.png)

@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
 role: Developer
 exl-id: 2a4e21c4-f2f5-44cd-b8ed-7b572782a2f1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+workflow-type: tm+mt
 source-wordcount: '1922'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 Vous pouvez assembler des documents PDF qui contiennent des identifiants de page uniques à l’aide de la numérotation Bates. La *numérotation Bates* est une méthode d’application d’identifiants uniques à un lot de documents associés. Chaque page du document (ou ensemble de documents) se voit attribuer un numéro Bates qui identifie la page de manière unique. Par exemple, des documents d’entreprise contenant une nomenclature et liés à la production d’un assemblage peuvent contenir un identifiant. Un numéro Bates contient une valeur numérique incrémentée séquentiellement et optionnellement un préfixe et un suffixe. La chaîne préfixe+numérique+suffixe est appelée *modèle bates*.
 
-L’illustration suivante présente un document PDF contenant un identifiant unique, situé dans l’en-tête du document.
+L’illustration suivante présente un document PDF contenant un identifiant unique situé dans l’en-tête du document.
 
 ![au_au_batesnumber](assets/au_au_batesnumber.png)
 
@@ -52,7 +52,7 @@ Ce document DDX fusionne deux documents PDF nommés *map.pdf* et *directions.pdf
 
 >[!NOTE]
 >
->Avant dʼentamer cette section, il est recommandé de se familiariser avec l’assemblage de documents PDF à l’aide du service Assembler. Cette section ne traite pas des concepts tels que la création d’un objet de collection contenant des documents d’entrée ou l’extraction des résultats de l’objet de collection renvoyé. (Voir [Assembler par programmation des documents PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+>Avant de lire cette section, il est recommandé de vous familiariser avec l’assemblage de documents PDF à l’aide du service Assembler. Cette section ne traite pas des concepts tels que la création d’un objet de collection contenant des documents d’entrée ou l’extraction des résultats de l’objet de collection renvoyé. (Voir [Assembler par programmation des documents PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 >[!NOTE]
 >
@@ -78,7 +78,7 @@ Pour assembler un document PDF contenant un identifiant de page unique (numérot
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -130,7 +130,7 @@ Assemblez un document PDF qui utilise des identifiants de page uniques (numérot
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR clients, tels que adobe-assembler-client.jar, dans le chemin d’accès aux classes de votre projet Java.
+   Incluez les fichiers JAR client, tels que adobe-assembler-client.jar, dans le chemin de classe de votre projet Java.
 
 1. Créez un client Assembler PDF.
 
@@ -155,11 +155,11 @@ Assemblez un document PDF qui utilise des identifiants de page uniques (numérot
 1. Définissez la valeur initiale du nombre Bates.
 
    * Créez un objet `AssemblerOptionSpec` qui stocke les options d’exécution en utilisant son constructeur.
-   * Définissez le nombre Bates initial en appelant la méthode `setFirstBatesNumber` de l’objet `AssemblerOptionSpec` et en transmettant une valeur numérique qui spécifie la valeur initiale.
+   * Définissez le numéro Bates initial en appelant la variable `AssemblerOptionSpec` de `setFirstBatesNumber` et transmission d’une valeur numérique qui spécifie la valeur initiale.
 
 1. Assemblez les documents PDF d’entrée.
 
-   Appelez la méthode `invokeDDX` de l’objet `AssemblerServiceClient` et transmettez les valeurs requises suivantes :
+   Appeler la variable `AssemblerServiceClient` de `invokeDDX` et transmettez les valeurs requises suivantes :
 
    * Objet `com.adobe.idp.Document` représentant le document DDX.
    * Objet `java.util.Map` contenant le fichier PDF non sécurisé entré.
@@ -171,9 +171,9 @@ Assemblez un document PDF qui utilise des identifiants de page uniques (numérot
 
    Pour obtenir le document PDF nouvellement créé, procédez comme suit :
 
-   * Appelez la méthode `AssemblerResult` de l’objet `getDocuments`. Cette action renvoie un objet `java.util.Map`.
+   * Appeler la variable `AssemblerResult` de `getDocuments` . Cette action renvoie un objet `java.util.Map`.
    * Effectuez une itération à l’aide de l’objet `java.util.Map` jusqu’à ce que vous trouviez l’objet `com.adobe.idp.Document`.
-   * Appelez la méthode `com.adobe.idp.Document` de l’objet `copyToFile` pour extraire le document PDF.
+   * Appeler la variable `com.adobe.idp.Document` de `copyToFile` pour extraire le document du PDF.
 
 **Voir également**
 
@@ -200,7 +200,7 @@ Assemblez un document PDF qui utilise des identifiants de page uniques (numérot
    * Créez un objet `AssemblerServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en récupérant la valeur du champ `AssemblerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
@@ -212,16 +212,16 @@ Assemblez un document PDF qui utilise des identifiants de page uniques (numérot
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le document DDX.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document DDX et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-   * Renseignez le tableau d’octets avec le flux de données en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` . Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en affectant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Référencez les documents PDF d’entrée.
 
    * Pour chaque document PDF d’entrée, créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le document PDF d’entrée.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur de chaîne qui représente l’emplacement du fichier du document PDF d’entrée et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-   * Renseignez le tableau d’octets avec le flux de données en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` . Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à sa propriété `MTOM` le contenu du tableau d’octets.
    * Créez un objet `MyMapOf_xsd_string_To_xsd_anyType`. Cet objet de collection est utilisé pour stocker les documents PDF d’entrée.
    * Pour chaque document PDF d’entrée, créez un objet `MyMapOf_xsd_string_To_xsd_anyType_Item`. Par exemple, si deux documents PDF d’entrée sont utilisés, créez deux objets `MyMapOf_xsd_string_To_xsd_anyType_Item`.
@@ -236,7 +236,7 @@ Assemblez un document PDF qui utilise des identifiants de page uniques (numérot
 
 1. Assemblez les documents PDF d’entrée.
 
-   Appelez la méthode `invoke` de lʼobjet `AssemblerServiceClient` et transmettez les valeurs suivantes :
+   Appeler la variable `AssemblerServiceClient` de `invoke` et transmettez les valeurs suivantes :
 
    * Un objet `BLOB` représentant le document DDX.
    * L’objet `MyMapOf_xsd_string_To_xsd_anyType` contenant les documents PDF d’entrée. Ses clés doivent correspondre aux noms des fichiers source PDF et ses valeurs doivent être les objets `BLOB` correspondant à ces fichiers.
@@ -248,9 +248,9 @@ Assemblez un document PDF qui utilise des identifiants de page uniques (numérot
 
    Pour obtenir le document PDF nouvellement créé, procédez comme suit :
 
-   * Accédez au champ `documents` de l’objet `AssemblerResult`, qui est un objet `Map` contenant les documents PDF résultants.
-   * Effectuez une itération au sein de l’objet `Map` jusqu’à ce que vous trouviez la clé correspondant au nom du document généré. Convertissez ensuite la `value` de ce membre du tableau en un objet `BLOB`.
-   * Effectuez lʼextraction des données binaires qui représentent le document PDF en accédant à la propriété `MTOM` de son objet `BLOB`. Cette opération renvoie un tableau d’octets que vous pouvez enregistrer dans un fichier PDF.
+   * Accédez au `AssemblerResult` de `documents` , qui est un `Map` contenant les documents du PDF de résultats.
+   * Effectuez une itération au sein de l’objet `Map` jusqu’à ce que vous trouviez la clé correspondant au nom du document généré. Collez ensuite le de ce membre du tableau `value` à `BLOB`.
+   * Extrayez les données binaires qui représentent le document du PDF en accédant à ses `BLOB` de `MTOM` . Cette opération renvoie un tableau d’octets que vous pouvez enregistrer dans un fichier PDF.
 
 **Voir également**
 

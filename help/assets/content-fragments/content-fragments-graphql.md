@@ -4,16 +4,16 @@ description: Découvrez comment utiliser des fragments de contenu AEM avec Graph
 feature: Content Fragments
 role: User
 exl-id: 2debd678-2d73-41f2-b33c-c29d661f6a6b
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
-workflow-type: ht
-source-wordcount: '687'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '684'
+ht-degree: 91%
 
 ---
 
 # Diffusion de contenu découplée à l’aide de fragments de contenu avec GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-Avec Adobe Experience Manager (AEM), vous pouvez utiliser des fragments de contenu avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard) pour fournir du contenu structuré à utiliser dans vos applications, en mode découplé. La possibilité de personnaliser une seule requête d’API vous permet de récupérer et de diffuser le contenu spécifique que vous souhaitez rendre, ou avez besoin de rendre (comme réponse à la requête d’API unique).
+Avec Adobe Experience Manager (AEM), vous pouvez utiliser des fragments de contenu avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard) pour fournir du contenu structuré à utiliser dans vos applications, en mode découplé. La possibilité de personnaliser une seule requête API vous permet de récupérer et de diffuser le contenu spécifique que vous souhaitez/devez rendre (en tant que réponse à la requête API unique).
 
 <!--
 >[!NOTE]
@@ -28,14 +28,13 @@ Avec Adobe Experience Manager (AEM), vous pouvez utiliser des fragments de con
 >* [AEM Commerce utilise les données d’une plateforme commerciale par le biais de GraphQL](/help/commerce/cif/integrating/magento.md).
 >* [AEM Content Fragments de contenu fonctionnent conjointement avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard) pour fournir un contenu structuré à utiliser dans vos applications](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
 
-
 ## CMS découplé {#headless-cms}
 
 Un système de gestion de contenu (CMS) découplé est :
 
 * « *Un système de gestion de contenu découplé, ou CMS découplé, est un système de gestion de contenu (CMS) back-end uniquement créé dès le départ comme un référentiel de contenu qui rend le contenu accessible via une API pour l’afficher sur n’importe quel appareil.* »
 
-   Voir [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
+  Voir [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
 
 En termes de création de fragments de contenu dans AEM, cela signifie que :
 
@@ -49,9 +48,9 @@ GraphQL est :
 
 * « *...un langage de requête pour les API et un environnement d’exécution pour répondre à ces requêtes avec vos données existantes* ».
 
-   Voir [GraphQL.org](https://graphql.org)
+  Voir [GraphQL.org](https://graphql.org)
 
-L’[API AEM GraphQL](#aem-graphql-api) permet d’effectuer des requêtes (complexes) sur vos [fragments de contenu](/help/assets/content-fragments/content-fragments.md) ; chaque requête étant conforme à un type de modèle spécifique. Le contenu renvoyé peut alors être utilisé par vos applications.
+La variable [API GRAPHQL AEM](#aem-graphql-api) vous permet d’effectuer des requêtes (complexes) sur votre [Fragments de contenu](/help/assets/content-fragments/content-fragments.md); chaque requête étant en fonction d’un type de modèle spécifique. Le contenu renvoyé peut alors être utilisé par vos applications.
 
 ## API AEM GraphQL {#aem-graphql-api}
 
@@ -97,7 +96,7 @@ La **[référence à un fragment](/help/assets/content-fragments/content-fragmen
 
 * fait référence à un autre fragment, en fonction d’un modèle de fragment de contenu spécifique ;
 
-* permet de récupérer des données structurées.
+* Permet de récupérer des données structurées.
 
    * Lorsqu’elle est définie comme **référence à sources multiples**, plusieurs sous-fragments peuvent être référencés (récupérés) par le fragment principal.
 

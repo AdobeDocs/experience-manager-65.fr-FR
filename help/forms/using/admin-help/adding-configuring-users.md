@@ -1,17 +1,13 @@
 ---
-title: Ajout et configuration d’utilisateurs
-seo-title: Adding and configuring users
-description: Les paramètres User Management dans la console d’administration vous permettent de créer ou supprimer des utilisateurs et de configurer d’autres paramètres utilisateur.
-seo-description: The User Management settings in the administration console allow you to create or delete users  and configure other user settings.
-uuid: fe650cdb-7d0d-4f38-9899-e5349559ed32
+title: Ajouter et configurer des utilisateurs
+description: Les paramètres de gestion des utilisateurs de la console d’administration vous permettent de créer ou de supprimer des utilisateurs et de configurer d’autres paramètres utilisateur.
 contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
-discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
-workflow-type: ht
-source-wordcount: '1735'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1733'
+ht-degree: 97%
 
 ---
 
@@ -75,7 +71,7 @@ Spécifiez les paramètres ci-dessous lorsque vous créez ou modifiez un utilisa
 
 Si vous utilisez un domaine local ou hybride, les informations relatives aux utilisateurs et utilisatrices ne sont stockées que dans la base de données User Management. Pour ces utilisateurs et utilisatrices, définissez la clé de calendrier professionnel sur une chaîne. Associez ensuite la clé de calendrier professionnel (la chaîne) à un calendrier professionnel dans Forms Workflow.
 
-Si vous utilisez un domaine d’entreprise, les informations sur les utilisateurs et utilisatrices résident dans un système de stockage tiers, tel qu’un annuaire LDAP. User Management synchronise les informations utilisateur de l’annuaire avec la base de données User Management. Cette fonction vous permet d’associer une clé de calendrier professionnel à un champ de l’annuaire LDAP. Imaginons, par exemple, un scénario où chaque utilisateur ou utilisatrice enregistré(e) dans votre annuaire dispose d’un champ pays et où vous souhaitez affecter des calendriers professionnels en fonction du pays dans lequel l’utilisateur ou l’utilisatrice se trouve. Dans ce cas, vous indiquez le nom du champ pays dans le champ clé du calendrier professionnel. Vous pouvez ensuite associer les clés de calendrier professionnel (valeurs définies pour le champ pays dans l’annuaire LDAP) aux calendriers professionnels dans Forms Workflow.
+Si vous utilisez un domaine d’entreprise, les informations sur les utilisateurs et utilisatrices résident dans un système de stockage tiers, tel qu’un annuaire LDAP. User Management synchronise les informations utilisateur de l’annuaire avec la base de données User Management. Cette fonctionnalité vous permet de mapper une clé de calendrier professionnel à un champ de l’annuaire LDAP. Imaginons, par exemple, un scénario où chaque utilisateur ou utilisatrice enregistré(e) dans votre annuaire dispose d’un champ pays et où vous souhaitez affecter des calendriers professionnels en fonction du pays dans lequel l’utilisateur ou l’utilisatrice se trouve. Dans ce cas, vous indiquez le nom du champ pays dans le champ clé du calendrier professionnel. Vous pouvez ensuite associer les clés de calendrier professionnel (valeurs définies pour le champ pays dans l’annuaire LDAP) aux calendriers professionnels dans Forms Workflow.
 
 Pour plus d’informations sur les calendriers professionnels, notamment sur la façon d’associer des clés de calendrier professionnel à des calendriers professionnels, voir [Configuration des calendriers professionnels](/help/forms/using/admin-help/configuring-business-calendars.md#configuring-business-calendars).
 
@@ -137,7 +133,6 @@ Avec MySQL, l’ID utilisateur peut contenir des caractères étendus. Cependant
 
    * Pour supprimer l’utilisateur d’un groupe, activez la case à cocher correspondant au groupe, cliquez sur **[!UICONTROL Supprimer]**, puis sur **[!UICONTROL Enregistrer]**.
 
-
 1. Pour modifier les rôles de l’utilisateur ou de l’utilisatrice, cliquez sur l’onglet **[!UICONTROL Affectations de rôles]** et procédez comme suit :
 
    * Pour afficher une liste de rôles, cliquez sur **[!UICONTROL Rechercher des rôles]**.
@@ -167,7 +162,7 @@ Si un utilisateur ou une utilisatrice ne disposant pas des autorisations AEM For
 * Solution Correspondence Management
 * Espace de travail AEM Forms
 
-   ***Remarque ** : Flex Workspace est obsolète pour la version d’AEM Forms.*
+  ***Remarque ** : Flex Workspace est obsolète pour la version d’AEM Forms.*
 
 * gestionnaire de formulaires
 * Rapports de workflow

@@ -8,16 +8,16 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 95%
+source-wordcount: '641'
+ht-degree: 90%
 
 ---
 
 # Annotations lors de la modification d’une page{#annotations-when-editing-a-page}
 
-L’ajout de contenu aux pages de votre site web est souvent l’objet de discussions avant la publication réelle. Pour faciliter cette tâche, de nombreux composants directement liés au contenu (par opposition à la disposition par exemple) vous permettent d’ajouter une annotation.
+L’ajout de contenu aux pages de votre site web est souvent l’objet de discussions avant la publication réelle. Pour faciliter cette opération, de nombreux composants directement liés au contenu (par opposition, à la mise en page, par exemple) vous permettent d’ajouter une annotation.
 
 Une annotation place une note autocollante colorée sur la page. L’annotation vous permet (ainsi qu’aux autres utilisateurs) de laisser des commentaires ou des questions à l’intention d’autres auteurs ou réviseurs.
 
@@ -55,7 +55,7 @@ Un [mode](/help/sites-authoring/author-environment-tools.md#page-modes) spécial
 
 ### Annotation d’un composant {#annotating-a-component}
 
-Le mode Annotation vous permet de créer, modifier, déplacer ou supprimer des annotations sur votre contenu.
+Le mode Annotation permet de créer, modifier, déplacer ou supprimer des annotations sur votre contenu :
 
 1. Pour activer le mode Annotation, cliquez sur l’icône dans la barre d’outils (en haut à droite) lorsque vous modifiez une page :
 

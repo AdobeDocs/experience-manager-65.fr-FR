@@ -1,7 +1,7 @@
 ---
-title: Service de gestion des utilisateurs et du contenu qu’ils génèrent dans AEM Communities
+title: Service de gestion des utilisateurs et du contenu créé par l’utilisateur dans AEM Communities
 seo-title: User and UGC Management Service in AEM Communities
-description: Utilisez des API pour supprimer et exporter en masse du contenu généré par les utilisateurs et désactiver des comptes utilisateur.
+description: Utilisez les API pour supprimer et exporter en bloc du contenu généré par les utilisateurs et désactiver le compte utilisateur.
 seo-description: Use APIs to bulk delete and bulk export user generated content, and disable user account.
 uuid: 91180659-617d-4f6c-9a07-e680770d0d8f
 contentOwner: mgulati
@@ -12,14 +12,14 @@ discoiquuid: d305821d-1371-4e4a-8b28-8eee8fafa43b
 docset: aem65
 role: Admin
 exl-id: 526ef0fa-3f20-4de4-8bc5-f435c60df0d0
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 33%
+source-wordcount: '588'
+ht-degree: 10%
 
 ---
 
-# Service de gestion des utilisateurs et du contenu qu’ils génèrent dans AEM Communities {#user-and-ugc-management-service-in-aem-communities}
+# Service de gestion des utilisateurs et du contenu créé par l’utilisateur dans AEM Communities {#user-and-ugc-management-service-in-aem-communities}
 
 >[!IMPORTANT]
 >
@@ -27,7 +27,7 @@ ht-degree: 33%
 
 AEM Communities expose des API prêtes à l’emploi pour gérer les profils utilisateur et gérer en masse le contenu généré par l’utilisateur. Une fois activée, la variable **UserUgcManagement** Le service permet aux utilisateurs privilégiés (administrateurs de communauté et modérateurs) de désactiver les profils utilisateur et de supprimer ou d’exporter en masse du contenu créé par l’utilisateur pour des utilisateurs spécifiques. Ces API permettent également aux contrôleurs et aux processeurs des données clients de se conformer au Règlement général sur la protection des données (RGPD) de l’Union européenne et à d’autres mandats de confidentialité inspirés du RGPD.
 
-Pour plus d’informations, voir la [page RGPD du centre de traitement des données personnelles d’Adobe](https://www.adobe.com/fr/privacy/general-data-protection-regulation.html).
+Pour plus d’informations, consultez la [page consacrée au RGPD du centre de confidentalité d’Adobe](https://www.adobe.com/fr/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
@@ -35,18 +35,18 @@ Pour plus d’informations, voir la [page RGPD du centre de traitement des donn
 
 Pour utiliser ces API, vous devez activer la variable `/services/social/ugcmanagement` endpoint en activant le service UserUgcManagement. Pour activer ce service, installez le [exemple de servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) disponible sur [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). Ensuite, accédez au point de terminaison sur l’instance de publication de votre site Communities avec les paramètres appropriés à l’aide d’une requête http, semblable à :
 
-`https://localhost:port/services/social/ugcmanagement?user=<authorizable ID>&operation=<getUgc>`. Cependant, vous pouvez également créer une IU (interface utilisateur) pour gérer les profils utilisateur et le contenu généré par les utilisateurs dans le système.
+`https://localhost:port/services/social/ugcmanagement?user=<authorizable ID>&operation=<getUgc>`. Cependant, vous pouvez également créer une interface utilisateur (interface utilisateur) pour gérer les profils utilisateur et le contenu généré par les utilisateurs dans le système.
 
-Ces API permettent de remplir les fonctions suivantes.
+Ces API permettent d’exécuter les fonctions suivantes.
 
 ## Récupération du contenu généré par un utilisateur {#retrieve-the-ugc-of-a-user}
 
 **getUserUgc(ResourceResolver resourceResolver, String user, OutputStream outputStream)** permet d’exporter tout le contenu généré par un utilisateur à partir du système.
 
 * **user**: ID autorisable d’un utilisateur.
-* **outputStream**: Le résultat est renvoyé en tant que flux de sortie, qui est un fichier zip comprenant le contenu généré par l’utilisateur (en tant que fichier json) et les pièces jointes (qui incluent des images ou des vidéos téléchargées par l’utilisateur).
+* **outputStream**: le résultat est renvoyé en tant que flux de sortie, qui est un fichier zip comprenant le contenu généré par l’utilisateur (en tant que fichier json) et les pièces jointes (qui incluent des images ou des vidéos téléchargées par l’utilisateur).
 
-Par exemple, pour exporter le contenu généré par un utilisateur nommé Weston McCall, qui utilise weston.mccall@dodgit.com comme ID autorisable afin de se connecter au site Communities, vous pouvez envoyer une requête HTTP GET similaire à ce qui suit :
+Par exemple, pour exporter le contenu généré par un utilisateur nommé Weston McCall, qui utilise weston.mccall@dodgit.com comme ID autorisable pour se connecter au site Communities, vous pouvez envoyer une demande de GET http similaire à ce qui suit :
 
 `https://localhost:port/services/social/ugcmanagement?user=weston.mccall@dodgit.com&operation=getUgc`
 
@@ -58,18 +58,18 @@ Par exemple, pour exporter le contenu généré par un utilisateur nommé Weston
 
 Par exemple, pour supprimer le contenu généré par un utilisateur disposant d’un ID autorisable weston.mccall@dodgit.com par le biais d’une demande de POST HTTP, utilisez les paramètres suivants :
 
-* l’utilisateur = `weston.mccall@dodgit.com`
+* utilisateur = `weston.mccall@dodgit.com`
 * operation = `deleteUgc`
 
 ### Suppression du contenu généré par l’utilisateur d’Adobe Analytics {#delete-ugc-from-adobe-analytics}
 
-Pour supprimer des données utilisateur d’Adobe Analytics, suivez le [Workflow d’analyse du RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html); car l’API ne supprime pas les données utilisateur d’Adobe Analytics.
+Pour supprimer des données utilisateur d’Adobe Analytics, suivez le [Workflow d’analyse du RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=fr); car l’API ne supprime pas les données utilisateur d’Adobe Analytics.
 
 Pour les mappages de variables Adobe Analytics utilisés par AEM Communities, reportez-vous à l’image suivante :
 
 ![Mappage des variables des communautés AEM pour Adobe Analytics](assets/analytics-communities-mapping.png)
 
-## Désactivation d’un compte utilisateur {#disable-a-user-account}
+## Désactivation d’un compte d’utilisateur {#disable-a-user-account}
 
 **deleteUserAccount(ResourceResolver resourceResolver, utilisateur de chaîne)** aide à désactiver un compte d’utilisateur.
 
@@ -77,13 +77,13 @@ Pour les mappages de variables Adobe Analytics utilisés par AEM Communities, re
 
 >[!NOTE]
 >
->La désactivation d’un utilisateur supprime tout le contenu qu’il a généré et qui se trouve sur le serveur.
+>La désactivation d’un utilisateur supprime tout le contenu généré par l’utilisateur sur le serveur.
 
 Par exemple, pour supprimer le profil d’un utilisateur possédant un ID autorisable `weston.mccall@dodgit.com` via la requête http-POST, utilisez les paramètres suivants :
 
-* l’utilisateur = `weston.mccall@dodgit.com`
+* utilisateur = `weston.mccall@dodgit.com`
 * operation = `deleteUser`
 
 >[!NOTE]
 >
->L’API deleteUserAccount() désactive un seul profil utilisateur dans le système, puis supprime le contenu généré par l’utilisateur. Toutefois, pour supprimer un profil utilisateur du système, accédez à **CRXDE Lite**: [https://&lt;server>/crx/de](https://localhost:4502/crx/de), recherchez le noeud utilisateur et supprimez-le.
+>L’API deleteUserAccount() désactive uniquement un profil utilisateur dans le système et supprime le contenu généré par l’utilisateur. Toutefois, pour supprimer un profil utilisateur du système, accédez à **CRXDE Lite**: [https://&lt;server>/crx/de](https://localhost:4502/crx/de), recherchez le noeud utilisateur et supprimez-le.

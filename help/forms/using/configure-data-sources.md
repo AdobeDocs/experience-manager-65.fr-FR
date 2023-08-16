@@ -10,10 +10,10 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2112'
-ht-degree: 99%
+source-wordcount: '2111'
+ht-degree: 98%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 99%
 
 ![Intégration de données](do-not-localize/data-integeration.png)
 
-L’intégration de données AEM Forms permet de configurer des sources de données disparates et de s’y connecter. Les types suivants sont pris en charge par défaut : Toutefois, avec peu de personnalisation, vous pouvez intégrer d’autres sources de données.
+L’intégration de données AEM Forms vous permet de configurer des sources de données disparates et de vous y connecter. Les types suivants sont pris en charge par défaut : Toutefois, avec peu de personnalisation, vous pouvez intégrer d’autres sources de données.
 
 * Bases de données relationnelles : MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS et Sybase.
 * Profil utilisateur AEM

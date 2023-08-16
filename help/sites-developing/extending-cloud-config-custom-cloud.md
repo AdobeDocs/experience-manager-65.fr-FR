@@ -1,15 +1,15 @@
 ---
 title: Créer un service cloud personnalisé
-description: Le jeu de Cloud Services par défaut peut être étendu avec des types de Cloud Service personnalisés.
+description: Le jeu de Cloud Services par défaut peut être étendu avec les types de Cloud Service personnalisés.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 51%
+source-wordcount: '404'
+ht-degree: 48%
 
 ---
 
@@ -41,7 +41,7 @@ Le jeu de Cloud Services par défaut peut être étendu avec des types de Cloud 
    * **Nom** : templates
    * **Type** : `sling:Folder`
 
-1. Cliquez avec le bouton droit de la souris sur `/apps/acs/analytics/components`. Sélectionnez **Créer...**, suivi de **Créer un composant...**. La boîte de dialogue qui s’ouvre alors vous permet de spécifier ce qui suit :
+1. Clic droit sur `/apps/acs/analytics/components`. Sélectionner **Créer...** suivie de **Créer un composant...** La boîte de dialogue qui s’ouvre vous permet d’indiquer les informations suivantes :
 
    * **Libellé** : `googleanalyticspage`
    * **Titre** : `Google Analytics Page`
@@ -119,8 +119,8 @@ Le jeu de Cloud Services par défaut peut être étendu avec des types de Cloud 
    * **Propriétés** :
 
       * **Nom** : `fieldLabel`
-      * **Type**: Chaîne
-      * **Valeur**: Identifiant de compte
+      * **Type**: chaîne
+      * **Valeur**: ID de compte
 
       * **Nom** : `fieldDescription`
       * **Type** : `String`
@@ -209,5 +209,5 @@ Le jeu de Cloud Services par défaut peut être étendu avec des types de Cloud 
    Sélectionnez **Google Analytics Configuration**, puis cliquez sur **Créer**.
 
 1. Saisissez un **Identifiant de compte**, par exemple `AA-11111111-1`. Cliquez sur **OK**.
-1. Accédez à une page et ajoutez la configuration nouvellement créée dans les propriétés de page, sous la propriété **Cloud Services** .
+1. Accédez à une page et ajoutez la configuration nouvellement créée dans les propriétés de page, sous la propriété **Cloud Service** .
 1. Les balises personnalisées sont ajoutées à la page.

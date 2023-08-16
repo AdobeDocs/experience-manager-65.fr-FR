@@ -2,10 +2,10 @@
 title: Guide de démarrage rapide sur la création de fragments de contenu découplés
 description: Découvrez comment utiliser les fragments de contenu AEM pour concevoir, créer, organiser et utiliser du contenu indépendant des pages pour une diffusion découplée.
 exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
-source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
-workflow-type: ht
-source-wordcount: '387'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ Découvrez comment utiliser les fragments de contenu AEM pour concevoir, créer,
 
 [Maintenant que vous avez créé un dossier de ressources](create-assets-folder.md) dans lequel vous pouvez stocker vos fragments de contenu, vous pouvez créer les fragments.
 
-Les fragments de contenu permettent de concevoir, créer, organiser et publier du contenu indépendant des pages. Ils permettent de préparer le contenu prêt à être utilisé dans des emplacements multiples et sur plusieurs canaux.
+Les fragments de contenu vous permettent de concevoir, créer, organiser et publier du contenu indépendant des pages. Ils vous permettent de préparer le contenu prêt à être utilisé à plusieurs emplacements et sur plusieurs canaux.
 
 Les fragments de contenu contiennent du contenu structuré et peuvent être diffusés au format JSON.
 

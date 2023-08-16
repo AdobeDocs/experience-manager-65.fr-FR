@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 67%
+source-wordcount: '1685'
+ht-degree: 66%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 67%
 
 Le volume de contenu disponible sur Internet, sur les sites extranet ou sur les sites intranet ne cesse d’augmenter.
 
-La personnalisation consiste à fournir à l’utilisateur un environnement sur mesure affichant du contenu dynamique sélectionné selon ses besoins ; soit sur la base de profils prédéfinis, de la sélection d’utilisateurs ou du comportement interactif de l’utilisateur.
+La personnalisation consiste à fournir à l’utilisateur un environnement sur mesure affichant du contenu dynamique sélectionné selon ses besoins spécifiques, que ce soit sur la base de profils prédéfinis, de la sélection d’utilisateurs ou du comportement interactif de l’utilisateur.
 
 La personnalisation comporte trois éléments principaux :
 
@@ -52,8 +52,8 @@ La personnalisation peut être soit :
 
 #### Implicite {#implicit}
 
-* Règles basées sur : les gestionnaires de ressources définissent des règles spécifiques pour les actions en fonction de profils et/ou de comportements spécifiques.
-* Filtrage simple : les sélections sont effectuées sur la base de profils prédéfinis au niveau de l’utilisateur et/ou du groupe.
+* Règles basées sur : les chefs d’entreprise définissent des règles spécifiques pour les actions en fonction de profils et/ou de comportements spécifiques.
+* Filtrage simple : les sélections se font sur la base de profils prédéfinis au niveau de l&#39;utilisateur et/ou du groupe.
 * Filtrage collaboratif ou sur recommandation : le comportement de l’utilisateur est enregistré selon des règles prédéfinies. Ces règles sont basées sur le comportement observé chez des personnes ayant des centres d’intérêt similaires. Les informations collectées sont utilisées pour personnaliser les informations affichées pour l&#39;utilisateur, notamment sous la forme de recommandations.
 
 ## Comment et quand la personnalisation peut-elle être utilisée ? {#how-and-when-can-personalization-be-used}
@@ -67,7 +67,7 @@ La personnalisation peut être utilisée dans de nombreuses situations :
 
 ### Des groupes d’utilisateurs spécifiques, restreints et ciblés - En extranet {#extranets}
 
-* Les utilisateurs ont besoin d’une connexion pour obtenir une autorisation ; il sera lié à un profil fournissant les informations nécessaires à la personnalisation ; éventuellement des détails tels que leur emplacement, leur relation avec le produit, l’historique d’utilisation, les responsabilités budgétaires, etc.
+* Les utilisateurs ont besoin d’une connexion pour l’autorisation. Celle-ci sera liée à un profil qui fournit les informations nécessaires à la personnalisation ; éventuellement des détails tels que leur emplacement, leur relation avec le produit, l’historique d’utilisation, les responsabilités budgétaires, etc.
 * Ces instances peuvent s’étendre sur plusieurs sites, tels que :
 * Des entreprises qui fournissent des sites web à une partie hautement spécialisée de leur marché, par exemple, une société pharmaceutique qui fournit un site web spécialisé pour les médecins.
 * Les entreprises qui fournissent des sites web permettant au client de visualiser son compte et ses informations de facturation actuels (par exemple, les opérateurs de téléphonie).
@@ -130,7 +130,7 @@ Lorsque vous utilisez la personnalisation, tenez compte des aspects suivants :
 
 La personnalisation doit être prise en compte séparément du contrôle d’accès, mais elle est liée.
 
-La personnalisation ne crée en elle-même aucune forme de contrôle d’accès. Il s&#39;agit simplement d&#39;une méthode pour piloter ce que l&#39;utilisateur voit; il ne limite pas l’accès de l’utilisateur à un autre contenu et, comme pour tout contenu, les contrôles d’accès appropriés doivent déjà être attribués à l’utilisateur.
+La personnalisation ne crée en elle-même aucune forme de contrôle d’accès. Il s’agit simplement d’une méthode permettant de piloter ce que l’utilisateur voit ; elle ne limite pas l’accès de l’utilisateur à un autre contenu et, comme pour tout contenu, les contrôles d’accès appropriés doivent être déjà attribués.
 
 Toutefois, le contrôle d’accès peut être utilisé pour créer une forme de personnalisation. Si vous autorisez ou refusez à un utilisateur l’accès au contenu, cela affecte inévitablement le choix du contenu qu’il a disponible, personnalisant ainsi son expérience web.
 
@@ -155,7 +155,7 @@ Divers composants sont fournis avec AEM en vue de la personnalisation. Certains 
 | Groupe de cases d’option de formulaire | Plusieurs éléments organisés en une liste précédés d’un bouton radio. Les utilisateurs ne doivent sélectionner qu’un seul bouton radio. |
 | Bouton Envoyer de formulaire | Un bouton d’envoi supplémentaire pour le formulaire avec le titre affiché comme texte sur le bouton. |
 | Champ de texte de formulaire | Champ de texte qui permet aux utilisateurs de saisir des informations. |
-| Mes gadgets | Permet d’inclure l’une des sélections de gadgets disponibles. |
+| Mes gadgets | Vous permet d’inclure l’une des sélections de gadgets disponibles. |
 | Photo de l’avatar du profil | Permet le chargement d’une photo d’avatar. |
 | Nom détaillé du profil | Saisie des détails du nom, y compris les éléments tels que le titre, le deuxième prénom et le suffixe le cas échéant. |
 | Nom d’affichage du profil | Nom à afficher. |
@@ -164,7 +164,7 @@ Divers composants sont fournis avec AEM en vue de la personnalisation. Certains 
 | Numéro de téléphone principal du profil | Permet la saisie d’un numéro de téléphone. |
 | Principale URL du profil | Permet la saisie d’une URL. |
 | Propriété du texte général du profil | Propriétés du profil. |
-| Connexion | Permet d’envoyer un nom d’utilisateur et un mot de passe lors de la connexion. |
+| Connexion | Vous permet d’envoyer un nom d’utilisateur et un mot de passe lors de la connexion. |
 | Déconnexion | Indique l’utilisateur est actuellement connecté et fournit un lien pour se déconnecter. |
 | Nuage de balises | Un nuage de balises pour représenter graphiquement une sélection de balises dans votre site web. |
 | Teaser | Un élément de contenu (habituellement une image) affiché sur une page principale pour « inciter » les utilisateurs à accéder au contenu sous-jacent. |

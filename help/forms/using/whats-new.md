@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1245'
-ht-degree: 99%
+source-wordcount: '1243'
+ht-degree: 96%
 
 ---
 
@@ -84,7 +84,7 @@ Plusieurs améliorations ont été apportées à la disposition du canal web gé
 
 #### Incorporer un formulaire adaptatif ou une communication interactive dans les applications dʼune seule page d’AEM Sites {#embed-an-adaptive-form-or-interactive-communcation-in-aem-sites-single-page-applications}
 
-AEM Forms vous permet d’[incorporer aisément un formulaire adaptatif](../../forms/using/embed-adaptive-form-aem-sites-spa.md) ou une communication interactive dans une application dʼune seule page d’AEM Sites (SPA). Le formulaire adaptatif et la communication interactive incorporés sont entièrement fonctionnels et les utilisateurs peuvent les remplir et les envoyer sans quitter la page. Cela permet à l’utilisateur de rester dans le contexte des autres éléments de la page web et d’interagir simultanément avec le formulaire adaptatif ou la communication interactive.
+AEM Forms vous permet d’effectuer les opérations suivantes : [incorporer aisément un formulaire adaptatif](../../forms/using/embed-adaptive-form-aem-sites-spa.md) ou communication interactive dans une application d’une seule page AEM Sites (SPA). Le formulaire adaptatif et la communication interactive incorporés sont entièrement fonctionnels et les utilisateurs peuvent les remplir et les envoyer sans quitter la page. Cela permet à l’utilisateur de rester dans le contexte des autres éléments de la page web et d’interagir simultanément avec le formulaire adaptatif ou la communication interactive.
 
 #### Trier les colonnes des tableaux de formulaires adaptatifs {#sort-columns-of-adaptive-form-tables}
 

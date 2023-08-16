@@ -10,10 +10,10 @@ topic-tags: integrations
 discoiquuid: 8f776f30-ff93-4d19-94c6-c4bfe6f1fae2
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
-source-git-commit: 294d12e7d1b5293f165a164ff1fcc624f7b2b648
-workflow-type: ht
-source-wordcount: '1568'
-ht-degree: 100%
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+workflow-type: tm+mt
+source-wordcount: '1567'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 Vos clientes et clients sont susceptibles d’abandonner un formulaire si l’expérience qui en résulte n’est pas satisfaisante. Si elle est frustrante pour les clientes et clients, elle peut aussi bouleverser le volume et les coûts d’assistance de votre organisation. Il est aussi primordial que difficile d’identifier et d’offrir une bonne expérience client qui augmente le taux de conversion. Adobe Experience Manager Forms détient la clé de ce problème.
 
-AEM Forms s’intègre à Adobe Target, une solution Adobe Marketing Cloud, afin de proposer des expériences client personnalisées et attrayantes sur plusieurs canaux numériques. L’une des fonctionnalités clés de Target est les tests A/B qui vous permettent de configurer rapidement des tests A/B simultanés, de présenter du contenu pertinent aux utilisateurs et utilisatrices ciblés et d’identifier l’expérience qui génère un meilleur taux de conversion.
+AEM Forms s’intègre à Adobe Target, une solution Adobe Marketing Cloud, afin de proposer des expériences client personnalisées et attrayantes sur plusieurs canaux numériques. L’une des fonctionnalités clés de Target est le test A/B qui vous permet de configurer rapidement des tests A/B simultanés, de présenter du contenu pertinent aux utilisateurs ciblés et d’identifier l’expérience qui entraîne un meilleur taux de conversion.
 
 Avec AEM Forms, vous pouvez configurer et exécuter des tests A/B sur des formulaires adaptatifs en temps réel. Il fournit également des fonctionnalités de création de rapports personnalisables et prêtes à l’emploi pour visualiser les performances en temps réel de vos expériences de formulaire et identifier celle qui optimise l’interaction client et la conversion des utilisateurs et utilisatrices.
 
@@ -84,6 +84,7 @@ En plus du serveur jboss, vous pouvez ajouter l’argument jvm -Dabtesting.enabl
 >[!NOTE]
 >
 >Si vous mettez à jour les URL Target configurées ultérieurement, veillez à mettre à jour tous les tests A/B actifs pour qu’ils pointent vers les URL mises à jour. Pour plus d’informations sur la mise à jour des tests A/B, consultez [Mettre à jour le test A/B](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p).
+>
 
 ## Créer des audiences dans AEM {#create-audiences-within-aem}
 
@@ -113,7 +114,7 @@ Pour créer un test A/B pour un formulaire adaptatif, procédez comme suit.
 1. Cliquez sur l’outil **Sélectionner** dans la barre d’outils et sélectionnez le formulaire adaptatif.
 1. Cliquez sur **Plus** dans la barre d’outils et sélectionnez **Configurer les tests A/B**. La page de configuration des tests A/B s’ouvre.
 
-[ ](assets/ab-test-configure-1.png)
+[](assets/ab-test-configure-1.png)
 
 1. Spécifiez un **nom d’activité** pour le test A/B.
 
@@ -153,7 +154,7 @@ Une fois que vous avez activé l’exécution du test A/B pendant la période so
 
 1. Sélectionnez le formulaire adaptatif, cliquez sur le bouton **Plus**, puis cliquez sur **Rapport du test A/B**. Le rapport s’affiche.
 
-[ ](assets/ab-test-report-3.png)
+[](assets/ab-test-report-3.png)
 
 1. Analysez le rapport et voyez si vous disposez de suffisamment de points de données pour décider quelle expérience a le mieux fonctionné. Vous pouvez choisir de continuer le même test A/B pendant plus longtemps ou de désigner une expérience probante et terminer le test A/B.
 1. Pour déclarer qu’une expérience est probante et terminer les tests A/B, cliquez sur le bouton **Terminer le test A/B** sur le tableau de bord de génération de rapports. Une boîte de dialogue vous invite à choisir celle des deux expériences qui obtient les meilleurs résultats. Sélectionnez l’expérience la plus probante et confirmez la fin du test A/B.

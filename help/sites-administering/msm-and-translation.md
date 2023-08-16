@@ -10,10 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 47%
+source-wordcount: '350'
+ht-degree: 41%
 
 ---
 
@@ -25,7 +25,7 @@ Les outils d’administration suivants sont disponibles pour gérer les sites et
 
    * [Réutilisation de contenu : Multi-Site Manager et Live Copy](/help/sites-administering/msm.md)
 
-* La traduction vous permet d’automatiser la traduction du contenu des pages, des ressources et du contenu créé par l’utilisateur pour créer et tenir à jour des sites web multilingues :
+* La traduction permet d’automatiser la traduction du contenu, des ressources et du contenu de la page généré par l’utilisateur afin de créer et de gérer des sites web multilingues :
 
    * [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md)
 
@@ -52,7 +52,7 @@ Le diagramme suivant illustre la manière dont les principaux concepts sont en c
 >Dans ces scénarios et dans d’autres scénarios comparables, MSM ne gère pas les différentes versions de langues en tant que telles.
 >
 >* [MSM](/help/sites-administering/msm.md) gère le déploiement du contenu traduit d’un plan directeur (par exemple, un gabarit global) vers les Live Copies (par exemple, les sites locaux), dans les limites d’une langue.
->* Le [translation](/help/sites-administering/translation.md) les fonctionnalités d’intégration d’AEM, en association avec des services de gestion de traduction tiers, gèrent les langues et la traduction de contenu dans ces différentes langues.
+>* La variable [translation](/help/sites-administering/translation.md) les fonctionnalités d’intégration d’AEM, en association avec des services de gestion de traduction tiers, gèrent les langues et la traduction de contenu dans ces différentes langues.
 >
 >Pour les cas d’utilisation plus avancés, MSM peut également être utilisé dans les gabarits de langue.
 

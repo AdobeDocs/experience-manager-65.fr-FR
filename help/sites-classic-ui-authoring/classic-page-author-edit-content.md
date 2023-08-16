@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
-workflow-type: ht
-source-wordcount: '1836'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1832'
+ht-degree: 95%
 
 ---
 
@@ -213,7 +213,7 @@ Lors de l’aperçu des pages, les deux icônes situées dans la bordure inféri
 
   ![Icône Modifier représentée par un symbole de crayon.](do-not-localize/chlimage_1-6.png)
 
-* L’icône en forme de loupe permet de sélectionner le mode d’aperçu. La page s’affiche alors telle qu’elle sera rendue dans l’environnement de publication (une actualisation de page peut s’avérer nécessaire) :
+* L’icône en forme de loupe permet de sélectionner le mode d’aperçu dans lequel la page est affichée telle qu’elle sera dans l’environnement de publication (une actualisation de page est parfois également nécessaire) :
 
   ![Icône du mode Aperçu indiquée par un symbole de loupe.](do-not-localize/chlimage_1-7.png)
 
@@ -223,11 +223,11 @@ Lors de l’aperçu des pages, les deux icônes situées dans la bordure inféri
 
 ## Rechercher et remplacer {#find-replace}
 
-Pour des modifications à plus grande échelle de la même expression, l’option de menu **[Rechercher et remplacer](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** vous permet de rechercher et de remplacer plusieurs instances d’une chaîne dans une section du site web.
+Pour des modifications à plus grande échelle de la même expression, une **[Rechercher et remplacer](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** l’option de menu vous permet de rechercher et de remplacer plusieurs instances d’une chaîne dans une section du site web.
 
 ## Verrouillage d’une page {#locking-a-page}
 
-AEM vous permet de verrouiller une page, de sorte que personne d’autre ne puisse en modifier le contenu. Cette option est pratique lorsque vous souhaitez réaliser un nombre important de modifications sur une page unique ou que vous souhaitez geler le contenu d’une page pendant un certain temps.
+AEM permet de verrouiller une page, de sorte que personne d’autre ne puisse en modifier le contenu. Cette option est pratique lorsque vous souhaitez réaliser un nombre important de modifications sur une page unique ou que vous souhaitez geler le contenu d’une page pendant un certain temps.
 
 >[!CAUTION]
 >

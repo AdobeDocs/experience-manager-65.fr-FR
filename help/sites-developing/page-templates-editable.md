@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
-workflow-type: ht
-source-wordcount: '3224'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '3221'
+ht-degree: 98%
 
 ---
 
@@ -73,18 +73,20 @@ Lors de la création d’un modèle modifiable :
    * Les composants définis dans la structure du modèle ne peuvent pas être déplacés sur une page créée ni supprimés des pages créées.
 
       * Si vous créez un modèle dans un dossier personnalisé en dehors de l’`We.Retail`exemple de contenu, vous pouvez choisir des composants de base ou utiliser des [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=fr).
+
    * Si vous souhaitez que les personnes créant les pages puissent ajouter et supprimer des composants, ajoutez un système de paragraphes au modèle.
-   * Les composants peuvent être déverrouillés (et reverrouillés) pour que vous puissiez définir le contenu initial.
+   * Les composants peuvent être déverrouillés et reverrouillés pour vous permettre de définir le contenu initial.
 
    Pour plus d’informations sur la façon dont un créateur de modèles définit la structure, voir [Création de modèles de page](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
    Pour connaître les détails techniques de la structure, consultez la section [Structure](/help/sites-developing/page-templates-editable.md#structure) de ce document.
 
-   **Stratégies**
+   **Politiques**
 
-   * Les stratégies de contenu définissent les propriétés de conception d’un composant.
+   * Les politiques de contenu définissent les propriétés de conception d’un composant.
 
       * Par exemple, les composants disponibles ou les dimensions minimales/maximales.
+
    * Ces politiques s’appliquent au modèle (et aux pages créées avec le modèle).
 
    Pour plus d’informations sur la façon dont une personne créant des modèles définit des politiques, voir [Création de modèles de page](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
@@ -284,7 +286,7 @@ Le tableau suivant présente les autorisations nécessaires à l’édition de m
   <tr>
    <td>Utilisateur web anonyme</td>
    <td>lecture</td>
-   <td>L’utilisateur web anonyme doit lire les stratégies lors du rendu d’une page.</td>
+   <td>L’utilisateur web anonyme doit lire les politiques lors du rendu d’une page.</td>
   </tr>
   <tr>
    <td>Auteurs de contenu</td>
@@ -344,7 +346,7 @@ Ne stockez pas de modèles dans `/conf/global`. Cependant, pour certaines instal
   <tr>
    <td>Utilisateur web anonyme</td>
    <td>lecture</td>
-   <td>L’utilisateur web anonyme doit lire les stratégies lors du rendu d’une page.</td>
+   <td>L’utilisateur web anonyme doit lire les politiques lors du rendu d’une page.</td>
   </tr>
   <tr>
    <td>Auteurs de contenu</td>
@@ -374,7 +376,7 @@ Lors de la création d’un modèle, indiquez un type de modèle :
    * Le type de modèle est copié pour créer le modèle.
    * Une fois la copie effectuée, la seule connexion entre le modèle et le type de modèle est une référence statique à des fins d’information.
 
-* Les types de modèle permettent de définir :
+* Les types de modèle permettent de définir :
 
    * Le type de ressource du composant de page.
    * La politique du nœud racine qui définit les composants autorisés dans l’éditeur de modèles.
@@ -408,9 +410,9 @@ Les définitions de vos types de modèle personnalisés doivent être stockées 
 >
 >Les types de modèle doivent respecter la structure de dossiers correcte (à savoir `/settings/wcm/...`). Dans le cas contraire, ils seront introuvables.
 
-### Types de modèle et groupes de terminaux mobiles {#template-type-and-mobile-device-groups-br}
+### Types de modèle et groupes d’appareils mobiles {#template-type-and-mobile-device-groups-br}
 
-Les [groupes de terminaux](/help/sites-developing/mobile.md#device-groups) utilisés pour un modèle modifiable (défini en tant que chemin d’accès relatif de la propriété `cq:deviceGroups`) définissent les terminaux mobiles disponibles comme émulateurs dans le [mode de mise en page](/help/sites-authoring/responsive-layout.md) de la création de pages. Vous pouvez définir cette valeur à deux emplacements :
+Les [groupes d’appareils](/help/sites-developing/mobile.md#device-groups) utilisés pour un modèle modifiable (défini en tant que chemin d’accès relatif de la propriété `cq:deviceGroups`) définissent les appareils mobiles disponibles comme émulateurs dans le [mode de mise en page](/help/sites-authoring/responsive-layout.md) de la création de pages. Vous pouvez définir cette valeur à deux emplacements :
 
 * Sur le type de modèle modifiable
 * Sur le de modèle modifiable
@@ -541,17 +543,17 @@ Lors de la [modification d’un modèle, vous pouvez définir la mise en page](/
 Les politiques de contenu (ou de conception) définissent les propriétés de conception d’un composant, telles que les disponibilité du composant ou les dimensions minimales/maximales. Ces politiques s’appliquent au modèle (et aux pages créées avec le modèle). Les politiques de contenu peuvent être créées et sélectionnées dans l’éditeur de modèles.
 
 * La propriété `cq:policy`, sur le nœud `root`
-   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
-Fournit une référence relative à la stratégie de contenu pour le système de paragraphes de la page.
+  `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
+Fournit une référence relative à la politique de contenu pour le système de paragraphes de la page.
 
-* La propriété `cq:policy`, sur les nœuds component-explicit sous `root`, fournit des liens vers les stratégies relatives aux composants individuels.
+* La propriété `cq:policy`, sur les nœuds component-explicit sous `root`, fournit des liens vers les politiques relatives aux composants individuels.
 
-* Les définitions de stratégie réelles sont stockées sous :
-   `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
+* Les définitions de politique réelles sont stockées sous :
+  `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
 
 >[!NOTE]
 >
->Les chemins d’accès des définitions de stratégie dépendent du chemin du composant. La `cq:policy` contient une référence relative à la configuration proprement dite.
+>Les chemins d’accès des définitions de politique dépendent du chemin du composant. La `cq:policy` contient une référence relative à la configuration proprement dite.
 
 >[!NOTE]
 >
@@ -563,9 +565,9 @@ Fournit une référence relative à la stratégie de contenu pour le système de
 >
 >La configuration du mode de conception d’un modèle statique a été définie par composant de page.
 
-### Stratégies de page {#page-policies}
+### Politiques de page {#page-policies}
 
-Les stratégies de page vous permettent de définir la [stratégie de contenu](#content-policies) de la page (système de paragraphes principal), soit dans le modèle soit dans les pages créées.
+Les stratégies de page vous permettent de définir [stratégie de contenu](#content-policies) pour la page (parsys principal), dans le modèle ou les pages créées.
 
 ### Activation et autorisation d’un modèle à utiliser {#enabling-and-allowing-a-template-for-use}
 
@@ -578,7 +580,7 @@ Les stratégies de page vous permettent de définir la [stratégie de contenu](#
    * Définir la propriété de statut sur le nœud `jcr:content`.
 
       * Par exemple, sous :
-         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Définissez la propriété :
 
@@ -590,9 +592,9 @@ Les stratégies de page vous permettent de définir la [stratégie de contenu](#
 
    * [Définissez les chemins d’accès aux modèles autorisés dans les **Propriétés de la page**](/help/sites-authoring/templates.md#allowing-a-template-author) de la page appropriée ou de la page racine d’une sous-branche.
    * Définissez la propriété :
-      `cq:allowedTemplates`
-Sur le 
-nœud `jcr:content` de la branche requise.
+     `cq:allowedTemplates`
+Sur le nœud `jcr:content` de la branche requise.
+
    Par exemple, avec la valeur suivante :
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
@@ -619,7 +621,7 @@ Le schéma ci-dessus montre la corrélation entre les modèles, le contenu et le
 Page résultante référençant le modèle. Le contenu contrôle l’ensemble du processus. En fonction des définitions, il accède au modèle et aux composants appropriés.
 
 * Configuration – `/conf/<my-folder>/settings/wcm/templates/<my-template>`
-Le [modèle et les stratégies de contenu associées](#template-definitions) définissent la configuration de la page.
+Le [modèle et les politiques de contenu associées](#template-definitions) définissent la configuration de la page.
 
 * Modèle – Lots OSGi
 Les [lots OSGi](/help/sites-deploying/osgi-configuration-settings.md) mettent en œuvre la fonctionnalité.

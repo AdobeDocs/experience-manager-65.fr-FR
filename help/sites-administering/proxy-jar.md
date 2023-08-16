@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: ca98dc3c-7056-4cdc-b4d3-23e471da5730
 docset: aem65
 exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1160'
 ht-degree: 32%
 
 ---
 
 # Outil de serveur proxy (proxy.jar){#proxy-server-tool-proxy-jar}
 
-Le serveur proxy joue le rôle d’un serveur intermédiaire qui relaie les demandes entre un client et un serveur. Il effectue le suivi de toutes les interactions client/serveur et crée un journal de l’ensemble de la communication TCP. Vous pouvez ainsi surveiller ce qui se passe exactement, sans avoir à accéder au serveur principal.
+Le serveur proxy joue le rôle d’un serveur intermédiaire qui relaie les demandes entre un client et un serveur. Il effectue le suivi de toutes les interactions client/serveur et crée un journal de l’ensemble de la communication TCP. Vous pouvez ainsi contrôler ce qui se passe exactement, sans avoir à accéder au serveur principal.
 
 Le serveur proxy se trouve dans le dossier d’installation approprié :
 
@@ -34,7 +34,7 @@ Vous pouvez utiliser le serveur proxy pour surveiller toutes les interactions cl
 * SMTP pour les emails
 * LDAP pour la gestion des utilisateurs
 
-Par exemple, vous pouvez positionner le serveur proxy entre deux applications qui communiquent via un réseau TCP/IP ; par exemple, un navigateur web et un AEM. Vous pouvez ainsi surveiller ce qui se passe exactement lorsque vous demandez une page d’AEM.
+Par exemple, vous pouvez positionner le serveur proxy entre deux applications qui communiquent via un réseau TCP/IP ; un navigateur web et une AEM, par exemple. Vous pouvez ainsi surveiller ce qui se passe exactement lorsque vous demandez une page d’AEM.
 
 ## Démarrage de l’outil de serveur proxy {#starting-the-proxy-server-tool}
 
@@ -88,8 +88,8 @@ Pour vérifier si la persistance fonctionne :
 
 Si vous perdez des requêtes dans un paramètre de serveur complexe, par exemple avec un pare-feu et un dispatcher, vous pouvez utiliser le serveur proxy pour déterminer où la requête a été perdue. En cas de pare-feu :
 
-1. Démarrage d’un proxy avant un pare-feu
-1. Démarrage d’un autre proxy après un pare-feu
+1. Démarrer un proxy avant un pare-feu
+1. Démarrer un autre proxy après un pare-feu
 1. Utilisez-les pour voir jusqu’où vont les demandes.
 
 **Demandes en suspens**
@@ -181,7 +181,7 @@ Le client demande une connexion persistante, de sorte que le serveur puisse envo
 C-0-#000369 -> [Connection: Keep-Alive ]
 ```
 
-Le serveur proxy est un outil approprié pour vérifier si des cookies sont définis correctement ou non. Ici, nous voyons les éléments suivants :
+Le serveur proxy est un outil approprié pour vérifier si des cookies sont définis correctement ou non. Nous voyons ici :
 
 * cookie cq3session généré par AEM
 * le cookie de basculement du mode d’affichage généré par le CFC ;

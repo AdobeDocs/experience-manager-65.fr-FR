@@ -6,9 +6,9 @@ seo-description: Learn about the options available when installing a standalone 
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1620'
 ht-degree: 57%
 
 ---
@@ -27,7 +27,7 @@ Les différentes règles suivantes s’appliquent lorsque vous renommez le fichi
 
 * Lorsque vous renommez le fichier, il doit commencer par `cq;`, par exemple `cq5-publish-p4503.jar`.
 
-* Il est recommandé de *always* ajouter le préfixe -p au numéro de port ; comme dans cq5-publish-p4503.jar ou cq5-author-p6754.jar.
+* Il est recommandé de *always* faites précéder le numéro de port de -p, comme dans cq5-publish-p4503.jar ou cq5-author-p6754.jar.
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ Enfin, si vous exécutez une instance mise à jour d’AEM 6.3, assurez-vous qu
 
 ## Modes d’exécution {#run-modes}
 
-**Modes d’exécution** vous permettent d’ajuster votre instance AEM à des fins spécifiques ; par exemple, auteur ou publication, test, développement, intranet, etc. Ces modes permettent également de contrôler l’utilisation d’un exemple de contenu. Cet exemple de contenu est défini avant la création du démarrage rapide et peut inclure des modules, des configurations, etc. Cela peut s’avérer particulièrement utile pour les installations prêtes pour la production lorsque vous souhaitez maintenir votre installation légère et sans exemple de contenu. Pour plus d’informations, voir :
+**Modes d’exécution** vous permet d’ajuster votre instance AEM à des fins spécifiques ; par exemple, création ou publication, test, développement, intranet, etc. Ces modes permettent également de contrôler l’utilisation d’un exemple de contenu. Cet exemple de contenu est défini avant la création du démarrage rapide et peut inclure des modules, des configurations, etc. Cela peut s’avérer particulièrement utile pour les installations prêtes pour la production lorsque vous souhaitez maintenir votre installation légère et sans exemple de contenu. Pour plus d’informations, voir :
 
 * [Modes d’exécution](/help/sites-deploying/configure-runmodes.md)
 
@@ -89,7 +89,7 @@ Ceci est particulièrement intéressant pour plusieurs cas d’utilisation :
 >
 >Pour des exemples, consultez également [Comment installer des packages CRX automatiquement au démarrage du serveur](https://helpx.adobe.com/fr/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html).
 
-## Installation et démarrage d’Adobe Experience Manager as a Windows Service {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
+## Installation et démarrage de Adobe Experience Manager en tant que service Windows {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
 >[!NOTE]
 >
@@ -385,6 +385,6 @@ Si le stockage persistant est incorporé dans le répertoire d’installation, p
 
 >[!NOTE]
 >
->Adobe recommande vivement de sauvegarder votre référentiel avant de supprimer AEM. Si vous supprimez l’intégralité de la variable &lt;cq-installation-directory>, vous supprimerez le référentiel. Pour conserver les données du référentiel avant de supprimer, déplacez ou copiez le dossier &lt;cq-installation-directory>/crx-quickstart/repository ailleurs avant de supprimer les autres dossiers.
+>Adobe recommande vivement de sauvegarder votre référentiel avant de supprimer AEM. Si vous supprimez l’intégralité de &lt;cq-installation-directory>, vous supprimerez le référentiel. Pour conserver les données du référentiel avant de supprimer, déplacez ou copiez le dossier &lt;cq-installation-directory>/crx-quickstart/repository ailleurs avant de supprimer les autres dossiers.
 
 Si votre installation d’AEM utilise un stockage externe, par exemple un serveur de base de données, la suppression du dossier ne supprime pas automatiquement les données, mais supprime la configuration de stockage, ce qui rend difficile la restauration du contenu JCR.

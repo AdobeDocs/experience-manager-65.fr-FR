@@ -2,10 +2,10 @@
 title: En savoir plus sur l’utilisation de références dans les fragments de contenu
 description: Découvrez comment utiliser des références dans des fragments de contenu pour du contenu, d’autres fragments et d’autres ressources (médias). Découvrez l’importance et le fonctionnement des fragments imbriqués pour la création CMS découplée.
 exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '731'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '726'
+ht-degree: 89%
 
 ---
 
@@ -39,7 +39,7 @@ Certaines références comportent des types de données dédiés (par exemple, R
 
 ## Références du contenu {#content-references}
 
-Leur nom est clair : les références de contenu vous permettent de faire référence à tout autre contenu. Un navigateur s’ouvre, vous permettant de sélectionner l’élément de contenu.
+C’est exactement ce que font les références de contenu : elles vous permettent de référencer tout autre contenu. Un navigateur s’ouvre, vous permettant de sélectionner l’élément de contenu.
 
 ## Références de ressources/médias {#assets-media-references}
 
@@ -49,7 +49,7 @@ Les ressources (images ou médias, par exemple) peuvent être référencées dan
 
 ## Références à un fragment {#fragment-references}
 
-Encore une fois, les références de fragment font exactement ce que leur nom suggère : elles vous permettent de faire référence à un autre fragment. La raison pour laquelle il est important d’insister sur ce fait nécessite un peu plus d’explications.
+Encore une fois, les Références de fragment le font : elles vous permettent de référencer un autre fragment. La raison pour laquelle il est important d’insister sur ce fait nécessite un peu plus d’explications.
 
 Par exemple, les modèles de fragment de contenu suivants peuvent être définis :
 
@@ -75,7 +75,7 @@ En tant qu’auteur, vous n’êtes pas responsable de la définition de ces rel
 
 ### Création de fragments imbriqués {#author-nested-fragment}
 
-La création de références de fragments est assez simple (bien que le champ ne soit généralement pas étiqueté comme **Référence de fragment**). Vous pouvez saisir directement la référence ou (plus couramment) sélectionner l’icône de dossier pour ouvrir un navigateur qui vous permet d’accéder au fragment dont vous avez besoin et de le sélectionner.
+La création de références de fragments est assez simple (bien que le champ ne soit généralement pas étiqueté comme **Référence de fragment**). Vous pouvez saisir directement la référence ou (plus probablement) sélectionner l’icône de dossier pour ouvrir un navigateur qui vous permet de naviguer et de sélectionner le fragment dont vous avez besoin.
 
 ![Fragments de contenu – Références](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
@@ -113,6 +113,7 @@ Maintenant que vous en savez plus sur les références et la structure dans les 
       * [Application de la configuration à votre dossier de ressources](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
       * [Création d’un fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+
    * [Variations – Création de fragments de contenu](/help/assets/content-fragments/content-fragments-variations.md)
 
    * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
@@ -120,7 +121,6 @@ Maintenant que vous en savez plus sur les références et la structure dans les 
       * [Modèles de fragment de contenu – Types de données](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
       * [Modèles de fragment de contenu – Propriétés](/help/assets/content-fragments/content-fragments-models.md#properties)
-
 
 * Guides de prise en main
    * [Guide de démarrage rapide sur la création d’un dossier de ressources découplées](/help/sites-developing/headless/getting-started/create-assets-folder.md)

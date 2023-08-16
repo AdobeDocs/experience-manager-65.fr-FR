@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b0a544e2-2ce4-48e2-a721-82f481d36004
 docset: aem65
 exl-id: a096eea0-b2fb-4d86-b729-ca47611135b2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1673'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1672'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## Requêtes ad hoc dans Process Reporting {#ad-hoc-queries-in-process-reporting-1}
 
-Grâce aux requêtes ad hoc dans Process Reporting, vous pouvez créer des requêtes personnalisées que vous pouvez utiliser pour rechercher les détails des processus et des tâches des instances de processus AEM Forms définies dans votre environnement AEM Forms.
+Les requêtes ad hoc dans les rapports de processus vous permettent de créer des requêtes personnalisées que vous pouvez utiliser pour rechercher les détails de processus et de tâches des instances de processus AEM Forms définies dans votre environnement AEM Forms.
 
 En outre, les requêtes ad hoc peuvent être définies à l’aide de filtres de propriétés de processus et de tâches. Ces filtres peuvent ensuite être enregistrés et utilisés pour exécuter les rapports ultérieurement.
 
@@ -155,6 +155,7 @@ Utilisez les options du panneau **Mes filtres** pour **Ajouter** ![lc_pr_add_fil
    * **Actualiser** : actualise le rapport avec les dernières données stockées
 
    * **Exportation au format CSV** : exportez les données du rapport dans un fichier séparé par des virgules.
+
    >[!NOTE]
    >
    >Lorsque vous exportez un rapport, l’ensemble du résultat de la recherche est exporté dans un fichier CSV et pas seulement dans la page active.
@@ -248,11 +249,6 @@ Vous pouvez afficher les détails d’un processus/d’une tâche AEM Forms spé
    * Propriétaire de la tâche
    * Date de création de l’affectation de tâche
    * Date et heure de mise à jour de la tâche
-
-
-
-
-
 
 1. Cliquez sur **Retour à la recherche du processus / de la tâche** pour revenir au résultat de recherche à partir duquel les détails du processus/de la tâche ont été tirés.
 

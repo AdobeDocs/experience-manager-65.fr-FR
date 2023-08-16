@@ -2,10 +2,10 @@
 title: Configuration des règles de traduction
 description: Découvrez comment définir des règles de traduction pour identifier le contenu à traduire.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '871'
+ht-degree: 98%
 
 ---
 
@@ -61,7 +61,7 @@ Il existe une console **Configuration de traduction** disponible pour la configu
 
 Dans l’IU **Configuration de traduction**, plusieurs options sont disponibles pour vos règles de traduction. Dans cette partie, nous mettons en évidence les étapes les plus nécessaires et les plus courantes requises pour une configuration de localisation découplée de base.
 
-1. Appuyez ou cliquez sur **Ajouter du contexte**, qui permet d’ajouter un chemin d’accès. Il s’agit du chemin d’accès du contenu qui sera affecté par la règle.
+1. Appuyez ou cliquez sur **Ajouter un contexte**, qui vous permet d’ajouter un chemin. Il s’agit du chemin d’accès du contenu qui sera affecté par la règle.
    ![Ajoutez du contexte](assets/add-translation-context.png)
 1. Utilisez le navigateur de chemins d’accès pour sélectionner le chemin requis et appuyez ou cliquez sur le bouton **Confirmer** pour enregistrer. N’oubliez pas que les fragments de contenu, qui contiennent du contenu découplé, se trouvent généralement sous `/content/dam/<your-project>`.
    ![Sélectionnez le chemin d’accès](assets/select-context.png)

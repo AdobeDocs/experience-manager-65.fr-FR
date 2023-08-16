@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '1910'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1909'
+ht-degree: 99%
 
 ---
 
@@ -40,13 +40,13 @@ Vous trouverez ci-dessous un extrait du site Geometrixx ; par exemple, où est 
 
 * Environnement de création
 
-   `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
+  `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
 * Environnement de publication
 
-   `http://localhost:4503/content/geometrixx/en/products/triangle.html`
+  `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-   Selon la configuration de votre instance, le segment `/content` peut être facultatif dans l’environnement de publication.
+  Selon la configuration de votre instance, le segment `/content` peut être facultatif dans l’environnement de publication.
 
 ```xml
   /content
@@ -167,16 +167,18 @@ Avant de pouvoir commencer à créer du contenu, vous devez créer une page, à 
 
    Cliquer sur **Nouveau...** agit également comme un raccourci vers la fonction **Nouvelle page...**.
 
-1. La boîte de dialogue **Créer une page** vous permet d’effectuer les opérations suivantes :
+1. La variable **Créer une page** vous permet d’effectuer les opérations suivantes :
 
    * Fournissez un **Titre**, celui-ci est affiché pour l’utilisateur ou l’utilisatrice.
    * Fournissez un **Nom**, celui-ci est utilisé pour générer l’URI. S’il n’est pas spécifié, le nom est dérivé du titre.
 
       * Si vous indiquez le **nom** d’une page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
       * Dans l’IU classique, vous **ne pouvez pas entrer de caractères non valides** dans le champ **Nom**.
+
    * Cliquez sur le modèle à utiliser pour créer la nouvelle page.
 
-      Le modèle sert de base à la nouvelle page : par exemple, pour déterminer la mise en page de base d’une page de contenu.
+     Le modèle sert de base à la nouvelle page : par exemple, pour déterminer la mise en page de base d’une page de contenu.
+
    >[!NOTE]
    >
    >Voir [Conventions de dénomination de page](#page-naming-conventions).
@@ -269,27 +271,28 @@ Pour déplacer ou renommer une page :
 
    * **Destination**
 
-      Utilisez le plan du site (disponible via le sélecteur de la liste déroulante) pour sélectionner l’emplacement où la page doit être déplacée.
+     Utilisez le plan du site (disponible via le sélecteur de la liste déroulante) pour sélectionner l’emplacement où la page doit être déplacée.
 
-      Si vous renommez uniquement la page, ignorez ce champ.
+     Si vous renommez uniquement la page, ignorez ce champ.
 
    * **Déplacer**
 
-      Indiquez la page à déplacer, ce champ est généralement complété par défaut, selon la méthode de déplacement utilisée et l’endroit où vous avez lancé l’opération.
+     Indiquez la page à déplacer, ce champ est généralement complété par défaut, selon la méthode de déplacement utilisée et l’endroit où vous avez lancé l’opération.
 
    * **Renommer en**
 
-      Le libellé actuel de la page s’affiche par défaut. Indiquez le nouveau libellé de la page, le cas échéant.
+     Le libellé actuel de la page s’affiche par défaut. Indiquez le nouveau libellé de la page, le cas échéant.
 
    * **Régler**
 
-      Mettez à jour les liens de la page répertoriée qui redirigent vers la page déplacée. Par exemple, si la page A contient des liens vers la page B, AEM ajuste les liens de la page A au cas où vous déplaceriez la page B.
+     Mettez à jour les liens de la page répertoriée qui redirigent vers la page déplacée. Par exemple, si la page A contient des liens vers la page B, AEM ajuste les liens de la page A au cas où vous déplaceriez la page B.
 
-      Cette option peut être sélectionnée ou désélectionnée pour chaque page de référence.
+     Cette option peut être sélectionnée ou désélectionnée pour chaque page de référence.
 
    * **Republier**
 
-      Publie à nouveau la page de référence ; ici encore, cette option peut être sélectionnée pour chaque page.
+     Publie à nouveau la page de référence ; ici encore, cette option peut être sélectionnée pour chaque page.
+
    >[!NOTE]
    >
    >Si la page a déjà été activée, le fait de la déplacer la désactivera automatiquement. Par défaut, elle sera réactivée une fois le déplacement terminé. Vous pouvez toutefois changer ce comportement en désélectionnant l’option **Republier** pour la page dans la fenêtre **Déplacer**.

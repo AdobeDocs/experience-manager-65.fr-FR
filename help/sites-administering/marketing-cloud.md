@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ba518290-dd82-44dc-ae7c-c8152df89179
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: ht
-source-wordcount: '846'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '845'
+ht-degree: 98%
 
 ---
 
@@ -34,7 +34,7 @@ En outre, vous pouvez [intégrer AEM à Creative Cloud](/help/assets/aem-cc-int
 
 Adobe Analytics vous permet d’analyser les données de vos sites.
 
-L’intégration à Adobe Analytics vous permet d’effectuer les opérations suivantes :
+L’intégration à Adobe Analytics vous permet d’effectuer les opérations suivantes :
 
 * Activer le suivi des utilisateurs d’Adobe Analytics
 * Mappez vos modes d’exécution (par exemple, création et publication) à différentes suites de rapports.

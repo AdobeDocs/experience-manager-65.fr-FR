@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 2d4cda3d-3270-4294-a146-e5712746aebb
 docset: aem65
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 91%
+source-wordcount: '313'
+ht-degree: 86%
 
 ---
 
@@ -51,7 +51,7 @@ Depuis un explorateur coulissant qui s’ouvre sur le côté gauche d’une page
 Un double-clic ou un double-clic lent ou un double-clic lent affiche la barre d’outils appropriée (une seule pour la barre d’outils d’édition statique, puis deux lents pour la barre d’outils complète).
 
 * **[Mise en page réactive](/help/sites-authoring/responsive-layout.md)**
-Cette fonction fournit un système de paragraphes qui permet de positionner des composants sur une grille réactive.
+Vous disposez ainsi d’un système de paragraphes qui vous permet de positionner les composants dans une grille réactive.
 
 * **Recherche en cours de frappe**
 Dans certains cas (par exemple, lors de la sélection d’un chemin d’accès dans les boîtes de dialogue de modification), la recherche de contenu dans l’interface d’AEM présente des correspondances dynamiques en cours de saisie de la requête.

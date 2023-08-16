@@ -8,9 +8,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '888'
 ht-degree: 9%
 
 ---
@@ -32,7 +32,7 @@ Pour activer les composants principaux Forms adaptatifs sur votre environnement 
 Cet article fournit des instructions détaillées sur la configuration et le déploiement d’AEM archetype 41 ou version ultérieure sur votre environnement Forms AEM 6.5 pour activer les composants principaux Forms adaptatif.
 
 
-## Conditions préalables {#prerequisites}
+## Conditions préalables requises {#prerequisites}
 
 Avant d’activer les composants principaux de Forms adaptatif dans un environnement Forms 6.5 AEM :
 

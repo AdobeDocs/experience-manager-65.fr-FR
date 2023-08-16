@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '9117'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '9113'
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 **À propos du service Repository**
 
-Le service Repository fournit du stockage de ressources et des services de gestion à AEM Forms. Lorsque des développeurs créent une application *AEM Forms*, ils peuvent déployer les ressources dans le référentiel plutôt que dans le système de fichiers. Les actifs peuvent être constitués de formulaires XML, de formulaires PDF (y compris de formulaires Acrobat), de fragments de formulaire, d’images, de profils, de stratégies, de fichiers SWF, DDX et WSDL, de schémas XML et de données de test.
+Le service Repository fournit du stockage de ressources et des services de gestion à AEM Forms. Lorsque des développeurs créent une application *AEM Forms*, ils peuvent déployer les ressources dans le référentiel plutôt que dans le système de fichiers. Les actifs peuvent être constitués de formulaires XML, de formulaires PDF (y compris de formulaires Acrobat), de fragments de formulaire, d’images, de profils, de politiques, de fichiers SWF, DDX et WSDL, de schémas XML et de données de test.
 
 Prenons l’exemple de l’application Forms suivante nommée *Applications/FormsApplication* :
 
@@ -154,7 +154,6 @@ Créez un dossier à l’aide de l’API Repository Service (Java) :
    Définissez la description du dossier à l’aide de la méthode `setDescription` et transmettez le paramètre suivant :
 
    * Un `String` qui décrit la collection de ressources. Dans cet exemple, `"test Folder"` est utilisé `.`.
-
 
 1. Écriture du dossier dans le référentiel
 
@@ -479,10 +478,10 @@ Vous pouvez récupérer des ressources à partir d’un emplacement donné dans 
 
 Le référentiel dispose des quatre types d’autorisations suivants :
 
-* **parcours** : permet de répertorier les ressources, c’est-à-dire de lire les métadonnées de la ressource, mais pas leur contenu.
-* **lecture** : permet de lire le contenu de la ressource.
-* **écriture** : permet d’écrire du contenu de ressource.
-* **gestion des listes de contrôle d’accès (ACL)** : permet de manipuler les ACL sur les ressources.
+* **traverse**: permet de répertorier les ressources, c’est-à-dire de lire les métadonnées des ressources, mais pas le contenu des ressources.
+* **read**: permet de lire le contenu d&#39;une ressource
+* **write**: permet d’écrire du contenu de ressource
+* **gestion des listes de contrôle d’accès (ACL)**: permet de manipuler les listes de contrôle d’accès sur les ressources.
 
 Les utilisateurs ne peuvent exécuter des processus que si lʼautorisation leur en a été accordée. Les utilisateurs d’un IDE doivent disposer d’autorisations de parcours et de lecture pour se synchroniser avec le référentiel. Les listes de contrôle d’accès ne s’appliquent quʼau moment de la conception, car l’exécution se produit dans le contexte du système.
 

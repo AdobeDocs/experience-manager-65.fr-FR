@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1140'
-ht-degree: 61%
+source-wordcount: '1136'
+ht-degree: 57%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 61%
 
 >[!NOTE]
 >
->Ce document traite de la configuration de la segmentation telle qu’utilisée avec ClientContext. Pour configurer des segments avec ContextHub à l’aide de l’interface utilisateur tactile, reportez-vous à la section [Configuration de la segmentation avec ContextHub](/help/sites-administering/segmentation.md).
+>Ce document traite de la configuration de la segmentation telle qu’utilisée avec ClientContext. Pour configurer des segments avec ContextHub à l’aide de l’interface utilisateur tactile, voir [Configuration de la segmentation avec ContextHub](/help/sites-administering/segmentation.md).
 
 La segmentation est un élément clé de la création d’une campagne. Voir [Glossaire de segmentation](/help/sites-authoring/segmentation-overview.md) pour plus d’informations sur le fonctionnement de la segmentation et les termes clés.
 
@@ -31,9 +31,9 @@ En fonction des informations que vous avez déjà collectées sur les visiteurs 
 
 Ces segments sont ensuite utilisés pour fournir aux visiteurs du contenu spécifiquement ciblé. Ce contenu est conservé dans la section [Campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) du site web. Les pages de teaser définies ici peuvent être incluses en tant que paragraphes de teaser sur n’importe quelle page et définissent le segment de visiteurs auquel le contenu spécialisé s’applique.
 
-AEM vous permet de facilement créer et mettre à jour des segments, des teasers et des campagnes. Il vous permet également de vérifier les résultats de vos définitions.
+AEM permet de créer et de mettre à jour facilement des segments, des teasers et des campagnes. Il vous permet également de vérifier les résultats de vos définitions.
 
-L’**éditeur de segment** vous permet de définir facilement un segment :
+La variable **Éditeur de segment** permet de définir facilement un segment :
 
 ![Fenêtre de l’éditeur de segments](assets/segmenteditor.png)
 
@@ -48,7 +48,7 @@ Chaque segment comporte un paramètre **Amplifier** utilisé comme un facteur de
 
 ## Logique de segment {#segment-logic}
 
-Les conteneurs logiques suivants sont disponibles clé en main et vous permettent de créer la logique de votre sélection de segments. Ils peuvent être déplacés du sidekick vers l’éditeur :
+Les conteneurs logiques suivants sont disponibles prêts à l’emploi et vous permettent de construire la logique de votre sélection de segment. Ils peuvent être déplacés du sidekick vers l’éditeur :
 
 <table>
  <tbody>
@@ -65,7 +65,7 @@ Les conteneurs logiques suivants sont disponibles clé en main et vous permetten
 
 ## Caractéristiques de segment {#segment-traits}
 
-Les caractéristiques de segment suivantes sont disponibles clé en main. ils peuvent être déplacés du sidekick vers l’éditeur :
+Les caractéristiques de segment suivantes sont disponibles prêtes à l’emploi ; elles peuvent être glissées du sidekick vers l’éditeur :
 
 <table>
  <tbody>
@@ -133,8 +133,8 @@ Pour définir votre nouveau segment :
 
    ![Première étape de la création d’un segment dans l’éditeur de segments](assets/screen_shot_2012-02-02at101726am.png)
 
-1. Utilisez le sidekick ou le menu contextuel (en général, cliquez avec le bouton droit de la souris, puis sélectionnez **Nouveau** pour ouvrir la fenêtre Insérer un nouveau composant) et recherchez la caractéristique de segment dont vous avez besoin. Faites-le ensuite glisser sur le **Éditeur de segment** il apparaît dans la valeur par défaut **ET** conteneur.
-1. Double-cliquez sur la nouvelle caractéristique pour éditer les paramètres spécifiques ; par exemple, la position de la souris :
+1. Utilisez le sidekick ou le menu contextuel (en général, cliquez avec le bouton droit de la souris, puis sélectionnez **Nouveau** pour ouvrir la fenêtre Insérer un nouveau composant) et recherchez la caractéristique de segment dont vous avez besoin. Faites-le ensuite glisser sur le **Éditeur de segment** il apparaît dans la valeur par défaut. **ET** conteneur.
+1. Double-cliquez sur la nouvelle caractéristique pour éditer les paramètres spécifiques, par exemple la position de la souris :
 
    ![Modification d’un composant dans l’éditeur de segment](assets/screen_shot_2012-02-02at103135am.png)
 
@@ -179,7 +179,7 @@ Par exemple, une seule définition de segment peut être fonction de l’âge et
 
 Ou non :
 
-![Utilisation de la fenêtre ClientContext pour tester une opération de segmentation SAUF](assets/screen_shot_2012-02-02at110019am.png)
+![Utilisation de la fenêtre ClientContext pour tester une opération de segmentation NOT](assets/screen_shot_2012-02-02at110019am.png)
 
 >[!NOTE]
 >
@@ -187,7 +187,7 @@ Ou non :
 
 Ces tests peuvent également s’effectuer sur les pages de contenu et en combinaison avec des composants **Teaser**.
 
-Passez la souris sur un paragraphe de teaser pour afficher les segments appliqués, s’ils sont actuellement résolus et, par conséquent, pourquoi l’instance de teaser actuelle a été sélectionnée :
+Pointez sur un paragraphe de teaser pour voir si les segments appliqués sont actuellement résolus et, par conséquent, pourquoi l’instance de teaser actuelle a été sélectionnée :
 
 ![Exemple de pointeur de la souris sur un segment](assets/chlimage_1-47.png)
 

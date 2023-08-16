@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1863'
-ht-degree: 54%
+source-wordcount: '1860'
+ht-degree: 52%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 54%
 >
 >[La documentation relative à l’API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) est également disponible.
 
-La structure d’intégration comprend une couche d’intégration avec une API. Vous pouvez ainsi construire des composants AEM pour les fonctionnalités de commerce électronique (indépendant de votre moteur d’eCommerce). Il vous permet également d’utiliser la base de données CRX interne ou de connecter un système eCommerce et d’extraire des données de produit dans AEM.
+La structure d’intégration comprend une couche d’intégration avec une API. Vous pouvez ainsi créer des composants AEM pour les fonctionnalités d’eCommerce (indépendamment de votre moteur eCommerce spécifique). Il vous permet également d’utiliser la base de données CRX interne ou de connecter un système de commerce électronique et d’extraire des données de produit dans AEM.
 
 Un certain nombre de composants AEM prêts à l’emploi sont proposés pour utiliser la couche d’intégration. Actuellement :
 
@@ -33,7 +33,7 @@ Un certain nombre de composants AEM prêts à l’emploi sont proposés pour uti
 * Passage en caisse
 * Rechercher
 
-Pour la recherche, un crochet d’intégration est fourni pour vous permettre d’utiliser la recherche AEM, une recherche tierce ou une combinaison de celles-ci.
+Pour la recherche, un crochet d’intégration est fourni qui vous permet d’utiliser la recherche AEM, une recherche tierce ou une combinaison de celle-ci.
 
 ## Sélection du moteur eCommerce {#ecommerce-engine-selection}
 
@@ -111,7 +111,7 @@ L’API **CommerceSession** :
 
 #### Architecture des produits et des variantes {#architecture-of-product-and-variants}
 
-Un produit unique peut avoir plusieurs variantes ; par exemple, il peut varier en fonction de la couleur et/ou de la taille. Un produit doit définir quelles propriétés favorisent la variation ; nous les appelons *axes des variantes*.
+Un seul produit peut avoir plusieurs variantes ; par exemple, il peut varier en fonction de la couleur et/ou de la taille. Un produit doit définir les propriétés qui génèrent des variations ; nous les appelons : *axes des variantes*.
 
 Cependant, toutes les propriétés ne sont pas des axes de variante. Les variations peuvent également affecter d’autres propriétés ; par exemple, le prix peut dépendre de la taille. Ces propriétés ne peuvent pas être sélectionnées par l’acheteur et ne sont donc pas considérées comme des axes de variante.
 
@@ -246,7 +246,7 @@ public class AxisFilter implements VariantFilter {
       * Une référence, avec les données de produit stockées ailleurs :
 
          * Les références de produit contiennent une propriété `productData`, qui pointe vers les données de produit (généralement sous `/etc/commerce/products`).
-         * Les données du produit sont hiérarchisées ; les attributs de produit sont hérités des ancêtres d’un noeud de données de produit.
+         * Les données de produit sont hiérarchiques ; les attributs de produit sont hérités des ancêtres d’un noeud de données de produit.
          * Les références de produit peuvent également contenir des propriétés locales qui remplacent celles spécifiées dans leurs données de produit.
 
       * Un produit lui-même :
@@ -435,12 +435,12 @@ Le point d’entrée de l’API de recherche est la méthode `CommerceService#se
 
    * Envoi des bons :
 
-      * Code de bon (à saisir dans le panier par l’acheteur).
+      * Un code de bon (à saisir dans le panier par l’acheteur).
       * Libellé du bon (à afficher une fois que l’acheteur l’a saisi dans le panier).
       * Un chemin de promotion (qui définit l’action appliquée par le bon).
 
    * Les bons n’ont pas leur propre date/heure d’activation et de désactivation, mais utilisent ceux de leurs campagnes parents.
-   * Les moteurs de commerce externes peuvent également fournir des bons ; ils nécessitent un minimum de :
+   * Les moteurs de commerce externes peuvent également fournir des bons, qui nécessitent au minimum :
 
       * Un code de bon
       * Une méthode `isValid()`
@@ -521,7 +521,7 @@ De cette façon, `CommerceSession` est chargée de vérifier si un bon existe et
 
 * `jcr:title` (Chaîne) - Pour la description du bon
 * `code` (Chaîne) - Code promotionnel que l’utilisateur doit entrer pour appliquer ce bon
-* `promotion` (chaîne) : promotion à appliquer ; par exemple, `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
+* `promotion` (chaîne) : promotion à appliquer, par exemple : `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
 Les gestionnaires de promotions sont des services OSGi qui modifient le panier. Le panier prend en charge plusieurs hooks définis dans l’interface `PromotionHandler`.
 

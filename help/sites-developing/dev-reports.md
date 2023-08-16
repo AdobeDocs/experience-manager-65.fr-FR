@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '5241'
+source-wordcount: '5239'
 ht-degree: 72%
 
 ---
@@ -55,7 +55,7 @@ Pour les rapports standard fournis avec AEM :
 >  `P:<name> = <value>`  : décrit une propriété `<name>` qui doit être définie sur la valeur de `<value>`.
 >
 >* La mise en retrait indique les dépendances hiérarchiques entre les nœuds.
->* Éléments séparés par | indique une liste d’éléments possibles ; par exemple, les types ou les noms ; par exemple, `String|String[]` signifie que la propriété peut être String ou String.[].
+>* Éléments séparés par | indique une liste d’éléments possibles ; par exemple, des types ou des noms ; par exemple, `String|String[]` signifie que la propriété peut être String ou String.[].
 >
 >* `[]` représente une série, par exemple String[], ou une série de nœuds, comme dans la [Définition de requête](#query-definition).
 >
@@ -101,8 +101,8 @@ Le [`reportbase`composant ](#report-base-component) constitue la base de tout ra
 Chaque colonne est une instance du [`columnbase`composant ](#column-base-component) qui :
 
 * est un paragraphe, utilisé par le système de paragraphes (parsys) (`reportbase`) du rapport correspondant ;
-* Définit le lien vers la variable [jeu de résultats sous-jacent](#the-query-and-data-retrieval); c’est-à-dire qu’il définit les données spécifiques référencées dans ce jeu de résultats et la manière dont il est traité.
-* contient des définitions supplémentaires ; tels que les agrégats et filtres disponibles, ainsi que toute valeur par défaut.
+* Définit le lien vers la variable [jeu de résultats sous-jacent](#the-query-and-data-retrieval); c’est-à-dire qu’il définit les données spécifiques référencées dans ce jeu de résultats, ainsi que la manière dont il est traité.
+* Contient des définitions supplémentaires, telles que les agrégats et les filtres disponibles, ainsi que toute valeur par défaut.
 
 ### Requête et récupération de données {#the-query-and-data-retrieval}
 
@@ -130,13 +130,13 @@ Le développeur doit s’assurer que la requête définie pour un rapport renvoi
 
 ### File d’attente de traitement {#processing-queue}
 
-Le [query](#the-query-and-data-retrieval) renvoie un jeu de résultats de données à afficher sous forme de lignes sur le rapport. Chaque ligne du jeu de résultats est traitée (côté serveur), en [plusieurs phases](#phases-of-the-processing-queue), avant d’être transférée vers le client en vue d’un affichage dans le rapport.
+La variable [query](#the-query-and-data-retrieval) renvoie un jeu de résultats de données à afficher sous forme de lignes sur le rapport. Chaque ligne du jeu de résultats est traitée (côté serveur), en [plusieurs phases](#phases-of-the-processing-queue), avant d’être transférée vers le client en vue d’un affichage dans le rapport.
 
 Cela permet d’effectuer les opérations suivantes :
 
 * Extraire et déduire des valeurs du jeu de résultats sous-jacent.
 
-  Cela vous permet, par exemple, de traiter deux valeurs de propriété comme s’il s’agissait d’une seule en calculant la différence entre les deux.
+  Par exemple, il vous permet de traiter deux valeurs de propriété comme une seule valeur en calculant la différence entre les deux.
 
 * Résoudre les valeurs extraites ; cela peut être réalisé de différentes manières.
 
@@ -167,7 +167,7 @@ Emplacement des étapes détaillées et des éléments :
 
 1. [Filtrage](#column-specific-definitions) (affectée à la variable *prétraité* phase) est exécutée sur les valeurs prétraitées.
 
-1. Les valeurs sont résolues ; selon la variable [résolveur défini](#processing-queue).
+1. Les valeurs sont résolues, en fonction de la variable [résolveur défini](#processing-queue).
 1. [Filtrage](#column-specific-definitions) (affectée à la variable *resolved* phase) est exécutée sur les valeurs résolues.
 
 1. Les données sont [regroupés et agrégés](#column-specific-definitions).
@@ -236,7 +236,7 @@ Chaque type de rapport nécessite un composant de conteneur provenant de `/libs/
 
 Ce composant agit comme un conteneur pour le rapport dans son ensemble et fournit des informations pour les éléments suivants :
 
-* Le [définition de requête](#query-definition).
+* La variable [définition de requête](#query-definition).
 * Un [(facultatif) boîte de dialogue](#configuration-dialog) pour configurer le rapport.
 * Quelconque [Graphiques](#chart-definitions) intégré dans le rapport.
 
@@ -473,11 +473,11 @@ Chaque type de colonne nécessite un composant provenant de `/libs/cq/reporting/
 
 Un composant de colonne définit une combinaison des éléments suivants :
 
-* Le [Requête spécifique à la colonne](#column-specific-query) configuration.
-* Le [Résolveurs et prétraitement](#resolvers-and-preprocessing).
+* La variable [Requête spécifique à la colonne](#column-specific-query) configuration.
+* La variable [Résolveurs et prétraitement](#resolvers-and-preprocessing).
 * [Définitions spécifiques à la colonne](#column-specific-definitions) (telles que des filtres et des agrégats ; nœud enfant `definitions`).
 * [Valeurs par défaut de colonne](#column-default-values).
-* Le [Filtre client](#client-filter) pour extraire les informations à afficher à partir des données retournées par le serveur.
+* La variable [Filtre client](#client-filter) pour extraire les informations à afficher à partir des données retournées par le serveur.
 * En outre, un composant de colonne doit fournir une instance appropriée de `cq:editConfig`. pour définir les [événements et actions](#events-and-actions) requis.
 * Configuration de [colonnes génériques](#generic-columns).
 
@@ -770,7 +770,7 @@ N:definitions
                 P:format          // data type formatter
 ```
 
-#### Prétraitement - Modèles de recherche et de remplacement {#preprocessing-find-and-replace-patterns}
+#### Prétraitement - Rechercher et remplacer des modèles {#preprocessing-find-and-replace-patterns}
 
 Pour le prétraitement, vous pouvez spécifier un `pattern` (défini en tant qu’[expression régulière](https://fr.wikipedia.org/wiki/Regular_expression) ou regex) qui est localisé, puis remplacé par le motif `replace` :
 
@@ -1395,10 +1395,10 @@ Il est possible de les consulter à l’aide du menu Configuration de la console
 * **Paramètres régionaux** définit les paramètres régionaux à utiliser conjointement avec la variable **Fuseau horaire** pour les données historiques. Le paramètre régional permet de déterminer certains paramètres du calendrier spécifiques à un paramètre régional (par exemple, si le premier jour d’une semaine est dimanche ou lundi).
 
 * **Chemin de l’instantané** définit le chemin racine où sont stockés les instantanés des graphiques historiques.
-* **Chemin d’accès aux rapports** définit le chemin d’accès à l’emplacement des rapports. Il est utilisé par le service d’instantané pour déterminer les rapports pour lesquels prendre des instantanés.
+* **Chemin d’accès aux rapports** définit le chemin d’accès à l’emplacement des rapports. Il est utilisé par le service d’instantané pour déterminer les rapports pour lesquels des instantanés doivent être créés.
 * **Instantanés quotidiens** définit l’heure de chaque jour où des instantanés quotidiens sont réalisés. L’heure spécifiée se trouve dans le fuseau horaire local du serveur.
 * **Instantanés horaires** définit la minute de chaque heure à laquelle des instantanés horaires sont réalisés.
-* **Lignes (max)** définit le nombre maximal de lignes stockées pour chaque instantané. Cette valeur doit être choisie raisonnablement; s’il est trop élevé, cela aura une incidence sur la taille du référentiel. s’il est trop faible, les données peuvent ne pas être exactes en raison de la façon dont les données historiques sont traitées.
+* **Lignes (max)** définit le nombre maximal de lignes stockées pour chaque instantané. Cette valeur doit être choisie de manière raisonnable ; si elle est trop élevée, cela affectera la taille du référentiel, si elle est trop faible, les données peuvent ne pas être exactes en raison de la manière dont les données historiques sont traitées.
 * **Fausses données** : si cette option est activée, de fausses données historiques peuvent être créées à l’aide du sélecteur `fakedata`. Si elle est désactivée, l’utilisation du sélecteur `fakedata` générera une exception.
 
   Les données étant fausses, elles doivent *uniquement* être utilisées à des fins de test et de débogage.

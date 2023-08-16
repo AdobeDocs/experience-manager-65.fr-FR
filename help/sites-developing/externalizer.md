@@ -1,16 +1,16 @@
 ---
 title: Externalisation d’URL
-description: Externalizer est un service OSGI qui vous permet de transformer, par programmation, un chemin d’accès à une ressource en URL absolue externe.
+description: Externalizer est un service OSGI qui vous permet de transformer par programmation un chemin d’accès à une ressource en URL absolue externe.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 53%
+source-wordcount: '492'
+ht-degree: 50%
 
 ---
 
@@ -20,11 +20,11 @@ Dans Adobe Experience Manager (AEM), la variable **Externalizer** est un service
 
 Une instance ne peut pas connaître son URL visible en externe si elle s’exécute derrière une couche Web et il arrive qu’un lien doive être créé en dehors d’une étendue de demande. Dès lors, ce service fournit un emplacement centralisé pour configurer ces URL externes et les générer.
 
-Cette page explique comment configurer la variable **Externalizer** et comment l’utiliser. Pour plus d’informations, reportez-vous à la section [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
+Cette page explique comment configurer la variable **Externalizer** et comment l’utiliser. Pour plus d’informations, reportez-vous au [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Configuration du service Externalizer {#configuring-the-externalizer-service}
 
-Le service **Externalizer** vous permet de définir, de manière centralisée, plusieurs domaines pouvant être utilisés pour préfixer des chemins d’accès aux ressources par programmation. Chaque domaine est identifié par un nom unique utilisé pour référencer le domaine par programmation.
+La variable **Externalizer** vous permet de définir de manière centralisée plusieurs domaines qui peuvent être utilisés pour préfixer par programmation les chemins d’accès aux ressources. Chaque domaine est identifié par un nom unique utilisé pour référencer le domaine par programmation.
 
 Pour définir un mappage de domaine pour la variable **Externalizer** service :
 

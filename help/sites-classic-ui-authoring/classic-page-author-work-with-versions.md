@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 72%
+source-wordcount: '1352'
+ht-degree: 71%
 
 ---
 
@@ -44,7 +44,7 @@ Pour créer une nouvelle version d’une page :
 Pour restaurer la version précédente d’une page :
 
 1. Ouvrez la page dont vous souhaitez restaurer une version précédente.
-1. Dans le sidekick, sélectionnez la variable **Contrôle de version** , puis le **Restaurer la version** sous-onglet.
+1. Dans le sidekick, sélectionnez la variable **Contrôle de version** , puis la variable **Restaurer la version** sous-onglet.
 
    ![screen_shot_2012-02-14at42949pm](assets/screen_shot_2012-02-14at42949pm.png)
 
@@ -138,7 +138,7 @@ La version calendrier sert à afficher un jour spécifique :
 
    >[!NOTE]
    >
-   >Vous ne pouvez pas modifier l’ancienne version de la page. Elle est disponible uniquement à des fins d’affichage. Si vous souhaitez restaurer l’ancienne version, vous pouvez le faire manuellement à l’aide de [restore](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
+   >Vous ne pouvez pas modifier l’ancienne version de la page. Elle est disponible uniquement à des fins d’affichage. Si vous souhaitez restaurer l’ancienne version, vous pouvez le faire manuellement à l’aide de [Restaurer](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
 
 1. Une fois la consultation de la page terminée, cliquez sur :
 
@@ -157,9 +157,9 @@ Si vous souhaitez afficher la frise chronologique du document :
 
    1. Ouvrez le **Contrôle de version** puis cliquez sur **Timewarp** (près du bas du sidekick).
 
-   1. Utilisez la boîte de dialogue du sidekick qui s’affiche après [utilisation du calendrier Timewarp](#using-the-timewarp-calendar).
+   1. Utilisez la boîte de dialogue du sidekick affichée après [utilisation du calendrier Timewarp](#using-the-timewarp-calendar).
 
-1. Cliquez sur **Afficher la chronologie** - la chronologie du document s’affiche ; par exemple :
+1. Cliquez sur **Afficher la chronologie** - la chronologie du document s’affiche, par exemple :
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
@@ -184,7 +184,7 @@ Timewarp s’efforce de reproduire au mieux une page à un moment donné. Toutef
 * **Timewarp utilise des versions de page** : si vous accédez à une page qui a été supprimée du référentiel, elle s’affiche correctement si d’anciennes versions sont toujours disponibles dans le référentiel.
 * **Les versions supprimées affectent Timewarp** : si des versions sont supprimées du référentiel, Timewarp n’est pas en mesure d’afficher la vue correcte.
 
-* **Timewarp est en lecture seule** : vous ne pouvez pas modifier l’ancienne version de la page. Elle est disponible uniquement à des fins d’affichage. Si vous souhaitez restaurer l’ancienne version, vous pouvez le faire manuellement à l’aide de [restore](#main-pars-title-1).
+* **Timewarp est en lecture seule** : vous ne pouvez pas modifier l’ancienne version de la page. Elle est disponible uniquement à des fins d’affichage. Si vous souhaitez restaurer l’ancienne version, vous pouvez le faire manuellement à l’aide de [Restaurer](#main-pars-title-1).
 
 * **La fonction Timewarp est uniquement basée sur le contenu de la page.** - Si des éléments (tels que des ressources de code, css et image) pour le rendu du site web ont été modifiés, la vue diffère de ce qu’elle était initialement, car ces éléments ne sont pas versionnés dans le référentiel.
 

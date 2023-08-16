@@ -12,10 +12,10 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
-workflow-type: ht
-source-wordcount: '3430'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '3429'
+ht-degree: 99%
 
 ---
 
@@ -183,7 +183,7 @@ Le **Service de type MIME Apache Sling** configure :
 
 **Filtre de référent Apache Sling** : pour résoudre les problèmes de sécurité connus avec Cross-Site Request Forgery (CSRF) dans CRX WebDAV et Apache Sling, vous devez configurer le filtre de référent.
 
-Le service de filtrage des référents est un service OSGi qui vous permet de configurer :
+Le service de filtrage des référents est un service OSGi qui vous permet de configurer les éléments suivants :
 
 * les méthodes HTTP à filtrer ;
 * si un en-tête de référent vide est permis ;
@@ -318,15 +318,15 @@ En utilisant le mappage racine d’AEM, vous pouvez configurer l’IU que vous s
 
 * Pour utiliser l’IU optimisée pour les écrans tactiles en tant qu’IU par défaut, le **chemin cible** doit pointer vers :
 
-   ```shell
-      /projects.html
-   ```
+  ```shell
+     /projects.html
+  ```
 
 * Pour utiliser l’IU classique en tant qu’IU par défaut, le **chemin cible** doit pointer vers :
 
-   ```shell
-      /welcome.html
-   ```
+  ```shell
+     /welcome.html
+  ```
 
 >[!NOTE]
 >
@@ -340,8 +340,7 @@ Différentes propriétés de configuration sont disponibles :
 Chemin pour lequel ce gestionnaire d’authentification est actif. Si ce paramètre n’est pas renseigné, le gestionnaire d’authentification est désactivé. Par exemple, si vous utilisez le chemin /, le gestionnaire d’authentification est utilisé pour l’ensemble du référentiel.
 
 * **Classement de service**
-La valeur de classement du service OSGi Framework est utilisée pour indiquer l’ordre d’appel de ce service. Cette valeur est une valeur 
-`int`, pour laquelle des valeurs plus élevées désignent une priorité plus élevée.
+La valeur de classement du service OSGi Framework est utilisée pour indiquer l’ordre d’appel de ce service. Cette valeur est une valeur `int`, pour laquelle des valeurs plus élevées désignent une priorité plus élevée.
 La valeur par défaut est `0`.
 
 * **Noms des en-têtes**
@@ -354,8 +353,7 @@ Les noms de cookies pouvant contenir un identifiant utilisateur.
 Les noms de paramètres de requête pouvant fournir l’identifiant utilisateur.
 
 * **La carte utilisateur**
-Pour les utilisateurs sélectionnés, le nom d’utilisateur extrait de la requête HTTP peut être remplacé par un nom différent dans l’objet des informations d’authentification. Le mappage est défini ici. Si le nom d’utilisateur 
-`admin` apparaît d’un côté ou de l’autre de la carte, le mappage est ignoré. Le caractère « = » doit être placé dans une séquence d’échappement avec un « \ » au début.
+Pour les utilisateurs sélectionnés, le nom d’utilisateur extrait de la requête HTTP peut être remplacé par un nom différent dans l’objet des informations d’authentification. Le mappage est défini ici. Si le nom d’utilisateur `admin` apparaît d’un côté ou de l’autre de la carte, le mappage est ignoré. Le caractère « = » doit être placé dans une séquence d’échappement avec un « \ » au début.
 
 * **Format**
 Indique le format dans lequel l’identifiant utilisateur est fourni. Utilisez :

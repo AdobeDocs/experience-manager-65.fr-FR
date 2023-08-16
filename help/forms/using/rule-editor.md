@@ -2,7 +2,7 @@
 title: Éditeur de règles de formulaires adaptatifs
 seo-title: Adaptive forms rule editor
 description: L’éditeur de règles de formulaires adaptatifs vous permet d’ajouter un comportement dynamique et de créer une logique complexe dans des formulaires sans codage ni script.
-seo-description: Adaptive forms rule editor allows you to add dynamic behavior and build complex logic into forms without coding or scripting.
+seo-description: Adaptive forms rule editor lets you add dynamic behavior and build complex logic into forms without coding or scripting.
 uuid: c1b3d6e4-6f36-4352-ab57-9850d718e47c
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,10 +10,10 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6941'
-ht-degree: 59%
+source-wordcount: '6929'
+ht-degree: 56%
 
 ---
 
@@ -48,7 +48,7 @@ Les utilisateurs ajoutés au groupe forms-power-users peuvent créer de nouveaux
 
 Une règle est une combinaison d’actions et de conditions. Dans l’éditeur de règles, les actions incluent des activités telles que masquer, afficher, activer, désactiver ou calculer la valeur d’un objet dans un formulaire. Les conditions sont des expressions booléennes qui sont évaluées en effectuant des vérifications et des opérations sur l’état, la valeur ou la propriété d’un objet de formulaire. Les actions sont exécutées en fonction de la valeur (`True` ou `False`) renvoyée par l’évaluation d’une condition.
 
-L’éditeur de règles fournit un ensemble de types de règle prédéfinis, tels que Lorsque, Afficher, Masquer, Activer, Désactiver, Définir la valeur de et Valider pour vous aider à créer des règles. Chaque type de règle vous permet de définir des conditions et des actions dans une règle. Le document décrit de façon plus détaillée chaque type de règle.
+L’éditeur de règles fournit un ensemble de types de règle prédéfinis, tels que Lorsque, Afficher, Masquer, Activer, Désactiver, Définir la valeur de et Valider pour vous aider à créer des règles. Chaque type de règle permet de définir des conditions et des actions dans une règle. Le document décrit de façon plus détaillée chaque type de règle.
 
 Une règle suit généralement l’un des concepts suivants :
 
@@ -70,13 +70,13 @@ Pour plus d’informations sur les types de règle disponibles dans l’éditeur
 
 Même si vous pouvez obtenir la plupart des cas d’utilisation avec n’importe quel concept de règle, voici quelques recommandations pour sélectionner un concept plutôt qu’un autre. Pour plus d’informations sur les règles disponibles dans l’éditeur de règles, reportez-vous à la section [Types de règles disponibles dans l’éditeur de règles](#available-rule-types-in-rule-editor).
 
-* Lors de la création d’une règle, une règle de base consiste à y réfléchir dans le contexte de l’objet sur lequel vous créez une règle. Supposons que vous souhaitiez masquer ou afficher le champ B en fonction de la valeur qu’un utilisateur indique dans le champ A. Dans ce cas, vous évaluez une condition sur le champ A. Selon la valeur qu’il renvoie, vous déclenchez une action sur le champ B.
+* Lors de la création d’une règle, une règle de base consiste à y réfléchir dans le contexte de l’objet sur lequel vous créez une règle. Supposons que vous souhaitiez masquer ou afficher le champ B en fonction de la valeur spécifiée par un utilisateur dans le champ A. Dans ce cas, vous évaluez une condition sur le champ A, et selon la valeur qu’elle renvoie, vous déclenchez une action sur le champ B.
 
   Par conséquent, si vous créez une règle pour le champ B (l’objet pour lequel vous évaluez une condition), utilisez le concept de condition-action ou le type de règle Lorsque. De même, utilisez le concept de condition d’action ou le type de règle Afficher ou Masquer sur le champ A.
 
 * Parfois, vous devez effectuer plusieurs actions en fonction d’une condition. Dans ce cas, il est recommandé d’utiliser le concept condition-action . Dans ce concept, vous pouvez évaluer une condition une fois et spécifier plusieurs instructions d’action.
 
-  Par exemple, pour masquer les champs B, C et D selon la condition qui recherche la valeur spécifiée par un utilisateur dans le champ A, écrivez une règle avec le concept de condition-action ou le type de règle Lorsque sur le champ A et spécifiez les actions pour contrôler la visibilité des champs B, C et D. Dans le cas contraire, vous avez besoin de trois règles distinctes sur les champs B, C et D, où chaque règle vérifie la condition et affiche ou masque le champ correspondant. Dans cet exemple, il est plus efficace d’écrire le type de règle Lorsque sur un objet plutôt que le type de règle Afficher ou Masquer sur trois objets.
+  Par exemple, pour masquer les champs B, C et D en fonction de la condition qui recherche la valeur spécifiée par un utilisateur dans le champ A, écrivez une règle avec le concept de condition-action ou le type de règle Lorsque dans le champ A et spécifiez les actions pour contrôler la visibilité des champs B, C et D. Dans le cas contraire, vous avez besoin de trois règles distinctes sur les champs B, C et D, où chaque règle vérifie la condition et affiche ou masque le champ correspondant. Dans cet exemple, il est plus efficace d’écrire le type de règle Lorsque sur un objet plutôt que le type de règle Afficher ou Masquer sur trois objets.
 
 * Pour déclencher une action basée sur plusieurs conditions, il est recommandé d’utiliser le concept action-condition . Par exemple, pour afficher et masquer le champ A en évaluant les conditions des champs B, C et D, utilisez le type de règle Afficher ou Masquer sur le champ A.
 * Utilisez le concept de condition-action ou de condition d’action si la règle contient une action pour une condition.
@@ -129,7 +129,7 @@ Par exemple, une liste comporte quatre options : Rouge, Bleu, Vert et Jaune. Lor
 
 ![multivaluefcdisplaysoptions](assets/multivaluefcdisplaysoptions.png)
 
-Lorsque vous créez une règle Lorsque, vous pouvez déclencher l’action Effacer la valeur de. L’action Effacer la valeur d’efface la valeur de l’objet spécifié. L’option Effacer la valeur de dans l’instruction Lorsque permet de créer des conditions complexes comportant plusieurs champs.
+Lorsque vous créez une règle Lorsque, vous pouvez déclencher l’action Effacer la valeur de. L’action Effacer la valeur d’efface la valeur de l’objet spécifié. L’option Effacer la valeur de comme dans l’instruction Lorsque vous permet de créer des conditions complexes avec plusieurs champs.
 
 ![clearvalueof](assets/clearvalueof.png)
 
@@ -151,7 +151,7 @@ Pour plus d’informations à propos de la configuration des services dans le mo
 
 Pour plus d’informations à propos de la configuration des services dans le modèle de données de formulaire, voir [Intégration des données AEM Forms](/help/forms/using/data-integration.md).
 
-Le type de règle **Définir la propriété** permet de définir la valeur d’une propriété de l’objet spécifié en fonction d’une action de condition.
+La variable **Définir la propriété** type de règle permet de définir la valeur d’une propriété de l’objet spécifié en fonction d’une action de condition.
 
 Il permet de définir des règles pour ajouter de façon dynamique des cases à cocher au formulaire adaptatif. Pour définir une règle, vous pouvez utiliser une fonction personnalisée, un objet de formulaire ou une propriété d’objet.
 
@@ -161,7 +161,7 @@ Pour définir une règle basée sur une fonction personnalisée, sélectionnez *
 
 Pour définir une règle basée sur un objet de formulaire, sélectionnez **Objet de formulaire** dans la liste déroulante, puis faites glisser et déposez un objet de formulaire à partir de l’onglet **Objets de formulaire**. Si l’action de condition est remplie, le nombre de cases à cocher définies dans l’objet de formulaire est ajouté au formulaire adaptatif.
 
-Une règle Définir la propriété basée sur une propriété d’objet permet d’ajouter le nombre de cases à cocher dans un formulaire adaptatif en fonction d’une autre propriété d’objet incluse dans le formulaire adaptatif.
+Une règle Définir la propriété basée sur une propriété d’objet vous permet d’ajouter le nombre de cases à cocher dans un formulaire adaptatif en fonction d’une autre propriété d’objet incluse dans le formulaire adaptatif.
 
 La figure ci-dessous présente un exemple d’ajout dynamique de cases à cocher en fonction du nombre de listes déroulantes dans le formulaire adaptatif :
 
@@ -187,7 +187,7 @@ La figure ci-dessous présente un exemple d’ajout dynamique de cases à cocher
 
 ### Définir la valeur de {#set-value-of}
 
-Le type de règle **[!UICONTROL Définir la valeur de]** permet de définir la valeur d’un objet de formulaire selon que la condition spécifiée est remplie ou non. La valeur peut être définie sur la valeur d’un autre objet, d’une chaîne littérale, la valeur dérivée d’une expression ou d’une fonction mathématique, la valeur d’une propriété d’un autre objet ou la sortie d’un service de modèle de données de formulaire. De même, vous pouvez vérifier la condition d’un composant, d’une chaîne, d’une propriété ou les valeurs dérivées d’une fonction ou d’une expression mathématique.
+La variable **[!UICONTROL Définir la valeur de]** type de règle permet de définir la valeur d’un objet de formulaire selon que la condition spécifiée est remplie ou non. La valeur peut être définie sur la valeur d’un autre objet, d’une chaîne littérale, la valeur dérivée d’une expression ou d’une fonction mathématique, la valeur d’une propriété d’un autre objet ou la sortie d’un service de modèle de données de formulaire. De même, vous pouvez vérifier la condition d’un composant, d’une chaîne, d’une propriété ou les valeurs dérivées d’une fonction ou d’une expression mathématique.
 
 Notez que le type de règle Définir la valeur de n’est pas disponible pour tous les objets de formulaire, tels que les panneaux et les boutons de la barre d’outils. Une règle Définir la valeur de standard possède la structure suivante :
 
@@ -279,7 +279,7 @@ Une règle Activer standard est structurée comme suit :
 
 ### Désactiver {#disable}
 
-De la même manière que le type de règle Activer, le type de règle **Désactiver** permet d’activer ou de désactiver un objet de formulaire selon qu’une condition est remplie ou non. Le type de règle Désactiver déclenche également l’action Activer au cas où la condition ne serait pas remplie ou renverrait `False`.
+Comme pour le type de règle Activer , la variable **Désactiver** type de règle permet d’activer ou de désactiver un objet de formulaire selon qu’une condition est remplie ou non. Le type de règle Désactiver déclenche également l’action Activer au cas où la condition ne serait pas remplie ou renverrait `False`.
 
 Une règle Désactiver standard est structurée comme suit :
 
@@ -297,7 +297,7 @@ Une règle Désactiver standard est structurée comme suit :
 
 ### Valider {#validate}
 
-Le type de règle **Valider** valide la valeur d’un champ à l’aide d’une expression. Par exemple, vous pouvez créer une expression pour vérifier que la zone de texte permettant de spécifier le nom ne contient pas de caractères spéciaux ni de nombres.
+Le type de règle **Valider** valide la valeur d’un champ à l’aide d’une expression. Par exemple, vous pouvez créer une expression pour vérifier que la zone de texte permettant de spécifier le nom ne contient ni caractères spéciaux ni nombres.
 
 Une règle Valider standard est structurée comme suit :
 
@@ -359,7 +359,7 @@ Affiche le titre de l’objet de formulaire adaptatif par lequel vous avez lanc�
 
 Le volet situé à gauche de l’interface utilisateur de l’éditeur de règles comporte deux onglets: **[!UICONTROL Objets de formulaire]** et **[!UICONTROL Fonctions]**.
 
-L’onglet Objets de formulaire affiche une vue hiérarchique de tous les objets contenus dans le formulaire adaptatif. Il affiche le titre et le type des objets. Lors de la création d’une règle, vous pouvez faire glisser-déposer les objets de formulaire dans l’éditeur de règles. Lorsque vous créez ou modifiez une règle en faisant glisser et en déposant un objet ou une fonction dans un espace réservé, cet espace prend automatiquement le type de valeur approprié.
+L’onglet Objets de formulaire affiche une vue hiérarchique de tous les objets qu’il contient. Il affiche le titre et le type des objets. Lors de la création d’une règle, vous pouvez faire glisser-déposer les objets de formulaire dans l’éditeur de règles. Lorsque vous créez ou modifiez une règle en faisant glisser et en déposant un objet ou une fonction dans un espace réservé, cet espace prend automatiquement le type de valeur approprié.
 
 Les objets de formulaire contenant une ou plusieurs règles valides appliquées sont désignés par un point vert. Si l’une des règles appliquées à un objet de formulaire n’est pas valide, l’objet de formulaire est marqué d’un point jaune.
 
@@ -399,7 +399,7 @@ AEM Forms effectue le suivi du mode d’éditeur de règles que vous avez utilis
 
 Le bouton **[!UICONTROL Terminé]** permet d’enregistrer une règle. Vous pouvez enregistrer une règle incomplète. Toutefois, les variables incomplètes ne sont pas valides et ne s’exécutent pas. Les règles enregistrées sur un objet de formulaire sont répertoriées lorsque vous lancez l’éditeur de règles la prochaine fois à partir du même objet de formulaire. Vous pouvez gérer des règles existantes dans cette vue. Pour plus d’informations, voir [Gestion des règles](#manage-rules).
 
-Le **[!UICONTROL Annuler]** ignore les modifications apportées à une règle et ferme l’éditeur de règles.
+La variable **[!UICONTROL Annuler]** ignore les modifications apportées à une règle et ferme l’éditeur de règles.
 
 ## Règles d’écriture {#write-rules}
 
@@ -542,7 +542,7 @@ Pour plus d’informations sur les instructions pour la création de règles dan
 
 Lors de l’écriture de code JavaScript dans l’éditeur de règles, les repères visuels suivants vous aident à comprendre la structure et la syntaxe :
 
-* Mise en surbrillance de la syntaxe
+* Mise en évidence de la syntaxe
 * Retrait automatique
 * Conseils et suggestions pour les objets de formulaire, les fonctions et leurs propriétés
 * Remplissage automatique des noms de composants de formulaire et des fonctions JavaScript courantes
@@ -589,7 +589,7 @@ Affiche les paramètres utilisés par la fonction. Une fonction peut comporter p
 
   La portée est utilisée pour les champs référents d’un formulaire adaptatif. Lorsqu’un formulaire utilise le chargement différé, vous pouvez utiliser `scope` pour accéder à ses champs. Vous pouvez accéder aux champs lorsque les champs sont chargés ou si les champs sont marqués comme généraux.
 
-  Tous les autres types de paramètre sont classés en dessous de l’un des précédents. Aucun n’est pas pris en charge. Veillez à sélectionner l’un des types ci-dessus. Les types ne sont pas sensibles à la casse. Les espaces ne sont pas autorisés dans le paramètre `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
+  Tous les autres types de paramètre sont classés en dessous de l’un des précédents. Aucun n’est pas pris en charge. Veillez à sélectionner l’un des types ci-dessus. Les types ne respectent pas la casse. Les espaces ne sont pas autorisés dans le paramètre `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
 * **Type de retour**
 Syntaxe : `@return {type}`
@@ -633,7 +633,7 @@ Syntaxe : `@this currentComponent`
 
 Par exemple, vous souhaitez ajouter une fonction personnalisée qui calcule la surface d’un carré. La longueur du côté est la saisie de l’utilisateur à la fonction personnalisée, qui est acceptée à l’aide d’une zone numérique dans votre formulaire. La sortie calculée s’affiche dans une autre zone numérique de votre formulaire. Pour ajouter une fonction personnalisée, vous devez d’abord créer une bibliothèque cliente, puis l’ajouter au référentiel CRX.
 
-Effectuez les étapes suivantes pour créer une bibliothèque cliente et l’ajouter dans le référentiel CRX.
+Pour créer une bibliothèque cliente et l’ajouter au référentiel CRX, procédez comme suit.
 
 1. Créez une bibliothèque cliente. Pour plus d’informations, voir [Utilisation des bibliothèques côté client](/help/sites-developing/clientlibs.md).
 1. Dans CRXDE, ajoutez une propriété `categories`catégories possédant une valeur de type chaîne telle que `customfunction` au dossier `clientlib`.
@@ -699,7 +699,7 @@ var x1,
     x2 =5, x3 =true;
 ```
 
-Limitation : la fonction personnalisée sélectionne uniquement la première déclaration de fonction de la liste de variables, si elle est associée. Vous pouvez utiliser l’expression de fonction pour chaque fonction déclarée.
+Limitation : la fonction personnalisée sélectionne uniquement la première déclaration de fonction de la liste des variables, si elle est associée. Vous pouvez utiliser l’expression de fonction pour chaque fonction déclarée.
 
 **Déclaration de fonction en tant qu’objet**
 
@@ -720,7 +720,7 @@ var c = {
 
 ## Gestion des règles {#manage-rules}
 
-Les règles existantes sur un objet de formulaire sont répertoriées lorsque vous appuyez sur l’objet et sur ![edit-rules1](assets/edit-rules1.png). Vous pouvez afficher le titre et un aperçu du résumé de la règle. En outre, l’interface utilisateur vous permet de développer et d’afficher le résumé complet des règles, de modifier l’ordre des règles, de modifier les règles et de supprimer des règles.
+Les règles existantes sur un objet de formulaire sont répertoriées lorsque vous appuyez sur l’objet et sur ![edit-rules1](assets/edit-rules1.png). Vous pouvez afficher le titre et un aperçu du résumé de la règle. De plus, l’interface utilisateur vous permet de développer et d’afficher le résumé complet des règles, de modifier l’ordre des règles, de modifier les règles et de supprimer des règles.
 
 ![list-rules](assets/list-rules.png)
 
@@ -735,7 +735,7 @@ Vous pouvez modifier l’ordre d’une règle en appuyant sur ![sort-rules](asse
 
 * **Supprimer** : pour supprimer une règle, sélectionnez-la et appuyez sur **Supprimer**.
 
-* **Activer/Désactiver**: Vous devrez peut-être suspendre temporairement l’utilisation d’une règle. Vous pouvez sélectionner une ou plusieurs règles, puis appuyer sur Désactiver dans la barre d’outils Actions pour les désactiver. Si une règle est désactivée, elle ne s’exécute pas lors de l’exécution. Pour activer une règle désactivée, vous pouvez la sélectionner et appuyer sur Activer dans la barre d’outils des actions. La colonne d’état de la règle s’affiche si la règle est activée ou désactivée.
+* **Activer/Désactiver**: vous devrez peut-être suspendre temporairement l’utilisation d’une règle. Vous pouvez sélectionner une ou plusieurs règles, puis appuyer sur Désactiver dans la barre d’outils Actions pour les désactiver. Si une règle est désactivée, elle ne s’exécute pas lors de l’exécution. Pour activer une règle désactivée, vous pouvez la sélectionner et appuyer sur Activer dans la barre d’outils des actions. La colonne d’état de la règle s’affiche si la règle est activée ou désactivée.
 
 ![disablerule](assets/disablerule.png)
 
@@ -777,11 +777,11 @@ Vous pouvez également faire glisser et déposer des conditions dans une règle 
 
 ## Conditions d’expression de date {#dateexpression}
 
-L’éditeur de règles permet d’utiliser des comparaisons de dates afin de créer des conditions.
+L’éditeur de règles vous permet d’utiliser des comparaisons de dates pour créer des conditions.
 
 Voici un exemple de condition qui contient un objet de texte statique si le prêt hypothécaire sur la maison est déjà utilisé, ce que l’utilisateur indique en remplissant le champ de date.
 
-Lorsque la date du prêt immobilier tel que renseigné par l’utilisateur figure dans le passé, le formulaire adaptatif affiche une note sur le calcul des revenus. La règle ci-dessous compare la date indiquée par l’utilisateur à la date actuelle et si la date indiquée par l’utilisateur est antérieure à la date actuelle, le formulaire affiche le message texte (appelé « Revenu »).
+Lorsque la date du prêt immobilier tel que renseigné par l’utilisateur se trouve dans le passé, le formulaire adaptatif affiche une note sur le calcul des revenus. La règle ci-dessous compare la date indiquée par l’utilisateur à la date actuelle et si la date indiquée par l’utilisateur est antérieure à la date actuelle, le formulaire affiche le message texte (appelé « Revenu »).
 
 ![dateexpressioncondition](assets/dateexpressioncondition.png)
 
@@ -791,7 +791,7 @@ Lorsque la date remplie est antérieure à la date actuelle, le formulaire affic
 
 ## Conditions de comparaison des nombres {#number-comparison-conditions}
 
-L’éditeur de règles permet de créer des conditions qui comparent deux nombres.
+L’éditeur de règles vous permet de créer des conditions qui comparent deux nombres.
 
 Voici un exemple de condition qui contient un objet de texte statique si le demandeur habite à son adresse actuelle depuis moins de 36 mois.
 

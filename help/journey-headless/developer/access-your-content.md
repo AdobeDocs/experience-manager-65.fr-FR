@@ -2,10 +2,10 @@
 title: Accès à votre contenu grâce aux API de diffusion AEM
 description: Dans cette partie du parcours de développement découplé AEM, découvrez comment utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu.
 exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1335'
-ht-degree: 100%
+source-wordcount: '1333'
+ht-degree: 97%
 
 ---
 
@@ -79,7 +79,7 @@ GraphQL is used in various locations in AEM; for example:
 
 ## API AEM GraphQL {#aem-graphql-api}
 
-L’API AEM GraphQL est une version personnalisée de la spécification standard de l’API GraphQL, spécialement configurée pour vous permettre d’exécuter des requêtes (complexes) sur vos fragments de contenu.
+L’API GraphQL d’AEM est une version personnalisée basée sur la spécification de l’API GraphQL standard, spécialement configurée pour vous permettre d’exécuter des requêtes (complexes) sur vos fragments de contenu.
 
 Les fragments de contenu sont utilisés, car le contenu est structuré selon des modèles de ce type de fragment. Elle répond ainsi à une des exigences de base de GraphQL.
 
@@ -133,7 +133,7 @@ La **référence à un fragment** :
 
 * est un type de données spécifique disponible lors de la définition d’un modèle de fragment de contenu ;
 * fait référence à un autre fragment, en fonction d’un modèle de fragment de contenu spécifique ;
-* permet de créer, puis de récupérer, des données structurées.
+* Permet de créer, puis de récupérer, des données structurées.
 
    * Lorsqu’elle est définie comme **référence à sources multiples**, plusieurs sous-fragments peuvent être référencés (récupérés) par le fragment principal.
 

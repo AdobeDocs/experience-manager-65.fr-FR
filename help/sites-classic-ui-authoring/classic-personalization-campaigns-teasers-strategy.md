@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1195'
 ht-degree: 21%
 
 ---
@@ -27,16 +27,16 @@ Les campagnes utilisent souvent les teasers comme mécanisme pour inciter un seg
 
 Les teasers dans AEM sont composés de plusieurs parties :
 
-* Les **pages de teaser** sont stockées dans une page de campagne appropriée et présentent les définitions des paragraphes de teaser disponibles pour chaque campagne spécifique. Ces définitions sont utilisées lors de l’affichage des paragraphes de teaser. y compris les variations de contenu, le segment à utiliser pour sélectionner une variation et augmenter le facteur.
-* Le **Composant Teaser** est disponible prêt à l’emploi et vous permet de créer une instance de votre paragraphe de teaser spécifique dans une page de contenu. Vous pouvez faire glisser le composant de teaser à partir du sidekick, puis spécifier votre définition de teaser pour créer votre propre paragraphe de teaser. **Remarque :** Le composant Teaser est désormais obsolète dans AEM 6.2. Utilisez plutôt la variable [Composant cible](/help/sites-authoring/content-targeting-touch.md).
+* Les **pages de teaser** sont stockées dans une page de campagne appropriée et présentent les définitions des paragraphes de teaser disponibles pour chaque campagne spécifique. Ces définitions sont utilisées lors de l’affichage des paragraphes de teaser ; notamment les variations de contenu, le segment à utiliser pour sélectionner une variation et un facteur d’amplification.
+* La variable **Composant Teaser** est disponible prêt à l’emploi et vous permet de créer une instance de votre paragraphe de teaser spécifique dans une page de contenu. Vous pouvez faire glisser le composant de teaser à partir du sidekick, puis spécifier votre définition de teaser pour créer votre propre paragraphe de teaser. **Remarque :** Le composant Teaser est désormais obsolète dans AEM 6.2. Utilisez plutôt la variable [Composant cible](/help/sites-authoring/content-targeting-touch.md).
 * **Paragraphes de teaser** sont des instances réelles de votre teaser dans une page de contenu. Elles incitent un segment de visiteurs à consulter du contenu axé sur leurs intérêts.
 * Les pages qui contiennent le contenu de la campagne sont axées sur un segment de visiteurs spécifique. En règle générale, les paragraphes de teaser conduisent le visiteur vers de telles pages.
 
 ## Stratégies {#strategies}
 
-Lors de l’ajout d’un paragraphe de teaser à une page, vous devez définir la variable **Stratégie**.
+Lorsque vous ajoutez un paragraphe de teaser à une page, vous devez définir la variable **Stratégie**.
 
-C’est le cas de plusieurs teasers disponibles pour sélection, car leurs segments attribués sont tous résolus avec succès. Le **Stratégie** spécifie ensuite un critère supplémentaire utilisé pour sélectionner le teaser affiché :
+C’est le cas de plusieurs teasers disponibles pour sélection, car leurs segments attribués sont tous résolus avec succès. La variable **Stratégie** spécifie ensuite un critère supplémentaire utilisé pour sélectionner le teaser affiché :
 
 * **Score Clickstream**, est basé sur les balises et les accès aux balises associés conservés dans le contexte client du visiteur (indique la fréquence à laquelle un visiteur a cliqué sur des pages qui contiennent la balise correspondante). Les taux de fréquence d’accès aux balises définis sur la page du teaser sont comparés.
 * **Aléatoire**, pour la sélection « aléatoire » ; emploie le facteur aléatoire généré pour une page. Celui-ci est visible dans le [contexte client](/help/sites-administering/client-context.md).
@@ -189,7 +189,7 @@ qui sont calculés avant d’appliquer la stratégie appropriée :
  </tbody>
 </table>
 
-Ces valeurs sont utilisées pour déterminer les teasers que le visiteur verra, en fonction des **Stratégie** appliqué au paragraphe de teaser :
+Ces valeurs sont utilisées pour déterminer les teasers que le visiteur verra, en fonction de la variable **Stratégie** appliqué au paragraphe de teaser :
 
 <table>
  <tbody>
@@ -239,7 +239,7 @@ Après avoir créé votre marque et votre campagne, vous pouvez créer et config
 
    ![chlimage_1](assets/chlimage_1.png)
 
-1. Modifiez le composant de teaser pour ajouter les éléments suivants :
+1. Modifiez le composant de teaser pour ajouter :
 
    * **Chemin de la campagne**
 Chemin d’accès à la page de campagne qui contient la page de teaser individuelle ; les segments déterminent exactement le teaser affiché.
@@ -261,7 +261,7 @@ Méthode utilisée pour la sélection lorsque plusieurs segments sont résolus a
 
 Outre la vue de campagne dans le MCM, la page de campagne fournit également des informations sur les teasers qui y sont connectés :
 
-1. Dans la **Sites web** , ouvrez la page de l&#39;opération ; par exemple :
+1. Dans la **Sites web** , ouvrez la page de campagne, par exemple :
 
    `https://localhost:4502/content/campaigns/geometrixx-outdoors/storefront/summer.html`
 

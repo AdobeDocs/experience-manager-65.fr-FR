@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3502'
-ht-degree: 46%
+source-wordcount: '3501'
+ht-degree: 45%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 46%
 
 Cette section décrit la configuration et, si vous le souhaitez, l’extension de l’importateur de conception pour les pages de destination. L’utilisation de pages d’entrée après l’importation est traitée dans [Pages d’entrée.](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 
-**Faire en sorte que l’importateur de conception extraie votre composant personnalisé**
+**Pour que l’importateur de conception extraie votre composant personnalisé**
 
 Voici les étapes logiques pour que l’importateur de conception reconnaisse votre composant personnalisé.
 
 1. Création d’un gestionnaire de balises
 
-   * Un gestionnaire de balises est un POJO (Plain Old Java Object) qui traite les balises HTML d’un type spécifique. Le &quot;type&quot; des balises de HTML que votre TagHandler peut gérer est défini via la propriété OSGi de TagHandlerFactory &quot;tagpattern.name&quot;. Cette propriété OSGi est en réalité une expression régulière (regex) qui doit correspondre à la balise HTML en entrée que vous souhaitez traiter. Toutes les balises imbriquées sont envoyées pour traitement à votre gestionnaire de balises. Par exemple, si vous enregistrez une balise div contenant une balise imbriquée &lt;p> , la balise &lt;p> est également envoyée à votre gestionnaire de balises. C’est à vous de décider comment vous souhaitez vous en charger.
+   * Un gestionnaire de balises est un POJO (Plain Old Java Object) qui traite les balises HTML d’un type spécifique. Le &quot;type&quot; des balises de HTML que votre TagHandler peut gérer est défini via la propriété OSGi de TagHandlerFactory &quot;tagpattern.name&quot;. Cette propriété OSGi est en réalité une expression régulière (regex) qui doit correspondre à la balise HTML en entrée que vous souhaitez traiter. Toutes les balises imbriquées sont envoyées pour traitement à votre gestionnaire de balises. Par exemple, si vous enregistrez une balise div contenant une balise imbriquée &lt;p> , &lt;p> est également envoyée à votre gestionnaire de balises. C’est à vous de décider comment vous souhaitez vous en charger.
    * L’interface du gestionnaire de balises est semblable à une interface de gestion de contenu SAX. Elle reçoit des événements SAX pour chaque balise HTML. En tant que fournisseur de gestionnaire de balises, vous devez mettre en oeuvre certaines méthodes de cycle de vie qui sont automatiquement appelées par la structure de l’importateur de conception.
 
 1. Créez le composant TagHandlerFactory correspondant.
@@ -42,7 +42,7 @@ Voici les étapes logiques pour que l’importateur de conception reconnaisse vo
 
 ## Préparation du HTML pour l’importation {#preparing-the-html-for-import}
 
-Après avoir créé une page d’importation, vous pouvez importer votre page de destination HTML dans son intégralité. Pour importer votre page de destination HTML, vous devez d’abord compresser son contenu dans un module de conception. Le module de conception contient votre page d’entrée de HTML avec les ressources référencées (images, css, icônes, scripts, etc.).
+Après avoir créé une page d’importation, vous pouvez importer votre page de destination HTML dans son intégralité. Pour importer votre page de destination HTML, vous devez d’abord compresser son contenu dans un module de conception. Le module de conception contient votre landing page de HTML avec les ressources référencées (images, css, icônes, scripts, etc.).
 
 La feuille de calcul suivante fournit un exemple de préparation de votre HTML pour l’importation :
 
@@ -50,7 +50,7 @@ Aide-mémoire pour la page d’entrée
 
 [Obtenir le fichier](assets/cheatsheet.zip)
 
-### Disposition et exigences du fichier Zip {#zip-file-layout-and-requirements}
+### Mise en page et exigences du fichier Zip {#zip-file-layout-and-requirements}
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ La disposition s’appuie sur les bonnes pratiques HTML5 Boilerplate. Pour en s
 
 >[!NOTE]
 >
->Le package de conception **doit** contenir, au minimum, un fichier **index.html** au niveau racine. Si la landing page à importer comporte également une version mobile, le fichier zip doit contenir un **mobile.index.html** avec **index.html** au niveau racine.
+>Le package de conception **doit** contenir, au minimum, un fichier **index.html** au niveau racine. Si la landing page à importer comporte également une version mobile, le fichier zip doit contenir une balise **mobile.index.html** avec **index.html** au niveau racine.
 
 ### Préparation du HTML de page d’entrée {#preparing-the-landing-page-html}
 
@@ -97,7 +97,7 @@ Voici un exemple de fragment de HTML de page d’entrée après l’ajout de la 
 
 Lorsque vous importez une page d’entrée, vous avez la possibilité d’importer la page telle quelle, ce qui signifie qu’une fois la page d’entrée importée, vous ne pouvez plus modifier aucun des éléments importés dans AEM (vous pouvez toujours ajouter des composants AEM supplémentaires sur la page).
 
-Avant d’importer la page de destination, vous pouvez en convertir certaines parties pour en faire des composants AEM modifiables. Cela vous permettra de modifier rapidement des parties de la page de destination, même après en avoir importé la conception.
+Avant d’importer la page de destination, vous pouvez en convertir certaines parties pour en faire des composants AEM modifiables. Vous pouvez ainsi modifier rapidement des parties de la landing page, même après l&#39;import de la conception de la landing page.
 
 Pour ce faire, ajoutez `data-cq-component` au composant approprié dans le fichier HTML importé.
 
@@ -117,7 +117,7 @@ Si un attribut d’id ou de classe est appliqué à la balise &lt;body>, par exe
 
 ### Transfert de fichiers ZIP par glisser-déposer {#drag-and-drop-zip}
 
-Le chargement de fichiers ZIP par glisser-déposer n’est pas pris en charge par les versions 3.6 et inférieures d’Internet Explorer et Firefox. Pour charger une conception lors de l’utilisation de ces navigateurs, cliquez sur la zone de dépôt pour ouvrir une boîte de dialogue de téléchargement de fichier et chargez votre conception à l’aide de cette boîte de dialogue.
+Le chargement de fichiers ZIP par glisser-déposer n’est pas pris en charge par les versions 3.6 et inférieures d’Internet Explorer et Firefox. Pour charger une conception lorsque vous utilisez ces navigateurs, cliquez sur la zone de dépôt pour ouvrir une boîte de dialogue de téléchargement de fichier et chargez votre conception à l’aide de cette boîte de dialogue.
 
 Les navigateurs qui prennent en charge le &quot;glisser-déposer&quot; du fichier compressé de conception sont Chrome, Safari 5.x, Firefox 4 et versions ultérieures.
 
@@ -458,7 +458,7 @@ L’utilisation de sélecteurs CSS similaires aux suivants n’est pas recommand
 |---|---|---|
 | E + F | un élément F qui est le fils d’un élément E | [Combinateur frère adjacent](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
 | E ~ F | un élément F précédé d’un élément E ; | [Combinateur frère général](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
-| E:root | un élément E, racine du document ; | [Pseudo-classes structurelles](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:root | un élément E, racine du document | [Pseudo-classes structurelles](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-child(n) | un élément E, le n-ième enfant de son parent ; | [Pseudo-classes structurelles](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-last-child(n) | un élément E, le n-ième enfant de son parent, en comptant à partir du dernier | [Pseudo-classes structurelles](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-of-type(n) | un élément E, le n-ième frère de son type | [Pseudo-classes structurelles](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
@@ -563,7 +563,7 @@ Une fois la page d’entrée importée, les fichiers (images, css, js, etc.) du 
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
-Supposons que la page d’entrée soit créée sous la campagne We.Retail et que le nom de la page d’entrée soit **myBlankLandingPage** alors l’emplacement où les fichiers zip sont stockés est le suivant :
+Supposons que la landing page soit créée sous la campagne We.Retail et que le nom de la landing page soit **myBlankLandingPage** alors l’emplacement où les fichiers zip sont stockés est le suivant :
 
 `/etc/designs/default/canvas/content/campaigns/geometrixx/myBlankLandingPage`
 

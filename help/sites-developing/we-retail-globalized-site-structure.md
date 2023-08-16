@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '413'
 ht-degree: 27%
 
 ---
@@ -20,7 +20,7 @@ We.Retail a été créé avec une structure de site globalisée offrant un gabar
 ## Essayer de le faire {#trying-it-out}
 
 1. Ouvrez la console Sites à partir de **Navigation globale -> Sites**.
-1. Passez en mode Colonnes (s’il n’est pas déjà principal) et sélectionnez We.Retail. Notez l’exemple de structure par pays avec la Suisse, les Etats-Unis, la France, etc., à côté du Principal Langue.
+1. Passez en mode Colonnes (s’il n’est pas déjà actif) et sélectionnez We.Retail. Notez l’exemple de structure par pays avec la Suisse, les Etats-Unis, la France, etc., à côté du Principal Langue.
 
    ![chlimage_1-87](assets/chlimage_1-87a.png)
 
@@ -34,7 +34,7 @@ We.Retail a été créé avec une structure de site globalisée offrant un gabar
 
 1. Revenez au mode Colonnes, cliquez sur le Principal Langue et affichez les racines du gabarit de langue avec le contenu. Seul l&#39;anglais a du contenu.
 
-   We.Retail ne contient aucun contenu traduit, mais la structure et la configuration sont en place pour vous permettre de démontrer les services de traduction.
+   We.Retail n’est fourni avec aucun contenu traduit, mais la structure et la configuration sont en place pour vous permettre de démontrer les services de traduction.
 
    ![chlimage_1-90](assets/chlimage_1-90a.png)
 
@@ -50,7 +50,7 @@ We.Retail a été créé avec une structure de site globalisée offrant un gabar
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
-1. Cliquez sur Allemand pour afficher les détails du projet de traduction. L’état est dans **Version préliminaire**. Pour commencer la traduction avec le service de traduction de Microsoft®, cliquez sur le chevron en regard de l’option **Tâche de traduction** titre et sélectionner **Début**.
+1. Cliquez sur Allemand pour afficher les détails du projet de traduction. L’état se trouve dans **Version préliminaire**. Pour commencer la traduction avec le service de traduction de Microsoft®, cliquez sur le chevron en regard de l’option **Tâche de traduction** titre et sélectionner **Début**.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 

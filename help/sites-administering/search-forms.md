@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2068'
-ht-degree: 90%
+source-wordcount: '2067'
+ht-degree: 89%
 
 ---
 
@@ -20,7 +20,7 @@ Utilisez des **formulaires de recherche** pour personnaliser la sélection des p
 
 Une [plage de prédicats](#predicates-and-their-settings) prête à l’emploi est disponible. Vous pouvez ajouter plusieurs prédicats, dont (entre autres) le prédicat Propriété pour rechercher des ressources correspondant à une propriété unique que vous avez spécifiée ou le prédicat Options pour rechercher des ressources correspondant à une ou plusieurs valeurs que vous spécifiez pour une propriété donnée.
 
-Vous pouvez [configurer les formulaires de recherche](#configuring-your-search-forms) utilisés dans différentes consoles et l’explorateur des ressources (lors de la modification des pages). Le [boîtes de dialogue de configuration de ces formulaires](#configuring-your-search-forms) est accessible via :
+Vous pouvez [configurer les formulaires de recherche](#configuring-your-search-forms) utilisés dans différentes consoles et l’explorateur des ressources (lors de la modification des pages). La variable [boîtes de dialogue de configuration de ces formulaires](#configuring-your-search-forms) est accessible à partir de :
 
 * **Outils**
 
@@ -451,7 +451,7 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 ### Suppression d’un champ de prédicat {#deleting-a-predicate-field}
 
 1. [Ouvrir la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
-1. Sélectionnez le champ de prédicat (à droite), ouvrez le **Paramètres** , puis sélectionnez la variable **Supprimer** (en bas à gauche).
+1. Sélectionnez le champ de prédicat (à droite), ouvrez le **Paramètres** , puis sélectionnez l’option **Supprimer** (en bas à gauche).
 
    ![Icône Supprimer](do-not-localize/chlimage_1-32.png)
 
@@ -477,7 +477,7 @@ Les configurations personnalisées doivent être supprimées à partir de la con
 
 ### Ajout de prédicats d’options {#adding-options-predicates}
 
-Les prédicats d’options (options, propriété d’options) permettent de configurer un élément à rechercher. Ils servent généralement à rechercher un élément directement sous la page, par exemple, une propriété sur le nœud de page.
+Les prédicats d’options (options, propriété d’options) vous permettent de configurer un élément à rechercher. Ils servent généralement à rechercher un élément directement sous la page, par exemple, une propriété sur le nœud de page.
 
 L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle utilisé pour créer une page) illustre la procédure :
 
@@ -506,7 +506,7 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
 
 1. Ouvrez la console **Formulaires de recherche** et sélectionnez la configuration à mettre à jour. Par exemple, le **rail de recherche d’administration de sites**.
 
-   Ensuite, cliquez/appuyez sur le bouton **Modifier les formulaires de recherche** icône .
+   Ensuite, cliquez/appuyez sur le bouton **Modifier les formulaires de recherche** Icône
 
 1. Selon la configuration, ajoutez une **Options** ou **Propriété Options** à la configuration.
 1. Mettez à jour les champs, notamment :

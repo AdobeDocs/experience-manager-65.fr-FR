@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools
 exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '687'
+ht-degree: 81%
 
 ---
 
@@ -52,7 +52,7 @@ Cet exemple charge cette source JavaScript dans `head.jsp` (`/apps/geometrixx/co
 
 ### Feuilles de style supplémentaires {#additional-style-sheets}
 
-Certains composants [!DNL Assets] utilisent la bibliothèque de widgets. Pour que le rendu soit effectué correctement dans le contexte du contenu, une feuille de style supplémentaire doit être chargée. Le composant d’action de balise nécessite une feuille de style supplémentaire.
+Certains composants [!DNL Assets] utilisent la bibliothèque de widgets. Pour un rendu correct dans le contexte du contenu, une feuille de style supplémentaire doit être chargée. Le composant d’action de balise en requiert une de plus.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
@@ -64,7 +64,7 @@ Les exemples de composants de page nécessitent que tous les sélecteurs commenc
 
 ### FormChooser : réglages pour les ressources chargées par la suite. {#formchooser-adjustments-for-eventually-loaded-resources}
 
-L’Éditeur de ressources utilise le sélecteur de formulaire, qui permet de modifier les ressources sur la même page de formulaire. Pour cela, il suffit d’ajouter un sélecteur de formulaire et le chemin du formulaire vers l’URL de la ressource.
+L’éditeur de ressources utilise le sélecteur de formulaire, qui permet de modifier des ressources (dans ce cas des ressources) sur la même page de formulaire en ajoutant simplement un sélecteur de formulaire et le chemin d’accès du formulaire à l’URL de la ressource.
 
 Par exemple :
 
@@ -208,16 +208,16 @@ Vous pouvez modifier les espaces de noms disponibles [sous forme de métadonnée
 
 Les métadonnées actuellement disponibles sont définies dans`/libs/dam/options/metadata` :
 
-* Le premier niveau à l’intérieur de ce répertoire contient des espaces de noms.
-* Les éléments à l’intérieur de chaque espace de noms représentent une métadonnée, par exemple les résultats dans un élément local.
-* Les métadonnées contiennent des informations sur le type et les options à valeurs multiples.
+* Le premier niveau de ce répertoire contient les espaces de noms.
+* Les éléments à l’intérieur de chaque espace de noms représentent une métadonnée, par exemple les résultats d’un élément de partie locale.
+* Le contenu des métadonnées contient les informations relatives au type et aux options à plusieurs valeurs.
 
 Les options peuvent être remplacées dans`/apps/dam/options/metadata` :
 
 1. Copiez le répertoire de `/libs` vers `/apps`.
 
-1. Supprimez, modifiez ou ajoutez des éléments.
+1. Supprimer, modifier ou ajouter des éléments.
 
 >[!NOTE]
 >
->Si vous ajoutez de nouveaux espaces de noms, ils doivent être enregistrés dans votre référentiel/CRX. Sinon, l’envoi du formulaire de métadonnées provoquera une erreur.
+>Si vous ajoutez de nouveaux espaces de noms, ils doivent être enregistrés dans votre référentiel/CRX. Sinon, l’envoi du formulaire de métadonnées entraînera une erreur.

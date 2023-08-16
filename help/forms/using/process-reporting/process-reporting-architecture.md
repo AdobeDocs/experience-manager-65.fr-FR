@@ -10,10 +10,10 @@ topic-tags: process-reporting
 discoiquuid: a6ff50df-273d-48f7-b0c6-0e69e900b97f
 docset: aem65
 exl-id: 66dfac36-5b7e-40be-9921-efa9f2a9521c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Process Reporting est le module de création de rapports d’AEM Forms on JEE.
 
-Process Reporting vous permet d’exécuter des rapports sur les processus et les tâches AEM Forms.
+Process Reporting permet d’exécuter des rapports sur les processus et tâches AEM Forms.
 
 Process Reporting utilise le référentiel Process Reporting incorporé pour publier les données de Forms. Il utilise ensuite ces données pour exécuter des rapports.
 

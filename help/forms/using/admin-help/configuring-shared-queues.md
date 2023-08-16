@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 5f4467c1-0f3f-4dc6-9bd5-98259f327295
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '640'
 ht-degree: 7%
 
 ---
@@ -19,7 +19,7 @@ Les files d’attente partagées vous permettent de configurer et de gérer effi
 
 **Gérer l’accès à un utilisateur**
 
-Vous pouvez gérer l’accès à une file d’attente d’utilisateur sélectionnée à l’aide de cette option.
+Cette option vous permet de gérer l’accès à une file d’attente d’utilisateur sélectionnée.
 
 **Gérer l’accès par un utilisateur**
 
@@ -55,7 +55,7 @@ Une fois partagées, ces tâches peuvent être effectuées par l’utilisateur, 
 
 ## Gestion des files d’attente affectées à un utilisateur {#managing-queues-assigned-to-a-user}
 
-La fonctionnalité Gérer l’accès par un utilisateur vous permet de gérer les files d’attente affectées à un utilisateur sélectionné. Vous pouvez accorder ou révoquer individuellement l’accès aux files d’attente d’utilisateur à un utilisateur sélectionné. Par exemple, vous souhaitez affecter les files d’attente d’utilisateur Akira Tanaka et John Jacobs à Kara Bowman. La fonctionnalité Gérer l’accès par un utilisateur vous permet de rechercher Kara Bowman et d’accorder l’accès aux tâches affectées à Akira Tanaka et John Jacobs. Vous pouvez ultérieurement révoquer à Kara Bowman l’accès à ces files d’attente d’utilisateur.
+La fonctionnalité Gérer l’accès par un utilisateur permet de gérer les files d’attente affectées à un utilisateur sélectionné. Vous pouvez accorder ou révoquer individuellement l’accès aux files d’attente d’utilisateur à un utilisateur sélectionné. Par exemple, vous souhaitez affecter les files d’attente d’utilisateur Akira Tanaka et John Jacobs à Kara Bowman. La fonctionnalité Gérer l’accès par un utilisateur vous permet de rechercher Kara Bowman et d’accorder l’accès aux tâches affectées à Akira Tanaka et John Jacobs. Vous pouvez ultérieurement révoquer à Kara Bowman l’accès à ces files d’attente d’utilisateur.
 
 Une fois affectées, ces tâches peuvent être effectuées par l’utilisateur à l’aide de Workspace.
 

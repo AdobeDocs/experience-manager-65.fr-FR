@@ -10,10 +10,10 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4187'
-ht-degree: 65%
+source-wordcount: '4184'
+ht-degree: 64%
 
 ---
 
@@ -123,7 +123,7 @@ Après avoir créé des objets et des propriétés de modèle de données, vous 
 
 Lorsque les sources de données que vous souhaitez intégrer au modèle de données de formulaire sont disponibles, vous pouvez les ajouter au modèle de données de formulaire, comme indiqué dans la section [Mettre à jour les sources de données](/help/forms/using/create-form-data-models.md#update). Ensuite, procédez comme suit pour lier les objets et propriétés de modèle de données non liés :
 
-1. Dans le modèle de données de formulaire, sélectionnez la source de données non liée que vous souhaitez lier à une source de données.
+1. Dans le modèle de données de formulaire, sélectionnez la source de données non liée à lier à une source de données.
 1. Appuyez sur **[!UICONTROL Modifier les propriétés]**.
 1. Dans le **[!UICONTROL Modifier les propriétés]** Appuyez sur l’icône de navigation en regard du volet **[!UICONTROL Liaison]** champ . Elle ouvre la fenêtre **[!UICONTROL Sélectionner un objet]** qui répertorie les sources de données ajoutées dans le modèle de données de formulaire.
 
@@ -299,11 +299,11 @@ Vous pouvez modifier les propriétés des objets de modèle de données, leurs p
 Pour modifier les propriétés :
 
 1. Cochez la case en regard d’un objet de modèle de données, d’une propriété ou d’un service dans le modèle de données de formulaire.
-1. Appuyez sur **[!UICONTROL Modifier les propriétés]**. Le **[!UICONTROL Modifier les propriétés]** Le volet correspondant à l’objet de modèle, la propriété ou le service sélectionné s’ouvre.
+1. Appuyez sur **[!UICONTROL Modifier les propriétés]**. La variable **[!UICONTROL Modifier les propriétés]** Le volet correspondant à l’objet de modèle, la propriété ou le service sélectionné s’ouvre.
 
-   * **Objet de modèle de données**: Spécifiez les services de lecture et d’écriture et modifiez les arguments.
-   * **Propriété**: Spécifiez le type, le sous-type et le format de la propriété. Vous pouvez également spécifier si la propriété sélectionnée est la clé Principale de l’objet de modèle de données.
-   * **Service**: Spécifiez l’objet de modèle d’entrée, le type de sortie et les arguments du service. Pour un service Get, vous pouvez spécifier s’il doit renvoyer un tableau .
+   * **Objet de modèle de données**: spécifiez les services de lecture et d’écriture et modifiez les arguments.
+   * **Propriété**: spécifiez le type, le sous-type et le format de la propriété. Vous pouvez également spécifier si la propriété sélectionnée est la clé primaire de l’objet de modèle de données.
+   * **Service**: spécifiez l’objet de modèle d’entrée, le type de sortie et les arguments du service. Pour un service Get, vous pouvez spécifier s’il doit renvoyer un tableau .
 
    ![edit-properties-service](assets/edit-properties-service.png)
 
