@@ -3,10 +3,10 @@ title: API AEM GraphQL pour l’utilisation des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 79fa58e63596301e1669903ce10dd8b2ba7d0a1b
 workflow-type: tm+mt
-source-wordcount: '4477'
-ht-degree: 99%
+source-wordcount: '4774'
+ht-degree: 92%
 
 ---
 
@@ -104,7 +104,7 @@ AEM fournit des fonctionnalités de conversion des requêtes (des deux types) en
 
 ### Bonnes pratiques en matière de requêtes GraphQL (Dispatcher et réseau CDN) {#graphql-query-best-practices}
 
-Il est recommandé d’utiliser les [Requêtes persistantes](/help/sites-developing/headless/graphql-api/persisted-queries.md) sur les instances de publication en raison des avantages suivants :
+[Requêtes persistantes](/help/sites-developing/headless/graphql-api/persisted-queries.md) sont la méthode recommandée à utiliser sur les instances de publication en tant que :
 
 * Elles sont mises en cache.
 * Elles sont gérées de manière centralisée par AEM
@@ -116,7 +116,9 @@ Il est recommandé d’utiliser les [Requêtes persistantes](/help/sites-develop
 
 Les requêtes GraphQL utilisant des requêtes POST ne sont pas recommandées, car elles ne sont pas mises en cache. Par conséquent, dans une instance par défaut, Dispatcher est configuré pour bloquer ces requêtes.
 
-Bien que GraphQL prenne également en charge les requêtes GET, celles-ci comportent des limites (par exemple, la longueur de l’URL) qui peuvent être évitées grâce aux requêtes persistantes.
+Bien que GraphQL prenne également en charge les requêtes de GET, ces requêtes peuvent atteindre des limites (par exemple, la longueur de l’URL) qui peuvent être évitées à l’aide de requêtes persistantes.
+
+Voir [Activation de la mise en cache des requêtes persistantes](#enable-caching-persisted-queries) pour plus de détails.
 
 >[!NOTE]
 >
@@ -687,6 +689,111 @@ query {
 >
 >* En raison de contraintes techniques internes, les performances se dégradent si le tri et le filtrage sont appliqués aux champs imbriqués. Par conséquent, utilisez les champs de filtrage/tri stockés au niveau racine. Cette technique est également la méthode recommandée si vous souhaitez interroger des jeux de résultats paginés volumineux.
 
+## Requêtes persistantes GraphQL - Activation de la mise en cache dans Dispatcher {#graphql-persisted-queries-enabling-caching-dispatcher}
+
+>[!CAUTION]
+>
+>Si la mise en cache dans Dispatcher est activée, la fonction [Filtre CORS](#cors-filter) n’est pas nécessaire. Cette section peut donc être ignorée.
+
+La mise en cache des requêtes persistantes n’est pas activée par défaut dans Dispatcher. L’activation par défaut n’est pas possible, car les clients qui utilisent le partage de ressources cross-origin (CORS) avec plusieurs origines doivent examiner et éventuellement mettre à jour leur configuration Dispatcher.
+
+>[!NOTE]
+>
+>Dispatcher ne met pas en cache la variable `Vary` en-tête .
+>
+>La mise en cache d’autres en-têtes liés à CORS peut être activée dans Dispatcher, mais peut s’avérer insuffisante en cas d’origines CORS multiples.
+
+### Activation de la mise en cache des requêtes persistantes {#enable-caching-persisted-queries}
+
+Pour activer la mise en cache des requêtes persistantes, définissez la variable Dispatcher . `CACHE_GRAPHQL_PERSISTED_QUERIES`:
+
+1. Ajout de la variable au fichier de Dispatcher `global.vars`:
+
+   ```xml
+   Define CACHE_GRAPHQL_PERSISTED_QUERIES
+   ```
+
+>[!NOTE]
+>
+>Pour que la variable [Exigences de Dispatcher pour les documents pouvant être mis en cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), Dispatcher ajoute le suffixe `.json` à toutes les URL de requête conservées, de sorte que le résultat puisse être mis en cache.
+>
+>Ce suffixe est ajouté par une règle de réécriture, une fois la mise en cache de requête persistante activée.
+
+### Configuration CORS dans Dispatcher {#cors-configuration-in-dispatcher}
+
+Les clients qui utilisent des requêtes CORS doivent peut-être passer en revue et mettre à jour leur configuration CORS dans Dispatcher.
+
+* La variable `Origin` L’en-tête ne doit pas être transmis à AEM publication via Dispatcher :
+   * Vérifiez les `clientheaders.any` fichier .
+* Au lieu de cela, les demandes CORS doivent être évaluées pour les origines autorisées au niveau de Dispatcher. Cette approche garantit également que les en-têtes liés à CORS sont correctement définis, à un seul endroit, dans tous les cas.
+   * Une telle configuration doit être ajoutée à la variable `vhost` fichier . Vous trouverez ci-dessous un exemple de configuration. Pour plus de simplicité, seule la partie relative à CORS a été fournie. Vous pouvez l’adapter à vos cas d’utilisation spécifiques.
+
+  ```xml
+  <VirtualHost *:80>
+     ServerName "publish"
+  
+     # ...
+  
+     <IfModule mod_headers.c>
+         Header add X-Vhost "publish"
+  
+          ################## Start of the CORS specific configuration ##################
+  
+          SetEnvIfExpr "req_novary('Origin') == ''"  CORSType=none CORSProcessing=false
+          SetEnvIfExpr "req_novary('Origin') != ''"  CORSType=cors CORSProcessing=true CORSTrusted=false
+  
+          SetEnvIfExpr "req_novary('Access-Control-Request-Method') == '' && %{REQUEST_METHOD} == 'OPTIONS' && req_novary('Origin') != ''  " CORSType=invalidpreflight CORSProcessing=false
+          SetEnvIfExpr "req_novary('Access-Control-Request-Method') != '' && %{REQUEST_METHOD} == 'OPTIONS' && req_novary('Origin') != ''  " CORSType=preflight CORSProcessing=true CORSTrusted=false
+          SetEnvIfExpr "req_novary('Origin') -strcmatch 'https://%{HTTP_HOST}*'"  CORSType=samedomain CORSProcessing=false
+  
+          # For requests that require CORS processing, check if the Origin can be trusted
+          SetEnvIfExpr "%{HTTP_HOST} =~ /(.*)/ " ParsedHost=$1
+  
+          ################## Adapt the regex to match CORS origin for your environment
+          SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*.your-domain.tld(:\d+)?$)#" CORSTrusted=true
+  
+          # Extract the Origin header 
+          SetEnvIfNoCase ^Origin$ ^https://(.*)$ CORSTrustedOrigin=https://$1
+  
+          # Flush If already set
+          Header unset Access-Control-Allow-Origin
+          Header unset Access-Control-Allow-Credentials
+  
+          # Trusted
+          Header always set Access-Control-Allow-Credentials "true" "expr=reqenv('CORSTrusted') == 'true'"
+          Header always set Access-Control-Allow-Origin "%{CORSTrustedOrigin}e" "expr=reqenv('CORSTrusted') == 'true'"
+          Header always set Access-Control-Allow-Methods "GET" "expr=reqenv('CORSTrusted') == 'true'"
+          Header always set Access-Control-Max-Age 1800 "expr=reqenv('CORSTrusted') == 'true'"
+          Header always set Access-Control-Allow-Headers "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers" "expr=reqenv('CORSTrusted') == 'true'"
+  
+          # Non-CORS or Not Trusted
+          Header unset Access-Control-Allow-Credentials "expr=reqenv('CORSProcessing') == 'false' || reqenv('CORSTrusted') == 'false'"
+          Header unset Access-Control-Allow-Origin "expr=reqenv('CORSProcessing') == 'false' || reqenv('CORSTrusted') == 'false'"
+          Header unset Access-Control-Allow-Methods "expr=reqenv('CORSProcessing') == 'false' || reqenv('CORSTrusted') == 'false'"
+          Header unset Access-Control-Max-Age "expr=reqenv('CORSProcessing') == 'false' || reqenv('CORSTrusted') == 'false'"
+  
+          # Always vary on origin, even if its not there.
+          Header merge Vary Origin
+  
+          # CORS - send 204 for CORS requests which are not trusted
+          RewriteCond expr "reqenv('CORSProcessing') == 'true' && reqenv('CORSTrusted') == 'false'"
+          RewriteRule "^(.*)" - [R=204,L]
+  
+          ################## End of the CORS specific configuration ##################
+  
+     </IfModule>
+  
+     <Directory />
+  
+         # ...
+  
+     </Directory>
+  
+     # ...
+  
+  </VirtualHost>
+  ```
+
 ## GraphQL pour AEM – Résumé des extensions {#graphql-extensions}
 
 Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la spécification GraphQL standard. Pour les requêtes GraphQL avec AEM, il existe quelques extensions :
@@ -786,6 +893,10 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
    * Si la variation demandée n’existe pas dans un fragment imbriqué, la variation **principale** est renvoyée.
 
 ### Filtre CORS {#cors-filter}
+
+>[!CAUTION]
+>
+>If [La mise en cache dans Dispatcher a été activée.](#graphql-persisted-queries-enabling-caching-dispatcher) Le filtre CORS n’est pas nécessaire. Cette section peut donc être ignorée.
 
 >[!NOTE]
 >
