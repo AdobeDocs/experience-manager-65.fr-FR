@@ -80,7 +80,7 @@ Pour activer la fonctionnalité complète du composant Conteneur de formulaires 
 
 1. Ouvrez le fichier `/apps/[your-sites-project]/components/page/customheaderlibs.html` et ajoutez le code suivant au fichier :
 
-       ```
+     ```
      //Customheaderlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
      &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
@@ -88,9 +88,9 @@ Pour activer la fonctionnalité complète du composant Conteneur de formulaires 
      
      ```
 
-   1. Ouvrez le fichier `/apps/[your-sites-project]/components/page/customfooterlibs.html` et ajoutez le code suivant au fichier :
+1. Ouvrez le fichier `/apps/[your-sites-project]/components/page/customfooterlibs.html` et ajoutez le code suivant au fichier :
 
-       ```
+     ```
      
      //customfooterlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
@@ -98,9 +98,9 @@ Pour activer la fonctionnalité complète du composant Conteneur de formulaires 
      &lt;/sly>
      ```
 
-   1. Ouvrez le fichier `/apps/[your-sites-project]/components/xfpage/customheaderlibs.html` et ajoutez le code suivant au fichier :
+1. Ouvrez le fichier `/apps/[your-sites-project]/components/xfpage/customheaderlibs.html` et ajoutez le code suivant au fichier :
 
-       ```
+     ```
      //Customheaderlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
      &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
@@ -108,9 +108,9 @@ Pour activer la fonctionnalité complète du composant Conteneur de formulaires 
      
      ```
 
-   1. Ouvrez le fichier `/apps/[your-sites-project]/components/customfooterlibs.html` et ajoutez le code suivant au fichier :
+1. Ouvrez le fichier `/apps/[your-sites-project]/components/customfooterlibs.html` et ajoutez le code suivant au fichier :
 
-       ```
+     ```
      
      //customfooterlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
@@ -118,7 +118,7 @@ Pour activer la fonctionnalité complète du composant Conteneur de formulaires 
      &lt;/sly>
      ```
 
-   1. Répétez les étapes ci-dessus pour toutes les instances de création et de publication dans votre environnement.
+1. Répétez les étapes ci-dessus pour toutes les instances de création et de publication dans votre environnement.
 
 +++
 
