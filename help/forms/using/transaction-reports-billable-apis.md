@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 929a298d-7f22-487f-bf7d-8ab2556d0d81
 docset: aem65
 exl-id: 1bc99f3b-3f28-4e74-b259-6ebddc11ffc5
-source-git-commit: 4eb4a15961e7b6e83d9e8a38f34ad92d829cb9b6
+source-git-commit: d636d987f5d62c9169bc4015d7ac50090e362faa
 workflow-type: tm+mt
-source-wordcount: '2084'
+source-wordcount: '2089'
 ht-degree: 90%
 
 ---
@@ -325,11 +325,10 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
  </tbody>
 </table>
 
-Appeler est considéré comme une transaction qui dépend de l’opération effectuée. Il est considéré comme une transaction lorsque vous effectuez une ou plusieurs des opérations suivantes :
-1. Conversion du format non PDF au format PDF. Par exemple, conversion du format XDP au format PDF (pour la communication interactive et non interactive), conversion de Word au format PDF.
-1. Conversion du format du PDF au format PDF/A.
-1. Format du PDF à conversion au format non PDF. Par exemple, le format du PDF à la conversion au format d’image, le format du PDF à la conversion au format de texte.
-
+L’utilisation de l’API invoke est comptabilisée en tant que transaction lorsque vous effectuez une ou plusieurs des opérations suivantes :
+1. Conversion de formats non PDF en formats PDF. Par exemple, la conversion du format XDP au format PDF, qui prend en charge les formes de communication interactives et non interactives, et la conversion de Word au format PDF.
+1. Conversion du format PDF au format PDF/A.
+1. Conversion du format PDF aux formats non PDF. Les exemples incluent la transformation du format PDF au format Image ou la conversion du format PDF au format Texte.
 
 >[!NOTE]
 >
