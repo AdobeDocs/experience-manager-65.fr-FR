@@ -10,8 +10,8 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 16ea73e9e75ddee25d7d348d4220a0e0f96a9ae8
-workflow-type: ht
+source-git-commit: d4c2890b92678aff58119e76251b5d181c95a393
+workflow-type: tm+mt
 source-wordcount: '3033'
 ht-degree: 100%
 
@@ -23,8 +23,8 @@ Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en app
 
 >[!IMPORTANT]
 >
->• Le recadrage intelligent est disponible uniquement dans Dynamic Media en mode Scene7.
->• Les profils d’image ne s’appliquent pas aux fichiers PDF, GIF animé ou INDD (Adobe InDesign).
+>* Le recadrage intelligent est disponible uniquement dans Dynamic Media en mode Scene7.
+>* Les profils d’image ne s’appliquent pas aux fichiers PDF, GIF animé ou INDD (Adobe InDesign).
 
 ## Options de recadrage {#crop-options}
 
@@ -57,8 +57,8 @@ Vous avez le choix entre deux options de recadrage d’image : recadrage de pix
 
 >[!IMPORTANT]
 >
->• Adobe vous recommande d’examiner tous les recadrages et tous les échantillons générés afin de vous assurer qu’ils sont appropriés et pertinents pour votre marque et vos valeurs.
->• Le format d’image CMJN n’est pas pris en charge avec le recadrage intelligent.
+>* Adobe vous recommande d’examiner tous les recadrages et tous les échantillons générés afin de vous assurer qu’ils sont appropriés et pertinents pour votre marque et vos valeurs.
+>* Le format d’image CMJN n’est pas pris en charge avec le recadrage intelligent.
 
 | Option | Quand l’utiliser | Description |
 | --- | --- | --- |
@@ -178,7 +178,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 >[!IMPORTANT]
 >
->• Le recadrage intelligent est disponible uniquement dans Dynamic Media en mode Scene7.
+>* Le recadrage intelligent est disponible uniquement dans Dynamic Media en mode Scene7.
 
 Vous pouvez réaligner ou redimensionner manuellement la fenêtre de recadrage intelligent d’une image afin d’affiner davantage son point focal.
 
@@ -209,7 +209,7 @@ Voir aussi [Modification du recadrage intelligent ou de l’échantillon intelli
 
 >[!IMPORTANT]
 >
->• Le recadrage intelligent est disponible uniquement dans Dynamic Media en mode Scene7.
+>* Le recadrage intelligent est disponible uniquement dans Dynamic Media en mode Scene7.
 
 Après l’application d’un profil d’image (contenant un recadrage intelligent) sur un dossier, un recadrage est appliqué à toutes les images de ce dossier. Si vous le souhaitez, vous pouvez réaligner ou redimensionner *manuellement* la fenêtre de recadrage intelligent dans plusieurs images pour affiner davantage leur point focal.
 
