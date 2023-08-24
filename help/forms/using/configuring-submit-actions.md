@@ -9,14 +9,14 @@ discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: e19a7e617bdabb678bd804cab3fea228ce19acfa
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 82%
+source-wordcount: '2154'
+ht-degree: 80%
 
 ---
 
-# Configurer l’action d’envoi{#configuring-the-submit-action}
+# Configurer l’action d’envoi {#configuring-the-submit-action}
 
 <span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/using/create-an-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
 
@@ -45,6 +45,7 @@ Les actions d’envoi par défaut disponibles avec les formulaires adaptatifs so
 * Envoyer à l’aide du modèle de données de formulaire
 * Action d’envoi du Forms Portal
 * Appeler un workflow AEM
+* Envoyer à Power Automate
 
 >[!NOTE]
 >
@@ -155,6 +156,19 @@ Vous pouvez utiliser des variables que le modèle de workflow soit configuré po
 * **Pièces jointes** : vous pouvez utiliser l’option **[!UICONTROL Chemin d’accès aux pièces jointes]** pour spécifier le nom de dossier dans lequel stocker les pièces jointes chargées dans le formulaire adaptatif. Le dossier est créé par rapport à la payload. Si le workflow est marqué pour le stockage de données externe, utilisez l’option variable et sélectionnez la variable dans la liste des variables disponibles pour le modèle de workflow.
 
 * **Document d’enregistrement** : il contient le document d’enregistrement généré pour le formulaire adaptatif. Vous pouvez utiliser l’option **[!UICONTROL Chemin du document d’enregistrement]** pour spécifier le nom du fichier de document d’enregistrement et le chemin d’accès du fichier par rapport à la charge utile. Par exemple, le chemin d’accès `/addresschange/DoR.pdf` crée un dossier nommé `addresschange` relatif à la charge utile et place `DoR.pdf` relatif à la charge utile. Vous pouvez également spécifier uniquement `DoR.pdf` pour n’enregistrer que le document d’enregistrement sans créer de hiérarchie de dossiers. Si le workflow est marqué pour le stockage de données externe, utilisez l’option variable et sélectionnez la variable dans la liste des variables disponibles pour le modèle de workflow.
+
+## Envoyer à Power Automate {#microsoft-power-automate}
+
+Vous pouvez configurer un formulaire adaptatif pour exécuter un flux cloud Power Automate lors de l’envoi. Le formulaire adaptatif configuré envoie les données capturées, les pièces jointes et le document d’enregistrement au flux Cloud Power Automate pour traitement. Il vous permet de créer une expérience de capture de données personnalisée tout en tirant parti de la puissance de Microsoft® Power Automate pour élaborer des logiques commerciales autour des données capturées et automatiser les workflows client. Voici quelques exemples de ce que vous pouvez faire après l’intégration d’un formulaire adaptatif à Microsoft® Power Automate :
+
+* Utiliser des données de formulaires adaptatifs dans des processus d’entreprise Power Automate
+* Utilisez Power Automate pour envoyer des données capturées à plus de 500 sources de données ou à toute API publique
+* Exécuter des calculs complexes sur les données capturées
+* Enregistrer des données de formulaires adaptatifs dans les systèmes de stockage selon un planning prédéfini
+
+L’éditeur de Forms adaptatif fournit la variable **Appeler un flux Microsoft® Power Automate** Action d’envoi pour envoyer des données de formulaires adaptatifs, des pièces jointes et un document d’enregistrement à Power Automate Cloud Flow. Pour utiliser l’action Envoyer pour envoyer les données capturées à Microsoft® Power Automate, [Connexion de votre instance AEM Forms à Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md)
+
+Après une configuration réussie, utilisez la méthode [Appeler un flux Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) Action d’envoi pour envoyer des données à un flux d’automatisation Power.
 
 ## Revalidation côté serveur dans un formulaire adaptatif {#server-side-revalidation-in-adaptive-form}
 

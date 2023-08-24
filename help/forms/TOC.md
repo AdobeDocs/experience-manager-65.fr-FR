@@ -9,9 +9,9 @@ breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 role: User
 feature: Forms Service
-source-git-commit: fc148a5f5e0fcaac2980dc73004fa92ac3b91fb3
+source-git-commit: e19a7e617bdabb678bd804cab3fea228ce19acfa
 workflow-type: tm+mt
-source-wordcount: '3889'
+source-wordcount: '3897'
 ht-degree: 99%
 
 ---
@@ -163,6 +163,7 @@ ht-degree: 99%
    + [Association de réviseurs d’envoi à un formulaire](using/adding-reviewers-form.md)
    + [Création d’une aide contextuelle pour les champs de formulaire](using/authoring-in-field-help.md)
    + [Utilisation du mode Mise en page pour redimensionner les composants](/help/forms/using/resize-using-layout-mode.md)
+   + [Connexion et envoi de données de formulaire adaptatif à Microsoft](/help/forms/using/forms-microsoft-power-automate-integration.md)
 + Formulaires adaptatifs - Création avancée {#adaptive-forms-advanced-authoring}
    + [Création de formulaires adaptatifs à l’aide d’un schéma JSON](using/adaptive-form-json-schema-form-model.md)
    + [Création de formulaires adaptatifs à l’aide d’un schéma XML](using/adaptive-form-xml-schema-form-model.md)
