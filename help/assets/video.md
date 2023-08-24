@@ -10,7 +10,7 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 6ef87e4f86181f83b7c340e4954e9e85e6bb9ab1
+source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
 workflow-type: tm+mt
 source-wordcount: '11269'
 ht-degree: 71%
@@ -449,7 +449,7 @@ En même temps que vous créez un cas de prise en charge des Adobes pour que le 
 
 >[!IMPORTANT]
 >
->Toutes les vidéos que vous avez téléchargées *before* l’activation de la prise en charge du suivi multititre et multiaudio sur votre compte Dynamic Media, [doit être retraité](/help/assets/processing-profiles.md##reprocessing-assets). Cette étape de retraitement vidéo est nécessaire afin que les fonctionnalités de suivi multi-sous-titre et multi-audio soient disponibles. Les URL de la vidéo continuent à fonctionner et à se lire normalement, après retraitement.
+>Toutes les vidéos que vous avez téléchargées *before* l’activation de la prise en charge du suivi multititre et multiaudio sur votre compte Dynamic Media, [doit être retraité](/help/assets/processing-profiles.md#reprocessing-assets). Cette étape de retraitement vidéo est nécessaire afin que les fonctionnalités de suivi multi-sous-titre et multi-audio soient disponibles. Les URL de la vidéo continuent à fonctionner et à se lire normalement, après retraitement.
 
 **Pour activer la prise en charge du suivi DASH, multi-sous-titres et multi-audio sur votre compte Dynamic Media :**
 
@@ -625,7 +625,7 @@ Les sous-titres et légendes ajoutés sont pris en charge avec les formats WebVT
 
 >[!IMPORTANT]
 >
->Toutes les vidéos que vous avez téléchargées *before* l’activation de la prise en charge du suivi multititre et multiaudio sur votre compte Dynamic Media, [doit être retraité](/help/assets/processing-profiles.md##reprocessing-assets). Cette étape de retraitement vidéo est nécessaire afin que les fonctionnalités de suivi multi-sous-titre et multi-audio soient disponibles. Les URL de la vidéo continuent à fonctionner et à se lire normalement, après retraitement.
+>Toutes les vidéos que vous avez téléchargées *before* l’activation de la prise en charge du suivi multititre et multiaudio sur votre compte Dynamic Media, [doit être retraité](/help/assets/processing-profiles.md#reprocessing-assets). Cette étape de retraitement vidéo est nécessaire afin que les fonctionnalités de suivi multi-sous-titre et multi-audio soient disponibles. Les URL de la vidéo continuent à fonctionner et à se lire normalement, après retraitement.
 
 **Pour ajouter plusieurs sous-titres et plusieurs pistes audio à votre vidéo :**
 
@@ -693,7 +693,7 @@ Dans le cas où vous avez configuré Dynamic Media pour une publication immédia
 
 >[!CAUTION]
 >
->Lorsque vous téléchargez des fichiers de sous-titre ou des fichiers audio vers une vidéo déjà publiée, ces fichiers sont supprimés si vous [*retraiter*](/help/assets/processing-profiles.md##reprocessing-assets) la vidéo. Seul le son d’origine de la vidéo reste intact. Dans ce cas, vous devez charger à nouveau les fichiers de sous-titre et de suivi audio dans la vidéo.
+>Lorsque vous téléchargez des fichiers de sous-titre ou des fichiers audio vers une vidéo déjà publiée, ces fichiers sont supprimés si vous [*retraiter*](/help/assets/processing-profiles.md#reprocessing-assets) la vidéo. Seul le son d’origine de la vidéo reste intact. Dans ce cas, vous devez charger à nouveau les fichiers de sous-titre et de suivi audio dans la vidéo.
 
 #### Ajout de plusieurs sous-titres à une vidéo contenant une URL existante avec le modificateur de sous-titres
 

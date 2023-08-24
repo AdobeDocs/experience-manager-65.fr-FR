@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager]
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
-source-git-commit: 8edc6a97e2fc002d6dbbc4ce8b1828616b6c1cc6
+source-git-commit: 2209ab8498072744091f5af22887c8f13dbb3ac6
 workflow-type: tm+mt
-source-wordcount: '3440'
+source-wordcount: '3464'
 ht-degree: 42%
 
 ---
@@ -54,6 +54,10 @@ Voici quelques-unes des principales fonctionnalités et améliorations de cette 
 * Pour trouver rapidement un projet en mode Liste où votre système peut contenir de nombreux projets, Adobe prend désormais en charge le tri côté serveur. Les noeuds de projet sont triés sur le serveur principal en fonction de la colonne sélectionnée par l’utilisateur avant d’être rendus dans l’interface utilisateur. (NPR-41027)
 
 * AEM 6.5.18.0 prend en charge MongoDB 5.0 vers 6.0.
+
+**Fonctionnalité obsolète**
+
+* ActiveMQ dans AEM est obsolète. ActiveMQ a été utilisé pour la communication entre deux instances de publication AEM. Adobe recommande que les clients utilisent désormais l’équilibreur de charge.
 
 **Formulaires**
 
