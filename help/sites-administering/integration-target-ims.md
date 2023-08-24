@@ -2,10 +2,10 @@
 title: Intégration à Adobe Target à l’aide d’IMS
 description: Découvrez-en plus sur l’intégration d’AEM à Adobe Target.
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 06ed2329840e151083bd238ee3a4d33663463c9c
 workflow-type: tm+mt
-source-wordcount: '1549'
-ht-degree: 98%
+source-wordcount: '1577'
+ht-degree: 96%
 
 ---
 
@@ -68,6 +68,12 @@ La première étape de la configuration consiste à créer une configuration IMS
 ### Création du projet {#creating-the-project}
 
 Ouvrez la Developer Console d’Adobe pour créer un projet avec Adobe Target qu’AEM utilisera :
+
+>[!CAUTION]
+>
+>Actuellement, nous ne prenons en charge que le **Compte de service (JWT)** type d’identification.
+>
+>N’utilisez pas la variable **OAuth serveur à serveur** type d’informations d’identification, qui sera pris en charge à l’avenir.
 
 1. Ouvrez la Developer Console d’Adobe pour les projets :
 

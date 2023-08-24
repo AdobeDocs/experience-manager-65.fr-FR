@@ -2,10 +2,10 @@
 title: Intégration à Adobe Analytics à l’aide d’IMS
 description: En savoir plus sur l’intégration d’AEM à Adobe Analytics à l’aide d’IMS
 exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 06ed2329840e151083bd238ee3a4d33663463c9c
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 98%
+source-wordcount: '1085'
+ht-degree: 95%
 
 ---
 
@@ -69,6 +69,12 @@ La première étape de la configuration consiste à créer une configuration IMS
 ### Création du projet {#creating-the-project}
 
 Ouvrez la Developer Console d’Adobe pour créer un projet avec Adobe Analytics qu’AEM utilisera :
+
+>[!CAUTION]
+>
+>Actuellement, nous ne prenons en charge que le **Compte de service (JWT)** type d’identification.
+>
+>N’utilisez pas la variable **OAuth serveur à serveur** type d’informations d’identification, qui sera pris en charge à l’avenir.
 
 1. Ouvrez la Developer Console d’Adobe pour les projets :
 
