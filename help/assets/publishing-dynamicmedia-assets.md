@@ -10,16 +10,16 @@ discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 role: User, Admin
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
 feature: Publishing
-source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+source-git-commit: 4005e09349d22dbb70a7af378bed2a991ea7218d
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 88%
+source-wordcount: '475'
+ht-degree: 81%
 
 ---
 
 # Publication de ressources Dynamic Media {#publishing-dynamic-media-assets}
 
-Vous publiez vos ressources Dynamic Media en sélectionnant celles que vous avez déjà chargées et en appuyant sur **[!UICONTROL Publier]** ou **[!UICONTROL Publication rapide]**. Une fois vos ressources Dynamic Media publiées, vous pouvez les inclure dans une page web au moyen d’une URL ou d’une incorporation de code sur la page.
+Vous publiez vos ressources Dynamic Media en sélectionnant celles que vous avez déjà chargées et en appuyant sur **[!UICONTROL Publier]** ou **[!UICONTROL Publication rapide]**. Une fois vos ressources Dynamic Media publiées, vous pouvez les inclure dans une page web au moyen d’une URL ou en incorporant le code sur la page web.
 
 Vous pouvez également publier immédiatement les ressources que vous chargez, sans intervention de l’utilisateur. Consultez la section [Configuration de Dynamic Media en mode Scene7](config-dms7.md).
 Vous pouvez également publier des ressources de manière sélective sur Dynamic Media exclusivement ou dans Adobe Experience Manager exclusivement, à l’aide d’une **[!UICONTROL Publication sélective]** au niveau des dossiers. Voir [Utilisation de la publication sélective dans Dynamic Media](/help/assets/selective-publishing.md).
