@@ -10,10 +10,10 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
+source-git-commit: ee1a0866aafd56fa53f5d3b936beab8f500d335c
 workflow-type: tm+mt
-source-wordcount: '11269'
-ht-degree: 71%
+source-wordcount: '11363'
+ht-degree: 69%
 
 ---
 
@@ -33,7 +33,7 @@ Le workflow décrit en détail ci-après vise à vous aider à maîtriser rapide
 >
 >* Consultez la section [Configuration des services cloud Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) dans Configuration de Dynamic Media en mode hybride.
 >
->Problème de lecture vidéo actuellement connu dans Dynamic Media *sur Experience Manager 6.5.9.0 uniquement* :
+>Problème de lecture vidéo connu actuel dans Dynamic Media *sur Experience Manager 6.5.9.0 uniquement*:
 >
 >* Si une vidéo publiée est mise à jour, elle doit être publiée à nouveau pour refléter les modifications apportées à la diffusion.
 >
@@ -111,12 +111,12 @@ En savoir plus sur les [bonnes pratiques relatives à l’organisation des resso
       * Intégrez une vidéo à l’aide d’une URL :
         [Liaison d’URL à votre application web](linking-urls-to-yourwebapplication.md).
 
-      * Intégrez une vidéo à l’aide du code intégré dans la page web :
+      * Intégrez une vidéo à l’aide du code intégré sur une page web :
         [Incorporation de la visionneuse de vidéos dans une page web](embed-code.md).
 
    * [Génération de rapports vidéo](#viewing-video-reports).
 
-   * [Ajout de sous-titres à une vidéo](#adding-captions-to-video).
+   * [Ajout de sous-titres à la vidéo](#adding-captions-to-video).
 
 ## Utilisation de vidéo dans Dynamic Media {#working-with-video-in-dynamic-media}
 
@@ -128,10 +128,10 @@ En outre, la qualité de la vidéo s’adapte de manière automatique et dynamiq
 
 La logique utilisée par un lecteur vidéo pour déterminer la vidéo codée à lire ou à sélectionner au cours de la lecture repose sur l’algorithme suivant :
 
-1. Le lecteur vidéo charge le fragment vidéo initial en fonction du débit le plus proche de la valeur définie pour le « débit initial » dans le lecteur.
+1. Le lecteur vidéo charge le fragment vidéo initial en fonction du débit le plus proche de la valeur définie pour le &quot;débit initial&quot; dans le lecteur.
 1. Le lecteur vidéo change en fonction des modifications de la vitesse de bande passante à l’aide des critères suivants :
 
-   1. Le lecteur sélectionne la bande passante la plus élevée, inférieure ou égale à la bande passante estimée.
+   1. Le lecteur sélectionne la bande passante la plus élevée en dessous ou égale à la bande passante estimée.
    1. Le lecteur prend uniquement en compte 80 % de la bande passante disponible. Cependant, s’il change, il est préférable que ce taux soit seulement de 70 % pour éviter toute surestimation et que le lecteur ne repasse au taux précédent.
 
 Pour obtenir des informations techniques détaillées sur l’algorithme, consultez la page [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
@@ -145,7 +145,7 @@ Pour la gestion des visionneuses de vidéos à débit adaptatif et uniques, les 
 
 * Sous-titrage vidéo dans toutes les visionneuses de vidéos HTML5.
 * Organisez, parcourez et recherchez des vidéos avec une prise en charge complète des métadonnées pour une gestion efficace des ressources vidéo.
-* Proposer des visionneuses de vidéos adaptatives en ligne ainsi que sur des postes de travail et des appareils mobiles (iPhone, iPad, Android™, BlackBerry® et Windows Phone notamment).
+* Diffusez des visionneuses de vidéos adaptatives sur le web et sur les ordinateurs de bureau et les appareils mobiles, notamment iPhone, iPad, Android™, BlackBerry® et le téléphone Windows.
 
 La diffusion de vidéo adaptative en continu est prise en charge sur différentes plateformes iOS. Voir [Guide de référence des visionneuses de médias dynamiques](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html?lang=fr#vidéo).
 
@@ -321,7 +321,7 @@ Vous pouvez récupérer les métadonnées d’un fichier à l’aide d’un outi
 
 Lorsque vous choisissez ou créez un paramètre prédéfini de codage vidéo pour votre fichier vidéo issu de sources originales, assurez-vous que le paramètre prédéfini indique le même format que le fichier vidéo issu de sources originales. Le format fait référence au rapport largeur/hauteur de la vidéo.
 
-Pour déterminer le format d’un fichier vidéo, récupérez les métadonnées de ce fichier et notez les valeurs de largeur et de hauteur (consultez la section Obtenir les métadonnées d’un fichier ci-dessus). Effectuez ensuite le calcul suivant pour déterminer le format :
+Pour déterminer les proportions d’un fichier vidéo, obtenez les métadonnées du fichier et notez les valeurs de largeur et de hauteur (voir Obtention des métadonnées d’un fichier ci-dessus). Utilisez ensuite cette formule pour déterminer le format :
 
 largeur/hauteur = format
 
@@ -449,7 +449,7 @@ En même temps que vous créez un cas de prise en charge des Adobes pour que le 
 
 >[!IMPORTANT]
 >
->Toutes les vidéos que vous avez téléchargées *before* l’activation de la prise en charge du suivi multititre et multiaudio sur votre compte Dynamic Media, [doit être retraité](/help/assets/processing-profiles.md#reprocessing-assets). Cette étape de retraitement vidéo est nécessaire afin que les fonctionnalités de suivi multi-sous-titre et multi-audio soient disponibles. Les URL de la vidéo continuent à fonctionner et à se lire normalement, après retraitement.
+>Toutes les vidéos que vous avez téléchargées *before* l’activation de la prise en charge du suivi multisous-titre et multiaudio sur votre compte Dynamic Media, [doit être retraité](/help/assets/processing-profiles.md#reprocessing-assets). Cette étape de retraitement vidéo est nécessaire afin que les fonctionnalités de suivi multi-sous-titre et multi-audio soient disponibles. Les URL de la vidéo continuent à fonctionner et à se lire normalement, après retraitement.
 
 **Pour activer la prise en charge du suivi DASH, multi-sous-titres et multi-audio sur votre compte Dynamic Media :**
 
@@ -625,7 +625,7 @@ Les sous-titres et légendes ajoutés sont pris en charge avec les formats WebVT
 
 >[!IMPORTANT]
 >
->Toutes les vidéos que vous avez téléchargées *before* l’activation de la prise en charge du suivi multititre et multiaudio sur votre compte Dynamic Media, [doit être retraité](/help/assets/processing-profiles.md#reprocessing-assets). Cette étape de retraitement vidéo est nécessaire afin que les fonctionnalités de suivi multi-sous-titre et multi-audio soient disponibles. Les URL de la vidéo continuent à fonctionner et à se lire normalement, après retraitement.
+>Toutes les vidéos que vous avez téléchargées *before* l’activation de la prise en charge du suivi multisous-titre et multiaudio sur votre compte Dynamic Media, [doit être retraité](/help/assets/processing-profiles.md#reprocessing-assets). Cette étape de retraitement vidéo est nécessaire afin que les fonctionnalités de suivi multi-sous-titre et multi-audio soient disponibles. Les URL de la vidéo continuent à fonctionner et à se lire normalement, après retraitement.
 
 **Pour ajouter plusieurs sous-titres et plusieurs pistes audio à votre vidéo :**
 
@@ -637,9 +637,14 @@ Les sous-titres et légendes ajoutés sont pris en charge avec les formats WebVT
 1. Sur la page Propriétés de la vidéo, sélectionnez la variable **[!UICONTROL Sous-titres et suivi audio]** .
 
    >[!TIP]
-   >Si vous ne voyez pas le **[!UICONTROL Sous-titres et suivi audio]** , cela signifie que le dossier dans lequel réside la vidéo sélectionnée n’est pas associé à un profil vidéo. [Application d’un profil vidéo au dossier](/help/assets/video-profiles.md#applying-video-profiles-to-specific-folders), puis revenez à ces étapes.
+   >Si vous ne voyez pas le **[!UICONTROL Sous-titres et suivi audio]** , cela signifie l’une des deux choses suivantes :
+   >
+   >* Aucun profil vidéo n’est affecté au dossier dans lequel se trouve la vidéo sélectionnée. Dans ce cas, voir [Application d’un profil vidéo au dossier](/help/assets/video-profiles.md#applying-video-profiles-to-specific-folders).
+   >* Ou, la vidéo doit être retraitée par Dynamic Media. Dans ce cas, voir [Retraitement des ressources dans un dossier](/help/assets/processing-profiles.md#reprocessing-assets).
+   >
+   >Une fois l’une des tâches ci-dessus terminée, revenez à ces étapes.
 
-   ![Sous-titres et Suivi audio dans la page Propriétés.](assets-dm/msma-audiotracks.png)*Onglet Sous-titres et Suivi audio de la page Propriétés de la vidéo. Notez qu’aucune piste audio d’origine n’est associée à la vidéo, comme indiqué par une zone de liste Suivi audio vide. Une fois le traitement vidéo terminé, la piste s’affiche.*
+   ![Sous-titres et Suivi audio dans la page Propriétés.](assets-dm/msma-audiotracks.png)*Onglet Sous-titres et Suivi audio de la page Propriétés de la vidéo.*
 
 1. (Facultatif) Pour ajouter un ou plusieurs fichiers de sous-titre (ou légende) à une vidéo, procédez comme suit :
    * Sélectionner **[!UICONTROL Télécharger des sous-titres]**.
@@ -721,15 +726,15 @@ Vous pouvez observer l’état de cycle de vie d’un sous-titre ou d’un fichi
 1. Accédez à la ressource vidéo dont vous souhaitez afficher l’état de cycle de vie.
 1. En mode de sélection des ressources, en mode Liste ou Carte, sélectionnez la ressource vidéo.
 1. Dans la barre d’outils, sélectionnez l’icône Propriétés (un cercle avec un &quot;i&quot; à l’intérieur).
-1. Sur les pages Propriétés, sélectionnez l’option **[!UICONTROL Sous-titres et suivi audio]** . Dans la colonne État , notez l’état de chaque sous-titre ou fichier audio.
+1. Sur la page Propriétés , sélectionnez la variable **[!UICONTROL Sous-titres et suivi audio]** . Dans la colonne État , notez l’état de chaque sous-titre ou fichier audio.
 
 | État du sous-titre ou du suivi audio | Description |
 | --- | --- |
-| Traitement | Le traitement est en cours. |
-| Traité | Le traitement est terminé. |
-| Publié | Publié sur Dynamic Media. |
-| Échec | Le traitement ne s’est pas terminé. Supprimez le fichier et réessayez de le charger. |
-| Dépublié | Traitement mais pas encore publié sur Dynamic Media. |
+| Traitement | Lorsqu’un nouveau sous-titre ou fichier de suivi audio est ajouté et enregistré, il passe à l’état &quot;Traitement&quot;. Dynamic Media traite le fichier en joignant le manifeste de diffusion en continu à la vidéo principale. |
+| Traité | Une fois le traitement terminé, le sous-titre ou le fichier de suivi audio s’affiche à l’état &quot;Traités&quot;. Vous pouvez prévisualiser les fichiers de sous-titre et de suivi audio qui apparaissent comme &quot;Traités&quot;. *before* vous publiez la vidéo en direct. |
+| Publié | Un état &quot;Publié&quot; représente un état similaire à &quot;Publié&quot; pour une vidéo principale. Les ressources sont publiées lorsque la vidéo principale est publiée et sont disponibles sur l’URL Dynamic Media publique. |
+| Échec | Un état &quot;Failed&quot; signifie que le traitement d’un sous-titre ou d’un fichier de piste audio n’a pas été terminé. Supprimez le sous-titre ou le fichier de suivi audio et chargez à nouveau le fichier. |
+| Dépublié | Lorsqu’une vidéo principale publiée est explicitement dépubliée, tout sous-titre ou fichier de suivi audio que vous avez ajouté à la vidéo est également dépublié. |
 
 ![Colonne État mise en surbrillance pour les champs Sous-titres et Suivi audio .](assets-dm/msma-lifecycle-status.png)*État de cycle de vie de chaque sous-titre et fichier de suivi audio chargés.*
 
@@ -751,7 +756,7 @@ Cependant, les fichiers de suivi audio chargés peuvent être définis comme le 
 1. Accédez à la ressource vidéo dont vous souhaitez définir la piste audio par défaut.
 1. En mode de sélection des ressources, en mode Liste ou Carte, sélectionnez la ressource vidéo.
 1. Dans la barre d’outils, sélectionnez l’icône Propriétés (un cercle avec un &quot;i&quot; à l’intérieur).
-1. Sur les pages Propriétés, sélectionnez l’option **[!UICONTROL Sous-titres et suivi audio]** .
+1. Sur la page Propriétés , sélectionnez la variable **[!UICONTROL Sous-titres et suivi audio]** .
 1. Sous , **Suivi audio** , sélectionnez le fichier de suivi audio à définir comme valeur par défaut de la vidéo.
 1. Sélectionner **[!UICONTROL Définir comme valeur par défaut]**.
 Dans le **Définir comme valeur par défaut** boîte de dialogue, sélectionnez **[!UICONTROL Remplacer]**.
@@ -763,7 +768,7 @@ Dans le **Définir comme valeur par défaut** boîte de dialogue, sélectionnez 
 
 ### Prévisualiser une vidéo comportant plusieurs sous-titres et pistes audio{#preview-video-audio-subtitle}
 
-Une fois les fichiers de sous-titre et de suivi audio chargés dans une vidéo et traités, vous pouvez utiliser la visionneuse de vidéos Dynamic Media pour prévisualiser toutes les différentes pistes. Cela vous permet de voir à quoi ressemble votre vidéo pour les clients et de vous assurer qu’elle se comporte comme prévu.
+Une fois les fichiers de sous-titre et de suivi audio chargés dans une vidéo et traités, vous pouvez utiliser la visionneuse de vidéos Dynamic Media (ou d’autres types de visionneuses, si vous le souhaitez) pour prévisualiser toutes les différentes pistes. La prévisualisation vous permet de voir à quoi ressemble votre vidéo pour les clients et de vous assurer qu’elle se comporte comme prévu.
 
 Lorsque la vidéo vous satisfait, vous pouvez [publier](publishing-dynamicmedia-assets.md) en utilisant l’une des méthodes suivantes.
 
@@ -783,15 +788,15 @@ L’onglet Aperçu du Experience Manager par défaut n’affiche pas plusieurs p
 
    ![Liste déroulante présentant l’option Visionneuses .](assets-dm/msma-selectviewers.png)
 
-1. Dans la liste des visionneuses, sélectionnez **[!UICONTROL Video]**.
+1. Dans la liste Visionneuses , sélectionnez une visionneuse à utiliser pour l’aperçu vidéo. Par exemple, la capture d’écran suivante illustre la variable **[!UICONTROL Vidéo]** visionneuse sélectionnée.
 
    ![Sélection de la visionneuse de vidéos dans la liste déroulante Visionneuses .](assets-dm/msma-dmviewerselected.png)
 
-1. Près du coin inférieur droit, à gauche de l’icône en forme de volume, sélectionnez l’icône en forme de bulle vocale, puis sélectionnez le son ou le sous-titre que vous souhaitez entendre, voir ou les deux. Si vous le souhaitez, sous Sous-titres, vous pouvez sélectionner **[!UICONTROL Off]** pour ne pas afficher de sous-titres ou de sous-titres.
+1. Près du coin inférieur droit, à gauche de l’icône en forme de volume, sélectionnez l’icône en forme de bulle vocale, puis sélectionnez l’audio ou le sous-titre que vous souhaitez entendre, ou voir ou les deux. Si vous le souhaitez, sous Sous-titres, vous pouvez sélectionner **[!UICONTROL Off]** pour ne pas afficher de sous-titres ou de sous-titres.
 
    ![La liste contextuelle Audio et sous-titres dans la visionneuse de vidéos.](assets-dm/msma-selectaudiosubtitle.png)*Simulation d’un utilisateur sélectionnant le contenu audio et le sous-titre pour la lecture vidéo.*
 
-1. Sélectionnez la **[!UICONTROL Play]** pour lancer la lecture.
+1. Pour commencer la lecture, sélectionnez le bouton **[!UICONTROL Lecture]** de la vidéo.
 Notez que **[!UICONTROL URL]** et **[!UICONTROL Incorporer]** dans le coin inférieur gauche. Utilisez ces boutons pour [lier l’URL de la vidéo à votre application web](/help/assets/linking-urls-to-yourwebapplication.md) ou [incorporer la vidéo dans une page web ;](/help/assets/embed-code.md), respectivement.
 1. Dans le coin supérieur droit de la page d’aperçu, sélectionnez **[!UICONTROL Fermer]**.
 
@@ -806,7 +811,7 @@ La piste audio d’origine extraite d’une vidéo principale ne peut pas être 
 1. Accédez à la ressource vidéo dont vous souhaitez définir la piste audio par défaut.
 1. En mode de sélection des ressources, en mode Liste ou Carte, sélectionnez la ressource vidéo.
 1. Dans la barre d’outils, sélectionnez l’icône Propriétés (un cercle avec un &quot;i&quot; à l’intérieur).
-1. Sur les pages Propriétés, sélectionnez l’option **[!UICONTROL Sous-titres et suivi audio]** .
+1. Sur la page Propriétés , sélectionnez la variable **[!UICONTROL Sous-titres et suivi audio]** .
 1. Effectuez l’une des opérations suivantes :
 
    * Sous-titres : sous **Sous-titres** , sélectionnez un ou plusieurs fichiers de sous-titre à supprimer de la vidéo, puis sélectionnez **[!UICONTROL Supprimer]**.
@@ -826,7 +831,7 @@ La piste audio d’origine extraite d’un fichier principal ne peut pas être t
 1. Accédez à la ressource vidéo dont vous souhaitez définir la piste audio par défaut.
 1. En mode de sélection des ressources, en mode Liste ou Carte, sélectionnez la ressource vidéo.
 1. Dans la barre d’outils, sélectionnez l’icône Propriétés (un cercle avec un &quot;i&quot; à l’intérieur).
-1. Sur les pages Propriétés, sélectionnez l’option **[!UICONTROL Sous-titres et suivi audio]** .
+1. Sur la page Propriétés , sélectionnez la variable **[!UICONTROL Sous-titres et suivi audio]** .
 1. Effectuez l’une des opérations suivantes :
 
    * Sous-titres : sous **Sous-titres** , sélectionnez un ou plusieurs fichiers de sous-titre à télécharger à partir de la vidéo, puis sélectionnez **[!UICONTROL Télécharger]**.
@@ -915,11 +920,7 @@ Pour plus d’informations sur l’utilisation de la fonction JSON dans une URL,
 
 ## Ajout de marqueurs de chapitre à la vidéo {#adding-chapter-markers-to-video}
 
->[!IMPORTANT]
->
-Cette rubrique n’est plus activement gérée. Il est fourni en l’état pour les utilisateurs hérités de Dynamic Media. Adobe vous recommande de [activation de la fonctionnalité de suivi multisous-titre et multiaudio ;](#enable-dash) sur votre compte Dynamic Media. Cela vous permet de tirer parti de la dernière architecture du serveur principal Dynamic Media et d’un processus simplifié pour ajouter des sous-titres, des sous-titres et des pistes audio à vos vidéos.
-
-Vous pouvez faciliter la lecture et le parcours de vos vidéos les plus longues en ajoutant des marqueurs de chapitre aux vidéos uniques ou aux visionneuses de vidéos adaptatives. Lorsqu’un utilisateur lit la vidéo, il peut cliquer sur les marqueurs de chapitre dans la chronologie de la vidéo (également appelée défilement vidéo) pour accéder facilement à son point ciblé. Il peut également accéder immédiatement à de nouveaux contenus, à des démonstrations et à des tutoriels.
+Vous pouvez faciliter la lecture et la navigation de vos vidéos longues en ajoutant des marqueurs de chapitre aux vidéos uniques ou aux visionneuses de vidéos adaptatives. Lorsqu’un utilisateur lit la vidéo, il peut cliquer sur les marqueurs de chapitre dans la chronologie de la vidéo (également appelée défilement vidéo) pour accéder facilement à son point ciblé. Il peut également accéder immédiatement à de nouveaux contenus, à des démonstrations et à des tutoriels.
 
 >[!NOTE]
 >
@@ -1447,7 +1448,7 @@ Dans cet exemple, prenons la configuration suivante :
 * Le dossier `/content/dam/video-example` est associé à un profil de codage vidéo.
 * La vidéo `scenery.mp4` est chargée dans le dossier `/content/dam/video-example`.
 
-Vous pouvez appeler le servlet de la manière suivante :
+Vous pouvez appeler le servlet de la manière suivante :
 
 | Type | Description |
 | :--- | --- |
