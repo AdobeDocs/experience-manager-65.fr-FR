@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 2bba1d5209fe64679c6ba6db0028562ff1415a10
 workflow-type: tm+mt
-source-wordcount: '7589'
-ht-degree: 82%
+source-wordcount: '7690'
+ht-degree: 77%
 
 ---
 
@@ -23,13 +23,13 @@ Vous utilisez des modèles de processus pour convertir une logique métier en pr
 
 ## Étapes de processus Forms {#forms-workflow-steps}
 
-Les étapes du workflow Forms exécutent des opérations spécifiques à AEM Forms dans un workflow AEM. Ces étapes vous permettent de créer rapidement un processus Forms basé sur des formulaires adaptatifs sur OSGi. Ces workflows peuvent être utilisés pour développer des processus de révision et d’approbation de base, des workflows métier internes et sur le pare-feu. Vous pouvez également utiliser des étapes Forms Workflow pour démarrer Document Services, intégrer le processus de signature Adobe Sign et effectuer d’autres opérations AEM Forms. Vous avez besoin de [Module complémentaire AEM Forms](https://www.adobe.com/go/learn_aemforms_documentation_63_fr) pour utiliser ces étapes dans un workflow.
+Les étapes du Forms Workflow effectuent des opérations spécifiques à AEM Forms dans un workflow AEM. Ces étapes vous permettent de créer rapidement un processus Forms basé sur des formulaires adaptatifs sur OSGi. Ces workflows peuvent être utilisés pour développer des processus de révision et d’approbation de base, des workflows métier internes et sur le pare-feu. Vous pouvez également utiliser des étapes Forms Workflow pour démarrer Document Services, intégrer le processus de signature Adobe Sign et effectuer d’autres opérations AEM Forms. Vous avez besoin de [Module complémentaire AEM Forms](https://www.adobe.com/go/learn_aemforms_documentation_63_fr) pour utiliser ces étapes dans un workflow.
 
 Les étapes de processus orientés formulaire effectuent des opérations spécifiques à AEM Forms dans un processus AEM. Ces étapes vous permettent de créer rapidement un processus Forms basé sur Adaptive Forms sur OSGi. Ces workflows peuvent être utilisés pour développer des workflows de révision et d’approbation de base, des processus métier internes et sur le pare-feu.
 
 >[!NOTE]
 >
->Si le modèle de workflow est marqué pour un stockage externe, alors pour toutes les étapes de Forms Workflow, vous pouvez sélectionner uniquement l’option de variable pour stocker ou récupérer les fichiers de données et les pièces jointes.
+>Si le modèle de workflow est marqué pour un stockage externe, alors pour toutes les étapes du Forms Workflow, vous ne pouvez sélectionner que l’option de variable pour stocker ou récupérer les fichiers de données et les pièces jointes.
 
 ## Étape Affecter une tâche {#assign-task-step}
 
@@ -58,7 +58,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 
 >[!NOTE]
 >
->Vous devez disposer des affectations de groupe cm-agent-users et workflow-users pour accéder à l’interface utilisateur de l’agent de communication interactive dans la boîte de réception AEM.
+>Pour accéder à l’interface utilisateur de l’agent de communication interactive dans AEM boîte de réception, vous devez disposer de cm-agent-users et d’affectations de groupe workflow-users .
 
 * **Chemin d’accès du formulaire adaptatif ou de la communication interactive :** spécifiez le chemin du formulaire adaptatif ou de la communication interactive. Vous pouvez utiliser le formulaire adaptatif ou la communication interactive qui est soumis au workflow, disponible au niveau d’un chemin d’accès absolu, ou récupérer le formulaire adaptatif à partir d’un chemin stocké dans une variable de type de données chaîne.
 * **Sélectionner le fichier PDF d’entrée en utilisant :** indiquez le chemin d’accès d’un document PDF non interactif. Le champ apparaît lorsque vous sélectionnez un document PDF non interactif dans le champ Type. Vous pouvez sélectionner le fichier PDF d’entrée à l’aide du chemin d’accès relatif à la charge utile, enregistré à un chemin absolu ou à l’aide d’une variable de type de données Document. Par exemple, [Répertoire_Charge_utile]/Workflow/PDF/credit-card.pdf. Le chemin n’existe pas dans le référentiel CRX. Un administrateur crée le chemin d’accès avant de l’utiliser. Vous avez besoin d’une option Document d’enregistrement activée ou de formulaires adaptatifs basés sur un modèle de formulaire pour utiliser l’option Chemin du PDF .
@@ -268,7 +268,7 @@ L’étape Invoquer le service de modèle de données de formulaire contient les
 * **Sélectionnez le document JSON d’entrée en utilisant** : fichier JSON contenant des valeurs pour tous les arguments de service. Le chemin d’accès du fichier JSON peut être **relatif à la charge utile** ou à un **chemin d’accès absolu.** Vous pouvez également récupérer le document JSON d’entrée à l’aide d’une variable de type de données JSON ou Modèle de données de formulaire.
 
 * **Notation de point JSON :** Laissez le champ vide pour utiliser tous les objets du fichier JSON spécifié comme entrée pour les arguments de service. Pour lire un objet JSON spécifique à partir du fichier JSON spécifié en tant qu’entrée pour des arguments de service, spécifiez la notation par point pour l’objet JSON. Par exemple, si vous avez un fichier JSON identique à l’un des fichiers indiqué au début de la section, spécifiez insurance.customerDetails pour fournir tous les détails d’un client en tant qu’entrée du service.
-* **Sortie de service et mapper et écrire les valeurs de sortie dans les métadonnées :** sélectionnez cette option pour enregistrer les valeurs de sortie en tant que propriétés du nœud de métadonnées de l’instance de workflow dans le référentiel crx. Spécifiez le nom de la propriété de métadonnées et sélectionnez l’attribut de sortie de service correspondant à mapper avec la propriété de métadonnées, par exemple, mappez la valeur numéro_de_téléphone renvoyé par le service de sortie avec la propriété numéro_de_téléphone des métadonnées du processus. De même, vous pouvez stocker la sortie dans une variable de type données Long. Lorsque vous sélectionnez une propriété pour la variable **[!UICONTROL Attribut de sortie de service à mapper]**, seules les variables pouvant stocker les données de la propriété sélectionnée sont renseignées pour l’option **[!UICONTROL Enregistrez la sortie dans]**.
+* **Sortie de service et mapper et écrire les valeurs de sortie dans les métadonnées :** sélectionnez cette option pour enregistrer les valeurs de sortie en tant que propriétés du nœud de métadonnées de l’instance de workflow dans le référentiel crx. Spécifiez le nom de la propriété de métadonnées et sélectionnez l’attribut de sortie de service correspondant à mapper avec la propriété de métadonnées, par exemple, mappez la valeur numéro_de_téléphone renvoyé par le service de sortie avec la propriété numéro_de_téléphone des métadonnées du processus. De même, vous pouvez stocker la sortie dans une variable de type Long. Lorsque vous sélectionnez une propriété pour l’**[!UICONTROL attribut de sortie de service à mapper]**, seules les variables capables de stocker les données de la propriété sélectionnée sont renseignées pour l’option **[!UICONTROL Enregistrer la sortie dans]**.
 
 * **Sortie de service et sélectionner l’option permettant d’enregistrer les valeurs de sortie dans un fichier JSON :** sélectionnez l’option pour enregistrer les valeurs de sortie dans un fichier JSON à un chemin absolu, à un chemin relatif à la payload, ou dans une variable.
 * **Enregistrer le document JSON de sortie à l’aide des options suivantes :** enregistrez le fichier JSON de sortie. Le chemin d’accès du fichier JSON peut être relatif à la charge utile ou à un chemin d’accès absolu. Vous pouvez également enregistrer le fichier JSON de sortie à l’aide d’une variable de type de données JSON ou Modèle de données de formulaire.
@@ -277,7 +277,7 @@ L’étape Invoquer le service de modèle de données de formulaire contient les
 
 L’étape Signer le document vous permet d’utiliser Adobe Sign pour signer des documents. L’étape Signer le document possède les propriétés suivantes :
 
-* **Nom du contrat :** indiquez le titre du contrat. Le nom du contrat devient une partie de l’objet et du corps du courrier électronique envoyé aux signataires. Vous pouvez soit stocker le nom dans une variable de type de données Chaîne, soit sélectionner **Littéral** pour l’ajouter manuellement.
+* **Nom du contrat :** indiquez le titre du contrat. Le nom de l&#39;accord fait partie de l&#39;objet et du corps du message envoyé aux destinataires. Vous pouvez soit stocker le nom dans une variable de type de données Chaîne, soit sélectionner **Littéral** pour l’ajouter manuellement.
 
 * **Paramètre régional :** spécifiez la langue pour les options de messagerie et de vérification. Vous pouvez stocker le paramètre régional dans une variable de type de données Chaîne ou sélectionner **Littéral** pour choisir le paramètre régional dans la liste des options disponibles. Vous devez définir le code de la langue lors du stockage de la valeur de la langue dans une variable. Par exemple, spécifiez **en_US** pour l’anglais et **fr_FR** pour le français.
 
@@ -292,21 +292,33 @@ L’étape Signer le document vous permet d’utiliser Adobe Sign pour signer de
   Si vous spécifiez le chemin d’accès d’un dossier (des pièces jointes, par exemple), tous les fichiers directement disponibles dans le dossier sont joints au document de signature. Si des fichiers sont présents dans les dossiers directement disponibles dans le chemin d’accès de la pièce jointe spécifiée, les fichiers sont inclus dans le document de signature en tant que pièces jointes. Les dossiers présents dans les dossiers directement disponibles sont ignorés.
 
 * **Jours avant l’échéance :** un document est marqué comme dû (délai expiré) lorsqu’il n’y a plus aucune activité sur la tâche pour le nombre de jours spécifié dans le champ **Jours avant l’échéance.** Le nombre de jours est calculé à partir du jour de l’affectation du document à un utilisateur pour signature.
-* **Fréquence des messages de rappel :** vous pouvez envoyer un message de rappel à intervalle quotidien ou hebdomadaire. La semaine est calculée à compter du jour de l’affectation du document à un utilisateur pour signature.
-* **Processus de signature :** Vous pouvez choisir de signer un document dans un ordre séquentiel ou parallèle. Dans un ordre séquentiel, un signataire à la fois reçoit le document pour signature. Une fois que le premier signataire a terminé la signature du document, le document est envoyé au second signataire, etc. Dans l’ordre parallèle, plusieurs signataires signent un document en même temps.
+* **Fréquence des messages de rappel :** vous pouvez envoyer un message de rappel à intervalle quotidien ou hebdomadaire. La semaine est comptabilisée à partir du jour où le document est attribué à un utilisateur pour signature.
+* **Processus de signature :** Vous pouvez choisir de signer un document dans un ordre séquentiel ou parallèle. Dans l’ordre séquentiel, un destinataire reçoit le document à la fois pour signature. Une fois que le premier destinataire a signé le document, ce dernier est envoyé au second destinataire, etc. Dans un ordre parallèle, plusieurs destinataires peuvent signer un document à la fois.
 * **URL de redirection :** Spécifiez une URL de redirection. Une fois le document signé, vous pouvez rediriger la personne désignée vers une URL. En règle générale, cette URL contient un message de remerciement ou d’autres instructions.
 * **Phase de processus :** un processus peut se composer de plusieurs phases. Ces phases sont affichées dans la boîte de réception AEM. Vous pouvez définir ces phases dans les propriétés du modèle (Sidekick > Page > Propriétés de la page > Phases).
-* **Sélectionner les signataires :** indiquez la méthode utilisée pour sélectionner des signataires pour le document. Vous pouvez affecter de manière dynamique le processus à un utilisateur ou à un groupe ou ajouter manuellement les informations d’un signataire.
-* **Script ou service pour sélectionner les signataires :** Cette option n’est disponible que si l’option Dynamiquement est sélectionnée dans le champ Sélectionner les signataires . Vous pouvez spécifier un script ECMAScript ou un service pour sélectionner des signataires et des options de vérification pour un document.
-* **Détails du signataire :** cette option est disponible uniquement si l’option Manuellement est sélectionnée dans le champ Sélectionner les signataires. Indiquez l’adresse électronique et choisissez une méthode de vérification facultative. Avant de sélectionner une méthode de vérification en 2 étapes, assurez-vous que l’option de vérification correspondante est activée pour le compte Adobe Sign configuré. Vous pouvez utiliser une variable de type Chaîne pour définir des valeurs pour les champs **[!UICONTROL E-mail]**, **[!UICONTROL Code de pays]** et **[!UICONTROL Numéro de téléphone]**. Les champs **[!UICONTROL Code pays]** et **[!UICONTROL Numéro de téléphone]** s’affichent uniquement si vous sélectionnez **[!UICONTROL Vérification téléphonique]** dans la liste déroulante de **[!UICONTROL vérification en 2 étapes]**.
+* **Sélectionner les destinataires :** Indiquez la méthode de sélection du destinataire pour le document. Vous pouvez affecter dynamiquement le workflow à un utilisateur ou à un groupe ou ajouter manuellement les détails d’un destinataire. Lorsque vous sélectionnez Manuellement dans la liste déroulante, vous ajoutez les détails du destinataire tels que Email, Role et Authentication method (E-mail, rôle et méthode d’authentification).
+
+  >[!NOTE]
+  >
+  >* Dans la section Rôle , vous pouvez spécifier le rôle du destinataire en tant que Signataire, Approbateur, Accepteur, Destinataire certifié, Utilisateur de formulaire et Délégué.
+  >* Si vous sélectionnez Délégué dans l’option Rôle , le Délégué peut affecter la tâche de signature à un autre destinataire.
+  >* Si vous avez configuré une méthode d’authentification pour [!DNL Adobe Sign], en fonction de votre configuration, vous sélectionnez une méthode d’authentification telle que l’authentification téléphonique, l’authentification basée sur les identités sociales, l’authentification basée sur les connaissances et l’authentification basée sur les identités gouvernementales.
+* **Script ou service pour sélectionner les destinataires :** Cette option n’est disponible que si vous sélectionnez Option dynamique dans le champ Sélectionner les destinataires . Vous pouvez spécifier un ECMAScript ou un service pour choisir les destinataires et les options de vérification d’un document.
+* **Détails du destinataire :** Cette option n’est disponible que si l’option Manuellement est sélectionnée dans le champ Sélectionner les destinataires . Indiquez l’adresse électronique et choisissez une méthode de vérification facultative. Avant de sélectionner une méthode de vérification en 2 étapes, assurez-vous que l’option de vérification correspondante est activée pour le compte Adobe Sign configuré. Vous pouvez utiliser une variable de type Chaîne pour définir des valeurs pour les champs **[!UICONTROL E-mail]**, **[!UICONTROL Code de pays]** et **[!UICONTROL Numéro de téléphone]**. Les champs **[!UICONTROL Code pays]** et **[!UICONTROL Numéro de téléphone]** s’affichent uniquement si vous sélectionnez **[!UICONTROL Vérification téléphonique]** dans la liste déroulante de **[!UICONTROL vérification en 2 étapes]**.
 * **Variable de statut :** le statut de signature d’un document activé par Adobe Sign est stocké dans une variable de type de données Chaîne. Spécifiez le nom de la variable d’état (adobeSignStatus). Une variable de statut d’une instance est disponible dans CRXDE à l’emplacement /etc/workflow/instances/&lt;server>/&lt;date-heure>/&lt;instance de modèle de processus>/workItems/&lt;node>/metaData. Elle contient le statut d’une variable.
-* **Enregistrer le document signé à l’aide des options ci-dessous :** indiquez l’emplacement où conserver les documents signés. Vous pouvez remplacer le dossier de payload, placer le document d’enregistrement à un emplacement du répertoire de payload ou stocker le document d’enregistrement dans une variable de type de données Document.
+* **[!UICONTROL Signed Document]**: vous pouvez enregistrer l’état du document signé dans la variable . Pour ajouter le journal d’audit des signatures électroniques afin d’accroître la sécurité et la légalité de votre document signé, vous pouvez inclure le rapport d’audit. Vous pouvez enregistrer le document signé à l’aide du dossier Variable ou Charge utile .
+  >[!NOTE]
+  >
+  > Le rapport d’audit est ajouté à la dernière page du document signé.
+<!--
+* **Save signed document using below options:** Specify the location to keep signed documents. You can choose to overwrite the payload file, place the signed document at a location within the payload directory, or store the signed document in a variable of Document type.
+-->
 
 ## Étapes de Document Services {#document-services-steps}
 
 AEM Services de document est un ensemble de services permettant de créer, d’assembler et de sécuriser des documents PDF. AEM Forms fournit une étape de workflow AEM distincte pour chaque service de document.
 
-Comme pour d’autres étapes de workflow AEM Forms, telles qu’Affecter une tâche, Envoyer un e-mail et Signer un document, vous pouvez utiliser des variables dans toutes les étapes AEM Document Services. Pour plus d’informations sur la création et la gestion des variables, voir [Variables dans les workflows AEM](../../forms/using/variable-in-aem-workflows.md).
+Comme pour d’autres étapes de processus AEM Forms, telles que Affecter une tâche, Envoyer un courrier électronique et Signer un document, vous pouvez utiliser des variables dans toutes les étapes AEM Document Services. Pour plus d’informations sur la création et la gestion des variables, voir [Variables dans les workflows AEM](../../forms/using/variable-in-aem-workflows.md).
 
 ### Étape Appliquer l’horodatage du document {#apply-document-time-stamp-step}
 
@@ -398,7 +410,7 @@ Envoyez directement un document à une imprimante. Il prend en charge les mécan
 
 ### Générer l’étape de sortie imprimée {#generatePrintedOutput}
 
-L’opération génère une sortie PCL, PostScript, ZPL, IPL, TPCL ou DPL à l’aide d’une conception de formulaire et d’un fichier de données. Le fichier de données est fusionné avec la conception de formulaire et mis en forme pour l’impression. La sortie générée par cette opération peut être envoyée directement vers une imprimante ou enregistrée en tant que fichier. Il est recommandé d’utiliser cette opération lorsque vous souhaitez utiliser des conceptions de formulaire ou des données à partir d’une application. Si vos conceptions de formulaire se trouvent sur le réseau, un système de fichiers local ou un emplacement HTTP, utilisez l’opération generatePrintedOutput.
+L’opération génère une sortie PCL, PostScript, ZPL, IPL, TPCL ou DPL à l’aide d’une conception de formulaire et d’un fichier de données. Le fichier de données est fusionné avec la conception de formulaire et mis en forme pour l’impression. La sortie générée par cette opération peut être envoyée directement vers une imprimante ou enregistrée en tant que fichier. Il est recommandé d’utiliser cette opération lorsque vous souhaitez utiliser des conceptions de formulaire ou des données à partir d’une application. Si vos conceptions de formulaire se trouvent sur le réseau, le système de fichiers local ou l’emplacement HTTP, utilisez l’opération generatePrintedOutput.
 
 Par exemple, votre application requiert la fusion d’une conception de formulaire avec un fichier de données. Les données contiennent des centaines d’enregistrements. En outre, la sortie doit être envoyée à une imprimante prenant en charge ZPL. La conception de formulaire et vos données d’entrée se trouvent dans une application. Utilisez l’opération generatePrintedOutput pour fusionner chaque enregistrement avec une conception de formulaire et envoyer la sortie à une imprimante prenant en charge ZPL.
 
@@ -414,7 +426,7 @@ L’opération Générer une sortie imprimée présente les propriétés suivant
 
    * **[!UICONTROL Custom PCL]** : utilisez cette option pour spécifier un fichier XDC personnalisé pour PCL.
    * **[!UICONTROL Custom PostScript]** : utilisez cette option pour spécifier un fichier XDC personnalisé pour PostScript.
-   * **[!UICONTROL Custom ZPL]** : utilisez cette option pour spécifier un fichier XDC personnalisé pour ZPL.
+   * **[!UICONTROL ZPL personnalisé]**: utilisez cette option pour spécifier un fichier XDC personnalisé pour ZPL.
    * **[!UICONTROL Generic Color PCL (5c)]** : utilisez une couleur générique PCL (5c).
    * **[!UICONTROL Generic PostScript Level3]** : utilisez PostScript Level 3 générique.
    * **[!UICONTROL ZPL 300 DPI]** : utilisez ZPL 300 DPI. Le fichier zpl300.xdc est utilisé.
@@ -432,7 +444,7 @@ L’opération Générer une sortie imprimée présente les propriétés suivant
 
 **Propriétés de sortie**
 
-* **[!UICONTROL Enregistrer le document de sortie à l’aide de]** : indiquez l’emplacement d’enregistrement du fichier de sortie. Vous pouvez enregistrer le fichier de sortie à un emplacement relatif à la payload, dans une variable ou spécifier un emplacement absolu pour enregistrer le fichier de sortie. Si le chemin d’accès n’existe pas dans le référentiel crx, un administrateur peut le créer avant de l’utiliser.
+* **[!UICONTROL Enregistrer le document de sortie à l’aide de]** : indiquez l’emplacement d’enregistrement du fichier de sortie. Vous pouvez enregistrer le fichier de sortie à un emplacement relatif à la charge utile, dans une variable, ou spécifier un emplacement absolu pour enregistrer le fichier de sortie. Si le chemin d’accès n’existe pas dans le référentiel crx, un administrateur peut le créer avant de l’utiliser.
 
 **Propriétés avancées**
 
