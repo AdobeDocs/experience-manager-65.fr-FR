@@ -9,10 +9,10 @@ breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 role: User
 feature: Forms Service
-source-git-commit: e19a7e617bdabb678bd804cab3fea228ce19acfa
+source-git-commit: 28cc10b79d2ac8cf12ddfd0bf7d1a8e013fe6238
 workflow-type: tm+mt
-source-wordcount: '3897'
-ht-degree: 99%
+source-wordcount: '3912'
+ht-degree: 98%
 
 ---
 
@@ -136,6 +136,7 @@ ht-degree: 99%
    + [Activation des composants principaux pour votre environnement](/help/forms/using/enable-adaptive-forms-core-components.md)
    + [Création d’un formulaire adaptatif basé sur des composants principaux](/help/forms/using/create-an-adaptive-form-core-components.md)
    + [Création de thèmes pour le Forms adaptatif basé sur les composants principaux](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
+   + [Création et utilisation d’un gestionnaire d’erreurs personnalisé pour le Forms adaptatif basé sur les composants principaux](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
 + Formulaires adaptatifs - Création de base {#adaptive-forms-basic-authoring}
    + [Meilleures pratiques pour travailler avec les formulaires adaptatifs](using/adaptive-forms-best-practices.md)
    + [Création d’un formulaire adaptatif](using/creating-adaptive-form.md)
@@ -188,7 +189,7 @@ ht-degree: 99%
    + [Incorporation d’Adobe Sign à AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
    + [Création et gestion de révisions des actifs d’un formulaire](using/create-reviews-forms.md)
    + [Incorporer un formulaire adaptatif ou une communication interactive dans une application dʼune seule page AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
-   + [Messages dʼerreur de validation standard pour les formulaires adaptatifs](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
+   + [Créer et utiliser un gestionnaire d’erreurs personnalisé pour Adaptive Forms](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
 + Communications interactives {#interactive-communications}
    + [Introduction à l’interface utilisateur de création d’une communication interactive](using/introduction-interactive-communication-authoring.md)
    + [Créer une communication interactive](using/create-interactive-communication.md)

@@ -10,9 +10,9 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 0985e591df83c7f1604bac37af771e8a7a21e691
 workflow-type: tm+mt
-source-wordcount: '6929'
+source-wordcount: '6983'
 ht-degree: 56%
 
 ---
@@ -151,7 +151,19 @@ Pour plus d’informations à propos de la configuration des services dans le mo
 
 Pour plus d’informations à propos de la configuration des services dans le modèle de données de formulaire, voir [Intégration des données AEM Forms](/help/forms/using/data-integration.md).
 
-La variable **Définir la propriété** type de règle permet de définir la valeur d’une propriété de l’objet spécifié en fonction d’une action de condition.
+La variable **[!UICONTROL Définir la propriété]** type de règle permet de définir la valeur d’une propriété de l’objet spécifié en fonction d’une action de condition. Vous pouvez définir la propriété sur l’une des options suivantes :
+* visible (booléen)
+* dorExclusion (booléen)
+* chartType (String)
+* title (String)
+* enabled (booléen)
+* mandatory (booléen)
+* validationsDisabled (booléen)
+* validateExpMessage (chaîne)
+* value (Number, String, Date)
+* items (List)
+* valid (boolean)
+* errorMessage (String)
 
 Il permet de définir des règles pour ajouter de façon dynamique des cases à cocher au formulaire adaptatif. Pour définir une règle, vous pouvez utiliser une fonction personnalisée, un objet de formulaire ou une propriété d’objet.
 
@@ -818,6 +830,10 @@ La règle suivante indique comment configurer l’action du service Invoke pour 
 ![example-invoke-services](assets/example-invoke-services.png)
 
 Appeler le service de modèle de données de formulaire à l’aide de la règle de formulaire adaptatif
+
+>[!NOTE]
+>
+>Si l’entrée est de type tableau, les champs qui prennent en charge les tableaux sont visibles dans la section déroulante Sortie .
 
 ### Déclenchement de plusieurs actions à l’aide de la règle Lorsque {#triggering-multiple-actions-using-the-when-rule}
 

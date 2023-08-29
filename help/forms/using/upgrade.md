@@ -11,14 +11,14 @@ discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 077208ed8fea6a644487dbb46efb54ea44f303b4
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 96%
+source-wordcount: '341'
+ht-degree: 87%
 
 ---
 
-# Mise à niveau vers AEM 6.5 Forms{#upgrade-to-aem-forms}
+# Mise à niveau vers AEM 6.5 Forms {#upgrade-to-aem-forms}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -49,6 +49,7 @@ Le diagramme suivant affiche les chemins de mise à niveau disponibles pour AEM�
 
 ![Mise à niveau de JEE 6.5](do-not-localize/jee-upgrade-6-5.png)
 
+
 Vous pouvez effectuer une mise à niveau directe depuis :
 
 * AEM 6.3 Forms on JEE
@@ -57,16 +58,14 @@ Vous pouvez effectuer une mise à niveau directe depuis :
 
 Vous pouvez également effectuer une mise à niveau en plusieurs étapes depuis
 
-* LiveCycle ES2
-* LiveCycle ES3
 * LiveCycle ES4 SP1
 * AEM 6.0 Forms on JEE
 * AEM 6.1 Forms on JEE
 * AEM 6.2 Forms on JEE
 
-AEM 6.5.12.0 Forms on JEE fournit deux types de programme d’installation : le [programme d’installation complet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) et le [programme d’installation des correctifs](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
+AEM 6.5.18.0 Forms on JEE fournit deux types de programme d’installation : le [programme d’installation complet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) et le [programme d’installation des correctifs](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
 
-**Programme d’installation complet** : vous pouvez utiliser le programme d’installation complet pour configurer de nouvelles instances AEM Forms ou effectuer des mises à niveau depuis AEM 6.3 Forms on JEE, AEM 6.4 on JEE et une mise à niveau dynamique d’AEM 6.5.x.x Forms on JEE vers 6.5.12.0 Forms on JEE.
+**Programme d’installation complet**: vous pouvez utiliser le programme d’installation complet pour configurer de nouvelles instances AEM Forms ou effectuer des mises à niveau d’AEM Forms on JEE 6.5.x.x vers AEM 6.5.18.0 Forms on JEE.
 
 **Programme d’installation des correctifs** : le programme d’installation des correctifs s’adresse aux client(e)s qui utilisent déjà les versions AEM 6.5.x.x. Vous pouvez utiliser le programme d’installation des correctifs pour effectuer la mise à niveau vers la dernière version d’AEM Forms.
 
