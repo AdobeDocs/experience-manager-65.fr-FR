@@ -10,9 +10,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: ee1a0866aafd56fa53f5d3b936beab8f500d335c
+source-git-commit: 051e6838bea0be9f826183db935d33725c18386d
 workflow-type: tm+mt
-source-wordcount: '11363'
+source-wordcount: '11313'
 ht-degree: 69%
 
 ---
@@ -702,11 +702,7 @@ Dans le cas où vous avez configuré Dynamic Media pour une publication immédia
 
 #### Ajout de plusieurs sous-titres à une vidéo contenant une URL existante avec le modificateur de sous-titres
 
-Dynamic Media prend en charge l’ajout d’une légende unique avec vidéo au moyen d’un modificateur d’URL (voir [caption](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=en)).
-
-<!-- IS THE CORRECT LINK THE ONE ABOVE OR IS IT THE LINK BELOW???? -->
-
-Pour plus d’informations sur l’utilisation de la fonction JSON dans une URL, reportez-vous à la section [Service de contenu statique (hors images)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html?lang=fr#image-serving-api) dans l’*Aide de l’API de service et de rendu d’images de Dynamic Media*.
+Dynamic Media prend en charge l’ajout d’une légende unique avec vidéo au moyen d’un modificateur d’URL. Voir [Ajout de sous-titres à une vidéo](#adding-captions-to-video).
 
 Plusieurs modifications de légende ont la priorité sur une légende ajoutée par l’intermédiaire d’un modificateur d’URL pour les vidéos publiées.
 
@@ -731,7 +727,7 @@ Vous pouvez observer l’état de cycle de vie d’un sous-titre ou d’un fichi
 | État du sous-titre ou du suivi audio | Description |
 | --- | --- |
 | Traitement | Lorsqu’un nouveau sous-titre ou fichier de suivi audio est ajouté et enregistré, il passe à l’état &quot;Traitement&quot;. Dynamic Media traite le fichier en joignant le manifeste de diffusion en continu à la vidéo principale. |
-| Traité | Une fois le traitement terminé, le sous-titre ou le fichier de suivi audio s’affiche à l’état &quot;Traités&quot;. Vous pouvez prévisualiser les fichiers de sous-titre et de suivi audio qui apparaissent comme &quot;Traités&quot;. *before* vous publiez la vidéo en direct. |
+| Traité | Une fois le traitement terminé, le sous-titre ou le fichier de suivi audio, ou la piste audio d’origine associée à la vidéo principale, s’affiche à l’état &quot;Traités&quot;. Vous pouvez prévisualiser les fichiers de sous-titre et de suivi audio qui apparaissent comme &quot;Traités&quot;. *before* vous publiez la vidéo en direct. |
 | Publié | Un état &quot;Publié&quot; représente un état similaire à &quot;Publié&quot; pour une vidéo principale. Les ressources sont publiées lorsque la vidéo principale est publiée et sont disponibles sur l’URL Dynamic Media publique. |
 | Échec | Un état &quot;Failed&quot; signifie que le traitement d’un sous-titre ou d’un fichier de piste audio n’a pas été terminé. Supprimez le sous-titre ou le fichier de suivi audio et chargez à nouveau le fichier. |
 | Dépublié | Lorsqu’une vidéo principale publiée est explicitement dépubliée, tout sous-titre ou fichier de suivi audio que vous avez ajouté à la vidéo est également dépublié. |
@@ -857,7 +853,7 @@ La piste audio d’origine extraite d’un fichier principal ne peut pas être t
 
 >[!IMPORTANT]
 >
-Cette rubrique n’est plus activement gérée. Il est fourni en l’état pour les utilisateurs hérités de Dynamic Media. Adobe vous recommande de [activation de la fonctionnalité de suivi multisous-titre et multiaudio ;](#enable-dash) sur votre compte Dynamic Media. Cela vous permet de tirer parti de la dernière architecture du serveur principal Dynamic Media et d’un processus simplifié pour ajouter des sous-titres, des sous-titres et des pistes audio à vos vidéos.
+Adobe vous recommande de [activation de la fonctionnalité de suivi multisous-titre et multiaudio ;](#enable-dash) sur votre compte Dynamic Media. Cela vous permet de tirer parti de la dernière architecture du serveur principal Dynamic Media et d’un processus simplifié pour ajouter des sous-titres, des sous-titres et des pistes audio à vos vidéos.
 
 Vous pouvez étendre la portée de vos vidéos aux marchés mondiaux en ajoutant des légendes aux vidéos ou aux visionneuses de vidéos adaptatives. En ajoutant des sous-titrages, vous évitez d’avoir à réenregistrer le son ou de recourir à des locuteurs natifs pour réenregistrer la partie audio dans les différentes langues. La lecture de la vidéo s’effectue dans la langue dans laquelle elle a été enregistrée. Les sous-titres en langues étrangères s’affichent afin que les personnes de différentes langues puissent toujours comprendre la partie audio.
 
