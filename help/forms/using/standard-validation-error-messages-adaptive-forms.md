@@ -8,51 +8,32 @@ contentOwner: anujkapo
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
-feature: Adaptive Forms
-exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
-source-git-commit: 5a475d73ce88035c3f5db47c03b652f3d491420c
+source-git-commit: 34be3b4695679a9b5e8001d28f05ed804f929e61
 workflow-type: tm+mt
-source-wordcount: '2346'
-ht-degree: 8%
+source-wordcount: '893'
+ht-degree: 95%
 
 ---
 
-# Gestionnaires d’erreurs dans Adaptive Forms {#error-handlers-in-adaptive-form}
 
-<span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/using/create-an-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
+# Messages d’erreur de validation standard des formulaires adaptatifs {#standard-validation-error-messages}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/add-custom-error-handler-adaptive-forms.html?lang=fr) |
-| AEM 6.5 | Cet article |
+Les formulaires adaptatifs valident les entrées que vous fournissez dans les champs en fonction de critères de validation prédéfinis. Les critères de validation font référence aux valeurs d’entrée acceptables pour les champs d’un formulaire adaptatif. Vous pouvez définir les critères de validation en fonction de la source de données que vous utilisez avec le formulaire adaptatif. Par exemple, si vous utilisez des services web RESTful comme source de données, vous pouvez définir les critères de validation dans un fichier de définition Swagger.
 
+Si les valeurs d’entrée répondent aux critères de validation, elles sont envoyées à la source de données. Dans le cas contraire, le formulaire adaptatif affiche un message d’erreur.
 
-AEM Forms fournit des gestionnaires de succès et d’erreur prêts à l’emploi pour les envois de formulaires. Il fournit également une fonctionnalité pour personnaliser les fonctions du gestionnaire d’erreurs. Par exemple, vous pouvez appeler un workflow personnalisé dans le serveur principal pour des codes d’erreur spécifiques ou informer le client que le service est hors service. Les gestionnaires sont des fonctions côté client qui s’exécutent en fonction de la réponse du serveur. Lorsqu’un service externe est appelé à l’aide d’API, les données sont transmises au serveur pour validation, qui renvoie une réponse au client avec des informations sur l’événement de succès ou d’erreur pour l’envoi. Les informations sont transmises comme paramètres au gestionnaire approprié pour exécuter la fonction. Un gestionnaire d’erreurs permet de gérer et d’afficher les erreurs ou les problèmes de validation rencontrés.
+De la même manière que cette approche, les formulaires adaptatifs peuvent désormais s’intégrer aux services personnalisés pour effectuer des validations de données. Si les valeurs d’entrée ne répondent pas aux critères de validation et que le message d’erreur de validation renvoyé par le serveur est au format standard du message, les messages d’erreur s’affichent au niveau du champ dans le formulaire.
 
-![workflow du gestionnaire d’erreurs pour comprendre comment ajouter un gestionnaire d’erreurs personnalisé dans les formulaires](/help/forms/using/assets/error-handler-workflow.png)
+Si les valeurs d’entrée ne répondent pas aux critères de validation et que le message d’erreur de validation du serveur n’est pas au format standard du message, les formulaires adaptatifs fournissent un mécanisme pour transformer les messages d’erreur de validation en un format standard afin qu’ils s’affichent au niveau du champ dans le formulaire. Vous pouvez transformer le message d’erreur au format standard à l’aide de l’une des deux méthodes suivantes :
 
-Le formulaire adaptatif valide les entrées que vous fournissez dans les champs en fonction de critères de validation prédéfinis et vérifie diverses erreurs renvoyées par le point de terminaison REST configuré pour appeler un service externe. Vous pouvez définir les critères de validation en fonction de la source de données utilisée avec le formulaire adaptatif. Par exemple, si vous utilisez des services web RESTful comme source de données, vous pouvez définir les critères de validation dans un fichier de définition Swagger.
+* Ajouter un gestionnaire d’erreur personnalisé lors de l’envoi du formulaire adaptatif
+* Ajouter un gestionnaire personnalisé à l’action Service d’appel à l’aide de l’éditeur de règles
 
-Si les valeurs d’entrée répondent aux critères de validation, les valeurs sont envoyées à la source de données, sinon le formulaire adaptatif affiche un message d’erreur à l’aide d’un gestionnaire d’erreurs. De la même manière que cette approche, Adaptive Forms s’intègre aux gestionnaires d’erreurs personnalisés pour effectuer des validations de données. Si les valeurs d’entrée ne répondent pas aux critères de validation, les messages d’erreur s’affichent au niveau du champ dans le formulaire adaptatif. Cela se produit lorsque le message d’erreur de validation renvoyé par le serveur est au format standard du message.
+Cet article décrit le format standard des messages d’erreur de validation et les instructions pour transformer les messages d’erreur d’un format personnalisé en un format standard.
 
+## Format du message d’erreur de validation standard {#standard-validation-message-format}
 
-## Utilisation des gestionnaires d’erreurs {#uses-of-error-handler}
-
-Les gestionnaires d’erreurs sont utilisés à diverses fins. Certaines des utilisations des fonctions de gestionnaire d’erreurs sont répertoriées ci-dessous :
-* **Validation**: la gestion des erreurs commence par la validation des entrées utilisateur par rapport à des règles ou critères prédéfinis. Lorsque les utilisateurs remplissent un formulaire adaptatif, le gestionnaire d’erreurs valide l’entrée afin de s’assurer qu’elle respecte le format, la longueur ou toute autre contrainte requis.
-
-* **Fournir des commentaires en temps réel**: lorsqu’une erreur est détectée, le gestionnaire d’erreurs affiche des commentaires immédiats à l’utilisateur, tels que des messages d’erreur intégrés sous les champs de formulaire correspondants. Ces commentaires permettent aux utilisateurs d’identifier et de corriger les erreurs sans avoir à envoyer le formulaire et attendre une réponse.
-
-
-* **Affichage des messages d’erreur**: lorsqu’un envoi de formulaire adaptatif rencontre une erreur de validation, le gestionnaire d’erreurs affiche un message d’erreur approprié. Les messages d’erreur doivent être clairs, concis et mettre en évidence les champs spécifiques qui nécessitent une attention particulière.
-
-* **Met en surbrillance le champ erroné**: pour attirer l’attention de l’utilisateur sur les champs spécifiques incorrects, le gestionnaire d’erreurs surligne ou distingue visuellement les champs correspondants. Il est effectué en modifiant la couleur d’arrière-plan, en ajoutant une icône ou une bordure, ou tout autre indice visuel qui aide les utilisateurs à localiser et à corriger rapidement les erreurs.
-
-
-## Format de réponse échec/erreur {#failure-response-format}
-
-Un formulaire adaptatif affiche les erreurs au niveau du champ si les messages d’erreur de validation du serveur sont au format standard suivant.
-Le code ci-dessous illustre la structure de réponse d’échec existante :
+Les formulaires adaptatifs affichent les erreurs au niveau du champ si les messages d’erreur de validation du serveur sont au format standard suivant :
 
 ```javascript
    {
@@ -61,307 +42,53 @@ Le code ci-dessous illustre la structure de réponse d’échec existante :
         {
              somExpression  : <somexpr>
              errorMessage / errorMessages : <validationMsg> / [<validationMsg>, <validationMsg>]
+
         }
     ]
     originCode : <target error Code>
     originMessage : <unstructured error message returned by service>
-    }
+}
 ```
-
 
 Où :
 
-* `errorCausedBy` décrit le motif de l’échec..
-* `errors` mentionnez l’expression SOM des champs qui ont échoué aux critères de validation avec le message d’erreur de validation.
-* `originCode` champ ajouté par AEM et contient le code d’état http renvoyé par le service externe.
-* `originMessage` champ ajouté par AEM et contient les données d’erreur brutes renvoyées par le service externe.
+* `errorCausedBy` décrit le motif de l’échec.
+* `errors` mentionne l’expression SOM des champs qui ont échoué aux critères de validation avec le message d’erreur de validation.
+* `originCode` contient le code d’erreur renvoyé par le service externe.
+* `originMessage` contient les données d’erreur brutes renvoyées par le service externe.
 
-Avec les améliorations des fonctionnalités et les mises à jour ultérieures dans les versions d’AEM Forms, la structure de réponse aux échecs existante a été changée en nouveau format basé sur RFC7807, qui est rétrocompatible avec la structure de réponse aux échecs existante :
+## Configurer l’envoi de formulaire adaptatif pour ajouter des gestionnaires personnalisés {#configure-adaptive-form-submission}
 
-```javascript
-    {
-        "type": "SERVER_SIDE_VALIDATION/FORM_SUBMISSION/SERVICE_INVOCATION/FAILURE/VALIDATION_ERROR", (required)
-        "title": "Server side validation failed/Third party service invocation failed", (optional)
-        "detail": "", (optional)
-        "instance": "", (optional)
-        "validationErrors" : [ (required)
-            {
-                "fieldName":"<SOM expression of the field whose data sent is invalid>",
-                "dataRef":<JSONPath (or XPath) of the data element which is invalid>
-                "details": ["Error Message(s) for the field"] (required)
-    
-            }
-        ],
-        "originCode": <Origin http status code>, (optional - in case of SERVER_SIDE_VALIDATION)
-        "originMessage" : "<unstructured error message returned by service>" (optional - in case of SERVER_SIDE_VALIDATION)
-    }
-```
+Si le message d’erreur de validation du serveur ne s’affiche pas dans le format standard, vous pouvez activer l’envoi asynchrone et ajouter un gestionnaire d’erreur personnalisé lors de l’envoi du formulaire adaptatif pour convertir le message dans un format standard.
 
+### Configurer l’envoi asynchrone du formulaire adaptatif {#configure-asynchronous-adaptive-form-submission}
 
->[!NOTE]
->
-> * Assurez-vous que la structure de la réponse d’erreur inclut : **fieldName** ou **dataRef**.
-> * Assurez-vous que la variable **ContentType** header is **application/problème+json**.
+Avant d’ajouter un gestionnaire personnalisé, vous devez configurer le formulaire adaptatif pour l’envoi asynchrone. Procédez comme suit :
 
-Où :
-* `type (required)` spécifie le type d’échec. Il peut s’agir de l’une des valeurs suivantes :
-   * `SERVER_SIDE_VALIDATION` indique un échec en raison de la validation côté serveur.
-   * `FORM_SUBMISSION` indique un échec lors de l’envoi du formulaire
-   * `SERVICE_INVOCATION` indique un échec lors d’un appel de service tiers.
-   * `FAILURE` indique un échec général.
-   * `VALIDATION_ERROR` indique un échec en raison d’une erreur de validation.
-
-* `title (optional)` fournit un titre ou une brève description de l’échec.
-* `detail (optional)` fournit des détails supplémentaires sur l’échec, si nécessaire.
-* `instance (optional)` représente une instance ou un identifiant associé à l’échec et permet de suivre ou d’identifier l’occurrence spécifique de l’échec.
-* `validationErrors (required)` contient des informations sur les erreurs de validation. Il comprend les champs suivants :
-   * `fieldname` mentionne l’expression SOM des champs qui ont échoué aux critères de validation.
-   * `dataRef` représente le chemin JSON ou XPath des champs qui ont échoué à la validation.
-   * `details` contiennent le message d’erreur de validation avec le champ en erreur.
-* `originCode (optional)` champ ajouté par AEM et contient le code d’état http renvoyé par le service externe
-* `originMessage (optional)` champ ajouté par AEM et contient les données d’erreur brutes renvoyées par le service externe.
-
-### Exemple de format de réponse d’erreur {#sample-error-response-format}
-
-Voici quelques options pour afficher les réponses d’erreur :
-
-+++  Basé sur la propriété ChampName du formulaire adaptatif
-
-
-* **`Header:`** `content-type:application/problem+json`
-* **`Response:`**
-
-  ```javascript
-          {
-              "type": "VALIDATION_ERROR",
-              "validationErrors": [
-              {
-              "fieldName": "guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]",
-              "dataRef": "",
-              "details": [
-              "Invalid ID supplied. Provided value is not correct!"
-          ]
-          }
-          ]}
-  ```
-
-  Vous pouvez afficher l’expression SOM de n’importe quel champ d’un formulaire adaptatif en appuyant sur le champ et en sélectionnant le champ **[!UICONTROL Afficher l’expression SOM]**.
-
-  ![Expression Som d’un champ de formulaire adaptatif pour afficher la réponse d’erreur dans le gestionnaire d’erreurs personnalisé](/help/forms/using/assets/custom-error-handler-somexpression.png)
-
-+++
-
-
-+++ Basé sur la propriété dataRef du formulaire adaptatif
-
-* **`Header:`** `content-type:application/problem+json`
-* **`Response:`**
-
-  ```javascript
-      {
-          "type": "VALIDATION_ERROR",
-          "validationErrors": [
-          {
-              "fieldName": "",
-              "dataRef": "/Pet/id",
-              "details": [
-              "Invalid ID supplied. Provided value is not correct!"
-              ]
-              }
-      ]}
-  ```
-
-  ![Référence de données d’un champ de formulaire adaptatif pour afficher la réponse d’erreur dans le gestionnaire d’erreurs personnalisé](/help/forms/using/assets/custom-errorhandler-dataref.png)
-
-Vous pouvez afficher la valeur de dataRef dans la variable **[!UICONTROL Propriétés]** d’un composant de formulaire.
-
-+++
-
-## Conditions préalables requises {#prerequisites}
-
-Avant d’utiliser un gestionnaire d’erreurs personnalisé dans une Forms adaptative :
-
-* Connaissances de base en [créer une fonction personnalisée](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
-* Installez la dernière version de [Apache Maven](https://maven.apache.org/download.cgi).
-
-
-## Ajout d’un gestionnaire d’erreurs à l’aide de l’éditeur de règles {#add-error-handler-using-rule-editor}
-
-En utilisant la variable [Service d’appel de l’éditeur de règles](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) , vous définissez les critères de validation en fonction de la source de données que vous utilisez avec le formulaire adaptatif. Si vous utilisez des services web RESTful comme source de données, vous pouvez définir les critères de validation dans un fichier de définition Swagger. En utilisant les fonctions de gestionnaire d’erreurs et l’éditeur de règles dans Adaptive Forms, vous pouvez gérer et personnaliser efficacement la gestion des erreurs. Vous définissez les conditions à l’aide de l’éditeur de règles et configurez les actions à effectuer lorsque la règle est déclenchée. Le formulaire adaptatif valide les entrées que vous saisissez dans les champs en fonction de critères de validation prédéfinis. Si les valeurs d’entrée ne répondent pas aux critères de validation, les messages d’erreur s’affichent au niveau du champ dans un formulaire adaptatif.
-
->[!NOTE]
->
-> * Pour utiliser des gestionnaires d’erreurs avec l’action de service Invoke de l’éditeur de règles, configurez le Forms adaptatif avec un modèle de données de formulaire.
-> * Un gestionnaire d’erreurs par défaut est fourni pour afficher les messages d’erreur sur les champs si la réponse à l’erreur se trouve dans le schéma standard. Vous pouvez également appeler le gestionnaire d’erreurs par défaut à partir de la fonction de gestionnaire d’erreurs personnalisée.
-
-L’éditeur de règles vous permet d’effectuer les opérations suivantes :
-
-* [Ajouter la fonction de gestionnaire d’erreurs par défaut](#add-default-errror-handler)
-* [Ajout d’une fonction de gestionnaire d’erreurs personnalisée](#add-custom-errror-handler)
-
-
-### Ajouter la fonction de gestionnaire d’erreurs par défaut {#add-default-errror-handler}
-
-Un gestionnaire d’erreurs par défaut est pris en charge pour afficher les messages d’erreur sur les champs si la réponse d’erreur se trouve dans le schéma standard ou dans un échec de validation côté serveur.
-Pour comprendre comment utiliser un gestionnaire d’erreurs par défaut à l’aide de la méthode [Service d’appel de l’éditeur de règles](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) , prenez un exemple de formulaire adaptatif simple avec deux champs, **Identifiant de paramètre prédéfini** et **Nom du paramètre prédéfini** et utilisez un gestionnaire d’erreurs par défaut au niveau de l’événement **Identifiant de paramètre prédéfini** pour vérifier les différentes erreurs renvoyées par le point de terminaison REST configuré pour appeler un service externe, par exemple : `200 - OK`,`404 - Not Found`, `400 - Bad Request`. Pour ajouter un gestionnaire d’erreurs par défaut à l’aide de l’action Invoke Service de l’éditeur de règles, procédez comme suit :
-
-1. Ouvrez un formulaire adaptatif en mode création, sélectionnez un composant de formulaire et appuyez sur **[!UICONTROL Éditeur de règles]** pour ouvrir l’éditeur de règles.
-1. Appuyez sur **[!UICONTROL Créer]**.
-1. Définissez une condition dans la section **Lorsque** de la règle. Par exemple : **When[Nom du champ Identifiant de l’animal domestique]** est modifiée. L’option Sélectionner est modifiée à partir du **Sélectionner un état** liste déroulante.
-1. Dans la section **Then** (Alors), sélectionnez **[!UICONTROL Invoke Service]** (Appeler un service) dans la liste déroulante **Select Action** (Sélectionner une action). 
-1. Sélectionnez une **Post service** et ses liaisons de données correspondantes depuis la variable **Entrée** . Par exemple, pour valider **Identifiant de paramètre prédéfini**, sélectionnez une **Post service** as **GET /pet/{petId}** et sélectionnez **Identifiant de paramètre prédéfini** dans le **Entrée** .
-1. Sélectionnez les liaisons de données dans la **Sortie** . Sélectionner **Nom du paramètre prédéfini** dans le **Sortie** .
-1. Sélectionner **[!UICONTROL Gestionnaire d’erreurs par défaut]** de la **Gestionnaire d’erreurs** .
-1. Cliquez sur **[!UICONTROL Terminé]**.
-
-![ajouter un gestionnaire d’erreurs par défaut pour les contrôles de validation de champ dans un formulaire](/help/forms/using/assets/default-error-handler.png)
-
-À la suite de cette règle, les valeurs que vous saisissez pour **Identifiant de paramètre prédéfini** vérifie la validation **Nom du paramètre prédéfini** utilisation du service externe appelé par le point de terminaison REST. Si les critères de validation basés sur la source de données échouent, les messages d’erreur s’affichent au niveau du champ.
-
-![afficher le message d’erreur par défaut lorsque vous ajoutez un gestionnaire d’erreur par défaut dans un formulaire pour gérer les réponses d’erreur ;](/help/forms/using/assets/default-error-message.png)
-
-### Ajout d’une fonction de gestionnaire d’erreurs personnalisée {#add-custom-errror-handler}
-
-Vous pouvez ajouter une fonction de gestionnaire d’erreurs personnalisée pour effectuer certaines des actions suivantes :
-
-* gérer les réponses d’erreur qui utilisent des réponses d’erreur non standard ou standard. Il est important de noter que ces réponses d’erreur non standard ne sont pas conformes au [schéma standard des réponses d’erreur](#failure-response-format).
-* envoyer des événements analytics à n’importe quelle plate-forme analytics ; Par exemple, Adobe Analytics.
-* afficher la boîte de dialogue modale avec les messages d’erreur.
-
-Outre les actions mentionnées, les gestionnaires d’erreurs personnalisés peuvent être utilisés pour exécuter des fonctions personnalisées répondant à des besoins spécifiques de l’utilisateur.
-
-Le gestionnaire d’erreurs personnalisé est une fonction (bibliothèque cliente) conçue pour répondre aux erreurs renvoyées par un service externe et fournir une réponse personnalisée aux utilisateurs finaux. Toute bibliothèque cliente avec annotation `@errorHandler` est considérée comme une fonction de gestionnaire d’erreurs personnalisée. Cette annotation permet d’identifier la fonction de gestionnaire d’erreurs spécifiée dans la variable `.js` fichier .
-
-Pour comprendre comment créer et utiliser un gestionnaire d’erreurs personnalisé à l’aide de la méthode [Service Invoke de l’éditeur de règles](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) action, prenons un exemple de formulaire adaptatif avec deux champs, **Identifiant de paramètre prédéfini** et **Nom du paramètre prédéfini** et utilisez un gestionnaire d’erreurs personnalisé à l’adresse **Identifiant de paramètre prédéfini** pour vérifier les différentes erreurs renvoyées par le point de terminaison REST configuré pour appeler un service externe, par exemple : `200 - OK`,`404 - Not Found`, `400 - Bad Request`.
-
-Pour ajouter et utiliser un gestionnaire d’erreurs personnalisé dans un formulaire adaptatif, procédez comme suit :
-
-1. [Création d’un gestionnaire d’erreurs personnalisé](#create-custom-error-message)
-1. [Utilisation de l’éditeur de règles pour configurer le gestionnaire d’erreurs personnalisé](#use-custom-error-handler)
-
-#### 1. Création d’un gestionnaire d’erreurs personnalisé {#create-custom-error-message}
-
-Pour créer une fonction d’erreur personnalisée, procédez comme suit :
-
-1. Se connecter `http://server:port/crx/de/index.jsp#`.
-1. Créez un dossier sous le `/apps` dossier. Par exemple, créez un dossier nommé comme `experience-league`.
-1. Enregistrez vos modifications.
-1. Accédez au dossier créé et créez un noeud de type `cq:ClientLibraryFolder` as `clientlibs`.
-1. Accédez au `clientlibs` et ajoutez le dossier `allowProxy` et `categories` properties:
-
-   ![Propriétés du noeud Bibliothèque personnalisée](/help/forms/using/assets/customlibrary-properties.png)
-
-   >[!NOTE]
-   >
-   > Vous pouvez indiquer n’importe quel nom à la place de `customfunctionsdemo`.
-
-1. Enregistrez vos modifications.
-
-1. Créez un dossier appelé `js` sous le `clientlibs` dossier.
-1. Créez un fichier JavaScript appelé `functions.js` sous le `js` folder
-1. Créez un fichier appelé `js.txt` sous le `clientlibs` dossier.
-1. Enregistrez vos modifications.
-La structure de dossiers créée ressemble à ce qui suit :
-
-   ![Structure de dossier de bibliothèque cliente créée](/help/forms/using/assets/customclientlibrary_folderstructure.png)
-1. Double-cliquez sur le `functions.js` pour ouvrir l’éditeur. Le fichier comprend le code du gestionnaire d’erreurs personnalisé.
-Ajoutons le code suivant au fichier JavaScript pour afficher la réponse et les en-têtes, reçus du point d’entrée du service REST, dans la console du navigateur.
-
-   ```javascript
-       /**
-       * Custom Error handler
-       * @name customErrorHandler Custom Error Handler Function
-       * @errorHandler
-       */
-       function customErrorHandler(response, headers)
-       {
-           console.log("Custom Error Handler processing start...");
-           console.log("response:"+JSON.stringify(response));
-           console.log("headers:"+JSON.stringify(headers));
-           guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers);
-           console.log("Custom Error Handler processing end...");
-       }
-   ```
-
-   Pour appeler le gestionnaire d’erreurs par défaut à partir de votre gestionnaire d’erreurs personnalisé, la ligne suivante de l’exemple de code est utilisée :
-   `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
-
-
-1. Enregistrer `function.js`.
-1. Accédez à `js.txt` et ajoutez le code suivant :
-
-   ```javascript
-       #base=js
-       functions.js
-   ```
-
-1. Enregistrez le fichier `js.txt`.
-
-Maintenant, comprenons comment configurer et utiliser un gestionnaire d’erreurs personnalisé à l’aide du service Invoke de l’éditeur de règles dans AEM Forms.
-
-#### 2. Utilisez l’éditeur de règles pour configurer le gestionnaire d’erreurs personnalisé {#use-custom-error-handler}
-
-Avant d’implémenter le gestionnaire d’erreurs personnalisé dans un formulaire adaptatif, assurez-vous que le nom de la bibliothèque cliente dans la variable **[!UICONTROL Catégorie de bibliothèque cliente]** s’aligne sur le nom spécifié dans l’option categories de la variable `.content.xml` fichier .
-
-![Ajout du nom de la bibliothèque cliente dans la configuration du conteneur de formulaires adaptatifs](/help/forms/using/assets/client-library-category-name.png)
-
-Dans ce cas, le nom de la bibliothèque cliente est fourni comme suit : `customfunctionsdemo` dans le `.content.xml` fichier .
-
-Pour utiliser un gestionnaire d’erreurs personnalisé à l’aide de la méthode **[!UICONTROL Service d’appel de l’éditeur de règles]** action :
-
-1. Ouvrez un formulaire adaptatif en mode création, sélectionnez un composant de formulaire et appuyez sur **[!UICONTROL Éditeur de règles]** pour ouvrir l’éditeur de règles.
-1. Appuyez sur **[!UICONTROL Créer]**.
-1. Définissez une condition dans la section **Lorsque** de la règle. Par exemple, Lorsque **[Nom du champ Identifiant de l’animal domestique]** est modifié, sélectionnez **est modifié** de la **Sélectionner un état** liste déroulante.
-1. Dans la section **Then** (Alors), sélectionnez **[!UICONTROL Invoke Service]** (Appeler un service) dans la liste déroulante **Select Action** (Sélectionner une action). 
-1. Sélectionnez une **Post service** et ses liaisons de données correspondantes depuis la variable **Entrée** . Par exemple, pour valider **Identifiant de paramètre prédéfini**, sélectionnez une **Post service** as **GET /pet/{petId}** et sélectionnez **Identifiant de paramètre prédéfini** dans le **Entrée** .
-1. Sélectionnez les liaisons de données dans la **Sortie** . Par exemple, Sélectionner **Nom du paramètre prédéfini** dans le **Sortie** .
-1. Sélectionner **[!UICONTROL Gestionnaire d’erreurs personnalisé]** de la **[!UICONTROL Gestionnaire d’erreurs]** .
-1. Cliquez sur **[!UICONTROL Terminé]**.
-
-![ajout d’un gestionnaire d’erreurs personnalisé dans un formulaire pour gérer les réponses d’erreur](/help/forms/using/assets/custom-error-handler.png)
-
-À la suite de cette règle, les valeurs que vous saisissez pour **Identifiant de paramètre prédéfini** vérifie la validation **Nom du paramètre prédéfini** utilisation du service externe appelé par le point de terminaison REST. Si les critères de validation basés sur la source de données échouent, les messages d’erreur s’affichent au niveau du champ.
-
-![ajouter un gestionnaire d’erreurs personnalisé dans un formulaire pour gérer les réponses d’erreur ;](/help/forms/using/assets/custom-error-handler-message.png)
-
-Ouvrez la console du navigateur et vérifiez le message d’erreur de validation de la réponse et de l’en-tête reçus du point d’entrée du service REST.
-
-La fonction de gestionnaire d’erreurs personnalisée est responsable de l’exécution d’actions supplémentaires, telles que l’affichage d’une boîte de dialogue modale ou l’envoi d’un événement d’analyse, en fonction de la réponse d’erreur. Une fonction de gestionnaire d’erreurs personnalisée offre la possibilité de personnaliser la gestion des erreurs en fonction des besoins spécifiques de l’utilisateur.
-
-<!-- 
-
-## Configure Adaptive Form submission to add custom handlers {#configure-adaptive-form-submission}
-
-If the server validation error message does not display in the standard format, you can enable asynchronous submission and add a custom error handler on Adaptive Form submission to convert the message into a standard format.
-
-### Configure asynchronous Adaptive Form submission {#configure-asynchronous-adaptive-form-submission}
-
-Before adding custom handler, you must configure the adaptive form for asynchronous submission. Execute the following steps:
-
-1. In adaptive form authoring mode, select the Form Container object and tap ![adaptive form properties](assets/configure_icon.png) to open its properties.
+<!-- 1. In adaptive form authoring mode, select the Form Container object and tap ![adaptive form properties](assets/af_properties.png) to open its properties.
 1. In the **[!UICONTROL Submission]** properties section, enable **[!UICONTROL Use asynchronous submission]**.
 1. Select **[!UICONTROL Revalidate on server]** to validate the input field values on server before submission.
 1. Select the Submit Action:
 
     * Select **[!UICONTROL Submit using Form Data Model]** and select the appropriate data model, if you are using RESTful web service based [form data model](work-with-form-data-model.md) as the data source.
-    * Select **[!UICONTROL Submit to REST Service endpoint]** and specify the **[!UICONTROL Redirect URL/Path]**, if you are using RESTful web services as the data source.
+    * Select **[!UICONTROL Submit to REST endpoint]** and specify the **[!UICONTROL Redirect URL/Path]**, if you are using RESTful web services as the data source.
 
     ![adaptive form submission properties](assets/af_submission_properties.png)
 
-1. Tap ![Save](assets/save_icon.png) to save the properties.
+1. Tap ![Save](assets/af_save.png) to save the properties.-->
 
-### Add custom error handler on Adaptive Form submission {#add-custom-error-handler-af-submission}
+### Ajouter un gestionnaire d’erreur personnalisé lors de l’envoi du formulaire adaptatif {#add-custom-error-handler-af-submission}
 
-AEM Forms provides out-of-the-box success and error handlers for form submissions. Handlers are client-side functions that execute based on the server response. When an Adaptive Form is submitted, the data is transmitted to the server for validation, which returns a response to the client with information about the success or error event for the submission. The information is passed as parameters to the relevant handler to execute the function.
+AEM Forms fournit des gestionnaires de succès et d’erreur prêts à l’emploi pour les envois de formulaires. Les gestionnaires sont des fonctions côté client qui s’exécutent en fonction de la réponse du serveur. Lorsqu’un formulaire est envoyé, les données sont transmises au serveur pour validation, ce qui renvoie une réponse au client avec des informations sur l’événement de succès ou d’erreur pour l’envoi. Les informations sont transmises comme paramètres au gestionnaire approprié pour exécuter la fonction.
 
-Execute the following steps to add custom error handler on Adaptive Form submission:
+Exécutez les étapes suivantes pour ajouter un gestionnaire d’erreurs personnalisé lors de l’envoi du formulaire adaptatif :
 
-1. Open an Adaptive Form in authoring mode, select any form object, and tap  to open the rule editor.
-1. Select **[!UICONTROL Form]** in the Form Objects tree and tap **[!UICONTROL Create]**.
-1. Select **[!UICONTROL Error in Submission]** from the Event drop-down list.
-1. Write a rule to convert custom error structure to the standard error structure and tap **[!UICONTROL Done]** to save the rule.
+1. Ouvrez le formulaire adaptatif en mode création, sélectionnez n’importe quel objet de formulaire et appuyez sur <!--![Rule Editor](assets/af_edit_rules.png)--> pour ouvrir l’éditeur de règles.
+1. Sélectionnez **[!UICONTROL Formulaire]** dans l’arborescence des objets de formulaire et appuyez sur **[!UICONTROL Créer]**.
+1. Sélectionnez **[!UICONTROL Erreur dans l’envoi]** dans la liste déroulante Événement.
+1. Créez une règle pour convertir la structure d’erreur personnalisée en structure d’erreur standard, puis appuyez sur **[!UICONTROL Terminé]** pour enregistrer la règle.
 
-The following is a sample code to convert a custom error structure to the standard error structure:
+Voici un exemple de code pour convertir une structure d’erreur personnalisée en structure d’erreur standard :
 
 ```javascript
 var data = $event.data;
@@ -401,8 +128,83 @@ if (data) {
 }
 ```
 
-The `var som_map` lists the SOM expression of the Adaptive Form fields that you want to transform into the standard format. You can view the SOM expression of any field in an adaptive form by tapping the field and selecting **[!UICONTROL View SOM Expression]**.
+Le `var som_map` répertorie l’expression SOM des champs de formulaire adaptatif que vous souhaitez transformer au format standard. Vous pouvez afficher l’expression SOM de n’importe quel champ d’un formulaire adaptatif en appuyant sur le champ et en sélectionnant **[!UICONTROL Afficher l’expression SOM]**.
 
-Using this custom error handler, the adaptive form converts the fields listed in `var som_map` to standard error message format. As a result, the validation error messages display at field-level in the adaptive form.
+À l’aide de ce gestionnaire d’erreurs personnalisé, le formulaire adaptatif convertit les champs répertoriés dans `var som_map` au format standard du message d’erreur. Par conséquent, les messages d’erreur de validation s’affichent au niveau du champ dans le formulaire adaptatif.
 
- -->
+## Ajouter un gestionnaire personnalisé à l’aide de l’action Invoke Service
+
+Exécutez les opérations suivantes pour ajouter un gestionnaire d’erreurs afin de convertir une structure d’erreur personnalisée en structure d’erreur standard à l’aide de l’action Invoke Service de l’ [Éditeur de règles](rule-editor.md) :
+
+<!-- 1. Open the adaptive form in authoring mode, select any form object, and tap ![Rule Editor](assets/af_edit_rules.png) to open the rule editor.
+1. Tap **[!UICONTROL Create]**.
+1. Create a condition in the **[!UICONTROL When]** section of the rule. For example, When[Name of field] is changed. Select **[!UICONTROL is changed]** from the **[!UICONTROL Select State]** drop-down list to achieve this condition.
+1. In the **[!UICONTROL Then]** section, select **[!UICONTROL Invoke Service]** from the **[!UICONTROL Select Action]** drop-down list.
+1. Select a Post service and its corresponding data bindings from the **[!UICONTROL Input]** section. For example, if you want to validate **Name**, **ID**, and **Status** fields in the adaptive form, select a Post service (pet) and select pet.name, pet.id, and pet.status in the **[!UICONTROL Input]** section.-->
+
+    En raison de cette règle, les valeurs que vous saisissez pour les champs **Name**, **ID** et **Status** sont validées, dès que le champ défini à l’étape 2 est modifié et que vous vous déposez du champ du formulaire.
+
+1. Sélectionnez l’**[!UICONTROL éditeur de code]** dans la liste déroulante de sélection de mode.
+1. Appuyer sur **[!UICONTROL Modifier le code]**.
+1. Supprimez la ligne suivante du code existant :
+
+   ```javascript
+   guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
+   ```
+
+1. Créez une règle pour convertir la structure d’erreur personnalisée en structure d’erreur standard, puis appuyez sur **[!UICONTROL Terminé]** pour enregistrer la règle.
+Par exemple, ajoutez l’exemple de code suivant à la fin pour convertir une structure d’erreur personnalisée en structure d’erreur standard :
+
+   ```javascript
+   var errorHandler = function(jqXHR, data) {
+   var som_map = {
+       "id": "guide[0].guide1[0].guideRootPanel[0].Pet[0].id_1[0]",
+       "name": "guide[0].guide1[0].guideRootPanel[0].Pet[0].name_2[0]",
+       "status": "guide[0].guide1[0].guideRootPanel[0].Pet[0].status[0]"
+   };
+   
+   
+   var errorJson = {};
+   errorJson.errors = [];
+   
+   if (data) {
+       if (data.originMessage) {
+           var errorData;
+           try {
+               errorData = JSON.parse(data.originMessage);
+           } catch (err) {
+               // not in json format
+           }
+   
+           if (errorData) {
+               Object.keys(errorData).forEach(function(key) {
+                   var som_key = som_map[key];
+                   if (som_key) {
+                       var error = {};
+                       error.somExpression = som_key;
+                       error.errorMessage = errorData[key];
+                       errorJson.errors.push(error);
+                   }
+               });
+           }
+           window.guideBridge.handleServerValidationError(errorJson);
+       } else {
+           window.guideBridge.handleServerValidationError(data);
+       }
+     }
+   };
+   
+   guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, null, errorHandler);
+   ```
+
+   Le `var som_map` répertorie l’expression SOM des champs de formulaire adaptatif que vous souhaitez transformer au format standard. Vous pouvez afficher l’expression SOM de n’importe quel champ d’un formulaire adaptatif en appuyant sur le champ et en sélectionnant **[!UICONTROL Afficher l’expression SOM]** du menu **[!UICONTROL Autres options]** (...).
+
+   Veillez à copier la ligne suivante de l’exemple de code dans le gestionnaire d’erreurs personnalisé :
+
+   ```javascript
+   guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, null, errorHandler);
+   ```
+
+   L’API executeOperation comprend les paramètres `null` et `errorHandler` en fonction du nouveau gestionnaire d’erreurs personnalisé.
+
+   À l’aide de ce gestionnaire d’erreurs personnalisé, le formulaire adaptatif convertit les champs répertoriés dans `var som_map` au format standard du message d’erreur. Par conséquent, les messages d’erreur de validation s’affichent au niveau du champ dans le formulaire adaptatif.
