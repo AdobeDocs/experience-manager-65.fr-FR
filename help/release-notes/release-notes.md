@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager]
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
-source-git-commit: 26cea35dcbdbafe622f975bac7920ea5fd5fbd6c
+source-git-commit: e330d69b7644e8f99498d0ed60afab009c649b40
 workflow-type: tm+mt
-source-wordcount: '4460'
+source-wordcount: '4552'
 ht-degree: 33%
 
 ---
@@ -450,6 +450,8 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 #### Installation
 
 * Sur la plateforme JBoss® 7.1.4, lorsque l’utilisateur ou l’utilisatrice installe le Pack de services Experience Manager 6.5.16.0, le déploiement de `adobe-livecycle-jboss.ear` échoue. (CQ-4351522, CQDOC-20159)
+* Après l’installation du programme d’installation complet d’AEM Service Pack 6.5.18.0, le déploiement EAR échoue sur JEE à l’aide de JBoss clé en main (CQDOC-20803).
+Pour résoudre le problème, recherchez la variable `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` fichier et mise à jour `Adobe_Adobe_JAVA_HOME` to `Adobe_JAVA_HOME` pour toutes les occurrences avant d’exécuter configuration manager.
 
 #### Formulaires adaptatifs
 
@@ -459,7 +461,12 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 
 #### Communications interactives
 
-* Après la mise à niveau vers AEM Service Pack 18, il n’est pas possible de modifier les lettres de communication interactive. (FORMS-10578)
+* Après la mise à niveau vers AEM Service Pack 18, il n’est pas possible de modifier les lettres de communication interactive. (FORMS-10578) Pour résoudre le problème, procédez comme suit :
+
+   1. Télécharger [Correctif-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) à partir du lien SD.
+   1. Extrayez le fichier d’archive Hotfix pour obtenir un package de Experience Manager (.zip) et des fichiers de bundle (.jar).
+   1. Téléchargez et installez le package (.zip) via le gestionnaire de modules.
+   1. Ouverture des lots Configuration Manager `https://server:host/system/console/bundles`, téléchargez et installez le lot (.jar).
 
 ## Bundles OSGi et modules de contenu inclus{#osgi-bundles-and-content-packages-included}
 
