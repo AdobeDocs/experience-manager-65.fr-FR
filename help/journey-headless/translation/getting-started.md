@@ -2,10 +2,10 @@
 title: Prise en main de la traduction découplée dans AEM
 description: Découvrez comment organiser votre contenu découplé et comment fonctionnent les outils de traduction AEM.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+workflow-type: tm+mt
+source-wordcount: '1495'
+ht-degree: 99%
 
 ---
 
@@ -48,7 +48,7 @@ Un certain nombre d’exigences s’imposent avant de vous engager dans la tradu
 
 ### Outils {#tools}
 
-* Accès aux environnements de test pour tester la traduction de votre contenu
+* Accès aux sandbox pour tester la traduction de votre contenu
 * Informations d’identification pour vous connecter à votre service de traduction préféré
 * Accréditation en tant que membre du groupe `project-administrators` dans AEM
 
@@ -190,3 +190,6 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de tra
 * [Identification du contenu à traduire](/help/sites-administering/tc-rules.md) : découvrez comment les règles de traduction identifient le contenu à traduire.
 * [Configuration du framework d’intégration de la traduction](/help/sites-administering/tc-tic.md) : découvrez comment configurer le framework d’intégration de la traduction pour l’intégrer à des services de traduction tiers.
 * [Gestion de projets de traduction](/help/sites-administering/tc-manage.md) : découvrez comment créer et gérer des projets de traduction automatique et humaine dans AEM.
+* Un [Présentation d’AEM en tant que CMS sans affichage](/help/sites-developing/headless/introduction.md)
+* La variable [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)

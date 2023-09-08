@@ -10,9 +10,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 051e6838bea0be9f826183db935d33725c18386d
+source-git-commit: 0738f53564cb2e2607d739d97bdd1bb2fc64ac6e
 workflow-type: tm+mt
-source-wordcount: '11313'
+source-wordcount: '11310'
 ht-degree: 69%
 
 ---
@@ -605,7 +605,6 @@ Voici quelques-uns des cas d’utilisation à prendre en compte pour l’ajout d
 | **Sous-titres** | Prise en charge de plusieurs langues |
 |  | Texte descriptif pour l’accessibilité |
 | **Traces audio** | Prise en charge de plusieurs langues |
-|  | Stéréo ou multicanal (son entouré) |
 |  | Suivi des commentaires |
 |  | Audio descriptif |
 
@@ -698,7 +697,7 @@ Dans le cas où vous avez configuré Dynamic Media pour une publication immédia
 
 >[!CAUTION]
 >
->Lorsque vous téléchargez des fichiers de sous-titre ou des fichiers audio vers une vidéo déjà publiée, ces fichiers sont supprimés si vous [*retraiter*](/help/assets/processing-profiles.md#reprocessing-assets) la vidéo. Seul le son d’origine de la vidéo reste intact. Dans ce cas, vous devez charger à nouveau les fichiers de sous-titre et de suivi audio dans la vidéo.
+>Lorsque vous téléchargez des fichiers de sous-titre ou des fichiers audio vers une vidéo publiée ou non, les fichiers sont supprimés si vous [*retraiter*](/help/assets/processing-profiles.md#reprocessing-assets) la vidéo. Seul le son d’origine de la vidéo reste intact. Dans ce cas, vous devez charger à nouveau les fichiers de sous-titre et de suivi audio dans la vidéo.
 
 #### Ajout de plusieurs sous-titres à une vidéo contenant une URL existante avec le modificateur de sous-titres
 

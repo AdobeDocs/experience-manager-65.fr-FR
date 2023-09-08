@@ -7,11 +7,9 @@ keywords: Ajoutez un gestionnaire d’erreurs personnalisé, ajoutez un gestionn
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-hide: true
-hidefromtoc: true
-source-git-commit: 34be3b4695679a9b5e8001d28f05ed804f929e61
+source-git-commit: f8e0ac45d98d6485ccb60e754657caf9d190c3ea
 workflow-type: tm+mt
-source-wordcount: '2284'
+source-wordcount: '2281'
 ht-degree: 6%
 
 ---
@@ -166,7 +164,7 @@ Voici quelques options pour afficher les réponses d’erreur :
 
 Avant d’utiliser un gestionnaire d’erreur dans une Forms adaptative :
 
-* [Activation des composants principaux Forms adaptatifs pour votre environnement AEM Cloud Service](enable-adaptive-forms-core-components.md).
+* [Activation des composants principaux des formulaires adaptatifs pour votre environnement](enable-adaptive-forms-core-components.md).
 * Connaissances de base en [créer une fonction personnalisée](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
 * Installez la dernière version de [Apache Maven](https://maven.apache.org/download.cgi).
 

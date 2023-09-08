@@ -2,10 +2,10 @@
 title: Créer en découplage avec Adobe Experience Manager
 description: Cette section présente les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager et explique comment créer du contenu pour votre projet.
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: ht
-source-wordcount: '632'
-ht-degree: 100%
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+workflow-type: tm+mt
+source-wordcount: '659'
+ht-degree: 98%
 
 ---
 
@@ -81,3 +81,9 @@ Maintenant que vous avez découvert les concepts et la terminologie, l’étape 
 * [Parcours d’architecture de contenu découplé AEM](/help/journey-headless/architect/overview.md)
 
 * [Parcours de traduction de contenu découplé AEM](/help/journey-headless/translation/overview.md)
+
+* [Présentation d’AEM en tant que CMS sans affichage](/help/sites-developing/headless/introduction.md)
+
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+
+* [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)

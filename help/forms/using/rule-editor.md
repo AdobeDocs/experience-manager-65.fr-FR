@@ -10,7 +10,7 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: 34be3b4695679a9b5e8001d28f05ed804f929e61
+source-git-commit: 517fe7fb8917164ee05b006214055592510d15da
 workflow-type: tm+mt
 source-wordcount: '6921'
 ht-degree: 56%
@@ -153,6 +153,7 @@ Pour plus d’informations à propos de la configuration des services dans le mo
 Pour plus d’informations à propos de la configuration des services dans le modèle de données de formulaire, voir [Intégration des données AEM Forms](/help/forms/using/data-integration.md).
 
 La variable **[!UICONTROL Définir la propriété]** type de règle permet de définir la valeur d’une propriété de l’objet spécifié en fonction d’une action de condition. Vous pouvez définir la propriété sur l’une des options suivantes :
+
 * visible (booléen)
 * dorExclusion (booléen)
 * chartType (String)

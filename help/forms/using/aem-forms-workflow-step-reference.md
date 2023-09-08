@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 2bba1d5209fe64679c6ba6db0028562ff1415a10
+source-git-commit: 5675d69a5bdf296782339f02162db8068daf29e3
 workflow-type: tm+mt
 source-wordcount: '7690'
-ht-degree: 77%
+ht-degree: 76%
 
 ---
 
@@ -268,7 +268,7 @@ L’étape Invoquer le service de modèle de données de formulaire contient les
 * **Sélectionnez le document JSON d’entrée en utilisant** : fichier JSON contenant des valeurs pour tous les arguments de service. Le chemin d’accès du fichier JSON peut être **relatif à la charge utile** ou à un **chemin d’accès absolu.** Vous pouvez également récupérer le document JSON d’entrée à l’aide d’une variable de type de données JSON ou Modèle de données de formulaire.
 
 * **Notation de point JSON :** Laissez le champ vide pour utiliser tous les objets du fichier JSON spécifié comme entrée pour les arguments de service. Pour lire un objet JSON spécifique à partir du fichier JSON spécifié en tant qu’entrée pour des arguments de service, spécifiez la notation par point pour l’objet JSON. Par exemple, si vous avez un fichier JSON identique à l’un des fichiers indiqué au début de la section, spécifiez insurance.customerDetails pour fournir tous les détails d’un client en tant qu’entrée du service.
-* **Sortie de service et mapper et écrire les valeurs de sortie dans les métadonnées :** sélectionnez cette option pour enregistrer les valeurs de sortie en tant que propriétés du nœud de métadonnées de l’instance de workflow dans le référentiel crx. Spécifiez le nom de la propriété de métadonnées et sélectionnez l’attribut de sortie de service correspondant à mapper avec la propriété de métadonnées, par exemple, mappez la valeur numéro_de_téléphone renvoyé par le service de sortie avec la propriété numéro_de_téléphone des métadonnées du processus. De même, vous pouvez stocker la sortie dans une variable de type Long. Lorsque vous sélectionnez une propriété pour l’**[!UICONTROL attribut de sortie de service à mapper]**, seules les variables capables de stocker les données de la propriété sélectionnée sont renseignées pour l’option **[!UICONTROL Enregistrer la sortie dans]**.
+* **Sortie de service et mapper et écrire les valeurs de sortie dans les métadonnées :** sélectionnez cette option pour enregistrer les valeurs de sortie en tant que propriétés du nœud de métadonnées de l’instance de workflow dans le référentiel crx. Spécifiez le nom de la propriété de métadonnées et sélectionnez l’attribut de sortie de service correspondant à mapper avec la propriété de métadonnées, par exemple, mappez la valeur numéro_de_téléphone renvoyé par le service de sortie avec la propriété numéro_de_téléphone des métadonnées du processus. De même, vous pouvez stocker la sortie dans une variable de type Long. Lorsque vous sélectionnez une propriété pour la variable **[!UICONTROL Attribut de sortie de service à mapper]** , seules les variables pouvant stocker les données de la propriété sélectionnée sont renseignées pour l’option **[!UICONTROL Enregistrez la sortie pour]** .
 
 * **Sortie de service et sélectionner l’option permettant d’enregistrer les valeurs de sortie dans un fichier JSON :** sélectionnez l’option pour enregistrer les valeurs de sortie dans un fichier JSON à un chemin absolu, à un chemin relatif à la payload, ou dans une variable.
 * **Enregistrer le document JSON de sortie à l’aide des options suivantes :** enregistrez le fichier JSON de sortie. Le chemin d’accès du fichier JSON peut être relatif à la charge utile ou à un chemin d’accès absolu. Vous pouvez également enregistrer le fichier JSON de sortie à l’aide d’une variable de type de données JSON ou Modèle de données de formulaire.
@@ -303,6 +303,8 @@ L’étape Signer le document vous permet d’utiliser Adobe Sign pour signer de
   >* Dans la section Rôle , vous pouvez spécifier le rôle du destinataire en tant que Signataire, Approbateur, Accepteur, Destinataire certifié, Utilisateur de formulaire et Délégué.
   >* Si vous sélectionnez Délégué dans l’option Rôle , le Délégué peut affecter la tâche de signature à un autre destinataire.
   >* Si vous avez configuré une méthode d’authentification pour [!DNL Adobe Sign], en fonction de votre configuration, vous sélectionnez une méthode d’authentification telle que l’authentification téléphonique, l’authentification basée sur les identités sociales, l’authentification basée sur les connaissances et l’authentification basée sur les identités gouvernementales.
+
+
 * **Script ou service pour sélectionner les destinataires :** Cette option n’est disponible que si vous sélectionnez Option dynamique dans le champ Sélectionner les destinataires . Vous pouvez spécifier un ECMAScript ou un service pour choisir les destinataires et les options de vérification d’un document.
 * **Détails du destinataire :** Cette option n’est disponible que si l’option Manuellement est sélectionnée dans le champ Sélectionner les destinataires . Indiquez l’adresse électronique et choisissez une méthode de vérification facultative. Avant de sélectionner une méthode de vérification en 2 étapes, assurez-vous que l’option de vérification correspondante est activée pour le compte Adobe Sign configuré. Vous pouvez utiliser une variable de type Chaîne pour définir des valeurs pour les champs **[!UICONTROL E-mail]**, **[!UICONTROL Code de pays]** et **[!UICONTROL Numéro de téléphone]**. Les champs **[!UICONTROL Code pays]** et **[!UICONTROL Numéro de téléphone]** s’affichent uniquement si vous sélectionnez **[!UICONTROL Vérification téléphonique]** dans la liste déroulante de **[!UICONTROL vérification en 2 étapes]**.
 * **Variable de statut :** le statut de signature d’un document activé par Adobe Sign est stocké dans une variable de type de données Chaîne. Spécifiez le nom de la variable d’état (adobeSignStatus). Une variable de statut d’une instance est disponible dans CRXDE à l’emplacement /etc/workflow/instances/&lt;server>/&lt;date-heure>/&lt;instance de modèle de processus>/workItems/&lt;node>/metaData. Elle contient le statut d’une variable.
