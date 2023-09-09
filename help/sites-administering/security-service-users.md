@@ -25,7 +25,7 @@ Toutefois, aucune de ces méthodes n’a été conçue selon le [principe de moi
 
 ## Comment supprimer les sessions d’administration {#how-to-phase-out-admin-sessions}
 
-### Priorité 0 : la fonctionnalité est-elle principale/nécessaire/abandonnée ? {#priority-is-the-feature-active-needed-derelict}
+### Priorité 0 : la fonctionnalité est-elle active/nécessaire/abandonnée ? {#priority-is-the-feature-active-needed-derelict}
 
 Il peut y avoir des cas où la session d’administration n’est pas utilisée, ou la fonction est complètement désactivée. Si tel est le cas avec votre mise en œuvre, assurez-vous de supprimer la fonction entièrement ou accompagnez-la d’une [instruction nulle](https://fr.wikipedia.org/wiki/Instruction_nulle).
 

@@ -71,7 +71,7 @@ Ces trois mosaïques fournissent un aperçu de l’état du contenu d’une appl
 
 * **bannières**
 * **articles**
-* **collections**
+* **Collections**
 
 Chaque mosaïque peut être développée pour fournir une vue de liste plus détaillée en cliquant sur les points de suspension (..) dans le coin inférieur droit. Ces vues de liste offrent un autre moyen d’accéder aux actions courantes de Mobile On Demand, telles que la suppression, le chargement et la modification des propriétés.
 

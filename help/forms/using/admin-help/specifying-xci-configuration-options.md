@@ -9,7 +9,7 @@ exl-id: 7cd10389-63e6-41f2-a132-92fd9e40a9b7
 source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
 workflow-type: tm+mt
 source-wordcount: '128'
-ht-degree: 7%
+ht-degree: 21%
 
 ---
 
@@ -25,5 +25,5 @@ Forms vous permet de spécifier un fichier XCI personnalisé à utiliser pour le
 Vous pouvez sélectionner des options qui annulent le remplacement des options répertoriées ci-dessus. Dans ce cas, Forms utilise les valeurs spécifiées dans le fichier XCI personnalisé.
 
 1. Dans Administration Console, cliquez sur **Services** > **Forms**.
-1. Cochez ou désélectionnez la case Utiliser les options XCI par défaut du système . Lorsque cette option est sélectionnée, Forms utilise ses valeurs par défaut pour les paramètres paquets, créateur, producteur et compressObjectStream . Si cette option est désélectionnée, Forms utilise les valeurs spécifiées dans le fichier XCI personnalisé.
+1. Cochez ou désélectionnez la case Utiliser les options XCI par défaut du système. Lorsque cette option est sélectionnée, Forms utilise ses valeurs par défaut pour les paramètres paquets, créateur, producteur et compressObjectStream . Si cette option est désélectionnée, Forms utilise les valeurs spécifiées dans le fichier XCI personnalisé.
 1. Cliquez sur **Enregistrer**.

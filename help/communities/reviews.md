@@ -21,7 +21,7 @@ ht-degree: 4%
 
 La variable `Reviews` est un composant composite de [Commentaires](comments.md) et [Évaluation](rating.md) composants prêts à l’emploi.
 
-La variable `Reviews Summary (Display)` fournit un résumé d’une instance principale ou fermée d’une `Reviews` à afficher ailleurs sur le site.
+La variable `Reviews Summary (Display)` fournit un résumé d’une instance active ou fermée d’une `Reviews` à afficher ailleurs sur le site.
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ Pour ajouter une `Reviews Summary (Display)` à une page en mode création, rech
 
 * `Communities / Reviews Summary (Display)`
 
-et faites-le glisser sur la page où s’affiche un résumé d’une révision principale ou fermée.
+et faites-le glisser sur la page où s’affiche un résumé d’une révision active ou fermée.
 
 Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](basics.md).
 

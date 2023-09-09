@@ -358,7 +358,7 @@ Dans des cas tels que le chargement de mots vides quand le contenu des fichiers 
 
 ### L’index Solr {#the-solr-index}
 
-L’index Solr a pour objectif la recherche en texte intégral, mais il peut également être utilisé pour indexer la recherche par chemin, par restrictions de propriété et par restrictions de type Principal. Cela signifie que l’index Solr dans Oak peut être utilisé pour n’importe quel type de requête JCR.
+L’index Solr a pour objectif la recherche en texte intégral, mais il peut également être utilisé pour indexer la recherche par chemin, par restrictions de propriété et par restrictions de type principal. Cela signifie que l’index Solr dans Oak peut être utilisé pour n’importe quel type de requête JCR.
 
 L’intégration dans AEM se fait au niveau du référentiel, de sorte que Solr soit l’un des index possibles qui peut être utilisé dans Oak, la nouvelle implémentation du référentiel fournie avec AEM.
 

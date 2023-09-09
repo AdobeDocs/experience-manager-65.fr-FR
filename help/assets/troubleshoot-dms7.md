@@ -106,7 +106,7 @@ Si des problèmes surviennent avec les images et les visionneuses, reportez-vous
    <td><p>Fermez le sélecteur et rouvrez-le.</p> </td>
   </tr>
   <tr>
-   <td><strong>Sélectionner</strong> n’est pas principal après la sélection d’une ressource dans le cadre de la modification d’une visionneuse</td>
+   <td><strong>Sélectionner</strong> n’est pas actif après la sélection d’une ressource dans le cadre de la modification d’une visionneuse</td>
    <td><p> </p> <p>Problème connu à corriger dans la version 6.4</p> <p> </p> </td>
    <td><p>Sélectionnez un autre dossier dans le sélecteur de ressources et revenez pour sélectionner la ressource.</p> </td>
   </tr>
