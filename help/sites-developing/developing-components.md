@@ -12,10 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 823e756f470b0599f7d53a3e08fdf650b4e892d1
 workflow-type: tm+mt
 source-wordcount: '3454'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -228,7 +228,7 @@ Une fois que vous avez créé votre type de ressource, vous pouvez instancier le
 
 Si vous souhaitez définir le style et le comportement de votre composant, vous pouvez créer une [bibliothèque cliente](/help/sites-developing/clientlibs.md) qui définit vos CSS/LESS et JS personnalisés.
 
-Afin que la bibliothèque cliente soit chargée uniquement pour votre boîte de dialogue de composant (c’est-à-dire qu’elle ne soit pas chargée pour un autre composant), vous devez définir la propriété **`extraClientlibs`** de la boîte de dialogue sur le nom de catégorie de la bibliothèque cliente que vous venez de créer. Ceci est conseillé si votre bibliothèque cliente est assez volumineuse ou si votre champ est spécifique à cette boîte de dialogue et n’est pas nécessaire dans les autres boîtes de dialogue.
+Pour que votre bibliothèque cliente soit chargée uniquement pour votre boîte de dialogue de composant (c’est-à-dire qu’elle ne sera pas chargée pour un autre composant), vous devez définir la propriété . `extraClientlibs` de votre boîte de dialogue au nom de catégorie de la bibliothèque cliente que vous venez de créer. Ceci est conseillé si votre bibliothèque cliente est assez volumineuse ou si votre champ est spécifique à cette boîte de dialogue et n’est pas nécessaire dans les autres boîtes de dialogue.
 
 Afin que la bibliothèque cliente soit chargée pour toutes les boîtes de dialogue, définissez la propriété Catégorie de votre bibliothèque cliente sur `cq.authoring.dialog`. Il s’agit du nom de la catégorie de la bibliothèque cliente qui est incluse par défaut lors du rendu de toutes les boîtes de dialogue. Faites-le si votre bibliothèque cliente est petite et/ou si votre champ est générique et peut être réutilisé dans d’autres boîtes de dialogue.
 
