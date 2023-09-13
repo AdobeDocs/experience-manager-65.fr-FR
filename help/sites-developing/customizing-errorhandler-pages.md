@@ -1,25 +1,21 @@
 ---
 title: Personnaliser les pages affichées par le gestionnaire d’erreurs
-seo-title: Customizing Pages shown by the Error Handler
-description: AEM s’accompagne d’un outil standard destiné à la gestion des erreurs HTTP.
-seo-description: AEM comes with a standard error handler for handling HTTP errors
-uuid: aaf940fd-e428-4c7c-af7f-88b1d02c17c6
+description: Adobe Experience Manager est fourni avec un gestionnaire d’erreurs standard pour gérer les erreurs HTTP.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 63c94c82-ed96-4d10-b645-227fa3c09f4b
 exl-id: d6745baa-44da-45dd-b5d5-a9b218e7e8cf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '518'
-ht-degree: 100%
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+workflow-type: tm+mt
+source-wordcount: '525'
+ht-degree: 36%
 
 ---
 
 # Personnaliser les pages affichées par le gestionnaire d’erreurs{#customizing-pages-shown-by-the-error-handler}
 
-AEM s’accompagne d’un outil standard destiné à la gestion des erreurs HTTP, en affichant, par exemple :
+Adobe Experience Manager (AEM) s’accompagne d’un gestionnaire d’erreurs standard pour gérer les erreurs HTTP, en affichant par exemple :
 
 ![chlimage_1-67](assets/chlimage_1-67a.png)
 
@@ -30,69 +26,69 @@ Les scripts fournis par le système existent (sous `/libs/sling/servlet/errorhan
 
 >[!NOTE]
 >
->AEM est basé sur Apache Sling. Vous êtes donc invité à vous rendre sur la page [https://sling.apache.org/site/errorhandling.html](https://sling.apache.org/site/errorhandling.html) pour plus d’informations sur le traitement des erreurs Sling.
+>AEM est basé sur Apache Sling. En tant que tel, voir [Gestion des erreurs](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html) pour plus d’informations sur la gestion des erreurs Sling.
 
 >[!NOTE]
 >
->Sur une instance de création, le [filtre de débogage de la gestion du contenu web CQ](/help/sites-deploying/osgi-configuration-settings.md) est activé par défaut. Cela donne toujours comme résultat le code de réponse 200. Le gestionnaire d’erreurs par défaut répond en écrivant la trace de pile complète sur la réponse.
+>Sur une instance d’auteur, la variable [Filtre de débogage CQ WCM](/help/sites-deploying/osgi-configuration-settings.md) est activé par défaut. Le code de réponse est toujours 200. Le gestionnaire d’erreur par défaut répond en écrivant la trace de pile complète à la réponse.
 >
->Sur une instance de publication, le filtre de débogage de la gestion du contenu web CQ est *toujours* désactivé (même s’il est configuré comme étant activé).
+>Sur une instance de publication, le filtre de débogage de la gestion du contenu web CQ est *always* désactivé (même s’il est configuré comme activé).
 
-## Méthode de personnalisation des pages affichées par le gestionnaire d’erreurs {#how-to-customize-pages-shown-by-the-error-handler}
+## Comment personnaliser les pages affichées par le gestionnaire d’erreurs {#how-to-customize-pages-shown-by-the-error-handler}
 
-Vous pouvez développer vos propres scripts afin de personnaliser les pages affichées par le gestionnaire d’erreurs lors de la détection d’une erreur. Vos pages personnalisées sont créées sous `/apps` et se superposent aux pages par défaut (qui se trouvent sous `/libs`).
+Vous pouvez développer vos propres scripts afin de personnaliser les pages affichées par le gestionnaire d’erreurs lors de la détection d’une erreur. Vos pages personnalisées sont créées sous `/apps` et superposez les pages par défaut (qui se trouvent sous `/libs`).
 
 >[!NOTE]
 >
->Pour plus d’informations, voir [Utilisation de recouvrements](/help/sites-developing/overlays.md).
+>Voir [Utilisation des recouvrements](/help/sites-developing/overlays.md) pour plus d’informations.
 
-1. Dans le référentiel, copiez le ou les scripts par défaut :
+1. Dans le référentiel, copiez les scripts par défaut :
 
    * de `/libs/sling/servlet/errorhandler/`
    * vers `/apps/sling/servlet/errorhandler/`
 
-   Puisque le chemin de destination n’existe pas par défaut, vous devez le créer lorsque vous effectuez cette opération pour la première fois.
+   Comme le chemin de destination n’existe pas par défaut, vous devez le créer lors de cette opération pour la première fois.
 
-1. Accédez à `/apps/sling/servlet/errorhandler`. Ici, vous pouvez effectuer l’une des opérations suivantes :
+1. Accédez à `/apps/sling/servlet/errorhandler` et effectuez l’une des opérations suivantes :
 
-   * Modifier le script existant approprié pour fournir les informations requises
+   * modifiez le script existant approprié afin de pouvoir fournir les informations requises.
    * Créer un script, et le modifier, pour le code requis
 
 1. Enregistrez les modifications et effectuez un test.
 
 >[!CAUTION]
 >
->Les gestionnaires 404.jsp et 403.jsp ont été spécialement conçus pour prendre en compte l’authentification CQ5 ; en particulier, pour permettre une connexion système si ces erreurs se produisent.
+>Les gestionnaires 404.jsp et 403.jsp ont été conçus pour prendre en charge l&#39;authentification CQ5 ; en particulier, pour permettre la connexion au système en cas d&#39;erreur.
 >
->Par conséquent, le remplacement de ces deux gestionnaires doit être effectué avec précaution.
+>Par conséquent, le remplacement de ces deux gestionnaires devrait être effectué avec grand soin.
 
 ### Personnalisation de la réponse aux erreurs HTTP 500 {#customizing-the-response-to-http-errors}
 
-Les erreurs HTTP 500 sont dues à des exceptions côté serveur.
+Les erreurs HTTP 500 sont causées par des exceptions côté serveur.
 
 * **[500 : Erreur de serveur interne](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
 Le serveur a rencontré une condition inattendue qui l’a empêché de satisfaire la demande.
 
 Lorsque le traitement des demandes provoque une exception, le framework Apache Sling (sur laquelle CQ est basé) :
 
-* consigne l’exception ;
-* renvoie :
+* consigne l’exception
+* renvoie :
 
    * le code de réponse HTTP 500
-   * la trace de la pile d’exception
+   * trace de la pile d’exceptions
 
-   dans le corps de la réponse.
+  dans le corps de la réponse.
 
-La [personnalisation des pages affichées par le gestionnaire d’erreurs](#how-to-customize-pages-shown-by-the-error-handler) permet de créer un script `500.jsp`. Cependant, il n’est utilisé que si `HttpServletResponse.sendError(500)` est exécuté de manière explicite ; c’est-à-dire à partir d’un détecteur d’exceptions.
+La [personnalisation des pages affichées par le gestionnaire d’erreurs](#how-to-customize-pages-shown-by-the-error-handler) permet de créer un script `500.jsp`. Cependant, il n’est utilisé que si `HttpServletResponse.sendError(500)` est exécuté explicitement, c’est-à-dire à partir d’un collecteur d’exceptions.
 
 Dans le cas contraire, le code de réponse est défini sur 500, mais le script `500.jsp` n’est pas exécuté.
 
-Pour gérer les erreurs de type 500, le nom de fichier du script de gestionnaire d’erreurs doit être identique à la classe d’exception (ou superclasse). Pour gérer toutes ces exceptions, vous pouvez créer un script `/apps/sling/servlet/errorhandler/Throwable.js` ou `/apps/sling/servlet/errorhandler/Exception.jsp`.
+Pour gérer les erreurs de type 500, le nom de fichier du script de gestionnaire d’erreurs doit être identique à la classe d’exception (ou superclasse). Pour gérer toutes ces exceptions, vous pouvez créer un script. `/apps/sling/servlet/errorhandler/Throwable.js`p ou `/apps/sling/servlet/errorhandler/Exception.jsp`.
 
 >[!CAUTION]
 >
->Sur une instance de création, le [filtre de débogage de la gestion du contenu web CQ](/help/sites-deploying/osgi-configuration-settings.md) est activé par défaut. Cela donne toujours comme résultat le code de réponse 200. Le gestionnaire d’erreurs par défaut répond en écrivant la trace de pile complète sur la réponse.
+>Sur une instance d’auteur, la variable [Filtre de débogage CQ WCM](/help/sites-deploying/osgi-configuration-settings.md) est activé par défaut. Le code de réponse est toujours 200. Le gestionnaire d’erreur par défaut répond en écrivant la trace de pile complète à la réponse.
 >
->Des réponses avec le code 500 sont nécessaires pour un gestionnaire d’erreurs personnalisé. Par conséquent, le [filtre de débogage de la gestion du contenu Web CQ doit être désactivé](/help/sites-deploying/osgi-configuration-settings.md). Cela garantit le renvoi du code de réponse 500 qui, à son tour, déclenche le gestionnaire d’erreurs Sling approprié.
+>Pour un gestionnaire d’erreurs personnalisé, des réponses avec le code 500 sont nécessaires. Par conséquent, la variable [Le filtre de débogage de la gestion du contenu web CQ doit être désactivé.](/help/sites-deploying/osgi-configuration-settings.md). Cela garantit le renvoi du code de réponse 500 qui, à son tour, déclenche le gestionnaire d’erreurs Sling approprié.
 >
->Sur une instance de publication, le filtre de débogage de la gestion du contenu Web CQ est *toujours* désactivé (même s’il est configuré comme étant activé).
+>Sur une instance de publication, le filtre de débogage de la gestion du contenu web CQ est *always* désactivé (même s’il est configuré comme activé).

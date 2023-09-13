@@ -1,30 +1,26 @@
 ---
 title: Licences, notices de copyright et clauses de non-responsabilité de SharePoint Connector
-seo-title: SharePoint Connector Licenses, Copyright Notices, and Disclaimers
-description: Découvrez les licences, les notices de copyright et les clauses de non-responsabilité de SharePoint Connector.
-seo-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
-uuid: 182c8f0f-dcca-461a-9d8f-f05b376ad0cb
+description: Découvrez les licences SharePoint Connector, les avis de copyright et les clauses de non-responsabilité.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 56849775-3ac7-44a2-ab17-a707b001470e
 docset: aem65
 exl-id: b9342330-31f6-49cb-965e-4bab61f98d4c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '362'
-ht-degree: 100%
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+workflow-type: tm+mt
+source-wordcount: '354'
+ht-degree: 62%
 
 ---
 
 # Licences, notices de copyright et clauses de non-responsabilité de SharePoint Connector{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-Cette section répertorie l’ensemble des licences, des notices de copyright et des clauses de non-responsabilité qui doivent être présentées explicitement avec Day JCR Connector for Microsoft SharePoint.
+Cette section répertorie toutes les licences, les notices de copyright et les clauses de non-responsabilité qui doivent être explicitement mentionnées avec Day JCR Connector for MS® SharePoint.
 
-## Présentation des bibliothèques Connector tierces {#overview-of-connector-rd-party-libraries}
+## Présentation des bibliothèques tierces connecteurs {#overview-of-connector-rd-party-libraries}
 
-Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans les bibliothèques de base SharePoint Connector, ainsi que les licences, les notices de copyright ou les clauses de non-responsabilité qui les prennent en charge :
+Le tableau suivant répertorie les bibliothèques tierces utilisées dans les bibliothèques principales de SharePoint Connector, ainsi que les licences, les notices de copyright ou les clauses de non-responsabilité qui les couvrent :
 
 | Bibliothèque | Type de licence |
 |---|---|
@@ -63,9 +59,9 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans les
 | xml-apis | [Apache](#apache) (contient des portions couvertes par les licences de domaine public et de logiciels W3C) |
 | XmlSchema | [Apache](#apache) |
 
-## Présentation des bibliothèques CRX tierces {#overview-of-crx-rd-party-libraries}
+## Présentation des bibliothèques tierces CRX {#overview-of-crx-rd-party-libraries}
 
-Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans CRX, ainsi que les licences, les notices de copyright ou les clauses de non-responsabilité qui les prennent en charge :
+Le tableau suivant répertorie les bibliothèques tierces utilisées dans CRX, ainsi que les licences, les notices de copyright ou les clauses de non-responsabilité qui les couvrent :
 
 <table>
  <colgroup>
@@ -155,9 +151,9 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans CRX
  </tbody>
 </table>
 
-## Présentation des bibliothèques CQSE tierces {#overview-of-cqse-rd-party-libraries}
+## Présentation des bibliothèques tierces CQSE {#overview-of-cqse-rd-party-libraries}
 
-Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Communiqué Servlet Engine, ainsi que les licences, les notices de copyright ou les clauses de non-responsabilité qui les prennent en charge :
+Le tableau suivant répertorie les bibliothèques tierces utilisées dans le moteur Communiqué Servlet, ainsi que les licences, les notices de copyright ou les clauses de non-responsabilité qui les couvrent :
 
 <table>
  <colgroup>
@@ -215,7 +211,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
   </tr>
   <tr>
    <td><br /> </td>
-   <td><a href="#w-c-software">Logiciel W3C</a></td>
+   <td><a href="#w-c-software">Logiciels W3C</a></td>
   </tr>
  </tbody>
 </table>
@@ -1100,8 +1096,8 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
      This license came from: https://www.w3.org/Consortium/Legal/
      copyright-documents-19990405
 
-     W3C® DOCUMENT NOTICE AND LICENSE
-     Copyright © 1994-2001 World
+     W3C&reg; DOCUMENT NOTICE AND LICENSE
+     Copyright &copy; 1994-2001 World
      Wide Web Consortium, World
      Wide Web Consortium, (Massachusetts Institute of
      Technology, Institut National de
@@ -1125,7 +1121,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
      A link or URL to the original W3C document.
 
      The pre-existing copyright notice of the original author, or if
-     it doesn't exist, a notice of the form: "Copyright © [$date-of-document]
+     it doesn't exist, a notice of the form: "Copyright &copy; [$date-of-document]
      World Wide Web Consortium, (Massachusetts
      Institute of Technology, Institut National de Recherche en Informatique
      et en Automatique, Keio
@@ -1180,14 +1176,14 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
      (last updated by reagle on 1999/04/99.)
 ```
 
-## Logiciel W3C {#w-c-software}
+## Logiciels W3C {#w-c-software}
 
 ```xml
      This license came from: <a href="https://www.w3.org/Consortium/Legal/" TARGET="_blank" >https://www.w3.org/Consortium/Legal/</a>
      copyright-software-19980720
 
-     W3C® SOFTWARE NOTICE AND LICENSE
-     Copyright © 1994-2001 World
+     W3C&reg; SOFTWARE NOTICE AND LICENSE
+     Copyright &copy; 1994-2001 World
      Wide Web Consortium, World
      Wide Web Consortium, (Massachusetts Institute of
      Technology, Institut National de
@@ -1213,7 +1209,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
      terms and conditions. If none exist, a short notice of the
      following form (hypertext is preferred, text is permitted) should
      be used within the body of any redistributed or derivative code:
-     "Copyright © [$date-of-software] World Wide Web Consortium,
+     "Copyright &copy; [$date-of-software] World Wide Web Consortium,
      (Massachusetts Institute of Technology, Institut National de
      Recherche en Informatique et en Automatique, Keio University).
      All Rights Reserved.

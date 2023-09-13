@@ -1,35 +1,31 @@
 ---
 title: Configuration des paramètres AEM DS
-seo-title: Configuring AEM DS settings
-description: Vous devez spécifier l’URL du serveur de traitement avant d’envoyer un formulaire.
-seo-description: You need to specify the processing server URL before you submit a form.
-uuid: 55a6d434-7352-48a8-8387-8a5c1a48fafc
+description: Découvrez comment spécifier l’URL du serveur de traitement avant d’envoyer un formulaire.
 contentOwner: amgoyal
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: a7387bd3-8b31-4bd0-a861-daa8f7cb2d05
 docset: aem65
 role: Admin
 exl-id: c43cab7b-3421-4e1b-a834-b2dd6eb23c1d
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
-source-wordcount: '241'
-ht-degree: 100%
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+workflow-type: tm+mt
+source-wordcount: '244'
+ht-degree: 37%
 
 ---
 
 # Configuration des paramètres AEM DS{#configuring-aem-ds-settings}
 
-Cet article explique comment configurer le **service de paramètres AEM DS**. Ce paramètre peut être utilisé dans plusieurs cas de figure, par exemple :
+Cet article décrit comment configurer la variable **Service de paramètres d’AEM**. Ce paramètre peut être utilisé dans plusieurs scénarios, par exemple :
 
 * Dans Correspondence Management
 
-   * Pour configurer les processus AEM Forms
-   * En utilisant le portail des formulaires pour enregistrer à distance un brouillon/un envoi
+   * Pour configurer le processus AEM Forms
+   * Lors de l’utilisation du portail Forms pour l’enregistrement à distance de brouillon/envoi
 
-* Dans les formulaires adaptatifs pour les cas où le formulaire adaptatif est envoyé à partir d’une instance de publication
+* Dans les formulaires adaptatifs, par exemple lorsqu’un formulaire adaptatif est envoyé à partir de l’instance de publication
 
-Voici les étapes pour configurer les **[!UICONTROL paramètres AEM DS]** :
+Vous trouverez ci-dessous les étapes de configuration de la variable **[!UICONTROL Paramètres AEM DS]**:
 
 1. Ouvrez Configuration Manager sur l’instance de publication à l’aide de l’URL :\
    *https://localhost:port/system/console/configMgr*.
@@ -46,16 +42,17 @@ Voici les étapes pour configurer les **[!UICONTROL paramètres AEM DS]** :
 
 1. Ajoutez les informations suivantes dans les champs respectifs :
 
-   **[!UICONTROL URL du serveur de traitement]** : le serveur de traitement est le serveur sur lequel les formulaires ou le workflow AEM doivent être déclenchés. Elle peut être identique à l’URL de l’instance d’auteur AEM ou de l’autre URL du serveur (à savoir https://localhost:port/).
+   **[!UICONTROL URL du serveur de traitement]**: le serveur de traitement est le serveur sur lequel le workflow Forms ou AEM doit être déclenché. Il peut s’agir de l’URL de l’instance d’auteur AEM ou de l’autre URL du serveur (c’est-à-dire https://localhost:port/).
 
    **[!UICONTROL Nom d’utilisateur du serveur de traitement]** : nom d’utilisateur de l’utilisateur du workflow [basé sur l’URL du serveur utilisé].
 
-   **[!UICONTROL Mot de passe du serveur de traitement]** : mot de passe de l’utilisateur du processus
+   **[!UICONTROL Mot de passe du serveur de traitement]**: mot de passe de l’utilisateur du workflow
 
    >[!NOTE]
    >
    >
    >    
    >    
-   >    * Lorsque vous utilisez des processus AEM ou des formulaires, vous devez configurer le service de paramètres DS avant tout envoi depuis le serveur de publication. Dans le cas contraire, l’envoi du formulaire échouera.
-
+   >    * Lors de l’utilisation de processus Forms ou AEM, avant d’envoyer un envoi depuis le serveur de publication, il est nécessaire de configurer le service de paramètres du répertoire de stockage global de documents. Sinon, l’envoi du formulaire échouera.
+   >    
+   >

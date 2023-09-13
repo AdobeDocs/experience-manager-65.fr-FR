@@ -1,78 +1,74 @@
 ---
 title: Raccourcis clavier AEM Forms
-seo-title: AEM Forms Keyboard Shortcuts
 description: Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec l’éditeur de formulaire adaptatif, l’éditeur de thème, l’explorateur de contenu et Correspondence Management pour les systèmes d’exploitation Windows et Macintosh.
-seo-description: This article lists the keyboard shortcuts that can be used with Adaptive Form Editor, Theme Editor, Content Browser, and Correspondence Management.
-uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
-discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 feature: Adaptive Forms
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 43%
+source-wordcount: '1208'
+ht-degree: 31%
 
 ---
 
 # Raccourcis clavier AEM Forms {#aem-forms-keyboard-shortcuts}
 
-<span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/using/create-an-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
+<span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/using/create-an-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
 
 Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec l’éditeur de formulaire adaptatif, l’éditeur de thème, l’explorateur de contenu et Correspondence Management pour les systèmes d’exploitation Windows et Macintosh.
 
 ## Éditeur de formulaires adaptatifs {#adaptiveformeditor}
 
-| **Action** | **Raccourci sous Windows** | **Raccourci sous Mac OS** |
+| **Action** | **Raccourci sous Windows** | **Raccourci sur macOS** |
 |---|---|---|
-| Ouvrir l’explorateur de propriétés pour le composant de formulaire adaptatif sélectionné | Alt+Entrée | Alt+Retour |
-| Fermer l’explorateur de propriétés pour le composant de formulaire adaptatif sélectionné | Ctrl+Alt+W | Commande + Alt + W |
+| Ouvrez le navigateur Propriétés pour le composant de formulaire adaptatif sélectionné. | Alt+Entrée | Alt+Retour |
+| Fermez l’explorateur Propriétés pour le composant de formulaire adaptatif sélectionné. | Ctrl+Alt+W | Commande + Alt + W |
 | Enregistrer les modifications dans le navigateur Propriétés pour le composant de formulaire adaptatif sélectionné | Ctrl + S | Commande + S |
 | Modifier la règle pour le composant de formulaire adaptatif sélectionné | Ctrl+Alt+Entrée | Commande + Alt + Retour |
-| Basculez entre Aperçu et le mode actuellement sélectionné (par exemple, Édition, Génération de modèles automatique, etc.) | Ctrl+Maj+M | Ctrl+Maj+M&amp;ast; |
+| Basculer entre Aperçu et le mode actuellement sélectionné (par exemple, Édition et Génération de modèles automatique) | Ctrl+Maj+M | Ctrl+Maj+M&amp;ast; |
 | Annuler la dernière modification | Ctrl+Z | Ctrl+Z&amp;ast; |
 | Rétablir la dernière modification | Ctrl+Y | Ctrl+Y&amp;ast; |
 | Sélectionner plusieurs composants | Maj+Clic | Maj+Clic |
 | Copier le composant sélectionné | Ctrl+C | Ctrl+C&amp;ast; |
-| Couper un ou plusieurs composants sélectionnés. Le composant coupé ne disparaît pas tant qu’il n’a pas été collé à un autre emplacement. | Ctrl+X | Ctrl+X&amp;ast; |
-| Coller un ou plusieurs composants | Ctrl+V | Ctrl+V |
-| Supprimer le ou les composants sélectionnés | Ctrl+Suppr | Ctrl+Suppr&amp;ast; |
-| Supprimer le ou les composants sélectionnés | Ctrl+Retour arrière | Ctrl+Retour arrière&amp;ast; |
+| Couper les composants sélectionnés. Le composant coupé ne disparaît pas tant qu’il n’a pas été collé à un autre emplacement. | Ctrl+X | Ctrl+X&amp;ast; |
+| Coller les composants | Ctrl+V | Ctrl+V |
+| Supprimer les composants sélectionnés | Ctrl+Suppr | Ctrl+Suppr&amp;ast; |
+| Supprimer les composants sélectionnés | Ctrl+Retour arrière | Ctrl+Retour arrière&amp;ast; |
 | Mettre le texte en gras lors de l’utilisation du composant Éditeur de texte enrichi en mode Aperçu | Ctrl+B | Ctrl+B&amp;ast; |
 | Mettre le texte en italique lors de l’utilisation du composant Éditeur de texte enrichi en mode Aperçu | Ctrl+I | Ctrl+I&amp;ast; |
-| Mettre le texte en gras lors de l’utilisation du composant Éditeur de texte enrichi en mode aperçu | Ctrl+U | Ctrl+U&amp;ast; |
+| Mettre le texte en gras lors de l’utilisation du composant Éditeur de texte enrichi en mode Aperçu | Ctrl+U | Ctrl+U&amp;ast; |
 
 >[!NOTE]
 >
->Les raccourcis marqués d’un &#39;&amp;ast;&#39; fonctionnent à la fois avec les touches Ctrl et Commande sous Mac OS.
+>Les raccourcis marqués d’un &quot;&amp;ast;&quot; fonctionnent avec les touches Ctrl et Commande de macOS.
 
 >[!NOTE]
 >
 >Sélection multiple sur un ordinateur de bureau :
 >
->* Windows : Ctrl+Clic sur les composants requis.
->* Mac OS : Commande + clic sur les composants requis.
+>* Windows : maintenez la touche Ctrl enfoncée tout en cliquant sur les composants requis.
+>* macOS : Commande + clic sur les composants requis.
 >
 
 ## Éditeur de thème  {#themeeditor}
 
-| **Action** | **Raccourci sous Windows** | **Raccourci sous Mac OS** |
+| **Action** | **Raccourci sous Windows** | **Raccourci sur macOS** |
 |---|---|---|
 | Ouvrez l’explorateur de propriétés pour le composant sélectionné dans un thème. | Alt+Entrée | Alt+Retour |
-| Fermer l’explorateur de propriétés pour le composant sélectionné dans un thème | Ctrl+Alt+W | Commande + Alt + W |
+| Fermez l’explorateur Propriétés pour le composant sélectionné dans un thème. | Ctrl+Alt+W | Commande + Alt + W |
 | Annuler la dernière modification | Ctrl+Z | Ctrl+Z&amp;ast; |
 | Rétablir la dernière modification | Ctrl+Y | Ctrl+Y&amp;ast; |
 | Enregistrer les modifications dans l’explorateur de propriétés pour le composant sélectionné dans un thème | Ctrl + S | Ctrl+S&amp;ast; |
 
 >[!NOTE]
 >
->Les raccourcis marqués d’un &#39;&amp;ast;&#39; fonctionnent à la fois avec les touches Ctrl et Commande sous Mac OS.
+>Les raccourcis marqués d’un &quot;&amp;ast;&quot; fonctionnent avec les touches Ctrl et Commande de macOS.
 
 ## Explorateur de contenu  {#contentbrowser}
 
-| **Action** | **Raccourci sous Windows** | **Raccourci sous Mac OS** |
+| **Action** | **Raccourci sous Windows** | **Raccourci sur macOS** |
 |---|---|---|
 | Développez tous les accordéons dans l’arborescence des objets de formulaire de l’explorateur de contenu lorsque la sélection est activée. | Ctrl + A pour sélectionner tous les accordéons, puis flèche droite pour développer | Commande+A pour sélectionner tous les accordéons, puis flèche droite pour développer |
 | Réduire tous les accordéons dans l’arborescence des objets de formulaire d’explorateur de contenu lors de l’activation | Ctrl+A pour sélectionner tous les accordéons, puis flèche gauche pour réduire | Commande+A pour sélectionner tous les accordéons, puis flèche gauche pour réduire |
@@ -81,8 +77,8 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 | Sélectionnez l’élément suivant dans l’arborescence des objets Forms | Flèche vers le bas | Flèche vers le bas |
 | Sélection de l’élément précédent dans l’arborescence des objets Forms | Flèche vers le haut | Flèche vers le haut |
 
-[1] Remplace Ctrl + Flèche droite pour Windows et Commande + Flèche droite pour Mac OS.\
-[2] Remplace Ctrl + Flèche gauche pour Windows et Commande + Flèche gauche pour Mac OS.
+[1] Remplace Ctrl + Flèche droite pour Windows et Commande + Flèche droite pour macOS.\
+[2] Remplace Ctrl + Flèche gauche pour Windows et Commande + Flèche gauche pour macOS.
 
 ## Correspondence Management {#correspondence-management}
 
@@ -98,7 +94,7 @@ Cette section répertorie les différents claviers et raccourcis d’accessibili
   <tr>
    <th><strong>Opération</strong></th> 
    <th><strong>Raccourci sous Windows</strong></th> 
-   <th><strong>Raccourci sous Mac OS</strong><br /> </th> 
+   <th><strong>Raccourci sur macOS</strong><br /> </th> 
   </tr>
   <tr>
    <td><p>Sélectionner le mot actif</p> </td> 
@@ -108,7 +104,7 @@ Cette section répertorie les différents claviers et raccourcis d’accessibili
   <tr>
    <td><p>Sélectionner le mot précédent</p> </td> 
    <td><p>Ctrl+Maj+Flèche Gauche</p> </td> 
-   <td>Commande + Maj + Flèche gauche</td> 
+   <td>Commande+Maj+Flèche Gauche</td> 
   </tr>
   <tr>
    <td><p>Étendre une sélection au début d’un paragraphe</p> </td> 
@@ -146,22 +142,22 @@ Cette section répertorie les différents claviers et raccourcis d’accessibili
    <td>Option + Flèche Haut</td> 
   </tr>
   <tr>
-   <td><p>Sélectionner le texte caractère par caractère vers l’arrière</p> </td> 
+   <td><p>Sélectionner le texte caractère par caractère dans la direction arrière</p> </td> 
    <td><p>Maj+Flèche Gauche</p> </td> 
    <td>Maj+Flèche Gauche</td> 
   </tr>
   <tr>
-   <td><p>Sélectionner le texte caractère par caractère vers l’avant</p> </td> 
+   <td><p>Sélectionner le texte caractère par caractère dans la direction vers l’avant</p> </td> 
    <td><p>Maj+Flèche Droite</p> </td> 
    <td>Maj+Flèche Droite</td> 
   </tr>
   <tr>
-   <td><p>Sélectionner le texte paragraphe par paragraphe dans la direction opposée</p> </td> 
+   <td><p>Sélectionner le texte paragraphe par paragraphe dans la direction arrière</p> </td> 
    <td><p>Maj+touche Haut</p> </td> 
    <td>Maj+touche Haut</td> 
   </tr>
   <tr>
-   <td><p>Sélectionner le texte paragraphe par paragraphe vers l’avant</p> </td> 
+   <td><p>Sélectionner le texte paragraphe par paragraphe dans la direction vers l’avant</p> </td> 
    <td><p>Maj+Flèche Bas</p> </td> 
    <td>Maj+Flèche Bas</td> 
   </tr>
@@ -197,7 +193,7 @@ Cette section répertorie les différents claviers et raccourcis d’accessibili
   </tr>
   <tr>
    <td><p>Déplacer le curseur à la position de départ</p> </td> 
-   <td><p>Ctrl+Accueil</p> </td> 
+   <td><p>Ctrl+Origine</p> </td> 
    <td>Commande + Flèche Haut</td> 
   </tr>
   <tr>
@@ -216,7 +212,7 @@ Cette section répertorie les différents claviers et raccourcis d’accessibili
   <tr>
    <th><p><strong>Opération</strong></p> </th> 
    <th><p><strong>Raccourci sous Windows<br /> </strong></p> </th> 
-   <th><strong>Raccourci sous Mac OS</strong></th> 
+   <th><strong>Raccourci sur macOS</strong></th> 
   </tr>
   <tr>
    <td><p>Aligner un paragraphe au centre</p> </td> 
@@ -248,7 +244,7 @@ Cette section répertorie les différents claviers et raccourcis d’accessibili
   <tr>
    <th><strong>Opération</strong></th> 
    <th><strong>Raccourci sous Windows </strong></th> 
-   <th><strong>Raccourci sous Mac OS</strong><br /> </th> 
+   <th><strong>Raccourci sur macOS</strong><br /> </th> 
   </tr>
   <tr>
    <td><p>Annuler </p> </td> 
@@ -270,7 +266,7 @@ Cette section répertorie les différents claviers et raccourcis d’accessibili
   <tr>
    <th><p><strong>Opération</strong></p> </th> 
    <th><p><strong>Raccourci sous Windows</strong></p> </th> 
-   <th><strong>Raccourci sous Mac OS</strong></th> 
+   <th><strong>Raccourci sur macOS</strong></th> 
   </tr>
   <tr>
    <td><p>Augmenter la taille de la police </p> </td> 
@@ -292,7 +288,7 @@ Cette section répertorie les différents claviers et raccourcis d’accessibili
   <tr>
    <th><strong>Opération</strong></th> 
    <th><strong>Raccourci sous Windows</strong></th> 
-   <th><strong>Raccourci sous Mac OS</strong></th> 
+   <th><strong>Raccourci sur macOS</strong></th> 
   </tr>
   <tr>
    <td><p>Supprimer le mot à gauche du curseur</p> </td> 
@@ -314,7 +310,7 @@ Cette section répertorie les différents claviers et raccourcis d’accessibili
   <tr>
    <th><strong>Opération</strong></th> 
    <th><strong>Raccourci sous Windows<br /> </strong></th> 
-   <th><strong>Raccourci sous Mac OS</strong></th> 
+   <th><strong>Raccourci sur macOS</strong></th> 
   </tr>
   <tr>
    <td><p>Coller le texte </p> </td> 
@@ -341,7 +337,7 @@ Cette section répertorie les différents claviers et raccourcis d’accessibili
   <tr>
    <th><strong>Opération</strong></th> 
    <th><strong>Raccourci sous Windows</strong></th> 
-   <th><strong>Raccourci sous Mac OS</strong></th> 
+   <th><strong>Raccourci sur macOS</strong></th> 
   </tr>
   <tr>
    <td><p>Mettre les lettres en gras</p> </td> 

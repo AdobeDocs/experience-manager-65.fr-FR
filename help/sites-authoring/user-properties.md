@@ -1,20 +1,16 @@
 ---
 title: Configuration de votre environnement de compte
-seo-title: Configuring Your Account Environment
 description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
-seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment
-uuid: ef31be29-5c18-4dc9-ad51-fb001588b31e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: b610e19c-f8d9-4ae2-b056-9fd5cf541261
 docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 70%
+source-wordcount: '514'
+ht-degree: 57%
 
 ---
 
@@ -28,11 +24,11 @@ Accédez tout d’abord à l’option [Utilisateur](/help/sites-authoring/user-p
 
 ## Paramètres utilisateur {#user-settings}
 
-Le **Utilisateur** La boîte de dialogue paramètres vous donne accès aux options suivantes :
+La variable **Utilisateur** La boîte de dialogue paramètres vous donne accès aux options suivantes :
 
 * Se faire passer pour
 
-   * Avec le [Se faire passer pour](/help/sites-administering/security.md#impersonating-another-user) fonctionnalité qu’un utilisateur peut utiliser au nom d’un autre utilisateur.
+   * Avec la variable [Se faire passer pour](/help/sites-administering/security.md#impersonating-another-user) fonctionnalité qu’un utilisateur peut utiliser au nom d’un autre utilisateur.
 
 * Profil
 
@@ -72,18 +68,18 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
 
 * **Afficher les actions de bureau pour Assets**
 
-  Cette option nécessite l’utilisation de l’appli de bureau AEM.
+  Cette option nécessite l’utilisation d’une appli de bureau AEM.
 
 * **Couleur de l’annotation**
 
   Cette option définit la couleur par défaut utilisée lors de la création d’annotations.
 
-   * Cliquez sur le bloc de couleur pour ouvrir le sélecteur d’échantillons afin de sélectionner une couleur.
+   * Cliquez sur le bloc de couleur pour ouvrir le sélecteur d’échantillon et sélectionner une couleur.
    * Vous pouvez également saisir le code hexadécimal de la couleur désirée dans le champ.
 
 * **Présentation de la date relative**
 
-  Pour améliorer la lisibilité, AEM effectue le rendu des dates parmi les sept derniers jours en tant que dates relatives (par exemple, il y a trois jours) et des dates antérieures en tant que dates précises (par exemple, le 20 mars 2017).
+  Pour améliorer la lisibilité, AEM effectue le rendu des dates au cours des sept derniers jours sous forme de dates relatives (par exemple, il y a trois jours) et des dates plus anciennes sous forme de dates exactes (par exemple, 20 mars 2017).
 
   Cette option définit la manière dont les dates sont affichées dans le système. Les options suivantes sont disponibles :
 
@@ -100,7 +96,7 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
 
 * **Activer les raccourcis**
 
-  AEM prend en charge un certain nombre de raccourcis clavier qui rendent la création plus efficace.
+  AEM prend en charge plusieurs raccourcis clavier qui rendent la création plus efficace.
 
    * [Raccourcis clavier lors de la modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
@@ -113,8 +109,8 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
 
 * **Activer la page d’accueil des ressources**
 
-  Cette option est disponible uniquement si l’administrateur système a activé l’environnement Page d’accueil des ressources pour l’ensemble de l’entreprise.
+  Cette option n’est disponible que si l’administrateur système a activé l’expérience de page d’accueil des ressources pour l’ensemble de l’entreprise.
 
 * **Configuration Stock**
 
-  Cette option permet de spécifier la configuration Adobe Stock préférée. Elle n’est disponible que si votre administrateur système a activé . [Intégration d’Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+  Cette option vous permet de définir la configuration Adobe Stock souhaitée. Elle n’est disponible que si l’administrateur système a activé [Intégration d’Adobe Stock](/help/assets/aem-assets-adobe-stock.md).

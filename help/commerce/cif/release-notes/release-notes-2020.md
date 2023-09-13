@@ -2,16 +2,16 @@
 title: Notes de mise à jour d’AEM Content and Commerce 2020
 description: Notes de mise à jour d’AEM Content and Commerce 2020
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '1328'
-ht-degree: 100%
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+workflow-type: tm+mt
+source-wordcount: '1352'
+ht-degree: 69%
 
 ---
 
 # Présentation de la version GitHub de Commerce Integration Framework
 
-## Date de publication : novembre 2020
+## Date de publication : novembre 2020
 
 | GitHub | Version | Notes de mise à jour détaillées |
 |:-------|:-----:|---------------------:|
@@ -21,19 +21,19 @@ ht-degree: 100%
 
 ### Nouveautés {#what-is-new-november}
 
-* L’héritage du modèle a été ajouté à une page de catégorie spécifique. Cette fonctionnalité améliore l’efficacité des utilisateurs professionnels, car elle permet à toutes les sous-catégories d’hériter du modèle créé pour une catégorie supérieure spécifique.
+* Héritage de modèle ajouté à une page de catégorie spécifique. Cette fonctionnalité améliore l’efficacité des utilisateurs professionnels, car elle permet à toutes les sous-catégories d’hériter du modèle créé pour une catégorie supérieure spécifique.
 
-* Mise à jour du storefront de référence Venia pour utiliser le fragment d’expérience pour le pied de page. Les utilisateurs professionnels ont la possibilité de modifier le pied de page à l’aide des outils de création AEM.
+* Mise à jour du storefront de référence Venia pour utiliser le fragment d’expérience pour le pied de page. Les utilisateurs professionnels peuvent modifier le pied de page à l’aide AEM outils de création.
 
 ### Améliorations {#what-is-improved-november}
 
-* Le composant Passage en caisse a été amélioré afin que les acheteurs puissent entrer leur pays de destination pour autoriser les adresses de facturation et d’expédition en dehors des États-Unis.
+* Le composant Passage en caisse a été amélioré afin que les acheteurs puissent entrer dans le pays de destination pour autoriser les adresses de facturation/d’expédition en dehors des États-Unis.
 
 * Composant de navigation étendu pour décompresser la couche de données client d’Adobe.
 
 * Plusieurs correctifs de bogues.
 
-## Date de publication : octobre 2020
+## Date de publication : octobre 2020
 
 | GitHub | Version | Notes de mise à jour détaillées |
 |:-------|:-----:|---------------------:|
@@ -43,9 +43,9 @@ ht-degree: 100%
 
 ### Nouveautés {#what-is-new-october}
 
-* Ajout d’un nouveau composant de carrousel de catégorie pour permettre aux utilisateurs professionnels de faire glisser et de déposer ce composant sur les pages de contenu AEM afin d’enrichir les pages de contenu avec des données commerciales.
+* Un nouveau composant de carrousel de catégorie a été ajouté pour permettre aux utilisateurs professionnels de faire glisser et de déposer ce composant sur les pages de contenu AEM afin d’enrichir les pages de contenu avec les données commerciales.
 
-* Composants principaux CIF étendus pour décompresser la couche de données client Adobe en envoyant des données commerciales. La couche de données client Adobe est une méthode normalisée pour collecter des données et communiquer les données aux serveurs d’analyse numérique et de création de rapports. Pour plus d’informations, reportez-vous à la section [Couche de données client Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
+* Composants principaux CIF étendus pour décompresser la couche de données client Adobe en envoyant des données commerciales. La couche de données client Adobe est une méthode normalisée pour collecter des données et communiquer les données aux serveurs d’analyses numériques et de création de rapports. Pour plus d’informations, reportez-vous à la section [Couche de données client Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
 
 * Pages Détails du produit et Liste de produits étendues pour renseigner automatiquement les métadonnées d’optimisation pour les moteurs de recherche (telles que le titre, la méta-description, les méta-mots-clés) configurées dans l’interface utilisateur d’administration d’Adobe Commerce
 
@@ -65,11 +65,11 @@ ht-degree: 100%
 
 * Ajout de fonctionnalités d’informations de compte pour permettre aux acheteurs de mettre à jour leurs informations personnelles.
 
-* Style de pagination de chargement différé implémenté pour la liste de produits et les pages de résultats de recherche pour permettre à l’équipe de développement de configurer ces composants pour afficher le bouton « Charger plus » comme style de pagination.
+* Un style de pagination de chargement différé est mis en oeuvre pour la liste de produits et les pages de résultats de recherche afin que les développeurs puissent configurer ces composants pour afficher le bouton &quot;Charger plus&quot; comme style de pagination.
 
-* Page de réinitialisation du mot de passe implémentée pour permettre aux acheteurs de mettre à jour ou réinitialiser leur mot de passe de compte.
+* La page de réinitialisation du mot de passe est mise en oeuvre pour permettre aux acheteurs de mettre à jour/réinitialiser leur mot de passe de compte.
 
-* Prise en charge des types de produits groupés disponibles.
+* La prise en charge des types de produits groupés est disponible.
 
 * L’équipe de développement peut configurer les balises HTML pour les composants Carrousel de produits, Produits associés et Liste des catégories vedettes afin de suivre les bonnes pratiques d’optimisation pour les moteurs de recherche.
 
@@ -77,7 +77,7 @@ ht-degree: 100%
 
 * Plusieurs correctifs de bogues.
 
-## Date de publication : août 2020
+## Date de publication : août 2020
 
 | GitHub | Version | Notes de mise à jour détaillées |
 |:-------|:-----:|---------------------:|
@@ -89,15 +89,15 @@ ht-degree: 100%
 
 * Ajout du composant de chemin de navigation pour prendre en charge le contenu et les pages de commerce.
 
-* Onglet Commerce ajouté aux propriétés de page pour afficher les propriétés CIF pour la page d’entrée et les fragments d’expérience.
+* Onglet Commerce ajouté aux propriétés de page pour afficher les propriétés CIF pour la page de destination et les fragments d’expérience.
 
-* Amélioration du composant de barre de recherche pour la prise en charge de l’option d’affichage du texte d’espace réservé.
+* Le composant Barre de recherche a été amélioré afin de prendre en charge l’option d’affichage de texte d’espace réservé.
 
 * Amélioration de la flexibilité des composants Produit et Teaser de produit pour une prise en charge plus facile des personnalisations.
 
-* Possibilité de remplacer et de configurer le libellé du bouton d’appel à l’action par défaut pour le composant Teaser de produit.
+* Possibilité de remplacer et de configurer le libellé de bouton CTA par défaut pour le composant Teaser de produit.
 
-* Le composant Carnet d’adresses a été amélioré afin de permettre à un acheteur enregistré de choisir les adresses d’expédition et de facturation enregistrées dans le carnet d’adresses lors du passage en caisse.
+* Le composant Carnet d’adresses a été amélioré afin de permettre aux acheteurs enregistrés de choisir les adresses d’expédition et de facturation enregistrées dans le carnet d’adresses lors du passage en caisse.
 
 * Plusieurs correctifs de bogues.
 
@@ -115,7 +115,7 @@ ht-degree: 100%
 
 * Archétype CIF fusionné avec l’Archétype de projet AEM. Pour les nouveaux projets, utilisez l’[Archétype de projet AEM](https://github.com/adobe/aem-project-archetype) comme point de départ.
 
-* Ajout de la gestion des carnets d’adresses pour permettre aux utilisateurs connectés de gérer leurs adresses.
+* La gestion des carnets d’adresses a été ajoutée pour permettre aux utilisateurs connectés de gérer leurs adresses.
 
 * L’interface utilisateur de configuration du cloud CIF prend en charge les actions de publication ou de dépublication.
 
@@ -147,9 +147,9 @@ Il s’agit de la première version des composants principaux CIF qui soit prise
 
 ### Améliorations {#what-is-improved-june}
 
-* Les pages Liste de produits et Résultats de la recherche affichent le nombre total d’éléments. Le nombre d’éléments est mis à jour lorsque l’acheteur applique des filtres.
+* Les pages Liste de produits et Résultat de recherche affichent le nombre total d’éléments. Le nombre d’éléments est mis à jour lorsque le client applique des filtres.
 
-* Recherche à facettes optimisée en combinant la requête de catégorie à la requête de recherche de produit.
+* La recherche à facettes est optimisée en combinant une requête de catégorie à une requête de recherche de produit.
 
 * Les sélecteurs de catégorie et de produit pour l’aperçu de page respectent le cq:catalogPath.
 
@@ -169,13 +169,13 @@ Il s’agit de la première version des composants principaux CIF qui soit prise
 
 * Ajout de la prise en charge de la recherche à facettes à la page de recherche et à la page de liste de produits pour permettre aux acheteurs de filtrer les résultats de recherche en fonction des facettes de produit.
 
-* Ajout d’un nouveau service OSGi pour personnaliser les URL PDP/PLP à des fins d’optimisation pour les moteurs de recherche. Pour plus d’informations, reportez-vous à cette [documentation](https://github.com/adobe/aem-core-cif-components/wiki/configuration).
+* Nouveau service OSGi ajouté pour personnaliser les URL PDP/PLP à des fins d’optimisation du référencement. Pour plus d’informations, voir [documentation](https://github.com/adobe/aem-core-cif-components).
 
-* Liaison de produit automatiquement créée lors de la création d’une configuration cloud.
+* La liaison de produit est automatiquement créée lors de la création d’une configuration cloud.
 
 ### Améliorations
 
-* Configuration cloud étendue pour afficher l’action « Créer un dossier ».
+* Configuration du cloud étendue pour afficher l’action &quot;Créer un dossier&quot;.
 
 * Plusieurs correctifs ont été appliqués.
 
@@ -189,7 +189,7 @@ Il s’agit de la première version des composants principaux CIF qui soit prise
 
 ### Nouveautés {#what-is-new-april}
 
-* Paramètres de configuration unifiés et simplifiés pour le Connecteur CIF. Pour plus d’informations, consultez les sections [Prise en main](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) ou [Nouvelle configuration de projet CIF AEM](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html#!AdobeDocs/commerce-cif-documentation/master/getting-started/02-new-cif-project.md)
+* Les paramètres de configuration de CIF Connector sont unifiés et simplifiés. Pour plus d’informations, consultez les sections [Prise en main](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=fr) ou [Nouvelle configuration de projet CIF AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=fr)
 
 ### Améliorations {#what-is-improved-april}
 
@@ -197,7 +197,7 @@ Il s’agit de la première version des composants principaux CIF qui soit prise
 
 * Prise en charge étendue de l’internationalisation pour tous les composants.
 
-* Prise en charge des produits groupés et des produits virtuels disponibles.
+* La prise en charge des produits groupés et des produits virtuels est disponible.
 
 * Les composants Produits associés, Carrousel de produit et Catégorie en vedette ont été améliorés pour prendre en charge le titre facultatif.
 
@@ -241,11 +241,11 @@ Il s’agit de la première version des composants principaux CIF qui soit prise
 
 * Ajout du composant Fragment d’expérience (XF) pour permettre aux clients de créer XF dans leur projet commercial.
 
-* Modification de mot de passe disponible dans Mon compte.
+* Modifiez la fonctionnalité de mot de passe disponible dans mon compte.
 
 * Prise en charge d’i18n pour les composants principaux côté serveur AEM CIF.
 
-* Composant de produit associé générique disponible.
+* Un composant de produit générique associé est disponible.
 
 ### Améliorations {#what-is-improved-january}
 

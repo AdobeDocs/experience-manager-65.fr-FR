@@ -1,37 +1,33 @@
 ---
 title: Minimiser les fichiers JavaScript
-seo-title: Minification of the JavaScript files
-description: Instructions permettant de générer du code minimisé après des personnalisations de l’espace de travail AEM Forms pour optimiser les fichiers JS pour le Web.
-seo-description: Instructions to generate minified code after AEM Forms workspace customizations to optimize the JS files for the web.
-uuid: ad91e380-a988-4740-9534-e09657e0322a
+description: Instructions de génération du code minimisé après les personnalisations de l’espace de travail AEM Forms afin d’optimiser les fichiers JS pour le web.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
 exl-id: d88c6831-8ae9-426d-acb5-2a7e066ad158
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '185'
-ht-degree: 100%
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 35%
 
 ---
 
 # Minimiser les fichiers JavaScript {#minification-of-the-javascript-files}
 
-La minimisation supprime du code source les caractères redondants, comme les espaces blancs, les nouvelles lignes et les commentaires. Cela améliore les performances en réduisant la taille du code. La minimisation n’a aucun impact sur la fonctionnalité et réduit la lisibilité du code.
+La minimisation supprime du code source les caractères redondants, tels que les espaces blancs, les nouvelles lignes et les commentaires. Cela améliore les performances en réduisant la taille du code. Bien que la minimisation n’ait aucune incidence sur les fonctionnalités, elle réduit la lisibilité du code.
 
-Pour générer un code minimisé pour les modifications sémantiques, effectuez les étapes suivantes.
+Pour générer du code minimisé pour les modifications sémantiques, procédez comme suit.
 
 1. Copiez `client-html/src/main/webapp/js` de src-package dans filesystem.
 
    >[!NOTE]
    >
-   >Voir [Introduction à la personnalisation de l’espace de travail AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) pour plus d’informations sur les paquets.
+   >Voir [Introduction à la personnalisation de l’espace de travail AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) pour plus d’informations sur les packages.
 
 1. Mettez à jour les chemins dans `main.js` sous client-html/src/main/webapp/js, pour added/updated models/views.
 
-   Par exemple, pour ajouter un nouveau modèle Sharequeue, par exemple mySharequeue, modifiez :
+   Par exemple, l’ajout d’un nouveau modèle Sharequeue, par exemple mySharequeue, modifiez :
 
    ```javascript
    sharequeuemodel : pathprefix + 'runtime/models/sharequeue',
@@ -45,7 +41,7 @@ Pour générer un code minimisé pour les modifications sémantiques, effectuez 
 
 1. Mettez à jour `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` en cas de changement/ajout d’alias dans `main.js`.
 
-   Par exemple, pour ajouter un nouveau modèle Sharequeue, par exemple mySharequeue, modifiez :
+   Par exemple, l’ajout d’un nouveau modèle Sharequeue, par exemple mySharequeue, modifiez :
 
    ```xml
    <sharequeue
@@ -63,18 +59,18 @@ Pour générer un code minimisé pour les modifications sémantiques, effectuez 
                service="service"/>
    ```
 
-1. Dans client-html/src/main/webapp/js/minifier, exécutez la commande :
+1. Sur client-html/src/main/webapp/js/minifier, exécutez la commande :
 
    ```shell
    mvn clean install
    ```
 
-   Elle génère un dossier minified-files, sous client-html/src/main/webapp/js avec main.js et registre.js minifiés.
+   Il génère un dossier minified-files, sous client-html/src/main/webapp/js avec main.js minifié et registry.js.
 
 >[!NOTE]
 >
->la minimisation fonctionne uniquement sur les JVM 64 bits.
+>La minimisation fonctionne uniquement sur une JVM 64 bits.
 
 >[!NOTE]
 >
->la minimisation a des effets sur la mise à niveau.
+>Si vous réduisez, votre mise à niveau est affectée.

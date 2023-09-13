@@ -1,53 +1,49 @@
 ---
 title: Personnaliser les messages d’erreur pour les formulaires HTML5
-seo-title: Customizing error messages for HTML5 forms
-description: Découvrez comment personnaliser l’affichage des messages d’erreur pour les formulaires HTML5 et notamment comment modifier leur position et leur aspect.
-seo-description: Learn how to customize the display of error messages for HTML5 forms including how to change their position and appearance.
-uuid: 6f48b64e-858f-4323-ad50-88e25f3c2e3d
+description: Découvrez comment personnaliser l’affichage des messages d’erreur pour les formulaires HTML5, y compris comment modifier leur position et leur apparence.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 44e49789-9075-41b3-bce8-03e8efce2d5a
 feature: Mobile Forms
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '515'
-ht-degree: 100%
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 31%
 
 ---
 
 # Personnaliser les messages d’erreur pour les formulaires HTML5 {#customizing-error-messages-for-html-forms}
 
-Dans les formulaires HTML5, hors de la zone, les messages d’erreur et les avertissements ont une position et un aspect fixes (police et couleur), l’erreur est affichée uniquement pour un champ sélectionné, et une seule erreur s’affiche.
+Dans les formulaires HTML5, les messages d’erreur et les avertissements ont une position et un aspect fixes (police et couleur), l’erreur s’affiche uniquement pour un champ sélectionné et une seule erreur s’affiche.
 
-L’article fournit les étapes pour personnaliser les messages d’erreur des formulaires HTML5 afin de
+L’article décrit les étapes de personnalisation des messages d’erreur de HTML5 forms afin que vous puissiez effectuer les opérations suivantes :
 
 * changer l’aspect et la position des messages d’erreur. Vous pouvez faire qu’une erreur apparaisse en haut, en bas, et sur le côté droit de chaque champ.
 * afficher les messages d’erreur pour plusieurs champs à tout moment spécifié. 
-* afficher l’erreur, que le champ soit sélectionné ou non.
+* afficher l&#39;erreur, qu&#39;un champ soit sélectionné ou non.
 
 ## Personnalisation des messages d’erreur  {#customizing-error-messages-nbsp}
 
 Avant de personnaliser les messages d’erreur, téléchargez et extrayez le package ci-joint (CustomErrorManager-1.0-SNAPSHOT.zip). 
 
-Après avoir extrait le package, ouvrez le dossier CustomErrorManager-1.0-SNAPSHOT. Il contient les dossiers jcr_root et META-INF. Ces dossiers contiennent les fichiers CSS et .JS requis pour personnaliser les messages d’erreur.
+Après avoir extrait le package, ouvrez le dossier CustomErrorManager-1.0-SNAPSHOT . Il contient les dossiers jcr_root et META-INF. Ces dossiers contiennent les fichiers CSS et .JS requis pour personnaliser le message d’erreur.
 
 [Obtenir le fichier](assets/customerrormanager-1.0-snapshot.zip)
 
 ### Personnalisation de la position des messages d’erreur  {#customizing-the-position-of-error-messages-nbsp}
 
-Pour personnaliser la position d’un message d’erreur, ajoutez une balise &lt;div> à chaque champ d’erreur et d’avertissement, positionnez la balise &lt;div> à gauche ou à droite, puis appliquez les styles CSS à la balise &lt;div>. Pour obtenir des instructions détaillées, consultez la procédure ci-dessous :
+Pour personnaliser la position du message d’erreur, ajoutez une &lt;div> pour chaque champ d’erreur et d’avertissement, positionnez la balise &lt;div> sur la gauche ou la droite, et appliquez des styles CSS à l’événement &lt;div> balise . Pour obtenir des instructions détaillées, reportez-vous à la procédure ci-dessous :
 
 1. Accédez au dossier `CustomErrorManager-1.0-SNAPSHOT` et ouvrez le dossier `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript`.
 1. Ouvrez le fichier `customErrorManager.js` pour le modifier. La fonction `markError` du fichier accepte les paramètres suivants :
 
-   |  |  |
+   |   |  |
    |---|---|
-   | jqWidget | jqWidget est la poignée du widget. |
+   | jqWidget | jqWidget est la poignée d’un widget. |
    | msg | contient le message d’erreur |
    | type | indique s’il s’agit d’une erreur ou d’un avertissement |
 
-1. Sur l’implémentation hors de la zone, les messages d’erreur apparaissent à droite du champ. Pour que les messages d’erreur apparaissent au-dessus, utilisez le code suivant.
+1. Sur l’implémentation prête à l’emploi, les messages d’erreur s’affichent à droite du champ. Pour que les messages d’erreur apparaissent au-dessus, utilisez le code suivant.
 
    ```javascript
    markError: function (jqWidget, msg, type) {
@@ -78,19 +74,19 @@ Pour personnaliser la position d’un message d’erreur, ajoutez une balise &lt
 
 1. Enregistrez et fermez le fichier.
 1. Accédez au dossier `CustomErrorManager-1.0-SNAPSHOT` et créez une archive des dossiers jcr_root et META-INF. Renommez l’archive en CustomErrorManager-1.0-SNAPSHOT.zip.
-1. Utilisez le gestionnaire de packages pour télécharger et installer le package.
+1. Utilisez le gestionnaire de modules pour télécharger et installer le module.
 
 ## Affichage des messages d’erreur pour plusieurs champs  {#display-error-messages-for-multiple-fields-nbsp}
 
-Utilisez le package ci-joint pour afficher simultanément les messages d’erreur pour tous les champs. Pour afficher un seul message d’erreur, utilisez le profil par défaut.
+Utilisez le package joint pour afficher simultanément les messages d’erreur pour tous les champs. Pour afficher un seul message d’erreur, utilisez le profil par défaut.
 
 ### Personnalisation de l’aspect des messages d’erreur.  {#customizing-the-appearance-of-error-messages-nbsp}
 
 1. Accédez au dossier etc\clientlibs\mf-custom-error-manager\CustomErrorManager\css.
 
-1. Ouvrez le fichier sample.css en mode d’édition. Le fichier CSS contient 2 identifiants, #customError, #customWarning. Vous pouvez utiliser ces identifiants pour modifier diverses propriétés telles que la couleur, la taille de police, etc.
+1. Ouvrez le fichier sample.css en mode d’édition. Le fichier CSS contient 2 id : #customError, #customWarning. Vous pouvez utiliser ces identifiants pour modifier diverses propriétés, telles que la couleur et la taille de police.
 
-   Utilisez le code suivant pour modifier la taille de police et la couleur des messages d’erreur ou d’avertissement.
+   Utilisez le code suivant pour modifier la taille et la couleur de la police des messages d’erreur ou d’avertissement.
 
    ```css
    #customError {
@@ -116,13 +112,13 @@ Utilisez le package ci-joint pour afficher simultanément les messages d’erreu
 
 1. Enregistrez et fermez le fichier.
 1. Accédez au dossier CustomErrorManager-1.0-SNAPSHOT et créez une archive des dossiers jcr_root et META-INF. Renommez l’archive en CustomErrorManager-1.0-SNAPSHOT.zip.
-1. Utilisez le gestionnaire de packages pour télécharger et installer le package.
+1. Utilisez le gestionnaire de modules pour télécharger et installer le module.
 
 ## Rendre le formulaire avec le nouveau profil.  {#render-the-form-with-the-new-profile-nbsp}
 
-D’emblée, les formulaires HTML5 utilisent un profil par défaut : https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location>&amp;template=&lt;name of the xdp>.
+Les formulaires HTML5 prêts à l’emploi utilisent un profil par défaut : `https://&lt;server&gt;/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
 
-Pour afficher un formulaire avec les messages d’erreur personnalisés, effectuez le rendu du formulaire avec le profil d’erreur : https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location>&amp;template=&lt;name of the xdp>.
+Pour afficher un formulaire avec les messages d’erreur personnalisés, effectuez le rendu du formulaire avec le profil d’erreur : `https://&lt;server&gt;/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
 
 >[!NOTE]
 >

@@ -1,63 +1,59 @@
 ---
-title: Configuration des informations d’identification à utiliser avec les extensions d’Acrobat Reader DC
-seo-title: Configuring credentials for use with Acrobat Reader DC extensions
+title: Configuration des informations d’identification à utiliser avec les extensions Acrobat Reader DC
 description: Découvrez comment configurer les informations d’identification à utiliser avec les extensions Acrobat Reader DC.
-seo-description: Learn how to configure credentials for use with Acrobat Reader DC extensions.
-uuid: 9210e6c9-6f5c-402d-b355-b104cdffd5eb
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 5bb32fb1-4b6e-412f-aa16-f60db9dcaba1
 exl-id: e8015d59-7587-46dc-a672-e0f1108102ad
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '555'
-ht-degree: 100%
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+workflow-type: tm+mt
+source-wordcount: '556'
+ht-degree: 5%
 
 ---
 
-# Configuration des informations d’identification à utiliser avec les extensions d’Acrobat Reader DC{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
+# Configuration des informations d’identification à utiliser avec les extensions Acrobat Reader DC{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
 
-Pour appliquer des droits d’utilisation aux documents PDF, configurez AEM forms avec des informations d’identification valides pour les extensions d’Acrobat Reader DC. Ces informations d’identification ont éventuellement été configurées pendant l’installation d’AEM Forms. Si vous n’avez configuré aucune information d’identification pour les extensions d’Acrobat Reader DC dans Configuration Manager ou si vous devez importer des informations d’identification nouvelles ou modifiées, utilisez les pages de gestion de Trust Store.
+Pour appliquer des droits d’utilisation aux documents PDF, configurez AEM forms avec des informations d’identification valides pour Acrobat Reader DC Extensions. Des informations d’identification peuvent avoir été configurées lors de l’installation d’AEM forms. Si vous n’avez pas configuré vos informations d’identification Acrobat Reader DC Extensions lors de l’exécution de Configuration Manager ou si vous devez importer des informations d’identification nouvelles ou de remplacement, vous pouvez le faire à l’aide des pages de gestion du Trust Store.
 
-Si vous utilisez des informations d’identification d’évaluation, remplacez-les par des informations d’identification de production lors du passage à votre environnement de production. Pour mettre à jour des informations d’identification d’évaluation ou ayant expiré, vous devez tout d’abord supprimer les anciennes informations d’identification des extensions d’Acrobat Reader DC.
+Si vous utilisez des informations d’identification d’évaluation, remplacez-les par des informations d’identification de production lors du passage à votre environnement de production. Pour mettre à jour des informations d’identification d’évaluation ou expirées, supprimez d’abord les anciennes informations d’identification d’Acrobat Reader DC Extensions.
 
-Pour plus de précisions sur l’obtention d’informations d’identification, voir [Préparation à l’installation d’AEM Forms sur un seul serveur](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_fr).
+Pour plus d’informations sur l’obtention d’informations d’identification, voir [Préparation à l’installation d’AEM forms (serveur unique)](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
 
-Le Trust Store peut comporter plusieurs jeux d’informations d’identification des extensions d’Acrobat Reader DC. Vous devez désigner l’un de ces jeux d’informations d’identification en tant que valeurs par défaut des informations d’identification de Reader Extensions. Les informations d’identification par défaut sont utilisées lorsqu’un utilisateur de Workbench ne parvient pas à déterminer quelles informations d’identification utiliser lors de la création du processus. Ces règles s’appliquent aux informations d’identification par défaut :
+Trust Store peut contenir plusieurs informations d’identification Acrobat Reader DC Extensions. Désigner l’une de ces informations d’identification comme informations d’identification Reader Extensions par défaut. Les informations d’identification par défaut sont utilisées lorsqu’un utilisateur de Workbench ne parvient pas à déterminer les informations d’identification à utiliser lors de la création du processus. Ces règles s’appliquent aux informations d’identification par défaut :
 
-* Si vous importez un jeu d’informations d’identification pour les extensions d’Acrobat Reader DC et que le Trust Store n’en comporte pas d’autres, il est défini comme valeur par défaut.
-* Si vous importez un jeu d’informations d’identification pour les extensions d’Acrobat Reader DC avec l’option Par défaut sélectionnée, le type par défaut est supprimé du jeu d’informations d’identification par défaut existant. Le jeu d’informations d’identification importé devient la valeur par défaut.
-* Vous ne pouvez pas supprimer un jeu d’informations d’identification des extensions d’Acrobat Reader DC par défaut. Il vous faut au préalable définir un autre jeu d’informations d’identification comme valeur par défaut. Il existe néanmoins une exception à cette règle : s’il n’existe qu’un seul jeu d’informations d’identification, vous pouvez le supprimer, même s’il s’agit de la valeur par défaut.
-* Vous ne pouvez pas mettre à jour un jeu d’informations d’identification des extensions d’Acrobat Reader DC par défaut.
+* Si vous importez des informations d’identification Acrobat Reader DC Extensions et que Trust Store ne contient aucune autre information d’identification Acrobat Reader DC Extensions, elles sont définies comme valeur par défaut.
+* Si vous importez des informations d’identification Acrobat Reader DC Extensions avec l’option Par défaut sélectionnée, le type par défaut est supprimé d’un jeu d’informations d’identification par défaut existant. Le jeu d’informations d’identification importé devient la valeur par défaut.
+* Vous ne pouvez pas supprimer d’informations d’identification Acrobat Reader DC Extensions par défaut. Pour supprimer les informations d’identification par défaut, définissez d’abord une autre information d’identification comme valeur par défaut. Une exception à cette règle est que s’il n’existe qu’un seul identifiant, vous pouvez le supprimer, même s’il s’agit de la valeur par défaut.
+* Vous ne pouvez pas mettre à jour des informations d’identification Acrobat Reader DC Extensions par défaut.
 
 >[!NOTE]
 >
->vous pouvez également importer et supprimer des informations d’identification automatiquement (Voir [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_fr)).
+>Vous pouvez également importer et supprimer des informations d’identification par programmation. (Voir [Programmation avec les AEM forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).)
 
-## Importation des données d’identification des extensions d’Acrobat Reader DC {#import-a-acrobat-reader-dc-extensions-credential}
+## Importation d’informations d’identification Acrobat Reader DC Extensions {#import-a-acrobat-reader-dc-extensions-credential}
 
-1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification locales.
-1. Cliquez sur Importer, puis sous Type de Trust Store, sélectionnez Informations d’identification des extensions d’Acrobat Reader DC.
-1. (Facultatif) Pour indiquer qu’il s’agit des informations d’identification par défaut à utiliser avec les extensions d’Acrobat Reader DC, sélectionnez Par défaut.
-1. Dans la zone Alias, saisissez un identificateur pour les informations d’identification. Cet identifiant sert de nom d’affichage aux informations d’identification dans les extensions d’Acrobat Reader DC. Il permet également d’accéder automatiquement aux informations d’identification via le SDK d’AEM Forms.
+1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification locales.
+1. Cliquez sur Importer, puis, sous Type de Trust Store, sélectionnez Informations d’identification Acrobat Reader DC Extensions.
+1. (Facultatif) Pour indiquer que ces informations d’identification sont les informations d’identification par défaut à utiliser avec les extensions Acrobat Reader DC, sélectionnez Par défaut.
+1. Dans la zone Alias, saisissez un identifiant pour les informations d’identification. Cet identifiant est utilisé comme nom d’affichage des informations d’identification dans Acrobat Reader DC Extensions. Cet alias est également utilisé pour accéder aux informations d’identification par programmation à l’aide du SDK d’AEM forms.
 
    >[!NOTE]
    >
-   >le nom d’alias est converti automatiquement en caractères majuscules à des fins d’affichage. Il n’est pas sensible à la casse lorsque vous y faites référence dans un processus.
+   >Le nom d’alias est automatiquement converti en majuscules à des fins d’affichage. Le nom d’alias n’est pas sensible à la casse lorsque vous y faites référence dans un processus.
 
 1. Cliquez sur Choisir un fichier pour accéder aux informations d’identification, saisissez le mot de passe correspondant, puis cliquez sur OK.
 
-   Si le message d’erreur « Echec de l’importation des informations d’identification en raison d’un format de fichier incorrect ou d’un mot de passe incorrect » s’affiche, assurez-vous que le mot de passe est valide.
+   Si le message d’erreur &quot;Échec de l’importation des informations d’identification en raison d’un format de fichier incorrect ou d’un mot de passe incorrect&quot; s’affiche, vérifiez que le mot de passe est valide.
 
-## Suppression des informations d’identification des extensions d’Acrobat Reader DC {#remove-a-acrobat-reader-dc-extensions-credential}
+## Suppression d’informations d’identification Acrobat Reader DC Extensions {#remove-a-acrobat-reader-dc-extensions-credential}
 
-1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification locales.
+1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification locales.
 1. Sélectionnez les informations d’identification, puis cliquez sur Supprimer.
 
-## Remplacement des informations d’identification des extensions d’Acrobat Reader DC {#replace-a-acrobat-reader-dc-extensions-credential}
+## Remplacement des informations d’identification d’Acrobat Reader DC Extensions {#replace-a-acrobat-reader-dc-extensions-credential}
 
-1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification locales.
-1. Notez l’alias existant des informations d’identification, sélectionnez-le, puis cliquez sur Supprimer.
-1. Importez les nouvelles informations d’identification à l’aide du même nom d’alias.
+1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification locales.
+1. Notez l’alias des informations d’identification existantes, sélectionnez-le, puis cliquez sur Supprimer.
+1. Importez les nouvelles informations d’identification en utilisant exactement le même nom d’alias.
