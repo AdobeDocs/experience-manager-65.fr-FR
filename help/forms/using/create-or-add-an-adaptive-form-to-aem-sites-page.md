@@ -4,10 +4,10 @@ description: Découvrez comment créer ou ajouter facilement et sans effort un f
 Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 feature: Adaptive Forms
 exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
-source-git-commit: 3649df0e2a2672bc1742b3c02386f12ff6991935
+source-git-commit: 6d6e74c61b2ecb13e7cc352d5278c40d2677d44d
 workflow-type: tm+mt
-source-wordcount: '2888'
-ht-degree: 89%
+source-wordcount: '2905'
+ht-degree: 88%
 
 ---
 
@@ -250,3 +250,8 @@ Lors de l’envoi d’un formulaire, vous pouvez rediriger la personne utilisatr
    * Pour configurer une URL de redirection, pour l’option Lors de l’envoi, sélectionnez l’option Rediriger vers l’URL, puis fournissez une adresse absolue, une URL de redirection ou le chemin relatif d’une page AEM Sites.
 
    * Pour configurer un message de remerciement ou personnalisé, sélectionnez l’option Afficher le message et écrivez un message dans la zone Contenu du message pour l’option Lors de l’envoi. Il s’agit d’une zone de texte enrichi. Vous pouvez utiliser l’option Plein écran pour afficher tous les éléments de texte enrichi disponibles.
+
+## Voir également {#see-also}
+
+* [Création d’un formulaire adaptatif basé sur des composants principaux autonomes](/help/forms/using/create-an-adaptive-form-core-components.md)
+* [Créer un style ou des thèmes pour vos formulaires](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)

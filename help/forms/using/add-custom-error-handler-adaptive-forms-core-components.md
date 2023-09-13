@@ -7,15 +7,20 @@ keywords: Ajoutez un gestionnaire d’erreurs personnalisé, ajoutez un gestionn
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: f8e0ac45d98d6485ccb60e754657caf9d190c3ea
+source-git-commit: 6d6e74c61b2ecb13e7cc352d5278c40d2677d44d
 workflow-type: tm+mt
-source-wordcount: '2281'
-ht-degree: 6%
+source-wordcount: '2331'
+ht-degree: 7%
 
 ---
 
 
 # Gestionnaires d’erreurs dans Forms adaptatif (composants principaux) {#error-handlers-in-adaptive-form}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/add-custom-error-handler-adaptive-forms-core-components.html) |
+| AEM 6.5 | Cet article |
 
 AEM Forms fournit des gestionnaires de succès et d’erreur prêts à l’emploi pour les envois de formulaires. Il fournit également une fonctionnalité pour personnaliser les fonctions du gestionnaire d’erreurs. Par exemple, vous pouvez appeler un workflow personnalisé dans le serveur principal pour des codes d’erreur spécifiques ou informer le client que le service est hors service. Les gestionnaires sont des fonctions côté client qui s’exécutent en fonction de la réponse du serveur. Lorsqu’un service externe est appelé à l’aide d’API, les données sont transmises au serveur pour validation, qui renvoie une réponse au client avec des informations sur l’événement de succès ou d’erreur pour l’envoi. Les informations sont transmises comme paramètres au gestionnaire approprié pour exécuter la fonction. Un gestionnaire d’erreurs permet de gérer et d’afficher les erreurs ou les problèmes de validation rencontrés.
 
@@ -310,3 +315,9 @@ Pour utiliser un gestionnaire d’erreurs personnalisé à l’aide de la métho
 Ouvrez la console du navigateur et vérifiez le message d’erreur de validation de la réponse et de l’en-tête reçus du point d’entrée du service REST.
 
 La fonction de gestionnaire d’erreurs personnalisée est responsable de l’exécution d’actions supplémentaires, telles que l’affichage d’une boîte de dialogue modale ou l’envoi d’un événement d’analyse, en fonction de la réponse d’erreur. Une fonction de gestionnaire d’erreurs personnalisée offre la possibilité de personnaliser la gestion des erreurs en fonction des besoins spécifiques de l’utilisateur.
+
+## Voir également {#see-also}
+
+* [Création d’un formulaire adaptatif basé sur des composants principaux autonomes](/help/forms/using/create-an-adaptive-form-core-components.md)
+* [Créer un style ou des thèmes pour vos formulaires](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
+* [Créer ou ajouter un formulaire adaptatif à une page AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
