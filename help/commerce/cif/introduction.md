@@ -4,7 +4,7 @@ description: Présentation et aperçu de Content and Commerce. Experience Manage
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '871'
 ht-degree: 100%
 
@@ -48,7 +48,7 @@ Avec plus de 200 clients, CIF a prouvé son efficacité pour réaliser des proj
 
 CIF fournit des composants principaux commerciaux prêts à l’emploi qui réduisent le besoin de code personnalisé et accélèrent le délai de mise sur le marché des marques. Tous les composants principaux sont prêts à l’emploi et intégrés à la couche de données côté client d’Adobe pour nourrir les profils clients comme par exemple le profil unifié. Ce profil capture en détail le comportement d’un visiteur et peut être utilisé pour prédire le parcours client et le personnaliser en temps réel.
 
-Le module complémentaire CIF apporte du contexte de produit à Experience Manager et fournit des outils de création tels qu’une console de produits et des sélecteurs de produits ou de catégories qui permettent au marketeur de créer et de diffuser des expériences Shoppable dans Experience Manager sans faire appel au développeur. Voici ses avantages :
+Le module complémentaire CIF apporte du contexte de produit à Experience Manager et fournit des outils de création tels qu’une console de produits et des sélecteurs de produits ou de catégories qui permettent au spécialiste marketing de créer et de diffuser des expériences Shoppable dans Experience Manager sans faire appel au développeur. Voici ses avantages :
 
 ### Expériences
 
