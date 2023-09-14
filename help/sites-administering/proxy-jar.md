@@ -1,26 +1,22 @@
 ---
 title: Outil de serveur proxy (proxy.jar)
-seo-title: Proxy Server Tool (proxy.jar)
 description: Découvrez l’outil de serveur proxy dans AEM.
-seo-description: Learn about the Proxy Server Tool in AEM.
-uuid: 2fc1df24-8d5a-4be7-83fa-238ae65591b0
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: ca98dc3c-7056-4cdc-b4d3-23e471da5730
 docset: aem65
 exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 32%
+source-wordcount: '1156'
+ht-degree: 25%
 
 ---
 
 # Outil de serveur proxy (proxy.jar){#proxy-server-tool-proxy-jar}
 
-Le serveur proxy joue le rôle d’un serveur intermédiaire qui relaie les demandes entre un client et un serveur. Il effectue le suivi de toutes les interactions client/serveur et crée un journal de l’ensemble de la communication TCP. Vous pouvez ainsi contrôler ce qui se passe exactement, sans avoir à accéder au serveur principal.
+Le serveur proxy joue le rôle d’un serveur intermédiaire qui relaie les demandes entre un client et un serveur. Le serveur proxy suit toutes les interactions client-serveur et génère un journal de l’ensemble de la communication TCP. Vous pouvez ainsi contrôler ce qui se passe exactement, sans avoir à accéder au serveur principal.
 
 Le serveur proxy se trouve dans le dossier d’installation approprié :
 
@@ -47,10 +43,10 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 ### Options {#options}
 
 * **q (mode silencieux)** N’écrit pas les demandes dans la fenêtre de la console. Utilisez cette option si vous ne souhaitez pas ralentir la connexion ou si vous enregistrez la sortie dans un fichier (voir option -logfile ).
-* **b (mode binaire)** Si vous recherchez des combinaisons d’octets spécifiques dans le trafic, activez le mode binaire. La sortie contiendra alors la sortie hexadécimale et la sortie de caractères.
+* **b (mode binaire)** Si vous recherchez des combinaisons d’octets spécifiques dans le trafic, activez le mode binaire. La sortie contient la sortie hexadécimale et la sortie de caractères.
 * **t (entrées du fichier journal horodatage)** Ajoute un horodatage à chaque sortie du journal. L’horodatage est en secondes. Il n’est donc peut-être pas adapté à la recherche de demandes uniques. Utilisez-le pour localiser les événements qui se sont produits à un moment spécifique si vous utilisez le serveur proxy sur une période plus longue.
 * **logfile &lt;nom_fichier> (écriture dans le fichier journal)** Écrit la conversation client/serveur dans un fichier journal. Ce paramètre fonctionne également en mode silencieux.
-* **i &lt;retraitsNum> i (ajout d’un retrait)** Chaque connexion active figure en retrait pour une meilleure lisibilité. La valeur par défaut est de 16 niveaux. (Nouveau dans proxy.jar version 1.16).
+* **i &lt;retraitsNum> i (ajout d’un retrait)** Chaque connexion active figure en retrait pour une meilleure lisibilité. La valeur par défaut est de 16 niveaux. (Nouveau dans proxy.jar version 1.16).
 
 ## Utilisation de l’outil de serveur proxy {#uses-of-the-proxy-server-tool}
 
@@ -58,7 +54,7 @@ Les scénarios ci-dessous indiquent une partie des fins auxquelles l’outil de 
 
 **Rechercher les cookies et leurs valeurs**
 
-L’exemple d’entrée de journal suivant montre tous les cookies et leurs valeurs envoyés par le client lors de la 6e connexion ouverte depuis le démarrage du proxy :
+L’exemple d’entrée de journal suivant montre tous les cookies et leurs valeurs envoyés par le client lors de la sixième connexion ouverte depuis le démarrage du proxy :
 
 ```xml
 C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]
@@ -74,7 +70,7 @@ S-7-#000107 -> [Content-Length: 124 ]
 
 **Vérification du fonctionnement de la connexion persistante**
 
-**Connexion persistante** signifie qu’un client réutilise la connexion au serveur pour transmettre plusieurs fichiers (code de page, images, feuilles de style, etc.). Sans persistance, le client doit établir une nouvelle connexion pour chaque demande.
+**Keep-Alive** signifie qu’un client réutilise la connexion au serveur pour transporter plusieurs fichiers (code de page, images, feuilles de style, etc.). Sans persistance, le client doit établir une nouvelle connexion pour chaque demande.
 
 Pour vérifier si la persistance fonctionne :
 
@@ -86,7 +82,7 @@ Pour vérifier si la persistance fonctionne :
 
 **Recherche de requêtes perdues**
 
-Si vous perdez des requêtes dans un paramètre de serveur complexe, par exemple avec un pare-feu et un dispatcher, vous pouvez utiliser le serveur proxy pour déterminer où la requête a été perdue. En cas de pare-feu :
+Si vous perdez des requêtes dans un paramètre de serveur complexe, par exemple avec un pare-feu et un Dispatcher, vous pouvez utiliser le serveur proxy pour déterminer où la requête a été perdue. S’il existe un pare-feu :
 
 1. Démarrer un proxy avant un pare-feu
 1. Démarrer un autre proxy après un pare-feu
@@ -126,11 +122,11 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-Cela indique le nombre d’octets qui se sont écoulés entre le client et le serveur lors de la 6e connexion et à la vitesse moyenne.
+Cela indique le nombre d’octets qui se sont écoulés entre le client et le serveur lors de la sixième connexion et à la vitesse moyenne.
 
 ## Exemple de sortie de journal {#an-example-of-log-output}
 
-Nous passerons en revue un modèle simple qui génère le code suivant, si nécessaire :
+Examinez un modèle simple qui génère le code suivant lorsque cela est demandé :
 
 ```xml
 <html>
@@ -150,7 +146,7 @@ Si AEM s’exécute sur localhost:4303, démarrez le serveur proxy comme suit :
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
 ```
 
-Vous pouvez accéder au serveur (`localhost:4303`) sans serveur proxy, mais si vous y accédez par le biais de `localhost:4444`, le serveur proxy enregistre la communication. Ouvrez un navigateur et accédez à une page créée avec le modèle ci-dessus. Ensuite, consultez le fichier journal.
+Vous pouvez accéder au serveur (`localhost:4303`) sans serveur proxy, mais si vous y accédez via `localhost:4444`, le serveur proxy consigne la communication. Ouvrez un navigateur et accédez à une page créée avec le modèle ci-dessus. Ensuite, consultez le fichier journal.
 
 >[!NOTE]
 >
@@ -181,7 +177,7 @@ Le client demande une connexion persistante, de sorte que le serveur puisse envo
 C-0-#000369 -> [Connection: Keep-Alive ]
 ```
 
-Le serveur proxy est un outil approprié pour vérifier si des cookies sont définis correctement ou non. Nous voyons ici :
+Le serveur proxy est un outil approprié pour vérifier si des cookies sont définis correctement ou non. Voici ce qui s’affiche :
 
 * cookie cq3session généré par AEM
 * le cookie de basculement du mode d’affichage généré par le CFC ;
@@ -281,4 +277,4 @@ L’exemple ci-dessus est relativement simple, car les deux connexions se produi
 * le serveur renvoie d’abord le code de HTML.
 * puis le navigateur demande l’image et ouvre une nouvelle connexion.
 
-Dans la pratique, une page peut générer de nombreuses demandes d’images, de feuilles de style, de fichiers JavaScript, etc. parallèles. Cela signifie que les fichiers journaux comportent des entrées de connexions établies en parallèle qui se chevauchent. Dans ce cas, nous vous recommandons d’utiliser l’option -i pour améliorer la lisibilité.
+En pratique, une page peut générer de nombreuses demandes parallèles pour des images, des feuilles de style, des fichiers JavaScript, etc. Cela signifie que les fichiers journaux comportent des entrées de connexions établies en parallèle qui se chevauchent. Dans ce cas, Adobe recommande d’utiliser l’option -i pour améliorer la lisibilité.

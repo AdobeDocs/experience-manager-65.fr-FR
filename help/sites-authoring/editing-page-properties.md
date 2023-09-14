@@ -1,24 +1,22 @@
 ---
 title: Modifier les propriétés d’une page de contenu
 description: Vous pouvez définir les propriétés requises d’une page.
-uuid: d3a2183b-8082-4cfc-aeed-26facbf3f3e6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1882'
-ht-degree: 96%
+source-wordcount: '1868'
+ht-degree: 58%
 
 ---
 
 # Modification des propriétés de page{#editing-page-properties}
 
-Vous pouvez définir les propriétés requises pour une page. Celles-ci peuvent varier selon la nature de la page. Par exemple, certaines pages peuvent être connectées à une Live Copy alors que d’autres ne le sont pas, et les informations de Live Copy seront disponibles, le cas échéant.
+Vous pouvez définir les propriétés requises pour une page. Celles-ci peuvent varier selon la nature de la page. Par exemple, certaines pages peuvent être connectées à une Live Copy, tandis que d’autres ne le sont pas, et les informations de la Live Copy deviennent disponibles, le cas échéant.
 
 ## Propriétés de page {#page-properties}
 
@@ -34,15 +32,15 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Balises**
 
-  Vous pouvez ajouter des balises sur la page, ou en supprimer, en mettant à jour la liste dans la zone de sélection :
+  Vous pouvez y ajouter ou supprimer des balises de la page en mettant à jour la liste dans la zone de sélection :
 
-   * La balise sélectionnée est alors répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du symbole x.
+   * Après avoir sélectionné une balise, elle est répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du x.
    * Vous pouvez saisir une nouvelle balise en saisissant son nom dans une zone de sélection vide.
 
       * La nouvelle balise est créée lorsque vous appuyez sur Entrée.
-      * Elle est marquée d’une petite étoile sur la droite indiquant qu’il s’agit d’une nouvelle balise.
+      * La nouvelle balise s’affiche avec une petite étoile à droite, indiquant qu’il s’agit d’une nouvelle balise.
 
-   * Avec la fonctionnalité de liste déroulante, vous pouvez effectuer un choix parmi des balises existantes.
+   * La fonctionnalité de liste déroulante vous permet de sélectionner une balise existante.
    * Un x s’affiche lorsque vous placez le pointeur de la souris sur une entrée de balise dans la zone de sélection, qui peut être utilisé pour supprimer cette balise pour cette page.
 
   Pour plus d’informations sur les balises, consultez la section [Utilisation des balises](/help/sites-authoring/tags.md).
@@ -56,16 +54,16 @@ Les propriétés sont réparties sur plusieurs onglets.
   Appliquez une identité de marque cohérente sur plusieurs pages en ajoutant un rappel à chaque titre de page. Cette fonctionnalité nécessite l’utilisation du composant de page de la version 2.14.0, ou ultérieure, des [composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 
    * **Remplacer** : cochez la case pour définir le titre de rappel sur cette page.
-      * La valeur sera héritée par toutes les pages enfants à moins que leurs valeurs de **remplacement** ne soient également définies.
+      * La valeur est héritée par toutes les pages enfants, sauf si elles disposent également de la variable **Remplacement** valeurs définies.
    * **Remplacer la valeur** : texte de rappel à ajouter au titre de la page.
       * La valeur est ajoutée au titre de la page après un caractère de barre verticale, par exemple « La Toscane en vélo | Toujours prêt pour le WKND »
 * **Titre de la page**
 
-  Titre à utiliser sur la page. Généralement utilisé par les composants de titre. Si le champ est vide, le **Titre** sera utilisé.
+  Titre à utiliser sur la page. Généralement utilisé par les composants de titre. Si elle est vide, la variable **Titre** est utilisée.
 
 * **Titre de navigation**
 
-  Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis). Si le champ est vide, le **Titre** sera utilisé.
+  Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis). Si elle est vide, la variable **Titre** est utilisée.
 
 * **Sous-titre**
 
@@ -77,32 +75,32 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Heure d’activation**
 
-  Date et heure auxquelles la page publiée sera activée. Une fois publiée, cette page restera dormante jusqu’à l’heure indiquée.
+  Date et heure auxquelles la page publiée est activée. Une fois publiée, cette page reste inactive jusqu’à l’heure indiquée.
 
   Laissez ces champs vides pour les pages que vous souhaitez publier immédiatement (scénario normal).
 
 * **Heure de désactivation**
 
-  Heure à laquelle la page publiée sera désactivée.
+  Heure à laquelle la page publiée est désactivée.
 
   Ne renseignez pas ces champs pour une action immédiate.
 
 * **URL Vanity**
 
-  Vous permet de saisir une URL Vanity pour cette page, ce qui peut vous permettre d’avoir une URL plus courte et/ou plus expressive.
+  Saisissez une URL Vanity pour cette page, qui peut vous permettre d’avoir une URL plus courte et/ou plus expressive.
 
   Par exemple, si l’URL de redirection est définie sur `welcome` sur la page identifiée par le chemin `/v1.0/startpage` pour le site Web `http://example.com,`, `http://example.com/welcome` sera l’URL de redirection de `http://example.com/content/v1.0/startpage`.
 
   >[!CAUTION]
   >
-  >L’URL Vanity :
+  >URL de redirection :
   >
-  >* doit être unique. Vous devez donc veiller à ce que la valeur ne soit pas déjà utilisée par une autre page.
+  >* Doit être unique. Assurez-vous que la valeur n’est pas déjà utilisée par une autre page.
   >* Elles ne prennent pas en charge les modèles d’expression régulière.
   >* ne doit pas être définie sur une page existante.
   >
 
-  Vous devez également configurer le Dispatcher pour activer l’accès aux URL de redirection. Consultez [Activation de l’accès aux URL de redirection](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#enabling-access-to-vanity-urls-vanity-urls) pour plus d’informations.
+  Configurez Dispatcher pour activer l’accès aux URL de redirection vers un microsite. Consultez [Activation de l’accès aux URL de redirection](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#enabling-access-to-vanity-urls-vanity-urls) pour plus d’informations.
 
 * **Rediriger l’URL Vanity**
 
@@ -133,7 +131,7 @@ Les propriétés sont réparties sur plusieurs onglets.
    * Par exemple, si vous définissez l’alias de `private` pour la page `/content/wknd/us/en/magazine/members-only`, alors cette page est également accessible via `/content/wknd/us/en/magazine/private`.
    * La création d’un alias permet de définir la propriété `sling:alias` sur le nœud de page, ce qui affecte uniquement la ressource, et non le chemin d’accès au référentiel.
    * Les pages accessibles par alias dans l’éditeur ne peuvent pas être publiées. Les [options de publication](/help/sites-authoring/publishing-pages.md) dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
-   * Pour plus d’informations, consultez [Noms de page localisés dans les Bonnes pratiques de SEO et de gestion des URL](/help/managing/seo-and-url-management.md#localized-page-names).
+   * Pour plus d’informations, voir [Noms de page localisés sous Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche](/help/managing/seo-and-url-management.md#localized-page-names).
 
 * **Hérité de &lt;*chemin*>**
 
@@ -145,11 +143,11 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Modèles autorisés**
 
-  [Définit la liste des modèles qui seront disponibles](/help/sites-authoring/templates.md#allowingatemplate) dans cette sous-branche.
+  [Définir la liste des modèles disponibles](/help/sites-authoring/templates.md#allowingatemplate) dans cette sous-branche.
 
 * **Activer** (exigence d’authentification)
 
-  Active/désactive l’utilisation de l’authentification pour accéder à la page.
+  Activez (ou désactivez) l’utilisation de l’authentification afin d’accéder à la page.
 
   >[!NOTE]
   >
@@ -157,7 +155,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
   >[!CAUTION]
   >
-  >L’onglet **[Autorisations](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** permet de modifier les configurations des groupes d’utilisateurs fermés basées sur la présence du mixin `granite:AuthenticationRequired`. Si les autorisations de page sont configurées à l’aide de configurations des groupes d’utilisateurs fermés obsolètes, selon la présence de la propriété `cq:cugEnabled`, un message d’avertissement s’affiche sous **Exigence d’authentification** et l’option n’est pas modifiable, tout comme les [autorisations](/help/sites-authoring/editing-page-properties.md#permissions).
+  >La variable **[Autorisations](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** permet de modifier les configurations des groupes d’utilisateurs fermés en fonction de la présence de la variable `granite:AuthenticationRequired` mixin. Si les autorisations de page sont configurées à l’aide de configurations de CUG obsolètes, en fonction de la présence de `cq:cugEnabled` , un message d’avertissement s’affiche sous **Exigence d’authentification** et l’option n’est pas modifiable, pas plus que le [Autorisations](/help/sites-authoring/editing-page-properties.md#permissions) modifiable.
   >
   >
   >Le cas échéant, les autorisations des groupes d’utilisateurs fermés doivent être modifiées dans l’[IU classique](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -176,30 +174,30 @@ Affiche l’image miniature de la page. Vous pouvez :
 
 * **Générer l’aperçu**
 
-  Générez un aperçu de la page à utiliser comme miniature.
+  Générez un aperçu de la page que vous souhaitez utiliser comme miniature.
 
 * **Charger l’image**
 
-  Chargez une image à utiliser comme miniature.
+  Téléchargez une image que vous souhaitez utiliser comme miniature.
 
 * **Sélectionner une image**
 
-  Sélectionnez une ressource existante à utiliser comme miniature.
+  Sélectionnez une ressource existante que vous souhaitez utiliser comme miniature.
 
 * **Rétablir**
 
-  Cette option n’est disponible qu’après avoir effectué une modification de la vignette. Si vous ne souhaitez pas conserver votre modification, vous pouvez l’annuler avant d’enregistrer.
+  Cette option devient disponible une fois que vous avez modifié la miniature. Si vous ne souhaitez pas conserver votre modification, vous pouvez l’annuler avant d’enregistrer.
 
 ### Réseaux sociaux {#social-media}
 
 * **Partage sur les réseaux sociaux**
 
-  Définit les options de partage disponibles sur la page. Expose les options disponibles pour le [composant principal de partage](https://helpx.adobe.com/fr/experience-manager/core-components/using/sharing.html).
+  Définit les options de partage disponibles sur la page. Expose les options disponibles pour la variable [Partage du composant principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=en).
 
    * **Activer le partage utilisateur/utilisatrice pour Facebook**
    * **Activer le partage utilisateur/utilisatrice pour Pinterest**
    * **Variation de fragment d’expérience préférée**
-Définit la variation de fragment d’expérience utilisée pour générer les métadonnées de la page.
+Définition de la variation de fragment d’expérience utilisée pour générer des métadonnées pour une page
 
 ### Services cloud {#cloud-services}
 
@@ -233,30 +231,30 @@ Définit la variation de fragment d’expérience utilisée pour générer les m
 
   >[!CAUTION]
   >
-  >L’onglet **Autorisations** permet de modifier les configurations des groupes d’utilisateurs fermés basées sur la présence du mixin `granite:AuthenticationRequired`. Si les autorisations de page sont configurées à l’aide de configurations de groupes d’utilisateurs fermés obsolètes, basées sur la présence de la propriété `cq:cugEnabled`, un message d’avertissement s’affiche et les autorisations des groupes d’utilisateurs fermés ne sont pas modifiables, tout comme l’option Exigence d’authentification de l’onglet [Avancé](/help/sites-authoring/editing-page-properties.md#advanced).
+  >L’onglet **Autorisations** permet de modifier les configurations des groupes d’utilisateurs fermés basées sur la présence du mixin `granite:AuthenticationRequired`. Si les autorisations de page sont configurées à l’aide de configurations de CUG obsolètes, en fonction de la présence de `cq:cugEnabled` , un message d’avertissement s’affiche et les autorisations de CUG ne sont pas modifiables, de même que l’ exigence d’authentification sur la propriété [Avancé](/help/sites-authoring/editing-page-properties.md#advanced) onglet modifiable.
   >
   >
   >Le cas échéant, les autorisations des groupes d’utilisateurs fermés doivent être modifiées dans l’[IU classique](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
   >[!NOTE]
   >
-  >L’onglet Autorisations n’autorise pas la création de groupes d’utilisateurs et d’utilisatrices vides, ce qui peut se révéler utile comme un moyen simple de refuser l’accès à chaque utilisateur et utilisatrice. Pour ce faire, utilisez l’Explorateur CRX. Pour plus d’informations, consultez le document [Administration des utilisateurs, des groupes et des droits d’accès](/help/sites-administering/user-group-ac-admin.md).
+  >L’onglet Autorisations n’autorise pas la création de groupes d’utilisateurs et d’utilisatrices vides, ce qui peut se révéler utile comme un moyen simple de refuser l’accès à chaque utilisateur et utilisatrice. Pour ce faire, l’Explorateur CRX doit être utilisé. Voir le document [Administration des droits d’utilisateur, de groupe et d’accès](/help/sites-administering/user-group-ac-admin.md) pour plus d’informations.
 
 ### Plan directeur {#blueprint}
 
 * **Plan directeur**
 
-  Définissez des propriétés pour une page de plan directeur dans la [gestion multi-sites](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront diffusées à la Live Copy.
+  Définissez des propriétés pour une page de plan directeur dans la [gestion multi-sites](/help/sites-administering/msm.md). Contrôle les circonstances dans lesquelles les modifications sont propagées à la Live Copy.
 
-### Live Copy  {#live-copy}
+### Live Copy {#live-copy}
 
 * **Live Copy**
 
-  Définissez des propriétés pour une page Live Copy dans la [gestion multi-sites](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront propagées à partir du plan directeur.
+  Définissez des propriétés pour une page Live Copy dans la [gestion multi-sites](/help/sites-administering/msm.md). Contrôle les circonstances dans lesquelles les modifications sont propagées à partir du plan directeur.
 
-### Structure du site  {#site-structure}
+### Structure du site {#site-structure}
 
-* Diffusez des liens d’accès aux pages qui fournissent les fonctionnalités à l’échelle du site, comme la **page d’inscription** et la page **en mode hors ligne**, entre autres.
+* Fournir des liens vers des pages qui fournissent des fonctionnalités à l’échelle du site, telles que **Page d’inscription**, **Page hors ligne**, entre autres.
 
 ## Modification des propriétés de page {#editing-page-properties-1}
 
@@ -286,15 +284,15 @@ Cliquez ou appuyez sur **Propriétés** pour définir les propriétés de la pag
    * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Mode de sélection](/help/sites-authoring/basic-handling.md#selectionmode)
 
-   Les propriétés de la page affichées dans les onglets appropriés.
+   Les propriétés de la page s’affichent à l’aide des onglets appropriés.
 
 1. Affichez ou modifiez les propriétés selon les besoins.
 
-1. Puis cliquez sur **Enregistrer** pour enregistrer vos modifications et sur **Fermer** pour revenir à la console.
+1. Ensuite, utilisez **Enregistrer** pour enregistrer vos mises à jour, puis **Fermer** pour pouvoir revenir à la console.
 
 ### Lors de la modification d’une page {#when-editing-a-page}
 
-Lorsque vous modifiez une page, utilisez les **Informations sur la page** pour définir ses propriétés :
+Lorsque vous modifiez une page, vous pouvez utiliser **Informations sur la page** pour définir les propriétés de la page :
 
 1. Ouvrez la page dont vous souhaitez modifier les propriétés.
 
@@ -302,7 +300,7 @@ Lorsque vous modifiez une page, utilisez les **Informations sur la page** pour d
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Sélectionnez **Ouvrir les propriétés**. Une boîte de dialogue s’ouvre alors pour vous permettre de modifier les propriétés, triées selon l’onglet approprié. Les boutons suivants sont également disponibles à droite de la barre d’outils :
+1. Sélectionner **Ouvrir les propriétés** et une boîte de dialogue s’ouvre pour vous permettre de modifier les propriétés, triées selon l’onglet approprié. Les boutons suivants sont également disponibles à droite de la barre d’outils :
 
    * **Annuler**
    * **Enregistrez et fermez**
@@ -311,13 +309,13 @@ Lorsque vous modifiez une page, utilisez les **Informations sur la page** pour d
 
 ### À partir de la console Sites – Plusieurs pages {#from-the-sites-console-multiple-pages}
 
-Dans la console **Sites**, vous pouvez sélectionner plusieurs pages, puis utiliser **Afficher les propriétés** pour afficher et/ou modifier les propriétés de la page. On parle alors de modification en masse des propriétés de la page.
+Dans la **Sites** console, vous pouvez sélectionner plusieurs pages, puis utiliser **Afficher les propriétés** pour afficher et/ou modifier les propriétés de la page. On parle alors de modification en masse des propriétés de la page.
 
 >[!NOTE]
 >
->La modification en masse des propriétés est également disponible pour les ressources. La procédure est très semblable. Seuls quelques points sont différents. Pour plus d’informations, voir [Modification des propriétés de plusieurs ressources](/help/assets/metadata.md).
+>La modification en masse des propriétés est également disponible pour les ressources. Elle est similaire, mais diffère en quelques points. Pour plus d’informations, voir [Modification des propriétés de plusieurs ressources](/help/assets/metadata.md).
 >
->Il y a également la [Éditeur en bloc](/help/sites-administering/bulk-editor.md), qui vous permet de rechercher du contenu provenant de plusieurs pages à l’aide de GQL (Google Query Language), puis de le modifier directement dans l’éditeur en bloc avant d’enregistrer les modifications dans les pages d’origine.
+>Il y a également la [Éditeur en bloc](/help/sites-administering/bulk-editor.md). Cet éditeur vous permet de rechercher du contenu à partir de plusieurs pages à l’aide du langage de requête Google (GQL), puis de le modifier directement à l’aide de l’éditeur en bloc avant d’enregistrer les modifications dans les pages d’origine.
 
 Vous pouvez sélectionner plusieurs pages à des fins de modification en bloc de différentes manières, notamment :
 
@@ -326,7 +324,7 @@ Vous pouvez sélectionner plusieurs pages à des fins de modification en bloc de
 
 ![epp-01](assets/epp-01.png)
 
-Sélectionnez les pages et cliquez ou appuyez ensuite sur l’option **Propriétés** pour afficher les propriétés en bloc :
+Après avoir sélectionné les pages, puis cliqué ou appuyé sur l’icône **Option Propriétés**, les propriétés en bloc s’affichent :
 
 ![epp-02](assets/epp-02.png)
 
@@ -335,17 +333,17 @@ Vous ne pouvez modifier en masse que des pages qui :
 * Partagent le même type de ressource.
 * Ne font pas partie d’une Live Copy.
 
-   * Si l’une de ces pages fait partie d’une Live Copy, un message s’affiche lorsque les propriétés sont ouvertes.
+   * Si l’une des pages fait partie d’une Live Copy, un message s’affiche lorsque les propriétés sont ouvertes.
 
-Une fois le mode de modification en bloc activé, vous pouvez effectuer les opérations suivantes :
+Une fois que vous avez saisi l’option Modification en bloc, vous pouvez effectuer les opérations suivantes :
 
 * **Mode**
 
-  Lorsque vous affichez les propriétés de page pour plusieurs pages, vous pouvez voir les éléments suivants :
+  Lors de l’affichage des propriétés de page pour plusieurs pages, vous pouvez voir les éléments suivants :
 
    * Liste des pages affectées
 
-      * Vous pouvez sélectionner/désélectionner si nécessaire.
+      * Vous pouvez, au besoin, sélectionner/désélectionner
 
    * Onglets
 
@@ -359,7 +357,7 @@ Une fois le mode de modification en bloc activé, vous pouvez effectuer les opé
    * Propriétés communes partageant une valeur commune
 
       * Seules les propriétés qui partagent une valeur commune sont visibles en mode Affichage.
-      * Si le champ comporte plusieurs valeurs (Balises, par exemple), les valeurs ne sont visibles que lorsque *toutes* sont communes. Si seulement quelques-unes sont communes, elles sont visibles lors de la phase de modification.
+      * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), les valeurs ne sont visibles que lorsque *all* sont courantes. Si seulement certains d’entre eux sont communs, ils s’affichent uniquement lors de la modification.
 
   En l’absence de propriétés avec une valeur commune, un message s’affiche.
 
@@ -369,10 +367,10 @@ Une fois le mode de modification en bloc activé, vous pouvez effectuer les opé
 
    * Vous pouvez mettre à jour les valeurs dans les champs disponibles.
 
-      * Les nouvelles valeurs sont appliquées à toutes les pages sélectionnées lorsque vous appuyez sur **Terminé**.
+      * Les nouvelles valeurs sont appliquées à toutes les pages sélectionnées lorsque vous sélectionnez **Terminé**.
       * Lorsque le champ comporte plusieurs valeurs (des balises, par exemple), vous pouvez ajouter une nouvelle valeur ou supprimer une valeur commune.
 
-   * Les champs qui sont communs, mais pour lesquels des valeurs différentes sont renseignées dans les différentes pages, sont signalés par une valeur spéciale, par exemple par le texte `<Mixed Entries>`.
+   * Les champs communs, mais ayant des valeurs différentes sur les différentes pages, sont indiqués par une valeur spéciale, telle que le texte. `<Mixed Entries>`.
 
 >[!NOTE]
 >
