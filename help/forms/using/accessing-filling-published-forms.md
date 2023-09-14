@@ -1,15 +1,15 @@
 ---
 title: Accès et remplissage des formulaires publiés
-description: Forms Portal fournit aux développeurs Web des composants pour la création et la personnalisation d’un portail de formulaires sur les sites Web créés à l’aide de Adobe Experience Manager (AEM).
+description: Forms Portal fournit aux développeurs Web des composants pour créer et personnaliser un portail Forms sur les sites Web créés à l’aide de Adobe Experience Manager (AEM).
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 20%
+source-wordcount: '935'
+ht-degree: 13%
 
 ---
 
@@ -19,23 +19,23 @@ Dans une configuration de déploiement de portail axée sur les formulaires, le 
 
 Cela entraîne souvent des problèmes lors de la gestion des délais de configuration et de production. Par exemple, si une version plus récente d’un formulaire est disponible dans le référentiel, le concepteur de formulaire remplace le formulaire sur la plateforme web, modifie l’application web et redéploie le formulaire sur le site public. Le redéploiement de l’application web peut entraîner un temps d’arrêt du serveur. Les temps d’arrêt du serveur étant une activité planifiée, les modifications ne peuvent pas être transférées immédiatement sur le site public.
 
-Forms Portal réduit les surcharges de gestion et les délais de production. Il fournit aux développeurs Web des composants pour la création et la personnalisation d’un portail de formulaires sur les sites Web créés à l’aide de Adobe Experience Manager (AEM).
+Forms Portal réduit les surcharges de gestion et les délais de production. Il fournit aux développeurs web des composants pour la création et la personnalisation d’un portail Forms sur les sites web créés à l’aide de Adobe Experience Manager (AEM).
 
-Pour plus d’informations sur le portail des formulaires et ses fonctions, reportez-vous à la section [Présentation de la publication de formulaires sur un portail](/help/forms/using/introduction-publishing-forms.md).
+Pour plus d’informations sur Forms Portal et ses fonctionnalités, voir [Présentation de la publication de formulaires sur un portail](/help/forms/using/introduction-publishing-forms.md).
 
 ## Prise en main de Forms Portal {#getting-started-with-forms-portal}
 
-Accédez à la page Forms Portal publiée. Pour plus d’informations sur la création d’une page de portail de formulaires, reportez-vous à la section [Création d’une page de portail de formulaires](../../forms/using/creating-form-portal-page.md).
+Accédez à la page Forms Portal publiée. Pour plus d’informations sur la création d’une page Forms Portal, voir [Création d’une page Forms Portal](../../forms/using/creating-form-portal-page.md).
 
-Le composant Search and Lister de Forms Portal affiche les formulaires disponibles sur l’instance Publish du serveur AEM. Cette liste comprend tous les formulaires ou les formulaires définis dans le filtre au moment de la création de la page Forms Portal. Une page Forms Portal se présente comme illustré dans l’image suivante :
+Le composant Search and Lister de Forms Portal affiche les formulaires disponibles sur l’instance Publish du serveur AEM. Cette liste inclut tous les formulaires ou les formulaires définis dans le filtre au moment de la création de la page du portail Forms. Une page du portail Forms se présente comme illustré dans l’image suivante :
 
 ![Exemple de page de Forms Portal ](assets/forms-portal-page.png)
 
-Exemple de page de Forms Portal.
+Exemple de page Forms Portal
 
 ### Recherche et énumérateur {#search-and-lister}
 
-Le composant Search and Lister vous permet d’ajouter les fonctionnalités suivantes à votre portail de formulaires :
+Le composant Search and Lister vous permet d’ajouter les fonctionnalités suivantes à votre portail Forms :
 
 * Répertorier les formulaires en mode d’affichage Panneau, Carte ou Grille qui sont prêts à l’emploi. Il prend également en charge les formulaires templatesList personnalisés à partir de dossiers spécifiques dans Forms Manager.
 * Spécifiez le mode de rendu des formulaires : HTML5, PDF ou les deux.
@@ -58,7 +58,7 @@ Boîte de dialogue de recherche avancée.
 
 La recherche avancée vous permet de rechercher des formulaires en fonction de propriétés de formulaire spécifiées. Cela fournit un résultat plus spécifique que la recherche de texte intégral. La recherche avancée comprend une recherche basée sur des balises, des propriétés (telles que l’auteur, la description et le titre), la date de modification et le texte intégral.
 
-Lister affiche des formulaires en fonction des paramètres de recherche. Chaque formulaire du résultat de la recherche est affiché avec une icône, qui est liée au formulaire associé. Vous pouvez cliquer sur l’icône pour ouvrir et utiliser le formulaire associé.
+Le composant Liste affiche des formulaires en fonction des paramètres de recherche. Chaque formulaire du résultat de la recherche est affiché avec une icône, qui est liée au formulaire associé. Vous pouvez cliquer sur l’icône pour ouvrir et utiliser le formulaire associé.
 
 ### Remplissage d’un formulaire {#filling-a-form}
 
@@ -88,9 +88,9 @@ Composant Brouillons et envois.
 
 ## Démarrage d’un nouveau formulaire à l’aide de données de formulaire envoyées {#start-a-new-form-using-submitted-form-data}
 
-Il existe certains formulaires que vous devez remplir et envoyer fréquemment. Par exemple, le formulaire de déclaration de revenus des particuliers est envoyé chaque année. Dans de tels cas, alors qu&#39;une partie de l&#39;information change à chaque fois que vous remplissez le formulaire, la plupart comme les détails personnels et familiaux ne changent pas. Cependant, vous devez toujours remplir le formulaire en entier, à partir de zéro.
+Il existe certains formulaires que vous devez remplir et envoyer fréquemment. Par exemple, le formulaire de déclaration de revenus est envoyé chaque année. Dans de tels cas, alors qu&#39;une partie de l&#39;information change à chaque fois que vous remplissez le formulaire, la plupart comme les détails personnels et familiaux ne changent pas. Cependant, vous devez toujours remplir le formulaire en entier, à partir de zéro.
 
-AEM Forms peut vous aider à optimiser l’opération de remplissage du formulaire et à réduire considérablement le temps de remplissage et d’envoi d’un formulaire déjà envoyé au préalable. Les utilisateurs finaux peuvent démarrer un nouveau formulaire à l’aide des données d’un formulaire envoyé. Cette fonctionnalité est intégrée à la fonction [Composant Drafts and Submissions](../../forms/using/draft-submission-component.md). Lorsque vous ajoutez un composant Drafts and Submission à votre page Forms Portal et que vous le publiez, les utilisateurs finaux voient une option dans les onglets Submitted Forms et Draft Forms pour démarrer un nouveau formulaire à l’aide des données d’un formulaire envoyé. L’image suivante illustre cette option.
+AEM Forms peut vous aider à optimiser l’opération de remplissage du formulaire et à réduire considérablement le temps de remplissage et d’envoi d’un formulaire déjà envoyé au préalable. Les utilisateurs finaux peuvent démarrer un nouveau formulaire à l’aide des données d’un formulaire envoyé. Cette fonctionnalité est intégrée au [Composant Drafts and Submissions](../../forms/using/draft-submission-component.md). Lorsque vous ajoutez le composant Drafts and Submission à votre page Forms Portal et que vous le publiez, les utilisateurs finaux voient une option dans les onglets Forms envoyé et Brouillons de Forms . Cette option permet de lancer un nouveau formulaire à partir des données d’un formulaire envoyé. L’image suivante illustre cette option.
 
 ![démarrer-un-nouveau-formulaire](assets/start-a-new-form.png)
 
