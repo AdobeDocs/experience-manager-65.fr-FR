@@ -1,19 +1,15 @@
 ---
 title: Configuration de l’utilisation de cookies
-seo-title: Configuring Cookie Usage
 description: AEM fournit un service qui vous permet de configurer et de contrôler la manière dont les cookies sont utilisés avec vos pages web.
-seo-description: AEM provides a service that enables you to configure and control how cookies are used with your web pages
-uuid: 10d95176-0a56-41f1-9d36-01dbdac757d4
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 5773ec1a-f15b-462d-8f9f-54ee1d7ead44
 exl-id: 42e8d804-6b6a-432e-a651-940b9f45db4e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 34%
+source-wordcount: '550'
+ht-degree: 24%
 
 ---
 
@@ -32,10 +28,10 @@ Configurez le service d’exclusion Granite Adobe pour spécifier la manière do
 
 Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [ajouter une configuration OSGi au référentiel](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository). Le tableau suivant décrit les propriétés dont vous avez besoin pour l’une ou l’autre de ces méthodes. Pour une configuration OSGi, le PID du service est `com.adobe.granite.optout`.
 
-| Nom de la propriété (console web) | Nom de propriété OSGi | Description |
+| Nom de propriété (console web) | Nom de propriété OSGi | Description |
 |---|---|---|
 | Cookies de droit d’opposition | optout.cookies | Les noms des cookies qui indiquent, lorsqu’ils sont présents sur l’appareil de l’utilisateur, que celui-ci n’a pas consenti à utiliser les cookies. |
-| En-têtes HTTP de droit d’opposition | optout.headers | Les noms des en-têtes HTTP qui indiquent, lorsqu’ils sont présents, que l’utilisateur n’a pas consenti à l’utilisation de cookies. |
+| En-têtes HTTP de droit d’opposition | optout.headers | Les noms des en-têtes HTTP qui indiquent, lorsqu’ils sont présents, que l’utilisateur n’a pas consenti à utiliser les cookies. |
 | Cookies de liste autorisée | optout.whitelist.cookies | Liste des cookies qui sont essentiels au fonctionnement du site Web et qui peuvent être utilisés sans le consentement de l’utilisateur. |
 
 ## Validation de l’utilisation des cookies {#validating-cookie-usage}
@@ -47,7 +43,7 @@ Utilisez JavaScript côté client pour appeler le service d’exclusion Granite 
 * Déterminez si le navigateur Web contient un cookie qui indique que l’utilisateur ne consent pas à l’utilisation des cookies pour le suivi.
 * Déterminez si un cookie spécifique peut être utilisé.
 
-granite.utils [dossier de bibliothèque cliente](/help/sites-developing/clientlibs.md#referencing-client-side-libraries) fournit l’objet Granite.OptOutUtil . Ajoutez le code suivant au JSP de l’en-tête de la page pour inclure un lien vers la bibliothèque JavaScript :
+granite.utils [dossier de bibliothèque cliente](/help/sites-developing/clientlibs.md#referencing-client-side-libraries) fournit l’objet Granite.OptOutUtil . Ajoutez le code suivant au JSP d’en-tête de votre page pour inclure un lien vers la bibliothèque JavaScript :
 
 `<ui:includeClientLib categories="granite.utils" />`
 
@@ -70,7 +66,7 @@ Granite.OptOutUtil vous permet de déterminer si l’utilisation des cookies est
 
 ### fonction getCookieNames() {#getcookienames-function}
 
-Renvoie les noms des cookies qui, lorsqu’ils sont présents, indiquent que l’utilisateur n’a pas donné son consentement à l’utilisation des cookies.
+Les noms des cookies qui, lorsqu’ils sont présents, indiquent que l’utilisateur n’a pas donné son consentement à l’utilisation des cookies.
 
 **Paramètres**
 
@@ -82,7 +78,7 @@ Tableau de noms de cookies.
 
 #### fonction getWhitelistCookieNames() {#getwhitelistcookienames-function}
 
-Renvoie les noms des cookies qui peuvent être utilisés, quel que soit le consentement de l’utilisateur.
+Les noms des cookies qui peuvent être utilisés, quel que soit le consentement de l’utilisateur.
 
 **Paramètres**
 
@@ -106,11 +102,11 @@ Valeur booléenne `true` si un cookie indique que l’autorisation n’a pas ét
 
 ### fonction maySetCookie(cookieName) {#maysetcookie-cookiename-function}
 
-Détermine si un cookie spécifique peut être utilisé sur le navigateur de l’utilisateur. Cette fonction revient à utiliser `isOptedOut` parallèlement à la fonction permettant de déterminer si le cookie en question est inclus dans la liste renvoyée par la fonction `getWhitelistCookieNames`.
+Détermine si un cookie spécifique peut être utilisé sur le navigateur de l’utilisateur. Cette fonction équivaut à utiliser la fonction `isOptedOut` pour déterminer si le cookie donné est inclus dans la liste de `getWhitelistCookieNames` renvoie .
 
 **Paramètres**
 
-* cookieName : Chaîne. Nom du cookie.
+* cookieName : chaîne. Nom du cookie.
 
 **Renvoie**
 

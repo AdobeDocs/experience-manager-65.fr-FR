@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
 workflow-type: tm+mt
-source-wordcount: '2343'
+source-wordcount: '2347'
 ht-degree: 28%
 
 ---
@@ -71,7 +71,7 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 Chemin d’accès relatif à la propriété, par exemple `myFeatureEnabled` ou `jcr:content/myFeatureEnabled`.
 
 * **value**
-Valeur pour laquelle vérifier la propriété, &quot; `true`&quot; ou &quot; `false`&quot;.
+Valeur pour laquelle la propriété doit être vérifiée, &quot; `true`&quot; ou &quot; `false`&quot;.
 
 ### contentfragment {#contentfragment}
 
@@ -88,7 +88,7 @@ Peut être utilisé avec n’importe quelle valeur pour rechercher des fragments
 
 ### dateComparison {#datecomparison}
 
-Compare deux propriétés JCR DATE l’une à l’autre. Peuvent tester s’ils sont égaux, inégaux, supérieurs ou supérieurs ou égaux.
+Compare deux propriétés JCR DATE l’une à l’autre. Vous pouvez tester s’ils sont égaux, inégaux, supérieurs ou supérieurs ou égaux.
 
 Il s’agit d’un prédicat de filtrage uniquement qui ne peut pas utiliser d’index de recherche.
 
@@ -256,7 +256,7 @@ Vérifie si un noeud est une ressource principale DAM et non une sous-ressource.
 
 Il s’agit d’un prédicat de filtrage uniquement qui ne peut pas utiliser d’index de recherche.
 
-Prend en charge l’extraction de facettes. Fournit deux compartiments pour les sous-ressources principales et secondaires.
+Prend en charge l’extraction de facettes et fournit deux compartiments pour les sous-ressources principales et secondaires.
 
 #### Propriétés {#properties-9}
 
@@ -300,7 +300,7 @@ Prend en charge l’extraction de facettes de la même manière que le prédicat
 
 * **notexpired**
 
-  Booléen, &quot; `true`&quot; pour pas encore expiré (date ultérieure ou égale), &quot; `false`&quot; pour expiré (date dans le passé) (obligatoire).
+  Booléen, &quot; `true`&quot; pour pas encore expiré (date ultérieure ou égale), &quot; `false`&quot; pour expiré (date antérieure) (obligatoire).
 
 * **property**
 
@@ -308,7 +308,7 @@ Prend en charge l’extraction de facettes de la même manière que le prédicat
 
 ### orderby {#orderby}
 
-Permet de trier le résultat. Si un classement par plusieurs propriétés est requis, ce prédicat doit être ajouté plusieurs fois à l’aide du préfixe numérique, tel que `1_orderby=first`, `2_oderby=second`.
+Permet de trier les résultats. Si un classement par plusieurs propriétés est requis, ce prédicat doit être ajouté plusieurs fois à l’aide du préfixe numérique, tel que `1_orderby=first`, `2_oderby=second`.
 
 #### Propriétés {#properties-13}
 
@@ -322,7 +322,7 @@ Permet de trier le résultat. Si un classement par plusieurs propriétés est re
 
 * **case**
 
-  Si la variable est définie sur `ignore`, le tri n’est pas sensible à la casse, ce qui signifie que &quot;a&quot; précède &quot;B&quot; ; si elle est vide ou laissée pour compte, le tri est sensible à la casse, ce qui signifie que &quot;B&quot; précède &quot;a&quot;.
+  Si la variable est définie sur `ignore`, le tri n’est pas sensible à la casse, ce qui signifie que &quot;a&quot; précède &quot;B&quot;. Si ce paramètre est vide ou omis, le tri est sensible à la casse, ce qui signifie que &quot;B&quot; précède &quot;a&quot;.
 
 ### path {#path}
 
@@ -334,11 +334,11 @@ Ne prend pas en charge l’extraction de facettes.
 
 * **path**
 
-  modèle de chemin d’accès; selon les valeurs exactes, l’une ou l’autre des sous-arborescences correspond (comme l’ajout de `//*` dans xpath, mais notez que cela n’inclut pas le chemin de base (exact=false, par défaut), ou qu’il ne s’agit que d’une correspondance de chemin exacte, qui peut inclure des caractères génériques ( `*`); si self est défini, la sous-arborescence entière, y compris le noeud de base, est recherchée.
+  Modèle de chemin. Selon les valeurs exactes, l’une ou l’autre des sous-arborescences correspond (comme l’ajout de `//*` dans xpath, mais notez que cela n’inclut pas le chemin de base (exact=false, par défaut), ou qu’il ne s’agit que d’une correspondance de chemin exacte, qui peut inclure des caractères génériques ( `*`) ; si self est défini, la sous-arborescence entière, y compris le noeud de base, est recherchée.
 
 * **exact**
 
-  If `exact` est défini sur true/on, le chemin exact doit correspondre, mais il peut contenir des caractères génériques simples ( `*`), qui correspondent aux noms, mais pas à &quot; `/`&quot;; s’il est défini sur false (par défaut), tous les descendants sont inclus (facultatif).
+  If `exact` est défini sur true/on, le chemin exact doit correspondre, mais il peut contenir des caractères génériques simples ( `*`), qui correspondent aux noms, mais pas à &quot; `/`&quot;; s’il est faux (par défaut), tous les descendants sont inclus (facultatif).
 
 * **flat**
 
@@ -374,7 +374,7 @@ Prend en charge l’extraction de facettes. Fournit des intervalles pour chaque 
 
 * **operation**
 
-  &quot;`equals`&quot; pour une correspondance exacte (par défaut), &quot; `unequals`&quot; pour la comparaison des inégalités, &quot; `like`&quot; pour utiliser la variable `jcr:like` fonction xpath (facultatif), &quot; `not`&quot; pour aucune correspondance (par exemple, &quot;`not(@prop)`&quot; dans xpath, le paramètre value est ignoré) ou &quot; `exists`&quot; pour la vérification de l’existence (la valeur peut être true - la propriété doit exister, la valeur par défaut - ou false - identique à &quot; `not`&quot;).
+  &quot;`equals`&quot; pour une correspondance exacte (par défaut), &quot; `unequals`&quot; pour la comparaison des inégalités, &quot; `like`&quot; pour utiliser la variable `jcr:like` fonction xpath (facultatif), &quot; `not`&quot; pour aucune correspondance (par exemple, &quot;`not(@prop)`&quot; dans xpath, le paramètre value est ignoré) ou &quot; `exists`&quot; pour la vérification de l’existence (la valeur peut être true - la propriété doit exister, par défaut - ou false - comme &quot; `not`&quot;).
 
 * **depth**
 
@@ -384,7 +384,7 @@ Prend en charge l’extraction de facettes. Fournit des intervalles pour chaque 
 
 Correspond à une propriété JCR par rapport à un intervalle. Cela s’applique aux propriétés avec des types linéaires tels que `LONG`, `DOUBLE`, et `DECIMAL`. Pour `DATE`, voir le prédicat daterange qui contient une entrée de format de date optimisée.
 
-Vous pouvez définir une limite inférieure et une limite supérieure ou seulement l’une d’elles. L’opération (par exemple, &quot;inférieur à&quot; ou &quot;inférieur ou égal à&quot;) peut également être spécifiée individuellement pour les limites inférieure et supérieure.
+Vous pouvez définir une limite inférieure et une limite supérieure ou seulement l’une d’elles. L’opération (par exemple, &quot;inférieur à&quot; ou &quot;inférieur ou égal à&quot;) peut également être spécifiée pour les limites inférieure et supérieure, individuellement.
 
 Ne prend pas en charge l’extraction de facettes.
 
@@ -426,7 +426,7 @@ Par exemple :
 * `lowerBound=-1500` et `upperBound=5500` sélectionneraient tous les éléments entre 1 500 millisecondes dans le passé et 5 500 millisecondes dans le futur.
 * `lowerBound=1d` et `upperBound=2d` sélectionneraient tous les éléments du jour d’après-demain ;
 
-Il ne prend pas en compte les années bissextiles et tous les mois sont 30 jours.
+Il ne faut pas tenir compte des années bissextiles et tous les mois sont 30 jours.
 
 Ne prend pas en charge le filtrage.
 
@@ -460,7 +460,7 @@ Le nom « root » n’est jamais utilisé dans une requête ; il est implicit
 
 * **p.guessTotal**
 
-  Recommandé : éviter de calculer le total des résultats qui peut être coûteux ; soit un nombre indiquant le total maximum à compter (par exemple 1 000, un nombre qui donne aux utilisateurs suffisamment de commentaires sur la taille brute et les nombres exacts pour obtenir des résultats plus modestes), soit &quot; `true`&quot; pour ne compter que jusqu’au minimum nécessaire. `p.offset` + `p.limit`.
+  Recommandé : évitez de calculer le total des résultats, qui peut s’avérer coûteux ; soit un nombre indiquant le total maximum à comptabiliser (par exemple 1 000, un nombre qui donne aux utilisateurs suffisamment de commentaires sur la taille brute et les nombres exacts pour des résultats plus modestes), soit &quot; `true`&quot; pour ne compter que le minimum nécessaire `p.offset` + `p.limit`.
 
 * **p.excerpt**
 
@@ -476,11 +476,11 @@ Le nom « root » n’est jamais utilisé dans une requête ; il est implicit
 
    * **full** :
 
-     Rendu Sling JSON du noeud, avec `jcr:path` indiquant le chemin de l’accès : par défaut, répertorie uniquement les propriétés directes du noeud, incluez une arborescence plus profonde avec `p.nodedepth=N`, avec 0 signifiant la sous-arborescence entière et infinie ; add `p.acls=true` pour inclure les autorisations JCR de la session en cours sur l’élément de résultat donné (mappages : `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
+     Rendu Sling JSON du noeud, avec `jcr:path` indiquant le chemin de l’accès : par défaut, répertorie uniquement les propriétés directes du noeud, incluez une arborescence plus profonde avec `p.nodedepth=N`, avec 0 signifiant la sous-arborescence entière et infinie ; ajoutez `p.acls=true` pour inclure les autorisations JCR de la session en cours sur l’élément de résultat donné (mappages : `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
 
    * **selective** :
 
-     Uniquement les propriétés spécifiées dans `p.properties`, qui est une liste de chemins relatifs séparés par des espaces (utilisez &quot;+&quot; dans les URL) ; si le chemin relatif a une profondeur supérieure à 1, ils sont représentés en tant qu’objets enfants ; la propriété spéciale jcr:path inclut le chemin de l’accès.
+     Uniquement les propriétés spécifiées dans `p.properties`, qui est une liste de chemins relatifs séparés par des espaces (utilisez &quot;+&quot; dans les URL) ; si le chemin relatif a une profondeur > 1, ils sont représentés comme objets enfants ; la propriété spéciale jcr:path inclut le chemin de l’accès.
 
 ### savedquery {#savedquery}
 
@@ -522,7 +522,7 @@ Prend en charge l’extraction de facettes. Fournit des buckets pour chaque bali
 
 * **tag**
 
-  Chemin d’accès au titre de la balise à rechercher, par exemple &quot;Propriétés de la ressource : Orientation / Paysage&quot;.
+  Chemin d’accès au titre de la balise à rechercher, par exemple &quot;Propriétés de la ressource : orientation/paysage&quot;.
 
 * **N_value**
 
@@ -542,7 +542,7 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 
 * **tagid**
 
-  Identifiant de balise afin que vous puissiez rechercher, par exemple &quot; `properties:orientation/landscape`&quot;.
+  Identifiant de balise pour pouvoir rechercher, par exemple &quot; `properties:orientation/landscape`&quot;.
 
 * **N_value**
 
@@ -554,7 +554,7 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 
 ### tagsearch {#tagsearch}
 
-Recherche du contenu balisé avec une ou plusieurs balises, en spécifiant des mots-clés. Cela lancera d’abord une recherche de balises contenant ces mots-clés dans leur titre, puis limitera le résultat aux seuls éléments balisés avec ces mots-clés.
+Recherche du contenu balisé avec une ou plusieurs balises, en spécifiant des mots-clés. Cette recherche commence par les balises qui contiennent ces mots-clés dans leur titre, puis limite le résultat aux seuls éléments balisés avec ces mots-clés.
 
 Ne prend pas en charge l’extraction de facettes.
 
@@ -578,7 +578,7 @@ Ne prend pas en charge l’extraction de facettes.
 
 ### type {#type}
 
-Limite les résultats à un type de noeud JCR spécifique, à la fois à un type de noeud Principal ou à un type de mixin. Il trouve également des sous-types de ce type de noeud. Les index de recherche de référentiel doivent couvrir les types de noeuds pour une exécution efficace.
+Limite les résultats à un type de noeud JCR spécifique, qu’il s’agisse d’un type de noeud principal ou d’un type de mixin. Il trouve également des sous-types de ce type de noeud. Les index de recherche de référentiel doivent couvrir les types de noeuds pour une exécution efficace.
 
 Prend en charge l’extraction de facettes. Fournit des intervalles pour chaque type unique dans les résultats.
 
