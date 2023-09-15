@@ -12,9 +12,9 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 41752e40f2bceae98d4a9ff8bf130476339fe324
-workflow-type: ht
-source-wordcount: '3025'
+source-git-commit: 465d3e956ecdd36eea5fe095e250652eedd4b3c5
+workflow-type: tm+mt
+source-wordcount: '3005'
 ht-degree: 100%
 
 ---
@@ -57,11 +57,11 @@ Ces comptes sont les suivants :
 
 * Le compte `admin` AEM
 
-   Une fois que vous avez modifié le mot de passe du compte d’administration AEM, vous devez utiliser le nouveau mot de passe lors de l’accès à CRX.
+  Une fois que vous avez modifié le mot de passe du compte d’administration AEM, vous devez utiliser le nouveau mot de passe lors de l’accès à CRX.
 
 * Le mot de passe `admin` de la console web OSGi
 
-   Cette modification sera également appliquée au compte d’administration utilisé pour accéder à la console web. Utilisez donc utiliser le même mot de passe lorsque vous y accédez.
+  Cette modification sera également appliquée au compte d’administration utilisé pour accéder à la console web. Utilisez donc utiliser le même mot de passe lorsque vous y accédez.
 
 Ces deux comptes utilisent des informations d’identification distinctes. Il est essentiel d’utiliser des mots de passe sécurisés distincts pour un déploiement sécurisé.
 
@@ -132,7 +132,7 @@ Pour des raisons de sécurité, ces deux éléments doivent être modifiés afin
 
 * L’**utilisateur ou utilisatrice du transfert** ne doit pas être administrateur ou administratrice. Configurez plutôt un utilisateur ou une utilisatrice sur le système de publication qui n’a accès qu’aux parties pertinentes du système de publication et qui utilise les informations d’identification de cet utilisateur ou de cette utilisatrice pour le transfert.
 
-   Vous pouvez partir de l’utilisateur de réception de la réplication en lot et configurer les droits d’accès de cet utilisateur afin qu’ils correspondent à votre situation.
+  Vous pouvez partir de l’utilisateur de réception de la réplication en lot et configurer les droits d’accès de cet utilisateur afin qu’ils correspondent à votre situation.
 
 * L’**utilisateur ou utilisatrice de la réplication** ou l’**ID utilisateur de l’agent** ne doit pas être non plus un administrateur ou une administratrice, mais un utilisateur ou une utilisatrice qui ne peut afficher que le contenu qui est répliqué. L’utilisateur de la réplication permet de collecter le contenu à répliquer sur le système de création avant de l’envoyer au système de publication.
 
@@ -182,7 +182,7 @@ Le service de filtrage des référents est un service OSGi qui vous permet de co
 * si un en-tête de référent vide est permis ;
 * et une liste des serveurs autorisés, en plus de l’hôte de serveur.
 
-   Par défaut, toutes les variantes de localhost et les noms d’hôtes actuels auxquels le serveur est lié figurent sur la liste.
+  Par défaut, toutes les variantes de localhost et les noms d’hôtes actuels auxquels le serveur est lié figurent sur la liste.
 
 Pour configurer le service de filtrage de référent, procédez comme suit :
 
@@ -262,17 +262,17 @@ Une attaque par déni de service (DoS) est une tentative de rendre une ressource
 * avec un flot de requêtes provenant d’une source externe ;
 * avec une demande d’informations supplémentaires à laquelle le système peut répondre avec succès.
 
-   Par exemple, une représentation JSON de l’intégralité du référentiel.
+  Par exemple, une représentation JSON de l’intégralité du référentiel.
 
 * Lors de la demande d’une page de contenu avec un nombre illimité d’adresses URL, l’adresse URL peut inclure un nom en ligne, certains sélecteurs, une extension et un suffixe, qui peuvent tous être modifiés.
 
-   Par exemple, `.../en.html` peut également être demandé comme suit :
+  Par exemple, `.../en.html` peut également être demandé comme suit :
 
    * `.../en.ExtensionDosAttack`
    * `.../en.SelectorDosAttack.html`
    * `.../en.html/SuffixDosAttack`
 
-   Toutes les variantes possibles (par exemple, le renvoi d’une réponse `200` configurée pour être mise en cache) seront mises en cache par le Dispatcher, ce qui entraîne la saturation du système de fichiers et l’indisponibilité du service pour d’autres requêtes.
+  Toutes les variantes possibles (par exemple, le renvoi d’une réponse `200` configurée pour être mise en cache) seront mises en cache par le Dispatcher, ce qui entraîne la saturation du système de fichiers et l’indisponibilité du service pour d’autres requêtes.
 
 Il existe de nombreux paramétrages pour prévenir de telles attaques, mais nous ne parlons ici que de ceux liés à AEM.
 
@@ -300,17 +300,18 @@ Pour empêcher toute utilisation abusive des dénis de service, vous pouvez effe
 
    * Cela concerne en particulier le moteur de rendu JSON qui peut traverser l’arborescence sur plusieurs niveaux.
 
-      Par exemple, la requête :
+     Par exemple, la requête :
 
-      `http://localhost:4502/.json`
+     `http://localhost:4502/.json`
 
-      peut vider l’ensemble du référentiel dans une représentation JSON, ce qui peut entraîner des problèmes de serveur importants. Pour cette raison, Sling définit une limite de nombre maximal de résultats. Pour limiter la profondeur du rendu JSON, définissez la valeur de ce qui suit :
+     peut vider l’ensemble du référentiel dans une représentation JSON, ce qui peut entraîner des problèmes de serveur importants. Pour cette raison, Sling définit une limite de nombre maximal de résultats. Pour limiter la profondeur du rendu JSON, définissez la valeur de ce qui suit :
 
-      **Résultats JSON max** (`json.maximumresults`)
+     **Résultats JSON max** (`json.maximumresults`)
 
-      dans la configuration du [Servlet GET Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). Lorsque cette limite est dépassée, le rendu est réduit. La valeur par défaut pour Sling dans AEM est de `1000`.
+     dans la configuration du [Servlet GET Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). Lorsque cette limite est dépassée, le rendu est réduit. La valeur par défaut pour Sling dans AEM est de `1000`.
 
    * À titre de mesure préventive, vous devez désactiver les autres moteurs de rendu par défaut (HTML, texte brut, XML). Pour cela, configurez une nouvelle fois le [Servlet GET Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet).
+
    >[!CAUTION]
    >
    >Ne désactivez pas le moteur de rendu JSON. Il est nécessaire au fonctionnement normal d’AEM.
@@ -449,12 +450,6 @@ Plus précisément, vous devez effectuer les opérations suivantes :
 1. Collez les deux fichiers copiés précédemment.
 1. [Actualisez le lot de chiffrement](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) si l’instance cible est déjà en cours d’exécution.
 1. Répétez les étapes ci-dessus pour toutes les instances sur lesquelles vous souhaitez répliquer la clé.
-
->[!NOTE]
->
->Vous pouvez revenir à la méthode de stockage des clés d’avant la version 6.3 en ajoutant le paramètre ci-dessous lors de la première installation d’AEM :
->
->`-Dcom.adobe.granite.crypto.file.disable=true`
 
 #### Réplication des clés pour AEM 6.2 et les versions antérieures {#replicating-keys-for-aem-and-older-versions}
 
