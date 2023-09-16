@@ -2,10 +2,10 @@
 title: Console du produit
 description: Utiliser le cockpit de produits
 exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
+workflow-type: tm+mt
+source-wordcount: '416'
+ht-degree: 72%
 
 ---
 
@@ -29,11 +29,11 @@ L’activation des fonctionnalités de catalogue intermédiaire nécessite une a
 
 >[!NOTE]
 >
->Les fonctionnalités de catalogue intermédiaire ne sont disponibles qu’avec Adobe Commerce et les connecteurs tiers qui prennent en charge l’authentification basée sur les jetons.
+>Les fonctionnalités de catalogue intermédiaire ne sont disponibles qu’avec Adobe Commerce et les connecteurs tiers qui prennent en charge l’authentification par jeton.
 
 ## Ouvrir le cockpit de produits {#opening-product-cockpit}
 
-Le moyen le plus simple d’accéder au cockpit de produits est via le menu « Commerce » dans le menu principal d’AEM. Il est également possible d’utiliser l’omni-recherche (pour rechercher Commerce) ou d’ouvrir `https://<yourAEMInstance>/commerce.html`.
+Le moyen le plus simple d’accéder au Cockpit de produit est d’utiliser le menu &quot;Commerce&quot; dans AEM menu principal. Il est également possible d’utiliser l’omni-recherche (pour rechercher Commerce) ou d’ouvrir `https://<yourAEMInstance>/commerce.html`.
 
 ![Menu AEM](/help/commerce/cif/assets/aem-menu.png)
 
@@ -43,11 +43,11 @@ Le cockpit de produits est organisé de manière hiérarchique selon la structur
 
 ![Catalogues configurés](/help/commerce/cif/assets/catalog-overview.png)
 
-Cliquez sur une catégorie pour charger les enfants de la catégorie sur laquelle l’utilisateur a cliqué.
+Cliquer sur une catégorie charge les enfants de la catégorie sur laquelle l’utilisateur a cliqué.
 
 ![Enfants de catégorie](/help/commerce/cif/assets/catalog-category-children.png)
 
-Cliquez sur un produit pour charger les variations du produit si elles sont disponibles.
+Cliquez sur un produit pour charger des variations de produit, le cas échéant.
 
 ![Variations de produit](/help/commerce/cif/assets/catalog-product-variation.png)
 
@@ -63,13 +63,13 @@ Une recherche en texte intégral sur le catalogue de produits complet est propos
 
 ## Naviguer dans le catalogue de produits intermédiaires {#staged-product-catalogs}
 
-Par défaut, le cockpit de produits affiche les données du catalogue de produits actives. L’utilisation de l’option « CATALOGUE INTERMÉDIAIRE » dans l’onglet de filtre de gauche charge le catalogue de produits pour toute date sélectionnée.
+Par défaut, le cockpit de produits affiche les données du catalogue de produits actives. L’utilisation du &quot;CATALOGUE ENREGISTRÉ&quot; dans l’onglet Filtre de gauche charge le catalogue de produits pour toute date sélectionnée.
 
 ![catalogue intermédiaire](/help/commerce/cif/assets/staged-cockpit.png)
 
 ## Propriétés du catalogue de produits {#catalog-properties}
 
-Cliquez sur l’icône des propriétés d’un produit ou d’une catégorie pour ouvrir l’affichage des propriétés de l’objet sélectionné. Ouvrir les propriétés d’une variante de produit revient à ouvrir les propriétés du produit principal.
+Cliquez sur l’icône Propriétés d’un produit ou d’une catégorie pour ouvrir la vue des propriétés de l’objet sélectionné. Les propriétés d’ouverture d’une variante de produit sont égales pour l’ouverture des propriétés principales du produit.
 
 ### Onglets Commerce {#tabs}
 

@@ -5,10 +5,10 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: ecbd0097-c407-4581-bab2-4729a71df4a3
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
 workflow-type: tm+mt
 source-wordcount: '714'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
@@ -95,7 +95,7 @@ L’utilisation du serveur Hybris nécessite une licence Hybris distincte.
 
 >[!NOTE]
 >
-Pour l’équipe de développement, la [documentation de l’API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) est également disponible pour téléchargement.
+Pour les développeurs : [Documentation de l’API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) est également disponible en téléchargement.
 
 ### Télécharger et créer votre serveur Hybris {#download-and-build-your-hybris-server}
 
@@ -212,7 +212,7 @@ Cette procédure télécharge et configure le magasin de démonstration - Geomet
 
 [Obtenir le fichier](/help/sites-deploying/assets/geometrixx-outdoors-images.zip)
 
-1. Pour importer les fichiers spécifiés, cliquez sur **Démarrer**. Le **Résultat** affiche toutes les entrées de journal.
+1. Pour importer les fichiers spécifiés, cliquez sur **Démarrer**. La variable **Résultat** affiche toutes les entrées de journal.
 
 1. Pour fermer la fenêtre d’importation, cliquez sur **Terminé**.
 
@@ -230,7 +230,7 @@ Cette procédure télécharge et configure le magasin de démonstration - Geomet
 
    `en_US - English (United States)`
 
-1. Pour importer les fichiers spécifiés, cliquez sur **Démarrer**. Le **Résultat** affiche toutes les entrées de journal.
+1. Pour importer les fichiers spécifiés, cliquez sur **Démarrer**. La variable **Résultat** affiche toutes les entrées de journal.
 
 1. Pour fermer la fenêtre d’importation, cliquez sur **Terminé**.
 
