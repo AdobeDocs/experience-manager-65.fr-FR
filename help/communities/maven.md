@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 3df90511-e43e-442b-bf73-44c22c1886b7
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '115'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Vue d’ensemble {#overview}
 
-Cette section de la documentation d’Adobe Experience Manager (AEM) Communities s’ajoute à :
+Cette section de la documentation de Adobe Experience Manager (AEM) Communities s’ajoute à :
 
 * [Création de projets AEM à l’aide d’Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
@@ -31,7 +31,7 @@ Il n’existe qu’un seul artefact &quot;uber&quot; qui remplace les artefacts 
 >
 >Restez à jour avec la dernière version de Communities.
 >
->Voir [Dernières versions](deploy-communities.md#latest-releases) pour identifier la version la plus récente.
+>Voir [Dernières versions](deploy-communities.md#latest-releases) où vous pouvez identifier la version la plus récente.
 
 ## Exemple de dépendance Maven {#maven-dependency-example}
 
@@ -46,7 +46,7 @@ Il n’existe qu’un seul artefact &quot;uber&quot; qui remplace les artefacts 
 
 >[!NOTE]
 >
->Voir [Référentiel Uber jar AEM](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) pour identifier le dernier artefact Uber jar.
+>Voir [Référentiel Uber jar AEM](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) où vous pouvez identifier le dernier artefact Uber jar.
 
 <!--
 There are now two "uber" artifacts that replace individual artifacts:

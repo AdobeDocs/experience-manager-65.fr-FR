@@ -2,10 +2,10 @@
 title: Compresser et décompresser des fichiers à l’aide d’un DSC personnalisé AEM Forms sur JEE
 description: Découvrez comment compresser et décompresser des fichiers à l’aide d’un DSC personnalisé d’AEM Forms sur JEE.
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 90%
+source-wordcount: '484'
+ht-degree: 64%
 
 ---
 
@@ -23,11 +23,13 @@ Expérience avec la gestion des processus d’AEM Forms on JEE, programmation Ja
 
 Intermédiaire
 
-AEM Forms sur JEE permet aux développeurs de créer des DSC (Document Service Container) personnalisés pour créer des fonctionnalités enrichies prêtes à l’emploi. Ces composants que vous créez sont enfichables dans l’environnement d’exécution AEM Forms sur JEE afin de remplir la fonction qui leur a été donnée. Cet article explique comment créer un service ZIP personnalisé, qui peut être utilisé pour compresser une liste de fichiers dans un fichier .zip et décompresser un fichier .zip vers une liste de documents.
+AEM Forms on JEE permet aux développeurs de créer un ASC personnalisé (Acrobat Services Container) pour créer des fonctionnalités prêtes à l’emploi enrichies. Ces composants que vous créez sont enfichables dans l’environnement d’exécution AEM Forms sur JEE afin de remplir la fonction qui leur a été donnée. Cet article explique comment créer un service ZIP personnalisé, qui peut être utilisé pour compresser une liste de fichiers dans un fichier .zip et décompresser un fichier .zip vers une liste de documents.
 
-## Créer un composant DSC personnalisé {#create-custom-dsc-component}
+## Création d’un composant ASC personnalisé {#create-custom-dsc-component}
 
-Créez un composant DSC personnalisé doté de deux opérations de service, afin de compresser et décompresser une liste de documents. Ce composant utilise le package java.util.zip pour la compression et la décompression. Pour créer un composant personnalisé, procédez comme suit :
+Créez un composant ASC personnalisé avec deux opérations de service afin de pouvoir compresser et décompresser une liste de documents. Ce composant utilise le package java.util.zip pour la compression et la décompression.
+
+Pour créer un composant ASC personnalisé :
 
 1. Ajouter le fichier adobe-livecycle-client.jar à la bibliothèque
 1. Ajouter les icônes requises
@@ -203,7 +205,7 @@ De même, l’opération ZipDocuments du composant personnalisé peut accepter u
 
 ![Document Zip](assets/zip-doc.jpg)
 
-L’orchestration du workflow suivante montre comment décompresser le fichier ZIP donné, le compresser à nouveau en un autre fichier ZIP et renvoyer la sortie (voir l’illustration ci-dessous).
+L’orchestration de workflow suivante montre comment décompresser le fichier ZIP donné, le compresser à nouveau dans un autre fichier ZIP et renvoyer la sortie (voir l’illustration ci-dessous).
 
 ![Workflow Décompresser le fichier Zip](assets/unzip-zip-process.jpg)
 
@@ -215,8 +217,8 @@ Vous pouvez utiliser ce service ZIP dans les cas d’utilisation suivants :
 
 * Fournissez un fichier ZIP contenant plusieurs documents de PDF qui peuvent être complétés par le lecteur après les avoir décompressés. Ceci nécessite le module Reader Extensions pour AEM Forms sur JEE
 
-* Fournir un fichier ZIP contenant un type hétérogène de document qui peut être décompressé et converti en document PDF à l’aide du service Generate PDF
+* Fournissez un fichier ZIP contenant un type hétérogène de document qui peut être décompressé et converti en document PDF à l’aide du service Generate PDF.
 
 * La politique protège une liste de documents et renvoie un fichier ZIP
 
-* Permettre aux utilisateurs de télécharger toutes les pièces jointes d’une instance de processus sous la forme d’un fichier ZIP unique
+* Permet aux utilisateurs de télécharger toutes les pièces jointes d’une instance de processus sous la forme d’un fichier ZIP unique.

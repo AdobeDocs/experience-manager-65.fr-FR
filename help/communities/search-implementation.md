@@ -1,43 +1,39 @@
 ---
 title: Principes de recherche
-seo-title: Search Essentials
 description: Recherche dans les communautés
-seo-description: Search in Communities
-uuid: 5f35a033-2069-499e-9cdb-db25781312f0
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
 exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 7%
+source-wordcount: '1170'
+ht-degree: 5%
 
 ---
 
 # Principes de recherche {#search-essentials}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
-La fonctionnalité de recherche est une fonctionnalité essentielle d’AEM Communities. En plus de la variable [Recherche sur AEM plateforme](../../help/sites-deploying/queries-and-indexing.md) , AEM Communities fournit les fonctionnalités suivantes : [API de recherche UGC](#ugc-search-api) dans le but de rechercher du contenu généré par l’utilisateur. Le contenu généré par l’utilisateur possède des propriétés uniques, car il est saisi et stocké séparément du contenu AEM et des données utilisateur.
+La fonction de recherche est une fonctionnalité essentielle de Adobe Experience Manager (AEM) Communities. En plus de la variable [Recherche sur AEM plate-forme](../../help/sites-deploying/queries-and-indexing.md) , AEM Communities fournit la variable [API de recherche UGC](#ugc-search-api) pour rechercher du contenu généré par l’utilisateur. Le contenu généré par l’utilisateur possède des propriétés uniques, car il est saisi et stocké séparément du contenu AEM et des données utilisateur.
 
 Pour Communities, les deux éléments généralement recherchés sont les suivants :
 
-* Contenu publié par des membres de la communauté
+* Contenu publié par les membres de la communauté
 
-   * Utilise l’API de recherche UGC d’AEM Communities.
+   * Il utilise l’API de recherche UGC d’AEM Communities.
 
 * Utilisateurs et groupes d’utilisateurs (données utilisateur)
 
-   * Utilise les fonctionnalités de recherche de la plateforme AEM.
+   * Elle utilise les fonctionnalités de recherche de la plateforme AEM.
 
 Cette section de la documentation intéresse les développeurs qui créent des composants personnalisés qui créent ou gèrent du contenu généré par l’utilisateur.
 
 ## Noeuds de sécurité et ombre {#security-and-shadow-nodes}
 
-Pour un composant personnalisé, il est nécessaire d’utiliser la variable [SocialResourceUtilities](socialutils.md#socialresourceutilities-package) méthodes. Les méthodes d’utilitaire qui créent et recherchent le contenu généré par l’utilisateur établiront les [noeuds fantômes](srp.md#about-shadow-nodes-in-jcr) et assurez-vous que le membre dispose des autorisations appropriées pour la requête.
+Pour un composant personnalisé, il est nécessaire d’utiliser la variable [SocialResourceUtilities](socialutils.md#socialresourceutilities-package) méthodes. Les méthodes d’utilitaire qui créent et recherchent le contenu généré par l’utilisateur établissent les [noeuds fantômes](srp.md#about-shadow-nodes-in-jcr) et assurez-vous que le membre dispose des autorisations appropriées pour la requête.
 
 Les propriétés qui ne sont pas gérées par les utilitaires SRP sont liées à la modération.
 
@@ -45,7 +41,7 @@ Voir [Principes de base de la SRP et du contenu généré par l’utilisateur](s
 
 ## API de recherche UGC {#ugc-search-api}
 
-Le [Magasin commun UGC](working-with-srp.md) est fourni par l’un des différents fournisseurs de ressources de stockage (SRP), chacun pouvant avoir un langage de requête natif différent. Par conséquent, quel que soit la SRP choisie, le code personnalisé doit utiliser des méthodes de la [Package d’API UGC](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) qui appellera le langage de requête approprié pour la SRP choisie.
+La variable [Magasin commun UGC](working-with-srp.md) est fourni par l’un des différents fournisseurs de ressources de stockage (SRP), chacun pouvant avoir un langage de requête natif différent. Par conséquent, quel que soit la SRP choisie, le code personnalisé doit utiliser des méthodes de la [Package d’API UGC](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) qui appelle le langage de requête approprié pour la SRP choisie.
 
 ### Recherches ASRP {#asrp-searches}
 
@@ -57,9 +53,9 @@ Lors de la création de propriétés personnalisées pouvant faire l’objet d�
 
 ### Recherches MSRP {#msrp-searches}
 
-Pour [MSRP](msrp.md), le contenu généré par l’utilisateur est stocké dans MongoDB configuré pour utiliser Solr pour la recherche. Le contenu généré par l’utilisateur ne sera pas visible dans CRX, mais [modération](moderate-ugc.md) est disponible dans les environnements de création et de publication.
+Pour [MSRP](msrp.md), le contenu généré par l’utilisateur est stocké dans MongoDB configuré pour utiliser Solr pour la recherche. Le contenu généré par l’utilisateur n’est pas visible dans CRX, mais [modération](moderate-ugc.md) est disponible dans les environnements de création et de publication.
 
-À propos de MSRP et Solr :
+Concernant MSRP et Solr :
 
 * Le Solr incorporé pour la plateforme AEM n’est pas utilisé pour MSRP.
 * Si vous utilisez un Solr distant pour la plateforme AEM, il peut être partagé avec MSRP, mais il doit utiliser des collections différentes.
@@ -76,22 +72,22 @@ Pour [JSRP](jsrp.md), le contenu généré par l’utilisateur est stocké dans 
 
 Comme le contenu généré par l’utilisateur est généralement saisi dans l’environnement de publication, pour les systèmes de production multi-éditeurs, il est nécessaire de configurer une [publier un cluster](topologies.md), et non une ferme de publication, de sorte que le contenu saisi soit visible par tous les éditeurs.
 
-Pour JSRP, le contenu généré par l’utilisateur entré dans l’environnement de publication ne sera jamais visible dans l’environnement de création. Ainsi, tous les [modération](moderate-ugc.md) les tâches ont lieu dans l’environnement de publication.
+Pour JSRP, le contenu généré par l’utilisateur entré dans l’environnement de publication n’est jamais visible dans l’environnement de création. Par conséquent, tous les [modération](moderate-ugc.md) les tâches ont lieu dans l’environnement de publication.
 
 Les fonctions de recherche personnalisées doivent utiliser la variable [API de recherche UGC](#ugc-search-api).
 
 #### Indexation Oak {#oak-indexing}
 
-Bien que les index Oak ne soient pas automatiquement créés pour la recherche de plateforme AEM, à partir de la version 6.2 d’AEM, ils ont été ajoutés pour qu’AEM Communities améliore les performances et fournisse la prise en charge de la pagination lors de la présentation des résultats de recherche UGC.
+Bien que les index Oak ne soient pas automatiquement créés pour la recherche de plateforme AEM, à partir d’AEM 6.2, ils ont été ajoutés pour qu’AEM Communities améliore les performances et prenne en charge la pagination lors de la présentation des résultats de recherche UGC.
 
 Si des propriétés personnalisées sont utilisées et que les recherches sont lentes, des index supplémentaires doivent être créés pour les propriétés personnalisées afin de les rendre plus performantes. Pour maintenir la portabilité, respectez les [exigences d’attribution de noms](#naming-of-custom-properties) lors de la création de propriétés personnalisées pouvant faire l’objet de recherches.
 
-Pour modifier des index existants ou créer des index personnalisés, reportez-vous à la section [Requêtes et indexation Oak](../../help/sites-deploying/queries-and-indexing.md).
+Pour modifier des index existants ou créer des index personnalisés, voir [Requêtes et indexation Oak](../../help/sites-deploying/queries-and-indexing.md).
 
-Le [Oak Index Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) est disponible sur ACS AEM Commons. Elle fournit les éléments suivants :
+La variable [Oak Index Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) est disponible sur ACS AEM Commons. Elle fournit les éléments suivants :
 
 * Une vue des index existants.
-* Possibilité de lancer la réindexation.
+* La possibilité d’initier la réindexation.
 
 Pour afficher les index Oak existants dans [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md), l’emplacement est :
 
@@ -137,7 +133,7 @@ Vous trouverez ci-dessous quelques-unes des propriétés pouvant faire l’objet
 
 ### Dénomination des propriétés personnalisées {#naming-of-custom-properties}
 
-Lors de l’ajout de propriétés personnalisées, afin que ces propriétés soient visibles pour les recherches et les types de recherche créés avec l’événement [API de recherche UGC](#ugc-search-api), c’est *required* pour ajouter un suffixe au nom de la propriété.
+Lors de l’ajout de propriétés personnalisées, ces propriétés doivent être visibles pour les recherches et les types de propriétés créés avec l’événement [API de recherche UGC](#ugc-search-api), c’est *required* pour ajouter un suffixe au nom de la propriété.
 
 Le suffixe est destiné aux langages de requête qui utilisent un schéma :
 
@@ -162,11 +158,11 @@ Solr est un exemple de langage de requête qui utilise un schéma.
 * Pour les types à plusieurs valeurs, ajoutez &quot;s&quot; au suffixe, par exemple :
 
    * `viewDate_dt`: propriété de date unique
-   * `viewDates_dts`: listdates, propriété
+   * `viewDates_dts`: propriété list de dates
 
 ## Filtres {#filters}
 
-Composants qui incluent la variable [système de commentaires](essentials-comments.md) prennent en charge l’ajout du paramètre de filtre à leurs points de terminaison.
+Les composants, qui incluent la variable [système de commentaires](essentials-comments.md), prennent en charge le paramètre de filtre en plus de leurs points de terminaison .
 
 La syntaxe du filtre pour la logique ET et OU est exprimée comme suit (affichée avant d’être codée au format URL) :
 
@@ -182,7 +178,7 @@ L’implémentation par défaut de la variable [Composant Recherche](search.md) 
 
 Les opérateurs de filtre sont les suivants :
 
-| EQ | égal à |
+| EQ | est égal à |
 |---|---|
 | NE | not equals |
 | LT | inférieur à |
@@ -195,18 +191,18 @@ Il est important que l’URL référence le composant Communities (ressource) et
 
 * Correct : composant de forum
    * `/content/community-components/en/forum/jcr:content/content/forum.social.json`
-* Incorrect : page de forum
+* Incorrect : page du forum
    * `/content/community-components/en/forum.social.json`
 
 ## Outils SRP {#srp-tools}
 
-Il existe un projet Adobe Marketing Cloud GitHub qui contient :
+Il existe un projet Adobe Experience Cloud GitHub qui contient :
 
 [Outils AEM Communities SRP](https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools)
 
 Ce référentiel contient des outils pour gérer les données dans la SRP.
 
-Actuellement, il existe un servlet qui permet de supprimer tout le contenu créé par l’utilisateur de n’importe quelle SRP.
+Actuellement, il existe un servlet qui peut supprimer tout le contenu généré par l’utilisateur de n’importe quelle SRP.
 
 Par exemple, pour supprimer tout le contenu généré par l’utilisateur dans ASRP :
 
@@ -222,7 +218,7 @@ Pour résoudre les problèmes liés à une requête Solr, activez la journalisat
 
 `com.adobe.cq.social.srp.impl.SocialSolrConnector`.
 
-La requête Solr réelle s’affichera sous forme d’URL encodée dans le journal de débogage :
+La requête Solr réelle s’affiche sous forme d’URL encodée dans le journal de débogage :
 
 La requête à résoudre est : `sort=timestamp+desc&bl=en&pl=en&start=0&rows=10 &q=%2Btitle_t:(hello)+%2Bprovider_id:\/content/usergenerated/asi/mongo/content/+%2Bresource_type_s:&df=provider_id&trf=verbatim&fq={!cost%3D100}report_suite:mongo`
 
@@ -231,7 +227,7 @@ La valeur de la variable `q` est la requête. Une fois le codage de l’URL déc
 ## Ressources connexes {#related-resources}
 
 * [Stockage de contenu communautaire](working-with-srp.md) - Discute des choix de SRP disponibles pour un magasin commun UGC.
-* [Présentation du fournisseur de ressources de stockage](srp.md) - Présentation et présentation de l’utilisation du référentiel.
+* [Présentation du fournisseur de ressources de stockage](srp.md) - Présentation et utilisation du référentiel - Aperçu.
 * [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
 * [Refactorisation de SocialUtils](socialutils.md) - Méthodes utilitaires pour SRP qui remplacent SocialUtils.
 * [Composants Résultats de recherche](search.md) - Ajout de la fonction de recherche UGC à un modèle.

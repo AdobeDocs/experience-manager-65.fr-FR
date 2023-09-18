@@ -1,19 +1,15 @@
 ---
 title: Tendances des activités
-seo-title: Activity Trends
 description: Ajout d’un composant Liste d’activités de la communauté à une page
-seo-description: Adding a Community Activity List component to a page
-uuid: 316aabf7-01a5-46da-be59-70c206eb6a3d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '344'
 ht-degree: 7%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 7%
 
 ## Présentation {#introduction}
 
-Le `Community Activity List` offre la possibilité d’ajouter des informations de tendance concernant les publications et les vues par les membres, ainsi que les publications et les vues de contenu.
+La variable `Community Activity List` vous permet d’ajouter des informations de tendance concernant les publications et les vues par les membres, ainsi que les publications et les vues de contenu.
 
 Le document décrit :
 
@@ -38,11 +34,7 @@ Voir [Configuration d’Analytics pour les fonctionnalités des communautés](/h
 
 ### Ajout d’une liste d’activités de la communauté à une page {#adding-a-community-activity-list-to-a-page}
 
-Pour ajouter une `Community Activity List` à une page en mode création, recherchez le composant.
-
-* `Communities / Community Activity List`
-
-et faites-le glisser sur la page.
+Pour ajouter une `Community Activity List` à une page en mode création, recherchez le composant. `Communities / Community Activity List` et faites-le glisser sur la page.
 
 Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](/help/communities/basics.md).
 
@@ -50,9 +42,9 @@ Lorsqu’il est placé pour la première fois sur une page d’un site de commun
 
 ![communauté-activité](assets/community-activity.png)
 
-### Configuration de la liste des activités de la communauté  {#configuring-community-activity-list}
+### Configuration de la liste des activités communautaires  {#configuring-community-activity-list}
 
-Sélectionnez le `Community Activity List` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le `Community Activity List` , puis sélectionnez `Configure` pour ouvrir la boîte de dialogue de modification.
 
 ![configure](assets/configure-new.png)
 
@@ -62,7 +54,7 @@ Sous , **Commentaires** , indiquez si et comment les commentaires des fichiers c
 
 * **Type**
 
-  Indiquez si vous souhaitez afficher les données concernant les membres de la communauté ou le contenu généré par l’utilisateur.
+  Indiquez s’il faut afficher les données concernant les membres de la communauté ou le contenu généré par l’utilisateur.
 
   Faites un choix parmi les éléments suivants :
 
@@ -107,15 +99,15 @@ La valeur par défaut est 10.
 
 * **Chemin d’accès au contexte**
 
-  Permet d’étendre l’activité à un sous-ensemble du site, tel qu’un blog spécifique.
+  Vous pouvez ainsi répartir l’activité sur un sous-ensemble du site, tel qu’un Blog spécifique.
 La valeur par défaut est l’ensemble du site de la communauté.
 
 * **Agrégation du nombre de membres**
 
-  Si cette option est désélectionnée (désactivée), seules les publications de niveau supérieur sont comptabilisées. Par exemple, si le contexte est la page racine (valeur par défaut), une `Activity Type` de `Posts` n’affichera jamais d’activité, car il n’est pas possible de publier du contenu sur la page racine. Lorsque cette case est cochée, les décomptes de toutes les pages descendantes sont inclus.
+  Si cette option est désélectionnée (désactivée), seules les publications de niveau supérieur sont comptabilisées. Par exemple, si le contexte est la page racine (valeur par défaut), une `Activity Type` de `Posts` n’affiche jamais d’activité, car il n’est pas possible de publier du contenu sur la page racine. Lorsque cette case est cochée, les décomptes de toutes les pages descendantes sont inclus.
 La valeur par défaut est cochée.
 
-### Exemple de page avec 4 composants {#example-page-with-components}
+### Exemple de page avec quatre composants {#example-page-with-components}
 
 **Meilleurs visiteurs** config : Type = Membres, Type d’activité = Vues
 

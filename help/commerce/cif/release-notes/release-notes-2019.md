@@ -2,16 +2,16 @@
 title: Notes de mise à jour d’AEM Content and Commerce 2019
 description: Notes de mise à jour d’AEM Content and Commerce 2019
 exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '978'
-ht-degree: 100%
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+workflow-type: tm+mt
+source-wordcount: '990'
+ht-degree: 75%
 
 ---
 
 # Présentation de la version GitHub de Commerce Integration Framework
 
-## Date de publication : novembre 2019
+## Date de publication : novembre 2019
 
 | GitHub | Version | Notes de mise à jour détaillées |
 |:-------|:-----:|---------------------:|
@@ -31,13 +31,13 @@ ht-degree: 100%
 
 ### Améliorations {#what-is-improved-november}
 
-* Les sélecteurs de catégorie/produit ont été améliorés pour respecter la vue spécifiée pour le magasin Adobe Commerce dans une configuration multi-magasin.
+* Les sélecteurs de catégorie/produit ont été améliorés pour respecter la vue de magasin Adobe Commerce spécifiée dans une configuration multi-magasin.
 
-* Composants basés sur React disponibles sous la forme d’un package npm. Cela permet à l’équipe de développement d’utiliser le package Composants React comme dépendance pour un nouveau projet React afin de permettre la personnalisation des composants existants ou le développement de nouveaux composants React.
+* Les composants React sont disponibles sous la forme d’un package npm. Cela permet à l’équipe de développement d’utiliser le package Composants React comme dépendance pour un nouveau projet React afin de permettre la personnalisation des composants existants ou le développement de nouveaux composants React.
 
-* Personnalisation simplifiée des requêtes GraphQL. Cela permet à l’équipe de développement de personnaliser les composants principaux CIF avec moins de code.
+* La personnalisation des requêtes GraphQL est simplifiée. Cela permet à l’équipe de développement de personnaliser les composants principaux CIF avec moins de code.
 
-## Date de publication : octobre 2019
+## Date de publication : octobre 2019
 
 | GitHub | Version | Notes de mise à jour détaillées |
 |:-------|:-----:|---------------------:|
@@ -49,9 +49,9 @@ ht-degree: 100%
 
 * Modèles entièrement modifiables pour la page des détails du produit et la page de liste des produits. Les auteurs peuvent maintenant créer des modèles et faire glisser et déposer des composants de liste de produits et de détails de produits sur ces modèles. En plus d’ajouter d’autres composants, les auteurs peuvent désormais modifier la mise en page de ces modèles, leur donnant ainsi une liberté illimitée pour créer des expériences incroyables combinant du contenu marketing et commercial.
 
-* Tous les composants principaux CIF compatibles avec l’auteur ont été améliorés pour prendre en charge le [Système de style AEM](https://helpx.adobe.com/fr/experience-manager/6-5/sites/authoring/using/style-system.html). Des exemples de styles ont été fournis pour le composant de liste de produits.
+* Tous les composants principaux CIF compatibles avec l’auteur ont été améliorés pour prendre en charge le [Système de style AEM](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=fr). Des exemples de styles ont été fournis pour le composant de liste de produits.
 
-* Composants côté client basés sur React pour la gestion de compte. Cette version prend en charge les fonctionnalités suivantes : Connexion, Mot de passe oublié et Créer un compte.
+* Composants côté client basés sur React pour la gestion de compte. Cette version prend en charge les fonctionnalités suivantes : Connexion, Mot de passe oublié et Créer un compte.
 
 ### Améliorations {#what-is-improved-october}
 
@@ -69,7 +69,7 @@ ht-degree: 100%
 
 ### Nouveautés {#what-is-new-september}
 
-* Fonction multi-modèles permettant aux auteurs d’enrichir une page de détails de produit ou une page de liste de produits spécifique. Les auteurs peuvent facilement créer une page de détails de produit ou une page de liste de produits personnalisée et utiliser le sélecteur de produit ou de catégorie pour affecter la page personnalisée à un ou plusieurs produits ou catégories spécifiques.
+* La fonction de modèle multiple permet aux auteurs d’enrichir une page de détails ou une page de liste de produits spécifique. Les auteurs peuvent facilement créer une page de détails de produit ou une page de liste de produits personnalisée et utiliser le sélecteur de produit ou de catégorie pour affecter la page personnalisée à un produit ou à une catégorie spécifique.
 
 * Liaison multi-catalogue pour permettre aux auteurs de lier plusieurs catalogues dans la console de produit AEM. Les auteurs peuvent également modifier et afficher les propriétés de liaison du catalogue après la création de la liaison.
 
@@ -81,7 +81,7 @@ ht-degree: 100%
 
 * Les composants Teaser de produit et Carrousel de produit prennent en charge les variantes de produit.
 
-## Date de publication : août 2019
+## Date de publication : août 2019
 
 | GitHub | Version | Notes de mise à jour détaillées |
 |:-------|:-----:|---------------------:|
@@ -91,23 +91,23 @@ ht-degree: 100%
 
 ### Nouveautés {#what-is-new-august}
 
-* L’incorporation du connecteur CIF dans l’archétype CIF est devenue facultative pour offrir plus de flexibilité à l’équipe de développement.
+* L’incorporation de CIF Connector dans l’archétype CIF est rendue facultative pour offrir plus de flexibilité aux développeurs.
 
 * Les composants CIF ont été découplés de la mise en forme CSS spécifique à Venia pour permettre à l’équipe de développement d’appliquer le style CSS de son choix.
 
 * Fonctionnalité multi-magasin multisite pour permettre l’utilisation des composants principaux CIF sur plusieurs structures de site AEM et permettre à l’implémentation du client GraphQL sous-jacent de se connecter à différentes vues de magasin ou magasins Adobe Commerce.
 
-* Mise en cache GraphQL activée pour certaines requêtes GraphQL via le GET HTTP afin de réduire le temps de réponse.
+* La mise en cache de GraphQL est activée pour certaines requêtes GraphQL via le GET HTTP afin de réduire le temps de réponse.
 
-* Vue de description du produit activée dans la console Produits d’AEM.
+* La vue Description du produit est activée dans AEM console Produits.
 
-* Le Teaser Commerce étend le composant Teaser de gestion de contenu web pour permettre aux auteurs d’ajouter également des champs d’appel à l’action à une page de détails de produit ou à une page de liste de produits.
+* Commerce Teaser étend le composant WCM Teaser pour permettre aux auteurs d’ajouter également des champs CTA à une page de détails de produit ou à une page de liste de produits.
 
 * Bouton pouvant être placé par les auteurs sur une page AEM et permettant de créer un lien vers une page AEM, une page des détails du produit, une page de liste de produits ou un lien externe.
 
 ### Améliorations {#what-is-improved-august}
 
-* La configuration du magasin Adobe Commerce a été déplacée d’OSGi vers la console Produit d’AEM afin de rendre la configuration de l’intégration plus conviviale pour la création.
+* La configuration du magasin Adobe Commerce a été déplacée d’OSGi vers la console produit AEM afin de rendre la configuration de l’intégration plus conviviale en termes de création.
 
 ## Date de publication : juillet 2019
 
@@ -127,9 +127,9 @@ ht-degree: 100%
 
 * Rendu côté client de l’attribut de prix dans les composants Détails du produit et Liste de produits pour prendre en charge le rendu des attributs dynamiques.
 
-* Carrousel de produits côté serveur pour afficher la liste des produits présentés dans un style de carrousel.
+* Carrousel de produits côté serveur pour afficher une liste de produits présentés dans un style de carrousel.
 
-* Liste des catégories proposées côté serveur pour afficher la liste des catégories sur une page AEM.
+* Liste des catégories proposées côté serveur pour afficher une liste de catégories sur une page AEM.
 
 ### Améliorations {#what-is-improved-july}
 
@@ -144,7 +144,7 @@ ht-degree: 100%
 
 ### Nouveautés {#what-is-new-june}
 
-* Storefront B2C AEM avec le premier style CSS Venia destiné aux terminaux mobiles, page d’entrée, navigation dynamique dans les catalogues via les pages de produits et de catégories, page de recherche de produits et fonctionnalités de panier pour lancer et accélérer les projets commerciaux.
+* Storefront B2C AEM avec le premier style CSS Venia destiné aux terminaux mobiles, page de destination, navigation dynamique dans les catalogues via les pages de produits et de catégories, page de recherche de produits et fonctionnalités de panier pour lancer et accélérer les projets commerciaux.
 
 * Connecteur CIF et outils de création (console de produits, sélecteur de produits et sélecteur de catégorie) pour permettre aux auteurs de créer des expériences dans AEM avec du contenu commercial.
 
