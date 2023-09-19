@@ -1,14 +1,14 @@
 ---
 title: Bonnes pratiques pour AEM Mobile On-demand Services
-description: Découvrez les bonnes pratiques et les directives qui aident les développeurs AEM expérimentés pour les sites, qui souhaitent créer des modèles d’applications mobiles et des composants.
+description: Découvrez les bonnes pratiques et les directives qui aident les développeurs Adobe Experience Manager (AEM) compétents pour les sites qui souhaitent créer des modèles d’applications mobiles et des composants.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 63ceaba6-b796-4c13-a86d-f0609ec679c9
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '596'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 La création d’une application AEM Mobile On-demand Services diffère de la création d’une application qui s’exécute directement dans le shell Cordova (ou PhoneGap). Les développeurs doivent connaître :
 
-* Modules externes pris en charge prêts à l’emploi et modules externes spécifiques à AEM Mobile.
+* Modules externes pris en charge prêts à l’emploi et modules externes spécifiques à Adobe Experience Manager (AEM) Mobile .
 
 >[!NOTE]
 >
@@ -33,11 +33,11 @@ La création d’une application AEM Mobile On-demand Services diffère de la cr
 
 * Les modèles qui utilisent la fonctionnalité de module externe doivent être écrits de telle sorte qu’ils puissent toujours être créés dans le navigateur, sans que le pont de module externe soit présent.
 
-   * Par exemple, veillez à attendre que la variable *deviceready* avant de tenter d’accéder à l’API d’un module externe.
+   * Par exemple, veillez à attendre que la variable *deviceready* avant d’accéder à l’API d’un module externe.
 
 ## Conseils à l’intention des développeurs AEM {#guidelines-for-aem-developers}
 
-Les instructions suivantes aident les développeurs AEM expérimentés pour les sites qui souhaitent créer des modèles et des composants d’applications mobiles :
+Les instructions suivantes aident les développeurs AEM compétents pour les sites qui souhaitent créer des modèles et des composants d’applications mobiles :
 
 **Structuration AEM modèles de sites pour encourager la réutilisation et l’extensibilité**
 
@@ -48,7 +48,7 @@ Les instructions suivantes aident les développeurs AEM expérimentés pour les 
 
 * Préférez Sightly/HTL par rapport à JSP comme langage de modèle.
 
-   * Cette utilisation encourage une séparation du code avec les balises, offre une protection XSS intégrée et une syntaxe plus familière.
+   * L’utilisation de cette méthode encourage la séparation du code du balisage, offre une protection XSS intégrée et une syntaxe plus familière.
 
 **Optimisation des performances sur l’appareil**
 
@@ -60,25 +60,25 @@ Les instructions suivantes aident les développeurs AEM expérimentés pour les 
 >
 >Vous pouvez en savoir plus sur les scripts externes de blocage de rendu [here](https://developers.google.com/speed/docs/insights/BlockingJS).
 
-**Préférez les bibliothèques JS et CSS côté client spécifiques à l’application par rapport aux bibliothèques spécifiques au web.**
+**Préférer les bibliothèques JS et CSS côté client spécifiques à l’application par rapport aux bibliothèques spécifiques au web**
 
 * Pour éviter les frais généraux liés à des bibliothèques telles que jQuery Mobile afin de gérer un large éventail de périphériques et de navigateurs
-* Lorsqu’un modèle s’exécute dans l’affichage Web d’une application, vous contrôlez les plateformes et versions que l’application va prendre en charge, et vous savez que la prise en charge de JavaScript sera présente. Par exemple, préférez Ionic (peut-être uniquement CSS) à jQuery Mobile et l’interface utilisateur d’Onsen plutôt qu’à Bootstrap.
+* Lorsqu’un modèle s’exécute dans l’affichage Web d’une application, vous avez le contrôle des plateformes et versions que l’application va prendre en charge et vous savez que la prise en charge de JavaScript sera présente. Par exemple, préférez Ionic (seulement le CSS) à jQuery Mobile et l’interface utilisateur d’Onsen à Bootstrap.
 
 >[!NOTE]
 >
 >Pour en savoir plus sur jQuery mobile, cliquez sur [here](https://jquerymobile.com/browser-support/1.4/).
 
-**Préférez les microbibliothèques par rapport à la pile complète**
+**Préférez les microbibliothèques à la pile complète**
 
-* Chaque bibliothèque dont dépendent vos articles ralentit le temps nécessaire pour que votre contenu soit intégré à la vitrine de l’appareil. Ce ralentissement est aggravé lorsqu’une nouvelle vue web est utilisée pour effectuer le rendu de chaque article. Chaque bibliothèque doit donc être réinitialisée de zéro.
-* Si vos articles ne sont pas créés comme SPA (applications d’une seule page), vous n’avez probablement pas besoin d’inclure une bibliothèque de pile complète comme Angular.
-* Préférez des bibliothèques polyvalentes plus petites pour ajouter l’interactivité requise par votre page, telle que [Fastclick](https://github.com/ftlabs/fastclick) ou [Velocity.js](https://velocityjs.org)
+* Chaque bibliothèque dont dépendent vos articles ralentit le temps nécessaire pour que votre contenu s’affiche sur la vitre de l’appareil. Ce ralentissement est aggravé lorsqu’une nouvelle vue web est utilisée pour effectuer le rendu de chaque article. Chaque bibliothèque doit donc être réinitialisée de zéro.
+* Si vos articles ne sont pas créés en tant que SPA (applications d’une seule page), il est probable que vous n’ayez pas besoin d’inclure une bibliothèque de pile complète comme Angular.
+* Préférez des bibliothèques plus petites et à usage unique pour ajouter l’interactivité requise par votre page, telle que [Fastclick](https://github.com/ftlabs/fastclick) ou [Velocity.js](https://velocityjs.org)
 
-**Réduction de la taille de la charge utile d’article**
+**Minimisation de la taille de la payload d’article**
 
 * Utilisez les plus petites ressources possibles pouvant couvrir efficacement la plus grande fenêtre d’affichage que vous prenez en charge, à une résolution raisonnable.
-* Utilisez un outil comme *ImageOptim* sur vos images pour supprimer les métadonnées en trop
+* Utilisez un outil comme *ImageOptim* sur vos images afin de supprimer les métadonnées superflues
 
 ## Prise en main {#getting-ahead}
 

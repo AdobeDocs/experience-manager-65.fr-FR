@@ -1,16 +1,14 @@
 ---
 title: Administration des applications mobiles
 description: Cette page sert de page d’entrée pour commencer à créer, développer et administrer des applications mobiles.
-uuid: 0cc9e6d6-c6ea-48f9-9b7f-9ead0f2d199e
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
-discoiquuid: f73bfa98-df2d-4b0f-93a2-1337f783e4bc
 exl-id: ffd2d029-b81a-4768-8e58-66aa5cf3772d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '134'
 ht-degree: 2%
 
 ---
@@ -21,7 +19,7 @@ ht-degree: 2%
 >
 >Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-Adobe Experience Manager (AEM) Mobile fait partie de la plateforme numérique multi-canal Adobe Experience Manager qui tire également parti d’AEM Assets, Sites, Screens, Workflow, User Manager, Commerce et Forms. AEM Mobile offre une flexibilité de déploiement remarquable, ce qui permet aux entreprises d’utiliser diverses sources de contenu.
+Adobe Experience Manager (AEM) Mobile fait partie de la plateforme numérique multicanal d’AEM qui utilise également AEM Assets, Sites, Screens, Workflow, User Manager, Commerce et Forms. AEM Mobile offre une flexibilité de déploiement remarquable, ce qui permet aux entreprises d’utiliser diverses sources de contenu.
 
 AEM Mobile propose plusieurs méthodes pour créer des applications. Les différentes méthodes que vous pouvez utiliser pour créer des applications sont les suivantes :
 
@@ -30,4 +28,4 @@ AEM Mobile propose plusieurs méthodes pour créer des applications. Les différ
 
 >[!NOTE]
 >
->Si vous utilisez Adobe Experience Manager pour la première fois, vous pouvez effectuer les opérations suivantes : [Prise en main d’AEM](/help/sites-deploying/deploy.md).
+>Si vous utilisez Adobe Experience Manager pour la première fois, vous pouvez le parcourir [Prise en main d’AEM](/help/sites-deploying/deploy.md).
