@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 923ec028679031c9ef9ea6ae2cf827e7a4cd00d8
 workflow-type: tm+mt
-source-wordcount: '5529'
+source-wordcount: '5517'
 ht-degree: 79%
 
 ---
@@ -243,7 +243,7 @@ Définissez des variables d’environnement pour Java Development Kit 32 bits et
 >[!NOTE]
 >
 >* Toutes les variables d’environnement et les chemins respectifs sont sensibles à la casse.
->* JAVA_HOME, JAVA_HOME_32 et Acrobat_PATH (Windows uniquement) sont des variables d’environnement obligatoires.
+>* JAVA_HOME et Acrobat_PATH (Windows uniquement) sont des variables d’environnement obligatoires.
 >* La variable d’environnement OpenOffice_PATH est définie sur le dossier d’installation et non pas sur le chemin d’accès au fichier exécutable.
 >* Ne définissez pas de variables d’environnement pour des applications Microsoft® Office telles que Word, PowerPoint, Excel et Project, ni pour des applications AutoCAD. Si ces applications sont installées sur le serveur, le service Generate PDF lance automatiquement ces applications.
 >* Sur les plateformes UNIX, installez OpenOffice en tant que /root. Si OpenOffice n’est pas installé en tant que root, le service de PDF Generator ne parvient pas à convertir les documents OpenOffice en documents PDF. Si vous devez installer et exécuter OpenOffice en tant qu’utilisateur non root, indiquez les droits sudo pour l’utilisateur non-root.
@@ -686,8 +686,6 @@ Problèmes de conversion HTML vers PDF
   ```
   ldd phantomjs | grep not
   ```
-
-* Assurez-vous que la variable d’environnement JAVA_HOME_32 pointe vers l’emplacement correct.
 
 **Linux® et Solaris™ (itinéraire de conversion WebKit)**
 
