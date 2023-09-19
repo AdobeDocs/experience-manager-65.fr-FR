@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 923ec028679031c9ef9ea6ae2cf827e7a4cd00d8
+source-git-commit: f41962faa0567ed99c1e2ab189e81fb978781af3
 workflow-type: tm+mt
-source-wordcount: '5517'
+source-wordcount: '5515'
 ht-degree: 79%
 
 ---
@@ -481,7 +481,7 @@ Sous Microsoft® Windows, le service PDF Generator utilise Adobe Acrobat pour c
 
 ### (Windows uniquement) Configurer l’itinéraire principal pour la conversion de fichiers HTML en PDF {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
-Le service PDF Generator fournit plusieurs itinéraires pour convertir des fichiers HTML en documents PDF : WebKit, Acrobat WebCapture (Windows uniquement) et PhantomJS. Adobe recommande d’utiliser l’itinéraire PhantomJS, car il peut gérer le contenu dynamique, ne dépend pas des bibliothèques 32 bits, JDK 32 bits et ne nécessite aucune police supplémentaire. En outre, l’itinéraire PhantomJS ne nécessite pas l’accès sudo ou root pour exécuter la conversion.
+Le service PDF Generator fournit plusieurs itinéraires pour convertir des fichiers HTML en documents PDF : WebKit, Acrobat WebCapture (Windows uniquement) et PhantomJS. Adobe recommande d’utiliser l’itinéraire PhantomJS, car il permet de gérer du contenu dynamique et ne dépend pas des bibliothèques 32 bits ou ne nécessite aucune police supplémentaire. En outre, l’itinéraire PhantomJS ne nécessite pas l’accès sudo ou root pour exécuter la conversion.
 
 Webkit constitue l’itinéraire principal par défaut pour la conversion HTML vers PDF. Pour modifier l’itinéraire de conversion :
 
