@@ -1,19 +1,15 @@
 ---
 title: Écran d’accueil
-seo-title: Home screen
 description: Description des composants de l’écran d’accueil de l’application AEM Forms
-seo-description: Description of the components of the AEM Forms app Home screen
-uuid: abc95e58-a685-42a9-82ab-4990155945d3
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: ba79479b-4159-4a39-95eb-2285e7ece9d4
 docset: aem65
 exl-id: 6c6fb516-1b11-4da4-b638-4388a070e397
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '331'
-ht-degree: 100%
+source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+workflow-type: tm+mt
+source-wordcount: '339'
+ht-degree: 28%
 
 ---
 
@@ -23,9 +19,9 @@ Lorsque vous vous connectez à l’application AEM Forms, vous êtes redirigé v
 
 ## Écran d’accueil par défaut {#default-home-screen}
 
-Par défaut, l’écran d’accueil affiche tous les formulaires, y compris les points de départ et les tâches (si le serveur connecté est activé pour le flux de travail d’AEM Forms), avec les vignettes associées. Vous pouvez spécifier les vignettes dans le serveur AEM Forms.
+Par défaut, l’écran d’accueil affiche tous les formulaires, y compris les points de départ et les tâches (si le serveur connecté est activé pour le workflow d’AEM Forms), avec les vignettes associées. Vous pouvez spécifier les miniatures dans le serveur AEM Forms.
 
-La figure suivante est annotée avec les légendes des principaux composants de l’écran d’accueil.
+La figure suivante est annotée avec des légendes aux composants essentiels sur l’écran d’accueil par défaut.
 
 ![Écran d’accueil de l’application Forms](assets/home-screen-1.png)
 
@@ -33,10 +29,10 @@ La figure suivante est annotée avec les légendes des principaux composants de 
 
 ![home-screen-1-1](assets/home-screen-1-1.png)-->
 
-1. **Bouton de menu :** appuyez sur le bouton **Menu** pour accéder aux tâches, aux formulaires, à la boîte d’envoi et aux paramètres. Si votre application AEM Forms est connectée à un serveur AEM Forms JEE, vous pouvez voir l’option Tâches. L’option de tâches stocke également les brouillons créés à partir des tâches dans un processus. Pour les serveurs AEM Forms OSGi, l’option Tâches est masquée. La boîte d’envoi stocke les formulaires enregistrés et les brouillons avant sa synchronisation avec le serveur. Tous les formulaires et les brouillons enregistrés dans la boîte d’envoi sont chargés sur le serveur AEM Forms lorsque l’application est [synchronisée avec le serveur](../../forms/using/sync-app.md). Pour plus d’informations sur les paramètres, voir [Mise à jour des paramètres généraux](../../forms/using/update-general-settings.md).
-1. **Tâche ou formulaire** : Appuyez sur la tâche ou le formulaire répertorier afin de pouvoir travailler dessus.
-1. **Points de suspension horizontaux** : Indique si les actions sont disponibles pour le formulaire. Tapez sur les points de suspension pour afficher les actions et la description fournie par l’auteur. Les options **Supprimer le brouillon** et **Terminé** sont visibles lorsque vous appuyez sur les points de suspension.
-1. **Icône Synchronisation** : appuyez sur l’icône d’actualisation pour synchroniser votre application avec le serveur AEM Forms.
+1. **Bouton de menu :** appuyez sur le bouton **Menu** pour accéder aux tâches, aux formulaires, à la boîte d’envoi et aux paramètres. Si votre application AEM Forms est connectée à un serveur AEM Forms JEE, l’option Tâches s’affiche. L’option Tâches stocke également les brouillons créés à partir de tâches dans un processus. Pour les serveurs OSGi AEM Forms, l’option Tâches est masquée. La boîte d’envoi stocke les formulaires enregistrés et les brouillons avant qu’ils ne se synchronisent avec le serveur. Tous les formulaires enregistrés et les brouillons de la boîte d’envoi sont chargés sur le serveur AEM Forms lorsque l’application est [synchronisé avec le serveur](../../forms/using/sync-app.md). Pour plus d’informations sur les paramètres, voir [Mise à jour des paramètres généraux](../../forms/using/update-general-settings.md).
+1. **Tâche ou formulaire**: appuyez sur la tâche ou le formulaire répertorié à utiliser.
+1. **Points de suspension horizontaux**: indique que les actions sont disponibles pour le formulaire. Appuyez sur les points de suspension pour afficher les actions et la description fournies par l’auteur. Les options **Supprimer le brouillon** et **Terminé** sont visibles lorsque vous appuyez sur les points de suspension.
+1. **Icône Actualiser**: appuyez sur l’icône d’actualisation afin de synchroniser votre application avec le serveur AEM Forms.
 
 ### Personnalisation de l’écran d’accueil {#customizing-the-home-screen}
 
@@ -44,6 +40,6 @@ La figure suivante est annotée avec les légendes des principaux composants de 
 
 Vous pouvez modifier l’écran d’accueil par défaut de l’application, soit à partir de l’onglet **[Paramètres généraux](../../forms/using/update-general-settings.md)** de l’application, soit à partir de l’onglet **Préférences** dans Workspace HTML.
 
-Toute modification apportée au paramètre d’écran d’accueil de l’application s’applique à l’écran d’accueil de l’utilisateur connecté ou travaillant sur le périphérique mobile en cours.
+La modification apportée au paramètre de l’écran d’accueil de l’application affecte l’écran d’accueil de l’utilisateur actuellement connecté ou de l’utilisateur sur le périphérique mobile actif.
 
-Toutefois, la modification apportée à Workspace HTML s’applique à l’ensemble des utilisateurs de l’application AEM Forms connectés au serveur AEM Forms.
+Toutefois, la modification apportée à HTML Workspace s’applique à tous les utilisateurs de l’application AEM Forms connectés au serveur AEM Forms.
