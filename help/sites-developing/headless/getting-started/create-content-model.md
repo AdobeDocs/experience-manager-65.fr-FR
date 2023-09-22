@@ -1,34 +1,34 @@
 ---
 title: Guide de démarrage rapide sur la création de modèles de fragments de contenu découplés
-description: Définissez la structure du contenu que vous allez créer et diffuser à l’aide des fonctionnalités découplées AEM à l’aide des modèles de fragment de contenu.
+description: Définissez la structure du contenu que vous créez et diffusez à l’aide des fonctionnalités Adobe Experience Manager (AEM) sans interface utilisateur graphique à l’aide des modèles de fragment de contenu.
 exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
-source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
-workflow-type: ht
-source-wordcount: '492'
-ht-degree: 100%
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 53%
 
 ---
 
 # Guide de démarrage rapide sur la création de modèles de fragments de contenu découplés {#creating-content-fragment-models}
 
-Définissez la structure du contenu que vous allez créer et diffuser à l’aide des fonctionnalités découplées AEM à l’aide des modèles de fragment de contenu.
+Définissez la structure du contenu que vous créez et diffusez à l’aide des fonctionnalités Adobe Experience Manager (AEM) sans interface utilisateur graphique à l’aide des modèles de fragment de contenu.
 
 ## Que sont les modèles de fragments de contenu ? {#what-are-content-fragment-models}
 
 [Maintenant que vous avez créé une configuration,](create-configuration.md) vous pouvez l’utiliser pour créer des modèles de fragments de contenu.
 
-Les modèles de fragments de contenu définissent la structure des données et du contenu que vous allez créer et gérer dans AEM. Il s’agit en quelque sorte du squelette de votre contenu. Lorsque vous choisissez de créer du contenu, vos auteurs choisissent parmi les modèles de fragment de contenu que vous définissez, ce qui les guide dans la création de contenu.
+Les modèles de fragment de contenu définissent la structure des données et du contenu que vous créez et gérez dans AEM. Il s’agit en quelque sorte du squelette de votre contenu. Lorsque vous choisissez de créer du contenu, vos auteurs choisissent parmi les modèles de fragment de contenu que vous définissez, ce qui les guide dans la création de contenu.
 
 ## Création d’un modèle de fragment de contenu {#how-to-create-a-content-fragment-model}
 
-Un architecte de l’information ne réaliserait ces tâches qu’occasionnellement, lorsque de nouveaux modèles sont nécessaires. Pour les besoins de ce guide de prise en main, nous n’avons besoin de créer qu’un modèle.
+Un architecte de l’information ne réaliserait ces tâches qu’occasionnellement, lorsque de nouveaux modèles sont nécessaires. Pour les besoins de ce guide de prise en main, vous ne créez qu’un seul modèle.
 
 1. Connectez-vous à AEM et, dans le menu principal, sélectionnez **Outils > Ressources > Modèles de fragments de contenu**.
-1. Appuyez ou cliquez sur le dossier créé lors de la configuration.
+1. Appuyez ou cliquez sur le dossier créé lors de la création de votre configuration.
 
    ![Le dossier de modèles](assets/models-folder.png)
 1. Appuyez ou cliquez sur **Créer**.
-1. Définissez le **Titre du modèle**, les **Balises** et la **Description**. Vous pouvez également sélectionner/désélectionner l’option **Activer le modèle** pour contrôler si le modèle est immédiatement activé lors de sa création.
+1. Fournissez une **Titre du modèle**, **Balises**, et **Description**. Vous pouvez également sélectionner/désélectionner l’option **Activer le modèle** pour contrôler si le modèle est immédiatement activé lors de sa création.
 
    ![Création d’un modèle](assets/models-create.png)
 1. Dans la fenêtre de confirmation, appuyez ou cliquez sur **Ouvrir** pour configurer votre modèle.
@@ -38,17 +38,17 @@ Un architecte de l’information ne réaliserait ces tâches qu’occasionnellem
 
    ![Glisser-déposer des champs](assets/models-drag-and-drop.png)
 
-1. Une fois que vous avez placé un champ, vous devez configurer ses propriétés. L’éditeur bascule automatiquement sur l’onglet **Propriétés** pour le champ ajouté où vous pouvez fournir les champs obligatoires.
+1. Une fois que vous avez placé un champ, vous devez configurer ses propriétés. L’éditeur passe automatiquement à la fonction **Propriétés** pour le champ ajouté où vous pouvez renseigner les champs obligatoires.
 
    ![Configuration des propriétés](assets/models-configure-properties.png)
 1. Lorsque vous avez fini de créer votre modèle, appuyez ou cliquez sur **Enregistrer**.
 
-1. Le mode du modèle que vous venez de créer varie selon que vous avez sélectionné ou non **Activer le modèle** lors de la création du modèle :
-   * sélectionné - le nouveau modèle sera déjà **Activé**.
-   * non sélectionné - le nouveau modèle sera créé en mode **Brouillon**.
+1. Le mode du modèle que vous venez de créer varie selon que vous avez sélectionné ou non **Activer le modèle** lors de la création du modèle :
+   * sélectionné : le nouveau modèle est déjà **Activé**
+   * non sélectionné : le nouveau modèle est créé dans **Version préliminaire** mode
 
-1. S’il n’est pas déjà activé, le modèle doit être **Activé** pour pouvoir l’utiliser.
-   1. Sélectionnez le modèle que vous venez de créer, puis appuyez ou cliquez sur **Activer**.
+1. Si elle n’est pas déjà activée, le modèle doit être **Activé** pour l’utiliser.
+   1. Sélectionnez le modèle créé, puis appuyez ou cliquez sur **Activer**.
 
       ![Activation du modèle](assets/models-enable.png)
    1. Confirmez l’activation du modèle en appuyant ou en cliquant sur **Activer** dans la boîte de dialogue de confirmation.
@@ -58,14 +58,14 @@ Un architecte de l’information ne réaliserait ces tâches qu’occasionnellem
 
    ![Modèle activé](assets/models-enabled.png)
 
-L’**Éditeur de modèles de fragment de contenu** prend en charge de nombreux types de données différents, tels que des champs de texte simples, des références à des ressources, des références à d’autres modèles, ainsi que des données JSON.
+La variable **Éditeur de modèle de fragment de contenu** prend en charge de nombreux types de données différents, tels que des champs de texte simples, des références de ressources, des références à d’autres modèles et des données JSON.
 
 Vous pouvez créer plusieurs modèles. Les modèles peuvent faire référence à d’autres fragments de contenu. Utilisez [configurations](create-configuration.md) pour organiser vos modèles.
 
 ## Étapes suivantes {#next-steps}
 
-Maintenant que vous avez défini les structures de vos fragments de contenu en créant des modèles, vous pouvez passer à la troisième partie du guide de prise en main et [créer des dossiers dans lesquels vous stockerez les fragments.](create-assets-folder.md)
+Maintenant que vous avez défini les structures de vos fragments de contenu en créant des modèles, vous pouvez passer à la troisième partie du guide de prise en main et [créez des dossiers dans lesquels vous stockez les fragments.](create-assets-folder.md)
 
 >[!TIP]
 >
->Pour plus d’informations sur les modèles de fragments de contenu, voir la [documentation sur les modèles de fragments de contenu](/help/assets/content-fragments/content-fragments-models.md).
+>Pour plus d’informations sur les modèles de fragment de contenu, voir [Documentation sur les modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)

@@ -1,6 +1,6 @@
 ---
 title: Requêtes et indexation Oak
-description: Découvrez comment configurer des index dans AEM.
+description: Découvrez comment configurer des index dans Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,10 +8,10 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: 2adc33b5f3ecb2a88f7ed2c5ac5cc31f98506989
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
 source-wordcount: '3033'
-ht-degree: 31%
+ht-degree: 24%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 31%
 
 ## Présentation {#introduction}
 
-Contrairement à Jackrabbit 2, Oak n’indexe pas le contenu par défaut. Les index personnalisés doivent être créés si nécessaire, tout comme avec les bases de données relationnelles traditionnelles. S’il n’existe aucun index pour une requête spécifique, il est possible que de nombreux noeuds soient parcourus. La requête peut encore fonctionner, mais elle est probablement assez lente.
+Contrairement à Jackrabbit 2, Oak n’indexe pas le contenu par défaut. Les index personnalisés doivent être créés si nécessaire, tout comme avec les bases de données relationnelles traditionnelles. S’il n’existe aucun index pour une requête spécifique, de nombreux noeuds sont éventuellement parcourus. La requête peut toujours fonctionner, mais elle est probablement lente.
 
 Si Oak rencontre une requête sans index, un message de journal de niveau AVERTISSEMENT est imprimé :
 
@@ -64,7 +64,7 @@ Ensuite, chaque index est consulté pour estimer le coût de la requête. Une fo
 
 >[!NOTE]
 >
->Pour un référentiel de grande taille, créer un index est une opération qui demande beaucoup de temps. C’est le cas aussi bien pour la création initiale d’un index que pour la réindexation (reconstruction d’un index après modification de la définition). Voir aussi [Dépannage des index Oak](/help/sites-deploying/troubleshooting-oak-indexes.md) et [Prévention d’une réindexation lente](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
+>Pour un référentiel volumineux, la création d’un index est une opération qui prend du temps. C’est le cas aussi bien pour la création initiale d’un index que pour la réindexation (reconstruction d’un index après modification de la définition). Voir aussi [Dépannage des index Oak](/help/sites-deploying/troubleshooting-oak-indexes.md) et [Prévention d’une réindexation lente](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
 
 Si la réindexation est nécessaire dans les référentiels volumineux, en particulier lorsque vous utilisez MongoDB et pour les index de texte intégral, envisagez la pré-extraction de texte et l’utilisation de oak-run pour créer l’index initial et réindexer.
 
@@ -92,11 +92,11 @@ L’index de propriété comporte les options de configuration suivantes :
 
 * La variable **type** spécifie le type d’index. Dans ce cas, il doit être défini sur **property**
 
-* La variable **propertyNames** indique la liste des propriétés qui seront stockées dans l’index. En cas d’absence, le nom du noeud est utilisé comme valeur de référence de nom de propriété. Dans cet exemple, la variable **jcr:uuid** dont la tâche est d’exposer l’identifiant unique (UUID) de son noeud est ajouté à l’index.
+* La variable **propertyNames** indique la liste des propriétés stockées dans l’index. En cas d’absence, le nom du noeud est utilisé comme valeur de référence de nom de propriété. Dans cet exemple, la variable **jcr:uuid** dont la tâche est d’exposer l’identifiant unique (UUID) de son noeud est ajouté à l’index.
 
 * L’indicateur **unique**, qui, défini sur **true**, ajoute une limite d’unicité à l’index de propriété.
 
-* La variable **déclarationNodeTypes** permet de spécifier un certain type de noeud auquel l’index s’appliquera uniquement.
+* La variable **déclarationNodeTypes** permet de spécifier un certain type de noeud auquel l’index s’applique uniquement.
 * La variable **reindex** qui, s’il est défini sur **true**, déclenche une réindexation complète du contenu.
 
 ### Index ordonné {#the-ordered-index}
@@ -109,9 +109,9 @@ L’indexeur de texte intégral basé sur Apache Lucene est disponible dans AEM
 
 Si un index de texte intégral est configuré, toutes les requêtes ayant une condition de texte intégral utilisent l’index de texte intégral, qu’il existe d’autres conditions indexées ou non, qu’il y ait une restriction de chemin.
 
-Si aucun index de texte intégral n’est configuré, les requêtes avec des conditions de texte intégral ne fonctionneront pas comme prévu.
+Si aucun index de texte intégral n’est configuré, les requêtes avec des conditions de texte intégral ne fonctionnent pas comme prévu.
 
-Comme l’index est mis à jour via un thread d’arrière-plan asynchrone, certaines recherches de texte intégral ne sont pas disponibles pendant une petite période de temps jusqu’à ce que les processus d’arrière-plan soient terminés.
+Comme l’index est mis à jour par le biais d’un thread d’arrière-plan asynchrone, certaines recherches de texte intégral ne sont pas disponibles pendant une petite période de temps jusqu’à ce que les processus d’arrière-plan soient terminés.
 
 Vous pouvez configurer un index de texte intégral Lucene en suivant la procédure ci-dessous :
 
@@ -134,7 +134,7 @@ L’index Lucene présente les options de configuration suivantes :
 
 ### Présentation de la recherche de texte intégral {#understanding-fulltext-search}
 
-La documentation de cette section s’applique à Apache Lucene, Elasticsearch, ainsi qu’aux index en texte intégral, par exemple PostgreSQL, SQLite, MySQL. L’exemple suivant concerne AEM / Oak / Lucene.
+La documentation de cette section s’applique aux index Apache Lucene, Elasticsearch et texte intégral de PostgreSQL, SQLite et MySQL, par exemple. L’exemple suivant concerne AEM / Oak / Lucene.
 
 <b>Données à indexer</b>
 
@@ -151,9 +151,9 @@ Le point de départ est les données qui doivent être indexées. Prenez les doc
 
 Le mécanisme d’indexation divise le texte intégral en mots appelés &quot;jetons&quot; et crée un index appelé &quot;index inversé&quot;. Cet index contient la liste des documents où il apparaît pour chaque mot.
 
-Très courts, les mots courants (également appelés &quot;stopwords&quot;) ne sont pas indexés. Tous les jetons sont convertis en minuscules et l’ordre est appliqué.
+Les mots courts et courants (également appelés &quot;stopwords&quot;) ne sont pas indexés. Tous les jetons sont convertis en minuscules et l’ordre est appliqué.
 
-Remarquez les caractères spéciaux tels que *&quot;-&quot;* ne sont pas indexés.
+Les caractères spéciaux tels que *&quot;-&quot;* ne sont pas indexés.
 
 | <b>Jeton</b> | <b>ID de document</b> |
 | --- | --- |
@@ -161,12 +161,12 @@ Remarquez les caractères spéciaux tels que *&quot;-&quot;* ne sont pas indexé
 | marque | ..., 100,... |
 | cube | ..., 200, 300,... |
 | dimension | 300 |
-| finlandais | ..., 100,... |
+| terminer | ..., 100,... |
 | invent | 200 |
 | objet | ..., 300,... |
-| rubik | .., 100, 200,... |
+| rubik | ..., 100, 200,... |
 
-La liste des documents est triée. Cela deviendra pratique lors de l’interrogation.
+La liste des documents est triée. C&#39;est pratique pour interroger.
 
 <b>Recherche en cours</b>
 
@@ -182,7 +182,7 @@ Les mots sont segmentés en unités lexicales et filtrés de la même manière q
 +:fulltext:rubik +:fulltext:cube
 ```
 
-L&#39;index consultera alors la liste des documents pour ces mots. S&#39;il y a beaucoup de documents, les listes peuvent être très volumineuses. Par exemple, supposons qu’ils contiennent les éléments suivants :
+L&#39;index consulte la liste des documents pour ces mots. S’il existe de nombreux documents, la liste peut être volumineuse. Par exemple, supposons qu’ils contiennent les éléments suivants :
 
 
 | <b>Jeton</b> | <b>ID de document</b> |
@@ -191,7 +191,7 @@ L&#39;index consultera alors la liste des documents pour ces mots. S&#39;il y a 
 | cube | 30, 200, 300, 2000 |
 
 
-Lucene va basculer entre les deux listes (ou tourbillon) `n` lors de la recherche de `n` words) :
+Lucene va et vient entre les deux listes (ou palpitant) `n` lors de la recherche de `n` words) :
 
 * Lisez dans le &quot;rubik&quot; reçoit la première entrée : il en trouve 10
 * La lecture dans le &quot;cube&quot; reçoit la première entrée `>` = 10. 10 est introuvable, le suivant est 30.
@@ -201,7 +201,7 @@ Lucene va basculer entre les deux listes (ou tourbillon) `n` lors de la recherch
 * Lisez dans le &quot;rubik&quot; obtient la prochaine entrée : 1000.
 * La lecture dans le &quot;cube&quot; reçoit la première entrée `>` = 1000 : 2000.
 * La lecture dans le &quot;rubik&quot; reçoit la première entrée `>` = 2000 : fin de la liste.
-* Enfin, nous pouvons arrêter la recherche.
+* Enfin, vous pouvez arrêter la recherche.
 
 Le seul document qui contient les deux termes est 200, comme dans l’exemple ci-dessous :
 
@@ -263,7 +263,7 @@ Depuis la version 1.2.0, Oak prend en charge les analyseurs Lucene.
 
 Les analyseurs sont utilisés lorsqu’un document est indexé et au moment de la requête. Un analyseur examine le texte des champs et génère un flux de jeton. Les analyseurs Lucene se composent d’une série de classes de jetons et de filtres.
 
-Les analyseurs peuvent être configurées par l’intermédiaire du nœud `analyzers` (de type `nt:unstructured`), à l’intérieur de la définition `oak:index`.
+Les analyseurs peuvent être configurés au moyen de la fonction `analyzers` noeud (de type `nt:unstructured`) à l’intérieur du `oak:index` définition.
 
 L’analyseur par défaut pour un index est configuré dans l’enfant `default`du nœud des analyseurs.
 
@@ -297,14 +297,14 @@ Si vous souhaitez utiliser un analyseur prêt à l’emploi, vous pouvez le conf
 
    If `luceneMatchVersion` n’est pas fourni, Oak utilise la version de Lucene avec laquelle il est fourni.
 
-1. Si vous souhaitez ajouter un fichier stopwords aux configurations de l’analyseur, vous pouvez créer un noeud sous `default` l’une avec les propriétés suivantes :
+1. Si vous souhaitez ajouter un fichier stopwords aux configurations de l’analyseur, vous pouvez créer un noeud sous le noeud `default` l’une avec les propriétés suivantes :
 
    * **Nom :** `stopwords`
    * **Type :** `nt:file`
 
-#### Création d’analyseurs via la composition {#creating-analyzers-via-composition}
+#### Création d’analyseurs par composition {#creating-analyzers-via-composition}
 
-Les analyseurs peuvent également être classés en fonction de `Tokenizers`, `TokenFilters` et `CharFilters`. Vous pouvez effectuer cette opération en spécifiant un programme d’analyse et en créant des nœuds enfants de ces jetons et filtres facultatifs, qui seront appliqués dans l’ordre indiqué. Consultez également [https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
+Les analyseurs peuvent également être composés en fonction de `Tokenizers`, `TokenFilters`, et `CharFilters`. Pour ce faire, vous pouvez spécifier un analyseur et créer des noeuds enfants de ses jetons et filtres facultatifs qui sont appliqués dans l’ordre indiqué. Voir aussi [https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
 
 Prenez cette structure de nœud comme exemple :
 
@@ -350,11 +350,11 @@ Le nom des filtres, charFilters et jetons est formé en supprimant les suffixes 
 
 * `org.apache.lucene.analysis.charfilter.MappingCharFilterFactory` devient `Mapping` ;
 
-* `org.apache.lucene.analysis.core.StopFilterFactory` devient `Stop`.
+* `org.apache.lucene.analysis.core.StopFilterFactory` devient `Stop` ;
 
-Tout paramètre de configuration requis pour la fabrique est spécifié en tant que propriété du nœud en question.
+Tout paramètre de configuration requis pour la fabrique est spécifié en tant que propriété du noeud en question.
 
-Dans des cas tels que le chargement de mots vides quand le contenu des fichiers externes doit être chargé, le contenu peut être diffusé en créant un nœud enfant `nt:file` pour le fichier en question.
+Pour les cas tels que le chargement des mots d’arrêt où le contenu des fichiers externes doit être chargé, le contenu peut être fourni en créant un noeud enfant de `nt:file` type du fichier en question.
 
 ### L’index Solr {#the-solr-index}
 
@@ -368,7 +368,7 @@ Il peut être configuré pour fonctionner en tant que serveur distant avec l’i
 
 AEM peut également être configuré pour travailler avec une instance de serveur distant Solr :
 
-1. Téléchargez et extrayez la dernière version de Solr. Pour plus d’informations sur la procédure à suivre, voir [Documentation d’installation Apache Solr](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
+1. Téléchargez et extrayez la dernière version de Solr. Pour plus d’informations sur la procédure à suivre, voir [Documentation d’installation Apache Solr](https://solr.apache.org/guide/6_6/installing-solr.html).
 1. Maintenant, créez deux éclats Solr. Pour ce faire, vous devez créer des dossiers pour chaque partition dans le dossier dans lequel Solr a été décompressé :
 
    * Pour la première partition, créez le dossier :
@@ -396,7 +396,7 @@ AEM peut également être configuré pour travailler avec une instance de serveu
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur la configuration de Solr et ZooKeeper, consultez la [documentation sur la configuration de Solr](https://wiki.apache.org/solr/ConfiguringSolr) et le [Guide de prise en main pour ZooKeeper](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html).
+   >Pour plus d’informations sur la configuration de Solr et ZooKeeper, consultez la [documentation sur la configuration de Solr](https://cwiki.apache.org/confluence/display/solr/ConfiguringSolr) et le [Guide de prise en main pour ZooKeeper](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html).
 
 1. Démarrez la première partition avec la prise en charge de ZooKeeper en accédant à `aemsolr1\node1` et en exécutant la commande suivante :
 
@@ -431,7 +431,7 @@ AEM peut également être configuré pour travailler avec une instance de serveu
 
 Vous trouverez ci-dessous un exemple de configuration de base qui peut être utilisée avec les trois déploiements Solr décrits dans cet article. Il s’adapte aux index de propriété dédiés qui sont déjà présents dans AEM et ne doivent pas être utilisés avec d’autres applications.
 
-Pour l’utiliser correctement, vous devez placer le contenu de l’archive directement dans le répertoire d’accueil Solr. Dans le cas de déploiements avec plusieurs nœuds, il doit être placé directement sous le dossier racine de chaque nœud.
+Pour l’utiliser correctement, vous devez placer le contenu de l’archive directement dans le répertoire d’accueil Solr. S’il existe des déploiements à plusieurs noeuds, il doit se trouver directement sous le dossier racine de chaque noeud.
 
 Fichiers de configuration recommandés pour Solr
 
@@ -448,7 +448,7 @@ Vous pouvez désormais les atteindre en accédant à **Outils - Opérations - Ta
 
 Pour plus d’informations sur leur utilisation, voir [Documentation du tableau de bord des opérations](/help/sites-administering/operations-dashboard.md).
 
-#### Création d’index de propriété via OSGi {#creating-property-indexes-via-osgi}
+#### Création d’index de propriété au moyen d’OSGi {#creating-property-indexes-via-osgi}
 
 Le package ACS Commons expose également les configurations OSGi qui peuvent être utilisées pour créer des index de propriété.
 
@@ -464,7 +464,7 @@ Cette section présente un ensemble de recommandations sur ce qui doit être fai
 
 #### Préparation des informations de débogage pour l’analyse {#preparing-debugging-info-for-analysis}
 
-La façon la plus simple d’obtenir les informations requises pour la requête en cours d’exécution est via l’[outil Explain Query](/help/sites-administering/operations-dashboard.md#explain-query). Vous pouvez ainsi collecter les informations précises nécessaires au débogage d’une requête lente sans avoir à consulter les informations du niveau du journal. Cette méthode est préférable si vous connaissez la requête qui est en cours de débogage.
+La méthode la plus simple pour obtenir les informations requises pour la requête en cours d’exécution consiste à utiliser la variable [Explication de l’outil de requête](/help/sites-administering/operations-dashboard.md#explain-query). Vous pouvez ainsi collecter les informations précises nécessaires au débogage d’une requête lente sans avoir à consulter les informations du niveau du journal. Cette méthode est préférable si vous connaissez la requête qui est en cours de débogage.
 
 Si cela n’est pas possible pour une raison quelconque, vous pouvez rassembler les logs d’indexation dans un seul fichier et les utiliser pour résoudre votre problème particulier.
 
@@ -480,7 +480,7 @@ La variable **com.day.cq.search** ne s’applique que si vous utilisez l’utili
 
 >[!NOTE]
 >
->Il est important que les journaux ne soient définis sur DEBUG que pendant la durée d’exécution de la requête que vous souhaitez résoudre. Dans le cas contraire, un grand nombre d’événements sont générés dans les journaux au fil du temps. Pour cette raison, une fois que les journaux requis sont collectés, basculez vers la journalisation au niveau INFO pour les catégories mentionnées ci-dessus.
+>Il est important que les journaux ne soient définis sur DEBUG que pendant la durée d’exécution de la requête que vous souhaitez résoudre. Dans le cas contraire, de nombreux événements sont générés dans les journaux au fil du temps. Pour cette raison, une fois que les journaux requis sont collectés, basculez vers la journalisation au niveau INFO pour les catégories mentionnées ci-dessus.
 
 Vous pouvez activer la journalisation en procédant comme suit :
 
@@ -516,7 +516,7 @@ Il est parfois utile de fournir la sortie des MBeans liés à l’index pour le 
    * Statistiques de requête Oak
    * IndexStats
 
-1. Cliquez sur chacun des MBeans pour obtenir les statistiques de performances. Créez une capture d’écran ou notez-les au cas où vous devez les envoyer au service d’assistance.
+1. Cliquez sur chacun des MBeans pour obtenir des statistiques de performances. Créez une capture d’écran ou notez-les si un envoi d’assistance est nécessaire.
 
 Vous pouvez également obtenir la variante JSON de ces statistiques en accédant aux URL suivantes :
 
@@ -525,7 +525,7 @@ Vous pouvez également obtenir la variante JSON de ces statistiques en accédant
 * `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak/%2522LuceneIndex%2522.tidy.-1.json`
 * `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak/%2522LuceneIndex%2522.tidy.-1.json`
 
-Vous pouvez également fournir une sortie JMX consolidée via `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak.tidy.3.json`. Cela inclut tous les détails liés à MBean Oak au format JSON.
+Vous pouvez également fournir une sortie JMX consolidée au moyen de `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak.tidy.3.json`. Cela inclut tous les détails liés à MBean Oak au format JSON.
 
 #### Autres détails {#other-details}
 
