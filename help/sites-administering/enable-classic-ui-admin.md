@@ -1,27 +1,27 @@
 ---
 title: Admin Consoles
-description: Découvrez comment utiliser les Admin Consoles disponibles dans AEM.
+description: Découvrez comment utiliser les Admin Console disponibles dans Adobe Experience Manager.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 75%
+source-wordcount: '230'
+ht-degree: 51%
 
 ---
 
 
 # Admin Consoles{#admin-consoles}
 
-Par défaut, la possibilité de basculer vers l’IU classique via les consoles d’administration a été désactivée. Par conséquent, les icônes contextuelles qui s’affichaient lorsque vous survoliez certaines icônes de la console, permettant d’accéder à l’IU classique, ne s’affichent plus.
+Par défaut, la possibilité de passer à l’IU classique au moyen des consoles d’administration est désactivée. Par conséquent, les icônes contextuelles qui s’affichaient lorsque vous survoliez certaines icônes de la console, permettant d’accéder à l’IU classique, ne s’affichent plus.
 
 Chaque console qui possède une version d’IU classique dans `/libs/cq/core/content/nav` peut être réactivée individuellement afin que l’option **IU classique** s’affiche à nouveau lors du survol du curseur sur l’icône de la console.
 
-Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
+Dans cet exemple, vous réactivez l’IU classique pour la console Sites.
 
 1. À l’aide de CRXDE Lite, recherchez le noeud correspondant au Admin Console pour lequel vous souhaitez réactiver l’IU classique. Il se trouve sous :
 
@@ -31,7 +31,7 @@ Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
    [`https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
 
-1. Sélectionnez le nœud correspondant à la console pour laquelle vous souhaitez réactiver l’IU classique. Dans notre exemple, nous réactiverons l’interface utilisateur classique pour la console Sites.
+1. Sélectionnez le nœud correspondant à la console pour laquelle vous souhaitez réactiver l’IU classique. Dans cet exemple, vous réactivez l’IU classique pour la console Sites.
 
    `/libs/cq/core/content/nav/sites`
 

@@ -1,21 +1,17 @@
 ---
 title: AEM Forms sur les groupes et privilèges OSGi
-seo-title: AEM Forms on OSGi Groups and Privileges
-description: Affectez des utilisateurs aux groupes pour gérer AEM Forms sur OSGi.
-seo-description: Assign users to the groups to manage AEM Forms on OSGi
-uuid: f269a206-356d-4cee-b449-05c5da87121a
+description: Affecter des utilisateurs à des groupes pour gérer Adobe Experience Manager (AEM) Forms sur OSGi
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 topic-tags: Configuration
-discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 role: Admin
 exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
-source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 54%
+source-wordcount: '293'
+ht-degree: 33%
 
 ---
 
@@ -23,12 +19,12 @@ ht-degree: 54%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
-Vous pouvez [créer des groupes ;](/help/sites-administering/user-group-ac-admin.md#group-administration) et affecter des stratégies ; [utilisateurs](/help/sites-administering/user-group-ac-admin.md#user-administration) aux groupes d’AEM. Ces stratégies contrôlent les privilèges des utilisateurs qui font partie du groupe.
+Vous pouvez [créer des groupes ;](/help/sites-administering/user-group-ac-admin.md#group-administration) et affecter des stratégies ; [utilisateurs](/help/sites-administering/user-group-ac-admin.md#user-administration) aux groupes dans Adobe Experience Manager (AEM). Ces stratégies contrôlent les privilèges des utilisateurs qui font partie du groupe.
 
-Une fois que vous avez installé le [package du module complémentaire AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), les groupes mentionnés dans cet article, tels que forms-user et forms-power-user, sont automatiquement disponibles pour affectation. Le tableau suivant répertorie les tâches qu’un utilisateur peut effectuer pour AEM Forms sur OSGi en fonction des affectations de groupe :
+Après avoir installé la variable [Package de module complémentaire AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), les groupes mentionnés dans cet article, tels que forms-users et forms-power-user, sont automatiquement disponibles pour attribution. Le tableau suivant répertorie les tâches qu’un utilisateur peut effectuer pour AEM Forms sur OSGi en fonction des affectations de groupe :
 
 <table>
  <tbody>
@@ -52,7 +48,7 @@ Une fois que vous avez installé le [package du module complémentaire AEM Form
     <ul> 
      <li>Créer, prévisualiser, publier et envoyer des formulaires adaptatifs</li> 
      <li>Créer, prévisualiser et publier des communications interactives et des fragments de document</li> 
-     <li>Création de scripts pour les formulaires adaptatifs à l’aide de l’éditeur de code</li> 
+     <li>Création de scripts pour les formulaires adaptatifs à l’aide d’un éditeur de code</li> 
      <li>Chargement de ressources, y compris de scripts</li> 
      <li>Créer des thèmes</li> 
      <li>Importer des packages contenant des données XDP</li> 
@@ -99,7 +95,7 @@ Une fois que vous avez installé le [package du module complémentaire AEM Form
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>Utiliser les applications de boîte de réception AEM<br /> <strong>Remarque :</strong> vous devez disposer des affectations de groupe cm-agent-users et workflow-users pour accéder à l’interface utilisateur de l’agent de communication interactive dans la boîte de réception AEM.</li> 
+     <li>Utilisation des applications de boîte de réception AEM<br /> <strong>Remarque : </strong>Pour accéder à l’interface utilisateur de l’agent de communication interactive dans AEM boîte de réception, vous devez disposer de cm-agent-users et d’affectations de groupe workflow-users .</li> 
      <li>Gestion des instances de workflow</li> 
     </ul> </td> 
   </tr>

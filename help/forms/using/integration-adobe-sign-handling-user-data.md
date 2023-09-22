@@ -1,18 +1,15 @@
 ---
 title: Intégration à Adobe Sign | Gestion des données utilisateur
-seo-title: Integration with Adobe Sign | Handling user data
 description: Intégration à Adobe Sign | Gestion des données utilisateur
-uuid: cb3a455d-2e33-44c8-8f71-3a7ecd939cd8
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: e9e0d8fb-955e-4021-9e9a-9c95c6ffe88d
 feature: Acrobat Sign
 role: Admin
 exl-id: b43ed9b7-b1ef-4878-ae3b-643b558eed7b
-source-git-commit: 28d092a7713438c27213766f0bb702b699305b88
-workflow-type: ht
-source-wordcount: '307'
-ht-degree: 100%
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+workflow-type: tm+mt
+source-wordcount: '310'
+ht-degree: 58%
 
 ---
 
@@ -26,12 +23,12 @@ Pour plus d’informations sur l’intégration d’[!DNL AEM Forms] à [!DNL Ad
 
 ## Données utilisateur et stockage de données {#data}
 
-Le formulaire adaptatif activé par [!DNL Adobe Sign] inclut des informations sur les signataires et peut inclure d’autres données utilisateur collectées par le formulaire adaptatif. Le service [!DNL Adobe Sign] enregistre les données de l’utilisateur à l’aide de la signature du contrat. Le contrat est enregistré sur le serveur [!DNL Adobe Sign] configuré dans les services cloud d’[!DNL AEM Forms]. Par ailleurs, si le formulaire adaptatif est configuré pour utiliser l’action d’envoi du portail Forms, les données du contrat sont enregistrées dans le stockage de données du portail Forms avec les données du formulaire.
+Le formulaire adaptatif activé par [!DNL Adobe Sign] inclut des informations sur les signataires et peut inclure d’autres données utilisateur collectées par le formulaire adaptatif. Le service [!DNL Adobe Sign] enregistre les données de l’utilisateur à l’aide de la signature du contrat. L&#39;accord est enregistré sur un [!DNL Adobe Sign] serveur configuré dans [!DNL AEM Forms] services cloud. En outre, si le formulaire adaptatif est configuré pour utiliser l’action d’envoi du portail Forms, les données de contrat sont enregistrées dans l’entrepôt de données du portail Forms avec les données de formulaire.
 
 ## Accès et suppression des données utilisateur {#access-and-delete-user-data}
 
-Les données utilisateur sont collectées dans le contrat mais ne sont enregistrées dans aucune des tables de service. [!DNL Adobe Sign] permet aux administrateurs de faire leurs propres choix concernant la gestion des données qu’ils contrôlent dans le service. Les administrateurs de confidentialité sur le service d’[!DNL Adobe Sign] peuvent répertorier ou supprimer des contrats en fonction de l’adresse e-mail du demandeur.
+Les données utilisateur sont collectées dans le contrat, mais ne sont enregistrées dans aucune des tables de service. [!DNL Adobe Sign] permet aux administrateurs d’effectuer leurs propres choix sur la gestion des données qu’ils contrôlent dans le service. Les administrateurs de confidentialité sur le service d’[!DNL Adobe Sign] peuvent répertorier ou supprimer des contrats en fonction de l’adresse e-mail du demandeur.
 
-[!DNL Adobe Sign] propose une application Web qui permet de rechercher des contrats en filtrant par participants et, si nécessaire, de les supprimer. Pour plus d’informations, consultez la section [Adobe Sign - Fonctionnalité : supprimer les informations de l’utilisateur](https://helpx.adobe.com/fr/sign/using/gdpr-compliance.html).
+[!DNL Adobe Sign] propose une application web permettant la recherche des accords par les participants, et si nécessaire, leur suppression. Pour plus d’informations, consultez la section [Adobe Sign - Fonctionnalité : supprimer les informations de l’utilisateur](https://helpx.adobe.com/fr/sign/using/gdpr-compliance.html).
 
-Les données de contrat des formulaires adaptatifs configurés pour utiliser l’action d’envoi du portail Forms sont également enregistrées dans le stockage de données du portail Forms. Pour accéder à des données et les supprimer depuis le stockage de données du portail Forms, reportez-vous à la section [Portail Forms | Gestion des données utilisateur](/help/forms/using/forms-portal-handling-user-data.md).
+Les données d’accord pour les formulaires adaptatifs configurés pour utiliser l’action d’envoi du portail Forms sont également enregistrées dans l’entrepôt de données du portail Forms. Pour accéder aux données de l’entrepôt de données de Forms Portal et les supprimer, voir [Portail Forms | Gestion des données utilisateur](/help/forms/using/forms-portal-handling-user-data.md).

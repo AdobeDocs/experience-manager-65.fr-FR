@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 39%
+source-wordcount: '759'
+ht-degree: 38%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 39%
 
 We.Retail est une implémentation de référence et un exemple de contenu qui illustre la méthode recommandée pour configurer une présence en ligne avec Adobe Experience Manager.
 
-We.Retail utilise les dernières technologies d’AEM telles que HTL, les mises en page réactives, les modèles modifiables, les composants principaux, etc.
+We.Retail utilise les technologies Adobe Experience Manager (AEM) les plus récentes, telles que HTL, les mises en page réactives, les modèles modifiables, les composants principaux, etc.
 
 Bien qu’il illustre un secteur de vente au détail, la configuration du site peut être appliquée à n’importe quel secteur, et seules les fonctionnalités de catalogue de produits et de panier sont spécifiques à ce secteur.
 
@@ -30,18 +30,18 @@ En tant qu’implémentation de référence standard AEM, We.Retail présente ce
 | **Fonctionnalité** | **Description** | **Intéressé ?** |
 |---|---|---|
 | [Structure de site globalisée](/help/sites-administering/tc-bp.md) | We.Retail comprend des gabarits de langue qui sont copiés en direct dans des sites spécifiques à un pays. | [Faites un essai !](/help/sites-developing/we-retail-globalized-site-structure.md) |
-| [Disposition réactive](/help/sites-authoring/responsive-layout.md) | Toutes les pages disposent d’une mise en page réactive pour s’adapter dynamiquement à la taille de l’écran et de l’appareil. | [Faites un essai !](/help/sites-developing/we-retail-responsive-layout.md) |
+| [Disposition réactive](/help/sites-authoring/responsive-layout.md) | Toutes les pages disposent d’une mise en page réactive qui s’adapte dynamiquement à la taille de l’écran et de l’appareil. | [Faites un essai !](/help/sites-developing/we-retail-responsive-layout.md) |
 | [Modèles modifiables](/help/sites-developing/page-templates-editable.md) | Toutes les pages sont basées sur des modèles modifiables, ce qui permet aux non-développeurs d’adapter et de personnaliser les modèles. | [Faites un essai !](/help/sites-developing/we-retail-editable-templates.md) |
-| [HTML Template Language](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) | Tous les composants sont basés sur HTL. |  |
-| [Fonctionnalités de commerce électronique](/help/commerce/cif-classic/developing/ecommerce.md) | Fonctionnalité d’un catalogue de produits |  |
+| [HTML Template Language](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) | Tous les composants sont basés sur HTL |  |
+| [Fonctionnalités de commerce électronique](/help/commerce/cif-classic/developing/ecommerce.md) | Fonctionne un catalogue de produits |  |
 | [Sites de communautés](/help/communities/overview.md) | Permettre aux visiteurs de participer à des discussions communautaires, de lire des blogs, etc. |  |
-| [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) | Tous les composants sont basés sur les nouveaux composants principaux et sont plus faciles à utiliser et configurables par l’utilisateur prêts à l’emploi. | [Faites un essai !](/help/sites-developing/we-retail-core-components.md) |
-| [Fragments de contenu](/help/assets/content-fragments/content-fragments.md) | La section Expériences We.Retail présente la puissance de réutilisation du contenu par le biais de fragments de contenu. | [Faites un essai !](/help/sites-developing/we-retail-content-fragments.md) |
+| [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) | Tous les composants sont basés sur les nouveaux composants principaux et sont plus faciles à utiliser et configurables par l’utilisateur en standard. | [Faites un essai !](/help/sites-developing/we-retail-core-components.md) |
+| [Fragments de contenu](/help/assets/content-fragments/content-fragments.md) | La section Expériences We.Retail présente la puissance de réutilisation du contenu au moyen de fragments de contenu. | [Faites un essai !](/help/sites-developing/we-retail-content-fragments.md) |
 | [Fragments d’expérience](/help/sites-authoring/experience-fragments.md) | Un fragment d’expérience est un groupe d’un ou plusieurs composants comprenant un contenu et une disposition pouvant être référencés dans les pages. | [Faites un essai !](/help/sites-developing/we-retail-experience-fragments.md) |
 
 ## Prise en main {#getting-started}
 
-We.Retail est diffusé sous la forme d’un exemple AEM contenu. Pour utiliser, il suffit d’utiliser [commencer AEM comme vous le feriez normalement ;](/help/sites-deploying/deploy.md#getting-started), assurez-vous que l’exemple de contenu n’est pas désactivé.
+We.Retail est diffusé sous la forme d’un exemple AEM contenu. Pour utiliser, il vous suffit d’utiliser [commencer AEM comme vous le feriez normalement ;](/help/sites-deploying/deploy.md#getting-started), assurez-vous que l’exemple de contenu n’est pas désactivé.
 
 >[!CAUTION]
 >
@@ -57,7 +57,7 @@ Bien que We.Retail soit distribué avec la version AEM, il se peut que des mises
 
 ### Premiers pas {#first-steps}
 
-1. Une fois AEM démarré (et/ou We.Retail installé), le site **We.Retail** est disponible dans la variable [console Sites](/help/sites-authoring/basic-handling.md#global-navigation).
+1. Une fois AEM démarré (et/ou We.Retail installé), le site **We.Retail** est disponible dans la variable [Console Sites](/help/sites-authoring/basic-handling.md#global-navigation).
 1. Par exemple, la page suivante peut être ouverte et elle doit ressembler à celle affichée dans la [annexe](#appendix) ci-dessous :
 
    `https://<server name>:<port number>/editor.html/content/we-retail/language-masters/en.html`
@@ -87,7 +87,7 @@ Le tableau suivant présente un aperçu des principales fonctionnalités disponi
 | Screens | Disponible | Non disponible |
 | Mobile | Non disponible | Disponible |
 | Manuscrits | Non disponible | Disponible |
-| Composants graphiques, carrousel, téléchargement | Non disponible | Disponible |
+| Visionneuse de carrousel, téléchargements et composants de graphique | Non disponible | Disponible |
 | Contrôle de colonne | Remplacé par le conteneur de disposition | Disponible |
 | Forms | Non disponible | Disponible |
 | Campaign | Aucun exemple d’email | Disponible |
@@ -102,7 +102,7 @@ We.Retail a été publié en tant que projet Open Source et la dernière version
 
 CODE SUR GITHUB
 
-Vous pouvez trouver le code de cette page sur GitHub.
+Vous pouvez trouver le code de cette page sur GitHub..
 
 * [Ouvrez le projet aem-sample-we-retail sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail).
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/zip/refs/heads/master).
