@@ -7,10 +7,10 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 54bed871375ddc9d18af564318ceac95dd1dd2f9
+source-git-commit: d76fce58973bd011b53a5da41578b57a8e10912e
 workflow-type: tm+mt
-source-wordcount: '3668'
-ht-degree: 48%
+source-wordcount: '3695'
+ht-degree: 47%
 
 ---
 
@@ -674,7 +674,7 @@ L’application AEM Forms est disponible sur les plateformes suivantes :
 | ----------------- | ------------------------------------------------------------------------------------------------------------------- |
 | Apple iOS  | Apple iPhone, iPad, iPad Air et iPad mini exécutant iOS 15.1 et versions ultérieures. |
 | Google Android™ | Android™ 5.1 et versions ultérieures. L’application AEM Forms est certifiée sur les tablettes Samsung Galaxy 7 et 10 pouces et les smartphones populaires. |
-| Microsoft® Windows  | Microsoft® Périphériques de surface, tablettes, ordinateurs portables et ordinateurs de bureau exécutant Microsoft® système d’exploitation Windows 10. |
+| Microsoft® Windows | Microsoft® Périphériques de surface, tablettes, ordinateurs portables et ordinateurs de bureau exécutant Microsoft® système d’exploitation Windows 10. |
 
 ### Adobe Document Security Extension for Microsoft® Office {#adobe-rights-management-extension-for-microsoft-office}
 
@@ -707,7 +707,7 @@ Les plateformes suivantes sont marquées comme obsolètes dans la version AEM Fo
 - Microsoft® Windows Server 2019 (64 bits)
 - Microsoft® Active Directory 2016
 
-Les plateformes suivantes sont marquées comme obsolètes dans la version AEM Forms 6.5.18.0 du 2 juin 2022 :
+Les plateformes suivantes sont marquées comme obsolètes dans la version AEM Forms 6.5.17.0 du 2 juin 2022 :
 
 - Microsoft® SharePoint 2016
 
@@ -731,15 +731,14 @@ Les plateformes suivantes sont marquées comme obsolètes dans la version AEM F
 - Microsoft® Office 2016
 - OpenOffice 4.1.2
 
-<!--
+
 >[!NOTE]
 >
->The platforms marked as [deprecated on with AEM Forms 6.5.12.0 and 6.5.10.0 remain in support until AEM Forms 6.5 Service Pack 18 (6.5.18.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html).
--->
+Une plateforme obsolète continue de recevoir la prise en charge jusqu’à ce que la plateforme soit marquée comme supprimée ou que la prise en charge d’un fournisseur tiers pour la plateforme atteigne sa fin de vie, selon la condition qui s’affiche en premier.
 
 ## Historique des révisions {#revision-history}
 
-- 31 août 2023
+- 6.5.18.0 (31 août 2023)
    - **Mises à jour de Platform** : [!DNL Adobe Experience Manager Forms] on JEE a ajouté la prise en charge des plateformes suivantes :
       - MongoDB Enterprise 4.4
       - Oracle WebLogic Server 14c
@@ -768,7 +767,7 @@ Les plateformes suivantes sont marquées comme obsolètes dans la version AEM F
       - OpenOffice 4.1.2
       - Acrobat 2017 (Suivi classique) version 17.011.30078 ou ultérieure
 
-- 1 septembre 2022
+- 6.5.10.0 (1er septembre 2022)
 
    - Ajout de la prise en charge du SDK Oracle Java™ SE 11 (64 bits) pour le serveur d’applications JBoss® EAP 7.4.
 
