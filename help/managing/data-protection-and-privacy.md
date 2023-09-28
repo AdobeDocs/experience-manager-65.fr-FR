@@ -10,9 +10,9 @@ discoiquuid: 0bcd7ac4-3071-466d-bd11-701f35ccf5bd
 docset: aem65
 exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
 source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '907'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 99%
 >
 >Pour plus d’informations sur la réponse d’Adobe aux problèmes de confidentialité et sur ce que cela signifie pour vous en tant que client ou cliente Adobe, voir [Centre de traitement des données personnelles d’Adobe](https://www.adobe.com/fr/privacy.html).
 
-Adobe fournit de la documentation et des procédures (avec des API si elles sont disponibles), afin que l’administrateur ou l’administratrice de la confidentialité du client ou de la cliente ou l’administrateur ou l’administratrice d’AEM puisse traiter les demandes de protection et de confidentialité des données. Il peut vous aider à vous conformer à ces règlements. Les procédures décrites permettent aux clients et aux clientes d’exécuter les demandes légales manuellement ou en appelant les API, si disponibles, à partir d’un portail ou d’un service externe.
+Adobe fournit de la documentation et des procédures (avec des API si elles sont disponibles), afin que l’administrateur ou l’administratrice de la confidentialité du client ou de la cliente ou l’administrateur ou l’administratrice d’AEM puisse traiter les demandes de protection et de confidentialité des données. Celles-ci pourront vous aider à vous conformer à ces règlements. Les procédures décrites permettent aux clients et aux clientes d’exécuter les demandes légales manuellement ou en appelant les API, si disponibles, à partir d’un portail ou d’un service externe.
 
 >[!CAUTION]
 >

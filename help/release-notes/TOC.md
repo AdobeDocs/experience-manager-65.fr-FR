@@ -2,20 +2,20 @@
 cloud: Experience Cloud
 product: experience manager
 audience: end-user
-user-guide-title: Notes de mise à jour de Adobe Experience Manager 6.5
+user-guide-title: Notes de mise à jour d’Adobe Experience Manager 6.5
 breadcrumb-title: Notes de mise à jour
 user-guide-description: Découvrez les dernières fonctionnalités d’AEM 6.5 dans ces notes de mise à jour.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '70'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
 
-# Notes de mise à jour de Adobe Experience Manager 6.5 {#release-notes}
+# Notes de mise à jour d’Adobe Experience Manager 6.5 {#release-notes}
 
 + [Notes de mise à jour d’AEM 6.5](home.md)
 + [Notes de mise à jour de la version actuelle](release-notes.md)
@@ -38,7 +38,7 @@ ht-degree: 60%
    + [6.5.2](previous/6.5.2.md)
    + [6.5.1](previous/6.5.1.md)
    + [6.5.0](previous/ga.md)
-+ [Instructions d’installation du Service Pack AEM Forms](aem-forms-current-service-pack-installation-instructions.md)
-+ [Programme d’installation des correctifs AEM Forms JEE](jee-patch-installer-65.md)
++ [Instructions d’installation pour le pack de services AEM Forms](aem-forms-current-service-pack-installation-instructions.md)
++ [Programme d’installation du correctif AEM Forms JEE](jee-patch-installer-65.md)
 + [Fonctionnalités obsolètes et supprimées](deprecated-removed-features.md)
-+ [État des fonctionnalités de l’interface utilisateur tactile](touch-ui-features-status.md)
++ [Statut des fonctionnalités de l’IU tactile](touch-ui-features-status.md)
