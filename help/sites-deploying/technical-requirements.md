@@ -3,10 +3,10 @@ title: Exigences techniques
 description: Liste des plateformes clientes et serveur prises en charge pour Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 8336a7257d3c5e75cd37381b0124c227c2d55dca
+source-git-commit: 0dd6e3fc2fa9539e5c3ce4e99ab367752dfeaad6
 workflow-type: tm+mt
-source-wordcount: '3544'
-ht-degree: 92%
+source-wordcount: '3597'
+ht-degree: 91%
 
 ---
 
@@ -132,6 +132,9 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 1. La fragmentation MongoDB n’est pas prise en charge dans AEM.
 1. Seul le moteur de stockage WiredTiger de MongoDB est pris en charge.
 1. Pris en charge pour les clients et clientes de mise à niveau d’AEM Forms. Non pris en charge pour les nouvelles installations.
+1. AEM Forms applicable uniquement :
+   * Suppression de la prise en charge d’Oracle Database 12c et ajout de la prise en charge d’Oracle Database 19c.
+   * Suppression de la prise en charge de Microsoft® SQL Server 2016 et ajout de celle de Microsoft® SQL Server 2019.
 
 >[!NOTE]
 >
@@ -178,6 +181,8 @@ La version minimale requise de l’API Servlet est 3.1.
 
 1. Recommandé pour les déploiements avec AEM Forms.
 1. Avec les déploiements d’AEM 6.5 sur les serveurs d’applications, la prise en charge limitée sera activée. Les clientes et clients existant(e)s peuvent effectuer une mise à niveau vers AEM 6.5 et continuer à utiliser des serveurs d’applications. Pour les nouveaux clients et nouvelles clientes, des critères et un programme de prise en charge sont inclus, comme indiqué dans la description du niveau R ci-dessus.
+1. AEM Forms applicable uniquement :
+   * Suppression de la prise en charge de JBoss® EAP 7.1.4 et ajout de celle de JBoss® EAP 7.4.10.
 
 ### Systèmes d’exploitation de serveur {#server-operating-systems}
 
@@ -199,6 +204,7 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 1. Distribution Linux® prise en charge par Adobe Managed Services.
 1. Les déploiements en exploitation Microsoft® Windows sont pris en charge pour les clients et clientes effectuant une mise à niveau vers la version 6.5 et pour une utilisation en dehors de l’environnement d’exploitation. Les nouveaux déploiements sont à la demande pour AEM Sites et Assets.
 1. AEM Forms est pris en charge sur Microsoft® Window Server sans les restrictions de niveau de prise en charge R.
+1. AEM Forms a supprimé la prise en charge de Microsoft® Windows Server 2016.
 
 >[!NOTE]
 >
