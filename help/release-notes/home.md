@@ -31,7 +31,7 @@ Les notes de mise à jour d’AEM comportent des informations importantes sur la
 | [Guide d’administration](/help/sites-administering/home.md) | Problèmes courants et solutions liés à l’installation |
 | [Guide de création](/help/sites-authoring/home.md) | Ce guide explique les concepts de création dans AEM. |
 | [Guide de création dans l’interface utilisateur classique](/help/sites-classic-ui-authoring/home.md) | Ce guide explique les concepts de création dans AEM dans l’interface utilisateur classique. |
-| [Guide de l’utilisateur de Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=fr) | Découvrez la solution de signalétique numérique pour publier des expériences numériques dynamiques et interactives. |
+| [Guide de l’utilisateur de Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=fr) | Découvrez la solution de signalétique numérique pour publier des expériences digitales dynamiques et interactives. |
 | [Guide de l’utilisateur du déploiement](/help/sites-deploying/home.md) | Ce guide vous présente les principes de base d’AEM. |
 | [Guide de l’utilisateur pour le développement](/help/sites-developing/home.md) | Découvrez comment créer l’instance AEM. |
 | [Guide de l’utilisateur pour la gestion](/help/managing/home.md) | Ce guide décrit comment gérer un projet AEM avec succès. |

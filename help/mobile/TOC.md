@@ -10,7 +10,7 @@ role: User
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 29%
+ht-degree: 12%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 29%
    + [AEM Mobile On-Demand](getting-started-aem-mobile-on-demand.md)
    + [Applications mobiles](mobile-apps.md)
    + [AEM Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
-   + [AEM Mobile – Préparation pour le RGPD](aem-mobile-gdpr-compliance.md)
+   + [AEM Mobile - Préparation au RGPD](aem-mobile-gdpr-compliance.md)
    + [Développement d’applications mobiles](develop-mobile-apps.md)
 + Création d&#39;une application On-Demand Services {#authoring}
    + [Mobile On-Demand](mobile-apps-ondemand.md)
@@ -33,7 +33,7 @@ ht-degree: 29%
    + [Actions de création et de configuration d’application](mobile-apps-ondemand-application-create-configure-action.md)
    + [Gestion des articles](mobile-on-demand-managing-articles.md)
    + [Chargement de ressources partagées](mobile-on-demand-shared-resources.md)
-   + [Configuration du cloud](mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
+   + [Configuration du cloud.](mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
    + [Gestion des bannières](mobile-on-demand-managing-banners.md)
 + Développement d’une application On-Demand Services {#developing}
    + [AEM Mobile On-Demand](aem-mobile-on-demand.md)
@@ -52,7 +52,7 @@ ht-degree: 29%
 + Administration de l&#39;application On-Demand Services {#administering}
    + [AEM Mobile On-Demand](aem-mobile.md)
    + [Configuration d’AEM Mobile](aem-mobile-setup.md)
-   + [Configuration d’utilisateurs et de groupes d’utilisateurs](aem-mobile-configure-users.md)
+   + [Configuration des utilisateurs et des groupes d’utilisateurs](aem-mobile-configure-users.md)
    + [Aperçu avec contrôle en amont](aem-mobile-manage-ondemand-services.md)
    + [Applications mobiles](administer-mobile-apps.md)
    + [Présentation des modèles](model-management.md)
@@ -60,12 +60,12 @@ ht-degree: 29%
    + [Gestion des collections](mobile-on-demand-managing-collections.md)
 + Création d’Adobe PhoneGap Enterprise {#author-phonegap}
    + [PhoneGap](phonegap.md)
-   + [Modification de métadonnées d’application](phonegap-editmetadata.md)
+   + [Modification des métadonnées d’application](phonegap-editmetadata.md)
    + [Définitions des applications](phonegap-app-definitions.md)
    + [Création et gestion de contenu d’application](phonegap-manage-app-content.md)
-   + [Création d’une application AEM Mobile à l’aide de l’assistant de création](phonegap-create-new-app.md)
+   + [Créer une application AEM Mobile à l’aide de l’assistant de création](phonegap-create-new-app.md)
    + [Création d’applications mobiles](phonegap-authoring-apps.md)
-   + [Mosaïque Gestion de l’application](phonegap-app-details-tile.md)
+   + [Mosaïque Gérer l’application](phonegap-app-details-tile.md)
    + [Personnalisation du contenu AEM Mobile](phonegap-aem-mobile-content-personalization.md)
 + Développement d’Adobe PhoneGap Enterprise {#developphonegap}
    + [PhoneGap](developing-in-phonegap.md)
@@ -91,7 +91,7 @@ ht-degree: 29%
 + Administration d’Adobe PhoneGap Enterprise {#administering-phonegap}
    + [Démarrage rapide mobile](phonegap-mobile-quickstart.md)
    + [Administration de contenu pour Adobe PhoneGap Enterprise avec AEM](administer-phonegap.md)
-   + [Configurer le service cloud Adobe PhoneGap Build ](configure-phonegap-build-cloud.md)
-   + [Définition de votre filtre de référent sur Autoriser vide](setting-referrer-filter-empty.md)
-   + [Configuration de votre service cloud Adobe Mobile Services](configure-adobe-mobile-cloud-service.md)
-   + [Configuration d’utilisateurs et de groupes d’utilisateurs](configure-users-groups.md)
+   + [Configuration de votre Cloud Service Adobe PhoneGap Build](configure-phonegap-build-cloud.md)
+   + [Définition du filtre de référent sur Autoriser vide](setting-referrer-filter-empty.md)
+   + [Configuration de votre Cloud Service Mobile Services Adobe](configure-adobe-mobile-cloud-service.md)
+   + [Configuration des utilisateurs et des groupes d’utilisateurs](configure-users-groups.md)

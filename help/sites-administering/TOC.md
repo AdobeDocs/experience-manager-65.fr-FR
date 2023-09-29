@@ -67,7 +67,7 @@ ht-degree: 100%
    + [Configuration des formulaires de recherche](search-forms.md)
    + [Consoles Outils ](tools-consoles.md)
    + [Création de rapports](reporting.md)
-   + [Configuration du conteneur et du mode de mises en page](configuring-responsive-layout.md)
+   + [Configuration du conteneur et du mode de mise en page](configuring-responsive-layout.md)
    + [Éditeur](enable-classic-ui-editor.md)
    + [Activation de l’accès à l’IU classique](enable-classic-ui.md)
    + [Consoles d’administration](enable-classic-ui-admin.md)
@@ -106,8 +106,8 @@ ht-degree: 100%
    + [Campagnes](campaigns.md)
    + [Configuration de la segmentation avec ContextHub](segmentation.md)
    + [Configuration de la segmentation](campaign-segmentation.md)
-   + [Extension et configuration de l’importateur de conception pour les pages d’entrée](extending-the-design-importer-for-landingpages.md)
-   + [Intégration des pages d’entrée à Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
+   + [Extension et configuration de l’importateur de conception pour les pages de destination](extending-the-design-importer-for-landingpages.md)
+   + [Intégration des pages de destination à Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
 + Intégration {#integration}
    + [Intégration à des services tiers](third-party-services.md)
    + [Intégration à Salesforce](salesforce.md)
@@ -157,7 +157,7 @@ ht-degree: 100%
    + [Traitement des demandes RGPD pour AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html?lang=fr)
    + [AEM Commerce – Préparation pour le RGPD](gdpr-compliance-commerce.md)
 + Gestion de contenu {#contentmanagement}
-   + [Gestionnaire de modules](package-manager.md)
+   + [Gestionnaire de packages](package-manager.md)
    + [Administration des balises](tags.md)
    + [Exportateur de page](page-exporter.md)
    + [Console Balisage de l’interface utilisateur (IU) classique](classic-console.md)
