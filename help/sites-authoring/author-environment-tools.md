@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 8737c989927b1be148d440aa1944cf4cfb216b69
 workflow-type: tm+mt
-source-wordcount: '2210'
-ht-degree: 57%
+source-wordcount: '2226'
+ht-degree: 56%
 
 ---
 
@@ -234,7 +234,9 @@ Ouvrez la console appropriée, puis accédez à la ressource requise et ouvrez *
 
 Pour plus d’informations, sélectionnez le type de référence approprié. Dans certains cas, d’autres actions sont disponibles lorsque vous sélectionnez une référence spécifique, notamment :
 
-* **Liens entrants** fournit une liste des pages qui font référence à la page, ainsi qu’un accès direct à **Modifier** l’une de ces pages lorsque vous sélectionnez un lien spécifique ;
+* **Liens entrants** fournit une liste des pages qui font référence à la page, ainsi qu’un accès direct à **Modifier** l’une de ces pages lorsque vous sélectionnez un lien spécifique.
+
+   * Cela peut uniquement afficher des liens statiques, et non des liens générés dynamiquement, par exemple à partir du composant Liste .
 
 * Les instances du contenu emprunté et prêté à l’aide du composant **Référence** vous permettent de naviguer jusqu’à la page de référence.
 
