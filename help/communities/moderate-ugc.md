@@ -12,18 +12,18 @@ discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1515'
 ht-degree: 3%
 
 ---
 
 # Modération de contenu de la communauté {#moderating-community-content}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
-Le contenu de la communauté, également appelé contenu généré par l’utilisateur (UGC), est créé lorsqu’un membre (connecté visiteur du site) publie du contenu d’un site de la communauté publié par le biais d’une interaction avec l’un des composants de la communauté suivants :
+Le contenu de la communauté, également appelé contenu généré par l’utilisateur (UGC), est créé lorsqu’un membre (connecté visiteur du site) publie du contenu d’un site de la communauté publié en interagissant avec l’un des composants de la communauté suivants :
 
 * [Blog](/help/communities/blog-feature.md): les membres publient un article de blog ou un commentaire.
 * [Calendrier](/help/communities/calendar.md): les membres publient un événement ou un commentaire de calendrier.
@@ -40,11 +40,11 @@ La modération du contenu généré par l’utilisateur est utile pour reconnaî
 
 * [Console de modération en bloc](moderation.md)
 
-   La console Modération est accessible aux administrateurs et aux [modérateurs de communauté](/help/communities/users.md) dans l’environnement public ainsi que par les administrateurs dans l’environnement de création. Cela est possible lorsque le contenu de la communauté est stocké dans une [magasin commun](/help/communities/working-with-srp.md).
+  La console Modération est accessible aux administrateurs et aux [modérateurs de communauté](/help/communities/users.md) dans l’environnement public ainsi que par les administrateurs dans l’environnement de création. Cela est possible lorsque le contenu de la communauté est stocké dans une [magasin commun](/help/communities/working-with-srp.md).
 
 * [Modération dans le contexte](in-context.md)
 
-   La modération dans l’environnement de publication peut être effectuée par les administrateurs et les modérateurs de communauté directement sur la page où le contenu a été publié.
+  La modération dans l’environnement de publication peut être effectuée par les administrateurs et les modérateurs de communauté directement sur la page où le contenu a été publié.
 
 ## Actions de modération {#moderation-actions}
 
@@ -52,23 +52,23 @@ Les actions pouvant être effectuées sur du contenu publié (UGC) varient en fo
 
 * `Admin`
 
-   Un utilisateur qui est membre de [community-administrators](users.md) groupe.
+  Un utilisateur qui est membre de [community-administrators](users.md) groupe.
 
 * `Moderator`
 
-   Un membre d’une [modérateurs de communauté](users.md#publishenvironmentusersandgroups) groupe (has [autorisations du modérateur](in-context.md#moderatorpermissions)).
+  Un membre d’une [modérateurs de communauté](users.md#publishenvironmentusersandgroups) groupe (has [autorisations du modérateur](in-context.md#moderatorpermissions)).
 
 * `Creator`
 
-   Utilisateur qui a publié le contenu.
+  Utilisateur qui a publié le contenu.
 
 * `Member`
 
-   Utilisateur connecté sans autorisations spéciales.
+  Utilisateur connecté sans autorisations spéciales.
 
 * `Visitor`
 
-   Utilisateur anonyme.
+  Un utilisateur anonyme.
 
 <table>
  <tbody>
@@ -147,7 +147,7 @@ Les actions pouvant être effectuées sur du contenu publié (UGC) varient en fo
 
 ### Modifier/Supprimer {#edit-delete}
 
-Une fois qu’une publication a été créée, elle peut être modifiée ou supprimée par le créateur, un administrateur ou un modérateur de la communauté.
+Une fois une publication créée, elle peut être modifiée ou supprimée par le créateur, un administrateur ou un modérateur de la communauté.
 
 Lorsque le contenu créé par l’utilisateur est supprimé, il est supprimé du référentiel et ne peut pas être récupéré.
 
@@ -211,7 +211,7 @@ La détection des messages indésirables est une fonctionnalité d’auto-modér
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
 
-Toutefois, pour personnaliser ou étendre les mots indésirables par défaut, créez un ensemble de mots dans le répertoire /apps en suivant la structure des mots indésirables par défaut au moyen de la fonction [superposition](/help/communities/overlay-comments.md).
+Cependant, pour personnaliser ou étendre les mots indésirables par défaut, créez un ensemble de mots dans le répertoire /apps en suivant la structure des mots indésirables par défaut au moyen de la fonction [superposition](/help/communities/overlay-comments.md).
 
 Une publication générée par l’utilisateur (dans tous les types de contenu, par exemple les blogs, les forums et les commentaires) contenant un ou plusieurs mots indésirables est marquée avec le texte &quot;Cette publication a été classée comme spam&quot; au-dessus de la publication.
 
@@ -245,7 +245,7 @@ Les règles définies dans le composant /libs sont les suivantes :
 * Règle 1 : définissez la valeur sur 1 s’il n’existe aucun mot positif et au moins un mot négatif.
 * Règle 2 : définissez la valeur sur 10 s’il n’y a pas de mots négatifs et au moins un mot positif.
 * Règle 3 : définissez la valeur sur 3 s’il y a plus de mots négatifs que de mots positifs.
-* Règle 4 : définissez la valeur sur 8 s’il y a plus de mots positifs que de mots négatifs.
+* Règle 4 : définissez la valeur sur 8 s’il y a plus de mots positifs que négatifs.
 
 Pour remplacer ou ajouter des règles, créez un ensemble de règles dans le répertoire /apps suivant la structure des règles par défaut. Modifiez la configuration de l’opinion afin d’identifier l’emplacement des règles.
 
@@ -259,11 +259,11 @@ Les communautés AEM fournissent une *analyseur de mots-clés* en tant qu’éta
 
 #### Configuration de l’opinion et des mots de contrôle {#configure-sentiment-and-watchwords}
 
-La liste des mots-clés positifs et négatifs peut être personnalisée, de même que les règles d’opinion.
+Il est possible de personnaliser la liste des mots-clés positifs et négatifs, de même que les règles d’opinion.
 
 La liste par défaut des mots-clés peut être saisie en tant que propriétés d’un noeud dans le référentiel, similaire à la valeur par défaut ou en remplaçant la valeur par défaut par la configuration du service OSGi. `sentimentprocess.name` avec la liste des mots.
 
-Le **sentimentprocess.name** peut également être modifié pour référencer l’emplacement d’un ensemble personnalisé de règles d’opinion.
+La variable **sentimentprocess.name** peut également être modifié pour référencer l’emplacement d’un ensemble personnalisé de règles d’opinion.
 
 Pour configurer l’opinion et les mots-clés :
 
@@ -276,19 +276,19 @@ Pour configurer l’opinion et les mots-clés :
 
 * **Mots-clés positifs**
 
-   Liste de mots séparés par des virgules qui contribuent à une opinion positive qui remplace les valeurs par défaut. La valeur par défaut est une liste vide.
+  Liste de mots séparés par des virgules, qui contribuent à une opinion positive qui remplace les valeurs par défaut. La valeur par défaut est une liste vide.
 
 * **Mots-clés négatifs**
 
-   Liste de mots séparés par des virgules qui contribuent à une opinion négative qui remplace les valeurs par défaut. La valeur par défaut est une liste vide.
+  Liste de mots séparés par des virgules qui contribuent à une opinion négative qui remplace les valeurs par défaut. La valeur par défaut est une liste vide.
 
 * **Chemin explicite vers le noeud Watchwords**
 
-   Emplacement du référentiel d’un noeud contenant la valeur par défaut `positive` et `negative` propriétés spécifiant les mots-clés par défaut. La valeur par défaut est `/libs/settings/community/watchwords/default`.
+  Emplacement du référentiel d’un noeud contenant la valeur par défaut `positive` et `negative` propriétés spécifiant les mots-clés par défaut. La valeur par défaut est `/libs/settings/community/watchwords/default`.
 
 * **Règles d’opinion**
 
-   Emplacement du référentiel des règles pour calculer l’opinion selon des mots-clés positifs et négatifs. La valeur par défaut est `/libs/cq/workflow/components/workflow/social/sentiments/rules` (cependant, il n’y a plus de workflow impliqué).
+  Emplacement du référentiel des règles pour calculer l’opinion selon des mots-clés positifs et négatifs. Par défaut : `/libs/cq/workflow/components/workflow/social/sentiments/rules` (cependant, il n’y a plus de workflow impliqué).
 
 Voici un exemple d’entrée personnalisée pour les mots-clés par défaut, lorsque `Explicit Path to Watchwords Node` est défini sur `/libs/settings/community/watchwords/default`.
 

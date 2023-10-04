@@ -1,20 +1,16 @@
 ---
 title: Appeler AEM Forms à l’aide de Remoting
-seo-title: Invoking AEM Forms using Remoting
 description: Utilisez Remoting pour appeler un processus AEM Forms afin d’appeler des processus créés dans Workbench. Vous pouvez appeler un processus AEM Forms à partir d’une application cliente créée avec Flex.
-seo-description: Use Remoting to invoke an AEM Forms process to invoke processes created in Workbench. You can invoke a AEM Forms process from a client application built with Flex.
-uuid: 592d1519-c38b-4b33-8cf3-61e2bff81501
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '4597'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -550,7 +546,7 @@ Vous pouvez démarrer une application cliente créée avec Flex et utiliser le s
 
 Vous pouvez transmettre des documents sécurisés à AEM Forms lors de l’appel d’un processus qui nécessite un ou plusieurs documents. En transmettant un document sécurisé, vous protégez les informations commerciales et les documents confidentiels. Dans ce cas, un document peut faire référence à un document PDF, un document XML, un document Word, etc. La transmission d’un document sécurisé à AEM Forms à partir d’une application cliente écrite dans Flex est nécessaire lorsqu’AEM Forms est configuré pour autoriser les documents sécurisés. (Voir [Configurer AEM Forms pour accepter des documents sécurisés et non sécurisés](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).)
 
-Lors de la transmission d’un document sécurisé, utilisez l’authentification unique et spécifiez un utilisateur d’AEM Forms doté de la fonction *Utilisateur de l’application de chargement de documents*. Sans ce rôle, l’utilisateur ne peut pas charger un document sécurisé. Vous pouvez attribuer par programmation un rôle à un utilisateur. (Voir [Gérer des rôles et des autorisations](/help/forms/developing/users.md#managing-roles-and-permissions).)
+Lors de la transmission d’un document sécurisé, utilisez l’authentification unique et spécifiez un utilisateur de formulaires AEM qui dispose de la variable *Utilisateur de l’application de téléchargement de document* rôle. Sans ce rôle, l’utilisateur ne peut pas charger un document sécurisé. Vous pouvez attribuer par programmation un rôle à un utilisateur. (Voir [Gérer des rôles et des autorisations](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
 >[!NOTE]
 >

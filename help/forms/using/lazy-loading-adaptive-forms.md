@@ -1,19 +1,15 @@
 ---
 title: Amélioration des performances des formulaires volumineux avec le chargement différé
-seo-title: Improve performance of large forms with lazy loading
 description: Le chargement différé améliore considérablement les performances des formulaires adaptatifs volumineux et complexes en retardant l’initialisation et le chargement des fragments de formulaire jusqu’à ce qu’ils soient visibles.
-seo-description: Lazy loading significantly improves the performance of large and complex adaptive forms by deferring initialization and loading of form fragments until they are visible.
-uuid: 6be3d2f0-1b2a-4090-af66-2b08487c31bc
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: a20736b7-f7b4-4da1-aa32-2408049b1209
 docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 48%
+source-wordcount: '1089'
+ht-degree: 50%
 
 ---
 
@@ -90,7 +86,7 @@ Voici certaines restrictions, recommandations et aspects importants à garder à
 
 Voici des aspects importants à garder à l’esprit lors du développement des scripts pour les panneaux de chargement différé :
 
-* Assurez-vous que les scripts d’initialisation et de calcul utilisés dans les champs d’un fragment chargé différé sont idempotents par nature. Les scripts idempotents sont ceux qui ont le même effet même après plusieurs exécutions.
+* Assurez-vous que les scripts initialize et calculate utilisés sur les champs d’un fragment à chargement différé sont idempotents par nature. Les scripts idempotents sont ceux qui ont le même effet même après plusieurs exécutions.
 * Utilisez la propriété disponible globalement des champs pour rendre la valeur des champs situés dans un panneau de chargement différé disponible pour tous les autres panneaux d’un formulaire.
 * Ne transférez pas la valeur de référence d’un champ dans un panneau différé, quel que soit le champ marqué globalement sur les fragments ou non.
 * Utilisez la fonction de réinitialisation du panneau pour réinitialiser tout ce qui est visible dans le panneau à l’aide de l’expression de clic suivante.\

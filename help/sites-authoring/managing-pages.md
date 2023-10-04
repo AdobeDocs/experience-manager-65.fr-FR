@@ -2,10 +2,10 @@
 title: Créer et organiser des pages avec AEM
 description: Comment créer et organiser des pages avec AEM
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2526'
-ht-degree: 100%
+source-wordcount: '2523'
+ht-degree: 98%
 
 ---
 
@@ -424,9 +424,9 @@ L’état des tâches asynchrones peut être vérifié dans le [**tableau de bor
 >
 >Si la page est déjà publiée, sa publication est automatiquement annulée avant la suppression.
 
-### Verrouillage d’une page    {#locking-a-page}
+### Verrouillage d’une page {#locking-a-page}
 
-Vous pouvez [verrouiller ou déverrouiller une page](/help/sites-authoring/editing-content.md#locking-a-page) à partir d’une console ou lorsque vous modifiez une page. Les deux environnements indiquent également si une page est verrouillée ou non.
+Vous pouvez [verrouillage/déverrouillage d’une page](/help/sites-authoring/editing-content.md#locking-a-page) depuis une console ou lors de la modification d’une page individuelle. Les informations sur les pages verrouillées s’affichent également aux deux emplacements.
 
 ![screen_shot_2018-03-22at105713](assets/screen_shot_2018-03-22at105713.png) ![screen_shot_2018-03-22at105720](assets/screen_shot_2018-03-22at105720.png)
 

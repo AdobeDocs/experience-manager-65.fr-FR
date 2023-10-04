@@ -1,16 +1,12 @@
 ---
 title: Gestion des collections
-seo-title: Managing Collections
 description: Les collections représentent un compartiment bien défini contenant du contenu tel que des articles ou des bannières qui correspondent au thème de la couverture. Consultez cette page pour en savoir plus.
-seo-description: Collections represent a well defined bucket filled with content such as articles or banners that suits the cover's theme. Follow this page to learn more.
-uuid: 1d2e9769-d2cc-4d43-a428-e962a51eb5d0
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: 64c6d198-983f-4a52-9c83-560206363868
 exl-id: 0b4aa1a4-449a-4882-8f7c-3ceea6ac7f83
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '798'
 ht-degree: 2%
@@ -44,7 +40,7 @@ Le workflow général pour créer une collection est le suivant :
 
 1. Sélectionner **Mobile** à partir du rail latéral.
 1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de l’objet **Gestion des collections** mosaïque.
+1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la **Gestion des collections** mosaïque.
 1. Parcourez chaque étape de l’assistant pour continuer à créer votre nouvel article.
 1. Une fois prêt, cliquez sur **Créer**.
 1. Votre nouvel article apparaît dans la section **Gestion des collections** mosaïque.
@@ -62,7 +58,7 @@ Le contenu Mobile On Demand existant peut être téléchargé (importé) de Mobi
 Workflow d’importation d’une nouvelle collection
 
 1. Depuis Mobile, sélectionnez votre application mobile à la demande dans le catalogue.
-1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de l’objet **Gestion des collections** et sélectionnez Importer des collections.
+1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la **Gestion des collections** et sélectionnez Importer des collections.
 1. Cliquez sur **Importation de collections** dans la boîte de dialogue, puis cliquez sur Fermer.
 1. Vos collections Mobile On-Demand apparaissent désormais dans le **Gestion des collections** mosaïque.
 
@@ -92,7 +88,7 @@ Le workflow général pour afficher/modifier une collection :
 
 1. Sélectionnez **Propriétés** dans la barre d’actions.
 1. Affichez toutes les métadonnées disponibles pour cet article.
-1. Modifiez les métadonnées si vous le souhaitez, puis cliquez sur **Enregistrer** une fois terminé.
+1. Modifiez les métadonnées si nécessaire, puis cliquez sur **Enregistrer** une fois terminé.
 1. Vous pouvez éventuellement charger immédiatement les modifications dans Mobile On-Demand.
 
 ## Téléchargement d’une collection {#uploading-a-collection}
@@ -129,7 +125,7 @@ Les collections sont essentiellement une catégorie de contenu associé. Ils ras
 >
 >Le contenu doit être chargé sur Mobile On-Demand avant de pouvoir être ajouté à une collection.
 
-Les collections sont essentiellement une catégorie de contenu associé : Ils rassemblent du contenu, tel que des articles, des bannières, dans des modules qui définissent la structure de navigation de votre application. Les collections peuvent être imbriquées.
+Les collections sont essentiellement une catégorie de contenu associé : elles rassemblent le contenu tel que des articles, des bannières dans des packages qui définissent la structure de navigation de votre application. Les collections peuvent être imbriquées.
 
 1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
 1. Sélectionner un article précédemment chargé (ou bannière/collection)

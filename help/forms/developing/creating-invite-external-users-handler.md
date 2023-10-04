@@ -3,10 +3,10 @@ title: Créer un gestionnaire d’invitation d’utilisateurs externes
 description: Créer un gestionnaire d’invitation d’utilisateurs externes
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: ht
-source-wordcount: '1116'
-ht-degree: 100%
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+workflow-type: tm+mt
+source-wordcount: '1117'
+ht-degree: 98%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
 
-Vous pouvez créer un gestionnaire d’invitation d’utilisateurs externes pour le service Rights Management. Un gestionnaire d’invitation d’utilisateurs externes permet au service Rights Management d’inviter des utilisateurs externes à devenir des utilisateurs Rights Management. Lorsqu’un utilisateur devient utilisateur Rights Management, il peut effectuer certaines tâches, comme ouvrir un document PDF protégé par une stratégie. Une fois le gestionnaire d’invitation d’utilisateurs externes déployé dans AEM Forms, vous pouvez utiliser la console d’administration pour interagir avec celui-ci.
+Vous pouvez créer un gestionnaire d’invitation d’utilisateurs externes pour le service Rights Management. Un gestionnaire d’invitation d’utilisateurs externes permet au service Rights Management d’inviter des utilisateurs externes à devenir des utilisateurs Rights Management. Lorsqu’un utilisateur devient utilisateur Rights Management, il peut effectuer certaines tâches, comme ouvrir un document PDF protégé par une politique. Une fois le gestionnaire d’invitation d’utilisateurs externes déployé dans AEM Forms, vous pouvez utiliser la console d’administration pour interagir avec celui-ci.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ La méthode `invitedUser` accepte une instance `java.util.List` qui contient des
 
 L’implémentation du gestionnaire d’invitation d’utilisateurs externes contient une méthode définie par l’utilisateur nommée `createLocalPrincipalAccount`. Cette méthode accepte une valeur de chaîne qui indique une adresse électronique comme valeur de paramètre. La méthode `createLocalPrincipalAccount` suppose la préexistence d’un domaine local appelé `EDC_EXTERNAL_REGISTERED`. Vous pouvez configurer ce nom de domaine comme vous le souhaitez ; toutefois, pour une application de production, vous pouvez vouloir l’intégrer à un domaine d’entreprise.
 
-La méthode `createUsers` effectue une itération sur chaque adresse électronique et crée un objet Utilisateur correspondant (un utilisateur local dans le domaine `EDC_EXTERNAL_REGISTERED`). Enfin, la méthode `doEmails` est appelée. Cette méthode est délibérément laissée sous la forme d’un bulletin dans l’échantillon. Dans une implémentation de la production, il contiendrait la logique de l’application pour envoyer des messages d’invitation par courrier électronique aux utilisateurs nouvellement créés. Il est laissé dans l’exemple pour démontrer le flux logique d’application d’une application réelle.
+La méthode `createUsers` effectue une itération sur chaque adresse électronique et crée un objet Utilisateur correspondant (un utilisateur local dans le domaine `EDC_EXTERNAL_REGISTERED`). Enfin, la méthode `doEmails` est appelée. Cette méthode est délibérément laissée sous la forme d’un bulletin dans l’échantillon. Dans une mise en oeuvre de production, il contiendrait la logique de l’application pour envoyer des messages d’invitation par courrier électronique aux utilisateurs nouvellement créés. Il est laissé dans l’exemple pour démontrer le flux logique d’application d’une application réelle.
 
 ### Définir l’implémentation du gestionnaire d’invitation d’utilisateurs externes {#user-handler-implementation}
 

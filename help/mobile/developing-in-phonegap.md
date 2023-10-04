@@ -1,15 +1,15 @@
 ---
 title: PhoneGap
-description: Cette page sert de point de départ au développement d’applications à l’aide de PhoneGap Enterprise avec AEM. AEM s’intègre à PhoneGap afin que vous puissiez facilement créer des applications à l’aide de pages AEM. PhoneGap permet à l’utilisateur de créer des applications utilitaires qui permettent à l’utilisateur de travailler avec le contenu.
+description: Cette page sert de point de départ au développement d’applications à l’aide de PhoneGap Enterprise avec AEM. AEM s’intègre à PhoneGap afin que vous puissiez facilement créer des applications à l’aide de pages AEM. PhoneGap permet à l’utilisateur de créer des applications utilitaires qui permettent aux utilisateurs de travailler avec le contenu.
 uuid: c6ac02fa-d41c-4b57-95d8-171a96540dd6
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: bc61e495-b53b-49c5-99e5-c2e35873e6bd
 exl-id: 9a97e11b-a683-490a-ab7b-158de32984ef
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '248'
 ht-degree: 2%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 2%
 >
 >Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-AEM s’intègre à PhoneGap afin que vous puissiez facilement créer des applications à l’aide de pages AEM. PhoneGap permet à l’utilisateur de créer des applications utilitaires qui permettent à l’utilisateur de travailler avec le contenu. La synchronisation de contenu vous permet de créer des archives versionnées de pages pour le regroupement avec des applications.
+AEM s’intègre à PhoneGap afin que vous puissiez facilement créer des applications à l’aide de pages AEM. PhoneGap permet à l’utilisateur de créer des applications utilitaires qui permettent aux utilisateurs de travailler avec le contenu. La synchronisation de contenu vous permet de créer des archives versionnées de pages pour le regroupement avec des applications.
 
 >[!NOTE]
 >
->Avant de commencer à utiliser AEM Mobile avec Adobe PhoneGap, assurez-vous de configurer votre environnement et de commencer à utiliser le [Tableau de bord des applications AEM Mobile](/help/mobile/phonegap-authoring-apps.md).
+>Avant de commencer à utiliser AEM Mobile avec Adobe PhoneGap, assurez-vous de configurer votre environnement et de commencer à utiliser la variable [Tableau de bord des applications AEM Mobile](/help/mobile/phonegap-authoring-apps.md).
 
 Les ressources suivantes vous aideront à prendre en main AEM Mobile à l’aide d’Adobe PhoneGap :
 

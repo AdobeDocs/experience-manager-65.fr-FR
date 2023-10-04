@@ -11,10 +11,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2479'
-ht-degree: 77%
+source-wordcount: '2478'
+ht-degree: 76%
 
 ---
 
@@ -66,7 +66,7 @@ L’image suivante affiche diverses configurations de serveur AEM Forms et leurs
 **Auteur :** Une instance de création est un serveur AEM Forms s’exécutant en mode d’exécution Auteur standard. Il peut s’agir d’AEM Forms on JEE ou d’AEM Forms on OSGi. Il est destiné aux utilisateurs internes, aux concepteurs de formulaires et de communications interactives et aux développeurs. Il active les fonctionnalités suivantes :
 
 * **Création et gestion de formulaires et de communications interactives :** Les concepteurs et les développeurs peuvent créer et modifier des formulaires adaptatifs et des communications interactives, télécharger d’autres types de formulaires créés en externe, par exemple des formulaires créés dans Adobe Forms Designer, et gérer ces ressources à l’aide de la console Forms Manager.
-* **Publication de formulaires et de communications interactives :** Les ressources hébergées sur une instance d’auteur peuvent être publiées sur une instance de publication pour effectuer des opérations d’exécution. La publication de ressources utilise les fonctionnalités de réplication d’AEM. Adobe recommande qu’un agent de réplication soit configuré sur toutes les instances d’auteur pour transférer manuellement les formulaires publiés vers les instances de traitement, et qu’un autre agent de réplication soit configuré sur les instances de traitement avec le déclencheur *A réception* activé pour répliquer automatiquement les formulaires reçus afin de publier les instances.
+* **Publication de formulaires et de communications interactives :** Les ressources hébergées sur une instance d’auteur peuvent être publiées sur une instance de publication pour effectuer des opérations d’exécution. La publication de ressources utilise AEM fonctions de réplication. Adobe recommande qu’un agent de réplication soit configuré sur toutes les instances d’auteur pour transférer manuellement les formulaires publiés vers les instances de traitement, et qu’un autre agent de réplication soit configuré sur les instances de traitement avec le déclencheur *A réception* activé pour répliquer automatiquement les formulaires reçus afin de publier les instances.
 
 **Publier :** une instance de publication est un serveur AEM Forms fonctionnant en mode d’exécution de publication standard. Les instances de publication sont destinées aux utilisateurs finaux des applications de formulaires (par exemple, les utilisateurs accédant à un site Web public et envoyant des formulaires). L’élément Publier active les fonctionnalités suivantes :
 
@@ -81,7 +81,7 @@ L’image suivante affiche diverses configurations de serveur AEM Forms et leurs
 
   >[!NOTE]
   >
-  >Adobe recommande d’utiliser un magasin de données tiers pour enregistrer les données traitées finales au lieu d’utiliser le référentiel AEM.
+  >Adobe recommande d’utiliser un entrepôt de données tiers pour enregistrer les données traitées finales au lieu d’utiliser AEM référentiel.
 
 * **Stockage et post-traitement des données de correspondance provenant d’une instance de publication :** les workflows AEM exécutent le post-traitement facultatif des définitions de lettre correspondantes. Ces processus peuvent enregistrer les données finales traitées dans des magasins de données externes appropriés.
 

@@ -1,16 +1,12 @@
 ---
 title: Gestion des articles
-seo-title: Managing Articles
 description: Consultez cette page pour en savoir plus sur la création et la gestion des articles.
-seo-description: Follow this page to learn about creating and managing Articles.
-uuid: 72b86cd7-3016-41b6-a001-9dce4084e9db
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: b46058f9-4691-4fba-a656-0f8507875a79
 exl-id: ea6c8aa3-f86e-4878-8550-fe1662f10696
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 1%
@@ -44,7 +40,7 @@ Le workflow général pour créer un article est le suivant :
 
 1. Sélectionner **Mobile** à partir du rail latéral.
 1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de l’objet **Gestion des articles** mosaïque.
+1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la **Gestion des articles** mosaïque.
 1. Choisissez un modèle d’article et cliquez sur **Suivant**.
 1. Parcourez chaque étape de l’assistant pour continuer à créer votre nouvel article.
 1. Une fois prêt, cliquez sur **Créer**.
@@ -61,7 +57,7 @@ Le contenu Mobile On Demand existant peut être téléchargé (importé) de Mobi
 Workflow d’import d’un nouvel article
 
 1. Depuis Mobile, sélectionnez votre application mobile à la demande dans le catalogue.
-1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de l’objet **Gestion des articles** et sélectionnez Importer des articles.
+1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la **Gestion des articles** et sélectionnez Importer des articles.
 1. Cliquez sur **Importation d’articles** dans la boîte de dialogue, puis cliquez sur Fermer.
 1. Vos articles Mobile On Demand apparaissent désormais dans le **Gestion des articles** mosaïque.
 
@@ -97,7 +93,7 @@ Processus général d’affichage/de modification d’un article :
 
 1. Sélectionner **Afficher les propriétés** dans la barre d’actions.
 1. Affichez toutes les métadonnées disponibles pour cet article.
-1. Modifiez les métadonnées si vous le souhaitez, puis cliquez sur **Enregistrer** une fois terminé.
+1. Modifiez les métadonnées si nécessaire, puis cliquez sur **Enregistrer** une fois terminé.
 1. Vous pouvez éventuellement charger immédiatement les modifications dans Mobile On-Demand.
 
 ## Téléchargement d’un article {#uploading-an-article}

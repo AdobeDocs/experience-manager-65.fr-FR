@@ -2,10 +2,10 @@
 title: Création d’expériences commerciales
 description: Création d’expériences commerciales
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: ht
-source-wordcount: '703'
-ht-degree: 100%
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+workflow-type: tm+mt
+source-wordcount: '705'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ Les sélecteurs de produits et de catégories sont des boîtes de dialogue modal
 
 ### Sélecteur de produits {#product-picker}
 
-Ce sélecteur permet de parcourir la structure du catalogue ou la recherche en texte intégral pour trouver le produit. Les produits avec variation offrent une icône de dossier dans la colonne « Type ». Cliquez sur l’icône de dossier pour ouvrir les variantes du produit sélectionné.
+Ce sélecteur permet de parcourir la structure du catalogue ou la recherche de texte intégral pour trouver le produit. Les produits avec variation offrent une icône de dossier dans la colonne « Type ». Cliquez sur l’icône de dossier pour ouvrir les variantes du produit sélectionné.
 
 ![Sélecteur de produit](/help/commerce/cif/assets/authoring/product-picker.png)
 

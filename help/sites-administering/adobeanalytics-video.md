@@ -1,20 +1,16 @@
 ---
 title: Configuration du suivi vidéo pour Adobe Analytics
-seo-title: Configuring Video Tracking for Adobe Analytics
 description: Découvrez comment configurer le suivi vidéo pour SiteCatalyst.
-seo-description: Learn about configuring video tracking for SiteCatalyst.
-uuid: 5a862f05-abfa-42a2-ad40-4c1c32f1bd75
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1747'
-ht-degree: 87%
+ht-degree: 81%
 
 ---
 
@@ -57,7 +53,7 @@ Appliquez la procédure ci-dessous pour configurer un framework pour le suivi de
 
 La méthode Jalons effectue le suivi du plus grand nombre d’informations sur la vidéo, est hautement personnalisable et facile à configurer.
 
-Pour utiliser la méthode Jalons, spécifiez les décalages de suivi temporels afin de définir les jalons. Lorsque la lecture d’une vidéo franchit un jalon, la page appelle Adobe Analytics pour suivre l’événement. Pour chaque jalon que vous définissez, le composant crée une variable CQ que vous pouvez mapper à une propriété Adobe Analytics. Le nom de ces variables CQ utilise le format suivant :
+Pour utiliser la méthode Jalons, spécifiez les décalages de suivi temporels afin de définir les jalons. Lorsque la lecture d’une vidéo franchit un jalon, la page appelle Adobe Analytics pour suivre l’événement. Pour chaque jalon que vous définissez, le composant crée une variable CQ que vous pouvez mapper à une propriété Adobe Analytics. Le nom de ces variables CQ utilise le format suivant :
 
 ```shell
 eventdata.events.milestoneXX
@@ -250,7 +246,7 @@ La méthode Jalons non hérités est similaire à la méthode Jalons, excepté q
 
 * Lorsque la lecture d’une vidéo franchit un jalon, la page appelle Adobe Analytics pour suivre l’événement.
 * L’[ensemble statique des variables CQ](#cqvars) définies pour le mappage à des propriétés Adobe Analytics.
-* Pour chaque jalon que vous définissez, le composant crée une variable CQ que vous pouvez mapper à une propriété Adobe Analytics.
+* Pour chaque jalon que vous définissez, le composant crée une variable CQ que vous pouvez mapper à une propriété Adobe Analytics.
 
 Le nom de ces variables CQ utilise le format suivant :
 
@@ -374,13 +370,13 @@ Lors de l’utilisation de la méthode **Secondes héritées**, les appels Adobe
 
 1. Mapper ces variables à prop1, prop2 et prop3
 
-   Le **reste des informations pertinentes** dans l’appel sera envoyé dans **one** variable nommée **pev3**.
+   La variable **reste des informations pertinentes** dans l’appel sera envoyé dans **one** variable nommée **pev3**.
 
    Les appels à Adobe Analytics à l’aide de l’exemple fourni doivent se présenter comme suit lorsqu’ils sont affichés avec DigitalPulse Debugger :
 
    ![lseconds](assets/lseconds.png)
 
-   *L’appel est similaire à l’appel Jalons hérités ci-dessus. Consultez les informations relatives à pev3 **[fourni](/help/sites-administering/adobeanalytics.md)**.*
+   *L’appel est similaire à l’appel Jalons hérités ci-dessus. Consultez les informations relatives à pev3 **[fourni ici](/help/sites-administering/adobeanalytics.md)**.*
 
 **Références utilisées dans ce tutoriel :**
 

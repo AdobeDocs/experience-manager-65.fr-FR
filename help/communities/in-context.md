@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '786'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Pour plus d’informations sur les groupes d’utilisateurs de la communauté, c
 
 ### Création de publications de forum {#create-the-forum-posts}
 
-* Connectez-vous en tant que Rebekah Larsen (rebekah.larsen@trashymail.com)
+* Se connecter en tant que Rebekah Larsen (rebekah.larsen@trashymail.com)
 
    * Sélectionner un forum
    * Sélectionner une nouvelle publication
@@ -60,7 +60,7 @@ Pour plus d’informations sur les groupes d’utilisateurs de la communauté, c
 
    * Entrez le texte du corps
 
-     Je n&#39;ai pas eu beaucoup de succès quand je raccroche une mangeoire d&#39;oiseaux colibris chaque année. Il semble qu&#39;ils viennent un jour ou deux alors c&#39;est tout. Je le change une fois par semaine est-ce trop long ? Ai-je besoin de le modifier plus tôt ?
+     Je n&#39;ai pas eu beaucoup de succès quand j&#39;accroche une mangeoire aux colibris chaque année. Il semble qu&#39;ils viennent un jour ou deux alors c&#39;est tout. Je le change une fois par semaine est-ce trop long ? Ai-je besoin de le modifier plus tôt ?
 
    * Sélectionner une publication
    * Sélectionner Déconnexion
@@ -79,10 +79,10 @@ Pour plus d’informations sur les groupes d’utilisateurs de la communauté, c
 * Connectez-vous en tant qu’Andrew Schaeffer (andrew.schaeffer@trashymail.com)
 
    * Sélectionner un forum
-   * Pour la rubrique &quot;Hummingbird&quot;, sélectionnez En savoir plus.
+   * Pour la rubrique &quot;Hummingbird&quot;, sélectionnez En savoir plus
    * Saisissez le commentaire correspondant à la fonction Publier la réponse .
 
-     Je vends du nectar et des mangeoires - visitez https://my.viral.url/
+     Je vends du nectar et des mangeoires - rendez-vous sur https://my.viral.url/
 
    * Sélectionner une réponse
    * Sélectionner Déconnexion
@@ -119,7 +119,7 @@ Connectez-vous en tant qu’administrateur (admin) et accédez au fil en sélect
 
 Avis:
 
-* L’administrateur peut Marquer, Supprimer, Modifier, Refuser, Couper, Fermer, Epingler, Fonctionnalité.
+* L’administrateur peut marquer, supprimer, modifier, refuser, couper, fermer, épingler, fonction.
 * L’administrateur peut sélectionner Administration pour accéder à la console de modération.
 
 ![community-admin-forum](assets/community-admin-forum.png)
@@ -141,7 +141,7 @@ Connectez-vous en tant qu’Aaron McDonald (aaron.mcdonal@mailinator.com), un mo
 Avis:
 
 * Aaron peut répondre, supprimer, modifier ou refuser sa propre publication.
-* Aaron peut également marquer/autoriser, répondre, supprimer, modifier ou refuser tout autre contenu.
+* Aaron peut également Marquer/Autoriser, Répondre, Supprimer, Modifier, Refuser tout autre contenu.
 * Aaron peut couper le sujet du forum pour le déplacer vers un autre forum pour lequel il modérait.
 * Aaron peut sélectionner Administration pour accéder à la console de modération.
 

@@ -1,17 +1,15 @@
 ---
 title: Intégration d’AEM 6.5 à Adobe Campaign Standard
 description: Découvrez comment intégrer AEM 6.5 à Adobe Campaign Standard.
-uuid: ef31339e-d925-499c-b8fb-c00ad01e38ad
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 5c0fec99-7b1e-45d6-a115-e498d288e9e1
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
-source-git-commit: 8db2cadc83b26e04f9931e18c53db3bf0be03796
-workflow-type: ht
-source-wordcount: '1834'
-ht-degree: 100%
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+workflow-type: tm+mt
+source-wordcount: '1833'
+ht-degree: 98%
 
 ---
 
@@ -65,7 +63,7 @@ Par défaut, Adobe Campaign Standard est fourni avec un utilisateur `aemserver
 
 Votre utilisateur `aemserver` dispose désormais des droits nécessaires pour qu’AEM l’utilise pour communiquer avec Adobe Campaign.
 
-Toutefois, avant qu’AEM puisse utiliser l’utilisateur `aemserver`, son mot de passe doit être défini. Le mot de passe ne peut pas être défini avec Adobe Campaign. Un(e) ingénieur(e) du support Adobe doit s’en charger. [Veuillez envoyer un ticket à l’assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-tab=home&amp;lang=fr#support) pour demander la réinitialisation du mot de passe de l’utilisateur `aemserver`. Une fois que l’assistance clientèle d’Adobe vous a fourni le mot de passe, conservez-le dans un emplacement sécurisé.
+Toutefois, avant qu’AEM puisse utiliser l’utilisateur `aemserver`, son mot de passe doit être défini. Cette opération ne peut pas être effectuée via Adobe Campaign. Un(e) ingénieur(e) du support Adobe doit s’en charger. [Veuillez envoyer un ticket à l’assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-tab=home&amp;lang=fr#support) pour demander la réinitialisation du mot de passe de l’utilisateur `aemserver`. Une fois que l’assistance clientèle d’Adobe vous a fourni le mot de passe, conservez-le dans un emplacement sécurisé.
 
 ## Vérifier AEMResourceTypeFilter dans Campaign {#resource-type-filter}
 
@@ -93,7 +91,7 @@ L’option `AEMResourceTypeFilter` est maintenant configurée pour récupérer l
 
 ## Créer un modèle de diffusion d’e-mails spécifique à AEM dans Campaign {#aem-email-delivery-template}
 
-Par défaut, AEM n’est pas activé dans les modèles d’e-mail d’Adobe Campaign. Vous devez configurer un nouveau modèle de diffusion d’e-mail utilisable pour créer des e-mails avec du contenu AEM. Pour créer un modèle de diffusion d’e-mail spécifique à AEM, procédez comme suit.
+Par défaut, AEM n’est pas activé dans les modèles de courrier électronique Adobe Campaign. Vous devez configurer un nouveau modèle de diffusion d’e-mail utilisable pour créer des e-mails avec du contenu AEM. Pour créer un modèle de diffusion d’e-mail spécifique à AEM, procédez comme suit.
 
 1. Connectez-vous à Adobe Campaign en tant qu’administrateur.
 
@@ -191,7 +189,7 @@ Vous avez configuré la réplication sur l’instance de publication AEM afin q
 
 1. Connectez-vous à l’instance de création AEM en tant qu’administrateur.
 1. Dans le rail latéral de navigation générale, sélectionnez **Outils** > **Opérations** > **Console web** > **Configuration OSGi** et recherchez **Day CQ Link Externalizer**.
-1. Par défaut, la dernière entrée dans le champ **Domaines** est destinée à l’instance de publication. Remplacez l’URL de la valeur `http://localhost:4503` par défaut par votre instance de publication disponible publiquement.
+1. Par défaut, la dernière entrée dans le champ **Domaines** est destinée à l’instance de publication. Modifier l’URL à partir de la valeur par défaut `http://localhost:4503` à votre instance de publication publique.
 
    ![Configuration de l’externaliseur.](assets/acc-externalizer-config.png)
 
@@ -201,7 +199,7 @@ Vous avez configuré l’externaliseur et Adobe Campaign peut désormais accéde
 
 >[!NOTE]
 >
->L’instance de publication doit être accessible à partir du serveur Adobe Campaign. S’il pointe vers `localhost:4503` ou un autre serveur auquel Adobe Campaign ne parvient pas à se connecter, les images d’AEM ne s’affichent pas dans la console Adobe Campaign.
+L’instance de publication doit être accessible à partir du serveur Adobe Campaign. S’il pointe vers `localhost:4503` ou un autre serveur auquel Adobe Campaign ne parvient pas à se connecter, les images d’AEM ne s’affichent pas dans la console Adobe Campaign.
 
 ## Configurer l’utilisateur distant de Campaign dans AEM {#campaign-remote-user}
 

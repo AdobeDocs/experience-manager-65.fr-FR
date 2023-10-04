@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: ht
-source-wordcount: '531'
-ht-degree: 100%
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 97%
 
 ---
 
@@ -46,7 +46,7 @@ Les bonnes pratiques concernant Assets, y compris les fonctionnalités Dynamic 
   <tr>
    <td>Comment organiser votre contenu (hiérarchie des dossiers)</td>
    <td><a href="/help/assets/organize-assets.md">Bonnes pratiques relatives à la gestion des fichiers</a></td>
-   <td>La plupart des profils de traitement reposent sur des dossiers, car les vidéos, les métadonnées et le traitement des images sont toujours appliqués aux dossiers. Ce document sur les bonnes pratiques décrit comment définir et configurer votre hiérarchie des dossiers, car la hiérarchie a un impact significatif sur le traitement du contenu. </td>
+   <td>La plupart des profils de traitement sont basés sur des dossiers, car les vidéos, les métadonnées et le traitement des images sont toujours appliqués aux dossiers. Ce document sur les bonnes pratiques décrit comment définir et configurer votre hiérarchie des dossiers, car la hiérarchie a un impact significatif sur le traitement du contenu. </td>
   </tr>
   <tr>
    <td>Intégration de Scene7 avec AEM</td>

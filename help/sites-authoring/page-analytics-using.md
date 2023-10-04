@@ -1,21 +1,17 @@
 ---
 title: Afficher les données d’analyse de page pour mesurer l’efficacité du contenu de page
-seo-title: Seeing Page Analytics Data
 description: Utilisez les données d’analyse de page pour évaluer l’efficacité de leur contenu de page.
-seo-description: Use page analytics data to gauge the effectiveness of their page content
-uuid: 5398a5d5-0239-4194-a403-77f5e6fcd741
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 5d192a48-c86f-4803-bb0d-0411ac7470f5
 docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
-workflow-type: ht
-source-wordcount: '449'
-ht-degree: 100%
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+workflow-type: tm+mt
+source-wordcount: '447'
+ht-degree: 89%
 
 ---
 
@@ -40,9 +36,9 @@ Chaque colonne indique une valeur pour la période de création de rapports actu
 >Pour modifier la période de mise à jour, [configurez l’intervalle d’importation](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
 1. Ouvrez la console **Sites**, par exemple, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content).
-1. À l’extrême droite de la barre d’outils (dans le coin supérieur droit), appuyez ou cliquez sur l’icône pour sélectionner **Vue Liste** (l’icône affichée dépendra de la [vue actuelle](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
+1. À l’extrême droite de la barre d’outils (coin supérieur droit), cliquez ou appuyez sur l’icône à sélectionner **Mode Liste** (l’icône affichée dépend de la variable [vue actuelle](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. À l’extrémité droite de la barre d’outils (coin supérieur droit), cliquez ou appuyez à nouveau sur l’icône, puis sélectionnez **Paramètres d’affichage**. La boîte de dialogue **Configurer les colonnes** s’ouvre. Apportez les modifications requises et confirmez-les avec la commande **Mettre à jour**.
+1. Encore une fois, à l’extrême droite de la barre d’outils (coin supérieur droit), cliquez ou appuyez sur l’icône, puis sélectionnez **Paramètres d’affichage**. La boîte de dialogue **Configurer les colonnes** s’ouvre. Apportez les modifications requises et confirmez-les avec la commande **Mettre à jour**.
 
    ![spad-02](assets/spad-02.png)
 

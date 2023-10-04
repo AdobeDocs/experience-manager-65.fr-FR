@@ -1,17 +1,15 @@
 ---
 title: Intégration d’AEM 6.5 à Adobe Campaign Classic
 description: Découvrez comment intégrer AEM 6.5 à Adobe Campaign Classic.
-uuid: 3c998b0e-a885-4aa9-b2a4-81b86f9327d3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 8db2cadc83b26e04f9931e18c53db3bf0be03796
-workflow-type: ht
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+workflow-type: tm+mt
 source-wordcount: '1583'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -190,7 +188,7 @@ Vous avez configuré la réplication sur l’instance de publication AEM afin q
 
 1. Connectez-vous à l’instance de création AEM en tant qu’administrateur.
 1. Dans le rail latéral de navigation générale, sélectionnez **Outils** > **Opérations** > **Console web** > **Configuration OSGi** et recherchez **Day CQ Link Externalizer**.
-1. Par défaut, la dernière entrée dans le champ **Domaines** est destinée à l’instance de publication. Remplacez l’URL de la valeur `http://localhost:4503` par défaut par votre instance de publication disponible publiquement.
+1. Par défaut, la dernière entrée dans le champ **Domaines** est destinée à l’instance de publication. Modifier l’URL à partir de la valeur par défaut `http://localhost:4503` à votre instance de publication publique.
 
    ![Configuration de l’externaliseur.](assets/acc-externalizer-config.png)
 
@@ -200,7 +198,7 @@ Vous avez configuré l’externaliseur et Adobe Campaign peut désormais accéde
 
 >[!NOTE]
 >
->L’instance de publication doit être accessible à partir du serveur Adobe Campaign. S’il pointe vers `localhost:4503` ou un autre serveur auquel Adobe Campaign ne parvient pas à se connecter, les images d’AEM ne s’affichent pas dans la console Adobe Campaign.
+L’instance de publication doit être accessible à partir du serveur Adobe Campaign. S’il pointe vers `localhost:4503` ou un autre serveur auquel Adobe Campaign ne parvient pas à se connecter, les images d’AEM ne s’affichent pas dans la console Adobe Campaign.
 
 ## Configurer l’utilisateur distant de Campaign dans AEM {#configure-user}
 

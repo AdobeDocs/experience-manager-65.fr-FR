@@ -1,16 +1,14 @@
 ---
 title: Modèles de page de contenu pour les applications mobiles
 description: Consultez cette page pour en savoir plus sur les modèles de page pour les applications mobiles.
-uuid: ef469796-10f5-44f4-a5c7-25025ca192b0
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: f45d8a9b-14d6-468f-a44c-3933e962922c
 exl-id: 7f00d426-4d28-41ee-8c54-636349e48669
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2654'
+source-wordcount: '2652'
 ht-degree: 0%
 
 ---
@@ -23,7 +21,7 @@ ht-degree: 0%
 
 ## Modèles de page pour les applications mobiles {#page-templates-for-mobile-apps-1}
 
-Les composants de page que vous créez pour votre application sont basés sur le composant /libs/mobileapps/components/angular/ng-page ([s’ouvrir dans CRXDE Lite sur un serveur local ;](http://localhost:4502/crx/de/index.jsp#/libs/mobileapps/components/angular/ng-page)). Ce composant contient les scripts JSP suivants que votre composant hérite ou remplace :
+Les composants de page que vous créez pour votre application sont basés sur le composant /libs/mobileapps/components/angular/ng-page ([s’ouvrir en CRXDE Lite sur un serveur local ;](http://localhost:4502/crx/de/index.jsp#/libs/mobileapps/components/angular/ng-page)). Ce composant contient les scripts JSP suivants que votre composant hérite ou remplace :
 
 * ng-page.jsp
 * head.jsp
@@ -63,7 +61,7 @@ En mode création, chaque page individuelle est rendue séparément. Angular ne 
 
 Cette stratégie active les fonctionnalités de création (telles que l’ajout et la modification de composants dans le système de paragraphes, le Sidekick, le mode de conception, etc.) pour fonctionner sans modification. Les pages qui reposent sur le rendu côté client, comme celles des applications, ne fonctionnent pas correctement en mode de création AEM.
 
-Notez que l’inclusion template.jsp est encapsulée dans une `div` qui contient l’élément `ng-controller` . Cette structure permet de lier le contenu DOM au contrôleur. Par conséquent, bien que les pages qui s’affichent du côté client échouent, les composants individuels qui le font fonctionnent correctement (voir la section sur les composants ci-dessous).
+Notez que l’inclusion template.jsp est encapsulée dans une `div` qui contient l’élément `ng-controller` de . Cette structure permet de lier le contenu DOM au contrôleur. Par conséquent, bien que les pages qui s’affichent du côté client échouent, les composants individuels qui le font fonctionnent correctement (voir la section sur les composants ci-dessous).
 
 ```xml
 <div ng-controller="<c:out value="${controllerNameStripped}"/>">
@@ -73,9 +71,9 @@ Notez que l’inclusion template.jsp est encapsulée dans une `div` qui contient
 
 **Mode de publication**
 
-En mode de publication (par exemple, lorsque l’application est exportée à l’aide de la synchronisation de contenu), toutes les pages deviennent une application d’une seule page (SPA). (Pour en savoir plus sur SPA, utilisez le tutoriel Angular, en particulier [https://docs.angularjs.org/tutorial/step_07](https://docs.angularjs.org/tutorial/step_07).)
+En mode de publication (par exemple, lorsque l’application est exportée à l’aide de la synchronisation de contenu), toutes les pages deviennent une application d’une seule page (SPA). (Pour en savoir plus sur SPA, utilisez le tutoriel sur l’Angular, en particulier [https://docs.angularjs.org/tutorial/step_07](https://docs.angularjs.org/tutorial/step_07).)
 
-Il n’y a qu’une seule page de HTML dans un SPA (une page qui contient le `<html>` ). Cette page est appelée &quot;modèle de mise en page&quot;. Dans la terminologie Angular, il s&#39;agit &quot; d&#39;un groupe d&#39;individus dont la mission est de se doter d&#39;un système de gestion et de gestion de l&#39;information13 &quot;.un modèle commun à toutes les vues de notre application.&quot; Considérez cette page comme la &quot;page de l’application de niveau supérieur&quot;. Par convention, la page de l’application de niveau supérieur est la suivante : `cq:Page` noeud de votre application le plus proche de la racine (et n’est pas une redirection).
+Il n’y a qu’une seule page de HTML dans un SPA (une page qui contient la variable `<html>` ). Cette page est appelée &quot;modèle de mise en page&quot;. Dans la terminologie de l’Angular, il s’agit &quot; d’un modèle commun à toutes les vues de notre application &quot;. Considérez cette page comme la &quot;page de l’application de niveau supérieur&quot;. Par convention, la page de l’application de niveau supérieur est la suivante : `cq:Page` noeud de votre application le plus proche de la racine (et n’est pas une redirection).
 
 Comme l’URI réel de votre application ne change pas en mode de publication, les références aux ressources externes de cette page doivent utiliser des chemins d’accès relatifs. Par conséquent, un composant d’image spécial est fourni, qui prend en compte cette page de niveau supérieur lors du rendu des images pour l’exportation.
 
@@ -231,13 +229,13 @@ Ce script affiche le contenu du composant ou un espace réservé approprié lors
 
 ### template.jsp {#template-jsp-1}
 
-Le script template.jsp effectue le rendu du balisage du composant. Si le composant en question est piloté par les données JSON extraites d’AEM (telles que &#39;ng-text&#39;) : /libs/mobileapps/components/angular/ng-text/template.jsp), ce script sera chargé de câbler le balisage avec les données exposées par la portée du contrôleur de la page.
+Le script template.jsp effectue le rendu du balisage du composant. Si le composant en question est piloté par les données JSON extraites d’AEM (telles que &#39;ng-text&#39;: /libs/mobileapps/components/angular/ng-text/template.jsp), ce script sera chargé de câbler le balisage avec les données exposées par la portée du contrôleur de la page.
 
 Toutefois, les exigences de performances exigent parfois qu’aucun modèle côté client (ou liaison de données) ne soit effectué. Dans ce cas, il vous suffit d’effectuer le rendu du balisage du composant côté serveur et il est inclus dans le contenu du modèle de page.
 
 ### overhead.jsp {#overhead-jsp}
 
-Dans les composants pilotés par les données JSON (par exemple &quot;ng-text&quot;) : /libs/mobileapps/components/angular/ng-text), surcharge.jsp peut être utilisé pour supprimer tout le code Java de template.jsp. Il est ensuite référencé à partir de template.jsp et toutes les variables qu’il expose dans la requête peuvent être utilisées. Cette stratégie encourage la séparation logique et présentation et limite la quantité de code qui doit être copiée et collée lorsqu’un nouveau composant est dérivé d’un composant existant.
+Dans les composants pilotés par les données JSON (tels que &#39;ng-text&#39;: /libs/mobileapps/components/angular/ng-text), surcharge.jsp peut être utilisé pour supprimer tout le code Java de template.jsp. Il est ensuite référencé à partir de template.jsp et toutes les variables qu’il expose dans la requête peuvent être utilisées. Cette stratégie encourage la séparation logique et présentation et limite la quantité de code qui doit être copiée et collée lorsqu’un nouveau composant est dérivé d’un composant existant.
 
 ### controller.js.jsp {#controller-js-jsp-1}
 
@@ -316,7 +314,7 @@ Le répertoire after-platform_add contient la variable `copy_AMS_Conifg.js` fich
 
 ### .cordova/hooks/after-prepare/ {#cordova-hooks-after-prepare}
 
-Le répertoire after-prepare contient la variable `copy_resource_files.js` fichier . Ce script copie un certain nombre d’images d’icône et d’écran de démarrage dans des emplacements spécifiques à la plateforme.
+Le répertoire after-prepare contient la variable `copy_resource_files.js` fichier . Ce script copie plusieurs images d’icône et d’écran de démarrage dans des emplacements spécifiques à la plateforme.
 
 ### .cordova/hooks/before_platform_add/ {#cordova-hooks-before-platform-add}
 
@@ -381,13 +379,13 @@ Le fichier config.xml contient la variable `content` element:
 
 `<content src="content/phonegap/weretail/apps/ng-we-retail/en.html" />`
 
-Dans la documentation PhoneGap (`https://docs.phonegap.com`), cet élément est décrit comme &quot;facultatif &lt;content> définit la page de début de l’application dans le répertoire des ressources web de niveau supérieur. La valeur par défaut est index.html, qui s’affiche généralement dans le répertoire www de niveau supérieur d’un projet.&quot;
+Dans la documentation PhoneGap (`https://docs.phonegap.com`), cet élément est décrit comme &quot;facultatif &lt;content> définit la page de début de l’application dans le répertoire des ressources web de niveau supérieur. La valeur par défaut est index.html, qui apparaît généralement dans le répertoire www de niveau supérieur d’un projet.&quot;
 
 La version de PhoneGap échoue si un fichier index.html n’est pas présent. Par conséquent, ce fichier est inclus.
 
 ### www/res {#www-res}
 
-Le répertoire res contient des images et des icônes d’écran de démarrage. Le `copy_resource_files.js` Le script copie les fichiers à leur emplacement spécifique au niveau de la plate-forme lors de la `after_prepare` phase de création.
+Le répertoire res contient des images et des icônes d’écran de démarrage. La variable `copy_resource_files.js` Le script copie les fichiers à leur emplacement spécifique au niveau de la plate-forme lors de la `after_prepare` phase de création.
 
 ### www/etc {#www-etc}
 
@@ -404,7 +402,7 @@ Le répertoire de contenu contient le reste du contenu web de l’application. L
 * HTML du contenu de la page, directement créé dans AEM
 * Ressources d’image associées aux composants AEM
 * Contenu JavaScript généré par les scripts côté serveur
-* Fichiers JSON décrivant le contenu d’une page ou d’un composant
+* Fichiers JSON décrivant le contenu de page ou de composant
 
 ### www/package.json {#www-package-json}
 

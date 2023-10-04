@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: components
 discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2327'
 ht-degree: 37%
@@ -59,7 +59,7 @@ Il est également possible d’ajouter les dictionnaires i18n à un projet de tr
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur les projets de traduction, reportez-vous à la section [Gestion des projets de traduction](/help/sites-administering/tc-manage.md).
+   >Pour plus d’informations sur les projets de traduction, consultez [Gestion des projets de traduction](/help/sites-administering/tc-manage.md).
 
 ## Création d’un dictionnaire {#creating-a-dictionary}
 
@@ -179,13 +179,13 @@ La barre de recherche située au bas de l’outil Traducteur propose des options
 * **Filtre par texte** : motif à faire correspondre à la chaîne, au commentaire ou aux traductions de langue anglaise. Seuls les éléments qui correspondent à l’ensemble ou à une partie du schéma s’affichent dans le tableau.
 * **Modifications : Tous, Modifié, Nouveau, Supprimé** : affiche les éléments qui ont été modifiés, mais pas enregistrés.
 
-   * Any : Afficher les éléments qui ont été modifiés, ajoutés ou supprimés.
-   * Modifié : Afficher les éléments qui ont été modifiés.
-   * Nouveau : Afficher les éléments qui sont ajoutés.
-   * Supprimé : Afficher les éléments à supprimer.
-   * Sélections multiples : Afficher les éléments qui possèdent toutes les propriétés sélectionnées.
+   * N’importe lequel : affiche les éléments qui ont été modifiés, ajoutés ou supprimés.
+   * Modifié : affiche les éléments qui ont été modifiés.
+   * Nouveau : affiche les éléments ajoutés.
+   * Supprimé : affiche les éléments à supprimer.
+   * Sélections multiples : affiche les éléments qui possèdent toutes les propriétés sélectionnées.
 
-* **Comportement**: Afficher les éléments qui comportent des commentaires pour les traducteurs.
+* **Comportement**: affiche les éléments qui comportent des commentaires pour les traducteurs.
 * **Traductions manquantes** : affiche les éléments pour lesquels il n’existe pas de traduction pour au moins une langue.
 
 ![chlimage_1-215](assets/chlimage_1-215.png)
@@ -198,7 +198,7 @@ La barre de recherche située au bas de l’outil Traducteur propose des options
 
 Après avoir ajouté la chaîne anglaise à un dictionnaire, vous pouvez ajouter les traductions de la chaîne. Vous pouvez également [export du dictionnaire](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) pour le faire traduire par un tiers.
 
-1. Sélectionner [dictionnaire spécifique à votre projet](#creating-a-dictionary) car il spécifie le chemin d’accès dans le référentiel contenant les traductions. Par exemple, sélectionnez **Dictionnaires** comme :
+1. Sélectionner [dictionnaire spécifique à votre projet](#creating-a-dictionary) car il spécifie le chemin d’accès dans le référentiel contenant les traductions. Par exemple, sélectionnez **Dictionnaires** en tant que :
 
    `/apps/myProject/i18n`
 
@@ -291,7 +291,7 @@ Procédez comme suit pour ajouter ou supprimer des langues.
 
    * **Nom** : `languages`
    * **Type** : `Multi-String`
-   * **Valeur**: la liste des langues à afficher. Par exemple :
+   * **Valeur**: liste des langues à afficher. Par exemple :
 
       * fr
       * es
@@ -365,7 +365,7 @@ Pour modifier les définitions par défaut, procédez comme suit :
             /apps/wcm/core/resources/languages
      ```
 
-   Vous pouvez le faire à l’aide de la console web OSGi :
+   Pour ce faire, utilisez la console web OSGi :
 
    ```shell
    https://<hostname>:<port-number>/system/console/configMgr/com.day.cq.wcm.core.impl.LanguageManagerImpl

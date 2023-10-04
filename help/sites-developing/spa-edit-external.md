@@ -1,8 +1,8 @@
 ---
 title: Modification d’un SPA externe dans Adobe Experience Manager
-description: Ce document décrit les étapes recommandées pour télécharger un SPA autonome vers une instance Adobe Experience Manager, ajouter des sections de contenu modifiables et activer la création.
+description: Ce document décrit les étapes recommandées pour charger un SPA autonome vers une instance Adobe Experience Manager, ajouter des sections de contenu modifiables et activer la création.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2440'
 ht-degree: 78%
@@ -49,7 +49,7 @@ Pour tirer parti des fonctionnalités de SPA AEM, vous pouvez utiliser les dépe
 * [`@adobe/aem-spa-component-mapping`](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [`@adobe/aem-spa-page-model-manager`](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
 
-Le `@adobe/aem-spa-page-model-manager` fournit l’API pour initialiser un gestionnaire de modèles et récupérer le modèle à partir de l’instance AEM. Ce modèle peut ensuite être utilisé pour effectuer le rendu des composants AEM à l’aide d’API provenant de `@adobe/aem-react-editable-components` et `@adobe/aem-spa-component-mapping`.
+La variable `@adobe/aem-spa-page-model-manager` fournit l’API pour initialiser un gestionnaire de modèles et récupérer le modèle à partir de l’instance AEM. Ce modèle peut ensuite être utilisé pour effectuer le rendu des composants AEM à l’aide d’API provenant de `@adobe/aem-react-editable-components` et `@adobe/aem-spa-component-mapping`.
 
 #### Installation {#installation}
 
@@ -73,7 +73,7 @@ La capture d’écran suivante montre comment activer l’initialisation de `Mod
 
 Dans cet exemple, `ModelManager` est initialisé et un `ModelStore` vide est créé.
 
-Le `initializationAsync` peut éventuellement accepter une `options` objet en tant que paramètre :
+La variable `initializationAsync` peut éventuellement accepter une `options` objet en tant que paramètre :
 
 * `path` – Lors de l’initialisation, le modèle au niveau du chemin d’accès défini est récupéré et stocké dans le `ModelStore`. Vous pouvez l’utiliser pour récupérer le `rootModel` à l’initialisation, si nécessaire.
 * `modelClient` – Permet de fournir un client personnalisé chargé de récupérer le modèle.
@@ -103,7 +103,7 @@ Le `initializationAsync` peut éventuellement accepter une `options` objet en ta
 
    >[!NOTE]
    >
-   >Dans cet exemple, il existe des versions distinctes du composant : AEM les composants React encapsulés et non encapsulés. La version encapsulée doit être utilisée lors de l’utilisation explicite du composant. Lorsque le composant fait partie d’une page, vous pouvez continuer à utiliser le composant par défaut comme dans l’éditeur de SPA.
+   >Dans cet exemple, il existe des versions distinctes du composant : AEM composants React encapsulés et déencapsulés. La version encapsulée doit être utilisée lors de l’utilisation explicite du composant. Lorsque le composant fait partie d’une page, vous pouvez continuer à utiliser le composant par défaut comme dans l’éditeur de SPA.
 
 1. Générez le contenu dans le composant.
 
@@ -111,7 +111,7 @@ Le `initializationAsync` peut éventuellement accepter une `options` objet en ta
 
    ![Propriétés du composant texte](assets/external-spa-text-properties.png)
 
-   Ces valeurs sont transmises en tant que propriétés au nouveau créé. `AEMText` Composant React et peut être utilisé pour effectuer le rendu du contenu.
+   Ces valeurs sont transmises en tant que propriétés au nouveau créé. `AEMText` React et peut être utilisé pour effectuer le rendu du contenu.
 
    ```javascript
    import React from 'react';
@@ -157,8 +157,8 @@ Prenons une page d’exemple où du texte du projet SPA WKND doit être ajouté.
 
 1. Déterminez le chemin d’accès du nœud à afficher.
 
-   * `pagePath`: La page contenant le noeud, dans l’exemple `/content/wknd-spa-react/us/en/home`
-   * `itemPath`: Chemin d’accès au noeud dans la page, dans l’exemple `root/responsivegrid/text`
+   * `pagePath`: page contenant le noeud, dans l’exemple `/content/wknd-spa-react/us/en/home`
+   * `itemPath`: chemin d’accès au noeud dans la page, dans l’exemple `root/responsivegrid/text`
       * Il s’agit des noms des éléments contenant sur la page.
 
    ![Chemin du nœud](assets/external-spa-path.png)

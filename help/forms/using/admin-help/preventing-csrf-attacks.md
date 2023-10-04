@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: e17fc114-eba5-4e1b-8e70-ad6af7008018
-source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '972'
-ht-degree: 18%
+ht-degree: 16%
 
 ---
 
@@ -17,20 +17,20 @@ ht-degree: 18%
 
 ## Fonctionnement des attaques CSRF {#how-csrf-attacks-work}
 
-La falsification de requête intersite (CSRF) est une vulnérabilité de site web dans laquelle le navigateur d’un utilisateur valide est utilisé pour envoyer une requête malveillante, par exemple via un iFrame. Étant donné que le navigateur envoie les cookies sur une base de domaine, si l’utilisateur est connecté à une application, les données de l’utilisateur peuvent être compromises.
+La falsification de requête intersite (CSRF, Cross-site request forgery) est une vulnérabilité de site web dans laquelle le navigateur d’un utilisateur valide est utilisé pour envoyer une requête malveillante, par exemple via un iFrame. Étant donné que le navigateur envoie les cookies sur une base de domaine, si l’utilisateur est connecté à une application, les données de l’utilisateur peuvent être compromises.
 
 Supposons, par exemple, que vous soyez connecté à Administration Console dans un navigateur. Vous recevez un message électronique contenant un lien. Cliquez sur le lien pour ouvrir un nouvel onglet dans votre navigateur. La page que vous avez ouverte contient un iFrame masqué qui émet une requête malveillante au serveur Forms à l’aide du cookie de votre session forms authentifiée. Comme User Management reçoit un cookie valide, il transmet la demande.
 
 ## Termes liés aux CSRF {#csrf-related-terms}
 
-**Référent :** adresse de la page source à partir de laquelle la requête est envoyée. Par exemple, une page web sur site1.com contient un lien vers site2.com. Un clic sur le lien envoie une requête à site2.com. Le référent de cette requête est site1.com, car la requête provient d’une page dont la source est site1.com.
+**Référent :** adresse de la page source à partir de laquelle la requête est envoyée. Par exemple, une page web sur site1.com contient un lien vers site2.com. Un clic sur le lien envoie une requête à site2.com. Le référent de cette requête est site1.com car la requête est effectuée à partir d’une page dont la source est site1.com.
 
-**URI Placés sur la liste autorisée :** Les URI identifient les ressources sur le serveur Forms qui sont demandées, par exemple /adminui ou /contentspace. Certaines ressources peuvent autoriser des requêtes à entrer dans l’application à partir de sites Web externes. Ces ressources sont considérées comme des URI placés sur la liste autorisée. Le serveur Forms n’effectue jamais de vérification de référent à partir d’URI placés sur la liste autorisée.
+**URI PLACÉS SUR LA LISTE AUTORISÉE :** Les URI identifient les ressources sur le serveur Forms qui sont demandées, par exemple /adminui ou /contentspace. Certaines ressources peuvent autoriser des requêtes à entrer dans l’application à partir de sites Web externes. Ces ressources sont considérées comme des URI placés sur la liste autorisée. Le serveur Forms n’effectue jamais de vérification de référent à partir d’URI placés sur la liste autorisée.
 
-**Référent nul :** Lorsque vous ouvrez une nouvelle fenêtre ou un nouvel onglet de navigateur, puis saisissez une adresse et appuyez sur Entrée, le référent est nul. La demande est entièrement nouvelle et ne provient pas d’une page Web parente ; il n’existe donc aucun référent pour la requête. Le serveur Forms peut recevoir un référent null de :
+**Référent nul :** Lorsque vous ouvrez une nouvelle fenêtre ou un nouvel onglet de navigateur, puis saisissez une adresse et appuyez sur Entrée, le référent est nul. La requête est entièrement nouvelle et ne provient pas d’une page web parente. Par conséquent, il n’existe aucun référent pour la requête. Le serveur Forms peut recevoir un référent null de :
 
 * demandes effectuées sur des points de terminaison SOAP ou REST depuis Acrobat
-* lorsqu’un utilisateur final effectue une requête HTTP sur un point d’entrée SOAP ou REST AEM Forms ;
+* tout client de bureau effectuant une requête HTTP sur un point de terminaison SOAP ou REST AEM forms
 * lorsqu’une nouvelle fenêtre de navigateur est ouverte et que l’URL de toute page de connexion de l’application web d’AEM forms est saisie.
 
 Autoriser un référent null sur les points de terminaison SOAP et REST. Autorisez également un référent null sur toutes les pages de connexion URI telles que /adminui et /contentspace et leurs ressources mappées correspondantes. Par exemple, le servlet mappé pour /contentspace est /contentspace/faces/jsp/login.jsp, qui doit être une exception de référent nulle. Cette exception n’est requise que si vous activez le filtrage par GET pour votre application web. Vos applications peuvent indiquer s’il faut autoriser les référents nuls. Voir « Protection contre les attaques multisites par usurpation de requête (CSRF) » dans [Renforcement et sécurité dʼAEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/HardeningSecurity/index.html).

@@ -12,10 +12,10 @@ feature: Video Profiles
 role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
-workflow-type: ht
-source-wordcount: '3736'
-ht-degree: 100%
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+workflow-type: tm+mt
+source-wordcount: '3732'
+ht-degree: 98%
 
 ---
 
@@ -27,11 +27,11 @@ Voici d’autres facteurs qui déterminent la qualité des vidéos :
 
 * **Résolution de la vidéo source originale chargée**
 
-   Si la vidéo MP4 a été enregistrée à une résolution moins élevée, telle que 240p ou 360p, elle ne peut pas être diffusée en haute définition en continu.
+  Si la vidéo MP4 a été enregistrée à une résolution moins élevée, telle que 240p ou 360p, elle ne peut pas être diffusée en haute définition en continu.
 
 * **Taille du lecteur vidéo**
 
-   Par défaut, la largeur du profil de codage de vidéo adaptative est définie sur « Auto ». Encore une fois, lors de la lecture, la meilleure qualité est utilisée en fonction de la taille du lecteur.
+  Par défaut, la largeur du profil de codage de vidéo adaptative est définie sur « Auto ». Encore une fois, lors de la lecture, la meilleure qualité est utilisée en fonction de la taille du lecteur.
 
 Voir [Bonnes pratiques en matière de codage vidéo](/help/assets/video.md#best-practices-for-encoding-videos).
 
@@ -41,7 +41,7 @@ Consultez également la section [Bonnes pratiques pour organiser vos ressources 
 >
 >Pour générer les métadonnées d’une vidéo et les miniatures associées, la vidéo doit passer par le processus de codage dans Dynamic Media. Dans Adobe Experience Manager, le workflow **[!UICONTROL Vidéo de codage de Dynamic Media]** code la vidéo si vous avez activé Dynamic Media et configuré des services cloud vidéo. Ce workflow capture l’historique de traitement des workflows et les informations d’échec. Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Si vous avez activé Dynamic Media et configuré les services cloud vidéo, le workflow **[!UICONTROL Vidéo d’encodage Dynamic Media]** prend automatiquement effet lorsque vous chargez une vidéo. (Si vous n’utilisez pas Dynamic Media, le workflow **[!UICONTROL Ressource de mise à jour DAM]** prend effet.)
 >
->Les métadonnées sont utiles lorsque vous recherchez des ressources. Les miniatures sont des images vidéo statiques qui sont générées lors du codage. Elles sont requises par le système Experience Manager et utilisées dans l’interface utilisateur pour vous aider à identifier visuellement des vidéos en mode Carte, dans les résultats de recherche et dans la liste des ressources. Vous pouvez consulter les miniatures générées en sélectionnant l’icône Rendus (palette de peintre) d’une vidéo codée.
+>Les métadonnées sont utiles lorsque vous recherchez des ressources. Les miniatures sont des images vidéo statiques qui sont générées lors du codage. Elles sont requises par le système Experience Manager et utilisées dans l’interface utilisateur pour vous aider à identifier visuellement des vidéos dans la vue Cartes, dans la vue Résultats de recherche et dans la vue Liste des ressources. Vous pouvez consulter les miniatures générées en sélectionnant l’icône Rendus (palette de peintre) d’une vidéo codée.
 
 Une fois le profil vidéo créé, vous l’appliquez à un ou à plusieurs dossiers. Consultez la section [Application d’un profil vidéo à des dossiers](#applying-a-video-profile-to-folders).
 
@@ -118,7 +118,7 @@ Adobe Sensei est limité à 9 000 images. C’est-à-dire cinq minutes à 30 
 >
 >Pour que le recadrage intelligent de vidéo fonctionne, vous devez inclure au moins un paramètre prédéfini de codage vidéo dans votre profil vidéo.
 
-Pour utiliser le recadrage intelligent de vidéo, vous créez un profil de codage de vidéo adaptative ou progressive. Dans votre profil, utilisez l’outil **[!UICONTROL Smart Crop Ratio]** pour sélectionner des proportions prédéfinies. Par exemple, après avoir défini vos paramètres prédéfinis de codage vidéo, vous pouvez ajouter une définition Paysage mobile avec des proportions de 16x9 et une définition Portrait mobile avec des proportions de 9x16. Les autres proportions ou rapports de recadrage que vous pouvez choisir sont 1x1, 4x3 et 4x5.
+Pour utiliser le recadrage intelligent de vidéo, vous créez un profil de codage de vidéo adaptative ou progressive. Dans votre profil, utilisez l’outil **[!UICONTROL Smart Crop Ratio]** pour sélectionner des proportions prédéfinies. Par exemple, après avoir défini vos paramètres prédéfinis de codage vidéo, vous pouvez ajouter une définition &quot;Paysage mobile&quot; avec un format de 16×9 et une définition &quot;Portrait mobile&quot; avec un format de 9×16. Les autres proportions ou rapports de recadrage que vous pouvez choisir sont 1×1, 4×3 et 4×5.
 
 ![Modification d’un profil de codage vidéo avec le recadrage intelligent](assets/edit-smart-crop-video2.png)
 
@@ -411,7 +411,7 @@ Consultez également la section [Retraitement des ressources dans un dossier apr
 
 * Accédez au nœud suivant de CRXDE Lite : `/content/dam/jcr:content`. Ajoutez la propriété `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` et sélectionnez **[!UICONTROL Enregistrer tout]**.
 
-   ![chlimage_1-519](assets/chlimage_1-519.png)
+  ![chlimage_1-519](assets/chlimage_1-519.png)
 * Vous pouvez [surveiller la progression d’une tâche de traitement de profil vidéo](#monitoring-the-progress-of-an-encoding-job).
 
 ## Surveillance de la progression d’une tâche de traitement de profil vidéo {#monitoring-the-progress-of-an-encoding-job}

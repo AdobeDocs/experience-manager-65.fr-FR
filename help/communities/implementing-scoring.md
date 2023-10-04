@@ -1,6 +1,6 @@
 ---
 title: Notation et badges des communautés
-description: La notation et les badges d’AEM Communities vous permettent d’identifier et de récompenser les membres de la communauté.
+description: Les badges et scores AEM Communities vous permettent d’identifier et de récompenser les membres de la communauté.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -9,9 +9,9 @@ docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2853'
+source-wordcount: '2852'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ Les principaux aspects de la notation et des badges sont les suivants :
 
 * [Attribution de badges](#assign-and-revoke-badges) pour identifier le rôle d’un membre dans la communauté.
 
-* [Dons de base de badges](#enable-scoring) aux membres pour encourager leur participation (quantité de contenu créé).
+* [Délivrabilité de base des badges](#enable-scoring) aux membres pour encourager leur participation (quantité de contenu créé).
 
 * [Attribution avancée de badges](/help/communities/advanced.md) identifier les membres comme experts (qualité du contenu créé).
 
@@ -38,7 +38,7 @@ Les principaux aspects de la notation et des badges sont les suivants :
 
 ## Badges {#badges}
 
-Les badges sont placés sous le nom d’un membre pour indiquer son rôle ou sa position dans la communauté. Les badges peuvent être affichés sous forme d’image ou de nom. Lorsqu’il est affiché sous forme d’image, le nom est inclus en tant que texte de remplacement pour l’accessibilité.
+Les badges sont placés sous le nom d’un membre pour indiquer son rôle ou sa position dans la communauté. Les badges peuvent être affichés sous la forme d’une image ou d’un nom. Lorsqu’il est affiché sous forme d’image, le nom est inclus en tant que texte de remplacement pour l’accessibilité.
 
 Par défaut, les badges se trouvent dans le référentiel à l’emplacement suivant :
 
@@ -56,7 +56,7 @@ Les communautés [Console Badges](/help/communities/badges.md) vous permet d’a
 
 Les badges en fonction du rôle sont attribués par un administrateur aux membres de la communauté en fonction de leur rôle dans la communauté.
 
-Les badges attribués (et attribués) sont stockés dans le [SRP](/help/communities/srp.md) et ne sont pas directement accessibles. Tant qu’une interface utilisateur graphique n’est pas disponible, le seul moyen d’affecter des badges basés sur un rôle consiste à utiliser du code ou cURL. Pour obtenir des instructions sur cURL, reportez-vous à la section intitulée [Attribution et révocation des badges](#assign-and-revoke-badges).
+Les badges attribués (et attribués) sont stockés dans le [SRP](/help/communities/srp.md) et ne sont pas directement accessibles. Tant qu’une interface utilisateur graphique n’est pas disponible, le seul moyen d’affecter des badges basés sur un rôle consiste à utiliser du code ou cURL. Pour obtenir des instructions sur cURL, consultez la section intitulée [Attribution et révocation des badges](#assign-and-revoke-badges).
 
 Cette version comprend trois badges basés sur les rôles :
 
@@ -140,7 +140,7 @@ Si le noeud est de type `cq:Page` (recommandé), puis à l’aide de CRXDE|Lite,
 
 Les règles de notation et de mise en page ne sont appliquées que pour les instances de composants qui ont activé la mise en badge en modifiant la configuration du composant dans [mode création](/help/communities/author-communities.md).
 
-Une propriété booléenne, `allowBadges`, active/désactive l’affichage des badges pour une instance de composant. Il peut être configuré dans la variable [boîte de dialogue de modification du composant](/help/communities/author-communities.md) pour les composants forum, Q&amp;R et commentaires par le biais d’une case à cocher intitulée **Badges d’affichage**.
+Une propriété booléenne, `allowBadges`, active/désactive l’affichage des badges pour une instance de composant. Il peut être configuré dans la variable [boîte de dialogue de modification du composant](/help/communities/author-communities.md) pour les composants forum, Q&amp;R et commentaire via une case à cocher intitulée **Badges d’affichage**.
 
 #### Exemple : allowBadges pour l’instance de composant Forum {#example-allowbadges-for-forum-component-instance}
 
@@ -173,11 +173,11 @@ Les scores sont stockés dans SRP.
 
 >[!NOTE]
 >
->Bonne pratique : nommez de manière unique chaque règle de notation.
+>Bonne pratique : attribuez un nom unique à chaque règle de notation.
 >
->Les noms des règles de notation doivent être uniques au niveau global. ils ne doivent pas se terminer par le même nom.
+>Les noms des règles de notation doivent être uniques au niveau global. Ils ne doivent pas se terminer par le même nom.
 >
->Exemple de ce qui suit : *not* pour effectuer :
+>Exemple d’objet *not* pour effectuer les opérations suivantes :
 >
 >/libs/settings/community/scoring/rules/site1/forums-scoring
 >/libs/settings/community/scoring/rules/site2/forums-scoring
@@ -215,13 +215,13 @@ Les sous-règles sont des noeuds de type `cq:Page` avec les propriétés à sa d
    <td>Long</td>
    <td>
     <ul>
-     <li>requis; le verbe correspond à une action d’événement</li>
+     <li>obligatoire ; le verbe correspond à une action d’événement.</li>
      <li>il doit y avoir au moins une propriété verb</li>
      <li>le verbe doit être saisi en MAJUSCULES</li>
      <li>il peut y avoir plusieurs propriétés de verbe, mais pas de doublons.</li>
      <li>la valeur est le score à appliquer pour cet événement.</li>
      <li>la valeur peut être positive ou négative.</li>
-     <li>une liste des verbes pris en charge dans la version figure dans la <a href="#topics-and-verbs">Rubriques et verbes</a> section</li>
+     <li>la liste des verbes pris en charge dans la version figure dans la section <a href="#topics-and-verbs">Rubriques et verbes</a> section</li>
     </ul> </td>
   </tr>
   <tr>
@@ -229,8 +229,8 @@ Les sous-règles sont des noeuds de type `cq:Page` avec les propriétés à sa d
    <td>Chaîne</td>
    <td>
     <ul>
-     <li>facultatif ; restreint la sous-règle aux composants de communauté identifiés par les rubriques d’événement.</li>
-     <li>si spécifié : La valeur est une chaîne à plusieurs valeurs de rubriques d’événement.</li>
+     <li>facultatif ; limite la sous-règle aux composants de communauté identifiés par les rubriques d’événement</li>
+     <li>si spécifié : la valeur est une chaîne à plusieurs valeurs de rubriques d’événement</li>
      <li>une liste des rubriques de cette version figure dans la section <a href="#topics-and-verbs">Rubriques et verbes</a> section</li>
      <li>La valeur par défaut est d’appliquer à toutes les rubriques associées aux verbes.</li>
     </ul> </td>
@@ -240,8 +240,8 @@ Les sous-règles sont des noeuds de type `cq:Page` avec les propriétés à sa d
    <td>Booléen</td>
    <td>
     <ul>
-     <li>facultatif ; n’est pas pertinent lorsque le membre agit sur le contenu qu’il possède</li>
-     <li>si la valeur est true, appliquez un score au propriétaire du contenu sur lequel l’action est effectuée.</li>
+     <li>facultatif ; non pertinent lorsque le membre agit sur le contenu lui-même</li>
+     <li>si la valeur est true, appliquez un score au propriétaire du contenu sur lequel l’action a été effectuée.</li>
      <li>si la valeur est false, appliquez un score à l’action du membre.</li>
      <li>false par défaut</li>
     </ul> </td>
@@ -280,9 +280,9 @@ Cette version comprend deux règles de notation pour la variable [Fonction Forum
 
 **Remarques:**
 
-* Les `rules` et `sub-rules` Les noeuds sont de type cq:Page.
+* Les deux `rules` et `sub-rules` Les noeuds sont de type cq:Page.
 
-* `subRules` est un attribut de type Chaîne[] sur la règle `jcr:content` noeud .
+* `subRules` est un attribut de type String[] sur la règle `jcr:content` noeud .
 
 * `sub-rules` peut être partagée entre différentes règles de notation.
 * `rules` doit être situé dans un emplacement de référentiel avec une autorisation de lecture pour tout le monde.
@@ -318,11 +318,11 @@ Les règles de badge se composent d’un `thresholds` qui est une liste ordonné
 
 Les règles de badge sont associées à des règles de notation qui déterminent la manière dont les points s’accumulent. Voir la section intitulée [Application de règles au contenu](#apply-rules-to-content).
 
-Le `scoringRules` sur une règle de badge limite simplement les règles de notation qui peuvent être associées à cette règle de badge spécifique.
+La variable `scoringRules` sur une règle de badge limite simplement les règles de notation qui peuvent être associées à cette règle de badge spécifique.
 
 >[!NOTE]
 >
->Bonne pratique : créer des images de badge uniques à chaque site AEM.
+>Bonne pratique : créez des images de badge uniques à chaque site AEM.
 
 ![badging-rule-configuration](assets/badging-rule-configuration.png)
 
@@ -377,7 +377,7 @@ Toute modification ou tout ajout apporté aux règles de badge ou aux images eff
 
 ## Attribution et révocation des badges {#assign-and-revoke-badges}
 
-Des badges peuvent être attribués aux membres à l’aide de la fonction [console membres](/help/communities/members.md#badges-tab) ou par programmation à l’aide des commandes cURL.
+Les badges peuvent être attribués aux membres à l’aide de la fonction [console membres](/help/communities/members.md#badges-tab) ou par programmation à l’aide des commandes cURL.
 
 Les commandes cURL suivantes indiquent les éléments nécessaires à une requête HTTP d’attribution et de révocation des badges. Le format de base est le suivant :
 
@@ -397,7 +397,7 @@ cURL -i -X POST -H *header* -u *signature* -F *operation* -F *badge* *member-pro
 
 >[!NOTE]
 >
->Le *member-profile-url*:
+>La variable *member-profile-url*:
 >
 >* Peut faire référence à une instance d’auteur si la variable [Service Tunnel](/help/communities/users.md#tunnel-service) est activée.
 >* Peut être un nom obscur et aléatoire - voir [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) concernant l’ID autorisable.
@@ -434,14 +434,14 @@ Pour les composants des communautés distribués, les tableaux suivants décrive
 
 >[!NOTE]
 >
->Une nouvelle propriété booléenne, `allowBadges`, active/désactive l’affichage des badges pour une instance de composant. Il peut être configuré dans la mise à jour [modification de composant, boîtes de dialogue](/help/communities/author-communities.md) par le biais d’une case à cocher étiquetée **Badges d’affichage**.
+>Une nouvelle propriété booléenne, `allowBadges`, active/désactive l’affichage des badges pour une instance de composant. Il peut être configuré dans la mise à jour [modification de composant, boîtes de dialogue](/help/communities/author-communities.md) à travers une case à cocher étiquetée **Badges d’affichage**.
 
 **[Composant Calendrier](/help/communities/calendar.md)**
 SocialEvent `topic`= com/adobe/cq/social/calendar
 
 | **Verbe** | **Description** |
 |---|---|
-| POST | Un membre crée un événement de calendrier |
+| POST | crée un événement de calendrier. |
 | AJOUTER | commentaires d’un membre sur un événement de calendrier |
 | MISE À JOUR | l’événement ou le commentaire de calendrier du membre est modifié. |
 | SUPPRIMER | l’événement ou le commentaire de calendrier du membre est supprimé. |
@@ -451,7 +451,7 @@ SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verbe** | **Description** |
 |---|---|
-| POST | Un membre crée un commentaire |
+| POST | crée un commentaire. |
 | AJOUTER | réponses du membre au commentaire |
 | MISE À JOUR | le commentaire du membre est modifié. |
 | SUPPRIMER | le commentaire du membre est supprimé. |
@@ -481,7 +481,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 
 | **Verbe** | **Description** |
 |---|---|
-| POST | Un membre crée un article de blog. |
+| POST | Un membre crée un article de blog |
 | AJOUTER | commentaires d&#39;un membre sur un article de blog |
 | MISE À JOUR | article ou commentaire de blog du membre modifié |
 | SUPPRIMER | article ou commentaire de blog du membre supprimé |
@@ -493,18 +493,18 @@ SocialEvent `topic` = com/adobe/cq/social/qna
 |---|---|
 | POST | crée une question Q&amp;R |
 | AJOUTER | crée une réponse Q&amp;R |
-| MISE À JOUR | Q&amp;R du membre : une question ou une réponse est modifiée |
+| MISE À JOUR | Question ou réponse Q&amp;R du membre modifié |
 | SELECT | la réponse du membre est sélectionnée. |
 | UNSELECT | la réponse du membre est désélectionnée. |
-| SUPPRIMER | Q&amp;R du membre : une question ou une réponse est supprimée |
+| SUPPRIMER | Question ou réponse Q&amp;R du membre supprimée |
 
 **[Composant Révisions](/help/communities/reviews.md)**
 SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verbe** | **Description** |
 |---|---|
-| POST | création de la révision par le membre |
-| MISE À JOUR | la révision du membre est modifiée. |
+| POST | création d’une révision par le membre |
+| MISE À JOUR | révision du membre est modifiée |
 | SUPPRIMER | la révision du membre est supprimée. |
 
 **[Composant d’évaluation](/help/communities/rating.md)**
@@ -529,9 +529,9 @@ SocialEvent `topic`= com/adobe/cq/social/modération
 | **Verbe** | **Description** |
 |---|---|
 | DENY | le contenu du membre est refusé ; |
-| INDICATEUR INAPPROPRIÉ | le contenu du membre est marqué |
+| INDICATEUR : INAPPROPRIÉ | le contenu du membre est marqué |
 | INAPPROPRIÉ | le contenu du membre n’est pas marqué |
-| ACCEPT | le contenu du membre est approuvé par le modérateur ; |
+| ACCEPTER | le contenu du membre est approuvé par le modérateur ; |
 | CLOSE | le membre ferme le commentaire aux modifications et aux réponses |
 | OUVRIR | commentaire de réouverture du membre |
 
@@ -539,7 +539,7 @@ SocialEvent `topic`= com/adobe/cq/social/modération
 
 Pour un composant personnalisé, un événement SocialEvent est appelé pour enregistrer les événements du composant comme `actions` qui se produit pour un `topic`.
 
-Pour prendre en charge la notation, SocialEvent doit remplacer la méthode . `getVerb()` afin qu’une `verb` est renvoyé pour chaque `action`. Le `verb` renvoyé pour une action peut être une méthode couramment utilisée (telle que `POST`) ou spécialisé pour le composant (par exemple `ADD RATING`). Il existe une *n-1* relation entre `actions` et `verbs`.
+Pour prendre en charge la notation, SocialEvent doit remplacer la méthode . `getVerb()` afin qu’une `verb` est renvoyé pour chaque `action`. La variable `verb` renvoyé pour une action peut être une méthode couramment utilisée (telle que `POST`) ou spécialisé pour le composant (par exemple `ADD RATING`). Il existe une *n-1* relation entre `actions` et `verbs`.
 
 ## Résolution des problèmes {#troubleshooting}
 
@@ -616,11 +616,11 @@ Ensuite, [republier](/help/communities/sites-console.md#publishing-the-site) le 
 Enfin,
 
 * Accédez au composant sur l’instance de publication.
-* Se connecter en tant que membre de la communauté (par exemple : weston.mccall@dodgit.com).
+* Connectez-vous en tant que membre de la communauté (par exemple : weston.mccall@dodgit.com / password).
 * Publiez un nouveau sujet de forum.
 * La page doit être actualisée pour que le badge s’affiche.
 
-   * Déconnectez-vous et connectez-vous en tant que membre de la communauté différent (par exemple : aaron.mcdonald@mailinator.com/password).
+   * Déconnectez-vous et connectez-vous en tant que membre différent de la communauté (par exemple : aaron.mcdonald@mailinator.com/password).
 
 * Sélectionnez le Forum.
 

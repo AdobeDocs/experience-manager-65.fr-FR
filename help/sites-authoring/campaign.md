@@ -1,19 +1,15 @@
 ---
 title: Utilisation d’Adobe Campaign Classic et d’Adobe Campaign Standard
-seo-title: Working with Adobe Campaign 6.1 and Adobe Campaign Standard
 description: Vous pouvez créer le contenu d’un e-mail dans AEM et le traiter dans les e-mails Adobe Campaign.
-seo-description: You can create email content in AEM and process it in Adobe Campaign emails
-uuid: 23195f0b-71c0-4554-8c8b-b0e7704d71d7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2755'
-ht-degree: 46%
+source-wordcount: '2753'
+ht-degree: 44%
 
 ---
 
@@ -149,8 +145,8 @@ Pour modifier le contenu d’un email :
 
 Lorsque vous éditez votre contenu, vous pouvez insérer :
 
-* Des champs de contexte Adobe Campaign. Ce sont des champs que vous pouvez insérer dans votre texte, qui seront adaptés en fonction des données du destinataire (par exemple, prénom, nom de famille ou données de dimension cible).
-* Des blocs de personnalisation Adobe Campaign. Ce sont des blocs de contenu prédéfini, qui ne sont pas liés aux données du destinataire, comme le logo d’une marque ou un lien vers une page miroir.
+* Des champs de contexte Adobe Campaign. Il s&#39;agit de champs que vous pouvez insérer dans votre texte qui s&#39;adaptent aux données du destinataire (prénom, nom ou toute donnée de la dimension cible, par exemple).
+* Des blocs de personnalisation Adobe Campaign. Il s’agit de blocs de contenu prédéfinis qui ne sont pas liés aux données du destinataire, comme le logo d’une marque ou un lien vers une page miroir.
 
 Voir [Composants Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) pour une description complète des composants de Campaign.
 

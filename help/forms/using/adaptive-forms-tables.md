@@ -1,19 +1,15 @@
 ---
 title: Tableaux dans les formulaires adaptatifs
-seo-title: Tables in adaptive forms
 description: Le composant Tableau d’AEM Forms permet de créer des tableaux dans les formulaires adaptatifs qui sont sensibles aux mises en page des appareils mobiles. Il permet aussi d’utiliser des composants de tableau XDP.
-seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
-uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 feature: Adaptive Forms
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2475'
-ht-degree: 91%
+ht-degree: 90%
 
 ---
 
@@ -217,7 +213,7 @@ Colonne développée d’un tableau sur un appareil mobile
 
 Les tableaux des formulaires adaptatifs vous permettent de remplir le tableau au moment de l’exécution à l’aide des données d’un fichier XML. Le fichier XML de données peut résider dans le système de fichiers local de l’ordinateur sur lequel le serveur AEM Forms s’exécute ou dans le référentiel CRX.
 
-Prenons l’exemple du tableau récapitulatif de transaction bancaire suivant, que nous voulons renseigner avec des données provenant d’un fichier XML.
+Prenons l’exemple du tableau récapitulatif de transactions bancaires suivant, que nous voulons renseigner avec des données provenant d’un fichier XML.
 
 ![data-merge-table](assets/data-merge-table.png)
 
@@ -311,7 +307,7 @@ Vous pouvez aussi faire glisser et déposer un groupe d’éléments de type com
 
 >[!NOTE]
 >
->Le nombre d’éléments dans un composant de tableau XDP, un sous-formulaire, ou un type complexe XSD ne peut pas dépasser le nombre de cellules dans une ligne. Par exemple, vous ne pouvez pas déposer quatre éléments sur une ligne qui n’a que trois cellules. Cela provoquera une erreur.
+>Le nombre d’éléments d’un composant de tableau XDP, d’un sous-formulaire ou d’un type complexe XSD ne peut pas dépasser le nombre de cellules d’une ligne. Par exemple, vous ne pouvez pas déposer quatre éléments sur une ligne qui n’a que trois cellules. Cela provoquera une erreur.
 >
 >Si le nombre d’éléments est inférieur au nombre de cellules dans une ligne, la nouvelle ligne ajoute d’abord les cellules en fonction des éléments, puis les cellules par défaut sont ajoutées pour remplir les autres cellules de la ligne. Par exemple, si vous déposez un groupe de trois éléments dans une ligne qui comporte quatre cellules, les trois premières cellules sont basées sur les éléments déposés et la cellule restante sera la cellule de tableau par défaut.
 

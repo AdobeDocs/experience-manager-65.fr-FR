@@ -1,15 +1,13 @@
 ---
 title: Consoles de gestion des membres et des groupes
 description: Accès aux consoles de gestion des membres et des groupes
-uuid: 2e93e861-a066-4189-91db-f8b784bc5aea
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 201c87da1316944e594ade6d95800326b1e6667c
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 4%
@@ -21,15 +19,15 @@ ht-degree: 4%
 
 ## Vue d’ensemble {#overview}
 
-Les fonctionnalités AEM Communities nécessitent souvent que les visiteurs du site soient enregistrés et connectés avant de participer à une communauté dans l’environnement de publication. Leur enregistrement d’utilisateur n’a besoin d’exister que dans l’environnement de publication ; il est généralement appelé *members* pour les distinguer de *utilisateurs* enregistré dans l’environnement de création.
+Les fonctionnalités d’AEM Communities nécessitent souvent que les visiteurs du site soient enregistrés et connectés avant de participer à une communauté dans l’environnement de publication. Leur enregistrement d’utilisateur n’a besoin d’exister que dans l’environnement de publication ; il est généralement appelé *members* pour les distinguer de *utilisateurs* enregistré dans l’environnement de création.
 
 ### Membres (utilisateurs) sur la publication {#members-users-on-publish}
 
-À l’aide des consoles Membres et groupes des communautés , des membres et des groupes de membres enregistrés dans la variable *publier* peut être créé et géré à partir de l’ *author* environnement. Cela n’est possible que lorsque la variable [service tunnel](deploy-communities.md#tunnel-service-on-author) est activée.
+Utilisation des consoles Membres et groupes de communautés , des membres et des groupes de membres enregistrés dans *publier* peut être créé et géré à partir de l’ *author* environnement. Cela n’est possible que lorsque la variable [service tunnel](deploy-communities.md#tunnel-service-on-author) est activée.
 
 ### Utilisateurs sur l’auteur {#users-on-author}
 
-Pour gérer les utilisateurs et les groupes enregistrés dans la variable *author* , est nécessaire pour utiliser la console de sécurité de la plateforme :
+Pour gérer les utilisateurs et les groupes enregistrés dans la variable *author* , il est nécessaire d&#39;utiliser la console de sécurité de la plateforme :
 
 * Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Utilisateurs]**.
 * Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Groupes]**.
@@ -48,7 +46,7 @@ Dans l’environnement de création, pour accéder à la console Membres afin de
 >
 >Il ne sera pas possible d’utiliser la console Membres si la variable [service tunnel](deploy-communities.md#tunnel-service-on-author) n’est pas activé.
 
-![La console des membres](assets/member-console1.png)
+![Console membre](assets/member-console1.png)
 
 ### Recherche {#search-features}
 
@@ -147,7 +145,7 @@ Le membre peut être ajouté à un ou plusieurs groupes de membres. Saisissez to
 
 ### Onglet BADGES {#badges-tab}
 
-Le `BADGES` panneau permet d’attribuer manuellement des badges et de les révoquer. Les badges peuvent être pour les rôles attribués ainsi que pour les badges généralement gagnés.
+La variable `BADGES` panneau permet d’attribuer manuellement des badges et de les révoquer. Les badges peuvent être pour les rôles attribués ainsi que pour les badges généralement gagnés.
 
 Voir aussi [Notation et badges](implementing-scoring.md).
 

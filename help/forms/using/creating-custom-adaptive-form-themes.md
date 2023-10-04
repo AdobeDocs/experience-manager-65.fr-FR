@@ -5,10 +5,10 @@ content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 42%
+source-wordcount: '789'
+ht-degree: 37%
 
 ---
 
@@ -59,13 +59,13 @@ Vous pouvez créer une **modèle adaptatif** et appliquez le thème au modèle. 
 
    * Le dossier `less` contient les fichiers de variables `less` dans lesquels vous définissez les variables `less` et les éléments `less mixins` utilisés pour gérer les styles .css.
 
-     Ce dossier est constitué de `less` fichiers variables, `less` fichiers mixin, `less` des fichiers définissant des styles à l’aide de mixins et de variables. Et tous ces fichiers less sont ensuite importés dans styles.less.
+     Ce dossier est constitué de `less` fichiers variables, `less` fichiers mixin, `less` des fichiers définissant des styles à l’aide de mixins et de variables. Et tous ces `less` Les fichiers sont ensuite importés dans styles.less.
 
    * dossier`css` : contient les fichiers .css dans lesquels vous définissez les styles statiques à utiliser dans le thème.
 
    **Fichiers de variables less**: il s’agit des fichiers dans lesquels vous définissez ou remplacez les variables utilisées pour définir les styles CSS.
 
-   Les formulaires adaptatifs fournissent des variables prêtes à l’emploi définies dans les fichiers .less suivants :
+   Les formulaires adaptatifs fournissent des variables prêtes à l’emploi définies dans les `.less` files :
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
@@ -74,7 +74,7 @@ Vous pouvez créer une **modèle adaptatif** et appliquez le thème au modèle. 
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
 
-   Vous pouvez utiliser les variables less fournies avec les formulaires adaptatifs, vous pouvez remplacer ces variables ou créer de nouvelles variables less.
+   Vous pouvez utiliser la variable `less` variables fournies avec les formulaires adaptatifs, vous pouvez remplacer ces variables ou créer des `less` .
 
    >[!NOTE]
    >
@@ -131,11 +131,11 @@ Vous pouvez créer une **modèle adaptatif** et appliquez le thème au modèle. 
    }
    ```
 
-   **Fichier Styles.less :** Utilisez ce fichier pour inclure tous les fichiers less (variables, mixins, styles) que vous devez utiliser dans la bibliothèque cliente.
+   **Fichier Styles.less :** Utilisez ce fichier pour inclure tous les `less` fichiers (variables, mixins, styles) que vous devez utiliser dans la bibliothèque cliente.
 
    Dans l’exemple de fichier`styles.less` suivant, les instructions d’importation peuvent être placées dans n’importe quel ordre.
 
-   Les instructions pour importer les fichiers .less suivants sont obligatoires :
+   Les instructions pour importer les éléments suivants `.less` Les fichiers sont obligatoires :
 
    * `globalvariables.less`
    * `layoutvariables.less`

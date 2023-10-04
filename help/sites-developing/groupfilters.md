@@ -12,10 +12,10 @@ discoiquuid: 9fef1f91-a222-424a-8e20-3599bedb8b41
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 77%
+source-wordcount: '799'
+ht-degree: 75%
 
 ---
 
@@ -95,7 +95,7 @@ La fonction `matches` renvoie la valeur `true` si les caractéristiques de l’a
 
 * Un objet DeviceGroup
 * Nom de l’agent utilisateur
-* Un objet Map qui contient les caractéristiques de l’appareil. Les clés Map sont les noms des caractéristiques WURFL™ et les valeurs sont les valeurs correspondantes issues de la base de données WURFL™.
+* Un objet Map qui contient les caractéristiques de l’appareil. Les clés Map sont les noms des fonctionnalités WURFL™ et les valeurs sont les valeurs correspondantes de la base de données WURFL™.
 
 L’interface [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) contient un sous-ensemble des noms des caractéristiques WURFL™ dans les champs statiques. Utilisez ces constantes de champ en tant que clés lors de la récupération de valeurs à partir du mappage des caractéristiques de l’appareil.
 
@@ -179,9 +179,9 @@ Le code POM suivant est utile si vous utilisez Maven pour créer vos application
 
 **Modules externes:**
 
-* Module externe de compilateur Apache Maven : Permet de compiler des classes Java à partir du code source.
-* Module externe Apache Felix Maven Bundle : Crée le lot et le manifeste
-* Module externe Apache Felix Maven SCR : Crée le fichier de descripteur de composant et configure l’en-tête de manifeste du composant de service.
+* Module externe Compilateur Apache Maven : compile les classes Java du code source.
+* Module externe Apache Felix Maven Bundle : crée le lot et le manifeste
+* Module externe Apache Felix Maven SCR : crée le fichier de descripteur de composant et configure l’en-tête de manifeste du composant de service.
 
 **Dépendances :**
 

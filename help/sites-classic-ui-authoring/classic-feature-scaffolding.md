@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1431'
-ht-degree: 59%
+source-wordcount: '1429'
+ht-degree: 58%
 
 ---
 
@@ -62,7 +62,7 @@ Pour créer un modèle automatique, accédez au **Outils** console, puis **Gén�
 
 Accédez au **Propriétés de la page** de la nouvelle page et définissez la variable *Texte du titre*, *Description*, *Modèle cible*, et *Chemin cible*, comme décrit ci-dessus.
 
-Vous devez ensuite définir la structure de la page qui sera créée par ce modèle automatique. Pour ce faire, accédez à **[mode de conception](/help/sites-authoring/page-authoring.md#sidekick)** sur la page scaffold. Un lien s’affiche alors pour vous permettre de modifier le modèle automatique dans l’**éditeur de boîte de dialogue**.
+Vous devez ensuite définir la structure de la page qui sera créée par ce modèle automatique. Pour ce faire, accédez à **[mode de conception](/help/sites-authoring/page-authoring.md#sidekick)** sur la page scaffold. Un lien s’affiche, vous permettant de modifier le modèle automatique dans le **éditeur de boîtes de dialogue**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 

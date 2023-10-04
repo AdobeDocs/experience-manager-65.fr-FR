@@ -1,17 +1,15 @@
 ---
 title: Créer et organiser des pages
 description: Cette section décrit comment créer et gérer des pages avec AEM pour pouvoir ensuite créer du contenu sur ces pages.
-uuid: 47ce137a-7a85-4b79-b4e0-fdf08a9e77bd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1909'
-ht-degree: 99%
+source-wordcount: '1906'
+ht-degree: 98%
 
 ---
 
@@ -321,9 +319,9 @@ Pour déplacer ou renommer une page :
 >
 >Si une page est déjà publiée, la publication est automatiquement annulée avant la suppression.
 
-### Verrouillage d’une page    {#locking-a-page}
+### Verrouillage d’une page {#locking-a-page}
 
-Vous pouvez [verrouiller ou déverrouiller une page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page) à partir d’une console ou lorsque vous modifiez une page. Les deux environnements indiquent également si une page est verrouillée ou non.
+Vous pouvez [verrouillage/déverrouillage d’une page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page) depuis une console ou lors de la modification d’une page individuelle. Les informations sur les pages verrouillées s’affichent également aux deux emplacements.
 
 ### Création d’un dossier {#creating-a-new-folder}
 

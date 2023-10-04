@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1193'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ Une limitation connue expose le contenu du site de la communauté aux visiteurs 
 
 Pour protéger le contenu de votre communauté contre l’accès des utilisateurs anonymes par le biais de jcr content et json , procédez comme suit :
 
-1. Sur l’instance AEM Author, accédez à https:// hostname:port/editor.html/content/site/sitename.html.
+1. Sur l’instance d’auteur AEM, accédez à https:// hostname:port/editor.html/content/site/sitename.html.
 
    >[!NOTE]
    >
@@ -79,16 +79,16 @@ Pour protéger le contenu de votre communauté contre l’accès des utilisateur
 
 Cette expérience suppose que [Aaron McDonald](/help/communities/tutorials.md#demo-users) a été affecté aux rôles de [gestionnaire de communauté et modérateur](/help/communities/create-site.md#roles). Si ce n’est pas le cas, revenez à l’environnement de création en [modification des paramètres du site](/help/communities/sites-console.md#modifying-site-properties) et sélectionnez Aaron McDonald comme gestionnaire de communauté et modérateur.
 
-Dans le coin supérieur droit, sélectionnez `Log in`et signez avec le nom d’utilisateur (aaron.mcdonald@mailinator.com) et le mot de passe (mot de passe). Vous pouvez vous connecter à l’aide des informations d’identification Twitter ou Facebook.
+Dans le coin supérieur droit, sélectionnez `Log in`et signez avec le nom d’utilisateur (aaron.mcdonald@mailinator.com) et le mot de passe (password). Vous pouvez vous connecter à l’aide des informations d’identification Twitter ou Facebook.
 
 ![connexion](assets/login.png)
 
 Une fois connecté en tant que membre de la communauté enregistré, remarquez les options de menu suivantes pour cliquer et explorer votre site de communauté :
 
-* **Profil** permet de visualiser et de modifier votre profil.
+* **Profil** vous permet de visualiser et d&#39;éditer votre profil.
 * [Messages](/help/communities/configure-messaging.md) vous dirige vers la section de messagerie directe, où vous pouvez :
 
-   1. Affichez les messages directs que vous avez reçus (boîte de réception), envoyés (éléments envoyés) et supprimés (corbeille).
+   1. Afficher les messages directs que vous avez reçus (boîte de réception), envoyés (éléments envoyés) et supprimés (corbeille).
    1. Composer de nouveaux messages directs à envoyer aux individus et aux groupes.
 
 * [Notifications](/help/communities/notifications.md) vous dirige vers la section notifications, où vous pouvez afficher vos événements ciblés et modifier les paramètres des notifications.
@@ -177,7 +177,7 @@ Les liens du groupe s&#39;affichent sous les liens du site principal et donnent 
 
 ![grouplink2](assets/grouplink2.png)
 
-Sur l’instance de création, avec les privilèges d’administrateur, accédez à la [Console Groupes de communautés](/help/communities/members.md) et ajoutez Weston McCall au `Community Engage Gymnastics <uid> Members` groupe.
+Sur l’instance d’auteur, avec les privilèges d’administrateur, accédez à la [Console Groupes de communautés](/help/communities/members.md) et ajoutez Weston McCall au `Community Engage Gymnastics <uid> Members` groupe.
 
 Continuez à publier, déconnectez-vous en tant qu’Aaron McDonald et affichez les groupes du groupe Sports en tant que visiteur anonyme du site :
 
@@ -188,7 +188,7 @@ Continuez à publier, déconnectez-vous en tant qu’Aaron McDonald et affichez 
 
 Seul le groupe de baseball sera visible.
 
-Connectez-vous en tant que Weston McCall (weston.mccall@dodgit.com/password) et accédez au même emplacement. Remarquez que Weston peut `Join` l’ouverture `Baseball` et soit `enter or Leave` le privé `Gymnastics` groupe.
+Connectez-vous en tant que Weston McCall (weston.mccall@dodgit.com/password) et accédez au même emplacement. Remarquez que Weston peut `Join` l’ouverture `Baseball` groupe et soit `enter or Leave` le privé `Gymnastics` groupe.
 
 ![grouplink3](assets/grouplink3.png)
 

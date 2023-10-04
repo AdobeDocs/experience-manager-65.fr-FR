@@ -1,18 +1,15 @@
 ---
 title: Configuration de ContextHub
-seo-title: Configuring ContextHub
 description: Découvrez comment configurer ContextHub.
-seo-description: Learn how to configure Context Hub.
-uuid: f2988bb9-6878-42a2-bb51-c3f8683248c5
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1787'
-ht-degree: 99%
+source-wordcount: '1786'
+ht-degree: 98%
 
 ---
 
@@ -188,7 +185,7 @@ Le magasin contexthub.generic-jsonp est configuré de sorte qu’il stocke les d
 
 L’exemple de candidat de magasin contexthub.generic-jsonp vous permet de récupérer les données d’un service JSONP ou web qui renvoie des données JSON. Pour ce candidat de magasin, utilisez la configuration de magasin afin de fournir les détails du service JSONP à utiliser.
 
-Le [init](/help/sites-developing/contexthub-api.md#init-name-config) de la fonction `ContextHub.Store.JSONPStore` La classe JavaScript définit une `config` qui initialise ce magasin candidat. L’objet `config` contient un objet `service` qui inclut des détails sur le service JSONP. Pour configurer le magasin, il vous suffit de fournir l’objet `service` au format JSON comme valeur de la propriété Configuration de détails.
+La variable [init](/help/sites-developing/contexthub-api.md#init-name-config) de la fonction `ContextHub.Store.JSONPStore` La classe JavaScript définit une `config` qui initialise ce magasin candidat. L’objet `config` contient un objet `service` qui inclut des détails sur le service JSONP. Pour configurer le magasin, il vous suffit de fournir l’objet `service` au format JSON comme valeur de la propriété Configuration de détails.
 
 Pour enregistrer les données à partir du service MD5 du site jsontest.com, suivez la procédure décrite dans [Création d’un magasin ContextHub](/help/sites-developing/ch-configuring.md#creating-a-contexthub-store) à l’aide des propriétés suivantes :
 
@@ -258,7 +255,7 @@ Utilisez CRXDE Lite pour définir la propriété `debug` sur **true** sous :
 
 >[!NOTE]
 >
->Pour les configurations ContextHub toujours situées sous leurs chemins hérités, l’emplacement où définir la `debug property` est `/libs/settings/cloudsettings/legacy/contexthub`.
+>Pour les configurations ContextHub toujours situées sous leurs chemins hérités, l’emplacement pour définir la variable `debug property` is `/libs/settings/cloudsettings/legacy/contexthub`.
 
 ### Mode silencieux {#silent-mode}
 

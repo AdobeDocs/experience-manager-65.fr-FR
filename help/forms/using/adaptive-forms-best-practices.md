@@ -1,18 +1,14 @@
 ---
 title: Meilleures pratiques pour travailler avec les formulaires adaptatifs
-seo-title: Best practices for working with adaptive forms
 description: Explique les bonnes pratiques à appliquer pour configurer un projet AEM Forms, développer des formulaires adaptatifs et optimiser les performances du système AEM Forms.
-seo-description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
-uuid: ed95fc64-56b3-4ea1-a5ba-2e96953fca56
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '4734'
-ht-degree: 40%
+ht-degree: 39%
 
 ---
 
@@ -293,7 +289,7 @@ Voici quelques bonnes pratiques à appliquer lors de la localisation de formulai
 
 * Utilisez les fragments de formulaire adaptatif pour les éléments courants des formulaires et localisez les fragments. Cela permet de localiser un fragment une seule fois et de le refléter dans tous les formulaires dans lesquels le fragment localisé est utilisé.
 * Les modifications telles que l’ajout d’un nouveau composant ou l’application d’un script dans un formulaire localisé ne sont pas localisées automatiquement. Par conséquent, vous devez finaliser un formulaire avant de le localiser pour éviter plusieurs cycles de localisation.
-* Utilisez le paramètre de requête `afAcceptLang` pour remplacer la langue du navigateur et pour rendre le formulaire dans la langue spécifiée. Par exemple, l’URL suivante force à effectuer le rendu du formulaire en japonais, indépendamment du paramètre régional spécifié dans les paramètres du navigateur :
+* Utilisez le paramètre de requête `afAcceptLang` pour remplacer la langue du navigateur et pour rendre le formulaire dans la langue spécifiée. Par exemple, l’URL suivante est forcée d’afficher le formulaire en japonais, quel que soit le paramètre régional spécifié dans le paramètre du navigateur :
 
   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 

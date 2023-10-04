@@ -1,16 +1,12 @@
 ---
 title: Dossier de contrôle dans AEM Forms
-seo-title: Watched folder in AEM Forms
 description: Un administrateur peut placer un dossier sous surveillance et lancer une opération de workflow, de service ou de script lorsqu’un fichier est placé dans le dossier contrôlé.
-seo-description: An administrator can put a folder on watch and start a workflow, service, or script operation when a file is placed in the folder being watched.
-uuid: 39eac0fd-8212-46ff-b75d-8b4320d448a9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '7148'
 ht-degree: 36%
@@ -592,7 +588,7 @@ Les mappages des paramètres de sortie peuvent également spécifier des modèle
 * %F = nom du fichier source
 * %E = extension du nom du fichier source
 
-Si le modèle de mappage des paramètres de sortie se termine par « File.separator » (qui correspond au séparateur de chemin), un dossier est créé dans lequel le contenu est copié. Si le motif ne se termine pas par « File.separator », le contenu (fichier ou dossier résultant) est créé avec ce nom.
+Si le modèle de mappage des paramètres de sortie se termine par &quot;File.separator&quot; (qui est le séparateur de chemin), un dossier est créé et le contenu est copié dans ce dossier. Si le motif ne se termine pas par « File.separator », le contenu (fichier ou dossier résultant) est créé avec ce nom.
 
 ## Utilisation d’un PDF Generator avec un dossier de contrôle {#using-pdf-generator-with-a-watched-folder}
 

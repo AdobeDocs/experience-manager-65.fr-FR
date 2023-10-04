@@ -1,19 +1,15 @@
 ---
 title: Utilisation de l’outil VLT
-seo-title: How to use the VLT Tool
 description: L’outil Jackrabbit FileVault (VLT) est développé par The Apache Foundation qui mappe le contenu d’une instance Jackrabbit/AEM à votre système de fichiers.
-seo-description: The Jackrabbit FileVault tool (VLT) is developed by The Apache Foundation that maps the content of a Jackrabbit/AEM instance to your file system
-uuid: 579e7785-8b50-4366-b562-8e79b6451464
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2715'
-ht-degree: 86%
+ht-degree: 84%
 
 ---
 
@@ -746,7 +742,7 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 
 ### Synchronisation {#sync}
 
-Permet de contrôler le service de synchronisation Vault. Sans aucun argument, cette commande tente de soumettre le répertoire de travail en cours au contrôle de synchronisation. Si elle est exécutée dans une extraction vlt, elle utilise le filtre et l’hôte respectifs pour configurer la synchronisation. S’il est exécuté en dehors d’un passage en caisse vlt, il n’enregistre le dossier actif que si le répertoire est vide.
+Permet de contrôler le service de synchronisation Vault. Sans aucun argument, cette commande tente de soumettre le répertoire de travail en cours au contrôle de synchronisation. S’il est exécuté dans un passage en caisse vlt, il utilise le filtre et l’hôte respectifs pour configurer la synchronisation. S’il est exécuté en dehors d’un passage en caisse vlt, il enregistre le dossier actif pour synchronisation uniquement si le répertoire est vide.
 
 #### Syntaxe {#syntax-18}
 

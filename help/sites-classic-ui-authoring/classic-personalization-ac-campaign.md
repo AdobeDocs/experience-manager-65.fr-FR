@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 55%
+source-wordcount: '1167'
+ht-degree: 52%
 
 ---
 
@@ -115,7 +115,7 @@ Vous pouvez modifier le contenu d’un email dans l’interface utilisateur clas
 
 Lorsque vous éditez votre contenu, vous pouvez insérer :
 
-* Des champs de contexte Adobe Campaign. Ce sont des champs que vous pouvez insérer dans votre texte, qui seront adaptés en fonction des données du destinataire (par exemple, prénom, nom de famille ou données de dimension cible).
+* Des champs de contexte Adobe Campaign. Il s’agit de champs que vous pouvez insérer dans votre texte qui s’adaptera en fonction des données du destinataire (prénom, nom ou toute donnée de la dimension cible, par exemple).
 * Des blocs de personnalisation Adobe Campaign. Ce sont des blocs de contenu prédéfini, qui ne sont pas liés aux données du destinataire, comme le logo d’une marque ou un lien vers une page miroir.
 
 Voir [Composants Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md) pour une description complète des composants de Campaign.

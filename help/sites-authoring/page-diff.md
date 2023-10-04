@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 97%
+source-wordcount: '576'
+ht-degree: 96%
 
 ---
 
@@ -98,7 +98,7 @@ Dans certains cas, l’outil de comparaison des pages peut ne pas détecter tout
 
 >[!NOTE]
 >
->Les versions ne peuvent pas être comparées entre elles. Seule la version en cours peut être comparée aux autres versions de la page. La version dont les modifications sont mises en surbrillance est toujours la version en cours.
+>Les versions ne peuvent pas être comparées les unes aux autres. Seule la version en cours peut être comparée aux autres versions de la page. La version dont les modifications sont mises en surbrillance est toujours la version en cours.
 
 >[!NOTE]
 >

@@ -11,10 +11,10 @@ topic-tags: best-practices
 discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 43%
+source-wordcount: '783'
+ht-degree: 40%
 
 ---
 
@@ -45,7 +45,7 @@ Fonctionnalités de regroupement des informations sur le visiteur en vue de les 
 
 Au cours des dernières années, Adobe a mis à jour toutes les solutions Adobe Experience Cloud avec une interface utilisateur unifiée. Les utilisateurs de toutes les solutions Experience Cloud bénéficient d’une expérience cohérente avec des schémas communs sur l’utilisation et le fonctionnement des applications. Avec chaque version, Adobe a amélioré son interface utilisateur en fonction des commentaires des clients travaillant dans les différentes solutions.
 
-L&#39;interface utilisateur d&#39;origine d&#39;Adobe Experience Manager (précédemment connue sous le nom de CQ5), introduite en 2008 et utilisée par les clients utilisant les versions 5.0 à 5.6.1, est présente dans AEM 6.5. Cela garantit que les clients peuvent effectuer une mise à jour vers la version 6.5 et bénéficier d&#39;une plateforme mise à jour avec de nouvelles fonctionnalités tout en continuant à utiliser la même interface utilisateur.
+L’interface utilisateur d’origine de Adobe Experience Manager (précédemment connue sous le nom de CQ5), introduite en 2008 et utilisée par les clients utilisant les versions 5.0 à 5.6.1, est présente dans AEM 6.5. Cela garantit que les clients peuvent effectuer la mise à jour vers la version 6.5 et bénéficier d’une plateforme mise à jour avec de nouvelles fonctionnalités tout en continuant à utiliser la même interface utilisateur.
 
 Adobe recommande aux utilisateurs de planifier le passage à la nouvelle interface utilisateur en 2018 ou 2019. Vous pouvez le faire pendant la mise à jour vers la version 6.5 ou dans un projet distinct après la mise à jour, qui inclut les réglages nécessaires aux personnalisations et aux boîtes de dialogue de composant.
 
@@ -74,7 +74,7 @@ Vous trouverez ci-dessous une liste de recommandations provenant de la gestion d
      <li>Configurez l’action "Modifier la page" pour ouvrir l’éditeur de page de l’IU classique. Voir <a href="#selecting-your-ui">Sélection de l’interface utilisateur</a>.</li>
     </ol> <p>Ensuite, dans une seconde phase :</p>
     <ol>
-     <li>Mettez à jour vos boîtes de dialogue de composants pour utiliser le format de boîte de dialogue Coral 3. Adobe recommande d’utiliser les <a href="/help/sites-developing/modernization-tools.md">Outils de modernisation AEM</a> pour mettre à jour les composants.</li>
+     <li>Mettez à jour vos boîtes de dialogue de composants pour utiliser le format de boîte de dialogue Coral 3. Adobe recommande d’utiliser la variable <a href="/help/sites-developing/modernization-tools.md">Outils de modernisation d’AEM</a> pour mettre à jour les composants.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -86,7 +86,7 @@ Vous trouverez ci-dessous une liste de recommandations provenant de la gestion d
      <li>Configurez l’action "Modifier la page" pour ouvrir l’éditeur de page de l’IU classique. Voir <a href="#selecting-your-ui">Sélection de l’interface utilisateur</a>.</li>
     </ol> <p>Ensuite, dans une seconde phase :</p>
     <ol>
-     <li>Mettez à jour vos boîtes de dialogue de composants pour utiliser le format de boîte de dialogue Coral 3. Adobe recommande d’utiliser les <a href="/help/sites-developing/modernization-tools.md">Outils de modernisation AEM</a> pour mettre à jour les composants.</li>
+     <li>Mettez à jour vos boîtes de dialogue de composants pour utiliser le format de boîte de dialogue Coral 3. Adobe recommande d’utiliser la variable <a href="/help/sites-developing/modernization-tools.md">Outils de modernisation d’AEM</a> pour mettre à jour les composants.</li>
      <li>Configurez ContextHub (le remplacement du ClientContext) et mettez à jour les modèles de page pour utiliser ContextHub. Notez que ContextHub dispose d’un mode de compatibilité qui permet de charger des magasins de ClientContext personnalisés.</li>
     </ol> </td>
   </tr>
@@ -99,7 +99,7 @@ Vous trouverez ci-dessous une liste de recommandations provenant de la gestion d
 
 ### FAQ {#faq}
 
-Voir l’article de la base de connaissances, [FAQ sur la création dans l’interface utilisateur tactile](https://helpx.adobe.com/fr/experience-manager/kb/index/touchui_faq.html), pour plus de détails ; y compris toute information sur le calendrier d’obsolescence de l’IU classique.
+Voir l’article de la base de connaissances, [FAQ sur la création dans l’interface utilisateur tactile](https://helpx.adobe.com/fr/experience-manager/kb/index/touchui_faq.html), pour plus d’informations, notamment sur la planification de l’obsolescence de l’IU classique.
 
 ### Sélection de l’interface utilisateur {#selecting-your-ui}
 

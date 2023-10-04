@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '4864'
+source-wordcount: '4862'
 ht-degree: 63%
 
 ---
@@ -41,7 +41,7 @@ Pour plus d’informations sur le fonctionnement des modèles modifiables à un 
 
 >[!NOTE]
 >
->L’**éditeur de modèles** ne prend pas en charge le ciblage directement au niveau du modèle. Les pages créées à partir d’un modèle modifiable peuvent être ciblées, mais pas les modèles eux-mêmes.
+>L’**éditeur de modèles** ne prend pas en charge le ciblage directement au niveau du modèle. Les pages créées à partir d’un modèle modifiable peuvent être ciblées, mais les modèles eux-mêmes ne le peuvent pas.
 
 >[!CAUTION]
 >
@@ -318,7 +318,7 @@ Les aspects suivants d&#39;un modèle peuvent être édités :
 
   >[!NOTE]
   >
-  >En mode **Contenu initial** (et dans les pages créées), les composants déverrouillés qui possèdent un parent accessible (c’est-à-dire, les composants dans un conteneur de mises en page) peuvent être supprimés.
+  >En mode **Contenu initial** (et dans les pages créées), les composants déverrouillés qui possèdent un parent accessible (c’est-à-dire, les composants dans un conteneur de mise en page) peuvent être supprimés.
 
 * [Mise en page](#editingatemplatelayout)
 
@@ -541,7 +541,7 @@ Dans **Structure** du mode de l’éditeur de modèles :
 
   *Paramètres réactifs*
 
-  Dans l’onglet **Paramètres réactifs**, vous pouvez configurer le nombre de colonnes de la grille résultante du conteneur de mises en page.
+  Dans l’onglet **Paramètres réactifs**, vous pouvez configurer le nombre de colonnes de la grille résultante du conteneur de mise en page.
 
 * **Déverrouillage/verrouillage des composants**
 
@@ -563,7 +563,7 @@ Dans **Structure** du mode de l’éditeur de modèles :
 
   ![chlimage_1-147](assets/chlimage_1-147.png)
 
-  Pour économiser de l’espace, le conteneur de mises en page ne se développe pas pour s’adapter à la liste des composants autorisés. Le conteneur devient plutôt une liste déroulante.
+  Pour économiser de l’espace, le conteneur de mise en page ne se développe pas pour s’adapter à la liste des composants autorisés. Le conteneur devient plutôt une liste déroulante.
 
   Les composants configurables s’affichent avec une icône **Politique**, sur laquelle vous pouvez appuyer ou cliquer pour modifier la politique et les propriétés de ce composant.
 
