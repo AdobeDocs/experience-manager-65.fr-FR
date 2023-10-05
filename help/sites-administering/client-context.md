@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '1969'
-ht-degree: 63%
+ht-degree: 62%
 
 ---
 
@@ -101,7 +101,7 @@ La norme JSONP est un complément de JSON qui permet de contourner la politique 
 >
 >La boutique JSONP ne met pas en cache les informations figurant dans le cookie, mais récupère ces données à chaque chargement de la page.
 
-**Données de profil** Affiche les informations collectées dans le profil utilisateur. Par exemple, le sexe, l’âge ou l’adresse électronique.
+**Données de profil** Affiche les informations collectées dans le profil utilisateur. Par exemple, le genre, l’âge, l’adresse électronique, etc.
 
 **Segments résolus** Indique quels segments sont actuellement résolus (souvent selon d’autres informations affichées dans le contexte client). Ceci s’avère utile lors de la configuration d’une campagne.
 

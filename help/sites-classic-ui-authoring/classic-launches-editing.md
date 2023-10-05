@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: ht
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -32,7 +32,7 @@ Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez
 
    >[!NOTE]
    >
-   >Vous pouvez utiliser l’onglet **Page** du sidekick pour effectuer des actions telles que **Créer une page enfant**, entre autres.
+   >Vous pouvez utiliser la variable **Page** de sidekick pour effectuer des actions telles que **Créer une page enfant**, entre autres.
 
 ## Modification d’une configuration de lancement {#editing-a-launch-configuration}
 
@@ -48,10 +48,9 @@ Après avoir créé un lancement, vous pouvez en modifier le nom et la date. Vou
       * **Date de mise en service** : équivaut à la date de lancement.
       * **Prêt pour l’exploitation**
 
-      Voir [Lancements - Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events) pour plus d’informations sur l’objectif et l’interaction de ces champs.
+     Voir [Lancements - Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events) pour plus d’informations sur l’objectif et l’interaction de ces champs.
 
    * Dans l’onglet **Image**, vous pouvez télécharger un fichier image.
-
 
 1. Cliquez sur **Enregistrer**.
 

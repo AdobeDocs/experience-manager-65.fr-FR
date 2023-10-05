@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '761'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -176,7 +176,7 @@ Les propriétés sont réparties sur plusieurs onglets :
 
 ### Structure du site  {#site-structure}
 
-* Diffusez des liens d’accès aux pages qui fournissent les fonctionnalités à l’échelle du site, comme la **page d’inscription** et la page **en mode hors ligne**, entre autres.
+* Fournir des liens vers des pages qui fournissent des fonctionnalités à l’échelle du site, telles que **Page d’inscription**, **Page hors ligne**, entre autres.
 
 ## Modification des propriétés de page {#editing-page-properties-2}
 
