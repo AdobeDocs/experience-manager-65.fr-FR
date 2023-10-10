@@ -2,9 +2,9 @@
 title: Optimisation des requêtes GraphQL.
 description: Découvrez comment optimiser vos requêtes GraphQL lors du filtrage, de la pagination et du tri de vos fragments de contenu dans Adobe Experience Manager as a Cloud Service pour une diffusion de contenu sans interface.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 2ba17c43e84ad449ec858de57812f3ef82fca3e1
+source-git-commit: c0570d6c0d624d950ddbb5c0d2ce38ff7c3756a4
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1935'
 ht-degree: 60%
 
 ---
@@ -89,7 +89,10 @@ Voir :
 
 Lors de l’utilisation de requêtes GraphQL persistantes avec un réseau de diffusion de contenu, il est recommandé de définir les en-têtes de contrôle du cache HTTP appropriés.
 
-Chaque requête conservée peut avoir son propre ensemble spécifique d’en-têtes de contrôle du cache. Les en-têtes peuvent être définis sur la variable [API GRAPHQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) ou le [AEM IDE GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md).
+Chaque requête conservée peut avoir son propre ensemble spécifique d’en-têtes de contrôle du cache. Les en-têtes peuvent être définis sur la variable [API GRAPHQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
+
+<!-- or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache). 
+-->
 
 **Référence supplémentaire**
 
