@@ -11,13 +11,13 @@ role: User
 source-git-commit: f824c2b8028999aec1d5ebaf0ad4951b5121eb79
 workflow-type: tm+mt
 source-wordcount: '47'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 
 # Services de diffusion Edge {#edge-delivery-services}
 
-+ [Prise en main d’Edge Delivery](/help/edge/overview.md)
++ [Prise en main d’Edge Delivery ](/help/edge/overview.md)
 + [Utilisation de la diffusion Edge](/help/edge/using.md)
 
