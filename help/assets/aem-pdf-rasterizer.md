@@ -5,10 +5,10 @@ contentOwner: AG
 role: Developer, Admin
 feature: Developer Tools,Renditions
 exl-id: 6f365d6b-3972-4885-8766-5889e24289f1
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: ht
-source-wordcount: '721'
-ht-degree: 100%
+source-git-commit: e6e0ad29bc5b3a644f74427d8d60233c9e26aa03
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 79%
 
 ---
 
@@ -22,13 +22,13 @@ Adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour ce qui suit�
 * Fichiers d’IA et PDF avec des miniatures qui ne sont pas générées par défaut
 * Fichiers d’AI contenant des couleurs PMS (Pantone Matching System)
 
-Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d’une plus grande qualité par rapport à la sortie native et fournissent donc une expérience d’affichage homogène sur tous les périphériques. La bibliothèque PDF Rasterizer d’Adobe ne prend en charge aucune conversion d’espace colorimétrique. Elle génère toujours une sortie RVB indépendamment de l’espace colorimétrique du fichier source.
+Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont de meilleure qualité par rapport à la sortie prête à l’emploi et offrent donc une expérience d’affichage cohérente sur tous les appareils. La bibliothèque Adobe PDF Rasterizer ne prend en charge aucune conversion d’espace colorimétrique. Il est toujours envoyé à RGB, quel que soit l’espace colorimétrique du fichier source.
 
-1. Installez le module PDF Rasterizer sur votre déploiement [!DNL Adobe Experience Manager] à partir de la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.4.zip).
+1. Installez le package PDF Rasterizer sur votre déploiement [!DNL Adobe Experience Manager] à partir de la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.6.zip).
 
    >[!NOTE]
    >
-   >La bibliothèque PDF Rasterizer est disponible sous Windows et Linux uniquement.
+   >La bibliothèque PDF Rasterizer est disponible uniquement pour Windows et Linux®.
 
 1. Accédez à la console de workflow [!DNL Assets] à l’adresse `https://[aem_server]:[port]/workflow`. Ouvrez le workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques].
 
@@ -51,11 +51,11 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
 
    * Types MIME : `application/pdf` ou `application/postscript`
    * Commandes : `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
-   * Ajoutez les tailles des miniatures : 319:319, 140:100, 48:48. Ajoutez une configuration de miniature personnalisée, si nécessaire.
+   * Ajoutez les tailles des miniatures : 319:319, 140:100, 48:48. Ajoutez une configuration de miniature personnalisée, si nécessaire.
 
-   Voici des arguments de ligne de commande de la commande `PDFRasterizer` :
+   Arguments de ligne de commande pour la variable `PDFRasterizer` peut inclure les éléments suivants :
 
-   * `-d` : indicateur pour activer le rendu lissé du texte, des illustrations vectorielles et des images. Crée des images de meilleure qualité. Toutefois, l’ajout de ce paramètre ralentit l’exécution de la commande et augmente la taille des images.
+   * `-d` : indicateur pour activer le rendu lissé du texte, des illustrations vectorielles et des images. Crée des images de meilleure qualité. Toutefois, l’inclusion de ce paramètre entraîne une exécution lente de la commande et une augmentation de la taille des images.
 
    * `-s` : dimension maximale de l’image (hauteur ou largeur). Elle est convertie en ppp pour chaque page. Si les pages sont de tailles différentes, chacune peut être redimensionnée selon une échelle différente. La valeur par défaut est la taille réelle de la page.
 
@@ -64,7 +64,6 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
    * `-i` : chemin du PDF en entrée. Ce paramètre est obligatoire.
 
    * `-h` : Aide
-
 
 1. Pour supprimer des rendus intermédiaires, sélectionnez **[!UICONTROL Supprimer le rendu généré]**.
 1. Pour permettre à PDF Rasterizer de générer des rendus Web, sélectionnez **[!UICONTROL Générer le rendu Web]**.
@@ -84,9 +83,9 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
    * Commandes : `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
    * Ajoutez les tailles des miniatures : `319:319`, `140:100`, `48:48`. Ajoutez une configuration de miniature personnalisée, si nécessaire.
 
-   Voici des arguments de ligne de commande de la commande `PDFRasterizer` :
+   Arguments de ligne de commande pour la variable `PDFRasterizer` peut inclure les éléments suivants :
 
-   * `-d` : indicateur pour activer le rendu lissé du texte, des illustrations vectorielles et des images. Crée des images de meilleure qualité. Toutefois, l’ajout de ce paramètre ralentit l’exécution de la commande et augmente la taille des images.
+   * `-d` : indicateur pour activer le rendu lissé du texte, des illustrations vectorielles et des images. Crée des images de meilleure qualité. Toutefois, l’inclusion de ce paramètre entraîne une exécution lente de la commande et une augmentation de la taille des images.
 
    * `-s` : dimension maximale de l’image (hauteur ou largeur). Elle est convertie en ppp pour chaque page. Si les pages sont de tailles différentes, chacune peut être redimensionnée selon une échelle différente. La valeur par défaut est la taille réelle de la page.
 
@@ -95,7 +94,6 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
    * `-i` : chemin du PDF en entrée. Ce paramètre est obligatoire.
 
    * `-h` : Aide
-
 
 1. Pour supprimer des rendus intermédiaires, sélectionnez **[!UICONTROL Supprimer le rendu généré]**.
 1. Pour permettre à PDF Rasterizer de générer des rendus Web, sélectionnez **[!UICONTROL Générer le rendu Web]**.
