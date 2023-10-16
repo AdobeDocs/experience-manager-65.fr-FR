@@ -1,14 +1,14 @@
 ---
 title: Utiliser AEM avec le Commerce Cloud SAP
-description: Découvrez comment utiliser AEM avec le Commerce Cloud SAP.
+description: Découvrez comment utiliser Adobe Experience Manager avec le Commerce Cloud SAP.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
 workflow-type: tm+mt
-source-wordcount: '1702'
-ht-degree: 80%
+source-wordcount: '1704'
+ht-degree: 79%
 
 ---
 
@@ -59,19 +59,19 @@ Après l’installation, vous pouvez configurer votre instance :
 
    `Product - Product`
 
-1. Dans le **Types indexés** , ajustez les **Requêtes de l’indexeur** pour `full`:
+1. Dans le **Types indexés** , ajustez la variable **Requêtes de l’indexeur** pour `full`:
 
    ```shell
    SELECT {pk} FROM {Product} WHERE {pk} NOT IN ({{SELECT {baseProductpk} FROM {variantproduct}}})
    ```
 
-1. Dans le **Types indexés** , ajustez les **Requêtes de l’indexeur** pour `incremental`:
+1. Dans le **Types indexés** , ajustez la variable **Requêtes de l’indexeur** pour `incremental`:
 
    ```shell
    SELECT {pk} FROM {Product} WHERE {pk} NOT IN ({{SELECT {baseProductpk} FROM {variantproduct}}}) AND {modifiedtime} <= ?lastIndexTime
    ```
 
-1. Dans le **Types indexés** , ajustez les `category` facette. Double-cliquez sur la dernière entrée de la liste des catégories pour ouvrir le **Indexed, propriété** tab :
+1. Dans le **Types indexés** , ajustez la variable `category` facette. Double-cliquez sur la dernière entrée de la liste des catégories pour ouvrir le **Indexed property** tab :
 
    >[!NOTE]
    >
@@ -84,7 +84,7 @@ Après l’installation, vous pouvez configurer votre instance :
    ![chlimage_1-39](/help/sites-administering/assets/chlimage_1-39a.png)
 
 1. **Enregistrez** les modifications.
-1. Sous **Types d’éléments SOLR**, définissez la facette `price` en vous reportant aux captures d’écran suivantes. Comme avec `category`, double-cliquez sur `price` pour ouvrir le **Indexed, propriété** tab :
+1. Sous **Types d’éléments SOLR**, définissez la facette `price` en vous reportant aux captures d’écran suivantes. Comme avec `category`, double-cliquez sur `price` pour ouvrir le **Indexed property** tab :
 
    ![chlimage_1-40](/help/sites-administering/assets/chlimage_1-40a.png)
 
@@ -109,7 +109,7 @@ La **version du catalogue** (`hybris.catalog.version`) importée peut être conf
 
 >[!NOTE]
 >
->Dans AEM, il existe plusieurs méthodes pour gérer les paramètres de configuration pour ces services. Pour plus d’informations, voir [Configuration d’OSGi. ](/help/sites-deploying/configuring-osgi.md) Pour obtenir une liste exhaustive des paramètres configurables et de leurs valeurs par défaut, reportez-vous également à la console.
+>Lorsque vous utilisez AEM, il existe plusieurs méthodes de gestion des paramètres de configuration pour de tels services ; voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails. Pour obtenir une liste exhaustive des paramètres configurables et de leurs valeurs par défaut, reportez-vous également à la console.
 
 La sortie du journal fournit des commentaires sur les pages et composants créés et signale les erreurs potentielles.
 
@@ -285,7 +285,7 @@ Le processus d’importation peut être long. Ainsi, en prolongement de la synch
 
 1. Dans Hybris, mettez à jour les informations conservées sur les produits pertinents.
 
-1. Dans Hybris, ajoutez un ou plusieurs produits à la file d’attente express. par exemple :
+1. Dans Hybris, ajoutez un ou plusieurs produits à la file d’attente express ; par exemple :
 
    ![chlimage_1-43](/help/sites-administering/assets/chlimage_1-43a.png)
 
@@ -391,7 +391,7 @@ Pour supprimer un ou plusieurs produits du catalogue :
 
      [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 
-   * Le `Cajamara` Le produit est supprimé de la variable `Bike` category
+   * La variable `Cajamara` Le produit est supprimé du `Bike` category
 
 1. Pour rétablir le produit :
 
