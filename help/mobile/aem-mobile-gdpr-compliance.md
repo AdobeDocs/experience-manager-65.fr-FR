@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager Mobile - Préparation au RGPD
-description: Adobe Experience Manager Mobile - Préparation au RGPD
+description: Découvrez comment Adobe Experience Manager est prêt à vous aider à respecter le RGPD.
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '694'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité ; comme le RGPD et le CCPA.
+>Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité, telles que le RGPD et la CCPA.
 
 ## Prise en charge du RGPD pour AEM Mobile {#aem-mobile-gdpr-support}
 
@@ -35,7 +35,7 @@ Pour vous assurer que vous ne confondez pas AEM Mobile avec l’ancien produit D
 
 Contactez l’assistance clientèle d’Adobe afin de pouvoir envoyer une demande en vertu du RGPD pour le Digital Publishing Suite.
 
-Les identifiants suivants sont requis pour localiser les données client. Tout sous-ensemble reçu impliquera que les autres identifiants ne s’appliquaient pas à cet utilisateur.
+Les identifiants suivants sont requis pour localiser les données client. Tout sous-ensemble reçu implique que les autres identifiants n’étaient pas applicables à cet utilisateur.
 
 Obligatoire:
 
@@ -49,17 +49,17 @@ Fournissez au moins l’une des informations suivantes :
 
 ### Questions fréquentes {#frequently-asked-questions-faq}
 
-**Adobe supprimera-t-il mes achats App Store lors du lancement d’une demande de DELETE ?**
+**La suppression d’Adobe de mes achats App Store est-elle appliquée lors du lancement d’une demande de DELETE ?**
 
-Adobe supprime les informations qu’il possède sur les achats de la boutique d’applications (abonnements, etc.), mais les achats sont toujours enregistrés dans les boutiques d’applications. Si l’application (utilisateur final) est connectée à la boutique d’applications, ces accusés de réception sont à nouveau récupérés et envoyés à l’Adobe ; ils sont considérés comme de nouveaux achats et sont restaurés par l’application pour y avoir à nouveau accès.
+Adobe supprime les informations qu’il possède sur les achats de la boutique d’applications (abonnements, etc.), mais les achats sont toujours enregistrés dans les boutiques d’applications. Si l’application (utilisateur final) est connectée à la boutique d’applications, ces accusés de réception sont à nouveau récupérés et envoyés à Adobe. Par la suite, ces achats sont considérés comme de nouveaux achats et sont restaurés par l’application, avec un nouvel accès.
 
-**Adobe supprimera-t-il les droits fournis par les clients lors de la présentation d’une demande de DELETE ?**
+**L’Adobe supprime-t-il les droits fournis par le client lors de la présentation d’une demande de DELETE ?**
 
 Adobe supprime les informations qu’il possède sur les droits directs supplémentaires du client. Si l’application (utilisateur final) se connecte au mécanisme OAuth utilisé par le client, il envoie des informations à Adobe et les services récupèrent à nouveau les droits supplémentaires.
 
 **Que doit-on attendre de l’utilisateur final ?**
 
-Puisque la clé d’attribution des droits à l’application réside sur l’appareil dans le cadre du logiciel de visionneuse, l’utilisateur final doit désinstaller l’application. L’utilisateur final doit comprendre que s’il réinstalle l’application, les achats existants (associés à l’utilisateur de la boutique d’applications) et les droits directs (associés à l’utilisateur OAuth du client) seront toujours restaurés.
+Puisque la clé d’attribution des droits à l’application réside sur l’appareil dans le cadre du logiciel de visionneuse, l’utilisateur final doit désinstaller l’application. L’utilisateur final doit comprendre que s’il réinstalle l’application, les achats existants (associés à l’utilisateur de la boutique d’applications) et les droits directs (associés à l’utilisateur OAuth du client) sont toujours restaurés.
 
 **Que se passe-t-il lorsqu’une application est partagée entre des personnes sur un appareil ?**
 

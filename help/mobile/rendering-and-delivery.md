@@ -1,13 +1,13 @@
 ---
 title: Rendu et diffusion
-description: Rendu et diffusion
+description: Découvrez comment effectuer le rendu du contenu Adobe Experience Manager au moyen des servlets par défaut Sling pour effectuer le rendu de JSON et d’autres formats.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '596'
 ht-degree: 7%
 
 ---
@@ -42,7 +42,7 @@ Utilisation **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&qu
   </tr>
   <tr>
    <td>EXPORT-CONFIG</td>
-   <td><p><strong>FACULTATIF</strong><br /> </p> <p>une configuration d’exportation trouvée sous /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG.<br /> <br /> Si vous omettez la configuration d'export par défaut, elle sera appliquée. </p> </td>
+   <td><p><strong>FACULTATIF</strong><br /> </p> <p>une configuration d’exportation trouvée sous /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG.<br /> <br /> Si la configuration d’exportation par défaut est omise, </p> </td>
   </tr>
   <tr>
    <td>DEPTH-INT</td>
@@ -82,21 +82,21 @@ Le tableau suivant affiche les propriétés des configurations d’exportation :
   <tr>
    <td>excludeComponents</td>
    <td>Chaîne[]</td>
-   <td>exclude</td>
+   <td>exclure rien</td>
    <td>sling:resourceType</td>
    <td>inclure des détails uniquement pour les noeuds avec sling:resourceType spécifié à partir de l’exportation JSON ;</td>
   </tr>
   <tr>
    <td>excludePropertyPrefixes</td>
    <td>Chaîne[]</td>
-   <td>exclude</td>
+   <td>exclure rien</td>
    <td>Préfixes de propriété</td>
    <td>exclure les propriétés commençant par des préfixes spécifiés de l’exportation JSON ;</td>
   </tr>
   <tr>
    <td>excludeProperties</td>
    <td>Chaîne[]</td>
-   <td>exclude</td>
+   <td>exclure rien</td>
    <td>Noms de propriété</td>
    <td>exclure des propriétés spécifiées de l’exportation JSON</td>
   </tr>
@@ -117,7 +117,7 @@ Le tableau suivant affiche les propriétés des configurations d’exportation :
   <tr>
    <td>excludeChildren</td>
    <td>Chaîne[]<br /> <br /> </td>
-   <td>exclude</td>
+   <td>exclure rien</td>
    <td>noms enfants</td>
    <td>inclure uniquement des enfants spécifiés de l’exportation JSON ; exclure d’autres</td>
   </tr>
@@ -165,7 +165,7 @@ Le tableau suivant présente les propriétés :
 Content Services comprend deux configurations d’exportation :
 
 * default (aucune configuration spécifiée)
-* page (pour effectuer le rendu des pages du site)
+* page (pour rendre les pages du site)
 
 #### Configuration de l’exportation par défaut {#default-export-configuration}
 

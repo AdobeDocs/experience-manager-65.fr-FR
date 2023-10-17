@@ -1,19 +1,15 @@
 ---
 title: Configurer le composant vidéo
-seo-title: Configure the Video component
-description: Découvrez comment configurer le composant vidéo.
-seo-description: Learn how to configure the Video Component.
-uuid: f4755a13-08ea-4096-a951-46a590f8d766
+description: Découvrez comment utiliser le composant vidéo dans Adobe Experience Manager pour placer une ressource vidéo prédéfinie prête à l’emploi sur votre page.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 exl-id: 9c97f99e-d6ef-4817-8b2a-201ab22f2b38
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
-workflow-type: ht
-source-wordcount: '489'
-ht-degree: 100%
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 81%
 
 ---
 
@@ -25,7 +21,7 @@ Pour qu’un transcodage correct se produise, un administrateur installe FFmpeg 
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant intégré aux composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html?lang=fr).
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Composant intégré](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=fr).
 
 >[!CAUTION]
 >
@@ -33,7 +29,7 @@ Pour qu’un transcodage correct se produise, un administrateur installe FFmpeg 
 
 ## Configuration des profils vidéo {#configure-video-profiles}
 
-Pour utiliser des éléments HTML5, définissez des profils vidéo. Les profils vidéo sélectionnés ici sont utilisés dans l’ordre. Pour y accéder, utilisez le [mode de conception](/help/sites-authoring/default-components-designmode.md) (interface utilisateur classique uniquement) et sélectionnez l’onglet **[!UICONTROL Profils]** :
+Pour utiliser des éléments HTML5, définissez des profils vidéo. Les profils vidéo sélectionnés ici sont utilisés dans l’ordre. Pour y accéder, utilisez [Mode de conception](/help/sites-authoring/default-components-designmode.md) (IU classique uniquement) et sélectionnez l’option **[!UICONTROL Profils]** tab :
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
 
@@ -50,18 +46,18 @@ Pour installer FFmpeg sur **Windows**, procédez comme suit :
 1. Définissez la variable d’environnement système `PATH` à &lt;*your-ffmpeg-location*>`\bin`.
 1. Redémarrez AEM.
 
-Pour installer FFmpeg sur **Mac OS X**, procédez comme suit :
+Pour installer FFmpeg sur **MACOS X**, procédez comme suit :
 
 1. Installez Xcode, disponible à l’adresse [developer.apple.com/xcode](https://developer.apple.com/xcode/).
-1. Rendez-vous à l’adresse [XQuartz](https://www.xquartz.org) pour obtenir [X11](https://support.apple.com/fr-fr/HT201341).
+1. Rendez-vous à l’adresse [XQuartz](https://www.xquartz.org) pour obtenir [X11](https://support.apple.com/en-us/100724).
 1. Installez MacPorts, disponible à l’adresse [www.macports.org](https://www.macports.org/).
 1. Dans la console, exécutez `sudo port install ffmpeg` et suivez les instructions affichées à l’écran. Assurez-vous que le chemin d’accès du fichier l’exécutable `FFmpeg` est ajouté à la variable système `PATH`.
 
-Pour installer FFmpeg sur **Mac OS X 10.6**, à l’aide de la version précompilée, procédez comme suit :
+Pour installer FFmpeg sur **macOS X 10.6**, à l’aide de la version précompilée, procédez comme suit :
 
 1. Téléchargez la version précompilée.
 1. Désarchivez-la dans le répertoire `/usr/local`.
-1. Dans la console, exécutez `sudo ln -s /usr/local/Cellar/ffmpeg/0.6/bin/ffmpeg /usr/bin/ffmpeg`. Modifiez les chemins selon les besoins.
+1. Dans la console, exécutez `sudo ln -s /usr/local/Cellar/ffmpeg/0.6/bin/ffmpeg /usr/bin/ffmpeg`. Modifiez le chemin selon les besoins.
 
 Pour **configurer AEM**, procédez comme suit :
 

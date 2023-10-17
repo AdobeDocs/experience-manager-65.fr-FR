@@ -1,15 +1,15 @@
 ---
 title: Rendus vidéo
-description: Rendus vidéo
+description: Découvrez comment utiliser Adobe Experience Manager Assets pour générer des rendus vidéo pour des ressources vidéo de différents formats, notamment OGG, FLV, etc.
 uuid: a02f9ec1-30d9-4cbb-8746-8391ac614f0a
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 1601b473-7227-4a56-bb7c-289de2987e4b
 exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+workflow-type: tm+mt
+source-wordcount: '243'
+ht-degree: 85%
 
 ---
 
@@ -35,7 +35,7 @@ Pour afficher les rendus d’une ressource vidéo spécifique, ouvrez sa page de
 
 Pour configurer le serveur proxy des rendus codés DM, [configurez les services cloud Dynamic Media](config-dynamic.md).
 
-Pour générer des rendus vidéo avec les paramètres souhaités, [créez un profil vidéo correspondant](video-profiles.md).
+Pour générer des rendus vidéo avec les paramètres souhaités, procédez comme suit : [créer un profil vidéo correspondant ;](video-profiles.md).
 
 Une fois que vous avez configuré le serveur proxy et créé les profils vidéo, vous pouvez inclure ce paramètre vidéo prédéfini dans un profil de traitement et appliquer le profil de traitement à un dossier.
 
@@ -43,4 +43,4 @@ Une fois que vous avez configuré le serveur proxy et créé les profils vidéo,
 >
 >La lecture audio ne fonctionne pas pour les fichiers OGG et WAV sur Microsoft® Internet Explorer 11. Une erreur `Invalid Source` apparaît sur la page des détails des ressources présentant l’extension OGG ou WAV.
 >
->Sous MS® Edge et iPad, les fichiers OGG ne s’exécutent pas et génèrent une erreur de format non pris en charge.
+Sous MS® Edge et iPad, les fichiers OGG ne s’exécutent pas et génèrent une erreur de format non pris en charge.

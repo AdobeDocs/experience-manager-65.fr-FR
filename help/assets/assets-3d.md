@@ -1,6 +1,6 @@
 ---
 title: Utilisation de ressources 3D dans Dynamic Media
-description: Découvrez comment utiliser des ressources 3D dans Dynamic Media
+description: Découvrez comment charger, gérer, afficher et diffuser des ressources 3D dans Dynamic Media en tant qu’expérience immersive.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
@@ -8,10 +8,10 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '2348'
-ht-degree: 99%
+source-wordcount: '2354'
+ht-degree: 97%
 
 ---
 
@@ -182,7 +182,7 @@ Dynamic Media contient un composant Média 3D Dynamic Media que vous pouvez u
 
    ![3d-media-component-structure](/help/assets/assets-dm/3d-media-component-structure.png)
 
-1. Sélectionnez une zone vide de la région **[!UICONTROL Conteneur de mises en page]** pour la sélectionner et ouvrir sa barre d’outils associée.
+1. Sélectionnez une zone vide de la région **[!UICONTROL Conteneur de mise en page]** pour la sélectionner et ouvrir sa barre d’outils associée.
 1. Dans la barre d’outils, sélectionnez l’icône **[!UICONTROL Politique]** pour ouvrir l’**[!UICONTROL Éditeur de politiques]**.
 1. Dans la section **[!UICONTROL Propriétés]**, sous l’onglet **[!UICONTROL Composants autorisés]**, faites défiler l’écran jusqu’à **[!UICONTROL Dynamic Media]**, puis développez la liste et cochez la case **[!UICONTROL Média 3D]**.
 1. Sélectionnez **[!UICONTROL Terminé]** pour enregistrer les modifications et fermer l’**[!UICONTROL Éditeur de politiques]**.

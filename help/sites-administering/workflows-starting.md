@@ -1,25 +1,21 @@
 ---
 title: Démarrage d’un workflow
-seo-title: Starting Workflows
-description: Découvrez comment démarrer des workflows dans AEM.
-seo-description: Learn how to start Workflows in AEM.
-uuid: 0648d335-ecce-459d-95fd-3d4d76181b32
+description: Découvrez comment administrer des workflows dans Adobe Experience Manager afin de pouvoir les démarrer à l’aide de différentes méthodes, manuellement ou automatiquement.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 exl-id: 84a1964c-4121-4763-b946-9eee6093747d
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 65%
+source-wordcount: '799'
+ht-degree: 47%
 
 ---
 
 # Démarrage d’un workflow{#starting-workflows}
 
-Lors de l’administration des workflows, vous pouvez les démarrer selon différentes méthodes :
+Lors de l’administration des workflows, vous pouvez les démarrer à l’aide de différentes méthodes :
 
 * Manuellement :
 
@@ -87,16 +83,16 @@ Un module de workflow :
 ## Démarrage d’un workflow à partir de la console Modèles {#starting-a-workflow-from-the-models-console}
 
 1. Accédez à la console **Modèles** en sélectionnant **Outils**, **Workflow**, puis **Modèles**.
-1. Sélectionnez le workflow (selon la vue de la console). Vous pouvez également utiliser la fonction Rechercher (dans la partie supérieure gauche), si nécessaire :
+1. Sélectionnez le workflow (en fonction de la vue de la console) ; vous pouvez également utiliser la fonction Rechercher (en haut à gauche) si nécessaire :
 
    ![wf-103](assets/wf-103.png)
 
    >[!NOTE]
    >
-   >L’indicateur **[Transitoire](/help/sites-developing/workflows.md#transient-workflows)** affiche les workflows pour lesquels l’historique des workflows n’est pas conservé.
+   >La variable **[Transitoire](/help/sites-developing/workflows.md#transient-workflows)** affiche les workflows pour lesquels l’historique des workflows n’est pas conservé.
 
 1. Sélectionnez **Démarrer le workflow** dans la barre d’outils.
-1. La boîte de dialogue Exécuter le workflow s’ouvre, d’où vous pouvez spécifier les éléments suivants :
+1. La boîte de dialogue Exécuter le processus s’ouvre, vous permettant de spécifier les éléments suivants :
 
    * **Payload**
 
@@ -115,13 +111,13 @@ Un module de workflow :
 ## Création d’une configuration de lanceur {#creating-a-launcher-configuration}
 
 1. Accédez à la console **Lanceurs de workflow** en sélectionnant **Outils**, **Workflow**, puis **Lanceurs**.
-1. Sélectionnez **Créer**, puis **Ajouter un lanceur** pour ouvrir la boîte de dialogue :
+1. Sélectionner **Créer**, puis **Ajouter un lanceur** pour ouvrir la boîte de dialogue :
 
    ![wf-105](assets/wf-105.png)
 
    * **Type d’événement**
 
-     Type d’événement qui lance le workflow :
+     Type d’événement qui lance le workflow :
 
       * Créé
       * Modifié
@@ -147,11 +143,11 @@ Un module de workflow :
 
    * **Fonctionnalités**
 
-     Liste des fonctionnalités à activer. Sélectionnez les fonctionnalités nécessaires à l’aide du sélecteur de liste déroulante.
+     Liste des fonctionnalités à activer. Sélectionnez les fonctionnalités requises à l’aide du sélecteur de liste déroulante.
 
    * **Fonctionnalités désactivées**
 
-   Liste des fonctionnalités à désactiver. Sélectionnez les fonctionnalités nécessaires à l’aide du sélecteur de liste déroulante.
+   Liste des fonctionnalités à désactiver. Sélectionnez les fonctionnalités requises à l’aide du sélecteur de liste déroulante.
 
    * **Modèle de workflow**
 
@@ -170,12 +166,12 @@ Un module de workflow :
 
    * **Exclure la liste**
 
-     Cette option spécifie des événements JCR à exclure (c’est-à-dire à ignorer) lorsque vous déterminez si un workflow doit être déclenché.
+     Cela spécifie tous les événements JCR à exclure (c’est-à-dire à ignorer) lorsque vous déterminez si un workflow doit être déclenché.
 
-     Cette propriété de lanceur est une liste d’éléments séparés par des virgules : ``
+     Cette propriété de lanceur est une liste d’éléments séparés par des virgules : &quot;
 
       * `property-name` ignore les événements `jcr` déclenchés avec le nom de propriété spécifié. ``
-      * `event-user-data:<*someValue*>` ignore tout événement contenant la variable `*<someValue*`> `user-data` défini par le biais de l’API  [`ObservationManager` ](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String.
+      * `event-user-data:<*someValue*>` ignore tout événement contenant la variable `*<someValue*`> `user-data` défini par le biais de la variable [`ObservationManager` API](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String)).
 
      Par exemple :
 
@@ -187,7 +183,7 @@ Un module de workflow :
 
 1. Sélectionnez **Créer** pour créer le lanceur et revenir à la console.
 
-   Une fois que l’événement approprié se produit, le lanceur est déclenché et le workflow est démarré.
+   Lorsque l’événement approprié se produit, le lanceur est déclenché et le workflow a démarré.
 
 ## Gestion d’une configuration de lanceur {#managing-a-launcher-configuration}
 

@@ -1,16 +1,16 @@
 ---
 title: Éditeur en bloc
-description: Découvrez comment utiliser l’éditeur en bloc.
+description: Découvrez comment utiliser l’éditeur en bloc pour une modification efficace lorsque le contexte visuel de page n’est pas nécessaire.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 39%
+source-wordcount: '1159'
+ht-degree: 31%
 
 ---
 
@@ -41,7 +41,7 @@ Par exemple, si vous avez besoin de tous les noms et adresses électroniques des
 Le site web de Geometrixx fournit un exemple illustrant ce cas pratique :
 
 1. Accédez au **Assistance** puis à la page **Satisfaction de la clientèle** enquête.
-1. **Modifiez** le paragraphe **Début du formulaire**. Cliquez sur la **Avancé** , développez la **Configuration d’action**, puis cliquez sur **Afficher les données...**.
+1. **Modifiez** le paragraphe **Début du formulaire**. Dans la boîte de dialogue, cliquez sur le bouton **Avancé** , développez la **Configuration d’action**, puis cliquez sur **Afficher les données...**.
 
    ![Exemple d&#39;enquête sur la satisfaction client](assets/custsatsurvey.png)
 
@@ -63,7 +63,7 @@ L’éditeur en bloc vous permet d’effectuer les opérations suivantes :
 Pour utiliser l’éditeur en bloc afin de modifier plusieurs éléments simultanément :
 
 1. Dans le **Outils** , cliquez sur **Importateurs** pour le développer.
-1. Double-cliquez sur le **Éditeur en bloc** pour l’ouvrir.
+1. Double-cliquez sur le **Éditeur en bloc**.
 1. Saisissez vos exigences de sélection :
 
 <table>
@@ -78,11 +78,11 @@ Pour utiliser l’éditeur en bloc afin de modifier plusieurs éléments simulta
   </tr>
   <tr>
    <td>Paramètres de requête</td>
-   <td>À l’aide des paramètres GQL, saisissez la chaîne de recherche que l’éditeur en bloc doit rechercher dans le référentiel ; par exemple, <code>type:Page</code> recherche toutes les pages du chemin racine, <code>text:professional</code> recherche toutes les pages qui contiennent le mot "professionnel", et <code>"jcr:title":English</code> recherche toutes les pages dont le titre est "Anglais". Vous pouvez rechercher uniquement des chaînes.</td>
+   <td>À l’aide des paramètres GQL, saisissez la chaîne de recherche que l’éditeur en bloc doit rechercher dans le référentiel. Par exemple : <code>type:Page</code> recherche toutes les pages du chemin racine, <code>text:professional</code> recherche toutes les pages qui contiennent le mot "professionnel", et <code>"jcr:title":English</code> recherche toutes les pages dont le titre est "Anglais". Vous pouvez rechercher uniquement des chaînes.</td>
   </tr>
   <tr>
    <td>Case à cocher Mode Contenu</td>
-   <td>Cochez cette case pour lire les propriétés dans le sous-nœud <code>jcr:content</code> des résultats de recherche, s’il existe. À utiliser uniquement pour des pages. Les noms de propriété comportent le préfixe <code>"jcr:content/"</code></td>
+   <td>Cochez cette case pour pouvoir lire les propriétés dans la variable <code>jcr:content</code> sous-noeud des résultats de la recherche s’il existe. À utiliser uniquement pour des pages. Les noms de propriété comportent le préfixe <code>"jcr:content/"</code></td>
   </tr>
   <tr>
    <td>Propriétés/Colonnes</td>
@@ -104,11 +104,11 @@ Pour l’exemple ci-dessus, toutes les pages qui correspondent aux critères de 
 
    ![Résultats de l’éditeur en bloc](assets/chlimage_1-39.png)
 
-1. Effectuez les modifications nécessaires en double-cliquant dans une cellule.
+1. Double-cliquez sur une cellule pour apporter des modifications.
 
    ![Modification en bloc](assets/srchresultedit.png)
 
-1. Cliquez sur **Enregistrer** pour enregistrer les modifications (le bouton **Enregistrer** est activé une fois que vous avez modifié une cellule).
+1. Cliquez sur **Enregistrer** pour enregistrer vos modifications (le **Enregistrer** est activé après avoir modifié une cellule).
 
    >[!CAUTION]
    >
@@ -117,18 +117,18 @@ Pour l’exemple ci-dessus, toutes les pages qui correspondent aux critères de 
 #### Paramètres de requête GQL supplémentaires {#additional-gql-query-parameters}
 
 * **path :** effectue une recherche uniquement sur les nœuds sous ce chemin d’accès. Si vous spécifiez plusieurs termes avec un préfixe de chemin, seul le dernier est pris en compte.
-* **type :** renvoie uniquement les nœuds des types déterminés. Cela inclut les types principal et mixin. Vous pouvez spécifier plusieurs types de noeuds séparés par des virgules. GQL renvoie les noeuds de l’un des types spécifiés.
+* **type :** renvoie uniquement les noeuds du type de noeud donné. Cela inclut les types principal et mixin. Vous pouvez spécifier plusieurs types de noeuds séparés par des virgules. GQL renvoie les noeuds de l’un des types spécifiés.
 * **order :** organise le résultat en fonction des propriétés données. Vous pouvez spécifier plusieurs noms de propriétés séparés par des virgules. Pour contrôler le résultat dans l’ordre descendant, ajoutez simplement le préfixe « - » (moins) au nom de la propriété. Par exemple, order:-name. L’utilisation d’un signe plus renvoie le résultat dans l’ordre croissant, qui est également la valeur par défaut.
-* **limit :** limite le nombre de résultats à l’aide d’un intervalle. Par exemple, limit:10.20 L’intervalle est de base zéro, le début est inclusif et la fin est exclusive. Vous pouvez également spécifier un intervalle ouvert :limit:10.. ou limit:..20. Si les points sont omis et qu’une seule valeur est spécifiée, GQL renvoie, au maximum, ce nombre de résultats. Par exemple, limit:10 (renvoie les dix premiers résultats).
+* **limit :** limite le nombre de résultats à l’aide d’un intervalle. Par exemple, limit:10.20 L’intervalle est de base zéro, le début est inclusif et la fin est exclusive. Vous pouvez également spécifier un intervalle ouvert :limit:10.. ou limit:..20 Si les points sont omis et qu’une seule valeur est spécifiée, GQL renvoie au plus ce nombre de résultats. Par exemple, limit:10 (renvoie les dix premiers résultats).
 
 ### Exportation de contenu {#exporting-content}
 
-Vous pouvez avoir besoin d’exporter du contenu et d’y apporter des modifications dans une feuille de calcul Excel. Par exemple, vous pouvez exporter une liste de diffusion et modifier l’indicatif régional de tous les numéros de téléphone répertoriés directement dans Excel, ou ajouter des lignes supplémentaires, etc.
+Si nécessaire, exportez le contenu dans une feuille de calcul Excel pour apporter des modifications. Par exemple, vous pouvez exporter une liste de diffusion et modifier l’indicatif régional de tous les numéros de téléphone répertoriés directement dans Excel, ou ajouter des lignes supplémentaires.
 
 Pour exporter du contenu :
 
 1. Recherchez du contenu comme décrit dans [Recherche et modification de contenu](#searching-and-editing-content).
-1. Cliquez sur **Exporter** pour exporter les modifications dans une feuille de calcul Excel de données séparées par des tabulations. AEM WCM vous demande où vous souhaitez télécharger le fichier.
+1. Cliquez sur **Exporter** vous pouvez ainsi exporter les modifications dans une feuille de calcul Excel séparée par des tabulations. AEM WCM vous demande où vous souhaitez télécharger le fichier.
 
    >[!NOTE]
    >

@@ -1,14 +1,14 @@
 ---
 title: Démarrage AEM PhoneGap
-description: Découvrez le starterkit pour les développeurs.
+description: Découvrez comment utiliser le starterkit pour vous aider à commencer à utiliser les principes de base du développement Adobe Experience Manager Mobile.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 7d56b9f0-5aa5-4b68-a85e-7e80415cbc76
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '413'
 ht-degree: 1%
 
 ---
@@ -23,9 +23,9 @@ Pour les développeurs, le meilleur point de départ consiste à examiner Adobe 
 
 https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit
 
-Le starterkit vous permet d’avancer rapidement en vous guidant à travers les principes de base du développement d’AEM Mobile, en commençant par la création de projet et la gouvernance, l’installation des outils nécessaires, la définition d’un archétype Maven, la création, le déploiement et ensuite la création de votre propre expérience.
+Le Starterkit vous permet d’avancer rapidement en vous guidant à travers les principes de base du développement AEM Mobile. Il commence par la création et la gouvernance de projet, l’installation des outils nécessaires, la définition d’un archétype Maven, la création, le déploiement et la création de votre propre expérience.
 
-Les développeurs peuvent utiliser cet exemple comme point de départ pour essayer une application AEM Mobile à l’aide de PhoneGap. L’exécution de starterkit et de l’application de référence vous permet de bien comprendre les bases de la création d’applications mobiles enrichies.
+Les développeurs peuvent utiliser cet exemple comme point de départ pour essayer une application AEM Mobile à l’aide de PhoneGap. L’exécution de starterkit et de l’application de référence vous permet de bien comprendre les principes de base de la création d’applications mobiles enrichies.
 
 * Utilisez la variable [AEM PhoneGap Starter Kit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) pour créer des applications adaptées au catalogue AEM Mobile.
 * A [application de référence](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) avec la source complète a été créée. Elle indique de nombreuses nouvelles fonctionnalités d’AEM Mobile, que vous migriez une application existante dans AEM Mobile ou que vous la commenciez à nouveau.
@@ -38,7 +38,7 @@ Les développeurs peuvent utiliser cet exemple comme point de départ pour essay
 
 ## Modèles et composants {#templates-and-components}
 
-AEM *Modèles* et *Composants* permettre aux propriétaires de secteurs d’activité de créer des expériences personnalisées. *Modèles *et *Composants* sont disponibles prêts à l’emploi ou peuvent être développés par vous, le développeur, soit en étendant les composants existants, soit en créant un champ vert (avancé). *Modèles* et *Composants* sont les éléments qui permettent à l’auteur AEM de faire glisser et de déposer pour créer des expériences attrayantes et pertinentes.
+AEM *Modèles* et *Composants* permettre aux propriétaires de secteurs d’activité de créer des expériences personnalisées. *Modèles *et *Composants* sont disponibles prêts à l’emploi ou peuvent être développés par vous, le développeur, soit en étendant les composants existants, soit en créant un champ vert (avancé). *Modèles* et *Composants* sont les éléments qui permettent à l’auteur d’AEM de faire glisser et de déposer pour créer des expériences attrayantes et pertinentes.
 
 1. [Création de composants](/help/sites-developing/components.md)
 1. [Création de modèles](/help/sites-developing/templates.md)

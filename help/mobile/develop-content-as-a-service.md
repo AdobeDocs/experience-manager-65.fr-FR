@@ -1,13 +1,13 @@
 ---
 title: Diffusion de contenu
-description: Diffusion de contenu
+description: Découvrez comment utiliser tout le contenu de Adobe Experience Manager pour diffuser l’expérience de l’application ciblée.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '978'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Cela inclut l’utilisation de ressources, de contenu de site, de contenu CaS (e
 
 >[!NOTE]
 >
->**Contenu hors diffusion** peut provenir de l’une des fonctions ci-dessus via les gestionnaires ContentSync . Il peut être utilisé pour le module par lots et la diffusion par le biais de fichiers compressés et pour gérer les mises à jour de ces modules.
+>**Contenu hors diffusion** peut provenir de n’importe lequel des éléments ci-dessus au moyen des gestionnaires ContentSync . Il peut être utilisé pour le module par lots et la diffusion par le biais de fichiers compressés et pour gérer les mises à jour de ces modules.
 
 Content Services fournit trois types principaux de contenu :
 
@@ -106,7 +106,7 @@ Pour obtenir le binaire de l’image &quot;panier&quot;, la bibliothèque client
 
 ## Contenu du HTML compressé {#packaged-html-content}
 
-Le contenu HTML est nécessaire pour les clients qui doivent maintenir la mise en page du contenu. Cela s’avère utile pour les applications natives qui utilisent un conteneur web (un affichage web Cordova, par exemple) pour afficher le contenu.
+Le contenu HTML est nécessaire pour les clients qui doivent conserver la mise en page du contenu. Cela s’avère utile pour les applications natives qui utilisent un conteneur web (un affichage web Cordova, par exemple) pour afficher le contenu.
 
 AEM Content Services fournit du contenu par HTML à l’application mobile au moyen de l’API. Les clients qui souhaitent exposer AEM contenu en tant que HTML peuvent créer une entité de page de HTML qui pointe vers la source de contenu AEM.
 
@@ -127,15 +127,15 @@ Ces entités de contenu sont générées à l’aide d’un modèle de contenu a
 
 Le contenu peut accéder à l’application de plusieurs façons.
 
-1. ZIPS de contenu GET via AEM en vol
+1. GET de contenu ZIPS par le biais d&#39;AEM en vol
 
    * Les gestionnaires de synchronisation de contenu peuvent mettre à jour directement le package zip ou en appelant les rendus de contenu existants.
 
       * Gestionnaire de plateformes
-      * Gestionnaires AEM
+      * Gestionnaires d’AEM
       * Gestionnaires personnalisés
 
-1. GET du contenu directement via les moteurs de rendu de contenu
+1. GET du contenu directement par le biais des rendus de contenu
 
    * Rendu Sling par défaut prêt à l’emploi
    * Rendu de contenu AEM Mobile/Content Services
