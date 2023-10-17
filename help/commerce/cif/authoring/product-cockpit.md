@@ -1,11 +1,11 @@
 ---
 title: Console du produit
-description: Utiliser le cockpit de produits
+description: Utiliser le cockpit de produits qui offre une vue d’ensemble unifiée des catalogues de produits liés et du contenu associé.
 exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
-source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 72%
+source-wordcount: '428'
+ht-degree: 70%
 
 ---
 

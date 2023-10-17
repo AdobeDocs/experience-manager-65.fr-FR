@@ -1,11 +1,11 @@
 ---
-title: Notes de mise à jour d’Adobe Experience Manager Content and Commerce 2021
-description: Notes de mise à jour d’Adobe Experience Manager Content and Commerce 2021
+title: Notes de mise à jour de Adobe Experience Manager Content and Commerce 2021
+description: Notes de mise à jour de Adobe Experience Manager Content and Commerce 2021.
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '1318'
-ht-degree: 86%
+ht-degree: 89%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 86%
 
 ## Présentation de la configuration système requise
 
-Examinez la configuration système minimale requise dans le tableau ci-dessous pour la version CIF que vous utilisez actuellement ou que vous prévoyez d’utiliser à l’avenir.
+Passez en revue la configuration système minimale requise dans le tableau ci-dessous pour la version CIF que vous utilisez actuellement ou que vous prévoyez d’utiliser à l’avenir.
 
 | Composant | Configuration requise |
 |:-------|:-----:|
@@ -21,7 +21,7 @@ Examinez la configuration système minimale requise dans le tableau ci-dessous p
 | Composants principaux CIF | [Configuration requise](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archétype de projet AEM | [Configuration requise](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
-## Date de publication : Novembre 2021
+## Date de publication : novembre 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -39,7 +39,7 @@ Examinez la configuration système minimale requise dans le tableau ci-dessous p
 
 * Prise en charge des cartes-cadeaux dans la vitrine AEM
 
-## Date de publication : Octobre 2021
+## Date de publication : octobre 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -51,7 +51,7 @@ Examinez la configuration système minimale requise dans le tableau ci-dessous p
 
 * Le module complémentaire CIF prend en charge la dernière version de Commerce v2.4.3 avec de nouveaux schémas et API GraphQL.
 
-* Les auteurs peuvent ajouter des liens vers les pages de produits et de catalogues dans les champs de texte à l’aide de l’éditeur de texte enrichi (RTE). Une icône CIF a été ajoutée à la barre d’outils de l’éditeur de texte enrichi pour permettre aux sélecteurs de rechercher rapidement et de sélectionner le produit ou la catégorie sans quitter le contexte.
+* Les auteurs peuvent ajouter des liens vers les pages de produits et de catalogues dans les champs de texte à l’aide de l’éditeur de texte enrichi (RTE). Une icône CIF a été ajoutée à la barre d’outils de l’éditeur de texte enrichi pour ouvrir les sélecteurs afin de rechercher et sélectionner rapidement le produit ou la catégorie sans quitter le contexte.
 
 * Les fenêtres pop-up de panier et de passage en caisse existantes ont été remplacées par des pages de panier et de passage en caisse AEM dédiées. Les composants de ces pages sont créés à l’aide des composants Peregrine extensibles d’Adobe Commerce.
 
@@ -59,7 +59,7 @@ Examinez la configuration système minimale requise dans le tableau ci-dessous p
 
 * Le storefront Venia d’AEM renvoie une erreur HTTP 404 si la catégorie ou page produit est introuvable.
 
-## Date de publication : Septembre 2021
+## Date de publication : septembre 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -83,11 +83,11 @@ Examinez la configuration système minimale requise dans le tableau ci-dessous p
 
 * La purge du cache du menu ne fonctionne pas comme prévu.
 
-* Erreurs JS lors de l’étape de déploiement d’AEM CS et lorsque vous n’utilisez pas de composants côté client
+* Erreurs JS lors de l’étape de déploiement AEM CS et lorsque vous n’utilisez pas de composants côté client
 
 * Impossible de créer une configuration cloud CIF dans les dossiers comportant un nœud sling:configs
 
-## Date de publication : Août 2021
+## Date de publication : août 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -113,7 +113,7 @@ Examinez la configuration système minimale requise dans le tableau ci-dessous p
 
 * Correction de l’accès aux produits bruts pour les éléments de liste de produits mappés
 
-## Date de publication : Juillet 2021
+## Date de publication : juillet 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -130,7 +130,7 @@ Examinez la configuration système minimale requise dans le tableau ci-dessous p
 
 * Prise en charge de la [recommandation de produit Adobe Commerce Sensei, optimisée par Adobe Sensei](https://business.adobe.com/fr/products/magento/product-recommendations.html) dans le storefront AEM à l’aide de recommandations prédéfinies ou créées à la volée
 
-## Date de publication : Juin 2021
+## Date de publication : juin 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -147,7 +147,7 @@ Examinez la configuration système minimale requise dans le tableau ci-dessous p
 * Amélioration des URL compatibles avec les moteurs de recherche pour les pages de catégorie
 * Prise en charge des en-têtes HTTP personnalisés par site/configuration
 
-## Date de publication : Mai 2021
+## Date de publication : mai 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -165,7 +165,7 @@ Examinez la configuration système minimale requise dans le tableau ci-dessous p
 
 * Le chemin de navigation réinitialise les données d’aperçu dans la console de produit
 
-## Date de publication : Avril 2021
+## Date de publication : avril 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -185,7 +185,7 @@ Examinez la configuration système minimale requise dans le tableau ci-dessous p
 
 * Le champ de catégorie racine n’était pas affiché sous l’onglet Commerce dans les propriétés de page des pages de catégorie.
 
-## Date de publication : Mars 2021 {#what-is-new-march}
+## Date de publication : mars 2021 {#what-is-new-march}
 
 | GitHub | Version | Notes de mise à jour détaillées |
 |:-------|:-----:|---------------------:|
@@ -205,7 +205,7 @@ Examinez la configuration système minimale requise dans le tableau ci-dessous p
 
 * Plusieurs correctifs de bogues.
 
-## Date de publication : Février 2021
+## Date de publication : février 2021
 
 | GitHub | Version | Notes de mise à jour détaillées |
 |:-------|:-----:|---------------------:|
@@ -225,7 +225,7 @@ Examinez la configuration système minimale requise dans le tableau ci-dessous p
 
 * Plusieurs correctifs de bogues.
 
-## Date de publication : Janvier 2021
+## Date de publication : janvier 2021
 
 | GitHub | Version | Notes de mise à jour détaillées |
 |:-------|:-----:|---------------------:|

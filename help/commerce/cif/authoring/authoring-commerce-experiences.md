@@ -1,11 +1,11 @@
 ---
 title: Création d’expériences commerciales
-description: Création d’expériences commerciales
+description: Le module complémentaire CIF étend la création Adobe Experience Manager avec des fonctionnalités spécifiques au commerce.
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 95%
+source-wordcount: '713'
+ht-degree: 94%
 
 ---
 

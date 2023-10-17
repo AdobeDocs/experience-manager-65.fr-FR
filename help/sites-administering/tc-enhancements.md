@@ -1,25 +1,20 @@
 ---
 title: Amélioration des traductions
-seo-title: Translation Enhancements
-description: Amélioration des traductions dans AEM.
-seo-description: Translation enhancements in AEM.
-uuid: 0563603f-327b-48f1-ac14-6777c06734b9
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+description: Améliorations et améliorations incrémentielles apportées aux fonctionnalités AEM gestion des traductions.
 topic-tags: site-features
 content-type: reference
-discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
 feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
-source-git-commit: 1be3d394283493f7c282ea4c3d794458d88e1ac3
-workflow-type: ht
-source-wordcount: '681'
-ht-degree: 100%
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+workflow-type: tm+mt
+source-wordcount: '686'
+ht-degree: 89%
 
 ---
 
 # Amélioration des traductions{#translation-enhancements}
 
-Cette page présente les améliorations et les perfectionnements incrémentiels apportés aux capacités de gestion des traductions d’AEM.
+Cette page présente des améliorations et des améliorations incrémentielles apportées aux fonctionnalités AEM gestion des traductions.
 
 ## Automatisation des projets de traduction {#translation-project-automation}
 
@@ -69,7 +64,7 @@ Les modifications manuelles du contenu traduit peuvent être synchronisées avec
 
    ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
-1. Un mode Liste affiche côte à côte une comparaison de la source et de la traduction pour chaque composant de texte qui a été modifié. Sélectionnez les mises à jour de traduction qui doivent être synchronisées avec la mémoire de traduction et sélectionnez **Mettre à jour la mémoire**.
+1. Une vue Liste affiche côte à côte une comparaison de la source et de la traduction pour chaque composant de texte qui a été modifié. Sélectionnez les mises à jour de traduction qui doivent être synchronisées avec la mémoire de traduction et sélectionnez **Mettre à jour la mémoire**.
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
@@ -96,7 +91,7 @@ Les racines de langues peuvent désormais être regroupées sous des nœuds, par
 
 >[!CAUTION]
 >
->Un seul niveau est autorisé. Par exemple, les adresses suivantes ne permettent pas à la page « es » de se résoudre en une copie de langue :
+>Un seul niveau est autorisé. Par exemple, les éléments suivants ne permettent pas à la page &quot;es&quot; de se résoudre sur une copie de langue :
 >
 >* `/content/we-retail/language-masters/en`
 >* `/content/we-retail/language-masters/americas/central-america/es`
@@ -105,13 +100,13 @@ Les racines de langues peuvent désormais être regroupées sous des nœuds, par
 
 >[!NOTE]
 >
->Les racines de langues peuvent avoir n’importe quel nom de page, plutôt que simplement le code ISO de la langue en question. AEM commence toujours par vérifier le chemin et le nom, mais si le nom de la page n’indique pas de langue, AEM vérifie la propriété cq:language de la page afin d’identifier la langue.
+>Les racines de langues peuvent avoir n’importe quel nom de page, plutôt que simplement le code ISO de la langue en question. AEM vérifie toujours d’abord le chemin et le nom, mais si le nom de page n’identifie pas de langue, AEM vérifie la propriété cq:language de la page pour l’identification de la langue.
 
-## Créations de rapports d’état de traduction {#translation-status-reporting}
+## Rapports d’état de traduction {#translation-status-reporting}
 
-Une propriété peut désormais être sélectionnée dans le mode Liste de Sites. Cette propriété indique si une page a été traduite, si elle est en cours de traduction ou si elle n’a pas encore été traduite. Pour l’afficher, procédez comme suit :
+Une propriété peut désormais être sélectionnée dans la vue Liste de Sites. Cette propriété indique si une page a été traduite, si elle est en cours de traduction ou si elle n’a pas encore été traduite. Pour l’afficher, procédez comme suit :
 
-1. Dans Sites, passez en **mode Liste.**
+1. Dans Sites, basculez vers la vue **Liste**.
 
    ![screen_shot_2018-04-23at130646](assets/screen_shot_2018-04-23at130646.jpg)
 

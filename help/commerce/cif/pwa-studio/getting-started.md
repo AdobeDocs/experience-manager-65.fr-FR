@@ -3,10 +3,9 @@ title: Prise en main de l’extension AEM pour PWA Studio
 description: Découvrez comment déployer un projet Content and Commerce découplé AEM avec PWA Studio.
 topics: Commerce
 feature: Commerce Integration Framework
-thumbnail: 37843.jpg
 exl-id: de7b8f05-b6b7-4105-84a5-940c16ebf2b4
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
-workflow-type: ht
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 100%
 
@@ -14,7 +13,7 @@ ht-degree: 100%
 
 # Prise en main de l’extension AEM pour PWA Studio {#getting-started-pwa}
 
-PWA Studio s’intègre de manière transparente à Adobe Commerce par le biais de GraphQL. Il offre des options illimitées pour créer des storefronts innovants et attrayants ainsi que d’autres expériences numériques.
+PWA Studio s’intègre de manière transparente à Adobe Commerce par le biais de GraphQL. Il offre des options illimitées pour créer des storefronts innovants et attrayants ainsi que d’autres expériences digitales.
 
 Les fragments de contenu sont des éléments de contenu dotés d’une structure prédéfinie qui leur permet d’être utilisés de manière découplée à l’aide de GraphQL en tant qu’API dans différents formats (par exemple, JSON et Markdown) et rendus indépendamment. Les fragments de contenu incluent tous les types de données et champs requis par GraphQL pour s’assurer que votre application ne demande que les éléments disponibles et reçoit les éléments attendus. La flexibilité qu’ils offrent en termes de structure les rend parfaitement utilisables à plusieurs emplacements et sur plusieurs canaux.
 
@@ -94,15 +93,15 @@ Consultez la documentation relative aux fragments de contenu AEM pour configurer
 
 * Politique de partage des ressources cross-origin Adobe Granite (com.adobe.granite.cors.impl.CORSPolicyImpl)
 
-   Définissez la propriété `allowedorigin` sur le nom d’hôte complet de votre application PWA.
+  Définissez la propriété `allowedorigin` sur le nom d’hôte complet de votre application PWA.
 
-   Exemple : `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
+  Exemple : `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Filtre de référent Apache Sling (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
-   Définissez la propriété allow.hosts sur le nom d’hôte de votre application PWA.
+  Définissez la propriété allow.hosts sur le nom d’hôte de votre application PWA.
 
-   Exemple : pwa-studio-test-vflyn.local.pwadev
+  Exemple : pwa-studio-test-vflyn.local.pwadev
 
 Vous trouverez des exemples complets des deux configurations ici : <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 

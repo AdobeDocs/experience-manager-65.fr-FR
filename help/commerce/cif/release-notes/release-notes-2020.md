@@ -1,11 +1,11 @@
 ---
 title: Notes de mise à jour d’AEM Content and Commerce 2020
-description: Notes de mise à jour d’AEM Content and Commerce 2020
+description: Notes de mise à jour de Adobe Experience Manager Content and Commerce 2020.
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 69%
+source-wordcount: '1354'
+ht-degree: 68%
 
 ---
 

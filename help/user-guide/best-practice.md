@@ -1,11 +1,9 @@
 ---
 title: Bonnes pratiques relatives à AEM 6.5
-seo-title: AEM 6.5 Best Practices
-description: Ressources de bonnes pratiques, de dépannage et de formation pour AEM 6.5
-seo-description: Resources for best practices, troubleshooting and training for AEM 6.5
+description: Ressources de bonnes pratiques, de dépannage et de formation pour AEM 6.5.
 exl-id: 077c00b9-f2ec-49a3-8d85-a3d3ecf287bb
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: ht
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 100%
 

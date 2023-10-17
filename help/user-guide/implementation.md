@@ -1,13 +1,11 @@
 ---
 title: Guide de l’utilisateur pour la mise en œuvre d’AEM 6.5
-seo-title: AEM 6.5 Implementation User Guide
-description: Présentation de la mise en œuvre d’AEM 6.5
-seo-description: An overview of how to implement AEM 6.5
+description: Présentation de la mise en oeuvre et du développement avec Adobe Experience Manager 6.5.
 exl-id: 33404f0d-c04c-4720-8a24-ded6738ec7d4
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: ht
-source-wordcount: '100'
-ht-degree: 100%
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+workflow-type: tm+mt
+source-wordcount: '105'
+ht-degree: 88%
 
 ---
 

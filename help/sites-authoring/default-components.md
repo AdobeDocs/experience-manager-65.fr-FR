@@ -1,12 +1,8 @@
 ---
 title: Composants par défaut
-description: Adobe Experience Manager est fourni avec divers composants prêts à l’emploi qui fournissent des fonctionnalités complètes aux créateurs de sites web.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
+description: Adobe Experience Manager est fourni avec divers composants prêts à l’emploi qui fournissent des fonctionnalités complètes aux auteurs de sites web.
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 68%
@@ -43,11 +39,11 @@ Les composants sont regroupés dans diverses catégories appelées groupes de co
 
 * **Commerce We.Retail** : inclut des composants de commerce tels que des cartes et grilles de produits.
 
-* **Général**: Inclut le conteneur de mises en page et le fragment d’expérience
+* **Général**: inclut le conteneur de mises en page et le fragment d’expérience ;
 
 ## Présentation de tous les composants {#overview-of-all-components}
 
-Le [Console Composants](/help/sites-authoring/default-components-console.md) donne un aperçu des groupes de composants et des composants fournis par votre installation AEM. Vous pouvez afficher des informations clés sur des composants spécifiques et leur utilisation.
+La variable [Console Composants](/help/sites-authoring/default-components-console.md) donne un aperçu des groupes de composants et des composants fournis par votre installation AEM. Vous pouvez afficher des informations clés sur des composants spécifiques et leur utilisation.
 
 ## Composants – Principaux domaines {#components-major-areas}
 

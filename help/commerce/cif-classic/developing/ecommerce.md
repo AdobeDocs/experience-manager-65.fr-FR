@@ -1,17 +1,11 @@
 ---
 title: Couche d’intégration e-commerce avec une API
-description: La structure d’intégration comprend une couche d’intégration avec une API.
-uuid: 48e01bbb-8f9e-489c-bbe4-24563e84ff35
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: platform
-docset: aem65
+description: La structure d’intégration vous permet d’extraire des données de produit dans AEM et de créer des composants AEM pour les fonctionnalités commerciales.
 exl-id: da63c576-34cd-40ce-81de-d7391a331364
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 97%
+source-wordcount: '152'
+ht-degree: 86%
 
 ---
 

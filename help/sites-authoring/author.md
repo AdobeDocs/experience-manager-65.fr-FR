@@ -1,15 +1,10 @@
 ---
 title: Création
-description: Concepts de création dans Adobe Experience Manager
-contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-docset: aem65
+description: Concepts de création et de publication dans Adobe Experience Manager 6.5.
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '553'
 ht-degree: 37%
 
 ---
@@ -27,7 +22,7 @@ Ces fonctions interagissent pour vous permettre de rendre le contenu disponible 
 
 L’environnement de création fournit les mécanismes de création, de mise à jour et de révision de ce contenu avant de le publier :
 
-* Un auteur crée et révise le contenu (qui peut être de plusieurs types). par exemple, pages, ressources, publications, etc.)
+* Un auteur crée et révise le contenu (qui peut être de plusieurs types, par exemple, pages, ressources, publications, etc.)
 * qui, à un moment donné, sera publié sur votre site Web.
 
 ![Présentation des environnements](assets/chlimage_1-132.png)
@@ -55,18 +50,18 @@ Selon la configuration de votre instance et de vos droits d’accès personnels,
 
 Il existe également des tâches administratives pour vous aider à gérer votre contenu :
 
-* les workflows qui contrôlent la gestion des modifications ; par exemple, appliquer une révision avant la publication
+* les workflows qui contrôlent la manière dont les modifications sont gérées ; par exemple, appliquer une révision avant la publication ;
 * projets qui coordonnent des tâches individuelles
 
 >[!NOTE]
 >
->AEM est également [administré](/help/sites-administering/home.md) (pour la plupart des tâches) à partir de l’environnement de création.
+>AEM [administré](/help/sites-administering/home.md) (pour la plupart des tâches) de l’environnement de création.
 
 #### Environnement de publication {#publish-environment}
 
 Une fois prêt, le contenu du site AEM est publié dans l’**environnement de publication**. Ici, vos pages sont mises à la disposition de l’audience prévue, en fonction de l’aspect global de l’interface que vous avez conçue.
 
-En règle générale, l’environnement de publication se trouve à l’intérieur de la zone démilitarisée ; en d&#39;autres termes, disponible sur l&#39;internet, mais plus sous la pleine protection du réseau interne.
+En règle générale, l’environnement de publication est situé à l’intérieur de la zone démilitarisée ; en d’autres termes, il est disponible sur Internet, mais n’est plus protégé par le réseau interne.
 
 Lorsque le site AEM est un [site communautaire](/help/communities/overview.md), ou inclut des [composants de Communities](/help/communities/author-communities.md), des utilisateurs (membres) connectés peuvent interagir avec les fonctions de Communities. Par exemple, ils peuvent interagir sur un forum, publier un commentaire ou suivre d’autres membres. Les membres peuvent se voir accorder l’autorisation d’exécuter des activités normalement limitées à l’environnement de création, telles que créer de nouvelles pages (groupes de communautés), des articles de blog et modérer les publications d’autres membres.
 
@@ -81,7 +76,7 @@ Lorsque le site AEM est un [site communautaire](/help/communities/overview.md), 
 >  Ces termes sont synonymes de publication/dépublication.
 >
 >* **Répliquer/Réplication**
->  Il s’agit des termes techniques utilisés pour indiquer le déplacement des données (contenu de page, fichiers, code, commentaires utilisateur, par exemple) d’un environnement à un autre ; c’est-à-dire lors de la publication ou de la réplication inverse des commentaires d’utilisateur.
+>  Il s’agit des termes techniques utilisés pour indiquer le mouvement des données (par exemple, le contenu de la page, les fichiers, le code, les commentaires utilisateur) d’un environnement à un autre, c’est-à-dire lors de la publication ou de la réplication inverse des commentaires utilisateur.
 >
 
 #### Dispatcher {#dispatcher}

@@ -1,15 +1,9 @@
 ---
 title: Présentation du commerce électronique
-seo-title: eCommerce Overview
 description: AEM eCommerce générique est disponible dans le cadre de l’installation standard et vous fournit toutes les fonctionnalités de la structure eCommerce.
-seo-description: AEM generic eCommerce is available as part of the standard installation and provides you with the full functionality of the eCommerce framework.
-contentOwner: Guillaume Carlino
-topic-tags: e-commerce
-content-type: reference
-docset: aem65
 feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 85%
@@ -25,7 +19,7 @@ Adobe propose deux versions de framework d’intégration de Commerce :
 |                         | CIF on-Prem | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versions d’AEM prises en charge | AEM On-Prem ou AMS 6.x | AEM AMS 6.4 et 6.5 |
-| Back-end | - AEM, Java <br> - Intégration monolithique, mappage de prégénération (modèle)<br> - Référentiel JCR | - Adobe Commerce <br>- Java et JavaScript <br>- Aucune donnée Commerce stockée dans le référentiel JCR |
+| Back-end | - AEM, Java <br> - Intégration monolithique, mappage de prégénération (modèle)<br> - Référentiel JCR | - ADOBE COMMERCE <br>- Java et JavaScript <br>- Aucune donnée Commerce stockée dans le référentiel JCR |
 | Front-end | Pages générées côté serveur AEM | Application de page mixte (rendu hybride) |
 | Catalogue de produits | - Importateur de produits, éditeur, mise en cache dans AEM <br>- Catalogues réguliers avec des pages AEM ou proxy | - Pas d’importation de produit <br>- Modèles génériques <br>- Données à la demande via le connecteur |
 | Évolutivité | - Peut prendre en charge jusqu’à quelques millions de produits (selon le cas d’utilisation) <br> - Mise en cache sur Dispatcher | - Aucune limitation de volume <br>- Mise en cache sur Dispatcher ou CDN |

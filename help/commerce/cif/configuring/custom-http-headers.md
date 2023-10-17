@@ -1,11 +1,11 @@
 ---
 title: En-têtes HTTP personnalisés
-description: Configuration d’en-têtes HTTP personnalisés
+description: Découvrez comment configurer des en-têtes HTTP personnalisés dans Adobe Experience Manager Commerce.
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
-workflow-type: ht
-source-wordcount: '270'
-ht-degree: 100%
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+workflow-type: tm+mt
+source-wordcount: '278'
+ht-degree: 95%
 
 ---
 
@@ -18,6 +18,7 @@ Pour mieux contrôler leur serveur principal, les auteurs peuvent configurer des
 >[!NOTE]
 >
 >Les développeurs peuvent toujours configurer des en-têtes HTTP personnalisés à l’aide de la configuration client GraphQL.
+>
 
 ## Configuration {#configuration}
 

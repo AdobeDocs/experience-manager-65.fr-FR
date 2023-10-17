@@ -1,13 +1,11 @@
 ---
 title: Guide de l’utilisateur des fonctions d’AEM 6.5
-seo-title: AEM 6.5 Capabilities User Guide
-description: Présentation des fonctionnalités essentielles d’AEM 6.5
-seo-description: An overview of the essential capabilities of AEM 6.5
+description: Présentation des fonctionnalités essentielles de Adobe Experience Manager 6.5.
 exl-id: d9941242-a01d-48fa-bad0-4c5b9dd16f4c
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: ht
-source-wordcount: '129'
-ht-degree: 100%
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 92%
 
 ---
 

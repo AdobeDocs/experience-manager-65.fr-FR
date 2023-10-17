@@ -1,9 +1,9 @@
 ---
 title: Migration vers le module complémentaire CIF (Commerce Integration Framework) AEM
-description: Comment migrer vers le module complémentaire CIF (Commerce Integration Framework) d’AEM à partir d’une ancienne version
+description: Comment migrer vers le module complémentaire CIF (Commerce Integration Framework) d’AEM à partir d’une ancienne version.
 exl-id: c6c0c2fc-6cfa-4c64-b3d8-7e428b2a4b2e
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
-workflow-type: ht
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 100%
 

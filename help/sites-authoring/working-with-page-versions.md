@@ -1,15 +1,10 @@
 ---
 title: Utiliser les versions de page de contenu
-description: Créer, comparer et restaurer des versions d’une page
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
-docset: aem65
+description: Créer, comparer et restaurer des versions d’une page dans Adobe Experience Manager.
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1501'
 ht-degree: 58%
 
 ---
@@ -19,7 +14,7 @@ ht-degree: 58%
 Le contrôle de version permet de créer un « instantané » d’une page à un moment donné. Avec le contrôle de version, vous pouvez effectuer les opérations suivantes :
 
 * Créez une version d’une page.
-* restaurer une version précédente d’une page ; par exemple :
+* Restaurer une page sur une version précédente ; par exemple :
    * pour annuler une modification que vous avez apportée à la page.
 * Comparer la version actuelle d’une page à une version précédente:
    * pour mettre en évidence les différences entre le texte et les images.
@@ -53,7 +48,7 @@ Vous pouvez créer une version de votre ressource depuis :
 
 1. Accédez à la page pour laquelle créer une version.
 1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Sélectionnez la **Créer** dans la barre d’outils pour ouvrir la boîte de dialogue.
+1. Sélectionnez la variable **Créer** dans la barre d’outils pour ouvrir la boîte de dialogue.
 1. Dans la boîte de dialogue, vous pouvez saisir une **Libellé** et un **Commentaire**, si nécessaire :
 
    ![Saisir un libellé et un commentaire ;](assets/screen_shot_2012-02-15at105050am.png)
@@ -96,7 +91,7 @@ Une fois que vous avez créé une version de votre page, différentes méthodes 
 
 Pour **rétablir** la version précédente d’une page sélectionnée :
 
-1. Accédez à la page dont vous souhaitez restaurer une version précédente.
+1. Accédez à la page sur laquelle vous souhaitez revenir à une version précédente.
 1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Ouvrez la colonne **Chronologie**, puis sélectionnez **Afficher tout** ou **Versions**. Les versions de la page sélectionnée sont répertoriées.
 1. Sélectionnez la version à restaurer. Les options possibles s’affichent :
@@ -154,7 +149,7 @@ Cette méthode permet de restaurer une version d’une arborescence à une date 
 
 1. Définissez l’indicateur **Pages non versionnées préservées** selon les besoins :
 
-   * Si cette option est principale (sélectionnée), les pages non versionnées sont conservées et ne sont pas affectées par la restauration.
+   * Si cette option est active (sélectionnée), toutes les pages non versionnées sont conservées et ne sont pas affectées par la restauration.
 
    * Si elle est inactive (non sélectionnée), toutes les pages non versionnées sont supprimées, car elles n’existaient pas dans l’arborescence versionnée.
 
@@ -190,7 +185,7 @@ Pour comparer une version précédente à la page actuelle :
 
    ![Versions de page répertoriées - Sélection de la version](assets/screen-shot_2019-03-05at112505-2.png)
 
-1. Sélectionner **Comparer avec la version actuelle**. Le [comparaison des pages](/help/sites-authoring/page-diff.md) s’ouvre pour afficher les différences.
+1. Sélectionner **Comparer avec la version actuelle**. La variable [comparaison des pages](/help/sites-authoring/page-diff.md) s’ouvre pour afficher les différences.
 
 ## Distorsion du temps Timewarp {#timewarp}
 
@@ -231,7 +226,7 @@ Timewarp s’efforce de reproduire au mieux une page à un moment donné. Cepend
 * **Timewarp utilise des versions de page** - Si vous accédez à une page qui a été supprimée du référentiel, elle est correctement rendue si d’anciennes versions de la page sont toujours disponibles dans le référentiel.
 * **Les versions supprimées affectent Timewarp** : si des versions sont supprimées du référentiel, Timewarp n’est pas en mesure d’afficher la vue correcte.
 
-* **Timewarp est en lecture seule** : vous ne pouvez pas modifier l’ancienne version de la page. Elle est disponible uniquement à des fins d’affichage. Si vous souhaitez restaurer l’ancienne version, vous devez effectuer cette opération manuellement à l’aide de [restore](#reverting-to-a-page-version).
+* **Timewarp est en lecture seule** : vous ne pouvez pas modifier l’ancienne version de la page. Elle est disponible uniquement à des fins d’affichage. Si vous souhaitez restaurer l’ancienne version, vous devez effectuer cette opération manuellement à l’aide de [Restaurer](#reverting-to-a-page-version).
 
 * **La fonction Timewarp est uniquement basée sur le contenu de la page.** - Si les éléments pour le rendu du site web ont été modifiés, la vue diffère de ce qu’elle était initialement, car ces éléments ne sont pas versionnés dans le référentiel. Ces éléments incluent du code, des feuilles de style CSS, des ressources/des images, entre autres.
 
