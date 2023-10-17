@@ -1,35 +1,31 @@
 ---
 title: Notation et badges avancés
-seo-title: Advanced Scoring and Badges
-description: Configuration d’une notation avancée
-seo-description: Setting up advanced scoring
-uuid: 48caca57-43d3-4f2f-adf3-257428ba54d5
+description: Découvrez comment configurer une notation avancée afin que vous puissiez autoriser l’attribution de badges pour identifier les membres en tant qu’experts.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
+source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1069'
 ht-degree: 2%
 
 ---
 
 # Notation et badges avancés{#advanced-scoring-and-badges}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 La notation avancée permet l’attribution de badges afin d’identifier les membres en tant qu’experts. La notation avancée attribue des points en fonction de la quantité *et* qualité du contenu créé par un membre, tandis que la notation de base attribue des points en fonction de la quantité de contenu créé.
 
-Cette différence est due au moteur de notation utilisé pour calculer les scores. Le moteur de notation de base applique des maths simples. Le moteur de notation avancé est un algorithme adaptatif qui récompense les membres principaux qui apportent du contenu utile et pertinent, déduit par le traitement du langage naturel (NLP) d’un sujet.
+Cette différence est due au moteur de notation utilisé pour calculer les scores. Le moteur de notation de base applique des maths simples. Le moteur de notation avancé est un algorithme adaptatif qui récompense les membres actifs qui apportent du contenu utile et pertinent, déduit par le traitement du langage naturel (NLP) d’un sujet.
 
-Outre la pertinence du contenu, les algorithmes de notation prennent en compte les activités des membres, telles que le vote et le pourcentage de réponses. Bien que la notation de base les inclut quantitativement, la notation avancée les utilise de manière algorithmique.
+Outre la pertinence du contenu, les algorithmes de notation tiennent compte des activités des membres, telles que le vote et le pourcentage de réponses. Bien que la notation de base les inclut quantitativement, la notation avancée les utilise de manière algorithmique.
 
-Par conséquent, le moteur de notation avancé nécessite suffisamment de données pour que l’analyse ait du sens. Le seuil de réussite pour devenir un expert est constamment réévalué, l’algorithme s’adaptant continuellement au volume et à la qualité du contenu créé. Il existe également un concept : *atténuation* des anciennes publications d’un membre. Si un membre d’un expert cesse de participer à un domaine dans lequel il a acquis un statut d’expert, à un moment déterminé (voir [configuration du moteur de notation](#configurable-scoring-engine)) ils pourraient perdre leur statut d&#39;expert.
+Par conséquent, le moteur de notation avancé nécessite suffisamment de données pour que l’analyse ait du sens. Le seuil de réussite pour devenir un expert est constamment réévalué à mesure que l’algorithme s’ajuste continuellement au volume et à la qualité du contenu créé. Il existe également un concept : *atténuation* des anciennes publications d’un membre. Si un membre d’un expert cesse de participer à un domaine dans lequel il a acquis un statut d’expert, à un moment déterminé (voir [configuration du moteur de notation](#configurable-scoring-engine)) ils pourraient perdre leur statut d&#39;expert.
 
 La configuration d’une notation avancée est pratiquement identique à la notation de base :
 
@@ -44,14 +40,14 @@ Les différences de configuration des règles de notation et de badge sont les s
 * Moteur de notation avancé configurable
 * Règles de notation avancées :
 
-   * `scoringType`Définissez  sur `advanced`.
+   * `scoringType` défini sur `advanced`
    * Requiert `stopwords`
 
 * Règles de badge avancées :
 
-   * `badgingType`Définissez  sur `advanced`.
+   * `badgingType` défini sur `advanced`
    * `badgingLevels` défini sur **Nombre de postes d&#39;experts à attribuer**
-   * Nécessite `badgingPaths` tableau de badges au lieu de tableaux de seuils et de points de mappage aux badges.
+   * Nécessite `badgingPaths` tableau de badges au lieu de seuils table-mapping points vers badges.
 
 >[!NOTE]
 >
@@ -65,41 +61,41 @@ Le moteur de notation avancé fournit une configuration OSGi avec des paramètre
 
 * **Poids de notation**
 
-   Pour une rubrique, spécifiez le verbe qui doit avoir la priorité la plus élevée lors du calcul du score. Une ou plusieurs rubriques peuvent être saisies, mais limitées à **un verbe par rubrique**. Voir [Rubriques et verbes](/help/communities/implementing-scoring.md#topics-and-verbs).
+  Pour une rubrique, spécifiez le verbe qui doit avoir la priorité la plus élevée lors du calcul du score. Une ou plusieurs rubriques peuvent être saisies, mais limitées à **un verbe par rubrique**. Voir [Rubriques et verbes](/help/communities/implementing-scoring.md#topics-and-verbs).
 Entré comme `topic,verb` avec la virgule placée dans une séquence d’échappement. Par exemple :
-   `/social/forum/hbs/social/forum\,ADD`
+  `/social/forum/hbs/social/forum\,ADD`
 La valeur par défaut est définie sur le verbe AJOUTER pour les composants Q&amp;R et de forum.
 
 * **Plage de notation**
 
-   La plage des scores avancés est définie par cette valeur (note maximale possible) et 0 (note minimale possible).
+  La plage des scores avancés est définie par cette valeur (note maximale) et 0 (note la plus basse possible).
 
-   La valeur par défaut est 100, de sorte que la plage de notation est comprise entre 0 et 100.
+  La valeur par défaut est 100, de sorte que la plage de notation est comprise entre 0 et 100.
 
 * **Intervalle de délai de décomposition des entités**
 
-   Ce paramètre représente le nombre d’heures après lesquelles tous les scores de l’entité sont décalés. Cela est nécessaire pour ne plus inclure d’anciens contenus dans les scores d’un site de communauté.
+  Ce paramètre représente le nombre d’heures après lesquelles tous les scores de l’entité sont décalés. Cela est nécessaire pour ne plus inclure d’anciens contenus dans les scores d’un site de communauté.
 
-   La valeur par défaut est de 216000 heures (~24 ans).
+  La valeur par défaut est de 216000 heures (~24 ans).
 
 * **Taux de croissance du score**
 Cela permet d’indiquer un score compris entre 0 et la plage de notation, au-delà duquel la croissance ralentit pour limiter le nombre d’experts.
 
-   La valeur par défaut est 50.
+  La valeur par défaut est 50.
 
 ## Règles de notation avancées {#advanced-scoring-rules}
 
 Dans la notation de base, la quantité nécessaire pour gagner un badge est connue.
 
-Dans le cadre d’une notation avancée, la quantité nécessaire est constamment ajustée en fonction de la quantité de données de qualité au sein du système. La notation est calculée en permanence d’une manière semblable à une courbe en cloche.
+Dans la notation avancée, la quantité nécessaire est constamment ajustée en fonction de la quantité de données de qualité dans le système. La notation est calculée en permanence d’une manière semblable à une courbe en cloche.
 
-Si un membre a obtenu un badge d&#39;expert sur un sujet qui n&#39;est plus principal, il est possible qu&#39;il perde son badge à cause d&#39;une dégradation dans le temps.
+Si un membre a obtenu un badge d&#39;expert sur un sujet qui n&#39;est plus actif, il est possible qu&#39;il perde son badge à cause d&#39;une dégradation au fil du temps.
 
 ### scoringType {#scoringtype}
 
 Une règle de notation est un ensemble de sous-règles de notation, dont chacune déclare la variable `scoringType`.
 
-Pour appeler le moteur de notation avancé, le `scoringType`doit être défini sur `advanced`.
+Pour appeler le moteur de notation avancé, la méthode `scoringType`doit être défini sur `advanced`.
 
 Voir [Sous-règles de notation](/help/communities/implementing-scoring.md#scoring-sub-rules).
 
@@ -135,12 +131,12 @@ Au lieu d&#39;associer des points à une image de badge, il suffit d&#39;identif
   <tr>
    <td>badgingPath</td>
    <td>Chaîne[]</td>
-   <td><em>(Obligatoire)</em> Chaîne à plusieurs valeurs d’images de badge jusqu’au nombre de badgingLelevels. Les chemins des images du badge doivent être triés afin que le premier soit attribué au plus haut expert. S’il existe moins de badges qu’indiqué par badgingLelevels, le dernier badge du tableau remplit le reste du tableau. Exemple d’entrée :<br /> <code>/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
+   <td><em>(Obligatoire)</em> Chaîne à plusieurs valeurs d’images de badge jusqu’au nombre de badgingLelevels. Les chemins des images du badge doivent être triés afin que le premier soit attribué au plus haut expert. S’il y a moins de badges qu’indiqué par badgingLelevels, le dernier badge du tableau remplit le reste du tableau. Exemple d’entrée :<br /> <code>/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
   </tr>
   <tr>
    <td>badgingLelevels</td>
    <td>Long</td>
-   <td><em>(Facultatif)</em> Indique les niveaux d’expertise à attribuer. Par exemple, si une variable <code>expert </code>et un <code>almost expert</code> (deux badges), la valeur doit être définie sur 2. Le badgingLevel doit correspondre au nombre d’images de badge associées à un expert répertoriées pour la propriété badgingPath. La valeur par défaut est 1.</td>
+   <td><em>(Facultatif)</em> Indique les niveaux d’expertise à attribuer. Par exemple, si une variable <code>expert </code>et un <code>almost expert</code> (deux badges), alors la valeur doit être définie sur 2. Le badgingLevel doit correspondre au nombre d’images de badge associées à un expert répertoriées pour la propriété badgingPath. La valeur par défaut est 1.</td>
   </tr>
   <tr>
    <td>badgingType</td>
@@ -150,7 +146,7 @@ Au lieu d&#39;associer des points à une image de badge, il suffit d&#39;identif
   <tr>
    <td>scoringRules</td>
    <td>Chaîne[]</td>
-   <td><em>(Facultatif)</em> Chaîne à plusieurs valeurs permettant de limiter la règle de badge aux événements de notation identifiés par la ou les règles de notation répertoriées.<br /> Exemple d’entrée :<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> La valeur par défaut n’est pas une restriction.</td>
+   <td><em>(Facultatif)</em> Chaîne à plusieurs valeurs permettant de limiter la règle de badge aux événements de notation identifiés par une ou plusieurs règles de notation répertoriées.<br /> Exemple d’entrée :<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> La valeur par défaut est sans restriction.</td>
   </tr>
  </tbody>
 </table>
@@ -163,7 +159,7 @@ Dans cette version bêta, un badge d’expert basé sur les récompenses est inc
 
 * `expert`
 
-   `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
+  `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
 ![badge d&#39;expert](assets/included-badge.png)
 
@@ -202,15 +198,15 @@ La version bêta comprend deux règles de notation avancées pour la variable [f
 
 **Remarques:**
 
-* Les `rules` et `sub-rules` les noeuds sont de type `cq:Page`.
-* `subRules` est un attribut de type Chaîne`[]` sur la règle `jcr:content` noeud .
+* Les deux `rules` et `sub-rules` les noeuds sont de type `cq:Page`.
+* `subRules` est un attribut de type String`[]` sur la règle `jcr:content` noeud .
 * `sub-rules` peut être partagée entre différentes règles de notation.
-* `rules` doit être situé dans un emplacement de référentiel avec une autorisation de lecture pour tout le monde.
+* `rules` doit se trouver dans un emplacement de référentiel avec une autorisation de lecture pour tout le monde.
 * Les noms des règles doivent être uniques, quel que soit leur emplacement.
 
 ### Règles de badge incluses {#included-badging-rules}
 
-Cette version comprend deux règles de badge avancées qui correspondent à la variable [forums avancés et règles de notation des commentaires](#included-scoring-rules-and-sub-rules).
+Cette version comprend deux règles de badge avancées qui correspondent au [forums avancés et règles de notation des commentaires](#included-scoring-rules-and-sub-rules).
 
 * `/libs/settings/community/badging/rules/adv-comments-badging`
 * `/libs/settings/community/badging/rules/adv-forums-badging`
@@ -218,5 +214,5 @@ Cette version comprend deux règles de badge avancées qui correspondent à la v
 **Remarques:**
 
 * `rules` Les noeuds sont de type cq:Page.
-* `rules` doit être situé dans un emplacement de référentiel avec une autorisation de lecture pour tout le monde.
+* `rules` doit se trouver dans un emplacement de référentiel avec une autorisation de lecture pour tout le monde.
 * Les noms des règles doivent être uniques, quel que soit leur emplacement.
