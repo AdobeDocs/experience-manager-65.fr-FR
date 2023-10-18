@@ -1,31 +1,27 @@
 ---
-title: Outils Communities
-seo-title: Communities Tools
-description: Accès à la console Outils de communautés
-seo-description: How to access Communities Tools console
-uuid: 3172fe00-7132-4cee-9fd1-b6f96eb43200
+title: Outils de communautés
+description: Découvrez comment accéder à la console des outils de Communities par le biais de votre instance d’auteur.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 410149d6-15bd-41e5-bdba-1d8e6eab7b87
 pagetitle: Communities Tools
 role: Admin
 exl-id: ba6c4ad3-c393-42d8-9f1f-d59947c3e7ab
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---
 
-# Outils Communities {#communities-tools}
+# Outils de communautés {#communities-tools}
 
 Pour accéder à la console des outils Communities, connectez-vous à votre instance d’auteur :
 
 * À partir de la navigation globale : **[!UICONTROL Outils]** > **[!UICONTROL Communautés]**.
 
-   ![communautés](assets/communities-home.png)
+  ![communautés](assets/communities-home.png)
 
 * [Modèles de site](sites.md) - Console pour la création et la gestion des modèles de site.
 

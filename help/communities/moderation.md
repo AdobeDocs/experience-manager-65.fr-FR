@@ -1,33 +1,29 @@
 ---
 title: Console de modération
-seo-title: Moderation Console
-description: Accès à la console Modération
-seo-description: How to access the Moderation console
-uuid: d3b8a160-85b2-43f4-9891-5fafa8c48c5f
+description: Découvrez comment les administrateurs et les modérateurs de communauté peuvent utiliser la console Modération pour accéder à l’ensemble du contenu créé par l’utilisateur pour lequel ils sont autorisés à modérer.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '2041'
+source-wordcount: '2038'
 ht-degree: 4%
 
 ---
 
 # Console de modération {#moderation-console}
 
-Dans AEM Communities, en bloc [modération du contenu communautaire](/help/communities/moderate-ugc.md) est possible à partir des environnements de création et de publication par les administrateurs et les modérateurs de la communauté (membres de la communauté approuvés affectés en tant que modérateurs).
+Dans AEM Communities, en bloc [modération du contenu communautaire](/help/communities/moderate-ugc.md) est possible à partir des environnements de création et de publication par les administrateurs et les modérateurs de la communauté (membres de la communauté de confiance affectés en tant que modérateurs).
 
 Les administrateurs et les modérateurs de la communauté peuvent également effectuer des opérations [modération en contexte](/help/communities/in-context.md) dans l’environnement de publication.
 
 Une fonctionnalité de tous les [sites communautaires](/help/communities/sites-console.md) est un `Administration` pour les utilisateurs qui se connectent avec des privilèges d’administrateur. La variable `Administration` permet d’accéder à la console Modération.
 
-Dans la console Modération , les administrateurs et les modérateurs de communauté auront accès à tout le contenu généré par l’utilisateur pour lequel ils sont autorisés à modérer le contenu. S’il est autorisé à modérer plusieurs sites, il est possible d’afficher les publications sur tous les sites ou de filtrer selon les sites de communautés sélectionnés.
+Dans la console Modération , les administrateurs et les modérateurs de communauté ont accès à tout le contenu généré par l’utilisateur pour lequel ils sont autorisés à modérer le contenu. S’il est autorisé à modérer plusieurs sites, il est possible d’afficher les publications sur tous les sites ou de filtrer selon les sites de communautés sélectionnés.
 
 Pour obtenir des informations plus détaillées, consultez [Gestion des utilisateurs et des groupes d’utilisateurs](/help/communities/users.md).
 
@@ -60,13 +56,13 @@ Uniquement lorsqu’il est connecté en tant qu’administrateur ou en tant que 
 
 >[!NOTE]
 >
->Le contenu généré par l’utilisateur de l’environnement de publication n’est visible sur l’auteur que si la SRP choisie met en oeuvre un magasin commun. Par exemple, par défaut, le stockage est JSRP, ce qui n’est pas un magasin courant pour la création et la publication. Consultez la section [Stockage de contenu de la communauté](/help/communities/working-with-srp.md).
+>Le contenu généré par l’utilisateur de l’environnement de publication n’est visible sur l’auteur que si la SRP choisie met en oeuvre un magasin commun. Par exemple, par défaut, le stockage est JSRP, ce qui n’est pas un magasin courant pour l’auteur et la publication. Consultez la section [Stockage de contenu de la communauté](/help/communities/working-with-srp.md).
 
 ![modération-consoleauthor](assets/moderationconsoleauthor.png)
 
 ## Interface utilisateur de la console de modération {#moderation-console-ui}
 
-En regard du rail de navigation de gauche (qui s’affiche sur l’instance de création, mais pas sur l’instance de publication), l’interface utilisateur de modération se compose des éléments suivants :
+En mettant de côté le rail de navigation de gauche (qui s’affiche sur l’instance de création, mais pas sur l’instance de publication), l’interface utilisateur de modération se compose des éléments suivants :
 
 * **[Barre de navigation supérieure](#top-navigation-bar)**
 * **[Barre d’outils](#toolbar)**
@@ -88,7 +84,7 @@ La barre d’outils, située sous la barre de navigation supérieure, propose le
 ![toggeswitch](assets/toggleswitch.png)
 
 [Filtrer le rail](/help/communities/moderation.md#filterrail)
-ouvre un rail, lors de la sélection de Rechercher, ce qui permet de sélectionner les propriétés sur lesquelles filtrer le contenu.
+ouvre un rail lors de la sélection de la fonction de recherche, ce qui permet de sélectionner les propriétés sur lesquelles filtrer le contenu.
 
 ![filterrail](assets/filterrail.png)
 
@@ -99,16 +95,16 @@ La zone de contenu contient des informations sur le contenu généré par l’ut
 * Publié par l&#39;UGC
 * Nom du membre
 * avatar du membre
-* Emplacement de la publication.
-* Quand elle a été publiée.
-* Nombre de réponses à la publication.
+* Emplacement de la publication
+* Quand elle a été publiée
+* Nombre de réponses à la publication
 * [Opinion](/help/communities/moderate-ugc.md#sentiment) associée à la publication
 * Si elle est approuvée, une coche s’affiche.
 * S’il existe une pièce jointe, un trombone est affiché.
 
 >[!NOTE]
 > 
->La zone de contenu comporte une *défilement infini*, ce qui signifie que vous pourrez continuer à faire défiler l’écran jusqu’à ce que vous ayez atteint la fin du contenu. La barre d’outils reste à une position fixe et visible au-dessus de la zone de contenu, même lorsque vous faites défiler l’écran.
+>La zone de contenu comporte une *défilement infini*, ce qui signifie qu’il vous permet de continuer le défilement jusqu’à ce que vous ayez atteint la fin du contenu. La barre d’outils reste à une position fixe et visible au-dessus de la zone de contenu, même lorsque vous faites défiler l’écran.
 
 ### Rail de filtres {#ootbfilters}
 
@@ -118,9 +114,9 @@ L’icône du panneau latéral ouvre le rail de filtrage. Le rail de filtre, qui
 
 Les filtres de chaque catégorie sont les suivants : **OU**&quot;d&quot; et les filtres dans différentes catégories sont **ET** Je suis ensemble.
 
-Par exemple, si vous cochez les deux **Question** et **Réponse**, vous verrez le contenu qui est soit un **Question** *ou* an **Réponse**.
+Par exemple, si vous cochez les deux **Question** et **Réponse**, le contenu affiché sous la forme d’une **Question** *ou* an **Réponse**.
 
-Cependant, si vous cochez **Question** et **En attente**, vous verrez uniquement le contenu qui est une **Question** et est **En attente**.
+Toutefois, si vous cochez la case **Question** et **En attente**, seul le contenu correspondant à un **Question** et est **En attente**.
 
 >[!NOTE]
 >
@@ -152,7 +148,7 @@ Le site limite le contenu créé par l’utilisateur référencé aux publicatio
 >
 >Lorsqu’un administrateur accède à la console de modération en bloc, toutes les références au contenu généré par l’utilisateur s’affichent, y compris les sites non créés avec la fonction [assistant de création de site](/help/communities/sites-console.md), comme les exemples de Geometrixx.
 >
->Lorsque la console de modération en bloc est accessible lors de la publication par un membre de la communauté de confiance, seules les références au contenu créé pour les sites de la communauté que le membre est autorisé à modérer s’affichent et peuvent être filtrées à l’aide du filtre Site .
+>Lorsque la console de modération en bloc est accessible lors de la publication par un membre de la communauté approuvé, seules les références au contenu créé pour les sites de la communauté que le membre est autorisé à modérer s’affichent. Il peut également être filtré à l’aide du filtre Site.
 
 #### Type de contenu {#content-type}
 
@@ -178,10 +174,10 @@ Type de contenu limite le contenu généré par l’utilisateur référencé aff
 
 Pour ajouter des ressources supplémentaires sur lesquelles filtrer :
 
-* Connectez-vous à votre instance de création en tant qu’administrateur.
+* Connectez-vous à votre instance d’auteur en tant qu’administrateur.
 * Ouvrir [Console web](https://localhost:4502/system/console/configMgr).
 * Localiser `AEM Communities Moderation Dashboard Filters`.
-* Sélectionnez la configuration à ouvrir en mode d’édition.
+* Sélectionnez la configuration pour pouvoir l’ouvrir en mode d’édition.
 * Saisissez le ResourceType d’un composant sur lequel filtrer :
 
    * Par exemple, pour filtrer selon les composants de vote inclus, saisissez :
@@ -199,11 +195,11 @@ Lorsque ce filtre est sélectionné, le contenu du tableau de bord affiche le co
 
 #### Statut {#status}
 
-État limite le contenu généré par l’utilisateur référencé aux publications dont l’état sélectionné peut être En attente, Approuvé, Refusé ou Fermé, ainsi que Version préliminaire ou Planifié pour les articles de blog et Réponse ou Non aux questions Q&amp;R. Si aucun paramètre n’est sélectionné, tous les paramètres sont affichés.
+État limite le contenu généré par l’utilisateur référencé aux publications ayant le statut sélectionné, qui peuvent être en attente, approuvées, refusées ou fermées, brouillon ou planifiées pour les articles de blog, et répondre ou non aux questions Q&amp;R. Si aucun paramètre n’est sélectionné, tous sont affichés.
 
 >[!NOTE]
 >
->Si seul l’état Non reçu est sélectionné, le modérateur verra tout le contenu (pour tous les types de contenu), à l’exception des questions auxquelles il a répondu. En effet, la propriété responsable de la question à laquelle la réponse a été donnée n’existe pas dans le cas de questions sans réponse et d’autres contenus tels que le sujet du forum, l’article de blog ou les commentaires.
+>Si seul l’état Non reçu est sélectionné, le modérateur voit tout le contenu (pour tous les types de contenu), à l’exception des questions auxquelles il a répondu. En effet, la propriété responsable de la question à laquelle la réponse a été donnée n’existe pas si des questions sans réponse et d’autres contenus tels que le sujet du forum, l’article de blog ou les commentaires n’ont pas reçu de réponse.
 
 ![stats](assets/statuses.png)
 
@@ -211,7 +207,7 @@ Lorsque ce filtre est sélectionné, le contenu du tableau de bord affiche le co
 
 Le marquage limite le contenu généré par l’utilisateur référencé aux publications qui sont marquées ou masquées.
 
-Une fois qu’un élément de contenu est marqué, il reste marqué jusqu’à ce que vous ne le marquiez pas en sélectionnant l’option **Indicateur** à nouveau. Notez qu’il n’existe aucun niveau d’indicateur, tel qu’important ou suivi.
+Une fois qu’un élément de contenu est marqué, il reste marqué jusqu’à ce que vous ne le marquiez pas en sélectionnant l’option **Indicateur** à nouveau. Il n’existe aucun niveau de marquage, tel que important ou suivi.
 
 ![indicateur](assets/flagging.png)
 
@@ -235,18 +231,18 @@ Publié dans les dernières limites Le contenu créé par l’utilisateur réfé
 
 ## Filtres personnalisés {#custom-filters}
 
-Excepté les filtres prêts à l’emploi dans [Rail de filtres](/help/communities/moderation.md#ootbfilters), des filtres personnalisés supplémentaires sur les métadonnées peuvent être ajoutés à l’interface utilisateur de modération. Les développeurs peuvent utiliser l’exemple de code dans Github pour étendre les filtres d’interface utilisateur de modération existants.
+Excepté les filtres prêts à l’emploi dans [Rail de filtres](/help/communities/moderation.md#ootbfilters), des filtres personnalisés supplémentaires sur les métadonnées peuvent être ajoutés à l’interface utilisateur de modération. Les développeurs peuvent utiliser l’exemple de code dans GitHub pour étendre les filtres de l’interface utilisateur de modération existants.
 
 ![custom-tag-filter](assets/custom-tag-filter.png)
 
-La variable [exemple de projet](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) sur Github implémente le filtre Balises pour filtrer la liste du contenu créé par l’utilisateur selon que les balises spécifiques sont appliquées au contenu généré par l’utilisateur. Vous pouvez suivre l’exemple de code et créer des filtres analogues pour d’autres champs de métadonnées UGC similaires.
+La variable [exemple de projet](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) sur GitHub, implémentez un filtre de balises pour filtrer la liste du contenu généré par l’utilisateur selon que les balises spécifiques sont appliquées au contenu généré par l’utilisateur. Vous pouvez suivre l’exemple de code et créer des filtres analogues pour d’autres champs de métadonnées UGC similaires.
 
 Pour installer l’exemple pour le filtre Balises :
 
-1. Ouvrez le gestionnaire de packages sur AEM Auteur (`https://[aem-author]:4502/crx/packmgr/index.jsp`) et AEM Publier (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
-1. Création du package `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` à partir du code Github, puis installez et activez-le.
+1. Ouvrez le gestionnaire de modules sur AEM Auteur (`https://[aem-author]:4502/crx/packmgr/index.jsp`) et AEM Publier (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
+1. Création du package `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` à partir du code GitHub, puis installez et activez-le.
 1. Ouvrez la console des lots sur AEM Auteur ( `https://[aem-author]:4502/system/console/bundles`) et AEM Publier ( `https://[aem-publish]:4503/system/console/bundles`).
-1. Créez le package (`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) à partir de Github, puis installez et activez-le.
+1. Créez le package (`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) à partir de GitHub, puis installez et activez-le.
 1. Accédez à **/apps/social/modération/facettes** noeud sur AEM Auteur (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) et AEM Publier (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
 1. Ajout d’un utilisateur technique **communities-utility-reader** avec `jcr:read` autorisations.
 
@@ -268,7 +264,7 @@ Pour afficher les filtres personnalisés sur les sites de la communauté existan
 
 [Actions de modération](/help/communities/moderate-ugc.md#moderation-actions) peut être effectué sur une ou plusieurs sélections effectuées dans la zone de contenu ou lors de l’affichage des détails du contenu.
 
-Pour modérer les publications en bloc, dans la zone de contenu, cliquez sur Sélectionner (![sélecteur](assets/selecticon.png)) sur une publication, qui s’affiche lorsque vous pointez dessus avec la souris (bureau) ou appuyez et maintenez un doigt sur la publication (mobile). Ce faisant, vous accédez au mode de sélection multiple et pouvez désormais sélectionner les publications suivantes à modérer en bloc en cliquant simplement sur celles-ci. Utilisez les boutons affichés sur la barre d’outils pour effectuer des actions de modération sur les publications sélectionnées. Toutes les actions vous invitent à confirmer l’opération.
+Pour modérer les publications en bloc, dans la zone de contenu, cliquez sur Sélectionner (![sélecteur](assets/selecticon.png)) sur une publication, qui s’affiche lorsque vous pointez dessus avec la souris (bureau) ou appuyez et maintenez un doigt sur la publication (mobile). Ce faisant, vous accédez au mode de sélection multiple et pouvez désormais sélectionner les publications suivantes à modérer en bloc en cliquant simplement sur celles-ci. Utilisez les boutons affichés sur la barre d’outils pour effectuer des actions de modération sur les publications sélectionnées. Toutes les actions demandent de confirmation.
 
 Pour modérer une seule publication dans la zone de contenu, passez le curseur de la souris (bureau) ou appuyez et maintenez un doigt sur la publication (mobile) afin que les boutons s’affichent sur la publication. Lors d’un fonctionnement sur un seul détail de contenu, seule une action de suppression est appelée pour confirmation.
 
@@ -306,10 +302,10 @@ En mode de sélection unique, il est possible de :
 
 Le texte de la publication est présent dans le mode Carte au-dessus des icônes d’action de modération et les données suivantes indiquent :
 
-* S’il contient des réponses, et si tel est le cas, précédé du nombre de réponses.
-* S’il a été marqué.
-* S’il a été approuvé.
-* Quand le contenu généré par l&#39;utilisateur a été publié.
+* S’il contient des réponses, et si tel est le cas, précédé du nombre de réponses
+* S’il a été marqué
+* S’il a été approuvé
+* Quand le contenu généré par l’utilisateur a été publié
 
 ![singleselectmode](assets/singleselectmode.png)
 
@@ -323,7 +319,7 @@ Lorsque vous utilisez une seule publication, une icône Répondre s’affiche si
 
 ![autoriser](assets/allow.png)
 
-Lorsque vous travaillez avec une seule publication, l’icône Autoriser s’affiche lorsque la publication a été marquée ou refusée. En cas d’indicateur, la sélection de l’option Autoriser efface tous les indicateurs.
+Lorsque vous travaillez avec une seule publication, l’icône Autoriser s’affiche lorsque la publication a été marquée ou refusée. Si elle est marquée comme une marque, la sélection de l’option Autoriser efface tous les indicateurs.
 
 #### Refuser {#deny}
 
@@ -333,7 +329,7 @@ La variable **Refuser** l’action de modération n’est disponible que pour le
 
 Le contenu non modéré est toujours approuvé.
 
-Le contenu modéré passe initialement à l’état En attente et peut ensuite être modifié pour être approuvé ou refusé.
+Le contenu modéré passe initialement à l’état En attente et peut être modifié ultérieurement pour approbation ou refus.
 
 Le contenu qui quitte l’état en attente ne peut jamais revenir à l’état en attente. Le contenu marqué comme approuvé ou refusé peut à tout moment être remplacé par un autre état.
 
@@ -347,7 +343,7 @@ En mode de sélection unique ou en bloc, vous pouvez sélectionner des élément
 
 ![fermer](assets/close.png)
 
-Lorsque vous travaillez avec une seule publication, une icône Fermer s’affiche si le type de contenu généré par l’utilisateur permet d’empêcher d’autres publications pour cette ressource.
+Lorsque vous travaillez avec une seule publication, une icône Fermer s’affiche si le type de contenu créé par l’utilisateur permet d’empêcher d’autres publications pour cette ressource.
 
 #### Historique de modération {#moderation-history}
 

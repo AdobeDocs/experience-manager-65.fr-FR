@@ -1,19 +1,15 @@
 ---
 title: Configuration du stockage
-seo-title: Storage Configuration
-description: Accès à la console de configuration de stockage
-seo-description: How to access the Storage Configuration Console
-uuid: 6a5a71d5-6aaa-4635-8852-4dae33c497a9
+description: Découvrez la console Configuration du stockage comme moyen d’identifier le stockage choisi pour le contenu de la communauté, également appelé contenu généré par l’utilisateur.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 role: Admin
 exl-id: 67de7e26-3f93-4034-9e3a-5c127f7447bc
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '210'
 ht-degree: 4%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 4%
 
 La configuration du stockage est le moyen d’identifier le stockage choisi pour le contenu de la communauté, également appelé contenu généré par l’utilisateur (UGC).
 
-Ce paramètre informe le code AEM Communities sur l’implémentation du fournisseur de ressources de stockage (SRP) à utiliser lors de l’accès au contenu créé par l’utilisateur et doit refléter la topologie définie lors du déploiement d’AEM.
+Ce paramètre informe le code AEM Communities sur l’implémentation du fournisseur de ressources de stockage (SRP) utilisée lors de l’accès au contenu généré par l’utilisateur. Elle doit refléter la topologie définie lors du déploiement de Adobe Experience Manager (AEM).
 
 Pour une discussion sur les options de stockage et les topologies de déploiement, consultez :
 
@@ -40,7 +36,7 @@ Dans l’environnement de création, pour accéder à la console de configuratio
 Pour sélectionner une option de stockage autre que le JCR par défaut :
 
 * Sélectionner une option
-* Configurer correctement
+* Configurez les
 
    * Voir les détails de [sélection de MSRP](msrp.md#select-msrp)
    * Voir les détails de [sélection de DSRP](dsrp.md#select-dsrp)
@@ -50,9 +46,9 @@ Pour sélectionner une option de stockage autre que le JCR par défaut :
 
 ### À propos du stockage JCR {#about-jcr-storage}
 
-Notez que si aucune sélection n’est effectuée, la valeur par défaut est le référentiel AEM, JCR.
+Si aucune sélection n’est effectuée, la valeur par défaut est le référentiel AEM, JCR.
 
-JCR est *not* un magasin commun partagé par les environnements de création et de publication. Le contenu de la communauté n’est visible que depuis l’environnement de création ou de publication dans lequel il a été créé.
+JCR est *not* un magasin commun partagé par les environnements Auteur et Publication. Le contenu de la communauté n’est visible que dans l’environnement de création ou de publication dans lequel il a été créé.
 
 Visite [Magasin JCR](jsrp.md) pour plus d’informations.
 

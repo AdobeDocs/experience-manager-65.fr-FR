@@ -1,21 +1,17 @@
 ---
 title: Synchronisation des utilisateurs des communautés
-seo-title: Communities User Synchronization
-description: Fonctionnement de la synchronisation des utilisateurs
-seo-description: How user synchronization works
-uuid: 772b82bd-a66c-4c1d-b80b-dcff77c873a3
+description: Découvrez le fonctionnement de la synchronisation des utilisateurs dans Adobe Experience Manager Communities.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '2481'
-ht-degree: 12%
+source-wordcount: '2471'
+ht-degree: 9%
 
 ---
 
@@ -23,11 +19,11 @@ ht-degree: 12%
 
 ## Présentation {#introduction}
 
-Dans AEM Communities, depuis l’environnement de publication (en fonction des autorisations configurées), *visiteurs du site* peut devenir *members*, créez *groupes d’utilisateurs*, puis modifiez leurs *profil du membre* .
+Dans les communautés Adobe Experience Manager (AEM), depuis l’environnement de publication (en fonction des autorisations configurées), *visiteurs du site* peut devenir *members*, créez *groupes d’utilisateurs*, puis modifiez leurs *profil du membre* .
 
-*Données utilisateur* est un terme utilisé pour faire référence à *utilisateurs*, *profils utilisateur* et *groupes d’utilisateurs*.
+*Données utilisateur* fait référence à *utilisateurs*, *profils utilisateur*, et *groupes d’utilisateurs*.
 
-*Membres* est un terme utilisé pour faire référence à *utilisateurs* enregistrés dans l’environnement de publication, par opposition aux utilisateurs enregistrés dans l’environnement de création.
+*Membres* voir *utilisateurs* enregistrés dans l’environnement de publication, par opposition aux utilisateurs enregistrés dans l’environnement de création.
 
 Pour plus d’informations sur les données utilisateur, consultez [Gestion des utilisateurs et des groupes d’utilisateurs](/help/communities/users.md).
 
@@ -39,15 +35,13 @@ La plupart des données utilisateur créées dans l’environnement de création
 
 Lorsque la variable [topologie](/help/communities/topologies.md) est un [batterie de publication](/help/sites-deploying/recommended-deploys.md#tarmk-farm), l’enregistrement et les modifications effectués sur une instance de publication doivent être synchronisés avec d’autres instances de publication. Les membres doivent pouvoir se connecter et voir leurs données sur n’importe quel noeud de publication.
 
-Lorsque la synchronisation des utilisateurs est activée, les données utilisateur sont automatiquement synchronisées entre les instances de publication dans la ferme de serveurs.
+Lorsque la synchronisation des utilisateurs est activée, les données utilisateur sont automatiquement synchronisées dans les instances de publication de la ferme de serveurs.
 
 ### Instructions de configuration de la synchronisation des utilisateurs {#user-sync-setup-instructions}
 
-Pour obtenir des instructions détaillées, détaillées sur la manière d’activer la synchronisation sur une ferme de publication, voir :
+Pour obtenir des instructions détaillées et détaillées sur la manière d’activer la synchronisation sur une ferme de publication, voir [Synchronisation des utilisateurs](/help/sites-administering/sync.md).
 
-* [Synchronisation des utilisateurs](/help/sites-administering/sync.md)
-
-## Synchronisation des utilisateurs en arrière-plan  {#user-sync-in-the-background}
+## Synchronisation des utilisateurs en arrière-plan {#user-sync-in-the-background}
 
 ![sling-dist-workflow](assets/sling-dist-workflow.png)
 
@@ -57,13 +51,13 @@ Pour obtenir des instructions détaillées, détaillées sur la manière d’act
 
 * **package de distribution**
 
-  Il contient des informations de distribution pour Sling. Il s’agit d’informations sur l’endroit où le contenu doit être distribué et le moment où il a été distribué en dernier.
+  Il contient des informations de distribution pour Sling. Il s’agit d’informations sur l’endroit où le contenu doit être distribué et la date de sa dernière distribution.
 
 ## Que se passe-t-il lorsque... {#what-happens-when}
 
 ### Publier le site à partir de la console Sites des communautés {#publish-site-from-communities-sites-console}
 
-Lorsqu’un site communautaire est publié à partir de la variable [Console Sites Communities](/help/communities/sites-console.md), l’effet est [répliquer](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) Les pages associées et Sling distribuent les groupes d’utilisateurs de la communauté créés dynamiquement, y compris leur adhésion.
+Sur l’auteur, lorsqu’un site communautaire est publié à partir de la variable [Console Sites Communities](/help/communities/sites-console.md), l’effet est [répliquer](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) Les pages associées et Sling distribuent les groupes d’utilisateurs de la communauté créés dynamiquement, y compris leur adhésion.
 
 ### L’utilisateur est créé ou modifie le profil lors de la publication. {#user-is-created-or-edits-profile-on-publish}
 
@@ -73,7 +67,7 @@ Lorsque la topologie consiste en une [batterie de publication](/help/communities
 
 ### Un nouveau groupe de communautés est créé lors de la publication. {#new-community-group-is-created-on-publish}
 
-Bien qu’elle soit lancée à partir d’une instance de publication, la création de groupe de communautés, qui entraîne la création de pages de site et d’un nouveau groupe d’utilisateurs, a lieu dans les faits sur l’instance d’auteur.
+Bien qu’elle ait été lancée à partir d’une instance de publication, la création d’un groupe de communautés, qui entraîne la création de pages de site et d’un nouveau groupe d’utilisateurs, a lieu dans les faits sur l’instance d’auteur.
 
 Dans le cadre du processus, les nouvelles pages du site sont répliquées vers toutes les instances de publication. Le groupe d’utilisateurs de la communauté créé dynamiquement et ses membres sont Sling distribués à toutes les instances de publication.
 
@@ -81,7 +75,7 @@ Dans le cadre du processus, les nouvelles pages du site sont répliquées vers t
 
 Par conception, les données utilisateur créées dans l’environnement de publication n’apparaissent pas dans l’environnement de création et inversement.
 
-Lorsque la console [Administration et sécurité des utilisateurs](/help/sites-administering/security.md) est utilisée pour ajouter de nouveaux utilisateurs dans l’environnement de publication, la synchronisation des utilisateurs synchronise les nouveaux utilisateurs et leur appartenance à un groupe sur d’autres instances de publication, si nécessaire. La synchronisation des utilisateurs synchronise également les groupes d’utilisateurs créés via la console de sécurité.
+Lorsque la variable [Administration et sécurité des utilisateurs](/help/sites-administering/security.md) est utilisée pour ajouter de nouveaux utilisateurs dans l’environnement de publication. La synchronisation des utilisateurs synchronise les nouveaux utilisateurs et leur appartenance à un groupe avec d’autres instances de publication, si nécessaire. La synchronisation des utilisateurs synchronise également les groupes d’utilisateurs créés via la console de sécurité.
 
 ### L’utilisateur publie du contenu lors de la publication {#user-posts-content-on-publish}
 
@@ -91,13 +85,13 @@ Pour le contenu généré par l’utilisateur, les données saisies sur une inst
 
 Par défaut, la synchronisation des utilisateurs est **disabled**. L’activation de la synchronisation des utilisateurs et utilisatrices implique de modifier les configurations OSGi *existantes.* Aucune nouvelle configuration ne doit être ajoutée suite à l’activation de la synchronisation des utilisateurs et utilisatrices.
 
-La synchronisation des utilisateurs repose sur l’environnement de création pour gérer les distributions de données utilisateur, même si les données utilisateur ne sont pas créées en mode de création .
+La synchronisation des utilisateurs repose sur l’environnement de création pour gérer les distributions de données utilisateur, même si les données utilisateur ne sont pas créées en mode de création.
 
 **Conditions préalables**
 
 1. Si les utilisateurs et les groupes d’utilisateurs ont déjà été créés sur un éditeur, il est recommandé de [synchroniser manuellement](/help/sites-administering/sync.md#manually-syncing-users-and-user-groups) les données utilisateur sur tous les éditeurs avant de configurer et d’activer la synchronisation des utilisateurs.
 
-   Une fois la synchronisation des utilisateurs activée, seuls les utilisateurs et les groupes nouvellement créés sont synchronisés .
+   Une fois la synchronisation des utilisateurs activée, seuls les utilisateurs et groupes nouvellement créés sont synchronisés .
 
 1. Assurez-vous que la dernière version du code a été installée :
 
@@ -207,7 +201,7 @@ Pour garantir la synchronisation des membres :
 
 Cette configuration vous permet de configurer l’intervalle d’interrogation (au-delà duquel les éditeurs sont ingérés et les modifications sont extraites par l’auteur) pour synchroniser les modifications entre les éditeurs.
 
-L’auteur interroge les éditeurs toutes les 30 secondes (par défaut). Si des modules sont présents dans le dossier `/var/sling/distribution/packages/  socialpubsync -  vlt /shared`, il récupérera ces modules et les installera sur d’autres éditeurs.
+L’auteur interroge les éditeurs toutes les 30 secondes (par défaut). Si des modules sont présents dans le dossier `/var/sling/distribution/packages/  socialpubsync -  vlt /shared`, puis il récupère ces modules et les installe sur d’autres éditeurs.
 
 Pour modifier l’intervalle d’interrogation :
 
@@ -290,7 +284,7 @@ Pour garantir un identifiant Sling unique des éditeurs dans la ferme de publica
 
    ![slingid](assets/slingid.png)
 
-   Si l’identifiant Sling d’une instance de publication correspond à l’identifiant Sling d’une autre instance de publication, alors :
+   Si l’identifiant Sling d’une instance de publication correspond à l’identifiant Sling de toute autre instance de publication, alors :
 
 1. Arrêtez l’une des instances de publication ayant un identifiant Sling correspondant.
 1. Dans le `crx-quickstart/launchpad/felix` répertoire, rechercher et supprimer le fichier nommé *sling.id.fi.*
@@ -303,7 +297,7 @@ Pour garantir un identifiant Sling unique des éditeurs dans la ferme de publica
 
    Utilisation de l’explorateur Windows et recherche `sling.id.file`
 
-1. Démarrez l’instance de publication. Au démarrage, un nouvel identifiant Sling lui sera attribué.
+1. Démarrez l’instance de publication. Au démarrage, un nouvel identifiant Sling lui est attribué.
 1. Validez que la variable **Sling ID** est désormais unique.
 
 Répétez ces étapes jusqu’à ce que toutes les instances de publication aient un identifiant Sling unique.
@@ -388,13 +382,13 @@ Pour déboguer :
    1. Localisation de la configuration **Agent de distribution Apache Sling - Fabrique d’agents de synchronisation**.
    1. Désélectionnez l’option **Activé** .
 
-      Lors de la désactivation de la synchronisation des utilisateurs sur l’instance d’auteur, les points de terminaison (exportateur et importateur) sont désactivés et l’instance d’auteur est statique. La variable **vlt** les modules ne sont pas ingérés ou récupérés par l’auteur.
+      Lors de la désactivation de la synchronisation des utilisateurs sur l’instance d’auteur (exportateur et importateur), les points de terminaison sont désactivés et l’instance d’auteur est statique. La variable **vlt** les modules ne sont pas ingérés ou récupérés par l’auteur.
 
       Désormais, si un utilisateur est créé sur l’instance de publication, la variable **vlt** est créé dans */var/sling/distribution/packages/socialpubsync - vlt /data* noeud . Et si ces modules sont transmis par l’auteur à un autre service. Vous pouvez télécharger et extraire ces données pour vérifier toutes les propriétés qui sont transmises à d’autres services.
 
 1. Accédez à un éditeur et créez un utilisateur sur l’éditeur. Par conséquent, des événements sont créés.
-1. Vérifiez les [ordre des logs](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities), créé lors de la création de l’utilisateur.
+1. Vérifiez les [ordre des logs](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities) créé lors de la création de l’utilisateur.
 1. Vérifiez si la variable **vlt** le module est créé lors de la **/var/sling/distribution/packages/socialpubsync-vlt/data**.
-1. Maintenant, activez la synchronisation des utilisateurs sur AEM instance d’auteur.
+1. Maintenant, activez la synchronisation des utilisateurs sur l’instance d’auteur AEM.
 1. Sur l’éditeur, modifiez les points de fin de l’exportateur ou de l’importateur dans **Agent de distribution Apache Sling - Fabrique d’agents de synchronisation**.
-Nous pouvons télécharger et extraire des données de package pour vérifier toutes les propriétés qui sont transmises à d’autres éditeurs et quelles données sont perdues.
+Nous pouvons télécharger et extraire des données de module pour vérifier toutes les propriétés transmises à d’autres éditeurs et les données qui sont perdues.

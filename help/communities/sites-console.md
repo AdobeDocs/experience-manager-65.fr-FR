@@ -1,6 +1,6 @@
 ---
 title: Console Sites Communities
-description: Accès à la console Sites des communautés
+description: Découvrez comment accéder à la console Sites des communautés pour la création, la modification et la gestion de sites.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '3082'
+source-wordcount: '3089'
 ht-degree: 4%
 
 ---
@@ -30,7 +30,7 @@ Voir [Prise en main d’AEM Communities](/help/communities/getting-started.md) o
 >
 >Les menus principaux des communautés pour la création de [sites communautaires](/help/communities/sites-console.md), [modèles de site de communauté](/help/communities/sites.md), [modèles de groupe de communautés](/help/communities/tools-groups.md), et [fonctions de communauté](/help/communities/functions.md) sont utilisables uniquement dans l’environnement de création.
 
-## Conditions préalables requises {#prerequisites}
+## Prérequis {#prerequisites}
 
 Avant de créer un site de communauté, il s’agit de *required* à :
 
@@ -162,7 +162,7 @@ Le panneau Paramètres contient plusieurs sous-panneaux présentant les fonction
 >
 >**Activer le service de tunnel**
 >
->Plusieurs sous-panneaux Paramètres permettent d’affecter un membre de confiance pour modérer le contenu créé par l’utilisateur, gérer des groupes ou être un contact pour les ressources d’activation dans l’environnement de publication.
+>Plusieurs sous-panneaux Paramètres permettent à un membre de confiance d’être affecté pour modérer le contenu créé par l’utilisateur, gérer des groupes ou être un contact pour les ressources d’activation dans l’environnement de publication.
 >
 >La convention est destinée à la publication [utilisateurs et groupes d’utilisateurs](/help/communities/users.md) (membres et groupes de membres) à ne pas dupliquer dans l’environnement de création.
 >
@@ -475,7 +475,7 @@ Une indication s’affiche une fois le site publié.
 
 ### Publication avec des groupes imbriqués {#publishing-with-nested-groups}
 
-Après la publication d’un site de communauté, il est nécessaire de publier individuellement chaque sous-communauté (groupe imbriqué) créée à l’aide du [Console Groupes](/help/communities/groups.md).
+Après la publication d’un site de communauté, il est nécessaire de publier individuellement chaque sous-communauté (groupe imbriqué) créée à l’aide de la fonction [Console Groupes](/help/communities/groups.md).
 
 ## Exportation du site {#exporting-the-site}
 

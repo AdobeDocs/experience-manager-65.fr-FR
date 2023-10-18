@@ -1,6 +1,6 @@
 ---
 title: Console Rapports
-description: Découvrez comment accéder à divers rapports accessibles de plusieurs manières à partir de l’environnement de création Adobe Experience Manager.
+description: Découvrez comment utiliser différents rapports auxquels vous pouvez accéder de plusieurs manières à partir de l’environnement de création Adobe Experience Manager.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 9%

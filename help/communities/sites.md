@@ -1,15 +1,15 @@
 ---
 title: Modèles de site
-description: Accès à la console Modèles de site
+description: Découvrez comment accéder à la console Modèles de site pour créer un site de communauté.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 05a944a3-adb1-47b4-b4a5-15bac91c995e
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '450'
 ht-degree: 4%
 
 ---
@@ -36,7 +36,7 @@ Cette console affiche les modèles à partir desquels une [site communautaire](s
 
 Pour commencer à créer un modèle de site, sélectionnez `Create`.
 
-Cela ouvre le panneau Éditeur de site qui contient trois sous-panneaux :
+Cela ouvre le panneau de l’éditeur de site qui contient trois sous-panneaux :
 
 ### Informations de base {#basic-info}
 
