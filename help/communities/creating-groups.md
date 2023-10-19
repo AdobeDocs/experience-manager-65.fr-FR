@@ -1,15 +1,15 @@
 ---
 title: Groupes communautaires
-description: Création de groupes de communautés
+description: Découvrez comment la fonction de groupes de communautés vous permet de créer dynamiquement une sous-communauté au sein d’un site de communauté par des utilisateurs autorisés dans Publier et créer.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: edcda6cb-df47-4afe-8a9a-82d8e386fe05
-source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '555'
 ht-degree: 3%
 
 ---
@@ -74,7 +74,7 @@ Sous , **Image** vous pouvez télécharger une image à afficher pour le groupe 
 
 En sélectionnant **Créer un groupe**, les pages du groupe sont créées en fonction du modèle choisi, et un groupe d’utilisateurs est créé pour l’appartenance et la page Groupes est mise à jour afin d’afficher la nouvelle sous-communauté.
 
-Par exemple, la page Groupes avec une nouvelle sous-communauté intitulée &quot;Groupe d’orientation&quot;, pour laquelle une miniature d’image a été chargée, apparaît comme suit (toujours connecté en tant qu’administrateur de groupe de communautés) :
+Par exemple, la page Groupes avec une nouvelle sous-communauté intitulée &quot;Groupe d’orientation&quot;, pour laquelle une miniature d’image a été téléchargée, apparaît comme suit (toujours connecté en tant qu’administrateur de groupe de communautés) :
 
 ![group-page](assets/group-page.png)
 

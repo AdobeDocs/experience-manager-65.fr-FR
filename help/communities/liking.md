@@ -1,25 +1,21 @@
 ---
 title: Utilisation de l’option J’aime
-seo-title: Using Liking
-description: Ajout et configuration du composant J’aime
-seo-description: Adding and configuring the Liking component
-uuid: 12103ab7-1a1c-49cd-8dad-6c7508b4550e
+description: Découvrez comment ajouter et configurer le composant J’aime afin que les utilisateurs puissent exprimer une opinion sur un élément de contenu particulier, tel qu’un commentaire.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 exl-id: 226fa91c-4a12-4586-b694-1a52fa2ba358
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 6%
+source-wordcount: '247'
+ht-degree: 4%
 
 ---
 
 # Utilisation de l’option J’aime {#using-liking}
 
-Le `Liking` component est un outil utile qui permet aux utilisateurs d’exprimer une opinion sur un élément de contenu particulier, comme un commentaire dans un forum. Avec le `Liking` , les membres sélectionnent l’icône coeur pour indiquer une opinion positive.
+La variable `Liking` component est un outil utile qui permet aux utilisateurs d’exprimer une opinion sur un élément de contenu particulier, comme un commentaire dans un forum. Avec la variable `Liking` , les membres sélectionnent l’icône représentant un coeur pour indiquer une opinion positive.
 
 ## Ajout de mentions J’aime à une page {#adding-liking-to-a-page}
 
@@ -27,7 +23,7 @@ Pour ajouter une `Liking` sur une page en mode création, utilisez l’explorate
 
 * `Communities / Liking`
 
-et faites-le glisser sur la page, par exemple à une position relative à la fonction que les utilisateurs peuvent aimer.
+Faites-le glisser sur la page, par exemple à une position relative à la fonction que les utilisateurs peuvent aimer.
 
 Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](basics.md).
 
@@ -37,7 +33,7 @@ Lorsque la variable [bibliothèques côté client requises](essentials-liking.md
 
 ## Configuration de l’option J’aime {#configuring-liking}
 
-Sélectionnez le `Liking` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le `Liking` afin que vous puissiez accéder au `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure-new](assets/configure-new.png)
 
@@ -47,21 +43,21 @@ Sous , **[!UICONTROL Textes et libellés]** , spécifiez les propriétés utilis
 
 * **[!UICONTROL Etiquette de réponse positive]**
 
-   (*Obligatoire*) Nom de propriété d’une réponse positive.
+  (*Obligatoire*) Nom de propriété d’une réponse positive.
 
 * **[!UICONTROL Etiquette de réponse négative]**
 
-   (*Obligatoire*) Nom de propriété d’une réponse négative.
+  (*Obligatoire*) Nom de propriété d’une réponse négative.
 
 * **[!UICONTROL Nom Tally]**
 
-   (*Obligatoire*) Nom de propriété interne identifiable de cette instance d’un composant Vote.
+  (*Obligatoire*) Nom de propriété interne identifiable de cette instance d’un composant Vote.
 
-## Expérience des visiteurs {#site-visitor-experience}
+## Expérience du visiteur du site {#site-visitor-experience}
 
 ### Membres {#members}
 
-Les membres peuvent changer de comportement à tout moment.
+Les membres peuvent changer leurs goûts à tout moment.
 
 ### Anonyme {#anonymous}
 

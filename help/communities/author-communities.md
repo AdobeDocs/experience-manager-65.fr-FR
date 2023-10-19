@@ -1,20 +1,16 @@
 ---
 title: Composants Communities
-seo-title: Communities Components
-description: Ajout de fonctionnalités de communauté à n’importe quel site AEM
-seo-description: Adding community features to any AEM site
-uuid: 76824820-81e9-4192-8df3-dff55eaf144e
+description: Découvrez quand AEM Communities est sous licence, il est possible d’ajouter des fonctionnalités de communauté à n’importe quel site d’AEM à l’aide d’outils de création standard d’AEM.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 30%
+source-wordcount: '293'
+ht-degree: 28%
 
 ---
 
@@ -43,7 +39,7 @@ Voir aussi le rapport interactif [Guide des composants de communauté](/help/com
 >
 >Lecture [Principes de base des composants des communautés](/help/communities/basics.md) car il contient des informations nécessaires à la création avec des composants Communities.
 
-| **Titre du composant** | **Fonctionnalité** |
+| **Titre du composant**. | **Fonctionnalité** |
 |---|---|
 | Flux d’activités | [Flux d’activités](/help/communities/activities.md) |
 | Blog | [Blog](/help/communities/blog-feature.md) |
@@ -80,8 +76,8 @@ Voir aussi le rapport interactif [Guide des composants de communauté](/help/com
 
 ## Documentation sur les communautés connexes {#related-communities-documentation}
 
-* Visite [Déploiement de communautés](/help/communities/deploy-communities.md) pour en savoir plus sur les déploiements recommandés.
+* Visite [Déploiement de communautés](/help/communities/deploy-communities.md) où vous pouvez en savoir plus sur les déploiements recommandés.
 
 * Visite [Administration des sites des communautés](/help/communities/administer-landing.md) pour en savoir plus sur la création d’un site communautaire, la configuration des modèles de site communautaire, la modération du contenu communautaire, la gestion des membres et la configuration de la messagerie.
 
-* Visite [Développement de communautés](/help/communities/communities.md) pour en savoir plus sur la structure de composants sociaux (SCF) et la personnalisation des composants et fonctionnalités des communautés.
+* Visite [Développement de communautés](/help/communities/communities.md) où vous pouvez en savoir plus sur la structure de composants sociaux (SCF) et la personnalisation des composants et fonctionnalités de Communities.

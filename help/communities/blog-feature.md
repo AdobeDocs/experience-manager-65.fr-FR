@@ -1,17 +1,15 @@
 ---
 title: Fonctionnalité de blog
-description: Informations de la communauté dans un format de journalisation
-uuid: 7323063f-81e8-45c3-9035-bf7df6124830
+description: Découvrez comment la fonction de blog prend en charge la fourniture d’informations de communauté dans un format de journalisation. Les entrées sont effectuées dans l’environnement de publication par les utilisateurs autorisés.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1670'
 ht-degree: 8%
 
 ---
@@ -48,7 +46,7 @@ Cette section de la documentation décrit :
 
 ## Ajout de composants de blog à une page {#adding-blog-components-to-a-page}
 
-Si vous souhaitez ajouter un blog à une page en mode création, utilisez l’explorateur de composants pour accéder à :
+Si vous souhaitez ajouter un blog à une page en mode création, utilisez l’explorateur de composants pour accéder à
 
 * `Communities / Blog`
 * `Communities / Blog Sidebar`
@@ -79,11 +77,11 @@ Sous , **Paramètres** , spécifiez les fonctions de base du blog :
 
 * **Taille max. des miniatures de pièces jointes**
 
-  Taille maximale (en pixels) de l’image miniature de la pièce jointe. La valeur par défaut est 800 x 800.
+  Taille maximale (en pixels) de la miniature de la pièce jointe. La valeur par défaut est 800 x 800.
 
 * **Taille d’image minimale pour la miniature**
 
-  Taille minimale (en octets) de l’image pour générer une miniature pour les images intégrées. La valeur par défaut est 100000bytes (100 ko).
+  Taille minimale (en octets) de l’image pour générer une miniature pour les images intégrées. La valeur par défaut est de 100000 octets (100 Ko).
 
 * **Taille maximale de la miniature**
 
@@ -121,7 +119,7 @@ Sous , **Paramètres** , spécifiez les fonctions de base du blog :
 
 * **Modérée**
 
-  Si cette option est cochée, les entrées et les commentaires de blog doivent être approuvés avant d’apparaître sur un site publié. La valeur par défaut n’est pas cochée.
+  Si cette option est cochée, les entrées et les commentaires de blog doivent être approuvés avant d’apparaître sur un site publié. La valeur par défaut est décochée.
 
 * **Fermé**
 
@@ -133,7 +131,7 @@ Sous , **Paramètres** , spécifiez les fonctions de base du blog :
 
 * **Autoriser le balisage**
 
-  Si cette case est cochée, les membres ont le droit d’ajouter des libellés de balise à leur publication (voir **Champ de balise** ). La case par défaut est décochée.
+  Si cette case est cochée, les membres ont le droit d’ajouter des libellés de balise à leurs publications (voir **Champ de balise** ). La case par défaut est décochée.
 
 * **Autoriser les chargements de fichiers**
 
@@ -165,7 +163,7 @@ Sous , **Paramètres** , spécifiez les fonctions de base du blog :
 
 * **Autoriser abonnement**
 
-  Si cette case est cochée, incluez la fonction suivante pour les articles de blog, ce qui permet aux membres d’être [notify](/help/communities/notifications.md) de nouvelles publications. La case par défaut est décochée.
+  Si cette case est cochée, incluez la fonction suivante pour les articles de blog, ce qui permet aux membres d’être [notifié](/help/communities/notifications.md) de nouvelles publications. La case par défaut est décochée.
 
 * **Autoriser les abonnements par courrier électronique**
 
@@ -215,7 +213,7 @@ Sous , **Modération d’utilisateur** , spécifiez les paramètres de modérati
 
 * **Motif de la marque personnalisée**
 
-  Si cette case est cochée, autorisez les membres à indiquer leur propre motif de signalement d’un sujet ou d’un commentaire comme étant inapproprié. La case par défaut est décochée.
+  Si cette case est cochée, autorisez les membres à indiquer leur propre raison de signaler un sujet ou un commentaire comme étant inapproprié. La case par défaut est décochée.
 
 * **Seuil de modération**
 
@@ -249,10 +247,10 @@ Sous , **Paramètres de la barre latérale du journal** , indiquez le format de 
 
   Format utilisé pour l’affichage des archives des entrées de blog. Le format utilise des espaces réservés conformément à la convention Java™.
 
-   * aaaa : année complète, comme &quot;2015&quot;
-   * yy : Année courte, comme &quot;15&quot;
+   * aaaa : année complète, par exemple &quot;2015&quot;
+   * yy : courte année, par exemple &quot;15&quot;
    * MMMM : mois complet, comme juin
-   * MMM : Mois court, comme juin
+   * MMM : court mois, comme juin
    * MM : numéro du mois, par exemple 06
 
   La valeur par défaut est &quot;yyy MMMM&quot;, qui afficherait, par exemple, &quot;2015 June&quot;.
@@ -267,13 +265,13 @@ Sous , **Paramètres de la barre latérale du journal** , indiquez le format de 
 
 * **Chemin d’accès au composant de blog**
 
-  *(Facultatif)* Emplacement de la ressource de blog à partir de laquelle les articles de blog doivent être répertoriés. Si rien n’est indiqué, le composant resourceType est utilisé. `social/journal/components/hbs/journal` qui apparaît sur la même page.
+  *(Facultatif)* Emplacement de la ressource de blog à partir de laquelle les articles de blog doivent être répertoriés. Si rien n’est indiqué, le composant resourceType est utilisé. `social/journal/components/hbs/journal` qui s’affiche sur la même page.
 
    * Par exemple, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
 * **Limite de suggestions**
 
-  Nombre d’articles de blog à afficher. Une valeur de -1 signifie aucune limite. La valeur par défaut est -1.
+  Nombre d’articles de blog à afficher. Une valeur de -1 signifie qu’aucune limite n’est définie. La valeur par défaut est -1.
 
 ## Expérience du visiteur du site {#site-visitor-experience}
 
