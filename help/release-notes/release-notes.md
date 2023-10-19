@@ -4,9 +4,9 @@ description: Consultez les informations sur la mise à jour, y compris les nouve
 mini-toc-levels: 4
 exl-id: d0dc5dfb-25a3-4388-a1d4-abba70081cc3
 source-git-commit: 59d5c2574bf4298469152a3d55e7c1508eb2f1be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4633'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -463,24 +463,24 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 #### Installation
 
 * Sur la plateforme JBoss® 7.1.4, lorsque l’utilisateur ou l’utilisatrice installe le pack de services Experience Manager 6.5.16.0, le déploiement de `adobe-livecycle-jboss.ear` échoue. (CQ-4351522, CQDOC-20159)
-* Après la mise à niveau vers l’environnement d’installation complet d’AEM Forms 6.5.18.0 JBoss sur Windows Server 2022, lors de la compilation du code de l’application cliente Output à l’aide de Java 11, l’erreur de compilation suivante peut se produire :
+* Après la mise à niveau vers l’environnement d’installation complet clé en main d’AEM Forms 6.5.18.0 JBoss sur Windows Server 2022, lors de la compilation du code de l’application cliente Output à l’aide de Java 11, l’erreur de compilation suivante peut se produire :
 
   ```
   error: error reading [AEM_Forms_Installation_dir]\sdk\client-libs\common\adobe-output-client.jar; java.net.URISyntaxException: 
   Illegal character in path at index 70: file:/[AEM_Forms_Installation_dir]/sdk/client-libs/common/${clover.jar.name} 1 error
   ```
 
-  Pour résoudre le problème, procédez comme suit :
-   1. Accédez à `[AEM_Forms_Installation_dir]\sdk\client-libs\common\` et décompresser `adobe-output-client.jar` pour extraire la variable `Manifest.mf` fichier .
-   1. Mettez à jour le `Manifest.mf` en supprimant l’entrée `${clover.jar.name}` de l’attribut class-path .
+  Pour résoudre le problème, procédez comme suit :
+   1. Accédez à `[AEM_Forms_Installation_dir]\sdk\client-libs\common\` et décompressez `adobe-output-client.jar` pour extraire le fichier `Manifest.mf`.
+   1. Mettez à jour le fichier `Manifest.mf` en supprimant l’entrée `${clover.jar.name}` de l’attribut class-path.
 
       >[!NOTE]
       >
-      > Vous pouvez également utiliser un outil de modification statique, par exemple 7-zip, pour mettre à jour la variable `Manifest.mf` fichier .
+      > Vous pouvez également utiliser un outil de modification statique, par exemple 7-zip, pour mettre à jour le fichier `Manifest.mf`.
 
-   1. Enregistrez la mise à jour de la `Manifest.mf` dans le `adobe-output-client.jar` archive.
-   1. Enregistrer la modification `adobe-output-client.jar` et relancez la configuration.  (CQDOC-20878)
-* Après l’installation du programme d’installation complet AEM Service Pack 6.5.18.0, le déploiement EAR échoue sur JEE à l’aide de JBoss® clé en main.
+   1. Enregistrez la mise à jour de `Manifest.mf` dans l’archive `adobe-output-client.jar`.
+   1. Enregistrez le fichier `adobe-output-client.jar` modifié et relancez la configuration.  (CQDOC-20878)
+* Après l’installation du programme d’installation complet du pack de services AEM 6.5.18.0, le déploiement EAR échoue sur JEE en utilisant l’installation clé en main de JBoss®.
 Pour résoudre le problème, recherchez le fichier `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` et mettez à jour `Adobe_Adobe_JAVA_HOME` vers `Adobe_JAVA_HOME` pour toutes les occurrences avant d’exécuter Configuration Manager. (CQDOC-20803)
 
 #### Formulaires adaptatifs
