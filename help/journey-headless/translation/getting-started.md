@@ -2,7 +2,7 @@
 title: Prise en main de la traduction découplée dans AEM
 description: Découvrez comment organiser votre contenu découplé et comment fonctionnent les outils de traduction AEM.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 947b17a82f704a244e7fdc710cfa9df50c64f46b
 workflow-type: tm+mt
 source-wordcount: '1495'
 ht-degree: 99%
@@ -50,7 +50,7 @@ Un certain nombre d’exigences s’imposent avant de vous engager dans la tradu
 
 * Accès aux sandbox pour tester la traduction de votre contenu
 * Informations d’identification pour vous connecter à votre service de traduction préféré
-* Accréditation en tant que membre du groupe `project-administrators` dans AEM
+* Accréditation en tant que membre du groupe `projects-administrators` dans AEM
 
 ## La structure est la clé {#content-structure}
 

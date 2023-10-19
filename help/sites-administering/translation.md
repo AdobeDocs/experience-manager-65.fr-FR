@@ -1,22 +1,13 @@
 ---
 title: Traduction de contenu pour les sites multilingues
-seo-title: Translating Content for Multilingual Sites
-description: Découvrez comment traduire du contenu pour les sites multilingues.
-seo-description: Learn how to translate content for multilingual sites.
-uuid: 69b3e3a9-6773-4759-8178-aaa612e4c170
+description: Découvrez comment traduire du contenu pour des sites multilingues.
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: 1e0a68c5-1583-4103-9dbb-7a53faa03c06
-docset: aem65
-legacypath: /content/docs/en/aem/6-0/administer/integration/third-party-services/machine-translation
 feature: Language Copy
 exl-id: 6ccfe612-8cfd-4ca2-ad01-8e4af36d44fa
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 3f5173c0c2b17e8cf560753088451f78c6529f5c
+workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -36,11 +27,11 @@ La traduction du contenu implique les étapes suivantes :
 1. [Créez des projets de traduction](/help/sites-administering/tc-manage.md) pour collecter le contenu à traduire et préparer le processus de traduction.
 1. Utilisez les projets de translation pour [gérer le processus de traduction du contenu](/help/sites-administering/tc-manage.md).
 
-Si votre fournisseur de services de traduction ne fournit pas de connecteur pour l’intégration à AEM, AEM prend en charge l’extraction et la réinsertion manuelles du contenu de translation au format XML.
+Si votre fournisseur de services de traduction ne fournit pas de connecteur pour l’intégration avec AEM, AEM prend en charge l’extraction et la réinsertion manuelles du contenu de traduction au format XML.
 
 >[!NOTE]
 >
->Votre utilisateur doit être membre du groupe des administrateurs de projet pour utiliser les fonctionnalités de copie de langue.
+>Votre utilisateur doit être membre du groupe projects-administrators pour utiliser les fonctionnalités de copie de langue.
 
 ## Bonnes pratiques {#best-practices}
 

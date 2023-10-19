@@ -1,57 +1,51 @@
 ---
 title: FAQ sur AEM
-seo-title: AEM 6.4 frequently asked questions
-description: Utilisez ces FAQ pour comprendre, configurer, et résoudre les problèmes ou les workflows courants dans AEM.
-seo-description: Use these FAQs to understand, configure, and troubleshoot common workflows or issues in AEM.
-uuid: 17d34923-f1ce-463b-8e9d-a713edcce51b
-contentOwner: jsyal
-discoiquuid: a3bb5695-6593-413d-9c2f-4c164e663b15
-docset: aem65
+description: Utilisez ces FAQ pour comprendre, configurer et résoudre les problèmes ou workflows courants dans AEM.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
-workflow-type: ht
+source-git-commit: f7bfbfab9fb9ec00304f2889735c70be924cc217
+workflow-type: tm+mt
 source-wordcount: '1096'
-ht-degree: 100%
+ht-degree: 58%
 
 ---
 
 # FAQ sur AEM {#aem-faqs}
 
-Découvrez les réponses à certains problèmes de configuration d’AEM.
+Découvrez les réponses à certains problèmes AEM de dépannage et de configuration.
 
 ## Sites {#sites}
 
-### Comment configurer une distribution sans fichier binaire ? {#how-do-i-configure-binary-less-distribution}
+### Comment configurer une distribution sans fichier binaire ? {#how-do-i-configure-binary-less-distribution}
 
-La distribution sans fichier binaire est prise en charge pour les déploiements dans un magasin de données partagé et implique des agents qui exploitent le créateur de modules de l’exportateur de modules de distribution basé sur le coffre-fort (PID d’usine : `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`).
+La distribution sans fichier binaire est prise en charge pour les déploiements dans un magasin de données partagé et implique des agents qui exploitent le créateur de packages de l’exportateur de packages de distribution basé sur le coffre-fort (PID d’usine : `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`).
 
-Le mode sans fichier binaire étant activé, les modules de contenu distribués contiennent des références à des fichiers binaires plutôt que des fichiers binaires réels.
+Lorsque le mode sans fichier binaire est activé, les modules de contenu distribués contiennent des références à des fichiers binaires plutôt que des fichiers binaires réels.
 
-#### Comment activer la distribution sans fichier binaire ? {#how-do-i-enable-binary-less-distribution}
+#### Comment activer la distribution sans fichier binaire ? {#how-do-i-enable-binary-less-distribution}
 
 Pour activer la distribution sans fichier binaire, déployez un entrepôt de grands objets binaires partagé.
 Vérifiez la propriété `useBinaryReferences` dans la configuration OSGI avec le PID d’usine (`org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* utilisé par votre agent.
 
-#### Comment personnaliser les messages d’erreur en parcourant l’arborescence des pages dans la console AEM Sites ? {#how-can-i-customize-the-error-messages-while-navigating-page-hierarchy-in-aem-sites-console}
+#### Comment personnaliser les messages d’erreur lors de la navigation dans la hiérarchie des pages dans AEM console Sites ? {#how-can-i-customize-the-error-messages-while-navigating-page-hierarchy-in-aem-sites-console}
 
-Vérifiez le panneau Réseau (du navigateur Chrome), qui contient une configuration personnelle (JavaScript n’a pas été compressé).
+Vérifiez le panneau Réseau (du navigateur Chrome) dans lequel une configuration personnelle (JS n’a pas été réduite).
 
-Pour déterminer l’initiateur d’une demande, consultez la colonne `Initiator`. Elle indique les fichiers et les numéros de ligne correspondant aux appels AJAX effectués. Ensuite, vous pouvez suivre la fonction de gestion des erreurs et modifier le message d’erreur selon vos besoins.
+Pour déterminer l’initiateur d’une demande, consultez la colonne `Initiator`. Il fournit les fichiers et les numéros de ligne à partir desquels les appels d’AJAX sont effectués. Vous pouvez ensuite suivre la fonction de gestion des erreurs et modifier le message d’erreur selon vos besoins.
 
-#### Comment activer les autorisations tout en créant une copie de langue pour les créateurs de contenu dans AEM ? {#how-to-enable-permissions-while-creating-language-copy-for-content-authors-in-aem}
+#### Comment activer les autorisations lors de la création d’une copie de langue pour les auteurs de contenu dans AEM ? {#how-to-enable-permissions-while-creating-language-copy-for-content-authors-in-aem}
 
 Pour utiliser la fonctionnalité Créer une copie de langue, les créateurs de contenu doivent disposer d’autorisations pour l’emplacement `/content/projects`.
 
-Si les créateurs doivent également gérer des projets, la solution consiste à ajouter le créateur au groupe des `project-administrators`.
+Si les créateurs doivent également gérer des projets, la solution consiste à ajouter le créateur au groupe des `projects-administrators`.
 
-#### Comment modifier le format lors de la création d’une copie de langue pour un projet ? {#how-to-change-the-format-while-creating-language-copy-for-a-project}
+#### Comment modifier le format lors de la création d’une copie de langue pour un projet ? {#how-to-change-the-format-while-creating-language-copy-for-a-project}
 
-Avant de créer un projet de traduction, créez une racine de langue et une copie de langue dans la racine.
+Créez une racine de langue et une copie de langue à l’intérieur de la racine, avant de créer un projet de traduction.
 
 Par exemple,
 Créez une racine de langue dans `/content/geometrixx` avec le nom `fr_LU` (et le titre « Français (Luxembourg) »). Ensuite, créez une copie de langue de la page à partir du panneau Références et accédez à l’option `Create structure only` dans `Create & Translate`. Enfin, créez un projet de traduction, puis ajoutez la copie de langue à la tâche de traduction.
 
-Pour plus d’informations, reportez-vous aux ressources supplémentaires ci-dessous :
+Pour plus d&#39;informations, reportez-vous aux ressources supplémentaires ci-dessous :
 
 * [Préparation du contenu à traduire](/help/sites-administering/tc-prep.md)
 * [Gestion des projets de traduction](/help/sites-administering/tc-manage.md)
@@ -61,13 +55,13 @@ Pour plus d’informations, reportez-vous aux ressources supplémentaires ci-des
 AEM permet de consigner les modifications administratives pour améliorer les audits et la résolution des problèmes. Par défaut, les informations sont consignées dans le fichier `error.log`. Pour faciliter la surveillance, il est recommandé de les rediriger vers un fichier journal distinct.
 Pour rediriger la sortie vers un fichier journal distinct, consultez [Comment auditer les opérations de gestion des utilisateurs dans AEM](/help/sites-administering/audit-user-management-operations.md).
 
-#### Comment activer SSL par défaut ? {#how-to-enable-ssl-by-default}
+#### Comment activer SSL par défaut ? {#how-to-enable-ssl-by-default}
 
-Adobe Experience Manager (AEM) 6.4 contient un assistant SSL et propose une interface utilisateur pour configurer la prise en charge de Jetty et Granite Jetty SSL.
+Adobe Experience Manager (AEM) 6.4 est fourni avec l’assistant SSL et offre une interface utilisateur pour configurer la prise en charge de Jetty et Granite Jetty SSL.
 
 Pour activer SSL par défaut, voir [SSL par défaut](/help/sites-administering/ssl-by-default.md).
 
-#### Quelle est l’architecture recommandée lors de l’utilisation des services de contenu d’AEM depuis une application mobile, idéalement React Native ? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
+#### Quelle est l’architecture recommandée lors de l’utilisation des Content Services d’AEM à partir d’une application mobile, idéalement React Native ? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
 
 Les services de contenu reposent sur les modèles Sling. Les développeurs AEM doivent fournir un pojo de modèle Sling pour chaque composant qui est exporté.
 
@@ -79,19 +73,19 @@ De plus, si les développeurs souhaitent exporter un arbre de composants, ils pe
 
 [2] [Apache Sling :: Sling Models](https://sling.apache.org/documentation/bundles/models.html)
 
-#### Comment désactiver la fenêtre contextuelle d’enquête d’AEM 6.4 ? {#how-to-disable-aem-survey-pop-up}
+#### Comment désactiver la fenêtre contextuelle d&#39;enquête AEM 6.4 ? {#how-to-disable-aem-survey-pop-up}
 
-Vous pouvez souscrire à la collecte de statistiques d’utilisation à l’aide de l’IU tactile ou de la console web. Pour des instructions détaillées, consultez [Souscription à la collecte de statistiques d’utilisation agrégées](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
+Vous pouvez souscrire à la collecte de statistiques d’utilisation à l’aide de l’interface utilisateur tactile ou de la console web. Pour obtenir des instructions détaillées, voir [Souscription à la collecte de statistiques d’utilisation agrégées](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
 
-#### Existe-t-il une bonne ressource qui explique les fonctionnalités clés dans le cas d’une mise à niveau vers AEM 6.4 ? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
+#### Existe-t-il une bonne ressource qui met en évidence les fonctionnalités clés de la mise à niveau vers AEM 6.4 ? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
 
 consultez [Comprendre les raisons de mettre AEM à niveau](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html), laquelle décrit les fonctionnalités clés auxquelles vous aurez accès si vous passez à la version la plus récente d’Adobe Experience Manager.
 
 ## Assets {#assets}
 
-### Pourquoi le workflow des ressources se répète-t-il lors du chargement de fichiers MP4 (par exemple, par glisser-déposer) ? {#why-the-assets-workflow-repeats-itself-while-uploading-mp-files-for-example-using-drag-and-drop-method}
+### Pourquoi le workflow Ressources se répète-t-il lors du chargement de fichiers MP4 (par exemple, à l’aide de la méthode glisser-déposer) ? {#why-the-assets-workflow-repeats-itself-while-uploading-mp-files-for-example-using-drag-and-drop-method}
 
-Lorsqu’un utilisateur charge les fichiers vidéo, s’il ne dispose pas des autorisations de suppression sous le nœud des actifs, la suppression des nœuds de bloc échoue et le chargement recommence.
+Si l’utilisateur, le téléchargement des fichiers de film ne dispose pas des autorisations de suppression sous le noeud de ressource, la suppression des noeuds de bloc échoue et le chargement redémarre.
 
 #### Quels sont les paramètres par défaut pour les configurations prêtes à l’emploi lors de la création d’une copie de langue ? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
@@ -102,7 +96,7 @@ Pour AEM 6.4, **Outils** > **Services cloud** > **Services cloud de traduction*
 
 #### Comment désactiver un composant AEM entraînant la croissance exponentielle de SegmentStore AEM (AEM 6.3.1.1) ? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
 
-Vous pouvez désactiver OSGi Component Disabler. Pour utiliser ce service, voir [OSGi Component Disabler](https://adobe-consulting-services.github.io/acs-aem-commons/features/osgi-disablers/component-disabler/index.html).
+Vous pouvez désactiver le désactivateur de composants OSGi. Pour utiliser ce service, voir [Désactivation des composants OSGi](https://adobe-consulting-services.github.io/acs-aem-commons/features/osgi-disablers/component-disabler/index.html).
 
 Comme solution, vous pouvez également désactiver manuellement le composant via l’IU ou une commande `curl` (exemple ci-dessous) après chaque redémarrage d’AEM.
 
@@ -110,22 +104,22 @@ Comme solution, vous pouvez également désactiver manuellement le composant via
 
 #### Comment personnaliser les consoles d’administration ? {#how-to-customize-admin-consoles}
 
-AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les consoles et la fonctionnalité de création de pages de votre instance de création. Pour savoir comment créer une console personnalisée et modifier l’affichage par défaut d’une console, veuillez consulter la section [Personnalisation des consoles](/help/sites-developing/customizing-consoles-touch.md).
+AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les consoles et la fonctionnalité de création de pages de votre instance de création. Pour savoir comment créer une console personnalisée et personnaliser une vue par défaut pour une console, reportez-vous à la section [Personnalisation des consoles](/help/sites-developing/customizing-consoles-touch.md).
 
-#### Quelle est la différence entre les composants basés sur CoralUI 2 et CoralUI 3 ? {#what-is-the-difference-between-coralui-and-coralui-based-components}
+#### Quelle est la différence entre les composants basés sur CoralUI 2 et CoralUI 3 ? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
-Un nouvel ensemble de composants Sling de Granite UI Foundation est créé pour Coral3 et se trouve sous [/libs/granite/ui/components/coral/foundation.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) Un jeu est adapté aux composants basés sur CoralUI 2 et un autre à ceux basés sur CoralUI 3. Le nouveau jeu ne sera pas simplement un copier-coller de l’ancien, mais il sera nettoyé (par exemple en simplifiant et en supprimant les fonctionnalités abandonnées). Il est donc recommandé qu’une page utilise un jeu basé uniquement soit sur CoralUI 3 soit sur CoralUI 2.
+Un nouvel ensemble de composants Sling de Granite UI Foundation est créé pour Coral3 et se trouve sous [/libs/granite/ui/components/coral/foundation.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) Un jeu est adapté aux composants basés sur CoralUI 2 et un autre à ceux basés sur CoralUI 3. Le nouveau jeu ne sera pas simplement un copier-coller de l’ancien, mais il sera nettoyé (par exemple en simplifiant et en supprimant les fonctionnalités abandonnées). Il est donc recommandé qu’une page utilise uniquement un ensemble basé sur CoralUI 3 ou sur CoralUI 2.
 
 Pour en savoir plus, consultez le [Guide de migration vers CoralUI 3](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
 
-#### Comment personnaliser le composant de recherche dans AEM Assets ? {#how-to-customize-the-search-component-in-aem-assets}
+#### Comment personnaliser le composant de recherche dans AEM Assets ? {#how-to-customize-the-search-component-in-aem-assets}
 
-Pour en savoir plus sur l’accélération et le classement de la recherche ainsi que pour recevoir des informations supplémentaires sur la mise en œuvre, consultez le [Guide de mise en œuvre de recherche simple](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr).
+Pour en savoir plus sur l’amplification/le classement des recherches et d’autres informations sur l’implémentation, reportez-vous à la section [Guide de mise en oeuvre de recherche simple](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr).
 
 La mise en œuvre de recherche simple est le thème du Summit Lab AEM Search Demystified 2017.
 
-#### Est-il possible d’utiliser un plug-in pour WordPress afin de permettre à un client d’accéder à Adobe Asset Picker pour sélectionner des images ? {#is-it-possible-to-build-plugin-for-wordpress-that-allows-a-customer-to-access-adobe-asset-picker-to-select-images}
+#### Est-il possible de créer un module externe pour WordPress qui permet à un client d’accéder au sélecteur de ressources d’Adobe pour sélectionner des images ? {#is-it-possible-to-build-plugin-for-wordpress-that-allows-a-customer-to-access-adobe-asset-picker-to-select-images}
 
-Oui, un client utilisant WordPress peut utiliser Adobe Asset Picker pour sélectionner des images de son serveur AEM Assets et les ajouter aux publications sur son site WordPress.
+Oui, un client utilisant WordPress peut utiliser le sélecteur de ressources Adobe pour sélectionner des images de son serveur AEM Assets à ajouter aux publications sur son site WordPress.
 
-Pour plus d’informations, veuillez consulter la section [Sélecteur de ressources](../assets/search-assets.md#assetpicker).
+Voir [Sélecteur de ressources](../assets/search-assets.md#assetpicker) pour plus d’informations.

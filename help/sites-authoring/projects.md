@@ -1,19 +1,11 @@
 ---
 title: Projets
-seo-title: Projects
 description: Les projets vous permettent de regrouper des ressources dans une seule entité dont l’environnement commun et partagé facilite la gestion de vos projets.
-seo-description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
-uuid: 4b5b9d78-d515-46af-abe2-882da0a1c8ae
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: projects
-content-type: reference
-discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
-docset: aem65
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1d64a9a6d6dfbc7606d7c222ef50a21bf9b902d6
 workflow-type: tm+mt
 source-wordcount: '1365'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -114,7 +106,7 @@ Vous chargez des ressources directement dans la mosaïque.
 
 ### Collections de ressources {#asset-collections}
 
-Comme pour les ressources, vous pouvez ajouter des [collections de ressources](/help/assets/manage-collections.md) directement à votre projet. Vous définissez les collections dans Assets.
+Comme avec les ressources, vous pouvez ajouter des [collections de ressources](/help/assets/manage-collections.md) directement à votre projet. Vous définissez les collections dans Assets.
 
 ![Mosaïque Collection de ressources](assets/project-tile-asset-collection.png)
 
@@ -155,7 +147,7 @@ Pour configurer votre traduction, consultez le document [Création de projets de
 
 ### Équipe {#team}
 
-Dans cette mosaïque, vous pouvez définir les membres de l’équipe de projet. Lors de la modification, vous pouvez saisir le nom du membre de l’équipe et attribuer le rôle d’utilisateur.
+Dans cette mosaïque, vous pouvez définir les membres de l’équipe de projet. Lors de la modification, vous pouvez saisir le nom de la personne membre de l’équipe et attribuer le rôle d’utilisateur ou d’utilisatrice.
 
 ![Mosaïque Équipe](assets/project-tile-team.png)
 
@@ -223,7 +215,7 @@ Pour vous permettre de gérer les autorisations de sécurité et de contrôle, t
 |---|---|---|---|
 | Observateur | Un utilisateur disposant de ce rôle peut afficher les détails du projet, y compris son statut. | Autorisations en lecture seule sur un projet | Groupe `workflow-users` |
 | Éditeur | Un utilisateur disposant de ce rôle peut charger et modifier le contenu d’un projet. | Accès en lecture et en écriture à un projet, aux métadonnées associées et aux ressources connexes<br>Droits permettant à l’utilisateur de charger une liste de plans ou une séance photo et de passer en revue et d’approuver des ressources<br>Droits en écriture sur `/etc/commerce`<br>Droits de modification sur un projet spécifique | Groupe `workflow-users` |
-| Propriétaire | Un utilisateur disposant de ce rôle peut créer un projet, lancer le travail dans un projet et déplacer les ressources approuvées dans le dossier d’exploitation. Toutes les autres tâches de projet peuvent également être visualisées et implémentées par le propriétaire. | Droits en écriture sur `/etc/commerce` | « `dam-users` » (pour pouvoir créer un projet)« <br>`project-administrators` » (pour pouvoir déplacer des ressources) |
+| Propriétaire | Un utilisateur disposant de ce rôle peut créer un projet, lancer le travail dans un projet et déplacer les ressources approuvées dans le dossier d’exploitation. Toutes les autres tâches de projet peuvent également être visualisées et implémentées par le propriétaire. | Droits en écriture sur `/etc/commerce` | « `dam-users` » (pour pouvoir créer un projet)« <br>`projects-administrators` » (pour pouvoir déplacer des ressources) |
 
 Pour des projets créatifs, des rôles supplémentaires, par exemple, « photographe », sont également proposés. Vous pouvez utiliser ces rôles pour créer des rôles personnalisés liés à un projet spécifique.
 
