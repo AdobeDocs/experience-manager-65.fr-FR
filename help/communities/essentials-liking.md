@@ -1,20 +1,16 @@
 ---
 title: Notions fondamentales relatives aux mentions J’aime
-seo-title: Liking Essentials
-description: Composant "J’aime" - Aperçu
-seo-description: Liking component overview
-uuid: 89f16859-c901-4090-8e16-363b95c508de
+description: Découvrez comment utiliser le composant J’aime, un outil utile qui permet aux membres d’exprimer une opinion positive sur un contenu en sélectionnant l’icône représentant un coeur.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: f176c42b-b16b-42c9-af22-4b6421de5a90
 pagetitle: Liking Essentials
 exl-id: ef314385-cd5c-411c-91df-83691a81c1bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 2%
+source-wordcount: '306'
+ht-degree: 0%
 
 ---
 
@@ -22,9 +18,9 @@ ht-degree: 2%
 
 Le composant J’aime, une [tally](tally.md) subclass est un outil utile qui permet aux membres d’exprimer une opinion positive sur un élément de contenu particulier en sélectionnant simplement l’icône coeur.
 
-Le placement de plusieurs instances d’un composant de lien sur la même page est autorisé ; chaque instance doit être configurée avec une `tally name` .
+Le placement de plusieurs instances d’un composant de lien sur la même page est autorisé ; chaque instance doit être configurée avec une variable `tally name` .
 
-La publication anonyme d’un &quot;j’aime&quot; n’est pas prise en charge. Les visiteurs du site doivent s’inscrire et se connecter pour participer à des activités de votre choix. Le visiteur (membre) connecté peut basculer comme activé et désactivé à tout moment.
+La publication anonyme d’un type n’est pas prise en charge. Les visiteurs du site doivent s’inscrire et se connecter pour participer à des activités de votre choix. Le visiteur (membre) connecté peut basculer comme activé et désactivé à tout moment.
 
 ## Principes élémentaires pour le côté client {#essentials-for-client-side}
 
@@ -61,9 +57,9 @@ La publication anonyme d’un &quot;j’aime&quot; n’est pas prise en charge. 
 
 ## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
 
-* [API Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [API Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Points de terminaison Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Points de terminaison Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personnalisations côté serveur](server-customize.md)
 
@@ -72,13 +68,13 @@ La publication anonyme d’un &quot;j’aime&quot; n’est pas prise en charge. 
 Le contenu généré par l’utilisateur doit être modéré à l’aide de l’une des méthodes standard de modération.
 Voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
 
-À partir de AEM 6.1 Communities, utilisez un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès programmatique au contenu généré par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
+À partir de AEM 6.1 Communities, utilisez un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès par programmation au contenu créé par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
 
 **L’emplacement et le format du contenu créé par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement.**.
 
 Voir :
 
-* [Présentation du fournisseur de ressources de stockage](srp.md) - introduction et présentation de l’utilisation du référentiel.
+* [Présentation du fournisseur de ressources de stockage](srp.md) - introduction et utilisation du référentiel - présentation.
 * [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md) - Méthodes et exemples de l’utilitaire SRP.
 * [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
 * [Refactorisation de SocialUtils](socialutils.md) - mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.

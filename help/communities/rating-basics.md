@@ -1,19 +1,15 @@
 ---
 title: Notions fondamentales sur la notation
-seo-title: Rating Essentials
-description: Présentation du composant Évaluation
-seo-description: Rating component overview
-uuid: 48ef61ad-be7a-4a6b-a284-23e5bb4f1671
+description: Découvrez comment le composant Évaluation, une sous-classe Tally, permet aux membres de la communauté connectés d’évaluer une fonctionnalité sur le site web.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 7dc3ef57-05c3-45d4-ace3-bb3ba6ea768b
 exl-id: 49456944-ff0d-4507-b3b8-143c90067573
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 5%
+source-wordcount: '287'
+ht-degree: 1%
 
 ---
 
@@ -21,9 +17,9 @@ ht-degree: 5%
 
 Le composant Évaluation, une [tally](tally.md) sous-classe , permet aux membres de la communauté connectés d’évaluer une fonctionnalité sur le site web.
 
-Le placement de plusieurs instances d’un composant Vote sur la même page est autorisé ; chaque instance doit être configurée avec une `tally name` .
+Le placement de plusieurs instances d’un composant Vote sur la même page est autorisé ; chaque instance doit être configurée avec une variable `tally name` .
 
-La publication anonyme d’une évaluation n’est pas possible. Les visiteurs du site ne doivent s’inscrire et se connecter qu’une seule fois pour participer à une évaluation. Le visiteur connecté (membre) peut modifier son évaluation à tout moment.
+La publication anonyme d’une évaluation n’est pas prise en charge. Les visiteurs du site ne doivent s’inscrire et se connecter qu’une seule fois pour participer à une évaluation. Le visiteur connecté (membre) peut modifier son évaluation à tout moment.
 
 ## Principes élémentaires pour le côté client {#essentials-for-client-side}
 
@@ -60,9 +56,9 @@ La publication anonyme d’une évaluation n’est pas possible. Les visiteurs d
 
 ## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
 
-* [API Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [API Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Points de terminaison Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Points de terminaison Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personnalisations côté serveur](server-customize.md)
 
@@ -71,13 +67,13 @@ La publication anonyme d’une évaluation n’est pas possible. Les visiteurs d
 Le contenu généré par l’utilisateur doit être modéré à l’aide de l’une des méthodes standard de modération.
 Voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
 
-À partir de AEM 6.1 Communities, utilisez un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès programmatique au contenu généré par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
+À partir de AEM 6.1 Communities, utilisez un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès par programmation au contenu créé par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
 
 **L’emplacement et le format du contenu créé par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement.**.
 
 Voir :
 
-* [Présentation du fournisseur de ressources de stockage](srp.md) - introduction et présentation de l’utilisation du référentiel.
+* [Présentation du fournisseur de ressources de stockage](srp.md) - introduction et utilisation du référentiel - présentation.
 * [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md) - Méthodes et exemples de l’utilitaire SRP.
 * [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
 * [Refactorisation de SocialUtils](socialutils.md) - mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.

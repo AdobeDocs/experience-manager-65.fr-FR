@@ -1,20 +1,16 @@
 ---
 title: Notions fondamentales sur la messagerie
-seo-title: Messaging Essentials
-description: Présentation du composant Messagerie
-seo-description: Messaging component overview
-uuid: e0dad45e-d84d-4b28-b357-aded1c5d2605
+description: Découvrez les détails de l’utilisation et de l’utilisation du composant Messagerie pour inclure une fonction de messagerie sur un site web.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 98f70093-e786-4555-8aaa-d0df4c977dc0
 docset: aem65
 exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 5%
+source-wordcount: '397'
+ht-degree: 2%
 
 ---
 
@@ -57,7 +53,7 @@ Cette page documente les détails de l’utilisation du composant Messagerie pou
 
 **Liste des messages**
 
-(pour Boîte de réception, Envoyé et Corbeille)
+(Pour la boîte de réception, l’envoi et la corbeille)
 
 <table>
  <tbody>
@@ -93,9 +89,9 @@ Voir aussi [Personnalisations côté client](/help/communities/client-customize.
 ## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
 
 * [Configuration de la messagerie](/help/communities/configure-messaging.md)
-* [API clientes de messagerie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) pour les composants SCF
-* [API de messagerie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) pour le service
-* [Points de terminaison de la messagerie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
+* [API clientes de messagerie](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) pour les composants SCF
+* [API de messagerie](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) pour le service
+* [Points de fin de messagerie](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [Personnalisations côté serveur](/help/communities/server-customize.md)
 
 >[!CAUTION]
@@ -107,17 +103,16 @@ Voir aussi [Personnalisations côté client](/help/communities/client-customize.
 >
 >Par exemple :
 >
->
-```
+>```
 >valid: mb.setInboxPath( "/mail/inbox" );
 > not valid: mb.setInboxPath( "/mail/inbox/" );
 >```
 
 ### Site de la communauté {#community-site}
 
-Une structure de site communautaire, créée à l’aide de l’assistant, inclut la fonction de messagerie lorsqu’elle est sélectionnée. Voir `User Management` paramètres de [Console Sites de communauté](/help/communities/sites-console.md#user-management).
+Une structure de site de communauté, créée à l’aide de l’assistant, inclut la fonction de messagerie lorsqu’elle est sélectionnée. Voir `User Management` des paramètres de [Console Sites de communauté](/help/communities/sites-console.md#user-management).
 
-### Exemple de code : Notification de réception d’un message {#sample-code-message-received-notification}
+### Exemple de code : notification de réception de message {#sample-code-message-received-notification}
 
 La fonction Messagerie sociale génère des événements pour les opérations, par exemple `send`, `marking read`, `marking delete`. Ces événements peuvent être capturés et les actions effectuées sur les données contenues dans l’événement.
 
@@ -130,12 +125,12 @@ Pour tester l’exemple de script côté serveur, vous avez besoin d’un enviro
 
    * Nom symbolique : `com.engage.media.social.messaging.MessagingNotification`
    * Nom : Notification de message du tutoriel de prise en main
-   * Description : Un exemple de service pour envoyer une notification électronique aux utilisateurs lorsqu’ils reçoivent un message
+   * Description : un exemple de service pour envoyer une notification électronique aux utilisateurs lorsqu’ils reçoivent un message
    * Module: `com.engage.media.social.messaging.notification`
 
 1. Accédez à `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`, puis :
 
-   1. Supprimez la variable `Activator.java` de classe créée automatiquement.
+   1. Supprimez le `Activator.java` de classe créée automatiquement.
    1. Créer une classe `MessageEventHandler.java`.
    1. Copiez et collez le code ci-dessous dans `MessageEventHandler.java`.
 

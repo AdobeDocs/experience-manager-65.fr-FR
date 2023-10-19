@@ -1,29 +1,25 @@
 ---
-title: Utilisation du composant Vote
-seo-title: Using Voting
-description: Ajout du composant Vote à une page
-seo-description: Adding the Voting component to a page
-uuid: 56e6cced-2f2d-434a-8fde-92a6c2478a04
+title: Utilisation du vote
+description: Découvrez comment ajouter le composant Vote à une page qui permet aux membres de la communauté connectés d’évaluer un élément de contenu particulier, tel qu’une réponse.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
 exl-id: aa90bf1b-6053-4949-b061-232d72b80682
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 25%
+source-wordcount: '253'
+ht-degree: 4%
 
 ---
 
-# Utilisation du composant Vote {#using-voting}
+# Utilisation du vote {#using-voting}
 
-Le `Voting` est un outil utile qui permet aux membres de la communauté d’évaluer un élément de contenu particulier, tel qu’une réponse dans un composant Q&amp;R. Avec le `Voting` , les membres sélectionnent les flèches haut ou bas pour indiquer leur opinion.
+La variable `Voting` est un outil utile qui permet aux membres de la communauté d’évaluer un élément de contenu particulier, tel qu’une réponse dans un composant Q&amp;R. Avec la variable `Voting` , les membres sélectionnent les flèches haut ou bas pour indiquer leur opinion.
 
-## Ajout d’un composant Vote à une page {#adding-voting-to-a-page}
+## Ajout d’un vote à une page {#adding-voting-to-a-page}
 
-Pour ajouter une `Voting` sur une page en mode création, utilisez l’explorateur de composants pour accéder à `Communities / Voting` et faites-le glisser sur la page, par exemple à un emplacement relatif à la fonction sur laquelle les utilisateurs peuvent voter.
+Pour ajouter une `Voting` à une page en mode création, utilisez l’explorateur de composants. Localiser `Communities / Voting` et faites-le glisser sur la page, par exemple à un emplacement relatif à la fonction sur laquelle les utilisateurs peuvent voter.
 
 Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](basics.md).
 
@@ -31,9 +27,9 @@ Lorsque la variable [bibliothèques côté client requises](essentials-voting.md
 
 ![composant de vote](assets/voting-component.png)
 
-## Configuration du composant Vote {#configuring-voting}
+## Configuration du vote {#configuring-voting}
 
-Sélectionnez le `Voting` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le `Voting` afin que vous puissiez accéder au `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure](assets/configure-new.png)
 
@@ -43,25 +39,25 @@ Sous , **[!UICONTROL Textes et libellés]** , spécifiez les propriétés utilis
 
 * **[!UICONTROL Etiquette de réponse positive]**
 
-   (*Obligatoire*) Nom de propriété interne d’une réponse positive.
+  (*Obligatoire*) Nom de propriété interne d’une réponse positive.
 
 * **[!UICONTROL Etiquette de réponse négative]**
 
-   (*Obligatoire*) Nom de propriété interne d’une réponse négative.
+  (*Obligatoire*) Nom de propriété interne d’une réponse négative.
 
 * **[!UICONTROL Nom Tally]**
 
-   (*Obligatoire*) Nom de propriété interne identifiable de cette instance d’un composant Vote.
+  (*Obligatoire*) Nom de propriété interne identifiable de cette instance d’un composant Vote.
 
-## Expérience des visiteurs {#site-visitor-experience}
+## Expérience du visiteur du site {#site-visitor-experience}
 
 ### Membres {#members}
 
-Les membres ne peuvent voter qu’une seule fois, mais peuvent changer leur vote à tout moment.
+Les membres ne peuvent voter qu&#39;une seule fois, mais peuvent changer leur vote à tout moment.
 
 ### Anonyme {#anonymous}
 
-Le vote anonyme n’est pas possible. Les visiteurs du site doivent s’enregistrer (devenir membres) et se connecter pour participer au vote.
+Le vote anonyme n&#39;est pas pris en charge. Les visiteurs du site doivent s’inscrire (devenir membre) et se connecter pour participer une fois au vote.
 
 ## Informations supplémentaires {#additional-information}
 

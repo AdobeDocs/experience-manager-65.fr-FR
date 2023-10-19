@@ -1,25 +1,21 @@
 ---
 title: Développement d’une application Sandbox
-seo-title: Develop Sandbox Application
-description: Développement d’applications à l’aide de scripts de base
-seo-description: Develop application using foundation scripts
-uuid: 572f68cd-9ecb-4b43-a7f8-4aa8feb6c64e
+description: Découvrez comment développer une application Sandbox qui utilise des scripts de base et inclut la possibilité d’activer la création avec des composants Communities.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '593'
 ht-degree: 7%
 
 ---
 
 # Développement d’une application Sandbox  {#develop-sandbox-application}
 
-Dans cette section, maintenant que le modèle a été configuré dans la variable [application initiale](initial-app.md) et les pages initiales établies dans la section [contenu initial](initial-content.md) , l’application peut être développée à l’aide de scripts de base, notamment la possibilité d’activer la création avec des composants Communities. A la fin de cette section, le site web sera fonctionnel.
+Dans cette section, maintenant que le modèle est configuré dans la variable [application initiale](initial-app.md) et les pages initiales établies dans la section [contenu initial](initial-content.md) , vous pouvez développer l’application. Pour ce faire, vous utilisez des scripts de base qui incluent la possibilité d’activer la création avec les composants Communities. À la fin de cette section, vous disposez d’un site web entièrement fonctionnel.
 
 ## Utilisation des scripts de page Foundation {#using-foundation-page-scripts}
 
@@ -66,9 +62,9 @@ Utilisation de CRXDE Lite:
    %>
    ```
 
-1. Tenant compte des balises de script d’ouverture/de fermeture, remplacez &quot;/ TODO ...&quot; par des scripts pour les parties head et body de &lt;html>.
+1. Conscient des balises de script d’ouverture/de fermeture, remplacez &quot;/ TODO ...&quot; par `includes` des scripts pour les parties head et body de &lt;html>.
 
-   Avec un super type de `foundation/components/page`, tout script non défini dans ce même dossier sera résolu en tant que script dans `/apps/foundation/components/page` dossier (s’il existe), sinon un script dans `/libs/foundation/components/page` dossier.
+   Avec un super type de `foundation/components/page`, tout script non défini dans ce même dossier est résolu sur un script dans `/apps/foundation/components/page` (s’il existe) ou à un script dans `/libs/foundation/components/page` dossier.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -88,9 +84,9 @@ Utilisation de CRXDE Lite:
    </html>
    ```
 
-1. Le script de base `head.jsp` ne doit pas être superposé, mais le script de base `body.jsp` est vide.
+1. Recouvrement du script de base `head.jsp` n’est pas nécessaire, mais le script de base `body.jsp` est vide.
 
-   Pour configurer la création, superposition `body.jsp` avec un script local et inclure un système de paragraphes (parsys) dans le corps :
+   Pour configurer la création, superposez `body.jsp` avec un script local et inclure un système de paragraphes (parsys) dans le corps :
 
    1. Accédez à `/apps/an-scf-sandbox/components`.
    1. Sélectionnez le nœud `playpage`.
@@ -162,13 +158,13 @@ En outre, choisissez **[!UICONTROL Général]** les composants, tels que
 >
 >Les composants activés pour la partie page sont stockés dans le référentiel comme valeur de la propriété `components` de la propriété
 >
->`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` noeud .
+>Nœud `/etc/designs/an-scf-sandbox/jcr:content/playpage/par`.
 
 ## Page de destination {#landing-page}
 
 Dans un environnement multilingue, la page racine inclut un script qui analyse la requête du client pour déterminer la langue souhaitée.
 
-Dans cet exemple simple, la page racine est automatiquement définie pour rediriger vers la page anglaise, qui peut être développée ultérieurement pour être la page d’entrée principale avec un lien vers la page de lecture.
+Dans cet exemple, la page racine est automatiquement définie pour rediriger vers la page en anglais, qui peut être développée ultérieurement pour être la page d’entrée principale avec un lien vers la page de lecture.
 
 Remplacez l’URL du navigateur par la page racine : `http://localhost:4502/editor.html/content/an-scf-sandbox.html`
 
@@ -183,4 +179,4 @@ Remplacez l’URL du navigateur par la page racine : `http://localhost:4502/edit
 
 Une fois le site publié, l’accès à la page racine d’une instance de publication redirige vers la page en anglais.
 
-La dernière étape avant de lire les composants SCF des communautés consiste à ajouter un dossier de bibliothèques clientes (clientlibs) .... [Ajout de bibliothèques clientes](add-clientlibs.md)
+La dernière étape avant de lire les composants SCF Communities consiste à ajouter un dossier de bibliothèque cliente (clientlibs) .... [Ajout de bibliothèques clientes](add-clientlibs.md)

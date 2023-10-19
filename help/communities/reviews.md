@@ -1,18 +1,14 @@
 ---
 title: Utilisation des révisions et du résumé des révisions (affichage)
-seo-title: Using Reviews and Reviews Summary (Display)
-description: Ajout des composants Résumé des révisions et révisions à une page
-seo-description: Adding the Reviews and Reviews Summary components to a page
-uuid: bd1ccee7-b26b-4a27-b1ea-89609f5080af
+description: Découvrez comment ajouter les composants Résumé des révisions et révisions à une page.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1285'
 ht-degree: 4%
 
 ---
@@ -39,7 +35,7 @@ Lorsque la variable [bibliothèques côté client requises](reviews-basics.md#es
 
 ## Configuration des révisions {#configuring-reviews}
 
-Sélectionnez le `Reviews` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le `Reviews` afin que vous puissiez accéder au `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure-new](assets/configure-new.png)
 
@@ -55,7 +51,7 @@ Sous , **[!UICONTROL Évaluations autorisées]** , indiquez la liste complète d
 
   Cliquez sur **[!UICONTROL Ajouter un élément]** pour ajouter un autre choix d’évaluation.
 
-Sous , **[!UICONTROL Évaluations requises]** , saisissez à nouveau des éléments dans la liste de **[!UICONTROL Évaluations autorisées]** qui doivent être évalués. Si un élément n’est spécifié que dans l’onglet Évaluations autorisées , il peut ne pas être marqué lorsqu’il est envoyé par le membre.
+Sous , **[!UICONTROL Évaluations requises]** , saisissez à nouveau les éléments de la liste **[!UICONTROL Évaluations autorisées]** qui sont requis pour l’évaluation. Si un élément n’est spécifié que dans l’onglet Évaluations autorisées , il peut ne pas être marqué lorsqu’il est envoyé par le membre.
 
 Sur le site web, les évaluations requises sont marquées d’un astérisque. Si un élément est requis et laissé sans marque, un message s’affiche pour le membre et l’envoi est refusé jusqu’à ce que toutes les évaluations requises soient marquées.
 
@@ -99,7 +95,7 @@ Sous , **[!UICONTROL Révisions]** , indiquez comment les révisions sont géré
 
 * **[!UICONTROL Types de fichier autorisés]**
 
-  Pertinent uniquement si **[!UICONTROL Autoriser les chargements de fichiers]** est cochée. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
+  Pertinent uniquement si **[!UICONTROL Autoriser les chargements de fichiers]** est cochée. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple, .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne sont pas autorisés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
 
 * **[!UICONTROL Éditeur de texte enrichi]**
 
@@ -155,7 +151,7 @@ Pour ajouter une `Reviews Summary (Display)` à une page en mode création, rech
 
 * `Communities / Reviews Summary (Display)`
 
-et faites-le glisser sur la page où s’affiche un résumé d’une révision active ou fermée.
+Faites-le glisser sur la page où s’affiche un résumé d’une révision active ou fermée.
 
 Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](basics.md).
 
@@ -169,7 +165,7 @@ Lorsque la variable [bibliothèques côté client requises](reviews-basics.md#es
 
 ### Configuration du résumé des révisions (affichage) {#configuring-reviews-summary-display}
 
-Sélectionnez le `Reviews Summary (Display)` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le `Reviews Summary (Display)` afin que vous puissiez accéder au `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure](assets/configure-new.png)
 
@@ -179,13 +175,13 @@ Sous , **[!UICONTROL Résumé de la révision]** tab
 
 * `Review Path`
 
-  accédez à l’instance placée du `reviews`à résumer, par exemple, s’il est ajouté à la page Web de la fonction [site Geometrixx Engage,](getting-started.md) le chemin serait le suivant :
+  Accédez à l’instance placée du `reviews` afin que vous puissiez, par exemple, résumer, si vous l’ajoutez à la page Web de la fonction [site Geometrixx Engage,](getting-started.md) le chemin serait le suivant :
 
   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
 * `Include histogram`
 
-  Si cette case est cochée, incluez l’affichage d’un graphique à barres indiquant le nombre de chaque évaluation des étoiles dans les révisions résumées. La case par défaut est décochée.
+  Si cette case est cochée, incluez l’affichage d’un graphique à barres indiquant le nombre d’évaluations résumées dans les révisions. La case par défaut est décochée.
 
 ### Passage à un type de révision personnalisé {#changing-to-a-custom-review-type}
 
@@ -193,7 +189,7 @@ Le composant Révisions utilise le système de commentaires.
 
 En modifiant le type de ressource de commentaire, le système de commentaires ne génère plus une instance d’un commentaire à l’aide de la valeur par défaut, mais une instance qui a été personnalisée (étendue) par les développeurs.
 
-Une fois les types de ressources personnalisés connus, saisissez [Mode de conception](../../help/sites-authoring/default-components-designmode.md) et double-cliquez sur le `Comments` pour ouvrir une boîte de dialogue avec un onglet supplémentaire.
+Lorsque les types de ressources personnalisés sont connus, saisissez [Mode de conception](../../help/sites-authoring/default-components-designmode.md) et double-cliquez sur le `Comments` pour ouvrir une boîte de dialogue avec un onglet supplémentaire.
 
 Sous , **[!UICONTROL Types de ressources]** , spécifiez le type de ressource personnalisé pour les nouvelles instances de la variable `Comments or Voting` composants :
 

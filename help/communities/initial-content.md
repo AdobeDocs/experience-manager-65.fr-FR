@@ -1,15 +1,15 @@
 ---
 title: Contenu d’environnement de test initial
-description: Créer du contenu
+description: Découvrez comment utiliser le modèle Page dans l’environnement de test pour créer une page principale pour une version anglaise d’un site web et une page enfant de la page principale.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 5%
+source-wordcount: '490'
+ht-degree: 4%
 
 ---
 
@@ -23,7 +23,7 @@ Dans cette section, vous créez les pages suivantes qui utilisent toutes le [mod
 
    * Lecture SCF - Enfant de la page principale sur laquelle lire.
 
-Bien que ce tutoriel ne décrit pas [copies de langue](../../help/sites-administering/tc-prep.md), il est conçu de sorte que la page racine puisse mettre en oeuvre la détection de la langue souhaitée pour l’utilisateur par le biais de l’en-tête du HTML et rediriger vers la page principale appropriée pour la langue. La convention consiste à utiliser le code de pays à deux lettres pour le nom de noeud de la page, par exemple &quot;en&quot; pour l’anglais et &quot;fr&quot; pour le français.
+Ce tutoriel ne décrit pas [copies de langue](../../help/sites-administering/tc-prep.md). Il est conçu de sorte que la page racine puisse mettre en oeuvre la détection de la langue souhaitée pour l’utilisateur par le biais de l’en-tête du HTML et rediriger vers la page principale appropriée pour la langue. La convention consiste à utiliser le code de pays à deux lettres pour le nom de noeud de la page, par exemple &quot;en&quot; pour l’anglais et &quot;fr&quot; pour le français.
 
 ## Créer les premières pages {#create-first-pages}
 
@@ -31,7 +31,7 @@ Maintenant, il y a une [modèle de page](initial-app.md#createthepagetemplate), 
 
 1. L’interface utilisateur standard fournit actuellement des plans directeurs pour la création de sites. Comme ce tutoriel crée un site simple, l’IU classique est utile.
 
-   Pour passer à l’IU classique, sélectionnez la navigation globale et survolez le côté droit de l’icône Projets . Sélectionnez la *Basculer vers l’interface utilisateur classique* qui s’affiche :
+   Pour passer à l’IU classique, sélectionnez la navigation globale et survolez le côté droit de l’icône Projets . Sélectionnez la variable *Basculer vers l’interface utilisateur classique* qui s’affiche :
 
    ![classic-ui](assets/classic-ui.png)
 
@@ -43,7 +43,7 @@ Maintenant, il y a une [modèle de page](initial-app.md#createthepagetemplate), 
 
    Vous pouvez également accéder directement à l’IU classique des sites web en accédant à [/siteadmin.](http://localhost:4502/siteadmin)
 
-1. Dans le volet de l’explorateur, sélectionnez **[!UICONTROL Sites web]** puis, dans la barre d’outils, sélectionnez **[!UICONTROL Nouveau]** > **[!UICONTROL Nouvelle page]**.
+1. Dans le volet d’exploration, sélectionnez **[!UICONTROL Sites web]** puis, dans la barre d’outils, sélectionnez **[!UICONTROL Nouveau]** > **[!UICONTROL Nouvelle page]**.
 
    Dans le **[!UICONTROL Créer une page]** , saisissez ce qui suit :
 
@@ -68,7 +68,7 @@ Maintenant, il y a une [modèle de page](initial-app.md#createthepagetemplate), 
    * Sélectionner **[!UICONTROL Modèle SCF Sandbox Play]**
    * Cliquez sur **[!UICONTROL Créer]**.
 
-1. C’est ainsi que le site web apparaît désormais dans la console Sites web . Notez que les pages enfants de l’élément sélectionné dans le volet de l’explorateur s’affichent dans le volet de droite où elles peuvent être gérées.
+1. C’est ainsi que le site web s’affiche désormais dans la console Sites web . Notez que les pages enfants de l’élément sélectionné dans le volet de l’explorateur s’affichent dans le volet de droite où elles peuvent être gérées.
 
    ![classic-ui-website-page](assets/classic-ui-website-page.png)
 

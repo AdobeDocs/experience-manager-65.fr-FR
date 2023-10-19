@@ -1,32 +1,32 @@
 ---
 title: Ajout de bibliothèques clientes
-description: Ajout d’un dossier ClientLibraryFolder
+description: Découvrez comment ajouter un dossier ClientLibraryFolder (clientlibs) utilisé pour contenir les feuilles de style JavaScript et en cascade utilisées pour le rendu des pages de votre site.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '701'
 ht-degree: 7%
 
 ---
 
 # Ajout de bibliothèques clientes {#add-clientlibs}
 
-## Ajout d’un dossier ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
+## Ajouter un dossier ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
-Création d’un dossier ClientLibraryFolder nommé `clientlibs` qui contiendra les éléments JS et CSS utilisés pour effectuer le rendu des pages de votre site.
+Création d’un dossier ClientLibraryFolder nommé `clientlibs` qui contient les feuilles de style JavaScript (JS) et CSS (Cascading Styles Sheets) utilisées pour générer les pages de votre site.
 
-Le `categories` La valeur de propriété donnée à cette bibliothèque cliente est l’identifiant utilisé pour inclure directement cette bibliothèque cliente à partir d’une page de contenu ou pour l’incorporer dans d’autres bibliothèques clientes.
+La variable `categories` La valeur de propriété donnée à cette bibliothèque cliente est l’identifiant utilisé pour inclure directement cette bibliothèque cliente à partir d’une page de contenu ou pour l’incorporer dans d’autres bibliothèques clientes.
 
 1. Utilisation **CRXDE Lite**, développer `/etc/designs`
 
 1. Clic droit `an-scf-sandbox` et sélectionnez `Create Node`
 
-   * Nom : `clientlibs`.
+   * Nom : `clientlibs`
    * Type : `cq:ClientLibraryFolder`
 
 1. Cliquez sur **OK**
@@ -41,7 +41,7 @@ Dans le **Propriétés** pour le nouvel onglet `clientlibs` , saisissez le **cat
 * Cliquez sur **Ajouter**
 * Cliquez sur **Enregistrer tout**
 
-Remarque : la préface de la valeur categories avec &quot;apps&quot;. est une convention permettant d’identifier &quot;l’application propriétaire&quot; comme se trouvant dans le dossier /apps, et non /libs. IMPORTANT : Ajouter un espace réservé `js.tx`t et **`css.txt`** fichiers . (Il ne s’agit pas officiellement d’un cq:ClientLibraryFolder sans ces éléments.)
+Remarque : la préface de la valeur categories est &quot;apps&quot;. est une convention permettant d’identifier &quot;l’application propriétaire&quot; comme se trouvant dans le dossier /apps, et non /libs. IMPORTANT : Ajouter un espace réservé `js.tx`t et **`css.txt`** fichiers . (Il ne s’agit pas officiellement d’un cq:ClientLibraryFolder sans ces éléments.)
 
 1. Faites un clic-droit **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Sélectionner **Créer un fichier...**
@@ -71,7 +71,7 @@ Créez ensuite un fichier sous clientlibs nommé style.css et définissez le con
 
 ### Incorporer les bibliothèques clientes SCF {#embed-scf-clientlibs}
 
-Dans le **Propriétés** pour la `clientlibs` , saisissez la propriété String à plusieurs valeurs. **embed**. Cela incorpore les [bibliothèques côté client (clientlibs) pour les composants SCF](/help/communities/client-customize.md#clientlibs-for-scf). Pour ce tutoriel, de nombreuses clientlibs nécessaires aux composants Communities sont ajoutées.
+Dans le **Propriétés** pour la variable `clientlibs` , saisissez la propriété String à plusieurs valeurs. **embed**. Cela incorpore les [bibliothèques côté client (clientlibs) pour les composants SCF](/help/communities/client-customize.md#clientlibs-for-scf). Pour ce tutoriel, de nombreuses clientlibs nécessaires aux composants Communities sont ajoutées.
 
 Il peut s’agir de l’approche souhaitée pour un site de production, car il y a des considérations pratiques par rapport à la taille/vitesse des clientlibs téléchargées pour chaque page.
 
@@ -81,7 +81,7 @@ Si vous utilisez une seule fonction sur une page, vous pouvez inclure la bibliot
 
 Dans ce cas, incluez-les toutes et ainsi, les clientlibs SCF les plus basiques qui sont les clientlibs de création sont préférées :
 
-* Nom : **`embed`**.
+* Nom : **`embed`**
 * Type : **`String`**
 * Cliquez sur **`Multi`**
 * Valeur : **`cq.social.scf`**
@@ -106,7 +106,7 @@ Voici comment `/etc/designs/an-scf-sandbox/clientlibs` doit maintenant apparaît
 
 ### Inclure les bibliothèques clientes dans le modèle PlayPage {#include-clientlibs-in-playpage-template}
 
-Sans inclure la variable `apps.an-scf-sandbox` Catégorie ClientLibraryFolder sur la page, les composants SCF ne sont pas fonctionnels ni mis en forme, car le code JavaScript et les styles nécessaires ne sont pas disponibles.
+Sans inclure la variable `apps.an-scf-sandbox` Catégorie ClientLibraryFolder sur la page, les composants SCF ne sont pas fonctionnels ni mis en forme, car les styles JavaScript et CSS nécessaires ne sont pas disponibles.
 
 Par exemple, sans inclure les clientlibs, le composant de commentaires SCF apparaît sans style :
 
@@ -116,17 +116,17 @@ Une fois les bibliothèques clientes apps.an-scf-sandbox incluses, le composant 
 
 ![clientlibs-comment-styled](assets/clientlibs-comment1.png)
 
-L’instruction d’inclusion appartient à la variable `head` de la section `html` script. La valeur par défaut **`foundation head.jsp`** inclut un script qui peut être superposé : **`headlibs.jsp`**.
+L’instruction d’inclusion appartient à la variable `head` de la `html` script. Par défaut **`foundation head.jsp`** inclut un script qui peut être superposé : **`headlibs.jsp`**.
 
 **Copiez headlibs.jsp et incluez clientlibs :**
 
 1. Utilisation **CRXDE Lite**, sélectionnez **`/libs/foundation/components/page/headlibs.jsp`**
 
 1. Cliquez avec le bouton droit et sélectionnez **Copier** (ou sélectionnez Copier dans la barre d’outils)
-1. Sélectionner **`/apps/an-scf-sandbox/components/playpage`**
+1. Sélectionnez **`/apps/an-scf-sandbox/components/playpage`**.
 1. Cliquez avec le bouton droit et sélectionnez **Coller** (ou sélectionnez Coller dans la barre d’outils)
-1. Double-cliquez **`headlibs.jsp`** pour l’ouvrir
-1. Ajoutez la ligne suivante à la fin du fichier.
+1. Double-cliquez **`headlibs.jsp`** pour l’ouvrir.
+1. Ajouter la ligne suivante à la fin du fichier
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
 
 1. Cliquez sur **Enregistrer tout**
@@ -149,17 +149,17 @@ Chargez votre site web dans le navigateur et vérifiez si l’arrière-plan n’
 
 ### Sauver votre travail jusqu&#39;à présent {#saving-your-work-so-far}
 
-À ce stade, il existe un environnement de test minimaliste. Il peut être intéressant de l’enregistrer sous la forme d’un package. Ainsi, lors de la lecture, si votre référentiel est corrompu et que vous souhaitez recommencer, vous pouvez désactiver votre serveur, renommer ou supprimer le dossier crx-quickstart/, activer votre serveur, télécharger et installer ce package enregistré, sans avoir à répéter ces étapes les plus basiques.
+À ce stade, il existe un environnement de test minimaliste. Il peut être utile d’enregistrer en tant que package afin que, lors de la lecture, si votre référentiel est corrompu et que vous souhaitez recommencer, vous puissiez désactiver votre serveur. Renommez ou supprimez ensuite le dossier crx-quickstart/, activez votre serveur, téléchargez et installez ce package enregistré, sans avoir à répéter ces étapes les plus élémentaires.
 
 Ce module existe sur la variable [Création d’un exemple de page](/help/communities/create-sample-page.md) tutoriel pour ceux qui ne peuvent pas attendre d’entrer et de commencer à jouer !...
 
 Pour créer un package :
 
-* Dans le CRXDE Lite, cliquez sur [Icône Package](https://localhost:4502/crx/packmgr/)
+* Dans CRXDE Lite, cliquez sur le [Icône Package](https://localhost:4502/crx/packmgr/)
 * Cliquez sur **Créer un package**
 
    * Nom du module : an-scf-sandbox-minimal-pkg
-   * Version : 0,1
+   * Version : 0.1
    * Groupe : `leave as default`
    * Cliquez sur **OK**
 

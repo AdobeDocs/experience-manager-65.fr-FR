@@ -1,14 +1,14 @@
 ---
 title: Notions fondamentales sur les groupes de communautés
-description: Création dynamique de sites communautaires
+description: Découvrez comment les utilisateurs autorisés peuvent utiliser la fonction Groupes de communautés pour créer dynamiquement une sous-communauté dans un site de communauté.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: f45ae7be-a500-463a-ab3e-81f281651a9d
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '427'
 ht-degree: 1%
 
 ---
@@ -85,9 +85,9 @@ La fonctionnalité de groupes de communautés permet à une sous-communauté d�
 
 Une structure de site communautaire qui comprend [Fonction Groupes](functions.md#groups-function) prend en charge la création de `community groups` dans les environnements de publication et de création. Le groupe de communauté créé comprend une `community groups member list` qui répertorie les membres du groupe.
 
-Un ou plusieurs [modèles de groupe de communautés](tools-groups.md), qui fournissent la conception des pages de groupe de communautés, peut être configuré pour la fonction Groupes lorsque la fonction est ajoutée à une [modèle de site communautaire](sites.md) ou imbriqué dans un modèle de groupe de communautés.
+Un ou plusieurs [modèles de groupe de communautés](tools-groups.md), qui fournissent la conception des pages de groupes de communautés, peut être configuré pour la fonction Groupes . C’est le cas lorsque la fonction est ajoutée à une [modèle de site communautaire](sites.md) ou imbriqué dans un modèle de groupe de communautés.
 
-L’inclusion de plusieurs modèles de groupe de communautés entraîne la présentation d’une conception à l’utilisateur autorisé au moment de la création d’un groupe de communautés pour le site de la communauté, comme illustré dans la section sur [groupes communautaires](creating-groups.md) pour les auteurs.
+L’inclusion de plusieurs modèles de groupes de communautés donne le choix. En d’autres termes, le choix de la conception présentée à l’utilisateur autorisé au moment de la création d’un groupe de communautés pour le site de la communauté. Voir la section sur [groupes communautaires](creating-groups.md) pour les auteurs.
 
 ### Groupes imbriqués {#nested-groups}
 

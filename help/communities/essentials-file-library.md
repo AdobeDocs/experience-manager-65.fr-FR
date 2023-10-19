@@ -1,25 +1,21 @@
 ---
 title: Notions fondamentales sur la bibliothèque de fichiers
-seo-title: File Library Essentials
-description: Utilisation de la fonctionnalité Bibliothèque de fichiers
-seo-description: Working with the file library feature
-uuid: 0630f13e-97b4-4f93-9dce-07f559287c29
+description: Découvrez les principes de base de l’utilisation de la fonctionnalité Bibliothèque de fichiers dans les communautés Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 9019b967-fff8-4dda-bc5a-fd4a3e14a4ef
 exl-id: 6d653331-c1ce-4ccb-bb45-656b6413ac3e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 3%
+source-wordcount: '260'
+ht-degree: 2%
 
 ---
 
 # Notions fondamentales sur la bibliothèque de fichiers {#file-library-essentials}
 
-Cette page fournit les informations essentielles pour utiliser la fonctionnalité de bibliothèque de fichiers.
+Cette page fournit des informations fondamentales sur l’utilisation de la fonctionnalité Bibliothèque de fichiers.
 
 ## Principes élémentaires pour le côté client {#essentials-for-client-side}
 
@@ -56,9 +52,9 @@ Cette page fournit les informations essentielles pour utiliser la fonctionnalit�
 
 ## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
 
-* [API de bibliothèque de fichiers](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
+* [API de bibliothèque de fichiers](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
 
-* [Points de fin de la bibliothèque de fichiers](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
+* [Points de fin de la bibliothèque de fichiers](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
 
 * [Personnalisations côté serveur](server-customize.md)
 
@@ -71,13 +67,13 @@ Une structure de site de communauté qui inclut [Fonction Bibliothèque de fichi
 Le contenu généré par l’utilisateur doit être modéré à l’aide de l’une des méthodes standard de modération.
 Voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
 
-À partir de AEM 6.1 Communities, utilisez un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès programmatique au contenu généré par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
+À partir de AEM 6.1 Communities, utilisez un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès par programmation au contenu créé par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
 
 **L’emplacement et le format du contenu créé par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement.**.
 
 Voir :
 
-* [Présentation du fournisseur de ressources de stockage](srp.md) - introduction et présentation de l’utilisation du référentiel.
+* [Présentation du fournisseur de ressources de stockage](srp.md) - introduction et utilisation du référentiel - présentation.
 * [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md) - Méthodes et exemples de l’utilitaire SRP.
 * [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
 * [Refactorisation de SocialUtils](socialutils.md) - mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.

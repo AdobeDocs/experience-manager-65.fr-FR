@@ -1,22 +1,22 @@
 ---
 title: Déploiement de Communities
-description: Comment déployer AEM Communities
+description: Découvrez comment déployer des communautés et des fonctionnalités de communauté dans Adobe Experience Manager.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1712'
 ht-degree: 4%
 
 ---
 
 # Déploiement de Communities {#deploying-communities}
 
-## Conditions préalables requises {#prerequisites}
+## Prérequis {#prerequisites}
 
 * [Plateforme AEM 6.5](/help/sites-deploying/deploy.md)
 
@@ -84,7 +84,7 @@ AEM 6.5 Communities GA inclut le package Communities. Pour en savoir plus sur le
 
 À compter de la version 6.4 d’AEM, les mises à jour apportées aux communautés sont fournies dans le cadre d’AEM Cumulative Fix Packs et Service Packs.
 
-Pour connaître les dernières mises à jour d’AEM 6.5, voir [Packs de correctifs cumulatifs et Service Packs Adobe Experience Manager 6.4](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html).
+Pour connaître les dernières mises à jour d’AEM 6.5, voir [Packs de correctifs cumulatifs et Service Packs Adobe Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr).
 
 ### Historique des versions {#version-history}
 
@@ -108,7 +108,7 @@ Les étapes nécessaires sont les suivantes :
 1. Utilisez la console web pour installer et démarrer le lot :
 
    * Par exemple, https://localhost:4502/system/console/bundles
-   * Sélectionner **`Install/Update`**
+   * Sélectionnez **`Install/Update`**.
    * Parcourir.. pour sélectionner le lot extrait de l’archive ZIP téléchargée
    * Vérifiez que *Pilote JDBC d’Oracle Corporation pour MySQLcom.mysql.jdbc* est active et démarrez-la si ce n’est pas le cas (ou vérifiez les journaux).
 
@@ -116,7 +116,7 @@ Les étapes nécessaires sont les suivantes :
    * Par exemple, https://localhost:4502/system/console/configMgr
    * Localiser `Day Commons JDBC Connections Pool` configuration
    * Sélectionner pour ouvrir
-   * Sélectionner `Save`
+   * Sélectionnez `Save`.
 
 1. Répétez les étapes 3 et 4 sur toutes les instances d’auteur et de publication.
 
@@ -132,7 +132,7 @@ Vous trouverez plus d’informations sur l’installation des lots sur la page [
 
 Pour que la collection SRP (MSRP ou DSRP) prenne en charge la recherche multilingue avancée (MLS), de nouveaux modules externes Solr sont requis en plus d’un schéma personnalisé et d’une configuration Solr. Tous les éléments requis sont compressés dans un fichier ZIP téléchargeable.
 
-Le téléchargement MLS avancé (également appelé &quot;phasetwo&quot;) est disponible à partir du référentiel Adobe :
+Téléchargement MLS avancé (également appelé `phasetwo`) est disponible à partir du référentiel Adobe :
 
 * AEM-SOLR-MLS-phasetwo
 
@@ -298,22 +298,20 @@ Pour copier le matériel clé de l’auteur vers toutes les autres instances, il
 
 #### Réplication du référentiel {#repository-replication}
 
-Il est possible de conserver le matériel clé stocké dans le référentiel, comme c’était le cas pour AEM version 6.2 et antérieure. Indiquez la propriété système suivante au premier démarrage de chaque instance AEM (qui crée le référentiel initial) :
-
-* `-Dcom.adobe.granite.crypto.file.disable=true`
+Il est possible de conserver le matériel clé stocké dans le référentiel, comme c’était le cas pour AEM version 6.2 et antérieure. Spécification de la propriété système `-Dcom.adobe.granite.crypto.file.disable=true` au premier démarrage de chaque instance AEM (qui crée le référentiel initial).
 
 >[!NOTE]
 >
->Il est important de vérifier que la variable [agent de réplication sur l’auteur](#replication-agents-on-author) est correctement configuré.
+>Vérifiez que la variable [agent de réplication sur l’auteur](#replication-agents-on-author) est correctement configuré.
 
 Avec le matériel clé stocké dans le référentiel, la manière de répliquer la clé de chiffrement de l’auteur vers d’autres instances est la suivante :
 
 Utilisation [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Accédez à [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)
-* Sélectionner `/etc/key`
+* Sélectionnez `/etc/key`.
 * Ouvrir `Replication` tab
-* Sélectionner `Replicate`
+* Sélectionnez `Replicate`.
 
 * [Actualisation du lot Crypto Granite](#refresh-the-granite-crypto-bundle)
 
@@ -361,7 +359,7 @@ En particulier, veillez à utiliser le nom de serveur correct, et non `localhost
 Si vous utilisez un Dispatcher, voir :
 
 * AEM [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) documentation
-* [Installation de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en)
+* [Installation du Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en)
 * [Configuration de Dispatcher pour Communities](/help/communities/dispatcher.md)
 * [Problèmes connus](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

@@ -1,16 +1,14 @@
 ---
 title: Notions fondamentales sur la qualité de vie
-description: Fonctionnalité de forum Questions et réponses
-uuid: c718a8e3-b3bd-4db9-8c0f-6dd973d40583
+description: Découvrez les principes de base de l’utilisation de la fonction Forum aux questions et réponses (QnA) dans les communautés Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: ceace3aa-78a5-485e-b519-630479e087d8
 exl-id: a7b295c1-cc9d-4881-8016-804b21fc1098
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '252'
 ht-degree: 2%
 
 ---
@@ -54,7 +52,7 @@ Cette page fournit les informations essentielles pour utiliser la fonction de fo
 
 ## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
 
-* [API Q&amp;R](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
+* [API QnA](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
 * [Points de fin Q&amp;R](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
@@ -75,7 +73,7 @@ Voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
 
 Voir :
 
-* [Présentation du fournisseur de ressources de stockage](srp.md) - introduction et présentation de l’utilisation du référentiel.
+* [Présentation du fournisseur de ressources de stockage](srp.md) - introduction et utilisation du référentiel - présentation.
 * [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md) - Méthodes et exemples de l’utilitaire SRP.
 * [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
 * [Refactorisation de SocialUtils](socialutils.md) - mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.

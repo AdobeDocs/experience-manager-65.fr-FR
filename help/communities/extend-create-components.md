@@ -1,25 +1,21 @@
 ---
 title: Création des composants
-seo-title: Create the Components
-description: Création du composant Commentaires
-seo-description: Create the Comments component
-uuid: ea6e00d4-1db7-40ef-ae49-9ec55df58adf
+description: Découvrez comment étendre les composants à l’aide du système de commentaires composé des composants Commentaires et Commentaires .
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 exl-id: 2e02db9f-294d-4d4a-92da-3ab1d38416ab
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '634'
 ht-degree: 11%
 
 ---
 
 # Création des composants  {#create-the-components}
 
-L’exemple d’extension de composants utilise le système de commentaires, qui est en fait composé de deux composants.
+L’exemple d’extension de composants utilise le système de commentaires, composé de deux composants.
 
 * Commentaires : système de commentaires englobant qui est le composant placé sur une page.
 * Commentaire : composant qui capture une instance d’un commentaire publié.
@@ -36,21 +32,21 @@ Les deux composants doivent être mis en place, en particulier si vous personnal
 
 Ces instructions spécifient une **Groupe** valeur autre que `.hidden` le composant peut donc être rendu disponible à partir de l’explorateur de composants (sidekick).
 
-La suppression du fichier JSP créé automatiquement est due au fait que le fichier HBS par défaut sera utilisé à la place.
+La suppression du fichier JSP créé automatiquement est due à l’utilisation du fichier HBS par défaut.
 
 1. Accédez à **CRXDE|Lite** ([http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp))
 
 1. Créez un emplacement pour les applications personnalisées :
 
-   * Sélectionnez la `/apps` node
+   * Sélectionnez la variable `/apps` node
 
       * **Créer un dossier** named **[!UICONTROL custom]**
-   * Sélectionnez la `/apps/custom` node
+
+   * Sélectionnez la variable `/apps/custom` node
 
       * **Créer un dossier** named **[!UICONTROL components]**
 
-
-1. Sélectionnez la `/apps/custom/components` node
+1. Sélectionnez la variable `/apps/custom/components` node
 
    * **[!UICONTROL Créer > Composant..]**
 
@@ -59,13 +55,13 @@ La suppression du fichier JSP créé automatiquement est due au fait que le fich
       * **Description**: *Style de commentaire alternatif*
       * **Super Type**: *social/commons/components/hbs/comments*
       * **Groupe**: *Personnalisé*
-   * Sélectionnez **[!UICONTROL Suivant]**
-   * Sélectionnez **[!UICONTROL Suivant]**
-   * Sélectionnez **[!UICONTROL Suivant]**
-   * **[!UICONTROL Cliquez sur OK]**
 
+   * Sélectionnez **[!UICONTROL Suivant]**
+   * Sélectionnez **[!UICONTROL Suivant]**
+   * Sélectionnez **[!UICONTROL Suivant]**
+   * Sélectionnez **[!UICONTROL OK]**
 
-1. Développez le noeud que vous venez de créer : `/apps/custom/components/comments`
+1. Développez le noeud qui a été créé : `/apps/custom/components/comments`
 1. Sélectionnez **[!UICONTROL Enregistrer tout]**
 1. Faites un clic-droit `comments.jsp`
 1. Sélectionnez **[!UICONTROL Supprimer]**
@@ -77,10 +73,10 @@ La suppression du fichier JSP créé automatiquement est due au fait que le fich
 
 Ces instructions sont définies **Groupe** to `.hidden` car seul le composant parent doit être inclus dans une page.
 
-La suppression du fichier JSP créé automatiquement est due au fait que le fichier HBS par défaut sera utilisé à la place.
+La suppression du fichier JSP créé automatiquement est due à l’utilisation du fichier HBS par défaut.
 
 1. Accédez au `/apps/custom/components/comments` node
-1. Cliquez avec le bouton droit sur le noeud
+1. Cliquez avec le bouton droit sur le noeud.
 
    * Sélectionner **[!UICONTROL Créer]** > **[!UICONTROL Composant..]**
 
@@ -88,14 +84,14 @@ La suppression du fichier JSP créé automatiquement est due au fait que le fich
       * **Titre**: *Commentaire Alt*
       * **Description**: *Autre style de commentaire*
       * **Super Type**: *social/commons/components/hbs/comments/comment*
-      * **Groupe**: `*.hidden*`
-   * Sélectionnez **[!UICONTROL Suivant]**
-   * Sélectionnez **[!UICONTROL Suivant]**
-   * Sélectionnez **[!UICONTROL Suivant]**
-   * **[!UICONTROL Cliquez sur OK]**
+      * **Groupe** : `*.hidden*`
 
+   * Sélectionnez **[!UICONTROL Suivant]**
+   * Sélectionnez **[!UICONTROL Suivant]**
+   * Sélectionnez **[!UICONTROL Suivant]**
+   * Sélectionnez **[!UICONTROL OK]**
 
-1. Développez le noeud que vous venez de créer : `/apps/custom/components/comments/comment`
+1. Développez le noeud qui a été créé : `/apps/custom/components/comments/comment`
 1. Sélectionnez **[!UICONTROL Enregistrer tout]**
 1. Faites un clic-droit `comment.jsp`
 1. Sélectionnez **[!UICONTROL Supprimer]**
@@ -118,13 +114,13 @@ Utilisation [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
 
    * Modifiez la valeur de la variable `data-scf-component` attribute (~line 20) :
 
-      * Origine `social/commons/components/hbs/comments`
-      * To `/apps/custom/components/comments`
+      * De `social/commons/components/hbs/comments`
+      * À `/apps/custom/components/comments`
+
    * Modifiez pour inclure le composant de commentaire personnalisé (~line 75) :
 
       * Remplacer `{{include this resourceType='social/commons/components/hbs/comments/comment'}}`
-      * Par `{{include this resourceType='/apps/custom/components/comments/comment'}}`
-
+      * Avec `{{include this resourceType='/apps/custom/components/comments/comment'}}`
 
 * Copier `comment.hbs`
 
@@ -135,7 +131,7 @@ Utilisation [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
 
    * Modifier la valeur de l’attribut data-scf-component (~ ligne 19)
 
-      * Origine `social/commons/components/hbs/comments/comment`
+      * De `social/commons/components/hbs/comments/comment`
       * À `/apps/custom/components/comments/comment`
 
 * Sélectionner `/apps/custom` node
@@ -143,7 +139,7 @@ Utilisation [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
 
 ## Création d’un dossier de bibliothèques clientes {#create-a-client-library-folder}
 
-Pour éviter d’avoir à inclure explicitement cette bibliothèque cliente, la valeur de catégories de la bibliothèque cliente du système de commentaires par défaut peut être utilisée ( `cq.social.author.hbs.comments`), mais cette bibliothèque cliente sera également incluse pour toutes les instances du composant par défaut.
+Pour éviter d’avoir à inclure cette bibliothèque cliente, la valeur de catégories de la bibliothèque cliente du système de commentaires par défaut peut être utilisée ( `cq.social.author.hbs.comments`). Cependant, cette bibliothèque cliente doit également être incluse pour toutes les instances du composant par défaut.
 
 Utilisation [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
@@ -158,7 +154,7 @@ Utilisation [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
       * **Nom** `dependencies` **Type** `String` **Valeur** `cq.social.scf` `Multi`
 
 * Sélectionnez **[!UICONTROL Enregistrer tout]**
-* Avec `/apps/custom/components/comments/clientlib`comme noeud sélectionné, créez 3 fichiers :
+* Avec `/apps/custom/components/comments/clientlib`Si le noeud est sélectionné, créez trois fichiers :
 
    * **Nom** : `css.txt`
    * **Nom** : `js.txt`
@@ -171,7 +167,7 @@ Utilisation [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
 
 ## Enregistrement du modèle et de la vue SCF {#register-the-scf-model-view}
 
-Lors de l’extension (remplacement) d’un composant SCF, resourceType est différent (le recouvrement utilise le mécanisme de recherche relatif qui effectue des recherches dans `/apps` before `/libs` afin que resourceType reste identique). C’est pourquoi il est nécessaire d’écrire du code JavaScript (dans la bibliothèque cliente) pour enregistrer le modèle SCF JS et l’afficher pour la ressource personnalisée resourceType.
+Lors de l’extension (remplacement) d’un composant SCF, resourceType est différent (le recouvrement utilise le mécanisme de recherche relatif qui effectue la recherche dans `/apps` before `/libs` afin que resourceType reste identique). C’est pourquoi il est nécessaire d’écrire du code JavaScript (dans la bibliothèque cliente) pour enregistrer le modèle SCF JS et l’afficher pour la ressource personnalisée resourceType.
 
 Saisissez le texte suivant comme contenu de `customcommentsystem.js`:
 

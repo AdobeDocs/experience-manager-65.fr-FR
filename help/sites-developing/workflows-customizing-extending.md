@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
 source-wordcount: '3582'
-ht-degree: 72%
+ht-degree: 71%
 
 ---
 
@@ -37,7 +37,7 @@ Un composant d’étape de workflow définit l’aspect et le comportement de l�
 * Boîte de dialogue de modification pour la configuration des propriétés du composant.
 * Service ou script exécuté au moment de l’exécution.
 
-Comme avec [tous les composants](/help/sites-developing/components.md), les composants de l’étape de workflow héritent du composant indiqué pour la propriété `sling:resourceSuperType`. Le diagramme suivant présente la hiérarchie des nœuds `cq:component` qui constituent la base de tous les composants des étapes de workflow. Le diagramme inclut également les composants **Étape du processus**, **Étape du participant** et **Étape du participant dynamique**, car il s’agit des points de départ les plus courants (et les plus simples) pour développer des composants d’étape personnalisée.
+Comme avec [tous les composants](/help/sites-developing/components.md), les composants de l’étape de processus héritent du composant spécifié pour la variable `sling:resourceSuperType` . Le diagramme suivant présente la hiérarchie des nœuds `cq:component` qui constituent la base de tous les composants des étapes de workflow. Le diagramme inclut également les composants **Étape du processus**, **Étape du participant** et **Étape du participant dynamique**, car il s’agit des points de départ les plus courants (et les plus simples) pour développer des composants d’étape personnalisée.
 
 ![aem_wf_componentinherit](assets/aem_wf_componentinherit.png)
 

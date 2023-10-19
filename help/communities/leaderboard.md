@@ -1,19 +1,15 @@
 ---
 title: Notions fondamentales relatives au tableau de bord
-seo-title: Leaderboard Essentials
-description: Présentation des fonctionnalités du tableau de classement
-seo-description: Leaderboard feature overview
-uuid: 815a6928-b147-496d-9751-13159ad1304d
+description: Découvrez comment configurer la notation et les badges des communautés afin de pouvoir utiliser le composant Leaderboard dans les communautés Adobe Experience Manager.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 7449f99e-77d7-4c0f-96d5-b67d5e1f124a
 exl-id: fd1b1749-13f9-4079-ae39-348676105852
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 8%
+source-wordcount: '112'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 8%
 
 Cette page fournit les informations essentielles pour utiliser la fonctionnalité de classement.
 
-Avant d’inclure le composant de classement sur une page, il est nécessaire de configurer [Notation et badges des communautés](implementing-scoring.md).
+Avant d’inclure le composant de classement sur une page, vous devez configurer [Notation et badges des communautés](implementing-scoring.md).
 
 Voir [Notions fondamentales sur la notation et les badges](configure-scoring.md).
 
@@ -51,7 +47,7 @@ Voir [Notions fondamentales sur la notation et les badges](configure-scoring.md)
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Voir <a href="enabling-leaderboard.md">Fonctionnalité de classement</a></td>
+   <td>Voir <a href="enabling-leaderboard.md">Fonctionnalité du tableau de classement</a></td>
   </tr>
  </tbody>
 </table>

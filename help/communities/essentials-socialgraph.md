@@ -1,14 +1,14 @@
 ---
 title: Notions fondamentales sur les graphiques sociaux
-description: Découvrez le composant suivant et le composant Suivre.
+description: Découvrez les principes de base de Social Graph à l’aide des composants Suivants et Suivants d’un site de communauté.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '249'
 ht-degree: 4%
 
 ---
@@ -57,12 +57,12 @@ La variable `following` component liste les membres qui suivent le membre actuel
     <ul>
      <li>Nom : <strong><code>outgoing</code></strong></li>
      <li>Type : booléen</li>
-     <li>Valeur:<br />
+     <li>Valeur : <br />
       <ul>
        <li><i>True </i>- La variable <code>following</code> component répertorie les membres qui sont membres du membre connecté <code>follows</code></li>
        <li><i>False </i>- La variable <code>following</code> Le composant répertorie les membres qui <code>follow </code>le membre connecté</li>
       </ul> </li>
-    </ul> <p>La valeur par défaut est <i>true</i> si la propriété est manquante. Il n’est pas possible de définir cette propriété à l’aide de la boîte de dialogue de modification en mode Auteur. La propriété doit être ajoutée à une instance de la fonction <code>following</code> noeud utilisant <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
+    </ul> <p>La valeur par défaut est <i>true</i> si la propriété est manquante. Il n’est pas possible de définir cette propriété à l’aide de la boîte de dialogue de modification en mode Auteur. La propriété doit être ajoutée à une instance de la fonction <code>following</code> noeud en utilisant <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
  </tbody>
 </table>

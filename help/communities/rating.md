@@ -1,25 +1,21 @@
 ---
 title: Utilisation des évaluations
-seo-title: Using Ratings
-description: Ajout d’un composant Évaluation à une page
-seo-description: Adding a Rating component to a page
-uuid: a986970b-1221-4648-9a69-410f4480e0ae
+description: Découvrez comment ajouter un composant Évaluation à une page qui permet aux membres de la communauté connectés d’exprimer leurs opinions en évaluant le contenu.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 exl-id: 7534ad5d-b408-4b09-bd3d-da7ab009d55b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 32%
+source-wordcount: '219'
+ht-degree: 2%
 
 ---
 
 # Utilisation des évaluations {#using-ratings}
 
-Le `Rating` est utilisé de manière autonome ou conjointement avec d’autres fonctionnalités de Communities. Ce composant permet aux membres de la communauté connectés d’exprimer leurs opinions en évaluant le contenu.
+La variable `Rating` est utilisé de manière autonome ou avec d’autres fonctionnalités de Communities. Ce composant permet aux membres de la communauté connectés d’exprimer leurs opinions en évaluant le contenu.
 
 ## Ajout d’une évaluation à une page {#adding-a-rating-to-a-page}
 
@@ -29,30 +25,30 @@ Pour obtenir les informations nécessaires, consultez la section [Principes de b
 
 Lorsque la variable [bibliothèques côté client requises](rating-basics.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `Rating` s’affiche.
 
-![Évaluation](assets/rating.png)
+![rating](assets/rating.png)
 
-## Configuration du composant Évaluation {#configuring-rating}
+## Configuration de l’évaluation {#configuring-rating}
 
-Sélectionnez le `Rating` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le `Rating` afin que vous puissiez accéder au `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure-new](assets/configure-new.png)
 
-Dans l’onglet **[!UICONTROL Textes et libellés]**, indiquez l’identifiant interne du composant Évaluation.
+Sous , **[!UICONTROL Textes et libellés]** , vous indiquez l’identifiant interne de l’évaluation.
 
 ![tallyname](assets/tallyname.png)
 
 **[!UICONTROL Nom Tally]**
-(*Obligatoire*) Un nom simple pour la variable `Rating` qui identifie de manière unique cette instance. Il doit s’agir d’un nom de nœud valide pour le référentiel.
+(*Obligatoire*) Un nom simple pour la variable `Rating` qui identifie de manière unique cette instance. Doit être un nom de noeud valide pour le référentiel.
 
-## Expérience des visiteurs {#site-visitor-experience}
+## Expérience du visiteur du site {#site-visitor-experience}
 
 ### Membres {#members}
 
-Une seule évaluation est autorisée par membre.  Le membre peut modifier son évaluation à tout moment.
+Une seule évaluation par membre est autorisée. Le membre peut modifier sa note à tout moment.
 
 ### Anonyme {#anonymous}
 
-La publication anonyme d’une évaluation n’est pas possible. Les visiteurs du site doivent s’inscrire (devenir membres) et se connecter pour participer.
+La publication anonyme d’une évaluation n’est pas prise en charge. Les visiteurs du site doivent s’inscrire (devenir membres) et se connecter pour participer.
 
 ## Informations supplémentaires {#additional-information}
 

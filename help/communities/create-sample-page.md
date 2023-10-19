@@ -1,14 +1,14 @@
 ---
 title: Création d’un exemple de page
-description: Créer un exemple de site de communauté
+description: Découvrez comment créer un modèle de site de communauté qui ne contient que la fonction Page qui peut vous aider à créer un site de communauté simple.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: developing
 exl-id: d66fc1ff-a669-4a2c-b45a-093060facd97
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '426'
 ht-degree: 2%
 
 ---
@@ -35,12 +35,12 @@ Dans la navigation globale sur une instance d’auteur, sélectionnez **[!UICONT
 
 ![create-site-template](assets/create-site-template1.png)
 
-* Sélectionner `Create button`
+* Sélectionnez `Create button`.
 * INFORMATIONS DE BASE
 
    * `Name`: modèle de page unique
    * `Description`: modèle constitué d’une fonction Page unique.
-   * Sélectionner `Enabled`
+   * Sélectionnez `Enabled`.
 
 ![site-template-editor](assets/site-template-editor.png)
 
@@ -81,17 +81,17 @@ Après avoir créé le modèle de site, sélectionnez dans la navigation globale
 
      ![create-community-site-template](assets/create-community-site-template.png)
 
-* Sélectionner `Next`
+* Sélectionnez `Next`.
 * Étape `2 - Design`
 
    * Sélectionner n’importe quelle conception
 
-* Sélectionner `Next`
-* Sélectionner `Next`
+* Sélectionnez `Next`.
+* Sélectionnez `Next`.
 
   (Accepter tous les paramètres par défaut)
 
-* Sélectionner `Create`
+* Sélectionnez `Create`.
 
   ![create-community-site](assets/create-community-site.png)
 

@@ -1,19 +1,15 @@
 ---
 title: Notions fondamentales sur le vote
-seo-title: Voting Essentials
-description: Composant Vote - Aperçu
-seo-description: Voting component overview
-uuid: ed0a771d-1c14-4fbf-ab6a-a028e5ee2e2a
+description: Découvrez comment utiliser le composant Vote qui permet aux membres d’évaluer un élément de contenu particulier en sélectionnant des flèches haut ou bas pour indiquer leur opinion.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
 exl-id: e8ff751f-404a-498d-8e90-62a13ab593ff
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 2%
+source-wordcount: '301'
+ht-degree: 0%
 
 ---
 
@@ -21,9 +17,9 @@ ht-degree: 2%
 
 Le composant Vote, une [tally](tally.md) subclass est un outil utile qui permet aux membres d’évaluer un élément de contenu particulier en sélectionnant simplement les flèches haut ou bas pour indiquer leur opinion.
 
-Le placement de plusieurs instances d’un composant Vote sur la même page est autorisé ; chaque instance doit être configurée avec une `tally name` .
+Le placement de plusieurs instances d’un composant Vote sur la même page est autorisé ; chaque instance doit être configurée avec une variable `tally name` .
 
-La publication anonyme d&#39;un vote n&#39;est pas prise en charge. Les visiteurs du site ne doivent s’inscrire et se connecter qu’une seule fois pour participer au vote. Le visiteur (membre) connecté peut changer son vote à tout moment.
+La publication anonyme d&#39;un vote n&#39;est pas prise en charge. Les visiteurs du site ne doivent s’inscrire et se connecter qu’une seule fois pour participer au vote. Le visiteur connecté (membre) peut changer son vote à tout moment.
 
 ## Principes élémentaires pour le côté client {#essentials-for-client-side}
 
@@ -60,9 +56,9 @@ La publication anonyme d&#39;un vote n&#39;est pas prise en charge. Les visiteur
 
 ## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
 
-* [API Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [API Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Points de terminaison Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Points de terminaison Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personnalisations côté serveur](server-customize.md)
 
@@ -71,13 +67,13 @@ La publication anonyme d&#39;un vote n&#39;est pas prise en charge. Les visiteur
 Le contenu généré par l’utilisateur doit être modéré à l’aide de l’une des méthodes standard de modération.
 Voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
 
-À partir de AEM 6.1 Communities, utilisez un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès programmatique au contenu généré par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
+À partir de AEM 6.1 Communities, utilisez un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès par programmation au contenu créé par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
 
 **L’emplacement et le format du contenu créé par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement.**.
 
 Voir :
 
-* [Présentation du fournisseur de ressources de stockage](srp.md) - introduction et présentation de l’utilisation du référentiel.
+* [Présentation du fournisseur de ressources de stockage](srp.md) - introduction et utilisation du référentiel - présentation.
 * [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md) - Méthodes et exemples de l’utilitaire SRP.
 * [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
 * [Refactorisation de SocialUtils](socialutils.md) - mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.

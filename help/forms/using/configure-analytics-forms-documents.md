@@ -10,10 +10,10 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
 source-wordcount: '1532'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -172,7 +172,7 @@ Un framework Adobe Analytics est un ensemble de mappages entre les variables Ado
 
    >[!NOTE]
    >
-   >Il peut s’écouler jusqu’à 10 secondes de plus que le nombre de secondes indiquées pour que l’opération de récupération du rapport expire.
+   >Cela peut prendre jusqu’à 10 secondes de plus pour que l’opération de récupération du rapport expire, puis le nombre de secondes spécifié.
 
 1. Répétez l’étape 1-3 sur l’instance à publier pour configurer les analyses.
 

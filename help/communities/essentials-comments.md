@@ -1,21 +1,21 @@
 ---
 title: Notions fondamentales sur les commentaires
-description: Présentation du composant Commentaires
+description: Découvrez comment utiliser le système de commentaires (composant Commentaires) et gérer le contenu généré par l’utilisateur dans les publications des membres de la communauté.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 8b4034f7-2f97-45ad-96d4-51cfbeae5991
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 3%
+source-wordcount: '351'
+ht-degree: 4%
 
 ---
 
 # Notions fondamentales sur les commentaires {#comments-essentials}
 
-Cette page fournit l’essentiel de l’utilisation du système de commentaires (composant de commentaires) et des options de gestion du contenu généré par l’utilisateur (contenu généré par les utilisateurs) lorsque les membres publient des commentaires ou des réponses.
+Cette page décrit les principes de base de l’utilisation du système de commentaires (composant de commentaires) et des options de gestion du contenu généré par l’utilisateur (contenu généré par les utilisateurs) lorsque les membres publient des commentaires ou des réponses.
 
 Le composant Commentaires établit un système de commentaires, de sorte que chaque publication soit représentée par un composant de commentaire (au singulier). Il s’agit du système de commentaires inclus sur la page. Le système de commentaires crée les commentaires individuels lorsqu’ils sont appelés.
 
@@ -56,7 +56,7 @@ Le composant Commentaires établit un système de commentaires, de sorte que cha
 
 La pagination et l’utilisation d’URL pour la mise en cache et la liaison nécessitent que l’URL soit unique par système de commentaire. Par conséquent, une seule instance d’un système de commentaires est autorisée par page.
 
-D’autres fonctionnalités incluent déjà le système de commentaires. Ces éléments sont les suivants :
+D’autres fonctionnalités incluent déjà le système de commentaires. Ces principes sont les suivants :
 
 * [Blog](blog-developer-basics.md)
 * [Calendrier](calendar-basics-for-developers.md)
@@ -92,7 +92,7 @@ Voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
 
 Voir :
 
-* [Présentation du fournisseur de ressources de stockage](srp.md) - Présentation et présentation de l’utilisation du référentiel.
+* [Présentation du fournisseur de ressources de stockage](srp.md) - Présentation et utilisation du référentiel - Aperçu.
 * [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md) - Méthodes et exemples de l’utilitaire SRP.
 * [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
 * [Refactorisation de SocialUtils](socialutils.md) - Mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.
