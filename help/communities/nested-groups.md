@@ -1,15 +1,15 @@
 ---
 title: Création de groupes imbriqués
-description: Création de groupes imbriqués
+description: Découvrez comment créer des groupes imbriqués pour un site de communautés Adobe Experience Manager.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '600'
 ht-degree: 4%
 
 ---
@@ -37,7 +37,7 @@ La fonction de groupes s’affiche sous la forme d’un dossier dans lequel des 
 
 ## Créer un groupe d’arts principal {#create-main-arts-group}
 
-Ce groupe peut être créé car la structure du site pour l’engagement inclut une fonction de groupe. Configuration de la fonction dans le `Reference Template` autorise par défaut la sélection de tout modèle de groupe activé. Ainsi, le modèle choisi pour ce nouveau groupe est le `Reference Group`.
+Ce groupe peut être créé car la structure du site pour l’engagement inclut la fonction d’un groupe. Configuration de la fonction dans le `Reference Template` autorise par défaut la sélection de tout modèle de groupe activé. Ainsi, le modèle choisi pour ce nouveau groupe est le `Reference Group`.
 
 Ces consoles sont similaires à la console Sites des communautés .
 

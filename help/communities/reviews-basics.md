@@ -1,29 +1,25 @@
 ---
 title: Notions fondamentales sur les révisions
-seo-title: Reviews Essentials
-description: Composants Révisions et Résumé des révisions
-seo-description: Reviews and Review Summary components
-uuid: 540c106e-ee3b-4261-82b2-a909d254dbf7
+description: Découvrez comment les révisions dans AEM Communities est un composant composite basé sur un système de commentaires contenant un ou plusieurs composants d’évaluation (dièse).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 62669a9d-2107-4644-a4bf-143d0ac148b3
 exl-id: 91e0e245-a2f1-4bd7-b38f-7641fd94a547
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 6%
+source-wordcount: '332'
+ht-degree: 1%
 
 ---
 
 # Notions fondamentales sur les révisions {#reviews-essentials}
 
-Cette fonctionnalité se compose de deux composants qui fonctionnent ensemble : révisions et résumé de révision.
+Cette fonctionnalité se compose de deux composants qui fonctionnent ensemble : les révisions et la synthèse des révisions.
 
 Les révisions sont un composant composite basé sur une [système de commentaires](essentials-comments.md) qui contient un ou plusieurs [note](rating-basics.md) (tally) des composants.
 
-La publication anonyme d’une révision n’est pas possible. Les visiteurs du site doivent s’inscrire et se connecter pour ajouter une révision. Le visiteur connecté (membre) peut mettre à jour sa révision à tout moment.
+La publication anonyme d’une révision n’est pas prise en charge. Les visiteurs du site doivent s’inscrire et se connecter pour ajouter une révision. Le visiteur connecté (membre) peut mettre à jour sa révision à tout moment.
 
 ## Principes élémentaires pour le côté client {#essentials-for-client-side}
 
@@ -72,9 +68,9 @@ La publication anonyme d’une révision n’est pas possible. Les visiteurs du 
 
 ## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
 
-* [API de révision](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
+* [API de révision](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
 
-* [Points de fin de révision](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/review/client/endpoints/package-summary.html)
+* [Points de fin de révision](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/endpoints/package-summary.html)
 
 * [Personnalisations côté serveur](server-customize.md)
 
@@ -83,13 +79,13 @@ La publication anonyme d’une révision n’est pas possible. Les visiteurs du 
 Le contenu généré par l’utilisateur doit être modéré à l’aide de l’une des méthodes standard de modération.
 Voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
 
-À partir de AEM 6.1 Communities, utilisez un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès programmatique au contenu généré par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
+À partir de AEM 6.1 Communities, utilisez un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès par programmation au contenu créé par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
 
 **L’emplacement et le format du contenu créé par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement.**.
 
 Voir :
 
-* [Présentation du fournisseur de ressources de stockage](srp.md) - Présentation et présentation de l’utilisation du référentiel.
+* [Présentation du fournisseur de ressources de stockage](srp.md) - Présentation et utilisation du référentiel - Aperçu.
 * [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md) - Méthodes et exemples de l’utilitaire SRP.
 * [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
 * [Refactorisation de SocialUtils](socialutils.md) - Mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.

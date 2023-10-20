@@ -1,14 +1,14 @@
 ---
 title: Principes de recherche
-description: Recherche dans les communautés
+description: Découvrez la fonctionnalité de recherche essentielle d’AEM Communities. Les communautés fournissent également l’API de recherche pour le contenu généré par l’utilisateur.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1189'
 ht-degree: 5%
 
 ---
@@ -45,7 +45,7 @@ La variable [Magasin commun UGC](working-with-srp.md) est fourni par l’un des 
 
 ### Recherches ASRP {#asrp-searches}
 
-Pour [ASRP](asrp.md), le contenu généré par l’utilisateur est stocké dans Adobe Cloud. Bien que le contenu généré par l’utilisateur ne soit pas visible dans CRX, [modération](moderate-ugc.md) est disponible dans les environnements de création et de publication. L’utilisation de la variable [API de recherche UGC](#ugc-search-api) fonctionne pour ASRP de la même manière que pour les autres SRP.
+Pour [ASRP](asrp.md), le contenu généré par l’utilisateur est stocké dans Adobe Cloud. Bien que le contenu généré par l’utilisateur ne soit pas visible dans CRX, [modération](moderate-ugc.md) est disponible à partir des environnements de création et de publication. L’utilisation de la variable [API de recherche UGC](#ugc-search-api) fonctionne pour ASRP de la même manière que pour les autres SRP.
 
 Il n’existe actuellement aucun outil pour gérer les recherches ASRP.
 
@@ -53,7 +53,7 @@ Lors de la création de propriétés personnalisées pouvant faire l’objet d�
 
 ### Recherches MSRP {#msrp-searches}
 
-Pour [MSRP](msrp.md), le contenu généré par l’utilisateur est stocké dans MongoDB configuré pour utiliser Solr pour la recherche. Le contenu généré par l’utilisateur n’est pas visible dans CRX, mais [modération](moderate-ugc.md) est disponible dans les environnements de création et de publication.
+Pour [MSRP](msrp.md), le contenu généré par l’utilisateur est stocké dans MongoDB configuré pour utiliser Solr pour la recherche. Le contenu généré par l’utilisateur n’est pas visible dans CRX, mais [modération](moderate-ugc.md) est disponible à partir des environnements de création et de publication.
 
 Concernant MSRP et Solr :
 

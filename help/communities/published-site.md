@@ -1,19 +1,15 @@
 ---
 title: Expérience du site publié
-seo-title: Experience the Published Site
-description: Accès à un site publié
-seo-description: Browse to a published site
-uuid: 44594e9e-27ad-475d-953d-3611b04f0df8
+description: Découvrez comment accéder à l’URL qui s’affiche lors de la création d’un site, mais sur le serveur de publication.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1205'
 ht-degree: 1%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 1%
 
 ## Accéder au nouveau site lors de la publication {#browse-to-new-site-on-publish}
 
-Maintenant que le site de communautés nouvellement créé a été publié, accédez à l’URL affichée lors de la création du site, mais sur le serveur de publication, par exemple :
+Maintenant que le site de communautés nouvellement créé est publié, accédez à l’URL affichée lors de la création du site, mais sur le serveur de publication, par exemple :
 
 * URL de création = https://localhost:4502/content/sites/engage/en.html
 * URL de publication = https://localhost:4503/content/sites/engage/en.html
@@ -48,7 +44,7 @@ Un visiteur anonyme du site voit les éléments suivants dans l’interface util
 * Bannière de marque
 * Liens de menu pour les composants inclus dans le modèle de site de référence.
 
-Si vous sélectionnez différents liens, ils sont en lecture seule.
+Si vous sélectionnez différents liens, vous constatez qu’ils sont en lecture seule.
 
 ### Empêcher l’accès anonyme sur JCR {#prevent-anonymous-access-on-jcr}
 
@@ -86,17 +82,17 @@ Dans le coin supérieur droit, sélectionnez `Log in`et signez avec le nom d’u
 Une fois connecté en tant que membre de la communauté enregistré, remarquez les options de menu suivantes pour cliquer et explorer votre site de communauté :
 
 * **Profil** vous permet de visualiser et d&#39;éditer votre profil.
-* [Messages](/help/communities/configure-messaging.md) vous dirige vers la section de messagerie directe, où vous pouvez :
+* [Messages](/help/communities/configure-messaging.md) vous dirige vers la section de messagerie directe, où vous pouvez effectuer les opérations suivantes :
 
    1. Afficher les messages directs que vous avez reçus (boîte de réception), envoyés (éléments envoyés) et supprimés (corbeille).
-   1. Composer de nouveaux messages directs à envoyer aux individus et aux groupes.
+   1. Composez de nouveaux messages directs afin de pouvoir les envoyer aux individus et aux groupes.
 
 * [Notifications](/help/communities/notifications.md) vous dirige vers la section notifications, où vous pouvez afficher vos événements ciblés et modifier les paramètres des notifications.
 * [Administration](/help/communities/published-site.md#moderationlink) vous dirige vers la page de modération AEM Communities, si vous disposez de droits de modération.
 
 ![adminscreen](assets/adminscreen.png)
 
-Notez que la page Calendrier est la page d’accueil, car le modèle de site de référence sélectionné incluait d’abord la fonction Calendrier , suivie de la fonction Flux d’activités, Forum , etc. Cette structure est visible à partir du [Modèle de site](/help/communities/sites.md#edit-site-template) ou lors de la modification des propriétés du site dans l’environnement de création :
+Notez que la page Calendrier est la page d’accueil, car le modèle de site de référence sélectionné incluait d’abord la fonction Calendrier, suivie de la fonction Flux d’activités, de la fonction Forum, etc. Cette structure est visible à partir du [Modèle de site](/help/communities/sites.md#edit-site-template) ou lors de la modification des propriétés du site dans l’environnement de création :
 
 ![sitetemplate](assets/sitetemplate.png)
 
@@ -119,7 +115,7 @@ Les visiteurs du site peuvent afficher les publications et les trier de différe
 
 ### Lien Groupes {#groups-link}
 
-Dans la mesure où Aaron est administrateur de groupe, la sélection du lien Groupes permettra à Aaron de créer un nouveau groupe de communautés en sélectionnant un modèle de groupe, une image, que le groupe soit ouvert ou secret, et en invitant des membres.
+Dans la mesure où Aaron est administrateur de groupe, la sélection du lien Groupes permet à Aaron de créer un groupe en sélectionnant un modèle de groupe, une image, que le groupe soit ouvert ou secret, et en invitant des membres.
 
 Il s’agit d’un exemple dans lequel un groupe est créé dans l’environnement de publication.
 
@@ -133,7 +129,7 @@ Création d’un groupe de référence :
 1. **Onglet Paramètres**
 
    * Nom de groupe : `Sports`
-   * Description : `A parent group for various sporting groups`
+   * Description : `A parent group for various sporting groups`.
    * Nom de l’URL de groupe : `sports`
    * Sélectionner `Open Group` (autoriser tout membre de la communauté à y participer en y rejoignant)
 
@@ -145,7 +141,7 @@ Création d’un groupe de référence :
 
    ![creategroup](assets/creategroup.png)
 
-Une fois le nouveau groupe créé, **sélectionnez le nouveau groupe Sports** afin de créer deux groupes (imbriqués) dans celui-ci. Comme une structure de site ne peut pas commencer par la fonction de groupes, après l’ouverture du groupe Sports, il est nécessaire de sélectionner le lien Groupes :
+Une fois le nouveau groupe créé, **sélectionnez le nouveau groupe Sports** pour créer deux groupes (imbriqués) dans celui-ci. Comme une structure de site ne peut pas commencer par la fonction de groupes, après l’ouverture du groupe Sports, il est nécessaire de sélectionner le lien Groupes :
 
 ![grouplink1](assets/grouplink1.png)
 
@@ -166,7 +162,7 @@ Par exemple, ajoutez deux `new groups`.
 **Avis**:
 
 * Une actualisation de la page peut s’avérer nécessaire avant l’affichage des deux groupes.
-* Ce modèle effectue les opérations suivantes : *not* inclure la fonction groupes, de sorte que l’imbrication de groupes ne sera plus possible.
+* Ce modèle effectue les opérations suivantes : *not* inclure la fonction groupes, de sorte qu’il n’est pas possible d’imbriquer davantage de groupes.
 * Sur l’auteur, la variable [Console Groupes](/help/communities/groups.md) fournit un troisième choix : une `Public Group` (abonnement facultatif).
 
 Une fois les deux groupes créés, sélectionnez le groupe Baseball, un groupe ouvert, et notez ses liens :
@@ -186,7 +182,7 @@ Continuez à publier, déconnectez-vous en tant qu’Aaron McDonald et affichez 
 * Sélectionner `Sports` link
 * Sélectionnez le Sports `Groups` link
 
-Seul le groupe de baseball sera visible.
+Seul le groupe de baseball est visible.
 
 Connectez-vous en tant que Weston McCall (weston.mccall@dodgit.com/password) et accédez au même emplacement. Remarquez que Weston peut `Join` l’ouverture `Baseball` groupe et soit `enter or Leave` le privé `Gymnastics` groupe.
 
@@ -196,13 +192,13 @@ Connectez-vous en tant que Weston McCall (weston.mccall@dodgit.com/password) et 
 
 Affichez la page Web de base incluse dans le site en sélectionnant le lien Page Web . Les outils de création d’AEM standard peuvent être utilisés pour ajouter du contenu à cette page dans l’environnement de création.
 
-Par exemple, accédez à **author** ouvrez l’instance `engage` dans le dossier [Console Sites Communities](/help/communities/sites-console.md), sélectionnez la variable **Ouvrir le site** pour accéder au mode d’édition de l’auteur. Sélectionnez ensuite le mode Aperçu pour sélectionner le `Web Page` puis sélectionnez le mode d’édition pour ajouter les composants Titre et Texte . Enfin, republiez uniquement la page ou l’ensemble du site.
+Par exemple, accédez à **author** ouvrez l’instance `engage` dans le dossier [Console Sites Communities](/help/communities/sites-console.md), sélectionnez la variable **Ouvrir le site** pour accéder au mode d’édition de l’auteur. Sélectionnez ensuite le mode Aperçu afin de pouvoir sélectionner la `Web Page` puis sélectionnez le mode d’édition pour ajouter les composants Titre et Texte . Enfin, republiez uniquement la page ou l’intégralité du site.
 
 ![webpagelink](assets/webpagelink.png)
 
 ### Lien de modération {#moderationlink}
 
-Lorsque le membre de la communauté dispose de privilèges de modération, le lien Modération est visible et sa sélection affiche le contenu de la communauté publié et lui permet d’être [modéré](/help/communities/moderate-ugc.md) d’une manière semblable à la fonction [console de modération](/help/communities/moderation.md) dans l’environnement de création.
+Lorsque le membre de la communauté dispose de privilèges de modération, le lien Modération est visible. La sélection du lien affiche le contenu de la communauté qui est publié et permet à ce que : [modéré](/help/communities/moderate-ugc.md) d’une manière semblable à la fonction [console de modération](/help/communities/moderation.md) dans l’environnement de création.
 
 Utilisez le bouton Précédent du navigateur pour revenir au site publié. La plupart des consoles ne sont pas accessibles à partir de la navigation globale dans l’environnement de publication.
 
@@ -210,10 +206,10 @@ Utilisez le bouton Précédent du navigateur pour revenir au site publié. La pl
 
 ## Auto-inscription {#self-registration}
 
-Une fois déconnecté, il est possible de créer un nouvel enregistrement d’utilisateur.
+Une fois déconnecté, il est possible de créer un enregistrement d’utilisateur.
 
-* Sélectionner `Log In`
-* Sélectionner `Sign up for a new account`
+* Sélectionnez `Log In`.
+* Sélectionnez `Sign up for a new account`.
 
 ![enregistrement](assets/registration.png)
 

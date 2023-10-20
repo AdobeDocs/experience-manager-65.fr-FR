@@ -1,18 +1,14 @@
 ---
 title: Notions fondamentales sur les balises
-seo-title: Tag Essentials
-description: Présentation des balises
-seo-description: Tag overview
-uuid: a5d52319-f821-4608-b0ab-abc8a1374343
+description: Découvrez quand les composants Communities sont configurés avec le balisage activé et quand les membres de la communauté peuvent baliser le contenu qu’ils publient dans l’environnement de publication.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 exl-id: 6e8af8cf-1239-46f9-b2fe-4aa80abc86ea
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '262'
 ht-degree: 3%
 
 ---
@@ -25,7 +21,7 @@ L’infrastructure sous-jacente des balises appliquées dans l’environnement d
 
 * Voir [Administration des balises](../../help/sites-administering/tags.md) et [Balisage du contenu généré par l’utilisateur](tag-ugc.md) (contenu généré par l’utilisateur) pour plus d’informations sur la création et la gestion des balises.
 
-* Voir [Balisage pour les développeurs](../../help/sites-developing/tags.md) pour plus d’informations sur le [framework de balisage](../../help/sites-developing/framework.md) ainsi que l’inclusion et l’extension de balises dans [applications personnalisées](../../help/sites-developing/building.md).
+* Voir [Balisage pour les développeurs](../../help/sites-developing/tags.md) pour plus d’informations sur le [framework de balisage](../../help/sites-developing/framework.md) et inclusion et extension de balises dans [applications personnalisées](../../help/sites-developing/building.md).
 
 * Voir [Utilisation de Social Tag Cloud](tagcloud.md) pour plus d’informations pour les auteurs sur la manière d’ajouter une `social tag cloud` à une page pour mettre en surbrillance les balises appliquées au contenu généré par l’utilisateur dans l’environnement de publication.
 
@@ -74,9 +70,9 @@ Le balisage du contenu généré par l’utilisateur peut être activé lors de 
 
 ## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
 
-* [API Social Tag Cloud](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
+* [API Social Tag Cloud](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
-* [Gestionnaire de balises sociales](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
+* [Gestionnaire de balises sociales](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
 * [Personnalisations côté serveur](server-customize.md)
 

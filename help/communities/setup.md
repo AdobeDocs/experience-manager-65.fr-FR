@@ -1,18 +1,14 @@
 ---
 title: Configuration initiale
-seo-title: Initial Setup
-description: Configuration des communautés
-seo-description: Setting up Communities
-uuid: c53d280c-c5ae-47cf-8038-f0dea68e15ff
+description: Découvrez comment configurer initialement Adobe Experience Manager Communities.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
-source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '684'
 ht-degree: 3%
 
 ---
@@ -21,9 +17,9 @@ ht-degree: 3%
 
 ## Démarrage des instances de création et de publication {#start-author-and-publish-instances}
 
-À des fins de développement et de démonstration, il sera nécessaire d’exécuter une instance de création et une instance de publication.
+À des fins de développement et de démonstration, il est nécessaire d’exécuter une instance de création et une instance de publication.
 
-Pour ce faire, suivez l’AEM de base [Prise en main](../../help/sites-deploying/deploy.md#getting-started) , ce qui se traduira par :
+Pour ce faire, suivez le Adobe Experience Manager de base (AEM) [Prise en main](../../help/sites-deploying/deploy.md#getting-started) , ce qui se traduit par ce qui suit :
 
 * Environnement de création sur [localhost:4502](http://localhost:4502/)
 * Environnement de publication sur [localhost:4503](http://localhost:4503/)
@@ -32,7 +28,7 @@ Pour AEM Communities,
 
 * L’environnement de création est destiné à :
 
-   * Développement de sites, de modèles et de composants.
+   * Développement de sites, modèles et composants.
    * Tâches administratives et de configuration.
 
 * L’environnement de publication est destiné à :
@@ -72,7 +68,7 @@ Lors de la création d’un site de communauté dans l’environnement de créat
 
 La convention est destinée aux membres et aux groupes de membres créés dans l’environnement de publication sur *not* être recréé dans l’environnement de création. Pour plus d’informations, voir [Gestion des utilisateurs et des groupes d’utilisateurs](users.md).
 
-Pour des instructions simples d’activation du service tunnel sur un **author** instance, voir [Service Tunnel](deploy-communities.md#tunnel-service-on-author).
+Pour des instructions simples d’activation du service tunnel sur un **Auteur** instance, voir [Service Tunnel](deploy-communities.md#tunnel-service-on-author).
 
 ## Rôle d’administrateur de la communauté {#community-administrator-role}
 
@@ -82,9 +78,9 @@ Les membres du groupe Administrateurs de la communauté peuvent créer des sites
 
 Création d’un utilisateur sur *author*, auquel est affecté le rôle d’administrateur de la communauté :
 
-* Sur l’instance de création
+* Sur l’instance d’auteur
 
-   * Par exemple : [http://localhost:4502/](http://localhost:4503/)
+   * Par exemple : [http://localhost:4502/](http://localhost:4503/)
 
 * Connexion avec droits d’administrateur
 
@@ -108,8 +104,8 @@ Faites défiler jusqu’à `Add User to Groups`:
 
 * Saisissez &quot;C&quot; pour effectuer la recherche.
 
-   * Sélectionner `Community Administrators`
-   * Sélectionner `Community Enablement Managers`
+   * Sélectionnez `Community Administrators`.
+   * Sélectionnez `Community Enablement Managers`.
 
 * Sélectionnez **[!UICONTROL Enregistrer]**.
 
@@ -117,7 +113,7 @@ Faites défiler jusqu’à `Add User to Groups`:
 
 ## Activation de la connexion aux réseaux sociaux {#enable-social-login}
 
-Avant de pouvoir utiliser des versions de démonstration de la connexion sociale avec Facebook et Twitter, il est nécessaire de procéder comme suit :
+Avant de pouvoir utiliser des versions de démonstration de la connexion sociale avec Facebook et Twitter, il est nécessaire de
 
 1. Installez un pack de correctifs ou [dernier Feature Pack](deploy-communities.md#latestfeaturepack) (modifications de l’API Facebook en mars 2017).
 1. [Activation du fournisseur OAuth](social-login.md#adobe-granite-oauth-authentication-handler) dans l’environnement de publication.
@@ -128,7 +124,7 @@ Voir [Connexion aux réseaux sociaux avec Facebook et Twitter](social-login.md).
 
 ## Créer des balises de tutoriel {#create-tutorial-tags}
 
-Créez des balises à utiliser pour les tutoriels d’interaction, à l’aide de l’espace de noms de balise de `Tutorial`.
+Créez des balises afin de pouvoir les utiliser pour les tutoriels d’interaction, à l’aide de l’espace de noms de balise de `Tutorial`.
 
 Utilisez la variable [Console Balisage](../../help/sites-administering/tags.md#tagging-console) pour créer les balises suivantes :
 

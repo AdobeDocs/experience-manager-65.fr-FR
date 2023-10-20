@@ -1,14 +1,14 @@
 ---
 title: Communauté de dépannage
-description: Dépannage de la communauté, y compris les problèmes connus
+description: Découvrez la communauté de dépannage, y compris les problèmes connus et les préoccupations.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
-source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '354'
 ht-degree: 1%
 
 ---
@@ -23,9 +23,9 @@ Cette section contient des problèmes courants et des problèmes connus lors de 
 
 Lors de l’utilisation de Dispatcher 4.1.5 avec une version plus récente de Jetty, une récupération peut entraîner l’impossibilité de recevoir une réponse du serveur distant après avoir attendu que la demande expire.
 
-L’utilisation de Dispatcher 4.1.6 ou version ultérieure résoudra ce problème.
+L’utilisation de Dispatcher 4.1.6 ou version ultérieure résout ce problème.
 
-### Impossible d’accéder à la publication du forum après la mise à niveau à partir de CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
+### Impossible d’accéder à la publication du forum après la mise à niveau depuis CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
 
 Si un forum a été créé sur CQ 5.4 et que des sujets ont été publiés, puis que le site a été mis à niveau vers AEM 5.6.1 ou version ultérieure, toute tentative d’affichage des publications existantes peut entraîner une erreur sur la page :
 
@@ -45,7 +45,7 @@ Par conséquent, tout code utilisant l’API RelativeTimeFormat() doit changer :
 * De: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * À: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-L’échec est différent sur l’auteur et la publication. Sur l’auteur, il échoue silencieusement et n’affiche simplement pas les sujets du forum. Une fois la publication effectuée, l’erreur est renvoyée sur la page.
+L’échec est différent sur les instances de création et de publication. Sur l’auteur, il échoue silencieusement et n’affiche simplement pas les rubriques du forum. Lors de la publication, l’erreur est générée sur la page.
 
 Voir [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API pour plus d’informations.
 
@@ -53,7 +53,7 @@ Voir [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/ex
 
 ### Avertissement dans les journaux : Handlebars obsolètes {#warning-in-logs-handlebars-deprecated}
 
-Au démarrage (pas le premier, mais tous les suivants), l’avertissement suivant apparaît dans les journaux :
+Au démarrage (et non au premier démarrage), l’avertissement suivant apparaît dans les journaux :
 
 * `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` a été remplacé par `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
@@ -76,7 +76,7 @@ Ces avertissements peuvent être ignorés en toute sécurité.
 
 ### Erreur dans les journaux : NoClassDefFoundError pour IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
 
-La mise à niveau d’AEM version 5.6.1 GA vers la dernière version de cq-socialcommunities-pkg-1.4.x ou vers AEM 6.0 entraîne des erreurs dans le fichier journal au démarrage pour une condition qui se résoudra elle-même, comme l’indique l’erreur qui n’est pas visible au redémarrage.
+La mise à niveau d’AEM 5.6.1 vers la dernière version de cq-socialcommunities-pkg-1.4.x ou vers AEM 6.0 entraîne des erreurs dans le fichier journal. Cela se produit au démarrage pour une condition qui se résout elle-même, comme en témoigne l’erreur qui ne s’affiche pas au redémarrage.
 
 ```xml
 14.11.2013 20:52:39.453 ERROR [Apache Sling JCR Resource Event Queue Processor for path '/'] com.adobe.cq.social.storage.index.impl.IndexService Error occurred while processing event java.util.ConcurrentModificationException

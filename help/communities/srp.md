@@ -1,14 +1,14 @@
 ---
 title: Présentation du fournisseur de ressources de stockage
-description: Stockage commun pour les communautés
+description: Découvrez comment le contenu de la communauté, appelé contenu généré par l’utilisateur, est stocké dans un magasin simple et courant fourni par un fournisseur de ressources de stockage (SRP).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 5f313274-1a2a-4e83-9289-60a4729b99b4
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Présentation {#introduction}
 
-Depuis Adobe Experience Manager (AEM) Communities 6.1, le contenu de la communauté, communément appelé contenu généré par l’utilisateur (UGC), est stocké dans un seul magasin commun fourni par une [fournisseur de ressources de stockage](working-with-srp.md) (SRP).
+Depuis Adobe Experience Manager (AEM) Communities 6.1, le contenu de la communauté, communément appelé contenu généré par l’utilisateur, est stocké dans un seul magasin commun fourni par un [fournisseur de ressources de stockage](working-with-srp.md) (SRP).
 
 Il existe plusieurs options de SRP, qui accèdent toutes au contenu généré par l’utilisateur par le biais d’une nouvelle interface AEM Communities, la [API SocialResourceProvider](srp-and-ugc.md) (API SRP), qui inclut toutes les opérations CRUD (création, lecture, mise à jour et suppression).
 
@@ -27,7 +27,7 @@ Tous les composants SCF sont implémentés à l’aide de l’API SRP, ce qui pe
 
 >[!NOTE]
 >
->**Composants personnalisés**: Pour les clients sous licence d’AEM Communities, l’API SRP est disponible pour les développeurs de composants personnalisés pour accéder au contenu créé par l’utilisateur sans tenir compte de la topologie sous-jacente. Voir [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md).
+>**Composants personnalisés**: pour les clients sous licence d’AEM Communities, l’API SRP est disponible pour les développeurs de composants personnalisés pour accéder au contenu généré par l’utilisateur, sans tenir compte de la topologie sous-jacente. Voir [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md).
 
 Voir également :
 
@@ -53,7 +53,7 @@ Après avoir développé le contenu du site dans l’environnement de création 
 
 Pour le contenu généré par l’utilisateur, le contenu est saisi par les visiteurs enregistrés du site (membres de la communauté) dans l’environnement de publication public. Cela se produit de manière aléatoire.
 
-À des fins de gestion et de création de rapports, il est utile d’avoir accès au contenu généré par l’utilisateur à partir de l’environnement de création privé. Grâce à la SRP, l’accès au contenu généré par l’utilisateur à partir de l’auteur est plus cohérent et performant, car la réplication inverse de la publication vers l’auteur n’est pas nécessaire.
+À des fins de gestion et de création de rapports, il est utile d’avoir accès au contenu généré par l’utilisateur à partir de l’environnement de création privé. Grâce à la SRP, l’accès au contenu généré par l’utilisateur à partir de l’auteur est plus cohérent et performant, car la réplication inverse de l’élément Publier vers l’auteur n’est pas nécessaire.
 
 ## À propos de SRP {#about-srp}
 
@@ -91,9 +91,9 @@ JSRP est le fournisseur par défaut pour accéder à tout le contenu créé par 
 
 Voir [JSRP - Fournisseur de ressources de stockage JCR](jsrp.md).
 
-S’il existe une JSRP, alors que le contenu créé par l’utilisateur est stocké dans JCR et accessible par le biais de l’API CRXDE Lite et JCR, il est recommandé de ne jamais utiliser l’API JCR pour le faire, sinon les modifications futures peuvent affecter le code personnalisé.
+S’il existe une JSRP alors que le contenu créé par l’utilisateur est stocké dans JCR et qu’il est accessible dans l’API CRXDE Lite et JCR, Adobe recommande de ne jamais utiliser l’API JCR pour le faire. Si vous le faites, les modifications futures peuvent affecter le code personnalisé.
 
-En outre, le référentiel pour les environnements de création et de publication n’est pas partagé. Bien qu’un cluster d’instances de publication génère un référentiel de publication partagé, le contenu créé par l’utilisateur entré lors de la publication ne sera pas visible sur l’auteur, ce qui empêche la gestion du contenu créé par l’auteur. Le contenu généré par l’utilisateur n’est conservé que dans le référentiel AEM (JCR) de l’instance sur laquelle il a été saisi.
+En outre, le référentiel pour les environnements de création et de publication n’est pas partagé. Bien qu’un cluster d’instances de publication génère un référentiel de publication partagé, le contenu créé par l’utilisateur entré sur la publication n’est pas visible sur l’auteur, ce qui empêche la gestion du contenu créé par l’auteur. Le contenu généré par l’utilisateur n’est conservé que dans le référentiel AEM (JCR) de l’instance sur laquelle il a été saisi.
 
 JSRP utilise les index Oak pour les requêtes.
 
@@ -104,7 +104,7 @@ Les noeuds fantômes, qui imitent le chemin d’accès au contenu généré par 
 1. [Contrôle d’accès (ACL)](#for-access-control-acls)
 1. [Ressources non existantes (NER)](#for-non-existing-resources-ners)
 
-Quelle que soit l’implémentation de la SRP, le contenu généré par l’utilisateur réel ne sera *pas visible au même emplacement que le noeud fantôme.
+Quelle que soit la mise en oeuvre de la SRP, le contenu généré par l’utilisateur réel est *not* visible au même emplacement que le noeud fantôme.
 
 ### Pour le contrôle d’accès (ACL) {#for-access-control-acls}
 
