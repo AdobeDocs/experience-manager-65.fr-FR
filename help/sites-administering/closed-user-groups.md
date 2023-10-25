@@ -1,6 +1,6 @@
 ---
 title: Groupes d’utilisateurs fermés dans AEM
-description: Découvrez les groupes d’utilisateurs fermés dans AEM.
+description: Découvrez les groupes d’utilisateurs fermés et les avantages qu’ils apportent à l’évolutivité et à la sécurité dans AEM.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '6845'
+source-wordcount: '6854'
 ht-degree: 59%
 
 ---
@@ -788,7 +788,7 @@ Les principales différences du point de vue des autorisations sont résumées d
 
 **Contenu du contrôle d’accès dédié pour les groupes d’utilisateurs fermés**
 
-Dans l’ancienne mise en œuvre, le modèle d’autorisation par défaut était utilisé pour manipuler les politiques de contrôle d’accès sur l’instance de publication, remplaçant tous les ACE existants par la configuration requise par le CUG. Cela a été déclenché en écrivant des propriétés JCR résiduelles régulières qui ont été interprétées lors de la publication.
+Dans l’ancienne mise en œuvre, le modèle d’autorisation par défaut était utilisé pour manipuler les politiques de liste de contrôle d’accès sur l’instance de publication, remplaçant tous les ACE existants par la configuration requise par le CUG. Cela a été déclenché en écrivant des propriétés JCR résiduelles régulières qui ont été interprétées lors de la publication.
 
 Avec la nouvelle mise en oeuvre, la configuration du contrôle d’accès du modèle d’autorisation par défaut n’est pas affectée par les CUG créés, modifiés ou supprimés. À la place, un nouveau type de politique nommé `PrincipalSetPolicy` est appliqué en tant que contenu de contrôle d’accès supplémentaire sur le nœud cible. Cette politique supplémentaire est placée en tant qu’enfant du nœud cible et doit être une sœur du nœud de politique par défaut (s’il existe).
 

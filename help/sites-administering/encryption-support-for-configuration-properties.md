@@ -1,7 +1,7 @@
 ---
 title: Prise en charge du chiffrement des propriétés de configuration
 seo-title: Encryption Support for Configuration Properties
-description: Prise en charge du chiffrement des propriétés de configuration
+description: Découvrez la prise en charge du chiffrement des propriétés de configuration fournies dans AEM.
 seo-description: null
 uuid: 26dc5e46-9332-4d9b-8874-895b90391e8c
 contentOwner: User
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: security
 discoiquuid: 4e08c297-aa4b-44cf-84c8-1e11582d9ebb
 exl-id: 3c3db1c8-5b22-45dd-aeaf-5cf830a9486b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '277'
-ht-degree: 100%
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+workflow-type: tm+mt
+source-wordcount: '283'
+ht-degree: 50%
 
 ---
 
@@ -27,9 +27,9 @@ La prise en charge du module de configuration OSGi a été ajoutée afin de déc
 
 >[!NOTE]
 >
->Les services exigeant une valeur chiffrée doivent utiliser la vérification IsProtected pour vérifier si la valeur est chiffrée avant de tenter de la déchiffrer, car elle a peut-être déjà été déchiffrée.
+>Les services qui s’attendent à une valeur chiffrée doivent utiliser la vérification IsProtected pour voir si la valeur est chiffrée avant de tenter de la déchiffrer, car elle a peut-être déjà été déchiffrée.
 
-## Activation de la prise en charge du chiffrement {#enabling-encryption-support}
+## Prise en charge du chiffrement {#enabling-encryption-support}
 
 Ces étapes indiquent comment chiffrer le mot de passe SMTP pour le service de messagerie. Vous pouvez effectuer ces étapes pour une propriété OSGI que vous souhaitez chiffrer.
 
@@ -42,17 +42,17 @@ Ces étapes indiquent comment chiffrer le mot de passe SMTP pour le service de m
 
    ![screen_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
 
-1. Dans le champ **Texte brut**, saisissez le texte des données sensibles que vous souhaitez protéger.
-1. Sélectionnez **Protéger**. Le texte protégé est affiché sous forme de texte chiffré.
+1. Dans le **Texte brut** , saisissez le texte des données sensibles à protéger.
+1. Sélectionnez **Protéger**. Le texte protégé s’affiche sous forme de texte chiffré.
 
    ![screen_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
 
-1. Copiez le texte protégé de l’étape 5 et collez-le dans la valeur du formulaire OSGI. Dans cet exemple, le **mot de passe SMTP** chiffré est ajouté au *Service de messagerie Day CQ*.
+1. Copiez le texte protégé de l’étape 5 et collez-le dans la valeur du formulaire OSGI. Dans cet exemple, le **Mot de passe SMTP** est ajouté à la variable *Service de messagerie Day CQ*.
 
    ![screen_shot_2016-12-18at105809pm](assets/screen_shot_2016-12-18at105809pm.png)
 
-1. Enregistrez les propriétés du Service de messagerie Day CQ. Le mot de passe SMTP est maintenant envoyé sous forme de valeur chiffrée.
+1. Enregistrez les propriétés du Service de messagerie Day CQ. Le mot de passe SMTP sera désormais envoyé sous forme de valeur chiffrée.
 
-## Prise en charge du déchiffrement {#decryption-support}
+## Prise en charge du décryptage {#decryption-support}
 
-AEM fournit désormais un module de configuration pour déchiffrer les propriétés de configuration. Ce module AEM déchiffre et récupère automatiquement les propriétés de texte en clair.
+AEM fournit désormais un module de configuration pour déchiffrer les propriétés de configuration. Ce module externe AEM décrypte et récupère automatiquement les propriétés de texte en clair.

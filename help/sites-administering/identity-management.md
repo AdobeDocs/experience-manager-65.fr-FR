@@ -1,7 +1,7 @@
 ---
 title: Identity Management
 seo-title: Identity Management
-description: Découvrez Identity Management dans AEM.
+description: Découvrez les rouages internes de la gestion des identités dans AEM.
 seo-description: Learn about identity management in AEM.
 uuid: d9b83cd7-c47a-41a5-baa4-bbf385d13bfd
 contentOwner: Guillaume Carlino
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: 1036127ae508ec76c868db5fb67709c104c51123
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 96%
+source-wordcount: '1254'
+ht-degree: 95%
 
 ---
 
@@ -139,7 +139,7 @@ Vous pouvez ajouter des champs à la définition d’un profil. Par exemple, pou
 
    ![Champ d’exemple de couleur préféré d’Alison Parker](assets/aparkerfavcolour.png)
 
-   Le champ est enregistré dans la section **profil** du compte utilisateur approprié :
+   Le champ est enregistré dans la section **profil** du compte d’utilisateur approprié :
 
    ![Données d’Alison Parker dans CRXDE](assets/aparkercrxdelite.png)
 
@@ -183,9 +183,9 @@ Les fournisseurs ou fournisseuses d’état gèrent une propriété de profil et
 
 Un workflow est nécessaire à la mise en œuvre des actions associées aux états. Par exemple, lors de l’abonnement aux notifications, le workflow gère l’action réelle d’abonnement effective. Lors du désabonnement des notifications, le workflow gère la suppression de l’utilisateur de la liste d’abonnement.
 
-## Profils et comptes utilisateur {#profiles-and-user-accounts}
+## Profils et comptes d’utilisateurs {#profiles-and-user-accounts}
 
-Les profils sont stockés dans le référentiel de contenu, au sein du [compte utilisateur](/help/sites-administering/user-group-ac-admin.md).
+Les profils sont stockés dans le référentiel de contenu, au sein du [compte d’utilisateur](/help/sites-administering/user-group-ac-admin.md).
 
 Le profil se trouve sous `/home/users/geometrixx` :
 
@@ -193,7 +193,7 @@ Le profil se trouve sous `/home/users/geometrixx` :
 
 Dans une configuration standard (création ou publication), chacun possède un accès en lecture à toutes les informations de profil de tous les utilisateurs. Chacun est un *groupe intégré contenant automatiquement tous les utilisateurs et groupes existants. La liste des membres ne peut pas être modifiée.*.
 
-Ces droits d’accès sont définis par l’ACL des caractères génériques suivantes :
+Ces droits d’accès sont définis par l’ACL de caractères génériques suivante :
 
 /home everyone allow jcr:read rep:glob = &#42;/profile&#42;
 

@@ -1,6 +1,6 @@
 ---
 title: Configurer LDAP avec AEM 6
-description: Découvrez comment configurer LDAP avec AEM.
+description: Découvrez comment utiliser et configurer les services LDAP avec AEM.
 uuid: 0007def4-86f0-401d-aa37-c8d49d5acea1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,10 +8,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 5faf6ee5-9242-48f4-87a8-ada887a3be1e
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
-workflow-type: ht
-source-wordcount: '1625'
-ht-degree: 100%
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+workflow-type: tm+mt
+source-wordcount: '1628'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 LDAP (**L** ightweight **D** irectory **A** ccess **P** rotocol) est un protocole utilisé pour accéder aux services d’annuaire centralisé. Cela permet de faciliter la gestion des comptes d’utilisateurs et d’utilisatrices, car plusieurs applications peuvent accéder à ces comptes. L’un de ces serveurs LDAP est Active Directory. LDAP est souvent utilisé pour appliquer l’authentification unique, qui permet à un utilisateur d’accéder à plusieurs applications après s’être connecté une seule fois.
 
-Les comptes utilisateur peuvent être synchronisés entre le serveur LDAP et le référentiel, les détails du compte LDAP étant enregistrés dans le référentiel. Cette fonctionnalité permet d’affecter les comptes aux groupes de référentiel pour attribuer les autorisations et les privilèges requis.
+Les comptes d’utilisateurs peuvent être synchronisés entre le serveur LDAP et le référentiel, les détails du compte LDAP étant enregistrés dans le référentiel. Cette fonctionnalité permet d’affecter les comptes aux groupes de référentiel pour attribuer les autorisations et les privilèges requis.
 
 Le référentiel utilise l’authentification LDAP pour authentifier ces utilisateurs, avec les informations d’identification transmises au serveur LDAP pour la validation, ce qui est requis avant d’autoriser l’accès au référentiel. Pour améliorer les performances, les informations d’identification validées peuvent être mises en cache par le référentiel, avec un délai d’expiration pour s’assurer que la revalidation se produit après une période appropriée.
 
@@ -222,7 +222,8 @@ Les options de configuration suivantes sont disponibles :
 | **Nom du gestionnaire de synchronisation** | Nom du gestionnaire de synchronisation. |
 
 >[!NOTE]
->Si vous envisagez plusieurs configurations LDAP avec votre instance d’AEM, vous devez créer des fournisseurs d’identité et des gestionnaires de synchronisation distincts pour chaque configuration.
+>
+Si vous envisagez plusieurs configurations LDAP avec votre instance d’AEM, vous devez créer des fournisseurs d’identité et des gestionnaires de synchronisation distincts pour chaque configuration.
 
 ## Configurer LDAP sur SSL {#configure-ldap-over-ssl}
 

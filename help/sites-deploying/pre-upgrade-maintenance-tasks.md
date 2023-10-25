@@ -1,7 +1,7 @@
 ---
 title: Tâches de maintenance avant la mise à niveau
 seo-title: Pre-Upgrade Maintenance Tasks
-description: Découvrez les tâches préalables à la mise à niveau dans AEM.
+description: Découvrez les tâches préalables à la mise à niveau recommandées pour AEM.
 seo-description: Learn about the pre-upgrade tasks in AEM.
 uuid: 5da1cfc7-8a10-47b1-aafb-2cd112e3f818
 contentOwner: sarchiz
@@ -12,10 +12,10 @@ discoiquuid: 291c91e5-65ff-473d-ac11-3da480239e76
 docset: aem65
 feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
-workflow-type: ht
-source-wordcount: '2030'
-ht-degree: 100%
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+workflow-type: tm+mt
+source-wordcount: '2031'
+ht-degree: 99%
 
 ---
 
@@ -245,7 +245,6 @@ Vous trouverez ci-dessous la liste de toutes les méthodes disponibles offertes 
 >* cURL
 >
 
-
 ## Désactivation des modules de connexion personnalisés {#disable-custom-login-modules}
 
 >[!NOTE]
@@ -339,7 +338,6 @@ Pour éviter qu’un tel scénario ne se produise, mettez à niveau le schéma e
 >* vous effectuez une mise à niveau à partir des versions d’AEM antérieures à AEM 6.3 ;
 >* vous rencontrez les erreurs mentionnées ci-dessous lors de la mise à niveau.
 >
-
 
 Il existe des cas exceptionnels où les utilisateurs et utilisatrices du service peuvent se retrouver dans des versions AEM plus anciennes mal balisées en tant qu’utilisateurs ou utilisatrices standard.
 

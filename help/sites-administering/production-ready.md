@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: 3c342014-f8ec-4404-afe5-514bdb651aae
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '379'
 ht-degree: 53%
 
 ---
 
 # Exécuter AEM en mode Prêt pour la production{#running-aem-in-production-ready-mode}
 
-Avec AEM 6.1, Adobe introduit la nouvelle `"nosamplecontent"` le mode d’exécution , destiné à automatiser les étapes nécessaires à la préparation d’une instance d’AEM pour le déploiement dans un environnement de production.
+Avec AEM 6.1, Adobe introduit la nouvelle `"nosamplecontent"` le mode d’exécution , destiné à automatiser les étapes nécessaires à la préparation d’une instance d’AEM en vue d’un déploiement dans un environnement de production.
 
 Le nouveau mode d’exécution configure non seulement automatiquement l’instance pour qu’elle adhère aux bonnes pratiques de sécurité décrites dans la liste de contrôle de sécurité, mais supprime également tous les exemples d’applications et de configurations de Geometrixx du processus.
 

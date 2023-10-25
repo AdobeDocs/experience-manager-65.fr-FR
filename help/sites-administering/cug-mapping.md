@@ -1,7 +1,7 @@
 ---
 title: Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5
 seo-title: Custom User Group Mapping in AEM 6.5
-description: Découvrez comment fonctionne le mappage d’un groupe d’utilisateurs personnalisé dans AEM.
+description: Découvrez comment fonctionne le mappage de groupes d’utilisateurs personnalisés dans Adobe Experience Manager.
 seo-description: Lear how Custom User Group Mapping works in AEM.
 uuid: 7520351a-ab71-4661-b214-a0ef012c0c93
 contentOwner: User
@@ -12,10 +12,10 @@ discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
 exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
 feature: Security
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
-workflow-type: ht
-source-wordcount: '478'
-ht-degree: 100%
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+workflow-type: tm+mt
+source-wordcount: '480'
+ht-degree: 97%
 
 ---
 
@@ -65,40 +65,40 @@ Nom : com.day.cq.auth.impl.CugSupportImpl.
 
 * Libellé : configuration de CUG Apache Jackrabbit Oak.
 
-   Nom : org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugConfiguration.
+  Nom : org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugConfiguration.
 
-   ConfigurationPolicy = REQUIRED
+  ConfigurationPolicy = REQUIRED
 
 * Libellé : liste d’exclusion de CUG Apache Jackrabbit Oak.
 
-   Nom : org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugExcludeImpl.
+  Nom : org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugExcludeImpl.
 
-   ConfigurationPolicy = REQUIRED
+  ConfigurationPolicy = REQUIRED
 
 * Nom : com.adobe.granite.auth.requirement.impl.RequirementService.
 * Libellé : gestionnaire d’exigence d’authentification et de chemin de connexion d’Adobe Granite.
 
-   Nom : com.adobe.granite.auth.requirements.impl.DefaultRequirementHandler.
+  Nom : com.adobe.granite.auth.requirements.impl.DefaultRequirementHandler.
 
-   ConfigurationPolicy = REQUIRED
+  ConfigurationPolicy = REQUIRED
 
 **Commentaires**
 
 * Configuration de l’autorisation de CUG et activation/désactivation de l’évaluation.
 Service permettant de configurer la liste d’exclusion des principaux qui ne doivent pas être affectés par l’autorisation de CUG.
 
-   >[!NOTE]
-   > 
-   >Si `CugExcludeImpl` n’est pas configuré, la configuration `CugConfiguration` revient à la valeur par défaut.
+  >[!NOTE]
+  > 
+  >Si `CugExcludeImpl` n’est pas configuré, la configuration `CugConfiguration` revient à la valeur par défaut.
 
-   Il est possible de réaliser une implémentation CugExclude personnalisée en cas de besoins spécifiques.
+  Il est possible de réaliser une implémentation CugExclude personnalisée en cas de besoins spécifiques.
 
 * Composant OSGI implémentant LoginPathProvider, qui expose un chemin de connexion correspondant à LoginSelectorHandler. Il comporte une référence obligatoire à RequirementHandler, qui est utilisé pour enregistrer l’observateur qui écoute les modifications des exigences d’authentification stockées dans le contenu par le biais du type de Mixin granite:AuthenticationRequired.
 * Composant OSGI implémentant RequirementHandler qui informe SlingAuthenticator des modifications apportées à authrequirements.
 
-   Comme la politique de configuration pour ce composant est obligatoire, elle n’est activée que si un ensemble de chemins pris en charge est spécifié.
+  Comme la politique de configuration pour ce composant est obligatoire, elle n’est activée que si un ensemble de chemins pris en charge est spécifié.
 
-   L’activation du service lance RequirementService.
+  L’activation du service lance RequirementService.
 
 <!-- nested tables not supported - text above is the table>
 <table>
