@@ -1,18 +1,18 @@
 ---
 title: Création et synchronisation de Live Copies
-description: Découvrez comment créer et synchroniser des Live Copies.
+description: Découvrez comment créer et synchroniser des Live Copies dans Adobe Experience Manager.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '4229'
+source-wordcount: '4233'
 ht-degree: 73%
 
 ---
 
 # Création et synchronisation de Live Copies{#creating-and-synchronizing-live-copies}
 
-Vous pouvez créer une Live Copy à partir d’une configuration de page ou de plan directeur, puis gérer l’héritage et la synchronisation.
+Vous pouvez créer une Live Copy depuis une configuration de page ou de plan directeur, puis gérer l’héritage et la synchronisation.
 
 ## Gestion des configurations de plans directeurs {#managing-blueprint-configurations}
 
@@ -120,10 +120,10 @@ Pour créer une Live Copy :
 
 1. Utilisez la case **Exclure les sous-pages** :
 
-   * Sélectionné : créer une Live Copy de la page sélectionnée uniquement (Live Copy superficielle) ;
+   * Sélectionné : créer une Live Copy de la page sélectionnée uniquement (Live Copy superficielle)
    * Non cochée : crée une Live Copy qui comprend tous les descendants de la page sélectionnée (Live Copy profonde).
 
-1. (Facultatif) Pour spécifier une ou plusieurs configurations de déploiement à utiliser pour la Live Copy, utilisez la variable **Configurations du déploiement** liste déroulante pour les sélectionner ; les configurations sélectionnées s’affichent sous le sélecteur déroulant.
+1. (Facultatif) Pour spécifier une ou plusieurs configurations de déploiement à utiliser pour la Live Copy, utilisez la variable **Configurations du déploiement** pour les sélectionner ; les configurations sélectionnées s’affichent sous le sélecteur de liste déroulante.
 1. Cliquez ou appuyez sur **Créer**. Un message de confirmation s’affiche où vous pouvez sélectionner **Ouvrir** ou **Terminé**.
 
 ### Création d’une Live Copy d’un site à partir d’une configuration de plan directeur {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
@@ -139,11 +139,11 @@ Si vous omettez certaines branches de langue ou certains chapitres de la Live C
 Lorsque vous créez le site, saisissez des valeurs pour les propriétés suivantes :
 
 * **Langues initiales** : les branches de langue de la source de plan directeur à inclure dans la Live Copy.
-* **Chapitres initiaux**: Les pages enfants des branches de langue de plan directeur à inclure dans la Live Copy.
-* **Chemin de destination**: Emplacement de la page racine du site Live Copy.
-* **Titre**: Titre de la page racine du site Live Copy.
+* **Chapitres initiaux**: les pages enfants des branches de langue de plan directeur à inclure dans la Live Copy.
+* **Chemin de destination**: emplacement de la page racine du site Live Copy.
+* **Titre**: titre de la page racine du site de Live Copy.
 * **Nom** : (facultatif) nom du nœud JCR qui stocke la page racine de la Live Copy. La valeur par défaut est basée sur le titre.
-* **Propriétaire du site**: (Facultatif)
+* **Propriétaire du site**: (facultatif)
 * **Live Copy** : sélectionnez cette option pour établir une relation en direct avec le site source. Si vous ne sélectionnez pas cette option, une copie du plan directeur est créée, mais n’est pas synchronisée ultérieurement avec la source.
 * **Configurations du déploiement** : (Facultatif) sélectionnez une ou plusieurs configurations de déploiement à utiliser pour synchroniser la Live Copy. Par défaut, les configurations de déploiement sont héritées du plan directeur. Pour plus d’informations, consultez [Spécification de la configuration de déploiement à utiliser](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use).
 
@@ -175,7 +175,7 @@ Lorsque vous créez une Live Copy dans la Live Copy existante (créée à l’ai
 
 Les propriétés d’une page Live Copy affichent les informations suivantes sur la Live Copy :
 
-* **Source**: Page source de la page Live Copy.
+* **Source**: page source de la page Live Copy.
 * **État** : l’état de synchronisation de la Live Copy. L’état indique si la Live Copy est à jour par rapport à la source, et quand la dernière synchronisation a eu lieu et qui a effectué la synchronisation.
 * **Configuration** :
 
@@ -303,7 +303,7 @@ Synchronisez une Live Copy pour extraire des modifications de la source vers la
 
    Une confirmation est demandée ; utilisez **Synchroniser** pour continuer.
 
-#### Synchronisation d’une Live Copy à partir de l’aperçu de la Live Copy {#synchronize-a-live-copy-from-the-live-copy-overview}
+#### Synchroniser une Live Copy à partir de l’aperçu de la Live Copy {#synchronize-a-live-copy-from-the-live-copy-overview}
 
 L’[action Syncroniser est également disponible dans la vue d’ensemble de la Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), lorsqu’une page Live Copy est sélectionnée.
 
@@ -404,7 +404,7 @@ Lorsque vous réactivez l’héritage, la page n’est pas automatiquement synch
 
 >[!CAUTION]
 >
->Lorsque vous réactivez l’héritage, la page n’est pas automatiquement synchronisée avec la source. Vous pouvez demander manuellement une synchronisation si cela est nécessaire ; au moment de la reprise ou plus tard.
+>Lorsque vous réactivez l’héritage, la page n’est pas automatiquement synchronisée avec la source. Vous pouvez demander manuellement une synchronisation si cela est nécessaire, au moment de la reprise ou ultérieurement.
 
 #### Reprise de l’héritage à partir des propriétés de page {#resuming-inheritance-from-page-properties}
 
@@ -418,7 +418,7 @@ Lorsque cette action est sélectionnée, la boîte de dialogue s’affiche. Vous
 
 L’[action Reprendre est également disponible dans l’aperçu de la Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), lorsqu’une page Live Copy est sélectionnée.
 
-1. Ouvrez le [Présentation de la Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) et sélectionnez une page Live Copy qui a été suspendue ; s’affiche comme suit : **HÉRITAGE ANNULÉ**.
+1. Ouvrez le [Présentation de la Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) et sélectionnez une page Live Copy qui a été suspendue ; s’affiche sous la forme **HÉRITAGE ANNULÉ**.
 1. Sélectionnez **Reprendre** dans la barre d’outils.
 1. Indiquez si vous souhaitez synchroniser la page après le rétablissement de l’héritage, puis confirmez l’action **Reprendre** dans la boîte de dialogue **Reprendre la Live Copy**.
 
@@ -450,7 +450,7 @@ Pour spécifier ou changer la profondeur :
 1. Dans la section **Configuration**, définissez ou effacez l’option **Héritage de Live Copy** selon l’inclusion ou non des pages enfants :
 
    * coché : une Live Copy profonde (les pages enfants sont incluses)
-   * clear : Live Copy superficielle (les pages enfants sont exclues)
+   * clear : une Live Copy superficielle (les pages enfants sont exclues)
 
    >[!CAUTION]
    >
@@ -609,7 +609,7 @@ Il existe des implications liées à l’endroit dans l’arborescence où vous 
 
   Lorsque cette opération est effectuée sur la page racine d’une Live Copy, elle supprime la relation dynamique entre toutes les pages du plan directeur et sa Live Copy.
 
-  Autres modifications apportées aux pages du plan directeur (en l’état) **ne sera pas** impacte la Live Copy (en l’état).
+  Autres modifications apportées aux pages du plan directeur (en l’état) **will not** impacte la Live Copy (en l’état).
 
 * **Désolidariser sur une sous-page d’une Live Copy**
 
@@ -642,7 +642,7 @@ Pour désolidariser une Live Copy :
 
 1. Une boîte de dialogue de confirmation s’affiche. Sélectionnez **Désolidariser** pour exécuter l’opération.
 
-### Désolidarisation d’une page Live Copy à partir de l’aperçu de la Live Copy {#detach-a-live-copy-page-from-the-live-copy-overview}
+### Dissocier une page Live Copy de l’aperçu de la Live Copy {#detach-a-live-copy-page-from-the-live-copy-overview}
 
 L’[action Désolidariser est également disponible dans la vue d’ensemble de la Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), lorsqu’une page Live Copy est sélectionnée.
 
@@ -650,4 +650,4 @@ L’[action Désolidariser est également disponible dans la vue d’ensemble de
 1. Sélectionnez **Désolidariser** dans la barre d’outils.
 1. Confirmez l’action **Désolidariser** dans la boîte de dialogue **Désolidariser une Live Copy** :
 
-   ![Confirmer la désolidarisation](assets/chlimage_1-237.png)
+   ![Confirmer la détection](assets/chlimage_1-237.png)

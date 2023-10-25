@@ -1,15 +1,15 @@
 ---
 title: Test des composants principaux dans We.Retail
-description: Test des composants principaux dans We.Retail
+description: Découvrez comment tester les composants principaux dans Adobe Experience Manager à l’aide de We.Retail.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 29%
+source-wordcount: '540'
+ht-degree: 28%
 
 ---
 
@@ -32,7 +32,7 @@ Les composants principaux sont des composants modernes et flexibles qui offrent 
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Tous les composants principaux sont nommés **v1**, ce qui indique qu’il s’agit de la première version de ce composant principal. Des versions régulières seront publiées à l’avenir, qui seront compatibles avec les versions d’AEM et vous permettront de mettre à niveau facilement afin de profiter des dernières fonctionnalités.
+1. Tous les composants principaux sont nommés **v1**, ce qui indique qu’il s’agit de la première version de ce composant principal. Des versions régulières seront publiées à l’avenir, qui seront compatibles avec AEM version et vous permettront de mettre à niveau facilement afin de profiter des dernières fonctionnalités.
 1. Cliquez sur **Texte (v1)**.
 
    Veillez à ce que le **Type de ressource** du composant soit `/apps/core/wcm/components/text/v1/text`. Les composants principaux sont disponibles sous `/apps/core/wcm/components` et versionnés par composant.

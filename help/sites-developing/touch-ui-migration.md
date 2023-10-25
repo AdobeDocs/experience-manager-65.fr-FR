@@ -1,15 +1,15 @@
 ---
 title: Migration vers l’interface utilisateur tactile
-description: Migration vers l’interface utilisateur tactile
+description: Découvrez la migration Adobe Experience Manager vers l’interface utilisateur tactile et comment elle vous affecte.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '669'
 ht-degree: 76%
 
 ---
@@ -148,7 +148,7 @@ Pour plus d’informations sur le développement d’AEM, consultez la collectio
 * [Documentation relative à l’interface utilisateur Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [Tutoriels et vidéos d’AEM 6.5 Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=fr)
 * [Prise en main du développement d’AEM Sites – Tutoriel WKND](/help/sites-developing/getting-started.md)
-* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=en)
+* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=fr)
 * [Outils de modernisation d’AEM](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]

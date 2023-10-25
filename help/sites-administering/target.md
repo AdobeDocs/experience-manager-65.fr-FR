@@ -1,7 +1,7 @@
 ---
 title: Intégration à Adobe Target
 seo-title: Integrating with Adobe Target
-description: Pour en savoir plus sur l’intégration d’AEM à Adobe Target.
+description: Découvrez comment intégrer Adobe Experience Manager à Adobe Target.
 seo-description: Learn about integrating AEM with Adobe Target.
 uuid: b90346e8-9757-4272-a870-bbe5e647303f
 contentOwner: Guillaume Carlino
@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 454854f8-6053-406c-888d-f427777bf570
 exl-id: 2b17d8cd-a43c-4d54-b990-a6f0cb1db22b
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '598'
-ht-degree: 100%
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+workflow-type: tm+mt
+source-wordcount: '601'
+ht-degree: 93%
 
 ---
 
@@ -23,18 +23,18 @@ Dans le cadre d’Adobe Marketing Cloud, [Adobe Target](https://www.adobe.com
 
 Intégrez vos sites AEM à Adobe Target pour personnaliser le contenu dans vos pages :
 
-* Mettez en œuvre le ciblage du contenu.
+* Implémentez le ciblage du contenu.
 * Utilisez les audiences Target pour créer des expériences personnalisées.
-* Envoyez des données contextuelles à Target lorsque des visiteurs interagissent avec vos pages.
-* Suivez les taux de conversion.
+* Envoyez des données contextuelles à Target lorsque les visiteurs et les visiteuses interagissent avec vos pages.
+* Suivre les taux de conversion.
 
 Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 
 1. [Effectuez les tâches préalables nécessaires](/help/sites-administering/target-requirements.md) : inscrivez-vous auprès d’Adobe Target et configurez certains aspects de l’instance de création AEM. Votre compte Adobe Target doit disposer au minimum des autorisations de niveau **approbateur**. En outre, vous devez sécuriser les paramètres d’activité sur le nœud de publication afin que celui-ci ne soit pas accessible par les utilisateurs.
 
-1. Procédez de l’une des manières suivantes :
+1. Vous pouvez effectuer les actions suivantes :
 
-   1. [Adhérez à Adobe Target](/help/sites-administering/opt-in.md) : l’assistant d’inclusion récupère les informations de votre compte Target et crée une configuration cloud Adobe Target et une structure Target. L’assistant associe également vos sites à la structure Target. Si l’assistant ne parvient pas à se connecter à Target, consultez la section relative à la [résolution des incidents de connexion](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems). Vous pouvez ensuite [modifier les configurations cloud par défaut](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations) : si nécessaire, modifiez la configuration et la structure cloud créées par l’assistant de souscription. Par exemple, modifiez la structure pour envoyer des données contextuelles supplémentaires à Target. Si vous souhaitez utiliser Adobe Analytics en tant que source de création de rapports pour Adobe Target, vous devez modifier la configuration cloud pour qu’elle pointe sur la configuration A4T.
+   1. [Adhérez à Adobe Target](/help/sites-administering/opt-in.md) : l’assistant d’inclusion récupère les informations de votre compte Target et crée une configuration cloud Adobe Target et une structure Target. L’assistant associe également vos sites à la structure Target. Si l’assistant ne parvient pas à se connecter à Target, consultez la section relative à la [résolution des incidents de connexion](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems). Vous pouvez ensuite [modifier les configurations cloud par défaut](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations) : si nécessaire, modifiez la configuration et la structure cloud créées par l’assistant de souscription. Par exemple, modifiez la structure pour envoyer des données contextuelles supplémentaires à Target. Si vous souhaitez utiliser Adobe Analytics comme source de création de rapports pour Adobe Target, vous devez modifier la configuration cloud pour qu’elle pointe vers la configuration A4T.
    1. [Réalisez une intégration manuelle à Adobe Target](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
 
 1. [Configurez les activités](/help/sites-authoring/activitylib.md) : associez vos activités à la configuration cloud Target.
@@ -51,18 +51,17 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 >* Les API 4.x sont configurées avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
 
-
 >[!CAUTION]
 >
 >Vous devez sécuriser le nœud de paramètres d’activité **c:ActivitySettings** sur l’instance de publication de sorte qu’il ne soit pas accessible pour les utilisateurs normaux. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
 >
->Voir [Préalables à l’intégration à Adobe Target](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node) pour plus d’informations.
+>Voir [Conditions préalables à l’intégration à Adobe Target](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node) pour plus d’informations.
 
 Une fois l’intégration terminée, vous pouvez [créer du contenu ciblé](/help/sites-authoring/content-targeting-touch.md) qui envoie les données de visiteur à Adobe Target. Notez que les composants de page requièrent un code spécifique pour activer le ciblage du contenu. (consultez [Développement pour le contenu ciblé](/help/sites-developing/target.md)). 
 
 >[!NOTE]
 >
->Lorsque vous ciblez un composant dans le mode Auteur AEM, il effectue une série d’appels côté serveur vers Adobe Target afin d’enregistrer la campagne, de configurer des offres et de récupérer des segments Adobe Target (si cela est configuré). Aucun appel côté serveur n’est effectué depuis la publication AEM vers Adobe Target.
+>Lorsque vous ciblez un composant dans l’instance de création AEM, le composant effectue une série d’appels côté serveur à Adobe Target pour enregistrer la campagne, configurer des offres et récupérer des segments Adobe Target (s’ils sont configurés). Aucun appel côté serveur n’est effectué depuis la publication AEM vers Adobe Target.
 
 ## Sources d’informations sur le contexte {#background-information-sources}
 
@@ -81,4 +80,3 @@ Intégrer AEM à Adobe Target nécessite des connaissances sur Adobe Target, la 
 >* 50 mesures
 >* 50 segments de création de rapports
 >
-

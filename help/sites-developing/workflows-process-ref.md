@@ -1,15 +1,15 @@
 ---
 title: Référence sur les processus de workflow
-description: Référence sur les processus de workflow
+description: Reportez-vous à cette référence de processus pour les workflows dans Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: a9de8ec6-6948-4643-89c3-62d9b1f6293a
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 38%
+source-wordcount: '1076'
+ht-degree: 37%
 
 ---
 
@@ -21,7 +21,7 @@ AEM fournit plusieurs étapes de processus qui peuvent être utilisées pour cr�
 
 Pour chaque étape du processus, les caractéristiques suivantes sont décrites.
 
-### Classe Java™ ou chemin d’accès ECMA {#java-class-or-ecma-path}
+### Classe Java™ ou chemin ECMA {#java-class-or-ecma-path}
 
 Les étapes du processus sont définies par une classe Java™ ou un ECMAScript.
 
@@ -49,7 +49,7 @@ Les arguments sont saisis sous la forme d’une seule chaîne dans la variable *
 ```
 
 
-### Expiration {#timeout}
+### Délai d’expiration {#timeout}
 
 Après ce délai d’expiration, l’étape du workflow n’est plus opérationnelle. Certains processus de workflow respectent le délai d’expiration, tandis que d’autres ne l’appliquent pas et sont ignorés.
 
@@ -81,7 +81,7 @@ La méthode recommandée consiste à utiliser un utilisateur de service créé a
 >
 >* Activez le **mode hérité du processus de workflow**.
 >
->Cela revient à l’ancien comportement consistant à fournir une session d’administrateur à la `WorkflowProcess` et permettre un accès illimité à l’ensemble du référentiel une fois de plus.
+>Cela revient à l’ancien comportement consistant à fournir une session d’administrateur à la variable `WorkflowProcess` et permettre un accès illimité à l’ensemble du référentiel une fois de plus.
 
 ## Processus de contrôle des workflows {#workflow-control-processes}
 
@@ -108,11 +108,11 @@ Le processus `AutoAdvancer` fait passer automatiquement le workflow à l’étap
 
 ### ProcessAssembler (Programme d’assemblage des processus) {#processassembler-process-assembler}
 
-Le `ProcessAssembler` Le processus exécute plusieurs processus secondaires de manière séquentielle dans une seule étape du processus. Pour utiliser la variable `ProcessAssembler`, créez une seule étape de ce type dans votre workflow et définissez ses arguments pour indiquer les noms et arguments des sous-processus que vous souhaitez exécuter.
+La variable `ProcessAssembler` Le processus exécute plusieurs processus secondaires de manière séquentielle dans une seule étape du processus. Pour utiliser la variable `ProcessAssembler`, créez une seule étape de ce type dans votre workflow et définissez ses arguments pour indiquer les noms et arguments des sous-processus que vous souhaitez exécuter.
 
 * **Classe Java™**: `com.day.cq.workflow.impl.process.ProcessAssembler`
 
-* **Payload**: Ressource de gestion des actifs numériques, AEM page ou aucune charge utile (dépend des exigences des sous-processus).
+* **Payload**: ressource DAM, page d’AEM ou aucune charge utile (dépend des exigences des sous-processus).
 * **Arguments** :
 
 ```
@@ -184,7 +184,7 @@ Il s’agit d’un processus nul qui renvoie `false` sur la méthode `check()`.
 
 ### sample {#sample}
 
-Voici un exemple de processus ECMAScript.
+Il s’agit d’un exemple de processus ECMAScript.
 
 * **Chemin ECMAScript** : `/libs/workflow/scripts/sample.ecma`
 

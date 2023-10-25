@@ -1,15 +1,15 @@
 ---
 title: Rendu de modèle adaptatif
-description: Rendu de modèle adaptatif
+description: Découvrez le rendu du modèle adaptatif dans Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 58cac3b1-b7cd-44b2-b89b-f5ee8811c198
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 17%
+source-wordcount: '486'
+ht-degree: 16%
 
 ---
 
@@ -46,7 +46,7 @@ Dans cet exemple, vous allez configurer le groupe d’appareils existant. **Smar
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. Le sélecteur est disponible pour la **BlackBerry®** et **iPhone 4** fourni au groupe d’appareils ; **Smart Phone** est ajouté aux structures de modèle et de page dans les étapes suivantes.
+1. Le sélecteur est disponible pour la **BlackBerry®** et **IPHONE 4** fourni au groupe d’appareils ; **Smart Phone** est ajouté aux structures de modèle et de page dans les étapes suivantes.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 

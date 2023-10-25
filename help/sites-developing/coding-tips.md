@@ -1,14 +1,14 @@
 ---
 title: Conseils pour bien coder
-description: Conseils pour le codage des AEM
+description: Découvrez quelques conseils sur les bonnes pratiques en matière de codage dans Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '861'
 ht-degree: 59%
 
 ---
@@ -30,8 +30,8 @@ Idéalement, un autre programmeur ne devrait pas avoir à ouvrir un module pour 
 Dans la base de code AEM, les conventions suivantes sont utilisées :
 
 
-* Une implémentation unique d’une interface est nommée `<Interface>Impl`, c’est-à-dire : `ReaderImpl`.
-* Plusieurs implémentations d’une interface sont nommées `<Variant><Interface>`, c’est-à-dire : `JcrReader` et `FileSystemReader`.
+* Une implémentation unique d’une interface est nommée `<Interface>Impl`, à savoir : `ReaderImpl`.
+* Plusieurs implémentations d’une interface sont nommées `<Variant><Interface>`, à savoir : `JcrReader` et `FileSystemReader`.
 * Les classes de base abstraites sont nommées `Abstract<Interface>` ou `Abstract<Variant><Interface>`.
 * Les modules sont nommés `com.adobe.product.module`. Chaque artefact Maven ou bundle OSGi doit avoir son propre package.
 * Les implémentations Java™ sont placées dans un package impl sous leur API.

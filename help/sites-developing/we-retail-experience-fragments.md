@@ -1,7 +1,7 @@
 ---
 title: Test des fragments d’expériences dans We.Retail
 seo-title: Trying out Experience Fragments in We.Retail
-description: Test des fragments d’expériences dans We.Retail
+description: Découvrez comment tester les fragments d’expérience dans Adobe Experience Manager à l’aide de We.Retail.
 seo-description: Trying out Experience Fragments in We.Retail
 uuid: 43a6df77-9dd3-4316-b749-0ef059370f7d
 contentOwner: AEM Docs
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: fe44a941-a09b-4421-b766-1d433291f2cc
 exl-id: e17ff611-122a-4d17-97af-071d0234dd16
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
-workflow-type: ht
-source-wordcount: '235'
-ht-degree: 100%
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+workflow-type: tm+mt
+source-wordcount: '242'
+ht-degree: 94%
 
 ---
 
@@ -31,7 +31,7 @@ Ils prennent en charge des scénarios de gestion de contenu (CMS) découplés, p
 >
 >Les **[fragments de contenu](/help/sites-developing/we-retail-content-fragments.md)** et les **fragments d’expérience** représentent deux fonctions distinctes d’AEM :
 >
->* Les **fragments de contenu** sont des contenus éditoriaux, composés essentiellement de texte et des images associées. Il s’agit exclusivement de contenu, sans aucun élément de conception ni de mise en page.
+>* Les **fragments de contenu** sont du contenu éditorial, principalement du texte et des images associées. Il s’agit de contenu pur, sans conception ni mise en page.
 >* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
 >
 >Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.

@@ -1,15 +1,15 @@
 ---
 title: Ajout d’un suivi Adobe Analytics aux composants
-description: Ajout d’un suivi Adobe Analytics aux composants
+description: Découvrez comment ajouter le suivi Adobe Analytics aux composants dans Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 91%
+source-wordcount: '1273'
+ht-degree: 90%
 
 ---
 
@@ -36,7 +36,7 @@ L’entrée ContextHub doit être incluse immédiatement sous la balise `<head>`
 
 Le script `contexthub` que vous insérez après l’élément `<head>` ajoute les fonctions de ContextHub à la page.
 
-Les scripts `cloudservices` que vous ajoutez dans les sections `<head>` et `<body>` s’appliquent aux configurations de Cloud Services ajoutées à la page. (Si la page utilise plusieurs configurations de Cloud Services, vous ne devez inclure le jsp ContextHub et le jsp Cloud Services qu’une seule fois.)
+Les scripts `cloudservices` que vous ajoutez dans les sections `<head>` et `<body>` s’appliquent aux configurations de Cloud Services ajoutées à la page. (Si la page utilise plusieurs configurations de Cloud Service, vous ne devez inclure le jsp ContextHub et le jsp Cloud Service qu’une seule fois.)
 
 Lorsqu’un framework Adobe Analytics est ajouté à la page, les scripts `cloudservices` génèrent du code JavaScript lié à Adobe Analytics et des références à des bibliothèques côté client, comme dans l’exemple suivant :
 

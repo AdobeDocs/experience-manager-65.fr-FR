@@ -1,15 +1,15 @@
 ---
 title: Personnalisation du framework Adobe Analytics
-description: Personnalisation du framework Adobe Analytics
+description: Découvrez comment personnaliser la structure Adobe Analytics pour Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1620'
 ht-degree: 51%
 
 ---
@@ -64,7 +64,7 @@ Il existe plusieurs variables prédéfinies dans Adobe Analytics qui peuvent êt
 
 ![aa-22](assets/aa-22.png)
 
-Vous pouvez ajouter des valeurs et des noms de variables à la liste. Ces variables prédéfinies et les variables que vous ajoutez sont utilisées pour configurer les propriétés de l’objet `s` dans le fichier analytics.sitecatalyst.js. L’exemple suivant illustre la manière dont l’ajout de `prop10` propriété de valeur `CONSTANT` est représenté dans le code JavaScript :
+Vous pouvez ajouter des valeurs et des noms de variables à la liste. Ces variables prédéfinies et les variables que vous ajoutez sont utilisées pour configurer les propriétés de l’objet `s` dans le fichier analytics.sitecatalyst.js. L’exemple suivant illustre la manière dont la variable `prop10` propriété de valeur `CONSTANT` est représenté dans le code JavaScript :
 
 ```
 var s_account = "my_sitecatalyst_account";
@@ -142,7 +142,7 @@ La procédure suivante explique comment utiliser la boîte JavaScript pour perso
    >
    >Si les variables personnalisées sont en dehors de la fonction s_doPlugins, elles sont envoyées comme *undefined* dans l’appel Adobe Analytics
 
-1. Ajoutez votre code JavaScript dans la variable **s_doPlugins** fonction .
+1. Ajoutez votre code JavaScript dans la variable **s_doPlugins** de la fonction
 
 L’exemple suivant concatène les données capturées sur une page dans l’ordre hiérarchique, en utilisant un séparateur commun « | ».
 
@@ -278,7 +278,7 @@ Suivez la procédure ci-après pour créer le dossier de bibliothèque cliente d
    * Nom : categories
    * Type : chaîne
    * Valeur : sitecatalyst.plugins
-   * Multi : selected
+   * Multi : sélectionné
 
    Cliquez sur OK dans la fenêtre Modifier pour confirmer la valeur de la propriété.
 

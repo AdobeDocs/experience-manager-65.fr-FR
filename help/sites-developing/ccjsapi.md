@@ -1,7 +1,7 @@
 ---
 title: API JavaScript ClientContext
 seo-title: Client Context JavaScript API
-description: API JavaScript pour ClientContext
+description: Découvrez l’API JavaScript pour ClientContext dans Adobe Experience Manager.
 seo-description: The JavaScript API for Client Context
 uuid: be58998c-f23e-4768-8394-1f1ad3994c4c
 contentOwner: Guillaume Carlino
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
 feature: Context Hub
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '3153'
+source-wordcount: '3159'
 ht-degree: 56%
 
 ---
@@ -70,7 +70,7 @@ Par exemple, un magasin de sessions est basé sur un objet JSON et récupéré v
 * La requête est terminée, les données sont récupérées et chargées dans le magasin. Dans ce cas, l’initialisation se produit une seule fois.
 * La requête échoue (expiration du délai). Dans ce cas, l’initialisation n’a pas lieu et le magasin ne contient aucune donnée.
 * Le magasin est pré-rempli avec des valeurs par défaut (propriétés init), mais la demande échoue (expiration du délai). Il n’existe qu’une seule initialisation avec des valeurs par défaut.
-* Le magasin est prérenseigné.
+* Le magasin est prérempli.
 
 Lorsque le délai est défini sur `true` ou sur une valeur en millisecondes, la méthode attend avant d’appeler la méthode de rappel. Si un autre événement d’initialisation est déclenché avant le dépassement du délai, il attend que le délai soit dépassé sans événement d’initialisation. Cela permet d’attendre le déclenchement d’un second événement d’initialisation et d’appeler la fonction de rappel dans le cas le plus optimisé.
 
@@ -174,7 +174,7 @@ Définit l’URL du service JSONP à utiliser pour récupérer les données JSON
 
 **Paramètres**
 
-* serviceURL : chaîne. URL du service JSONP qui fournit des données JSON
+* serviceURL : chaîne. URL du service JSONP qui fournit des données JSON.
 
 **Renvoie**
 
@@ -277,7 +277,7 @@ B/B1: "valueBB1"
 
 **Paramètres**
 
-* jsonData: Objet JSON contenant les données à stocker.
+* jsonData : objet JSON contenant les données à stocker.
 * doNotClear : une valeur « true » préserve les propriétés d’initialisation existantes et ajoute celles dérivées de l’objet JSON. Une valeur « false » supprime les propriétés d’initialisation existantes avant d’ajouter celles dérivées de l’objet JSON.
 
 **Renvoie**
@@ -403,7 +403,7 @@ Définit l’URL du service JSONP à utiliser pour récupérer les données JSON
 
 **Paramètres**
 
-* serviceURL : chaîne. URL du service JSONP qui fournit des données JSON
+* serviceURL : chaîne. URL du service JSONP qui fournit des données JSON.
 
 **Renvoie**
 
@@ -478,7 +478,7 @@ B/B1: "valueBB1"
 
 **Paramètres**
 
-* jsonData: Objet JSON contenant les données à stocker.
+* jsonData : objet JSON contenant les données à stocker.
 * doNotClear : une valeur « true » préserve les propriétés d’initialisation existantes et ajoute celles dérivées de l’objet JSON. Une valeur « false » supprime les propriétés d’initialisation existantes avant d’ajouter celles dérivées de l’objet JSON.
 
 **Renvoie**
@@ -631,7 +631,7 @@ Renvoie les données du magasin. Facultativement, exclut les propriétés de nom
 
 **Paramètres**
 
-excluded : (Facultatif) Un tableau de noms de propriétés à exclure des données renvoyées.
+excluded : (facultatif) tableau de noms de propriétés à exclure des données renvoyées.
 
 **Renvoie**
 
@@ -680,7 +680,7 @@ Renvoie les noms des propriétés que contient le magasin de sessions. Appelle l
 
 **Paramètres**
 
-excluded : (Facultatif) Un tableau de noms de propriétés à omettre des résultats.
+excluded : (facultatif) tableau de noms de propriétés à omettre des résultats.
 
 **Renvoie**
 
@@ -728,7 +728,7 @@ Ajoute les propriétés de l’objet en question aux données d’initialisation
 
 **Paramètres**
 
-* obj : Objet contenant des propriétés énumérables.
+* obj : objet qui contient des propriétés énumérables.
 * setValues : si cette propriété est définie sur true, les propriétés obj sont ajoutées aux données du magasin de sessions à condition que les données du magasin n’incluent pas déjà une propriété du même nom. Lorsque la valeur est false, aucune donnée n’est ajoutée aux données du magasin de sessions.
 
 **Renvoie**

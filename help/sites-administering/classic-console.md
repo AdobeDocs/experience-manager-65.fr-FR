@@ -1,7 +1,7 @@
 ---
 title: Console Balisage de l’interface utilisateur (IU) classique
 seo-title: Classic UI Tagging Console
-description: Découvrez la console de balisage de l’interface utilisateur classique.
+description: Découvrez la console de balisage de l’interface utilisateur de Adobe Experience Manager Classic.
 seo-description: Learn about the Classic UI Tagging Console.
 uuid: 51e29422-f967-424b-a7fd-4ca2ddc6b8a3
 contentOwner: Chiradeep Majumdar
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
-source-git-commit: 21330d460d1080ab1dee3e82bc3c3877677c1420
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '892'
 ht-degree: 53%
 
 ---
@@ -39,7 +39,7 @@ Pour accéder à la console Balisage de l’interface utilisateur classique :
 
    Si vous sélectionnez **Balises** vous pouvez créer un espace de noms :
 
-   ![Création d’une boîte de dialogue d’espace de noms](assets/creating_tags_andnamespaces.png)
+   ![Création d’un espace de noms](assets/creating_tags_andnamespaces.png)
 
    Si vous sélectionnez un espace de noms (par exemple **Démonstration**) vous pouvez créer une balise dans cet espace de noms :
 
@@ -67,7 +67,7 @@ Pour accéder à la console Balisage de l’interface utilisateur classique :
 
 1. Dans le volet de droite, sélectionnez la balise à modifier.
 1. Cliquez sur **Modifier**.
-1. Vous pouvez modifier la variable **Titre** et le **Description**.
+1. Vous pouvez modifier le **Titre** et la variable **Description**.
 1. Cliquez sur **Enregistrer** pour fermer la boîte de dialogue.
 
 ## Suppression des balises {#deleting-tags}
@@ -80,10 +80,10 @@ Pour accéder à la console Balisage de l’interface utilisateur classique :
 
 ## Activation et désactivation des balises {#activating-and-deactivating-tags}
 
-1. Dans le volet de droite, sélectionnez l’espace de noms ou la balise que vous souhaitez activer (publier) ou désactiver (annuler la publication).
+1. Dans le volet de droite, sélectionnez l’espace de noms ou la balise à activer (publier) ou désactiver (annuler la publication).
 1. Cliquez sur **Activer** ou **Désactiver** selon les besoins.
 
-## Liste : indiquant l’emplacement de référence des balises {#list-showing-where-tags-are-referenced}
+## Liste : indique l’emplacement de référence des balises. {#list-showing-where-tags-are-referenced}
 
 **Liste** ouvre une nouvelle fenêtre affichant les chemins de toutes les pages à l’aide de la balise mise en surbrillance :
 
@@ -102,7 +102,7 @@ Pour aider les administrateurs et les développeurs de balises à nettoyer la ta
 
 1. Cliquez sur **Déplacer**.
 
-Le **Déplacer la balise** dialog se présente comme suit :
+La variable **Déplacer la balise** dialog se présente comme suit :
 
 ![Déplacement d’une balise](assets/move_tag.png)
 
@@ -147,7 +147,7 @@ La procédure ci-dessous indique comment traduire le `title` de la balise **Anim
 1. Modifiez la balise **Animals** située sous **Balises** > **Images de photothèque**.
 1. Ajoutez les traductions dans les langues suivantes :
 
-   * **Anglais**: Animals
+   * **Anglais**: animaux
    * **Allemand**: Tiere
    * **Français**: Animaux
 
@@ -172,7 +172,7 @@ Par défaut, les `titles` des balises dans les propriétés de page sont affich�
 
    Sélectionnez la balise **Animals** (**Animaux**) et cliquez en dehors de la boîte de dialogue pour la fermer et ajouter la balise aux propriétés de la page.
 
-   ![Modification d’une autre balise](assets/french_tag.png)
+   ![Modifier une autre balise](assets/french_tag.png)
 
 Par défaut, la boîte de dialogue Propriétés de page affiche le `titles` des balises en fonction de la langue de la page.
 

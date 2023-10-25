@@ -1,7 +1,7 @@
 ---
 title: Extension AEM Brackets
 seo-title: AEM Brackets Extension
-description: Extension AEM Brackets
+description: Découvrez comment utiliser l’extension Adobe Experience Manager pour Brackets.
 seo-description: null
 uuid: 2f0dfa42-eb34-44ae-90eb-b5f321c03b79
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '938'
 ht-degree: 67%
 
 ---
@@ -71,7 +71,7 @@ Le projet doit contenir au moins :
 
 1. a `jcr_root` Dossier (par exemple, `myproject/jcr_root`)
 
-1. a `filter.xml` (par exemple, `myproject/META-INF/vault/filter.xml`); pour plus d’informations sur la structure de la variable `filter.xml` veuillez consulter le fichier [Définition du filtre Workspace](https://jackrabbit.apache.org/filevault/filter.html).
+1. a `filter.xml` (par exemple, `myproject/META-INF/vault/filter.xml`) ; pour plus d’informations sur la structure de la variable `filter.xml` veuillez consulter le fichier [Définition du filtre Workspace](https://jackrabbit.apache.org/filevault/filter.html).
 
 Dans le menu **Fichier** de Brackets, choisissez **Ouvrir le dossier...** et choisissez le dossier `jcr_root` ou le dossier du projet parent.
 
@@ -98,7 +98,7 @@ Les paramètres du projet permettent de définir :
 
 L’extension AEM Brackets fournit les types de synchronisation de contenu suivants pour les fichiers et dossiers autorisés par les règles de filtrage définies dans `filter.xml` :
 
-### Synchronisation automatisée des fichiers modifiés {#automated-synchronization-of-changed-files}
+### Synchronisation Automatisée Des Fichiers Modifiés {#automated-synchronization-of-changed-files}
 
 Cela synchronise uniquement les modifications de Brackets vers l’instance AEM, mais jamais l’inverse.
 

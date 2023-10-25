@@ -1,7 +1,7 @@
 ---
 title: Test d’une mise en page en responsive design dans We.Retail
 seo-title: Trying out Responsive Layout in We.Retail
-description: Test d’une mise en page en responsive design dans We.Retail
+description: Découvrez comment tester la mise en page réactive dans Adobe Experience Manager à l’aide de We.Retail.
 seo-description: null
 uuid: d9613655-f54e-458f-9175-d07bb868f58b
 contentOwner: User
@@ -10,16 +10,16 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 2d374e88-ea09-43d5-986c-5d77b0705b93
 exl-id: 6df5fb10-a7f1-4d5d-ac00-b4be3d5d3d18
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 64%
+source-wordcount: '252'
+ht-degree: 60%
 
 ---
 
 # Test d’une mise en page en responsive design dans We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-Toutes les pages We.Retail utilisent le composant Conteneur de mises en page pour implémenter le responsive design. Le conteneur de mises en page fournit un système de paragraphes qui vous permet de positionner des composants dans une grille réactive. Cette grille peut réorganiser la mise en page en fonction de l’appareil/de la taille de fenêtre et du format. Le composant est utilisé conjointement avec la fonction **Disposition** dans l’éditeur de page, qui vous permet de créer et de modifier votre mise en page réactive en fonction de l’appareil.
+Toutes les pages We.Retail utilisent le composant conteneur de mise en page pour implémenter le responsive design. Le conteneur de mises en page fournit un système de paragraphes qui vous permet de positionner des composants dans une grille réactive. Cette grille peut réorganiser la mise en page en fonction de l’appareil/de la taille de fenêtre et du format. Le composant est utilisé conjointement avec la fonction **Disposition** dans l’éditeur de page, qui vous permet de créer et de modifier votre mise en page réactive en fonction de l’appareil.
 
 ## Essayer de le faire {#trying-it-out}
 

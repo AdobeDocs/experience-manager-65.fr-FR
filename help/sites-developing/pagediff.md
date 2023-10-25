@@ -1,16 +1,16 @@
 ---
 title: Développement et outil de comparaison des pages
-description: Développement et outil de comparaison des pages
+description: Découvrez comment développer et utiliser la fonction de comparaison des pages dans Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: b07134b2-074a-4d52-8d0c-7e7abe51fc3a
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 35%
+source-wordcount: '380'
+ht-degree: 58%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 35%
 
 ## Présentation des fonctionnalités {#feature-overview}
 
-La création de contenu est un processus itératif. Pour être efficace lorsque vous créez du contenu, vous devez pouvoir voir ce qui a changé d’une version à l’autre. L’affichage d’une version de page, puis de l’autre, est inefficace et susceptible d’erreur. Un auteur souhaite pouvoir comparer la page active à une version précédente, côte à côte, avec les différences mises en évidence.
+La création de contenu est un processus itératif. Pour être efficace lorsque vous créez du contenu, vous devez pouvoir voir ce qui a changé d’une version à l’autre. L’affichage d’une version de page, puis de l’autre, est inefficace et source d’erreurs. Un auteur souhaite pouvoir comparer la page active à une version précédente, côte à côte, avec les différences mises en évidence.
 
-L’outil de comparaison des pages permet à l’utilisateur de comparer la page active aux lancements, aux versions précédentes, etc. Pour plus d’informations sur cette fonction utilisateur, voir [Outil de comparaison des pages](/help/sites-authoring/page-diff.md).
+L’outil de comparaison des pages permet de comparer la page active aux lancements, versions précédentes, etc. Pour plus d’informations sur cette fonctionnalité utilisateur, voir [Outil de comparaison des pages](/help/sites-authoring/page-diff.md).
 
 ## Détails de l’opération {#operation-details}
 
@@ -40,7 +40,7 @@ Auparavant, dans l’IU classique, il fallait prêter une attention particulièr
 
 Cependant, certaines limites doivent être prises en compte par le développeur.
 
-* Cette fonctionnalité utilise des classes CSS qui ne sont pas des espaces de noms du produit AEM. Si d’autres classes CSS personnalisées ou des classes CSS tierces portant le même nom sont incluses sur la page, l’affichage de la comparaison peut être affecté.
+* Cette fonctionnalité utilise des classes CSS qui ne sont pas placées dans un espace de noms sur le produit AEM. Si d’autres classes CSS personnalisées ou des classes CSS tierces portant le même nom sont incluses sur la page, l’affichage de la comparaison peut s’en trouver affecté.
 
    * `html-added`
    * `html-removed`
@@ -53,8 +53,8 @@ Cependant, certaines limites doivent être prises en compte par le développeur.
 
    * Composants qui utilisent AJAX pour intégrer du contenu
    * Applications sur une seule page
-   * Composants JavaScript qui manipulent le DOM lors de l’interaction de l’utilisateur.
+   * Composants JavaScript qui manipulent le DOM lors de l’interaction de l’utilisateur ou l’utilisatrice.
 
 >[!NOTE]
 >
->La comparaison des différences de page fonctionne uniquement pour les composants qui possèdent des noeuds cq:editConfig valides.
+>La comparaison des différences de page ne fonctionne que pour les composants qui possèdent des noeuds cq:editConfig valides.

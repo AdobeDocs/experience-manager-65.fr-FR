@@ -1,16 +1,16 @@
 ---
 title: Fragments d’expérience dans le développement Adobe Experience Manager Sites
-description: Découvrez comment personnaliser les fragments d’expérience.
+description: Découvrez comment personnaliser des fragments d’expérience pour Adobe Experience Manager.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: d6e5684ee89d19ab0fc6d15038c22a4a5b816563
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 79%
+source-wordcount: '1787'
+ht-degree: 87%
 
 ---
 
@@ -34,7 +34,7 @@ Le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML brut.
 
 Cette option est disponible à partir du navigateur, mais son principal objectif est d’autoriser d’autres applications (par exemple, des applications web tierces et des implémentations mobiles personnalisées) à accéder directement au contenu du fragment d’expérience, en utilisant uniquement l’URL.
 
-Le rendu en HTML brut ajoute le protocole, l’hôte et le chemin d’accès contextuel aux chemins suivants :
+Le rendu HTML brut ajoute le protocole, l’hôte et le chemin de contexte aux chemins suivants :
 
 * sont du type `src`, `href` ou `action` ;
 
@@ -64,8 +64,8 @@ Le rendu HTML est généré à l’aide des pipelines de réécriture Sling. Le 
    * Une expression RegEx correspondant aux classes CSS qui doivent être conservées dans le rendu final.
    * Cela s’avère utile si le client ou la cliente souhaite supprimer certaines classes CSS spécifiques.
 * `allowedTags`
-   * Liste des balises de HTML à autoriser dans le rendu final.
-   * Par défaut, les balises suivantes sont autorisées (aucune configuration requise) : html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link et script.
+   * Une liste des balises HTML autorisées dans le rendu final.
+   * Par défaut, les balises suivantes sont autorisées (aucune configuration requise) : html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link et script
 
 Il est recommandé de configurer la réécriture à l’aide d’un recouvrement. Voir [Recouvrements](/help/sites-developing/overlays.md)
 
@@ -73,7 +73,7 @@ Il est recommandé de configurer la réécriture à l’aide d’un recouvrement
 
 Les variations sociales peuvent être publiées sur les réseaux sociaux (texte et image). Dans Adobe Experience Manager (AEM), ces variantes sociales peuvent contenir des composants ; par exemple, des composants de texte ou d’image.
 
-L’image et le texte de la publication sur le réseau social peuvent être extraits de n’importe quel type de ressource d’image ou de ressource de texte, à n’importe quel niveau de profondeur (dans le bloc fonctionnel ou dans le conteneur de mises en page).
+L’image et le texte de la publication sur le réseau social peuvent être extraits de n’importe quel type de ressource d’image ou de ressource de texte, à n’importe quel niveau de profondeur (dans le bloc fonctionnel ou dans le conteneur de mise en page).
 
 Les variations sociales autorisent également les blocs fonctionnels et les prennent en compte lors de l’exécution d’actions sur les réseaux sociaux (dans l’environnement de publication).
 
@@ -134,7 +134,7 @@ Dans AEM, vous avez la possibilité de créer des fragments d’expérience. Un 
 * est constitué d’un groupe de composants avec une mise en page ;
 * peut exister indépendamment d’une page AEM.
 
-L’un des cas d’utilisation de ces groupes consiste à incorporer du contenu dans des points de contact tiers, tels qu’Adobe Target.
+De tels groupes sont notamment utilisés pour incorporer du contenu dans des points de contact tiers, tels qu’Adobe Target.
 
 ### Réécriture de liens par défaut {#default-link-rewriting}
 
@@ -146,7 +146,7 @@ La fonction [Exporter vers Target](/help/sites-administering/experience-fragment
 
 Cette fonction peut être [activée sur une instance de création d’AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). Elle nécessite une configuration Adobe Target valide, ainsi que des configurations pour l’externaliseur de liens.
 
-L’externaliseur de liens est utilisé pour déterminer les URL appropriées nécessaires lors de la création de la version par HTML de l’offre Target, qui est ensuite envoyée à Adobe Target. Cela s’avère nécessaire dans la mesure où Adobe Target exige que tous les liens de l’offre HTML Target soient accessibles au public ; cela signifie que les ressources auxquelles les liens font référence et le fragment d’expérience proprement dit doivent être publiés avant d’être utilisés.
+L’externaliseur de liens sert à déterminer les URL appropriées qui sont nécessaires lors de la création de la version de l’offre Target HTML, qui est ensuite envoyée à Adobe Target. Cela s’avère nécessaire dans la mesure où Adobe Target exige que tous les liens de l’offre HTML Target soient accessibles au public ; cela signifie que les ressources auxquelles les liens font référence et le fragment d’expérience proprement dit doivent être publiés avant d’être utilisés.
 
 Par défaut, lorsque vous créez une offre HTML Target, une requête est envoyée à un sélecteur Sling personnalisé dans AEM. Ce sélecteur est appelé `.nocloudconfigs.html`. Comme son nom l’indique, il crée un rendu HTML brut d’un fragment d’expérience, mais n’inclut pas de configurations cloud (qui seraient des informations superflues).
 
@@ -169,7 +169,7 @@ Une fois la page HTML générée, le pipeline Sling Rewriter apporte des modific
    >
    >En règle générale, les liens internes du HTML sont des liens relatifs, mais il peut arriver que des composants personnalisés fournissent des URL complètes dans le HTML. Par défaut, AEM ignore ces URL complètes et n’effectue aucune modification.
 
-   Les liens de ces attributs sont exécutés via l’externaliseur de liens AEM `publishLink()` pour recréer l’URL comme si elle se trouvait sur une instance publiée et, de ce fait, disponible publiquement.
+   Les liens de ces attributs sont exécutés via l’externaliseur de liens AEM `publishLink()` afin de recréer l’URL comme si elle se trouvait sur une instance publiée et, de ce fait, accessible au public.
 
 Lors de l’utilisation d’une implémentation prête à l’emploi, le processus décrit ci-dessus doit être suffisant pour générer l’offre Target à partir du fragment d’expérience, puis l’exporter vers Adobe Target. Toutefois, certains cas d’utilisation ne sont pas pris en compte dans ce processus, à savoir :
 
@@ -292,21 +292,21 @@ S’agissant de la variation du fragment d’expérience concernée par le proce
 En entrée, la méthode reçoit les paramètres suivants :
 
 * `link`
-La variable `String` Représentation du lien en cours de traitement. Il s’agit généralement d’une URL relative pointant vers la ressource sur l’instance de création.
+Représentation `String` du lien en cours de traitement. Il s’agit généralement d’une URL relative pointant vers la ressource sur l’instance de création.
 
 * `tag`
-Nom de l’élément de HTML en cours de traitement.
+Nom de l’élément HTML en cours de traitement.
 
 * `attribute`
 Nom exact de l’attribut.
 
-Par exemple, si le système Exporter vers Target traite cet élément, vous pouvez définir `CSSInclude` en tant que :
+Si, par exemple, le système Exporter vers Target traite cet élément, vous pouvez définir `CSSInclude` en tant que :
 
 ```java
 <link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.css" type="text/css">
 ```
 
-L’appel de la `rewriteLink()` méthode est effectué à l’aide des paramètres suivants :
+L’appel de la méthode `rewriteLink()` est effectué à l’aide des paramètres suivants :
 
 ```java
 rewriteLink(link="/etc.clientlibs/foundation/clientlibs/main.css", tag="link", attribute="href" )
@@ -347,7 +347,7 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 >[!NOTE]
 >
->Si la méthode ci-dessus renvoie `null`, le système Exporter vers Target laisse le lien tel quel, un lien relatif vers une ressource.
+>Si la méthode ci-dessus renvoie `null`, le système Exporter vers Target laisse le lien tel quel, c’est-à-dire un lien relatif vers une ressource.
 
 #### Priorités - getPriority {#priorities-getpriority}
 

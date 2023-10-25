@@ -1,19 +1,19 @@
 ---
-title: Lots OSGi
-description: Conseils pour gérer vos lots OSGi
+title: Bundles OSGi
+description: Découvrez quelques conseils pour gérer vos lots OSGi dans Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: e18065c7-75b9-4b37-8294-cf94122a4dcf
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 33%
+source-wordcount: '346'
+ht-degree: 32%
 
 ---
 
-# Lots OSGi{#osgi-bundles}
+# Bundles OSGi{#osgi-bundles}
 
 ## Utilisation du contrôle de version sémantique {#use-semantic-versioning}
 
@@ -21,7 +21,7 @@ Les bonnes pratiques de numérotation de version sémantique sont disponibles à
 
 ## N’incorporez pas plus de classes et de fichiers JAR que nécessaire dans les lots OSGi. {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
-Les bibliothèques courantes doivent être prises en compte dans des lots distincts. Cela permet de les réutiliser dans vos lots. Lors de l’encapsulation d’une *JAR* dans un lot OSGI, veillez à vérifier les sources en ligne pour vérifier si quelqu’un a déjà effectué cette opération auparavant. Voici quelques emplacements courants pour trouver les wrappers de bundle existants : Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes et le référentiel SpringSource Enterprise Bundle Repository.
+Les bibliothèques courantes doivent être prises en compte dans des lots distincts. Cela permet de les réutiliser dans vos lots. Lors de l’encapsulation d’une *JAR* dans un lot OSGi, veillez à vérifier les sources en ligne pour voir si quelqu’un a déjà fait cela auparavant. Voici quelques emplacements courants pour trouver les wrappers de bundle existants : Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes et le référentiel SpringSource Enterprise Bundle Repository.
 
 ## Dépendre des versions de lots les plus basses nécessaires {#depend-on-the-lowest-needed-bundle-versions}
 

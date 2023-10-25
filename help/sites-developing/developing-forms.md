@@ -1,7 +1,7 @@
 ---
 title: Développer des formulaires (IU classique)
 seo-title: Developing Forms (Classic UI)
-description: Découvrez comment développer des formulaires
+description: Découvrez comment développer des formulaires pour l’interface utilisateur classique de Adobe Experience Manager
 seo-description: Learn how to develop forms
 uuid: 33859f29-edc5-4bd5-a634-35549f3b5ccf
 contentOwner: Guillaume Carlino
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1953'
 ht-degree: 57%
 
 ---
@@ -58,7 +58,7 @@ Il s’agit d’un champ facultatif qui permet de spécifier le chemin à un nœ
 
 ### Préchargement de champs de formulaire avec plusieurs valeurs {#preloading-form-fields-with-multiple-values}
 
-Plusieurs champs de formulaire ont également la propriété **Chemin de chargement des éléments**, à nouveau un chemin facultatif qui pointe vers un noeud du référentiel.
+Plusieurs champs de formulaire ont également la propriété **Chemin de chargement des éléments**, à nouveau un chemin d’accès facultatif qui pointe vers un noeud du référentiel.
 
 Le **Chemin de chargement des éléments** est le chemin d’accès aux propriétés de nœud qui est utilisé pour charger des valeurs prédéfinies dans ce champ spécifique du formulaire ; par exemple, une [liste déroulante](/help/sites-authoring/default-components-foundation.md#dropdown-list), un [groupe de cases à cocher](/help/sites-authoring/default-components-foundation.md#checkbox-group) ou un [groupe de cases d’option](/help/sites-authoring/default-components-foundation.md#radio-group).
 
@@ -66,7 +66,7 @@ Le **Chemin de chargement des éléments** est le chemin d’accès aux proprié
 
 Une liste déroulante peut être configurée avec votre plage de valeurs à sélectionner.
 
-Le **Chemin de chargement des éléments** peut être utilisé pour accéder à une liste à partir d’un dossier du référentiel et les précharger dans le champ :
+La variable **Chemin de chargement des éléments** peut être utilisé pour accéder à une liste à partir d’un dossier du référentiel et les précharger dans le champ :
 
 1. Créez un dossier sling (`sling:Folder`)
 Par exemple, `/etc/designs/<myDesign>/formlistvalues`
@@ -127,7 +127,7 @@ Vous pouvez ajouter votre propre action sous `/apps` en procédant comme suit :
 
    1. Ajoutez des champs afin que l’auteur puisse modifier la boîte de dialogue des formulaires une fois l’action sélectionnée.
 
-1. Dans le dossier , créez :
+1. Dans le dossier , créez l’une des options suivantes :
 
    1. Créer un script de publication.
 Le nom du script est `post.POST.<extension>`, par exemple : `post.POST.jsp`
@@ -180,7 +180,7 @@ Ce script est appelé lorsque le formulaire est rendu. Il peut être utilisé po
 Le nom du script est `cleanup.<extension>`, par exemple : `cleanup.jsp`
 Ce script peut être utilisé pour effectuer le nettoyage.
 
-1. Utilisez la variable **Forms** dans un parsys. Le **Type d’action** comprend désormais votre nouvelle action.
+1. Utilisez la variable **Forms** dans un système de paragraphes (parsys). La variable **Type d’action** comprend désormais votre nouvelle action.
 
    >[!NOTE]
    >
@@ -219,11 +219,11 @@ Vous pouvez ajouter vos propres contraintes pour un champ spécifique (sous `/ap
 
 1. Les scripts suivants peuvent s’avérer nécessaires à l’intérieur de ce dossier :
 
-   * Un script de validation client : Le nom du script est `clientvalidation.<extension>`, par exemple : `clientvalidation.jsp`
+   * Un script de validation client : le nom du script est `clientvalidation.<extension>`, par exemple : `clientvalidation.jsp`
 Il est appelé lorsque le champ de formulaire est rendu. Il peut être utilisé pour créer le JavaScript client afin de valider le champ sur le client.
 
-   * Un script de validation du serveur : Le nom du script est `servervalidation.<extension>`, par exemple : `servervalidation.jsp`
-Il est appelé lorsque le formulaire est envoyé. Il peut être utilisé pour valider le champ sur le serveur après son envoi.
+   * Un script de validation du serveur : le nom du script est `servervalidation.<extension>`, par exemple : `servervalidation.jsp`
+Il est appelé lors de l’envoi du formulaire. Il peut être utilisé pour valider le champ sur le serveur après son envoi.
 
 >[!NOTE]
 >
@@ -277,7 +277,7 @@ Dans JavaScript, les conditions utilisent la valeur de la propriété Nom de l�
 
 1. Sélectionner **Afficher/masquer** pour ouvrir le **Modifier Afficher / Masquer les règles** dialog :
 
-   * Dans la première liste déroulante, sélectionnez l’une des options suivantes : **Afficher** ou **Masquer** pour indiquer si vos conditions déterminent si le composant doit être affiché ou masqué.
+   * Dans la première liste déroulante, sélectionnez **Afficher** ou **Masquer** pour indiquer si vos conditions déterminent si le composant doit être affiché ou masqué.
 
    * Dans la liste déroulante située à la fin de la ligne supérieure, sélectionnez :
 
