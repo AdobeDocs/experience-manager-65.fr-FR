@@ -1,16 +1,16 @@
 ---
 title: Analytics avec des fournisseurs externes
-description: Découvrez Analytics avec des fournisseurs externes.
+description: Découvrez comment configurer votre propre instance de fragments de code Analytics générique pour définir une nouvelle configuration de service.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 41%
+source-wordcount: '446'
+ht-degree: 40%
 
 ---
 
@@ -53,7 +53,7 @@ Ces fragments de code permettent de collecter des données et de générer des r
 
 >[!CAUTION]
 >
->Le site de démonstration de Geometrixx-Outdoors est configuré de sorte que les attributs fournis dans les Propriétés de la page soient ajoutés au code source HTML (juste au-dessus de la balise `</html>` (balise de fin) dans la balise correspondante `js` script.
+>Le site de démonstration de Geometrixx-Outdoors est configuré de sorte que les attributs fournis dans les Propriétés de la page soient ajoutés au code source HTML (juste au-dessus de la balise `</html>` (balise de fin) dans la balise `js` script.
 >
 >Si votre propre dossier `/apps` n’hérite pas du composant Page par défaut (`/libs/foundation/components/page`), vous (ou les développeurs) devez vous assurer que les scripts `js` sont inclus, par exemple, en incluant `cq/cloudserviceconfigs/components/servicescomponents` ou en utilisant un mécanisme similaire.
 >
@@ -64,7 +64,7 @@ Ces fragments de code permettent de collecter des données et de générer des r
 Pour la configuration de base, suivez les étapes suivantes :
 
 1. Ouvrez la console **Outils**.
-1. Dans le volet de gauche, développez **Configurations de Cloud Services**.
+1. Dans le volet de gauche, développez **Configurations de Cloud Service**.
 1. Double-cliquez **Fragment de code Analytics générique** pour ouvrir la page :
 
    ![Extrait de code Analytics générique](assets/analytics_genericoverview.png)
@@ -90,7 +90,7 @@ Après avoir créé la configuration du service, vous devez maintenant configure
    ![Ajout d’un service cloud](assets/analytics_selectservice.png)
 
 1. Cliquez sur **OK** pour enregistrer.
-1. Vous revenez alors au **Cloud Services** . Le **fragment de code Analytics générique** figure maintenant dans la liste avec le message `Configuration reference missing`. Utilisez la liste déroulante pour sélectionner votre instance de service spécifique. Par exemple, google-analytics :
+1. Vous revenez alors à la variable **Cloud Service** . Le **fragment de code Analytics générique** figure maintenant dans la liste avec le message `Configuration reference missing`. Utilisez la liste déroulante pour sélectionner votre instance de service spécifique. Par exemple, google-analytics :
 
    ![Ajout de la configuration du service cloud](assets/analytics_selectspecificservice.png)
 

@@ -1,16 +1,16 @@
 ---
 title: Exportation de fragments d’expérience vers Adobe Target
-description: Exportation de fragments d’expérience vers Adobe Target
+description: Découvrez comment exporter des fragments d’expérience Adobe Experience Manager (AEM) vers Adobe Target.
 contentOwner: carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: c6eee2e647a0c5e6f5a8dd7a1a13d18218fdf10b
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 67%
+source-wordcount: '1540'
+ht-degree: 66%
 
 ---
 
@@ -83,7 +83,7 @@ Plusieurs actions sont requises :
 
 ## Ajoutez la configuration du cloud {#add-the-cloud-configuration}
 
-Avant d’exporter un fragment, vous devez ajouter le **Configuration du cloud** pour **Adobe Target** au fragment ou au dossier. Vous pouvez ainsi :
+Avant d’exporter un fragment, vous devez ajouter la variable **Configuration du cloud** pour **Adobe Target** au fragment ou au dossier. Vous pouvez ainsi :
 
 * définir les options de format à utiliser pour l&#39;export ;
 * sélectionner un espace de travail Target comme destination ;
@@ -233,11 +233,11 @@ Voici un pseudo-exemple du code HTML d’une offre de fragment d’expérience 
 
 * http://www.your-aem-instance.com/content/experience-fragments/my-offers/my-xf-offer.nocloudconfigs.atoffer.html
 
-Le `nocloudconfigs` Le sélecteur est défini à l’aide de HTL et peut être superposé en le copiant à partir de :
+La variable `nocloudconfigs` Le sélecteur est défini à l’aide de HTL et peut être superposé en le copiant à partir de :
 
 * /libs/cq/experience-fragments/components/xfpage/nocloudconfigs.html
 
-Le `atoffer` Le sélecteur est appliqué après traitement à l’aide de [Sling Rewriter](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). Vous pouvez utiliser les deux pour supprimer les bibliothèques clientes.
+La variable `atoffer` Le sélecteur est appliqué après traitement à l’aide de [Sling Rewriter](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). Vous pouvez utiliser les deux pour supprimer les bibliothèques clientes.
 
 ### Exemple {#example}
 
@@ -249,7 +249,7 @@ Le `atoffer` Le sélecteur est appliqué après traitement à l’aide de [Sling
 
 #### Recouvrements {#overlays}
 
-Dans cet exemple particulier, les [recouvrements](/help/sites-developing/overlays.md) inclus suppriment les bibliothèques clientes *et* le code html superflu. Nous partons du principe que vous avez déjà créé le type de modèle de fragment d’expérience. Les fichiers nécessaires à la copie à partir de `/libs/cq/experience-fragments/components/xfpage/` inclure :
+Dans cet exemple particulier, les [recouvrements](/help/sites-developing/overlays.md) inclus suppriment les bibliothèques clientes *et* le code html superflu. Nous partons du principe que vous avez déjà créé le type de modèle de fragment d’expérience. Les fichiers nécessaires à la copie depuis `/libs/cq/experience-fragments/components/xfpage/` inclure :
 
 * `nocloudconfigs.html`
 * `head.nocloudconfigs.html`
