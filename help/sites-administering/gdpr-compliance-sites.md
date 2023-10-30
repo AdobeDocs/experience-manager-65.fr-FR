@@ -35,11 +35,11 @@ Pour plus d’informations, consultez la [page consacrée au RGPD du centre de c
 
 ## Serveur de création {#author-server}
 
-Les comptes utilisateur et le contenu généré par les utilisateurs et utilisatrices sur le serveur de création sont abordés dans la [documentation RGPD de Platform](/help/managing/data-protection-and-privacy.md).
+Les comptes d’utilisateurs et le contenu généré par les utilisateurs et utilisatrices sur le serveur de création sont abordés dans la [documentation RGPD de Platform](/help/managing/data-protection-and-privacy.md).
 
 ## Serveur de publication {#publish-server}
 
-Les comptes utilisateur utilisés pour authentifier les visiteurs et visiteuses sur le site et le contenu généré par les utilisateurs et utilisatrices sur le serveur de publication sont abordés dans la [documentation RGPD de Platform](/help/managing/data-protection-and-privacy.md).
+Les comptes d’utilisateurs utilisés pour authentifier les visiteurs et visiteuses sur le site et le contenu généré par les utilisateurs et utilisatrices sur le serveur de publication sont abordés dans la [documentation RGPD de Platform](/help/managing/data-protection-and-privacy.md).
 
 Par défaut, les composants AEM Sites ne stockent pas les données de formulaires saisies par les visiteurs sur le serveur de publication. Il est recommandé de transférer les données vers un système tiers ou vers Adobe Campaign pour traitement ultérieur.
 
