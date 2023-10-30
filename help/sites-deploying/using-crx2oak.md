@@ -1,20 +1,16 @@
 ---
 title: Utiliser l’outil de migration CRX2Oak
-seo-title: Using the CRX2Oak Migration Tool
-description: Découvrez comment utiliser l’outil de migration CRX2Oak avec AEM.
-seo-description: Learn how to use the CRX2Oak migration tool.
-uuid: 9b788981-4ef0-446e-81f0-c327cdd3214b
+description: Découvrez comment utiliser l’outil de migration CRX2Oak avec Adobe Experience Manager. L’outil est conçu pour vous aider à migrer les données entre différents référentiels.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
-discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
 feature: Upgrading
 exl-id: ef3895b9-8d35-4881-8188-c864ae3f0b4c
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: ee1134be6ad81cc6638ee9004f7dad475a6cc67d
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 99%
+source-wordcount: '1208'
+ht-degree: 67%
 
 ---
 
@@ -31,7 +27,7 @@ Vous pouvez télécharger la version la plus récente de crx2oak à partir du r�
 
 >[!NOTE]
 >
->Pour plus d’informations sur Apache Oak et les concepts clés de persistance AEM, voir [Présentation de la plateforme AEM](/help/sites-deploying/platform.md).
+>Pour plus d’informations sur Apache Oak et les concepts clés de la persistance Adobe Experience Manager (AEM), voir [Présentation de la plateforme AEM](/help/sites-deploying/platform.md).
 
 ## Cas d’utilisation de migration {#migration-use-cases}
 
@@ -51,17 +47,17 @@ Le diagramme ci-dessous montre toutes les combinaisons de migration possibles pr
 
 CRX2Oak est appelé lors des mises à niveau d’AEM de manière à ce que l’utilisateur ou l’utilisatrice puisse spécifier un profil de migration prédéfini qui automatise la reconfiguration des modes de persistance. Il s’agit du mode de démarrage rapide.
 
-Il peut également être exécuté séparément s’il nécessite davantage de personnalisation. Notez toutefois que dans ce mode, les modifications sont apportées uniquement au référentiel et toute reconfiguration supplémentaire d’AEM doit être effectuée manuellement. Il s’agit alors du mode autonome.
+Il peut également être exécuté séparément s’il nécessite davantage de personnalisation. Toutefois, dans ce mode, les modifications ne sont apportées qu’au référentiel et toute reconfiguration supplémentaire de l’AEM doit être effectuée manuellement. Il s’agit alors du mode autonome.
 
-Notez également qu’avec les paramètres par défaut en mode autonome, seul le magasin de nœuds sera migré et le nouveau référentiel réutilisera l’ancien stockage binaire.
+Il convient également de noter qu’avec les paramètres par défaut en mode autonome, seul le magasin de noeuds est migré et le nouveau référentiel réutilise l’ancien stockage binaire.
 
 ### Mode de démarrage rapide automatisé {#automated-quickstart-mode}
 
-Depuis AEM 6.3, CRX2Oak est en mesure de gérer les profils de migration définis par les utilisateurs ou utilisatrices qui peuvent être configurés avec toutes les options de migration déjà disponibles. Cela offre une flexibilité supérieure et la possibilité d’automatiser la configuration d’AEM, des fonctionnalités qui ne sont pas disponibles si vous utilisez l’outil en mode autonome.
+Depuis AEM 6.3, CRX2Oak peut gérer les profils de migration définis par l’utilisateur qui peuvent être configurés avec toutes les options de migration déjà disponibles. Cela offre une flexibilité supérieure et la possibilité d’automatiser la configuration d’AEM, des fonctionnalités qui ne sont pas disponibles si vous utilisez l’outil en mode autonome.
 
-Pour passer CRX2Oak en mode de démarrage rapide, vous devez définir le chemin d’accès au dossier crx-quickstart dans le répertoire d’installation AEM via cette variable d’environnement du système d’exploitation :
+Pour passer de CRX2Oak au mode de démarrage rapide, définissez le chemin d’accès au dossier crx-quickstart dans le répertoire d’installation AEM au moyen de cette variable d’environnement du système d’exploitation :
 
-**Pour les systèmes UNIX et macOS :**
+**Pour les systèmes UNIX et macOS :**
 
 ```shell
 export SLING_HOME="/path/to/crx-quickstart"
@@ -79,15 +75,15 @@ La migration peut être interrompue à tout moment, avec la possibilité de la r
 
 #### Logique de mise à niveau personnalisable {#customizable-upgrade-logic}
 
-La logique Java personnalisé peut également être mise en œuvre en utilisant `CommitHooks`. Les classes `RepositoryInitializer` personnalisées peuvent être mises en œuvre pour initialiser le référentiel avec des valeurs personnalisées.
+La logique Java™ personnalisée peut être implémentée à l’aide de `CommitHooks`. Personnalisé `RepositoryInitializer` peuvent être implémentées pour initialiser le référentiel avec des valeurs personnalisées.
 
 #### Prise en charge des opérations de mappage de mémoire {#support-for-memory-mapped-operations}
 
-CRX2Oak prend également en charge les opérations de mappage de mémoire par défaut. Le mappage de mémoire améliore considérablement les performances et doit être utilisé dans la mesure du possible.
+CRX2Oak prend également en charge les opérations mappées en mémoire par défaut. Le mappage de mémoire améliore considérablement les performances et doit être utilisé dans la mesure du possible.
 
 >[!CAUTION]
 >
->Notez toutefois que les opérations de mappage de la mémoire ne sont pas prises en charge pour les plateformes Windows. Il est donc recommandé d’ajouter le paramètre **--disable-mmap** lors de la migration sous Windows.
+>Notez toutefois que les opérations mappées en mémoire ne sont pas prises en charge pour les plateformes Windows. Il est donc recommandé d’ajouter le paramètre **--disable-mmap** lors de la migration sous Windows.
 
 #### Migration sélective de contenu {#selective-migration-of-content}
 
@@ -97,15 +93,15 @@ S’il existe des parties de contenu qui ne sont pas nécessaires sur la nouvell
 
 #### Fusion du chemin {#path-merging}
 
-Si la copie des données doit être partagée sur deux référentiels différents et que vous disposez d’un chemin de contenu différent sur les deux instances, vous pouvez le définir dans le paramètre `--merge-path`. Grâce à cela, CRX2Oak copie uniquement les nouveaux nœuds dans le référentiel de destination tout en gardant les anciens nœuds en place. 
+Si les données doivent être copiées entre deux référentiels et que vous disposez d’un chemin de contenu différent sur les deux instances, vous pouvez le définir dans la variable `--merge-path` . Lorsque vous le faites, CRX2Oak copie uniquement les nouveaux noeuds dans le référentiel de destination et conserve les anciens en place.
 
 ![chlimage_1-152](assets/chlimage_1-152.png)
 
 #### Prise en charge des versions {#version-support}
 
-Par défaut, AEM crée une version de chaque page ou nœud qui est modifié(e) et la stocke dans le référentiel. Les versions peuvent ensuite être utilisées pour restaurer la page à un état antérieur.
+Par défaut, AEM crée une version de chaque noeud ou page qui est modifié et la stocke dans le référentiel. Les versions peuvent ensuite être utilisées pour restaurer la page à un état antérieur.
 
-Toutefois, ces versions ne sont jamais purgées, même si la page d’origine est supprimée. Les migrations effectuées avec des référentiels utilisés depuis très longtemps peuvent avoir besoin de traiter beaucoup de données redondantes, à cause des versions orphelines.
+Toutefois, ces versions ne sont jamais purgées, même si la page d’origine est supprimée. Lorsque vous gérez des référentiels qui sont en service depuis longtemps, la migration peut retraiter des données redondantes causées par des versions orphelines.
 
 Il peut être utile pour ce type de problème d’inclure le paramètre `--copy-versions`. Celui-ci peut être utilisé pour ignorer les nœuds de version durant la migration ou la copie d’un référentiel.
 
@@ -117,7 +113,7 @@ Les deux paramètres prennent également en charge le format de date `YYYY-MM-DD
 
 #### Version open source {#open-source-version}
 
-Une version open source de CRX2Oak est disponible sous la forme oak-upgrade. Elle prend en charge toutes les fonctionnalités, à l’exception des suivantes :
+Une version Open Source de CRX2Oak est disponible sous la forme d’une mise à niveau Oak. Elle prend en charge toutes les fonctionnalités, à l’exception des suivantes :
 
 * prise en charge de CRX2 ;
 * prise en charge des profils de migration ;
@@ -136,7 +132,7 @@ Consultez la [documentation Apache](https://jackrabbit.apache.org/oak/docs/migra
 
 * `--src-user:` : utilisateur pour la source RDB
 
-* `--user` : utilisateur pour la cible RDB
+* `--user`: utilisateur pour la RDB cible
 
 * `--password` : mot de passe pour la cible RDB.
 
@@ -146,11 +142,11 @@ Consultez la [documentation Apache](https://jackrabbit.apache.org/oak/docs/migra
 * `--fail-on-error` : impose l’échec de la migration si les nœuds ne peuvent pas être lus à partir du référentiel source.
 * `--ldap` : effectue la migration des utilisateurs LDAP d’une instance CQ 5.x vers une instance basée sur Oak. Pour que cela fonctionne, le fournisseur d’identité dans la configuration Oak doit être nommé ldap. Pour plus d’informations, voir la [documentation LDAP](/help/sites-administering/ldap-config.md).
 
-* `--ldap-config:` Utilisez ce paramètre conjointement avec le paramètre `--ldap` pour les référentiels CQ 5.x qui ont utilisé plusieurs serveurs ldap pour l’authentification. Vous pouvez l’utiliser pour pointer vers les fichiers de configuration CQ 5.x `ldap_login.conf` ou `jaas.conf`. Le format est `--ldapconfig=path/to/ldap_login.conf`.
+* `--ldap-config:` Utilisez cette méthode avec la méthode `--ldap` pour les référentiels CQ 5.x qui utilisaient plusieurs serveurs LDAP pour l’authentification. Vous pouvez l’utiliser pour pointer vers les fichiers de configuration CQ 5.x `ldap_login.conf` ou `jaas.conf`. Le format est `--ldapconfig=path/to/ldap_login.conf`.
 
 ### Options d’entrepôt de versions {#version-store-options}
 
-* `--copy-orphaned-versions` : permet d’ignorer la copie des versions orphelines. Les paramètres pris en charge sont : `true`, `false` et `yyyy-mm-dd`. La valeur par défaut est `true`.
+* `--copy-orphaned-versions` : permet d’ignorer la copie des versions orphelines. Les paramètres pris en charge sont les suivants : `true`, `false`, et `yyyy-mm-dd`. La valeur par défaut est `true`.
 
 * `--copy-versions:` : copie le stockage de version. Paramètres : `true`, `false`, `yyyy-mm-dd`. La valeur par défaut est `true`.
 
@@ -186,7 +182,7 @@ Consultez la [documentation Apache](https://jackrabbit.apache.org/oak/docs/migra
 
 ## Débogage {#debugging}
 
-Vous pouvez également activer les informations de débogage pour le processus de migration afin de résoudre les éventuels problèmes pouvant survenir pendant le processus. Vous pouvez effectuer cette opération différemment selon le mode sur lequel vous souhaitez exécuter l’outil :
+Vous pouvez également activer les informations de débogage pour le processus de migration afin de résoudre les problèmes qui peuvent apparaître pendant le processus. Vous pouvez effectuer cette opération différemment selon le mode sur lequel vous souhaitez exécuter l’outil :
 
 <table>
  <tbody>
@@ -196,11 +192,11 @@ Vous pouvez également activer les informations de débogage pour le processus d
   </tr>
   <tr>
    <td>Mode démarrage rapide</td>
-   <td>Vous pouvez ajouter les options <strong>--log-level TRACE</strong> ou <strong>--log-level DEBUG</strong> à la ligne de commande lors de l’exécution de CRX2Oak. Dans ce mode, les journaux sont redirigés automatiquement vers le <strong>fichier upgrade.log</strong>.</td>
+   <td>Vous pouvez ajouter les options <strong>--log-level TRACE</strong> ou <strong>--log-level DEBUG</strong> à la ligne de commande lors de l’exécution de CRX2Oak. Dans ce mode, les journaux sont automatiquement redirigés vers le <strong>fichier upgrade.log</strong>.</td>
   </tr>
   <tr>
    <td>Mode autonome</td>
-   <td><p>Ajoutez les options <strong>--trace</strong> à la ligne de commande CRX2Oak pour afficher les événements TRACE sur la sortie standard (vous devez rediriger les journaux à l’aide du caractère de redirection : commande ’&gt;’ ou ’tee’ pour une inspection ultérieure).</p> </td>
+   <td><p>Ajoutez la variable <strong>—trace</strong> options de la ligne de commande CRX2Oak afin que vous puissiez afficher les événements de TRACE sur la sortie standard (vous devez rediriger les journaux vous-même à l’aide du caractère de redirection : commande '&gt;' ou 'tee' pour une inspection ultérieure).</p> </td>
   </tr>
  </tbody>
 </table>
