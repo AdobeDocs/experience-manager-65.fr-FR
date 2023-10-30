@@ -139,7 +139,7 @@ Si vous indiquez un **nom** de page lors de la création d’une page, AEM [vali
 >
 >Vous devez éviter d’utiliser un code à deux lettres tel que défini par la norme ISO-639-1 comme nom de page, sauf s’il s’agit d’une racine de langue.
 >
->Pour plus de détails, reportez-vous à la rubrique [Préparation du contenu de traduction](/help/sites-administering/tc-prep.md).
+>Pour plus d’informations, voir [Préparation du contenu pour la traduction](/help/sites-administering/tc-prep.md).
 
 ### Modèles {#templates}
 

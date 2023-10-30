@@ -7,7 +7,7 @@ exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '1573'
-ht-degree: 75%
+ht-degree: 84%
 
 ---
 
@@ -48,11 +48,11 @@ Créez une configuration de cloud qui connecte AEM à votre fournisseur de servi
 >* [Traduction automatique AEM](https://www.adobe.com/go/aem-machine-translation-connectors)
 >
 
-Une fois que vous avez installé un package de connecteur, vous pouvez créer une configuration de cloud pour le connecteur. En général, vous devez fournir vos informations d’identification afin de vous authentifier auprès du service de traduction. Pour plus d’informations sur l’ajout d’une configuration cloud pour le connecteur Microsoft Translator, voir [Intégration avec Microsoft Translator](/help/sites-administering/tc-msconf.md).
+Une fois que vous avez installé un package de connecteur, vous pouvez créer une configuration de cloud pour le connecteur. En général, vous devez fournir vos informations d’identification afin de vous authentifier auprès du service de traduction. Pour plus d’informations sur l’ajout d’une configuration cloud pour le connecteur Microsoft Translator, voir [Intégration avec Microsoft Translator](/help/sites-administering/tc-msconf.md).
 
 Vous pouvez créer plusieurs configurations de cloud pour le même connecteur, si nécessaire. Par exemple, créez une configuration pour chacun des comptes ou projets que vous avez avec le même fournisseur.
 
-Après avoir configuré une connexion, vous pouvez créer la configuration de la structure d’intégration de traduction qui l’utilise.
+Après avoir configuré une connexion, vous pouvez créer la configuration du framework d’intégration de traduction qui l’utilise.
 
 ## Création d’une configuration de l’intégration de traduction {#creating-a-translation-integration-configuration}
 
@@ -62,7 +62,7 @@ Créez une configuration de structure d’intégration de traduction pour spéci
 * Si une traduction humaine ou automatique doit être réalisée
 * S’il est nécessaire de traduire un autre contenu associé à une page ou à une ressource, comme des balises
 
-Après avoir créé une configuration de structure, vous associez la configuration de cloud aux pages à traduire en fonction de la configuration. Lorsque le processus de traduction est démarré, le processus de traduction se déroule en fonction de la configuration de structure associée.
+Après avoir créé une configuration de structure, vous associez la configuration de cloud aux pages à traduire en fonction de la configuration. Lorsque le processus de traduction est démarré, il se déroule en fonction de la configuration de framework associée.
 
 Si différentes parties de votre site web impliquent différentes exigences en matière de traduction, créez plusieurs configurations de structure en conséquence. Par exemple, un site web multilingue inclut des versions en anglais, en espagnol et en japonais. Le propriétaire du site a recours à deux fournisseurs de services de traduction pour les traductions en espagnol et en japonais. Par conséquent, deux configurations de la structure sont définies. Chaque configuration utilise un fournisseur de services de traduction différent.
 
@@ -191,12 +191,12 @@ Les propriétés des ressources contrôlent la façon dont les ressources sont c
 
 ## Configuration des pages pour la traduction {#configuring-pages-for-translation}
 
-Pour configurer la traduction de vos pages source dans d’autres langues, associez les pages aux configurations cloud suivantes :
+Pour configurer la traduction de vos pages source dans d’autres langues, associez les pages aux configurations cloud suivantes :
 
-* Configuration cloud qui connecte AEM à votre fournisseur de traduction.
-* La structure d’intégration de traduction qui configure les détails de la traduction.
+* La configuration cloud qui connecte AEM à votre fournisseur de services de traduction.
+* Le framework d’intégration de traduction qui configure les détails de la traduction.
 
-Notez que la configuration de cloud de la structure d’intégration de traduction identifie la configuration de cloud à utiliser pour la connexion au fournisseur de services. Lorsque vous associez une page source à une configuration de cloud de structure, la page doit être associée à la configuration de cloud du fournisseur de services utilisée par la configuration de cloud de structure.
+Notez que la configuration de cloud de la structure d’intégration de traduction identifie la configuration de cloud à utiliser pour la connexion au fournisseur de services. Lorsque vous associez une page source à une configuration cloud de framework, la page doit être associée à la configuration cloud du fournisseur utilisée par la configuration cloud de framework.
 
 Lorsque vous associez une page à une configuration de cloud, les descendants de la page héritent de l’association. Par exemple, si vous associez la page /content/geometrixx/en/products à un framework d’intégration de traduction, la page Produits et toutes les pages en dessous sont converties en fonction du framework.
 

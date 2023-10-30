@@ -30,7 +30,7 @@ Voir [Prise en main d’AEM Communities](/help/communities/getting-started.md) o
 >
 >Les menus principaux des communautés pour la création de [sites communautaires](/help/communities/sites-console.md), [modèles de site de communauté](/help/communities/sites.md), [modèles de groupe de communautés](/help/communities/tools-groups.md), et [fonctions de communauté](/help/communities/functions.md) sont utilisables uniquement dans l’environnement de création.
 
-## Prérequis {#prerequisites}
+## Conditions préalables requises {#prerequisites}
 
 Avant de créer un site de communauté, il s’agit de *required* à :
 

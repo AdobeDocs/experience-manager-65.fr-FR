@@ -11,7 +11,7 @@ ht-degree: 94%
 
 # Création d’expériences commerciales {#authoring-commerce-experiences}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Le module complémentaire CIF étend la création d’AEM avec des fonctionnalités spécifiques au commerce. Cela permet aux auteurs de créer et de gérer efficacement des expériences liées au commerce en accédant aux données et au contenu des produits sans quitter le contexte.
 

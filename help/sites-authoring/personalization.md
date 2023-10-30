@@ -5,7 +5,7 @@ exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 63%
+ht-degree: 65%
 
 ---
 
@@ -60,6 +60,6 @@ AEM fournit un moteur de ciblage intégré qui traite les requêtes de page et d
 Avec le moteur de ciblage Adobe Target, les informations recueillies suite aux visites de page font l’objet d’un suivi dans Adobe Target.
 
 * Avec ce moteur de ciblage, vous utilisez les segments que vous importez à partir d’Adobe Target pour définir les audiences de vos expériences.
-* Les activités qui utilisent le moteur Adobe Target sont [synchronisé avec Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
+* Les activités qui utilisent le moteur Adobe Target sont [synchronisées avec Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
 
 Vous pouvez utiliser ce moteur lorsque vous avez [intégré Adobe Target](/help/sites-administering/opt-in.md).

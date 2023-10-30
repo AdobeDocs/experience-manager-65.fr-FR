@@ -1,5 +1,5 @@
 ---
-title: Configuration des formulaires de recherche
+title: Configurer des formulaires de recherche
 description: Découvrez comment utiliser Search Forms pour personnaliser la sélection des prédicats de recherche utilisés dans les panneaux de recherche disponibles dans AEM consoles et panneaux de l’environnement de création.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,7 +9,7 @@ exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
 source-wordcount: '2073'
-ht-degree: 68%
+ht-degree: 74%
 
 ---
 
@@ -20,7 +20,7 @@ Utilisez des **formulaires de recherche** pour personnaliser la sélection des p
 
 Une [plage de prédicats](#predicates-and-their-settings) prête à l’emploi est disponible. Vous pouvez ajouter plusieurs prédicats, y compris (entre autres) le prédicat Propriété, pour rechercher des ressources correspondant à une seule propriété que vous avez spécifiée. Ou, le prédicat Options permet de rechercher des ressources qui correspondent à une ou plusieurs valeurs que vous spécifiez pour une propriété spécifique.
 
-Vous pouvez [configurer les formulaires de recherche](#configuring-your-search-forms) utilisés dans différentes consoles et l’explorateur des ressources (lors de la modification des pages). La variable [boîtes de dialogue de configuration de ces formulaires](#configuring-your-search-forms) est accessible à partir de :
+Vous pouvez [configurer les formulaires de recherche](#configuring-your-search-forms) utilisés dans différentes consoles et l’explorateur des ressources (lors de la modification des pages). Les [boîtes de dialogue de configuration de ces formulaires](#configuring-your-search-forms) sont accessible via :
 
 * **Outils**
 
@@ -399,8 +399,8 @@ Si cette case est cochée, les options sont présentées sous forme de cases à 
 
 1. Accédez à **Outils** &quot;  **Général** &quot; **Rechercher dans Forms**.
 
-1. Sélectionnez la configuration que vous souhaitez personnaliser.
-1. Utilisez la variable **Modifier** pour ouvrir la configuration à mettre à jour.
+1. Sélectionnez la configuration à personnaliser.
+1. Cliquez sur l’icône **Modifier** pour ouvrir la configuration à mettre à jour.
 1. Si vous souhaitez effectuer une nouvelle personnalisation, vous souhaiterez probablement [ajouter de nouveaux champs de prédicat et définir les paramètres](#add-edit-a-predicate-field-and-define-field-settings) selon les besoins. Si une personnalisation existante existe, vous pouvez sélectionner un champ existant et [mettre à jour les paramètres](#add-edit-a-predicate-field-and-define-field-settings).
 1. Sélectionnez **Terminé** pour enregistrer la configuration.
 
@@ -413,9 +413,9 @@ Si cette case est cochée, les options sont présentées sous forme de cases à 
 
 ### Ajout et modification d’un champ de prédicat et définition des paramètres de champ {#add-edit-a-predicate-field-and-define-field-settings}
 
-Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs paramètres :
+Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs paramètres :
 
-1. [Ouvrir la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
+1. [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
 1. Si vous souhaitez ajouter un champ, ouvrez le **Sélectionner un prédicat** et faites glisser le prédicat requis vers l’emplacement requis. Par exemple, le **prédicat de période** :
 
    ![Modification d’un formulaire de recherche](assets/chlimage_1-375.png)
@@ -450,8 +450,8 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 
 ### Suppression d’un champ de prédicat {#deleting-a-predicate-field}
 
-1. [Ouvrir la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
-1. Sélectionnez le champ de prédicat (à droite), ouvrez le **Paramètres** , puis sélectionnez l’option **Supprimer** (en bas à gauche).
+1. [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
+1. Sélectionnez le champ de prédicat (à droite), ouvrez l’onglet **Paramètres**, puis sélectionnez l’icône **Supprimer** (en bas à gauche).
 
    ![Icône Supprimer](do-not-localize/chlimage_1-32.png)
 
@@ -473,9 +473,9 @@ Les configurations personnalisées doivent être supprimées à partir de la con
 
    ![Suppression d’un formulaire](assets/chlimage_1-378.png)
 
-1. La configuration personnalisée est supprimée et la valeur par défaut est rétablie (ceci est indiqué par la réapparition du symbole de cadenas dans la console).
+1. La configuration personnalisée est supprimée et la valeur par défaut est rétablie (le symbole de cadenas réapparaît dans la console).
 
-### Ajout de prédicats d’options {#adding-options-predicates}
+### Ajouter des prédicats d’options {#adding-options-predicates}
 
 Les prédicats d’options (options, propriété d’options) vous permettent de configurer un élément à rechercher. Ils sont utilisés pour rechercher quelque chose directement sous la page ; par exemple, une propriété sur le noeud de page.
 
@@ -509,7 +509,7 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
    Ensuite, cliquez/appuyez sur le bouton **Modifier les formulaires de recherche** Icône
 
 1. Selon la configuration, ajoutez une **Options** ou **Propriété Options** à la configuration.
-1. Mettez à jour les champs, notamment :
+1. Mettez à jour les champs, notamment :
 
    * **Nom de la propriété**
 
@@ -526,7 +526,7 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
    ![Ajout d’un chemin de propriété](assets/chlimage_1-380.png)
 
 1. Sélectionnez **Terminé** pour enregistrer la configuration.
-1. Accédez à la console appropriée (dans cet exemple, **Sites**) et ouvrez le rail **Rechercher**. Les formulaires de recherche nouvellement définis, ainsi que les différentes options, sont visibles. Sélectionnez l’option requise pour afficher les résultats de la recherche :
+1. Accédez à la console appropriée (dans cet exemple, **Sites**) et ouvrez le rail **Rechercher**. Les formulaires de recherche qui viennent d’être définis, ainsi que les différentes options, sont visibles. Sélectionnez l’option requise pour afficher les résultats de la recherche :
 
    ![Les résultats finaux](assets/chlimage_1-381.png)
 

@@ -11,7 +11,7 @@ ht-degree: 95%
 
 # En-têtes HTTP personnalisés {#custom-http-headers}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Pour mieux contrôler leur serveur principal, les auteurs peuvent configurer des en-têtes HTTP personnalisés qui seraient envoyés au moteur de commerce, ainsi que ceux déjà envoyés par CIF. Les cas d’utilisation courants incluent des configurations multi-magasin dans lesquelles vous pouvez utiliser des en-têtes HTTP pour contrôler la réponse du serveur principal de commerce.
 

@@ -5,7 +5,7 @@ exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '1872'
-ht-degree: 58%
+ht-degree: 62%
 
 ---
 
@@ -48,17 +48,17 @@ Les propriétés sont réparties sur plusieurs onglets.
 
   Appliquez une identité de marque cohérente sur plusieurs pages en ajoutant un rappel à chaque titre de page. Cette fonctionnalité nécessite l’utilisation du composant de page de la version 2.14.0, ou ultérieure, des [composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 
-   * **Remplacer** : cochez la case pour définir le titre de rappel sur cette page.
-      * La valeur est héritée par toutes les pages enfants, sauf si elles disposent également de la variable **Remplacement** valeurs définies.
+   * **Remplacer** : cochez la case pour définir le slug de marque sur cette page.
+      * La valeur est héritée par toutes les pages enfants, à moins que leurs valeurs de **remplacement** ne soient également définies.
    * **Remplacer la valeur** : texte de rappel à ajouter au titre de la page.
       * La valeur est ajoutée au titre de la page après un caractère de barre verticale, par exemple « La Toscane en vélo | Toujours prêt pour le WKND »
 * **Titre de la page**
 
-  Titre à utiliser sur la page. Généralement utilisé par les composants de titre. Si elle est vide, la variable **Titre** est utilisée.
+  Titre à utiliser sur la page. Généralement utilisé par les composants de titre. Si rien n’est indiqué, le **titre** est utilisé.
 
 * **Titre de navigation**
 
-  Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis). Si elle est vide, la variable **Titre** est utilisée.
+  Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis). Si rien n’est indiqué, le **titre** est utilisé.
 
 * **Sous-titre**
 
@@ -211,7 +211,7 @@ Définition de la variation de fragment d’expérience utilisée pour générer
   Sélectionnez une [marque pour spécifier la portée du ciblage](/help/sites-authoring/target-adobe-campaign.md).
 
   >[!NOTE]
-  >Cette option nécessite que le compte utilisateur figure dans le groupe `Target Adminstrators`.
+  >Cette option nécessite que le compte d’utilisateur figure dans le groupe `Target Adminstrators`.
 
 ### Autorisations {#permissions}
 
@@ -279,7 +279,7 @@ Cliquez ou appuyez sur **Propriétés** pour définir les propriétés de la pag
    * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Mode de sélection](/help/sites-authoring/basic-handling.md#selectionmode)
 
-   Les propriétés de la page s’affichent à l’aide des onglets appropriés.
+   Les propriétés de la page sont affichées dans les onglets appropriés.
 
 1. Affichez ou modifiez les propriétés selon les besoins.
 
@@ -319,7 +319,7 @@ Vous pouvez sélectionner plusieurs pages à des fins de modification en bloc de
 
 ![epp-01](assets/epp-01.png)
 
-Après avoir sélectionné les pages, puis cliqué ou appuyé sur l’icône **Option Propriétés**, les propriétés en bloc s’affichent :
+Après avoir sélectionné les pages, puis cliqué ou appuyé sur l’option **Propriétés**, les propriétés en bloc s’affichent :
 
 ![epp-02](assets/epp-02.png)
 
@@ -328,7 +328,7 @@ Vous ne pouvez modifier en masse que des pages qui :
 * Partagent le même type de ressource.
 * Ne font pas partie d’une Live Copy.
 
-   * Si l’une des pages fait partie d’une Live Copy, un message s’affiche lorsque les propriétés sont ouvertes.
+   * Si l’une de ces pages fait partie d’une Live Copy, un message s’affiche lorsque les propriétés sont ouvertes.
 
 Une fois que vous avez saisi l’option Modification en bloc, vous pouvez effectuer les opérations suivantes :
 
@@ -362,8 +362,8 @@ Une fois que vous avez saisi l’option Modification en bloc, vous pouvez effect
 
    * Vous pouvez mettre à jour les valeurs dans les champs disponibles.
 
-      * Les nouvelles valeurs sont appliquées à toutes les pages sélectionnées lorsque vous sélectionnez **Terminé**.
-      * Lorsque le champ comporte plusieurs valeurs (des balises, par exemple), vous pouvez ajouter une nouvelle valeur ou supprimer une valeur commune.
+      * Les nouvelles valeurs sont appliquées à toutes les pages sélectionnées lorsque vous appuyez sur **Terminé**.
+      * Lorsque le champ comporte plusieurs valeurs (les balises, par exemple), vous pouvez ajouter une nouvelle valeur ou supprimer une valeur commune.
 
    * Les champs communs, mais ayant des valeurs différentes sur les différentes pages, sont indiqués par une valeur spéciale, telle que le texte. `<Mixed Entries>`.
 

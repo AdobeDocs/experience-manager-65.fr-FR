@@ -5,7 +5,7 @@ exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '553'
-ht-degree: 37%
+ht-degree: 51%
 
 ---
 
@@ -27,7 +27,7 @@ L’environnement de création fournit les mécanismes de création, de mise à 
 
 ![Présentation des environnements](assets/chlimage_1-132.png)
 
-Dans l’environnement de création, la fonctionnalité d’AEM est disponible dans deux interfaces utilisateur. Pour l’environnement de publication, vous concevez l’aspect de l’interface proposée aux utilisateurs.
+Dans l’environnement de création, la fonctionnalité d’AEM est disponible dans deux interfaces utilisateur. Dans l’environnement de publication, vous concevez l’aspect de l’interface proposée aux utilisateurs et utilisatrices.
 
 ### Environnement de création {#author-environment}
 
@@ -37,7 +37,7 @@ L’auteur travaille dans ce qu’on appelle l’**environnement de création**.
 >
 >Votre compte doit disposer des droits d’accès appropriés pour créer, modifier ou publier du contenu.
 
-Selon la configuration de votre instance et de vos droits d’accès personnels, vous pouvez effectuer de nombreuses tâches sur votre contenu, notamment :
+Selon la configuration de votre instance et de vos droits d’accès personnels, vous pouvez effectuer de nombreuses tâches sur votre contenu, notamment (entre autres) :
 
 * générer du nouveau contenu ou modifier du contenu existant sur une page ;
 * utiliser les modèles prédéfinis pour créer des pages de contenu ;
@@ -48,7 +48,7 @@ Selon la configuration de votre instance et de vos droits d’accès personnels,
 * déplacer, copier ou supprimer des pages de contenu, des ressources, etc. ;
 * publier (ou annuler la publication) des pages, des ressources, etc.
 
-Il existe également des tâches administratives pour vous aider à gérer votre contenu :
+Certaines tâches administratives peuvent aussi vous aider à gérer votre contenu :
 
 * les workflows qui contrôlent la manière dont les modifications sont gérées ; par exemple, appliquer une révision avant la publication ;
 * projets qui coordonnent des tâches individuelles
@@ -81,4 +81,4 @@ Lorsque le site AEM est un [site communautaire](/help/communities/overview.md), 
 
 #### Dispatcher {#dispatcher}
 
-Pour optimiser les performances des visiteurs de votre site Web, la variable **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr)** met en oeuvre l’équilibrage de charge et la mise en cache.
+Afin que les visiteurs et visiteuses de votre site web bénéficient de performances optimales, le **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) met en œuvre des mécanismes de mise en cache et d’équilibrage de la charge.**

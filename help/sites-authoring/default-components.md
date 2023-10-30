@@ -5,7 +5,7 @@ exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '425'
-ht-degree: 68%
+ht-degree: 71%
 
 ---
 
@@ -23,7 +23,7 @@ Les composants sont disponibles lors de la [modification d’une page](/help/sit
 
 ## Utilisation générale {#general-usage}
 
-Les composants sont disponibles dans l’onglet **Composants** du panneau latéral de l’éditeur de page lors de la [modification d’une page](/help/sites-authoring/editing-content.md).
+Ces composants sont disponibles dans l’onglet **Composants** du panneau latéral de l’éditeur de page lors de la [modification d’une page](/help/sites-authoring/editing-content.md).
 
 Vous pouvez sélectionner un composant et le faire glisser vers l’emplacement souhaité sur votre page. Vous pouvez ensuite le modifier à l’aide des méthodes suivantes :
 

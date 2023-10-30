@@ -7,7 +7,7 @@ exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '685'
-ht-degree: 76%
+ht-degree: 83%
 
 ---
 
@@ -33,7 +33,7 @@ Chaque branche de langue d’un site est appelée « copie de langue ». La pa
 
 La copie de langue pour laquelle vous créez initialement le contenu du site est le gabarit de langue. Le gabarit de langue est la source qui est traduite dans d’autres langues.
 
-Procédez comme suit pour préparer la traduction de votre site :
+Procédez comme suit pour préparer la traduction de vos ressources :
 
 1. Créez la racine de langue de votre gabarit de langue. Par exemple, la racine de langue du site de démonstration Geometrixx en anglais est /content/geometrixx/en. Vérifiez que la racine de langue est configurée conformément aux informations de la section [Création d’une racine de langue](/help/sites-administering/tc-prep.md#creating-a-language-root).
 1. Créez le contenu de votre gabarit de langue.

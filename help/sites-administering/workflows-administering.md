@@ -9,7 +9,7 @@ exl-id: 90923d39-3ac5-4028-976c-d011f0404476
 source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 70%
+ht-degree: 75%
 
 ---
 
@@ -23,11 +23,11 @@ La console de workflows fournit plusieurs outils permettant d’administrer les 
 
 Différentes consoles sont à votre disposition pour administrer les workflows. Utilisez la [navigation globale](/help/sites-authoring/basic-handling.md#global-navigation) pour ouvrir le panneau **Outils**, puis sélectionnez **Workflows** :
 
-* **Modèles** : gérez les définitions des workflows.
+* **Modèles** : gérez les définitions des workflows
 * **Instances** : affichez et gérez l’exécution des instances de workflow.
-* **Lanceurs** : gérez le lancement des workflows.
-* **Archive** : affichez l’historique des workflows correctement terminés.
-* **Échecs** : affichez l’historique des workflows terminés avec des erreurs.
+* **Lanceurs** : gérez le lancement des workflows
+* **Archive** : affichez l’historique des workflows correctement terminés
+* **Échecs** : affichez l’historique des workflows terminés avec des erreurs
 * **Attribution automatique** : configurez l’attribution automatique des workflows aux modèles
 
 ## Suivi du statut des instances de workflow {#monitoring-the-status-of-workflow-instances}
@@ -81,7 +81,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
    >
    >L’état d’abandon est considéré comme une interruption réussie, car il se produit suite à une action de l’utilisateur ou de l’utilisatrice, comme par exemple :
    >
-   >* L’utilisation de la fonction **Terminer**.
+   >* L’utilisation de la fonction **Arrêter**
    >* lorsqu’une page soumise à un workflow est (forcée) supprimée, le workflow est arrêté.
 
 1. Sélectionnez un élément spécifique, puis **Ouvrir l’historique** pour afficher plus de détails :
@@ -138,7 +138,7 @@ Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-de
    <th>Description</th>
   </tr>
   <tr>
-   <td>Nom de la tâche</td>
+   <td>Nom du traitement</td>
    <td>scheduledpurge.name</td>
    <td>Nom explicite de la purge planifiée.</td>
   </tr>
@@ -180,13 +180,13 @@ Vous pouvez définir la taille maximale de la boîte de réception en configuran
 
 ## Utilisation de variables Workflow pour les banques de données détenues par le client {#using-workflow-variables-customer-datastore}
 
-Les données traitées par les workflows sont stockées dans l’enregistrement fourni par Adobe (JCR). Par nature, ces données peuvent être sensibles. Vous pouvez enregistrer toutes les métadonnées/données définies par l’utilisateur dans votre propre stockage géré au lieu d’Adobe le stockage fourni. Ces sections décrivent comment configurer ces variables pour un enregistrement externe.
+Les données traitées par les workflows sont stockées dans l’enregistrement fourni par Adobe (JCR). Par nature, ces données peuvent être sensibles. Vous pouvez enregistrer toutes les métadonnées et les données définies par l’utilisateur ou l’utilisatrice dans votre propre espace de stockage géré au lieu de celui fourni par Adobe. Ces sections décrivent comment configurer ces variables pour un enregistrement externe.
 
 ### Définition du modèle pour utiliser l’enregistrement externe des métadonnées {#set-model-for-external-storage}
 
 Au niveau du modèle de workflow, un indicateur est fourni pour indiquer que le modèle (et ses instances d’exécution) dispose d’un enregistrement externe des métadonnées. Les variables de workflow ne sont pas conservées dans JCR pour les instances de workflow des modèles marqués pour le stockage externe.
 
-La propriété *userMetadataPersistenceEnabled* est stocké dans la variable *noeud jcr:content* du modèle de workflow. Cet indicateur est conservé dans les métadonnées de workflow en tant que *cq:userMetaDataCustomPersistenceEnabled*.
+La propriété *userMetadataPersistenceEnabled* sera stockée dans le *nœud jcr:content* du modèle de workflow. Cet indicateur sera conservé dans les métadonnées de workflow sous le nom *cq:userMetaDataCustomPersistenceEnabled*.
 
 L’illustration ci-dessous montre comment définir l’indicateur dans un workflow.
 

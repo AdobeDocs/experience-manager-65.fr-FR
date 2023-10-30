@@ -15,12 +15,12 @@ Un fragment d’expérience est un groupe d’un ou plusieurs composants compren
 
 Un fragment d’expérience :
 
-* fait partie d’une expérience (page).
-* peut être utilisé sur plusieurs pages.
+* fait partie d’une expérience (page) ;
+* peut être utilisé sur plusieurs pages ;
 * est basé sur un modèle (modifiable uniquement) pour définir la structure et les composants.
 * Ce modèle est utilisé pour créer la *page racine* du fragment d’expérience.
-* est constitué d’un ou de plusieurs composants, avec disposition, dans un système de paragraphes.
-* peut contenir d’autres fragments d’expérience.
+* est constitué d’un ou de plusieurs composants, avec disposition, dans un système de paragraphes ;
+* peut contenir d’autres fragments d’expérience ;
 * peut être combiné à d’autres composants (y compris d’autres fragments d’expérience) pour former une page complète (expérience).
 * Il est possible de créer une ou plusieurs variations en fonction de la page racine.
 * Ces variations peuvent partager du contenu et des composants.
@@ -337,7 +337,7 @@ Les détails de votre fragment sont visibles :
 
    * **Cloud Services**
 
-      * **Configuration du cloud.**
+      * **Configuration du cloud**
       * **Configuration de Cloud Services**
       * **Identifiant de page Facebook**
       * **Panorama Pinterest**

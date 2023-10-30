@@ -58,7 +58,7 @@ Cette section de la documentation décrit comment connecter une suite de rapport
 1. [Publier](#publish-community-site-and-analytics-cloud-service) site de la communauté
 1. Configurer [import de données de rapport](#obtaining-reports-from-analytics) d’Adobe Analytics au site de la communauté
 
-## Prérequis {#prerequisites}
+## Conditions préalables requises {#prerequisites}
 
 Pour configurer les fonctionnalités d’Analytics for Communities, il est nécessaire de travailler avec le représentant de votre compte pour configurer un compte Adobe Analytics et [suite de rapports](#adobe-analytics-report-suite-for-video-reporting). Une fois établies, les informations suivantes doivent être disponibles :
 

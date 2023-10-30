@@ -9,7 +9,7 @@ exl-id: 2428914c-5fb0-439e-a1ef-8ee30b890f58
 source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 83%
+ht-degree: 92%
 
 ---
 
@@ -29,18 +29,18 @@ Le site web suivant décrit HTTP/2 et ses avantages de manière simple et rapide
 
 L’amélioration des performances varie considérablement en fonction de facteurs tels que le code de votre site web, la façon dont vous utilisez Dynamic Media, l’appareil, l’écran et l’emplacement du client, etc.
 
-Les tests effectués par l’Adobe lui-même ont donné les résultats suivants :
+Les tests effectués par Adobe ont donné les résultats suivants :
 
 * Pour les images, le temps de réponse s’est amélioré de 7 % à 28 % selon l’appareil et le navigateur. Les gains de performances les plus notables ont été enregistrés sur les appareils iOS.
 * Pour les visionneuses, les performances de chargement ont augmenté de 15 %.
 
-La démonstration suivante illustre la différence entre le chargement HTTP/1 et HTTP/2 :
+La démonstration suivante illustre la différence entre le chargement HTTP/1 et HTTP/2 :
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
 ## Puis-je passer à HTTP/2 ? {#am-i-eligible-to-switch-over-to-http}
 
-Pour utiliser HTTP/2, vous devez respecter les conditions suivantes :
+Pour utiliser HTTP/2, vous devez respecter les conditions suivantes :
 
 * Utilisez le protocole HTTPS sécurisé pour vos demandes de médias riches.
 * Utilisez le CDN de lots Adobe (réseau de diffusion de contenu) dans le cadre de votre licence Dynamic Media.
@@ -59,7 +59,7 @@ Pour utiliser HTTP/2, vous devez respecter les conditions suivantes :
      Pour trouver vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started), puis connectez-vous à un ou plusieurs comptes de votre entreprise. Accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**. Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**.
 
    * Vérifiez que vous utilisez le protocole sécurisé HTTPS pour les demandes de médias riches.
-   * Vérifiez que vous utilisez le réseau de diffusion de contenu par Adobe et que vous n’êtes pas géré avec une relation directe.
+   * Vérifiez que vous utilisez le réseau CDN via Adobe et qu’il n’est pas géré avec une relation directe.
    * Assurez-vous d’utiliser un domaine dédié. C’est-à-dire `images.company.com` ou `mycompany.scene7.com`, et non d’un domaine Dynamic Media tel que `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
      Pour trouver vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started), puis connectez-vous à un ou plusieurs comptes de votre entreprise. Accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**. Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**. Si vous utilisez actuellement un domaine Dynamic Media générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition.
@@ -78,7 +78,7 @@ Les demandes sont traitées dans l’ordre dans lequel l’assistance clientèle
 
 ## Quels risques présente la transition vers HTTP/2 ? {#what-are-the-risks-with-moving-to-http}
 
-La transition vers HTTP/2 efface votre cache sur le réseau de diffusion de contenu, car elle implique de passer à une nouvelle configuration du réseau de diffusion de contenu.
+La transition vers HTTP/2 efface votre cache sur le réseau CDN, car elle implique de passer à une nouvelle configuration du réseau CDN.
 
 Le contenu non mis en cache atteint directement les serveurs Adobe d’origine jusqu’à ce que le cache soit reconstruit. C’est pour cette raison qu’Adobe prévoit de ne gérer que quelques transitions à la fois afin d’offrir des performances acceptables lors de l’extraction des demandes du site d’origine d’Adobe.
 

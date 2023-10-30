@@ -7,7 +7,7 @@ exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '1153'
-ht-degree: 83%
+ht-degree: 93%
 
 ---
 
@@ -36,7 +36,7 @@ Les règles comprennent les informations suivantes :
 
 Par exemple, vous pouvez créer une règle traduisant le contenu que les auteurs ajoutent à tous les composants Texte de base d’AEM sur vos pages. La règle peut identifier le nœud `/content` et la propriété `text` du composant `foundation/components/text`.
 
-Une [console](#translation-rules-ui) a été ajoutée pour configurer les règles de traduction. Les définitions de l’interface utilisateur renseignent le fichier à votre place.
+Une [console](#translation-rules-ui) a été ajoutée pour configurer les règles de traduction. Les définitions de l’interface utilisateur renseignent le fichier pour vous.
 
 Pour une présentation des fonctions de traduction de contenu d’AEM, voir [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md).
 
@@ -148,7 +148,7 @@ Une console est également disponible pour configurer les règles de traduction.
 
 Pour y accéder, procédez comme suit :
 
-1. Accédez à **Outils** puis **Général**.
+1. Accédez à **Outils**, puis **Général**.
 
    ![chlimage_1-55](assets/chlimage_1-55.jpeg)
 
@@ -166,7 +166,7 @@ Vous devez ensuite sélectionner votre contexte et cliquer sur **Modifier**. Cet
 
 Vous pouvez modifier 4 attributs via l’interface utilisateur : `isDeep`, `inherit`, `translate` et `updateDestinationLanguage`.
 
-**isDeep** Cet attribut s’applique sur les filtres de nœud et a la valeur true par défaut. Il vérifie si le nœud (ou ses ancêtres) contient cette propriété avec la valeur de propriété spécifiée dans le filtre. Si la valeur est false, il vérifie uniquement le noeud actif.
+**isDeep** Cet attribut s’applique sur les filtres de nœud et a la valeur true par défaut. Il vérifie si le nœud (ou ses ancêtres) contient cette propriété avec la valeur de propriété spécifiée dans le filtre. Si la valeur est false, il vérifie uniquement le nœud actif.
 
 Par exemple, les nœuds enfants sont ajoutés dans une tâche de traduction même lorsque la propriété `draftOnly` du nœud parent est définie sur true pour marquer le contenu comme brouillon. `isDeep` entre ici en jeu et vérifie si les nœuds parents disposent de la propriété `draftOnly` définie sur true et exclut ces nœuds enfants.
 
@@ -215,7 +215,7 @@ Si vous modifiez le fichier translation_rules.xml, conservez une copie de sauveg
 
 >[!NOTE]
 >
->Après avoir créé le module de contenu, recréez-le chaque fois que vous modifiez le fichier.
+>Après avoir créé le package de contenu, recréez-le chaque fois que vous modifiez le fichier.
 
 ## Exemple de fichier de règles de traduction {#example-translation-rules-file}
 

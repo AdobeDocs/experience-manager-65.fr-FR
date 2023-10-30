@@ -10,7 +10,7 @@ exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
 source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
 workflow-type: tm+mt
 source-wordcount: '1348'
-ht-degree: 48%
+ht-degree: 54%
 
 ---
 
@@ -130,7 +130,7 @@ La version calendrier sert à afficher un jour spécifique :
 
    >[!NOTE]
    >
-   >La fonction Timewarp ne fonctionne entièrement que si vous avez déjà publié la page. Dans le cas contraire, Timewarp affiche la page active dans l’environnement de création.
+   >La fonction Timewarp ne fonctionne entièrement que si vous avez déjà publié la page. Dans le cas contraire, Timewarp affiche la page en cours dans l’environnement de création.
 
    >[!NOTE]
    >
@@ -180,8 +180,8 @@ Dans l’exemple ci-dessous, la ligne rouge indique que la page a été modifié
 
 Timewarp s’efforce de reproduire au mieux une page à un moment donné. Toutefois, en raison de la complexité de la création continue de contenu dans AEM, cela n’est pas toujours possible. Ces restrictions doivent être prises en compte lors de l’utilisation de Timewarp.
 
-* **Le mode Timewarp fonctionne en fonction des pages publiées.** - Timewarp ne fonctionne entièrement que si vous avez déjà publié la page. Dans le cas contraire, Timewarp affiche la page active dans l’environnement de création.
-* **Timewarp utilise des versions de page** - Si vous accédez à une page qui a été supprimée du référentiel, elle est correctement rendue si d’anciennes versions de la page sont toujours disponibles dans le référentiel.
+* **Timewarp fonctionne sur la base de pages publiées** : toutes les fonctionnalités de Timewarp ne sont disponibles que si vous avez publié la page précédemment. Dans le cas contraire, Timewarp affiche la page en cours dans l’environnement de création.
+* **Timewarp utilise des versions de page** : si vous accédez à une page qui a été supprimée du référentiel, elle s’affiche correctement si d’anciennes versions sont toujours disponibles dans le référentiel.
 * **Les versions supprimées affectent Timewarp** : si des versions sont supprimées du référentiel, Timewarp n’est pas en mesure d’afficher la vue correcte.
 
 * **Timewarp est en lecture seule** : vous ne pouvez pas modifier l’ancienne version de la page. Elle est disponible uniquement à des fins d’affichage. Si vous souhaitez restaurer l’ancienne version, vous pouvez effectuer cette opération manuellement à l’aide de [Restaurer](#main-pars-title-1).

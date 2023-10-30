@@ -5,7 +5,7 @@ exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
 workflow-type: tm+mt
 source-wordcount: '1779'
-ht-degree: 66%
+ht-degree: 93%
 
 ---
 
@@ -54,22 +54,22 @@ Ces objectifs ont considérablement influencé la structure de WCAG 2.1.
 
 WCAG 2.1 présente les concepts de création de contenu web accessible d’une manière progressivement détaillée. Cela peut donner l’impression que WCAG 2.1 est un ensemble très complexe de documents liés, mais le but est de fournir (progressivement) des informations plus détaillées à mesure que les auteurs en ont besoin, plutôt que de fournir l’ensemble dans un document très volumineux.
 
-WCAG 2.1 est constitué de quatre principes clés de conception accessible, parfois évoqués par l’acronyme **POUR**. Ces éléments sont les suivants :
+WCAG 2.1 est constitué de quatre principes clés de conception accessible, parfois évoqués par l’acronyme **POUR**. Ces principes sont les suivants :
 
-1. **Perceptible**: un utilisateur peut-il sentir le contenu web en question ?
-1. **Opérable**: un utilisateur peut-il naviguer, saisir des données ou interagir autrement avec le contenu web ?
-1. **Compréhensible**: un utilisateur peut-il traiter et comprendre le contenu web qui lui est présenté ?
-1. **Robuste**: le contenu web est-il disponible de la manière prévue dans un large éventail d’environnements de navigation, y compris les environnements de navigation hérités et émergents ?
+1. **Perceptible** : un utilisateur ou une utilisatrice peut-il/elle appréhender le contenu web en question ?
+1. **Opérationnel** : un utilisateur ou une utilisatrice peut-il/elle naviguer, saisir des données ou interagir d’une manière ou d’une autre avec le contenu web ?
+1. **Compréhensible** : un utilisateur ou une utilisatrice peut-il/elle assimiler et comprendre le contenu web qui lui est présenté ?
+1. **Robuste** : le contenu web est-il disponible de la manière prévue dans un nombre suffisamment important d’environnements de navigation, y compris les anciens et les nouveaux environnements de navigation ?
 
 Développons :
-* Chaque **Principe** se compose d’un ou de plusieurs **directives**.
+* Chaque **Principe** se compose d’une ou de plusieurs **recommandations**.
 
-* Les instructions sont rédigées en tant qu’instructions, qui sont soit positives (faites ceci...), soit négatives (ne faites pas cela...).
-* Les directives sont numérotées 1.1 à 4.1, où le premier numéro correspond au principe parent.
-* Chaque ligne guide comprend une ou plusieurs lignes guides **critères de réussite**.
+* Les recommandations sont rédigées en tant qu’instructions, qui sont soit positives (faites ceci...), soit négatives (ne faites pas cela...).
+* Les recommandations sont numérotées de 1.1 à 4.1, le premier numéro correspondant au principe parent.
+* Chaque recommandation est composée d’un ou de plusieurs **critères de réussite**.
 * Les critères de réussite sont écrits sous la forme d’instructions, qui sont `True` ou `False` pour n’importe quelle page web donnée.
 * Les critères de réussite peuvent inclure des choix ou des exceptions, dans les cas où les critères de réussite ne doivent pas être remplis.
-* Les critères de réussite sont numérotés selon la ligne directrice et le principe parents, de 1.1.1 à 4.1.1. Ils ont également un nom court qui résume l’intention du critère, pour une référence plus facile. Par exemple, le critère de réussite [1.1.1 est Contenu non textuel](https://www.w3.org/TR/WCAG/#non-text-content).
+* Les critères de réussite sont numérotés selon la recommandation et le principe parents, de 1.1.1 à 4.1.1. Ils ont également un nom court résumant l’intention du critère, à titre de référence plus facile. Par exemple, le critère de réussite [1.1.1 est Contenu non textuel](https://www.w3.org/TR/WCAG/#non-text-content).
 * Les critères de réussite incluent une liste de **techniques** associées (décrites plus en détail ci-dessous).
 
 ## Ressources annexes {#supporting-resources}
@@ -103,40 +103,40 @@ Les techniques relatives à WCAG 2.1 sont disponibles sur la page [Techniques r
 
 Les **techniques** forment le niveau sous les critères de réussite dans la hiérarchie de WCAG 2.1. Elles sont classées par WAI comme étant informatives, et non normatives. En d’autres termes, une technique spécifique ne doit pas nécessairement être suivie pour qu’une ressource soit conforme à WCAG 2.1.
 
-Étant donné que les techniques sont bien plus spécifiques que les critères de réussite, elles font généralement référence à une technologie, un type de contenu (par exemple, HTML ou vidéo) ou une situation spécifique (par exemple, une application d’e-commerce ou d’apprentissage en ligne). Vous pouvez considérer les techniques comme des exemples éprouvés de la manière dont des consignes spécifiques et des critères de réussite peuvent être satisfaits, afin qu’elles soient utiles aux auteurs et aux développeurs travaillant dans des contextes spécifiques.
+Étant donné que les techniques sont bien plus spécifiques que les critères de réussite, elles font généralement référence à une technologie, un type de contenu (par exemple, HTML ou vidéo) ou une situation spécifique (par exemple, une application d’e-commerce ou d’apprentissage en ligne). Vous pouvez considérer les techniques comme des exemples éprouvés de la manière dont des recommandations spécifiques et des critères de réussite peuvent être respectés, afin qu’ils soient utiles aux auteurs et autrices et aux développeurs et développeuses travaillant dans des contextes spécifiques.
 
-Les techniques sont accessibles :
+Vous pouvez y accéder comme suit :
 
 * par collection (les techniques peuvent être générales ou associées à une technologie ou un format spécifique, comme HTML, CSS ou des scripts côté client) ;
 * À partir des critères de réussite associés. Les techniques peuvent s’appliquer à plusieurs critères de réussite.
 
 Chaque technique possède un numéro unique, qui se rapporte à sa collection. Par exemple, l’une des techniques ARIA est la [technique ARIA2 : identification d’un champ obligatoire avec la propriété « aria-required »](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA2.html).
 
-Les techniques peuvent être suffisantes, consultatives ou en cas d’échec :
+Les techniques peuvent être suffisantes, consultatives ou en cas d’échec :
 
 * A *Technique suffisante* est un critère qui, s’il est suivi, suffira à remplir un critère de réussite particulier.
-* Un *Technique consultative* est un critère qui, s’il est suivi, aura un impact positif sur l’accessibilité, mais peut ne pas suffire à lui seul pour garantir qu’un critère de réussite particulier est satisfait.
-* A *Échec* est une technique décrivant un exemple spécifique de cas où un critère de réussite ne serait pas rempli.
+* Une *Technique consultative* est un critère qui, s’il est suivi, aura un impact positif sur l’accessibilité, mais peut ne pas suffire à elle seule à garantir le respect d’un critère de réussite particulier.
+* Un *Échec* est une technique décrivant un exemple spécifique de cas où un critère de réussite ne serait pas respecté.
 
-Les détails des techniques incluent une description, l’applicabilité, des exemples, des ressources pour plus d’informations et des détails sur la façon dont les auteurs peuvent tester une application réussie de la technique.
+Les détails des techniques incluent une description, l’applicabilité, des exemples, des ressources informatives, ainsi que des détails sur la façon dont les auteurs et autrices peuvent tester avec succès l’application de la technique.
 
-La liste des techniques n’est pas terminée, et WAI la met constamment à jour avec de nouveaux exemples en fonction des développements dans la technologie web, les approches de conception et l’état de la recherche. Il est donc bon de vérifier régulièrement la liste des techniques pour les nouveaux ajouts.
+La liste des techniques n’est pas terminée, et WAI la met constamment à jour avec de nouveaux exemples en fonction des développements dans la technologie web, les approches de conception et l’état de la recherche. Il est donc conseillé de vérifier régulièrement la liste des techniques pour les nouveaux ajouts.
 
 ### Présentation de WCAG 2.1 {#understanding-wcag}
 
-Il s’agit d’une série de documents qui fournissent des conseils aux lecteurs pour les aider à comprendre l’objectif de directives spécifiques et de critères de réussite. Vous pouvez [télécharger une introduction, ainsi que des liens vers des informations plus détaillées](https://www.w3.org/WAI/WCAG21/Understanding/).
+Il s’agit d’une série de documents qui fournissent des conseils aux lecteurs et lectrices, en vue de les aider à comprendre l’objectif des recommandations et critères de réussite spécifiques. Vous pouvez [télécharger une introduction, ainsi que des liens vers des informations plus détaillées](https://www.w3.org/WAI/WCAG21/Understanding/).
 
 Chaque consigne et critère de réussite possède également sa propre page &quot;Compréhension&quot;, qui fournit des informations sur :
 
-* l’intention de la ligne directrice ;
-* des critères de réussite spécifiques ;
-* Techniques consultatives qui aident à répondre aux exigences de la consigne, mais qui ne tombent sous aucun critère de réussite spécifique.
+* l’intention de la recommandation ;
+* les critères de réussite spécifiques ;
+* les techniques consultatives qui aident à répondre aux exigences de la recommandation, mais qui ne relèvent d’aucun critère de réussite spécifique.
 
 La page de &quot;compréhension&quot; individuelle de chaque critère de réussite fournit des informations sur :
 
 * l’intention du critère de réussite ;
-* Exemples généraux sur la façon dont le critère de réussite peut être rempli;
-* Ressources connexes (hors W3C) sur la façon de remplir le critère de réussite ;
+* des exemples généraux sur la façon dont le critère de réussite peut être rempli ;
+* des ressources connexes (hors W3C) sur la façon de remplir le critère de réussite ;
 * des techniques et échecs : exemples spécifiques et détaillés de la façon dont le critère de réussite peut être rempli (décrits plus en détail ci-dessous) ;
 * les termes clés : glossaire des termes importants pour comprendre le critère de réussite.
 
@@ -144,12 +144,12 @@ En voici un exemple : [Présentation du critère de réussite 1.1.1 (« conte
 
 ### Conformité à WCAG 2.1 {#how-to-meet-wcag}
 
-La section « Comment se conformer » est disponible sur la page [Comment se conformer à WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/). Cette section fournit une autre présentation de WCAG, permettant aux lecteurs d’affiner le contenu des consignes au mieux de leurs intérêts et/ou de circonstances particulières. Les Readers peuvent filtrer les techniques de critères de réussite qu’ils souhaitent afficher en spécifiant des technologies de contenu web particulières, telles que les feuilles de style en cascade ou les scripts, ou en spécifiant un ou plusieurs niveaux de priorité particuliers.
+La section « Comment se conformer » est disponible sur la page [Comment se conformer à WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/). Cette section fournit une autre présentation de WCAG, permettant aux lecteurs d’affiner le contenu des consignes au mieux de leurs intérêts et/ou de circonstances particulières. Les lecteurs et lectrices peuvent filtrer les techniques de critères de réussite à afficher en spécifiant des technologies de contenu web particulières, telles que les feuilles de style en cascade ou les scripts, ou en spécifiant un ou plusieurs niveaux de priorité particuliers.
 
-Sans filtrage, cette ressource fournit tous les critères de réussite regroupés par consigne. Pour chaque critère de réussite, les informations suivantes sont fournies :
+Sans filtrage, cette ressource fournit tous les critères de réussite regroupés par recommandation. Pour chaque critère de réussite, les informations suivantes sont fournies :
 
-* le texte du critère de réussite ;
-* un lien vers le document de &quot;compréhension&quot; correspondant ;
-* Une liste des techniques suffisantes connexes, avec un lien vers les détails de chaque technique ;
-* une liste des techniques consultatives connexes, avec un lien vers les détails de chaque technique (le cas échéant) ;
-* Liste des échecs associés, en lien avec les détails de chaque échec.
+* le texte du critère de réussite ;
+* un lien vers le document Compréhension correspondant ;
+* une liste des techniques suffisantes connexes, avec un lien vers les détails de chaque technique ;
+* une liste des techniques consultatives connexes, avec un lien vers les détails de chaque technique (le cas échéant) ;
+* une liste des échecs associés, avec un lien vers les détails de chaque échec.

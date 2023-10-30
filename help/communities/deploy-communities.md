@@ -16,7 +16,7 @@ ht-degree: 4%
 
 # Déploiement de Communities {#deploying-communities}
 
-## Prérequis {#prerequisites}
+## Conditions préalables requises {#prerequisites}
 
 * [Plateforme AEM 6.5](/help/sites-deploying/deploy.md)
 
