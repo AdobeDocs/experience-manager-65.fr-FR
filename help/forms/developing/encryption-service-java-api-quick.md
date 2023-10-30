@@ -1,7 +1,6 @@
 ---
 title: Démarrage rapide (SOAP) de l’API Java du service Encryption
-seo-title: Encryption Service Java API QuickStart(SOAP)
-description: Démarrage rapide (SOAP) de l’API Java du service Encryption
+description: Chiffrez, supprimez le chiffrement avec mot de passe/certificat, déverrouillez et déterminez le type de chiffrement des documents du PDF à l’aide de l’API Java en mode SOAP.
 uuid: 3e29b3e9-340b-4b35-80cc-f0aff4180892
 contentOwner: admin
 content-type: reference
@@ -10,10 +9,10 @@ topic-tags: develop
 discoiquuid: f12c10c3-1ce6-4415-ba9d-5349d1888237
 role: Developer
 exl-id: e8b2aa43-ac27-410d-a809-56bfd1c2fcb1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '454'
-ht-degree: 100%
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+workflow-type: tm+mt
+source-wordcount: '467'
+ht-degree: 95%
 
 ---
 

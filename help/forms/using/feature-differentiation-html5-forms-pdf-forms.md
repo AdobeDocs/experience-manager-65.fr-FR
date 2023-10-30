@@ -1,8 +1,6 @@
 ---
 title: Différences de caractéristiques entre formulaires HTML5 et formulaires PDF
-seo-title: Feature differentiation between HTML5 forms and PDF forms
-description: Caractéristiques prises en charge dans les formulaires HTML5 et les formulaires PDF
-seo-description: Feature supported in HTML5 forms and PDF forms
+description: Découvrez les différences entre les formulaires HTML5 et les PDF forms.
 uuid: 6ddee197-d108-4897-9976-77d115a06504
 contentOwner: robhagat
 content-type: reference
@@ -12,10 +10,10 @@ discoiquuid: bdd97c20-d1f2-4898-9862-1a6a8071be88
 docset: aem65
 feature: Mobile Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '444'
-ht-degree: 100%
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 42%
 
 ---
 
@@ -37,8 +35,8 @@ Le tableau suivant indique les fonctionnalités prises en charge par les formula
   </tr>
   <tr>
    <td>Champ de signature<br /> </td>
-   <td>Les <strong>signatures numériques</strong> ne sont pas prises en charge, mais un nouveau champ <strong>Scribble Signature</strong> (Signature à main levée) est ajouté pour les signatures manuscrites. Il est ainsi possible de signer le formulaire à la main dans le champ <strong>Scribble Signature</strong>. La signature est enregistrée sur le formulaire sous la forme d’une image. Vous pouvez enregistrer des informations de géolocalisation dans le champ <strong>Scribble Signature</strong>.</td>
-   <td>Champ de signature disponible pour les <strong>signatures numériques</strong>.</td>
+   <td><strong>Signatures numériques</strong> ne sont pas pris en charge, mais une nouvelle <strong>Signature tactile</strong> est ajouté pour les signatures de type papier. Vous pouvez signer à main levée sur le formulaire à l’aide de la fonction <strong>Signature tactile</strong> champ . La signature est enregistrée sur le formulaire sous forme d’image. Vous pouvez enregistrer les informations de géolocalisation dans la variable <strong>Signature tactile</strong> champ .</td>
+   <td>Champ de signature disponible pour <strong>Signatures numériques</strong>.</td>
   </tr>
   <tr>
    <td>Fusion des données</td>
@@ -47,22 +45,22 @@ Le tableau suivant indique les fonctionnalités prises en charge par les formula
   </tr>
   <tr>
    <td>Images</td>
-   <td>Le modèle de données URI est utilisé pour afficher les images. Toutes les versions modernes de navigateurs prennent en charge ce modèle, mais il existe des différences dans la plage des formats d’image que chaque navigateur prend en charge.<br /> </td>
+   <td>Le schéma d’URI de données est utilisé pour afficher les images. Toutes les versions modernes des navigateurs prennent en charge ce modèle, mais il existe des différences dans la plage des formats d’image pris en charge par chaque navigateur.<br /> </td>
    <td>Les formats .gif, .png, .jpeg, .bmp et .tiff sont pris en charge.</td>
   </tr>
   <tr>
    <td>Pagination<br /> </td>
-   <td><p>Un formulaire HTML5 est divisé en panneaux et en zones pour lui donner un aspect similaire aux formulaires PDF. La taille d’une page est calculée de façon dynamique. Si tout le contenu d’une page de formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge est masquée et un espace vide (espace blanc) ne s’affiche pas entre les pages, au-dessus et au-dessous de la page vierge.</p> <p>Si la fusion des données ou des scripts ajoutent du contenu à une page, la longueur de la page s’ajuste au contenu qui vient d’être ajouté. Aucune nouvelle page n’est ajoutée au formulaire pour s’ajuster au contenu qui vient d’être ajouté. </p> <p><strong>Remarque :</strong> lorsque tout le contenu d’une page de formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge (espace blanc) reste visible entre la 1ère et 2e page mais pas entre les autres pages.</p> </td>
+   <td><p>Un formulaire HTML5 est divisé en panneaux et cases pour lui donner une apparence similaire aux PDF forms. La taille de la page est calculée dynamiquement. Si tout le contenu d’une page d’un formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge est masquée et un espace vide (espace vide) n’est pas affiché entre les pages au-dessus et au-dessous de la page vierge.</p> <p>Si la fusion de données ou les scripts ajoutent du contenu à une page, la longueur de la page s’étend pour s’adapter au contenu nouvellement ajouté. Aucune nouvelle page n’est ajoutée au formulaire pour s’adapter au contenu nouvellement ajouté. </p> <p><strong>Remarque :</strong> lorsque tout le contenu d’une page de formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge (espace blanc) reste visible entre la 1ère et 2e page mais pas entre les autres pages.</p> </td>
    <td>La pagination des documents PDF dépend du contenu des données fusionnées ou du contenu de l’utilisateur : le nombre de pages est augmenté/réduit en conséquence.</td>
   </tr>
   <tr>
    <td>En-têtes/pieds de page </td>
-   <td>Pris en charge. <br /> <br /> Les formulaires mobiles HTML5 ne prenant pas en charge les sauts de page, les en-têtes et les pieds de page n’apparaissent qu’une seule fois. Vous pouvez toutefois les configurer dans la mise en page pour s’afficher en plusieurs endroits dans l’aperçu de formulaires mobiles.<br /> </td>
+   <td>Pris en charge. <br /> <br /> Les formulaires mobiles HTML5 ne prenant pas en charge les sauts de page, les en-têtes et les pieds de page n’apparaissent qu’une seule fois. Vous pouvez toutefois les configurer dans la mise en page afin qu’elles s’affichent à plusieurs endroits dans l’aperçu des formulaires mobiles.<br /> </td>
    <td>Pris en charge.</td>
   </tr>
   <tr>
    <td>Widgets personnalisés</td>
-   <td>Il est possible de personnaliser les widgets pour améliorer l’expérience de l’utilisateur sur les périphériques mobiles.<br /> </td>
+   <td>Vous pouvez personnaliser des widgets pour améliorer l’expérience utilisateur sur les appareils mobiles.<br /> </td>
    <td>Tous les widgets sont verrouillés et aucun widget personnalisé ne peut être connecté.<br /> </td>
   </tr>
   <tr>

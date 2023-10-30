@@ -1,7 +1,6 @@
 ---
-title: Appel d’AEM Forms à l’aide d’API
-seo-title: Invoking AEM Forms using APIs
-description: Appel d’AEM Forms à l’aide d’API
+title: Comment appeler AEM Forms à l’aide d’API ?
+description: Appelez les services AEM Forms à l’aide d’une API Java, de services web, de services distants et de REST.
 uuid: d100e106-e508-4d3c-ba8c-b5fe13c9e2d6
 contentOwner: admin
 content-type: reference
@@ -10,10 +9,10 @@ topic-tags: coding, development-tools
 discoiquuid: 1825e12c-0306-4e0a-9643-47ce1ce82132
 role: Developer
 exl-id: 0e92d1ad-12bd-4bfd-81cc-9be8e376c5ca
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '283'
-ht-degree: 100%
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+workflow-type: tm+mt
+source-wordcount: '293'
+ht-degree: 93%
 
 ---
 

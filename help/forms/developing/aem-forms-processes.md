@@ -1,7 +1,6 @@
 ---
 title: Présentation des processus AEM Forms
-seo-title: Understanding AEM Forms Processes
-description: Présentation des processus AEM Forms
+description: Les processus AEM Forms englobent la création, l’envoi, la gestion des données, la validation, l’intégration, l’automatisation des processus et la gestion des sorties.
 uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
@@ -10,10 +9,10 @@ topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 role: Developer
 exl-id: 434ac316-8a01-43a6-844b-1b792f60fa21
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '803'
-ht-degree: 100%
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+workflow-type: tm+mt
+source-wordcount: '815'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +22,7 @@ ht-degree: 100%
 
 Un cas dʼutilisation courant consiste à utiliser un ensemble de services AEM Forms sur un seul document. Vous pouvez envoyer une demande au conteneur de services en créant un processus à l’aide de Workbench. Un processus correspond à un processus métier que vous souhaitez automatiser. Pour plus d’informations sur la création de processus, consultez la section [Utiliser Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).
 
-Une fois quʼun processus est activé, il se mue en service et peut être sollicité à lʼinstar dʼautres services. Une différence entre un service standard, tel que le service Encryption, et un service issu dʼun processus, est que ce dernier possède une opération qui exécute de nombreuses actions. En revanche, un service standard comporte de nombreuses opérations. Chaque opération exécute généralement une seule action, comme lʼapplication dʼune stratégie à un document ou le chiffrement dʼun document.
+Une fois quʼun processus est activé, il se mue en service et peut être sollicité à lʼinstar dʼautres services. Une différence entre un service standard, tel que le service Encryption, et un service issu dʼun processus, est que ce dernier possède une opération qui exécute de nombreuses actions. En revanche, un service standard comporte de nombreuses opérations. Chaque opération exécute généralement une seule action, comme lʼapplication dʼune politique à un document ou le chiffrement dʼun document.
 
 Les processus peuvent être de courte ou de longue durée. Un processus de courte durée est une opération qui est exécutée de manière synchrone et sur le même thread dʼexécution que celui à partir duquel elle a été sollicitée. Les opérations de courte durée sont similaires au comportement standard de la plupart des langages de programmation, où une application cliente appelle une méthode et attend une valeur de retour.
 
@@ -33,7 +32,7 @@ Cependant, il existe des situations où un processus ne peut pas être exécuté
 * Un processus peut transcender le cadre de lʼentreprise.
 * Un processus doit être accompagné dʼune contribution externe pour pouvoir être mené à terme. À titre dʼexemple, on peut imaginer une situation où un formulaire est envoyé à un responsable qui a quitté son bureau. Dans ces circonstances, le processus ne peut être achevé avant le retour du responsable qui remplit le formulaire.
 
-   Ces types de processus sont appelés processus de longue durée. Un processus de longue durée est exécuté de manière asynchrone, ce qui permet aux systèmes dʼinteragir en fonction des ressources disponibles et dʼassurer le suivi et la surveillance de lʼopération. Lorsquʼun processus de longue durée est appelé, AEM Forms crée une valeur dʼidentificateur de lʼappel dans le cadre d’un enregistrement qui permet de suivre le statut du processus de longue durée. L’enregistrement est stocké dans la base de données dʼAEM Forms. Les enregistrements de processus de longue durée peuvent être supprimés définitivement lorsqu’ils ne sont plus nécessaires.
+  Ces types de processus sont appelés processus de longue durée. Un processus de longue durée est exécuté de manière asynchrone, ce qui permet aux systèmes dʼinteragir en fonction des ressources disponibles et dʼassurer le suivi et la surveillance de lʼopération. Lorsquʼun processus de longue durée est appelé, AEM Forms crée une valeur dʼidentificateur de lʼappel dans le cadre d’un enregistrement qui permet de suivre le statut du processus de longue durée. L’enregistrement est stocké dans la base de données dʼAEM Forms. Les enregistrements de processus de longue durée peuvent être supprimés définitivement lorsqu’ils ne sont plus nécessaires.
 
 >[!NOTE]
 >

@@ -1,8 +1,6 @@
 ---
 title: Journalisation des workflows AEM Forms
-seo-title: Logging in AEM Forms workflows
-description: Utilisez les journaux pour déboguer les problèmes de workflow AEM Forms.
-seo-description: Use logs to debug AEM Forms workflow issues.
+description: Déboguer les problèmes de workflow AEM Forms et activer la journalisation de débogage pour les workflows AEM Forms afin d’afficher les journaux.
 uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,10 +8,10 @@ topic-tags: publish
 discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
 docset: aem65
 exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '279'
-ht-degree: 100%
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 94%
 
 ---
 
@@ -26,35 +24,35 @@ Par défaut, toutes les informations relatives à la journalisation sont disponi
 Les journaux de débogage des workflows Forms incluent les éléments suivants :
 
 * Entrée de chaque étape du workflow. Par exemple :\
-   `[DEBUG] "Executing Invoke DDX Process step"`
+  `[DEBUG] "Executing Invoke DDX Process step"`
 
 * Sortie de chaque étape du workflow. Par exemple :\
-   `[DEBUG] "Successfully finished Invoke DDX Process step"`
+  `[DEBUG] "Successfully finished Invoke DDX Process step"`
 
 * Messages d’appel du service. Par exemple :\
-   `[DEBUG] Invoking Adobe Sign Service for creating agreement`
+  `[DEBUG] Invoking Adobe Sign Service for creating agreement`
 
 * Messages de sortie du service. Par exemple :\
-   `[DEBUG] Agreement created successfully with agreement id <agreement id>`
+  `[DEBUG] Agreement created successfully with agreement id <agreement id>`
 
 * Variables lues à partir du mappage de métadonnées. Par exemple :\
-   `[DEBUG] Successfully retrieved variable <variable name> from workflow meta data map`
+  `[DEBUG] Successfully retrieved variable <variable name> from workflow meta data map`
 
 * Variables écrites dans le référentiel JCR. Par exemple :
 
-   ```verilog
-      [DEBUG] Successfully written variable <variable name> into meta data node at <JCR path where meta data is being written>
-   ```
+  ```verilog
+     [DEBUG] Successfully written variable <variable name> into meta data node at <JCR path where meta data is being written>
+  ```
 
 * Messages d’exception avec trace de pile complète. Par exemple :\
-   `[DEBUG] Exception in Adobe Sign Service <complete stack trace>`
+  `[DEBUG] Exception in Adobe Sign Service <complete stack trace>`
 
 * Paramètres de métadonnées d’étape dynamique. Par exemple :
 
-   ```verilog
-   [DEBUG] Document of Record to be generated for adaptive form <path of adaptive form>
-    [DEBUG] Locale to be used for Document of Record is <locale>
-   ```
+  ```verilog
+  [DEBUG] Document of Record to be generated for adaptive form <path of adaptive form>
+   [DEBUG] Locale to be used for Document of Record is <locale>
+  ```
 
 L’exemple suivant illustre les journaux de l’étape Signer le document :
 
@@ -88,9 +86,9 @@ Procédez comme suit pour activer la journalisation du débogage pour les workfl
 1. Appuyez sur **[!UICONTROL Ajouter une nouvelle journalisation]**.
 1. Sélectionnez **[!UICONTROL Débogage]** pour le **[!UICONTROL Niveau de journalisation]**.
 1. Indiquez l’emplacement du fichier journal. L’emplacement par défaut du fichier journal est le suivant : *logs\error.log*.
-1. Précisez le nom du module **com.adobe.granite.workflow.core** dans la colonne **[!UICONTROL Journalisation]**.
+1. Précisez le nom du package **com.adobe.granite.workflow.core** dans la colonne **[!UICONTROL Journalisation]**.
 
-   L’exécution de ces étapes permet de stocker les journaux de débogage du module **com.adobe.granite.workflow.core**. Appuyez sur **[!UICONTROL +]** et ajoutez les noms de modules suivants à la liste :
+   L’exécution de ces étapes permet de stocker les journaux de débogage du package **com.adobe.granite.workflow.core**. Appuyez sur **[!UICONTROL +]** et ajoutez les noms de packages suivants à la liste :
 
    * com.adobe.fd.workflow
    * com.adobe.fd.workspace

@@ -1,6 +1,6 @@
 ---
 title: Démarrage rapide de l’API du service de sauvegarde et de restauration
-description: Démarrage rapide de l’API du service de sauvegarde et de restauration
+description: Les didacticiels de mise en route de l’API de sauvegarde et de restauration d’AEM Forms permettent de créer et de restaurer des sauvegardes efficacement.
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
 contentOwner: admin
 content-type: reference
@@ -9,10 +9,10 @@ topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 role: Developer
 exl-id: ae17fd3a-0ba4-4a00-907b-811e500b0e14
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
-workflow-type: ht
-source-wordcount: '246'
-ht-degree: 100%
+source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+workflow-type: tm+mt
+source-wordcount: '254'
+ht-degree: 94%
 
 ---
 

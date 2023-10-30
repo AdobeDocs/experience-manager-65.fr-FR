@@ -1,17 +1,16 @@
 ---
 title: Document Security | Gestion des données utilisateur
-seo-title: Document Security | Handling user data
-description: Document Security | Gérer les données utilisateur
+description: AEM Forms Document Security vous permet de gérer les données utilisateur et les entrepôts de données, ainsi que d’accéder, de supprimer et d’exporter des données utilisateur.
 uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 role: Admin
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 65%
+source-wordcount: '963'
+ht-degree: 63%
 
 ---
 

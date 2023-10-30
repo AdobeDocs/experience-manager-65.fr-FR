@@ -1,15 +1,15 @@
 ---
 title: Utiliser les API pour accéder aux instances de lettre
-description: Découvrez comment utiliser les API pour accéder aux instances de lettre.
+description: Découvrez les API et utilisez-les pour accéder par programmation aux instances de lettre dans l’environnement AEM Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 40%
+source-wordcount: '599'
+ht-degree: 39%
 
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Présentation du démarrage rapide de lʼAPI Java
-seo-title: Introducing Java API QuickStart
-description: Présentation du démarrage rapide de lʼAPI Java
+description: Les opérations AEM Forms peuvent être effectuées à l’aide de l’API Java AEM Forms fortement typée activée avec connexion SOAP.
 uuid: 480e1809-f789-4ad8-b5d5-2d97aba8411a
 contentOwner: admin
 content-type: reference
@@ -10,10 +9,10 @@ topic-tags: develop, development-tools
 discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
 role: Developer
 exl-id: 1d4062ef-fb24-4527-b899-896ce757beda
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '521'
-ht-degree: 100%
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+workflow-type: tm+mt
+source-wordcount: '534'
+ht-degree: 96%
 
 ---
 

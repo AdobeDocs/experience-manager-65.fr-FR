@@ -1,8 +1,6 @@
 ---
 title: Configurer les paramètres du service
-seo-title: Configure service settings
-description: Découvrez comment configurer les paramètres du service.
-seo-description: Learn how to configure service settings.
+description: Découvrez comment configurer les paramètres du service. Vous pouvez utiliser la page Gestion des services pour configurer les paramètres de chacun des services faisant partie d’AEM forms.
 uuid: e95425a4-62f6-473e-b21b-d081c432e02d
 contentOwner: admin
 content-type: reference
@@ -10,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '10678'
+source-wordcount: '10699'
 ht-degree: 56%
 
 ---
@@ -183,9 +181,9 @@ Les paramètres suivants sont disponibles pour le service Email.
 
 **Authentification SMTP :** sélectionnez cette option si l’authentification de l’utilisateur est requise pour la connexion au serveur SMTP.
 
-**Utilisateur SMTP :** nom d’utilisateur du compte utilisateur à employer pour la connexion au serveur SMTP.
+**Utilisateur SMTP** : nom d’utilisateur du compte d’utilisateur à employer pour la connexion au serveur SMTP.
 
-**Mot de passe SMTP :** mot de passe associé au compte utilisateur SMTP.
+**Mot de passe SMTP** : mot de passe associé au compte d’utilisateur SMTP.
 
 **Sécurité du transport SMTP :** protocole de sécurité à utiliser pour la connexion au serveur SMTP.
 
@@ -195,9 +193,9 @@ Les paramètres suivants sont disponibles pour le service Email.
 
 **Hôte POP3/IMAP :** adresse IP ou URL du serveur POP3 ou IMAP à utiliser pour l’envoi dʼe-mails.
 
-**Nom d’utilisateur POP3/IMAP :** nom d’utilisateur du compte utilisateur à employer pour la connexion au serveur POP3 ou IMAP.
+**Nom d’utilisateur POP3/IMAP** : nom d’utilisateur du compte d’utilisateur à employer pour la connexion au serveur POP3 ou IMAP.
 
-**Mot de passe POP3/IMAP :** mot de passe associé au compte utilisateur POP3 ou IMAP.
+**Mot de passe POP3/IMAP** : mot de passe associé au compte d’utilisateur POP3 ou IMAP.
 
 **Numéro de port POP3/IMAP :** port utilisé pour la connexion au serveur POP3 ou IMAP.
 
@@ -239,7 +237,7 @@ Les paramètres suivants sont disponibles pour le service FTP.
 
 **Port par défaut :** port utilisé pour la connexion au serveur FTP. La valeur par défaut est 21.
 
-**Nom d’utilisateur par défaut :** nom du compte utilisateur que vous pouvez utiliser pour accéder au serveur FTP. Le compte utilisateur doit disposer de droits suffisants pour effectuer les opérations FTP que ce service requiert.
+**Nom d’utilisateur par défaut** : nom du compte d’utilisateur que vous pouvez utiliser pour accéder au serveur FTP. Le compte d’utilisateur doit disposer de droits suffisants pour effectuer les opérations FTP que ce service requiert.
 
 **Mot de passe par défaut :** mot de passe à utiliser avec le nom d’utilisateur spécifié pour l’authentification auprès du serveur FTP.
 
@@ -398,7 +396,7 @@ Les paramètres suivants sont disponibles pour le service LDAP.
 
 *port* est le port de communication utilisé par le service LDAP. La valeur par défaut est 389, qui est le port standard utilisé pour les connexions LDAP.
 
-**Nom d’utilisateur :** nom d’utilisateur du compte utilisateur à employer pour se connecter au serveur LDAP. Le compte utilisateur doit disposer d’une autorisation pour se connecter au serveur et lire les informations contenues dans le répertoire LDAP. 
+**Nom d’utilisateur** : nom d’utilisateur du compte d’utilisateur à employer pour se connecter au serveur LDAP. Le compte d’utilisateur doit disposer d’une autorisation pour se connecter au serveur et lire les informations contenues dans le répertoire LDAP. 
 
 Selon le serveur LDAP, le nom d’utilisateur peut être un nom d’utilisateur simple comme `myname` ou un ND comme `cn=myname,cn=users,dc=myorg`.
 

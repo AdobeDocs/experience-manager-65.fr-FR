@@ -1,8 +1,6 @@
 ---
 title: Personnalisation de l’éditeur de texte
-seo-title: Customize text editor
-description: Découvrez comment personnaliser l’éditeur de texte.
-seo-description: Learn how to customize text editor.
+description: Découvrez comment personnaliser l’éditeur de texte dans l’environnement AEM Forms.
 uuid: 598246fe-8f15-49b6-b6d3-9154bebcd27e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,10 +9,10 @@ discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 feature: Correspondence Management
 exl-id: 1dd3f55c-24f7-4331-a9a3-c9223e613fec
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '605'
-ht-degree: 100%
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+workflow-type: tm+mt
+source-wordcount: '609'
+ht-degree: 90%
 
 ---
 
@@ -22,13 +20,13 @@ ht-degree: 100%
 
 ## Présentation {#overview}
 
-Vous pouvez personnaliser l’éditeur de texte dans Gestion des actifs et Interface utilisateur de création de correspondance pour ajouter d’autres polices et tailles de police. Ces polices incluent des polices françaises ainsi que d’autres langues, telles que le japonais.
+Vous pouvez personnaliser l’éditeur de texte, dans l’interface utilisateur de gestion des actifs et de création de correspondance, pour ajouter davantage de polices et de tailles de police. Ces polices comprennent des polices anglaises et non anglaises, comme les polices japonaises.
 
-Vous pouvez personnaliser les éléments suivants dans les paramètres de police :
+Vous pouvez personnaliser pour modifier les paramètres de police suivants :
 
 * Famille et taille de police
 * Propriétés telles que la hauteur et l’interlettrage
-* Valeurs par défaut des familles et des tailles de police, de la hauteur, de l’interlettrage et du format de date
+* Valeurs par défaut de la famille et de la taille de police, de la hauteur, de l’interlettrage et du format de date
 * Retraits de puces
 
 Pour ce faire, vous devez :
@@ -38,7 +36,7 @@ Pour ce faire, vous devez :
 
 ## Personnaliser des polices en modifiant le fichier tbxeditor-config.xml dans CRX {#customizefonts}
 
-Pour personnaliser des polices en modifiant le fichier fichier tbxeditor-config.xml, procédez comme suit :
+Pour personnaliser les polices en modifiant le fichier tbxeditor-config.xml, procédez comme suit :
 
 1. Accédez à `https://'[server]:[port]'/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
 1. Créez un dossier appelé config dans le dossier des applications dont le chemin ou la structure sont semblables au dossier de configuration (situé dans libs/fd/cm/config) en suivant les étapes ci-dessous :
@@ -63,10 +61,10 @@ Pour personnaliser des polices en modifiant le fichier fichier tbxeditor-config.
 
    1. Cliquez sur **Enregistrer tout**.
 
-1. Créez une copie du fichier tbxeditor-config.xml dans le dossier de configuration que vous venez de créer en procédant comme suit :
+1. Créez une copie du fichier tbxeditor-config.xml dans le dossier de configuration que vous venez de créer, en procédant comme suit :
 
-   1. Cliquez avec le bouton droit de la souris sur le fichier tbxeditor-config.xml dans libs/fd/cm/config et sélectionnez **Copier**.
-   1. Cliquez avec le bouton droit de la souris sur le dossier suivant, puis sélectionnez **Coller :**
+   1. Cliquez avec le bouton droit sur le fichier tbxeditor-config.xml dans libs/fd/cm/config et sélectionnez **Copier**.
+   1. Cliquez avec le bouton droit sur le dossier suivant et sélectionnez **Coller**.
 
       `apps/fd/cm/config`
 
@@ -163,21 +161,20 @@ Pour personnaliser des polices en modifiant le fichier fichier tbxeditor-config.
 
    1. Effectuez les modifications nécessaires dans le fichier pour modifier les éléments suivants dans les paramètres de la police : 
 
-      * Ajouter ou supprimer des familles et des tailles de police
+      * Ajouter ou supprimer la famille et la taille de police
       * Propriétés telles que la hauteur et l’interlettrage
-      * Valeurs par défaut des familles et des tailles de police, de la hauteur, de l’interlettrage et du format de date
+      * Valeurs par défaut de la famille et de la taille de police, de la hauteur, de l’interlettrage et du format de date
       * Retraits de puces
 
-      Par exemple, pour ajouter une police japonaise appelée Sazanami Mincho Medium, vous devez effectuer l’entrée suivante dans Fichier XML : `<font>Sazanami Mincho Medium</font>`. Cette police doit également être installée sur l’ordinateur client utilisé pour accéder à et travailler avec la personnalisation de la police. Pour plus d’informations, reportez-vous à la section [Ajouter des polices personnalisées sur l’ordinateur client](#addcustomfonts).
+      Par exemple, pour ajouter une police japonaise appelée Sazanami Mincho Medium, vous devez effectuer la saisie suivante dans le fichier XML : `<font>Sazanami Mincho Medium</font>`. Cette police doit également être installée sur l’ordinateur client utilisé pour accéder à et travailler avec la personnalisation de la police. Pour plus d’informations, reportez-vous à la section [Ajouter des polices personnalisées sur l’ordinateur client](#addcustomfonts).
 
       Vous pouvez également modifier les valeurs par défaut de divers aspects du texte et, en supprimant les entrées, supprimer les polices de l’éditeur de texte.
 
    1. Cliquez sur **Enregistrer tout**.
 
-
 ## Ajouter des polices personnalisées sur l’ordinateur client {#addcustomfonts}
 
-Lorsque vous accédez à une police dans l’éditeur de texte de Correspondence Management, elle doit se trouver sur l’ordinateur client que vous utilisez pour accéder à Correspondence Management. Pour pouvoir utiliser une police personnalisée dans l’éditeur de texte, vous devez d’abord l’installer sur l’ordinateur client.
+Lorsque vous accédez à une police dans l’éditeur de texte de Correspondence Management, elle doit être présente sur l’ordinateur client que vous utilisez pour accéder à Correspondence Management. Pour pouvoir utiliser une police personnalisée dans l’éditeur de texte, vous devez d’abord l’installer sur l’ordinateur client.
 
 Pour plus d’informations sur l’installation des polices, consultez les articles suivants :
 
@@ -194,4 +191,4 @@ Par exemple, la police Sazanami Mincho Medium ajoutée lors de la procédure [
 
 >[!NOTE]
 >
->Pour voir le texte en japonais, vous devez au préalable saisir du texte en caractères japonais. L’application d’une police japonaise personnalisée ne formate le texte que d’une certaine manière. Elle ne transforme pas le français ou les autres caractères en caractères japonais.
+>Pour afficher du texte en japonais, vous devez d’abord le saisir avec des caractères japonais. L’application d’une police japonaise personnalisée formate uniquement le texte d’une certaine manière. L’application d’une police japonaise personnalisée ne remplace pas les caractères anglais ou autres par des caractères japonais.

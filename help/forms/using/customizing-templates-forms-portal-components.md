@@ -1,8 +1,6 @@
 ---
 title: Personnaliser des modèles pour les composants Forms Portal
-seo-title: Customizing templates for forms portal components
-description: Affichage de métadonnées personnalisées dans les listes de formulaires
-seo-description: Display custom metadata in form listing
+description: L’interface utilisateur d’AEM Forms permet aux utilisateurs d’ajouter des métadonnées aux formulaires. Les métadonnées personnalisées améliorent l’expérience utilisateur dans la liste de formulaires et la recherche de votre entreprise.
 uuid: 212109ca-85c8-4915-82e5-a18a0443be1b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,10 +9,10 @@ discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
-source-wordcount: '1225'
-ht-degree: 100%
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+workflow-type: tm+mt
+source-wordcount: '1243'
+ht-degree: 54%
 
 ---
 
@@ -24,30 +22,31 @@ ht-degree: 100%
 
 [Gestion des métadonnées de formulaire](../../forms/using/manage-form-metadata.md)
 
-Maîtrise du langage HTML et des feuilles de style CSS
+Connaissances opérationnelles du HTML et de la page CSS
 
 ## Présentation {#overview}
 
-L’interface utilisateur des AEM Forms permet d’ajouter des métadonnées à n’importe quel formulaire. Les métadonnées personnalisées peuvent améliorer l’expérience utilisateur lors de la création de liste et la recherche des formulaires de votre organisation.
+L’interface utilisateur des AEM Forms permet d’ajouter des métadonnées à n’importe quel formulaire. Les métadonnées personnalisées peuvent améliorer l’expérience utilisateur lors de la liste et de la recherche de formulaires de votre entreprise.
 
-Forms Portal permet d’utiliser des métadonnées personnalisées dans les listes de formulaires. Lors de la création de modèles personnalisés pour les ressources, vous pouvez modifier leur disposition et utiliser des métadonnées personnalisées dans votre jeu de styles CSS.
+Forms Portal vous permet d’utiliser des métadonnées personnalisées dans les listes de formulaires. Lors de la création de modèles personnalisés pour les ressources, vous pouvez modifier leur mise en page et utiliser des métadonnées personnalisées avec votre jeu de styles CSS.
 
-Pour créer un modèle personnalisé pour divers composants de Forms Portal, suivez la procédure ci-après.
+Effectuez les étapes suivantes pour créer un modèle personnalisé pour divers composants Forms Portal.
 
-## Création d’un modèle personnalisé {#creating-a-nbsp-custom-template}
+## Création d’un modèle personnalisé {#creating-a-nbsp-custom-template}
 
 1. Créez un nœud sling:Folder sous /apps
 
-   Ajoutez une propriété « fpContentType ». Spécifiez les valeurs adéquates pour la propriété en fonction du composant pour lequel vous définissez le modèle personnalisé.
+   Ajoutez une propriété « fpContentType ». Spécifiez les valeurs appropriées pour la propriété en fonction du composant pour lequel vous définissez le modèle personnalisé.
 
-   * Composant Recherche et énumérateur : « /libs/fd/fp/formTemplate »
+   * Composant Search &amp; Lister : &quot;/libs/fd/fp/formTemplate&quot;
    * Composant Brouillons et envois :
 
-      * Section Brouillons : /libs/fd/fp/draftsTemplate
-      * Section Envois : /libs/fd/fp/submissionsTemplate
-   * Component Lien : /libs/fd/fp/linkTemplate
+      * Section Brouillons : /libs/fd/fp/draftTemplate
+      * Section Envois : /libs/fd/fp/submissionTemplate
 
-   Ajoutez un titre que vous souhaitez afficher lors de la sélection des modèles de disposition.
+   * Composant Link : /libs/fd/fp/linkTemplate
+
+   Ajoutez un titre à afficher lors de la sélection des modèles de mise en page.
 
    >[!NOTE]
    >
@@ -57,11 +56,11 @@ Pour créer un modèle personnalisé pour divers composants de Forms Portal, sui
    ![Création d’un nœud sling:Folder](assets/1.png)
 
 1. Créez un fichier template.html dans ce dossier qui servira de modèle personnalisé.
-1. Créez le modèle personnalisé et utilisez des métadonnées personnalisées comme indiqué ci-dessous.
+1. Créez le modèle personnalisé et utilisez des métadonnées personnalisées comme décrit ci-dessous.
 
-## Exemple fonctionnel {#working-example}
+## Exemple de travail {#working-example}
 
-Vous trouverez ci-dessous un exemple d’implémentation d’un modèle personnalisé dans lequel Forms Portal acquiert une disposition Geometrixx Gov Card Layout pour le composant Recherche et énumérateur.
+Vous trouverez ci-dessous un exemple d’implémentation d’un modèle personnalisé dans lequel Forms Portal acquiert une mise en page de carte Google Geometrixx personnalisée pour le composant Search &amp; Lister.
 
 ```html
 <div class="__FP_boxes-container __FP_single-color">
@@ -81,15 +80,15 @@ Vous trouverez ci-dessous un exemple d’implémentation d’un modèle personna
 </div>
 ```
 
-## Spécifications techniques relatives aux modèles personnalisés {#technical-specifications-for-custom-templates}
+## Spécifications techniques des modèles personnalisés {#technical-specifications-for-custom-templates}
 
-Le modèle personnalisé de tout composant du Portail Formulaires comprend des entrées répétables et non répétables. Les entrées répétables sont les entités de base des listes. Les composants Recherche et énumérateur, Brouillons et envois et Lien sont des exemples d’entrées répétables.
+Le modèle personnalisé de tout composant du Portail Formulaires comprend des entrées répétables et non répétables. Les entrées répétables sont des entités de base pour la liste. Les composants Search &amp; Lister, Drafts &amp; Submissions et Link sont des exemples d’entrées répétables.
 
-Forms Portal fournit une syntaxe pour que les espaces réservés affichent des métadonnées personnalisées/prêtes à l’emploi. Les espaces réservés sont remplis après l’affichage des résultats des formulaires, des brouillons ou des envois.
+Forms Portal fournit une syntaxe permettant aux espaces réservés d’afficher des métadonnées personnalisées/prêtes à l’emploi. Les espaces réservés sont renseignés après l’affichage des résultats des formulaires, des brouillons ou des envois.
 
 Pour inclure une entrée répétable, configurez l’attribut **data-repeatable** sur **true**.
 
-*Dans l’exemple présenté, deux éléments Div se trouvent dans la partie supérieure du modèle personnalisé. Le premier, avec la classe CSS &quot;__FP_boxes-container&quot;, fonctionne comme un élément conteneur pour les formulaires répertoriés. Le second, avec la classe CSS &quot;__FP_boxes&quot;, est un modèle pour les entités de base, à savoir un formulaire dans le cas présent. L’attribut **data-repeatable**qui figure dans l’élément Div a la valeur **true**.*
+*Dans l’exemple présenté, deux éléments Div se trouvent en haut du modèle personnalisé. La première, avec la classe CSS &quot;__FP_boxes-container&quot;, fonctionne comme un élément conteneur pour les formulaires répertoriés. Le second, avec la classe CSS &quot;__FP_boxes&quot;, est un modèle pour les entités de base, dans ce cas un formulaire. L’attribut **data-repeatable**qui figure dans l’élément Div a la valeur **true**.*
 
 Chaque espace réservé possède un jeu de métadonnées prêtes à l’emploi exclusif. Pour afficher des métadonnées personnalisées à un emplacement spécifique du formulaire, ajoutez la **propriété ${metadata_prop}** à cet emplacement.
 
@@ -97,13 +96,13 @@ Chaque espace réservé possède un jeu de métadonnées prêtes à l’emploi e
 
 ## Métadonnées prêtes à l’emploi {#out-of-the-box-metadata}
 
-Les différents composants de Forms Portal fournissent des jeux exclusifs de métadonnées prêtes à l’emploi que vous pouvez utiliser pour les listes.
+Plusieurs composants de Forms Portal fournissent des ensembles exclusifs de métadonnées prêtes à l’emploi que vous pouvez utiliser pour les listes.
 
 ### Composant Search &amp; Lister {#search-amp-lister-component}
 
 * **Title :** titre du formulaire
-* **name** : nom du formulaire (il s’agit généralement du titre)
-* **description** : description du formulaire.
+* **name**: nom du formulaire (il est généralement identique au titre)
+* **description**: description du formulaire
 * **formUrl** : URL permettant d’effectuer le rendu du formulaire au format HTML.
 * **pdfUrl** : URL permettant d’effectuer le rendu du formulaire au format PDF.
 * **assetType** : type de la ressource. Les valeurs valides sont les suivantes : **Formulaire**,**Formulaire PDF**, **Imprimer le formulaire** et **Formulaire adaptatif**.
@@ -121,7 +120,7 @@ Prise en charge de la localisation et du tri et utilisation des propriétés de 
 1. **Prise en charge de la localisation** : pour localiser du texte statique, utilisez l’attribut `${localize-YOUR_TEXT}` et rendez la valeur localisée disponible, si elle ne l’est déjà.
    *Dans l’exemple présenté, les attributs `${localize-Apply}` et `${localize-Download}` sont utilisés pour localiser les termes Apply et Download.*
 
-1. **Prise en charge du tri** : cliquez sur l’élément HTML pour trier les résultats de la recherche. Pour mettre en œuvre le tri dans une disposition de tableau, ajoutez l’attribut « data-sortKey » à l’en-tête spécifique du tableau. Ajoutez en outre sa valeur en tant que métadonnées pour lesquelles vous souhaitez effectuer un tri.
+1. **Prise en charge du tri**: cliquez sur l’élément HTML pour trier les résultats de la recherche. Pour mettre en oeuvre le tri dans une disposition de tableau, ajoutez l’attribut &quot;data-sortKey&quot; sur l’en-tête du tableau en question. Ajoutez en outre sa valeur en tant que métadonnées pour lesquelles vous souhaitez effectuer un tri.
 Par exemple, pour l’en-tête &quot;Title&quot; dans la vue Grille, la valeur de l’en-tête &quot;data-sortKey&quot; est &quot;title&quot;. Cliquez sur l’en-tête pour trier les valeurs d’une colonne particulière.
 
 1. **Utilisation des propriétés de configuration** : le composant Recherche et énumérateur possède plusieurs configurations que vous pouvez utiliser dans l’interface utilisateur. Par exemple, pour afficher du texte d’info-bulle HTML enregistré dans la boîte de dialogue Modifier, utilisez l’attribut `${config-htmlLinkText}`. **De même, pour le texte d’info-bulle PDF, utilisez l’attribut** `${config-pdfLinkText}`.
@@ -131,27 +130,27 @@ Par exemple, pour l’en-tête &quot;Title&quot; dans la vue Grille, la valeur d
 * **Title :** titre du formulaire
 * **formUrl** : URL permettant d’effectuer le rendu du formulaire au format HTML.
 * **target** : attribut cible du lien. Les valeurs valides sont les suivantes : « _blank » et « _self ».
-* **linkText** : légende du lien.
+* **linkText**: légende du lien
 
-### Composant Brouillons et envois {#drafts-amp-submissions-component}
+### Composant Drafts &amp; Submissions {#drafts-amp-submissions-component}
 
-* **Path** : chemin du nœud des métadonnées de bouillon/envoi. Utilisez-le avec l’extension .HTML en tant qu’URL pour ouvrir un brouillon ou un envoi.
-* **contextPath** : chemin du contexte de l’instance AEM.
-* **firstLetter** : première lettre (majuscule) du titre du formulaire adaptatif qui a été enregistré en tant que brouillon ou envoyé.
-* **formName** : titre du formulaire adaptatif qui a été enregistré en tant que brouillon ou envoyé.
-* **draftID** : identifiant du brouillon répertorié (à utiliser uniquement dans le modèle pour la section Brouillons).
-* **submitID** : identifiant de l’envoi répertorié (à utiliser uniquement dans le modèle pour la section Envois).
-* **status** : état du formulaire envoyé. (A utiliser uniquement dans le modèle pour la section Envois).
-* **description** : description du formulaire adaptatif associé au brouillon ou à l’envoi.
-* **diffTime** : différence entre l’heure actuelle et la dernière action d’enregistrement du brouillon. Il peut s’agir également de la différence entre l’heure actuelle et la dernière action d’envoi pour l’envoi.
-* **iconClass** : classe CSS utilisée pour afficher la première lettre du brouillon/envoi. Forms Portal comprend les classes suivantes, qui fournissent divers arrière-plans colorés.
-* **owner** : utilisateur ayant créé le brouillon/envoi.
+* **Chemin**: chemin d’accès au noeud de métadonnées de brouillon/envoi. Utilisez-le avec l’extension .HTML en tant qu’URL pour ouvrir un brouillon ou un envoi.
+* **contextPath**: chemin du contexte de l’instance AEM
+* **firstLetter**: première lettre (majuscule) du titre du formulaire adaptatif, enregistrée en tant que brouillon ou envoyée.
+* **formName**: titre du formulaire adaptatif, qui a été enregistré en tant que brouillon ou envoyé.
+* **draftID**: identifiant du brouillon répertorié (à utiliser uniquement dans le modèle de la section Version préliminaire).
+* **submitID**: identifiant de l’envoi répertorié (à utiliser uniquement dans le modèle de la section Envoi).
+* **status**: état du formulaire envoyé. (À utiliser uniquement dans le modèle pour la section Envoi).
+* **description**: description du formulaire adaptatif associé au brouillon ou à l’envoi.
+* **diffTime**: différence entre l’heure actuelle et la dernière action d’enregistrement du brouillon. Autre différence entre l’heure actuelle et la dernière action d’envoi pour l’envoi.
+* **iconClass**: classe CSS utilisée pour afficher la première lettre du brouillon/envoi. Forms Portal comprend les classes suivantes, qui fournissent divers arrière-plans colorés.
+* **propriétaire**: utilisateur ayant créé le brouillon/envoi.
 * **Today** : date de création du brouillon ou de l’envoi au format JJ:MM:AAAA.
 * **TimeNow** : heure de création du brouillon ou de l’envoi au format HH:MM:SS (format de 24 heures).
 
 *Remarque :*
 
-1. Pour l’option de suppression dans la section Brouillons sous le composant Brouillons et envois, appelez la classe CSS &quot;__FP_deleteDraft&quot;. En outre, incluez l’attribut « draftID » avec la valeur **${draftID}**, qui correspond à l’ID du brouillon correspondant.
+1. Pour l’option de suppression de la section Brouillons sous le composant Drafts &amp; Submissions, nommez la classe CSS &quot;__FP_deleteDraft&quot;. En outre, incluez l’attribut « draftID » avec la valeur **${draftID}**, qui correspond à l’ID du brouillon correspondant.
 
 1. Lors de la création de liens pour ouvrir les brouillons et les envois, vous pouvez spécifier **${path}.html** en tant que valeur de l’attribut **href** pour la balise d’ancrage.
 

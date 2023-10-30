@@ -1,7 +1,6 @@
 ---
 title: Démarrage rapide (SOAP) de l’API Java Endpoint Registry
-seo-title: Endpoint Registry Java API QuickStart(SOAP)
-description: Démarrage rapide (SOAP) de l’API Java Endpoint Registry
+description: Ajoutez des points de fin tels que EJB, SOAP, Watched Folder, Email endpoint, Remoting endpoint, etc. En outre, modifiez, supprimez et récupérez un point de terminaison à l’aide de l’API Java.
 uuid: 986c55d0-e199-46f8-a3cc-a6baf5cce316
 contentOwner: admin
 content-type: reference
@@ -10,10 +9,10 @@ topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '543'
-ht-degree: 100%
+source-git-commit: 1917989005a98469776befc967e40ab7b40c31f5
+workflow-type: tm+mt
+source-wordcount: '560'
+ht-degree: 95%
 
 ---
 

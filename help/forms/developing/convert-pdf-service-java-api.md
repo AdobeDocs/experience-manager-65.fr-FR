@@ -1,7 +1,6 @@
 ---
 title: Démarrage rapide (SOAP) de l’API Java du service Convert PDF
-seo-title: Convert PDF Service Java API QuickStart(SOAP)
-description: Démarrage rapide (SOAP) de l’API Java du service Convert PDF
+description: Le service Convert PDF convertit des documents PDF en fichiers PostScript ou en images (aux formats JPEG, JPEG 2000, PNG et TIFF).
 uuid: 97253ac7-f0c1-4766-a7bd-c19af52adf51
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ topic-tags: develop
 discoiquuid: bdd9bb56-14f6-448b-be4a-7c11f670e901
 role: Developer
 exl-id: 8974c468-ff2b-431d-96fb-e987698619bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '251'
+source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+workflow-type: tm+mt
+source-wordcount: '261'
 ht-degree: 100%
 
 ---

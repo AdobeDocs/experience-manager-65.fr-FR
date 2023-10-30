@@ -1,8 +1,6 @@
 ---
 title: Définir les emplacements de fichiers pour Output
-seo-title: Specify file locations for Output
-description: Découvrez comment indiquer les emplacements de fichier pour Output.
-seo-description: Learn how to specify file locations for Output.
+description: Découvrez comment spécifier des emplacements de fichiers pour Output pour certains types de fichiers, par exemple Content Root URI, XCI Configuration File, Cache et Default.
 uuid: 3287274f-85b5-4811-8abb-d347a9b80947
 contentOwner: admin
 content-type: reference
@@ -10,10 +8,10 @@ geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 460bbb31-8187-469c-8102-b310093b6c03
 exl-id: 620c69d6-4fe1-46d6-b5d4-3b562142e547
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '314'
-ht-degree: 100%
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+workflow-type: tm+mt
+source-wordcount: '330'
+ht-degree: 56%
 
 ---
 
@@ -22,12 +20,12 @@ ht-degree: 100%
 Vous pouvez spécifier les emplacements dans lesquels Output recherche certains types de fichiers requis.
 
 1. Dans Administration Console, cliquez sur Services > Output.
-1. Sous Emplacements, définissez les options appropriées.
+1. Sous Emplacements, spécifiez les options appropriées.
 1. Cliquez sur Enregistrer.
 
 ## Paramètres des emplacements {#locations-settings}
 
-**URI racine du contenu :** URI ou emplacement absolu du répertoire de récupération des formulaires. Cette valeur est combinée avec le paramètre sForm, indiqué via l’API, pour construire l’URL absolue vers le formulaire à récupérer. Cette valeur peut faire référence à un répertoire ou à un emplacement Web accessible par HTTP.
+**URI racine du contenu :** URI ou emplacement absolu du répertoire de récupération des formulaires. Cette valeur est combinée avec le paramètre sForm, indiqué via l’API, pour construire l’URL absolue vers le formulaire à récupérer. Cette valeur peut référencer un répertoire ou un emplacement web accessible via HTTP.
 
 La valeur par défaut est une chaîne vide.
 
@@ -35,7 +33,7 @@ La valeur par défaut est une chaîne vide.
 
 La valeur par défaut est `com/adobe/formServer/PA/pa_output.xci`.
 
-**Emplacement du cache :** détermine l’emplacement du cache disque d’Output. Lorsque ce paramètre est modifié, toutes les informations concernant le cache de l’emplacement courant sont réinitialisées et un nouveau cache est créé dans le nouveau répertoire. Sélectionnez l’une des options suivantes :
+**Emplacement du cache :** détermine l’emplacement du cache disque d’Output. Lorsque vous modifiez ce paramètre, toutes les informations de cache existantes de l’emplacement actuel sont réinitialisées et un nouveau cache est créé au nouvel emplacement. Sélectionnez l’une des options suivantes :
 
 **Emplacement par défaut :** il s’agit de la sélection par défaut. Lorsque cette option est sélectionnée, le cache est créé à un emplacement différent selon le serveur d’applications utilisé :
 
@@ -47,4 +45,4 @@ La valeur par défaut est `com/adobe/formServer/PA/pa_output.xci`.
 
 >[!NOTE]
 >
->Si vous utilisez un utilitaire de nettoyage des répertoires temporaires, sachez que si la suppression de ces répertoires n’affecte pas les fonctionnalités, elle réduit considérablement les performances pendant une courte période, jusqu’à ce que le nouveau cache soit reconstitué. Pour éviter ce problème, ne supprimez pas ces répertoires lorsque vous videz le répertoire temporaire d’AEM forms.
+>Si vous utilisez un utilitaire de nettoyage des répertoires temporaires, sachez que si la suppression de ces répertoires n’affecte pas les fonctionnalités, elle peut affecter considérablement les performances pendant une courte période, jusqu’à ce que le nouveau cache soit créé. Pour éviter ce problème, ne supprimez pas ces répertoires lors de l’effacement du répertoire temporaire d’AEM forms.

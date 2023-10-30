@@ -1,8 +1,6 @@
 ---
 title: Application de signatures électroniques à un formulaire à l’aide de signatures tactiles
-seo-title: Apply electronic signatures to a form using scribble signatures
-description: Signature de formulaires à l’aide de la saisie tactile
-seo-description: Signing forms using scribble
+description: Découvrez comment signer AEM Forms adaptatif à l’aide de la signature tactile. Vous pouvez utiliser l’étape signature tactile et signature pour tracer la signature sur un formulaire.
 uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -10,10 +8,10 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 feature: Adaptive Forms
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 71%
+source-wordcount: '742'
+ht-degree: 74%
 
 ---
 
@@ -63,7 +61,7 @@ Vous pouvez appuyer sur l’icône **Configurer** ![configurer](assets/configure
 
    >[!NOTE]
    >
-   >Le composant Étape de signature prend toute la largeur disponible pour le formulaire. Il est recommandé de ne pas avoir d’autre composant sur la section contenant le composant Étape de signature.
+   >Le composant Étape de signature prend toute la largeur disponible pour le formulaire. Il est recommandé de ne pas avoir d’autre composant sur la section contenant le composant Étape de signature. 
    >
 
 1. Dans l’explorateur de contenu, appuyez sur **Conteneur de formulaires**, puis sur l’icône **Configurer** ![configure](/help/forms/using/assets/configure.png). L’explorateur de propriétés s’ouvre et affiche les propriétés du conteneur de formulaires adaptatifs. Accédez à **Conteneur de formulaires adaptatifs** > **Signature électronique** et désélectionnez l’option **Activer Adobe Sign** . Appuyez sur l’icône Terminé ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour enregistrer les modifications.
@@ -73,7 +71,7 @@ Vous pouvez appuyer sur l’icône **Configurer** ![configurer](assets/configure
    >Lorsque vous ajoutez un composant Étape de signature à un formulaire adaptatif, l’option Activer Adobe Sign est sélectionnée automatiquement.
    >
 
-1. Appuyez sur l’icône de ![configuration](assets/configure.png) **Configurer**. Il ouvre l’explorateur de propriétés et affiche les propriétés de l’étape Signature. Configurez les propriétés suivantes :
+1. Appuyez sur l’icône de ![configuration](assets/configure.png) **Configurer**. Elle ouvre l’explorateur de propriétés et affiche les propriétés Étape de signature. Configurez les propriétés suivantes :
 
    * **Nom de l’élément** : spécifiez le nom du composant.
 

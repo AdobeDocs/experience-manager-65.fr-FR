@@ -1,8 +1,7 @@
 ---
 title: Incorporation d’Adobe Sign à AEM Forms
-seo-title: Integrate Adobe Sign with AEM Forms
-description: Découvrez comment configurer Adobe Sign pour AEM Forms.
-seo-description: Learn how to configure Adobe Sign for AEM Forms
+seo-title: Integrate Adobe Sign with AEM Adaptive Forms
+description: Découvrez comment configurer Adobe Sign pour votre Forms adaptatif AEM. Adobe Sign améliore le flux de travail et traite les documents pour les questions juridiques, commerciales, salariales, de gestion des ressources humaines, etc.
 uuid: e5049775-fb6c-4228-9823-e6a2811460da
 contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,10 +10,10 @@ discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '2054'
-ht-degree: 94%
+source-wordcount: '2074'
+ht-degree: 93%
 
 ---
 
@@ -148,7 +147,7 @@ La connexion d’AEM Forms à Adobe Acrobat Sign Solutions pour le gouvernem
 * la création de l’URL de redirection pour vos instances AEM ;
 * le partage de l’URL de redirection et des champs d’application avec l’équipe Adobe Sign Solutions pour le gouvernement ;
 * la réception des informations d’identification de l’équipe Adobe Sign ;
-* l’utilisation des informations d’identification reçues pour connecter AEM Forms à Adobe Acrobat Sign Solutions pour le gouvernement.
+* l’utilisation des informations d’identification reçues pour connecter AEM Forms à Adobe Acrobat Sign Solutions pour le gouvernement
 
 ![adobe-acrobat-sign-govt-workflow](/help/forms/using/assets/adobe-acrobat-sign-govt-workflow.png)
 
@@ -197,21 +196,21 @@ Partagez les `scopes` (répertoriés ci-dessous) et la `re-direct URL` créés e
 
 La personne représentante génère et partage alors les informations d’identification avec vous. Dans la section suivante, utilisez les informations d’identification (identifiant client et secret client) pour connecter AEM Forms à Adobe Acrobat Sign Solutions pour le gouvernement.
 
-#### Utiliser des informations d’identification reçues pour connecter AEM Forms à Adobe Acrobat Sign Solutions pour le gouvenement
+#### Utiliser des informations d’identification reçues pour connecter AEM Forms à Adobe Acrobat Sign Solutions pour le gouvernement
 
-1. Ouvrez la `re-direct URL` dans votre navigateur. Vous avez créé et noté la `re-direct URL` dans la dernière étape de la section [création d’une URL de redirection sur votre instance AEM](#create-redirect-url).
+1. Ouvrez l’`re-direct URL` dans votre navigateur. Vous avez créé et noté l’`re-direct URL` dans la dernière étape de la section de [création d’une URL de redirection sur votre instance AEM](#create-redirect-url).
 
 1. Dans l’onglet **[!UICONTROL Général]** de la page **[!UICONTROL Créer une configuration Adobe Sign]**, spécifiez un **[!UICONTROL nom]** de configuration et appuyez sur **[!UICONTROL Suivant]**. Vous avez la possibilité d’indiquer un **[!UICONTROL titre]** et de rechercher et sélectionner une **[!UICONTROL vignette]** pour la configuration. Cliquez sur **[!UICONTROL Suivant]**.
 
-1. Dans l’onglet **[!UICONTROL Paramètres]** de la page **[!UICONTROL Création d’une configuration Adobe Sign]**, pour l’option **[!UICONTROL Sélectionner une solution]**, sélectionnez [!DNL Adobe Acrobat Sign Solutions for Government].
+1. Dans l’onglet **[!UICONTROL Paramètres]** de la page **[!UICONTROL Créer une configuration Adobe Sign]**, pour l’option **[!UICONTROL Sélectionner une solution]**, sélectionnez [!DNL Adobe Acrobat Sign Solutions for Government].
 
-   ![Adobe Acrobat Sign Solutions pour le gouvernement.](/help/forms/using/assets/adobe-sign-for-govt.png)
+   ![Adobe Acrobat Sign Solutions pour le gouvernement](/help/forms/using/assets/adobe-sign-for-govt.png)
 
 1. Dans le champ **[!UICONTROL E-mail]**, indiquez l’adresse e-mail associée à votre compte Adobe Acrobat Sign Solutions pour le gouvernement.
 
-1. Le champ **[!UICONTROL URL OAuth]** spécifie le partitionnement de base de données Adobe Sign. Le champ contient l’URL par défaut. Ne modifiez pas l’URL.
+1. Le champ **[!UICONTROL URL OAuth]** spécifie le partitionnement de base de données Adobe Sign. Le champ contient l’URL par défaut. Ne modifiez pas l’URL.
 
-1. Utilisez les informations d’identification partagées par le représentant ou la représentante Adobe Acrobat Sign Solution for Government ([membre de l’équipe Adobe Professional Services]) dans la section précédente en tant que [**[!UICONTROL ID client]** et **[!UICONTROL Secret client]**].
+1. Utilisez les informations d’identification partagées par le représentant ou la représentante Adobe Acrobat Sign Solutions pour le gouvernement ([membre de l’équipe Adobe Professional Services]) dans la section précédente en tant que [**[!UICONTROL ID client]** et **[!UICONTROL Secret client]**].
 
 1. Sélectionnez l’option **[!UICONTROL Activer Adobe Acrobat Sign pour les pièces jointes]** pour ajouter les fichiers joints à un formulaire adaptatif au document [!DNL Adobe Acrobat Sign] correspondant envoyé à des fins de signature.
 

@@ -1,15 +1,15 @@
 ---
 title: Types de points d’entrée
-description: Découvrez les différents types de points de fin.
+description: Découvrez les différents types de points de fin. Différents types de points de fin, tels que Email, Dossier de contrôle et bien d’autres, peuvent être ajoutés aux services.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 380cab7f-e7f7-4cb7-bd20-ea530a349fac
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 63%
+source-wordcount: '455'
+ht-degree: 60%
 
 ---
 
