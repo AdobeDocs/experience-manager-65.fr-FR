@@ -2,9 +2,9 @@
 title: Tâches asynchrones
 description: Adobe Experience Manager optimise les performances en exécutant de manière asynchrone certaines tâches gourmandes en ressources.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: cc63291c32f7a234398ebe8bf67ab53aaf8fa90f
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '800'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,6 @@ Ces opérations comprennent :
 * Déplacement de nombreuses ressources ou de ressources avec de nombreuses références
 * Exportation/importation de métadonnées de ressources en masse
 * Récupération des ressources dépassant la limite de seuil définie à partir d’un déploiement Experience Manager distant
-* Déplacement de pages
 * Déploiement de Live Copies
 
 Vous pouvez afficher l’état des tâches asynchrones à partir du tableau de bord **[!UICONTROL État des tâches asynchrones]** dans **Navigation globale** -> **Outils** -> **Opérations** -> **Tâches**.
@@ -113,19 +112,6 @@ Si le nombre de ressources/dossiers ou de références à déplacer dépasse le 
 1. Dans le champ **[!UICONTROL Nombre seuil de ressources/références]**, spécifiez le nombre seuil de ressources/dossiers ou références pour le traitement asynchrone des opérations de déplacement.
 
    ![Seuil de déplacement des ressources](assets/async-move-threshold.png)
-
-1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, par exemple, succès ou échec.
-1. Enregistrez les modifications.
-
-### Configuration des opérations de déplacement de page asynchrones {#configuring-asynchronous-page-move-operations}
-
-Si le nombre de références aux pages à déplacer dépasse le nombre seuil, l’opération de déplacement est exécutée de manière asynchrone.
-
-1. Dans la navigation globale, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
-1. Dans la console web, ouvrez la **[!UICONTROL configuration de traitement des tâches des opérations de déplacement de page asynchrones.]**
-1. Dans le champ **[!UICONTROL Nombre seuil de références]**, spécifiez le nombre seuil de références pour le traitement asynchrone des opérations de déplacement.
-
-   ![Seuil de déplacement de page](assets/async-page-move.png)
 
 1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, par exemple, succès ou échec.
 1. Enregistrez les modifications.

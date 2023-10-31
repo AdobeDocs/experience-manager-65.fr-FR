@@ -2,10 +2,10 @@
 title: Créer et organiser des pages avec AEM
 description: Découvrez comment créer et gérer des pages avec Adobe Experience Manager.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: cc63291c32f7a234398ebe8bf67ab53aaf8fa90f
 workflow-type: tm+mt
-source-wordcount: '2526'
-ht-degree: 98%
+source-wordcount: '2436'
+ht-degree: 97%
 
 ---
 
@@ -378,18 +378,13 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
 #### Actions asynchrones {#asynchronous-actions}
 
-Normalement, une action de déplacement ou de changement de nom de page est exécutée immédiatement. Cela est considéré comme un traitement synchrone et toute action supplémentaire dans l’interface utilisateur est bloquée jusqu’à ce que l’action soit terminée.
+Les actions de déplacement de page sont toujours traitées de manière asynchrone, ce qui permet à l’utilisateur de continuer à créer dans l’interface utilisateur sans entraves.
 
-Cependant, si le nombre de pages affectées est supérieur à une limite définie, l’action est traitée de manière asynchrone, ce qui permet à l’utilisateur de continuer à créer dans l’interface utilisateur sans être entravé par l’action de déplacement ou de changement de nom de page.
+* L’utilisateur doit définir quand l’opération asynchrone doit être effectuée.
+   * **Maintenant** : l’exécution de la tâche asynchrone commence immédiatement.
+   * **Plus tard** : l’utilisateur peut définir le moment où la tâche asynchrone débutera.
 
-* Lorsque vous cliquez sur **Déplacer** à la dernière étape ci-dessus, AEM vérifie la limite configurée.
-* Si le nombre de pages affectées est inférieur à la limite, il effectue une opération synchrone.
-* S’il est supérieur à la limite, il effectue une opération asynchrone.
-   * L’utilisateur doit définir quand l’opération asynchrone doit être effectuée.
-      * **Maintenant** : l’exécution de la tâche asynchrone commence immédiatement.
-      * **Plus tard** : l’utilisateur peut définir le moment où la tâche asynchrone débutera.
-
-        ![Déplacement de page asynchrone](assets/asynchronous-page-move.png)
+  ![Déplacement de page asynchrone](assets/asynchronous-page-move.png)
 
 L’état des tâches asynchrones peut être vérifié dans le [**tableau de bord État des tâches asynchrones**](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) en sélectionnant **Navigation globale** -> **Outils** -> **Opérations** -> **Tâches**.
 
