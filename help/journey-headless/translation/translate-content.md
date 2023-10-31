@@ -2,16 +2,16 @@
 title: Traduction du contenu
 description: Utilisez le connecteur et les règles de traduction pour traduire votre contenu découplé.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
+source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
 workflow-type: tm+mt
 source-wordcount: '2163'
-ht-degree: 85%
+ht-degree: 86%
 
 ---
 
 # Traduction du contenu {#translate-content}
 
-Utilisez le connecteur et les règles de traduction pour traduire votre contenu découplé.
+Utilisez l’intégration de traduction et les règles pour traduire votre contenu sans interface utilisateur.
 
 ## Un peu d’histoire…  {#story-so-far}
 
@@ -209,7 +209,7 @@ Appuyez ou cliquez sur cette icône pour ouvrir le fragment de contenu traduit d
 
 ![Un fragment de contenu traduit](assets/translated-content-fragment.png)
 
-Vous pouvez modifier le fragment de contenu si nécessaire, à condition que vous disposiez des autorisations appropriées, mais la modification des fragments de contenu dépasse la portée de ce parcours. Voir [Ressources supplémentaires](#additional-resources) à la fin de ce document pour plus d’informations sur cette rubrique.
+Vous pouvez modifier le fragment de contenu si nécessaire, à condition que vous disposiez des autorisations appropriées, mais la modification des fragments de contenu dépasse la portée de ce parcours. Consultez la section [Ressources supplémentaires](#additional-resources) à la fin de ce document pour plus d’informations sur cette rubrique.
 
 Le but du projet est de collecter toutes les ressources liées à une traduction en un seul endroit pour un accès facile et un aperçu clair. Cependant, comme vous pouvez le voir en affichant les détails d’un élément traduit, les traductions sont elles-mêmes renvoyées dans le dossier des ressources de la langue de traduction. Dans cet exemple, le dossier est :
 
@@ -229,7 +229,7 @@ Il est important de comprendre que ce contenu n’est pas publié et n’est don
 
 Si votre service de traduction fournit une traduction humaine, le processus de révision offre d’autres options. Par exemple, les traductions reviennent dans le projet en statut **Version préliminaire** et doivent être examinés et approuvés ou rejetés manuellement.
 
-La traduction humaine dépasse le cadre de ce parcours de localisation. Voir [Ressources supplémentaires](#additional-resources) à la fin de ce document pour plus d’informations sur cette rubrique. Au-delà des autres options de validation, le workflow de la traduction humaine est le même que celui des traductions automatiques, comme décrit dans ce parcours.
+La traduction humaine dépasse le cadre de ce parcours de localisation. Consultez la section [Ressources supplémentaires](#additional-resources) à la fin de ce document pour plus d’informations sur cette rubrique. Au-delà des autres options de validation, le workflow de la traduction humaine est le même que celui des traductions automatiques, comme décrit dans ce parcours.
 
 ## Prochaines étapes {#what-is-next}
 
