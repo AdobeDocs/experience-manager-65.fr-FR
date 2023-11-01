@@ -1,18 +1,16 @@
 ---
 title: Présentation des processus AEM Forms
-description: Les processus AEM Forms englobent la création, l’envoi, la gestion des données, la validation, l’intégration, l’automatisation des processus et la gestion des sorties.
-uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
+description: Découvrez comment les processus AEM Forms englobent la création, l’envoi, la gestion des données, la validation, l’intégration, l’automatisation des workflows et la gestion des sorties.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: development-tools, coding
-discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 role: Developer
 exl-id: 434ac316-8a01-43a6-844b-1b792f60fa21
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 98%
+source-wordcount: '814'
+ht-degree: 93%
 
 ---
 
@@ -30,7 +28,7 @@ Cependant, il existe des situations où un processus ne peut pas être exécuté
 
 * La durée dʼun processus peut être très longue.
 * Un processus peut transcender le cadre de lʼentreprise.
-* Un processus doit être accompagné dʼune contribution externe pour pouvoir être mené à terme. À titre dʼexemple, on peut imaginer une situation où un formulaire est envoyé à un responsable qui a quitté son bureau. Dans ces circonstances, le processus ne peut être achevé avant le retour du responsable qui remplit le formulaire.
+* Un processus a besoin d’une entrée externe pour se terminer. À titre dʼexemple, on peut imaginer une situation où un formulaire est envoyé à un responsable qui a quitté son bureau. Dans ces circonstances, le processus ne peut être achevé avant le retour du responsable qui remplit le formulaire.
 
   Ces types de processus sont appelés processus de longue durée. Un processus de longue durée est exécuté de manière asynchrone, ce qui permet aux systèmes dʼinteragir en fonction des ressources disponibles et dʼassurer le suivi et la surveillance de lʼopération. Lorsquʼun processus de longue durée est appelé, AEM Forms crée une valeur dʼidentificateur de lʼappel dans le cadre d’un enregistrement qui permet de suivre le statut du processus de longue durée. L’enregistrement est stocké dans la base de données dʼAEM Forms. Les enregistrements de processus de longue durée peuvent être supprimés définitivement lorsqu’ils ne sont plus nécessaires.
 
@@ -63,7 +61,7 @@ Lorsque ce processus est invoqué, il effectue les actions suivantes :
    La section *Programmation avec AEM Forms* décrit les différentes méthodes dʼappel par programmation de ce processus de courte durée, à savoir :
 
    * [Appeler un processus de courte durée en transmettant un document non protégé à lʼaide dʼAEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (au moyen une application Flex)
-   * [Appeler un processus de courte durée à l’aide de l’API dʼappel](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (API dʼappel Java)
+   * [Appel d’un processus de courte durée à l’aide de l’API d’appel](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (API d’appel Java™)
    * [Appeler AEM Forms en utilisant le codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) (exemple de service web)
    * [Appeler AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (exemple de service web)
    * [Appeler AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (exemple de service web)

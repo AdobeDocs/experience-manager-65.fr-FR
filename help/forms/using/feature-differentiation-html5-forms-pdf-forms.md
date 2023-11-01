@@ -1,19 +1,17 @@
 ---
 title: Différences de caractéristiques entre formulaires HTML5 et formulaires PDF
-description: Découvrez les différences entre les formulaires HTML5 et les PDF forms.
-uuid: 6ddee197-d108-4897-9976-77d115a06504
+description: Découvrez les différences de fonctionnalités entre les formulaires HTML5 et les PDF forms.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: bdd97c20-d1f2-4898-9862-1a6a8071be88
 docset: aem65
 feature: Mobile Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 42%
+source-wordcount: '447'
+ht-degree: 40%
 
 ---
 
@@ -50,7 +48,7 @@ Le tableau suivant indique les fonctionnalités prises en charge par les formula
   </tr>
   <tr>
    <td>Pagination<br /> </td>
-   <td><p>Un formulaire HTML5 est divisé en panneaux et cases pour lui donner une apparence similaire aux PDF forms. La taille de la page est calculée dynamiquement. Si tout le contenu d’une page d’un formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge est masquée et un espace vide (espace vide) n’est pas affiché entre les pages au-dessus et au-dessous de la page vierge.</p> <p>Si la fusion de données ou les scripts ajoutent du contenu à une page, la longueur de la page s’étend pour s’adapter au contenu nouvellement ajouté. Aucune nouvelle page n’est ajoutée au formulaire pour s’adapter au contenu nouvellement ajouté. </p> <p><strong>Remarque :</strong> lorsque tout le contenu d’une page de formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge (espace blanc) reste visible entre la 1ère et 2e page mais pas entre les autres pages.</p> </td>
+   <td><p>Un formulaire HTML5 est divisé en panneaux et cases pour lui donner une apparence similaire aux PDF forms. La taille de la page est calculée dynamiquement. Si tout le contenu d’une page d’un formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge est masquée. Un espace vide (espace vide) n’est pas affiché entre les pages au-dessus et au-dessous de la page vierge.</p> <p>Si la fusion de données ou les scripts ajoutent du contenu à une page, la longueur de la page s’étend pour s’adapter au contenu nouvellement ajouté. Aucune nouvelle page n’est ajoutée au formulaire pour s’adapter au contenu nouvellement ajouté. </p> <p><strong>Remarque :</strong> lorsque tout le contenu d’une page de formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge (espace blanc) reste visible entre la 1ère et 2e page mais pas entre les autres pages.</p> </td>
    <td>La pagination des documents PDF dépend du contenu des données fusionnées ou du contenu de l’utilisateur : le nombre de pages est augmenté/réduit en conséquence.</td>
   </tr>
   <tr>
@@ -65,7 +63,7 @@ Le tableau suivant indique les fonctionnalités prises en charge par les formula
   </tr>
   <tr>
    <td>API de script XFA</td>
-   <td>Prend en charge les éléments de scripts XFA les plus fréquemment utilisés. Pour obtenir une liste détaillée des éléments prises en charge, consultez la section <a href="/help/forms/using/scripting-support.md">Prise en charge des scripts</a>.</td>
+   <td>Prend en charge les éléments de scripts XFA les plus fréquemment utilisés. Pour obtenir la liste détaillée des éléments pris en charge, voir <a href="/help/forms/using/scripting-support.md">prise en charge des scripts</a>.</td>
    <td>Prend en charge tous les éléments de script XFA.</td>
   </tr>
   <tr>

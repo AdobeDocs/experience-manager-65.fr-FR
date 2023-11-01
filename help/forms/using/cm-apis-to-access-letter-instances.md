@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 39%
+source-wordcount: '597'
+ht-degree: 40%
 
 ---
 
@@ -134,8 +134,8 @@ Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName )
 
 L’instance de lettre peut être du type Envoyé ou Brouillon. L’ouverture des deux types d’instances de lettre présente des comportements différents :
 
-* Dans le cas d’une instance de lettre envoyée, un PDF représentant l’instance de lettre est ouvert. L’instance de lettre envoyée conservée sur le serveur contient également les données XML et XDP traitées, qui peuvent être utilisées pour accomplir et personnaliser davantage un cas tel que la création d’un PDF/A.
-* Dans le cas d’une instance Brouillon de lettre, l’interface utilisateur de création de correspondance est rechargée dans l’état précédent exact tel qu’il était lors de la création du brouillon.
+* S’il existe une instance de lettre envoyée, un PDF représentant l’instance de lettre est ouvert. L’instance de lettre envoyée conservée sur le serveur contient également les données XML et XDP traitées, qui peuvent être utilisées pour accomplir et personnaliser davantage un cas tel que la création d’un PDF/A.
+* S’il existe une instance Brouillon de lettre, l’interface utilisateur de création de correspondance est rechargée à l’état précédent exact tel qu’il était lors de la création du brouillon.
 
 ### Ouverture d’une instance de lettre préliminaire  {#opening-draft-letter-instance-nbsp}
 

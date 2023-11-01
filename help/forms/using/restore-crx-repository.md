@@ -1,11 +1,11 @@
 ---
 title: Impossible de restaurer le référentiel CRX corrompu applicable au serveur de clusters JEE.
-description: Procédure de restauration du référentiel CRX corrompu.
+description: Découvrez les étapes de restauration d’un référentiel CRX corrompu.
 exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -21,7 +21,6 @@ Effectuez la sauvegarde de votre référentiel CRX avant d’effectuer les étap
 
 ## Solution {#solution}
 
-Exécutez les étapes suivantes afin de résoudre ce problème :
 1. Accédez à `https://[AEM Forms Server]:[port]/system/console/bundles`.
 
 1. Recherchez le lot `oak-core` et vérifiez s’il est en cours d’exécution.
@@ -33,6 +32,4 @@ Exécutez les étapes suivantes afin de résoudre ce problème :
 
 ## Application {#applies-to}
 
-Cette solution s’applique aux éléments suivants :
-
-* les grappes AEM Forms on JEE.
+Cette solution s’applique à la grappe AEM Forms on JEE.

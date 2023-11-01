@@ -1,17 +1,15 @@
 ---
 title: "Correspondence Management\_: dépannage"
-description: Gérez les erreurs qui peuvent se produire lors du processus d’enregistrement d’une lettre dans un environnement AEM Forms.
-uuid: 25828cdd-110e-4a84-8f31-d82cd610a54f
+description: Découvrez comment gérer les erreurs qui apparaissent pendant le processus d’enregistrement d’une lettre dans un environnement AEM Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 feature: Correspondence Management
 exl-id: cf06796b-bb8c-4a65-8f42-02fb0cfa3ebd
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 21%
+source-wordcount: '215'
+ht-degree: 17%
 
 ---
 
@@ -24,7 +22,7 @@ ht-degree: 21%
 L’une des erreurs suivantes s’affichait lors de l’enregistrement d’une lettre :
 
 * Liaison de données non présente pour le module de texte
-* Indiquez les informations de propriété nécessaires pour les éléments suivants :
+* Fournissez les informations de propriété nécessaires aux éléments suivants :
 
 ### Raison {#reason}
 
@@ -50,5 +48,5 @@ Réinitialisez le cache de lettres sur l’instance de publication en procédant
 1. Accédez à **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** et connectez-vous en tant qu’administrateur.
 1. Sélectionnez **Configurations de Correspondence Management**.
 1. Dans **Configurations de Correspondence Management**, désactivez l’option **Activer le cache de lettre**, puis cliquez sur **Enregistrer**.
-1. Activez l’option **Activer le cache de lettre**, puis cliquez sur **Enregistrer**.
+1. Vérifier **Enable Letter Cache** puis cliquez sur **Enregistrer**.
 1. Réessayez d’afficher la lettre.

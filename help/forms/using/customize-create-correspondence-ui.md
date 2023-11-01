@@ -7,7 +7,7 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 50%
@@ -71,7 +71,7 @@ Procédez comme suit pour créer la structure de dossiers requise dans le `/apps
 
       >[!NOTE]
       >
-      >Ne modifiez pas la variable `/libs` branche. Toute modification que vous apportez peut être perdue, car cette branche est sujette à des modifications lorsque vous :
+      >Ne modifiez pas la variable `/libs` branche. Toute modification que vous apportez peut être perdue, car cette branche est sujette à toute modification lorsque vous :
       >
       >    
       >    
@@ -83,7 +83,7 @@ Procédez comme suit pour créer la structure de dossiers requise dans le `/apps
 
    1. Cliquez sur **OK**. Le dossier CSS est créé au niveau du chemin d’accès indiqué.
 
-1. Dans le dossier des applications, créez un dossier nommé `imgs` avec un chemin/une structure similaires au dossier imgs (dans le dossier ccrui).
+1. Dans le dossier des applications, créez un dossier nommé `imgs` avec un chemin/une structure similaire à la propriété `imgs` (dans le dossier ccrui).
 
    1. Cliquez avec le bouton droit sur le dossier **imgs** dans le chemin d’accès suivant et sélectionnez **Nœud de recouvrement** : `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :

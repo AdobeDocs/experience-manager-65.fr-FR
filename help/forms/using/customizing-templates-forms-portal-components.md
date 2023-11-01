@@ -1,22 +1,20 @@
 ---
-title: Personnaliser des modèles pour les composants Forms Portal
-description: L’interface utilisateur d’AEM Forms permet aux utilisateurs d’ajouter des métadonnées aux formulaires. Les métadonnées personnalisées améliorent l’expérience utilisateur dans la liste de formulaires et la recherche de votre entreprise.
-uuid: 212109ca-85c8-4915-82e5-a18a0443be1b
+title: Personnalisation de modèles pour les composants Forms Portal
+description: Découvrez comment l’interface utilisateur d’AEM Forms permet aux utilisateurs d’ajouter des métadonnées aux formulaires. Les métadonnées personnalisées améliorent l’expérience utilisateur dans la liste et la recherche de formulaires.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1243'
-ht-degree: 54%
+source-wordcount: '1250'
+ht-degree: 48%
 
 ---
 
-# Personnaliser des modèles pour les composants Forms Portal{#customizing-templates-for-forms-portal-components}
+# Personnalisation de modèles pour les composants Forms Portal{#customizing-templates-for-forms-portal-components}
 
 ## Prérequis {#prerequisites}
 
@@ -30,7 +28,7 @@ L’interface utilisateur des AEM Forms permet d’ajouter des métadonnées à 
 
 Forms Portal vous permet d’utiliser des métadonnées personnalisées dans les listes de formulaires. Lors de la création de modèles personnalisés pour les ressources, vous pouvez modifier leur mise en page et utiliser des métadonnées personnalisées avec votre jeu de styles CSS.
 
-Effectuez les étapes suivantes pour créer un modèle personnalisé pour divers composants Forms Portal.
+Procédez comme suit pour créer un modèle personnalisé pour divers composants Forms Portal.
 
 ## Création d’un modèle personnalisé {#creating-a-nbsp-custom-template}
 
@@ -55,7 +53,7 @@ Effectuez les étapes suivantes pour créer un modèle personnalisé pour divers
    L’image ci-après illustre la configuration pour le composant Recherche et énumérateur.
    ![Création d’un nœud sling:Folder](assets/1.png)
 
-1. Créez un fichier template.html dans ce dossier qui servira de modèle personnalisé.
+1. Créez un fichier template.html dans ce dossier afin qu’il puisse servir de modèle personnalisé.
 1. Créez le modèle personnalisé et utilisez des métadonnées personnalisées comme décrit ci-dessous.
 
 ## Exemple de travail {#working-example}
@@ -92,7 +90,7 @@ Pour inclure une entrée répétable, configurez l’attribut **data-repeatable*
 
 Chaque espace réservé possède un jeu de métadonnées prêtes à l’emploi exclusif. Pour afficher des métadonnées personnalisées à un emplacement spécifique du formulaire, ajoutez la **propriété ${metadata_prop}** à cet emplacement.
 
-*Dans cet exemple, la propriété des métadonnées est utilisée dans plusieurs instances. Elle est utilisée par exemple de façon adéquate dans **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**et **path**.*
+*Dans cet exemple, la propriété de métadonnées est utilisée sur plusieurs instances. Elle est utilisée par exemple de façon adéquate dans **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**et **path**.*
 
 ## Métadonnées prêtes à l’emploi {#out-of-the-box-metadata}
 
@@ -120,7 +118,7 @@ Prise en charge de la localisation et du tri et utilisation des propriétés de 
 1. **Prise en charge de la localisation** : pour localiser du texte statique, utilisez l’attribut `${localize-YOUR_TEXT}` et rendez la valeur localisée disponible, si elle ne l’est déjà.
    *Dans l’exemple présenté, les attributs `${localize-Apply}` et `${localize-Download}` sont utilisés pour localiser les termes Apply et Download.*
 
-1. **Prise en charge du tri**: cliquez sur l’élément HTML pour trier les résultats de la recherche. Pour mettre en oeuvre le tri dans une disposition de tableau, ajoutez l’attribut &quot;data-sortKey&quot; sur l’en-tête du tableau en question. Ajoutez en outre sa valeur en tant que métadonnées pour lesquelles vous souhaitez effectuer un tri.
+1. **Prise en charge du tri**: cliquez sur l’élément HTML pour trier les résultats de la recherche. Pour mettre en oeuvre le tri dans une mise en page de tableau, ajoutez l’attribut &quot;data-sortKey&quot; sur l’en-tête particulier du tableau. Ajoutez en outre sa valeur en tant que métadonnées pour lesquelles vous souhaitez effectuer un tri.
 Par exemple, pour l’en-tête &quot;Title&quot; dans la vue Grille, la valeur de l’en-tête &quot;data-sortKey&quot; est &quot;title&quot;. Cliquez sur l’en-tête pour trier les valeurs d’une colonne particulière.
 
 1. **Utilisation des propriétés de configuration** : le composant Recherche et énumérateur possède plusieurs configurations que vous pouvez utiliser dans l’interface utilisateur. Par exemple, pour afficher du texte d’info-bulle HTML enregistré dans la boîte de dialogue Modifier, utilisez l’attribut `${config-htmlLinkText}`. **De même, pour le texte d’info-bulle PDF, utilisez l’attribut** `${config-pdfLinkText}`.
@@ -134,7 +132,7 @@ Par exemple, pour l’en-tête &quot;Title&quot; dans la vue Grille, la valeur d
 
 ### Composant Drafts &amp; Submissions {#drafts-amp-submissions-component}
 
-* **Chemin**: chemin d’accès au noeud de métadonnées de brouillon/envoi. Utilisez-le avec l’extension .HTML en tant qu’URL pour ouvrir un brouillon ou un envoi.
+* **Chemin**: chemin d’accès au noeud de métadonnées de brouillon/envoi. Utilisez-le avec l’extension .HTML comme URL afin de pouvoir ouvrir un brouillon ou un envoi.
 * **contextPath**: chemin du contexte de l’instance AEM
 * **firstLetter**: première lettre (majuscule) du titre du formulaire adaptatif, enregistrée en tant que brouillon ou envoyée.
 * **formName**: titre du formulaire adaptatif, qui a été enregistré en tant que brouillon ou envoyé.
@@ -142,7 +140,7 @@ Par exemple, pour l’en-tête &quot;Title&quot; dans la vue Grille, la valeur d
 * **submitID**: identifiant de l’envoi répertorié (à utiliser uniquement dans le modèle de la section Envoi).
 * **status**: état du formulaire envoyé. (À utiliser uniquement dans le modèle pour la section Envoi).
 * **description**: description du formulaire adaptatif associé au brouillon ou à l’envoi.
-* **diffTime**: différence entre l’heure actuelle et la dernière action d’enregistrement du brouillon. Autre différence entre l’heure actuelle et la dernière action d’envoi pour l’envoi.
+* **diffTime**: différence entre l’heure actuelle et la dernière action d’enregistrement du brouillon. Vous pouvez également définir la différence entre l’heure actuelle et la dernière action envoyée pour l’envoi.
 * **iconClass**: classe CSS utilisée pour afficher la première lettre du brouillon/envoi. Forms Portal comprend les classes suivantes, qui fournissent divers arrière-plans colorés.
 * **propriétaire**: utilisateur ayant créé le brouillon/envoi.
 * **Today** : date de création du brouillon ou de l’envoi au format JJ:MM:AAAA.
@@ -162,7 +160,7 @@ Par exemple, pour l’en-tête &quot;Title&quot; dans la vue Grille, la valeur d
 
 **C.** Attribut « data-repeatable » utilisé pour la section du modèle de chaque formulaire.
 
-**D.** Pour localiser la chaîne « Apply ».
+**D.** Localisez la chaîne &quot;Apply&quot;.
 
 **E.** Utilisation de la propriété de configuration pdfLinkText
 
@@ -177,11 +175,11 @@ Par exemple, pour l’en-tête &quot;Title&quot; dans la vue Grille, la valeur d
 
 ## Articles connexes
 
-* [Activer des composants du portail Formulaires](/help/forms/using/enabling-forms-portal-components.md)
-* [Créer une page du portail Formulaires](/help/forms/using/creating-form-portal-page.md)
+* [Activer des composants Portail Formulaires](/help/forms/using/enabling-forms-portal-components.md)
+* [Page Créer un portail Forms](/help/forms/using/creating-form-portal-page.md)
 * [Affichage de la liste des formulaires sur une page Web à l’aide d’API](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Utiliser le composant Brouillons et Envois](/help/forms/using/draft-submission-component.md)
 * [Personnaliser le stockage des brouillons de formulaires et des formulaires envoyés](/help/forms/using/draft-submission-component.md)
-* [Exemple d’intégration d’un composant brouillons &amp; envois à la base de données](/help/forms/using/integrate-draft-submission-database.md)
+* [Exemple d’intégration du composant brouillons et envois à la base de données](/help/forms/using/integrate-draft-submission-database.md)
 * [Personnalisation de modèles pour les composants Forms Portal](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Présentation de la publication de formulaires sur un portail](/help/forms/using/introduction-publishing-forms.md)

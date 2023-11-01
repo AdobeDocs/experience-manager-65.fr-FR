@@ -1,18 +1,16 @@
 ---
 title: Démarrage rapide de l’API du service de sauvegarde et de restauration
-description: Les didacticiels de mise en route de l’API de sauvegarde et de restauration d’AEM Forms permettent de créer et de restaurer des sauvegardes efficacement.
-uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
+description: Découvrez comment les didacticiels de mise en route Sauvegarde et restauration d’AEM Forms API permettent de créer et de restaurer des sauvegardes efficacement.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 role: Developer
 exl-id: ae17fd3a-0ba4-4a00-907b-811e500b0e14
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 94%
+source-wordcount: '256'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +24,7 @@ Le démarrage rapide de l’API Java™ (SOAP) est disponible pour l’API du se
 
 [Démarrage rapide : quitter le mode de sauvegarde à l’aide de Java](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée dʼAEM Forms et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >

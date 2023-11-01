@@ -1,16 +1,14 @@
 ---
 title: "Didacticiel\_: créer un modèle de données de formulaire "
-description: Configurez MySQL comme source de données, créez un modèle de données de formulaire (FDM), configurez-le et testez-le pour AEM Forms.
-uuid: b9d2bb1b-90f0-44f4-b1e3-0603cdf5f5b8
+description: Découvrez comment configurer MySQL comme source de données, créer un modèle de données de formulaire (FDM), le configurer et tester AEM Forms.
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1524'
-ht-degree: 96%
+source-wordcount: '1528'
+ht-degree: 84%
 
 ---
 
@@ -18,11 +16,11 @@ ht-degree: 96%
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
-Ce tutoriel fait partie de la série [Création de votre premier formulaire adaptatif](../../forms/using/create-your-first-adaptive-form.md). Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et accomplir le cas d’utilisation complet du tutoriel.
+Ce tutoriel fait partie de la série [Création de votre premier formulaire adaptatif](../../forms/using/create-your-first-adaptive-form.md). Adobe vous recommande de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
 
 ## À propos du tutoriel {#about-the-tutorial}
 
-AEM [!DNL Forms] le module d’intégration des données permet de créer un modèle de données de formulaire à partir de sources de données principales disparates, telles que les profils utilisateur AEM, les services web RESTful, les services web SOAP, les services OData et les bases de données relationnelles. Vous pouvez configurer des objets et des services de modèle de données dans un modèle de données de formulaire et les associer à un formulaire adaptatif. Les champs de formulaire adaptatif sont liés aux propriétés de l’objet de modèle de données. Les services vous permettent de préremplir le formulaire adaptatif et d’écrire les données de formulaire soumises dans l’objet de modèle de données.
+[!DNL Forms] AEM module d’intégration de données vous permet de créer un modèle de données de formulaire à partir de sources de données dorsales disparates telles que AEM profil utilisateur, services Web RESTful, services Web SOAP, services OData et bases de données relationnelles. Vous pouvez configurer des objets et des services de modèle de données dans un modèle de données de formulaire et les associer à un formulaire adaptatif. Les champs de formulaire adaptatif sont liés aux propriétés de l’objet de modèle de données. Les services vous permettent de préremplir le formulaire adaptatif et d’écrire les données de formulaire soumises dans l’objet de modèle de données.
 
 Pour plus d’informations sur l’intégration des données de formulaire et sur le modèle de données du formulaire, voir [Intégration de données AEM Forms](../../forms/using/data-integration.md).
 
@@ -49,7 +47,7 @@ Avant de commencer, vérifiez que vous disposez des éléments suivants :
 
 ## Étape 1 : Configurer la base de données MySQL en tant que source de données {#config-database}
 
-Vous pouvez configurer différents types de sources de données pour créer un modèle de données de formulaire. Pour ce tutoriel, nous allons configurer la base de données MySQL que vous avez configurée et remplie avec des exemples de données. Pour plus d’informations sur les autres sources de données prises en charge et sur leur configuration, reportez-vous à la section [Intégration de données d’AEM Forms](../../forms/using/data-integration.md).
+Vous pouvez configurer différents types de sources de données pour créer un modèle de données de formulaire. Pour ce didacticiel, vous allez configurer la base de données MySQL que vous avez configurée et remplie avec des exemples de données. Pour plus d’informations sur les autres sources de données prises en charge et sur leur configuration, reportez-vous à la section [Intégration de données d’AEM Forms](../../forms/using/data-integration.md).
 
 Pour configurer votre base de données [!DNL MySQL], procédez comme suit :
 
@@ -70,19 +68,19 @@ Pour configurer votre base de données [!DNL MySQL], procédez comme suit :
 
       * **Nom de la source de données :** vous pouvez spécifier n’importe quel nom. Spécifiez par exemple **WeRetailMySQL**.
       * **Nom de la propriété du service de la source de données** : indiquez le nom de la propriété de service contenant le nom de la source de données. Il est spécifié lors de l’enregistrement de l’instance de source de données en tant que service OSGi. Par exemple, **datasource.name**.
-      * **Classe de pilote JDBC** : spécifiez le nom de classe Java du pilote JDBC. Pour la base de données [!DNL MySQL], spécifiez **com.mysql.jdbc.Driver**.
-      * **URI de connexion JDBC** : spécifiez l’URL de connexion de la base de données. Pour la base de données [!DNL MySQL] s’exécutant sur le port 3306 et le schéma weretail, l’URL est : `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`.
+      * **Classe** du pilote JDBC : spécifiez le nom de classe Java™ du pilote JDBC. Pour la base de données [!DNL MySQL], spécifiez **com.mysql.jdbc.Driver**.
+      * **URI de connexion JDBC** : spécifiez l’URL de connexion de la base de données. Pour [!DNL MySQL] une base de données s’exécutant sur le port 3306 et le schéma `weretail`, l’URL est la suivante : `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
 
       >[!NOTE]
       >
-      > Lorsque la base de données [!DNL MySQL] se trouve derrière un pare-feu, alors le nom d’hôte de la base de données n’est pas un DNS public. L’adresse IP de la base de données doit être ajoutée au fichier */etc/hosts* de l’ordinateur hôte AEM.
+      > Lorsque la base de données [!DNL MySQL] se trouve derrière un pare-feu, alors le nom d’hôte de la base de données n’est pas un DNS public. L’adresse IP de la base de données doit être ajoutée dans le *fichier /etc/hosts* de la machine hôte AEM.
 
       * **Nom d’utilisateur :** nom d’utilisateur de la base de données. Il est nécessaire d’activer le pilote JDBC pour établir une connexion avec la base de données.
       * **Mot de passe :** mot de passe de la base de données. Il est nécessaire d’activer le pilote JDBC pour établir une connexion avec la base de données.
 
       >[!NOTE]
       >
-      >AEM Forms ne prend pas en charge l’authentification NT pour [!DNL MySQL]. Accédez à la console web AEM à l’adresse [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) et recherchez « Apache Sling Connection Pooled Datasource ». Pour « JDBC connection URI », définissez la valeur de la propriété « integratedSecurity » sur False et utilisez le nom d’utilisateur et le mot de passe créés pour vous connecter à la base de données [!DNL MySQL].
+      >AEM Forms ne prend pas en charge l’authentification NT pour [!DNL MySQL]. Accédez à AEM console Web à https://localhost:4502/system/console/configMgr [](https://localhost:4502/system/console/configMgr) et recherchez « Source de données mise en pool de connexions Apache Sling ». Pour la propriété « JDBC connection URI », définissez la valeur de « integratedSecurity » sur False et utilisez le nom d’utilisateur et le mot de passe créés pour vous connecter à [!DNL MySQL] la base de données.
 
       * **Test lors de l’emprunt :** activez l’option **[!UICONTROL Test lors de l’emprunt.]**
       * **Test lors du renvoi :** activez l’option **[!UICONTROL Test lors du renvoi.]**
@@ -97,7 +95,7 @@ Pour configurer votre base de données [!DNL MySQL], procédez comme suit :
 
 ## Étape 2 : Créer un modèle de données de formulaire {#create-fdm}
 
-AEM [!DNL Forms] fournit une interface utilisateur intuitive pour [créer un modèle de données de formulaire](data-integration.md) à partir des sources de données configurées. Vous pouvez utiliser plusieurs sources de données dans un modèle de données de formulaire. Dans notre cas d’utilisation, nous utiliserons la source de données [!DNL MySQL] configurée.
+AEM [!DNL Forms] fournit une interface utilisateur intuitive pour [créer un modèle de données de formulaire](data-integration.md) à partir des sources de données configurées. Vous pouvez utiliser plusieurs sources de données dans un modèle de données de formulaire. Pour ce cas d’utilisation, vous pouvez utiliser la source de données configurée [!DNL MySQL] .
 
 Procédez comme suit pour créer un modèle de données de formulaire :
 
@@ -126,7 +124,7 @@ Pour configurer un modèle de données de formulaire, procédez comme suit :
 
    ![default-fdm](assets/default-fdm.png)
 
-1. Développez l’arborescence de la source de données WeRailMySQL. Sélectionnez les objets et services de modèle de données suivants dans le schéma **weretail** > **customerdetails** du modèle de données de formulaire :
+1. Développez l’arborescence de la source de données WeRailMySQL. Sélectionnez les objets et services de modèle de données suivants dans le schéma weretail > customerdetails **afin de pouvoir former un modèle de** données : ****
 
    * **Objets de modèle de données**:
 
@@ -179,7 +177,7 @@ Pour configurer un modèle de données de formulaire, procédez comme suit :
       * **Titre** : indiquez le titre du service. Par exemple : récupérer l’adresse d’expédition.
       * **Description** : spécifiez la description contenant le fonctionnement détaillé du service. Par exemple :
 
-        Ce service récupère l’adresse de livraison et les autres détails du client dans la base de données [!DNL MySQL].
+        Ce service récupère l’adresse de livraison et d’autres détails du client à partir de la [!DNL MySQL] base de données
 
       * **Objet de modèle de sortie** : sélectionnez le schéma contenant les données du client. Par exemple :
 
@@ -207,7 +205,7 @@ Pour configurer un modèle de données de formulaire, procédez comme suit :
 
       * **Type de sortie** : sélectionnez **VALEUR BOOLEENNE**.
 
-      * **Arguments** : sélectionnez l’argument nommé **ID** et **customerdetails**.
+      * **Arguments** : sélectionnez le nom **de l’argument ID** et **les détails** du client.
 
       Appuyez sur **[!UICONTROL Terminé]**. Le service **[!UICONTROL update]** permettant de mettre à jour les détails du client dans la base de données est configuré.[!DNL MySQL]
 
@@ -235,6 +233,6 @@ Procédez comme suit pour effectuer le test :
 
    ![test-write-model](assets/test-write-model.png)
 
-   À présent, si vous testez à nouveau le service de lecture de modèle pour l’ID 7107215, il récupérera et affichera les détails du client mis à jour comme indiqué ci-dessous.
+   Maintenant, si vous testez à nouveau le service de modèle de lecture pour l’ID 7107215, il récupère et affiche les détails mis à jour du client comme indiqué ci-dessous.
 
    ![read-updated](assets/read-updated.png)

@@ -1,14 +1,14 @@
 ---
 title: Installer Workbench
-description: Installez, désinstallez, configurez, administrez ou déployez AEM Forms Workbench.
+description: Découvrez comment installer, désinstaller, configurer, administrer ou déployer AEM Forms Workbench.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: ad5d98c5519cda29cecde54a880958bae81c4764
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '2238'
-ht-degree: 99%
+source-wordcount: '2242'
+ht-degree: 89%
 
 ---
 
@@ -85,7 +85,7 @@ Espace disque pour l’installation :
 >
 >Si l’ensemble de ces emplacements se trouve sur un seul disque, vous devez disposer dʼun total de 1,5 Go dʼespace libre lors de l’installation. Les fichiers copiés dans les répertoires temporaires sont supprimés à la fin de l’installation.
 
-* Configuration matérielle requise : processeur Intel® Pentium® 4 ou AMD® équivalent, cadencé à 1 GHz.
+* Configuration matérielle requise : processeur Intel® Pentium® 4 ou AMD® équivalent, cadencé à 1 GHz.
 * Mise à jour Java™ Runtime Environment (JRE) 7.0 51 ou mises à jour ultérieures vers 7.0.
 * Résolution d’affichage de 1024 X 768 pixels au minimum, écran couleur de 16 bits minimum.
 * Connexion réseau via le protocole TCP/IPv4 ou TCP/IPv6 au serveur AEM Forms.
@@ -120,7 +120,7 @@ Différentes versions de Designer peuvent coexister sur le même système (par e
   </tr>
   <tr>
    <td><p>Designer (autonome)</p> </td>
-   <td><p>Aucune. <br />La version de Designer incluse avec Workbench est en anglais uniquement. <br />Le programme d’installation de Workbench ne réinstallera pas une nouvelle version de Designer. À la place, une version mise à jour, fournie avec le programme d’installation de Workbench, est corrigée. Vous pouvez ainsi utiliser votre version localisée de Designer dans Workbench.<br /> </p> </td>
+   <td><p>Aucune. <br />La version de Designer incluse avec Workbench est en anglais uniquement. <br />Le programme d’installation de Workbench ne réinstalle pas de nouvelle version de Designer. Au lieu de cela, une version mise à jour, fournie avec le programme d’installation de Workbench, est corrigée. Vous pouvez ainsi utiliser votre version localisée de Designer dans Workbench.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -168,7 +168,7 @@ Avant d’installer Workbench, vérifiez que votre environnement inclut les logi
    Le chemin d’accès du répertoire d’installation ne doit pas contenir les caractères # (livre) et $ (dollar).
 
 1. Vérifiez le compte-rendu de préinstallation, puis cliquez sur Installer. Le programme d’installation affiche la progression de l’installation.
-1. Vérifiez le récapitulatif de l’installation. Sélectionnez Démarrer AEM Forms Workbench pour lancer Workbench, puis cliquez sur Suivant.
+1. Vérifiez le récapitulatif de l’installation. Sélectionnez Démarrer AEM Forms Workbench pour lancer Workbench, puis cliquez sur Suivant.
 1. Passez en revue les notes de mise à jour, puis cliquez sur Terminé.
 1. Les éléments suivants sont désormais installés sur votre ordinateur :
    * **Workbench** : pour exécuter Workbench via le menu Démarrer, sélectionnez Tous les programmes > AEM Forms > Workbench, si vous avez choisi d’y stocker le dossier de raccourci. Pour plus d’informations, consultez la documentation sur lʼ<a href="https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Utilisation de Workbench</a>.
@@ -185,7 +185,7 @@ Pour utiliser Workbench, vous devez disposer d’une instance AEM Forms en cour
 
 >[!NOTE]
 >
-Si vous avez configuré AEM Forms pour utiliser le fournisseur de référentiels EMC Documentum® ou IBM® FileNet et que vous voulez vous connecter à un référentiel autre que le référentiel configuré par défaut dans la console d’administration d’AEM Forms, indiquez le nom d’utilisateur au format nom_utilisateur@Repository.
+Si vous avez configuré AEM Forms pour utiliser le fournisseur FileNet Repository d’EMC Documentum® ou IBM® et que vous souhaitez vous connecter à un référentiel autre que le référentiel configuré par défaut dans AEM console d’administration des formulaires, indiquez le nom d’utilisateur username@Repository.
 
 ### Configurer les paramètres de délai d’expiration {#configuring-timeout-settings}
 
@@ -206,7 +206,7 @@ Assurez-vous de vous connecter à HTTPS en utilisant le nom spécifié dans le c
 
    >[!NOTE]
    >
-   Pour exporter le certificat, ouvrez un navigateur web et connectez-vous à la console d’administration, installez le certificat dans le navigateur, puis exportez-le du navigateur vers un emplacement de stockage temporaire (ou directement dans le répertoire [Workbench_EMPLACEMENT]/workbench/jre/lib/security).
+   Pour exporter le certificat, ouvrez un navigateur web et connectez-vous à la console d’administration. Installez le certificat dans le navigateur, puis exportez le certificat du navigateur vers un emplacement de stockage temporaire (ou directement vers le [Workbench_HOME]/workbench/jre/lib/security directory).
 
 1. Copiez le certificat dans le répertoire [Workbench_EMPLACEMENT]/workbench/jre/lib/security.
 
@@ -225,7 +225,7 @@ Où :
 
 Les aspects suivants du fonctionnement du cache doivent être pris en compte si votre application génère des modèles uniques à la volée en mettant automatiquement à jour le contenu XFA. En effet, chaque transaction utilise un nouveau modèle unique.
 
-Lorsque le générateur ou la sortie de formulaires recherche ou met à jour les entrées du cache pour un modèle de formulaire spécifique, il utilise plusieurs valeurs clés pour localiser l’entrée de cache spécifique qui sera accessible.
+Lorsque le générateur ou la sortie de formulaires recherche ou met à jour les entrées du cache pour un modèle de formulaire spécifique, il utilise plusieurs valeurs clés pour localiser l’entrée de cache spécifique à laquelle l’accès est effectué.
 
 * **Nom de fichier modèle** : l’emplacement et le nom du modèle utilisés comme identifiant unique principal du formulaire mis en cache.
 * **Horodatage** : le fichier modèle contient un horodatage utilisé pour déterminer l’heure de la dernière mise à jour du formulaire.
@@ -238,18 +238,21 @@ Lorsque le générateur ou la sortie de formulaires recherche ou met à jour les
 
 
 Le service Forms reçoit les modèles par référence au nom de fichier ou à l’emplacement du référentiel, ou par valeur en tant qu’objet XML en mémoire.
+
 * **Modèles transmis par référence** : utilise la racine de contenu et le nom du formulaire. Si des modèles uniques avec des noms de fichier différents sont transmis dans chaque requête à l’aide de cette méthode, le cache disque augmente sans cesse et n’est jamais réutilisé. Pour éviter cela, les modèles uniques doivent être transmis avec le même nom de fichier pour garantir que le même cache est mis à jour pour toutes les requêtes.
-* **Modèles transmis par valeur** : utilise les octets de modèle transmis avec les données à l’aide du paramètre theinDataDoc. Si des modèles uniques avec un UUID différent sont transmis à l’aide de cette méthode, le cache disque augmente sans cesse et n’est jamais réutilisé. Pour éviter cela, l’attribut UUID doit être supprimé de tous les modèles afin de garantir qu’aucun cache n’est créé pour le modèle. Sinon, transmettre le même UUID non nul permet de créer les objets de cache, mais garantit que le même cache est mis à jour avec chaque requête.
+* **Modèles transmis par valeur** : utilise les octets de modèle transmis avec les données à l’aide du paramètre theinDataDoc. Si des modèles uniques avec un UUID différent sont transmis à l’aide de cette méthode, le cache du disque augmente sans cesse et n’est jamais réutilisé. Pour éviter cela, l’attribut UUID doit être supprimé de tous les modèles afin de garantir qu’aucun cache n’est créé pour le modèle. Sinon, transmettre le même UUID non nul permet de créer les objets de cache, mais garantit que le même cache est mis à jour avec chaque requête.
 
 Pour empêcher le cache de grandir sans fin, tenez compte des facteurs suivants afin de rendre les modèles générés de manière dynamique à l’aide des nouvelles API d’AEM Forms, qui sont renderHTMLForm2 et renderPDFForm2.
 
 Lorsque vous utilisez les nouvelles API, le modèle est transmis en tant qu’objet document, qui est géré par le service Forms selon qu’il est passivé on non.
 
 Pour les documents passivés dans lesquels l’UUID et la racine de contenu servent de clé de cache, tenez compte des aspects suivants :
+
 * Le cache n’est pas créé pour les modèles d’entrée passivés sans UUID.
 * Si plusieurs modèles d’entrée passivés ayant le même UUID et la même racine de contenu sont transmis, le même cache est remplacé.
 
 Pour les documents non passivés dans lesquels le nom de fichier et la racine de contenu servent de clé de cache, tenez compte de l’aspect suivant :
+
 * Pour les modèles d’entrée non passivés, la mise en cache dépend de la racine de contenu et du nom de fichier à partir desquels le document a été généré.
 Le même cache est utilisé uniquement pour les requêtes présentant la même racine de contenu et le même nom de fichier de modèle.
 Les bonnes pratiques suivantes garantissent que le cache ne grandit pas sans fin lorsque des modèles générés dynamiquement sont transmis au service Forms :
@@ -258,7 +261,7 @@ Les bonnes pratiques suivantes garantissent que le cache ne grandit pas sans fin
 
 ### Désinstaller Workbench {#uninstalling-workbench}
 
-Utilisez l’outil d’ajout ou de suppression de programmes du Panneau de configuration pour lancer le programme de désinstallation. Les applications Workbench et Designer ont des programmes de désinstallation distincts.
+Utilisez la fonction Ajouter ou supprimer des programmes dans le Panneau de Contrôle pour lancer le programme de désinstallation. Les applications Workbench et Designer ont des programmes de désinstallation distincts.
 
 ## Configurer AEM Forms XDC Editor {#configuring-aem-forms-xdc-editor}
 
@@ -267,9 +270,11 @@ Avec XDC Editor, les administrateurs et administratrices d’imprimantes résea
 Pour que votre administrateur d’imprimantes réseau utilise XDC Editor, déplacez les fichiers XDC échantillons et reportez-vous à la section Création de profils d’appareils à l’aide de XDC Editor.
 
 **Pour obtenir les fichiers XDC échantillons, procédez comme suit** :
+
 1. Sur le serveur d’AEM Forms, localisez le dossier XDC dans [répertoire racine d’AEM Forms]\sdk\samples\Output\IVS.
 1. Copiez le contenu de ce dossier dans un répertoire accessible à partir du système Workbench ou Eclipse.
 
 **Pour accéder à l’aide de XDC Editor, procédez comme suit** :
+
 1. Visitez le site web de documentation d’AEM Forms.
 1. Cliquez sur l’onglet **Développer** et accédez à Création de profils d’appareils à l’aide de XDC Editor. Téléchargez le fichier xdc_editor_help_web.zip et installez les fichiers d’aide en suivant les instructions fournies dans le fichier Lisez-moi.

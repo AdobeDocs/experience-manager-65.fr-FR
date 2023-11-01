@@ -1,22 +1,20 @@
 ---
 title: User Management Forms | Gestion des données utilisateur
-description: Le composant de gestion des utilisateurs d’AEM Forms JEE permet la création, l’autorisation et la gestion des utilisateurs pour accéder à AEM Forms.
-uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
+description: Découvrez comment le composant de gestion des utilisateurs d’AEM Forms JEE vous permet de créer, d’autoriser et de gérer les utilisateurs qui doivent accéder à AEM Forms.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 role: Admin
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 40%
+source-wordcount: '904'
+ht-degree: 30%
 
 ---
 
 # User Management Forms | Gestion des données utilisateur {#forms-user-management-handling-user-data}
 
-User Management est un composant AEM Forms JEE qui permet de créer, gérer et autoriser des utilisateurs AEM Forms à accéder à AEM Forms. User Management utilise les domaines comme annuaire pour obtenir des informations sur les utilisateurs. Les types de domaine suivants sont pris en charge :
+User Management est un composant AEM Forms JEE qui permet de créer, gérer et autoriser des utilisateurs AEM Forms à accéder à AEM Forms. La gestion des utilisateurs utilise les domaines comme répertoires pour obtenir des informations sur les utilisateurs. Les types de domaine suivants sont pris en charge :
 
 **Domaines locaux**: ce type de domaine n’est pas connecté à un système de stockage tiers. À la place, les utilisateurs et les groupes sont créés localement et résident dans la base de données User Management. Les mots de passe sont stockés localement et l’authentification est effectuée à l’aide d’une base de données locale.
 
@@ -28,7 +26,7 @@ User Management est un composant AEM Forms JEE qui permet de créer, gérer et a
 
 ## Données utilisateur et stockage de données {#user-data-and-data-stores}
 
-User Management stocke les données utilisateur dans une base de données, telle que MySQL, Oracle, MS SQL Server et IBM DB2. De plus, tout utilisateur qui s’est connecté au moins une fois dans les applications Forms sur l’instance d’auteur AEM à l’adresse `https://'[server]:[port]'lc`, est créé dans le référentiel AEM. Par conséquent, la gestion des utilisateurs est stockée dans les entrepôts de données suivants :
+User Management stocke les données utilisateur dans une base de données, telle que My Sql, Oracle, MS® SQL Server et IBM® DB2®. De plus, tout utilisateur qui s’est connecté au moins une fois dans les applications Forms sur l’instance d’auteur AEM à l’adresse `https://'[server]:[port]'lc`, est créé dans le référentiel AEM. Par conséquent, la gestion des utilisateurs est stockée dans les entrepôts de données suivants :
 
 * Base de données
 * Référentiel AEM
@@ -58,28 +56,28 @@ User Management stocke les données utilisateur dans les tables de base de donn�
   </tr>
   <tr>
    <td><p><code>EdcPrincipalLocalAccountEntity</code></p> <p><code class="code">EdcPrincipalLocalAccount
-       </code>(bases de données Oracle et MS SQL)</p> </td>
+       </code>(bases de données Oracle et MS® SQL)</p> </td>
    <td>Stocke les données uniquement pour les utilisateurs locaux.</td>
   </tr>
   <tr>
    <td><p><code>EdcPrincipalEmailAliasEntity</code></p> <p><code class="code">EdcPrincipalEmailAliasEn
-       </code>(bases de données Oracle et MS SQL)</p> </td>
+       </code>(bases de données Oracle et MS® SQL)</p> </td>
    <td>Contient les entrées de tous les utilisateurs provenant de domaines locaux, d’entreprise et hybrides. Il contient des ID de courrier électronique utilisateur.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code><br /> (bases de données Oracle et MS SQL)</p> </td>
+   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code><br /> (bases de données Oracle et MS® SQL)</p> </td>
    <td>Stocke le mappage entre les utilisateurs et les groupes.</td>
   </tr>
   <tr>
    <td><code>EdcPrincipalRoleEntity</code></td>
-   <td>Stocke le mappage entre les rôles et l’entité Principal pour les utilisateurs et les groupes.</td>
+   <td>Stocke le mappage entre les rôles et les entités pour les utilisateurs et les groupes.</td>
   </tr>
   <tr>
    <td><code>EdcPriResPrmEntity</code></td>
    <td>Stocke le mappage entre l’entité Principal et les autorisations pour les utilisateurs et les groupes.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code><br /> (bases de données Oracle et MS SQL)</p> </td>
+   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code><br /> (bases de données Oracle et MS® SQL)</p> </td>
    <td>Stocke les anciennes et nouvelles valeurs d’attribut correspondant à une entité.<br /> </td>
   </tr>
  </tbody>
@@ -107,19 +105,19 @@ Une fois que vous connaissez l’ID principal, vous pouvez exporter ou supprimer
 
 #### Exportation des données utilisateur {#export-user-data}
 
-Exécutez les commandes de base de données suivantes pour exporter les données de gestion des utilisateurs pour un ID principal à partir des tables de base de données. Dans la commande `select`, remplacez `<principal_id>` par l’ID principal de l’utilisateur dont vous souhaitez exporter les données.
+Exécutez les commandes de base de données suivantes afin de pouvoir exporter les données de gestion des utilisateurs pour un ID principal à partir des tables de base de données. Dans la commande `select`, remplacez `<principal_id>` par l’ID principal de l’utilisateur dont vous souhaitez exporter les données.
 
 >[!NOTE]
 >
->Les commandes suivantes utilisent des noms de tables de base de données dans les bases de données MySQL et IBM DB2. Lors de l&#39;exécution de ces commandes sur les bases de données Oracle et MS SQL, remplacez les noms de table suivants dans les commandes :
+>Les commandes suivantes utilisent des noms de table de base de données dans les bases de données My SQL et IBM® DB2®. Lors de l&#39;exécution de ces commandes sur les bases de données Oracle et MS® SQL, remplacez les noms de table suivants dans les commandes :
 >
->* Remplacez `EdcPrincipalLocalAccountEntity` par `EdcPrincipalLocalAccount`
+* Remplacez `EdcPrincipalLocalAccountEntity` par `EdcPrincipalLocalAccount`
 >
->* Remplacez `EdcPrincipalEmailAliasEntity` par `EdcPrincipalEmailAliasEn`
+* Remplacez `EdcPrincipalEmailAliasEntity` par `EdcPrincipalEmailAliasEn`
 >
->* Remplacez `EdcPrincipalMappingEntity` par `EdcPrincipalMappingEntit`
+* Remplacez `EdcPrincipalMappingEntity` par `EdcPrincipalMappingEntit`
 >
->* Remplacez `EdcPrincipalGrpCtmntEntity` par `EdcPrincipalGrpCtmntEnti`
+* Remplacez `EdcPrincipalGrpCtmntEntity` par `EdcPrincipalGrpCtmntEnti`
 >
 
 ```sql
@@ -146,7 +144,7 @@ Procédez comme suit pour supprimer des tables de base de données les données 
 
 1. Supprimez les données utilisateur du référentiel AEM, le cas échéant, comme décrit dans la section [Suppression des données utilisateur](/help/forms/using/user-management-handling-user-data.md#delete-aem).
 1. Arrêtez le serveur AEM Forms.
-1. Exécutez les commandes de base de données suivantes pour supprimer les données User Management d’un ID principal à partir des tables de base de données. Dans la commande `Delete`, remplacez `<principal_id>` par l’ID principal de l’utilisateur dont vous souhaitez supprimer les données.
+1. Exécutez les commandes de base de données suivantes afin de pouvoir supprimer des tables de base de données les données User Management relatives à un ID principal. Dans la commande `Delete`, remplacez `<principal_id>` par l’ID principal de l’utilisateur dont vous souhaitez supprimer les données.
 
    ```sql
    Delete from EdcPrincipalLocalAccountEntity where refuserprincipalid in (Select id from EdcPrincipalUserEntity where refprincipalid in (select id from EdcPrincipalEntity where id='<principal_id>'));
@@ -166,7 +164,7 @@ Procédez comme suit pour supprimer des tables de base de données les données 
    Delete from EdcPrincipalEntity where id='<principal_id>';
    ```
 
-1. Démarrez le serveur AEM Forms.
+1. Démarrez le serveur AEM Forms.
 
 ### Référentiel AEM {#aem-repository-1}
 
@@ -182,5 +180,5 @@ Pour supprimer un utilisateur :
 
 1. Accédez à `https://'[server]:[port]'/lc/useradmin` à lʼaide des informations d’identification de lʼadministrateur AEM.
 1. Recherchez un utilisateur et cliquez deux fois sur le nom d’utilisateur pour ouvrir ses propriétés. Copiez la propriété `Path`.
-1. Accédez à AEM CRX DELite à l’adresse `https://'[server]:[port]'/lc/crx/de/index.jsp`, puis accédez ou recherchez le chemin d’accès de l’utilisateur.
+1. Accédez à AEM CRXDE Lite à l’adresse `https://'[server]:[port]'/lc/crx/de/index.jsp` et naviguez ou recherchez le chemin de l’utilisateur.
 1. Supprimer le chemin d’accès et cliquez sur **[!UICONTROL Enregistrer tout]** pour supprimer définitivement l’utilisateur du référentiel AEM.

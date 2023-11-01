@@ -1,15 +1,13 @@
 ---
 title: Correspondence Management | Gestion des données utilisateur
-description: Correspondence Management et gestion des données utilisateur dans l’environnement AEM Forms.
-uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
+description: Découvrez Correspondence Management et gérez les données utilisateur dans un environnement Adobe Experience Manager Forms.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 role: Admin
 exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '550'
 ht-degree: 45%
 
 ---
@@ -73,7 +71,7 @@ Vous pouvez accéder aux données de correspondance préliminaires et envoyées 
 
 Correspondence Management fournit des API que vous pouvez utiliser pour rechercher et accéder aux instances de brouillon et de lettre envoyée. Grâce aux API, vous pouvez rechercher et ouvrir des instances de lettre à l’aide de l’ID d’instance de lettre ou de l’utilisateur qui a enregistré ou envoyé la correspondance. Pour plus d’informations, reportez-vous à la section [Utiliser les API pour accéder aux instances de lettre](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
-Vous pouvez également accéder à l’instance de lettre dans AEM référentiel à l’aide de CRX DELite. Voir [Données utilisateur et entrepôts de données](/help/forms/using/correspondence-management-handling-user-data.md#data) pour plus d’informations sur les données stockées et l’emplacement du référentiel.
+Vous pouvez également accéder à l’instance de lettre dans AEM référentiel à l’aide de CRXDE Lite. Voir [Données utilisateur et entrepôts de données](/help/forms/using/correspondence-management-handling-user-data.md#data) pour plus d’informations sur les données stockées et l’emplacement du référentiel.
 
 ### Suppression de données utilisateur {#delete-user-data}
 
