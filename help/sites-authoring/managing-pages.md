@@ -2,9 +2,9 @@
 title: Créer et organiser des pages avec AEM
 description: Découvrez comment créer et gérer des pages avec Adobe Experience Manager.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: cc63291c32f7a234398ebe8bf67ab53aaf8fa90f
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2436'
+source-wordcount: '2434'
 ht-degree: 97%
 
 ---

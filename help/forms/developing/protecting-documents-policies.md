@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '15513'
-ht-degree: 84%
+source-wordcount: '15485'
+ht-degree: 83%
 
 ---
 
@@ -353,7 +353,7 @@ Avant d’effectuer une opération de service Document Security par programmatio
 
 **Récupérer une politique existante**
 
-Vous devez récupérer une politique existante pour la modifier. Pour récupérer une politique, spécifiez le nom de la politique et le jeu de politiques auquel elle appartient. Si vous spécifiez une valeur `null` pour le nom du jeu de politiques, la politique est récupérée à partir du jeu de politiques *Mes politiques*.
+Vous devez récupérer une stratégie existante pour la modifier. Pour récupérer une politique, spécifiez le nom de la politique et le jeu de politiques auquel elle appartient. Si vous spécifiez une valeur `null` pour le nom du jeu de politiques, la politique est récupérée à partir du jeu de politiques *Mes politiques*.
 
 **Définition des attributs de la stratégie**
 
@@ -547,7 +547,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 ## Appliquer des politiques à des documents PDF {#applying-policies-to-pdf-documents}
 
-Vous pouvez appliquer une politique à un document PDF afin de le protéger. L’application d’une politique à un document PDF permet de restreindre l’accès au document. Vous ne pouvez pas appliquer de politique à un document si celui-ci est déjà protégé par une autre politique.
+Vous pouvez appliquer une stratégie à un document PDF pour protéger le document. L’application d’une politique à un document PDF permet de restreindre l’accès au document. Vous ne pouvez pas appliquer de politique à un document si celui-ci est déjà protégé par une autre politique.
 
 Lorsque le document est ouvert, vous pouvez également restreindre l’accès aux fonctionnalités d’Acrobat et d’Adobe Reader, notamment la possibilité d’imprimer et de copier du texte, d’y apporter des modifications et d’y ajouter des signatures et des commentaires. En outre, vous pouvez révoquer un document PDF protégé par une politique lorsque vous ne souhaitez plus que les utilisateurs accèdent au document.
 
@@ -577,7 +577,7 @@ Avant d’effectuer par programmation une opération du service Document Securi
 
 **Récupérer un document PDF**
 
-Vous pouvez récupérer un document PDF afin d’y appliquer une politique. Une fois que vous avez appliqué une politique au document PDF, l’accès au document est restreint aux utilisateurs. Par exemple, si la politique ne permet pas l’ouverture du document hors ligne, les utilisateurs doivent être en ligne pour pouvoir ouvrir le document.
+Vous pouvez récupérer un document de PDF pour appliquer une stratégie. Une fois que vous avez appliqué une politique au document PDF, l’accès au document est restreint aux utilisateurs. Par exemple, si la politique ne permet pas l’ouverture du document hors ligne, les utilisateurs doivent être en ligne pour pouvoir ouvrir le document.
 
 **Appliquer une politique existante au document PDF**
 
@@ -714,7 +714,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 ## Supprimer des politiques des documents PDF {#removing-policies-from-pdf-documents}
 
-Vous pouvez supprimer une politique d’un document protégé par une politique afin de supprimer la protection du document. Effectuez cette opération si vous ne souhaitez plus que le document soit protégé par une politique. Si vous souhaitez mettre à jour un document protégé par une politique avec une nouvelle politique, au lieu de supprimer la politique et d’ajouter la politique mise à jour, il est préférable de changer de politique.
+Vous pouvez supprimer une stratégie d’un document protégé par une stratégie pour supprimer la protection du document. Effectuez cette opération si vous ne souhaitez plus que le document soit protégé par une politique. Si vous souhaitez mettre à jour un document protégé par une politique avec une nouvelle politique, au lieu de supprimer la politique et d’ajouter la politique mise à jour, il est préférable de changer de politique.
 
 >[!NOTE]
 >
@@ -740,11 +740,11 @@ Avant d’effectuer par programmation une opération de service Document Securit
 
 **Récupérer un document PDF protégé par une politique**
 
-Vous pouvez récupérer un document PDF protégé par une politique afin de supprimer une politique. Si vous tentez de supprimer une politique d’un document PDF qui n’est pas protégé par une politique, une exception est générée.
+Vous pouvez récupérer un document de PDF protégé par une stratégie pour supprimer une stratégie. Si vous tentez de supprimer une politique d’un document PDF qui n’est pas protégé par une politique, une exception est générée.
 
 **Supprimer la politique du document PDF**
 
-Vous pouvez supprimer une politique d’un document PDF protégé par une politique à condition qu’un administrateur soit indiqué dans les paramètres de connexion. Dans le cas contraire, la politique utilisée pour protéger un document doit contenir l’autorisation `SWITCH_POLICY` permettant de supprimer une politique d’un document PDF. En outre, l’utilisateur spécifié dans les paramètres de connexion AEM Forms doit également disposer de cette autorisation. Dans le cas contraire, une exception est générée.
+Vous pouvez supprimer une politique d’un document PDF protégé par une politique à condition qu’un administrateur soit indiqué dans les paramètres de connexion. Si ce n’est pas le cas, la stratégie utilisée pour protéger un document doit contenir la variable `SWITCH_POLICY` autorisation de supprimer une stratégie d’un document de PDF. En outre, l’utilisateur spécifié dans les paramètres de connexion AEM Forms doit également disposer de cette autorisation. Dans le cas contraire, une exception est générée.
 
 **Enregistrer un document PDF non sécurisé**
 
@@ -878,9 +878,9 @@ Avant d’effectuer une opération de service Document Security par programme, v
 
 **Récupérer un document PDF protégé par une politique**
 
-Pour pouvoir révoquer un document PDF protégé par une politique, vous devez le récupérer. Vous ne pouvez pas révoquer un document qui a déjà été révoqué ou qui n’est pas un document protégé par une politique.
+Vous devez récupérer un document de PDF protégé par une stratégie pour le révoquer. Vous ne pouvez pas révoquer un document qui a déjà été révoqué ou qui n’est pas un document protégé par une politique.
 
-Si vous connaissez la valeur de l’identifiant de licence du document PDF protégé par une politique, il n’est pas nécessaire de récupérer ce dernier. Cependant, dans la plupart des cas, vous devrez récupérer le document PDF pour obtenir la valeur de l’identifiant de licence.
+Si vous connaissez la valeur de l’identifiant de licence du document PDF protégé par une politique, il n’est pas nécessaire de récupérer ce dernier. Cependant, dans la plupart des cas, vous devrez récupérer le document du PDF pour obtenir la valeur de l’identifiant de licence.
 
 **Révoquer le document protégé par une politique**
 
@@ -1020,7 +1020,7 @@ Avant d’effectuer par programmation une opération de service Document Securit
 
 **Récupérer l’identifiant de licence du document PDF révoqué**
 
-Vous devez récupérer l’identifiant de licence du document PDF révoqué pour restaurer un document PDF révoqué. Une fois que vous avez obtenu la valeur d’identifiant de licence, vous pouvez restaurer un document révoqué. Si vous tentez de restaurer un document qui n’est pas révoqué, une exception est générée.
+Vous devez récupérer l’identifiant de licence du document de PDF révoqué pour rétablir un document de PDF révoqué. Une fois que vous avez obtenu la valeur d’identifiant de licence, vous pouvez restaurer un document révoqué. Si vous tentez de restaurer un document qui n’est pas révoqué, une exception est générée.
 
 **Rétablir l’accès au document PDF révoqué**
 
@@ -1949,7 +1949,7 @@ Pour obtenir des exemples de code à l’aide du service Rights Management, repo
 
 ## Appliquer des politiques à des documents Word {#applying-policies-to-word-documents}
 
-Outre les documents PDF, le service Rights Management prend en charge d’autres formats de document, tels que les documents Microsoft Word (fichier DOC) et d’autres formats de fichier Microsoft Office. Par exemple, vous pouvez appliquer une politique à un document Word afin de le protéger. En appliquant une politique à un document Word, vous restreignez l’accès au document. Vous ne pouvez pas appliquer de politique à un document si celui-ci est déjà protégé par une autre politique.
+Outre les documents PDF, le service Rights Management prend en charge d’autres formats de document, tels que les documents Microsoft Word (fichier DOC) et d’autres formats de fichier Microsoft Office. Vous pouvez, par exemple, appliquer une stratégie à un document Word pour le protéger. En appliquant une politique à un document Word, vous restreignez l’accès au document. Vous ne pouvez pas appliquer de politique à un document si celui-ci est déjà protégé par une autre politique.
 
 Vous pouvez surveiller l’utilisation d’un document Word protégé par une politique après sa distribution. En d’autres termes, vous pouvez voir comment le document est utilisé et qui l’utilise. Par exemple, vous pouvez savoir quand un utilisateur a ouvert le document.
 
@@ -1977,7 +1977,7 @@ Avant d’effectuer une opération de service Document Security par programme, v
 
 **Récupérer un document Word**
 
-Pour appliquer une politique, vous devez récupérer un document Word. Une fois que vous avez appliqué une politique au document Word, les utilisateurs sont restreints lors de l’utilisation du document. Par exemple, si la politique ne permet pas l’ouverture du document hors ligne, les utilisateurs doivent être en ligne pour pouvoir ouvrir le document.
+Vous devez récupérer un document Word pour appliquer une stratégie. Une fois que vous avez appliqué une politique au document Word, les utilisateurs sont restreints lors de l’utilisation du document. Par exemple, si la politique ne permet pas l’ouverture du document hors ligne, les utilisateurs doivent être en ligne pour pouvoir ouvrir le document.
 
 **Appliquer une politique existante au document Word**
 
@@ -2106,7 +2106,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 ## Supprimer des politiques de documents Word {#removing-policies-from-word-documents}
 
-Vous pouvez supprimer une politique d’un document Word protégé par une politique afin de supprimer la protection du document. Effectuez cette opération si vous ne souhaitez plus que le document soit protégé par une politique. Si vous souhaitez mettre à jour un document Word protégé par une politique avec une nouvelle politique, au lieu de supprimer la politique et d’ajouter la politique mise à jour, il est préférable de changer de politique.
+Vous pouvez supprimer une stratégie d’un document Word protégé par une stratégie pour supprimer la protection du document. Effectuez cette opération si vous ne souhaitez plus que le document soit protégé par une politique. Si vous souhaitez mettre à jour un document Word protégé par une politique avec une nouvelle politique, au lieu de supprimer la politique et d’ajouter la politique mise à jour, il est préférable de changer de politique.
 
 >[!NOTE]
 >
@@ -2132,11 +2132,11 @@ Avant d’effectuer par programmation une opération de service Document Securit
 
 **Récupérer un document Word protégé par une politique**
 
-Pour supprimer une politique, vous devez récupérer un document Word protégé par une politique. Si vous tentez de supprimer une politique d’un document Word qui n’est pas protégé par une politique, une exception est générée.
+Pour supprimer une stratégie, vous devez récupérer un document Word protégé par une stratégie. Si vous tentez de supprimer une politique d’un document Word qui n’est pas protégé par une politique, une exception est générée.
 
 **Supprimer la politique du document Word**
 
-Vous pouvez supprimer une politique d’un document Word protégé par une politique à condition qu’un administrateur soit spécifié dans les paramètres de connexion. Dans le cas contraire, la politique utilisée pour protéger un document doit contenir l’autorisation `SWITCH_POLICY` pour pouvoir supprimer une politique d’un document Word. En outre, l’utilisateur spécifié dans les paramètres de connexion AEM Forms doit également disposer de cette autorisation. Dans le cas contraire, une exception est générée.
+Vous pouvez supprimer une politique d’un document Word protégé par une politique à condition qu’un administrateur soit spécifié dans les paramètres de connexion. Si ce n’est pas le cas, la stratégie utilisée pour protéger un document doit contenir la variable `SWITCH_POLICY` autorisation de supprimer une stratégie d’un document Word. En outre, l’utilisateur spécifié dans les paramètres de connexion AEM Forms doit également disposer de cette autorisation. Dans le cas contraire, une exception est générée.
 
 **Enregistrer le document Word non protégé**
 

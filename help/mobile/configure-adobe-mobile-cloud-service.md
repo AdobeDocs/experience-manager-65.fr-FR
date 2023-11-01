@@ -11,10 +11,10 @@ topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 962e9e98-a303-435b-a938-31319282e022
 legacypath: /content/docs/en/aem/6-1/develop/mobile-apps/apps/managing-aem-mobile-apps/configure-your-adobe-phonegap-build-cloud-service1
 exl-id: 209c36f9-1a4b-4eea-8dde-22e0fc9718c1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 1%
+source-wordcount: '449'
+ht-degree: 2%
 
 ---
 
@@ -24,13 +24,13 @@ ht-degree: 1%
 >
 >Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-Le **Mosaïque Mesures mobiles** sur le centre de commande fournit des analyses en temps réel pour votre application mobile.
+La variable **Mosaïque Mesures mobiles** sur le centre de commande fournit des analyses en temps réel pour votre application mobile.
 
-Le [Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) Le SDK est rendu disponible par le biais d’un module externe PhoneGap. Les mesures sont collectées et mises en cache sur l’appareil jusqu’à ce que l’appareil soit connecté. Les données sont alors transmises à Adobe Mobile Services Cloud pour création de rapports et analyse.
+La variable [Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) Le SDK est rendu disponible par le biais d’un module externe PhoneGap. Les mesures sont collectées et mises en cache sur l’appareil jusqu’à ce que l’appareil soit connecté. Les données sont alors transmises à Adobe Mobile Services Cloud pour création de rapports et analyse.
 
 Le SDK Adobe Mobile Analytics fournit les éléments suivants :
 
-1. **Collecte de données pour les canaux mobiles** - Collectez des données complètes pour vos sites web et applications mobiles sur tous les principaux systèmes d’exploitation.
+1. **Collecte de données pour les canaux mobiles** - collecter des données complètes pour vos sites web et applications mobiles sur tous les principaux systèmes d’exploitation ;
 1. **Analyse de l&#39;engagement mobile** - Comprendre l’engagement des utilisateurs dans votre application mobile, votre site web ou votre vidéo, notamment la fréquence à laquelle les clients lancent le canal, s’ils effectuent des achats sur celui-ci, etc.
 1. **Tableaux de bord et rapports d’applications mobiles** - Obtenez des rapports d’utilisation qui contiennent des mesures de cycle de vie pour vos applications et des mesures de boutique d’applications. Consultez les tendances pour les utilisateurs, les lancements, la durée de session moyenne, la durée de rétention et les blocages.
 1. **Analyse de campagne mobile** - Quantifiez l’efficacité des campagnes spécifiques aux mobiles telles que les SMS, les annonces de recherche mobile, les annonces d’affichage mobile et les codes QR.
@@ -39,7 +39,7 @@ Le SDK Adobe Mobile Analytics fournit les éléments suivants :
 
 >[!CAUTION]
 >
->Le **Analyse des mesures** La mosaïque s’affiche dans le tableau de bord, uniquement si vous avez configuré les services cloud.
+>La variable **Analyse des mesures** La mosaïque s’affiche dans le tableau de bord, uniquement si vous avez configuré les services cloud.
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
@@ -49,11 +49,11 @@ AEM mosaïque Mesures du centre de commandes
 
 Pour tirer parti d’Adobe Mobile Services Analytics, vous devez configurer le service AEM Mobile Analytics Cloud avec les informations de votre compte Adobe Analytics.
 
-1. Cliquez sur l’icône en haut à droite pour ajouter ou modifier les Cloud Services à partir du **Gestion des Cloud Services** à partir du tableau de bord de l’application.
+1. Cliquez sur l’icône en haut à droite pour ajouter ou modifier les Cloud Service à partir du **Gestion des Cloud Service** du tableau de bord de l’application.
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
-1. Le **Ajout ou modification de Cloud Services** s’affiche. Sélectionner **Adobe Mobile Services** et cliquez sur **Suivant**.
+1. La variable **Ajout ou modification de Cloud Service** s’affiche. Sélectionner **Adobe Mobile Services** et cliquez sur **Suivant**.
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 

@@ -1,17 +1,17 @@
 ---
 title: Parcours de documentation AEM
-description: Les parcours de documentation fournissent une structure narrative à la documentation AEM en synthétisant des fonctionnalités complexes et disparates afin de résoudre un objectif commercial en respectant les bonnes pratiques. Conçu pour les débutants dans AEM, les parcours présentent les concepts et les fonctionnalités permettant d’atteindre un objectif, étape par étape.
+description: Les Parcours de documentation fournissent une structure narrative dans AEM documentation en liant des fonctionnalités complexes et disparates pour résoudre un objectif commercial d’une manière conforme aux bonnes pratiques. Conçu pour les débutants dans AEM, les parcours présentent les concepts et les fonctionnalités permettant d’atteindre un objectif, étape par étape.
 exl-id: bb0a26e2-5686-4fb7-bb6e-231dafc8268b
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '1228'
+ht-degree: 93%
 
 ---
 
 # Parcours de documentation AEM {#aem-documentation-journeys}
 
-Les parcours de documentation fournissent une structure narrative à la documentation AEM en synthétisant des fonctionnalités complexes et disparates afin de résoudre un objectif commercial en respectant les bonnes pratiques. Conçu pour les débutants dans AEM, les parcours présentent les concepts et les fonctionnalités permettant d’atteindre un objectif, étape par étape.
+Les Parcours de documentation fournissent une structure narrative dans AEM documentation en liant des fonctionnalités complexes et disparates pour résoudre un objectif commercial d’une manière conforme aux bonnes pratiques. Conçu pour les débutants dans AEM, les parcours présentent les concepts et les fonctionnalités permettant d’atteindre un objectif, étape par étape.
 
 ## Qu’est-ce qu’un parcours de documentation ? {#what-is}
 
@@ -81,7 +81,7 @@ Les parcours de documentation ont été conçus pour compléter la documentation
 
 ## Quels sont les parcours disponibles ? {#journeys}
 
-Plusieurs parcours de documentation sont déjà disponibles. Puisque chaque parcours est conçu comme un récit, commencez par l’introduction et lisez-le jusqu’au bout pour disposer d’une compréhension globale du sujet dans le contexte d’AEM.
+Plusieurs parcours de documentation sont déjà disponibles. Puisque chaque parcours est conçu comme un récit, veuillez commencer par l&#39;introduction et lire jusqu&#39;au bout pour avoir une compréhension complète du sujet dans le contexte de l&#39;AEM.
 
 | Parcours | Description |
 |---|---|

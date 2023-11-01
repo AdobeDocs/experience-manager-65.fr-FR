@@ -11,10 +11,10 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 95%
+source-wordcount: '853'
+ht-degree: 90%
 
 ---
 
@@ -202,7 +202,7 @@ Vous pouvez également automatiser la configuration SSL à l’aide de l’outi
 
 *https://&lt;serveraddress>:&lt;serverport>/libs/granite/security/post/sslSetup.html*
 
-Voici les paramètres que vous pouvez utiliser pour modifier les différents paramètres de l’assistant de configuration :
+Vous trouverez ci-dessous les paramètres que vous pouvez utiliser pour modifier les différents paramètres de l’assistant de configuration :
 
 * `-F "keystorePassword=password"` - Le mot de passe du KeyStore ;
 
@@ -223,7 +223,7 @@ Voici les paramètres que vous pouvez utiliser pour modifier les différents par
 >
 >Pour exécuter le cURL afin d’automatiser la configuration SSL/TLS, la solution la plus rapide est de partir du dossier dans lequel se trouvent les fichiers DER et CRT. Vous pouvez également spécifier le chemin d’accès dans les arguments `privatekeyFile` et certificateFile.
 >
->Vous devez également être authentifié pour effectuer la mise à jour. Veillez donc à ajouter la commande cURL avec le paramètre `-u user:passeword`
+>Vous devez également être authentifié pour effectuer la mise à jour. Veillez donc à ajouter la commande cURL à l’événement `-u user:passeword` .
 >
 >Une commande POST cURL appropriée doit se présenter comme suit :
 

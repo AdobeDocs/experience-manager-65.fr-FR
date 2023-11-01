@@ -7,10 +7,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
-source-git-commit: 59e182c165f6fd4b822eaf0e34f6e4b3bb18eb14
-workflow-type: ht
-source-wordcount: '1682'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '1678'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ Si vous avez besoin d’un workflow ou d’un contrôle de versions pour vos res
 
 #### Si vous chargez la vidéo vers Dynamic Media Classic {#if-you-are-uploading-your-video-to-scene}
 
-Si vous n’avez pas besoin d’un workflow ou d’une création de versions pour les contenus, vous devez charger les contenus dans Dynamic Media Classic. Vous trouverez ci-dessous le worfklow recommandé :
+Si vous n’avez pas besoin d’un workflow ou d’une création de versions pour les contenus, vous devez charger les contenus dans Dynamic Media Classic. Vous trouverez ci-dessous le workflow recommandé :
 
 1. Dans l’appli de bureau Dynamic Media Classic, [configurez un chargement et un codage FTP planifiés dans Dynamic Media Classic (système automatisé)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=fr#upload-options).
 1. Dans Experience Manager, accédez aux ressources vidéo dans la gestion de contenu web dans l’onglet **[!UICONTROL Dynamic Media Classic]** de l’outil de recherche de contenu.
@@ -117,6 +117,7 @@ Le tableau suivant explique les cas d’utilisation de chaque composant :
 >[!NOTE]
 >
 >Prêt à l’emploi, le composant vidéo Dynamic Media Classic utilise le profil vidéo universel. Vous pouvez toutefois obtenir le lecteur vidéo HTML5 pour l’utiliser avec Experience Manager. Dans Dynamic Media Classic, copiez le code incorporé du lecteur vidéo HTML5 prêt à l’emploi et placez-le dans votre page Experience Manager.
+>
 
 ## Composant vidéo Experience Manager {#aem-video-component}
 
@@ -126,7 +127,7 @@ Même si l’utilisation du composant vidéo Dynamic Media Classic est recomma
 
 Le tableau suivant fournit une comparaison de haut niveau des fonctionnalités prises en charge par le composant vidéo Experience Manager Foundation et par le composant vidéo Dynamic Media Classic :
 
-|  | Vidéo de base Experience Manager | Vidéo de Dynamic Media Classic |
+|   | Vidéo de base Experience Manager | Vidéo de Dynamic Media Classic |
 |---|---|---|
 | Approche | Première approche HTML5. Flash n’est utilisé que pour la version de secours autre que HTML5. | Flash sur la plupart des ordinateurs de bureau. HTML5 est utilisé pour les appareils mobiles et les tablettes. |
 | Diffusion | Progressif | Diffusion en continu à débit adaptatif |
@@ -165,7 +166,7 @@ Les différents codages vidéo sont créés selon les paramètres prédéfinis d
 
 #### Configuration de la conception {#configuring-design}
 
-Le composant vidéo de base doit connaître les profils vidéo à utiliser afin de créer la liste des sources vidéo. Ouvrez la boîte de dialogue de conception des composants vidéo et configurez la conception des composants pour l’utilisation des nouveaux profils vidéo.
+Le composant vidéo de base doit connaître les profils vidéo à utiliser pour créer la liste des sources vidéo. Ouvrez la boîte de dialogue de conception des composants vidéo et configurez la conception des composants pour l’utilisation des nouveaux profils vidéo.
 
 >[!NOTE]
 >
@@ -173,7 +174,7 @@ Le composant vidéo de base doit connaître les profils vidéo à utiliser afin 
 
 >[!NOTE]
 >
->Les modifications apportées à la conception requièrent l’activation de la conception afin qu’elles prennent effet lors de la publication.
+>Les modifications apportées à la conception nécessitent l’activation de la conception pour qu’elle prenne effet lors de la publication.
 
 1. Ouvrez la boîte de dialogue de conception des composants vidéo de base et sélectionnez l’onglet **[!UICONTROL Profils]**. Supprimez ensuite les profils prêts à l’emploi et ajoutez les nouveaux profils vidéo Dynamic Media Classic. L’ordre de la liste des profils de la boîte de dialogue de conception définit également l’ordre des sources vidéo lors du rendu.
 1. Pour les navigateurs ne prenant pas en charge HTML5, le composant vidéo permet de configurer Flash comme solution de secours. Ouvrez la boîte de dialogue de conception des composants vidéo et sélectionnez l’onglet **[!UICONTROL Flash]**. Configurez les paramètres du lecteur Flash Player et attribuez-lui un profil de secours.

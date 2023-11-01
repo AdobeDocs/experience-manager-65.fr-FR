@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '4613'
-ht-degree: 61%
+source-wordcount: '4609'
+ht-degree: 60%
 
 ---
 
@@ -105,13 +105,13 @@ Lucene enregistre un bean JMX qui fournit des détails sur le contenu indexé, y
 
 Vous pouvez le consulter en accédant à la console JMX à l’adresse `https://server:port/system/console/jmx`.
 
-Une fois que vous êtes connecté(e) à la console JMX, recherchez les **Statistiques de l’index Lucene** pour le trouver. D’autres statistiques d’index sont disponibles dans le MBean **IndexStats**.
+Une fois connecté à la console JMX, recherchez **Statistiques de l’index Lucene** pour le trouver. D’autres statistiques d’index sont disponibles dans le MBean **IndexStats**.
 
 Pour les statistiques de requête, consultez le MBean nommé **Statistiques de requête Oak**.
 
 Si vous souhaitez explorer davantage vos index au moyen d’un outil comme [Luke](https://code.google.com/archive/p/luke/), vous devez utiliser la console Oak pour vider l’index depuis le `NodeStore` dans un répertoire de système de fichiers. Pour obtenir des instructions sur la façon de procéder, consultez la [documentation Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
-Vous pouvez également extraire les index de votre système au format JSON. Pour ce faire, accédez à `https://server:port/oak:index.tidy.-1.json`.
+Vous pouvez également extraire les index de votre système au format JSON. Pour cela, vous devez accéder à `https://server:port/oak:index.tidy.-1.json`
 
 ### Limites des requêtes {#query-limits}
 

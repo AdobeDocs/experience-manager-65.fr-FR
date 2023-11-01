@@ -2,10 +2,10 @@
 title: Prise en main d’AEM Headless
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3042'
-ht-degree: 95%
+source-wordcount: '3038'
+ht-degree: 94%
 
 ---
 
@@ -78,7 +78,7 @@ Les fragments de contenu contiennent du contenu structuré et peuvent être diff
 
 Pour modifier votre contenu en mode découplé, AEM propose deux API robustes.
 
-* L’API GraphQL vous permet de créer des demandes d’accès et de diffusion de fragments de contenu.
+* L’API GraphQL permet de créer des requêtes d’accès et de diffusion de fragments de contenu.
 * L’API REST Assets vous permet de créer et de modifier des fragments de contenu (et d’autres ressources).
 
 Vous découvrirez ces API et comment les utiliser dans une partie ultérieure du parcours AEM découplé. Pour plus d’informations, reportez-vous à la section [Ressources supplémentaires](#additional-resources) ci-dessous.
@@ -89,7 +89,7 @@ AEM prend en charge les modèles Découplé et Pile complète traditionnelle d�
 
 Pour vous assurer de bien comprendre le concept de découplage, ce parcours de développement découplé AEM se concentre sur le modèle purement découplé, ce qui vous permettra d’être opérationnel le plus rapidement possible sans codage dans AEM.
 
-Toutefois, vous devez tenir compte des possibilités hybrides supplémentaires qui s’offrent à vous une fois que vous avez compris les fonctionnalités d’AEM découplé. Ces cas sont présentés ci-dessous pour que vous puissiez en prendre connaissance. À la fin du parcours, vous découvrirez plus en détail ces concepts si cette flexibilité est nécessaire pour votre projet.
+Toutefois, vous devez tenir compte des possibilités hybrides supplémentaires qui s’offrent à vous une fois que vous avez compris les fonctionnalités découplées d’AEM. Ces cas sont présentés ci-dessous pour que vous puissiez en prendre connaissance. À la fin du parcours, vous découvrirez plus en détail ces concepts si cette flexibilité est nécessaire pour votre projet.
 
 ### Vous utilisez déjà de manière externe des contenus découplés, par exemple avec les applications monopage (SPA). {#already-have-a-spa}
 
@@ -99,7 +99,7 @@ Supposons que votre besoin de base soit au minimum de diffuser du contenu depuis
 
 Ce niveau d’intégration est le modèle découplé traditionnel. Il permet aux auteurs de créer des contenus dans AEM et de les diffuser sans interface utilisateur vers un certain nombre de services externes à l’aide de GraphQL, ou de les modifier dans des services externes à l’aide de l’API Assets. Aucun codage n’est nécessaire dans AEM.
 
-Dans ce modèle, AEM ne sert qu’à créer et à diffuser du contenu en utilisant des fragments de contenu AEM. Le rendu et l’interaction avec le contenu sont délégués à l’application externe consommatrice, souvent une application sur une seule page (SPA).
+Dans ce modèle, AEM ne sert qu’à créer et à diffuser du contenu en utilisant des fragments de contenu AEM. Le rendu et l’interaction avec le contenu sont délégués à l’application externe consommatrice, souvent une application monopage.
 
 #### Niveau 2 : incorporation de la SPA dans AEM – Modèle hybride {#level-2}
 
@@ -111,7 +111,7 @@ Ce niveau a l’avantage de permettre aux auteurs de créer du contenu de maniè
 
 Ce niveau d’intégration repose sur le niveau 2 en permettant de modifier l’essentiel du contenu de la SPA externe dans AEM.
 
-### Vous n’avez pas encore de consommateur externe de contenu découplé, par exemple les applications sur une seule page (SPA). {#do-not-have-a-spa}
+### Vous n’avez pas encore de consommateur externe de contenu découplé, par exemple les applications monopages. {#do-not-have-a-spa}
 
 Si votre objectif est de créer une SPA qui consomme du contenu en toute sécurité depuis AEM, vous pouvez utiliser des fonctionnalités telles que les fragments de contenu pour gérer votre contenu découplé et créer également une SPA avec le framework de l’éditeur de SPA d’AEM.
 
@@ -195,7 +195,7 @@ Les dossiers peuvent également être limités de manière à n’autoriser que 
 * Empêche les auteurs de créer du contenu n’appartenant pas au dossier.
 * Optimise le processus de création de contenu en filtrant les types de contenu autorisés dans le dossier au cours de la création pour n’afficher que les types de contenu valides.
 
-En créant une structure de contenu appropriée, il devient plus facile de coordonner la création de contenus découplés sur plusieurs canaux afin d’optimiser la réutilisation de ces contenus. L’utilisation du contenu sur plusieurs canaux améliore considérablement l’efficacité de la production et la gestion des modifications.
+En créant une structure de contenu appropriée, il devient plus facile de coordonner la création de contenu headless sur plusieurs canaux afin d’optimiser la réutilisation du contenu. L’utilisation du contenu sur plusieurs canaux améliore considérablement l’efficacité de la production et la gestion des modifications.
 
 ##### Définir de bonnes conventions d’affectation de noms {#naming-conventions}
 
@@ -222,7 +222,7 @@ Comme les auteurs interagissent avec les modèles de manière permanente lorsqu�
 
 #### Développeur {#developer}
 
-Les développeurs sont chargés de rapprocher le contenu créé dans AEM découplé et le consommateur de ce contenu. Souvent il s’agit d’une application sur une seule page (SPA), d’une application web progressive (PWA), d’une boutique en ligne ou d’un autre service extérieur à AEM.
+Les équipes de développement sont chargées de rapprocher le contenu créé dans AEM découplé et le consommateur de ce contenu. Souvent il s’agit d’une application monopage, d’une application web progressive (PWA), d’une boutique en ligne ou d’un autre service extérieur à AEM.
 
 GraphQL sert de « liant » entre AEM et les consommateurs de contenu en mode découplé. GraphQL est un langage qui permet d’interroger AEM pour obtenir le contenu nécessaire.
 

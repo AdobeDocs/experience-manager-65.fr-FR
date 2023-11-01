@@ -10,10 +10,10 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
-workflow-type: ht
-source-wordcount: '3855'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '3853'
+ht-degree: 99%
 
 ---
 
@@ -179,8 +179,6 @@ Dans l’onglet Contenu, gérez le contenu tel que les fragments de document et 
 
    * Un champ de variable numérique est défini par défaut sur *0 (zéro)*. Toutefois, la variable est considérée comme vide. Cela signifie que le nombre de variables inclut tous les champs de variable numérique avec la valeur *0 (zéro)*.
 
-
-
 #### Actions et informations disponibles dans l’onglet Contenu de la création de correspondance {#actions-and-info-available-in-the-create-correspondence-content-tab}
 
 **Zone cible**
@@ -293,7 +291,7 @@ Ces instances peuvent être enregistrées uniquement lorsque la lettre est en co
 
 Avant la publication de lettres ou l’enregistrement de brouillons sur l’instance de publication, effectuez les étapes suivantes sur l’instance d’auteur et de publication pour activer la fonction Enregistrer en tant que brouillon :
 
-Les propriétés *cq:lastReplicationAction*, *cq:lastreplicated* et *cq:lastReplicatedBy* ne sont pas transférées vers l’instance de publication par défaut. Pour transférer les propriétés *cq:lastReplicationAction*, *cq:lastreplicated* et *cq:lastReplicatedBy* vers l’instance de publication, désactivez le composant [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]. Pour désactiver le composant :
+Les propriétés *cq:lastReplicationAction*, *cq:lastreplicated* et *cq:lastReplicatedBy* ne sont pas transférées vers l’instance de publication par défaut. Pour effectuer le transfert *cq:lastReplicationAction*, *cq:lastreplicated* et *cq:lastReplicatedBy* propriétés de l’instance de publication, désactivez la fonction [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] composant. Pour désactiver le composant :
 
 1. Sur l’instance d’auteur, ouvrez la console Composants de la console Web Adobe Experience Manager. L’URL par défaut est `http://author-server:port/system/console/components`.
 

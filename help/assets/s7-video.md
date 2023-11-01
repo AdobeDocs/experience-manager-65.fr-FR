@@ -11,10 +11,10 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
-workflow-type: ht
-source-wordcount: '1563'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '1559'
+ht-degree: 89%
 
 ---
 
@@ -30,10 +30,10 @@ L’intégration vidéo de Dynamic Media Classic étend la portée de la vidé
 
 ## A propos de FFMPEG et de Dynamic Media Classic {#about-ffmpeg-and-scene}
 
-Le workflow de codage vidéo par défaut est basé sur l’utilisation d’une intégration basée sur FFMPEG aux profils vidéo. De ce fait, le processus d’assimilation de la gestion des actifs numériques prêt à l’emploi contient les deux étapes suivantes du processus basé sur FFMPEG :
+Le workflow de codage vidéo par défaut est basé sur l’utilisation d’une intégration basée sur FFMPEG aux profils vidéo. Par conséquent, le workflow d’ingestion DAM prêt à l’emploi contient les deux étapes suivantes du workflow basé sur ffmpeg :
 
 * Miniatures FFMPEG
-* Codage FFMPEG
+* Encodage FFMPEG
 
 Gardez à l’esprit que l’activation et la configuration de l’intégration ne suppriment ou ne désactivent pas automatiquement ces deux étapes du workflow prêt à l’emploi d’assimilation de la gestion des ressources numériques. Si vous utilisez déjà le codage vidéo FFMPEG dans Adobe Experience Manager, il est probable que FFMPEG soit installé dans vos environnements de création. Dans ce cas, une nouvelle vidéo assimilée à l’aide de la gestion des ressources numériques est codée deux fois : une fois par le codeur FFMPEG et une fois par l’intégration de Dynamic Media Classic.
 
@@ -41,21 +41,21 @@ Si le codage vidéo basé sur FFMPEG est configuré dans Experience Manager et 
 
 ## Formats pris en charge {#supported-formats}
 
-Les formats suivants sont pris en charge pour le composant vidéo Scene7 :
+Les formats suivants sont pris en charge pour le composant vidéo Scene7 :
 
 * F4V H.264
 * MP4 H.264
 
 ## Choix de l’emplacement du chargement de la vidéo {#deciding-where-to-upload-your-video}
 
-Le choix de l’emplacement du téléchargement du contenu vidéo dépend des éléments suivants :
+Le choix de l’emplacement de chargement de vos ressources vidéo dépend des éléments suivants :
 
-* Avez-vous besoin d’un worfklow pour le contenu vidéo ?
-* Avez-vous besoin d’un contrôle des versions pour le contenu vidéo ?
+* Avez-vous besoin d’un workflow pour la ressource vidéo ?
+* Avez-vous besoin d’un contrôle de version pour la ressource vidéo ?
 
-Si la réponse est « oui » à l’une des questions ou aux deux, téléchargez la vidéo directement dans la gestion des actifs numériques d’Adobe. Si la réponse est « non » aux deux questions, chargez la vidéo directement dans Dynamic Media Classic. Le processus de chaque scénario est décrit dans la section suivante.
+Si la réponse à une ou deux de ces questions est « oui », téléchargez votre vidéo directement dans la gestion des DAM d’Adobe. Si la réponse est « non » aux deux questions, chargez la vidéo directement dans Dynamic Media Classic. Le workflow de chaque scénario est décrit dans la section suivante.
 
-### Si vous téléchargez la vidéo directement dans la gestion des actifs numériques d’Adobe {#if-you-are-uploading-your-video-directly-to-adobe-dam}
+### Si vous téléchargez la vidéo directement vers la gestion des ressources numériques Adobe {#if-you-are-uploading-your-video-directly-to-adobe-dam}
 
 Si vous avez besoin d’un workflow ou d’une création de versions pour les ressources, vous devez tout d’abord les télécharger dans la gestion des ressources numériques d’Adobe. Vous trouverez ci-dessous le workflow recommandé :
 
@@ -90,7 +90,7 @@ Si vous n’avez pas besoin d’un workflow ou d’une création de versions pou
    >
    >Adobe recommande de sélectionner les deux visionneuses de vidéos adaptatives lors de la configuration des paramètres prédéfinis ou de sélectionner l’option **[!UICONTROL Codage vidéo adaptatif]**.
 
-1. Les profils de codage sélectionnés sont automatiquement appliqués à toutes les vidéos téléchargées dans le dossier cible de la gestion des actifs numériques CQ que vous avez défini pour cette configuration de cloud Scene7. Vous pouvez définir plusieurs configurations de cloud Scene7 avec différents dossiers cibles afin d’appliquer différents profils de codage, selon vos besoins.
+1. Les profils de codage sélectionnés sont automatiquement appliqués à toutes les vidéos chargées dans le dossier cible de la gestion des actifs numériques CQ que vous configurez pour cette configuration de cloud Scene7. Vous pouvez configurer plusieurs configurations de cloud Scene7 avec différents dossiers cibles afin d’appliquer différents profils de codage selon vos besoins.
 
 ## Mise à jour de la visionneuse et des paramètres prédéfinis de codage {#updating-viewer-and-encoding-presets}
 
@@ -113,7 +113,7 @@ Pour mettre à jour la visionneuse et les paramètres prédéfinis de codage pou
 
 Lorsque vous utilisez Experience Manager, vous avez accès à la fois au composant vidéo disponible dans Sites et au composant vidéo Scene7. Ces composants ne sont pas interchangeables.
 
-Le composant vidéo Scene7 ne fonctionne que pour les vidéos Scene7. Le composant de base fonctionne avec les vidéos stockées depuis Experience Manager (à l’aide de FFMPEG) et les vidéos Scene7.
+Le composant vidéo Scene7 fonctionne uniquement pour les vidéos Scene7. Le composant de base fonctionne avec les vidéos stockées depuis Experience Manager (à l’aide de FFMPEG) et les vidéos Scene7.
 
 Le tableau suivant explique les cas d’utilisation de chaque composant :
 
@@ -131,13 +131,13 @@ Même si l’utilisation du composant vidéo Scene7 est recommandée pour la vis
 
 Le tableau suivant fournit une comparaison de niveau élevé des fonctions prises en charge par le composant vidéo de base d’Experience Manager et le composant vidéo Scene7 :
 
-|  | Vidéo de base Experience Manager | Vidéo Scene7 |
+|   | Vidéo de base Experience Manager | Vidéo Scene7 |
 |---|---|---|
-| Approche | Approche HTML5 en premier lieu. Flash n’est utilisé que pour le secours non HTML5. | Flash sur la plupart des ordinateurs de bureau. HTML5 est utilisé pour les mobiles et les tablettes. |
-| Diffusion | Progressive | Adaptative |
-| Suivi | Oui | Oui |
-| Evolutivité | Oui | Non |
-| Vidéo mobile | Oui | Oui |
+| Approche | Première approche HTML5. Flash n’est utilisé que pour la version de secours autre que HTML5. | Flash sur la plupart des ordinateurs de bureau. HTML5 est utilisé pour les appareils mobiles et les tablettes. |
+| Diffusion | Progressif | Diffusion en continu à débit adaptatif |
+| Tracking | Oui | Oui |
+| Extensibilité | Oui | Non |
+| Vidéo pour mobiles | Oui | Oui |
 
 ### Configuration {#setting-up}
 
@@ -155,21 +155,21 @@ Les différents codages vidéo sont créés selon les paramètres prédéfinis d
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
-1. Modifiez le nouveau profil vidéo. Sélectionnez tout d’abord la configuration de cloud. Puis, sélectionnez le même paramètre prédéfini de codage que celui sélectionné dans la configuration de cloud.
+1. Modifiez le nouveau profil vidéo. Sélectionnez d’abord la configuration cloud. Sélectionnez ensuite le même paramètre prédéfini de codage que celui sélectionné dans la configuration cloud.
 
    ![chlimage_1-367](assets/chlimage_1-367.png)
 
    | Propriété | Description |
    |---|---|
-   | Configuration de cloud Scene7 | Configuration cloud à utiliser pour les paramètres prédéfinis de codage. |
-   | Paramètre prédéfini de codage Scene7 | Paramètre prédéfini de codage à associer à ce profil vidéo. |
-   | Type de vidéo HTML5 | Cette propriété vous permet de définir la valeur de la propriété du type de l’élément source vidéo HTML5. Ces informations ne sont pas fournies par les paramètres prédéfinis de codage S7 mais requises pour effectuer correctement le rendu des vidéos en utilisant l’élément vidéo HTML5. Une liste des formats courants est fournie mais ils peuvent être remplacés par d’autres formats. |
+   | Configuration du cloud Scene7 | Configuration cloud à utiliser pour les paramètres prédéfinis de codage. |
+   | Paramètre prédéfini de codage de Scene7 | Paramètre prédéfini de codage avec lequel mapper ce profil vidéo. |
+   | Type vidéo HTML5 | Cette propriété vous permet de définir la valeur de la propriété du type de l’élément source vidéo HTML5. Ces informations ne sont pas fournies par les paramètres prédéfinis de codage S7, mais sont requises pour effectuer correctement le rendu des vidéos à l’aide de l’élément vidéo HTML5. Une liste des formats courants est fournie mais ils peuvent être remplacés par d’autres formats. |
 
    Répétez cette étape pour tous les paramètres prédéfinis de codage sélectionnés dans la configuration cloud que vous voulez utiliser dans le composant vidéo.
 
 #### Configuration de la conception {#configuring-design}
 
-Le composant **[!UICONTROL vidéo de base]** doit connaître les profils vidéo à utiliser afin de créer la liste des sources vidéo. Vous devez ouvrir la boîte de dialogue de conception des composants vidéo et configurer la conception des composants pour l’utilisation des nouveaux profils vidéo.
+La variable **[!UICONTROL Vidéo de base]** doit connaître les profils vidéo à utiliser pour créer la liste des sources vidéo. Vous devez ouvrir la boîte de dialogue de conception des composants vidéo et configurer la conception des composants pour l’utilisation des nouveaux profils vidéo.
 
 >[!NOTE]
 >
@@ -177,15 +177,15 @@ Le composant **[!UICONTROL vidéo de base]** doit connaître les profils vidéo 
 
 >[!NOTE]
 >
->Les modifications apportées à la conception requièrent l’activation de la conception afin qu’elles prennent effet lors de la publication.
+>Les modifications apportées à la conception nécessitent l’activation de la conception pour qu’elle prenne effet lors de la publication.
 
 1. Ouvrez la boîte de dialogue de conception des composants **[!UICONTROL vidéo de base]** et sélectionnez l’onglet **[!UICONTROL Profils]**. Supprimez ensuite les profils prêts à l’emploi et ajoutez les nouveaux profils vidéo S7. L’ordre de la liste des profils de la boîte de dialogue de conception définit également l’ordre des sources vidéo lors du rendu.
 1. Pour les navigateurs ne prenant pas en charge le HTML5, le composant vidéo permet de configurer Flash comme solution de secours. Ouvrez la boîte de dialogue de conception des composants vidéo et sélectionnez l’onglet **[!UICONTROL Flash]**. Configurez les paramètres du lecteur Flash et affectez un profil de secours au lecteur.
 
 #### Liste de contrôle {#checklist}
 
-1. Créer une configuration de cloud S7. Assurez-vous que les paramètres prédéfinis de codage vidéo sont définis et que l’importateur fonctionne.
-1. Créer un profil vidéo S7 pour chaque paramètre prédéfini de codage vidéo sélectionné dans la configuration de cloud.
+1. Créez une configuration de cloud S7. Assurez-vous que les paramètres prédéfinis de codage vidéo sont définis et que l’importateur fonctionne.
+1. Créez un profil vidéo S7 pour chaque paramètre prédéfini de codage vidéo sélectionné dans la configuration cloud.
 1. Les profils vidéo doivent être activés.
 1. Configurez la conception du composant **[!UICONTROL vidéo de base]** sur votre page.
 1. Activez la conception une fois que vous avez terminé les modifications sur cette dernière.

@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3572'
-ht-degree: 93%
+source-wordcount: '3570'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ Un package contient également les méta-informations du coffre, notamment les d
 
 >[!NOTE]
 >
->Les packages représentent la version actuelle du contenu au moment où le package est créé. Elles n’incluent aucune version précédente du contenu que AEM conserve dans le référentiel.
+>Les packages représentent la version actuelle du contenu au moment où le package est créé. Elles n’incluent aucune version précédente du contenu qu’AEM conserve dans le référentiel.
 
 ## Gestionnaire de packages {#package-manager}
 
@@ -203,7 +203,7 @@ Les filtres de package sont le plus souvent définis lors de la première [créa
 | URL | Adresse URL du fournisseur | `https://wknd.site` |
 | Lien | Lien spécifique au package vers une page de fournisseur | `https://wknd.site/package/` |
 | Requiert | Définit s’il existe des restrictions lors de l’installation du package. | **Administrateur** - Le package ne doit être installé qu’avec des privilèges Administrateur <br>**Redémarrage** - AEM doit être redémarré après l’installation du package |
-| Traitement AC | Indique comment les informations de contrôle d’accès définies dans le package sont traitées lors de son importation | **Ignorer** - Les listes ACL dans le référentiel sont conservées <br>**Remplacer** - Les listes ACL dans le référentiel sont remplacées <br>**Fusionner** - Les deux ensembles de listes ACL sont fusionnés <br>**FusionnerConserver** - Le contrôle dʼaccès dans le contenu est fusionné avec celui fourni avec le module en ajoutant les entrées de contrôle dʼaccès des principaux non présentes dans le contenu <br>**Effacer** - Les listes ACL sont effacées |
+| Traitement AC | Indique comment les informations de contrôle d’accès définies dans le package sont traitées lors de son importation | **Ignorer** - Les ACL dans le référentiel sont conservées <br>**Remplacer** - Les ACL dans le référentiel sont remplacées <br>**Fusionner** - Les deux ensembles de ACL sont fusionnés <br>**FusionnerConserver** - Le contrôle dʼaccès dans le contenu est fusionné avec celui fourni avec le module en ajoutant les entrées de contrôle dʼaccès des principaux non présentes dans le contenu <br>**Effacer** - Les ACL sont effacées |
 
 ### Captures d’écran des packages {#package-screenshots}
 
@@ -354,9 +354,9 @@ Les packages pouvant modifier le contenu existant, il est souvent utile de valid
 
 Le gestionnaire de packages peut effectuer les validations suivantes :
 
-* [Imports de modules OSGi](#osgi-package-imports)
+* [Importations de packages OSGi](#osgi-package-imports)
 * [Recouvrements](#overlays)
-* [Listes ACL](#acls)
+* [ACL](#acls)
 
 ##### Valider les importations de packages OSGi {#osgi-package-imports}
 
@@ -380,7 +380,7 @@ Pour résoudre des erreurs dues à des lots OSGi non satisfaits, il faut ajuster
 
 **Contenu vérifié**
 
-Cette validation détermine si le package en cours d’installation contient un fichier qui est déjà recouvert dans l’instance d’AEM de destination.
+Cette validation détermine si le package en cours d’installation contient un fichier qui est déjà recouvert dans l’instance AEM de destination.
 
 Par exemple, étant donné un recouvrement présent dans `/apps/sling/servlet/errorhandler/404.jsp`, un package contenant `/libs/sling/servlet/errorhandler/404.jsp`, il modifiera donc le fichier existant dans `/libs/sling/servlet/errorhandler/404.jsp`.
 
@@ -390,7 +390,7 @@ Ces recouvrements sont décrits dans le Journal d’activités du Gestionnaire d
 
 **États d’erreur**
 
-Un état d’erreur signifie que le package tente de déployer un fichier déjà recouvert. Par conséquent, les modifications du package seront remplacées (et donc &quot;masquées&quot;) par la superposition et ne prendront pas effet.
+Un état d’erreur signifie que le package tente de déployer un fichier déjà recouvert. Par conséquent, les modifications du package seront remplacées (et donc « masquées ») par le recouvrement et ne prendront pas effet.
 
 **Résolution d’erreurs**
 
@@ -400,7 +400,7 @@ Pour résoudre ce problème, le responsable du fichier de recouvrement dans `/ap
 >
 >Le mécanisme de validation ne peut pas vérifier si le contenu recouvert a été correctement incorporé dans le fichier recouvert. Par conséquent, cette validation continuera à signaler des conflits même après que les modifications nécessaires auront été apportées.
 
-##### Valider les listes ACL {#acls}
+##### Valider les ACL {#acls}
 
 **Contenu vérifié**
 
@@ -416,17 +416,17 @@ Aucune erreur explicite ne peut être fournie. La validation indique simplement 
 
 **Résolution d’erreurs**
 
-À l’aide des informations fournies par la validation, les noeuds concernés peuvent être examinés dans CRXDE et les listes de contrôle d’accès peuvent être ajustées dans le module, si nécessaire.
+À l’aide des informations fournies par la validation, les nœuds concernés peuvent être examinés dans CRXDE et les listes de contrôle d’accès peuvent être ajustées dans le package, le cas échéant.
 
 >[!CAUTION]
 >
->Il est recommandé de sʼassurer que les packages n’affectent pas les listes ACL fournies par AEM, car cela pourrait entraîner un comportement inattendu du produit.
+>Il est recommandé de sʼassurer que les packages n’affectent pas les ACL fournies par AEM, car cela pourrait entraîner un comportement inattendu du produit.
 
-#### Validation {#performing-validation}
+#### Exécuter la validation {#performing-validation}
 
-La validation des packages peut se faire de deux manières différentes :
+La validation des packages peut se faire de deux manières différentes :
 
-* [Via l’interface utilisateur du gestionnaire de modules](#via-package-manager)
+* [via l’interface utilisateur du gestionnaire de modules ;](#via-package-manager)
 * [via une requête HTTP POST, telle que cURL.](#via-post-request)
 
 La validation doit toujours avoir lieu après le chargement du package, mais avant son installation.
@@ -485,7 +485,7 @@ Le chargement d’un package ajoute uniquement le contenu du package au référe
 
 >[!CAUTION]
 >
->L’installation d’un package peut remplacer ou supprimer le contenu existant. Ne chargez un package que si vous êtes certain qu’il ne supprime pas ou ne remplace pas le contenu dont vous avez besoin.
+>L’installation d’un package peut remplacer ou supprimer le contenu existant. Ne chargez un package que si vous avez la certitude qu’il ne supprime pas ou ne remplace pas le contenu dont vous avez besoin.
 
 Avant l’installation de votre package, le Gestionnaire de packages crée automatiquement un package instantané qui contient le contenu qui sera remplacé. Cet instantané est réinstallé lorsque vous désinstallez le package.
 

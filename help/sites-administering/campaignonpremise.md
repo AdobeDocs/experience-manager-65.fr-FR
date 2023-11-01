@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1583'
+source-wordcount: '1581'
 ht-degree: 98%
 
 ---
@@ -124,7 +124,7 @@ Le package d’intégration crée automatiquement l’opérateur `aemserver` qu�
 
 ## Configurer l’intégration de Campaign dans AEM {#campaign-integration}
 
-AEM utilise [l’opérateur que vous avez déjà configuré dans Campaign](#create-operator) afin de communiquer avec Campaign.
+Utilisations AEM [l&#39;opérateur que vous avez déjà configuré dans Campaign.](#create-operator) pour communiquer avec Campaign
 
 1. Connectez-vous à votre instance de création AEM en tant qu’administrateur.
 

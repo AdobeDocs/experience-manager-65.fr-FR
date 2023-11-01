@@ -8,10 +8,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1224'
-ht-degree: 95%
+source-wordcount: '1222'
+ht-degree: 93%
 
 ---
 
@@ -107,7 +107,7 @@ Cette section présente uniquement les liens spécifiques à Adobe Campaign. Po
    >
    >Le **Nom de l’élément** doit être différent pour chaque champ de formulaire. Modifiez-le si nécessaire.
    >
-   >Chaque formulaire doit contenir un composant **Clé primaire chiffrée** afin de gérer correctement les destinataires dans la base de données Adobe Campaign.
+   >Chaque formulaire doit contenir un **Clé de Principal chiffrée** pour gérer correctement les destinataires dans la base de données Adobe Campaign.
 
 1. Activez la page en choisissant **Page** > **Activer la page** dans la boîte à outils. La page est activée sur votre site. Vous pouvez l’afficher en accédant à votre instance de publication AEM. Les données de la base de données d’Adobe Campaign sont mises à jour une fois qu’un formulaire est validé.
 

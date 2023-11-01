@@ -4,10 +4,10 @@ description: Installez, configurez et personnalisez un package de démonstration
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '4626'
-ht-degree: 68%
+source-wordcount: '4622'
+ht-degree: 67%
 
 ---
 
@@ -370,7 +370,7 @@ Ce package est préconfiguré pour se connecter à Adobe Analytics. Les étapes 
 
 #### Localisation d’informations d’identification utilisateur Adobe Analytics {#analytics-locating-user-credentials}
 
-Pour localiser les informations d’identification de l’utilisateur pour un compte Adobe Analytics que l’administrateur du compte doit exécuter les tâches suivantes.
+Pour localiser les informations d’identification d’utilisateur d’un compte Adobe Analytics que l’administrateur du compte doit exécuter les tâches suivantes.
 
 1. Accédez au portail Adobe Experience Cloud.
    * Se connecter avec des informations d’identification d’administrateur
@@ -417,7 +417,7 @@ Les administrateurs peuvent accorder aux utilisateurs des autorisations AEM Anal
 
 >[!NOTE]
 >
-Les données AEM Forms Analytics sont disponibles hors ligne ou sans configuration Adobe Analytics Cloud si la variable `we-gov-forms.ui.analytics-<version>.zip` est installé, mais les données AEM Sites nécessitent une configuration cloud principale.
+Les données AEM Forms Analytics sont disponibles hors ligne ou sans configuration Adobe Analytics Cloud si la variable `we-gov-forms.ui.analytics-<version>.zip` est installé, mais les données AEM Sites nécessitent une configuration cloud active.
 
 1. Accédez à *https://&lt;aemserver>:&lt;port>/sites.html/content*
 1. Sélectionnez le « Site We.Gov d’AEM Forms » pour afficher les pages du site.
@@ -446,7 +446,7 @@ Les données AEM Forms Analytics sont disponibles hors ligne ou sans configurati
 
 >[!NOTE]
 >
-Les données AEM Forms Analytics sont disponibles hors ligne ou sans configuration Adobe Analytics Cloud si la variable `we-gov-forms.ui.analytics-<version>.zip` est installé, mais les données AEM Sites nécessitent une configuration cloud principale.
+Les données AEM Forms Analytics sont disponibles hors ligne ou sans configuration Adobe Analytics Cloud si la variable `we-gov-forms.ui.analytics-<version>.zip` est installé, mais les données AEM Sites nécessitent une configuration cloud active.
 
 1. Accédez à
 
@@ -472,11 +472,11 @@ Pour installer et configurer AEM Forms avec Adobe Forms, les utilisateurs de l�
 
 Consultez les informations suivantes avant de lire d’autres instructions :
 
-* [Configurer le service de conversion automatisée de formulaires](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
+* [Configurer le service de conversion automatisée de formulaires](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=fr)
 
 #### Créer une configuration IMS - Partie 1 {#creating-ims-config}
 
-Pour configurer le service afin qu’il communique correctement avec l’outil de conversion de formulaires, les utilisateurs doivent configurer le service Identity Management System (IMS) pour pouvoir s’enregistrer auprès d’Adobe I/O.
+Pour configurer le service afin qu’il communique correctement avec l’outil de conversion de formulaires, les utilisateurs doivent configurer le service Identity Management System (IMS) pour pouvoir s’enregistrer auprès d’Adobe I/O.
 
 1. Accédez à https://&lt;serveur_AEM>:&lt;port> > Cliquez sur Adobe Experience 
 Manager en haut à gauche > Outils > Sécurité > Configuration Adobe IMS.
@@ -497,7 +497,7 @@ Le certificat créé dans cette section va être servir à créer le service d�
 
 #### Créer une intégration dans Adobe I/O {#create-integration-adobeio}
 
-Assurez-vous que vous avez la possibilité de créer une intégration dans votre domaine Adobe sans avoir à contacter votre administrateur système.
+Assurez-vous que vous avez la possibilité de créer une intégration dans votre domaine d’Adobe si vous ne contactez pas votre administrateur système pour ce faire.
 
 1. Accédez à la [console Adobe I/O](https://developer.adobe.com/console/).
 
@@ -549,7 +549,7 @@ Une fois la configuration IMS terminée, vous pouvez passer en revue la configur
 
 1. Ouvrez votre navigateur et accédez à l’URL système https://&lt;nom_domaine>:&lt;port_système>.
 
-1. Cliquez sur Adobe Experience Manager dans le coin supérieur gauche de l’écran > Outils > Cloud Services > Configuration de la conversation Forms automatisée.
+1. Cliquez sur Adobe Experience Manager dans le coin supérieur gauche de l’écran > Outils > Cloud Service > Configuration de la conversation Forms automatisée.
 
 1. Sélectionnez le dossier de configuration dans lequel vous souhaitez placer la configuration.
 
@@ -579,7 +579,7 @@ Une fois la configuration IMS terminée, nous pouvons procéder à la création 
 
 1. Ouvrez votre navigateur et accédez à l’URL système https://&lt;nom_domaine>:&lt;port_système>.
 
-1. Cliquez sur Adobe Experience Manager dans le coin supérieur gauche de l’écran > Outils > Cloud Services > Configuration de la conversation Forms automatisée.
+1. Cliquez sur Adobe Experience Manager dans le coin supérieur gauche de l’écran > Outils > Cloud Service > Configuration de la conversation Forms automatisée.
 
 1. Sélectionnez le dossier de configuration dans lequel vous souhaitez placer la configuration.
 
@@ -693,7 +693,7 @@ Voir Modifier le contenu d’un formulaire pour plus d’informations :
 
 Toutes les pages du site sont disponibles à l’adresse : *https://&lt;aemserver>:&lt;port>/sites.html/content/we-gov*.
 
-Ces pages de site utilisent également le package AEM Grid pour contrôler la mise en page de quelques composants.
+Ces pages de site utilisent également le package AEM Grid pour contrôler la disposition de quelques composants.
 
 #### Système de style {#style-system}
 

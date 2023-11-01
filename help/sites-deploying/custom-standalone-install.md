@@ -6,10 +6,10 @@ seo-description: Learn about the options available when installing a standalone 
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1620'
-ht-degree: 57%
+source-wordcount: '1616'
+ht-degree: 55%
 
 ---
 
@@ -47,13 +47,13 @@ Les différentes règles suivantes s’appliquent lorsque vous renommez le fichi
 
 Si vous exécutez Oracle Java 11 (ou en général les versions de Java ultérieures à la version 8), des modifications supplémentaires doivent être ajoutées à votre ligne de commande lors du démarrage d’AEM.
 
-* Les commutateurs -`-add-opens` suivants doivent être ajoutés pour éviter les messages d’avertissement relatifs à l’accès à la réflexion dans `stdout.log`.
+* Les éléments suivants : `-add-opens` des commutateurs doivent être ajoutés pour empêcher les messages d’avertissement relatifs à l’accès aux réflexions dans la variable `stdout.log`
 
 ```shell
 --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-* Vous devez également utiliser le commutateur `-XX:+UseParallelGC` afin de limiter tous les problèmes de performance potentiels.
+* En outre, vous devez utiliser la variable `-XX:+UseParallelGC` basculez pour atténuer tout problème de performances potentiel.
 
 Voici à quoi doivent ressembler les paramètres supplémentaires JVM au démarrage d’AEM sur Java 11 :
 

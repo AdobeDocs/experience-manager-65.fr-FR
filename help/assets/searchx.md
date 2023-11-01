@@ -5,10 +5,10 @@ contentOwner: AG
 role: Developer
 feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
-workflow-type: ht
-source-wordcount: '825'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '823'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ Vous pouvez ajouter des onglets de recherche supplémentaires en les configurant
 
    >[!NOTE]
    >
-   >Lorsque vous créez un second nœud `siteadminsearchpanel`, assurez-vous de définir une propriété `id` afin d’éviter tout conflit de formulaire.
+   >Lorsque vous créez une seconde `siteadminsearchpanel`, veillez à définir une `id` pour éviter les conflits de formulaire.
 
 ## Création de prédicats personnalisés {#creating-custom-predicates}
 

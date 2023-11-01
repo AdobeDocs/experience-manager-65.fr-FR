@@ -11,18 +11,18 @@ content-type: reference
 discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1659'
-ht-degree: 87%
+source-wordcount: '1653'
+ht-degree: 94%
 
 ---
 
 # Présentation de l’éditeur de SPA{#spa-editor-overview}
 
-Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Les développeurs souhaitent pouvoir créer des sites à l’aide de structures SPA et les auteurs souhaitent modifier facilement du contenu dans AEM pour un site créé à l’aide de ces structures.
+Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Les développeurs et développeuses souhaitent pouvoir créer des sites avec des frameworks SPA. Les auteurs et autrices, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de tels frameworks.
 
-L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cette page donne une vue d’ensemble de la structure de la prise en charge SPA dans AEM, du fonctionnement de l’Éditeur d’Adobe, ainsi que de la manière dont la structure de  et l’ se synchronisent.
+L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cette page donne une vue d’ensemble de la structure de la prise en charge SPA dans AEM, du fonctionnement de l’éditeur de SPA et de la synchronisation entre le framework SPA et AEM.
 
 >[!NOTE]
 >
@@ -36,18 +36,18 @@ Pour activer la modification d’applications sur une seule page dans AEM, il fa
 
 La prise en charge des applications sur une seule page dans AEM s’accompagne d’une fine couche JS qui interagit avec le code JS de l’application lorsqu’elle est chargée dans l’éditeur de pages avec lequel des événements peuvent être envoyés. L’emplacement des commandes d’édition peut être activé pour permettre une modification en contexte. Cette fonction repose sur le concept de point d’entrée de l’API Content Services, étant donné que le contenu de l’application sur une seule page doit être chargé par le biais de Content Services.
 
-Pour plus d’informations sur SPA dans AEM, consultez les documents suivants :
+Pour plus d’informations sur les applications monopages (SPA) dans AEM, consultez les documents suivants :
 
 * [Plan directeur d’applications sur une seule page (SPA)](/help/sites-developing/spa-blueprint.md) pour connaître les exigences techniques d’une SPA
 * [Prise en main des SPA dans AEM](/help/sites-developing/spa-getting-started-react.md) pour une présentation rapide d’une SPA simple
 
 ## Conception {#design}
 
-Le composant de page d’une application sur une seule page ne fournit pas les composants HTML de ses composants enfants via le fichier HTL ou JSP. Cette opération est déléguée à la structure SPA. La représentation du modèle ou des composants enfants est récupérée en tant que structure de données JSON à partir du JCR. Les composants SPA sont ensuite ajoutés à la page en fonction de cette structure. Ce comportement différencie la composition initiale du corps du composant de page de ses équivalents non SPA.
+Le composant de page d’une application sur une seule page ne fournit pas les composants HTML de ses composants enfants via le fichier HTL ou JSP. Cette opération est déléguée à la structure SPA. La représentation du modèle ou des composants enfants est récupérée en tant que structure de données JSON à partir du JCR. Les composants de SPA sont ensuite ajoutés à la page en fonction de cette structure. Ce comportement différencie la composition initiale du corps du composant de page de ses équivalents non SPA.
 
 ### Gestion du modèle de page {#page-model-management}
 
-La résolution et la gestion du modèle de page sont déléguées à une bibliothèque `PageModel` fournie à cet effet. La SPA doit utiliser la bibliothèque de modèle de page pour pouvoir être initialisée et créée par l’éditeur de SPA. La bibliothèque de modèle de page est fournie indirectement au composant de page AEM via le npm `aem-react-editable-components`. Le modèle de page est un interpréteur entre AEM et la SPA. Il doit donc être toujours présent. Lorsque la page est créée, une bibliothèque supplémentaire `cq.authoring.pagemodel.messaging` doit être ajoutée afin de permettre la communication avec l’éditeur de page.
+La résolution et la gestion du modèle de page sont déléguées à une bibliothèque `PageModel` fournie à cet effet. Le SPA doit utiliser la bibliothèque de modèle de page pour être initialisé et créé par l’éditeur SPA. La bibliothèque de modèle de page est fournie indirectement au composant de page AEM via le npm `aem-react-editable-components`. Le modèle de page est un interpréteur entre AEM et la SPA. Il doit donc être toujours présent. Lorsque la page est créée, une bibliothèque supplémentaire `cq.authoring.pagemodel.messaging` doit être ajouté pour activer la communication avec l’éditeur de page.
 
 Si le composant de page SPA hérite du composant principal de la page, deux options sont possibles pour faire en sorte que la catégorie de la bibliothèque cliente `cq.authoring.pagemodel.messaging` soit disponible :
 
@@ -64,7 +64,7 @@ rendu. Le modèle, représenté sous la forme JSON, est ensuite rendu à l’aid
 
 ### Type de données de communication {#communication-data-type}
 
-Lorsque la catégorie `cq.authoring.pagemodel.messaging` est ajoutée à la page, elle envoie un message à l’éditeur de page afin de créer un type de données de communication JSON. Lorsque le type de données de communication est défini sur JSON, les demandes de GET communiquent avec les points d’extrémité du modèle Sling d’un composant. À la suite d’une mise à jour dans l’éditeur de page, la représentation JSON du composant mis à jour est envoyée à la bibliothèque modèle de page. Celle-ci informe ensuite l’application sur une seule page des mises à jour.
+Lorsque la catégorie `cq.authoring.pagemodel.messaging` est ajoutée à la page, elle envoie un message à l’éditeur de page afin de créer un type de données de communication JSON. Lorsque le type de données de communication est défini sur JSON, les requêtes GET communiquent avec les points d’entrée du modèle Sling d’un composant. À la suite d’une mise à jour dans l’éditeur de page, la représentation JSON du composant mis à jour est envoyée à la bibliothèque modèle de page. Celle-ci informe ensuite l’application sur une seule page des mises à jour.
 
 ![screen_shot_2018-08-20at143628](assets/screen_shot_2018-08-20at143628.png)
 
@@ -72,7 +72,7 @@ Lorsque la catégorie `cq.authoring.pagemodel.messaging` est ajoutée à la page
 
 Pour vous représenter le flux de l’interaction entre une SPA et AEM, vous pouvez considérer l’éditeur de SPA comme un intermédiaire entre les deux.
 
-* La communication entre l’éditeur de page et le SPA est effectuée à l’aide de JSON au lieu de HTML.
+* La communication entre l’éditeur de page et la SPA est effectuée à l’aide de JSON au lieu de HTML.
 * L’éditeur de page fournit la dernière version du modèle de page à l’application sur une seule page par le biais de l’API de messagerie et de l’iFrame.
 * Le gestionnaire de modèles de page informe l’éditeur qu’il est prêt à être modifié et transmet le modèle de page sous la forme d’une structure JSON.
 * L’éditeur ne modifie pas la structure DOM de la page en cours de création ; en fait, il n’y accède même pas. Au lieu de cela, il fournit le modèle de page le plus récent.
@@ -172,7 +172,7 @@ Les versions précédentes de ces frameworks peuvent fonctionner avec le SDK de 
 
 ### Autres frameworks {#additional-frameworks}
 
-Il est possible de mettre en œuvre des frameworks SPA pour utiliser le SDK de l’éditeur de SPA d’AEM. Consultez le document [Plan directeur d’applications sur une seule page (SPA)](/help/sites-developing/spa-blueprint.md) pour connaître les exigences qu’un framework doit satisfaire afin de créer une couche spécifique composée des modules, composants et services nécessaires avec l’éditeur de SPA d’AEM.
+Il est possible de mettre en œuvre des frameworks SPA pour utiliser le SDK de l’éditeur de SPA d’AEM. Veuillez consulter la [Blueprint SPA](/help/sites-developing/spa-blueprint.md) document pour connaître les exigences qu’une structure doit satisfaire pour créer une couche spécifique à une structure composée de modules, de composants et de services à utiliser avec l’éditeur SPA d’AEM.
 
 ### Utilisation de plusieurs sélecteurs {#multiple-selectors}
 

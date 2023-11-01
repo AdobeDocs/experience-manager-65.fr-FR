@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3333'
-ht-degree: 45%
+source-wordcount: '3329'
+ht-degree: 44%
 
 ---
 
@@ -355,7 +355,7 @@ Avant de pouvoir importer votre conception de page d’entrée, vous devez crée
 
 >[!NOTE]
 >
->Par défaut, une page d’importateur ne peut être créée que sous les campagnes. Vous pouvez toutefois superposer ce modèle afin de créer une page de destination sous `/content/mysite`.
+>Par défaut, une page d’importateur peut uniquement être créée sous des campagnes, mais vous pouvez également superposer ce modèle pour créer une page d’entrée sous `/content/mysite`.
 
 Pour créer une landing page :
 
@@ -389,7 +389,7 @@ En supposant que le module de conception soit prêt, les étapes suivantes décr
 
 >[!NOTE]
 >
->Lors de lʼimportation, le balisage est nettoyé pour des raisons de sécurité et afin dʼéviter lʼimportation et la publication de balisage non valide. Cela suppose que les balises HTML uniquement et que toutes les autres formes d’éléments tels que les SVG en ligne ou les composants web soient filtrées.
+>Lors de l’importation, les balises sont assainies pour des raisons de sécurité et pour éviter d’importer et de publier des balises non valides. Cela suppose que les balises HTML uniquement et que toutes les autres formes d’éléments tels que les SVG en ligne ou les composants web soient filtrées.
 
 >[!NOTE]
 >

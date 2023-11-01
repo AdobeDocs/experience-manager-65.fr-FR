@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 role: Developer
 exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '2904'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '2902'
+ht-degree: 99%
 
 ---
 
@@ -176,7 +176,7 @@ Après avoir déterminé si un formulaire contient des pièces jointes, vous pou
 
 >[!NOTE]
 >
->Le formulaire doit être envoyé en tant que données PDF pour récupérer les pièces jointes. Si le formulaire est envoyé en tant que données XML, les pièces jointes ne sont pas envoyées.
+>Le formulaire doit être envoyé en tant que données de PDF pour récupérer les pièces jointes. Si le formulaire est envoyé en tant que données XML, les pièces jointes ne sont pas envoyées.
 
 **Traiter les données envoyées**
 
@@ -223,11 +223,9 @@ Gérez un formulaire envoyé à l’aide de l’API Forms (Java) :
       * Valeur de chaîne spécifiant la valeur d’en-tête `HTTP_USER_AGENT`, par exemple `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Cette valeur de paramètre est facultative.
       * Objet `RenderOptionsSpec` stockant les options d’exécution.
 
-      La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
+     La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
 
    * Déterminez si le service Forms a terminé le traitement des données de formulaire en appelant la méthode `getAction` de l’objet `FormsResult`. Si cette méthode renvoie la valeur `0`, les données sont prêtes à être traitées.
-
-
 
 1. Déterminer si le formulaire envoyé contient des pièces jointes
 
@@ -248,12 +246,12 @@ Gérez un formulaire envoyé à l’aide de l’API Forms (Java) :
       * Créez un objet `org.w3c.dom.DocumentBuilder` en appelant la méthode `newDocumentBuilder` de l’objet `org.w3c.dom.DocumentBuilderFactory`.
       * Créez un objet `org.w3c.dom.Document` en appelant la méthode `parse` de l’objet `org.w3c.dom.DocumentBuilder` et en transmettant l’objet `java.io.InputStream`.
       * Récupérez la valeur de chaque nœud dans le document XML. Une façon d’accomplir cette tâche est de créer une méthode personnalisée qui accepte deux paramètres : l’objet `org.w3c.dom.Document` et le nom du nœud dont vous souhaitez récupérer la valeur. Cette méthode renvoie une valeur de chaîne représentant la valeur du nœud. Dans l’exemple de code qui suit ce processus, cette méthode personnalisée est appelée `getNodeText`. Le corps de cette méthode est affiché.
+
    * Si le type de contenu des données est `application/pdf`, créez une logique d’application pour enregistrer les données PDF envoyées sous forme de fichier PDF.
 
       * Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
       * Créez un objet `java.io.File` en utilisant son constructeur public. Veillez à spécifier PDF comme extension de nom du fichier.
       * Renseignez le fichier PDF en appelant la méthode `copyToFile` de l’objet `com.adobe.idp.Document` et en transmettant l’objet `java.io.File`.
-
 
 **Voir également**
 
@@ -303,10 +301,9 @@ Gérez un formulaire envoyé en utilisant l’API des formulaires (service Web)�
       * Un objet `MyArrayOf_xsd_anyTypeHolder` vide qui est renseigné par la méthode. Ce paramètre est utilisé pour stocker les pièces jointes envoyées avec le formulaire.
       * Un objet `FormsResultHolder` vide qui est renseigné par la méthode avec le formulaire envoyé.
 
-      La méthode `processFormSubmission` renseigne le paramètre `FormsResultHolder` avec les résultats de l’envoi du formulaire.
+     La méthode `processFormSubmission` renseigne le paramètre `FormsResultHolder` avec les résultats de l’envoi du formulaire.
 
    * Déterminez si le service Forms a fini de traiter les données du formulaire en appelant la méthode `getAction` de l’objet `FormsResult`. Si cette méthode renvoie la valeur `0`, les données du formulaire sont prêtes à être traitées. Vous pouvez obtenir un objet `FormsResult` en récupérant la valeur du membre de données `value` de l’objet `FormsResultHolder`.
-
 
 1. Déterminer si le formulaire envoyé contient des pièces jointes
 
@@ -323,6 +320,7 @@ Gérez un formulaire envoyé en utilisant l’API des formulaires (service Web)�
       * Créez un objet `org.w3c.dom.DocumentBuilder` en appelant la méthode `newDocumentBuilder` de l’objet `org.w3c.dom.DocumentBuilderFactory`.
       * Créez un objet `org.w3c.dom.Document` en appelant la méthode `parse` de l’objet `org.w3c.dom.DocumentBuilder` et en transmettant l’objet `java.io.InputStream`.
       * Récupérez la valeur de chaque nœud dans le document XML. Une façon d’accomplir cette tâche est de créer une méthode personnalisée qui accepte deux paramètres : l’objet `org.w3c.dom.Document` et le nom du nœud dont vous souhaitez récupérer la valeur. Cette méthode renvoie une valeur de chaîne représentant la valeur du nœud. Dans l’exemple de code qui suit ce processus, cette méthode personnalisée est appelée `getNodeText`. Le corps de cette méthode est affiché.
+
    * Si le type de contenu des données est `application/pdf`, créez une logique d’application pour enregistrer les données PDF envoyées sous forme de fichier PDF.
 
       * Créez un objet `BLOB` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
@@ -330,7 +328,6 @@ Gérez un formulaire envoyé en utilisant l’API des formulaires (service Web)�
       * Créez un objet `java.io.File` en utilisant son constructeur public. Veillez à spécifier PDF comme extension de nom du fichier.
       * Créez un objet `java.io.FileOutputStream` en utilisant son constructeur et en transmettant l’objet `java.io.File`. 
       * Renseignez le fichier PDF en appelant la méthode `write` de l’objet `java.io.FileOutputStream` et en transmettant le tableau d’octets.
-
 
 **Voir également**
 

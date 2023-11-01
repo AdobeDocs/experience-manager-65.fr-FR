@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '10243'
+source-wordcount: '10239'
 ht-degree: 23%
 
 ---
@@ -72,7 +72,7 @@ Hauteur : minimum = 450 ; maximum = 800
 
 Votre environnement d’AEM forms contient un ou plusieurs utilisateurs administrateurs disposant des privilèges appropriés pour créer des utilisateurs et des groupes. Si votre entreprise utilise Document Security, au moins un administrateur doit également disposer du droit de gestion des utilisateurs invités et locaux.
 
-Les administrateurs doivent également disposer du rôle Utilisateur dans la console d’administration pour accéder à Administration Console. (Voir [Création et configuration des rôles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
+Les administrateurs doivent également disposer du rôle Utilisateur dans la console d’administration pour accéder à la console d’administration. (Voir [Création et configuration des rôles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
 
 ### Configuration des utilisateurs et des groupes visibles {#configuring-visible-users-and-groups}
 
@@ -296,7 +296,7 @@ Vous pouvez activer et désactiver le contrôle des événements et spécifier l
 
 **Politique supprimée :** un éditeur supprime une politique d’un document pour retirer les protections de sécurité.
 
-**Modifier l’URL de révocation du document :** un appel au niveau de l’API modifie une URL de révocation spécifiée pour accéder à un nouveau document qui remplace un document révoqué.
+**Modifier l’URL de révocation du document :** Un appel au niveau de l’API modifie l’URL de révocation spécifiée pour accéder à un nouveau document qui remplace un document révoqué.
 
 **Modifier le document :** un destinataire modifie le contenu d’un document protégé par une politique.
 
@@ -326,7 +326,7 @@ Vous pouvez activer et désactiver le contrôle des événements et spécifier l
 
 **Evénements d’utilisateur**
 
-**Utilisateur supprimé :** un administrateur supprime un compte utilisateur.
+**Utilisateur supprimé** : un administrateur ou une administratrice supprime un compte d’utilisateur.
 
 **Enregistrer un utilisateur invité :** un utilisateur externe s’enregistre auprès de la Sécurité des documents.
 
@@ -340,7 +340,7 @@ Vous pouvez activer et désactiver le contrôle des événements et spécifier l
 
 **Echec de l’ouverture de session :** échec des tentatives d’ouverture de session par des administrateurs ou des utilisateurs.
 
-**Utilisateurs désactivés :** un administrateur supprime un compte utilisateur local.
+**Utilisateurs désactivés** : un administrateur ou une administratrice supprime un compte d’utilisateur local.
 
 **Mise à jour du profil :** des utilisateurs invités modifient leur nom, le nom de leur entreprise et leur mot de passe.
 

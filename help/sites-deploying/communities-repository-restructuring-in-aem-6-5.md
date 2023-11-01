@@ -1,19 +1,15 @@
 ---
 title: Restructurer les référentiels pour AEM Communities dans la version 6.4
-seo-title: Repository Restructuring for AEM Communities in 6.4
-description: Découvrez comment apporter les modifications nécessaires pour migrer vers la nouvelle structure de référentiel dans AEM 6.4 pour Communities.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for Communities.
-uuid: d161655f-4074-44a7-8d69-38e80934c58b
+description: Découvrez comment apporter les modifications nécessaires pour migrer vers la nouvelle structure de référentiel dans AEM 6.4 pour Communities.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 7383265b-0ed4-4ea7-b741-0a417d187bdd
 feature: Upgrading
 exl-id: 4d2bdd45-a29a-4936-b8da-f7e011d81e83
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1011'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '1009'
+ht-degree: 83%
 
 ---
 
@@ -125,9 +121,9 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Une migration manuelle est requise.</p> <p>Si votre instance a personnalisé les règles de badge/score, aucune méthode automatisée ne permet de placer toutes les règles dans un compartiment. Vous avez besoin d’informations de la part du client pour savoir quel compartiment de configuration (global ou spécifique à un site) vous souhaitez utiliser pour votre site.</p> <p>Aucune interface utilisateur n’est disponible pour configurer les badges et les scores d’un site.</p> <p>Pour vous aligner sur la nouvelle structure de référentiel :</p>
+   <td><p>La migration manuelle est requise.</p> <p>Si votre instance a personnalisé les règles de badge/score, aucune méthode automatisée ne permet de placer toutes les règles dans un compartiment. Vous avez besoin d’entrées de clients sur le compartiment conf (global ou spécifique au site) que vous souhaitez utiliser pour votre site.</p> <p>Aucune interface utilisateur n’est disponible pour configurer le badge et la notation d’un site.</p> <p>Pour vous aligner sur la nouvelle structure de référentiel :</p>
     <ol>
-     <li>Créez un compartiment contextuel de site à l’aide de l’<strong>explorateur de configuration</strong> sous <strong>Outils</strong></li>
+     <li>Créez un compartiment contextuel de site à l’aide de la variable <strong>Explorateur de configuration</strong> under <strong>Outils</strong></li>
      <li>Accédez à la racine du site</li>
      <li>Définissez <code>cq:confproperty</code> sur le chemin du compartiment où vous souhaitez stocker tous vos paramètres. Le même résultat peut être obtenu par le biais de l’<strong>assistant de modification - Définir l’entrée de configuration du cloud</strong>.</li>
      <li>Déplacez les règles de badge et de score appropriées depuis <code>/etc/community/*</code> vers le compartiment contextuel de site créé à l’étape précédente.</li>
@@ -183,11 +179,11 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Toute nouvelle configuration de cloud Facebook doit faire l’objet d’une migration vers le nouvel emplacement.</p>
+   <td><p>Toute nouvelle configuration de cloud Facebook doit être migrée vers le nouvel emplacement.</p>
     <ol>
      <li>Migrez les configurations existantes de l’emplacement précédent vers le nouvel emplacement.
       <ol>
-       <li>Recréez manuellement les nouvelles configurations des connexions au réseau social Facebook via l’interface utilisateur de création AEM dans <strong>Outils &gt; Services cloud &gt; Configuration de la connexion au réseau social Facebook</strong>.<br /> ou <br /> </li>
+       <li>Recréez manuellement de nouvelles configurations de connexion au réseau social Facebook via l’interface utilisateur de création d’AEM à l’adresse <strong>Outils &gt; Cloud Service &gt; Configuration de la connexion au réseau social Facebook</strong>.<br /> ou <br /> </li>
        <li>Copiez toute nouvelle configuration de cloud Facebook depuis l’emplacement précédent dans le nouvel emplacement approprié, sous <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
      <li>Mettez à jour n’importe quelle racine de site AEM Communities pour faire référence à la nouvelle configuration de connexion au réseau social Facebook en définissant la propriété <code>[cq:Page]/jcr:content@cq:conf</code> sur le chemin absolu dans le nouvel emplacement.</li>
@@ -239,7 +235,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Toute nouvelle configuration de cloud Pinterest doit faire l’objet d’une migration vers le nouvel emplacement.</p>
+   <td><p>Toute nouvelle configuration de cloud Pinterest doit être migrée vers le nouvel emplacement.</p>
     <ol>
      <li>Migrez les configurations existantes de l’emplacement précédent vers le nouvel emplacement.
       <ol>
@@ -305,7 +301,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Toute nouvelle configuration de cloud Twitter doit faire l’objet d’une migration vers le nouvel emplacement.</p>
+   <td><p>Toute nouvelle configuration de cloud de Twitter doit être migrée vers le nouvel emplacement.</p>
     <ol>
      <li>Migrez les configurations existantes de l’emplacement précédent vers le nouvel emplacement.
       <ol>
@@ -337,7 +333,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Adobe a fourni un utilitaire de migration à l’adresse suivante :</p> <p><a href="https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration">https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration</a></p> </td>
+   <td><p>Adobe a fourni un utilitaire de migration à l’adresse suivante :</p> <p><a href="https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration">https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration</a></p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>

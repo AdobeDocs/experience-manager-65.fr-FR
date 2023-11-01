@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 1e6cc554-aef1-463c-906b-634b80a27917
 role: Developer
 exl-id: 966c3554-25df-4467-866e-11c43cc15b58
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '2356'
+ht-degree: 99%
 
 ---
 
@@ -238,7 +238,7 @@ Avant d’effectuer une opération DocConverter par programmation, vous devez cr
 
 **Référencer un document PDF utilisé pour déterminer la conformité au format PDF/A**
 
-Un document PDF doit être référencé et transmis au service DocConverter afin de déterminer si le document PDF est conforme au format PDF/A.
+Un document de PDF doit être référencé et transmis au service DocConverter pour déterminer si le document de PDF est compatible avec le PDF/A.
 
 **Définir des options d’exécution**
 

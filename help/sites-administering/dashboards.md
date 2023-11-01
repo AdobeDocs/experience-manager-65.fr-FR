@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 55%
+source-wordcount: '837'
+ht-degree: 53%
 
 ---
 
@@ -31,7 +31,7 @@ Lorsque vous utilisez AEM, vous pouvez gérer de nombreux contenus de différent
 
 ## Administration des tableaux de bord {#administering-dashboards}
 
-### Création D’Un Tableau De Bord {#creating-a-dashboard}
+### Créer Un Tableau De Bord {#creating-a-dashboard}
 
 Pour créer un tableau de bord, procédez comme suit :
 
@@ -80,13 +80,13 @@ Chaque composant de création de rapports comporte au moins trois onglets :
 * **De base**: contient la configuration principale.
 
 * **Rapport :** contient la configuration propre à chaque rapport.
-* **Style**: contient une configuration de style, telle que la taille du graphique et la marge.
+* **Style**: contient la configuration de style, telle que la taille et la marge du graphique.
 
 Les composants de création de rapports sont initialisés avec une configuration par défaut qui vous permet de configurer rapidement votre tableau de bord.
 
 #### Configuration de base {#basic-configuration}
 
-Le **De base** donne accès aux entrées de configuration suivantes :
+La variable **De base** donne accès aux entrées de configuration suivantes :
 
 **Titre** - Titre affiché sur le tableau de bord.
 
@@ -98,7 +98,7 @@ Le **De base** donne accès aux entrées de configuration suivantes :
 
 #### Configuration des rapports {#report-configuration}
 
-Pour pouvoir afficher des statistiques web, vous devez définir la plage de dates des données à récupérer. Le **Rapport** fournit deux champs pour définir cette plage.
+Pour afficher les statistiques web, vous devez définir la période des données à récupérer. La variable **Rapport** fournit deux champs pour définir cette plage.
 
 >[!NOTE]
 >
@@ -164,7 +164,7 @@ Les tableaux de bord sont des pages normales (`cq:Page`). N’importe quel compo
 
 Un groupe de composants par défaut, `Dashboard`, contient les composants de génération de rapports d’analyse activés par défaut sur le modèle.
 
-### Création D’Un Modèle De Tableau De Bord {#creating-a-dashboard-template}
+### Créer Un Modèle De Tableau De Bord {#creating-a-dashboard-template}
 
 Un modèle définit le contenu par défaut d’un nouveau tableau de bord. Vous pouvez utiliser plusieurs modèles pour créer différents types de tableaux de bord.
 

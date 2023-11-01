@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1916'
 ht-degree: 1%
 
 ---
 
 # Gestion des utilisateurs et des groupes d’utilisateurs {#managing-users-and-user-groups}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Dans AEM Communities, dans l’environnement de publication, les utilisateurs peuvent s’inscrire eux-mêmes et modifier leurs profils. Avec les autorisations appropriées, ils peuvent également :
 
@@ -42,7 +42,7 @@ Pour un [batterie de publication](topologies.md), l’enregistrement et les modi
 
 ### Limites de contribution {#contribution-limits}
 
-Afin de se protéger du spam, il est possible de limiter la fréquence de publication du contenu par les membres. En outre, il est possible de limiter automatiquement les contributions des membres nouvellement enregistrés.
+Pour se protéger du spam, il est possible de limiter la fréquence de publication du contenu par les membres. En outre, il est possible de limiter automatiquement les contributions des membres nouvellement enregistrés.
 
 Pour plus d’informations, voir [Limites des contributions des membres](limits.md).
 
@@ -54,25 +54,25 @@ Les noms des groupes sont générés à partir du nom donné au site pendant la 
 
 Par exemple, si le nom du site était &quot;*engager*&quot; pour un site intitulé &quot;We.Retail Engage&quot;, l’un des groupes d’utilisateurs créés serait :
 
-* Communauté *Engage* Membres
+* Communauté *Interagir* Membres
 
 ## Environnement de création {#author-environment}
 
 ### Service Tunnel {#tunnel-service}
 
-Lors de l’utilisation de l’environnement de création dans [créer des sites ;](sites-console.md), [modification des propriétés du site](sites-console.md#modifying-site-properties) et [gestion des membres de la communauté et des groupes de membres](members.md), il est nécessaire d’accéder aux utilisateurs et aux groupes d’utilisateurs enregistrés dans l’environnement de publication.
+Lorsque vous utilisez l’environnement de création pour [créer des sites ;](sites-console.md), [modification des propriétés du site](sites-console.md#modifying-site-properties) et [gestion des membres de la communauté et des groupes de membres](members.md), il est nécessaire d’accéder aux utilisateurs et aux groupes d’utilisateurs enregistrés dans l’environnement de publication.
 
 Le service tunnel fournit cet accès à l’aide de l’agent de réplication sur l’auteur.
 
 * Pour plus d’informations, voir [instructions de configuration](deploy-communities.md#tunnel-service-on-author) sur la page de déploiement.
 
-Le [Consoles Membres et groupes de communautés](members.md) ne sont destinées qu’à la gestion des utilisateurs (membres) et des groupes d’utilisateurs (groupes de membres) enregistrés dans l’environnement de publication.
+La variable [Consoles Membres et groupes de communautés](members.md) ne sont destinées qu’à la gestion des utilisateurs (membres) et des groupes d’utilisateurs (groupes de membres) enregistrés dans l’environnement de publication.
 
 Pour gérer les utilisateurs et les groupes d’utilisateurs enregistrés dans l’environnement de création, utilisez le [Console de sécurité](../../help/sites-administering/security.md)
 
 ### Rôles du groupe de création {#author-group-roles}
 
-| Si Membre du groupe... | Rôle Principal |
+| Si Membre du groupe... | Rôle de Principal |
 |---|---|
 | administrateurs | Le groupe administrateurs comprend les administrateurs système qui disposent de toutes les fonctionnalités d’un administrateur de la communauté ainsi que de la possibilité de gérer le groupe Administrateurs de la communauté. |
 | Administrateurs de la communauté | Le groupe Administrateurs de la communauté devient automatiquement membre de tous les sites de la communauté et de tous les groupes de la communauté créés sur le site. Le groupe Administrateurs est un membre initial du groupe Administrateurs de la communauté. Dans l’environnement de création, les administrateurs de communauté peuvent créer des sites de communauté, gérer des sites, gérer les membres (ils peuvent interdire des membres de la communauté) et modérer le contenu. |
@@ -109,7 +109,7 @@ Dans l’environnement de publication, en fonction de la variable [paramètres](
 
 ### Rôles du groupe de publication {#publish-group-roles}
 
-| Si Membre du groupe... | Rôle Principal |
+| Si Membre du groupe... | Rôle de Principal |
 |---|---|
 | Communauté &lt;*nom du site*> Membres | Un membre du site de la communauté est un utilisateur enregistré. Ils peuvent se connecter, modifier leur profil, rejoindre un groupe de communautés ouvert, publier du contenu dans la communauté, envoyer des messages à d’autres membres et suivre les activités du site. |
 | Communauté &lt;*nom du site*> Modérateurs | Un modérateur de site de communauté est un membre de la communauté de confiance qui peut modérer le contenu généré par l’utilisateur en bloc, à l’aide de la console de modération ou en contexte, sur la page où le contenu est publié. |
@@ -189,7 +189,7 @@ Quatre consoles distinctes sont disponibles uniquement dans l’environnement de
 
 | console | Outils, sécurité, utilisateurs | Outils, sécurité, groupes | Communautés, membres | Communautés, groupes |
 |----------|-----------------------|------------------------|------------------------------------------------------------|------------------------------------------------------------|
-| manage | utilisateurs sur l’auteur | groupes d’utilisateurs sur l’auteur | membres sur publication | groupes de membres lors de la publication |
+| manage | utilisateurs sur l’auteur | groupes d’utilisateurs sur l’auteur | membres sur publication | groupes de membres sur publication |
 | require | autorisation d’administrateur | autorisation d’administrateur | autorisation d’administrateur, service tunnel, synchronisation des utilisateurs pour la ferme de publication | autorisation d’administrateur, service tunnel, synchronisation des utilisateurs pour la ferme de publication |
 
 ### Rôle Administrateurs de la communauté {#community-administrators-role}
@@ -214,7 +214,7 @@ Voici quelques détails de configuration spécifiques aux membres de la communau
    * Définissez les propriétés suivantes :
 
       * **[!UICONTROL Abonnement automatique des utilisateurs]**: `community-<site name>-<uid>-members`
-      * **[!UICONTROL Préfixe du chemin d’accès de l’utilisateur]**: `/community`
+      * **[!UICONTROL Préfixe du chemin d’accès de l’utilisateur ou de l’utilisatrice]**: `/community`
       * **[!UICONTROL Préfixe de chemin d’accès au groupe]**: `/community`
 
 4. [Module de connexion externe](../../help/sites-administering/ldap-config.md#the-external-login-module)
@@ -223,15 +223,15 @@ Voici quelques détails de configuration spécifiques aux membres de la communau
 
 Les utilisateurs sont ainsi automatiquement affectés au groupe des membres du site de la communauté et à l’emplacement du référentiel. `/home/users/community` et `/home/groups/community`, afin qu’ils héritent des autorisations appropriées pour afficher le profil de l’autre.
 
-* Le `User auto membership` doit être la valeur `rep:authorizableId` , et non la propriété `givenName` (nom d’affichage) du profil.
+* La variable `User auto membership` doit être la valeur `rep:authorizableId` , et non la propriété `givenName` (nom d’affichage) du profil.
 
 ## Synchronisation des utilisateurs entre les instances d’AEM {#synchronizing-users-among-aem-instances}
 
 Lors de l’utilisation d’un [batterie de publication](topologies.md), assurez-vous que les utilisateurs disposent du même chemin d’accès sur chaque instance de publication en important d’abord les utilisateurs sur une instance et [activation de la synchronisation des utilisateurs](sync.md) à Sling pour distribuer les utilisateurs aux autres instances de publication.
 
-Si vous importez des groupes d’utilisateurs, pour vous assurer que les groupes d’utilisateurs ont le même chemin d’accès sur chaque instance de publication, importez-les dans une instance, puis [créer un package ;](../../help/sites-administering/package-manager.md#creating-a-new-package) pour l’exportation et installez ce module sur toutes les autres instances de publication.
+Si vous importez des groupes d’utilisateurs, pour vous assurer que les groupes d’utilisateurs ont le même chemin sur chaque instance de publication, importez-les dans une instance, puis [créer un package ;](../../help/sites-administering/package-manager.md#creating-a-new-package) pour l’exportation et installez ce module sur toutes les autres instances de publication.
 
-Bien que la synchronisation des groupes d’utilisateurs par le biais de la synchronisation des utilisateurs soit incluse dans une prochaine version, actuellement, seule la variable *abonnement* d’un groupe d’utilisateurs se synchronise lors de l’exécution de la synchronisation des utilisateurs.
+Bien que la synchronisation des groupes d’utilisateurs par le biais de la synchronisation des utilisateurs soit incluse dans une prochaine version, actuellement, seule la variable *abonnement* d’un groupe d’utilisateurs se synchronise lors de l’exécution de la synchronisation.
 
 ## Groupes communautaires {#about-community-groups}
 
@@ -239,8 +239,8 @@ Lors de la discussion de groupes, il existe deux sujets distincts :
 
 * **[Groupes communautaires](overview.md#communitygroups)**
 
-   Les groupes communautaires sont les sous-communautés qui peuvent être créées dans l’environnement de publication d’un site communautaire qui prend en charge la création de groupes communautaires. La création d’un groupe de communautés génère davantage de pages ajoutées au site web et est gérée de la même manière que le site de leur communauté parent. Pour plus d’informations, voir [Notions fondamentales sur les groupes de communautés](essentials-groups.md) pour les développeurs et [Groupe de communautés](creating-groups.md) pour les auteurs.
+  Les groupes communautaires sont les sous-communautés qui peuvent être créées dans l’environnement de publication d’un site communautaire qui prend en charge la création de groupes communautaires. La création d’un groupe de communautés génère davantage de pages ajoutées au site web et est gérée de la même manière que le site de leur communauté parent. Pour plus d’informations, voir [Notions fondamentales sur les groupes de communautés](essentials-groups.md) pour les développeurs et [Groupe de communautés](creating-groups.md) pour les auteurs.
 
 * **[Groupes de membres](../../help/sites-administering/security.md)**
 
-   Les groupes de membres sont les groupes auxquels les membres peuvent appartenir et qui sont gérés via la console Groupes . Une grande partie de la discussion sur cette page a été consacrée aux groupes de membres. Les groupes de membres créés automatiquement pour un site de communauté sont précédés du préfixe *`Community`*, qui peut être appelé groupe communautaire, le contexte de la discussion doit donc être pris en compte.
+  Les groupes de membres sont les groupes auxquels les membres peuvent appartenir et qui sont gérés via la console Groupes . Une grande partie de la discussion sur cette page a été consacrée aux groupes de membres. Les groupes de membres créés automatiquement pour un site de communauté sont précédés du préfixe *`Community`*, qui peut être appelé groupe communautaire, le contexte de la discussion doit donc être pris en compte.

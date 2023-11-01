@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1489'
 ht-degree: 25%
 
 ---
@@ -21,7 +21,7 @@ Une fois que vous avez identifié l’utilisation d’AEM forms, déterminez les
 
 >[!NOTE]
 >
->Comme pour tout autre aspect de votre mise en oeuvre d’AEM forms, votre stratégie de sauvegarde et de récupération doit être développée et testée dans un environnement de développement ou d’évaluation avant d’être utilisée en production afin de vous assurer que l’ensemble de la solution fonctionne comme prévu sans perte de données.
+>Comme pour tout autre aspect de votre mise en oeuvre d’AEM forms, votre stratégie de sauvegarde et de récupération doit être développée et testée dans un environnement de développement ou d’évaluation avant d’être utilisée en production pour vous assurer que l’ensemble de la solution fonctionne comme prévu sans perte de données.
 
 Adobe Experience Manager (AEM) fait partie intégrante d’AEM forms. Par conséquent, vous devez sauvegarder AEM et synchroniser la sauvegarde d’AEM forms en tant que solution et services Correspondence Management, tels que Forms Manager, basés sur des données stockées dans une partie d’AEM forms. Pour éviter toute perte de données, les données spécifiques aux formulaires d’ doivent être sauvegardées de manière à garantir la corrélation entre le répertoire de stockage global de documents et les  (référentiel) et les références de base de données. Les répertoires de base, de stockage de contenu, d’ et de stockage de données doivent être restaurés sur un ordinateur portant le même nom DNS que l’original.
 

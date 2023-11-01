@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '17047'
+source-wordcount: '17045'
 ht-degree: 85%
 
 ---
@@ -597,7 +597,7 @@ Après avoir ajouté cette valeur de configuration au fichier cknfastrc, les nou
 
 **Signature non approuvée**
 
-Lors de la certification et de la signature d’un même document PDF, si la signature de certification n’est pas approuvée, un triangle jaune apparaît sur la première signature lors de l’ouverture du document PDF dans Acrobat ou Adobe Reader. Pour éviter cette situation, la signature de certification doit être approuvée.
+Lors de la certification et de la signature d’un même document PDF, si la signature de certification n’est pas approuvée, un triangle jaune apparaît sur la première signature lors de l’ouverture du document PDF dans Acrobat ou Adobe Reader. La signature de certification doit être fiable pour éviter cette situation.
 
 **Signer des documents qui sont des formulaires XFA**
 

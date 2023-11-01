@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '6100'
-ht-degree: 58%
+source-wordcount: '6098'
+ht-degree: 57%
 
 ---
 
@@ -395,7 +395,7 @@ Pour afficher la page d’administration du site web ou modifier une page du por
 
 ### Autorisations {#privileges}
 
-Certaines fonctions du portlet sont protégées par des autorisations. L’utilisateur actuel doit disposer de cette autorisation pour pouvoir accéder à cette fonction. Les autorisations ci-dessous sont prédéfinies :
+Certaines fonctions du portlet sont protégées par des autorisations. L’utilisateur actuel doit disposer de ce privilège pour pouvoir accéder à cette fonction. Les autorisations ci-dessous sont prédéfinies :
 
 * &quot;toolbar&quot; : il s’agit du privilège général d’afficher/utiliser la barre d’outils dans le portlet.
 * &quot;prefs&quot; : si l’utilisateur dispose de ce privilège, il est autorisé à voir/modifier les préférences du portlet.

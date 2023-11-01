@@ -11,10 +11,10 @@ topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
 feature: Upgrading
 exl-id: 2572aa8d-2a3a-4e5b-ae5f-07e1017ea0f4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '532'
+ht-degree: 93%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## Présentation {#introduction}
 
-Dans les versions antérieures à AEM 6.4, le code client était déployé dans des zones imprévisibles du référentiel JCR, lesquelles pouvaient donc varier lors des mises à niveau. Pour cette raison, il était courant que les versions AEM officielles écrasent le code, la configuration ou le contenu personnalisé. En outre, les modifications apportées aux clients remplaçaient parfois le code ou le contenu du produit AEM, annulant les fonctionnalités du produit.
+Dans les versions antérieures à AEM 6.4, le code client était déployé dans des zones imprévisibles du référentiel JCR, lesquelles pouvaient donc varier lors des mises à niveau. Pour cette raison, il était courant que les versions AEM officielles écrasent le code, la configuration ou le contenu personnalisé. En outre, les modifications des clients ont parfois remplacé AEM code ou contenu du produit, rompant ainsi la fonctionnalité du produit.
 
 Il est possible d’éviter ces conflits en définissant clairement les hiérarchies applicables au code du produit AEM et au code client.
 
@@ -40,7 +40,7 @@ Lors de la mise à niveau vers AEM 6.5, un sous-ensemble important du contenu s
 
 ### Conseils de restructuration {#restructuring-guidance}
 
-Lors de la planification d’une mise à niveau vers AEM 6.5, les pages suivantes par solution doivent être référencées afin d’évaluer le travail :
+Lors de la planification d’une mise à niveau vers AEM 6.5, les pages suivantes par solution doivent être référencées pour évaluer l’effort de travail :
 
 * [Restructuration du référentiel commun à toutes les solutions AEM](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md)
 * [Restructuration du référentiel d’AEM Sites](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md)

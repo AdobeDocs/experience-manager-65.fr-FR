@@ -8,20 +8,20 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: d8d9a799-3e30-442a-843b-d4d7ba70c557
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '473'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '471'
+ht-degree: 91%
 
 ---
 
 # Exemples de magasins candidats ContextHub{#sample-contexthub-store-candidates}
 
-ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez utiliser dans vos solutions. Les informations suivantes sont fournies pour chaque exemple :
+ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez utiliser dans vos solutions. Les informations suivantes sont fournies pour chaque échantillon :
 
-* L’emplacement du code source pour pouvoir l’ouvrir à des fins de formation.
-* La configuration des magasins créés à partir des magasins candidats.
-* La structure des données de magasin pour pouvoir y accéder.
+* Où trouver le code source afin de pouvoir l’ouvrir à des fins d’apprentissage.
+* Comment configurer les magasins que vous créez à partir des magasins candidats.
+* Comment sont structurées les données de magasin afin que vous puissiez y accéder.
 
 >[!WARNING]
 >
@@ -55,7 +55,7 @@ Lorsque vous créez un magasin aem.segmentation, vous n’avez pas besoin de fou
 
 ## Exemple de magasin candidat contexthub.geolocation {#contexthub-geolocation-sample-store-candidate}
 
-Le magasin candidat de modèles contexthub.geolocation utilise Google Maps pour obtenir et stocker des informations sur l’emplacement du client.
+L’exemple de magasin candidat contexthub.geolocation utilise Google Maps pour obtenir et stocker des informations sur l’emplacement du client.
 
 ### Emplacement du code source {#source-location-geolocation}
 
@@ -109,7 +109,7 @@ Le magasin utilise une arborescence de données similaire à l’exemple suivant
 
 >[!NOTE]
 >
->Une stratégie de sécurité introduite dans Chrome 50.x requiert que tous les appels liés à la géolocalisation soient effectués via une connexion sécurisée. Par conséquent, AEM force l’utilisation de https pour les appels d’API de géolocalisation si AEM s’exécute également sur https. Sinon, le http est utilisé afin de respecter la politique de même origine. Voir [cet article de blog Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) pour plus de détails sur les changements dans Chrome.
+>Une politique de sécurité introduite dans Chrome 50.x requiert que tous les appels liés à la géolocalisation soient effectués via une connexion sécurisée. Par conséquent, AEM force l’utilisation de https pour les appels d’API de géolocalisation si AEM s’exécute également sur https. Sinon, http est utilisé pour se conformer à la politique de même origine. Voir [cet article de blog Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) pour plus de détails sur les changements dans Chrome.
 
 ## Exemple de magasin candidat contexthub.surferinfo {#contexthub-surferinfo-sample-store-candidate}
 
@@ -325,7 +325,7 @@ Le magasin candidat contexthub.datetime étend [`ContextHub.Store.PersistedJSONP
 
 ### Configuration {#configuration-profile}
 
-La configuration par défaut suivante est utilisée. Vous ne devriez pas changer cette configuration.
+La configuration par défaut suivante est utilisée. Vous ne devez pas modifier cette configuration.
 
 ```xml
 {

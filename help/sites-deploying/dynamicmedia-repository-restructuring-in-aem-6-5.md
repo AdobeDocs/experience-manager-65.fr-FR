@@ -1,17 +1,15 @@
 ---
 title: Restructuration du référentiel Dynamic Media dans Adobe Experience Manager 6.5
-description: Découvrez comment apporter les modifications nécessaires pour migrer vers la nouvelle structure de référentiel dans Experience Manager 6.5 pour Dynamic Media.
-uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
+description: Découvrez comment apporter les modifications nécessaires pour migrer vers la nouvelle structure de référentiel dans Experience Manager 6.5 pour Dynamic Media.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
 feature: Upgrading
 exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
-workflow-type: ht
-source-wordcount: '413'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 91%
 
 ---
 
@@ -93,7 +91,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans Adob
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Vous pouvez exécuter le script de migration suivant pour vous aligner sur le modèle le plus récent :</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.jso</em></p> </td>
+   <td><p>Vous pouvez exécuter le script de migration ci-dessous pour vous aligner sur le modèle le plus récent :</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.jso</em></p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
@@ -116,7 +114,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans Adob
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>1. Annulez la publication de toutes les vidéos de YouTube.<br /> 2. Créez la configuration YouTube à l’aide de la nouvelle TouchUI (à partir de <code>/conf</code>), y compris en copiant toutes les chaînes de l’ancien emplacement.<br /> 3. Publiez toutes les vidéos sur YouTube.</p> <p>Ce workflow génère de nouvelles URL YouTube. Si vous n’annulez pas la publication avant de créer une configuration YouTube TouchUI, plusieurs URL YouTube seront répertoriées sous Propriétés car les chaînes recréées seront publiées si l’occasion se présente. Cela signifie que des URL inutiles seront répertoriées sous Propriétés.</p> </td>
+   <td><p>1. Dépubliez toutes les vidéos de YouTube.<br /> 2. Créez la configuration YouTube à l’aide de la nouvelle TouchUI (à partir de <code>/conf</code>), y compris en copiant toutes les chaînes de l’ancien emplacement.<br /> 3. Publiez toutes les vidéos sur YouTube.</p> <p>Ce workflow génère de nouvelles URL YouTube. Si vous n’annulez pas la publication avant de créer une configuration YouTube TouchUI, plusieurs URL YouTube seront répertoriées sous Propriétés, car les chaînes recréées seront publiées si l’occasion se présente. Cela signifie que des URL inutiles seront répertoriées sous Propriétés.</p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>

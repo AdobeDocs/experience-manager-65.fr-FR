@@ -7,10 +7,10 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: 85bc041e-0ab1-42de-8bcc-c98a175d7494
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '1341'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '1339'
+ht-degree: 99%
 
 ---
 
@@ -101,7 +101,7 @@ Pour plus d’informations sur le processus d’extraction de texte, consultez l
 
 Créez l’index Lucene hors ligne avant la mise à niveau. Si vous utilisez MongoMK, il est recommandé de l’exécuter directement sur l’un des nœuds MongoMk, car cela évite la surcharge du réseau.
 
-Pour créer l’index hors ligne, procédez comme suit :
+Pour créer l’index hors ligne, procédez comme suit :
 
 **1. Générez des définitions d’index Oak Lucene pour la version d’AEM cible**.
 

@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '19016'
+source-wordcount: '19006'
 ht-degree: 83%
 
 ---
@@ -162,7 +162,7 @@ Définir l’option URI du fichier lors de la création d’un document PDF. Cet
 
 **Définir les options d’exécution de rendu**
 
-Vous pouvez définir des options d’exécution de rendu lors de la création d’un document PDF. Bien que ces options ne soient pas obligatoires (contrairement aux options d’exécution du PDF), vous pouvez effectuer des tâches telles que l’amélioration des performances du service Output. Par exemple, vous pouvez mettre en cache la conception de formulaire utilisée par le service Output afin d’améliorer ses performances.
+Vous pouvez définir des options d’exécution de rendu lors de la création d’un document PDF. Bien que ces options ne soient pas obligatoires (contrairement aux options d’exécution du PDF), vous pouvez effectuer des tâches telles que l’amélioration des performances du service Output. Par exemple, vous pouvez mettre en cache la conception de formulaire utilisée par le service Output pour améliorer ses performances.
 
 Si vous utilisez un formulaire Acrobat balisé comme entrée, vous ne pouvez pas utiliser l’API Java Output Service ou lʼAPI de service web pour désactiver le paramètre balisé. Si vous tentez de définir cette option par programmation sur `false`, le document PDF généré est toujours balisé.
 
@@ -2057,7 +2057,7 @@ Créez des règles de recherche à l’aide de l’API Output (Java) :
 1. Définissez les options d’exécution de rendu.
 
    * Créez un objet `RenderOptionsSpec` en utilisant son constructeur.
-   * Mettez en cache la conception de formulaire afin d’améliorer les performances du service Output en appelant la fonction `RenderOptionsSpec` de `setCacheEnabled` et transmission `true`.
+   * Mettez en cache la conception de formulaire pour améliorer les performances du service Output en appelant la fonction `RenderOptionsSpec` de `setCacheEnabled` et transmission `true`.
 
 1. Générez un document PDF.
 
@@ -2147,7 +2147,7 @@ Créez des règles de recherche à l’aide de l’API Output (service web) :
 1. Définir des options d’exécution de rendu
 
    * Créez un objet `RenderOptionsSpec` en utilisant son constructeur.
-   * Mettre en cache la conception de formulaire afin d’améliorer les performances du service Output en affectant la valeur `true` à la fonction `RenderOptionsSpec` de `cacheEnabled` membre de données.
+   * Mettre en cache la conception de formulaire pour améliorer les performances du service Output en affectant la valeur `true` à la fonction `RenderOptionsSpec` de `cacheEnabled` membre de données.
 
    >[!NOTE]
    >

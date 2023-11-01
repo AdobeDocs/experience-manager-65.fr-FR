@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '9113'
+source-wordcount: '9109'
 ht-degree: 99%
 
 ---
@@ -474,7 +474,7 @@ Inscription de ressources à l’aide de l’API du service Repository (service 
 
 ## Lecture des ressources {#reading-resources}
 
-Vous pouvez récupérer des ressources à partir d’un emplacement donné dans le référentiel afin de lire leur contenu et leurs métadonnées. Le workflow est dirigé par un formulaire d’initialisation. Le processus a toutes les permissions nécessaires pour lire le formulaire. Le système récupère le formulaire de données et lit le contenu du référentiel. Le référentiel donne accès au contenu et aux métadonnées (la possibilité de savoir que la ressource existe).
+Vous pouvez récupérer des ressources à partir d’un emplacement donné dans le référentiel pour lire leur contenu et leurs métadonnées. Le workflow est dirigé par un formulaire d’initialisation. Le processus a toutes les permissions nécessaires pour lire le formulaire. Le système récupère le formulaire de données et lit le contenu du référentiel. Le référentiel donne accès au contenu et aux métadonnées (la possibilité de savoir que la ressource existe).
 
 Le référentiel dispose des quatre types d’autorisations suivants :
 
@@ -842,7 +842,7 @@ Recherchez une ressource à l’aide de l’API Repository Service (Java) :
 
 1. Récupérer les ressources à partir des résultats de recherche
 
-   Pour récupérer les ressources contenues dans les résultats de recherche, il faut itérer au sein de `List` et convertir chaque objet en `Resource` afin d’extraire ses informations. Dans cet exemple, le nom de chaque ressource est affiché.
+   Pour récupérer les ressources contenues dans le résultat de la recherche, procédez comme suit : `List` et convertit chaque objet en `Resource` pour extraire ses informations. Dans cet exemple, le nom de chaque ressource est affiché.
 
 **Voir également**
 

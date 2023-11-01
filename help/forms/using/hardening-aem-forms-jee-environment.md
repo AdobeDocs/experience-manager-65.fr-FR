@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '7669'
-ht-degree: 99%
+source-wordcount: '7667'
+ht-degree: 98%
 
 ---
 
@@ -165,7 +165,7 @@ Le risque de voir une personne non autorisée accéder au serveur d’applicatio
 
 **Comptes de service (JBoss clé en main sous Windows uniquement)**
 
-AEM Forms sur JEE installe un service par défaut en utilisant le compte système local. Le compte utilisateur système local intégré présente un haut niveau d’accessibilité ; il fait partie du groupe d’administration. Si une identité de processus de travail est exécutée en tant que compte utilisateur système local, ce processus de travail dispose d’un accès complet à l’ensemble du système.
+AEM Forms sur JEE installe un service par défaut en utilisant le compte système local. Le compte d’utilisateur système local intégré présente un haut niveau d’accessibilité ; il fait partie du groupe d’administration. Si une identité de processus de travail est exécutée en tant que compte d’utilisateur système local, ce processus de travail dispose d’un accès complet à l’ensemble du système.
 
 Pour exécuter le serveur d’applications sur lequel est déployé AEM Forms sur JEE, appliquez les instructions suivantes en utilisant un compte non administratif spécifique :
 
@@ -180,15 +180,15 @@ Pour exécuter le serveur d’applications sur lequel est déployé AEM Forms s
 
 1. Sélectionnez **Démarrer** > **Paramètres** > **Outils d’administration** > **Services**.
 1. Double-cliquez sur l’application JBoss pour AEM Forms sur JEE et arrêtez le service.
-1. Sur l’onglet **Ouvrir une session**, sélectionnez **Ce compte**, recherchez le compte utilisateur que vous avez créé, puis entrez le mot de passe pour ce compte.
+1. Sur l’onglet **Connexion**, sélectionnez **Ce compte**, recherchez le compte d’utilisateur que vous avez créé et saisissez le mot de passe du compte.
 1. Dans MMC, ouvrez **Paramètres de sécurité locaux** et sélectionnez **Politiques locales** > **Attribution des droits utilisateur**.
-1. Attribuez les droits suivants au compte utilisateur sous lequel le serveur de formulaires est exécuté :
+1. Attribuez les droits suivants au compte d’utilisateur sous lequel le serveur de formulaires est exécuté :
 
    * Interdire l’ouverture de session par les services Terminal
    * Interdire l’ouverture d’une session locale
    * Ouvrir une session en tant que service (ce droit doit être déjà défini)
 
-1. Donnez au nouveau compte utilisateur les autorisations de modification sur les répertoires suivants :
+1. Donnez au nouveau compte d’utilisateur les autorisations de modification sur les répertoires suivants :
    * **Répertoire de stockage global de documents** : l’emplacement du répertoire de stockage global de documents est configuré manuellement pendant le processus d’installation d’AEM Forms. Si le paramètre d’emplacement du stockage global de documents n’est pas défini pendant l’installation, l’emplacement par défaut utilisé est un sous-répertoire de l’emplacement d’installation du serveur d’applications : `[JBoss root]/server/[type]/svcnative/DocumentStorage`
    * **Répertoire CRX-Repository** : l’emplacement par défaut est `[AEM-Forms-installation-location]\crx-repository`
    * **Répertoires temporaires AEM Forms** :
@@ -198,7 +198,7 @@ Sur les systèmes de type UNIX, une personne non connectée en tant qu’utilisa
       * (Linux) /var/tmp ou /usr/tmp
       * (AIX) /tmp ou /usr/tmp
       * (Solaris) /var/tmp ou /usr/tmp
-1. Donnez au nouveau compte utilisateur les autorisations d’écriture pour les répertoires suivants :
+1. Donnez au nouveau compte d’utilisateur les autorisations d’écriture pour les répertoires suivants :
    * [JBoss-directory]\standalone\deployment
    * [JBoss-directory]\standalone\
    * [JBoss-directory]\bin\
@@ -278,7 +278,7 @@ Certains services du serveur de formulaires comportent des opérations qu’une 
 
 #### Modifier le mot de passe d’administration par défaut {#change-the-default-administrator-password}
 
-Lors de l’installation d’AEM Forms sur JEE, un compte utilisateur par défaut unique est configuré pour l’utilisateur Super-administrateur/Administrateur à ID de connexion avec un mot de passe par défaut, *password*. Modifiez immédiatement ce mot de passe à l’aide de Configuration Manager.
+Lors de l’installation d’AEM Forms sur JEE, un compte d’utilisateur par défaut unique est configuré pour Super-administrateur/Administrateur à ID de connexion avec un mot de passe par défaut, *password*. Modifiez immédiatement ce mot de passe à l’aide de Configuration Manager.
 
 1. Saisissez l’URL suivante dans un navigateur web :
 
@@ -451,7 +451,7 @@ Ce tableau décrit les techniques de contrôle et de journalisation que vous pou
  <tbody>
   <tr> 
    <td><p>Listes de contrôle d’accès de fichier journal</p> </td> 
-   <td><p>Définissez les liste de contrôle d’accès (ACL) de fichier journal AEM Forms on JEE appropriées.</p> <p>Définir des informations d’identification appropriées contribue à empêcher les personnes malveillantes de supprimer les fichiers.</p> <p>Les autorisations de sécurité sur le répertoire des fichiers journaux doivent être de type « contrôle complet » pour les administrateurs, administratrices et les groupes SYSTEM. Seules les autorisations de lecture et d’écriture doivent être attribuées au compte utilisateur AEM Forms.</p> </td> 
+   <td><p>Définissez les liste de contrôle d’accès (ACL) de fichier journal AEM Forms on JEE appropriées.</p> <p>Définir des informations d’identification appropriées contribue à empêcher les personnes malveillantes de supprimer les fichiers.</p> <p>Les autorisations de sécurité sur le répertoire des fichiers journaux doivent être de type « contrôle complet » pour les administrateurs, administratrices et les groupes SYSTEM. Seules les autorisations de lecture et d’écriture doivent être attribuées au compte d’utilisateur AEM Forms.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Fichiers journaux redondants</p> </td> 
@@ -746,7 +746,7 @@ Incluez l’argument JAVA `-Dlc.um.csrffilter.disabled=true` dans le script de d
 
 **Filtrer les référents pour les fichiers WAR personnalisés**
 
-Vous avez peut-être créé des fichiers WAR personnalisés afin de travailler avec AEM Forms sur JEE pour répondre aux besoins de l’activité. Pour activer le filtrage des référents pour vos fichiers WAR personnalisés, vous devez inclure ***adobe-usermanager-client.jar*** dans le chemin de classe pour les fichiers WAR et inclure une entrée de filtre dans le fichier « web.xml » avec les paramètres suivants :
+Vous avez peut-être créé des fichiers WAR personnalisés pour travailler avec AEM Forms on JEE afin de répondre aux besoins de votre entreprise. Pour activer le filtrage des référents pour vos fichiers WAR personnalisés, vous devez inclure ***adobe-usermanager-client.jar*** dans le chemin de classe pour les fichiers WAR et inclure une entrée de filtre dans le fichier « web.xml » avec les paramètres suivants :
 
 **CSRF_CHECK_GETS** contrôle la vérification du référent pour les requêtes GET. Si ce paramètre n’est pas défini, la valeur par défaut est définie sur false. Incluez ce paramètre uniquement si vous souhaitez filtrer vos requêtes GET.
 
@@ -992,7 +992,7 @@ Cette section contient des recommandations de sécurité spécifiques à Windows
 
 ### Comptes de service JBoss {#jboss-service-accounts}
 
-L’installation clé en main d’AEM Forms sur JEE installe un compte de service par défaut en utilisant le compte système local. Le compte utilisateur système local intégré présente un haut niveau d’accessibilité ; il fait partie du groupe Administrateurs. Si une identité de processus de travail est exécutée en tant que compte utilisateur système local, ce processus de travail dispose d’un accès complet à l’ensemble du système.
+L’installation clé en main d’AEM Forms sur JEE installe un compte de service par défaut en utilisant le compte système local. Le compte d’utilisateur système local intégré présente un haut niveau d’accessibilité ; il fait partie du groupe Administrateurs. Si une identité de processus de travail est exécutée en tant que compte d’utilisateur système local, ce processus de travail dispose d’un accès complet à l’ensemble du système.
 
 #### Exécution du serveur d’applications à l’aide d’un compte non administratif spécifique {#run-the-application-server-using-a-non-administrative-account}
 
@@ -1003,14 +1003,14 @@ L’installation clé en main d’AEM Forms sur JEE installe un compte de servic
 
 1. Sélectionnez **Paramètres** > **Outils d’administration** > **Services**.
 1. Cliquez deux fois sur le service de serveur d’applications et arrêtez ce service.
-1. Sur l’onglet **Connexion**, sélectionnez **Ce compte**, recherchez le compte utilisateur que vous avez créé et saisissez le mot de passe du compte.
-1. Dans la fenêtre Paramètres de sécurité locaux, sous Attribution des droits utilisateur, attribuez les droits suivants au compte utilisateur sous lequel est exécuté le serveur de formulaires :
+1. Sur l’onglet **Connexion**, sélectionnez **Ce compte**, recherchez le compte d’utilisateur que vous avez créé et saisissez le mot de passe du compte.
+1. Dans la fenêtre Paramètres de sécurité locaux, sous Attribution des droits utilisateur, attribuez les droits suivants au compte d’utilisateur sous lequel est exécuté le serveur de formulaires :
 
    * Interdire l’ouverture de session par les services Terminal
    * Interdire l’ouverture d’une session locale
    * Ouvrir une session en tant que service (ce droit doit être déjà défini)
 
-1. Donnez au nouveau compte utilisateur les autorisations de modification sur les répertoires suivants :
+1. Donnez au nouveau compte d’utilisateur les autorisations de modification sur les répertoires suivants :
    * **Répertoire de stockage global de documents** : l’emplacement du répertoire de stockage global de documents est configuré manuellement pendant le processus d’installation d’AEM Forms. Si le paramètre d’emplacement du stockage global de documents n’est pas défini pendant l’installation, l’emplacement par défaut utilisé est un sous-répertoire de l’emplacement d’installation du serveur d’applications : `[JBoss root]/server/[type]/svcnative/DocumentStorage`
    * **Répertoire CRX-Repository** : l’emplacement par défaut est `[AEM-Forms-installation-location]\crx-repository`
    * **Répertoires temporaires AEM Forms** :
@@ -1020,7 +1020,7 @@ Sur les systèmes de type UNIX, une personne non connectée en tant qu’utilisa
       * (Linux) /var/tmp ou /usr/tmp
       * (AIX) /tmp ou /usr/tmp
       * (Solaris) /var/tmp ou /usr/tmp
-1. Donnez au nouveau compte utilisateur les autorisations d’écriture pour les répertoires suivants :
+1. Donnez au nouveau compte d’utilisateur les autorisations d’écriture pour les répertoires suivants :
    * [JBoss-directory]\standalone\deployment
    * [JBoss-directory]\standalone\
    * [JBoss-directory]\bin\

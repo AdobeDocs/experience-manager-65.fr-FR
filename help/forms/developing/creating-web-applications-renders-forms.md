@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1874'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '1872'
+ht-degree: 99%
 
 ---
 
@@ -151,8 +151,8 @@ Pour restituer un formulaire reposant sur les fragments à l’aide de l’API d
 1. Créez un objet `URLSpec` qui stocke les valeurs URI en utilisant son constructeur.
 1. Appelez la méthode `setApplicationWebRoot` de l’objet `URLSpec` et transmettez une valeur de chaîne qui représente la racine web de l’application.
 1. Appelez la méthode `setContentRootURI` de lʼobjet `URLSpec` et transmettez une valeur de chaîne qui spécifie la valeur URI de la racine du contenu. Assurez-vous que la conception de formulaire et les fragments sont situés dans lʼURI racine du contenu. Dans le cas contraire, le service Forms renvoie une exception. Pour référencer le référentiel AEM Forms, spécifiez `repository://`.
-1. Appelez la méthode `setTargetURL` de lʼobjet `URLSpec` et transmettez une valeur de chaîne qui spécifie la valeur URL cible vers laquelle les données du formulaire sont affichées. Si vous définissez l’URL cible dans la conception de formulaire, vous pouvez transmettre une chaîne vide. Vous pouvez également spécifier l’URL vers laquelle un formulaire est envoyé afin dʼeffectuer des calculs.
-1. Appelez la méthode `renderPDFForm` de lʼobjet `FormsServiceClient` et transmettez les valeurs suivantes :
+1. Appelez la méthode `setTargetURL` de lʼobjet `URLSpec` et transmettez une valeur de chaîne qui spécifie la valeur URL cible vers laquelle les données du formulaire sont affichées. Si vous définissez l’URL cible dans la conception de formulaire, vous pouvez transmettre une chaîne vide. Vous pouvez également spécifier l’URL vers laquelle un formulaire est envoyé pour effectuer les calculs.
+1. Appelez la méthode `renderPDFForm` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
    * Une valeur de chaîne qui spécifie le nom de la conception de formulaire, y compris l’extension du nom de fichier.
    * Un objet `com.adobe.idp.Document` qui contient les données à fusionner avec le formulaire (créé à l’étape 2).
@@ -397,4 +397,4 @@ Une fois l’application web déployée, vous pouvez la tester à l’aide d’u
 
 * http://localhost:8080/FragmentsWebApplication/index.html
 
-   Sélectionnez un bouton radio et cliquez sur le bouton Envoyer. Un formulaire basé sur des fragments apparaît dans le navigateur web. En cas de problème, consultez le fichier journal du serveur d’applications J2EE.
+  Sélectionnez un bouton radio et cliquez sur le bouton Envoyer. Un formulaire basé sur des fragments apparaît dans le navigateur web. En cas de problème, consultez le fichier journal du serveur d’applications J2EE.

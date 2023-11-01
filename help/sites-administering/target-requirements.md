@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: ae4a6e97-c0d7-472d-a25f-b89b1abf4df3
 docset: aem65
 exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 76%
+source-wordcount: '556'
+ht-degree: 73%
 
 ---
 
@@ -24,13 +24,13 @@ Dans le cadre de l’[intégration d’AEM et Adobe Target](/help/sites-adminis
 
 ## Enregistrement auprès d’Adobe Target {#registering-with-adobe-target}
 
-Pour intégrer AEM à Adobe Target, vous devez disposer d’un compte Adobe Target valide. Ce compte doit disposer au minimum des permissions de niveau **approbateur**. Lorsque vous vous inscrivez à Adobe Target, vous recevez un code client. Vous avez besoin du code client ainsi que de votre nom d’utilisateur et de votre mot de passe Adobe Target pour vous connecter AEM à Adobe Target.
+Pour intégrer AEM à Adobe Target, vous devez disposer d’un compte Adobe Target valide. Ce compte doit disposer au minimum des permissions de niveau **approbateur**. Lorsque vous vous inscrivez à Adobe Target, vous recevez un code client. Vous avez besoin du code client et de votre nom d’utilisateur et mot de passe Adobe Target pour vous connecter AEM à Adobe Target.
 
 Le code client identifie le compte client Adobe Target lors de l’appel du serveur Adobe Target.
 
 >[!NOTE]
 >
->Votre compte doit également être activé par l’équipe Target pour pouvoir utiliser l’intégration.
+>Votre compte doit également être activé par l’équipe Target pour utiliser l’intégration.
 >
 >Si ce n’est pas encore le cas, contactez l’[Assistance clientèle Adobe](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=fr).
 
@@ -40,7 +40,7 @@ L’[agent de réplication](/help/sites-deploying/replication.md) Test&amp;Targe
 
 1. Sur la page d’accueil AEM, cliquez ou appuyez sur **Outils** > **Déploiement** > **Réplication**.
 1. Cliquez ou appuyez sur **Agents sur l’auteur**.
-1. Cliquez ou appuyez sur **Test et cible (test et cible)** agent de réplication, puis cliquez ou appuyez sur **Modifier**.
+1. Cliquez ou appuyez sur **Test et ciblage (test et cible)** agent de réplication, puis cliquez ou appuyez sur **Modifier**.
 1. Sélectionnez l’option Activé , puis cliquez ou appuyez sur **OK**.
 
    >[!NOTE]
@@ -55,13 +55,13 @@ Vous devez sécuriser le nœud de paramètres d’activité **c:ActivitySettings
 
 Le nœud **cq:ActivitySettings** est disponible dans CRXDE Lite sous `/content/campaigns/*nameofbrand*`/*sous le nœud jcr:content des activités,* par exemple `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Ce nœud est créé après que vous ciblez un composant.
 
-Le nœud **cq:ActivitySettings** sous le nœud jcr:content de l’activité est protégé par les listes ACL suivantes :
+Le nœud **cq:ActivitySettings** sous le nœud jcr:content de l’activité est protégé par les ACL suivantes :
 
 * Refuser tout pour tous
 * Autoriser jcr:read,rep:write pour &quot;target-activity-authors&quot; (l’auteur est membre de ce groupe prêt à l’emploi)
 * Autoriser jcr:read,rep:write pour &quot;targetservice&quot;
 
-Ces paramètres permettent de garantir que les utilisateurs ordinaires n’ont pas accès aux propriétés de nœud. Utilisez les mêmes listes ACL sur les instances de création et de publication. Consultez la section [Administration et sécurité des utilisateurs](/help/sites-administering/security.md) pour plus d’informations.
+Ces paramètres permettent de garantir que les utilisateurs ordinaires n’ont pas accès aux propriétés de nœud. Utilisez les mêmes ACL sur les instances de création et de publication. Consultez la section [Administration et sécurité des utilisateurs](/help/sites-administering/security.md) pour plus d’informations.
 
 ## Configuration de l’externaliseur de liens Day CQ {#configuring-the-aem-link-externalizer}
 

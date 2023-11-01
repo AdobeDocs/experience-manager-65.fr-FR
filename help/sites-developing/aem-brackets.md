@@ -10,10 +10,10 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 67%
+source-wordcount: '936'
+ht-degree: 65%
 
 ---
 
@@ -83,7 +83,7 @@ Dans le menu **Fichier** de Brackets, choisissez **Ouvrir le dossier...** et cho
 
 ### Paramètres du projet {#project-settings}
 
-Pour synchroniser le contenu avec une instance de développement AEM dans les deux sens, vous devez définir les paramètres du projet. Pour cela, accédez au menu **AEM** et choisissez **Paramètres du projet...**
+Pour synchroniser votre contenu avec et depuis une instance de développement AEM, vous devez définir vos paramètres de projet. Pour cela, accédez au menu **AEM** et choisissez **Paramètres du projet...**
 
 ![chlimage_1-55](assets/chlimage_1-55a.png)
 

@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 71%
+source-wordcount: '795'
+ht-degree: 66%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 71%
 
 ## Présentation {#introduction}
 
-Par défaut, AEM utilise le gestionnaire d’authentification des jetons pour authentifier chaque demande. Cependant, pour traiter des demandes d’authentification, le gestionnaire d’authentification des jetons doit avoir accès au référentiel pour chaque demande. Ceci est dû au fait que des cookies sont utilisés pour maintenir l’état d’authentification. Logiquement, l’état doit perdurer dans le référentiel afin de valider les demandes ultérieures. En effet, cela signifie que le mécanisme d’authentification est à l’état.
+Par défaut, AEM utilise le gestionnaire d’authentification des jetons pour authentifier chaque demande. Toutefois, pour répondre aux demandes d’authentification, le gestionnaire d’authentification des jetons requiert l’accès au référentiel pour chaque demande. Ceci est dû au fait que des cookies sont utilisés pour maintenir l’état d’authentification. En toute logique, l’état doit être conservé dans le référentiel pour valider les requêtes suivantes. En effet, cela signifie que le mécanisme d’authentification est à l’état.
 
 Cela est particulièrement important pour l’évolutivité horizontale. Dans une configuration comportant plusieurs instances, comme la ferme de serveurs de publication représentée ci-dessous, l’équilibrage de charge ne peut pas être exécuté de façon optimale. Avec l’authentification avec état, l’état d’authentification persistante n’est disponible que sur l’instance où l’utilisateur est authentifié pour la première fois.
 
@@ -68,7 +68,7 @@ Lors de la configuration du jeton encapsulé, vous devez prendre en compte quelq
 
 ### Réplication de la clé HMAC {#replicating-the-hmac-key}
 
-Pour répliquer la clé sur plusieurs instances, procédez comme suit :
+Pour répliquer la clé sur plusieurs instances, vous devez :
 
 1. Accédez à l’instance AEM, généralement une instance de création, et qui contient le matériel des clés à copier.
 1. Localisez le lot `com.adobe.granite.crypto.file` dans le système de fichiers local. Par exemple, sous ce chemin d’accès :

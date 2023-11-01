@@ -2,10 +2,10 @@
 title: Transmettre des informations d’identification à l’aide des en-têtes WS-security
 description: Découvrez comment transmettre des informations d’identification à l’aide des en-têtes WS-security.
 exl-id: 519d57ad-81ab-4caf-ae25-4390ae2eee13
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: ht
-source-wordcount: '217'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 90%
 
 ---
 
@@ -34,9 +34,8 @@ Ce document couvre les sujets suivants :
 
 ## Conditions requises {#requirements}
 
-Pour tirer le meilleur parti de ce document, vous devez maîtriser le logiciel AEM Forms on JEE.
+Pour tirer le meilleur parti de ce document, vous devez maîtriser le logiciel AEM Forms on JEE.
 
 >[!MORELIKETHIS]
 >
 >* [Transmettre des informations d’identification à l’aide des en-têtes WS-Security](assets/passing-credentials-using-ws-security-headers.pdf)
-

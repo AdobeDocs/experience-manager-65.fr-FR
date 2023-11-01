@@ -7,10 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2860'
-ht-degree: 79%
+source-wordcount: '2856'
+ht-degree: 86%
 
 ---
 
@@ -52,7 +52,7 @@ Chaque dossier `cq:ClientLibraryFolder` est rempli avec un jeu de fichiers JS et
 
 * `categories` : identifie les catégories dans lesquelles se trouve le jeu de fichiers JS et/ou CSS de ce dossier `cq:ClientLibraryFolder`. La propriété `categories` comportant plusieurs valeurs, elle permet à un dossier de bibliothèques d’appartenir à plusieurs catégories (voir ci-dessous pour savoir en quoi cela peut se révéler utile).
 
-* `dependencies` : il s’agit d’une liste d’autres catégories de bibliothèques clientes dont dépend ce dossier de catégories. Par exemple, étant donné deux nœuds `cq:ClientLibraryFolder`, `F` et `G`, si un fichier du nœud `F` nécessite un autre fichier du nœud `G` pour fonctionner correctement, au moins l’une des propriétés `categories` de `G` doit figurer parmi les propriétés `dependencies` de `F`.
+* `dependencies` : il s’agit d’une liste d’autres catégories de bibliothèques clientes dont dépend ce dossier de catégories. Par exemple, pour deux nœuds `cq:ClientLibraryFolder`, `F` et `G`, si un fichier de `F` nécessite un autre fichier de `G` pour fonctionner correctement, au moins l’une des propriétés `categories` de `G` doit figurer parmi les propriétés `dependencies` de `F`.
 
 * `embed` : utilisé pour incorporer du code d’autres bibliothèques. Si le nœud F incorpore les nœuds G et H, le code HTML qui en résulte sera une concentration du contenu des nœud G et H.
 * `allowProxy` : si une bibliothèque cliente se trouve sous `/apps`, cette propriété permet d’y accéder via un servlet proxy. Consultez ci-dessous [Recherche d’un dossier de bibliothèques clientes et utilisation du servlet des bibliothèques clientes du proxy](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet).
@@ -134,7 +134,7 @@ Dans les versions précédentes, les dossiers de bibliothèques clientes se trou
 
 >[!NOTE]
 >
->Pour mieux isoler le code du contenu et de la configuration, il est recommandé de placer les bibliothèques clientes sous `/apps` et de les exposer via `/etc.clientlibs` en tirant parti de la propriété `allowProxy`.
+>Pour mieux isoler le code du contenu et de la configuration, il est recommandé de localiser les bibliothèques clientes sous `/apps` et les exposer via `/etc.clientlibs` en exploitant la variable `allowProxy` .
 
 Pour que les bibliothèques clientes situées sous `/apps` soient accessibles, un servlet proxy est utilisé. Les listes de contrôle d’accès (ACL) sont toujours appliquées sur le dossier de bibliothèques clientes, mais le servlet permet la lecture du contenu via `/etc.clientlibs/` si la propriété `allowProxy` est définie sur `true`.
 
@@ -167,7 +167,7 @@ Vous pouvez définir la propriété `allowProxy` sur `foo` sur true.
 
    * Nom : categories
    * Type : chaîne
-   * Valeur : nom de la catégorie
+   * Valeur : nom de la catégorie
    * Multi : sélection
 
 1. Ajoutez des fichiers source au dossier de bibliothèque par tous les moyens. Par exemple, utilisez un client WebDav pour copier des fichiers ou créez un fichier et créez le contenu manuellement.
@@ -216,7 +216,7 @@ Par exemple, `etc/clientlibs/myclientlibs/publicmain` comporte une dépendance s
 
 Vous pouvez incorporer du code d’une bibliothèque cliente dans une autre bibliothèque cliente. Au moment de l’exécution, les fichiers JS et CSS générés de la bibliothèque d’intégration incluent le code de la bibliothèque incorporée.
 
-L’incorporation de code s’avère utile pour permettre l’accès aux bibliothèques stockées dans des zones sécurisées du référentiel.
+L’incorporation de code est utile pour permettre l’accès aux bibliothèques stockées dans des zones sécurisées du référentiel.
 
 #### Dossiers de bibliothèques clientes spécifiques à une application {#app-specific-client-library-folders}
 
@@ -321,20 +321,20 @@ Par exemple, le tableau suivant répertorie la valeur de la propriété `channel
 
 AEM autorise les préprocesseurs enfichables et prend en charge [YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) pour CSS et JavaScript, ainsi que [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/) pour JavaScript avec YUI défini comme préprocesseur par défaut d’AEM.
 
-Les préprocesseurs enfichables permettent une utilisation flexible, notamment :
+Les préprocesseurs enfichables permettent une utilisation flexible, notamment :
 
-* Définition de ScriptProcessors pouvant traiter des sources de script
+* La définition de ScriptProcessors peut traiter des sources de script
 * Les processeurs peuvent être configurés avec des options
-* Les processeurs peuvent être utilisés pour la minification, mais également pour les cas non minimisés.
+* Les processeurs peuvent être utilisés pour la minification, mais également pour les cas non minimisés
 * La bibliothèque cliente peut définir le processeur à utiliser
 
 >[!NOTE]
 >
->Par défaut, AEM utilise le YUI Compressor. Pour connaître la liste des problèmes connus, consultez la [documentation GitHub de YUI Compressor](https://github.com/yui/yuicompressor/issues). Le passage au compresseur GCC pour des clientlibs spécifiques peut résoudre certains problèmes observés lors de l’utilisation de YUI.
+>Par défaut, AEM utilise YUI Compressor. Pour connaître la liste des problèmes connus, consultez la [documentation GitHub de YUI Compressor](https://github.com/yui/yuicompressor/issues). Le passage au compresseur GCC pour des bibliothèques clientes spécifiques peut résoudre certains problèmes observés lors de l’utilisation de YUI.
 
 >[!CAUTION]
 >
->Ne placez pas de bibliothèque minimisée dans une bibliothèque cliente. Fournissez plutôt la bibliothèque brute et, si une minification est requise, utilisez les options des préprocesseurs.
+>Ne placez pas de bibliothèque minimisée dans une bibliothèque cliente. Fournissez plutôt la bibliothèque brute et, si une minimisation est requise, utilisez les options des préprocesseurs.
 
 ### Utilisation {#usage}
 
@@ -388,7 +388,7 @@ Pour plus d’informations sur les options GCC, consultez la [documentation de G
 
 ### Définition de l’outil de minification par défaut du système {#set-system-default-minifier}
 
-YUI est défini comme minificateur par défaut dans AEM. Pour modifier ce paramètre en GCC, procédez comme suit.
+YUI est défini comme minifisateur par défaut dans AEM. Pour modifier ce paramètre en GCC, procédez comme suit.
 
 1. Accédez à Apache Felix Config Manager à l’adresse [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Recherchez et modifiez le **Gestionnaire de bibliothèques HTML Adobe Granite**.
@@ -431,7 +431,7 @@ Le composant `/libs/cq/granite/components/dumplibs/dumplibs` génère une page d
 
 `https://<host>:<port>/libs/granite/ui/content/dumplibs.test.html`
 
-Les informations incluent le chemin et le type de bibliothèque (CSS ou JS), ainsi que les valeurs des attributs de bibliothèque, tels que les catégories et les dépendances. Les tableaux suivants de la page affichent les bibliothèques dans chaque catégorie et canal.
+Les informations comprennent le chemin et le type de bibliothèque (CSS ou JS), ainsi que les valeurs des attributs de bibliothèque, tels que les catégories et les dépendances. Les tableaux suivants de la page affichent les bibliothèques dans chaque catégorie et canal.
 
 ### Affichage de la sortie générée {#see-generated-output}
 

@@ -1,19 +1,15 @@
 ---
 title: Restructuration des référentiels dans AEM 6.5
-seo-title: Common Repository Restructuring in AEM 6.5
-description: Découvrez comment effectuer les modifications nécessaires pour migrer vers la nouvelle structure du référentiel dans AEM 6.5 commune à tous les domaines AEM.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 that are common for all areas of AEM.
-uuid: a4bb64e5-387b-4084-9258-54e68db12f3b
+description: Découvrez comment apporter les modifications nécessaires pour migrer vers la nouvelle structure de référentiel d’AEM 6.5 qui sont communes à toutes les zones d’AEM.
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2691'
-ht-degree: 58%
+source-wordcount: '2689'
+ht-degree: 57%
 
 ---
 
@@ -97,7 +93,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
      <li>Appuyez sur le bouton Synchroniser pour synchroniser les modifications apportées au modèle de processus d’exécution sous /var/workflow/models.</li>
      <li>Exportez le modèle de workflow (/conf/global/workflow/models/)&lt;workflow-model&gt;) et le modèle de processus d’exécution (/var/workflow/models/)&lt;workflow-model&gt;) et intégrer dans le projet AEM.
       <ol>
-       <li>Par exemple, exporter :
+       <li>Par exemple, exportez :
         <ul>
          <li><code>/conf/global/settings/workflow/models/dam/my_workflow_model</code><br /> et </li>
          <li><code>/var/workflow/models/dam/my_workflow_model</code></li>
@@ -131,7 +127,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Aucune action n’est requise pour s’aligner sur le nouvel emplacement.</p> <p>Les instances de workflow historiques peuvent continuer à résider en toute sécurité à l’emplacement précédent, et de nouvelles instances de workflow seront créées dans le nouvel emplacement.</p> </td>
+   <td><p>Aucune action n’est requise pour s’aligner sur le nouvel emplacement.</p> <p>Les instances de workflow historiques peuvent continuer à résider en toute sécurité à l’emplacement précédent et de nouvelles instances de workflow seront créées dans le nouvel emplacement.</p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
@@ -226,7 +222,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
    <td><p>Toute configuration ContextHub nouvelle ou modifiée doit être migrée vers le nouvel emplacement et les pages AEM Sites de référencement doivent être mises à jour pour refléter le nouvel emplacement.</p>
     <ol>
      <li>Copiez les configurations ContextHub nouvelles ou modifiées de l’emplacement précédent vers le nouvel emplacement.</li>
-     <li>Associez les configurations AEM applicables aux hiérarchies de contenu AEM.
+     <li>Associez les configurations d’AEM applicables aux hiérarchies de contenu AEM.
       <ol>
        <li><strong>Hiérarchies de page AEM Sites via AEM Sites &gt; Page &gt; Propriétés de page &gt; Onglet avancé &gt; Configuration cloud</strong>.</li>
       </ol> </li>
@@ -410,7 +406,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Aucune action requise.</p> <p>L’emplacement public précédent agit comme un point de terminaison proxy pour le nouvel emplacement privé.</p> </td>
+   <td><p>Aucune action n’est requise.</p> <p>L’emplacement public précédent agit comme un point de terminaison proxy pour le nouvel emplacement privé.</p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
@@ -433,7 +429,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Aucune action requise.</p> <p>L’emplacement public précédent agit comme un point de terminaison proxy pour le nouvel emplacement privé.</p> </td>
+   <td><p>Aucune action n’est requise.</p> <p>L’emplacement public précédent agit comme un point de terminaison proxy pour le nouvel emplacement privé.</p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
@@ -611,14 +607,14 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
     <ol>
      <li>Migrez les configurations existantes de l’emplacement précédent vers le nouvel emplacement.
       <ul>
-       <li>Recréez manuellement de nouvelles configurations de Cloud Services de traduction via l’interface utilisateur de création AEM à l’adresse <strong>Outils &gt; Cloud Services &gt; Cloud Services de traduction</strong>.<br /> OU </li>
+       <li>Recréez manuellement de nouvelles configurations de Cloud Service de traduction via l’interface utilisateur de création AEM à l’adresse <strong>Outils &gt; Cloud Service &gt; Cloud Service de traduction</strong>.<br /> OU </li>
        <li>Copiez les nouvelles configurations de services cloud de traduction de l’emplacement précédent dans le nouvel emplacement (<code>/apps</code>, <code>/conf/global</code> ou <code>/conf/&lt;tenant&gt;</code>).</li>
       </ul> </li>
-     <li>Associez les configurations AEM applicables aux hiérarchies de contenu AEM.
+     <li>Associez les configurations d’AEM applicables aux hiérarchies de contenu AEM.
       <ol>
        <li>Hiérarchies de page AEM Sites via <strong>AEM Sites &gt; Page &gt; Propriétés de page &gt; Onglet avancé &gt; Configuration cloud</strong>.</li>
-       <li>AEM des hiérarchies de fragments d’expérience via <strong>AEM Fragments d’expérience &gt; Fragment d’expérience &gt; Propriétés &gt; Onglet Cloud Services &gt; Configuration cloud</strong>.</li>
-       <li>AEM des hiérarchies de dossiers de fragments d’expérience via <strong>AEM Fragments d’expérience &gt; Dossier &gt; Propriétés &gt; Onglet Cloud Services &gt; Configuration cloud</strong>.<br /> </li>
+       <li>AEM des hiérarchies de fragments d’expérience via <strong>AEM Fragments d’expérience &gt; Fragment d’expérience &gt; Propriétés &gt; Onglet Cloud Service &gt; Configuration cloud</strong>.</li>
+       <li>AEM des hiérarchies de dossiers de fragments d’expérience via <strong>AEM Fragments d’expérience &gt; Dossier &gt; Propriétés &gt; Onglet Cloud Service &gt; Configuration cloud</strong>.<br /> </li>
        <li>Hiérarchies des dossiers AEM Assets via <strong>AEM Assets &gt; Dossier &gt; Propriétés du dossier &gt; Onglet Services cloud &gt; Configuration</strong>.</li>
        <li>Projets AEM via <strong>Projets AEM &gt; Projet &gt; Propriétés du projet &gt; Onglet avancé &gt; Configuration cloud</strong>.</li>
       </ol> </li>
@@ -633,7 +629,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
      <li><code>/conf/global/settings/cloudconfigs/translations/translationcfg</code></li>
      <li><code>/apps/settings/cloudconfigs/translations/translationcfg</code></li>
      <li><code>/libs/settings/cloudconfigs/translations/translationcfg</code></li>
-    </ol> <p>Les Cloud Services de traduction migrés doivent être compatibles avec AEM 6.4.</p> </td>
+    </ol> <p>Les Cloud Service de traduction migrés doivent être compatibles avec AEM 6.4.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -744,7 +740,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 | **Emplacement précédent** | `/etc/replication/treeactivation` |
 |---|---|
 | **Nouveaux emplacements** | `/libs/replication/treeactivation` |
-| **Conseils de restructuration** | Aucune action requise. |
+| **Conseils de restructuration** | Aucune action n’est requise. |
 | **Remarques** | La console web d’activation de l’arborescence est désormais disponible via **Outils > Déploiement > Réplication > Activer l’arborescence**. |
 
 {style="table-layout:auto"}
@@ -769,14 +765,14 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
     <ol>
      <li>Migrez les configurations existantes de l’emplacement précédent vers le nouvel emplacement.
       <ul>
-       <li>Créez manuellement de nouvelles configurations de Cloud Services de connecteur de traduction de fournisseur via le <strong>AEM l’interface utilisateur de création sous Outils &gt; Cloud Services &gt; Cloud Services de traduction</strong>.<br /> OU </li>
+       <li>Créez manuellement de nouvelles configurations de Cloud Service de connecteur de traduction de fournisseur via le <strong>AEM l’interface utilisateur de création sous Outils &gt; Cloud Service &gt; Cloud Service de traduction</strong>.<br /> OU </li>
        <li>Copiez les nouvelles configurations des services cloud de connecteur de traduction de fournisseur de l’emplacement précédent dans le nouvel emplacement (<code>/apps</code>, <code>/conf/global </code> ou <code>/conf/&lt;tenant&gt;</code>).</li>
       </ul> </li>
-     <li>Associez les configurations AEM applicables aux hiérarchies de contenu AEM.
+     <li>Associez les configurations d’AEM applicables aux hiérarchies de contenu AEM.
       <ol>
        <li>Hiérarchies de page AEM Sites via <strong>AEM Sites &gt; Page &gt; Propriétés de page &gt; Onglet avancé &gt; Configuration cloud</strong>.</li>
-       <li>AEM des hiérarchies de fragments d’expérience via <strong>AEM Fragments d’expérience &gt; Fragment d’expérience &gt; Propriétés &gt; Onglet Cloud Services &gt; Configuration cloud</strong>.</li>
-       <li>AEM des hiérarchies de dossiers de fragments d’expérience via <strong>AEM Fragments d’expérience &gt; Dossier &gt; Propriétés &gt; Onglet Cloud Services &gt; Configuration cloud</strong>.</li>
+       <li>AEM des hiérarchies de fragments d’expérience via <strong>AEM Fragments d’expérience &gt; Fragment d’expérience &gt; Propriétés &gt; Onglet Cloud Service &gt; Configuration cloud</strong>.</li>
+       <li>AEM des hiérarchies de dossiers de fragments d’expérience via <strong>AEM Fragments d’expérience &gt; Dossier &gt; Propriétés &gt; Onglet Cloud Service &gt; Configuration cloud</strong>.</li>
        <li>Hiérarchies des dossiers AEM Assets via <strong>AEM Assets &gt; Dossier &gt; Propriétés du dossier &gt; Onglet Services cloud &gt; Configuration</strong>.</li>
        <li>Projets AEM via <strong>Projets AEM &gt; Projet &gt; Propriétés du projet &gt; Onglet avancé &gt; Configuration cloud</strong>.</li>
       </ol> </li>

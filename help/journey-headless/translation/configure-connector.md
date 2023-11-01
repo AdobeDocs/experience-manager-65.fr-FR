@@ -2,9 +2,9 @@
 title: Configuration de l’intégration de traduction
 description: Découvrez comment connecter AEM à un service de traduction.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
-source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1162'
 ht-degree: 97%
 
 ---
@@ -58,7 +58,7 @@ Si vous choisissez un autre fournisseur, votre administrateur doit installer le 
 >
 >Si vous choisissez d’utiliser le connecteur Microsoft Translator à des fins de test, il n’est pas nécessaire d’effectuer les étapes des deux sections suivantes : [Création d’une configuration d’intégration de traduction](#create-config) et [Association de la configuration à votre contenu.](#associate) Il est toutefois conseillé de lire ces sections afin de vous familiariser avec les étapes de configuration de votre connecteur préféré.
 >
->La licence d’évaluation du connecteur Microsoft Translator n’est pas destinée à la production et, si vous décidez de lui accorder une licence, l’administrateur système doit suivre les étapes présentées dans la section [Ressources supplémentaires](#additional-resources) à la fin de ce document afin de configurer cette licence.
+>La licence d’évaluation du connecteur Microsoft Translator n’est pas destinée à la production. Si vous décidez de vous procurer une licence, l’administrateur ou l’administratrice système doit suivre les étapes présentées dans la section [Ressources supplémentaires](#additional-resources) à la fin de ce document pour configurer la licence.
 
 ## Création d’une configuration d’intégration de traduction {#create-config}
 

@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '8189'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '8187'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 **À propos du service Encryption**
 
-Le service Encryption vous donne la possibilité de chiffrer et de déchiffrer des documents. Lorsqu’un document est chiffré, son contenu devient illisible. Un utilisateur autorisé peut déchiffrer le document pour accéder à son contenu. Si un document PDF est chiffré avec un mot de passe, l’utilisateur doit spécifier le mot de passe d’ouverture pour pouvoir visualiser le document dans Adobe Reader ou Adobe Acrobat. De même, si un document PDF est chiffré avec un certificat, l’utilisateur doit déchiffrer le document PDF avec la clé publique correspondant au certificat (clé privée) qui a été utilisé pour chiffrer le document PDF.
+Le service Encryption vous donne la possibilité de chiffrer et de déchiffrer des documents. Lorsqu’un document est chiffré, son contenu devient illisible. Un utilisateur autorisé peut déchiffrer le document pour accéder au contenu. Si un document PDF est chiffré avec un mot de passe, l’utilisateur doit spécifier le mot de passe d’ouverture pour pouvoir visualiser le document dans Adobe Reader ou Adobe Acrobat. De même, si un document de PDF est chiffré avec un certificat, l’utilisateur doit déchiffrer le document de PDF avec la clé publique correspondant au certificat (clé privée) utilisé pour chiffrer le document de PDF.
 
 Vous pouvez accomplir les tâches suivantes à l’aide du service Encryption :
 
@@ -245,7 +245,7 @@ Le chiffrement par certificat vous permet de chiffrer le document pour des desti
 
 L’une des clés fait office de clé privée pour l’utilisateur. Il est important que seul l’utilisateur ait accès à cette clé. L’autre clé est la clé publique de l’utilisateur, qui peut être partagée avec d’autres utilisateurs.
 
-Un certificat de clé publique contient la clé publique d’un utilisateur et ses données d’identification. Le format X.509 est utilisé pour le stockage de certificats. Les certificats sont généralement émis et signés numériquement par une autorité de certification, qui est une entité reconnue qui garantit la validité du certificat. Les certificats comportent une date d’expiration ; au-delà de cette date, ils ne sont plus valides. En outre, les listes de révocation des certificats (CRL) fournissent des informations sur les certificats révoqués avant leur date d’expiration. Les listes CRL sont modifiées régulièrement par des autorités de certification. Vous pouvez également récupérer l’état de révocation d’un certificat par l’intermédiaire du protocole OCSP (Online Certificate Status Protocol, protocole d’état de certificat en ligne) sur le réseau.
+Un certificat de clé publique contient la clé publique d’un utilisateur et ses données d’identification. Le format X.509 est utilisé pour le stockage des certificats. Les certificats sont généralement émis et signés numériquement par une autorité de certification, qui est une entité reconnue qui fournit une mesure de confiance dans la validité du certificat. Les certificats comportent une date d’expiration ; au-delà de cette date, ils ne sont plus valides. En outre, les listes de révocation des certificats (CRL) fournissent des informations sur les certificats révoqués avant leur date d’expiration. Les listes CRL sont publiées régulièrement par les autorités de certification. L’état de révocation d’un certificat peut également être récupéré via le protocole OCSP (Online Certificate Status Protocol) sur le réseau.
 
 >[!NOTE]
 >
@@ -807,7 +807,7 @@ Pour effectuer par programmation une opération de service Encryption, vous deve
 
 **Obtenir le document PDF chiffré**
 
-Vous devez obtenir un document PDF chiffré pour le déverrouiller. Si vous tentez de déverrouiller un document PDF non chiffré, une exception est générée.
+Vous devez obtenir un document de PDF chiffré pour le déverrouiller. Si vous tentez de déverrouiller un document PDF non chiffré, une exception est générée.
 
 **Déverrouiller le document**
 
@@ -944,13 +944,13 @@ Déverrouillez un document PDF chiffré à l’aide de l’API Encryption (servi
 
 ## Déterminer le type de chiffrement {#determining-encryption-type}
 
-Vous pouvez déterminer par programmation le type de chiffrement qui protège un document PDF à l’aide de l’API Java Encryption Service ou de l’API de service web Encryption Service. Il est parfois nécessaire de déterminer de manière dynamique si un document PDF est chiffré et, le cas échéant, le type de chiffrement. Vous pouvez, par exemple, déterminer si un document PDF est protégé par un chiffrement avec mot de passe ou par une stratégie de Rights Management.
+Vous pouvez déterminer par programmation le type de chiffrement qui protège un document PDF à l’aide de l’API Java Encryption Service ou de l’API de service web Encryption Service. Il est parfois nécessaire de déterminer de manière dynamique si un document PDF est chiffré et, le cas échéant, le type de chiffrement. Vous pouvez, par exemple, déterminer si un document PDF est protégé par un chiffrement avec mot de passe ou par une politique de Rights Management.
 
 Un document PDF peut être protégé par les types de chiffrement suivants :
 
 * Chiffrement par mot de passe
 * Chiffrement par certificat
-* Une stratégie créée par le service de Rights Management
+* Une politique créée par le service de Rights Management
 * Autre type de chiffrement
 
 >[!NOTE]
@@ -1002,7 +1002,7 @@ Vous pouvez déterminer le type de chiffrement qui protège un document PDF. Si 
 
 [Démarrages rapides de l’API du service Encryption](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
 
-[Protéger des documents à lʼaide de stratégies](/help/forms/developing/protecting-documents-policies.md#protecting-documents-with-policies)
+[Protéger des documents à lʼaide de politiques](/help/forms/developing/protecting-documents-policies.md#protecting-documents-with-policies)
 
 ### Déterminer le type de chiffrement à l’aide de l’API Java {#determine-the-encryption-type-using-the-java-api}
 

@@ -4,10 +4,10 @@ description: Découvrez comment effectuer une mise à niveau statique pour AEM 6
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1246'
-ht-degree: 47%
+source-wordcount: '1242'
+ht-degree: 43%
 
 ---
 
@@ -45,7 +45,7 @@ Avant d&#39;exécuter votre mise à niveau, plusieurs étapes doivent être réa
 
 Cette migration n’est pas requise si vous effectuez une mise à niveau à partir d’AEM 6.3. Pour les versions antérieures à la version 6.3, Adobe fournit un outil qui peut être utilisé pour migrer le référentiel vers la nouvelle version du Oak Segment Tar présent dans AEM 6.3. Il est fourni dans le cadre du module de démarrage rapide et est obligatoire pour toutes les mises à niveau qui utiliseront TarMK. Les mises à niveau pour les environnements qui utilisent MongoMK ne nécessitent pas de migration du référentiel. Pour plus d’informations sur les avantages du nouveau format Segment Tar, voir la section [FAQ sur la migration vers Oak Segment Tar](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
 
-La migration réelle est effectuée à l’aide du fichier JAR de démarrage rapide d’AEM, exécuté avec une nouvelle option `-x crx2oak`, qui exécute l’outil crx2oak afin de simplifier la mise à niveau et de la rendre plus robuste.
+La migration réelle est effectuée à l’aide du fichier jar de démarrage rapide standard d’AEM, exécuté avec une nouvelle `-x crx2oak` qui exécute l&#39;outil crx2oak pour simplifier la mise à niveau et la rendre plus robuste.
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ Veuillez ignorer cette section si vous effectuez une mise à niveau à partir de
 
 **Les points de contrôle ne seront pas copiés, car aucun entrepôt de données externe n’a été spécifié. Cela entraînera la réindexation complète du référentiel au premier démarrage. Utilisez —skip-checkpoints pour forcer la migration ou consultez https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration pour plus d’informations.**
 
-Pour une raison quelconque, le processus de migration doit accéder aux fichiers binaires de la banque de données et ne peut pas les trouver. Pour spécifier la configuration du magasin de données, incluez les indicateurs ci-dessous dans la partie `<<ADDITIONAL_FLAGS>>` de la commande de migration :
+Pour une raison quelconque, le processus de migration doit accéder aux fichiers binaires de la banque de données et ne peut pas les trouver. Pour spécifier la configuration de votre banque de données, incluez les indicateurs suivants dans la variable `<<ADDITIONAL_FLAGS>>` partie de la commande de migration :
 
 **Pour les magasins de données S3 :**
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '4956'
+source-wordcount: '4950'
 ht-degree: 63%
 
 ---
@@ -31,7 +31,7 @@ Pour plus d’informations sur la création de MBeans pour gérer vos services �
 Opérations d’administration des instances de workflow en cours d’exécution, terminées, obsolètes et ayant échoué.
 
 * Domaine : com.adobe.granite.workflow
-* Type : Maintenance
+* Type : maintenance
 
 >[!NOTE]
 >
@@ -41,21 +41,21 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
 **listRunningWorkflowsPerModel** Indique le nombre d’instances de workflows exécutées pour chaque modèle de workflow.
 
-* Arguments : none
-* Valeur renvoyée : Données tabulaires contenant les colonnes Count et ModelId.
+* Arguments : aucun
+* Valeur renvoyée : données tabulaires contenant les colonnes Count et ModelId.
 
 **listCompletedWorkflowsPerModel** Indique le nombre d’instances de workflows terminées pour chaque modèle de workflow.
 
-* Arguments : none
-* Valeur renvoyée : Données tabulaires contenant les colonnes Count et ModelId.
+* Arguments : aucun
+* Valeur renvoyée : données tabulaires contenant les colonnes Count et ModelId.
 
 **returnWorkflowQueueInfo** Répertorie les informations sur les éléments de workflows traités et mis en file d’attente pour le traitement.
 
-* Arguments : none
-* Valeur renvoyée : Données tabulaires contenant les colonnes suivantes :
+* Arguments : aucun
+* Valeur renvoyée : données sous forme de tableau contenant les colonnes suivantes :
 
    * Tâches
-   * Nom de la file d’attente
+   * Nom de la file
    * Activer les tâches
    * Temps de traitement moyen
    * Temps d’attente moyen
@@ -67,8 +67,8 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
 **returnWorkflowJobTopicInfo** Répertorie les informations de traitement des tâches de workflow, organisées par rubrique.
 
-* Arguments : none
-* Valeur renvoyée : Données tabulaires contenant les colonnes suivantes :
+* Arguments : aucun
+* Valeur renvoyée : données tabulaires contenant les colonnes suivantes :
 
    * Nom de la rubrique
    * Temps de traitement moyen
@@ -91,7 +91,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
 **returnFailedWorkflowCountPerModel** Affiche le nombre d’instances de workflow ayant échoué pour chaque modèle de workflow.
 
 * Arguments : aucun.
-* Valeur renvoyée : Données tabulaires contenant les colonnes Nombre et ID de modèle.
+* Valeur renvoyée : données tabulaires contenant les colonnes Nombre et ID de modèle.
 
 **terminateFailedInstances** Interrompt les instances de workflow ayant échoué. Vous pouvez interrompre toutes les instances ayant échoué ou uniquement les instances ayant échoué pour un modèle spécifique. Vous avez la possibilité de redémarrer les instances après les avoir interrompues. Vous pouvez également tester l’opération pour afficher les résultats sans effectuer réellement l’opération.
 
@@ -103,7 +103,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
-* Valeur renvoyée : Données sous forme de tableau concernant les instances interrompues, contenant les colonnes suivantes :
+* Valeur renvoyée : données sous forme de tableau concernant les instances interrompues, contenant les colonnes suivantes :
 
    * Initiateur
    * InstanceId
@@ -121,7 +121,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
-* Valeur renvoyée : Données tabulaires sur les tâches ayant échoué et qui ont été reprises, notamment les colonnes suivantes :
+* Valeur renvoyée : données sous forme de tableau relatives aux tâches ayant échoué et qui ont fait l’objet d’une nouvelle tentative, notamment les colonnes suivantes :
 
    * Initiateur
    * InstanceId
@@ -140,7 +140,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
    * Nombre de jours écoulés depuis le début du workflow : ancienneté des instances de workflows à purger, exprimée en jours.
    * Exécution d’essai : (facultatif) spécifiez la valeur `true` pour afficher les résultats de l’opération sans effectuer réellement l’opération. La valeur par défaut `false` entraîne l’exécution de l’opération.
 
-* Valeur renvoyée : Données tabulaires sur les principales instances de workflow purgées, y compris les colonnes suivantes :
+* Valeur renvoyée : données tabulaires sur les instances de workflow actives purgées, y compris les colonnes suivantes :
 
    * Initiateur
    * InstanceId
@@ -172,8 +172,8 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
 **fetchModelList** Répertorie tous les modèles de workflows.
 
-* Arguments : none
-* Valeur renvoyée : Données tabulaires qui identifient les modèles de workflow, y compris les colonnes ModelId et ModelName .
+* Arguments : aucun
+* Valeur renvoyée : données sous forme de tableau qui identifie les modèles de workflow, y compris les colonnes ModelId et ModelName .
 
 **countRunningWorkflows** Renvoie le nombre d’instances de workflows en cours d’exécution. Vous pouvez récupérer le nombre d’instances en cours d’exécution pour tous les modèles de workflow ou pour un modèle spécifique.
 
@@ -205,7 +205,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
    * Nombre de jours écoulés depuis la fin du workflow : nombre de jours pendant lesquels les instances de workflows ont eu le statut Terminé.
    * Exécution d’essai : (facultatif) spécifiez la valeur `true` pour afficher les résultats de l’opération sans effectuer réellement l’opération. La valeur par défaut `false` entraîne l’exécution de l’opération.
 
-* Valeur renvoyée : Données tabulaires sur les instances de workflow terminées purgées, y compris les colonnes suivantes :
+* Valeur renvoyée : données tabulaires sur les instances de workflow terminées purgées, y compris les colonnes suivantes :
 
    * Initiateur
    * InstanceId
@@ -219,7 +219,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
 Informations sur le référentiel CRX
 
 * Domaine : com.adobe.granite
-* Type : Référentiel
+* Type : référentiel
 
 ### Attributs {#attributes}
 
@@ -255,10 +255,10 @@ Informations sur le référentiel CRX
    <td>identifier.stability</td>
    <td>Indique la stabilité des identifiants de nœud non référençables. Les valeurs possibles sont les suivantes :
     <ul>
-     <li>identifier.stability.indefined.duration : Les identifiants ne changent pas.</li>
-     <li>identifier.stability.method.duration : Les identifiants peuvent changer entre les appels de méthode.</li>
-     <li>identifier.stability.save.duration : Les identifiants ne changent pas au cours d’un cycle d’enregistrement/actualisation.</li>
-     <li>identifier.stable.session.duration: Les identifiants ne changent pas au cours d’une session.</li>
+     <li>identifier.stability.indefined.duration : les identifiants ne changent pas.</li>
+     <li>identifier.stability.method.duration : les identifiants peuvent changer entre les appels de méthode.</li>
+     <li>identifier.stability.save.duration : les identifiants ne changent pas au cours d’un cycle d’enregistrement/actualisation.</li>
+     <li>identifier.stability.session.duration : les identifiants ne changent pas au cours d’une session.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -279,7 +279,7 @@ Informations sur le référentiel CRX
   </tr>
   <tr>
    <td>option.update.primary.node.type.supported</td>
-   <td>Indique si le type de nœud principal d’un nœud peut être modifié. La valeur true indique que vous pouvez modifier le type de noeud Principal et la valeur false indique que la modification n’est pas prise en charge.</td>
+   <td>Indique si le type de nœud principal d’un nœud peut être modifié. La valeur true indique que vous pouvez modifier le type de noeud principal et la valeur false indique que la modification n’est pas prise en charge.</td>
   </tr>
   <tr>
    <td>option.node.type.management.supported</td>
@@ -311,7 +311,7 @@ Informations sur le référentiel CRX
   </tr>
   <tr>
    <td>node.type.management.primary.item.name.supported</td>
-   <td>La valeur true indique que le référentiel permet aux définitions de nœud de contenir un élément principal en tant qu’enfant. Un élément Principal est accessible à l’aide de l’API sans connaître le nom de l’élément.</td>
+   <td>La valeur true indique que le référentiel permet aux définitions de nœud de contenir un élément principal en tant qu’enfant. Un élément principal est accessible à l’aide de l’API sans connaître son nom.</td>
   </tr>
   <tr>
    <td>level.2.supported</td>
@@ -375,7 +375,7 @@ Informations sur le référentiel CRX
   </tr>
   <tr>
    <td>crx.cluster.preferredMaster</td>
-   <td>La valeur true indique que ce noeud de grappe est le maître préféré de la grappe.</td>
+   <td>La valeur true indique que ce noeud est le maître préféré de la grappe.</td>
   </tr>
   <tr>
    <td>option.transactions.supported</td>
@@ -406,8 +406,8 @@ Informations sur le référentiel CRX
    <td><p>Niveau de prise en charge des jointures dans les requêtes. Les valeurs possibles sont les suivantes :</p>
     <ul>
      <li>query.joins.none : jointures non prises en charge. Les requêtes peuvent utiliser un seul sélecteur.</li>
-     <li>query.joins.inner : Prise en charge des jointures internes.</li>
-     <li>query.joins.inner.outer: Prise en charge des jointures internes et externes.</li>
+     <li>query.joins.inner : prise en charge des jointures internes.</li>
+     <li>query.joins.inner.outer : prise en charge des jointures internes et externes.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -505,11 +505,11 @@ Informations sur le référentiel CRX
 
 **BackupResult** Statut de la sauvegarde actuelle. Les valeurs possibles sont les suivantes :
 
-* Sauvegarde en cours : Une sauvegarde est en cours d’exécution.
-* Sauvegarde annulée : La sauvegarde a été annulée.
+* Sauvegarde en cours : une sauvegarde est en cours d&#39;exécution.
+* Sauvegarde annulée : la sauvegarde a été annulée.
 * Sauvegarde terminée avec une erreur : une erreur s’est produite lors de la sauvegarde. Le message d’erreur fournit des informations sur la cause.
-* Sauvegarde terminée : La sauvegarde a réussi.
-* Aucune sauvegarde exécutée jusqu&#39;à présent : Aucune sauvegarde n’est en cours.
+* Sauvegarde terminée : la sauvegarde a réussi.
+* Aucune sauvegarde exécutée jusqu’à présent : aucune sauvegarde en cours.
 
 Lecture seule.
 
@@ -533,7 +533,7 @@ Lecture seule.
 
 * Arguments :
 
-   * name: Une valeur String qui représente le nom du nouvel espace de travail.
+   * name : valeur String qui représente le nom du nouvel espace de travail.
 
 * Valeur renvoyée : aucune
 
@@ -547,7 +547,7 @@ Lecture seule.
 
 **stopDataStoreGarbageCollection** Arrête le nettoyage en cours d’un entrepôt de données.
 
-* Arguments : none
+* Arguments : aucun
 * Valeur renvoyée : représentation sous forme de chaîne de l’état actuel
 
 **startBackup** Sauvegarde les données du référentiel dans un fichier ZIP.
@@ -566,27 +566,27 @@ Lecture seule.
 
 **cancelBackup** Arrête le processus de sauvegarde en cours et supprime l’archive temporaire créée par le processus pour archiver les données.
 
-* Arguments : none
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
 **blockRepositoryWrites** Empêche d’apporter des modifications aux données du référentiel. Tous les écouteurs de sauvegarde du référentiel sont informés du bloc.
 
-* Arguments : none
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
 **unblockRepositoryWrites** Supprime le blocage du référentiel. Tous les écouteurs de sauvegarde du référentiel sont informés de la suppression du bloc.
 
-* Arguments : none
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
 **startTarOptimization** Commence le processus d’optimisation du fichier TAR à l’aide de la valeur par défaut pour tarOptimizationDelay.
 
-* Arguments : none
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
 **stopTarOptimization** Interrompt l’optimisation du fichier TAR.
 
-* Arguments : none
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
 **tarIndexMerge** Fusionne les fichiers d’index de niveau supérieur de tous les ensembles TAR. Les fichiers d’index de niveau supérieur sont des fichiers comportant des versions principales différentes. Par exemple, les fichiers ci-dessous sont fusionnés dans le fichier file index_3_1.tar: index_1_1.tar, index_2_0.tar, index_3_0.tar. Les fichiers fusionnés sont supprimés (dans l’exemple précédent, index_1_1.tar, index_2_0.taret index_3_0.tar sont supprimés).
@@ -599,7 +599,7 @@ Lecture seule.
 
 **becomeClusterMaster** Définit ce nœud de référentiel comme nœud maître du cluster. S’il n’est pas déjà le nœud principal, cette commande arrête le programme d’écoute de l’instance principale actuelle et démarre un programme d’écoute sur le nœud actuel. Ce nœud est ensuite défini comme nœud principal et redémarre, ce qui fait que tous les autres nœuds du cluster (c’est-à-dire ceux qui sont contrôlés par le nœud principal) se connectent à cette instance.
 
-* Arguments : none
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
 **joinCluster** Ajoute ce référentiel à un cluster en tant que nœud contrôlé par le nœud principal du cluster. Vous devez fournir un nom d’utilisateur et un mot de passe pour l’authentification. La connexion utilise l’authentification de base. Les informations d’identification de sécurité sont codées en base 64 avant d’être envoyées au serveur.
@@ -677,12 +677,12 @@ Informations statistiques sur les requêtes de référentiel.
 
 **clearSlowQueriesQueue** Supprime toutes les requêtes de la liste SlowQueries.
 
-* Arguments : none
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
 **clearPopularQueriesQueue** Supprime toutes les requêtes de la liste PopularQueries.
 
-* Arguments : none
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
 ## Agents de réplication {#replication-agents}
@@ -738,12 +738,12 @@ Lecture-écriture.
 
 **queueForceRetry** Pour les files d’attente bloquées, exécute la commande retry dans la file d’attente.
 
-* Arguments : none
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
 **queueClear** Supprime toutes les tâches de la file d’attente.
 
-* Arguments : none
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
 ## Moteur Sling {#sling-engine}
@@ -770,7 +770,7 @@ Fournit des statistiques sur les requêtes HTTP afin que vous puissiez surveille
 
 **resetStatistics** Définit toutes les statistiques sur zéro. Réinitialisez les statistiques lorsque vous devez analyser les performances de traitement des requêtes pendant une période spécifique.
 
-* Arguments : none
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
 **id** Représentation sous forme de chaîne de l’ID du package.
@@ -792,7 +792,7 @@ Fournit des statistiques sur les requêtes HTTP afin que vous puissiez surveille
 Informations sur le processus de démarrage et le lanceur de démarrage rapide.
 
 * Domaine : com.adobe.granite.quickstart
-* Type : Lanceur
+* Type : lanceur
 
 ### Opérations {#operations-5}
 
@@ -809,7 +809,7 @@ Arguments :
 
 Appelle la méthode startupFinished du lanceur du serveur. La méthode tente d’ouvrir la page d’accueil dans un navigateur web.
 
-* Arguments : none
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
 **startupProgress**
@@ -852,7 +852,7 @@ Plusieurs ressources de serveur tiers installent des beans gérés (MBeans), qui
      <li>MemoryManager</li>
      <li>MemoryPool</li>
      <li>OperatingSystem</li>
-     <li>Exécution</li>
+     <li>Runtime</li>
      <li>Thread</li>
     </ul> </td>
    <td>package <a href="https://docs.oracle.com/javase/8/docs/api/javax/management/package-summary.html">javax.management</a></td>
@@ -881,7 +881,7 @@ Plusieurs ressources de serveur tiers installent des beans gérés (MBeans), qui
 La console JMX affiche des informations sur plusieurs services exécutés sur le serveur :
 
 * Attributs : propriétés de service, comme des configurations ou des données d’exécution. Les attributs peuvent être en lecture seule ou en lecture-écriture.
-* Opérations : Commandes que vous pouvez appeler sur le service.
+* Opérations : commandes que vous pouvez appeler sur le service.
 
 Les MBeans déployés avec un service OSGi exposent les attributs et les opérations du service dans la console. Le MBean détermine les attributs et les opérations exposés et si les attributs sont en lecture seule ou en lecture/écriture.
 
@@ -944,7 +944,7 @@ Après la connexion au processus de démarrage rapide, JConsole fournit une gamm
 
 ![screen_shot_2012-03-26at115056am](assets/screen_shot_2012-03-26at115056am.png)
 
-Pour accéder aux options de surveillance et de configuration internes de CRX, cliquez sur l’onglet MBeans et, dans l’arborescence à gauche, sélectionnez la section Attributs ou Opérations qui vous intéresse. Par exemple, la section com.adobe.granite/Repository/Operations .
+Pour accéder aux options de configuration et de surveillance internes de CRX, accédez à l’onglet MBeans , puis, dans l’arborescence de contenu hiérarchique à gauche, sélectionnez la section Attributs ou Opérations qui vous intéresse. Par exemple, la section com.adobe.granite/Repository/Operations .
 
 Dans cette section, sélectionnez l’attribut ou l’opération de votre choix dans le volet de gauche.
 

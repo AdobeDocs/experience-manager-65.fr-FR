@@ -3,10 +3,10 @@ title: Prise en charge des cookies Same Site pour AEM 6.5
 description: Découvrez la prise en charge des cookies du même site pour AEM 6.5.
 topic-tags: security
 exl-id: e1616385-0855-4f70-b787-b01701929bbc
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 95%
+source-wordcount: '220'
+ht-degree: 88%
 
 ---
 
@@ -16,7 +16,7 @@ Depuis la version 80, Chrome et ultérieurement Safari ont introduit un nouveau
 
 La valeur par défaut de ce paramètre (`SameSite=Lax`) peut entraîner l’échec de l’authentification entre les instances ou services AEM. Ce dysfonctionnement est dû au fait que les domaines ou les structures d’URL de ces services peuvent ne pas être soumis aux contraintes de cette politique de cookies.
 
-Pour contourner ce problème, vous devez définir l’attribut de cookie `SameSite` sur `None` pour le jeton de connexion.
+Pour contourner ce problème, vous devez définir la variable `SameSite` attribut de cookie à `None` pour le jeton de connexion.
 
 >[!CAUTION]
 >

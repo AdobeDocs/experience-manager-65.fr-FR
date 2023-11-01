@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 62%
+source-wordcount: '1978'
+ht-degree: 60%
 
 ---
 
@@ -93,7 +93,7 @@ Lorsqu’il est affiché dans le cloud contextuel, le composant utilise une API 
 
 **Magasin JSONP** Un composant qui affiche le contenu qui dépend de votre installation.
 
-La norme JSONP est un complément de JSON qui permet de contourner la politique de même origine (ce qui empêche les applications Web de communiquer avec les serveurs se trouvant sur un autre domaine). Elle consiste à envelopper l’objet JSON dans un appel de fonction afin de pouvoir le charger sous forme de `<script>` à partir de l’autre domaine (ce qui est une exception autorisée de la politique de même origine).
+La norme JSONP est un complément de JSON qui permet de contourner la politique de même origine (ce qui empêche les applications Web de communiquer avec les serveurs se trouvant sur un autre domaine). Il consiste à encapsuler l’objet JSON dans un appel de fonction pour pouvoir le charger en tant que `<script>` de l’autre domaine (qui est une exception autorisée à la même stratégie d’origine).
 
   La boutique JSONP est semblable à n’importe quelle autre boutique, mais elle charge des informations issues d’un autre domaine sans avoir besoin d’un proxy pour ces informations sur le domaine actuel. Consultez l’exemple figurant dans la section [Stockage de données dans le contexte client via JSONP](/help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
 

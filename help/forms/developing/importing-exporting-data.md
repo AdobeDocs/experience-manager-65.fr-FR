@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
-workflow-type: ht
-source-wordcount: '2778'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '2774'
+ht-degree: 97%
 
 ---
 
@@ -31,8 +31,8 @@ Le service d’intégration des données de formulaire peut importer des donnée
 
 Les données de formulaire peuvent exister dans l’un des formats suivants en fonction du type de formulaire de PDF :
 
-* Un fichier XFDF, qui constitue une version XML du format de données de formulaire Acrobat.
-* Un fichier XDP, qui correspond à un fichier XML contenant des définitions de champ de formulaire. Ce fichier peut également inclure des données de champ de formulaire, ainsi qu’un fichier PDF incorporé. Un fichier XDP généré par Designer n’est utilisable que s’il incorpore un document PDF codé en base 64.
+* Un fichier XFDF, qui est une version XML du format de données de formulaire Acrobat.
+* Un fichier XDP, qui correspond à un fichier XML contenant des définitions de champ de formulaire. Il peut également contenir des données de champ de formulaire et un fichier de PDF incorporé. Un fichier XDP généré par Designer n’est utilisable que s’il incorpore un document PDF codé en base 64.
 
 Vous pouvez accomplir ces tâches à l’aide du service d’intégration des données de formulaire :
 
@@ -51,7 +51,7 @@ Pour importer des données dans un formulaire créé dans Designer, vous devez r
 
 ![ie_ie_loanformdata](assets/ie_ie_loanformdata.png)
 
-Pour importer des valeurs de données dans ce formulaire, vous devez disposer d’une source de données XML XDP valide correspondant au formulaire. Vous ne pouvez pas utiliser une source de données XML arbitraire pour importer des données dans un formulaire à l’aide du service d’intégration des données de formulaire. La différence entre une source de données XML arbitraire et une source de données XML XDP est qu’une source de données XDP est conforme à l’architecture Forms XML (XFA). Le code XML suivant représente une source de données XML XDP correspondant à l’exemple de formulaire de demande de prêt immobilier.
+Pour importer des valeurs de données dans ce formulaire, vous devez disposer d’une source de données XDP XML valide correspondant au formulaire. Vous ne pouvez pas utiliser une source de données XML arbitraire pour importer des données dans un formulaire à l’aide du service d’intégration des données de formulaire. La différence entre une source de données XML arbitraire et une source de données XML XDP est qu’une source de données XDP est conforme à l’architecture Forms XML (XFA). Le code XML suivant représente une source de données XML XDP correspondant à l’exemple de formulaire de demande de prêt immobilier.
 
 ```xml
  <?xml version="1.0" encoding="UTF-8" ?>

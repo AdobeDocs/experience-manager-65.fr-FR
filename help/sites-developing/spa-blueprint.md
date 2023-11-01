@@ -1,23 +1,19 @@
 ---
-title: Plan directeur d’applications sur une seule page (SPA)
-seo-title: SPA Blueprint
-description: Ce document décrit le contrat général et indépendant du framework que tout framework de SPA devrait respecter afin de mettre en œuvre des composants de SPA modifiables dans AEM.
-seo-description: This document describes the general, framework-independent contract that any SPA framework should fulfill in order to implement editable SPA components within AEM.
-uuid: 48f2d415-ec34-49dc-a8e1-6feb5a8a5bbe
+title: Plan directeur d’applications d’une seule page (SPA)
+description: Ce document décrit le contrat général et indépendant du framework que tout framework SPA doit respecter pour mettre en oeuvre des composants SPA modifiables dans les AEM d’.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2080'
-ht-degree: 94%
+source-wordcount: '2074'
+ht-degree: 96%
 
 ---
 
-# Plan directeur d’applications sur une seule page (SPA){#spa-blueprint}
+# Plan directeur d’applications d’une seule page (SPA){#spa-blueprint}
 
 Pour permettre à l’auteur d’utiliser l’éditeur de SPA AEM en vue de modifier le contenu d’une application d’une seule page (SPA), cette dernière doit satisfaire certaines exigences, qui sont décrites dans ce document.
 
@@ -27,11 +23,11 @@ Pour permettre à l’auteur d’utiliser l’éditeur de SPA AEM en vue de modi
 
 ## Présentation {#introduction}
 
-Ce document décrit le contrat général que tout framework de SPA devrait respecter (c’est-à-dire le type de couche de support AEM) afin de mettre en œuvre des composants de SPA modifiables dans AEM.
+Ce document décrit le contrat général que tout framework SPA doit respecter (c’est-à-dire le type de couche de prise en charge AEM) pour mettre en oeuvre des composants de SPA modifiables dans.
 
 >[!NOTE]
 >
->Les exigences suivantes sont indépendantes du framework. Si ces conditions sont remplies, une couche spécifique à la structure composée de modules, composants et services peut être fournie.
+>Les exigences suivantes sont indépendantes du framework. Si ces conditions sont remplies, un calque spécifique au framework composé de modules, composants et services peut être fourni.
 >
 >**Ces exigences sont déjà respectées pour les frameworks React et Angular dans AEM.** Les exigences de ce plan directeur ne sont pertinentes que si vous voulez mettre en œuvre un autre framework à utiliser avec AEM.
 
@@ -61,7 +57,7 @@ Chaque élément présent dans le modèle contient un champ `:type` qui expose u
 
 #### Mappage dynamique de modèle à composant {#dynamic-model-to-component-mapping}
 
-Pour plus d’informations sur la façon dont le mappage du modèle dynamique avec les composants se produit dans le SDK SPA JavaScript pour AEM voir l’article [Mappage du modèle dynamique avec le composant pour SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+Vous trouverez des explications sur le mappage dynamique de modèle à composant dans le SDK SPA JavaScript pour AEM dans l’article [Mappage dynamique de modèle à composant pour SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
 ### Couche spécifique au framework {#framework-specific-layer}
 
@@ -118,7 +114,7 @@ Les entités suivantes devraient être mises en œuvre conformément aux directi
 
 Les composants du projet doivent déléguer l’accès aux fragments d’un modèle à un fournisseur de modèles. Le fournisseur de modèles assure alors l’écoute des modifications apportées au fragment spécifié du modèle et le retour du modèle mis à jour au composant délégateur.
 
-Le fournisseur de modèles doit pour cela être inscrit auprès de ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)`. Ensuite, lorsqu’une modification se produit, elle reçoit et transmet les données mises à jour au composant délégateur. Par convention, la propriété mise à la disposition du composant délégateur qui transportera le fragment de modèle est nommée `cqModel`. L’implémentation peut fournir cette propriété au composant, mais doit tenir compte d’aspects tels que l’intégration à l’architecture du framework, la capacité de découverte et la facilité d’utilisation.
+Le fournisseur de modèles doit pour cela être inscrit auprès de ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)`. Ensuite, lorsqu’une modification se produit, il reçoit et transmet les données mises à jour au composant délégateur. Par convention, la propriété mise à la disposition du composant délégateur qui transportera le fragment de modèle est nommée `cqModel`. L’implémentation peut fournir cette propriété au composant, mais doit tenir compte d’aspects tels que l’intégration à l’architecture du framework, la capacité de découverte et la facilité d’utilisation.
 
 ### Le décorateur HTML du composant {#the-component-html-decorator}
 
@@ -236,7 +232,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 Les composants de projet doivent générer au minimum les attributs de données suivants pour permettre à l’éditeur d’interagir avec eux.
 
-* `data-cq-data-path`: Chemin d’accès relatif du composant tel qu’il est fourni par la variable `PageModel` (par exemple, `"root/responsivegrid/image"`). Cet attribut ne doit pas être ajouté aux pages.
+* `data-cq-data-path`: chemin d’accès relatif du composant, tel qu’il est fourni par la fonction `PageModel` (par exemple, `"root/responsivegrid/image"`). Cet attribut ne doit pas être ajouté aux pages.
 
 En résumé, pour pouvoir être identifié comme modifiable par l’éditeur de page, un composant de projet doit respecter le contrat suivant :
 

@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: ht
-source-wordcount: '10805'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '10801'
+ht-degree: 99%
 
 ---
 
@@ -37,7 +37,7 @@ Le service Endpoint Registry permet de gérer les points d’entrée par program
 >
 >Les points d’entrée SOAP, EJB et (obsolète pour AEM Forms sur JEE) Remoting sont automatiquement créés pour chaque service activé. Les points d’entrée SOAP et EJB activent SOAP et EJB pour toutes les opérations de service.
 
-Un point d’entrée Remoting permet aux clients Flex d’appeler des opérations sur le service AEM Forms auquel le point d’entrée est ajouté. Une destination Flex portant le même nom que le point de fin est créée, ce qui permet aux clients Flex de créer des objets distants pointant vers cette destination afin d’appeler des opérations sur le service adéquat.
+Un point d’entrée Remoting permet aux clients Flex d’appeler des opérations sur le service AEM Forms auquel le point d’entrée est ajouté. Une destination Flex portant le même nom que le point d’entrée est créée, ce qui permet aux clients Flex de créer des objets distants pointant vers cette destination afin d’appeler des opérations sur le service adéquat.
 
 Les points d’entrée Email, Task Manager et Watched Folder n’exposent qu’une opération spécifique du service. L’ajout de ces points d’entrée nécessite une seconde étape de configuration pour sélectionner une méthode d’appel du service, la définition de paramètres de configuration et la spécification des mappages de paramètres d’entrée et de sortie.
 
@@ -73,8 +73,8 @@ Pour ajouter un point d’entrée EJB à un service, effectuez les tâches suiva
 
 1. Incluez les fichiers de projet.
 1. Créez un objet `EndpointRegistry Client`.
-1. Définissez les attributs du point de terminaison EJB.
-1. Créez un point de terminaison EJB.
+1. Définissez les attributs du point d’entrée EJB.
+1. Créez un point d’entrée EJB.
 1. Activez le point d’entrée.
 
 **Inclure les fichiers de projet**
@@ -90,37 +90,37 @@ Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclure de
 
 **Créez un objet client EndpointRegistry**
 
-Avant de pouvoir ajouter un point de terminaison EJB par programmation, vous devez créer un objet `EndpointRegistryClient`.
+Avant de pouvoir ajouter un point d’entrée EJB par programmation, vous devez créer un objet `EndpointRegistryClient`.
 
-**Définissez les attributs du point de terminaison EJB**
+**Définissez les attributs du point d’entrée EJB**
 
-Pour créer un point de terminaison EJB pour un service, spécifiez les valeurs suivantes :
+Pour créer un point d’entrée EJB pour un service, spécifiez les valeurs suivantes :
 
-* **Identifiant du connecteur** : indique le type de point de terminaison à créer. Pour créer un point de terminaison EJB, spécifiez `EJB`.
-* **Description** : indique la description du point de terminaison.
-* **Nom** : indique le nom du point de terminaison.
-* **Identifiant du service** : indique le service auquel appartient le point de terminaison.
-* **Nom de l’opération** : indique le nom de l’opération appelée à l’aide du point de terminaison. Lors de la création d’un point de terminaison EJB, spécifiez un caractère générique (`*`). Cependant, si vous souhaitez indiquer une opération spécifique plutôt que d’appeler toutes les opérations de service, indiquez le nom de l’opération au lieu d’utiliser le caractère générique (`*`).
+* **Identifiant du connecteur** : indique le type de point d’entrée à créer. Pour créer un point d’entrée EJB, spécifiez `EJB`.
+* **Description** : indique la description du point d’entrée.
+* **Nom** : indique le nom du point d’entrée.
+* **Identifiant du service** : indique le service auquel appartient le point d’entrée.
+* **Nom de l’opération** : indique le nom de l’opération appelée à l’aide du point d’entrée. Lors de la création d’un point d’entrée EJB, spécifiez un caractère générique (`*`). Cependant, si vous souhaitez indiquer une opération spécifique plutôt que d’appeler toutes les opérations de service, indiquez le nom de l’opération au lieu d’utiliser le caractère générique (`*`).
 
-**Créez un point de terminaison EJB**
+**Créez un point d’entrée EJB**
 
-Après avoir défini les attributs du point de terminaison EJB, vous pouvez créer un point de terminaison EJB pour un service.
+Après avoir défini les attributs du point d’entrée EJB, vous pouvez créer un point d’entrée EJB pour un service.
 
-**Activez le point de terminaison**
+**Activez le point d’entrée**
 
-Après avoir créé un nouveau point d’entrée, vous devez l’activer. Une fois le point de terminaison activé, il peut être utilisé pour appeler le service. Une fois le point de terminaison activé, vous pouvez l’afficher dans la console d’administration.
+Après avoir créé un nouveau point d’entrée, vous devez l’activer. Une fois le point d’entrée activé, il peut être utilisé pour appeler le service. Une fois le point d’entrée activé, vous pouvez l’afficher dans la console d’administration.
 
 **Voir également**
 
-[Ajouter un point de terminaison EJB à l’aide de l’API Java](programmatically-endpoints.md#adding-an-ejb-endpoint-using-the-java-api)
+[Ajouter un point d’entrée EJB à l’aide de l’API Java](programmatically-endpoints.md#adding-an-ejb-endpoint-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Ajouter un point de terminaison EJB à l’aide de l’API Java {#adding-an-ejb-endpoint-using-the-java-api}
+### Ajouter un point d’entrée EJB à l’aide de l’API Java {#adding-an-ejb-endpoint-using-the-java-api}
 
-Ajoutez un point de terminaison EJB à l’aide de l’API Java :
+Ajoutez un point d’entrée EJB à l’aide de l’API Java :
 
 1. Incluez les fichiers de projet.
 
@@ -131,22 +131,22 @@ Ajoutez un point de terminaison EJB à l’aide de l’API Java :
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `EndpointRegistryClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
 
-1. Définissez les attributs du point de terminaison EJB.
+1. Définissez les attributs du point d’entrée EJB.
 
    * Créez un objet `CreateEndpointInfo` en utilisant son constructeur.
    * Spécifiez la valeur de l’identificateur du connecteur en appelant la méthode `setConnectorId` de l’objet `CreateEndpointInfo` et en transmettant la valeur de chaîne `EJB`.
    * Spécifiez la description du point d’entrée en appelant la méthode `setDescription` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui décrit le point d’entrée.
    * Indiquez le nom du point d’entrée en appelant la méthode `setName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom.
-   * Spécifiez le service auquel appartient le point de terminaison en appelant la méthode `CreateEndpointInfo` de l’objet `setServiceId` et en transmettant une valeur string spécifiant le nom du service.
-   * Spécifiez l’opération appelée en appelant la méthode `CreateEndpointInfo` de l’objet `setOperationName` et en transmettant une valeur string qui spécifie le nom de l’opération. Pour les points de terminaison SOAP et EJB, spécifiez un caractère générique (`*`) qui implique toutes les opérations.
+   * Spécifiez le service auquel appartient le point d’entrée en appelant la méthode `CreateEndpointInfo` de l’objet `setServiceId` et en transmettant une valeur string spécifiant le nom du service.
+   * Spécifiez l’opération appelée en appelant la méthode `CreateEndpointInfo` de l’objet `setOperationName` et en transmettant une valeur string qui spécifie le nom de l’opération. Pour les points d’entrée SOAP et EJB, spécifiez un caractère générique (`*`) qui implique toutes les opérations.
 
-1. Créez un point de terminaison EJB.
+1. Créez un point d’entrée EJB.
 
-   Créez le point de terminaison en appelant la méthode `EndpointRegistryClient` de l’objet `createEndpoint` et en transmettant l’objet `CreateEndpointInfo`. Cette méthode renvoie un objet `Endpoint` représentant le nouveau point de terminaison EJB.
+   Créez le point d’entrée en appelant la méthode `EndpointRegistryClient` de l’objet `createEndpoint` et en transmettant l’objet `CreateEndpointInfo`. Cette méthode renvoie un objet `Endpoint` représentant le nouveau point d’entrée EJB.
 
 1. Activez le point d’entrée.
 
-   Activez le point de terminaison en appelant la méthode d’activation `EndpointRegistryClient` de l’objet et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
+   Activez le point d’entrée en appelant la méthode d’activation `EndpointRegistryClient` de l’objet et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
 
 **Voir également**
 
@@ -158,13 +158,13 @@ Ajoutez un point de terminaison EJB à l’aide de l’API Java :
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Ajouter des points de terminaison SOAP {#adding-soap-endpoints}
+## Ajouter des points d’entrée SOAP {#adding-soap-endpoints}
 
-Vous pouvez ajouter par programmation un point de terminaison SOAP à un service à l’aide de l’API Java AEM Forms. En ajoutant un point de terminaison SOAP, vous permettez à une application cliente d’appeler le service à l’aide du mode SOAP. En d’autres termes, lorsque vous définissez les propriétés de connexion requises pour appeler AEM Forms, vous pouvez sélectionner le mode SOAP.
+Vous pouvez ajouter par programmation un point d’entrée SOAP à un service à l’aide de l’API Java AEM Forms. En ajoutant un point d’entrée SOAP, vous permettez à une application cliente d’appeler le service à l’aide du mode SOAP. En d’autres termes, lorsque vous définissez les propriétés de connexion requises pour appeler AEM Forms, vous pouvez sélectionner le mode SOAP.
 
 >[!NOTE]
 >
->Vous ne pouvez pas ajouter de point de terminaison SOAP à l’aide de services web.
+>Vous ne pouvez pas ajouter de point d’entrée SOAP à l’aide de services web.
 
 >[!NOTE]
 >
@@ -247,11 +247,11 @@ Ajoutez un point d’entrée SOAP à un service à l’aide de l’API Java :
 
 1. Créez un point d’entrée SOAP.
 
-   Créez le point d’entrée en appelant la méthode `createEndpoint` de l’objet `EndpointRegistryClient` et en transmettant l’objet `CreateEndpointInfo`. Cette méthode renvoie un objet `Endpoint` représentant le nouveau point de terminaison SOAP.
+   Créez le point d’entrée en appelant la méthode `createEndpoint` de l’objet `EndpointRegistryClient` et en transmettant l’objet `CreateEndpointInfo`. Cette méthode renvoie un objet `Endpoint` représentant le nouveau point d’entrée SOAP.
 
 1. Activez le point d’entrée.
 
-   Activez le point de terminaison en appelant la méthode d’activation `EndpointRegistryClient` de l’objet et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
+   Activez le point d’entrée en appelant la méthode d’activation `EndpointRegistryClient` de l’objet et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
 
 **Voir également**
 
@@ -263,11 +263,11 @@ Ajoutez un point d’entrée SOAP à un service à l’aide de l’API Java :
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Ajouter des points de terminaison Watched Folder {#adding-watched-folder-endpoints}
+## Ajouter des points d’entrée Watched Folder {#adding-watched-folder-endpoints}
 
-Vous pouvez ajouter par programmation un point de terminaison Watched Folder à un service à l’aide de l’API Java AEM Forms. L’ajout d’un point de terminaison Watched Folder permet aux utilisateurs de placer un fichier (un fichier PDF, par exemple) dans un dossier. Lorsque le fichier est placé dans le dossier, le service configuré est alors appelé et manipule le fichier. Après que le service a effectué l’opération spécifiée, il enregistre le fichier modifié dans un dossier de sortie spécifié. Un dossier de contrôle est configuré pour être analysé à intervalles fixes ou selon une planification cron, par exemple tous les lundis, mercredis et vendredis à midi.
+Vous pouvez ajouter par programmation un point d’entrée Watched Folder à un service à l’aide de l’API Java AEM Forms. L’ajout d’un point d’entrée Watched Folder permet aux utilisateurs de placer un fichier (un fichier PDF, par exemple) dans un dossier. Lorsque le fichier est placé dans le dossier, le service configuré est alors appelé et manipule le fichier. Après que le service a effectué l’opération spécifiée, il enregistre le fichier modifié dans un dossier de sortie spécifié. Un dossier de contrôle est configuré pour être analysé à intervalles fixes ou selon une planification cron, par exemple tous les lundis, mercredis et vendredis à midi.
 
-Pour ajouter par programmation un point de fin Watched Folder à un service, prenez en compte le processus de courte durée suivant nommé *EncryptDocument*. (Voir [Comprendre les processus AEM Forms](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).)
+Pour ajouter par programmation un point d’entrée Watched Folder à un service, prenez en compte le processus de courte durée suivant nommé *EncryptDocument*. (Voir [Comprendre les processus AEM Forms](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).)
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
@@ -275,19 +275,19 @@ Ce processus accepte un document PDF non sécurisé comme valeur d’entrée, pu
 
 >[!NOTE]
 >
->Vous ne pouvez pas ajouter de point de terminaison Watched Folder à l’aide de services web.
+>Vous ne pouvez pas ajouter de point d’entrée Watched Folder à l’aide de services web.
 
 ### Résumé des étapes {#summary_of_steps-2}
 
-Pour ajouter un point de terminaison Watched Folder à un service, effectuez les tâches suivantes :
+Pour ajouter un point d’entrée Watched Folder à un service, effectuez les tâches suivantes :
 
 1. Incluez les fichiers de projet.
 1. Créez un objet `EndpointRegistryClient`.
-1. Définissez les attributs du point de terminaison Watched Folder.
+1. Définissez les attributs du point d’entrée Watched Folder.
 1. Spécifiez les valeurs de configuration.
 1. Définissez les valeurs des paramètres d’entrée.
 1. Définissez une valeur de paramètre de sortie.
-1. Créez un point de terminaison Watched Folder.
+1. Créez un point d’entrée Watched Folder.
 1. Activez le point d’entrée.
 
 **Incluez les fichiers de projet**
@@ -305,28 +305,28 @@ Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclure de
 
 **Créez un objet client EndpointRegistry**
 
-Pour ajouter par programmation un point de terminaison Watched Folder, vous devez créer un objet `EndpointRegistryClient`.
+Pour ajouter par programmation un point d’entrée Watched Folder, vous devez créer un objet `EndpointRegistryClient`.
 
-**Définissez les attributs du point de terminaison Watched Folder**
+**Définissez les attributs du point d’entrée Watched Folder**
 
-Pour créer un point de terminaison Watched Folder pour un service, spécifiez les valeurs suivantes :
+Pour créer un point d’entrée Watched Folder pour un service, spécifiez les valeurs suivantes :
 
-* **Identifiant du connecteur** : indique le type de point de terminaison créé. Pour créer un point de terminaison Watched Folder, spécifiez `WatchedFolder`.
-* **Description** : indique la description du point de terminaison.
-* **Nom :** indique le nom du point de terminaison.
-* **Identifiant du service** : indique le service auquel appartient le point de terminaison. Par exemple, pour ajouter un point de terminaison Watched Folder au processus présenté dans cette section (un processus devient un service lorsqu’il est activé à l’aide de Workbench), spécifiez `EncryptDocument`.
-* **Nom de l’opération** : indique le nom de l’opération appelée à l’aide du point de terminaison. En règle générale, lors de la création d’un point de terminaison Watched Folder pour un service issu d’un processus créé dans Workbench, le nom de l’opération est `invoke`.
+* **Identifiant du connecteur** : indique le type de point d’entrée créé. Pour créer un point d’entrée Watched Folder, spécifiez `WatchedFolder`.
+* **Description** : indique la description du point d’entrée.
+* **Nom :** indique le nom du point d’entrée.
+* **Identifiant du service** : indique le service auquel appartient le point d’entrée. Par exemple, pour ajouter un point d’entrée Watched Folder au processus présenté dans cette section (un processus devient un service lorsqu’il est activé à l’aide de Workbench), spécifiez `EncryptDocument`.
+* **Nom de l’opération** : indique le nom de l’opération appelée à l’aide du point d’entrée. En règle générale, lors de la création d’un point d’entrée Watched Folder pour un service issu d’un processus créé dans Workbench, le nom de l’opération est `invoke`.
 
 **Définissez les valeurs de configuration**
 
-Vous devez spécifier des valeurs de configuration pour un point de terminaison Watched Folder lors de l’ajout par programmation d’un point de terminaison Watched Folder à un service. Ces valeurs de configuration sont spécifiées par un administrateur si un point de terminaison Watched Folder est ajouté à l’aide de la console d’administration.
+Vous devez spécifier des valeurs de configuration pour un point d’entrée Watched Folder lors de l’ajout par programmation d’un point d’entrée Watched Folder à un service. Ces valeurs de configuration sont spécifiées par un administrateur si un point d’entrée Watched Folder est ajouté à l’aide de la console d’administration.
 
-La liste suivante spécifie les valeurs de configuration définies lors de l’ajout par programmation d’un point de terminaison Watched Folder à un service :
+La liste suivante spécifie les valeurs de configuration définies lors de l’ajout par programmation d’un point d’entrée Watched Folder à un service :
 
 * **URL** : indique l’emplacement du dossier surveillé. Dans un environnement organisé en grappe, ce paramètre doit pointer vers un dossier réseau partagé accessible à tous les ordinateurs de la grappe.
 * **Asynchrone** : identifie le type d’invocation comme étant asynchrone ou synchrone. Les processus provisoires et synchrones peuvent être appelés uniquement de façon synchrone. La valeur par défaut est true. Asynchrone est recommandé.
 * **cronExpression** : utilisé par quartz pour planifier l’interrogation du répertoire d’entrée.
-* **purgeDuration** : il s’agit d’un attribut obligatoire. Les fichiers et les sous-dossiers du dossier Résultats sont vidés lorsqu’ils sont plus anciens que cette valeur. Cette valeur est mesurée en jours. Grâce à ce paramètre, le dossier obtenu n’est jamais plein. La valeur -1 jour indique de ne jamais supprimer le dossier result. La valeur par défaut est -1.
+* **purgeDuration** : il s’agit d’un attribut obligatoire. Les fichiers et les sous-dossiers du dossier Résultats sont vidés lorsqu’ils sont plus anciens que cette valeur. Cette valeur est mesurée en jours. Grâce à ce paramètre, le dossier obtenu n’est jamais plein. Une valeur de -1 jour indique de ne jamais supprimer le dossier de résultats. La valeur par défaut est -1.
 * **repeatInterval** : intervalle (en secondes) entre les analyses du dossier de contrôle d’entrée. A moins que le paramètre Ralentissement ne soit activé, cette valeur doit être supérieure à la durée du traitement d’une tâche moyenne, faute de quoi le système risque d’être surchargé. La valeur par défaut est 5.
 * **repeatCount** : nombre d’analyses du dossier ou du répertoire par un dossier de contrôle. La valeur -1 indique une analyse indéfinie. La valeur par défaut est -1.
 * **throttleOn** : limite le nombre de tâches du dossier de contrôle pouvant être traitées à un moment donné. La valeur batchSize (taille du lot) détermine le nombre maximal de tâches.
@@ -381,7 +381,7 @@ Après avoir défini les attributs du point d’entrée, les valeurs de configur
 
 **Activer le point d’entrée**
 
-Après avoir créé un point d’entrée Watched Folder, vous devez l’activer. Lorsque le point d’entrée est activé, il peut être utilisé pour appeler le service. Une fois le point de terminaison activé, vous pouvez l’afficher dans la console d’administration.
+Après avoir créé un point d’entrée Watched Folder, vous devez l’activer. Lorsque le point d’entrée est activé, il peut être utilisé pour appeler le service. Une fois le point d’entrée activé, vous pouvez l’afficher dans la console d’administration.
 
 **Voir également**
 
@@ -404,7 +404,7 @@ Ajoutez un point d’entrée Watched Folder à l’aide de l’API Java AEM Form
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `EndpointRegistryClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
 
-1. Définissez les attributs du point de terminaison Watched Folder.
+1. Définissez les attributs du point d’entrée Watched Folder.
 
    * Créez un objet `CreateEndpointInfo` en utilisant son constructeur.
    * Spécifiez la valeur de l’identificateur du connecteur en appelant la méthode `setConnectorId` de l’objet `CreateEndpointInfo` et en transmettant la valeur de chaîne `WatchedFolder`.
@@ -445,13 +445,13 @@ Ajoutez un point d’entrée Watched Folder à l’aide de l’API Java AEM Form
    * Valeur string qui spécifie le type de données du paramètre de sortie. Par exemple, le type de données du paramètre de sortie `SecuredDoc` est `com.adobe.idp.Document`.
    * Valeur string qui spécifie le type de mappage. Par exemple, vous pouvez spécifier `%F.pdf`.
 
-1. Créez un point de terminaison Watched Folder.
+1. Créez un point d’entrée Watched Folder.
 
    Créez le point d’entrée en appelant la méthode `createEndpoint` de l’objet `EndpointRegistryClient` et en transmettant l’objet `CreateEndpointInfo`. Cette méthode renvoie un objet `Endpoint` qui représente le point d’entrée Watched Folder.
 
 1. Activez le point d’entrée.
 
-   Activez le point de terminaison en appelant la méthode `EndpointRegistryClient` de l’objet `enable` et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
+   Activez le point d’entrée en appelant la méthode `enable` de l’objet `EndpointRegistryClient` et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
 
 **Voir également**
 
@@ -465,7 +465,7 @@ Ajoutez un point d’entrée Watched Folder à l’aide de l’API Java AEM Form
 
 ### Fichier constant des valeurs de configuration du dossier de contrôle {#watched-folder-configuration-values-constant-file}
 
-Le [QuickStart : ajouter un point de terminaison Watched Folder à l’aide de l’API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) utilise un fichier constant qui doit faire partie de votre projet Java pour compiler le démarrage rapide. Ce fichier constant représente les valeurs de configuration qui doivent être définies lors de l’ajout d’un point de terminaison Watched Folder. Le code Java suivant représente le fichier constant.
+La variable [QuickStart : ajout d’un point de fin Watched Folder à l’aide de l’API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) utilise un fichier constant qui doit faire partie de votre projet Java pour compiler le démarrage rapide. Ce fichier constant représente les valeurs de configuration qui doivent être définies lors de l’ajout d’un point d’entrée Watched Folder. Le code Java suivant représente le fichier constant.
 
 ```java
  /**
@@ -496,11 +496,11 @@ Le [QuickStart : ajouter un point de terminaison Watched Folder à l’aide de 
         }
 ```
 
-## Ajouter des points de terminaison de courrier électronique {#adding-email-endpoints}
+## Ajouter des points d’entrée de courrier électronique {#adding-email-endpoints}
 
-Vous pouvez ajouter par programmation un point de terminaison de courrier électronique à un service à l’aide de l’API Java AEM Forms. En ajoutant un point de terminaison de courrier électronique, vous permettez aux utilisateurs d’envoyer un message électronique contenant une ou plusieurs pièces jointes à un compte de messagerie spécifié. Ensuite, l’opération de configuration du service est appelée et manipule les fichiers. Une fois que le service a effectué l’opération spécifiée, il envoie un message électronique à l’expéditeur avec les fichiers modifiés comme pièces jointes.
+Vous pouvez ajouter par programmation un point d’entrée de courrier électronique à un service à l’aide de l’API Java AEM Forms. En ajoutant un point d’entrée de courrier électronique, vous permettez aux utilisateurs d’envoyer un message électronique contenant une ou plusieurs pièces jointes à un compte de messagerie spécifié. Ensuite, l’opération de configuration du service est appelée et manipule les fichiers. Une fois que le service a effectué l’opération spécifiée, il envoie un message électronique à l’expéditeur avec les fichiers modifiés comme pièces jointes.
 
-Pour ajouter par programmation un point de terminaison de courrier électronique à un service, considérez le processus de courte durée suivant nommé *MyApplication\EncryptDocument*. Pour plus d’informations sur les processus de courte durée, voir [Comprendre les processus AEM Forms](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).
+Pour ajouter par programmation un point d’entrée de courrier électronique à un service, considérez le processus de courte durée suivant nommé *MyApplication\EncryptDocument*. Pour plus d’informations sur les processus de courte durée, voir [Comprendre les processus AEM Forms](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
@@ -508,11 +508,11 @@ Ce processus accepte un document PDF non sécurisé comme valeur d’entrée, pu
 
 >[!NOTE]
 >
->Vous ne pouvez pas ajouter de point de terminaison de courrier électronique à l’aide de services web.
+>Vous ne pouvez pas ajouter de point d’entrée de courrier électronique à l’aide de services web.
 
 ### Résumé des étapes {#summary_of_steps-3}
 
-Pour ajouter un point de terminaison de courrier électronique à un service, effectuez les tâches suivantes :
+Pour ajouter un point d’entrée de courrier électronique à un service, effectuez les tâches suivantes :
 
 1. Incluez les fichiers de projet.
 1. Créez un objet `EndpointRegistryClient`.
@@ -564,7 +564,7 @@ Les valeurs de configuration suivantes sont définies lors de l’ajout par prog
 * **repeatCount** : nombre d’analyses du dossier ou du répertoire par le point d’entrée de courrier électronique. La valeur -1 indique une analyse indéfinie. La valeur par défaut est -1.
 * **repeatInterval** : taux d’analyse (en secondes) que le destinataire utilise pour vérifier le courrier entrant. La valeur par défaut est 10.
 * **startDelay** : durée d’attente avant l’analyse, après le démarrage du planificateur. L’heure par défaut est 0.
-* **batchSize** : nombre de messages e-mail que le destinataire traite par analyse pour obtenir des performances optimales. La valeur -1 désigne tous les messages électroniques. La valeur par défaut est 2.
+* **batchSize** : nombre de messages e-mail que le destinataire traite par analyse pour obtenir des performances optimales. La valeur -1 indique tous les emails. La valeur par défaut est 2.
 * **userName** : nom d’utilisateur utilisé lors de l’appel d’un service cible à partir d’un e-mail. La valeur par défaut est `SuperAdmin`.
 * **domainName** : valeur de configuration obligatoire. La valeur par défaut est `DefaultDom`.
 * **domainPattern** : spécifie les modèles de domaine d’e-mail entrant acceptés par le fournisseur. Par exemple, si le domaine `adobe.com` est utilisé, seuls les e-mails de ce domaine sont traités. Ceux provenant d’autres domaines sont ignorés.
@@ -580,25 +580,25 @@ Les valeurs de configuration suivantes sont définies lors de l’ajout par prog
 * **inboxSSLEnabled** : définissez cette valeur pour forcer le fournisseur de messagerie à utiliser SSL lors de l’envoi de messages de notification de résultats ou d’erreurs. Assurez-vous que l’hôte IMAP ou POP3 prend en charge SSL.
 * **smtpHost** : nom d’hôte du serveur de messagerie auquel le fournisseur de messagerie envoie les résultats et les messages d’erreur.
 * **smtpPort** : valeur par défaut du port SMTP : 25.
-* **smtpUser** : compte utilisateur que le fournisseur de messagerie électronique doit utiliser lorsqu’il envoie du courrier électronique pour signaler des résultats et des erreurs.
+* **smtpUser** : compte d’utilisateur que le fournisseur d’e-mail doit utiliser lorsqu’il envoie des notifications par e-mail pour signaler des résultats et des erreurs.
 * **smtpPassword** : mot de passe du compte SMTP. Certains serveurs de messagerie ne nécessitent pas de mot de passe SMTP.
 * **charSet** : jeu de caractères utilisé par le fournisseur de messagerie. La valeur par défaut est `UTF-8`.
 * **smtpSSLEnabled** : définissez cette valeur pour forcer le fournisseur de messagerie à utiliser SSL lors de l’envoi de messages de notification de résultats ou d’erreurs. Assurez-vous que le serveur SMTP prend en charge SSL.
 * **failedJobFolder** : spécifie un répertoire dans lequel stocker les résultats en cas de non-fonctionnement du serveur de courrier SMTP.
-* **Asynchrone** : lorsque l’option est définie sur synchrone, tous les documents d’entrée sont traités, puis une seule réponse est renvoyée. Lorsque l’option est définie sur asynchrone, une réponse est envoyée pour chaque document traité. Par exemple, un point de terminaison de courrier électronique est créé pour le processus introduit dans cette rubrique et un message électronique est envoyé à la boîte de réception du point de terminaison qui contient plusieurs documents PDF non sécurisés. Lorsque tous les documents PDF sont chiffrés avec un mot de passe et que le point de terminaison est configuré comme synchrone, un seul message électronique de réponse est envoyé avec tous les documents PDF sécurisés joints. Si le point de terminaison est configuré comme asynchrone, un message électronique de réponse distinct est envoyé pour chaque document PDF sécurisé. Chaque message électronique contient un document PDF unique en tant que pièce jointe. La valeur par défaut est asynchrone.
+* **Asynchrone** : lorsque l’option est définie sur synchrone, tous les documents d’entrée sont traités, puis une seule réponse est renvoyée. Lorsque l’option est définie sur asynchrone, une réponse est envoyée pour chaque document traité. Par exemple, un point d’entrée de courrier électronique est créé pour le processus introduit dans cette rubrique et un message électronique est envoyé à la boîte de réception du point d’entrée qui contient plusieurs documents PDF non sécurisés. Lorsque tous les documents PDF sont chiffrés avec un mot de passe et que le point d’entrée est configuré comme synchrone, un seul message électronique de réponse est envoyé avec tous les documents PDF sécurisés joints. Si le point d’entrée est configuré comme asynchrone, un message électronique de réponse distinct est envoyé pour chaque document PDF sécurisé. Chaque message électronique contient un document PDF unique en tant que pièce jointe. La valeur par défaut est asynchrone.
 
 **Définissez les valeurs de paramètre d’entrée**
 
-Lors de la création d’un point de terminaison de courrier électronique, vous devez définir des valeurs de paramètre d’entrée. En d’autres termes, vous devez décrire les valeurs d’entrée transmises à l’opération appelée par le point de terminaison de courrier électronique. Prenons le cas du processus introduit dans cette rubrique. Il comporte une valeur d’entrée nommée `InDoc` et son type de données est `com.adobe.idp.Document`. Lors de la création d’un point de terminaison de courrier électronique pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre d’entrée.
+Lors de la création d’un point d’entrée de courrier électronique, vous devez définir des valeurs de paramètre d’entrée. En d’autres termes, vous devez décrire les valeurs d’entrée transmises à l’opération appelée par le point d’entrée de courrier électronique. Prenons le cas du processus introduit dans cette rubrique. Il comporte une valeur d’entrée nommée `InDoc` et son type de données est `com.adobe.idp.Document`. Lors de la création d’un point d’entrée de courrier électronique pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre d’entrée.
 
-Pour définir les valeurs de paramètre d’entrée requises pour un point de terminaison de courrier électronique, spécifiez les valeurs suivantes :
+Pour définir les valeurs de paramètre d’entrée requises pour un point d’entrée de courrier électronique, spécifiez les valeurs suivantes :
 
 **Input parameter name** : nom du paramètre d’entrée. Le nom d’une valeur d’entrée est spécifié dans Workbench pour un processus. Si la valeur d’entrée appartient à une opération de service (un service Forms qui n’est pas un processus créé dans Workbench), le nom d’entrée est spécifié dans le fichier component.xml. Par exemple, le nom du paramètre d’entrée pour le processus présenté dans cette section est `InDoc`.
 
 **Type de mappage** : utilisé pour configurer les valeurs d’entrée requises pour appeler l’opération de service. Deux types de mappage sont les suivants :
 
-* `Literal` : le point de terminaison de courrier électronique utilise la valeur saisie dans le champ telle qu’affichée. Tous les types Java de base sont pris en charge. Par exemple, si une interface API utilise une entrée de type chaîne, long, nombre entier ou valeur booléenne, cette entrée est convertie en type approprié, puis le service est appelé.
-* `Variable` : la valeur saisie est un modèle de fichier que le point de terminaison de courrier électronique utilise pour sélectionner l’entrée. Par exemple, si vous sélectionnez Variable pour le type de mappage et que le document d’entrée doit être un fichier PDF, vous pouvez spécifier `*.pdf` comme valeur de mappage.
+* `Literal` : le point d’entrée de courrier électronique utilise la valeur saisie dans le champ telle qu’affichée. Tous les types Java de base sont pris en charge. Par exemple, si une interface API utilise une entrée de type chaîne, long, nombre entier ou valeur booléenne, cette entrée est convertie en type approprié, puis le service est appelé.
+* `Variable` : la valeur saisie est un modèle de fichier que le point d’entrée de courrier électronique utilise pour sélectionner l’entrée. Par exemple, si vous sélectionnez Variable pour le type de mappage et que le document d’entrée doit être un fichier PDF, vous pouvez spécifier `*.pdf` comme valeur de mappage.
 
 **Valeur de mappage** : indique la valeur du type de mappage. Par exemple, si vous sélectionnez un type de mappage variable, vous pouvez spécifier `*.pdf` comme modèle de fichier.
 
@@ -626,7 +626,7 @@ Après avoir défini les attributs de point d’entrée de courrier électroniqu
 
 **Activer le point d’entrée**
 
-Après avoir créé un point d’entrée de courrier électronique, vous devez l’activer. Lorsque le point d’entrée est activé, il peut être utilisé pour appeler le service. Une fois le point de terminaison activé, vous pouvez l’afficher dans la console d’administration.
+Après avoir créé un point d’entrée de courrier électronique, vous devez l’activer. Lorsque le point d’entrée est activé, il peut être utilisé pour appeler le service. Une fois le point d’entrée activé, vous pouvez l’afficher dans la console d’administration.
 
 **Voir également**
 
@@ -667,7 +667,7 @@ Ajoutez un point d’entrée Email à l’aide de l’API Java :
 
    >[!NOTE]
    >
-   >Pour afficher toutes les valeurs de configuration définies pour le service EncryptDocument présentées dans cette section, reportez-vous à l’exemple de code Java situé à l’adresse [QuickStart : ajouter un point de terminaison de courrier électronique à l’aide de l’API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api).
+   >Pour afficher toutes les valeurs de configuration définies pour le service EncryptDocument présentées dans cette section, reportez-vous à l’exemple de code Java situé à l’adresse [QuickStart : ajouter un point d’entrée de courrier électronique à l’aide de l’API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api).
 
 1. Définissez les valeurs des paramètres d’entrée.
 
@@ -692,11 +692,11 @@ Ajoutez un point d’entrée Email à l’aide de l’API Java :
 
 1. Créez le point d’entrée de courrier électronique.
 
-   Créez le point de terminaison en appelant la méthode `EndpointRegistryClient` de l’objet `createEndpoint` et en transmettant l’objet `CreateEndpointInfo`. Cette méthode renvoie un objet `Endpoint` qui représente le point de terminaison de courrier électronique.
+   Créez le point d’entrée en appelant la méthode `EndpointRegistryClient` de l’objet `createEndpoint` et en transmettant l’objet `CreateEndpointInfo`. Cette méthode renvoie un objet `Endpoint` qui représente le point d’entrée de courrier électronique.
 
 1. Activez le point d’entrée.
 
-   Activez le point de terminaison en appelant la méthode `EndpointRegistryClient` de l’objet `enable` et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
+   Activez le point d’entrée en appelant la méthode `enable` de l’objet `EndpointRegistryClient` et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
 
 **Voir également**
 
@@ -710,7 +710,7 @@ Ajoutez un point d’entrée Email à l’aide de l’API Java :
 
 ### Fichier constant de valeurs de configuration des emails {#email-configuration-values-constant-file}
 
-[QuickStart : ajouter un point de terminaison de courrier électronique à l’aide de l’API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) utilise un fichier constant qui doit faire partie de votre projet Java pour compiler le démarrage rapide. Ce fichier constant représente les valeurs de configuration qui doivent être définies lors de l’ajout d’un point de terminaison de courrier électronique. Le code Java suivant représente le fichier constant.
+La variable [QuickStart : ajout d’un point de fin de courrier électronique à l’aide de l’API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) utilise un fichier constant qui doit faire partie de votre projet Java pour compiler le démarrage rapide. Ce fichier constant représente les valeurs de configuration qui doivent être définies lors de l’ajout d’un point d’entrée de courrier électronique. Le code Java suivant représente le fichier constant.
 
 ```java
  /**
@@ -748,34 +748,34 @@ Ajoutez un point d’entrée Email à l’aide de l’API Java :
  }
 ```
 
-## Ajouter des points de terminaison Remoting {#adding-remoting-endpoints}
+## Ajouter des points d’entrée Remoting {#adding-remoting-endpoints}
 
 >[!NOTE]
 >
 >API LiveCycle Remoting obsolètes pour AEM Forms on JEE.
 
-Vous pouvez ajouter par programmation un point de terminaison Remoting à un service à l’aide de l’API Java AEM Forms. En ajoutant un point de terminaison Remoting, vous activez une application Flex pour appeler le service à l’aide de la commande Remoting. (Voir [Appeler AEM Forms à l’aide d’AEM Forms Remoting (obsolète pour AEM Forms)](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+Vous pouvez ajouter par programmation un point d’entrée Remoting à un service à l’aide de l’API Java AEM Forms. En ajoutant un point d’entrée Remoting, vous activez une application Flex pour appeler le service à l’aide de la commande Remoting. (Voir [Appeler AEM Forms à l’aide d’AEM Forms Remoting (obsolète pour AEM Forms)](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
-Pour ajouter par programmation un point de terminaison Remoting à un service, considérez le processus de courte durée suivant nommé *EncryptDocument*.
+Pour ajouter par programmation un point d’entrée Remoting à un service, considérez le processus de courte durée suivant nommé *EncryptDocument*.
 
 ![ar_ar_encryptdocumentprocess](assets/ar_ar_encryptdocumentprocess.png)
 
 Ce processus accepte un document PDF non sécurisé comme valeur d’entrée, puis transmet le document PDF non sécurisé à l’opération `EncryptPDFUsingPassword` du service chiffrement. Le document PDF est chiffré avec un mot de passe et le document PDF chiffré par mot de passe est la valeur de sortie de ce processus. Le nom de la valeur d’entrée (le document PDF non sécurisé) est `InDoc` et le type de données est `com.adobe.idp.Document`. Le nom de la valeur de sortie (le document PDF chiffré par mot de passe) est `SecuredDoc` et le type de données est `com.adobe.idp.Document`.
 
-Pour montrer comment ajouter un point de terminaison Remoting à un service, cette section ajoute un point de terminaison Remoting à un service nommé EncryptDocument.
+Pour montrer comment ajouter un point d’entrée Remoting à un service, cette section ajoute un point d’entrée Remoting à un service nommé EncryptDocument.
 
 >[!NOTE]
 >
->Vous ne pouvez pas ajouter de point de terminaison Remoting à l’aide de services web.
+>Vous ne pouvez pas ajouter de point d’entrée Remoting à l’aide de services web.
 
 ### Résumé des étapes {#summary_of_steps-4}
 
-Pour supprimer un point de terminaison d’un service, effectuez les tâches suivantes :
+Pour supprimer un point d’entrée d’un service, effectuez les tâches suivantes :
 
 1. Incluez les fichiers de projet.
 1. Créez un objet `EndpointRegistryClient`.
-1. Définissez les attributs des points de terminaison Remoting.
-1. Créez un point de terminaison Remoting.
+1. Définissez les attributs des points d’entrée Remoting.
+1. Créez un point d’entrée Remoting.
 1. Activez le point d’entrée.
 
 **Incluez les fichiers de projet**
@@ -834,7 +834,7 @@ Poir ajouter un point d’entrée Remoting à l’aide de l’API Java, procéde
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `EndpointRegistryClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
-1. Définissez les attributs des points de terminaison Remoting.
+1. Définissez les attributs des points d’entrée Remoting.
 
    * Créez un objet `CreateEndpointInfo` en utilisant son constructeur.
    * Spécifiez la valeur de l’identificateur du connecteur en appelant la méthode `setConnectorId` de l’objet `CreateEndpointInfo` et en transmettant la valeur de chaîne `Remoting`.
@@ -843,13 +843,13 @@ Poir ajouter un point d’entrée Remoting à l’aide de l’API Java, procéde
    * Spécifiez le service auquel appartient le point d’entrée en appelant la méthode `setServiceId` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom du service.
    * Spécifiez l’opération appelée par la méthode `setOperationName` de l’objet `CreateEndpointInfo` et transmettez une valeur de chaîne qui spécifie le nom de l’opération. Pour un point d’entrée Remoting, spécifiez un caractère générique (&amp;ast;).
 
-1. Créez un point de terminaison Remoting.
+1. Créez un point d’entrée Remoting.
 
    Créez le point d’entrée en appelant la méthode `createEndpoint` de l’objet `EndpointRegistryClient` et en transmettant l’objet `CreateEndpointInfo`. Cette méthode renvoie un objet `Endpoint` qui représente le nouveau point d’entrée Remoting.
 
 1. Activez le point d’entrée.
 
-   Activez le point de terminaison en appelant la méthode `EndpointRegistryClient` de l’objet `enable` et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
+   Activez le point d’entrée en appelant la méthode `enable` de l’objet `EndpointRegistryClient` et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
 
 **Voir également**
 
@@ -875,7 +875,7 @@ Pour ajouter un point d’entrée TaskManager à un service, procédez comme sui
 
 1. Incluez les fichiers de projet.
 1. Créez un objet `EndpointRegistryClient`.
-1. Créez une catégorie pour le point de terminaison.
+1. Créez une catégorie pour le point d’entrée.
 1. Définissez les attributs du point d’entrée TaskManager.
 1. Créez un point d’entrée TaskManager.
 1. Activez le point d’entrée.
@@ -909,32 +909,32 @@ Les catégories sont utilisées pour organiser les services dans Workspace. En d
 
 Pour créer un point d’entrée TaskManager pour un service, spécifiez les valeurs suivantes :
 
-* **Identifiant du connecteur**: indique le type de point de terminaison créé. Pour créer un point de terminaison TaskManager, spécifiez `TaskManagerConnector`.
-* **Description**: indique la description du point de terminaison.
-* **Nom :** indique le nom du point de terminaison.
-* **Identifiant du service** : indique le service auquel appartient le point de terminaison.
-* **Catégorie** : spécifie une valeur d’identifiant de catégorie associée au point de terminaison TaskManager.
-* **Nom de l’opération** : en règle générale, lors de la création d’un point de terminaison TaskManager pour un service issu d’un processus créé dans Workbench, le nom de l’opération est `invoke`.
+* **Identifiant du connecteur**: indique le type de point d’entrée créé. Pour créer un point d’entrée TaskManager, spécifiez `TaskManagerConnector`.
+* **Description**: indique la description du point d’entrée.
+* **Nom :** indique le nom du point d’entrée.
+* **Identifiant du service** : indique le service auquel appartient le point d’entrée.
+* **Catégorie** : spécifie une valeur d’identifiant de catégorie associée au point d’entrée TaskManager.
+* **Nom de l’opération** : en règle générale, lors de la création d’un point d’entrée TaskManager pour un service issu d’un processus créé dans Workbench, le nom de l’opération est `invoke`.
 
-**Créez un point de terminaison TaskManager**
+**Créez un point d’entrée TaskManager**
 
-Après avoir défini des attributs de point de terminaison TaskManager, vous pouvez créer un point de terminaison TaskManager pour un service.
+Après avoir défini des attributs de point d’entrée TaskManager, vous pouvez créer un point d’entrée TaskManager pour un service.
 
-**Activez le point de terminaison**
+**Activez le point d’entrée**
 
-Après avoir créé un nouveau point d’entrée, vous devez l’activer. Lorsque le point de terminaison est activé, il peut être utilisé pour appeler le service depuis Workspace. Une fois le point de terminaison activé, vous pouvez l’afficher dans la console d’administration.
+Après avoir créé un nouveau point d’entrée, vous devez l’activer. Lorsque le point d’entrée est activé, il peut être utilisé pour appeler le service depuis Workspace. Une fois le point d’entrée activé, vous pouvez l’afficher dans la console d’administration.
 
 **Voir également**
 
-[Ajoutez un point de terminaison TaskManager à l’aide de l’API Java](programmatically-endpoints.md#add-a-taskmanager-endpoint-using-the-java-api)
+[Ajoutez un point d’entrée TaskManager à l’aide de l’API Java](programmatically-endpoints.md#add-a-taskmanager-endpoint-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Ajoutez un point de terminaison TaskManager à l’aide de l’API Java {#add-a-taskmanager-endpoint-using-the-java-api}
+### Ajoutez un point d’entrée TaskManager à l’aide de l’API Java {#add-a-taskmanager-endpoint-using-the-java-api}
 
-Ajoutez un point de terminaison TaskManager à l’aide de l’API Java :
+Ajoutez un point d’entrée TaskManager à l’aide de l’API Java :
 
 1. Incluez les fichiers de projet.
 
@@ -945,14 +945,14 @@ Ajoutez un point de terminaison TaskManager à l’aide de l’API Java :
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `EndpointRegistryClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
 
-1. Créez une catégorie pour le point de terminaison.
+1. Créez une catégorie pour le point d’entrée.
 
    * Créez un objet `CreateEndpointCategoryInfo` en utilisant son constructeur et en transmettant les valeurs suivantes :
 
       * Une valeur string représentant la valeur de l’identifiant de la catégorie
       * Valeur string spécifiant la description de la catégorie
-   * Créez la catégorie en appelant la méthode `EndpointRegistryClient` de l’objet `createEndpointCategory` et en transmettant l’objet `CreateEndpointCategoryInfo`. Cette méthode renvoie un objet `EndpointCategory` représentant la nouvelle catégorie.
 
+   * Créez la catégorie en appelant la méthode `EndpointRegistryClient` de l’objet `createEndpointCategory` et en transmettant l’objet `CreateEndpointCategoryInfo`. Cette méthode renvoie un objet `EndpointCategory` représentant la nouvelle catégorie.
 
 1. Définissez les attributs du point d’entrée TaskManager.
 
@@ -960,8 +960,8 @@ Ajoutez un point de terminaison TaskManager à l’aide de l’API Java :
    * Spécifiez la valeur de l’identificateur du connecteur en appelant la méthode `setConnectorId` de l’objet `CreateEndpointInfo` et en transmettant la valeur de chaîne `TaskManagerConnector`.
    * Spécifiez la description du point d’entrée en appelant la méthode `setDescription` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui décrit le point d’entrée.
    * Indiquez le nom du point d’entrée en appelant la méthode `setName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom.
-   * Spécifiez le service auquel appartient le point de terminaison en appelant la méthode `CreateEndpointInfo` de l’objet `setServiceId` et en transmettant une valeur string qui spécifie le nom du service.
-   * Spécifiez la catégorie à laquelle appartient le point de terminaison en appelant la méthode `CreateEndpointInfo` de l’objet `setCategoryId` et en transmettant une valeur string qui spécifie la valeur de l’identifiant de catégorie. Vous pouvez appeler la méthode `EndpointCategory` de l’objet `getId` afin d’obtenir la valeur d’identifiant de cette catégorie.
+   * Spécifiez le service auquel appartient le point d’entrée en appelant la méthode `CreateEndpointInfo` de l’objet `setServiceId` et en transmettant une valeur string qui spécifie le nom du service.
+   * Spécifiez la catégorie à laquelle appartient le point d’entrée en appelant la méthode `CreateEndpointInfo` de l’objet `setCategoryId` et en transmettant une valeur string qui spécifie la valeur de l’identifiant de catégorie. Vous pouvez appeler la méthode `EndpointCategory` de l’objet `getId` afin d’obtenir la valeur d’identifiant de cette catégorie.
    * Spécifiez l’opération appelée en appelant la méthode `CreateEndpointInfo` de l’objet `setOperationName` et en transmettant une valeur string qui spécifie le nom de l’opération. En règle générale, lors de la création d’un point d’entrée `TaskManager` pour un service qui provient d’un processus créé dans Workbench, le nom de l’opération est `invoke`.
 
 1. Créez un point d’entrée TaskManager.
@@ -970,7 +970,7 @@ Ajoutez un point de terminaison TaskManager à l’aide de l’API Java :
 
 1. Activez le point d’entrée.
 
-   Activez le point de terminaison en appelant la méthode `EndpointRegistryClient` de l’objet `enable` et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
+   Activez le point d’entrée en appelant la méthode `enable` de l’objet `EndpointRegistryClient` et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
 
 **Voir également**
 
@@ -982,11 +982,11 @@ Ajoutez un point de terminaison TaskManager à l’aide de l’API Java :
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Modifier les points de terminaison {#modifying-endpoints}
+## Modifier les points d’entrée {#modifying-endpoints}
 
-Vous pouvez modifie par programmation un point de terminaison existant à l’aide de l’API Java dʼAEM Forms. Lorsque vous modifiez un point de terminaison, vous modifiez également son comportement. Prenons l’exemple d’un point de terminaison « Watched Folder » (Dossier de contrôle), qui spécifie un dossier utilisé comme dossier de contrôle. Vous pouvez modifier par programmation les valeurs de configuration qui appartiennent au point de terminaison Watched Folder. En conséquence, un autre dossier agira en tant que dossier de contrôle. Pour plus d’informations sur les valeurs de configuration qui appartiennent à un point de fin Watched Folder, consultez la section [Ajouter des points de terminaison Watched Folder](programmatically-endpoints.md#adding-watched-folder-endpoints).
+Vous pouvez modifie par programmation un point d’entrée existant à l’aide de l’API Java dʼAEM Forms. Lorsque vous modifiez un point d’entrée, vous modifiez également son comportement. Prenons l’exemple d’un point d’entrée « Watched Folder » (Dossier de contrôle), qui spécifie un dossier utilisé comme dossier de contrôle. Vous pouvez modifier par programmation les valeurs de configuration qui appartiennent au point d’entrée Watched Folder. En conséquence, un autre dossier agira en tant que dossier de contrôle. Pour plus d’informations sur les valeurs de configuration qui appartiennent à un point d’entrée Watched Folder, consultez la section [Ajouter des points d’entrée Watched Folder](programmatically-endpoints.md#adding-watched-folder-endpoints).
 
-Cette section décrit la modification dʼun point de terminaison, en lʼoccurence un point de terminaison Watched Folder, en modifiant le dossier qui se comporte comme le dossier de contrôle.
+Cette section décrit la modification dʼun point d’entrée, en lʼoccurence un point d’entrée Watched Folder, en modifiant le dossier qui se comporte comme le dossier de contrôle.
 
 >[!NOTE]
 >
@@ -1071,8 +1071,8 @@ Pour modifier un point dʼentrée à l’aide de l’API Java, procédez comme s
 
       * Valeur de chaîne spécifiant le nom de la nouvelle conception de formulaire. Par exemple, pour définir la valeur de configuration `url`, spécifiez `url`.
       * Valeur string qui spécifie la valeur de la valeur de configuration. Pour définir une valeur pour la valeur de configuration `url`, spécifiez l’emplacement du dossier de contrôle.
-   * Appelez la méthode `modifyEndpoint` de l’objet `EndpointRegistryClient` et transmettez-la à l’objet `ModifyEndpointInfo`.
 
+   * Appelez la méthode `modifyEndpoint` de l’objet `EndpointRegistryClient` et transmettez-la à l’objet `ModifyEndpointInfo`.
 
 **Voir également**
 
@@ -1096,7 +1096,7 @@ Cette section décrit comment supprimer un point d’entrée EJB d’un service 
 
 ### Résumé des étapes {#summary_of_steps-7}
 
-Pour supprimer un point de terminaison d’un service, effectuez les tâches suivantes :
+Pour supprimer un point d’entrée d’un service, effectuez les tâches suivantes :
 
 1. Incluez les fichiers de projet.
 1. Créez un objet `EndpointRegistryClient`.
@@ -1128,7 +1128,7 @@ Vous pouvez récupérer un point d’entrée en récupérant une liste de points
 
 **Supprimer le point d’entrée**
 
-Après avoir créé un nouveau point d’entrée, vous devez l’activer. Lorsque le point d’entrée est activé, il peut être utilisé pour appeler le service. Une fois le point de terminaison activé, vous pouvez l’afficher dans la console d’administration.
+Après avoir créé un nouveau point d’entrée, vous devez l’activer. Lorsque le point d’entrée est activé, il peut être utilisé pour appeler le service. Une fois le point d’entrée activé, vous pouvez l’afficher dans la console d’administration.
 
 **Voir également**
 
@@ -1229,15 +1229,15 @@ Après avoir spécifié le type de connecteur, vous pouvez récupérer des infor
 
 **Voir également**
 
-[Récupérez les informations du connecteur de point de terminaison à l’aide de l’API Java](programmatically-endpoints.md#retrieve-endpoint-connector-information-using-the-java-api)
+[Récupérez les informations du connecteur de point d’entrée à l’aide de l’API Java](programmatically-endpoints.md#retrieve-endpoint-connector-information-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Récupérez les informations du connecteur de point de terminaison à l’aide de l’API Java {#retrieve-endpoint-connector-information-using-the-java-api}
+### Récupérez les informations du connecteur de point d’entrée à l’aide de l’API Java {#retrieve-endpoint-connector-information-using-the-java-api}
 
-Récupérez les informations du connecteur de point de terminaison à l’aide de l’API Java :
+Récupérez les informations du connecteur de point d’entrée à l’aide de l’API Java :
 
 1. Incluez les fichiers de projet.
 
@@ -1254,7 +1254,7 @@ Récupérez les informations du connecteur de point de terminaison à l’aide d
 
 1. Récupérez les valeurs de configuration.
 
-   * Récupérez les valeurs de configuration associées à ce point de terminaison en appelant la méthode `Endpoint` de l’objet `getConfigParameters`. Cette méthode renvoie un tableau d’objets `ConfigParameter`.
+   * Récupérez les valeurs de configuration associées à ce point d’entrée en appelant la méthode `Endpoint` de l’objet `getConfigParameters`. Cette méthode renvoie un tableau d’objets `ConfigParameter`.
    * Récupérez des informations sur chaque valeur de configuration en récupérant chaque élément dans le tableau. Chaque élément est un objet `ConfigParameter`. Vous pouvez, par exemple, déterminer si la valeur de configuration est requise ou facultative en appelant la méthode `ConfigParameter` de l’objet `isRequired`. Si la valeur de configuration est requise, cette méthode renvoie `true`.
 
 **Voir également**

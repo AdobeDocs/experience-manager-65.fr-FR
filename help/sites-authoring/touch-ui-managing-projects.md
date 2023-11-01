@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
-workflow-type: ht
-source-wordcount: '987'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '985'
+ht-degree: 98%
 
 ---
 
@@ -53,12 +53,12 @@ La procédure de création d’un projet est la même pour tous les modèles de 
 
 ### Association de ressources à un projet {#associating-resources-with-your-project}
 
-Les projets vous permettent de regrouper des ressources dans une seule entité afin de les gérer dans leur ensemble. Par conséquent, vous devez associer des ressources à votre projet. Ces ressources sont regroupées dans le projet sous la forme **Mosaïques**. Les types de ressources que vous pouvez ajouter sont décrits dans la section [Mosaïques de projet](/help/sites-authoring/projects.md#project-tiles).
+Les projets vous permettent de regrouper des ressources dans une seule entité pour les gérer dans leur ensemble. Par conséquent, vous devez associer des ressources à votre projet. Ces ressources sont regroupées dans le projet sous la forme **Mosaïques**. Les types de ressources que vous pouvez ajouter sont décrits à la section [Mosaïques de projet](/help/sites-authoring/projects.md#project-tiles).
 
 Pour associer des ressources à votre projet :
 
 1. Ouvrez votre projet à partir de la console **Projets**.
-1. Cliquez/appuyez sur **Ajouter une mosaïque** et sélectionnez celle que vous souhaitez lier à votre projet. Vous pouvez sélectionner plusieurs types de mosaïque.
+1. Appuyez/cliquez sur **Ajouter une mosaïque** et sélectionnez la mosaïque à lier à votre projet. Vous pouvez sélectionner plusieurs types de mosaïque.
 
    ![Ajouter une mosaïque](assets/project-add-tile.png)
 
@@ -66,7 +66,7 @@ Pour associer des ressources à votre projet :
 
 ### Ajout d’éléments à une mosaïque {#adding-items-to-a-tile}
 
-Dans certaines mosaïques, vous pouvez ajouter plusieurs éléments. Par exemple, plusieurs workflows ou expériences peuvent être exécutés simultanément.
+Dans certaines mosaïques, vous pouvez ajouter plusieurs éléments. Par exemple, plusieurs workflows ou expériences peuvent s’exécuter à la fois.
 
 Pour ajouter des éléments à une mosaïque, procédez comme suit :
 
@@ -84,7 +84,7 @@ L’objectif principal des projets est de regrouper les informations associées 
 
 ### Ouverture d’une mosaïque {#opening-a-tile}
 
-Vous pouvez voir les éléments qui ont été ajoutés à une mosaïque ou modifier/supprimer des éléments de la mosaïque.
+Vous pouvez afficher les éléments inclus dans une mosaïque actuelle ou modifier ou supprimer des éléments dans la mosaïque.
 
 Pour ouvrir une mosaïque afin d’afficher ou de modifier des éléments :
 

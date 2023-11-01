@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '6854'
-ht-degree: 59%
+source-wordcount: '6836'
+ht-degree: 58%
 
 ---
 
@@ -96,7 +96,7 @@ L’effet d’une politique de CUG unique sur l’évaluation des permissions pe
 Les bonnes pratiques suivantes doivent être prises en compte pour définir un accès en lecture restreint par le biais de CUG :
 
 * Déterminez si le CUG dont vous avez besoin est destiné à limiter l’accès en lecture ou s’il correspond à une exigence d’authentification. Si ce dernier, ou s’il y a un besoin des deux, consultez la section sur les bonnes pratiques pour plus de détails sur l’exigence d’authentification.
-* Créer un modèle de menace pour les données ou le contenu qui doivent être protégés afin d’identifier les limites de la menace et d’obtenir une vue d’ensemble précise de la sensibilité des données et des rôles associés à l’accès autorisé
+* Créez un modèle de menace pour les données ou le contenu qui doivent être protégés afin d’identifier les limites de la menace et d’obtenir une vue d’ensemble claire de la sensibilité des données et des rôles associés à l’accès autorisé.
 * Modérez le contenu du référentiel et les CUG en gardant à l’esprit les aspects généraux liés aux autorisations et les bonnes pratiques :
 
    * N’oubliez pas que l’autorisation de lecture ne sera accordée que si un CUG donné et l’évaluation des autres modules déployés dans l’aide à la configuration permettent à un sujet donné de lire un élément de référentiel donné.
@@ -129,7 +129,7 @@ Puisqu’il est prévu que ce type d’exigence d’authentification soit limit�
 
 Par défaut, AEM utilise désormais cette configuration en permettant de placer le mixin en mode d’exécution de création, mais en ne le faisant prendre effet que lors de la réplication vers l’instance de publication. Consultez [cette page](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) pour plus d’informations sur la façon dont Sling impose l’exigence d’authentification.
 
-Ajouter le `granite:AuthenticationRequired` le type de mixin dans les chemins pris en charge configurés entraîne la mise à jour de l’enregistrement OSGi du gestionnaire responsable, contenant une nouvelle entrée supplémentaire avec la propriété `sling.auth.requirements` . Si une exigence d’authentification donnée spécifie la propriété facultative `granite:loginPath`, la valeur est en outre enregistrée auprès de l’authentificateur avec un préfixe « - » afin de pouvoir être exclue de l’exigence d’authentification.
+Ajouter le `granite:AuthenticationRequired` le type de mixin dans les chemins pris en charge configurés entraîne la mise à jour de l’enregistrement OSGi du gestionnaire responsable, contenant une nouvelle entrée supplémentaire avec la propriété `sling.auth.requirements` . Si une exigence d’authentification donnée spécifie l’option `granite:loginPath` , la valeur est également enregistrée auprès de l’authentificateur avec un préfixe &quot;-&quot; à exclure de l’exigence d’authentification.
 
 #### Évaluation et héritage de l’exigence d’authentification {#evaluation-and-inheritance-of-the-authentication-requirement}
 
@@ -718,7 +718,7 @@ Consultez la [Plug-ins CUG](https://jackrabbit.apache.org/oak/docs/security/auth
 
 ### Désactivation de l’exigence d’authentification {#disable-the-authentication-requirement}
 
-Pour désactiver la prise en charge de l’exigence d’authentification fournie par le module `granite.auth.authhandler`, il suffit de supprimer la configuration associée au **Gestionnaire d’exigence d’authentification et de chemin de connexion Adobe Granite**.
+Pour désactiver la prise en charge de l’exigence d’authentification fournie par le `granite.auth.authhandler` module , il suffit de supprimer la configuration associée à **Gestionnaire d’exigence d’authentification et de chemin de connexion Adobe Granite**.
 
 >[!NOTE]
 >
@@ -728,7 +728,7 @@ Pour désactiver la prise en charge de l’exigence d’authentification fournie
 
 ### API Apache Jackrabbit {#apache-jackrabbit-api}
 
-Afin de refléter le nouveau type de stratégie de contrôle d’accès utilisé par le modèle d’autorisation des CUG, l’API définie par Apache Jackrabbit a été étendue. Ainsi, la version 2.11.0 du module `jackrabbit-api` définit une nouvelle interface appelée `org.apache.jackrabbit.api.security.authorization.PrincipalSetPolicy`, qui s’étend à partir de `javax.jcr.security.AccessControlPolicy`.
+Pour refléter le nouveau type de stratégie de contrôle d’accès utilisé par le modèle d’autorisation des CUG, l’API définie par Apache Jackrabbit a été étendue. Ainsi, la version 2.11.0 du module `jackrabbit-api` définit une nouvelle interface appelée `org.apache.jackrabbit.api.security.authorization.PrincipalSetPolicy`, qui s’étend à partir de `javax.jcr.security.AccessControlPolicy`.
 
 ### Apache Jackrabbit FileVault {#apache-jackrabbit-filevault}
 
@@ -740,7 +740,7 @@ Voir ci-dessus [Apache Jackrabbit FileVault](/help/sites-administering/closed-us
 
 ### Réplication Granite des Adobes {#adobe-granite-replication}
 
-Le module de réplication a été légèrement ajusté afin de pouvoir répliquer les stratégies de CUG entre différentes instances AEM :
+Le module de réplication a été légèrement ajusté pour pouvoir répliquer les stratégies de CUG entre différentes instances AEM :
 
 * `DurboImportConfiguration.isImportAcl()` est interprété littéralement et affecte uniquement les politiques de contrôle d’accès mettant en œuvre `javax.jcr.security.AccessControlList`.
 
@@ -753,7 +753,7 @@ Il existe une limite de réplication des politiques de CUG. Si une politique de 
 
 Le gestionnaire d’authentification **Adobe Granite HTTP Header Authentication Handler** fourni avec le lot `com.adobe.granite.auth.authhandler` contient une référence à l’interface `CugSupport` définie par le même module. Il est utilisé pour calculer le domaine dans certains cas, en se repliant sur le domaine configuré avec le gestionnaire.
 
-Cela a été réglé de façon à rendre la référence à `CugSupport` facultative pour assurer une compatibilité ascendante maximale si une configuration donnée décide de réactiver cette mise en œuvre obsolète. Pour les installations recourant à cette mise en œuvre, le domaine n’est pas extrait à partir de la mise en œuvre CUG, mais s’affiche toujours tel que défini auprès du gestionnaire d’authentification **Adobe Granite HTTP Header Authentication Handler**.
+Ceci a été adapté afin d’effectuer la référence à `CugSupport` facultatif afin d’assurer une compatibilité ascendante maximale si une configuration donnée décide de réactiver la mise en oeuvre obsolète. Pour les installations recourant à cette mise en œuvre, le domaine n’est pas extrait à partir de la mise en œuvre CUG, mais s’affiche toujours tel que défini auprès du gestionnaire d’authentification **Adobe Granite HTTP Header Authentication Handler**.
 
 >[!NOTE]
 >
@@ -794,7 +794,7 @@ Avec la nouvelle mise en oeuvre, la configuration du contrôle d’accès du mod
 
 **Modification des stratégies de CUG dans la gestion du contrôle d’accès**
 
-Cette transition des propriétés JCR résiduelles vers une politique de contrôle d’accès dédiée a un impact sur les permissions requises pour créer ou modifier le composant d’autorisation de la fonction CUG. Dans la mesure où cette opération est considérée comme une modification du contenu de contrôle d’accès, elle requiert les privilèges `jcr:readAccessControl` et `jcr:modifyAccessControl` pour être écrite dans le référentiel. Par conséquent, seuls les auteurs de contenu autorisés à modifier le contenu du contrôle d’accès d’une page peuvent configurer ou modifier ce contenu. Cela contraste avec l’ancienne mise en œuvre où la possibilité d’écrire des propriétés JCR standard suffisait, entraînant la réaffectation des privilèges.
+Cette transition des propriétés JCR résiduelles vers une politique de contrôle d’accès dédiée a un impact sur les permissions requises pour créer ou modifier le composant d’autorisation de la fonction CUG. Puisqu’il s’agit d’une modification du contenu de contrôle d’accès, il nécessite `jcr:readAccessControl` et `jcr:modifyAccessControl` droits à écrire dans le référentiel. Par conséquent, seuls les auteurs de contenu autorisés à modifier le contenu du contrôle d’accès d’une page peuvent configurer ou modifier ce contenu. Cela contraste avec l’ancienne mise en œuvre où la possibilité d’écrire des propriétés JCR standard suffisait, entraînant la réaffectation des privilèges.
 
 **Noeud cible défini par la stratégie**
 

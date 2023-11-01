@@ -2,9 +2,9 @@
 title: Couplage et découplage dans AEM
 description: Il est possible de mettre en œuvre des projets AEM sur des modèles couplés et découplés, mais ce choix n’a pas besoin d’être si binaire. AEM offre la flexibilité nécessaire pour exploiter les avantages des deux modèles dans un même projet.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1012'
 ht-degree: 96%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 96%
 
 Il est possible de mettre en œuvre des projets Adobe Experience Manager sur des modèles couplés et découplés, sans que toutefois ce choix soit binaire. AEM offre la flexibilité nécessaire pour exploiter les avantages des deux modèles dans un même projet. Ce document donne un aperçu des différents modèles et décrit les niveaux d’intégration des applications sur une seule page (SPA).
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 AEM offre de puissants outils pour gérer à la fois la création de contenus et leur diffusion sur une seule plateforme. Il s’agit d’un modèle traditionnel de gestion de contenu « couplé », où les auteurs et les développeurs de contenu travaillent sur la même plateforme pour mettre les expériences à la disposition des consommateurs de contenu.
 
@@ -27,7 +27,7 @@ Dans un modèle couplé ou full stack, le contenu est géré dans le référenti
 
 Dans un modèle découplé, le contenu est géré dans le référentiel AEM, mais diffusé à l’aide d’API telles que REST et GraphQL vers un autre système afin de générer le contenu pour l’expérience utilisateur. Dans ce modèle, le contenu est créé dans AEM, mais il est mis en forme, présenté et diffusé sur une autre plateforme.
 
-Les applications sur une seule page (SPA) sont souvent destinataires du contenu diffusé par AEM à l’aide du modèle découplé. Toutefois, ces SPA ne doivent pas nécessairement être entièrement externes à AEM. AEM vous permet de décider dans quelle mesure vos SPA sont intégrées à l’. Prenons un exemple.
+Les applications monopages sont souvent destinataires du contenu diffusé par AEM à l’aide du modèle découplé. Toutefois, ces SPA ne doivent pas nécessairement être entièrement externes à AEM. AEM vous permet de décider dans quelle mesure vos SPA sont intégrées à l’. Prenons un exemple.
 
 ## Exemple d’une boutique web {#web-shop-example}
 

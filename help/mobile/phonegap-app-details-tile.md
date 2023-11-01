@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1248'
 ht-degree: 2%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 2%
 >
 >Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-Le **Gérer l’application** La mosaïque du tableau de bord de l’application permet de modifier les détails de l’application. Pour ouvrir la page Détails, cliquez sur le lien Détails de la mosaïque Gérer l’application . Dans la page Gérer l’application , vous pouvez modifier les paramètres Configuration de l’application PhoneGap (config.xml) et préparer votre application à l’envoi aux différents magasins d’applications.
+La variable **Gérer l’application** La mosaïque du tableau de bord de l’application permet de modifier les détails de l’application. Pour ouvrir la page Détails, cliquez sur le lien Détails de la mosaïque Gérer l’application . Dans la page Gérer l’application , vous pouvez modifier les paramètres Configuration de l’application PhoneGap (config.xml) et préparer votre application à l’envoi aux différents magasins d’applications.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
 ## Présentation de la mosaïque Gérer l’application {#understanding-the-manage-app-tile}
 
-Vous pouvez explorer chaque mosaïque de la **Gérer l’application** pour afficher ou modifier les détails en cliquant sur &quot;...&quot;. dans le coin inférieur droit.
+Vous pouvez explorer chaque mosaïque de la section **Gérer l’application** pour afficher ou modifier les détails en cliquant sur &quot;...&quot; dans le coin inférieur droit.
 
 ### Onglet De base {#the-basic-tab}
 
@@ -72,7 +72,7 @@ Dans cette section, vous définissez l’URL du serveur de mise à jour de conte
 
 **Version de l’application** est la version opérationnelle de votre application. Il est recommandé d’utiliser une notation à 3 décimales et de commencer sous 1.0.0 avant la première version.
 
-**Version de PhoneGap** est la version dans laquelle vous souhaitez compiler votre application avec PhoneGap. La bonne pratique consiste à suivre la version actuelle afin de vous assurer d’obtenir les fonctionnalités et correctifs les plus récents et les plus performants.
+**Version de PhoneGap** est la version dans laquelle vous souhaitez compiler votre application avec PhoneGap. La bonne pratique consiste à suivre la version actuelle pour vous assurer d’obtenir les fonctionnalités et correctifs les plus récents et les plus performants.
 
 **URL du serveur de mise à jour de contenu** est l’URL que votre application utilisera pour appeler les mises à jour ContentSync. Il doit être défini sur votre URL de Dispatcher ou, si vous n’utilisez pas un Dispatcher, sur l’une de vos instances de publication qui sera utilisée pour diffuser les mises à jour ContentSync à votre application.
 
@@ -120,7 +120,7 @@ La fonctionnalité d’exportation permet de collecter facilement les captures d
 
 L’une des fonctionnalités clés des applications AEM est la possibilité de demander un nouveau contenu à une application mobile via ContentSync, où le contenu peut être des ressources html, des pages, des vidéos, des images, du texte, etc. Une fois qu’un auteur de contenu a mis à jour le contenu, puis le publie, le serveur met à disposition la mise à jour de contenu pour que l’application mobile puisse la télécharger.
 
-La propriété URL du serveur de mise à jour de contenu est l’URL qui doit pointer vers une instance de publication ; directement ou par le biais du Dispatcher ou du réseau de diffusion de contenu. Le format de l’URL est simple :
+La propriété URL du serveur de mise à jour de contenu est l’URL qui doit pointer vers une instance de publication, directement ou par le biais de Dispatcher ou du réseau de diffusion de contenu. Le format de l’URL est simple :
 
 `https://[hostname]:[port]`
 
@@ -130,13 +130,13 @@ La propriété URL du serveur de mise à jour de contenu est l’URL qui doit po
 
 ### Onglet Plugins {#the-plugins-tab}
 
-Le **Modules externes** Cette section décrit les modules externes associés à votre application. Ces informations seront utilisées pour récupérer le module externe approprié pendant une génération.
+La variable **Modules externes** Cette section décrit les modules externes associés à votre application. Ces informations seront utilisées pour récupérer le module externe approprié lors d’une génération.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
 ### Onglet Captures d’écran {#the-screenshots-tab}
 
-Le **Captures d’écran** affiche les résolutions d’écran prises en charge sur différentes plateformes.
+La variable **Captures d’écran** affiche les résolutions d’écran prises en charge sur différentes plateformes.
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
 
@@ -146,7 +146,7 @@ Le **Captures d’écran** affiche les résolutions d’écran prises en charge 
 
 ### Onglet Authentification {#the-authentication-tab}
 
-Le **Authentification** Cet onglet vous permet de sélectionner un client OAuth à associer à votre application et permet à un développeur d’utiliser l’authentification OAuth de Adobe Experience Manager.
+La variable **Authentification** Cet onglet vous permet de sélectionner un client OAuth à associer à votre application et permet à un développeur d’utiliser l’authentification OAuth de Adobe Experience Manager.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 

@@ -2,10 +2,10 @@
 title: Guide rapide relatif à WCAG 2.1
 description: Guide rapide relatif aux directives d’accessibilité du contenu web (WCAG) version 2.1.
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1779'
-ht-degree: 93%
+source-wordcount: '1777'
+ht-degree: 90%
 
 ---
 
@@ -42,7 +42,7 @@ En d’autres termes, des consignes qui peuvent être appliquées à divers form
 Chaque consigne est écrite de manière à pouvoir être testée objectivement pour s’assurer qu’un groupe d’experts en accessibilité conviendrait de façon générale que la consigne a été respectée. L’un des défis des consignes d’accessibilité est que, alors que certaines peuvent être testées par des moyens techniques, d’autres requièrent un jugement humain afin de vérifier si la consigne a été respectée.
 
 * Permettent une **mise en œuvre contextuelle avec des priorités :**
-les consignes de WCAG 2.1 reçoivent des priorités en fonction de l’impact probable du manquement à cette consigne sur un groupe particulier de personnes en situation de handicap. Cela permet aux auteurs de prendre une décision éclairée sur les consignes les plus importantes pour leur situation donnée. En outre, la notion d’ *accessibilité prise en charge* est introduite. Cela permet aux auteurs de prendre des décisions sur la meilleure manière d’utiliser les technologies web qui peuvent ne pas présenter l’accessibilité totale, ou peut exiger des utilisateurs qu’ils disposent de technologies d’assistance et/ou de navigateurs spécifiques, permettant ainsi de tirer profit des fonctions d’accessibilité.
+les consignes de WCAG 2.1 reçoivent des priorités en fonction de l’impact probable du manquement à cette consigne sur un groupe particulier de personnes en situation de handicap. Cela permet aux auteurs de prendre une décision éclairée sur les consignes les plus importantes pour leur situation donnée. En outre, la notion d’ *accessibilité prise en charge* est introduite. Cela permet aux auteurs de prendre des décisions sur la meilleure façon d’utiliser les technologies web qui peuvent ne pas bénéficier d’une prise en charge complète de l’accessibilité, ou peut exiger des utilisateurs qu’ils disposent de technologies d’assistance et/ou de navigateurs spécifiques pour bénéficier des fonctionnalités d’accessibilité.
 
 Ces objectifs ont considérablement influencé la structure de WCAG 2.1.
 
