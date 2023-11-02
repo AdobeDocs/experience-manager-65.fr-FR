@@ -383,9 +383,9 @@ Les tests de performance doivent être pris en compte dans les implémentations 
 
   La réplication est un processus critique, qui permet de s’assurer que le contenu est publié rapidement et facilement, et qui peut être influencé par la façon dont le créateur regroupe le contenu à publier.
 
-* Frontal :
+* Front-end :
 
-  L’ensemble des invalidations frontales et du cache peut nuire aux performances. Les tests permettent d’éviter ces erreurs.
+  L’ensemble des invalidations front-end et de cache peut nuire aux performances. Les tests permettent d’éviter ces erreurs.
 
 Notez que ce test de performance nécessite des connaissances et une analyse de votre cible :
 

@@ -109,7 +109,7 @@ La **version du catalogue** (`hybris.catalog.version`) importée peut être conf
 
 >[!NOTE]
 >
->Lorsque vous utilisez AEM, il existe plusieurs méthodes de gestion des paramètres de configuration pour de tels services ; voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails. Pour obtenir une liste exhaustive des paramètres configurables et de leurs valeurs par défaut, reportez-vous également à la console.
+>Dans AEM, il existe plusieurs méthodes pour gérer les paramètres de configuration pour ces services. Pour plus d’informations, voir [Configuration d’OSGi. ](/help/sites-deploying/configuring-osgi.md) Pour obtenir une liste exhaustive des paramètres configurables et de leurs valeurs par défaut, reportez-vous également à la console.
 
 La sortie du journal fournit des commentaires sur les pages et composants créés et signale les erreurs potentielles.
 
