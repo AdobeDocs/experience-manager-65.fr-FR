@@ -1,20 +1,18 @@
 ---
 title: Comment activer les composants principaux de Forms adaptatif sur AEM 6.5 Forms ?
-seo-title: How to enable Adaptive Forms Core Components on AEM 6.5 Forms?
 description: Guide détaillé pour vous aider à activer les composants principaux de Forms adaptatif dans un environnement Forms 6.5 AEM.
-seo-description: Step-by-Step guide to help you enable Adaptive Forms Core Components on an AEM 6.5 Forms environment.
 keywords: Activez les composants principaux, composants principaux Forms adaptatif, composants principaux sur la version 6.5, composants principaux Forms adaptatifs sur AEM 6.5, composants principaux AF sur AEM 6.5 et composants principaux Forms 6.5.
 contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
+source-git-commit: 1da3abac8a7f09d41127818a5abacf29524f1365
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 9%
+source-wordcount: '990'
+ht-degree: 52%
 
 ---
-
 
 # Activation des composants principaux de Forms adaptatif sur AEM Forms 6.5 {#enable-adaptive-forms-core-components}
 
@@ -29,22 +27,21 @@ L’activation des composants principaux de Forms adaptatif vous permet de comme
 
 Pour activer les composants principaux Forms adaptatifs sur votre environnement Forms 6.5 AEM, configurez et déployez une [AEM Archetype 41 ou version ultérieure](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) basé sur un projet (avec les options de formulaire activées) sur toutes vos instances d’auteur et de publication.
 
-Cet article fournit des instructions détaillées sur la configuration et le déploiement d’AEM archetype 41 ou version ultérieure sur votre environnement Forms AEM 6.5 pour activer les composants principaux Forms adaptatif.
-
+Cet article fournit des instructions détaillées sur la configuration et le déploiement d’AEM archetype 41 ou version ultérieure sur votre environnement Forms AEM 6.5 pour activer les composants principaux Forms adaptatif. Reportez-vous à la liste ci-dessous pour **AEM 6.5** versions compatibles pour activer les composants principaux Forms :
 
 ## Conditions préalables requises {#prerequisites}
 
 Avant d’activer les composants principaux de Forms adaptatif dans un environnement Forms 6.5 AEM :
 
-* [Mise à niveau vers AEM 6.5 Forms Service Pack 16 (6.5.16.0) ou version ultérieure](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html).
+* [Effectuez une mise à niveau vers le Pack de services 16 (6.5.16.0) ou version ultérieure pour AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=fr).
 
-* Installez la dernière version de [Apache Maven](https://maven.apache.org/download.cgi).
+* Installez la dernière version d’[Apache Maven](https://maven.apache.org/download.cgi).
 
-* Installez un éditeur de texte brut. Par exemple, Microsoft Visual Studio Code.
+* Installez un éditeur de texte brut. Par exemple, Microsoft Visual Studio Code.
 
-## Créer et déployer le dernier projet basé sur AEM Archetype
+## Créer et déployer le dernier projet d’archétype AEM
 
-Pour créer un archétype AEM 41 ou [later](https://github.com/adobe/aem-project-archetype) basé sur le projet et le déployez sur toutes vos instances d’auteur et de publication :
+Pour créer un projet d’archétype AEM 41 ou [version ultérieure](https://github.com/adobe/aem-project-archetype) et le déployer sur toutes vos instances de création et de publication, procédez comme suit :
 
 1. Connectez-vous à votre ordinateur, en tant qu’administrateur, en hébergeant et en exécutant votre instance Forms AEM 6.5.
 1. Ouvrez l’invite de commande ou le terminal et exécutez la commande suivante pour créer AEM projet Archetype (avec les options de formulaire activées) :
@@ -77,20 +74,20 @@ Pour créer un archétype AEM 41 ou [later](https://github.com/adobe/aem-project
       -D aemVersion="6.5.15" 
    ```
 
-   Lorsque vous exécutez la commande ci-dessus, veillez à tenir compte des points suivants :
+   Lorsque vous exécutez la commande ci-dessus, tenez compte des points suivants :
 
    * Ne modifiez pas la valeur de la variable `aemVersion` de `6.5.15.0` à tout autre chose.
 
    * Définissez la variable `archetypeVersion` de `41` ou plus tard. Pour obtenir la dernière version, reportez-vous à la section Configuration requise dans [AEM Archétype de projet](https://github.com/adobe/aem-project-archetype) la documentation.
 
-   * Mettez à jour la commande afin de refléter les valeurs spécifiques de votre environnement, y compris le `appTitle`, `appId`, et `groupId`. Définissez également la valeur de la variable  `includeFormsenrollment` de `y`. Si vous utilisez Forms Portal, définissez la variable `includeExamples=y` pour inclure les composants principaux du portail Forms dans votre projet.
+   * Mettez à jour la commande afin de refléter les valeurs spécifiques de votre environnement, y compris le `appTitle`, `appId`, et `groupId`. Définissez également la valeur de la variable  `includeFormsenrollment` de `y`. Si vous utilisez le portail Formulaires, définissez l’option `includeExamples=y` de façon à inclure les composants principaux du portail Formulaires dans votre projet.
 
 
-1. (Uniquement pour les projets basés sur la version 41 de l’archétype) Une fois le projet d’archétype AEM créé, activez les thèmes pour les Forms adaptatif basés sur les composants principaux. Pour activer les thèmes :
+1. (Uniquement pour les projets basés sur l’archétype 41) Une fois le projet d’archétype AEM créé, activez les thèmes des formulaires adaptatifs basés sur les composants principaux. Pour activer les thèmes, procédez comme suit :
 
-   1. Ouvrez le [AEM archetype Project Folder]/ui.apps/src/main/content/jcr_root/apps/__appId__/components/adaptiveForm/page/customheaderlibs.html pour modification :
+   1. Ouvrez le [Dossier du projet d’archétype AEM]/ui.apps/src/main/content/jcr_root/apps/__appId__/components/adaptiveForm/page/customheaderlibs.html pour modification :
 
-   1. Ajoutez le code suivant à la ligne 21 :
+   1. Ajoutez le code suivant à la ligne 21 :
 
       ```XML
       <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html"
@@ -100,23 +97,32 @@ Pour créer un archétype AEM 41 ou [later](https://github.com/adobe/aem-project
       </sly>
       ```
 
-      ![Ajouter le code mentionné ci-dessus à la ligne 21](/help/forms/using/assets/code-to-enable-themes.png)
+      ![Ajouter le code mentionné ci-dessus à la ligne 21](/help/forms/using/assets/code-to-enable-themes.png)
 
    1. Enregistrez et fermez le fichier.
 
-1. Mettez à jour le projet pour inclure la dernière version des composants principaux Forms :
+1. Mettez à jour le projet pour inclure la dernière version des composants principaux des formulaires :
 
-   1. Ouvrez le [AEM archetype Project Folder]/pom.xml pour modification.
-   1. Définir la version de `core.forms.components.version` et `core.forms.components.af.version` to [derniers composants principaux Forms](https://github.com/adobe/aem-core-forms-components/tree/release/650) version.
+   1. Ouvrez le [Dossier du projet d’archétype AEM]/pom.xml pour modification.
+   1. Définir la version de `core.forms.components.version` et `core.forms.components.af.version` to [derniers composants principaux Forms](https://github.com/adobe/aem-core-forms-components/tree/release/650#system-requirements) et assurez-vous que les deux ont la même version que **Composants principaux de Forms** mentionné dans le tableau et définissez la version de `core.wcm.components.version` comme indiqué dans **Composants principaux WCM**.
+
+      >[!WARNING]
+      >
+      >* Lors de la création d’un projet Archetype avec `version 45`, la variable [AEM archetype Project Folder]/pom.xml définit initialement la version des composants principaux de formulaires sur `1.1.28`. Avant de créer ou de déployer le projet Archetype, mettez à jour la version des composants principaux de formulaires en `1.1.26`.
+
+
+      >[!NOTE]
+      >
+      >* Si vous configurez une autre topologie, veillez à ajouter les URL d’envoi, de préremplissage et autres à la liste autorisée au niveau de la couche de Dispatcher.
 
    1. Enregistrez et fermez le fichier.
 
 
-1. Une fois le projet AEM Archetype créé, créez le package de déploiement pour votre environnement. Pour créer le module :
+1. Une fois le projet d’archétype AEM créé, créez le package de déploiement pour votre environnement. Pour créer le package, procédez comme suit :
 
-   1. Accédez au répertoire racine de votre projet AEM Archetype.
+   1. Accédez au répertoire racine de votre projet d’archétype AEM.
 
-   1. Exécutez la commande suivante pour créer le projet AEM Archetype pour votre environnement :
+   1. Exécutez la commande suivante pour créer le projet d’archétype AEM pour votre environnement :
 
       ```Shell
       mvn clean install
@@ -125,9 +131,9 @@ Pour créer un archétype AEM 41 ou [later](https://github.com/adobe/aem-project
       ![archetypebuild-success](/help/forms/using/assets/corecomponent-build-successful.png)
 
 
-   Une fois le projet AEM Archetype créé, un module AEM est généré. Vous trouverez le package à l’adresse [AEM archetype Project Folder]\all\target\[appid].all-[version].zip
+   Une fois le projet d’archétype AEM créé, un package AEM est généré. Vous trouverez le package dans le [Dossier du projet d’archétype AEM]\all\target\[appid].all-[version].zip
 
-1. Utilisez la variable [Gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr) pour déployer le [AEM archetype Project Folder]\all\target\[appid].all-[version]Package .zip sur toutes les instances d’auteur et de publication.
+1. Utilisez le [Gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr) pour déployer le package [Dossier du projet d’archétype AEM]\all\target\[appid].all-[version].zip sur toutes les instances de création et de publication.
 
 >[!NOTE]
 >
@@ -136,23 +142,23 @@ Pour créer un archétype AEM 41 ou [later](https://github.com/adobe/aem-project
 > * Si vous rencontrez des difficultés pour accéder à la boîte de dialogue de connexion sur une instance de publication, essayez d’installer le module via le gestionnaire de modules à l’aide de l’URL : `http://[Publish Server URL]:[PORT]/system/console` pour vous connecter. Cela vous permet d’accéder à la page de connexion d’une instance de publication, ce qui vous permet de poursuivre le processus d’installation.
 > * Ne supprimez pas ou ne supprimez pas le projet Archetype après son déploiement dans votre environnement. Le projet Archetype est nécessaire pour ajouter des thèmes de composants principaux de Forms adaptatif personnalisés et nouveaux à votre environnement.
 
-Les composants principaux sont activés pour votre environnement. Un modèle de formulaire adaptatif basé sur des composants principaux vierge et un thème de canevas 3.0 sont déployés dans votre environnement, ce qui vous permet de [Création d’un Forms adaptatif basé sur les composants principaux](create-an-adaptive-form-core-components.md).
+Les composants principaux sont activés pour votre environnement. Un modèle vierge de formulaire adaptatif basé sur des composants principaux et un thème Canvas 3.0 sont déployés sur votre environnement. Vous pouvez maintenant [créer un formulaire adaptatif basé sur les composants principaux](create-an-adaptive-form-core-components.md).
 
-## Foire aux questions
+## Questions fréquentes
 
-### Que sont les composants principaux ?
+### Que sont les composants principaux ?
 
-La variable [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) sont un ensemble de composants WCM (Web Content Management, gestion de contenu web) normalisés permettant d’AEM accélérer le temps de développement et de réduire les coûts de maintenance de vos sites web.
+Les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) sont un ensemble de composants WCM (Web Content Management, gestion de contenu web) normalisés pour AEM dont l’objectif est d’accélérer le développement et de réduire les coûts de maintenance de vos sites web.
 
-### Quelles sont les fonctionnalités ajoutées pour activer les composants principaux ?
+### Quelles sont les fonctionnalités des composants principaux ?
 
 
-Lorsque les composants principaux de Forms adaptatif sont activés pour votre environnement, un modèle de formulaire adaptatif basé sur les composants principaux vierge et le thème Canevas 3.0 sont ajoutés à votre environnement. Après avoir activé les composants principaux de Forms adaptatif pour votre environnement, vous pouvez :
+Lorsque les composants principaux des formulaires adaptatifs sont activés pour votre environnement, un modèle vierge de formulaire adaptatif basé sur les composants principaux et le thème Canvas 3.0 sont ajoutés à votre environnement. Après avoir activé les composants principaux des formulaires adaptatifs pour votre environnement, vous pouvez :
 
-* Création d’un Forms adaptatif basé sur des composants principaux.
-* Créez des modèles de formulaires adaptatifs basés sur des composants principaux.
-* Créez des thèmes personnalisés pour les modèles de formulaires adaptatifs basés sur les composants principaux.
-* Servez les représentations JSON du formulaire adaptatif basé sur les composants principaux aux canaux tels que les applications mobiles, web, natives et les services qui nécessitent une représentation sans tête d’un formulaire.
+* Créer un formulaire adaptatif basé sur des composants principaux.
+* Créer des modèles de formulaires adaptatifs basés sur des composants principaux.
+* Créer des thèmes personnalisés pour les modèles de formulaires adaptatifs basés sur les composants principaux.
+* Diffuser les représentations JSON des formulaires adaptatifs basés sur les composants principaux à divers canaux tels que les applications mobiles, web et natives, ainsi que les services qui nécessitent une représentation découplée d’un formulaire.
 
 ## Prochaines étapes
 
