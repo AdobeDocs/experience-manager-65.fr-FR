@@ -1,6 +1,6 @@
 ---
-title: Programme d’installation du patch JEE AEM Forms
-description: Découvrez comment utiliser le programme d’installation du correctif d’AEM Forms JEE pour résoudre les problèmes liés aux composants Forms 6.5 d’AEM.
+title: Programme d’installation du correctif JEE AEM Forms
+description: Découvrez comment utiliser le programme d’installation du correctif JEE AEM Forms pour résoudre les problèmes liés aux composants AEM Forms 6.5.
 uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
@@ -8,7 +8,7 @@ exl-id: 6b17472b-9226-4319-b305-4dba862d21af
 source-git-commit: f0b59ff25f49f5ca12bc6966882f68b5231a9511
 workflow-type: tm+mt
 source-wordcount: '535'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -34,15 +34,13 @@ Le programme d’installation du correctif JEE AEM 6.5 Forms comprend tous les 
 1. Dans le répertoire, dont le nom dépend du système d’exploitation que vous utilisez :
 
    * **Windows**
-
-
 Accédez au répertoire approprié sur le support d’installation ou dans le dossier de votre disque dur dans lequel le programme d’installation a été copié, puis cliquez deux fois sur le fichier aemforms65_cfp_install.exe.
 
       * (Windows 32 bits) `Windows\Disk1\InstData\VM`
       * (Windows 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
 
    * **Linux®**
-Accédez au répertoire approprié, puis, à l’invite de commande, saisissez `./aem65_cfp_install.bin`.
+Accédez au répertoire approprié puis, dans l’invite de commande, saisissez `./aem65_cfp_install.bin`.
 
       * (Linux®) `Linux/Disk1/InstData/NoVM`
 
@@ -54,8 +52,8 @@ Accédez au répertoire approprié, puis, à l’invite de commande, saisissez `
 1. Lisez le résumé relatif à la pré-installation, puis cliquez sur **[!UICONTROL Installer]**.
 1. Lorsque l’installation est terminée, cliquez sur **[!UICONTROL Suivant]** pour appliquer les mises à jour du Quick Fix à vos fichiers installés.
 
-1. **[Pour Windows uniquement]:** Procédez comme suit :
-   * Désélectionnez l’option **Démarrer le gestionnaire de configuration** avant de cliquer sur **[!UICONTROL Terminé]**. Exécuter **Configuration Manager** en utilisant la variable **ConfigurationManager.bat** dans `[aem-forms root]\configurationManager\bin`.
+1. **[Pour Windows uniquement] :** procédez comme suit :
+   * Désélectionnez l’option **Démarrer le Configuration Manager** avant de cliquer sur **[!UICONTROL Terminé]**. Exécutez **Configuration Manager** en utilisant le fichier **ConfigurationManager.bat** situé dans `[aem-forms root]\configurationManager\bin`.
 
    * Vous pouvez aussi désélectionner l’option **Démarrer Configuration Manager** avant de cliquer sur **[!UICONTROL Terminé]**. Avant d’exécuter **Configuration Manager** en utilisant **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, accédez au répertoire *`<AEMForms_Install_Dir>\configurationManager\bin`* et remplacez les fichiers [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) et [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax).
 
@@ -73,13 +71,13 @@ Accédez au répertoire approprié, puis, à l’invite de commande, saisissez `
    * [Installation et déploiement d’AEM Forms pour JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_fr)
    * [Installation et déploiement d’AEM Forms pour WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_fr)
 
-1. (JBoss® uniquement) Après avoir installé le correctif et configuré le serveur, supprimez les répertoires tmp et de travail du serveur d’applications JBoss®.
+1. (JBoss® uniquement) Après avoir installé le correctif et configuré le serveur, supprimez les répertoires tmp et work du serveur d’applications JBoss®.
 
 ## Configurations après le déploiement {#post-deployment-configurations}
 
 ### Configurations SAML {#saml-configurations}
 
-Si l’authentification SAML est configurée et que vous rencontrez des problèmes avec les métadonnées IDP volumineuses, procédez comme suit après l’installation du correctif :
+Si l’authentification SAML est configurée et que vous rencontrez des problèmes avec des métadonnées IDP volumineuses, procédez comme suit après l’installation du correctif :
 
 1. Définissez la propriété système suivante dans votre serveur d’applications :\
    `um.saml.enable.large.xml=true`
