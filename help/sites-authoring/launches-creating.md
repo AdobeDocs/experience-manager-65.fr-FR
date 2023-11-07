@@ -9,9 +9,9 @@ topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1039'
 ht-degree: 95%
 
 ---
@@ -153,7 +153,7 @@ Pour créer un lancement imbriqué à partir de la console **Sites**, sur la bas
 
 1. Entrez le **titre du lancement** et tous les autres détails demandés (comme s’il s’agissait d’un lancement normal).
 
-1. Utilisez **Créer** pour terminer le processus et créer votre lancement. La boîte de dialogue de confirmation vous demandera si vous souhaitez ouvrir le lancement immédiatement.
+1. Cliquez ou appuyez sur **Créer** pour terminer le processus et créer votre lancement. La boîte de dialogue de confirmation vous demandera si vous souhaitez ouvrir le lancement immédiatement.
 
    Si vous sélectionnez **Terminé**, vous revenez au rail **Références** de la console **Sites**. Si vous sélectionnez la page appropriée, votre nouveau lancement est affiché.
 

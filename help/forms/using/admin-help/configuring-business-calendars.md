@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1901'
 ht-degree: 10%
 
 ---
@@ -25,7 +25,7 @@ Par exemple, un rappel de tâche est configuré pour se produire trois jours ouv
 
 >[!NOTE]
 >
->Lors du calcul des dates et heures à l’aide de calendriers professionnels, AEM forms utilise la date et l’heure du serveur sur lequel il s’exécute et ne s’adapte pas à la différence entre les fuseaux horaires. Par exemple, si un rappel de tâche est planifié à 10 h 00 sur un serveur s’exécutant à Londres, mais que l’utilisateur recevant le rappel se trouve à New York City, l’utilisateur recevra le rappel à 5 h 00 (heure locale).
+>Lors du calcul des dates et heures à l’aide de calendriers professionnels, AEM forms utilise la date et l’heure du serveur sur lequel il s’exécute et ne s’adapte pas à la différence entre les fuseaux horaires. Par exemple, si un rappel de tâche est planifié à 10 h 00 sur un serveur s’exécutant à Londres, mais que l’utilisateur recevant le rappel se trouve à New York, l’utilisateur recevra le rappel à 5 h 00 (heure locale).
 
 ## Utilisation du calendrier professionnel par défaut {#using-the-default-business-calendar}
 
@@ -65,7 +65,7 @@ Si votre entreprise contient différents ensembles d’utilisateurs pour des jou
 
 >[!NOTE]
 >
->Si vous ne créez pas de nouveau calendrier professionnel, le calendrier par défaut est utilisé.
+>Si vous ne créez pas de calendrier professionnel, le calendrier par défaut est utilisé.
 
 1. Dans Administration Console, cliquez sur Services > Processus Forms > Calendriers professionnels.
 1. Pour ajouter un nouveau calendrier professionnel, cliquez sur ![bus_cal_plus](assets/bus_cal_plus.png). Le texte *Nouveau calendrier* apparaît dans la liste déroulante. Sélectionnez le texte et saisissez un autre nom pour votre calendrier.

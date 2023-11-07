@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 22d9b22a0fc0bc5f753f2e11ca66e2627e1a8405
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7181'
+source-wordcount: '7177'
 ht-degree: 27%
 
 ---
@@ -35,7 +35,7 @@ Vous pouvez créer un dossier de contrôle de deux manières :
 
 * Créez un dossier sur le système de fichiers avant de configurer un point de fin Watched Folder, puis saisissez le chemin d’accès complet dans la zone Chemin d’accès.
 
-Dans un environnement organisé en grappe, le dossier qui sera utilisé comme dossier de contrôle doit être accessible, modifiable et partagé sur le système de fichiers ou le réseau. Dans ce scénario, chaque instance de serveur d’applications de la grappe doit avoir accès au même dossier partagé.
+Dans un environnement organisé en grappe, le dossier utilisé comme dossier de contrôle doit être accessible, modifiable et partagé sur le système de fichiers ou le réseau. Dans ce scénario, chaque instance de serveur d’applications de la grappe doit avoir accès au même dossier partagé.
 
 Sous Windows, si le serveur d’applications s’exécute en tant que service, il doit être démarré avec un accès approprié au dossier partagé de l’une des manières suivantes :
 
@@ -62,7 +62,7 @@ Si la tâche contient plusieurs fichiers d’entrée, l’utilisateur doit crée
 
 ## Sortie du dossier de contrôle {#watched-folder-output}
 
-Lorsque l’entrée est un dossier et que la sortie est composée de plusieurs fichiers, AEM forms crée un dossier de sortie portant le même nom que le dossier input et copie les fichiers de sortie dans ce dossier. Lorsque la sortie est composée d’un document map contenant une paire clé-valeur, telle que la sortie d’un processus Output, la clé est utilisée comme nom de fichier de sortie.
+Lorsque l’entrée est un dossier et que la sortie est composée de plusieurs fichiers, AEM forms crée un dossier de sortie portant le même nom que le dossier input et copie les fichiers de sortie dans ce dossier. Lorsque la sortie est composée d’un document map contenant une paire clé-valeur, telle que la sortie d’un processus Output, la clé est utilisée comme nom du fichier de sortie.
 
 Les noms de fichiers de sortie issus d’un processus de point de fin ne peuvent pas contenir de caractères autres que des lettres, des chiffres et un point (.) avant l’extension de fichier. AEM forms convertit les autres caractères en valeurs hexadécimales.
 
@@ -386,7 +386,7 @@ Voici quelques conseils et astuces lors de la configuration du point de fin Watc
    * Pour `java.lang.String` : l’administrateur dispose de deux options. Tout d’abord, l’administrateur peut spécifier le type de mappage comme étant `Literal` et saisir une valeur de mappage sous la forme d’une chaîne, telle que `hello.` et Watched Folder appelle le service avec la chaîne `hello`. Deuxième option : l’administrateur peut définir le type de mappage sur `Variable`, puis saisir une valeur de mappage avec un modèle du type `*.txt`. Dans le deuxième cas, les fichiers ayant pour extension .txt seront lus comme un document converti sous forme de chaîne pour appeler le service.
    * Type primitif Java : l’administrateur peut définir le type de mappage sur `Literal` et fournir la valeur. Watched Folder appellera le service avec la valeur spécifiée.
 
-* Watched Folder est destiné à fonctionner avec des documents. Les sorties prises en charge sont `com.adobe.idp.Document`, `org.w3c.Document` et `org.w3c.Node`, de même qu’une liste et un mappage de ces types. Tout autre type entraîne un échec de la sortie dans le dossier failure.
+* Watched Folder est destiné à fonctionner avec des documents. Les sorties prises en charge sont : `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node`et une liste et un mappage de ces types. Tout autre type entraîne un échec de la sortie dans le dossier failure.
 * Si les résultats ne se trouvent pas dans le dossier result, vérifiez le dossier failure pour voir si un échec s’est produit.
 * Watched Folder fonctionne mieux s’il est utilisé en mode asynchrone. Dans ce mode, Watched Folder place la demande d’appel dans la file d’attente et rappelle. La file d’attente est ensuite traitée de manière asynchrone. Lorsque l’option Asynchrone n’est pas définie, Watched Folder appelle le service cible de manière synchrone et Process Engine attend que le service soit terminé avec la requête et que les résultats soient générés. Si le service cible prend beaucoup de temps pour traiter la demande, Watched Folder peut générer des erreurs de délai d’expiration.
 * La création de dossiers de contrôle pour les opérations d’importation et d’exportation ne permet pas l’abstraction de l’extension de nom de fichier. Lors de l’appel du service Form Data Integration à l’aide de dossiers de contrôle, le type d’extension du nom du fichier de sortie peut ne pas correspondre au format de sortie prévu pour le type d’objet de document. Par exemple, si le fichier d’entrée vers un dossier de contrôle appelant l’opération d’exportation est un formulaire XFA contenant des données, la sortie doit être un fichier de données XDP. Pour obtenir un fichier de sortie avec l’extension de nom de fichier correcte, vous pouvez le spécifier dans le mapping des paramètres de sortie. Dans cet exemple, vous pouvez utiliser %F.xdp pour le mappage des paramètres de sortie.

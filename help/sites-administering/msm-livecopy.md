@@ -3,10 +3,10 @@ title: Création et synchronisation de Live Copies
 description: Découvrez comment créer et synchroniser des Live Copies dans Adobe Experience Manager.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4233'
-ht-degree: 73%
+source-wordcount: '4226'
+ht-degree: 72%
 
 ---
 
@@ -123,7 +123,7 @@ Pour créer une Live Copy :
    * Sélectionné : créer une Live Copy de la page sélectionnée uniquement (Live Copy superficielle)
    * Non cochée : crée une Live Copy qui comprend tous les descendants de la page sélectionnée (Live Copy profonde).
 
-1. (Facultatif) Pour spécifier une ou plusieurs configurations de déploiement à utiliser pour la Live Copy, utilisez la variable **Configurations du déploiement** pour les sélectionner ; les configurations sélectionnées s’affichent sous le sélecteur de liste déroulante.
+1. (Facultatif) Pour spécifier une ou plusieurs configurations de déploiement à utiliser pour la Live Copy, utilisez la variable **Configurations du déploiement** liste déroulante pour les sélectionner ; les configurations sélectionnées s’affichent sous le sélecteur de liste déroulante.
 1. Cliquez ou appuyez sur **Créer**. Un message de confirmation s’affiche où vous pouvez sélectionner **Ouvrir** ou **Terminé**.
 
 ### Création d’une Live Copy d’un site à partir d’une configuration de plan directeur {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
@@ -412,13 +412,13 @@ Une fois l’héritage [suspendu](#suspending-inheritance-from-page-properties),
 
 ![Reprendre](assets/chlimage_1-229.png)
 
-Lorsque cette action est sélectionnée, la boîte de dialogue s’affiche. Vous pouvez sélectionner une synchronisation, si nécessaire, puis confirmer l’action.
+Lorsque cette option est sélectionnée, la boîte de dialogue s’affiche. Vous pouvez sélectionner une synchronisation, si nécessaire, puis confirmer l’action.
 
 #### Reprise d’une page Live Copy à partir de l’aperçu de la Live Copy {#resume-a-live-copy-page-from-the-live-copy-overview}
 
 L’[action Reprendre est également disponible dans l’aperçu de la Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), lorsqu’une page Live Copy est sélectionnée.
 
-1. Ouvrez le [Présentation de la Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) et sélectionnez une page Live Copy qui a été suspendue ; s’affiche sous la forme **HÉRITAGE ANNULÉ**.
+1. Ouvrez le [Présentation de la Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) et sélectionnez une page Live Copy qui a été suspendue ; elle s’affiche sous la forme **HÉRITAGE ANNULÉ**.
 1. Sélectionnez **Reprendre** dans la barre d’outils.
 1. Indiquez si vous souhaitez synchroniser la page après le rétablissement de l’héritage, puis confirmez l’action **Reprendre** dans la boîte de dialogue **Reprendre la Live Copy**.
 
@@ -640,7 +640,7 @@ Pour désolidariser une Live Copy :
 
    ![Désolidariser](assets/chlimage_1-236.png)
 
-1. Une boîte de dialogue de confirmation s’affiche. Sélectionnez **Désolidariser** pour exécuter l’opération.
+1. Une boîte de dialogue de confirmation s’affiche. Sélectionnez **Désolidariser** pour terminer l’action.
 
 ### Dissocier une page Live Copy de l’aperçu de la Live Copy {#detach-a-live-copy-page-from-the-live-copy-overview}
 

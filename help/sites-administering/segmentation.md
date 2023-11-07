@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1783'
-ht-degree: 79%
+source-wordcount: '1774'
+ht-degree: 86%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->Cette section décrit la configuration de la segmentation lors de l’utilisation du ContextHub. Si vous utilisez la fonctionnalité ClientContext, reportez-vous à la documentation appropriée pour [configuration de la segmentation pour ClientContext](/help/sites-administering/campaign-segmentation.md).
+>Cette section décrit la configuration de la segmentation lors de l’utilisation du ContextHub. Si vous utilisez la fonctionnalité ClientContext, consultez la documentation appropriée pour [configuration de la segmentation pour ClientContext](/help/sites-administering/campaign-segmentation.md).
 >
 
 La segmentation est un élément clé de la création d’une campagne. Voir [Gestion des audiences](/help/sites-authoring/managing-audiences.md) pour plus d’informations sur le fonctionnement de la segmentation et les termes clés.
 
-En fonction des informations que vous avez déjà collectées sur les visiteurs de votre site et des objectifs que vous souhaitez atteindre, vous devez définir les segments et les stratégies requis pour votre contenu ciblé.
+En fonction des informations que vous avez déjà collectées sur les visiteurs de votre site et des objectifs que vous souhaitez atteindre, vous devez définir les segments et les stratégies nécessaires au contenu ciblé.
 
 Ces segments sont ensuite utilisés pour fournir aux visiteurs du contenu spécifiquement ciblé. Ce contenu est conservé dans la section [Personnalisation](/help/sites-authoring/personalization.md) du site web. Les [activités](/help/sites-authoring/activitylib.md) définies ici peuvent être ajoutées à n’importe quelle page et définissent à quel segment de visiteurs le contenu spécialisé s’applique.
 
@@ -34,13 +34,13 @@ AEM vous permet de personnaliser facilement l’expérience de vos utilisateurs.
 
 ## Accès aux segments {#accessing-segments}
 
-La console [Audiences](/help/sites-authoring/managing-audiences.md) permet de gérer les segments pour ContextHub ou ClientContext, ainsi que les audiences de votre compte Adobe Target. Cette documentation couvre la gestion des segments pour ContextHub. Pour [Segments de contexte client](/help/sites-administering/campaign-segmentation.md) et les segments Adobe Target, consultez la documentation appropriée.
+La variable [Audiences](/help/sites-authoring/managing-audiences.md) La console permet de gérer les segments pour ContextHub ou ClientContext, ainsi que les audiences pour votre compte Adobe Target. Cette documentation couvre la gestion des segments pour ContextHub. Pour [Segments de contexte client](/help/sites-administering/campaign-segmentation.md) et les segments Adobe Target, consultez la documentation appropriée.
 
 Pour accéder à vos segments, vous devez sélectionner votre configuration. Dans la navigation globale, sélectionnez **Navigation > Personnalisation > Audiences**. Les configurations disponibles s’affichent :
 
 ![Audiences - Configurations](assets/segmentation-access-confs.png)
 
-Sélectionnez votre configuration pour afficher les segments, par exemple le site WKND :
+Sélectionnez votre configuration pour afficher les segments, par exemple, le site WKND :
 
 ![Audiences - Segments](assets/segmentation-access-segments.png)
 
@@ -141,7 +141,7 @@ Pour définir votre nouveau segment, procédez comme suit :
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. Dans la section **Nouveau segment ContextHub**, entrez un titre pour le segment, ainsi qu’une valeur d’amplification si nécessaire, puis appuyez ou cliquez sur **Créer**.
+1. Dans la section **Nouveau segment ContextHub**, saisissez un titre pour le segment et une valeur d’amplification si nécessaire, puis appuyez ou cliquez sur **Créer**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -162,7 +162,7 @@ Pour définir votre nouveau segment, procédez comme suit :
 
 ### Utilisation des conteneurs ET et OU {#using-and-and-or-containers}
 
-Avec les composants de conteneur ET et OU, vous pouvez créer des segments complexes dans AEM. Pour ce faire, il est utile de tenir compte de quelques points de base :
+Avec les composants de conteneur ET et OU, vous pouvez créer des segments complexes dans AEM. Pour ce faire, il est utile de tenir compte de quelques points importants :
 
 * Le niveau supérieur de la définition est toujours le conteneur ET qui est initialement créé ; cela ne peut pas être changé, mais n’a pas d’effet sur le reste de votre définition de segment.
 * Assurez-vous que l’imbrication de votre conteneur a un sens. Les conteneurs peuvent être considérés comme des crochets de votre expression booléenne.
@@ -228,8 +228,8 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 #### Référencement d’un script {#referencing-a-script}
 
 1. Créez un segment ContextHub.
-1. Ajouter **Référence de script** à l’emplacement souhaité du segment.
-1. Ouvrez la boîte de dialogue de modification du composant **Référence de script**. If [correctement configuré](/help/sites-administering/segmentation.md#defining-a-script-to-reference), le script doit être disponible dans la variable **Nom du script** menu déroulant.
+1. Ajoutez le composant **Référence de script** à l’emplacement souhaité du segment.
+1. Ouvrez la boîte de dialogue de modification du composant **Référence de script**. S’il est [correctement configuré](/help/sites-administering/segmentation.md#defining-a-script-to-reference), le script doit être disponible dans le menu déroulant **Nom du script**.
 
 ## Organisation des segments {#organizing-segments}
 
@@ -306,8 +306,8 @@ Une fois le segment défini, les résultats potentiels peuvent être testés ave
 
 1. Affichez l’aperçu d’une page.
 1. Cliquez sur l’icône ContextHub pour afficher la barre d’outils ContextHub.
-1. Sélectionnez une personne qui correspond au segment que vous avez créé.
-1. ContextHub résout les segments applicables pour la personne sélectionnée.
+1. Sélectionnez une personne qui correspond au segment que vous avez créé
+1. ContextHub résout les segments applicables pour la personne sélectionnée
 
 Par exemple, notre définition de segment simple pour identifier les utilisateurs dans notre classe d’âges principale est une définition de segment simple basée sur l’âge et le sexe de l’utilisateur. Le chargement d’une personne spécifique correspondant à ces critères indique si ce segment a été résolu avec succès :
 
@@ -321,11 +321,11 @@ Ou s’il n’est pas résolu :
 >
 >Toutes les caractéristiques sont résolues immédiatement, bien que la plupart ne soient modifiées qu’au rechargement de la page.
 
-De tels tests peuvent également être effectués sur les pages de contenu et en combinaison avec du contenu ciblé et des **Activités** et **Expériences**.
+Des tests comme celui-ci peuvent également être effectués sur les pages de contenu et en combinaison avec du contenu ciblé et des **Activités** et **Expériences** connexes.
 
 Si vous avez configuré une activité et une expérience à l’aide du segment de classe d’âges principale ci-dessus, vous pouvez facilement tester votre segment avec l’activité. Pour plus d’informations sur la configuration d’une activité, voir [documentation sur la création de contenu ciblé](/help/sites-authoring/content-targeting-touch.md).
 
-1. Dans le mode d’édition d’une page sur laquelle vous avez configuré du contenu ciblé, vous pouvez constater que le contenu est ciblé à l’aide d’une icône de flèche sur le contenu.
+1. En mode de modification d’une page sur laquelle vous avez configuré du contenu ciblé, vous pouvez constater que le contenu est ciblé par le biais d’une icône de flèche sur le contenu.
 
    ![chlimage_1-313](assets/chlimage_1-313.png)
 

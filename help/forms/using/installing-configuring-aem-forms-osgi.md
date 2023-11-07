@@ -10,10 +10,10 @@ discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1881'
-ht-degree: 68%
+source-wordcount: '1879'
+ht-degree: 69%
 
 ---
 
@@ -207,7 +207,7 @@ Pour configurer la mise en cache des formulaires adaptatifs, procédez comme sui
 
    >[!NOTE]
    >
-   >Pour désactiver le cache, définissez la valeur du champ Nombre de Forms adaptatives sur **0**. Le cache est réinitialisé, et tous les formulaires et documents sont supprimés du cache lorsque vous désactivez ou modifiez la configuration du cache.
+   >Pour désactiver le cache, définissez la valeur du champ Nombre de formulaires adaptatifs sur **0**. Le cache est réinitialisé, et tous les formulaires et documents sont supprimés du cache lorsque vous désactivez ou modifiez la configuration du cache.
 
 #### Configuration de la communication SSL pour le modèle de données de formulaire {#configure-ssl-communcation-for-form-data-model}
 
@@ -231,7 +231,7 @@ Pour utiliser Adobe Analytics avec AEM Forms, voir [Configuration des analyses e
 
 #### Intégrer Adobe Target {#integrate-adobe-target}
 
-Vos clientes et clients sont susceptibles d’abandonner un formulaire si l’expérience qui en résulte n’est pas satisfaisante. Si elle est frustrante pour les clientes et clients, elle peut aussi bouleverser le volume et les coûts d’assistance de votre organisation. Il est aussi primordial que difficile d’identifier et d’offrir une bonne expérience client qui augmente le taux de conversion. AEM Forms est la solution à ce problème.
+Vos clientes et clients sont susceptibles d’abandonner un formulaire si l’expérience qui en résulte n’est pas satisfaisante. Si elle est frustrante pour les clientes et clients, elle peut aussi bouleverser le volume et les coûts d’assistance de votre organisation. Il est essentiel et difficile d’identifier et de fournir l’expérience client appropriée qui augmente le taux de conversion. AEM Forms est la solution à ce problème.
 
 AEM forms s’intègre à Adobe Target, une solution Adobe Marketing Cloud, pour offrir des expériences client personnalisées et attrayantes sur plusieurs canaux numériques. Pour utiliser Adobe Target avec des formulaires adaptatifs de test A/B, [intégrez Adobe Target à AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
 

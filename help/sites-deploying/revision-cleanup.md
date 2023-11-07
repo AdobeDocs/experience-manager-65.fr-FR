@@ -1,15 +1,15 @@
 ---
 title: Nettoyage de révision
-description: Découvrez comment utiliser la fonctionnalité de nettoyage des révisions dans Adobe Experience Manager 6.5.
+description: Découvrez comment utiliser la fonctionnalité de nettoyage des révisions de Adobe Experience Manager 6.5.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '5814'
+source-wordcount: '5811'
 ht-degree: 68%
 
 ---
@@ -95,7 +95,7 @@ La configuration par défaut exécute la compression des révisions les jours de
 
 Lorsque vous configurez la variable `full.gc.days` , la compression complète s’exécute pendant les jours définis dans la valeur et la compression des révisions les jours qui ne sont pas définis dans la valeur. Par exemple, si vous configurez la compression complète pour qu’elle s’exécute le dimanche, la compression des révisions les plus récentes s’exécute du lundi au samedi. Par exemple, si vous configurez la compression complète pour qu’elle s’exécute tous les jours de la semaine, la compression des révisions les plus récentes ne s’exécute pas du tout.
 
-Considérez également que :
+Tenez également compte des points suivants :
 
 * La **compression des révisions les plus récentes** est moins efficace et a un impact moindre sur les opérations normales du système. Elle est donc destinée à être exécutée pendant les jours ouvrables.
 * **Compression complète** est plus efficace, mais a également un impact plus important sur les opérations normales du système. Elle est donc destinée à être exécutée pendant les jours ouvrables.
@@ -309,7 +309,7 @@ Parfois, l’alternance entre les modes de compression de la queue et complet re
    <td> </td>
   </tr>
   <tr>
-   <td><strong>Si l’instance AEM est arrêtée pendant une tâche de nettoyage planifiée, le processus s’arrête-t-il de manière sécurisée ou l’arrêt est-il bloqué jusqu’à la fin de la compression ?</strong></td>
+   <td><strong>Si l’instance d’AEM est arrêtée pendant une tâche de nettoyage planifiée, le processus s’arrête-t-il de manière sécurisée ou l’arrêt est-il bloqué jusqu’à la fin de la compression ?</strong></td>
    <td>Le nettoyage des révisions est interrompu et le référentiel s’arrête en toute sécurité.</td>
    <td> </td>
   </tr>
@@ -339,7 +339,7 @@ Parfois, l’alternance entre les modes de compression de la queue et complet re
   </tr>
   <tr>
    <td><p><strong>Comment le nettoyage des révisions en ligne est-il exécuté sur une instance de secours ?</strong></p> </td>
-   <td><p>Dans une configuration Secondaire froide, seule la Principale instance doit être configurée pour exécuter le nettoyage des révisions en ligne. Sur l’instance de secours, le nettoyage des révisions en ligne n’a pas besoin d’être programmé de manière spécifique.</p> <p>L’opération correspondante sur une instance de secours est le nettoyage automatique. Cela correspond à la phase de nettoyage du nettoyage des révisions en ligne. Le nettoyage automatique est exécuté sur l’instance secondaire après l’exécution du nettoyage des révisions en ligne sur l’instance principale.</p> <p>Les phases d’estimation et de compression ne seront pas exécutées sur une instance secondaire.</p> </td>
+   <td><p>Dans une configuration Cold Standby, seule l’instance principale doit être configurée pour exécuter le nettoyage des révisions en ligne. Sur l’instance de secours, le nettoyage des révisions en ligne n’a pas besoin d’être programmé de manière spécifique.</p> <p>L’opération correspondante sur une instance de secours est le nettoyage automatique. Cela correspond à la phase de nettoyage du nettoyage des révisions en ligne. Le nettoyage automatique est exécuté sur l’instance secondaire après l’exécution du nettoyage des révisions en ligne sur l’instance principale.</p> <p>Les phases d’estimation et de compression ne seront pas exécutées sur une instance secondaire.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -426,7 +426,7 @@ Parfois, l’alternance entre les modes de compression de la queue et complet re
   </tr>
   <tr>
    <td><strong>Quelles sont les informations présentées dans la vérification de l’intégrité du nettoyage des révisions ? Comment et quand contribuent-ils aux niveaux d’état codés par les couleurs ? </strong></td>
-   <td><p>Le contrôle de l’intégrité du nettoyage des révisions est intégré au <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank">Tableau de bord des opérations</a>.<br /> </p> <p>L’état est <strong>VERT</strong> si la dernière exécution de la tâche de maintenance du nettoyage des révisions en ligne s’est terminée avec succès.</p> <p>Il s’agit de <strong>JAUNE</strong> si la tâche de maintenance du nettoyage des révisions en ligne a été annulée une fois.<br /> </p> <p>Il s’agit de <strong>RED</strong> si la tâche de maintenance du nettoyage des révisions en ligne a été annulée trois fois de suite. <strong>Dans ce cas, une interaction manuelle est nécessaire</strong> ou le nettoyage des révisions en ligne va probablement continuer à échouer. Pour plus d’informations, reportez-vous à la section <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup">Dépannage</a> ci-dessous.<br /> </p> <p>Veuillez aussi noter que le statut de la vérification de l’intégrité sera réinitialisé après le redémarrage du système. Ainsi, une instance nouvellement redémarrée affiche un état vert sur le contrôle de l’intégrité du nettoyage des révisions. Des outils de surveillance externes peuvent être utilisés pour conserver les données au-delà du temps de disponibilité AEM. Consultez la <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios">documentation AEM pour joindre les vérifications d’intégrité à Nagios en tant qu’exemple d’outil de surveillance externe</a>.</p> </td>
+   <td><p>Le contrôle de l’intégrité du nettoyage des révisions est intégré au <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank">Tableau de bord des opérations</a>.<br /> </p> <p>L’état est <strong>VERT</strong> si la dernière exécution de la tâche de maintenance du nettoyage des révisions en ligne s’est terminée avec succès.</p> <p>Il s’agit de <strong>JAUNE</strong> si la tâche de maintenance du nettoyage des révisions en ligne a été annulée une fois.<br /> </p> <p>Il s’agit de <strong>RED</strong> si la tâche de maintenance du nettoyage des révisions en ligne a été annulée trois fois de suite. <strong>Dans ce cas, une interaction manuelle est nécessaire</strong> ou le nettoyage des révisions en ligne va probablement continuer à échouer. Pour plus d’informations, reportez-vous à la section <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup">Dépannage</a> ci-dessous.<br /> </p> <p>En outre, l’état du contrôle de l’intégrité est réinitialisé après un redémarrage du système. Ainsi, une instance redémarrée récemment affiche un état vert sur le contrôle de l’intégrité du nettoyage des révisions. Des outils de surveillance externes peuvent être utilisés pour conserver les données au-delà du temps de disponibilité AEM. Consultez la <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios">documentation AEM pour joindre les vérifications d’intégrité à Nagios en tant qu’exemple d’outil de surveillance externe</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -435,7 +435,7 @@ Parfois, l’alternance entre les modes de compression de la queue et complet re
    <td> </td>
   </tr>
   <tr>
-   <td><p><strong>Que doit-on surveiller lors du nettoyage automatique sur une instance Secondaire ?</strong></p> </td>
+   <td><p><strong>Que doit-on surveiller pendant le nettoyage automatique sur une instance de secours ?</strong></p> </td>
    <td>
     <ul>
      <li>L’espace disque doit être surveillé lors de l’exécution du nettoyage automatique.</li>
@@ -470,7 +470,7 @@ Parfois, l’alternance entre les modes de compression de la queue et complet re
       <ul>
        <li>Si les journaux montrent cinq cycles de compression ratés ainsi qu’un long délai du cycle <code>forceCompact</code>, programmez une fenêtre de maintenance pendant une période calme durant laquelle la quantité d’écriture du référentiel est faible. Vous pouvez vérifier les écritures du référentiel dans l’outil de surveillance des mesures du référentiel à l’adresse <em>https://serveraddress:serverport/libs/granite/operations/content/monitoring/page.html</em></li>
        <li>Si le nettoyage s’est arrêté à la fin de la fenêtre de maintenance, assurez-vous que la configuration de la fenêtre de maintenance dans l’interface utilisateur Tâches de maintenance est suffisamment grande.</li>
-       <li>Si la mémoire de tas disponible n’est pas suffisante, assurez-vous que l’instance dispose de suffisamment de mémoire.</li>
+       <li>Si la mémoire de tas disponible n’est pas suffisante, vérifiez que l’instance dispose de suffisamment de mémoire.</li>
        <li>En cas de réaction tardive, l’entrepôt de segments risque d’augmenter trop pour que le nettoyage des révisions en ligne soit terminé, même dans une fenêtre de maintenance plus longue. Par exemple, si aucun nettoyage des révisions en ligne n’a réussi au cours de la dernière semaine, il est recommandé de planifier une maintenance hors ligne et d’exécuter le nettoyage des révisions hors ligne pour ramener le magasin de segments à une taille gérable.</li>
       </ul> </li>
     </ul> </td>
@@ -492,7 +492,7 @@ Parfois, l’alternance entre les modes de compression de la queue et complet re
     <ol>
      <li>Application qui contourne les mécanismes d’accès recommandés (tels que Sling et l’API JCR) et utilise une API/SPI de niveau inférieur pour accéder au référentiel, puis dépasse la durée de conservation d’un segment. En d’autres termes, elle conserve une référence à une entité plus longue que la durée de conservation autorisée par le nettoyage des révisions en ligne (24 heures par défaut). Ce cas est transitoire et ne conduit pas à la corruption des données. Pour effectuer une restauration, l’outil exécuté par Oak doit être utilisé pour confirmer la nature transitoire de l’exception (la vérification exécutée par Oak ne doit signaler aucune erreur). Pour ce faire, l’instance doit être mise hors ligne et redémarrée par la suite.</li>
      <li>Un événement externe a provoqué la corruption des données sur le disque. Il peut s’agir d’une défaillance du disque, d’un manque d’espace disque ou d’une modification accidentelle des fichiers de données requis. Dans ce cas, l’instance doit être mise hors ligne et réparée à l’aide de la vérification oak-run. Pour plus d’informations sur la façon de procéder à la vérification exécutée par Oak, lisez la <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">documentation Apache</a> suivante.</li>
-     <li>Résolvez toutes les autres occurrences par l’intermédiaire de la variable <a href="https://experienceleague.adobe.com/?support-solution=General&amp;lang=fr&amp;support-tab=home#support" target="_blank">Assistance clientèle Adobe</a>.</li>
+     <li>Résolvez toutes les autres occurrences par l’intermédiaire de la variable <a href="https://experienceleague.adobe.com/?support-solution=General&amp;lang=fr&amp;support-tab=home#support" target="_blank">Adobe de l’assistance clientèle</a>.</li>
     </ol> </td>
    <td> </td>
   </tr>
@@ -660,7 +660,7 @@ Outre les méthodes présentées ci-dessus, vous pouvez déclencher le mécanism
   </tr>
   <tr>
    <td><strong>Comment accélérer la tâche de nettoyage des révisions hors ligne si elle n’est pas terminée au bout de 8 heures ?</strong></td>
-   <td>Si la tâche de nettoyage n’est pas terminée au bout de 8 heures et que les <a href="/help/sites-administering/operations-dashboard.md#diagnosis-tools" target="_blank">images mémoire de threads</a> font apparaître que la zone réactive principale est <code>InMemoryCompactionMap.findEntry</code>, utilisez le paramètre suivant avec l’outil oak-run <strong>version 1.4</strong> ou une version ultérieure : <code>-Dtar.PersistCompactionMap=true</code>. Le <code>-Dtar.PersistCompactionMap</code> a été supprimé dans Oak version 1.6.</td>
+   <td>Si la tâche de nettoyage n’est pas terminée au bout de 8 heures et que les <a href="/help/sites-administering/operations-dashboard.md#diagnosis-tools" target="_blank">images mémoire de threads</a> font apparaître que la zone réactive principale est <code>InMemoryCompactionMap.findEntry</code>, utilisez le paramètre suivant avec l’outil oak-run <strong>version 1.4</strong> ou une version ultérieure : <code>-Dtar.PersistCompactionMap=true</code>. La variable <code>-Dtar.PersistCompactionMap</code> a été supprimé dans Oak version 1.6.</td>
   </tr>
  </tbody>
 </table>

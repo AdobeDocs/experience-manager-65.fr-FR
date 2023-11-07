@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 06ad343a-f74d-41f5-b3c8-b85bb723ceeb
 role: Developer
 exl-id: 744df8b2-0c61-410f-89e9-20b8adddbf45
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1323'
+ht-degree: 99%
 
 ---
 
@@ -62,7 +62,7 @@ Avant de pouvoir effectuer par programmation une opération de service Distiller
 
 **Récupérer le fichier à convertir**
 
-Vous devez récupérer le fichier que vous souhaitez convertir. Par exemple, pour convertir un fichier PS en document PDF, vous devez récupérer le fichier PS.
+Récupérez le fichier que vous souhaitez convertir. Par exemple, pour convertir un fichier PS en document PDF, vous devez récupérer le fichier PS.
 
 **Appeler l’opération de création de PDF**
 
@@ -126,7 +126,6 @@ Pour convertir un fichier PostScript en document PDF à l’aide de l’API du s
 
    * Appelez la méthode `getLogDocument` de l’objet `CreatePDFResult`. Celle-ci renvoie un objet `com.adobe.idp.Document`.
    * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour extraire le document de journal.
-
 
 **Voir également**
 

@@ -6,10 +6,10 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 50%
+source-wordcount: '1084'
+ht-degree: 51%
 
 ---
 
@@ -45,7 +45,7 @@ Les transactions Forms utilisent des éléments dynamiques pour capturer les don
 * **Règles d’écriture pour le contrôle de la visibilité des champs**
 Les formulaires incluent certains champs et sections qui ne s’appliquent pas à tous les utilisateurs et dans tous les cas. Les auteurs et les développeurs Forms utilisent la visibilité ou les règles d’affichage/masquage pour contrôler leur visibilité en fonction des entrées de l’utilisateur. Par exemple, le champ Adresse du bureau n’est pas affiché pour les utilisateurs qui choisissent Sans emploi dans le champ État de l’emploi d’un formulaire. Pour plus d’informations sur l’écriture de règles, voir [Utilisation de l’éditeur de règles](../../forms/using/rule-editor.md).
 
-  Vous pouvez exploiter les règles de visibilité dans les fragments chargés de manière différée de sorte que les champs conditionnels soient affichés uniquement lorsqu’ils sont obligatoires. En outre, marquez le champ conditionnel comme étant global pour vous y référer dans l’expression de visibilité du fragment chargé en différé.
+  Vous pouvez utiliser les règles de visibilité dans les fragments chargés de manière différée de sorte que les champs conditionnels soient affichés uniquement lorsqu’ils sont obligatoires. En outre, marquez le champ conditionnel comme étant global pour vous y référer dans l’expression de visibilité du fragment chargé en différé.
 
 ## Configuration du chargement différé {#configuring-lazy-loading}
 
@@ -73,7 +73,7 @@ Vous pouvez marquer les valeurs des objets du fragment chargé en différé comm
 
 Voici certaines restrictions, recommandations et aspects importants à garder à l’esprit lorsque vous travaillez avec le chargement différé :
 
-* Il est recommandé d’utiliser des formulaires adaptatifs basés sur un schéma XSD plutôt que des formulaires adaptatifs basés sur XFA pour configurer le chargement différé sur des formulaires volumineux. Le gain de performances dû à l’implémentation du chargement différé dans les formulaires adaptatifs basés sur XFA est relativement inférieur à celui des formulaires adaptatifs basés sur XSD.
+* Utilisez des formulaires adaptatifs basés sur un schéma XSD plutôt que des formulaires adaptatifs basés sur XFA pour configurer le chargement différé sur des formulaires volumineux. Le gain de performances dû à l’implémentation du chargement différé dans les formulaires adaptatifs basés sur XFA est relativement inférieur à celui des formulaires adaptatifs basés sur XSD.
 * Ne configurez pas le chargement différé sur les fragments d’un formulaire adaptatif qui utilise une disposition **[!UICONTROL réactive - tous sur une page sans navigation]** pour le panneau racine. En raison de la configuration de la disposition réactive, tous les fragments se chargent simultanément dans un formulaire adaptatif. Vous risqueriez également de causer une baisse des performances.
 * Il est recommandé de ne pas configurer le chargement différé sur le premier fragment d’un formulaire adaptatif.
 * Il est recommandé de ne pas configurer le chargement différé sur les fragments du premier panneau qui s’affichent lors du chargement du formulaire adaptatif.
@@ -87,7 +87,7 @@ Voici certaines restrictions, recommandations et aspects importants à garder à
 Voici des aspects importants à garder à l’esprit lors du développement des scripts pour les panneaux de chargement différé :
 
 * Assurez-vous que les scripts initialize et calculate utilisés sur les champs d’un fragment à chargement différé sont idempotents par nature. Les scripts idempotents sont ceux qui ont le même effet même après plusieurs exécutions.
-* Utilisez la propriété disponible globalement des champs pour rendre la valeur des champs situés dans un panneau de chargement différé disponible pour tous les autres panneaux d’un formulaire.
+* Utilisez la propriété disponible globalement des champs pour rendre la valeur des champs d’un panneau de chargement différé disponible pour tous les autres panneaux d’un formulaire.
 * Ne transférez pas la valeur de référence d’un champ dans un panneau différé, quel que soit le champ marqué globalement sur les fragments ou non.
 * Utilisez la fonction de réinitialisation du panneau pour réinitialiser tout ce qui est visible dans le panneau à l’aide de l’expression de clic suivante.\
   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()

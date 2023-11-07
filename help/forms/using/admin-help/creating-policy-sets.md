@@ -1,7 +1,7 @@
 ---
-title: Créer et gérer les jeux de stratégies
+title: Créer et gérer les jeux de politiques
 seo-title: Creating and managing policy sets
-description: Les jeux de stratégies regroupent plusieurs stratégies ayant une finalité commune. Vous pouvez également créer, modifier et supprimer des stratégies dans un jeu de stratégies.
+description: Les jeux de stratégies sont utilisés pour regrouper des stratégies ayant un objectif commercial commun. Vous pouvez créer, modifier et supprimer des stratégies dans un jeu de stratégies.
 seo-description: Policy sets are used to group policies that have a common business purpose. You can create, edit and delete policies in a policy set.
 uuid: 11faf67c-b9b7-4394-8672-d43cace131ad
 contentOwner: admin
@@ -11,106 +11,106 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
 feature: Document Security
 exl-id: 736926af-ae41-4da3-b181-444de72407bd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1295'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1294'
+ht-degree: 4%
 
 ---
 
-# Créer et gérer les jeux de stratégies {#creating-and-managing-policy-sets}
+# Créer et gérer les jeux de politiques {#creating-and-managing-policy-sets}
 
-Les jeux de stratégies regroupent plusieurs stratégies ayant une finalité commune. Ces jeux de stratégies sont ensuite rendus accessibles à un sous-groupe d’utilisateurs du système.
+Les jeux de stratégies sont utilisés pour regrouper des stratégies ayant un objectif commercial commun. Les jeux de stratégies peuvent être mis à la disposition d’un sous-ensemble d’utilisateurs du système.
 
-Chaque jeu de stratégies est associé à un coordinateur au moins. Le *coordinateur de jeux de stratégies* est un administrateur ou un utilisateur possédant des autorisations supplémentaires. Au sein de l’organisation, c’est généralement la personne la plus à même de créer des stratégies dans un jeu donné.
+Chaque jeu de stratégies est associé à au moins un coordinateur. La variable *coordinateur de jeux de stratégies* est un administrateur ou un utilisateur disposant d’autorisations supplémentaires. Le coordinateur de jeux de stratégies est généralement un spécialiste de l’organisation qui peut créer au mieux les stratégies d’un jeu donné.
 
-Les coordinateurs de jeux de stratégie peuvent exécuter les tâches suivantes :
+Les coordinateurs et coordinatrices de jeux de politiques peuvent effectuer les tâches suivantes :
 
-* créer des stratégies ;
-* modifier et supprimer des stratégies dans un jeu de stratégies ;
-* modifier des paramètres de jeux de stratégies ;
-* ajouter et supprimer des coordinateurs pour le jeu de stratégies ;
-* afficher des événements de stratégie et de document pour n’importe quel document ou stratégie du jeu de stratégies ;
-* révoquer l’accès aux documents ;
-* changer de stratégies pour le document.
+* Création de stratégies
+* Modifier et supprimer une politique dans le jeu de politiques
+* Modifier des paramètres de jeux de politiques
+* Ajouter et supprimer des coordinateurs pour le jeu de stratégies
+* Afficher des événements de politique et de document pour n’importe quel document ou politique du jeu de politiques
+* Révoquer l’accès aux documents
+* Changement de stratégies pour le document
 
-Les jeux de stratégies sont créés et supprimés dans l’interface d’administration de Document Security par des super-utilisateurs et des coordinateurs de jeux de stratégies qui possèdent les autorisations requises.
+Les jeux de stratégies sont créés et supprimés dans l’interface d’administration de Document Security par des super-utilisateurs et des coordinateurs de jeux de stratégies autorisés à le faire.
 
-Lorsque vous supprimez un jeu de stratégies, les stratégies qui faisaient partie de ce jeu ne peuvent pas être appliquées aux nouveaux documents. Cependant, vous pouvez afficher les informations de stratégie dans Administration Console et dans les pages Web destinées aux utilisateurs finaux, correspondant aux stratégies toujours utilisées. Vous pouvez afficher les informations de stratégie dans la page Détails du document pour tout document protégé par la stratégie. Les stratégies encore utilisées peuvent être modifiées.
+Lorsque vous supprimez un jeu de stratégies, les stratégies qui faisaient partie du jeu ne peuvent pas être appliquées aux nouveaux documents. Cependant, vous pouvez afficher les informations de stratégie dans Administration Console et dans les pages Web destinées aux utilisateurs finaux pour les stratégies toujours utilisées. Vous pouvez afficher les informations de stratégie à partir de la page des détails du document pour tout document protégé par la stratégie. Les stratégies toujours utilisées peuvent être modifiées.
 
-Le super-utilisateur ou le coordinateur de jeux de stratégies ajoute les domaines créés dans User Management pour l’utilisateur et pour le groupe visible pour chaque jeu de stratégies. Cette liste est accessible au coordinateur de jeux de stratégies et permet de restreindre les domaines que ce dernier peut consulter lorsqu’il choisit les utilisateurs à ajouter aux stratégies.
+Le super-utilisateur ou le coordinateur de jeux de stratégies ajoute les domaines créés dans User Management à l’utilisateur et au groupe visible pour chaque jeu de stratégies. Cette liste est visible par le coordinateur de jeux de stratégies et permet de limiter les domaines que le coordinateur de jeux de stratégies peut parcourir lors du choix des utilisateurs à ajouter aux stratégies.
 
-Lorsque vous créez des jeux de stratégies, vous affectez à des utilisateurs le rôle d’éditeur de document. L’*éditeur* est l’utilisateur qui protège le document avec une stratégie. Cet utilisateur est toujours inclus par défaut dans une stratégie, avec des droits d’accès complets, notamment la capacité de révoquer et de changer de stratégie. Toutefois, les administrateurs peuvent modifier les droits d’accès de l’éditeur relatifs aux stratégies partagées. Ils peuvent par exemple désactiver la capacité de l’éditeur à révoquer l’accès à un document ou à changer de stratégie. Si un administrateur change la stratégie associée au document, le nom de l’éditeur sera mis à jour avec le nom du propriétaire de la dernière politique appliquée au document.
+Lorsque vous créez des jeux de stratégies, vous attribuez aux utilisateurs le rôle d’éditeur de document. La variable *éditeur de document* est l’utilisateur qui protège le document avec une stratégie. Par défaut, cet utilisateur est toujours inclus dans une stratégie avec des droits d’accès complets, y compris les fonctionnalités de révocation et de changement de stratégie. Toutefois, les administrateurs peuvent modifier les droits d’accès de l’éditeur pour les stratégies partagées. Par exemple, l’administrateur peut désactiver le droit de l’éditeur de révoquer l’accès au document ou changer de stratégie. Si un administrateur change la stratégie associée au document, le nom de l’éditeur est mis à jour avec le nom du propriétaire de la dernière stratégie appliquée au document.
 
-L’installation de Document Security crée un jeu de stratégies par défaut, appelé *Jeu de stratégies global*. Ce jeu de stratégies est géré par l’administrateur ayant installé le logiciel ou par le coordinateur de jeux de stratégies désigné pour ce jeu de stratégies.
+Lors de l’installation de Document Security, un jeu de stratégies par défaut est créé appelé *Jeu de stratégies global*. Ce jeu de stratégies est géré par l’administrateur qui a installé le logiciel ou par le coordinateur de jeux de stratégies désigné pour ce jeu de stratégies.
 
-## Créer un jeu de stratégies {#create-a-policy-set}
+## Créer un jeu de politiques {#create-a-policy-set}
 
-Le Jeu de stratégies global est le seul jeu de stratégies par défaut créé lors de l’installation. Vous pouvez créer d’autres jeux de stratégies et ajouter des stratégies, des utilisateurs, des coordinateurs de jeux de stratégies et des éditeurs. Après avoir créé un jeu de stratégies, vous pouvez créer des stratégies à l’intérieur du jeu.
+Le jeu de stratégies global est le seul jeu de stratégies par défaut créé lors de l’installation. Vous pouvez créer d’autres jeux de stratégies et ajouter des stratégies, des utilisateurs, des coordinateurs de jeux de stratégies et des éditeurs. Après avoir créé un jeu de stratégies, vous pouvez créer des stratégies dans le jeu.
 
-Lors de la création d’un jeu de stratégies, cliquez sur le bouton Précédent pour revenir à l’écran précédent, et sur le bouton Enregistrer pour enregistrer votre jeu de stratégies à tout moment.
+Lors de la création d’un jeu de stratégies, vous pouvez utiliser le bouton Retour pour revenir à l’écran précédent et le bouton Enregistrer pour enregistrer votre jeu de stratégies à tout moment.
 
 1. Dans la page Document Security, cliquez sur Stratégies, sur l’onglet Jeux de stratégies, puis sur Nouveau.
-1. Dans la zone Nom, saisissez le nom du jeu de stratégies, indiquez éventuellement une description dans la zone Description, puis cliquez sur Suivant. Le nom ne peut pas contenir de caractère deux-points **:**.
+1. Dans la zone Name, saisissez le nom du jeu de stratégies, saisissez éventuellement une Description, puis cliquez sur Next. Le nom ne peut pas contenir de caractère deux-points **:**.
 
    >[!NOTE]
    >
-   >vous pouvez créer un nom de jeu de stratégies qui contient des caractères étendus. Cependant, en cas de comparaison entre deux chaînes, aucune différence n’est faite entre les caractères accentués et non accentués (« e » et « é », par exemple). Si quelqu’un crée un jeu de stratégies, une comparaison est lancée pour vérifier s’il en existe déjà un portant le même nom. La comparaison ne fait pas de distinction entre les noms identiques, à l’exception des caractères accentués. Le jeu de stratégies étant considéré comme existant dans la base de données, aucun ajout n’est possible.
+   >Vous pouvez créer un nom de jeu de stratégies contenant des caractères étendus. Toutefois, lors d’une comparaison entre deux chaînes, les caractères accentués et non accentués tels que &quot;e&quot; et &quot;é&quot; sont considérés comme identiques. Lorsqu’un utilisateur crée un jeu de stratégies, une comparaison est effectuée pour vérifier s’il existe déjà un jeu de stratégies portant le même nom. La comparaison ne peut pas distinguer les noms identiques, à l’exception des caractères accentués. On suppose que le jeu de stratégies est déjà ajouté à la base de données et que le nouveau n’est pas ajouté.
 
-1. (Facultatif) Pour définir les domaines visibles aux éditeurs lorsqu’ils ajoutent des utilisateurs à une stratégie, cliquez sur Ajouter un domaine, sélectionnez les domaines dans lesquels vous souhaitez autoriser la recherche, cliquez sur Ajouter, puis sur OK.
-1. Dans la page Ajouter des utilisateurs ou des groupes visibles, cliquez sur Suivant.
-1. (Facultatif) Pour ajouter un coordinateur de jeux de stratégies, cliquez sur « Ajouter des utilisateurs ou des groupes » dans la page « Ajouter un/des coordinateur(s) de jeux de stratégies » (étape 3 sur 4) et exécutez les tâches suivantes :
+1. (Facultatif) Pour définir les domaines visibles aux éditeurs lorsqu’ils ajoutent des utilisateurs à une stratégie, cliquez sur Ajouter des domaines, sélectionnez les domaines à rechercher, cliquez sur Ajouter, puis sur OK.
+1. Sur la page Ajouter les utilisateurs et groupes visibles, cliquez sur Suivant.
+1. (Facultatif) Pour ajouter un coordinateur de jeux de stratégies, cliquez sur Ajouter des utilisateurs et des groupes sur la page Ajouter un(s) coordinateur(s) de jeux de stratégies (étape 3 sur 4) et effectuez les tâches suivantes :
 
    * Dans la zone Rechercher, saisissez le nom ou l’adresse électronique.
-   * Dans la liste Utilisation, sélectionnez l’option appropriée.
-   * Dans la liste Type, sélectionnez Utilisateur, puis, dans la liste Dans, sélectionnez un domaine de recherche.
-   * Dans la liste Afficher, indiquez le nombre de résultats de recherche à afficher par page et cliquez sur Rechercher.
-   * Cochez la case en regard de l’utilisateur ou du groupe à ajouter et cliquez sur Suivant.
-   * Sélectionnez les droits à affecter au coordinateur de jeux de stratégies et cliquez sur Ajouter. Vous pouvez choisir les autorisations suivantes :
+   * Dans la liste Utilisation , sélectionnez l’option appropriée.
+   * Dans la liste Type, sélectionnez Utilisateur et, dans la liste Dans, sélectionnez un domaine à rechercher.
+   * Dans la liste Afficher, sélectionnez le nombre de résultats à afficher par page, puis cliquez sur Rechercher.
+   * Cochez la case correspondant à l’utilisateur ou au groupe à ajouter, puis cliquez sur Suivant.
+   * Sélectionnez les autorisations du coordinateur de jeux de stratégies, puis cliquez sur Ajouter. Les autorisations suivantes peuvent être définies :
 
       * Affichage des événements
-      * Gérer des documents (révoquer et rétablir l’accès aux documents, et changer de stratégie sur des documents)
-      * Gérer les stratégies (créer, modifier et supprimer des stratégies)
-      * Gérer les éditeurs (ajouter et supprimer des éditeurs)
+      * Gérer les documents (révoquer et rétablir l’accès aux documents, et changer de stratégie sur les documents)
+      * Gestion des stratégies (création, modification et suppression de stratégies)
+      * Gestion des éditeurs (ajout et suppression des éditeurs)
       * Déléguer (ajouter et supprimer des coordinateurs de jeux de stratégies)
 
-1. Répétez l’étape 5 pour ajouter d’autres coordinateurs de jeux de stratégies.
-1. Vérifiez les droits attribués au coordinateur de jeux de stratégies et cliquez sur Suivant.
-1. Cliquez sur Ajouter des utilisateurs ou des groupes pour ajouter des éditeurs autorisés à utiliser les stratégies du jeu pour protéger des documents.
-1. Dans la page Ajouter un/des éditeur(s), effectuez les opérations suivantes :
+1. Répétez l’étape 5 pour ajouter d’autres coordinateurs de jeux de stratégies.
+1. Vérifiez les paramètres du coordinateur de jeux de stratégies, puis cliquez sur Suivant.
+1. Cliquez sur Ajouter des utilisateurs et des groupes pour ajouter des éditeurs qui peuvent utiliser les stratégies du jeu de stratégies pour protéger les documents.
+1. Sur la page Ajouter des éditeurs , effectuez les tâches suivantes :
 
    * Dans la zone Rechercher, saisissez le nom ou l’adresse électronique.
-   * Dans la liste Utilisation, sélectionnez l’option appropriée.
-   * Dans la liste Type, sélectionnez Utilisateur, puis, dans la liste Dans, sélectionnez un domaine de recherche.
-   * Dans la liste Afficher, indiquez le nombre de résultats de recherche à afficher par page et cliquez sur Rechercher.
-   * Cochez les cases en regard des utilisateurs et des groupes à ajouter, cliquez sur Ajouter, puis sur OK.
+   * Dans la liste Utilisation , sélectionnez l’option appropriée.
+   * Dans la liste Type, sélectionnez Utilisateur et, dans la liste Dans, sélectionnez un domaine à rechercher.
+   * Dans la liste Afficher, sélectionnez le nombre de résultats à afficher par page, puis cliquez sur Rechercher.
+   * Cochez les cases correspondant aux utilisateurs et aux groupes à ajouter, cliquez sur Ajouter, puis sur OK.
 
 1. Cliquez sur Enregistrer.
 
-Vous pouvez maintenant ajouter des stratégies à votre jeu de stratégies (voir [Création et modification de stratégies](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies)).
+Vous pouvez désormais ajouter des stratégies à votre jeu de stratégies. (Voir [Création et modification de stratégies](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
 
 ## Modification d’un jeu de stratégies {#edit-a-policy-set}
 
-1. Dans la page Document Security, cliquez sur Stratégies, sur l’onglet Jeux de stratégies, puis sur le jeu de stratégies à modifier.
-1. Cliquez sur l’onglet approprié, puis effectuez les modifications souhaitées :
+1. Dans la page Document Security, cliquez sur Stratégies, cliquez sur l’onglet Jeux de stratégies, puis sur le jeu de stratégies à modifier.
+1. Cliquez sur l’onglet approprié et modifiez les éléments selon les besoins :
 
-   * **Détails :** modifiez le nom et la description du jeu de stratégies.
-   * **Stratégies :** créez, activez, modifiez et supprimez des stratégies dans le jeu de stratégies.
-   * **Utilisateurs et groupes visibles :** ajoutez et supprimez des utilisateurs et groupes visibles susceptibles d’être inclus dans une stratégie.
-   * **Coordinateurs de jeux de stratégies :** ajoutez, supprimez et modifiez des autorisations pour les coordinateurs.
-   * **Editeurs :** ajoutez et supprimez des utilisateurs habilités à publier des documents à l’aide des stratégies du jeu.
+   * **Détail :** Modifiez le nom et la description du jeu de stratégies.
+   * **Stratégies :** Créez, activez, modifiez et supprimez des stratégies dans le jeu de stratégies.
+   * **Utilisateurs et groupes visibles :** Ajouter et supprimer des utilisateurs et des groupes visibles pouvant être inclus dans une stratégie.
+   * **Coordinateurs de jeux de stratégies :** Ajouter, supprimer et modifier des autorisations pour les coordinateurs.
+   * **Éditeurs de document :** Ajoutez et supprimez des utilisateurs autorisés à publier des documents à l’aide des stratégies du jeu.
 
-1. Pour supprimer un utilisateur ou un groupe visible, un coordinateur de jeux de stratégies ou un éditeur, cliquez sur l’onglet approprié, sélectionnez la case à cocher correspondant à l’entrée, puis cliquez sur Supprimer et sur OK.
-1. Pour ajouter des utilisateurs ou groupes visibles, un coordinateur de jeux de stratégies ou des éditeurs, cliquez sur l’onglet approprié, sur Ajouter des utilisateurs ou des groupes, recherchez l’utilisateur ou le groupe à ajouter, sélectionnez l’entrée, cliquez sur Ajouter, puis sur OK.
-1. Dans l’onglet Stratégies, recherchez les stratégies à ajouter au jeu et créez d’autres stratégies :
+1. Pour supprimer un utilisateur ou un groupe visible, un coordinateur de jeux de stratégies ou un éditeur de document, cliquez sur l’onglet approprié, cochez la case correspondant à l’entrée, cliquez sur Supprimer, puis sur OK.
+1. Pour ajouter des utilisateurs ou des groupes visibles, un coordinateur de jeux de stratégies ou des éditeurs, cliquez sur l’onglet approprié, sur Ajouter des utilisateurs ou des groupes, recherchez l’utilisateur ou le groupe à ajouter, sélectionnez l’entrée, cliquez sur Ajouter, puis sur OK.
+1. Dans l’onglet Stratégies , recherchez des stratégies à ajouter au jeu de stratégies et créez-en de nouvelles :
 
-   * Pour rechercher une stratégie, sélectionnez ID de la stratégie ou Nom de la stratégie, saisissez la valeur correspondante, sélectionnez le nombre d’éléments à afficher et cliquez sur Rechercher.
-   * Pour plus d’informations sur la création d’une nouvelle stratégie, voir [Création et modification de stratégies](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
+   * Pour rechercher une stratégie, sélectionnez ID de la stratégie ou Nom de la stratégie, saisissez la valeur correspondante, sélectionnez le nombre d’éléments à afficher, puis cliquez sur Rechercher.
+   * Pour plus d’informations sur la création d’une stratégie, voir [Création et modification de stratégies](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
 
 ## Suppression d’un jeu de stratégies {#delete-a-policy-set}
 
-Lorsque vous supprimez un jeu de stratégies, les stratégies qui faisaient partie de ce jeu ne peuvent pas être appliquées aux nouveaux documents. Cependant, vous pouvez afficher les informations de stratégie dans Administration Console et dans les pages Web destinées aux utilisateurs finaux, correspondant aux stratégies toujours utilisées. Vous pouvez afficher les informations de stratégie dans la page Détails du document pour tout document protégé par la stratégie. Les stratégies encore utilisées peuvent être modifiées.
+Lorsque vous supprimez un jeu de stratégies, les stratégies qui faisaient partie du jeu ne peuvent pas être appliquées aux nouveaux documents. Cependant, vous pouvez afficher les informations de stratégie dans Administration Console et dans les pages Web destinées aux utilisateurs finaux pour les stratégies toujours utilisées. Vous pouvez afficher les informations de stratégie à partir de la page des détails du document pour tout document protégé par la stratégie. Les stratégies toujours utilisées peuvent être modifiées.
 
-1. Cliquez sur Stratégies, puis sur l’onglet Jeux de stratégies.
+1. Cliquez sur Stratégies , puis sur l’onglet Jeux de stratégies .
 1. Cochez la case correspondant au jeu de stratégies à supprimer.
 1. Cliquez sur Supprimer, puis sur OK.

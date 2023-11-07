@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: c429d6e1-7847-43c8-bf75-cb0078dbb9d5
 role: Developer
 exl-id: 096fd2ac-616f-484a-b093-9d98b2f87093
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '2082'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '2081'
+ht-degree: 99%
 
 ---
 
@@ -145,7 +145,7 @@ Déterminez si un document PDF est compatible avec le format PDF/A à l’aide d
    * Créez un objet `java.util.Map` servant à stocker le document PDF d’entrée en utilisant un constructeur `HashMap`.
    * Ajoutez une entrée à l’objet `java.util.Map` en appelant la méthode `put` correspondante et en transmettant les arguments suivants :
 
-      * Une valeur de chaîne qui représente le nom de la clé. Cette valeur doit correspondre à la valeur de l’élément source spécifié dans le document DDX. Par exemple, la valeur de l’élément source situé dans le document DDX introduit dans cette section est Loan.pdf.
+      * Une valeur de chaîne qui représente le nom de la clé. Cette valeur doit correspondre à la valeur de l’élément source spécifié dans le document DDX. Par exemple, la valeur de l’élément source dans le document DDX introduit dans cette section est Loan.pdf.
       * Objet `com.adobe.idp.Document` contenant le document PDF d’entrée.
 
 1. Définissez les options d’exécution.

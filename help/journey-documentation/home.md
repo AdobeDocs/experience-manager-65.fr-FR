@@ -2,10 +2,10 @@
 title: Parcours de documentation AEM
 description: Les Parcours de documentation fournissent une structure narrative dans AEM documentation en liant des fonctionnalités complexes et disparates pour résoudre un objectif commercial d’une manière conforme aux bonnes pratiques. Conçu pour les débutants dans AEM, les parcours présentent les concepts et les fonctionnalités permettant d’atteindre un objectif, étape par étape.
 exl-id: bb0a26e2-5686-4fb7-bb6e-231dafc8268b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 93%
+source-wordcount: '1223'
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,7 @@ Les Parcours de documentation fournissent une structure narrative dans AEM docum
 
 Un parcours de documentation relie de nombreux sujets et fonctionnalités différents et complexes en aidant le lecteur, parfois débutant dans AEM, à comprendre et à résoudre un problème d’activité du début à la fin, tout en présupposant un minimum de connaissances préalables concernant le sujet ou AEM.
 
-Les parcours de documentation sont différents des documents techniques existants pour AEM, qui se concentrent principalement sur une seule fonctionnalité et sur la documentation des tâches et en partant du principe que le lecteur est familier avec AEM. En se concentrant sur les concepts généraux et en réorientant le lecteur vers la documentation technique existante pour plus de détails, les parcours de documentation permettent aux débutants dans AEM de commencer à comprendre comment la plateforme peut être exploitée en utilisant les bonnes pratiques pour répondre aux besoins et aux workflows courants de l’entreprise. C’est pourquoi les parcours de documentation servent de complément et non de remplacement à la [documentation technique existante pour AEM.](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr)
+Les parcours de documentation sont différents des documents techniques existants pour AEM, qui se concentrent principalement sur une seule fonctionnalité et sur la documentation des tâches et en partant du principe que le lecteur est familier avec AEM. En se concentrant sur les concepts généraux et en réorientant le lecteur ou la lectrice vers la documentation technique existante pour plus de détails, les parcours de documentation permettent aux personnes débutantes dans AEM de commencer à comprendre comment la plateforme peut être exploitée en utilisant les bonnes pratiques pour répondre aux besoins et aux workflows courants de l’entreprise. C’est pourquoi les parcours de documentation servent de complément et non de remplacement à la [documentation technique existante pour AEM.](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr)
 
 ### Le fil rouge de l’apprentissage {#narrative}
 
@@ -39,7 +39,7 @@ Si vous souhaitez savoir comment Adobe recommande de résoudre un cas d’activi
 
 ## Comment est structuré un parcours de documentation ? {#structure}
 
-Un parcours de documentation sert d’introduction basée sur les bonnes pratiques sur la manière dont AEM résout les problèmes courants de l’entreprise. C’est pourquoi chaque parcours a été conçu pour s’adresser à des lecteurs peu familiers avec AEM, en exposant les cas d’activité, en décrivant toute la théorie nécessaire, puis en donnant un aperçu détaillé de la façon dont AEM résout ces problèmes. Les parcours, de par leur nature exhaustive, peuvent s’avérer utiles pour les lecteurs qui ne connaissent pas AEM, voire pour les utilisateurs expérimentés.
+Un parcours de documentation sert d’introduction basée sur les bonnes pratiques sur la manière dont AEM résout les problèmes courants de l’entreprise. C’est pourquoi chaque parcours a été conçu pour s’adresser à des lecteurs peu familiers avec AEM, en exposant les cas d’activité, en décrivant toute la théorie nécessaire, puis en donnant un aperçu détaillé de la façon dont AEM résout ces problèmes. Les parcours, de par leur nature exhaustive, peuvent s’avérer utiles pour les lecteurs ou les lectrices qui découvrent AEM comme pour les utilisateurs expérimentés.
 
 Un parcours de documentation standard est composé des parties suivantes.
 
@@ -76,12 +76,12 @@ Les parcours de documentation ont été conçus pour compléter la documentation
 |---|---|---|---|---|---|---|
 | Parcours de documentation | Un parcours définit la façon dont AEM peut résoudre un problème d’activité en général au moyen d’un récit qui guide les lecteurs à travers des processus et des fonctionnalités complexes et interconnectés. Il illustre la manière dont plusieurs fonctionnalités fonctionnent ensemble pour répondre aux besoins d’une entreprise, conformément aux bonnes pratiques. | Lecteurs débutants dans AEM | Connaissances générales du CMS | Détails des options et de la configuration | Texte | Environ 1 heure |
 | Documents techniques | Les documents techniques se concentrent sur chaque fonctionnalité individuellement, en détaillant le fonctionnement technique de la fonctionnalité et chaque option disponible pour l’utilisateur. | Utilisateurs AEM expérimentés | Expérience d’AEM | Informations de contexte et d’arrière-plan | Texte | Variable |
-| Tutoriel | Un tutoriel est une présentation détaillée d’un sujet qui montre à un développeur ou à un administrateur comment atteindre pas à pas un objectif technique (généralement la programmation ou la configuration du système), en fournissant des exemples de cas d’utilisation et de code spécifiques et en n’exploitant généralement qu’un ensemble limité de fonctionnalités. | Développeurs ou administrateurs AEM | Expérience d’AEM | Contexte et théorie | Vidéo | >1 heure |
+| Tutoriel | Un tutoriel est une présentation détaillée d’un sujet qui montre à un développeur ou à un administrateur comment atteindre un objectif technique (généralement la programmation ou la configuration du système) pas à pas, fournissant des exemples et des exemples de code spécifiques, en utilisant généralement un ensemble limité de fonctionnalités. | Développeurs ou administrateurs AEM | Expérience d’AEM | Contexte et théorie | Vidéo | >1 heure |
 | Guide de prise en main | Un guide de prise en main est une présentation rapide d’une nouvelle fonctionnalité d’AEM en particulier. Il s’agit d’un aperçu rapide sur une fonctionnalité individuelle, qui guide l’utilisateur à travers les étapes importantes (bien que non exhaustives) de configuration et d’utilisation d’un cas d’utilisation simple. | Administrateurs AEM | Expérience d’AEM | Contexte, théorie et détails des options | Texte | &lt;1 heure |
 
 ## Quels sont les parcours disponibles ? {#journeys}
 
-Plusieurs parcours de documentation sont déjà disponibles. Puisque chaque parcours est conçu comme un récit, veuillez commencer par l&#39;introduction et lire jusqu&#39;au bout pour avoir une compréhension complète du sujet dans le contexte de l&#39;AEM.
+Plusieurs Parcours de documentation sont déjà disponibles. Puisque chaque parcours est conçu comme un récit, commencez par l&#39;introduction et lisez tout le chemin pour avoir une compréhension complète du sujet dans le contexte de l&#39;AEM.
 
 | Parcours | Description |
 |---|---|

@@ -1,7 +1,7 @@
 ---
 title: Utilisation des workflows de projet
 seo-title: Working with Project Workflows
-description: Divers workflows de projet sont disponibles prêts à l’emploi.
+description: Plusieurs workflows de projet sont proposés prêts à l’emploi.
 seo-description: A variety of project workflows are available out of the box.
 uuid: 376922ca-e09e-4ac8-88c8-23dac2b49dbe
 contentOwner: Guillaume Carlino
@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 69%
+source-wordcount: '795'
+ht-degree: 83%
 
 ---
 
@@ -29,7 +29,7 @@ Les workflows de projet disponibles et prêts à l’emploi sont les suivants :
 * **Séance photo du produit et séance photo du produit (Commerce)** - Associe les ressources aux produits.
 * **Gestion des actifs numériques (DAM) – Créer et traduire la copie et Gestion des actifs numériques (DAM) – Créer une copie de langue** : crée des fichiers binaires, des métadonnées et des balises traduits pour les ressources et les dossiers.
 
-En fonction du modèle de projet que vous sélectionnez, certains workflows sont disponibles :
+Selon le modèle de projet que vous sélectionnez, certains workflows sont disponibles :
 
 |   | **Projet simple** | **Projet de média** | **Projet de séance photo du produit** | **Projet de traduction** |
 |---|:-:|:-:|:-:|:-:|
@@ -47,9 +47,9 @@ En fonction du modèle de projet que vous sélectionnez, certains workflows sont
 >
 >&amp;ast; Ces workflows ne sont pas lancés via la mosaïque **Workflow** dans les projets. Reportez-vous à la section [Création de copies de langue pour les ressources](/help/sites-administering/tc-manage.md).
 
-Les étapes de démarrage et d’achèvement des workflows sont les mêmes, quel que soit le workflow que vous choisissez. Seules les étapes changent.
+Les étapes de démarrage et d’achèvement des workflows sont les mêmes, quel que soit le workflow choisi. Seules les étapes changent.
 
-Vous commencez un workflow directement dans les projets (à l’exception de Gestion des actifs numériques (DAM) – Créer une copie de langue ou Gestion des actifs numériques (DAM) – Créer et traduire la copie de langue). Les informations sur les tâches en attente d’un projet sont répertoriées dans la section **Tâche** mosaïque. Les notifications relatives aux tâches à effectuer s’affichent en regard de l’icône utilisateur.
+Vous commencez un workflow directement dans les projets (à l’exception de Gestion des actifs numériques (DAM) – Créer une copie de langue ou Gestion des actifs numériques (DAM) – Créer et traduire la copie de langue). Les informations sur les tâches en attente d’un projet sont répertoriées dans la mosaïque **Tâches**. Les notifications relatives aux tâches à effectuer s’affichent en regard de l’icône de l’utilisateur ou de l’utilisatrice.
 
 Pour plus d’informations sur l’utilisation des workflows dans AEM, reportez-vous aux documents suivants :
 
@@ -97,7 +97,7 @@ Ce workflow vous permet de demander un lancement.
 
 1. Dans un projet simple, appuyez ou cliquez sur le chevron descendant en haut à droite de la mosaïque **Workflows** et sélectionnez **Démarrer le processus**.
 1. Dans l’assistant de workflow, sélectionnez **Workflow de lancement de requête** et cliquez sur **Suivant**.
-1. Saisissez un titre pour le lancement et indiquez le chemin d’accès source du lancement. Vous pouvez également ajouter une description et une date d’activation, le cas échéant. Sélectionnez Hériter des données actives de la page source ou excluez des sous-pages selon le comportement souhaité du lancement.
+1. Saisissez un titre pour le lancement et indiquez le chemin d’accès source de ce dernier. Vous pouvez également ajouter une description et une date d’activation, le cas échéant. Sélectionnez Hériter des données actives de la page source ou excluez des sous-pages selon le comportement souhaité du lancement.
 
    ![Workflow Demander le lancement](assets/project-request-launch-workflow.png)
 

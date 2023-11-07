@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1516'
 ht-degree: 3%
@@ -209,7 +209,7 @@ La détection des messages indésirables est une fonctionnalité de modération 
 
 Cependant, pour personnaliser ou étendre les mots indésirables par défaut, créez un ensemble de mots dans le répertoire /apps en suivant la structure des mots indésirables par défaut avec [superposition](/help/communities/overlay-comments.md).
 
-Une publication générée par l’utilisateur (dans tous les types de contenu, par exemple les blogs, les forums et les commentaires) contenant des mots indésirables est marquée avec le texte &quot;Cette publication a été classée comme spam&quot; au-dessus de la publication.
+Une publication générée par l’utilisateur (dans tous les types de contenu, les blogs, les forums et les commentaires, par exemple) contenant des mots &quot;spam&quot; est marquée avec le texte &quot;Cette publication a été classée comme spam&quot; au-dessus de la publication.
 
 Le modérateur peut voir une telle publication et la marquer de la même manière pour autoriser ou refuser l’affichage sur le site. Les actions de modération sur ces publications peuvent être effectuées dans le contexte ou via l’interface utilisateur de modération en bloc.
 

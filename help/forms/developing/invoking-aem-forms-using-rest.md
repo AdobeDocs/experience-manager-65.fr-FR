@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2506'
-ht-degree: 86%
+source-wordcount: '2505'
+ht-degree: 85%
 
 ---
 
@@ -321,4 +321,4 @@ L’URL complète pour appeler le processus est la suivante : https://hiro-xp:8
 
 Si le processus nécessite un document PDF comme valeur d’entrée, veillez à envoyer le formulaire au format PDF, comme illustré ci-dessus. En outre, pour appeler correctement un processus, il doit renvoyer un document PDF. Sinon, Acrobat ne peut pas traiter la valeur renvoyée et une erreur se produit. Il n’est pas nécessaire de spécifier le nom de la variable de processus d’entrée. Par exemple, le processus *MyApplication/EncryptDocument* comporte une variable d’entrée nommée `inDoc`. Si le formulaire est envoyé au format PDF, il n’est pas nécessaire de spécifier inDoc.
 
-Vous pouvez également envoyer les données de formulaire au format XML à un processus Forms. Pour ce faire, assurez-vous que la liste déroulante `Submit As` spécifie XML. Comme la valeur renvoyée par le processus doit être un document PDF, ce dernier est affiché dans Acrobat.
+Vous pouvez également envoyer des données de formulaire au format XML à un processus Forms. Pour envoyer des données XML, assurez-vous que la variable `Submit As` La liste déroulante indique le code XML. Comme la valeur renvoyée par le processus doit être un document PDF, ce dernier est affiché dans Acrobat.

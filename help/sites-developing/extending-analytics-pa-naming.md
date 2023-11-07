@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
 exl-id: 17a4e4dc-804e-44a9-9942-c37dbfc8016f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '858'
-ht-degree: 75%
+source-wordcount: '856'
+ht-degree: 73%
 
 ---
 
@@ -53,7 +53,7 @@ Si vous ne mappez pas de variable CQ sur la propriété `s.pageName` dans le fr
 
 ## Maintien de la continuité dans les rapports Analytics {#maintaining-continuity-in-analytics-reporting}
 
-Pour conserver un historique complet des données d’analyse pour une page, la valeur de la propriété s.pageName utilisée pour une page ne change jamais. Toutefois, les propriétés d’analyse que le composant de page de base définit peuvent être facilement modifiées. Ainsi, le fait de déplacer une page change la valeur de `pagedata.path` et interrompt la continuité de l’historique des rapports :
+Pour conserver un historique complet des données d’analyse pour une page, la valeur de la propriété s.pageName utilisée pour une page ne change jamais. Toutefois, les propriétés d’analyse que le composant de page de base définit peuvent être facilement modifiées. Par exemple, le déplacement d’une page modifie la valeur de `pagedata.path` et rompt la continuité de l’historique des rapports :
 
 * Les données collectées pour le chemin précédent ne sont plus associées à la page.
 * Si une autre page utilise le chemin d’accès utilisé par une autre page, la autre page hérite des données de ce chemin.
@@ -62,7 +62,7 @@ Pour garantir la continuité des rapports, la valeur de la propriété `s.pageNa
 
 * Unique.
 * Stable.
-* Lisible par l&#39;homme.
+* Lisible par un humain.
 
 Par exemple, un composant de page personnalisé peut inclure une propriété de page que les auteurs utilisent pour spécifier un identifiant unique pour la page utilisée comme valeur pour la propriété `s.pageProperties` :
 
@@ -154,7 +154,7 @@ L’implémentation suivante de la méthode getResource renvoie l’objet Resour
     }
 ```
 
-Le code suivant représente la classe entière, y compris les annotations SCR qui configurent le service. Notez que le rang du service est 200, ce qui remplace le service par défaut.
+Le code suivant représente la classe entière, y compris les annotations SCR qui configurent le service. Le rang de service est 200, ce qui remplace le service par défaut.
 
 ```java
 /*************************************************************************

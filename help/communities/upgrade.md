@@ -1,7 +1,7 @@
 ---
 title: Mise à niveau vers AEM 6.5 Communities
 seo-title: Upgrading to AEM 6.5 Communities
-description: Comment mettre à niveau une version antérieure vers AEM 6.5 Communities
+description: Mise à niveau d’une version antérieure vers AEM 6.5 Communities
 seo-description: How to upgrade from an earlier version to AEM 6.5 Communities
 uuid: 929c3892-1b3b-46a7-8e70-fa6864125911
 contentOwner: Guillaume Carlino
@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
-source-git-commit: 066a61a332aa620078740d36bd7f8689282fbf14
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '621'
 ht-degree: 1%
 
 ---
@@ -59,10 +59,9 @@ Pour toutes les instances de création et de publication AEM 6.3 :
 
          * *Décocher* `Cloud Storage`
 
-         * Sélectionnez **Enregistrer**
+         * Sélectionnez **Enregistrer**.
 
-      ![Utilitaires](assets/utilities.png)
-
+     ![Utilitaires](assets/utilities.png)
 
 ### Stockage On-premise {#on-premise-storage}
 
@@ -81,7 +80,7 @@ Voir aussi [Utilisation de Maven pour Communities](/help/communities/maven.md).
 
 ### Aucun modèle de composant JSP {#no-jsp-component-templates}
 
-Le [structure des composants sociaux](/help/communities/scf.md) (SCF) utilise la variable [HandlebarsJS](https://handlebarsjs.com/) (HBS) langage de modèle à la place de Java Server Pages (JSP) utilisé avant AEM 6.0.
+La variable [structure des composants sociaux](/help/communities/scf.md) (SCF) utilise la variable [HandlebarsJS](https://handlebarsjs.com/) (HBS) langage de modèle à la place de Java Server Pages (JSP) utilisé avant AEM 6.0.
 
 Dans AEM 6.0, les composants JSP sont restés aux côtés des nouveaux composants de structure HBS au même emplacement, les composants HBS se trouvant généralement dans des sous-dossiers appelés &quot;hbs&quot;.
 
@@ -89,16 +88,16 @@ Dans AEM 6.0, les composants JSP sont restés aux côtés des nouveaux composant
 
 ## Outil de migration UGC AEM Communities {#aem-communities-ugc-migration-tool}
 
-Le [Outil de migration UGC AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration) est un outil de migration Open Source, disponible sur GitHub, qui peut être personnalisé pour exporter du contenu créé par l’utilisateur à partir de versions antérieures d’AEM communautés sociales et l’importer dans AEM Communities 6.1 ou version ultérieure.
+La variable [Outil de migration UGC AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration) est un outil de migration Open Source, disponible sur GitHub, qui peut être personnalisé pour exporter du contenu créé par l’utilisateur à partir de versions antérieures d’AEM communautés sociales et l’importer dans AEM Communities 6.1 ou version ultérieure.
 
 En plus de déplacer le contenu créé par l’utilisateur des versions antérieures, il est également possible d’utiliser l’outil pour déplacer le contenu créé par l’utilisateur d’une version à l’autre. [SRP](/help/communities/working-with-srp.md) à un autre, comme de MSRP à DSRP.
 
 ## Mise à niveau à partir d’AEM 5.6.1 ou d’une version antérieure {#upgrading-from-aem-or-earlier}
 
-Conceptuellement, il existe trois générations de composants de communautés :
+Sur le plan conceptuel, il existe trois générations de composants de communautés :
 
-**Gen 1**: Environ CQ 5.4 à AEM 5.6.0, voici la **collab** les composants qui ont stocké le contenu généré par l’utilisateur dans le référentiel local à l’aide de la réplication comme moyen de synchroniser le contenu créé par l’utilisateur sur toutes les plateformes. D’autres différences concernent l’implémentation à l’aide de Java Server Pages (JSP) ainsi que la fonctionnalité de blog consistant à créer uniquement dans l’environnement de création.
+**Gen 1**: environ CQ 5.4 à AEM 5.6.0, ce sont les **collab** les composants qui ont stocké le contenu généré par l’utilisateur dans le référentiel local à l’aide de la réplication comme moyen de synchroniser le contenu créé par l’utilisateur sur toutes les plateformes. D’autres différences concernent l’implémentation à l’aide de Java Server Pages (JSP) et la fonction de blog consistant à créer uniquement dans l’environnement de création.
 
-**Gen 2**: De AEM 5.6.1 à AEM 6.1, ceci est un mélange de **collab** et **social** composants. AEM 6.0 a introduit la nouvelle [structure des composants sociaux](/help/communities/scf.md) (SCF) et AEM 6.2 ont introduit une [magasin UGC commun](/help/communities/working-with-srp.md) où le contenu généré par l’utilisateur est accessible à l’aide d’une [fournisseur de ressources de stockage](/help/communities/srp.md) (SRP).
+**Gen 2**: de AEM 5.6.1 à AEM 6.1, il s’agit d’un mélange de **collab** et **social** composants. AEM 6.0 a introduit la nouvelle [structure des composants sociaux](/help/communities/scf.md) (SCF) et AEM 6.2 ont introduit une [magasin UGC commun](/help/communities/working-with-srp.md) où le contenu généré par l’utilisateur est accessible à l’aide d’une [fournisseur de ressources de stockage](/help/communities/srp.md) (SRP).
 
-**Gen 3**: À partir de AEM version 6.2, il n’y a que **social** composants, implémentés dans SCF en tant que composants Handlebars (HBS) nécessitant un choix de SRP pour le contenu généré par l’utilisateur.
+**Gen 3**: à partir de la version 6.2 d’ AEM , il n’y a que **social** composants, implémentés dans SCF en tant que composants Handlebars (HBS) nécessitant un choix de SRP pour le contenu généré par l’utilisateur.

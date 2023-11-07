@@ -11,10 +11,10 @@ discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2612'
-ht-degree: 85%
+source-wordcount: '2608'
+ht-degree: 84%
 
 ---
 
@@ -161,7 +161,7 @@ Configurez les propriétés suivantes lors de la création de graphiques pour le
    <td><p>En plus des configurations courantes, la configuration spécifique au graphique suivante est disponible :</p>
     <ul>
      <li><strong>Afficher une légende : </strong>affiche une légende pour le graphique circulaire ou en anneau lorsqu’il est activé.</li>
-     <li><strong>Position de la légende : </strong>spécifie la position de la légende par rapport au graphique. Les options disponibles sont Droite, Gauche, Haut et Bas. Il est recommandé d’utiliser la légende de droite dans le canal d’impression.</li>
+     <li><strong>Position de la légende : </strong>spécifie la position de la légende par rapport au graphique. Les options disponibles sont Droite, Gauche, Haut et Bas. Utilisez la légende du côté droit dans le canal d’impression.</li>
      <li><strong>Rayon interne</strong> : disponible pour les graphiques en anneau pour indiquer le rayon (en pixels) du cercle intérieur dans le graphique.</li>
      <li><strong>Couleur de la ligne</strong> : disponible pour les graphiques linéaires, linéaires et à points, ou en aires pour spécifier la couleur de la ligne dans le graphique.</li>
      <li><strong>Couleur du point</strong> : disponible pour les graphiques à points et linéaires et à points, pour spécifier la couleur des points dans le graphique.<br /> </li>

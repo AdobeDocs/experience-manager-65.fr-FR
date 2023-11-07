@@ -13,10 +13,10 @@ discoiquuid: c4706632-02e5-4510-ad9c-4f732d5fbdad
 docset: aem65
 role: Developer
 exl-id: 54d98c69-2b2e-46cb-9f6a-7e9bdbe5c378
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1883'
+ht-degree: 96%
 
 ---
 
@@ -74,9 +74,9 @@ Le document DDX contient une balise XDP `result` qui spécifie le nom du résu
  }
 ```
 
-La balise `XDP source` spécifie le fichier XDP qui représente un document XDP complet pouvant être utilisé comme conteneur pour l’ajout de fragments XDP ou comme l’un des nombreux documents qui sont ajoutés dans l’ordre. Dans ce cas, le document XDP est utilisé uniquement comme conteneur (première illustration présentée dans la section *Assembler plusieurs fragments XDP*). En d’autres termes, les autres fichiers XDP sont placés dans le conteneur XDP.
+La variable `XDP source` tag spécifie le fichier XDP qui représente un document XDP complet qui peut être utilisé comme conteneur pour ajouter des fragments XDP ou comme l’un des documents annexés ensemble dans l’ordre. Dans ce cas, le document XDP est utilisé uniquement comme conteneur (première illustration présentée dans la section *Assembler plusieurs fragments XDP*). En d’autres termes, les autres fichiers XDP sont placés dans le conteneur XDP.
 
-Pour chaque sous-formulaire, vous pouvez ajouter un élément `XDPContent` (cet élément est facultatif). Dans l’exemple ci-dessus, notez qu’il existe trois sous-formulaires : `subPatientContact`, `subPatientPhysical`, et `subPatientHealth`. Les sous-formulaires `subPatientPhysical` et `subPatientHealth` sont tous deux situés dans le même fichier XDP, tuc018_patient.xdp. L’élément de fragment spécifie le nom du sous-formulaire, tel que défini dans Designer.
+Pour chaque sous-formulaire, vous pouvez ajouter un élément `XDPContent` (cet élément est facultatif). Dans l’exemple ci-dessus, notez qu’il existe trois sous-formulaires : `subPatientContact`, `subPatientPhysical`, et `subPatientHealth`. Les deux `subPatientPhysical` et le sous-formulaire `subPatientHealth` Les sous-formulaires se trouvent dans le même fichier XDP, tuc018_patient.xdp. L’élément de fragment spécifie le nom du sous-formulaire, tel que défini dans Designer.
 
 >[!NOTE]
 >
@@ -126,9 +126,9 @@ Pour assembler plusieurs documents XDP, référencez tous les fichiers XDP util
  <XDPContent insertionPoint="ddx_fragment" source="tuc018_contact.xdp" fragment="subPatientContact" required="false"/>
 ```
 
-Le sous-formulaire nommé *subPatientContact* doit se trouver dans le fichier XDP nommé *tuc018_contact.xdp*.
+Le sous-formulaire nommé *subPatientContact* doit se trouver dans le fichier XDP nommé *tuc018_contact.xdp*.
 
-**Définition des options d’exécution**
+**Définir les options d’exécution**
 
 Vous pouvez définir des options d’exécution qui contrôlent le comportement du service Assembler lors de l’exécution d’une tâche. Par exemple, vous pouvez définir une option qui indique au service Assembler de continuer à traiter une tâche en cas d’erreur.
 

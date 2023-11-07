@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 08d36e9f-cafc-478e-9781-8fc29ac6262e
 role: Developer
 exl-id: e485980d-f200-46b7-9284-c9996003aa47
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1698'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1694'
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ## Rendu des formulaires au niveau du client {#rendering-forms-at-the-client-inner}
 
-Vous pouvez optimiser la diffusion de contenu PDF et améliorer la capacité du service Forms à gérer la charge du réseau à l’aide de la fonctionnalité de rendu côté client d’Acrobat ou d’Adobe Reader. Ce processus est connu sous le nom de rendu d’un formulaire au niveau du client. Pour effectuer le rendu d’un formulaire au niveau du client, l’équipement client (généralement un navigateur web) doit utiliser Acrobat 7.0 ou Adobe Reader 7.0 ou une version ultérieure.
+Vous pouvez optimiser la diffusion de contenu PDF et améliorer la capacité du service Forms à gérer la charge du réseau à l’aide de la fonctionnalité de rendu côté client d’Acrobat ou d’Adobe Reader. Ce processus est connu sous le nom de rendu d’un formulaire au niveau du client. Pour effectuer le rendu d’un formulaire au niveau du client, l’appareil client (généralement un navigateur web) doit utiliser Acrobat 7.0 ou Adobe Reader 7.0 ou une version ultérieure.
 
 Les modifications apportées à un formulaire par l’exécution d’un script côté serveur ne sont pas prises en compte dans un formulaire rendu au niveau du client, sauf si le sous-formulaire racine contient l’attribut `restoreState` défini sur `auto`. Pour plus d’informations sur cet attribut, voir [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).
 
@@ -53,13 +53,13 @@ Avant d’effectuer par programmation une opération d’API client de service F
 
 **Définir les options d’exécution du rendu client**
 
-Vous devez définir l’option d’exécution du rendu client pour effectuer le rendu d’un formulaire au niveau du client en définissant l’option d’exécution `RenderAtClient` sur `true`. Le formulaire est ainsi livré au périphérique client où il est rendu. Si `RenderAtClient` est `auto` (la valeur par défaut), la conception du formulaire détermine si le formulaire est rendu au niveau du client. La conception du formulaire doit être une conception de formulaire avec une disposition souple.
+Définissez l’option d’exécution de rendu client pour effectuer le rendu d’un formulaire sur le client en définissant la variable `RenderAtClient` option d’exécution sur `true`. Le formulaire est ainsi livré à l’appareil client où il est rendu. Si `RenderAtClient` est `auto` (la valeur par défaut), la conception du formulaire détermine si le formulaire est rendu au niveau du client. La conception du formulaire doit être une conception de formulaire avec une disposition souple.
 
 Une option d’exécution facultative que vous pouvez définir est l’option `SeedPDF`. L’option `SeedPDF` combine le conteneur PDF (document PDF d’origine) avec la conception du formulaire et les données XML. La conception du formulaire et les données XML sont transmises à Acrobat ou à Adobe Reader, où le formulaire est rendu. L’option `SeedPDF` peut être utilisée lorsque l’ordinateur client ne dispose pas des polices utilisées dans le formulaire, par exemple lorsqu’un utilisateur final n’est pas autorisé à utiliser une police que le propriétaire du formulaire est autorisé à utiliser.
 
 Vous pouvez utiliser Designer pour créer un fichier PDF dynamique simple à utiliser comme fichier PDF d’origine. Pour effectuer cette tâche, les étapes suivantes sont nécessaires :
 
-1. Déterminez si vous devez incorporer des polices dans le fichier PDF d’origine. Le fichier PDF d’origine doit contenir les polices supplémentaires requises par le formulaire en cours de rendu. Lorsque vous incorporez des polices dans le fichier PDF d’origine, assurez-vous de ne pas enfreindre les accords de licence des polices. Dans Designer, vous pouvez déterminer si vous pouvez légalement incorporer des polices. Lors de l’enregistrement, si vous ne pouvez pas incorporer certaines polices dans le formulaire, Designer affiche un message répertoriant les polices que vous ne pouvez pas incorporer. Ce message ne s’affiche pas dans Designer pour les documents PDF statiques.
+1. Déterminez si vous devez incorporer des polices dans le fichier PDF d’origine. Le fichier du PDF de contrôle doit contenir les polices supplémentaires requises par le formulaire en cours de rendu. Lorsque vous incorporez des polices dans le fichier PDF d’origine, assurez-vous de ne pas enfreindre les accords de licence des polices. Dans Designer, vous pouvez déterminer si vous pouvez légalement incorporer des polices. Lors de l’enregistrement, si vous ne pouvez pas incorporer certaines polices dans le formulaire, Designer affiche un message répertoriant les polices que vous ne pouvez pas incorporer. Ce message ne s’affiche pas dans Designer pour les documents PDF statiques.
 1. Si vous créez le fichier PDF d’origine dans Designer, il est recommandé d’ajouter au minimum un champ de texte contenant un message. Ce message doit être adressé aux utilisateurs de versions antérieures d’Adobe Reader et leur indiquer qu’ils doivent disposer d’Acrobat 7.0 ou d’une version ultérieure, ou d’Adobe Reader 7.0 ou d’une version ultérieure pour afficher le document.
 1. Enregistrez le fichier PDF d’origine en tant que fichier PDF dynamique avec l’extension de nom du fichier PDF.
 

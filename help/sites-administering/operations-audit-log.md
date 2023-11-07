@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
 feature: Operations
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 56%
+source-wordcount: '600'
+ht-degree: 52%
 
 ---
 
@@ -26,7 +26,7 @@ La maintenance du journal d’audit comprend plusieurs parties des fonctionnalit
 
 Il est mis en oeuvre en tant que tâche de maintenance hebdomadaire configurable et est accessible via la console de surveillance du tableau de bord des opérations .
 
-Pour en savoir plus, consultez la [documentation du tableau de bord des opérations](/help/sites-administering/operations-dashboard.md).
+Pour plus d’informations, voir [Documentation du tableau de bord des opérations](/help/sites-administering/operations-dashboard.md).
 
 Il existe trois types de purge du journal d’audit :
 
@@ -58,7 +58,7 @@ Pour configurer la purge du journal d’audit, procédez comme suit :
    >Le chemin d’accès au contenu s’applique uniquement aux enfants du nœud `/var/audit/com.day.cq.wcm.core.page` dans le référentiel.
 
 1. Enregistrez la règle.
-1. La règle que vous venez de créer doit être exposée dans le tableau de bord des opérations afin d’être exécutée. Pour ce faire, accédez à **Outils - Opérations - Maintenance** dans l’écran de bienvenue d’AEM.
+1. La règle que vous avez créée doit être exposée dans le tableau de bord des opérations pour qu’elle soit exécutée. Pour ce faire, accédez à **Outils - Opérations - Maintenance** dans l’écran de bienvenue d’AEM.
 
 1. Appuyez sur la carte **Période de maintenance hebdomadaire**.
 

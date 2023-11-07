@@ -5,10 +5,10 @@ feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1956'
-ht-degree: 97%
+source-wordcount: '1959'
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 97%
 | AEM 6.5 | Cet article |
 
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion d’AEM découplé.
 
@@ -37,7 +37,7 @@ L’[API REST Assets](/help/assets/mac-api-assets.md) permet aux développeurs 
 
 L’API vous permet d’utiliser Adobe Experience Manager en tant que CMS (Content Management System) sans interface utilisateur en fournissant Content Services à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON.
 
-Par exemple, les applications sur une seule page, basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
+Par exemple, les applications monopages, basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
 
 Bien que les [composants de base AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) fournissent une API très complète, flexible et personnalisable pouvant traiter les opérations de lecture requises à cette fin, et dont la sortie JSON peut être personnalisée, ils ne nécessitent pas de connaissances sur AEM WCM (Web Content Management) pour la mise en œuvre, car ils doivent être hébergés sur des pages reposant sur des modèles AEM dédiés. Les entreprises de développement d’applications sur une seule page n’ont pas toutes accès à ces connaissances.
 
@@ -111,7 +111,7 @@ Cela signifie que les requêtes suivantes (`write`) ne peuvent pas être combin�
   <tr>
    <td>Cas d’utilisation pris en charge</td>
    <td>Objectif général.</td>
-   <td><p>Optimisé pour une utilisation dans une application sur une seule page (SPA) ou tout autre contexte (utilisant du contenu).</p> <p>Peut également contenir des informations de disposition.</p> </td>
+   <td><p>Optimisé pour une utilisation dans une application monopage ou tout autre contexte (utilisant du contenu).</p> <p>Peut également contenir des informations de disposition.</p> </td>
   </tr>
   <tr>
    <td>Opérations prises en charge</td>
@@ -204,7 +204,7 @@ La réponse contiendra les informations de pagination dans la section `propertie
 
 Les dossiers servent de conteneurs pour les ressources et d’autres dossiers. Ils reflètent la structure du référentiel de contenu AEM.
 
-L’API REST Assets expose l’accès aux propriétés d’un dossier (par exemple, son nom, son titre, etc.). Les ressources sont exposées en tant qu’entités enfants de dossiers et de sous-dossiers.
+L’API REST Assets expose l’accès aux propriétés d’un dossier, par exemple son nom, son titre, etc. Les ressources sont exposées en tant qu’entités enfants de dossiers et de sous-dossiers.
 
 >[!NOTE]
 >
@@ -235,9 +235,9 @@ Les fragments de contenu :
 
 #### Modèles et fragments de contenu {#content-models-and-content-fragments}
 
-Actuellement, les modèles qui définissent la structure d’un fragment de contenu ne sont pas exposés via une API HTTP. Par conséquent, le *consommateur* doit disposer d’informations sur le modèle d’un fragment (au moins un minimum), bien que la plupart des informations puissent être déduites de la charge utile (par exemple, les types de données, etc.). Ces dernières font par ailleurs partie de la définition.
+Actuellement, les modèles qui définissent la structure d’un fragment de contenu ne sont pas exposés via une API HTTP. Par conséquent, *client* doit connaître le modèle d’un fragment (au moins un minimum), bien que la plupart des informations puissent être déduites de la charge utile (comme les types de données, etc.). Ces dernières font par ailleurs partie de la définition.
 
-Pour créer un fragment de contenu, le chemin (référentiel interne) du modèle doit être indiqué.
+Pour créer un fragment de contenu, le chemin (référentiel interne) du modèle doit être fourni.
 
 #### Contenu associé {#associated-content}
 
@@ -307,7 +307,7 @@ Mode d’utilisation :
 
 Il existe quelques restrictions :
 
-* **Les modèles de fragment de contenu ne sont actuellement pas pris en charge** : ils ne peuvent pas être lus ni créés. Pour pouvoir créer un fragment de contenu, ou en mettre un existant à jour, les développeurs doivent connaître le chemin correct vers le modèle de fragment de contenu. Actuellement, la seule méthode pour obtenir un aperçu de ces éléments est via l’interface utilisateur d’administration.
+* **Les modèles de fragment de contenu ne sont actuellement pas pris en charge** : ils ne peuvent pas être lus ni créés. Pour pouvoir créer un fragment de contenu ou en mettre à jour un existant, les développeurs doivent connaître le chemin d’accès correct au modèle de fragment de contenu. Actuellement, la seule méthode pour obtenir un aperçu de ces éléments est via l’interface utilisateur d’administration.
 * **Les références sont ignorées**. Actuellement, il n’existe aucune vérification pour savoir si un fragment de contenu existant est référencé. Par conséquent, la suppression d’un fragment de contenu, par exemple, peut entraîner des problèmes sur une page contenant une référence au fragment de contenu en question.
 * **Type de données JSON** L’API REST définit actuellement la sortie du *type de données JSON* sur *chaîne de caractères*.
 

@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b2c09e6b-a1d8-4b30-af2c-988442a3a986
 docset: aem65
 exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 95%
+ht-degree: 93%
 
 ---
 
@@ -40,7 +40,7 @@ Les actions telles que l’envoi d’un formulaire de PDF, l’utilisation de l�
 
 ## Topologie prise en charge {#supported-topology}
 
-Les rapports de transaction sont disponibles uniquement sur AEM Forms dans l’environnement OSGi. Il prend en charge les topologies de création-publication, de création-traitement-publication et de traitement uniquement. Pour plus d’informations sur les topologies, voir [Topologies d’architecture et de déploiement pour AEM Forms](../../forms/using/transaction-reports-overview.md).
+Les rapports de transaction sont disponibles uniquement sur AEM Forms dans l’environnement OSGi. Il prend en charge les topologies de création-publication, de création-traitement-publication et de traitement uniquement. Par exemple, topologies, voir [Topologies d’architecture et de déploiement pour AEM Forms](../../forms/using/transaction-reports-overview.md).
 
 Le nombre de transactions est répliqué par inverse des instances de publication vers les instances de création ou de traitement. Une topologie de création-publication indicative est affichée ci-dessous :
 

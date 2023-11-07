@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1724'
-ht-degree: 86%
+source-wordcount: '1723'
+ht-degree: 85%
 
 ---
 
@@ -172,7 +172,7 @@ Pour un exemple simpliste, voir [Application We.Retail Journal](https://github.c
 
 >[!CAUTION]
 >
->L’[application We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) ne sert qu’à des fins de démonstration et utilise donc simplement Node.js comme exemple au lieu d’utiliser Adobe I/O Runtime comme recommandé. Node.js ne doit pas être utilisé dans le cadre d’un projet.
+>L’[application We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) ne sert qu’à des fins de démonstration et utilise donc simplement Node.js comme exemple au lieu d’utiliser Adobe I/O Runtime comme recommandé. N’utilisez pas cet exemple pour un projet.
 
 >[!NOTE]
 >

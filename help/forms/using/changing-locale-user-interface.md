@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: 9a069486-02a8-4058-adfb-4e0e49d8c0cf
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '569'
 ht-degree: 39%
 
 ---
@@ -28,7 +28,7 @@ Avant d’effectuer les étapes ci-dessus, veillez à suivre les étapes répert
 
 >[!NOTE]
 >
->Pour modifier la langue de l’écran de connexion de l’espace de travail AEM Forms, voir [Création d’un écran de connexion](../../forms/using/creating-new-login-screen.md).
+>Pour modifier la langue de l’écran de connexion de l’espace de travail AEM Forms, voir [Créer un écran de connexion](../../forms/using/creating-new-login-screen.md).
 
 ## Localisation du texte {#localizing-text}
 

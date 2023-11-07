@@ -1,20 +1,16 @@
 ---
 title: Créer un contenu accessible (conformité WCAG 2.0)
-seo-title: Creating Accessible Content (WCAG 2.0 Conformance)
 description: Le WCAG 2.0 regroupe un ensemble de consignes et de critères de réussite qui ne sont pas associés à une technologie particulière et visant à rendre les contenus web plus accessibles aux personnes en situation de handicap.
-seo-description: WCAG 2.0 consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities.
 page-status-flag: de-activated
-uuid: c2c0cac0-2a9f-478d-8261-e8cc894aae34
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '9152'
-ht-degree: 99%
+source-wordcount: '9151'
+ht-degree: 98%
 
 ---
 
@@ -360,7 +356,7 @@ Suivez les instructions de la section [Audio-description ou version de remplacem
 
 ### Adaptable (1.3) {#adaptable}
 
-[Règle 1.3 - Adaptable : crée un contenu qui peut être présenté de différentes manières sans perte d’information ni de structure (par exemple avec une mise en page simplifiée).](https://www.w3.org/TR/WCAG20/#content-structure-separation)
+[Règle 1.3 - Adaptable : créer du contenu qui peut être présenté de différentes manières (par exemple, avec une mise en page plus simple) sans perdre d’informations ni de structure.](https://www.w3.org/TR/WCAG20/#content-structure-separation)
 
 Cette règle couvre les exigences nécessaires pour proposer un contenu adapté aux personnes qui :
 
@@ -382,7 +378,7 @@ Ce critère de réussite permet de s’assurer que ces informations structurelle
 
 #### Comment procéder – Informations et relations (1.3.1)  {#how-to-meet-info-and-relationships}
 
-AEM facilite la construction de pages web à l’aide d’éléments HTML appropriés. Ouvrez le contenu de votre page dans l’éditeur de texte enrichi (un composant texte) et utilisez le menu **Format** pour indiquer l’élément structurel approprié (paragraphe, en-tête, etc.).
+AEM facilite la construction de pages web à l’aide d’éléments HTML appropriés. Ouvrez le contenu de votre page dans l’éditeur de texte enrichi (un composant Texte) et utilisez la variable **Format** pour spécifier l’élément structurel approprié (paragraphe et en-tête, par exemple).
 
 L’image suivante présente du texte stylisé en tant que texte de paragraphe. L’affichage du code source utilisé indique que les balises d’ouverture et de fermeture &lt;p> et &lt;/p> sont correctes.
 
@@ -396,7 +392,7 @@ Quand les fonctionnalités d’accessibilité de l’éditeur de texte enrichi s
 
 L’image suivante illustre un exemple des différents types de titres.
 
-![Titres H1 à H3 affichés dans le sélecteur déroulant (IU classique).](assets/chlimage_1-19a.png)
+![Titres H1 à H3 affichés dans le sélecteur déroulant (IU classique).](assets/chlimage_1-19a.png)
 
 * **Texte mis en évidence** :
 
@@ -534,7 +530,7 @@ Pour connaître les conditions requises en rapport avec les alternatives aux cou
 
 Assurez-vous que toutes les informations qui reposent sur les caractéristiques visuelles du contenu de la page sont également présentées dans un autre format.
 
-* Ne vous fiez pas à la position visuelle pour donner des informations. Par exemple, si vous souhaitez renvoyer les utilisateurs et les utilisatrices vers un menu sur le côté droit de la page pour accéder à des informations supplémentaires, ne vous reportez pas au *menu de droite* ; au lieu de cela, nommez le menu (par exemple au moyen d’un en-tête) et faites référence à ce nom dans le texte.
+* Ne vous fiez pas à la position visuelle pour donner des informations. Par exemple, si vous souhaitez renvoyer les utilisateurs vers un menu sur le côté droit de la page pour accéder à des informations supplémentaires, ne reportez-vous pas à la section *le menu de droite ;*; au lieu de cela, nommez le menu (par exemple, au moyen d’un en-tête) et faites référence à ce nom dans le texte.
 * Ne vous limitez pas au style de texte (texte en gras ou en italique, par exemple) comme seul moyen de transmettre l’information.
 
 >[!NOTE]
@@ -684,7 +680,7 @@ Si des images de texte doivent être utilisées, utilisez le CSS pour remplacer 
 
 Remarques :
 
-1. Pour les exigences relatives au contenu scintillant ou flashant, se référer à la règle [Ne pas concevoir de contenu susceptible de provoquer des crises (2.3)](#seizures).
+1. Pour connaître les exigences relatives au contenu scintillant ou flashant, voir [Ne pas concevoir de contenu susceptible de provoquer des crises (2.3)](#seizures).
 1. Puisque tout contenu ne satisfaisant pas ce critère de réussite peut interférer avec la capacité de l’utilisateur à exploiter la page entière, tout le contenu présent dans la page web (qu’il soit utilisé pour satisfaire d’autres critères de réussite ou non) doit satisfaire ce critère de réussite. Voir [Exigence de conformité 5 : Non-interférence](https://www.w3.org/TR/WCAG20/#cc5).
 1. Le contenu mis à jour régulièrement par un logiciel ou diffusé en continu à l’utilisateur ou l’utilisatrice n’est pas tenu de conserver ou présenter des informations générées ou reçues entre la mise en pause et la reprise de la présentation. En effet, cela peut être techniquement impossible et peut induire en erreur dans de nombreuses situations.
 1. Une animation dans le cadre d’une phase de préchargement ou d’une situation similaire peut être considérée comme essentielle si l’interaction ne peut pas se produire au cours de cette phase pour tous les utilisateurs et utilisatrices, et si le fait de ne pas indiquer la progression risque de dérouter les utilisateurs et les utilisatrices ou de leur faire croire que le contenu a été figé ou interrompu.
@@ -965,7 +961,7 @@ Les libellés sont positionnés immédiatement à droite du champ.
 
 les libellés sont positionnés immédiatement au-dessus ou à gauche du champ.
 
-Dans les formulaires simples aux fonctionnalités limitées, l’ajout d’un libellé approprié pour un bouton `Submit` peut servir de libellé pour le champ adjacent (par exemple, `Search`). Cela s’avère utile dans les cas où il peut être difficile de trouver de l’espace pour le texte du libellé.
+Dans les formulaires simples avec des fonctionnalités très limitées, un bouton `Submit` étiqueté de manière appropriée peut servir de libellé pour le champ adjacent (par exemple, `Search`). Cela s’avère utile dans les cas où il peut être difficile de trouver de l’espace pour le texte du libellé.
 
 #### En savoir plus – Étiquettes ou instructions (3.3.2) {#more-information-labels-or-instructions}
 

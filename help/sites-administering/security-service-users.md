@@ -7,7 +7,7 @@ topic-tags: Security
 content-type: reference
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Security
-source-git-commit: f317783f3320e3987c7468aa0b2471e525b0387a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1797'
 ht-degree: 46%
@@ -43,7 +43,7 @@ De nombreux problèmes peuvent être résolus en restructurant le contenu. Garde
 
 * **Affiner la structure de contenu**
 
-   * Déplacez-le vers d’autres emplacements, par exemple lorsque le contrôle d’accès correspond aux sessions de requête disponibles ;
+   * Déplacez-le vers d’autres emplacements, par exemple, où le contrôle d’accès correspond aux sessions de requête disponibles ;
    * modifier la granularité du contenu ;
 
 * **Refactorisation du code afin qu’il corresponde à un service approprié**
@@ -67,7 +67,7 @@ Veillez également à ce que toutes les nouvelles fonctionnalités que vous dév
 
 ## Contrôle d’accès strict {#strict-access-control}
 
-Si vous appliquez le contrôle d’accès lors de la restructuration du contenu ou lorsque vous le faites pour un nouvel utilisateur, vous devez appliquer les listes ACL les plus strictes possibles. Utilisez tous les moyens de contrôle d’accès possibles :
+Si vous appliquez le contrôle d’accès lors de la restructuration du contenu ou lorsque vous le faites pour un nouvel utilisateur, vous devez appliquer les ACL les plus strictes possibles. Utilisez tous les moyens de contrôle d’accès possibles :
 
 * Par exemple, plutôt que d’appliquer `jcr:read` sur `/apps`, appliquez-le uniquement sur `/apps/*/components/*/analytics`.
 

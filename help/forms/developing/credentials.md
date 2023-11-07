@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: bc06d9bd-af6c-47b1-b46f-aab990ef5816
 role: Developer
 exl-id: 1101c85a-6a90-471d-a7be-8d25765e84bf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1085'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1084'
+ht-degree: 98%
 
 ---
 
@@ -79,7 +79,7 @@ Avant de pouvoir importer des informations d’identification par programmation 
 
 **Référencer les informations d’identification**
 
-Référencez les informations d’identification à importer dans AEM Forms. Le didacticiel de mise en route correspondant à cette section fait référence à un fichier P12 situé dans le système de fichiers.
+Référencez les informations d’identification à importer dans AEM Forms. Le démarrage rapide associé à cette section fait référence à un fichier P12 dans le système de fichiers.
 
 **Effectuer lʼopération dʼimportation**
 

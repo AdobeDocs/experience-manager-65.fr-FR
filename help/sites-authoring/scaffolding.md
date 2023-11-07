@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: f5025f64-d3ce-43e8-9666-5c7c162536c7
 exl-id: e3488c9d-035f-4165-ad32-21103ec7e581
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '153'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '151'
+ht-degree: 83%
 
 ---
 
@@ -23,4 +23,4 @@ Grâce à la fonction de génération de modèles automatique, vous pouvez crée
 
 >[!NOTE]
 >
->Bien qu’il existe un [mode](/help/sites-authoring/author-environment-tools.md#page-modes) Scaffolding, la maintenance et la création de modèles automatiques, ainsi que la création de nouvelles pages à partir de modèles automatiques, sont effectuées dans l’IU classique. Pour plus d’informations, consultez la section [Génération de modèles automatique](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) dans la documentation de création de l’IU classique.
+>Bien qu’il existe un modèle automatique [mode](/help/sites-authoring/author-environment-tools.md#page-modes) disponible, la maintenance et la création de modèles automatiques, ainsi que la création de pages à partir de modèles automatiques, sont effectuées dans l’IU classique. Pour plus d’informations, consultez la section [Génération de modèles automatique](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) dans la documentation de création de l’IU classique.

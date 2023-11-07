@@ -1,23 +1,19 @@
 ---
 title: Configuration du service OData de Microsoft Dynamics
-seo-title: Microsoft Dynamics ODtata configuration
-description: Tirez parti de l’intégration et de l’utilisation des services Microsoft Dynamics en ligne et sur site grâce à un modèle de données de formulaire.
-seo-description: Learn how to leverage integrate and work with online and on-premises Microsoft Dynamics services through form data model.
-uuid: 37e59633-484b-4a20-808d-2a0bc0d336cc
+description: Découvrez comment utiliser, intégrer et utiliser les services Microsoft Dynamics en ligne et sur site à l’aide d’un modèle de données de formulaire.
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 627507f5-1ffc-48f8-8cc9-5dbc5e409ae3
 docset: aem65
 feature: Form Data Model
 exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
-source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1227'
-ht-degree: 61%
+source-wordcount: '1230'
+ht-degree: 58%
 
 ---
 
-# Configuration du service OData de Microsoft Dynamics{#microsoft-dynamics-odata-configuration}
+# Configuration du service OData de Microsoft Dynamics{#microsoft-dynamics-odata-configuration}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -32,11 +28,11 @@ Microsoft Dynamics est un logiciel de gestion de la relation client et de planif
 * Écrire des données sur Microsoft Dynamics pour des envois de formulaires adaptatifs
 * Écrire des données dans Microsoft Dynamics par le biais d’entités personnalisées définies dans le modèle de données de formulaire et inversement
 
-Le package complémentaire AEM Forms inclut également une configuration OData de référence que vous pouvez exploiter pour intégrer rapidement Microsoft Dynamics à AEM Forms.
+Le module complémentaire AEM Forms comprend également une configuration OData de référence que vous pouvez utiliser pour intégrer rapidement Microsoft Dynamics à AEM Forms.
 
 Lorsque le package est installé, les entités et services suivants sont disponibles sur votre instance AEM Forms :
 
-* Cloud Service OData MS Dynamics (service OData)
+* CLOUD SERVICE OData MS Dynamics (service OData)
 * Modèle de données de formulaire avec entités et services Microsoft Dynamics préconfigurés.
 
 Les entités et services Microsoft Dynamics préconfigurés dans un modèle de données de formulaire ne sont disponibles sur votre instance AEM Forms que si le mode d’exécution de l’instance AEM est défini comme `samplecontent` (par défaut). Le service Cloud OData MS Dynamics (service OData) est également disponible avec d’autres modes d’exécution. Pour plus d’informations sur la configuration des modes d’exécution pour une instance AEM, voir [Modes d’exécution](/help/sites-deploying/configure-runmodes.md).
@@ -122,7 +118,7 @@ Pour enregistrer un client OAuth sur l’ordinateur Active Directory Federatio
 La configuration du **service cloud OData de MS Dynamics (service OData)** est fournie avec la configuration OData par défaut. Pour le configurer afin qu’il se connecte à votre service Microsoft Dynamics, procédez comme suit.
 
 1. Accédez à **[!UICONTROL Outils > Services cloud > Sources de données]** et appuyez sur le dossier de configuration `global`.
-1. Sélectionner **Cloud Service OData MS Dynamics (service OData)** configuration et appuyez sur **[!UICONTROL Propriétés]**. La boîte de dialogue de propriété de configuration du service cloud s’ouvre.
+1. Sélectionner **CLOUD SERVICE OData MS Dynamics (service OData)** configuration et appuyez sur **[!UICONTROL Propriétés]**. La boîte de dialogue de propriété de configuration du service cloud s’ouvre.
 
    Dans l’onglet **Paramètres d’authentification** :
 

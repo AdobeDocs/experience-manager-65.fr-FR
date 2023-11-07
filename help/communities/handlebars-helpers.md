@@ -8,10 +8,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1473'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 Handlebars Helpers (helpers) sont des méthodes appelables à partir des scripts Handlebars pour faciliter l’utilisation des composants SCF.
 
-L’implémentation comprend une définition côté client et côté serveur. Il est également possible pour les développeurs de créer des assistants personnalisés.
+L’implémentation comprend une définition côté client et une définition côté serveur. Il est également possible pour les développeurs de créer des assistants personnalisés.
 
 Les assistants SCF personnalisés fournis avec AEM Communities sont définis dans la variable [bibliothèque cliente](../../help/sites-developing/clientlibs.md):
 
@@ -45,19 +45,19 @@ Si safeString est défini sur true, la chaîne renvoyée est une SafeString.
 
 ### Paramètres {#parameters}
 
-* **contexte**: Chaîne
+* **contexte**: chaîne
 
   (Facultatif) La valeur par défaut est la chaîne vide.
 
-* **maxLength**: Nombre
+* **maxLength**: nombre
 
   (Facultatif) La valeur par défaut est la longueur du contexte.
 
-* **maxWords**: Nombre
+* **maxWords**: nombre
 
   (Facultatif) La valeur par défaut est le nombre de mots de la chaîne rognée.
 
-* **safeString**: Booléen
+* **safeString**: booléen
 
   (Facultatif) Renvoie une valeur Handlebars.SafeString() si la valeur est true. La valeur par défaut est false.
 
@@ -93,23 +93,23 @@ Permet d’ajouter deux étendues sous une balise div, l’une pour le texte int
 
 ### Paramètres {#parameters-1}
 
-* **contexte**: Chaîne
+* **contexte**: chaîne
 
   (Facultatif) La valeur par défaut est la chaîne vide.
 
-* **numChars**: Nombre
+* **numChars**: nombre
 
-  (Facultatif) Nombre de caractères à afficher lorsque le texte intégral ne s’affiche pas. La valeur par défaut est 100.
+  (Facultatif) Le nombre de caractères à afficher lorsque le texte intégral ne s’affiche pas. La valeur par défaut est 100.
 
-* **moreText**: Chaîne
+* **moreText**: chaîne
 
   (Facultatif) Texte à afficher indiquant qu’il y a plus de texte à afficher. La valeur par défaut est &quot;plus&quot;.
 
-* **ellipsesText**: Chaîne
+* **ellipsesText**: chaîne
 
   (Facultatif) Le texte à afficher indiquant qu’il y a du texte masqué. La valeur par défaut est &quot;...&quot;.
 
-* **safeString**: Booléen
+* **safeString**: booléen
 
   (Facultatif) Valeur booléenne indiquant s’il faut appliquer Handlebars.SafeString() avant de renvoyer le résultat. La valeur par défaut est false.
 
@@ -133,11 +133,11 @@ Une aide permettant de renvoyer une chaîne de date formatée.
 
 ### Paramètres {#parameters-2}
 
-* **contexte**: Nombre
+* **contexte**: nombre
 
   (Facultatif) Décalage de valeur en millisecondes par rapport au 1er janvier 1970 (époque). La date par défaut est la date actuelle.
 
-* **format**: Chaîne
+* **format**: chaîne
 
   (Facultatif) Format de date à appliquer. La valeur par défaut est &quot;AAAA-MM-JJTHH&quot;:mm:s.sssZ&quot; et le résultat apparaît sous la forme &quot;2015-03-18T18:17:13-07:00&quot;
 
@@ -161,11 +161,11 @@ Un assistant pour renvoyer du contenu en fonction d’une condition d’égalit�
 
 ### Paramètres {#parameters-3}
 
-* **lvalue**: Chaîne
+* **lvalue**: chaîne
 
   Valeur de gauche à comparer.
 
-* **rvalue**: Chaîne
+* **rvalue**: chaîne
 
   Valeur de droite à comparer.
 
@@ -185,11 +185,11 @@ Une assistance par bloc qui teste la valeur actuelle de [Mode WCM](https://devel
 
 ### Paramètres {#parameters-4}
 
-* **contexte**: Chaîne
+* **contexte**: chaîne
 
   (Facultatif) Chaîne à traduire. Obligatoire si aucune valeur par défaut n’est fournie.
 
-* **mode**: Chaîne
+* **mode**: chaîne
 
   (Facultatif) Une liste séparée par des virgules de [Modes WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) pour tester si défini.
 
@@ -211,15 +211,15 @@ Voir aussi [Internationalisation de chaînes dans un code JavaScript](../../help
 
 ### Paramètres {#parameters-5}
 
-* **contexte**: Chaîne
+* **contexte**: chaîne
 
   (Facultatif) Chaîne à traduire. Obligatoire si aucune valeur par défaut n’est fournie.
 
-* **default**: Chaîne
+* **default**: chaîne
 
   (Facultatif) Chaîne par défaut à traduire. Obligatoire si aucun contexte n’est fourni.
 
-* **comment**: Chaîne
+* **comment**: chaîne
 
   (Facultatif) Conseil de traduction
 
@@ -242,7 +242,7 @@ Cette assistance, appropriée uniquement côté serveur, fournit des fonctionnal
 
 ### Paramètres {#parameters-6}
 
-* **contexte**: Chaîne ou objet
+* **contexte**: chaîne ou objet
 
   (Facultatif, sauf si vous fournissez un chemin relatif)
 
@@ -250,19 +250,19 @@ Cette assistance, appropriée uniquement côté serveur, fournit des fonctionnal
 
   Utilisation `this.id` pour obtenir la ressource à l’adresse `id` pour effectuer le rendu de resourceType demandé.
 
-* **resourceType**: Chaîne
+* **resourceType**: chaîne
 
   (Facultatif) Le type de ressource est défini par défaut sur le type de ressource à partir du contexte.
 
-* **modèle**: Chaîne
+* **modèle**: chaîne
 
   Chemin d’accès au script du composant.
 
-* **path**: Chaîne
+* **path**: chaîne
 
   (Obligatoire) Chemin d’accès à la ressource. Si le chemin est relatif, un contexte doit être fourni, sinon la chaîne vide est renvoyée.
 
-* **authoringDisabled**: Booléen
+* **authoringDisabled**: booléen
 
   (Facultatif) La valeur par défaut est false. Pour une utilisation interne uniquement.
 
@@ -276,25 +276,25 @@ Inclut un nouveau composant de commentaires à l’adresse `this.id` + /comments
 
 ## IncludeClientLib {#includeclientlib}
 
-Une aide qui comprend une bibliothèque cliente HTML AEM, qui peut être une bibliothèque js, css ou thème. Pour plusieurs inclusions de différents types, par exemple js et css, cette balise doit être utilisée plusieurs fois dans le script Handlebars.
+Une aide qui comprend une bibliothèque cliente HTML AEM, qui peut être une bibliothèque js, css ou thème. Pour plusieurs inclusions de différents types, par exemple, js et css, cette balise doit être utilisée plusieurs fois dans le script Handlebars.
 
 Cette assistance, appropriée uniquement côté serveur, fournit des fonctionnalités similaires à [ui:includeClientLib](../../help/sites-developing/taglib.md) pour les scripts JSP.
 
 ### Paramètres {#parameters-7}
 
-* **categories**: Chaîne
+* **categories**: chaîne
 
   (Facultatif) Une liste de catégories de bibliothèques clientes séparées par des virgules. Incluez toutes les bibliothèques JavaScript et CSS pour les catégories données. Le nom du thème est extrait de la requête.
 
-* **thème**: Chaîne
+* **thème**: chaîne
 
   (Facultatif) Une liste de catégories de bibliothèques clientes séparées par des virgules. Incluez toutes les bibliothèques liées au thème (CSS et JS) pour les catégories données. Le nom du thème est extrait de la requête.
 
-* **js**: Chaîne
+* **js**: chaîne
 
   (Facultatif) Une liste de catégories de bibliothèques clientes séparées par des virgules. Inclut toutes les bibliothèques JavaScript pour les catégories données.
 
-* **css**: Chaîne
+* **css**: chaîne
 
   (Facultatif) Une liste de catégories de bibliothèques clientes séparées par des virgules. Inclut toutes les bibliothèques CSS pour les catégories données.
 
@@ -345,15 +345,15 @@ Une aide permettant d’afficher le temps écoulé jusqu’à un point de coupur
 Par exemple :
 
 * Il y a 12 heures
-* 7 jours auparavant
+* il y a 7 jours
 
 ### Paramètres {#parameters-8}
 
-* **contexte**: Nombre
+* **contexte**: nombre
 
   Un temps dans le passé à comparer avec &quot;maintenant&quot;. Le temps est exprimé sous la forme d’un décalage de valeur en millisecondes par rapport au 1er janvier 1970 (époque).
 
-* **daysCutoff**: Nombre
+* **daysCutoff**: nombre
 
   Nombre de jours auparavant avant de passer à une date réelle. La valeur par défaut est 60.
 
@@ -377,7 +377,7 @@ Depending on how long in the past, may return
 
 Une aide qui code une chaîne source pour le contenu d’élément de HTML afin de vous protéger contre XSS.
 
-REMARQUE : Cet assistant n’est pas un programme de validation et ne doit pas être utilisé pour écrire des valeurs d’attribut.
+REMARQUE : Cette assistance n’est pas un programme de validation et ne doit pas être utilisée pour écrire des valeurs d’attribut.
 
 ### Paramètres {#parameters-9}
 
@@ -395,11 +395,11 @@ REMARQUE : Cet assistant n’est pas un programme de validation et ne doit pas �
 
 Une aide qui code une chaîne source pour l’écriture sur une valeur d’attribut de HTML afin de vous aider à vous protéger contre XSS.
 
-REMARQUE : Cet assistant n’est pas un validateur et ne doit pas être utilisé pour écrire des attributs exploitables (href, src, gestionnaires d’événements).
+REMARQUE : Cette assistance n’est pas un programme de validation et ne doit pas être utilisée pour écrire des attributs exploitables (href, src, gestionnaires d’événements).
 
 ### Paramètres {#parameters-10}
 
-* **contexte**: Objet
+* **contexte**: objet
 
   HTML à coder.
 
@@ -413,11 +413,11 @@ REMARQUE : Cet assistant n’est pas un validateur et ne doit pas être utilisé
 
 Une aide qui code une chaîne source pour l’écriture dans du contenu de chaîne JavaScript afin de vous protéger contre XSS.
 
-REMARQUE : Cet assistant n’est pas un validateur et ne doit pas être utilisé pour écrire dans du code JavaScript arbitraire.
+REMARQUE : Cette assistance n’est pas un programme de validation et ne doit pas être utilisée pour écrire du code JavaScript arbitraire.
 
 ### Paramètres {#parameters-11}
 
-* **contexte**: Objet
+* **contexte**: objet
 
   HTML à coder.
 
@@ -431,11 +431,11 @@ var input = {{xss-jsString topic-title}}
 
 Une assistance qui assainit une URL pour écrire en tant que href HTML ou valeur d’attribut source afin de vous aider à vous protéger contre XSS.
 
-REMARQUE : Cet assistant peut renvoyer une chaîne vide.
+REMARQUE : cette assistance peut renvoyer une chaîne vide.
 
 ### Paramètres {#parameters-12}
 
-* **contexte**: Objet
+* **contexte**: objet
 
   URL à assainir.
 
@@ -450,7 +450,7 @@ REMARQUE : Cet assistant peut renvoyer une chaîne vide.
 * Un appel d’assistance Handlebars est un identifiant simple (le *name* de l’assistant), suivie de zéro ou plusieurs paramètres séparés par de l’espace.
 * Les paramètres peuvent être une simple chaîne, un nombre, un objet booléen ou JSON et une séquence facultative de paires clé-valeur (arguments de hachage) comme derniers paramètres.
 * Les clés des arguments de hachage doivent être des identifiants simples.
-* Les valeurs des arguments de hachage sont des expressions Handlebars : identifiants, chemins ou chaînes simples.
+* Les valeurs des arguments de hachage sont des expressions Handlebars : identifiants simples, chemins ou chaînes.
 * Le contexte actuel, `this`, est toujours disponible pour les assistants Handlebars.
 * Le contexte peut être une chaîne, un nombre, une valeur booléenne ou un objet de données JSON.
 * Il est possible de transmettre un objet imbriqué dans le contexte actuel en tant que contexte, par exemple `this.url` ou `this.id` (voir les exemples suivants d’aides simples et par blocs).
@@ -520,11 +520,11 @@ Rendre :
 
 ## Aide SCF personnalisée {#custom-scf-helpers}
 
-Les assistants personnalisés doivent être implémentés côté serveur et côté client, en particulier lors de la transmission de données. Pour SCF, la plupart des modèles sont compilés et rendus côté serveur, car le serveur génère le HTML pour un composant donné lorsque la page est demandée.
+Les assistants personnalisés doivent être implémentés côté serveur et côté client, en particulier lors de la transmission de données. Pour SCF, la plupart des modèles sont compilés et rendus côté serveur, car le serveur génère le HTML d’un composant donné lorsque la page est demandée.
 
 ### Aide personnalisée côté serveur {#server-side-custom-helpers}
 
-Pour mettre en oeuvre et enregistrer un assistant SCF personnalisé côté serveur, il vous suffit de mettre en oeuvre l’interface Java™ [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), faites en sorte qu’il soit [Service OSGi](../../help/sites-developing/the-basics.md#osgi) et installez-le dans le cadre d’un regroupement OSGi.
+Pour mettre en oeuvre et enregistrer un assistant SCF personnalisé côté serveur, implémentez simplement l’interface Java™ [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), faites en sorte qu’il [Service OSGi](../../help/sites-developing/the-basics.md#osgi) et installez-le dans le cadre d’un regroupement OSGi.
 
 Par exemple :
 

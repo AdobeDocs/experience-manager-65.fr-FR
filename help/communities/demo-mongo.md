@@ -8,9 +8,9 @@ content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '765'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Ce tutoriel décrit la configuration [MSRP](msrp.md) pour *un auteur* instance et *publication unique* instance.
 
-Grâce à cette configuration, le contenu de la communauté est accessible à partir des environnements de création et de publication sans avoir à transférer ou à répliquer de manière inverse le contenu généré par l’utilisateur.
+Avec cette configuration, le contenu de la communauté est accessible à partir des environnements de création et de publication sans avoir à transférer ou à répliquer à l’inverse le contenu généré par l’utilisateur.
 
 Ce paramétrage est adapté aux *hors production* des environnements tels que pour le développement et/ou la démonstration.
 
@@ -71,7 +71,7 @@ Cela démarre un serveur MongoDB à l’aide du port par défaut 27017.
 >
 >Si MongoDB est démarré *after* AEM, **restart** all **AEM** afin qu’elles se connectent correctement à MongoDB.
 
-### Option de production de démonstration : Configuration d’un jeu de Secondaires MongoDB {#demo-production-option-setup-mongodb-replica-set}
+### Option de production de démonstration : configuration d’un jeu de Secondaires MongoDB {#demo-production-option-setup-mongodb-replica-set}
 
 Les commandes suivantes constituent un exemple de configuration d’un ensemble de réplication avec 3 noeuds sur localhost :
 
@@ -114,7 +114,7 @@ Pour configurer une collection Solr pour MSRP à des fins de démonstration, deu
 
 ### Solr autonome {#standalone-solr}
 
-La méthode d’exécution de Solr peut varier en fonction de la version et du mode d’installation. Le [Guide de référence Solr](https://archive.apache.org/dist/lucene/solr/ref-guide/) est la documentation faisant autorité.
+La méthode d’exécution de Solr peut varier en fonction de la version et du mode d’installation. La variable [Guide de référence Solr](https://archive.apache.org/dist/lucene/solr/ref-guide/) est la documentation faisant autorité.
 
 Pour plus de simplicité, à l’aide de la version 4.10, démarrez Solr en mode autonome :
 
@@ -143,11 +143,11 @@ Lancez les instances d’AEM de création et de publication, si nécessaire.
 
 Si AEM était en cours d’exécution avant le démarrage de MongoDB, les instances AEM doivent être redémarrées.
 
-Suivez les instructions de la page de documentation principale : [MSRP - Magasin commun MongoDB](msrp.md)
+Suivez les instructions de la page de documentation principale : [MSRP - MongoDB Common Store](msrp.md)
 
 ## Tester {#test}
 
-Pour tester et vérifier le magasin commun MongoDB, publiez un commentaire sur l’instance de publication et affichez-le sur l’instance d’auteur, ainsi que le contenu créé par l’utilisateur dans MongoDB et Solr :
+Pour tester et vérifier le magasin commun MongoDB, publiez un commentaire sur l’instance de publication et affichez-le sur l’instance d’auteur, puis affichez le contenu généré par l’utilisateur dans MongoDB et Solr :
 
 1. Sur l’instance de publication, accédez à la [Guide des composants de communauté](http://localhost:4503/content/community-components/en/comments.html) et sélectionnez le composant Commentaires .
 1. Connectez-vous pour publier un commentaire :
@@ -159,7 +159,7 @@ Pour tester et vérifier le magasin commun MongoDB, publiez un commentaire sur l
 
    ![view-comment](assets/view-comment.png)
 
-   Remarque : Bien qu’il existe des noeuds JCR sous *asipath* sur l’auteur, ces noeuds sont destinés à la structure SCF. Le contenu généré par l’utilisateur réel n’est pas dans JCR, mais dans MongoDB.
+   Remarque : Bien qu’il existe des noeuds JCR sous la propriété *asipath* sur l’auteur, ces noeuds sont destinés à la structure SCF. Le contenu généré par l’utilisateur réel n’est pas dans JCR, mais dans MongoDB.
 
 1. Afficher le contenu généré par l’utilisateur dans mongodb **[!UICONTROL Communautés]** > **[!UICONTROL Collections]** > **[!UICONTROL Contenu]**
 

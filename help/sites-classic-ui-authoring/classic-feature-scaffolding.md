@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1427'
 ht-degree: 58%
 
 ---
@@ -163,4 +163,4 @@ Après le déverrouillage, vous pouvez restaurer l’héritage en cliquant sur l
 
 >[!NOTE]
 >
->Si l’héritage est annulé au niveau de la page (à partir de l’onglet Live Copy des Propriétés de la page), tous les composants seront modifiables dans **Génération de modèles automatique** mode (ils s’affichent à l’état déverrouillé).
+>Si l’héritage est annulé au niveau de la page (à partir de l’onglet Live Copy des Propriétés de la page), tous les composants sont modifiables dans **Génération de modèles automatique** (elles s’affichent à l’état déverrouillé).

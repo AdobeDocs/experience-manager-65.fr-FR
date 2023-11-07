@@ -9,10 +9,10 @@ topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '6503'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,6 @@ Cet environnement intègre le contenu que vous mettez à la disposition de vos u
 >
 >* Une fois l’optimisation des performances configurée, suivez les procédures dans [Tough Day](/help/sites-developing/tough-day.md) pour tester l’environnement en le soumettant à une charge importante.
 >* Consultez également la section [Conseils pour le réglage des performances.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=fr)
-
 
 ## Méthodologie d’optimisation des performances {#performance-optimization-methodology}
 
@@ -82,7 +81,7 @@ La simulation de la réalité est difficile et les efforts que vous êtes prêt 
 
 L’importance d’établir correctement les objectifs de performances ne doit pas être sous-estimée. Souvent, une fois que les personnes se concentrent sur des objectifs de performances précis, il est très difficile de modifier ces objectifs par la suite, même s’ils sont basés sur des hypothèses.
 
-L’établissement d’objectifs de performances réalisables et viables est vraiment l’un des aspects les plus délicats. Il est souvent préférable de collecter les références et les données réelles d’un site web comparable (par exemple le prédécesseur du nouveau site web).
+L’établissement d’objectifs de performances réalisables et viables est vraiment l’un des aspects les plus délicats. Il est souvent préférable de collecter les données réelles et les références d&#39;un site Web comparable (par exemple, le prédécesseur du nouveau site Web).
 
 ### Maintenir la pertinence {#stay-relevant}
 
@@ -387,9 +386,9 @@ Dans les deux cas, vous pouvez définir le nombre de transactions attendu par se
 | Composant | Type de test | Nombre d’utilisateurs | T/s (attendu) | T/s (testé) | Description |
 |---|---|---|---|---|---|
 | Page d’accueil - Utilisateur unique | Moyenne | 1 | 1 |  |  |
-|  | Crête | 1 | 3 |  |  |
+|   | Crête | 1 | 3 |  |  |
 | Page d’accueil 100 utilisateurs | Moyenne | 100 | 3 |  |  |
-|  | Crête | 100 | 3 |  |
+|   | Crête | 100 | 3 |  |
 
 #### Tests combinés des composants {#combined-component-tests}
 
@@ -398,15 +397,15 @@ Le test combiné des composants permet de mieux visualiser le comportement des a
 | Scénario | Composant | Nombre d’utilisateurs | T/s (attendu) | T/s (testé) | Description |
 |---|---|---|---|---|---|
 | Moyenne mixte | Page d’accueil | 10 | 1 |  |  |
-|  | Rechercher | 10 | 1 |  |  |
-|  | Actualités | 10 | 2 |  |  |
-|  | Événements | 10 | 1 |  |  |
-|  | Activations | 10 | 3 |  | Simulation du comportement de l’auteur. |
+|   | Rechercher | 10 | 1 |  |  |
+|   | Actualités | 10 | 2 |  |  |
+|   | Événements | 10 | 1 |  |  |
+|   | Activations | 10 | 3 |  | Simulation du comportement de l’auteur. |
 | Pic mixte | Page d’accueil | 100 | 5 |  |  |
-|  | Rechercher | 50 | 5 |  |  |
-|  | Actualités | 100 | 10 |  |  |
-|  | Événements | 100 | 10 |  |  |
-|  | Activations | 20 | 20 |  | Simulation du comportement de l’auteur. |
+|   | Rechercher | 50 | 5 |  |  |
+|   | Actualités | 100 | 10 |  |  |
+|   | Événements | 100 | 10 |  |  |
+|   | Activations | 20 | 20 |  | Simulation du comportement de l’auteur. |
 
 #### Tests en ligne {#going-live-tests}
 
@@ -415,10 +414,10 @@ Au cours des premiers jours suivant la mise en ligne de votre site web, attendez
 | Scénario | Type de test | Nombre d’utilisateurs | T/s (attendu) | T/s (testé) | Description |
 |---|---|---|---|---|---|
 | Pic de mise en service | Page d’accueil | 200 | 20 |  |  |
-|  | Rechercher | 100 | 10 |  |  |
-|  | Actualités | 200 | 20 |  |  |
-|  | Événements | 200 | 20 |  |  |
-|  | Activations | 20 | 20 |  | Simulation du comportement de l’auteur. |
+|   | Rechercher | 100 | 10 |  |  |
+|   | Actualités | 200 | 20 |  |  |
+|   | Événements | 200 | 20 |  |  |
+|   | Activations | 20 | 20 |  | Simulation du comportement de l’auteur. |
 
 #### Tests de scénario d’erreur {#error-scenario-tests}
 
@@ -432,9 +431,9 @@ Lors de la conception de ces tests, il faut se rappeler que tous les scénarios 
 | Scénario d’erreur | Type d’erreur | Nombre d’utilisateurs | T/s (attendu) | T/s (testé) | Description |
 |---|---|---|---|---|---|
 | Surcharge des composants de recherche | Recherche sur un caractère générique (astérisque) | 10 | 1 |  | Seul les &amp;ast;&amp;ast;&amp;ast; sont recherchées. |
-|  | Mot de fin | 20 | 2 |  | Recherche d’un mot de fin. |
-|  | Chaîne vide | 10 | 1 |  | Recherche d’une chaîne vide. |
-|  | Caractères spéciaux | 10 | 1 |  | Recherche de caractères spéciaux. |
+|   | Mot de fin | 20 | 2 |  | Recherche d’un mot de fin. |
+|   | Chaîne vide | 10 | 1 |  | Recherche d’une chaîne vide. |
+|   | Caractères spéciaux | 10 | 1 |  | Recherche de caractères spéciaux. |
 
 #### Tests d’endurance {#endurance-tests}
 
@@ -443,10 +442,10 @@ Certains problèmes ne sont rencontrés qu’après une exécution du système p
 | Scénario | Type de test | Nombre d’utilisateurs | T/s (attendu) | T/s (testé) | Description |
 |---|---|---|---|---|---|
 | Test d’endurance (72 heures) | Page d’accueil | 10 | 1 |  |  |
-|  | Rechercher | 10 | 1 |  |  |
-|  | Actualités | 20 | 2 |  |  |
-|  | Événements | 10 | 1 |  |  |
-|  | Activations | 1 | 3 |  | Simulation du comportement de l’auteur. |
+|   | Rechercher | 10 | 1 |  |  |
+|   | Actualités | 20 | 2 |  |  |
+|   | Événements | 10 | 1 |  |  |
+|   | Activations | 1 | 3 |  | Simulation du comportement de l’auteur. |
 
 ### Optimisation {#optimization}
 
@@ -496,6 +495,7 @@ Le Dispatcher propose un certain nombre de mécanismes intégrés que vous pouve
 >En général, de nombreuses stratégies de mise en cache impliquent de sélectionner les URL appropriées et de ne pas s’en tenir à ces données supplémentaires.
 >
 >Avec la version 4.1.11 du Dispatcher, vous pouvez également mettre en cache les en-têtes de réponse, consultez [Mise en cache des en-têtes de réponse HTTP](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring-the-dispatcher-cache-cache).
+>
 
 ### Calcul du ratio de cache du Dispatcher {#calculating-the-dispatcher-cache-ratio}
 

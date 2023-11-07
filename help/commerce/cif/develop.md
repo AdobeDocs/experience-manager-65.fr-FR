@@ -7,16 +7,16 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 48479725-8b52-4ff2-a599-d20958b26ee6
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 98%
+source-wordcount: '869'
+ht-degree: 95%
 
 ---
 
 # Développeur d’AEM Commerce {#develop}
 
-Le développement de projets AEM Commerce basés sur Commerce Integration Framework (CIF) pour AEM suit les mêmes règles et bonnes pratiques que les autres projets d’AEM. Veuillez d’abord examiner les éléments suivants :
+Le développement de projets AEM Commerce basés sur Commerce Integration Framework (CIF) pour AEM suit les mêmes règles et bonnes pratiques que les autres projets d’AEM. Commencez par les examiner :
 
 - [Guide de l’utilisateur pour le développement d’AEM 6.5](/help/sites-developing/home.md)
 - [Concepts de base d’AEM](/help/sites-developing/the-basics.md)
@@ -29,7 +29,7 @@ Un environnement de développement local est recommandé pour travailler avec de
 
 >[!NOTE]
 >
->Les instructions suivantes vous aident à configurer un environnement de développement d’AEM local pour AEM Commerce à l’aide de CIF avec la cible d’action pour la version 6.5 d’AEM). Si vous utilisez AEM as a Cloud Service, reportez-vous à la documentation [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=fr).
+>Les instructions suivantes vous aident à configurer un environnement de développement d’AEM local pour AEM Commerce à l’aide de CIF avec la cible d’action pour la version 6.5 d’AEM). Si vous utilisez AEM as a Cloud Service, reportez-vous au [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=fr) la documentation.
 
 Le module complémentaire AEM Commerce pour AEM 6.5, alias CIF, est également disponible pour le développement local et est fourni sous la forme d’un package AEM. Il peut être téléchargé à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) en tant que pack de fonctionnalités.
 

@@ -1,20 +1,16 @@
 ---
 title: Création de modèles de workflow
-seo-title: Creating Workflow Models
-description: Vous créez un modèle de workflow pour définir les étapes exécutées lorsqu’un utilisateur ou une utilisatrice lance le workflow.
-seo-description: You create a workflow model to define the series of steps executed when a user starts the workflow.
-uuid: 31071d3a-d6d5-4476-9ac0-7b335de406d9
+description: Vous créez un modèle de workflow pour définir la série d’étapes qui sont exécutées lorsqu’un utilisateur lance le workflow.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2463'
-ht-degree: 49%
+source-wordcount: '2451'
+ht-degree: 48%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 49%
 
 >[!CAUTION]
 >
->Pour utiliser l’IU classique, reportez-vous à la section [Documentation AEM 6.3](https://helpx.adobe.com/fr/experience-manager/6-3/help/sites-developing/workflows-models.html) à titre de référence.
+>Pour utiliser l’IU classique, voir la section [Documentation AEM 6.3](https://helpx.adobe.com/fr/experience-manager/6-3/help/sites-developing/workflows-models.html) à titre de référence.
 
 Vous créez un [modèle de workflow](/help/sites-developing/workflows.md#model) pour définir les étapes exécutées lorsqu’un utilisateur lance le workflow. Vous pouvez également définir des propriétés de modèle pour déterminer, par exemple, si le workflow est transitoire ou s’il utilise plusieurs ressources.
 
@@ -30,14 +26,14 @@ Lorsqu’un utilisateur démarre un workflow, une instance est lancée. Il s’a
 
 ## Création d’un workflow {#creating-a-new-workflow}
 
-Lorsque vous créez un modèle de workflow pour la première fois, il contient :
+Lorsque vous créez un modèle de processus pour la première fois, il contient :
 
 * Les étapes **Début de flux** et **Fin de flux**.
 Ces étapes représentent le début et la fin du workflow. Elles sont obligatoires et ne peuvent pas être modifiées ni supprimées.
 * Un exemple d’étape **Participant**, dont le nom est **Étape 1**.
 Cette étape est configurée pour affecter un élément de travail à l’initiateur de workflow. Vous pouvez modifier ou supprimer cette étape et y ajouter d’autres étapes suivant les besoins.
 
-Pour créer un workflow avec l’éditeur, procédez comme suit :
+Pour créer un workflow avec l’éditeur :
 
 1. Ouvrez la console **Modèles de workflow** via **Outils**, **Workflow**, **Modèles**, ou, par exemple : [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow).
 1. Sélectionnez **Créer**, puis **Créer un modèle**.
@@ -86,9 +82,9 @@ Lorsque vous ouvrez une [Modèle par défaut et/ou hérité](/help/sites-develop
 * le navigateur d’étapes n’est pas disponible (côté gauche) ;
 * une action **Modifier** est disponible dans la barre d’outils (côté droit).
 * Au départ, le modèle et ses propriétés sont présentés en mode lecture seule comme suit :
-   * Les workflow par défaut sont situés dans `/libs`.
-   * Les workflow hérités sont situés dans `/etc`.
- En sélectionnant **Modifier** :
+   * Les workflows par défaut sont dans `/libs`
+   * Les workflows hérités se trouvent dans `/etc`
+Sélection **Modifier** Will :
 * une copie du workflow est réalisée dans `/conf` ;
 * le navigateur d’étapes devient accessible ;
 * vous pourrez effectuer des modifications.
@@ -101,7 +97,7 @@ Lorsque vous ouvrez une [Modèle par défaut et/ou hérité](/help/sites-develop
 
 ### Ajout d’une étape à un modèle {#adding-a-step-to-a-model}
 
-Vous devrez ajouter des étapes à votre modèle pour représenter l’activité à exécuter : chaque étape effectue une activité spécifique. Une sélection de composants d’étape est disponible dans une instance d’AEM standard.
+Vous devez ajouter des étapes à votre modèle pour représenter l’activité à exécuter : chaque étape effectue une activité spécifique. Une sélection de composants d’étape est disponible dans une instance d’AEM standard.
 
 Lorsque vous modifiez un modèle, les étapes disponibles s’affichent dans les différents groupes du **Explorateur d’étapes**. Par exemple :
 
@@ -328,7 +324,7 @@ Vous pouvez également configurer les AEM à afficher **DEBUG** messages dans le
 
 Pour illustrer certaines des possibilités de création d’un workflow, l’exemple suivant crée une variante du workflow `Publish Example`.
 
-1. [Créez un modèle de workflow](#creating-a-new-workflow).
+1. [Créer un modèle de processus](#creating-a-new-workflow).
 
    Le nouveau workflow contiendra :
 

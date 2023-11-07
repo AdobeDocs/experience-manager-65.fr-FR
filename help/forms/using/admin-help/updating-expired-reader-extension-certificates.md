@@ -2,10 +2,10 @@
 title: Expiration des certificats Reader Extensions et son impact
 description: Expiration des certificats Reader Extensions et son impact
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: 6e9a7f3307ed05f887d60c7c7310100cd4596b23
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '1121'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Les client(e)s Adobe Experience Manager Forms (AEM Forms) disposant de licences Adobe Managed Services ou On-premise Enterprise Base ont le droit d’utiliser le service Extensions d’Acrobat Reader DC. Le service permet à une organisation de partager facilement des documents PDF interactifs en optimisant la fonctionnalité d’Acrobat Reader avec des droits d’utilisation supplémentaires. Le service ajoute des droits d’utilisation à un document PDF et active des fonctionnalités qui ne sont généralement pas disponibles à l’ouverture d’un document PDF dans Adobe Acrobat Reader, comme l’ajout de commentaires dans un document, le remplissage de formulaires et l’enregistrement du document. Les utilisateurs tiers n’ont pas besoin de disposer d’un logiciel supplémentaire ni de modules externes pour utiliser les documents définis avec des droits d’utilisation. Les documents PDF dotés de droits d’utilisation sont appelés des documents dont les droits sont activés. Un utilisateur ou une utilisatrice qui ouvre un document PDF dont les droits sont activés dans Acrobat Reader peut effectuer les opérations qui sont autorisées pour ce document.
 
-Adobe exploite une infrastructure à clé publique (PKI) pour émettre les certificats numériques à utiliser dans le cadre de l’activation de licences et de fonctionnalités. Adobe a émis des certificats sous l’autorité de certification **Adobe Root CA**, qui arrivera à expiration le 7 janvier 2023. L’expiration de certificat n’a aucune incidence sur les documents PDF étendus utilisant des certificats de type Production émis à partir des certificats basés sur **Adobe Root CA** (anciens certificats). Tous les documents PDF dotés d’extensions Reader utilisant des anciens certificats avant le 7 janvier 2023, y compris ceux téléchargés par vos clientes et clients, continueront à fonctionner avec tous les droits d’utilisation qui leur sont appliqués et ne nécessitent aucune mise à jour.
+Adobe utilise une infrastructure à clé publique (PKI) pour émettre des certificats numériques à utiliser dans les licences et l’activation des fonctionnalités. Adobe a émis des certificats sous l’autorité de certification **Adobe Root CA**, qui arrivera à expiration le 7 janvier 2023. L’expiration de certificat n’a aucune incidence sur les documents PDF étendus utilisant des certificats de type Production émis à partir des certificats basés sur **Adobe Root CA** (anciens certificats). Tous les documents PDF dotés d’extensions Reader utilisant des anciens certificats avant le 7 janvier 2023, y compris ceux téléchargés par vos clientes et clients, continueront à fonctionner avec tous les droits d’utilisation qui leur sont appliqués et ne nécessitent aucune mise à jour.
 
 Une nouvelle autorité de certification, **Adobe Root CA G2**, et des certificats basés sur la nouvelle autorité de certification sont désormais disponibles. Commencez à utiliser les nouveaux certificats avant ou à partir du 7 janvier 2023, ceux basés sur **Adobe Root CA G2**, pour doter vos nouveaux documents PDF de l’extension Reader.  Vous pouvez [obtenir de nouveaux certificats à partir du site Adobe Licensing Website](https://licensing.adobe.com/) ou de l’assistance d’Adobe.
 
@@ -178,7 +178,7 @@ The following command list the details of the pfx file. Before running the comma
 
 `keytool -v -list -storetype pkcs12 -keystore [name of your .pfx file]`
 
-For example keytool -v -list -storetype pkcs12 -keystore 1005566.pfx where 1005566.pfx is the name of my pfx file
+For example, keytool -v -list -storetype pkcs12 -keystore 1005566.pfx where 1005566.pfx is the name of my pfx file
 
 <!-- ### Remove usage rights from existing rights-enabled PDF documents
 

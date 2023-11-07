@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 89%
+source-wordcount: '1304'
+ht-degree: 86%
 
 ---
 
@@ -24,7 +24,7 @@ Cela évite d’avoir à développer un composant personnalisé pour chaque styl
 
 ## Cas d’utilisation {#use-case}
 
-Les créateurs et créatrices de modèles doivent non seulement pouvoir configurer le fonctionnement des composants pour les créateurs et créatrices de contenu, mais aussi configurer un certain nombre de variantes visuelles d’un composant.
+Les créateurs de modèles doivent non seulement pouvoir configurer le fonctionnement des composants pour les créateurs de contenu, mais aussi configurer plusieurs variantes visuelles d’un composant.
 
 De même, les créateurs et créatrices de contenu doivent non seulement pouvoir structurer et organiser leur contenu, mais aussi sélectionner la manière dont il est présenté visuellement.
 
@@ -111,7 +111,7 @@ Si vous souhaitez utiliser le système de style pour vos propres composants, pro
 
 >[!CAUTION]
 >
->Les classes CSS (ainsi que tout code JavaScript nécessaire) configurées en tant que propriétés de style d’une stratégie de composant doivent être déployées comme [Bibliothèques clientes](/help/sites-developing/clientlibs.md) au travail.
+>Les classes CSS (et tout code JavaScript nécessaire) configurées en tant que propriétés de style d’une stratégie de composant doivent être déployées comme [Bibliothèques clientes](/help/sites-developing/clientlibs.md) au travail.
 
 ## Configuration {#setup}
 
@@ -160,4 +160,4 @@ Cette propriété est définie sur le nœud `cq:Component`. Par exemple :
 
 Cette possibilité de définir des noms de style est utile pour les composants très génériques, tels que le conteneur de mises en page ou le composant Fragment de contenu, afin de leur donner une signification supplémentaire.
 
-Cela permet, par exemple, d’attribuer au conteneur de dispositions des balises comme `<main>`, `<aside>`, `<nav>`, etc.
+Par exemple, il permet d’attribuer une sémantique à un conteneur de mises en page, comme `<main>`, `<aside>`, `<nav>`, etc.

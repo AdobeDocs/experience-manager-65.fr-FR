@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2753'
-ht-degree: 44%
+source-wordcount: '2749'
+ht-degree: 43%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 44%
 
 Vous pouvez créer le contenu d’un e-mail dans AEM et le traiter dans les e-mails Adobe Campaign. À cet effet, vous devez suivrez cette procédure :
 
-1. Créez une newsletter dans AEM à partir d’un modèle spécifique à Adobe Campaign.
+1. Créez une newsletter dans AEM depuis un modèle spécifique à Adobe Campaign.
 1. Sélectionner [un service Adobe Campaign ;](#selecting-the-adobe-campaign-cloud-service-and-template) avant de modifier le contenu pour accéder à toutes les fonctionnalités.
 1. Modifiez le contenu.
 1. Validez le contenu.
@@ -55,7 +55,7 @@ Des instructions détaillées sont présentées dans ce document.
 
    >[!NOTE]
    >
-   >[Les exemples d’e-mails ne sont disponibles que dans Geometrixx](/help/sites-developing/we-retail.md). Téléchargez un exemple de contenu Geometrixx à partir du partage de packages.
+   >[Les exemples d’e-mails ne sont disponibles que dans Geometrixx](/help/sites-developing/we-retail.md). Téléchargez un exemple de contenu de Geometrixx à partir de Package Share.
 
    ![chlimage_1-15](assets/chlimage_1-15a.png)
 
@@ -257,7 +257,7 @@ Si une newsletter est liée à plusieurs diffusions, le nombre de diffusions li�
 
 Pour lier une page créée dans AEM à un e-mail Adobe Campaign, suivez les étapes suivantes :
 
-1. Créez un e-mail en utilisant un modèle d’e-mail spécifique à AEM. Pour plus d’informations, reportez-vous à la section [Création d’e-mails dans Adobe Campaign Standard](https://helpx.adobe.com/fr/campaign/standard/channels/using/creating-an-email.html).
+1. Créez un email basé sur un modèle d&#39;email spécifique à une AEM. Pour plus d’informations, reportez-vous à la section [Création d’e-mails dans Adobe Campaign Standard](https://helpx.adobe.com/fr/campaign/standard/channels/using/creating-an-email.html).
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 
@@ -351,13 +351,13 @@ Pour synchroniser le contenu créé dans AEM avec une diffusion depuis Adobe Cam
 
    ![chlimage_1-42](assets/chlimage_1-42a.png)
 
-1. Indiquez les autres paramètres de votre diffusion (cible, etc.)
-1. Au besoin, lancez le processus de validation de la diffusion dans Adobe Campaign. La validation du contenu dans AEM est nécessaire en plus des validations paramétrées dans Adobe Campaign (budget, cible, etc.). La validation du contenu dans Adobe Campaign n&#39;est possible que si le contenu a déjà été validé dans AEM.
+1. Spécifiez les autres paramètres de votre diffusion (cible, etc.)
+1. Au besoin, lancez le processus de validation de la diffusion dans Adobe Campaign. La validation du contenu dans AEM est nécessaire en plus des validations configurées dans Adobe Campaign (budget, cible, etc.). La validation du contenu dans Adobe Campaign n&#39;est possible que si le contenu a déjà été validé dans AEM.
 1. Exécutez la diffusion. Lors de l&#39;analyse de la diffusion, la version la plus récente du contenu AEM est récupérée.
 
    >[!NOTE]
    >
-   * Une fois la diffusion et le contenu synchronisés, le contenu de la diffusion dans Adobe Campaign devient en lecture seule. L&#39;objet de l&#39;email ainsi que son contenu ne peuvent plus être modifiés.
+   * Une fois la diffusion et le contenu synchronisés, le contenu de la diffusion dans Adobe Campaign devient en lecture seule. L&#39;objet de l&#39;email et son contenu ne peuvent plus être modifiés.
    * Si le contenu est mis à jour dans AEM lorsqu&#39;il est lié à une diffusion dans Adobe Campaign, il est automatiquement mis à jour dans la diffusion lors de l&#39;analyse de la diffusion. La synchronisation peut également être exécutée manuellement à l’aide du bouton **Actualiser le contenu maintenant**.
    * Vous pouvez annuler la synchronisation entre une diffusion et le contenu d’AEM à l’aide du bouton **Désynchroniser**. Cette option n’est disponible que si un contenu est déjà synchronisé avec la diffusion. Pour synchroniser un contenu différent avec une diffusion, vous devez annuler la synchronisation de contenu actuelle avant de pouvoir établir un nouveau lien.
    * Si le contenu local est désynchronisé, il est conservé et peut être modifié dans Adobe Campaign. Si vous resynchronisez le contenu après l’avoir modifié, vous perdrez toutes vos modifications.

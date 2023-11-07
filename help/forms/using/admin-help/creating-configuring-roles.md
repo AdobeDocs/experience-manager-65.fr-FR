@@ -1,7 +1,7 @@
 ---
 title: Créer et configurer des rôles
 seo-title: Creating and configuring roles
-description: Découvrez comment associer des utilisateurs et des groupes à des rôles qui font déjà partie de la base de données User Management. Vous pouvez également créer, modifier et supprimer des rôles.
+description: Découvrez comment associer des utilisateurs et des groupes à des rôles déjà intégrés à la base de données User Management. Vous pouvez également créer, modifier et supprimer des rôles.
 seo-description: Learn how to associate users and groups with roles that are already part of the User Management database. You can also create, edit, and delete roles.
 uuid: e8e4331d-48e1-4fa9-8f44-f885f4ab1a54
 contentOwner: admin
@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 737fb4d1-adef-47e1-9a0d-8cddd13132cb
 exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2523'
 ht-degree: 54%
 
 ---
@@ -151,7 +151,7 @@ Vous pouvez supprimer les rôles que vous avez créés, mais pas les rôles d’
 ## Attribution d’un rôle aux utilisateurs et aux groupes {#assign-a-role-to-users-and-groups}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Utilisateurs et groupes.
-1. Indiquez les informations pour affiner la recherche et cliquez sur Rechercher. Les résultats de la recherche apparaissent au bas de la page. Vous pouvez trier la liste en cliquant sur l’un des en-têtes de colonne.
+1. Indiquez les informations permettant d’affiner la recherche, puis cliquez sur Rechercher. Les résultats de la recherche apparaissent au bas de la page. Vous pouvez trier la liste en cliquant sur l’un des en-têtes de colonne.
 1. Cochez les cases en regard des utilisateurs et des groupes à associer à un rôle, puis cliquez sur Attribuer un rôle.
 1. Sélectionnez le rôle à affecter à l’utilisateur ou au groupe, puis cliquez sur OK.
 
@@ -201,7 +201,7 @@ Vous pouvez modifier les autorisations de l’un des rôles que vous avez créé
 
 **Contrôle des paramètres principaux :** permet de gérer les paramètres de la page Paramètres principaux du système dans la console d’administration.
 
-**CREATE_VERSION_PERM :** permet de créer une nouvelle version du service.
+**CREATE_VERSION_PERM :** Création d’une version d’un service
 
 **Modifier les informations d’identification :** permet de modifier toute information d’identification de signature dans Trust Store.
 
@@ -348,7 +348,7 @@ Pour afficher le contenu de l’affichage Ressources dans Workbench et ouvrir le
 * Service Invoke
 * Service Read
 
-## Suppression d’un utilisateur ou d’un groupe d’un rôle {#remove-a-user-or-group-from-a-role}
+## Supprimer un utilisateur ou un groupe d’un rôle {#remove-a-user-or-group-from-a-role}
 
 Utilisez la page Gestion des rôles pour supprimer des utilisateurs et des groupes d’un rôle particulier. Si l’utilisateur ou le groupe a hérité de l’affectation du rôle, vous ne pouvez pas le supprimer au niveau de l’utilisateur ou du groupe. Supprimez l’utilisateur ou le groupe de l’arborescence d’héritage ou supprimez le rôle du parent.
 

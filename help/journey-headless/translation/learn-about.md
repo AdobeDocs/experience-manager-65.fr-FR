@@ -2,10 +2,10 @@
 title: En savoir plus sur le contenu découplé et comment le traduire dans AEM
 description: Apprenez les concepts du découplage, en quoi ils s’appliquent à AEM et la théorie de la traduction dans AEM.
 exl-id: cb2e2d89-e2d2-462f-8fff-b201847d0641
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 98%
+source-wordcount: '758'
+ht-degree: 94%
 
 ---
 
@@ -20,9 +20,9 @@ Ce document vous aide à comprendre la diffusion de contenu découplé, comment 
 * comprendre les concepts de base de la diffusion de contenus en mode découplé ;
 * être familiarisé avec la façon dont AEM prend en charge le découplage et la traduction.
 
-## Diffusion de contenu full stack {#full-stack}
+## Diffusion de contenu full-stack {#full-stack}
 
-Depuis l’émergence des systèmes de gestion de contenu (CMS) à grande échelle et faciles d’utilisation, les entreprises les utilisent comme emplacement central pour la gestion des messages, des marques et de leur communication. L’utilisation d’un CMS comme point central pour administrer les expériences a permis des gains d’efficacité en éliminant la nécessité de dupliquer les tâches dans des systèmes disparates.
+Depuis l’émergence des systèmes de gestion de contenu (CMS) à grande échelle et faciles d’utilisation, les organisations les utilisent comme emplacement central pour la gestion des messages, de leur image de marque et de leur communication. L’utilisation d’un CMS comme point central pour administrer les expériences a permis des gains d’efficacité en éliminant la nécessité de dupliquer les tâches dans des systèmes disparates.
 
 ![CMS full stack classique](/help/journey-headless/developer/assets/full-stack.png)
 
@@ -47,7 +47,7 @@ Lorsque nous parlons d’un CMS découplé (ou sans tête), il s’agit d’un s
 
 ![CMS découplé](/help/journey-headless/developer/assets/headless-cms.png)
 
-Les services consommateurs (expériences de réalité augmentée, boutiques web, expériences mobiles, applications web progressives (PWA), etc.) récupèrent le contenu du CMS découplé et fournissent leur propre rendu. Ils se chargent de fournir leurs propres têtes à votre contenu.
+Les services consommateurs, qu’il s’agisse d’expériences AR, d’un magasin web, d’expériences mobiles, d’applications web progressives (PWA), etc., récupèrent le contenu du CMS sans interface et fournissent leur propre rendu. Ils se chargent de fournir leurs propres têtes à votre contenu.
 
 Omettre la tête (en mode découplé) permet de simplifier le CMS en éliminant sa complexité. Vous pouvez ainsi transférer la responsabilité de rendu du contenu vers les services qui en ont réellement besoin et qui sont souvent mieux adaptés pour cela.
 

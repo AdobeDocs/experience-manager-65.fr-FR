@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3310'
-ht-degree: 70%
+source-wordcount: '3306'
+ht-degree: 74%
 
 ---
 
@@ -71,7 +71,7 @@ Le diagramme suivant explique tous les paramètres de requête masqués, mais pu
 
 ### Sling est centré sur le contenu {#sling-is-content-centric}
 
-Sling est *centré sur le contenu*. Cela signifie que le traitement est axé sur le contenu, car chaque requête (HTTP) est mappée sur le contenu sous la forme d’une ressource JCR (un nœud de référentiel) :
+Sling est *axé sur le contenu*. Cela signifie que le traitement est axé sur le contenu, car chaque requête (HTTP) est mappée sur le contenu sous la forme d’une ressource JCR (un nœud de référentiel) :
 
 * La première cible est la ressource (nœud JCR) qui contient le contenu.
 * ensuite, la représentation, ou le script, se trouve à partir des propriétés de ressource combinées à certaines parties de la requête (par exemple, les sélecteurs et/ou l’extension).
@@ -80,7 +80,7 @@ Sling est *centré sur le contenu*. Cela signifie que le traitement est axé sur
 
 En raison de son approche centrée sur le contenu, Sling implémente un serveur orienté REST et propose ainsi un nouveau concept dans les frameworks d’applications web. Les avantages sont les suivants :
 
-* RESTful, pas seulement en surface ; les ressources et les représentations sont correctement modélisées à l’intérieur du serveur
+* Niveau RESTful, et pas seulement en surface ; les ressources et les représentations sont correctement modélisées dans le serveur
 * Supprime un ou plusieurs modèles de données.
 
    * Auparavant, les éléments suivants étaient nécessaires : structure de l’URL, objets métier, schéma de base de données ;
@@ -88,7 +88,7 @@ En raison de son approche centrée sur le contenu, Sling implémente un serveur 
 
 ### Décomposition d’URL {#url-decomposition}
 
-Dans Sling, le traitement est piloté par l’URL de la requête de l’utilisateur. C’est l’URL qui définit le contenu à afficher par les scripts appropriés. Pour ce faire, les informations sont extraites de l’URL.
+Dans Sling, le traitement est piloté par l’URL de la requête utilisateur. C’est l’URL qui définit le contenu à afficher par les scripts appropriés. Pour ce faire, les informations sont extraites de l’URL.
 
 Si vous analysez l’URL suivante :
 
@@ -96,7 +96,7 @@ Si vous analysez l’URL suivante :
 https://myhost/tools/spy.printable.a4.html/a/b?x=12
 ```
 
-Vous pouvez le diviser en plusieurs parties composites :
+Nous pouvons la diviser en plusieurs parties composites :
 
 | protocol | host | content path | selectors | Extension |  | Suffixe |  | params |
 |---|---|---|---|---|---|---|---|---|
@@ -106,7 +106,7 @@ Vous pouvez le diviser en plusieurs parties composites :
 
 **host** Nom du site web.
 
-**content path** Chemin d’accès spécifiant le contenu à rendre. Utilisé avec l’extension . Dans cet exemple, ils traduisent en `tools/spy.html`.
+**chemin du contenu** Chemin spécifiant le contenu à rendre. Utilisé avec l’extension . Dans cet exemple, ils traduisent en `tools/spy.html`.
 
 **selectors** Utilisé pour d’autres méthodes de rendu du contenu ; dans cet exemple, une version imprimable au format A4.
 
@@ -183,7 +183,7 @@ En reprenant l’exemple ci-dessus, si `sling:resourceType` est `hr/jobs` alors 
 
   Par exemple, `../content/corporate/jobs/developer.pdf`
 
-  Le script est `/apps/hr/jobs/jobs.pdf.esp`; le suffixe est ajouté au nom du script.
+  Le script est `/apps/hr/jobs/jobs.pdf.esp` ; le suffixe est ajouté au nom du script.
 
 * URL avec sélecteurs
 
@@ -191,7 +191,7 @@ En reprenant l’exemple ci-dessus, si `sling:resourceType` est `hr/jobs` alors 
 
   Si vous observez une version imprimable où le sélecteur peut être *print*, comme dans `../content/corporate/jobs/developer.print.html`
 
-  Le script est `/apps/hr/jobs/jobs.print.esp`; le sélecteur est ajouté au nom du script.
+  Le script est `/apps/hr/jobs/jobs.print.esp` ; le sélecteur est ajouté au nom du script.
 
 * Si aucun sling:resourceType n’est défini, alors :
 
@@ -217,7 +217,7 @@ Par exemple, envisagez une demande d’accès à la ressource
 de type
 `sling:resourceType="hr/jobs"`.
 
-En supposant que la liste de scripts à l’emplacement correct soit la suivante :
+En supposant que les scripts suivants sont présents au bon emplacement :
 
 1. `GET.esp`
 1. `jobs.esp`
@@ -230,7 +230,7 @@ En supposant que la liste de scripts à l’emplacement correct soit la suivante
 
 L’ordre de préférence serait (8) – (7) – (6) – (5) – (4) – (3) – (2) – (1).
 
-Outre les types de ressources (principalement définis par la variable `sling:resourceType` ), il existe également le super type de ressource. Cela est indiqué par la variable `sling:resourceSuperType` . Ces super types sont aussi pris en compte lors de la recherche d’un script. Les super types de ressources présentent l’avantage de former une hiérarchie de ressources où le type de ressource par défaut `sling/servlet/default` (utilisé par les servlets par défaut) est effectivement la racine.
+En plus des types de ressources (principalement définis par la propriété `sling:resourceType`), il existe également le super type de ressource. Cela est indiqué par la variable `sling:resourceSuperType` . Ces super types sont aussi pris en compte lors de la recherche d’un script. Les super types de ressources présentent l’avantage de former une hiérarchie de ressources où le type de ressource par défaut `sling/servlet/default` (utilisé par les servlets par défaut) est effectivement la racine.
 
 Le super type de ressource d’une ressource peut être défini de deux manières :
 
@@ -276,7 +276,7 @@ Si vous appelez la représentation (le script) directement, vous masquez la ress
 
 * Le traitement automatique des méthodes HTTP autres que GET, notamment :
 
-   * POST, PUT, DELETE qui est géré avec une implémentation par défaut Sling
+   * les méthodes POST, PUT, DELETE qui sont gérées avec une implémentation par défaut de Sling ;
    * le script `POST.jsp` dans votre emplacement sling:resourceType.
 
 * L’architecture de votre code perd de son intégrité et de sa structure qui sont primordiales dans les développements à grande échelle.
@@ -306,7 +306,7 @@ OSGi désigne une architecture permettant de développer et de déployer des app
 
 Ces services et contrats fournissent une architecture qui permet à des éléments particuliers de se découvrir dynamiquement les uns les autres à des fins de collaboration.
 
-Une structure OSGi vous offre ensuite un chargement/déchargement dynamique, une configuration et un contrôle de ces lots, sans nécessiter de redémarrage.
+Un framework OSGi vous offre ensuite le chargement/déchargement dynamique, la configuration et le contrôle de ces lots, sans nécessiter de redémarrage.
 
 >[!NOTE]
 >
@@ -334,7 +334,7 @@ Les éléments suivants présentent un intérêt pour le développement :
 
 **Élément** Un élément est un nœud ou une propriété.
 
-Pour plus d’informations sur la manipulation des objets Item, reportez-vous à la section [Documentation Java™](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) de l’interface javax.jcr.Item
+Pour plus d’informations sur la manipulation des objets Item, voir [Documentation Java™](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) de l’interface javax.jcr.Item
 
 **Nœud (et leurs propriétés)** Les nœuds et leurs propriétés sont définis dans la spécification JCR API 2.0 (JSR 283). Ils stockent le contenu, les définitions d’objets, les scripts de rendu ainsi que d’autres données.
 
@@ -350,7 +350,7 @@ Par exemple, pour obtenir les propriétés du noeud actif, vous pouvez utiliser 
 
 currentNode étant l’objet de noeud actif.
 
-Pour plus d’informations sur la manipulation d’objets Node, reportez-vous à la section [Documentation Java™](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
+Pour plus d’informations sur la manipulation d’objets Node, voir [Documentation Java™](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 **Widget** Dans AEM, toutes les entrées utilisateur sont gérées par des widgets. Ils sont souvent utilisés pour contrôler la modification d’un élément de contenu.
 
@@ -389,7 +389,7 @@ Par exemple, pour obtenir le nom de la page active, vous pouvez utiliser le code
 
 S`tring pageName = currentPage.getName();`
 
-TcurrentPage étant l’objet de page actif. Pour plus d&#39;informations sur la manipulation des objets Page, reportez-vous à la section [Documentation Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
+TcurrentPage étant l’objet de page actif. Pour plus d’informations sur la manipulation des objets Page, voir [Documentation Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Gestionnaire de pages** Le gestionnaire de page est une interface qui fournit des méthodes pour les opérations au niveau de la page.
 
@@ -397,7 +397,7 @@ Par exemple, pour obtenir la page conteneur d’une ressource, vous pouvez utili
 
 Page myPage = pageManager.getContainerPage(myResource) ;
 
-PageManager étant l’objet de gestionnaire de page et myResource un objet de ressource. Pour plus d’informations sur les méthodes fournies par le gestionnaire de page, reportez-vous à la section [Documentation Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
+PageManager étant l’objet de gestionnaire de page et myResource un objet de ressource. Pour plus d’informations sur les méthodes fournies par le gestionnaire de page, voir [Documentation Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Structure dans le référentiel {#structure-within-the-repository}
 
@@ -411,7 +411,7 @@ La liste suivante propose une vue d’ensemble de la structure que vous verrez d
 
 >[!CAUTION]
 >
->Ne modifiez rien dans le chemin d’accès `/libs`. Pour la configuration et d’autres modifications, copiez l’élément depuis `/libs` to `/apps` et apportez toute modification dans `/apps`.
+>Vous ne devez rien modifier dans le chemin `/libs`. Pour la configuration et d’autres modifications, copiez l’élément de `/libs` dans `/apps` et apportez des modifications dans `/apps`.
 
 * `/apps`
 

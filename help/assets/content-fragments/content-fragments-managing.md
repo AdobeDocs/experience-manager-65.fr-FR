@@ -4,10 +4,10 @@ description: Découvrez comment utiliser la console Assets pour gérer vos fragm
 feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1724'
-ht-degree: 97%
+source-wordcount: '1714'
+ht-degree: 94%
 
 ---
 
@@ -52,7 +52,7 @@ La méthode de création d’un fragment de contenu est la suivante :
 1. Pour ouvrir l’assistant, sélectionnez **Créer**, puis **Fragment de contenu**.
 1. La première étape de l’assistant nécessite de spécifier la base du nouveau fragment.
 
-   * [Modèle](/help/assets/content-fragments/content-fragments-models.md) : utilisé pour créer un fragment qui nécessite du contenu structuré, par exemple, le modèle **Adventure**.
+   * [Modèle](/help/assets/content-fragments/content-fragments-models.md) - utilisé pour créer un fragment qui nécessite du contenu structuré ; par exemple, la fonction **Adventure** model
 
       * Tous les modèles disponibles s’affichent.
 
@@ -130,11 +130,11 @@ Pour ouvrir votre fragment à des fins de modification :
 
 >[!CAUTION]
 >
->Pour modifier un fragment de contenu, vous devez disposer des [autorisations appropriées](/help/sites-developing/customizing-content-fragments.md#asset-permissions). En cas de problème, veuillez contacter votre administrateur ou administratrice système.
+>Pour modifier un fragment de contenu, vous devez disposer des [autorisations appropriées](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Si vous rencontrez des problèmes, contactez votre administration système.
 
 >[!CAUTION]
 >
->Pour modifier un fragment de contenu, vous devez disposer des autorisations appropriées. En cas de problème, veuillez contacter votre administrateur ou administratrice système.
+>Pour modifier un fragment de contenu, vous devez disposer des autorisations appropriées. Si vous rencontrez des problèmes, contactez votre administration système.
 
 1. Utilisez la console **Ressources** afin de naviguer jusqu’à l’emplacement de votre fragment de contenu.
 1. Ouvrez le fragment à modifier, en effectuant l’une des opérations suivantes :
@@ -142,7 +142,7 @@ Pour ouvrir votre fragment à des fins de modification :
    * Cliquer/appuyer sur le fragment ou le lien du fragment (cela dépend de l’affichage de la console).
    * Sélectionnez le fragment, puis cliquez sur **Modifier** dans la barre d’outils.
 
-1. L’éditeur de fragment s’ouvre alors. Apportez les modifications nécessaires :
+1. L’éditeur de fragments s’ouvre. Apportez les modifications nécessaires :
 
    ![éditeur de fragment](assets/cfm-managing-03.png)
 
@@ -186,7 +186,7 @@ Certaines fonctions de la barre d’outils supérieure sont disponibles dans dif
 
 * Sous le nom du fragment, vous pouvez voir le nom du [Modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) utilisé pour créer le fragment actif :
 
-   * Le nom est également un lien servant à ouvrir l’éditeur de modèles.
+   * Le nom est également un lien qui ouvre l’éditeur de modèles.
 
 * Consultez le statut du fragment, par exemple, les informations relatives à la date et à l’heure de création, de modification ou de publication.
 
@@ -227,7 +227,7 @@ L’éditeur possède différentes options :
 
   >[!CAUTION]
   >
-  >Pour modifier un fragment de contenu, vous devez disposer des [autorisations appropriées](/help/sites-developing/customizing-content-fragments.md#asset-permissions). En cas de problème, veuillez contacter votre administrateur ou administratrice système.
+  >Pour modifier un fragment de contenu, vous devez disposer des [autorisations appropriées](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Si vous rencontrez des problèmes, contactez votre administration système.
 
   >[!NOTE]
   >
@@ -237,7 +237,7 @@ L’éditeur possède différentes options :
   >
   >En plus de simplement enregistrer vos modifications, ces actions mettent également à jour les références éventuelles et s’assurent que le Dispatcher est nettoyé si nécessaire. Le traitement de ces modifications peut prendre du temps. Cela peut avoir un impact sur les performances d’un système volumineux/complexe/lourdement chargé.
   >
-  >Prenez cela en compte lorsque vous exécutez **Enregistrer et fermer** puis rouvrez aussitôt l’éditeur de fragments afin d’apporter d’autres modifications et de les enregistrer.
+  >Gardez cela à l’esprit lorsque vous utilisez **Enregistrer et fermer** puis saisissez à nouveau rapidement l’éditeur de fragments pour effectuer et enregistrer d’autres modifications.
 
 * **Fermer**
 
@@ -274,7 +274,7 @@ Une fois que vous avez créé le contenu maître, vous pouvez créer et gérer d
 
 Vous pouvez également [associer du contenu](/help/assets/content-fragments/content-fragments-assoc-content.md) à un fragment. Cela fournit une connexion afin que les ressources (les images, par exemple) puissent (éventuellement) être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
 
-## Affichage et modification des métadonnées (propriétés) du fragment {#viewing-and-editing-the-metadata-properties-of-your-fragment}
+## Afficher et modifier des métadonnées (propriétés) du fragment {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 Vous pouvez afficher et modifier les propriétés d’un fragment à l’aide de l’onglet [Métadonnées](/help/assets/content-fragments/content-fragments-metadata.md).
 
@@ -319,13 +319,13 @@ Par exemple :
 
 L’action **Comparer avec la version actuelle** est disponible à partir du [Journal](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) après avoir sélectionné une version spécifique.
 
-Cette action ouvre :
+Cette action s’ouvre :
 
 * la version **actuelle** (la plus récente) (à gauche) ;
 
 * la version sélectionnée **v&lt;*x.y*>** (à droite).
 
-Elles sont affichées dans des versions côte à côte dans lesquelles :
+Ces dernières sont affichées dans des versions côte à côte dans lesquelles :
 
 * les différences sont mises en surbrillance ;
 
@@ -375,7 +375,7 @@ Une fois qu’un fragment a été publié et/ou référencé, AEM affiche un ave
 
 Pour supprimer un fragment :
 
-1. Dans la console **Ressources**, naviguez jusqu’à l’emplacement du fragment de contenu.
+1. Dans la console **Assets**, naviguez jusqu’à l’emplacement du fragment de contenu.
 2. Sélectionnez le fragment.
 
    >[!NOTE]

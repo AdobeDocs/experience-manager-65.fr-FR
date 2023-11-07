@@ -1,19 +1,15 @@
 ---
 title: Conceptions et Designer
-seo-title: Designs and the Designer
-description: Vous devez créer une conception pour votre site web et dans AEM. Pour ce faire, vous allez utiliser le Designer.
-seo-description: You will need to create a design for your website and in AEM, you do so by using the Designer
-uuid: b880ab49-8bea-4925-9b7b-e911ebda14ee
+description: Découvrez comment créer une conception pour votre site web et dans AEM à l’aide de Designer.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
 exl-id: c81c5910-b6c9-41bd-8840-a6782792701f
-source-git-commit: adbdff9ff5b5bd8f5f6b22fb724a0e5273072de2
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 70%
 
 ---
 
@@ -21,13 +17,13 @@ ht-degree: 100%
 
 >[!CAUTION]
 >
->Cet article vous explique comment créer un site Web basé sur l’interface utilisateur (IU) classique. Adobe vous recommande de tirer parti des technologies AEM les plus récentes pour vos sites Web. Vous en trouverez une description détaillée dans l’article [Prise en main du développement d’AEM Sites](/help/sites-developing/getting-started.md).
+>Cet article vous explique comment créer un site Web basé sur l’interface utilisateur (IU) classique. Adobe recommande d’utiliser les technologies AEM les plus récentes pour vos sites web, comme décrit en détail dans l’article . [Prise en main du développement d’AEM Sites](/help/sites-developing/getting-started.md).
 
 Le Designer permet de créer une conception pour votre site Web à l’aide de la méthode [IU classique](/help/release-notes/touch-ui-features-status.md) dans AEM.
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’accessibilité web, voir [AEM et les instructions pour l’accessibilité web](/help/managing/web-accessibility.md).
+>Pour plus d’informations sur l’accessibilité web, voir [AEM et directives d’accessibilité web](/help/managing/web-accessibility.md).
 
 ## Utilisation de Designer {#using-the-designer}
 
@@ -35,7 +31,7 @@ Vous pouvez définir votre conception dans **Conceptions** de l’onglet **Outil
 
 ![screen_shot_2012-02-01at30237pm](assets/screen_shot_2012-02-01at30237pm.png)
 
-Ici, vous pouvez créer la structure requise pour stocker la conception, puis stocker les feuilles de style en cascade (CSS) et les images requises.
+Ici, vous pouvez créer la structure requise pour stocker la conception, puis charger les feuilles de style en cascade (CSS) et les images requises.
 
 Les conceptions sont stockées sous `/apps/<your-project>`. Le chemin d’accès à la conception à utiliser pour un site Web est spécifié à l’aide de la propriété `cq:designPath` du nœud `jcr:content`.
 
@@ -43,11 +39,11 @@ Les conceptions sont stockées sous `/apps/<your-project>`. Le chemin d’accès
 
 >[!NOTE]
 >
->Toutes les modifications apportées à une page dans le mode Création sont conservées sous le nœud de conception du site et sont automatiquement appliquées à toutes les pages qui présentent la même conception.
+>Toutes les modifications apportées à une page en mode de conception sont conservées sous le noeud de conception du site et sont automatiquement appliquées à toutes les pages qui ont la même conception.
 
-## Éléments nécessaires {#what-you-will-need}
+## Ce dont vous aurez besoin {#what-you-will-need}
 
-Pour créer votre conception, vous aurez besoin des éléments suivants :
+Pour réaliser votre conception, vous aurez besoin des éléments suivants :
 
 **CSS** - Les feuilles de style en cascade (CSS) définissent les formats de zones spécifiques sur vos pages.
 **Images** - Toute image que vous utilisez pour des fonctions telles que des arrière-plans, des boutons, etc.

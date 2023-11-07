@@ -2,10 +2,10 @@
 title: Prise en main de la traduction découplée dans AEM
 description: Découvrez comment organiser votre contenu découplé et comment fonctionnent les outils de traduction AEM.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 95%
+source-wordcount: '1490'
+ht-degree: 93%
 
 ---
 
@@ -32,7 +32,7 @@ Ce document vous aide à comprendre comment commencer à traduire le contenu dé
 
 ## Exigences et conditions préalables {#requirements-prerequisites}
 
-Un certain nombre d’exigences s’imposent avant de vous engager dans la traduction de votre contenu AEM découplé.
+Avant de commencer à traduire votre contenu d’AEM sans interface utilisateur graphique, plusieurs exigences s’appliquent.
 
 ### Connaissances {#knowledge}
 
@@ -44,7 +44,7 @@ Un certain nombre d’exigences s’imposent avant de vous engager dans la tradu
 
 >[!TIP]
 >
->Si vous n’êtes pas familier avec l’utilisation d’un CMS à grande échelle tel qu’AEM, pensez à consulter la documentation intitulée [Manipulation de base](/help/sites-authoring/basic-handling.md) avant de continuer. La documentation Manipulation de base ne fait pas partie du parcours. Vous devez donc revenir sur cette page une fois l’opération terminée.
+>Si vous n’êtes pas familier avec l’utilisation d’un CMS à grande échelle tel qu’AEM, pensez à consulter la documentation intitulée [Manipulation de base](/help/sites-authoring/basic-handling.md) avant de continuer. La documentation Manipulation de base ne fait pas partie du parcours. Vous pouvez donc revenir à cette page une fois l’opération terminée.
 
 ### Outils {#tools}
 

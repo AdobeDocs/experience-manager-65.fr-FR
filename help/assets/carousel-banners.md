@@ -1,20 +1,18 @@
 ---
 title: Bannières de carrousel
 description: Découvrez comment utiliser des bannières de carrousel dans Dynamic Media
-uuid: 73684a08-d84d-4665-ab89-3a1bf88ac5dd
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4726'
-ht-degree: 90%
+source-wordcount: '4722'
+ht-degree: 91%
 
 ---
 
@@ -44,7 +42,7 @@ Regardez une présentation sur [la manière dont les bannières de carrousel son
 
 >[!NOTE]
 >
->Les utilisateurs non administrateurs doivent être ajoutés au groupe **[!UICONTROL dam-users]** de façon à pouvoir créer ou modifier des bannières de carrousel. Si vous rencontrez des problèmes lors de la création ou de la modification, contactez votre administrateur système pour qu’il vous ajoute au **[!UICONTROL dam-users]** groupe.
+>Les utilisateurs non administrateurs doivent être ajoutés au groupe **[!UICONTROL dam-users]** de façon à pouvoir créer ou modifier des bannières de carrousel. Si vous rencontrez des problèmes lors de la création ou de la modification des bannières, contactez votre administrateur système pour qu’il vous ajoute au groupe **[!UICONTROL DAM-users]**.
 
 ## Démarrage rapide : bannières de carrousel {#quick-start-carousel-banners}
 
@@ -179,7 +177,7 @@ Consultez les exemples d’URL d’aperçu rapide ci-dessous et les variables de
 
 ## Chargement des bannières d’image {#uploading-image-banners}
 
-Si vous avez déjà chargé les images à utiliser, passez à l’étape suivante, [Création d’ensembles de carrousels](#creating-carousel-sets). Notez que les images utilisées dans le carrousel doivent être chargées une fois que Dynamic Media a été activé.
+Si vous avez déjà chargé les images à utiliser, passez à l’étape suivante, [Création d’ensembles de carrousels](#creating-carousel-sets). Notez que les images utilisées dans le carrousel doivent être chargées une fois Dynamic Media activé.
 
 Pour charger des bannières d’image, voir [Chargement de ressources](/help/assets/manage-assets.md).
 
@@ -187,7 +185,7 @@ Pour charger des bannières d’image, voir [Chargement de ressources](/help/ass
 
 >[!NOTE]
 >
->Les utilisateurs non administrateurs doivent être ajoutés au groupe **[!UICONTROL dam-users]** de façon à pouvoir créer ou modifier des bannières de carrousel. Si vous rencontrez des problèmes lors de la création ou de la modification, contactez votre administrateur système pour qu’il vous ajoute au **[!UICONTROL dam-users]** groupe.
+>Les utilisateurs non administrateurs doivent être ajoutés au groupe **[!UICONTROL dam-users]** de façon à pouvoir créer ou modifier des bannières de carrousel. Si vous rencontrez des problèmes lors de la création ou de la modification des bannières, contactez votre administrateur système pour qu’il vous ajoute au groupe **[!UICONTROL DAM-users]**.
 
 **Pour créer des ensembles de carrousels :**
 
@@ -337,7 +335,7 @@ Voir [Fragments d’expérience](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
 >
-Les utilisateurs non administrateurs doivent être ajoutés au groupe **[!UICONTROL dam-users]** de façon à pouvoir créer ou modifier des bannières de carrousel. Si vous rencontrez des problèmes lors de la création ou de la modification, contactez votre administrateur système pour qu’il vous ajoute au **[!UICONTROL dam-users]** groupe.
+Les utilisateurs non administrateurs doivent être ajoutés au groupe **[!UICONTROL dam-users]** de façon à pouvoir créer ou modifier des bannières de carrousel. Si vous rencontrez des problèmes lors de la création ou de la modification des bannières, contactez votre administrateur système pour qu’il vous ajoute au groupe **[!UICONTROL DAM-users]**.
 
 Vous pouvez effectuer diverses tâches de modification sur les visionneuses de carrousel, telles que :
 

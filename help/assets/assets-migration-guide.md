@@ -5,10 +5,10 @@ contentOwner: AG
 role: Architect, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 58%
+source-wordcount: '1795'
+ht-degree: 57%
 
 ---
 
@@ -55,13 +55,13 @@ Vous avez peut-être déjà mis en place une taxonomie de balises que vous appli
 
 ### Assimilation des ressources {#ingesting-assets}
 
-Les performances et la stabilité sont des préoccupations importantes lors de l’ingestion de ressources dans le système. Étant donné que vous chargez une grande quantité de données dans le système, vous souhaitez vous assurer que le système fonctionne de la manière la plus efficace possible afin de réduire le temps nécessaire et d’éviter de surcharger le système, ce qui peut entraîner un blocage du système, en particulier dans les systèmes déjà en production.
+Les performances et la stabilité sont des préoccupations importantes lors de l’ingestion de ressources dans le système. Étant donné que vous chargez une grande quantité de données dans le système, vous souhaitez vous assurer que le système fonctionne et qu’il peut réduire le temps nécessaire et éviter de surcharger le système, ce qui peut entraîner un blocage du système, en particulier dans les systèmes déjà en production.
 
 Il existe deux approches pour charger les ressources dans le système : une approche basée sur les notifications push utilisant HTTP ou une approche basée sur les extractions utilisant les API JCR.
 
 #### Envoyer via HTTP {#pushing-through-http}
 
-L’équipe Managed Services d’Adobe utilise un outil appelé Glutton pour charger les données dans les environnements clients. Glutton est une petite application Java qui charge toutes les ressources d’un répertoire dans un autre répertoire d’un déploiement [!DNL Experience Manager]. À la place de Glutton, vous pouvez également utiliser des outils tels que les scripts Perl pour publier les ressources dans le référentiel.
+L’équipe Managed Services d’Adobe utilise un outil appelé Glutton pour charger des données dans les environnements clients. Glutton est une petite application Java qui charge toutes les ressources d’un répertoire dans un autre répertoire d’un déploiement [!DNL Experience Manager]. À la place de Glutton, vous pouvez également utiliser des outils tels que les scripts Perl pour publier les ressources dans le référentiel.
 
 L’utilisation de l’approche Push à l’aide du protocole HTTPS présente deux inconvénients :
 
@@ -82,7 +82,7 @@ Après avoir chargé les ressources dans le système, vous devez les traiter via
 
 Après avoir configuré le workflow en fonction de vos besoins, vous disposez de deux options pour l’exécuter :
 
-1. L’approche la plus simple consiste à utiliser l’outil [Bulk Workflow Manager d’ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Cet outil permet d&#39;exécuter une requête et de traiter les résultats de la requête via un workflow. Il existe également des options pour définir les tailles de lots.
+1. L’approche la plus simple est la suivante : [Gestionnaire de processus en bloc d’ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Cet outil permet d&#39;exécuter une requête et de traiter les résultats de la requête via un workflow. Il existe également des options pour définir les tailles de lots.
 1. Vous pouvez utiliser l’outil [Fast Action Manager d’ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) en association avec [Synthetic Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). Bien que cette approche soit beaucoup plus impliquée, elle vous permet de supprimer la surcharge du moteur de processus [!DNL Experience Manager], tout en optimisant l’utilisation des ressources du serveur. De plus, Fast Action Manager améliore les performances en surveillant de manière dynamique les ressources du serveur et en réduisant la charge placée sur le système. Des exemples de scripts ont été fournis sur la page de fonctionnalités d’ACS Commons.
 
 ### Activation des ressources {#activating-assets}

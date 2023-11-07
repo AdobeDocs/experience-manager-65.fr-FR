@@ -1,19 +1,15 @@
 ---
 title: Administration des balises
-seo-title: Administering Tags
 description: Découvrez comment gérer et administrer des balises dans Adobe Experience Manager.
-seo-description: Learn how to administer Tags in AEM.
-uuid: 77e1280a-feea-4edd-94b6-4fb825566c42
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 74%
+source-wordcount: '1761'
+ht-degree: 70%
 
 ---
 
@@ -78,7 +74,7 @@ Pour accéder à la console Balisage :
 
 ### Création d’un espace de noms {#creating-a-namespace}
 
-Pour créer un espace de noms, sélectionnez l’icône **`Create Namespace`**.
+Pour créer un espace de noms, sélectionnez le **`Create Namespace`** Icône
 
 L’espace de noms est lui-même une balise et ne comporte pas forcément de balise secondaire. Cependant, pour poursuivre la création d’une taxonomie, [créez des balises secondaires](#creating-tags), qui peuvent être des balises terminales ou conteneurs.
 
@@ -211,7 +207,7 @@ Affiche d’abord le `name` actuel de la balise. Vous pouvez saisir un nouveau `
 
 Il est également possible de recourir à la fusion de balises lorsqu’une taxonomie comporte des doublons. Lorsque la balise A est fusionnée dans la balise B, toutes les pages balisées avec la balise A sont balisées avec la balise B et la balise A n’est plus disponible pour les auteurs.
 
-Lorsqu’un espace de noms ou une autre balise est sélectionné, si vous sélectionnez l’icône **Fusionner**, un panneau s’ouvre dans lequel vous pouvez sélectionner le chemin d’accès à fusionner.
+Lorsqu’un espace de noms ou une autre balise est sélectionné, sélectionnez la variable **Fusion** ouvre un panneau dans lequel le chemin de fusion peut être sélectionné.
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
@@ -296,7 +292,7 @@ Une fois toutes les traductions saisies, sélectionnez **Enregistrer** pour quit
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
-En général, la langue sélectionnée pour la balise dépend de la langue de la page, le cas échéant. Si le [`tag`widget ](/help/sites-developing/building.md#tagging-on-the-client-side) est utilisé dans d’autres cas (dans des formulaires ou des boîtes de dialogue, par exemple), la langue de la balise dépend du contexte.
+En général, la langue sélectionnée pour la balise dépend de la langue de la page, le cas échéant. Lorsque la variable [`tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) est utilisé dans d’autres cas (dans les formulaires ou les boîtes de dialogue, par exemple), la langue de la balise dépend du contexte.
 
 Plutôt que d’utiliser le paramètre de langue de la page, la console Balisage utilise le paramètre de langue de l’utilisateur. Dans la console Balisage, pour la balise « Animals », « Animaux » s’affiche pour un utilisateur qui a défini la langue française dans ses propriétés d’utilisateur.
 
@@ -310,6 +306,6 @@ Pour ajouter une nouvelle langue dans la boîte de dialogue, consultez la sectio
 
 * [Balisage pour l’équipe de développement](/help/sites-developing/tags.md)
 
-  Informations sur le framework de balisage et sur l’extension et l’inclusion de balises dans des applications personnalisées.
+  Informations sur la structure de balisage et l’extension et l’inclusion de balises dans les applications personnalisées.
 
 * [Console Balisage de l’interface utilisateur (IU) classique](/help/sites-administering/classic-console.md)

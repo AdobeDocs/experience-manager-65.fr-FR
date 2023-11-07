@@ -2,10 +2,10 @@
 title: Utilisation de l’éditeur de texte enrichi pour créer du contenu
 description: Utilisation de l’éditeur de texte enrichi pour créer du contenu dans Adobe Experience Manager 6.5.
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 95%
+source-wordcount: '266'
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,7 @@ Si vous sélectionnez un composant textuel en cliquant ou appuyant une seule foi
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Appuyez/cliquez de nouveau ou sélectionnez initialement le composant avec un double appui/clic lent pour ouvrir la modification sur place, qui possède sa propre barre d’outils. De là, vous pouvez modifier le contenu et apporter des modifications de base à la mise en forme.
+Appuyez/cliquez de nouveau ou sélectionnez initialement le composant avec un double appui/clic lent pour ouvrir la modification statique, qui possède sa propre barre d’outils. De là, vous pouvez modifier le contenu et apporter des modifications de base à la mise en forme.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 

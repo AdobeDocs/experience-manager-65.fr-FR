@@ -1,19 +1,15 @@
 ---
 title: Modèles de formulaires adaptatifs
-seo-title: Adaptive Form Templates
 description: Créez des modèles de formulaire adaptatif en définissant la structure de base et le contenu initial du formulaire à l’aide de l’éditeur de modèles.
-seo-description: Create adaptive form templates by defining the basic structure and initial form content using the Template Editor.
-uuid: 317ca3ab-f809-49a7-a063-9d0c17a35fe4
 contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 feature: Adaptive Forms
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2040'
 ht-degree: 80%
 
 ---
@@ -39,9 +35,9 @@ Par exemple, vous souhaitez que tous les auteurs de formulaire disposent de cert
 
 ## Utilisation de modèles {#working-with-templates}
 
-Vous pouvez accéder à l’éditeur de modèles à partir du menu Outils en accédant à **Adobe Experience Manager > Outils > Modèles**. Ici, les modèles sont organisés dans des dossiers activés pour les modèles modifiables. AEM fournit un dossier global pour organiser les modèles. Cependant, il n’est pas activé par défaut. Vous pouvez demander à votre administrateur d’activer le dossier global ou de créer un dossier pour les modèles. Pour plus d’informations sur la création de dossiers, voir [Dossiers de modèles](/help/sites-developing/page-templates-editable.md).
+Vous pouvez accéder à l’éditeur de modèles à partir du menu Outils en accédant à **Adobe Experience Manager > Outils > Modèles**. Ici, les modèles sont organisés dans des dossiers activés pour les modèles modifiables. AEM fournit un dossier global pour organiser les modèles. Cependant, il n’est pas activé par défaut. Vous pouvez demander à votre administrateur d’activer le dossier global ou de créer un nouveau dossier pour les modèles. Pour plus d’informations sur la création de dossiers, voir [Dossiers de modèles](/help/sites-developing/page-templates-editable.md).
 
-Une fois que vous appuyez pour ouvrir un dossier, vous trouverez un bouton Créer qui permet de créer un nouveau modèle pour les formulaires adaptatifs.
+Une fois que vous avez appuyé pour ouvrir un dossier, un bouton Créer s’affiche, vous permettant de créer un modèle pour les formulaires adaptatifs.
 
 ### Création d’un modèle {#create-template}
 

@@ -1,19 +1,15 @@
 ---
 title: Créer un écran de connexion
-seo-title: Creating a new login screen
-description: Comment modifier la page de connexion des modules de LiveCycle, par exemple de l’espace de travail d’AEM Forms ou de Forms Manager.
-seo-description: How-to modify the login page of LiveCycle modules, for example of AEM Forms workspace or Forms Manager.
-uuid: 2d4a72f4-cc9a-412d-856d-0fca75f1272b
+description: Comment modifier la page de connexion des modules de LiveCycle, par exemple AEM Forms Workspace ou Forms Manager.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
-workflow-type: ht
-source-wordcount: '462'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '460'
+ht-degree: 94%
 
 ---
 
@@ -60,6 +56,7 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
    1. Donnez au dossier le nom du paramètre régional que vous souhaitez prendre en charge. Par exemple, `ar`.
 
    1. Modifiez la valeur de la propriété `jcr:language` en `ar` (pour le dossier `ar`).
+
    >[!NOTE]
    >
    >Si le paramètre régional est une combinaison de code langue-pays, tel que `ar-DZ`, modifiez le nom du dossier et la valeur de la propriété en `ar-DZ`.
@@ -212,6 +209,7 @@ String browserLocale = "en";
       * de `/libs/livecycle/core/components/login`
 
       * vers `/apps/livecycle/core/components/login`
+
    1. Modifiez `/apps/livecycle/core/components/login/login.jsp` pour incorporer le texte nouvellement ajouté.
 
    ![Ajout d’une nouvelle paire clé-valeur](assets/capture_new.png)
@@ -254,8 +252,8 @@ String browserLocale = "en";
       * de `/libs/livecycle/core/components/login`
 
       * vers `/apps/livecycle/core/components/login`
-   1. Modifiez `/apps/livecycle/core/components/login/login.jsp` pour incorporer les styles nouvellement ajoutés.
 
+   1. Modifiez `/apps/livecycle/core/components/login/login.jsp` pour incorporer les styles nouvellement ajoutés.
 
 
 Par exemple :
@@ -272,15 +270,15 @@ css.newLoginContentArea {
 * Modifiez les éléments suivants dans `/apps/livecycle/core/components/login.jsp`.
 
 
-   ```jsp
-   <div class="loginContentArea">
-   ```
+  ```jsp
+  <div class="loginContentArea">
+  ```
 
-   To
+  To
 
-   ```jsp
-   <div class="newLoginContentArea">
-   ```
+  ```jsp
+  <div class="newLoginContentArea">
+  ```
 
 >[!NOTE]
 >

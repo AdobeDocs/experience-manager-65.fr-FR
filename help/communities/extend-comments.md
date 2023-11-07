@@ -1,7 +1,7 @@
 ---
 title: Extension du composant Commentaires
 seo-title: Extend Comments Component
-description: Étendre le composant Commentaires afin de modifier son aspect ou son comportement pour des utilisations spécifiques
+description: Étendre le composant Commentaires afin de modifier son apparence ou son comportement pour des utilisations spécifiques
 seo-description: Extend the Comments component to alter its appearance or behavior for specific uses
 uuid: 6f439097-b1d0-4e7d-afcf-01d8f43aa866
 contentOwner: Guillaume Carlino
@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
 exl-id: e57198cb-8fd9-43e2-b416-e40e462561c8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
@@ -38,5 +38,5 @@ Le composant de commentaire est en fait l’un des deux composants qui composent
 Pour étendre les commentaires, vous devez :
 
 1. [Création des composants](extend-create-components.md)
-1. [Ajout d’un commentaire à un exemple de page](extend-sample-page.md)
+1. [Ajouter un commentaire à un exemple de page](extend-sample-page.md)
 1. [Modification de l’aspect](extend-alter-appearance.md)

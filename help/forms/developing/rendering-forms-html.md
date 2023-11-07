@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4150'
-ht-degree: 99%
+source-wordcount: '4143'
+ht-degree: 94%
 
 ---
 
@@ -89,9 +89,9 @@ Vous pouvez concevoir des formulaires qui se déplacent entre les pages (panneau
 
 Il est recommandé de ne pas donner les mêmes noms aux variables de script et aux champs de formulaire, par exemple élément. Certains navigateurs web, tels qu’Internet Explorer, peuvent ne pas initialiser une variable portant le même nom qu’un champ de formulaire, ce qui entraîne une erreur de script. Une bonne pratique consiste à donner des noms différents aux champs de formulaire et aux variables de script.
 
-Lors du rendu de formulaires HTML qui contiennent à la fois des fonctionnalités de navigation de page et des scripts de formulaire (supposons, par exemple, qu’un script récupère les données de champ d’une base de données chaque fois que le formulaire est rendu), assurez-vous que le script de formulaire se trouve dans l’événement form:calculate au lieu de form:readyevent.
+Lors du rendu de formulaires de HTML contenant à la fois la fonctionnalité de navigation de page et des scripts de formulaire (supposons, par exemple, qu’un script récupère les données de champ d’une base de données chaque fois que le formulaire est généré), assurez-vous que le script de formulaire se trouve dans l’événement form:calculate au lieu de l’événement form:readyevent.
 
-Les scripts de formulaire situés dans l’événement form:ready ne sont exécutés qu’une seule fois lors du rendu initial du formulaire et ne sont pas exécutés pour les récupérations de page suivantes. En revanche, l’événement form:calculate est exécuté pour chaque navigation de page dans laquelle le formulaire est rendu.
+Les scripts de formulaire qui se trouvent dans l’événement form:ready ne sont exécutés qu’une seule fois lors du rendu initial du formulaire et ne sont pas exécutés pour les récupérations de page suivantes. En revanche, l’événement form:calculate est exécuté pour chaque navigation de page dans laquelle le formulaire est rendu.
 
 >[!NOTE]
 >
@@ -101,7 +101,7 @@ Vous pouvez appeler des scripts personnalisés avant d’envoyer un formulaire. 
 
 Vous devez d’abord définir une fonction de rappel appelée avant l’envoi du formulaire, où le nom de la fonction est `_user_onsubmit`. On suppose que la fonction ne renvoie aucune exception ou que, dans ce cas, l’exception est ignorée. Il est recommandé de placer la fonction JavaScript dans la section HEAD du fichier HTML. Vous pouvez toutefois la déclarer n’importe où avant la fin des balises de script qui incluent `xfasubset.js`.
 
-Lorsque le serveur de formulaires effectue le rendu d’un fichier XDP contenant une liste déroulante, il crée deux champs de texte masqués en plus de créer la liste déroulante. Ces champs de texte stockent les données de la liste déroulante (l’un stocke le nom d’affichage des options et l’autre stocke la valeur des options). Par conséquent, chaque fois qu’un utilisateur envoie le formulaire, toutes les données de la liste déroulante sont envoyées. Supposons que vous ne souhaitiez pas envoyer autant de données à chaque fois. Vous pouvez alors écrire un script personnalisé permettant de désactiver cela. Par exemple : le nom de la liste déroulante est `drpOrderedByStateProv`. Il est placé sous l’en-tête de sous-formulaire. Le nom de l’élément d’entrée HTML est `header[0].drpOrderedByStateProv[0]`. Les noms des champs masqués qui stockent et envoient les données de la liste déroulante sont les suivants : `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`.
+Lorsque le serveur de formulaires effectue le rendu d’un fichier XDP contenant une liste déroulante, il crée deux champs de texte masqués en plus de créer la liste déroulante. Ces champs de texte stockent les données de la liste déroulante (l’un stocke le nom d’affichage des options et l’autre stocke la valeur des options). Par conséquent, chaque fois qu’un utilisateur envoie le formulaire, toutes les données de la liste déroulante sont envoyées. Supposons que vous ne souhaitiez pas envoyer autant de données à chaque fois. Vous pouvez alors écrire un script personnalisé permettant de désactiver cela. Par exemple : le nom de la liste déroulante est `drpOrderedByStateProv` et est placé sous l’en-tête de sous-formulaire. Le nom de l’élément d’entrée HTML est `header[0].drpOrderedByStateProv[0]`. Les noms des champs masqués qui stockent et envoient les données de la liste déroulante sont les suivants : `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`.
 
 Vous pouvez suivre la procédure suivante pour désactiver ces éléments d’entrée si vous ne souhaitez pas publier les données. `var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature function _user_onsubmit() { var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]"); elems[0].disabled = true; elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]"); elems[0].disabled = true; }`
 
@@ -125,7 +125,7 @@ Lors de la création de conceptions de formulaire pour le rendu HTML, vous devez
 
 Les scripts qui s’exécutent sur le client ou à la fois sur le client et le serveur doivent être écrits dans le sous-ensemble XFA. Les scripts qui s’exécutent sur le serveur peuvent utiliser le modèle de script XFA complet ainsi que FormCalc. Pour plus d’informations sur l’utilisation de JavaScript, voir [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).
 
-Lors de l’exécution de scripts sur le client, seul le panneau actuellement affiché peut utiliser le script. Par exemple, vous ne pouvez pas utiliser de script pour les champs situés dans le panneau A lorsque le panneau B est affiché. Lors de l’exécution de scripts sur le serveur, tous les panneaux sont accessibles.
+Lors de l’exécution de scripts sur le client, seul le panneau actuel affiché peut utiliser un script ; par exemple, vous ne pouvez pas créer de script pour les champs du panneau A lorsque le panneau B est affiché. Lors de l’exécution de scripts sur le serveur, tous les panneaux sont accessibles.
 
 Vous devez également faire attention lorsque vous utilisez des expressions de modèle d’objet de script (SOM) dans des scripts exécutés sur le client. Seul un sous-ensemble simplifié d’expressions SOM est pris en charge par les scripts qui s’exécutent sur le client.
 
@@ -158,7 +158,7 @@ Il est recommandé de placer votre logique de formulaire dans les événements d
 
 Lorsque vous passez d’une page HTML à l’autre (panneaux), seul l’état des données est conservé. Les paramètres tels que la couleur d’arrière-plan ou les paramètres de champ obligatoires ne sont pas conservés (s’ils sont différents des paramètres initiaux). Pour conserver l’état de présentation, vous devez créer des champs (généralement masqués) qui représentent l’état de présentation des champs. Si vous ajoutez un script à l’événement `Calculate` d’un champ qui modifie la présentation en fonction des valeurs de champ masquées, vous pouvez conserver l’état de présentation lorsque vous passez d’une page HTML à l’autre (panneaux).
 
-Le script suivant conserve la fonction `fillColor` d’un champ en fonction de la valeur de `hiddenField`. Supposons que ce script se trouve dans l’événement `Calculate` d’un champ.
+Le script suivant conserve la fonction `fillColor` d’un champ en fonction de la valeur de `hiddenField`. Supposons que ce script se trouve dans la variable `Calculate` .
 
 ```java
      If (hiddenField.rawValue == 1)
@@ -188,7 +188,7 @@ Vous pouvez générer un formulaire HTML complet conforme aux directives d’acc
 
 ## Valider des données de formulaire {#validating-form-data}
 
-Il est recommandé de limiter l’utilisation des règles de validation pour les champs de formulaire lors du rendu du formulaire en tant que formulaire HTML. Certaines règles de validation peuvent ne pas être prises en charge pour les formulaires HTML. Par exemple, lorsqu’un modèle de validation MM-JJ-AAAA est appliqué à un champ `Date/Time` qui se trouve dans une conception de formulaire générée sous la forme HTML, il ne fonctionne pas correctement, même si la date est saisie correctement. Cependant, ce modèle de validation fonctionne correctement pour les formulaires générés en tant que PDF.
+Il est recommandé de limiter l’utilisation des règles de validation pour les champs de formulaire lors du rendu du formulaire en tant que formulaire HTML. Certaines règles de validation peuvent ne pas être prises en charge pour les formulaires HTML. Par exemple, lorsqu’un modèle de validation MM-JJ-AAAA est appliqué à une variable `Date/Time` qui se trouve dans une conception de formulaire rendue sous la forme d’un formulaire de HTML, elle ne fonctionne pas correctement, même si la date est correctement saisie. Cependant, ce modèle de validation fonctionne correctement pour les formulaires générés en tant que PDF.
 
 >[!NOTE]
 >

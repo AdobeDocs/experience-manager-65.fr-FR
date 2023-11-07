@@ -8,10 +8,10 @@ content-type: reference
 feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 47%
+source-wordcount: '975'
+ht-degree: 44%
 
 ---
 
@@ -36,14 +36,14 @@ Lorsque le fragment de contenu source est mis à jour ou modifié, le fragment d
 Le workflow Créer et traduire comprend les options suivantes. Les étapes de procédure associées à chaque option sont similaires aux étapes de procédure associées à l’option correspondante pour les ressources.
 
 * Créer uniquement la structure : pour les étapes de la procédure, reportez-vous à [Création de structure uniquement pour les ressources](translation-projects.md#create-structure-only).
-* Créer un projet de traduction : pour les étapes de la procédure, reportez-vous à [Création d’un nouveau projet de traduction pour les ressources.](translation-projects.md#create-a-new-translation-project)
+* Création d’un projet de traduction : pour les étapes de la procédure, voir [Création d’un projet de traduction pour les ressources](translation-projects.md#create-a-new-translation-project).
 * Ajouter à un projet de traduction existant : pour les étapes de la procédure, reportez-vous à [Ajout à un projet de traduction existant pour les ressources.](translation-projects.md#add-to-existing-translation-project)
 
 ## Workflow de mise à jour des copies de langue {#update-language-copies-workflow}
 
 Le processus de mise à jour des copies de langue comprend les options suivantes. Les étapes de procédure associées à chaque option sont similaires aux étapes de procédure associées à l’option correspondante pour les ressources.
 
-* Créer un projet de traduction : pour les étapes de cette procédure, consultez [Création d’un nouveau projet de traduction pour les ressources](translation-projects.md#create-a-new-translation-project) (workflow de mise à jour).
+* Création d’un projet de traduction : pour les étapes de la procédure, voir [Création d’un projet de traduction pour les ressources](translation-projects.md#create-a-new-translation-project) (processus de mise à jour).
 * Ajouter à un projet de traduction existant : pour les étapes de la procédure, reportez-vous à [Ajout à un projet de traduction existant pour les ressources](translation-projects.md#add-to-existing-translation-project) (workflow de mise à jour).
 
 Vous pouvez également créer des copies de langue temporaires pour les fragments de la même manière que vous créez des copies temporaires pour les ressources. Pour plus d’informations, voir [Création de copies de langue temporaires pour les ressources](translation-projects.md#creating-temporary-language-copies).
@@ -159,4 +159,4 @@ Pour pouvoir traduire des fragments de contenu contenant des supports variés, m
 
    >[!NOTE]
    >
-   >Les procédures d’ajout d’un fragment de contenu à un projet existant ou d’exécution de workflows de mise à jour sont similaires aux procédures correspondantes pour les ressources. Pour plus d’informations sur ces procédures, reportez-vous aux procédures décrites pour les ressources.
+   >Les procédures d’ajout d’un fragment de contenu à un projet existant ou d’exécution de workflows de mise à jour sont similaires aux procédures correspondantes pour les ressources. Pour plus d’informations sur ces procédures, voir les procédures décrites pour les ressources.

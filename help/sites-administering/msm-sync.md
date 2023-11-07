@@ -12,9 +12,9 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2699'
+source-wordcount: '2695'
 ht-degree: 71%
 
 ---
@@ -400,7 +400,7 @@ Vous pouvez également configurer les configurations du déploiement d’une pag
 
 Configurez une page de plan directeur avec les configurations de déploiement à utiliser lorsque la page de plan directeur est déployée.
 
-Notez que les pages enfants de la page de plan directeur héritent de la configuration. Lorsque vous configurez la configuration du déploiement à utiliser, vous risquez de remplacer la configuration qui a été héritée par la page de son parent.
+Les pages enfants de la page de plan directeur héritent de la configuration. Lorsque vous configurez la configuration du déploiement à utiliser, vous risquez de remplacer la configuration qui a été héritée par la page de son parent.
 
 1. Utilisez la console **Sites** pour sélectionner la page racine du plan directeur.
 1. Sélectionnez **Propriétés** dans la barre d’outils.

@@ -12,10 +12,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: a95255594ec03c152cd96df48597ced5fce4b315
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4519'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -404,7 +404,7 @@ Experience Manager affiche une grande variété de paramètres prédéfinis de 
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-1. Dans la propriété limit, saisissez la valeur de votre choix ; par exemple, `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. Dans la propriété limit, remplacez le nombre par le nombre souhaité, par exemple : `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Sélectionnez **[!UICONTROL Enregistrer tout]**.
 
 ## Création d’un paramètre prédéfini de la visionneuse {#creating-a-new-viewer-preset}

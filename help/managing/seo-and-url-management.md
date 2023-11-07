@@ -5,10 +5,10 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
-source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
-workflow-type: ht
-source-wordcount: '3678'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '3677'
+ht-degree: 99%
 
 ---
 
@@ -37,7 +37,7 @@ Voici quelques conseils généraux sur la construction de vos URL pour l’optim
 * Utilisez des tirets pour séparer les mots.
 
    * Nommez les pages en utilisant des tirets (-) comme séparateurs.
-   * Évitez d’utiliser la casse, les caractères de soulignement et les espaces.
+   * Évitez d’utiliser la casse mixte, les caractères de soulignement et les espaces.
 
 * Dans la mesure du possible, évitez d’utiliser des paramètres de requête. Si nécessaire, limitez-les à deux ou moins.
 
@@ -49,9 +49,8 @@ Voici quelques conseils généraux sur la construction de vos URL pour l’optim
    * Lors de l’utilisation de sélecteurs sur une page, les sélecteurs qui fournissent une valeur sémantique sont recommandés.
    * Si une personne ne peut pas lire votre URL, un moteur de recherche ne le peut pas non plus.
    * Par exemple :
-      `mybrand.com/products/product-detail.product-category.product-name.html`
-est préférable à 
-`mybrand.com/products/product-detail.1234.html`
+     `mybrand.com/products/product-detail.product-category.product-name.html`
+est préférable à `mybrand.com/products/product-detail.1234.html`
 
 * Évitez autant que possible les sous-domaines, car les moteurs de recherche les traitent comme des entités différentes et réduisent la valeur du site pour l’optimisation du moteur de recherche.
 
@@ -109,14 +108,14 @@ La tendance des dernières années a été de les supprimer afin que les URL soi
 
 * améliorent la lisibilité de l’URL ;
 * vous permettent de mettre les pages en cache sur le Dispatcher et d’améliorer la sécurité ;
-* vous permettent de traiter le contenu directement, plutôt que de disposer d’un servlet générique qui récupère le contenu. Vous pouvez ainsi profiter des avantages des listes ACL que vous appliquez au référentiel et des filtres que vous appliquez sur le Dispatcher.
+* vous permettent de traiter le contenu directement, plutôt que de disposer d’un servlet générique qui récupère le contenu. Vous pouvez ainsi profiter des avantages des ACL que vous appliquez au référentiel et des filtres que vous appliquez sur le Dispatcher.
 
 #### Utilisation de sélecteurs pour les servlets {#using-selectors-for-servlets}
 
 AEM propose deux options d’écriture de servlets :
 
 * les servlets **bin** ;
-* les servlets **Sling**.
+* les servlets **Sling**
 
 Les exemples suivants illustrent comment enregistrer des servlets qui suivent ces deux schémas, ainsi que l’avantage obtenu grâce à l’utilisation des servlets Sling.
 
@@ -171,7 +170,7 @@ Les avantages de cette approche sont les suivants :
 
 * Vous pouvez créer la valeur d’optimisation du moteur de recherche, acquise par la sémantique présente dans la hiérarchie de votre site et le nom de la page.
 * Comme aucun paramètre de requête n’est présent, le Dispatcher peut mettre la réponse en cache. En outre, toutes les mises à jour apportées à la page adressée invalident ce cache lorsque la page est activée.
-* Toutes les listes ACL appliquées à `/content/my-brand/my-page` prennent effet lorsqu’un utilisateur ou une utilisatrice tente d’accéder à cette servlet.
+* Toutes les ACL appliquées à `/content/my-brand/my-page` prennent effet lorsqu’un utilisateur ou une utilisatrice tente d’accéder à cette servlet.
 * Le Dispatcher est déjà configuré pour diffuser ce contenu en tant que fonction de diffusion du site web. Aucune configuration supplémentaire n’est nécessaire.
 
 ### Réécriture d’URL {#url-rewriting}
@@ -189,20 +188,20 @@ Si un auteur souhaite qu’une page soit accessible depuis un autre emplacement 
 Vous pouvez afficher les noms de pages localisés pour les utilisateurs de contenu traduit. Par exemple :
 
 * plutôt que de demander à un utilisateur hispanophone d’accéder à :
-   `www.mydomain.com/es/home.html`
+  `www.mydomain.com/es/home.html`
 
 * il serait préférable que l’URL soit :
-   `www.mydomain.com/es/casa.html`.
+  `www.mydomain.com/es/casa.html`.
 
 La difficulté en matière de localisation du nom d’une page réside dans le fait que plusieurs outils de localisation disponibles sur la plateforme AEM nécessitent que les noms de cette page correspondent dans toutes les langues pour que le contenu reste synchronisé.
 
 La propriété `sling:alias` permet de pallier cette difficulté. `sling:alias` peut être ajouté comme propriété à n’importe quelle ressource pour donner un nom d’alias à la ressource. Dans l’exemple précédent, vous auriez :
 
 * une page dans le JCR à :
-   `…/es/home`
+  `…/es/home`
 
 * à laquelle vous ajoutez ensuite une propriété :
-   `sling:alias` = `casa`
+  `sling:alias` = `casa`
 
 Les outils de traduction d’AEM tels que le gestionnaire multisite peuvent ainsi conserver des relations entre :
 
@@ -221,12 +220,11 @@ Tout en permettant aux utilisateurs finaux d’interagir avec le nom de la page 
 Dans une installation AEM standard :
 
 * pour la configuration OSGi
-   **Apache Sling Resource Resolver Factory**
-( 
-`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+  **Apache Sling Resource Resolver Factory**
+(`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * la propriété
-   **Emplacement de mappage** (`resource.resolver.map.location`)
+  **Emplacement de mappage** (`resource.resolver.map.location`)
 
 * a pour défaut la valeur `/etc/map`.
 
@@ -255,8 +253,8 @@ Cependant, il existe également un moyen plus simple de gérer ce problème :
    À l’aide de la console web (par exemple, localhost:4502/system/console/configMgr), vous pouvez configurer le résolveur de ressources Sling :
 
    * **Apache Sling Resource Resolver Factory**
+     `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
-      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
    Il est conseillé d’établir les mappages requis pour raccourcir les URL sous la forme d’expressions régulières, puis de définir ces configurations sous un nœud OsgiConfignode, `config.publish`, qui est inclus dans votre version.
 
    Plutôt que de définir les mappages dans `/etc/map`, vous pouvez les attribuer directement à la propriété **Mappages d’URL** (`resource.resolver.mapping`) :
@@ -306,7 +304,7 @@ Pour mettre en œuvre ces règles, vous pouvez ajouter des éléments `RewriteRu
 
 ### Balises d’URL canoniques {#canonical-url-tags}
 
-Les balises d’URL canoniques sont des balises de lien placées dans l’en-tête d’un document de HTML afin de clarifier la manière dont les moteurs de recherche doivent traiter une page lors de l’indexation du contenu. Elles présentent l’avantage de s’assurer qu’une page (et ses différentes versions) sera indexée comme étant la même, même si l’URL menant vers la page peut contenir des différences.
+Les balises d’URL canoniques sont des balises de lien placées dans l’en-tête d’un document HTML afin de clarifier la manière dont les moteurs de recherche doivent traiter une page lors de l’indexation du contenu. Elles présentent l’avantage de s’assurer qu’une page (et ses différentes versions) sera indexée comme étant la même, même si l’URL menant vers la page peut contenir des différences.
 
 Par exemple, si un site offre une version d’une page compatible avec les imprimantes, un moteur de recherche indexerait potentiellement cette page indépendamment de la version standard de la page. La balise canonique indique au moteur de recherche qu’elles sont identiques.
 
@@ -323,7 +321,7 @@ Les deux appliqueraient la balise suivante à la tête de la page :
 
 `href` peut être relatif ou absolu. Le code doit être inclus dans le balisage de la page pour déterminer l’URL canonique de la page et générer cette balise.
 
-### Configuration du Dispatcher pour la non-sensibilité à la casse {#configuring-the-dispatcher-for-case-insensitivity}
+### Configuration du Dispatcher pour le non-respect de la casse {#configuring-the-dispatcher-for-case-insensitivity}
 
 La bonne pratique consiste à afficher toutes les pages en minuscules. Cependant, vous ne souhaitez pas qu’une personne obtienne une erreur 404 lorsqu’elle accède à votre site web en utilisant des lettres majuscules dans son URL. Pour cette raison, Adobe recommande d’ajouter une règle de réécriture dans la configuration Apache HTTP Server de façon à mapper toutes les URL entrantes vers une version en lettres minuscules. En outre, les créateurs de contenu doivent être formés pour créer leurs pages avec des noms en minuscules.
 
@@ -470,7 +468,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-De plus, la fonctionnalité mise en œuvre pour les plans de site XML peut également être utilisée dans différents cas d’utilisation, par exemple pour ajouter le lien canonique ou des variantes linguistiques à l’en-tête d’une page. Voir l’interface [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) pour plus d’informations.
+De plus, la fonctionnalité mise en oeuvre pour les plans de site XML peut également être utilisée pour différents cas d’utilisation, par exemple pour ajouter le lien canonique ou des variantes linguistiques à l’en-tête d’une page. Voir l’interface [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) pour plus d’informations.
 
 ### Création de redirections 301 pour les URL héritées {#creating-redirects-for-legacy-urls}
 

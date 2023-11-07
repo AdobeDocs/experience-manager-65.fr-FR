@@ -6,10 +6,10 @@ role: User, Admin
 feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '1162'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -113,7 +113,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
    ![Sélectionner ou annuler la sélection des colonnes d’un rapport](assets/custom_columns.png)
 
 1. Cliquez sur **[!UICONTROL Créer]** dans la barre d’outils. Un message indique que la génération du rapport a été lancée.
-1. Sur la page [!UICONTROL Rapports de ressources], l’état de la génération des rapports repose sur l’état actuel de la tâche de rapport ; par exemple [!UICONTROL Réussite], [!UICONTROL Échec], [!UICONTROL En file d’attente] ou [!UICONTROL Planifié]. Le même état s’affiche dans la boîte de réception des notifications. Pour afficher la page du rapport, cliquez sur le lien du rapport. Vous pouvez également sélectionner le rapport et cliquer sur **[!UICONTROL Afficher]** dans la barre d’outils.
+1. Sur le [!UICONTROL Rapports de ressources] , l’état de génération de rapport est basé sur l’état actuel de la tâche de rapport, par exemple : [!UICONTROL Succès], [!UICONTROL En échec], [!UICONTROL En file d&#39;attente], ou [!UICONTROL Planifié]. Le même état s’affiche dans la boîte de réception des notifications. Pour afficher la page du rapport, cliquez sur le lien du rapport. Vous pouvez également sélectionner le rapport et cliquer sur **[!UICONTROL Afficher]** dans la barre d’outils.
 
    ![Un rapport généré](assets/report_page.png)
 

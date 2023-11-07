@@ -2,10 +2,10 @@
 title: En savoir plus sur les bases de la modélisation de contenu
 description: Découvrez les bases de la modélisation du contenu pour votre CMS découplé à l’aide de fragments de contenu.
 exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 89%
+source-wordcount: '896'
+ht-degree: 87%
 
 ---
 
@@ -105,7 +105,7 @@ Cette section fournit des références à d’autres fragments de contenu.
 Ce type de référence est utilisé pour créer du contenu imbriqué, présentant les relations nécessaires au modèle de votre contenu.
 Le type de données peut être configuré pour permettre aux auteurs de fragments de procéder aux opérations suivantes :
    * Modifier directement le fragment référencé.
-   * Créer un fragment de contenu, en fonction du modèle approprié.
+   * Créer un fragment de contenu, en fonction du modèle approprié
 
 >[!NOTE]
 >
@@ -130,7 +130,7 @@ Par exemple, les modèles de fragment de contenu suivants peuvent être définis
 * Personne
 * Distinctions
 
-Cela semble évident, bien sûr, mais une entreprise compte à la fois un PDG et des employés...Et chaque élément d’entre eux est défini en tant que personne.
+Cela semble assez simple, mais une entreprise a à la fois un PDG et des employés....Et chaque élément d’entre eux est défini en tant que personne.
 
 Et une personne peut recevoir une distinction (ou peut-être deux).
 

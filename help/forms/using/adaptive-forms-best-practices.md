@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4734'
-ht-degree: 39%
+source-wordcount: '4725'
+ht-degree: 38%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 39%
 
 ## Présentation {#overview}
 
-Les formulaires Adobe Experience Manager (AEM) peuvent vous aider à transformer des transactions complexes en expériences numériques simples et attrayantes. Toutefois, il nécessite un effort concerté pour mettre en oeuvre, créer, exécuter et maintenir un écosystème AEM Forms efficace et productif.
+Les formulaires Adobe Experience Manager (AEM) peuvent vous aider à transformer des transactions complexes en expériences numériques simples et agréables. Toutefois, il nécessite un effort concerté pour mettre en oeuvre, créer, exécuter et maintenir un écosystème AEM Forms efficace et productif.
 
 Ce document fournit des instructions et des recommandations dont peuvent bénéficier l’administrateur, les auteurs et les développeurs de formulaires lorsque vous utilisez AEM Forms, en particulier le composant de formulaires adaptatifs. Il aborde les bonnes pratiques à appliquer, de la configuration d’un projet de développement de formulaires à la configuration, la personnalisation, la création et l’optimisation d’AEM Forms. Ces bonnes pratiques contribuent globalement aux performances globales de l’écosystème d’AEM Forms.
 
@@ -68,7 +68,7 @@ Une fois votre projet AEM configuré, définissez la stratégie de création et 
    * **Modèle de formulaire XFA**: il s’agit d’un modèle de formulaire idéal si vous avez des investissements dans des formulaires HTML5 basés sur XFA. Il fournit un moyen direct de convertir vos formulaires basés sur XFA en formulaires adaptatifs. Toutes les règles XFA existantes sont conservées dans les formulaires adaptatifs associés. Les formulaires adaptatifs obtenus prennent en charge les éléments XFA, tels que les validations, les événements, les propriétés et les modèles.
    * **Modèle de données de formulaire** : il s’agit du modèle de formulaire idéal si vous souhaitez intégrer les systèmes back-end tels que les bases de données, les services web et un profil utilisateur AEM pour préremplir des formulaires adaptatifs et enregistrer des données de formulaire envoyé dans les systèmes back-end. Un éditeur de modèle de données de formulaire vous permet de définir et de configurer des entités et des services dans un modèle de données de formulaire que vous pouvez utiliser pour créer des formulaires adaptatifs. Pour plus d’informations, voir [Intégration de données AEM Forms](/help/forms/using/data-integration.md).
 
-Il est important de sélectionner avec soin le modèle de données qui correspond à vos besoins, tout en optimisant vos investissements existants dans les ressources XFA et XSD, le cas échéant. Il est recommandé d’utiliser XSD Model pour créer des modèles de formulaire car le fichier XML généré contient les données selon l’expression XPATH définie par le schéma. L’utilisation du modèle XSD comme choix par défaut pour le modèle de données de formulaire s’avère également utile, dans la mesure où il découple la conception de formulaire du système principal qui traite et consomme des données, et améliore les performances du formulaire en raison d’un mappage un à un des champs de formulaire. En outre, BindRef du champ peut être transformé en XPATH de sa valeur de données en XML.
+Il est important de sélectionner avec soin le modèle de données qui correspond à vos besoins, tout en optimisant vos investissements existants dans les ressources XFA et XSD, le cas échéant. Utilisez le modèle XSD pour créer des modèles de formulaire, car le fichier XML généré contient des données conformément à XPATH défini par le schéma. L’utilisation du modèle XSD comme choix par défaut pour le modèle de données de formulaire s’avère également utile, dans la mesure où il découple la conception de formulaire du système principal qui traite et consomme des données, et améliore les performances du formulaire en raison d’un mappage un à un des champs de formulaire. En outre, BindRef du champ peut être transformé en XPATH de sa valeur de données en XML.
 
 Pour plus d’informations, voir [Création d’un formulaire adaptatif](/help/forms/using/creating-adaptive-form.md).
 
@@ -103,7 +103,7 @@ Vous pouvez également charger les modèles de formulaire à partir des packages
 * Nous recommandons le mode d’exécution **nosamplecontent** uniquement pour les nœuds d’auteur et non pour les nœuds de publication.
 * La création de ressources telles que les formulaires adaptatifs, les thèmes, les modèles ou les configurations cloud s’effectue uniquement sur les nœuds d’auteur, qui peuvent être publiés sur les nœuds de publication configurés.
 Pour plus d’informations, reportez-vous à [Publication et annulation de la publication de formulaires et de documents](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=fr).
-* Le package du module complémentaire Forms est nécessaire pour la création et la publication, afin de prendre en charge les opérations de service de document. Il peut donc être considéré comme une dépendance.
+* Le module complémentaire Forms est nécessaire pour la création et la publication afin de prendre en charge les opérations de service de document. Il peut donc être considéré comme une dépendance.
 Si vous souhaitez uniquement des packages d’exemples de modèle, de thèmes et de documents d’enregistrement liés à Forms, vous pouvez les télécharger à partir de [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=fr).
 
 Pour plus d’informations, reportez-vous aux bonnes pratiques dans [Présentation de la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md).
@@ -187,7 +187,7 @@ L’éditeur de règles fournit un éditeur visuel et un éditeur de code pour l
 
 ### Utilisation des thèmes {#working-with-themes}
 
-Adaptatif pour les thèmes permet de créer des styles réutilisables qui peuvent être appliqués à l’ensemble des formulaires pour un aspect et un style cohérents. Il est recommandé d’utiliser les thèmes pour définir le style des composants et des panneaux de formulaire. Voici quelques bonnes pratiques relatives aux thèmes :
+Adaptatif pour les thèmes permet de créer des styles réutilisables qui peuvent être appliqués à l’ensemble des formulaires pour un aspect et un style cohérents. Utilisez les thèmes pour définir le style des composants et des panneaux de formulaire. Voici quelques bonnes pratiques relatives aux thèmes :
 
 * Utilisez la bibliothèque de ressources pour appliquer rapidement les styles de texte, l’arrière-plan et les images. Lorsqu’un style est ajouté à la bibliothèque de ressources, il est disponible pour d’autres thèmes et dans le mode Style de l’éditeur de formulaires.
 * Appliquez des paramètres globaux tels que la police et l’arrière-plan de page à l’aide du sélecteur de niveau page.
@@ -241,7 +241,7 @@ Les formulaires adaptatifs nécessitent des actions Envoyer pour traiter les don
 * Vous pouvez créer une action d’envoi personnalisée si les actions d’envoi par défaut ne remplissent pas votre cas d’utilisation. Pour plus d’informations, voir [Création d’une action Envoyer personnalisée pour les formulaires adaptatifs](/help/forms/using/custom-submit-action-form.md).
 * Incluez des validations côté serveur pour empêcher l’envoi de données non valides.
 
-Vous pouvez tirer parti de l’expérience multi-signes d’Adobe Sign dans les formulaires adaptatifs. Tenez compte des points suivants lors de la configuration d’Adobe Sign dans les formulaires adaptatifs. Pour plus d’informations, voir [Utiliser Adobe Sign dans un formulaire adaptatif](/help/forms/using/working-with-adobe-sign.md).
+Vous pouvez utiliser l’expérience multi-signes d’Adobe Sign dans les formulaires adaptatifs. Tenez compte des points suivants lors de la configuration d’Adobe Sign dans les formulaires adaptatifs. Pour plus d’informations, voir [Utiliser Adobe Sign dans un formulaire adaptatif](/help/forms/using/working-with-adobe-sign.md).
 
 * Le formulaire adaptatif comprenant Adobe Sign est envoyé uniquement après que tous les signataires ont signé le formulaire. Les formulaires affichent l’état En attente de signature jusqu’à ce que le formulaire soit signé par tous les signataires.
 * Vous pouvez configurer une expérience de signature dans le formulaire ou rediriger les signataires vers une page de signature lors de l’envoi.

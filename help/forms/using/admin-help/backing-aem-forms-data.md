@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1533'
 ht-degree: 10%
 
 ---
@@ -52,7 +52,7 @@ En outre, respectez les instructions suivantes pour le processus de sauvegarde/r
 
   Tenez compte des points suivants lors de la sauvegarde des instances d’auteur et de publication :
 
-   * Assurez-vous que la sauvegarde des instances de création et de publication est synchronisée pour qu’elle démarre en même temps. Bien que vous puissiez continuer à utiliser les instances de création et de publication pendant la sauvegarde, il est recommandé de ne pas publier de ressource pendant la sauvegarde afin d’éviter toute modification non capturée. Attendez que la sauvegarde des instances d’auteur et de publication se termine avant de publier de nouvelles ressources.
+   * Assurez-vous que la sauvegarde des instances d’auteur et de publication est synchronisée pour démarrer simultanément. Bien que vous puissiez continuer à utiliser les instances de création et de publication pendant la sauvegarde, il est recommandé de ne pas publier de ressource pendant la sauvegarde afin d’éviter toute modification non capturée. Attendez que la sauvegarde des instances d’auteur et de publication se termine avant de publier de nouvelles ressources.
    * La sauvegarde complète du noeud Auteur comprend la sauvegarde des données Forms Manager et AEM Forms Workspace.
    * Les développeurs de Workbench peuvent continuer à travailler sur leurs processus localement. Ils ne doivent pas déployer de nouveaux processus pendant la phase de sauvegarde.
    * La décision concernant la durée de chaque session de sauvegarde (pour le mode de sauvegarde restauration) doit être basée sur la durée totale de sauvegarde de toutes les données dans AEM Forms (base de données, stockage global de documents, référentiel d’AEM et de toutes les autres données personnalisées supplémentaires).
@@ -74,7 +74,7 @@ Ces articles fournissent des conseils sur les fonctions de base de données pour
 
 ### Passage en mode de sauvegarde {#entering-the-backup-modes}
 
-Vous pouvez utiliser Administration Console, la commande LCBackupMode ou l’API disponible avec l’installation d’AEM Forms pour passer en mode de sauvegarde. Pour le sauvegarde restauration (couverture continue), l’option Administration Console n’est pas disponible ; vous devez utiliser l’option de ligne de commande ou l’API. <!-- Fix broken link For information about using the API to enter and leave backup modes, see AEM Forms API Reference on Help and Tutorials page. -->
+Vous pouvez utiliser Administration Console, la commande LCBackupMode ou l’API disponible avec l’installation d’AEM Forms pour passer en mode de sauvegarde. Pour le sauvegarde restauration (couverture continue), l’option Administration Console n’est pas disponible ; vous devez utiliser soit l’option de ligne de commande, soit l’API. <!-- Fix broken link For information about using the API to enter and leave backup modes, see AEM Forms API Reference on Help and Tutorials page. -->
 
 >[!NOTE]
 >
@@ -98,7 +98,7 @@ Vous pouvez utiliser l’interface de ligne de commande `LCBackupMode` pour mett
 1. Dans l’invite de commande, exécutez la commande suivante sur une seule ligne :
 
    * (Windows) `LCBackupMode.cmd enter [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `] [-label=`*labelname* `] [-timeout=`*seconds* `]`
-   * (Linux®, UNIX®) `LCBackupMode.sh enter [-host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `] [-label=`*labelname* `]`
+   * (Linux®, UNIX®) `LCBackupMode.sh enter [-host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `] [-label=`*label* `]`
 
    Dans les commandes précédentes, les emplacements réservés peuvent être définis comme suit :
 
@@ -137,7 +137,7 @@ Vous pouvez utiliser l’interface de ligne de commande pour sortir AEM Forms du
 
    >[!NOTE]
    >
-   >Vous devez définir le répertoire JAVA_HOME comme décrit dans le chapitre correspondant pour votre serveur d’applications dans la section [Préparation à l’installation d’AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_fr)*.*
+   >Définissez le répertoire JAVA_HOME comme décrit dans le chapitre correspondant pour votre serveur d’applications dans [Préparation à l’installation d’AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_fr)*.*
 
 1. Exécutez la commande suivante sur une seule ligne :
 

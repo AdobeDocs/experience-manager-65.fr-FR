@@ -1,19 +1,15 @@
 ---
 title: Gérer les abonnements
-seo-title: Managing Subscriptions
 description: Les utilisateurs et utilisatrices peuvent être invités à s’abonner à des listes de diffusion de fournisseurs de services de messagerie à l’aide du composant Formulaire utilisé sur une page Web AEM. Pour préparer une page AEM avec un formulaire d’abonnement à des listes de diffusion d’un service de messagerie, appliquez la configuration de service correspondante à la page AEM que consultera l’abonné(e) potentiel(le).
-seo-description: Users can be asked to subscribe to Email Service Provider's mailing lists with the help of the Form component used on an AEM web page. To prepare an AEM page with a sign-up form for subscription to your e-mail service mailing lists, you must apply the corresponding service configuration to the AEM page that the potential subscriber will visit.
-uuid: b2578a3d-dba1-4114-b21a-5f34c0cccc5a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 exl-id: add05d22-3a11-49e9-a554-2315962552d5
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 53%
+source-wordcount: '913'
+ht-degree: 52%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 53%
 >[!NOTE]
 >
 >Adobe ne prévoit pas d’optimiser cette fonctionnalité (Gestion des prospects et des listes).
->Il est recommandé d’utiliser [Adobe Campaign et son intégration à AEM](/help/sites-administering/campaign.md).
+>Il est recommandé d’utiliser [Adobe Campaign et son intégration AEM](/help/sites-administering/campaign.md).
 
 Les utilisateurs peuvent être invités à s’abonner à des listes de publipostage de **fournisseurs de services de messagerie** à l’aide du composant **Formulaire** utilisé sur une page Web AEM. Pour préparer une page AEM avec un formulaire d’abonnement à des listes de diffusion d’un service de messagerie, appliquez la configuration de service correspondante à la page AEM que consultera l’abonné potentiel.
 

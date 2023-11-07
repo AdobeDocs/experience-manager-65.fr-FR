@@ -4,10 +4,10 @@ description: Découvrez comment effectuer une mise à niveau statique pour AEM 6
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 43%
+source-wordcount: '1238'
+ht-degree: 37%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 43%
 
 Avant d&#39;exécuter votre mise à niveau, plusieurs étapes doivent être réalisées. Voir [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) et [Tâches de maintenance avant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) pour plus d’informations. Veillez également à ce que votre système réponde aux exigences de la nouvelle version d’AEM. Découvrez comment l’outil de détection des motifs peut vous aider à estimer la complexité de votre mise à niveau et voir également la section Portée et exigences de la mise à niveau de [Planification de la mise à niveau](/help/sites-deploying/upgrade-planning.md) pour plus d’informations.
 
-<!--Finally, note that the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
+<!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## Conditions préalables à la migration {#migration-prerequisites}
 
@@ -113,7 +113,7 @@ Où `<<YOUR_PROFILE>>` et `<<ADDITIONAL_FLAGS>>` sont remplacés par le profil e
 
 **Vous pouvez également avoir besoin de commutateurs supplémentaires pour les scénarios suivants :**
 
-* Si vous effectuez la mise à niveau sur un système Windows, sur lequel le mappage de la mémoire Java n’est pas géré correctement, ajoutez le paramètre `--disable-mmap` à la commande.
+* Si vous effectuez la mise à niveau sur un système Windows où le mappage de la mémoire Java n’est pas géré correctement, ajoutez le `--disable-mmap` à la commande.
 
 Pour plus d’informations sur l’utilisation de l’outil crx2oak, voir Utilisation de la variable [Outil de migration CRX2Oak](/help/sites-deploying/using-crx2oak.md). Le fichier JAR d’assistance crx2oak peut être mis à niveau manuellement si nécessaire, en le remplaçant manuellement par des versions plus récentes après avoir décompressé le démarrage rapide. Son emplacement dans le dossier d’installation AEM est le suivant :   `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. La dernière version de l’outil de migration CRX2Oak peut être téléchargée sur Adobe Repository, à l’adresse : [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
@@ -127,7 +127,7 @@ Lorsque `FileDataStore` est la nouvelle valeur par défaut pour des installation
 
 ## Résolution des problèmes de migration {#troubleshooting-migration-issues}
 
-Veuillez ignorer cette section si vous effectuez une mise à niveau à partir de la version 6.3. Bien que les profils crx2oak fournis répondent aux besoins de la plupart des clients, des paramètres supplémentaires sont parfois nécessaires. Si vous rencontrez une erreur lors de la migration, il est possible que certains aspects de votre environnement nécessitent des options de configuration supplémentaires. Si c’est le cas, l’erreur suivante se produira probablement :
+Ignorez cette section si vous effectuez une mise à niveau depuis la version 6.3. Bien que les profils crx2oak fournis répondent aux besoins de la plupart des clients, des paramètres supplémentaires sont parfois nécessaires. Si vous rencontrez une erreur lors de la migration, il est possible que certains aspects de votre environnement nécessitent des options de configuration supplémentaires. Si c’est le cas, l’erreur suivante se produira probablement :
 
 **Les points de contrôle ne seront pas copiés, car aucun entrepôt de données externe n’a été spécifié. Cela entraînera la réindexation complète du référentiel au premier démarrage. Utilisez —skip-checkpoints pour forcer la migration ou consultez https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration pour plus d’informations.**
 
@@ -161,13 +161,13 @@ Où `/path/to/datastore` représente le chemin d’accès à votre magasin de do
 
 ### Détermination de la commande de démarrage de mise à niveau appropriée {#determining-the-correct-upgrade-start-command}
 
-Pour exécuter la mise à niveau, il est important de commencer AEM utiliser le fichier jar pour faire apparaître l’instance. Pour passer à la version 6.5, veuillez également consulter d’autres options de migration et de restructuration de contenu dans la [Migration de contenu différée](/help/sites-deploying/lazy-content-migration.md) que vous pouvez sélectionner avec la commande de mise à niveau.
+Pour exécuter la mise à niveau, il est important de commencer AEM utiliser le fichier jar pour faire apparaître l’instance. Pour passer à la version 6.5, voir les autres options de migration et de restructuration de contenu dans [Migration différée du contenu](/help/sites-deploying/lazy-content-migration.md) que vous pouvez choisir avec la commande de mise à niveau.
 
 >[!IMPORTANT]
 >
->Si vous exécutez Oracle Java 11 (ou en général les versions de Java ultérieures à la version 8), des modifications supplémentaires doivent être ajoutées à votre ligne de commande lors du démarrage d’AEM. Pour plus d’informations, consultez la section [Considérations sur Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
+>Si vous exécutez Oracle Java 11 (ou généralement des versions de Java plus récentes que 8), des commutateurs supplémentaires doivent être ajoutés à votre ligne de commande lors du démarrage de l’AEM. Pour plus d’informations, consultez la section [Considérations sur Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
-Notez que le fait de démarrer AEM à partir du script de démarrage ne lance pas la mise à niveau. La plupart des clients commencent AEM à utiliser le script de démarrage et ont personnalisé ce script de démarrage pour inclure des commutateurs pour les configurations d’environnement telles que les paramètres de mémoire, les certificats de sécurité, etc. Pour cette raison, Adobe recommande de suivre cette procédure pour déterminer la commande de mise à niveau appropriée :
+Notez que le fait de démarrer AEM à partir du script de démarrage ne lance pas la mise à niveau. La plupart des clients AEM à l’aide du script de démarrage et ont personnalisé ce script de démarrage afin d’inclure des commutateurs pour les configurations d’environnement telles que les paramètres de mémoire, les certificats de sécurité, etc. Pour cette raison, Adobe recommande de suivre cette procédure pour déterminer la commande de mise à niveau appropriée :
 
 1. Sur une instance d’AEM en cours d’exécution, exécutez les opérations ci-dessous dans une ligne de commande :
 

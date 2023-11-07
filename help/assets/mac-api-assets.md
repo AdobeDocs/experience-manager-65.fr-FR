@@ -6,10 +6,10 @@ role: Developer
 feature: APIs,Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 100%
+source-wordcount: '1743'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Pour accéder à l’API :
 1. Ouvrez le document du service API à l’adresse `https://[hostname]:[port]/api.json`.
 1. Suivez le lien du service [!DNL Assets] pointant vers `https://[hostname]:[server]/api/assets.json`.
 
-La réponse de l’API est un fichier JSON pour certains types MIME et un code de réponse pour tous les types MIME. La réponse JSON est facultative et peut ne pas être disponible, par exemple pour les fichiers PDF. Fiez-vous au code de réponse pour une analyse ou des actions supplémentaires.
+La réponse de l’API est un fichier JSON pour certains types MIME et un code de réponse pour tous les types MIME. La réponse JSON est facultative et peut ne pas être disponible, par exemple, pour les fichiers de PDF. Fiez-vous au code de réponse pour une analyse ou des actions supplémentaires.
 
 Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web [!DNL Assets] ni par le biais de l’API HTTP. L’API renvoie un message d’erreur 404 si l’[!UICONTROL heure d’activation] se situe dans le futur ou si l’[!UICONTROL heure de désactivation] se situe dans le passé.
 
@@ -211,7 +211,7 @@ if (jcrcontentNode.hasProperty("jcr:title"))
 
 ## Créer un rendu de ressource {#create-an-asset-rendition}
 
-Créer un rendu pour une ressource. Si le nom de paramètre de requête n’est pas fourni, le nom de fichier est utilisé comme nom du rendu.
+Créez un rendu de ressource pour une ressource. Si le nom de paramètre de requête n’est pas fourni, le nom de fichier est utilisé comme nom du rendu.
 
 **Paramètres** : les paramètres sont `name` pour le nom du rendu et `file` pour la référence au fichier.
 

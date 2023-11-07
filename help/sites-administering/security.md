@@ -10,10 +10,10 @@ discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '5401'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -27,7 +27,7 @@ Cette section aborde plus en détail les différentes entités et les concepts a
 
 ### Utilisateurs {#users}
 
-Les utilisateurs et les utilisatrices se connectent à AEM avec leur compte. Chaque compte utilisateur est unique et contient les détails de base du compte ainsi que les privilèges qui lui sont attribués.
+Les utilisateurs et les utilisatrices se connectent à AEM avec leur compte. Chaque compte d’utilisateur est unique et contient les détails de base du compte ainsi que les privilèges qui lui sont attribués.
 
 Les utilisateurs et les utilisatrices sont souvent membres de groupes, ce qui simplifie l’attribution de ces autorisations et/ou privilèges.
 
@@ -67,7 +67,7 @@ Les tableaux suivants répertorient chaque élément avec :
    <td><p>administrateur</p> <p>Mot de passe par défaut : admin</p> </td>
    <td>Utilisateur</td>
    <td><p>Compte d’administration système avec droits d’accès complets.</p> <p>Ce compte est utilisé pour la connexion entre la gestion de contenu web AEM et CRX.</p> <p>Si vous supprimez ce compte par erreur, il sera recréé lors du redémarrage du référentiel (dans la configuration par défaut).</p> <p>Le compte administrateur est une exigence de la plateforme AEM. Par conséquent, ce compte ne peut pas être supprimé.</p> </td>
-   <td><p>Adobe vous recommande de modifier le mot de passe par défaut de ce compte utilisateur.</p> <p>De préférence lors de l’installation, bien que vous puissiez le faire par la suite.</p> <p>Remarque : ne confondez pas ce compte avec le compte administrateur du moteur de servlet CQ.</p> </td>
+   <td><p>Adobe vous recommande de modifier le mot de passe par défaut de ce compte d’utilisateur.</p> <p>De préférence lors de l’installation, bien que vous puissiez le faire par la suite.</p> <p>Remarque : ne confondez pas ce compte avec le compte administrateur du moteur de servlet CQ.</p> </td>
   </tr>
   <tr>
    <td><p>anonyme</p> <p> </p> </td>
@@ -565,7 +565,7 @@ AEM propose trois manières de supprimer des utilisateurs, des utilisatrices ou 
 
 Pour supprimer un compte d’utilisateur ou de groupe d’un groupe, procédez comme suit :
 
-1. Double-cliquez sur le nom du groupe ou du compte utilisateur que vous souhaitez supprimer d’un groupe.
+1. Double-cliquez sur le nom du groupe ou du compte d’utilisateur que vous souhaitez supprimer d’un groupe.
 1. Cliquez sur l’onglet **Groupes**. Vous voyez à quels groupes le compte sélectionné appartient.
 1. Dans le volet **Groupes**, cliquez sur le nom de l’utilisateur ou du groupe que vous souhaitez supprimer du groupe et cliquez sur **Supprimer**. (Si vous souhaitez supprimer plusieurs comptes, utilisez la combinaison Maj+clic ou Ctrl+clic sur ces noms et cliquez sur **Supprimer**.)
 

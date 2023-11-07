@@ -11,20 +11,20 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1889'
+source-wordcount: '1885'
 ht-degree: 67%
 
 ---
 
 # Récupération de l’espace mémoire de l’entrepôt de données {#data-store-garbage-collection}
 
-Lorsqu’une ressource WCM conventionnelle est supprimée, la référence à l’enregistrement d’entrepôt de données sous-jacent peut être supprimée de la hiérarchie de nœud, mais l’enregistrement d’entrepôt de données lui-même est conservé. Cet enregistrement d’entrepôt de données non référencé devient alors &quot;ordure&quot; qui n’a pas besoin d’être conservée. Dans les cas où il existe un certain nombre de ressources de mémoire, il est préférable de les supprimer afin de préserver de l’espace et d’optimiser les performances de sauvegarde et de maintenance du système de fichiers.
+Lorsqu’une ressource WCM conventionnelle est supprimée, la référence à l’enregistrement d’entrepôt de données sous-jacent peut être supprimée de la hiérarchie de nœud, mais l’enregistrement d’entrepôt de données lui-même est conservé. Cet enregistrement d’entrepôt de données non référencé devient alors &quot;ordure&quot; qui n’a pas besoin d’être conservée. Dans les cas où plusieurs ressources de mémoire existent, il est préférable de les éliminer pour préserver de l’espace et optimiser les performances de sauvegarde et de maintenance du système de fichiers.
 
 Le plus souvent, une application WCM tend à collecter des informations, mais à ne pas les supprimer aussi souvent. Bien que de nouvelles images soient ajoutées qui remplacent même les anciennes versions, le système de contrôle de version conserve encore l’ancienne version et prend sa restauration en charge si nécessaire. Ainsi, la majorité du contenu que nous pensons ajouter au système est définitivement stocké. Quelle est donc la source type de &quot;déchets&quot; dans le référentiel que nous pourrions vouloir nettoyer ?
 
-AEM utilise le référentiel comme stockage pour un certain nombre d&#39;activités internes et de maintenance :
+AEM utilise le référentiel comme stockage pour plusieurs activités internes et de maintenance :
 
 * Packages créés et téléchargés
 * Fichiers temporaires créés pour la réplication de publication
@@ -157,7 +157,7 @@ Pour exécuter la récupération de l’espace mémoire :
 
 ## Automatisation du nettoyage de la mémoire d’entrepôt de données {#automating-data-store-garbage-collection}
 
-Si possible, le nettoyage de la mémoire d’entrepôt de données doit être exécuté lorsque la charge du système est faible, par exemple le matin.
+Si possible, le nettoyage de la mémoire d’entrepôt de données doit être exécuté lorsque la charge du système est faible, par exemple, le matin.
 
 La période de maintenance hebdomadaire intégrée, disponible via le [tableau de bord des opérations](/help/sites-administering/operations-dashboard.md), contient une tâche intégrée pour déclencher le nettoyage de la mémoire d’entrepôt de données à 1 heure du matin le dimanche. Vous devez également vérifier qu’aucune sauvegarde n’est en cours à ce moment. Le début de la fenêtre de maintenance peut être personnalisé au besoin à partir du tableau de bord.
 

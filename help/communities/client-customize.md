@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 exl-id: bf34f564-ac93-4c8c-95f7-8690d99d85cb
-source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1232'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Le recouvrement d’un composant est une méthode permettant d’apporter des mo
 
 La superposition est effectuée en modifiant une copie du composant par défaut dans le /**apps** plutôt que de modifier le composant d’origine dans /**libs** répertoire . Le composant est construit avec un chemin relatif identique, à l’exception près que &quot;libs&quot; est remplacé par &quot;apps&quot;.
 
-Le répertoire /apps est le premier emplacement recherché pour résoudre les requêtes. S’il est introuvable, la version par défaut située dans le répertoire /libs est utilisée.
+Le répertoire /apps est le premier emplacement recherché pour résoudre les requêtes. S’il est introuvable, la version par défaut du répertoire /libs est utilisée.
 
 Le composant par défaut du répertoire /libs ne doit jamais être modifié, car les correctifs et mises à niveau ultérieurs peuvent modifier le répertoire /libs de toute manière nécessaire tout en conservant les interfaces publiques.
 

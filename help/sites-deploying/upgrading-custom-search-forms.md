@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
 feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1681'
 ht-degree: 77%
 
 ---
@@ -30,7 +30,7 @@ Dans AEM 6.2, l’emplacement de stockage des Forms de recherche personnalisée 
 
 Pour cette raison, des ajustements manuels sont nécessaires après une mise à niveau pour que les formulaires continuent à fonctionner.
 
-Cela s’applique aux nouveaux Forms de recherche ainsi qu’aux Forms par défaut qui ont été personnalisés.
+Cela s’applique aux nouveaux Forms de recherche et aux Forms par défaut qui ont été personnalisés.
 
 Pour plus d’informations, voir la documentation sur [Facettes de recherche](/help/assets/search-facets.md).
 

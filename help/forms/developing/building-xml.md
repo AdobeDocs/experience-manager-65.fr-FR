@@ -2,10 +2,10 @@
 title: Comment utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML ?
 description: Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 68%
+source-wordcount: '992'
+ht-degree: 69%
 
 ---
 
@@ -36,7 +36,7 @@ La création globale d’applications et de processus est hors de portée pour c
 
 Une fois le processus créé avec l’activité de service Execute Script définie, il est possible d’ajouter un script à ce processus. Pour ajouter un script à ce processus :
 
-1. Accédez à la palette [!UICONTROL Propriétés du processus]. Dans cette palette, développez l’objet [!UICONTROL Entrée] et cliquez sur l’icône &quot;...&quot;.
+1. Accédez à la palette [!UICONTROL Propriétés du processus]. Dans cette palette, développez la variable [!UICONTROL Entrée] et cliquez sur l’icône &quot;...&quot;.
 
 1. Dans la zone de texte qui s’affiche, écrivez votre script. Une fois le script écrit, appuyez sur OK (voir la figure ci-dessous).
    ![Execute Script](assets/execute-script.jpg)
@@ -105,7 +105,7 @@ Le résultat de ce script simple est un nouveau document XML avec un nœud de va
 
 **Utiliser une boucle itérative pour ajouter des nœuds au XML**
 
-Il est également possible d’ajouter des nœuds à une variable XML existante dans le processus. La variable , le noeud , contient l’objet XML qui vient d’être créé.
+Il est également possible d’ajouter des nœuds à une variable XML existante dans le processus. La variable, le noeud , contient l’objet XML qui a été créé.
 
 ```xml
 Document document = patExecContext.getProcessDataValue("/process_data/node");

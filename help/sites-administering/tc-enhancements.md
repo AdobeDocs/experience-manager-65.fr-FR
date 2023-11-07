@@ -5,10 +5,10 @@ topic-tags: site-features
 content-type: reference
 feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 89%
+ht-degree: 86%
 
 ---
 
@@ -85,7 +85,7 @@ Les mises à jour de la mémoire de traduction peuvent être interceptées et en
 
 ## Copies de langue à plusieurs niveaux {#language-copies-on-multiple-levels}
 
-Les racines de langues peuvent désormais être regroupées sous des nœuds, par exemple, par région, tout en étant toujours reconnues comme des racines de copies de langue.
+Les racines de langue peuvent désormais être regroupées sous des noeuds, par exemple, par région, tout en étant encore reconnues comme racines de copies de langue.
 
 ![screen_shot_2018-04-23at144012](assets/screen_shot_2018-04-23at144012.jpg)
 

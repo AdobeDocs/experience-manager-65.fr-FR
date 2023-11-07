@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 29%
+source-wordcount: '480'
+ht-degree: 23%
 
 ---
 
@@ -29,7 +29,7 @@ Toutes les pages de We.Retail sont basées sur des modèles modifiables, ce qui 
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
-1. Notez que le sélecteur de mode ne propose plus de mode Conception. Toutes les pages de We.Retail sont basées sur des modèles modifiables et pour modifier la conception de modèles modifiables, elles doivent être modifiées dans l’éditeur de modèles.
+1. Le sélecteur de mode ne propose plus de mode Conception. Toutes les pages de We.Retail sont basées sur des modèles modifiables et pour modifier la conception de modèles modifiables, elles doivent être modifiées dans l’éditeur de modèles.
 1. Dans le menu **Informations sur la page**, sélectionnez **Éditer le modèle**.
 1. Vous êtes en train de modifier le modèle Page principale.
 
@@ -45,7 +45,7 @@ Toutes les pages de We.Retail sont basées sur des modèles modifiables, ce qui 
 
 1. Dans la boîte de dialogue de conception du conteneur de mises en page, vous pouvez :
 
-   * Sélectionner une stratégie existante ou créer une nouvelle stratégie pour le conteneur
+   * Sélectionner une stratégie existante ou créer une stratégie pour le conteneur
    * Sélectionner les composants autorisés dans le conteneur
    * Définition des composants par défaut à placer lorsqu’une ressource est glissée sur le conteneur
 
@@ -55,7 +55,7 @@ Toutes les pages de We.Retail sont basées sur des modèles modifiables, ce qui 
 
    Vous pouvez ainsi :
 
-   * Sélectionner une stratégie existante ou créer une nouvelle stratégie pour le conteneur
+   * Sélectionner une stratégie existante ou créer une stratégie pour le conteneur
    * Définissez les fonctionnalités disponibles pour l’auteur de page lors de l’utilisation de ce composant, telles que
 
       * Sources de collage autorisées
@@ -73,6 +73,6 @@ Toutes les pages de We.Retail sont basées sur des modèles modifiables, ce qui 
 
 ## Informations supplémentaires {#more-information}
 
-Reportez-vous au document [Création de modèles de page](/help/sites-authoring/templates.md) pour plus d’informations ou à la page de documentation de développement [Modèles – Modifiables](/help/sites-developing/page-templates-editable.md) pour obtenir toutes les informations techniques sur les modèles modifiables.
+Pour plus d’informations, voir le document de création [Création de modèles de page](/help/sites-authoring/templates.md) ou la page du document de développement [Modèles - Modifiables](/help/sites-developing/page-templates-editable.md) pour obtenir des détails techniques complets sur les modèles modifiables.
 
 Vous pouvez également vous renseigner sur les [composants principaux](/help/sites-developing/we-retail-core-components.md). Consultez le document de création de [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) pour obtenir un aperçu des fonctionnalités des composants principaux ou [Développement de composants principaux](https://helpx.adobe.com/fr/experience-manager/core-components/using/developing.html) pour une présentation technique.

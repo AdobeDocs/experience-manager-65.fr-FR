@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3787'
-ht-degree: 53%
+source-wordcount: '3786'
+ht-degree: 52%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 53%
 >
 >Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-La création d’un site mobile est similaire à celle d’un site classique en ce sens qu’il faut également créer des modèles et des composants. Pour plus d’informations sur la création de modèles et de composants, consultez les pages suivantes : [Modèles](/help/sites-developing/templates.md), [Composants](/help/sites-developing/components.md), et [Prise en main du développement d’AEM Sites](/help/sites-developing/getting-started.md). La principale différence consiste à activer les fonctionnalités mobiles intégrées d’Adobe Experience Manager (AEM) dans le site. Pour ce faire, créez un modèle qui repose sur le composant de page mobile.
+La création d’un site mobile est similaire à celle d’un site classique en ce sens qu’il faut également créer des modèles et des composants. Pour plus d’informations sur la création de modèles et de composants, consultez les pages suivantes : [Modèles](/help/sites-developing/templates.md), [Composants](/help/sites-developing/components.md), et [Prise en main du développement d’AEM Sites](/help/sites-developing/getting-started.md). La principale différence consiste à activer les fonctionnalités mobiles intégrées de Adobe Experience Manager (AEM) dans le site. Pour ce faire, créez un modèle qui repose sur le composant de page mobile.
 
 Envisager d’utiliser [responsive design](/help/sites-developing/responsive.md), créant un site unique prenant en charge plusieurs tailles d’écran.
 
@@ -174,7 +174,7 @@ Remarque : Bien que le même émulateur puisse être affecté à plusieurs grou
 
 * Au moyen de la boîte de dialogue de configuration du groupe d’appareils, la variable `emulators` est définie avec le chemin d’accès des émulateurs souhaités. Par exemple : `/libs/wcm/mobile/components/emulators/iPhone4`.
 
-* Les composants de l’émulateur (par exemple, `/libs/wcm/mobile/components/emulators/iPhone4`) d’étendre le composant de l’émulateur mobile de base ( `/libs/wcm/mobile/components/emulators/base`).
+* Les composants de l’émulateur (par exemple, `/libs/wcm/mobile/components/emulators/iPhone4`) étendre le composant d’émulateur mobile de base ( `/libs/wcm/mobile/components/emulators/base`).
 
 * Chaque composant qui étend l’émulateur mobile de base peut être sélectionné lors de la configuration d’un groupe d’appareils. Les émulateurs personnalisés peuvent ainsi être facilement créés ou étendus.
 * Au moment de la demande en mode d’édition, l’implémentation de l’émulateur est utilisée pour effectuer le rendu de la page.
@@ -206,7 +206,7 @@ Pour affecter un groupe d’appareils à votre site :
 1. Dans votre navigateur, accédez à la console **Siteadmin**.
 1. Ouvrez la page racine de votre site mobile ci-dessous. **Sites web**.
 1. Ouvrez les propriétés de la page.
-1. Sélectionnez la **Mobile** tab :
+1. Sélectionnez la variable **Mobile** tab :
 
    * Définissez les groupes d’appareils.
    * Cliquez sur **OK**.
@@ -243,7 +243,7 @@ Créez un groupe d’appareils lorsque les groupes AEM installés ne répondent 
 
    * As **Nom**, saisissez `special`.
 
-   * Sélectionnez la **Modèle Groupe d’appareils mobiles**.
+   * Sélectionnez la variable **Modèle Groupe d’appareils mobiles**.
    * Cliquez sur **Créer**.
 
 1. Dans CRXDE, ajoutez un fichier **static.css** contenant les styles du groupe d’appareils sous le nœud `/etc/mobile/groups/special`.
@@ -257,7 +257,7 @@ Dans l’onglet **Général** :
    * **User-Agent** : chaîne user-agent avec laquelle les appareils sont mappés. Paramètre facultatif qui peut être une expression régulière. Exemple : `BlackBerryZ10`
    * **Fonctionnalités**: définit si le groupe peut gérer les images, CSS, JavaScript ou la rotation de l’appareil.
    * **Largeur d’écran minimale** et **Hauteur**
-   * **Désactiver l’émulateur**: pour activer/désactiver l’émulateur lors de la modification du contenu.
+   * **Désactiver l’émulateur**: pour activer/désactiver l’émulateur pendant la modification du contenu.
 
    Sur le **Émulateurs** tab :
 
@@ -278,7 +278,7 @@ La boîte de dialogue de configuration de groupe d’appareils mobiles se prése
 
 Comme décrit précédemment, il est possible d’associer une page CSS personnalisée à une page de groupe d’appareils, tout comme la page CSS d’une page de conception. Ce CSS est utilisé pour influencer le rendu spécifique au groupe d’appareils du contenu de la page sur l’auteur et lors de la publication. Ce CSS est alors automatiquement inclus :
 
-* Dans la page de l’instance de création, pour chaque émulateur utilisé par ce groupe d’appareils.
+* Dans la page de l’instance d’auteur, pour chaque émulateur utilisé par ce groupe d’appareils.
 * Dans la page de l’instance de publication, si l’agent utilisateur de la requête correspond à un appareil mobile de ce groupe d’appareils particulier.
 
 ## Détection des périphériques côté serveur {#server-side-device-detection}
@@ -338,7 +338,7 @@ Ajoutez une chaîne user-agent en tant qu’expression régulière sous /apps/wc
 1. Ajoutez les propriétés suivantes au nœud :
 
    * **regexp**: expression régulière définissant user-agents, par exemple .&#42;Mozilla.&#42;iPad.&#42;AppleWebKit.&#42;Safari.&#42;
-   * **deviceId**: l’identifiant de l’appareil tel que défini dans le fichier wurfl.xml, par exemple : `apple_ipad_ver1`
+   * **deviceId**: identifiant de l’appareil tel que défini dans le fichier wurfl.xml, par exemple : `apple_ipad_ver1`
 
 La configuration ci-dessus provoque le mappage des appareils pour lesquels le user-agent correspond à l’expression régulière fournie avec l’ID d’appareil WURFL™ apple_ipad_ver1, s’il existe.
 
@@ -362,10 +362,10 @@ Pour plus d’informations sur l’intégration de la bibliothèque cliente, voi
 
 Le service `PageVariantsProvider` OSGi est capable de générer des liens secondaires pour les sites appartenant à la même famille. Pour configurer les sites que le service doit prendre en compte, une `cq:siteVariant` doit être ajouté au noeud `jcr:content` à partir de la racine du site.
 
-Le `cq:siteVariant` doit posséder les propriétés suivantes :
+La variable `cq:siteVariant` doit posséder les propriétés suivantes :
 
-* `cq:childNodesMapTo` - détermine l’attribut de l’élément de lien auquel les noeuds enfants seront mappés ; il est recommandé d’organiser le contenu de votre site web de telle sorte que les enfants du noeud racine représentent la racine d’une variante linguistique de votre site web global (par exemple, `/content/mysite/en`, `/content/mysite/de`), auquel cas la valeur de la variable `cq:childNodesMapTo` should `hreflang`;
-* `cq:variantDomain` - Indique le domaine `Externalizer` qui sera utilisé pour générer les URL absolues de variantes de page. Si cette valeur n’est pas définie, les variantes de page sont générées avec des liens relatifs.
+* `cq:childNodesMapTo` : détermine à quel attribut de l’élément de lien les noeuds enfants seront mappés. Il est recommandé d’organiser le contenu de votre site web de manière à ce que les enfants du noeud racine représentent la racine d’une variante linguistique de votre site web global (par exemple, `/content/mysite/en`, `/content/mysite/de`), auquel cas la valeur de la variable `cq:childNodesMapTo` should `hreflang`;
+* `cq:variantDomain` - indique ce qui `Externalizer` domain est utilisé pour générer les URL absolues des variantes de page ; si cette valeur n’est pas définie, les variantes de page seront générées à l’aide de liens relatifs ;
 * `cq:variantFamily` - Indique à quelle famille de sites appartient ce site. Plusieurs rendus spécifiques à chaque appareil d’un même site web doivent appartenir à la même famille.
 * `media` - Stocke les valeurs de l’attribut media de l’élément link. Il est recommandé d’utiliser le nom du `BrowserMap` enregistré avec `DeviceGroups`, de sorte que la bibliothèque `BrowserMap` puisse automatiquement rediriger les clients vers la bonne variante du site web.
 
@@ -391,11 +391,11 @@ Pour plus d’informations, voir [BrowserMap personnalisé](#creatingacustomised
 
 Si aucun des mécanismes précédents n’a été utilisé pour indiquer un autre site pour `BrowserMap`, puis les sélecteurs qui utiliseront les noms de la variable `DeviceGroups` sera ajouté à la variable `URL`s, auquel cas vous devez fournir vos propres servlets qui traiteront les requêtes.
 
-Par exemple, un appareil qui accède à `www.example.com/index.html` identifié comme un `smartphone` par BrowserMap est redirigé vers `www.example.com/index.smartphone.html.`.
+Par exemple, navigation sur un appareil `www.example.com/index.html` identifié comme `smartphone` par BrowserMap est transféré à `www.example.com/index.smartphone.html.`
 
 ### Utilisation de BrowserMap dans les pages {#using-browsermap-on-your-pages}
 
-Pour utiliser la bibliothèque cliente BrowserMap standard dans une page, vous devez inclure la variable `/libs/wcm/core/browsermap/browsermap.jsp` à l’aide d’un `cq:include`dans la balise de votre page `head` .
+Pour utiliser la bibliothèque cliente BrowserMap standard dans une page, vous devez inclure la variable `/libs/wcm/core/browsermap/browsermap.jsp` en utilisant un fichier `cq:include`dans la balise de votre page `head` .
 
 ```xml
 <cq:include script="/libs/wcm/core/browsermap/browsermap.jsp" />
@@ -521,15 +521,15 @@ Vous pouvez forcer l’appareil de n’importe quelle requête à tester une ver
 
 >[!NOTE]
 >
-Le `wcmmode` est défini sur `disabled` pour simuler le comportement d’une instance de publication.
+La variable `wcmmode` est défini sur `disabled` pour simuler le comportement d’une instance de publication.
 
-La valeur du périphérique de remplacement est stockée dans un cookie afin que vous puissiez parcourir votre site web sans ajouter la variable `device` à chaque `URL`.
+La valeur du périphérique de remplacement est stockée dans un cookie afin que vous puissiez parcourir votre site web sans ajouter la variable `device` à chaque paramètre `URL`.
 
-Par conséquent, vous devez appeler la même `URL` avec le `device` défini sur `browser` pour revenir à la version de bureau du site web.
+Par conséquent, vous devez appeler la même `URL` avec la propriété `device` défini sur `browser` pour revenir à la version de bureau du site web.
 
 >[!NOTE]
 >
-BrowserMap stocke la valeur d’appareil de remplacement dans un cookie appelé `BMAP_device`. La suppression de ce cookie garantit que CQ diffuse la version appropriée du site web en fonction de votre appareil actuel (par exemple, ordinateur de bureau ou mobile).
+BrowserMap stocke la valeur de l’appareil de remplacement dans un cookie appelé `BMAP_device`. La suppression de ce cookie garantit que CQ diffuse la version appropriée du site web en fonction de votre appareil actuel (par exemple, ordinateur de bureau ou mobile).
 
 ## Traitement des demandes mobiles {#mobile-request-processing}
 
@@ -556,10 +556,10 @@ Vous pouvez obtenir des statistiques sur le nombre de requêtes effectuées sur 
 Pour visualiser les statistiques :
 
 1. Accédez au **Outils** console.
-1. Ouvrez le **Statistiques sur les périphériques** page ci-dessous **Outils** > **Mobile**.
+1. Ouvrez le **Statistiques sur les périphériques** page suivante **Outils** > **Mobile**.
 1. Cliquez sur le lien pour afficher les statistiques pour une année, un mois ou un jour spécifique.
 
-Le **Statistiques** page se présente comme suit :
+La variable **Statistiques** page se présente comme suit :
 
 ![screen_shot_2012-02-01at24353pm](assets/screen_shot_2012-02-01at24353pm.png)
 
@@ -577,12 +577,12 @@ La page **Statistiques** est désormais disponible.
 
 ### Prise en charge de la mise en cache de page pour les liens « envoyer un lien à un ami » {#supporting-page-caching-for-send-link-to-a-friend-links}
 
-Les pages mobiles sont mises en cache sur Dispatcher, car les pages rendues pour un groupe d’appareils sont distinguées dans l’URL de la page par le sélecteur de groupe d’appareils, par exemple. `/content/mobilepage.touch.html`. Une requête vers une page mobile sans sélecteur n’est jamais mise en cache puisque, dans ce cas, la détection d’appareil fonctionne et redirige au final la page vers le groupe d’appareils correspondant (ou « nomatch » plus précisément). Une page mobile générée avec un sélecteur de groupe d’appareils est traitée par le module de réécriture de liens, qui réécrit tous les liens de la page pour qu’ils contiennent également le sélecteur de groupe d’appareils, empêchant la détection de périphérique réactive pour chaque clic sur une page déjà qualifiée.
+Les pages mobiles sont mises en cache sur Dispatcher, car les pages rendues pour un groupe d’appareils sont distinguées dans l’URL de la page par le sélecteur de groupe d’appareils, par exemple : `/content/mobilepage.touch.html`. Une requête vers une page mobile sans sélecteur n’est jamais mise en cache puisque, dans ce cas, la détection d’appareil fonctionne et redirige au final la page vers le groupe d’appareils correspondant (ou « nomatch » plus précisément). Une page mobile générée avec un sélecteur de groupe d’appareils est traitée par le module de réécriture de liens, qui réécrit tous les liens de la page pour qu’ils contiennent également le sélecteur de groupe d’appareils, empêchant la détection de périphérique réactive pour chaque clic sur une page déjà qualifiée.
 
 Par conséquent, vous pouvez rencontrer le scénario suivant :
 
 L’utilisateur « Alice » est redirigé vers `coolpage.feature.html` et envoie cette URL à un ami « Robert » qui y accède avec un autre client appartenant au groupe d’appareils `touch`.
 
-Si `coolpage.feature.html` est diffusée à partir d’un cache frontal, AEM ne peut pas analyser la requête pour détecter que le sélecteur mobile ne correspond pas au nouveau User-Agent, et Robert accède à un rendu inadéquat de la page.
+Si `coolpage.feature.html` est diffusée à partir d’un cache front-end, AEM ne peut pas analyser la requête pour détecter que le sélecteur mobile ne correspond pas au nouveau User-Agent, et Robert accède à un rendu inadéquat de la page.
 
 Pour résoudre ce problème, vous pouvez inclure une interface de sélection simple sur les pages où les utilisateurs finaux peuvent remplacer le groupe d’appareils sélectionné par AEM. Dans l’exemple ci-dessus, un lien (ou une icône) sur la page permet à l’utilisateur final de passer à `coolpage.touch.html` s&#39;ils pensent que leur appareil est assez bon pour ça.

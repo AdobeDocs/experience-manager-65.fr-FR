@@ -8,7 +8,7 @@ topic-tags: configuring
 docset: aem65
 feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3389'
 ht-degree: 28%
@@ -113,7 +113,7 @@ Utilisé pour la réplication de la publication vers l’auteur. La réplication
 
 * L’agent statique
 Il s’agit d’un agent qui stocke une représentation statique d’un nœud dans le système de fichiers.
-Par exemple, avec les paramètres par défaut, les pages de contenu et les ressources de gestion des ressources numériques sont stockées sous `/tmp`, au format HTML ou au format de ressource approprié. Consultez les onglets `Settings` et `Rules` pour la configuration.
+Par exemple, avec les paramètres par défaut, les pages de contenu et les ressources dam sont stockées sous `/tmp`, soit comme HTML, soit comme format de ressource approprié. Consultez les onglets `Settings` et `Rules` pour la configuration.
 Cette demande a été faite pour que lorsque la page est demandée directement depuis le serveur d’application, le contenu devienne visible. Il s’agit d’un agent spécialisé qui n’est (probablement) pas nécessaire pour la plupart des instances.
 
 ## Agents de réplication - Paramètres de configuration {#replication-agents-configuration-parameters}

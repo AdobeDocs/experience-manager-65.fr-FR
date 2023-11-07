@@ -1,18 +1,16 @@
 ---
 title: Participation aux workflows
 description: Les workflows incluent généralement des étapes qui nécessitent qu’une personne effectue une activité sur une page ou une ressource.
-uuid: 15d56bcc-1e84-4cc0-8b71-7fb906cd7ff7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: f170613c-329e-446b-9ac3-350615f1bfb6
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 99%
+source-wordcount: '1519'
+ht-degree: 96%
 
 ---
 
@@ -41,9 +39,9 @@ Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**),
 
 * Lorsque vous utilisez l’éditeur de page, la barre d’état affiche :
 
-   * Le nom du ou des workflows appliqués à la page. Par exemple, Requête d’activation.
+   * Nom du ou des workflows appliqués à la page ; par exemple, Demande d’activation.
    * Toute action disponible pour l’utilisateur actuel ou l’utilisatrice actuelle à l’étape du workflow en cours. Par exemple, Terminer, Déléguer, Afficher les détails.
-   * Le nombre de workflows auxquels la page est soumise. Vous pouvez :
+   * Le nombre de workflows auxquels la page est soumise. Vous pouvez effectuer les actions suivantes :
 
       * utiliser les flèches gauche/droite pour parcourir les informations sur le statut des différents workflows ;
       * cliquer/appuyer sur le nombre pour ouvrir la liste déroulante de tous les workflows applicables, puis sélectionner le workflow que vous souhaitez afficher dans la barre d’état.
@@ -55,7 +53,7 @@ Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**),
   >La barre d’état est uniquement visible pour les utilisateurs disposant de droits de workflow ; par exemple, les membres du groupe `workflow-users`.
   >
   >
-  >Les actions s’affichent lorsque la personnes utilisatrice actuelle est directement impliquée dans l’étape du workflow en cours.
+  >Les actions s’affichent lorsque la personnes utilisatrice actuelle est directement impliquée dans l’étape actuelle du workflow.
 
 * Lorsque la **chronologie** est ouverte pour la ressource, l’étape du workflow s’affiche. Lorsque vous cliquez ou appuyez sur la bannière d’alerte, les actions disponibles s’affichent également :
 
@@ -67,8 +65,8 @@ Vous pouvez terminer un élément pour permettre au workflow de passer à l’é
 
 Sur cette action, vous pouvez indiquer :
 
-* **Étape suivante** : la prochaine étape à suivre ; vous pouvez la sélectionner dans une liste fournie.
-* **Commentaire** : si nécessaire.
+* **Étape suivante** : la prochaine étape à suivre ; vous pouvez la sélectionner dans une liste fournie
+* **Commentaire** : si nécessaire
 
 Vous pouvez terminer une étape de participant à partir des éléments suivants :
 
@@ -84,7 +82,7 @@ Utilisez la procédure suivante pour terminer l’élément de travail :
 1. Ouvrez la **[boîte de réception AEM](/help/sites-authoring/inbox.md)**.
 1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (appuyez/cliquez sur la miniature).
 1. Sélectionnez **Terminer** dans la barre d’outils.
-1. La boîte de dialogue **Terminer l’élément de travail** s’ouvre. Choisissez **Étape suivante** dans la liste déroulante et ajoutez un **commentaire** s’il y a lieu.
+1. La variable **Terminer l’élément de travail** s’ouvre. Choisissez **Étape suivante** dans la liste déroulante et ajoutez un **commentaire**, le cas échéant.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Réalisation d’une étape de participant – Éditeur de page {#completing-a-participant-step-page-editor}
@@ -93,7 +91,7 @@ Utilisez la procédure suivante pour terminer l’élément de travail :
 
 1. Ouvrez la [page en mode d’édition](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Sélectionnez **Terminer** dans la barre d’état en haut.
-1. La boîte de dialogue **Terminer l’élément de travail** s’ouvre. Choisissez **Étape suivante** dans la liste déroulante et ajoutez un **commentaire** s’il y a lieu.
+1. La variable **Terminer l’élément de travail** s’ouvre. Choisissez **Étape suivante** dans la liste déroulante et ajoutez un **commentaire**, le cas échéant.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Réalisation d’une étape de participant – Chronologie {#completing-a-participant-step-timeline}
@@ -126,8 +124,8 @@ Les utilisateurs et les utilisatrices pouvant faire l’objet d’une délégati
 
 Sur cette action, vous pouvez indiquer :
 
-* **Utilisateur ou utilisatrice** : la personne à laquelle vous souhaitez déléguer. Vous pouvez la sélectionner dans une liste fournie.
-* **Commentaire** : si nécessaire.
+* **Utilisateur ou utilisatrice** : la personne à laquelle vous souhaitez déléguer. Vous pouvez la sélectionner dans une liste fournie
+* **Commentaire** : si nécessaire
 
 Vous pouvez déléguer une étape de participant depuis :
 
@@ -143,7 +141,7 @@ Utilisez la procédure suivante pour déléguer un élément de travail :
 1. Ouvrez la **[boîte de réception AEM](/help/sites-authoring/inbox.md)**.
 1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (appuyez/cliquez sur la miniature).
 1. Sélectionnez **Déléguer** dans la barre d’outils.
-1. Une boîte de dialogue s’ouvre. Définissez l’**utilisateur** dans le sélecteur déroulant (il peut également s’agir d’un groupe) et ajoutez un **commentaire** si nécessaire.
+1. La boîte de dialogue s’ouvre. Définissez l’**utilisateur ou l’utilisatrice** dans le sélecteur déroulant (il peut également s’agir d’un groupe) et ajoutez un **commentaire**, le cas échéant.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Délégation d’une étape de participant – Éditeur de page {#delegating-a-participant-step-page-editor}
@@ -152,7 +150,7 @@ Utilisez la procédure suivante pour déléguer un élément de travail :
 
 1. Ouvrez la [page en mode d’édition](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Sélectionnez **Déléguer** dans la barre d’état en haut.
-1. Une boîte de dialogue s’ouvre. Définissez l’**utilisateur** dans le sélecteur déroulant (il peut également s’agir d’un groupe) et ajoutez un **commentaire** si nécessaire.
+1. La boîte de dialogue s’ouvre. Définissez l’**utilisateur ou l’utilisatrice** dans le sélecteur déroulant (il peut également s’agir d’un groupe) et ajoutez un **commentaire**, le cas échéant.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Délégation d’une étape de participant – Chronologie {#delegating-a-participant-step-timeline}
@@ -176,8 +174,8 @@ Si vous découvrez qu’une étape, ou une série d’étapes, doit être répé
 
 Sur cette action, vous pouvez indiquer :
 
-* **Étape précédente** : l’étape à laquelle revenir. Vous pouvez la sélectionner dans une liste fournie.
-* **Commentaire** : si nécessaire.
+* **Étape précédente** : l’étape à laquelle revenir. Vous pouvez la sélectionner dans une liste fournie
+* **Commentaire** : si nécessaire
 
 Vous pouvez revenir en arrière sur une étape de participant depuis :
 

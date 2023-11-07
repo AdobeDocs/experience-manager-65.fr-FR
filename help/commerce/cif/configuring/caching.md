@@ -2,10 +2,10 @@
 title: Mise en cache et performances
 description: Découvrez les différentes configurations disponibles pour activer GraphQL et la mise en cache de contenu afin d’optimiser les performances de votre implémentation commerciale.
 exl-id: ecce64bf-5960-4ddb-b6e3-dad401038c11
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '849'
-ht-degree: 97%
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ Pour les composants principaux AEM CIF, la mise en cache étant configurée comp
 
 ### Configuration
 
-Une fois configuré pour un composant donné, le cache commence à stocker les requêtes et les réponses GraphQL telles que définies par chaque entrée de configuration du cache. La taille du cache et la durée de mise en cache de chaque entrée doivent être définies projet par projet, en fonction, par exemple, de la fréquence à laquelle les données du catalogue peuvent changer, du degré auquel il est important qu’un composant affiche toujours les dernières données possibles, etc.. Notez qu’il n’y a pas d’invalidation du cache. Soyez donc prudent lors de la définition des durées du cache.
+Une fois configuré pour un composant donné, le cache commence à stocker les requêtes et les réponses GraphQL telles que définies par chaque entrée de configuration du cache. La taille du cache et la durée de mise en cache de chaque entrée doivent être définies projet par projet, en fonction, par exemple, de la fréquence à laquelle les données du catalogue peuvent changer, de l’importance cruciale qu’un composant affiche toujours les dernières données possibles, etc. Notez qu’il n’y a pas d’invalidation du cache. Soyez donc prudent lors de la définition des durées du cache.
 
 Lors de la configuration de la mise en cache des composants, le nom du cache doit correspondre au nom des composants **proxy** que vous définissez dans votre projet.
 
@@ -27,7 +27,7 @@ Avant d’envoyer une requête GraphQL, le client vérifie si cette requête **e
 
 ### Exemples
 
-Nous vous recommandons de configurer une certaine mise en cache pour le service de recherche qui récupère toutes les valeurs d’agrégations/de facettes disponibles affichées sur les pages de recherche de produits et de catégories. Ces valeurs ne changent généralement que lorsqu’un nouvel attribut est par exemple ajouté à des produits. Par conséquent, la durée de cette entrée de cache peut être « importante » si l’ensemble d’attributs de produit ne change pas souvent. Bien qu’il s’agisse d’un projet spécifique, Adobe recommande des valeurs de quelques minutes dans les phases de développement du projet et de quelques heures sur les systèmes de production stables.
+Nous vous recommandons de configurer une certaine mise en cache pour le service de recherche qui récupère toutes les valeurs d’agrégations/de facettes disponibles affichées sur les pages de recherche de produits et de catégories. Ces valeurs ne changent généralement que lorsqu’un nouvel attribut est par exemple ajouté aux produits. Par conséquent, la durée de cette entrée de cache peut être &quot;importante&quot; si l’ensemble des attributs de produit ne change pas souvent. Bien qu’il s’agisse d’un projet spécifique, Adobe recommande des valeurs de quelques minutes dans les phases de développement du projet et de quelques heures sur les systèmes de production stables.
 
 Ces valeurs sont généralement configurées avec l’entrée de cache suivante :
 

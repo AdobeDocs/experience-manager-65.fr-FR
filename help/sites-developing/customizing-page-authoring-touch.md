@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 46%
@@ -51,7 +51,7 @@ Elles peuvent être utilisées de différentes manières pour étendre la foncti
 
 >[!CAUTION]
 >
->****** Ne modifiez rien dans le chemin d’accès `/libs`. 
+>****** Vous ne devez rien modifier dans le chemin `/libs`. 
 >
 >La raison en est que le contenu de `/libs` est remplacé, la prochaine fois que vous mettez à niveau votre instance (et peut être remplacée lorsque vous appliquez un correctif ou un Feature Pack).
 >
@@ -220,7 +220,7 @@ Il est possible de configurer un composant de sorte qu’il dispose de plusieurs
 
 ## Ajout d’une action Nouvelle page {#add-a-new-page-action}
 
-Pour ajouter une nouvelle action de page à la barre d’outils de la page, par exemple une **Retour à Sites** (console).
+Pour ajouter une nouvelle action de page à la barre d’outils de la page, par exemple, une **Retour à Sites** (console).
 
 ### Exemple de code {#code-sample-3}
 

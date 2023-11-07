@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
-workflow-type: ht
-source-wordcount: '1499'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1497'
+ht-degree: 97%
 
 ---
 
@@ -131,7 +131,7 @@ Pour l’identifiant de suite de rapports (RSID) que vous utilisez, vous pouvez 
    >
    >L’outil de recherche de contenu situé à gauche est renseigné avec les variables d’Adobe Analytics (variables de SiteCatalyst) lorsque vous sélectionnez un identifiant de suite de rapports.
 
-1. Pour sélectionner les instances de serveur qui doivent envoyer des informations à la suite de rapports, utilisez la liste déroulante du **Mode d’exécution** (en regard de l’identifiant de suite de rapports).
+1. Pour sélectionner les instances de serveur pour lesquelles vous souhaitez envoyer des informations à la suite de rapports, utilisez le **Mode d’exécution** Liste déroulante (en regard de l’identifiant de suite de rapports).
 
    ![aa-framework-01](assets/aa-framework-01.png)
 
@@ -177,7 +177,7 @@ Les descendants de la page héritent de l’association avec la structure. Par e
 1. Ouvrez les **[Propriétés de la page](/help/sites-authoring/editing-page-properties.md)**, directement à partir de la console ou via l’éditeur de page.
 1. Ouvrez l’onglet **Services cloud**.
 
-1. Utilisez le menu déroulant **Ajouter une configuration** pour sélectionner **Adobe Analytics** parmi les options disponibles. Si l’héritage est en place, désactivez-le avant que le sélecteur ne soit disponible.
+1. Utilisez la variable **Ajouter une configuration** menu déroulant à sélectionner **Adobe Analytics** dans les options disponibles. Si l’héritage est en place, désactivez-le avant que le sélecteur ne soit disponible.
 
 1. Le sélecteur de liste déroulante pour **Adobe Analytics** est ajouté aux options disponibles. Sélectionnez la configuration de framework requise.
 

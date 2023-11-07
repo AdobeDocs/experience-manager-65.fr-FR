@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '295'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
 >[!NOTE]
 >
->Les utilisateurs et utilisatrices disposant de droits d’administrateur et souhaitant résoudre les problèmes liés à AEM peuvent utiliser les méthodes de dépannage décrites dans la section [Dépannage dans AEM (pour les administrateurs et administratrices)](/help/sites-administering/troubleshoot.md). Si vous ne disposez pas des privilèges suffisants, contactez votre administrateur ou administratrice système pour en savoir plus sur le dépannage dans AEM.
+>Les utilisateurs et utilisatrices disposant de droits d’administrateur et souhaitant résoudre les problèmes liés à AEM peuvent utiliser les méthodes de dépannage décrites dans la section [Dépannage dans AEM (pour les administrateurs et administratrices)](/help/sites-administering/troubleshoot.md). Si vous ne disposez pas des privilèges suffisants, contactez votre administrateur système pour connaître les AEM de dépannage.
 
 ## Ancienne version de la page toujours visible sur le site de publication {#old-page-version-still-on-published-site}
 
@@ -46,8 +46,8 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
       * `http://localhost:4502/sites.html/content?`
       * Ceci demandera la page directement auprès d’AEM et contournera le dispatcher. Si vous recevez la page mise à jour, ceci indique que vous devez vider la mémoire cache du dispatcher.
-   * Contactez l’administrateur du système en cas de problèmes avec les files d’attente de réplication.
 
+   * Contactez l’administrateur du système en cas de problèmes avec les files d’attente de réplication.
 
 ## Actions de composant non visibles dans la barre d’outils {#component-actions-not-visible-on-toolbar}
 

@@ -9,10 +9,10 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: ea983b24da66edd02f86614690f8bc5e1e2499d9
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '3624'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -372,7 +372,7 @@ L’imagerie dynamique détermine si la conversion apporte ou non un bénéfice.
 
 ## Pourquoi la fonctionnalité Ratio pixel de l’appareil (dpr) ne fonctionne-t-elle pas comme prévu avec les images composites ? {#composite-images}
 
-Si une image composite implique un trop grand nombre de calques, la fonctionnalité dpr peut être affectée lors de l’utilisation d’un modificateur de position. Ce problème est connu et sera corrigé dans les prochaines versions de l’imagerie dynamique. Si d’autres fonctionnalités d’imagerie dynamique ne fonctionnent pas comme prévu, vous pouvez créer un dossier de support pour signaler le problème.
+Si une image composite implique un trop grand nombre de calques, la fonctionnalité dpr peut être affectée lors de l’utilisation d’un modificateur de position. Ce problème est connu et doit être corrigé dans les prochaines versions de l’imagerie dynamique. Si d’autres fonctionnalités d’imagerie dynamique ne fonctionnent pas comme prévu, vous pouvez créer un dossier de support pour signaler le problème.
 
 ## Pourquoi un PNG en imagerie dynamique est-il toujours converti en WebP/AVIF sans perte ? {#convert-to-lossless}
 

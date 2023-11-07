@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2689'
-ht-degree: 57%
+ht-degree: 56%
 
 ---
 
@@ -578,13 +578,13 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td><p>Le redémarrage du lot OSGi Day Communique Tagging n’enregistrera le nouvel emplacement en tant que racine de balise que si l’emplacement précédent est vide.</p> <p>Les références à l’emplacement précédent continueront à fonctionner après la migration vers le nouvel emplacement pour toutes les fonctionnalités qui utilisent AEM API TagManager pour la résolution des balises.</p> <p>Tout code personnalisé qui référence explicitement le chemin d’accès <code>/etc/tags</code> doit être remplacé par <span class="code">/content/
+   <td><p>Le redémarrage du lot OSGi Day Communique Tagging n’enregistrera le nouvel emplacement en tant que racine de balise que si l’emplacement précédent est vide.</p> <p>Les références à l’emplacement précédent continueront à fonctionner après la migration vers le nouvel emplacement pour toutes les fonctionnalités qui utilisent AEM API TagManager pour la résolution des balises.</p> <p>Tout code personnalisé qui référence explicitement le chemin d’accès <code>/etc/tags</code> doit être mis à jour vers <span class="code">/content/
       <code>
        cq
       </code>
       <code>
        :tags
-      </code></span>, ou de préférence réécrit en utilisant l’API Java TagManager, en même temps que cette migration.</p> </td>
+      </code></span>, ou réécrit de préférence pour utiliser l’API Java TagManager, en même temps que cette migration.</p> </td>
   </tr>
  </tbody>
 </table>

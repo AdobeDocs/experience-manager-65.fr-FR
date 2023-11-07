@@ -1,20 +1,16 @@
 ---
 title: Générer un document d’enregistrement pour les formulaires adaptatifs
-seo-title: Generate Document of Record for adaptive forms
 description: Explique comment générer un modèle de document d’enregistrement (DE) pour les formulaires adaptatifs.
-seo-description: Explains how you can generate a template for a document of record (DoR) for adaptive forms.
-uuid: 2dc7e0de-fff9-43fa-9426-e9b047eb2595
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3544'
-ht-degree: 74%
+source-wordcount: '3545'
+ht-degree: 73%
 
 ---
 
@@ -28,7 +24,7 @@ ht-degree: 74%
 | AEM 6.5 | Cet article |
 
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Après l’envoi d’un formulaire, vos clients veulent généralement conserver un enregistrement, sous forme imprimée ou de document, des informations qu’ils ont intégrées au formulaire pour s’y reporter ultérieurement. On parle ici de document d’enregistrement.
 
@@ -216,7 +212,7 @@ Les composants de tableau de formulaires adaptatifs tels que l’en-tête, le pi
 
 Le modèle de base fournit des informations de style et d’aspect au document d’enregistrement. Il vous permet de personnaliser l’aspect par défaut du document d’enregistrement généré automatiquement. Par exemple, vous souhaitez ajouter le logo de votre société dans l’en-tête et les informations de copyright dans le pied de page du document d’enregistrement. Le gabarit du modèle de base est utilisé comme gabarit pour le modèle de document d’enregistrement. Le gabarit peut contenir des informations telles que l’en-tête, le pied de page et le numéro de page que vous pouvez appliquer au document d’enregistrement. Vous pouvez appliquer ces informations au document d’enregistrement à l’aide d’un modèle de base pour générer automatiquement un document d’enregistrement. L’utilisation d’un modèle de base permet de modifier les propriétés par défaut des champs.
 
-Respectez les [conventions relatives aux modèles de base](#base-template-conventions) lorsque vous créez un modèle de base.
+Veillez à suivre [Conventions relatives aux modèles de base](#base-template-conventions) lorsque vous concevez un modèle de base.
 
 ## Conventions relatives aux modèles de base {#base-template-conventions}
 
@@ -232,7 +228,7 @@ Un modèle de base est utilisé pour définir l’en-tête, le pied de page, le 
 
 **Conventions an matière de style des champs**
 
-* Pour appliquer un style aux champs du document d’enregistrement, le modèle de base fournit les champs situés dans le sous-formulaire `AF_FIELDSSUBFORM` sous le sous-formulaire racine `AF_METATEMPLATE`.
+* Pour appliquer un style aux champs du document d’enregistrement, le modèle de base fournit les champs dans la variable `AF_FIELDSSUBFORM` Sous-formulaire sous `AF_METATEMPLATE` sous-formulaire racine.
 
 * Les propriétés de ces champs sont appliquées aux champs du document d’enregistrement. Ces champs doivent respecter la convention d’affectation des noms de `AF_<name of field in all caps>_XFO`. Par exemple, le champ contenant une case à cocher doit être nommé `AF_CHECKBOX_XFO`.
 

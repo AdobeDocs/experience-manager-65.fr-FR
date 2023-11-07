@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '599'
 ht-degree: 4%
 
 ---
@@ -50,7 +50,7 @@ Ces consoles sont similaires à la console Sites des communautés .
    * **[!UICONTROL Racine du groupe de communautés]**: *leave comme valeur par défaut*
    * **[!UICONTROL Langue(s) de groupe de communautés disponible(s) supplémentaire(s)]**: utilisez le menu déroulant pour sélectionner les langues de groupe de communautés disponibles. Le menu affiche toutes les langues dans lesquelles le site de la communauté parent est créé. Les utilisateurs peuvent sélectionner l’une de ces langues pour créer des groupes dans plusieurs paramètres régionaux au cours de cette seule étape. Le même groupe est créé dans plusieurs langues spécifiées dans la console Groupes des sites de communauté respectifs.
    * **[!UICONTROL Nom du groupe de communautés]**: arts
-   * **[!UICONTROL Modèle]**: menu déroulant à sélectionner `Reference Group`
+   * **[!UICONTROL Modèle]**: liste déroulante à sélectionner `Reference Group`
    * Sélectionnez **[!UICONTROL Suivant]**
 
 ![Groupes de communautés imbriqués](assets/parent-to-nestedgroup.png)
@@ -148,7 +148,7 @@ Après avoir publié le site de la communauté principale :
 
 ## Expérience sur publication {#experience-on-publish}
 
-Il est possible d’expérimenter les différents groupes lorsqu’ils sont connectés, par exemple avec le [utilisateurs de démonstration](/help/communities/tutorials.md#demo-users) utilisé pour :
+Il est possible d’expérimenter les différents groupes lorsqu’ils sont connectés, par exemple, avec la variable [utilisateurs de démonstration](/help/communities/tutorials.md#demo-users) utilisé pour :
 
 * Membre du groupe Art/Historique : `emily.andrews@mailinator.com/password`
    * Le groupe restreint (secret), arts/histoire, est visible :

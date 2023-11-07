@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 exl-id: 59f01bb1-4ff1-42b6-afc9-56d448b1f803
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 98%
@@ -130,7 +130,7 @@ Le diagramme suivant illustre le processus d’évaluation de modèle :
 
 #### Limitation des modèles utilisés dans les pages enfants {#limiting-templates-used-in-child-pages}
 
-Pour limiter les modèles servant à créer des pages enfants sous une page donnée, utilisez la propriété `cq:allowedTemplates` du nœud `jcr:content` de la page pour spécifier la liste des modèles à autoriser en tant que pages enfants. Chaque valeur de la liste doit être un chemin absolu vers un modèle pour une page enfant autorisée, par exemple `/apps/geometrixx/templates/contentpage`.
+Pour limiter les modèles servant à créer des pages enfants sous une page donnée, utilisez la propriété `cq:allowedTemplates` du nœud `jcr:content` de la page pour spécifier la liste des modèles à autoriser en tant que pages enfants. Chaque valeur de la liste doit être un chemin absolu vers un modèle pour une page enfant autorisée, par exemple, `/apps/geometrixx/templates/contentpage`.
 
 Vous pouvez appliquer la propriété `cq:allowedTemplates` sur le nœud `jcr:content` du modèle pour que cette configuration soit appliquée à toutes les pages nouvellement créées qui utilisent ce modèle.
 

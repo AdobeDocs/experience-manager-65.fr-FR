@@ -11,10 +11,10 @@ topic-tags: develop
 discoiquuid: a7c0c4cf-7476-41e7-8d4e-564e6a21458d
 role: Developer
 exl-id: b856a93b-91fa-47a5-9e46-6a537218fd4e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '324'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 92%
 
 ---
 
@@ -32,7 +32,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API forte
 
 >[!NOTE]
 >
->Les tutoriels de démarrage rapide situés dans Programmation avec AEM Forms sont basés sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Le démarrage rapide de la programmation avec AEM Forms est basé sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Démarrage rapide (mode SOAP) : convertir un document Microsoft Word au format PDF à l’aide de l’API Java. {#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api}
 
@@ -65,16 +65,16 @@ L’exemple de code suivant convertit un fichier Word nommé *Loan.doc* en docum
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -179,16 +179,16 @@ L’exemple de code Java suivant convertit le contenu HTML situé à l’adresse
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -285,16 +285,16 @@ L’exemple de code suivant convertit un document PDF nommé *Loan.pdf* en docum
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a

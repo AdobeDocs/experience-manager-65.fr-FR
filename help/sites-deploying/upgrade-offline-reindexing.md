@@ -7,10 +7,10 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: 85bc041e-0ab1-42de-8bcc-c98a175d7494
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 99%
+source-wordcount: '1338'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ Ensuite, utilisez le vidage d’index ci-dessus pour renseigner le magasin :
 java -jar oak-run.jar tika --data-file text-extraction/oak-binary-stats.csv --store-path text-extraction/store --index-dir ./indexing-result/index-dumps/<oak-index-name>/data populate
 ```
 
-Où `oak-index-name` est le nom de l’index de texte intégral, par exemple « lucene ».
+Où `oak-index-name` est le nom de l’index de texte intégral, par exemple, &quot;lucene&quot;.
 
 **3. Exécutez le processus d’extraction de texte à l’aide de la bibliothèque tika pour les fichiers binaires manqués à l’étape ci-dessus.**
 

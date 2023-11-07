@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 54%
+source-wordcount: '550'
+ht-degree: 60%
 
 ---
 
@@ -55,10 +55,10 @@ L’**aperçu de la Live Copy** peut être ouvert via le panneau latéral **Ré
 
 ### Ouverture de l’aperçu de la Live Copy - Propriétés d’une page de plan directeur {#opening-live-copy-overview-properties-of-a-blueprint-page}
 
-La variable **Présentation de la Live Copy** peut être ouvert lors de l’affichage des propriétés d’une page de plan directeur :
+L’**Aperçu de Live Copy** peut être ouvert lors de l’affichage des propriétés d’une page de plan directeur :
 
-1. Ouvrir **Propriétés** pour la page de plan directeur appropriée.
-1. Ouvrez le **Blueprint** de l’onglet **Présentation de la Live Copy** s’affiche dans la barre d’outils supérieure :
+1. Ouvrez les **propriétés** pour la page de plan directeur appropriée.
+1. Ouvrez l’onglet **Plan directeur**, l’option **Aperçu de Live Copy** s’affiche dans la barre d’outils supérieure :
 
    ![Onglet Plan directeur - Aperçu de la Live Copy](assets/chlimage_1-360.png)
 

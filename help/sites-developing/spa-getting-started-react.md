@@ -1,20 +1,16 @@
 ---
 title: Prise en main des SPA dans AEM avec React
-seo-title: Getting Started with SPAs in AEM - React
 description: Cet article présente un exemple d’application SPA, explique comment elle est structurée et vous permet de prendre rapidement en main votre propre SPA à l’aide du framework React.
-seo-description: This article presents a sample SPA application, explains how it is put together, and lets you get up-and-running with your own SPA quickly using the React framework.
-uuid: 2beca277-a381-4482-99f6-85005d826d06
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: cc1e5c20-cc9c-4222-8a11-ec5a963d4466
 docset: aem65
 exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 91%
+source-wordcount: '1161'
+ht-degree: 86%
 
 ---
 
@@ -52,7 +48,7 @@ Ce document décrit la structure d’une SPA simplifiée créée à l’aide du 
 
 ## Dépendances, configuration et construction {#dependencies-configuration-and-building}
 
-En plus de la dépendance React attendue, l’exemple de SPA tire parti de bibliothèques supplémentaires pour optimiser la création de la SPA.
+En plus de la dépendance React attendue, l’exemple de SPA peut utiliser des bibliothèques supplémentaires pour optimiser la création de la SPA.
 
 ### Dépendances {#dependencies}
 
@@ -73,7 +69,7 @@ react
  react-dom
 ```
 
-`aem-clientlib-generator` est utilisé pour automatiser la création de bibliothèques clientes dans le cadre du processus de construction.
+Le `aem-clientlib-generator` est utilisé pour automatiser la création de bibliothèques clientes dans le cadre du processus de construction.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -122,7 +118,7 @@ Une fois généré, le package peut être chargé dans une instance AEM.
 
 ### Archétype de projet AEM {#aem-project-archetype}
 
-Un projet AEM doit tirer parti de l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et tire parti du SDK SPA.
+Tout projet AEM doit utiliser l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et utiliser le SDK de SPA.
 
 ## Structure d’application {#application-structure}
 
@@ -134,7 +130,7 @@ Un composant image simplifié est utilisé à titre d’exemple, mais tous les c
 
 ### index.js {#index-js}
 
-Le point d’entrée dans la SPA est bien entendu le fichier `index.js` présenté ici de manière simplifiée afin que l’accent porte sur le contenu important.
+Le point d’entrée dans la SPA est le fichier `index.js` présenté ici de manière simplifiée afin que l’accent porte sur le contenu important.
 
 ```
 import ReactDOM from 'react-dom';
@@ -151,7 +147,7 @@ ReactDOM.render(
 });
 ```
 
-La principale finalité de `index.js` est de tirer parti de la fonction `ReactDOM.render` pour déterminer où, dans le DOM, injecter l’application.
+La principale finalité d’`index.js` est d’utiliser la fonction `ReactDOM.render` pour déterminer où, dans le DOM, injecter l’application.
 
 Il s’agit d’une utilisation standard de cette fonction, non spécifique à cet exemple d’application.
 
@@ -273,7 +269,7 @@ Pour plus d’informations, voir le document [Plan directeur d’applications su
 
 Il est régulièrement nécessaire que les composants d’une application sur une seule page partagent des informations. Il existe plusieurs méthodes recommandées pour cela, énumérées ci-dessous dans un ordre de complexité croissant.
 
-* **Option 1 :** Centralisez la logique et procédez à une diffusion vers les composants nécessaires ; par exemple en utilisant React Context.
+* **Option 1 :** Centralisez la logique et procédez à une diffusion vers les composants nécessaires, par exemple à l’aide de React Context.
 * **Option 2 :** Partagez des états de composant en utilisant une bibliothèque d’états telle que Redux.
 * **Option 3 :** Tirez parti de la hiérarchie d’objets en personnalisant et en étendant le composant de conteneur.
 
@@ -285,4 +281,4 @@ Pour plus d’informations sur la manière de vous organiser pour développer de
 
 Pour plus d’informations sur le mappage du modèle dynamique sur les composants et son fonctionnement dans des SPA dans AEM, consultez la section [Mappage du modèle dynamique avec le composant pour les SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Si vous souhaitez mettre en œuvre des SPA dans AEM pour un framework autre que React ou Angular, ou que vous souhaitez simplement découvrir en détail le fonctionnement du SDK de SPA pour AEM, reportez-vous à la section [Plan directeur de SPA](/help/sites-developing/spa-blueprint.md).
+Si vous souhaitez mettre en oeuvre SPA dans AEM pour une structure autre que React ou Angular ou souhaitez simplement approfondir l’analyse du fonctionnement du SDK d’SPA pour, reportez-vous à la section [Blueprint SPA](/help/sites-developing/spa-blueprint.md) article.

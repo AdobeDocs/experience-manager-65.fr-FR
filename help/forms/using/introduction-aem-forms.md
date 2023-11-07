@@ -11,10 +11,10 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 30%
+ht-degree: 31%
 
 ---
 
@@ -58,7 +58,7 @@ AEM Forms vous permet d’étendre les formulaires nouveaux et existants pour cr
 * HTML et PDF forms pixels parfaits et paginés qui ressemblent presque à du papier, ou
 * formulaires adaptatifs qui s’affichent automatiquement pour le périphérique et le navigateur d’un utilisateur.
 
-**PDF forms**
+**Formulaires PDF**
 
 Les PDF forms peuvent être remplis hors ligne, enregistrés localement et les données de formulaire envoyées lors de votre prochaine mise en ligne. Vous pouvez utiliser des codes à barres 2D pour capturer des données de formulaire et des signatures numériques pour valider l’authenticité des utilisateurs.
 
@@ -87,7 +87,7 @@ Tous les types de formulaires prennent en charge les fonctionnalités suivantes 
 
 Une fois les données de formulaire envoyées, Adobe Experience Manager les associe aux systèmes, aux règles de fonctionnement et aux personnes requises.
 
-AEM Forms fournit Forms Workspace, une application mobile qui étend vos processus métier numériques aux appareils mobiles. Avec Forms Workspace, vous pouvez collecter et enregistrer des données même hors ligne. Forms Workspace tire parti des fonctionnalités de votre périphérique mobile et vous permet de capturer des photos, des vidéos et de collecter des données, telles que des horodatages et d’autres informations. La prochaine fois que vous vous connecterez à un réseau, vous pouvez synchroniser les données collectées.
+AEM Forms fournit Forms Workspace, une application mobile qui étend vos processus métier numériques aux appareils mobiles. Avec Forms Workspace, vous pouvez collecter et enregistrer des données même hors ligne. Forms Workspace utilise les fonctionnalités de votre périphérique mobile et vous permet de capturer des photos, des vidéos et de collecter des données, telles que des horodatages et d’autres informations. La prochaine fois que vous vous connecterez à un réseau, vous pouvez synchroniser les données collectées.
 
 La capture des données hors ligne et la synchronisation de celles-ci lors de votre prochaine mise en ligne s’avèrent particulièrement utiles pour les personnes sur le terrain. Cela améliore la productivité et réduit les erreurs.
 

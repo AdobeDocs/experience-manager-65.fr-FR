@@ -8,16 +8,16 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: 0dea2b3e-fd7c-4811-a04a-6852ffc1e6d6
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2399'
+source-wordcount: '2397'
 ht-degree: 19%
 
 ---
 
 # Planification de la mise à niveau{#planning-your-upgrade}
 
-## Présentation AEM projet {#aem-project-overview}
+## AEM Aperçu du projet {#aem-project-overview}
 
 AEM est souvent utilisé dans des déploiements à fort impact qui peuvent servir des millions d’utilisateurs. En règle générale, certaines applications personnalisées sont déployées sur les instances, ce qui ajoute à la complexité. Tout effort de mise à niveau d’un tel déploiement doit être géré méthodiquement.
 
@@ -25,7 +25,7 @@ Ce guide vous aide à définir des objectifs, des phases et des livrables clairs
 
 Le processus de mise à niveau d’AEM nécessite une gestion attentive des phases de planification, d’analyse et d’exécution, avec des éléments livrables clés définis pour chaque phase.
 
-Il est possible de mettre à niveau directement AEM versions 6.0 et jusqu’à 6.5. Les clients utilisant la version 5.6.x ou antérieure doivent d’abord effectuer la mise à niveau vers la version 6.0 ou ultérieure, avec la version 6.0 (SP3) recommandée. En outre, le nouveau format Oak Segment Tar est désormais utilisé pour le magasin de noeuds de segments depuis la version 6.3, et la migration du référentiel vers ce nouveau format est obligatoire, même pour les versions 6.0, 6.1 et 6.2.
+Il est possible de mettre à niveau directement AEM versions 6.0 et jusqu&#39;à 6.5. Les clients utilisant la version 5.6.x ou antérieure doivent d’abord effectuer la mise à niveau vers la version 6.0 ou ultérieure, avec la version 6.0 (SP3) recommandée. En outre, le nouveau format Oak Segment Tar est désormais utilisé pour le magasin de noeuds de segments depuis la version 6.3, et la migration du référentiel vers ce nouveau format est obligatoire, même pour les versions 6.0, 6.1 et 6.2.
 
 >[!CAUTION]
 >
@@ -60,7 +60,7 @@ Vous trouverez ci-dessous une liste des zones affectées par un projet de mise �
   <tr>
    <td>Référentiel de contenu (CRX ou Oak)</td>
    <td>Impact élevé</td>
-   <td>À partir de la version 6.1, AEM ne prend pas en charge CRX2. Par conséquent, une migration vers<br /> Oak (CRX3) est requis si vous effectuez une mise à niveau à partir d’une ancienne version. AEM 6.3 a mis en place un nouvel entrepôt de nœuds de segments qui requiert également une migration. <br /> Le<br /> L’outil crx2oak est utilisé à cet effet.</td>
+   <td>À partir de la version 6.1, AEM ne prend pas en charge CRX2. Par conséquent, une migration vers<br /> Oak (CRX3) est requis si vous effectuez une mise à niveau à partir d’une ancienne version. AEM 6.3 a mis en place un nouvel entrepôt de nœuds de segments qui requiert également une migration. <br /> La variable<br /> L’outil crx2oak est utilisé à cet effet.</td>
   </tr>
   <tr>
    <td>AEM Composants/Contenu</td>
@@ -147,7 +147,7 @@ Une fois l’évaluation initiale terminée, une procédure plus approfondie con
 
 ![trei_cropped](assets/trei_cropped.png)
 
-L’outil de détection des motifs introduit récemment devrait vous donner une idée assez précise de ce à quoi vous devez vous attendre la plupart du temps au cours d’une mise à niveau. Cependant, pour les personnalisations et déploiements plus complexes comportant des modifications incompatibles, vous pouvez mettre à niveau une instance vers AEM 6.5 conformément aux instructions de la section [Exécution d’une mise à niveau statique](/help/sites-deploying/in-place-upgrade.md). Une fois l’opération terminée, effectuez un test de vérification de haut niveau dans cet environnement. L’objectif de cet exercice n’est pas d’épuiser l’inventaire exhaustif des scénarios de tests et de développer un inventaire formel des éléments défectueux, mais de donner une estimation approximative de la quantité de travail requise pour mettre à niveau le code pour assurer la compatibilité avec la version 6.5. Lorsqu’elle est combinée avec la variable [Détection de motifs](/help/sites-deploying/pattern-detector.md) et les changements architecturaux déterminés dans la section précédente, une estimation approximative peut être fournie à l’équipe de gestion de projet pour la planification de l’upgrade.
+L’outil de détection des motifs introduit récemment devrait vous donner une idée assez précise de ce à quoi vous devez vous attendre la plupart du temps au cours d’une mise à niveau. Cependant, pour les personnalisations et déploiements plus complexes comportant des modifications incompatibles, vous pouvez mettre à niveau une instance vers AEM 6.5 conformément aux instructions de la section [Exécution d’une mise à niveau statique](/help/sites-deploying/in-place-upgrade.md). Une fois l’opération terminée, effectuez un test de vérification de haut niveau dans cet environnement. L’objectif de cet exercice n’est pas d’épuiser l’inventaire exhaustif des scénarios de tests et de développer un inventaire formel des éléments défectueux, mais de donner une estimation approximative de la quantité de travail requise pour mettre à niveau le code pour assurer la compatibilité avec la version 6.5. Lorsqu’elle est combinée avec la variable [Détection de motifs](/help/sites-deploying/pattern-detector.md) et les changements architecturaux qui ont été déterminés dans la section précédente, une estimation approximative peut être fournie à l’équipe de gestion de projet pour la planification de l’upgrade.
 
 ### Création du runbook de mise à niveau et de restauration {#building-the-upgrade-and-rollback-runbook}
 
@@ -176,7 +176,7 @@ Un plan de projet complet doit comprendre les éléments suivants :
 
 ### Exécution du développement et de l’assurance qualité {#performing-development-and-qa}
 
-Adobe a fourni des procédures pour [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) pour être compatible avec AEM 6.5. Pendant l’exécution de ce processus itératif, des modifications doivent être apportées au runbook selon les besoins. Voir aussi [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md) sur les informations sur la façon dont vos personnalisations peuvent rester rétrocompatibles, généralement sans nécessiter de développement immédiatement après la mise à niveau.
+Adobe a fourni des procédures pour [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) pour être compatible avec AEM 6.5. Au fur et à mesure que ce processus itératif est exécuté, des modifications doivent être apportées au runbook selon les besoins. Voir aussi [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md) sur les informations sur la façon dont vos personnalisations peuvent rester rétrocompatibles, généralement sans nécessiter de développement immédiatement après la mise à niveau.
 
 ![patru_cropped](assets/patru_cropped.png)
 
@@ -190,7 +190,7 @@ Adobe recommande un dernier cycle de tests une fois que le code base a été cer
 
 Cette étape est essentielle, car c’est la seule fois où vous pouvez valider les étapes du runbook par rapport à un environnement de type production. Une fois l’environnement mis à niveau, il est important de laisser aux utilisateurs finaux le temps de se connecter et de parcourir les activités qu’ils effectuent lors de l’utilisation du système dans leurs activités quotidiennes. Il n’est pas rare que les utilisateurs utilisent une partie du système qui n’a pas été précédemment prise en compte. Trouver et corriger les problèmes dans ces zones avant la mise en service peut aider à éviter des pannes de production coûteuses. Comme une nouvelle version d’AEM contient des modifications importantes de la plateforme sous-jacente, il est également important d’effectuer des tests de performance, de chargement et de sécurité sur le système comme si vous l’aviez lancé pour la première fois.
 
-### Exécution de la mise à niveau {#performing-the-upgrade}
+### Mise à niveau {#performing-the-upgrade}
 
 Une fois que l’approbation finale a été reçue de toutes les parties prenantes, il est temps de l’exécuter sur les procédures définies du runbook. Adobe a fourni des étapes pour la mise à niveau et la restauration [Procédure de mise à niveau](/help/sites-deploying/upgrade-procedure.md) et étapes d’installation dans Exécution d’une [Mise à niveau statique](/help/sites-deploying/in-place-upgrade.md) comme point de référence.
 

@@ -6,10 +6,10 @@ role: User, Admin
 feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '2000'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 | AEM 6.5 | Cet article |
 
 <!-- Scope of metadata articles:
-* metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
+* metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
@@ -56,7 +56,7 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
 ### Ajout d’un profil de métadonnées {#adding-a-metadata-profile}
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de métadonnées]** puis cliquez sur **[!UICONTROL Créer]**.
-1. Saisissez un titre pour le profil, par exemple `Sample Metadata`, puis cliquez sur **[!UICONTROL Créer]**. La page [!UICONTROL Modifier le formulaire] pour le profil de métadonnées s’affiche.
+1. Saisissez un titre pour le profil, par exemple : `Sample Metadata`, puis cliquez sur **[!UICONTROL Créer]**. La page [!UICONTROL Modifier le formulaire] pour le profil de métadonnées s’affiche.
 
    ![Modification d’un formulaire de métadonnées](assets/metadata-edit-form.png)
 
@@ -186,7 +186,7 @@ L’onglet **[!UICONTROL Créer le formulaire]** répertorie les éléments de f
 |---|---|
 | [!UICONTROL En-tête de section] | Permet d’ajouter un en-tête de section pour une liste de composants communs. |
 | [!UICONTROL Une seule ligne de texte] | Permet d’ajouter une propriété de texte d’une seule ligne. Elle est stockée sous la forme d’une chaîne. |
-| [!UICONTROL Texte à plusieurs valeurs] | Permet d’ajouter une propriété de texte à plusieurs valeurs. Il est stocké sous forme de tableau de chaînes. |
+| [!UICONTROL Texte à plusieurs valeurs] | Permet d’ajouter une propriété de texte à plusieurs valeurs. Il est stocké sous la forme d’une table de chaînes. |
 | [!UICONTROL Nombre] | Permet d’ajouter un composant de nombre. |
 | [!UICONTROL Date] | Permet d’ajouter un composant de date. |
 | [!UICONTROL Liste déroulante] | Permet d’ajouter une liste déroulante. |

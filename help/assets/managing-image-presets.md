@@ -13,7 +13,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3837'
 ht-degree: 88%
@@ -197,7 +197,7 @@ Vous pouvez définir la taille des miniatures en configurant ces paramètres dan
 
 Avec l’étape **[!UICONTROL Ressources d’image du processus Dynamic Media]**, les miniatures sont générées par le serveur d’images et cette configuration est indépendante de la configuration appliquée à l’étape des **[!UICONTROL miniatures de processus]**. La génération de miniatures en passant par l’étape **[!UICONTROL Miniatures des processus]** constitue la méthode la plus lente et la plus gourmande en mémoire.
 
-Le dimensionnement des miniatures est défini au format suivant : **[!UICONTROL width:height:center]** (largeur:hauteur:centrer), par exemple `80:80:false`. La largeur et la hauteur déterminent la taille en pixels de la miniature. La valeur « centrer » est soit false soit true. Si elle est définie sur true, elle indique que la miniature a exactement la taille spécifiée dans la configuration. Si l’image redimensionnée est plus petite, elle est centrée dans la miniature.
+Le dimensionnement des miniatures est défini au format suivant : **[!UICONTROL width:height:center]** (largeur:hauteur:centrer), par exemple, `80:80:false`. La largeur et la hauteur déterminent la taille en pixels de la miniature. La valeur « centrer » est soit false soit true. Si elle est définie sur true, elle indique que la miniature a exactement la taille spécifiée dans la configuration. Si l’image redimensionnée est plus petite, elle est centrée dans la miniature.
 
 >[!NOTE]
 >
@@ -237,7 +237,7 @@ Les paramètres d’image prédéfinis que vous créez sont disponibles sous la 
 
    ![chlimage_1-495](assets/chlimage_1-495.png)
 
-1. Dans la propriété limit, saisissez la valeur de votre choix ; par exemple, `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. Dans la propriété limit, remplacez le nombre par le nombre souhaité, par exemple : `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Appuyez sur **[!UICONTROL Enregistrer tout]**.
 
 ## Création d’un paramètre prédéfini d’image Dynamic Media {#creating-image-presets}

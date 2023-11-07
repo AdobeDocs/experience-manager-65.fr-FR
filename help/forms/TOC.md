@@ -9,9 +9,9 @@ breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 role: User
 feature: Forms Service
-source-git-commit: 28cc10b79d2ac8cf12ddfd0bf7d1a8e013fe6238
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3912'
+source-wordcount: '3911'
 ht-degree: 98%
 
 ---
@@ -228,7 +228,7 @@ ht-degree: 98%
    + [Introduction à la personnalisation de l’espace de travail AEM Forms](using/introduction-customizing-html-workspace.md)
    + [Procédure générique de personnalisation de l’espace de travail AEM Forms](using/generic-steps-html-workspace-customization.md)
    + [Modification des paramètres régionaux de l’interface utilisateur de l’espace de travail AEM Forms](using/changing-locale-user-interface.md)
-   + [Création d’un écran de connexion](using/creating-new-login-screen.md)
+   + [Créer un écran de connexion](using/creating-new-login-screen.md)
    + [Personnalisation des boîtes de dialogue d’erreur](using/customizing-error-dialogs.md)
    + [Personnalisation des onglets d’une tâche](using/customizing-tabs-task.md)
    + [Personnalisation de la page Détails de la tâche](using/customizing-task-details-page.md)

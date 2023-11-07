@@ -1,19 +1,15 @@
 ---
 title: Présentation de l’éditeur de SPA
-seo-title: SPA Editor Overview
 description: Cet article présente un aperçu complet de l’éditeur d’application sur une seule page (SPA) et de son fonctionnement, notamment les workflows détaillés de ses interactions dans AEM.
-seo-description: This article gives a comprehensive overview of the SPA Editor and how it works included detailed workflows of interaction of the SPA Editor within AEM.
-uuid: c283abab-f5bc-414a-bc81-bf3bdce38534
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1651'
 ht-degree: 94%
 
 ---
@@ -89,7 +85,7 @@ En gardant à l’esprit les éléments clés de l’éditeur de SPA, le workflo
 1. La SPA est chargée dans un cadre distinct.
 1. La SPA demande du contenu JSON et effectue le rendu des composants côté client.
 1. L’éditeur de SPA détecte les composants rendus et génère des incrustations.
-1. L’auteur clique sur l’incrustation et affiche la barre d’outils de modification du composant.
+1. L’auteur ou l’autrice clique sur l’incrustation et affiche la barre d’outils de modification du composant.
 1. L’éditeur de SPA conserve les modifications avec une requête POST envoyée au serveur.
 1. L’éditeur de SPA demande le JSON mis à jour, qui est envoyé à la SPA avec un événement DOM.
 1. La SPA restitue à nouveau le composant concerné en mettant à jour son DOM.
@@ -159,7 +155,7 @@ Il s’agit d’un aperçu plus détaillé axé sur l’expérience de création
 
 ## Conditions requises et restrictions {#requirements-limitations}
 
-Pour permettre à l’auteur d’utiliser l’éditeur de page afin de modifier le contenu d’une SPA, l’application d’une seule page doit être mise en œuvre pour interagir avec le SDK de l’éditeur de SPA d’AEM. Consultez le document [Prise en main des SPA dans AEM](/help/sites-developing/spa-getting-started-react.md) afin de disposer des informations minimales nécessaires pour faire fonctionner la vôtre.
+Pour permettre à l’auteur d’utiliser l’éditeur de page afin de modifier le contenu d’une SPA, l’application d’une seule page doit être mise en œuvre pour interagir avec le SDK de l’éditeur de SPA d’AEM. Voir [Prise en main de SPA dans AEM](/help/sites-developing/spa-getting-started-react.md) au minimum que vous devez savoir pour que la vôtre soit opérationnelle.
 
 ### Frameworks pris en charge {#supported-frameworks}
 
@@ -172,7 +168,7 @@ Les versions précédentes de ces frameworks peuvent fonctionner avec le SDK de 
 
 ### Autres frameworks {#additional-frameworks}
 
-Il est possible de mettre en œuvre des frameworks SPA pour utiliser le SDK de l’éditeur de SPA d’AEM. Veuillez consulter la [Blueprint SPA](/help/sites-developing/spa-blueprint.md) document pour connaître les exigences qu’une structure doit satisfaire pour créer une couche spécifique à une structure composée de modules, de composants et de services à utiliser avec l’éditeur SPA d’AEM.
+Il est possible de mettre en œuvre des frameworks SPA pour utiliser le SDK de l’éditeur de SPA d’AEM. Consultez le [Plan directeur d’applications monopages (SPA)](/help/sites-developing/spa-blueprint.md) pour connaître les exigences qu’un framework doit satisfaire pour créer une couche spécifique composée des modules, composants et services nécessaires pour travailler avec l’éditeur de SPA d’AEM.
 
 ### Utilisation de plusieurs sélecteurs {#multiple-selectors}
 
@@ -199,6 +195,6 @@ Le SDK de l’éditeur de SPA d’AEM a été introduit avec le pack de services
 * Modification des configurations (ex. listeners)
 * Annuler/rétablir
 * Outil de comparaison des pages et déformation temporelle
-* Fonctionnalités de réécriture HTML côté serveur telles que le vérificateur de liens, le service de réécriture CDN, le raccourcissement des URL, etc.
+* Fonctionnalités de réécriture de HTML côté serveur telles que le vérificateur de liens, le service de réécriture CDN, le raccourcissement des URL, etc.
 * Mode Développeur
 * Lancements AEM

@@ -2,10 +2,10 @@
 title: Accès à votre contenu grâce aux API de diffusion AEM
 description: Dans cette partie du parcours de développement découplé AEM, découvrez comment utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu.
 exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 97%
+source-wordcount: '1332'
+ht-degree: 96%
 
 ---
 
@@ -262,14 +262,14 @@ Pour utiliser l’API AEM GraphQL dans une requête, nous pouvons utiliser les d
 
 Comme vous pouvez le voir, les champs PDG et Employés font référence aux fragments de personne.
 
-Les modèles de fragment seront utilisés :
+Les modèles de fragment sont utilisés :
 
 * lors de la création du contenu dans l’éditeur de fragment de contenu ;
 * pour générer les schémas GraphQL que vous interrogerez.
 
 ### Où tester vos requêtes {#where-to-test-your-queries}
 
-Les requêtes peuvent être entrées dans l’[interface GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md), par exemple à l’adresse :
+Les requêtes peuvent être saisies dans la variable [Interface GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md), par exemple, à l’adresse :
 
 * `http://localhost:4502/aem/graphiql.html`
 

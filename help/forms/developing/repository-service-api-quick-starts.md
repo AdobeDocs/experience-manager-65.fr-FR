@@ -11,10 +11,10 @@ topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 role: Developer
 exl-id: 703b6798-d40f-4769-96fc-e440090ca983
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: ht
-source-wordcount: '652'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '648'
+ht-degree: 93%
 
 ---
 
@@ -52,7 +52,7 @@ La plupart des démarrages rapides du service de référentiel AEM Forms interag
 
 Le dossier FormsFolder est un emplacement du référentiel AEM Forms. Vous pouvez, par exemple, ajouter ce dossier par programmation à `Applications/FormsApplication`. (Voir [Démarrage rapide (mode SOAP) : créer un dossier à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
 
-Le chemin d’accès à une ressource située dans le référentiel AEM Forms est le suivant :
+Le chemin d’accès à une ressource dans le référentiel AEM Forms est le suivant :
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
@@ -84,19 +84,19 @@ L’exemple de code Java suivant crée un dossier appelé *FormsFolder* à l’e
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -190,19 +190,19 @@ L’exemple de code Java suivant écrit une ressource appelée *loan.xdp* dans l
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -318,19 +318,19 @@ L’exemple de code Java suivant répertorie les ressources qui se trouvent dans
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -350,7 +350,7 @@ L’exemple de code Java suivant répertorie les ressources qui se trouvent dans
  import com.adobe.repository.bindings.dsc.client.ResourceRepositoryClient;
  import com.adobe.repository.infomodel.bean.Resource;
  
- //This quick start lists the content located in Applications/FormsApplication/1.0/FormsFolder
+ //This quick start lists the content in Applications/FormsApplication/1.0/FormsFolder
  //Ensure that you create a AEM Forms application named Applications/FormsApplication using Workbench
  public class ListFiles {
  
@@ -372,7 +372,7 @@ L’exemple de code Java suivant répertorie les ressources qui se trouvent dans
              // Create a ResourceRepositoryClient object using the service client factory
              ResourceRepositoryClient repositoryClient = new ResourceRepositoryClient(myFactory);
  
-             // List all the files located in the
+             // List all the files in the
              String resourceFolderPath = "/Applications/FormsApplication/1.0/FormsFolder";
  
              // Retrieve the list of resources under the folder path
@@ -417,19 +417,19 @@ L’exemple de code Java suivant lit une ressource appelée *Loan.xdp* du réfé
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -518,19 +518,19 @@ L’exemple de code Java suivant met à jour `/Applications/FormsApplication/1.0
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -630,19 +630,19 @@ L’exemple de code Java suivant recherche Loan.xdp dans `Applications/FormsAppl
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -754,19 +754,19 @@ L’exemple de code Java suivant crée une relation entre deux ressources dans l
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -895,19 +895,19 @@ L’exemple de code Java suivant verrouille /Applications/FormsApplication/1.0/F
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -1006,19 +1006,19 @@ L’exemple de code Java suivant lit et crée des listes de contrôle d’accès
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -1121,19 +1121,19 @@ L’exemple de code Java suivant supprime Loan.xdp de `Applications/FormsApplica
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -1157,7 +1157,7 @@ L’exemple de code Java suivant supprime Loan.xdp de `Applications/FormsApplica
  
  
  // This quick start deletes Loan.xdp from Applications/FormsApplication/1.0/FormsFolder
- //If this XDP is not located in this folder, an exception is thrown
+ //If this XDP is not in this folder, an exception is thrown
  //Ensure that you create a AEM Forms application named FormsApplication using Workbench
  public class DeleteResource {
  

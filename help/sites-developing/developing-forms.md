@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 57%
+source-wordcount: '1947'
+ht-degree: 53%
 
 ---
 
@@ -60,7 +60,7 @@ Il s’agit d’un champ facultatif qui permet de spécifier le chemin à un nœ
 
 Plusieurs champs de formulaire ont également la propriété **Chemin de chargement des éléments**, à nouveau un chemin d’accès facultatif qui pointe vers un noeud du référentiel.
 
-Le **Chemin de chargement des éléments** est le chemin d’accès aux propriétés de nœud qui est utilisé pour charger des valeurs prédéfinies dans ce champ spécifique du formulaire ; par exemple, une [liste déroulante](/help/sites-authoring/default-components-foundation.md#dropdown-list), un [groupe de cases à cocher](/help/sites-authoring/default-components-foundation.md#checkbox-group) ou un [groupe de cases d’option](/help/sites-authoring/default-components-foundation.md#radio-group).
+La variable **Chemin de chargement des éléments** est le chemin d’accès aux propriétés de noeud qui est utilisé pour charger des valeurs prédéfinies dans ce champ spécifique du formulaire, par exemple, une [liste déroulante](/help/sites-authoring/default-components-foundation.md#dropdown-list), [groupe de cases à cocher](/help/sites-authoring/default-components-foundation.md#checkbox-group) ou [groupe radio](/help/sites-authoring/default-components-foundation.md#radio-group).
 
 #### Exemple : préchargement d’une liste déroulante avec plusieurs valeurs {#example-preloading-a-dropdown-list-with-multiple-values}
 
@@ -68,10 +68,9 @@ Une liste déroulante peut être configurée avec votre plage de valeurs à sél
 
 La variable **Chemin de chargement des éléments** peut être utilisé pour accéder à une liste à partir d’un dossier du référentiel et les précharger dans le champ :
 
-1. Créez un dossier sling (`sling:Folder`)
-Par exemple, `/etc/designs/<myDesign>/formlistvalues`
+1. Créez un dossier sling ( `sling:Folder`), par exemple, `/etc/designs/<myDesign>/formlistvalues`
 
-1. Ajoutez une nouvelle propriété (`myList`, par exemple) de type chaîne à plusieurs valeurs (`String[]`) pour contenir la liste des éléments. Le contenu peut être également importé à l’aide d’un script (script JSP ou curl dans un script shell).
+1. Ajoutez une nouvelle propriété (par exemple, `myList`) de type chaîne à plusieurs valeurs ( `String[]`) pour contenir la liste des éléments de la liste déroulante. Le contenu peut être également importé à l’aide d’un script (script JSP ou curl dans un script shell).
 
 1. Utilisez le chemin complet dans le champ **Chemin de chargement des éléments**
 Par exemple, `/etc/designs/geometrixx/formlistvalues/myList`
@@ -80,7 +79,7 @@ Notez que si les valeurs de `String[]` sont formatées comme suit :
 
 * `AL=Alabama`
 * `AK=Alaska`
-* etc.
+* et ainsi de suite
 
 AEM génère la liste sous la forme suivante :
 
@@ -180,7 +179,7 @@ Ce script est appelé lorsque le formulaire est rendu. Il peut être utilisé po
 Le nom du script est `cleanup.<extension>`, par exemple : `cleanup.jsp`
 Ce script peut être utilisé pour effectuer le nettoyage.
 
-1. Utilisez la variable **Forms** dans un système de paragraphes (parsys). La variable **Type d’action** comprend désormais votre nouvelle action.
+1. Utilisez la variable **Forms** dans un système de paragraphes (parsys). La variable **Type d’action** la liste déroulante comprend désormais votre nouvelle action.
 
    >[!NOTE]
    >
@@ -210,7 +209,7 @@ Vous pouvez ajouter vos propres contraintes pour un champ spécifique (sous `/ap
 
    * `sling:resourceType` - Défini sur `foundation/components/form/constraint`
 
-   * `constraintMessage` : message personnalisé qui s’affiche si le champ n’est pas valide, suivant la contrainte, lorsque le formulaire est envoyé
+   * `constraintMessage` : message personnalisé qui s’affiche si le champ n’est pas valide, selon la contrainte, lorsque le formulaire est envoyé
 
    * Facultatif :
 

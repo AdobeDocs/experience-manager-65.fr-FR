@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6836'
-ht-degree: 58%
+source-wordcount: '6818'
+ht-degree: 55%
 
 ---
 
@@ -23,7 +23,7 @@ Depuis AEM 6.3, une nouvelle mise en oeuvre de groupe d’utilisateurs fermé es
 
 >[!NOTE]
 >
->Par souci de simplicité, l’abréviation CUG (Closer User Group) sera utilisée dans cette documentation pour se référer aux groupes d’utilisateurs fermés.
+>Par souci de simplicité, l’abréviation CUG est utilisée dans toute cette documentation.
 
 Cette nouvelle mise en œuvre a pour objectif de couvrir les fonctionnalités existantes en fonction des besoins, tout en résolvant les problèmes d’adressage et les limites de conception des versions antérieures. Le résultat est une nouvelle conception de CUG avec les caractéristiques suivantes :
 
@@ -104,7 +104,7 @@ Les bonnes pratiques suivantes doivent être prises en compte pour définir un a
    * Un besoin excessif de CUG imbriqués peut mettre en évidence des problèmes dans la conception de contenu.
    * Un besoin très excessif de CUG (par exemple, sur chaque page) peut indiquer la nécessité d’un modèle d’autorisation personnalisé potentiellement mieux adapté aux besoins de sécurité spécifiques de l’application et du contenu en question.
 
-* Limitez les chemins pris en charge pour les politiques de CUG à un petit nombre d’arborescences dans le référentiel afin d’optimiser les performances. Par exemple, autorisez uniquement les CUG sous le nœud /content tel qu’établi par défaut depuis AEM 6.3.
+* Limitez les chemins pris en charge pour les politiques de CUG à un petit nombre d’arborescences dans le référentiel afin d’optimiser les performances. Par exemple, autorisez uniquement les CUG sous le noeud /content , tel qu’il est fourni comme valeur par défaut depuis AEM 6.3.
 * Les politiques de CUG sont conçues pour autoriser l’accès en lecture à un petit ensemble d’entités de sécurité. La nécessité d’un grand nombre d’entités de sécurité peut mettre en évidence des problèmes dans la conception du contenu ou de l’application et doit être reconsidérée.
 
 ### Authentification : définition de l’exigence d’authentification {#authentication-defining-the-auth-requirement}
@@ -207,7 +207,7 @@ Le nouveau type de politiques de contrôle d’accès destiné à limiter l’ac
 
 #### Définition d’une nouvelle stratégie de CUG {#set-a-new-cug-policy}
 
-Code pour appliquer une nouvelle politique de CUG à un nœud qui n’avait pas de CUG. Veuillez noter que `getApplicablePolicies` renvoie uniquement les nouvelles politiques qui n’ont pas encore été définies. À la fin, la stratégie doit être réécrite et les modifications doivent être conservées.
+Code pour appliquer une nouvelle politique de CUG à un nœud qui n’avait pas de CUG. Notez que `getApplicablePolicies` renvoie uniquement les nouvelles stratégies qui n’ont pas été définies auparavant. À la fin, la stratégie doit être réécrite et les modifications doivent être conservées.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -243,7 +243,7 @@ session.save();
 
 #### Modification d’une stratégie de CUG existante {#edit-an-existing-cug-policy}
 
-Les étapes suivantes sont nécessaires pour modifier une politique de CUG existante. Notez que la politique modifiée nécessite d’être mise à jour, et les modifications doivent être définies comme persistantes à l’aide de `javax.jcr.Session.save()`.
+Les étapes suivantes sont nécessaires pour modifier une politique de CUG existante. La stratégie modifiée doit être réécrite et les modifications doivent être conservées à l’aide de `javax.jcr.Session.save()`.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -281,7 +281,7 @@ La gestion du contrôle d’accès JCR définit une méthode du meilleur effort 
 
 >[!NOTE]
 >
->Notez la différence entre `getEffectivePolicies` et l’exemple de code suivant qui remonte la hiérarchie pour déterminer si un chemin donné fait déjà partie d’un CUG existant.
+>La différence entre `getEffectivePolicies` et l’exemple de code suivant qui remonte la hiérarchie pour déterminer si un chemin donné fait déjà partie d’un CUG existant.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -338,7 +338,7 @@ La création, la modification ou la suppression d’une nouvelle exigence d’au
 
 #### Ajout d’une nouvelle exigence d’authentification {#adding-a-new-auth-requirement}
 
-Les étapes de création d’une exigence d’authentification sont détaillées ci-dessous. Notez que cette exigence n’est enregistrée auprès de l’authentificateur Apache Sling que si `RequirementHandler` a été configuré pour l’arborescence contenant le nœud cible.
+Les étapes de création d’une exigence d’authentification sont présentées ci-dessous. L’exigence n’est enregistrée auprès de l’authentificateur Apache Sling que si la variable `RequirementHandler` a été configuré pour l’arborescence contenant le noeud cible.
 
 ```java
 Node targetNode = [...]
@@ -349,7 +349,7 @@ session.save();
 
 #### Ajout d’une nouvelle exigence d’authentification avec le chemin de connexion {#add-a-new-auth-requirement-with-login-path}
 
-Procédure à suivre pour créer une exigence d’authentification incluant un chemin de connexion. Notez que cette exigence et l’exclusion du chemin de connexion ne sont enregistrées auprès de l’authentificateur Apache Sling que si `RequirementHandler` a été configuré pour l’arborescence contenant le nœud cible.
+Procédure de création d’une exigence d’authentification comprenant un chemin de connexion. Notez que cette exigence et l’exclusion du chemin de connexion ne sont enregistrées auprès de l’authentificateur Apache Sling que si `RequirementHandler` a été configuré pour l’arborescence contenant le nœud cible.
 
 ```java
 Node targetNode = [...]
@@ -582,7 +582,7 @@ Les options de configuration disponibles associées au module d’autorisation d
 
 #### Exclusion des entités de sécurité de l’évaluation des CUG {#excluding-principals-from-cug-evaluation}
 
-L’exemption de principaux de l’évaluation de CUG a été adoptée à partir de l’ancienne mise en œuvre. La nouvelle autorisation de CUG couvre cette fonction avec une interface dédiée nommée CugExclude. Apache Jackrabbit Oak 1.4 est livré avec une mise en œuvre par défaut qui exclut un ensemble fixe de principaux, ainsi qu’une mise en œuvre étendue qui permet de configurer les noms des différents principaux. Ce dernier est configuré dans AEM instances de publication.
+L’exemption de principaux de l’évaluation de CUG a été adoptée à partir de l’ancienne mise en œuvre. La nouvelle autorisation de CUG couvre cette fonction avec une interface dédiée nommée CugExclude. Apache Jackrabbit Oak 1.4 est fourni avec une implémentation par défaut qui exclut un ensemble fixe d’entités de sécurité et une implémentation étendue qui permet de configurer des noms de principal individuels. Ce dernier est configuré dans AEM instances de publication.
 
 La valeur par défaut depuis AEM 6.3 empêche les entités de sécurité suivantes d’être affectées par les stratégies de CUG :
 
@@ -768,11 +768,11 @@ La configuration des CUG en accord avec LiveCopy est représentée dans le réf�
 
 Ces deux éléments sont créés sous `cq:Page`. Avec la conception actuelle, le MSM ne gère que les nœuds et les propriétés sous le nœud `cq:PageContent` (`jcr:content`).
 
-Par conséquent, les groupes CUG ne peuvent pas être déployés sur des Live Copies à partir de plans directeurs. Veuillez en tenir compte lors de la configuration de Live Copy.
+Par conséquent, les groupes CUG ne peuvent pas être déployés sur des Live Copies à partir de plans directeurs. Planifiez la configuration de la Live Copy.
 
 ## Modifications avec la nouvelle mise en oeuvre du groupe d’utilisateurs fermé {#changes-with-the-new-cug-implementation}
 
-Cette section est destinée à présenter les modifications apportées à la fonction CUG et à comparer l’ancienne et la nouvelle mise en œuvre. Il répertorie les modifications affectant la configuration de la prise en charge des CUG et décrit comment et par qui les CUG sont gérés dans le contenu du référentiel.
+Cette section a pour but de fournir un aperçu des modifications apportées à la fonction CUG et une comparaison entre l’ancienne et la nouvelle mise en oeuvre. Il répertorie les modifications affectant la configuration de la prise en charge des CUG et décrit comment et par qui les CUG sont gérés dans le contenu du référentiel.
 
 ### Différences dans l’installation et la configuration des CUG {#differences-in-cug-setup-and-configuration}
 

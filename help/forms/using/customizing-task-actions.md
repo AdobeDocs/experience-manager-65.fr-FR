@@ -1,7 +1,7 @@
 ---
 title: Personnaliser les actions de tâche
 seo-title: Customizing Task Actions
-description: Vous pouvez personnaliser l’aspect des actions de tâche, utiliser uniquement des images pour les actions, et personnaliser les images utilisées dans des actions d’acheminement.
+description: Vous pouvez personnaliser l’aspect des actions de tâche, utiliser uniquement des images pour les actions et personnaliser les images utilisées dans les actions d’itinéraire.
 seo-description: You can customize appearance of the task actions, use only images for actions, and customize the images used in route actions.
 uuid: f6aebcd5-beac-41bf-95bf-2c07d36afa8b
 content-type: reference
@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 exl-id: d17863fb-7950-493d-b378-16861c4af176
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -110,7 +110,7 @@ Pour personnaliser le style de texte, ajoutez le fragment de code suivant dans l
 
 ## Personnalisation des images {#customizing-images}
 
-Pour personnaliser les images, ajoutez le fragment de code suivant dans le fichier `/apps/ws/css/newStyle.css`. Le fragment de code suivant personnalise l’image pour l’action *lock* :
+Pour personnaliser les images, ajoutez le fragment de code suivant dans le fichier `/apps/ws/css/newStyle.css`. Le fragment de code suivant personnalise l’image pour la variable *lock* action :
 
 ```css
 #taskarea .taskActionsPopUp .lock, .task .taskActionsPopUp .lock{
@@ -120,7 +120,7 @@ Pour personnaliser les images, ajoutez le fragment de code suivant dans le fichi
 
 >[!NOTE]
 >
->ajoutez des styles distincts pour afficher des images différentes ou des images de résolutions différentes pour les actions Liste de tâches et Détails de la tâche. Par exemple, pour modifier l’action « lock » :
+>ajoutez des styles distincts pour afficher des images différentes ou des images de résolutions différentes pour les actions Liste de tâches et Détails de la tâche. Par exemple, pour modifier l’action &quot;lock&quot; :
 
 ```css
 #taskarea .taskActionsPopUp .lock{
@@ -131,13 +131,13 @@ Pour personnaliser les images, ajoutez le fragment de code suivant dans le fichi
 }
 ```
 
-## Affichage des images pour des actions uniquement {#showing-only-images-for-actions}
+## Affichage des images uniquement pour les actions {#showing-only-images-for-actions}
 
 Pour afficher uniquement des images pour des actions, personnalisez les images utilisées dans les actions d’acheminement. Pour plus d’informations, voir [Images pour les actions d’itinéraire](/help/forms/using/images-route-actions.md).
 
 ### Menu contextuel de l’action de tâche Liste de tâches {#task-list-task-action-nbsp-pop-up-menu}
 
-1. Vous avez besoin du paquet de développement pour personnaliser les éléments du menu contextuel de l’action de tâche Liste de tâches de l’espace de travail AEM Forms. Pour plus d’informations sur la création d’un programme de développement, voir [Générer du code de l’espace de travail AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code).
+1. Vous avez besoin du paquet de développement pour personnaliser les éléments du menu pop-up de l’action de tâche Liste de tâches de l’espace de travail AEM Forms. Pour plus d’informations sur la création d’un package de développement, voir [Générer du code de l’espace de travail AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code).
 
 1. Copiez /libs/ws/js/runtime/templates/task.html dans `/apps/ws/js/runtime/templates/task.html`pour remplacer le fragment de code suivant :
 
@@ -262,9 +262,9 @@ Pour afficher uniquement des images pour des actions, personnalisez les images u
    }
    ```
 
-### Menu contextuel de l’action de tâche Détails de la tâche {#task-details-task-action-pop-up-menu}
+### Menu pop-up de l’action de tâche Détails de la tâche {#task-details-task-action-pop-up-menu}
 
-Effectuez les étapes suivantes pour personnaliser le menu contextuel des actions de tâche Détails :
+Effectuez les étapes suivantes pour personnaliser le menu pop-up des actions de tâche Détails :
 
 * Copiez le fichier /libs/ws/js/runtime/templates/taskdetails.html dans le dossier `/apps/ws/js/runtime/templates/` :
 * Encapsulez la balise de l’icône dans la balise d’ancrage au lieu du texte. Par exemple, le *nouveau code* répertorié ci-dessous inclut la balise de l’icône dans la balise d’ancrage :
@@ -359,5 +359,5 @@ Effectuez les étapes suivantes pour personnaliser le menu contextuel des action
 ```
 
 * Ouvrez le fichier /apps/ws/js/registry.js pour le modifier.
-* Recherchez le texte suivant : `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
+* Recherchez le texte suivant : `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
 * Remplacez le texte localisé par le texte suivant : `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`.

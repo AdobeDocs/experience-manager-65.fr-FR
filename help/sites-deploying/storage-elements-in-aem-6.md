@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 0aa2c22f-32bb-4e50-8328-63ed73c0f19e
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
-workflow-type: ht
-source-wordcount: '708'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 98%
 
 ---
 
@@ -82,7 +82,7 @@ AEM 6 peut être configuré pour s’exécuter avec le stockage MongoDB en suiv
    * `changesSize` : taille en Mo de la collection limitée utilisée dans Mongo pour la mise en cache de la sortie diff. La valeur par défaut est 256.
    * `customBlobStore` : valeur booléenne indiquant qu’un magasin de données personnalisé est utilisé. La valeur par défaut est false.
 
-1. Créez un fichier de configuration avec le PID du magasin de données que vous souhaitez utiliser et modifiez le fichier pour définir les options de configuration. Pour plus d’informations, consultez la section [Configuration des magasins de nœuds et des entrepôts de données](/help/sites-deploying/data-store-config.md).
+1. Créez un fichier de configuration avec le PID du magasin de données que vous souhaitez utiliser et modifiez le fichier pour définir les options de configuration. Pour plus d’informations, voir [Configuration des entrepôts de noeuds et des entrepôts de données](/help/sites-deploying/data-store-config.md).
 
 1. Démarrez le jar AEM 6 avec une sauvegarde du stockage MongoDB en exécutant :
 
@@ -120,9 +120,8 @@ Red Hat® Linux® utilise un algorithme de gestion de la mémoire appelé Tran
 >Reportez-vous aux ressources suivantes :
 >
 >* Pour plus d’informations sur Transparent Huge Pages sur Red Hat® Linux®, reportez-vous à cet [article](https://access.redhat.com/solutions/46111).
->* Pour obtenir des conseils sur l’optimisation sous Linux®, reportez-vous à cet [article](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=fr).
+* Pour obtenir des conseils sur l’optimisation sous Linux®, reportez-vous à cet [article](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=fr).
 >
-
 
 ## Maintenance du référentiel {#maintaining-the-repository}
 

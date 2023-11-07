@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1796'
-ht-degree: 90%
+source-wordcount: '1795'
+ht-degree: 87%
 
 ---
 
@@ -24,7 +24,7 @@ Vous disposez ainsi d’un système de paragraphes qui vous permet de positionne
 Le conteneur de mise en page :
 
 * Permet un alignement horizontal sur la grille, ainsi que la possibilité de placer côte à côte les composants dans la grille et de définir quand ils doivent être réduits/développés.
-* Il utilise des points d’arrêt prédéfinis (pour téléphone ou tablette, par exemple) pour vous permettre de définir le comportement requis du contenu pour les appareils/l’orientation associés.
+* Utilise des points d’arrêt prédéfinis (par exemple, pour le téléphone, la tablette, etc.) pour vous permettre de définir le comportement requis du contenu pour l’orientation/les appareils associés.
 
    * Par exemple, vous pouvez personnaliser la taille du composant ou décider s’il peut être affiché sur des appareils spécifiques.
 
@@ -38,7 +38,7 @@ L’utilisateur ou l’utilisatrice peut ensuite afficher le rendu du contenu po
 
 AEM effectue une mise en page réactive de vos pages en combinant plusieurs mécanismes :
 
-* Composant [**Conteneur de mises en page**](#adding-a-layout-container-and-its-content-edit-mode)
+* Composant [**Conteneur de mise en page**](#adding-a-layout-container-and-its-content-edit-mode)
 
   Ce composant est disponible dans la [explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser) et fournit un système grid-paragraph qui permet d’ajouter et de positionner des composants dans une grille réactive. Il peut également être défini comme le système de paragraphes par défaut de votre page.
 
@@ -57,11 +57,11 @@ Grâce à ces mécanismes de grille réactive, vous pouvez :
 * masquer des composants pour des mises en page spécifiques à certains appareils ;
 * contrôler les colonnes.
 
-En fonction de votre projet, le conteneur de mises en page peut être utilisé en tant que système de paragraphes par défaut pour vos pages ou en tant que composant pouvant être ajouté à votre page via l’explorateur de composants (ou les deux).
+En fonction de votre projet, le conteneur de mise en page peut être utilisé en tant que système de paragraphes par défaut pour vos pages ou en tant que composant pouvant être ajouté à votre page via l’explorateur de composants (ou les deux).
 
 >[!NOTE]
 >
->Adobe propose une [documentation GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) sur la mise en page réactive. Celle-ci peut servir de référence et être distribuée aux développeurs d’applications frontales pour leur permettre d’utiliser la grille AEM en dehors d’AEM, par exemple lorsqu’ils créent des maquettes HTML statiques pour un site AEM en préparation.
+>Adobe fournit [Documentation GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) de la mise en page réactive en tant que référence pouvant être fournie aux développeurs front-end pour leur permettre d’utiliser la grille AEM en dehors d’AEM, par exemple, lors de la création de maquettes de HTML statiques pour un site d’ futur.
 
 >[!NOTE]
 >
@@ -139,9 +139,9 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
    * La ligne du pli ne s’affiche pas si la hauteur de l’appareil émulé est supérieure à la taille de l’écran.
    * Le pli est affiché pour faciliter le travail de l’auteur et n’apparaît pas sur la page publiée.
 
-## Ajout d’un conteneur de mises en page et de son contenu (mode d’édition) {#adding-a-layout-container-and-its-content-edit-mode}
+## Ajout d’un conteneur de mise en page et de son contenu (mode d’édition) {#adding-a-layout-container-and-its-content-edit-mode}
 
-Un **conteneur de mises en page** est un système de paragraphes qui présente les caractéristiques suivantes :
+Un **conteneur de mise en page** est un système de paragraphes qui présente les caractéristiques suivantes :
 
 * Il contient d’autres composants.
 * Il définit la mise en page.
@@ -149,16 +149,16 @@ Un **conteneur de mises en page** est un système de paragraphes qui présente l
 
 >[!NOTE]
 >
->S’il n’est pas déjà disponible, le **conteneur de mises en page** doit être explicitement [activé pour un système de paragraphes ou une page](/help/sites-administering/configuring-responsive-layout.md) (en utilisant le mode de [**conception**, par exemple](/help/sites-authoring/default-components-designmode.md)).
+>S’il n’est pas déjà disponible, le **conteneur de mise en page** doit être explicitement [activé pour un système de paragraphes ou une page](/help/sites-administering/configuring-responsive-layout.md) (en utilisant le mode de [**conception**, par exemple](/help/sites-authoring/default-components-designmode.md)).
 
 1. Le **conteneur de mise en page** est disponible en tant que composant standard dans l’[explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser). De là, vous pouvez le faire glisser vers l’emplacement souhaité sur la page, après lequel vous verrez l’espace réservé **Faire glisser les composants ici**.
-1. Vous pouvez ensuite ajouter des composants au conteneur de mises en page, qui contiendront le contenu proprement dit :
+1. Vous pouvez ensuite ajouter des composants au conteneur de mise en page, qui contiendront le contenu proprement dit :
 
    ![screen_shot_2018-03-23at085500](assets/screen_shot_2018-03-23at085500.png)
 
-## Sélection et exécution d’une action sur un conteneur de mises en page (mode d’édition) {#selecting-and-taking-action-on-a-layout-container-edit-mode}
+## Sélection et exécution d’une action sur un conteneur de mise en page (mode d’édition) {#selecting-and-taking-action-on-a-layout-container-edit-mode}
 
-À l’instar des autres composants, vous pouvez sélectionner un conteneur de mises en page, puis effectuer une opération (couper, copier, supprimer) sur ce dernier (en mode d’**édition**) :
+À l’instar des autres composants, vous pouvez sélectionner un conteneur de mise en page, puis effectuer une opération (couper, copier, supprimer) sur ce dernier (en mode d’**édition**) :
 
 >[!CAUTION]
 >
@@ -192,7 +192,7 @@ Un **conteneur de mises en page** est un système de paragraphes qui présente l
 >
 >Vous pouvez définir une mise en page distincte pour chaque [point d’arrêt](#layout-definitions-device-emulation-and-breakpoints) (déterminée par l’orientation et le type d’appareil émulé).
 
-Pour configurer la mise en page d’une grille réactive mise en œuvre avec le composant Conteneur de mises en page, vous devez utiliser le mode **Mise en page**.
+Pour configurer la mise en page d’une grille réactive mise en œuvre avec le conteneur de mise en page, vous devez utiliser le mode **Mise en page**.
 
 Le mode **Mise en page** peut être activé de deux façons.
 
@@ -204,11 +204,11 @@ Le mode **Mise en page** peut être activé de deux façons.
 * Lors de la [modification d’un composant individuel.](/help/sites-authoring/editing-content.md#edit-component-layout)
 
    * En utilisant l’option **Mise en page** dans le menu d’action rapide du composant, vous pouvez passer au mode **Mise en page**.
-   * Le mode **Mise en page** persiste pendant la modification du composant et bascule vers le mode d’**édition** lorsqu’un autre composant est sélectionné.
+   * Le mode **Mise en page** persiste pendant la modification du composant et bascule vers le mode **Édition** lorsqu’un autre composant est sélectionné.
 
 Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses actions sur une grille :
 
-* Redimensionnez les composants de contenu à l’aide des points bleus. Le redimensionnement s’aligne toujours sur la grille. Lors du redimensionnement, la grille d’arrière-plan s’affiche pour faciliter l’alignement :
+* Redimensionnez les composants de contenu à l’aide des points bleus. Le redimensionnement s’accroche toujours à la grille. Lors du redimensionnement, la grille d’arrière-plan s’affiche pour faciliter l’alignement :
 
   ![screen_shot_2018-03-23at090140](assets/screen_shot_2018-03-23at090140.png)
 
@@ -228,7 +228,7 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
    * **Masquer le composant**
 
-     Le composant devient invisible (il peut être restauré à partir de la barre d’outils du conteneur de mises en page).
+     Le composant devient invisible (il peut être restauré à partir de la barre d’outils du conteneur de mise en page).
 
   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
@@ -258,7 +258,7 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
      >[!NOTE]
      >
-     >Dans l’exemple ci-dessus, les actions de flottement et de masquage sont disponibles, car ce conteneur de mises en page est imbriqué dans un conteneur de mises en page parent.
+     >Dans l’exemple ci-dessus, les actions de flottement et de masquage sont disponibles, car ce conteneur de mise en page est imbriqué dans un conteneur de mise en page parent.
 
    * **Afficher les composants**
 Sélectionnez les composants parents pour afficher la barre d’outils comportant l’option **Afficher les composants masqués**. Dans cet exemple, deux composants sont masqués.

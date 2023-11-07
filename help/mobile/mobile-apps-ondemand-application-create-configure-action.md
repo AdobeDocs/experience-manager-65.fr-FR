@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: ccafd49a-5c8a-44eb-9b0c-37070560bb52
 exl-id: dbe81ead-dfaa-4af0-9b66-a14917a1bcc7
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '442'
 ht-degree: 3%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 3%
 
 ## Création d&#39;une application On-Demand {#creating-an-on-demand-application}
 
-La création d’une application est souvent la première étape de la création et de la gestion du contenu AEM Mobile On-Demand. Elle est souvent effectuée au niveau de l’administrateur AEM. Il représente un conteneur de contenu, visible sur les appareils mobiles, prêt à afficher le contenu créé par l’auteur comme les articles, les images, les collections, etc.
+La création d’une application est souvent la première étape de la création et de la gestion du contenu AEM Mobile On-Demand, et elle est souvent effectuée au niveau de l’administrateur AEM. Il représente un conteneur de contenu, visible sur les appareils mobiles, prêt à afficher le contenu créé par l’auteur comme les articles, les images, les collections, etc.
 
-Vous pouvez consulter les détails de votre application dans le tableau de bord ou dans le Centre de contrôle AEM Mobile.
+Vous pouvez consulter les détails de votre application dans le tableau de bord ou dans le Centre de contrôle d’AEM Mobile.
 
 >[!NOTE]
 >
@@ -54,9 +54,9 @@ Vous pouvez consulter les détails de votre application dans le tableau de bord 
 
 ## Utilisation des modèles d’application {#using-app-templates}
 
-Les modèles d’application offrent un moyen simple d’exploiter les conceptions existantes créées par les développeurs, utilisées pour créer de nouvelles applications dans AEM.
+Les modèles d’application permettent d’utiliser facilement des conceptions existantes créées par les développeurs, utilisées pour créer de nouvelles applications dans AEM.
 
-Qu’est-ce qu’un modèle d’application ? Considérez-le comme un ensemble de modèles de page et de composants qui représentent une ligne de base ou une base d’une application.
+Qu’est-ce qu’un modèle d’application ? Considérez-le comme un ensemble de modèles de page et de composants qui représentent une référence ou une base d’une application.
 Lors de la création d’une application basée sur le modèle d’une autre application, vous obtenez une application dont le point de départ est représentatif de l’application à partir de laquelle elle a été créée.
 
 Pour utiliser cette fonctionnalité, vous devez disposer d’un modèle d’application mobile (ou d’une application installée avec un modèle d’application).
@@ -69,7 +69,7 @@ Voir [Association de votre application à la configuration du cloud](/help/mobil
 
 ### Prise en main {#getting-ahead}
 
-Une fois que vous êtes familiarisé avec la création d’une application à la demande et ainsi l’association de cette application à une configuration cloud, reportez-vous à la section [Actions de gestion de contenu](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
+Une fois que vous êtes familiarisé avec la création d’une application à la demande et ainsi l’association de cette application à une configuration cloud, voir [Actions de gestion de contenu](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
 **Actions de gestion de contenu** appelle la création et la gestion du contenu suivant :
 

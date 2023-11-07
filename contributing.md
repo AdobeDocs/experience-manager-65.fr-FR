@@ -1,15 +1,15 @@
 ---
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 78%
+source-wordcount: '516'
+ht-degree: 62%
 
 ---
 # Contribution à la documentation d’Adobe Experience Manager
 
 Merci d’avoir choisi de contribuer à la documentation d’Adobe Experience Manager. Adobe accueille favorablement les contributions de l’ensemble de la communauté des lecteurs et des autres employés de l’Adobe.
 
-Ce fichier décrit comment contribuer à la documentation ainsi que les directives à suivre lors de l’apport de vos contributions.
+Ce fichier décrit comment contribuer et indique les instructions à suivre lors de l’apport de vos contributions.
 
 ## Code de conduite Open Source d’Adobe
 
@@ -17,7 +17,7 @@ Ce projet a adopté le [Code de conduite Adobe Open Source](code-of-conduct.md).
 
 ## Instructions relatives à la contribution
 
-Bien que toute contribution visant à améliorer la documentation d’AEM soit la bienvenue, nous vous demandons, si possible, de bien vouloir respecter certaines instructions et normes. Pour plus d’informations, voir les [Instructions relatives à la contribution à la documentation](guidelines.md) AEM.
+Bien que toute contribution visant à améliorer la documentation d’AEM soit la bienvenue, nous vous demandons, si possible, de bien vouloir respecter certaines instructions et normes. Consultez la section [Instructions relatives à la contribution à AEM documentation](guidelines.md) pour plus d’informations.
 
 ## Comment contribuer
 
@@ -55,7 +55,7 @@ Regardez la vidéo suivante pour un aperçu rapide de la création de problèmes
 
 Si vous êtes un employé d’Adobe et avez une contribution, utilisez la variable `AdobeDocs` org dans le git d’entreprise.
 
-Nous apprécions évidemment toute contribution et examinerons votre contribution si elle est effectuée dans le référentiel public. Toutefois, les demandes d’extraction des employés d’Adobe sont plus faciles à traiter et peuvent être approuvées plus rapidement dans le référentiel d’entreprise. Veillez à ce que toute information de propriété exclusive ne soit discutée que sur le référentiel de l’entreprise.
+Nous apprécions toute contribution et examinerons votre contribution si elle est effectuée dans le référentiel public. Toutefois, les demandes d’extraction des employés d’Adobe sont plus faciles à traiter et peuvent être approuvées plus rapidement dans le référentiel d’entreprise. Assurez-vous que toute information de propriété exclusive n’est discutée que sur le référentiel de l’entreprise.
 
 ## Informations supplémentaires
 

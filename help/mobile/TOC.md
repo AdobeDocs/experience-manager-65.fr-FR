@@ -7,10 +7,10 @@ breadcrumb-title: Guide mobile
 user-guide-description: Créez et gérez du contenu pour les applications mobiles.
 feature: Mobile
 role: User
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 12%
+source-wordcount: '330'
+ht-degree: 13%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 12%
    + [Actions de création et de configuration d’application](mobile-apps-ondemand-application-create-configure-action.md)
    + [Gestion des articles](mobile-on-demand-managing-articles.md)
    + [Chargement de ressources partagées](mobile-on-demand-shared-resources.md)
-   + [Configuration du cloud.](mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
+   + [Configuration du cloud](mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
    + [Gestion des bannières](mobile-on-demand-managing-banners.md)
 + Développement d’une application On-Demand Services {#developing}
    + [AEM Mobile On-Demand](aem-mobile-on-demand.md)

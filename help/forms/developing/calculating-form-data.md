@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1882'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1878'
+ht-degree: 95%
 
 ---
 
@@ -80,13 +80,13 @@ Pour illustrer l’utilisation d’un script de conception de formulaire, cette 
 
 **A.** Un champ nommé NumericField1 **B.** Un champ nommé NumericField2 **C.** Un champ nommé NumericField3
 
-La syntaxe du script situé dans cette conception de formulaire est la suivante :
+La syntaxe du script dans cette conception de formulaire est la suivante :
 
 ```javascript
      NumericField3 = NumericField2 + NumericField1
 ```
 
-Dans cette conception de formulaire, le bouton Calculer est un bouton de commande et le script se trouve dans l’événement `Click`. Lorsqu’un utilisateur saisit des valeurs dans les deux premiers champs (NumericField1 et NumericField2) et clique sur le bouton Calculer, le formulaire est envoyé au service Forms, où le script est exécuté. Le service Forms restitue le formulaire à l’appareil client avec les résultats du calcul affichés dans le champ NumericField3.
+Dans cette conception de formulaire, le bouton Calculer est un bouton de commande et le script se trouve dans le `Click` . Lorsqu’un utilisateur saisit des valeurs dans les deux premiers champs (NumericField1 et NumericField2) et clique sur le bouton Calculer, le formulaire est envoyé au service Forms, où le script est exécuté. Le service Forms restitue le formulaire à l’appareil client avec les résultats du calcul affichés dans le champ NumericField3.
 
 >[!NOTE]
 >
@@ -123,15 +123,15 @@ Vérifiez que l’état de traitement associé au formulaire envoyé est `1` `(C
 
 Après avoir vérifié que l’état de traitement associé à un formulaire envoyé est `1`, vous devez réécrire les résultats dans le navigateur web client. Lorsque le formulaire est affiché, la valeur calculée apparaît dans le(s) champ(s) approprié(s).
 
-**Voir aussi**
+**Voir également**
 
-[Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusion de fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 [Calcul des données de formulaire à l’aide de l’API Java](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
 [Calcul des données de formulaire à l’aide de l’API de service Web](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
 [Définition des propriétés de connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
-[Démarrages rapides de l’API du service Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
-[Renvoi de formulaires PDF interactifs](/help/forms/developing/rendering-interactive-pdf-forms.md)
-[Création d’applications web qui renvoient des formulaires](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Démarrages rapides de l’API Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Rendu des PDF forms interactifs](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Création d’applications web qui renvoient Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Calcul des données de formulaire à l’aide de l’API Java {#calculate-form-data-using-the-java-api}
 
@@ -152,14 +152,13 @@ Calculer les données de formulaire à l’aide de l’API Forms (Java) :
    * Appelez la méthode `processFormSubmission` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
       * Objet `com.adobe.idp.Document` contenant les données de formulaire.
-      * Une valeur de chaîne qui indique les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Vous devez spécifier le type de contenu à gérer en définissant une ou plusieurs valeurs pour la variable d’environnement `CONTENT_TYPE`. Par exemple, pour gérer les données XML et PDF, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
+      * Une valeur de chaîne qui indique les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Indiquez le type de contenu à gérer en spécifiant une ou plusieurs valeurs pour la variable d’environnement `CONTENT_TYPE`. Par exemple, pour gérer les données XML et PDF, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
       * Une valeur de chaîne qui spécifie la valeur d’en-tête `HTTP_USER_AGENT`, par exemple, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Objet `RenderOptionsSpec` stockant les options d’exécution.
 
-      La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
+     La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
 
    * Vérifiez que l’état de traitement associé à un formulaire envoyé est `1` en appelant la méthode `getAction` de l’objet `FormsResult`. Si cette méthode renvoie la valeur `1`, le calcul a été effectué et les données peuvent être réécrites dans le navigateur web du client.
-
 
 1. Réécrivez le flux de données de formulaire dans le navigateur web client.
 
@@ -169,11 +168,11 @@ Calculer les données de formulaire à l’aide de l’API Forms (Java) :
    * Créez un tableau d’octets et renseignez-le avec le flux de données de formulaire en appelant la méthode `read` de l’objet `InputStream` et en transmettant le tableau d’octets en tant qu’argument.
    * Appelez la méthode `write` de l’objet `javax.servlet.ServletOutputStream` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
-**Voir aussi**
+**Voir également**
 
 
-[Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
-[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[Inclusion de fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Définition des propriétés de connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Calculer les données du formulaire en utilisant l’API Web Service {#calculate-form-data-using-the-web-service-api}
 
@@ -211,10 +210,9 @@ Calculez les données du formulaire en utilisant l’API Forms (Web Service) :
       * Un objet `MyArrayOf_xsd_anyTypeHolder` vide qui est renseigné par la méthode. Ce paramètre est utilisé pour stocker les pièces jointes envoyées avec le formulaire.
       * Objet `FormsResultHolder` vide qui est rempli par la méthode avec le formulaire envoyé.
 
-      La méthode `processFormSubmission` remplit le paramètre `FormsResultHolder` avec les résultats de l’envoi du formulaire. La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
+     La méthode `processFormSubmission` remplit le paramètre `FormsResultHolder` avec les résultats de l’envoi du formulaire. La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
 
    * Vérifiez que l’état de traitement associé à un formulaire envoyé est `1` en appelant la méthode `getAction` de l’objet `FormsResult`. Si cette méthode renvoie la valeur `1`, le calcul a été effectué et les données peuvent être réécrites dans le navigateur web du client.
-
 
 1. Réécrivez le flux de données de formulaire dans le navigateur web client.
 

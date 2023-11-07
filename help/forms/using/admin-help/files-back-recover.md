@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2072'
-ht-degree: 18%
+source-wordcount: '2065'
+ht-degree: 16%
 
 ---
 
@@ -109,7 +109,7 @@ DB2 dispose de fonctionnalités intégrées pour sauvegarder une base de donnée
 
 Utilisez des sauvegardes instantanées ou configurez votre base de données Oracle pour qu’elle s’exécute en mode de consignation d’archivage. (Voir [Sauvegarde d’Oracle : Introduction](https://www.databasedesign-resource.com/oracle-backup.md).) Pour plus d’informations sur la sauvegarde et la récupération de votre base de données Oracle, consultez les sites suivants :
 
-[Oracle Backup and Recovery :](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) explique en détail les concepts de sauvegarde et de récupération, les techniques les plus couramment employées pour utiliser Recovery Manager (RMAN) à des fins de sauvegarde, de récupération et de génération de rapports, de même que la planification d’une stratégie de sauvegarde et de récupération.
+[Sauvegarde et récupération des Oracles :](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Décrit les concepts de sauvegarde et de récupération, ainsi que les techniques les plus courantes pour utiliser Recovery Manager (RMAN) à des fins de sauvegarde, de récupération et de création de rapports plus en détail, et fournit des informations supplémentaires sur la planification d’une stratégie de sauvegarde et de récupération.
 
 [Oracle de la sauvegarde et de la récupération de la base de données Guide de l’utilisateur :](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) Fournit des informations détaillées sur l’architecture RMAN, les concepts et les mécanismes de sauvegarde et de récupération, des techniques de récupération avancées telles que la récupération instantanée et les fonctionnalités de flashback de base de données, ainsi que l’optimisation des performances de sauvegarde et de récupération. Il couvre également la sauvegarde et la récupération gérées par l’utilisateur, à l’aide des installations du système d’exploitation hôte au lieu de RMAN. Ce volume est essentiel pour la sauvegarde et la récupération de déploiements de base de données plus sophistiqués et pour les scénarios de récupération avancés.
 
@@ -153,7 +153,7 @@ Le répertoire racine de stockage de contenu est créé lorsque Content Services
 
 L’emplacement par défaut du répertoire racine de stockage de contenu est `[aem-forms root]/lccs_data`.
 
-Sauvegardez les répertoires suivants situés dans le répertoire racine de stockage de contenu :
+Sauvegardez les répertoires suivants dans le répertoire racine de stockage de contenu :
 
 /audit.contentstore
 
@@ -163,7 +163,7 @@ Sauvegardez les répertoires suivants situés dans le répertoire racine de stoc
 
 /backup-lucene-indexes
 
-Si le répertoire /backup-lucene-indexes n’est pas présent, sauvegardez le répertoire /lucene-indexes, également situé dans le répertoire racine de stockage de contenu. Si le répertoire /backup-lucene-indexes existe, ne sauvegardez pas le répertoire /lucene-indexes, car cela peut entraîner des erreurs.
+Si le répertoire /backup-lucene-indexes n’est pas présent, sauvegardez le répertoire /lucene-indexes, également dans le répertoire racine de stockage de contenu. Si le répertoire /backup-lucene-indexes existe, ne sauvegardez pas le répertoire /lucene-indexes, car cela peut entraîner des erreurs.
 
 ### Emplacement racine de stockage de contenu (environnement en grappe) {#content-storage-root-location-clustered-environment}
 
@@ -173,7 +173,7 @@ Lorsque vous installez Content Services (obsolète) dans un environnement en gra
 
 **Répertoire racine de l’index :** Répertoire créé sur chaque noeud de la grappe, avec toujours le même chemin et le même nom de répertoire.
 
-L’emplacement par défaut du répertoire racine de stockage de contenu est `[GDS root]/lccs_data`, où `[GDS root]` correspond à l’emplacement décrit à la [section GDS (stockage global de documents)](files-back-recover.md#gds-location). Sauvegardez les répertoires suivants situés dans le répertoire racine de stockage de contenu :
+L’emplacement par défaut du répertoire racine de stockage de contenu est `[GDS root]/lccs_data`, où `[GDS root]` correspond à l’emplacement décrit à la [section GDS (stockage global de documents)](files-back-recover.md#gds-location). Sauvegardez les répertoires suivants dans le répertoire racine de stockage de contenu :
 
 /audit.contentstore
 
@@ -183,7 +183,7 @@ L’emplacement par défaut du répertoire racine de stockage de contenu est `[G
 
 /backup-lucene-indexes
 
-Si le répertoire /backup-lucene-indexes n’est pas présent, sauvegardez le répertoire /lucene-indexes, également situé dans le répertoire racine de stockage de contenu. Si le répertoire /backup-lucene-indexes existe, ne sauvegardez pas le répertoire /lucene-indexes, car cela peut entraîner des erreurs.
+Si le répertoire /backup-lucene-indexes n’est pas présent, sauvegardez le répertoire /lucene-indexes, également dans le répertoire racine de stockage de contenu. Si le répertoire /backup-lucene-indexes existe, ne sauvegardez pas le répertoire /lucene-indexes, car cela peut entraîner des erreurs.
 
 L’emplacement par défaut du répertoire racine d’index est `[aem-forms root]/lucene-indexes` sur chaque nœud.
 
@@ -193,6 +193,6 @@ Si vous avez installé des polices supplémentaires dans votre environnement de 
 
 >[!NOTE]
 >
-Par défaut, les polices Adobe installées avec AEM Forms se trouvent dans le répertoire `[aem-forms root]/fonts`.
+Par défaut, les polices Adobe installées avec AEM forms se trouvent dans la variable `[aem-forms root]/fonts` répertoire .
 
 Si vous réinitialisez le système d’exploitation sur l’ordinateur hôte et que vous souhaitez utiliser des polices du système d’exploitation précédent, le contenu du répertoire des polices système doit également être sauvegardé. (Pour obtenir des instructions spécifiques, consultez la documentation de votre système d’exploitation).

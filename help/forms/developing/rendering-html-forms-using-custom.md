@@ -1,21 +1,17 @@
 ---
 title: Restituer des formulaires HTML à l’aide de fichiers CSS personnalisés
-seo-title: Rendering HTML Forms Using Custom CSS Files
 description: Utilisez le service Forms pour faire référence à des fichiers CSS personnalisés afin de générer des formulaires HTML en réponse à une demande HTTP d’un navigateur web. Vous pouvez générer un formulaire HTML qui utilise un fichier CSS à l’aide de l’API Java et de l’API Web Service.
-seo-description: Use the Forms service to refer to custom CSS files to render HTML forms in response to an HTTP request from a web browser. You can render an HTML form that uses a CSS file using the Java API and Web Service API.
-uuid: a44e96f1-001d-48a2-8c96-15cb9d0c71b3
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 role: Developer
 exl-id: 5fa385a7-f030-4c0c-8938-0991d02ef361
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1688'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1687'
+ht-degree: 82%
 
 ---
 
@@ -25,7 +21,7 @@ ht-degree: 100%
 
 Le service Forms génère les formulaires HTML en réponse à la demande HTTP d’un navigateur web. Lors du rendu d’un formulaire HTML, le service Forms peut référencer un fichier CSS personnalisé. Vous pouvez créer un fichier CSS personnalisé pour répondre aux besoins de votre entreprise et référencer ce fichier CSS lors de l’utilisation du service Forms pour le rendu des formulaires HTML.
 
-Le service Forms analyse silencieusement le fichier CSS personnalisé. En d’autres termes, le service Forms ne signale pas les erreurs qui peuvent se produire si le fichier CSS personnalisé ne respecte pas les normes CSS. Dans ce cas, le service Forms ignore le style et continue avec les styles restants situés dans le fichier CSS.
+Le service Forms analyse silencieusement le fichier CSS personnalisé. En d’autres termes, le service Forms ne signale pas les erreurs qui peuvent se produire si le fichier CSS personnalisé ne respecte pas les normes CSS. Dans ce cas, le service Forms ignore le style et continue avec les styles restants dans le fichier CSS.
 
 La liste suivante spécifie les styles pris en charge dans un fichier CSS personnalisé :
 
@@ -99,7 +95,7 @@ Rendez un formulaire HTML utilisant un fichier CSS personnalisé à l’aide de 
 
 1. Inclure les fichiers du projet
 
-   Incluez les fichiers clients JAR, tels qu’adobe-forms-client.jar, dans votre projet Java Classpath.
+   Incluez les fichiers JAR client, tels que adobe-forms-client.jar, dans le chemin de classe de votre projet Java.
 
 1. Créer un objet API Java Forms
 
@@ -109,11 +105,11 @@ Rendez un formulaire HTML utilisant un fichier CSS personnalisé à l’aide de 
 1. Référencer le fichier CSS
 
    * Créez un objet `HTMLRenderSpec` en utilisant son constructeur.
-   * Pour effectuer le rendu du formulaire HTML qui utilise un fichier CSS personnalisé, appelez la méthode `setCustomCSSURI` de l’objet `HTMLRenderSpec` et transmettez une valeur de chaîne qui spécifie l’emplacement et le nom du fichier CSS.
+   * Pour effectuer le rendu du HTML qui utilise un fichier CSS personnalisé, appelez la méthode `HTMLRenderSpec` de `setCustomCSSURI` et transmettez une valeur string qui spécifie l’emplacement et le nom du fichier CSS.
 
 1. Effectuer le rendu d’un formulaire HTML
 
-   Appelez la méthode `(Deprecated) (Deprecated) renderHTMLForm` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
+   Appeler la variable `FormsServiceClient` de `(Deprecated) (Deprecated) renderHTMLForm` et transmettez les valeurs suivantes :
 
    * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Une valeur d’énumération `TransformTo` spécifiant le type de préférence HTML. Par exemple, pour effectuer le rendu d’un formulaire HTML compatible avec le HTML dynamique pour Internet Explorer 5.0 ou version ultérieure, spécifiez `TransformTo.MSDHTML`.
@@ -127,13 +123,13 @@ Rendez un formulaire HTML utilisant un fichier CSS personnalisé à l’aide de 
 
 1. Écrire le flux de données de formulaire dans le navigateur web client
 
-   * Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
+   * Créez un `com.adobe.idp.Document` en appelant la méthode `FormsResult` object’s `getOutputContent` .
    * Accédez au type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
-   * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `com.adobe.idp.Document`.
-   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.h\ttp.HttpServletResponse`.
-   * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
-   * Créez un tableau d’octets et renseignez-le avec le flux de données de formulaire en appelant la méthode `read` de l’objet `InputStream` et en transmettant le tableau d’octets en tant qu’argument.
-   * Appelez la méthode `write` de l’objet `javax.servlet.ServletOutputStream` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
+   * Définissez la variable `javax.servlet.http.HttpServletResponse` type de contenu de l’objet en appelant ses `setContentType` et transmettre le type de contenu de la méthode `com.adobe.idp.Document` .
+   * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données de formulaire dans le navigateur Web client en appelant la fonction `javax.servlet.h\ttp.HttpServletResponse` de `getOutputStream` .
+   * Créez un `java.io.InputStream` en appelant la méthode `com.adobe.idp.Document` de `getInputStream` .
+   * Créez un tableau d’octets et renseignez-le avec le flux de données de formulaire en appelant la fonction `InputStream` de `read` et transmission du tableau d’octets en tant qu’argument.
+   * Appeler la variable `javax.servlet.ServletOutputStream` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 
@@ -161,11 +157,11 @@ Restituez un formulaire HTML utilisant un fichier CSS personnalisé à l’aide 
 1. Référencer le fichier CSS
 
    * Créez un objet `HTMLRenderSpec` en utilisant son constructeur.
-   * Pour effectuer le rendu du formulaire HTML qui utilise un fichier CSS personnalisé, appelez la méthode `setCustomCSSURI` de l’objet `HTMLRenderSpec` et transmettez une valeur de chaîne qui spécifie l’emplacement et le nom du fichier CSS.
+   * Pour effectuer le rendu du HTML qui utilise un fichier CSS personnalisé, appelez la méthode `HTMLRenderSpec` de `setCustomCSSURI` et transmettez une valeur string qui spécifie l’emplacement et le nom du fichier CSS.
 
 1. Effectuer le rendu d’un formulaire HTML
 
-   Appelez la méthode `(Deprecated) renderHTMLForm` de l’objet `FormsService` et transmettez les valeurs suivantes :
+   Appeler la variable `FormsService` de `(Deprecated) renderHTMLForm` et transmettez les valeurs suivantes :
 
    * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Une valeur d’énumération `TransformTo` spécifiant le type de préférence HTML. Par exemple, pour effectuer le rendu d’un formulaire HTML compatible avec le HTML dynamique pour Internet Explorer 5.0 ou version ultérieure, spécifiez `TransformTo.MSDHTML`.
@@ -185,13 +181,13 @@ Restituez un formulaire HTML utilisant un fichier CSS personnalisé à l’aide 
 
 1. Écrire le flux de données de formulaire dans le navigateur web client
 
-   * Créez un objet `FormResult` en obtenant la valeur du membre de données `value` de l’objet `com.adobe.idp.services.holders.FormsResultHolder`.
-   * Créez un objet `BLOB` contenant des données de formulaire en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
-   * Obtenez le type de contenu de l’objet `BLOB` en appelant sa méthode `getContentType`.
-   * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `BLOB`.
-   * Créez un objet `javax.servlet.ServletOutputStream` servant à écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
-   * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de l’objet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
-   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
+   * Créez un `FormResult` en obtenant la valeur de la variable `com.adobe.idp.services.holders.FormsResultHolder` de `value` membre de données.
+   * Créez un `BLOB` qui contient des données de formulaire en appelant la méthode `FormsResult` de `getOutputContent` .
+   * Accédez au type de contenu de l’objet `BLOB` en appelant sa méthode `getContentType`.
+   * Définissez la variable `javax.servlet.http.HttpServletResponse` type de contenu de l’objet en appelant ses `setContentType` et transmettre le type de contenu de la méthode `BLOB` .
+   * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données de formulaire dans le navigateur Web client en appelant la fonction `javax.servlet.http.HttpServletResponse` de `getOutputStream` .
+   * Créez un tableau d’octets et renseignez-le en appelant la variable `BLOB` de `getBinaryData` . Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
+   * Appeler la variable `javax.servlet.http.HttpServletResponse` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 

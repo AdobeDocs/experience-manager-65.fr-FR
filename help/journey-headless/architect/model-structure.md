@@ -2,8 +2,8 @@
 title: En savoir plus sur la création de modèles de fragment de contenu dans AEM
 description: Découvrez les concepts et les mécanismes de la modélisation du contenu pour votre CMS découplé à l’aide de modèles de fragments de contenu.
 exl-id: b377e01f-e392-4ef5-a259-73ce9ff941d0
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Cet article s’appuie sur ces connaissances préalables afin que vous comprenie
 <!--
 ## Enabling Content Fragment Models {#enabling-content-fragment-models}
 
-At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools -> General -> Configuration Browser. You can either select to configure the global entry, or create a new configuration. For example:
+At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools -> General -> Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
 
 ![Define configuration](/help/assets/content-fragments/assets/cfm-conf-01.png)
 
@@ -126,7 +126,7 @@ Maintenant que vous en savez plus sur les bases, l’étape suivante consiste à
 
       * [Publication d’un modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
-      * [Annulation de la publication d’un modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+      * [Dépublication d’un modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
 
       * [Modèles de fragment de contenu (publiés) verrouillés](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 

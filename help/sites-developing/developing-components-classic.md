@@ -7,9 +7,9 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2385'
+source-wordcount: '2384'
 ht-degree: 77%
 
 ---
@@ -196,7 +196,7 @@ Pour développer de nouveaux composants pour AEM en fonction du composant exista
    * Utilisez CRXDE Lite pour ajouter la valeur `<path-to-component>` (par exemple : `/apps/geometrixx/components/myComponent`) à la propriété Composants du nœud `/etc/designs/geometrixx/jcr:content/contentpage/par`.
    * Suivez les instructions de la section [Ajout de nouveaux composants aux systèmes de paragraphes](#adding-a-new-component-to-the-paragraph-system-design-mode).
 
-1. Dans AEM WCM, ouvrez une page de votre site web et insérez un paragraphe du type que vous venez de créer pour vous assurer que le composant fonctionne correctement.
+1. Dans AEM WCM, ouvrez une page de votre site web et insérez un paragraphe du type que vous avez créé pour vous assurer que le composant fonctionne correctement.
 
 >[!NOTE]
 >
@@ -206,7 +206,7 @@ Pour développer de nouveaux composants pour AEM en fonction du composant exista
 
 Une fois le composant développé, vous l’ajoutez au système de paragraphes, ce qui permet aux auteurs et autrices de sélectionner et d’utiliser le composant lors de la modification d’une page.
 
-1. Accédez à une page de votre environnement de création qui utilise le système de paragraphes ; par exemple, `<contentPath>/Test.html`.
+1. Accédez à une page de votre environnement de création qui utilise le système de paragraphes, par exemple : `<contentPath>/Test.html`.
 1. Pour basculer vers le mode Création, effectuez l’une des opérations suivantes :
 
    * Ajoutez `?wcmmode=design` à la fin de l’URL et accédez-y à nouveau. Par exemple :
@@ -378,7 +378,7 @@ Pour désactiver cette fonctionnalité, vous utilisez le composant d’image sta
    * Définissez **jcr:title** sur `Image (Extended)`.
 
 1. Accédez à `/apps/geometrixx/components/image/dialog/items/image`.
-1. Ajoutez une propriété :
+1. Ajouter une propriété:
 
    * **Nom** : `allowUpload`
    * **Type** : `String`

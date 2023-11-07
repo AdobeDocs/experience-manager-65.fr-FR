@@ -3,10 +3,10 @@ title: Présentation du commerce électronique
 description: AEM eCommerce générique est disponible dans le cadre de l’installation standard et vous fournit toutes les fonctionnalités de la structure eCommerce.
 feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 85%
+source-wordcount: '260'
+ht-degree: 79%
 
 ---
 
@@ -30,7 +30,7 @@ Adobe propose deux versions de framework d’intégration de Commerce :
 
 ## Déploiement d’autres mises en oeuvre {#deploying-other-implementations}
 
-Pour AEM et Adobe Commerce, consultez [Intégration d’AEM et d’Adobe Commerce](/help/commerce/cif/integrating/magento.md) à l’aide du [framework d’intégration de Commerce (CIF)](/help/commerce/cif/introduction.md).
+Pour AEM et Adobe Commerce, voir [Intégration AEM et Adobe Commerce](/help/commerce/cif/integrating/magento.md) en utilisant la variable [Commerce integration framework](/help/commerce/cif/introduction.md).
 
 >[!NOTE]
 >

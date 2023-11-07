@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 98%
+source-wordcount: '507'
+ht-degree: 90%
 
 ---
 
@@ -33,7 +33,7 @@ La recherche est disponible dans la barre d’outils supérieure :
 Avec le rail de recherche, vous pouvez accomplir ce qui suit :
 
 * Rechercher un mot-clé, un chemin ou une balise.
-* Filtrer selon des critères spécifiques aux ressources, dates de modification, état de la page, taille du fichier, etc.
+* Filtrez selon des critères spécifiques à une ressource, tels que les dates de modification, l’état de la page, la taille du fichier, etc.
 * Définir et utiliser une [recherche enregistrée](#saved-searches) sur la base des critères ci-dessus.
 
 >[!NOTE]
@@ -55,7 +55,7 @@ Pour rechercher et filtrer vos ressources :
 1. Si nécessaire, vous pouvez supprimer le filtre d’emplacement (sélectionnez **X** sur le filtre que vous souhaitez supprimer) pour effectuer une recherche dans toutes les consoles/tous les types de ressources.
 1. Les résultats s’affichent, regroupés selon la console et le type de ressource associé.
 
-   Vous pouvez sélectionner une ressource spécifique (pour appliquer d’autres actions) ou accéder à d’autres actions en sélectionnant le type de ressource concerné, par exemple **Afficher tous les sites** :
+   Vous pouvez sélectionner une ressource spécifique (pour effectuer d’autres actions) ou effectuer une analyse en sélectionnant le type de ressource requis ; par exemple : **Afficher tous les sites**:
 
    ![screen-shot_2019-03-05at101900](assets/screen-shot_2019-03-05at101900.png)
 

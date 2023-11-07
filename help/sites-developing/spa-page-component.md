@@ -1,20 +1,16 @@
 ---
 title: Composant de page SPA
-seo-title: SPA Page Component
 description: Dans une SPA, le composant de page ne fournit pas les éléments HTML de ses composants enfants, mais à la place délègue cette tâche au framework SPA. Ce document explique comment cela rend le composant de page SPA unique.
-seo-description: In an SPA the page component doesn't provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
-uuid: d444527a-e883-4873-a55b-c2bc140d8d7f
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 6329301c-1a26-4a46-99ae-1b7cc15b08be
 docset: aem65
 exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 97%
+source-wordcount: '730'
+ht-degree: 91%
 
 ---
 
@@ -91,9 +87,9 @@ Propriétés des ressources de métadonnées qui décrivent le contenu SPA :
 
 >[!CAUTION]
 >
->Ce document utilise l’application We.Retail Journal à des fins de démonstration uniquement. Ce dernier ne doit pas être utilisé dans le cadre d’un projet.
+>Ce document utilise l’application We.Retail Journal à des fins de démonstration uniquement. N’utilisez pas pour le travail d’un projet.
 >
->Tous les projets AEM devraient tirer parti de l’[Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets de SPA à l’aide de React ou d’Angular et qui tire parti du SDK de SPA. Tous les projets de SPA sur AEM devraient s’appuyer sur le Kit pour les débutants de l’Archétype Maven.
+>Tout projet AEM doit utiliser la variable [AEM Archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge SPA projets à l’aide de React ou d’Angular et qui utilise le SDK SPA. Tous les projets de SPA sur doivent être basés sur Maven Archetype for Starter Kit.
 
 ## Synchronisation des recouvrements de l’éditeur de page {#page-editor-overlay-synchronization}
 

@@ -1,7 +1,7 @@
 ---
 title: Projet créatif et intégration à PIM
 seo-title: Creative Project and PIM Integration
-description: La fonction Projet de création simplifie l’ensemble du worfklow de séance photo, notamment la génération d’une demande de séance photo, le transfert d’une séance photo, la collaboration sur une séance photo et le regroupement des ressources approuvées
+description: Le projet de création simplifie l’ensemble du processus de séance photo, y compris la génération d’une demande de séance photo, le téléchargement d’une séance photo, la collaboration sur une séance photo et le regroupement des ressources approuvées.
 seo-description: Creative Project streamlines the entire photo shoot workflow that including generating a photo shoot request, uploading a photo shoot, collaborating on a photo shoot, and packaging approved assets
 uuid: 09f27d36-e725-45cb-88d1-27383aedceed
 contentOwner: Guillaume Carlino
@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
-source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '2989'
-ht-degree: 100%
+ht-degree: 77%
 
 ---
 
@@ -25,17 +25,17 @@ Si vous êtes spécialiste du marketing ou professionnel de la création, vous p
 Vous pouvez utiliser la fonction Projet de création pour simplifier les tâches suivantes du workflow de séance photo :
 
 * Génération d’une demande de séance photo
-* Transfert d’une séance photo
+* Téléchargement d’une séance photo
 * Collaboration sur une séance photo
-* Regroupement des ressources approuvées
+* Modules de ressources approuvées
 
 >[!NOTE]
 >
->Voir [Rôles d’utilisateur dans un projet](/help/sites-authoring/projects.md#user-roles-in-a-project) pour plus d’informations sur l’affectation des rôles d’utilisateur et des workflows à certains types d’utilisateurs.
+>Voir [Rôles utilisateur du projet pour plus d’informations](/help/sites-authoring/projects.md#user-roles-in-a-project) lors de l’affectation de rôles utilisateur et de workflows à certains types d’utilisateurs.
 
 ## Workflows de séance photo de produit  {#exploring-product-photo-shoot-workflows}
 
-La fonction Projet de création fournit divers modèles de projet pour satisfaire aux différentes exigences des projets. Le modèle **Projet de séance photo du produit** est prêt à l’emploi. Ce modèle inclut des workflows de séance photo qui permettent de lancer et de gérer des demandes de séance photo de produit. Il comprend également une série de tâches qui vous permettent d’obtenir des images numériques des produits par l’intermédiaire de processus de révision et d’approbation appropriés.
+La fonction Projet de création fournit divers modèles de projet pour satisfaire aux différentes exigences des projets. Le modèle **Projet de séance photo du produit** est prêt à l’emploi. Ce modèle comprend des processus de séance photo qui vous permettent de lancer et de gérer des demandes de séance photo de produit. Il comprend également une série de tâches qui vous permettent d’obtenir des images numériques des produits par l’intermédiaire de processus de révision et d’approbation appropriés.
 
 ## Création d’un projet de séance photo de produit {#create-a-product-photo-shoot-project}
 
@@ -47,7 +47,7 @@ La fonction Projet de création fournit divers modèles de projet pour satisfair
 
    ![Assistant Projet](assets/chlimage_1-133a.png)
 
-1. Saisissez les détails du projet, y compris le titre, la description et l’échéance. Ajoutez des utilisateurs et affectez-leur les différents rôles. Vous pouvez également ajouter une vignette au projet.
+1. Saisissez les détails du projet, notamment le titre, la description et l’échéance. Ajoutez des utilisateurs et attribuez-leur différents rôles. Vous pouvez également ajouter une miniature pour le projet.
 
    ![Détails du projet](assets/chlimage_1-134a.png)
 
@@ -62,42 +62,42 @@ Pour lancer une demande de séance photo, appuyez ou cliquez sur un projet, puis
 
 Un **projet de séance photo de produit** comprend les workflows prêts à l’emploi suivants :
 
-* **Séance photo de produit (intégration de Commerce)** : ce workflow tire parti de l’intégration de Commerce au système de gestion des informations produit (PIM) afin de générer automatiquement une liste de plans pour les produits sélectionnés (hiérarchie). Vous pouvez afficher les données de produit parmi les métadonnées des ressources une fois que le worfklow est terminé.
+* **Workflow Séance photo du produit (Intégration de commerce)**: ce workflow utilise l’intégration commerciale au système de gestion de l’information sur les produits (PIM) pour générer automatiquement une liste de plans pour les produits sélectionnés (hiérarchie). Vous pouvez afficher les données de produit parmi les métadonnées des ressources une fois que le workflow est terminé.
 * **Workflow de séance photo de produit** : ce workflow vous permet de fournir une liste de plans au lieu de dépendre de l’intégration de Commerce. Il mappe les images chargées à un fichier CSV dans le dossier des ressources du projet.
 
-Utilisez le workflow **Séance photo de produit (intégration de Commerce)** pour mapper les ressources d’images aux produits dans AEM. Ce workflow tire parti de l’intégration de Commerce pour lier les images approuvées aux données de produit existantes à l’emplacement `/etc/commerce`.
+Utilisez le workflow **Séance photo de produit (intégration de Commerce)** pour mapper les ressources d’images aux produits dans AEM. Ce workflow utilise l’intégration commerciale pour lier les images approuvées aux données de produit existantes à l’emplacement `/etc/commerce`.
 
 Le workflow de **séance photo de produit (intégration de Commerce)** comprend les tâches suivantes :
 
 * Créer une liste de plans
-* Transférer la séance photo
+* Charger la séance photo
 * Retoucher la séance photo
 * Réviser et approuver
 * Déplacer vers la tâche de production
 
-Si les informations produit ne sont pas disponibles dans AEM, utilisez le workflow **Séance photo de produit** pour associer les ressources d’images aux produits en fonction des détails que vous chargez dans un fichier CSV. Le fichier CSV doit contenir des informations de base sur le produit, telles que l’ID de produit, la catégorie et la description. Le worfklow récupère les ressources approuvées pour les produits.
+Si les informations produit ne sont pas disponibles dans AEM, utilisez le workflow **Séance photo de produit** pour associer les ressources d’images aux produits en fonction des détails que vous chargez dans un fichier CSV. Le fichier CSV doit contenir des informations de base sur le produit, telles que l’ID, la catégorie et la description du produit. Le workflow récupère les ressources approuvées pour les produits.
 
-Ce worfklow implique les tâches suivantes :
+Ce workflow comprend les tâches suivantes :
 
 * Chargement de la liste de plans
-* Transférer la séance photo
+* Charger la séance photo
 * Retoucher la séance photo
 * Réviser et approuver
 * Déplacer vers la tâche de production
 
-Vous pouvez personnaliser ce worfklow à l’aide de l’option de configuration de workflows.
+Vous pouvez personnaliser ce workflow à l’aide de l’option de configuration des workflows.
 
-Les deux workflows incluent des étapes pour lier les produits à leurs ressources approuvées. Chaque worfklow comprend les étapes suivantes :
+Les deux workflows incluent des étapes pour lier les produits à leurs ressources approuvées. Chaque workflow comprend les étapes suivantes :
 
-* Configuration de workflows : décrit les options pour personnaliser le worfklow.
+* Configuration du workflow : décrit les options de personnalisation du workflow.
 * Lancement d’un workflow de projet : explique comment lancer une séance photo de produit.
-* Détails des tâches de worfklow : fournit le détail des tâches disponibles dans le worfklow.
+* Détails des tâches de workflow : fournit des détails sur les tâches disponibles dans le workflow.
 
 ## Suivi de la progression du projet {#tracking-project-progress}
 
-Vous pouvez effectuer le suivi de l’avancement d’un projet en consultant les tâches actives/terminées au sein d’un projet.
+Vous pouvez suivre la progression d’un projet en surveillant les tâches actives/terminées au sein d’un projet.
 
-Utilisez les éléments suivants pour surveiller la progression d’un projet :
+Utilisez les éléments suivants pour surveiller la progression d’un projet :
 
 * Carte des tâches
 * Liste des tâches
@@ -115,11 +115,11 @@ La liste des tâches fournit des informations détaillées sur la tâche active 
 
 ![Liste des tâches](assets/chlimage_1-137a.png)
 
-## Configuration du worfklow {#workflow-configuration}
+## Configuration du workflow {#workflow-configuration}
 
-Cette tâche consiste à affecter des étapes de worfklow aux utilisateurs en fonction de leurs rôles.
+Cette tâche implique d’affecter des étapes de workflow aux utilisateurs en fonction de leur rôle.
 
-Pour configurer le worfklow **Séance photo du produit** :
+Pour configurer la variable **Séance photo du produit** workflow :
 
 1. Accédez à **Outils** > **Workflows**, puis appuyez sur la mosaïque **Modèles** afin d’ouvrir la page **Modèles de workflow**.
 1. Sélectionnez le workflow **Séance photo de produit**, puis appuyez sur l’icône **Modifier** de la barre d’outils pour l’ouvrir en mode d’édition.
@@ -132,11 +132,11 @@ Pour configurer le worfklow **Séance photo du produit** :
 
 1. Cliquez sur l’onglet **Tâche** pour configurer ce qui suit :
 
-   * Le nom de la tâche
-   * L’utilisateur par défaut (rôle) qui reçoit la tâche
-   * La priorité par défaut de la tâche, qui est affichée dans la liste de tâches de l’utilisateur
-   * La description de la tâche à afficher lorsque le cessionnaire ouvre la tâche
-   * L’échéance d’une tâche qui est calculée en fonction de l’heure de démarrage de la tâche
+   * Nom de la tâche
+   * Utilisateur par défaut (rôle) qui reçoit la tâche
+   * Priorité par défaut de la tâche, affichée dans la liste des tâches de l’utilisateur
+   * Description de la tâche à afficher lorsque la personne désignée ouvre la tâche
+   * Date d’échéance d’une tâche, calculée en fonction de l’heure à laquelle la tâche a commencé
 
 1. Cliquez sur **OK** pour enregistrer les paramètres de configuration.
 
@@ -144,7 +144,7 @@ Vous pouvez configurer de la même manière les tâches supplémentaires pour la
 
 Suivez la même procédure pour configurer les tâches dans le **workflow Séance photo de produit (intégration de Commerce)**.
 
-## Démarrage d’un worfklow de projet {#starting-a-project-workflow}
+## Démarrage d’un workflow de projet {#starting-a-project-workflow}
 
 Cette section décrit comment intégrer la gestion des informations produit (PIM) à votre projet de création.
 
@@ -154,7 +154,7 @@ Cette section décrit comment intégrer la gestion des informations produit (PIM
    ![Assistant Workflow](assets/chlimage_1-140a.png)
 
 1. Appuyez ou cliquez sur **Suivant** pour lancer le workflow au sein du projet.
-1. Saisissez les détails du worfklow sur la page suivante.
+1. Saisissez les détails du workflow sur la page suivante.
 
    ![Détails du workflow](assets/chlimage_1-141a.png)
 
@@ -162,9 +162,9 @@ Cette section décrit comment intégrer la gestion des informations produit (PIM
 
    ![Page Projet avec le nouveau workflow](assets/chlimage_1-142a.png)
 
-### Détails des tâches de worfklow {#workflow-tasks-details}
+### Détails des tâches de workflow {#workflow-tasks-details}
 
-Le worfklow de séance photo comprend plusieurs tâches. Chaque tâche est affectée à un groupe d’utilisateurs en fonction de la configuration définie pour la tâche.
+Le workflow de séance photo comprend plusieurs tâches. Chaque tâche est affectée à un groupe d’utilisateurs en fonction de la configuration définie pour la tâche.
 
 #### Tâche Créer une liste de plans {#create-shot-list-task}
 
@@ -186,9 +186,9 @@ La tâche **Créer une liste de plans** permet au propriétaire du projet de sé
 
    ![Sélection de produits](assets/chlimage_1-146a.png)
 
-1. Appuyez ou cliquez sur le bouton **Ajouter à la liste de plans** pour créer un fichier CSV contenant la liste de tous les produits de ce type. Un message confirme que la liste de plans est créée pour les produits sélectionnés. Cliquez sur **Fermer** pour terminer le worfklow.
+1. Appuyez ou cliquez sur le bouton **Ajouter à la liste de plans** pour créer un fichier CSV contenant la liste de tous les produits de ce type. Un message confirme la création de la liste de plans pour les produits sélectionnés. Cliquez sur **Fermer** pour terminer le workflow.
 
-1. Une fois la liste de plans créée, le lien **Afficher la liste de plans** apparaît. Pour ajouter d’autres produits à la liste de plans, appuyez ou cliquez sur **Ajouter à la liste de plans**. Dans ce cas, les données sont ajoutées à la liste de plans créée.
+1. Après avoir créé une liste de plans, la variable **Afficher la liste de plans** s’affiche. Pour ajouter d’autres produits à la liste de plans, appuyez ou cliquez sur **Ajouter à la liste de plans**. Dans ce cas, les données sont ajoutées à la liste de plans créée.
 
    ![Ajouter à la liste de plans](assets/chlimage_1-147a.png)
 
@@ -202,21 +202,21 @@ La tâche **Créer une liste de plans** permet au propriétaire du projet de sé
 
    Une fois que le fichier est à jour, appuyez ou cliquez sur **Enregistrer** dans la barre d’outils pour enregistrer le fichier.
 
-1. Après avoir ajouté les produits, appuyez ou cliquez sur l’icône **Terminé** sur la page de détails de la tâche **Créer une liste de plans** pour marquer la tâche comme terminée. Vous pouvez ajouter un commentaire (facultatif).
+1. Après avoir ajouté les produits, appuyez ou cliquez sur l’icône **Terminé** sur la page de détails de la tâche **Créer une liste de plans** pour marquer la tâche comme terminée. Vous pouvez ajouter un commentaire facultatif.
 
-La fin de la tâche apporte les modifications suivantes au sein du projet :
+La fin de la tâche introduit les modifications suivantes dans le projet :
 
-* Les ressources correspondant à la hiérarchie de produit sont créées dans un dossier portant le même nom que le titre du worfklow.
-* Les métadonnées des ressources peuvent être modifiées depuis la console Ressources, avant même que le photographe ne fournisse les images.
+* Les ressources correspondant à la hiérarchie des produits sont créées dans un dossier portant le même nom que le titre du workflow.
+* Les métadonnées des ressources peuvent être modifiées à l’aide de la console Ressources, avant même que le photographe ne fournisse les images.
 * Un dossier Séance photo est créé pour stocker les images fournies par le photographe. Ce dossier de séance photo contient des sous-dossiers pour chaque entrée de produit figurant dans la liste de plans.
 
 ### Charger une tâche de liste de plans {#upload-shot-list-task}
 
-Cette tâche fait partie du worfklow Séance photo du produit. Vous effectuez cette tâche si les informations produit ne sont pas disponibles dans AEM. Dans ce cas, vous transférez dans un fichier CSV la liste des produits pour lesquels des ressources d’images sont requises. En fonction des détails du fichier CSV, vous mappez les ressources d’images aux produits. Le fichier doit être un fichier CSV nommé `shotlist.csv`.
+Cette tâche fait partie du workflow Séance photo du produit . Vous effectuez cette tâche si les informations sur les produits ne sont pas disponibles dans AEM. Dans ce cas, vous téléchargez une liste de produits dans un fichier CSV pour lequel des ressources d’image sont requises. En fonction des détails du fichier CSV, vous mappez les ressources d’images aux produits. Le fichier doit être un fichier CSV nommé `shotlist.csv`.
 
-Utilisez le lien **Afficher la liste de plans** sous la carte du projet de la procédure précédente pour télécharger un exemple de fichier CSV. Consultez le fichier d’exemple pour connaître le contenu habituel d’un fichier CSV.
+Utilisez la variable **Afficher la liste de plans** lien sous la carte du projet dans la procédure précédente pour télécharger un exemple de fichier CSV. Consultez le fichier d’exemple pour connaître le contenu habituel d’un fichier CSV.
 
-La liste de produits ou le fichier CSV peut contenir des champs, tels que **Catégorie, Produit, ID, Description** et **Chemin d’accès**. Le champ **ID** est obligatoire et contient l’ID du produit. Les autres champs sont facultatifs.
+La liste de produits ou le fichier CSV peut contenir des champs, tels que **Catégorie, Produit, Id, Description**, et **Chemin**. Le champ **ID** est obligatoire et contient l’ID du produit. Les autres champs sont facultatifs.
 
 Un produit peut appartenir à une catégorie particulière. La catégorie du produit peut être indiquée dans le fichier CSV sous la colonne **Catégorie**. Le champ **Produit** contient le nom du produit. Dans le champ **Description**, saisissez la description du produit ou les instructions pour le photographe.
 
@@ -229,8 +229,8 @@ Un produit peut appartenir à une catégorie particulière. La catégorie du pro
 
    ![Chargement de la liste de plans](assets/chlimage_1-151a.png)
 
-1. Appuyez ou cliquez sur le bouton **Charger la liste de plans** pour charger le fichier CSV. Le worfklow identifie ce fichier comme la source à utiliser pour extraire les données de produit de la tâche suivante.
-1. Transférez un fichier CSV contenant des informations sur les produits au format approprié. Le lien **Afficher les ressources chargées** s’affiche sous la carte une fois le fichier CSV chargé.
+1. Appuyez ou cliquez sur le bouton **Charger la liste de plans** pour charger le fichier CSV. Le workflow reconnaît ce fichier comme une source à utiliser pour extraire les données de produit pour la tâche suivante.
+1. Téléchargez un fichier CSV contenant les informations sur les produits au format approprié. Le lien **Afficher les ressources chargées** s’affiche sous la carte une fois le fichier CSV chargé.
 
    ![Chargement des informations sur les produits](assets/chlimage_1-152a.png)
 
@@ -273,9 +273,9 @@ Si vous disposez de droits de modification, effectuez la tâche **Retoucher la s
 
 1. Appuyez ou cliquez sur l’icône **Terminé** de la barre d’outils pour terminer la tâche.
 
-### Tâche Réviser et approuver {#review-and-approve-task}
+### Tâche de révision et d’approbation {#review-and-approve-task}
 
-Cette tâche consiste à réviser les images de la séance photo transférées par un photographe et à les marquer comme approuvées pour utilisation.
+Dans cette tâche, vous passez en revue les images de la séance photo téléchargées par un photographe et marquez les images comme approuvées pour utilisation.
 
 1. Dans le dossier du projet, appuyez ou cliquez sur le bouton « trois petits points » de la [Carte des tâches](#tracking-project-progress) pour afficher l’élément de la tâche dans le workflow.
 1. Sélectionnez la tâche **Réviser et approuver**, puis appuyez ou cliquez sur l’icône **Ouvrir** dans la barre d’outils.
@@ -292,7 +292,7 @@ Cette tâche consiste à réviser les images de la séance photo transférées p
 
 1. Appuyez ou cliquez sur **Terminé**. Les images approuvées sont liées aux ressources vides qui ont été créées.
 
-Vous pouvez laisser certains produits sans image. Vous pouvez revenir ultérieurement sur la tâche et la marquer comme complète lorsque vous avez terminé.
+Vous pouvez laisser certains produits sans image. Vous pourrez ensuite revoir la tâche et la marquer comme terminée une fois terminée.
 
 Vous pouvez accéder aux ressources du projet à l’aide de l’interface utilisateur Ressources et vérifier les images approuvées.
 
@@ -306,7 +306,7 @@ La fonction Projet de création associe les ressources approuvées au produit r�
 
 ### Déplacer vers la tâche de production {#move-to-production-task}
 
-Cette tâche déplace les ressources approuvées dans le dossier Prêt pour la production de manière à pouvoir les utiliser.
+Cette tâche déplace les ressources approuvées dans le dossier Prêt pour la production afin de les rendre disponibles pour utilisation.
 
 1. Dans le dossier du projet, appuyez ou cliquez sur le bouton « trois petits points » de la [Carte des tâches](#tracking-project-progress) pour afficher l’élément de la tâche dans le workflow.
 1. Sélectionnez la tâche **Déplacer en exploitation**, puis appuyez ou cliquez sur l’icône **Ouvrir** dans la barre d’outils.
@@ -323,7 +323,7 @@ Cette tâche déplace les ressources approuvées dans le dossier Prêt pour la p
 
 1. Appuyez ou cliquez sur **Déplacer en exploitation**. Fermez le message de confirmation. Les ressources sont déplacées dans le chemin spécifié et une visionneuse à 360° est créée automatiquement pour les ressources approuvées pour chaque produit en fonction de la hiérarchie des dossiers.
 
-1. Appuyez ou cliquez sur l’icône **Terminé** dans la barre d’outils. Le worfklow se termine et la dernière étape est marquée comme étant terminée.
+1. Appuyez ou cliquez sur l’icône **Terminé** dans la barre d’outils. Le workflow se termine lorsque la dernière étape est marquée comme étant terminée.
 
 ## Affichage des métadonnées des ressources de gestion des actifs numériques {#viewing-dam-asset-metadata}
 
@@ -331,9 +331,9 @@ Après votre approbation, les ressources sont liées aux produits correspondants
 
 Appuyez ou cliquez sur le lien qui s’affiche pour accéder à la page des détails du produit dans la console produit correspondant à la ressource qui lui est associée.
 
-## Personnalisation des worfklow de séance photo du projet {#customizing-the-project-photo-shoot-workflows}
+## Personnalisation des workflows de séance photo du projet {#customizing-the-project-photo-shoot-workflows}
 
-Vous pouvez personnaliser les workflows de **séance photo du projet** en fonction de vos besoins. Il s’agit d’une tâche facultative, et basée sur les rôles, que vous effectuez pour définir la valeur d’une variable au sein du projet. Vous pouvez ensuite utiliser ultérieurement la valeur configurée pour prendre une décision.
+Vous pouvez personnaliser les workflows de **séance photo du projet** en fonction de vos besoins. Il s’agit d’une tâche facultative, basée sur les rôles, que vous effectuez pour définir la valeur d’une variable dans le projet. Par la suite, vous pourrez utiliser la valeur configurée pour prendre une décision.
 
 1. Cliquez ou appuyez sur le logo AEM et accédez ensuite à **Outils** > **Workflow** > **Modèles** pour ouvrir la page **Modèles de workflows**.
 1. Sélectionnez le workflow **Séance photo de produit (intégration de Commerce)** ou **Séance photo de produit**, et cliquez ou appuyez sur **Modifier** dans la barre d’outils pour ouvrir le workflow en mode d’édition.

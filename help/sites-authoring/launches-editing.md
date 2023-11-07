@@ -10,9 +10,9 @@ discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '521'
 ht-degree: 95%
 
 ---
@@ -60,7 +60,7 @@ Pour suivre les modifications que vous avez apportées, vous pouvez afficher le 
 
 1. Les deux pages (lancement et source) s’ouvrent côte à côte.
 
-   Pour des informations complètes sur l’utilisation de cette fonction, consultez [Différence entre les pages](/help/sites-authoring/page-diff.md).
+   Pour obtenir des informations complètes sur l’utilisation de cette fonctionnalité, consultez [Différences entre les pages](/help/sites-authoring/page-diff.md).
 
 ## Modification des pages source utilisées {#changing-the-source-pages-used}
 
@@ -78,7 +78,7 @@ Vous pouvez à tout moment ajouter ou supprimer des pages vers/depuis la plage d
 
    Les pages source s’affichent.
 
-1. Effectuez les modifications requises, puis confirmez avec **Enregistrer**.
+1. Effectuez les modifications requises, puis confirmez avec l’option **Enregistrer**.
 
    >[!NOTE]
    >

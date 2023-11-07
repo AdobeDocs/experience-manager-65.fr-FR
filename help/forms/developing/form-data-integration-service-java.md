@@ -11,10 +11,10 @@ topic-tags: develop
 discoiquuid: 91b738ec-aa00-4f05-bf42-2574ced8d993
 role: Developer
 exl-id: a2560c87-ae95-4d65-869a-8cba177a1cd6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '254'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '252'
+ht-degree: 81%
 
 ---
 
@@ -30,11 +30,11 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API forte
 
 >[!NOTE]
 >
->Les didacticiels de mise en route situés dans Programmation avec AEM Forms sont basés sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Le démarrage rapide de la programmation avec AEM forms repose sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Didacticiel de mise en route (mode SOAP) : importer des données de formulaire à l’aide de l’API Java {#quick-start-soap-mode-importing-form-data-using-the-java-api}
 
-L’exemple de code Java suivant importe des données dans un formulaire PDF. Les données se trouvent dans un fichier XML nommé *Loan_data.xml* et le formulaire PDF est enregistré au format PDF, sous le nom *ResultLoanForm.pdf*. (Consultez la section [Importation de données de formulaire](/help/forms/developing/importing-exporting-data.md#importing-form-data)).
+L’exemple de code Java suivant importe des données dans un formulaire PDF. Les données se trouvent dans un fichier XML nommé *Loan_data.xml* et le formulaire du PDF est enregistré en tant que fichier de PDF nommé *ResultLoanForm.pdf*. (Consultez la section [Importation de données de formulaire](/help/forms/developing/importing-exporting-data.md#importing-form-data)).
 
 ```java
  /*
@@ -63,16 +63,16 @@ L’exemple de code Java suivant importe des données dans un formulaire PDF. Le
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -165,16 +165,16 @@ L’exemple de code Java suivant exporte les données d’un formulaire PDF. Les
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a

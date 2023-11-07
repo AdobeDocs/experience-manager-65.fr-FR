@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2229'
-ht-degree: 98%
+source-wordcount: '2228'
+ht-degree: 97%
 
 ---
 
@@ -303,4 +303,4 @@ Pour supprimer une variable, procédez comme suit :
 
 ## Références {#references}
 
-Pour plus d’exemples sur l’utilisation des variables dans les étapes de d’AEM Forms Workflow, voir [Variables dans les workflows d’AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=fr).
+Pour plus d’exemples sur l’utilisation de variables dans les étapes de processus AEM Forms, voir [Variables dans les workflows AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=fr).

@@ -1,19 +1,15 @@
 ---
 title: Utiliser Adobe Campaign 6.1 et Adobe Campaign Standard
-seo-title: Working with Adobe Campaign 6.1 and Adobe Campaign Standard
 description: Vous pouvez créer le contenu d’un e-mail dans AEM et le traiter dans les e-mails Adobe Campaign.
-seo-description: You can create email content in AEM and process it in Adobe Campaign emails.
-uuid: 439df7fb-590b-45b8-9768-565b022a808b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 52%
+source-wordcount: '1163'
+ht-degree: 49%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 52%
 
 Vous pouvez créer le contenu d’un courrier électronique dans AEM et le traiter dans les courriers électroniques Adobe Campaign. À cet effet, vous devez suivrez cette procédure :
 
-1. Créez une newsletter dans AEM à partir d’un modèle spécifique à Adobe Campaign.
+1. Créez une newsletter dans AEM depuis un modèle spécifique à Adobe Campaign.
 1. Sélectionner [un service Adobe Campaign ;](#selectingtheadobecampaigncloudservice) avant de modifier le contenu pour accéder à toutes les fonctionnalités.
 1. Modifiez le contenu.
 1. Validez le contenu.
@@ -56,7 +52,7 @@ Des instructions détaillées sont présentées dans ce document.
 
    >[!NOTE]
    >
-   >[Les exemples d’e-mails ne sont disponibles que dans Geometrixx](/help/sites-developing/we-retail.md#weretail). Téléchargez un exemple de contenu Geometrixx à partir du partage de packages.
+   >[Les exemples d’e-mails ne sont disponibles que dans Geometrixx](/help/sites-developing/we-retail.md#weretail). Téléchargez un exemple de contenu de Geometrixx à partir de Package Share.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -115,8 +111,8 @@ Vous pouvez modifier le contenu d’un email dans l’interface utilisateur clas
 
 Lorsque vous éditez votre contenu, vous pouvez insérer :
 
-* Des champs de contexte Adobe Campaign. Il s’agit de champs que vous pouvez insérer dans votre texte qui s’adaptera en fonction des données du destinataire (prénom, nom ou toute donnée de la dimension cible, par exemple).
-* Des blocs de personnalisation Adobe Campaign. Ce sont des blocs de contenu prédéfini, qui ne sont pas liés aux données du destinataire, comme le logo d’une marque ou un lien vers une page miroir.
+* Des champs de contexte Adobe Campaign. Il s&#39;agit de champs que vous pouvez insérer dans votre texte qui s&#39;adaptera en fonction des données du destinataire (prénom, nom ou toute donnée de la dimension cible, par exemple).
+* Des blocs de personnalisation Adobe Campaign. Il s’agit de blocs de contenu prédéfinis qui ne sont pas liés aux données du destinataire, comme le logo d’une marque ou un lien vers une page miroir.
 
 Voir [Composants Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md) pour une description complète des composants de Campaign.
 

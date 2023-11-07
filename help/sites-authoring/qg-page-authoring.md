@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 83%
+source-wordcount: '1553'
+ht-degree: 86%
 
 ---
 
@@ -44,7 +44,7 @@ Avant de vous donner un aperçu des détails, voici quelques conseils et astuces
 
 * Réorganisation des pages dans un dossier
 
-   * Vous pouvez le faire dans [Mode Liste](/help/sites-authoring/basic-handling.md#list-view). Les modifications sont appliquées et visibles dans d’autres vues.
+   * Cette action s’effectue dans l’[Affichage en liste](/help/sites-authoring/basic-handling.md#list-view). Les modifications sont appliquées et visibles dans d’autres vues.
 
 #### Création de pages {#page-authoring}
 
@@ -69,7 +69,7 @@ Avant de vous donner un aperçu des détails, voici quelques conseils et astuces
 
 Il existe plusieurs moyens de rechercher une page. Vous pouvez soit naviguer, soit effectuer une recherche en procédant comme suit :
 
-1. Ouvrez le **Sites** (à l’aide de la **Sites** dans le [Navigation globale](/help/sites-authoring/basic-handling.md#global-navigation)) : ceci est déclenché (par liste déroulante) lorsque vous sélectionnez le lien Adobe Experience Manager (en haut à gauche).
+1. Ouvrez le **Sites** (à l’aide de la **Sites** dans le [Navigation globale](/help/sites-authoring/basic-handling.md#global-navigation)) : ceci est déclenché (liste déroulante) lorsque vous sélectionnez le lien Adobe Experience Manager (en haut à gauche).
 
 1. Naviguez dans l’arborescence en appuyant/cliquant sur la page appropriée. La représentation des ressources de page dépend du mode d’affichage activé : [Carte, Liste ou Colonnes](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) :
 
@@ -128,7 +128,7 @@ La sélection d’une page dépend de la vue utilisée dans la console :
 Les [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions) sont disponibles :
 
 1. [Accédez à la page](#finding-your-page) sur laquelle vous souhaitez effectuer une action.
-1. Placez le pointeur de la souris sur la carte qui représente la ressource requise. Les actions rapides s’affichent ensuite : 
+1. Placez le pointeur de la souris sur la carte qui représente la ressource requise ; les actions rapides s’affichent :
 
    ![screen_shot_2018-03-21at160503-1](assets/screen_shot_2018-03-21at160503-1.png)
 
@@ -159,7 +159,7 @@ Les [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions) son
    * [Modifiez le contenu d’un composant existant](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) sur la page :
 
       * Ouvrez la barre d’outils du composant en appuyant ou en cliquant dessus. Utilisez l’icône **Modifier** (crayon) pour ouvrir la boîte de dialogue.
-      * Ouvrez l’éditeur statique du composant en maintenant appuyé ou en double-cliquant lentement. Les actions disponibles s’affichent (pour certains composants, il s’agit d’une sélection limitée).
+      * Ouvrez l’éditeur statique du composant en maintenant appuyé ou en double-cliquant lentement. Les actions disponibles s’affichent (pour certains composants, la sélection est limitée).
       * Pour afficher toutes les actions disponibles, passez en mode plein écran en cliquant sur l’icône suivante :
 
      ![Mode Plein écran](do-not-localize/screen_shot_2018-03-21at160706.png)
@@ -168,7 +168,7 @@ Les [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions) son
 
       * Ouvrez la barre d’outils du composant en appuyant ou en cliquant dessus. Utilisez l’icône **Configurer** (clé à molette) pour ouvrir la boîte de dialogue.
 
-   * [Déplacez un composant](/help/sites-authoring/editing-content.md#moving-a-component) d’une des manières suivantes :
+   * [Déplacer un composant](/help/sites-authoring/editing-content.md#moving-a-component) d’une des manières suivantes :
 
       * Faites glisser le composant vers son nouvel emplacement.
       * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Cliquez sur les icônes **Couper** puis **Coller** suivant vos besoins.
@@ -226,7 +226,7 @@ Il existe deux (principales) méthodes de [modification des propriétés de page
 
 ### Publication de la page (ou dépublication) {#publishing-your-page-or-unpublishing}
 
-Il existe deux méthodes principales pour [publier votre page](/help/sites-authoring/publishing-pages.md) (ainsi que pour la dépublier) :
+Il existe deux méthodes principales pour [publier votre page](/help/sites-authoring/publishing-pages.md) (et la dépublier) :
 
 * Dans la console **Sites** :
 
@@ -275,7 +275,7 @@ Ces actions peuvent toutes être déclenchées en suivant ces étapes :
 
    * Supprimer :
 
-      * Vous êtes invité à confirmer l’action.
+      * Le système vous invite à confirmer l’action.
 
    >[!NOTE]
    >
@@ -286,7 +286,7 @@ Ces actions peuvent toutes être déclenchées en suivant ces étapes :
 Le [verrouillage d’une page](/help/sites-authoring/editing-content.md#locking-a-page) empêche d’autres auteurs de travailler dessus en même temps que vous. L’icône/le bouton Verrouiller (et Déverrouiller) est accessible :
 
 * La barre d’outils [une fois la page sélectionnée](#selecting-your-page-for-further-action).
-* La variable [Menu déroulant Informations sur la page](#editing-the-page-properties) lors de la modification d’une page.
+* Dans le [menu déroulant Informations sur la page](#editing-the-page-properties) lors de la modification d’une page.
 * Dans la barre d’outils de la page lors de la modification d’une page (si la page est verrouillée).
 
 Par exemple, l’icône de verrouillage se présente comme suit :
@@ -331,7 +331,7 @@ Le même mécanisme de base est appliqué pour restaurer ou pour comparer des ve
 
    Si une version de votre page a déjà été enregistrée, elle est répertoriée dans la chronologie.
 
-1. Appuyez/cliquez sur la version à restaurer. D’autres boutons d’action vont alors s’afficher :
+1. Appuyez/cliquez sur la version à restaurer, ce qui permet d’afficher d’autres boutons d’action :
 
    * **Revenir à cette version**
 

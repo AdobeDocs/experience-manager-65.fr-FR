@@ -2,10 +2,10 @@
 title: Création de contenu accessible pour Adobe Experience Manager (conformité au WCAG 2.1)
 description: Utilisez AEM pour rendre le contenu Web accessible et utilisable par les personnes en situation de handicap
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '13817'
-ht-degree: 99%
+source-wordcount: '13810'
+ht-degree: 98%
 
 ---
 
@@ -281,7 +281,7 @@ Suivez les instructions de la section [Audio-description ou version de remplacem
 
 ### Adaptable (1.3) {#adaptable}
 
-[Règle 1.3 - Adaptable : crée un contenu qui peut être présenté de différentes manières sans perte d’information ni de structure (par exemple avec une mise en page simplifiée).](https://www.w3.org/TR/WCAG/#adaptable)
+[Règle 1.3 - Adaptable : créer du contenu qui peut être présenté de différentes manières (par exemple, avec une mise en page plus simple) sans perdre d’informations ni de structure.](https://www.w3.org/TR/WCAG/#adaptable)
 
 Cette règle couvre les exigences nécessaires pour proposer un contenu adapté aux personnes qui :
 
@@ -438,7 +438,7 @@ De la même manière, les informations qui impliquent de distinguer différents 
 
 Assurez-vous que toutes les informations qui reposent sur les caractéristiques visuelles du contenu de la page sont également présentées dans un autre format.
 
-* Ne vous fiez pas à la position visuelle pour donner des informations. Par exemple, si vous souhaitez renvoyer les utilisateurs et les utilisatrices vers un menu sur le côté droit de la page pour accéder à des informations supplémentaires, ne vous reportez pas au *menu de droite* ; au lieu de cela, nommez le menu (par exemple au moyen d’un en-tête) et faites référence à ce nom dans le texte.
+* Ne vous fiez pas à la position visuelle pour donner des informations. Par exemple, si vous souhaitez renvoyer les utilisateurs vers un menu sur le côté droit de la page pour accéder à des informations supplémentaires, ne reportez-vous pas à la section *le menu de droite ;*; au lieu de cela, nommez le menu (par exemple, au moyen d’un en-tête) et faites référence à ce nom dans le texte.
 * Ne vous limitez pas au style de texte (texte en gras ou en italique, par exemple) comme seul moyen de transmettre l’information.
 
 >[!NOTE]
@@ -698,7 +698,7 @@ Appliquez les règles indiquées dans la section [Comment remplir le critère de
 
 Remarques :
 
-1. Pour les exigences relatives au contenu scintillant ou flashant, se référer à la règle Ne pas concevoir de contenu susceptible de provoquer des crises (2.3).
+1. Pour connaître les exigences relatives au contenu scintillant ou flashant, voir Ne pas concevoir de contenu susceptible de provoquer des crises (2.3).
 1. Puisque tout contenu ne satisfaisant pas ce critère de réussite peut interférer avec la capacité de l’utilisateur à exploiter la page entière, tout le contenu présent dans la page web (qu’il soit utilisé pour satisfaire d’autres critères de réussite ou non) doit satisfaire ce critère de réussite. Voir [Exigence de conformité 5 : Non-interférence](https://www.w3.org/TR/WCAG20/#cc5).
 1. Le contenu mis à jour régulièrement par un logiciel ou diffusé en continu à l’utilisateur ou l’utilisatrice n’est pas tenu de conserver ou présenter des informations générées ou reçues entre la mise en pause et la reprise de la présentation. En effet, cela peut être techniquement impossible et peut induire en erreur dans de nombreuses situations.
 1. Une animation dans le cadre d’une phase de préchargement ou d’une situation similaire peut être considérée comme essentielle si l’interaction ne peut pas se produire au cours de cette phase pour tous les utilisateurs et utilisatrices, et si le fait de ne pas indiquer la progression risque de dérouter les utilisateurs et les utilisatrices ou de leur faire croire que le contenu a été figé ou interrompu.
@@ -840,7 +840,7 @@ Avant tout, veillez à ce que l’objectif d’un lien soit clairement décrit d
 
 Les liens doivent être formulés de manière cohérente sur toutes les pages, en particulier pour les barres de navigation. Si, par exemple, un lien vers une page spécifique est nommé **Publications** sur une page, il doit être nommé de la même façon sur toutes les autres pages.
 
-Au moment de la rédaction de cet article, l’utilisation des attributs de titre pose certains problèmes. Ils ne permettent pas de s’assurer que des liens similaires présentés sur une page donnent des informations uniques sur la destination (par exemple, la mention « en savoir plus » se rapporte souvent à un ensemble de destinations différentes) :
+Au moment de la rédaction de cet article, l’utilisation des attributs de titre pose certains problèmes. Ils ne permettent pas de s’assurer que des liens similaires présentés sur une page donnent des informations uniques sur la destination (par exemple, la mention « en savoir plus » se rapporte souvent à plusieurs destinations différentes) :
 
 * Seuls les utilisateurs et utilisatrices d’une souris ont accès au texte contenu dans l’attribut de titre grâce à une info-bulle contextuelle ; ce texte n’est pas accessible en permanence à l’aide du clavier ou sur un téléphone mobile.
 * Les lecteurs d’écran peuvent lire les attributs de titre, mais cette fonctionnalité peut ne pas être activée par défaut. Par conséquent, les utilisateurs et utilisatrices peuvent ne pas connaître l’existence d’un attribut de titre.
@@ -1094,7 +1094,7 @@ Appliquez les règles indiquées dans la section [Comment remplir le critère de
 
 Ce critère de succès a pour but d’encourager l’utilisation d’une présentation et d’une mise en page cohérentes pour les utilisateurs et utilisatrices qui interagissent avec du contenu répété dans un ensemble de pages web et qui ont besoin de trouver à plusieurs reprises des informations ou des fonctionnalités spécifiques. Les personnes malvoyantes qui utilisent la loupe pour agrandir une petite partie de l’écran utilisent souvent des repères visuels et des limites de pages pour localiser rapidement un contenu répété. De même, la présentation d’un contenu répété dans le même ordre est importante pour les utilisateurs visuels qui font appel à leur mémoire spatiale ou à des repères visuels dans la représentation graphique pour localiser ce contenu.
 
-Il est important de noter que l’expression « dans le même ordre » de cette section ne signifie pas l’impossibilité d’utiliser des menus connexes, des blocs de navigation secondaires ou une structure de page complémentaire. Ce critère de succès vise plutôt à aider les utilisateurs et utilisatrices qui interagissent avec du contenu répété sur plusieurs pages web à prévoir l’emplacement du contenu qu’ils recherchent. Il leur permet également de le trouver plus rapidement quand ils le redécouvrent.
+L’utilisation de l’expression &quot;même ordre&quot; dans cette section ne signifie pas que les menus de sous-navigation ne peuvent pas être utilisés ou que des blocs de navigation secondaire ou une structure de page ne peuvent pas être utilisés. Ce critère de succès vise plutôt à aider les utilisateurs et utilisatrices qui interagissent avec du contenu répété sur plusieurs pages web à prévoir l’emplacement du contenu qu’ils recherchent. Il leur permet également de le trouver plus rapidement quand ils le redécouvrent.
 
 Les utilisateurs et utilisatrices peuvent effectuer une modification de l’ordre en faisant appel à des agents utilisateur adaptatifs ou en définissant des préférences pour que les informations soient présentées de la manière la plus utile pour eux.
 
@@ -1206,7 +1206,7 @@ Les libellés sont positionnés immédiatement à droite du champ.
 * Tous les autres composants de formulaire (par exemple, zones de texte, zones de liste modifiable) :
 les libellés sont positionnés immédiatement au-dessus ou à gauche du champ.
 
-Dans les formulaires simples avec des fonctionnalités très limitées, un bouton `Submit` étiqueté de manière appropriée peut servir de libellé pour le champ adjacent (par exemple `Search`). Cela s’avère utile dans les cas où il peut être difficile de trouver de l’espace pour le texte du libellé.
+Dans les formulaires simples avec des fonctionnalités très limitées, un bouton `Submit` étiqueté de manière appropriée peut servir de libellé pour le champ adjacent (par exemple, `Search`). Cela s’avère utile dans les cas où il peut être difficile de trouver de l’espace pour le texte du libellé.
 
 #### En savoir plus – Étiquettes ou instructions (3.3.2) {#more-information-labels-or-instructions}
 

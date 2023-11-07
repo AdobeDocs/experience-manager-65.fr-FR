@@ -8,10 +8,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 93%
+source-wordcount: '1220'
+ht-degree: 90%
 
 ---
 
@@ -61,7 +61,7 @@ Tout d’abord, vérifiez que la connexion entre les instances de création et d
 
    >[!NOTE]
    >
-   >Si le modèle n’est pas disponible, consultez [Rendre un modèle disponible](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate).
+   >Si le modèle n’est pas disponible, reportez-vous au [Mettre un modèle à disposition](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate) .
 
 1. Cliquez sur **Créer** pour créer le formulaire.
 
@@ -81,7 +81,7 @@ Cette section présente uniquement les liens spécifiques à Adobe Campaign. Po
 
 1. Accédez au formulaire que vous souhaitez modifier.
 1. Dans la boîte à outils, sélectionnez **Page** > **Propriétés de page…** et accédez ensuite à l’onglet **Services cloud** de la fenêtre pop-up.
-1. Ajoutez le service Adobe Campaign en cliquant sur **Ajouter un service** et en choisissant ensuite la configuration qui correspond à votre instance Adobe Campaign dans la liste déroulante du service. Cette configuration est effectuée lors de la configuration de la connexion entre les différentes instances. Pour plus d’informations, consultez [Connexion d’AEM à Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
+1. Ajoutez le service Adobe Campaign en cliquant sur **Ajouter un service**, puis en sélectionnant la configuration correspondant à votre instance Adobe Campaign dans la liste déroulante du service. Cette configuration est effectuée lors de la configuration de la connexion entre les différentes instances. Pour plus d’informations, consultez [Connexion d’AEM à Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
 
    >[!NOTE]
    >

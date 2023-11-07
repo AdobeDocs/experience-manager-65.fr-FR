@@ -2,10 +2,10 @@
 title: Intégration à Adobe Target à l’aide d’IMS
 description: Découvrez-en plus sur l’intégration d’AEM à Adobe Target..
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 67%
+source-wordcount: '1556'
+ht-degree: 70%
 
 ---
 
@@ -47,7 +47,7 @@ La première étape de la configuration consiste à créer une configuration IMS
 1. Dans AEM, ouvrez le menu **Outils**.
 1. Dans le **Sécurité** , sélectionnez **Configurations d’Adobe IMS**.
 1. Sélectionnez **Créer** pour ouvrir la **Configuration du compte technique Adobe IMS**.
-1. Utilisation de la liste déroulante sous **Configuration du cloud**, sélectionnez **Adobe Target**.
+1. À l’aide de la liste déroulante sous **Configuration du cloud**, sélectionnez **Adobe Target**.
 1. Activez **Création d’un certificat** et saisissez un nouvel alias.
 1. Confirmez en sélectionnant **Créer un certificat**.
 
@@ -79,9 +79,9 @@ Pour créer un projet avec Adobe Target que AEM peut utiliser, ouvrez la console
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. Tous les projets que vous avez sont affichés. Sélectionner **Créer un projet** - l’emplacement et l’utilisation dépendent des éléments suivants :
+1. Tous les projets que vous avez s’affichent. Sélectionner **Créer un projet** - l’emplacement et l’utilisation dépendent des éléments suivants :
 
-   * Si vous n’avez pas encore de projet, **Créer un projet** est au centre, en bas.
+   * Si vous n’avez pas encore de projet, **Créer un projet** s’affiche au centre, en bas.
      ![Créer un projet - Premier projet](assets/integration-target-io-02.png)
    * Si vous disposez déjà de projets, ceux-ci sont répertoriés et **Créer un projet** se trouve dans le coin supérieur droit.
      ![Créer un projet - Projets multiples](assets/integration-target-io-03.png)
@@ -89,7 +89,7 @@ Pour créer un projet avec Adobe Target que AEM peut utiliser, ouvrez la console
 
 1. Sélectionnez **Ajouter au projet** suivi de **API** :
 
-   ![Developer Console d’Adobe](assets/integration-target-io-10.png)
+   ![Adobe Developer Console](assets/integration-target-io-10.png)
 
 1. Sélectionnez **Adobe Target**, puis **Suivant** :
 
@@ -177,7 +177,7 @@ Pour revenir à AEM, vous pouvez terminer la configuration IMS en ajoutant les v
 
 1. Confirmez en sélectionnant **Créer**.
 
-1. Votre configuration Adobe Target s’affiche dans la console AEM.
+1. Votre configuration Adobe Target s’affiche dans la console AEM.
 
    ![Configuration du compte technique Adobe IMS](assets/integrate-target-io-11.png)
 
@@ -276,7 +276,7 @@ Lors de la configuration des champs Identifiant du client et Code client, tenez 
 
 Dans les deux cas, tenez compte des points suivants :
 
-* par défaut, le code client (s’il est ajouté en premier) est également automatiquement copié dans le champ d’ID client ;
+* par défaut, le Code client (s’il est ajouté en premier) est également automatiquement copié dans le champ d’ID client ;
 * Vous pouvez éventuellement modifier le jeu d’identifiants de tenant par défaut.
 * Par conséquent, les appels du serveur principal à Target sont basés sur l’identifiant du client et les appels côté client à Target sont basés sur le code client.
 

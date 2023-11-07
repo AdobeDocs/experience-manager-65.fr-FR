@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4950'
-ht-degree: 63%
+source-wordcount: '4962'
+ht-degree: 62%
 
 ---
 
@@ -424,7 +424,7 @@ Informations sur le référentiel CRX
   </tr>
   <tr>
    <td>option.xml.import.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge l’importation du code XML en tant que contenu.</td>
+   <td>La valeur true indique que le référentiel prend en charge l’importation de code XML en tant que contenu.</td>
   </tr>
   <tr>
    <td>node.type.management.same.name.siblings.supported</td>
@@ -464,7 +464,7 @@ Informations sur le référentiel CRX
   </tr>
   <tr>
    <td>option.locking.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge le verrouillage des nœuds. Le verrouillage permet à un utilisateur d’empêcher temporairement d’autres utilisateurs d’apporter des modifications.</td>
+   <td>La valeur true indique que le référentiel prend en charge le verrouillage des noeuds. Le verrouillage permet à un utilisateur d’empêcher temporairement d’autres utilisateurs d’apporter des modifications.</td>
   </tr>
   <tr>
    <td>jcr.repository.version.display</td>
@@ -472,7 +472,7 @@ Informations sur le référentiel CRX
   </tr>
   <tr>
    <td>option.activities.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge des activités. Les activités sont un ensemble de modifications effectuées dans un espace de travail qui sont fusionnées dans un autre espace de travail.</td>
+   <td>La valeur true indique que le référentiel prend en charge les activités. Les activités sont un ensemble de modifications effectuées dans un espace de travail qui sont fusionnées dans un autre espace de travail.</td>
   </tr>
   <tr>
    <td>node.type.management.multivalued.properties.supported</td>
@@ -894,7 +894,7 @@ La page principale de la console JMX comporte un tableau des services. Chaque l
 
 ## Utilisation d’applications JMX externes pour la surveillance {#using-external-jmx-applications-for-monitoring}
 
-CRX permet aux applications externes d’interagir avec les beans gérés (MBeans) par le biais de [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Utilisation de consoles génériques telles que [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) pour les applications de surveillance spécifiques à un domaine, permet d’obtenir et de définir des configurations et des propriétés CRX, ainsi que de surveiller les performances et l’utilisation des ressources.
+CRX permet aux applications externes d’interagir avec les beans gérés (MBeans) par le biais de [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Utilisation de consoles génériques telles que [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) ou des applications de surveillance spécifiques à un domaine, permet d’obtenir et de définir des configurations et des propriétés CRX, ainsi que de surveiller les performances et l’utilisation des ressources.
 
 ### Utilisation de JConsole pour se connecter à CRX {#using-jconsole-to-connect-to-crx}
 

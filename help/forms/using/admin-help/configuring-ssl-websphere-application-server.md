@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1222'
 ht-degree: 18%
 
 ---
@@ -51,7 +51,7 @@ Pour activer le protocole SSL, WebSphere doit avoir accès à un compte d’util
 1. Cliquez avec le bouton droit de la souris sur Utilisateurs et sélectionnez **Nouvel utilisateur**.
 1. Saisissez un nom d’utilisateur et un mot de passe dans les zones appropriées, puis saisissez les autres informations requises dans les zones restantes.
 1. Désélectionner **L’Utilisateur Doit Modifier Le Mot De Passe Lors De Sa Prochaine Connexion**, cliquez sur **Créer**, puis cliquez sur **Fermer**.
-1. Cliquez sur **Utilisateurs**, cliquez avec le bouton droit de la souris sur l’utilisateur que vous venez de créer et sélectionnez **Propriétés**.
+1. Cliquez sur **Utilisateurs**, cliquez avec le bouton droit de la souris sur l’utilisateur que vous avez créé et sélectionnez **Propriétés**.
 1. Cliquez sur le bouton **Member Of** puis cliquez sur **Ajouter**.
 1. Dans la zone Saisir les noms des objets à sélectionner, saisissez `Administrators`, puis cliquez sur Vérifier les noms pour vous assurer que le nom du groupe est correct.
 1. Cliquez sur **OK** puis cliquez sur **OK** encore une fois.

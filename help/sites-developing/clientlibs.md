@@ -7,10 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2856'
-ht-degree: 86%
+source-wordcount: '2853'
+ht-degree: 85%
 
 ---
 
@@ -122,7 +122,7 @@ Le client Web doit être autorisé à accéder au nœud `cq:ClientLibraryFolder`
 
 ### Remplacement des bibliothèques dans /lib {#overriding-libraries-in-lib}
 
-Les dossiers de bibliothèques clientes situés sous `/apps` sont prioritaires sur les dossiers ayant le même nom situés dans `/libs`. Par exemple : `/apps/cq/ui/widgets` a priorité sur `/libs/cq/ui/widgets`. Lorsque ces bibliothèques appartiennent à la même catégorie, la bibliothèque située sous `/apps` est utilisée.
+Dossiers de bibliothèques clientes situés sous `/apps` ont la priorité sur les dossiers portant le même nom qui sont similaires dans `/libs`. Par exemple : `/apps/cq/ui/widgets` a priorité sur `/libs/cq/ui/widgets`. Lorsque ces bibliothèques appartiennent à la même catégorie, la bibliothèque située sous `/apps` est utilisée.
 
 ### Recherche d’un dossier de bibliothèques clientes et utilisation du servlet des bibliothèques clientes du proxy {#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet}
 
@@ -134,7 +134,7 @@ Dans les versions précédentes, les dossiers de bibliothèques clientes se trou
 
 >[!NOTE]
 >
->Pour mieux isoler le code du contenu et de la configuration, il est recommandé de localiser les bibliothèques clientes sous `/apps` et les exposer via `/etc.clientlibs` en exploitant la variable `allowProxy` .
+>Pour mieux isoler le code du contenu et de la configuration, il est recommandé de localiser les bibliothèques clientes sous `/apps` et les exposer via `/etc.clientlibs` en utilisant la variable `allowProxy` .
 
 Pour que les bibliothèques clientes situées sous `/apps` soient accessibles, un servlet proxy est utilisé. Les listes de contrôle d’accès (ACL) sont toujours appliquées sur le dossier de bibliothèques clientes, mais le servlet permet la lecture du contenu via `/etc.clientlibs/` si la propriété `allowProxy` est définie sur `true`.
 
@@ -197,7 +197,7 @@ Vous pouvez définir la propriété `allowProxy` sur `foo` sur true.
 
 ### Liaison vers des dépendances {#linking-to-dependencies}
 
-Lorsque le code de votre dossier de bibliothèques clientes fait référence à d’autres bibliothèques, identifiez ces dernières en tant que dépendances. Dans le JSP, la balise `ui:includeClientLib` qui fait référence à votre dossier de bibliothèques clientes fait en sorte que le code HTML contienne un lien vers le fichier de bibliothèque généré, ainsi que les dépendances.
+Lorsque le code de votre dossier de bibliothèques clientes fait référence à d’autres bibliothèques, identifiez ces dernières en tant que dépendances. Dans le JSP, la variable `ui:includeClientLib` qui fait référence à votre dossier de bibliothèques clientes, le code de HTML inclut un lien vers le fichier de bibliothèque généré et les dépendances.
 
 Les dépendances doivent être un autre nœud `cq:ClientLibraryFolder`. Pour identifier les dépendances, ajoutez une propriété à votre nœud `cq:ClientLibraryFolder` avec les attributs suivants :
 

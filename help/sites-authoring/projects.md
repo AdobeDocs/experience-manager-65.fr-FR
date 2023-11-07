@@ -2,10 +2,10 @@
 title: Projets
 description: Les projets vous permettent de regrouper des ressources dans une seule entité dont l’environnement commun et partagé facilite la gestion de vos projets.
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 1d64a9a6d6dfbc7606d7c222ef50a21bf9b902d6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1365'
-ht-degree: 97%
+source-wordcount: '1359'
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ Dans AEM, la console Projets permet d’accéder à vos projets et de les gérer
 
 ![Console Projets](assets/screen-shot_2019-03-05at125110.png)
 
-La console Projets est similaire aux autres consoles d’AEM. Elle permet d’agir sur des projets individuels et d’ajuster l’affichage des projets.
+La console Projets est similaire aux autres consoles d’AEM, elle permet plusieurs actions sur des projets individuels et permet d’ajuster l’affichage des projets.
 
 ### Activation et désactivation de mode {#modes}
 

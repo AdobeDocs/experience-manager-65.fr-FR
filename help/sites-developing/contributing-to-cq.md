@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2672'
+source-wordcount: '2670'
 ht-degree: 48%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 48%
 
 ## Méthodologie de développement {#development-methodology}
 
-AEM est développé selon des méthodes éprouvées couramment pratiquées dans de grands projets open source. De nombreux éléments de base de la pile de technologie AEM sont en fait conservés comme de principaux projets open source, tels que Sling et Jackrabbit, qui ont été fournis à la Fondation du logiciel Apache. Un aspect majeur de cet esprit présent dans AEM est que vous êtes encouragé à utiliser les listes de diffusion et les forums en ligne disponibles pour des interactions directes avec l’équipe de développement.
+AEM est développé selon des méthodologies éprouvées couramment pratiquées dans de grands projets open source. De nombreux éléments de base de la pile de technologies AEM sont en fait conservés comme des projets open source actifs, tels que Sling et Jackrabbit, qui ont été contribué à la Fondation de logiciels Apache. Un aspect majeur de cet esprit présent dans AEM est que vous êtes encouragé à utiliser les listes de diffusion et les forums en ligne disponibles pour des interactions directes avec l’équipe de développement.
 
 Si vous contribuez à des composants d’AEM, familiarisez-vous avec AEM comme vous le feriez lorsque vous contribuez à un projet open source, et communiquez avec l’équipe principale existante comme vous le feriez lorsque vous avez l’intention de contribuer à un tel projet.
 
@@ -30,7 +30,7 @@ Le protocole HyperText Transfer Protocol (HTTP) est au coeur de tout ce que nous
 Au niveau le plus élevé, vous devez avoir une solide compréhension des éléments suivants :
 
 * le protocole[HTTP/1.1](https://www.ietf.org/rfc/rfc2616.txt)
-* HTML (de préférence [HTML5](https://html.spec.whatwg.org/))
+* HTML de préférence [HTML5](https://html.spec.whatwg.org/))
 * Feuilles de style en cascade
 * Extensible Markup Language (XML)
 * Modèles de conception JavaScript et XML (AJAX) asynchrones
@@ -41,7 +41,7 @@ Au niveau le plus élevé, vous devez avoir une solide compréhension des élém
 * Cookies de navigateur
 * et d’autres concepts de développement web modernes
 
-La pile technologique d’Adobe Experience Manager est basée sur la variable [Apache Felix](https://felix.apache.org/documentation/index.html) Conteneur OSGI avec [Apache Sling](https://sling.apache.org/index.html) structure web et incorpore un référentiel de contenu Java™ ([JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)) en fonction de [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html). Familiarisez-vous avec ces projets individuels et avec tout autre composant open source (par exemple, Apache Lucene) utilisé dans la zone où vous avez l’intention de contribuer.
+La pile technologique de Adobe Experience Manager est basée sur la variable [Apache Felix](https://felix.apache.org/documentation/index.html) Conteneur OSGI avec [Apache Sling](https://sling.apache.org/index.html) structure web et incorpore un référentiel de contenu Java™ ([JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)) en fonction de [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html). Familiarisez-vous avec ces projets individuels et avec tout autre composant open source (par exemple, Apache Lucene) utilisé dans la zone où vous avez l’intention de contribuer.
 
 ## Connaissances tribales {#tribal-knowledge}
 
@@ -75,17 +75,17 @@ Pas de troisième étape : pour installer et exécuter, il suffit de téléchar
 
 Petite taille du fichier Quickstart : conservez la taille minimale du fichier JAR Quickstart. Utilisez les bibliothèques de manière intelligente et optimisée, en déplaçant les fonctionnalités facultatives vers le partage de modules.
 
-Temps de démarrage plus rapide : Lorsque vous effectuez une modification susceptible d’affecter le temps de démarrage, veillez à ce qu’elle soit plus courte, et non plus longue.
+Temps de démarrage plus rapide : lorsque vous effectuez une modification susceptible d’affecter le temps de démarrage, veillez à ce qu’il soit plus court, et non plus long.
 
 ### Lean et Mean {#lean-and-mean}
 
 Nous privilégions le code et les projets qui sont légers, petits, rapides et élégants. &quot;Assez bien&quot; n&#39;est pas suffisant.
 
-Réutilisation du code : Notre architecture de produit basée sur OSGi et notre philosophie &quot;tout est contenu&quot; signifient que nous avons inhabituellement de bonnes opportunités de réutilisation du code et des artefacts. Nous essayons d&#39;en profiter chaque fois que possible pour garder les fonctionnalités minces et moyennes.
+Réutilisation du code : notre architecture de produit basée sur OSGi et notre philosophie &quot;tout est contenu&quot; signifie que nous avons de très bonnes opportunités de réutilisation du code et des artefacts. Nous essayons d&#39;en profiter chaque fois que possible pour garder les fonctionnalités minces et moyennes.
 
 Couplage lâche : nous privilégions les interactions à couplage faible à des dépendances étroites et des échanges trop serrés non souhaités. Le couplage faible permet également une réutilisation du code.
 
-### Ne pas casser la démo {#don-t-break-the-demo}
+### Ne pas casser la démonstration {#don-t-break-the-demo}
 
 Familiarisez-vous avec les scripts de démonstration et les fonctionnalités des produits qui sont le plus souvent présentés dans les démos. Comprenez que rien de ce que vous ne faites ne devrait jamais rompre une fonction &quot;script de démonstration&quot;. Le produit principal doit toujours être prêt pour la démonstration, même pendant le développement.
 
@@ -101,11 +101,11 @@ Ne dépendez pas des shutdown hooks, nettoyez au démarrage. Un arrêt anormal e
 
 ### Se tenir prêt pour un clustering élastique {#be-ready-for-elastic-clustering}
 
-Soyez toujours prêt pour la mise en grappe élastique ; supposons toujours qu’il y ait des regroupements. En règle générale, le respect de tout ce qui se trouve dans le référentiel de contenu signifie une prise en charge de la mise en grappe intégrée.
+Soyez toujours prêt pour la mise en grappe élastique ; supposez toujours qu’il y a de la mise en grappe. En règle générale, le respect de tout ce qui se trouve dans le référentiel de contenu signifie une prise en charge intégrée du regroupement.
 
 ### Une conception avec une compatibilité ascendante {#design-for-backward-compatibility}
 
-Rien de ce que vous codez ne doit endommager l’ancien code d’un client. N’utilisez que la `/libs` pour stocker le code du produit qui peut être mis à jour pendant une mise à niveau. Le `/apps` du référentiel est le code du projet et la variable `/etc` contient des configurations personnalisées qui doivent être conservées. En règle générale, ne remplacez rien dans `/apps`, `/content`, et `/home`. Après une mise à niveau, l’ancien code de projet, les configurations et le contenu doivent continuer à fonctionner comme avant la mise à niveau.
+Rien de ce que vous codez ne doit endommager l’ancien code d’un client. N’utilisez que la `/libs` pour stocker le code du produit qui peut être mis à jour pendant une mise à niveau. La variable `/apps` du référentiel est le code du projet et la variable `/etc` contient des configurations personnalisées qui doivent être conservées. En règle générale, ne remplacez rien dans `/apps`, `/content`, et `/home`. Après une mise à niveau, l’ancien code de projet, les configurations et le contenu doivent continuer à fonctionner comme avant la mise à niveau.
 
 La conception en vue d’une compatibilité descendante garantit également que l’expérience de mise à niveau correspond à la simplicité de l’installation initiale. Il suffit d’arrêter l’AEM, de remplacer le fichier JAR de démarrage rapide et de redémarrer AEM. Avec une base d’installation en croissance rapide, l’efficacité de la mise à niveau est un avantage de plus en plus important.
 
@@ -137,7 +137,7 @@ Il est également possible de combiner plusieurs instances du référentiel de c
 
 En substance, JCR est un système de nœuds et de propriétés, dans lequel les nœuds peuvent hériter des autres nœuds et tout le contenu est stocké en tant que *valeurs* de propriété. Notez qu’en plus de l’héritage ordinaire, JCR autorise un concept de noeuds &quot;mixin&quot;, ce qui permet la modélisation de l’héritage multiple.
 
-JCR possède plusieurs types de noeuds et types de propriétés prédéfinis, mais en général, le système de saisie est flexible. L’un des avantages de JCR est qu’il permet de stocker/gérer facilement du contenu structuré et non structuré. En d’autres termes, JCR peut s’adapter à des données hautement structurées, mais il peut également s’adapter à des structures de données dynamiques arbitraires sans contraintes de schéma.
+JCR possède plusieurs types de noeuds et types de propriétés prédéfinis, mais en général, le système de saisie est flexible et (en effet) l’un des avantages de JCR est qu’il permet de stocker/gérer facilement du contenu structuré et non structuré. En d’autres termes, JCR peut s’adapter à des données hautement structurées, mais il peut également s’adapter à des structures de données dynamiques arbitraires sans contraintes de schéma.
 
 L’API Java™ de JavaDoc pour JCR est [here](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
@@ -163,7 +163,7 @@ De nombreuses options de démarrage (telles que le numéro de port actif et le f
 java -jar <quickstartfilename>.jar -help
 ```
 
-**Agents de réplication** - Les agents de réplication sont essentiels pour AEM en tant que mécanisme utilisé pour publier (activer) le contenu d’un auteur vers un environnement de publication ; vider le contenu du cache de Dispatcher ; renvoyer du contenu généré par l’utilisateur (par exemple, une entrée de formulaire) de l’environnement de publication vers l’environnement de création.
+**Agents de réplication** - Les agents de réplication sont essentiels pour AEM en tant que mécanisme utilisé pour publier (activer) le contenu d’un auteur dans un environnement de publication ; vider le contenu du cache de Dispatcher ; renvoyer le contenu généré par l’utilisateur (par exemple, la saisie de formulaire) de l’environnement de publication vers l’environnement de création.
 
 **Génération de modèles automatique** : grâce à la génération de modèles automatique, vous pouvez créer un formulaire (que l’on désigne sous le nom de modèle automatique) dont les champs représentent la structure souhaitée pour vos pages, puis l’utiliser afin de créer aisément des pages sur la base de cette structure.
 

@@ -7,10 +7,10 @@ feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '2359'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 | AEM 6.5 | Cet article |
 
 <!-- Scope of metadata articles:
-* metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
+* metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
@@ -41,7 +41,7 @@ Vous pouvez utiliser les méthodes suivantes pour ajouter des métadonnées à d
 
 * Dans [!DNL Experience Manager Assets], vous pouvez ajouter ou modifier manuellement les métadonnées des ressources dans la page [!UICONTROL Propriétés].
 
-* Vous pouvez tirer parti de la fonctionnalité de [profils de métadonnées](/help/assets/metadata-config.md#metadata-profiles) d’[!DNL Experience Manager Assets] pour ajouter automatiquement des métadonnées lorsque des ressources sont chargées dans la gestion des ressources numériques.
+* Vous pouvez utiliser [profils de métadonnées](/help/assets/metadata-config.md#metadata-profiles) fonctionnalité de [!DNL Experience Manager Assets] pour ajouter automatiquement des métadonnées lorsque des ressources sont chargées dans la gestion des ressources numériques.
 
 ## Ajout ou modification de métadonnées dans [!DNL Experience Manager Assets] {#add-edit-metadata}
 
@@ -256,7 +256,7 @@ Describe the journey of an assets' metadata. What all happens to metadata when a
 
 * To begin with, assets come with some metadata. The applications that create digital assets add some metadata to the assets created. Before uploading an asset to Experience Manager, you can edit and modify metadata using either the native application used to create an asset or using some other metadata editing application. When you upload an asset to Experience Manager, the metadata is processed.
 
-* Link to PS, ID, AI, PDF, etc. metadata-related help articles.
+* Link to PS, ID, AI, PDF, and so on, metadata-related help articles.
 
 * Link to XMP writeback.
 
@@ -280,7 +280,7 @@ Link to metadata handling of collections.
 
 * Before ingesting assets: Metadata editors
 
-* After ingesting assets: Properties of an asset, folder, collection, etc.
+* After ingesting assets: Properties of an asset, folder, collection, and so on.
 
 * Any supported programmatic method to bulk edit metadata directly in JCR?
 

@@ -2,10 +2,10 @@
 title: Modifier les propriétés d’une page de contenu
 description: Définissez les propriétés requises pour une page dans Adobe Experience Manager.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 62%
+source-wordcount: '1871'
+ht-degree: 61%
 
 ---
 
@@ -257,7 +257,7 @@ Vous pouvez définir les propriétés de page :
 
 * Dans la console **Sites** :
 
-   * [En créant une page](/help/sites-authoring/managing-pages.md#creating-a-new-page) (sous-ensemble des propriétés)
+   * [Créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page) (un sous-ensemble des propriétés)
 
    * En cliquant ou en appuyant sur **Propriétés**
 
@@ -363,7 +363,7 @@ Une fois que vous avez saisi l’option Modification en bloc, vous pouvez effect
    * Vous pouvez mettre à jour les valeurs dans les champs disponibles.
 
       * Les nouvelles valeurs sont appliquées à toutes les pages sélectionnées lorsque vous appuyez sur **Terminé**.
-      * Lorsque le champ comporte plusieurs valeurs (les balises, par exemple), vous pouvez ajouter une nouvelle valeur ou supprimer une valeur commune.
+      * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), vous pouvez ajouter une nouvelle valeur ou supprimer une valeur commune.
 
    * Les champs communs, mais ayant des valeurs différentes sur les différentes pages, sont indiqués par une valeur spéciale, telle que le texte. `<Mixed Entries>`.
 

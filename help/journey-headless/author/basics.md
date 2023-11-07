@@ -2,10 +2,10 @@
 title: Découvrez les bases de la création
 description: Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS Headless à l’aide de fragments de contenu.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 98%
+source-wordcount: '1688'
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ Pour plus d’informations, consultez les concepts de création.
 
 ### Connexion {#signing-in}
 
-Comme pour la plupart des systèmes, vous devrez vous connecter. En tant qu’auteur, vous recevrez les informations suivantes :
+Comme pour la plupart des systèmes, vous devez vous connecter. En tant qu’auteur, vous recevrez les informations suivantes :
 
 * Nom de l’utilisateur (compte)
 * Mot de passe
@@ -102,7 +102,7 @@ Pour ce faire, créez une série de dossiers dans la section **Fichiers** de la 
 
 ![Option Créer un dossier](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Une boîte de dialogue s’ouvre dans laquelle vous pouvez saisir les informations ; confirmez ensuite en sélectionnant **Créer** :
+Une boîte de dialogue s’ouvre, dans laquelle vous pouvez saisir les détails, puis confirmer avec **Créer**:
 
 ![Boîte de dialogue Créer un dossier](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -201,7 +201,7 @@ Les modèles de fragment de contenu sont essentiels à vos fragments de contenu,
 
   Celui-ci est assez évident, car il s’agit d’un onglet dans l’éditeur.
 
-  Les fragments de contenu sont disponibles dans AEM depuis un certain nombre de versions. À l’origine, ils étaient disponibles pour une utilisation « traditionnelle » lors de la création de pages...et ils sont toujours utilisés dans ce contexte. Cela peut impliquer l’association de ressources (des images, par exemple) qui, bien qu’elles ne soient pas incorporées dans le fragment, doivent être disponibles pour l’auteur lors de la création d’une page.
+  Les fragments de contenu sont disponibles dans AEM depuis un certain nombre de versions. À l’origine, ils étaient disponibles pour une utilisation « traditionnelle » lors de la création de pages...et ils sont toujours utilisés dans ce contexte. Cela peut impliquer l’association de ressources (par exemple, des images) qui, bien qu’elles ne soient pas incorporées dans le fragment, doivent être disponibles pour l’auteur lors de la création d’une page.
 
 * **Aperçu**
 
@@ -209,7 +209,7 @@ Les modèles de fragment de contenu sont essentiels à vos fragments de contenu,
 
 * **Mettre à jour les références de page**
 
-  Cette action est disponible à partir de **...** (des points de suspension). Elle n’a pas d’intérêt particulier pour les auteurs de contenu découplé, car elle concerne la création de pages.
+  Cette action est disponible à partir du menu déroulant **...** (points de suspension). Elle n’a pas d’intérêt particulier pour les auteurs de contenu découplé, car elle concerne la création de pages.
 
 ### Publication {#publishing}
 

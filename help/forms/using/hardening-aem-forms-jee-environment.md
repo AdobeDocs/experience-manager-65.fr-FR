@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7667'
-ht-degree: 98%
+source-wordcount: '7665'
+ht-degree: 97%
 
 ---
 
@@ -431,7 +431,7 @@ Vous pouvez définir le nombre de tentatives d’authentification maximum autori
 
 ### Contrôle et journalisation {#auditing-and-logging}
 
-L’utilisation appropriée et sécurisée des capacités de contrôle et de journalisation des applications peut contribuer au suivi et à la détection rapides des événements liés à la sécurité et autres anomalies. L’utilisation efficace des capacités de contrôle et de journalisation dans une application inclut des points comme le suivi des connexions réussies et ayant échoué, de même que les événements clés de l’application comme la création ou la suppression d’enregistrements clés.
+L’utilisation appropriée et sécurisée des capacités de contrôle et de journalisation des applications peut contribuer au suivi et à la détection rapides des événements liés à la sécurité et autres anomalies. L’utilisation efficace de l’audit et de la journalisation dans une application inclut des éléments tels que le suivi des connexions réussies et échouées, ainsi que des événements d’application clés tels que la création ou la suppression d’enregistrements clés.
 
 Vous pouvez utiliser les capacités de contrôle pour détecter de nombreux types d’attaques, parmi lesquels :
 
@@ -663,7 +663,7 @@ Certaines URL sont présentées comme des applications Web accessibles par les u
 
 Un Cross-site request forgery (CSRF) exploite la confiance d’un site web envers l’utilisateur dans le but de transmettre des instructions non autorisées à son insu. Le principe de l’attaque consiste à inclure un lien ou un script dans une page web ou une URL dans un courrier électronique afin d’accéder à un autre site sur lequel l’utilisateur a déjà été authentifié.
 
-Par exemple, vous pouvez être connecté à la console d’administration tout en explorant un autre site web. L’une des pages Web peut inclure une balise d’image HTML avec un attribut `src` visant un script côté serveur sur le site Web de la victime. En exploitant le mécanisme d’authentification de session basé sur les cookies, le site Web attaquant peut envoyer des requêtes malveillantes au script côté serveur ciblé en les faisant passer pour les requêtes de l’utilisateur autorisé. Pour obtenir d’autres exemples, voir [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
+Par exemple, vous pouvez être connecté à la console d’administration tout en explorant un autre site web. L’une des pages Web peut inclure une balise d’image HTML avec un attribut `src` visant un script côté serveur sur le site Web de la victime. En utilisant le mécanisme d’authentification de session basé sur les cookies fourni par les navigateurs web, le site web d’attaque peut envoyer des requêtes malveillantes à ce script côté serveur victime, se faisant passer pour un utilisateur légitime. Pour obtenir d’autres exemples, voir [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
 
 Les caractéristiques suivantes sont communes aux cas de CSRF :
 
@@ -707,7 +707,7 @@ Le processus de filtrage des référents peut être décrit comme suit :
 
 AEM Forms on JEE effectue un filtrage des référents afin de spécifier les référents qui sont autorisés à accéder aux ressources du serveur. Par défaut, le filtre Référent ne filtre pas les requêtes qui utilisent une méthode HTTP sécurisée, par exemple, GET, sauf si *CSRF_CHECK_GETS* est définie sur true. Si le numéro de port pour un référent autorisé est défini sur 0, AEM Forms on JEE autorisera toutes les requêtes des référents provenant de cet hôte quel que soit le numéro de port. Si aucun numéro de port n’est spécifié, seules les requêtes provenant du port par défaut 80 (HTTP) ou du port 443 (HTTPS) sont autorisées. Le filtrage des référents est désactivé si toutes les entrées de la liste de référents autorisés sont supprimées.
 
-Lorsque vous installez Document Services pour la première fois, la liste de référents autorisés est mise à jour avec l’adresse du serveur sur lequel Document Services est installé. Les entrées pour le serveur comprennent le nom du serveur, l’adresse IPv4, l’adresse IPv6 si le protocole IPv6 est activé, l’adresse de bouclage et une entrée localhost. Les noms ajoutés à la liste de référents autorisés sont renvoyés par le système d’exploitation hôte. Par exemple, un serveur dont l’adresse IP est 10.40.54.187 contiendra les entrées suivantes : `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Pour chaque nom non qualifié renvoyé par le système d’exploitation hôte (les noms sans adresse IPv4, IPv6 ou sans nom de domaine qualifié) la liste autorisée n’est pas mise à jour. Modifiez la liste de référents autorisés en fonction de votre environnement de travail. Ne déployez pas le serveur de formulaires dans l’environnement de production avec la liste de référents autorisés par défaut. Après avoir modifié l’un des référents autorisés, l’une des exceptions aux référents ou l’un des URI, assurez-vous de redémarrer le serveur pour que les modifications prennent effet.
+Lorsque vous installez Document Services pour la première fois, la liste de référents autorisés est mise à jour avec l’adresse du serveur sur lequel Document Services est installé. Les entrées pour le serveur comprennent le nom du serveur, l’adresse IPv4, l’adresse IPv6 si le protocole IPv6 est activé, l’adresse de bouclage et une entrée localhost. Les noms ajoutés à la liste de référents autorisés sont renvoyés par le système d’exploitation hôte. Par exemple, un serveur dont l’adresse IP est 10.40.54.187 contiendra les entrées suivantes : `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Pour chaque nom non qualifié renvoyé par le système d’exploitation hôte (les noms sans adresse IPv4, IPv6 ou sans nom de domaine qualifié) la liste autorisée n’est pas mise à jour. Modifiez la liste de référents autorisés en fonction de votre environnement de travail. Ne déployez pas le serveur de formulaires dans l’environnement de production avec la liste de référents autorisés par défaut. Après avoir modifié l’un des référents autorisés, l’une des exceptions aux référents ou l’un des URI, assurez-vous de redémarrer le serveur pour que les modifications prennent effet.
 
 **Gérer la liste de référents autorisés**
 

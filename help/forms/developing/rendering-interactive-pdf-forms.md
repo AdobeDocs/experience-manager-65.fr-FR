@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2483'
-ht-degree: 79%
+source-wordcount: '2478'
+ht-degree: 78%
 
 ---
 
@@ -133,7 +133,7 @@ Pour accéder à cette conception de formulaire, spécifiez `Applications/FormsA
 >
 >Pour plus d’informations sur la création d’une application Forms à l’aide de Workbench, consultez la section [Aide de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).
 
-Le chemin d’accès à une ressource située dans une application Forms est le suivant :
+Le chemin d’accès à une ressource dans une application Forms est le suivant :
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 

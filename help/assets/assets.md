@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: Leader, Architect, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
-source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 70%
+ht-degree: 67%
 
 ---
 
@@ -26,7 +26,7 @@ Les fonctionnalités d’[!DNL Assets] d’[!DNL Experience Manager] vous permet
 * Gérer les ressources en les regroupant par balise, lightbox ou étoiles (vos favoris) Ajoutez des annotations aux ressources.
 * Recherchez des ressources en recherchant les noms de fichiers, le texte intégral des documents et en recherchant des dates, un type de document et des balises.
 * Ajouter ou modifier des informations sur les métadonnées pour les ressources Le contrôle de version des métadonnées se fait automatiquement en fonction de la ressource correspondante. Vous pouvez importer ou exporter des métadonnées de ressources.
-* Exécutez des fonctions d’édition d’images, telles que la mise à l’échelle et l’ajout de filtres d’images. Importez et exportez simultanément plusieurs ressources numériques à l’aide d’un dossier WebDAV ou CIFS.
+* Exécutez des fonctions d’édition d’images, telles que la mise à l’échelle et l’ajout de filtres d’images. Importez et exportez simultanément plusieurs ressources numériques à l’aide d’un dossier WebDAV ou CIF.
 * Utiliser les workflows et les notifications pour permettre le traitement et le téléchargement communs de n’importe quel groupe de ressources et gérer les droits d’accès aux ressources
 
 ### [!DNL Experience Manager Assets] est intégré à [!DNL Experience Manager Sites]. {#aem-assets-fully-integrated-in-cq-wcm}
@@ -66,7 +66,7 @@ Lorsque vous utilisez des ressources numériques dans [!DNL Experience Manager],
 
 * **Balisage** : les ressources [!DNL Assets] peuvent être balisées et classifiées. Consultez [Organisation des ressources](/help/assets/organize-assets.md).
 
-* **Rendus** : un rendu est une représentation binaire d’une ressource. Les ressources [!DNL Assets] possèdent une représentation principale, à savoir celle du fichier chargé. Elle peut en avoir d’autres qui sont créées par des étapes de workflow personnalisées ou lors du téléchargement de la ressource, par exemple. Les rendus peuvent avoir une taille différente, avec une résolution différente, avec un filigrane ajouté ou une autre caractéristique modifiée.
+* **Rendus** : un rendu est une représentation binaire d’une ressource. Les ressources [!DNL Assets] possèdent une représentation principale, à savoir celle du fichier chargé. Il peut y avoir un certain nombre de représentations supplémentaires qui sont créées, par exemple, par des étapes de workflow personnalisées ou lorsqu’une ressource est chargée. Les rendus peuvent avoir une taille différente, avec une résolution différente, avec un filigrane ajouté ou une autre caractéristique modifiée.
 
 * **Versions** : le contrôle de version permet de créer un instantané des ressources numériques à un moment donné. Vous pouvez restaurer la version précédente des ressources. Consultez [Contrôle de version dans  [!DNL Assets]](manage-assets.md#asset-versioning).
 

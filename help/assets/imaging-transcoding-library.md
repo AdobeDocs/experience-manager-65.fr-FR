@@ -5,10 +5,10 @@ contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '992'
-ht-degree: 76%
+ht-degree: 75%
 
 ---
 
@@ -56,8 +56,8 @@ Les arguments de ligne de commande de la bibliothèque ITL peuvent inclure les �
 
 Vous pouvez configurer les options suivantes pour le paramètre `-resize` :
 
-* `X` : fonctionne comme [!DNL Experience Manager]. Par exemple, -resize 319.
-* `WxH` : les proportions ne sont pas conservées, par exemple `-resize 319x319`.
+* `X` : fonctionne comme [!DNL Experience Manager]. Par exemple, -resize 319.
+* `WxH`: le rapport L/H n’est pas conservé, par exemple, `-resize 319x319`.
 * `Wx` : définit la largeur et calcule la hauteur en conservant le rapport d’aspect. Par exemple, `-resize 319x`.
 * `xH` : définit la hauteur et calcule la largeur en conservant le rapport d’aspect. Par exemple, `-resize x319`.
 

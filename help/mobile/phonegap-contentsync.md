@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 docset: aem65
 exl-id: 2cadd9c5-4335-48d0-8d1c-941fca717409
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2959'
+source-wordcount: '2957'
 ht-degree: 1%
 
 ---
@@ -287,7 +287,7 @@ Notez que la variable *factory* La définition contient l’interface commune et
 
 ### Mise en oeuvre d’un gestionnaire de mise à jour personnalisé {#implementing-a-custom-update-handler}
 
-Chaque page mobile We.Retail contient un logo dans le coin supérieur gauche que nous souhaitons inclure dans le fichier zip, bien sûr. Toutefois, pour l’optimisation du cache, AEM ne fait pas référence à l’emplacement réel du fichier image dans le référentiel, ce qui nous empêche d’utiliser simplement la variable **copy** type de configuration. Ce que nous devons faire à la place, c&#39;est fournir le nôtre. **logo** type de configuration qui rend l’image disponible à l’emplacement demandé par AEM. La liste de code suivante indique l’implémentation complète du gestionnaire de mise à jour du logo :
+Chaque page mobile We.Retail contient un logo dans le coin supérieur gauche que nous souhaitons inclure dans le fichier zip. Toutefois, pour l’optimisation du cache, AEM ne fait pas référence à l’emplacement réel du fichier image dans le référentiel, ce qui nous empêche d’utiliser simplement la variable **copy** type de configuration. Ce que nous devons faire à la place, c&#39;est fournir le nôtre. **logo** type de configuration qui rend l’image disponible à l’emplacement demandé par AEM. La liste de code suivante indique l’implémentation complète du gestionnaire de mise à jour du logo :
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 

@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '5396'
+source-wordcount: '5393'
 ht-degree: 48%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 48%
 
 AEM Forms peut être appelé à l’aide de l’API Java AEM Forms. Lors de l’utilisation de l’API Java AEM Forms, vous pouvez utiliser l’API d’appel ou les bibliothèques clientes Java. Les bibliothèques clientes Java sont disponibles pour les services tels que le service Rights Management. Ces API fortement typées vous permettent de développer des applications Java qui appellent AEM Forms.
 
-Les API d’appel sont des classes situées dans le package `com.adobe.idp.dsc`. À l’aide de ces classes, vous pouvez envoyer une demande d’appel directement à un service et gérer une réponse d’appel renvoyée. Utilisez l’API d’appel pour appeler des processus de courte ou de longue durée créés à l’aide de Workbench.
+Les API d’appel sont des classes qui se trouvent dans la variable `com.adobe.idp.dsc` module. À l’aide de ces classes, vous pouvez envoyer une demande d’appel directement à un service et gérer une réponse d’appel renvoyée. Utilisez l’API d’appel pour appeler des processus de courte ou de longue durée créés à l’aide de Workbench.
 
 Pour appeler un service par programmation, il est recommandé d’utiliser une bibliothèque cliente Java correspondant au service plutôt qu’à l’API d’appel. Par exemple, pour appeler le service Encryption, utilisez la bibliothèque cliente du service Encryption. Pour effectuer une opération du service Encryption, appelez une méthode appartenant à l’objet client du service Encryption. Vous pouvez chiffrer un document de PDF avec un mot de passe en appelant la méthode `EncryptionServiceClient` de `encryptPDFUsingPassword` .
 
@@ -632,7 +632,7 @@ Dans ce scénario, une application cliente s’exécute dans sa propre JVM et ap
 
 ### Application cliente appelant des instances AEM Forms en grappe {#client-application-invoking-clustered-aem-forms-instances}
 
-Le diagramme suivant montre une application client s’exécutant dans sa propre JVM et invoquant des instances d’AEM Forms situées dans un cluster.
+Le diagramme suivant montre une application cliente s’exécutant dans sa propre JVM et appelant des instances AEM Forms dans une grappe.
 
 Ce scénario est similaire à une application client appelant une instance AEM Forms autonome. Cependant, l’URL du fournisseur est différente. Si une application cliente souhaite se connecter à un serveur d’applications J2EE spécifique, l’application doit modifier l’URL pour référencer le serveur d’applications J2EE spécifique.
 
@@ -789,7 +789,7 @@ L’exemple de code suivant crée un objet `com.adobe.idp.Document` basé sur un
 
 #### Création d’un document à partir d’un fichier {#creating-a-document-based-on-a-file}
 
-L’exemple de code suivant crée un objet `com.adobe.idp.Document` basé sur un fichier PDF nommé *map.pdf*. Ce fichier se trouve dans la racine du disque dur C. Ce constructeur tente de définir le type de contenu MIME de l’objet `com.adobe.idp.Document` en utilisant l’extension de nom de fichier.
+L’exemple de code suivant crée un objet `com.adobe.idp.Document` basé sur un fichier PDF nommé *map.pdf*. Ce fichier se trouve à la racine du disque dur C. Ce constructeur tente de définir le type de contenu MIME de l’objet `com.adobe.idp.Document` en utilisant l’extension de nom de fichier.
 
 Le constructeur `com.adobe.idp.Document` qui accepte l’objet `java.io.File` accepte également un paramètre Boolean. En définissant ce paramètre sur `true`, l’objet `com.adobe.idp.Document` supprime le fichier. Cette action signifie que vous n’avez pas besoin de supprimer le fichier après l’avoir passé au constructeur `com.adobe.idp.Document`.
 

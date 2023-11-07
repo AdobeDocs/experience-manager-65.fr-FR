@@ -12,9 +12,9 @@ discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 role: Admin
 exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2224'
+source-wordcount: '2220'
 ht-degree: 6%
 
 ---
@@ -55,11 +55,11 @@ Lorsqu’une fonction de communauté est ajoutée à un modèle de site de commu
 
 * **Titre**
 
-   (*Obligatoire*) Texte qui apparaît dans le menu des fonctionnalités du site.
+  (*Obligatoire*) Texte qui apparaît dans le menu des fonctionnalités du site.
 
 * **URL**
 
-   (*Obligatoire*) Nom utilisé pour générer l’URI. Le nom doit être conforme à la variable [conventions de dénomination](/help/sites-developing/naming-conventions.md) imposé par AEM et JCR.
+  (*Obligatoire*) Nom utilisé pour générer l’URI. Le nom doit être conforme à la variable [conventions de dénomination](/help/sites-developing/naming-conventions.md) imposé par AEM et JCR.
 
 Par exemple, en utilisant le site créé à partir de la fonction [Prise en main](/help/communities/getting-started.md) tutoriel, si
 
@@ -86,15 +86,15 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 
 * **Afficher la vue Mes activités**
 
-   Si cette option est sélectionnée, la page Activités comprend un onglet qui filtre les activités en fonction de celles générées dans la communauté par le membre actuel. La valeur par défaut est sélectionnée.
+  Si cette option est sélectionnée, la page Activités comprend un onglet qui filtre les activités en fonction de celles générées dans la communauté par le membre actuel. La valeur par défaut est sélectionnée.
 
 * **Afficher la vue Toutes les activités**
 
-   Si cette option est sélectionnée, la page Activités comprend un onglet qui inclut toutes les activités générées au sein de la communauté auxquelles le membre actuel a accès. La valeur par défaut est sélectionnée.
+  Si cette option est sélectionnée, la page Activités comprend un onglet qui inclut toutes les activités générées au sein de la communauté auxquelles le membre actuel a accès. La valeur par défaut est sélectionnée.
 
 * **Afficher la vue Fil d’actualité**
 
-   Si cette option est sélectionnée, les pages Activités comprennent un onglet qui filtre les activités en fonction de celles que le membre actuel suit. La valeur par défaut est sélectionnée.
+  Si cette option est sélectionnée, les pages Activités comprennent un onglet qui filtre les activités en fonction de celles que le membre actuel suit. La valeur par défaut est sélectionnée.
 
 ### Fonction Blog {#blog-function}
 
@@ -108,19 +108,19 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 
 * **Autoriser les membres privilégiés**
 
-   Si cette option est sélectionnée, le blog permet uniquement aux membres privilégiés de créer des articles en autorisant la sélection d’une [groupe de membres privilégiés](/help/communities/users.md#privileged-members-group). Si cette option n’est pas sélectionnée, tous les membres de la communauté sont autorisés à créer. La valeur par défaut est désélectionnée.
+  Si cette option est sélectionnée, le blog permet uniquement aux membres privilégiés de créer des articles en autorisant la sélection d’une [groupe de membres privilégiés](/help/communities/users.md#privileged-members-group). Si cette option n’est pas sélectionnée, tous les membres de la communauté sont autorisés à créer. La valeur par défaut est désélectionnée.
 
-* **Autoriser les transferts de fichiers**
+* **Autoriser les chargements de fichiers**
 
-   Si cette option est sélectionnée, le blog offre aux membres la possibilité de télécharger des fichiers. La valeur par défaut est sélectionnée.
+  Si cette option est sélectionnée, le blog offre aux membres la possibilité de télécharger des fichiers. La valeur par défaut est sélectionnée.
 
 * **Autoriser les réponses à thème**
 
-   S’il n’est pas sélectionné, le blog autorise les réponses (commentaires) à un article, mais les réponses aux commentaires ne sont pas autorisées. La valeur par défaut est sélectionnée.
+  S’il n’est pas sélectionné, le blog autorise les réponses (commentaires) à un article, mais les réponses aux commentaires ne sont pas autorisées. La valeur par défaut est sélectionnée.
 
 * **Autoriser le contenu proposé**
 
-   Si cette option est sélectionnée, le blog est identifié comme [contenu proposé](/help/communities/featured.md). La valeur par défaut est sélectionnée.
+  Si cette option est sélectionnée, le blog est identifié comme [contenu proposé](/help/communities/featured.md). La valeur par défaut est sélectionnée.
 
 ### Fonction Calendrier {#calendar-function}
 
@@ -134,23 +134,23 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 
 * **Autoriser l’épinglage**
 
-   Si cette option est sélectionnée, le forum permet d’épingler les réponses aux sujets au début de la liste des commentaires. La valeur par défaut est sélectionnée.
+  Si cette option est sélectionnée, le forum permet d’épingler les réponses aux sujets au début de la liste des commentaires. La valeur par défaut est sélectionnée.
 
 * **Autoriser les membres privilégiés**
 
-   Si cette option est sélectionnée, le blog permet uniquement aux membres privilégiés de créer des articles en autorisant la sélection d’une [groupe de membres privilégiés](/help/communities/users.md#privileged-members-group). Si cette option n’est pas sélectionnée, tous les membres de la communauté sont autorisés à créer. La valeur par défaut est désélectionnée.
+  Si cette option est sélectionnée, le blog permet uniquement aux membres privilégiés de créer des articles en autorisant la sélection d’une [groupe de membres privilégiés](/help/communities/users.md#privileged-members-group). Si cette option n’est pas sélectionnée, tous les membres de la communauté sont autorisés à créer. La valeur par défaut est désélectionnée.
 
-* **Autoriser les transferts de fichiers**
+* **Autoriser les chargements de fichiers**
 
-   Si cette option est sélectionnée, le blog offre aux membres la possibilité de télécharger des fichiers. La valeur par défaut est sélectionnée.
+  Si cette option est sélectionnée, le blog offre aux membres la possibilité de télécharger des fichiers. La valeur par défaut est sélectionnée.
 
 * **Autoriser les réponses à thème**
 
-   S’il n’est pas sélectionné, le blog autorise les réponses (commentaires) à un article, mais les réponses aux commentaires ne sont pas autorisées. La valeur par défaut est sélectionnée.
+  S’il n’est pas sélectionné, le blog autorise les réponses (commentaires) à un article, mais les réponses aux commentaires ne sont pas autorisées. La valeur par défaut est sélectionnée.
 
 * **Autoriser le contenu proposé**
 
-   Si cette option est sélectionnée, son contenu est identifié comme [contenu proposé](/help/communities/featured.md). La valeur par défaut est sélectionnée.
+  Si cette option est sélectionnée, son contenu est identifié comme [contenu proposé](/help/communities/featured.md). La valeur par défaut est sélectionnée.
 
 ### Fonction de contenu en vedette {#featured-content-function}
 
@@ -180,23 +180,23 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 
 * **Autoriser l’épinglage**
 
-   Si cette option est sélectionnée, le forum permet d’épingler les réponses aux sujets au début de la liste des commentaires. La valeur par défaut est sélectionnée.
+  Si cette option est sélectionnée, le forum permet d’épingler les réponses aux sujets au début de la liste des commentaires. La valeur par défaut est sélectionnée.
 
 * **Autoriser les membres privilégiés**
 
-   Si cette option est sélectionnée, le forum permet uniquement aux membres privilégiés de publier des sujets en autorisant la sélection d’une [groupe de membres privilégiés](/help/communities/users.md#privileged-members-group). Si cette option n’est pas sélectionnée, tous les membres de la communauté sont autorisés à publier du contenu. La valeur par défaut est désélectionnée.
+  Si cette option est sélectionnée, le forum permet uniquement aux membres privilégiés de publier des sujets en autorisant la sélection d’une [groupe de membres privilégiés](/help/communities/users.md#privileged-members-group). Si cette option n’est pas sélectionnée, tous les membres de la communauté sont autorisés à publier du contenu. La valeur par défaut est désélectionnée.
 
-* **Autoriser les transferts de fichiers**
+* **Autoriser les chargements de fichiers**
 
-   Si cette option est sélectionnée, le forum offre aux membres la possibilité de télécharger des fichiers. La valeur par défaut est sélectionnée.
+  Si cette option est sélectionnée, le forum offre aux membres la possibilité de télécharger des fichiers. La valeur par défaut est sélectionnée.
 
 * **Autoriser les réponses à thème**
 
-   S’il n’est pas sélectionné, le forum autorise les commentaires sur un sujet, mais les réponses à ces commentaires ne sont pas autorisées. La valeur par défaut est sélectionnée.
+  S’il n’est pas sélectionné, le forum autorise les commentaires sur un sujet, mais les réponses à ces commentaires ne sont pas autorisées. La valeur par défaut est sélectionnée.
 
 * **Autoriser le contenu proposé**
 
-   Si cette option est sélectionnée, le contenu du composant est identifié comme [contenu proposé](/help/communities/featured.md). La valeur par défaut est sélectionnée.
+  Si cette option est sélectionnée, le contenu du composant est identifié comme [contenu proposé](/help/communities/featured.md). La valeur par défaut est sélectionnée.
 
 ### Fonction Groupes {#groups-function}
 
@@ -222,22 +222,22 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 
 * **Sélectionner les modèles de groupe**
 
-   Une liste déroulante qui permet de sélectionner un ou plusieurs modèles de groupe activés à partir desquels le futur créateur d’un nouveau groupe de communauté (dans l’environnement de publication) peut choisir.
+  Une liste déroulante qui permet de sélectionner un ou plusieurs modèles de groupe activés à partir desquels le futur créateur d’un nouveau groupe de communauté (dans l’environnement de publication) peut choisir.
 
 * **Autoriser les membres privilégiés**
 
-   Si cette option est sélectionnée, le forum permet uniquement aux membres privilégiés de publier des sujets en autorisant la sélection d’une [groupe de sécurité des membres privilégiés](/help/communities/users.md#privileged-members-group). Si cette option n’est pas sélectionnée, tous les membres de la communauté sont autorisés à publier du contenu. La valeur par défaut est désélectionnée.
+  Si cette option est sélectionnée, le forum permet uniquement aux membres privilégiés de publier des sujets en autorisant la sélection d’une [groupe de sécurité des membres privilégiés](/help/communities/users.md#privileged-members-group). Si cette option n’est pas sélectionnée, tous les membres de la communauté sont autorisés à publier du contenu. La valeur par défaut est désélectionnée.
 
 * **Autoriser la publication de la création**
 
-   Si cette option est sélectionnée, les membres autorisés de la communauté peuvent créer un groupe dans l’environnement de publication. Si cette option est désélectionnée, les nouveaux groupes (sous-communautés) ne peuvent être créés que dans l’environnement de création à partir de la console Groupes de sites de communautés .
+  Si cette option est sélectionnée, les membres autorisés de la communauté peuvent créer un groupe dans l’environnement de publication. Si cette option est désélectionnée, les nouveaux groupes (sous-communautés) ne peuvent être créés que dans l’environnement de création à partir de la console Groupes de sites de communautés .
 La valeur par défaut est sélectionnée.
 
 ### Fonction de conceptualisation {#ideation-function}
 
 La fonction d’idéation est une page avec une [Composant Ideation](/help/communities/ideation-feature.md).
 
-Une fois ajouté à un modèle, la boîte de dialogue suivante s’ouvre, qui spécifie le titre et les noms d’URL par défaut, ainsi que les paramètres d’affichage par défaut du modèle :
+Lorsqu’elle est ajoutée à un modèle, la boîte de dialogue suivante s’ouvre, qui spécifie le titre et les noms d’URL par défaut, ainsi que les paramètres d’affichage par défaut du modèle :
 
 ![ideation-function](assets/ideation-function.png)
 
@@ -245,27 +245,27 @@ Une fois ajouté à un modèle, la boîte de dialogue suivante s’ouvre, qui sp
 
 * **Autoriser les membres privilégiés**
 
-   Si cette option est sélectionnée, le forum permet uniquement aux membres privilégiés de publier des sujets en autorisant la sélection d’une [groupe de sécurité des membres privilégiés](/help/communities/users.md#privileged-members-group). Si cette option n’est pas sélectionnée, tous les membres de la communauté sont autorisés à publier du contenu. La valeur par défaut est désélectionnée.
+  Si cette option est sélectionnée, le forum permet uniquement aux membres privilégiés de publier des sujets en autorisant la sélection d’une [groupe de sécurité des membres privilégiés](/help/communities/users.md#privileged-members-group). Si cette option n’est pas sélectionnée, tous les membres de la communauté sont autorisés à publier du contenu. La valeur par défaut est désélectionnée.
 
-* **Autoriser les transferts de fichiers**
+* **Autoriser les chargements de fichiers**
 
-   Si cette option est sélectionnée, l’idée inclut la possibilité pour les membres de charger des fichiers. La valeur par défaut est sélectionnée.
+  Si cette option est sélectionnée, l’idée inclut la possibilité pour les membres de charger des fichiers. La valeur par défaut est sélectionnée.
 
 * **Autoriser les réponses à thème**
 
-   Si elle n’est pas sélectionnée, l’idée autorise les réponses (commentaires) à un sujet, mais les réponses aux commentaires ne sont pas autorisées. La valeur par défaut est sélectionnée.
+  Si elle n’est pas sélectionnée, l’idée autorise les réponses (commentaires) à un sujet, mais les réponses aux commentaires ne sont pas autorisées. La valeur par défaut est sélectionnée.
 
 * **Autoriser le contenu proposé**
 
-   Si cette option est sélectionnée, son contenu est identifié comme [contenu proposé](/help/communities/featured.md). La valeur par défaut est sélectionnée.
+  Si cette option est sélectionnée, son contenu est identifié comme [contenu proposé](/help/communities/featured.md). La valeur par défaut est sélectionnée.
 
 ### Fonction de classement {#leaderboard-function}
 
 La fonction de classement est une page comportant une seule [Composant de classement](/help/communities/enabling-leaderboard.md).
 
-**REMARQUE**: Le composant Tableau de classement nécessite une configuration supplémentaire. *after* un site communautaire est créé à partir d’un modèle communautaire qui inclut la fonction Leaderboard . Spécification de la variable [rules](/help/communities/enabling-leaderboard.md#rules-tab), qui dépendent de la configuration de [notation et badges](/help/communities/implementing-scoring.md) pour le site de la communauté.
+**REMARQUE**: le composant du classement nécessite une configuration supplémentaire. *after* un site communautaire est créé à partir d’un modèle communautaire qui inclut la fonction Leaderboard . Spécification de la variable [rules](/help/communities/enabling-leaderboard.md#rules-tab), qui dépendent de la configuration de [notation et badges](/help/communities/implementing-scoring.md) pour le site de la communauté.
 
-Une fois ajouté à un modèle, la boîte de dialogue suivante s’ouvre, qui spécifie le titre et les noms d’URL par défaut, ainsi que les paramètres d’affichage par défaut du modèle :
+Lorsqu’elle est ajoutée à un modèle, la boîte de dialogue suivante s’ouvre, qui spécifie le titre et les noms d’URL par défaut, ainsi que les paramètres d’affichage par défaut du modèle :
 
 ![lead-board-dialog](assets/leaderboard-dialog.png)
 
@@ -273,22 +273,22 @@ Une fois ajouté à un modèle, la boîte de dialogue suivante s’ouvre, qui sp
 
 * **Afficher le badge**
 
-   Si cette option est sélectionnée, une colonne pour les icônes de badge est incluse dans le tableau de classement.
+  Si cette option est sélectionnée, une colonne pour les icônes de badge est incluse dans le tableau de classement.
 La valeur par défaut est désélectionnée.
 
 * **Afficher le nom de badge**
 
-   Si cette option est sélectionnée, une colonne pour le nom du badge est incluse dans le tableau de classement.
+  Si cette option est sélectionnée, une colonne pour le nom du badge est incluse dans le tableau de classement.
 La valeur par défaut est désélectionnée.
 
 * **Afficher l’avatar**
 
-   Si cette option est sélectionnée, l’avatar du membre est inclus dans le tableau de classement, en regard du lien de son nom vers son profil de membre.
+  Si cette option est sélectionnée, l’avatar du membre est inclus dans le tableau de classement, en regard du lien de son nom vers son profil de membre.
 La valeur par défaut est désélectionnée.
 
 ### Fonction Page {#page-function}
 
-La fonction de page ajoute une page vierge au site de la communauté qu’elle est connectée aux fonctionnalités du site de la communauté : connexion, menu, notifications, messages, thèmes et marques. Le contenu est ajouté à la page à l’aide du [mode de création AEM standard](/help/sites-authoring/editing-content.md).
+La fonction de page ajoute une page vierge au site de la communauté qu’elle est connectée aux fonctionnalités du site de la communauté : connexion, menu, notifications, messages, thèmes et marques. Le contenu est ajouté à la page à l’aide de la fonction [mode de création AEM standard](/help/sites-authoring/editing-content.md).
 
 Lors de l’ajout à un modèle, la seule configuration est celle de la variable [Paramètres de titre et d’URL](#title-and-url-settings).
 
@@ -304,23 +304,23 @@ Lorsqu’elle est ajoutée à un modèle, la configuration autorise la restricti
 
 * **Autoriser l’épinglage**
 
-   Si cette option est sélectionnée, le forum permet d’épingler les réponses aux sujets au début de la liste des commentaires. La valeur par défaut est sélectionnée.
+  Si cette option est sélectionnée, le forum permet d’épingler les réponses aux sujets au début de la liste des commentaires. La valeur par défaut est sélectionnée.
 
 * **Autoriser les membres privilégiés**
 
-   Si cette option est sélectionnée, le forum Q&amp;R permet uniquement aux membres privilégiés de publier des questions en autorisant la sélection d’une [groupe de membres privilégiés](/help/communities/users.md#privileged-members-group). Si cette option n’est pas sélectionnée, tous les membres de la communauté sont autorisés à publier du contenu. La valeur par défaut est désélectionnée.
+  Si cette option est sélectionnée, le forum Q&amp;R permet uniquement aux membres privilégiés de publier des questions en autorisant la sélection d’une [groupe de membres privilégiés](/help/communities/users.md#privileged-members-group). Si cette option n’est pas sélectionnée, tous les membres de la communauté sont autorisés à publier du contenu. La valeur par défaut est désélectionnée.
 
-* **Autoriser les transferts de fichiers**
+* **Autoriser les chargements de fichiers**
 
-   Si cette option est sélectionnée, le forum Q&amp;R offre aux membres la possibilité de télécharger des fichiers. La valeur par défaut est sélectionnée.
+  Si cette option est sélectionnée, le forum Q&amp;R offre aux membres la possibilité de télécharger des fichiers. La valeur par défaut est sélectionnée.
 
 * **Autoriser les réponses à thème**
 
-   Si cette option n’est pas sélectionnée, le forum Q&amp;R permet d’envoyer des commentaires (réponses) à une question publiée, mais les réponses aux réponses ne sont pas autorisées. La valeur par défaut est sélectionnée.
+  Si cette option n’est pas sélectionnée, le forum Q&amp;R permet d’envoyer des commentaires (réponses) à une question publiée, mais les réponses aux réponses ne sont pas autorisées. La valeur par défaut est sélectionnée.
 
 * **Autoriser le contenu proposé**
 
-   Si cette option est sélectionnée, son contenu est identifié comme [contenu proposé](/help/communities/featured.md). La valeur par défaut est sélectionnée.
+  Si cette option est sélectionnée, son contenu est identifié comme [contenu proposé](/help/communities/featured.md). La valeur par défaut est sélectionnée.
 
 ## Créer une fonction de communauté {#create-community-function}
 
@@ -336,15 +336,15 @@ Dans le panneau Nom de la fonction de la communauté , un nom, une description e
 
 * **Nom de fonction de la communauté**
 
-   Nom de fonction utilisé pour l’affichage et le stockage.
+  Nom de fonction utilisé pour l’affichage et le stockage.
 
 * **Description des fonctions de la communauté**
 
-   Description de la fonction pour l’affichage.
+  Description de la fonction à afficher.
 
 * **Désactivé/activé**
 
-   Bouton de basculement contrôlant si la fonction est référencable.
+  Bouton de basculement contrôlant si la fonction est référencable.
 
 ### Plan directeur AEM {#aem-blueprint}
 
@@ -368,7 +368,7 @@ Dans le panneau Miniatures, une image peut être téléchargée pour s’affiche
 
 ![open-function](assets/open-function.png)
 
-Sélectionnez la `Open Community Function` pour passer en mode d’édition de création pour créer le contenu de la page et modifier la configuration du ou des composants de fonction.
+Sélectionnez la variable `Open Community Function` pour passer en mode d’édition de création pour créer le contenu de la page et modifier la configuration du ou des composants de fonction.
 
 ### Configuration des composants {#configuring-components}
 
@@ -384,4 +384,4 @@ Pour plus d’informations sur la configuration, voir [Composants Communities](/
 
 ![edit-function](assets/edit-function.png)
 
-Sélectionnez la `Edit Community Function` pour modifier les propriétés de la fonction à l’aide des mêmes panneaux que [création d’une fonction communautaire](#create-community-function), notamment l’activation ou la désactivation de la fonction .
+Sélectionnez la variable `Edit Community Function` pour modifier les propriétés de la fonction à l’aide des mêmes panneaux que [création d’une fonction communautaire](#create-community-function), notamment l’activation ou la désactivation de la fonction .

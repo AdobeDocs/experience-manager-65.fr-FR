@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 77da4917-47ce-4f2e-b062-73cee312a7ea
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 84%
 
 ---
 
@@ -18,21 +18,21 @@ Les zones cliquables permettent d’ajouter des zones de lien hypertexte qui fon
 
 1. Pour ouvrir l’**[!UICONTROL éditeur statique d’image]**, effectuez l’une des opérations suivantes :
 
-   * À l’aide des actions rapides, cliquez sur **[!UICONTROL Modifier]** qui s’affiche sur une ressource en mode **[!UICONTROL Carte]**. En mode Liste, sélectionnez la ressource et cliquez sur l’option **[!UICONTROL Modifier]** de la barre d’outils.
+   * À l’aide des actions rapides, cliquez sur **[!UICONTROL Modifier]** qui s’affiche sur une ressource en mode **[!UICONTROL Carte]**. Dans la vue Liste, sélectionnez la ressource et cliquez sur l’option **[!UICONTROL Modifier]** de la barre d’outils.
 
-      >[!NOTE]
-      >
-      >Les actions rapides ne sont pas disponibles en mode **[!UICONTROL Liste]**.
+     >[!NOTE]
+     >
+     >Les actions rapides ne sont pas disponibles en mode **[!UICONTROL Liste]**.
 
    * En mode **[!UICONTROL Carte]** ou **[!UICONTROL Liste]**, sélectionnez la ressource et cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils.
    * Cliquez sur **[!UICONTROL Modifier]** dans la page des ressources.
 
 1. Pour insérer une zone cliquable, cliquez sur **[!UICONTROL Lancer une Map]** ![zone cliquable](assets/do-not-localize/image-map-icon.png) dans la barre d’outils.
-1. Sélectionnez la forme de la zone cliquable. La zone réactive de la forme sélectionnée est placée sur la zone.
+1. Sélectionnez la forme de la zone cliquable. La zone réactive de la forme sélectionnée est placée sur l’image.
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. Cliquez sur la zone réactive et saisissez l’URL et le texte de remplacement. Dans la liste **[!UICONTROL Cible]**, spécifiez l’emplacement où vous souhaitez que la zone cliquable s’affiche (par exemple, le même onglet, un nouvel onglet ou un iFrame). Saisissez par exemple `https://www.adobe.com` comme URL, `Adobe website` comme texte de remplacement et spécifiez **[!UICONTROL Nouvel onglet]** dans la liste **[!UICONTROL Cible]** pour que la zone cliquable s’ouvre dans un nouvel onglet.
+1. Cliquez sur la zone réactive et saisissez l’URL et le texte de remplacement. Dans la **[!UICONTROL Cible]** , indiquez où afficher la zone cliquable, par exemple le même onglet, un nouvel onglet ou un iFrame. Saisissez par exemple `https://www.adobe.com` comme URL, `Adobe website` comme texte de remplacement et spécifiez **[!UICONTROL Nouvel onglet]** dans la liste **[!UICONTROL Cible]** pour que la zone cliquable s’ouvre dans un nouvel onglet.
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 

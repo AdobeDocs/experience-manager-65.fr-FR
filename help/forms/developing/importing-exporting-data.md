@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2774'
-ht-degree: 97%
+source-wordcount: '2771'
+ht-degree: 95%
 
 ---
 
@@ -123,7 +123,7 @@ Pour importer des données dans un formulaire PDF, vous devez référencer un fo
 
 **Référencer une source de données XML**
 
-Pour importer des données de formulaire, vous devez référencer une source de données valide. Pour importer des données dans un formulaire XML XFA créé dans Designer, vous devez utiliser une source de données XML XDP. Si vous référencez un formulaire Acrobat, vous devez utiliser une source de données XFDF. Pour chaque champ dans lequel vous souhaitez importer des données, une valeur doit être spécifiée. Si un élément situé dans la source de données XML ne correspond pas à un champ du formulaire, l’élément est ignoré.
+Pour importer des données de formulaire, vous devez référencer une source de données valide. Pour importer des données dans un formulaire XML XFA créé dans Designer, vous devez utiliser une source de données XML XDP. Si vous référencez un formulaire Acrobat, vous devez utiliser une source de données XFDF. Pour chaque champ dans lequel vous souhaitez importer des données, une valeur doit être spécifiée. Si un élément de la source de données XML ne correspond pas à un champ du formulaire, l’élément est ignoré.
 
 **Importer les données dans un formulaire PDF**
 
@@ -177,7 +177,7 @@ Pour importer des données de formulaire à l’aide de l’API Form Data Inte
    * L’objet `com.adobe.idp.Document` qui stocke le formulaire PDF.
    * L’objet `com.adobe.idp.Document` qui stocke les données de formulaire.
 
-   La méthode `importData` renvoie un objet `com.adobe.idp.Document` qui stocke un formulaire PDF contenant les données situées dans la source de données XML.
+   La variable `importData` renvoie une `com.adobe.idp.Document` qui stocke un formulaire de PDF contenant les données de la source de données XML.
 
 1. Enregistrez le formulaire au format PDF.
 
@@ -242,7 +242,7 @@ Pour importer des données de formulaire à l’aide de l’API Form Data Inte
    * L’objet `BLOB` qui stocke le formulaire PDF.
    * L’objet `BLOB` qui stocke les données de formulaire.
 
-   La méthode `importData` renvoie un objet `BLOB` qui stocke un formulaire PDF contenant les données situées dans la source de données XML.
+   La variable `importData` renvoie une `BLOB` qui stocke un formulaire de PDF contenant les données de la source de données XML.
 
 1. Enregistrez le formulaire au format PDF.
 

@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6948'
+source-wordcount: '6946'
 ht-degree: 6%
 
 ---
@@ -291,7 +291,7 @@ Une première version du contrat juridique.
 
 ### Structure et format de contenu actuel {#current-content-structure-and-format}
 
-Documentation de l’architecture et du format du contenu actuel. Il sera utilisé pour générer la future architecture de contenu. Il sera également utilisé pour le concept de migration.
+Documentation de l’architecture et du format du contenu actuel. Il est utilisé pour générer la future architecture de contenu. Il sera également utilisé pour le concept de migration.
 
 ### Stratégie de sauvegarde et de restauration du client {#customer-backup-and-restore-policy}
 
@@ -668,7 +668,7 @@ Les détails de l’ancien système doivent être collectés afin que vous sachi
 
 ### Liste des outils de développement à utiliser {#list-of-development-tools-to-be-used}
 
-Présentation des outils qui seront utilisés dans la mise en oeuvre. Les outils doivent inclure :
+Présentation des outils utilisés dans la mise en oeuvre. Les outils doivent inclure :
 
 * outils de documentation
 * outils de suivi des problèmes
@@ -1236,7 +1236,7 @@ La Spécification technique couvre (entre autres informations) :
 
 * interfaces
 * configurations
-* API
+* API 
 * les services qui prennent en charge les exigences de la solution ;
 
 ### Spécification du modèle {#template-specification}

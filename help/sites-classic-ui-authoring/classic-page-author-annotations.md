@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: d60e9601-d15b-4378-a33e-e90961f63195
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 46%
+source-wordcount: '761'
+ht-degree: 42%
 
 ---
 
@@ -26,7 +26,7 @@ Une annotation place une note autocollante colorée sur la page. L’annotation 
 
 >[!NOTE]
 >
->Les annotations créées dans l’IU classique s’affichent également dans l’UI optimisée pour les écrans tactiles. Toutefois, les esquisses sont spécifiques à l’interface utilisateur et ne s’affichent que dans l’interface dans laquelle elles ont été créées.
+>Les annotations créées dans l’IU classique s’affichent dans l’IU optimisée pour les écrans tactiles. Toutefois, les schémas sont spécifiques à l’interface utilisateur et ne s’affichent que dans l’interface utilisateur dans laquelle ils ont été créés.
 
 >[!CAUTION]
 >

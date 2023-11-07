@@ -9,9 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1047'
 ht-degree: 32%
 
 ---
@@ -28,7 +28,7 @@ Ensuite, configurez WebLogic pour qu’il utilise les fichiers de stockage des c
 
 ## Création d’informations d’identification SSL pour WebLogic Server {#creating-an-ssl-credential-for-use-on-weblogic-server}
 
-La commande keytool se trouve généralement dans le répertoire Java jre/bin et doit comporter plusieurs options et valeurs d’option, qui sont répertoriées dans le tableau suivant.
+La commande keytool se trouve généralement dans le répertoire Java jre/bin et doit inclure plusieurs options et valeurs d’option, qui sont répertoriées dans le tableau suivant.
 
 <table>
  <thead>
@@ -77,8 +77,8 @@ La commande keytool se trouve généralement dans le répertoire Java jre/bin et
    <td><p>Mot de passe qui protège le contenu du fichier de stockage des clés. </p></td>
    <td>
     <ul>
-     <li><p>Fichier de stockage de clés d’identité personnalisée : Le mot de passe du KeyStore doit correspondre au mot de passe des informations d’identification SSL spécifié pour le composant Trust Store d’Administration Console.</p></li>
-     <li><p>Fichier de stockage de clés d’approbation personnalisée : Utilisez le même mot de passe que celui utilisé pour le fichier de stockage des clés d’identité personnalisée.</p></li>
+     <li><p>Fichier de stockage de clés d’identité personnalisée : le mot de passe du fichier de stockage de clés doit correspondre au mot de passe des informations d’identification SSL spécifié pour le composant Trust Store d’Administration Console.</p></li>
+     <li><p>Fichier de stockage de clés d’approbation personnalisée : utilisez le même mot de passe que celui utilisé pour le fichier de stockage de clés d’identité personnalisée.</p></li>
     </ul></td>
   </tr>
   <tr>
@@ -88,7 +88,7 @@ La commande keytool se trouve généralement dans le répertoire Java jre/bin et
   </tr>
   <tr>
    <td><p>-dname</p></td>
-   <td><p>Nom unique qui identifie la personne propriétaire du fichier de stockage des clés.</p></td>
+   <td><p>Nom unique qui identifie la personne propriétaire du KeyStore.</p></td>
    <td><p><code>"CN=</code><code>[User name]</code><code>,OU=</code><code>[Group Name]</code><code>, O=</code><code>[Company Name]</code><code>, L=</code><code>[City Name]</code><code>, S=</code><code>[State or province]</code><code>, C=</code><code>[Country Code]</code><code>"</code></p>
     <ul>
      <li><p><code><i>[User name]</i></code> est l’identification de l’utilisateur propriétaire du fichier de stockage des clés.</p></li>
@@ -194,7 +194,7 @@ Configurez WebLogic pour qu’il utilise les fichiers de stockage des clés d’
    **Expression de transmission Trust Keystore personnalisée**: *mypassword* (mot de passe de clé d’approbation personnalisée)
 
 1. Sous Général, dans Configuration, sélectionnez **SSL**.
-1. Par défaut, Keystore est sélectionné pour Identity et Trust Locations (Emplacements d’identité et d’approbation). Si ce n’est pas le cas, remplacez-le par KeyStore.
+1. Par défaut, le magasin de clés est sélectionné pour les emplacements d’identité et d’approbation. Si ce n’est pas le cas, remplacez-le par KeyStore.
 1. Sous Identity, spécifiez les valeurs suivantes :
 
    **Alias de clé privée**: ads-credentials

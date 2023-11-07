@@ -11,10 +11,10 @@ discoiquuid: 582b0fe8-a92b-4a1d-b859-57f13f53d0d8
 docset: aem65
 feature: Mobile Forms
 exl-id: 4c84cfd1-50a4-416f-b4a5-7f2f4c7f10af
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 54%
+source-wordcount: '366'
+ht-degree: 51%
 
 ---
 
@@ -32,13 +32,13 @@ Les deux images qui suivent montrent la différence entre les styles par défaut
 
 1. **Sélection d’un profil pour ajouter des styles personnalisés**
 
-   Accédez à l’interface de CRX DE à lʼadresse suivante :**https://&lt;server>:&lt;port>/crx/de** et créez un profil ou sélectionnez un profil existant. Pour savoir comment créer un profil, consultez la section [Créer un profil](/help/forms/using/custom-profile.md).
+   Accédez à l’interface de CRX DE à lʼadresse suivante :**https://&lt;server>:&lt;port>/crx/de** et créez un profil ou sélectionnez un profil existant. Pour savoir comment créer un profil, voir [Création d’un profil](/help/forms/using/custom-profile.md)
 
 1. **Création d’une feuille de style CSS pour le style des formulaires HTML5**
 
-   Accédez au dossier dans lequel vous avez créé le rendu de profil et créez un fichier de feuille de style CSS. Les étapes à suivre sont les suivantes :
+   Accédez au dossier dans lequel vous avez créé le rendu de profil et créez un fichier de feuille de style CSS. Les étapes à suivre sont :
 
-   1. Cliquez avec le bouton droit sur le dossier et sélectionnez **create** > **créer un fichier** depuis le menu
+   1. Cliquez avec le bouton droit sur le dossier et sélectionnez **create** > **créer un fichier** à partir du menu
 
    1. Dans la boîte de dialogue de création de fichier, saisissez le nom de la feuille de style. Veillez à utiliser l’extension .css (par exemple, stylesheet.css).
    1. Dans le volet du navigateur, ouvrez le fichier CSS que vous avez créé.

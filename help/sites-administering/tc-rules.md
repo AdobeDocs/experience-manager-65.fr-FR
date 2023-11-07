@@ -4,10 +4,10 @@ description: Découvrez comment identifier le contenu à traduire dans Adobe Exp
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1153'
-ht-degree: 93%
+source-wordcount: '1152'
+ht-degree: 91%
 
 ---
 
@@ -160,7 +160,7 @@ De là, vous pouvez **Ajouter du contexte**. Vous pouvez ainsi ajouter un chemin
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
-Vous devez ensuite sélectionner votre contexte et cliquer sur **Modifier**. Cette action ouvre l’éditeur de règles de traduction.
+Vous devez ensuite sélectionner votre contexte et cliquer sur **Modifier**. Cela ouvre l’éditeur de règles de traduction.
 
 ![chlimage_1-58](assets/chlimage_1-58.jpeg)
 
@@ -192,7 +192,7 @@ Dans l’interface utilisateur, vous pouvez cocher/décocher **Hériter** dans l
 
 Dans l’interface utilisateur, vous pouvez cocher/décocher **Traduire** dans l’onglet **Propriétés**.
 
-**updateDestinationLanguage** Cet attribut est utilisé pour les propriétés qui n’ont pas de texte mais qui comportent des codes de langue (par exemple, jcr:language). L’utilisateur ne traduit pas le texte, mais le paramètre régional de langue de la source vers la cible. Ces propriétés ne sont pas envoyées pour traduction.
+**updateDestinationLanguage** Cet attribut est utilisé pour les propriétés qui n’ont pas de texte mais des codes de langue, par exemple jcr:language. L’utilisateur ne traduit pas le texte, mais le paramètre régional de langue de la source vers la cible. Ces propriétés ne sont pas envoyées pour traduction.
 
 Dans l’interface utilisateur, vous pouvez cocher/décocher **Traduire** dans l’onglet **Propriétés**, mais pour les propriétés spécifiques ayant comme valeur des codes de langue.
 

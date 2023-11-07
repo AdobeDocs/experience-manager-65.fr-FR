@@ -1,15 +1,13 @@
 ---
 title: Installer une instance autonome personnalisée
-seo-title: Custom Standalone Install
 description: Découvrez les options disponibles lors de l’installation d’une instance AEM autonome.
-seo-description: Learn about the options available when installing a standalone AEM instance.
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 55%
+source-wordcount: '1618'
+ht-degree: 53%
 
 ---
 
@@ -45,7 +43,7 @@ Les différentes règles suivantes s’appliquent lorsque vous renommez le fichi
 
 ### Considérations sur Java 11 {#java-considerations}
 
-Si vous exécutez Oracle Java 11 (ou en général les versions de Java ultérieures à la version 8), des modifications supplémentaires doivent être ajoutées à votre ligne de commande lors du démarrage d’AEM.
+Si vous exécutez Oracle Java 11 (ou généralement des versions de Java plus récentes que 8), des commutateurs supplémentaires doivent être ajoutés à votre ligne de commande lors du démarrage de l’AEM.
 
 * Les éléments suivants : `-add-opens` des commutateurs doivent être ajoutés pour empêcher les messages d’avertissement relatifs à l’accès aux réflexions dans la variable `stdout.log`
 
@@ -143,7 +141,7 @@ Pour désinstaller le service, cliquez sur **Arrêter** dans le panneau de comma
 
 ## Redéfinition de l’emplacement du répertoire de travail temporaire {#redefining-the-location-of-the-temporary-work-directory}
 
-L’emplacement par défaut du dossier temporaire de la machine java est `/tmp`. AEM utilise également ce dossier, par exemple lors de la création de packages.
+L’emplacement par défaut du dossier temporaire de la machine java est `/tmp`. AEM utilise également ce dossier, par exemple, lors de la création de modules.
 
 Si vous souhaitez modifier l’emplacement du dossier temporaire (par exemple si vous avez besoin d’un répertoire avec plus d’espace libre), définissez un chemin * `<new-tmp-path>` * en ajoutant le paramètre JVM :
 

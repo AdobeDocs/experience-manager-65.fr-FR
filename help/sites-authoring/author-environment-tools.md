@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 8737c989927b1be148d440aa1944cf4cfb216b69
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2226'
-ht-degree: 56%
+ht-degree: 59%
 
 ---
 
@@ -93,7 +93,7 @@ L’apparence et la gestion réelles de l’appareil dépendent du type d’appa
   Dans la barre d’outils supérieure de **Composants** , vous pouvez effectuer les opérations suivantes :
 
    * Filtrer les composants par nom
-   * Limitez l’affichage à un groupe spécifique à l’aide de la liste déroulante.
+   * Restreindre l’affichage à un groupe spécifique à l’aide de la liste déroulante.
 
   Pour obtenir une description plus détaillée du composant, vous pouvez cliquer ou appuyer sur l’icône d’informations en regard du composant dans le navigateur **Composants** (le cas échéant). Par exemple, pour le **conteneur de mise en page** :
 
@@ -144,7 +144,7 @@ L’apparence et la gestion réelles de l’appareil dépendent du type d’appa
 
 >[!NOTE]
 >
->Un appareil mobile est détecté lorsque la largeur est inférieure à 1 024 px ; c’est-à-dire également sur une petite fenêtre de bureau.
+>Un appareil mobile est détecté si la largeur est inférieure à 1 024 px. C’est également le cas pour les petites fenêtres sur les ordinateurs de bureau.
 
 * **Appareil mobile tel qu’un iPad**
 
@@ -180,7 +180,7 @@ Lorsque vous ouvrez le panneau latéral, il s’ouvre en glissant depuis le côt
 
 Étant donné qu’une page est souvent composée de nombreux composants du même type, l’arborescence des composants affiche un texte descriptif (en gris) après le nom du type de composant (en noir). Le texte descriptif provient des propriétés courantes du composant, telles que le titre ou le texte.
 
-Les types de composants sont affichés dans la langue de l’utilisateur, tandis que le texte de description du composant provient de la langue de la page.
+Les types de composants sont affichés dans la langue de l’utilisateur ou de l’utilisatrice, tandis que le texte descriptif du composant dépend de la langue de la page.
 
 Cliquez sur le chevron en regard d’un composant pour réduire ou développer ce niveau.
 
@@ -236,7 +236,7 @@ Pour plus d’informations, sélectionnez le type de référence approprié. Dan
 
 * **Liens entrants** fournit une liste des pages qui font référence à la page, ainsi qu’un accès direct à **Modifier** l’une de ces pages lorsque vous sélectionnez un lien spécifique.
 
-   * Cela peut uniquement afficher des liens statiques, et non des liens générés dynamiquement, par exemple à partir du composant Liste .
+   * Cela peut uniquement afficher des liens statiques, et non des liens générés dynamiquement, par exemple, à partir du composant Liste .
 
 * Les instances du contenu emprunté et prêté à l’aide du composant **Référence** vous permettent de naviguer jusqu’à la page de référence.
 
@@ -304,7 +304,7 @@ Plusieurs modes sont possibles lors de la modification d’une page, ce qui perm
 
 * [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) - vous permet d’afficher l’état d’une page à un moment donné.
 * [Statut de la Live Copy](/help/sites-authoring/editing-content.md#live-copy-status) : donne un aperçu rapide du statut de la Live Copy et des composants qui sont ou non hérités.
-* [Aperçu](/help/sites-authoring/editing-content.md#previewing-pages) - utilisé pour afficher la page telle qu’elle est affichée dans l’environnement de publication ou pour naviguer à l’aide des liens du contenu.
+* [Aperçu](/help/sites-authoring/editing-content.md#previewing-pages) : permet d’afficher la page comme elle est présentée dans l’environnement de publication ou de naviguer au moyen des liens figurant dans le contenu.
 
 * [Annoter](/help/sites-authoring/annotations.md) : permet d’ajouter ou d’afficher des annotations sur la page.
 
@@ -316,13 +316,13 @@ Vous pouvez y accéder à l’aide des icônes situées dans le coin supérieur 
 >
 >* Selon les caractéristiques de la page, certains modes peuvent ne pas être disponibles.
 >* L’accès à certains modes nécessite les autorisations/privilèges appropriés.
->* Le mode Développeur n’est pas disponible sur les appareils mobiles en raison de restrictions d’espace.
+>* Le mode de développement n’est pas disponible sur les appareils mobiles en raison de restrictions d’espace.
 >* Il existe une [raccourci clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) ( `Ctrl-Shift-M`) pour basculer entre les **Aperçu** et le mode actuellement sélectionné (par exemple : **Modifier**, et **Disposition**).
 >
 
 ## Sélection du chemin d’accès {#path-selection}
 
-Lors de la création, il est souvent nécessaire de sélectionner une autre ressource, par exemple lors de la définition d’un lien vers une autre page ou ressource ou de la sélection d’une image. Pour sélectionner facilement un chemin d’accès, [Champs de chemin d’accès](/help/sites-authoring/author-environment-tools.md#path-fields) permet la saisie automatique et l’[explorateur de chemins d’accès](/help/sites-authoring/author-environment-tools.md#path-browser) permet une sélection plus robuste.
+Lors de la création, il est souvent nécessaire de sélectionner une autre ressource, par exemple lors de la définition d’un lien vers une autre page ou ressource ou de la sélection d’une image. Pour sélectionner facilement un chemin d’accès, les [Champs de chemin d’accès](/help/sites-authoring/author-environment-tools.md#path-fields) permettent la saisie automatique et l’[explorateur de chemins d’accès](/help/sites-authoring/author-environment-tools.md#path-browser) permet une sélection plus robuste.
 
 ### Champs de chemin d’accès {#path-fields}
 

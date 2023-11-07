@@ -3,10 +3,10 @@ title: Actions et fonctionnalités des processus AEM sur OSGi et des processus A
 description: Actions et fonctionnalités des processus AEM sur OSGi et des processus AEM Forms JEE
 contentOwner: khsingh
 exl-id: 505b8988-b2b3-4222-b3cb-9b3c6259fdd2
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 65%
+source-wordcount: '925'
+ht-degree: 63%
 
 ---
 
@@ -328,7 +328,7 @@ Les processus d’AEM basés sur l’utilisation de Forms on OSGi et les process
    <td>Pris en charge<br /> </td>
   </tr>
   <tr>
-   <td>Modèles de recherche</td>
+   <td>Rechercher des modèles</td>
    <td>Pas de prise en charge</td>
    <td>Pris en charge<br /> </td>
   </tr>
@@ -396,7 +396,7 @@ Les processus d’AEM basés sur l’utilisation de Forms on OSGi et les process
 
 ## Différences entre les fonctionnalités de la boîte de réception AEM et l’application AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Deux des moyens principaux de lancer un workflow basé sur l’utilisation de Forms sont la [boîte de réception AEM](../../forms/using/manage-applications-inbox.md) et l’application AEM Forms. Les fonctionnalités de la boîte de réception AEM et de l’application AEM Forms sont cependant différentes. La boîte de réception AEM ne fonctionne qu’avec des [workflows basés sur l’utilisation de Forms](../../forms/using/aem-forms-workflow.md) tandis que l’application AEM Forms fonctionne à la fois avec les workflows basés sur l’utilisation de Forms ainsi que la gestion des workflows.
+Deux des moyens principaux de lancer un workflow basé sur l’utilisation de Forms sont la [boîte de réception AEM](../../forms/using/manage-applications-inbox.md) et l’application AEM Forms. Les fonctionnalités de la boîte de réception AEM et de l’application AEM Forms sont cependant différentes. AEM boîte de réception fonctionne uniquement avec [Workflows basés sur l’utilisation de Forms](../../forms/using/aem-forms-workflow.md) pendant que l’application AEM Forms fonctionne avec les processus Forms et la gestion des processus.
 
 La table suivante répertorie les fonctionnalités de la boîte de réception AEM et de l’application AEM Forms :
 

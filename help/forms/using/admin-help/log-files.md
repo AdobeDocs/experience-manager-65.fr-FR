@@ -10,30 +10,30 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: cf140483-470f-4bff-8870-304207508aab
 exl-id: 23a65be4-3277-4c73-9189-a9b4d7be73cd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '119'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '115'
+ht-degree: 26%
 
 ---
 
 # Fichiers journaux {#log-files}
 
-Les événements, comme les erreurs d’exécution ou de démarrage, sont enregistrés dans les fichiers journaux du serveur d’applications. Ces fichiers peuvent vous aider à diagnostiquer les éventuels problèmes rencontrés lors du déploiement sur le serveur d’applications. Vous pouvez les ouvrir dans un éditeur de texte.
+Les événements tels que les erreurs d’exécution ou de démarrage sont enregistrés dans les fichiers journaux du serveur d’applications. Si vous rencontrez des problèmes lors du déploiement sur le serveur d’applications, vous pouvez utiliser les fichiers journaux pour vous aider à résoudre le problème. Vous pouvez ouvrir les fichiers journaux à l’aide de n’importe quel éditeur de texte.
 
-(JBoss) Les fichiers journaux suivants se trouvent dans le répertoire `[appserver root]/server/'server'/log` :
+(JBoss) Les fichiers journaux suivants se trouvent dans la variable `[appserver root]/server/'server'/log` directory:
 
 * boot.log
 * server.log.*[aaaa-mm-jj]*
 * server.log
 
-(WebLogic) Les fichiers journaux du domaine sont dans le répertoire `[appserverdomain]` et ceux du serveur se trouvent dans le répertoire `[appserverdomain]/servers/[appserver name]/logs` :
+(WebLogic) Les fichiers journaux de domaine se trouvent dans la variable `[appserverdomain]` et les fichiers journaux du serveur se trouvent dans la variable `[appserverdomain]/servers/[appserver name]/logs` directory:
 
 * `access.log`
 * `[appserver name].log`
 * `[appserver name].out.[incremental number]`
 
-(WebSphere) Les fichiers journaux suivants se trouvent dans le répertoire `[appserver root]/profiles/default/logs/[appserver name]` :
+(WebSphere) Les fichiers journaux suivants se trouvent dans la variable `[appserver root]/profiles/default/logs/[appserver name]` directory:
 
 * SystemErr.log
 * SystemOut.log

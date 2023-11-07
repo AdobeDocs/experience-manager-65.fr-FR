@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: User, Architect, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
-source-git-commit: 399ae241593b5cc14ef1c2efd090f0d1fae7c2df
-workflow-type: ht
-source-wordcount: '0'
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1924'
 ht-degree: 100%
 
 ---
@@ -17,9 +17,9 @@ Possible topics to cover in this article are below.
 
 * Compile a list of enhancements done in the last ~1 year.
 * Showcase a few prominent use cases (search?) in a screencast.
-* Top-level actions supported, such as clickable UI elements, keyboard shortcuts, popup dialogs, etc.
+* Top-level actions supported, such as clickable UI elements, keyboard shortcuts, popup dialogs, and so on.
 * List all UIs that are keyboard navigable.
-* Unified list of the product tasks supported, such as, search assets, download assets, add or editing metadata, use DM Viewers, etc.
+* Unified list of the product tasks supported, such as, search assets, download assets, add or editing metadata, use DM Viewers, and so on.
 * Do we need to add support matrix of user tasks with browser and screen reader combinations. Everything may not work in all browsers and/or using all screen readers.
 * Any exceptions that users should be aware of. It may help to call out (it may be done in ACR) what tasks are NOT supported.
 * CTAs – what's next and more info from AEM team:
@@ -52,7 +52,7 @@ Les utilisateurs en situation de handicap font fréquemment appel au matériel e
 * Lecteurs d’écran et loupe d’écran.
 * Logiciel de reconnaissance vocale.
 * Utilisation du clavier – navigation et raccourcis.
-* Matériel d’assistance, y compris commandes de commutation, affichages en braille actualisables et autres périphériques d’entrée sur ordinateur.
+* Matériel d’assistance, y compris commandes de commutation, affichages en braille actualisables et autres appareils d’entrée sur ordinateur.
 * Outils d’agrandissement de l’interface utilisateur.
 
 ## Cas d’utilisation d’[!DNL Experience Manager Assets] accessibles  {#accessible-assets-use-cases}
@@ -140,7 +140,7 @@ Lors de la navigation dans le référentiel de ressources, les fonctionnalités 
 
 * Le lecteur d’écran indique des alternatives textuelles qui décrivent l’objectif ou la fonctionnalité des icônes et non pas leur nom.
 * Les utilisateurs peuvent accéder aux options de l’interface utilisateur interactive et les sélectionner dans la liste Références des ressources à l’aide des touches du clavier.
-* Les éléments figurant dans chaque ligne en mode Liste sont annoncés comme éléments de la même ligne par les lecteurs d’écran.
+* Les éléments figurant dans chaque ligne dans la vue Liste sont annoncés comme éléments de la même ligne par les lecteurs d’écran.
 * Lorsque vous naviguez à l’aide de la touche `Tab`, la sélection peut passer à l’option de fermeture dans l’aperçu de version.
 * Lorsque vous utilisez le clavier pour naviguer, les options exploitables mises en surbrillance dans l’interface utilisateur s’affichent de manière plus visible par un contraste amélioré. L’utilisateur peut ainsi identifier plus facilement la zone sélectionnée.
 * Utiliser la touche `Esc` pour supprimer les icônes d’action rapide du mode Miniature ne supprime pas la sélection via le clavier du dernier élément sélectionné.
@@ -228,4 +228,3 @@ Pour rédiger des commentaires, poser des questions et demander des amélioratio
 >* [Notes de mise à jour des améliorations apportées à chaque version de service pack](/help/release-notes/release-notes.md).
 >* Conseils en matière d’accessibilité d’[[!DNL Adobe Experience Manager] ](/help/managing/web-accessibility.md)
 >* [Rapports de conformité (ACR) et liste VPAT (Modèle volontaire d’accessibilité des produits) pour les solutions d’Adobe](https://www.adobe.com/accessibility/compliance.html).
-

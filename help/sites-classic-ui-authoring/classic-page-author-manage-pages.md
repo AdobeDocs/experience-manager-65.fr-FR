@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 98%
+source-wordcount: '1892'
+ht-degree: 87%
 
 ---
 
@@ -72,7 +72,7 @@ Cette structure est visible à partir de la console Sites web, que vous pouvez u
 
 ### Conventions de dénomination des pages {#page-naming-conventions}
 
-Lors de la création d’une page, il y a deux champs clés :
+Lors de la création d’une page, il existe deux champs clés :
 
 * **[Titre](#title)** :
 
@@ -84,7 +84,7 @@ Lors de la création d’une page, il y a deux champs clés :
    * Il est utilisé pour générer l’URI.
    * L’entrée utilisateur pour ce champ est facultative. S’il n’est pas spécifié, le nom est dérivé du titre.
 
-Lors de la création d’une page, AEM [valide le nom de la page en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
+Lors de la création d’une page AEM [valide le nom de la page en fonction des conventions ;](/help/sites-developing/naming-conventions.md) imposé par AEM et JCR.
 
 La mise en œuvre et la liste des caractères autorisés diffère légèrement en fonction de l’IU (ils sont plus étendus pour l’IU activée pour les écrans tactiles), mais les caractères autorisés minimum sont les suivants :
 
@@ -98,7 +98,7 @@ N’utilisez que ces caractères si vous voulez vous assurer qu’ils seront acc
 
 #### Titre {#title}
 
-Si vous n’indiquez qu’un **titre** de page lors de la création d’une page, AEM utilise le **nom** de la page de cette chaîne et [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR. Dans les deux interfaces utilisateur, un champ **Titre** contenant des caractères non valides sera accepté, mais les caractères non valides seront remplacés pour le nom dérivé. Par exemple :
+Si vous n’indiquez qu’une page **Titre** lors de la création d’une page, AEM délivre la page **Nom** de cette chaîne et [valider le nom en fonction des conventions ;](/help/sites-developing/naming-conventions.md) imposé par AEM et JCR. Dans les deux interfaces utilisateur, un champ **Titre** contenant des caractères non valides sera accepté, mais les caractères non valides seront remplacés pour le nom dérivé. Par exemple :
 
 | Titre | Nom dérivé |
 |---|---|
@@ -107,7 +107,7 @@ Si vous n’indiquez qu’un **titre** de page lors de la création d’une page
 
 #### Nom {#name}
 
-Si vous indiquez un **nom** de page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
+Si vous fournissez une page **Nom** lors de la création d’une page, AEM [valide le nom en fonction des conventions ;](/help/sites-developing/naming-conventions.md) imposé par AEM et JCR.
 
 Dans l’IU classique, vous **ne pouvez pas entrer de caractères non valides** dans le champ **Nom**.
 
@@ -122,7 +122,7 @@ Dans l’IU classique, vous **ne pouvez pas entrer de caractères non valides** 
 
 ### Modèles {#templates}
 
-Dans AEM, un modèle spécifie un type de page spécialisé. Un modèle sera utilisé comme base pour toute nouvelle page créée.
+Dans AEM, un modèle spécifie un type de page spécialisé. Un modèle est utilisé comme base pour toute nouvelle page créée.
 
 Le modèle définit la structure d’une page, y compris une miniature et d’autres propriétés. Par exemple, vous pouvez avoir des modèles distincts pour les pages de produits, les plans de site et les coordonnées. Les modèles sont constitués de [composants](#components).
 
@@ -155,7 +155,7 @@ Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du conten
 
 Avant de pouvoir commencer à créer du contenu, vous devez créer une page, à moins que toutes les pages n’aient été créées pour vous à l’avance :
 
-1. Dans la console **Sites web**, sélectionnez le niveau auquel vous souhaitez créer une nouvelle page.
+1. Dans la **Sites web** , sélectionnez le niveau auquel vous souhaitez créer une page.
 
    Dans l’exemple suivant, vous créez une page au niveau **Produits**, illustré dans le volet de gauche ; le volet de droite montre les pages qui existent déjà au niveau **Produits**.
 
@@ -170,7 +170,7 @@ Avant de pouvoir commencer à créer du contenu, vous devez créer une page, à 
    * Fournissez un **Titre**, celui-ci est affiché pour l’utilisateur ou l’utilisatrice.
    * Fournissez un **Nom**, celui-ci est utilisé pour générer l’URI. S’il n’est pas spécifié, le nom est dérivé du titre.
 
-      * Si vous indiquez le **nom** d’une page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
+      * Si vous fournissez une page **Nom** lors de la création d’une page, AEM [valide le nom en fonction des conventions ;](/help/sites-developing/naming-conventions.md) imposé par AEM et JCR.
       * Dans l’IU classique, vous **ne pouvez pas entrer de caractères non valides** dans le champ **Nom**.
 
    * Cliquez sur le modèle à utiliser pour créer la nouvelle page.
@@ -181,7 +181,7 @@ Avant de pouvoir commencer à créer du contenu, vous devez créer une page, à 
    >
    >Voir [Conventions de dénomination de page](#page-naming-conventions).
 
-   Les informations minimales requises pour créer une nouvelle page sont les suivantes : le **Titre** et le modèle requis.
+   Les informations minimales requises pour créer une page sont les suivantes : **Titre** et le modèle requis.
 
    ![screen_shot_2012-02-15at114845am](assets/screen_shot_2012-02-15at114845am.png)
 
@@ -191,11 +191,11 @@ Avant de pouvoir commencer à créer du contenu, vous devez créer une page, à 
 
 1. Cliquez sur **Créer** pour créer la page. Vous revenez à la console **Sites web** où vous pouvez voir une entrée pour la nouvelle page.
 
-   La console fournit des informations sur la page qui sont mises à jour selon les besoins (par exemple, quand et par qui elle a été modifiée pour la dernière fois).
+   La console fournit des informations sur la page (par exemple, quand elle a été modifiée pour la dernière fois et par qui) qui est mise à jour selon les besoins.
 
    >[!NOTE]
    >
-   >Vous pouvez également créer une page lorsque vous modifiez une page existante. Utilisez l’option **Créer une page enfant** de l’onglet **Page** du sidekick pour créer une page directement sous la page en cours de modification.
+   >Vous pouvez également créer une page lorsque vous modifiez une page existante. Utilisation **Créer une page enfant** de la **Page** de sidekick crée une page directement sous la page en cours de modification.
 
 ### Ouverture d’une page pour la modifier {#opening-a-page-for-editing}
 
@@ -235,7 +235,7 @@ Lors de la copie, vous pouvez copier :
 
    >[!NOTE]
    >
-   >Utilisez l’option **Copier la page** dans l’onglet **Page** du sidekick. Cela ouvre une boîte de dialogue dans laquelle vous pouvez spécifier la destination, etc.
+   >Utilisez l’option **Copier la page** dans l’onglet **Page** du sidekick. Une boîte de dialogue s’ouvre, dans laquelle vous pouvez spécifier la destination, etc.
 
 ### Déplacer ou modifier le du nom d’une page {#moving-or-renaming-page}
 
@@ -331,7 +331,7 @@ Vous pouvez [verrouillage/déverrouillage d’une page](/help/sites-classic-ui-a
 
 1. Ouvrez la console **Sites web** et accédez à l’emplacement requis.
 1. Dans le menu **Nouveau...** (cliquez sur la flèche en regard de l’option **Nouveau...**), sélectionnez **Nouveau dossier...**.
-1. La boîte de dialogue **Créer un dossier** s’affiche. Vous pouvez saisir un **nom** et un **titre** :
+1. La variable **Créer un dossier** s’ouvre. Vous pouvez y entrer le **nom** et le **titre** :
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 

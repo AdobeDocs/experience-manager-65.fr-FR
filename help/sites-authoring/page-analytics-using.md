@@ -8,10 +8,10 @@ topic-tags: site-features
 docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 89%
+source-wordcount: '445'
+ht-degree: 84%
 
 ---
 
@@ -26,7 +26,7 @@ Utilisez les données d’analyse de page pour évaluer l’efficacité du conte
 Les données d’analyse de page s’affichent dans la [vue liste](/help/sites-authoring/basic-handling.md#list-view) de la console Sites. Lorsque les pages sont affichées au format liste, les colonnes suivantes sont disponibles par défaut :
 
 * Pages vues
-* Visiteurs et visiteuses uniques
+* Visiteurs uniques
 * Temps sur la page
 
 Chaque colonne indique une valeur pour la période de création de rapports actuelle et indique également si la valeur a augmenté ou diminué depuis la période de création de rapports précédente. Les données affichées sont mises à jour toutes les 12 heures.
@@ -35,10 +35,10 @@ Chaque colonne indique une valeur pour la période de création de rapports actu
 >
 >Pour modifier la période de mise à jour, [configurez l’intervalle d’importation](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Ouvrez la console **Sites**, par exemple, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content).
+1. Ouvrez le **Sites** console, par exemple : [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
 1. À l’extrême droite de la barre d’outils (coin supérieur droit), cliquez ou appuyez sur l’icône à sélectionner **Mode Liste** (l’icône affichée dépend de la variable [vue actuelle](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. Encore une fois, à l’extrême droite de la barre d’outils (coin supérieur droit), cliquez ou appuyez sur l’icône, puis sélectionnez **Paramètres d’affichage**. La boîte de dialogue **Configurer les colonnes** s’ouvre. Apportez les modifications requises et confirmez-les avec la commande **Mettre à jour**.
+1. Encore une fois, à l’extrême droite de la barre d’outils (coin supérieur droit), cliquez ou appuyez sur l’icône, puis sélectionnez **Paramètres d’affichage**. La variable **Configuration des colonnes** s’ouvre. Apportez les modifications requises et confirmez-les avec la commande **Mettre à jour**.
 
    ![spad-02](assets/spad-02.png)
 
@@ -50,7 +50,7 @@ Sélectionnez la période de création de rapports pour laquelle les données An
 * Données des 90 derniers jours
 * Données de cette année
 
-La période de création de rapports actuelle apparaît sur la barre d’outils de la console Sites (à droite dans la barre d’outils supérieure). Utilisez le menu déroulant pour sélectionner la période de création de rapports requise.
+La période de création de rapports actuelle apparaît sur la barre d’outils de la console Sites (à droite dans la barre d’outils supérieure). Utilisez la liste déroulante pour sélectionner la période de création de rapports requise.
 
 ![aa-05](assets/aa-05.png)
 

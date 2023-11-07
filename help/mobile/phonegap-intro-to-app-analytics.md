@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 7e358660-bc2f-4d8f-8d74-6cdb6c1ea7b5
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1051'
 ht-degree: 1%
 
 ---
@@ -29,11 +29,11 @@ Comment optimiser vos applications mobiles pour offrir une expérience optimale 
 
 Grâce à Adobe Mobile Services, vous pouvez mieux comprendre comment vos utilisateurs utilisent vos applications mobiles en effectuant le suivi de l’utilisation, des blocages d’application, des détails du périphérique et de nombreuses autres mesures critiques pour vos applications mobiles.
 
-Adobe Experience Manager Mobile donne un aperçu des détails de vos analyses mobiles directement depuis le tableau de bord de l’application AEM Mobile. Le **Mosaïque Mesures mobiles** Dans le tableau de bord , Real-Time Analytics est fourni à votre application mobile, ce qui permet aux développeurs, aux auteurs et aux administrateurs d’avoir un aperçu rapide de l’intégrité de votre application mobile. Sous les couvertures, l’alimentation de l’analyse correspond à la variable [Adobe Mobile Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html) SDK. Le SDK Adobe Mobile Analytics peut être connecté nativement à vos applications ou par le biais d’un module externe PhoneGap Bridge pour les vues web. Les mesures sont collectées et mises en cache sur l’appareil jusqu’à ce que l’appareil soit connecté, au moment où les données sont transmises à Adobe Mobile Services Cloud pour création de rapports et analyse.
+Adobe Experience Manager Mobile donne un aperçu des détails de vos analyses mobiles directement depuis le tableau de bord de l’application AEM Mobile. La variable **Mosaïque Mesures mobiles** Dans le tableau de bord , Real-Time Analytics est fourni à votre application mobile, ce qui permet aux développeurs, aux auteurs et aux administrateurs d’avoir un aperçu rapide de l’intégrité de votre application mobile. Sous les couvertures, l’alimentation de l’analyse correspond à la variable [Adobe Mobile Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html) SDK. Le SDK Adobe Mobile Analytics peut être connecté nativement à vos applications ou par le biais d’un module externe PhoneGap Bridge pour les vues web. Les mesures sont collectées et mises en cache sur l’appareil jusqu’à ce que l’appareil soit connecté, au moment où les données sont transmises à Adobe Mobile Services Cloud pour création de rapports et analyse.
 
 Le SDK Adobe Mobile Analytics fournit les éléments suivants :
 
-1. **Collecte de données pour les canaux mobiles** - Collectez des données complètes pour vos sites web et applications mobiles sur tous les principaux systèmes d’exploitation.
+1. **Collecte de données pour les canaux mobiles** - collecter des données complètes pour vos sites web et applications mobiles sur tous les principaux systèmes d’exploitation ;
 1. **Analyse de l&#39;engagement mobile** - Comprendre l’engagement des utilisateurs dans votre application mobile, votre site web ou votre vidéo, notamment la fréquence à laquelle les clients lancent le canal, s’ils effectuent des achats sur celui-ci, etc.
 1. **Tableaux de bord et rapports d’applications mobiles** - Obtenez des rapports d’utilisation qui contiennent des mesures de cycle de vie pour vos applications et des mesures de boutique d’applications. Consultez les tendances pour les utilisateurs, les lancements, la durée de session moyenne, la durée de rétention et les blocages.
 1. **Analyse de campagne mobile** - Quantifiez l’efficacité des campagnes spécifiques aux mobiles telles que les SMS, les annonces de recherche mobile, les annonces d’affichage mobile et les codes QR.
@@ -52,7 +52,7 @@ Enfin, [Administrateurs AEM](#administrators) apprenez à :
 
 ## Pour les développeurs : intégrez Analytics à votre application {#for-developers-integrate-analytics-into-your-app}
 
-**Condition requise :** AEM administrateurs doivent configurer la configuration cloud de Mobile Services Adobe, [comme décrit ci-dessous](#amscloudserviceconfig).
+**Condition préalable requise :** Les administrateurs AEM doivent configurer la configuration cloud d’Adobe Mobile Services, [comme décrit ci-dessous](#amscloudserviceconfig).
 
 Les développeurs sont responsables des [ajout d’analytics à une application AEM Mobile](/help/mobile/phonegap-add-analytics-to-apps.md) si nécessaire, vous pouvez suivre, créer des rapports et comprendre la manière dont vos utilisateurs interagissent avec le contenu de votre application mobile, ainsi que mesurer les mesures clés de cycle de vie, telles que les lancements, le temps d’entrée dans l’application et le taux de plantage.
 
@@ -64,11 +64,11 @@ Configurez le service cloud sur votre application mobile en commençant par cliq
 
 ![chlimage_1-125](assets/chlimage_1-125.png)
 
-Cliquez sur l’icône d’engrenage dans la mosaïque Analyser les mesures pour ouvrir la boîte de dialogue modale &quot;Configurer Mobile Services Analytics&quot;. Sélectionnez votre configuration dans la liste déroulante &quot;Sélectionner une configuration de service mobile&quot;. Si vous devez créer une configuration, cliquez sur le bouton à molette.
+Cliquez sur l’icône d’engrenage dans la mosaïque Analyser les mesures pour ouvrir la boîte de dialogue modale &quot;Configurer Mobile Services Analytics&quot;. Sélectionnez votre configuration dans la liste déroulante &quot;Sélectionner une configuration de service mobile&quot;. Si vous devez créer une configuration, cliquez sur le bouton de clé à molette.
 
 Pour créer un service cloud Adobe Mobile Service, deux étapes sont impliquées : la connexion au service et la sélection de la suite de rapports à affecter à la configuration.
 
-Pour commencer, cliquez sur le bouton &quot;+&quot; dans la mosaïque Gérer les Cloud Services du tableau de bord.
+Pour commencer, cliquez sur le bouton &quot;+&quot; dans la mosaïque Gérer les Cloud Service du tableau de bord.
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 

@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
 docset: aem65
 exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 97%
+source-wordcount: '1035'
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,7 @@ Vous pouvez publier/dépublier une page tout de suite ou à une date/heure post�
 >  Ces termes sont synonymes de publication/dépublication.
 >
 >* **Répliquer/Réplication**
->  Il s’agit de termes techniques décrivant le déplacement des données (contenu de page, fichiers, code, commentaires d’utilisateur, par exemple) d’un environnement à un autre, comme lors de la publication ou de la réplication inverse des commentaires d’utilisateur.
+>  Il s’agit de termes techniques décrivant le déplacement des données (contenu de page, fichiers, code, commentaires utilisateur, par exemple) d’un environnement à un autre, comme lors de la publication ou de la réplication inverse des commentaires utilisateur.
 >
 
 >[!NOTE]
@@ -78,7 +78,7 @@ Vous pouvez activer des pages dans la console Sites web. Après avoir ouvert une
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
-1. La gestion du contenu web d’AEM active le contenu sélectionné. La ou les pages publiées s’affichent dans la [console Sites web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (en vert) avec des informations sur l’utilisateur ou l’utilisatrice qui a activé le contenu, ainsi que la date et l’heure d’activation.
+1. La gestion du contenu web d’AEM active le contenu sélectionné. La ou les pages publiées s’affichent dans la [Console Sites web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (en vert) avec des informations sur l’utilisateur ayant activé le contenu, ainsi que la date et l’heure de l’activation.
 
    ![screen_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
 

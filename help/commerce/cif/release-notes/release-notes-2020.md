@@ -2,9 +2,9 @@
 title: Notes de mise à jour d’AEM Content and Commerce 2020
 description: Notes de mise à jour de Adobe Experience Manager Content and Commerce 2020.
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1353'
 ht-degree: 68%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 68%
 
 * Un nouveau composant de carrousel de catégorie a été ajouté pour permettre aux utilisateurs professionnels de faire glisser et de déposer ce composant sur les pages de contenu AEM afin d’enrichir les pages de contenu avec les données commerciales.
 
-* Composants principaux CIF étendus pour décompresser la couche de données client Adobe en envoyant des données commerciales. La couche de données client Adobe est une méthode normalisée pour collecter des données et communiquer les données aux serveurs d’analyses numériques et de création de rapports. Pour plus d’informations, reportez-vous à la section [Couche de données client Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
+* Composants principaux CIF étendus pour décompresser la couche de données client Adobe en envoyant des données commerciales. La couche de données client Adobe est une méthode normalisée pour collecter des données et communiquer les données aux serveurs d’analyses numériques et de création de rapports. Pour plus d’informations, voir [Adobe de la couche de données client](https://github.com/adobe/adobe-client-data-layer/wiki).
 
 * Pages Détails du produit et Liste de produits étendues pour renseigner automatiquement les métadonnées d’optimisation pour les moteurs de recherche (telles que le titre, la méta-description, les méta-mots-clés) configurées dans l’interface utilisateur d’administration d’Adobe Commerce
 

@@ -6,18 +6,18 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2713'
-ht-degree: 84%
+source-wordcount: '2707'
+ht-degree: 83%
 
 ---
 
 # Utilisation de l’outil VLT {#how-to-use-the-vlt-tool}
 
-L’outil Jackrabbit FileVault (VLT) est un outil développé par [The Apache Foundation](https://www.apache.org/) qui mappe le contenu d’une instance Jackrabbit/AEM à un système de fichiers. L’outil VLT dispose de fonctions similaires comme client du système de contrôle de code source (tel qu’un client Subversion (SVN)), offrant des opérations normales d’archivage, d’extraction et de gestion, ainsi que des options de configuration pour une représentation flexible du contenu du projet.
+L’outil Jackrabbit FileVault (VLT) est un outil développé par [The Apache Foundation](https://www.apache.org/) qui mappe le contenu d’une instance Jackrabbit/AEM à un système de fichiers. L’outil VLT dispose de fonctions similaires comme client du système de contrôle de code source (tel qu’un client Subversion (SVN)), offrant des opérations d’archivage, d’extraction et de gestion normales, ainsi que des options de configuration pour une représentation flexible du contenu du projet.
 
-L’outil VLT s’exécute à partir de la ligne de commande. Ce document explique comment utiliser l’outil, notamment le démarrer et obtenir de l’aide. Il décrit également toutes les [commandes](#vlt-commands) et [options](#vlt-global-options) disponibles.
+L’outil VLT s’exécute à partir de la ligne de commande. Ce document décrit l’utilisation de l’outil, notamment la prise en main et l’obtention d’une aide, ainsi qu’une liste de tous les éléments [Commandes](#vlt-commands) et disponibles [options](#vlt-global-options).
 
 ## Concepts et architecture {#concepts-and-architecture}
 
@@ -440,7 +440,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | format printf pour les liens de correctif (nom, id), par exemple `[CQ520_HF_%s|%s]` |
+| `-l (--linkFormat) <format>` | format printf pour les liens de correctif (nom, id), par exemple, `[CQ520_HF_%s|%s]` |
 | `-v (--verbose)` | Sortie verbose |
 | `-q (--quiet)` | Imprime aussi petit que possible. |
 | `<localPaths> [<localPaths> ...]` | chemin local |
@@ -781,7 +781,7 @@ Le service de synchronisation Vault est utilisé pour synchroniser le contenu du
 
 >[!NOTE]
 >
->Le service de synchronisation Vault étant un outil de développement, il est fortement déconseillé de l’utiliser sur un système en production. Notez également que le service ne peut être synchronisé qu’avec le système de fichiers local et ne peut pas être utilisé pour le développement à distance.
+>Le service de synchronisation Vault étant un outil de développement, il est fortement déconseillé de l’utiliser sur un système en production. En outre, le service ne peut être synchronisé qu’avec le système de fichiers local et ne peut pas être utilisé pour le développement à distance.
 
 ### Installation du service à l’aide de vlt {#installing-the-service-using-vlt}
 
@@ -854,7 +854,7 @@ Une fois le service en cours d’exécution, il peut être configuré avec les p
 >
 >Le service peut être configuré avec la console web ou un nœud `sling:OsgiConfig` (portant le nom `com.day.jcr.sync.impl.VaultSyncServiceImpl`) dans le référentiel.
 >
->Dans AEM, il existe plusieurs méthodes pour gérer les paramètres de configuration pour ces services. Pour plus d’informations, voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md).
+>Lorsque vous utilisez AEM, il existe plusieurs méthodes de gestion des paramètres de configuration pour de tels services ; voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails.
 
 #### Configuration du dossier de synchronisation {#sync-folder-configuration}
 

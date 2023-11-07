@@ -3,10 +3,10 @@ title: Créer un gestionnaire d’invitation d’utilisateurs externes
 description: Découvrez comment créer un gestionnaire d’invitation d’utilisateurs externes. Il permet au service de Rights Management d’inviter des utilisateurs externes à devenir des utilisateurs Rights Management.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 94%
+source-wordcount: '1132'
+ht-degree: 93%
 
 ---
 

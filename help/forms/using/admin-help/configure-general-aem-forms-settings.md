@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_je
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bd648c38-731b-420e-973d-a4728b69868e
 exl-id: e1519477-b5a8-4947-8597-26b945a3b819
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 32%
+source-wordcount: '1707'
+ht-degree: 31%
 
 ---
 
@@ -61,7 +61,7 @@ Si vous ne spécifiez pas de répertoire racine de stockage global de documents,
 
 >[!NOTE]
 >
->La modification de la valeur du paramètre de répertoire racine de stockage global de documents doit être effectuée avec une attention particulière. Le répertoire de stockage global de documents est utilisé pour stocker les fichiers de longue durée utilisés dans un processus, ainsi que les composants de produit d’AEM forms critiques. La modification de l’emplacement du répertoire de stockage global de documents est un changement majeur du système. Une configuration incorrecte de l’emplacement du répertoire de stockage global de documents rend AEM forms inopérant et peut nécessiter une réinstallation complète d’AEM forms. Si vous spécifiez un nouvel emplacement pour le répertoire de stockage global de documents, le serveur d’applications doit être arrêté et les données migrées avant le redémarrage du serveur. L’administrateur système doit déplacer tous les fichiers de l’ancien emplacement vers le nouvel emplacement, tout en conservant la structure de répertoires interne.
+>La modification de la valeur du paramètre de répertoire racine de stockage global de documents doit être effectuée avec une attention particulière. Le répertoire de stockage global de documents est utilisé pour stocker les fichiers de longue durée utilisés dans un processus et les composants de produit d’AEM forms critiques. La modification de l’emplacement du répertoire de stockage global de documents est un changement majeur du système. Une configuration incorrecte de l’emplacement du répertoire de stockage global de documents rend AEM forms inopérant et peut nécessiter une réinstallation complète d’AEM forms. Si vous spécifiez un nouvel emplacement pour le répertoire de stockage global de documents, le serveur d’applications doit être arrêté et les données migrées avant le redémarrage du serveur. L’administrateur système doit déplacer tous les fichiers de l’ancien emplacement vers le nouvel emplacement, tout en conservant la structure de répertoires interne.
 
 >[!NOTE]
 >

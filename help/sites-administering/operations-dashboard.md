@@ -12,7 +12,7 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '6057'
 ht-degree: 99%
@@ -428,7 +428,7 @@ Exemples :
 * Si vous envisagez d’enregistrer tous les messages **ERREUR**, aucune configuration n’est nécessaire. Tous les messages ERREUR sont capturés par défaut.
 * Si vous envisagez de capturer tous les messages **ERREUR**, **AVERTISSEMENT** et **INFOS** : le nom de la journalisation doit être défini sur : **root**, et le niveau de journalisation défini sur : **INFOS**.
 
-* Si vous envisagez de capturer tous les messages provenant d’un certain package (par exemple com.adobe.granite), le nom de l’enregistreur doit être défini sur : &quot;com.adobe.granite&quot;. Et le niveau de l’enregistreur est défini sur : **DEBUG** (ce qui capture tous les messages **ERREUR**, **AVERTISSEMENT**, **INFOS** et **DEBUG**), comme illustré dans l’image ci-dessous.
+* Si vous envisagez de capturer tous les messages provenant d’un certain package (par exemple, com.adobe.granite), le nom de l’enregistreur doit être défini sur : &quot;com.adobe.granite&quot;. Et le niveau de l’enregistreur est défini sur : **DEBUG** (ce qui capture tous les messages **ERREUR**, **AVERTISSEMENT**, **INFOS** et **DEBUG**), comme illustré dans l’image ci-dessous.
 
 ![chlimage_1-121](assets/chlimage_1-121.png)
 

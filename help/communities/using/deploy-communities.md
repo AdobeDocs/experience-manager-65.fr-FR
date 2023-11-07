@@ -3,7 +3,7 @@ title: Déploiement de Communities
 description: Comment déployer AEM Communities
 content-type: reference
 topic-tags: deploying
-source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1761'
 ht-degree: 4%
@@ -106,7 +106,7 @@ Les étapes nécessaires sont les suivantes :
 1. Utilisez la console web pour installer et démarrer le lot :
 
    * Par exemple, https://localhost:4502/system/console/bundles
-   * Sélectionner **`Install/Update`**
+   * Sélectionnez **`Install/Update`**.
    * Parcourir.. pour sélectionner le lot extrait de l’archive ZIP téléchargée
    * Vérifiez que *Pilote JDBC d’Oracle Corporation pour MySQLcom.mysql.jdbc* est active et démarrez-la si ce n’est pas le cas (ou vérifiez les journaux).
 
@@ -150,7 +150,7 @@ Pour installer les packages visibles dans `adobeaemcloud.com` sur une instance d
 * Sélectionnez la variable **Ressources** tab
 * Sélectionner **télécharger sur le disque**
 
-Sur l’instance AEM locale, utilisez un gestionnaire de modules (par exemple [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)), pour charger vers le référentiel de package d’AEM local.
+Sur l’instance d’AEM locale, utilisez un gestionnaire de modules (par exemple : [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)), pour charger vers le référentiel de package d’AEM local.
 
 Vous pouvez également accéder au module à l’aide de Package Share à partir de l’instance d’AEM locale (par exemple, [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), la variable `Download` télécharge vers le référentiel de package de l’instance AEM locale.
 
@@ -307,9 +307,9 @@ Avec le matériel clé stocké dans le référentiel, la manière de répliquer 
 Utilisation [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * Accédez à [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)
-* Sélectionner `/etc/key`
+* Sélectionnez `/etc/key`.
 * Ouvrir `Replication` tab
-* Sélectionner `Replicate`
+* Sélectionnez `Replicate`.
 
 * [actualiser le lot Crypto Granite](#refresh-the-granite-crypto-bundle)
 
@@ -357,7 +357,7 @@ En particulier, veillez à utiliser le nom de serveur correct, et non `localhost
 Si vous utilisez un Dispatcher, voir :
 
 * AEM [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) documentation
-* [Installation de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en)
+* [Installation du Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en)
 * [Configuration de Dispatcher pour Communities](/help/communities/dispatcher.md)
 * [Problèmes connus](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

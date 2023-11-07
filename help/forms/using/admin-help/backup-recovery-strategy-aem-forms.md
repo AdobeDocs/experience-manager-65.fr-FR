@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1487'
 ht-degree: 25%
 
 ---
@@ -94,7 +94,7 @@ Dans une grappe, si vous utilisez la mise en cache TCP au lieu du protocole UDP,
 
 ### Modification des chemins d’accès au système de fichiers de noeud d’AEM forms {#changing-the-aem-forms-node-file-system-paths}
 
-Si vous modifiez les chemins d’accès au système de fichiers d’un noeud autonome, vous devez mettre à jour les références appropriées dans les préférences, les autres configurations système, les applications personnalisées et les applications d’AEM déployées. D’un autre côté, pour une grappe, tous les noeuds doivent utiliser la même configuration de chemin d’accès au système de fichiers. Vous devez définir le répertoire racine de stockage global de documents (GDS) et vous assurer qu’il pointe vers une copie du répertoire de stockage global de documents récupéré qui est synchronisé avec la base de données récupérée. Il est important de définir le chemin du répertoire de stockage global de documents, car celui-ci peut contenir des données destinées à persister au fil des redémarrages du serveur d’applications.
+Si vous modifiez les chemins d’accès au système de fichiers d’un noeud autonome, vous devez mettre à jour les références appropriées dans les préférences, les autres configurations système, les applications personnalisées et les applications d’AEM déployées. D’un autre côté, pour une grappe, tous les noeuds doivent utiliser la même configuration de chemin d’accès au système de fichiers. Définissez le répertoire racine de stockage global de documents et assurez-vous qu’il pointe vers une copie du stockage global de documents récupéré, qui est synchronisé avec la base de données récupérée. Il est important de définir le chemin du répertoire de stockage global de documents, car celui-ci peut contenir des données destinées à persister au fil des redémarrages du serveur d’applications.
 
 Dans un environnement organisé en grappe, la configuration du chemin d’accès au système de fichiers du référentiel doit être la même pour tous les noeuds de la grappe avant la sauvegarde et après la récupération.
 

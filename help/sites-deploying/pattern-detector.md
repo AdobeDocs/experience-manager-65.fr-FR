@@ -1,21 +1,17 @@
 ---
 title: Évaluer la complexité de la mise à niveau à l’aide de l’outil de détection des motifs
-seo-title: Assessing the Upgrade Complexity with the Pattern Detector
 description: Découvrez comment utiliser le détecteur de motifs pour évaluer la complexité de votre mise à niveau.
-seo-description: Learn how to use the Pattern Detector to assess the complexity of your upgrade.
-uuid: 84d0add9-3123-4188-9877-758911b1899f
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
-discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 47%
+source-wordcount: '516'
+ht-degree: 45%
 
 ---
 
@@ -224,4 +220,4 @@ Actuellement, l’outil de détection des motifs permet de vérifier :
 
 >[!NOTE]
 >
->Notez que l’outil de détection des motifs tente de prévoir avec précision les avertissements pour la mise à niveau. Cependant, il peut générer des faux positifs dans certains scénarios.
+>L’outil de détection des motifs tente de prédire précisément les avertissements à mettre à niveau. Cependant, il peut générer des faux positifs dans certains scénarios.

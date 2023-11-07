@@ -8,10 +8,10 @@ content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6177'
-ht-degree: 54%
+source-wordcount: '6176'
+ht-degree: 53%
 
 ---
 
@@ -188,7 +188,7 @@ Activez ces options pour indiquer comment afficher le contenu, afficher les page
 
 **Mise en page :** permet de sélectionner le type de mise en page du document PDF.
 
-**Zoom :** permet de choisir un zoom prédéfini de l’affichage initial du document PDF ou de sélectionner une valeur personnalisée. Le choix d’un paramètre par défaut implique l’utilisation du zoom par défaut d’Acrobat.
+**Zoom :** permet de choisir un zoom prédéfini de l’affichage initial du document PDF ou de sélectionner une valeur personnalisée. Le choix d’un paramètre par défaut indique que l’agrandissement Acrobat par défaut est utilisé.
 
 **Ouvrir à la page :** permet d’indiquer le numéro de page auquel le PDF doit s’ouvrir.
 

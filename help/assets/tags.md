@@ -10,10 +10,10 @@ docset: aem65
 feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: 04941e17054951bcf6264da957d951a5d1107896
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6622'
-ht-degree: 100%
+source-wordcount: '6618'
+ht-degree: 99%
 
 ---
 
@@ -469,7 +469,7 @@ Voir aussi le [Guide de mise en œuvre d’Analytics](https://experienceleague.a
 
    Voir [Présentation de props et eVar](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=fr#vars).
 
-   Pour les besoins de cette documentation, seule une variable de trafic personnalisé (props) sera utilisée car elle sera disponible dans un rapport Analytics quelques minutes après qu’une action a lieu sur une page web.
+   Pour les besoins de cette documentation, seule une variable de trafic personnalisé (props) est utilisée car elle est disponible dans un rapport Analytics quelques minutes après qu’une action a lieu sur une page web.
 
    Pour activer une nouvelle variable de trafic personnalisé, dans Adobe Analytics, dans la barre d’outils, accédez à **[!UICONTROL Admin]** > **[!UICONTROL Suites de rapports]**.
 
@@ -496,7 +496,7 @@ Voir aussi le [Guide de mise en œuvre d’Analytics](https://experienceleague.a
 
 ## Configuration d’Experience Platform Tags pour l’intégration {#configuring-adobe-launch-for-the-integration}
 
-Une fois Experience Platform Tags configuré, les éléments suivants seront paramétrés pour l’intégration :
+Une fois les balises Experience Platform configurées, les éléments suivants seront paramétrés pour l’intégration :
 
 * Création d’une propriété pour conserver toutes vos configurations ensemble.
 * Installation et configuration des extensions. Le code client de toutes les extensions installées dans la propriété est compilé dans une bibliothèque. Cette bibliothèque sera utilisée ultérieurement par la page web.
@@ -578,7 +578,7 @@ Au moment de la rédaction de cet article, l’extension *Visionneuses Dynamic 
 
 Consultez [Création d’une propriété dans Experience Platform Tags](#creating-a-property-in-adobe-launch).
 
-Une fois les extensions installées et configurées, au minimum, les cinq extensions suivantes (quatre si vous n’effectuez pas le suivi vidéo) seront répertoriées dans la zone Extensions > Installées.
+Une fois les extensions installées et configurées, au minimum, les cinq extensions suivantes (quatre si vous n’effectuez pas le suivi vidéo) sont répertoriées dans la zone Extensions > Installées .
 
 ![image2019-7-22_12-7-36](assets/image2019-7-22_12-7-36.png)
 
@@ -826,7 +826,7 @@ Par exemple : `https://ims-na1.adobelogin.com/`
 
    Dans le champ **[!UICONTROL URI de bibliothèque]** (Uniform Resource Identifier), vérifiez l’emplacement de la version d’évaluation de votre bibliothèque Experience Platform Tags. Experience Manager remplit ce champ automatiquement.
 
-   À titre d’explication uniquement, cette étape utilise les bibliothèques Experience Platform Tags déployées sur le réseau de diffusion de contenu Adobe.
+   À titre d’exemple uniquement, cette étape utilise des bibliothèques de balises Experience Platform déployées sur le réseau de diffusion de contenu Adobe.
 
    >[!NOTE]
    >

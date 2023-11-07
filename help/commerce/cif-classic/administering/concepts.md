@@ -3,9 +3,9 @@ title: Concepts
 description: Découvrez les concepts généraux d’eCommerce avec Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4480'
+source-wordcount: '4481'
 ht-degree: 37%
 
 ---
@@ -486,7 +486,7 @@ La création d’un catalogue utilise dix noeuds par produit, car elle fournit d
 
 Les pages de proxy reposent sur une structure à deux nœuds (`jcr:content` et `cq:Page`), qui ne contient pas de contenu réel de produits. Le contenu est généré lors de la demande, en se référant aux données des produits et au modèle de page.
 
-Ceci présente cependant un inconvénient : Vous ne pourrez pas personnaliser les informations sur vos produits dans AEM, un modèle standard (défini pour votre site) sera utilisé.
+Ceci présente cependant un inconvénient : Vous ne pourrez pas personnaliser les informations sur vos produits dans AEM, un modèle standard (défini pour votre site) est utilisé.
 
 >[!NOTE]
 >

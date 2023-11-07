@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1840'
-ht-degree: 95%
+source-wordcount: '1835'
+ht-degree: 90%
 
 ---
 
@@ -52,7 +52,7 @@ Actuellement, le mode de modification intégré est activé pour les éléments 
 
 >[!NOTE]
 >
->Le composant [!UICONTROL Titre] est conçu pour contenir un texte court sans sauts de ligne. Lorsque vous modifiez un titre en mode de modification intégré, la saisie d’un saut de ligne ouvre un nouveau composant **Texte** sous le titre.
+>Le composant [!UICONTROL Titre] est conçu pour contenir un texte court sans sauts de ligne. Lorsque vous modifiez un titre en mode d’édition statique, la saisie d’un saut de ligne ouvre une nouvelle **Texte** sous le titre.
 
 ## Fonctionnalités de l’éditeur de texte enrichi {#features-of-the-rich-text-editor}
 
@@ -78,7 +78,7 @@ Tous fonctionnent comme un bouton bascule. La résélection supprime donc le for
 
 ![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
-Votre installation peut inclure des styles et des formats prédéfinis. Ils sont disponibles avec les listes déroulantes **[!UICONTROL Style]** et **[!UICONTROL Format]** et peuvent être appliqués au texte que vous avez sélectionné.
+Votre installation peut inclure des styles et des formats prédéfinis. Ils sont disponibles avec la fonction **[!UICONTROL Style]** et **[!UICONTROL Format]** liste déroulante et peut être appliqué au texte que vous avez sélectionné.
 
 Un style peut être appliqué à une chaîne spécifique (un style correspond à CSS) :
 
@@ -219,7 +219,7 @@ Vous pouvez faire glisser des images à partir de l’outil de recherche de cont
 
 >[!NOTE]
 >
->AEM propose également des composants spécialisés permettant une configuration d’image plus détaillée ; **Image** et **Texte et image**, par exemple.
+>AEM propose également des composants spécialisés permettant une configuration d’image plus détaillée ; Par exemple, la variable **Image** et **Image texte** sont disponibles.
 
 ### Vérificateur orthographique {#spelling-checker}
 
@@ -233,7 +233,7 @@ Toute faute d’orthographe est mise en surbrillance :
 
 >[!NOTE]
 >
->Le correcteur orthographique fonctionne dans la langue du site Web soit en prenant la propriété de langue de la sous-arborescence, soit en extrayant la langue de l’URL ;  Par exemple, la vérification sera effectuée en anglais pour la branche `en`, en allemand pour la branche `de`, etc.
+>Le correcteur orthographique fonctionne dans la langue du site Web soit en prenant la propriété de langue de la sous-arborescence, soit en extrayant la langue de l’URL ;  Par exemple, la variable `en` la branche est vérifiée pour l’anglais et la variable `de` branche pour l’allemand.
 
 ### Tableaux {#tables}
 

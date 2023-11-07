@@ -2,10 +2,10 @@
 title: Configuration des composants par défaut en mode de conception
 description: Configuration des composants Adobe Experience Manager en mode de conception.
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 94%
+source-wordcount: '914'
+ht-degree: 86%
 
 ---
 
@@ -46,7 +46,7 @@ Par exemple, le contenu d’une page produit peut contenir un système de paragr
 >
 >La modification de la conception en mode Création, telle que décrite dans cet article, est la méthode recommandée pour définir des conceptions de modèles statiques.
 >
->La modification de conceptions dans CRX DE, par exemple, n’est pas recommandée et l’application de ces conceptions risque de provoquer un comportement imprévu. Pour plus d’informations, consultez le document [Modèles de page - Statiques](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied), à l’attention du développeur.
+>La modification de conceptions dans CRX DE, par exemple, n’est pas une bonne pratique et l’application de ces conceptions peut différer du comportement attendu. Pour plus d’informations, consultez le document [Modèles de page - Statiques](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied), à l’attention du développeur.
 
 ## Activer/désactiver des composants {#enable-disable-components}
 
@@ -66,7 +66,7 @@ Pour activer ou désactiver un composant :
 
    Cela a pour effet de sélectionner le système de paragraphes contenant le composant actif.
 
-1. L’icône **Configurer** du système de paragraphes s’affiche dans la barre d’outils du parent.
+1. La variable **Configurer** pour le système de paragraphes s’affiche dans la barre d’actions du parent.
 
    ![Configurer](do-not-localize/screen_shot_2018-03-22at103256.png)
 
@@ -95,7 +95,7 @@ Pour activer ou désactiver un composant :
 
    >[!NOTE]
    >
-   >Les composants de formulaires adaptatifs sont conçus pour fonctionner dans le conteneur de formulaires adaptatifs afin de tirer profit de l’écosystème Forms. Par conséquent, ces composants doivent être utilisés uniquement dans l’éditeur de formulaires adaptatifs et ne fonctionneront pas dans l’éditeur de page Sites.
+   >Les composants de formulaire adaptatif sont conçus pour fonctionner dans le conteneur de formulaires adaptatifs afin d’utiliser l’écosystème Forms. Par conséquent, ces composants doivent être utilisés uniquement dans l’éditeur de formulaires adaptatifs et ne fonctionneront pas dans l’éditeur de page Sites.
 
    **Paramètres**
 
@@ -131,7 +131,7 @@ Pour activer ou désactiver un composant :
 
    La variable **Propriétés** vous permet de configurer les paramètres de conception importants du composant. Par exemple, pour un composant d’image, vous pouvez définir la taille maximale et minimale de l’image autorisée.
 
-   **Fonctions**
+   **Fonctionnalités**
 
    La variable **Fonctionnalités** vous permet d’activer ou de désactiver des fonctionnalités supplémentaires du composant. Par exemple, pour un composant d’image, vous pouvez définir l’orientation de l’image, les options de recadrage disponibles et si une image peut être téléchargée.
 

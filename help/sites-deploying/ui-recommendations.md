@@ -11,10 +11,10 @@ topic-tags: best-practices
 discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 40%
+source-wordcount: '781'
+ht-degree: 41%
 
 ---
 
@@ -87,7 +87,7 @@ Vous trouverez ci-dessous une liste de recommandations provenant de la gestion d
     </ol> <p>Ensuite, dans une seconde phase :</p>
     <ol>
      <li>Mettez à jour vos boîtes de dialogue de composants pour utiliser le format de boîte de dialogue Coral 3. Adobe recommande d’utiliser la variable <a href="/help/sites-developing/modernization-tools.md">Outils de modernisation d’AEM</a> pour mettre à jour les composants.</li>
-     <li>Configurez ContextHub (le remplacement du ClientContext) et mettez à jour les modèles de page pour utiliser ContextHub. Notez que ContextHub dispose d’un mode de compatibilité qui permet de charger des magasins de ClientContext personnalisés.</li>
+     <li>Configurez ContextHub (le remplacement du ClientContext) et mettez à jour les modèles de page pour utiliser ContextHub. ContextHub dispose d’un mode de compatibilité qui permet de charger des magasins de ClientContext personnalisés.</li>
     </ol> </td>
   </tr>
   <tr>

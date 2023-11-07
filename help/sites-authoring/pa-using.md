@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 92%
+source-wordcount: '633'
+ht-degree: 86%
 
 ---
 
@@ -24,7 +24,7 @@ Utilisez les données d’analyse de page pour évaluer l’efficacité du conte
 Les données d’analyse de page s’affichent dans la [vue liste](/help/sites-authoring/basic-handling.md#list-view) de la console Sites. Lorsque les pages sont affichées au format liste, les colonnes suivantes sont disponibles par défaut :
 
 * Pages vues
-* Visiteurs et visiteuses uniques
+* Visiteurs uniques
 * Temps sur la page
 
 Chaque colonne indique une valeur pour la période de création de rapports actuelle et indique également si la valeur a augmenté ou diminué depuis la période de création de rapports précédente. Les données affichées sont mises à jour toutes les 12 heures.
@@ -33,10 +33,10 @@ Chaque colonne indique une valeur pour la période de création de rapports actu
 >
 >Pour modifier la période de mise à jour, [configurez l’intervalle d’importation](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Ouvrez la console **Sites** (par exemple, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
+1. Ouvrez le **Sites** console, par exemple : [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
 1. À l’extrême droite de la barre d’outils (coin supérieur droit), cliquez ou appuyez sur l’icône à sélectionner **Mode Liste** (l’icône affichée dépend de la variable [vue actuelle](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. Encore une fois, à l’extrême droite de la barre d’outils (coin supérieur droit), cliquez ou appuyez sur l’icône, puis sélectionnez **Paramètres d’affichage**. La boîte de dialogue **Configurer les colonnes** s’ouvre. Apportez les modifications requises et confirmez-les avec la commande **Mettre à jour**.
+1. Encore une fois, à l’extrême droite de la barre d’outils (coin supérieur droit), cliquez ou appuyez sur l’icône, puis sélectionnez **Paramètres d’affichage**. La variable **Configuration des colonnes** s’ouvre. Apportez les modifications requises et confirmez-les avec la commande **Mettre à jour**.
 
    ![aa-04](assets/aa-04.png)
 
@@ -48,7 +48,7 @@ Sélectionnez la période de création de rapports pour laquelle les données An
 * Données des 90 derniers jours
 * Données de cette année
 
-La période de création de rapports actuelle apparaît sur la barre d’outils de la console Sites (à droite dans la barre d’outils supérieure). Utilisez le menu déroulant pour sélectionner la période de création de rapports requise.
+La période de création de rapports actuelle apparaît sur la barre d’outils de la console Sites (à droite dans la barre d’outils supérieure). Utilisez la liste déroulante pour sélectionner la période de création de rapports requise.
 ![aa-05](assets/aa-05.png)
 
 ### Configurer les colonnes de données disponibles {#configuring-available-data-columns}
@@ -82,7 +82,7 @@ Ouvrez [Content Insight](/help/sites-authoring/content-insights.md) à partir d
 
 >[!NOTE]
 >
->Elles s’affichent si la [Activity Map a été configurée](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) pour votre site web.
+>Cela s’affiche si la variable [Activity Map a été configuré.](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) pour votre site web.
 
 >[!NOTE]
 >

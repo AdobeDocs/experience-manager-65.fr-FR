@@ -7,10 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2987'
-ht-degree: 58%
+ht-degree: 59%
 
 ---
 
@@ -56,7 +56,7 @@ La vue d’ensemble redémarre la prochaine fois que vous accédez à la console
 
 ## Navigation globale {#global-navigation}
 
-Pour passer d’une console à une autre, utilisez le panneau de navigation globale. Cela se déclenche sous la forme d’une liste déroulante plein écran lorsque vous cliquez ou appuyez sur le lien Adobe Experience Manager dans le coin supérieur gauche de l’écran.
+Pour passer d’une console à une autre, utilisez le panneau de navigation globale. Cliquez ou appuyez sur le lien Adobe Experience Manager, dans le coin supérieur gauche de l’écran, pour accéder au menu déroulant, qui s’affiche en mode plein écran.
 
 Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant sur **Fermer** pour revenir à votre position précédente.
 
@@ -136,7 +136,7 @@ Dans le panneau Outils, chaque option du panneau latéral contient un éventail 
 
 ## En-tête {#the-header}
 
-L’en-tête est toujours affiché en haut de l’écran. Bien que la plupart des options de l’en-tête restent les mêmes, quel que soit l’endroit où vous vous trouvez dans le système, certaines dépendent du contexte.
+L’en-tête est toujours présent en haut de l’écran. Bien que la plupart des options de l’en-tête restent les mêmes, quel que soit l’endroit où vous vous trouvez dans le système, certaines dépendent du contexte.
 
 ![En-tête](assets/bh-03.png)
 
@@ -164,7 +164,7 @@ L’en-tête est toujours affiché en haut de l’écran. Bien que la plupart de
 
   ![Notifications](do-not-localize/screen_shot_2018-03-23at103558.png)
 
-  Cette icône comporte un badge indiquant le nombre de notifications incomplètes actuellement attribuées.
+  Cette icône contient un badge indiquant le nombre de notifications incomplètes actuellement attribuées.
 
   >[!NOTE]
   >
@@ -287,7 +287,7 @@ En raison des restrictions d’espace dans certaines fenêtres, la barre d’out
 
 ## Actions rapides {#quick-actions}
 
-Dans [Mode Carte](#cardviewquickactions), certaines actions sont disponibles sous forme d’icônes d’action rapide et dans la barre d’outils. Les icônes d’action rapide sont disponibles pour un seul élément à la fois, ce qui évite d’avoir à présélectionner.
+Dans [Mode Carte](#cardviewquickactions), certaines actions sont disponibles sous forme d’icônes d’action rapide et dans la barre d’outils. Les icônes d’action rapide sont disponibles pour un seul élément à la fois, ce qui évite d’avoir à effectuer une présélection.
 
 Les actions rapides sont visibles lorsque vous placez le pointeur de la souris sur une carte de ressource (ordinateur de bureau). Les actions rapides disponibles dépendent de la console et du contexte. Voici, par exemple, les actions rapides d’une page dans la console **Sites** :
 
@@ -387,7 +387,7 @@ Quel que soit le mode, vous pouvez désélectionner tous les éléments en appuy
 
 #### Exemple de sélection {#selecting-example}
 
-1. Par exemple, en mode Carte :
+1. Par exemple, dans la vue Carte :
 
    ![Sélectionner - Vue Carte](assets/bh-15.png)
 
@@ -409,7 +409,7 @@ La sélection d’une ressource dans la colonne la plus à gauche affiche les re
 
      ![Vue Colonnes](assets/bh-17.png)
 
-   * Les enfants de la ressource sur laquelle vous avez cliqué/appuyé s’affichent dans la colonne située à droite de cette ressource.
+   * Les enfants de la ressource sur laquelle vous avez cliqué/appuyé s’affichent dans la colonne située à droite de celle-ci.
    * Si vous appuyez ou cliquez sur un nom de ressource sans enfant, ses détails s’affichent dans la colonne finale.
 
 * Appuyez ou cliquez sur la miniature pour sélectionner la ressource.
@@ -471,14 +471,14 @@ La sélection d’une ressource dans la colonne la plus à gauche affiche les re
 
 * Sélectionnez les colonnes à afficher à l’aide du **Paramètres d’affichage** située sous le bouton Vues. Vous pouvez afficher les colonnes suivantes :
 
-   * **Nom** : nom de la page, qui peut s’avérer utile dans un environnement de création multilingue, car il fait partie de l’URL de la page et ne change pas, quelle que soit la langue.
-   * **Modifié** : date de la dernière modification et dernière modification par l’utilisateur ou l’utilisatrice.
+   * **Nom** : nom de la page, qui peut s’avérer utile dans un environnement de création multilingue, car il fait partie de l’URL de la page et ne change pas, quelle que soit la langue
+   * **Modifié** : date de la dernière modification et dernière modification par l’utilisateur ou l’utilisatrice
    * **Publié** : statut de la publication.
    * **Modèle** : modèle sur lequel la page est basée.
    * **Workflow** : workflow actuellement appliqué à la page. Plus d’informations sont disponibles lorsque vous placez le pointeur de la souris ou ouvrez la chronologie.
 
    * **Analyse de la page**
-   * **Visiteurs uniques**
+   * **Visiteurs ou visiteuses uniques**
    * **Temps passé sur la page**
 
   ![Paramètres d’affichage - Configurer les colonnes](assets/bh-21.png)

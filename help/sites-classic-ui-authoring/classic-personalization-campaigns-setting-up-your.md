@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2257'
-ht-degree: 19%
+source-wordcount: '2223'
+ht-degree: 18%
 
 ---
 
@@ -20,10 +20,10 @@ La configuration d&#39;une nouvelle campagne comprend les étapes (génériques)
 
 1. [Créer une marque](#creating-a-new-brand) pour héberger vos campagnes.
 1. Si nécessaire, vous pouvez [définir les propriétés de votre nouvelle marque ;](#defining-the-properties-for-your-new-brand).
-1. [Créer une campagne](#creating-a-new-campaign) pour contenir des expériences, par exemple des pages de teaser ou une newsletter.
+1. [Créer une campagne](#creating-a-new-campaign) pour contenir des expériences ; par exemple, des pages de teaser ou une newsletter.
 1. Si nécessaire, vous pouvez [définir les propriétés de votre nouvelle campagne ;](#defining-the-properties-for-your-new-campaign).
 
-Ensuite, en fonction du type d’expérience que vous créez, vous devrez [créer une expérience](#creating-a-new-experience). Les détails de l’expérience et les actions qui suivent sa création dépendent du type d’expérience que vous souhaitez créer :
+Ensuite, en fonction du type d’expérience que vous créez, vous devez [créer une expérience](#creating-a-new-experience). Les détails de l’expérience et les actions qui suivent sa création dépendent du type d’expérience que vous souhaitez créer :
 
 * Lors de la création d’un teaser :
 
@@ -50,15 +50,13 @@ Ensuite, en fonction du type d’expérience que vous créez, vous devrez [crée
 
 ## Création d’une marque {#creating-a-new-brand}
 
-Pour créer une nouvelle marque :
-
 1. Ouvrez le **MCM** et sélectionnez **Campagnes** dans le volet de gauche.
 
 1. Sélectionner **Nouveau...** pour saisir la variable **Titre** et **Nom** et modèle à utiliser pour votre nouvelle marque :
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
-1. Cliquez sur **Créer**. Votre nouvelle marque s’affichera dans le MCM (avec une icône par défaut).
+1. Cliquez sur **Créer**. Votre nouvelle marque s’affiche dans le MCM (avec une icône par défaut).
 
 ### Définition des propriétés de votre nouvelle marque {#defining-the-properties-for-your-new-brand}
 
@@ -72,17 +70,15 @@ Pour créer une nouvelle marque :
 
 ### Création d’une campagne {#creating-a-new-campaign}
 
-Pour créer une campagne :
-
 1. De **Campagnes**, sélectionnez votre nouvelle marque dans le volet de gauche ou double-cliquez sur l’icône dans le volet de droite.
 
-   La présentation s’affiche (vide si la marque est nouvelle).
+   L’aperçu s’affiche (vide si la marque est nouvelle).
 
 1. Cliquez sur **Nouveau...** et spécifiez la variable **Titre**, **Nom** et le modèle à utiliser pour votre nouvelle campagne.
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
-1. Cliquez sur **Créer**. Votre nouvelle campagne s’affichera dans le MCM.
+1. Cliquez sur **Créer**. Votre nouvelle campagne s’affiche dans le MCM.
 
 ### Définition des propriétés de votre nouvelle campagne {#defining-the-properties-for-your-new-campaign}
 
@@ -154,7 +150,7 @@ Si vous disposez d’expériences existantes, vous pouvez ajouter un point de co
 >[!NOTE]
 >
 >Adobe ne prévoit pas d’optimiser cette fonctionnalité (gestion des prospects).
-> Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
+>Il est recommandé d’utiliser [Adobe Campaign et intégration à AEM](/help/sites-administering/campaign.md).
 
 Dans AEM MCM, vous pouvez organiser et ajouter des pistes en les saisissant manuellement ou en important une liste de valeurs séparées par des virgules, par exemple une liste de diffusion. Les autres moyens de générer des pistes sont les abonnements à des newsletters ou les abonnements à des communautés (s’ils sont configurés, ils peuvent déclencher un workflow qui renseigne les pistes).
 
@@ -172,7 +168,7 @@ Dans le tableau de bord, vous accédez à toutes les pistes en cliquant sur **Pi
 
 Une fois les nouveaux prospects créés, assurez-vous de [les activer](#activating-or-deactivating-leads) pour pouvoir suivre leur activité sur l’instance de publication et personnaliser leur expérience.
 
-Création manuelle d’un prospect :
+Pour créer manuellement une piste :
 
 1. Dans AEM, accédez au MCM. Dans le tableau de bord, cliquez sur **Pistes**.
 1. Cliquez sur **Nouveau**. La variable **Créer** s’ouvre.
@@ -207,7 +203,7 @@ Pour activer ou désactiver des pistes :
 
 ### Importer de nouvelles pistes {#importing-new-leads}
 
-Lorsque vous importez de nouvelles pistes, vous pouvez les ajouter automatiquement à une liste existante ou créer une nouvelle liste pour les inclure.
+Lorsque vous importez de nouvelles pistes, vous pouvez les ajouter automatiquement à une liste existante ou créer une liste pour les inclure.
 
 Pour importer des pistes à partir d’une liste séparée par des virgules :
 
@@ -302,7 +298,7 @@ Pour supprimer des pistes existantes dans le MCM, cochez la case en regard de la
 >[!NOTE]
 >
 >Adobe ne prévoit pas d’optimiser cette fonctionnalité (gestion des listes).
-> Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
+>Il est recommandé d’utiliser [Adobe Campaign et intégration à AEM](/help/sites-administering/campaign.md).
 
 Les listes vous permettent d’organiser vos prospects en groupes. Avec les listes, vous pouvez cibler vos campagnes marketing sur un groupe sélectionné de personnes, par exemple, vous pouvez envoyer une newsletter ciblée à une liste. Les listes sont visibles dans le MCM, soit dans le tableau de bord, soit en cliquant sur **Listes**. Ils vous fournissent tous deux le nom de la liste et le nombre de membres.
 
@@ -314,8 +310,6 @@ Si vous cliquez sur **Listes**, vous pouvez également voir si la liste est memb
 
 ### Créer de nouvelles listes {#creating-new-lists}
 
-Pour créer une liste (groupe) :
-
 1. Dans le tableau de bord MCM, cliquez sur **Nouvelle liste ...** ou **Listes**, cliquez sur **Nouveau** .. La fenêtre Créer une liste s’affiche.
 
    ![screen_shot_2012-02-21at125147pm](assets/screen_shot_2012-02-21at125147pm.png)
@@ -325,8 +319,6 @@ Pour créer une liste (groupe) :
    ![screen_shot_2012-02-21at125320pm](assets/screen_shot_2012-02-21at125320pm.png)
 
 ### Modification de listes existantes {#modifying-existing-lists}
-
-Pour modifier une liste existante :
 
 1. Dans le MCM, cliquez sur **Listes**.
 
@@ -384,7 +376,7 @@ Pour fusionner des listes existantes :
 
 À tout moment, vous pouvez afficher les pistes qui appartiennent à une liste spécifique en naviguant ou en recherchant des membres.
 
-Pour afficher les pistes qui appartiennent à une liste :
+Pour afficher les pistes dans les listes :
 
 1. Dans le MCM, cliquez sur **Listes**.
 

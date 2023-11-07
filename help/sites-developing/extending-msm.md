@@ -1,20 +1,16 @@
 ---
 title: Étendre Multi Site Manager
-seo-title: Extending the Multi Site Manager
 description: Cette page vous aide à optimiser les fonctionnalités de Multi Site Manager.
-seo-description: This page helps you extend the functionalities of the Multi Site Manager
-uuid: dfa7d050-29fc-4401-8d4d-d6ace6b49bea
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2585'
-ht-degree: 98%
+source-wordcount: '2578'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +19,7 @@ ht-degree: 98%
 Cette page vous aide à optimiser les fonctionnalités de Multi Site Manager :
 
 * Découvrez les principaux membres de l’API Java MSM.
-* Créez une nouvelle action de synchronisation pouvant être utilisée dans une configuration de déploiement.
+* Créez une action de synchronisation pouvant être utilisée dans une configuration de déploiement.
 * Modifiez la langue et les codes pays par défaut.
 
 <!-- * Remove the "Chapters" step in the Create Site wizard. -->
@@ -111,7 +107,7 @@ La `LiveActionFactory` crée des instances de la classe `LiveAction` pour une co
 
 * Les classes `LiveAction` incluent les méthodes suivantes :
 
-   * `getName` : renvoie le nom de l’action qui sert à la désigner, par exemple, dans les configurations de déploiement.
+   * `getName`: renvoie le nom de l’action. Le nom est utilisé pour faire référence à l’action, par exemple, dans les configurations de déploiement.
    * `execute` : réalise les tâches de l’action.
 
 * Les classes `LiveActionFactory` incluent les méthodes suivantes :
@@ -182,8 +178,6 @@ La nouvelle configuration de déploiement est alors disponible pour vous lors de
 
 ### Créer la configuration de déploiement {#create-the-rollout-configuration}
 
-Pour créer une configuration de déploiement :
-
 1. Ouvrez CRXDE Lite, par exemple :
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
@@ -206,7 +200,7 @@ Pour créer une configuration de déploiement :
 
 1. Dessous, **Créez** un nœud avec les propriétés suivantes :
 
-   * **Nom** : nom de nœud de l’action de synchronisation. Md#installed-synchronization-actions), par exemple `contentCopy` ou `workflow`.
+   * **Nom** : nom de nœud de l’action de synchronisation. md#installed-sync-actions), par exemple, `contentCopy` ou `workflow`.
    * **Type** : `cq:RolloutConfig`
 
 1. Ajoutez les propriétés suivantes à ce nœud :
@@ -240,7 +234,7 @@ Ajoutez des nœuds enfants de type `cq:LiveSyncAction` pour ajouter des actions 
 1. **Créez** un nœud avec les propriétés de nœud suivantes :
 
    * **Nom** : nom de nœud de l’action de synchronisation.
-Le nom doit être identique au **Nom de l’action** dans la table sous [Actions de synchronisation](/help/sites-administering/msm-sync.md#installed-synchronization-actions), par exemple `contentCopy` ou `workflow`.
+Le nom doit être identique au nom **Nom de l’action** dans le tableau sous [Actions de synchronisation](/help/sites-administering/msm-sync.md#installed-synchronization-actions), par exemple : `contentCopy` ou `workflow`.
    * **Type** : `cq:LiveSyncAction`
 
 1. Ajoutez et configurez autant de nœuds d’action de synchronisation que vous le souhaitez. Réorganisez les nœuds d’action afin que leur ordre corresponde à celui dans lequel vous souhaitez qu’ils se produisent. Le nœud d’action le plus haut se produit en premier.
@@ -600,7 +594,7 @@ In some cases, the **Chapters** selection is not required in the create site wiz
 1. In CRX Explorer, remove the node:
    `/etc/blueprints/weretail-english/jcr:content/dialog/items/tabs/items/tab_chap`.
 
-1. Navigate to `/libs/wcm/msm/templates/blueprint/defaults/livecopy_tab/items` and create a new node:
+1. Navigate to `/libs/wcm/msm/templates/blueprint/defaults/livecopy_tab/items` and create a node:
 
     1. **Name** = `chapters`; **Type** = `cq:Widget`.
 

@@ -5,10 +5,10 @@ contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '1544'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -18,7 +18,7 @@ Les modèles de ressources correspondent à une catégorie spéciale de ressourc
 
 Parce qu’ils permettent de réaliser des modifications limitées tout en garantissant une harmonie d’ensemble, les modèles de ressources sont des blocs de création parfaits pour adapter et diffuser rapidement votre contenu. La réutilisation de contenu permet de réduire les coûts de gestion des canaux papier et numériques. Cela garantit en outre une expérience globale cohérente, quel que soit le canal de diffusion.
 
-En tant que marketeur, vous pouvez stocker et gérer les modèles dans [!DNL Experience Manager Assets], et utiliser un modèle de base unique pour créer plusieurs documents papier personnalisés en toute simplicité. Vous pouvez créer différents types de dérivés marketing, par exemple, des brochures, des prospectus, des cartes postales, des cartes de visite, etc. pour transmettre de façon claire votre message marketing à vos clients. Vous pouvez également assembler des documents papier comportant plusieurs pages à partir de documents papier nouveaux ou existants. Vous pouvez surtout diffuser des expériences à la fois numériques et papier simultanément en toute simplicité et offrir ainsi aux utilisateurs une expérience intégrée cohérente.
+En tant que spécialiste marketing, vous pouvez stocker et gérer les modèles dans [!DNL Experience Manager Assets], et utiliser un modèle de base unique pour créer plusieurs documents papier personnalisés en toute simplicité. Vous pouvez créer différents types de dérivés marketing, par exemple, des brochures, des prospectus, des cartes postales, des cartes de visite, etc. pour transmettre de façon claire votre message marketing à vos clients. Vous pouvez également assembler des documents papier comportant plusieurs pages à partir de documents papier nouveaux ou existants. Par-dessus tout, vous pouvez diffuser facilement des expériences digitales et papier simultanément afin de fournir une expérience cohérente et intégrée aux utilisateurs.
 
 Si les modèles de ressources sont pour la plupart des fichiers [!DNL Adobe InDesign], il n’est pas nécessaire de maîtriser [!DNL Adobe InDesign] pour réaliser des documents de qualité. Vous n’avez pas besoin de mapper les champs de votre modèle [!DNL Adobe InDesign] avec vos champs produit, comme cela est nécessaire lors de la création de catalogues. Vous pouvez modifier les modèles en mode WYSIWYG directement depuis l’interface Web. Toutefois, pour qu’[!DNL Adobe InDesign] puisse traiter vos modifications, vous devez configurer [!DNL Experience Manager Assets] pour qu’il intègre [!DNL Adobe InDesign Server].
 
@@ -27,7 +27,7 @@ La possibilité de modifier des modèles [!DNL Adobe InDesign] dans l’interfac
 Avec les modèles de ressources, vous pouvez réaliser les choses suivantes :
 
 * Modifier des champs de modèle modifiables depuis l’interface Web
-* Contrôler les paramètres de base de style du texte, par exemple, la taille, le style et le type de police au niveau des balises
+* Contrôlez le style de base du texte, par exemple la taille de police, le style et le type au niveau de la balise.
 * Modifier les images du modèle à l’aide du sélecteur de contenu
 * Prévisualiser les modifications du modèle
 * Fusionner plusieurs fichiers de modèle pour créer un document multipage
@@ -38,7 +38,7 @@ Vous pouvez exporter le fichier mis à jour dans le dossier parent au format IND
 
 ## Création d’un dérivé {#creating-a-collateral}
 
-Imaginons que vous voulez créer des contenus numériques papier, comme des brochures, des prospectus ou des publicités pour une future campagne, et les envoyer à des magasins dans le monde entier. Créer de tels documents à l’aide d’un modèle vous permet de proposer la même expérience client sur tous les canaux de diffusion. Les graphistes peuvent créer des modèles pour la campagne (document d’une seule page ou de plusieurs pages) à l’aide d’une solution de création, comme [!DNL InDesign] et vous les envoyer sur [!DNL Experience Manager Assets]. Avant de créer un dérivé, vous devez charger un ou plusieurs modèles INDD et les rendre disponibles dans [!DNL Experience Manager] à l’avance.
+Supposons que vous souhaitiez créer des documents numériques imprimables, tels que des brochures, prospectus et publicités, pour une campagne à venir et les partager avec les magasins de vente à l’échelle mondiale. La création de documents reposant sur un modèle permet d’offrir une expérience client unifiée sur l’ensemble des canaux. Les graphistes peuvent créer des modèles pour la campagne (document d’une seule page ou de plusieurs pages) à l’aide d’une solution de création, comme [!DNL InDesign], et les charger vers [!DNL Experience Manager Assets] pour vous. Avant de créer un dérivé, vous devez charger un ou plusieurs modèles INDD et les rendre disponibles dans [!DNL Experience Manager] à l’avance.
 
 1. Dans l’interface [!DNL Experience Manager], cliquez sur [!UICONTROL Ressources].
 
@@ -56,11 +56,11 @@ Imaginons que vous voulez créer des contenus numériques papier, comme des broc
    ![chlimage_1-104](assets/chlimage_1-309.png)
 
 1. (Facultatif) Cliquez sur **[!UICONTROL Balises]** et sélectionnez une ou plusieurs balises pour la brochure. Cliquez sur **[!UICONTROL Confirmer]** pour confirmer votre sélection.
-1. Cliquez sur **[!UICONTROL Créer]**. Une boîte de dialogue s’ouvre pour confirmer que la nouvelle brochure a été créée. Cliquez sur **[!UICONTROL Ouvrir]** pour ouvrir la brochure en mode Édition.
+1. Cliquez sur **[!UICONTROL Créer]**. Une boîte de dialogue confirme la création d’une brochure. Cliquez sur **[!UICONTROL Ouvrir]** pour ouvrir la brochure en mode Édition.
 
    <!--![chlimage_1-106](assets/.png) -->
 
-   Vous pouvez aussi fermer la boîte de dialogue et accéder au dossier dans la page Modèles de départ pour afficher la brochure créée. Le type de document apparaît sur sa miniature en mode Carte. Par exemple, dans ce cas, le mot [!UICONTROL Brochure] est affiché dans la miniature.
+   Vous pouvez également fermer la boîte de dialogue et accéder au dossier dans la page Modèles à laquelle vous avez commencé pour afficher la brochure que vous avez créée. Le type de document apparaît sur sa miniature en mode Carte. Par exemple, dans ce cas, le mot [!UICONTROL Brochure] est affiché dans la miniature.
 
    ![chlimage_1-107](assets/chlimage_1-312.png)
 
@@ -79,7 +79,7 @@ Vous pouvez modifier un dérivé immédiatement après sa création. Vous pouvez
 
    L’outil de recherche de ressources et l’éditeur de texte sont affichés à gauche de la page. L’éditeur de texte s’ouvre par défaut.
 
-   Vous pouvez utiliser l’éditeur de texte pour modifier le texte à afficher dans le champ de texte. Vous pouvez modifier la taille, le style, la couleur et le type de police au niveau de la balise.
+   Vous pouvez utiliser l’éditeur de texte pour modifier le texte que vous souhaitez afficher dans le champ de texte. Vous pouvez modifier la taille, le style, la couleur et le type de la police au niveau de la balise.
 
    À l’aide de l’outil de recherche de ressources, vous pouvez rechercher des images dans [!DNL Experience Manager Assets] et remplacer les images modifiables du modèle par d’autres que vous aurez choisies.
 
@@ -95,7 +95,7 @@ Vous pouvez modifier un dérivé immédiatement après sa création. Vous pouvez
 
    ![chlimage_1-111](assets/chlimage_1-316.png)
 
-   Vous pouvez modifier les propriétés de texte, par exemple la taille, la couleur ou le style de police à l’aide des options fournies.
+   Vous pouvez modifier les propriétés du texte, par exemple le style, la couleur et la taille de la police à l’aide des options fournies.
 
 1. Cliquez sur **[!UICONTROL Aperçu]** pour prévisualiser les modifications de texte.
 
@@ -129,7 +129,7 @@ Vous pouvez modifier un dérivé immédiatement après sa création. Vous pouvez
    >Pour plus d’informations sur l’utilisation des documents [!DNL InDesign], reportez-vous à la section [Bonnes pratiques relatives à l’utilisation des documents InDesign dans Experience Manager](https://helpx.adobe.com/fr/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Pour générer un rendu PDF pour la brochure, sélectionnez l’option Acrobat dans la boîte de dialogue, puis cliquez sur **[!UICONTROL Continuer]**.
-1. Le document est créé dans le dossier où vous avez commencé. Pour afficher les rendus, ouvrez le document et choisissez **[!UICONTROL Rendus]** dans la liste de navigation globale.
+1. Le document est créé dans le dossier avec lequel vous avez commencé. Pour afficher les rendus, ouvrez le document et choisissez **[!UICONTROL Rendus]** dans la liste de navigation globale.
 
    ![chlimage_1-118](assets/chlimage_1-323.png)
 
@@ -157,7 +157,7 @@ Vous pouvez modifier un dérivé immédiatement après sa création. Vous pouvez
 
    Vous pouvez parcourir le référentiel ou les collections d’[!DNL Experience Manager Assets], puis accéder à l’emplacement des modèles souhaités et les sélectionner pour les fusionner.
 
-   Vous pouvez appliquer différents filtres pour rechercher les modèles souhaités. Par exemple, vous pouvez rechercher des modèles en fonction de leur type ou de leurs balises.
+   Vous pouvez appliquer différents filtres pour rechercher les modèles souhaités. Par exemple, vous pouvez rechercher des modèles en fonction du type de fichier ou des balises.
 
 1. Cliquez sur **[!UICONTROL Suivant]** dans la barre d’outils.
 1. Dans l’écran **[!UICONTROL Aperçu et réorganisation]**, réorganisez les modèles si nécessaire et prévisualisez la sélection de modèles à fusionner. Ensuite, cliquez sur **[!UICONTROL Suivant]** dans la barre d’outils.

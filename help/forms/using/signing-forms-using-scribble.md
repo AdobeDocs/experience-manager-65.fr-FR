@@ -8,10 +8,10 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 feature: Adaptive Forms
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 74%
+source-wordcount: '738'
+ht-degree: 73%
 
 ---
 
@@ -79,7 +79,7 @@ Vous pouvez appuyer sur l’icône **Configurer** ![configurer](assets/configure
    * **Message du modèle :** Spécifiez le message à afficher pendant le chargement du PDF de signatures. Les services Adobe Sign prennent du temps pour préparer et charger le PDF de signatures.
    * **Service de signature :** sélectionnez l’option **Signature tactile**.
 
-   * **Classe CSS** : spécifiez la classe CSS de la bibliothèque client, le cas échéant. Il est recommandé d’utiliser des [thèmes](../../forms/using/themes.md) et des [styles en ligne](../../forms/using/inline-style-adaptive-forms.md) au lieu de la classe CSS.
+   * **Classe CSS** : spécifiez la classe CSS de la bibliothèque client, le cas échéant. Utilisation [thèmes](../../forms/using/themes.md) et [styles en ligne](../../forms/using/inline-style-adaptive-forms.md) au lieu de la classe CSS.
 
    Appuyez sur l’icône Terminé ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour enregistrer les modifications. La signature est configurée correctement.
 

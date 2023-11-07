@@ -1,20 +1,16 @@
 ---
 title: Créer un groupe d’utilisateurs fermé
-seo-title: Creating a Closed User Group
 description: Découvrez comment créer un groupe d’utilisateurs fermé.
-seo-description: Learn how to work with Closed User Groups in Adobe Experience Manager.
-uuid: dc3c7dbd-2e86-43f9-9377-3b75053203b3
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 72%
+source-wordcount: '747'
+ht-degree: 69%
 
 ---
 
@@ -92,11 +88,11 @@ Cette option est facultative. Si rien n’est indiqué, la page de connexion sta
 
    >[!NOTE]
    >
-   >Les groupes d’utilisateurs fermés dans l’onglet Autorisations ne peuvent pas être déployés dans des Live Copies à partir de plans directeurs. Veuillez en tenir compte lors de la configuration de Live Copy.
+   >Les groupes d’utilisateurs fermés dans l’onglet Autorisations ne peuvent pas être déployés dans des Live Copies à partir de plans directeurs. Planifiez la configuration de la Live Copy.
    >
    >Pour plus d’informations, consultez [cette page](closed-user-groups.md#aem-livecopy).
 
-1. La boîte de dialogue **Modifier le groupe d’utilisateurs fermé** s’ouvre. Elle vous permet de rechercher et sélectionner votre groupe d’utilisateurs fermé, puis de confirmer la sélection avec **Enregistrer**.
+1. La variable **Modifier le groupe d’utilisateurs fermé** s’ouvre. Elle vous permet de rechercher et sélectionner votre groupe d’utilisateurs fermé, puis de confirmer la sélection avec **Enregistrer**.
 
    Le groupe est alors ajouté à la liste. Par exemple, le groupe **cug_access**.
 

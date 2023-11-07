@@ -7,7 +7,7 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: e130bab4-524d-4413-ba8b-53d0ed9e8623
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 12%
@@ -100,7 +100,7 @@ Sous , **[!UICONTROL Paramètres]** , spécifiez les paramètres des idées et d
 
 * **Types de fichier autorisés**
 
-  Pertinent uniquement si `Allow File Uploads` est cochée. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne peuvent pas être chargés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
+  Pertinent uniquement si `Allow File Uploads` est cochée. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple, .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne peuvent pas être chargés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
 
 * **Taille max. du fichier image joint**
 

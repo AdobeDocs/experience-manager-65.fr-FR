@@ -1,6 +1,6 @@
 ---
 title: Procédure de mise à niveau
-description: Découvrez la procédure de mise à niveau d’Adobe Experience Manager (AEM).
+description: Découvrez la procédure de mise à niveau de Adobe Experience Manager (AEM).
 contentOwner: sarchiz
 topic-tags: upgrading
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,9 +9,9 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 5242600c-2281-46f9-a347-d985b4e319b3
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '813'
 ht-degree: 21%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 21%
 
 >[!NOTE]
 >
->La mise à niveau nécessite un temps d’arrêt pour le niveau Auteur, car la plupart des mises à niveau d’Adobe Experience Manager (AEM) sont effectuées sur place. En suivant ces bonnes pratiques, vous pouvez réduire ou éliminer le temps d’arrêt du niveau Publication.
+>La mise à niveau nécessite un temps d’arrêt pour le niveau Auteur, car la plupart des mises à niveau de Adobe Experience Manager (AEM) sont effectuées sur place. En suivant ces bonnes pratiques, vous pouvez réduire ou éliminer le temps d’arrêt du niveau Publication.
 
-Lors de la mise à niveau de vos environnements AEM, vous devez tenir compte des différences d’approche entre la mise à niveau des environnements de création ou de publication afin de minimiser les temps d’arrêt pour vos auteurs et vos utilisateurs finaux. Cette page décrit la procédure de haut niveau pour mettre à niveau une topologie AEM en cours d’exécution sur une version d’AEM 6.x. Comme le processus diffère entre les niveaux de création et de publication, ainsi que les déploiements basés sur Mongo et TarMK, chaque niveau et micro-noyau a été répertorié dans une section distincte. Lors de l’exécution de votre déploiement, Adobe recommande d’abord de mettre à niveau votre environnement de création, de déterminer la réussite, puis de passer aux environnements de publication.
+Lors de la mise à niveau de vos environnements AEM, vous devez tenir compte des différences d’approche entre la mise à niveau des environnements de création ou de publication afin de minimiser les temps d’arrêt pour vos auteurs et vos utilisateurs finaux. Cette page décrit la procédure de haut niveau pour mettre à niveau une topologie AEM en cours d’exécution sur une version d’AEM 6.x. Le processus étant différent entre les niveaux Auteur et Publication et les déploiements basés sur Mongo et TarMK, chaque niveau et micro-noyau a été répertorié dans une section distincte. Lors de l’exécution de votre déploiement, Adobe recommande d’abord de mettre à niveau votre environnement de création, de déterminer la réussite, puis de passer aux environnements de publication.
 
 <!--
 >[!IMPORTANT]
@@ -34,7 +34,7 @@ Lors de la mise à niveau de vos environnements AEM, vous devez tenir compte des
 
 ### Démarrage de la topologie {#starting-topology}
 
-La topologie utilisée pour cette section consiste en un serveur d’auteur s’exécutant sur TarMK avec un Secondaire Cold. La réplication se produit du serveur d’auteur à la ferme de publication TarMK. Bien qu’elle ne soit pas illustrée ici, cette approche peut également être utilisée pour les déploiements qui utilisent le déchargement. Veillez à mettre à niveau ou à recréer l’instance de déchargement sur la nouvelle version après avoir désactivé les agents de réplication sur l’instance d’auteur et avant de les réactiver.
+La topologie utilisée pour cette section consiste en un serveur d’auteur s’exécutant sur TarMK avec Cold Standby. La réplication se produit du serveur d’auteur à la ferme de publication TarMK. Bien qu’elle ne soit pas illustrée ici, cette approche peut également être utilisée pour les déploiements qui utilisent le déchargement. Veillez à mettre à niveau ou à recréer l’instance de déchargement sur la nouvelle version après avoir désactivé les agents de réplication sur l’instance d’auteur et avant de les réactiver.
 
 ![tarmk_starting_topology](assets/tarmk_starting_topology.jpg)
 
@@ -44,7 +44,7 @@ La topologie utilisée pour cette section consiste en un serveur d’auteur s’
 
 1. Arrêtez la création de contenu..
 
-1. Arrêtez l’instance Secondaire.
+1. Arrêtez l’instance de secours.
 
 1. Désactivez les agents de réplication sur l’auteur.
 
@@ -65,7 +65,7 @@ La topologie utilisée pour cette section consiste en un serveur d’auteur s’
 
 ![if_successful](assets/if_successful.jpg)
 
-1. Copiez l’instance mise à niveau pour créer un Secondaire Cold.
+1. Copiez l’instance mise à niveau pour créer une instance Cold Standby.
 
 1. Démarrez l’instance d’auteur.
 
@@ -83,7 +83,7 @@ La topologie utilisée pour cette section consiste en un serveur d’auteur s’
 
 ### Démarrage de la topologie {#starting-topology-1}
 
-La topologie supposée de cette section est constituée d’un cluster d’auteur MongoMK avec au moins deux instances d’auteur AEM, prises en charge par au moins deux bases de données MongoMK. Toutes les instances d’auteur partagent une banque de données. Ces étapes doivent s’appliquer aux entrepôts de données S3 et File. La réplication se produit des serveurs d’auteur à la ferme de publication TarMK.
+La topologie utilisée pour cette section est constituée d’un cluster d’auteur MongoMK avec au moins deux instances d’auteur AEM, prises en charge par au moins deux bases de données MongoMK. Toutes les instances d’auteur partagent une banque de données. Ces étapes doivent s’appliquer aux entrepôts de données S3 et File. La réplication se produit des serveurs d’auteur à la ferme de publication TarMK.
 
 ![mongo-topology](assets/mongo-topology.jpg)
 
@@ -92,14 +92,14 @@ La topologie supposée de cette section est constituée d’un cluster d’auteu
 ![mongo-upgrade_prep](assets/mongo-upgrade_prep.jpg)
 
 1. Arrêtez la création de contenu..
-1. Cloner l’entrepôt de données à des fins de sauvegarde.
-1. Arrêtez toutes les instances d’auteur AEM sauf une, votre Principal auteur.
-1. Supprimez tous les noeuds MongoDB de l’ensemble de réplication, votre Principale instance Mongo.
-1. Mettez à jour le `DocumentNodeStoreService.cfg` sur l’auteur Principal pour refléter votre jeu de réplications de membre unique.
-1. Redémarrez l’auteur Principal pour vous assurer qu’il redémarre correctement.
-1. Désactivez les agents de réplication sur l’auteur Principal.
-1. Exécuter [tâches de maintenance préalables à la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) sur l’instance d’auteur Principale.
-1. Si nécessaire, mettez à niveau MongoDB sur l’Principale instance Mongo vers la version 3.2 avec WiredTiger.
+1. Cloner l’entrepôt de données pour la sauvegarde.
+1. Arrêtez toutes les instances d’auteur AEM, votre instance principale d’auteur.
+1. Supprimez tous les noeuds MongoDB de l’ensemble de réplication, votre instance Mongo principale, à l’exception d’un seul.
+1. Mettez à jour le `DocumentNodeStoreService.cfg` sur l’auteur principal pour refléter votre jeu de réplication de membre unique.
+1. Redémarrez l’auteur principal pour vous assurer qu’il redémarre correctement.
+1. Désactivez les agents de réplication sur l’auteur principal.
+1. Exécuter [tâches de maintenance préalables à la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) sur l’instance d’auteur principale.
+1. Si nécessaire, mettez à niveau MongoDB sur l’instance Mongo principale vers la version 3.2 avec WiredTiger.
 
 ### Exécution de la mise à niveau {#Upgrade-execution-1}
 
@@ -115,7 +115,7 @@ La topologie supposée de cette section est constituée d’un cluster d’auteu
 
 1. Créez de nouvelles instances d’auteur 6.5, connectées à votre instance de mise à niveau Mongo..
 
-1. Recréez les noeuds MongoDB qui ont été supprimés de la grappe.
+1. Recréez les noeuds MongoDB supprimés de la grappe.
 
 1. Mettez à jour le `DocumentNodeStoreService.cfg` pour refléter l’ensemble de réplication complet.
 
@@ -129,7 +129,7 @@ La topologie supposée de cette section est constituée d’un cluster d’auteu
 
 1. Reconfigurez les instances d’auteur secondaires pour établir la connexion au magasin de données cloné..
 
-1. Arrêtez l’instance Principale d’auteur mise à niveau.
+1. Arrêtez l’instance principale d’auteur mise à niveau.
 
 1. Désactivez l’instance principale Mongo mise à niveau.
 
@@ -154,7 +154,7 @@ La topologie supposée de cette section est composée de deux instances de publi
 ![upgrade-publish2](assets/upgrade-publish2.png)
 
 1. Arrêtez le trafic de l’instance de publication 2 à l’équilibreur de charge..
-1. Exécuter [maintenance avant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) sur la publication 2.
+1. Exécuter [maintenance avant upgrade](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) sur la publication 2.
 1. Exécutez une [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md) sur la publication 2.
 1. Mise à jour de Dispatcher ou du module web *si nécessaire*.
 1. Videz le cache de Dispatcher.

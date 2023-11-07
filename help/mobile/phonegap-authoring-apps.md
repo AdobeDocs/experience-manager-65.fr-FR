@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 1%
@@ -71,7 +71,7 @@ Le module de contenu permet à AEM’auteur d’applications de gérer le conten
 
 Le module de contenu crée un fichier ZIP, considéré comme un module de version de contenu, pour chaque mise à jour. Ces modules contiennent des ressources HTML et des pages HTML générées lors du rendu de l’application. Ils sont suffisamment intelligents pour ne compresser que les fichiers qui ont été modifiés depuis la dernière mise à jour.
 
-Mosaïque Gérer le module de contenu **Type** La colonne affiche &quot;Application&quot; pour désigner le contenu du shell d’application, par exemple la structure ou l’infrastructure de l’application gérée par un développeur, ou &quot;Contenu&quot; pour représenter le contenu de la page géré par l’auteur du contenu.
+Mosaïque Gérer le module de contenu **Type** La colonne affiche soit &quot;Application&quot; pour désigner le contenu du shell d’application, par exemple la structure ou l’infrastructure de l’application gérée par un développeur, soit &quot;Contenu&quot; qui représente le contenu de la page géré par l’auteur du contenu.
 
 Le contenu peut être représenté sous la forme d’une langue ou d’une partie particulière de l’application où plusieurs modules de publication de contenu sont utilisés par l’application. Le choix du mode de regroupement de votre contenu est flexible et dépend entièrement de la manière dont vous souhaitez gérer le contenu de votre application.
 

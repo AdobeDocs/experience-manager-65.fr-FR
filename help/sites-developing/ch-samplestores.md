@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: d8d9a799-3e30-442a-843b-d4d7ba70c557
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 91%
+source-wordcount: '468'
+ht-degree: 86%
 
 ---
 
@@ -25,7 +25,7 @@ ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez util
 
 >[!WARNING]
 >
->Les exemples de magasins candidats sont fournis comme configurations de référence pour vous aider à créer votre propre configuration dédiée pour votre projet. Ils ne doivent donc pas être utilisés directement.
+>Les exemples de candidats de magasin sont fournis en tant que configurations de référence pour vous aider à créer votre propre configuration dédiée pour votre projet. Ne les utilisez pas directement.
 
 ## Exemple de magasin candidat aem.segmentation {#aem-segmentation-sample-store-candidate}
 

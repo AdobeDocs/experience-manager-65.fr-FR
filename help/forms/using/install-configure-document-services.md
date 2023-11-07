@@ -1,16 +1,12 @@
 ---
 title: Installer et configurer des services de document
-seo-title: Installing and configuring document services
 description: Installez les services de documents d’AEM Forms pour créer, assembler, publier, archiver des documents PDF, ajouter des signatures numériques afin de limiter l’accès aux documents et de décoder les formulaires Barcoded Forms.
-seo-description: Install AEM Forms document services to create, assemble, distribute, archive PDF documents, add digital signatures to limit access to documents, and decode barcoded forms.
-uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
-discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: fbfe38e9d669cd506b687a3fb81ad4ce9e7d65da
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '5513'
+source-wordcount: '5512'
 ht-degree: 79%
 
 ---
@@ -499,7 +495,7 @@ Trust Store Management vous permet d’importer, de modifier et de supprimer des
 
 ### Configurer des certificats pour l’extension et le service de chiffrement des Readers {#set-up-certificates-for-reader-extension-and-encryption-service}
 
-Le service DocAssurance peut appliquer des droits d’utilisation aux documents du PDF. Pour appliquer des droits d’utilisation aux documents PDF, configurez les certificats :
+Le service DocAssurance peut appliquer des droits d’utilisation aux documents PDF. Pour appliquer des droits d’utilisation aux documents PDF, configurez les certificats :
 
 Avant de configurer des certificats, assurez -vous que vous disposez des éléments suivants :
 
@@ -790,7 +786,7 @@ Expiration de la licence d’Adobe Acrobat installée sur AEM Forms Server
 Lorsque l’utilisateur ou l’utilisatrice tente de convertir des fichiers Word ou Excel en PDF sur Microsoft Windows Server, l’erreur suivante se produit :
 
 *Message d’erreur du convertisseur principal :
-ALC-PDG-015-003-Le système ne peut pas ouvrir le fichier d’entrée. Envoyez à nouveau votre fichier ou contactez votre administrateur ou administratrice système.*
+ALC-PDG-015-003-Le système ne peut pas ouvrir le fichier d’entrée. Envoyez à nouveau votre fichier ou contactez votre administrateur système.*
 
 Pour résoudre le problème, voir [Impossible de convertir un fichier Word ou Excel en PDF sous Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
 

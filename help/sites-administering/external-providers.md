@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '446'
-ht-degree: 40%
+ht-degree: 32%
 
 ---
 
@@ -55,7 +55,7 @@ Ces fragments de code permettent de collecter des données et de générer des r
 >
 >Le site de démonstration de Geometrixx-Outdoors est configuré de sorte que les attributs fournis dans les Propriétés de la page soient ajoutés au code source HTML (juste au-dessus de la balise `</html>` (balise de fin) dans la balise `js` script.
 >
->Si votre propre dossier `/apps` n’hérite pas du composant Page par défaut (`/libs/foundation/components/page`), vous (ou les développeurs) devez vous assurer que les scripts `js` sont inclus, par exemple, en incluant `cq/cloudserviceconfigs/components/servicescomponents` ou en utilisant un mécanisme similaire.
+>Si vous le souhaitez `/apps` n’héritez pas du composant de page par défaut ( `/libs/foundation/components/page`) vous (ou vos développeurs) devez vous assurer que la variable `js` les scripts sont inclus, par exemple, en incluant `cq/cloudserviceconfigs/components/servicescomponents`ou en utilisant un mécanisme similaire.
 >
 >Sans cela, aucun des services (Générique, Analytics, Target, etc.) ne fonctionnera.
 

@@ -1,19 +1,15 @@
 ---
 title: Accès au contenu généré par l’utilisateur avec SRP
-seo-title: Accessing UGC with SRP
 description: Lorsqu’un site est configuré pour utiliser ASRP ou MSRP, le contenu généré par l’utilisateur réel n’est pas stocké dans AEM magasin de noeuds (JCR).
-seo-description: When a site is configured to use ASRP or MSRP, the actual UGC is not be stored in AEM's node store (JCR)
-uuid: 30549f93-e370-4b8b-a35a-69e05884227e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 72d4022c-43ba-49e0-b94c-f2beabaef64d
 docset: aem65
 exl-id: 1157366f-2cc5-46e4-8ec6-e66fe5d0a0f6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -67,13 +63,13 @@ Méthodes à éviter :
 
 ### Utilisation des collections de recherche {#use-search-collections}
 
-Différents SRP peuvent avoir différents langages de requête natifs. Il est recommandé d’utiliser les méthodes de la variable [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) pour exécuter le langage de requête approprié.
+Différents SRP peuvent avoir différents langages de requête natifs. Utilisez les méthodes de la méthode [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) pour exécuter le langage de requête approprié.
 
 Pour plus d’informations, voir [Principes de recherche](/help/communities/search-implementation.md).
 
 ## Ressources {#resources}
 
-* [Stockage de contenu communautaire](/help/communities/working-with-srp.md) - aborde les choix de SRP disponibles pour un magasin commun UGC
+* [Stockage de contenu communautaire](/help/communities/working-with-srp.md) - discute des choix de SRP disponibles pour un magasin commun UGC
 * [Présentation du fournisseur de ressources de stockage](/help/communities/srp.md) - présentation et utilisation du référentiel
 * [Principes de base de la SRP et du contenu généré par l’utilisateur](/help/communities/srp-and-ugc.md) - Méthodes d’utilitaire SRP et exemples
 * [Principes de recherche](/help/communities/search-implementation.md) - informations essentielles pour la recherche du contenu généré par l’utilisateur

@@ -1,19 +1,15 @@
 ---
 title: Test d’une mise en page en responsive design dans We.Retail
-seo-title: Trying out Responsive Layout in We.Retail
 description: Découvrez comment tester la mise en page réactive dans Adobe Experience Manager à l’aide de We.Retail.
-seo-description: null
-uuid: d9613655-f54e-458f-9175-d07bb868f58b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 2d374e88-ea09-43d5-986c-5d77b0705b93
 exl-id: 6df5fb10-a7f1-4d5d-ac00-b4be3d5d3d18
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 60%
+source-wordcount: '251'
+ht-degree: 50%
 
 ---
 
@@ -47,4 +43,4 @@ Toutes les pages We.Retail utilisent le composant conteneur de mise en page pour
 
 ## Informations supplémentaires {#further-information}
 
-Pour plus d’informations, reportez-vous au document relatif à la création [Mise en page en responsive design](/help/sites-authoring/responsive-layout.md) ou au document administrateur [Configuration du conteneur de mise en pages et du mode Mise en page](/help/sites-administering/configuring-responsive-layout.md) pour obtenir des détails techniques complets.
+Pour plus d’informations, voir le document de création [Mise en page réactive](/help/sites-authoring/responsive-layout.md) ou le document administrateur [Configuration du conteneur de mises en page et du mode Mise en page](/help/sites-administering/configuring-responsive-layout.md) pour obtenir des informations techniques complètes.

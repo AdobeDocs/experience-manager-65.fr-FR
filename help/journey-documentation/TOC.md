@@ -5,7 +5,7 @@ breadcrumb-title: Parcours de documentation AEM
 user-guide-description: Les Parcours de documentation fournissent une structure narrative dans AEM documentation en liant des fonctionnalités complexes et disparates pour résoudre un objectif commercial d’une manière conforme aux bonnes pratiques. Conçu pour les débutants dans AEM, les parcours présentent les concepts et les fonctionnalités permettant d’atteindre un objectif, étape par étape.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 95%
@@ -16,7 +16,7 @@ ht-degree: 95%
 # Parcours de documentation AEM {#documentation-journeys}
 
 <!--
-Please note that all links to other guides need to be absolute references with leading protocol and domain since SCCM does not allow pages to be referenced with relative links in multiple ToCs.
+All links to other guides need to be absolute references with leading protocol and domain since SCCM does not allow pages to be referenced with relative links in multiple ToCs.
 -->
 
 + Parcours de documentation AEM {#overview}

@@ -9,9 +9,9 @@ docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2852'
+source-wordcount: '2851'
 ht-degree: 3%
 
 ---
@@ -285,7 +285,7 @@ Cette version comprend deux règles de notation pour la variable [Fonction Forum
 * `subRules` est un attribut de type String[] sur la règle `jcr:content` noeud .
 
 * `sub-rules` peut être partagée entre différentes règles de notation.
-* `rules` doit être situé dans un emplacement de référentiel avec une autorisation de lecture pour tout le monde.
+* `rules` doit se trouver dans un emplacement de référentiel avec une autorisation de lecture pour tout le monde.
 
    * Les noms des règles doivent être uniques, quel que soit l’emplacement.
 
@@ -385,15 +385,15 @@ cURL -i -X POST -H *header* -u *signature* -F *operation* -F *badge* *member-pro
 
 *header* = En-tête personnalisé &quot;Accept:application/json&quot; à transmettre au serveur (obligatoire)
 
-*signature* = administrator-id:password par exemple : admin:admin
+*signature* = administrator-id:password par exemple, admin:admin
 
 *operation* = &quot;:operation=social:assignBadge&quot; OU &quot;:operation=social:deleteBadge&quot;
 
 *badge* = &quot;badgeContentPath=*badge-image-file*&quot;
 
-*badge-image-file* = emplacement du fichier image de badge dans le référentiel, par exemple : /libs/settings/community/badging/images/modérator/jcr:content/moderator.png
+*badge-image-file* = emplacement du fichier image de badge dans le référentiel, par exemple, /libs/settings/community/badging/images/modérator/jcr:content/moderator.png
 
-*member-profile-url* = point de terminaison du profil du membre lors de la publication, par exemple : https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
+*member-profile-url* = point de terminaison du profil du membre lors de la publication, par exemple, https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
 
 >[!NOTE]
 >
@@ -616,7 +616,7 @@ Ensuite, [republier](/help/communities/sites-console.md#publishing-the-site) le 
 Enfin,
 
 * Accédez au composant sur l’instance de publication.
-* Connectez-vous en tant que membre de la communauté (par exemple : weston.mccall@dodgit.com / password).
+* Connectez-vous en tant que membre de la communauté (par exemple, weston.mccall@dodgit.com / password).
 * Publiez un nouveau sujet de forum.
 * La page doit être actualisée pour que le badge s’affiche.
 

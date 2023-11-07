@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 role: Developer
 exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2205'
-ht-degree: 94%
+source-wordcount: '2199'
+ht-degree: 91%
 
 ---
 
@@ -77,7 +77,7 @@ Avant d’effectuer par programmation une opération de l’API du client de ser
 
 Pour restituer correctement un formulaire reposant sur des fragments, veillez à ce que le service Forms puisse localiser le formulaire et les fragments (les fichiers XDP) auxquels la conception de formulaire fait référence. Prenons lʼexemple suivant : le formulaire est nommé PO.xdp et utilise deux fragments nommés FooterUS.xdp et FooterCanada.xdp. Dans ce cas, le service Forms doit pouvoir localiser les trois fichiers XDP.
 
-Vous pouvez organiser un formulaire et ses fragments en plaçant le formulaire à un emplacement et les fragments à un autre, ou vous pouvez placer tous les fichiers XDP au même emplacement. Pour les besoins de cette section, supposons que tous les fichiers XDP sont situés dans le référentiel AEM Forms. Pour plus d’informations sur le placement des fichiers XDP dans le référentiel AEM Forms, consultez la section [Enregistrer les ressources](/help/forms/developing/aem-forms-repository.md#writing-resources).
+Vous pouvez organiser un formulaire et ses fragments en plaçant le formulaire à un emplacement et les fragments à un autre, ou vous pouvez placer tous les fichiers XDP au même emplacement. Pour les besoins de cette section, supposons que tous les fichiers XDP se trouvent dans le référentiel AEM Forms. Pour plus d’informations sur le placement des fichiers XDP dans le référentiel AEM Forms, consultez la section [Enregistrer les ressources](/help/forms/developing/aem-forms-repository.md#writing-resources).
 
 Lors de la restitution dʼun formulaire reposant sur des fragments, vous ne devez référencer que le formulaire lui-même et non les fragments. Par exemple, vous devez référencer PO.xdp et non FooterUS.xdp ou FooterCanada.xdp. Veillez à placer les fragments à un emplacement localisable par le service Forms.
 
@@ -122,7 +122,7 @@ Restituer un formulaire reposant sur des fragments à l’aide de l’API Forms 
 
    * Créez un objet `URLSpec` stockant des valeurs URI en utilisant son constructeur.
    * Appelez la méthode `setApplicationWebRoot` de l’objet `URLSpec` et transmettez une valeur de chaîne qui représente la racine web de l’application.
-   * Appelez la méthode `setContentRootURI` de lʼobjet `URLSpec` et transmettez une valeur de chaîne qui spécifie la valeur URI de la racine du contenu. Assurez-vous que la conception de formulaire et les fragments sont situés dans lʼURI racine du contenu. Dans le cas contraire, le service Forms renvoie une exception. Pour référencer le référentiel, spécifiez `repository://`.
+   * Appelez la méthode `setContentRootURI` de l’objet `URLSpec` et transmettez une valeur de chaîne qui spécifie la valeur de la racine du contenu URI. Assurez-vous que la conception de formulaire et les fragments se trouvent dans l’URI racine du contenu. Dans le cas contraire, le service Forms renvoie une exception. Pour référencer le référentiel, spécifiez `repository://`.
    * Appeler la méthode `setTargetURL` de l’objet `URLSpec` et transmettez une valeur de chaîne qui spécifie la valeur de l’URL cible à l’endroit où les données de formulaire sont publiées. Si vous définissez l’URL cible dans la conception de formulaire, vous pouvez transmettre une chaîne vide. Vous pouvez également spécifier l’URL vers laquelle un formulaire est envoyé pour effectuer les calculs.
 
 1. Restituer le formulaire
@@ -183,7 +183,7 @@ Générer un formulaire basé sur des fragments à l’aide de l’API Forms (We
 
    * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire qui fait partie d’une application Forms, veillez à spécifier le chemin dʼaccès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Un objet `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez `null`.
-   * Objet `PDFFormRenderSpec` stockant les options d’exécution. Notez que l’option de PDF balisé ne peut pas être définie si le document d’entrée est un document PDF. Si le fichier d’entrée est un fichier XDP, l’option de PDF balisé peut être définie.
+   * Un objet `PDFFormRenderSpec` stockant les options d’exécution. L’option de PDF balisé ne peut pas être définie si le document d’entrée est un document de PDF. Si le fichier d’entrée est un fichier XDP, l’option de PDF balisé peut être définie.
    * Objet `URLSpec` contenant les valeurs URI requises par le service Forms.
    * Objet `java.util.HashMap` stockant les pièces jointes. Il sʼagit dʼun paramètre facultatif. Vous pouvez indiquer `null` si vous ne souhaitez pas joindre de fichier au formulaire.
    * Objet `com.adobe.idp.services.holders.BLOBHolder` vide qui est renseigné par la méthode. Ce paramètre est utilisé pour stocker le formulaire généré.

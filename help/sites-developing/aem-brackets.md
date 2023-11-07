@@ -1,19 +1,15 @@
 ---
 title: Extension AEM Brackets
-seo-title: AEM Brackets Extension
 description: Découvrez comment utiliser l’extension Adobe Experience Manager pour Brackets.
-seo-description: null
-uuid: 2f0dfa42-eb34-44ae-90eb-b5f321c03b79
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 65%
+source-wordcount: '935'
+ht-degree: 61%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 65%
 
 ## du commerce électronique {#overview}
 
-L’extension AEM Brackets offre un workflow fluide pour modifier les composants AEM et les bibliothèques clientes. Elle tire parti de la puissance de l’éditeur de code [Brackets](https://brackets.io/) qui donne accès aux fichiers et calques Photoshop depuis l’éditeur de code. La synchronisation simplifiée (aucun Maven ou File Vault requis) grâce à l’extension améliore le rendement des développeurs et permet également aux développeurs de front-end ayant des connaissances AEM limitées de participer à des projets. Cette extension prend également en charge le [langage de modèle HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) qui élimine la complexité des JSP pour faciliter et sécuriser le développement de composants.
+L’extension AEM Brackets fournit un processus fluide pour modifier AEM composants et les bibliothèques clientes, et utilise la puissance de [Brackets](https://brackets.io/) l’éditeur de code, qui permet d’accéder aux calques et fichiers Photoshop à partir de l’éditeur de code. La synchronisation simplifiée (aucun Maven ou File Vault requis) grâce à l’extension améliore le rendement des développeurs et permet également aux développeurs de front-end ayant des connaissances AEM limitées de participer à des projets. Cette extension prend également en charge le [langage de modèle HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) qui élimine la complexité des JSP pour faciliter et sécuriser le développement de composants.
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 
@@ -71,7 +67,7 @@ Le projet doit contenir au moins :
 
 1. a `jcr_root` Dossier (par exemple, `myproject/jcr_root`)
 
-1. a `filter.xml` (par exemple, `myproject/META-INF/vault/filter.xml`) ; pour plus d’informations sur la structure de la variable `filter.xml` veuillez consulter le fichier [Définition du filtre Workspace](https://jackrabbit.apache.org/filevault/filter.html).
+1. a `filter.xml` (par exemple, `myproject/META-INF/vault/filter.xml`) ; pour plus d’informations sur la structure de la variable `filter.xml` voir le fichier [Définition du filtre Workspace](https://jackrabbit.apache.org/filevault/filter.html).
 
 Dans le menu **Fichier** de Brackets, choisissez **Ouvrir le dossier...** et choisissez le dossier `jcr_root` ou le dossier du projet parent.
 

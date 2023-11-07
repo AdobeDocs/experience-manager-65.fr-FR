@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3588'
-ht-degree: 71%
+ht-degree: 69%
 
 ---
 
@@ -467,7 +467,7 @@ public class MyProcess implements WorkflowProcess {
 
 ### Utilisation d’ECMAScript {#using-ecmascript}
 
-Les scripts ECMA permettent aux développeurs de scripts d’implémenter des étapes de processus. Les scripts sont situés dans le référentiel JCR et exécutés à partir de cet emplacement.
+Les scripts ECMA permettent aux développeurs de scripts d’implémenter des étapes de processus. Les scripts se trouvent dans le référentiel JCR et sont exécutés à partir de cet emplacement.
 
 Le tableau suivant répertorie les variables immédiatement disponibles pour traiter les scripts, ce qui permet d’accéder aux objets de l’API Java du workflow.
 
@@ -528,7 +528,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 
 Pour utiliser le script, procédez comme suit :
 
-1. Créez le script (par exemple avec CRXDE Lite) et enregistrez-le dans le référentiel ci-dessous `//apps/workflow/scripts/`.
+1. Créez le script (par exemple, avec CRXDE Lite) et enregistrez-le dans le référentiel ci-dessous. `//apps/workflow/scripts/`
 1. Pour spécifier un titre qui identifie le script dans la boîte de dialogue de modification d’**Étape du processus**, ajoutez les propriétés suivantes au nœud `jcr:content` de votre script :
 
    | Nom | Type | Valeur |
@@ -619,7 +619,7 @@ Pour définir une étape de participant en tant que composant de service OSGI (c
 
 Vous pouvez créer un script ECMA qui sélectionne l’utilisateur auquel est affecté l’élément de travail généré par **Étape du participant**. Le script doit inclure une fonction nommée `getParticipant` qui ne nécessite aucun argument et renvoie une `String` contenant l’ID d’un utilisateur ou d’un groupe.
 
-Les scripts sont situés dans le référentiel JCR et exécutés à partir de cet emplacement.
+Les scripts se trouvent dans le référentiel JCR et y sont exécutés.
 
 Le tableau suivant répertorie les variables qui permettent un accès immédiat aux objets Java de workflow dans vos scripts.
 
@@ -645,7 +645,7 @@ function getParticipant() {
 }
 ```
 
-1. Créez le script (par exemple avec CRXDE Lite) et enregistrez-le dans le référentiel ci-dessous `//apps/workflow/scripts`.
+1. Créez le script (par exemple, avec CRXDE Lite) et enregistrez-le dans le référentiel ci-dessous. `//apps/workflow/scripts`
 1. Pour spécifier un titre qui identifie le script dans la boîte de dialogue de modification d’**Étape du processus**, ajoutez les propriétés suivantes au nœud `jcr:content` de votre script :
 
    | Nom | Type | Valeur |
@@ -803,7 +803,7 @@ Pour commencer facilement à créer votre propre étape personnalisée, copiez u
    >
    >Cette étape ne s’applique pas à l’éditeur de modèle d’IU classique.
 
-1. Placez ensuite l’étape copiée dans votre dossier /apps ; par exemple :
+1. Placez ensuite l’étape copiée dans votre dossier /apps ; par exemple, comme suit :
 
    `/apps/cq/workflow/components/model/myCustomStep`
 
@@ -825,7 +825,7 @@ Pour commencer facilement à créer votre propre étape personnalisée, copiez u
 
      Doit hériter d’une étape existante.
 
-     Dans cet exemple, nous héritons de l’étape de base à partir de `cq/workflow/components/model/step`, mais vous pouvez utiliser d’autres super types comme `participant`, `process`, etc.
+     Dans cet exemple, nous héritons de l’étape de base à l’adresse `cq/workflow/components/model/step`, mais vous pouvez utiliser d’autres super types comme `participant`, `process`, etc.
 
    * `jcr:title`
 
@@ -1042,4 +1042,4 @@ Exemple de `_cq_dialog/.content.xml` utilisé dans ce cas de figure :
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
 >
->  Vous n’avez pas à modifier les `/libs`, utilisez-les simplement comme exemples. Si vous souhaitez tirer parti des étapes existantes, copiez-les dans `/apps` et modifiez-les.
+>  Vous n’avez pas à modifier les `/libs`, utilisez-les simplement comme exemples. Si vous souhaitez utiliser l’une des étapes existantes, copiez-les dans `/apps` et modifiez-les ici.

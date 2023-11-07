@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 exl-id: 06ca4e6d-9ab7-4c5b-905c-07c448632f2b
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6384'
-ht-degree: 90%
+source-wordcount: '6381'
+ht-degree: 88%
 
 ---
 
@@ -19,7 +19,7 @@ Cette page présente tous les xtypes disponibles avec Adobe Experience Manager (
 
 Dans le langage ExtJS, un xtype est un nom symbolique donné à une classe. Vous pouvez lire le paragraphe « Composant XTypes » de la [Présentation d’ExtJS 2](https://www.sencha.com/learn/overview-of-extjs-2) pour obtenir une explication détaillée sur les xtypes et leur utilisation.
 
-Pour obtenir des informations complètes sur tous les widgets disponibles dans AEM, reportez-vous à la [documentation relative à l’API de widget](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
+Pour obtenir des informations complètes sur tous les widgets disponibles dans AEM, voir la section [documentation de l’API de widget](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
 Pour déterminer les composants dans lesquels un xtype donné est utilisé au sein d’AEM, vous pouvez utiliser la requête Xpath suivante dans CRXDE en remplaçant « checkbox » par le xtype qui vous intéresse :
 
@@ -263,7 +263,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-desso
 
   [CQ.Ext.DataView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DataView)
 
-   Mécanisme pour l’affichage des données à l’aide des modèles de mise en page personnalisés et le formatage. DataView utilise un [CQ.Ext.XTemplate](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.XTemplate) comme mécanisme de modélisation interne et il est lié à un [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store) de façon à ce que l’affichage soit automatiquement mis à jour à mesure que les données de la boutique sont modifiées.
+  Mécanisme pour l’affichage des données à l’aide des modèles de mise en page personnalisés et le formatage. DataView utilise un [CQ.Ext.XTemplate](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.XTemplate) comme mécanisme de modélisation interne et il est lié à un [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store) de façon à ce que l’affichage soit automatiquement mis à jour à mesure que les données de la boutique sont modifiées.
 
 * datefield
 
@@ -383,7 +383,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-desso
 
   [CQ.Ext.grid.GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)
 
-  Cette classe représente la Principale interface d’un contrôle de grille basé sur des composants pour représenter les données dans un format tabulaire de lignes et de colonnes.
+  Cette classe représente l’interface principale d’un contrôle de grille basé sur un composant pour représenter les données dans un format tabulaire de lignes et de colonnes.
 
 * groupingstore
 
@@ -703,7 +703,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-desso
 
   [CQ.form.SearchField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SearchField)
 
-  SearchField fournit un champ de recherche qui permet d’obtenir des résultats dans une liste déroulante et peut être utilisé pour effectuer une recherche dans le référentiel.
+  SearchField fournit un champ de recherche qui fournit les résultats dans une liste déroulante qui peut être utilisée pour rechercher le référentiel.
 
 * selection
 
@@ -733,7 +733,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-desso
 
   [CQ.form.SizeField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SizeField)
 
-  SizeField permet de saisir la largeur et la hauteur (par exemple, pour une image).
+  SizeField permet à l’utilisateur de saisir la largeur et la hauteur (par exemple, pour une image).
 
 * slider
 
@@ -761,7 +761,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-desso
 
   [CQ.form.SmartImage](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SmartImage)
 
-  SmartImage est un téléchargeur d’images intelligent. Il fournit des outils pour traiter une image chargée, par exemple un outil pour définir des images à zones cliquables et un recadrage d’image.
+  SmartImage est un téléchargeur d’images intelligent. Il fournit des outils pour traiter une image téléchargée, par exemple un outil pour définir des zones cliquables et un recadrage d’image.
 
   Le composant est conçu pour être utilisé dans un onglet de boîte de dialogue distinct.
 
@@ -781,7 +781,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-desso
 
   [CQ.Ext.SplitButton](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.SplitButton)
 
-   Bouton de division qui intègre une flèche déroulante capable de déclencher un événement séparément de l’événement de clic par défaut du bouton. En règle générale, cette option est utilisée pour afficher un menu déroulant qui fournit des options supplémentaires à l’action de bouton Principal, mais tout gestionnaire personnalisé peut fournir l’implémentation par clic de flèche.
+   Bouton de division qui intègre une flèche déroulante capable de déclencher un événement séparément de l’événement de clic par défaut du bouton. En règle générale, cette option est utilisée pour afficher un menu déroulant qui fournit des options supplémentaires à l’action de bouton principal, mais tout gestionnaire personnalisé peut fournir l’implémentation par clic de flèche.
 
 * static
 
@@ -873,7 +873,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-desso
 
   [CQ.Ext.Tip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Tip)
 
-   Classe de base pour [CQ.Ext.QuickTip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTip) et [CQ.Ext.Tooltip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Tooltip) qui fournit la mise en page de base et le positionnement dont toutes les classes basées sur les conseils ont besoin. Cette classe peut être utilisée directement pour obtenir des conseils simples et statiques.
+  Classe de base pour [CQ.Ext.QuickTip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTip) et [CQ.Ext.Tooltip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Tooltip) qui fournit la mise en page de base et le positionnement dont toutes les classes basées sur les conseils ont besoin. Cette classe peut être utilisée directement pour obtenir des conseils simples et statiques.
 
 * titleseparator
 

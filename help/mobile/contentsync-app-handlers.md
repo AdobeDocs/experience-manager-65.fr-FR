@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fec86f03-f81e-460a-9f84-d6304c95128c
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Ce gestionnaire doit être ajouté à toute configuration ContentSync de l’app
 }
 ```
 
-**mobilecontentpackageslisting** Répertorie le module de contenu AEM dans une application donnée ainsi que l’URL du serveur vers lequel effectuer les demandes de mise à jour. Il est utilisé par les js côté client sur l’appareil pour demander des mises à jour de contenu.
+**mobilecontentpackageslisting** Répertorie le package de contenu AEM dans une application donnée et le serverURL vers lequel effectuer les requêtes de mise à jour. Il est utilisé par les js côté client sur l’appareil pour demander des mises à jour de contenu.
 
 Le gestionnaire doit être utilisé sur AEM Configuration ContentSync de l’interpréteur d’applications (noeud avec pge-type=app-instance).
 

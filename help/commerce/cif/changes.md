@@ -2,10 +2,10 @@
 title: Modifications notables apportées au module complémentaire CIF (Commerce Integration Framework)
 description: Modifications notables du module complémentaire Commerce Integration Framework (CIF) par rapport aux anciennes versions du CIF.
 exl-id: 41dee21a-9ae2-4067-a32a-2d4633323fc4
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
-workflow-type: ht
-source-wordcount: '321'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '320'
+ht-degree: 94%
 
 ---
 
@@ -15,7 +15,7 @@ Ce document met en évidence les différences importantes entre le module compl�
 
 ## Installation et mises à jour
 
-Le module complémentaire AEM CIF peut être installé et mis à jour grâce au gestionnaire de modules AEM.
+Le package complémentaire AEM CIF peut être installé et mis à jour grâce au gestionnaire de packages AEM.
 
 **Versions CIF précédentes**
 
@@ -33,7 +33,7 @@ Le point d’entrée est configuré via la console OSGi.
 
 ## Déploiement du projet CIF Venia
 
-Le projet disponible dans les [Guides AEM GitHub - Projet CIF Venia](https://github.com/adobe/aem-cif-guides-venia) et déploiement effectué via le gestionnaire de modules AEM.
+Le projet disponible dans les [Guides AEM GitHub - Projet CIF Venia](https://github.com/adobe/aem-cif-guides-venia) et déploiement effectué via le gestionnaire de packages AEM.
 
 **Versions CIF précédentes**
 
@@ -57,4 +57,4 @@ AEM effectue le rendu à la volée des expériences de catalogue de produits à 
 
 >[!NOTE]
 >
->Pour obtenir de la documentation supplémentaire sur l’utilisation du CIF avec les Managed Services ou On-Premise AEM, consultez [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html).
+>Pour obtenir de la documentation supplémentaire sur l’utilisation de CIF avec AEM Managed Service ou Adobe On-Premise, voir [Commerce integration framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)

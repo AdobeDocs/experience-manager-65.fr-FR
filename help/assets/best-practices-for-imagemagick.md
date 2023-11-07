@@ -5,20 +5,20 @@ contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools
 exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
-source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '693'
-ht-degree: 100%
+ht-degree: 65%
 
 ---
 
 # Installation et configuration d’ImageMagick pour une utilisation avec [!DNL Experience Manager Assets] {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
-ImageMagick est un module externe logiciel servant à créer, modifier, composer ou convertir des images bitmap. Il peut lire et écrire des images dans plusieurs formats (plus de 200), dont PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF et SVG. Utilisez ImageMagick pour redimensionner, réaliser une symétrie, effectuer un miroir, faire pivoter, déformer, cisailler et transformer des images. Vous pouvez également régler les couleurs des images, ainsi qu’appliquer divers effets spéciaux, ou tracer du texte, des lignes, des polygones, des ellipses et des courbes à l’aide d’ImageMagick.
+ImageMagick est un module externe logiciel servant à créer, modifier, composer ou convertir des images bitmap. Il peut lire et écrire des images dans plusieurs formats (plus de 200), dont PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF et SVG. Utilisez ImageMagick pour redimensionner, retourner, miroir, faire pivoter, déformer, cisailler et transformer des images. Vous pouvez également ajuster les couleurs d’une image, appliquer divers effets spéciaux ou dessiner du texte, des lignes, des polygones, des ellipses et des courbes à l’aide d’ImageMagick.
 
-Utilisez le gestionnaire de médias d’[!DNL Adobe Experience Manager] à partir de la ligne de commande afin de traiter les images via ImageMagick. Pour utiliser plusieurs formats de fichiers avec ImageMagick, voir [Meilleures pratiques relatives au format de fichier des ressources](/help/assets/assets-file-format-best-practices.md). Pour connaître tous les formats de fichiers pris en charge, voir [Formats de ressources pris en charge](/help/assets/assets-formats.md).
+Utilisez le gestionnaire de médias d’[!DNL Adobe Experience Manager] à partir de la ligne de commande afin de traiter les images via ImageMagick. Pour utiliser divers formats de fichier à l’aide d’ImageMagick, voir [Bonnes pratiques relatives aux formats de fichier de ressources](/help/assets/assets-file-format-best-practices.md). Pour en savoir plus sur tous les formats de fichiers pris en charge, voir [Formats pris en charge par Assets](/help/assets/assets-formats.md).
 
-Pour traiter des fichiers volumineux à l’aide d’ImageMagick, veuillez tenir compte de besoins en mémoire plus élevés que d’habitude, des modifications potentielles requises pour les stratégies IM, ainsi que de l’impact global sur les performances. La mémoire requise dépend de divers facteurs tels que la résolution, la profondeur des couleurs, le profil colorimétrique et le format de fichier. Si vous envisagez de traiter des fichiers très volumineux à l’aide d’ImageMagick, effectuez correctement le test des performances du serveur [!DNL Experience Manager]. Certaines ressources utiles sont fournies à la fin.
+Pour traiter des fichiers volumineux à l’aide d’ImageMagick, pensez à des exigences de mémoire plus élevées que d’habitude, aux modifications potentielles requises par les stratégies de messagerie instantanée et à l’impact global sur les performances. Les exigences en matière de mémoire dépendent de divers facteurs tels que la résolution, la profondeur de bit, le profil colorimétrique et le format de fichier. Si vous envisagez de traiter des fichiers très volumineux à l’aide d’ImageMagick, effectuez correctement le test des performances du serveur [!DNL Experience Manager]. Certaines ressources utiles sont fournies à la fin.
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ Pour traiter des fichiers volumineux à l’aide d’ImageMagick, veuillez tenir
 
 ## Installation d’ImageMagick {#installing-imagemagick}
 
-Plusieurs versions des fichiers d’installation d’ImageMagic sont disponibles pour les différents systèmes d’exploitation. Utilisez la version appropriée pour votre système d’exploitation.
+Plusieurs versions des fichiers d’installation ImageMagic sont disponibles pour différents systèmes d’exploitation. Utilisez la version appropriée de votre système d’exploitation.
 
 1. Téléchargez les [fichiers d’installation d’ImageMagick](https://www.imagemagick.org/script/download.php) adaptés à votre système d’exploitation.
 1. Pour installer ImageMagick sur le disque hébergeant le serveur [!DNL Experience Manager], lancez le fichier d’installation.
@@ -60,7 +60,7 @@ Vous pouvez configurer l’étape de processus de ligne de commande en fonction 
 
    >[!NOTE]
    >
-   >La commande `convert` peut ne pas s’exécuter avec certaines versions de Windows (par exemple, Windows SE), car elle entre en conflit avec l’utilitaire `convert` natif qui fait partie de l’installation de Windows. Dans ce cas, précisez le chemin complet de l’utilitaire ImageMagick. Par exemple, spécifiez :
+   >La variable `convert` La commande peut ne pas s’exécuter avec certaines versions de Windows (par exemple, Windows SE), car elle est en conflit avec la version native `convert` qui fait partie de l’installation de Windows. Dans ce cas, précisez le chemin complet de l’utilitaire ImageMagick. Par exemple, spécifiez :
    >
    >
    >`"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ./${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`
@@ -79,11 +79,11 @@ Vous pouvez configurer l’étape de processus de ligne de commande en fonction 
 
 ## Réduction des vulnérabilités en matière de sécurité {#mitigating-security-vulnerabilities}
 
-Il existe plusieurs vulnérabilités de sécurité liées à l’utilisation d’ImageMagick pour traiter les images. Par exemple, le traitement d’images envoyées par l’utilisateur entraîne un risque d’exécution de code à distance (RCE).
+Il existe plusieurs vulnérabilités de sécurité associées à l’utilisation d’ImageMagick pour traiter les images. Par exemple, le traitement des images envoyées par l’utilisateur implique le risque d’exécution de code à distance (RCE).
 
-En outre, plusieurs modules externes de traitement d’images dépendent de la bibliothèque ImageMagick, y compris, sans s’y limiter, imagick de PHP, rmagick et paperclip de Ruby, et imagemagick de nodejs.
+En outre, divers plug-ins de traitement d’images dépendent de la bibliothèque ImageMagick, y compris, mais sans s’y limiter, imagick de PHP, rmagick et paperclip de Ruby, et imagemagick de nodejs.
 
-Si vous utilisez ImageMagick ou une bibliothèque affectée, Adobe vous recommande de limiter les vulnérabilités connues en réalisant au moins l’une des tâches suivantes (de préférence les deux) :
+Si vous utilisez ImageMagick ou une bibliothèque affectée, Adobe vous recommande d’atténuer les vulnérabilités connues en effectuant au moins l’une des tâches suivantes (de préférence les deux) :
 
 1. Vérifiez que tous les fichiers image commencent par les [« octets magiques »](https://en.wikipedia.org/wiki/List_of_file_signatures) attendus, correspondant aux types de fichier image que vous prenez en charge avant de les envoyer à ImageMagick pour le traitement.
-1. Utilisez un fichier de régulation pour désactiver les codes vulnérables d’ImageMagick. La stratégie globale pour ImageMagick se trouve dans `/etc/ImageMagick`.
+1. Utilisez un fichier de politique pour désactiver les codes vulnérables d’ImageMagick. La politique globale pour ImageMagick se trouve dans `/etc/ImageMagick`.

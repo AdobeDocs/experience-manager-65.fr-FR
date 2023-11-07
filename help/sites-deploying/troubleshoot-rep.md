@@ -8,7 +8,7 @@ topic-tags: configuring
 docset: aem65
 feature: Configuring
 exl-id: cfa822c8-f9a9-4122-9eac-0293d525f6b5
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1227'
 ht-degree: 22%
@@ -39,7 +39,7 @@ Vérifiez cela en accédant à /etc/replication/agents.author.html , puis clique
 
 **Si une ou plusieurs files d’attente sont bloquées :**
 
-1. Le statut de la file d’attente est-t-il **blocked** ? Si tel est le cas, l’instance de publication ne s’exécute-t-elle pas ou ne répond-elle pas ? Vérifiez l’instance de publication pour voir ce qui ne va pas avec elle. En d’autres termes, vérifiez les journaux et vérifiez s’il existe une erreur OutOfMemory ou un autre problème. Si c&#39;est juste lent, prenez les images mémoire de threads et analysez-les.
+1. Le statut de la file d’attente est-t-il **blocked** ? Si tel est le cas, l’instance de publication ne s’exécute-t-elle pas ou ne répond-elle pas ? Vérifiez l’instance de publication pour voir ce qui ne va pas. En d’autres termes, vérifiez les journaux et vérifiez s’il existe une erreur OutOfMemory ou un autre problème. Si c&#39;est juste lent, prenez les images mémoire de threads et analysez-les.
 1. Le statut de la file d’attente est-t-il **Queue is active - # pending** ? Fondamentalement, la tâche de réplication peut être bloquée dans une lecture de socket en attente de réponse de l’instance de publication ou de Dispatcher. Cela peut signifier que l’instance de publication ou Dispatcher est en charge élevée ou bloquée dans un verrou. Dans ce cas, prenez les thread dumps de l’auteur et de la publication.
 
    * Ouvrez les thread dumps de l’auteur dans un analyseur de thread dump , vérifiez s’il indique que la tâche sling eventing de l’agent de réplication est bloquée dans un socketRead.
@@ -67,7 +67,7 @@ Vérifiez cela en accédant à /etc/replication/agents.author.html , puis clique
    * À ce stade, la configuration DefaultJobManager stockée à l’adresse crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config se trouve dans un état incohérent. Et même si la propriété &quot;Apache Sling Job Event Handler&quot; indique que l’état &quot;Job Processing Enabled&quot; est coché, lorsque l’on accède à l’onglet Sling Eventing, le message - JOB PROCESSING IS DISABLED (TRAITEMENT DES TÂCHES EST DÉSACTIVÉ) s’affiche et la réplication ne fonctionne pas.
    * Pour résoudre ce problème, accédez à la page Configuration de la console OSGi et supprimez la configuration &quot;Gestionnaire d’événements de tâche Apache Sling&quot;. Redémarrez ensuite le noeud de Principal de la grappe afin de rétablir la configuration dans un état cohérent. Cela devrait résoudre le problème et la réplication recommence à fonctionner.
 
-**Création d’un fichier replication.log**
+**Créer un fichier replication.log**
 
 Il est parfois utile de définir toutes les journaux de réplication à ajouter dans un fichier journal distinct au niveau DEBUG. Pour ce faire :
 

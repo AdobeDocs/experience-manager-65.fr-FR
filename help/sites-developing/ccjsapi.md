@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
 feature: Context Hub
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3159'
+source-wordcount: '3157'
 ht-degree: 56%
 
 ---
@@ -72,7 +72,7 @@ Par exemple, un magasin de sessions est basé sur un objet JSON et récupéré v
 * Le magasin est pré-rempli avec des valeurs par défaut (propriétés init), mais la demande échoue (expiration du délai). Il n’existe qu’une seule initialisation avec des valeurs par défaut.
 * Le magasin est prérempli.
 
-Lorsque le délai est défini sur `true` ou sur une valeur en millisecondes, la méthode attend avant d’appeler la méthode de rappel. Si un autre événement d’initialisation est déclenché avant le dépassement du délai, il attend que le délai soit dépassé sans événement d’initialisation. Cela permet d’attendre le déclenchement d’un second événement d’initialisation et d’appeler la fonction de rappel dans le cas le plus optimisé.
+Lorsque le délai est défini sur `true` pendant plusieurs millisecondes, la méthode attend avant d’appeler la méthode de rappel. Si un autre événement d’initialisation est déclenché avant le dépassement du délai, il attend que le délai soit dépassé sans événement d’initialisation. Cela permet d’attendre le déclenchement d’un second événement d’initialisation et d’appeler la fonction de rappel dans le cas le plus optimisé.
 
 **Paramètres**
 

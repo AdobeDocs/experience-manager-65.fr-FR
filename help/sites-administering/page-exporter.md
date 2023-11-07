@@ -2,10 +2,10 @@
 title: Exportateur de page
 description: Découvrez comment utiliser l’exportateur de page Adobe Experience Manager (AEM).
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 67%
+ht-degree: 66%
 
 ---
 
@@ -107,7 +107,7 @@ Une fois votre modèle configuré, rendez-le disponible :
 
 Le modèle se compose d’une structure de nœud, dans la mesure où il utilise la propriété [Framework de synchronisation de contenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Chaque nœud possède une propriété `type` qui définit une action spécifique dans le processus de création du fichier compressé.
 
-<!-- For more details about the type property, refer to the Overview of configuration types section in the Content Sync framework page.
+<!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
 
 Les nœuds ci-dessous peuvent être utilisés pour créer un modèle de d’exportation :
@@ -131,7 +131,7 @@ Le nœud page est utilisé pour copier le code HTML de la page dans le fichier�
 
 * `rewrite`
 Le nœud rewrite définit la façon dont les liens sont réécrits dans la page exportée. Les liens réécrits peuvent pointer vers les fichiers inclus dans le fichier compressé ou vers les ressources sur le serveur.
-  <!-- Please refer to the Content Sync page for a complete description of the `rewrite` node. -->
+  <!-- See the Content Sync page for a complete description of the `rewrite` node. -->
 
 * `design`
 Le nœud design est utilisé pour copier la conception utilisée pour la page exportée. Il possède les caractéristiques suivantes :
@@ -156,7 +156,7 @@ Un nœud générique est utilisé pour copier des ressources telles que les clie
    * Le type de noeud est `nt:unstructured`.
    * Comporte une propriété `type` et des propriétés `type` connexes. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
-  Par exemple, le nœud de configuration ci-dessous copie les fichiers `mysite.clientlibs.js` dans le fichier compressé :
+  Par exemple, le noeud de configuration suivant copie la propriété `mysite.clientlibs.js` dans le fichier zip :
 
   ```xml
   "mysite.clientlibs.js": {
@@ -177,7 +177,7 @@ As you may have noticed in the node structure, the **Geometrixx** page export te
 
 Pour répondre à certaines exigences spécifiques, implémentez une [gestionnaire de mise à jour personnalisé](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
-<!-- To meet some specific requirements, you may need to implement a custom `type` property: to do so, refer to the Implementing a custom update handler section in the Content Sync page.
+<!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## Exportation d’une page par programmation {#programmatically-exporting-a-page}

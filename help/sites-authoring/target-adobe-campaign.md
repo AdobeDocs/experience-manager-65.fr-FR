@@ -1,17 +1,15 @@
 ---
 title: Cibler votre campagne Adobe Campaign
 description: Vous pouvez créer des expériences ciblées pour Adobe Campaign après avoir configuré la segmentation.
-uuid: 8fcc9210-d8c5-44e3-8aa8-6c6db810c98e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: f1cb5e98-ccd1-4b2c-acca-2b3cc1b7ac5f
 exl-id: fc6fccba-41c5-4c13-aac0-b4ef67767abe
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: ht
-source-wordcount: '811'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 84%
 
 ---
 
@@ -34,9 +32,9 @@ La configuration de la segmentation comprend la création de segments, d’une m
 Pour créer des segments :
 
 1. Ouvrez la [console de segmentation](http://localhost:4502/miscadmin#/etc/segmentation) à l’adresse **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
-1. Créez une page et saisissez un titre, par exemple, **Segments AC** et sélectionnez le modèle **Segment (Adobe Campaign)**.
+1. Créez une page et saisissez un titre, par exemple : **Segments AC**- et sélectionnez la variable **Segment (Adobe Campaign)** modèle.
 1. Sélectionnez la page créée dans l’arborescence située à gauche.
-1. Créez un segment, par exemple en ciblant les utilisateurs masculins, en créant une page sous le segment que vous avez créé, appelé Masculin, puis sélectionnez le modèle **Segment (Adobe Campaign)**.
+1. Créez un segment, ciblant par exemple les utilisateurs masculins, en créant une page sous le segment que vous avez créé, appelée Masculin, puis sélectionnez l’option **Segment (Adobe Campaign)** modèle.
 1. Ouvrez la page de segment créée et effectuez un glisser-déposer d’un **identifiant de segment** du sidekick sur la page.
 1. Double-cliquez sur la caractéristique, entrez l’ID représentant le segment Masculin défini dans Adobe Campaign, par exemple, **MASCULIN**, puis cliquez sur **OK**. Le message suivant doit apparaître : *`targetData.segmentCode == "MALE"`*
 1. Répétez les étapes pour un autre segment, par exemple un segment ciblant les utilisatrices.
@@ -45,26 +43,26 @@ Pour créer des segments :
 
 Pour créer une marque :
 
-1. Dans **Sites**, accédez au dossier **Campagnes** (par exemple dans We.Retail).
-1. Cliquez sur **Créer une page** et entrez le titre de la page, par exemple Marque We.Retail, puis sélectionnez le modèle **Marque**.
+1. Dans **Sites**, accédez à la **Campagnes** (par exemple, dans We.Retail).
+1. Cliquez sur **Créer une page** et saisissez un titre pour la page, par exemple, Marque We.Retail et sélectionnez l’événement **Marque** modèle.
 
 ### Créer une campagne {#creating-a-campaign}
 
 Pour créer une campagne :
 
-1. Ouvrez la page **Marque** que vous venez de créer.
+1. Ouvrez le **Marque** page que vous avez créée.
 1. Cliquez sur **Créer une page** et saisissez un titre pour votre page, par exemple, Campagne We.Retail, puis sélectionnez le modèle **Campagne** et cliquez sur **Créer**.
 
 ### Créer des expériences {#creating-experiences}
 
 Pour créer des expériences pour les segments :
 
-1. Ouvrez la page **Campagne** que vous venez de créer.
+1. Ouvrez le **Campagne** page que vous avez créée.
 1. Créez des expériences pour vos segments en cliquant sur **Créer une page** et entrez le titre de la page, par exemple, Masculin puisque vous créez une expérience pour le segment Masculin, puis sélectionnez le modèle **Expérience**.
 1. Ouvrez la page Expérience créée.
 1. Cliquez sur **Modifier**, puis sous Segments, cliquez sur **Ajouter un élément**.
-1. Entrez le chemin du segment Masculin, par exemple **/etc/segmentation/segments-ac/masculin** et cliquez sur **OK**. Le message suivant apparaît : *Expérience ciblée au niveau de : Masculin*.
-1. Répétez les étapes précédentes pour créer une expérience pour tous les segments, par exemple la cible féminine.
+1. Entrez le chemin d’accès au segment masculin, par exemple : **/etc/segmentation/ac-segments/male** et cliquez sur **OK**. Le message suivant apparaît : *Expérience ciblée au niveau de : Masculin*.
+1. Répétez les étapes précédentes pour créer une expérience pour tous les segments, par exemple la cible femme.
 
 ## Créer une newsletter avec du contenu ciblé {#creating-a-newsletter-with-targeted-content}
 
@@ -72,7 +70,7 @@ Après avoir créé des segments, une marque, une campagne et une expérience, v
 
 >[!NOTE]
 >
->[Les exemples d’e-mails ne sont disponibles que dans Geometrixx](/help/sites-developing/we-retail.md). Téléchargez un exemple de contenu Geometrixx à partir du partage de packages.
+>[Les exemples d’e-mails ne sont disponibles que dans Geometrixx](/help/sites-developing/we-retail.md). Téléchargez un exemple de contenu de Geometrixx à partir de Package Share.
 
 Pour créer une newsletter avec du contenu ciblé :
 

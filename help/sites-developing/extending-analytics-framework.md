@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1620'
-ht-degree: 51%
+source-wordcount: '1619'
+ht-degree: 49%
 
 ---
 
@@ -92,9 +92,9 @@ Utilisez la procédure suivante pour ajouter des variables à la liste :
 
 1. Sur votre page de framework Adobe Analytics, développez la zone **Paramètres généraux d’Analytics**.
 1. Sous la liste des variables, cliquez sur Ajouter un élément pour ajouter une nouvelle variable à la liste.
-1. Dans la cellule de gauche, entrez le nom de la variable, par exemple `prop10`.
+1. Dans la cellule de gauche, entrez le nom de la variable, par exemple, `prop10`.
 
-1. Dans la colonne de droite, entrez une valeur pour la variable, par exemple `CONSTANT`.
+1. Dans la colonne de droite, entrez une valeur pour la variable, par exemple, `CONSTANT`.
 
 1. Pour supprimer une variable, cliquez sur le bouton (-) en regard de la variable.
 
@@ -199,7 +199,7 @@ Par conséquent, votre JavaScript doit être défini sur `s.usePlugins` to `true
    1. Indiquez `cq` comme nom de dossier, puis cliquez sur OK.
    1. De même, créez les dossiers `analytics` et `components`.
 
-1. Cliquez avec le bouton droit sur le dossier `components` que vous venez de créer et cliquez sur Créer > Créer un composant. Spécifiez les valeurs de propriété suivantes :
+1. Cliquez avec le bouton droit de la souris sur le `components` dossier que vous avez créé, puis cliquez sur Créer > Créer un composant. Spécifiez les valeurs de propriété suivantes :
 
    * Libellé : `sitecatalyst`
    * Titre : `sitecatalyst`
@@ -301,7 +301,7 @@ Procédez comme suit pour obtenir le code du module externe, stocker le code dan
 
 1. Ouvrez le fichier js.txt à partir du dossier de votre bibliothèque cliente.
 
-1. Dans une nouvelle ligne, ajoutez le nom du fichier qui contient le module externe, par exemple getQueryParam.js. Ensuite, cliquez sur Enregistrer tout et fermez le fichier.
+1. Dans une nouvelle ligne, ajoutez le nom du fichier contenant le module externe, par exemple getQueryParam.js. Ensuite, cliquez sur Enregistrer tout et fermez le fichier.
 
 >[!NOTE]
 >

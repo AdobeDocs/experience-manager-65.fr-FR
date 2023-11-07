@@ -1,17 +1,13 @@
 ---
 title: Création et utilisation des thèmes
-seo-title: Creating and using themes
 description: Vous pouvez utiliser des thèmes pour styliser et fournir une identité visuelle à un formulaire adaptatif ou à une communication interactive. Vous pouvez partager un thème dans n’importe quel nombre de formulaires adaptatifs ou de communications interactives.
-seo-description: You can use themes to stylize and provide a visual identity to an adaptive form or interactive communication. You can share a theme across any number of adaptive forms or interactive communications.
-uuid: 88b6b6fd-181b-48c5-ac15-2b37592bd14b
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, interactive-communications
 content-strategy: max-2018
-discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 feature: Adaptive Forms
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '6106'
 ht-degree: 82%
@@ -182,7 +178,7 @@ Liste de propriétés des métadonnées d’un thème (sur la page Propriétés 
      <li>Chemin d’accès au référentiel défini par l’utilisateur dans "/etc" où les bibliothèques clientes correspondant à ce thème sont stockées.</li>
      <li>Valeur par défaut : « /etc/clientlibs/fd/themes » + chemin d’accès relatif de l’actif du thème.</li>
      <li>Si l’emplacement n’existe pas, la hiérarchie de dossiers est générée automatiquement.</li>
-     <li>Lorsque cette valeur est modifiée, la structure de noeud clientlib est déplacée vers le nouvel emplacement saisi.<br /> <em><strong>Remarque :</strong> si vous modifiez l’emplacement clientlib par défaut, dans le référentiel CRXDE, affectez <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code> à <code>forms-users</code> et <code>crx:replicate</code>, <code>jcr:read </code> à <code>fd-service</code> dans le nouvel emplacement. Joignez également une autre liste ACL en ajoutant <code>deny jcr:addChildNodes</code> pour <code>forms-user</code></em>.</li>
+     <li>Lorsque cette valeur est modifiée, la structure de noeud clientlib est déplacée vers le nouvel emplacement saisi.<br /> <em><strong>Remarque :</strong> si vous modifiez l’emplacement clientlib par défaut, dans le référentiel CRXDE, affectez <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code> à <code>forms-users</code> et <code>crx:replicate</code>, <code>jcr:read </code> à <code>fd-service</code> dans le nouvel emplacement. Joignez également une autre ACL en ajoutant <code>deny jcr:addChildNodes</code> pour <code>forms-user</code></em>.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -349,7 +345,7 @@ Personnalisation du style de réussite du composant Widget de zone de texte dans
 
 ### Utilisation de la zone de travail {#using-canvas}
 
-Le thème est soit créé à l’aide du formulaire d’usine, soit à l’aide d’un formulaire ou d’une communication interactive de votre choix. La zone de travail affiche l’aperçu du formulaire ou de la communication interactive utilisés pour créer le thème avec les personnalisations spécifiées dans le thème. La règle au-dessus du formulaire est utilisée pour déterminer la disposition selon la taille de l’affichage de votre appareil.
+Le thème est créé à l’aide du formulaire d’usine ou d’un formulaire ou d’une communication interactive de votre choix. La zone de travail affiche l’aperçu du formulaire ou de la communication interactive utilisés pour créer le thème avec les personnalisations spécifiées dans le thème. La règle au-dessus du formulaire est utilisée pour déterminer la disposition selon la taille de l’affichage de votre appareil.
 
 Dans la barre d’outils de la zone de travail se trouvent les éléments suivants :
 
@@ -651,7 +647,7 @@ Vous pouvez voir le fichier CSS généré à l’aide des options suivantes :
       1. Dans l’onglet Avancé , dans le champ Emplacement de la bibliothèque cliente , recherchez et sélectionnez la bibliothèque cliente à utiliser.
       1. Cliquez sur **Enregistrer**.
 
-     Le style que vous spécifiez dans la bibliothèque cliente est importé dans le thème qui l’utilise. Par exemple, vous spécifiez la mise en forme de la zone de texte, de la zone numérique et du basculement dans la bibliothèque cliente. Lorsque vous importez votre bibliothèque cliente dans le thème, la mise en forme de la zone de texte, de la zone numérique et du commutateur est importée. Vous pouvez alors mettre en forme d’autres composants à l’aide de l’éditeur de thème.
+     Le style que vous spécifiez dans la bibliothèque cliente est importé dans le thème qui l’utilise. Par exemple, vous spécifiez la mise en forme de la zone de texte, de la zone numérique et du basculement dans la bibliothèque cliente. Lorsque vous importez votre bibliothèque cliente dans le thème, le style de la zone de texte, de la zone numérique et du commutateur est importé. Vous pouvez alors mettre en forme d’autres composants à l’aide de l’éditeur de thème.
 Vous pouvez également créer un thème, créer des copies de ce thème, puis modifiez la mise en forme fournie dans les thèmes copiés pour des cas d’utilisation similaires.
 Voir [Obtention d’un aspect spécifique à l’aide des thèmes](#specific-af-appearance)
 

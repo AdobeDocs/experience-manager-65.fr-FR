@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3501'
-ht-degree: 45%
+source-wordcount: '3498'
+ht-degree: 43%
 
 ---
 
@@ -24,7 +24,7 @@ Voici les étapes logiques pour que l’importateur de conception reconnaisse vo
 
 1. Création d’un gestionnaire de balises
 
-   * Un gestionnaire de balises est un POJO (Plain Old Java Object) qui traite les balises HTML d’un type spécifique. Le &quot;type&quot; des balises de HTML que votre TagHandler peut gérer est défini via la propriété OSGi de TagHandlerFactory &quot;tagpattern.name&quot;. Cette propriété OSGi est en réalité une expression régulière (regex) qui doit correspondre à la balise HTML en entrée que vous souhaitez traiter. Toutes les balises imbriquées sont envoyées pour traitement à votre gestionnaire de balises. Par exemple, si vous enregistrez une balise div contenant une balise imbriquée &lt;p> , &lt;p> est également envoyée à votre gestionnaire de balises. C’est à vous de décider comment vous souhaitez vous en charger.
+   * Un gestionnaire de balises est un POJO (Plain Old Java Object) qui traite les balises HTML d’un type spécifique. Le &quot;type&quot; des balises de HTML que votre TagHandler peut gérer est défini via la propriété OSGi de TagHandlerFactory &quot;tagpattern.name&quot;. Cette propriété OSGi est en réalité une expression régulière (regex) qui doit correspondre à la balise HTML en entrée que vous souhaitez traiter. Toutes les balises imbriquées sont envoyées pour traitement à votre gestionnaire de balises. Par exemple, si vous vous enregistrez pour une balise div contenant une balise imbriquée &lt;p> , &lt;p> est également envoyée à votre gestionnaire de balises. C’est à vous de décider comment vous souhaitez vous en charger.
    * L’interface du gestionnaire de balises est semblable à une interface de gestion de contenu SAX. Elle reçoit des événements SAX pour chaque balise HTML. En tant que fournisseur de gestionnaire de balises, vous devez mettre en oeuvre certaines méthodes de cycle de vie qui sont automatiquement appelées par la structure de l’importateur de conception.
 
 1. Créez le composant TagHandlerFactory correspondant.
@@ -109,11 +109,11 @@ La section suivante décrit la modification de votre fichier HTML de manière à
 
 ### Limites {#limitations}
 
-Avant l’importation, veuillez noter les restrictions suivantes :
+Avant l’importation, notez les restrictions suivantes :
 
 ### Les attributs, tels que class ou id, appliqués à la balise &amp;lt;body> ne sont pas conservés. {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
-Si un attribut d’id ou de classe est appliqué à la balise &lt;body>, par exemple, `<body id="container">`, il n’est pas conservé après l’importation. La conception importée ne doit donc avoir aucune dépendance sur les attributs appliqués à la balise `<body>`.
+Si un attribut tel que id ou class est appliqué à la balise body, par exemple : `<body id="container">` il n’est pas conservé après l’importation. La conception importée ne doit donc avoir aucune dépendance sur les attributs appliqués à la balise `<body>`.
 
 ### Transfert de fichiers ZIP par glisser-déposer {#drag-and-drop-zip}
 
@@ -300,7 +300,7 @@ Balise HTML permettant d’inclure le composant « lien graphique » dans le f
 >
 >Pour créer un lien graphique à cliquer, vous devez encapsuler une balise &lt;anchor> et la balise d’image dans une balise &lt;div> avec l’attribut `data-cq-component="clickthroughgraphicallink"`.
 >
->Par exemple, `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`.
+>Par exemple, `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
 >
 >Les autres méthodes d’association d’une image à une balise d’ancrage à l’aide de CSS ne sont pas prises en charge. Par exemple, les balises suivantes ne fonctionnent pas :
 >
@@ -321,7 +321,7 @@ Le formulaire de piste est utilisé pour collecter des informations sur le profi
 
 * Champs de prospect prédéfinis : les boutons Prénom, Nom, Adresse, Fonction, À propos de, ID utilisateur, ID d’e-mail et Envoyer sont disponibles dans le Sidekick. Il vous suffit de faire glisser le composant requis dans votre formulaire de prospect.
 * Grâce à ces composants, l’auteur peut concevoir un formulaire de prospect autonome. Ces champs correspondent à ceux du formulaire de prospect. Dans une application ZIP importée ou autonome, l’utilisateur peut ajouter des champs supplémentaires à l’aide des champs de formulaire de piste cq:form ou cta, les nommer et les concevoir selon les besoins.
-* Mettez en correspondance les champs de formulaire de prospect à l’aide de noms prédéfinis spécifiques du formulaire de prospect CTA ; par exemple, firstName pour first-name dans le formulaire de prospect, etc.
+* Mappez les champs de formulaire de piste à l’aide de noms prédéfinis spécifiques du formulaire de piste CTA, par exemple : firstName pour first-name dans le formulaire de piste, etc.
 * Les champs qui ne sont pas mappés à des composants de formulaire de piste sont mappés à cq:form - texte, radio, case à cocher, liste déroulante, masqué, mot de passe.
 * L’utilisateur ou l’utilisatrice peut fournir le titre à l’aide de la balise « label » et indiquer le style en utilisant l’attribut de style « class » (disponible uniquement pour les composants du formulaire de prospect CTA).
 * La page de remerciements et la liste d’abonnements peuvent être fournies sous forme de paramètre masqué du formulaire (présent dans le fichier index.htm) ou être ajoutées ou modifiées dans la barre de modification de « Début du formulaire de prospect ».
@@ -438,9 +438,9 @@ Si aucun codage n’est spécifié dans le HTML importé, le codage par défaut 
 
 ### Recouvrement d’un modèle {#overlaying-template}
 
-Vous pouvez recouvrir le modèle Page de destination vierge en créant un autre, sous : `/apps/<appName>/designimporter/templates/<templateName>`
+Le modèle Page d’entrée vierge peut être recouvert en en créant une sur : `/apps/<appName>/designimporter/templates/<templateName>`
 
-Vous trouverez [ici](/help/sites-developing/templates.md) la procédure de création d’un modèle dans AEM.
+Les étapes de création d’un modèle dans AEM sont expliquées. [here](/help/sites-developing/templates.md).
 
 ### Référencement d’un composant à partir de la page d’entrée {#referring-a-component-from-landing-page}
 

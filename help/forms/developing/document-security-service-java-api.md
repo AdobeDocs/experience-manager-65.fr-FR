@@ -10,10 +10,10 @@ topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 role: Developer
 exl-id: 76d855cf-ebfa-487a-b1c8-755e7e45dd73
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1068'
+ht-degree: 98%
 
 ---
 
@@ -21,21 +21,21 @@ ht-degree: 100%
 
 Le démarrage rapide de l’API Java (SOAP) est disponible pour le service Rights Management :
 
-[Démarrage rapide (mode SOAP) : créer une stratégie à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-creating-a-policy-using-the-java-api)
+[Démarrage rapide (mode SOAP) : créer une politique à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-creating-a-policy-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : modifier une stratégie à l’aide de l’API Java](#quick-start-soap-mode-modifying-a-policy-using-the-java-api)
+[Démarrage rapide (mode SOAP) : modifier une politique à l’aide de l’API Java](#quick-start-soap-mode-modifying-a-policy-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : supprimer une stratégie à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-deleting-a-policy-using-the-java-api)
+[Démarrage rapide (mode SOAP) : supprimer une politique à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-deleting-a-policy-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : appliquer une stratégie à un document PDF à l’aide de l’API Java](#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api)
+[Démarrage rapide (mode SOAP) : appliquer une politique à un document PDF à l’aide de l’API Java](#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : supprimer une stratégie d’un document PDF à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api)
+[Démarrage rapide (mode SOAP) : supprimer une politique d’un document PDF à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api)
 
 [Démarrage rapide (mode SOAP) : révoquer un document à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-revoking-a-document-using-the-java-api)
 
 [Démarrage rapide (mode SOAP) : rétablir l’accès à un document révoqué à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : inspecter des documents PDF protégés par une stratégie à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api)
+[Démarrage rapide (mode SOAP) : inspecter des documents PDF protégés par une politique à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api)
 
 [Démarrage rapide (mode SOAP) : créer un filigrane à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api)
 
@@ -43,17 +43,17 @@ Le démarrage rapide de l’API Java (SOAP) est disponible pour le service Right
 
 [Démarrage rapide (mode SOAP) : rechercher des événements à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-searching-for-events-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : supprimer une stratégie d’un document Word à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
+[Démarrage rapide (mode SOAP) : supprimer une politique d’un document Word à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
 
 Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Les démarrages rapides situés dans Programmer avec AEM Forms sont basés sur le système d’exploitation du serveur Forms. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Le démarrage rapide dans Programmation avec AEM Forms est basé sur le système d’exploitation du serveur Forms. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Démarrage rapide (mode SOAP) : créer une stratégie à l’aide de l’API Java {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
+## Démarrage rapide (mode SOAP) : créer une politique à l’aide de l’API Java {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
 
-L’exemple de code Java suivant permet de créer une stratégie nommée *Autoriser la copie*. Le jeu de stratégies auquel la stratégie est ajoutée est nommé *Jeu de stratégies global*. Ce jeu de stratégies existe par défaut. (Consultez la section [Créer des stratégies](/help/forms/developing/protecting-documents-policies.md#creating-policies)).
+L’exemple de code Java suivant permet de créer une politique nommée *Autoriser la copie*. Le jeu de politiques auquel la politique est ajoutée est nommé *Jeu de politiques global*. Ce jeu de politiques existe par défaut. (Consultez la section [Créer des politiques](/help/forms/developing/protecting-documents-policies.md#creating-policies)).
 
 ```java
  /*
@@ -82,7 +82,7 @@ L’exemple de code Java suivant permet de créer une stratégie nommée *Autori
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -91,7 +91,7 @@ L’exemple de code Java suivant permet de créer une stratégie nommée *Autori
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -180,9 +180,9 @@ L’exemple de code Java suivant permet de créer une stratégie nommée *Autori
  
 ```
 
-## Démarrage rapide (mode SOAP) : modifier une stratégie à l’aide de l’API Java {#quick-start-soap-mode-modifying-a-policy-using-the-java-api}
+## Démarrage rapide (mode SOAP) : modifier une politique à l’aide de l’API Java {#quick-start-soap-mode-modifying-a-policy-using-the-java-api}
 
-L’exemple de code Java suivant permet de modifier une stratégie nommée *Autoriser la copie* en définissant la période d’ouverture hors connexion à 40 jours. (Consultez la section [Modifier des stratégies](/help/forms/developing/protecting-documents-policies.md#modifying-policies)).
+L’exemple de code Java suivant permet de modifier une politique nommée *Autoriser la copie* en définissant la période d’ouverture hors connexion à 40 jours. (Consultez la section [Modifier des politiques](/help/forms/developing/protecting-documents-policies.md#modifying-policies)).
 
 ```java
  /*
@@ -208,13 +208,13 @@ L’exemple de code Java suivant permet de modifier une stratégie nommée *Auto
      * 18. xbean.jar (required for SOAP mode)
      * 19. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -281,9 +281,9 @@ L’exemple de code Java suivant permet de modifier une stratégie nommée *Auto
  }
 ```
 
-## Démarrage rapide (mode SOAP) : supprimer une stratégie à l’aide de l’API Java {#quick-start-soap-mode-deleting-a-policy-using-the-java-api}
+## Démarrage rapide (mode SOAP) : supprimer une politique à l’aide de l’API Java {#quick-start-soap-mode-deleting-a-policy-using-the-java-api}
 
-L’exemple de code Java suivant permet de supprimer une stratégie nommée *Autoriser la copie*. (Consultez la section [Supprimer des stratégies](/help/forms/developing/protecting-documents-policies.md#deleting-policies)).
+L’exemple de code Java suivant permet de supprimer une politique nommée *Autoriser la copie*. (Consultez la section [Supprimer des politiques](/help/forms/developing/protecting-documents-policies.md#deleting-policies)).
 
 ```java
  /*
@@ -312,7 +312,7 @@ L’exemple de code Java suivant permet de supprimer une stratégie nommée *Aut
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -321,7 +321,7 @@ L’exemple de code Java suivant permet de supprimer une stratégie nommée *Aut
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -373,9 +373,9 @@ L’exemple de code Java suivant permet de supprimer une stratégie nommée *Aut
  
 ```
 
-## Démarrage rapide (mode SOAP) : appliquer une stratégie à un document PDF à l’aide de l’API Java {#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api}
+## Démarrage rapide (mode SOAP) : appliquer une politique à un document PDF à l’aide de l’API Java {#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api}
 
-L’exemple de code Java suivant permet d’appliquer une stratégie nommée *Autoriser la copie* à un document PDF nommé *Loan.pdf*. Le jeu de stratégies auquel la stratégie est ajoutée est nommé *Jeu de stratégies global*. Le document protégé par une stratégie est enregistré en tant que fichier PDF nommé *PolicyProtectedLoanDoc.pdf. * (Consultez la section [Appliquer des stratégies à des documents PDF](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)).
+L’exemple de code Java suivant permet d’appliquer une politique nommée *Autoriser la copie* à un document PDF nommé *Loan.pdf*. Le jeu de politiques auquel la politique est ajoutée est nommé *Jeu de politiques global*. Le document protégé par une politique est enregistré en tant que fichier PDF nommé *PolicyProtectedLoanDoc.pdf. * (Consultez la section [Appliquer des politiques à des documents PDF](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)).
 
 ```java
  /*
@@ -401,13 +401,13 @@ L’exemple de code Java suivant permet d’appliquer une stratégie nommée *Au
      * 18. xbean.jar (required for SOAP mode)
      * 19. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -479,9 +479,9 @@ L’exemple de code Java suivant permet d’appliquer une stratégie nommée *Au
  }
 ```
 
-## Démarrage rapide (mode SOAP) : supprimer une stratégie d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api}
+## Démarrage rapide (mode SOAP) : supprimer une politique d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api}
 
-L’exemple de code suivant permet de supprimer une stratégie d’un document PDF nommé *PolicyProtectedLoanDoc.pdf*. Le document PDF non protégé est enregistré en tant que fichier nommé *unProtectedLoan.pdf*. (Consultez la section [Supprimer des stratégies des documents PDF](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents)).
+L’exemple de code suivant permet de supprimer une politique d’un document PDF nommé *PolicyProtectedLoanDoc.pdf*. Le document PDF non protégé est enregistré en tant que fichier nommé *unProtectedLoan.pdf*. (Consultez la section [Supprimer des politiques des documents PDF](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents)).
 
 ```java
  /*
@@ -510,7 +510,7 @@ L’exemple de code suivant permet de supprimer une stratégie d’un document P
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -519,7 +519,7 @@ L’exemple de code suivant permet de supprimer une stratégie d’un document P
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -588,7 +588,7 @@ L’exemple de code suivant permet de supprimer une stratégie d’un document P
 
 ## Démarrage rapide (mode SOAP) : révoquer un document à l’aide de l’API Java {#quick-start-soap-mode-revoking-a-document-using-the-java-api}
 
-L’exemple de code Java suivant permet de révoquer un document protégé par une stratégie nommé *PolicyProtectedLoanDoc.pdf*. Le document PDF révisé se trouve à l’adresse URL suivante : `https://'[server]:[port]'/RightsManagement/UpdatedLoan.pdf`. (Consultez la section [Révoquer l’accès aux documents](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents)).
+L’exemple de code Java suivant permet de révoquer un document protégé par une politique nommé *PolicyProtectedLoanDoc.pdf*. Le document PDF révisé se trouve à l’adresse URL suivante : `https://'[server]:[port]'/RightsManagement/UpdatedLoan.pdf`. (Consultez la section [Révoquer l’accès aux documents](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents)).
 
 ```java
  /*
@@ -617,7 +617,7 @@ L’exemple de code Java suivant permet de révoquer un document protégé par u
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -626,7 +626,7 @@ L’exemple de code Java suivant permet de révoquer un document protégé par u
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -700,9 +700,9 @@ L’exemple de code Java suivant permet de révoquer un document protégé par u
  
 ```
 
-## Démarrage rapide (mode SOAP) : inspecter des documents PDF protégés par une stratégie à l’aide de l’API Java {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
+## Démarrage rapide (mode SOAP) : inspecter des documents PDF protégés par une politique à l’aide de l’API Java {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
 
-L’exemple de code Java suivant permet d’inspecter un document PDF protégé par une stratégie nommé *PolicyProtectedLoanDoc.pdf*. (Consultez la section [Inspecter des documents PDF protégés par une stratégie](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)).
+L’exemple de code Java suivant permet d’inspecter un document PDF protégé par une politique nommé *PolicyProtectedLoanDoc.pdf*. (Consultez la section [Inspecter des documents PDF protégés par une politique](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)).
 
 ```java
  /*
@@ -731,7 +731,7 @@ L’exemple de code Java suivant permet d’inspecter un document PDF protégé 
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -740,7 +740,7 @@ L’exemple de code Java suivant permet d’inspecter un document PDF protégé 
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -849,7 +849,7 @@ L’exemple de code Java suivant permet de rétablir l’accès à un document P
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -858,7 +858,7 @@ L’exemple de code Java suivant permet de rétablir l’accès à un document P
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -952,14 +952,14 @@ L’exemple de code Java suivant permet de créer un filigrane sur un document P
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/common
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/jboss
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/jboss/bin/client
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/thirdparty
  *
  * If you want to invoke a remote forms server instance and there is a
@@ -1085,14 +1085,14 @@ L’exemple de code Java suivant permet de créer un filigrane de texte nommé *
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/common
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/jboss
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/jboss/bin/client
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/thirdparty
  *
  * If you want to invoke a remote forms server instance and there is a
@@ -1172,7 +1172,7 @@ public class TextWatermarks {
             element1.setEndPage(1);// The watermark will appear only on first
                                     // page, start page is 1 by default.
 
-            // Create a new element.
+            // Create an element.
             Watermark2Element element2 = InfomodelObjectFactory
                     .createWatermark2Element();
             element2.setName("Second element");
@@ -1234,14 +1234,14 @@ L’exemple de code Java suivant permet de modifier un filigrane nommé « Exem
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/common
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/jboss
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/jboss/bin/client
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/thirdparty
  *
  * If you want to invoke a remote forms server instance and there is a
@@ -1349,7 +1349,7 @@ L’exemple de code Java suivant permet de modifier un filigrane nommé *Confide
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -1358,7 +1358,7 @@ L’exemple de code Java suivant permet de modifier un filigrane nommé *Confide
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -1418,7 +1418,7 @@ L’exemple de code Java suivant permet de modifier un filigrane nommé *Confide
 
 ## Démarrage rapide (mode SOAP) : rechercher des événements à l’aide de l’API Java {#quick-start-soap-mode-searching-for-events-using-the-java-api}
 
-L’exemple de code Java suivant permet de rechercher l’événement de création de stratégie.
+L’exemple de code Java suivant permet de rechercher l’événement de création de politique.
 
 ```java
  /*
@@ -1447,7 +1447,7 @@ L’exemple de code Java suivant permet de rechercher l’événement de créati
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -1456,7 +1456,7 @@ L’exemple de code Java suivant permet de rechercher l’événement de créati
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -1529,9 +1529,9 @@ L’exemple de code Java suivant permet de rechercher l’événement de créati
  
 ```
 
-## Démarrage rapide (SOAP) : appliquer une stratégie à un document Word à l’aide de l’API Java {#quick-start-soap-applying-a-policy-to-a-word-document-using-the-java-api}
+## Démarrage rapide (SOAP) : appliquer une politique à un document Word à l’aide de l’API Java {#quick-start-soap-applying-a-policy-to-a-word-document-using-the-java-api}
 
-L’exemple de code Java suivant permet d’appliquer une stratégie nommée *Autoriser la copie* à un document Word nommé *Loan.doc*. Le jeu de stratégies auquel la stratégie est ajoutée est nommé *Jeu de stratégies global*. Le document protégé par une stratégie est enregistré en tant que fichier DOC nommé *PolicyProtectedLoanDoc.doc. * (Consultez la section [Appliquer des stratégies à des documents PDF](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)).
+L’exemple de code Java suivant permet d’appliquer une politique nommée *Autoriser la copie* à un document Word nommé *Loan.doc*. Le jeu de politiques auquel la politique est ajoutée est nommé *Jeu de politiques global*. Le document protégé par une politique est enregistré en tant que fichier DOC nommé *PolicyProtectedLoanDoc.doc. * (Consultez la section [Appliquer des politiques à des documents PDF](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)).
 
 ```java
  /*
@@ -1560,7 +1560,7 @@ L’exemple de code Java suivant permet d’appliquer une stratégie nommée *Au
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -1569,7 +1569,7 @@ L’exemple de code Java suivant permet d’appliquer une stratégie nommée *Au
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -1644,9 +1644,9 @@ L’exemple de code Java suivant permet d’appliquer une stratégie nommée *Au
  
 ```
 
-## Démarrage rapide (mode SOAP) : supprimer une stratégie d’un document Word à l’aide de l’API Java {#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api}
+## Démarrage rapide (mode SOAP) : supprimer une politique d’un document Word à l’aide de l’API Java {#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api}
 
-L’exemple de code suivant permet de supprimer une stratégie d’un document Word nommé *PolicyProtectedLoanDoc.doc*. Le document Word non protégé est enregistré en tant que fichier nommé *unProtectedLoan.doc*. (Consultez la section [Supprimer des stratégies de documents Word](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents)).
+L’exemple de code suivant permet de supprimer une politique d’un document Word nommé *PolicyProtectedLoanDoc.doc*. Le document Word non protégé est enregistré en tant que fichier nommé *unProtectedLoan.doc*. (Consultez la section [Supprimer des politiques de documents Word](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents)).
 
 ```java
  /*
@@ -1675,7 +1675,7 @@ L’exemple de code suivant permet de supprimer une stratégie d’un document W
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -1684,7 +1684,7 @@ L’exemple de code suivant permet de supprimer une stratégie d’un document W
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdkK/client-libs/thirdparty
      *
@@ -1752,9 +1752,9 @@ L’exemple de code suivant permet de supprimer une stratégie d’un document W
  
 ```
 
-## Démarrage rapide (mode SOAP) : créer une stratégie abstraite à l’aide de l’API Java {#quick-start-soap-mode-creating-an-abstract-policy-using-the-java-api}
+## Démarrage rapide (mode SOAP) : créer une politique abstraite à l’aide de l’API Java {#quick-start-soap-mode-creating-an-abstract-policy-using-the-java-api}
 
-L’exemple de code Java suivant permet de créer une stratégie abstraite nommée AllowCopy. Le jeu de stratégies auquel la stratégie est ajoutée est nommé Jeu de stratégies global. Ce jeu de stratégies existe par défaut. (Consultez la section Créer des stratégies).
+L’exemple de code Java suivant permet de créer une politique abstraite nommée AllowCopy. Le jeu de politiques auquel la politique est ajoutée est nommé Jeu de politiques global. Ce jeu de politiques existe par défaut. (Consultez la section Créer des politiques).
 
 ```java
 /*
@@ -1780,14 +1780,14 @@ L’exemple de code Java suivant permet de créer une stratégie abstraite nomm�
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/common
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/jboss
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/jboss/bin/client
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/thirdparty
  *
  * If you want to invoke a remote forms server instance and there is a
@@ -1869,9 +1869,9 @@ public class CreateAbstractPolicySoap {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : modifier une stratégie abstraite à l’aide de l’API Java {#quick-start-soap-mode-modifying-an-abstract-policy-using-the-java-api}
+## Démarrage rapide (mode SOAP) : modifier une politique abstraite à l’aide de l’API Java {#quick-start-soap-mode-modifying-an-abstract-policy-using-the-java-api}
 
-L’exemple de code Java suivant permet de modifier une stratégie abstraite nommée AllowCopy. Le jeu de stratégies dans lequel la stratégie est modifiée est nommé Jeu de stratégies global. Ce jeu de stratégies existe par défaut. (Consultez la section Créer des stratégies).
+L’exemple de code Java suivant permet de modifier une politique abstraite nommée AllowCopy. Le jeu de politiques dans lequel la politique est modifiée est nommé Jeu de politiques global. Ce jeu de politiques existe par défaut. (Consultez la section Créer des politiques).
 
 ```java
 /*
@@ -1897,14 +1897,14 @@ L’exemple de code Java suivant permet de modifier une stratégie abstraite nom
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/common
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/jboss
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/jboss/bin/client
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/thirdparty
  *
  * If you want to invoke a remote forms server instance and there is a
@@ -1968,9 +1968,9 @@ public class ModifyingAbstractPolicySoap {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : supprimer une stratégie abstraite à l’aide de l’API Java {#quick-start-soap-mode-deleting-an-abstract-policy-using-the-java-api}
+## Démarrage rapide (mode SOAP) : supprimer une politique abstraite à l’aide de l’API Java {#quick-start-soap-mode-deleting-an-abstract-policy-using-the-java-api}
 
-L’exemple de code Java suivant permet de supprimer une stratégie abstraite nommée AllowCopy. Le jeu de stratégies à partir duquel la stratégie est supprimée est nommé Jeu de stratégies global. Ce jeu de stratégies existe par défaut. (Consultez la section Créer des stratégies).
+L’exemple de code Java suivant permet de supprimer une politique abstraite nommée AllowCopy. Le jeu de politiques à partir duquel la politique est supprimée est nommé Jeu de politiques global. Ce jeu de politiques existe par défaut. (Consultez la section Créer des politiques).
 
 ```java
 /*
@@ -1996,14 +1996,14 @@ L’exemple de code Java suivant permet de supprimer une stratégie abstraite no
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/common
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/jboss
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/jboss/bin/client
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/thirdparty
  *
  * If you want to invoke a remote forms server instance and there is a
@@ -2083,14 +2083,14 @@ L’exemple de code Java suivant illustre la méthode permettant de protéger un
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/common
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/jboss
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/jboss/bin/client
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/thirdparty
  *
  * If you want to invoke a remote forms server instance and there is a
@@ -2167,8 +2167,8 @@ public class protectStatementWorkFlowExistingUserSoap {
 
 L’exemple de code Java suivant montre comment protéger un document dans le workflow d’instructions. Il s’agit d’un processus en deux étapes :
 
-* Un nouvel utilisateur, une nouvelle licence et une nouvelle stratégie sont créés.
-* L’utilisateur est associé à la licence et à la stratégie, et le document est protégé.
+* Un nouvel utilisateur, une nouvelle licence et une nouvelle politique sont créés.
+* L’utilisateur est associé à la licence et à la politique, et le document est protégé.
 
 ```java
 /*
@@ -2194,14 +2194,14 @@ L’exemple de code Java suivant montre comment protéger un document dans le wo
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/common
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/jboss
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/jboss/bin/client
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/thirdparty
  *
  * If you want to invoke a remote forms server instance and there is a

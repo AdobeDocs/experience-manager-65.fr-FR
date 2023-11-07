@@ -2,10 +2,10 @@
 title: Prise en main d’AEM Headless
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3038'
-ht-degree: 94%
+source-wordcount: '3032'
+ht-degree: 92%
 
 ---
 
@@ -81,7 +81,7 @@ Pour modifier votre contenu en mode découplé, AEM propose deux API robustes.
 * L’API GraphQL permet de créer des requêtes d’accès et de diffusion de fragments de contenu.
 * L’API REST Assets vous permet de créer et de modifier des fragments de contenu (et d’autres ressources).
 
-Vous découvrirez ces API et comment les utiliser dans une partie ultérieure du parcours AEM découplé. Pour plus d’informations, reportez-vous à la section [Ressources supplémentaires](#additional-resources) ci-dessous.
+Vous découvrirez ces API et comment les utiliser dans une partie ultérieure du parcours AEM découplé. Ou, voir la [ressources supplémentaires](#additional-resources) pour plus d’informations.
 
 ## Niveaux d’intégration en mode découplé {#integration-levels}
 
@@ -113,13 +113,13 @@ Ce niveau d’intégration repose sur le niveau 2 en permettant de modifier l�
 
 ### Vous n’avez pas encore de consommateur externe de contenu découplé, par exemple les applications monopages. {#do-not-have-a-spa}
 
-Si votre objectif est de créer une SPA qui consomme du contenu en toute sécurité depuis AEM, vous pouvez utiliser des fonctionnalités telles que les fragments de contenu pour gérer votre contenu découplé et créer également une SPA avec le framework de l’éditeur de SPA d’AEM.
+Si votre objectif est de créer un SPA qui consomme du contenu en toute sécurité à partir d’AEM, vous pouvez utiliser des fonctionnalités telles que les fragments de contenu pour gérer votre contenu sans affichage et créer également un  avec la structure de l’éditeur d’.
 
 Avec cet éditeur, la SPA consomme non seulement des contenus issus d’AEM, mais elle est en outre entièrement modifiable dans AEM par les auteurs de contenu, ce qui vous donne à la fois la flexibilité d’une diffusion découplée et de la modification replacée dans son contexte au sein d’AEM.
 
 ## Exigences et conditions préalables {#requirements-prerequisites}
 
-Un certain nombre d’exigences s’imposent avant de vous engager dans votre projet AEM découplé.
+Plusieurs conditions sont requises avant de commencer votre projet AEM sans interface utilisateur.
 
 ### Connaissances {#knowledge}
 
@@ -186,7 +186,7 @@ Consultez la section des [ressources supplémentaires](#additional-resources) po
 La hiérarchie des dossiers peut répondre à deux préoccupations majeures concernant la gestion des contenus :
 
 * [Traduction](#translation) : AEM gère la traduction du contenu en conservant des copies du contenu dans des dossiers spécifiques pour les paramètres régionaux.
-* Organisation : les dossiers servent à définir une hiérarchie de contenu nécessaire à la prise en charge des besoins de la traduction, mais aussi à gérer logiquement les fragments de contenu.
+* Organisation : les dossiers servent à définir une hiérarchie de contenu nécessaire à la prise en charge des besoins de traduction, mais aussi à gérer logiquement les fragments de contenu.
 
 AEM offre une structure de contenu flexible, car une hiérarchie peut être arbitrairement volumineuse. Toutefois, il est important de comprendre que toute modification de la structure des dossiers peut avoir des conséquences inattendues sur les requêtes existantes qui [dépendent du chemin d’accès au contenu.](#developer) Une hiérarchie bien définie, établie avec clarté à l’avance, peut donc être utile pour les auteurs de contenu.
 

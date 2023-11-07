@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1766'
-ht-degree: 59%
+source-wordcount: '1765'
+ht-degree: 58%
 
 ---
 
@@ -91,7 +91,7 @@ Dans AEM terminologie, une &quot;instance&quot; est une copie d’AEM exécutée
 
 Ces instances sont identiques en termes de logiciel installé. Elles se différencient uniquement par leur configuration. En outre, la plupart des installations utilisent un Dispatcher :
 
-* **Dispatcher**: Un serveur web statique (Apache httpd, Microsoft® IIS, etc.) a été augmenté avec le module AEM Dispatcher. Ce module met en cache les pages Web produites par l’instance de publication pour améliorer les performances.
+* **Dispatcher**: serveur web statique (Apache httpd, Microsoft® IIS, etc.) augmenté avec le module de Dispatcher AEM. Ce module met en cache les pages Web produites par l’instance de publication pour améliorer les performances.
 
 Il existe de nombreuses options avancées et des variantes de cette configuration, mais le modèle de base de création, de publication et de Dispatcher est au coeur de la plupart des déploiements. Commençons par nous concentrer sur une configuration simple. Vous trouverez ci-dessous des discussions sur les options de déploiement avancées.
 
@@ -103,9 +103,9 @@ Les sections suivantes décrivent les deux scénarios :
 
 ### On-Premise {#on-premise}
 
-Vous pouvez installer AEM sur des serveurs dans votre environnement d’entreprise. Les instances d’installation standard incluent : Environnements de développement, de test et de publication. Voir [Prise en main](/help/sites-deploying/deploy.md#getting%20started) pour plus d’informations sur la façon d’obtenir le logiciel AEM pour l’installer localement.
+Vous pouvez installer AEM sur des serveurs dans votre environnement d’entreprise. Les instances d’installation standard incluent : les environnements de développement, de test et de publication. Voir [Prise en main](/help/sites-deploying/deploy.md#getting%20started) pour plus d’informations sur la façon d’obtenir le logiciel AEM pour l’installer localement.
 
-Pour en savoir plus sur les déploiements On-Premise standard, reportez-vous à [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md).
+Pour en savoir plus sur les déploiements sur site classiques, voir [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md).
 
 ### Managed Services avec Cloud Manager {#managed-services-using-cloud-manager}
 
@@ -155,7 +155,7 @@ La section qui suit décrit une **installation autonome**. Pour plus d’informa
 
    Emplacement d’installation de Windows : **`C:\Program Files\aem`**
 
-   Il est aussi courant d’installer les exemples d’instance dans un dossier sur le bureau. Dans tous les cas, nous nous référons généralement à cet emplacement comme suit :
+   Il est aussi courant d’installer les exemples d’instance dans un dossier sur le bureau. Dans tous les cas, Adobe fait référence à cet emplacement de manière générique en tant que :
 
    `<aem-install>`
 

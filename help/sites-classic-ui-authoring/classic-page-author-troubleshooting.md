@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 exl-id: 27a6b012-576e-40bc-9b50-c310b3c56c9e
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '430'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '429'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
 >[!NOTE]
 >
->Les utilisateurs et utilisatrices disposant de droits d’administrateur et souhaitant résoudre les problèmes liés à AEM peuvent utiliser les méthodes de dépannage décrites dans la section [Dépannage dans AEM (pour les administrateurs ou administratrices)](/help/sites-administering/troubleshoot.md). Si vous ne disposez pas des privilèges suffisants, contactez votre administrateur ou administratrice système pour en savoir plus sur le dépannage dans AEM.
+>Les utilisateurs et utilisatrices disposant de droits d’administrateur et souhaitant résoudre les problèmes liés à AEM peuvent utiliser les méthodes de dépannage décrites dans la section [Dépannage dans AEM (pour les administrateurs et administratrices)](/help/sites-administering/troubleshoot.md). Si vous ne disposez pas des privilèges suffisants, contactez votre administrateur système pour connaître les AEM de dépannage.
 
 ## Ancienne version de la page toujours visible sur le site de publication {#old-page-version-still-on-published-site}
 
@@ -44,9 +44,9 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
    * Effacez la mémoire cache du navigateur local et accédez de nouveau à votre page.
    * Ajoutez `?` à la fin de l’URL de la page. Par exemple :
 
-      `http://localhost:4502/sites.html/content?`
+     `http://localhost:4502/sites.html/content?`
 
-      Ceci demandera la page directement auprès d’AEM et contournera le dispatcher. Si vous recevez la page mise à jour, ceci indique que vous devez vider la mémoire cache du dispatcher.
+     Ceci demandera la page directement auprès d’AEM et contournera le dispatcher. Si vous recevez la page mise à jour, ceci indique que vous devez vider la mémoire cache du dispatcher.
 
    * Contactez l’administrateur du système en cas de problèmes avec les files d’attente de réplication.
 
@@ -83,4 +83,4 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
    * Ces définitions peuvent être modifiées dans la configuration du **servlet Rechercher et remplacer de la gestion de contenu Web Day CQ** à l’aide de la **console Web**, par exemple à l’adresse
 
-      `http://localhost:4502/system/console/configMgr`
+     `http://localhost:4502/system/console/configMgr`

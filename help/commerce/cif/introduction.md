@@ -3,9 +3,9 @@ title: Présentation et aperçu
 description: Présentation et aperçu de Content and Commerce. Experience Manager Commerce Integration Framework (CIF) est le modèle recommandé par Adobe pour intégrer et étendre les services commerciaux disponibles à partir d’Adobe Commerce et d’autres solutions de commerce tierces avec Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
-workflow-type: ht
-source-wordcount: '871'
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '869'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ Grâce à Adobe Experience Manager Content and Commerce, les marques peuvent év
 
 Avec les attentes de plus en plus élevées des clients concernant les expériences commerciales en ligne, les marques subissent de fortes pressions pour offrir des expériences différenciées et plus de contenu plus rapidement. Cependant, la mise en œuvre d’une plateforme de gestion de contenu nécessite souvent des investissements importants en temps et en budget pour développer des éléments fondamentaux, tels que les composants personnalisés et les outils de création, et entraîne des coûts importants de maintenance et de mise à niveau. Experience Manager Sites propose Content and Commerce sous la forme d’un module complémentaire pour Experience Manager qui fournit des composants de base commerciaux prêts à l’emploi, des outils de création et un storefront de référence pour accélérer la mise en service, permettre une collaboration transparente entre les équipes et stimuler le taux de conversion.
 
-Les marques peuvent intégrer Experience Manager à Adobe Commerce, un composant d’Adobe Experience Cloud, ainsi qu’à tout moteur de commerce de votre choix. Grâce à Experience Manager Content and Commerce, les marques peuvent :
+Les marques peuvent intégrer Experience Manager à Adobe Commerce, un composant d’Adobe Experience Cloud, ainsi qu’à tout moteur de commerce de leur choix. Grâce à Experience Manager Content and Commerce, les marques peuvent :
 
 * évoluer et innover plus rapidement ;
 * personnaliser leurs expériences pour générer des conversions ;

@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2009'
-ht-degree: 71%
+source-wordcount: '2008'
+ht-degree: 68%
 
 ---
 
@@ -73,7 +73,7 @@ Les actions suivantes sont prises en charge avec l’API REST :
 
 >[!NOTE]
 >
->En utilisant Firebug, une extension Firefox pour le développement web, il est possible de suivre le trafic HTTP lorsque la console est utilisée. Vous pouvez, par exemple, vérifier les paramètres et les valeurs envoyés au serveur AEM avec une requête `POST`.
+>En utilisant Firebug, une extension Firefox pour le développement web, il est possible de suivre le trafic HTTP lorsque la console est utilisée. Par exemple, vous pouvez vérifier les paramètres et les valeurs envoyés au serveur AEM avec une `POST` requête.
 
 Dans cette page, on part du principe qu’AEM s’exécute sur localhost sur le port `4502` et que le contexte d’installation est « `/` » (racine). Si ce n’est pas le cas de votre installation, les URI auxquelles les requêtes HTTP s’appliquent doivent être adaptées en conséquence.
 
@@ -99,7 +99,7 @@ Les méthodes de requête HTTP suivantes s’appliquent à :
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td><p>Crée une instance de workflow. Les paramètres sont les suivants :<br /> - <code>model</code> : l’ID (URI) du modèle de workflow correspondant<br /> - <code>payloadType</code> : contenant le type de payload (par exemple, <code>JCR_PATH</code> ou URL).<br /> Le payload est envoyé en tant que paramètre <code>payload</code>. Une réponse <code>201</code> (<code>CREATED</code>) est renvoyée avec un en-tête d’emplacement contenant l’URL de la nouvelle instance de workflow.</p> </td>
+   <td><p>Crée une instance de workflow. Les paramètres sont les suivants :<br /> - <code>model</code>: identifiant (URI) du modèle de workflow correspondant<br /> - <code>payloadType</code>: contenant le type de la payload (par exemple, <code>JCR_PATH</code> ou URL).<br /> Le payload est envoyé en tant que paramètre <code>payload</code>. Une réponse <code>201</code> (<code>CREATED</code>) est renvoyée avec un en-tête d’emplacement contenant l’URL de la nouvelle instance de workflow.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -132,7 +132,7 @@ Les méthodes de requête HTTP suivantes s’appliquent à :
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Modifie le statut de l’instance. Le nouveau statut est envoyé en tant que paramètre <code>state</code> et doit avoir l’une des valeurs suivantes : <code>RUNNING</code>, <code>SUSPENDED</code> ou <code>ABORTED</code>.<br /> Si le nouveau statut est inaccessible (par exemple, lors de l’interruption d’une instance terminée), une réponse <code>409</code> (<code>CONFLICT</code>) est renvoyée au client.</td>
+   <td>Modifie le statut de l’instance. Le nouveau statut est envoyé en tant que paramètre <code>state</code> et doit avoir l’une des valeurs suivantes : <code>RUNNING</code>, <code>SUSPENDED</code> ou <code>ABORTED</code>.<br /> Si le nouvel état n’est pas accessible (par exemple, lors de l’interruption d’une instance terminée), une <code>409</code> (<code>CONFLICT</code>) est renvoyée au client.</td>
   </tr>
  </tbody>
 </table>

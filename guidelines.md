@@ -1,15 +1,15 @@
 ---
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 66%
+source-wordcount: '743'
+ht-degree: 61%
 
 ---
 # Instructions relatives à la contribution à la documentation d’Adobe Experience Manager
 
 ## Philosophie de la documentation
 
-Adobe sait que les utilisateurs d’Adobe Experience Manager travaillent dans des environnements très concurrentiels, afin de créer des expériences numériques qui les distinguent de leurs concurrents. Par conséquent, il est essentiel que, lorsque Adobe fournit de nouveaux outils avancés dans AEM, ces outils soient complétés par une documentation précise et claire pour permettre au client d’utiliser immédiatement son investissement AEM et maximiser le ROI.
+Adobe sait que les utilisateurs de Adobe Experience Manager travaillent dans des environnements très concurrentiels, afin de créer des expériences numériques qui les distinguent de leurs concurrents. Par conséquent, il est essentiel que, lorsque Adobe fournit de nouveaux outils avancés dans AEM, ces outils soient complétés par une documentation précise et claire pour permettre au client d’utiliser immédiatement son investissement AEM et maximiser le ROI.
 
 L’objectif de la documentation AEM est de la placer entre les mains des utilisateurs d’AEM dès que possible. Par conséquent, Adobe donne la priorité à une documentation précise et utilisable et s’efforce de la mettre à jour et de l’améliorer continuellement.
 
@@ -79,7 +79,7 @@ N’oubliez pas que les lecteurs de la documentation AEM sont internationaux et 
 
 Les captures d’écran doivent être utilisées de manière judicieuse et uniquement lorsqu’une description textuelle est insuffisante.
 
-Les marqueurs ou autres annotations dans les captures d’écran (comme les cadres rouges, les flèches ou le texte) ne doivent pas être utilisés. Ainsi, les captures d’écran sont plus faciles à réutiliser ou à répliquer dans les versions localisées de la documentation.
+N’utilisez pas de marqueurs ni d’autres annotations dans les captures d’écran (comme les cadres rouges, les flèches ou le texte). Ainsi, les captures d’écran sont plus faciles à réutiliser ou à répliquer dans les versions localisées de la documentation.
 
 ### Références spécifiques à la version
 
@@ -89,4 +89,4 @@ Dans la mesure du possible, évitez toute référence directe à une version sp�
 
 Le produit doit toujours être référencé par son nom complet **Adobe Experience Manager** pour la première fois dans un article et peut ensuite être appelé **AEM**.
 
-Day, logiciel Day, CQ et CRX ne doivent pas être utilisés, sauf lorsqu’ils sont inévitables, par exemple dans les noms de classe ou en faisant référence à l’historique d’AEM.
+N’utilisez pas Day, Day Software, CQ et CRX, sauf lorsque cela est inévitable, par exemple dans les noms de classe ou en faisant référence à l’historique de l’AEM.

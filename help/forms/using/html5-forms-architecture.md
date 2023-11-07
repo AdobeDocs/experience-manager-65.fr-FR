@@ -12,10 +12,10 @@ discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 feature: Mobile Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
-workflow-type: ht
-source-wordcount: '2011'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '2010'
+ht-degree: 99%
 
 ---
 
@@ -56,7 +56,7 @@ Le service Forms OSGi traite une requête en deux étapes :
 
 S’il existe des mises à jour dans un formulaire ou tout autre actif utilisé à l’intérieur d’un formulaire, le composant de mise en cache du formulaire les détecte et le cache de ce formulaire en particulier est invalidé. Une fois que le service Forms OSGi a terminé le traitement, le JSP du rendu du profil ajoute les références à la bibliothèque JavaScript et le style à ce formulaire et renvoie la réponse au client. Un serveur web standard tel qu’[Apache](https://httpd.apache.org/) peut être utilisé ici avec la compression HTML activée. Un serveur web réduirait considérablement le temps de réponse, le trafic réseau et la durée nécessaire au trafic des données entre le serveur et le client.
 
-Lorsqu’un utilisateur envoie le formulaire, le navigateur envoie l’état du formulaire au format JSON au [proxy de service d’envoi](../../forms/using/service-proxy.md), puis le proxy de service d’envoi génère un fichier XML avec les données provenant des fichiers JSON et envoie le fichier XML au point de terminaison d’envoi.
+Lorsqu’un utilisateur envoie le formulaire, le navigateur envoie l’état du formulaire au format JSON au [proxy de service d’envoi](../../forms/using/service-proxy.md), puis le proxy de service d’envoi génère un fichier XML avec les données provenant des fichiers JSON et envoie le fichier XML au point d’entrée d’envoi.
 
 ## Composants {#components}
 
@@ -174,7 +174,7 @@ Les profils sont les nœuds de ressources dans Sling qui représentent un formul
 
 #### Rendus des profils {#profile-renderers}
 
-Le nœud de profil possède une propriété **sling:resourceSuperType** avec la valeur **xfaforms/profile**. Cette propriété envoie en interne des demandes de transfert au script sling pour les nœuds de profil qui figurent dans le dossier **/libs/xfaforms/profile**. Ces scripts sont des pages JSP, qui sont des conteneurs permettant de rassembler des formulaires HTML et des artefacts JS/CSS obligatoires. Les pages comportent des références à :
+Le nœud de profil possède une propriété **sling:resourceSuperType** avec la valeur **xfaforms/profile**. Cette propriété envoie en interne des requêtes de transfert au script sling pour les noeuds de profil dans le **/libs/xfaforms/profile** dossier. Ces scripts sont des pages JSP, qui sont des conteneurs permettant de rassembler des formulaires HTML et des artefacts JS/CSS obligatoires. Les pages comportent des références à :
 
 * **xfaforms.I18N.&lt;locale>** : cette bibliothèque contient des données localisées.
 * **xfaforms.profile** : cette bibliothèque contient l’implémentation pour les moteurs de script XFA et de mise en page.

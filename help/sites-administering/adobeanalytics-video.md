@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1745'
 ht-degree: 81%
 
 ---
@@ -28,7 +28,7 @@ Appliquez la procédure ci-dessous pour configurer un framework pour le suivi de
 
 >[!NOTE]
 >
->Pour les nouvelles mises en œuvre, il est recommandé de **ne pas utiliser** les options héritées pour le suivi vidéo. Utilisez plutôt la méthode **Jalons**.
+>Pour les nouvelles mises en œuvre, il est recommandé de **ne pas utiliser** les options héritées pour le suivi vidéo. Utilisez la variable **Jalons** à la place.
 
 ## Étapes communes {#common-steps}
 
@@ -376,7 +376,7 @@ Lors de l’utilisation de la méthode **Secondes héritées**, les appels Adobe
 
    ![lseconds](assets/lseconds.png)
 
-   *L’appel est similaire à l’appel Jalons hérités ci-dessus. Consultez les informations relatives à pev3 **[fourni ici](/help/sites-administering/adobeanalytics.md)**.*
+   *L’appel est similaire à l’appel Jalons hérités ci-dessus. Consultez les informations sur pev3 **[fourni ici](/help/sites-administering/adobeanalytics.md)**.*
 
 **Références utilisées dans ce tutoriel :**
 

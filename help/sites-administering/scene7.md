@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '5484'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -27,7 +27,6 @@ Pour plus d’informations sur l’utilisation de tous les composants Dynamic M
 >* Avant de configurer Dynamic Media Classic pour qu’il fonctionne avec Experience Manager, consultez les [Bonnes pratiques](#best-practices-for-integrating-scene-with-aem) pour intégrer Dynamic Media Classic à Experience Manager.
 >* Si vous utilisez Dynamic Media Classic avec une configuration de proxy personnalisée, vous devez paramétrer les deux configurations de proxy client HTTP, car certaines fonctionnalités d’Experience Manager utilisent les API 3.x et d’autres les API 4.x. La version 3.x est configurée avec [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) et la version 4.x avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator).
 >
-
 
 ## Intégration d’Experience Manager à Dynamic Media Classic par rapport à Dynamic Media {#aem-scene-integration-versus-dynamic-media}
 
@@ -62,15 +61,15 @@ Lorsque vous travaillez avec des ressources dans cette solution, vous suivez ce 
 1. Charger une image unique et des contenus vidéo directement vers Experience Manager
 1. Coder des vidéos directement dans Experience Manager
 1. Créer des visionneuses d’images directement dans Experience Manager
-1. Le cas échéant, ajouter une certaine interactivité aux images ou aux vidéos.
+1. Le cas échéant, ajoutez de l’interactivité aux images ou aux vidéos.
 
-Les composants que vous utilisez pour Dynamic Media se trouvent dans la zone du composant **[!UICONTROL Dynamic Media]** en [mode Conception](/help/sites-authoring/author-environment-tools.md#page-modes). Ils comprennent les éléments suivants :
+Les composants que vous utilisez pour Dynamic Media se trouvent dans la zone du composant **[!UICONTROL Dynamic Media]** en [mode Conception](/help/sites-authoring/author-environment-tools.md#page-modes). Il s’agit des éléments suivants :
 
 * **[!UICONTROL Dynamic Media]** : le composant **[!UICONTROL Dynamic Media]** est dynamique ; il propose des options différentes selon que vous ajoutez une image ou une vidéo. Le composant prend en charge les paramètres prédéfinis d’image, ainsi que les visionneuses d’images telles que les visionneuses d’images, les visionneuses à 360°, les visionneuses de médias mixtes et le contenu vidéo. En outre, la visionneuse est réactive : la taille de l’écran change automatiquement en fonction de la taille d’écran. Toutes les visionneuses sont des visionneuses HTML5.
 
 * **[!UICONTROL Média interactif]** - Le **[!UICONTROL Média interactif]** est destiné aux ressources telles que les bannières de carrousel, les images interactives et la vidéo interactive. Ces ressources sont interactives, telles que les zones réactives ou les zones cliquables. Ce composant est dynamique. Cela signifie qu’il propose des options différentes selon que vous ajoutez une image ou une vidéo. En outre, la visionneuse est réactive : la taille de l’écran change automatiquement en fonction de la taille d’écran. Toutes les visionneuses sont des visionneuses HTML5.
 
-### Scénario à double utilisation {#dual-use-scenario}
+### Scénario à double usage {#dual-use-scenario}
 
 Clé en main, vous pouvez utiliser simultanément les fonctionnalités d’intégration de Dynamic Media Dynamic Media Classic et d’Experience Manager. Le tableau des cas d’utilisation suivant décrit ce qui se passe lorsque vous activez ou désactivez certaines zones.
 
@@ -315,7 +314,7 @@ Une configuration cloud définit le mappage entre un dossier Dynamic Media Cla
    >
    >Lors de la création de configurations supplémentaires, le champ **[!UICONTROL Configuration du parent]** s’affiche.
    >
-   >Ne modifiez **pas** la configuration du parent. La modification de la configuration du parent peut supprimer l’intégration.
+   >Ne modifiez **pas** la configuration du parent. La modification de la configuration parent peut interrompre l’intégration.
 
 1. Saisissez l’adresse électronique, le mot de passe et la région de votre compte Dynamic Media Classic, puis sélectionnez **[!UICONTROL Connexion à Dynamic Media Classic]**. Vous êtes connecté au serveur Dynamic Media Classic et la boîte de dialogue s’agrandit pour afficher plus d’options.
 
@@ -327,7 +326,7 @@ Une configuration cloud définit le mappage entre un dossier Dynamic Media Cla
 
    >[!CAUTION]
    >
-   >En fonction de la taille du dossier de Dynamic Media Classic, l’importation d’un dossier racine peut prendre beaucoup de temps. En outre, les données Dynamic Media Classic peuvent dépasser les capacités de stockage d’Experience Manager. Vérifiez que vous importez le bon dossier. Importer trop de données peut arrêter votre système.
+   >En fonction de la taille du dossier de Dynamic Media Classic, l’importation d’un dossier racine peut prendre beaucoup de temps. En outre, les données Dynamic Media Classic peuvent dépasser les capacités de stockage d’Experience Manager. Vérifiez que vous importez le bon dossier. L’importation de trop de données peut arrêter votre système.
 
    ![chlimage_1-298](assets/chlimage_1-298.png)
 
@@ -340,7 +339,6 @@ Une configuration cloud définit le mappage entre un dossier Dynamic Media Cla
 >* Lorsque vous vous reconnectez à Dynamic Media Classic en mode de publication, réinitialisez le mot de passe de publication ou la reconnexion ne fonctionnera pas (ce problème n’apparaît pas pour l’instance d’auteur).
 >* Si vous modifiez des valeurs telles que votre région ou le nom de la société, vous devez vous reconnecter à Dynamic Media Classic. Si les options de configuration ont été modifiées, mais pas enregistrées, Experience Manager continue à tord d’indiquer que la configuration est valide. N’oubliez pas de vous reconnecter.
 >
-
 
 ### Activation du listener de gestion des ressources numériques Dynamic Media Classic Adobe CQ {#enabling-the-adobe-cq-scene-dam-listener}
 
@@ -367,7 +365,7 @@ Lorsqu’une instance Experience Manager est configurée pour traiter le codage
 
    >[!NOTE]
    >
-   >Bonne pratique : la plupart des ressources sont assimilées en quelques minutes au plus (par exemple, les images). Cependant, dans certains cas (par exemple, pour les vidéos volumineuses), la valeur du délai d’expiration doit être augmentée à 7200 secondes (2 heures) afin de prendre en compte les temps de traitement longs. Sans cela, cette tâche de chargement Dynamic Media Classic indique **[!UICONTROL UploadFailed]** dans les métadonnées JCR (Java™ Content Repository).
+   >Bonne pratique : la plupart des ressources sont assimilées en quelques minutes au plus (par exemple, les images). Cependant, dans certains cas (par exemple, les vidéos plus volumineuses), augmentez la valeur du délai d’expiration à 7 200 secondes (deux heures) pour tenir compte du temps de traitement long. Sans cela, cette tâche de chargement Dynamic Media Classic indique **[!UICONTROL UploadFailed]** dans les métadonnées JCR (Java™ Content Repository).
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
@@ -403,12 +401,11 @@ Lorsqu’une ressource est ajoutée à Experience Manager Assets, elle est aut
    >* Lors de l’ajout de ressources après l’automatisation, si elles ne sont pas placées dans le dossier cible CQ, elles ne sont pas téléchargées vers Dynamic Media Classic.
    >* Experience Manager incorpore toutes les métadonnées comme XMP avant de les charger vers Dynamic Media Classic, de sorte que toutes les propriétés du nœud de métadonnées soient disponibles dans Dynamic Media Classic sous la forme d’un XMP.
 
+### Configuration du statut (publié/dépublié) des ressources poussées vers Dynamic Media Classic {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene}
 
-### Configuration du statut (publié/non publié) des ressources poussées vers Dynamic Media Classic {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene}
+Si vous poussez des ressources d’Experience Manager Assets vers Dynamic Media Classic, vous pouvez les publier automatiquement (comportement par défaut) ou les pousser vers Dynamic Media Classic dans un statut dépublié.
 
-Si vous poussez des ressources d’Experience Manager Assets vers Dynamic Media Classic, vous pouvez les publier automatiquement (comportement par défaut) ou les pousser vers Dynamic Media Classic dans un statut non publié.
-
-Il est possible que vous ne souhaitiez pas publier immédiatement les ressources sur Dynamic Media Classic si vous souhaitez les tester dans un environnement d’évaluation avant de les publier. Vous pouvez utiliser Experience Manager avec l’environnement de test sécurisé de Dynamic Media Classic pour envoyer directement des ressources d’Assets vers Dynamic Media Classic dans un statut non publié.
+Il est possible que vous ne souhaitiez pas publier immédiatement les ressources sur Dynamic Media Classic si vous souhaitez les tester dans un environnement d’évaluation avant de les publier. Vous pouvez utiliser Experience Manager avec l’environnement de test sécurisé de Dynamic Media Classic pour envoyer directement des ressources d’Assets vers Dynamic Media Classic dans un statut dépublié.
 
 Les ressources Dynamic Media Classic restent disponibles via l’aperçu sécurisé. Ce n’est que lorsque les ressources sont publiées dans Experience Manager que les ressources Dynamic Media Classic sont également mises en exploitation.
 
@@ -416,7 +413,7 @@ Si vous souhaitez publier les ressources immédiatement lorsque vous les poussez
 
 Toutefois, si vous ne souhaitez pas que les ressources poussées vers Dynamic Media Classic soient publiées automatiquement, cette section décrit comment configurer Experience Manager et Dynamic Media Classic pour exécuter cette fonctionnalité.
 
-#### Conditions préalables pour pousser les ressources vers Dynamic Media Classic en conservant un statut non publié {#prerequisites-to-push-assets-to-scene-unpublished}
+#### Conditions préalables pour pousser les ressources vers Dynamic Media Classic en conservant un statut dépublié {#prerequisites-to-push-assets-to-scene-unpublished}
 
 Pour pouvoir pousser des ressources vers Dynamic Media Classic sans les publier, vous devez configurer les éléments suivants :
 
@@ -429,7 +426,7 @@ Ces étapes sont les mêmes que pour créer une configuration de test sécurisé
 >
 >Si votre environnement d’installation est un système d’exploitation Unix 64 bits, rendez-vous sur [https://helpx.adobe.com/fr/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/fr/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) pour connaître les autres options de configuration à définir.
 
-#### Limites connues pour pousser des ressources en conservant un statut non publié  {#known-limitations-for-pushing-assets-in-unpublished-state}
+#### Limites connues pour pousser des ressources en conservant un statut dépublié  {#known-limitations-for-pushing-assets-in-unpublished-state}
 
 Si vous utilisez cette fonction, tenez compte des restrictions suivantes :
 
@@ -440,13 +437,13 @@ Si vous utilisez cette fonction, tenez compte des restrictions suivantes :
 >
 >Si vous souhaitez publier les ressources immédiatement, nous recommandons de conserver l’option **[!UICONTROL Activer l’aperçu sécurisé]** définie sur **[!UICONTROL Immédiatement]** et d’utiliser la fonction **[!UICONTROL Activer le chargement automatique.]**
 
-### Définition du statut des ressources poussées vers Dynamic Media Classic comme non publiées {#setting-the-state-of-assets-pushed-to-scene-as-unpublished}
+### Définition du statut des ressources poussées vers Dynamic Media Classic comme dépubliées {#setting-the-state-of-assets-pushed-to-scene-as-unpublished}
 
 >[!NOTE]
 >
->Si vous publiez une ressource dans Experience Manager, vous activez automatiquement le statut d’exploitation et de mise en ligne de la ressource de S7 (le statut de la ressource n’est plus non publié et ne bénéficie plus d’un aperçu sécurisé).
+>Si vous publiez une ressource dans Experience Manager, vous activez automatiquement le statut d’exploitation et de mise en ligne de la ressource de S7 (le statut de la ressource n’est plus Dépublié et ne bénéficie plus d’un aperçu sécurisé).
 
-**Pour définir des ressources poussées vers Dynamic Media Classic sur le statut non publié, procédez comme suit :**
+**Pour définir des ressources poussées vers Dynamic Media Classic sur le statut Dépublié, procédez comme suit :**
 
 1. Sélectionnez l’icône d’Experience Manager et accédez à **[!UICONTROL Déploiement]** > **[!UICONTROL Services cloud]**.
 1. Sélectionnez **[!UICONTROL Dynamic Media Classic]**.
@@ -460,7 +457,7 @@ Si vous utilisez cette fonction, tenez compte des restrictions suivantes :
 
 1. Sélectionnez **[!UICONTROL OK]**.
 
-Avec l’option Activer l’aperçu sécurisé, vos ressources sont poussées vers le serveur d’aperçu sécurisé sans être publiées.
+Avec l’option Activer l’aperçu sécurisé, vos ressources sont poussées vers le serveur d’aperçu sécurisé en étant dépubliées.
 
 Pour voir si l’**[!UICONTROL Aperçu sécurisé]** est activé, accédez à un composant Dynamic Media Classic sur une page dans Experience Manager. Sélectionnez **[!UICONTROL Modifier]**. La ressource présente le serveur d’aperçu sécurisé dans son URL. Après la publication dans Experience Manager, le domaine de serveur dans la référence de fichier est mis à jour et passe de l’URL d’aperçu à l’URL d’exploitation.
 
@@ -590,9 +587,9 @@ Si vous rencontrez des problèmes pour intégrer Experience Manager à Dynamic�
 * Vérifiez que la ressource que vous téléchargez se trouve dans le dossier **[!UICONTROL Cible CQ]** (vous spécifiez ce dossier dans la configuration cloud de Dynamic Media Classic).
 * Si ce n’est pas le cas, vous devez configurer la configuration cloud dans la section **[!UICONTROL Propriétés de la page]** de cette page pour autoriser le chargement vers le dossier **[!UICONTROL ad hoc CQ]**.
 
-* Vérifiez les informations figurant dans les journaux.
+* Pour plus d’informations, consultez les journaux .
 
-**Si vos paramètres vidéo prédéfinis n’apparaissent pas :**
+**Si vos paramètres vidéo prédéfinis n’apparaissent pas :**
 
 * Assurez-vous que vous avez configuré la configuration cloud de cette page dans la section **[!UICONTROL Propriétés de la page]**. Les paramètres vidéo prédéfinis sont disponibles dans le composant vidéo Dynamic Media Classic.
 
@@ -606,7 +603,7 @@ Si vous rencontrez des problèmes pour intégrer Experience Manager à Dynamic�
 * Assurez-vous que vous avez configuré la configuration des services cloud de manière à activer le chargement automatique et que vous avez mis à jour et enregistré le workflow de ressources de gestion des ressources numériques pour inclure le téléchargement de Dynamic Media Classic.
 * Lorsque vous téléchargez une image dans un sous-dossier du dossier cible de Dynamic Media Classic, assurez-vous d’effectuer l’une des opérations suivantes :
 
-   * Assurez-vous que chaque ressource porte un nom unique, indépendamment de son emplacement. Dans le cas contraire, la ressource figurant dans le dossier cible principal est supprimée et seule subsiste la ressource qui se trouve dans le sous-dossier.
+   * Assurez-vous que chaque ressource porte un nom unique, indépendamment de son emplacement. Sinon, la ressource du dossier cible principal est supprimée et seule la ressource du sous-dossier est conservée.
    * Modifiez la manière dont Dynamic Media Classic remplace les ressources dans la zone Configuration du compte Dynamic Media Classic. Ne configurez pas Dynamic Media Classic pour remplacer les ressources, quel que soit l’emplacement, si vous utilisez des ressources portant le même nom que les sous-dossiers.
 
 **Si les ressources ou dossiers supprimés ne sont pas synchronisés entre Dynamic Media Classic et Experience Manager :**

@@ -3,22 +3,22 @@ title: Traitement des demandes en vertu du RGPD pour Adobe Experience Manager Fo
 description: Traitement des demandes en vertu du RGPD pour Adobe Experience Manager Foundation
 contentOwner: sarchiz
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 58%
+source-wordcount: '438'
+ht-degree: 63%
 
 ---
 
-# Traitement des demandes RGPD pour Adobe Experience Manager (AEM) Foundation{#handling-gdpr-requests-for-the-aem-foundation}
+# Traitement des demandes en vertu du RGPD pour Adobe Experience Manager (AEM) Foundation{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
->Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité, comme le RGPD, le CCPA, etc.
+>Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité, telles que le RGPD, le CCPA, etc.
 
 ## Prise en charge du RGPD par AEM Foundation {#aem-foundation-gdpr-support}
 
-En ce qui concerne AEM Foundation, les données personnelles stockées sont conservées dans le profil utilisateur. Par conséquent, les informations contenues dans cet article portent principalement sur la manière d’accéder aux profils utilisateur et de les supprimer, de traiter les demandes d’accès et de suppression en vertu du RGPD, respectivement.
+En ce qui concerne AEM Foundation, les données personnelles stockées sont conservées dans le profil utilisateur. Par conséquent, les informations contenues dans cet article portent principalement sur la manière d’accéder aux profils utilisateur et de les supprimer, de traiter respectivement les demandes d’accès au RGPD et de suppression.
 
 ## Accès à un profil utilisateur {#accessing-a-user-profile}
 
@@ -36,9 +36,9 @@ En ce qui concerne AEM Foundation, les données personnelles stockées sont con
 
    ![userprofile_small](assets/userprofile_small.png)
 
-### API HTTP  {#http-api}
+### API HTTP {#http-api}
 
-Comme mentionné, Adobe fournit des API pour accéder aux données utilisateur, afin de faciliter l’automatisation. Il existe plusieurs types d’API que vous pouvez utiliser :
+Comme mentionné, Adobe fournit des API pour accéder aux données utilisateur et faciliter l’automatisation. Il existe plusieurs types d’API que vous pouvez utiliser :
 
 **API UserProperties**
 
@@ -71,8 +71,8 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### Désactivation d’un utilisateur {#disable-user}
 
-1. Ouvrez la console Administration utilisateur et recherchez l’utilisateur en question, comme décrit ci-dessus.
-1. Pointez sur l’utilisateur et cliquez sur l’icône de sélection. Le profil devient gris pour indiquer qu’il est sélectionné.
+1. Ouvrez la console d’administration utilisateur et recherchez la personne en question, comme décrit ci-dessus.
+1. Pointez sur la personne et cliquez sur l’icône de sélection. Le profil devient gris pour indiquer la sélection.
 
 1. Appuyez sur le bouton Désactiver dans le menu supérieur pour désactiver l’utilisateur :
 
@@ -103,11 +103,11 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
-### API HTTP  {#http-api-1}
+### API HTTP {#http-api-1}
 
 Les procédures suivantes utilisent la méthode `curl` l’outil de ligne de commande pour illustrer comment désactiver l’utilisateur avec la fonction **[!UICONTROL cavery]** `userId` et supprimer les profils de `cavery` disponibles à l’emplacement par défaut.
 
-* *Découverte de la page d’accueil de l’utilisateur*
+* *Découverte de l’accueil de l’utilisateur*
 
 ```shell
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'
@@ -122,7 +122,7 @@ Utilisation du chemin de nœud de la propriété home de la charge utile JSON re
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (GDPR in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
 ```
 
-* *Suppression de profils utilisateur*
+* *Supprimer des profils utilisateurs*
 
 Utilisation du chemin de nœud de la propriété home de la charge utile JSON renvoyé par la commande de découverte de compte et les emplacements de nœuds de profil prêts à l’emploi connus :
 

@@ -1,27 +1,23 @@
 ---
 title: AEM Sites – Préparation au RGPD
-seo-title: AEM Sites - GDPR Readiness
 description: Découvrez les procédures de gestion des demandes RGPD dans AEM Sites et apprenez à les utiliser.
-seo-description: Learn about the details of GDPR Readiness for AEM Sites.
-uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
-# AEM Sites – Préparation pour le RGPD{#aem-sites-gdpr-readiness}
+# AEM Sites – Préparation au RGPD{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
 >
->Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité, comme le RGPD, le CCPA, etc.
+>Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité, telles que le RGPD, le CCPA, etc.
 
 Le règlement général sur la protection des données (RGPD) de l’Union européenne sur les droits de confidentialité des données entre en vigueur en mai 2018.
 
@@ -151,7 +147,7 @@ Pour prévisualiser la persistance utilisée par ContextHub, un utilisateur ou u
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
 
-     Le magasin ContextHub définit le niveau de persistance à utiliser. De ce fait, pour afficher l’état actuel de la persistance, tous les niveaux doivent être vérifiés.
+     Le magasin ContextHub définit la couche de persistance à utiliser. Pour afficher l’état actuel de la persistance, tous les niveaux doivent être vérifiés.
 
 Par exemple, pour afficher les données stockées dans localStorage :
 
@@ -180,7 +176,7 @@ Pour prévisualiser la persistance utilisée par ContextHub, un utilisateur ou u
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
 
-     Le magasin ContextHub définit le niveau de persistance à utiliser. De ce fait, pour afficher l’état actuel de la persistance, tous les niveaux doivent être vérifiés.
+     Le magasin ContextHub définit la couche de persistance à utiliser. Pour afficher l’état actuel de la persistance, tous les niveaux doivent être vérifiés.
 
 Par exemple, pour afficher les données stockées dans localStorage :
 

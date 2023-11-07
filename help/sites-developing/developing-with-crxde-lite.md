@@ -7,10 +7,10 @@ topic-tags: development-tools
 content-type: reference
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2120'
-ht-degree: 30%
+source-wordcount: '2119'
+ht-degree: 32%
 
 ---
 
@@ -65,7 +65,7 @@ CRXDE Lite offre les fonctionnalités suivantes :
   </tr>
   <tr>
    <td>Volet Explorateur</td>
-   <td><p>Affiche une arborescence de tous les noeuds du référentiel.</p> <p>Cliquez sur un noeud afin d’afficher ses propriétés dans le <strong>Propriétés</strong> . Après avoir cliqué sur un nœud, vous pouvez sélectionner une action dans la barre d’outils. Cliquez de nouveau sur le noeud pour le renommer.</p> <p>Filtre de navigation dans l’arborescence (icône en forme de paire de jumelles) : vous permet de filtrer les nœuds du référentiel pour lesquels le nom contient le texte saisi. S’applique uniquement aux nœuds qui ont été chargés localement.<br /> </p> </td>
+   <td><p>Affiche une arborescence de tous les noeuds du référentiel.</p> <p>Cliquez sur un noeud afin d’afficher ses propriétés dans le <strong>Propriétés</strong> . Après avoir cliqué sur un nœud, vous pouvez sélectionner une action dans la barre d’outils. Cliquez de nouveau sur le nœud pour le renommer.</p> <p>Filtre de navigation dans l’arborescence (icône en forme de paire de jumelles) : vous permet de filtrer les nœuds du référentiel pour lesquels le nom contient le texte saisi. S’applique uniquement aux nœuds qui ont été chargés localement.<br /> </p> </td>
   </tr>
   <tr>
    <td>Volet Modifier</td>
@@ -140,7 +140,7 @@ CRXDE Lite offre les fonctionnalités suivantes :
 
 ## Création d’un dossier {#creating-a-folder}
 
-Pour créer un dossier avec CRXDE Lite :
+Pour créer un fichier avec CRXDE Lite :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Dans le volet de navigation, cliquez avec le bouton droit sur le dossier sous lequel vous souhaitez créer le dossier, puis sélectionnez **Créer ...**, puis **Créer un dossier ...**.
@@ -220,7 +220,7 @@ Vous pouvez également utiliser l’éditeur de boîte dialogue pour modifier un
 
 ## Création d’un nœud {#creating-a-node}
 
-Pour créer un noeud avec CRXDE Lite :
+Pour créer un nœud avec CRXDE Lite :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Dans le volet de navigation, cliquez avec le bouton droit sur le noeud dans lequel vous souhaitez créer le noeud, puis sélectionnez **Créer ...**, puis **Créer un noeud ...**.
@@ -237,7 +237,7 @@ Vous pouvez désormais adapter le noeud à vos besoins en modifiant les proprié
 
 ## Création d’une propriété {#creating-a-property}
 
-Pour créer une propriété avec CRXDE Lite :
+Pour créer une propriété avec CRXDE Lite :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Dans le volet de navigation, sélectionnez le nœud dans lequel vous souhaitez ajouter la nouvelle propriété.
@@ -265,18 +265,18 @@ Avec CRXDE Lite, vous pouvez importer et/ou exporter des définitions de type de
 Pour exporter une définition de type de noeud :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
-1. Sélectionnez le noeud requis.
+1. Sélectionnez le nœud requis.
 1. Sélectionnez **Outils**, puis **Exporter le type de nœud**.
 
 1. La définition, en notation cnd, s’affiche dans votre navigateur. Enregistrez les informations, si nécessaire.
 
-Pour importer une définition de type de noeud :
+Pour importer une définition de type de nœud :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Sélectionnez **Outils**, puis **Importer le type de nœud...**.
 
 1. Saisissez la notation CND pour la définition dans la zone de texte.
-1. Vérifier **Autoriser la mise à jour** si vous mettez à jour une définition existante.
+1. Cochez **Autoriser la mise à jour** si vous mettez à jour une définition existante.
 1. Cliquez sur **Importer**.
 
 ## Journalisation {#logging}
@@ -286,9 +286,9 @@ Avec CRXDE Lite, vous pouvez afficher le fichier `error.log` qui se trouve sur l
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Dans le **Console** au bas de la fenêtre, dans le menu déroulant à droite, sélectionnez **Journaux du serveur**.
 
-1. Cliquez sur le bouton **Arrêter** pour afficher les messages.
+1. Cliquez sur l’icône **Arrêter** pour afficher les messages.
 
-Vous pouvez :
+Vous pouvez effectuer les actions suivantes :
 
 * Ajuster les paramètres du journal dans la console Felix en cliquant sur l’icône **Configurations de journalisation**.
 * Effacez les messages en cliquant sur le bouton **Pinceau** Icône

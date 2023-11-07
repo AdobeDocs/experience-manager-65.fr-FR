@@ -8,10 +8,10 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 98%
+ht-degree: 95%
 
 ---
 
@@ -118,7 +118,7 @@ IntelliJ IDEA doit comprendre où trouver les JSP pour le débogage. Étant don
 
 La dernière étape requise consiste à démarrer AEM avec les options JVM proposées par IntelliJ IDEA.
 
-Démarrez directement le fichier JAR d’AEM et ajoutez ces options, par exemple avec la ligne de commande suivante :
+Démarrez directement le fichier jar AEM et ajoutez ces options, par exemple, avec la ligne de commande suivante :
 
 `java -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y -Xmx1024m -jar cq-quickstart-6.5.0.jar`
 

@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ba518290-dd82-44dc-ae7c-c8152df89179
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 98%
+source-wordcount: '843'
+ht-degree: 93%
 
 ---
 
 # Intégrer à Adobe Experience Cloud{#integrating-with-the-adobe-marketing-cloud}
 
-[Adobe Experience Cloud](https://business.adobe.com/fr/products/marketing-cloud/main.html) comprend des produits puissants d’analyse web et d’optimisation des sites web qui proposent des données et des statistiques exploitables en temps réel pour mener à bien vos initiatives en ligne. Il constitue une plateforme ouverte et intégrée pour l’optimisation des commerces en ligne. Le cloud se compose d’applications intégrées permettant de collecter et de libérer la puissance des informations sur la clientèle, afin d’optimiser les efforts d’acquisition, de conversion et de rétention de la clientèle, ainsi que la création et la distribution de contenu.
+[Adobe Experience Cloud](https://business.adobe.com/fr/products/marketing-cloud/main.html) comprend des produits puissants d’analyse web et d’optimisation des sites web qui proposent des données et des statistiques exploitables en temps réel pour mener à bien vos initiatives en ligne. Il constitue une plateforme ouverte et intégrée pour l’optimisation des commerces en ligne. Le cloud est constitué d’applications intégrées permettant de collecter et de libérer la puissance des informations sur les clients afin d’optimiser les efforts d’acquisition, de conversion et de rétention des clients, ainsi que la création et la distribution de contenu.
 
 Intégrez Adobe Experience Manager (AEM) de manière transparente aux produits suivants de la solution Adobe Experience Cloud :
 
@@ -37,7 +37,7 @@ Adobe Analytics vous permet d’analyser les données de vos sites.
 L’intégration à Adobe Analytics vous permet d’effectuer les opérations suivantes :
 
 * Activer le suivi des utilisateurs d’Adobe Analytics
-* Mappez vos modes d’exécution (par exemple, création et publication) à différentes suites de rapports.
+* Mappez vos modes d’exécution (par exemple, création, publication) à différentes suites de rapports.
 * Envoyez les variables ClientContext en tant que variables de conversion ou propriétés de trafic.
 * Utilisez des mappages de variables prédéfinis.
 * Configurez des sections de site entières en une seule fois.
@@ -63,7 +63,7 @@ AEM propose une procédure de souscription simple pour s’intégrer avec Adobe�
 
 ![chlimage_1-107](assets/chlimage_1-107a.png)
 
-Souscrivez à l’intégration avec Analytics et/ou Target afin de permettre l’utilisation de leurs fonctionnalités de suivi et d’analyse des pages, ainsi que des fonctionnalités de personnalisation. Si vous donnez votre accord, saisissez les informations de votre compte utilisateur et indiquez les pages qui font l’objet d’un suivi.
+Souscrivez à l’intégration avec Analytics et/ou Target afin de permettre l’utilisation de leurs fonctionnalités de suivi et d’analyse des pages, ainsi que des fonctionnalités de personnalisation. Si vous donnez votre accord, saisissez les informations de votre compte d’utilisateur et indiquez les pages qui font l’objet d’un suivi.
 
 Pour plus d’informations, consultez la section [Opt-in à Adobe Analytics et Adobe Target.](/help/sites-administering/opt-in.md)
 
@@ -89,7 +89,7 @@ L’intégration à Audience Manager a été supprimée dans AEM 6.3.
 
 <!-- Search&Promote is end of life as of September 1, 2022 ## Integrating with Search&Promote {#integrating-with-search-promote} -->
 
-<!-- Search&Promote is end of life as of September 1, 2022 Adobe Search&Promote enables marketers to optimizehow visitors browse, find, compare, and select relevant products and content on web and mobile sites. Businesses can easily promote priority items based on business objectives and visitor intent, as well as automate merchandising and promotions activity via KPI-based triggers or metrics. -->
+<!-- Search&Promote is end of life as of September 1, 2022 Adobe Search&Promote enables marketers to optimizehow visitors browse, find, compare, and select relevant products and content on web and mobile sites. Businesses can easily promote priority items based on business objectives and visitor intent, and automate merchandising and promotions activity via KPI-based triggers or metrics. -->
 
 <!-- Search&Promote is end of life as of September 1, 2022 Adobe Search&Promote is a reliable and scalable hosted site search application, capable of scaling to millions of pages or products, for heavily visited online businesses ranging from retail to news sites. It offers unprecedented levels of marketer control and metrics-based relevance. -->
 

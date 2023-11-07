@@ -1,19 +1,15 @@
 ---
 title: Créer le modèle de page AEM personnalisé avec des composants de formulaire Adobe Campaign
-seo-title: Creating Custom AEM Page Template with Adobe Campaign Form Components
-description: Créez un modèle de page personnalisé qui utilise des composants de formulaire Adobe Campaign.
-seo-description: Build a custom page template that uses Adobe Campaign Form components
-uuid: 8162ace2-b661-4c39-b0fb-288e1c035b9c
+description: Créer un modèle de page personnalisé qui utilise des composants Adobe Campaign Form
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: c3f6eed4-bbda-454a-88ce-c7f2041d4217
 exl-id: de5c634a-c0d7-4e69-b941-d2fbfe83117d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '238'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 62%
 
 ---
 
@@ -23,11 +19,11 @@ Cette page vous explique comment créer un modèle de page personnalisé qui uti
 
 >[!NOTE]
 >
->[Les exemples d’e-mail et de formulaire sont disponibles uniquement dans Geometrixx](/help/sites-developing/we-retail.md). Téléchargez un exemple de contenu Geometrixx à partir du partage de modules.
+>[Les exemples d’e-mail et de formulaire sont disponibles uniquement dans Geometrixx](/help/sites-developing/we-retail.md). Téléchargez un exemple de contenu de Geometrixx à partir de Package Share.
 
-Pour créer un modèle de page AEM personnalisé à l’aide de composants de formulaire Adobe Campaign, vérifiez que vous disposez des éléments suivants :
+Pour créer un modèle de page d’AEM personnalisé à l’aide des composants de formulaire Adobe Campaign, assurez-vous que vous disposez des éléments suivants :
 
-1. **resourceSuperType correct**
+1. **Correct resourceSuperType**
 
    Assurez-vous que le composant de page hérite de `mcm/campaign/components/profile`.
 
@@ -49,7 +45,7 @@ Pour créer un modèle de page AEM personnalisé à l’aide de composants de fo
 
 1. **head.jsp (/apps/geometrixx-outdoors/components/page_campaign_profile/head.jsp)**
 
-   Dans le fichier **head.jsp**, vous voyez les lignes suivantes qui utilisent **clientcontext-config** et **cloudservice-hook** :
+   Dans **head.jsp**, les lignes suivantes qui utilisent la variable **clientcontext-config** et la variable **cloudservice-hook**:
 
    ```
    <cq:include path="config" resourceType="cq/personalization/components/clientcontext_optimized/config"/>
@@ -65,9 +61,9 @@ Pour créer un modèle de page AEM personnalisé à l’aide de composants de fo
    <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
    ```
 
-1. **Propriétés de la page de campagne**
+1. **Propriétés de la page Campaign**
 
-   Pour pouvoir sélectionner un modèle Adobe Campaign, les propriétés de page sont étendues avec l’onglet **Campagne** :
+   Pour pouvoir sélectionner un modèle Adobe Campaign, les propriétés de page sont étendues avec la propriété **Campagne** tab :
 
    `/apps/geometrixx-outdoors/components/page_campaign_profile/dialog/items/tabs/items/campaign`
 

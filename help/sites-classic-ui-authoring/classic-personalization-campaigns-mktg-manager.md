@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
 exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1180'
-ht-degree: 98%
+source-wordcount: '1175'
+ht-degree: 91%
 
 ---
 
@@ -38,25 +38,25 @@ MCM vous permet d’accéder aux éléments suivants :
 Le tableau de bord se compose de quatre volets :
 
    * [Listes](#lists)
-Ce volet affiche les listes que vous avez déjà créées, ainsi que le nombre de prospects figurant dans chacune d’elles. Ce panneau vous permet de créer une liste entièrement nouvelle ou en important des prospects.
+Ce volet affiche les listes que vous avez déjà créées, ainsi que le nombre de prospects figurant dans chacune d’elles. Depuis ce volet, vous pouvez créer une liste directement ou importer des pistes pour créer une liste.
 Lorsque vous sélectionnez une liste spécifique, vous accédez à la section [Listes](#lists) qui affiche des détails à son sujet.
 
    * [Segments](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)
 Ce volet affiche les segments que vous avez définis. Les segments vous permettent de caractériser un ensemble de visiteurs qui partagent des caractéristiques communes.
-Lorsque vous sélectionnez un segment spécifique, il s’ouvre dans la page de définition correspondante.
+La sélection d’un segment spécifique ouvre la page de définition de segment.
 
    * [Rapports](/help/sites-administering/reporting.md)
 AEM fournit différents rapports pour vous aider à analyser et à surveiller le statut de votre instance. Ce volet de MCM répertorie les rapports.
-Lorsque vous sélectionnez un rapport, sa page s’ouvre.
+La sélection d’un rapport ouvre la page du rapport.
 
    * [Campagnes](#campaigns)
 Ce volet répertorie les expériences de campagne, telles que les [newsletters](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) et les [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
 
 * **[Prospects](#leads)**
-Ce volet vous permet de gérer vos prospects. Vous pouvez créer ou importer des prospects, modifier des détails spécifiques ou supprimer ceux dont vous n’avez plus besoin. Vous pouvez également placer les prospects dans différents groupes, appelés Listes. **Remarque :** Adobe ne prévoit pas de continuer à améliorer cette fonctionnalité. Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
+Ce volet vous permet de gérer vos prospects. Vous pouvez créer ou importer des prospects, modifier des détails spécifiques ou supprimer ceux dont vous n’avez plus besoin. Vous pouvez également placer les prospects dans différents groupes, appelés Listes. **Remarque :** Adobe ne prévoit pas de continuer à améliorer cette fonctionnalité. Il est recommandé d’utiliser [Adobe Campaign et intégration à AEM](/help/sites-administering/campaign.md).
 
 * **[Listes](#lists)**
-Ce volet vous permet de gérer vos listes (de prospects). **Remarque :** Adobe ne prévoit pas de continuer à améliorer cette fonctionnalité. Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
+Ce volet vous permet de gérer vos listes (de prospects). **Remarque :** Adobe ne prévoit pas de continuer à améliorer cette fonctionnalité. Il est recommandé d’utiliser [Adobe Campaign et intégration à AEM](/help/sites-administering/campaign.md).
 
 * **[Campagnes](#campaigns)**
 Ce volet vous permet de gérer vos marques, campagnes et expériences.
@@ -72,7 +72,7 @@ Le tableau de bord présente quatre volets qui vous donnent un aperçu de vos li
 >[!NOTE]
 >
 >Adobe ne prévoit pas d’optimiser cette fonctionnalité (gestion des prospects).
-> Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
+>Il est recommandé d’utiliser [Adobe Campaign et intégration à AEM](/help/sites-administering/campaign.md).
 
 Dans AEM MCM, vous pouvez organiser et ajouter des prospects en les saisissant manuellement ou en important une liste séparée par des virgules. par exemple, une liste de diffusion. Pour générer des pistes, il existe d’autres méthodes comme les abonnements aux newsletters ou les inscriptions aux communautés (s’ils sont configurés de la sorte, ils peuvent déclencher un workflow pour renseigner les pistes). Les prospects sont généralement catégorisés et mis dans une liste afin que vous puissiez ensuite effectuer des actions sur l’ensemble de la liste ; par exemple, envoyer un email personnalisé à une certaine liste.
 
@@ -89,7 +89,7 @@ Sous **Prospects** dans le volet de gauche, vous pouvez créer, importer, modifi
 >[!NOTE]
 >
 >Adobe ne prévoit pas d’optimiser cette fonctionnalité (gestion des listes).
-> Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
+>Il est recommandé d’utiliser [Adobe Campaign et intégration à AEM](/help/sites-administering/campaign.md).
 
 Les listes vous permettent d’organiser vos prospects en groupes. Avec les listes, vous pouvez cibler vos campagnes marketing sur un groupe de personnes sélectionné ; par exemple, vous pouvez envoyer une newsletter ciblée à une liste.
 
@@ -196,6 +196,6 @@ Dans le MCM, cliquez sur **Campagnes**. Assurez-vous que la vue Liste est active
 
 ### Analyser vos expériences de campagne {#analyzing-your-campaign-experiences}
 
-Dans le MCM, cliquez sur **Campagnes**. Assurez-vous que la vue Liste est active, puis sélectionnez l’expérience de campagne requise et cliquez sur **Analyser...** Un graphique des impressions de page s’affiche au fil du temps.
+Dans le MCM, cliquez sur **Campagnes**. Assurez-vous que la vue Liste est active, puis sélectionnez l’expérience de campagne requise et cliquez sur **Analyser...** Un graphique des impressions de page au fil du temps s’affiche.
 
 ![mcm_campaignanalyze](assets/mcm_campaignanalyze.png)

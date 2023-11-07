@@ -2,10 +2,10 @@
 title: Votre boîte de réception pour gérer les tâches
 description: Gestion de vos tâches avec la boîte de réception dans Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 98%
+source-wordcount: '1144'
+ht-degree: 96%
 
 ---
 
@@ -67,7 +67,7 @@ Pour ouvrir la boîte de réception des notifications AEM :
 
 1. Cliquez/appuyez sur l’indicateur dans la barre d’outils.
 
-1. Sélectionnez **Afficher tout**. La **boîte de réception AEM** s’ouvre. La boîte de réception affiche les éléments des workflows, des projets et des tâches.
+1. Sélectionnez **Afficher tout**. La variable **Boîte de réception AEM** s’ouvre. La boîte de réception affiche les éléments des workflows, des projets et des tâches.
 1. La vue par défaut est [Liste](#inbox-list-view), mais vous pouvez également passer à la vue [Calendrier](#inbox-calendar-view). Pour ce faire, utilisez le sélecteur de vue (barre d’outils, en haut à droite).
 
    Vous pouvez également définir les [paramètres d’affichage](#inbox-view-settings) pour ces deux vues. Les options disponibles dépendent de l’affichage actuel.
@@ -191,7 +191,7 @@ L’option Contrôle d’administration n’est visible que pour les membres du 
    * un assistant d’action démarre ;
    * une page de documentation s’ouvre.
 
-   Par exemple, **Déléguer** ouvre une boîte de dialogue :
+   Par exemple : **Réaffecter** ouvre une boîte de dialogue :
 
    ![wf-85](assets/wf-85.png)
 
@@ -223,7 +223,7 @@ Vous pouvez créer des tâches à partir de la boîte de réception :
 
    * **Avancé**
 
-      * **Nom** : ce champ est utilisé pour former l’URL ; s’il est vide, le nom est basé sur le champ **titre**.
+      * **Nom**: il est utilisé pour former l’URL ; s’il est vide, il est basé sur la variable **Titre**.
 
    ![wf-87](assets/wf-87.png)
 

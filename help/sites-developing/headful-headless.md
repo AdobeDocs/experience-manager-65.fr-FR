@@ -2,10 +2,10 @@
 title: Couplage et découplage dans AEM
 description: Il est possible de mettre en œuvre des projets AEM sur des modèles couplés et découplés, mais ce choix n’a pas besoin d’être si binaire. AEM offre la flexibilité nécessaire pour exploiter les avantages des deux modèles dans un même projet.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 96%
+source-wordcount: '1013'
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ Mais cela n&#39;a pas besoin d&#39;être un choix binaire. AEM offre une flexibi
 
 ![Modèles d’implémentation AEM](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
-Dans un modèle couplé ou full stack, le contenu est géré dans le référentiel AEM et les composants AEM basés sur Java, HTL, etc. sont utilisés pour effectuer le rendu du contenu pour l’expérience utilisateur. Dans ce modèle, la création du contenu, sa mise en forme, sa présentation et sa diffusion sont traitées dans AEM.
+Dans un modèle plein ou en tête, le contenu est géré dans le référentiel AEM et les composants AEM basés sur Java, HTL, etc., sont utilisés pour effectuer le rendu du contenu pour l’expérience utilisateur. Dans ce modèle, la création du contenu, sa mise en forme, sa présentation et sa diffusion sont traitées dans AEM.
 
 Dans un modèle découplé, le contenu est géré dans le référentiel AEM, mais diffusé à l’aide d’API telles que REST et GraphQL vers un autre système afin de générer le contenu pour l’expérience utilisateur. Dans ce modèle, le contenu est créé dans AEM, mais il est mis en forme, présenté et diffusé sur une autre plateforme.
 
@@ -43,7 +43,7 @@ La section suivante examine ces niveaux d’intégration de manière plus détai
 
 >[!NOTE]
 >
->Vous pouvez bien entendu réimplémenter l’application sur une seule page de la boutique web sous la forme d’une SPA AEM pleinement opérationnelle [à l’aide du framework de l’éditeur de SPA d’AEM.](/help/sites-developing/spa-walkthrough.md) Si vous avez déjà AEM et que souhaitez créer un site web ou une autre SPA, cette méthode est recommandée. Cependant, elle n’entre pas dans le cadre de ce document.
+>Vous pouvez bien entendu réimplémenter l’application sur une seule page de la boutique web sous la forme d’une SPA AEM pleinement opérationnelle [à l’aide du framework de l’éditeur de SPA d’AEM.](/help/sites-developing/spa-walkthrough.md) Si vous disposez déjà d’AEM et que vous souhaitez créer un webshop ou un autre SPA, il s’agit de la méthode recommandée, mais elle n’a pas de portée pour ce document.
 
 ## Niveaux d’intégration SPA {#integration-levels}
 

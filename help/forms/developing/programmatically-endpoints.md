@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '10801'
-ht-degree: 99%
+source-wordcount: '10790'
+ht-degree: 98%
 
 ---
 
@@ -108,7 +108,7 @@ Après avoir défini les attributs du point d’entrée EJB, vous pouvez créer 
 
 **Activez le point d’entrée**
 
-Après avoir créé un nouveau point d’entrée, vous devez l’activer. Une fois le point d’entrée activé, il peut être utilisé pour appeler le service. Une fois le point d’entrée activé, vous pouvez l’afficher dans la console d’administration.
+Après avoir créé un point de fin, vous devez l’activer. Une fois le point d’entrée activé, il peut être utilisé pour appeler le service. Une fois le point d’entrée activé, vous pouvez l’afficher dans la console d’administration.
 
 **Voir également**
 
@@ -213,7 +213,7 @@ Après avoir défini les attributs de point d’entrée SOAP, vous pouvez créer
 
 **Activer le point d’entrée**
 
-Après avoir créé un nouveau point d’entrée, vous devez l’activer. Lorsque le point d’entrée est activé, il peut être utilisé pour appeler le service. Une fois le point d’entrée activé, vous pouvez l’afficher dans la console d’administration.
+Après avoir créé un point de fin, vous devez l’activer. Lorsque le point d’entrée est activé, il peut être utilisé pour appeler le service. Une fois le point d’entrée activé, vous pouvez l’afficher dans la console d’administration.
 
 **Voir également**
 
@@ -319,7 +319,7 @@ Pour créer un point d’entrée Watched Folder pour un service, spécifiez les 
 
 **Définissez les valeurs de configuration**
 
-Vous devez spécifier des valeurs de configuration pour un point d’entrée Watched Folder lors de l’ajout par programmation d’un point d’entrée Watched Folder à un service. Ces valeurs de configuration sont spécifiées par un administrateur si un point d’entrée Watched Folder est ajouté à l’aide de la console d’administration.
+Spécifiez les valeurs de configuration d’un point de fin Watched Folder lors de l’ajout par programmation d’un point de fin Watched Folder à un service. Ces valeurs de configuration sont spécifiées par un administrateur si un point d’entrée Watched Folder est ajouté à l’aide de la console d’administration.
 
 La liste suivante spécifie les valeurs de configuration définies lors de l’ajout par programmation d’un point d’entrée Watched Folder à un service :
 
@@ -552,7 +552,7 @@ Pour créer un point d’entrée de courrier électronique pour un service, spé
 
 **Spécifier les valeurs de configuration**
 
-Vous devez spécifier des valeurs de configuration pour un point d’entrée de courrier électronique lorsque vous en ajoutez un par programmation à un service. Ces valeurs de configuration sont spécifiées par un administrateur si un point d’entrée de courrier électronique est ajouté à l’aide de la console d’administration.
+Spécifiez les valeurs de configuration d’un point de fin de courrier électronique lors de l’ajout par programmation d’un point de fin de courrier électronique à un service. Ces valeurs de configuration sont spécifiées par un administrateur si un point d’entrée de courrier électronique est ajouté à l’aide de la console d’administration.
 
 >[!NOTE]
 >
@@ -811,7 +811,7 @@ Une fois que vous avez défini les attributs du point d’entrée Remoting, vous
 
 **Activer le point d’entrée**
 
-Après avoir créé un nouveau point d’entrée, vous devez l’activer. Lorsqu’un point d’entrée Remoting est activé, il permet à un client Flex d’appeler le service.
+Après avoir créé un point de fin, vous devez l’activer. Lorsqu’un point d’entrée Remoting est activé, il permet à un client Flex d’appeler le service.
 
 **Voir également**
 
@@ -899,7 +899,7 @@ Avant de pouvoir ajouter un point d’entrée TaskManager par programmation, vou
 
 **Créer une catégorie pour le point d’entrée**
 
-Les catégories sont utilisées pour organiser les services dans Workspace. En d’autres termes, un utilisateur de Workspace peut appeler un service disposant d’un point d’entrée TaskManager en sélectionnant une catégorie dans Workspace. Lors de la création d’un point d’entrée TaskManager, vous pouvez référencer une catégorie existante ou en créer une par programmation.
+Les catégories sont utilisées pour organiser les services dans Workspace. En d’autres termes, un utilisateur de Workspace peut appeler un service disposant d’un point d’entrée TaskManager en sélectionnant une catégorie dans Workspace. Lors de la création d’un point de fin TaskManager, vous pouvez référencer une catégorie existante ou créer une catégorie par programmation.
 
 >[!NOTE]
 >
@@ -922,7 +922,7 @@ Après avoir défini des attributs de point d’entrée TaskManager, vous pouvez
 
 **Activez le point d’entrée**
 
-Après avoir créé un nouveau point d’entrée, vous devez l’activer. Lorsque le point d’entrée est activé, il peut être utilisé pour appeler le service depuis Workspace. Une fois le point d’entrée activé, vous pouvez l’afficher dans la console d’administration.
+Après avoir créé un point de fin, vous devez l’activer. Lorsque le point d’entrée est activé, il peut être utilisé pour appeler le service depuis Workspace. Une fois le point d’entrée activé, vous pouvez l’afficher dans la console d’administration.
 
 **Voir également**
 
@@ -1034,7 +1034,7 @@ Lors de la modification d’un point dʼentrée, spécifiez de nouvelles valeurs
 
 >[!NOTE]
 >
->Vous ne pouvez pas modifier le service appelé par le point dʼentrée. Dans le cas contraire, une exception est générée. Pour modifier le service associé à un point dʼentrée spécifique, supprimez ce dernier et créez-en un nouveau. (Consultez la section [Supprimer des points dʼentrée](programmatically-endpoints.md#removing-endpoints)).
+>Vous ne pouvez pas modifier le service appelé par le point dʼentrée. Dans le cas contraire, une exception est générée. Pour modifier le service associé à un point de terminaison donné, supprimez ce dernier et créez-en un. (Consultez la section [Supprimer des points dʼentrée](programmatically-endpoints.md#removing-endpoints)).
 
 **Voir également**
 
@@ -1128,7 +1128,7 @@ Vous pouvez récupérer un point d’entrée en récupérant une liste de points
 
 **Supprimer le point d’entrée**
 
-Après avoir créé un nouveau point d’entrée, vous devez l’activer. Lorsque le point d’entrée est activé, il peut être utilisé pour appeler le service. Une fois le point d’entrée activé, vous pouvez l’afficher dans la console d’administration.
+Après avoir créé un point de fin, vous devez l’activer. Lorsque le point d’entrée est activé, il peut être utilisé pour appeler le service. Une fois le point d’entrée activé, vous pouvez l’afficher dans la console d’administration.
 
 **Voir également**
 

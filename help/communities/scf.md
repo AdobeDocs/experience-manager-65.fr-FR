@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 5ca58bc3-8505-4d91-9cd1-6b2e2671f1be
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1477'
 ht-degree: 1%
 
 ---
@@ -19,12 +19,12 @@ La structure de composants sociaux (SCF) simplifie le processus de configuration
 
 Les avantages du cadre :
 
-* **Fonctionnel**: Facilité d’intégration prête à l’emploi avec peu ou pas de personnalisation pour 80 % des cas d’utilisation.
-* **Skinable**: Utilisation cohérente des attributs de HTML pour la mise en forme CSS.
-* **Extensible**: La mise en oeuvre des composants est orientée objet et s’appuie sur la logique métier : il est facile d’ajouter une connexion incrémentielle de l’entreprise sur le serveur.
-* **Flexible**: Modèles JavaScript simples sans logique, facilement superposés et personnalisés.
-* **Accessible**: L’API HTTP prend en charge la publication depuis n’importe quel client, y compris les applications mobiles.
-* **Portable**: Intégrez/incorporez dans n’importe quelle page web reposant sur n’importe quelle technologie.
+* **Fonctionnel**: facilité d’intégration prête à l’emploi avec peu ou pas de personnalisation pour 80 % des cas d’utilisation.
+* **Skinable**: utilisation cohérente des attributs de HTML pour le style CSS.
+* **Extensible**: l’implémentation des composants est orientée objet et légère la logique commerciale. Il est facile d’ajouter une connexion incrémentielle de l’entreprise sur le serveur.
+* **Flexible**: modèles JavaScript simples sans logique, facilement superposés et personnalisés.
+* **Accessible**: l’API HTTP prend en charge la publication depuis n’importe quel client, y compris les applications mobiles.
+* **Portable**: intégrez/incorporez dans n’importe quelle page web reposant sur n’importe quelle technologie.
 
 Explorez une instance de création ou de publication à l’aide de l’option interactive [Guide des composants de communauté](components-guide.md).
 
@@ -57,7 +57,7 @@ Pour personnaliser ou étendre les composants, vous écrivez uniquement les incr
 * Pour ajouter un traitement personnalisé lors des opérations :
    * Écrire une [OperationExtension](server-customize.md#operationextension-class).
 * Pour ajouter une opération personnalisée :
-   * Créer [Opération de publication Sling](server-customize.md#postoperation-class).
+   * Créez un [Opération de publication Sling](server-customize.md#postoperation-class).
    * Utiliser existant [OperationServices](server-customize.md#operationservice-class) selon les besoins.
    * Ajoutez du code JavaScript pour appeler votre opération du côté client selon vos besoins.
 
@@ -73,13 +73,13 @@ Les principales classes sont décrites dans la section [Personnalisation côté 
 
 Visite [Présentation du fournisseur de ressources de stockage](srp.md) pour en savoir plus sur l’utilisation du contenu créé par l’utilisateur.
 
-### API HTTP  {#http-api}
+### API HTTP {#http-api}
 
 L’API HTTP prend en charge la facilité de personnalisation et de choix des plateformes clientes pour les applications PhoneGap, les applications natives, ainsi que d’autres intégrations et applications monopages. De plus, l’API HTTP permet à un site communautaire de s’exécuter en tant que service sans client, de sorte que les composants de structure puissent être intégrés à n’importe quelle page web créée sur n’importe quelle technologie.
 
 ### API HTTP - Demandes de GET {#http-api-get-requests}
 
-Pour chaque composant Social, la structure fournit un point de terminaison d’API HTTP. Le point de terminaison est accessible en envoyant une requête de GET à la ressource avec un sélecteur + extension &#39;.social.json&#39;. Avec Sling, la requête est transmise à la fonction `DefaultSocialGetServlet`.
+Pour chaque composant Social, la structure fournit un point de terminaison d’API HTTP. Le point de terminaison est accessible en envoyant une requête de GET à la ressource avec un sélecteur + extension &#39;.social.json&#39;. À l’aide de Sling, la requête est transmise à la fonction `DefaultSocialGetServlet`.
 
 **`DefaultSocialGetServlet`**
 
@@ -111,7 +111,7 @@ Il existe une opération Sling POST:operation pour chaque opération SocialCompo
 
 Pour en savoir plus sur la gestion du contenu généré par l’utilisateur stocké dans la variable [magasin de contenu communautaire](working-with-srp.md), voir :
 
-* [Présentation du fournisseur de ressources de stockage](srp.md) - Présentation et présentation de l’utilisation du référentiel.
+* [Présentation du fournisseur de ressources de stockage](srp.md) - Présentation et utilisation du référentiel - Aperçu.
 * [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md) - Méthodes et exemples de l’utilitaire d’API SRP.
 * [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
 
@@ -139,11 +139,11 @@ L’accès HTTP aux fichiers .hbs peut ne pas être interdit.
 
 ### Ajout ou inclusion d’un composant Communautés {#add-or-include-a-communities-component}
 
-La plupart des composants Communities doivent être *ajouté* en tant que ressource adressable Sling. Quelques-uns des composants de communauté peuvent être *included* dans un modèle en tant que ressource non existante pour permettre l’inclusion et la personnalisation dynamiques de l’emplacement où écrire du contenu généré par l’utilisateur.
+La plupart des composants Communities doivent être *ajouté* comme ressource adressable Sling. Quelques-uns des composants de communauté peuvent être *included* dans un modèle en tant que ressource non existante pour permettre l’inclusion et la personnalisation dynamiques de l’emplacement où écrire du contenu généré par l’utilisateur.
 
 Dans les deux cas, la variable [bibliothèques clientes requises](clientlibs.md) doit également être présent.
 
-**Ajout d’un composant**
+**Ajouter un composant**
 
 L’ajout d’un composant fait référence au processus d’ajout d’une instance d’une ressource (composant), par exemple lorsque vous faites glisser du navigateur de composants (sidekick) vers une page en mode d’édition de création.
 
@@ -162,13 +162,13 @@ Seuls quelques-uns des composants AEM Communities peuvent être inclus dynamique
 * [Révisions](reviews-basics.md)
 * [Votant](essentials-voting.md)
 
-Le [Guide des composants de communauté](components-guide.md) permet d’empêcher l’ajout de composants inclusifs à l’inclusion.
+La variable [Guide des composants de communauté](components-guide.md) permet d’empêcher l’ajout de composants inclusifs à l’inclusion.
 
 **Lors de l’utilisation de Guidons** langue de modèle, la ressource non existante est incluse à l’aide du [assistant d’inclusion](handlebars-helpers.md#include) en spécifiant son resourceType :
 
 `{{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}`
 
-**Lors de l’utilisation de JSP**, une ressource est incluse à l’aide de la balise . [cq:include](../../help/sites-developing/taglib.md#lt-cq-include):
+**Lorsque vous utilisez JSP**, une ressource est incluse à l’aide de la balise [cq:include](../../help/sites-developing/taglib.md#lt-cq-include):
 
 ```
 <cq:include path="votes"
@@ -177,7 +177,7 @@ Le [Guide des composants de communauté](components-guide.md) permet d’empêch
 
 >[!NOTE]
 >
->Pour ajouter dynamiquement un composant à une page, au lieu de l’ajouter ou de l’inclure dans un modèle, reportez-vous à la section [Chargement partiel des composants](sideloading.md).
+>Pour ajouter dynamiquement un composant à une page, au lieu de l’ajouter ou de l’inclure dans un modèle, voir [Chargement partiel des composants](sideloading.md).
 
 ### Handlebars Helpers {#handlebars-helpers}
 

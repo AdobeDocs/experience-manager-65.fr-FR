@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
-source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1084'
 ht-degree: 13%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 13%
 
 Les composants et les modèles Adobe Experience Manager (AEM) se composent d’une boîte à outils puissante. Ils peuvent être utilisés par les développeurs pour offrir aux utilisateurs, éditeurs et administrateurs de sites web la possibilité d’adapter leurs sites web aux besoins changeants de l’entreprise (agilité du contenu). Tout cela tout en conservant la disposition uniforme des sites (protection de la marque).
 
-Un défi classique pour une personne responsable d’un site web, ou d’un ensemble de sites web (par exemple dans une succursale d’une entreprise globale), est d’introduire un nouveau type de présentation de contenu sur leurs sites web.
+Un défi classique pour une personne responsable d’un site web, ou d’un ensemble de sites web (par exemple, dans une succursale d’une entreprise globale), est d’introduire un nouveau type de présentation de contenu sur leurs sites web.
 
 Supposons qu’il soit nécessaire d’ajouter une page de liste de discussion aux sites web, qui répertorie des extraits d’autres articles déjà publiés. La page doit avoir la même conception et la même structure que le reste du site web.
 
 La méthode recommandée pour résoudre un tel problème serait la suivante :
 
-* Réutiliser un modèle existant pour créer un nouveau type de page. Le modèle définit en gros la structure de la page (éléments de navigation, panneaux, etc.), qui est affinée par sa conception (CSS, graphiques).
+* Réutiliser un modèle existant pour créer un type de page. Le modèle définit en gros la structure de la page (éléments de navigation, panneaux, etc.), qui est affinée par sa conception (CSS, graphiques).
 * Utilisez le système de paragraphes (parsys/iparsys) sur les nouvelles pages.
 * Définissez le droit d’accès au mode Conception des systèmes de paragraphes, de sorte que seules les personnes autorisées (généralement l’administrateur) puissent les modifier.
 * Définissez les composants autorisés dans le système de paragraphes donné afin que les éditeurs puissent ensuite placer les composants requis sur la page. Dans ce cas, il peut s’agir d’un composant de liste, qui peut parcourir une sous-arborescence de pages et extraire les informations en fonction de règles prédéfinies.
@@ -78,7 +78,7 @@ Par exemple :
 
 >[!CAUTION]
 >
->**** Ne modifiez rien dans le chemin d’accès `/libs`. 
+>**** Vous ne devez rien modifier dans le chemin `/libs`. 
 >
 >La raison en est que le contenu de `/libs` est remplacé la prochaine fois que vous mettez à niveau votre instance (et peut être remplacé lorsque vous appliquez un correctif ou un Feature Pack).
 >
@@ -109,7 +109,7 @@ Pour le rendu du contenu, utilisez l’accès de navigation à l’arborescence 
 >Si vous utilisez la variable [Query Builder](/help/sites-developing/querybuilder-api.md), vous utilisez des requêtes JCR, car Query Builder génère des requêtes JCR en arrière-plan.
 >
 
-## Considérations relatives à la sécurité {#security-considerations}
+## Remarques relatives à la sécurité {#security-considerations}
 
 >[!NOTE]
 >

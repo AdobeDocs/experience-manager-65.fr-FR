@@ -3,10 +3,10 @@ title: Utilisation du mode Disposition pour redimensionner les composants des fo
 description: Définissez la position des composants à l’aide de la grille réactive disponible en mode Mise en page
 feature: Adaptive Forms
 exl-id: 5cf76cb1-c92c-4aed-9945-37494fef2d29
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1124'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -29,7 +29,7 @@ Vous pouvez utiliser le mode Mise en page afin de redimensionner les composants 
 Sélectionnez **Disposition** dans la liste déroulante qui apparaît en haut de l’interface de création de formulaires adaptatifs, à côté de l’option **Prévisualiser**. Le formulaire s’affiche en mode Mise en page.
 
 1. Connectez-vous à l’instance d’auteur AEM et accédez à **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
-1. Créez un nouveau [formulaire adaptatif](../../forms/using/creating-adaptive-form.md) ou ouvrez un formulaire existant.
+1. Créez un [formulaire adaptatif](../../forms/using/creating-adaptive-form.md) ou ouvrez un fichier existant.
 1. Sélectionnez **Mise en page** dans la liste déroulante qui s’affiche en haut à côté de l’option **Prévisualiser**. Le formulaire s’affiche en mode Mise en page.
 
    ![Mode Mise en page](assets/layout_mode_ic_new.png)

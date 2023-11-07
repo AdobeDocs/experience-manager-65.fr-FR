@@ -8,10 +8,10 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3776'
-ht-degree: 59%
+source-wordcount: '3775'
+ht-degree: 58%
 
 ---
 
@@ -92,7 +92,7 @@ Pour que le processus des formulaires reçoive et traite les courriers électron
 
 **Hôte de boîte de réception :** nom ou adresse IP de l’hôte de boîte de réception du fournisseur de messagerie électronique à analyser.
 
-**Port de boîte de réception :** numéro de port de boîte de réception que le fournisseur de messagerie électronique doit analyser. Avec la valeur 0, le port IMAP ou POP3 par défaut est utilisé.
+**Port de boîte de réception :** numéro de port de boîte de réception que le fournisseur de messagerie électronique doit analyser. Si la valeur est 0, le port IMAP ou POP3 par défaut est utilisé.
 
 **Protocole de boîte de réception :** protocole utilisé par le point d’entrée d’e-mail pour analyser la boîte de réception. Les choix possibles sont IMAP ou POP3. Le serveur de messagerie de l’hôte boîte de réception doit prendre en charge ces protocoles.
 

@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: PDF Generator
 exl-id: c3fc159e-2677-4b71-b0b2-2feaf69e1a32
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '605'
 ht-degree: 11%
 
 ---
@@ -47,7 +47,7 @@ Pour configurer une imprimante réseau PDFG Network Printer, procédez comme sui
 
    * Nom du service à appeler
    * Nom de l’opération du service à appeler
-   * Nom du paramètre d’entrée, tel que spécifié dans le fichier component.xml du service ou du processus. Le document du PDF sera utilisé comme valeur pour ce paramètre d’entrée.
+   * Nom du paramètre d’entrée, tel que spécifié dans le fichier component.xml du service ou du processus. Le document du PDF est utilisé comme valeur pour ce paramètre d’entrée.
 
 1. Cliquez sur Enregistrer.
 
@@ -63,6 +63,6 @@ Les utilisateurs disposant du rôle Administrateur PDFG ou Utilisateur PDFG peuv
 
 1. Sous Installation de l’imprimante réseau PDFG, cliquez sur le lien. Lorsque vous y êtes invité, indiquez le nom d’utilisateur et le mot de passe utilisés à l’étape 1 pour vous connecter. Un message s’affiche, indiquant que l’imprimante a bien été installée.
 
-   ***remarque **: si le mot de passe de l’utilisateur change, les utilisateurs devront réinstaller l’imprimante réseau PDFG Network Printer sur leurs ordinateurs. Vous ne pouvez pas mettre à jour le mot de passe à partir d’Administration Console.*
+   ***remarque **: si le mot de passe de l’utilisateur change, l’utilisateur doit réinstaller l’imprimante réseau PDFG Network Printer sur ses ordinateurs. Vous ne pouvez pas mettre à jour le mot de passe à partir d’Administration Console.*
 
 1. Cliquez sur OK.

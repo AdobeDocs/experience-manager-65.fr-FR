@@ -9,7 +9,7 @@ docset: aem65
 pagetitle: Community Groups Console
 role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1688'
 ht-degree: 3%
@@ -32,7 +32,7 @@ Les différentes facettes des groupes communautaires sont les suivantes :
 * **Contrôle**: le groupe peut être ouvert ou secret.
 * **Imbrication**: le groupe peut contenir aucun ou plusieurs groupes.
 
-<!-- This is a 404 on helpx. Please update or remove.
+<!-- This is a 404 on helpx. Update or remove.
 >[!NOTE]
 >
 >Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), is not listed in the Community Groups console, and thus, are not modifiable using the console.
@@ -150,7 +150,7 @@ Il est possible d’ajouter des modérateurs spécifiquement au groupe. Recherch
 
 Par défaut, l’administrateur de site de la communauté parente est également l’administrateur des groupes.
 
-Cependant, il est possible d’affecter des administrateurs de groupe indépendants. Les administrateurs de groupe peuvent gérer leur groupe (par exemple G1) et créer un sous-groupe imbriqué sous G1. Ils peuvent également affecter différents administrateurs au sous-groupe.
+Cependant, il est possible d’affecter des administrateurs de groupe indépendants. Les administrateurs de groupe peuvent gérer leur groupe (G1, par exemple) et créer un sous-groupe imbriqué sous G1. Ils peuvent également affecter différents administrateurs au sous-groupe.
 
 Par conséquent, un utilisateur U1 peut être administrateur d’un groupe G1 et un utilisateur régulier de son groupe G2 imbriqué.
 

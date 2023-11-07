@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 56%
+source-wordcount: '1106'
+ht-degree: 55%
 
 ---
 
@@ -39,7 +39,7 @@ Pour publier votre email auprès du fournisseur de services de messagerie, vous 
 
 Un e-mail ou une newsletter que vous souhaitez diffuser sur un service de messagerie, tel qu’ExactTarget, peut être créé(e) sous une campagne, à l’aide du modèle **Newsletter Geometrixx**. Vous pouvez également utiliser le modèle **E-mail Geometrixx Outdoors**. L’exemple d’e-mail ou de newsletter basé sur le modèle **E-mail Geometrixx Outdoors** est disponible à l’adresse suivante : `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
 
-Pour créer un e-mail qui sera diffusé sur le service de messagerie configuré :
+Pour créer un email publié sur le service de messagerie configuré :
 
 1. Sélectionnez **Sites web**, puis **Campagnes**. Sélectionnez une campagne.
 1. Cliquez sur **Nouveau** pour ouvrir la fenêtre **Créer une page**.

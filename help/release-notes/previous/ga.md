@@ -2,10 +2,10 @@
 title: Notes générales de mise à jour d’ [!DNL Adobe Experience Manager]  6.5
 description: « Notes relatives à [!DNL Adobe Experience Manager] 6.5, décrivant les informations, les nouveautés, la procédure d’installation et les listes détaillées des modifications pour la version. »
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '4675'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -106,7 +106,7 @@ Diverses améliorations ont été apportées à l’UI pour qu’elle soit plus 
 
 #### Applications d’une seule page gérées {#managed-single-page-apps}
 
-L’éditeur de page offre la possibilité de modifier le contenu et la composition/mise en page en contexte dans les expériences rendues côté client (également appelé [Editeur SPA](/help/sites-developing/spa-architecture.md)). Les applications d’une seule page existantes créées avec une structure JavaScript React ou Angular peuvent être étendues avec le SDK SJ AEM afin d’être modifiables pour les utilisateurs et utilisatrices.
+L’éditeur de page offre la possibilité de modifier le contenu et la composition/mise en page en contexte dans les expériences rendues côté client (également appelé [Éditeur SPA](/help/sites-developing/spa-architecture.md)). Les applications d’une seule page existantes créées avec une structure JavaScript React ou Angular peuvent être étendues avec le SDK SJ AEM afin d’être modifiables pour les utilisateurs et utilisatrices.
 
 D’abord fourni avec AEM 6.4 SP2, avec AEM 6.5, la prise en charge SPA permet d’accéder aux fonctionnalités suivantes :
 
@@ -147,32 +147,32 @@ Pour plus d’informations sur les modifications apportées à AEM Screens, con
 
    * Opérateur « in » pour les chaînes, les tableaux et les objets :
 
-      ```html
-      ${'a' in 'abc'}
-      ${100 in myArray}
-      ${'a' in myObject}
-      ```
+     ```html
+     ${'a' in 'abc'}
+     ${100 in myArray}
+     ${'a' in myObject}
+     ```
 
    * Déclarations de variables avec data-sly-set :
-      `<sly data-sly-set.title="${currentPage.title}"/>${title}`
+     `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
    * Paramètres de contrôle de liste et de répétition : début, étape, fin :
-      `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
+     `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
    * Identifiants pour data-sly-unwrap :
 
-      ```html
-      <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
-      text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
-      </div>
-      ```
+     ```html
+     <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
+     text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
+     </div>
+     ```
 
    * Prise en charge des nombres négatifs
 
 * Composants principaux 2.3.2+ : consultez la section [Github pour les notes de mise à jour](https://github.com/adobe/aem-core-wcm-components/releases).
 * Système de grille pour le conteneur de dispositions, voir [Github](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid).
 * Manager Clientlib : définition par défaut de Google Closure Compiler pour la minimisation des bibliothèques client JavaScript (l’ancienne version par défaut était Yahoo YUI) et mise à jour de Google Closure Compiler vers la version v20190121.
-* Éditeur de modèles et stratégies
+* Éditeur de modèles et politiques
 
    * Création et modification de modèles pour les applications monopages qui utilisent le SDK JS (également appelé éditeur de SPA)
 
@@ -241,7 +241,6 @@ Pour plus d’informations sur les modifications apportées à AEM Screens, con
 >
 >* Les `at.js. 1.x` et `at.js 2.x` sont pris en charge si vous utilisez l’exportation de fragments d’expérience vers Target et que vous exécutez des activités dans la console de Target.
 
-
 * L’intégration d’Adobe Target utilise désormais l’API Target Standard. Les versions antérieures d’AEM utilisent l’API HTTP Target Classic, désormais obsolète.
 * La version 6.3 d’`mbox.js` Adobe Target est incluse. Adobe recommande vivement de passer l’implémentation à `at.js` v1.x.
 * La version 1.5.0 de `at.js` est désormais incluse. Adobe recommande d’utiliser [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) pour mettre en place de `at.js` 1.x sur le site.
@@ -309,7 +308,7 @@ Les administrateurs de site peuvent créer un groupe à n’importe quel niveau 
 La fonctionnalité d’activation d’AEM 6.5 Communities prend en charge le moteur de modèle de référence des objets de contenu partageables [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/).
 
 * Prise en charge de la navigation au clavier sur les composants d’activation
-* Les composants d’activation (par exemple, la lecture de catalogue et de parcours, les affectations, la bibliothèque de fichiers) dans AEM Communities prennent en charge la navigation au clavier pour améliorer l’accessibilité.
+* Les composants d’activation (par exemple, Lecture de catalogue et de cours, Affectations, Bibliothèque de fichiers) dans AEM Communities prennent en charge la navigation clavier pour une meilleure accessibilité.
 
 ##### Autres améliorations {#other-enhancements}
 
@@ -328,7 +327,7 @@ Lisez ce qui suit pour connaître les fonctionnalités et intégrations spécifi
 
 ##### Adobe Asset Link {#aal}
 
-[!DNL Adobe Asset Link] renforce la collaboration entre les créatifs et les marketeurs dans le processus de création de contenu. Les créatifs peuvent accéder au contenu stocké dans [!DNL Experience Manager Assets], sans quitter les applications qu’ils connaissent le mieux. Ils peuvent parcourir, rechercher, extraire et archiver des ressources de manière transparente à l’aide du panneau intégré à l’application dans les applications [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] et [!DNL Adobe InDesign].
+[!DNL Adobe Asset Link]renforce la collaboration entre les créatifs et les spécialistes marketing dans le processus de création de contenu. Les créatifs peuvent accéder au contenu stocké dans [!DNL Experience Manager Assets], sans quitter les applications qu’ils connaissent le mieux. Ils peuvent parcourir, rechercher, extraire et archiver des ressources de manière transparente à l’aide du panneau intégré à l’application dans les applications [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] et [!DNL Adobe InDesign].
 
 [!DNL Adobe Asset Link] fait partie de l’offre [Creative Cloud abonnement Entreprise](https://www.adobe.com/creativecloud/business/enterprise.html). Pour plus d’informations à ce sujet, y compris sur la configuration nécessaire de votre déploiement d’[!DNL Experience Manager], consultez la section [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html).
 
@@ -390,7 +389,7 @@ Les visionneuses [!DNL Dynamic Media] assurent désormais la prise en charge de 
 
 #### Amélioration de l’expérience de recherche {#experience-enhancement-for-searching}
 
-À partir d’[!DNL Experience Manager] 6.5, les marketeurs peuvent découvrir plus rapidement les ressources souhaitées à partir de la page des résultats de recherche. Les facettes de recherche sont mises à jour avec le nombre de ressources avant même d’appliquer le filtre de recherche. L’affichage du nombre prévu en fonction du filtre aide les utilisateurs et utilisatrices à parcourir rapidement et efficacement les résultats de la recherche. Pour plus d’informations, consultez la section [Recherche de ressources dans Experience Manager](/help/assets/search-assets.md).
+À partir de[!DNL Experience Manager] 6.5, les spécialistes marketing peuvent découvrir plus rapidement les ressources souhaitées à partir de la page des résultats de recherche. Les facettes de recherche sont mises à jour avec le nombre de ressources avant même d’appliquer le filtre de recherche. L’affichage du nombre prévu en fonction du filtre aide les utilisateurs et utilisatrices à parcourir rapidement et efficacement les résultats de la recherche. Pour plus d’informations, consultez la section [Recherche de ressources dans Experience Manager](/help/assets/search-assets.md).
 
 ![Afficher le nombre de ressources sans filtrer les résultats de la recherche dans les facettes de recherche](/help/assets/assets/asset_search_results_in_facets_filters.png)
 
@@ -522,20 +521,20 @@ Concernant [!DNL Adobe Experience Manager] 6.5, [consultez la liste des fonctio
 
 * Un problème est signalé lorsque le démarrage rapide de CRX et son contenu sont supprimés.
 
-   Pour chacune de ces actions, assurez-vous que la propriété `htmllibmanager.fileSystemOutputCacheLocation` n’est pas une chaîne vide :
+  Pour chacune de ces actions, assurez-vous que la propriété `htmllibmanager.fileSystemOutputCacheLocation` n’est pas une chaîne vide :
 
    1. appelant la fonction `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`.
    2. Mise à niveau vers AEM 6.5.
    3. Exécution de la « migration différée du contenu » sur AEM 6.5.
 
-   Cet article de la [Base de connaissances](https://helpx.adobe.com/fr/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) est disponible pour vous offrir plus d’informations et la solution à ce problème.
+  Cet article de la [Base de connaissances](https://helpx.adobe.com/fr/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) est disponible pour vous offrir plus d’informations et la solution à ce problème.
 
 * Si vous utilisez le JDK 11 avec l’instance AEM 6.5, certaines pages peuvent s’afficher comme vides après le déploiement de certains packages. Le message d’erreur suivant s’affiche dans le fichier journal :
 
-   ```java
-   *ERROR* [OsgiInstallerImpl] org.apache.sling.scripting.sightly bundle org.apache.sling.scripting.sightly:1.1.2.1_4_0 (558)[org.apache.sling.scripting.sightly.impl.engine.extension.use.JavaUseProvider(3345)] : Error during instantiation of the implementation object (java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl)
-   java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
-   ```
+  ```java
+  *ERROR* [OsgiInstallerImpl] org.apache.sling.scripting.sightly bundle org.apache.sling.scripting.sightly:1.1.2.1_4_0 (558)[org.apache.sling.scripting.sightly.impl.engine.extension.use.JavaUseProvider(3345)] : Error during instantiation of the implementation object (java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl)
+  java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
+  ```
 
 Pour résoudre cette erreur, suivez les étapes suivantes :
 
@@ -571,7 +570,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 * Dans une version adaptative, lorsqu’un service de modèle de données de formulaire est appelé à partir de l’éditeur de règle pour mettre à jour de manière dynamique les valeurs du composant de choix d’image, les valeurs du composant de choix d’image ne sont pas mises à jour. (CQ-4254754)
 * Le programme d’installation d’AEM Forms Designer nécessite la version 32 bits des [packages d’exécution redistribuables Visual C++ 2012](https://docs.microsoft.com/fr-FR/cpp/windows/latest-supported-vc-redist?view=msvc-170) et des [packages d’exécution redistribuables Visual C++ 2013](https://support.microsoft.com/fr-fr/topic/update-for-visual-c-2013-and-visual-c-redistributable-package-5b2ac5ab-4139-8acc-08e2-9578ec9b2cf1). Assurez-vous que les packages d’exécution redistribuables susmentionnés sont installés avant de démarrer l’installation. (CQ-4265668)
 
-* PDF Generator ne prend pas en charge l’authentification par carte intelligente. Lorsqu’un administrateur active la stratégie de groupe `Interactive Logon: Require Smart card` sur un serveur Windows, tous les utilisateurs et utilisatrices de PDF Generator existants sont invalidés.
+* PDF Generator ne prend pas en charge l’authentification par carte intelligente. Lorsqu’un administrateur active la politique de groupe `Interactive Logon: Require Smart card` sur un serveur Windows, tous les utilisateurs et utilisatrices de PDF Generator existants sont invalidés.
 
 * Lorsqu’un formulaire adaptatif est configuré pour mettre à jour de manière dynamique les valeurs d’un composant et que l’instance de publication hébergeant le formulaire est accessible via le dispatcher, la fonctionnalité permettant de mettre à jour de manière dynamique les valeurs d’un champ cesse de fonctionner. Pour résoudre le problème, ouvrez CRXDE sur l’instance de publication, accédez à `/libs/fd/af/runtime/clientlibs/guideChartReducer` et créez la propriété répertoriée ci-dessous.
 
@@ -583,7 +582,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
    * Multiple : false
    * Créé automatiquement : faux
 
-   La propriété permet aux bibliothèques clientes du dossier d’exécution d’accéder aux mandataires. (CQ-4268679)
+  La propriété permet aux bibliothèques clientes du dossier d’exécution d’accéder aux mandataires. (CQ-4268679)
 
 * Au démarrage d’AEM Forms, l’avertissement `SAX Security Manager could not be setup` s’affiche.
 * Lorsque vous ouvrez un PDF protégé par AEM Forms Document Security sur un appareil iOS ou iPadOS d’Apple exécutant la version 20.10.00 d’Adobe Acrobat Reader.

@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1712'
 ht-degree: 4%
@@ -156,7 +156,7 @@ Pour installer les packages visibles dans `adobeaemcloud.com` sur une instance d
 * Sélectionnez la variable **Ressources** tab
 * Sélectionner **télécharger sur le disque**
 
-Sur l’instance d’AEM locale, utilisez Package Manager (par exemple [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)), pour charger vers le référentiel de package d’AEM local.
+Sur l’instance d’AEM locale, utilisez Package Manager (par exemple, [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)), pour charger vers le référentiel de package d’AEM local.
 
 Vous pouvez également accéder au module à l’aide de Package Share à partir de l’instance d’AEM locale (par exemple, [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), la variable `Download` télécharge vers le référentiel de package de l’instance AEM locale.
 

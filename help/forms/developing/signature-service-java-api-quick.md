@@ -11,10 +11,10 @@ topic-tags: develop
 discoiquuid: 07fffbd5-5430-4abc-b532-0840ecc7b1b0
 role: Developer
 exl-id: 34069505-a6cf-4540-932b-604f81823178
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '868'
+ht-degree: 89%
 
 ---
 
@@ -46,7 +46,7 @@ Les opérations AEM Forms JEE peuvent être effectuées à l’aide de l’API
 
 >[!NOTE]
 >
->Les didacticiels de mise en route situés dans Programmation avec AEM Forms sont basés sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Le démarrage rapide de la programmation avec AEM Forms est basé sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Didacticiel de mise en route (mode SOAP) : ajout d’un champ de signature à un document PDF à l’aide de l’API Java {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
 
@@ -76,16 +76,16 @@ L’exemple de code Java suivant ajoute un champ de signature nommé *SignatureF
      * 18. xbean.jar (required for SOAP mode)
      * 19. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -166,7 +166,7 @@ L’exemple de code Java suivant ajoute un champ de signature nommé *SignatureF
 
 ## Didacticiel de mise en route (mode SOAP) : récupération des noms de champ de signature à l’aide de l’API Java {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}
 
-L’exemple de code Java suivant récupère les noms des champs de signature d’un document PDF nommé *LoanSig.pdf*. (Consultez la section [Récupération des noms des champs de signature](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names)).
+L’exemple de code Java suivant récupère les noms des champs de signature dans un document de PDF nommé *LoanSig.pdf*. (Consultez la section [Récupération des noms des champs de signature](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names)).
 
 ```java
  /*
@@ -195,16 +195,16 @@ L’exemple de code Java suivant récupère les noms des champs de signature d�
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -301,16 +301,16 @@ L’exemple de code Java suivant modifie un champ de signature nommé SignatureF
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -429,16 +429,16 @@ L’exemple de code Java suivant signe numériquement un document PDF basé sur 
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -578,16 +578,16 @@ L’exemple de code Java suivant permet de signer un formulaire interactif resti
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -790,16 +790,16 @@ L’exemple de code Java suivant certifie un document PDF basé sur un fichier P
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -910,7 +910,7 @@ L’exemple de code Java suivant certifie un document PDF basé sur un fichier P
 
 ## Didacticiel de mise en route (mode SOAP) : vérification d’une signature numérique à l’aide de l’API Java {#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api}
 
-L’exemple de code Java suivant vérifie une signature numérique située dans un document PDF basé sur un fichier PDF nommé LoanSigned.pdf. L’heure de vérification est définie comme l’heure actuelle et l’option de vérification de révocation est définie comme le meilleur effort. (Consultez la section [Vérification des signatures numériques](#verifying-digital-signatures)).
+L’exemple de code Java suivant vérifie une signature numérique contenue dans un document de PDF signé basé sur un fichier de PDF nommé LoanSigned.pdf. L’heure de vérification est définie comme l’heure actuelle et l’option de vérification de révocation est définie comme le meilleur effort. (Consultez la section [Vérification des signatures numériques](#verifying-digital-signatures)).
 
 ```java
  /*
@@ -935,16 +935,16 @@ L’exemple de code Java suivant vérifie une signature numérique située dans 
      * 18. xbean.jar (required for SOAP mode)
      * 19. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -1010,17 +1010,17 @@ L’exemple de code Java suivant vérifie une signature numérique située dans 
  
        //Determine the status of the signature
        if (sigStatus == SignatureStatus.DynamicFormSignatureUnknown)
-              myStatus = "The signatures located in the dynamic PDF form are unknown";
+              myStatus = "The signatures in the dynamic PDF form are unknown";
           else if (sigStatus == SignatureStatus.DocumentSignatureUnknown)
-              myStatus = "The signatures located in the PDF document are unknown";
+              myStatus = "The signatures in the PDF document are unknown";
           else if (sigStatus == SignatureStatus.CertifiedDynamicFormSignatureTamper)
-              myStatus = "The signatures located in a certified PDF form are valid";
+              myStatus = "The signatures in a certified PDF form are valid";
           else if (sigStatus == SignatureStatus.SignedDynamicFormSignatureTamper)
-              myStatus = "The signatures located in a signed dynamic PDF form are valid";
+              myStatus = "The signatures in a signed dynamic PDF form are valid";
           else if (sigStatus == SignatureStatus.CertifiedDocumentSignatureTamper)
-              myStatus = "The signatures located in a certified PDF document are valid";
+              myStatus = "The signatures in a certified PDF document are valid";
           else if (sigStatus == SignatureStatus.SignedDocumentSignatureTamper)
-              myStatus = "The signatures located in a signed PDF document are valid";
+              myStatus = "The signatures in a signed PDF document are valid";
           else if (sigStatus == SignatureStatus.SignatureFormatError)
               myStatus = "The format of a signature in a signed document is invalid";
           else if (sigStatus == SignatureStatus.DynamicFormSigNoChanges)
@@ -1074,7 +1074,7 @@ L’exemple de code Java suivant vérifie une signature numérique située dans 
 
 ## Didacticiel de mise en route (mode SOAP) : vérification de plusieurs signatures numériques à l’aide de l’API Java {#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api}
 
-L’exemple de code Java suivant vérifie plusieurs signatures numériques situées dans un document PDF signé basé sur un fichier PDF nommé LoanAllSigs.pdf. L’heure de vérification est définie comme l’heure actuelle et l’option de vérification de révocation est définie comme le meilleur effort. (Consultez la section [Vérification de plusieurs signatures numériques](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)).
+L’exemple de code Java suivant vérifie plusieurs signatures numériques qui se trouvent dans un document de PDF signé basé sur un fichier de PDF nommé LoanAllSigs.pdf. L’heure de vérification est définie comme l’heure actuelle et l’option de vérification de révocation est définie comme le meilleur effort. (Consultez la section [Vérification de plusieurs signatures numériques](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)).
 
 ```java
  /*
@@ -1103,16 +1103,16 @@ L’exemple de code Java suivant vérifie plusieurs signatures numériques situ�
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -1162,13 +1162,13 @@ L’exemple de code Java suivant vérifie plusieurs signatures numériques situ�
        pkiOptions.setVerificationTime(VerificationTime.CURRENT_TIME);
        pkiOptions.setRevocationCheckStyle(RevocationCheckStyle.BestEffort);
  
-       //Verify all digital signatures that are located in a PDF document
+       //Verify all digital signatures that are in a PDF document
        PDFDocumentVerificationInfo  allSig = signClient.verifyPDFDocument(
           inDoc,
           pkiOptions,
           null);
  
-       //Get a list of all signatures that are located in the PDF document
+       //Get a list of all signatures that are in the PDF document
        List allSignatures = allSig.getVerificationInfos();
  
      //Create an Iterator object and iterate through
@@ -1184,17 +1184,17 @@ L’exemple de code Java suivant vérifie plusieurs signatures numériques situ�
  
              //Determine the status of the signature
                if (sigStatus == SignatureStatus.DynamicFormSignatureUnknown)
-                   myStatus = "The signatures located in the dynamic PDF form are unknown";
+                   myStatus = "The signatures in the dynamic PDF form are unknown";
                else if (sigStatus == SignatureStatus.DocumentSignatureUnknown)
-                   myStatus = "The signatures located in the PDF document are unknown";
+                   myStatus = "The signatures in the PDF document are unknown";
                else if (sigStatus == SignatureStatus.CertifiedDynamicFormSignatureTamper)
-                   myStatus = "The signatures located in a certified PDF form are valid";
+                   myStatus = "The signatures in a certified PDF form are valid";
                else if (sigStatus == SignatureStatus.SignedDynamicFormSignatureTamper)
-                   myStatus = "The signatures located in a signed dynamic PDF form are valid";
+                   myStatus = "The signatures in a signed dynamic PDF form are valid";
                else if (sigStatus == SignatureStatus.CertifiedDocumentSignatureTamper)
-                   myStatus = "The signatures located in a certified PDF document are valid";
+                   myStatus = "The signatures in a certified PDF document are valid";
                else if (sigStatus == SignatureStatus.SignedDocumentSignatureTamper)
-                   myStatus = "The signatures located in a signed PDF document are valid";
+                   myStatus = "The signatures in a signed PDF document are valid";
                else if (sigStatus == SignatureStatus.SignatureFormatError)
                    myStatus = "The format of a signature in a signed document is invalid";
                else if (sigStatus == SignatureStatus.DynamicFormSigNoChanges)
@@ -1265,16 +1265,16 @@ L’exemple de code Java suivant supprime une signature numérique d’un champ 
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -1364,13 +1364,13 @@ L’exemple de code Java suivant applique un horodatage à un document PDF :
  * 11. adobe-utilities.jar (required for SOAP mode)
  *
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/sdk/client-libs/common
  *
- * The adobe-utilities.jar file is located in the following path:
+ * The adobe-utilities.jar file is in the following path:
  * <install directory>/sdk/client-libs/jboss
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/sdk/client-libs/thirdparty
  *
  * If you want to invoke a remote forms server instance and there is a

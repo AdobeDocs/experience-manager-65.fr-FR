@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 50%
+source-wordcount: '883'
+ht-degree: 47%
 
 ---
 
@@ -29,7 +29,7 @@ cURL est un outil de ligne de commande Open Source utilisé pour manipuler des 
 
 Initialement publié en 1997, cURL est un outil bien établi et largement répandu pour obtenir ou envoyer des données en utilisant la syntaxe de l’adresse URL. Le nom cURL signifiait à l’origine &quot;voir URL&quot;.
 
-Compte tenu de la nature RESTful de la structure Sling sur laquelle repose AEM, la plupart des tâches peuvent se réduire à l’appel d’une adresse URL, ce que cURL peut exécuter. Les [tâches de manipulation de contenu](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands), comme l’activation des pages et le démarrage de workflows, ainsi que les [tâches opérationnelles](/help/sites-administering/curl.md#common-operational-aem-curl-commands), comme la gestion de packages et d’utilisateurs, peuvent être automatisées à l’aide de cURL. En outre, vous pouvez [créer votre propre cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) pour la plupart des tâches dans AEM.
+Compte tenu de la nature RESTful de la structure Sling sur laquelle repose AEM, la plupart des tâches peuvent se réduire à l’appel d’une adresse URL, ce que cURL peut exécuter. [Tâches de manipulation de contenu](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) tels que l’activation de pages et le démarrage de workflows et [tâches opérationnelles](/help/sites-administering/curl.md#common-operational-aem-curl-commands) il est possible d’automatiser des utilisateurs tels que la gestion de modules et la gestion de modules à l’aide de cURL. En outre, vous pouvez [créer votre propre cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) pour la plupart des tâches dans AEM.
 
 >[!NOTE]
 >

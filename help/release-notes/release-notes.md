@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
 exl-id: d0dc5dfb-25a3-4388-a1d4-abba70081cc3
-source-git-commit: 59d5c2574bf4298469152a3d55e7c1508eb2f1be
-workflow-type: ht
-source-wordcount: '4633'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '4632'
+ht-degree: 99%
 
 ---
 
@@ -82,7 +82,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
    * MongoDB 4.4
    * Connecteur 8 JDBC MySQL
 
-Si vous installez ou envisagez d’utiliser les derniers logiciels pour votre environnement AEM Forms 6.5 on JEE, Adobe recommande d’utiliser le programme d’installation complet d’AEM 6.5.18.0 Forms on JEE. Pour consulter la liste complète des logiciels nouvellement ajoutés et obsolètes, reportez-vous à la documentation d’AEM Forms on JEE ou d’AEM Forms on OSGi.
+Si vous installez ou envisagez d’utiliser les derniers logiciels pour votre environnement AEM Forms 6.5 on JEE, Adobe recommande d’utiliser le programme d’installation complet d’AEM 6.5.18.0 Forms on JEE. Pour consulter la liste complète des logiciels nouvellement ajoutés et obsolètes, reportez-vous à la documentation d’AEM Forms on JEE ou d’AEM Forms on OSGi.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
@@ -476,7 +476,7 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 
       >[!NOTE]
       >
-      > Vous pouvez également utiliser un outil de modification statique, par exemple 7-zip, pour mettre à jour le fichier `Manifest.mf`.
+      > Vous pouvez également utiliser un outil de modification statique, par exemple, 7-zip, pour mettre à jour la variable `Manifest.mf` fichier .
 
    1. Enregistrez la mise à jour de `Manifest.mf` dans l’archive `adobe-output-client.jar`.
    1. Enregistrez le fichier `adobe-output-client.jar` modifié et relancez la configuration.  (CQDOC-20878)

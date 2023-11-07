@@ -1,16 +1,16 @@
 ---
 title: Signer numériquement et certifier des documents
-description: Utilisez le service Signature pour ajouter et supprimer des champs de signature numérique à un document PDF, récupérer les noms des champs de signature situés dans un document PDF, modifier les champs de signature, signer numériquement des documents PDF, certifier des documents PDF, valider les signatures numériques situées dans un document PDF, valider toutes les signatures numériques situées dans un document PDF et supprimer une signature numérique d’un champ de signature.
+description: Utilisez le service Signature pour ajouter et supprimer des champs de signature numérique dans un document de PDF, récupérer les noms des champs de signature dans un document de PDF, modifier les champs de signature, signer numériquement des documents de PDF, certifier des documents de PDF, valider les signatures numériques dans un document de PDF, valider toutes les signatures numériques dans un document de PDF et supprimer une signature numérique d’un champ de signature.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '17045'
-ht-degree: 85%
+source-wordcount: '17029'
+ht-degree: 83%
 
 ---
 
@@ -37,12 +37,12 @@ Si plusieurs champs de signature sont situés dans un document PDF, il est reco
 Vous pouvez accomplir les tâches suivantes à l’aide du service Signature :
 
 * Ajouter et supprimer des champs de signature numérique à un document PDF. (Voir [Ajouter des champs de signature](digitally-signing-certifying-documents.md#adding-signature-fields).)
-* Récupérer les noms des champs de signature situés dans un document PDF. (Voir [Récupérer les noms des champs de signature](digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
+* Récupérez les noms des champs de signature dans un document de PDF. (Voir [Récupérer les noms des champs de signature](digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
 * Modifier des champs de signature. (Voir [Modifier les champs de signature](digitally-signing-certifying-documents.md#modifying-signature-fields).)
 * Signer numériquement des documents PDF. (Voir [Signer numériquement des documents PDF](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 * Certifier des documents PDF. (Voir [Certifier des documents PDF](digitally-signing-certifying-documents.md#certifying-pdf-documents).)
-* Valider les signatures numériques situées dans un document PDF. (Voir [Vérifier les signatures numériques](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
-* Valider toutes les signatures numériques situées dans un document PDF. (Voir [Vérifier plusieurs signatures numériques](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
+* Validation des signatures numériques dans un document PDF. (Voir [Vérifier les signatures numériques](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
+* Validez toutes les signatures numériques dans un document PDF. (Voir [Vérifier plusieurs signatures numériques](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
 * Supprimer une signature numérique d’un champ de signature. (Voir [Supprimer des signatures numériques](digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
 >[!NOTE]
@@ -347,7 +347,7 @@ Récupérez les noms des champs de signature à l’aide de l’API de signature
 
 ## Modifier des champs de signature {#modifying-signature-fields}
 
-Vous pouvez modifier les champs de signature d’un document PDF à l’aide de l’API Java et de l’API de service web. La modification d’un champ de signature implique de manipuler ses valeurs de dictionnaire de verrouillage des champs de signature ou ses valeurs du dictionnaire de valeur de départ.
+Vous pouvez modifier les champs de signature d’un document de PDF à l’aide de l’API Java et de l’API de service Web. La modification d’un champ de signature implique de manipuler ses valeurs de dictionnaire de verrouillage des champs de signature ou ses valeurs du dictionnaire de valeur de départ.
 
 Un *dictionnaire de verrouillage de champ* spécifie la liste des champs qui sont verrouillés lorsque le champ de signature est signé. Un champ verrouillé empêche les utilisateurs d’apporter des modifications au champ. Un *dictionnaire de valeur de départ* contient des informations contraignantes utilisées au moment de l’apposition de la signature. Par exemple, vous pouvez modifier les autorisations qui contrôlent les actions pouvant se produire sans invalider la signature.
 
@@ -361,7 +361,7 @@ Cette section explique comment modifier un champ de signature en modifiant les v
 
 ### Résumé des étapes {#summary_of_steps-2}
 
-Pour modifier les champs de signature d’un document PDF, procédez comme suit :
+Pour modifier les champs de signature d’un document PDF, effectuez les tâches suivantes :
 
 1. Incluez les fichiers de projet.
 1. Créez un client Signature.
@@ -601,7 +601,7 @@ Lors de la certification et de la signature d’un même document PDF, si la si
 
 **Signer des documents qui sont des formulaires XFA**
 
-Si vous tentez de signer un formulaire XFA à l’aide de l’API du service Signature, les données peuvent ne pas figurer dans l’élément `View` `Signed` `Version` situé dans Acrobat. Prenons comme exemple le workflow suivant :
+Si vous tentez de signer un formulaire basé sur XFA à l’aide de l’API du service Signature, les données peuvent ne pas figurer dans la variable `View` `Signed` `Version` dans Acrobat. Prenons comme exemple le workflow suivant :
 
 * À l’aide d’un fichier XDP créé à l’aide de Designer, vous fusionnez une conception de formulaire contenant un champ de signature et des données XML contenant des données de formulaire. Vous utilisez le service Forms pour générer un document PDF interactif.
 * Signez le document PDF à l’aide de l’API du service Signature.
@@ -816,7 +816,7 @@ Pour signer numériquement un document PDF à l’aide de l’API Signature (ser
 
 Vous pouvez signer un formulaire interactif que le service Forms crée. Prenons comme exemple le workflow suivant :
 
-* Fusionnez un formulaire PDF basé sur XFA créé à l’aide de Designer avec des données de formulaire situées dans un document XML à l’aide du service Forms. Le serveur Forms effectue le rendu d’un formulaire interactif.
+* Vous fusionnez un formulaire de PDF basé sur XFA créé à l’aide de Designer et des données de formulaire dans un document XML à l’aide du service Forms. Le serveur Forms effectue le rendu d’un formulaire interactif.
 * Vous pouvez signer le formulaire interactif à l’aide de l’API du service Signature.
 
 Le résultat est un formulaire PDF interactif signé numériquement. Lors de la signature d’un formulaire PDF basé sur un formulaire XFA, veillez à enregistrer le fichier PDF en tant que formulaire PDF statique Adobe. Si vous tentez de signer un formulaire PDF enregistré en tant que formulaire PDF dynamique Adobe, une exception se produit. Puisque vous signez le formulaire renvoyé par le service Forms, assurez-vous que le formulaire contient un champ de signature.
@@ -1514,7 +1514,7 @@ Vérifiez une signature numérique en utilisant l’API du service Signature (We
 
 ## Vérification de plusieurs signatures numériques {#verifying-multiple-digital-signatures}
 
-AEM Forms permet de vérifier toutes les signatures numériques qui se trouvent dans un document PDF. Supposons qu’un document PDF contienne plusieurs signatures numériques suite à un processus d’entreprise qui requiert des signatures de plusieurs signataires. Prenons l’exemple d’une transaction financière qui nécessite à la fois la signature d’un agent de prêt et celle d’un responsable. Vous pouvez utiliser l’API du service Signature pour vérifier toutes les signatures contenues dans un document PDF. Lors de la vérification de plusieurs signatures numériques, vous pouvez vérifier l’état et les propriétés de chaque signature. Avant d’approuver une signature numérique, il est recommandé de la vérifier. Il est recommandé de vous familiariser avec la vérification d’une signature numérique unique.
+AEM Forms permet de vérifier toutes les signatures numériques contenues dans un document de PDF. Supposons qu’un document PDF contienne plusieurs signatures numériques suite à un processus d’entreprise qui requiert des signatures de plusieurs signataires. Prenons l’exemple d’une transaction financière qui nécessite à la fois la signature d’un agent de prêt et celle d’un responsable. Vous pouvez utiliser l’API du service Signature pour vérifier toutes les signatures contenues dans un document PDF. Lors de la vérification de plusieurs signatures numériques, vous pouvez vérifier l’état et les propriétés de chaque signature. Avant d’approuver une signature numérique, il est recommandé de la vérifier. Il est recommandé de vous familiariser avec la vérification d’une signature numérique unique.
 
 >[!NOTE]
 >
@@ -1585,7 +1585,7 @@ L’horodatage est le processus de suivi de l’heure de modification d’un doc
 
 **Récupérer toutes les signatures numériques**
 
-Pour vérifier toutes les signatures numériques figurant dans un document PDF, récupérez les signatures numériques du document PDF. Toutes les signatures sont renvoyées dans une liste. Dans le cadre de la vérification d’une signature numérique, vérifiez l’état de la signature.
+Pour vérifier toutes les signatures numériques dans un document de PDF, récupérez les signatures numériques du document de PDF. Toutes les signatures sont renvoyées dans une liste. Dans le cadre de la vérification d’une signature numérique, vérifiez l’état de la signature.
 
 >[!NOTE]
 >
@@ -1639,9 +1639,9 @@ Vérifiez plusieurs signatures numériques à l’aide de l’API du service Sig
 
    * Objet `com.adobe.idp.Document` contenant un document PDF contenant plusieurs signatures numériques.
    * Objet `PKIOptions` contenant des options d’exécution PKI.
-   * Une instance `VerifySPIOptions` qui contient des informations SPI. Vous pouvez indiquer `null` pour ce paramètre.
+   * Une instance `VerifySPIOptions` qui contient des informations SPI. Vous pouvez spécifier `null` pour ce paramètre.
 
-   La méthode `verifyPDFDocument` renvoie un objet `PDFDocumentVerificationInfo` qui contient des informations sur toutes les signatures numériques figurant dans le document PDF.
+   La variable `verifyPDFDocument` renvoie une `PDFDocumentVerificationInfo` contenant des informations sur toutes les signatures numériques dans le document PDF.
 
 1. Faire une itération sur toutes les signatures
 
@@ -1707,7 +1707,7 @@ Vérifiez plusieurs signatures numériques à l’aide de l’API du service de 
    * Objet `PKIOptions` contenant des options d’exécution PKI.
    * Un objet `VerifySPIOptions` contenant des informations SPI. Vous pouvez spécifier la valeur null pour ce paramètre.
 
-   La méthode `verifyPDFDocument` renvoie un objet `PDFDocumentVerificationInfo` contenant des informations sur toutes les signatures numériques figurant dans le document PDF.
+   La variable `verifyPDFDocument` renvoie une `PDFDocumentVerificationInfo` contenant des informations sur toutes les signatures numériques dans le document PDF.
 
 1. Faire une itération sur toutes les signatures
 

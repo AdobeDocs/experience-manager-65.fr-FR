@@ -2,10 +2,10 @@
 title: Fragments d’expérience
 description: Fragments d’expérience  dans la création Adobe Experience Manager Sites.
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 99%
+source-wordcount: '1440'
+ht-degree: 95%
 
 ---
 
@@ -37,7 +37,7 @@ Vous pouvez utiliser des fragments d’expérience :
 >
 >    `experience-fragments-editors`
 >
-Si vous rencontrez des problèmes, contactez votre administrateur système.
+Si vous rencontrez des problèmes, contactez votre administration système.
 
 ## Quand utiliser les fragments d’expérience ? {#when-should-you-use-experience-fragments}
 
@@ -55,7 +55,7 @@ Les fragments d’expérience doivent être utilisés :
 * Si vous disposez d’une expérience avec des variations ou des rendus différents.
 
    * Variations spécifiques au canal ou au contexte
-   * Expériences qu’il y a lieu de regrouper (par exemple, une campagne avec des expériences différentes sur les canaux).
+   * Expériences à regrouper (par exemple, une campagne avec des expériences différentes selon les canaux)
 
 * Lorsque vous avez recours au commerce omnicanal.
 
@@ -135,7 +135,7 @@ Il s’agit de la méthode recommandée pour spécifier les **Modèles autorisé
 >
 Il est déconseillé de modifier les **Modèles autorisés** à l’aide de cette méthode, car les modèles spécifiés peuvent être remplacés lors de la mise à niveau.
 >
-Veuillez utiliser cette boîte de dialogue uniquement à titre d’information.
+Utilisez cette boîte de dialogue uniquement à titre d’information.
 
 1. Accédez à la console **Fragments d’expérience** concernée.
 
@@ -234,7 +234,7 @@ Vous pouvez créer des variantes de votre fragment d’expérience en fonction d
 
    ![xf-06](assets/xf-06.png)
 
-1. Confirmez en cliquant sur **Terminé** (icône représentant une coche). La nouvelle variation est alors affichée dans le panneau :
+1. Confirmer avec **Terminé** (icône de coche), la nouvelle variation s’affiche dans le panneau :
 
    ![xf-07](assets/xf-07.png)
 
@@ -267,7 +267,7 @@ Vous pouvez sélectionner un ou plusieurs composants pour créer un bloc de cré
 
 ### Création d’un bloc de création {#creating-a-building-block}
 
-Pour créer un bloc de création :
+Pour créer un bloc de création :
 
 1. Dans l’éditeur de fragments d’expérience, sélectionnez les composants à réutiliser :
 
@@ -281,7 +281,7 @@ Pour créer un bloc de création :
 
    ![xf-11](assets/xf-11.png)
 
-1. Le **bloc de création** s’affiche dans l’onglet et peut être sélectionné dans le système de paragraphe :
+1. La variable **Bloc de création** s’affiche dans l’onglet et peut être sélectionné dans le système de paragraphes :
 
    ![xf-12](assets/xf-12.png)
 

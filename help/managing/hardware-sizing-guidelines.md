@@ -7,9 +7,9 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2796'
+source-wordcount: '2798'
 ht-degree: 38%
 
 ---
@@ -27,9 +27,9 @@ Les facteurs de base à prendre en compte sont (dans cet ordre) :
 
 * **Vitesse de calcul**
 
-   * Efficacité de la mise en cache
+   * Efficacité du cache
    * Trafic attendu
-   * Complexité des modèles, des applications et des composants
+   * Complexité des modèles, applications et composants
    * Auteurs simultanés
    * Complexité de l’opération de création (édition de contenu simple, déploiement MSM, etc.)
 
@@ -44,7 +44,7 @@ Les facteurs de base à prendre en compte sont (dans cet ordre) :
 * **Mémoire**
 
    * Taille du site web (nombre d’objets de contenu, de pages et d’utilisateurs)
-   * Nombre d’utilisateurs/sessions principaux en même temps
+   * Nombre d’utilisateurs/sessions actifs en même temps
 
 ## Architecture {#architecture}
 
@@ -110,7 +110,7 @@ Un site web doté de la prévention de défaillance est déployé sur au moins d
 
 **Évolutivité des ressources système**
 
-Pendant que tous les systèmes sont en cours d’exécution, une performance de calcul accrue est disponible. Ces performances supplémentaires ne sont pas nécessairement linéaires avec le nombre de noeuds de grappe, car la relation dépend fortement de l’environnement technique. Voir [Documentation sur les grappes](/help/sites-deploying/recommended-deploys.md) pour plus d’informations.
+Pendant que tous les systèmes sont en cours d’exécution, une performance de calcul accrue est disponible. Ces performances supplémentaires ne sont pas nécessairement linéaires avec le nombre de noeuds de grappe, car la relation dépend fortement de l’environnement technique. Voir [Documentation du cluster](/help/sites-deploying/recommended-deploys.md) pour plus d’informations.
 
 L’estimation du nombre de noeuds de grappe nécessaires repose sur les exigences de base et les cas d’utilisation spécifiques du projet web spécifique :
 
@@ -179,7 +179,7 @@ Voir aussi [Mise en parallèle](/help/managing/hardware-sizing-guidelines.md#par
 
 ### Recommendations matériel {#hardware-recommendations}
 
-En règle générale, vous pouvez utiliser le même matériel pour votre environnement de création que celui recommandé pour votre environnement de publication. En règle générale, le trafic sur le site web est beaucoup plus faible sur les systèmes de création, mais l’efficacité du cache est également plus faible. Cependant, le facteur fondamental ici est le nombre d’auteurs travaillant en parallèle, ainsi que le type d’actions effectuées sur le système. En général, AEM mise en grappe (de l’environnement de création) est plus efficace pour dimensionner les opérations de lecture. en d’autres termes, une grappe d’AEM s’adapte bien aux auteurs qui effectuent des opérations de modification de base.
+En règle générale, vous pouvez utiliser le même matériel pour votre environnement de création que celui recommandé pour votre environnement de publication. En règle générale, le trafic sur le site web est beaucoup plus faible sur les systèmes de création, mais l’efficacité du cache est également plus faible. Cependant, le facteur fondamental ici est le nombre d’auteurs travaillant en parallèle, ainsi que le type d’actions effectuées sur le système. En règle générale, la mise en grappe AEM (de l’environnement de création) est plus efficace pour dimensionner les opérations de lecture ; en d’autres termes, une grappe AEM se met à l’échelle avec les auteurs qui effectuent des opérations de modification de base.
 
 Les tests comparatifs à Adobe ont été réalisés à l’aide du système d’exploitation Red Hat® 5.5, exécuté sur une plateforme matérielle Hewlett-Packard ProLiant DL380 G5 avec la configuration suivante :
 
@@ -209,7 +209,7 @@ L’efficacité du cache est essentielle à la vitesse du site web. Le tableau s
 
 >[!CAUTION]
 >
->Clause de non-responsabilité : Les nombres dépendent d’une configuration matérielle par défaut et peuvent varier en fonction du matériel utilisé.
+>Clause de non-responsabilité : les numéros dépendent d’une configuration matérielle par défaut et peuvent varier en fonction du matériel utilisé.
 
 Le ratio de cache est le pourcentage de pages que Dispatcher peut renvoyer sans avoir à accéder à AEM. 100 % indique que Dispatcher répond à toutes les requêtes, 0 % signifie que AEM calcule chaque page.
 

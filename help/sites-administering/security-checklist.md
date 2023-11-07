@@ -12,10 +12,10 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 465d3e956ecdd36eea5fe095e250652eedd4b3c5
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3005'
-ht-degree: 100%
+source-wordcount: '3004'
+ht-degree: 98%
 
 ---
 
@@ -393,7 +393,7 @@ Même si cela n’est pas recommandé, vous pouvez la désactiver au cas où vou
 
 ### Package de renforcement des autorisations anonymes {#anonymous-permission-hardening-package}
 
-Par défaut, AEM stocke les métadonnées système, telles que `jcr:createdBy` ou `jcr:lastModifiedBy` en tant que propriétés de nœud, en regard du contenu normal, dans le référentiel. Selon la configuration et la définition du contrôle d’accès, cela peut dans certains cas entraîner l’exposition des informations d’identification personnelle, par exemple lorsque ces nœuds sont rendus au format JSON ou XML brut.
+Par défaut, AEM stocke les métadonnées système, telles que `jcr:createdBy` ou `jcr:lastModifiedBy` en tant que propriétés de nœud, en regard du contenu normal, dans le référentiel. Selon la configuration et la configuration du contrôle d’accès, cela peut, dans certains cas, entraîner l’exposition des informations d’identification personnelle (PII), par exemple, lorsque ces noeuds sont rendus au format JSON ou XML brut.
 
 Comme toutes les données de référentiel, ces propriétés sont arbitrées par la pile d’autorisations Oak. Leur accès doit être restreint conformément au principe du moindre privilège.
 
@@ -407,7 +407,7 @@ avec celles qui sont visibles après l’installation du package, où `jcr:creat
 
 ![Après l’installation du package](/help/sites-administering/assets/after_resized.png)
 
-Pour plus d’informations, consultez les notes de mise à jour du package.
+Pour plus d’informations, voir les Notes de mise à jour du module .
 
 ### Prévention du détournement de clic {#prevent-clickjacking}
 

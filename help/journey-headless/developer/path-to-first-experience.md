@@ -2,10 +2,10 @@
 title: Premiers pas vers votre première expérience d’utilisation d’AEM découplé
 description: Dans cette partie du parcours de développement découplé AEM, vous découvrirez les étapes de mise en œuvre de votre première expérience découplée dans AEM, notamment des considérations concernant sa planification, et découvrirez également les bonnes pratiques pour rendre votre parcours aussi fluide que possible.
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1992'
-ht-degree: 99%
+source-wordcount: '1988'
+ht-degree: 94%
 
 ---
 
@@ -68,15 +68,15 @@ Au cours de l’étape de développement, il est recommandé de travailler avec 
 
 ### Coopération entre équipe de développement et auteurs de contenu {#cooperation}
 
-L’équipe de développement a besoin d’un environnement de développement AEM configuré avec les modèles de contenu renseignés. Le développeur développe le client qui consommera du contenu découplé AEM, car les auteurs du contenu continuent à créer du contenu. C’est pourquoi les définitions d’API sont très importantes. En utilisant le SDK AEM, le développeur peut créer un hook de test afin de pouvoir créer des tests client et unitaires pour s’assurer que le client est en mesure d’effectuer correctement le rendu du contenu.
+L’équipe de développement a besoin d’un environnement de développement AEM configuré avec les modèles de contenu renseignés. Le développeur développe le client qui consommera du contenu découplé AEM, car les auteurs du contenu continuent à créer du contenu. C’est pourquoi les définitions d’API sont très importantes. En utilisant le SDK AEM, le développeur peut créer un point d’extension de test afin de pouvoir créer des tests client et unitaires pour s’assurer que le client est en mesure de générer correctement le contenu.
 
-Les auteurs de contenu créent du contenu en fonction des modèles de contenu définis dans l’environnement d’évaluation. À l’aide de l’outil de création de fragments de contenu, l’auteur crée un fragment de contenu ou en modifie un déjà existant. Avant de le publier, l’auteur peut prévisualiser l’aspect qu’il aura dans le client en travaillant avec le développeur pour pousser le modèle de contenu en développement ou configurer un environnement de développement uniquement pour que les auteurs puissent prévisualiser l’aspect que le fragment de contenu aura dans le client.
+Les auteurs de contenu créent du contenu en fonction des modèles de contenu définis dans l’environnement d’évaluation. À l’aide de l’outil de création de fragments de contenu, l’auteur crée un fragment de contenu ou modifie un fragment de contenu existant. Avant de le publier, l’auteur peut prévisualiser l’aspect qu’il aura dans le client en travaillant avec le développeur pour pousser le modèle de contenu en développement ou configurer un environnement de développement uniquement pour que les auteurs puissent prévisualiser l’aspect que le fragment de contenu aura dans le client.
 
 ## Configuration {#setup}
 
 Avant de commencer à utiliser du contenu découplé dans AEM, vous devez vous assurer que toutes les fonctionnalités requises sont activées. Cette section décrit ces différentes exigences. Les étapes réelles pour réaliser ces étapes sont détaillées plus loin dans le [Parcours de développement découplé AEM.](#overview.md)
 
-Vous pouvez également vous reporter éventuellement aux [ressources supplémentaires](#additional-resources) pour plus d’informations sur chaque sujet.
+Vous pouvez également, si vous le souhaitez, afficher la variable [ressources supplémentaires](#additional-resources) pour plus d’informations sur les différentes rubriques.
 
 ### Configuration {#configuration}
 
@@ -94,7 +94,7 @@ Voici un aperçu de ce qui est nécessaire pour mettre en œuvre votre première
 
 ## Bonnes pratiques {#best-practices}
 
-Un projet découplé doit son succès non seulement à la technologie mise en œuvre, mais aussi à sa bonne planification et à sa bonne gouvernance. Vous trouverez ci-dessous un certain nombre de bonnes pratiques que les auteurs de contenu et l’équipe de développement doivent garder à l’esprit au fur et à mesure que vous planifiez votre projet.
+Un projet découplé doit son succès non seulement à la technologie mise en œuvre, mais aussi à sa bonne planification et à sa bonne gouvernance. Vous trouverez ci-dessous plusieurs bonnes pratiques que les auteurs et les développeurs de contenu doivent retenir lors de la planification de votre projet.
 
 ### Organisation de votre contenu {#organizing-content}
 

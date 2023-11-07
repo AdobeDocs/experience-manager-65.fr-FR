@@ -6,10 +6,10 @@ role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: ht
-source-wordcount: '1031'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1030'
+ht-degree: 98%
 
 ---
 
@@ -36,7 +36,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 
 1. Dans l’interface utilisateur d’[!DNL Assets], sélectionnez la ressource à partager sous forme de lien.
 
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Partager un lien]** ![icône Partage de lien](assets/do-not-localize/assets_share.png). Le lien qui sera créé après avoir cliqué sur **[!UICONTROL Partager]** s’affiche à l’avance dans le champ [!UICONTROL Partager un lien]. Le lien n’est pas créé tant que vous n’avez pas sélectionné **[!UICONTROL Envoyer]**.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Partager un lien]** ![icône Partage de lien](assets/do-not-localize/assets_share.png). Lien créé après avoir cliqué sur **[!UICONTROL Partager]** s’affiche à l’avance dans la variable [!UICONTROL Partager le lien] champ . Le lien n’est pas créé tant que vous n’avez pas sélectionné **[!UICONTROL Envoyer]**.
 
    ![Boîte de dialogue avec le partage de lien](assets/share-assets-as-link.png)
 

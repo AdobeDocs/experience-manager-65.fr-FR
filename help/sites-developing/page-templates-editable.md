@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3219'
 ht-degree: 98%
 
 ---
@@ -56,7 +56,7 @@ La création de modèles modifiables s’effectue essentiellement à l’aide de
 
 Pour plus d’informations sur l’utilisation de modèles modifiables dans un projet AEM, voir [Création d’un projet AEM à l’aide de Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478?profile.language=fr).
 
-Lors de la création d’un modèle modifiable :
+Lors de la création d’un modèle modifiable :
 
 1. Créez un [dossier pour les modèles](#template-folders). Ce dossier n’est pas obligatoire, mais il fait partie des bonnes pratiques recommandées.
 1. Sélectionnez un [type de modèle](#template-type). Ce type est copié afin de créer la [définition du modèle](#template-definitions).
@@ -237,7 +237,7 @@ Il existe plusieurs manières de créer un dossier.
 
 ### ACL et groupes {#acls-and-groups}
 
-Une fois les dossiers modèles créés (soit par CRXDE, soit par le navigateur de configuration), des listes de contrôle doivent être définies pour les groupes appropriés pour les dossiers modèles afin d’assurer une sécurité adéquate.
+Une fois les dossiers modèles créés (soit par CRXDE, soit par le navigateur de configuration), des ACL doivent être définies pour les groupes appropriés pour les dossiers modèles afin d’assurer une sécurité adéquate.
 
 Les dossiers de modèles de l’[`We.Retail`implémentation de référence](/help/sites-developing/we-retail.md) peuvent être utilisés à titre d’exemple.
 
@@ -412,12 +412,12 @@ Les définitions de vos types de modèle personnalisés doivent être stockées 
 
 ### Types de modèle et groupes d’appareils mobiles {#template-type-and-mobile-device-groups-br}
 
-Les [groupes d’appareils](/help/sites-developing/mobile.md#device-groups) utilisés pour un modèle modifiable (défini en tant que chemin d’accès relatif de la propriété `cq:deviceGroups`) définissent les appareils mobiles disponibles comme émulateurs dans le [mode de mise en page](/help/sites-authoring/responsive-layout.md) de la création de pages. Vous pouvez définir cette valeur à deux emplacements :
+Les [groupes de terminaux](/help/sites-developing/mobile.md#device-groups) utilisés pour un modèle modifiable (défini en tant que chemin d’accès relatif de la propriété `cq:deviceGroups`) définissent les terminaux mobiles disponibles comme émulateurs dans le [mode de mise en page](/help/sites-authoring/responsive-layout.md) de la création de pages. Vous pouvez définir cette valeur à deux emplacements :
 
 * Sur le type de modèle modifiable
 * Sur le de modèle modifiable
 
-Lors de la création d’un nouveau modèle modifiable, la valeur est copiée du type de modèle vers le modèle individuel. Si la valeur n’est pas définie sur le type, elle peut être définie sur le modèle. Une fois le modèle créé, il n’hérite d’aucun élément du type.
+Lors de la création d’un modèle modifiable, la valeur est copiée du type de modèle vers le modèle individuel. Si la valeur n’est pas définie sur le type, elle peut être définie sur le modèle. Une fois le modèle créé, il n’hérite d’aucun élément du type.
 
 >[!CAUTION]
 >
@@ -440,7 +440,7 @@ Si vous avez créé un modèle qui peut servir de base pour d’autres modèles,
 
 Vous pouvez également développer votre propre type de modèle en utilisant un exemple de modèle modifiable comme base (disponible sur GitHub).
 
-CODE SUR GITHUB
+Code sur Github
 
 Vous pouvez trouver le code de cette page sur GitHub.
 

@@ -3,10 +3,10 @@ title: Exigences techniques
 description: Liste des plateformes clientes et serveur prises en charge pour Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 0dd6e3fc2fa9539e5c3ce4e99ab367752dfeaad6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3597'
-ht-degree: 91%
+ht-degree: 89%
 
 ---
 
@@ -226,7 +226,7 @@ Pour un environnement natif dans le cloud, passez en revue la dernière offre de
 
 Adobe propose également l’utilisation d’Adobe Managed Services pour déployer AEM sur Azure ou AWS. Adobe Managed Services fournit aux experts les compétences nécessaires pour déployer et utiliser AEM dans ces environnements de cloud computing. Consultez les [documents complémentaires sur Adobe Managed Services](https://business.adobe.com/fr/products/experience-manager/managed-services.html?aemClk=t).
 
-Dans tous les autres cas de déploiement d’AEM sur Azure ou AWS, ou tout autre environnement de cloud computing, la prise en charge d’Adobe se limite à l’environnement informatique virtuel. Cet environnement virtuel doit être exécuté conformément aux spécifications techniques répertoriées sur cette page. Tout problème signalé relatif à AEM s’exécutant dans l’un de ces environnements cloud doit être reproductible, indépendamment de tout service cloud spécifique à l’environnement de cloud computing. En d’autres termes, sauf si le service cloud est pris en charge dans le cadre des exigences techniques répertoriées sur cette page, par exemple le stockage Azure Blob ou AWS S3.
+Dans tous les autres cas de déploiement d’AEM sur Azure ou AWS, ou tout autre environnement de cloud computing, la prise en charge d’Adobe se limite à l’environnement informatique virtuel. Cet environnement virtuel doit être exécuté conformément aux spécifications techniques répertoriées sur cette page. Tout problème signalé relatif à AEM s’exécutant dans l’un de ces environnements cloud doit être reproductible, indépendamment de tout service cloud spécifique à l’environnement de cloud computing. En d’autres termes, sauf si le service cloud est pris en charge dans le cadre des exigences techniques répertoriées sur cette page, par exemple, le stockage Azure Blob ou AWS S3.
 
 Pour obtenir des recommandations sur le déploiement d’AEM sur Azure ou AWS, en dehors d’Adobe Managed Services, Adobe recommande de travailler directement avec le fournisseur de cloud. Vous pouvez également travailler avec des partenaires d’Adobe pour prendre en charge le déploiement d’AEM dans l’environnement cloud de votre choix. Le fournisseur ou le partenaire cloud sélectionné est responsable des spécifications de dimensionnement, de la conception et de l’implémentation de l’architecture, afin de répondre à vos exigences spécifiques en matière de performances, de charge, d’évolutivité et de sécurité.
 
@@ -537,4 +537,4 @@ L’écriture différée XMP est prise en charge et activée pour les plateforme
 
 ### Conditions requises pour qu’AEM Assets traite les ressources lourdes en métadonnées sous Linux® {#assetsonlinux}
 
-Le processus XMPFilesProcessor nécessite le fonctionnement de la bibliothèque GLIBC_2.14. Utilisez un noyau Linux® contenant GLIBC_2.14, par exemple un noyau Linux® version 3.1.x. Cela améliore les performances de traitement des ressources qui contiennent un grand nombre de métadonnées, comme les fichiers PSD. L’utilisation d’une version précédente de GLIBC entraîne une erreur dans les journaux commençant par `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+Le processus XMPFilesProcessor nécessite le fonctionnement de la bibliothèque GLIBC_2.14. Utilisez un noyau Linux® qui contient GLIBC_2.14, par exemple, le noyau Linux® version 3.1.x. Cela améliore les performances de traitement des ressources qui contiennent un grand nombre de métadonnées, comme les fichiers de PSD. L’utilisation d’une version précédente de GLIBC entraîne une erreur dans les journaux commençant par `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.

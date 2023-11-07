@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4032'
+source-wordcount: '4031'
 ht-degree: 47%
 
 ---
@@ -374,7 +374,7 @@ Si vous avez accès à la liste des tâches d’un autre utilisateur, vous ne po
 
 Si vous prévoyez d’être absent du bureau, vous pouvez spécifier ce qu’il advient des tâches qui vous sont affectées pour cette période.
 
-Vous pouvez spécifier une date et une heure de début, ainsi qu’une date et une heure de fin, pour l’application de vos paramètres d’absence du bureau. Si vous vous trouvez dans un fuseau horaire différent de celui du serveur, le fuseau horaire utilisé est celui du serveur.
+Vous pouvez spécifier une date et une heure de début, ainsi qu’une date et une heure de fin, pour l’application de vos paramètres d’absence du bureau. Si vous vous trouvez dans un fuseau horaire différent du serveur, le fuseau horaire utilisé est celui du serveur.
 
 Vous pouvez définir une personne par défaut à laquelle toutes vos tâches sont envoyées. Vous pouvez également spécifier des exceptions pour que des tâches issues de processus spécifiques soient envoyées à un utilisateur différent ou pour qu’elles restent dans votre liste de tâches jusqu’à votre retour. Si la personne désignée est également absente du bureau, la tâche passe à l’utilisateur qu’elle a désigné. Si la tâche ne peut pas être affectée à un utilisateur qui n’est pas absent du bureau, la tâche reste dans votre liste de tâches.
 

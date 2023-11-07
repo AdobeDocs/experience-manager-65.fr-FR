@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: page-authoring, introduction
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
 exl-id: b41aa7e5-1a5f-4e5e-be79-637d9f71ad72
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '412'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 92%
 
 ---
 
@@ -35,7 +35,7 @@ Le contenu de votre site web est conservé dans une structure en arborescence. P
 
 ### Création d’une page {#creating-a-new-page}
 
-Avant de procéder à la modification, vous devez [créer une page](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
+Avant de procéder à la modification, vous devez [création d’une page](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
 
 ### Ouvrir une page {#opening-a-page}
 
@@ -43,7 +43,7 @@ Pour de nombreuses actions, telles que la modification, vous devez [ouvrir une p
 
 ### Modifier une page {#editing-a-page}
 
-Si votre instance comporte déjà des pages existantes ou si vous venez de créer une page, vous pouvez [modifier la page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) en procédant comme suit :
+Si votre instance comporte déjà des pages ou si vous avez créé une page, vous pouvez : [modification d’une page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) par :
 
 * [Insertion d’un composant (paragraphe)](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#inserting-a-component)
 * [Modification d’un composant](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties)
@@ -57,7 +57,7 @@ Si votre instance comporte déjà des pages existantes ou si vous venez de crée
 
 ### Publier une page {#publishing-a-page}
 
-Une fois la modification de la page terminée, vous pouvez [publier (ou activer) votre page](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#main-pars-title-10), afin de l’afficher aux visiteurs et visiteuses de votre site Web.
+Une fois la modification de la page terminée, vous souhaiterez [publier (ou activer) votre page](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#main-pars-title-10) afin qu’elle soit disponible pour les visiteurs et visiteuses de votre site web.
 
 ## Autres opérations {#further-actions}
 
@@ -65,7 +65,7 @@ Outre les étapes de base, beaucoup d’autres opérations peuvent être exécut
 
 ### Copier une page {#copying-a-page}
 
-Il est parfois plus facile de [copier une page](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#copying-and-pasting-a-page) et de réutiliser son contenu plutôt que de tout recommencer à zéro.
+Il est parfois plus facile de [copier une page](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#copying-and-pasting-a-page) et de réutiliser le contenu plutôt que de tout recréer de zéro.
 
 ### Déplacement ou changement de nom d’une page {#moving-or-renaming-a-page}
 

@@ -9,9 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 89f4d3cf-eb2e-4d55-8209-16ecbba03792
-source-git-commit: 5f4bbad87768cf6bd73771f9eac6e01ab3bf3309
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6171'
+source-wordcount: '6170'
 ht-degree: 53%
 
 ---
@@ -190,7 +190,7 @@ Activez ces options pour indiquer comment afficher le contenu, afficher les page
 
 **Mise en page :** permet de sélectionner le type de mise en page du document PDF.
 
-**Zoom :** permet de choisir un zoom prédéfini de l’affichage initial du document PDF ou de sélectionner une valeur personnalisée. Le choix d’un paramètre par défaut implique l’utilisation du zoom par défaut d’Acrobat.
+**Zoom :** permet de choisir un zoom prédéfini de l’affichage initial du document PDF ou de sélectionner une valeur personnalisée. Le choix d’un paramètre par défaut indique que l’agrandissement Acrobat par défaut est utilisé.
 
 **Ouvrir à la page :** permet d’indiquer le numéro de page auquel le PDF doit s’ouvrir.
 

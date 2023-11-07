@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '10239'
+source-wordcount: '10229'
 ht-degree: 23%
 
 ---
@@ -649,7 +649,7 @@ Une fois les utilisateurs invités enregistrés, Document Security envoie un cou
 
 Lorsque le destinataire active le compte utilisateur, celui-ci devient un utilisateur local.
 
-Les paramètres suivants se trouvent dans la zone Configuration du courrier électronique d’activation de la page Enregistrement d’utilisateur invité.
+Les paramètres suivants se trouvent dans la zone Configuration du courrier électronique d’activation de la page Enregistrement d’utilisateur invité .
 
 >[!NOTE]
 >
@@ -710,7 +710,7 @@ Les utilisateurs et groupes sélectionnés sont désormais autorisés à créer 
 
 ### Spécification des utilisateurs et groupes visibles dans les recherches {#specify-users-and-groups-that-are-visible-in-searches}
 
-Lorsque les utilisateurs gèrent leurs stratégies personnalisées, ils peuvent rechercher des utilisateurs et des groupes à ajouter à leurs stratégies. Vous devez indiquer les domaines à partir desquels les utilisateurs et les groupes sont visibles dans ces recherches.
+Lorsque les utilisateurs gèrent leurs stratégies personnalisées, ils peuvent rechercher des utilisateurs et des groupes à ajouter à leurs stratégies. Indiquez les domaines à partir desquels les utilisateurs et les groupes sont visibles dans ces recherches.
 
 1. Dans la page Document Security, cliquez sur Configuration > Mes stratégies.
 1. Sur la page Mes stratégies, cliquez sur l’onglet Utilisateurs et groupes visibles.

@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 7f00d426-4d28-41ee-8c54-636349e48669
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2648'
 ht-degree: 0%
 
 ---
@@ -59,9 +59,9 @@ Le corps d’une page d’Angular est rendu différemment selon que wcmMode est 
 
 En mode création, chaque page individuelle est rendue séparément. Angular ne gère pas le routage entre les pages, pas plus qu’un mode ng n’est utilisé pour charger un modèle partiel contenant les composants de la page. Au lieu de cela, le contenu du modèle de page (template.jsp) est inclus du côté serveur via l’événement `cq:include` balise .
 
-Cette stratégie active les fonctionnalités de création (telles que l’ajout et la modification de composants dans le système de paragraphes, le Sidekick, le mode de conception, etc.) pour fonctionner sans modification. Les pages qui reposent sur le rendu côté client, comme celles des applications, ne fonctionnent pas correctement en mode de création AEM.
+Cette stratégie permet aux fonctions de création (telles que l’ajout et la modification de composants dans le système de paragraphes, le Sidekick, le mode de conception, etc.) de fonctionner sans modification. Les pages qui reposent sur le rendu côté client, comme celles des applications, ne fonctionnent pas correctement en mode de création AEM.
 
-Notez que l’inclusion template.jsp est encapsulée dans une `div` qui contient l’élément `ng-controller` de . Cette structure permet de lier le contenu DOM au contrôleur. Par conséquent, bien que les pages qui s’affichent du côté client échouent, les composants individuels qui le font fonctionnent correctement (voir la section sur les composants ci-dessous).
+L’inclusion template.jsp est encapsulée dans une `div` qui contient l’élément `ng-controller` de . Cette structure permet de lier le contenu DOM au contrôleur. Par conséquent, bien que les pages qui s’affichent du côté client échouent, les composants individuels qui le font fonctionnent correctement (voir la section sur les composants ci-dessous).
 
 ```xml
 <div ng-controller="<c:out value="${controllerNameStripped}"/>">
@@ -144,7 +144,7 @@ Le script controller.js.jsp génère le fragment de contrôleur pour chaque page
 ])
 ```
 
-Notez que la variable `data` se voit attribuer la promesse renvoyée par l’Angular. `$http.get` . Chaque composant inclus dans cette page peut, si vous le souhaitez, rendre un certain contenu .json disponible (via son script angular.json.jsp) et agir sur le contenu de cette requête lorsqu’elle est résolue. La requête est très rapide sur les appareils mobiles, car elle accède simplement au système de fichiers.
+La variable `data` se voit attribuer la promesse renvoyée par l’Angular. `$http.get` . Chaque composant inclus dans cette page peut, si vous le souhaitez, rendre un certain contenu .json disponible (via son script angular.json.jsp) et agir sur le contenu de cette requête lorsqu’elle est résolue. La requête est très rapide sur les appareils mobiles, car elle accède simplement au système de fichiers.
 
 Pour qu’un composant fasse partie du contrôleur de cette manière, il doit étendre le composant /libs/mobileapps/components/angular/ng-component et inclure la variable `frameworkType: angular` .
 
@@ -367,7 +367,7 @@ Le répertoire www contient tout le contenu web (fichiers HTML, JS et CSS) qui m
 
 ### www/config.xml {#www-config-xml}
 
-Documentation PhoneGap (`https://docs.phonegap.com`) fait référence à ce fichier en tant que &quot;fichier de configuration global&quot;. Le fichier config.xml contient de nombreuses propriétés d’application, telles que le nom de l’application, les &quot;préférences&quot; de l’application (par exemple, si un affichage Web iOS permet de surfaire le défilement) et les dépendances de module externe qui sont *only* consommé par la version PhoneGap.
+Documentation PhoneGap (`https://docs.phonegap.com`) fait référence à ce fichier en tant que &quot;fichier de configuration global&quot;. Le fichier config.xml contient de nombreuses propriétés d’application, telles que le nom de l’application, les &quot;préférences&quot; de l’application (par exemple, si un affichage web iOS permet le survol) et les dépendances de module externe qui sont *only* consommé par la version PhoneGap.
 
 Le fichier config.xml est un fichier statique dans AEM et est exporté en l’état par synchronisation de contenu.
 

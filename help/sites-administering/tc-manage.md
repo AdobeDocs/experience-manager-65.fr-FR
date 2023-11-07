@@ -2,10 +2,10 @@
 title: Gestion de projets de traduction
 description: Découvrez comment gérer des projets de traduction dans Adobe Experience Manager.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 9438868191961404e9e18cb0dd2e844985ac9db0
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3588'
-ht-degree: 71%
+source-wordcount: '3578'
+ht-degree: 68%
 
 ---
 
@@ -123,7 +123,7 @@ Après avoir créé un projet de traduction, vous pouvez utiliser le volet Resso
 
 Lorsque vous ajoutez des pages à un projet de traduction, les pages sont incorporées à une nouvelle tâche de traduction. Vous pouvez également [ajouter des pages à une tâche existante](#adding-pages-assets-to-a-translation-job).
 
-Comme lors de la création d’un projet, lorsque vous ajoutez des pages, des copies des pages sont ajoutées à un lancement, si nécessaire, afin d’éviter de remplacer des copies de langue. (Voir [Création de projets de traduction pour des copies de langue existantes](#performing-initial-translations-and-updating-existing-translations).)
+Comme lors de la création d’un projet, lors de l’ajout de pages, des copies des pages sont ajoutées à un lancement si nécessaire afin d’éviter de remplacer des copies de langue existantes. (Voir [Création de projets de traduction pour des copies de langue existantes](#performing-initial-translations-and-updating-existing-translations).)
 
 1. Utilisez la console Sites pour sélectionner la page que vous ajoutez au projet de traduction.
 
@@ -292,7 +292,7 @@ La procédure suivante définit la date d’échéance d’une tâche de traduct
 
 Définissez la portée de la tâche de traduction afin que le prestataire de services de traduction vous fournisse une estimation du coût de la traduction. Lorsque vous définissez la portée d’une tâche, les fichiers source sont envoyés au fournisseur de traduction, qui compare le texte à son pool de traductions stockées (mémoire de traduction). En règle générale, la portée (ou scope) correspond au nombre de mots à traduire.
 
-Pour plus d’informations sur les résultats de l’application de portée, contactez votre fournisseur de traduction.
+Pour obtenir plus d’informations sur les résultats de la portée, contactez votre fournisseur de traduction.
 
 >[!NOTE]
 >
@@ -412,7 +412,7 @@ Remplissez la copie de langue afin qu’elle contienne le contenu de la langue p
 
 ## Déplacement ou modification du nom d’une page source {#move-source}
 
-Si une page source déjà traduite doit être [renommée ou déplacée](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), la traduction de la page après le déplacement crée une copie dans la langue en fonction du nouveau nom ou emplacement de la page. L’ancienne copie dans la langue basée sur le nom et l’emplacement précédent sera toujours là. Pour éviter cela, vous pouvez utiliser la fonctionnalité de mise à jour de la copie de langue après le déplacement :
+Si une page source déjà traduite doit être [renommé ou déplacé](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), la traduction de la page une fois le déplacement effectué crée une copie de langue basée sur le nouveau nom/emplacement de la page. L’ancienne copie de langue basée sur le nom/l’emplacement précédent est toujours là. Pour éviter cela, vous pouvez utiliser la fonctionnalité de mise à jour de la copie de langue après le déplacement :
 
 1. Déplacez une page qui comporte une copie de langue.
 1. Sélectionnez la racine de la copie de langue.
@@ -423,9 +423,9 @@ Si une page source déjà traduite doit être [renommée ou déplacée](/help/si
 1. Cliquez sur **Mettre à jour**. A [Launch](/help/sites-authoring/launches-promoting.md) sera créé.
 1. Accédez à la racine de langue requise et sélectionnez-la.
 1. En utilisant la variable **Références** panneau, sélectionnez **Lancements**.
-1. Cliquez sur le lancement qui vient d’être créé, puis cliquez sur **Convertir le lancement**.
+1. Cliquez sur le lancement qui a été créé, puis sur **Convertir le lancement**.
 
-Désormais, la page source a été déplacée, ainsi que la copie de langue associée.
+Désormais, la page source a été déplacée et la copie de langue associée.
 
 ## Création d’un projet de traduction à l’aide de la console Projets {#creating-a-translation-project-using-the-projects-console}
 
@@ -450,7 +450,7 @@ Lorsque vous créez manuellement un projet de traduction, vous devez fournir des
 
 ## Exportation d’une tâche de traduction {#exporting-a-translation-job}
 
-Vous pouvez télécharger le contenu d’une tâche de traduction, par exemple, pour l’envoyer à un fournisseur de traduction qui n’est pas intégré à AEM par le biais d’un connecteur ou pour réviser le contenu.
+Vous pouvez télécharger le contenu d’une tâche de traduction, par exemple, pour l’envoyer à un fournisseur de traduction qui n’est pas intégré à AEM via un connecteur, ou pour revoir le contenu.
 
 1. Dans le menu déroulant de la mosaïque Tâche de traduction, cliquez ou appuyez sur Exporter.
 1. Dans la boîte de dialogue Exporter, cliquez ou appuyez sur Télécharger le fichier exporté et, si nécessaire, utilisez la boîte de dialogue du navigateur web pour enregistrer le fichier.
@@ -458,7 +458,7 @@ Vous pouvez télécharger le contenu d’une tâche de traduction, par exemple, 
 
 ## Importation d’une tâche de traduction {#importing-a-translation-job}
 
-Vous pouvez importer du contenu traduit dans AEM, par exemple, lorsque votre fournisseur de traduction vous l’envoie, car il n’est pas intégré à AEM par le biais d’un connecteur.
+Vous pouvez importer du contenu traduit dans AEM, par exemple, lorsque votre fournisseur de traduction vous l’envoie, car il n’est pas intégré à AEM via un connecteur.
 
 1. Dans le menu déroulant de la mosaïque Tâche de traduction, cliquez ou appuyez sur Importer.
 1. Utilisez la boîte de dialogue du navigateur web pour sélectionner le fichier à importer.

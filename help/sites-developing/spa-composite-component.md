@@ -1,25 +1,25 @@
 ---
 title: Composants composites dans les applications d’une seule page (SPA)
-description: Découvrez comment créer vos propres composants composites, composants constitués eux-mêmes d’autres composants, qui fonctionnent avec l’éditeur d’applications d’une seule page (SPA) d’AEM.
+description: Découvrez comment créer vos propres composants composites, composants constitués eux-mêmes d’autres composants, qui fonctionnent avec l’éditeur d’application monopage AEM.
 exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '783'
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '781'
 ht-degree: 100%
 
 ---
 
 # Composants composites dans les SPA {#composite-components-in-spas}
 
-Les composants composites exploitent la nature modulaire des composants d’AEM en combinant plusieurs composants de base pour en constituer un seul. Le cas d’utilisation courant d’un composant composite est celui du composant de carte, composé d’une combinaison des composants image et texte.
+Les composants composites exploitent la nature modulaire des composants AEM en combinant plusieurs composants de base pour en constituer un seul. Le cas d’utilisation courant d’un composant composite est celui du composant de carte, composé d’une combinaison des composants image et texte.
 
-Lorsque les composants composites sont correctement implémentés dans la structure de l’éditeur d’application d’une seule page (SPA) d’AEM, les auteurs de contenu peuvent effectuer un glisser-déposer de ces composants comme s’ils le feraient pour d’autres, tout en ayant la possibilité de modifier individuellement chaque constituant du composant composite.
+Lorsque les composants composites sont correctement implémentés dans la structure de l’éditeur d’application monopage AEM, les auteurs de contenu peuvent effectuer un glisser-déposer de ces composants comme ils le feraient pour d’autres, tout en ayant la possibilité de modifier individuellement chaque constituant du composant composite.
 
-Cet article explique comment ajouter un composant composite à votre application d’une seule page pour travailler en toute transparence avec l’éditeur de SPA d’AEM.
+Cet article explique comment ajouter un composant composite à votre application monopage pour travailler en toute transparence avec l’éditeur d’application monopage AEM.
 
 ## Cas d’utilisation {#use-case}
 
-Cet article utilise le composant de carte type comme cas d’utilisation. Les cartes sont des éléments d’interface utilisateur courants pour de nombreuses expériences numériques. Elles sont généralement constituées d’une image et de texte ou d’une légende associés. L’auteur souhaite pouvoir faire un glisser-déposer de l’ensemble de la carte, mais aussi modifier individuellement l’image de la carte et personnaliser le texte associé.
+Cet article utilise le composant de carte type comme cas d’utilisation. Les cartes sont des éléments d’interface utilisateur courants pour de nombreuses expériences digitales. Elles sont généralement constituées d’une image et de texte ou d’une légende associés. La personne chargée de créer du contenu souhaite pouvoir faire un glisser-déposer de l’ensemble de la carte, mais aussi modifier individuellement l’image de la carte et personnaliser le texte associé.
 
 ## Prérequis {#prerequisites}
 

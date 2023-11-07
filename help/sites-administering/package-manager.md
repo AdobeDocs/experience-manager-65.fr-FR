@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3570'
-ht-degree: 97%
+source-wordcount: '3568'
+ht-degree: 96%
 
 ---
 
@@ -275,7 +275,7 @@ En fonction des modifications que vous avez apportées, vous devrez peut-être [
 
 ### Réencapsuler un package {#rewrapping-a-package}
 
-Une fois qu’un package a été créé, il peut être réencapsulé. La réencapsulation modifie les informations du package telles que la miniature, la description, etc. sans toucher à son contenu.
+Une fois qu’un package a été créé, il peut être réencapsulé. Le retour à la ligne modifie les informations du module sans qu’il y ait de miniature, de description, etc., sans modifier le contenu du module.
 
 1. [Accédez au Gestionnaire de packages.](#accessing)
 
@@ -581,7 +581,7 @@ Les packages AEM peuvent être utilisés pour créer et partager du contenu dans
 
 La [Distribution logicielle](https://downloads.experiencecloud.adobe.com) est un service centralisé conçu pour simplifier la recherche et le téléchargement des packages AEM.
 
-Pour plus d’informations, reportez-vous à la [documentation sur la Distribution logicielle.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr)
+Pour plus d’informations, voir [Distribution logicielle .](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr)
 
 >[!NOTE]
 >

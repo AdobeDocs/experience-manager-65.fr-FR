@@ -6,10 +6,10 @@ role: User
 feature: Collaboration
 exl-id: c1aece06-7c1c-43a0-bea0-6f11ecda7e68
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '595'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/private-folder.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
-Vous pouvez créer un dossier privé dans l’interface utilisateur d’[!DNL Adobe Experience Manager Assets] qui n’est disponible que pour vous. Vous pouvez partager ce dossier privé avec d’autres utilisateurs auxquels vous attribuez différents privilèges. Selon le niveau de privilège que vous attribuez, les utilisateurs peuvent effectuer différentes tâches dans le dossier, par exemple consulter des ressources du dossier ou les modifier.
+Vous pouvez créer un dossier privé dans l’interface utilisateur d’[!DNL Adobe Experience Manager Assets] qui n’est disponible que pour vous. Vous pouvez partager ce dossier privé avec d’autres utilisateurs auxquels vous attribuez différents privilèges. En fonction du niveau de privilège que vous attribuez, les utilisateurs peuvent effectuer diverses tâches sur le dossier, comme afficher les ressources du dossier ou les modifier.
 
 >[!NOTE]
 >

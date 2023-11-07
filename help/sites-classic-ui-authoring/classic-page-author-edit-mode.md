@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '6026'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -311,7 +311,7 @@ Le composant Flash vous permet de charger une animation Flash. Vous pouvez faire
 
    * **Mode Fenêtre**
 
-     Permet de spécifier comment la fenêtre doit apparaître (opaque, transparente ou comme une fenêtre distincte, par exemple).
+     Affichage de la fenêtre, par exemple, opaque, transparente ou en tant que fenêtre distincte (solide).
 
    * **Couleur d’arrière-plan**
 
@@ -393,7 +393,7 @@ L’image finale (avec son **Titre** et sa **Description**) peut s’afficher co
 
 >[!CAUTION]
 >
->Bien que le composant Conteneur de disposition soit disponible dans l’interface utilisateur classique, sa pleine fonctionnalité n’est disponible que dans l’interface utilisateur tactile. Pour plus d’informations, voir [Mise en forme réactive](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md).
+>Bien que le composant Conteneur de disposition soit disponible dans l’interface utilisateur classique, sa pleine fonctionnalité n’est disponible que dans l’interface utilisateur tactile. Pour plus d’informations, voir [Mise en page réactive](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md).
 
 ### Liste {#list}
 

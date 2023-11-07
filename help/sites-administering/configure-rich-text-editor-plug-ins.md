@@ -3,7 +3,7 @@ title: Configuration des modules externes d’éditeur de texte enrichi
 description: Apprenez à configurer les modules externes d’éditeur de texte enrichi d’Adobe Experience Manager afin d’activer différentes fonctionnalités.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4395'
 ht-degree: 66%
@@ -95,7 +95,7 @@ Les trois icônes ci-dessous peuvent être mises à la disposition des auteurs d
 
 Pour configurer l’éditeur de texte enrichi afin qu’il affiche les icônes requises, procédez comme suit.
 
-1. Accédez à votre composant, par exemple `/apps/<myProject>/components/text`.
+1. Accédez à votre composant, par exemple, `/apps/<myProject>/components/text`.
 1. Accédez au nœud `rtePlugins/edit`. Voir [Activation d’un module externe](#activateplugin) si le nœud n’existe pas.
 1. Créez la propriété `features` sur le nœud `edit` et ajoutez une ou plusieurs des fonctions. Enregistrez toutes les modifications.
 
@@ -226,7 +226,7 @@ Pour ce faire, activez le module externe Style .
 
 Indiquez ensuite l’emplacement des feuilles de style que vous souhaitez référencer :
 
-1. Accédez au nœud racine de votre composant Texte, par exemple. `/apps/<myProject>/components/text`
+1. Accédez au noeud racine de votre composant Texte, par exemple : `/apps/<myProject>/components/text`.
 1. Ajoutez la propriété `externalStyleSheets` au nœud parent de `<rtePlugins-node>` :
 
    * **Nom** `externalStyleSheets`
@@ -327,7 +327,7 @@ Tout texte saisi dans l’éditeur de texte enrichi est placé dans une balise b
 
 >[!NOTE]
 >
->Si une balise block, par exemple une balise &lt;hr> balise, ne peut pas être affectée à un paragraphe, ce n’est pas un cas d’utilisation valide pour un module externe paraformat.
+>Si une balise block, par exemple, une &lt;hr> balise, ne peut pas être affectée à un paragraphe, ce n’est pas un cas d’utilisation valide pour un module externe paraformat.
 
 Lorsque le module externe Formats de paragraphe est activé pour la première fois, aucun format de paragraphe par défaut n’est disponible. La liste contextuelle est vide. Pour fournir aux auteurs des formats de paragraphe, procédez comme suit :
 

@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 94%
+source-wordcount: '953'
+ht-degree: 89%
 
 ---
 
@@ -29,7 +29,7 @@ Les consoles d’administration des utilisateurs et utilisatrices et des groupes
 
 ![Console Outils](assets/chlimage_1-72a.png)
 
-Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la console adéquate. Dans les deux, vous pouvez agir soit en utilisant la case à cocher, puis les actions de la barre d’outils, soit en ouvrant les détails du compte via le lien situé sous **Nom**.
+Choix de l’une ou l’autre **Utilisateurs** ou **Groupes** dans la console Outils , ouvrez la console appropriée. Dans les deux, vous pouvez agir soit en utilisant la case à cocher, puis les actions de la barre d’outils, soit en ouvrant les détails du compte via le lien situé sous **Nom**.
 
 * [Administration des utilisateurs](#user-administration)
 
@@ -59,7 +59,7 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
 
    ![Icône Ajouter un utilisateur](do-not-localize/chlimage_1-1.png)
 
-1. Le formulaire **Créer un utilisateur ou une utilisatrice** s’ouvre :
+1. La variable **Créer un utilisateur** le formulaire s’ouvre :
 
    ![Formulaire de détails utilisateur](assets/chlimage_1-75a.png)
 
@@ -67,7 +67,7 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
 
    * **ID**
 
-      Il s’agit de l’identifiant unique du compte utilisateur. Il est obligatoire et ne peut pas contenir d’espaces.
+     Il s’agit de l’identifiant unique du compte d’utilisateur. Il est obligatoire et ne peut pas contenir d’espaces.
 
    * **Adresse électronique**
    * **Mot de passe**
@@ -135,7 +135,7 @@ Vous pouvez marquer le compte comme **actif** ou **inactif**.
 
    ![Boîte de dialogue Paramètres du compte](assets/chlimage_1-76a.png)
 
-1. La boîte de dialogue **Modifier le mot de passe** s’ouvre. Saisissez et confirmez le nouveau mot de passe, ainsi que votre mot de passe. Cliquez sur **OK** pour confirmer les modifications.
+1. La variable **Modifier le mot de passe** s’ouvre. Saisissez et confirmez le nouveau mot de passe, ainsi que votre mot de passe. Cliquez sur **OK** pour confirmer les modifications.
 
    ![Boîte de dialogue Modifier le mot de passe](assets/chlimage_1-77a.png)
 
@@ -148,11 +148,11 @@ Vous pouvez marquer le compte comme **actif** ou **inactif**.
 
    ![Utilisation de l’icône Groupes](do-not-localize/chlimage_1-2.png)
 
-   Pour ouvrir le menu déroulant de sélection de groupe :
+   Pour ouvrir la liste déroulante de sélection de groupe :
 
    ![Sélecteur de groupes](assets/chlimage_1-78a.png)
 
-1. Dans la boîte de dialogue de sélection, vous pouvez sélectionner ou désélectionner les groupes auxquels le compte utilisateur doit appartenir.
+1. Dans la boîte de dialogue de sélection, vous pouvez sélectionner ou désélectionner les groupes auxquels le compte d’utilisateur doit appartenir.
 
 1. Lorsque vous avez affecté les groupes ou avez annulé leur affectation selon les besoins, utilisez :
 
@@ -176,7 +176,7 @@ Vous pouvez marquer le compte comme **actif** ou **inactif**.
 
    ![Ajouter un nouveau groupe](do-not-localize/chlimage_1-4.png)
 
-1. Le formulaire **Créer un groupe** s’ouvre :
+1. La variable **Créer un groupe** le formulaire s’ouvre :
 
    ![Formulaire Détails du groupe](assets/chlimage_1-79a.png)
 
@@ -188,7 +188,7 @@ Vous pouvez marquer le compte comme **actif** ou **inactif**.
 
    * **Nom**
 
-     Nom du groupe. Il est affiché dans la console Groupes.
+     Nom du groupe. Il s’affiche dans la console Groupes .
 
    * **Description**
 

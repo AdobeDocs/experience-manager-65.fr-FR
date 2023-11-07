@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Collaboration
 exl-id: 130cec6d-1cdd-4304-94bb-65e6bb573e55
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '950'
-ht-degree: 64%
+ht-degree: 60%
 
 ---
 
@@ -39,11 +39,11 @@ Le diagramme suivant offre une vue d’ensemble du processus d’intégration.
 
 L’intégration comprend les éléments suivants :
 
-* **[!DNL Experience Manager Assets]** déployé dans le réseau d’entreprise (Managed Services ou On-Premise) : Le partage de dossiers est lancé ici.
+* **[!DNL Experience Manager Assets]** déployé dans le réseau d’entreprise (Managed Services ou On-premise) : le partage de dossiers est initié ici.
 * Le service de base **[!DNL Adobe Experience Cloud Assets]** : sert d’intermédiaire entre [!DNL Experience Manager] et les services de stockage [!DNL Creative Cloud]. Un administrateur d’une organisation qui utilise l’intégration doit établir une relation de confiance entre l’organisation Experience Cloud et la [!DNL Assets] déploiement. Il définit également [une liste des collaborateurs Creative Cloud approuvés](https://experienceleague.adobe.com/docs/core-services/interface/services/assets/t-admin-add-cc-user.html) avec qui les utilisateurs d’[!DNL Assets] peuvent partager des dossiers, pour plus de sécurité.
 
 * Les services Web **[!DNL Creative Cloud] Assets**(IU Web de fichiers [!DNL Creative Cloud] et de stockage) : endroit où des utilisateurs de Creative Cloud spécifiques, avec lesquels un dossier [!DNL Assets] a été partagé, peuvent accepter l’invitation et visualiser le dossier dans l’espace de stockage de leur compte Creative Cloud.
-* **application de bureau Creative Cloud**: (Facultatif) Permet un accès direct aux dossiers/fichiers partagés depuis le bureau de l’utilisateur créatif via la synchronisation avec [!DNL Creative Cloud] Stockage des ressources.
+* **application de bureau Creative Cloud**: (facultatif) permet un accès direct aux dossiers/fichiers partagés à partir du bureau de l’utilisateur créatif via la synchronisation avec [!DNL Creative Cloud] Stockage des ressources.
 
 ## Caractéristiques et limites {#characteristics-and-limitations}
 
@@ -61,15 +61,15 @@ L’intégration comprend les éléments suivants :
 
 ## Bonnes pratiques {#best-practices}
 
-Bonnes pratiques relatives à l’utilisation de [!DNL Experience Manager] to [!DNL Creative Cloud] partage de dossiers :
+Bonnes pratiques relatives à l’utilisation de [!DNL Experience Manager] to [!DNL Creative Cloud] le partage de dossiers comprend :
 
 * **Considérations relatives au volume :** le partage de dossiers entre [!DNL Experience Manager] et [!DNL Creative Cloud] doit être utilisé pour partager un plus petit nombre de fichiers, par exemple pour une campagne ou une activité spécifique. Pour partager de plus grands ensembles de ressources, comme toutes les ressources approuvées dans l’organisation, utilisez d’autres méthodes de distribution (par exemple, [!DNL Assets Brand Portal]) ou l’application de bureau [!DNL Experience Manager].
 * **Évitez de partager des hiérarchies profondes :** Le partage fonctionne de manière récursive et n’autorise pas l’annulation sélective du partage. En règle générale, seuls les dossiers sans sous-dossiers ou avec une hiérarchie superficielle, comme un niveau de sous-dossier, doivent être pris en compte pour le partage.
 * **Partage unilatéral de dossiers séparés :** des dossiers séparés doivent être utilisés pour partager les ressources finales de [!DNL Assets] vers [!DNL Creative Cloud], et pour partager en retour les ressources dont les créations sont prêtes à l’emploi de [!DNL Creative Cloud] vers [!DNL Assets]. Cette pratique, associée à une bonne convention d’attribution des noms de dossiers, permet de créer un environnement de travail intuitif pour les utilisateurs d’[!DNL Assets] comme de [!DNL Creative Cloud].
-* **Évitez d’inclure du travail en cours dans le dossier partagé :** le dossier partagé ne doit pas être utilisé pour le travail en cours. Utilisez un dossier séparé dans Creative Cloud Files pour mener à bien les tâches qui nécessitent des modifications de fichier fréquentes.
+* **Évitez les travaux en cours dans le dossier partagé :** N’utilisez pas de dossier partagé pour le travail en cours : utilisez un dossier distinct dans les fichiers du Creative Cloud pour effectuer des tâches qui nécessitent des modifications fréquentes du fichier.
 * **Démarrez les nouvelles tâches en dehors du dossier partagé :** les nouvelles conceptions (fichiers créatifs) doivent être démarrées dans un dossier séparé de travail en cours dans Creative Cloud Files. Lorsqu’elles sont prêtes à être partagées avec les utilisateurs d’[!DNL Assets], elles doivent être déplacées ou enregistrées dans le dossier partagé.
 * **Simplifiez la structure de partage :** Pour une configuration opérationnelle plus gérable, pensez à simplifier la structure de partage. Au lieu de partager avec tous les utilisateurs créatifs, [!DNL Assets] Les dossiers doivent être partagés uniquement avec les représentants de l’équipe, comme un directeur créatif ou un chef d’équipe. Le responsable artistique doit recevoir les ressources finales, déterminer l’attribution des tâches, puis permettre aux concepteurs de travailler sur les ressources de travail en cours sur leurs comptes Creative Cloud respectifs. Il peut utiliser les fonctions de collaboration Creative Cloud pour coordonner le travail et, finalement, sélectionner et replacer les ressources prêtes à être partagées dans [!DNL Assets], au sein du dossier partagé dédié aux créations.
 
-Le diagramme suivant illustre un exemple de configuration pour créer des conceptions basées sur des ressources finales existantes à partir de [!DNL Assets].
+Le diagramme suivant illustre un exemple de configuration pour la création de conceptions basées sur des ressources finales existantes à partir de [!DNL Assets].
 
 ![chlimage_1-180](assets/chlimage_1-407.png)

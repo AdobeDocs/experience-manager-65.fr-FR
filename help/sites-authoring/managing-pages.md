@@ -2,10 +2,10 @@
 title: Créer et organiser des pages avec AEM
 description: Découvrez comment créer et gérer des pages avec Adobe Experience Manager.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2434'
-ht-degree: 97%
+source-wordcount: '2412'
+ht-degree: 88%
 
 ---
 
@@ -21,11 +21,11 @@ Cette section décrit comment créer et gérer des pages avec Adobe Experience�
 
 >[!NOTE]
 >
->Il existe un certain nombre de [raccourcis clavier](/help/sites-authoring/keyboard-shortcuts.md) à utiliser à partir de la console Sites web qui facilitent l’organisation des pages.
+>Il existe plusieurs [raccourcis clavier](/help/sites-authoring/keyboard-shortcuts.md) que vous pouvez utiliser à partir de la console sites web pour organiser vos pages plus efficacement.
 
 ## Organisation du site web {#organizing-your-website}
 
-En tant qu’auteur, vous devez organiser votre site web dans AEM. Cela implique de créer et de nommer vos pages de contenu de façon à ce que :
+En tant qu’auteur, organisez votre site web dans AEM. Cela implique de créer et de nommer vos pages de contenu de façon à ce que :
 
 * vous puissiez les trouver facilement dans l’environnement de création ;
 * les visiteurs sur votre site puissent facilement les parcourir dans l’environnement de publication.
@@ -78,7 +78,7 @@ Cette structure peut être visualisée à partir de la console **Sites**, dans l
 
 ### Conventions de dénomination des pages {#page-naming-conventions}
 
-Lors de la création d’une page, il y a deux champs clés :
+Lors de la création d’une page, il existe deux champs clés :
 
 * **[Titre](#title)** :
 
@@ -104,7 +104,7 @@ Le **Titre** et le **Nom** de la page peuvent être créés séparément, mais i
 >
 >N’oubliez pas que certains navigateurs (par exemple, les anciennes versions d’IE) n’acceptent que les URL n’excédant pas une certaine longueur. C’est pourquoi il existe également une raison technique à garder les noms de pages courts.
 
-Lors de la création d’une page, AEM [valide son nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
+Lors de la création d’une page AEM [valide le nom de la page en fonction des conventions ;](/help/sites-developing/naming-conventions.md) imposé par AEM et le JCR.
 
 Les caractères minimum autorisés sont :
 
@@ -122,7 +122,7 @@ Vous trouverez la liste complète et détaillée des caractères autorisés dans
 
 #### Titre {#title}
 
-Si vous n’indiquez qu’un **titre** de page lors de la création d’une page, AEM utilise le **nom** de la page de cette chaîne et [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR. Un champ **Titre** contenant des caractères non valides sera accepté, mais les caractères non valides seront remplacés pour le nom dérivé. Par exemple :
+Si vous n’indiquez qu’une page **Titre** lors de la création d’une page, AEM délivre la page **Nom** de cette chaîne et [valider le nom en fonction des conventions ;](/help/sites-developing/naming-conventions.md) imposé par AEM et JCR. Un champ **Titre** contenant des caractères non valides sera accepté, mais les caractères non valides seront remplacés pour le nom dérivé. Par exemple :
 
 | Titre | Nom dérivé |
 |---|---|
@@ -131,7 +131,7 @@ Si vous n’indiquez qu’un **titre** de page lors de la création d’une page
 
 #### Nom {#name}
 
-Si vous indiquez un **nom** de page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR. Vous ne pouvez pas utiliser de caractères non valides dans le champ **Nom**. Lorsque AEM détecte des caractères non valides, le champ est mis en surbrillance avec un message d’explication.
+Lorsque vous fournissez une page **Nom** lors de la création d’une page, AEM [valide le nom en fonction des conventions ;](/help/sites-developing/naming-conventions.md) imposé par AEM et JCR. Vous ne pouvez pas utiliser de caractères non valides dans le champ **Nom**. Lorsque AEM détecte des caractères non valides, le champ est mis en surbrillance avec un message d’explication.
 
 ![caop-02](assets/caop-02.png)
 
@@ -143,7 +143,7 @@ Si vous indiquez un **nom** de page lors de la création d’une page, AEM [vali
 
 ### Modèles {#templates}
 
-Dans AEM, un modèle spécifie un type de page spécialisé. Un modèle sera utilisé comme base pour toute nouvelle page créée.
+Dans AEM, un modèle spécifie un type de page spécialisé. Un modèle est utilisé comme base pour toute nouvelle page créée.
 
 Le modèle définit la structure d’une page, y compris une miniature et d’autres propriétés. Par exemple, vous pouvez avoir des modèles distincts pour les pages de produits, les plans de site et les coordonnées. Les modèles sont constitués de [composants](#components).
 
@@ -213,7 +213,7 @@ Avant de pouvoir commencer à créer du contenu, vous devez créer une page, à 
    * **Nom** :
 
       * Il est utilisé pour générer l’URI. S’il n’est pas spécifié, le nom est dérivé du titre.
-      * Si vous indiquez un **nom** de page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
+      * Si vous fournissez une page **Nom** lors de la création d’une page, AEM [valide le nom en fonction des conventions ;](/help/sites-developing/naming-conventions.md) imposé par AEM et JCR.
 
       * Vous **ne pouvez pas utiliser de caractères non valides** dans le champ **Nom**. Lorsqu’AEM détecte des caractères non valides, le champ est mis en surbrillance et un message d’explication s’affiche et indique les caractères à supprimer/remplacer.
 
@@ -221,7 +221,7 @@ Avant de pouvoir commencer à créer du contenu, vous devez créer une page, à 
    >
    >Voir [Conventions de dénomination de page](#page-naming-conventions).
 
-   Les informations minimales requises pour créer une page sont le **Titre**.
+   Les informations minimales requises pour créer une page sont les suivantes : **Titre**.
 
    ![caop-05](assets/caop-05.png)
 
@@ -231,7 +231,7 @@ Avant de pouvoir commencer à créer du contenu, vous devez créer une page, à 
 
    >[!NOTE]
    >
-   >Si vous créez une page en utilisant un nom qui existe déjà à cet emplacement, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, le nom de la nouvelle page sera `winter0`.
+   >Si vous créez une page en utilisant un nom qui existe déjà à cet emplacement, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, une nouvelle page deviendra `winter0`.
 
 1. Si vous revenez à la console, la nouvelle page est présentée :
 
@@ -281,17 +281,17 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
    >Si vous êtes en mode de sélection, la page est fermée dès qu’elle est copiée.
 
 1. Accédez à l’emplacement destiné à la nouvelle copie de la page.
-1. L’icône **Coller** est disponible avec une flèche déroulante directement à droite :
+1. La variable **Coller** est disponible avec une flèche déroulante directement à droite :
 
    ![Coller](assets/paste-without-children.png)
 
    Vous pouvez effectuer l’une des actions suivantes :
    * Sélectionner l’icône de page **Coller** : une copie de la page d’origine et de toutes les pages enfants sera créée à cet emplacement.
-   * Sélectionner la flèche déroulante pour afficher l’option **Coller sans enfants**. Une copie de la page d’origine sera créée à cet emplacement ; les pages enfants ne seront pas copiées.
+   * Sélectionnez la flèche de liste déroulante pour afficher la variable **Coller sans enfants** . Une copie de la page d’origine sera créée à cet emplacement ; les pages enfants ne seront pas copiées.
 
    >[!NOTE]
    >
-   >Si vous copiez la page à un emplacement où il existe une page du même nom que l’original, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, `winter` deviendra `winter1`.
+   >Si vous copiez la page à un emplacement où il existe une page du même nom que l’original, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà `winter` sera `winter1`.
 
 ### Déplacement ou modification du nom d’une page {#moving-or-renaming-a-page}
 
@@ -321,7 +321,7 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
 
-   L’assistant de déplacement de page s’ouvre alors.
+   Cela ouvre l’assistant de déplacement de page.
 
 1. À l’étape **Renommer** de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
@@ -335,7 +335,7 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
    >[!NOTE]
    >
-   >Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, `winter` deviendra `winter1`.
+   >Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà `winter` sera `winter1`.
 
 1. À l’étape **Sélectionner une destination** de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
@@ -354,7 +354,7 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
    >[!NOTE]
    >
-   >Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, `winter` deviendra `winter1`.
+   >Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà `winter` sera `winter1`.
 
 1. Si la page est liée ou référencée, ou si elle a été publiée, les détails seront répertoriés dans l’étape **Ajuster/republier**.
 
@@ -390,7 +390,7 @@ L’état des tâches asynchrones peut être vérifié dans le [**tableau de bor
 
 >[!NOTE]
 >
->Pour plus d’informations sur le traitement asynchrone des tâches et sur la manière de configurer la limite pour les actions de déplacement/modification du nom de page, consultez le document [Tâches asynchrones](/help/sites-administering/asynchronous-jobs.md) dans le guide de l’utilisateur relatif à l’administration.
+>Pour plus d’informations sur le traitement asynchrone des tâches et sur la configuration de la limite pour les actions de déplacement/changement de nom de page, voir la section [Tâches asynchrones](/help/sites-administering/asynchronous-jobs.md) dans le guide d’utilisation Administration.
 
 >[!NOTE]
 >

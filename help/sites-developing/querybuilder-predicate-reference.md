@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2347'
-ht-degree: 28%
+ht-degree: 30%
 
 ---
 
@@ -68,7 +68,7 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 #### Propriétés {#properties}
 
 * **boolproperty**
-Chemin d’accès relatif à la propriété, par exemple `myFeatureEnabled` ou `jcr:content/myFeatureEnabled`.
+Chemin d’accès relatif à la propriété, par exemple : `myFeatureEnabled` ou `jcr:content/myFeatureEnabled`.
 
 * **value**
 Valeur pour laquelle la propriété doit être vérifiée, &quot; `true`&quot; ou &quot; `false`&quot;.
@@ -125,7 +125,7 @@ Ne prend pas en charge le filtrage.
 
 * **lowerBound**
 
-  Limite de date inférieure pour laquelle vérifier la propriété, par exemple `2014-10-01`.
+  Limite de date inférieure pour laquelle vérifier la propriété, par exemple : `2014-10-01`.
 
 * **lowerOperation**
 
@@ -159,7 +159,7 @@ Ne prend pas en charge l’extraction de facettes.
 
 ### fulltext {#fulltext}
 
-Recherche des termes dans l’index de texte intégral.
+Il recherche des termes dans l’index en texte intégral.
 
 Ne prend pas en charge le filtrage.
 
@@ -248,7 +248,7 @@ Prend en charge l’extraction de facettes. Fournit des buckets pour chaque code
 
 * **language**
 
-  Code langue ISO ; par exemple, « `de` »
+  Code de langue ISO, par exemple, &quot;`de`&quot;
 
 ### mainasset {#mainasset}
 
@@ -308,13 +308,13 @@ Prend en charge l’extraction de facettes de la même manière que le prédicat
 
 ### orderby {#orderby}
 
-Permet de trier les résultats. Si un classement par plusieurs propriétés est requis, ce prédicat doit être ajouté plusieurs fois à l’aide du préfixe numérique, tel que `1_orderby=first`, `2_oderby=second`.
+Permet de trier les résultats. Si un classement basé sur plusieurs propriétés est requis, ce prédicat doit être ajouté plusieurs fois à l’aide du préfixe numérique, tel que `1_orderby=first`, `2_oderby=second`.
 
 #### Propriétés {#properties-13}
 
 * **orderby**
 
-  Nom de propriété JCR indiqué par un caractère @ de début, par exemple `@jcr:lastModified` ou `@jcr:content/jcr:title`, ou un autre prédicat dans la requête, par exemple `2_property`, sur laquelle trier.
+  Nom de propriété JCR indiqué par un caractère @ en début, par exemple : `@jcr:lastModified` ou `@jcr:content/jcr:title`ou un autre prédicat dans la requête, par exemple : `2_property`, sur laquelle trier.
 
 * **trier**
 
@@ -358,7 +358,7 @@ Prend en charge l’extraction de facettes. Fournit des intervalles pour chaque 
 
 * **property**
 
-  Chemin d’accès relatif à la propriété, par exemple `jcr:title`.
+  Chemin d’accès relatif à la propriété, par exemple : `jcr:title`.
 
 * **value**
 
@@ -426,7 +426,7 @@ Par exemple :
 * `lowerBound=-1500` et `upperBound=5500` sélectionneraient tous les éléments entre 1 500 millisecondes dans le passé et 5 500 millisecondes dans le futur.
 * `lowerBound=1d` et `upperBound=2d` sélectionneraient tous les éléments du jour d’après-demain ;
 
-Il ne faut pas tenir compte des années bissextiles et tous les mois sont 30 jours.
+Il ne tient pas compte des années bissextiles et tous les mois comptent 30 jours.
 
 Ne prend pas en charge le filtrage.
 
@@ -460,7 +460,7 @@ Le nom « root » n’est jamais utilisé dans une requête ; il est implicit
 
 * **p.guessTotal**
 
-  Recommandé : évitez de calculer le total des résultats, qui peut s’avérer coûteux ; soit un nombre indiquant le total maximum à comptabiliser (par exemple 1 000, un nombre qui donne aux utilisateurs suffisamment de commentaires sur la taille brute et les nombres exacts pour des résultats plus modestes), soit &quot; `true`&quot; pour ne compter que le minimum nécessaire `p.offset` + `p.limit`.
+  Recommandé : évitez de calculer le total des résultats qui peut s’avérer coûteux ; soit un nombre indiquant le total maximum à comptabiliser (par exemple, 1 000, un nombre qui donne aux utilisateurs suffisamment de commentaires sur la taille brute et les nombres exacts pour des résultats plus modestes), soit &quot; `true`&quot; pour ne compter que le minimum nécessaire `p.offset` + `p.limit`.
 
 * **p.excerpt**
 
@@ -522,7 +522,7 @@ Prend en charge l’extraction de facettes. Fournit des buckets pour chaque bali
 
 * **tag**
 
-  Chemin d’accès au titre de la balise à rechercher, par exemple &quot;Propriétés de la ressource : orientation/paysage&quot;.
+  Chemin d’accès au titre de la balise à rechercher, par exemple, &quot;Propriétés de la ressource : orientation/paysage&quot;.
 
 * **N_value**
 
@@ -542,7 +542,7 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 
 * **tagid**
 
-  Identifiant de balise pour pouvoir rechercher, par exemple &quot; `properties:orientation/landscape`&quot;.
+  Identifiant de balise afin que vous puissiez rechercher, par exemple, &quot; `properties:orientation/landscape`&quot;.
 
 * **N_value**
 
@@ -578,7 +578,7 @@ Ne prend pas en charge l’extraction de facettes.
 
 ### type {#type}
 
-Limite les résultats à un type de noeud JCR spécifique, qu’il s’agisse d’un type de noeud principal ou d’un type de mixin. Il trouve également des sous-types de ce type de noeud. Les index de recherche de référentiel doivent couvrir les types de noeuds pour une exécution efficace.
+Limite les résultats à un type de noeud JCR spécifique, qu’il s’agisse d’un type de noeud principal ou d’un type de mixin. Il trouve également des sous-types de ce type de noeud. Les index de recherche de référentiel doivent couvrir les types de nœuds pour une exécution efficace.
 
 Prend en charge l’extraction de facettes. Fournit des intervalles pour chaque type unique dans les résultats.
 
@@ -586,4 +586,4 @@ Prend en charge l’extraction de facettes. Fournit des intervalles pour chaque 
 
 * **type**
 
-  Type de noeud ou nom de mixin à rechercher, par exemple `cq:Page`.
+  Type de noeud ou nom de mixin à rechercher, par exemple : `cq:Page`.

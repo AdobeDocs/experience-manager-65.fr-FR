@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 role: Developer
 exl-id: 6af148eb-427a-4b54-9c5f-8750736882d8
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3918'
+source-wordcount: '3914'
 ht-degree: 97%
 
 ---
@@ -69,7 +69,7 @@ Pour effectuer par programmation une opération de service Extensions Acrobat Re
 
 **Récupérer un document PDF**
 
-Vous devez récupérer un document de PDF pour appliquer des droits d’utilisation. Les documents PDF définis avec des droits d’utilisation contiennent un dictionnaire de droits d’utilisation. Lorsqu’Adobe Reader ouvre un document contenant un tel dictionnaire, il active uniquement les droits d’utilisation spécifiés dans le dictionnaire pour ce document. Si le document ne contient pas de dictionnaire des droits d’utilisation, le service Extensions Acrobat Reader DC en crée un. S’il contient déjà un dictionnaire, le service Extensions Acrobat Reader DC remplace les droits d’utilisation existants par ceux que vous spécifiez. Le dictionnaire spécifie les droits d’utilisation activés. Lorsqu’un utilisateur ouvre le document dans Adobe Reader, seuls les droits d’utilisation spécifiés dans le dictionnaire sont autorisés.
+Récupérez un document de PDF pour appliquer des droits d’utilisation. Les documents PDF définis avec des droits d’utilisation contiennent un dictionnaire de droits d’utilisation. Lorsqu’Adobe Reader ouvre un document contenant un tel dictionnaire, il active uniquement les droits d’utilisation spécifiés dans le dictionnaire pour ce document. Si le document ne contient pas de dictionnaire des droits d’utilisation, le service Extensions Acrobat Reader DC en crée un. S’il contient déjà un dictionnaire, le service Extensions Acrobat Reader DC remplace les droits d’utilisation existants par ceux que vous spécifiez. Le dictionnaire spécifie les droits d’utilisation activés. Lorsqu’un utilisateur ouvre le document dans Adobe Reader, seuls les droits d’utilisation spécifiés dans le dictionnaire sont autorisés.
 
 **Spécifier des droits d’utilisation à appliquer**
 
@@ -388,7 +388,7 @@ Avant d’effectuer par programmation une opération de service d’extensions A
 
 **Récupérer un document PDF défini avec des droits d’utilisation**
 
-Vous devez récupérer un document de PDF avec droits activés pour récupérer des informations sur les informations d’identification. Vous pouvez également récupérer des informations sur une information d’identification en spécifiant son alias. Toutefois, si vous souhaitez récupérer des informations sur des informations d’identification qui ont été utilisées pour appliquer des droits d’utilisation à un document PDF spécifique dont les droits sont activés, vous devez récupérer le document.
+Récupérez un document de PDF dont les droits sont activés pour récupérer des informations sur les informations d’identification. Vous pouvez également récupérer des informations sur une information d’identification en spécifiant son alias. Toutefois, si vous souhaitez récupérer des informations sur des informations d’identification qui ont été utilisées pour appliquer des droits d’utilisation à un document PDF spécifique dont les droits sont activés, vous devez récupérer le document.
 
 **Récupérer des informations sur les informations d’identification**
 

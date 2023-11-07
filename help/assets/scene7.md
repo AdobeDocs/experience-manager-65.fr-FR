@@ -11,10 +11,10 @@ feature: Dynamic Media Classic
 role: User, Admin
 mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: d947bd98b3a0f6fd79cde5b5b2fca23487077da3
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '2845'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -53,6 +53,7 @@ Vous pouvez publier des ressources numériques dans Dynamic Media Classic comm
 >[!NOTE]
 >
 >Experience Manager publie sur Dynamic Media Classic de manière asynchrone. Après avoir sélectionné **[!UICONTROL Publier]**, la publication de la ressource sur Dynamic Media Classic prend plusieurs secondes.
+>
 
 ## Composants Dynamic Media Classic {#scene-components}
 
@@ -130,8 +131,8 @@ Consultez également la section [Responsive design pour les pages web](/help/sit
 Bien que les options de configuration varient, les paramètres suivants sont communs à tous les composants [!UICONTROL Dynamic Media Classic] :
 
 * **[!UICONTROL Référence du fichier]** : accédez à un fichier que vous souhaitez référencer. La référence du fichier affiche l’URL de la ressource, et pas nécessairement l’ensemble de l’URL Dynamic Media Classic, avec les commandes et paramètres d’URL. Vous ne pouvez pas ajouter de commandes et de paramètres d’URL Dynamic Media Classic dans ce champ. Au lieu de cela, vous pouvez les ajouter à l’aide de la fonctionnalité correspondante dans le composant.
-* **[!UICONTROL Largeur]** : permet de définir la largeur.
-* **[!UICONTROL Hauteur]** : permet de définir la hauteur.
+* **[!UICONTROL Largeur]** - Permet de définir la largeur.
+* **[!UICONTROL Hauteur]** - Permet de définir la hauteur.
 
 Vous définissez ces options de configuration en ouvrant (double-clic) un composant Dynamic Media Classic, par exemple, lorsque vous ouvrez un composant **[!UICONTROL Zoom]** :
 
@@ -264,7 +265,7 @@ Si vous disposez de plusieurs configurations, Experience Manager affiche la [co
 >[!NOTE]
 >
 >* Les ressources figurant dans le dossier à la demande n’apparaissent pas dans le navigateur de contenu Dynamic Media Classic.
->* Lorsque l’[aperçu sécurisé est activé](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), les ressources publiées et non publiées sur Dynamic Media Classic apparaissent dans le navigateur de contenu de Dynamic Media Classic.
+>* Lorsque l’[aperçu sécurisé est activé](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), les ressources publiées et dépubliées sur Dynamic Media Classic apparaissent dans le navigateur de contenu de Dynamic Media Classic.
 >* Si vous ne voyez pas **[!UICONTROL Dynamic Media Classic]** ou l’icône **[!UICONTROL S7]** dans les options du navigateur de contenu, vous devez [configurer Dynamic Media Classic pour qu’il fonctionne avec Experience Manager](/help/sites-administering/scene7.md).
 >* Pour la vidéo, le navigateur de contenu Dynamic Media Classic prend en charge les éléments suivants :
 >
@@ -272,10 +273,9 @@ Si vous disposez de plusieurs configurations, Experience Manager affiche la [co
 >   * Vidéo MP4 unique
 >   * Vidéo F4V unique
 
-
 ### Parcours du contenu dans l’interface utilisateur optimisée pour les écrans tactiles {#browsing-content-in-the-touch-optimized-ui}
 
-Vous pouvez accéder au navigateur de contenu depuis l’interface utilisateur optimisée pour les écrans tactiles ou l’interface utilisateur classique. A l’heure actuelle, l’interface utilisateur optimisée pour les écrans comporte la limitation suivante :
+Vous pouvez accéder à l’explorateur de contenu dans l’IU optimisée pour les écrans tactiles ou l’IU classique. Actuellement, l’optimisation pour les écrans tactiles présente la limite suivante :
 
 * Les ressources FXG et Flash à partir de Dynamic Media Classic ne sont pas prises en charge.
 
@@ -287,21 +287,20 @@ Recherchez des ressources Dynamic Media Classic en sélectionnant **[!UICONTRO
 >* Si vous disposez d’un serveur d’aperçu sécurisé, le navigateur l’utilise pour effectuer le rendu des miniatures et des éléments.
 >
 
-
 ![chlimage_1-240](assets/chlimage_1-240.png)
 
 En outre, vous pouvez parcourir les informations de résolution, de taille, de nombre de jours depuis la modification et de nom de fichier en pointant la souris sur un élément du navigateur.
 
 ![chlimage_1-241](assets/chlimage_1-241.png)
 
-* Pour les ensembles de vidéos adaptables et les modèles, aucune information sur la taille n’est générée pour les miniatures.
-* Pour les ensembles de vidéos adaptables, aucune résolution n’est générée pour les miniatures.
+* Pour les visionneuses de vidéos adaptatives et les modèles, aucune information sur la taille n’est générée pour les miniatures.
+* Pour les visionneuses de vidéos adaptatives, aucune résolution n’est générée pour les miniatures.
 
 ### Recherche de ressources Dynamic Media Classic avec le navigateur de contenu {#searching-for-scene-assets-with-the-content-browser}
 
 La recherche de ressources dans Dynamic Media Classic est similaire à la recherche de ressources dans Experience Manager Assets. Cependant, lorsque vous effectuez une recherche, vous accédez à une vue à distance des ressources dans le système Dynamic Media Classic, sans les importer directement dans Experience Manager.
 
-Vous pouvez utiliser l’interface utilisateur classique ou l’interface utilisateur optimisée pour les écrans tactiles pour visualiser et rechercher des éléments. Selon l’interface, le mode de recherche est légèrement différent.
+Vous pouvez utiliser l’interface utilisateur classique ou l’interface utilisateur optimisée pour les écrans tactiles pour afficher et rechercher des ressources. Selon l’interface, la manière dont vous effectuez des recherches diffère légèrement.
 
 Lors d’une recherche dans l’une ou l’autre des interfaces, vous pouvez filtrer selon les critères suivants (présentés ici dans l’interface utilisateur optimisée pour les écrans tactiles) :
 
@@ -337,7 +336,6 @@ Par défaut, Experience Manager recherche le dossier sélectionné et tous les 
 >* La recherche d’une visionneuse de vidéos adaptatives s’étend au dossier et à tous les sous-dossiers mais uniquement si vous avez ajouté un mot-clé à la recherche. Si vous n’avez pas ajouté de mot-clé, Experience Manager ne recherche pas les sous-dossiers.
 >
 
-
-**[!UICONTROL Statut de publication]** - Vous pouvez filtrer les ressources selon le statut de publication : **[!UICONTROL Non publié]** ou **[!UICONTROL Publié]**. Si vous ne sélectionnez aucun **[!UICONTROL statut de publication]**, Experience Manager recherche par défaut tous les statuts de publication.
+**[!UICONTROL Statut de publication]** - Vous pouvez filtrer les ressources selon le statut de publication : **[!UICONTROL Dépublié]** ou **[!UICONTROL Publié]**. Si vous ne sélectionnez aucun **[!UICONTROL statut de publication]**, Experience Manager recherche par défaut tous les statuts de publication.
 
 ![chlimage_1-247](assets/chlimage_1-247.png)

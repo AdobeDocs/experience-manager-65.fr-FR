@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 85ebc05d-ce45-4bbb-b9cc-b21810d0d877
 docset: aem65
 exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '407'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '405'
+ht-degree: 92%
 
 ---
 
@@ -23,10 +23,10 @@ Cette section vous donne une vue d’ensemble des tâches principales que vous e
 Cela couvre :
 
 * [Prise en main](#getting-started)\
-   Explication de la séquence de base des événements dont vous avez besoin pour créer et publier votre première page.
+  Explication de la séquence de base des événements dont vous avez besoin pour créer et publier votre première page.
 
 * [Autres opérations](#further-actions)\
-   Suivie des nombreuses autres actions utilisables pour la création.
+  Suivie des nombreuses autres actions utilisables pour la création.
 
 ## Prise en main {#getting-started}
 
@@ -38,7 +38,7 @@ Le contenu de votre site web est conservé dans une structure en arborescence. P
 
 ### Création d’une page {#creating-a-new-page}
 
-Avant de procéder à la modification, vous devez [créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page).
+Avant de procéder à la modification, vous devez [création d’une page](/help/sites-authoring/managing-pages.md#creating-a-new-page).
 
 ### Ouvrir une page {#opening-a-page}
 
@@ -46,7 +46,7 @@ Pour de nombreuses actions, telles que la modification, vous devez [ouvrir une p
 
 ### Modifier une page {#editing-a-page}
 
-Si votre instance comporte déjà des pages existantes ou si vous venez de créer une page, vous pouvez [modifier une page](/help/sites-authoring/editing-content.md) à l’aide des actions suivantes :
+Si votre instance comporte déjà des pages ou si vous avez créé une page, vous pouvez : [modification d’une page](/help/sites-authoring/editing-content.md) par :
 
 * [Insertion d’un composant (paragraphe)](/help/sites-authoring/editing-content.md#inserting-a-component)
 * [Modifier/Configurer/Copier/Couper/Supprimer/Coller](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un composant

@@ -10,10 +10,10 @@ discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2477'
-ht-degree: 67%
+source-wordcount: '2475'
+ht-degree: 66%
 
 ---
 
@@ -86,7 +86,7 @@ Vous pouvez modifier un fragment de document texte existant en procédant comme 
 
 Vous pouvez personnaliser les fragments de document texte en insérant les propriétés du modèle de données de formulaire. En insérant des propriétés de modèle de données de formulaire dans le texte, vous pouvez extraire et remplir des données spécifiques au destinataire à partir de la source de données associée tout en prévisualisant une communication interactive. Pour plus d’informations sur le modèle de données de formulaire, consultez [Intégration de données AEM Forms](/help/forms/using/data-integration.md).
 
-Si vous avez spécifié un modèle de données de formulaire lors de la création d’un texte, les propriétés du modèle de données de formulaire apparaissent dans le volet gauche de l’éditeur de texte. Le modèle de données de formulaire spécifié devrait être le même pour le fragment de document texte ainsi que pour la communication interactive qui l’inclut.
+Si vous avez spécifié un modèle de données de formulaire lors de la création d’un texte, les propriétés du modèle de données de formulaire apparaissent dans le volet gauche de l’éditeur de texte. Le modèle de données de formulaire spécifié doit être le même pour le fragment de document texte et la communication interactive qui l’inclut.
 
 ![insertfdmelementtext](assets/insertfdmelementtext.png)
 

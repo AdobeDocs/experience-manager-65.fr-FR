@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1916'
+source-wordcount: '1912'
 ht-degree: 1%
 
 ---
@@ -74,7 +74,7 @@ Pour gérer les utilisateurs et les groupes d’utilisateurs enregistrés dans l
 
 | Si Membre du groupe... | Rôle de Principal |
 |---|---|
-| administrateurs | Le groupe administrateurs comprend les administrateurs système qui disposent de toutes les fonctionnalités d’un administrateur de la communauté ainsi que de la possibilité de gérer le groupe Administrateurs de la communauté. |
+| administrateurs | Le groupe administrateurs est constitué d’administrateurs système disposant de toutes les capacités d’un administrateur de la communauté et de la possibilité de gérer le groupe Administrateurs de la communauté . |
 | Administrateurs de la communauté | Le groupe Administrateurs de la communauté devient automatiquement membre de tous les sites de la communauté et de tous les groupes de la communauté créés sur le site. Le groupe Administrateurs est un membre initial du groupe Administrateurs de la communauté. Dans l’environnement de création, les administrateurs de communauté peuvent créer des sites de communauté, gérer des sites, gérer les membres (ils peuvent interdire des membres de la communauté) et modérer le contenu. |
 | Communauté &lt;*nom du site*> Gestionnaire de sites | Le gestionnaire de contenu du site de la communauté peut effectuer des AEM classiques de création, de création de contenu et de modification de pages pour un site de la communauté. |
 | Aucun | Un visiteur anonyme du site ne peut pas accéder à l’environnement de création. |

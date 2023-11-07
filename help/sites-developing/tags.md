@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 2d0835e0-5602-49a9-b9ad-636ce5a8ad2a
 feature: Tagging
 exl-id: 6db75405-d957-4714-b75a-9b71c17c89d6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '98'
+ht-degree: 81%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Le balisage permet de catégoriser et d’organiser le contenu. Les balises peuvent être classées par un espace de noms et par une taxonomie.
 
-* Consultez la section [Administration des balises](/help/sites-administering/tags.md) pour savoir comment créer et gérer des balises et déterminer à quel contenu elles ont été appliquées.
+* Voir [Administration des balises](/help/sites-administering/tags.md) pour plus d’informations sur la création et la gestion des balises, ainsi que sur les balises de contenu qui ont été appliquées.
 * Pour plus d’informations sur le balisage du contenu, consultez la section [Utilisation de balises](/help/sites-authoring/tags.md).
 
 Les informations suivantes sont disponibles pour l’équipe de développement :

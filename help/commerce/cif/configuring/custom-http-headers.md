@@ -2,10 +2,10 @@
 title: En-têtes HTTP personnalisés
 description: Découvrez comment configurer des en-têtes HTTP personnalisés dans Adobe Experience Manager Commerce.
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 95%
+source-wordcount: '273'
+ht-degree: 82%
 
 ---
 
@@ -26,11 +26,11 @@ Pour configurer les en-têtes HTTP personnalisés, vous devez d’abord les déf
 
 Vous pouvez configurer les valeurs des en-têtes HTTP dans la page Configuration du service cloud pour votre projet :
 
-1. Accédez à la page de configuration du service cloud dans Outils -> Cloud Services -> Configuration CIF.
-1. Ouverture d’une configuration existante ou création d’une nouvelle.
+1. Accédez à la page de configuration du Cloud Service dans Outils > Cloud Services > Configuration CIF.
+1. Ouvrez une configuration existante ou créez-en une.
 1. Accédez à l’onglet « Avancé » et recherchez le champ multiple « En-têtes HTTP personnalisés ». Vous pouvez sélectionner les en-têtes que vous avez définis précédemment et leur attribuer des valeurs.
 
-Les composants qui utilisent la configuration de service cloud ci-dessus enverront ces en-têtes HTTP avec chaque requête GraphQL.
+Les composants qui utilisent la configuration de service cloud ci-dessus envoient ces en-têtes HTTP avec chaque demande GraphQL.
 
 ## Restrictions {#restrictions}
 

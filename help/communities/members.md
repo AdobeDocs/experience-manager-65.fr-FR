@@ -7,9 +7,9 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '956'
 ht-degree: 4%
 
 ---
@@ -145,7 +145,7 @@ Le membre peut être ajouté à un ou plusieurs groupes de membres. Saisissez to
 
 ### Onglet BADGES {#badges-tab}
 
-La variable `BADGES` panneau permet d’attribuer manuellement des badges et de les révoquer. Les badges peuvent être pour les rôles attribués ainsi que pour les badges généralement gagnés.
+La variable `BADGES` panneau permet d’attribuer manuellement des badges et de les révoquer. Les badges peuvent concerner les rôles attribués et les badges généralement gagnés.
 
 Voir aussi [Notation et badges](implementing-scoring.md).
 

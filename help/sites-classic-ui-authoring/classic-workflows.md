@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: b11f0e4c-4dec-4b66-9f54-a0aa13ac77b9
 exl-id: 298fcfeb-dc8d-4edc-8743-83c0e5e5bc08
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '208'
 ht-degree: 83%
 
 ---
@@ -20,8 +20,8 @@ ht-degree: 83%
 AEM Workflows vous permet d’automatiser une série d’étapes exécutées sur une page ou une ressource. Par exemple, lors de la publication, un éditeur doit réviser le contenu, avant qu’un administrateur du site active la page. Un workflow qui automatise cet exemple avertit chaque participant lorsqu’il est temps qu’il effectue sa tâche :
 
 1. L’auteur applique le workflow à la page.
-1. L’éditeur reçoit une tâche qui indique qu’il est nécessaire de réviser le contenu de la page. Il indique que sa tâche est terminée, une fois que c’est le cas.
-1. L’administrateur ou l’administratrice du site reçoit ensuite une tâche qui demande l’activation de la page. Il indique que sa tâche est terminée, une fois que c’est le cas.
+1. L’éditeur ou l’éditrice reçoit une tâche qui indique qu’il est nécessaire de réviser le contenu de la page. Il ou elle indique que sa tâche est terminée, une fois que c’est le cas.
+1. L’administrateur ou l’administratrice du site reçoit ensuite une tâche qui demande l’activation de la page. Il ou elle indique que sa tâche est terminée, une fois que c’est le cas.
 
 En règle générale :
 

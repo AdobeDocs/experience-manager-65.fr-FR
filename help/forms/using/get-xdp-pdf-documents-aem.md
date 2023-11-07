@@ -11,10 +11,10 @@ discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 role: Admin
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '671'
-ht-degree: 31%
+ht-degree: 32%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 31%
 Vous pouvez importer vos formulaires de votre système de fichiers local vers le référentiel CRX, en les transférant dans AEM Forms. L’opération de chargement est prise en charge pour les types de ressources suivants :
 
 * Modèles de formulaire (formulaires XFA)
-* PDF forms
+* Formulaires PDF
 * Document (documents de PDF plats)
 
 Vous pouvez charger les types de ressource pris en charge individuellement ou sous la forme d’une archive ZIP. Vous pouvez télécharger une ressource de type `Resource`, uniquement avec un formulaire XFA dans une archive ZIP.
@@ -81,7 +81,7 @@ Les champs d’un formulaire adaptatif faisant référence à un formulaire XFA 
 La suppression d’un modèle de formulaire corrompt le formulaire adaptatif ou le modèle de formulaire dépendant. Un tel formulaire adaptatif est parfois appelé de manière informelle &quot;formulaire sale&quot;. Dans l’interface utilisateur d’AEM Forms, vous pouvez trouver les formulaires &quot;sales&quot; de deux manières différentes.
 
 * Une icône d’avertissement s’affiche sur la miniature du formulaire adaptatif dans la liste des ressources et le message suivant s’affiche lorsque vous placez le pointeur de la souris sur l’icône d’avertissement.\
-  `Schema/Form Template for this adaptive form has been updated so please go to Authoring mode and rebase it with new version.`
+  `Schema/Form Template for this adaptive form has been updated so go to Authoring mode and rebase it with new version.`
 
 ![Avertissement de formulaire adaptatif désynchronisé après la mise à jour du formulaire DFA associé](assets/dirtyaf.png)
 

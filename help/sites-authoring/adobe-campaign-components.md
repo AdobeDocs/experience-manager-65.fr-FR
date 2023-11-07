@@ -1,18 +1,16 @@
 ---
 title: Intégration aux composants Adobe Campaign
 description: Lors de l’intégration à Adobe Campaign, des composants sont disponibles pour l’envoi de newsletters et de formulaires.
-uuid: a858d5ca-aa6e-4bde-92db-a6dcd8b48ae6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2836'
-ht-degree: 98%
+source-wordcount: '2835'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +22,7 @@ Lors de l’intégration à Adobe Campaign, des composants sont disponibles pour
 >
 >Les composants d’e-mail AEM ont été abandonnés. En raison de la nature de l’e-mail, en particulier son contenu et son style, les composants d’e-mail fournis prêts-à-l’emploi par AEM ne sont que rarement réutilisés par les clients car ils ont besoin d’implémenter des styles personnalisés dans les composants requis pour les projets.
 >
->Les composants d’e-mail peuvent être implémentés au niveau du projet. Les composants d’e-mail AEM obsolètes illustrent la manière dont cela peut être réalisé. Toutefois, ces composants obsolètes ne doivent pas être utilisés dans les projets.
+>Les composants d’e-mail peuvent être implémentés au niveau du projet. Les composants d’e-mail AEM obsolètes illustrent la manière dont cela peut être réalisé. Toutefois, n’utilisez pas ces composants obsolètes sur les projets.
 
 ## Composants Newsletter Adobe Campaign {#adobe-campaign-newsletter-components}
 
@@ -217,7 +215,7 @@ Faites glisser une image à partir de l’Outil de recherche de contenu ou cliqu
 * **Propriétés de l’image** (**Propriétés d’image avancées**) Permet de spécifier les éléments suivants :
 
    * **Titre**
-Titre du bloc de texte ; il s’affiche lorsque l’utilisateur pointe dessus avec la souris.
+Titre du bloc ; il est affiché en pointant la souris dessus.
 
    * **Texte de remplacement**
 Texte de remplacement à afficher lorsque l’image ne peut pas être affichée.
@@ -388,7 +386,7 @@ L’exemple ci-dessous présente le composant Case à cocher (Campaign) affiché
 
 ### Champ de date (Campaign) et champ de date/HTML 5 (Campaign) {#date-field-campaign-and-date-field-html-campaign}
 
-Utilisez le champ date pour permettre aux destinataires d’indiquer une date ; par exemple, vous pourriez souhaiter que les destinataires indiquent leur date de naissance. Le format des dates correspond au format utilisé dans votre instance Adobe Campaign.
+Utilisez le champ date pour permettre aux destinataires d&#39;indiquer une date, par exemple si vous souhaitez que les destinataires indiquent leur date de naissance. Le format des dates correspond au format utilisé dans votre instance Adobe Campaign.
 
 Outre les [paramètres communs à la plupart des composants Adobe Campaign](#settings-common-to-most-components), vous pouvez configurer les éléments suivants :
 

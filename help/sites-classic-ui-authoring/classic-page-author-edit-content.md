@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1832'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -79,7 +79,7 @@ Pour insérer un nouveau composant :
 
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
-1. La liste des composants (types de paragraphe) disponibles est affichée dans le sidekick et dans la barre d’outils **Insérer un nouveau composant**. Ils peuvent être divisés en différentes sections (par exemple, Général, Colonnes, etc.), qui peuvent être développées selon les besoins.
+1. La liste des composants (types de paragraphe) disponibles est affichée dans le sidekick et dans la barre d’outils **Insérer un nouveau composant**. Elles peuvent être divisées en différentes sections (par exemple, Général, Colonnes, etc.), qui peuvent être développées selon les besoins.
 
    Ces choix peuvent varier en fonction de votre environnement de production. Pour plus d’informations sur les composants, voir [Composants par défaut](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
@@ -87,7 +87,7 @@ Pour insérer un nouveau composant :
 
 ### Insérer un composant à l’aide de l’outil de recherche de contenu {#inserting-a-component-using-the-content-finder}
 
-Vous pouvez également ajouter un nouveau composant à la page en faisant glisser une ressource depuis l’[outil de recherche de contenu](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Cela crée automatiquement un nouveau composant du type approprié contenant la ressource.
+Vous pouvez également ajouter un nouveau composant à la page en faisant glisser une ressource depuis l’[outil de recherche de contenu](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Cela crée automatiquement un composant du type approprié contenant la ressource.
 
 Cette procédure est valide pour les types de ressources suivants (certains dépendent du système de pages/paragraphes) :
 
@@ -177,7 +177,7 @@ Les composants hérités peuvent être le produit de divers scénarios :
 * De la [Gestion multisite](/help/sites-administering/msm.md), également en combinaison avec la [génération de modèles automatiques](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
 * Des [lancements](/help/sites-classic-ui-authoring/classic-launches.md) (quand basés sur une live copy)
-* Des composants spécifiques, par exemple le système de paragraphes hérité dans Geometrixx
+* Composants spécifiques, par exemple le système de paragraphes hérité dans Geometrixx.
 
 Vous pouvez annuler (puis réactiver) l’héritage. Selon le composant, vous pouvez effectuer cette opération depuis :
 

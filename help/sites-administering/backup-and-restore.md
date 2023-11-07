@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2285'
-ht-degree: 67%
+source-wordcount: '2283'
+ht-degree: 66%
 
 ---
 
@@ -119,7 +119,7 @@ Pour créer une sauvegarde :
 1. Connectez-vous à AEM en tant qu’administrateur.
 
 1. Sélectionnez **Outils > Opérations > Sauvegarde.**
-1. Cliquez sur **Créer**. La console de sauvegarde s’affiche.
+1. Cliquez sur **Créer**. La console de sauvegarde s’ouvre.
 
    ![chlimage_1-1](assets/chlimage_1-1a.png)
 
@@ -154,7 +154,7 @@ Pour créer une sauvegarde :
 
 ### Automatisation AEM sauvegarde en ligne {#automating-aem-online-backup}
 
-Si possible, la sauvegarde en ligne doit être exécutée lorsque la charge du système est faible, par exemple le matin.
+Si possible, la sauvegarde en ligne doit être exécutée lorsque la charge du système est faible, par exemple, le matin.
 
 Les sauvegardes peuvent être automatisées à l’aide du client HTTP `wget` ou `curl`. Vous trouverez ci-dessous des exemples d’automatisation de la sauvegarde à l’aide de curl.
 
@@ -189,7 +189,7 @@ curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.g
 
 >[!CAUTION]
 >
->Lorsque vous utilisez un autre serveur d’applications (comme JBoss), la sauvegarde en ligne risque de ne pas fonctionner comme prévu, car le répertoire cible n’est pas accessible en écriture. Dans ce cas, veuillez contacter l’assistance.
+>Lorsque vous utilisez un autre serveur d’applications (comme JBoss), la sauvegarde en ligne risque de ne pas fonctionner comme prévu, car le répertoire cible n’est pas accessible en écriture. Dans ce cas, contactez l’assistance.
 
 >[!NOTE]
 >
@@ -216,7 +216,7 @@ La sauvegarde en ligne utilise l’algorithme suivant :
 
 1. Lors de la création d’un fichier ZIP, la première étape consiste à créer ou à chercher le répertoire cible.
 
-   * Si vous effectuez une sauvegarde dans un fichier ZIP, un répertoire temporaire est créé. Le nom du répertoire commence par `backup.` et se termine par `.temp` ; par exemple `backup.f4d3.temp`.
+   * Si vous effectuez une sauvegarde dans un fichier ZIP, un répertoire temporaire est créé. Le nom du répertoire commence par `backup.` et se termine par `.temp` ; par exemple, `backup.f4d3.temp`.
    * Si vous effectuez une sauvegarde dans un répertoire, le nom spécifié dans le chemin d’accès cible est utilisé. Un répertoire existant peut être utilisé, sinon un nouveau répertoire sera créé.
 
       Un fichier vide nommé « `backupInProgress.txt` » est créé dans le répertoire cible au début de la sauvegarde. Ce fichier est supprimé lorsque la sauvegarde est terminée.

@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 98%
+source-wordcount: '981'
+ht-degree: 93%
 
 ---
 
@@ -36,7 +36,7 @@ Pour ce faire, le plus facile consiste à octroyer au groupe **projects-users** 
 
 ## Création d’un projet {#creating-a-project}
 
-Suivez ces étapes pour créer un projet.
+Pour créer un projet, procédez comme suit.
 
 1. Dans la console **Projets**, appuyez/cliquez sur **Créer** pour ouvrir l’assistant **Créer un projet**.
 1. Sélectionnez le modèle, puis cliquez sur **Suivant**. Vous pouvez en savoir plus sur les modèles de projet standard [ici.](/help/sites-authoring/projects.md#project-templates)
@@ -72,15 +72,15 @@ Pour ajouter des éléments à une mosaïque, procédez comme suit :
 
 1. Dans **Projets**, accédez au projet, puis cliquez sur l’icône en forme de chevron descendant en haut à droite de la mosaïque à laquelle vous souhaitez ajouter un élément et sélectionnez l’option appropriée.
 
-   * L’option dépend du type de mosaïque. Par exemple, cela peut être **Créer une tâche** pour la mosaïque **Tâches** ou **Démarrer le workflow** pour la mosaïque **Workflows**.
+   * L’option dépend du type de mosaïque. Par exemple, elle peut être **Créer une tâche** pour le **Tâche** ou **Démarrer le processus** pour le **Workflows** mosaïque.
 
    ![Chevron sur la mosaïque](assets/project-tile-create-task.png)
 
-1. Ajoutez un élément à la mosaïque comme vous le feriez pour créer une mosaïque. Les mosaïques de projets sont décrites [ici.](/help/sites-authoring/projects.md#project-tiles)
+1. Ajoutez l’élément à la mosaïque comme vous le feriez lors de la création d’une mosaïque. Les mosaïques de projets sont décrites [ici.](/help/sites-authoring/projects.md#project-tiles)
 
 ## Affichage des informations du projet {#viewing-project-info}
 
-L’objectif principal des projets est de regrouper les informations associées dans un seul endroit afin de les rendre plus accessibles et exploitables. Vous pouvez accéder à ces informations de différentes manières.
+L’objectif principal des projets est de regrouper les informations associées dans un seul endroit afin de les rendre plus accessibles et exploitables. Vous pouvez accéder à ces informations de plusieurs façons.
 
 ### Ouverture d’une mosaïque {#opening-a-tile}
 

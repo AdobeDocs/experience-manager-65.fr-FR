@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '5182'
 ht-degree: 46%
@@ -742,7 +742,7 @@ La définition de `preprocessing` peut être appliquée à l’un des éléments
 
   Si nécessaire, une définition distincte peut être fournie pour chaque agrégation.
 
-  Pour spécifier un prétraitement explicite des valeurs agrégées, les définitions de prétraitement doivent résider sur un nœud enfant `aggregated` correspondant (`apply/aggregated`, `applyAfter/aggregated`). Si un prétraitement explicite pour des agrégats distincts est requis, la définition de prétraitement se trouve sur un noeud enfant dont le nom est l’agrégat correspondant (par exemple `apply/aggregated/min/max` ou d’autres agrégats).
+  Pour spécifier un prétraitement explicite des valeurs agrégées, les définitions de prétraitement doivent résider sur un nœud enfant `aggregated` correspondant (`apply/aggregated`, `applyAfter/aggregated`). Si un prétraitement explicite pour des agrégats distincts est requis, la définition de prétraitement se trouve sur un noeud enfant dont le nom est l’agrégat correspondant (par exemple, `apply/aggregated/min/max` ou d’autres agrégats).
 
 Vous pouvez spécifier l’une des options suivantes à utiliser lors du prétraitement :
 
@@ -1337,7 +1337,7 @@ Pour illustrer ces étapes, l’exemple suivant définit un rapport qui réperto
    ```xml
    N:osgireport [cq:Template]
        P:allowedPaths [String[]] = "/etc/reports(/.*)?"
-       P:jcr:description [String] = "Use this report generator to create a new OSGi report."
+       P:jcr:description [String] = "Use this report generator to create an OSGi report."
        P:jcr:title [String] = "OSGi Report Template"
        P:ranking [Long] = 100
        P:shortTitle [String] = "OSGi Report"

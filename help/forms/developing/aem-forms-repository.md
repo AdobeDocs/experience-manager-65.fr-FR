@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '9109'
-ht-degree: 99%
+source-wordcount: '9095'
+ht-degree: 97%
 
 ---
 
@@ -30,13 +30,13 @@ Prenons l’exemple de l’application Forms suivante nommée *Applications/Form
 
 ![www_www_formrepository](assets/ww_ww_formrepository.png)
 
-Notez qu’un fichier nommé Loan.xdp se trouve dans le dossier Forms. Pour accéder à cette conception de formulaire, vous devez spécifier le chemin d’accès complet (y compris la version) : `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+Notez qu’il existe un fichier nommé Loan.xdp dans le dossier Forms. Pour accéder à cette conception de formulaire, vous devez spécifier le chemin d’accès complet (y compris la version) : `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
 
 >[!NOTE]
 >
 >Pour plus d’informations sur la création d’une application Forms à l’aide de Workbench, voir [Aide de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).
 
-Le chemin d’accès à une ressource située dans le référentiel AEM Forms est le suivant :
+Le chemin d’accès à une ressource dans le référentiel AEM Forms est le suivant :
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
@@ -50,7 +50,7 @@ Les valeurs suivantes présentent quelques exemples de valeurs URI :
 >
 >Vous pouvez parcourir le référentiel AEM Forms à l’aide d’un navigateur web. Pour parcourir le référentiel, saisissez l’URL suivante dans un navigateur web `https://[server name]:[server port]/repository`. Vous pouvez vérifier les résultats de démarrage rapide associés à la section Utilisation du référentiel AEM Forms à l’aide d’un navigateur web. Par exemple, si vous ajoutez du contenu au référentiel AEM Forms, vous pouvez afficher le contenu dans un navigateur web. (Voir [Démarrage rapide (mode SOAP) : écrire une ressource en utilisant l’API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
 
-L’API Repository fournit un certain nombre d’opérations que vous pouvez utiliser pour stocker et récupérer des informations du référentiel. Par exemple, vous pouvez obtenir une liste des ressources ou récupérer des ressources spécifiques stockées dans le référentiel lorsqu’une ressource est nécessaire dans le cadre du traitement d’une application.
+L’API de référentiel fournit plusieurs opérations que vous pouvez utiliser pour stocker et récupérer des informations du référentiel. Par exemple, vous pouvez obtenir une liste des ressources ou récupérer des ressources spécifiques stockées dans le référentiel lorsqu’une ressource est nécessaire dans le cadre du traitement d’une application.
 
 >[!NOTE]
 >
@@ -305,7 +305,7 @@ Appelez la méthode du service Repository pour écrire la ressource, en spécifi
 
 1. Enregistrer la ressource dans le dossier cible
 
-   Appelez la méthode `writeResource` de l’objet `ResourceRepositoryClient` et transmettez l’URI du dossier, ainsi que l’objet `Resource`.
+   Appeler la variable `ResourceRepositoryClient` de `writeResource` et transmettez l’URI du dossier, ainsi que la variable `Resource` .
 
 **Voir également**
 
@@ -354,7 +354,7 @@ Appelez la méthode du service Repository pour écrire la ressource, en spécifi
 
 1. Enregistrer la ressource dans le dossier cible
 
-   Appelez la méthode `writeResource` de lʼobjet `RepositoryServiceService` et transmettez lʼURI du dossier, ainsi que lʼobjet `Resource`. Transmettez `null` comme valeur pour les deux autres paramètres.
+   Appeler la variable `RepositoryServiceService` de `writeResource` et transmettez l’URI du dossier, ainsi que la variable `Resource` . Transmettez `null` pour les deux autres paramètres.
 
 **Voir également**
 
@@ -542,7 +542,7 @@ Lire une ressource à l’aide de l’API du service Repository (Java) :
 
 1. Spécifier l’URI de la ressource à lire
 
-   Spécifiez une valeur de chaîne qui représente l’URI de la ressource à récupérer. Par exemple, si la ressource s’appelle *testResource* et se trouve dans un dossier nommé *testFolder*, spécifiez `/testFolder/testResource`.
+   Spécifiez une valeur de chaîne qui représente l’URI de la ressource à récupérer. Par exemple, en supposant que la ressource soit nommée *testResource* qui se trouve dans un dossier nommé *testFolder*, spécifiez `/testFolder/testResource`.
 
 1. Lire la ressource
 
@@ -716,7 +716,7 @@ Vous pouvez récupérer les ressources associées pour déterminer les dépendan
 
 **Instructions de requête**
 
-Une *requête* contient une ou plusieurs instructions associées à des conditions de façon logique. Une *instruction* est constituée d’un opérande gauche, d’un opérateur et d’un opérande droit. De plus, vous pouvez spécifier l’ordre de tri à utiliser pour les résultats de la recherche. Lʼ&#x200B;*ordre de tri* contient des informations équivalentes à une clause SQL `ORDER BY` et est composé dʼéléments qui contiennent les attributs sur lesquels la recherche a été basée, ainsi quʼune valeur indiquant si lʼordre ascendant ou descendant doit être utilisé.
+Une *requête* contient une ou plusieurs instructions associées à des conditions de façon logique. Une *instruction* est constituée d’un opérande gauche, d’un opérateur et d’un opérande droit. De plus, vous pouvez spécifier l’ordre de tri à utiliser pour les résultats de la recherche. La variable *ordre de tri* contient des informations équivalentes à un SQL `ORDER BY` La clause et est composée d’éléments qui contiennent les attributs sur lesquels la recherche a été basée et d’une valeur indiquant si l’ordre croissant ou décroissant doit être utilisé.
 
 Vous pouvez rechercher des ressources par programmation à l’aide de l’API Java du service Repository. Actuellement, il n’est pas possible d’utiliser l’API de service web pour rechercher des ressources.
 
@@ -921,7 +921,7 @@ Créez des ressources de relation à l’aide de l’API Java Repository Service
 
 1. Spécification des URI des ressources à relier
 
-   Spécifiez les URI des ressources à relier. Dans ce cas, comme les ressources sont appelées `testResource1` et `testResource2` et se trouvent dans le dossier nommé `testFolder`, leurs URI sont `"/testFolder/testResource1"` et `"/testFolder/testResource2"`. Les URI sont stockés en tant qu’objets `java.lang.String`. Dans cet exemple, les ressources sont d’abord écrites dans le référentiel et leurs URI sont récupérés. Pour plus d’informations sur l’écriture d’une ressource, voir [Écriture de ressources](aem-forms-repository.md#writing-resources).
+   Spécifiez les URI des ressources à relier. Dans ce cas, car les ressources sont nommées `testResource1` et `testResource2` et se trouvent dans le dossier nommé `testFolder`, leurs URI sont `"/testFolder/testResource1"` et `"/testFolder/testResource2"`. Les URI sont stockés en tant qu’objets `java.lang.String`. Dans cet exemple, les ressources sont d’abord écrites dans le référentiel et leurs URI sont récupérés. Pour plus d’informations sur l’écriture d’une ressource, voir [Écriture de ressources](aem-forms-repository.md#writing-resources).
 
 1. Création de la relation
 
@@ -965,7 +965,7 @@ Créez des ressources de relation à l’aide de l’API Repository (Web Service
 
 1. Spécification des URI des ressources à relier
 
-   Spécifiez les URI des ressources à relier. Dans ce cas, comme les ressources sont nommées `testResource1` et `testResource2` et se trouvent dans le dossier nommé `testFolder`, leurs URI sont `"/testFolder/testResource1"` et `"/testFolder/testResource2"`. Lors de l’utilisation d’un langage conforme à Microsoft .NET Framework (C#, par exemple), les URI sont stockés sous la forme d’un objet `System.String`. Dans cet exemple, les ressources sont d’abord écrites dans le référentiel et leurs URI sont récupérés. Pour plus d’informations sur l’écriture d’une ressource, voir [Écriture de ressources](aem-forms-repository.md#writing-resources).
+   Spécifiez les URI des ressources à relier. Dans ce cas, car les ressources sont nommées `testResource1` et `testResource2` et se trouvent dans le dossier nommé `testFolder`, leurs URI sont `"/testFolder/testResource1"` et `"/testFolder/testResource2"`. Lors de l’utilisation d’un langage conforme à Microsoft .NET Framework (C#, par exemple), les URI sont stockés sous la forme d’un objet `System.String`. Dans cet exemple, les ressources sont d’abord écrites dans le référentiel et leurs URI sont récupérés. Pour plus d’informations sur l’écriture d’une ressource, voir [Écriture de ressources](aem-forms-repository.md#writing-resources).
 
 1. Création de la relation
 
@@ -999,7 +999,7 @@ Créez des ressources de relation à l’aide de l’API Repository (Web Service
 
 Vous pouvez verrouiller une ressource ou un ensemble de ressources pour une utilisation exclusive par un utilisateur particulier ou une utilisation partagée entre plusieurs utilisateurs. Un verrou partagé est une indication que quelque chose va se produire avec la ressource, mais cela n’empêche personne d’autre de prendre des mesures avec cette ressource. Un verrou partagé doit être considéré comme un mécanisme de signalisation. Un verrou exclusif signifie que l’utilisateur qui a verrouillé la ressource va la modifier. Le verrou garantit que personne d’autre ne peut le faire jusqu’à ce que l’utilisateur n’ait plus besoin d’accéder à la ressource et ait libéré le verrou. Si un administrateur de référentiel déverrouille une ressource, tous les verrous exclusifs et partagés de cette ressource sont automatiquement supprimés. Ce type d’action est destiné aux situations dans lesquelles un utilisateur n’est plus disponible et n’a pas déverrouillé la ressource.
 
-Lorsqu’une ressource est verrouillée, une icône de verrouillage s’affiche lorsque vous affichez l’onglet Ressources situé dans Workbench, comme illustré ci-dessous.
+Lorsqu’une ressource est verrouillée, une icône de verrouillage s’affiche lorsque vous affichez l’onglet Ressources dans Workbench, comme illustré ci-dessous.
 
 ![lr_lr_lockrepository](assets/lr_lr_lockrepository.png)
 

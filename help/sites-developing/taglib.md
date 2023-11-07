@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2460'
 ht-degree: 51%
 
 ---
@@ -35,7 +35,7 @@ La variable globale déclare également la variable [Bibliothèque Sling](/help/
 
 ### &lt;ui:includeClientLib> {#ui-includeclientlib}
 
-La balise `<ui:includeClientLib>` inclut une bibliothèque cliente HTML AEM qui peut être de type js, css ou thème. Pour plusieurs inclusions de différents types, par exemple js et css, cette balise doit être utilisée plusieurs fois dans le fichier jsp. Cette balise est une enveloppe dite de commodité (convenience wrapper) utilisée autour de l’interface de service ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
+La balise `<ui:includeClientLib>` inclut une bibliothèque cliente HTML AEM qui peut être de type js, css ou thème. Pour plusieurs inclusions de différents types, par exemple, js et css, cette balise doit être utilisée plusieurs fois dans le fichier jsp. Cette balise est une enveloppe dite de commodité (convenience wrapper) utilisée autour de l’interface de service ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
 
 Elle présente les attributs suivants :
 
@@ -117,7 +117,7 @@ Il présente les attributs facultatifs ci-dessous :
 
 **tagName** - Nom de l’élément qui entoure une sortie non vide. Cet attribut est défini, par défaut, sur DIV.
 
-**espace réservé** - Valeur par défaut à utiliser pour le texte nul ou vide en mode d’édition, c’est-à-dire l’espace réservé. Notez que la vérification par défaut est effectuée après la mise en forme et l’échappement facultatifs, c’est-à-dire qu’elle est écrite telle quelle dans la sortie. Cet attribut est défini, par défaut, sur :
+**espace réservé** - Valeur par défaut à utiliser pour le texte nul ou vide en mode d’édition, c’est-à-dire l’espace réservé. La vérification par défaut est effectuée après la mise en forme et l’échappement facultatifs, c’est-à-dire qu’elle est écrite telle quelle dans la sortie. Cet attribut est défini, par défaut, sur :
 
 `<div><span class="cq-text-placeholder">&para;</span></div>`
 
@@ -256,7 +256,7 @@ Devriez-vous utiliser `<cq:include>` ou `<sling:include>` ?
 >
 >`<cq:includeClientLib>` Obsolète depuis AEM 5.6. [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) doit être utilisé à la place.
 
-La balise `<cq:includeClientLib>` inclut une bibliothèque cliente HTML AEM qui peut être de type js, css ou theme. Pour plusieurs inclusions de différents types, par exemple js et css, cette balise doit être utilisée plusieurs fois dans le fichier jsp. Cette balise est une enveloppe dite de commodité (convenience wrapper) utilisée autour de l’interface de service `com.day.cq.widget.HtmlLibraryManager`.
+La balise `<cq:includeClientLib>` inclut une bibliothèque cliente HTML AEM qui peut être de type js, css ou theme. Pour plusieurs inclusions de différents types, par exemple, js et css, cette balise doit être utilisée plusieurs fois dans le fichier jsp. Cette balise est une enveloppe dite de commodité (convenience wrapper) utilisée autour de l’interface de service `com.day.cq.widget.HtmlLibraryManager`.
 
 Elle présente les attributs suivants :
 
@@ -545,7 +545,7 @@ Elle présente les attributs suivants :
 
 >[!NOTE]
 >
->La résolution de la ressource et du script qui sont inclus avec la balise `<sling:include>` est la même que pour une résolution d’URL sling ordinaire. Par défaut, les sélecteurs, l’extension, etc. de la requête actuelle sont également utilisés pour le script inclus. Ils peuvent être modifiés à l’aide des attributs de balise : par exemple `replaceSelectors="foo.bar"` permet de remplacer les sélecteurs.
+>La résolution de la ressource et du script qui sont inclus avec la balise `<sling:include>` est la même que pour une résolution d’URL sling ordinaire. Par défaut, les sélecteurs, l’extension, etc. de la requête actuelle sont également utilisés pour le script inclus. Ils peuvent être modifiés à l’aide des attributs de balise : par exemple, `replaceSelectors="foo.bar"` permet de remplacer les sélecteurs.
 
 Exemples :
 
@@ -583,7 +583,7 @@ La balise `<sling:defineObjects>` expose les objets de script suivants, utilisé
 
 **slingResponse**
 
-* Objet SlingHttpServletResponse permettant d’accéder à la réponse HTTP créée par le serveur. Il s’agit de la même chose que la valeur HttpServletResponse à partir de laquelle elle s’étend.**requête**
+* Objet SlingHttpServletResponse permettant d’accéder à la réponse HTTP créée par le serveur. Il s’agit de la même chose que la valeur HttpServletResponse à partir de laquelle elle s’étend.**Requête.**
 * Objet de requête JSP standard qui est un objet HttpServletRequest pur.**réponse**
 * Objet de réponse JSP standard qui est un objet HttpServletResponse pur.
 

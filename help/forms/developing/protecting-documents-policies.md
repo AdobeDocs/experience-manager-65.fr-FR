@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '15485'
-ht-degree: 83%
+source-wordcount: '15469'
+ht-degree: 82%
 
 ---
 
@@ -293,7 +293,7 @@ Créez une politique à l’aide de l’API Document Security (Web Service) :
    * Créez un objet `PolicySpec` en utilisant son constructeur.
    * Définissez le nom de la stratégie en attribuant une valeur de chaîne au `PolicySpec` de `name` membre de données.
    * Définissez la description de la stratégie en attribuant une valeur de chaîne à la variable `PolicySpec` de `description` membre de données.
-   * Spécifiez le jeu de stratégies auquel appartient la stratégie en attribuant une valeur string à la variable `PolicySpec` de `policySetName` membre de données. Vous devez spécifier un nom de jeu de politiques existant. (Vous pouvez spécifier `null` pour cette valeur de paramètre qui entraîne l’ajout de la politique à *Mes politiques*.)
+   * Spécifiez le jeu de stratégies auquel appartient la stratégie en attribuant une valeur string à la variable `PolicySpec` de `policySetName` membre de données. Spécifiez un nom de jeu de stratégies existant. (Vous pouvez spécifier `null` pour cette valeur de paramètre qui entraîne l’ajout de la politique à *Mes politiques*.)
    * Définissez la période d’ouverture hors connexion de la stratégie en attribuant une valeur entière à la variable `PolicySpec` de `offlineLeasePeriod` membre de données.
    * Définissez la variable `PolicySpec` de `policyXml` membre de données avec une valeur string qui représente les données XML PDRL. Pour effectuer cette tâche, créez un objet `StreamReader` .NET en utilisant son constructeur. Transmettez l’emplacement d’un fichier XML PDRL qui représente la politique au constructeur `StreamReader`. Ensuite, appelez la fonction `StreamReader` de `ReadLine` et affecter la valeur renvoyée à une variable string . Effectuez une itération à l’aide de l’objet `StreamReader` jusqu’à ce que la méthode `ReadLine` renvoie une valeur nulle. Affectez la variable string à la variable `PolicySpec` de `policyXml` membre de données.
 
@@ -325,7 +325,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 Vous pouvez modifier une politique existante à l’aide de l’API Java Document Security ou de l’API Web Service. Pour apporter des modifications à une politique existante, vous devez la récupérer, la modifier, puis la mettre à jour sur le serveur. Supposons, par exemple, que vous récupérez une politique existante et que vous étendez sa période de validité. Avant que la modification ne prenne effet, vous devez mettre la politique à jour.
 
-Vous pouvez modifier une politique lorsque les besoins de l’entreprise changent et que la politique ne reflète plus ces besoins. Au lieu de créer une nouvelle politique, vous pouvez simplement mettre à jour une politique existante.
+Vous pouvez modifier une politique lorsque les besoins de l’entreprise changent et que la politique ne reflète plus ces besoins. Au lieu de créer une stratégie, vous pouvez simplement mettre à jour une stratégie existante.
 
 Pour modifier les attributs de politique à l’aide d’un service web (par exemple à l’aide de classes proxy Java créées avec JAX-WS), vous devez vous assurer que la politique est enregistrée auprès du service Document Security. Vous pouvez ensuite référencer la politique existante à l’aide de la méthode `PolicySpec.getPolicyXml` et modifier les attributs de politique à l’aide des méthodes applicables. Par exemple, vous pouvez modifier la période d’ouverture hors connexion en appelant la méthode `PolicySpec.setOfflineLeasePeriod`.
 
@@ -353,7 +353,7 @@ Avant d’effectuer une opération de service Document Security par programmatio
 
 **Récupérer une politique existante**
 
-Vous devez récupérer une stratégie existante pour la modifier. Pour récupérer une politique, spécifiez le nom de la politique et le jeu de politiques auquel elle appartient. Si vous spécifiez une valeur `null` pour le nom du jeu de politiques, la politique est récupérée à partir du jeu de politiques *Mes politiques*.
+Récupérez une stratégie existante pour la modifier. Pour récupérer une politique, spécifiez le nom de la politique et le jeu de politiques auquel elle appartient. Si vous spécifiez une valeur `null` pour le nom du jeu de politiques, la politique est récupérée à partir du jeu de politiques *Mes politiques*.
 
 **Définition des attributs de la stratégie**
 
@@ -878,9 +878,9 @@ Avant d’effectuer une opération de service Document Security par programme, v
 
 **Récupérer un document PDF protégé par une politique**
 
-Vous devez récupérer un document de PDF protégé par une stratégie pour le révoquer. Vous ne pouvez pas révoquer un document qui a déjà été révoqué ou qui n’est pas un document protégé par une politique.
+Récupérez un document de PDF protégé par une stratégie pour le révoquer. Vous ne pouvez pas révoquer un document qui a déjà été révoqué ou qui n’est pas un document protégé par une politique.
 
-Si vous connaissez la valeur de l’identifiant de licence du document PDF protégé par une politique, il n’est pas nécessaire de récupérer ce dernier. Cependant, dans la plupart des cas, vous devrez récupérer le document du PDF pour obtenir la valeur de l’identifiant de licence.
+Si vous connaissez la valeur de l’identifiant de licence du document PDF protégé par une politique, il n’est pas nécessaire de récupérer ce dernier. Cependant, dans la plupart des cas, vous devez récupérer le document du PDF pour obtenir la valeur de l’identifiant de licence.
 
 **Révoquer le document protégé par une politique**
 
@@ -1020,7 +1020,7 @@ Avant d’effectuer par programmation une opération de service Document Securit
 
 **Récupérer l’identifiant de licence du document PDF révoqué**
 
-Vous devez récupérer l’identifiant de licence du document de PDF révoqué pour rétablir un document de PDF révoqué. Une fois que vous avez obtenu la valeur d’identifiant de licence, vous pouvez restaurer un document révoqué. Si vous tentez de restaurer un document qui n’est pas révoqué, une exception est générée.
+Récupérez l’identifiant de licence du document de PDF révoqué pour rétablir un document de PDF révoqué. Une fois que vous avez obtenu la valeur d’identifiant de licence, vous pouvez restaurer un document révoqué. Si vous tentez de restaurer un document qui n’est pas révoqué, une exception est générée.
 
 **Rétablir l’accès au document PDF révoqué**
 
@@ -1287,7 +1287,7 @@ Avant d’effectuer par programmation une opération de service Document Securit
 
 **Définir les attributs du filigrane**
 
-Pour créer un filigrane, vous devez définir les attributs du filigrane. L’attribut name doit toujours être défini. Outre l’attribut name, vous devez définir au moins l’un des attributs suivants :
+Pour créer un filigrane, vous devez définir des attributs de filigrane. L’attribut name doit toujours être défini. Outre l’attribut name, vous devez définir au moins l’un des attributs suivants :
 
 * Texte personnalisé
 * DateIncluded
@@ -1408,7 +1408,7 @@ Créer un filigrane à l’aide de l’API Document Security (Java) :
    * Définissez l’attribut name du filigrane en appelant la variable `Watermark` de `setName` et transmission d’une valeur string qui spécifie le nom de la stratégie.
    * Définissez l’attribut d’arrière-plan du filigrane en appelant la fonction `Watermark` de `setBackground` méthode et transmission `true`. En définissant cet attribut, le filigrane apparaît à l’arrière-plan du document.
    * Définissez l’attribut de texte personnalisé du filigrane en appelant la fonction `Watermark` de `setCustomText` et transmission d’une valeur string qui représente le texte du filigrane.
-   * Définissez l’attribut d’opacité du filigrane en appelant la variable `Watermark` de `setOpacity` et transmettre une valeur entière qui spécifie le niveau d’opacité. Une valeur de 100 indique que le filigrane est complètement opaque et une valeur de 0 signifie quʼil est complètement transparent.
+   * Définissez l’attribut d’opacité du filigrane en appelant la variable `Watermark` de `setOpacity` et transmettre une valeur entière qui spécifie le niveau d’opacité. Une valeur de 100 indique que le filigrane est complètement opaque et une valeur de 0 indique que le filigrane est complètement transparent.
 
 1. Enregistrez le filigrane.
 
@@ -1554,7 +1554,7 @@ Modifiez un filigrane en utilisant l’API Document Security (Java) :
 
 1. Définissez les attributs du filigrane.
 
-   Définissez l’attribut d’opacité du filigrane en appelant la variable `Watermark` de `setOpacity` et transmettre une valeur entière qui spécifie le niveau d’opacité. Une valeur de 100 indique que le filigrane est complètement opaque et une valeur de 0 signifie quʼil est complètement transparent.
+   Définissez l’attribut d’opacité du filigrane en appelant la variable `Watermark` de `setOpacity` et transmettre une valeur entière qui spécifie le niveau d’opacité. Une valeur de 100 indique que le filigrane est complètement opaque et une valeur de 0 indique que le filigrane est complètement transparent.
 
    >[!NOTE]
    >
@@ -1624,7 +1624,7 @@ Les événements appartiennent à l’une des catégories suivantes :
 
 * Les événements d’administrateur sont des actions liées à un administrateur, comme la création d’un compte administrateur.
 * Les événements de document sont des actions liées à un document, telles que la fermeture d’un document protégé par une politique.
-* Les événements de politique sont des actions liées à une politique, comme la création d’une politique.
+* Les événements de stratégie sont des actions liées à une stratégie, comme la création d’une stratégie.
 * Les événements de service sont des actions liées au service Rights Management, telles que la synchronisation avec le répertoire des utilisateurs.
 
 Vous pouvez rechercher des événements spécifiques à l’aide de l’API Java Rights Management ou de l’API de service web. En recherchant des événements, vous pouvez effectuer des tâches, comme la création dʼun fichier journal de certains événements.
@@ -1652,7 +1652,7 @@ Avant de pouvoir effectuer par programmation une opération de service Rights M
 
 **Définir les événements à rechercher**
 
-Vous devez spécifier l’événement à rechercher. Vous pouvez, par exemple, rechercher l’événement de création de politique qui se produit lors de la création d’une politique.
+Indiquez l’événement à rechercher. Vous pouvez, par exemple, rechercher l’événement de création de politique qui se produit lors de la création d’une politique.
 
 **Rechercher l’événement**
 
@@ -1977,7 +1977,7 @@ Avant d’effectuer une opération de service Document Security par programme, v
 
 **Récupérer un document Word**
 
-Vous devez récupérer un document Word pour appliquer une stratégie. Une fois que vous avez appliqué une politique au document Word, les utilisateurs sont restreints lors de l’utilisation du document. Par exemple, si la politique ne permet pas l’ouverture du document hors ligne, les utilisateurs doivent être en ligne pour pouvoir ouvrir le document.
+Récupérez un document Word pour appliquer une stratégie. Une fois que vous avez appliqué une politique au document Word, les utilisateurs sont restreints lors de l’utilisation du document. Par exemple, si la politique ne permet pas l’ouverture du document hors ligne, les utilisateurs doivent être en ligne pour pouvoir ouvrir le document.
 
 **Appliquer une politique existante au document Word**
 
@@ -2132,7 +2132,7 @@ Avant d’effectuer par programmation une opération de service Document Securit
 
 **Récupérer un document Word protégé par une politique**
 
-Pour supprimer une stratégie, vous devez récupérer un document Word protégé par une stratégie. Si vous tentez de supprimer une politique d’un document Word qui n’est pas protégé par une politique, une exception est générée.
+Récupérez un document Word protégé par une stratégie pour supprimer une stratégie. Si vous tentez de supprimer une politique d’un document Word qui n’est pas protégé par une politique, une exception est générée.
 
 **Supprimer la politique du document Word**
 

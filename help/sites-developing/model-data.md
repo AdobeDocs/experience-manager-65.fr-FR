@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1775'
 ht-degree: 7%
@@ -53,7 +53,7 @@ D’autres contraintes sur les données, telles que les contraintes obligatoires
 
 #### Exemple {#example-1}
 
-L’exemple ci-dessus d’utilisation d’une `lastModified` La propriété de date sur le noeud &quot;billet de blog&quot;, par exemple, ne signifie pas vraiment qu’un type de noeud spécial est nécessaire. Je vais à coup sûr utiliser `nt:unstructured` pour mes nœuds d’article de blog, du moins au début. Puisque dans mon application de blog, tout ce que je vais faire, c&#39;est d&#39;afficher la date lastModified de toute façon (éventuellement &quot;commander par&quot;), je me fiche à peine s&#39;il s&#39;agit d&#39;une date. Parce que je fais implicitement confiance à mon application de création de blog pour y mettre de toute façon une &quot;date&quot;, il n&#39;y a vraiment pas besoin de déclarer la présence d&#39;une `lastModified` date sous la forme d’un type de noeud.
+L’exemple ci-dessus d’utilisation d’une `lastModified` La propriété de date sur, par exemple, le noeud &quot;billet de blog&quot;, ne signifie pas vraiment qu’un type de noeud spécial est nécessaire. Je vais à coup sûr utiliser `nt:unstructured` pour mes nœuds d’article de blog, du moins au début. Puisque dans mon application de blog, tout ce que je vais faire, c&#39;est d&#39;afficher la date lastModified de toute façon (éventuellement &quot;commander par&quot;), je me fiche à peine s&#39;il s&#39;agit d&#39;une date. Parce que je fais implicitement confiance à mon application de création de blog pour y mettre de toute façon une &quot;date&quot;, il n&#39;y a vraiment pas besoin de déclarer la présence d&#39;une `lastModified` date sous la forme d’un type de noeud.
 
 ### Règle #2 : piloter la hiérarchie du contenu ; ne pas laisser cela se produire. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 
@@ -143,7 +143,7 @@ Utilisez
 /content/myblog/posts/iphone_shipping
 ```
 
-Au lieu de
+À la place
 
 ```xml
 /content/blog[1]/post[1]
@@ -220,7 +220,7 @@ Utilisez :
 /content/myblog/posts/iphone_shipping/attachments/front.jpg
 ```
 
-Au lieu de :
+À la place:
 
 ```xml
 [Blog]

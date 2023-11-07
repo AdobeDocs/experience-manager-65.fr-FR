@@ -1,25 +1,21 @@
 ---
 title: Listes de contrôle
-seo-title: Checklists
-description: La liste de contrôle suivante présente certains des problèmes de test majeurs
-seo-description: The following checklist highlights some of the main testing issues
-uuid: 0456c98c-779f-415d-9641-b17ac141698b
+description: La liste de contrôle suivante met en évidence certains des principaux problèmes de test.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: 8f94c22d-5f08-4a8b-8bb5-5ec757c44bc8
 exl-id: 16c5f9aa-024d-4d8a-ba08-22b073289cfd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '157'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 81%
 
 ---
 
 # Listes de contrôle{#checklists}
 
-La liste de contrôle suivante présente certains des problèmes de test majeurs - veuillez lire les autres sections relatives au test pour plus de détails.
+La liste de contrôle suivante met en évidence certains des principaux problèmes : consultez les autres sections relatives aux tests pour plus de détails.
 
 | Vérification | Réponse | Action | Propriétaire | Échéance |
 |---|---|---|---|---|

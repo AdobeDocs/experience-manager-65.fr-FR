@@ -8,9 +8,9 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '834'
 ht-degree: 18%
 
 ---
@@ -23,17 +23,17 @@ ht-degree: 18%
 
 La fonctionnalité de structure de personnalisation est conçue pour aider à réduire les violations dans les zones non extensibles du code (comme les API) ou du contenu (comme les superpositions) qui ne sont pas compatibles avec la mise à niveau.
 
-Il existe deux composants de la structure de personnalisation : la valeur **Surface d’API** et le **Classification de contenu**.
+Le framework de personnalisation comporte deux composants : **Surface d’API** et la variable **Classification de contenu**.
 
 #### Surface d’API {#api-surface}
 
-Dans les versions précédentes d’Adobe Experience Manager (AEM), de nombreuses API étaient exposées par le biais d’Uber Jar. Certaines de ces API n’étaient pas destinées à être utilisées par les clients, mais étaient exposées à la prise en charge des fonctionnalités AEM entre les lots. Dorénavant, les API Java™ sont marquées comme publiques ou privées pour indiquer aux clients quelles API peuvent être utilisées en toute sécurité dans le cadre des mises à niveau. Voici d’autres observations :
+Dans les versions précédentes de Adobe Experience Manager (AEM), de nombreuses API étaient exposées par le biais d’Uber Jar. Certaines de ces API n’étaient pas destinées à être utilisées par les clients, mais étaient exposées à la prise en charge des fonctionnalités AEM entre les lots. Dorénavant, les API Java™ sont marquées comme publiques ou privées pour indiquer aux clients quelles API peuvent être utilisées en toute sécurité dans le cadre des mises à niveau. Voici d’autres observations :
 
 * API Java™ marquées comme `Public` peut être utilisé et référencé par des lots d’implémentation personnalisés.
 
 * Les API publiques sont rétrocompatibles avec l’installation d’un package de compatibilité.
 * Le package de compatibilité contient un fichier JAR Uber de compatibilité pour garantir la compatibilité descendante.
-* API Java™ marquées comme `Private` sont destinés uniquement à être utilisés par AEM bundles internes et ne doivent pas l’être par des bundles personnalisés.
+* API Java™ marquées comme `Private` sont destinés uniquement à être utilisés par AEM bundles internes, et non par des bundles personnalisés.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Dans les versions précédentes d’Adobe Experience Manager (AEM), de nombreuse
 
 #### Classifications de contenu {#content-classifications}
 
-AEM a longtemps utilisé le principe des incrustations et Sling Resource Merger pour permettre aux clients d’étendre et de personnaliser les fonctionnalités d’AEM. Les fonctionnalités prédéfinies qui alimentent les consoles AEM et l’interface utilisateur sont stockées dans **/libs**. Les clients ne doivent jamais modifier quoi que ce soit sous **/libs** mais peut ajouter du contenu supplémentaire sous **/apps** pour superposer et étendre les fonctionnalités définies dans **/libs** (Voir Développement avec des superpositions pour plus d’informations). Cela provoquait toujours de nombreux problèmes lors de la mise à niveau d’AEM en tant que contenu dans **/libs** peut changer, ce qui entraîne une interruption inattendue de la fonctionnalité de recouvrement. Les clients peuvent également étendre les composants d’AEM par le biais de l’héritage `sling:resourceSuperType`, ou simplement référencer un composant dans **/libs** directement par le biais de sling:resourceType. Des problèmes de mise à niveau similaires peuvent se produire avec les cas d’utilisation de référence et de remplacement.
+AEM a longtemps utilisé le principe des incrustations et Sling Resource Merger pour permettre aux clients d’étendre et de personnaliser les fonctionnalités d’AEM. Les fonctionnalités prédéfinies qui alimentent les consoles AEM et l’interface utilisateur sont stockées dans **/libs**. Les clients ne doivent jamais rien modifier sous **/libs** mais peut ajouter du contenu supplémentaire sous **/apps** pour superposer et étendre les fonctionnalités définies dans **/libs** (Voir Développement avec des superpositions pour plus d’informations). Cela provoquait toujours de nombreux problèmes lors de la mise à niveau d’AEM en tant que contenu dans **/libs** peut changer, ce qui entraîne une interruption inattendue de la fonctionnalité de recouvrement. Les clients peuvent également étendre les composants d’AEM par le biais de l’héritage `sling:resourceSuperType`, ou simplement référencer un composant dans **/libs** directement par le biais de sling:resourceType. Des problèmes de mise à niveau similaires peuvent se produire avec les cas d’utilisation de référence et de remplacement.
 
 Pour que les clients puissent comprendre plus facilement et plus en toute sécurité les zones d’ **/libs** peuvent utiliser et superposer le contenu en toute sécurité dans **/libs** a été classé avec les mixins suivants :
 
@@ -63,7 +63,7 @@ Ces stratégies ne sont appliquées que par rapport aux mécanismes basés sur d
 
 #### Indicateurs de type de contenu CRXDE Lite {#crxde-lite-content-type-indicators}
 
-Les mixins appliqués dans CRXDE Lite affichent les noeuds de contenu et les arborescences marqués comme `INTERNAL` comme étant grisé. Pour `FINAL`, seule l’icône est grisée. Les enfants de ces noeuds apparaissent également grisés. La fonctionnalité Noeud de recouvrement est désactivée dans les deux cas.
+Les mixins appliqués dans CRXDE Lite affichent les noeuds de contenu et les arborescences marqués comme `INTERNAL` comme étant grisé (grisé). Pour `FINAL`, seule l’icône est grisée. Les enfants de ces noeuds apparaissent également grisés. La fonctionnalité Noeud de recouvrement est désactivée dans les deux cas.
 
 **Public**
 

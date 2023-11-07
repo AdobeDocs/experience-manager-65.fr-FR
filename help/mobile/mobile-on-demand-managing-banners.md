@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: fb1abaa0-9c02-4f20-aa7c-073def067452
 exl-id: c65a24e6-3041-4774-aeed-8e188ea19b78
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '661'
 ht-degree: 3%
 
 ---
@@ -44,7 +44,7 @@ Le workflow général pour créer un article est le suivant :
 
 1. Sélectionner **Mobile** à partir du rail latéral.
 1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de l’objet **Gestion des bannières** mosaïque.
+1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la **Gestion des bannières** mosaïque.
 1. Parcourez chaque étape de l’assistant pour continuer à créer votre nouvelle bannière.
 1. Une fois prêt, cliquez sur **Créer**.
 1. Votre nouvelle bannière apparaît dans la **Gestion des bannières** mosaïque.
@@ -62,7 +62,7 @@ Le contenu Mobile On Demand existant peut être téléchargé (importé) de Mobi
 Workflow d’import d’un nouvel article
 
 1. Depuis Mobile, sélectionnez votre application mobile à la demande dans le catalogue.
-1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de l’objet **Gestion des bannières** et sélectionnez Importer des bannières.
+1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la **Gestion des bannières** et sélectionnez Importer des bannières.
 1. Cliquez sur **Bannière d’importation** dans la boîte de dialogue, puis cliquez sur Fermer.
 1. Vos articles Mobile On Demand apparaissent désormais dans le **Gestion des bannières** mosaïque.
 
@@ -87,7 +87,7 @@ Workflow de modification d’un article :
 
 ### Affichage et modification des métadonnées dans une bannière {#viewing-and-editing-the-metadata-within-a-banner}
 
-Les bannières présentent de nombreuses propriétés telles que des titres, des descriptions et des images. Cette action est utilisée pour afficher et modifier ces propriétés. Vous pouvez éventuellement charger ces modifications dans Mobile On-Demand lors de l’enregistrement.
+Les bannières présentent de nombreuses propriétés, telles que des titres, des descriptions et des images. Cette action est utilisée pour afficher et modifier ces propriétés. Vous pouvez éventuellement charger ces modifications dans Mobile On-Demand lors de l’enregistrement.
 
 Processus général d’affichage/de modification d’un article :
 
@@ -96,7 +96,7 @@ Processus général d’affichage/de modification d’un article :
 
 1. Sélectionnez **Propriétés** dans la barre d’actions.
 1. Affichez toutes les métadonnées disponibles pour cet article.
-1. Modifiez les métadonnées si vous le souhaitez, puis cliquez sur **Enregistrer** une fois terminé.
+1. Modifiez les métadonnées si nécessaire, puis cliquez sur **Enregistrer** une fois terminé.
 1. Vous pouvez éventuellement charger immédiatement les modifications dans Mobile On-Demand.
 
 ## Chargement d’une bannière {#uploading-a-banner}
@@ -123,7 +123,7 @@ Workflow général de suppression d’une bannière :
 1. Sélectionnez la bannière à supprimer dans le **Gestion des bannières** mosaïque.
 1. Assurez-vous qu’il est sélectionné dans la liste (sélectionnez d’autres éléments à supprimer, si nécessaire).
 1. Cliquez sur **Supprimer** dans la barre d’actions.
-1. Vérifiez si vous souhaitez supprimer de AEM ainsi que de Mobile On-Demand.
+1. Vérifiez si vous souhaitez supprimer de AEM et de Mobile On-Demand.
 1. Cliquez sur **Supprimer**.
 1. Votre bannière est maintenant supprimée de la liste.
 

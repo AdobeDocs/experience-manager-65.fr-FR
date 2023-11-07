@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: 9fb6d603-eb17-4192-bfa6-6c316f14ac7d
 docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
-source-git-commit: 8dafa901bc628ee5e4823e9f8811bf4d09b7e072
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 100%
+source-wordcount: '563'
+ht-degree: 93%
 
 ---
 
@@ -21,8 +21,8 @@ ht-degree: 100%
 
 Les balises sont une méthode rapide et facile pour classer le contenu dans un site web. Les balises peuvent être considérées comme des mots-clés ou des libellés pouvant être jointes à une page, à une ressource ou à un autre contenu pour permettre aux recherches de trouver ce contenu et le contenu associé.
 
-* Consultez la section [Administration des balises](/help/sites-administering/tags.md) pour savoir comment créer et gérer des balises et déterminer à quel contenu elles ont été appliquées.
-* Consultez la section [Balisage pour l’équipe de développement](/help/sites-developing/tags.md) pour plus d’informations sur l’environnement de balisage et sur l’inclusion et l’extension de balises dans les applications personnalisées.
+* Voir [Administration des balises](/help/sites-administering/tags.md) pour plus d’informations sur la création et la gestion des balises, ainsi que sur les balises de contenu qui ont été appliquées.
+* Voir [Balisage pour les développeurs et développeuses](/help/sites-developing/tags.md) pour plus d’informations sur le framework de balisage et sur l’inclusion et l’extension de balises dans les applications personnalisées.
 
 ## Dix raisons d’utiliser les balises {#ten-reasons-to-use-tagging}
 
@@ -55,7 +55,7 @@ Comme avec les pages, il est possible d’effectuer les opérations suivantes su
 
 * Activez individuellement des balises.
 
-  A l’instar des pages, les nouvelles balises doivent être activées avant d’être disponibles dans l’environnement de publication.
+  Comme pour les pages, les balises nouvellement créées doivent être activées avant d’être disponibles dans l’environnement de publication.
 
 >[!NOTE]
 >

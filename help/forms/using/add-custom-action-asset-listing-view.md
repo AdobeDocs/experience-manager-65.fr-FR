@@ -7,10 +7,10 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1354'
-ht-degree: 98%
+source-wordcount: '1351'
+ht-degree: 93%
 
 ---
 
@@ -43,7 +43,7 @@ Pour personnaliser Correspondence Management afin de permettre à vos utilisate
 
 1. Accédez à `https://'[server]:[port]'/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
 
-1. Dans le dossier d’applications, créez un dossier appelé éléments avec un chemin/une structure semblables au dossier d’éléments situé dans le dossier de sélection. Pour ce faire, procédez comme suit :
+1. Dans le dossier d’applications, créez un dossier nommé éléments avec un chemin/une structure similaires au dossier d’éléments dans le dossier de sélection en procédant comme suit :
 
    1. Faites un clic droit sur le dossier des **éléments** à l’emplacement suivant, puis sélectionnez **Nœud de recouvrement** :
 
@@ -136,9 +136,9 @@ Pour personnaliser Correspondence Management afin de permettre à vos utilisate
         </tbody>
        </table>
 
-1. Dans le dossier d’applications, créez un dossier appelé js avec un chemin/une structure semblables au dossier d’éléments situé dans le dossier admin. Pour ce faire, procédez comme suit :
+1. Dans le dossier d’applications, créez un dossier nommé js avec un chemin/une structure similaires au dossier d’éléments dans le dossier admin en procédant comme suit :
 
-   1. Faites un clic droit sur le dossier **js** à l’emplacement suivant et sélectionnez **Nœud de recouvrement** :
+   1. Cliquez avec le bouton droit sur le dossier **js** à l’emplacement suivant et sélectionnez **Nœud de recouvrement** :
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -226,7 +226,7 @@ Pour personnaliser Correspondence Management afin de permettre à vos utilisate
 
       Le code ci-dessus est destiné au traitement des actions spécifiques aux lettres de la commande créée dans cette procédure. Pour gérer les actions d’autres ressources, modifiez le code JavaScript.
 
-1. Dans le dossier d’applications, créez un dossier appelé éléments avec un chemin/une structure semblables au dossier d’éléments situé dans le dossier actionhandlers. Pour ce faire, procédez comme suit :
+1. Dans le dossier d’applications, créez un dossier nommé éléments avec un chemin/une structure similaires au dossier d’éléments dans le dossier actionhandlers. Pour cela, procédez comme suit :
 
    1. Faites un clic droit sur le dossier des **éléments** à l’emplacement suivant, puis sélectionnez **Nœud de recouvrement** : 
 

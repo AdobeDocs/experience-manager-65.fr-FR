@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '10699'
+source-wordcount: '10694'
 ht-degree: 56%
 
 ---
@@ -109,7 +109,7 @@ La valeur par défaut de ce paramètre est `/LiveCycleES/ConnectorforIBMFileNet/
 
 ## Paramètres du service Convert PDF {#convert-pdf-service-settings}
 
-Le service Convert PDF (`ConvertPdfService`) convertit des documents PDF en PostScript® et en de nombreux formats d’image (JPEG, JPEG 2000, PNG et TIFF). La conversion d’un document de PDF en PostScript est utile pour l’impression sans assistance basée sur le serveur sur n’importe quelle imprimante PostScript. La conversion d’un document de PDF en fichier de TIFF multi-pages est pratique lors de l’archivage de documents dans des systèmes de gestion de contenu qui ne prennent pas en charge les documents de PDF.
+Le service Convert PDF ( `ConvertPdfService`) convertit des documents PDF au format PostScript et dans plusieurs formats d’image (JPEG, JPEG 2000, PNG et TIFF). La conversion d’un document de PDF en PostScript est utile pour l’impression sans assistance basée sur le serveur sur n’importe quelle imprimante PostScript. La conversion d’un document de PDF en fichier de TIFF multi-pages est pratique lors de l’archivage de documents dans des systèmes de gestion de contenu qui ne prennent pas en charge les documents de PDF.
 
 Les paramètres suivants sont disponibles pour le service Convert PDF.
 
@@ -243,7 +243,7 @@ Les paramètres suivants sont disponibles pour le service FTP.
 
 ## Paramètres du service Generate PDF {#generate-pdf-service-settings}
 
-Le service Generate PDF (`GeneratePDFService`) convertit des fichiers de nombreux formats natifs en documents PDF et convertit des documents PDF en plusieurs formats de fichier.
+Le service Generate PDF ( `GeneratePDFService`) convertit des fichiers dans divers formats natifs en documents PDF et convertit des documents PDF dans plusieurs formats de fichiers.
 
 Les paramètres ci-dessous sont disponibles pour le service Generate PDF.
 
@@ -830,7 +830,7 @@ Les profils de sécurité par défaut sont installés. Ils peuvent ensuite être
    * **SUPERVISOR_PERM :** affichage des données d’instance de processus d’un service créé à partir d’un processus.
    * **START_STOP_PERM :** démarrage et arrêt d’un service.
    * **ADD_REMOVE_ENDPOINTS_PERM :** ajout, suppression et modification des points d’entrée d’un service.
-   * **CREATE_VERSION_PERM :** création d’une nouvelle version du service.
+   * **CREATE_VERSION_PERM :** Pour créer une version du service
    * **DELETE_VERSION_PERM :** suppression d’une version du service.
    * **MODIFY_VERSION_PERM :** modification d’une version du service.
    * **READ_PERM :** affichage du service.

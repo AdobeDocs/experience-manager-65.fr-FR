@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 8d965e94-c368-481d-b000-6e22456c34db
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Une fois le compte Analytics configuré, créez une configuration de synchronisa
 
 Pour plus d’informations, voir Configuration du contenu de synchronisation du contenu. La configuration doit indiquer à Synchronisation du contenu de placer ADBMobileConfig dans le répertoire /www . Par exemple, dans l’application Geometrixx Outdoors, la configuration Synchronisation du contenu se trouve à l’emplacement suivant : */content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-config/ams-ADBMobileConfig*. Il existe également une configuration pour le développement ; toutefois, elle est identique à la configuration autre que le développement dans le cas des Geometrixx Outdoors.
 
-Pour plus d’informations sur le téléchargement d’ADBMobileConfig à partir du tableau de bord Applications de l’AEM d’application mobile, reportez-vous à la section Fichier de configuration du SDK Analytics - Mobile Services - Adobe Mobile Services .
+Pour plus d’informations sur le téléchargement d’ADBMobileConfig à partir du tableau de bord de vos applications AEM d’application mobile, voir Analytics - Mobile Services - Fichier de configuration du SDK d’Adobe Mobile Services.
 
 ```xml
 <jcr:root xmlns:jcr="https://www.jcp.org/jcr/1.0" xmlns:nt="https://www.jcp.org/jcr/nt/1.0"
@@ -63,7 +63,7 @@ Pour chaque plateforme, ADBMobileConfig doit être copié vers un emplacement sp
 
 Si vous créez avec l’interface de ligne de commande de PhoneGap, vous pouvez le faire avec des scripts de crochets de génération cordova. Vous pouvez le voir dans l’application Geometrixx Outdoors à l’adresse :*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.*
 
-Pour iOS, le fichier doit être copié dans le fichier du projet XCode **Ressources** (par exemple, &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Si l’application est ciblée pour Android™, le chemin d’accès à copier est &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Pour plus d’informations sur l’utilisation des points d’extension pendant la génération de l’interface de ligne de commande PhoneGap, voir [Trois hooks les besoins de votre projet Cordova/PhoneGap](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
+Pour iOS, le fichier doit être copié dans le fichier du projet Xcode **Ressources** (par exemple, &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Si l’application est ciblée pour Android™, le chemin d’accès à copier est &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Pour plus d’informations sur l’utilisation des points d’extension pendant la génération de l’interface de ligne de commande PhoneGap, voir [Trois hooks les besoins de votre projet Cordova/PhoneGap](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
 
 ```xml
 ///////////////////////////

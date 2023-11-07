@@ -1,20 +1,16 @@
 ---
 title: Marketing par e-mail
-seo-title: E-mail Marketing
-description: Le marketing par e-mail (par exemple, les newsletters) est une partie importante de toute campagne marketing, car vous l’utilisez pour envoyer du contenu à vos prospects. Dans AEM, vous pouvez créer des newsletters à partir de contenu AEM existant et ajouter un nouveau contenu spécifique aux newsletters.
-seo-description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
-uuid: 565943bf-fe37-4d5c-98c3-7c629c4ba264
+description: Le marketing par e-mail (par exemple, les newsletters) est une partie importante de toute campagne marketing, car vous l’utilisez pour envoyer du contenu à vos prospects. Dans AEM, vous pouvez créer des newsletters à partir de contenu AEM existant et ajouter un nouveau contenu, spécifique aux newsletters.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
-source-git-commit: 1ba34f95cf3ce3f136482075802d2e4372f28917
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1770'
-ht-degree: 97%
+source-wordcount: '1764'
+ht-degree: 92%
 
 ---
 
@@ -24,9 +20,9 @@ ht-degree: 97%
 >[!NOTE]
 >
 >Adobe ne prévoit pas de continuer à mettre à jour le suivi des ouvertures et rebonds des e-mails (non livrable) envoyé par le service SMTP AEM.
-> Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
+>Il est recommandé d’utiliser [Adobe Campaign et intégration à AEM](/help/sites-administering/campaign.md).
 
-Le marketing par e-mail (par exemple, les newsletters) est une partie importante de toute campagne marketing, car vous l’utilisez pour envoyer du contenu à vos prospects. Dans AEM, vous pouvez créer des newsletters à partir de contenu AEM existant et ajouter un nouveau contenu spécifique aux newsletters.
+Le marketing par e-mail (par exemple, les newsletters) est une partie importante de toute campagne marketing, car vous l’utilisez pour envoyer du contenu à vos prospects. Dans AEM, vous pouvez créer des newsletters à partir de contenu AEM existant et ajouter un nouveau contenu, spécifique aux newsletters.
 
 Une fois créées, vous pouvez envoyer les newsletters à des groupes spécifiques d’utilisateurs immédiatement ou à un autre moment planifié (à l’aide d’un workflow). En outre, les utilisateurs et utilisatrices peuvent s’abonner à des newsletters au format de leur choix.
 
@@ -173,7 +169,7 @@ Pour basculer entre les clients, cliquez sur l’icône correspondante pour affi
 Bien que seules les personnes autorisées puissent envoyer une newsletter, vous devez personnaliser les éléments suivants :
 
 * L’objet, pour que les utilisateurs et utilisatrices souhaitent ouvrir votre e-mail et pour s’assurer également que votre newsletter ne sera pas considérée comme un spam.
-* L’adresse de l’expéditeur, par exemple noreply@geometrixx.com, pour que les utilisateurs et utilisatrices reçoivent un e-mail d’une adresse spécifique.
+* L’adresse De, par exemple : `noreply@geometrixx.com`, de sorte que les utilisateurs reçoivent un e-mail d’une adresse spécifiée.
 
 Pour personnaliser les paramètres de la newsletter :
 
@@ -188,7 +184,7 @@ Pour personnaliser les paramètres de la newsletter :
 
 1. Modifiez l’**objet** de l’e-mail, le cas échéant.
 
-1. Sélectionnez une **liste de destinataires ou destinatrices par défaut** dans le menu déroulant.
+1. Sélectionnez une **Liste des destinataires par défaut** dans la liste déroulante.
 
 1. Cliquez sur **OK**.
 
@@ -223,7 +219,7 @@ Pour tester les newsletters en ligne :
 >[!NOTE]
 >
 >Adobe ne prévoit pas de continuer à mettre à jour le suivi des ouvertures et rebonds des e-mails (non livrable) envoyé par le service SMTP AEM.
-> Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
+>Il est recommandé d’utiliser [Adobe Campaign et intégration à AEM](/help/sites-administering/campaign.md).
 
 Vous pouvez envoyer une newsletter à partir de la newsletter ou de la liste. Les deux procédures sont décrites.
 

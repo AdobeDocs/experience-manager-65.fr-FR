@@ -2,10 +2,10 @@
 title: En savoir plus sur l’utilisation de références dans les fragments de contenu
 description: Découvrez comment utiliser des références dans des fragments de contenu pour du contenu, d’autres fragments et d’autres ressources (médias). Découvrez l’importance et le fonctionnement des fragments imbriqués pour la création CMS découplée.
 exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 89%
+source-wordcount: '722'
+ht-degree: 88%
 
 ---
 
@@ -39,7 +39,7 @@ Certaines références comportent des types de données dédiés (par exemple, R
 
 ## Références du contenu {#content-references}
 
-C’est exactement ce que font les références de contenu : elles vous permettent de référencer tout autre contenu. Un navigateur s’ouvre, vous permettant de sélectionner l’élément de contenu.
+C’est exactement ce que font les références de contenu : elles vous permettent de référencer tout autre contenu. Vous accédez alors à un navigateur qui vous permet de sélectionner l’élément de contenu.
 
 ## Références de ressources/médias {#assets-media-references}
 
@@ -58,7 +58,7 @@ Par exemple, les modèles de fragment de contenu suivants peuvent être définis
 * Personne
 * Distinctions
 
-Cela semble évident, bien sûr, mais une entreprise compte à la fois un PDG et des employés...Et chaque élément d’entre eux est défini en tant que personne.
+Cela semble assez simple, mais une entreprise a à la fois un PDG et des employés....Et chaque élément d’entre eux est défini en tant que personne.
 
 Et une personne peut recevoir une distinction (ou peut-être deux).
 

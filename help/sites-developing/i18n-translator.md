@@ -1,19 +1,15 @@
 ---
 title: Utiliser le traducteur pour gérer les dictionnaires
-seo-title: Using Translator to Manage Dictionaries
 description: AEM fournit une console pour gérer les différentes traductions de textes utilisés dans l’interface utilisateur des composants.
-seo-description: AEM provides a console for managing the various translations of texts used in component UI
-uuid: 4eea3110-e958-473e-8d22-c84fa435edbd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
-discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2327'
-ht-degree: 37%
+source-wordcount: '2320'
+ht-degree: 35%
 
 ---
 
@@ -23,9 +19,9 @@ AEM fournit une console pour gérer les différentes traductions de textes utili
 
 `https://<hostname>:<port-number>/libs/cq/i18n/translator.html`
 
-Utilisez l’outil Traducteur pour gérer les chaînes de caractères anglaises, ainsi que leurs traductions. Les dictionnaires sont créés dans le référentiel ; par exemple /apps/myproject/i18n.
+Utilisez l’outil Traducteur pour gérer les chaînes de caractères anglaises, ainsi que leurs traductions. Les dictionnaires sont créés dans le référentiel, par exemple, /apps/myproject/i18n.
 
-Notez que l’outil de traduction et les dictionnaires que vous gérez servent à présenter l’interface utilisateur des composants dans différentes langues. Si vous souhaitez traduire une page ou du contenu généré par l’utilisateur, reportez-vous à la section [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md) et [Traduction de contenu généré par l’utilisateur](/help/communities/translate-ugc.md).
+L’outil de traduction et les dictionnaires que vous gérez servent à présenter l’interface utilisateur des composants dans différentes langues. Si vous souhaitez traduire une page ou du contenu généré par l’utilisateur, reportez-vous à la section [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md) et [Traduction de contenu généré par l’utilisateur](/help/communities/translate-ugc.md).
 
 >[!CAUTION]
 >
@@ -43,7 +39,7 @@ Le traducteur répertorie les textes utilisés dans AEM avec les diverses traduc
 
 Vous pouvez rechercher, filtrer et modifier les textes en anglais et les textes traduits. Vous pouvez également exporter des dictionnaires au format XLIFF pour les traduire, puis réimporter les traductions dans les dictionnaires.
 
-Il est également possible d’ajouter les dictionnaires i18n à un projet de traduction à partir de cette console. Vous pouvez en créer un nouveau ou en ajouter à un projet existant.
+Il est également possible d’ajouter les dictionnaires i18n à un projet de traduction à partir de cette console. Vous pouvez en créer un ou l’ajouter à un projet existant.
 
 1. Cliquez sur **Traduire le dictionnaire**.
 
@@ -283,7 +279,7 @@ Les langues suivantes sont reprises dans le tableau de dictionnaire de l’outil
 
 Procédez comme suit pour ajouter ou supprimer des langues.
 
-1. À l’aide de CRXDE Lite, créez un noeud :
+1. A l’aide de CRXDE Lite, créez un noeud :
 
    `/etc/languages`
 
@@ -341,7 +337,7 @@ Les pays par défaut sont utilisés lors de l’affichage des indicateurs (par e
 
 >[!NOTE]
 >
->Pour les localisations gérées par le traducteur ci-dessus, seule la langue exacte fonctionne. Si la liste déroulante des préférences linguistiques utilise `en_uk`, un dictionnaire `en_uk` doit figurer dans le référentiel.
+>Pour les localisations gérées par le traducteur ci-dessus, seule la langue exacte fonctionne. Si la liste déroulante des préférences linguistiques utilise `en_uk`, il doit y avoir une `en_uk` dictionnaire dans le référentiel.
 
 Pour modifier les définitions par défaut, procédez comme suit :
 
@@ -382,7 +378,7 @@ De même, le test des chaînes du dictionnaire doit être effectué dans le cadr
 
 >[!NOTE]
 >
->La fonctionnalité de publication régulière, ou réplication, ne doit pas être utilisée pour les dictionnaires. Au lieu de cela, les dictionnaires doivent être traités de la même manière que le code et la configuration. Cela inclut l’utilisation du contrôle de code source pour suivre les modifications et l’utilisation de packages de contenu pour appliquer les modifications à l’auteur et à la publication.
+>N’utilisez pas de fonctionnalité de publication standard, ni de réplication, pour les dictionnaires. Au lieu de cela, les dictionnaires doivent être traités de la même manière que le code et la configuration. Cela inclut l’utilisation du contrôle de code source pour suivre les modifications et l’utilisation de packages de contenu pour appliquer les modifications à l’auteur et à la publication.
 
 >[!NOTE]
 >

@@ -11,10 +11,10 @@ topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 role: Developer
 exl-id: 7b309743-10ea-4d10-adb6-be5ce9f03ce2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '427'
+ht-degree: 92%
 
 ---
 
@@ -38,7 +38,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API forte
 
 >[!NOTE]
 >
->Les démarrages rapides situés dans Programmation avec AEM Forms sont basés sur les formulaires. Si vous utilisez un autre système d’exploitation, tel qu’Unix, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>Les démarrages rapides dans Programmation avec AEM Forms sont basés sur Forms si vous utilisez un autre système d’exploitation, comme Unix, remplacez les chemins spécifiques aux fenêtres par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 ## Démarrage rapide (mode SOAP) : rechercher des instances de processus à l’aide de l’API Java. {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
@@ -71,7 +71,7 @@ L’exemple de code Java suivant recherche les instances de processus qui sont b
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -80,7 +80,7 @@ L’exemple de code Java suivant recherche les instances de processus qui sont b
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -189,7 +189,7 @@ L’exemple de code Java suivant suspend une instance de processus. Pour réussi
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -198,7 +198,7 @@ L’exemple de code Java suivant suspend une instance de processus. Pour réussi
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -281,7 +281,7 @@ L’exemple de code Java suivant démarre une instance de processus suspendue.
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -290,7 +290,7 @@ L’exemple de code Java suivant démarre une instance de processus suspendue.
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -369,7 +369,7 @@ L’exemple de code Java suivant met fin à une instance de processus avec la va
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -378,7 +378,7 @@ L’exemple de code Java suivant met fin à une instance de processus avec la va
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -459,7 +459,7 @@ Le code Java suivant purge les données d’un processus appelé *SecureDocument
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -468,7 +468,7 @@ Le code Java suivant purge les données d’un processus appelé *SecureDocument
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -567,7 +567,7 @@ L’exemple de code suivant récupère le statut de 10 tâches AEM Forms.
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -576,7 +576,7 @@ L’exemple de code suivant récupère le statut de 10 tâches AEM Forms.
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *

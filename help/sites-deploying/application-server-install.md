@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 41%
@@ -33,7 +33,7 @@ Pour plus d’informations sur l’installation d’applications Web, sur les co
 
 >[!NOTE]
 >
->Si vous utilisez Dynamic Media dans un déploiement WAR, reportez-vous à la section [Documentation Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
+>Si vous utilisez Dynamic Media dans un déploiement WAR, voir [Documentation Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 ## Description générale {#general-description}
 
@@ -44,9 +44,9 @@ AEM est fourni sous la forme d’un fichier war unique à déployer.
 En cas de déploiement, les événements suivants se produisent par défaut :
 
 * Le mode d’exécution est `author`.
-* l’instance (référentiel, environnement Felix OSGI, lots, etc.) est installée dans `${user.dir}/crx-quickstart`where `${user.dir}` est le répertoire de travail actuel, ce chemin d’accès à crx-quickstart est appelé `sling.home`
+* l’instance (référentiel, environnement Felix OSGI, bundles, etc.) est installée dans `${user.dir}/crx-quickstart`where `${user.dir}` est le répertoire de travail actuel, ce chemin d’accès à crx-quickstart est appelé `sling.home`
 
-* la racine du contexte est le nom du fichier war, par exemple : `aem-6`
+* la racine du contexte est le nom du fichier war, par exemple :  `aem-6`
 
 #### Configuration {#configuration}
 
@@ -84,7 +84,7 @@ Pour vérifier si tout est installé, vous pouvez :
 1. Définissez la variable sling.run.modes sur « publication » pour l’instance de publication.
 1. Recompressez le fichier Web.xml.
 1. Renommez les fichiers war afin qu’ils portent des noms différents. Par exemple, l’un renomme aemauthor.war, l’autre aempublish.war.
-1. Utilisez des paramètres de mémoire plus élevés. Par exemple, les instances d’AEM par défaut utilisent `-Xmx3072m`
+1. Utilisez des paramètres de mémoire plus élevés. Par exemple, les instances AEM par défaut utilisent `-Xmx3072m`
 1. Déployez les deux applications web.
 1. Après le déploiement, arrêtez les deux applications web.
 1. Dans les instances de création et de publication, vérifiez dans les fichiers sling.properties que la propriété felix.service.urlhandlers=false est définie sur « false » (par défaut, elle est définie sur « true »).
@@ -100,7 +100,7 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
 
 * Laissez passer les en-têtes d’authentification de base :
 
-   * Pour permettre à AEM d’authentifier un utilisateur, désactivez la sécurité administrative globale du serveur WebSphere®, pour ce faire : accédez à Sécurité -> Sécurité globale et décochez la case Activer la sécurité administrative , enregistrez et redémarrez le serveur.
+   * Pour permettre à AEM d’authentifier un utilisateur, désactivez la sécurité administrative globale du serveur WebSphere®. Pour cela, accédez à Sécurité -> Sécurité globale et décochez la case Activer la sécurité administrative, enregistrez et redémarrez le serveur.
 
 * Définissez `"JAVA_OPTS= -Xmx2048m"`.
 * Si vous souhaitez installer AEM à l’aide de la racine du contexte = /, modifiez la racine du contexte de l’application web par défaut existante.
@@ -175,7 +175,7 @@ Cette opération utilise une simple disposition de serveur avec uniquement un se
    * Supprimez les marques de commentaire du paramètre sling.home initial et définissez ce chemin d’accès en fonction de vos besoins (voir la Description générale).
    * Recompressez le fichier Web.xml.
 
-* Déployez le fichier war AEM. en tant qu’application (pour les autres paramètres, utilisez les paramètres par défaut).
+* Déployez le fichier war AEM. en tant qu’application (pour les autres paramètres, utilisez les paramètres par défaut)
 * L&#39;installation peut prendre du temps...
 * Vérifiez que l’installation est terminée comme indiqué ci-dessus dans la Description générale (par exemple, en contournant le fichier error.log).
 * Vous pouvez modifier la racine du contexte dans l’onglet Configuration de l’application Web dans la `/console` WebLogic.

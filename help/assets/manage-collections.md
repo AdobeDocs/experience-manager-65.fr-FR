@@ -7,10 +7,10 @@ role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '2203'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 

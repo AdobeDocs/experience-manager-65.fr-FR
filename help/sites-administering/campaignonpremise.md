@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1581'
-ht-degree: 98%
+source-wordcount: '1573'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ Cette intégration permet d’utiliser AEM et Adobe Campaign Classic indépendam
 
 ## Étapes d’intégration {#integration-steps}
 
-L’intégration entre AEM et Campaign requiert un certain nombre d’étapes dans les deux solutions.
+L&#39;intégration entre AEM et Campaign requiert plusieurs étapes dans les deux solutions.
 
 1. [Installer le package d’intégration AEM dans Campaign](#install-package)
 1. [Créer un opérateur pour AEM dans Campaign](#create-operator)
@@ -41,12 +41,12 @@ Ce document vous guide de façon détaillée à travers chacune de ces étapes.
 
 * Accès des administrateurs à Adobe Campaign Classic
    * Pour effectuer l’intégration, vous avez besoin d’une instance Adobe Campaign Classic opérationnelle, y compris d’une base de données configurée.
-   * Si vous avez besoin de détails supplémentaires sur l’installation et la configuration d’Adobe Campaign Classic, veuillez vous reporter à la section [Documentation d’Adobe Campaign Classic,](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=fr) et particulièrement au Guide d’installation et de configuration.
+   * Si vous avez besoin de détails supplémentaires sur la configuration de Adobe Campaign Classic, reportez-vous à la section [Documentation Adobe Campaign Classic,](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=fr) notamment le guide Installation et configuration .
 * Accès de l’administrateur à AEM
 
 ## Installer le module d’intégration AEM dans Campaign {#install-package}
 
-Le package d’**intégration d’AEM** à Adobe Campaign comprend plusieurs configurations standard nécessaires pour se connecter à AEM.
+La variable **Intégration AEM** dans Adobe Campaign comprend plusieurs configurations standard nécessaires pour se connecter à AEM.
 
 1. En tant qu’administrateur, connectez-vous à l’instance Adobe Campaign à l’aide de la console cliente.
 
@@ -112,7 +112,7 @@ Le package d’intégration crée automatiquement l’opérateur `aemserver` qu�
    >
    >Par défaut, aucune zone de sécurité n’est configurée pour l’opérateur. Pour qu’AEM se connecte à Adobe Campaign, vous devez sélectionner une zone comme décrit dans les étapes précédentes.
    >
-   >Adobe recommande vivement de créer une zone de sécurité dédiée à AEM afin d’éviter tout problème de sécurité. Pour plus d’informations à ce sujet, reportez-vous à la [documentation d’Adobe Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html?lang=fr).
+   >Adobe recommande vivement de créer une zone de sécurité dédiée à AEM afin d’éviter tout problème de sécurité. Pour plus d’informations sur cette rubrique, voir [Documentation Adobe Campaign Classic.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html?lang=fr)
 
 1. Dans le client Campaign, revenez à l’opérateur `aemserver` et sélectionnez l’onglet **Général**.
 

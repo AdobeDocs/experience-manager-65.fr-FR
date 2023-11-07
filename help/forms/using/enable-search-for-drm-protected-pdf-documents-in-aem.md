@@ -1,7 +1,7 @@
 ---
 title: Activer AEM pour rechercher des documents PDF protégés par la sécurité des documents
 seo-title: Enable AEM to search document security protected PDF documents
-description: Découvrez comment permettre à la recherche AEM native d’effectuer une recherche de texte intégral sur des documents PDF protégés par DRM.
+description: Découvrez comment activer la recherche AEM native pour effectuer une recherche de texte intégral sur des documents de PDF protégés DRM.
 seo-description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.
 uuid: ec6e5d53-a74c-4958-a389-7937d073c083
 contentOwner: khsingh
@@ -12,19 +12,19 @@ discoiquuid: b79c147c-f846-4e48-bec0-8b658502bb6f
 docset: aem65
 feature: Document Security
 exl-id: 7cf17fb6-021a-473e-bc3b-27c317953002
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '697'
-ht-degree: 100%
+ht-degree: 59%
 
 ---
 
 # Activez AEM pour rechercher des documents PDF protégés par la sécurité des documents.{#enable-aem-to-search-document-security-protected-pdf-documents}
 
-La recherche AEM peut rechercher et localiser des ressources AEM et effectuer une recherche de texte dans les formats de document couramment utilisés tels que les fichiers texte brut, les documents Microsoft Office et les fichiers PDF. Vous pouvez également étendre la recherche native pour effectuer une recherche en texte intégral sur les [documents PDF protégés par la sécurité documentaire AEM](../../forms/using/admin-help/document-security.md). Pour permettre à AEM d’effectuer une recherche en texte intégral sur ces documents, procédez comme suit :
+AEM recherche permet de rechercher et de localiser AEM ressources et d’effectuer une recherche de texte dans divers formats de document couramment utilisés tels que les fichiers texte brut, les documents Microsoft Office et les documents PDF. Vous pouvez également étendre la recherche native pour effectuer une recherche de texte intégral sur [Documents PDF protégés par AEM Document Security](../../forms/using/admin-help/document-security.md). Pour permettre à AEM d’effectuer une recherche de texte intégral sur ces documents, procédez comme suit :
 
-1. Créez une connexion sécurisée
-1. Indexer un document PDF protégé par un exemple de stratégie
+1. Établissement d’une connexion sécurisée
+1. Index d’un exemple de document de PDF protégé par une stratégie
 
 ## Prérequis {#prerequisites}
 
@@ -47,32 +47,32 @@ La recherche AEM peut rechercher et localiser des ressources AEM et effectuer un
 
    1. Ajoutez le package sun.util.calendar au champ de préfixes de package ou de classes de placement sur la liste autorisée, puis cliquez sur **Enregistrer**.
 
-### Établir une connexion sécurisée entre les piles AEM Forms JEE et OSGi {#establish-a-secure-connection-between-aem-forms-jee-and-osgi-stacks}
+### Établir une connexion sécurisée entre les piles AEM Forms JEE et OSGi {#establish-a-secure-connection-between-aem-forms-jee-and-osgi-stacks}
 
-Vous pouvez utiliser l’une des méthodes suivantes pour créer une connexion sécurisée :
+Vous pouvez utiliser l’une des méthodes suivantes pour établir la connexion sécurisée :
 
-* Configurer le groupe de SDK client Adobe LiveCycle avec les informations d’identification d’administrateur d’AEM Forms on JEE
+* Configuration du bundle de SDK client Adobe LiveCycle avec les informations d’identification d’administrateur d’AEM Forms on JEE
 * Configurer le groupe de SDK client Adobe LiveCycle à l’aide de l’authentification mutuelle
 
-#### Configurer le groupe de SDK client Adobe LiveCycle avec les informations d’identification d’administrateur d’AEM Forms on JEE {#configure-adobe-livecycle-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
+#### Configuration du bundle de SDK client Adobe LiveCycle avec les informations d’identification d’administrateur d’AEM Forms on JEE {#configure-adobe-livecycle-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
 
 1. Ouvrez la console Web AEM. L’URL est la suivante : https://&#39;[server]:[port]&#39;/system/console/configMgr.
-1. Recherchez et ouvrez le **bundle Adobe LiveCycle Client SDK**. Spécifiez la valeur des champs suivants :
+1. Recherchez et ouvrez le **bundle Adobe LiveCycle Client SDK**. Spécifiez la valeur des champs suivants :
 
    * **URL du serveur** : spécifiez l’URL HTTPS d’AEM Forms on JEE. Pour activer la communication via https, redémarrez le serveur avec le paramètre -Djavax.net.ssl.trustStore=&lt;chemin du fichier de stockage de clés AEM Forms on JEE>.
    * **Nom du service** : ajoutez RightsManagementService à la liste des services spécifiés.
-   * **Nom d’utilisateur :** indiquez le nom d’utilisateur du compte AEM Forms on JEE à utiliser pour lancer des appels à partir du serveur AEM. Le compte spécifié doit disposer des autorisations pour démarrer Document services sur le serveur AEM Forms on JEE.
-   * **Mot de passe** : indiquez le mot de passe du compte AEM Forms on JEE mentionné dans le champ Nom d’utilisateur.
+   * **Nom d’utilisateur :** indiquez le nom d’utilisateur du compte AEM Forms on JEE à utiliser pour lancer des appels à partir du serveur AEM. Le compte spécifié doit disposer des autorisations nécessaires pour démarrer Document Services sur le serveur AEM Forms on JEE.
+   * **Password**: indiquez le mot de passe du compte AEM Forms on JEE mentionné dans le champ Nom d’utilisateur .
 
-   Cliquez sur **Enregistrer**. AEM est activé pour effectuer une recherche de documents PDF protégés par la sécurité documentaire.
+   Cliquez sur **Enregistrer**. AEM est activé pour rechercher des documents de PDF protégés par Document Security.
 
 #### Configurer le groupe de SDK client Adobe LiveCycle à l’aide de l’authentification mutuelle {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
 1. Activez l’authentification mutuelle pour AEM Forms on JEE. Pour plus d’informations, voir [CAC et authentification mutuelle](https://helpx.adobe.com/fr/livecycle/kb/cac-mutual-authentication.html).
 1. Ouvrez la console Web AEM. L’URL est la suivante : https://&#39;[server]:[port]&#39;/system/console/configMgr.
-1. Recherchez et ouvrez le **bundle Adobe LiveCycle Client SDK**. Spécifiez la valeur des propriétés suivantes :
+1. Recherchez et ouvrez le **bundle Adobe LiveCycle Client SDK**. Spécifiez la valeur des propriétés suivantes :
 
-   * **URL du serveur** : indiquez l’URL HTTPS du serveur AEM Forms on JEE. Pour activer la communication via https, redémarrez le serveur AEM avec le paramètre -Djavax.net.ssl.trustStore=&lt;chemin du fichier de stockage de clés AEM Forms on JEE>.
+   * **URL du serveur** : indiquez l’URL HTTPS du serveur AEM Forms on JEE. Pour activer la communication via https, redémarrez le serveur AEM avec le répertoire -Djavax.net.ssl.trustStore=&lt;path of=&quot;&quot; aem=&quot;&quot; forms=&quot;&quot; on=&quot;&quot; jee=&quot;&quot; keystore=&quot;&quot; file=&quot;&quot;> .
    * **Activer SSL bidirectionnel** : activez l’option Activer SSL bidirectionnel.
    * **URL du fichier KeyStore** : indiquez l’URL du fichier de stockage de clés.
    * **URL du fichier TrustStore** : indiquez l’URL du fichier de magasin approuvé.
@@ -80,11 +80,11 @@ Vous pouvez utiliser l’une des méthodes suivantes pour créer une connexion s
    * **Mot de passe TrustStore** : indiquez le mot de passe du fichier de magasin approuvé.
    * **Nom du service** : ajoutez RightsManagementService à la liste des services spécifiés.
 
-   Cliquez sur **Enregistrer**. AEM est activé pour effectuer une recherche de documents PDF protégés par la sécurité documentaire.
+   Cliquez sur **Enregistrer**. AEM est activé pour la recherche de documents de PDF protégés par Document Security
 
-### Indexer un document PDF protégé par un exemple de stratégie {#index-a-sample-policy-protected-pdf-document}
+### Index d’un exemple de document de PDF protégé par une stratégie {#index-a-sample-policy-protected-pdf-document}
 
 1. Connectez-vous à AEM Assets en tant qu’administrateur.
-1. Créez un dossier dans AEM Digital Asset Manager et téléchargez les documents PDF protégés par une stratégie vers le dossier que vous venez de créer.
+1. Créez un dossier dans AEM Digital Asset Manager et téléchargez les documents de PDF protégés par une stratégie vers le dossier nouvellement créé.
 
-   Désormais, vous pouvez effectuer une recherche portant sur les documents protégés par une stratégie à l’aide de la recherche AEM.
+   Vous pouvez désormais effectuer des recherches dans les documents protégés par une stratégie à l’aide de la recherche AEM.

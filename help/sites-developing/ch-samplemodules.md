@@ -8,16 +8,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: df28180f-7af4-437d-8e91-bfd305f73113
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1176'
-ht-degree: 77%
+source-wordcount: '1174'
+ht-degree: 95%
 
 ---
 
 # Exemples de types de module d’IU ContextHub {#sample-contexthub-ui-module-types}
 
-ContextHub fournit plusieurs exemples de module d’IU que vous pouvez utiliser dans vos solutions. Les informations suivantes sont fournies :
+ContextHub fournit plusieurs exemples de module d’IU que vous pouvez utiliser dans vos solutions. Les informations suivantes sont fournies :
 
 * Fonctionnalités principales du module d’IU.
 * Où trouver le code source afin de pouvoir l’ouvrir à des fins d’apprentissage.
@@ -29,19 +29,19 @@ Pour plus d’informations sur l’ajout de modules d’IU à ContextHub, voir [
 
 Le type de module d’IU contexthub.base est le type de base pour tous les autres types de module d’IU. En tant que tel, il fournit des fonctionnalités génériques pour le rendu des données de magasin.
 
-Les fonctionnalités suivantes sont disponibles :
+Les fonctionnalités suivantes sont disponibles :
 
 * **Titre et icône :** spécifiez un titre pour le module d’IU et une icône. L’icône peut être référencée à l’aide d’une URL ou de la bibliothèque d’icônes de l’IU Coral.
-* **Stockage des données :** Identifiez un ou plusieurs magasins à partir desquels récupérer les données.
-* **Contenu :** Spécifiez le contenu qui s’affiche dans le module d’IU tel qu’il apparaît dans la barre d’outils ContextHub.
+* **Stockage des données :** identifiez un ou plusieurs magasins à partir desquels récupérer les données.
+* **Contenu :** spécifiez le contenu qui s’affiche dans le module d’IU tel qu’il apparaît dans la barre d’outils ContextHub.
 * **Contenu de fenêtre contextuelle :** spécifiez le contenu visible dans la fenêtre contextuelle lorsque vous cliquez ou appuyez sur le module d’IU.
-* **Mode Plein écran :** Permet de contrôler si le mode plein écran est autorisé.
+* **Mode Plein écran :** permet de contrôler si le mode plein écran est autorisé.
 
 Le code source est disponible dans /libs/granite/contexthub/code/ui/container/js/ContextHub.IU.BaseModuleRenderer.js.
 
 ### Configuration {#configuration}
 
-Configurez le module d’IU contexthub.base à l’aide d’un objet JavaScript au format JSON. Incluez l’une des propriétés suivantes pour configurer les fonctionnalités du module d’IU :
+Configurez le module d’IU contexthub.base à l’aide d’un objet JavaScript au format JSON. Incluez l’une des propriétés suivantes pour configurer les fonctionnalités du module d’IU :
 
 * **image :** URL d’une image à afficher en tant qu’icône.
 * **icon :** nom d’une classe d’icône [IU Coral](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html). Si vous spécifiez une valeur pour les propriétés de l’icône et de l’image, l’image est utilisée.
@@ -52,11 +52,11 @@ Configurez le module d’IU contexthub.base à l’aide d’un objet JavaScript 
 * **template :** modèle [Handlebars](https://handlebarsjs.com/) qui spécifie le contenu à afficher dans la barre d’outils ContextHub. Utilisez au maximum deux balises `<p>`.
 
 * **storeMapping :** mappage de clé/magasin. Utilisez la clé dans les modèles Handlebar pour accéder aux données de magasin ContextHub associées.
-* **list :** tableau d’éléments à afficher en tant que liste dans une fenêtre contextuelle lorsque l’on clique sur le module d’IU. Si vous ajoutez cet élément, n’incluez pas popoverTemplate. La valeur est un tableau d’objets avec les clés suivantes :
+* **list :** tableau d’éléments à afficher en tant que liste dans une fenêtre contextuelle lorsque l’on clique sur le module d’IU. Si vous ajoutez cet élément, n’incluez pas popoverTemplate. La valeur est un tableau d’objets avec les clés suivantes :
 
-   * title: Le texte à afficher pour cet élément
-   * image : (Facultatif) URL d’une image qui doit être affichée à gauche.
-   * icon : (Facultatif) Une classe d’icône CUI qui doit s’afficher à gauche ; ignoré si une image est spécifiée
+   * title : le texte à afficher pour cet élément ;
+   * image : (facultatif) URL d’une image qui doit être affichée à gauche ;
+   * icon : (facultatif) une classe d’icône CUI qui doit s’afficher à gauche ; ignorée si une image est spécifiée ;
    * selected : (facultatif) valeur booléenne qui spécifie si cet élément doit être affiché comme sélectionné (true=selected). Par défaut, les éléments sélectionnés sont visibles en gras. Utilisez une propriété `listType` pour configurer d’autres aspects (voir ci-dessous).
 
 * **listType :** style à utiliser pour les éléments de liste déroulante. Utilisez l’une des valeurs suivantes :
@@ -132,7 +132,7 @@ Les instances du module d’IU contexthub.datetime ne requièrent pas de valeur 
 
 ## Type de module d’IU contexthub.location {#contexthub-location-ui-module-type}
 
-Le module d’IU contextthub.location affiche la longitude et la latitude du client. Le module présente une fenêtre contextuelle qui affiche une carte Google sur laquelle vous pouvez cliquer pour modifier l’emplacement actuel. Le module obtient des informations à partir d’un magasin ContextHub nommé geolocation et basé sur [contexthub.geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) magasin candidat.
+Le module d’IU contextthub.location affiche la longitude et la latitude du client. Le module présente une fenêtre contextuelle qui affiche une carte Google sur laquelle vous pouvez cliquer pour modifier l’emplacement actuel. Le module obtient des informations à partir d’un magasin ContextHub nommé geolocation et basé sur le magasin candidat [granite.geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate).
 
 ![chlimage_1-80](assets/chlimage_1-80a.png)
 
@@ -183,7 +183,7 @@ Le code source du module est disponible dans /libs/granite/contextthub/component
 
 ### Configuration {#configuration-5}
 
-Les instances du module d’IU contextthub.screen-orientation ne requièrent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module. Notez que la propriété `clickable` est définie sur `false` par défaut. Si vous remplacez la configuration par défaut pour définir `clickable` sur `true`, un clic sur le module fait apparaître une fenêtre contextuelle dans laquelle vous pouvez sélectionner l’orientation.
+Les instances du module d’IU contextthub.screen-orientation ne requièrent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module. La variable `clickable` est `false` par défaut. Si vous remplacez la configuration par défaut pour définir `clickable` sur `true`, un clic sur le module fait apparaître une fenêtre contextuelle dans laquelle vous pouvez sélectionner l’orientation.
 
 ```xml
 {
@@ -223,7 +223,7 @@ Les instances du module d’IU contexthub.tagcloud ne requièrent pas de valeur 
 
 ## Type de module d’IU granite.profile {#granite-profile-ui-module-type}
 
-Le module d’IU ContextHub granite.profile affiche le nom d’affichage de l’utilisateur actuel. La fenêtre contextuelle révèle l’identifiant de connexion de l’utilisateur et permet de modifier la valeur du nom affiché. Le module obtient des informations à partir d’un magasin ContextHub nommé profile , basé sur la variable [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) magasin candidat.
+Le module d’IU ContextHub granite.profile affiche le nom d’affichage de l’utilisateur actuel. La fenêtre contextuelle révèle l’identifiant de connexion de l’utilisateur et permet de modifier la valeur du nom affiché. Le module obtient des informations à partir d’un magasin ContextHub nommé profile et basé sur le magasin candidat [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate).
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 

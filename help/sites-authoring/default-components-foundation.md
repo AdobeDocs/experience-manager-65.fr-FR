@@ -2,7 +2,7 @@
 title: Composants de base
 description: Découvrez les composants de base dans Adobe Experience Manager 6.5.
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '7204'
 ht-degree: 97%
@@ -350,7 +350,7 @@ Le composant Flash vous permet de charger une animation Flash. Vous pouvez faire
 
    * **Mode Fenêtre**
 
-     Permet de spécifier comment la fenêtre doit apparaître (opaque, transparente ou comme une fenêtre distincte, par exemple).
+     Affichage de la fenêtre, par exemple, opaque, transparente ou en tant que fenêtre distincte (solide).
 
    * **Couleur d’arrière-plan**
 

@@ -8,10 +8,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fd96f30c-0616-445e-adb9-050d52862ffc
 exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
-source-git-commit: 6fe5e617ceac3c97a77de2d574ec370f30887330
-workflow-type: ht
-source-wordcount: '338'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 91%
 
 ---
 
@@ -26,11 +26,11 @@ Adobe Campaign est un ensemble de solutions qui vous permet de personnaliser et
 >
 >Ce document décrit l’intégration d’Adobe Campaign à AEM 6.5, la solution sur site ou AEM hébergée par AMS.
 >
->Pour plus d’informations sur l’intégration d’Adobe Campaign à AEM as a Cloud Service, la solution d’AEM native du cloud, [veuillez consulter ce document.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html)
+>Pour plus d’informations sur l’intégration d’Adobe Campaign à AEM as a Cloud Service, la solution d’AEM native au cloud, [voir ce document.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html)
 
 ## Intégrer à Adobe Campaign Classic {#acc}
 
-Il existe de nombreuses versions d’Adobe Campaign Classic (ACC). La prise en charge de l’intégration à AEM dépend de la version d’ACC que vous avez mise en œuvre et de si AEM est installé sur site dans Adobe Manage Services (AMS).
+Il existe plusieurs versions de Adobe Campaign Classic (ACC). La prise en charge de l’intégration à AEM dépend de la version d’ACC que vous avez mise en œuvre et de si AEM est installé sur site dans Adobe Manage Services (AMS).
 
 | Version d’ACC | Intégration à AEM 6.5 <br>sur site | Intégration à AEM 6.5<br>AMS |
 |---|---|---|

@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1455'
 ht-degree: 93%
 
 ---
@@ -57,7 +57,7 @@ Avant d’effectuer par programmation une opération de l’API du client de ser
 
 **Définir les options d’exécution des droits d’utilisation**
 
-Vous devez définir les options d’exécution des droits d’utilisation avant de pouvoir restituer un formulaire dont les droits sont activés. Vous devez également spécifier l’alias des informations d’identification utilisé pour appliquer des droits d’utilisation à un formulaire. Une fois la valeur de l’alias définie, vous pouvez spécifier chaque droit d’utilisation à appliquer au formulaire.
+Définissez les options d’exécution des droits d’utilisation pour générer un formulaire dont les droits sont activés. Vous devez également spécifier l’alias des informations d’identification utilisé pour appliquer des droits d’utilisation à un formulaire. Une fois la valeur de l’alias définie, vous pouvez spécifier chaque droit d’utilisation à appliquer au formulaire.
 
 **Restituer un formulaire dont les droits sont activés**
 

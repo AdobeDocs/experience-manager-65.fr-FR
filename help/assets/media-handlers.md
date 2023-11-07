@@ -6,10 +6,10 @@ contentOwner: AG
 role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: acc4b78f551e0e0694f41149fff7e24d855f504f
-workflow-type: ht
-source-wordcount: '2164'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '2156'
+ht-degree: 86%
 
 ---
 
@@ -23,7 +23,7 @@ Les gestionnaires de médias sont des services d’[!DNL Assets] qui effectuent 
 
 >[!NOTE]
 >
->Reportez-vous à la page [Formats pris en charge par Assets](assets-formats.md) pour une description de tous les formats pris en charge par [!DNL Assets], ainsi que des fonctionnalités prises en charge pour chaque format.
+>Voir [Formats pris en charge par Assets](assets-formats.md) pour une description de tous les formats pris en charge par [!DNL Assets] et fonctionnalités prises en charge pour chaque format.
 
 ## Gestionnaires de médias par défaut {#default-media-handlers}
 
@@ -47,11 +47,11 @@ Les gestionnaires de médias suivants sont disponibles dans [!DNL Assets] et gè
 | [!UICONTROL EPubHandler] | com.day.cq.dam.handler.standard.epub.EPubHandler | application/epub+zip |
 | [!UICONTROL GenericAssetHandler] | com.day.cq.dam.core.impl.handler.GenericAssetHandler | Solution de secours au cas où aucun autre gestionnaire n’aurait été trouvé pour extraire des données d’une ressource |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-Tous les gestionnaires effectuent les tâches suivantes :
+Tous les gestionnaires effectuent les tâches suivantes :
 
-* extraction de toutes les métadonnées disponibles dans la ressource.
+* extraction de toutes les métadonnées disponibles de la ressource.
 * création d’une image de miniature à partir d’une ressource.
 
 Pour afficher les gestionnaires de médias actifs, procédez comme suit :
@@ -74,9 +74,9 @@ L’exemple suivant indique comment développer le workflow de **[!UICONTROL syn
 
 ### Désactivation ou activation d’un gestionnaire de médias {#disabling-enabling-a-media-handler}
 
-Les gestionnaires de médias peuvent être désactivés ou activés par le biais de la console de gestion web Apache Felix. Lorsque le gestionnaire de médias est désactivé, ses tâches ne sont pas réalisées sur les ressources.
+Les gestionnaires de médias peuvent être désactivés ou activés via la console de gestion web Apache Felix. Lorsque le gestionnaire de médias est désactivé, ses tâches ne sont pas effectuées sur les ressources.
 
-Pour activer/désactiver un gestionnaire de médias :
+Pour activer/désactiver un gestionnaire de médias :
 
 1. Dans votre navigateur, accédez à la page suivante : `https://<host>:<port>/system/console/components`.
 1. Cliquez sur **[!UICONTROL Désactiver]** en regard du nom du gestionnaire de médias. Par exemple : `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
@@ -85,7 +85,7 @@ Pour activer/désactiver un gestionnaire de médias :
 
 ### Création d’un gestionnaire de médias {#creating-a-new-media-handler}
 
-Pour prendre en charge un nouveau type de médias ou exécuter des tâches spécifiques sur une ressource, il est nécessaire de créer un gestionnaire de médias. Cette section décrit la procédure à suivre.
+Pour prendre en charge un nouveau type de média ou exécuter des tâches spécifiques sur une ressource, il est nécessaire de créer un gestionnaire de médias. Cette section décrit la procédure à suivre.
 
 #### Classes et interfaces importantes {#important-classes-and-interfaces}
 
@@ -112,9 +112,9 @@ L’interface et les classes sont les suivantes :
 * Classe `com.day.cq.dam.core.AbstractSubAssetHandler` :
    * Cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes, ainsi que la fonctionnalité commune d’extraction de sous-ressources.
    * La meilleure façon de démarrer une implémentation est d’hériter d’une implémentation abstraite fournie qui prend en charge l’essentiel du traitement et qui fournit un comportement raisonnable par défaut : à savoir la classe com.day.cq.dam.core.AbstractAssetHandler.
-   * Cette classe fournit déjà un descripteur de service abstrait. Donc, si vous héritez de cette classe et que vous utilisez le plug-in maven-sling-plugin, assurez-vous que vous avez défini l’indicateur inherit sur true.
+   * Cette classe fournit déjà un descripteur de service abstrait. Ainsi, si vous héritez de cette classe et que vous utilisez le plug-in maven-sling-plugin, assurez-vous que vous avez défini l’indicateur inherit sur true.
 
-Les méthodes suivantes doivent être implémentées :
+Les méthodes suivantes doivent être implémentées :
 
 * `extractMetadata()` : cette méthode extrait toutes les métadonnées disponibles.
 * `getThumbnailImage()` : cette méthode crée une miniature de la ressource transmise.
@@ -151,8 +151,8 @@ Lorsque vous téléchargez un fichier TXT dans [!DNL Experience Manager], après
       * Id d’artefact : myBundle
       * Nom : mon lot [!DNL Experience Manager]
       * Description : Voici mon lot [!DNL Experience Manager].
-   1. Cliquez sur **[!UICONTROL Terminer]**.
 
+   1. Cliquez sur **[!UICONTROL Terminer]**.
 
 1. Réglez le compilateur [!DNL Java] sur la version 1.5 :
 
@@ -161,9 +161,9 @@ Lorsque vous téléchargez un fichier TXT dans [!DNL Experience Manager], après
 
       * Niveau de conformité du compilateur
       * Compatibilité des fichiers .class générés
-      * Compatibilité source
-   1. Cliquez sur **[!UICONTROL OK]**. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Oui]**.
+      * Compatibilité des sources
 
+   1. Cliquez sur **[!UICONTROL OK]**. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Oui]**.
 
 1. Remplacez le code du fichier `pom.xml` par le code suivant :
 
@@ -282,14 +282,14 @@ Lorsque vous téléchargez un fichier TXT dans [!DNL Experience Manager], après
     </dependencies>
    ```
 
-1. Créez le module `com.day.cq5.myhandler` qui contient les classes [!DNL Java] sous `myBundle/src/main/java` :
+1. Créez le package `com.day.cq5.myhandler` qui contient les classes [!DNL Java] sous `myBundle/src/main/java` :
 
-   1. Sous myBundle, cliquez avec le bouton droit sur `src/main/java`, sélectionnez Nouveau, puis Module.
+   1. Sous myBundle, cliquez avec le bouton droit sur `src/main/java`, sélectionnez Nouveau, puis Package.
    1. Appelez-le `com.day.cq5.myhandler`, puis cliquez sur Terminer.
 
 1. Créez la classe [!DNL Java] `MyHandler` :
 
-   1. Dans [!DNL Eclipse], sous `myBundle/src/main/java`, cliquez avec le bouton droit de la souris sur le module `com.day.cq5.myhandler`. Sélectionnez [!UICONTROL Nouveau], puis [!UICONTROL Classe].
+   1. Dans [!DNL Eclipse], sous `myBundle/src/main/java`, cliquez avec le bouton droit de la souris sur le package `com.day.cq5.myhandler`. Sélectionnez [!UICONTROL Nouveau], puis [!UICONTROL Classe].
    1. Dans la boîte de dialogue, attribuez le nom à la classe [!DNL Java] `MyHandler` puis cliquez sur [!UICONTROL Terminé]. [!DNL Eclipse] crée et ouvre le fichier `MyHandler.java`.
    1. Dans `MyHandler.java`, remplacez le code existant par le suivant, puis enregistrez les modifications :
 
@@ -438,8 +438,8 @@ Lorsque vous téléchargez un fichier TXT dans [!DNL Experience Manager], après
    1. Cliquez avec le bouton droit sur le projet `myBundle`, sélectionnez **[!UICONTROL Exécuter en tant que]**, puis **[!UICONTROL Installation Maven]**.
    1. Le lot `myBundle-0.0.1-SNAPSHOT.jar` (contenant la classe compilée) est créé sous `myBundle/target`.
 
-1. Dans CRX Explorer, créez un nœud sous `/apps/myApp`. Nom = `install`, type = `nt:folder`.
-1. Copiez le lot `myBundle-0.0.1-SNAPSHOT.jar` et enregistrez-le sous `/apps/myApp/install` (avec WebDAV, par exemple). Le nouveau gestionnaire de texte est à présent actif dans [!DNL Experience Manager].
+1. Dans l’explorateur CRX, créez un noeud sous `/apps/myApp`. Nom = `install`, type = `nt:folder`.
+1. Copier le lot `myBundle-0.0.1-SNAPSHOT.jar` et stockez-le sous `/apps/myApp/install` (par exemple, avec WebDAV). Le nouveau gestionnaire de texte est à présent actif dans [!DNL Experience Manager].
 1. Dans votre navigateur, ouvrez la [!UICONTROL console de gestion web Apache Felix]. Sélectionnez l’onglet [!UICONTROL Composants] et désactivez le gestionnaire de texte par défaut `com.day.cq.dam.core.impl.handler.TextHandler`;
 
 ## Gestionnaire de médias en ligne de commande {#command-line-based-media-handler}
@@ -465,7 +465,7 @@ Le processus `CommandLineProcess` effectue les opérations suivantes par ordre d
 * Exécute la commande définie par les arguments de l’étape. La commande est exécutée dans le répertoire temporaire avec les autorisations de l’utilisateur exécutant [!DNL Experience Manager].
 * Renvoie le résultat dans le dossier de rendu du serveur [!DNL Experience Manager].
 * Supprime le répertoire temporaire.
-* Crée des miniatures basées sur ces rendus, si spécifié. Le nombre et les dimensions des miniatures sont définis par les arguments de l’étape.
+* Crée des miniatures en fonction de ces rendus, le cas échéant. Le nombre et les dimensions des miniatures sont définis par les arguments de l’étape.
 
 ### Exemple d’utilisation d’[!DNL ImageMagick] {#an-example-using-imagemagick}
 
@@ -493,8 +493,8 @@ Installez d’abord [!DNL ImageMagick] sur le disque hébergeant le serveur [!DN
 
 Pour tester le workflow modifié, ajoutez une ressource à `/content/dam`.
 
-1. Dans le système de fichiers, sélectionnez une image TIFF de votre choix. Renommez-la `myImage.tiff` et copiez-la dans `/content/dam` en utilisant, par exemple, WebDAV.
-1. Accédez à la console **[!UICONTROL CQ5 DAM]**, par exemple `https://localhost:4502/libs/wcm/core/content/damadmin.html`.
+1. Dans le système de fichiers, sélectionnez une image TIFF de votre choix. Renommez-le en `myImage.tiff` et copiez-le dans `/content/dam`, par exemple, en utilisant WebDAV.
+1. Accédez à la console **[!UICONTROL CQ5 DAM]**, par exemple, `https://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Ouvrez la ressource **[!UICONTROL myImage.tiff]** et vérifiez que l’image inversée et les trois miniatures ont bien été créées.
 
 #### Configuration de l’étape du processus CommandLineProcess {#configuring-the-commandlineprocess-process-step}
@@ -507,7 +507,7 @@ Séparez les valeurs des [!UICONTROL Arguments de processus] en utilisant une vi
 |---|---|
 | mime:&lt;mime-type> | Argument facultatif. Le processus est appliqué si la ressource présente le même type MIME que celui de l’argument. <br>Plusieurs types MIME peuvent être définis. |
 | tn:&lt;width>:&lt;height> | Argument facultatif. Le processus crée une miniature avec les dimensions définies dans l’argument. <br>Plusieurs miniatures peuvent être définies. |
-| cmd: &lt;command> | Définit la commande exécutée. La syntaxe dépend de l’outil de ligne de commande. Une seule commande peut être définie. <br>Les variables suivantes peuvent être utilisées pour créer la commande : <br>`${filename}` : nom du fichier d’entrée, par exemple original.jpg <br> `${file}` : chemin d’accès complet du fichier d’entrée, par exemple `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}` : répertoire du fichier d’entrée, par exemple `/tmp/cqdam0816.tmp` <br>`${basename}` : nom du fichier d’entrée sans son extension, par exemple original <br>`${extension}` : extension du fichier d’entrée, par exemple JPG. |
+| cmd: &lt;command> | Définit la commande exécutée. La syntaxe dépend de l’outil de ligne de commande. Une seule commande peut être définie. <br>Les variables suivantes peuvent être utilisées pour créer la commande :<br>`${filename}`: nom du fichier d’entrée, par exemple original.jpg <br> `${file}`: chemin d’accès complet au fichier d’entrée, par exemple : `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: répertoire du fichier d’entrée, par exemple, `/tmp/cqdam0816.tmp` <br>`${basename}`: nom du fichier d’entrée sans son extension, par exemple, original <br>`${extension}`: extension du fichier d’entrée, par exemple, JPG. |
 
 Par exemple, si [!DNL ImageMagick] est installé sur le disque hébergeant le serveur [!DNL Experience Manager] et que vous créez une étape de processus en utilisant [!UICONTROL CommandLineProcess] en tant qu’implémentation et les valeurs suivantes en tant qu’[!UICONTROL arguments de processus] :
 
@@ -530,4 +530,3 @@ Utilisez les [!UICONTROL Arguments de processus] suivants pour créer le rendu w
 >[!MORELIKETHIS]
 >
 >* [Traitement des ressources](assets-workflow.md)
-

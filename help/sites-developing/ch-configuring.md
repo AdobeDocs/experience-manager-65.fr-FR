@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1793'
-ht-degree: 98%
+source-wordcount: '1788'
+ht-degree: 96%
 
 ---
 
 # Configuration de ContextHub {#configuring-contexthub}
 
-ContextHub est un framework permettant de stocker, manipuler et présenter des données contextuelles. Pour plus de détails sur ContextHub, voir la [documentation destinée aux développeurs](/help/sites-developing/contexthub.md). ContextHub remplace [ClientContext](/help/sites-administering/client-context.md) dans l’interface utilisateur tactile.
+ContextHub est un framework permettant de stocker, manipuler et présenter des données contextuelles. Pour plus d’informations sur ContextHub, voir [documentation destinée aux développeurs](/help/sites-developing/contexthub.md). ContextHub remplace [ClientContext](/help/sites-administering/client-context.md) dans l’interface utilisateur tactile.
 
 Configurez la barre d’outils [ContextHub](/help/sites-developing/contexthub.md) pour contrôler si elle apparaît dans le mode d’aperçu, pour créer des magasins ContextHub et pour ajouter des modules d’interface utilisateur à l’aide de l’interface utilisateur optimisée pour les écrans tactiles.
 
@@ -84,7 +84,7 @@ Ajoutez un mode d’IU afin de regrouper les modules ContextHub associés. Lorsq
 1. Saisissez les valeurs pour les propriétés suivantes :
 
    * Titre du mode d’IU : titre qui identifie le mode d’IU.
-   * Icône de mode : sélecteur de l’[icône de CoralUI](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) à utiliser ; par exemple `coral-Icon--user`.
+   * Icône de mode : sélecteur pour [Icône de l’IU Coral](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) pour utiliser, par exemple, `coral-Icon--user`
    * Activé : sélectionnez cette option pour afficher le mode d’interface utilisateur dans la barre d’outils ContextHub
 
 1. Cliquez ou appuyez sur Enregistrer.
@@ -103,7 +103,7 @@ Les propriétés du module d’IU incluent une configuration de détails où vou
 | [contexthub.browserinfo](/help/sites-developing/ch-samplemodules.md#contexthub-browserinfo-ui-module-type) | Affiche des informations sur le navigateur. | surferinfo |
 | [contexthub.datetime](/help/sites-developing/ch-samplemodules.md#contexthub-datetime-ui-module-type) | Affiche la date et l’heure. | datetime |
 | [contexthub.device](/help/sites-developing/ch-samplemodules.md#contexthub-device-ui-module-type) | Affiche l’appareil client | emulators |
-| [contexthub.location](/help/sites-developing/ch-samplemodules.md#contexthub-location-ui-module-type) | Affiche la latitude et la longitude du client, ainsi que l’emplacement sur une carte. Vous permet de modifier l’emplacement. | geolocation |
+| [contexthub.location](/help/sites-developing/ch-samplemodules.md#contexthub-location-ui-module-type) | Affiche la latitude et la longitude du client ou de la cliente, ainsi que l’emplacement sur une carte. Vous permet de modifier l’emplacement. | geolocation |
 | [contexthub.screen-orientation](/help/sites-developing/ch-samplemodules.md#contexthub-screen-orientation-ui-module-type) | Affiche l’orientation de l’écran de l’appareil (paysage ou portrait). | emulators |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplemodules.md#contexthub-tagcloud-ui-module-type) | Affiche des statistiques sur les balises de page. | tagcloud |
 | [granite.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | Affiche les informations de profil de l’utilisateur actuel, y compris les authorizableID, displayName et familyName. Vous pouvez modifier la valeur du nom d’affichage (displayName) et du nom de famille (familyName). | profile |
@@ -145,7 +145,7 @@ AEM fournit des exemples de candidats de magasins sur lesquels vous pouvez baser
 | [aem.resolvedsegments](/help/sites-developing/ch-samplestores.md#aem-resolvedsegments-sample-store-candidate) | Stocke les segments actuellement résolus. Écoute le service ContextHub SegmentManager pour mettre à jour automatiquement le magasin. |
 | [contexthub.geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) | Stocke la latitude et la longitude de l’emplacement du navigateur. |
 | [contexthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) | Stocke la date, l’heure et la saison actuelles de l’emplacement du navigateur. |
-| [granite.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) | Définit les propriétés et les fonctionnalités d’un certain nombre d’appareils et détecte l’appareil client actuel. |
+| [granite.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) | Définit les propriétés et les fonctionnalités de plusieurs appareils et détecte l’appareil client actuel. |
 | [contexthub.generic-jsonp](/help/sites-developing/ch-samplestores.md#contexthub-generic-jsonp-sample-store-candidate) | Récupère et stocke des données à partir d’un service JSONP. |
 | [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) | Stocke les données de profil de l’utilisateur actuel. |
 | [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) | Stocke des informations sur le client, telles que les informations relatives à l’appareil, le type de navigateur et l’orientation de la fenêtre. |

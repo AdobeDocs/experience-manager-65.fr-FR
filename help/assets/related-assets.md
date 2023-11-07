@@ -5,9 +5,9 @@ contentOwner: AG
 role: User
 feature: Collaboration,Asset Management
 exl-id: ddb69727-74a0-4a4d-a14e-7d3bb5ceea2a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '630'
 ht-degree: 62%
 
 ---

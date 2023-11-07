@@ -9,15 +9,15 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1794'
-ht-degree: 48%
+ht-degree: 50%
 
 ---
 
-
-# Création d’un Forms adaptatif basé sur des composants principaux {#creating-an-adaptive-form-core-components}
+# Créer un formulaire adaptatif basé sur des composants principaux {#creating-an-adaptive-form-core-components}
 
 
 <span class="preview"> Adobe recommande d’utiliser les composants principaux pour [Ajout d’un Forms adaptatif à une page AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) ou [créer une Forms adaptative autonome](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
@@ -33,7 +33,7 @@ Les formulaires adaptatifs vous permettent de créer des formulaires attrayants,
 
 Avant de commencer, découvrez les types de composants de formulaires disponibles :
 
-* [Composants principaux de formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) : il s’agit de composants de capture de données normalisés. Ces composants offrent des fonctionnalités de personnalisation, un délai de développement réduit et de plus bas coûts de maintenance pour vos expériences d’inscription numérique. Un développeur ou une développeuse peut facilement personnaliser et mettre en forme ces composants. Adobe recommande d’utiliser ces composants modernes et extensibles pour développer des formulaires adaptatifs.
+* [Composants principaux de formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) : il s’agit de composants de capture de données normalisés. Ces composants offrent des fonctionnalités de personnalisation, un délai de développement réduit et de plus bas coûts de maintenance pour vos expériences d’inscription numérique. Un développeur ou une développeuse peut facilement personnaliser et mettre en forme ces composants. Adobe recommande d’utiliser ces composants modernes et extensibles pour développer le Forms adaptatif.
 
 * [Composants de base des formulaires adaptatifs](creating-adaptive-form.md) : il s’agit de composants de capture de données classiques (anciens). Vous pouvez continuer à les utiliser pour modifier votre formulaire adaptatif existant basé sur les composants de base. Si vous créez des formulaires, Adobe recommande d’utiliser  [Composants principaux de Forms adaptatif](/help/forms/using/create-adaptive-form.md) pour créer une Forms adaptative.
 
@@ -43,7 +43,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 
 * **Activation des composants principaux de Forms adaptatif pour votre environnement**: AEM projet Archetype version 41 ou ultérieure est requis pour [Activation des composants principaux pour votre environnement](/help/forms/using/enable-adaptive-forms-core-components.md). Lors de l’activation des composants principaux pour votre environnement, la variable **Forms adaptatif (composant principal)** modèle et thème Zone de travail sont ajoutés à votre environnement.
 
-* **Un modèle de formulaire adaptatif** : un modèle fournit une structure de base et définit l’aspect, c’est-à-dire la mise en page et les styles, d’un formulaire adaptatif. Il comporte des composants pré-formatés contenant certaines propriétés et une certaine structure de contenu. Il fournit également les options permettant de définir un thème et une action d’envoi. Le thème définit l’aspect et l’action d’envoi définit l’action à entreprendre lors de l’envoi d’un formulaire adaptatif. Vous pouvez également déployer des [exemples de modèles](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) à votre environnement. Ces fonctions vous aident à créer rapidement des formulaires.
+* **Modèle de formulaire adaptatif** : un modèle fournit une structure de base et définit l’aspect, c’est-à-dire la mise en page et les styles, d’un formulaire adaptatif. Il comporte des composants pré-formatés contenant certaines propriétés et une certaine structure de contenu. Il fournit également les options permettant de définir un thème et une action d’envoi. Le thème définit l’aspect et l’action d’envoi définit l’action à entreprendre lors de l’envoi d’un formulaire adaptatif. Vous pouvez également déployer des [exemples de modèles](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) à votre environnement. Ces fonctions vous aident à créer rapidement des formulaires.
 
   >[!NOTE]
   >
@@ -60,7 +60,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 > In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
-## Création d’un formulaire adaptatif {#create-an-adaptive-form}
+## Créer un formulaire adaptatif {#create-an-adaptive-form}
 
 1. Connectez-vous à votre [AEM instance d’auteur](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#author-and-publish-installs).
 
@@ -107,13 +107,13 @@ Une action Envoyer permet de choisir la destination des données capturées via 
 
 -->
 
-## Rediriger l’utilisateur vers une page ou afficher un message de remerciement lors de l’envoi du formulaire
+## Rediriger des personnes utilisatrices vers une page ou afficher un message de remerciement lors de la soumission du formulaire
 
-Lors de l’envoi d’un formulaire, vous pouvez rediriger la personne utilisatrice vers une autre page web ou vers un message. Pour rediriger la personne utilisatrice ou configurer le message de remerciement :
+Lors de la soumission d’un formulaire, vous pouvez rediriger la personne utilisatrice vers une autre page web ou un message. Pour rediriger la personne utilisatrice ou configurer le message de remerciement :
 
 1. Ouvrez l’explorateur de contenu , puis sélectionnez l’option **[!UICONTROL Conteneur de guide]** du formulaire adaptatif.
 1. Cliquez sur les propriétés du conteneur de guide. ![Propriétés du guide](/help/forms/using/assets/configure-icon.svg) Icône La boîte de dialogue Conteneur de formulaires adaptatifs s’ouvre.
-1. Ouvrez l’onglet **[!UICONTROL Envoi]**.
+1. Ouvrez l’onglet **[!UICONTROL Soumission]**.
 
    ![Cliquez sur l’icône de clé à molette pour ouvrir la boîte de dialogue Conteneur de formulaires adaptatifs afin de configurer une page de redirection ou un message de remerciement.](/help/forms/using/assets/adaptive-forms-submit-message.png)
 
@@ -151,7 +151,7 @@ Pour configurer un schéma JSON ou un modèle de données de formulaire pour vot
 
 ## Configuration d’un service de préremplissage  {#configure-prefill-service-for-form}
 
-Vous pouvez utiliser le service de préremplissage pour remplir automatiquement les champs d’un formulaire adaptatif à l’aide de données existantes. Lorsqu’un utilisateur ou une utilisatrice ouvre un formulaire, les valeurs de ces champs sont préremplies. Vous pouvez :
+Vous pouvez utiliser le service de préremplissage pour remplir automatiquement les champs d’un formulaire adaptatif à l’aide de données existantes. Lorsqu’un utilisateur ou une utilisatrice ouvre un formulaire, les valeurs de ces champs sont préremplies. Vous pouvez effectuer les actions suivantes :
 
 * [Créer un service de préremplissage personnalisé](/help/forms/using/prepopulate-adaptive-form-fields.md)
 * [Utiliser le service de préremplissage de modèle de données de formulaire](#fdm-prefill-service)
@@ -165,7 +165,7 @@ Vous pouvez utiliser le service de préremplissage de modèle de données de for
 1. Cliquez sur l’icône de propriétés de conteneur de formulaires adaptatifs ![propriétés de conteneur de formulaires adaptatifs](/help/forms/using/assets/configure-icon.svg). La boîte de dialogue Conteneur de formulaires adaptatifs pour configurer les modèles de données s’ouvre.
    ![Cliquez sur l’icône de clé à molette pour ouvrir la boîte de dialogue Conteneur de formulaires adaptatifs afin de configurer une page de redirection ou un message de remerciement.](/help/forms/using/assets/adaptive-forms-container-prefill-service.png)
 1. Sélectionnez un modèle de données de formulaire. Ouvrez l’onglet **[!UICONTROL De base]**. Dans le service de préremplissage, sélectionnez **[!UICONTROL Service de préremplissage de modèle de données de formulaire]**.
-1. Cliquez sur **[!UICONTROL Terminé]**. Votre formulaire adaptatif est maintenant configuré pour utiliser le préremplissage du modèle de données de formulaire. Vous pouvez désormais utiliser la variable [éditeur de règles](rule-editor.md) pour créer des règles afin de préremplir les champs du formulaire.
+1. Cliquez sur **[!UICONTROL Terminé]**. Votre formulaire adaptatif est maintenant configuré pour utiliser le préremplissage du modèle de données de formulaire. Vous pouvez désormais utiliser l’[éditeur de règles](rule-editor.md) pour créer des règles afin de préremplir les champs du formulaire.
 
 <!--
 ## Edit Form Model properties of an Adaptive Form {#edit-form-model}

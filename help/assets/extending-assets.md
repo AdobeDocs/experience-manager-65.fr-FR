@@ -5,10 +5,10 @@ contentOwner: AG
 role: Developer
 feature: Developer Tools
 exl-id: 0271c528-23b0-4a3a-b5e8-5baf6cdeecc7
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 50%
+source-wordcount: '250'
+ht-degree: 40%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 50%
 
 Asset Editor est le point d’accès principal que les utilisateurs d’un site web Enterprise Manager d’Adobe utilisent pour rechercher, afficher et manipuler les ressources numériques de votre référentiel.
 
-En tant que développeur [!DNL Experience Manager], vous pouvez personnaliser et étendre l’Éditeur de ressources de multiples façons pour proposer aux utilisateurs une interface et un ensemble de fonctionnalités adaptés spécialement à leurs besoins.
+Comme [!DNL Experience Manager] développeur, vous pouvez personnaliser et étendre l’Éditeur de ressources de plusieurs manières, en présentant aux utilisateurs une interface et un ensemble de fonctionnalités spécifiquement personnalisés.
 
 Les aspects suivants de la fonctionnalité peuvent être adaptés ou développés :
 

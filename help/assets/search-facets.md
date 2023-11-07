@@ -6,10 +6,10 @@ role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2416'
-ht-degree: 99%
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ Utilisez les facettes de recherche du panneau Filtres pour ajouter plus de granu
 
 En résumé, les facettes de recherche permettent de rechercher des ressources de plusieurs façons plutôt que selon un seul ordre taxonomique prédéterminé. Vous pouvez facilement descendre dans la hiérarchie jusqu’au niveau de détail souhaité pour effectuer une recherche plus précise.
 
-Par exemple, si vous recherchez une image, vous pouvez choisir si vous souhaitez une bitmap ou une image vectorielle. Vous pouvez réduire davantage la portée de la recherche en spécifiant le type MIME de l’image. De même, lors de la recherche de documents, vous pouvez spécifier le format, par exemple PDF ou MS Word.
+Par exemple, si vous recherchez une image, vous pouvez choisir si vous souhaitez une bitmap ou une image vectorielle. Vous pouvez réduire davantage la portée de la recherche en spécifiant le type MIME de l’image. De même, lors de la recherche de documents, vous pouvez spécifier le format, par exemple PDF ou MS Word.
 
 ## Ajout d’un prédicat {#adding-a-predicate}
 
@@ -113,7 +113,7 @@ Si vous souhaitez utiliser un nœud existant, indiquez-le à l’aide de la boî
 1. Cliquez sur le logo d’[!DNL Experience Manager], puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Formulaires de recherche]**.
 1. Sur la page **[!UICONTROL Formulaires de recherche]**, sélectionnez **[!UICONTROL Rail de recherche d’administration de ressources]**, puis cliquez sur **[!UICONTROL Modifier]**.
 1. Sur la page **[!UICONTROL Modifier le formulaire de recherche]**, faites glisser **[!UICONTROL Options du prédicat]** de l’onglet **[!UICONTROL Sélectionner le prédicat]** jusqu’au volet principal.
-1. Dans l’onglet **[!UICONTROL Paramètres]**, saisissez un libellé et un nom pour la propriété. Par exemple, pour rechercher des ressources en fonction de leur format, indiquez un nom convivial pour le libellé ; **[!UICONTROL Type de fichier]**, par exemple. Indiquez la propriété sur laquelle sera axée la recherche dans le champ de propriété ; `jcr:content/metadata/dc:format.`, par exemple.
+1. Dans l’onglet **[!UICONTROL Paramètres]**, saisissez un libellé et un nom pour la propriété. Par exemple, pour rechercher des ressources en fonction de leur format, spécifiez un nom convivial pour le libellé, par exemple : **[!UICONTROL Type de fichier]**. Spécifiez la propriété en fonction de laquelle la recherche doit être effectuée dans le champ de propriété, par exemple, `jcr:content/metadata/dc:format.`
 1. Utilisez l’une des méthodes suivantes :
 
    * Dans le champ **[!UICONTROL Nom de la propriété]**, indiquez le chemin du fichier JSON où sont définis les nœuds des options et spécifiez les paires clé-valeur correspondantes.
@@ -135,7 +135,7 @@ Le prédicat de propriété à plusieurs valeurs vous permet de rechercher plusi
 1. Cliquez sur le logo d’[!DNL Experience Manager], puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Formulaires de recherche]**.
 1. Dans la page Formulaires de recherche, sélectionnez **[!UICONTROL Rail de recherche d’administration de ressources]**, puis cliquez sur **[!UICONTROL Modifier]** ![icône modifier](assets/do-not-localize/aemassets_edit.png).
 1. Sur la page Modifier le formulaire de recherche, faites glisser **[!UICONTROL Prédicat de propriété à plusieurs valeurs]** de l’onglet **[!UICONTROL Sélectionner le prédicat]** jusqu’au volet principal.
-1. Dans l’onglet **[!UICONTROL Paramètres]**, saisissez un libellé et un texte d’espace réservé pour le prédicat. Indiquez le nom de la propriété sur laquelle sera axée la recherche dans le champ de propriété ; `jcr:content/metadata/dc:value`, par exemple. Vous pouvez également utiliser la boîte de dialogue de sélection pour sélectionner un nœud.
+1. Dans l’onglet **[!UICONTROL Paramètres]**, saisissez un libellé et un texte d’espace réservé pour le prédicat. Indiquez le nom de la propriété sur laquelle sera axée la recherche dans le champ de propriété ; par exemple, `jcr:content/metadata/dc:value`. Vous pouvez également utiliser la boîte de dialogue de sélection pour sélectionner un nœud.
 1. Assurez-vous que l’option **[!UICONTROL Prise en charge des délimiteurs]** est sélectionnée. Dans le champ **[!UICONTROL Délimiteurs d’entrée]**, spécifiez des délimiteurs pour séparer les valeurs individuelles. Par défaut, la virgule est spécifiée comme séparateur. Vous pouvez spécifier un autre délimiteur.
 1. Dans le champ **Description**, saisissez une description facultative, puis cliquez sur **[!UICONTROL Terminé]**.
 1. Accédez au panneau Filtres dans l’interface utilisateur d’[!DNL Assets]. Le prédicat **[!UICONTROL Propriété à plusieurs valeurs]** est ajouté au panneau.
@@ -148,7 +148,7 @@ Le prédicat Balise vous permet d’effectuer des recherches de ressources basé
 1. Cliquez sur le logo d’[!DNL Experience Manager], puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Formulaires de recherche]**.
 1. Sur la page Formulaires de recherche, sélectionnez **[!UICONTROL Rail de recherche d’administrateurs de ressources]**, puis appuyez sur **[!UICONTROL Modifier]** ![icône modifier](assets/do-not-localize/aemassets_edit.png).
 1. Sur la page Modifier le formulaire de recherche, faites glisser **[!UICONTROL Prédicat de balises]** de l’onglet Sélectionner le prédicat jusqu’au volet principal.
-1. Dans l’onglet Paramètres, saisissez un texte d’espace réservé pour le prédicat. Indiquez le nom de la propriété sur laquelle sera axée la recherche dans le champ de propriété ; *jcr:content/metadata/cq:tags*, par exemple. Vous pouvez également sélectionner un nœud dans CRXDE à partir de la boîte de dialogue de sélection.
+1. Dans l’onglet Paramètres, saisissez un texte d’espace réservé pour le prédicat. Indiquez le nom de la propriété sur laquelle sera axée la recherche dans le champ de propriété ; par exemple, *jcr:content/metadata/cq:tags*. Vous pouvez également sélectionner un nœud dans CRXDE à partir de la boîte de dialogue de sélection.
 1. Configurez la propriété Chemin d’accès racine aux balises de ce prédicat pour renseigner différentes balises dans la liste Balises.
 1. Sélectionnez **[!UICONTROL Option d’affichage de correspondance de toutes les balises]** pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
 

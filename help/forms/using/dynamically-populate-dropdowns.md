@@ -1,7 +1,7 @@
 ---
 title: Remplissage dynamique des listes déroulantes
 seo-title: Dynamically populating drop-down lists
-description: Procédure pour remplir de façon dynamique des listes déroulantes en fonction d’une certaine logique
+description: Procédure pour remplir de manière dynamique des listes déroulantes en fonction d’une certaine logique
 seo-description: Procedure to dynamically populate drop-down lists based on some logic
 uuid: b3408aee-ac24-43af-a380-a5892abf0248
 content-type: reference
@@ -10,10 +10,10 @@ topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
 docset: aem65
 exl-id: 64b88423-aaae-4258-bf48-73df5c9353ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '332'
+ht-degree: 49%
 
 ---
 
@@ -32,10 +32,10 @@ Supposons que vous souhaitez remplir la liste déroulante **Etat** en fonction d
 
 1. Créez un projet avec les modules suivants :
 
-   * Le lot contenant la logique pour remplir la liste déroulante, en l’occurrence une servlet.
-   * Le contenu, qui incorpore le fichier .jar et possède une ressource de liste déroulante. La servlet pointe vers cette ressource.
+   * Le lot contenant la logique pour remplir la liste déroulante, qui dans ce cas est une servlet.
+   * Le contenu, qui incorpore le fichier .jar et dispose d’une ressource déroulante. Le servlet pointe vers cette ressource.
 
-1. Créez une servlet basée sur le paramètre de requête Pays, qui renvoie un tableau contenant les noms des états du pays.
+1. Créez un servlet basé sur le paramètre de requête Pays, qui renvoie un tableau contenant les noms des états du pays.
 
    ```java
    @Component(metatype = false)
@@ -150,10 +150,10 @@ Supposons que vous souhaitez remplir la liste déroulante **Etat** en fonction d
 
    ![Création d’un nœud de liste déroulante](assets/dropdown-node.png)
 
-1. Empaquetez le nœud de contenu et incorporez le fichier .jar à un emplacement spécifique (par exemple /apps/myfolder/demo/install/). Déployez le même fichier sur le serveur.
-1. Créez un formulaire adaptatif et ajoutez deux listes déroulantes, Pays et Etat, à ce dernier. La liste Pays peut contenir les noms des pays. La liste Etat peut remplir de manière dynamique les noms des états pour le pays sélectionné dans la première liste.
+1. Regroupez le noeud de contenu et incorporez le fichier .jar à un emplacement spécifique (par exemple, /apps/myfolder/demo/install/). Déployez le même fichier sur le serveur.
+1. Créez un formulaire adaptatif et ajoutez-y deux listes déroulantes, Pays et Etat. La liste Pays peut inclure les noms des pays. La liste Etat peut remplir de manière dynamique les noms des états du pays sélectionné dans la première liste.
 
-   Ajoutez les noms des pays à afficher dans la liste Pays. Dans la liste Etat, ajoutez un script pour la remplir selon le nom du pays de la liste Pays.
+   Ajoutez les noms des pays à afficher dans la liste Pays. Dans la liste Etat, ajoutez un script pour la remplir en fonction du nom du pays dans la liste Pays.
 
    ![Ajout de noms de pays](assets/country-dropdown.png) ![Ajout d’un script pour renseigner les noms d’état](assets/state-dropdown.png) ![Listes déroulantes Pays et États ensemble ](assets/2dropdowns.png)
 

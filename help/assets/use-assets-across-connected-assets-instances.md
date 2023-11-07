@@ -7,10 +7,10 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
-source-git-commit: bc6a97a55f392cba03131ee3ca7cad35b8c1e69b
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3949'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ La fonctionnalité Ressources connectées prend en charge le cas d’utilisation
 
 ## Présentation de la fonction Ressources connectées {#overview-of-connected-assets}
 
-Lors de la modification de pages dans [!UICONTROL l’éditeur de page] en tant que destination de la cible, les auteurs peuvent rechercher, parcourir et incorporer facilement des ressources à partir d’un déploiement [!DNL Assets] différent qui agit comme source de ressources. Les administrateurs créent une intégration unique d’un déploiement de [!DNL Experience Manager] avec la fonctionnalité [!DNL Sites] avec un autre déploiement de [!DNL Experience Manager] avec la fonctionnalité [!DNL Assets]. Vous pouvez également utiliser des images Dynamic Media dans les pages web de votre site par le biais de ressources connectées et utiliser les fonctionnalités de Dynamic Media, telles que les paramètres de recadrage intelligent et d’image prédéfinis.
+Lors de la modification de pages dans [!UICONTROL l’éditeur de page] en tant que destination de la cible, les auteurs peuvent rechercher, parcourir et incorporer facilement des ressources à partir d’un déploiement [!DNL Assets] différent qui agit comme source de ressources. Les administrateurs créent une intégration unique d’un déploiement de [!DNL Experience Manager] avec la fonctionnalité [!DNL Sites] avec un autre déploiement de [!DNL Experience Manager] avec la fonctionnalité [!DNL Assets]. Les auteurs de site peuvent également utiliser des images Dynamic Media dans les pages web de leur site par le biais de ressources connectées et utiliser les fonctionnalités Dynamic Media, telles que les paramètres de recadrage intelligent et d’image prédéfinis.
 
 Pour les auteurs [!DNL Sites], les ressources distantes sont disponibles en tant que ressources locales, en lecture seule. Cette fonctionnalité permet une recherche transparente et un accès aux ressources distantes dans l’éditeur de site. Pour tout autre cas d’utilisation qui peut nécessiter la disponibilité de l’ensemble des ressources sur Sites, envisagez de migrer les ressources en bloc au lieu d’utiliser les ressources connectées. Consultez la section [Guide de migration Experience Manager Assets](/help/assets/assets-migration-guide.md).
 
@@ -146,7 +146,7 @@ Vous pouvez vérifier la connectivité entre les déploiements [!DNL Sites] et l
 ## Utilisation des ressources Dynamic Media {#dynamic-media-assets}
 
 
-Avec les ressources connectées, vous pouvez utiliser les ressources Images traitées par [!DNL Dynamic Media] à partir du déploiement DAM distant sur les pages Sites et utiliser les fonctionnalités de Dynamic Media, telles que les paramètres prédéfinis d’image et de recadrage intelligent.
+Avec les ressources connectées, vous pouvez utiliser les ressources Images traitées par [!DNL Dynamic Media] à partir du déploiement DAM distant sur les pages Sites et utiliser les fonctionnalités de Dynamic Media, telles que les paramètres de recadrage intelligent et d’image prédéfinis.
 
 Pour utiliser [!DNL Dynamic Media] avec les ressources connectées :
 

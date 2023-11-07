@@ -2,13 +2,13 @@
 sub-product: AEM Headless Journeys
 user-guide-title: Parcours découplés AEM
 breadcrumb-title: Parcours découplés AEM
-user-guide-description: Faites vos premiers pas dans cette visite guidée pour découvrir les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre projet.
+user-guide-description: Commencez ici pour un parcours guidé à travers les puissantes fonctionnalités et flexibles d’AEM, leurs capacités et comment les utiliser sur votre projet.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 2523d9dcdbbfd9107e43ca53e2bb586452be1cb8
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 

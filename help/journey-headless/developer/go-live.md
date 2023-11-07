@@ -2,10 +2,10 @@
 title: Comment mettre en ligne votre application découplée
 description: Dans cette partie du Parcours de développement AEM découplé, apprenez à déployer une application découplée.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1873'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -151,7 +151,7 @@ Une fois les mises à jour transférées vers Cloud Manager, elles peuvent êtr
 
 <!-- Can't find a parallel link -->
 <!--
-You can start deploying your code by leveraging the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
+You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
 -->
 
 ## Surveillance des performances {#performance-monitoring}
@@ -167,7 +167,7 @@ Pour que les utilisateurs disposent de la meilleure expérience possible lorsqu�
       * la vérification du nombre d’utilisateurs et d’utilisatrices, de requêtes et de chargements
 * l’accès aux rapports de performances spécifiques à l’application et à la surface.
    * Une fois le serveur ouvert, vérifiez si les mesures générales apparaissent en vert/orange/rouge, puis identifiez les problèmes spécifiques à l’application.
-   * Ouvrez les rapports ci-dessus filtrés par application ou par surface (par exemple, la version bureau de Photoshop, un paywall).
+   * Ouvrir les mêmes rapports ci-dessus filtrés dans l’application ou l’espace (par exemple, bureau Photoshop, paywall)
    * Utilisez des API de journal Splunk pour accéder aux performances du service et de l’application.
    * Contactez le service clientèle si d’autres problèmes se produisent.
 

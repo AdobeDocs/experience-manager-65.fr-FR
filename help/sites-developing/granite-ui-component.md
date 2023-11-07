@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: e4820330-2ee6-4eca-83fd-462aa0b83647
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '525'
 ht-degree: 28%
 
 ---
@@ -44,7 +44,7 @@ Utilisez la structure de base de l’IU Granite pour développer et/ou étendre 
 
 Le composant d’IU Granite générique `field` se compose de deux fichiers d’intérêt :
 
-* `init.jsp`: gère le traitement générique ; l’étiquetage, la description et fournissent la valeur de formulaire dont vous avez besoin lors du rendu de votre champ.
+* `init.jsp`: gère le traitement générique ; l’étiquetage, la description et fournit la valeur de formulaire dont vous avez besoin lors du rendu de votre champ.
 * `render.jsp`: c’est là que le rendu réel du champ est effectué et doit être remplacé pour votre champ personnalisé ; est inclus par `init.jsp`.
 
 Voir [Documentation de l’IU Granite - Champ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) pour plus d’informations.
@@ -85,7 +85,7 @@ Le champ personnalisé doit remplacer uniquement le script `render.jsp`, où vou
    vm.get("value, String.class");
    ```
 
-   Pour plus d’informations, reportez-vous à la mise en oeuvre des champs d’interface utilisateur Granite prêts à l’emploi ; par exemple, `/libs/granite/ui/components/foundation/form/textfield`.
+   Pour plus d’informations, voir Implémentation des champs d’IU Granite prêts à l’emploi, par exemple : `/libs/granite/ui/components/foundation/form/textfield`.
 
    >[!NOTE]
    >

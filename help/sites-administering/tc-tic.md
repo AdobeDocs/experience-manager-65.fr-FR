@@ -4,10 +4,10 @@ description: Découvrez comment configurer la structure d’intégration de trad
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1573'
-ht-degree: 84%
+source-wordcount: '1571'
+ht-degree: 83%
 
 ---
 
@@ -196,7 +196,7 @@ Pour configurer la traduction de vos pages source dans d’autres langues, assoc
 * La configuration cloud qui connecte AEM à votre fournisseur de services de traduction.
 * Le framework d’intégration de traduction qui configure les détails de la traduction.
 
-Notez que la configuration de cloud de la structure d’intégration de traduction identifie la configuration de cloud à utiliser pour la connexion au fournisseur de services. Lorsque vous associez une page source à une configuration cloud de framework, la page doit être associée à la configuration cloud du fournisseur utilisée par la configuration cloud de framework.
+La configuration cloud de la structure d’intégration de traduction identifie la configuration cloud à utiliser pour la connexion au fournisseur de services. Lorsque vous associez une page source à une configuration cloud de framework, la page doit être associée à la configuration cloud du fournisseur utilisée par la configuration cloud de framework.
 
 Lorsque vous associez une page à une configuration de cloud, les descendants de la page héritent de l’association. Par exemple, si vous associez la page /content/geometrixx/en/products à un framework d’intégration de traduction, la page Produits et toutes les pages en dessous sont converties en fonction du framework.
 

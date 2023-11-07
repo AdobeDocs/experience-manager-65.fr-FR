@@ -2,10 +2,10 @@
 title: FAQ sur AEM
 description: Utilisez ces FAQ pour comprendre, configurer et résoudre les problèmes ou workflows courants dans AEM.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: f7bfbfab9fb9ec00304f2889735c70be924cc217
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 58%
+source-wordcount: '1085'
+ht-degree: 47%
 
 ---
 
@@ -17,7 +17,7 @@ Découvrez les réponses à certains problèmes AEM de dépannage et de configur
 
 ### Comment configurer une distribution sans fichier binaire ? {#how-do-i-configure-binary-less-distribution}
 
-La distribution sans fichier binaire est prise en charge pour les déploiements dans un magasin de données partagé et implique des agents qui exploitent le créateur de packages de l’exportateur de packages de distribution basé sur le coffre-fort (PID d’usine : `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`).
+La distribution sans fichier binaire est prise en charge pour les déploiements sur un entrepôt de données partagé et implique les agents qui utilisent l’exportateur de package de distribution basé sur le coffre-fort (PID d’usine) : `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`) du créateur de modules.
 
 Lorsque le mode sans fichier binaire est activé, les modules de contenu distribués contiennent des références à des fichiers binaires plutôt que des fichiers binaires réels.
 
@@ -45,7 +45,7 @@ Créez une racine de langue et une copie de langue à l’intérieur de la racin
 Par exemple,
 Créez une racine de langue dans `/content/geometrixx` avec le nom `fr_LU` (et le titre « Français (Luxembourg) »). Ensuite, créez une copie de langue de la page à partir du panneau Références et accédez à l’option `Create structure only` dans `Create & Translate`. Enfin, créez un projet de traduction, puis ajoutez la copie de langue à la tâche de traduction.
 
-Pour plus d&#39;informations, reportez-vous aux ressources supplémentaires ci-dessous :
+Pour plus d’informations, voir les ressources supplémentaires ci-dessous :
 
 * [Préparation du contenu à traduire](/help/sites-administering/tc-prep.md)
 * [Gestion des projets de traduction](/help/sites-administering/tc-manage.md)
@@ -61,13 +61,13 @@ Adobe Experience Manager (AEM) 6.4 est fourni avec l’assistant SSL et offre un
 
 Pour activer SSL par défaut, voir [SSL par défaut](/help/sites-administering/ssl-by-default.md).
 
-#### Quelle est l’architecture recommandée lors de l’utilisation des Content Services d’AEM à partir d’une application mobile, idéalement React Native ? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
+#### Quelle est l’architecture recommandée lors de l’utilisation AEM Content Services à partir d’une application mobile, idéalement React Native ? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
 
 Les services de contenu reposent sur les modèles Sling. Les développeurs AEM doivent fournir un pojo de modèle Sling pour chaque composant qui est exporté.
 
 Pour comprendre comment consommer des services de contenu d’AEM depuis une application React, consultez le tutoriel [Prise en main des services de contenu AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr).
 
-De plus, si les développeurs souhaitent exporter un arbre de composants, ils peuvent aussi implémenter les interfaces `ComponentExporter` et `ContainerExporter`, et utiliser `ModelFactory` pour itérer sur les composants enfants et renvoyer leur représentation de modèle. Consultez les ressources ci-dessous :
+En outre, si les développeurs souhaitent exporter une arborescence de composants, ils peuvent également mettre en oeuvre la variable `ComponentExporter` et `ContainerExporter` et utilisez la fonction `ModelFactory` pour effectuer une itération sur les composants enfants et renvoyer leur représentation de modèle. Consultez les ressources ci-dessous :
 
 [1] [Adobe-Marketing-Cloud/aem-core-wcm-components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
 
@@ -79,7 +79,7 @@ Vous pouvez souscrire à la collecte de statistiques d’utilisation à l’aide
 
 #### Existe-t-il une bonne ressource qui met en évidence les fonctionnalités clés de la mise à niveau vers AEM 6.4 ? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
 
-consultez [Comprendre les raisons de mettre AEM à niveau](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html), laquelle décrit les fonctionnalités clés auxquelles vous aurez accès si vous passez à la version la plus récente d’Adobe Experience Manager.
+Voir [Comprendre les raisons de la mise à niveau AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) qui décrit la ventilation de haut niveau des fonctionnalités clés pour les clients qui envisagent d’effectuer une mise à niveau vers la dernière version de Adobe Experience Manager.
 
 ## Assets {#assets}
 
@@ -104,17 +104,17 @@ Comme solution, vous pouvez également désactiver manuellement le composant via
 
 #### Comment personnaliser les consoles d’administration ? {#how-to-customize-admin-consoles}
 
-AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les consoles et la fonctionnalité de création de pages de votre instance de création. Pour savoir comment créer une console personnalisée et personnaliser une vue par défaut pour une console, reportez-vous à la section [Personnalisation des consoles](/help/sites-developing/customizing-consoles-touch.md).
+AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les consoles et la fonctionnalité de création de pages de votre instance de création. Pour savoir comment créer une console personnalisée et personnaliser une vue par défaut pour une console, voir [Personnalisation des consoles](/help/sites-developing/customizing-consoles-touch.md).
 
 #### Quelle est la différence entre les composants basés sur CoralUI 2 et CoralUI 3 ? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
-Un nouvel ensemble de composants Sling de Granite UI Foundation est créé pour Coral3 et se trouve sous [/libs/granite/ui/components/coral/foundation.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) Un jeu est adapté aux composants basés sur CoralUI 2 et un autre à ceux basés sur CoralUI 3. Le nouveau jeu ne sera pas simplement un copier-coller de l’ancien, mais il sera nettoyé (par exemple en simplifiant et en supprimant les fonctionnalités abandonnées). Il est donc recommandé qu’une page utilise uniquement un ensemble basé sur CoralUI 3 ou sur CoralUI 2.
+Un nouvel ensemble de composants Sling de Granite UI Foundation est créé pour Coral3 et se trouve sous [/libs/granite/ui/components/coral/foundation.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) Un jeu est adapté aux composants basés sur CoralUI 2 et un autre à ceux basés sur CoralUI 3. Le nouveau jeu ne sera pas simplement un copier-coller de l’ancien jeu, mais il sera nettoyé (par exemple, la rationalisation et la suppression de la fonctionnalité obsolète). Il est donc recommandé qu’une page utilise uniquement un ensemble basé sur CoralUI 3 ou sur CoralUI 2.
 
-Pour en savoir plus, consultez le [Guide de migration vers CoralUI 3](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
+Pour en savoir plus en détail, voir [Guide de migration vers CoralUI 3](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
 
 #### Comment personnaliser le composant de recherche dans AEM Assets ? {#how-to-customize-the-search-component-in-aem-assets}
 
-Pour en savoir plus sur l’amplification/le classement des recherches et d’autres informations sur l’implémentation, reportez-vous à la section [Guide de mise en oeuvre de recherche simple](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr).
+Pour en savoir plus sur l’amplification/le classement des recherches et d’autres informations de mise en oeuvre, voir [Guide de mise en oeuvre de recherche simple](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr).
 
 La mise en œuvre de recherche simple est le thème du Summit Lab AEM Search Demystified 2017.
 

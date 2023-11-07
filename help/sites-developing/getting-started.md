@@ -1,30 +1,26 @@
 ---
 title: Prise en main du développement d’AEM Sites – Tutoriel WKND
-seo-title: Getting Started Developing AEM Sites - WKND Tutorial
-description: Vous découvrez le développement dans AEM ? Vous avez besoin d’une mise à niveau sur les meilleures pratiques ? Voici l’endroit idéal pour bien commencer ! L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur qui découvre AEM comment implémenter un site web dans AEM en utilisant les normes et les technologies les plus récentes.
-seo-description: New to developing AEM? Need a refresher on best practices? This is the place to start! The goal for this multi-part tutorial is to teach a developer who is new to AEM how to implement a website in AEM using the latest standards and technologies.
-uuid: 12861ca8-b5b9-404e-9788-9d13aa7c5a68
+description: Vous découvrez le développement AEM ? Vous avez besoin d’une mise à niveau sur les bonnes pratiques ? Voici l’endroit idéal pour bien commencer ! L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur ou une développeuse qui découvre AEM comment mettre en œuvre un site web dans AEM en utilisant les dernières normes et technologies.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
-discoiquuid: 95346ce1-84b7-4bd1-a1e2-6a803139dc69
 docset: aem65
 exl-id: 8314d7fe-0a46-453d-9592-f1bcd8c8f10a
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '259'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '258'
+ht-degree: 95%
 
 ---
 
-# Prise en main du développement d’AEM Sites – Tutoriel WKND {#getting-started-developing-aem-sites-wknd-tutorial}
+# Prise en main du développement d’AEM Sites – Tutoriel WKND{#getting-started-developing-aem-sites-wknd-tutorial}
 
 ## Présentation {#overview}
 
-Vous découvrez le développement dans AEM ? Vous avez besoin d’une mise à niveau sur les meilleures pratiques ? Voici l’endroit idéal pour bien commencer !
+Vous découvrez le développement AEM ? Vous avez besoin d’une mise à niveau sur les bonnes pratiques ? Voici l’endroit idéal pour bien commencer !
 
-L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur qui découvre AEM comment implémenter un site web dans AEM en utilisant les normes et les technologies les plus récentes. Ce tutoriel poursuit un double objectif : vous faire assimiler les bases de la plate-forme AEM et vous faire connaître quelques-uns des modèles de conception courants.
+L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur ou une développeuse qui découvre AEM comment mettre en œuvre un site web dans AEM en utilisant les dernières normes et technologies. Nous espérons qu’à la fin de ce tutoriel, vous comprendrez les fondements de la plateforme AEM et que vous connaîtrez certains des modèles de conception les plus courants.
 
 ## Tutoriel du développeur WKND {#wknd-developer-tutorial}
 
@@ -34,7 +30,7 @@ L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un dévelo
 
 ## Concepts de base {#core-concepts}
 
-La mise en œuvre du tutoriel tire parti de nombreuses fonctionnalités puissantes d’AEM. Le site est implémenté à l’aide des éléments suivants :
+La mise en œuvre du tutoriel utilise de nombreuses fonctionnalités puissantes d’AEM. Le site est implémenté à l’aide des éléments suivants :
 
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
 * [Modèles Sling](https://sling.apache.org/documentation/bundles/models.html)
@@ -42,7 +38,7 @@ La mise en œuvre du tutoriel tire parti de nombreuses fonctionnalités puissant
 * [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 * [Modèles modifiables](/help/sites-developing/page-templates-editable.md)
 
-Veuillez parcourir le tutoriel avant de vous plonger dans les concepts ci-dessus.
+Suivez le tutoriel avant de passer en détail aux concepts ci-dessus.
 
 ## Étapes suivantes {#next-steps}
 

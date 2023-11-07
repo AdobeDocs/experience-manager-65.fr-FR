@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 7b234f1f-4470-4de1-a3c3-ab19e5e001ad
 docset: aem65
 exl-id: 56a9591c-cd78-42e8-a5d7-6b48581d6af6
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4926'
+source-wordcount: '4925'
 ht-degree: 99%
 
 ---
@@ -102,7 +102,7 @@ where `<category-nameX>` est le nom de la bibliothèque côté client.
 * pour inclure uniquement le code JavaScript :
   `<ui:includeClientLib js="<category-name>"/>`
 
-Pour plus d’informations, reportez-vous à la description de la balise [&lt;ui:includeClientLib>](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
+Pour plus d’informations, voir la description de la variable [&lt;ui:includeclientlib>](/help/sites-developing/taglib.md#lt-ui-includeclientlib) balise .
 
 Parfois, une bibliothèque cliente ne doit être disponible qu’en mode création et doit être exclue du mode publication. Cela peut se faire comme suit :
 
@@ -463,7 +463,7 @@ Suivez la procédure décrite pour [Exemple 2 : boîte de dialogue à un seul 
 
 #### Exemple 3 : module externe Éditeur de texte enrichi (RTE) {#example-rich-text-editor-rte-plug-in}
 
-La boîte de dialogue basée sur le **module externe Éditeur de texte enrichi (RTE)** dispose d’un bouton personnalisé permettant d’insérer du texte personnalisé entre crochets. Le texte personnalisé peut être analysé par une logique côté serveur (non implémentée dans cet exemple), par exemple pour ajouter du texte défini à l’emplacement donné :
+La boîte de dialogue basée sur le **module externe Éditeur de texte enrichi (RTE)** dispose d’un bouton personnalisé permettant d’insérer du texte personnalisé entre crochets. Le texte personnalisé peut être analysé par une logique côté serveur (non implémentée dans cet exemple), par exemple, pour ajouter du texte défini au chemin donné :
 
 Boîte de dialogue basée sur le **module externe de RTE** :
 

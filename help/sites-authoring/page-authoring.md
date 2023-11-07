@@ -2,10 +2,10 @@
 title: Créer des pages de contenu dans AEM
 description: Tâches impliquées lors de la création d’une page de contenu dans Adobe Experience Manager 6.5.
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 82%
+ht-degree: 71%
 
 ---
 
@@ -38,7 +38,7 @@ Vous pouvez modifier les composants Texte et Image directement sur la page web s
 Depuis un explorateur coulissant qui s’ouvre sur le côté gauche d’une page à modifier, vous pouvez faire glisser des composants sur la page, puis les modifier.
 
 * **[Explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)**
-Depuis un explorateur coulissant qui s’ouvre sur le côté gauche d’une page à modifier, vous pouvez faire glisser des ressources sur la page, par exemple placer des ressources ou créer des liens vers d’autres pages.
+Sur le côté gauche d’une page modifiable, un navigateur coulissant peut être ouvert ; des ressources peuvent être glissées sur la page, par exemple pour positionner des ressources ou créer des liens vers d’autres pages.
 
 * **Barre d’outils de composant**
 Un double-clic ou un double-clic lent ou un double-clic lent affiche la barre d’outils appropriée (une seule pour la barre d’outils d’édition statique, puis deux lents pour la barre d’outils complète).

@@ -8,16 +8,16 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '760'
 ht-degree: 95%
 
 ---
 
 # Modification des propriétés de page{#editing-page-properties}
 
-Vous pouvez définir les propriétés requises pour une page. Celles-ci peuvent varier selon la nature de la page. Par exemple, certaines pages peuvent être connectées à une Live Copy alors que d’autres ne le sont pas, et les informations de Live Copy seront disponibles, le cas échéant.
+Vous pouvez définir les propriétés requises pour une page. Celles-ci peuvent varier selon la nature de la page. Par exemple, certaines pages peuvent être connectées à une Live Copy, tandis que d’autres ne le sont pas, et les informations de Live Copy seront disponibles, le cas échéant.
 
 ## Propriétés de page {#page-properties}
 
@@ -53,7 +53,7 @@ Les propriétés sont réparties sur plusieurs onglets :
 
 * **Titre de navigation**
 
-  Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis). Si le champ est vide, le **Titre** sera utilisé.
+  Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis). Si rien n’est indiqué, le **titre** est utilisé.
 
 * **Sous-titre**
 

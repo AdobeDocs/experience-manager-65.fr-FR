@@ -4,10 +4,10 @@ description: Découvrez les bonnes pratiques compilées par les équipes d’ing
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1614'
-ht-degree: 74%
+source-wordcount: '1609'
+ht-degree: 80%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 74%
 
 ## Général {#general}
 
-MSM est une structure configurable pour automatiser le déploiement de contenu. Les mises en œuvre impliquent souvent des parties importantes d’un site web, ainsi que plusieurs organisations et zones géographiques. Il est donc vivement recommandé de planifier les mises en oeuvre MSM avec autant de soin que vous planifiez votre site web :
+MSM est une structure configurable pour automatiser le déploiement de contenu. Les mises en œuvre impliquent souvent des parties importantes d’un site web, ainsi que plusieurs organisations et zones géographiques. Il est donc vivement recommandé de planifier les mises en oeuvre MSM avec autant de soin que vous planifiez votre site web :
 
 * **Planifiez la structure et les flux de contenu** avec soin avant de commencer la mise en œuvre.
 * **Veillez à ce que le nombre de Live Copies reste limité.** Le traitement des Live Copies est une tâche gourmande en ressources. Plus votre système comptera de Live Copies, plus ses performances peuvent en être affectées : du traitement des index de Live Copy internes, aux opérations sur les Live Copy telles que les déploiements, jusqu’aux opérations sur l’interface utilisateur telles que l’affichage des relations de Live Copy dans le rail de références d’administration de Sites. Les bonnes pratiques recommandent de créer des Live Copies de sites ou de branches d’un site, où les relations de Live Copy sont héritées des pages du site ou de la branche. Évitez de créer des Live Copies individuelles pour les pages d’un site ou d’une branche lorsque la structure entière peut être transformée en Live Copy.
@@ -44,7 +44,7 @@ MSM est une structure configurable pour automatiser le déploiement de contenu. 
 
 N’oubliez pas qu’une Live Copy peut être créée avec des [pages ordinaires](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) ou une [configuration de plan directeur](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Les deux cas d’utilisation sont valides.
 
-Les avantages supplémentaires liés à l’utilisation d’une configuration de plan directeur sont les suivants :
+Les avantages supplémentaires liés à l’utilisation d’une configuration de plan directeur sont les suivants :
 
 * Permet à l’auteur d’utiliser l’option **Déploiement** sur un plan directeur afin de pousser (explicitement) les modifications vers les Live Copies qui héritent de ce plan directeur.
 * Permet à l’auteur d’utiliser **Créer un site**. L’utilisateur peut ainsi sélectionner facilement les langues et configurer la structure de la Live Copy.
@@ -52,15 +52,15 @@ Les avantages supplémentaires liés à l’utilisation d’une configuration de
 
 Si aucune configuration de plan directeur n’est référencée, les déploiements ne peuvent être lancés qu’à partir des Live Copies elles-mêmes, extrayant essentiellement le contenu de la source.
 
-Lors de la création d’un site avec Live Copy, il est préférable de créer des configurations de plan directeur pour assurer la disponibilité de l’ensemble de fonctionnalités MSM complet.
+Lors de la création d’un site avec Live Copy, il est avantageux de créer des configurations de plan directeur pour assurer la disponibilité de l’ensemble de fonctionnalités MSM complet.
 
 >[!NOTE]
 >
->Notez que les groupes d’utilisateurs fermés dans l’onglet Autorisations ne peuvent pas être déployés dans des Live Copies à partir de plans directeurs. Veuillez en tenir compte lors de la configuration de Live Copy.
+>Notez que les groupes d’utilisateurs fermés dans l’onglet Autorisations ne peuvent pas être déployés dans des Live Copies à partir de plans directeurs. Planifiez la configuration de la Live Copy.
 
 ## Composants et synchronisation de conteneur {#components-and-container-synchronization}
 
-En général, la règle de déploiement dans MSM concernant la synchronisation des composants est la suivante :
+En général, la règle de déploiement dans MSM concernant la synchronisation des composants est la suivante :
 
 * Les composants sont déployés en synchronisant toutes les ressources contenues dans le plan directeur.
 * Les conteneurs ne synchronisent que la ressource active.
@@ -87,7 +87,7 @@ Notez qu’AEM propose deux méthodes principales pour créer des Live Copies :
 
 Voici quelques points à garder à l’esprit lors de la création d’un site :
 
-* Pour créer un site, vous avez besoin d’une [configuration de plan directeur](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
+* Pour créer un site, vous devez disposer d’un [configuration du plan directeur](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
 * Pour permettre la sélection des chemins de langue afin de créer un site, les racines de langue correspondantes doivent exister dans le plan directeur (source).
 * Une fois qu’un [site a été créé comme une Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (en sélectionnant **Créer**, puis **Site**), les deux premiers niveaux de cette Live Copy sont *superficiels*. Les enfants de la page n’appartiennent pas à la relation activée, mais un déploiement descend toujours si une relation activée correspondant au déclencheur est détectée.
 
@@ -103,14 +103,14 @@ MSM peut aider à la création de sites web multilingues de deux façons :
 
 * Lors de la création de gabarits de langue.
 
-   * Bien que MSM lui-même **ne fournisse pas la traduction de contenu**, il peut être intégré à des connecteurs de traduction tiers qui proposent ce service. Veuillez noter que :
+   * Bien que MSM lui-même **ne fournisse pas la traduction de contenu**, il peut être intégré à des connecteurs de traduction tiers qui proposent ce service. Notez que :
 
       * MSM vous permet d’annuler l’héritage au niveau de la page et/ou du composant. Cela permet d’éviter le remplacement du contenu traduit (d’une Live Copy, avec du contenu non encore traduit d’un plan directeur) lors du déploiement suivant.
       * Certains connecteurs de traduction tiers automatisent cette gestion des héritages MSM.
 
         Contactez votre prestataire de services de traduction pour plus d’informations.
 
-      * Une autre méthode pour créer et traduire les gabarits de langue est d’utiliser des copies de langue conjointement à la structure d’intégration de traduction prête à l’emploi d’AEM.
+      * Une autre méthode pour créer et traduire les gabarits de langue consiste à utiliser des copies de langue conjointement à la structure d’intégration de traduction prête à l’emploi d’AEM.
 
 * Lors du déploiement de contenu de gabarits de langue
 
@@ -173,9 +173,9 @@ Lorsque vous utilisez le [déclencheur de déploiement](/help/sites-administerin
 
 * L’automatisation des déploiements avec des déclencheurs `onModify` peut avoir un impact négatif sur les performances de création, car ils déclenchent des déploiements après *chaque* modification de page.
 
-* Le résultat du déploiement peut différer de celui attendu :
+* Le résultat du déploiement peut différer de celui attendu, car :
 
-   * Vous ne pouvez pas spécifier l’ordre des événements de modification résultants.
+   * Vous ne pouvez pas spécifier l’ordre des événements de modification qui en résultent.
    * L’architecture basée sur des événements ne peut pas garantir la séquence des événements transmis au Gestionnaire de déploiement.
 
 * L’utilisation d’une telle configuration de déploiement peut entraîner des conflits de validation si des mises à jour simultanées de la même ressource se produisent.

@@ -2,10 +2,10 @@
 title: Parcours découplés AEM
 description: Une suite de parcours de documentation décrivant comment utiliser Adobe Experience Manager en tant que CMS découplé.
 exl-id: 369f79ab-c8ae-4d49-9b0b-e3a2e423b40f
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '457'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ Commencez ici pour obtenir un aperçu des parcours guidés disponibles pour comp
 
 L’implémentation découplée devient de plus en plus importante pour offrir des expériences à votre public, où qu’il se trouve et quel que soit son canal.
 
-L’implémentation découplée renonce à la gestion des pages et des composants, comme c’est généralement le cas avec les solutions complètes, et se concentre sur la création de fragments de contenu réutilisables et neutres du point de vue du canal, ainsi que sur leur diffusion entre canaux. Il s’agit d’un modèle de développement moderne et dynamique pour l’implémentation d’expériences numériques.
+L’implémentation découplée renonce à la gestion des pages et des composants, comme c’est généralement le cas avec les solutions complètes, et se concentre sur la création de fragments de contenu réutilisables et neutres du point de vue du canal, ainsi que sur leur diffusion entre canaux. Il s’agit d’un modèle de développement moderne et dynamique pour l’implémentation d’expériences digitales.
 
 Si vous êtes débutant dans AEM ou en matière de découplage, les parcours découplés d’AEM représentent un excellent point de départ pour comprendre la théorie et la technologie et comprendre pas à pas comment résoudre divers problèmes d’activités grâce au découplage.
 
@@ -35,7 +35,7 @@ Les parcours découplés AEM ont été conçus pour différents types de profils
 
 Chaque parcours a été conçu pour une personne ou une audience spécifique, mais définit également les autres profils avec lesquels le lecteur doit interagir.
 
-Les informations contenues dans les parcours peuvent bien sûr être utiles à plusieurs profils, mais un parcours est ciblé sur un profil spécifique et certaines informations peuvent être superflues pour certains rôles.
+Les informations contenues dans les parcours peuvent s’avérer utiles pour plusieurs acteurs, mais un parcours est ciblé sur un personnage spécifique, et certaines informations peuvent se révéler superflues pour certains rôles.
 
 ## Parcours découplés {#headless-journeys}
 

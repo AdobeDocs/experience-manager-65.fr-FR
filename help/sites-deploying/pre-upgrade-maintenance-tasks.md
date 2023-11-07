@@ -12,10 +12,10 @@ discoiquuid: 291c91e5-65ff-473d-ac11-3da480239e76
 docset: aem65
 feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2031'
-ht-degree: 99%
+source-wordcount: '2029'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ Lors du démarrage d’AEM depuis le fichier jar, un fichier `quickstart.propert
 
 Les tâches `WorkflowPurgeTask` et `com.day.cq.audit.impl.AuditLogMaintenanceTask` nécessitent des configurations OSGi distinctes et ne fonctionneront pas sans celles-ci. Si elles échouent lors de l’exécution de la tâche avant la mise à niveau, des configurations manquantes en sont la raison la plus probable. Par conséquent, veillez à ajouter des configurations OSGi pour ces tâches ou à les supprimer complètement de la liste des tâches d’optimisation avant la mise à niveau si vous ne souhaitez pas les exécuter. Vous trouverez la documentation relative à la configuration des tâches de purge des workflows dans la section [Administration des instances de workflow](/help/sites-administering/workflows-administering.md) et la configuration de la tâche de maintenance du journal d’audit dans la section [Maintenance du journal d’audit dans AEM 6](/help/sites-administering/operations-audit-log.md).
 
-Pour la purge des workflows et des journaux d’audit sur CQ 5.6, ainsi que la purge des journaux d’audit sur AEM 6.0, reportez-vous à la section [Purge des nœuds de workflow et d’audit](https://helpx.adobe.com/fr/experience-manager/kb/howtopurgewf.html).
+Pour la purge des workflows et des journaux d’audit sur CQ 5.6 et la purge des journaux d’audit sur AEM 6.0, voir [Purge des noeuds de workflow et d’audit](https://helpx.adobe.com/fr/experience-manager/kb/howtopurgewf.html).
 
 ## Installation, configuration et exécution des tâches précédant la mise à niveau {#install-configure-run-pre-upgrade-tasks}
 

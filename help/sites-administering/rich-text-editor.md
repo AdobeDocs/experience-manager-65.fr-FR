@@ -3,10 +3,10 @@ title: Configurez l’éditeur de texte enrichi pour créer du contenu dans Adob
 description: Découvrez comment configurer l’éditeur de texte enrichi Adobe Experience Manager pour créer du contenu dans Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2923'
-ht-degree: 99%
+source-wordcount: '2921'
+ht-degree: 98%
 
 ---
 
@@ -182,7 +182,7 @@ Pour obtenir des configurations détaillées des plug-ins d’éditeur de texte 
 >
 >Le [composant textuel des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=fr#the-text-component-and-the-rich-text-editor) permet aux éditeurs de modèle de configurer de nombreux modules externes de l’éditeur de texte enrichi en tant que politiques de contenu dans une interface utilisateur graphique, rendant ainsi inutile toute configuration technique. Les politiques de contenu peuvent fonctionner avec les configurations d’interface utilisateur de l’éditeur de texte enrichi décrites dans ce document.
 >
->Pour plus d’informations, consultez la section [Paramètres de l’interface utilisateur de l’éditeur de texte enrichi et politiques de contenu](/help/sites-administering/rich-text-editor.md) de ce document, ainsi que la rubrique [Créer des modèles de page](/help/sites-authoring/templates.md) et la [Documentation destinée aux développeurs et développeuses de composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=fr).
+>Pour plus d’informations, voir [Paramètres de l’interface utilisateur de l’éditeur de texte enrichi et stratégies de contenu](/help/sites-administering/rich-text-editor.md) de ce document et [Création de modèles de page](/help/sites-authoring/templates.md) et la variable [Documentation destinée aux développeurs sur les composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=fr).
 
 >[!NOTE]
 >

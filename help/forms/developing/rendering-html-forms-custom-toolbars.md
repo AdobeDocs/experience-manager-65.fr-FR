@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 role: Developer
 exl-id: 0b992b1c-3878-447a-bccc-7034aa3e98bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '2345'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '2340'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Le service Forms vous permet de personnaliser une barre d’outils qui est rendu
 
 >[!NOTE]
 >
->Cet emplacement URI se trouve dans le fichier adobe-forms-core.jar, qui est situé dans le fichier adobe-forms-dsc.jar. Le fichier adobe-forms-dsc.jar se trouve dans le répertoire suivant : C:\Adobe\Adobe_Experience_Manager_forms\ folder (C:\ est le répertoire d’installation). Vous pouvez utiliser un outil d’extraction de fichiers, tel que Win RAR, pour ouvrir le fichier Adobe.
+>Cet emplacement URI se trouve dans le fichier adobe-forms-core.jar, qui se trouve dans le fichier adobe-forms-dsc.jar . Le fichier adobe-forms-dsc.jar se trouve dans le dossier C:\Adobe\Adobe_Experience_Manager_forms\ (C:\ est le répertoire d’installation). Vous pouvez utiliser un outil d’extraction de fichiers, tel que Win RAR, pour ouvrir le fichier Adobe.
 
 Vous pouvez copier le fichier fscmenu.xml à partir de cet emplacement, le modifier pour répondre à vos besoins, puis le placer dans un emplacement URI personnalisé. Ensuite, à l’aide de l’API du service Forms, définissez les options d’exécution pour que le service Forms utilise votre fichier fscmenu.xml à l’emplacement spécifié. Suite à ces actions, le service Forms effectue le rendu d’un formulaire HTML doté d’une barre d’outils personnalisée.
 
@@ -56,7 +56,7 @@ Vous pouvez également spécifier les emplacements absolus de ces fichiers JS et
 >
 >Il n’est pas recommandé de mélanger les méthodes de référencement de ces fichiers. En d’autres termes, toutes les URI doivent être référencées en utilisant soit le mot-clé `FSToolBarURI`, soit un emplacement absolu.
 
-Vous pouvez obtenir les fichiers JS et CSS en ouvrant le fichier adobe-forms-&lt;appserver>.ear. Dans ce fichier, ouvrez le fichier adobe-forms-res.war. Tous ces fichiers se trouvent dans le fichier WAR. Le fichier adobe-forms-&lt;appserver>.ear se trouve dans le dossier d’installation d’AEM Forms (C:\ est le répertoire d’installation). Vous pouvez ouvrir adobe-forms-&lt;appserver>.ear à l’aide d’un outil d’extraction de fichiers tel que WinRAR.
+Vous pouvez obtenir les fichiers JS et CSS en ouvrant le fichier adobe-forms-&lt;appserver>.ear. Dans ce fichier, ouvrez le fichier adobe-forms-res.war. Tous ces fichiers sont dans le fichier WAR. adobe-forms-&lt;appserver>Le fichier .ear se trouve dans le dossier d’installation d’AEM forms (C:\ est le répertoire d’installation). Vous pouvez ouvrir adobe-forms-&lt;appserver>.ear à l’aide d’un outil d’extraction de fichiers tel que WinRAR.
 
 La syntaxe XML suivante présente un exemple de fichier fscmenu.xml.
 

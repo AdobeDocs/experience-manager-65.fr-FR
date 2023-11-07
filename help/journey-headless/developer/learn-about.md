@@ -2,10 +2,10 @@
 title: En savoir plus sur le développement CMS découplé
 description: Dans cette partie du parcours de développement découplé AEM, découvrez la technologie découplée et pourquoi l’utiliser.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1612'
-ht-degree: 98%
+ht-degree: 93%
 
 ---
 
@@ -21,9 +21,9 @@ Ce document vous aide à comprendre la diffusion de contenu découplé et pourqu
 * comprendre pourquoi et quand le mode découplé est nécessaire ;
 * savoir de manière plus large comment les concepts de découplage sont utilisés et interagissent.
 
-## Diffusion de contenu full stack {#full-stack}
+## Diffusion de contenu full-stack {#full-stack}
 
-Depuis l’émergence des systèmes de gestion de contenu (CMS) à grande échelle et faciles d’utilisation, les entreprises les utilisent comme emplacement central pour la gestion des messages, des marques et de leur communication. L’utilisation d’un CMS comme point central pour administrer les expériences a permis des gains d’efficacité en éliminant la nécessité de dupliquer les tâches dans des systèmes disparates.
+Depuis l’émergence des systèmes de gestion de contenu (CMS) à grande échelle et faciles d’utilisation, les organisations les utilisent comme emplacement central pour la gestion des messages, de leur image de marque et de leur communication. L’utilisation d’un CMS comme point central pour administrer les expériences a permis des gains d’efficacité en éliminant la nécessité de dupliquer les tâches dans des systèmes disparates.
 
 ![CMS full stack classique](assets/full-stack.png)
 
@@ -56,13 +56,13 @@ Les utilisateurs attendent un engagement, quels que soient la plateforme ou le p
 
 La tête de tout système est généralement constituée du moteur de rendu de sortie, généralement sous la forme d’une interface utilisateur graphique ou d’une autre sortie graphique.
 
-Un serveur découplé, par exemple, peut être installé quelque part, dans une baie de salle de serveur, sans moniteur connecté. Pour y accéder, vous devez vous y connecter à distance. Dans ce cas, le moniteur forme la tête s’il se charge du rendu de sortie du serveur. En tant que consommateur du service, vous fournissez votre propre tête (le moniteur) en vous connectant à distance à celui-ci.
+Un serveur sans tête, par exemple, est probablement installé dans un meuble de serveur quelque part et n’a pas de moniteur. Pour y accéder, vous devez vous y connecter à distance. Dans ce cas, le moniteur forme la tête s’il se charge du rendu de sortie du serveur. En tant que consommateur du service, vous fournissez votre propre tête (le moniteur) en vous connectant à distance à celui-ci.
 
 Lorsque nous parlons d’un CMS découplé (ou sans tête), il s’agit d’un système de gestion de contenu qui assure la diffusion en continu vers les consommateurs. Cependant, en n’effectuant que la diffusion du **contenu** de manière standardisée, un CMS découplé omet le rendu de sortie final, laissant la **présentation** du contenu au service consommateur.
 
 ![CMS découplé](assets/headless-cms.png)
 
-Les services consommateurs (expériences de réalité augmentée, boutiques web, expériences mobiles, applications web progressives (PWA), etc.) récupèrent le contenu du CMS découplé et fournissent leur propre rendu. Ils se chargent de fournir leurs propres têtes à votre contenu.
+Les services consommateurs, qu’il s’agisse d’expériences AR, d’un webshop, d’expériences mobiles, d’applications web progressives (PWA), etc., récupèrent le contenu du CMS sans interface utilisateur graphique et fournissent leur propre rendu. Ils se chargent de fournir leurs propres têtes à votre contenu.
 
 Omettre la tête (en mode découplé) permet de simplifier le CMS en éliminant sa complexité. Vous pouvez ainsi transférer la responsabilité de rendu du contenu vers les services qui en ont réellement besoin et qui sont souvent mieux adaptés pour cela.
 
@@ -84,7 +84,7 @@ Des API REST robustes restent nécessaires. Toutefois, les requêtes REST peuven
 
 La diffusion de contenu en mode découplé s’appuie souvent sur les API GraphQL. GraphQL permet un transfert similaire, sans enregistrement de l’état, mais avec des requêtes plus ciblées, ce qui diminue le nombre total de requêtes requises et améliore les performances. Il est courant de voir les solutions conjuguer REST et GraphQL en choisissant essentiellement le meilleur outil pour la tâche à accomplir.
 
-Quelle que soit l’API choisie, en définissant un système découplé basé sur des API courantes, vous pouvez tirer parti du navigateur le plus récent et d’autres technologies web, comme les applications web progressives (PWA). Les API créent une interface standard facilement extensible et adaptable.
+Quelle que soit l’API choisie, en définissant un système découplé basé sur des API courantes, vous pouvez utiliser le navigateur le plus récent et d’autres technologies web, comme les applications web progressives (PWA). Les API créent une interface standard facilement extensible et adaptable.
 
 En règle générale, le contenu est rendu côté client. Normalement, cela signifie qu’une personne appelle votre contenu sur un appareil mobile, que votre CMS le diffuse, puis que l’appareil mobile (le client) assure le rendu du contenu fourni. Si l’appareil est vieux ou lent, votre expérience digitale sera également lente.
 
@@ -96,7 +96,7 @@ Le mode découplé offre toute la flexibilité nécessaire pour proposer vos exp
 
 Disposer de nombreuses chaînes différentes signifie qu’elles ont chacune leur propre système de présentation. Même s’ils consomment tous le même contenu par le biais d’API identiques, l’expérience peut varier en raison de présentations différentes. Il faut accorder toute l’attention et le soin nécessaires à assurer la cohérence de l’expérience client.
 
-Il est possible d’assurer des expériences homogènes, ce qui nécessite de les planifier. Pour cela, vous devez mettre en œuvre des systèmes de conception soignés, partager des bibliothèques de modèles et exploiter des composants de conception réutilisables ainsi que des structures (côté client) ouvertes et bien établies.
+En implémentant des systèmes de conception soignés, en partageant des bibliothèques de modèles et en utilisant des composants de conception réutilisables et des structures côté client établies et ouvertes, des expériences homogènes peuvent être assurées, mais cela doit être planifié.
 
 ## L’avenir est dans le mode découplé, et cela commence dès maintenant. {#future}
 

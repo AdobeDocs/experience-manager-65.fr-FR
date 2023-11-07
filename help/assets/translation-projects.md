@@ -5,10 +5,10 @@ contentOwner: AG
 role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1873'
-ht-degree: 93%
+source-wordcount: '1869'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ Pour créer une copie de langue, déclenchez l’un des workflows de copie de la
 
 * **Créer et traduire** : dans ce workflow, les ressources à traduire sont copiées dans la racine de la langue vers laquelle vous souhaitez effectuer la traduction. En outre, en fonction des options que vous choisissez, un projet de traduction est créé pour les ressources dans la console Projets. Selon les paramètres, le projet de traduction peut être démarré manuellement ou exécuté automatiquement dès sa création.
 
-* **Mettre à jour les copies de langue** : vous exécutez ce workflow afin de traduire un groupe de ressources supplémentaire et de l’intégrer à une copie de langue pour des paramètres régionaux spécifiques. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient déjà les ressources traduites précédemment.
+* **Mettre à jour les copies de langue** : vous exécutez ce workflow afin de traduire un groupe de ressources supplémentaire et de l’intégrer à une copie de langue pour des paramètres régionaux spécifiques. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient des ressources précédemment traduites.
 
 >[!PREREQUISITES]
 >
@@ -30,7 +30,7 @@ Pour créer une copie de langue, déclenchez l’un des workflows de copie de la
 Vous utilisez le workflow Créer et traduire afin de générer des copies de langue dans une langue spécifique pour la première fois. Le workflow offre les options suivantes :
 
 * Créer uniquement la structure 
-* Créer un projet de traduction
+* Créer un projet de traduction.
 * Ajouter à un projet de traduction existant
 
 ### Création de la structure uniquement {#create-structure-only}
@@ -162,10 +162,10 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
 
 ## Mise à jour des copies de langue {#update-language-copies}
 
-Exécutez ce workflow afin de traduire un ensemble de ressources supplémentaire et de l’intégrer à une copie de langue pour une région donnée. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient déjà les ressources traduites précédemment. Selon le choix des options, un projet de traduction est créé ou un projet de traduction existant est mis à jour pour les nouvelles ressources. Le workflow Màj des copies de langue comprend les options suivantes :
+Exécutez ce workflow afin de traduire un ensemble de ressources supplémentaire et de l’intégrer à une copie de langue pour des paramètres régionaux donnés. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient des ressources précédemment traduites. Selon le choix des options, un projet de traduction est créé ou un projet de traduction existant est mis à jour pour les nouvelles ressources. Le workflow Màj des copies de langue comprend les options suivantes :
 
 * Créer un projet de traduction
-* Ajouter à un projet de traduction existant
+* Ajout à un projet de traduction existant
 
 ### Créer un projet de traduction {#create-a-new-translation-project-1}
 

@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
-source-wordcount: '2720'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '2718'
+ht-degree: 91%
 
 ---
 
@@ -70,19 +70,19 @@ Il existe différentes manières d’incorporer des métadonnées dans des fichi
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) est une norme ouverte utilisée par [!DNL Experience Manager Assets] pour la gestion des métadonnées. La norme permet le codage universel des métadonnées en l’incorporant dans tous les formats de fichier. Adobe et d’autres entreprises prennent en charge la norme XMP, car elle offre un modèle de contenu enrichi. Les utilisateurs de XMP standard et de [!DNL Experience Manager Assets] disposent d’une plate-forme puissante sur laquelle s’appuyer. Pour plus d’informations, voir la section [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) est une norme ouverte utilisée par [!DNL Experience Manager Assets] pour la gestion des métadonnées. La norme permet le codage universel des métadonnées en l’incorporant dans tous les formats de fichier. Adobe et d’autres entreprises prennent en charge la norme XMP, car elle offre un modèle de contenu enrichi. Si vous utilisez la norme XMP et [!DNL Experience Manager Assets], vous disposez d’une plateforme puissante sur laquelle vous appuyer. Pour plus d’informations, voir la section [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
-Les données stockées dans ces balises ID3 s’affichent lors de la lecture d’un fichier audio numérique sur un ordinateur ou un lecteur MP3 portable.
+Les données stockées dans ces balises ID3 s’affichent lorsque vous relisez un fichier audio numérique sur votre ordinateur ou sur un lecteur MP3 portable.
 
-Les balises ID3 sont destinées au format de fichier MP3. Informations supplémentaires sur les formats :
+Les balises ID3 sont conçues pour le format de fichier MP3. Informations supplémentaires sur les formats :
 
 * Les balises ID3 fonctionnent dans les fichiers MP3 et mp3PRO.
 * Le format WAV ne contient pas de balises.
 * Le format WMA possède des balises propriétaires qui n’autorisent pas l’implémentation Open Source.
-* Le format Ogg Vorbis utilise des commentaires Xiph incorporés dans le conteneur Ogg.
-* Le format AAC utilise un format de balisage propriétaire.
+* Le format Ogg Vorbis utilise des commentaires Xiph incorporés dans le conteneur Ogg.
+* AAC utilise un format de balisage propriétaire.
 
 ### Exif {#exif}
 
@@ -160,7 +160,7 @@ Les métadonnées spécifiques à l’application englobent des métadonnées te
 
 ## Référence des schémas de métadonnées {#metadata-schemata-reference}
 
-La référence ci-après contient des informations sur un schéma de métadonnées spécifique (dans l’ordre alphabétique) ainsi qu’une liste de propriétés et de leur définition.
+La référence suivante inclut des informations sur un schéma de métadonnées spécifique (dans l’ordre alphabétique) ainsi qu’une liste de propriétés et de leurs définitions.
 
 ### Dublin Core {#dublin-core}
 
@@ -184,15 +184,15 @@ Outre le DCMES, il existe d’autres éléments de métadonnées créés par le 
 | relation | Ressource connexe. |
 | rights | Informations sur la personne qui dispose des droits sur cette ressource. |
 | source | Ressource connexe à partir de laquelle la ressource est dérivée. |
-| subject | Objet de la ressource. |
+| objet | Objet de la ressource. |
 | title | Nom de la ressource. |
 | type | Nature ou genre de la ressource. |
 
 ### IPTC {#iptc}
 
-L’ITPC (International Press Telecommunications Council) est un consortium réunissant les principales agences de presse à travers le monde. L’un de ses principaux objectifs est de développer et maintenir des normes techniques. L’IPTC a défini un ensemble de normes de métadonnées photographiques qui est presque universellement accepté par les photographes. Ces normes de métadonnées faisaient partie de la norme plus générale appelée IPTC Information Interchange Model (IIM) créée dans les années 1990.
+L&#39;International Press Telecommunications Council (IPTC) est un consortium d&#39;agences de presse à travers le monde - l&#39;un de ses objectifs est de développer et de maintenir des standards techniques. L&#39;IPTC a défini un ensemble de normes de métadonnées pour les images qui est presque universellement accepté par les photographes. Ces normes de métadonnées faisaient partie de la norme plus générale connue sous le nom de IPTC Information Interchange Model (IIM), créé dans les années 1990.
 
-Bien que les informations d’en-tête IPTC ont été essentiellement remplacées par XMP, un schéma de base IPTC et un schéma d’extension sont disponibles pour XMP. Dans les programmes de traitement d’images, les propriétés XMP et IPTC sont synchronisées.
+Bien que les informations d’en-tête IPTC aient été principalement remplacées par XMP, un schéma de base IPTC et un schéma d’extension sont disponibles pour XMP. Dans les programmes d’image, les propriétés XMP et IPTC sont synchronisées.
 
 ## Workflows pilotés par les métadonnées {#metadata-driven-workflows}
 
@@ -206,7 +206,7 @@ La création de workflows pilotés par les métadonnées permet d’automatiser 
 
 XMP (Extensible Metadata Platform) est la norme de métadonnées utilisée par [!DNL Adobe Experience Manager Assets] pour la gestion des métadonnées. XMP offre un format standard pour la création, le traitement et l’échange de métadonnées pour une multitude d’applications.
 
-En plus d’un codage de métadonnées universel qui peut être incorporé dans tous les formats de fichier, XMP fournit un [modèle de contenu](#xmp-core-concepts) riche et est [pris en charge par Adobe](#advantages-of-xmp) et d’autres sociétés. Ainsi, les utilisateurs XMP, en association avec, disposent d’une plate-forme puissante sur laquelle s’appuyer.[!DNL Assets]
+En plus d’un codage de métadonnées universel qui peut être incorporé dans tous les formats de fichier, XMP fournit un [modèle de contenu](#xmp-core-concepts) riche et est [pris en charge par Adobe](#advantages-of-xmp) et d’autres sociétés. Ainsi, les utilisateurs XMP, en association avec, disposent d’une plateforme puissante sur laquelle s’appuyer.[!DNL Assets]
 
 La [spécification XMP](https://www.adobe.com/devnet/xmp.html) est disponible auprès d’Adobe.
 
@@ -214,7 +214,7 @@ La [spécification XMP](https://www.adobe.com/devnet/xmp.html) est disponible au
 
 Adobe a introduit pour la première fois la norme XMP dans le cadre du logiciel Adobe Acrobat. Depuis, la norme XMP a été largement adoptée. [!DNL Assets] prend en charge de manière native XMP : la plateforme de métadonnées extensible pilotée par Adobe. XMP est une norme destinée au traitement et au stockage de métadonnées normalisées et propriétaires dans les ressources numériques. La norme XMP est conçue pour être la norme commune permettant à plusieurs applications de fonctionner efficacement avec les métadonnées.
 
-Les professionnels de la production, par exemple, utilisent la prise en charge XMP intégrée dans les applications d’Adobe pour transmettre des informations sur plusieurs formats de fichiers. Le référentiel d’[!DNL Assets] extrait les métadonnées XMP et les utilise pour gérer le cycle de vie du contenu et offre la possibilité de créer des workflows d’automatisation.
+Les spécialistes de la production, par exemple, utilisent la prise en charge XMP intégrée dans les applications d’Adobe pour transmettre des informations sur plusieurs formats de fichiers. Le référentiel d’[!DNL Assets] extrait les métadonnées XMP et les utilise pour gérer le cycle de vie du contenu et offre la possibilité de créer des workflows d’automatisation.
 
 XMP normalise la façon dont les métadonnées sont définies, créées et traitées en fournissant un modèle de données, un modèle de stockage et des schémas. Tous ces concepts sont abordés dans cette section.
 
@@ -229,7 +229,7 @@ XMP définit un modèle de [métadonnées](https://fr.wikipedia.org/wiki/Métado
 
 XMP est le plus souvent sérialisé et stocké à l’aide d’un sous-ensemble du [W3C](https://fr.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://fr.wikipedia.org/wiki/Resource_Description_Framework) (RDF), exprimé à son tour en format [XML](https://fr.wikipedia.org/wiki/Extensible_Markup_Language).
 
-### Avantages du mode XMP {#advantages-of-xmp}
+### Avantages de la norme XMP {#advantages-of-xmp}
 
 La norme XMP présente les avantages suivants par rapport aux autres normes de codage et schémas :
 
@@ -273,9 +273,9 @@ Découvrez comment [!DNL Adobe Experience Manager Assets] prend en charge les m�
 
 [!DNL Adobe Experience Manager Assets] prend en charge la norme de métadonnées IPTC qui est couramment utilisée pour décrire des ressources. Cela permet à [!DNL Assets] de bénéficier d’une plus large acceptation de ses images auprès des différents intervenants, y compris les photographes, les agences de création, les bibliothèques, les musées, etc.
 
-Le schéma de métadonnées utilisé pour les ressources intègre désormais IPTC Core et IPTC Extension, deux schémas permettant de définir des propriétés de métadonnées complètes, grâce auxquels les utilisateurs peuvent ajouter des données fiables et précises sur les personnes, les lieux et les produits illustrés dans une image. Il prend également en charge les dates, noms et identifiants relatifs à la création de l’image, ainsi qu’une méthode permettant d’exprimer les informations sur les droits avec une certaine souplesse.
+Le schéma de métadonnées par défaut des ressources intègre désormais les schémas de métadonnées IPTC Core et IPTC Extension afin de définir des propriétés de métadonnées complètes qui permettent aux utilisateurs d’ajouter des données précises et fiables sur les personnes, les emplacements et les produits affichés dans une image. Il prend également en charge les dates, les noms et les identifiants concernant la création de l’image, ainsi qu’une manière flexible d’exprimer les informations sur les droits.
 
-La page des propriétés des ressources comprend maintenant des onglets distincts pour afficher les métadonnées IPTC Core et IPTC Extension dans des champs modifiables.
+La page Propriétés des ressources comprend désormais des onglets distincts pour afficher les métadonnées IPTC Core et IPTC Extension dans les champs modifiables.
 
 1. Sélectionnez une image dans l’interface utilisateur d’[!DNL Assets].
 1. Cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils.
@@ -284,7 +284,7 @@ La page des propriétés des ressources comprend maintenant des onglets distinct
 
    ![iptc_tab](assets/keywords-in-iptc-tab.png)
 
-1. Cliquez ou appuyez sur l’onglet **[!UICONTROL Extension IPTC]** pour afficher les métadonnées d’extension IPTC de la ressource.
+1. Cliquez sur l’onglet **[!UICONTROL Extension IPTC]** pour afficher les métadonnées d’extension IPTC de la ressource.
 1. Modifiez les propriétés de métadonnées d’extension IPTC, selon vos besoins.
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer les modifications.
 
@@ -294,9 +294,9 @@ Outre les évaluations individuelles et cumulées, la page Propriétés affiche 
 
 Ces évaluations sont disponibles dans la section **[!UICONTROL Évaluation de la création]** de l’onglet **[!UICONTROL Avancé]**.
 
-Cette évaluation est une propriété en lecture seule dont la valeur est comprise entre 1 et 5. Vous pouvez rechercher des ressources en fonction de leur évaluation de création dans le panneau Rechercher.
+Cette évaluation est une propriété en lecture seule et se situe entre 1 et 5. Vous pouvez rechercher des ressources en fonction de leur évaluation créative dans le panneau de recherche.
 
-Notez toutefois que cette propriété n’est pas indexée pour l’instant et ce, afin d’éviter tout conflit avec les modifications personnalisées apportées par les utilisateurs.
+Toutefois, cette propriété n’est actuellement pas indexée pour éviter tout conflit avec les modifications personnalisées effectuées par les utilisateurs.
 
 ### Prise en charge des mots-clés {#keyword-support}
 

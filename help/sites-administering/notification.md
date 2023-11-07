@@ -1,19 +1,15 @@
 ---
 title: Configurer les notifications par e-mail
-seo-title: Configuring Email Notification
 description: Découvrez comment configurer les notifications électroniques dans Adobe Experience Manager.
-seo-description: Learn how to configure Email Notification in AEM.
-uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2069'
-ht-degree: 95%
+source-wordcount: '2067'
+ht-degree: 93%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 95%
 
 AEM envoie des notifications par e-mail aux utilisateurs et utilisatrices qui :
 
-* Ont souscrit aux événements de pages, par exemple la modification ou la réplication. La section [Boîte de réception de notifications](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) décrit comment s’abonner à ces événements.
+* ont souscrit aux événements de page, par exemple la modification ou la réplication ; La section [Boîte de réception de notifications](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) décrit comment s’abonner à ces événements.
 
 * Ont souscrit aux événements de forum.
 * Doivent effectuer une opération dans un workflow. La section [Étape de participant](/help/sites-developing/workflows-step-ref.md#participant-step) décrit comment déclencher une notification par e-mail dans un workflow.
@@ -279,7 +275,7 @@ Vous pouvez configurer OAuth pour plusieurs fournisseurs de messagerie, comme in
    * `https://mail.google.com/`
    * `https://www.googleapis.com//auth/gmail.send`
 1. Une fois que vous avez ajouté les portées, revenez à **Informations d’identification** dans le menu de gauche, puis accédez à **Création d’informations d’identification** - **ID client OAuth** - **Application de bureau**.
-1. Une nouvelle fenêtre s’ouvre, contenant l’identifiant du client et le secret du client.
+1. Une nouvelle fenêtre s’ouvre. Elle contient l’identifiant du client et le secret du client.
 1. Enregistrez ces informations d’identification.
 
 **Configurations côté AEM**
@@ -361,7 +357,7 @@ Enfin, confirmez la configuration en procédant comme suit :
 1. Ensuite, accédez à **Certificats et secrets**, cliquez sur **Nouveau secret client** et suivez les étapes à l’écran pour créer un secret. Veillez à prendre note de ce secret pour une utilisation ultérieure.
 1. Appuyez sur **Aperçu** dans le volet de gauche et copiez les valeurs pour **ID d’application (client)** et **ID de répertoire (locataire)** pour une utilisation ultérieure.
 
-Pour résumer, vous aurez besoin des informations suivantes pour configurer OAuth2 pour le service de messagerie du côté AEM :
+Pour effectuer une récapitulation, vous devez disposer des informations suivantes pour configurer OAuth2 pour le service de messagerie du côté AEM :
 
 * L’URL d’authentification, qui sera créée avec l’identifiant du client. Elle se présente comme suit : `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
 * L’URL du jeton, qui sera construite avec l’ID du locataire. Elle se présente comme suit : `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`

@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2692'
+source-wordcount: '2688'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ Les applications mobiles sont basées sur un plan directeur qui définit une str
 * **Titre :** Titre de l’application.
 * **Chemin de destination :** Emplacement dans le référentiel où l’application est stockée. Laissez la valeur par défaut pour créer un chemin d’accès en fonction du nom de l’application.
 
-* **Nom :** La valeur par défaut est la valeur de la propriété Title avec les caractères d’espace supprimés. Le nom est utilisé dans CQ pour faire référence à l’application, par exemple pour le noeud de référentiel qui représente l’application.
+* **Nom :** La valeur par défaut est la valeur de la propriété Title avec les caractères d’espace supprimés. Le nom est utilisé dans CQ pour faire référence à l’application, par exemple, pour le noeud de référentiel qui représente l’application.
 * **Description :** Description de l’application.
 * **URL du serveur :** URL qui fournit des mises à jour de contenu en vol (OTA) à l’application. La valeur par défaut est l’URL du serveur de publication de l’instance utilisée pour créer une application (provenant du service externalizer). Notez qu’il doit s’agir d’une instance de serveur de publication plutôt que d’un auteur, ce qui nécessite une authentification.
 
@@ -169,7 +169,7 @@ Procédez comme suit sur l’instance où vous souhaitez mettre à jour le cache
 
 ### Utilisation des modèles d’application {#using-app-templates}
 
-Il s’agit d’une fonctionnalité disponible avec les applications 6.1 Feature Pack 2 et qui permet d’exploiter facilement les modèles d’applications existants pour créer de nouvelles applications dans AEM.
+Il s’agit d’une fonctionnalité disponible avec les applications 6.1 Feature Pack 2 et qui permet d’utiliser facilement des modèles d’applications existants pour créer de nouvelles applications dans AEM.
 
 Qu’est-ce qu’un modèle d’application ? Considérez-le comme un ensemble de modèles de page et de composants qui représentent une référence ou une base d’une application.
 Lors de la création d’une application basée sur le modèle d’une autre application, vous obtenez une application dont le point de départ est représentatif de l’application à partir de laquelle elle a été créée.
@@ -219,7 +219,7 @@ Pour ouvrir l’application, cliquez sur Applications mobiles dans le rail, puis
 
 Chaque page de l’application mobile comprend les fonctionnalités suivantes :
 
-* Bouton Retour permettant de revenir à la page parente. Notez que le bouton Retour n’apparaît pas sur la page d’accueil.
+* Bouton Retour permettant de revenir à la page parente. Le bouton Retour n’apparaît pas sur la page d’accueil.
 * Un rail extensible qui propose un menu de commandes et de liens :
 
    * Ouvrez la page Emplacements .

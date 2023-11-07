@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1698'
-ht-degree: 65%
+ht-degree: 62%
 
 ---
 
@@ -67,10 +67,10 @@ La personnalisation peut être utilisée dans de nombreuses situations :
 
 ### Des groupes d’utilisateurs spécifiques, restreints et ciblés - En extranet {#extranets}
 
-* Les utilisateurs ont besoin d’une connexion pour l’autorisation. Celle-ci sera liée à un profil qui fournit les informations nécessaires à la personnalisation ; éventuellement des détails tels que leur emplacement, leur relation avec le produit, l’historique d’utilisation, les responsabilités budgétaires, etc.
+* Les utilisateurs ont besoin d’une connexion pour l’autorisation. Celle-ci est liée à un profil qui fournit les informations nécessaires à la personnalisation ; des détails tels que leur emplacement, leur relation avec le produit, l’historique d’utilisation, les responsabilités budgétaires, etc.
 * Ces instances peuvent s’étendre sur plusieurs sites, tels que :
 * Des entreprises qui fournissent des sites web à une partie hautement spécialisée de leur marché, par exemple, une société pharmaceutique qui fournit un site web spécialisé pour les médecins.
-* Les entreprises qui fournissent des sites web permettant au client de visualiser son compte et ses informations de facturation actuels (par exemple, les opérateurs de téléphonie).
+* Les entreprises qui fournissent des sites web permettant à leurs clients de consulter les informations de compte et de facturation actuelles ; par exemple, les opérateurs téléphoniques.
 
 ### Sur des sites web de vente et de distribution {#sales-site}
 
@@ -180,4 +180,4 @@ Sans l’extension Communities, les différentes méthodes à examiner pour rés
 * Synchroniser de multiples instances de publication si nécessaire
 * Envoyer le contenu créé par l’utilisateur de l’instance de publication à l’environnement de création, à partir duquel il peut être publié de façon similaire à la publication du contenu des pages
 
-La méthode utilisée pour obtenir l’homogénéité du contenu créé par l’utilisateur dans tout l’environnement de publication consistant en plusieurs instances de publication doit être soigneusement conçue et testée en termes de performances et d’homogénéité.
+La méthode utilisée pour obtenir la cohérence du contenu généré par l’utilisateur dans un environnement de publication constitué de plusieurs instances de publication doit être soigneusement conçue et testée pour assurer les performances et la cohérence.

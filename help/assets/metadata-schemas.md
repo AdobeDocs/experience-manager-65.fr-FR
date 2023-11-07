@@ -7,10 +7,10 @@ role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: ht
-source-wordcount: '3618'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '3616'
+ht-degree: 98%
 
 ---
 
@@ -196,7 +196,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
 1. (Facultatif) Dans l’éditeur de schéma de métadonnées, créez un champ à conditionner. Spécifiez un nom et un chemin de propriété dans l’onglet **[!UICONTROL Paramètres]**.
 
-   Pour créer un onglet, cliquez sur `+` afin d’ajouter un onglet, puis ajoutez un champ de métadonnées.
+   Pour créer un onglet, cliquez sur `+` pour ajouter un onglet, puis ajouter un champ de métadonnées.
 
    ![add_tab](assets/add_tab.png)
 
@@ -330,7 +330,7 @@ Les métadonnées modifiées définies dans le schéma de métadonnées de la va
 L’héritage des métadonnées par les ressources est basé sur le schéma appliqué au dossier de premier niveau dans la hiérarchie. Le même schéma est appliqué ou hérité par les sous-dossiers. Si un autre schéma est appliqué au niveau du sous-dossier, l’héritage s’arrête.
 
 1. Dans l’interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**. La page **[!UICONTROL Formulaires de schéma de métadonnées]** s’affiche.
-1. Cochez la case en regard d’un formulaire, par exemple le formulaire de métadonnées par défaut, puis cliquez sur **[!UICONTROL Copier]** et enregistrez-le en tant que formulaire personnalisé. Spécifiez un nom personnalisé pour le formulaire, par exemple `my_default`. Vous pouvez également créer un formulaire personnalisé.
+1. Cochez la case située avant un formulaire, par exemple le formulaire de métadonnées par défaut, puis cliquez sur le bouton **[!UICONTROL Copier]** et enregistrez-le en tant que formulaire personnalisé. Spécifiez un nom personnalisé pour le formulaire, par exemple, `my_default`. Vous pouvez également créer un formulaire personnalisé.
 
 1. Sur la page **[!UICONTROL Formulaires de schéma de métadonnées]**, sélectionnez le formulaire `my_default`, puis cliquez sur **[!UICONTROL Modifier]**.
 

@@ -4,10 +4,10 @@ description: Découvrez comment créer une racine de langue dans Adobe Experienc
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 1ae21d80-0683-4ab9-afaa-4d733ff47720
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 57%
+ht-degree: 50%
 
 ---
 
@@ -19,7 +19,7 @@ La procédure ci-dessous utilise l’interface utilisateur classique pour créer
 1. Ajoutez une nouvelle page enfant qui représente la version linguistique du site :
 
    1. Cliquez sur Nouveau > Nouvelle page.
-   1. Dans la boîte de dialogue, spécifiez le titre et le nom. Le nom doit être au format `<language-code>` ou `<language-code>_<country-code>`, par exemple, en_US, en_us, en_GB, en_gb.
+   1. Dans la boîte de dialogue, spécifiez le titre et le nom. Le nom doit être au format de `<language-code>` ou `<language-code>_<country-code>`, par exemple, en, en_US, en_us, en_GB, en_gb.
 
       * Le code de langue pris en charge est un code à deux lettres en minuscules, défini par la norme ISO-639-1.
       * Le code de pays pris en charge est un code à deux lettres, en minuscules ou en majuscules, comme défini par la norme ISO 3166.

@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1929'
-ht-degree: 25%
+source-wordcount: '1923'
+ht-degree: 23%
 
 ---
 
@@ -33,7 +33,7 @@ Lors de la configuration des processus de workflow (personnalisés et/ou prêts 
 
 Pour optimiser les charges d’ingestion élevées, vous pouvez définir une [workflow en tant que transitoire](/help/sites-developing/workflows.md#transient-workflows).
 
-Lorsqu’un workflow est transitoire, les données d’exécution liées aux étapes intermédiaires ne sont pas conservées dans le JCR lors de leur exécution (les rendus de sortie sont bien sûr conservés).
+Lorsqu’un workflow est transitoire, les données d’exécution liées aux étapes intermédiaires ne sont pas conservées dans le JCR lors de leur exécution (les rendus de sortie sont conservés).
 
 Les avantages peuvent être les suivants :
 
@@ -68,7 +68,7 @@ Il existe, en outre, une configuration distincte pour la **File d’attente des 
 
 ### Configuration de files d’attente de tâches individuelles {#configure-individual-job-queues}
 
-Dans certains cas, il est utile de configurer des files d’attente individuelles pour contrôler les threads simultanés, ou d’autres options de file d’attente, sur une base de tâche individuelle. Vous pouvez ajouter et configurer une file d’attente individuelle à partir de la console web via le **Configuration de la file d’attente des tâches Apache Sling** fabrique. Pour localiser la rubrique appropriée à répertorier, exécutez le modèle du workflow et recherchez-le dans la console **Tâches Sling** ; par exemple, à l’adresse `http://localhost:4502/system/console/slingevent`.
+Dans certains cas, il est utile de configurer des files d’attente individuelles pour contrôler les threads simultanés, ou d’autres options de file d’attente, sur une base de tâche individuelle. Vous pouvez ajouter et configurer une file d’attente individuelle à partir de la console web via le **Configuration de la file d’attente des tâches Apache Sling** fabrique. Pour trouver la rubrique appropriée à répertorier, exécutez le modèle de votre workflow et recherchez-la dans le **Tâches Sling** console, par exemple, à l’adresse `http://localhost:4502/system/console/slingevent`.
 
 Des files d’attente individuelles peuvent également être ajoutées pour les workflows transitoires.
 
@@ -255,7 +255,7 @@ Enregistrer une session :
 
 >[!CAUTION]
 >
->Si vous créez quand même votre propre session JCR malgré ces recommandations, vous devrez l’enregistrer.
+>Si, malgré les recommandations ici, vous créez votre propre session jcr, elle doit être enregistrée.
 
 ### Réduction du nombre/de la portée des lanceurs {#minimize-the-number-scope-of-launchers}
 
@@ -285,7 +285,7 @@ Les workflows peuvent entraîner une surcharge importante, à la fois en termes 
 
 Par exemple, un workflow implémente un processus d’entreprise sur un ensemble de contenu, puis active ce contenu. Il est préférable de créer un processus de workflow personnalisé qui active chacun de ces noeuds, plutôt que de démarrer une **Activer le contenu** modèle pour chacun des noeuds de contenu qui doivent être publiés. Cette approche nécessite un travail de développement supplémentaire, mais elle est plus efficace lors de l’exécution que de démarrer une instance de workflow distincte pour chaque activation.
 
-Un autre exemple serait un workflow qui traite un certain nombre de noeuds, crée un module de workflow, puis active ce module. Plutôt que de créer le module, puis de démarrer un workflow distinct avec le module comme charge utile, vous pouvez modifier la charge utile de votre workflow dans l’étape qui crée le module, puis appeler l’étape pour activer le module dans le même modèle de workflow.
+Un autre exemple serait un workflow qui traite plusieurs noeuds, crée un module de workflow, puis active ce module. Plutôt que de créer le module, puis de démarrer un workflow distinct avec le module comme charge utile, vous pouvez modifier la charge utile de votre workflow dans l’étape qui crée le module, puis appeler l’étape pour activer le module dans le même modèle de workflow.
 
 ### Avance du gestionnaire {#handler-advance}
 

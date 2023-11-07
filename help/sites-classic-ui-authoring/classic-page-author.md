@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 exl-id: a3606d72-1bd8-4886-9285-6457dae66486
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 92%
+ht-degree: 86%
 
 ---
 
@@ -42,7 +42,7 @@ Vous pouvez modifier les composants Texte et Image directement sur la page web s
 Fenêtre d’inspection flottante qui s’ouvre sur la page à modifier. Depuis cette fenêtre, vous pouvez faire glisser des composants sur la page et procéder à des opérations spécifiques à la page.
 
 * **[Outil de recherche de contenu](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**
-Sur le côté gauche de chaque page à créer, l’outil de recherche de contenu fournit un accès rapide à diverses ressources, y compris des ressources numériques (autres images, éléments Flash et documents, par exemple), d’autres pages et des paragraphes. Ces éléments peuvent être déplacés sur la page, par exemple pour positionner les ressources ou créer des liens vers d’autres pages.
+Sur le côté gauche de chaque page à créer, l’outil de recherche de contenu fournit un accès rapide à diverses ressources, y compris des ressources numériques (autres images, éléments Flash et documents, par exemple), d’autres pages et des paragraphes. Ces éléments peuvent être déplacés vers la page ; par exemple, pour positionner des ressources ou créer des liens vers d’autres pages.
 
 * **Menu contextuel**
 Cliquez avec le bouton droit de la souris sur la plupart des éléments à l’écran (par exemple, paragraphes sur la page) pour afficher un menu contextuel avec les options d’action appropriées.

@@ -11,7 +11,7 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3935'
 ht-degree: 98%
@@ -24,7 +24,7 @@ ht-degree: 98%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 
@@ -228,7 +228,7 @@ En outre, un formulaire adaptatif avec [!DNL Adobe Sign] activé n’est envoyé
 <!-- Remove when forms portal goes live
 >[!NOTE]
 >
->Data of the adaptive form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
+>Data of the adaptive form is stored temporarily on Forms Portal. Use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
 Votre expérience de signature de formulaire est prête. Vous pouvez prévisualiser le formulaire pour vérifier l’expérience de signature. Sur le formulaire publié, les champs Bloc [!DNL Adobe Sign] sont affichés lorsqu’un signataire reçoit le formulaire à signer dans un e-mail. Cette expérience est également connue comme expérience de signature hors du formulaire. Vous pouvez également configurer une expérience de signature dans le formulaire pour le premier ou la première signataire. Pour obtenir des instructions détaillées, consultez [Créer une expérience de signature dans le formulaire](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience).

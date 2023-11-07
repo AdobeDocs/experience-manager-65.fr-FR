@@ -7,7 +7,7 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 2%
@@ -114,7 +114,7 @@ Une structure de site de communauté, créée à l’aide de l’assistant, incl
 
 ### Exemple de code : notification de réception de message {#sample-code-message-received-notification}
 
-La fonction Messagerie sociale génère des événements pour les opérations, par exemple `send`, `marking read`, `marking delete`. Ces événements peuvent être capturés et les actions effectuées sur les données contenues dans l’événement.
+La fonction Messagerie sociale génère des événements pour les opérations, par exemple : `send`, `marking read`, `marking delete`. Ces événements peuvent être capturés et les actions effectuées sur les données contenues dans l’événement.
 
 L’exemple suivant illustre un gestionnaire d’événements qui écoute la fonction `message sent` et envoie un email à tous les destinataires du message à l’aide de la variable `Day CQ Mail Service`.
 

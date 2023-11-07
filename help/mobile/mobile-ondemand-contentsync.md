@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2974'
+source-wordcount: '2973'
 ht-degree: 1%
 
 ---
@@ -215,7 +215,7 @@ La liste ci-dessous présente un exemple de configuration pour la synchronisatio
 
 **events.plist** - Cette entrée est un peu spéciale. Comme indiqué dans l’introduction, l’application doit fournir une vue de carte avec les marqueurs des emplacements des événements. Les informations d&#39;emplacement nécessaires seront fournies sous la forme d&#39;un fichier distinct au format PLIST. Pour que cela fonctionne, le composant de liste d’événements utilisé sur la page d’index comporte un script appelé plist.jsp. Ce script est exécuté lorsque la ressource du composant est demandée avec la variable `.plist` extension . Comme d’habitude, le chemin d’accès aux composants est indiqué dans la propriété path et le type est défini sur content, car vous souhaitez utiliser [Traitement des requêtes Sling](/help/sites-developing/the-basics.md#sling-request-processing).
 
-**events.touch.html** - Vient ensuite les pages réelles qui s’afficheront dans l’application. La propriété path est définie sur la page racine des événements. Toutes les pages d’événement situées sous cette page seront également incluses, car la propriété profonde est définie par défaut sur true. Vous utilisez les pages comme type de configuration, de sorte que toute image ou tout autre fichier pouvant être référencé à partir d’une image ou d’un composant de téléchargement sur une page soit inclus. En outre, le paramétrage du sélecteur tactile nous donne une version mobile des pages. La configuration dans le Feature Pack contient plus d’entrées de ce type, mais elles sont omises pour plus de simplicité ici.
+**events.touch.html** - Vient ensuite les pages réelles affichées dans l’application. La propriété path est définie sur la page racine des événements. Toutes les pages d’événement situées sous cette page seront également incluses, car la propriété profonde est définie par défaut sur true. Vous utilisez les pages comme type de configuration, de sorte que toute image ou tout autre fichier pouvant être référencé à partir d’une image ou d’un composant de téléchargement sur une page soit inclus. En outre, le paramétrage du sélecteur tactile nous donne une version mobile des pages. La configuration dans le Feature Pack contient plus d’entrées de ce type, mais elles sont omises pour plus de simplicité ici.
 
 **logo** - Le type de configuration du logo n’a pas encore été mentionné et il ne s’agit pas des types intégrés. Cependant, le framework de synchronisation de contenu est extensible dans une certaine mesure. C’est un exemple de cela, qui sera traité dans la section suivante.
 

@@ -10,18 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '359'
 ht-degree: 2%
 
 ---
 
 # Principes de base des composants des communautés {#communities-components-basics}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
-La section de création de la documentation décrit l’ajout de fonctionnalités Communities à AEM sites en mode d’édition de création, ainsi que la description des configurations de composant.
+La section de création de la documentation décrit l’ajout de fonctionnalités Communities à AEM sites en mode d’édition de création et décrit les configurations de composant.
 
 Les composants peuvent être explorés à l’aide d’une instance AEM et de l’objet interactif [Guide des composants de communauté](components-guide.md).
 
@@ -55,13 +55,13 @@ Les composants sélectionnés sont désormais disponibles dans l’explorateur d
 
 [Bibliothèques côté client](../../help/sites-developing/clientlibs.md) (clientlibs) sont nécessaires au bon fonctionnement (JavaScript) et au style (CSS) d’un composant.
 
-Lors de l’ajout d’un composant Communities à une page, si le résultat est une erreur ou une apparence inattendue, la première chose à essayer est d’ajouter les bibliothèques client requises pour le composant Communities. Pour plus d’informations, voir [Clientlibs des composants Communities](clientlibs.md).
+Lors de l’ajout d’un composant Communities à une page, si le résultat est une erreur ou une apparence inattendue, la première chose à essayer est d’ajouter les clientlibs requises pour le composant Communities. Pour plus d’informations, voir [Clientlibs des composants Communities](clientlibs.md).
 
-### Exemple : Révisions placées initialement sans bibliothèques clientes... {#example-initially-placed-reviews-without-client-libraries}
+### Exemple : révisions placées initialement sans bibliothèques clientes... {#example-initially-placed-reviews-without-client-libraries}
 
 ![clientlibs1](assets/clientlibs1.png)
 
-### ... Et avec les bibliothèques clientes {#and-with-client-libraries}
+### .. Et avec les bibliothèques clientes {#and-with-client-libraries}
 
 ![clientlibs2](assets/clientlibs2.png)
 
@@ -79,10 +79,10 @@ Pour les informations de création :
 
 * [Utilisation des balises](../../help/sites-authoring/tags.md)
 
-Pour plus d’informations sur l’administration :
+Pour plus d’informations administratives :
 
 * Création d’espaces de noms de balise (taxonomie) : [Administration des balises](../../help/sites-administering/tags.md)
-* Configuration du site de la communauté : see [BALISAGE](sites-console.md#tagging)
+* Configuration du site de la communauté : voir [BALISAGE](sites-console.md#tagging)
 * [Balisage du contenu généré par l’utilisateur](../../help/sites-authoring/tags.md)
 
 Pour plus d’informations sur les développeurs :

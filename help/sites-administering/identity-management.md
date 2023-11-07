@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 95%
+source-wordcount: '1250'
+ht-degree: 85%
 
 ---
 
@@ -76,7 +76,7 @@ Le composant de connexion peut être utilisé pour collecter les informations de
 
 Les champs standard **Nom d’utilisateur** et **Mot de passe**, avec un bouton **Connexion**, s’affichent à l’intention du visiteur afin de lui permettre d’activer le processus de connexion lors de la saisie des informations d’identification.
 
-Par exemple, les utilisateurs peuvent se connecter ou créer un compte à l’aide de l’option **Se connecter** de la barre d’outils Geometrixx, qui utilise la page :
+Par exemple, les utilisateurs peuvent se connecter ou créer un compte à l’aide de la variable **Se connecter** dans la barre d’outils de Geometrixx, qui utilise la page :
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
@@ -94,22 +94,22 @@ En fonction du formulaire d’enregistrement, le visiteur peut avoir enregistré
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-Pour afficher les détails de votre profil, cliquez sur **Mon profil** dans le coin supérieur droit d’une page ; par exemple, avec le compte `admin` :
+Pour afficher les détails de votre profil, cliquez sur **Mon profil** dans le coin supérieur droit d’une page ; par exemple, avec la fonction `admin` compte :
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
 Vous pouvez afficher un autre profil à l’aide du [contexte du client](/help/sites-administering/client-context.md) (dans l’environnement de création et avec des autorisations suffisantes) :
 
-1. Ouvrez une page. Par exemple, la page Geometrixx :
+1. Ouvrez une page ; par exemple, la page de Geometrixx :
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
-1. Cliquez sur **Mon profil** dans le coin supérieur droit. Le profil de votre compte actuel s’affiche, en tant par exemple qu’administrateur ou administratrice.
+1. Cliquez sur **Mon profil** dans le coin supérieur droit. Le profil de votre compte actuel s’affiche, par exemple, celui de l’administrateur.
 1. Appuyez sur **Control-Alt-C** pour ouvrir le contexte client.
 1. Dans le coin supérieur gauche du contexte client, cliquez sur le bouton **Charger un profil**.
 
    ![Icône Chargement d’un profil](do-not-localize/loadprofile.png)
 
-1. Sélectionnez un autre profil dans la liste déroulante de la boîte de dialogue : par exemple, **Alison Parker**.
+1. Sélectionnez un autre profil dans la liste déroulante de la boîte de dialogue, par exemple : **Alison Parker**.
 1. Cliquez sur **OK**.
 1. Cliquez de nouveau sur **Mon profil**. Le formulaire sera mis à jour avec les détails d’Alison.
 
@@ -119,7 +119,7 @@ Vous pouvez afficher un autre profil à l’aide du [contexte du client](/help/s
 
 ## Ajout de champs à la définition d’un profil {#adding-fields-to-the-profile-definition}
 
-Vous pouvez ajouter des champs à la définition d’un profil. Par exemple, pour ajouter un champ Couleur préférée au profil Geometrixx :
+Vous pouvez ajouter des champs à la définition d’un profil. Par exemple, pour ajouter un champ &quot;Couleur préférée&quot; au profil de Geometrixx :
 
 1. Dans la console Sites web, accédez à Site Geometrixx Outdoors > Français > Utilisateur > Mon profil.
 1. Double-cliquez sur la page **Mon profil** pour l’ouvrir afin de la modifier.
@@ -145,7 +145,7 @@ Vous pouvez ajouter des champs à la définition d’un profil. Par exemple, pou
 
 ## États du profil {#profile-states}
 
-Différents cas d’utilisation nécessitent de savoir si un utilisateur (ou plutôt son profil) est dans un *état spécifique* ou non.
+Plusieurs cas d’utilisation nécessitent de savoir si un utilisateur (ou plutôt son profil) se trouve dans une *état spécifique* ou pas.
 
 Cela implique de définir une propriété appropriée dans le profil utilisateur de manière à :
 
@@ -163,7 +163,7 @@ Pour ce faire, procédez comme suit :
 
   Permet de gérer les actions associées aux états.
 
-Différents états peuvent être définis. Dans Geometrixx, par exemple, il s’agit des états suivants :
+Plusieurs états peuvent être définis, par exemple en Geometrixx :
 
 * Abonnement (ou désabonnement) aux notifications des newsletters ou aux fils de commentaires
 * Ajout et suppression d’une connexion à un ami

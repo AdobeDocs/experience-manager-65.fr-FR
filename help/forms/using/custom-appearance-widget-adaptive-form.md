@@ -1,19 +1,15 @@
 ---
 title: Création d’apparences personnalisées pour les champs de formulaire adaptatif
-seo-title: Create custom appearances for adaptive form fields
-description: Personnalisation de l’apparence des composants prêts à l’emploi dans les formulaires adaptatifs.
-seo-description: Customize appearance of out-of-the-box components in Adaptive Forms.
-uuid: 1aa36443-774a-49fb-b3d1-d5a2d5ff849a
+description: Personnaliser l’aspect des composants prêts à l’emploi dans le Forms adaptatif.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: d388acef-7313-4e68-9395-270aef6ef2c6
 docset: aem65
 exl-id: 770e257a-9ffd-46a4-9703-ff017ce9caed
-source-git-commit: 8a24ca02762e7902b7d0033b36560629ee711de1
-workflow-type: ht
-source-wordcount: '1713'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1712'
+ht-degree: 75%
 
 ---
 
@@ -21,13 +17,13 @@ ht-degree: 100%
 
 ## Présentation {#introduction}
 
-Les formulaires adaptatifs exploitent [le cadre de l’apparence](/help/forms/using/introduction-widgets.md) pour vous aider à créer des apparences personnalisées pour des champs de formulaire adaptatif et offrir une expérience différente à l’utilisateur. Par exemple, remplacez des boutons radio et des cases à cocher par les boutons de basculement ou utilisez des modules externes jQuery pour limiter les entrées d’utilisateurs dans les champs tels que les numéros de téléphone ou l’ID de courrier électronique. 
+Les formulaires adaptatifs utilisent la variable [structure d’aspect](/help/forms/using/introduction-widgets.md) pour vous aider à créer des apparences personnalisées pour les champs de formulaire adaptatif et offrir une expérience utilisateur différente. Par exemple, remplacez des boutons radio et des cases à cocher par les boutons de basculement ou utilisez des modules externes jQuery pour limiter les entrées d’utilisateurs dans les champs tels que les numéros de téléphone ou l’ID de courrier électronique. 
 
-Ce document explique comment utiliser un module externe jQuery pour créer ces expériences différentes pour les champs de formulaire adaptatif. En outre, il présente un exemple pour créer une apparence personnalisée de façon à ce que le composant de champ numérique s’affiche sous forme d’exécution numérique pas à pas ou de curseur.
+Ce document explique comment utiliser un module externe jQuery pour créer ces expériences alternatives pour les champs de formulaire adaptatif. En outre, il présente un exemple de création d’une apparence personnalisée pour que le composant de champ numérique s’affiche sous la forme d’une étape numérique ou d’un curseur.
 
-Tout d’abord, examinons les termes et concepts clés utilisés dans cet article.
+Commençons par examiner les termes et concepts clés utilisés dans cet article.
 
-**Apparence** : se rapporte au style, à l’aspect et à l’organisation des différents éléments d’un champ de formulaire adaptatif. Il comprend généralement un intitulé, une zone interactive pour saisir des données, une icône d’aide et des descriptions longues et courtes du champ. La personnalisation de l’apparence abordée dans cet article s’applique à l’apparence de la zone de saisie du champ.
+**Apparence** : se rapporte au style, à l’aspect et à l’organisation des différents éléments d’un champ de formulaire adaptatif. Il comprend généralement un libellé, une zone interactive pour fournir des entrées, une icône d’aide et des descriptions courtes et longues du champ. La personnalisation de l’aspect décrite dans cet article s’applique à l’aspect de la zone de saisie du champ.
 
 **Plug-in jQuery** : offre un mécanisme standard, en fonction du framework de widget jQuery, pour implémenter une autre apparence.
 
@@ -37,7 +33,7 @@ Tout d’abord, examinons les termes et concepts clés utilisés dans cet articl
 
 **Contrôle utilisateur** : fait référence à l’élément principal dans un widget qui contient la valeur du champ. Il est utilisé par le framework d’aspect pour associer l’interface utilisateur du widget personnalisé au modèle de formulaire adaptatif.
 
-## Procédure à suivre pour créer une apparence personnalisée {#steps-to-create-a-custom-appearance}
+## Procédure de création d’une apparence personnalisée {#steps-to-create-a-custom-appearance}
 
 Les étapes, à un niveau élevé, pour créer une apparence personnalisée sont les suivantes :
 
@@ -50,7 +46,7 @@ Les étapes, à un niveau élevé, pour créer une apparence personnalisée sont
 
 ### Création d’un projet {#create-a-project}
 
-Un archétype d’expert est un point de départ pour créer une apparence personnalisée. Les détails de l’archétype à utiliser sont les suivants :
+Un archétype Maven est un point de départ pour créer une apparence personnalisée. Les détails de l’archétype à utiliser sont les suivants :
 
 * **Référentiel** : https://repo1.maven.org/maven2/com/adobe/
 * **ID d’artefact** : custom-appearance-archetype.
@@ -127,7 +123,7 @@ Une fois le modèle de projet créé, effectuez les modifications suivantes, sel
   </tr>
   <tr>
    <td><code>render</code></td>
-   <td>La fonction de rendu renvoie l’objet jQuery à l’élément HTML par défaut du widget. L’élément HTML par défaut doit être d’un type pouvant être actif. Par exemple <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code> et <code>&lt;li&gt;</code>. L’élément renvoyé est utilisé comme <code>$userControl</code>. Si le <code>$userControl</code> indique la contrainte ci-dessus, les fonctions de la classe <code>AbstractWidget</code> fonctionnent comme prévu, sinon une partie des API communes (focus, clic) nécessitent des modifications. </td>
+   <td>La fonction de rendu renvoie l’objet jQuery pour l’élément de HTML par défaut du widget. L’élément de HTML par défaut doit être de type pouvant faire l’objet d’un focus. Par exemple <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code> et <code>&lt;li&gt;</code>. L’élément renvoyé est utilisé comme <code>$userControl</code>. Si le <code>$userControl</code> indique la contrainte ci-dessus, les fonctions de la classe <code>AbstractWidget</code> fonctionnent comme prévu, sinon une partie des API communes (focus, clic) nécessitent des modifications. </td>
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
@@ -141,7 +137,7 @@ Une fois le modèle de projet créé, effectuez les modifications suivantes, sel
   </tr>
   <tr>
    <td><code>getCommitValue</code></td>
-   <td>Le cadre de widget jQuery charge la fonction à chaque fois que la valeur du widget jQuery est enregistrée dans le modèle XFA (par exemple sur l’événement de sortie d’un champ de texte). L’implémentation doit renvoyer la valeur qui est enregistrée dans le widget. Le gestionnaire s’accompagne de la nouvelle valeur de l’option.</td>
+   <td>La structure du widget jQuery charge la fonction chaque fois que la valeur du widget jQuery est enregistrée dans le modèle XFA (par exemple, lors de l’événement de sortie d’un champ de texte). L’implémentation doit renvoyer la valeur qui est enregistrée dans le widget. Le gestionnaire s’accompagne de la nouvelle valeur de l’option.</td>
   </tr>
   <tr>
    <td><code>showValue</code></td>
@@ -157,22 +153,22 @@ Une fois le modèle de projet créé, effectuez les modifications suivantes, sel
 1. Mettez le fichier Javascript à jour dans le dossier `integration/javascript` selon les besoins.
 
    * Remplacez le texte `__widgetName__` par le nom du widget réel.
-   * Etendez le widget à partir d’une classe de widgets prêts à l’emploi convenable. Dans la plupart des cas, il s’agit de la classe de widget correspondant au widget existant à remplacer. Le nom de la classe parente est utilisé à plusieurs endroits, il est donc recommandé de rechercher toutes les instances de la chaîne `xfaWidget.textField` dans le fichier, et de les remplacer par la classe parente réelle utilisée.
+   * Étendez le widget à partir d’une classe de widget d’usine appropriée. Dans la plupart des cas, il s’agit de la classe de widget correspondant au widget existant en cours de remplacement. Le nom de la classe parente est utilisé à plusieurs endroits, il est donc recommandé de rechercher toutes les instances de la chaîne `xfaWidget.textField` dans le fichier, et de les remplacer par la classe parente réelle utilisée.
    * Etendez la méthode `render` pour fournir une autre interface utilisateur. Il s’agit de l’emplacement d’où le module externe jQuery sera appelé pour mettre à jour l’interface utilisateur ou le comportement de l’interaction. La méthode `render` doit retourner un élément de contrôle de l’utilisateur.
 
    * Etendez la méthode `getOptionsMap` pour remplacer le paramètre d’option concerné suite à une modification du widget. La fonction renvoie un mappage qui fournit des détails sur l’action à exécuter lors de la modification d’une option. Les touches sont les options fournies au widget et les valeurs sont les fonctions appelées à chaque fois qu’une modification de l’option est détectée.
    * La méthode `getEventMap` mappe les événements déclenchés par le widget avec les événements requis par le modèle de formulaire adaptatif. La valeur par défaut mappe les événements HTML standard du widget par défaut et doit être mise à jour si un événement alternatif est déclenché.
    * La `showDisplayValue` et la `showValue` appliquent la clause d’affichage et de modification de l’image et peuvent être remplacées pour obtenir un autre comportement.
 
-   * La méthode `getCommitValue` est appelée par le cadre des formulaires adaptatifs lorsque l’événement `commit` se produit. En règle générale, il s’agit de l’événement de sortie, à l’exception des éléments de liste déroulante, de bouton-radio et de case à cocher où il s’affiche en cas de modification. Pour en savoir plus, voir [Expressions des formulaires adaptatifs](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
+   * La méthode `getCommitValue` est appelée par le cadre des formulaires adaptatifs lorsque l’événement `commit` se produit. En règle générale, il s’agit de l’événement exit, à l’exception des éléments de liste déroulante, de bouton radio et de case à cocher où il se produit lors de la modification). Pour plus d’informations, voir [Expressions Forms adaptatives](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
 
-   * Le fichier de modèle fournit des exemples d’implémentation pour différentes méthodes. Supprimez les méthodes qui ne doivent pas être étendues.
+   * Le fichier de modèle fournit un exemple d’implémentation pour diverses méthodes. Supprimez les méthodes qui ne doivent pas être étendues.
 
 ### Créez une bibliothèque cliente. {#create-a-client-library}
 
 L’exemple de projet généré par l’archétype d’expert crée automatiquement les bibliothèques clientes requises et les inclut dans une bibliothèque cliente avec une catégorie `af.customwidgets`. Les fichiers Javascript et CSS disponibles dans `af.customwidgets` sont automatiquement inclus au moment de l’exécution.
 
-### Création et installation {#build-and-install}
+### Créer et installer {#build-and-install}
 
 Pour créer le projet, exécutez la commande suivante sur le shell pour générer un package CRX qui doit être installé sur le serveur AEM.
 
@@ -187,14 +183,14 @@ Pour créer le projet, exécutez la commande suivante sur le shell pour génére
 Pour appliquer l’apparence personnalisée à un champ de formulaire adaptatif :
 
 1. Ouvrez le formulaire adaptatif en mode d’édition.
-1. Ouvrez la boîte de dialogue **Propriétés** pour trouver le champ auquel vous voulez appliquer l’apparence personnalisée.
-1. Dans l’onglet **Style**, mettez à jour la propriété `CSS class` pour ajouter le nom de l’apparence au format `widget_<widgetName>`. Par exemple : **widget_numericstepper**
+1. Ouvrez le **Propriété** pour le champ sur lequel vous souhaitez appliquer l’apparence personnalisée.
+1. Dans l’onglet **Style**, mettez à jour la propriété `CSS class` pour ajouter le nom de l’apparence au format `widget_<widgetName>`. Par exemple : **widget_numericstepper**
 
 ## Exemple : Créer une apparence personnalisée   {#sample-create-a-custom-appearance-nbsp}
 
-Examinons à présent un exemple de création d’une apparence personnalisée pour qu’un champ numérique s’affiche sous forme d’exécution numérique pas à pas ou de curseur. Exécutez les étapes suivantes :
+Examinons maintenant un exemple pour créer une apparence personnalisée afin qu’un champ numérique s’affiche sous la forme d’un pas ou d’un curseur numérique. Exécutez les étapes suivantes :
 
-1. Exécutez la commande suivante pour créer un projet local en fonction de l’archétype expert :
+1. Exécutez la commande suivante pour créer un projet local basé sur l’archétype Maven :
 
    `mvn archetype:generate -DarchetypeRepository=https://repo1.maven.org/maven2/com/adobe/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
 
@@ -229,7 +225,7 @@ Examinons à présent un exemple de création d’une apparence personnalisée p
 
       ![eclipse-screenshot](assets/eclipse-screenshot.png)
 
-1. Sélectionnez le widget à utiliser pour l’apparence personnalisée. Cet exemple utilise le widget d’exécution numérique pas à pas suivant :
+1. Sélectionnez le widget à utiliser pour l’apparence personnalisée. Cet exemple utilise le widget d’exécution pas à pas numérique suivant :
 
    [https://www.jqueryscript.net/form/User-Friendly-Number-Input-Spinner-with-jQuery-Bootstrap.html](https://www.jqueryscript.net/form/User-Friendly-Number-Input-Spinner-with-jQuery-Bootstrap.html)
 
@@ -239,7 +235,7 @@ Examinons à présent un exemple de création d’une apparence personnalisée p
    * La méthode `set value` du widget définit la valeur une fois que le focus est sur le champ. Il s’agit d’un élément obligatoire pour un widget de formulaire adaptatif.
    * La méthode `render` doit être remplacée pour appeler la méthode `bootstrapNumber`.
 
-   * Il n’y a aucune dépendance pour le module externe autre que le code source principal du module externe.
+   * Il n’existe aucune dépendance supplémentaire pour le module externe autre que le code source principal du module externe.
    * L’exemple n’effectue aucune mise en forme sur l’exécution automatique pas à pas ; aucun CSS supplémentaire n’est donc requis.
    * L’objet `$userControl` doit être disponible pour la méthode `render`. C’est un champ de type `text` qui est cloné avec le code du plug-in.
 
@@ -320,4 +316,4 @@ Examinons à présent un exemple de création d’une apparence personnalisée p
 
    1. Dans l’onglet Style, mettez à jour la propriété **[!UICONTROL classe CSS]** pour ajouter `widget_numericStepper`.
 
-La nouvelle apparence que vous venez de créer est désormais disponible.
+La nouvelle apparence que vous avez créée est désormais disponible.

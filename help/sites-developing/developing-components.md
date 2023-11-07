@@ -12,10 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 823e756f470b0599f7d53a3e08fdf650b4e892d1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3454'
-ht-degree: 97%
+source-wordcount: '3446'
+ht-degree: 94%
 
 ---
 
@@ -206,13 +206,13 @@ Pour consulter des exemples, voir :
 
 Les widgets de l’IU tactile sont implémentés en tant que composants de l’IU Granite.
 
-Pour créer un nouveau widget à utiliser dans une boîte de dialogue de composant pour l’IU tactile, vous devez [créer un composant de champ de l’IU Granite](/help/sites-developing/granite-ui-component.md).
+Pour créer un widget à utiliser dans une boîte de dialogue de composant pour l’interface utilisateur tactile, vous devez : [création d’un composant de champ d’IU Granite](/help/sites-developing/granite-ui-component.md).
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’interface utilisateur Granite, reportez-vous à la [documentation sur l’interface utilisateur Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>Pour plus d’informations sur l’interface utilisateur Granite, voir [Documentation de l’interface utilisateur Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
-Si vous configurez votre boîte de dialogue comme un conteneur simple pour un élément de formulaire, vous pouvez également voir le contenu principal du contenu de la boîte de dialogue sous la forme de champs de formulaire. La création d’un champ de formulaire nécessite la création d’un type de ressource. Cela équivaut à créer un composant. Pour vous aider dans cette tâche, l’IU Granite propose un composant de champ générique duquel hériter (en utilisant `sling:resourceSuperType`) :
+Si vous configurez votre boîte de dialogue comme un conteneur simple pour un élément de formulaire, vous pouvez également voir le contenu principal du contenu de la boîte de dialogue sous la forme de champs de formulaire. Pour créer un champ de formulaire, vous devez créer un type de ressource, ce qui équivaut à créer un composant. Pour vous aider dans cette tâche, l’IU Granite propose un composant de champ générique duquel hériter (en utilisant `sling:resourceSuperType`) :
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -228,7 +228,7 @@ Une fois que vous avez créé votre type de ressource, vous pouvez instancier le
 
 Si vous souhaitez définir le style et le comportement de votre composant, vous pouvez créer une [bibliothèque cliente](/help/sites-developing/clientlibs.md) qui définit vos CSS/LESS et JS personnalisés.
 
-Pour que votre bibliothèque cliente soit chargée uniquement pour votre boîte de dialogue de composant (c’est-à-dire qu’elle ne sera pas chargée pour un autre composant), vous devez définir la propriété . `extraClientlibs` de votre boîte de dialogue au nom de catégorie de la bibliothèque cliente que vous venez de créer. Ceci est conseillé si votre bibliothèque cliente est assez volumineuse ou si votre champ est spécifique à cette boîte de dialogue et n’est pas nécessaire dans les autres boîtes de dialogue.
+Pour que votre bibliothèque cliente soit chargée uniquement pour votre boîte de dialogue de composant (c’est-à-dire qu’elle ne sera pas chargée pour un autre composant), vous devez définir la propriété . `extraClientlibs` de votre boîte de dialogue au nom de catégorie de la bibliothèque cliente que vous avez créée. Ceci est conseillé si votre bibliothèque cliente est assez volumineuse ou si votre champ est spécifique à cette boîte de dialogue et n’est pas nécessaire dans les autres boîtes de dialogue.
 
 Afin que la bibliothèque cliente soit chargée pour toutes les boîtes de dialogue, définissez la propriété Catégorie de votre bibliothèque cliente sur `cq.authoring.dialog`. Il s’agit du nom de la catégorie de la bibliothèque cliente qui est incluse par défaut lors du rendu de toutes les boîtes de dialogue. Faites-le si votre bibliothèque cliente est petite et/ou si votre champ est générique et peut être réutilisé dans d’autres boîtes de dialogue.
 
@@ -346,13 +346,13 @@ Si votre nouveau composant fait référence au contenu d’autres pages, vous po
 
 AEM prêt à l’emploi ne vérifie que le composant Référence. Pour ajouter votre composant, vous devez configurer le bundle OSGi **Configuration de référence du contenu de création de gestion de contenu Web**.
 
-Créez une nouvelle entrée dans la définition, en spécifiant votre composant, avec la propriété à vérifier. Par exemple :
+Créez une entrée dans la définition, en spécifiant votre composant, ainsi que la propriété à vérifier. Par exemple :
 
 `/apps/<*your-Project*>/components/reference@parentPath`
 
 >[!NOTE]
 >
->Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Consultez [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour avoir plus de détails et connaître les pratiques recommandées.
+>Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration de ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus d’informations et les pratiques recommandées.
 
 ## Activation et ajout de votre composant au système de paragraphes {#enabling-and-adding-your-component-to-the-paragraph-system}
 
@@ -378,7 +378,7 @@ Ce comportement, et la relation ressource-à-composant requise, peuvent être co
    * Nom : `cq:authoring`
    * Type : `nt:unstructured`
 
-1. Sous cela, créez un nouveau nœud qui contiendra tous les mappages actif à composant :
+1. Dans ce cas, créez un noeud destiné à contenir tous les mappages ressource-composant :
 
    * Nom : `assetToComponentMapping`
    * Type : `nt:unstructured`
@@ -398,7 +398,7 @@ Ce comportement, et la relation ressource-à-composant requise, peuvent être co
    * `assetMimetype` :
 
       * Type : `String`
-      * Valeur : type mime de l’actif associé, par exemple `image/*`
+      * Valeur : type mime de l’actif associé, par exemple, `image/*`
 
    * `droptarget` :
 

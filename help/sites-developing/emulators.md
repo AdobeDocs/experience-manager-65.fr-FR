@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '634'
-ht-degree: 64%
+ht-degree: 61%
 
 ---
 
@@ -44,7 +44,7 @@ Un émulateur :
 * Fonctionne sur le DOM de la page.
 * Son aspect est réglé au moyen de CSS.
 * Prend en charge les modules externes (par exemple, le module externe de rotation de l’appareil mobile).
-* est principal seulement sur l’auteur ;
+* Est uniquement actif sur l’auteur.
 * possède son composant de base à l’adresse `/libs/wcm/emulator/components/base`.
 
 ### Comment l’émulateur transforme le contenu {#how-the-emulator-transforms-the-content}
@@ -143,7 +143,7 @@ Pour créer un émulateur mobile personnalisé :
 
    À titre d’exemple, vous pouvez vous reporter au nœud `/libs/wcm/mobile/components/emulators/iPhone/css`.
 
-1. Si nécessaire, définissez une bibliothèque cliente JS, par exemple pour définir un module externe spécifique : nom = js, type de nœud = cq:ClientLibrary.
+1. Si nécessaire, définissez une bibliothèque cliente JS, par exemple pour définir un module externe spécifique : name = js, type de noeud = cq:ClientLibrary
 
    À titre d’exemple, vous pouvez vous reporter au nœud `/libs/wcm/mobile/components/emulators/base/js`.
 

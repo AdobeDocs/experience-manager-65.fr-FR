@@ -1,7 +1,7 @@
 ---
 title: Utilisation de tâches
 seo-title: Working with Tasks
-description: Les tâches représentent les éléments de travail à effectuer sur le contenu. Elles sont utilisées dans les projets pour déterminer le niveau de réalisation des tâches en cours
+description: Les tâches représentent des éléments de travail à effectuer sur le contenu et sont utilisées dans les projets pour déterminer le niveau d’achèvement des tâches en cours
 seo-description: Tasks represent items of work to be done on content and are used in projects to determine the level of completeness of current tasks
 uuid: df4efb3f-8298-4159-acfe-305ba6b46791
 contentOwner: Guillaume Carlino
@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 1b79d373-73f4-4228-b309-79e74d191f3e
 exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
-source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
-workflow-type: ht
-source-wordcount: '597'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 97%
 
 ---
 
@@ -26,17 +26,17 @@ Les tâches sont également utilisées dans les projets pour déterminer le nive
 
 ## Suivi de la progression du projet {#tracking-project-progress}
 
-Vous pouvez surveiller l’état d’avancement de votre projet en examinant les tâches actives/terminées au sein du projet, représentées par la mosaïque **Tâches**. L’état d’avancement de votre projet peut être déterminé par les éléments suivants :
+Vous pouvez suivre la progression du projet en examinant les tâches actives/terminées dans un projet représenté par la mosaïque **Tâches**. La progression du projet peut être déterminée par les éléments suivants :
 
 * **Mosaïque Tâches :** un statut d’avancement global du projet est présenté dans la mosaïque Tâches disponible sur la page des détails du projet.
 
 * **Liste Tâches :** lorsque vous cliquez sur la mosaïque Tâches, la liste des tâches s’affiche. Cette liste contient des informations détaillées sur toutes les tâches liées au projet.
 
-Ces deux options répertorient les tâches de workflow, ainsi que les tâches que vous créez directement dans la mosaïque Tâches.
+Les deux options répertorient les tâches de workflow et les tâches que vous créez directement dans la mosaïque Tâches.
 
 ### Mosaïque Tâches {#task-tile}
 
-Si un projet contient des tâches associées, une mosaïque Tâches s’affiche au sein du projet. La mosaïque Tâches affiche le statut actuel du projet. Cet état inclut les tâches existantes dans le workflow et ne contient aucune tâche générée ultérieurement à mesure que se déroule le workflow. La mosaïque Tâches contient les informations suivantes :
+Si un projet contient des tâches associées, une mosaïque Tâches s’affiche au sein du projet. La mosaïque Tâches affiche le statut actuel du projet. Cet état inclut les tâches existantes dans le workflow et ne contient aucune tâche générée ultérieurement à mesure que se déroule le workflow. Les informations suivantes sont visibles dans la mosaïque de la tâche :
 
 * Pourcentage de tâches terminées
 * Pourcentage de tâches actives
@@ -85,8 +85,8 @@ Pour ajouter une tâche, procédez comme suit :
 
 Au lieu d’accéder aux tâches de votre projet à partir du projet lui-même, vous pouvez y accéder directement à partir de votre boîte de réception. Votre boîte de réception vous donne un aperçu de vos tâches dans l’ensemble des projets afin que vous puissiez comprendre l’ensemble de votre workflow.
 
-Dans la boîte de réception, vous pouvez ouvrir les tâches et définir le statut de la tâche. Les tâches s’affichent également dans votre boîte de réception lorsqu’elles sont affectées à un groupe d’utilisateurs auquel vous appartenez. Dans ce cas, tout membre du groupe peut effectuer le travail et accomplir la tâche.
+Dans la boîte de réception, vous pouvez ouvrir les tâches et définir le statut de la tâche. Les tâches s’affichent également dans votre boîte de réception lorsqu’elles sont affectées à un groupe de personnes auquel vous appartenez. Dans ce cas, tout membre du groupe peut effectuer le travail et terminer la tâche.
 
 ![Boîte de réception](assets/project-inbox.png)
 
-Pour terminer une tâche, sélectionnez la tâche et cliquez sur **Terminé** dans la barre d’outils. Ajoutez des informations à la tâche, puis cliquez sur **Terminé**. Reportez-vous à la section [Votre boîte de réception](/help/sites-authoring/inbox.md) pour plus d’informations.
+Pour terminer une tâche, sélectionnez la tâche et cliquez sur **Terminé** dans la barre d’outils. Ajoutez des informations à la tâche, puis cliquez sur **Terminé**. Voir [Votre boîte de réception](/help/sites-authoring/inbox.md) pour plus d’informations.

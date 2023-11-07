@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '5375'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, _React_). [En savoir plus](/help/sites-developing/spa-overview.md)
+>Adobe recommande d’utiliser l’éditeur d’application monopage pour les projets nécessitant un rendu côté client basé sur la structure d’application monopage (par exemple, _React_). [En savoir plus](/help/sites-developing/spa-overview.md)
 >
 
 >[!NOTE]
@@ -929,20 +929,20 @@ Le CSS comprend une série de requêtes de média qui utilisent la structure sui
 
 Utilisez l’algorithme suivant comme point de départ pour développer les classes d’éléments et les styles CSS de vos pages.
 
-1. Définissez un nom de classe pour l’élément div contenant toutes les lignes ; `content.`, par exemple.
+1. Définissez un nom de classe pour l’élément div qui contient toutes les lignes, par exemple : `content.`
 1. Définissez une classe CSS pour les éléments div qui représentent des lignes, comme `row-fluid`.
 1. Définissez des noms de classe pour les éléments de bloc de contenu. Une classe est requise pour toutes les largeurs possibles, en termes d’étendue de colonne. Utilisez, par exemple, la classe `span3` pour les éléments `div` qui s’étendent sur trois colonnes et les classes `span4` pour les étendues de quatre colonnes. Définissez autant de classes que de colonnes dans votre grille.
 
 1. Pour chaque taille de fenêtre d’affichage que vous ciblez, ajoutez la requête de média qui correspond à votre fichier CSS. Ajoutez les éléments suivants dans chaque requête de média :
 
-   * Un sélecteur pour la classe `content` ; `.content{}`, par exemple.
-   * Des sélecteurs pour chaque classe d’étendue ; `.span3{ }`, par exemple.
-   * Un sélecteur pour la classe `row-fluid` ; `.row-fluid{ }`, par exemple.
-   * Des sélecteurs pour les classes d’étendue qui se trouvent à l’intérieur des classes row-fluid ; `.row-fluid span3 { }`, par exemple.
+   * Un sélecteur pour la `content` par exemple, `.content{}`.
+   * Sélecteurs pour chaque classe d’étendue, par exemple : `.span3{ }`.
+   * Un sélecteur pour la `row-fluid` par exemple, `.row-fluid{ }`
+   * Sélecteurs pour les classes span qui se trouvent à l’intérieur des classes row-fluid, par exemple : `.row-fluid span3 { }`.
 
 1. Ajout des styles width pour chaque sélecteur :
 
-   1. Définissez la largeur des sélecteurs `content` sur la taille absolue de la page ; `width:480px`, par exemple.
+   1. Définissez la largeur de `content` les sélecteurs à la taille absolue de la page, par exemple : `width:480px`.
    1. Définissez la largeur de tous les sélecteurs fluides dans la ligne sur 100 %.
    1. Définissez la largeur de tous les sélecteurs d’étendue sur la largeur absolue du bloc de contenu. Une grille triviale utilise des colonnes uniformément réparties de la même largeur : `(absolute width of page)/(number of columns)`.
    1. Définissez la largeur des sélecteurs `.row-fluid .span` en pourcentage de la largeur totale. Calculez cette largeur à l’aide de la formule `(absolute span width)/(absolute page width)*100`.

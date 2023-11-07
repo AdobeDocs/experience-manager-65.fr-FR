@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4609'
-ht-degree: 60%
+source-wordcount: '4602'
+ht-degree: 59%
 
 ---
 
@@ -85,7 +85,7 @@ Bien que toutes les requêtes soient converties en SQL2 avant d’être exécut�
 
 ### Outil Expliquer la requête {#the-explain-query-tool}
 
-Comme pour tout langage de requête, la première étape pour optimiser une requête consiste à comprendre comment elle s’exécutera. Pour effectuer cette activité, vous pouvez utiliser l’[outil Expliquer la requête](/help/sites-administering/operations-dashboard.md#explain-query) qui fait partie du tableau de bord des opérations. Grâce à cet outil, une requête peut être expliquée. Un avertissement s’affiche si la requête entraîne des problèmes avec un référentiel volumineux et l’heure d’exécution, ainsi que les index qui seront utilisés. L’outil peut également charger une liste de requêtes lentes et populaires qui peuvent ensuite être expliquées et optimisées.
+Comme pour tout langage de requête, la première étape pour optimiser une requête consiste à comprendre comment elle s’exécutera. Pour effectuer cette activité, vous pouvez utiliser l’[outil Expliquer la requête](/help/sites-administering/operations-dashboard.md#explain-query) qui fait partie du tableau de bord des opérations. Grâce à cet outil, une requête peut être expliquée. Un avertissement s’affiche si la requête entraîne des problèmes avec un référentiel volumineux et l’heure d’exécution, ainsi que les index utilisés. L’outil peut également charger une liste de requêtes lentes et populaires qui peuvent ensuite être expliquées et optimisées.
 
 ### Journalisation DEBUG pour les requêtes {#debug-logging-for-queries}
 
@@ -109,7 +109,7 @@ Une fois connecté à la console JMX, recherchez **Statistiques de l’index Luc
 
 Pour les statistiques de requête, consultez le MBean nommé **Statistiques de requête Oak**.
 
-Si vous souhaitez explorer davantage vos index au moyen d’un outil comme [Luke](https://code.google.com/archive/p/luke/), vous devez utiliser la console Oak pour vider l’index depuis le `NodeStore` dans un répertoire de système de fichiers. Pour obtenir des instructions sur la façon de procéder, consultez la [documentation Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+Si vous souhaitez explorer davantage vos index au moyen d’un outil comme [Luke](https://code.google.com/archive/p/luke/), vous devez utiliser la console Oak pour vider l’index depuis le `NodeStore` dans un répertoire de système de fichiers. Pour obtenir des instructions sur la façon de procéder, lisez la section [Documentation Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 Vous pouvez également extraire les index de votre système au format JSON. Pour cela, vous devez accéder à `https://server:port/oak:index.tidy.-1.json`
 
@@ -189,7 +189,7 @@ La documentation Oak pour les index Lucene répertorie plusieurs points à prend
 * Dans un index de propriété, un nom de propriété unique contribue à réduire la taille de l’index, mais dans le cas des index Lucene, l’utilisation de `nodeTypes` et `mixins` est conseillée pour obtenir des index cohérents. L’interrogation d’une propriété `nodeType` ou `mixin` spécifique est plus performante que celle d’une propriété `nt:base`. Si vous suivez cette approche, définissez `indexRules` pour les `nodeTypes` en question.
 
 * Si vos requêtes sont exécutées uniquement sous certains chemins, créez ces index sous ces chemins. Il n’est pas nécessaire que les index se trouvent à la racine du référentiel.
-* Il est recommandé d’utiliser un seul index lorsque toutes les propriétés indexées sont liées pour permettre à Lucene d’évaluer autant de restrictions de propriété que possible en mode natif. En outre, une requête n’utilise qu’un seul index, même lors de l’exécution d’une jointure.
+* Utilisez un seul index lorsque toutes les propriétés indexées sont liées pour permettre à Lucene d’évaluer en mode natif autant de restrictions de propriété que possible. En outre, une requête n’utilise qu’un seul index, même lors de l’exécution d’une jointure.
 
 ### CopyOnRead {#copyonread}
 
@@ -297,7 +297,7 @@ Problèmes possibles et solutions :
 
       * Sinon, [reindex](#how-to-re-index) l’index lucene
 
-         * Remarque : L’état de l’index de la dernière bonne réindexation (ou indexation initiale) sera utilisé jusqu’au déclenchement d’une nouvelle réindexation.
+         * Remarque : L’état de l’index de la dernière bonne réindexation (ou indexation initiale) est utilisé jusqu’au déclenchement d’une nouvelle réindexation.
 
 ### Erreurs et situations exceptionnelles {#erring-and-exceptional-situations}
 
@@ -426,7 +426,7 @@ La pré-extraction de texte ne peut pas être utilisée pour un nouveau contenu 
 
 Le nouveau contenu est ajouté au référentiel. Il sera indexé de manière naturelle et incrémentielle par le processus d’indexation de texte intégral asynchrone (par défaut, toutes les 5 secondes).
 
-Si AEM fonctionne normalement, par exemple en chargeant des ressources via l’UI web ou en programmant l’ingestion des ressources, AEM indexe automatiquement et progressivement le nouveau contenu binaire en texte intégral. Étant donné que la quantité de données est incrémentielle et relativement petite (environ la quantité de données pouvant être conservées dans le référentiel en 5 secondes), AEM peut effectuer l’extraction de texte intégral à partir des fichiers binaires pendant l’indexation sans affecter les performances globales du système.
+Si AEM fonctionne normalement, par exemple en chargeant des ressources via l’interface utilisateur web ou en programmant l’ingestion des ressources, AEM indexe automatiquement et progressivement le nouveau contenu binaire. Étant donné que la quantité de données est incrémentielle et relativement petite (environ la quantité de données pouvant être conservées dans le référentiel en 5 secondes), AEM peut effectuer l’extraction de texte intégral à partir des fichiers binaires pendant l’indexation sans affecter les performances globales du système.
 
 #### Conditions préalables à l’utilisation de la pré-extraction de texte {#prerequisites-to-using-text-pre-extraction}
 

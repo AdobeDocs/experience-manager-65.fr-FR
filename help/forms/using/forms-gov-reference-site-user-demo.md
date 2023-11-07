@@ -4,9 +4,9 @@ description: Utilisez des utilisateurs et des groupes fictifs pour exécuter des
 contentOwner: anujkapo
 docset: aem65
 exl-id: 288d5459-bc69-4328-b6c9-4b4960bf4977
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2475'
 ht-degree: 58%
 
 ---
@@ -74,8 +74,8 @@ Les groupes suivants sont également inclus :
 
 1. **Emprunter l’identité** : utilisateurs et groupes définis dans la démonstration d’AEM.
 1. **Bouton** : rectangle coloré ou flèche entourée pour la navigation.
-1. **Cliquez sur**: Pour exécuter une action dans l’article de l’utilisateur.
-1. **Liens**: En haut du menu principal du site We.Gov.
+1. **Cliquez sur**: pour exécuter une action dans l’article de l’utilisateur.
+1. **Liens**: dans la partie supérieure du menu principal du site We.Gov.
 1. **Instructions utilisateur** : ensemble d’étapes numériques à suivre lors de la navigation dans le scénario de l’utilisateur.
 1. **Portail Forms** : *https://&lt;aemserver>:&lt;port>/content/we-gov/formsportal.html*
 1. **Vue mobile**: utilisateur We.Gov pour répliquer une vue mobile avec un navigateur redimensionné.
@@ -97,7 +97,7 @@ Les groupes suivants sont également inclus :
 
 ## Automated Forms Conversion (Camila) {#automated-forms-conversion}
 
-**La présente section** : Camila (Responsable de l’expérience client) dispose d’un formulaire basé un PDF existant qui a été utilisé dans le cadre d’un processus papier. Dans le cadre d&#39;un effort de modernisation, Camila souhaite utiliser ce formulaire de PDF pour créer automatiquement un nouveau Forms adaptatif moderne.
+**La présente section** : Camila (Responsable de l’expérience client) dispose d’un formulaire basé un PDF existant qui a été utilisé dans le cadre d’un processus papier. Dans le cadre d&#39;un effort de modernisation, Camila souhaite utiliser ce formulaire PDF pour créer automatiquement un Forms adaptatif moderne.
 
 ### Automated Forms Conversion - We.Gov (Camila) {#automated-forms-conversion-wegov}
 
@@ -106,7 +106,7 @@ Les groupes suivants sont également inclus :
 1. Connectez-vous avec :
    * **Utilisateur** : camila.santos
    * **Mot de passe** : password
-1. Dans la page principale, sélectionnez Forms > Forms &amp; Documents > AEM Forms We.gov Forms > AFC.
+1. Dans la page principale, sélectionnez Forms > Forms &amp; documents > AEM Forms We.gov Forms > AFC.
 1. Camila télécharge le PDF vers AEM Forms.
 
    ![Télécharger le formulaire](assets/aftia-upload-form.jpg)
@@ -117,7 +117,7 @@ Les groupes suivants sont également inclus :
    >
    >Les paramètres d’AFC sont préconfigurés pour l’utilisateur final, ce qui signifie qu’ils ne doivent pas être modifiés.
 
-   * **Facultatif**: Si vous souhaitez utiliser le thème Ultramarine accessible, cliquez simplement sur le bouton Spécifier un thème de formulaire adaptatif et sélectionnez le thème Ultramarine accessible qui apparaît dans la liste des options.
+   * **Facultatif**: si vous souhaitez utiliser le thème Ultramarine accessible, cliquez simplement sur le bouton Spécifier un thème de formulaire adaptatif et sélectionnez le thème Ultramarine accessible qui apparaît dans la liste des options.
 
    ![Démarrer la conversion](assets/aftia-start-conversion.jpg)
 
@@ -139,7 +139,7 @@ Les groupes suivants sont également inclus :
 
 ### Modèle de données de formulaire et sources de données (Camila) {#data-sources}
 
-**Cette section**: Une fois le document converti et le formulaire adaptatif généré, Camila doit connecter le formulaire adaptatif à une source de données.
+**Cette section**: une fois le document converti et le formulaire adaptatif généré, Camila doit connecter le formulaire adaptatif à une source de données.
 
 1. Camila ouvre les Propriétés sur le formulaire qui a été converti grâce à [Automated Forms Conversion - We.Gov](#automated-forms-conversion-wegov).
 
@@ -309,11 +309,11 @@ Aya doit consulter certains documents à la maison avant de pouvoir remplir la d
 
 1. Dans le coin supérieur droit, cliquez sur l’icône Notification (cloche) .
 1. Cliquez sur **Afficher tout** pour accéder à la boîte de réception.
-1. Dans la boîte de réception, ouvrez la dernière **Examen des demandes d’avantages sociaux** tâche.
+1. Dans la boîte de réception, ouvrez la **Examen des demandes d’avantages sociaux** tâche.
 
    ![Examen des demandes d’avantages sociaux](/help/forms/using/assets/health_benefits.png)
 
-### Facultatif : AEM Boîte de réception et MS® Dynamics (George) {#george-user-story-aem-inbox-and-ms-dynamics}
+### Facultatif : Boîte de réception AEM et MS® Dynamics (George) {#george-user-story-aem-inbox-and-ms-dynamics}
 
 Grâce aux intégrations de données et aux workflows automatisés, l’application Aya apparaît, ainsi qu’un enregistrement CRM qui a été généré automatiquement lors de l’envoi des données.
 
@@ -368,7 +368,7 @@ George approuve la demande d&#39;Aya et, grâce à un workflow automatisé exist
 
 1. Dans le coin supérieur droit, cliquez sur l’icône Notification (cloche) .
 1. Cliquez sur **Afficher tout** pour accéder à la boîte de réception.
-1. Dans la boîte de réception, ouvrez la dernière **Nouvelle approbation de contact** tâche.
+1. Dans la boîte de réception, ouvrez la **Nouvelle approbation de contact** tâche.
 
 ![Nouvelle approbation de contact](/help/forms/using/assets/new_contact_approval.png)
 
@@ -441,7 +441,7 @@ George approuve la demande d&#39;Aya et, grâce à un workflow automatisé exist
 
 1. Une fois l’expérience utilisateur terminée et l’envoi de l’utilisateur terminé, Camila accède à l’onglet Sources de données dans AEM Forms (**Forms** > **Intégrations de données**)
 
-1. Camila sélectionne ensuite AEM Forms We.gov FDM, puis modifie la variable **FDM d’inscription We.gov**.
+1. Camila sélectionne ensuite AEM Forms We.gov FDM et modifie la variable **We.gov FDM d’inscription**.
 
 1. Camila sélectionne ensuite le **Contact** > **Service de lecture** à tester.
 
@@ -487,12 +487,12 @@ George approuve la demande d&#39;Aya et, grâce à un workflow automatisé exist
 
    ![Analytics et Recommandations](/help/forms/using/assets/analytics_recommendation.jpg)
 
-1. Sur cette page, vous voyez les informations récupérées d’Adobe Analytics qui se rapportent à la page AEM Sites (REMARQUE : par conception, ces informations sont régulièrement actualisées à partir d’Adobe Analytics et ne s’affichent pas en temps réel).
+1. Sur cette page, vous voyez les informations récupérées d’Adobe Analytics qui se rapportent à la page AEM Sites (REMARQUE : de par leur conception, ces informations sont régulièrement actualisées à partir d’Adobe Analytics et ne sont pas affichées en temps réel).
 
    ![Mesures clés Adobe Analytics](/help/forms/using/assets/analytics_key_metrics.jpg)
 
 1. De retour sur la page vue (accessible à l’étape 3), vous pouvez également afficher les informations sur la page vue en modifiant le paramètre d’affichage pour afficher les éléments dans **Mode Liste**.
-1. Recherchez la variable **Affichage** menu déroulant, puis sélectionnez **Mode Liste**.
+1. Recherchez la variable **Affichage** menu déroulant et sélectionnez **Mode Liste**.
 
    ![Vue Liste dans le menu déroulant Vue](/help/forms/using/assets/list_view_view_dropdown.jpg)
 
@@ -510,7 +510,7 @@ George approuve la demande d&#39;Aya et, grâce à un workflow automatisé exist
 
    *https://&lt;serveur_AEM>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
-1. Sélectionnez la **Demande D’Inscription Pour Les Avantages De Santé** formulaire adaptatif et sélectionnez le **Rapport Analytics** .
+1. Sélectionnez la variable **Demande D’Inscription Pour Les Avantages De Santé** formulaire adaptatif et sélectionnez le **Rapport Analytics** .
 
    ![Demande d’inscription pour les prestations de santé](/help/forms/using/assets/analytics_report_benefits.jpg)
 

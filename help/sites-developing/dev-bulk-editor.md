@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1836'
-ht-degree: 54%
+source-wordcount: '1835'
+ht-degree: 53%
 
 ---
 
@@ -31,7 +31,7 @@ Voici une liste des paramètres de requête de l’éditeur en bloc :
 
 >[!NOTE]
 >
->Chaque paramètre peut avoir un nom long et un nom court. Par exemple, le nom long du chemin racine de la recherche est `rootPath`, le plus court est `rp`. Si le nom long n’est pas défini, le nom abrégé est lu dans la requête.
+>Chaque paramètre peut avoir un nom long et un nom court. Par exemple, le nom long du chemin racine de recherche est `rootPath`, la valeur abrégée est `rp`. Si le nom long n’est pas défini, le nom abrégé est lu dans la requête.
 
 <table>
  <tbody>
@@ -158,9 +158,9 @@ Voici une liste des paramètres de requête de l’éditeur en bloc :
  </tbody>
 </table>
 
-### Développement d’un composant basé sur l’éditeur en bloc : Composant Liste de produits {#developing-a-bulk-editor-based-component-the-product-list-component}
+### Développement d’un composant basé sur l’éditeur en bloc : le composant Liste de produits {#developing-a-bulk-editor-based-component-the-product-list-component}
 
-Cette section présente un aperçu de l’utilisation de l’éditeur en bloc et donne une description du composant de Geometrixx existant en fonction de l’éditeur en bloc : le composant Liste de produits .
+Cette section présente un aperçu de l’utilisation de l’éditeur en bloc et donne une description du composant de Geometrixx existant en fonction de l’éditeur en bloc : le composant Liste de produits.
 
 Le composant Liste de produits permet aux utilisateurs d’afficher et de modifier une table de données. Par exemple, vous pouvez utiliser le composant Liste de produits pour représenter les produits d’un catalogue. Les informations sont présentées dans un tableau de HTML standard et toute modification est effectuée dans la variable **Modifier** qui contient un widget BulkEditor. (Cet éditeur en bloc est identique à celui accessible à l’adresse /etc/importers/bulkeditor.html ou via le menu Outils). Le composant Liste de produits a été configuré pour des fonctionnalités spécifiques et limitées de l’éditeur en bloc. Chaque partie de l’éditeur en bloc (ou les composants dérivés de l’éditeur en bloc) peut être configurée.
 
@@ -455,9 +455,9 @@ Colonnes CSS et lecture seule
 
 L’éditeur en bloc comporte trois configurations de colonne :
 
-* Nom de classe CSS de la cellule (cellCls) : un nom de classe CSS ajouté à chaque cellule de la colonne configurée.
+* Nom de classe CSS de la cellule (cellCls) : nom de classe CSS ajouté à chaque cellule de la colonne configurée.
 * Style de cellule (cellStyle) : style de HTML ajouté à chaque cellule de la colonne configurée.
-* Lecture seule (readOnly) : lecture seule est définie pour chaque cellule de la colonne configurée.
+* Lecture seule (readOnly) : la lecture seule est définie pour chaque cellule de la colonne configurée.
 
 La configuration doit être définie comme suit :
 
@@ -526,7 +526,7 @@ Le servlet Query fonctionne comme suit : il reçoit une requête GQL et les colo
 
 Dans le cas du composant Liste de produits , les deux paramètres envoyés au servlet Query sont les suivants :
 
-* query : &quot;path:/content/geometrixx/fr/customers/jcr:content/par/productlist Cube&quot;
+* requête : &quot;chemin : /content/geometrixx/en/customers/jcr:content/par/productlist Cube&quot;
 * cols : &quot;Selection,ProductId,ProductName,Color,CatalogCode,SellingSku&quot;
 
 Et le flux JSON est renvoyé comme suit :
@@ -570,4 +570,4 @@ Le servlet doit connaître l’emplacement de stockage de la propriété catalog
 
 Une implémentation par défaut du servlet Save est disponible dans /libs/wcm/bulkeditor/save/POST.jsp et est utilisée dans le composant Liste de produits. Il prend tous les paramètres de la requête (au format &lt;chemin jcr>/&lt;nom de propriété>) et écrit des propriétés sur les nœuds à l’aide de l’API JCR. Il crée également un nœud s’il n’existe pas (lignes insérées dans la grille).
 
-Le code par défaut ne doit pas être utilisé tel quel car il réimplémente ce que le serveur fait nativement (un POST sur &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) et n’est donc qu’un bon point de départ pour créer une servlet Save capable de gérer un modèle d’héritage de propriétés.
+N’utilisez pas le code par défaut tel quel, car il réimplémente ce que le serveur fait nativement (un POST sur &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) et n’est donc qu’un bon point de départ pour créer une servlet Save capable de gérer un modèle d’héritage de propriétés.

@@ -2,10 +2,10 @@
 title: Publication de pages de contenu
 description: Découvrez comment publier des pages de contenu dans Adobe Experience Manager 6.5.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1664'
-ht-degree: 95%
+source-wordcount: '1660'
+ht-degree: 93%
 
 ---
 
@@ -60,7 +60,7 @@ Si vous modifiez une page, vous pouvez la publier directement à partir de l’�
    * La page sera publiée directement, s’il n’y a aucune référence à publier.
    * Si la page comporte des références à publier, celles-ci seront répertoriées dans l’assistant **Publier**, où vous pourrez accomplir ce qui suit :
 
-      * Spécifier les ressources, balises et autres éléments à publier conjointement avec la page, puis cliquer sur **Publier** pour terminer l’opération.
+      * Indiquez les ressources/balises/etc. que vous souhaitez publier avec la page, puis utilisez **Publier** pour terminer le processus.
 
       * Sélectionner **Annuler** pour abandonner l’opération.
 
@@ -111,7 +111,7 @@ Pour publier une page avec publication rapide :
 
 #### Gérer la publication {#manage-publication}
 
-La méthode **Gérer la publication** propose plus d’options que Publication rapide, dont la possibilité d’inclure des pages enfants, de personnaliser les références ou encore de lancer n’importe quel workflow applicable. Elle offre également la possibilité de publier la page à une date ultérieure.
+La méthode **Gérer la publication** propose plus d’options que Publication rapide, dont la possibilité d’inclure des pages enfants, de personnaliser les références ou encore de lancer n’importe quel workflow applicable. Elle offre également la possibilité de publier la page à une date ultérieure.
 
 Pour publier ou dépublier une page à l’aide de l’option Gérer la publication :
 
@@ -182,7 +182,7 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
    >[!NOTE]
    >
-   >L’étape **Workflows** est affichée en fonction des droits dont dispose ou non votre utilisateur. Pour plus d’informations, reportez-vous à la [remarque précédente sur cette page](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) concernant les privilèges de publication, ainsi qu’aux sections [Gestion de l’accès aux workflows](/help/sites-administering/workflows-managing.md) et [Application de workflows aux pages](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd).
+   >L’étape **Workflows** est affichée en fonction des droits dont dispose ou non votre utilisateur ou utilisatrice. Voir [remarque précédente sur cette page](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) concernant les privilèges de publication et [Gestion des accès aux workflows](/help/sites-administering/workflows-managing.md) et [Application de workflows aux pages](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) pour plus d’informations.
 
    Les ressources sont regroupées selon les workflows déclenchés et chaque option donnée pour :
 

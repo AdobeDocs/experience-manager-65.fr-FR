@@ -7,10 +7,10 @@ feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '5739'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -248,7 +248,7 @@ Transmettez les paramètres de requête suivants dans une URL pour démarrer le 
 
 | Nom | Valeurs | Exemple | Objectif |
 |---|---|---|---|
-| suffixe de la ressource (B) | Chemin d’accès au dossier indiqué comme suffixe de la ressource dans l’URL :  [https://localhost:4502/aem/assetpicker.html/&lt;chemin_dossier>](https://localhost:4502/aem/assetpicker.html) | Pour démarrer le sélecteur de ressources avec un dossier particulier, par exemple avec le dossier `/content/dam/we-retail/en/activities` sélectionné, l’URL doit avoir la forme suivante : `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Si vous avez besoin de sélectionner un dossier en particulier au démarrage du sélecteur de ressources, vous pouvez l’indiquer comme suffixe de ressource. |
+| suffixe de la ressource (B) | Chemin d’accès au dossier indiqué comme suffixe de la ressource dans l’URL :  [https://localhost:4502/aem/assetpicker.html/&lt;chemin_dossier>](https://localhost:4502/aem/assetpicker.html) | Pour lancer le sélecteur de ressources avec un dossier particulier sélectionné, par exemple avec le dossier `/content/dam/we-retail/en/activities` sélectionnée, l’URL doit être au format suivant : `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Si vous avez besoin de sélectionner un dossier en particulier au démarrage du sélecteur de ressources, vous pouvez l’indiquer comme suffixe de ressource. |
 | `mode` | single, multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | En mode multiple, vous pouvez sélectionner plusieurs ressources simultanément à l’aide du sélecteur de ressources. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Utilisez ces paramètres pour ouvrir le sélecteur de ressources en tant que boîte de dialogue Granite. Cette option ne peut être appliquée qu’au démarrage du sélecteur de ressources via le champ Chemin de Granite, en la configurant comme URL pickerSrc. |
 | `root` | &lt;chemin_dossier> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Utilisez cette option pour spécifier le dossier racine du sélecteur de ressources. Dans ce cas, le sélecteur de ressources vous permet de sélectionner uniquement les ressources enfants (directes/indirectes) sous le dossier racine. |
@@ -420,8 +420,8 @@ Vous pouvez effectuer les opérations suivantes avec les ressources que vous ave
 * Utiliser les actions de bureau pour ouvrir ces ressources dans l’application de bureau
 * Créer des collections dynamiques
 * Créer une version
-* Démarrage d’un workflow
-* Liaison ou dissociation de ressources
+* Démarrer un workflow
+* Associer ou dissocier des ressources
 * Appliquez des filtres à l’aide du panneau Filtres qui s’affiche automatiquement après avoir effectué la recherche, afin d’en limiter les résultats.
 
 ### Tri des résultats de la recherche {#sort}
@@ -463,7 +463,7 @@ Une collection est un ensemble ordonné de ressources pouvant inclure des ressou
 
 Vous pouvez créer des collections dynamiques en fonction des critères de recherche. Dans le panneau **[!UICONTROL Filtres]**, sélectionnez **[!UICONTROL Fichiers]** et cliquez sur **[!UICONTROL Enregistrer la collection dynamique]**. Voir [Gérer les collections](/help/assets/manage-collections.md).
 
-### Création d’une version {#create-version}
+### Créer une version {#create-version}
 
 Créez une version pour les ressources qui s’affichent dans les résultats de recherche. Sélectionnez la ressource et cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Version]**. Ajoutez un libellé facultatif ou un commentaire, puis cliquez sur **[!UICONTROL Créer]**. Vous pouvez également sélectionner plusieurs ressources et créer simultanément des versions pour elles.
 
@@ -471,7 +471,7 @@ Créez une version pour les ressources qui s’affichent dans les résultats de 
 
 Comme pour la fonction de création de version, vous pouvez créer un workflow pour les ressources qui s’affichent dans les résultats de recherche. Sélectionnez les ressources et cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Workflow]**. Sélectionnez le modèle de workflow, spécifiez un titre pour le workflow, puis cliquez sur **[!UICONTROL Démarrer]**.
 
-### Liaison et dissociation de ressources {#relate-unrelate-assets}
+### Lier et dissocier des ressources {#relate-unrelate-assets}
 
 Liez et dissociez les ressources qui s’affichent dans les résultats de recherche. Sélectionnez les ressources et cliquez sur **[!UICONTROL Relate]** ou **[!UICONTROL Sans relation]**.
 

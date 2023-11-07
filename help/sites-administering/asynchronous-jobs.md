@@ -2,10 +2,10 @@
 title: Tâches asynchrones
 description: Adobe Experience Manager optimise les performances en exécutant de manière asynchrone certaines tâches gourmandes en ressources.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: cc63291c32f7a234398ebe8bf67ab53aaf8fa90f
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 100%
+source-wordcount: '798'
+ht-degree: 94%
 
 ---
 
@@ -88,7 +88,7 @@ Vous pouvez modifier la planification de la tâche de purge et la durée pendant
 
 ## Configuration du traitement asynchrone {#configuring-asynchronous-processing}
 
-Vous pouvez configurer le nombre seuil de ressources, de pages ou de références pour AEM afin qu’il traite une opération particulière de manière asynchrone et bascule les notifications électroniques pour le moment où les tâches sont traitées.
+Vous pouvez configurer le nombre seuil de ressources, de pages ou de références pour AEM afin de traiter une opération particulière de manière asynchrone et de basculer les notifications électroniques pour le moment où les tâches sont traitées.
 
 ### Configuration des opérations de suppression de ressources asynchrones {#configuring-synchronous-delete-operations}
 

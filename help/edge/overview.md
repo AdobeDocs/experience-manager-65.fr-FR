@@ -2,9 +2,9 @@
 title: Prise en main d’Edge Delivery Services
 description: Prise en main d’Edge Delivery Services (EDS).
 exl-id: 8d2b2d6c-ae11-4829-842e-b186f5491713
-source-git-commit: 6a1d96125ca6647770718fff74ec21afb5c91a68
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '865'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 Avec les Edge Delivery Services, AEM offre des expériences exceptionnelles qui favorisent l’engagement et les conversions. AEM le fait en proposant des expériences à fort impact qui sont rapides à créer et à développer. Il s’agit d’un ensemble de services composables qui permet un environnement de développement rapide dans lequel les auteurs peuvent rapidement mettre à jour et publier, et où de nouveaux sites sont lancés rapidement. Ainsi, avec les Edge Delivery Services, vous pouvez améliorer la conversion, réduire les coûts et offrir une vitesse de contenu extrême.
 
-En exploitant la diffusion Edge, vous pouvez :
+Grâce à Edge Delivery, vous pouvez :
 
 * Créez des sites rapides avec un score Lighthouse parfait et surveillez en permanence les performances de votre site grâce à la surveillance des utilisateurs réels (RUM).
 * Augmentez l’efficacité de la création en découplant les sources de contenu. Vous pouvez utiliser AEM création et la création basée sur des documents. Ainsi, vous pouvez utiliser plusieurs sources de contenu sur le même site web.
@@ -49,7 +49,7 @@ Il est facile de commencer à utiliser des Edge Delivery Services. Commencez en 
 
 ## Obtention de l’aide à partir d’Adobe {#adobe-gethelp}
 
-Vous pouvez interagir avec les équipes produit d’Adobe via votre canal de collaboration de produit configuré (voir ci-dessous pour plus d’informations sur l’accès) afin de répondre à des questions sur l’utilisation du produit ou les bonnes pratiques. Veuillez noter qu’aucun SLT (Service Level Terms) n’est associé aux conversations via le canal de collaboration des produits. Si un problème de produit nécessite une enquête et un dépannage supplémentaires et doit répondre aux tests SLT, vous pouvez envoyer un ticket d’assistance à la suite de la [processus de prise en charge](https://experienceleague.adobe.com/?lang=fr&amp;support-tab=home#support).
+Vous pouvez interagir avec les équipes produit d’Adobe via votre canal de collaboration de produit configuré (voir ci-dessous pour plus d’informations sur l’accès) afin de répondre à des questions sur l’utilisation du produit ou les bonnes pratiques. Aucun SLT (Service Level Terms) n’est associé aux conversations via le canal de collaboration des produits. Si un problème de produit nécessite une enquête et un dépannage supplémentaires et doit répondre aux tests SLT, vous pouvez envoyer un ticket d’assistance à la suite de la [processus de prise en charge](https://experienceleague.adobe.com/?lang=fr&amp;support-tab=home#support).
 
 Adobe fournit trois canaux pour vous aider avec les Edge Delivery Services :
 
@@ -72,7 +72,7 @@ Pour plus d’informations, voir [Utilisation du robot de Slack](https://www.hlx
 Étapes pour consigner un ticket d’assistance via le Admin Console :
 
 1. Ajouter **Diffusion Edge** dans le titre du ticket.
-2. Dans la description, veuillez fournir les détails suivants :
+2. Dans la description, fournissez les détails suivants :
 
    * URL du site web actif. Par exemple : [www.mydomain.com].
    * URL du site web d&#39;origine (URL .hlx).

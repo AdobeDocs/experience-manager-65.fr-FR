@@ -2,10 +2,10 @@
 title: Parcours d’architecte de contenu découplé Adobe Experience Manager
 description: Cette section présente les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager et explique comment modéliser le contenu de votre projet.
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 98%
+ht-degree: 91%
 
 ---
 
@@ -23,9 +23,9 @@ Ce document vous aide à comprendre la diffusion de contenu découplé, comment 
 * **Audience** : débutant
 * **Objectif** : découvrez les concepts et la terminologie relatifs à la modélisation de contenu découplé.
 
-## Diffusion de contenu full stack {#full-stack}
+## Diffusion de contenu full-stack {#full-stack}
 
-Depuis l’émergence des systèmes de gestion de contenu (CMS) à grande échelle et faciles d’utilisation, les entreprises les utilisent comme emplacement central pour la gestion des messages, des marques et de leur communication. L’utilisation d’un CMS comme point central pour administrer les expériences a permis des gains d’efficacité en éliminant la nécessité de dupliquer les tâches dans des systèmes disparates.
+Depuis l’émergence des systèmes de gestion de contenu (CMS) à grande échelle et faciles d’utilisation, les organisations les utilisent comme emplacement central pour la gestion des messages, de leur image de marque et de leur communication. L’utilisation d’un CMS comme point central pour administrer les expériences a permis des gains d’efficacité en éliminant la nécessité de dupliquer les tâches dans des systèmes disparates.
 
 ![CMS full stack classique](/help/journey-headless/developer/assets/full-stack.png)
 
@@ -50,7 +50,7 @@ Lorsque nous parlons d’un CMS découplé (ou sans tête), il s’agit d’un s
 
 ![CMS découplé](/help/journey-headless/developer/assets/headless-cms.png)
 
-Les services consommateurs (expériences de réalité augmentée, boutiques web, expériences mobiles, applications web progressives (PWA), etc.) récupèrent le contenu du CMS découplé et fournissent leur propre rendu. Ils se chargent de fournir leurs propres têtes à votre contenu.
+Les services consommateurs, qu’il s’agisse d’expériences AR, d’un webshop, d’expériences mobiles, d’applications web progressives (PWA), etc., récupèrent le contenu du CMS sans interface utilisateur graphique et fournissent leur propre rendu. Ils se chargent de fournir leurs propres têtes à votre contenu.
 
 Omettre la tête (en mode découplé) permet de simplifier le CMS en éliminant sa complexité. Vous pouvez ainsi transférer la responsabilité de rendu du contenu vers les services qui en ont réellement besoin et qui sont souvent mieux adaptés pour cela.
 
@@ -66,7 +66,7 @@ Pour AEM, en tant qu’architecte de contenu, vous exécuterez la modélisation 
 
 En matière de développement, il s’agit d’un détail, mais ça pourrait vous intéresser, pour vous fournir une vue globale.
 
-Une fois que vous avez créé les modèles de fragment de contenu et que vos auteurs les ont utilisés pour générer le contenu, les applications découplées doivent accéder à ce contenu.
+Une fois que vous avez créé les modèles de fragment de contenu et que vos auteurs les ont utilisés pour générer le contenu, les applications sans interface utilisateur doivent accéder à ce contenu.
 
 Grâce à Adobe Experience Manager (AEM), vous pouvez accéder de manière sélective à vos fragments de contenu, à l’aide de l’API AEM GraphQL, pour renvoyer uniquement le contenu nécessaire. Grâce à l’API, un développeur peut formuler des requêtes qui sélectionnent un contenu spécifique. Ce processus de sélection est basé sur *vos* modèles de fragment de contenu.
 

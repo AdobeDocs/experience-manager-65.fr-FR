@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 97%
+source-wordcount: '1283'
+ht-degree: 95%
 
 ---
 
@@ -28,7 +28,7 @@ La [disposition réactive](/help/sites-authoring/responsive-layout.md) est un m�
 
 AEM effectue une mise en page réactive de vos pages en combinant plusieurs mécanismes :
 
-* Composant [**Conteneur de mises en page**](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
+* Composant [**Conteneur de mise en page**](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
 
   Ce composant fournit un système de paragraphes/grille qui permet d’ajouter et de positionner des composants dans une grille réactive. Il peut être utilisé comme système de paragraphes (parsys) par défaut pour votre page et mis à la disposition des créateurs dans l’explorateur de composants.
 
@@ -63,7 +63,7 @@ Grâce à ces mécanismes de grille réactive, vous pouvez :
 
 >[!NOTE]
 >
->Dans une installation prête à l’emploi, une mise en page responsive a été configurée pour le [site de référence We.Retail](/help/sites-developing/we-retail.md). Vous devez encore [activer le composant Conteneur de dispositions](#enable-the-layout-container-component-for-page) pour d’autres pages.
+>Dans une installation prête à l’emploi, une mise en page réactive a été configurée pour le [site de référence We.Retail](/help/sites-developing/we-retail.md). Vous devez encore [activer le composant Conteneur de dispositions](#enable-the-layout-container-component-for-page) pour d’autres pages.
 
 ## Configuration de l’émulateur en responsive design {#configuring-the-responsive-emulator}
 
@@ -269,7 +269,7 @@ Le mécanisme d’image adaptative est disponible par le biais d’un script qui
 
 >[!CAUTION]
 >
->Pour que les bibliothèques clientes de feuilles de style personnalisées fonctionnent correctement tant dans un environnement de création que dans un environnement de publication, elles doivent être chargées dans l’en-tête.
+>Les clientlibs de feuille de style personnalisées doivent être chargées dans l’en-tête pour qu’elles fonctionnent correctement sur les instances de création et de publication.
 
 ## Activer le composant Conteneur de mise en page pour la page {#enable-the-layout-container-component-for-page}
 
@@ -277,7 +277,7 @@ Ces tâches permettent aux auteurs et aux autrices de faire glisser des instance
 
 ### Activer le composant Conteneur de mise en page pour la modification de pages {#enable-the-layout-container-component-for-page-editing}
 
-Pour permettre aux créateurs d’ajouter d’autres grilles responsive dans des pages de contenu, vous devez activer le composant Conteneur de mises en page pour la page. Vous pouvez effectuer cette opération à l’aide de l’une des fonctions suivantes :
+Pour permettre aux créateurs d’ajouter d’autres grilles réactives dans des pages de contenu, vous devez activer le composant conteneur de mise en page pour la page. Vous pouvez effectuer cette opération à l’aide de l’une des fonctions suivantes :
 
 * **Environnement de création**
 

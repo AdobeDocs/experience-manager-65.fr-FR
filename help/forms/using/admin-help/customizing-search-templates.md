@@ -1,7 +1,7 @@
 ---
 title: Personnalisation des modèles de recherche
 seo-title: Customizing search templates
-description: Vous pouvez créer des modèles de recherche à utiliser dans Workspace pour rechercher des instances de processus depuis les pages de tâches et de suivi. Vous pouvez également modifier ou supprimer des modèles de recherche existants.
+description: Vous pouvez créer des modèles de recherche à utiliser dans Workspace pour rechercher des instances de processus à partir des pages de tâches et de suivi. Vous pouvez également modifier ou supprimer des modèles de recherche existants.
 seo-description: You can create search templates to be used in Workspace to search for instances of processes from the To Do and Tracking pages. You can also edit or delete existing search templates.
 uuid: 2043ba8a-07f0-4054-af3c-f3a14c2183ab
 contentOwner: admin
@@ -10,80 +10,79 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '856'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '855'
+ht-degree: 15%
 
 ---
 
 # Personnalisation des modèles de recherche {#customizing-search-templates}
 
-Vous pouvez créer des modèles de recherche à utiliser dans Workspace pour rechercher des instances de processus depuis les pages de tâches et de suivi. Vous pouvez également modifier ou supprimer des modèles de recherche existants.
+Vous pouvez créer des modèles de recherche à utiliser dans Workspace pour rechercher des instances de processus à partir des pages de tâches et de suivi. Vous pouvez également modifier ou supprimer des modèles de recherche existants.
 
-Lorsque vous créez ou modifiez un modèle de recherche, vous pouvez définir la mise en page et l’ordre de tri des résultats de recherche. Toutefois, les utilisateurs peuvent modifier ces paramètres dans Workspace après l’affichage des résultats de recherche.
+Lors de la création ou de la modification d’un modèle de recherche, vous pouvez spécifier la disposition et l’ordre de tri des résultats de la recherche. Cependant, les utilisateurs peuvent modifier ces paramètres dans Workspace une fois les résultats de recherche affichés.
 
-Vous pouvez créer autant de modèles de recherche que vous le souhaitez.
+Vous pouvez créer autant de modèles de recherche que nécessaire.
 
 >[!NOTE]
 >
->lorsque vous enregistrez un modèle de recherche, vous devez lui affecter un nom unique. Si vous ne le faites pas, un modèle existant risque d’être remplacé sans message d’avertissement.
+>Lors de l’enregistrement d’un modèle de recherche, vous devez lui attribuer un nom unique. Dans le cas contraire, un modèle existant peut être remplacé sans message d’avertissement.
 
 ## Création d’un modèle de recherche simple {#create-a-simple-search-template}
 
-1. Dans Administration Console, cliquez sur Services > Workspace > Modèles de recherche.
-1. Dans l’onglet Identification, indiquez l’objectif du modèle dans la zone Description du modèle de recherche.
-1. (Facultatif) Cliquez sur l’onglet Critère et indiquez le critère de recherche du modèle.
-1. Cliquez sur l’onglet Enregistrer, entrez un nom unique pour le modèle, puis cliquez sur Enregistrer.
+1. Dans Administration Console, cliquez sur Services > Workspace > Modèles de recherche.
+1. Indiquez l’objet du modèle dans le champ Description du modèle de recherche de l’onglet Identification .
+1. (Facultatif) Cliquez sur l’onglet Critères et indiquez les critères de recherche du modèle.
+1. Cliquez sur l’onglet Enregistrer , saisissez un nom unique pour le modèle, puis cliquez sur Enregistrer.
 
-## Création ou modification d’un modèle de recherche {#create-or-edit-a-search-template}
+## Créer ou modifier un modèle de recherche {#create-or-edit-a-search-template}
 
-1. Dans Administration Console, cliquez sur Services > Workspace > Modèles de recherche.
-1. (Facultatif) Si vous modifiez un modèle existant ou que vous vous servez d’un modèle existant pour en créer un nouveau, sélectionnez le modèle dans la liste Nom du modèle de recherche.
-1. Dans la zone Description du modèle de recherche, indiquez l’objectif du modèle de recherche.
-1. (Facultatif) Dans la zone Instructions à l’intention des utilisateurs, indiquez les instructions utiles à l’utilisation du modèle de recherche. Celles-ci s’affichent dans Workspace, une fois le modèle de recherche sélectionné.
-1. Cliquez sur l’onglet Critère. C’est dans cet onglet que vous définissez un ou plusieurs critères. Pour ajouter un critère de recherche :
+1. Dans Administration Console, cliquez sur Services > Workspace > Modèles de recherche.
+1. (Facultatif) Si vous modifiez un modèle existant ou utilisez un modèle existant comme base d’un nouveau modèle, sélectionnez le modèle dans la liste Nom du modèle de recherche .
+1. Dans la zone Description du modèle de recherche, indiquez l’objectif du modèle.
+1. (Facultatif) Dans la zone Instructions à l’intention des utilisateurs, indiquez les instructions qui peuvent vous aider à utiliser le modèle. Ces instructions s’affichent dans Workspace lorsqu’un utilisateur sélectionne le modèle de recherche.
+1. Cliquez sur l’onglet Critères . C’est là que vous définissez un ou plusieurs critères de recherche. Pour ajouter un critère de recherche :
 
    * Dans la partie supérieure de l’onglet Critère, sélectionnez un élément de processus ou de tâche.
 
-      **Conseil** : *si vous avez préalablement sélectionné l’élément Nom du processus et que vous avez indiqué un processus, toute variable définie pour ce processus peut également être sélectionnée.*
+     **Conseil** : *si vous avez préalablement sélectionné l’élément Nom du processus et que vous avez indiqué un processus, toute variable définie pour ce processus peut également être sélectionnée.*
 
-      **Conseil** : *si vous avez sélectionné l’élément de tâche visible, les utilisateurs seront en mesure de supprimer des tâches terminées des résultats de recherche.*
+     **Conseil** : *si vous avez sélectionné l’élément de tâche visible, les utilisateurs seront en mesure de supprimer des tâches terminées des résultats de recherche.*
 
-      Les champs relatifs au critère de recherche de l’élément sélectionné s’affichent au bas de l’onglet Critère.
+     Les champs de critères de recherche de l’élément sélectionné apparaissent au bas de l’onglet Critère.
 
-   * Pour chaque élément de processus ou de tâche, ou pour chaque variable de processus sélectionné, remplissez les champs de recherche correspondants, au bas de l’onglet Critère.
+   * Pour chaque élément de processus, élément de tâche et variable de processus sélectionné, renseignez les champs de recherche correspondants au bas de l’onglet Critère :
 
-      * Sélectionnez un opérateur relationnel (comme égal à) dans la liste fournie et indiquez la valeur de l’opérande dans la boîte qui se trouve à côté.
-      * (Facultatif) Pour autoriser des utilisateurs à modifier la valeur de l’opérande dans Workspace, sélectionnez Autoriser l’utilisateur à modifier l’opérande.
-      * (Facultatif) Pour autoriser des utilisateurs à modifier l’opérateur relationnel, sélectionnez Autoriser l’utilisateur à sélectionner un autre opérateur relationnel. Dans la liste qui apparaît, sélectionnez les opérateurs auxquels les utilisateurs pourront faire appel.
+      * Sélectionnez un opérateur relationnel (par exemple &quot;être égal à&quot;) dans la liste fournie et indiquez la valeur de l’opérande dans la zone située à côté.
+      * (Facultatif) Pour permettre aux utilisateurs de modifier la valeur de l’opérande dans Workspace, sélectionnez Autoriser l’utilisateur à modifier l’opérande.
+      * (Facultatif) Pour permettre aux utilisateurs de modifier l’opérateur relationnel, sélectionnez Autoriser l’utilisateur à sélectionner un autre opérateur relationnel. Dans la liste qui s&#39;affiche, sélectionnez les opérateurs qui seront disponibles pour l&#39;utilisateur.
 
-      **Conseil** : *si vous avez sélectionné Nom du processus en tant qu’élément, vous pouvez cliquer sur l’icône à côté du champ de l’opérande pour afficher une liste dans laquelle vous pouvez sélectionner un processus en cours exécution sur le serveur Forms. Après avoir sélectionné un processus, toute variable définie pour ce processus peut être sélectionnée dans Variables de processus, dans la partie supérieure de l’onglet Critère.*
+     **Conseil** : *si vous avez sélectionné Nom du processus en tant qu’élément, vous pouvez cliquer sur l’icône à côté du champ de l’opérande pour afficher une liste dans laquelle vous pouvez sélectionner un processus en cours exécution sur le serveur Forms. Après avoir sélectionné un processus, toute variable définie pour ce processus peut être sélectionnée dans Variables de processus, dans la partie supérieure de l’onglet Critère.*
 
-      **Conseil** : *vous pouvez supprimer un élément du modèle de recherche en cliquant sur l’icône de suppression en regard du critère de recherche de l’élément.*
+     **Conseil** : *vous pouvez supprimer un élément du modèle de recherche en cliquant sur l’icône de suppression en regard du critère de recherche de l’élément.*
 
+1. (Facultatif) Pour chaque en-tête de colonne à afficher dans les résultats de recherche, cliquez sur l’onglet Disposition et procédez comme suit :
 
-1. (Facultatif) Pour chaque en-tête de colonne à afficher dans les résultats de recherche, cliquez sur l’onglet Mise en page et procédez comme suit :
-
-   * Sélectionnez un élément de processus ou de tâche et cliquez droite sur la flèche pour le déplacer vers la liste Colonnes à reporter.
-   * Dans cette liste, sélectionnez l’élément de processus ou de tâche et cliquez sur la flèche Haut ou Bas pour le placer dans l’ordre dans la colonne. Les en-têtes de colonne des résultats de recherche s’affichent dans l’ordre selon lequel ils sont répertoriés à cet endroit.
-   * (Facultatif) Pour modifier le nom de l’élément de l’en-tête de colonne, sélectionnez-le dans la liste Colonnes de rapport et indiquez le nouveau nom.
+   * Sélectionnez un élément de processus ou de tâche et cliquez sur la flèche droite pour le déplacer vers la liste Colonnes à reporter.
+   * Dans la liste Colonnes à reporter , sélectionnez l’élément de processus ou de tâche et cliquez sur la flèche Haut ou Bas pour le placer dans l’ordre dans la colonne. Les en-têtes de colonne des résultats de recherche s’affichent dans l’ordre dans lequel ils sont répertoriés ici.
+   * (Facultatif) Pour modifier le nom de l’élément de l’en-tête de colonne, sélectionnez l’élément dans la liste Colonnes à reporter et indiquez le nouveau nom.
 
    >[!NOTE]
    >
-   >la mise en page spécifiée dans le modèle de recherche remplace les préférences de l’utilisateur indiquées pour les en-têtes de colonne dans Workspace.
+   >La mise en page spécifiée dans le modèle de recherche remplace les préférences de l’utilisateur spécifiées pour les en-têtes de colonne dans Workspace.
 
-1. (Facultatif) Pour chaque colonne à trier dans les résultats de recherche, cliquez sur l’onglet Trier et procédez comme suit :
+1. (Facultatif) Pour chaque colonne à trier dans les résultats de recherche, cliquez sur l’onglet Tri et procédez comme suit :
 
    * Sélectionnez un élément de processus ou de tâche et cliquez sur la flèche droite pour le déplacer vers la liste Ordre de tri.
-   * Dans cette liste, sélectionnez l’élément de processus ou de tâche et cliquez sur la flèche haut ou bas pour le replacer selon l’ordre de tri. Les colonnes des résultats de recherche sont triées en fonction de l’ordre dans lequel elles sont répertoriées à cet endroit.
-   * (Facultatif) Pour trier une colonne dans l’ordre décroissant, sélectionnez la case à cocher située en regard du nom de l’élément. Si la case à cocher n’est pas sélectionnée, la colonne est triée dans l’ordre croissant.
+   * Dans la liste Ordre de tri, sélectionnez l’élément de processus ou de tâche, puis cliquez sur la flèche Haut ou Bas pour le placer dans l’ordre de tri. Les colonnes des résultats de recherche seront triées selon l’ordre dans lequel elles sont répertoriées ici.
+   * (Facultatif) Pour trier une colonne dans l’ordre décroissant, cochez la case en regard du nom de l’élément. Si cette case n’est pas cochée, la colonne est triée par ordre croissant.
 
-1. Cliquez sur l’onglet Enregistrer.
-1. (Facultatif) Si vous créez un modèle de recherche, affectez-lui un nom unique. Si vous n’indiquez pas un nom unique, vous risquez de remplacer un modèle existant.
+1. Cliquez sur l’onglet Enregistrer .
+1. (Facultatif) Si vous créez un modèle de recherche, attribuez-lui un nom unique. Si vous ne spécifiez pas de nom unique, vous pouvez remplacer un modèle existant.
 1. Cliquez sur le bouton Enregistrer.
 
 ## Suppression d’un modèle de recherche {#delete-a-search-template}
 
-1. Dans l’onglet Identification, sélectionnez un nom dans la liste Nom du modèle de recherche.
+1. Dans l’onglet Identification , sélectionnez un nom dans la liste Nom du modèle de recherche .
 1. Cliquez sur Supprimer ce modèle, puis sur OK.

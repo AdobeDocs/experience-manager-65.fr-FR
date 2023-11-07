@@ -7,7 +7,7 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '10067'
 ht-degree: 99%
@@ -62,7 +62,7 @@ Vous pouvez charger différents types de ressource (dont des images, des fichier
 >
 >Les ressources que vous chargez dans Experience Manager dont le nom de fichier est supérieur à 100 caractères ont un nom raccourci lorsqu’elles sont utilisées dans Dynamic Media.
 >
->Les 100 premiers caractères du nom de fichier sont utilisés tels quels ; les caractères restants sont remplacés par une chaîne alphanumérique. Cette méthode de changement de nom garantit un nom unique lorsque la ressource est utilisée dans Dynamic Media. Cela est également prévu pour s’adapter à la longueur maximale du nom du fichier de ressource autorisée dans Dynamic Media.
+>Les 100 premiers caractères du nom de fichier sont utilisés tels quels ; les caractères restants sont remplacés par une chaîne alphanumérique. Cette méthode de changement de nom garantit un nom unique lorsque la ressource est utilisée dans Dynamic Media. Cela est également prévu pour s’adapter à la longueur maximale du nom du fichier de ressource autorisée dans Dynamic Media.
 
 Vous pouvez choisir de charger des ressources dans des dossiers avec ou sans profil de traitement.
 
@@ -112,7 +112,7 @@ Pour configurer la tâche de nettoyage pour les tâches de chargement de blocs n
 
 Si vous chargez une ressource portant le même nom qu’une ressource déjà disponible à l’emplacement où vous chargez la ressource, un message d’avertissement s’affiche.
 
-Vous pouvez choisir de remplacer une ressource existante, de créer une autre version ou de garder les deux en renommant la nouvelle ressource téléchargée. Si vous remplacez une ressource existante, les métadonnées de la ressource et les modifications antérieures (par exemple les annotations et le recadrage) apportées à une ressource existante sont supprimées. Si vous choisissez de conserver les deux ressources, la nouvelle ressource est renommée en ajoutant le chiffre `1` à son nom.
+Vous pouvez choisir de remplacer une ressource existante, de créer une autre version ou de garder les deux en renommant la nouvelle ressource téléchargée. Si vous remplacez une ressource existante, les métadonnées de la ressource et les modifications antérieures (annotation ou recadrage, par exemple) que vous avez apportées à la ressource existante sont supprimées. Si vous choisissez de conserver les deux ressources, la nouvelle ressource est renommée en ajoutant le chiffre `1` à son nom.
 
 ![Boîte de dialogue Conflit de nom pour résoudre le conflit de nom des ressources](assets/resolve-naming-conflict.png)
 
@@ -839,7 +839,7 @@ Pour imprimer les annotations et le statut de révision, cliquez sur **[!UICONTR
    >
    >Si la ressource contient des sous-ressources, vous pouvez les imprimer avec leurs annotations spécifiques.
 
-   Pour modifier l’aspect du fichier PDF généré (la couleur, la taille et le style de la police), ouvrez la **[!UICONTROL configuration du PDF d’annotation]** dans le gestionnaire de configuration et modifiez ensuite les options souhaitées. Par exemple, pour modifier la couleur d’affichage du statut approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotation](/help/assets/manage-assets.md#annotating).
+   Pour modifier l’aspect du fichier de PDF rendu, par exemple, la couleur, la taille et le style de la police, ouvrez le **[!UICONTROL Configuration du PDF d’annotation]** dans Configuration Manager, puis modifiez les options souhaitées. Par exemple, pour modifier la couleur d’affichage du statut approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotation](/help/assets/manage-assets.md#annotating).
 
    ![Configuration pour imprimer une annotation de ressource sur un document PDF](assets/annotation-print-pdf-config.png)
 

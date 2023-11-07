@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 25%
@@ -215,7 +215,7 @@ Pour vérifier si la persistance fonctionne :
 
 **Recherche de requêtes perdues**
 
-Si vous perdez des requêtes dans un paramètre de serveur complexe, par exemple avec un pare-feu et un Dispatcher, vous pouvez utiliser le serveur proxy pour déterminer où la requête a été perdue. S’il existe un pare-feu :
+Si vous perdez des requêtes dans un paramètre de serveur complexe, par exemple, avec un pare-feu et un Dispatcher, vous pouvez utiliser le serveur proxy pour déterminer où la requête a été perdue. S’il existe un pare-feu :
 
 * Démarrer un proxy avant un pare-feu
 * Démarrer un autre proxy après un pare-feu

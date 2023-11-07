@@ -7,7 +7,7 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2116'
 ht-degree: 27%
@@ -89,11 +89,11 @@ Cela signifie que lorsqu’une adresse IP doit être spécifiée, vous pouvez s�
 
 * une adresse IPv6 ;
 
-  par exemple `https://[ab12::34c5:6d7:8e90:1234]:4502`
+  par exemple, `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * une adresse IPv4 ;
 
-  par exemple `https://123.1.1.4:4502`
+  par exemple, `https://123.1.1.4:4502`
 
 * un nom de serveur ;
 
@@ -287,7 +287,7 @@ Voir [Principes de base de la personnalisation des rapports](/help/sites-adminis
 
 CQ envoie des notifications aux utilisateurs qui :
 
-* ont souscrit aux événements de pages, par exemple la modification ou la réplication ;
+* ont souscrit aux événements de page, par exemple la modification ou la réplication ;
 * Ont souscrit aux événements de forum.
 * doivent effectuer une opération dans un workflow.
 

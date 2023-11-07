@@ -7,7 +7,7 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1159'
 ht-degree: 25%
@@ -82,7 +82,7 @@ Pour vérifier si la persistance fonctionne :
 
 **Recherche de requêtes perdues**
 
-Si vous perdez des requêtes dans un paramètre de serveur complexe, par exemple avec un pare-feu et un Dispatcher, vous pouvez utiliser le serveur proxy pour déterminer où la requête a été perdue. S’il existe un pare-feu :
+Si vous perdez des requêtes dans un paramètre de serveur complexe, par exemple, avec un pare-feu et un Dispatcher, vous pouvez utiliser le serveur proxy pour déterminer où la requête a été perdue. S’il existe un pare-feu :
 
 1. Démarrer un proxy avant un pare-feu
 1. Démarrer un autre proxy après un pare-feu

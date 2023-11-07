@@ -2,10 +2,10 @@
 title: Instructions d’installation du correctif AEM Forms pour AEM Forms
 description: Instructions d’installation du pack de services AEM Forms pour l’environnement OSGi et JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 692193326e0623036ee3834985cfa9dc8d7076d9
-workflow-type: ht
-source-wordcount: '1733'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1732'
+ht-degree: 99%
 
 ---
 
@@ -151,7 +151,7 @@ Le package est automatiquement installé.
 
   >[!NOTE]
   >
-  >Le Service Pack Experience Manager ne prend pas en charge l’installation en Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+  Le Service Pack Experience Manager ne prend pas en charge l’installation en Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **Validation de l’installation**
 
@@ -183,7 +183,7 @@ Le package est automatiquement installé.
 
 >[!NOTE]
 >
->Si vous installez le pack de services AEM Forms pour la base de données relationnelle, il est obligatoire de sauvegarder DB_schema.
+Si vous installez le pack de services AEM Forms pour la base de données relationnelle, il est obligatoire de sauvegarder DB_schema.
 
 +++
 
@@ -211,7 +211,7 @@ Vous pouvez utiliser deux méthodes différentes pour installer automatiquement 
 
   >[!NOTE]
   >
-  >Le Service Pack Experience Manager ne prend pas en charge l’installation Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+  Le Service Pack Experience Manager ne prend pas en charge l’installation Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **Validation de l’installation**
 

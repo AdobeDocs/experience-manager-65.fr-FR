@@ -4,9 +4,9 @@ description: Découvrez comment déployer un projet Content and Commerce AEM.
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: ht
-source-wordcount: '715'
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '714'
 ht-degree: 100%
 
 ---
@@ -29,7 +29,7 @@ L’intégration à AEM Content and Commerce est un processus en deux étapes�
 
 ### Installation du module complémentaire Content and Commerce AEM pour AEM 6.5 {#install-add-on}
 
-Téléchargez et installez le module complémentaire Commerce AEM pour AEM 6.5, que vous trouverez dans le portail de [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+Téléchargez et installez le module complémentaire AEM Commerce pour AEM 6.5, que vous trouverez dans le portail de [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
 Démarrez et installez le pack de services d’AEM 6.5 requis. Nous vous recommandons d’installer le dernier pack de services disponible.
 
@@ -71,21 +71,21 @@ Les propriétés suivantes peuvent être configurées :
 - Affichage de magasin : identifiant d’affichage du magasin. Si cette valeur est vide, la vue de magasin par défaut est utilisée.
 - Chemin du proxy GraphQL : chemin d’URL du proxy GraphQL dans AEM utilisé pour les requêtes proxy vers le point d’entrée GraphQL principal de commerce.
 
-   >[!NOTE]
-   >
-   >Dans la plupart des configurations, la valeur par défaut `/api/graphql` ne doit pas être modifiée. Seule une configuration avancée n’utilisant pas le proxy GraphQL fourni doit modifier ce paramètre.
+  >[!NOTE]
+  >
+  >Dans la plupart des configurations, la valeur par défaut `/api/graphql` ne doit pas être modifiée. Seule une configuration avancée n’utilisant pas le proxy GraphQL fourni doit modifier ce paramètre.
 
 - Activer la prise en charge de l’UID du catalogue : activez la prise en charge de l’UID au lieu de l’ID dans les appels GraphQL du serveur principal de commerce.
 
-   >[!NOTE]
-   >
-   >La prise en charge des UID a été introduite dans Adobe Commerce version 2.4.2. Activez cette option uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
+  >[!NOTE]
+  >
+  >La prise en charge des UID a été introduite dans Adobe Commerce version 2.4.2. Activez cette option uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
 
 - Identifiant de catégorie racine du catalogue : l’identifiant (UID ou ID) de la racine du catalogue du magasin.
 
-   >[!CAUTION]
-   >
-   >À compter de la version 2.0.0 des composants principaux CIF, la prise en charge de `id` a été supprimée et remplacée par `uid`. Si votre projet utilise la version 2.0.0 des composants principaux CIF, vous devez activer la prise en charge de l’UID de catalogue et utiliser un UID de catégorie valide comme « identifiant de catégorie racine de catalogue ».
+  >[!CAUTION]
+  >
+  >À compter de la version 2.0.0 des composants principaux CIF, la prise en charge de `id` a été supprimée et remplacée par `uid`. Si votre projet utilise la version 2.0.0 des composants principaux CIF, vous devez activer la prise en charge de l’UID de catalogue et utiliser un UID de catégorie valide comme « identifiant de catégorie racine de catalogue ».
 
 La configuration illustrée ci-dessus est fournie à titre de référence. Les projets doivent fournir leurs propres configurations.
 

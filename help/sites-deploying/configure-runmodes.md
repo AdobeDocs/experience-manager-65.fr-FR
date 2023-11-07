@@ -1,26 +1,22 @@
 ---
 title: Modes d’exécution
-seo-title: Run Modes
 description: Découvrez comment ajuster votre instance d’AEM à des fins spécifiques à l’aide des modes d’exécution.
-seo-description: Learn how to tune your AEM instance for specific purposes by using run modes.
-uuid: 8a0c6e5c-4fae-43e2-b745-eee58f346ceb
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 92%
+source-wordcount: '744'
+ht-degree: 90%
 
 ---
 
 # Modes d’exécution{#run-modes}
 
-Les modes d’exécution vous permettent d’ajuster votre instance AEM à des fins spécifiques, par exemple pour créer ou publier, tester, développer, intranet ou autre.
+Les modes d’exécution vous permettent d’ajuster votre instance AEM à des fins spécifiques ; par exemple, pour créer ou publier, tester, développer, intranet ou autre.
 
 Vous pouvez :
 
@@ -153,7 +149,7 @@ java -jar cq-56-p4545.jar -r dev
 
 Une propriété système dans le script de démarrage peut être utilisée pour spécifier le mode d’exécution.
 
-* Par exemple, utilisez le code ci-dessous pour lancer une instance de publication d’exploitation localisée aux États-Unis :
+* Par exemple, utilisez ce qui suit pour lancer une instance en tant qu’instance de publication de production aux États-Unis :
 
   `-Dsling.run.modes=publish,prod,us`
 

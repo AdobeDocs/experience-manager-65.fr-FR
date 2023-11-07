@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 6465e2c4-28e5-4fc8-8cca-7b632f10ba5a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2150'
-ht-degree: 57%
+ht-degree: 77%
 
 ---
 
 # Utilisation des adaptateurs Sling{#using-sling-adapters}
 
-[Sling](https://sling.apache.org) propose un [modèle Adaptateur](https://sling.apache.org/documentation/the-sling-engine/adapters.html) permettant de convertir facilement les objets qui mettent en œuvre l’interface [Adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29). Cette interface fournit une variable [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) qui convertit l’objet au type de classe transmis en tant qu’argument.
+[Sling](https://sling.apache.org) propose un [Modèle adaptateur](https://sling.apache.org/documentation/the-sling-engine/adapters.html) permettant de convertir facilement les objets qui implémentent l’interface [Adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29). Cette interface fournit une méthode [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) générique qui convertit les objets dans le type de classe qui est transmis comme argument.
 
 Par exemple, pour convertir un objet Resource en objet Node correspondant, vous pouvez simplement procéder comme suit :
 
@@ -45,12 +45,12 @@ Il existe plusieurs scénarios d’utilisation :
 
 Il existe plusieurs raisons à cela, notamment :
 
-* l’implémentation ne prend pas en charge le type de cible.
-* une fabrique d’adaptateur qui gère ce cas n’est pas active (par exemple, en raison de références de service manquantes).
-* la condition interne a échoué
+* L’implémentation ne prend pas en charge le type de cible
+* Une usine d’adaptateurs qui gère ce cas n’est pas active (par exemple, en raison de références de service manquantes)
+* La condition interne a échoué
 * Le service n’est pas disponible.
 
-Il est important que vous gériez le cas &quot;null&quot; avec élégance. Pour les rendus jsp, il peut être acceptable que le jsp échoue si cela entraîne un élément de contenu vide.
+Il est important que vous gériez le cas « null » de manière élégante. Pour les rendus jsp, il peut être acceptable que le jsp échoue si cela entraîne un élément de contenu vide.
 
 ### Mise en cache {#caching}
 
@@ -58,7 +58,7 @@ Pour améliorer les performances, les implémentations peuvent mettre en cache l
 
 Cette mise en cache est exécutée pour tous les scénarios basés sur `AdapterFactory`.
 
-Cependant, il n’existe aucune règle générale : l’objet peut être soit une nouvelle instance, soit une instance existante. Cela signifie que vous ne pouvez pas vous fier à aucun des comportements. Par conséquent, il est important, notamment dans `AdapterFactory`, que les objets soient réutilisables dans ce scénario.
+Cependant, il n’existe aucune règle générale : l’objet peut être soit une nouvelle instance, soit une instance existante. Cela signifie que vous ne pouvez pas vous fier à aucun des comportements. Par conséquent, il est important, notamment dans l’`AdapterFactory`, que les objets soient réutilisables dans ce scénario.
 
 ### Fonctionnement {#how-it-works}
 
@@ -73,7 +73,7 @@ Cependant, il n’existe aucune règle générale : l’objet peut être soit un
 
 * Une combinaison des deux.
 
-Pour le premier cas, les documents Java™ peuvent indiquer ce qui suit : `adaptTo-targets` sont possibles. Cependant, pour des sous-classes spécifiques, telles que la ressource basée sur JCR, cela s’avère souvent impossible. Dans ce dernier cas, les implémentations de `AdapterFactory` font généralement partie des classes privées d’un lot et ne sont donc pas exposées dans une API client, ni répertoriées dans la documentation Java™. En théorie, il serait possible d’accéder à toutes les implémentations `AdapterFactory` à partir de l’exécutable de service [OSGi](/help/sites-deploying/configuring-osgi.md) et d’observer leurs configurations « adaptables » (sources et cibles), mais pas de les mapper entre elles. En fin de compte, cela dépend de la logique interne, qui doit être documentée. D’où cette référence.
+Pour le premier cas, les documents Java™ peuvent indiquer quelles `adaptTo-targets` sont possibles. Cependant, pour des sous-classes spécifiques, telles que la ressource basée sur JCR, cela s’avère souvent impossible. Dans le dernier cas, les implémentations d’`AdapterFactory` font généralement partie des classes privées d’un bundle et ne sont donc pas exposées dans une API cliente ni répertoriées dans les documents Java™. En théorie, il serait possible d’accéder à toutes les implémentations `AdapterFactory` à partir de l’exécutable de service [OSGi](/help/sites-deploying/configuring-osgi.md) et d’observer leurs configurations « adaptables » (sources et cibles), mais pas de les mapper entre elles. En fin de compte, cela dépend de la logique interne, qui doit être documentée. d’où cette référence.
 
 ## Référence {#reference}
 
@@ -84,24 +84,24 @@ Pour le premier cas, les documents Java™ peuvent indiquer ce qui suit : `adapt
 <table>
  <tbody>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Node</a></td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Nœud</a></td>
    <td>S’il s’agit d’une ressource basée sur un nœud JCR ou une propriété JCR faisant référence à un nœud.</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Property.html">Propriété</a></td>
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Property.html">Propriété</a></td>
    <td>S’il s’agit d’une ressource basée sur une propriété JCR</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Item.html">Élément</a></td>
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Item.html">Élément</a></td>
    <td>S’il s’agit d’une ressource basée sur JCR (nœud ou propriété)</td>
   </tr>
   <tr>
-   <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html">Map</a></td>
+   <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html">Mappage</a></td>
    <td>Renvoie un mappage des propriétés, s’il s’agit d’une ressource basée sur un nœud JCR (ou une autre ressource prenant en charge les mappages de valeurs)</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a></td>
-   <td>Renvoie un mappage simple d’emploi des propriétés, s’il s’agit d’une ressource basée sur un nœud JCR (ou une autre ressource prenant en charge les mappages de valeurs). Peut également être réalisé (plus simplement) en utilisant<br /> <code><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ResourceUtil.html">ResourceUtil.getValueMap(Resource)</a></code> (gère la casse nulle, etc.)</td>
+   <td>Renvoie un mappage simple d’emploi des propriétés, s’il s’agit d’une ressource basée sur un nœud JCR (ou une autre ressource prenant en charge les mappages de valeurs). On peut également obtenir ce résultat (plus simplement) en utilisant <br /> <code><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ResourceUtil.html">ResourceUtil.getValueMap(Resource)</a></code> (gestion du cas de valeur nulle, etc)</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">InheritanceValueMap</a></td>
@@ -120,7 +120,7 @@ Pour le premier cas, les documents Java™ peuvent indiquer ce qui suit : `adapt
    <td>Renvoie une URL pointant vers la ressource (URL de référentiel de ce nœud s’il s’agit d’une ressource basée sur un nœud JCR ; URL de lot JAR s’il s’agit d’une ressource de type lot ; URL de fichier s’il s’agit d’une ressource de système de fichiers)</td>
   </tr>
   <tr>
-   <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/io/File.html">File</a></td>
+   <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/io/File.html">Fichier</a></td>
    <td>S’il s’agit d’une ressource de système de fichiers</td>
   </tr>
   <tr>
@@ -132,7 +132,7 @@ Pour le premier cas, les documents Java™ peuvent indiquer ce qui suit : `adapt
    <td>Si cette ressource est un script (un fichier jsp, par exemple) pour lequel un moteur de script est enregistré auprès de sling ou s’il s’agit de ressource de servlet.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html">String</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html">Boolean</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html">Long</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Double.html">Double</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html">Calendar</a><br /> <a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Value</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html">String[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html">Boolean[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html">Long[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html">Calendar[]</a><br /> <a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Value[]</a></td>
+   <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html">String</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html">Boolean</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html">Long</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Double.html">Double</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html">Calendar</a><br /> <a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Value</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html">String[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html">Boolean[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html">Long[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html">Calendar[]</a><br /> <a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Value[]</a></td>
    <td>Renvoie les valeurs s’il s’agit d’une ressource basée sur une propriété JCR (et que la valeur convient).</td>
   </tr>
   <tr>
@@ -152,7 +152,7 @@ Pour le premier cas, les documents Java™ peuvent indiquer ce qui suit : `adapt
    <td>S’il s’agit d’un nœud de conception (<code>cq:Page</code>)</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Template.html">Modèle </a></td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Template.html">Modèle</a></td>
    <td>Si c’est un <code>cq:Template</code> ressource de noeud</td>
   </tr>  
   <tr>
@@ -180,8 +180,8 @@ Pour le premier cas, les documents Java™ peuvent indiquer ce qui suit : `adapt
    <td>Authorizable est la base commune de User et Group</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/jackrabbit/api/security/user/User.html">Utilisateur</a></td>
-   <td>User est un objet Authorizable spécial qui peut être authentifié et dont il est possible d’emprunter l’identité</td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/jackrabbit/api/security/user/User.html">Utilisateur/Utilisatrice</a></td>
+   <td>Utilisateur/Utilisatrice est un objet Authorizable spécial qui peut être authentifié et dont il est possible d’emprunter l’identité</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/SimpleSearch.html">SimpleSearch</a></td>
@@ -189,11 +189,11 @@ Pour le premier cas, les documents Java™ peuvent indiquer ce qui suit : `adapt
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/status/WorkflowStatus.html">WorkflowStatus</a></td>
-   <td>État du workflow pour le nœud de charge utile de la page/du workflow donné</td>
+   <td>Statut du workflow pour le nœud de la payload de la page/du workflow donné</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/replication/ReplicationStatus.html">ReplicationStatus</a></td>
-   <td>État de réplication de la ressource donnée ou de son sous-nœud jcr:content (vérifié en premier)</td>
+   <td>Statut de réplication de la ressource donnée ou de son sous-nœud jcr:content (vérifié en premier)</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/connector/ConnectorResource.html">ConnectorResource</a></td>
@@ -245,18 +245,18 @@ Pour le premier cas, les documents Java™ peuvent indiquer ce qui suit : `adapt
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">Authorizable</a> </td>
-   <td>Utilisateur actuel</td>
+   <td>Utilisateur/utilisatrice actuel</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/jackrabbit/api/security/user/User.html">Utilisateur</a><br /> </td>
-   <td>Utilisateur actuel</td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/jackrabbit/api/security/user/User.html">Utilisateur/Utilisatrice</a><br /> </td>
+   <td>Utilisateur/utilisatrice actuel</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/QueryBuilder.html">QueryBuilder</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html">Externalizer</a></td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html">Service Externalizer</a></td>
    <td>Pour externaliser des URL absolues, même sans l’objet de requête<br /> </td>
   </tr>
  </tbody>

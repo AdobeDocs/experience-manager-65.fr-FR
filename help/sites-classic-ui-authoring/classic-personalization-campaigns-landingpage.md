@@ -1,20 +1,16 @@
 ---
 title: Pages de destination
-seo-title: Landing Pages
 description: La fonction landing pages permet d’importer rapidement et facilement une conception et un contenu directement dans une page AEM. Le code HTML et les ressources connexes préparés par un développeur ou une développeuse web pourront être importés, en intégralité ou partiellement.
-seo-description: The landing pages feature allows quick and easy importing of a design and content right into an AEM page. A web developer can prepare the HTML and additional assets that can be imported as a full page or only a part of a page.
-uuid: b294c43f-63ae-4b5b-bef0-04566e350b63
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3329'
-ht-degree: 44%
+source-wordcount: '3323'
+ht-degree: 43%
 
 ---
 
@@ -41,7 +37,7 @@ La préparation du module de conception à importer est traitée dans la section
 
 ## Que sont les landing pages ? {#what-are-landing-pages}
 
-Les pages d’entrée sont des sites d’une ou de plusieurs pages qui sont le &quot;point de terminaison&quot; d’une diffusion marketing (par exemple, avec un e-mail, des mots-clés/bannières, des médias sociaux). Une page d’entrée peut avoir plusieurs objectifs, mais tous ont une chose en commun : le visiteur doit accomplir une tâche et définir le succès d’une page d’entrée.
+Les pages d’entrée sont des sites d’une ou de plusieurs pages qui sont le &quot;point de terminaison&quot; d’une diffusion marketing, par exemple, avec des courriers électroniques, des mots-clés/bannières, des médias sociaux. Une page d’entrée peut avoir plusieurs objectifs, mais tous ont une chose en commun : le visiteur doit accomplir une tâche et définir le succès d’une page d’entrée.
 
 La fonction Pages d’entrée d’AEM permet aux marketeurs de collaborer avec les concepteurs web des agences ou des équipes créatives internes afin de créer des conceptions de page qui peuvent être facilement importées dans AEM et qui restent modifiables par les marketeurs et publiées sous la même gouvernance que les autres sites optimisés par l’.
 
@@ -351,7 +347,7 @@ Adobe recommande d’utiliser l’importateur de conception sur une instance d�
 
 ### Création d’une page d’importateur {#creating-an-importer-page}
 
-Avant de pouvoir importer votre conception de page d’entrée, vous devez créer une page d’importateur, par exemple sous une campagne. Le modèle Page d’importateur vous permet d’importer votre landing page HTML complète. La page contient une zone de dépôt dans laquelle le bloc de conception de page d’entrée peut être importé par glisser-déposer.
+Avant de pouvoir importer votre conception de page d’entrée, vous devez créer une page d’importateur, par exemple, sous une campagne. Le modèle Page d’importateur vous permet d’importer votre landing page HTML complète. La page contient une zone de dépôt dans laquelle le bloc de conception de page d’entrée peut être importé par glisser-déposer.
 
 >[!NOTE]
 >
@@ -417,7 +413,7 @@ Lorsque vous importez le module de conception, **Effacer la conception** et **T�
 
 ### Téléchargement du bloc de conception importé {#downloading-the-imported-design-package}
 
-Le téléchargement du fichier zip permet d&#39;enregistrer le fichier zip importé avec une landing page spécifique. Notez que les modifications apportées à une page ne sont pas ajoutées au fichier compressé.
+Le téléchargement du fichier zip permet d&#39;enregistrer le fichier zip importé avec une landing page spécifique. Les modifications effectuées sur une page ne sont pas ajoutées au fichier zip.
 
 Pour télécharger le module de conception importé, cliquez sur **Télécharger le fichier Zip** dans la barre d’outils de la page d’entrée.
 
@@ -439,7 +435,7 @@ Lors de l’effacement de la page de destination, vous pouvez supprimer les modi
 
 >[!NOTE]
 >
->Si vous décidez de supprimer les modifications du contenu, toutes les modifications que vous avez effectuées sur la page de destination importée, ainsi que toutes les propriétés de page, seront perdues lorsque vous cliquerez sur **Effacer**.
+>Si vous décidez de supprimer les modifications de contenu, toutes les modifications que vous avez apportées à la page d’entrée importée et toutes les propriétés de page sont perdues lorsque vous cliquez sur **Effacer**.
 
 ### Modification et ajout de composants sur une page d’entrée {#modifying-and-adding-components-on-a-landing-page}
 

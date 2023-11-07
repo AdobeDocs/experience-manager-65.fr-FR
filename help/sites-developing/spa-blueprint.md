@@ -6,10 +6,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2074'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -71,11 +71,11 @@ Le reste de ce document, supposé être indépendant du framework, décrit les e
 
 La structure de contenu de la page est stockée dans AEM. Le modèle de la page est utilisé pour mapper et instancier les composants de l’application sur une seule page (SPA). Les développeurs d’applications sur une seule page créent des composants SPA qu’ils mappent sur des composants AEM. Ils utilisent pour cela le type de ressource (ou le chemin d’accès au composant AEM) comme clé unique.
 
-Les composants de la SPA doivent être synchronisés avec le modèle de page et mis à jour avec toute modification apportée au contenu. Un modèle qui a recours à des composants dynamiques doit être utilisé pour instancier des composants à la volée, suivant la structure de modèle de page fournie.
+Les composants de la SPA doivent être synchronisés avec le modèle de page et mis à jour avec toute modification apportée au contenu. Un modèle utilisant des composants dynamiques doit être utilisé pour instancier des composants à la volée en suivant la structure de modèle de page fournie.
 
 ### Champs Meta {#meta-fields}
 
-Le modèle de page utilise l’outil d’exportation de modèle JSON, lui-même basé sur l’API [Sling Model](https://sling.apache.org/documentation/bundles/models.html). Les modèles Sling exportables exposent la liste de champs suivante afin de permettre aux bibliothèques sous-jacentes d’interpréter le modèle de données :
+Le modèle de page utilise l’exporteur de modèle JSON, lui-même basé sur l’API [Sling Model](https://sling.apache.org/documentation/bundles/models.html). Les modèles Sling exportables exposent la liste de champs suivante afin de permettre aux bibliothèques sous-jacentes d’interpréter le modèle de données :
 
 * `:type` : type de ressource AEM (par défaut = type de ressource)
 * `:children` : enfants hiérarchiques de la ressource actuelle. Les enfants ne font pas partie du contenu interne de la ressource actuelle (on les trouve sur les éléments qui représentent une page)

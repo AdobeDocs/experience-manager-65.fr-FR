@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1530'
 ht-degree: 56%
@@ -90,7 +90,7 @@ L’exemple de code suivant génère un formulaire PDF interactif nommé *Loan.x
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -232,7 +232,7 @@ L’exemple de code suivant génère un formulaire nommé *Loan.xdp* au client �
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -365,7 +365,7 @@ L’exemple de code suivant présente un guide (obsolète) nommé *TLALifeClaim.
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -424,7 +424,7 @@ L’exemple de code suivant présente un guide (obsolète) nommé *TLALifeClaim.
          renderSpec.setGuidePDF(false);
  
          //Specify URI values that are required to render a form
-         //design located in the AEM Forms repository
+         //design in the AEM Forms repository
          URLSpec uriValues = new URLSpec();
          uriValues.setApplicationWebRoot("https://'[server]:[port]'/FormsQS");
          uriValues.setContentRootURI("repository:///");
@@ -501,7 +501,7 @@ L’exemple de code suivant génère un formulaire basé sur des fragments. Le n
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -634,7 +634,7 @@ L’exemple de code suivant génère un formulaire avec droits d’accès à un 
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -771,7 +771,7 @@ L’exemple de code suivant effectue le rendu d’un formulaire de HTML à l’a
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -932,7 +932,7 @@ L’exemple de code suivant génère un formulaire HTML à l’aide de l’API c
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -1087,7 +1087,7 @@ L’exemple de code suivant génère un formulaire HTML avec une barre d’outil
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -1243,7 +1243,7 @@ L’exemple de code suivant traite un formulaire envoyé au format XML. La valeu
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -1412,7 +1412,7 @@ L’exemple de code suivant traite un formulaire envoyé en tant que données PD
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -1562,7 +1562,7 @@ L’exemple de code suivant traite un formulaire HTML envoyé en tant que donné
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -1724,7 +1724,7 @@ L’exemple de code Java™ suivant traite les données de formulaire envoyées 
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -2000,7 +2000,7 @@ L’exemple de code suivant préremplit un formulaire avec une source de donnée
 * that contains this quick start is exported as a WAR file which
 * is deployed to the J2EE application server)
 *
-* These JAR files are located in the following path:
+* These JAR files are in the following path:
 * <install directory>/sdk/client-libs/common
 *
 * For complete details about the location of these JAR files,
@@ -2051,7 +2051,7 @@ public class RenderDynamicForm extends HttpServlet implements Servlet {
    //Create DocumentBuilderFactory and DocumentBuilder objects
    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
    DocumentBuilder builder = factory.newDocumentBuilder();
-   //Create a new Document object
+   //Create a Document object
    document = builder.newDocument();
    //Create the root element and append it to the XML DOM
    Element root = (Element) document.createElement("transaction");
@@ -2279,7 +2279,7 @@ L’exemple de code suivant traite un formulaire contenant un script de calcul e
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -2397,7 +2397,7 @@ L’exemple de code suivant optimise les performances en définissant les option
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -2453,7 +2453,7 @@ L’exemple de code suivant optimise les performances en définissant les option
          renderSpec.setLinearizedPDF(true);
  
          //Specify URI values that are required to render a form
-         //design located in the AEM Forms Repository
+         //design in the AEM Forms Repository
          URLSpec uriValues = new URLSpec();
          uriValues.setApplicationWebRoot("https://'[server]:[port]'/FormsServiceClientApp");
          uriValues.setContentRootURI("repository:///");
@@ -2525,7 +2525,7 @@ Le démarrage rapide de Java™ suivant génère un formulaire de PDF interactif
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -2637,7 +2637,7 @@ Le fichier Java™ Quick Start suivant récupère le fichier Loan.xdp de Content
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,

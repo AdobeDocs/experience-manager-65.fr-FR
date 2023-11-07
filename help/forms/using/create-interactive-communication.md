@@ -10,9 +10,9 @@ discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6169'
+source-wordcount: '6168'
 ht-degree: 89%
 
 ---
@@ -49,7 +49,7 @@ Voici les conditions préalables à la création d’une communication interacti
    * **[!UICONTROL Service de préremplissage]** : sélectionnez le service de préremplissage pour récupérer les données et préremplissez la communication interactive.
    * **[!UICONTROL Type de post-traitement]** : sélectionnez le workflow AEM ou Forms à déclencher lors de l’envoi de la communication interactive. Sélectionnez le type de processus à déclencher.
 
-   * **[!UICONTROL Post-traitement]** : sélectionnez le nom du processus à déclencher. Lorsque vous sélectionnez le workflow AEM, fournissez le chemin d’accès de la pièce jointe, le chemin d’accès à la mise en forme, le chemin d’accès au fichier PDF, le chemin d’accès aux données d’impression et le chemin de données web.
+   * **[!UICONTROL Post-traitement]** : sélectionnez le nom du processus à déclencher. Lorsque vous sélectionnez le workflow AEM, fournissez le chemin d’accès de la pièce jointe, le chemin d’accès à la mise en page, le chemin d’accès au fichier PDF, le chemin d’accès aux données d’impression et le chemin de données web.
    * **[!UICONTROL Balises]** : sélectionnez les balises à appliquer à la communication interactive. Vous pouvez également saisir un nom de balise nouveau ou personnalisé et appuyer sur Entrée pour créer la balise.
    * **[!UICONTROL Auteur]** : le nom de l’auteur est automatiquement extrait du nom de l’utilisateur connecté.
    * **[!UICONTROL Date de publication :]** entrez la date de publication de la communication interactive.
@@ -157,11 +157,11 @@ Appuyez sur le fragment de document, puis sur ![configure_icon](assets/configure
 
    Accédez à [Variables et objets de modèle de données](../../forms/using/create-interactive-communication.md#hiddenvariables) pour configurer la liaison de variables masquées dans le fragment de document.
 
-   Vous pouvez également faire glisser des éléments de source de données ou des fragments de document texte pour configurer la liaison de variables.  Pour créer une liaison avec l’un des éléments de source de données, sélectionnez l’onglet **Sources de données** et effectuez un glisser-déposer de l’élément dans le nom de la variable. L’élément et la variable de source de données doivent être du même type pour configurer la liaison avec succès. Si vous faites glisser un élément de source de données vers une variable déjà liée, le nouvel élément remplace l’élément précédent pour créer une nouvelle liaison avec la variable. De même, sélectionnez l’onglet **Ressources** et faites glisser et déposez le fragment de document texte dans le nom de variable pour configurer la liaison entre eux. Le fragment de document texte ne doit contenir aucune variable.
+   Vous pouvez également faire glisser des éléments de source de données ou des fragments de document texte pour configurer la liaison de variables.  Pour créer une liaison avec l’un des éléments de source de données, sélectionnez l’onglet **Sources de données** et effectuez un glisser-déposer de l’élément dans le nom de la variable. L’élément et la variable de source de données doivent être du même type pour configurer la liaison avec succès. Si vous faites glisser un élément de source de données vers une variable déjà liée, le nouvel élément remplace l’élément précédent pour créer une liaison avec la variable. De même, sélectionnez l’onglet **Ressources** et faites glisser et déposez le fragment de document texte dans le nom de variable pour configurer la liaison entre eux. Le fragment de document texte ne doit contenir aucune variable.
 
 1. Pour ajouter un tableau, en sélectionnant le canal d’impression, dans le **[!UICONTROL Ressources]** appliquez le filtre pour afficher uniquement les fragments de mise en page. Faites glisser et déposez le fragment de mise en page requis dans la communication interactive. Un fragment de mise en page est basé sur un XDP et peut être utilisé pour créer des mises en page graphiques ou des tableaux statiques et dynamiques dans la communication interactive qui sont ensuite remplis de données dynamiques.
 
-   Exemple : un tableau de mise en page pour l’affichage de la prime brute, du pourcentage de remise fidélité et de la disponibilité de l’assistance routière d’urgence pour les anciennes et les nouvelles politiques.
+   Exemple : un tableau de mise en page pour l’affichage de la prime brute, du pourcentage de remise fidélité et de la disponibilité de l’assistance routière d’urgence pour les anciennes et les nouvelles stratégies.
 
    Pour plus d’informations sur les fragments de mise en page, reportez-vous à la section [Fragments de document](/help/forms/using/document-fragments.md).
 
@@ -548,7 +548,7 @@ Passez le curseur sur la zone cible correspondante dans le canal web et sélecti
 
 L’héritage des composants dans la zone cible est annulé et vous pouvez maintenant les modifier selon vos besoins.
 
-### Réactiver l&#39;héritage {#re-enable-inheritance}
+### Réactiver l’héritage {#re-enable-inheritance}
 
 Dans le canal web, si vous avez annulé l’héritage d’un composant, vous pouvez le réactiver. Pour réactiver l’héritage, passez le curseur au-dessus de la limite de la zone cible pertinente incluant le composant et appuyez sur ![reenableinheritance](assets/reenableinheritance.png).
 

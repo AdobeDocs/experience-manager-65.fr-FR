@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1246'
 ht-degree: 2%
 
 ---
@@ -74,7 +74,7 @@ Dans cette section, vous définissez l’URL du serveur de mise à jour de conte
 
 **Version de PhoneGap** est la version dans laquelle vous souhaitez compiler votre application avec PhoneGap. La bonne pratique consiste à suivre la version actuelle pour vous assurer d’obtenir les fonctionnalités et correctifs les plus récents et les plus performants.
 
-**URL du serveur de mise à jour de contenu** est l’URL que votre application utilisera pour appeler les mises à jour ContentSync. Il doit être défini sur votre URL de Dispatcher ou, si vous n’utilisez pas un Dispatcher, sur l’une de vos instances de publication qui sera utilisée pour diffuser les mises à jour ContentSync à votre application.
+**URL du serveur de mise à jour de contenu** est l’URL que votre application utilisera pour appeler les mises à jour ContentSync. Elle doit être définie sur votre URL de Dispatcher ou, si vous n’utilisez pas un Dispatcher, sur l’une de vos instances de publication utilisée pour diffuser les mises à jour ContentSync à votre application.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -130,7 +130,7 @@ La propriété URL du serveur de mise à jour de contenu est l’URL qui doit po
 
 ### Onglet Plugins {#the-plugins-tab}
 
-La variable **Modules externes** Cette section décrit les modules externes associés à votre application. Ces informations seront utilisées pour récupérer le module externe approprié lors d’une génération.
+La variable **Modules externes** Cette section décrit les modules externes associés à votre application. Ces informations sont utilisées pour récupérer le module externe approprié lors d’une génération.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 

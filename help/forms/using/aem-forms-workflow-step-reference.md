@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 5675d69a5bdf296782339f02162db8068daf29e3
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7690'
+source-wordcount: '7689'
 ht-degree: 76%
 
 ---
@@ -135,7 +135,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 
 ## Étape Envoyer un e-mail {#send-email-step}
 
-Utilisez l’étape Envoyer un courrier électronique pour envoyer un courrier électronique, par exemple un courrier électronique contenant un document d’enregistrement, un lien d’un formulaire adaptatif, un lien d’une communication interactive ou un document de PDF joint. L’étape Envoyer un e-mail prend en charge l’[e-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Les e-mails HTML sont réactifs et s’adaptent à la taille de l’écran et au client de messagerie du ou de la destinataire. Vous pouvez utiliser un modèle de courrier électronique HTML pour définir l’aspect, le modèle de couleurs et le comportement du courrier électronique.
+Utilisez l’étape Courrier électronique pour envoyer un courrier électronique, par exemple, avec un document d’enregistrement, un lien d’un formulaire adaptatif, un lien d’une communication interactive ou avec un document de PDF joint. L’étape Envoyer un e-mail prend en charge l’[e-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Les e-mails HTML sont réactifs et s’adaptent à la taille de l’écran et au client de messagerie du ou de la destinataire. Vous pouvez utiliser un modèle de courrier électronique HTML pour définir l’aspect, le modèle de couleurs et le comportement du courrier électronique.
 
 L’étape Envoyer un courrier électronique utilise le service de messagerie Day CQ pour envoyer des messages. Avant d’utiliser l’étape de courrier électronique, assurez-vous que la variable [service email](../../forms/using/aem-forms-workflow.md) est configuré. L’étape Envoyer un courrier électronique possède les propriétés suivantes :
 
@@ -357,7 +357,7 @@ Exporte les données d’un fichier PDF forms ou XDP. Vous devez saisir le chemi
 
 Convertit un document PDF au format sélectionné.
 
-### Étape Générer un PDF non interactif {#generatenoninteractive}
+### Étape de Générer un PDF non interactif {#generatenoninteractive}
 
 Générez un PDF non interactif. Cette étape comprend différentes options de personnalisation.
 

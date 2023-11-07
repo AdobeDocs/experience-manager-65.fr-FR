@@ -5,10 +5,10 @@ contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 67e145e250bbe386168ab2c0f8967f91aa9d8a36
-workflow-type: ht
-source-wordcount: '1591'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '1589'
+ht-degree: 92%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 * Le programme de traitement du proxy définit et gère une tâche spécifique.
 Il peut couvrir une grande variété de tâches ; par exemple l’utilisation d’[!DNL InDesign Server] pour traiter les fichiers.
 
-Pour transférer intégralement des fichiers créés avec [!DNL Adobe InDesign] vers [!DNL Experience Manager Assets], un proxy est utilisé. Cette méthode utilise un programme de traitement du proxy pour communiquer avec [!DNL Adobe InDesign Server], qui exécute des [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) afin d’extraire des métadonnées et de générer divers rendus pour [!DNL Experience Manager Assets]. Le programme de traitement du proxy permet une communication bidirectionnelle entre [!DNL InDesign Server] et les instances [!DNL Experience Manager] dans une configuration cloud.
+Pour charger intégralement des fichiers créés avec [!DNL Adobe InDesign] vers [!DNL Experience Manager Assets], un proxy est utilisé. Cette méthode utilise un programme de traitement du proxy pour communiquer avec [!DNL Adobe InDesign Server], qui exécute des [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) afin d’extraire des métadonnées et de générer divers rendus pour [!DNL Experience Manager Assets]. Le programme de traitement du proxy permet une communication bidirectionnelle entre [!DNL InDesign Server] et les instances [!DNL Experience Manager] dans une configuration cloud.
 
 >[!NOTE]
 >
@@ -28,13 +28,13 @@ Pour transférer intégralement des fichiers créés avec [!DNL Adobe InDesign] 
 
 ## Fonctionnement de l’extraction {#how-the-extraction-works}
 
-[!DNL Adobe InDesign Server] peut être intégré à [!DNL Experience Manager Assets], de telle sorte que les fichiers INDD créés avec [!DNL InDesign] puissent être transférés, que des rendus puissent être générés, et que tous les médias (des vidéos, par exemple) puissent être extraits et stockés sous la forme de ressources :
+[!DNL Adobe InDesign Server] peut être intégré à [!DNL Experience Manager Assets], de telle sorte que les fichiers INDD créés avec [!DNL InDesign] puissent être chargés, que des rendus puissent être générés, et que tous les médias (des vidéos, par exemple) puissent être extraits et stockés sous la forme de ressources :
 
 >[!NOTE]
 >
 >Les versions précédentes d’[!DNL Experience Manager] permettaient seulement d’extraire le XMP et la miniature. Désormais, tous les médias peuvent être extraits.
 
-1. Transférez votre fichier INDD vers [!DNL Experience Manager Assets].
+1. Chargez votre fichier INDD vers [!DNL Experience Manager Assets].
 1. Un framework envoie des scripts de commande vers [!DNL InDesign Server] via un protocole SOAP (Simple Object Access Protocol).
 Ce script de commande permet d’effectuer les opérations suivantes :
 
@@ -42,17 +42,18 @@ Ce script de commande permet d’effectuer les opérations suivantes :
    * Exécuter les commandes [!DNL InDesign Server] :
 
       * La structure, le texte et tous les fichiers multimédias sont extraits.
-      * Des rendus PDF et JPG sont générés.
-      * Des rendus HTML et IDML sont générés.
+      * Des rendus de PDF et de JPG sont générés.
+      * Les rendus HTML et IDML sont générés.
+
    * Republier les fichiers résultants dans [!DNL Experience Manager Assets].
 
    >[!NOTE]
    >
-   >IDML est un format XML qui effectue le rendu de tout le contenu du fichier [!DNL InDesign]. Il est stocké sous forme d’une archive compressée au format [ZIP](https://www.techterms.com/definition/zip). Pour plus d’informations, consultez les [Formats d’échange d’InDesigns INX et IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
+   >IDML est un format XML qui effectue le rendu de tout le contenu du fichier [!DNL InDesign]. Il est stocké sous la forme d’un package compressé au format [ZIP](https://www.techterms.com/definition/zip). Pour plus d’informations, consultez les [Formats d’échange d’InDesigns INX et IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
 
    >[!CAUTION]
    >
-   >Si [!DNL InDesign Server] n’est pas installé ou configuré, vous pouvez tout de même charger un fichier INDD dans [!DNL Experience Manager]. Toutefois, les rendus générés seront limités aux formats PNG et JPEG. Vous ne pourrez pas générer de code HTML ou .idml, ni générer des rendus de page.
+   >Si [!DNL InDesign Server] n’est pas installé ou configuré, vous pouvez tout de même charger un fichier INDD dans [!DNL Experience Manager]. Toutefois, les rendus générés sont limités au format PNG et JPEG. Vous ne pourrez pas générer les rendus de HTML, .idml ou de page.
 
 1. Après l’extraction et la génération du rendu :
 
@@ -97,7 +98,7 @@ Pour installer et démarrer [!DNL InDesign Server] afin de l’utiliser avec [!D
 
 Ce workflow est configuré avec les valeurs par défaut qui peuvent être adaptées à votre configuration pour diverses instances d’auteur (il s’agit d’un workflow standard, aussi des informations supplémentaires sont disponibles sous [Modifier un workflow](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). Si vous utilisez les valeurs par défaut (port SOAP compris), aucune configuration n’est nécessaire.
 
-Après la configuration, le chargement de fichiers [!DNL InDesign] dans [!DNL Experience Manager Assets] (via les méthodes habituelles) déclenche le workflow pour le traitement de la ressource et la préparation des différents rendus. Testez votre configuration en transférant un fichier INDD dans [!DNL Experience Manager Assets] afin de confirmer que vous voyez les différents rendus créés par IDS sous `<*your_asset*>.indd/Renditions`.
+Après la configuration, le chargement de fichiers [!DNL InDesign] dans [!DNL Experience Manager Assets] (via les méthodes habituelles) déclenche le workflow pour le traitement de la ressource et la préparation des différents rendus. Testez votre configuration en chargeant un fichier INDD dans [!DNL Experience Manager Assets] afin de confirmer que vous voyez les différents rendus créés par IDS sous `<*your_asset*>.indd/Renditions`.
 
 #### Extraction de médias {#media-extraction}
 
@@ -140,7 +141,7 @@ Pour la personnaliser, vous pouvez modifier l’onglet **[!UICONTROL Arguments]*
 
 * **Titre de la page** : indique le titre que vous souhaitez attribuer à la page résultante.
 
-* **Racine de la page** : chemin d’accès à la racine de la page résultante. Si vous laissez le champ vide, le nœud contenant les rendus de la ressource sera utilisé.
+* **Racine de la page** : chemin d’accès à la racine de la page résultante. Si rien n’est indiqué, le noeud contenant les rendus de la ressource est utilisé.
 
 * **Modèle de page** : modèle à utiliser lors de la génération de la page résultante.
 
@@ -150,7 +151,7 @@ Pour la personnaliser, vous pouvez modifier l’onglet **[!UICONTROL Arguments]*
 
 >[!NOTE]
 >
->Le programme de traitement réside sur une instance de proxy.
+>Le programme de travail réside sur l’instance proxy.
 
 1. Dans la console Outils, développez **[!UICONTROL Configurations Cloud Services]** dans le volet de gauche. Développez ensuite **[!UICONTROL Configuration de proxy Cloud]**.
 
@@ -182,9 +183,9 @@ Si [!DNL InDesign Server] et [!DNL Experience Manager] sont exécutés sur des h
 Vous pouvez désormais activer le traitement parallèle des tâches pour IDS. Déterminez le nombre maximal de tâches parallèles (`x`) et qu’[!DNL InDesign Server] peut traiter :
 
 * Sur une machine unique à processeur multi-cœurs, le nombre maximum de tâches parallèles (`x`) qu’[!DNL InDesign Server] peut traiter est égal au nombre de processeurs qui exécutent IDS, moins un.
-* Lorsque vous exécutez IDS sur plusieurs machines, vous devez compter le nombre total de processeurs disponibles (sur chaque ordinateur) et soustraire le nombre total d’ordinateurs.
+* Lorsque vous exécutez IDS sur plusieurs machines, vous devez comptabiliser le nombre total de processeurs disponibles (c’est-à-dire sur toutes les machines), puis soustraire le nombre total de machines.
 
-Pour configurer le nombre de tâches parallèles d’IDS :
+Pour configurer le nombre de tâches IDS parallèles :
 
 1. Ouvrez l’onglet **[!UICONTROL Configurations]** de la console Felix ; par exemple :     `https://[aem_server]:[port]/system/console/configMgr`.
 
@@ -238,4 +239,3 @@ Vous pouvez modifier les informations d’identification administrateur par déf
 >[!MORELIKETHIS]
 >
 >* [À propos d’Adobe InDesign Server](https://www.adobe.com/fr/products/indesignserver/faq.html)
-

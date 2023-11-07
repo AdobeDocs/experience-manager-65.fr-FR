@@ -6,10 +6,10 @@ role: User, Admin
 feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
-source-git-commit: 8bd103e392bf5630cb2db654dedcfe4f926b2c9d
-workflow-type: ht
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
 source-wordcount: '808'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -77,7 +77,7 @@ Les modifications apportées aux métadonnées sont propagées aux rendus thumbn
 
 [!DNL Experience Manager Assets] prend en charge le filtrage par liste bloquée et par liste autorisée de propriétés/nœuds pour les métadonnées XMP qui sont lues à partir de binaires de ressources et stockées dans JCR quand les ressources sont ingérées.
 
-Le filtrage par liste bloquée permet d’importer toutes les propriétés des métadonnées XMP, à l’exception des propriétés spécifiées pour l’exclusion. Cependant, pour les types de ressources tels que les fichiers INDD comportant un très grand nombre de métadonnées XMP (par exemple 1 000 nœuds avec 10 000 propriétés), les noms des nœuds à filtrer ne sont pas toujours connus à l’avance. Si le filtrage par liste bloquée permet l’importation d’un grand nombre de ressources avec de nombreuses métadonnées XMP, le déploiement d’[!DNL Experience Manager] peut rencontrer des problèmes de stabilité, par exemple des files d’attente d’observation bloquées.
+Le filtrage par liste bloquée permet d’importer toutes les propriétés des métadonnées XMP, à l’exception des propriétés spécifiées pour l’exclusion. Toutefois, pour les types de ressources tels que les fichiers INDD comportant une grande quantité de métadonnées XMP (par exemple, 1 000 noeuds avec 10 000 propriétés), les noms des noeuds à filtrer ne sont pas toujours connus à l’avance. Si le filtrage à l’aide d’une liste bloquée permet l’importation d’un grand nombre de ressources avec de nombreuses métadonnées XMP, la variable [!DNL Experience Manager] Le déploiement peut rencontrer des problèmes de stabilité, par exemple des files d’attente d’observation bloquées.
 
 Le filtrage par liste autorisée des métadonnées XMP résout le problème en vous permettant de définir les propriétés XMP à importer. De cette façon, les autres propriétés XMP ou les propriétés XMP inconnues sont ignorées. Pour une compatibilité ascendante, vous pouvez ajouter certaines de ces propriétés au filtre qui utilise une liste bloquée.
 

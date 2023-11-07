@@ -10,10 +10,10 @@ discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 97%
+source-wordcount: '772'
+ht-degree: 95%
 
 ---
 
@@ -21,10 +21,10 @@ ht-degree: 97%
 
 Vous devez convertir des pages de lancement afin de renvoyer le contenu dans la source (production) avant de le publier. Lorsqu’une page de lancement est convertie, la page correspondante des pages sources est remplacée par la page convertie. Voici les options disponibles lors de la conversion d’une page de lancement :
 
-* convertir uniquement la page en cours ou l’intégralité du lancement ;
-* convertir les pages enfants de la page active.
+* Faut-il convertir uniquement la page en cours ou l’intégralité du lancement ?
+* Faut-il convertir les pages enfants de la page active ?
 * Faut-il convertir l’intégralité du lancement ou uniquement des pages qui ont été modifiées ?
-* Permet de supprimer le lancement après la promotion.
+* Faut-il supprimer le lancement après la promotion ?
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Vous pouvez promouvoir des lancements à partir de la console **Sites** ou de la
 
    * la console **Sites** :
 
-      1. Ouvrez le [rail de références](/help/sites-authoring/author-environment-tools.md#showingpagereferences) et sélectionnez la page source souhaitée à l’aide du [mode de sélection](/help/sites-authoring/basic-handling.md) (ou sélectionnez et ouvrez le rail de références, l’ordre n’a pas d’importance). Toutes les références seront affichées.
+      1. Ouvrez le [rail de références](/help/sites-authoring/author-environment-tools.md#showingpagereferences) et sélectionnez la page source souhaitée à l’aide du [mode de sélection](/help/sites-authoring/basic-handling.md) (ou sélectionnez et ouvrez le rail de références, l’ordre n’a pas d’importance). Toutes les références s’affichent.
 
       1. Sélectionnez **Lancements** (par exemple Lancements (1)) pour afficher une liste de lancements particuliers.
       1. Sélectionnez le lancement pour afficher les actions disponibles.
@@ -73,10 +73,10 @@ Vous pouvez promouvoir des lancements à partir de la console **Sites** ou de la
 
    * **Portée**
 
-      * **Promouvoir le lancement complet**
+      * **Convertir le lancement complet**
       * **Promouvoir les pages modifiées**
       * **Promouvoir la page active**
-      * **Promouvoir la page active et les sous-pages**
+      * **Convertir la page active et les sous-pages**
 
    Par exemple, lorsque vous sélectionnez l’option visant à convertir uniquement les pages modifiées :
 
@@ -95,7 +95,7 @@ Vous pouvez promouvoir des lancements à partir de la console **Sites** ou de la
 
 ## Conversion de pages de lancement lors de leur modification {#promoting-launch-pages-when-editing}
 
-Lorsque vous modifiez une page de lancement, l’action **Convertir le lancement** est également disponible dans les **informations sur la page**. Cette action ouvre l’assistant pour collecter les informations nécessaires.
+Lorsque vous modifiez une page de lancement, l’action **Convertir le lancement** est également disponible dans les **informations sur la page**. L’assistant s’ouvre alors pour collecter les informations nécessaires.
 
 ![Convertir le lancement](assets/chlimage_1-103.png)
 
@@ -125,10 +125,10 @@ Après la conversion, le lancement sélectionné et les lancements imbriqués se
    * **Portée**
 Ici, vous pouvez indiquer s’il faut convertir l’intégralité du lancement ou uniquement les pages qui ont été modifiées. Dans ce dernier cas, vous pouvez choisir d’inclure ou d’exclure les sous-pages. La configuration par défaut consiste à promouvoir uniquement les modifications de la page active :
 
-      * **Promouvoir le lancement complet**
+      * **Convertir le lancement complet**
       * **Promouvoir les pages modifiées**
       * **Promouvoir la page active**
-      * **Promouvoir la page active et les sous-pages**
+      * **Convertir la page active et les sous-pages**
 
    ![Paramètres de promotion d’un lancement](assets/chlimage_1-105.png)
 

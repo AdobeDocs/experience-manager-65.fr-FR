@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 57%
+source-wordcount: '1132'
+ht-degree: 56%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 57%
 
 La segmentation est un élément clé de la création d’une campagne. Voir [Glossaire de segmentation](/help/sites-authoring/segmentation-overview.md) pour plus d’informations sur le fonctionnement de la segmentation et les termes clés.
 
-En fonction des informations que vous avez déjà collectées sur les visiteurs de votre site et des objectifs que vous souhaitez atteindre, vous devez définir les segments et les stratégies requis pour votre contenu ciblé.
+En fonction des informations que vous avez déjà collectées sur les visiteurs de votre site et des objectifs que vous souhaitez atteindre, vous devez définir les segments et les stratégies nécessaires au contenu ciblé.
 
 Ces segments sont ensuite utilisés pour fournir aux visiteurs du contenu spécifiquement ciblé. Ce contenu est conservé dans la section [Campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) du site web. Les pages de teaser définies ici peuvent être incluses en tant que paragraphes de teaser sur n’importe quelle page et définissent le segment de visiteurs auquel le contenu spécialisé s’applique.
 
@@ -134,7 +134,7 @@ Pour définir votre nouveau segment :
    ![Première étape de la création d’un segment dans l’éditeur de segments](assets/screen_shot_2012-02-02at101726am.png)
 
 1. Utilisez le sidekick ou le menu contextuel (en général, cliquez avec le bouton droit de la souris, puis sélectionnez **Nouveau** pour ouvrir la fenêtre Insérer un nouveau composant) et recherchez la caractéristique de segment dont vous avez besoin. Faites-le ensuite glisser sur le **Éditeur de segment** il apparaît dans la valeur par défaut. **ET** conteneur.
-1. Double-cliquez sur la nouvelle caractéristique pour éditer les paramètres spécifiques, par exemple la position de la souris :
+1. Double-cliquez sur la nouvelle caractéristique pour éditer les paramètres spécifiques, par exemple, la position de la souris :
 
    ![Modification d’un composant dans l’éditeur de segment](assets/screen_shot_2012-02-02at103135am.png)
 

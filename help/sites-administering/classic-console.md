@@ -1,20 +1,16 @@
 ---
 title: Console Balisage de l’interface utilisateur (IU) classique
-seo-title: Classic UI Tagging Console
 description: Découvrez la console de balisage de l’interface utilisateur de Adobe Experience Manager Classic.
-seo-description: Learn about the Classic UI Tagging Console.
-uuid: 51e29422-f967-424b-a7fd-4ca2ddc6b8a3
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 53%
+source-wordcount: '891'
+ht-degree: 48%
 
 ---
 
@@ -41,7 +37,7 @@ Pour accéder à la console Balisage de l’interface utilisateur classique :
 
    ![Création d’un espace de noms](assets/creating_tags_andnamespaces.png)
 
-   Si vous sélectionnez un espace de noms (par exemple **Démonstration**) vous pouvez créer une balise dans cet espace de noms :
+   Si vous sélectionnez un espace de noms (par exemple : **Démonstration**) vous pouvez créer une balise dans cet espace de noms :
 
    ![Création d’une boîte de dialogue de balise](assets/creating_tags_andnamespacesinnewnamespace.png)
 
@@ -159,7 +155,7 @@ La boîte de dialogue se présente comme suit :
 
 La console Balisage utilise la langue du créateur, dès lors, pour la balise « Animals », « Animaux » s’affiche si l’utilisateur définit la langue sur Français dans les propriétés de l’utilisateur.
 
-Pour ajouter une nouvelle langue à la boîte de dialogue, reportez-vous à la section [Ajout d’une langue à la boîte de dialogue Modifier la balise](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) dans la section **Balisage pour les développeurs**.
+Pour ajouter une nouvelle langue à la boîte de dialogue, voir la section [Ajout d’une nouvelle langue à la boîte de dialogue Modifier la balise](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) dans le **Balisage pour les développeurs** .
 
 ### Affichage des titres des balises dans les propriétés de page dans une langue spécifiée {#displaying-tag-titles-in-page-properties-in-a-specified-language}
 
@@ -176,7 +172,7 @@ Par défaut, les `titles` des balises dans les propriétés de page sont affich�
 
 Par défaut, la boîte de dialogue Propriétés de page affiche le `titles` des balises en fonction de la langue de la page.
 
-En général, la langue de la balise est celle de la page si elle est disponible. Si le [`tag`widget ](/help/sites-developing/building.md#tagging-on-the-client-side) est utilisé dans d’autres cas (dans des formulaires ou des boîtes de dialogue, par exemple), la langue de la balise dépend du contexte.
+En général, la langue de la balise est celle de la page si elle est disponible. Lorsque la variable [`tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) est utilisé dans d’autres cas (dans les formulaires ou les boîtes de dialogue, par exemple), la langue de la balise dépend du contexte.
 
 >[!NOTE]
 >

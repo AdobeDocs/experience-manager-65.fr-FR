@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 role: Developer
 exl-id: 7d6fd230-e477-4286-9fb3-18a3474e3e48
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '2124'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '2123'
+ht-degree: 99%
 
 ---
 
@@ -119,7 +119,7 @@ Après avoir créé le client de service, référencé un fichier DDX, créé un
 
 Le service Assembler renvoie un objet `java.util.Map`, qui peut être obtenu à partir de l’objet `AssemblerResult`, et qui contient les résultats de l’opération. L’objet `java.util.Map` renvoyé contient les documents générés et les éventuelles exceptions.
 
-Le tableau suivant récapitule certaines des valeurs clés et des types d’objets qui peuvent se trouver dans l’objet `java.util.Map` renvoyé.
+Le tableau suivant récapitule certaines des valeurs clés et des types d’objets qui peuvent se trouver dans la variable renvoyée. `java.util.Map` .
 
 <table>
  <thead>

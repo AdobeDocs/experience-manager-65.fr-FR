@@ -1,20 +1,16 @@
 ---
 title: Conditions préalables à l’intégration à Adobe Target
-seo-title: Prerequisites for Integrating with Adobe Target
 description: Découvrez les conditions préalables à l’intégration à Adobe Target.
-seo-description: Find out about the prerequisites for integrating with Adobe Target.
-uuid: 55d87a96-5fe7-4f7e-93c1-fdf7fbb7c971
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: ae4a6e97-c0d7-472d-a25f-b89b1abf4df3
 docset: aem65
 exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 73%
+source-wordcount: '549'
+ht-degree: 65%
 
 ---
 
@@ -32,7 +28,7 @@ Le code client identifie le compte client Adobe Target lors de l’appel du serv
 >
 >Votre compte doit également être activé par l’équipe Target pour utiliser l’intégration.
 >
->Si ce n’est pas encore le cas, contactez l’[Assistance clientèle Adobe](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=fr).
+>Si ce n’est pas le cas, contactez [Adobe de l’assistance clientèle](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=fr).
 
 ## Activation de l’agent de réplication Target {#enabling-the-target-replication-agent}
 
@@ -47,13 +43,13 @@ L’[agent de réplication](/help/sites-deploying/replication.md) Test&amp;Targe
    >
    >Lorsque vous configurez l’agent de réplication Test&amp;Target, sous l’onglet **transport**, l’URI est défini par défaut sur **tnt:///**. Ne remplacez pas cet URI par **https://admin.testandtarget.omniture.com**.
    >
-   >Veuillez noter que si vous tentez de tester la connexion avec **tnt:///**, elle renvoie une erreur. Ce comportement est prévu, car cet URI est destiné à un usage interne uniquement et ne doit pas être utilisé avec **Tester la connexion**.
+   >Si vous essayez de tester la connexion avec **tnt:///**, il renvoie une erreur. Ce comportement est attendu, car cet URI est réservé à un usage interne. N’utilisez pas avec **Tester la connexion**.
 
 ## Sécurisation du nœud de paramètres d’activité {#securing-the-activity-settings-node}
 
 Vous devez sécuriser le nœud de paramètres d’activité **c:ActivitySettings** sur l’instance de publication de sorte qu’il ne soit pas accessible pour les utilisateurs normaux. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
 
-Le nœud **cq:ActivitySettings** est disponible dans CRXDE Lite sous `/content/campaigns/*nameofbrand*`/*sous le nœud jcr:content des activités,* par exemple `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Ce nœud est créé après que vous ciblez un composant.
+Le nœud **cq:ActivitySettings** est disponible dans CRXDE Lite sous `/content/campaigns/*nameofbrand*`/*sous le nœud jcr:content des activités,* par exemple, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Ce nœud est créé après que vous ciblez un composant.
 
 Le nœud **cq:ActivitySettings** sous le nœud jcr:content de l’activité est protégé par les ACL suivantes :
 

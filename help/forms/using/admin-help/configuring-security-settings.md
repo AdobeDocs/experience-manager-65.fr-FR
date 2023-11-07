@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a89ab508-173f-4b1c-88d9-ef944af4d9ae
 feature: PDF Generator
 exl-id: be076477-2681-4570-953d-6c44d3c30843
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1384'
-ht-degree: 53%
+source-wordcount: '1381'
+ht-degree: 52%
 
 ---
 
@@ -102,7 +102,7 @@ du document et de ses paramètres de protection :** permet de restreindre les a
 
 **Aucune :** empêche les utilisateurs de modifier le document, y compris de remplir des champs de formulaire et de signature.
 
-**Insertion, suppression et rotation de pages :** permet aux utilisateurs d’insérer, de supprimer et de faire pivoter des pages, ainsi que de créer des signets et des pages miniatures. Cette option n’est disponible que si un niveau de chiffrement élevé (Acrobat 5.0, 6.0, 7.0 ou 9.0) est sélectionné.
+**Insertion, Suppression Et Rotation De Pages :** Permet aux utilisateurs d’insérer, de supprimer et de faire pivoter des pages, ainsi que de créer des signets et des pages miniatures. Cette option n’est disponible que si un niveau de chiffrement élevé (Acrobat 5.0, 6.0, 7.0 ou 9.0) est sélectionné.
 
 **Remplir des champs de formulaire et signer des 
 champs de signature existants :** permet aux utilisateurs de remplir des formulaires et d’ajouter des signatures numériques. Toutefois, les utilisateurs ne peuvent pas ajouter de commentaires ni créer de champs de formulaire. Cette option n’est disponible que si un niveau de chiffrement élevé (Acrobat 5.0, 6.0, 7.0 ou 9.0) est sélectionné.

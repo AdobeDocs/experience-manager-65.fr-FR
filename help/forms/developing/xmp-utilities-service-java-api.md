@@ -11,10 +11,10 @@ topic-tags: develop
 discoiquuid: 1b229ddf-9350-40b6-8056-dcbe0c5afd5b
 role: Developer
 exl-id: 699a7309-a976-480e-886f-2e466a477348
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '233'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 85%
 
 ---
 
@@ -30,7 +30,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API forte
 
 >[!NOTE]
 >
->Les démarrages rapides situés dans Programmation avec AEM Forms sont basés sur le serveur Forms. Si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les démarrages rapides dans Programmation avec AEM forms sont basés sur le serveur Forms si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques aux fenêtres par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Démarrage rapide (mode SOAP) : exporter des métadonnées XMP à l’aide de l’API Java {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
 
@@ -62,7 +62,7 @@ L’exemple de code suivant permet de récupérer les métadonnées XMP, de les 
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -71,7 +71,7 @@ L’exemple de code suivant permet de récupérer les métadonnées XMP, de les 
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -167,7 +167,7 @@ L’exemple de code suivant permet dʼimporter des métadonnées XMP et dʼenreg
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -176,7 +176,7 @@ L’exemple de code suivant permet dʼimporter des métadonnées XMP et dʼenreg
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *

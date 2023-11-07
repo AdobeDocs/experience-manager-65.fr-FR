@@ -1,18 +1,16 @@
 ---
 title: Appliquer des workflows aux pages de contenu
 description: Lors de la création de pages, vous avez la possibilité d’utiliser des workflows pour exécuter des actions sur vos pages. Il est possible d’appliquer plusieurs workflows.
-uuid: 652d9a23-907d-43ad-9eef-7ab1d07918cd
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 6472dc94-96e0-4286-8f86-d85726cc843c
 docset: aem65
 exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: ht
-source-wordcount: '649'
-ht-degree: 100%
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+workflow-type: tm+mt
+source-wordcount: '645'
+ht-degree: 94%
 
 ---
 
@@ -40,7 +38,6 @@ Les workflows peuvent être démarrés à partir des interfaces suivantes :
 >* [Utilisation des workflows de projet](/help/sites-authoring/projects-with-workflows.md).
 >
 
-
 >[!NOTE]
 >
 >L’administration AEM [dispose de nombreuses méthodes pour démarrer des workflows](/help/sites-administering/workflows-starting.md).
@@ -52,7 +49,7 @@ Vous pouvez démarrer un workflow des deux manières suivantes :
 * [Utiliser l’option Créer de la barre d’outils Sites](#starting-a-workflow-from-the-sites-toolbar).
 * [Utiliser le rail Chronologie de la console Sites](#starting-a-workflow-from-the-timeline).
 
-Dans les deux cas, vous devez :
+Dans les deux cas, vous devez :
 
 * [indiquer les détails du workflow dans l’assistant Créer un workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
 
@@ -103,6 +100,7 @@ Indiquez les détails suivants :
    * **Titre de package**
 
       * Donnez un titre au package afin de l’identifier plus tard.
+
    >[!NOTE]
    >
    >L’option **Conserver le package de workflow** est disponible lorsque le workflow a été configuré pour la [prise en charge multi-ressource](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) et que plusieurs ressources ont été sélectionnées.
@@ -118,13 +116,13 @@ Indiquez les détails suivants :
    * Une ressource existante pour afficher d’autres actions :
 
       * **Inclure les enfants** pour indiquer que les enfants de la ressource seront inclus dans le workflow.
-Une boîte de dialogue s’ouvre pour vous permettre d’affiner la sélection selon les critères suivants :
+Une boîte de dialogue s’ouvre, vous permettant d’affiner la sélection en fonction des éléments suivants :
 
          * Inclure seulement les enfants immédiats
          * Inclure seulement les pages modifiées
          * Inclure seulement les pages déjà publiées
 
-         Tous les enfants spécifiés sont ajoutés à la liste des ressources auxquelles le workflow s’appliquera.
+        Tous les enfants spécifiés sont ajoutés à la liste des ressources auxquelles le workflow s’appliquera.
 
       * **Supprimer la sélection** pour supprimer cette ressource du workflow.
 
@@ -138,6 +136,6 @@ Une boîte de dialogue s’ouvre pour vous permettre d’affiner la sélection s
 
 ## Démarrage d’un workflow à partir de l’éditeur de page {#starting-a-workflow-from-the-page-editor}
 
-Lorsque vous modifiez une page, vous pouvez sélectionner **Informations sur la page** dans la barre d’outils. Le menu déroulant contient l’option **Démarrer dans le workflow**. Cette option ouvre une boîte de dialogue dans laquelle vous pouvez spécifier le workflow requis, ainsi qu’un titre si nécessaire :
+Lorsque vous modifiez une page, vous pouvez sélectionner **Informations sur la page** dans la barre d’outils. Le menu déroulant contient l’option **Démarrer dans le workflow**. Une boîte de dialogue s’ouvre, dans laquelle vous pouvez spécifier le processus requis, ainsi qu’un titre si nécessaire :
 
 ![wf-54](assets/wf-54.png)

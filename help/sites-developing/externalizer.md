@@ -7,9 +7,9 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '490'
 ht-degree: 50%
 
 ---
@@ -20,7 +20,7 @@ Dans Adobe Experience Manager (AEM), la variable **Externalizer** est un service
 
 Une instance ne peut pas connaître son URL visible en externe si elle s’exécute derrière une couche Web et il arrive qu’un lien doive être créé en dehors d’une étendue de demande. Dès lors, ce service fournit un emplacement centralisé pour configurer ces URL externes et les générer.
 
-Cette page explique comment configurer la variable **Externalizer** et comment l’utiliser. Pour plus d’informations, reportez-vous au [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
+Cette page explique comment configurer la variable **Externalizer** et comment l’utiliser. Pour plus d’informations, voir [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Configuration du service Externalizer {#configuring-the-externalizer-service}
 
