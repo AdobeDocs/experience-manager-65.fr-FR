@@ -1,17 +1,15 @@
 ---
 title: Configurer les paramètres du service
 description: Découvrez comment configurer les paramètres du service. Vous pouvez utiliser la page Gestion des services pour configurer les paramètres de chacun des services faisant partie d’AEM forms.
-uuid: e95425a4-62f6-473e-b21b-d081c432e02d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '10694'
-ht-degree: 56%
+source-wordcount: '10692'
+ht-degree: 55%
 
 ---
 
@@ -223,7 +221,7 @@ Les paramètres suivants sont disponibles pour le service Encryption.
 
 >[!NOTE]
 >
->utilisez l’authentification simple (nom d’utilisateur et mot de passe) uniquement lorsque la connexion est protégée via SSL (utilisation de LDAPS).
+utilisez l’authentification simple (nom d’utilisateur et mot de passe) uniquement lorsque la connexion est protégée via SSL (utilisation de LDAPS).
 
 **Mode de compatibilité :**
 
@@ -259,7 +257,7 @@ Les paramètres ci-dessous sont disponibles pour le service Generate PDF.
 
 **Activer les conversions AutoCAD basées sur Acrobat (Windows uniquement) :** lorsque ce paramètre est défini sur « true », le service Generate PDF utilise Acrobat X Pro pour toutes les conversions de fichiers DWG en PDF. Ce paramètre est utile uniquement si AutoCAD n’est pas installé sur le serveur ou si le mécanisme de conversion AutoCAD ne peut pas convertir correctement les fichiers.
 
-**Expressions régulières pour trouver les caractères spéciaux interdits dans le nom d’utilisateur (Windows uniquement) :** indique les caractères qui interfèrent avec les opérations Exporter un PDF et Optimiser un PDF lorsque ces caractères apparaissent dans le nom d’un utilisateur.
+**Expressions Régulières Pour Trouver Des Caractères Spéciaux Interdits Dans Le Nom D’Utilisateur (Windows Uniquement) :** Indique les caractères qui interfèrent avec les opérations d’Export PDF et de Optimize PDF lorsque les caractères apparaissent dans le nom d’un utilisateur.
 
 **Taille du pool ImageToPDF :** taille du pool du convertisseur Image en PDF (Java pur) par défaut dans le service Generate PDF. Ce paramètre contrôle le nombre maximal de conversions Image en PDF qui peuvent être exécutées simultanément par le service Generate PDF. La valeur par défaut de ce paramètre (recommandée pour les systèmes à un processeur) est 3. Vous pouvez augmenter cette valeur pour les systèmes à plusieurs processeurs.
 
@@ -431,7 +429,7 @@ Les paramètres suivants sont disponibles pour le service de configuration Share
 
 >[!NOTE]
 >
->Si la prise en charge hors connexion a été activée et que vous la désactivez ensuite, les profils d’approvisionnement des utilisateurs sont mis à jour immédiatement ou dès qu’ils se connectent. Si un utilisateur a travaillé hors connexion, toutes les tâches en attente sont renvoyées à leur liste des tâches et tous les éléments dans leur file d’attente, y compris les formulaires en attente, les tâches et les formulaires contenant des erreurs de validation sont supprimés de la file d’attente.
+Si la prise en charge hors ligne a été activée, puis que vous la désactivez, les profils d’approvisionnement des utilisateurs sont mis à jour immédiatement ou dès qu’ils sont en ligne. Si un utilisateur a travaillé hors connexion, toutes les tâches en attente sont renvoyées à leur liste des tâches et tous les éléments dans leur file d’attente, y compris les formulaires en attente, les tâches et les formulaires contenant des erreurs de validation sont supprimés de la file d’attente.
 
 **Android :** autorise les appareils Android à se connecter au serveur.
 
@@ -668,7 +666,7 @@ Validation Of Signatures :** lorsque cette option est sélectionnée, les infor
 
 **Go Online :** indique s’il convient de se connecter pour effectuer une vérification de la révocation. La valeur par défaut est true.
 
-**Ignore the response’s thisUpdate and nextUpdate times :** indique si les heures thisUpdate et nextUpdate de la réponse doivent être ignorées, pour les empêcher d’avoir une incidence négative sur la validité de la réponse. La valeur par défaut est false. 
+**Ignorez les heures thisUpdate et nextUpdate de la réponse :** Indique s’il faut ignorer les heures thisUpdate et nextUpdate de la réponse, ce qui empêche ces heures d’avoir un effet négatif sur la validité de la réponse. La valeur par défaut est false. 
 
 **Allow OCSPNoCheck extension :** indique si l’extension OCSPNoCheck est autorisée dans le certificat de signature de la réponse. La valeur par défaut est true.
 
@@ -737,7 +735,7 @@ Si le chemin d’accès n’est pas absolu mais relatif, le dossier est créé d
 
 >[!NOTE]
 >
->Plus les dossiers de résultats sont petits, plus les performances de Watched Folder augmentent. Par exemple, si la charge estimée pour le dossier de contrôle est de 1 000 fichiers par heure, utilisez un modèle de type `result/%Y%M%D%H`, afin qu’un nouveau sous-dossier soit créé toutes les heures. Si la charge est moindre (par exemple, 1 000 fichiers par jour), vous pouvez utiliser un modèle de type `result/%Y%M%D`.
+Plus les dossiers de résultats sont petits, plus les performances de Watched Folder augmentent. Par exemple, si la charge estimée pour le dossier de contrôle est de 1 000 fichiers par heure, utilisez un modèle de type `result/%Y%M%D%H`, afin qu’un nouveau sous-dossier soit créé toutes les heures. Si la charge est moindre (par exemple, 1 000 fichiers par jour), vous pouvez utiliser un modèle de type `result/%Y%M%D`.
 
 **Dossier des fichiers traités :** le nom par défaut du dossier des fichiers traités dans le dossier de contrôle.
 
@@ -819,7 +817,7 @@ Les profils de sécurité par défaut sont installés. Ils peuvent ensuite être
 
    >[!NOTE]
    >
-   >Les services de rendu et d’envoi utilisés avec les variables xfaForm, Document Form et Form sont toujours exécutés à l’aide du compte utilisateur système.
+   Les services de rendu et d’envoi utilisés avec les variables xfaForm, Document Form et Form sont toujours exécutés à l’aide du compte utilisateur système.
 
 1. Cliquez sur Ajouter une entité de sécurité pour spécifier les autorisations dont disposent les utilisateurs et les groupes pour ce service.
 1. L’écran Sélectionner une entité de sécurité affiche les utilisateurs et les groupes configurés dans User Management. Si l’utilisateur ou le groupe que vous souhaitez ne s’affiche pas, utilisez la fonction de recherche pour le trouver. Cliquez sur le nom d’un utilisateur ou d’un groupe.

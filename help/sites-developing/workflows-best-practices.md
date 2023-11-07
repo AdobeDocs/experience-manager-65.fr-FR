@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1923'
+source-wordcount: '1921'
 ht-degree: 23%
 
 ---
@@ -261,7 +261,7 @@ Enregistrer une session :
 
 Il y a un écouteur responsable de tous les [lanceurs de workflow](/help/sites-administering/workflows-starting.md#workflows-launchers) qui sont enregistrés :
 
-* Il écoute les modifications de tous les chemins spécifiés dans les propriétés d’extension de nom de fichier des autres lanceurs.
+* Il écoute les modifications à tous les chemins spécifiés dans les propriétés d’extension de nom de fichier des autres lanceurs.
 * Lorsqu’un événement est distribué, le moteur de workflow évalue chaque lanceur pour déterminer s’il doit s’exécuter.
 
 La création d’un trop grand nombre de lanceurs ralentit l’exécution du processus d’évaluation.

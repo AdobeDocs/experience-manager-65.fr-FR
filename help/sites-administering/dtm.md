@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
 exl-id: 1e0821f5-627f-4262-ba76-62303890e112
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2206'
+source-wordcount: '2205'
 ht-degree: 69%
 
 ---
@@ -260,7 +260,7 @@ Utilisez la procédure suivante pour associer une page et les descendants à une
 
 1. Utilisez le menu déroulant Tag Management dynamique pour sélectionner votre configuration, puis cliquez sur OK.
 
-Utilisez la procédure suivante pour remplacer l’association de configuration héritée pour une page. Le remplacement affecte la page et tous ses descendants.
+Utilisez la procédure suivante pour remplacer l’association de configuration héritée pour une page. Le remplacement affecte la page et tous les descendants de la page.
 
 1. Ouvrez la page dans l’IU classique.
 1. Utilisez Sidekick pour ouvrir les propriétés de la page.

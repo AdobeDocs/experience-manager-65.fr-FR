@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2578'
+source-wordcount: '2577'
 ht-degree: 96%
 
 ---
@@ -149,7 +149,7 @@ Les objets suivants sont fournis en tant que paramètres de la méthode `execute
 
 * La valeur reset indique le mode de réinitialisation du déploiement.
 
-À partir de ces objets, vous pouvez obtenir toutes les informations sur la `LiveCopy`. Vous pouvez également utiliser les objets `Resource` pour obtenir les objets `ResourceResolver`, `Session` et `Node`. Ces objets sont utiles pour manipuler le contenu du référentiel :
+À partir de ces objets, vous pouvez obtenir toutes les informations sur la variable `LiveCopy`. Vous pouvez également utiliser les objets `Resource` pour obtenir les objets `ResourceResolver`, `Session` et `Node`. Ces objets sont utiles pour manipuler le contenu du référentiel :
 
 Dans la première ligne du code suivant, source est l’objet `Resource` de la page source :
 

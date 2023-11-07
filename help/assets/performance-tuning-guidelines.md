@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2740'
-ht-degree: 95%
+source-wordcount: '2739'
+ht-degree: 94%
 
 ---
 
@@ -153,7 +153,7 @@ Par exemple, après l’exécution d’un grand nombre de workflows transitoires
 
 ### Tâches parallèles maximales    {#maximum-parallel-jobs}
 
-Par défaut, [!DNL Experience Manager] exécute un nombre maximal de tâches parallèles qui est égal au nombre de processeurs sur le serveur. Le problème avec ce paramètre est que pendant les périodes de charge importante, tous les processeurs sont occupés par des workflows [!UICONTROL Ressource de mise à jour de gestion des ressources numériques], ce qui ralentit la réactivité de l’interface utilisateur et empêche [!DNL Experience Manager] d’exécuter d’autres processus qui assurent la stabilité et les performances du serveur. En tant que bonne pratique, définissez cette valeur sur la moitié des processeurs disponibles sur le serveur en procédant comme suit :
+Par défaut, [!DNL Experience Manager] exécute un nombre maximal de tâches parallèles qui est égal au nombre de processeurs sur le serveur. Le problème avec ce paramètre est que pendant les périodes de charge importante, tous les processeurs sont occupés par [!UICONTROL Ressource de mise à jour de gestion des actifs numériques] workflows, ralentissement de la réactivité de l’interface utilisateur et prévention [!DNL Experience Manager] d’exécuter d’autres processus qui assurent la stabilité et les performances du serveur. En tant que bonne pratique, définissez cette valeur sur la moitié des processeurs disponibles sur le serveur en procédant comme suit :
 
 1. Dans l’Auteur d’[!DNL Experience Manager], accédez à `https://[aem_server]:[port]/system/console/slingevent`.
 

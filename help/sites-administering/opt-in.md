@@ -1,18 +1,14 @@
 ---
 title: Souscrire à Adobe Analytics et Adobe Target
-seo-title: Opting Into Adobe Analytics and Adobe Target
 description: Découvrez comment souscrire à Adobe Analytics et Adobe Target.
-seo-description: Learn how to opt into Adobe Analytics and Adobe Target.
-uuid: 9090a0f3-d373-4826-aa68-6aa82c0fbfbb
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: de466511-d82f-4ddb-8f6a-7ca9240fdeab
 exl-id: 3603e929-2aa1-4c25-ad9a-b10ff52a59f4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1305'
 ht-degree: 63%
 
 ---
@@ -114,7 +110,7 @@ Le fichier de propriétés est un fichier texte appelé marketingcloud.propertie
 * target.email : adresse électronique que vous utilisez pour authentifier votre compte Target.
 * target.password : mot de passe associé à votre adresse électronique.
 
-Les propriétés et les valeurs sont séparées par des signes égal (=). Les propriétés d’Analytics sont dotées du préfixe `analytics`, et les propriétés de Target du préfixe `target`. Pour configurer un service, fournissez les valeurs de toutes ses propriétés. Si vous ne souhaitez pas configurer de service, ne fournissez aucune valeur pour ce service.
+Les propriétés et les valeurs sont séparées par des signes égal (=). Les propriétés d’Analytics sont dotées du préfixe `analytics`, et les propriétés de Target du préfixe `target`. Pour configurer un service, indiquez des valeurs pour toutes les propriétés de ce service. Si vous ne souhaitez pas configurer de service, ne fournissez aucune valeur pour ce service.
 
 Le fichier `.properties` de l’exemple suivant inclut les valeurs de propriétés afin de créer une configuration cloud pour Analytics :
 
@@ -191,8 +187,7 @@ Les paramètres que vous envoyez dépendent des éléments suivants :
   curl -v -u admin:admin -X POST -d"automaticProvisioning=true&servicename=target&servicename=analytics&path=/content/we-retail" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
   ```
 
-* Si vous ne souhaitez pas utiliser la variable **marketingcloud.properties** vous devrez alors envoyer les informations d’identification et les paramètres, par exemple :
-
+* Si vous ne souhaitez pas utiliser la variable **marketingcloud.properties** vous devez alors envoyer les informations d’identification et les paramètres. Par exemple :
    * automaticProvisioning= `true`
    * serviceName= `analytics|target`
    * path=chemin d’une page AEM à laquelle joindre les configurations de services cloud créées ; plusieurs chemins peuvent être définis.

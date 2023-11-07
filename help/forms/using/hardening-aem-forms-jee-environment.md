@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '7665'
+source-wordcount: '7661'
 ht-degree: 97%
 
 ---
@@ -270,7 +270,7 @@ Configuration Manager a utilisé une servlet déployée sur votre serveur d’ap
 
 Configuration Manager vous permet de télécharger des informations d’identification d’extensions Acrobat Reader DC dans le Trust Store d’AEM Forms sur JEE. Cela signifie que l’accès au service d’informations d’identification du Trust Store sur les protocoles distants (SOAP et EJB) a été activé par défaut. Cet accès n’est plus nécessaire après avoir téléchargé les informations d’identification des droits en utilisant Configuration Manager, ou si vous décidez d’utiliser la console d’administration ultérieurement pour gérer les informations d’identification.
 
-Vous pouvez désactiver l’accès distant à tous les services du Trust Store en suivant les étapes de la section [Désactivation des accès distants non indispensables à des services](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
+Vous pouvez désactiver l’accès distant à tous les services Trust Store en suivant les étapes de la section . [Désactivation de l’accès distant non essentiel aux services](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
 
 **Désactivation de tous les accès anonymes non indispensables**
 
@@ -954,7 +954,7 @@ Pour plus d’informations sur les ports WebSphere requis par AEM Forms sur JEE,
 
 ### Configuration de SSL {#configuring-ssl}
 
-En vous référant à l’architecture physique décrite dans la section [Architecture physique d’AEM Forms sur JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), configurez SSL pour toutes les connexions que vous prévoyez d’utiliser. Spécifiquement, toutes les connexions SOAP doivent être établies via SSL pour empêcher que les informations d’identification des utilisateurs soient exposées sur un réseau.
+Référence à l’architecture physique décrite dans la section [Architecture physique d’AEM Forms on JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), vous devez configurer SSL pour toutes les connexions que vous prévoyez d’utiliser. Spécifiquement, toutes les connexions SOAP doivent être établies via SSL pour empêcher que les informations d’identification des utilisateurs soient exposées sur un réseau.
 
 Pour obtenir des instructions sur la manière de configurer SSL sur JBoss, WebLogic et WebSphere, consultez « Configuration de SSL » dans l’[aide d’administration](https://www.adobe.com/go/learn_aemforms_admin_64_fr).
 

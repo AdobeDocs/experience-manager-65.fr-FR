@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '6946'
+source-wordcount: '6945'
 ht-degree: 6%
 
 ---
@@ -102,7 +102,7 @@ Outre les tâches de maintenance standard de Adobe Experience Manager (AEM), vou
 
 ### Personnel correctement formé {#appropriately-trained-staff}
 
-Assurez-vous que votre équipe est composée du personnel disposant de la formation appropriée. Pour les équipes de projet, il est recommandé de disposer de tous les éléments suivants :
+Assurez-vous que votre équipe est composée du personnel disposant de la formation appropriée. Pour les équipes de projet, il est recommandé d’avoir tous les éléments suivants :
 
 * au moins un développeur en chef certifié AEM ;
 * au moins un architecte certifié AEM ;

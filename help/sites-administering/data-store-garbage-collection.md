@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1885'
-ht-degree: 67%
+source-wordcount: '1884'
+ht-degree: 66%
 
 ---
 
@@ -45,7 +45,7 @@ Si le référentiel a été configuré avec un entrepôt de données externe, le
 
 Le nettoyeur de la mémoire d’entrepôt de données prend d’abord note de l’horodatage actuel lorsque le processus commence. La collecte est ensuite effectuée à l’aide d’un algorithme de modèle de marquage/balayage à plusieurs passages.
 
-Lors de la première phase, le nettoyeur de la mémoire d’entrepôt de données traverse entièrement le contenu du référentiel. Pour chaque objet de contenu qui contient une référence à un enregistrement d’entrepôt de données, il localise le fichier dans le système de fichiers, exécutant une mise à jour de métadonnées (en modifiant l’attribut « dernière modification » ou MTIME). À ce stade, les fichiers accessibles par cette phase deviennent plus récents que l’horodatage de ligne de base initial.
+Lors de la première phase, le collecteur de mémoire d’entrepôt de données effectue une traversée complète de tout le contenu du référentiel. Pour chaque objet de contenu qui contient une référence à un enregistrement d’entrepôt de données, il localise le fichier dans le système de fichiers, exécutant une mise à jour de métadonnées (en modifiant l’attribut « dernière modification » ou MTIME). À ce stade, les fichiers accessibles par cette phase deviennent plus récents que l’horodatage de ligne de base initial.
 
 Lors de la seconde phase, le nettoyeur de la mémoire d’entrepôt de données traverse la structure de répertoires physique d’un entrepôt de données à peu près comme une opération de recherche. Il examine l’attribut &quot;last modified&quot; ou MTIME du fichier et détermine ce qui suit :
 

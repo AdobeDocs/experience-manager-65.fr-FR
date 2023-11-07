@@ -2,10 +2,10 @@
 title: Parcours d’architecte de contenu découplé Adobe Experience Manager
 description: Cette section présente les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager et explique comment modéliser le contenu de votre projet.
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 91%
+source-wordcount: '730'
+ht-degree: 89%
 
 ---
 
@@ -29,7 +29,7 @@ Depuis l’émergence des systèmes de gestion de contenu (CMS) à grande échel
 
 ![CMS full stack classique](/help/journey-headless/developer/assets/full-stack.png)
 
-Dans un CMS full stack, toutes les fonctionnalités de manipulation de votre contenu se trouvent dans le système. Les fonctionnalités de ce système constituent différents composants de la pile CMS. Une solution full stack présente de nombreux avantages.
+Dans un CMS en pile complète, toutes les fonctionnalités de manipulation de contenu se trouvent dans le CMS. Les fonctionnalités de ce système constituent différents composants de la pile CMS. Une solution full stack présente de nombreux avantages.
 
 * Il n’y a qu’un seul système à maintenir.
 * Le contenu est géré de manière centralisée.

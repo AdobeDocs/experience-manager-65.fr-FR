@@ -1,29 +1,25 @@
 ---
 title: Configurer SSL pour JBoss Application Server
-seo-title: Configuring SSL for JBoss Application Server
 description: Découvrez comment configurer SSL pour JBoss Application Server.
-seo-description: Learn how to configure SSL for JBoss Application Server.
-uuid: 7c13cf00-ea89-4894-a4fc-aaeec7ae9f66
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 exl-id: 8eb4f691-a66b-498e-8114-307221f63718
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
-source-wordcount: '908'
-ht-degree: 100%
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+workflow-type: tm+mt
+source-wordcount: '907'
+ht-degree: 74%
 
 ---
 
 # Configurer SSL pour JBoss Application Server {#configuring-ssl-for-jboss-application-server}
 
-Pour configurer SSL sur JBoss Application Server, vous avez besoin d’informations d’identification SSL pour l’authentification. Vous pouvez utiliser l’outil Java keytool pour créer des informations d’identification ou demander des informations d’identification à une autorité de certification (CA) et les importer. Vous devez ensuite activer SSL sur JBoss.
+Pour configurer SSL sur JBoss Application Server, vous avez besoin d’informations d’identification SSL pour l’authentification. Vous pouvez utiliser l’outil Java keytool pour créer des informations d’identification ou demander et importer des informations d’identification à partir d’une autorité de certification (CA). Vous devez ensuite activer SSL sur JBoss.
 
-Pour exécuter l’outil keytool, il suffit de saisir une commande qui comprend toutes les informations requises pour créer le fichier de stockage des clés.
+Vous pouvez exécuter keytool en utilisant une seule commande qui comprend toutes les informations nécessaires à la création du fichier de stockage des clés.
 
-Dans cette procédure :
+Dans cette procédure :
 
 * `[appserver root]` correspond au répertoire racine du serveur d’applications exécutant AEM Forms.
 * `[type]` correspond à un nom de dossier qui varie selon le type d’installation réalisé.
@@ -47,23 +43,23 @@ Dans cette procédure :
 1. Copiez le fichier *nom_stockage_clés*.keystore dans le répertoire `[appserver root]/server/[type]/conf` en saisissant l’une des commandes suivantes :
 
    * (Serveur unique Windows) `copy` `keystorename.keystore[appserver root]\standalone\configuration`
-   * (Grappe de serveurs Windows) Copiez `keystorename.keystore[appserver root]\domain\configuration`
+   * (Cluster de serveurs Windows) Copiez `keystorename.keystore[appserver root]\domain\configuration`
    * (Serveur unique Linux) `cp keystorename.keystore [appserver root]/standalone/configuration`
-   * (Grappe de serveurs Linux) `cp <em>keystorename</em>.keystore<em>[appserver root]</em>/domain/configuration`
+   * (Cluster de serveurs Linux) `cp <em>keystorename</em>.keystore<em>[appserver root]</em>/domain/configuration`
 
 
 1. Exportez le fichier de certificat en exécutant la commande suivante :
 
    * (Serveur unique) `keytool -export -alias "AEMForms Cert" -file AEMForms_cert.cer -keystore [appserver root]/standalone/configuration/keystorename.keystore`
-   * (Grappe de serveurs) `keytool -export -alias "AEMForms Cert" -file AEMForms_cert.cer -keystore [appserver root]/domain/configuration/keystorename.keystore`
+   * (Cluster de serveurs) `keytool -export -alias "AEMForms Cert" -file AEMForms_cert.cer -keystore [appserver root]/domain/configuration/keystorename.keystore`
 
 1. Saisissez le *mot_de_passe_clés* lorsque vous êtes invité à saisir un mot de passe.
 1. Copiez le fichier AEMForms_cert.cer dans le répertoire *[racine du serveur d’applications]\conf* en saisissant la commande suivante :
 
    * (Serveur unique Windows) `copy AEMForms_cert.cer [appserver root]\standalone\configuration`
-   * (Grappe de serveurs Windows) `copy AEMForms_cert.cer [appserver root]\domain\configuration`
+   * (Cluster de serveurs Windows) `copy AEMForms_cert.cer [appserver root]\domain\configuration`
    * (Serveur unique Linux) `cp AEMForms _cert.cer [appserver root]\standalone\configuration`
-   * (Grappe de serveurs Linux) `cp AEMForms _cert.cer [appserver root]\domain\configuration`
+   * (Cluster de serveurs Linux) `cp AEMForms _cert.cer [appserver root]\domain\configuration`
 
 1. Affichez le contenu du certificat en exécutant la commande suivante :
 
@@ -79,18 +75,18 @@ Dans cette procédure :
 
    `keytool -import -alias "AEMForms Cert" -file`*AEMForms_cert* `.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
 
-1. Saisissez `changeit` comme mot de passe. Il s’agit du mot de passe par défaut d’une installation Java, mais l’administrateur système peut l’avoir modifié.
-1. À l’invite `Trust this certificate? [no]` :, sasissez `yes`. La confirmation « Certificate was added to keystore » s’affiche.
-1. Si vous vous connectez via SSL à partir de Workbench, vous devez installer le certificat sur le serveur Workbench.
+1. Saisissez `changeit` comme mot de passe. Il s’agit du mot de passe par défaut d’une installation Java, mais l’administration système peut l’avoir modifié.
+1. À l’invite `Trust this certificate? [no]` :, sasissez `yes`. La confirmation &quot;Le certificat a été ajouté au KeyStore&quot; s’affiche.
+1. Si vous vous connectez via SSL depuis Workbench, installez le certificat sur l’ordinateur Workbench.
 1. Dans un éditeur de texte, ouvrez les fichiers suivants pour les modifier :
 
    * Serveur unique : `[appserver root]`/standalone/configuration/lc_&lt;dbname/turnkey>.xml
 
-   * Grappe de serveurs : `[appserver root]`/domain/configuration/host.xml
+   * Cluster de serveurs : `[appserver root]`/domain/configuration/host.xml
 
-   * Grappe de serveurs : `[appserver root]`/domain/configuration/domain_&lt;dbname>.xml
+   * Cluster de serveurs : `[appserver root]`/domain/configuration/domain_&lt;dbname>.xml
 
-1. &#x200B;
+1. 
    * **Pour un serveur unique,** ajoutez l’élément suivant dans le fichier lc_&lt;dbaname/tunkey>.xml après la section &lt;security-realms> :
 
    ```xml
@@ -113,7 +109,7 @@ Dans cette procédure :
    <https-listener name="default-secure" socket-binding="https" security-realm="SSLRealm"/>
    ```
 
-   * **Pour une grappe de serveurs,** ajoutez ce qui suit dans [racine du serveur d’applications]\domain\configuration\host.xml sur tous les nœuds, après la section &lt;security-realms> :
+   * **Pour un cluster de serveurs,** ajoutez ce qui suit dans [racine du serveur d’applications]\domain\configuration\host.xml sur tous les nœuds, après la section &lt;security-realms> :
 
    ```xml
    <security-realm name="SSLRealm">
@@ -125,7 +121,7 @@ Dans cette procédure :
    </security-realm>
    ```
 
-   Sur le nœud principal de la grappe de serveurs, dans [racine du serveur d’applications]\domain\configuration\domain_ &lt;dbname>.xml, recherchez la section &lt;server> située après le code suivant :
+   Sur le nœud principal du cluster de serveurs, dans [racine du serveur d’applications]\domain\configuration\domain_ &lt;dbname>.xml, recherchez la section &lt;server> située après le code suivant :
 
    `<http-listener name="default" socket-binding="http" redirect-socket="https" max-post-size="104857600"/>`
 
@@ -138,13 +134,14 @@ Dans cette procédure :
 1. Remplacez la valeur des attributs `keystoreFile` et `keystorePass` par le mot de passe du fichier de stockage des clés que vous avez spécifié lors de la création dudit fichier.
 1. Redémarrez le serveur d’applications :
 
-   * Pour les installations clé en main :
+   * Pour les installations clé en main :
 
-      * Dans le Panneau de configuration de Windows, cliquez sur Outils d’administration puis sur Services.
+      * Dans le Panneau de Contrôle Windows, cliquez sur Outils d’administration, puis sur Services.
       * Sélectionnez JBoss pour les formulaires Adobe Experience Manager.
-      * Sélectionnez Action > Arrêter.
-      * Attendez que la mention indiquant l’arrêt du service s’affiche.
-      * Sélectionnez Action > Démarrer.
+      * Sélectionnez Action > Arrêter.
+      * Attendez que l’état du service s’affiche comme arrêté.
+      * Sélectionnez Action > Démarrer.
+
    * Pour les installations de JBoss configurées manuellement ou préconfigurées par Adobe :
 
       * À partir d’une invite de commande, accédez à *`[appserver root]`*\bin.
@@ -152,19 +149,18 @@ Dans cette procédure :
 
          * (Windows) `shutdown.bat -S`
          * (Linux) `./shutdown.sh -S`
-      * Attendez l’arrêt complet du processus JBoss (il rend la main au terminal dans lequel il a été démarré).
-      * Démarrez le serveur en saisissant la commande suivante :
+
+      * Patientez jusqu’à ce que le processus JBoss soit complètement arrêté (lorsque le processus JBoss renvoie le contrôle au terminal dans lequel il a été démarré).
+      * Démarrez le serveur en saisissant la commande suivante :
 
          * (Windows) `run.bat -c <profile>`
          * (Linux) `./run.sh -c <profile>`
 
-
-
 1. Pour accéder à la console d’administration en utilisant SSL, saisissez `https://[host name]:'port'/adminui` dans un navigateur Web :
 
-   Le port SSL par défaut pour JBoss est 8443. A partir de là, spécifiez ce port lors de l’accès à AEM forms.
+   Le port SSL par défaut pour JBoss est 8443. À partir de là, spécifiez ce port lors de l’accès à AEM forms.
 
-## Demande d’informations d’identification à une autorité de certification {#request-a-credential-from-a-ca}
+## Demande d’informations d’identification auprès d’une autorité de certification {#request-a-credential-from-a-ca}
 
 1. Dans une invite de commande, accédez à *[JAVA_HOME]*/bin et saisissez la commande suivante pour créer le fichier de stockage des clés et la clé :
 
@@ -178,7 +174,7 @@ Dans cette procédure :
 
    `keytool -certreq -alias` « AEMForms Cert » `-keystore`*nom_stockage_clés* `.keystore -file`*AEMFormsRequest.csr*
 
-1. Dès que votre demande de certificat est remplie, passez à la procédure suivante.
+1. Une fois votre demande de fichier de certificat remplie, procédez comme suit.
 
 ## Utilisation d’informations d’identification obtenues auprès d’une autorité de certification pour activer SSL {#use-a-credential-obtained-from-a-ca-to-enable-ssl}
 
@@ -199,7 +195,6 @@ Dans cette procédure :
    >[!NOTE]
    >
    >* Remplacez `[JAVA_HOME]` par le répertoire dans lequel le JDK est installé, puis remplacez le texte en italique par des valeurs correspondant à votre environnement.
-   >* le certificat signé par l’autorité de certification et importé va remplacer un certificat public autosigné s’il existe.
+   >* Le certificat signé par l’autorité de certification importé remplacera un certificat public autosigné s’il existe.
 
-
-1. Suivez les étapes 13 à 18 de la section Création d’informations d’identification SSL.
+1. Suivez les étapes 13 à 18 de la section Création d’informations d’identification SSL.

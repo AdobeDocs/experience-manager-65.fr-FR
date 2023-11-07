@@ -2,10 +2,10 @@
 title: Prise en main de la traduction découplée dans AEM
 description: Découvrez comment organiser votre contenu découplé et comment fonctionnent les outils de traduction AEM.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1490'
-ht-degree: 93%
+source-wordcount: '1489'
+ht-degree: 92%
 
 ---
 
@@ -93,7 +93,7 @@ Notez le contenu du champ **Nom de la propriété** pour tous les champs qui doi
 
 >[!TIP]
 >
->En règle générale, l’architecte de contenu met à la disposition du spécialiste de la traduction les **Noms de la propriété** de tous les champs devant être traduits. Ces noms de champ sont nécessaires pour les étapes suivantes du parcours. Les étapes précédentes sont détaillées pour une meilleure compréhension du spécialiste de la traduction.
+>En règle générale, l’architecte de contenu met à la disposition du spécialiste de traduction les éléments suivants : **Nom de la propriété** de tous les champs requis pour la traduction. Ces noms de champ sont nécessaires pour les étapes suivantes du parcours. Les étapes précédentes sont détaillées pour une meilleure compréhension du spécialiste de la traduction.
 
 ### Fragments de contenu {#content-fragments}
 

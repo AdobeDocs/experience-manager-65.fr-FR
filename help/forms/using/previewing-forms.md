@@ -9,10 +9,10 @@ topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
 feature: Adaptive Forms
 exl-id: aed5703e-4fe6-4839-9657-c660ac48521e
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 29%
+source-wordcount: '420'
+ht-degree: 30%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 29%
 
 ## Présentation {#overview}
 
-Dans AEM Forms, vous pouvez prévisualiser les formulaires et documents présents dans le référentiel. L’aperçu permet de savoir exactement à quoi les formulaires ressemblent et se comportent lorsqu’ils sont publiés pour les utilisateurs finaux.
+Dans AEM Forms, vous pouvez prévisualiser les formulaires et documents présents dans le référentiel. L’aperçu permet de savoir exactement à quoi ressemblent les formulaires lorsqu’ils sont publiés pour les utilisateurs finaux.
 
 Lors de la prévisualisation de formulaires, ils sont rendus dans l’interface interactive et l’utilisateur peut les remplir avec des données. Lors de la prévisualisation de documents, ils sont rendus en mode non interactif et l’utilisateur peut uniquement afficher le document. Pour les formulaires, une option supplémentaire d’aperçu personnalisé est disponible. Grâce à cette option, vous pouvez prévisualiser le formulaire à l’aide des données d’un fichier XML. Les données remplissent certains ou tous les champs du formulaire prévisualisé.
 
@@ -39,7 +39,7 @@ Le tableau ci-dessous répertorie les options d’aperçu disponibles pour les d
    <td>Aperçu du PDF</td>
   </tr>
   <tr>
-   <td>Formulaire PDF</td>
+   <td>Formulaire de PDF</td>
    <td>Aperçu au format PDF et aperçu avec des données<br /> </td>
   </tr>
   <tr>
@@ -65,13 +65,13 @@ Le tableau ci-dessous répertorie les options d’aperçu disponibles pour les d
 
    Vous avez le choix entre :
 
-   * Aperçu en tant que HTML
+   * Prévisualiser au format HTML
    * Aperçu avec des données
    * Aperçu au format PDF (disponible pour les modèles de formulaire)
 
 ## Aperçu avec des données {#preview-with-data}
 
-Lorsque vous sélectionnez **Aperçu avec données**, vous pouvez voir à quoi ressemble le formulaire avec des données réelles saisies. L&#39;option Aperçu avec données permet de télécharger un fichier XML contenant des exemples de données utilisateur. Les exemples de données utilisateur sont utilisés pour remplir le formulaire d’aperçu au format que vous choisissez.
+Lorsque vous sélectionnez **Aperçu avec des données**, vous pouvez voir à quoi ressemble le formulaire avec des données réelles saisies. L&#39;option Aperçu avec données permet de télécharger un fichier XML contenant des exemples de données utilisateur. Les exemples de données utilisateur sont utilisés pour remplir le formulaire d’aperçu au format que vous choisissez.
 
 1. Sélectionnez une ressource, cliquez sur Aperçu ![aem6forms_preview](assets/aem6forms_preview.png), puis sélectionnez **Aperçu avec des données**.
 1. Dans la boîte de dialogue Aperçu du formulaire, fournissez FormData en tant que fichier XML. Cliquez sur Aperçu pour effectuer le rendu du formulaire avec les données fusionnées du code XML.

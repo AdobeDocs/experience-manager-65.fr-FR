@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1440'
+source-wordcount: '1439'
 ht-degree: 55%
 
 ---
@@ -89,7 +89,7 @@ Plusieurs composants d’AEM Commerce utilisent ces noms de variables.
 1. Assurez-vous que le RSID sélectionné est celui utilisé lors des étapes précédentes.
 1. Dans **Rapports** (dans la partie gauche de la page), sélectionnez **Conversion personnalisée**, puis **Conversion personnalisée 1-10** et sélectionnez la variable correspondant à `eVar7`.
 
-1. Selon la version d’Adobe Analytics que vous utilisez, vous devez attendre en moyenne 45 minutes que le rapport soit mis à jour avec le terme de recherche utilisé. par exemple, aubergine dans l&#39;exemple
+1. Selon la version d’Adobe Analytics que vous utilisez, vous devez attendre en moyenne 45 minutes que le rapport soit mis à jour avec le terme de recherche utilisé ; par exemple, aubergine dans l’exemple.
 
 ## Utilisation de l’outil de recherche de contenu (cf#) avec les frameworks Adobe Analytics {#using-the-content-finder-cf-with-adobe-analytics-frameworks}
 
@@ -100,7 +100,7 @@ Au départ, lorsque vous ouvrez un framework Adobe Analytics, l’outil de rech
 * Événements
 
 Lorsqu’un RSID est sélectionné, toutes les variables appartenant à ce RSID sont ajoutées à la liste.\
-Le `cf#` est nécessaire pour mapper les variables Analytics aux variables CQ présentes sur les différents composants de suivi. Consultez Configuration d’un framework pour le suivi de base.
+La variable `cf#` est nécessaire pour mapper les variables Analytics aux variables CQ présentes sur les différents composants de suivi. Consultez Configuration d’un framework pour le suivi de base.
 
 En fonction de la vue sélectionnée pour le framework, l’outil de recherche de contenu est renseigné par des variables Analytics (dans la vue AEM) ou des variables CQ (dans la vue Analytics).
 
@@ -118,7 +118,7 @@ La liste peut être manipulée comme suit :
    >Un seul bouton de filtre peut être actif à la fois.
 
    1. La liste comporte également une fonction de recherche qui filtre les éléments en fonction du texte saisi dans le champ de recherche.
-   1. Si une option de filtrage est activée lors de la recherche d&#39;éléments dans la liste, les résultats affichés seront également filtrés en fonction du bouton principal.
+   1. Si une option de filtrage est activée lors de la recherche d&#39;éléments dans la liste, les résultats affichés seront également filtrés en fonction du bouton actif.
    1. La liste peut être rechargée à tout moment à l’aide des flèches rapides.
    1. Si plusieurs RSID sont sélectionnés dans la structure, toutes les variables de la liste s’affichent à l’aide de toutes les étiquettes utilisées dans les RSID sélectionnés.
 
@@ -156,9 +156,9 @@ En prenant comme exemple l’image ci-dessus, la variable **AEM vue** possède l
 
       1. Les composants hérités sont verrouillés.
       1. Pour déverrouiller un composant hérité, double-cliquez sur le cadenas en regard de son nom.
-      1. Pour annuler l’héritage, supprimez le composant déverrouillé. après quoi il retrouvera son état verrouillé.
+      1. Pour rétablir l’héritage, supprimez le composant déverrouillé, après quoi il retrouve son état verrouillé.
 
-   1. **Faites glisser des composants ici pour les inclure dans la structure d’analyse.**: Vous pouvez faire glisser les composants depuis le Sidekick et les déposer ici.
+   1. **Faites glisser des composants ici pour les inclure dans la structure d’analyse.**: les composants peuvent être déplacés à partir du Sidekick et déposés ici.
    1. Vous trouverez tous les composants actuellement inclus dans la structure d’analyse :
 
       1. Pour ajouter un composant, faites-le glisser depuis l’onglet Composants du sidekick.

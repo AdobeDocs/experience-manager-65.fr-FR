@@ -5,10 +5,10 @@ contentOwner: AG
 role: Architect, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1795'
-ht-degree: 57%
+source-wordcount: '1791'
+ht-degree: 56%
 
 ---
 
@@ -47,7 +47,7 @@ La migration des ressources vers [!DNL Experience Manager] se déroule en plusie
 
 ### Désactivation des workflows {#disabling-workflows}
 
-Avant de commencer la migration, désactivez les lanceurs du workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques]. Il est préférable d’intégrer toutes les ressources dans le système, puis d’exécuter les workflows par lots. Si vous êtes déjà en ligne pendant la migration, vous pouvez planifier l’exécution de ces activités en dehors des heures de bureau.
+Avant de commencer la migration, désactivez les lanceurs du workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques]. Il est préférable d’ingérer toutes les ressources dans le système, puis d’exécuter les workflows par lots. Si vous êtes déjà en ligne pendant la migration, vous pouvez planifier l’exécution de ces activités en dehors des heures de bureau.
 
 ### Chargement des balises {#loading-tags}
 
@@ -55,7 +55,7 @@ Vous avez peut-être déjà mis en place une taxonomie de balises que vous appli
 
 ### Assimilation des ressources {#ingesting-assets}
 
-Les performances et la stabilité sont des préoccupations importantes lors de l’ingestion de ressources dans le système. Étant donné que vous chargez une grande quantité de données dans le système, vous souhaitez vous assurer que le système fonctionne et qu’il peut réduire le temps nécessaire et éviter de surcharger le système, ce qui peut entraîner un blocage du système, en particulier dans les systèmes déjà en production.
+Les performances et la stabilité sont des préoccupations importantes lors de l’ingestion de ressources dans le système. Étant donné que vous chargez une grande quantité de données dans le système, vous souhaitez vous assurer que le système fonctionne correctement pour réduire le temps nécessaire et éviter de surcharger le système, ce qui peut entraîner un blocage du système, en particulier dans les systèmes déjà en production.
 
 Il existe deux approches pour charger les ressources dans le système : une approche basée sur les notifications push utilisant HTTP ou une approche basée sur les extractions utilisant les API JCR.
 

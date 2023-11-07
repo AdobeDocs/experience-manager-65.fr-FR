@@ -1,20 +1,16 @@
 ---
 title: Didacticiel de mise en route de lʼAPI Java du service Output (SOAP)
-seo-title: Output Service Java API Quick Start(SOAP)
 description: Utilisez le service Output API Java Quick Start (SOAP) pour créer un document de PDF, créer un document de PDF basé sur un fichier XDP d’application, créer un document PDF/A, transmettre des documents au service Output, transmettre un document du référentiel AEM Forms au service Output, créer un document de PDF basé sur des fragments, imprimer un fichier, envoyer un flux d’impression à une imprimante réseau, créer plusieurs fichiers de PDF, créer des règles de recherche, transformer un document de PDF.
-seo-description: Use the Output service Java API Quick Start (SOAP) to create a PDF document, create a PDF document based on application XDP file, create a PDF/A document, pass documents to the Output service, pass a document in the AEM Forms repository to the Output service, create a PDF document based on fragments, printing to a file, sending a print stream to a network printer, create multiple PDF files, create search rules, transform a PDF document.
-uuid: 34cb1fc7-50a9-4db8-aed1-dbd3480d1323
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: f4415aeb-5c1b-4087-b60f-b2ea952c52b5
 role: Developer
 exl-id: dc99dd4d-fce9-4ec5-9b51-661d37a21559
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
 source-wordcount: '1311'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -299,7 +295,7 @@ Le code Java suivant récupère un fichier XDP du référentiel et le transmet a
 >
 >L’API Repository est utilisée pour récupérer le fichier XDP à partir de cet emplacement. (Consultez la section [Lire des ressources](/help/forms/developing/aem-forms-repository.md#reading-resources)).
 
-Remarquez également que la valeur de la racine du contenu `repository:///Applications/FormsApplication/1.0/FormsFolder/` est transmise à la méthode `generatePDFOutput2` de lʼobjet `OutputClient` (le deuxième paramètre). Cette valeur est transmise au service Output pour lʼinformer que les éléments associés au formulaire, tels que les images, sont stockés à cet emplacement.
+Notez également la valeur racine du contenu `repository:///Applications/FormsApplication/1.0/FormsFolder/` est transmis à la variable `OutputClient` de `generatePDFOutput2` (le deuxième paramètre). Cette valeur est transmise au service Output pour lʼinformer que les éléments associés au formulaire, tels que les images, sont stockés à cet emplacement.
 
 >[!NOTE]
 >
@@ -974,7 +970,7 @@ L’exemple de code Java suivant crée un document PDF basé sur une conception 
                  //Create a Document object
                  Document inFragment2Doc = new Document(inFragment2);
  
-                 //Place all of the XDP files into the MAP
+                 //Place all the XDP files into the MAP
                  inputs.put("tuc018_template_flowed.xdp",myMapSource);
                  inputs.put("tuc018_contact.xdp",inFragment1Doc);
                  inputs.put("tuc018_patient.xdp",inFragment2Doc);

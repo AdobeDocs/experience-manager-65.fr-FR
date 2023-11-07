@@ -12,10 +12,10 @@ discoiquuid: 9fef1f91-a222-424a-8e20-3599bedb8b41
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 73%
+source-wordcount: '797'
+ht-degree: 71%
 
 ---
 
@@ -91,7 +91,7 @@ Le codage en dur du nom et du texte descriptif est suffisant pour les environnem
 
 ### Évaluation par rapport aux critères de filtre {#evaluating-against-filter-criteria}
 
-La fonction `matches` renvoie la valeur `true` si les caractéristiques de l’appareil satisfont à tous les critères de filtre. Évaluez les informations fournies dans les arguments de méthode pour déterminer si l’appareil appartient au groupe. Les valeurs suivantes sont fournies en tant qu’arguments : 
+La variable `matches` renvoie la fonction `true` si les fonctionnalités de l’appareil répondent à tous les critères de filtrage. Évaluez les informations fournies dans les arguments de méthode pour déterminer si l’appareil appartient au groupe. Les valeurs suivantes sont fournies en tant qu’arguments : 
 
 * Un objet DeviceGroup
 * Nom de l’agent utilisateur

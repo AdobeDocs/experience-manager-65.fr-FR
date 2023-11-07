@@ -4,9 +4,9 @@ description: Installez, configurez et personnalisez un package de démonstration
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '4619'
+source-wordcount: '4613'
 ht-degree: 67%
 
 ---
@@ -57,7 +57,7 @@ Le [package de démonstration AEM Forms We.Gov](https://experience.adobe.com/#/d
 
    * **we-gov-forms.ui.analytics-&lt;version>.zip** : *contient toutes les données d’analyse de formulaires We.Gov à stocker dans le référentiel.*
 
-   * **we-gov-forms.config.public-&lt;version>.zip** : *contient tous les nœuds de configuration par défaut, y compris les configurations cloud d’espace réservé, pour éviter les problèmes de modèle de données de formulaire et de liaison de service.*
+   * **we-gov-forms.config.public-&lt;version>.zip** - *Contient tous les noeuds de configuration par défaut, y compris les configurations cloud d’espace réservé, afin d’éviter le modèle de données de formulaire et les problèmes de liaison de service.*
 
 Les ressources incluses dans ce package sont les suivantes :
 

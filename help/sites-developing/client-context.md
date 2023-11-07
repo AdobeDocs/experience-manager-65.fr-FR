@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 feature: Context Hub
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '3001'
-ht-degree: 91%
+source-wordcount: '3000'
+ht-degree: 90%
 
 ---
 
@@ -29,7 +29,7 @@ ClientContext se compose principalement des aspects suivants :
 * L’interface utilisateur qui affiche les données utilisateur et fournit des outils pour simuler l’expérience utilisateur.
 * Une [API JavaScript](/help/sites-developing/ccjsapi.md) pour interagir avec les magasins de sessions.
 
-Pour créer un magasin de sessions autonome et l’ajouter à ClientContext, ou créer un magasin de sessions lié à un composant ContextStore. Adobe Experience Manager (AEM) installe plusieurs composants de magasin de contexte que vous pouvez utiliser immédiatement. Vous pouvez utiliser ces composants comme base de vos composants.
+Pour créer un magasin de sessions autonome et l’ajouter à ClientContext, ou créer un magasin de sessions lié à un composant ContextStore. Adobe Experience Manager (AEM) installe plusieurs composants Context Store que vous pouvez utiliser immédiatement. Vous pouvez utiliser ces composants comme base de vos composants.
 
 Pour plus d’informations sur l’ouverture de contexte client, la configuration des informations affichées et la simulation de l’expérience utilisateur, consultez [Contexte client](/help/sites-administering/client-context.md).
 
@@ -507,7 +507,7 @@ Le composant de magasin de contexte nécessite une boîte de dialogue Modifier. 
 
 1. Cliquez avec le bouton droit sur le nœud `/libs/cq/personalization/components/contextstores/genericstoreproperties/dialog` et cliquez sur Copier.
 1. Cliquez avec le bouton droit de la souris sur le nœud `/apps/myapp/contextstores/geoloc`, puis sélectionnez Coller.
-1. Supprimez tous les nœuds enfants sous le nœud /apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items :
+1. Supprimez tous les noeuds enfants sous le noeud /apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items :
 
    * store
    * properties

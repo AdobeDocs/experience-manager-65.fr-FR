@@ -10,10 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 exl-id: 1eed754e-9a7d-4b65-a929-757fc962614d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1253'
-ht-degree: 96%
+source-wordcount: '1252'
+ht-degree: 94%
 
 ---
 
@@ -205,7 +205,7 @@ Ceux-ci, associés aux fonctionnalités standard, vous permettent d’effectuer 
 
 * **Masquer les enfants d’un nœud (tout en conservant les propriétés du nœud)**
 
-  Le nœud, ses propriétés et ses enfants sont définis dans `/libs`. Le nœud et ses propriétés sont requis dans le recouvrement/remplacement de `/apps`, tandis que la totalité ou une partie des nœuds enfants ne sont pas requis dans le recouvrement/remplacement de `/apps`.
+  Le nœud, ses propriétés et ses enfants sont définis dans `/libs`. Le noeud et ses propriétés sont requis dans la variable `/apps` overlay/override, mais certains ou tous les noeuds enfants ne sont pas nécessaires dans la variable `/apps` superposition/remplacement.
 
    1. Créez le nœud correspondant sous `/apps`
    1. Créez la propriété `sling:hideChildren` :

@@ -2,10 +2,10 @@
 title: Configuration des règles de traduction
 description: Découvrez comment définir des règles de traduction pour identifier le contenu à traduire.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 82%
+source-wordcount: '861'
+ht-degree: 76%
 
 ---
 
@@ -31,7 +31,7 @@ Ce document vous aide à comprendre comment utiliser les règles de traduction d
 
 ## Règles de traduction {#translation-rules}
 
-Les fragments de contenu, qui représentent votre contenu découplé, peuvent contenir de nombreuses informations organisées dans des champs structurés. Selon les besoins de votre projet, il est probable que tous les champs d’un fragment de contenu n’aient pas besoin d’être traduits.
+Les fragments de contenu, qui représentent votre contenu découplé, peuvent contenir de nombreuses informations organisées dans des champs structurés. Selon les besoins de votre projet, il est probable que tous les champs d’un fragment de contenu ne doivent pas être traduits.
 
 Les règles de traduction identifient le contenu à inclure dans les projets de traduction ou à exclure. Lorsque le contenu est traduit, AEM extrait ou récupère le contenu en fonction de ces règles. Ainsi, seul le contenu à traduire est envoyé au service de traduction.
 
@@ -46,7 +46,7 @@ Les modèles de fragment de contenu, qui définissent la structure de vos fragme
 
 >[!TIP]
 >
->En règle générale, l’architecte de contenu met à la disposition du spécialiste de la traduction les **noms de la propriété** de tous les champs nécessaires à la traduction. Ces noms sont nécessaires pour configurer les règles de traduction. En tant que spécialiste de la traduction, vous [pouvez trouver vous-même les **Noms de la propriété**](getting-started.md#content-models) comme décrit précédemment dans ce parcours.
+>En règle générale, l’architecte de contenu met à la disposition du spécialiste de traduction les éléments suivants : **Nom de la propriété** de tous les champs nécessaires à la traduction. Ces noms sont nécessaires pour configurer les règles de traduction. En tant que spécialiste de la traduction, vous [pouvez trouver vous-même les **Noms de la propriété**](getting-started.md#content-models) comme décrit précédemment dans ce parcours.
 
 ## Création de règles de traduction {#creating-rules}
 

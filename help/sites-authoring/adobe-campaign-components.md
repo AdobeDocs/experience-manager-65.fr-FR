@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: personalization
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2835'
-ht-degree: 96%
+source-wordcount: '2834'
+ht-degree: 95%
 
 ---
 
@@ -328,7 +328,7 @@ Le tableau suivant décrit les composants disponibles pour afficher et modifier 
 
 ### Paramètres communs à la plupart des composants {#settings-common-to-most-components}
 
-Les composants d’Adobe Campaign comportent des paramètres communs à tous les composants (à l’exception des composants Clé primaire chiffrée et Clé de réconciliation masquée).
+Les paramètres des composants Adobe Campaign sont communs à tous les composants (à l’exception des composants Clé de Principal chiffrée et Clé de réconciliation masquée).
 
 Dans la plupart des composants, vous pouvez configurer les éléments suivants :
 

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 65b2029e-03c9-4df4-8579-2b15dbee1035
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 53%
+source-wordcount: '615'
+ht-degree: 48%
 
 ---
 
@@ -54,13 +54,13 @@ La mise en oeuvre d’un environnement d’intégration continue vous permet d�
 
 Si l’exécution de tests unitaires demande trop de temps, les développeurs éviteront de les exécuter et ils perdront leur intérêt. Si la création et le déploiement de code demandent beaucoup de temps, ses opérations seront exécutées moins souvent. En donnant la priorité aux délais de création courts, vous avez la garantie que le temps que vous avez investi dans la couverture de test et dans l’infrastructure d’intégration continue de rendre l’équipe plus productive.
 
-### Optimiser Sonar et d’autres outils d’analyse de code statique et agir sur la base de leurs rapports {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
+### Optimiser Sonar et d’autres outils d’analyse de code statique et agir sur leurs rapports {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
 
 Les outils d’analyse de code peuvent se révéler très utiles, mais à la seule condition que leurs rapports débouchent sur une action de la part de l’équipe de développement. Sans affiner l&#39;analyse fournie par ces outils, les recommandations qu&#39;ils génèrent sont devenues inutiles et perdent leur valeur.
 
 ### Appliquer la règle du boy-scout {#follow-the-boy-scout-rule}
 
-Les boy-scouts ont une règle : « Laissons (ce monde) dans un meilleur état que nous l’avons trouvé ». Tant que tous les membres de l’équipe de développement respecteront cette règle et remettront de l’ordre là où règne le désordre, le code ne cessera de s’améliorer.
+Les boy-scouts ont une règle : « Laissons (ce monde) dans un meilleur état que nous l’avons trouvé ». Tant que tous les membres de l’équipe de développement respectent cette règle et nettoient quelque chose lorsqu’ils rencontrent un problème, le code s’améliore constamment.
 
 ### Éviter la mise en œuvre de fonctionnalités YAGNI {#avoid-implementing-yagni-features}
 

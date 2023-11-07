@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
 source-wordcount: '18965'
 ht-degree: 79%
@@ -1638,7 +1638,7 @@ Envoyez un flux d’impression à une imprimante réseau à l’aide de l’API 
 
 Le service Output peut créer des documents distincts pour chaque enregistrement d’une source de données XML ou d’un seul fichier contenant tous les enregistrements (cette fonctionnalité est la valeur par défaut). Supposons, par exemple, que dix enregistrements se trouvent dans une source de données XML et que vous demandiez au service Output de créer des documents PDF distincts (ou d’autres types de sortie) pour chaque enregistrement à l’aide de l’API Output Service. Par conséquent, le service Output génère dix documents PDF. (Au lieu de créer des documents, vous pouvez envoyer plusieurs flux d’impression à une imprimante.)
 
-L’illustration suivante présente comment le service Output traite un fichier de données XML contenant plusieurs enregistrements. Cependant, supposons que vous ordonniez au service Output de créer un document PDF unique contenant tous les enregistrements de données. Dans ce cas, le service Output génère un document contenant tous les enregistrements.
+L’illustration suivante présente comment le service Output traite un fichier de données XML contenant plusieurs enregistrements. Supposons toutefois que vous enseigniez au service Output de créer un document de PDF unique contenant tous les enregistrements de données. Dans ce cas, le service Output génère un document contenant tous les enregistrements.
 
 L’illustration suivante présente comment le service Output traite un fichier de données XML contenant plusieurs enregistrements. Supposons que vous demandiez au service Output de créer un document PDF distinct pour chaque enregistrement de données. Dans ce cas, le service Output génère un document PDF distinct pour chaque enregistrement de données.
 

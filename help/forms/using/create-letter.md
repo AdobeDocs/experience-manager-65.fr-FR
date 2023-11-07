@@ -9,9 +9,9 @@ topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '3983'
+source-wordcount: '3979'
 ht-degree: 55%
 
 ---
@@ -138,7 +138,7 @@ Ce document d’avis d’annulation est un exemple type de correspondance :
   </tr> 
   <tr> 
    <td>Stockée<br /> Images du référentiel central</td> 
-   <td>Images telles que des logos et des images de signature. Des images telles que des logos de l’entreprise apparaissent dans la plupart ou dans la totalité de la correspondance. Les images de signature sont spécifiques à la lettre et à la personne au nom de laquelle la lettre est envoyée.</td> 
+   <td>Images telles que des logos et des images de signature. Les images telles que les logos de l’entreprise apparaissent dans la plupart ou dans la totalité des correspondances. Les images de signature sont spécifiques à la lettre et à la personne au nom de laquelle la lettre est envoyée.</td> 
    <td><p>Images stockées dans AEM ressources (DAM)<br /> </p> <p> </p> </td> 
   </tr> 
  </tbody> 
@@ -170,7 +170,7 @@ Analysez chaque lettre pour déceler ses différentes composantes. Le spécialis
 
 **Créer le dictionnaire de données** : certaines valeurs de données telles que « Identifiant client » et « Nom du client » sont communes à de nombreuses lettres. Vous pouvez établir une liste consolidée de toutes ces valeurs de données. En règle générale, une personne de l’équipe middleware de l’entreprise est consultée lors de la planification de la structure. Cela constitue la base de la création du dictionnaire de données.
 
-**Obtenir des données des systèmes d’arrière-plan de l’entreprise** : vous connaîtrez également toutes les valeurs de données nécessaires et saurez où obtenir les données du système d’entreprise. Vous pouvez ensuite architecturer l’implémentation permettant d’extraire les données du système d’entreprise pour alimenter la solution Lettres.
+**Approvisionnement des données à partir des systèmes d’arrière-plan de l’entreprise** Vous connaissez également toutes les valeurs de données nécessaires et d’où proviennent les données du système d’entreprise. Vous pouvez ensuite architecturer l’implémentation permettant d’extraire les données du système d’entreprise pour alimenter la solution Lettres.
 
 **Estimer la complexité des lettres** : il est important de définir la complexité que représente la création d’une correspondance particulière. Cette analyse permet de déterminer le temps et les compétences nécessaires à la création des modèles de lettre. Cela permet d’estimer les ressources et les coûts de la mise en oeuvre de la solution de lettres.
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '4602'
+source-wordcount: '4600'
 ht-degree: 59%
 
 ---
@@ -158,7 +158,7 @@ En outre, les index ne sont utiles que si les données contenues dans l’index 
 
 Les index Lucene ont été introduits dans Oak 1.0.9 et proposent de puissantes optimisations par rapport aux index de propriété introduits lors du lancement initial d’AEM 6. Lorsque vous décidez d’utiliser des index Lucene ou des index de propriété, veuillez tenir compte des points suivants :
 
-* Les index Lucene proposent bien plus de fonctionnalités que les index de propriété. Par exemple, un index de propriété ne peut indexer qu’une seule propriété, tandis qu’un index Lucene peut en inclure plusieurs. Pour plus d’informations sur toutes les fonctionnalités disponibles dans les index Lucene, veuillez consulter la [documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+* Les index Lucene proposent bien plus de fonctionnalités que les index de propriété. Par exemple, un index de propriété ne peut indexer qu’une seule propriété, tandis qu’un index Lucene peut en inclure plusieurs. Pour plus d’informations sur toutes les fonctionnalités disponibles dans les index Lucene, consultez la section [documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 * Les index Lucene sont asynchrones. Bien que cela représente une amélioration considérable des performances, cela peut également entraîner un délai entre le moment où les données sont écrites dans le référentiel et celui où l’index est mis à jour. S’il est essentiel que les requêtes renvoient des résultats 100 % exacts, un index de propriété est requis.
 * Étant asynchrones, les index Lucene ne peuvent pas imposer des contraintes d’unicité. Si cela est nécessaire, un index de propriété doit être mis en place.
 
@@ -189,7 +189,7 @@ La documentation Oak pour les index Lucene répertorie plusieurs points à prend
 * Dans un index de propriété, un nom de propriété unique contribue à réduire la taille de l’index, mais dans le cas des index Lucene, l’utilisation de `nodeTypes` et `mixins` est conseillée pour obtenir des index cohérents. L’interrogation d’une propriété `nodeType` ou `mixin` spécifique est plus performante que celle d’une propriété `nt:base`. Si vous suivez cette approche, définissez `indexRules` pour les `nodeTypes` en question.
 
 * Si vos requêtes sont exécutées uniquement sous certains chemins, créez ces index sous ces chemins. Il n’est pas nécessaire que les index se trouvent à la racine du référentiel.
-* Utilisez un seul index lorsque toutes les propriétés indexées sont liées pour permettre à Lucene d’évaluer en mode natif autant de restrictions de propriété que possible. En outre, une requête n’utilise qu’un seul index, même lors de l’exécution d’une jointure.
+* Utilisez un seul index lorsque toutes les propriétés indexées sont liées pour permettre à Lucene d’évaluer nativement autant de restrictions de propriété que possible. En outre, une requête n’utilise qu’un seul index, même lors de l’exécution d’une jointure.
 
 ### CopyOnRead {#copyonread}
 

@@ -7,10 +7,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2362'
-ht-degree: 43%
+source-wordcount: '2359'
+ht-degree: 42%
 
 ---
 
@@ -218,7 +218,7 @@ Le service Apache Sling Job Consumer Manager fournit les propriétés de liste a
 
 **Remarque :** Si l’instance appartient à une topologie, vous pouvez également utiliser le navigateur de déchargement sur tout ordinateur de la topologie pour activer ou désactiver les rubriques.
 
-La logique qui crée la liste des rubriques activées autorise d’abord toutes les rubriques qui se trouvent dans la liste autorisée, puis supprime les rubriques qui se trouvent dans la liste bloquée. Par défaut, toutes les rubriques sont activées (la valeur de la liste autorisée est `*`) et aucune rubrique n’est désactivée (la liste bloquée n’a aucune valeur).
+La logique qui crée la liste des rubriques activées permet d’abord toutes les rubriques qui se trouvent dans la liste autorisée, puis supprime les rubriques qui se trouvent dans la liste bloquée. Par défaut, toutes les rubriques sont activées (la valeur de la liste autorisée est `*`) et aucune rubrique n’est désactivée (la liste bloquée n’a aucune valeur).
 
 Utilisez le console web ou un nœud `sling:OsgiConfig` pour configurer les propriétés suivantes. Pour les nœuds `sling:OsgiConfig`, le paramètre PID du service Gestionnaire de consommation de tâche est org.apache.sling.event.impl.jobs.JobConsumerManager.
 
@@ -245,7 +245,7 @@ Cette configuration nécessite les trois agents suivants :
 1. Agent inverse sur l’instance de création qui extrait de la boîte d’envoi sur l’instance de travail.
 1. Un agent de boîte d’envoi sur l’instance de travail.
 
-Ce schéma de réplication est similaire à celui utilisé entre les instances d’auteur et de publication. Toutefois, pour la situation de déchargement, toutes les instances impliquées sont des instances de création.
+Ce schéma de réplication est similaire à celui utilisé entre les instances d’auteur et de publication. Cependant, dans le cas du déchargement, toutes les instances impliquées sont des instances de création.
 
 >[!NOTE]
 >

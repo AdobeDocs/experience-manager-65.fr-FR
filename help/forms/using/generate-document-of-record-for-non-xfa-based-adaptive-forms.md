@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '3545'
+source-wordcount: '3544'
 ht-degree: 73%
 
 ---
@@ -308,7 +308,7 @@ Pour localiser les informations d’identité graphique que vous saisissez dans 
 
    Si vous choisissez de sélectionner un modèle personnalisé, parcourez une sélection XDP sur votre serveur AEM Forms. Si vous souhaitez utiliser un modèle qui ne se trouve pas déjà sur votre serveur AEM Forms, vous devez d’abord télécharger le fichier XDP sur votre serveur AEM Forms.
 
-1. Selon que vous sélectionnez un modèle par défaut ou personnalisé, certaines ou toutes les propriétés suivantes s’affichent dans l’onglet Document d’enregistrement . Spécifiez-les en conséquence :
+1. Selon que vous sélectionnez un modèle par défaut ou personnalisé, certaines ou toutes les propriétés suivantes s’affichent dans l’onglet Document d’enregistrement. Spécifiez-les en conséquence :
 
    * **Image du logo** : vous pouvez choisir d’utiliser l’image du logo à partir du formulaire adaptatif, en choisir une dans le gestionnaire des actifs numériques ou en télécharger une depuis votre ordinateur.
    * **Titre du formulaire**

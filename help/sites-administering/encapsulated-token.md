@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 65%
+source-wordcount: '791'
+ht-degree: 63%
 
 ---
 
@@ -59,7 +59,7 @@ Vous pouvez découvrir comment cela fonctionne dans un déploiement distribué g
 
 Lors de la configuration du jeton encapsulé, vous devez prendre en compte quelques points :
 
-1. Compte tenu du chiffrement impliqué, toutes les instances doivent posséder la même clé HMAC. À compter d’AEM 6.3, le matériel de la clé n’est plus stocké dans le référentiel, mais sur le système de fichiers réel. Ainsi, la meilleure façon de répliquer les clés consiste à les copier du système de fichiers de l’instance source vers celle des instances cibles sur lesquelles vous souhaitez répliquer les clés. Pour plus d’informations, voir &quot;Réplication de la clé HMAC&quot; ci-dessous.
+1. En raison de la cryptographie impliquée, toutes les instances doivent avoir la même clé HMAC. À compter d’AEM 6.3, le matériel de la clé n’est plus stocké dans le référentiel, mais sur le système de fichiers réel. Ainsi, la meilleure façon de répliquer les clés consiste à les copier du système de fichiers de l’instance source vers celle des instances cibles sur lesquelles vous souhaitez répliquer les clés. Pour plus d’informations, voir &quot;Réplication de la clé HMAC&quot; ci-dessous.
 1. Le jeton encapsulé doit être activé. Vous pouvez le faire via la console web.
 
 ### Réplication de la clé HMAC {#replicating-the-hmac-key}

@@ -10,16 +10,16 @@ geptopics: SG_AEMFORMS/categories/system_information_service
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
 exl-id: 4da96c8f-8bd0-4cad-9087-18e324f084e7
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
-workflow-type: ht
-source-wordcount: '336'
-ht-degree: 100%
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 35%
 
 ---
 
 # API du service d’information système {#system-information-service-apis}
 
-Le service d’informations système fournit un ensemble d’API REST pour récupérer les informations. Le tableau suivant fournit des informations détaillées sur les API :
+Le service d’informations système fournit un ensemble d’API REST pour récupérer des informations. Le tableau suivant fournit des informations détaillées sur les API :
 
 <table>
  <thead>
@@ -33,7 +33,7 @@ Le service d’informations système fournit un ensemble d’API REST pour récu
   <tr>
    <td><p>SystemInfo.properties</p></td>
    <td><p>https://'[server]:[port]'/rest/services/SystemInfo.properties'</p></td>
-   <td><p>Cette API est un wrapper pour l’API Java <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a>. Elle récupère la configuration de l’environnement de travail actif. </p></td>
+   <td><p>Cette API est un wrapper pour <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> API Java. Elle récupère la configuration de l’environnement de travail actuel. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.envVar</p></td>
@@ -43,7 +43,7 @@ Le service d’informations système fournit un ensemble d’API REST pour récu
   <tr>
    <td><p>SystemInfo.logs</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.logs</p></td>
-   <td><p>Télécharge un fichier ZIP contenant les journaux du serveur d’applications. </p></td>
+   <td><p>Télécharge un fichier zip contenant les journaux du serveur d’applications. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.config</p></td>
@@ -53,17 +53,17 @@ Le service d’informations système fournit un ensemble d’API REST pour récu
   <tr>
    <td><p>SystemInfo.services</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.services</p></td>
-   <td><p>Récupère l’état et les paramètres de configuration des services AEM Forms.</p></td>
+   <td><p>Récupère l’état et les paramètres de configuration des services d’AEM forms.</p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.vitalDetails</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.vitalDetails</p></td>
-   <td><p>Récupère la durée de fonctionnement du serveur, l’argument JVM, la mémoire du système, la taille de tas, le nom du système d’exploitation, le nombre de threads actifs et le nombre de threads. </p></td>
+   <td><p>Récupère le temps de disponibilité du serveur, les arguments JVM, la mémoire système, la taille du tas, le nom du système d’exploitation, le nombre de threads actifs et le nombre de threads. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.coreSettings</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.coreSettings</p></td>
-   <td><p>Récupère les valeurs des propriétés suivantes :</p>
+   <td><p>Récupère les valeurs des propriétés suivantes :</p>
     <ul>
      <li><p>AdobeTempDir</p></li>
      <li><p>AdobeServerFontDir</p></li>
@@ -87,7 +87,7 @@ Le service d’informations système fournit un ensemble d’API REST pour récu
   <tr>
    <td><p>SystemInfo.licenseInfo</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.licenseInfo</p></td>
-   <td><p>Récupère les informations de version et de licence des composants d’AEM Forms installés. </p></td>
+   <td><p>Récupère les informations de version et de licence des composants d’AEM installés. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfNo.serverConfig</p></td>
@@ -97,16 +97,16 @@ Le service d’informations système fournit un ensemble d’API REST pour récu
   <tr>
    <td><p>SystemInfo.threads?delay=[n]&amp;iterations=[n]</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.threads?delay=[n]&amp;iterations=[n]</p></td>
-   <td><p>Récupère le nombre et la trace de la pile des threads actifs. Accepte les paramètres suivants :</p>
+   <td><p>Récupère le nombre et la trace de pile des threads actifs. Il accepte les paramètres suivants :</p>
     <ul>
-     <li><p>iterations= [n] : spécifie le nombre d’itérations, où n est un nombre. </p></li>
-     <li><p>Delay= [n] : indique le nombre de millisecondes avant le début de la prochaine itération. </p></li>
+     <li><p>iterations= [n] : spécifie le nombre d’itérations. Remplacez n par un nombre. </p></li>
+     <li><p>Delay= [n] : spécifie le nombre de millisecondes à attendre avant de commencer la prochaine itération. </p></li>
     </ul><p></p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.info</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.info</p></td>
-   <td><p>Cette API est un wrapper de toutes les API du service d’informations système. En interne, elle exécute toutes les API d’informations système et télécharge les informations au format .zip. </p><p><i><strong>Remarque</strong> : l’API SystemInfo.info n’indique ni le nombre ni la trace de la pile des threads actifs. </i></p></td>
+   <td><p>Cette API est un wrapper pour toutes les API de service d’informations système. En interne, il exécute toutes les API d’informations système et télécharge les informations au format zip. </p><p><i><strong>Remarque</strong> : l’API SystemInfo.info n’indique ni le nombre ni la trace de la pile des threads actifs. </i></p></td>
   </tr>
  </tbody>
 </table>

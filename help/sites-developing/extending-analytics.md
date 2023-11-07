@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
 exl-id: a71d20e6-0321-4afb-95fe-6de8b7b37245
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 73%
+source-wordcount: '484'
+ht-degree: 72%
 
 ---
 
@@ -72,7 +72,7 @@ Où :
 
 * `events` est une chaîne ou un tableau de chaîne (pour plusieurs événements).
 
-* `values` contient toutes les valeurs à suivre.
+* `values` contient toutes les valeurs à tracker
 * `collect` est facultatif et renvoie un tableau contenant l’événement et l’objet de données.
 * `options` est facultatif et contient des options de suivi des liens comme l’élément HTML `obj` et ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
 

@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 66%
+source-wordcount: '1539'
+ht-degree: 64%
 
 ---
 
@@ -211,7 +211,7 @@ Pour éviter de telles situations :
 
 Les fragments d’expérience contiennent des balises HTML complètes et toutes les bibliothèques clientes (CSS/JS) nécessaires pour effectuer le rendu du fragment tel qu’il a été créé par l’auteur de contenu du fragment d’expérience. Cela est intentionnel.
 
-Lors de l’utilisation d’une offre de fragment d’expérience avec Adobe Target sur une page diffusée par AEM, la page ciblée contient déjà toutes les bibliothèques clientes nécessaires. En outre, le code HTML superflu dans l’offre de fragment d’expérience n’est pas nécessaire non plus (voir les [Considérations](#considerations)).
+Lors de l’utilisation d’une offre de fragment d’expérience avec Adobe Target sur une page diffusée par AEM, la page ciblée contient déjà toutes les bibliothèques clientes nécessaires. En outre, le code HTML superflu dans l’offre de fragment d’expérience n’est pas nécessaire non plus (voir les [Considérations](#considerations)).
 
 Voici un pseudo-exemple du code HTML d’une offre de fragment d’expérience :
 
@@ -220,7 +220,7 @@ Voici un pseudo-exemple du code HTML d’une offre de fragment d’expérience 
 <html>
    <head>
       <title>…</title>
-      <!-- all of the client libraries (css/js) -->
+      <!-- all the client libraries (css/js) -->
       …
    </head>
    <body>
