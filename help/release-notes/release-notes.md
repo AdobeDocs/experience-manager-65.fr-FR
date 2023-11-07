@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
 exl-id: d0dc5dfb-25a3-4388-a1d4-abba70081cc3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 61f3079a88e39c02b29bfafc7b2b9d4d098cef6b
 workflow-type: tm+mt
-source-wordcount: '4632'
-ht-degree: 99%
+source-wordcount: '4640'
+ht-degree: 98%
 
 ---
 
@@ -492,7 +492,7 @@ Pour résoudre le problème, recherchez le fichier `<AEM_Forms_Installation_dir>
 
 #### Communications interactives
 
-* Après la mise à niveau vers le pack de services 18 d’AEM, les lettres de communication interactive ne peuvent pas être modifiées. (FORMS-10578)
+* Après la mise à niveau vers AEM Service Pack 18, il n’est pas possible d’ouvrir la communication interactive avec des images intégrées volumineuses en mode d’édition. (FORMS-10578)
 Pour résoudre le problème, procédez comme suit :
 
    1. Téléchargez [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) à partir du lien SD.
