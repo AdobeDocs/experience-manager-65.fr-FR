@@ -576,7 +576,7 @@ L’intégration est aussi simple que la suppression du code intégré de la vid
 
 >[!NOTE]
 >
-Cette tâche ne s’applique que si vous êtes un client Experience Manager Assets autonome.
+>Cette tâche ne s’applique que si vous êtes un client Experience Manager Assets autonome.
 
 La dernière étape de cette procédure consiste à intégrer votre vidéo interactive avec une mise en œuvre existante de l’aperçu rapide utilisée sur votre site web. Pour ce qui est de l’intégration, il n’existe pas de solution qui fonctionne dans tous les cas. Chaque implémentation d’aperçu rapide est unique. De ce fait, une approche spécifique, impliquant l’aide d’une personne spécialisée en systèmes front-end, est nécessaire.
 
