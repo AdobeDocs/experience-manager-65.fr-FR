@@ -1,8 +1,8 @@
 ---
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 83%
+source-wordcount: '426'
+ht-degree: 78%
 
 ---
 # Code de conduite d’Adobe
@@ -41,7 +41,7 @@ Ce code de conduite s’applique à la fois à l’espace du projet et aux envir
 
 ## Application
 
-Les cas de comportements abusifs, harcelants ou tout autre comportement inacceptable peuvent être signalés en contactant l’équipe du projet à l’adresse Grp-opensourceoffice@adobe.com. Toutes les plaintes seront examinées et analysées ; elles se traduiront par une réponse jugée nécessaire et adaptée aux circonstances. L’équipe du projet est tenue de respecter la confidentialité concernant la personne qui signale un incident. Des informations supplémentaires sur les politiques d’application spécifiques peuvent être publiées séparément.
+Les cas de comportements abusifs, harcelants ou tout autre comportement inacceptable peuvent être signalés en contactant l’équipe du projet à l’adresse Grp-opensourceoffice@adobe.com. Toutes les plaintes sont examinées et analysées, ce qui donne lieu à une réponse jugée nécessaire et adaptée aux circonstances. L’équipe du projet est tenue de respecter la confidentialité concernant la personne qui signale un incident. Des informations supplémentaires sur les politiques d’application spécifiques peuvent être publiées séparément.
 
 Les responsables de projet qui ne suivent pas ou n’appliquent pas en toute bonne foi le code de conduite s’exposent temporairement ou de façon permanente à des répercussions définies par d’autres membres de la direction du projet.
 

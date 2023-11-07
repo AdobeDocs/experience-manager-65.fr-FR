@@ -6,9 +6,9 @@ content-type: reference
 topic-tags: deploying
 noindex: true
 exl-id: d25e3070-080a-4594-8fdb-9f09164135fc
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1385'
 ht-degree: 27%
 
 ---
@@ -78,7 +78,7 @@ Pour diagnostiquer certains cas concernant l’Adobe des performances des requê
 
 1. vident le contenu de l’index en vue d’une analyse hors ligne ;
 
-1. peuvent être utilisés même si AEM n’est pas accessible.
+1. Est utilisable même si AEM n’est pas accessible
 
 Les opérations ci-dessus peuvent désormais être effectuées à l’aide des commandes d’index d’opération suivantes :
 
@@ -196,7 +196,7 @@ Dans ce cas pratique, on suppose que l’entrepôt de données est accessible su
 
 Actuellement, vous pouvez envoyer les modifications de définition d’index par le biais de [Index ACS Ensure](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) module. Cela permet d’expédier les définitions d’index par le biais d’un module de contenu qui nécessite ensuite une réindexation en définissant la variable `reindex` indicateur pour `true`.
 
-Cela fonctionne bien pour les installations plus petites où la réindexation ne prend pas beaucoup de temps. Toutefois, pour les référentiels volumineux, la réindexation s’effectue dans un laps de temps considérablement plus long. Dans ce cas, nous pouvons désormais utiliser l’outil d’index oak-run.
+Cela fonctionne bien pour les installations plus petites où la réindexation ne prend pas beaucoup de temps. Toutefois, pour les référentiels volumineux, la réindexation s’effectue dans un délai considérablement plus long. Dans ce cas, nous pouvons désormais utiliser l’outil d’index oak-run.
 
 Oak-run prend désormais en charge la fourniture de définitions d’index au format JSON et la création d’index en mode hors bande où aucune modification n’est effectuée sur une instance en direct.
 
