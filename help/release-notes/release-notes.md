@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
 exl-id: d0dc5dfb-25a3-4388-a1d4-abba70081cc3
-source-git-commit: 61f3079a88e39c02b29bfafc7b2b9d4d098cef6b
+source-git-commit: 31bc86f81620bdc6fe9877cdc96f4004a80d60f9
 workflow-type: tm+mt
-source-wordcount: '4640'
-ht-degree: 98%
+source-wordcount: '4641'
+ht-degree: 99%
 
 ---
 
@@ -82,7 +82,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
    * MongoDB 4.4
    * Connecteur 8 JDBC MySQL
 
-Si vous installez ou envisagez d’utiliser les derniers logiciels pour votre environnement AEM Forms 6.5 on JEE, Adobe recommande d’utiliser le programme d’installation complet d’AEM 6.5.18.0 Forms on JEE. Pour consulter la liste complète des logiciels nouvellement ajoutés et obsolètes, reportez-vous à la documentation d’AEM Forms on JEE ou d’AEM Forms on OSGi.
+Si vous installez ou envisagez d’utiliser les derniers logiciels pour votre environnement AEM Forms 6.5 on JEE, Adobe recommande d’utiliser le programme d’installation complet d’AEM 6.5.18.0 Forms on JEE. Pour consulter la liste complète des logiciels nouvellement ajoutés et obsolètes, reportez-vous à la documentation d’AEM Forms on JEE ou d’AEM Forms on OSGi.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
@@ -419,10 +419,19 @@ Les nouveaux dossiers `cache` et `diff-cache` sont automatiquement créés et vo
 
 * Une requête GraphQL peut utiliser l’index `damAssetLucene` plutôt que l’index `fragments`. Il peut en résulter l’échec des requêtes GraphQL ou l’exécution de celles-ci peut prendre beaucoup de temps.
 
-  Pour résoudre le problème, `damAssetLucene` doit être configuré pour inclure les deux propriétés suivantes :
+  Pour résoudre le problème, `damAssetLucene` doit être configuré pour inclure les deux propriétés suivantes sous `/indexRules/dam:Asset/properties`:
 
    * `contentFragment`
+      * `jcr:primaryType="nt:unstructured"`
+      * `name="jcr:content/contentFragment"`
+      * `propertyIndex="{Boolean}true"`
+      * `type="Boolean"`
    * `model`
+      * `jcr:primaryType="nt:unstructured"`
+      * `name="jcr:content/data/cq:model"`
+      * `ordered="{Boolean}true"`
+      * `propertyIndex="{Boolean}true"`
+      * `type="String"`
 
   Une fois la définition d’index modifiée, une réindexation est nécessaire (`reindex` = `true`).
 
@@ -476,7 +485,7 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 
       >[!NOTE]
       >
-      > Vous pouvez également utiliser un outil de modification statique, par exemple, 7-zip, pour mettre à jour la variable `Manifest.mf` fichier .
+      > Vous pouvez également utiliser un outil de modification statique, par exemple 7-zip, pour mettre à jour le fichier `Manifest.mf`.
 
    1. Enregistrez la mise à jour de `Manifest.mf` dans l’archive `adobe-output-client.jar`.
    1. Enregistrez le fichier `adobe-output-client.jar` modifié et relancez la configuration.  (CQDOC-20878)
