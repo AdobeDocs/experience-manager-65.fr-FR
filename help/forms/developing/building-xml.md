@@ -2,16 +2,16 @@
 title: Comment utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML ?
 description: Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 69%
+source-wordcount: '990'
+ht-degree: 64%
 
 ---
 
 # Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML {#using-execute-script-service-forms-jee-workbench}
 
-Il existe beaucoup de données XML associées aux workflows Process Management d’AEM Forms on JEE. Par exemple, les informations XML peuvent être créées dans un processus et envoyées à une application Flex dans AEM Forms on JEE Workspace, utilisées pour les paramètres du système ou pour transmettre des informations à et depuis des formulaires. Il existe de nombreux cas où un développeur d’AEM Forms on JEE doit gérer du XML, ce qui nécessite souvent que le XML soit géré via un processus AEM Forms on JEE.
+Il y a beaucoup de code XML impliqué dans les processus de gestion des processus d’AEM Forms on JEE, par exemple : les informations XML peuvent être créées dans un processus et envoyées à une application Flex dans l’espace de travail d’AEM Forms on JEE, utilisées pour les paramètres du système, ou encore transmises des informations à et depuis des formulaires. Il existe de nombreux cas où un développeur d’AEM Forms on JEE doit gérer du XML, ce qui nécessite souvent que le XML soit géré via un processus AEM Forms on JEE.
 
 Lorsque vous utilisez des paramètres XML simples, vous pouvez utiliser le service `Set Value` par défaut d’AEM Forms on JEE. Ce service définit la valeur d’un ou plusieurs éléments de données dans le modèle de données de processus. Dans le cadre d’une logique conditionnelle simple, selon les scénarios &quot;ceci, alors cela&quot;, ce service peut répondre à l’objectif.
 

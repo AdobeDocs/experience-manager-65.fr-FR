@@ -6,10 +6,10 @@ topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: a096eea0-b2fb-4d86-b729-ca47611135b2
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1672'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -93,7 +93,7 @@ Vous utilisez la recherche de processus/tâches pour définir des filtres pour i
 Après avoir créé une requête, utilisez les options situées dans le coin supérieur droit du panneau **Créer un filtre** :
 
 * **Annuler** : annulez les modifications et revenez au panneau **Mes filtres**.
-* **Exécuter** : exécutez la requête actuelle pour afficher et/ou vérifier les résultats. Dans ce cas, il n’est pas nécessaire d’enregistrer la requête avant de l’exécuter. Vous pouvez vérifier les résultats, apporter des modifications si nécessaire, puis enregistrer la requête lorsque les résultat vous conviennent.
+* **Exécuter** : exécutez la requête actuelle pour afficher et/ou vérifier les résultats. Dans ce cas, il n’est pas nécessaire d’enregistrer la requête avant de l’exécuter. Vous pouvez vérifier les résultats, apporter des modifications si nécessaire, puis enregistrer la requête lorsque vous êtes satisfait de la sortie.
 * **Enregistrer** : enregistrez le filtre. Vous pouvez ensuite afficher et exécuter le filtre à partir du panneau **Mes filtres**.
 
 ### Options dans le panneau Mes filtres {#options-in-my-filters-panel}

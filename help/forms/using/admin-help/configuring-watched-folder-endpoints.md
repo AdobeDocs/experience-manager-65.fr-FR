@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '7174'
-ht-degree: 26%
+ht-degree: 25%
 
 ---
 
@@ -54,7 +54,7 @@ Pour un point de fin Watched Folder, les utilisateurs peuvent appeler en copiant
 
 Pour les points de fin Watched Folder, si la tâche ne nécessite qu’un seul fichier d’entrée, l’utilisateur peut le copier à la racine du dossier de contrôle.
 
-Si la tâche contient plusieurs fichiers d’entrée, l’utilisateur doit créer, en dehors de la hiérarchie des dossiers de contrôle, un dossier contenant tous les fichiers requis. Ce nouveau dossier doit inclure les fichiers d’entrée (et éventuellement un fichier DDX s’il est requis par le processus). Une fois le dossier de tâche créé, l’utilisateur le copie dans le dossier input du dossier de contrôle.
+Si la tâche contient plusieurs fichiers d’entrée, l’utilisateur doit créer, en dehors de la hiérarchie des dossiers de contrôle, un dossier contenant tous les fichiers requis. Ce nouveau dossier doit inclure les fichiers d’entrée (et éventuellement un fichier DDX si nécessaire par le processus). Une fois le dossier de tâche créé, l’utilisateur le copie dans le dossier input du dossier de contrôle.
 
 >[!NOTE]
 >

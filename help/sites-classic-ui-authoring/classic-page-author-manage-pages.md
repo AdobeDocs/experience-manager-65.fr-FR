@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1892'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -279,7 +279,7 @@ Pour déplacer ou renommer une page :
 
    * **Renommer en**
 
-     Le libellé actuel de la page s’affiche par défaut. Indiquez le nouveau libellé de la page, le cas échéant.
+     Le libellé actuel de la page s’affiche par défaut. Si nécessaire, indiquez le nouveau libellé de page.
 
    * **Régler**
 

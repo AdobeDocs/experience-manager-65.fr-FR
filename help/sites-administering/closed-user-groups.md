@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '6816'
-ht-degree: 55%
+source-wordcount: '6808'
+ht-degree: 54%
 
 ---
 
@@ -798,7 +798,7 @@ Cette transition des propriétés JCR résiduelles vers une politique de contrô
 
 **Noeud cible défini par la stratégie**
 
-Il est attendu que les politiques de CUG sont créées au niveau du nœud JCR définissant la sous-arborescence dont l’accès en lecture est à restreindre. Il est probable qu’il s’agisse d’une page AEM au cas où le CUG affecterait l’ensemble de l’arborescence.
+Créez des stratégies de CUG au niveau du noeud JCR définissant la sous-arborescence à soumettre à un accès en lecture limité. Il est probable qu’il s’agisse d’une page AEM au cas où le CUG affecterait l’ensemble de l’arborescence.
 
 Notez que le fait de placer la politique de CUG uniquement au nœud jcr:content situé sous une page donnée limite l’accès au contenu s.str d’une page donnée, mais n’aura aucun effet sur les pages enfants ou frères. Il peut s’agir d’un cas d’utilisation valide. Il est possible d’y parvenir avec un éditeur de référentiel qui permet d’appliquer un contenu d’accès affiné. Cependant, elle contraste avec l’ancienne mise en oeuvre où le placement d’une propriété cq:cugEnabled sur le noeud jcr:content a été mappé en interne au noeud de page. Ce mappage n’est plus effectué.
 
@@ -839,7 +839,7 @@ En ce qui concerne `granite:loginPath` est concerné le même privilège est req
 
 #### Noeud cible défini par le type de mixin {#target-node-defined-by-mixin-type}
 
-Il est attendu que les exigences d’authentification sont créées au niveau du nœud JCR définissant la sous-arborescence pour laquelle la connexion doit être forcée. Il est probable qu’il s’agisse d’une page AEM au cas où le CUG devrait affecter l’ensemble de l’arborescence et que l’interface utilisateur de la nouvelle mise en oeuvre ajoutera par conséquent le type de mixin auth-required sur le noeud de page.
+Créez des exigences d’authentification au niveau du noeud JCR définissant la sous-arborescence à laquelle s’appliquer la connexion. Il est probable qu’il s’agisse d’une page AEM au cas où le CUG devrait affecter l’ensemble de l’arborescence et que l’interface utilisateur de la nouvelle mise en oeuvre ajoutera par conséquent le type de mixin auth-required sur le noeud de page.
 
 Le fait de placer la stratégie de CUG uniquement au niveau du noeud jcr:content situé sous une page donnée limite uniquement l’accès au contenu, mais n’aura aucune incidence sur le noeud de page lui-même ni sur les pages enfants.
 

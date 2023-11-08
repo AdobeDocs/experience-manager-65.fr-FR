@@ -2,10 +2,10 @@
 title: Utiliser les versions de page de contenu
 description: Créer, comparer et restaurer des versions d’une page dans Adobe Experience Manager.
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1501'
-ht-degree: 72%
+ht-degree: 71%
 
 ---
 
@@ -36,7 +36,7 @@ Vous pouvez créer une version de votre ressource depuis :
    ![Chronologie : Enregistrer comme version](assets/screen-shot_2019-03-05at112335.png)
 
 1. Sélectionnez **Enregistrer comme version**.
-1. Saisissez un **Libellé** et un **Commentaire** si nécessaire.
+1. Saisissez un **Libellé** et **Commentaire** si nécessaire.
 
    ![Créer une version : ajoutez un libellé et un commentaire.](assets/chlimage_1-42.png)
 

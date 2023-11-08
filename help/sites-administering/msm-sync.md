@@ -12,10 +12,10 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '2694'
-ht-degree: 71%
+ht-degree: 70%
 
 ---
 
@@ -28,7 +28,7 @@ Effectuez les tâches suivantes pour contrôler le mode et le moment de synchron
 
 ## Configurations du déploiement installées et personnalisées {#installed-and-custom-rollout-configurations}
 
-Cette section contient des informations sur les configurations du déploiement installées et les actions de synchronisation qu’elles utilisent, ainsi que sur la création de configurations personnalisées, si nécessaire.
+Cette section fournit des informations sur les configurations de déploiement installées et les actions de synchronisation qu’elles utilisent, ainsi que sur la manière de créer des configurations personnalisées si nécessaire.
 
 >[!CAUTION]
 >
@@ -386,7 +386,7 @@ Vous pouvez également configurer les configurations du déploiement d’une pag
 
    ![Configuration](assets/chlimage_1-1.png)
 
-1. Si nécessaire, ajustez l’indicateur **Héritage de Live Copy**. Si cette option est activée, la configuration de Live Copy est effective sur tous les enfants.
+1. Si nécessaire, ajustez la variable **Héritage de Live Copy** Indicateur. Si cette option est activée, la configuration de Live Copy est effective sur tous les enfants.
 
 1. Effacez la variable **Hériter de la configuration de déploiement du parent**, puis sélectionnez une ou plusieurs configurations de déploiement dans la liste.
 

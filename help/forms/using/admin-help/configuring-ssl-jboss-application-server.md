@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 8eb4f691-a66b-498e-8114-307221f63718
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '907'
-ht-degree: 74%
+ht-degree: 72%
 
 ---
 
@@ -66,7 +66,7 @@ Dans cette procédure :
    * `keytool -printcert -v -file [appserver root]\standalone\configuration\AEMForms_cert.cer`
    * `keytool -printcert -v -file [appserver root]\domain\configuration\AEMForms_cert.cer`
 
-1. Le cas échéant, pour autoriser l’accès en écriture au fichier cacerts dans `[JAVA_HOME]\jre\lib\security`, procédez comme suit :
+1. Pour accorder un accès en écriture au fichier cacerts dans `[JAVA_HOME]\jre\lib\security`Si nécessaire, effectuez la tâche suivante :
 
    * (Windows) Cliquez avec le bouton droit de la souris sur le fichier cacerts et sélectionnez Propriétés, puis l’attribut Lecture seule.
    * (Linux) Saisissez `chmod 777 cacerts`

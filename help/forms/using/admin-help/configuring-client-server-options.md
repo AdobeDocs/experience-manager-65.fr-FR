@@ -7,7 +7,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '10221'
 ht-degree: 23%
@@ -589,7 +589,7 @@ Les paramètres suivants se trouvent dans la zone Paramètres généraux de la p
 
 **Hôte SMTP :** le nom d’hôte du serveur SMTP. Le serveur SMTP gère les e-mails sortants pour enregistrer et activer les comptes d’utilisateurs invités.
 
-Si l’hôte SMTP vous l’exige, saisissez les informations requises dans les zones SMTP Server Account Name et SMTP Server Account Password pour vous connecter au serveur SMTP. Certaines organisations n’appliquent pas cette exigence. Si vous avez besoin d’informations, contactez votre administrateur système.
+Si nécessaire, saisissez les informations requises dans les zones SMTP Server Account Name (Nom de compte de serveur SMTP) et SMTP Server Account Password (Mot de passe du compte de serveur SMTP) pour vous connecter au serveur SMTP. Certaines organisations n’appliquent pas cette exigence. Si vous avez besoin d’informations, contactez votre administrateur système.
 
 **Nom de la classe de socket du serveur SMTP :** Nom de la classe de socket pour le serveur SMTP. Par exemple, javax.net.ssl.SSLSocketFactory.
 

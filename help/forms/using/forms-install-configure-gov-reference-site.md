@@ -4,9 +4,9 @@ description: Installez, configurez et personnalisez un package de démonstration
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '4611'
+source-wordcount: '4603'
 ht-degree: 66%
 
 ---
@@ -34,8 +34,8 @@ Ce package contient la configuration cloud qui prend en charge les versions de p
 | Adobe Analytics | API REST v1.4 | **Pris en charge** |
 **Considérations relatives à l’installation du package :**
 
-* Le module doit être installé sur un serveur propre, sans les autres modules de démonstration ou les anciennes versions de modules de démonstration.
-* Le package doit être installé sur un serveur OSGi s’exécutant en mode création.
+* Installez le package sur un serveur propre, sans les autres packages de démonstration ou les anciennes versions de package de démonstration.
+* Installez le package sur un serveur OSGI, en mode création.
 
 ### Que comprend ce package ? {#what-does-this-package-include}
 

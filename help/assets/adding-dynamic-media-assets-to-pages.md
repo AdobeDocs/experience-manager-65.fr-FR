@@ -11,10 +11,10 @@ docset: aem65
 role: User, Admin
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Components,Publishing
-source-git-commit: 5dcea82acdc33c5c2b9e32af412554acd2571281
-workflow-type: ht
-source-wordcount: '3262'
-ht-degree: 100%
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+workflow-type: tm+mt
+source-wordcount: '3263'
+ht-degree: 99%
 
 ---
 
@@ -73,8 +73,8 @@ Si aucun composant Dynamic Media n’est disponible pour ajouter une page, cela
 
    ![Politique](/help/assets/assets-dm/structure-mode.png)
 
-1. À proximité du bas de la page, sélectionnez **[!UICONTROL Conteneur de mises en page]** pour ouvrir sa barre d’outils, puis sélectionnez l’icône Politique.
-1. Sur la page **[!UICONTROL Conteneur de mises en page]**, sous l’en-tête **[!UICONTROL Propriétés]**, assurez-vous que l’onglet **[!UICONTROL Composants autorisés]** est sélectionné.
+1. À proximité du bas de la page, sélectionnez **[!UICONTROL Conteneur de mise en page]** pour ouvrir sa barre d’outils, puis sélectionnez l’icône Stratégie.
+1. Sur la page **[!UICONTROL conteneur de mise en page]**, sous l’en-tête **[!UICONTROL Propriétés]**, assurez-vous que l’onglet **[!UICONTROL Composants autorisés]** est sélectionné.
 
    ![Composants autorisés](/help/assets/assets-dm/allowed-components.png)
 
@@ -83,7 +83,7 @@ Si aucun composant Dynamic Media n’est disponible pour ajouter une page, cela
 
    ![Liste de composants Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
 
-1. À proximité de l’angle supérieur droit de la page **[!UICONTROL Conteneur de mises en page]**, sélectionnez l’icône Terminé (coche).
+1. À proximité de l’angle supérieur droit de la page **[!UICONTROL Conteneur de mise en page]**, sélectionnez l’icône Terminé (coche).
 
 1. Dans la liste déroulante située sur le côté droit de la barre d’outils, en haut de la page, sélectionnez **[!UICONTROL Contenu initial]**, puis [ajoutez un composant Dynamic Media à une page](#adding-a-dynamic-media-component-to-a-page) comme vous le faites habituellement.
 
@@ -310,7 +310,7 @@ Vous pouvez modifier les paramètres **[!UICONTROL Général]** ci-après en sé
 
 ### Composant Média panoramique {#panoramic-media-component}
 
-Le composant Média panoramique est destiné aux ressources qui sont des images panoramiques sphériques. Ces images offrent une expérience d’affichage à 360° d’une pièce, d’une propriété, d’un emplacement ou d’un paysage. Pour qu’une image soit un panorama sphérique, elle doit posséder l’une ou l’autre des propriétés suivantes, ou les deux :
+Le composant Média panoramique est destiné aux ressources qui sont des images panoramiques sphériques. Ces images offrent une expérience de visionnage à 360 degrés d’une pièce, d’une propriété, d’un lieu ou d’un paysage. Pour qu’une image soit un panorama sphérique, elle doit posséder l’une ou l’autre des propriétés suivantes, ou les deux :
 
 * Un format de 2:1.
 * Balisé à l’aide des mots-clés `equirectangular` ou (`spherical` + `panorama`) ou (`spherical` + `panoramic`). Voir [Utilisation des balises](/help/sites-authoring/tags.md).

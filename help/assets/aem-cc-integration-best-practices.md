@@ -7,10 +7,10 @@ role: User, Admin
 feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '3263'
-ht-degree: 94%
+source-wordcount: '3260'
+ht-degree: 93%
 
 ---
 
@@ -199,7 +199,7 @@ Adobe Asset Link offre une bonne prise en charge de ce cas pratique :
 * En outre, puisque la ressource se trouve dans le compte de Creative Cloud, elle est également disponible sur d’autres appareils que la personne peut posséder (par exemple, elle peut être ouverte ou modifiée dans une application mobile de Creative Cloud dédiée) et peut être partagée avec d’autres utilisateurs et utilisatrices de Creative Cloud à des fins de collaboration.
 * Lorsque l’utilisateur créatif a terminé d’apporter des modifications, il peut effectuer une opération d’archivage sur ce fichier dans son application Creative Cloud, en fournissant un commentaire facultatif. La ressource correspondante dans [!DNL Experience Manager] est versionnée et mise à jour avec le nouveau binaire. Les utilisateurs d’[!DNL Experience Manager] comme les spécialistes marketing ou les utilisateurs du cœur de métier ont accès aux modifications importantes des ressources, ou jalons, via l’interface utilisateur de chronologie de ressource d’[!DNL Experience Manager].
 
-L’application de bureau [!DNL Experience Manager] propose un partage réseau pour les ressources ouvertes dans l’application native. Par défaut, toutes les modifications apportées localement sont chargées automatiquement dans [!DNL Experience Manager] après un bref instant. Avec une telle configuration, les enregistrements fréquents durant la phase de tâche en cours seraient tous chargés dans [!DNL Experience Manager] et versionnés, ce qui créerait un trafic réseau important et des défis d’évolutivité potentiels, sans mentionner les versions inutiles dans [!DNL Experience Manager].
+L’application de bureau [!DNL Experience Manager] propose un partage réseau pour les ressources ouvertes dans l’application native. Par défaut, toutes les modifications apportées localement sont chargées automatiquement dans [!DNL Experience Manager] après un bref instant. Avec une telle configuration, les enregistrements fréquents pendant la phase de travail en cours seront tous transférés dans [!DNL Experience Manager] et versionnés, créant un trafic réseau volumineux et des défis potentiels d’évolutivité - sans parler des versions inutiles dans [!DNL Experience Manager].
 
 L’approche recommandée ici consiste à utiliser une option dans [!DNL Experience Manager] Application de bureau pour désactiver les mises à jour automatisées et charger les modifications dans les ressources [!DNL Experience Manager] manuellement, à l’aide de l’action de chargement des modifications dans l’interface utilisateur Asset Status de l’application.
 

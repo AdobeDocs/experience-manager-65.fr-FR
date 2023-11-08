@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 54%
+source-wordcount: '247'
+ht-degree: 40%
 
 ---
 
@@ -27,7 +27,7 @@ Le framework utilise des jetons pour garantir que la demande du client est légi
 
 ### Dépendances {#dependencies}
 
-Tout composant associé à la dépendance `granite.jquery` bénéficie automatiquement du framework de protection CSRF. Si ce n’est pas le cas pour l’un de vos composants, vous devez déclarer une dépendance à `granite.csrf.standalone` avant de pouvoir utiliser le framework.
+Tout composant qui repose sur la variable `granite.jquery` La dépendance peut bénéficier automatiquement de la structure de protection CSRF. Dans le cas contraire, pour l’un de vos composants, vous devez déclarer une dépendance à `granite.csrf.standalone` avant de pouvoir utiliser la structure.
 
 ### Réplication de la clé de chiffrement {#replicating-crypto-keys}
 

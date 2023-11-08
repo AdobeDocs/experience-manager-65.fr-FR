@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '2451'
-ht-degree: 48%
+ht-degree: 47%
 
 ---
 
@@ -167,7 +167,7 @@ Vous pouvez créer un [Transitoire](/help/sites-developing/workflows.md#transien
 
 1. Ouvrez le modèle de workflow pour [édition](#editinganexistingworkflow).
 1. Sélectionnez **Propriétés du modèle de workflow** dans la barre d’outils.
-1. Dans la boîte de dialogue, activez **Workflow transitoire** (ou désactivez cette option si nécessaire) :
+1. Dans la boîte de dialogue, activez **Processus transitoire** (ou désactivez-la si nécessaire) :
 
    ![wf-07](assets/wf-07.png)
 
@@ -208,7 +208,7 @@ Vous pouvez configurer un modèle de workflow pour [Prise en charge multi-ressou
 1. Ouvrez le modèle de workflow pour [édition](#editinganexistingworkflow).
 1. Sélectionnez **Propriétés du modèle de workflow** dans la barre d’outils.
 
-1. Dans la boîte de dialogue, activez **Prise en charge multi-ressource** (ou désactivez cette option si nécessaire) :
+1. Dans la boîte de dialogue, activez **Prise en charge multi-ressource** (ou désactivez-la si nécessaire) :
 
    ![wf-08](assets/wf-08.png)
 
@@ -416,7 +416,7 @@ Pour définir une règle OU, procédez comme suit :
 
    >[!NOTE]
    >
-   >Vous pouvez changer l’ordre des branches si nécessaire.
+   >Si nécessaire, vous pouvez changer l’ordre des branches.
 
 1. Modifiez les propriétés de la **Branche 2** de la **Division OU**.
 

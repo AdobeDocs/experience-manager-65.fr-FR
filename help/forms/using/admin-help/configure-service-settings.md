@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '10692'
 ht-degree: 54%
@@ -614,9 +614,9 @@ Validation Of Signatures :** lorsque cette option est sélectionnée, les infor
 
 **URL du serveur TSP :** l’URL du fournisseur d’horodatage par défaut. Utilisé uniquement si une valeur valide est fournie. Pas de valeur par défaut.
 
-**Nom d’utilisateur du serveur TSP :** le nom d’utilisateur si le fournisseur d’horodatage l’exige. Utilisé uniquement si une valeur valide est fournie pour l’URL. Pas de valeur par défaut.
+**Nom d’utilisateur du serveur TSP :** Nom d’utilisateur si nécessaire par le fournisseur d’horodatage. Utilisé uniquement si une valeur valide est fournie pour l’URL. Pas de valeur par défaut.
 
-**Mot de passe du serveur TSP :** le mot de passe du nom d’utilisateur ci-dessus si le fournisseur d’horodatage l’exige. Utilisé uniquement si une valeur valide est fournie pour l’URL et le nom d’utilisateur. Pas de valeur par défaut.
+**TSP Server Password :** mot de passe du nom d’utilisateur ci-dessus si nécessaire par le fournisseur d’horodatage. Utilisé uniquement si une valeur valide est fournie pour l’URL et le nom d’utilisateur. Pas de valeur par défaut.
 
 **Request Hash Algorithm :** indique l’algorithme de hachage à utiliser lors de la création de la demande pour le fournisseur d’horodatage. La valeur par défaut est SHA1.
 

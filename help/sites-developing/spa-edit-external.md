@@ -2,10 +2,10 @@
 title: Modification d’un SPA externe dans Adobe Experience Manager
 description: Ce document décrit les étapes recommandées pour charger un SPA autonome vers une instance Adobe Experience Manager, ajouter des sections de contenu modifiables et activer la création.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '2432'
-ht-degree: 88%
+ht-degree: 87%
 
 ---
 
@@ -300,7 +300,7 @@ Si vous avez suivi les exemples précédents, votre SPA externe est désormais m
 
 ### ID de nœud racine {#root-node-id}
 
-Par défaut, nous supposons que l’application React est rendue dans un `div` de l’ID d’élément `spa-root`. Il est possible si nécessaire de personnaliser cette fonction.
+Par défaut, nous supposons que l’application React est rendue dans un `div` de l’ID d’élément `spa-root`. Au besoin, cela peut être personnalisé.
 
 Par exemple, supposons que nous ayons une SPA dans lequel l’application est rendue dans un `div` de l’ID d’élément `root`. Il faut que cet élément se reflète dans trois fichiers.
 

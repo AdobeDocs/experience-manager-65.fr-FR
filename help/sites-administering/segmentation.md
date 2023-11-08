@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1772'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -137,7 +137,7 @@ Pour définir votre nouveau segment, procédez comme suit :
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. Dans la section **Nouveau segment ContextHub**, saisissez un titre pour le segment et une valeur d’amplification si nécessaire, puis appuyez ou cliquez sur **Créer**.
+1. Dans le **Nouveau segment ContextHub**, saisissez un titre pour le segment et une valeur d’amplification si nécessaire, puis appuyez ou cliquez sur **Créer**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 

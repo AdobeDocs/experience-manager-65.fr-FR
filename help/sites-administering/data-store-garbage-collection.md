@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 66%
@@ -139,7 +139,7 @@ Pour exécuter la récupération de l’espace mémoire :
 1. Dans la console de gestion OSGi Apache Felix, mettez en surbrillance le **Principal** et sélectionnez **JMX** dans le menu suivant.
 1. Ensuite, recherchez puis cliquez sur le bouton **Gestionnaire de référentiel** MBean (ou accédez à `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
 1. Cliquez sur **startDataStoreGC(boolean markOnly)**.
-1. Entrez `true` pour le paramètre `markOnly` si nécessaire :
+1. enter &quot;`true`&quot; pour la variable `markOnly` si nécessaire :
 
    | **Option** | **Description** |
    |---|---|

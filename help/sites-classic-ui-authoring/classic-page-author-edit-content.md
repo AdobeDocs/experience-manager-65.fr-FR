@@ -1,18 +1,16 @@
 ---
 title: Modifier le contenu de la page
 description: Vous ajoutez du contenu en faisant glisser des composants sur la page. Ils peuvent ensuite être modifiés sur place, déplacés ou supprimés.
-uuid: e7b65ceb-263c-46f2-91e3-11dec3a016fa
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1832'
-ht-degree: 92%
+source-wordcount: '1831'
+ht-degree: 91%
 
 ---
 
@@ -110,7 +108,7 @@ Pour créer un composant en faisant glisser l’un des types de ressources ci-de
 
    Un composant, adapté au type de ressource, est créé à l’emplacement requis. Il contient la ressource sélectionnée.
 
-1. [Modifiez](#editmovecopypastedelete) le composant si nécessaire.
+1. [Modifier](#editmovecopypastedelete) le composant, si nécessaire.
 
 ## Modifier un composant (contenu et propriétés) {#editing-a-component-content-and-properties}
 
@@ -227,7 +225,7 @@ Pour des modifications à plus grande échelle de la même expression, une **[Re
 
 ## Verrouillage d’une page {#locking-a-page}
 
-AEM permet de verrouiller une page, de sorte que personne d’autre ne puisse en modifier le contenu. Cette option est pratique lorsque vous souhaitez réaliser un nombre important de modifications sur une page unique ou que vous souhaitez geler le contenu d’une page pendant un certain temps.
+AEM permet de verrouiller une page, de sorte que personne d’autre ne puisse en modifier le contenu. Cela s’avère utile lorsque vous apportez de nombreuses modifications à une page spécifique ou lorsque vous devez figer une page pendant un court moment.
 
 >[!CAUTION]
 >

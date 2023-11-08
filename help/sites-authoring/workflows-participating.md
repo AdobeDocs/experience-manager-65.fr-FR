@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1519'
-ht-degree: 96%
+ht-degree: 88%
 
 ---
 
@@ -66,7 +66,7 @@ Vous pouvez terminer un élément pour permettre au workflow de passer à l’é
 Sur cette action, vous pouvez indiquer :
 
 * **Étape suivante** : la prochaine étape à suivre ; vous pouvez la sélectionner dans une liste fournie
-* **Commentaire** : si nécessaire
+* **Commentaire**: si nécessaire
 
 Vous pouvez terminer une étape de participant à partir des éléments suivants :
 
@@ -82,7 +82,7 @@ Utilisez la procédure suivante pour terminer l’élément de travail :
 1. Ouvrez la **[boîte de réception AEM](/help/sites-authoring/inbox.md)**.
 1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (appuyez/cliquez sur la miniature).
 1. Sélectionnez **Terminer** dans la barre d’outils.
-1. La variable **Terminer l’élément de travail** s’ouvre. Choisissez **Étape suivante** dans la liste déroulante et ajoutez un **commentaire**, le cas échéant.
+1. La variable **Terminer l’élément de travail** s’ouvre. Sélectionnez la variable **Étape suivante** à partir du sélecteur de liste déroulante et ajoutez une **Commentaire** si nécessaire.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Réalisation d’une étape de participant – Éditeur de page {#completing-a-participant-step-page-editor}
@@ -91,7 +91,7 @@ Utilisez la procédure suivante pour terminer l’élément de travail :
 
 1. Ouvrez la [page en mode d’édition](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Sélectionnez **Terminer** dans la barre d’état en haut.
-1. La variable **Terminer l’élément de travail** s’ouvre. Choisissez **Étape suivante** dans la liste déroulante et ajoutez un **commentaire**, le cas échéant.
+1. La variable **Terminer l’élément de travail** s’ouvre. Sélectionnez la variable **Étape suivante** à partir du sélecteur de liste déroulante et ajoutez une **Commentaire** si nécessaire.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Réalisation d’une étape de participant – Chronologie {#completing-a-participant-step-timeline}
@@ -125,7 +125,7 @@ Les utilisateurs et les utilisatrices pouvant faire l’objet d’une délégati
 Sur cette action, vous pouvez indiquer :
 
 * **Utilisateur ou utilisatrice** : la personne à laquelle vous souhaitez déléguer. Vous pouvez la sélectionner dans une liste fournie
-* **Commentaire** : si nécessaire
+* **Commentaire**: si nécessaire
 
 Vous pouvez déléguer une étape de participant depuis :
 
@@ -141,7 +141,7 @@ Utilisez la procédure suivante pour déléguer un élément de travail :
 1. Ouvrez la **[boîte de réception AEM](/help/sites-authoring/inbox.md)**.
 1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (appuyez/cliquez sur la miniature).
 1. Sélectionnez **Déléguer** dans la barre d’outils.
-1. La boîte de dialogue s’ouvre. Définissez l’**utilisateur ou l’utilisatrice** dans le sélecteur déroulant (il peut également s’agir d’un groupe) et ajoutez un **commentaire**, le cas échéant.
+1. La boîte de dialogue s’ouvre. Spécifiez la variable **Utilisateur** à partir du sélecteur de liste déroulante (il peut également s’agir d’un groupe) et ajoutez une **Commentaire** si nécessaire.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Délégation d’une étape de participant – Éditeur de page {#delegating-a-participant-step-page-editor}
@@ -150,7 +150,7 @@ Utilisez la procédure suivante pour déléguer un élément de travail :
 
 1. Ouvrez la [page en mode d’édition](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Sélectionnez **Déléguer** dans la barre d’état en haut.
-1. La boîte de dialogue s’ouvre. Définissez l’**utilisateur ou l’utilisatrice** dans le sélecteur déroulant (il peut également s’agir d’un groupe) et ajoutez un **commentaire**, le cas échéant.
+1. La boîte de dialogue s’ouvre. Spécifiez la variable **Utilisateur** à partir du sélecteur de liste déroulante (il peut également s’agir d’un groupe) et ajoutez une **Commentaire** si nécessaire.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Délégation d’une étape de participant – Chronologie {#delegating-a-participant-step-timeline}
@@ -175,7 +175,7 @@ Si vous découvrez qu’une étape, ou une série d’étapes, doit être répé
 Sur cette action, vous pouvez indiquer :
 
 * **Étape précédente** : l’étape à laquelle revenir. Vous pouvez la sélectionner dans une liste fournie
-* **Commentaire** : si nécessaire
+* **Commentaire**: si nécessaire
 
 Vous pouvez revenir en arrière sur une étape de participant depuis :
 
@@ -192,7 +192,7 @@ Procédez comme suit pour revenir en arrière :
 1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (appuyez/cliquez sur la miniature).
 1. Sélectionnez **Revenir en arrière** pour ouvrir la boîte de dialogue.
 
-1. Définissez l’**étape précédente** et ajoutez un **commentaire** si nécessaire.
+1. Spécifiez la variable **Étape précédente** et ajoutez une **Commentaire** si nécessaire.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Revenir d’une étape de participant en arrière – Éditeur de page {#performing-step-back-on-a-participant-step-page-editor}
@@ -201,7 +201,7 @@ Procédez comme suit pour revenir en arrière :
 
 1. Ouvrez la [page en mode d’édition](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Sélectionnez **Revenir en arrière** dans la barre d’état en haut.
-1. Définissez l’**étape précédente** et ajoutez un **commentaire** si nécessaire.
+1. Spécifiez la variable **Étape précédente** et ajoutez une **Commentaire** si nécessaire.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Revenir d’une étape de participant en arrière – Chronologie {#performing-step-back-on-a-participant-step-timeline}
@@ -254,7 +254,7 @@ Pour ouvrir un élément de workflow et afficher les détails :
 1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (appuyez/cliquez sur la miniature).
 1. Sélectionnez **Ouvrir** pour ouvrir les onglets d’informations.
 
-1. Si nécessaire, choisissez l’action appropriée, saisissez les informations et confirmez avec **OK** (ou **Annuler**).
+1. Si nécessaire, sélectionnez l’action appropriée, fournissez les détails et confirmez avec **OK** (ou **Annuler**).
 1. Utilisez **Enregistrer** ou **Annuler** pour quitter.
 
 #### Ouverture des détails de workflow – Éditeur de page {#opening-workflow-details-page-editor}
@@ -264,7 +264,7 @@ Pour ouvrir un élément de workflow et afficher les détails :
 1. Ouvrez la [page en mode d’édition](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Sélectionnez **Afficher les détails** dans la barre d’état pour ouvrir les onglets d’informations.
 
-1. Si nécessaire, choisissez l’action appropriée, saisissez les informations et confirmez avec **OK** (ou **Annuler**).
+1. Si nécessaire, sélectionnez l’action appropriée, fournissez les détails et confirmez avec **OK** (ou **Annuler**).
 1. Utilisez **Enregistrer** ou **Annuler** pour quitter.
 
 ### Affichage du payload de workflow (plusieurs ressources) {#viewing-the-workflow-payload-multiple-resources}

@@ -10,10 +10,10 @@ discoiquuid: fe59d260-d392-4d6f-bb7e-2f2a1d701f51
 docset: aem65
 feature: Interactive Communication
 exl-id: 0c0dc6a2-b889-4516-8e08-1e9d31be2cce
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1498'
-ht-degree: 62%
+ht-degree: 61%
 
 ---
 
@@ -201,4 +201,4 @@ Appuyez à nouveau sur Redimensionner pour revenir à la boîte de dialogue Cré
 1. Pour insérer une variable dans la règle, glissez-déposez-la dans un espace réservé à une option de la règle.
 1. Après avoir construit une règle valide, appuyez sur **[!UICONTROL Terminé]**.
 
-   Effectuez d’autres modifications dans la condition, si nécessaire, et enregistrez-la.
+   Procédez à d’autres modifications, si nécessaire, dans la condition et enregistrez-la.

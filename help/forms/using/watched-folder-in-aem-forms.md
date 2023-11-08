@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '7144'
 ht-degree: 35%
@@ -489,7 +489,7 @@ Pour un point de fin Watched Folder, les utilisateurs peuvent lancer des opérat
 
 Pour les points de fin Watched Folder, si une tâche ne nécessite qu’un seul fichier d’entrée, l’utilisateur peut le copier à la racine du dossier de contrôle.
 
-Si la tâche contient plusieurs fichiers d’entrée, l’utilisateur doit créer, en dehors de la hiérarchie du dossier de contrôle, un dossier contenant tous les fichiers requis. Ce nouveau dossier doit inclure les fichiers d’entrée (et éventuellement un fichier DDX s’il est requis par le processus). Une fois le dossier de tâches créé, l’utilisateur le copie dans le dossier d’entrée du dossier de contrôle.
+Si la tâche contient plusieurs fichiers d’entrée, l’utilisateur doit créer, en dehors de la hiérarchie du dossier de contrôle, un dossier contenant tous les fichiers requis. Ce nouveau dossier doit inclure les fichiers d’entrée (et éventuellement un fichier DDX si nécessaire par le processus). Une fois le dossier de tâches créé, l’utilisateur le copie dans le dossier d’entrée du dossier de contrôle.
 
 >[!NOTE]
 >

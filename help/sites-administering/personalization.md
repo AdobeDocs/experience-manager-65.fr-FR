@@ -1,19 +1,15 @@
 ---
 title: Personnalisation
-seo-title: Personalization
 description: Découvrez la personnalisation dans Adobe Experience Manager afin de fournir à l’utilisateur un environnement sur mesure affichant du contenu dynamique.
-seo-description: Learn about personalization in AEM.
-uuid: 5790a3e0-f0ec-4785-b915-330a10dea30c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 62%
+source-wordcount: '1696'
+ht-degree: 60%
 
 ---
 
@@ -115,7 +111,7 @@ Lorsque vous utilisez la personnalisation, tenez compte des aspects suivants :
 
 * La personnalisation réalisée en suivant le comportement de l’utilisateur ou en définissant des règles basées sur le profil de l’utilisateur doit être précise et logique.
 * Il n’y a rien de plus frustrant pour l’utilisateur que de se voir imposer ou refuser du contenu en raison de la logique inexacte d’une règle.
-* Par conséquent, les règles doivent être pensées avec soin, en ayant d’abord à l’esprit les besoins de l’utilisateur. Cette étape peut nécessiter beaucoup d’efforts et ne doit pas être sous-estimée. En effet, la création des règles est souvent plus exigeante que l’effort technique nécessaire à la mise en œuvre de la personnalisation.
+* Par conséquent, les règles doivent être pensées avec soin, en ayant d’abord à l’esprit les besoins de l’utilisateur. Cela peut nécessiter beaucoup d’efforts et ne doit pas être sous-estimé ; la définition des règles de fonctionnement l’emporte souvent sur l’effort technique lors de la mise en oeuvre de la personnalisation.
 
 #### Le moment où l’utiliser {#when-to-use}
 
@@ -157,7 +153,7 @@ Divers composants sont fournis avec AEM en vue de la personnalisation. Certains 
 | Champ de texte de formulaire | Champ de texte qui permet aux utilisateurs de saisir des informations. |
 | Mes gadgets | Vous permet d’inclure l’une des sélections de gadgets disponibles. |
 | Photo de l’avatar du profil | Permet le chargement d’une photo d’avatar. |
-| Nom détaillé du profil | Saisie des détails du nom, y compris les éléments tels que le titre, le deuxième prénom et le suffixe le cas échéant. |
+| Nom détaillé du profil | Saisie des détails du nom, y compris des éléments tels que le titre, le deuxième nom et le suffixe si nécessaire. |
 | Nom d’affichage du profil | Nom à afficher. |
 | E-mail du profil | Saisie d’une adresse électronique. |
 | Genre du profil | Permet la saisie du genre. |

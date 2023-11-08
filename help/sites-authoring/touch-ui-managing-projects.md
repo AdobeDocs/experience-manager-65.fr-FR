@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '980'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -43,7 +43,7 @@ Pour créer un projet, procédez comme suit.
 
    ![Assistant Créer un projet](assets/create-project-wizard.png)
 
-1. Définissez le **titre** et la **description**, puis ajoutez une **miniature** s’il y a lieu. Vous pouvez également ajouter ou supprimer des utilisateurs et définir le groupe auquel ils appartiennent.
+1. Définissez la variable **Titre** et **Description** et ajoutez une **Miniature** image si nécessaire. Vous pouvez également ajouter ou supprimer des utilisateurs et définir le groupe auquel ils appartiennent.
 
    ![Étape Propriétés de l’assistant](assets/create-project-wizard-properties.png)
 

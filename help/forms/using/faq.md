@@ -12,10 +12,10 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '2005'
-ht-degree: 65%
+source-wordcount: '2003'
+ht-degree: 64%
 
 ---
 
@@ -116,7 +116,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts 
 
 1. Pourquoi les formulaires HTML sont-ils plus volumineux que les formulaires PDF ?
 
-   Réponse : de nombreuses structures et objets de données intermédiaires tels que les DOM du formulaire, les DOM de données et les DOM de disposition sont requis pour effectuer le rendu d’un XDP sur un formulaire HTML.
+   Réponse : de nombreuses structures et objets de données intermédiaires tels que les DOM de formulaire, les DOM de données et les DOM de mise en page sont nécessaires pour effectuer le rendu d’un XDP sur un formulaire de HTML.
 
    Pour les PDF forms, Adobe Acrobat dispose d’un moteur XTG intégré pour créer des structures de données intermédiaires, ainsi que des objets. Acrobat prend également en charge la mise en page et les scripts.
 

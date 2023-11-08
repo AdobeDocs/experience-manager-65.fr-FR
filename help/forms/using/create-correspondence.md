@@ -6,7 +6,7 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '3849'
 ht-degree: 98%
@@ -121,7 +121,7 @@ Dans l’onglet Contenu, gérez le contenu tel que les fragments de document et 
    >
    >Pour plus d’informations sur la configuration de l’espacement des tabulations pour vos modules de texte et lettres, voir la section [Informations supplémentaires sur l’utilisation de l’espacement des tabulations pour l’agencement du texte](https://helpx.adobe.com/fr/aem-forms/kb/cm-tab-spacing-limitations.html).
 
-1. Si nécessaire, insérez des caractères spéciaux dans la correspondance. Vous pouvez, par exemple, utiliser la palette des caractères spéciaux pour insérer les caractères suivants :
+1. Au besoin, insérez des caractères spéciaux dans la correspondance. Vous pouvez, par exemple, utiliser la palette des caractères spéciaux pour insérer les caractères suivants :
 
    * Symboles de devise tels que €,￥et £
    * Symboles mathématiques tels que ∑, √, ∂ et ^

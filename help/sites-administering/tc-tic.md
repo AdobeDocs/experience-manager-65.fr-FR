@@ -4,10 +4,10 @@ description: Découvrez comment configurer la structure d’intégration de trad
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1571'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -50,7 +50,7 @@ Créez une configuration de cloud qui connecte AEM à votre fournisseur de servi
 
 Une fois que vous avez installé un package de connecteur, vous pouvez créer une configuration de cloud pour le connecteur. En général, vous devez fournir vos informations d’identification afin de vous authentifier auprès du service de traduction. Pour plus d’informations sur l’ajout d’une configuration cloud pour le connecteur Microsoft Translator, voir [Intégration avec Microsoft Translator](/help/sites-administering/tc-msconf.md).
 
-Vous pouvez créer plusieurs configurations de cloud pour le même connecteur, si nécessaire. Par exemple, créez une configuration pour chacun des comptes ou projets que vous avez avec le même fournisseur.
+Si nécessaire, vous pouvez créer plusieurs configurations de cloud pour le même connecteur. Par exemple, créez une configuration pour chacun des comptes ou projets que vous avez avec le même fournisseur.
 
 Après avoir configuré une connexion, vous pouvez créer la configuration du framework d’intégration de traduction qui l’utilise.
 

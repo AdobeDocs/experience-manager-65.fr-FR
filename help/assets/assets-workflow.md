@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Workflow, Renditions
 role: User, Admin
 exl-id: e7c84385-efb3-4997-83ff-7a7f31582469
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 95%
+source-wordcount: '959'
+ht-degree: 93%
 
 ---
 
@@ -77,7 +77,7 @@ Pour appliquer un workflow à une ressource, procédez comme suit :
    ![Démarrer le processus](assets/start-workflow.png)
 
 1. (Facultatif) Spécifiez le titre du workflow, qui peut permettre de référencer l’instance du workflow.
-1. Cliquez sur **[!UICONTROL Démarrer]**, puis sur **[!UICONTROL Confirmer]** dans la boîte de dialogue. Le workflow s’exécute sur toutes les ressources sélectionnées.
+1. Cliquez sur **[!UICONTROL Démarrer]**, puis sur **[!UICONTROL Confirmer]** dans la boîte de dialogue. Le workflow s’exécute sur toutes les ressources que vous avez sélectionnées.
 
 ## Application d’un workflow à plusieurs dossiers {#applying-a-workflow-to-multiple-folders}
 
@@ -98,7 +98,7 @@ Pour chaque modèle de workflow, les utilisateurs peuvent créer un lanceur de w
 
 ## Bonnes pratiques et restrictions {#best-practices-limitations-tips}
 
-* Pour la conception des workflows, prenez en compte vos besoins pour tous les types de rendus. Si vous ne prévoyez pas la nécessité d’un rendu futur, supprimez son étape de création dans le workflow. Il est impossible par la suite de supprimer les rendus en masse. Les rendus superflus peuvent occuper beaucoup d’espace de stockage suite à une utilisation prolongée d’[!DNL Experience Manager]. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Si plusieurs ressources sont concernées, vous pouvez, au choix, personnaliser [!DNL Experience Manager] pour supprimer des rendus spécifiques, ou supprimer les ressources et les charger à nouveau.
+* Pour la conception des workflows, prenez en compte vos besoins pour tous les types de rendus. Si vous ne prévoyez pas la nécessité d’un rendu futur, supprimez son étape de création dans le workflow. Il est impossible par la suite de supprimer les rendus en masse. Les rendus non souhaités peuvent occuper de l’espace de stockage après une utilisation prolongée de [!DNL Experience Manager]. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Si plusieurs ressources sont concernées, vous pouvez, au choix, personnaliser [!DNL Experience Manager] pour supprimer des rendus spécifiques, ou supprimer les ressources et les charger à nouveau.
 * Par défaut, le workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques] comprend quelques étapes pour créer des miniatures et des rendus Web. Si des rendus par défaut sont supprimés du workflow, l’interface utilisateur d’[!DNL Assets] ne s’affiche pas correctement.
 
 >[!MORELIKETHIS]

@@ -3,10 +3,10 @@ title: Création et synchronisation de Live Copies
 description: Découvrez comment créer et synchroniser des Live Copies dans Adobe Experience Manager.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '4227'
-ht-degree: 72%
+ht-degree: 71%
 
 ---
 
@@ -522,7 +522,7 @@ Lorsque vous annulez l’héritage, vous pouvez modifier la valeur de la propri�
 
 ![Modifier la propriété lorsque l’héritage est rompu](assets/chlimage_1-232.png)
 
-Vous pourrez par la suite réactiver l’héritage pour une propriété, si nécessaire.
+Vous pouvez réactiver ultérieurement l’héritage d’une propriété, si nécessaire.
 
 >[!NOTE]
 >
