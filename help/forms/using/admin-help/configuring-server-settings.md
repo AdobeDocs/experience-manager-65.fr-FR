@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '2623'
-ht-degree: 19%
+ht-degree: 18%
 
 ---
 
@@ -27,7 +27,7 @@ La page Paramètres du serveur permet d’accéder aux différents paramètres d
 
 ## Configuration des paramètres de courrier électronique {#configuring-email-settings}
 
-Vous pouvez indiquer un compte de courrier électronique pour le serveur AEM Forms, par l’intermédiaire duquel il envoie des courriers électroniques aux utilisateurs et aux administrateurs et en reçoit de la part de ces mêmes utilisateurs et administrateurs. Ces courriers électroniques sont utilisés pour avertir et rappeler aux utilisateurs les tâches qu’ils doivent effectuer, informer l’utilisateur des tâches qui ont atteint un délai et informer l’administrateur des erreurs de processus qui se produisent.
+Vous pouvez spécifier un compte de messagerie pour le serveur Forms, par l’intermédiaire duquel il envoie des messages électroniques aux utilisateurs et administrateurs d’AEM forms. Ces courriers électroniques sont utilisés pour avertir et rappeler aux utilisateurs les tâches qu’ils doivent effectuer, informer l’utilisateur des tâches qui ont atteint un délai et informer l’administrateur des erreurs de processus qui se produisent.
 
 Pour activer l’envoi de courriers électroniques entre AEM forms et les utilisateurs, configurez les paramètres de courrier électronique sortant sur la page Paramètres de courrier électronique. L&#39;email sortant doit utiliser un serveur SMTP.
 
@@ -288,7 +288,7 @@ Sur la page Paramètres de configuration BAM, vous définissez les connexions au
 1. Dans Administration Console, cliquez sur Services > Processus Forms > Paramètres du serveur > Paramètres de configuration BAM.
 1. Dans la zone Hôte BAM, saisissez le nom du serveur exécutant BAM. La valeur par défaut est localhost.
 1. Dans la zone BAM Port, saisissez le port à utiliser pour la connexion au serveur qui exécute BAM. Le port BAM par défaut pour JBoss est 8080, WebLogic 7001 et WebSphere 9080.
-1. Dans la zone Server Host, saisissez le nom ou l’adresse IP du serveur de formulaires hôte. la valeur par défaut est localhost.
+1. Dans la zone Server Host, saisissez le nom ou l’adresse IP du serveur Forms hôte. la valeur par défaut est localhost.
 1. Dans la zone Server Port, saisissez le numéro de port utilisé par le serveur Forms.
 1. Dans les zones User Name (Nom d’utilisateur) et Password (Mot de passe), saisissez l’identifiant utilisateur et le mot de passe appropriés pour accéder au serveur BAM. Le nom d’utilisateur par défaut est CognosNowAdmin et le mot de passe par défaut est manager.
 1. Cliquez sur Enregistrer.

@@ -1,24 +1,22 @@
 ---
 title: Mettre à niveau vers AEM 6.5 Forms sur JEE
 description: Vous pouvez effectuer une mise à niveau directe à partir d’AEM 6.1 Forms, AEM 6.2 Forms et LiveCycle ES4 SP1 vers AEM 6.3 Forms.
-uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
-discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: 722e75a0-bcb3-465e-bb74-ea94a3b99fd3
-source-git-commit: fbc371e59c4f80195fe90da5f635267141c8849e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 83%
+source-wordcount: '366'
+ht-degree: 80%
 
 ---
 
 # Mettre à niveau vers AEM 6.5 Forms on JEE {#upgrade-to-aem-forms-jee}
 
-AEM 6.5.18.0 Forms on JEE fournit deux types de programme d’installation : le programme d’installation complet et le programme d’installation des correctifs.
+AEM 6.5.18.0 Forms on JEE fournit deux types d’installation : programme d’installation complet et programme d’installation des correctifs.
 
 **Programme d’installation complet**: vous pouvez utiliser la variable [Programme d’installation complet d’AEM 6.5.18.0 on JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) pour configurer de nouvelles instances AEM Forms ou effectuer des mises à niveau d’AEM Forms on JEE 6.5.x.x vers AEM 6.5.18.0 Forms on JEE.
 

@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '445'
 ht-degree: 32%
 
 ---
@@ -81,7 +81,7 @@ Pour la configuration de base, suivez les étapes suivantes :
 
 ## Utilisation de votre nouveau service dans des pages {#using-your-new-service-on-pages}
 
-Après avoir créé la configuration du service, vous devez maintenant configurer les pages requises pour l’utiliser :
+Après avoir créé la configuration du service, vous devez configurer les pages requises pour l’utiliser :
 
 1. Accédez à la page.
 1. Ouvrez les **Propriétés de page** dans le sidekick, puis l’onglet **Services cloud**.

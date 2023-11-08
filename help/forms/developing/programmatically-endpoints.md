@@ -1,20 +1,16 @@
 ---
 title: Gestion des points d’entrée par programmation
-seo-title: Programmatically Managing Endpoints
 description: Utilisez le service Endpoint Registry pour ajouter des points d’entrée EJB, ajouter des points d’entrée SOAP, ajouter des points d’entrée Watched Folder, ajouter des points d’entrée Email, ajouter des points d’entrée Remoting, ajouter des points d’entrée Task Manager, modifier des points d’entrée, supprimer des points d’entrée et récupérer les informations du connecteur de point d’entrée.
-seo-description: Use the Endpoint Registry service to add EJB endpoints, add SOAP endpoint, add Watched Folder endpoints, add Email endpoints, add  Remoting endpoints, add Task Manager endpoints, modify endpoints, remove endpoints, and retrieve endpoint connector information.
-uuid: 5dc50946-3323-4c5d-a43b-31c1c980bd04
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '10790'
-ht-degree: 98%
+source-wordcount: '10791'
+ht-degree: 84%
 
 ---
 
@@ -79,7 +75,7 @@ Pour ajouter un point d’entrée EJB à un service, effectuez les tâches suiva
 
 **Inclure les fichiers de projet**
 
-Incluez les fichiers nécessaires dans votre projet de développement. Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
+Incluez les fichiers nécessaires dans votre projet de développement. Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -124,7 +120,7 @@ Ajoutez un point d’entrée EJB à l’aide de l’API Java :
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR du client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes du projet Java. (
+   Incluez les fichiers JAR client, tels que adobe-livecycle-client.jar, dans le chemin de classe de votre projet Java. (
 
 1. Créez un objet client EndpointRegistry.
 
@@ -134,19 +130,19 @@ Ajoutez un point d’entrée EJB à l’aide de l’API Java :
 1. Définissez les attributs du point d’entrée EJB.
 
    * Créez un objet `CreateEndpointInfo` en utilisant son constructeur.
-   * Spécifiez la valeur de l’identificateur du connecteur en appelant la méthode `setConnectorId` de l’objet `CreateEndpointInfo` et en transmettant la valeur de chaîne `EJB`.
-   * Spécifiez la description du point d’entrée en appelant la méthode `setDescription` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui décrit le point d’entrée.
-   * Indiquez le nom du point d’entrée en appelant la méthode `setName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom.
-   * Spécifiez le service auquel appartient le point d’entrée en appelant la méthode `CreateEndpointInfo` de l’objet `setServiceId` et en transmettant une valeur string spécifiant le nom du service.
-   * Spécifiez l’opération appelée en appelant la méthode `CreateEndpointInfo` de l’objet `setOperationName` et en transmettant une valeur string qui spécifie le nom de l’opération. Pour les points d’entrée SOAP et EJB, spécifiez un caractère générique (`*`) qui implique toutes les opérations.
+   * Spécifiez la valeur de l’identifiant du connecteur en appelant la variable `CreateEndpointInfo` de `setConnectorId` et transmission de la valeur de chaîne `EJB`.
+   * Spécifiez la description du point de fin en appelant la fonction `CreateEndpointInfo` de `setDescription` et transmission d’une valeur string qui décrit le point de terminaison .
+   * Indiquez le nom du point de fin en appelant la fonction `CreateEndpointInfo` de `setName` et transmission d’une valeur string qui spécifie le nom.
+   * Spécifiez le service auquel appartient le point de fin en appelant la fonction `CreateEndpointInfo` de `setServiceId` et transmission d’une valeur string qui spécifie le nom du service.
+   * Spécifiez l’opération appelée en appelant la fonction `CreateEndpointInfo` de `setOperationName` et transmettez une valeur string qui spécifie le nom de l’opération. Pour les points d’entrée SOAP et EJB, spécifiez un caractère générique (`*`) qui implique toutes les opérations.
 
 1. Créez un point d’entrée EJB.
 
-   Créez le point d’entrée en appelant la méthode `EndpointRegistryClient` de l’objet `createEndpoint` et en transmettant l’objet `CreateEndpointInfo`. Cette méthode renvoie un objet `Endpoint` représentant le nouveau point d’entrée EJB.
+   Créez le point de fin en appelant la méthode `EndpointRegistryClient` de `createEndpoint` et transmission de la méthode `CreateEndpointInfo` . Cette méthode renvoie un objet `Endpoint` représentant le nouveau point d’entrée EJB.
 
 1. Activez le point d’entrée.
 
-   Activez le point d’entrée en appelant la méthode d’activation `EndpointRegistryClient` de l’objet et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
+   Activez le point de fin en appelant la fonction `EndpointRegistryClient` méthode enable de l’objet et transmission de la méthode `Endpoint` qui a été renvoyé par l’objet `createEndpoint` .
 
 **Voir également**
 
@@ -184,7 +180,7 @@ Pour ajouter un point d’entrée SOAP à un service, effectuez les tâches suiv
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -229,7 +225,7 @@ Ajoutez un point d’entrée SOAP à un service à l’aide de l’API Java :
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR du client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
+   Incluez les fichiers JAR client, tels que adobe-livecycle-client.jar, dans le chemin de classe de votre projet Java.
 
 1. Créez un objet client EndpointRegistry.
 
@@ -239,19 +235,19 @@ Ajoutez un point d’entrée SOAP à un service à l’aide de l’API Java :
 1. Définissez les attributs de point d’entrée SOAP.
 
    * Créez un objet `CreateEndpointInfo` en utilisant son constructeur.
-   * Spécifiez la valeur de l’identificateur du connecteur en appelant la méthode `setConnectorId` de l’objet `CreateEndpointInfo` et en transmettant la valeur de chaîne `SOAP`.
-   * Spécifiez la description du point d’entrée en appelant la méthode `setDescription` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui décrit le point d’entrée.
-   * Indiquez le nom du point d’entrée en appelant la méthode `setName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom.
-   * Spécifiez le service auquel appartient le point d’entrée en appelant la méthode `setServiceId` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom du service.
-   * Spécifiez l’opération appelée en appelant la méthode `setOperationName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom de l’opération. Pour les points d’entrée SOAP et EJB, spécifiez un caractère générique (`*`), ce qui implique toutes les opérations.
+   * Spécifiez la valeur de l’identifiant du connecteur en appelant la variable `CreateEndpointInfo` de `setConnectorId` et transmission de la valeur de chaîne `SOAP`.
+   * Spécifiez la description du point de fin en appelant la fonction `CreateEndpointInfo` de `setDescription` et transmission d’une valeur string qui décrit le point de terminaison .
+   * Indiquez le nom du point de fin en appelant la fonction `CreateEndpointInfo` de `setName` et transmission d’une valeur string qui spécifie le nom.
+   * Spécifiez le service auquel appartient le point de fin en appelant la fonction `CreateEndpointInfo` de `setServiceId` et transmission d’une valeur string qui spécifie le nom du service.
+   * Spécifiez l’opération appelée en appelant la fonction `CreateEndpointInfo` de `setOperationName` et transmettre une valeur string qui spécifie le nom de l’opération. Pour les points d’entrée SOAP et EJB, spécifiez un caractère générique (`*`), ce qui implique toutes les opérations.
 
 1. Créez un point d’entrée SOAP.
 
-   Créez le point d’entrée en appelant la méthode `createEndpoint` de l’objet `EndpointRegistryClient` et en transmettant l’objet `CreateEndpointInfo`. Cette méthode renvoie un objet `Endpoint` représentant le nouveau point d’entrée SOAP.
+   Créez le point de fin en appelant la méthode `EndpointRegistryClient` de `createEndpoint` et transmission de la méthode `CreateEndpointInfo` . Cette méthode renvoie un objet `Endpoint` représentant le nouveau point d’entrée SOAP.
 
 1. Activez le point d’entrée.
 
-   Activez le point d’entrée en appelant la méthode d’activation `EndpointRegistryClient` de l’objet et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
+   Activez le point de fin en appelant la fonction `EndpointRegistryClient` de la méthode enable de l’objet et transmettez la méthode `Endpoint` qui a été renvoyé par l’objet `createEndpoint` .
 
 **Voir également**
 
@@ -271,7 +267,7 @@ Pour ajouter par programmation un point d’entrée Watched Folder à un service
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
-Ce processus accepte un document PDF non sécurisé comme valeur d’entrée, puis transmet le document PDF non sécurisé à l’opération `EncryptPDFUsingPassword` du service de chiffrement. Le document PDF est chiffré avec un mot de passe et le document PDF chiffré par mot de passe est la valeur de sortie de ce processus. Le nom de la valeur d’entrée (le document PDF non sécurisé) est `InDoc` et le type de données est `com.adobe.idp.Document`. Le nom de la valeur de sortie (le document PDF chiffré par mot de passe) est `SecuredDoc` et le type de données est `com.adobe.idp.Document`.
+Ce processus accepte un document de PDF non sécurisé comme valeur d’entrée, puis transmet le document de PDF non sécurisé au service Encryption. `EncryptPDFUsingPassword` opération. Le document PDF est chiffré avec un mot de passe et le document PDF chiffré par mot de passe est la valeur de sortie de ce processus. Le nom de la valeur d’entrée (le document PDF non sécurisé) est `InDoc` et le type de données est `com.adobe.idp.Document`. Le nom de la valeur de sortie (le document PDF chiffré par mot de passe) est `SecuredDoc` et le type de données est `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -294,7 +290,7 @@ Pour ajouter un point d’entrée Watched Folder à un service, effectuez les t�
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -331,7 +327,7 @@ La liste suivante spécifie les valeurs de configuration définies lors de l’a
 * **repeatCount** : nombre d’analyses du dossier ou du répertoire par un dossier de contrôle. La valeur -1 indique une analyse indéfinie. La valeur par défaut est -1.
 * **throttleOn** : limite le nombre de tâches du dossier de contrôle pouvant être traitées à un moment donné. La valeur batchSize (taille du lot) détermine le nombre maximal de tâches.
 * **userName** : nom d’utilisateur utilisé lors de l’appel d’un service cible à partir du dossier de contrôle. Cette valeur est obligatoire. La valeur par défaut est SuperAdmin.
-* **domainName** : domaine de l’utilisateur. Cette valeur est obligatoire. La valeur par défaut est DefaultDom.
+* **domainName**: domaine de l’utilisateur. Cette valeur est obligatoire. La valeur par défaut est DefaultDom.
 * **batchSize** : le nombre de fichiers ou de dossiers à sélectionner par analyse. Ce paramètre permet d’éviter une surcharge du système, car l’analyse simultanée d’un trop grand nombre de fichiers peut provoquer une panne. La valeur par défaut est 2.
 * **waitTime** : délai d’attente (en millisecondes) avant l’analyse d’un dossier ou d’un fichier après sa création. Par exemple, si la durée d’attente est de 36 000 000 millisecondes (une heure) et que le fichier a été créé il y a une minute, ce dernier sera sélectionné à l’issue d’un laps de temps de 59 minutes ou plus. Ce paramètre assure la copie intégrale d’un fichier ou d’un dossier dans le dossier d’entrée. Par exemple, si vous devez traiter un fichier volumineux dont le téléchargement dure dix minutes, définissez une durée d’attente de 10&amp;ast;60 &amp;ast;1000 millisecondes. Ce paramètre empêche le dossier de contrôle d’analyser le fichier s’il n’a pas attendu dix minutes. La valeur par défaut est 0.
 * **excludeFilePattern** : le modèle utilisé par un dossier de contrôle pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Les fichiers ou les dossiers pourvus de ce modèle ne sont pas analysés en vue d’être traités. Ce paramètre est utile lorsque l’entrée est un dossier contenant plusieurs fichiers. Vous pouvez copier le contenu du dossier dans un dossier dont le nom sera choisi par le dossier de contrôle. Ceci empêche le dossier de contrôle de sélectionner un dossier en vue de le traiter avant qu’il ne soit complètement copié dans le dossier d’entrée. Ainsi, si l’attribut excludeFilePattern a la valeur `data*`, tous les fichiers et les dossiers correspondant à `data*` ne sont pas sélectionnés. Cela inclut les fichiers et les dossiers nommés `data1`, `data2`, etc. En outre, le modèle peut être complété par des caractères génériques pour spécifier des modèles de fichier. Le dossier de contrôle modifie l’expression régulière afin de prendre en charge les modèles génériques tels que `*.*` et `*.pdf`. Ces modèles de caractères génériques ne sont pas pris en charge par les expressions régulières.
@@ -339,7 +335,7 @@ La liste suivante spécifie les valeurs de configuration définies lors de l’a
 * **resultFolderName** : le dossier dans lequel les résultats enregistrés sont stockés. Cet emplacement peut être un chemin d’accès absolu ou relatif au répertoire. Si les résultats ne s’affichent pas dans ce dossier, vérifiez le dossier failure. Les fichiers en lecture seule ne sont pas traités et ils sont enregistrés dans le dossier failure. La valeur par défaut est `result/%Y/%M/%D/`. Il s’agit du dossier de résultats dans le dossier de contrôle.
 * **preserveFolderName :** l’emplacement où les fichiers sont stockés après avoir été analysés et sélectionnés. Cet emplacement peut être un chemin d’accès de répertoire absolu, relatif ou nul. La valeur par défaut est `preserve/%Y/%M/%D/`.
 * **failureFolderName :** le dossier dans lequel les fichiers d’échec sont enregistrés. Cet emplacement dépend toujours du dossier de contrôle. Les fichiers en lecture seule ne sont pas traités et ils sont enregistrés dans le dossier failure. La valeur par défaut est `failure/%Y/%M/%D/`.
-* **preserveOnFailure :** conserve les fichiers d’entrée en cas d’échec de l’exécution de l’opération sur un service. La valeur par défaut est true.
+* **preserveOnFailure**: conservez les fichiers d’entrée en cas d’échec de l’exécution de l’opération sur un service. La valeur par défaut est true.
 * **overwriteDuplicateFilename :** lorsque la valeur définie est True, les fichiers du dossier de résultats et du dossier de fichiers conservés sont remplacés. Lorsqu’il est défini sur False, les fichiers et les dossiers qui ont un suffixe d’index numérique sont utilisés pour le nom. La valeur par défaut est false. 
 
 **Définir les valeurs des paramètres d’entrée**
@@ -377,7 +373,7 @@ Pour définir une valeur de paramètre de sortie requise pour un point d’entr�
 
 **Créer un point d’entrée Watched Folder**
 
-Après avoir défini les attributs du point d’entrée, les valeurs de configuration et les valeurs des paramètres d’entrée et de sortie, vous devez créer le point d’entrée Watched Folder.
+Après avoir défini les attributs du point de fin, les valeurs de configuration et les valeurs des paramètres d’entrée et de sortie, vous devez créer le point de fin Watched Folder.
 
 **Activer le point d’entrée**
 
@@ -397,7 +393,7 @@ Ajoutez un point d’entrée Watched Folder à l’aide de l’API Java AEM Form
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR du client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
+   Incluez les fichiers JAR client, tels que adobe-livecycle-client.jar, dans le chemin de classe de votre projet Java.
 
 1. Créez un objet client EndpointRegistry.
 
@@ -407,15 +403,15 @@ Ajoutez un point d’entrée Watched Folder à l’aide de l’API Java AEM Form
 1. Définissez les attributs du point d’entrée Watched Folder.
 
    * Créez un objet `CreateEndpointInfo` en utilisant son constructeur.
-   * Spécifiez la valeur de l’identificateur du connecteur en appelant la méthode `setConnectorId` de l’objet `CreateEndpointInfo` et en transmettant la valeur de chaîne `WatchedFolder`.
-   * Spécifiez la description du point d’entrée en appelant la méthode `setDescription` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui décrit le point d’entrée.
-   * Indiquez le nom du point d’entrée en appelant la méthode `setName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom.
-   * Spécifiez le service auquel appartient le point d’entrée en appelant la méthode `setServiceId` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom du service.
-   * Spécifiez l’opération appelée en appelant la méthode `setOperationName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom de l’opération. En règle générale, lors de la création d’un point d’entrée Watched Folder pour un service issu d’un processus créé dans Workbench, le nom de l’opération est appelé.
+   * Spécifiez la valeur de l’identifiant du connecteur en appelant la variable `CreateEndpointInfo` de `setConnectorId` et transmission de la valeur de chaîne `WatchedFolder`.
+   * Spécifiez la description du point de fin en appelant la fonction `CreateEndpointInfo` de `setDescription` et transmission d’une valeur string qui décrit le point de terminaison .
+   * Indiquez le nom du point de fin en appelant la fonction `CreateEndpointInfo` de `setName` et transmission d’une valeur string qui spécifie le nom.
+   * Spécifiez le service auquel appartient le point de fin en appelant la fonction `CreateEndpointInfo` de `setServiceId` et transmission d’une valeur string qui spécifie le nom du service.
+   * Spécifiez l’opération appelée en appelant la fonction `CreateEndpointInfo` de `setOperationName` et transmettre une valeur string qui spécifie le nom de l’opération. En règle générale, lors de la création d’un point d’entrée Watched Folder pour un service issu d’un processus créé dans Workbench, le nom de l’opération est appelé.
 
 1. Spécifiez les valeurs de configuration.
 
-   Pour chaque valeur de configuration à définir pour le point d’entrée Watched Folder, vous devez appeler la méthode `setConfigParameterAsText` de l’objet `CreateEndpointInfo`. Par exemple, pour définir la valeur de configuration `url`, appelez la méthode `setConfigParameterAsText` de l’objet `CreateEndpointInfo` et transmettez les valeurs de chaîne suivantes :
+   Pour chaque valeur de configuration à définir pour le point de fin Watched Folder, vous devez appeler la méthode `CreateEndpointInfo` de `setConfigParameterAsText` . Par exemple, pour définir la variable `url` valeur de configuration, appelez la fonction `CreateEndpointInfo` de `setConfigParameterAsText` et transmettez les valeurs string suivantes :
 
    * Valeur de chaîne spécifiant le nom de la nouvelle conception de formulaire. Lors de la définition de la valeur de configuration `url`, spécifiez `url`.
    * Valeur string qui spécifie la valeur de la valeur de configuration. Lors de la définition de la valeur de configuration `url`, spécifiez l’emplacement du dossier de contrôle.
@@ -426,7 +422,7 @@ Ajoutez un point d’entrée Watched Folder à l’aide de l’API Java AEM Form
 
 1. Définissez les valeurs des paramètres d’entrée.
 
-   Définissez une valeur de paramètre d’entrée en appelant la méthode `CreateEndpointInfo` de l’objet `setInputParameterMapping` et transmettez les valeurs suivantes :
+   Définissez une valeur de paramètre d’entrée en appelant le `CreateEndpointInfo` de `setInputParameterMapping` et transmettez les valeurs suivantes :
 
    * Valeur string spécifiant le nom du nouveau paramètre d’entrée. Par exemple, le nom du paramètre d’entrée pour le service EncryptDocument est `InDoc`.
    * Valeur string qui spécifie le type de données du paramètre d’entrée. Par exemple, le type de données du paramètre d’entrée `InDoc` est `com.adobe.idp.Document`.
@@ -439,7 +435,7 @@ Ajoutez un point d’entrée Watched Folder à l’aide de l’API Java AEM Form
 
 1. Définissez une valeur de paramètre de sortie.
 
-   Définissez une valeur de paramètre de sortie en appelant la méthode `setOutputParameterMapping` de l’objet `CreateEndpointInfo` et transmettez les valeurs suivantes :
+   Définissez une valeur de paramètre de sortie en appelant la variable `CreateEndpointInfo` de `setOutputParameterMapping` et transmettez les valeurs suivantes :
 
    * Valeur string spécifiant le nom du paramètre de sortie. Par exemple, le nom du paramètre de sortie pour le service EncryptDocument est `SecuredDoc`.
    * Valeur string qui spécifie le type de données du paramètre de sortie. Par exemple, le type de données du paramètre de sortie `SecuredDoc` est `com.adobe.idp.Document`.
@@ -447,11 +443,11 @@ Ajoutez un point d’entrée Watched Folder à l’aide de l’API Java AEM Form
 
 1. Créez un point d’entrée Watched Folder.
 
-   Créez le point d’entrée en appelant la méthode `createEndpoint` de l’objet `EndpointRegistryClient` et en transmettant l’objet `CreateEndpointInfo`. Cette méthode renvoie un objet `Endpoint` qui représente le point d’entrée Watched Folder.
+   Créez le point de fin en appelant la méthode `EndpointRegistryClient` de `createEndpoint` et transmission de la méthode `CreateEndpointInfo` . Cette méthode renvoie un objet `Endpoint` qui représente le point d’entrée Watched Folder.
 
 1. Activez le point d’entrée.
 
-   Activez le point d’entrée en appelant la méthode `enable` de l’objet `EndpointRegistryClient` et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
+   Activez le point de fin en appelant la fonction `EndpointRegistryClient` de `enable` et transmission de la méthode `Endpoint` qui a été renvoyé par l’objet `createEndpoint` .
 
 **Voir également**
 
@@ -504,7 +500,7 @@ Pour ajouter par programmation un point d’entrée de courrier électronique à
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
-Ce processus accepte un document PDF non sécurisé comme valeur d’entrée, puis transmet le document PDF non sécurisé à l’opération `EncryptPDFUsingPassword` du service de chiffrement. Ce processus chiffre le document PDF avec un mot de passe et le renvoie comme valeur de sortie. Le nom de la valeur d’entrée (le document PDF non sécurisé) est `InDoc` et le type de données est `com.adobe.idp.Document`. Le nom de la valeur de sortie (le document PDF chiffré par mot de passe) est `SecuredDoc` et le type de données est `com.adobe.idp.Document`.
+Ce processus accepte un document de PDF non sécurisé comme valeur d’entrée, puis transmet le document de PDF non sécurisé au service Encryption. `EncryptPDFUsingPassword` opération. Ce processus chiffre le document PDF avec un mot de passe et le renvoie comme valeur de sortie. Le nom de la valeur d’entrée (le document PDF non sécurisé) est `InDoc` et le type de données est `com.adobe.idp.Document`. Le nom de la valeur de sortie (le document PDF chiffré par mot de passe) est `SecuredDoc` et le type de données est `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -527,7 +523,7 @@ Pour ajouter un point d’entrée de courrier électronique à un service, effec
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -556,7 +552,7 @@ Spécifiez les valeurs de configuration d’un point de fin de courrier électro
 
 >[!NOTE]
 >
->Le compte de messagerie surveillé est un compte spécial, utilisé uniquement pour le point d’entrée de courrier électronique. Ce compte n’est pas un compte de messagerie typique d’un utilisateur. Le compte de messagerie d’un utilisateur ordinaire ne doit pas être configuré comme le compte utilisé par le fournisseur de messagerie, car celui-ci supprime les messages e-mail de la boîte de réception une fois qu’il a terminé avec les messages.
+>Le compte de messagerie surveillé est un compte spécial, utilisé uniquement pour le point d’entrée de courrier électronique. Ce compte n’est pas un compte de messagerie typique d’un utilisateur. Le compte de messagerie d’un utilisateur ordinaire ne doit pas être configuré comme le compte utilisé par le fournisseur de messagerie, car celui-ci supprime les messages électroniques de la boîte de réception une fois qu’il a terminé avec les messages.
 
 Les valeurs de configuration suivantes sont définies lors de l’ajout par programmation d’un point d’entrée de courrier électronique à un service :
 
@@ -642,7 +638,7 @@ Ajoutez un point d’entrée Email à l’aide de l’API Java :
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR du client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
+   Incluez les fichiers JAR client, tels que adobe-livecycle-client.jar, dans le chemin de classe de votre projet Java.
 
 1. Créez un objet client EndpointRegistry.
 
@@ -652,15 +648,15 @@ Ajoutez un point d’entrée Email à l’aide de l’API Java :
 1. Définissez les attributs de point d’entrée de courrier électronique.
 
    * Créez un objet `CreateEndpointInfo` en utilisant son constructeur.
-   * Spécifiez la valeur de l’identificateur du connecteur en appelant la méthode `setConnectorId` de l’objet `CreateEndpointInfo` et en transmettant la valeur de chaîne `Email`.
-   * Spécifiez la description du point d’entrée en appelant la méthode `setDescription` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui décrit le point d’entrée.
-   * Indiquez le nom du point d’entrée en appelant la méthode `setName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom.
-   * Spécifiez le service auquel appartient le point d’entrée en appelant la méthode `setServiceId` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom du service.
-   * Spécifiez l’opération appelée en appelant la méthode `setOperationName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom de l’opération. En règle générale, lors de la création d’un point d’entrée Email pour un service qui provient d’un processus créé dans Workbench, le nom de l’opération est appelé.
+   * Spécifiez la valeur de l’identifiant du connecteur en appelant la variable `CreateEndpointInfo` de `setConnectorId` et transmission de la valeur de chaîne `Email`.
+   * Spécifiez la description du point de fin en appelant la fonction `CreateEndpointInfo` de `setDescription` et transmission d’une valeur string qui décrit le point de terminaison .
+   * Indiquez le nom du point de fin en appelant la fonction `CreateEndpointInfo` de `setName` et transmission d’une valeur string qui spécifie le nom.
+   * Spécifiez le service auquel appartient le point de fin en appelant la fonction `CreateEndpointInfo` de `setServiceId` et transmission d’une valeur string qui spécifie le nom du service.
+   * Spécifiez l’opération appelée en appelant la fonction `CreateEndpointInfo` de `setOperationName` et transmettre une valeur string qui spécifie le nom de l’opération. En règle générale, lors de la création d’un point d’entrée Email pour un service qui provient d’un processus créé dans Workbench, le nom de l’opération est appelé.
 
 1. Spécifiez les valeurs de configuration.
 
-   Pour chaque valeur de configuration à définir pour le point d’entrée Email, vous devez appeler la méthode `setConfigParameterAsText` de l’objet `CreateEndpointInfo`. Par exemple, pour définir la valeur de configuration `smtpHost`, appelez la méthode `setConfigParameterAsText` de l’objet `CreateEndpointInfo` et transmettez les valeurs suivantes :
+   Pour chaque valeur de configuration à définir pour le point de fin Email, vous devez appeler la méthode `CreateEndpointInfo` de `setConfigParameterAsText` . Par exemple, pour définir la variable `smtpHost` valeur de configuration, appelez la fonction `CreateEndpointInfo` de `setConfigParameterAsText` et transmettez les valeurs suivantes :
 
    * Valeur de chaîne spécifiant le nom de la nouvelle conception de formulaire. Lors de la définition de la valeur de configuration `smtpHost`, spécifiez `smtpHost`.
    * Valeur string qui spécifie la valeur de la valeur de configuration. Lors du paramétrage de la valeur de configuration `smtpHost`, spécifiez une valeur string qui spécifie le nom du serveur SMTP. 
@@ -671,7 +667,7 @@ Ajoutez un point d’entrée Email à l’aide de l’API Java :
 
 1. Définissez les valeurs des paramètres d’entrée.
 
-   Définissez une valeur de paramètre d’entrée en appelant la méthode `CreateEndpointInfo` de l’objet `setInputParameterMapping` et transmettez les valeurs suivantes :
+   Définissez une valeur de paramètre d’entrée en appelant le `CreateEndpointInfo` de `setInputParameterMapping` et transmettez les valeurs suivantes :
 
    * Valeur string spécifiant le nom du nouveau paramètre d’entrée. Par exemple, le nom du paramètre d’entrée pour le service EncryptDocument est `InDoc`.
    * Valeur string qui spécifie le type de données du paramètre d’entrée. Par exemple, le type de données du paramètre d’entrée `InDoc` est `com.adobe.idp.Document`.
@@ -684,7 +680,7 @@ Ajoutez un point d’entrée Email à l’aide de l’API Java :
 
 1. Définissez une valeur de paramètre de sortie.
 
-   Définissez une valeur de paramètre de sortie en appelant la méthode `CreateEndpointInfo` de l’objet `setOutputParameterMapping` et en transmettant les valeurs suivantes :
+   Définissez une valeur de paramètre de sortie en appelant la variable `CreateEndpointInfo` de `setOutputParameterMapping` et transmission des valeurs suivantes :
 
    * Valeur string spécifiant le nom du paramètre de sortie. Par exemple, le nom du paramètre de sortie pour le service EncryptDocument est `SecuredDoc`.
    * Valeur string qui spécifie le type de données du paramètre de sortie. Par exemple, le type de données du paramètre de sortie `SecuredDoc` est `com.adobe.idp.Document`.
@@ -692,11 +688,11 @@ Ajoutez un point d’entrée Email à l’aide de l’API Java :
 
 1. Créez le point d’entrée de courrier électronique.
 
-   Créez le point d’entrée en appelant la méthode `EndpointRegistryClient` de l’objet `createEndpoint` et en transmettant l’objet `CreateEndpointInfo`. Cette méthode renvoie un objet `Endpoint` qui représente le point d’entrée de courrier électronique.
+   Créez le point de fin en appelant la méthode `EndpointRegistryClient` de `createEndpoint` et transmission de la méthode `CreateEndpointInfo` . Cette méthode renvoie un objet `Endpoint` qui représente le point d’entrée de courrier électronique.
 
 1. Activez le point d’entrée.
 
-   Activez le point d’entrée en appelant la méthode `enable` de l’objet `EndpointRegistryClient` et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
+   Activez le point de fin en appelant la fonction `EndpointRegistryClient` de `enable` et transmission de la méthode `Endpoint` qui a été renvoyé par l’objet `createEndpoint` .
 
 **Voir également**
 
@@ -760,7 +756,7 @@ Pour ajouter par programmation un point d’entrée Remoting à un service, cons
 
 ![ar_ar_encryptdocumentprocess](assets/ar_ar_encryptdocumentprocess.png)
 
-Ce processus accepte un document PDF non sécurisé comme valeur d’entrée, puis transmet le document PDF non sécurisé à l’opération `EncryptPDFUsingPassword` du service chiffrement. Le document PDF est chiffré avec un mot de passe et le document PDF chiffré par mot de passe est la valeur de sortie de ce processus. Le nom de la valeur d’entrée (le document PDF non sécurisé) est `InDoc` et le type de données est `com.adobe.idp.Document`. Le nom de la valeur de sortie (le document PDF chiffré par mot de passe) est `SecuredDoc` et le type de données est `com.adobe.idp.Document`.
+Ce processus accepte un document de PDF non sécurisé comme valeur d’entrée, puis transmet le document de PDF non sécurisé au service Encryption. `EncryptPDFUsingPassword` opération. Le document PDF est chiffré avec un mot de passe et le document PDF chiffré par mot de passe est la valeur de sortie de ce processus. Le nom de la valeur d’entrée (le document PDF non sécurisé) est `InDoc` et le type de données est `com.adobe.idp.Document`. Le nom de la valeur de sortie (le document PDF chiffré par mot de passe) est `SecuredDoc` et le type de données est `com.adobe.idp.Document`.
 
 Pour montrer comment ajouter un point d’entrée Remoting à un service, cette section ajoute un point d’entrée Remoting à un service nommé EncryptDocument.
 
@@ -782,7 +778,7 @@ Pour supprimer un point d’entrée d’un service, effectuez les tâches suivan
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -827,7 +823,7 @@ Poir ajouter un point d’entrée Remoting à l’aide de l’API Java, procéde
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR du client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
+   Incluez les fichiers JAR client, tels que adobe-livecycle-client.jar, dans le chemin de classe de votre projet Java.
 
 1. Créez un objet client EndpointRegistry.
 
@@ -837,19 +833,19 @@ Poir ajouter un point d’entrée Remoting à l’aide de l’API Java, procéde
 1. Définissez les attributs des points d’entrée Remoting.
 
    * Créez un objet `CreateEndpointInfo` en utilisant son constructeur.
-   * Spécifiez la valeur de l’identificateur du connecteur en appelant la méthode `setConnectorId` de l’objet `CreateEndpointInfo` et en transmettant la valeur de chaîne `Remoting`.
-   * Spécifiez la description du point d’entrée en appelant la méthode `setDescription` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui décrit le point d’entrée.
-   * Indiquez le nom du point d’entrée en appelant la méthode `setName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom.
-   * Spécifiez le service auquel appartient le point d’entrée en appelant la méthode `setServiceId` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom du service.
-   * Spécifiez l’opération appelée par la méthode `setOperationName` de l’objet `CreateEndpointInfo` et transmettez une valeur de chaîne qui spécifie le nom de l’opération. Pour un point d’entrée Remoting, spécifiez un caractère générique (&amp;ast;).
+   * Spécifiez la valeur de l’identifiant du connecteur en appelant la variable `CreateEndpointInfo` de `setConnectorId` et transmission de la valeur de chaîne `Remoting`.
+   * Spécifiez la description du point de fin en appelant la fonction `CreateEndpointInfo` de `setDescription` et transmission d’une valeur string qui décrit le point de terminaison .
+   * Indiquez le nom du point de fin en appelant la fonction `CreateEndpointInfo` de `setName` et transmission d’une valeur string qui spécifie le nom.
+   * Spécifiez le service auquel appartient le point de fin en appelant la fonction `CreateEndpointInfo` de `setServiceId` et transmission d’une valeur string qui spécifie le nom du service.
+   * Spécifiez l’opération qui est appelée par la fonction `CreateEndpointInfo` de `setOperationName` et transmettre une valeur string qui spécifie le nom de l’opération. Pour un point d’entrée Remoting, spécifiez un caractère générique (&amp;ast;).
 
 1. Créez un point d’entrée Remoting.
 
-   Créez le point d’entrée en appelant la méthode `createEndpoint` de l’objet `EndpointRegistryClient` et en transmettant l’objet `CreateEndpointInfo`. Cette méthode renvoie un objet `Endpoint` qui représente le nouveau point d’entrée Remoting.
+   Créez le point de fin en appelant la méthode `EndpointRegistryClient` de `createEndpoint` et transmission de la méthode `CreateEndpointInfo` . Cette méthode renvoie un objet `Endpoint` qui représente le nouveau point d’entrée Remoting.
 
 1. Activez le point d’entrée.
 
-   Activez le point d’entrée en appelant la méthode `enable` de l’objet `EndpointRegistryClient` et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
+   Activez le point de fin en appelant la fonction `EndpointRegistryClient` de `enable` et transmission de la méthode `Endpoint` qui a été renvoyé par l’objet `createEndpoint` .
 
 **Voir également**
 
@@ -884,7 +880,7 @@ Pour ajouter un point d’entrée TaskManager à un service, procédez comme sui
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -938,7 +934,7 @@ Ajoutez un point d’entrée TaskManager à l’aide de l’API Java :
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR du client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
+   Incluez les fichiers JAR client, tels que adobe-livecycle-client.jar, dans le chemin de classe de votre projet Java.
 
 1. Créez un objet client EndpointRegistry.
 
@@ -952,25 +948,25 @@ Ajoutez un point d’entrée TaskManager à l’aide de l’API Java :
       * Une valeur string représentant la valeur de l’identifiant de la catégorie
       * Valeur string spécifiant la description de la catégorie
 
-   * Créez la catégorie en appelant la méthode `EndpointRegistryClient` de l’objet `createEndpointCategory` et en transmettant l’objet `CreateEndpointCategoryInfo`. Cette méthode renvoie un objet `EndpointCategory` représentant la nouvelle catégorie.
+   * Créez la catégorie en appelant la méthode `EndpointRegistryClient` de `createEndpointCategory` et transmission de la méthode `CreateEndpointCategoryInfo` . Cette méthode renvoie un objet `EndpointCategory` représentant la nouvelle catégorie.
 
 1. Définissez les attributs du point d’entrée TaskManager.
 
    * Créez un objet `CreateEndpointInfo` en utilisant son constructeur.
-   * Spécifiez la valeur de l’identificateur du connecteur en appelant la méthode `setConnectorId` de l’objet `CreateEndpointInfo` et en transmettant la valeur de chaîne `TaskManagerConnector`.
-   * Spécifiez la description du point d’entrée en appelant la méthode `setDescription` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui décrit le point d’entrée.
-   * Indiquez le nom du point d’entrée en appelant la méthode `setName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom.
-   * Spécifiez le service auquel appartient le point d’entrée en appelant la méthode `CreateEndpointInfo` de l’objet `setServiceId` et en transmettant une valeur string qui spécifie le nom du service.
-   * Spécifiez la catégorie à laquelle appartient le point d’entrée en appelant la méthode `CreateEndpointInfo` de l’objet `setCategoryId` et en transmettant une valeur string qui spécifie la valeur de l’identifiant de catégorie. Vous pouvez appeler la méthode `EndpointCategory` de l’objet `getId` afin d’obtenir la valeur d’identifiant de cette catégorie.
-   * Spécifiez l’opération appelée en appelant la méthode `CreateEndpointInfo` de l’objet `setOperationName` et en transmettant une valeur string qui spécifie le nom de l’opération. En règle générale, lors de la création d’un point d’entrée `TaskManager` pour un service qui provient d’un processus créé dans Workbench, le nom de l’opération est `invoke`.
+   * Spécifiez la valeur de l’identifiant du connecteur en appelant la variable `CreateEndpointInfo` de `setConnectorId` et transmission de la valeur de chaîne `TaskManagerConnector`.
+   * Spécifiez la description du point de fin en appelant la fonction `CreateEndpointInfo` de `setDescription` et transmission d’une valeur string qui décrit le point de terminaison .
+   * Indiquez le nom du point de fin en appelant la fonction `CreateEndpointInfo` de `setName` et transmission d’une valeur string qui spécifie le nom.
+   * Spécifiez le service auquel appartient le point de fin en appelant la fonction `CreateEndpointInfo` de `setServiceId` et transmission d’une valeur string qui spécifie le nom du service.
+   * Spécifiez la catégorie à laquelle appartient le point de fin en appelant la variable `CreateEndpointInfo` de `setCategoryId` et transmission d’une valeur string qui spécifie la valeur de l’identifiant de catégorie. Vous pouvez appeler le `EndpointCategory` de `getId` pour obtenir la valeur d’identifiant de cette catégorie.
+   * Spécifiez l’opération appelée en appelant la fonction `CreateEndpointInfo` de `setOperationName` et transmettre une valeur string qui spécifie le nom de l’opération. En règle générale, lors de la création d’un point d’entrée `TaskManager` pour un service qui provient d’un processus créé dans Workbench, le nom de l’opération est `invoke`.
 
 1. Créez un point d’entrée TaskManager.
 
-   Créez le point d’entrée en appelant la méthode `createEndpoint` de l’objet `EndpointRegistryClient` et en transmettant l’objet `CreateEndpointInfo`. Cette méthode renvoie un objet `Endpoint` qui représente le nouveau point d’entrée TaskManager.
+   Créez le point de fin en appelant la méthode `EndpointRegistryClient` de `createEndpoint` et transmission de la méthode `CreateEndpointInfo` . Cette méthode renvoie un objet `Endpoint` qui représente le nouveau point d’entrée TaskManager.
 
 1. Activez le point d’entrée.
 
-   Activez le point d’entrée en appelant la méthode `enable` de l’objet `EndpointRegistryClient` et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
+   Activez le point de fin en appelant la fonction `EndpointRegistryClient` de `enable` et transmission de la méthode `Endpoint` qui a été renvoyé par l’objet `createEndpoint` .
 
 **Voir également**
 
@@ -1005,7 +1001,7 @@ Pour modifier un point dʼentée, procédez comme suit :
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -1050,7 +1046,7 @@ Pour modifier un point dʼentrée à l’aide de l’API Java, procédez comme s
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR du client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
+   Incluez les fichiers JAR client, tels que adobe-livecycle-client.jar, dans le chemin de classe de votre projet Java.
 
 1. Créez un objet client EndpointRegistry.
 
@@ -1059,20 +1055,20 @@ Pour modifier un point dʼentrée à l’aide de l’API Java, procédez comme s
 
 1. Récupérez le point dʼentrée à modifier.
 
-   * Récupérez une liste de tous les points dʼentrée auxquels l’utilisateur actuel (spécifié dans les propriétés de connexion) peut accéder en appelant la méthode `getEndpoints` de lʼobjet `EndpointRegistryClient` et en transmettant un objet `PagingFilter` qui agit comme un filtre. Vous pouvez transmettre une valeur `(PagingFilter)null` pour retourner tous les points dʼentrée. Cette méthode renvoie un objet `java.util.List` où chaque élément est un objet `Endpoint`. Pour plus d’informations sur lʼobjet `PagingFilter`, consultez la section [Référence API pour AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Récupérez une liste de tous les points de terminaison auxquels l’utilisateur actuel (spécifiés dans les propriétés de connexion) peut accéder en appelant la méthode `EndpointRegistryClient` de `getEndpoints` et transmission d’une `PagingFilter` qui agit comme un filtre. Vous pouvez transmettre une valeur `(PagingFilter)null` pour retourner tous les points dʼentrée. Cette méthode renvoie un objet `java.util.List` où chaque élément est un objet `Endpoint`. Pour plus d’informations sur lʼobjet `PagingFilter`, consultez la section [Référence API pour AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Effectuez une itération à l’aide de l’objet `java.util.List` pour déterminer s’il contient des points d’entrée. Si des points d’entrée existent, chaque élément est une instance `EndPoint`.
-   * Déterminez le service qui correspond à un point d’entrée en appelant la méthode `getServiceId` de l’objet `EndPoint`. Cette méthode renvoie une valeur de chaîne qui spécifie le nom du service.
-   * Déterminez le type de point d’entrée en appelant la méthode `getConnectorId` de l’objet `EndPoint`. Cette méthode renvoie une valeur de chaîne qui spécifie le type de point d’entrée. Par exemple, si le point d’entrée est un point d’entrée Watched Folder, cette méthode renvoie la valeur `WatchedFolder`.
+   * Déterminez le service qui correspond à un point de terminaison en appelant la fonction `EndPoint` de `getServiceId` . Cette méthode renvoie une valeur de chaîne qui spécifie le nom du service.
+   * Déterminez le type de point de fin en appelant la méthode `EndPoint` de `getConnectorId` . Cette méthode renvoie une valeur de chaîne qui spécifie le type de point d’entrée. Par exemple, si le point d’entrée est un point d’entrée Watched Folder, cette méthode renvoie la valeur `WatchedFolder`.
 
 1. Spécifiez de nouvelles valeurs de configuration.
 
    * Créez un objet `ModifyEndpointInfo` en utilisant son constructeur.
-   * Pour chaque valeur de configuration à définir, appelez la méthode `setConfigParameterAsText` de l’objet `ModifyEndpointInfo`. Par exemple, pour définir la valeur de configuration de l’URL, appelez la méthode `setConfigParameterAsText` de l’objet `ModifyEndpointInfo` et transmettez les valeurs suivantes :
+   * Pour chaque valeur de configuration à définir, appelez le `ModifyEndpointInfo` de `setConfigParameterAsText` . Par exemple, pour définir la valeur de configuration de l’URL, appelez la méthode `ModifyEndpointInfo` de `setConfigParameterAsText` et transmettez les valeurs suivantes :
 
       * Valeur de chaîne spécifiant le nom de la nouvelle conception de formulaire. Par exemple, pour définir la valeur de configuration `url`, spécifiez `url`.
       * Valeur string qui spécifie la valeur de la valeur de configuration. Pour définir une valeur pour la valeur de configuration `url`, spécifiez l’emplacement du dossier de contrôle.
 
-   * Appelez la méthode `modifyEndpoint` de l’objet `EndpointRegistryClient` et transmettez-la à l’objet `ModifyEndpointInfo`.
+   * Appelez la méthode `modifyEndpoint` de l’objet `EndpointRegistryClient` et transmettez l’objet `ModifyEndpointInfo`. 
 
 **Voir également**
 
@@ -1107,7 +1103,7 @@ Pour supprimer un point d’entrée d’un service, effectuez les tâches suivan
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -1144,7 +1140,7 @@ Pour supprimer un point d’entrée à l’aide de l’API Java, procédez comme
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR du client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
+   Incluez les fichiers JAR client, tels que adobe-livecycle-client.jar, dans le chemin de classe de votre projet Java.
 
 1. Créez un objet client EndpointRegistry.
 
@@ -1153,14 +1149,14 @@ Pour supprimer un point d’entrée à l’aide de l’API Java, procédez comme
 
 1. Récupérez le point d’entrée à supprimer.
 
-   * Récupérez une liste de tous les points d’entrée auxquels l’utilisateur actuel (spécifiés dans les propriétés de connexion) a accès en appelant la méthode `getEndpoints` de l’objet `EndpointRegistryClient` et en transmettant un objet `PagingFilter` qui agit comme un filtre. Vous pouvez transmettre `(PagingFilter)null` pour renvoyer tous les points d’entrée. Cette méthode renvoie un objet `java.util.List` où chaque élément est un objet `Endpoint`.
+   * Récupérez une liste de tous les points de terminaison auxquels l’utilisateur actuel (spécifiés dans les propriétés de connexion) a accès en appelant la méthode `EndpointRegistryClient` de `getEndpoints` et transmission d’une `PagingFilter` qui agit comme un filtre. Vous pouvez transmettre `(PagingFilter)null` pour renvoyer tous les points d’entrée. Cette méthode renvoie un objet `java.util.List` où chaque élément est un objet `Endpoint`.
    * Effectuez une itération au sein de l’objet `java.util.List` pour déterminer s’il contient des points d’entrée. Si des points d’entrée existent, chaque élément est une instance `EndPoint`.
-   * Déterminez le service qui correspond à un point d’entrée en appelant la méthode `getServiceId` de l’objet `EndPoint`. Cette méthode renvoie une valeur de chaîne qui spécifie le nom du service.
-   * Déterminez le type de point d’entrée en appelant la méthode `getConnectorId` de l’objet `EndPoint`. Cette méthode renvoie une valeur de chaîne qui spécifie le type de point d’entrée. Par exemple, si le point d’entrée est un point d’entrée EJB, cette méthode renvoie la valeur `EJB`.
+   * Déterminez le service qui correspond à un point de terminaison en appelant la fonction `EndPoint` de `getServiceId` . Cette méthode renvoie une valeur de chaîne qui spécifie le nom du service.
+   * Déterminez le type de point de fin en appelant la méthode `EndPoint` de `getConnectorId` . Cette méthode renvoie une valeur de chaîne qui spécifie le type de point d’entrée. Par exemple, si le point d’entrée est un point d’entrée EJB, cette méthode renvoie la valeur `EJB`.
 
 1. Supprimez le point d’entrée.
 
-   Supprimez le point d’entrée en appelant la méthode `remove` de l’objet `EndpointRegistryClient` et en transmettant l’objet `EndPoint` qui représente le point d’entrée à supprimer.
+   Supprimez le point de fin en appelant la méthode `EndpointRegistryClient` de `remove` et transmission de la méthode `EndPoint` qui représente le point de terminaison à supprimer.
 
 **Voir également**
 
@@ -1199,7 +1195,7 @@ Pour récupérer les informations du connecteur de point d’entrée, procédez 
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -1241,7 +1237,7 @@ Récupérez les informations du connecteur de point d’entrée à l’aide de l
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR du client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
+   Incluez les fichiers JAR client, tels que adobe-livecycle-client.jar, dans le chemin de classe de votre projet Java.
 
 1. Créez un objet client ConnectorRegistry.
 
@@ -1250,12 +1246,12 @@ Récupérez les informations du connecteur de point d’entrée à l’aide de l
 
 1. Spécifiez le type de connecteur.
 
-   Spécifiez le type de connecteur en appelant la méthode `ConnectorRegistryClient` de l’objet `getEndpointDefinition` et en transmettant une valeur string qui spécifie le type de connecteur. Par exemple, pour spécifier le type de connecteur Watched Folder, transmettez la valeur string `WatchedFolder`. Cette méthode renvoie un objet `Endpoint` qui correspond au type de connecteur.
+   Spécifiez le type de connecteur en appelant la méthode `ConnectorRegistryClient` de `getEndpointDefinition` et transmission d’une valeur string qui spécifie le type de connecteur. Par exemple, pour spécifier le type de connecteur Watched Folder, transmettez la valeur string `WatchedFolder`. Cette méthode renvoie un objet `Endpoint` qui correspond au type de connecteur.
 
 1. Récupérez les valeurs de configuration.
 
-   * Récupérez les valeurs de configuration associées à ce point d’entrée en appelant la méthode `Endpoint` de l’objet `getConfigParameters`. Cette méthode renvoie un tableau d’objets `ConfigParameter`.
-   * Récupérez des informations sur chaque valeur de configuration en récupérant chaque élément dans le tableau. Chaque élément est un objet `ConfigParameter`. Vous pouvez, par exemple, déterminer si la valeur de configuration est requise ou facultative en appelant la méthode `ConfigParameter` de l’objet `isRequired`. Si la valeur de configuration est requise, cette méthode renvoie `true`.
+   * Récupérez les valeurs de configuration associées à ce point de terminaison en appelant la variable `Endpoint` de `getConfigParameters` . Cette méthode renvoie un tableau d’objets `ConfigParameter`.
+   * Récupérez des informations sur chaque valeur de configuration en récupérant chaque élément dans le tableau. Chaque élément est un objet `ConfigParameter`. Vous pouvez, par exemple, déterminer si la valeur de configuration est requise ou facultative en appelant la variable `ConfigParameter` de `isRequired` . Si la valeur de configuration est requise, cette méthode renvoie `true`.
 
 **Voir également**
 

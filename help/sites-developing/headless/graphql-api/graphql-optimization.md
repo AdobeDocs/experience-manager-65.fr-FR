@@ -2,10 +2,10 @@
 title: Optimisation des requêtes GraphQL.
 description: Découvrez comment optimiser vos requêtes GraphQL lors du filtrage, de la pagination et du tri de vos fragments de contenu dans Adobe Experience Manager as a Cloud Service pour une diffusion de contenu sans interface.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1966'
-ht-degree: 63%
+source-wordcount: '1964'
+ht-degree: 61%
 
 ---
 
@@ -177,10 +177,10 @@ Voir :
 
 Le temps de réponse des requêtes complexes, avec des jeux de résultats volumineux, peut être amélioré en segmentant les réponses en blocs à l’aide de la pagination, une norme GraphQL.
 
-GraphQL dans AEM prend en charge deux types de pagination :
+GraphQL dans AEM prend en charge deux types de pagination :
 
-* La [pagination basée sur les limites/décalages](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit).
-Elle est utilisée pour les requêtes de liste qui se terminent par : `List` ; par exemple, `articleList`.
+* [pagination basée sur les limites/décalages](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
+Elle est utilisée pour les requêtes de liste ; elles se terminent par `List`; par exemple, `articleList`.
 Pour l’utiliser, vous devez indiquer la position du premier élément à renvoyer (le `offset`) et le nombre d’éléments à renvoyer (la variable `limit`, ou la taille de la page).
 
 * La [pagination basée sur le curseur](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after) (représentée par `first`et `after`).

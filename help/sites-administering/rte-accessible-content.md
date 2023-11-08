@@ -3,10 +3,10 @@ title: Configurez l’éditeur de texte enrichi pour créer des pages web et des
 description: Configurez l’éditeur de texte enrichi pour créer des pages web et des sites accessibles.
 contentOwner: AG
 exl-id: d2451710-5abf-4816-8052-57d8f04a228e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 92%
+source-wordcount: '933'
+ht-degree: 90%
 
 ---
 
@@ -73,7 +73,7 @@ La procédure suivante explique comment étendre le composant **Tableau** avec u
 
 ### Exemple - Ajout de la légende à la boîte de dialogue Propriétés du tableau {#example-adding-the-caption-to-the-table-properties-dialog}
 
-Dans le constructeur de l’élément `TablePropertiesDialog`, ajoutez un champ de saisie de texte supplémentaire utilisé pour modifier la légende. Notez que `itemId` doit être défini sur `caption` (à savoir le nom de l’attribut DOM) pour traiter automatiquement son contenu.
+Dans le constructeur de l’élément `TablePropertiesDialog`, ajoutez un champ de saisie de texte supplémentaire utilisé pour modifier la légende. Notez que `itemId` doit être défini sur `caption` (c’est-à-dire le nom de l’attribut DOM) pour gérer automatiquement son contenu.
 
 Dans le composant **Tableau**, vous devez définir ou supprimer explicitement l’attribut vers ou depuis l’élément DOM. La valeur est transmise par la boîte de dialogue dans l’objet `config`. Notez que les attributs DOM doivent être définis ou supprimés à l’aide des méthodes `CQ.form.rte.Common` correspondantes (`com` est un raccourci de `CQ.form.rte.Common`) pour éviter les pièges courants des mises en œuvre de navigateur.
 
@@ -83,7 +83,7 @@ Dans le composant **Tableau**, vous devez définir ou supprimer explicitement l�
 
 ### Exemple : créer un HTML accessible lors de l’utilisation de la mise en évidence dans le texte {#create-accessible-html-for-text}
 
-L’éditeur de texte enrichi peut utiliser les balises `strong` et `em` à la place de `b` et `i`. Ajoutez le noeud suivant en tant que frère à la propriété `uiSettings` et `rtePlugins` dans la boîte de dialogue.
+L’éditeur de texte enrichi peut utiliser les balises `strong` et `em` à la place de `b` et `i`. Ajoutez le noeud suivant en tant que frère au `uiSettings` et `rtePlugins` dans la boîte de dialogue.
 
 ```HTML
 <htmlRules jcr:primaryType="nt:unstructured">

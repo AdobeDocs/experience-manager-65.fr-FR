@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '2008'
-ht-degree: 68%
+ht-degree: 66%
 
 ---
 
@@ -359,7 +359,7 @@ Les méthodes de requête HTTP suivantes s’appliquent à :
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Termine l’élément de travail dont l’URI est envoyé en tant que paramètre <code>item</code> et transmet l’instance de workflow correspondante aux nœuds suivants, en fonction de ce qui est défini par le paramètre <code>route</code> ou <code>backroute</code>, en cas de rétroaction.<br /> Si le paramètre <code>delegatee</code> est envoyé, l’élément de travail identifié par le paramètre <code>item</code> est délégué au participant spécifié.</td>
+   <td>Termine l’élément de travail dont l’URI est envoyé comme paramètre <code>item</code> et transmet l’instance de workflow correspondante au ou aux noeuds suivants, qui est défini par le paramètre . <code>route</code> ou <code>backroute</code> s'il y a un pas en arrière.<br /> Si le paramètre <code>delegatee</code> est envoyé, l’élément de travail identifié par le paramètre <code>item</code> est délégué au participant spécifié.</td>
   </tr>
  </tbody>
 </table>

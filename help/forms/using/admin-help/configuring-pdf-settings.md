@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab018b6d-0233-4439-bb75-58c5421d769a
 feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '7285'
+source-wordcount: '7282'
 ht-degree: 35%
 
 ---
@@ -226,7 +226,7 @@ Ces options permettent de configurer les images monochromes, en niveaux de gris 
 
 **Sous-échantilloner à :** sélectionne un pixel au centre de la zone d’échantillonnage et remplace l’ensemble de la zone par ce pixel à la résolution définie. Le sous-échantillonnage réduit considérablement le temps de conversion par rapport au sous-échantillonnage, mais il produit des images moins lisses et continues.
 
-Le paramètre de résolution pour la couleur et les niveaux de gris doit être 1,5 à 2 fois le lignage de trame auquel le fichier sera imprimé. (À condition que vous n’alliez pas au-dessous de ce paramètre de résolution recommandé, les images ne contenant aucune ligne droite, aucun schéma géométrique ou aucun schéma répété ne sont pas affectées par une résolution plus faible.) La résolution des images monochromes doit être identique à celle de l’appareil de sortie. Notez toutefois que l’enregistrement d’une image monochrome à une résolution supérieure à 1 500 dpi augmente la taille du fichier sans améliorer significativement la qualité de l’image.
+Le paramètre de résolution pour la couleur et les niveaux de gris doit être 1,5 à 2 fois le lignage de trame auquel le fichier sera imprimé. (À condition que vous n’alliez pas au-dessous de ce paramètre de résolution recommandé, les images ne contenant aucune ligne droite, aucun schéma géométrique ou aucun schéma répété ne sont pas affectées par une résolution plus faible.) La résolution des images monochromes doit être identique à celle de l’appareil de sortie. Cependant, l’enregistrement d’une image monochrome à une résolution supérieure à 1 500 ppp augmente la taille du fichier sans améliorer notablement la qualité de l’image.
 
 Déterminez également si les utilisateurs doivent agrandir une page. Par exemple, si vous créez un document PDF d’une carte, envisagez d’utiliser une résolution d’image plus élevée afin que les utilisateurs puissent zoomer sur la carte.
 

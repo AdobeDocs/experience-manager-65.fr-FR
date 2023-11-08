@@ -1,20 +1,18 @@
 ---
 title: Comment créer ou personnaliser des thèmes de formulaire adaptatif ?
-seo-title: How to create a theme for Adaptive Forms Core Components?
 description: Découvrez comment créer ou personnaliser des thèmes pour les composants principaux de Forms adaptatif à l’aide des spécifications BEM
-seo-description: Learn to create or customize themes for Adaptive Forms Core Components using BEM specifications
 keywords: créer un thème de composants principaux de formulaires adaptatifs, créer un nouveau thème, personnaliser le thème, charger un nouveau thème, utiliser un thème dans les formulaires, supprimer un thème, créer un thème dans AEM 6.5 forms
 contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1973'
+source-wordcount: '1971'
 ht-degree: 11%
 
 ---
-
 
 # Création ou personnalisation d’un thème de formulaire adaptatif {#introduction-to-theme}
 
@@ -62,7 +60,7 @@ Vous pouvez [personnaliser n’importe lequel de ces thèmes pour créer un thè
 
 ## Personnalisation d’un thème {#customize-a-theme-core-components-based-adaptive-forms}
 
-La personnalisation d’un thème fait référence au processus de modification et de personnalisation de l’aspect d’un thème. Lorsque vous personnalisez un thème, vous apportez des modifications à ses éléments de conception, à sa mise en page, à ses couleurs, à sa typographie et parfois au code sous-jacent. Vous pouvez ainsi créer une apparence unique et personnalisée de votre site web ou application tout en conservant la structure et les fonctionnalités de base fournies par le thème.
+La personnalisation d’un thème fait référence au processus de modification et de personnalisation de l’aspect d’un thème. Lorsque vous personnalisez un thème, vous modifiez ses éléments de conception, sa mise en page, ses couleurs, sa typographie, et parfois le code sous-jacent. Vous pouvez ainsi créer une apparence unique et personnalisée de votre site web ou application tout en conservant la structure et les fonctionnalités de base fournies par le thème.
 
 >[!NOTE]
 >
@@ -73,7 +71,7 @@ La personnalisation d’un thème fait référence au processus de modification 
 
 * [Activation des composants principaux des formulaires adaptatifs pour votre environnement.](/help/forms/using/enable-adaptive-forms-core-components.md)
 
-* Installez la dernière version de [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven est un outil d’automatisation de génération couramment utilisé pour les projets Java™. L’installation de la dernière version vous garantit les dépendances nécessaires à la personnalisation du thème.
+* Installez la dernière version d’[Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven est un outil d’automatisation de génération couramment utilisé pour les projets Java™. L’installation de la dernière version vous garantit les dépendances nécessaires à la personnalisation du thème.
 
 * Découvrez comment créer une [bibliothèque cliente dans Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=fr). AEM fournit des bibliothèques clientes qui vous permettent de stocker votre code côté client dans le référentiel, de l’organiser en catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client.
 
@@ -137,7 +135,7 @@ Une fois la commande exécutée correctement, vous disposez d’une copie locale
 
 #### 2 . Personnaliser le thème {#customize-the-theme}
 
-Vous avez la possibilité de personnaliser des composants individuels ou d’effectuer des modifications au niveau du thème à l’aide des variables globales d’un thème. La modification des variables globales a un effet en cascade sur tous les composants individuels. Vous pouvez, par exemple, utiliser des variables globales pour modifier la couleur de bordure de tous les composants d’un formulaire adaptatif ou appliquer une couleur de fond vibrante aux boutons CTA (Appel à l’action). Vous pouvez :
+Vous avez la possibilité de personnaliser des composants individuels ou d’effectuer des modifications au niveau du thème à l’aide des variables globales d’un thème. La modification des variables globales a un effet en cascade sur tous les composants individuels. Vous pouvez, par exemple, utiliser des variables globales pour modifier la couleur de bordure de tous les composants d’un formulaire adaptatif ou appliquer une couleur de fond vibrante aux boutons CTA (Appel à l’action). Vous pouvez effectuer les actions suivantes :
 
 * [Définition des styles de thème](#theme-customization-global-level)
 
@@ -189,7 +187,7 @@ Vous avez également la possibilité de personnaliser la police, la couleur, la 
 Pour déployer un thème sur une instance AEM, il doit être converti en bibliothèque cliente. Pour convertir le thème en bibliothèque cliente, procédez comme suit :
 
 1. Ouvrez l’invite de commande ou la fenêtre de terminal.
-1. Accédez au dossier `<your-theme-sources>`. Par exemple, `C:\aem-forms-theme-canvas`.
+1. Accédez au dossier `<your-theme-sources>`. Par exemple, `C:\aem-forms-theme-canvas`
 1. Exécutez la commande suivante :
 
    ```
@@ -339,4 +337,3 @@ Pour supprimer les thèmes inutilisés ou indésirables :
 * [Création d’un modèle pour le Forms adaptatif basé sur les composants principaux](template-editor.md)
 * [Création ou ajout d’un formulaire adaptatif à une page AEM Sites ou à un fragment d’expérience](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Exemples de modèles de thèmes et de modèles de données de formulaire](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
-

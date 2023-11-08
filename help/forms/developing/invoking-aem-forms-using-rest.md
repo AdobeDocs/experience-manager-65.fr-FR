@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2505'
-ht-degree: 85%
+source-wordcount: '2503'
+ht-degree: 82%
 
 ---
 
@@ -117,9 +117,9 @@ Si la suppression de la tâche est réussie, cette URL renvoie un message vide.
 
 ## Rapport d’erreurs {#error-reporting}
 
-Si une demande d’appel synchrone ou asynchrone ne peut pas être effectuée en raison d’une exception générée sur le serveur, lʼexception est signalée dans le message de réponse HTTP. Si l’URL d’appel (ou lʼURL `async_result` dans le cas d’un appel asynchrone) ne comporte pas de suffixe .xml, le fournisseur REST renvoie le code HTTP `500 Internal Server Error` suivi d’un message d’exception.
+Si une demande d’appel synchrone ou asynchrone ne peut pas être effectuée en raison d’une exception générée sur le serveur, lʼexception est signalée dans le message de réponse HTTP. Si l’URL d’appel (ou la variable `async_result` URL en cas d’appel asynchrone) ne comporte pas de suffixe .xml, le fournisseur REST renvoie le code HTTP `500 Internal Server Error` suivi d’un message d’exception.
 
-Si l’URL d’appel (ou lʼURL `async_result` dans le cas d’un appel asynchrone) comporte un suffixe .xml, le fournisseur REST renvoie le code HTTP `200 OK` suivi d’un document XML décrivant l’exception au format suivant.
+Si l’URL d’appel (ou la variable `async_result` L’URL (en cas d’appel asynchrone) comporte un suffixe .xml, le fournisseur REST renvoie le code HTTP `200 OK`suivi d’un document XML décrivant l’exception au format suivant.
 
 ```xml
  <exception>
@@ -143,7 +143,7 @@ Lʼélément `DSCError` est facultatif et présent uniquement si l’exception e
 
 ## Sécurité et authentification {#security-and-authentication}
 
-Pour assurer un transport sécurisé aux appels REST, un administrateur d’AEM forms peut activer le protocole HTTPS sur le serveur d’applications J2EE hébergeant AEM Forms. Cette configuration est spécifique au serveur d’applications J2EE ; elle ne fait pas partie de la configuration du serveur Forms.
+Pour assurer un transport sécurisé aux appels REST, un administrateur d’AEM forms peut activer le protocole HTTPS sur le serveur d’applications J2EE hébergeant AEM Forms. Cette configuration est spécifique au serveur d’applications J2EE ; elle ne fait pas partie de la configuration du serveur Forms.
 
 >[!NOTE]
 >

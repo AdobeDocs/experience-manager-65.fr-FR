@@ -4,10 +4,10 @@ description: Découvrez comment déployer un projet Content and Commerce AEM.
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '714'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -57,7 +57,7 @@ Le module complémentaire et les [Composants principaux CIF](https://github.com/
 
 Cette configuration peut être ajustée pour le projet par le biais de la configuration de Cloud Service CIF en procédant comme suit :
 
-1. Dans AEM, accédez à Outils -> Cloud Services -> Configuration CIF.
+1. Dans AEM, accédez à Outils > Cloud Service > Configuration CIF
 
 2. Sélectionnez la configuration commerciale à modifier.
 

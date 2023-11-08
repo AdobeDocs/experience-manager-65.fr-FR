@@ -10,16 +10,16 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 63%
+source-wordcount: '484'
+ht-degree: 61%
 
 ---
 
 # Personnaliser les vues des propriétés de la page{#customizing-views-of-page-properties}
 
-Chaque page comporte un ensemble de [properties](/help/sites-authoring/editing-page-properties.md) qui peuvent être affichés et modifiés par les utilisateurs ; certaines sont requises lors de la création de la page (création d’une vue), d’autres peuvent être affichées et modifiées ultérieurement (modification d’une vue). Ces propriétés de page sont définies et mises à la disposition des utilisateurs dans la boîte de dialogue (`cq:dialog`) du composant de page approprié.
+Chaque page comporte un ensemble de [properties](/help/sites-authoring/editing-page-properties.md) qui peuvent être affichées et modifiées par les utilisateurs ; certaines sont requises lors de la création de la page (création d’une vue), d’autres peuvent être affichées et modifiées ultérieurement (modification d’une vue). Ces propriétés de page sont définies et mises à la disposition des utilisateurs dans la boîte de dialogue (`cq:dialog`) du composant de page approprié.
 
 >[!CAUTION]
 >
@@ -38,7 +38,7 @@ Les champs doivent être configurés spécifiquement si une modification est req
    * Nom : `cq:showOnCreate`
    * Type : `Boolean`
 
-* Propriété de page à afficher dans la vue d’édition (par exemple : **Affichage**/**Modifier**) **Propriétés** ) :
+* Propriété de page à mettre à disposition dans la vue d’édition (par exemple : **Affichage**/**Modifier**) **Propriétés** ) :
 
    * Nom : `cq:hideOnEdit`
    * Type : `Boolean`
@@ -78,7 +78,7 @@ Par exemple, l’assistant [**Créer une page**](/help/sites-authoring/managing-
    >
    La méthode recommandée pour la configuration et d’autres modifications est la suivante :
    >
-   1. Recréez l’élément requis (tel qu’il existe dans `/libs`) sous `/apps`.
+   1. Recréez l’élément requis (c’est-à-dire, tel qu’il existe dans `/libs`) sous `/apps`
    1. Apportez les modifications désirées dans `/apps`.
 
 1. Définissez la propriété `path` sur `basic` pour pointer vers le remplacement de l’onglet de base (voir également l’étape suivante). Par exemple :
@@ -99,7 +99,7 @@ Par exemple, l’assistant [**Créer une page**](/help/sites-authoring/managing-
    * **Type** : `Boolean`
    * **Valeur** : `false`
 
-   Le **Autres titres et description** ne s’affichera plus dans la section **Créer une page** assistant.
+   La variable **Autres titres et description** ne s’affichera plus dans la section **Créer une page** assistant.
 
 >[!NOTE]
 >

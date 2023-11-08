@@ -1,7 +1,7 @@
 ---
 title: Questions fréquentes (FAQ) des formulaires HTML5
 seo-title: Frequently asked questions (FAQ) for HTML5 forms
-description: Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts, et les plages des formulaires HTML5.
+description: Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts et la portée des formulaires HTML5.
 seo-description: Frequently Asked Questions (FAQ) about layout, scripting support, and scope of HTML5 forms.
 uuid: 398e31de-3e46-4288-b3cd-39d51fa17abc
 contentOwner: robhagat
@@ -12,17 +12,17 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: 99c9eddad7a2ec7eb23b3c374a1c0e65e141da20
-workflow-type: ht
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+workflow-type: tm+mt
 source-wordcount: '2005'
-ht-degree: 100%
+ht-degree: 65%
 
 ---
 
 
 # Questions fréquentes (FAQ) des formulaires HTML5{#frequently-asked-questions-faq-for-html-forms}
 
-Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts, et les plages des formulaires HTML5.
+Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts et la portée des formulaires HTML5.
 
 ## Mise en page {#layout}
 
@@ -30,13 +30,13 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
    Réponse : les champs de codes à barres et de signatures ne sont pas adaptés aux cas de figures impliquant du HTML ou des périphériques mobiles. Ces champs apparaissent comme des zones non interactives. Cependant, AEM Forms Designer propose un nouveau champ de saisie tactile de signature qui peut être utilisé à la place du champ de signature. Vous pouvez également ajouter un [widget personnalisé](../../forms/using/custom-widgets.md) pour les codes à barres et l’intégrer.
 
-1. Le texte enrichi est-il pris en charge par le champ de texte XFA ?
+1. Le texte enrichi est-il pris en charge pour le champ de texte XFA ?
 
-   Réponse : le champ XFA, qui supporte le contenu enrichi dans AEM Forms Designer, n’est pas pris en charge ; il est généré sous forme de texte normal sans prise en charge du style du texte à partir de l’interface utilisateur. En outre, les champs XFA possédant la propriété comb sont affichés sous forme de champs normaux, bien qu’il existe encore des restrictions quant au nombre de caractères autorisés en fonction de la valeur des chiffres comb.
+   Réponse : le champ XFA, qui supporte le contenu enrichi dans AEM Forms Designer, n’est pas pris en charge ; il est généré sous forme de texte normal sans prise en charge du style du texte à partir de l’interface utilisateur. En outre, les champs XFA avec la propriété comb s’affichent comme un champ normal, bien qu’il existe toujours des restrictions sur le nombre de caractères autorisés en fonction de la valeur des chiffres comb.
 
-1. Existe-t-il des restrictions concernant l’utilisation de sous-formulaires répétables ?
+1. Existe-t-il des restrictions concernant l’utilisation de sous-formulaires répétables ?
 
-   Réponse : les sous-formulaires répétables doivent avoir un nombre initial d’au moins 1. Les sous-formulaires répétables avec un nombre initial de zéro ne sont pas pris en charge. Vous pouvez également choisir d’utiliser un sous-formulaire répétable et ne pas l’afficher lorsque le formulaire est chargé. Pour réaliser le cas d’utilisation : 
+   Réponse : les sous-formulaires répétables doivent avoir un nombre initial de 1 ou plus. Les sous-formulaires répétables avec un nombre initial de zéro ne sont pas pris en charge. Vous pouvez également choisir d’utiliser un sous-formulaire répétable et de ne pas l’afficher au chargement du formulaire. Pour réaliser le cas d’utilisation : 
 
    1. Définissez le nombre initial de sous-formulaire répétable sur 1.
 
@@ -50,9 +50,9 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
       }
       ```
 
-   1. Ouvrez le script pour ajouter une instance du sous-formulaire pour la modifier. Ajoutez le code comme ci-dessous pour ajouter une instance du script de sous-formulaire.
+   1. Ouvrez le script permettant d’ajouter une instance du sous-formulaire à des fins de modification. Ajoutez le code comme ci-dessous pour ajouter une instance du script de sous-formulaire.
 
-      Le code ci-dessous vérifie l’instance masquée du sous-formulaire. Si l’instance masquée du sous-formulaire est trouvée, supprimez-la et insérez une nouvelle instance du sous-formulaire. Si l’instance masquée du sous-formulaire est introuvable, insérez simplement une nouvelle instance du sous-formulaire.
+      Le code ci-dessous vérifie l’instance masquée du sous-formulaire. Si l’instance masquée du sous-formulaire est trouvée, supprimez l’instance masquée du sous-formulaire et insérez une nouvelle instance du sous-formulaire. Si l’instance masquée du sous-formulaire est introuvable, insérez simplement une nouvelle instance du sous-formulaire.
 
       ```javascript
       if (RepeatSubform.presence == "hidden")
@@ -68,7 +68,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
    1. Ouvrez le script pour enlever une instance du sous-formulaire pour modification. Ajoutez le code comme suit pour supprimer une instance du script du sous-formulaire.
 
-      Le code vérifie le nombre de sous-formulaires. Si le nombre de sous-formulaire a atteint 1, le code masque le sous-formulaire au lieu de le supprimer.
+      Le code vérifie le nombre de sous-formulaires. Si le nombre de sous-formulaires atteint 1, le code masque le sous-formulaire au lieu de le supprimer.
 
       ```javascript
       if (RepeatSubform.instanceManager.count == 1) {
@@ -78,7 +78,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
       }
       ```
 
-   1. Ouvrez l’événement presubmit du formulaire pour le modifier. Ajoutez le script suivant à l’événement pour supprimer l’instance masquée du script avant de le modifier. Il empêche l’envoi de données du sous-formulaire masqué lors de l’envoi.
+   1. Ouvrez l’événement presubmit du formulaire pour le modifier. Ajoutez le script suivant à l’événement pour supprimer l’instance masquée du script avant de le modifier. Elle empêche l’envoi des données du sous-formulaire masqué lors de l’envoi.
 
       ```javascript
       if(RepeatSubform.instanceManager.count == 1 && RepeatSubform.presence == "hidden") {
@@ -94,7 +94,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
    Réponse : lorsque l’espace attribué à un champ de texte constitué d’une illustration ou d’une légende est insuffisant et ne lui permet pas d’afficher le contenu, le texte apparaît tronqué dans le formulaire pour périphériques mobiles généré. Cette troncature est également visible dans la vue de conception d’AEM Forms Designer. Bien que cette troncature puisse être prise en charge dans les fichiers PDF, ce n’est pas le cas dans les formulaires HTML5. Pour éviter ce problème, assurez-vous de prévoir un espace suffisant pour qu’un champ de texte constitué d’une illustration ou d’une légende puisse s’afficher sans être tronqué dans le mode de conception d’AEM Forms Designer.
 
-1. Je constate des problèmes de mise en page liés à du contenu manquant ou à des chevauchements. Quelle en est la raison ?
+1. Je constate des problèmes de mise en page liés à du contenu manquant ou à des chevauchements. Quelle en est la raison ?
 
    Réponse : si un élément de texte ou d’image constitué d’une illustration est chevauché par un autre élément (un rectangle par exemple), le contenu du champ de texte constitué de l’illustration n’est pas visible s’il apparaît plus loin dans le document (dans la vue hiérarchique d’AEM Forms Designer). Le format PDF prend en charge la mise en calque transparente mais ce n’est pas le cas du HTML et des navigateurs.
 
@@ -118,9 +118,9 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
    Réponse : de nombreuses structures et objets de données intermédiaires tels que les DOM du formulaire, les DOM de données et les DOM de disposition sont requis pour effectuer le rendu d’un XDP sur un formulaire HTML.
 
-   Pour les formulaires PDF, Adobe Acrobat dispose d’un moteur XTG intégré pour créer des structures de données intermédiaires, et des objets. Acrobat prend également en charge la présentation et les scripts.
+   Pour les PDF forms, Adobe Acrobat dispose d’un moteur XTG intégré pour créer des structures de données intermédiaires, ainsi que des objets. Acrobat prend également en charge la mise en page et les scripts.
 
-   Pour les formulaires HTML5, les navigateurs n’ont pas de moteur XTG intégré pour créer les structures de données intermédiaires, et les objets à partir d’octets bruts XDP. Ainsi, pour les formulaires HTML5, les objets intermédiaires sont générés sur le serveur et envoyés au client. Côté client, les scripts basés sur JavaScript et le moteur de disposition utilisent ces structures intermédiaires.
+   Pour les formulaires HTML5, les navigateurs ne disposent pas d’un moteur XTG intégré pour créer des structures de données intermédiaires et des objets à partir d’octets XDP bruts. Ainsi, pour les formulaires HTML5, des structures intermédiaires sont générées sur le serveur et envoyées au client. Côté client, les scripts basés sur JavaScript et le moteur de disposition utilisent ces structures intermédiaires.
 
    La taille de la structure intermédiaire dépend de la taille du XDP original et des données fusionnées avec XDP.
 
@@ -129,14 +129,14 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
    Réponse : les tableaux complexes génèrent des problèmes de rendu.
 
    * La section (SubformSet) à l’intérieur d’un tableau n’est pas prise en charge.
-   * Les lignes d’en-tête ou de pied de page dans certains tableaux sont marquées pour la répétition. Le fractionnement de ces tableaux sur plusieurs pages peut conduire à certains problèmes.
+   * Les rangées d’en-tête ou de pied de page de certains tableaux sont marquées pour répétition. La division de ces tableaux sur plusieurs pages peut entraîner des problèmes.
 
-1. Les tableaux accessibles sont-ils soumis à des restrictions ?
+1. Les tableaux accessibles sont-ils soumis à des restrictions ?
 
    Réponse : oui, les tableaux accessibles sont soumis aux restrictions suivantes :
 
-   * Les tableaux imbriqués et le sous-formulaire à l’intérieur d’un tableau ne sont pas pris en charge.
-   * Les en-têtes sont uniquement pris en charge pour la ligne supérieure ou les colonnes de gauche du tableau. Les en-têtes ne sont pas pris en charge pour les éléments de mi-tableau. Vous pouvez appliquer des en-têtes à plusieurs lignes et les en-têtes de colonne sont pris en charge si toutes les lignes et colonnes sont associées à la ligne la plus élevée ou la colonne la plus à gauche du tableau.
+   * Les tableaux imbriqués et les sous-formulaires à l’intérieur d’un tableau ne sont pas pris en charge.
+   * Les en-têtes sont uniquement pris en charge pour la ligne supérieure ou les colonnes gauche du tableau. Les en-têtes ne sont pas pris en charge pour les éléments de tableau intermédiaire. Vous pouvez appliquer des en-têtes à plusieurs lignes et les en-têtes de colonne sont pris en charge si toutes les lignes et colonnes sont associées à la ligne la plus élevée ou la colonne la plus à gauche du tableau.
    * `Rowspan` et `colspan` ne sont pas pris en charge depuis un emplacement aléatoire du tableau.
 
    * Vous ne pouvez pas dynamiquement ajouter ou supprimer l’occurrence des lignes contenant des éléments possédant une valeur rowspan supérieure à 1.
@@ -144,10 +144,10 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 1. Quel est l’ordre de lecture de l’info-bulle et de la légende pour les lecteurs d’écran ?
 
    Réponse :
-   * Lorsqu’il y a une légende et une info-bulle, seule la légende est lue. Si la légende n’est pas disponible, l’info-bulle est lue. Vous pouvez également spécifier la priorité de lecture dans un fichier XDP en utilisant le concepteur de formulaires
-   * Lorsque vous survolez un élément, l’info-bulle s’affiche. Si aucune info-bulle n’est disponible, le texte vocal s’affiche. Si aucun texte vocal n’est disponible, le nom du champ s’affiche.
+   * Lorsque la légende et l’info-bulle sont présentes, la seule légende est lue. Si la légende n’est pas disponible, l’info-bulle est lue. Vous pouvez également spécifier la priorité de lecture dans un fichier XDP à l’aide du concepteur de formulaires.
+   * Lorsque vous survolez un élément, une info-bulle s’affiche. Si l’info-bulle n’est pas disponible, le texte vocal s’affiche. Si le texte vocal n’est pas disponible, le nom du champ s’affiche.
 
-1. Lorsque vous survolez un champ, une info-bulle s’affiche. Comment désactiver cette fonction ?
+1. Lorsque vous survolez un champ, une info-bulle s’affiche. Comment la désactiver ?
 
    Réponse : pour désactiver l’affichage d’info-bulles lorsque vous survolez un champ, sélectionnez Aucun dans le panneau de Designer.
 
@@ -155,7 +155,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
    Réponse : Les formulaires HTML5 ignorent les propriétés personnalisées d’aspect des boutons radio et des cases à cocher. Les boutons radio et les cases à cocher s’affichent selon les spécifications du navigateur sous-jacent.
 
-1. Lorsqu’un formulaire HTML5 est ouvert dans un navigateur pris en charge, la bordure des champs placés de manière adjacente n’est pas alignée correctement ou les sous-formulaires se chevauchent. Lorsque le même formulaire HTML5 est prévisualisé dans Forms Designer, les champs et la mise en page semblent correctement alignés et les sous-formulaires apparaissent dans la bonne position. Comment corriger le problème ?
+1. Lorsqu’un formulaire HTML5 est ouvert dans un navigateur pris en charge, la bordure des champs placés de manière adjacente n’est pas alignée correctement ou les sous-formulaires apparaissent recouverts. Lorsque le même HTML5 Form est prévisualisé dans Forms Designer, les champs et la mise en page n’apparaissent pas mal alignés et les sous-formulaires apparaissent à la bonne position. Comment résoudre le problème ?
 
    Réponse : lorsqu’un sous-formulaire peut enchaîner un contenu et qu’il présente un élément de bordure masqué, la bordure des champs placés de manière adjacente n’est pas alignée correctement ou les sous-formulaires se chevauchent. Pour résoudre le problème, vous pouvez supprimer ou commenter les éléments &lt;border> masqués du fichier XDP correspondant. Par exemple, l’élément &lt;border> suivant est marqué comme commentaire :
 
@@ -180,17 +180,17 @@ Réponse : le champ Date accepte le format ISO AAAA-MM-JJ. Si vous spécifiez u
 
 ### Script {#scripting}
 
-1. Existe-t-il des restrictions de mise en œuvre JavaScript pour les formulaires HTML ?
+1. Existe-t-il des limites dans la mise en oeuvre de JavaScript pour HTML Forms ?
 
    Réponse:
 
    * La prise en charge du script xfa.connectionSet est limitée. Pour connectionSet, seul l’appel côté serveur du service web est pris en charge. Pour plus d’informations, consultez la section [Prise en charge des scripts](/help/forms/using/scripting-support.md).
    * Il n’existe aucune prise en charge de $record et $data dans les scripts côté client. Cependant, si les scripts sont constitués de blocs formReady ou layoutReady, ils continuent de fonctionner car ces événements s’exécutent côté serveur.
-   * Les scripts spécifiques des éléments XFA constitués d’illustrations (ou les éléments de texte constitués de légendes quand il s’agit de champs) ne sont pas pris en charge.
+   * Les scripts spécifiques à l’élément XFA Draw tels que la modification du texte de dessin (ou du texte de légende s’il existe des champs) ne sont pas pris en charge.
 
-1. Existe-t-il des restrictions concernant l’utilisation de formCalc ?
+1. L’utilisation de formCalc présente-t-elle des restrictions ?
 
-   Réponse : seul un sous-ensemble de scripts formCalc est actuellement implémenté. Pour plus d’informations, consultez la section [Prise en charge des scripts](/help/forms/using/scripting-support.md).
+   Réponse : seul un sous-ensemble des scripts formCalc est actuellement implémenté. Pour plus d’informations, consultez la section [Prise en charge des scripts](/help/forms/using/scripting-support.md).
 
 1. Existe-t-il une convention de dénomination recommandée et des mots-clés réservés à éviter ?
 
@@ -200,11 +200,11 @@ Réponse : le champ Date accepte le format ISO AAAA-MM-JJ. Si vous spécifiez u
 
 1. Les formulaires HTML5 prennent-ils en charge les champs flottants ?
 
-   Réponse : oui, les formulaires HTML5 prennent en charge les champs flottants. Pour permettre l’utilisation de champs flottants, ajoutez la propriété suivante au profil de rendu :
+   Réponse : oui, les formulaires HTML5 prennent en charge les champs flottants. Pour activer les champs flottants, ajoutez la propriété suivante au profil de rendu :
 
    >[!NOTE]
    >
-   >Le flottement des champs n’est pas activé par défaut. Vous pouvez utiliser Forms Designer pour définir la propriété de flottement des champs.
+   >Par défaut, les champs ne sont pas activés pour le flottement. Vous pouvez utiliser Forms Designer pour définir la propriété flottante des champs.
 
    1. Ouvrez CRXDE Lite et accédez au nœud `/content/xfaforms/profiles/default`.
    1. Ajoutez une propriété `mfDataDependentFloatingField` de type chaîne et définissez sa valeur sur `true`.
@@ -214,12 +214,12 @@ Réponse : le champ Date accepte le format ISO AAAA-MM-JJ. Si vous spécifiez u
       >
       >Pour activer les champs flottants pour un formulaire spécifique sans mettre à jour le profil de rendu, transmettez la propriété mfDataDependentFloatingField=true en tant que paramètre d’URL.
 
-1. Les formulaires HTML5 exécutent-ils le script d’initialisation et forment-ils des événements prêts plusieurs fois ?
+1. Les formulaires HTML5 exécutent-ils le script d’initialisation et l’événement de formulaire prêt à l’emploi plusieurs fois ?
 
    Réponse : oui, les scripts d’initialisation et les événements prêts pour le formulaire sont exécutés plusieurs fois, au moins une fois sur le serveur et une fois côté client. Il est suggéré d’écrire des scripts tels que les événements initialize ou form:ready en fonction d’une logique métier (données de formulaire ou de champ) afin que l’action soit effectuée en fonction de l’état des données et de manière idempotente (si les données sont identiques).
 
 ### Conception XDP {#designing-xdp}
 
-1. Existe -t-il des mots-clés réservés dans les formulaires HTML5 ?
+1. Existe-t-il des mots-clés réservés dans les formulaires HTML5 ?
 
-   Réponse : toutes les API des formulaires HTML5 sont des mots-clés réservés. Pour les API/fonctions personnalisées, utilisez un nom différent de celui des [API de formulaires HTML5](/help/forms/using/scripting-support.md). Outre les mots-clés réservés, si vous utilisez des noms d’objet qui commencent par un tiret bas (_), il est recommandé d’ajouter un préfixe unique à sa suite. L’ajout d’un préfixe permet d’éviter tout conflit possible avec les API internes des formulaires HTML5. Par exemple, `_fpField1`
+   Réponse : toutes les API de HTML5 forms sont des mots-clés réservés. Pour les API/fonctions personnalisées, utilisez un nom différent de celui des [API de formulaires HTML5](/help/forms/using/scripting-support.md). Outre les mots-clés réservés, si vous utilisez des noms d’objet qui commencent par un tiret bas (_), il est recommandé d’ajouter un préfixe unique à sa suite. L’ajout d’un préfixe permet d’éviter tout conflit possible avec les API internes des formulaires HTML5. Par exemple, `_fpField1`

@@ -9,9 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 89f4d3cf-eb2e-4d55-8209-16ecbba03792
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '6170'
+source-wordcount: '6167'
 ht-degree: 53%
 
 ---
@@ -253,7 +253,7 @@ Pour plus d’informations sur l’accès à ce paramètre, voir [Création ou m
 
    * Si nécessaire, sélectionnez un autre répertoire de polices dans le **Source de la police** menu déroulant. Ce menu déroulant répertorie les répertoires de polices spécifiés dans **Accueil > Paramètres > Core System > Configurations de base**.
    * Sélectionnez une ou plusieurs polices dans le **Polices disponibles** répertorier et cliquer **Ajouter**. Ces polices sont ajoutées au **Polices à désincorporer** liste.
-   * Si vous souhaitez désincorporer des polices qui n’existent pas sur le serveur Forms, saisissez les noms de ces polices dans le champ **Ajout de polices à désincorporer** de la boîte. Cliquez sur **Ajouter**.
+   * Si vous souhaitez désincorporer des polices qui n’existent pas sur le serveur Forms, saisissez les noms de ces polices dans la variable **Ajout de polices à désincorporer** de la boîte. Cliquez sur **Ajouter**.
 
    >[!NOTE]
    >
@@ -315,7 +315,7 @@ Conserver la surimpression : fusionne la couleur des illustrations transparente
 
 Le tableau suivant présente les types d’imprimantes courants ainsi que leur résolution mesurée en ppp, leur trame par défaut mesurée en lignes par pouce (lpi) et une résolution de rééchantillonnage des images mesurées en pixels par pouce (ppp). Par exemple, si vous imprimez sur une imprimante laser de 600 dpi, vous devez saisir 170 pour la résolution à laquelle les images doivent être rééchantillonnées.
 
-**Images** Sélectionnez Images pour définir les options de compression et de rééchantillonnage des images en couleurs, niveaux de gris et monochrome. Vous pouvez souhaiter tester ces options pour trouver le bon équilibre entre la taille du fichier et la qualité d’image. Le paramètre de résolution relatif à la couleur et aux niveaux de gris doit être 1,5 à 2 fois le lignage de trame auquel le fichier doit être imprimé. La résolution des images monochromes doit être identique à celle du périphérique de sortie, mais sachez que l’enregistrement d’une image monochrome à une résolution supérieure à 1 500 dpi augmente la taille du fichier sans améliorer notablement la qualité de l’image. Les images qui seront agrandies, telles que les cartes, peuvent nécessiter des résolutions plus élevées.
+**Images** Sélectionnez Images pour définir les options de compression et de rééchantillonnage des images en couleurs, niveaux de gris et monochrome. Vous pouvez souhaiter tester ces options pour trouver le bon équilibre entre la taille du fichier et la qualité d’image. Le paramètre de résolution relatif à la couleur et aux niveaux de gris doit être 1,5 à 2 fois le lignage de trame auquel le fichier doit être imprimé. La résolution des images monochromes doit être identique à celle du périphérique de sortie, mais l’enregistrement d’une image monochrome à une résolution supérieure à 1 500 dpi augmente la taille du fichier sans améliorer notablement la qualité de l’image. Les images qui seront agrandies, telles que les cartes, peuvent nécessiter des résolutions plus élevées.
 
 >[!NOTE]
 >

@@ -3,9 +3,9 @@ title: Création et synchronisation de Live Copies
 description: Découvrez comment créer et synchroniser des Live Copies dans Adobe Experience Manager.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '4226'
+source-wordcount: '4227'
 ht-degree: 72%
 
 ---
@@ -424,7 +424,7 @@ L’[action Reprendre est également disponible dans l’aperçu de la Live Cop
 
 ### Changement de la profondeur d’héritage (superficielle/profonde) {#changing-inheritance-depth-shallow-deep}
 
-Sur une Live Copy existante, vous pouvez changer la profondeur d’une page, à savoir indiquer si les pages enfants sont incluses.
+Sur une Live Copy existante, vous pouvez modifier la profondeur d’une page, c’est-à-dire si les pages enfants sont incluses.
 
 * Passer à une Live Copy superficielle :
 

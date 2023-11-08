@@ -1,19 +1,15 @@
 ---
 title: Configuration de la segmentation avec ContextHub
-seo-title: Configuring Segmentation with ContextHub
 description: Découvrez comment configurer la segmentation avec ContextHub.
-seo-description: Learn how to configure segmentation with Context Hub.
-uuid: 196cfb18-317c-443d-b6f1-f559e4221baa
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 86%
+source-wordcount: '1772'
+ht-degree: 83%
 
 ---
 
@@ -52,7 +48,7 @@ La variable **Éditeur de segment** permet de modifier facilement un segment. Po
 
 Avec l’explorateur de composants, vous pouvez ajouter des conteneurs **ET** et **OU** pour définir la logique de segment, puis ajouter des composants supplémentaires pour comparer les propriétés et les valeurs ou référencer des scripts et d’autres segments afin de définir les critères de sélection (voir la rubrique [Création d’un nouveau segment](#creating-a-new-segment)) pour définir le scénario exact de sélection du segment.
 
-Lorsque l’intégralité de l’instruction est vraie, alors le segment a été résolu. Si plusieurs segments sont applicables, le facteur **Amplifier** est également utilisé. Consultez la section [Création d’un segment](#creating-a-new-segment) pour plus d’informations sur le [facteur Amplifier](/help/sites-administering/campaign-segmentation.md#boost-factor).
+Lorsque l’intégralité de l’instruction est vraie, alors le segment a été résolu. S’il existe plusieurs segments applicables, la variable **Amplifier** est également utilisé. Consultez la section [Création d’un segment](#creating-a-new-segment) pour plus d’informations sur le [facteur Amplifier](/help/sites-administering/campaign-segmentation.md#boost-factor).
 
 >[!CAUTION]
 >
@@ -106,7 +102,7 @@ Les comparaisons de segments suivantes sont disponibles par défaut pour évalue
 
 >[!NOTE]
 >
->Lors de la comparaison des valeurs, si le type de données de la comparaison n’est pas défini (c.-à-d. défini sur la détection automatique), le moteur de segmentation de ContextHub compare simplement les valeurs comme le ferait JavaScript. Il ne projette pas de valeurs sur leurs types inattendus, ce qui peut donner des résultats trompeurs. Par exemple :
+>Lors de la comparaison des valeurs, si le type de données de la comparaison n’est pas défini (c’est-à-dire défini sur la détection automatique), le moteur de segmentation de ContextHub compare simplement les valeurs comme le ferait JavaScript. Il ne projette pas de valeurs sur leurs types inattendus, ce qui peut donner des résultats trompeurs. Par exemple :
 >
 >`null < 30 // will return true`
 >
@@ -164,7 +160,7 @@ Pour définir votre nouveau segment, procédez comme suit :
 
 Avec les composants de conteneur ET et OU, vous pouvez créer des segments complexes dans AEM. Pour ce faire, il est utile de tenir compte de quelques points importants :
 
-* Le niveau supérieur de la définition est toujours le conteneur ET qui est initialement créé ; cela ne peut pas être changé, mais n’a pas d’effet sur le reste de votre définition de segment.
+* Le niveau supérieur de la définition est toujours le conteneur ET qui est initialement créé. Cela ne peut pas être modifié, mais n’a aucun effet sur le reste de votre définition de segment.
 * Assurez-vous que l’imbrication de votre conteneur a un sens. Les conteneurs peuvent être considérés comme des crochets de votre expression booléenne.
 
 L’exemple suivant est utilisé pour sélectionner les visiteurs qui sont considérés comme appartenant à notre groupe d’âges préféré :

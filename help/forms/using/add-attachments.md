@@ -1,19 +1,15 @@
 ---
 title: Ajouter des pièces jointes
-seo-title: Adding attachments
-description: Ajouter des photos et saisir des notes à main levée dans votre tâche dans l’application AEM Forms
-seo-description: Add photographs and scribble notes as annotations to your task in the AEM Forms app
-uuid: 3d2738b4-fd43-44ec-8eaf-a2ad4b7e5af5
+description: Ajout de photos et de notes par saisie tactile à votre tâche dans l’application AEM Forms
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: d5976ed2-4482-495c-bf77-6d192379cfef
 docset: aem65
 exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 100%
+ht-degree: 55%
 
 ---
 
@@ -21,11 +17,11 @@ ht-degree: 100%
 
 ## Ajouter des pièces jointes dans les formulaires synchronisés avec le serveur AEM Forms Workflow (AEM Forms sur JEE) {#adding-annotations}
 
-L’application AEM Forms vous permet de joindre des images, des annotations et des notes de texte à votre formulaire synchronisé avec le serveur AEM Forms JEE. Si votre formulaire est chargé depuis un serveur de flux de travail AEM Forms, vos pièces jointes sont ajoutées au formulaire. Vous pouvez appuyer sur le bouton de pièce jointe ![attachments-app](assets/attachments-app.png) pour afficher toutes les pièces jointes dans un formulaire. La notification rouge indique le nombre de pièces jointes du formulaire. Si le formulaire ne compte aucune pièce jointe, le bouton rouge de notification n’est pas visible. Si le formulaire ne compte aucune pièce jointe, lorsque vous appuyez sur le bouton des pièces jointes ![attch](assets/attch.png), vous avez la possibilité de joindre des photos ou des annotations.
+L’application AEM Forms vous permet de joindre des images, des annotations et des notes de texte à votre formulaire synchronisé avec le serveur AEM Forms JEE. Si votre formulaire est chargé à partir d’un serveur AEM Forms Workflow, vos pièces jointes sont ajoutées au formulaire. Vous pouvez appuyer sur le bouton de pièce jointe ![attachments-app](assets/attachments-app.png) pour afficher toutes les pièces jointes dans un formulaire. La notification rouge indique le nombre de pièces jointes du formulaire. Si le formulaire ne compte aucune pièce jointe, le bouton rouge de notification n’est pas visible. Si le formulaire ne compte aucune pièce jointe, lorsque vous appuyez sur le bouton des pièces jointes ![attch](assets/attch.png), vous avez la possibilité de joindre des photos ou des annotations.
 
 Vous avez le choix entre :
 
-* **Galerie** : vous permet d’ajouter une image à partir des images enregistrées sur votre périphérique.
+* **Galerie** : vous permet d’ajouter une image à partir des images enregistrées sur votre appareil.
 
 * **Appareil photo** : vous permet de prendre une photo et de l’ajouter au formulaire. 
 
@@ -34,6 +30,7 @@ Vous avez le choix entre :
 >[!NOTE]
 >
 >Les pièces jointes ajoutées par un utilisateur sont visibles par les autres utilisateurs de l’application AEM Forms. Les autres utilisateurs ne peuvent pas supprimer les pièces jointes ajoutées par un utilisateur.
+>
 
 ### L’écran Pièces jointes {#the-attachments-screen}
 
@@ -45,11 +42,11 @@ Vous pouvez utiliser le bouton **+** sur l’écran Pièces jointes pour joindre
 
 ### Ajouter une photo {#adding-a-photograph}
 
-Vous pouvez utiliser l’appareil photo de votre périphérique mobile ou des images enregistrées dans votre périphérique pour joindre une photo dans le formulaire.
+Vous pouvez utiliser l’appareil photo de votre appareil mobile ou des images enregistrées de votre appareil pour joindre une image dans le formulaire.
 
 1. Appuyez sur le bouton des pièces jointes ![attch](assets/attch.png) au bas de la fenêtre.
-1. Appuyez sur **Galerie** ou **Appareil photo** dans la fenêtre contextuelle qui s’affiche.
-1. Selon l’option que vous sélectionnez, effectuez ce qui suit :
+1. Appuyez sur **Galerie** ou **Appareil photo** dans la fenêtre pop-up qui s’affiche.
+1. Selon l’option que vous sélectionnez, effectuez les opérations suivantes :
 
    1. Si vous sélectionnez **Appareil photo**.
 
@@ -59,33 +56,33 @@ Vous pouvez utiliser l’appareil photo de votre périphérique mobile ou des im
 
    1. Si vous sélectionnez **Galerie**.
 
-      L’explorateur d’images du périphérique s’affiche. Dans le navigateur d’images de votre périphérique, appuyez sur l’image que vous voulez joindre.
+      L’explorateur d’images de l’appareil s’affiche. Dans le navigateur d’images de votre appareil, appuyez sur l’image que vous voulez joindre.
 
 ### Ajouter une note {#adding-a-note}
 
 L’option **Notes** vous permet d’ajouter des annotations à main levée et du texte en pièces jointes dans votre formulaire.
 
 1. Appuyez sur le bouton des pièces jointes ![attch](assets/attch.png) au bas de la fenêtre.
-1. Appuyez sur **Notes** dans la fenêtre contextuelle qui s’affiche.
-1. Dans l’interface utilisateur de Notes qui est lancée, saisissez des annotations à main levée.
+1. Appuyez sur **Notes** dans la fenêtre pop-up qui s’affiche.
+1. Dans l’interface utilisateur de notes qui est lancée, capturez une saisie tactile à main levée.
 
    ![Interface de saisie tactile](assets/scribble-ui.png)
 
-   Saisie tactile
+   Griffonnage
 
-   Vous pouvez utiliser les options suivantes dans l’interface de saisie tactile :
+   Vous pouvez utiliser les options suivantes dans l’interface de saisie tactile :
 
-   * **Effacer** : efface l’écran.
-   * **Bouton Terminé** : joint l’annotation en cours.
-   * **Bouton Annuler** : supprime l’annotation en cours et quitte l’interface utilisateur de saisie tactile.
+   * **Effacer**: efface l’écran.
+   * **Bouton Terminé**: joint la saisie tactile actuelle.
+   * **Bouton Annuler**: ignore la saisie tactile actuelle et quitte l’interface utilisateur de saisie tactile.
    * ![Clavier](assets/keyboard.png) : efface la note griffonnée et vous permet d’ajouter une note de texte.
 
    ![Clavier de saisie tactile de l’application AEM Forms](assets/keyboard-inapp.png)
 
-## Pièces jointes dans les formulaires synchronisés avec les serveurs AEM Forms sans flux de travaux AEM Forms (AEM Forms sur OSGi) {#attachments-in-forms-synced-with-the-aem-forms-servers-without-aem-forms-workflow-aem-forms-on-osgi}
+## Pièces jointes dans les formulaires synchronisés avec les serveurs AEM Forms sans AEM Forms Workflow (AEM Forms sur OSGi) {#attachments-in-forms-synced-with-the-aem-forms-servers-without-aem-forms-workflow-aem-forms-on-osgi}
 
-Les pièces jointes pour les formulaires mobiles synchronisés avec les serveurs AEM Forms OSGi fonctionnent comme des serveurs AEM Forms JEE.
+Les pièces jointes pour les formulaires mobiles synchronisés avec les serveurs AEM Forms OSGi fonctionnent de la même manière que les serveurs AEM Forms JEE.
 
-Les pièces jointes au niveau du formulaire ne sont pas prises en charge pour les formulaires adaptatifs chargés dans l’application d’un serveur AEM Forms OSGi. Pour joindre des images ou des notes de texte, autorisez les pièces jointes au niveau des champs dans le formulaire au moment de sa création. Faites glisser et déposez le composant de pièce jointe du fichier depuis le navigateur des composants sur le champ.
+Les pièces jointes au niveau du formulaire ne sont pas prises en charge pour les formulaires adaptatifs chargés dans l’application à partir d’un serveur AEM Forms OSGi. Pour joindre des images ou des notes de texte, activez les pièces jointes au niveau du champ dans le formulaire lorsque vous le créez. Faites glisser et déposez le composant de pièce jointe depuis l’explorateur de composants sur le champ.
 
-Dans le cas de formulaires adaptatifs, vous pouvez afficher les fichiers joints dans le document d’enregistrement (DoR). Consultez [Générer un document d’enregistrement pour les formulaires adaptatifs non basés sur XFA](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+S’il existe des formulaires adaptatifs, vous pouvez afficher les fichiers joints dans le document d’enregistrement (DE). Consultez [Générer un document d’enregistrement pour les formulaires adaptatifs non basés sur XFA](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).

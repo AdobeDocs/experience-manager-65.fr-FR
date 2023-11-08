@@ -1,20 +1,16 @@
 ---
 title: Configurer la segmentation
-seo-title: Configuring Segmentation
 description: Découvrez comment configurer la segmentation pour AEM Campaign.
-seo-description: Learn how to configure segmentation for AEM Campaign.
-uuid: 604ca34d-cdb9-49ff-8f75-02a44b60a8a2
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 56%
+source-wordcount: '1129'
+ht-degree: 51%
 
 ---
 
@@ -110,7 +106,7 @@ Les caractéristiques de segment suivantes sont disponibles prêtes à l’emplo
 
 Vous pouvez combiner ces caractéristiques avec les opérateurs booléens OU et ET (voir la rubrique [Création d’un nouveau segment](#creating-a-new-segment)) afin de définir le scénario exact pour sélectionner ce segment.
 
-Lorsque l’intégralité de l’instruction est vraie, alors ce segment a été résolu. Si plusieurs segments sont applicables, le facteur **[Amplifier](/help/sites-administering/campaign-segmentation.md#boost-factor)** est également utilisé.
+Lorsque l’intégralité de l’instruction est vraie, alors ce segment a été résolu. S’il existe plusieurs segments applicables, la variable **[Amplifier](/help/sites-administering/campaign-segmentation.md#boost-factor)** est également utilisé.
 
 >[!CAUTION]
 >
@@ -149,7 +145,7 @@ Pour définir votre nouveau segment :
 
 Vous pouvez créer des segments complexes dans AEM. Il est utile de tenir compte de quelques points de base :
 
-* Le niveau supérieur de la définition est toujours le conteneur ET qui est initialement créé ; ceci ne peut pas être changé, mais n’a pas d’effet sur le reste de votre définition de segment.
+* Le niveau supérieur de la définition est toujours le conteneur ET qui est initialement créé ; cela ne peut pas être modifié, mais n’a pas d’effet sur le reste de votre définition de segment.
 * Assurez-vous que l’imbrication de votre conteneur a un sens. Les conteneurs peuvent être considérés comme des crochets de votre expression booléenne.
 
 L’exemple suivant permet de sélectionner les visiteurs qui :

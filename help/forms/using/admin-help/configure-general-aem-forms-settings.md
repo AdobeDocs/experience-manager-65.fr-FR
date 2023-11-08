@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_je
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bd648c38-731b-420e-973d-a4728b69868e
 exl-id: e1519477-b5a8-4947-8597-26b945a3b819
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '1707'
 ht-degree: 31%
@@ -43,7 +43,7 @@ Pour plus d’informations sur l’activation du mode de sauvegarde sécurisé, 
 
 **Répertoire racine de stockage global de documents** Le répertoire racine de stockage global de documents est utilisé aux fins suivantes :
 
-* Stockage de documents de longue durée. Les documents de longue durée n’ont pas de délai d’expiration et persistent jusqu’à ce qu’ils soient supprimés (par exemple, les fichiers de PDF utilisés dans un processus de workflow). Les documents de longue durée constituent une partie essentielle de l’état global du système. Si certains ou tous ces documents sont perdus ou corrompus, le serveur Forms peut devenir instable. Par conséquent, il est important que ce répertoire soit stocké sur un périphérique RAID.
+* Stockage de documents de longue durée. Les documents de longue durée n’ont pas de délai d’expiration et persistent jusqu’à ce qu’ils soient supprimés (par exemple, les fichiers de PDF utilisés dans un processus de workflow). Les documents de longue durée constituent une partie essentielle de l’état global du système. Si certains de ces documents sont perdus ou corrompus, le serveur Forms peut devenir instable. Par conséquent, il est important que ce répertoire soit stocké sur un périphérique RAID.
 * Stockage des documents temporaires nécessaires pendant le traitement.
 
 >[!NOTE]
@@ -117,6 +117,6 @@ Activez cette option dans les environnements de développement, où les dévelop
 
 **Autoriser une requête RDS non sécurisée** Lorsque cette option est sélectionnée, les demandes RDS n’ont pas besoin d’utiliser https. Par défaut, cette option n’est pas sélectionnée et toutes les communications destinées à Data Services ont recours à des demandes en mode https.
 
-**Autoriser le téléchargement de documents non sécurisés à partir d’applications Flex :** Le servlet de téléchargement de fichiers utilisé pour charger des documents à partir des applications Adobe Flex® vers AEM forms exige que les utilisateurs soient authentifiés et autorisés avant de pouvoir télécharger des documents. L’utilisateur doit se voir attribuer le rôle Utilisateur de l’application de téléchargement de document ou un autre rôle incluant l’autorisation de téléchargement de document. Cela permet d’empêcher les utilisateurs non autorisés de télécharger des documents vers le serveur d’AEM forms. Sélectionnez cette option si vous souhaitez désactiver cette fonction de sécurité dans un environnement de développement ou pour une compatibilité descendante avec les versions précédentes d’AEM forms. Par défaut, cette option n’est pas sélectionnée. Pour plus d’informations, consultez la section « Appeler AEM Forms à l’aide d’AEM Forms Remoting » dans Programmation avec AEM Forms.
+**Autoriser le téléchargement de documents non sécurisés à partir d’applications Flex :** Le servlet de téléchargement de fichiers utilisé pour charger des documents à partir des applications Adobe Flex® vers AEM forms exige que les utilisateurs soient authentifiés et autorisés avant de pouvoir télécharger des documents. L’utilisateur doit se voir attribuer le rôle Utilisateur de l’application de téléchargement de document ou un autre rôle incluant l’autorisation de téléchargement de document. Cela permet d’empêcher les utilisateurs non autorisés de télécharger des documents vers le serveur AEM Forms. Sélectionnez cette option si vous souhaitez désactiver cette fonction de sécurité dans un environnement de développement ou pour une compatibilité descendante avec les versions précédentes d’AEM forms. Par défaut, cette option n’est pas sélectionnée. Pour plus d’informations, consultez la section « Appeler AEM Forms à l’aide d’AEM Forms Remoting » dans Programmation avec AEM Forms.
 
 **Autoriser le téléchargement de documents non sécurisés à partir d’applications Java SDK :** Les téléchargements HTTP DocumentManager doivent être sécurisés. Par défaut, les téléchargements HTTP nécessitent que les utilisateurs soient authentifiés et autorisés avant de pouvoir télécharger des documents. L’utilisateur doit se voir attribuer le rôle Utilisateur des services ou un autre rôle contenant l’autorisation Service Invoke . Cela permet d’empêcher les utilisateurs non autorisés de télécharger des documents vers le serveur Forms. Sélectionnez cette option si vous souhaitez désactiver cette fonctionnalité de sécurité dans un environnement de développement, pour une compatibilité descendante avec les versions précédentes d’AEM forms ou en fonction de la configuration de votre pare-feu. Par défaut, cette option n’est pas sélectionnée. Pour plus d’informations, consultez la section « Appeler AEM Forms à l’aide de l’API Java » dans Programmation avec AEM Forms.

@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '4840'
-ht-degree: 83%
+source-wordcount: '4834'
+ht-degree: 84%
 
 ---
 
@@ -53,7 +53,7 @@ Il est important de tenir compte des points suivants avant de commencer :
 
 * La création d’un modèle nécessite une collaboration. Pour cette raison, le [rôle](#roles) est indiqué pour chaque tâche.
 
-* Selon la configuration de votre instance, il peut être utile de savoir qu’AEM fournit désormais [deux types de modèle de base](/help/sites-authoring/templates.md#editable-and-static-templates). Cela n’a aucune incidence sur la manière dont vous [utiliser un modèle pour créer une page ;](#using-a-template-to-create-a-page), mais cela a un impact sur le type de modèle que vous pouvez créer et sur la façon dont une page est liée à son modèle.
+* En fonction de la configuration de votre instance, AEM fournit désormais [deux types de modèle de base](/help/sites-authoring/templates.md#editable-and-static-templates). Cela n’a aucune incidence sur la manière dont vous [utiliser un modèle pour créer une page ;](#using-a-template-to-create-a-page), mais cela a un impact sur le type de modèle que vous pouvez créer et sur la façon dont une page est liée à son modèle.
 
 ### Rôles {#roles}
 
@@ -314,7 +314,7 @@ Les aspects suivants d&#39;un modèle peuvent être édités :
 
   >[!NOTE]
   >
-  >Dans **Contenu initial** et, sur les pages créées, tout composant déverrouillé ayant un parent accessible (c’est-à-dire des composants dans un conteneur de mises en page) peut être supprimé.
+  >En mode **Contenu initial** (et dans les pages créées), les composants déverrouillés qui possèdent un parent accessible (c’est-à-dire, les composants dans un conteneur de mises en page) peuvent être supprimés.
 
 * [Disposition](#editingatemplatelayout)
 

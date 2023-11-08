@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '1486'
-ht-degree: 25%
+ht-degree: 24%
 
 ---
 
@@ -61,11 +61,11 @@ Pour éviter les pertes de données, les données spécifiques d’AEM forms doi
 
 Suivez les instructions ci-dessous si vous devez récupérer AEM formulaires dans un environnement différent en raison des modifications suivantes :
 
-* modification de l’adresse IP, du nom d’hôte ou du port du serveur AEM Forms ;
+* Modification de l’adresse IP, du nom d’hôte ou du port du serveur AEM Forms
 * Modification des lettres de lecteur ou du chemin d’accès au répertoire
 * Modification d’un hôte de base de données, d’un port ou d’un nom différent
 
-En règle générale, de tels scénarios de récupération sont provoqués par une défaillance matérielle du serveur hébergeant le serveur d’applications, le serveur de base de données ou le serveur Forms. Outre les configurations spécifiques à AEM forms décrites dans cette section, vous devez également apporter les modifications nécessaires à d’autres parties du déploiement d’AEM forms, telles que les équilibreurs de charge et les pare-feu, en cas de modification du nom d’hôte ou de l’adresse IP d’un serveur de formulaires d’AEM.
+En règle générale, de tels scénarios de récupération sont provoqués par une défaillance matérielle du serveur hébergeant le serveur d’applications, le serveur de base de données ou le serveur Forms. Outre les configurations spécifiques à AEM forms décrites dans cette section, vous devez également apporter les modifications nécessaires à d’autres parties du déploiement d’AEM forms, telles que les équilibreurs de charge et les pare-feu, si le nom d’hôte ou l’adresse IP d’un serveur AEM Forms change.
 
 ### Ce qui ne peut pas être modifié {#what-cannot-be-changed}
 

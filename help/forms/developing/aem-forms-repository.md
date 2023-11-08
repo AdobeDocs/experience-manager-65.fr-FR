@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '9095'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -593,7 +593,7 @@ Lorsque vous mettez à jour une ressource, la nouvelle version est créée en fo
 
 Par exemple, si vous mettez à jour un fichier XDP qui contient des références à d’autres ressources, ces références supplémentaires seront également enregistrées. Supposons que la version 1.0 de form.xdp possède deux références externes : un logo et une feuille de style. Vous mettez à jour le fichier form.xdp, de sorte quʼil possède maintenant trois références : un logo, une feuille de style et un fichier de schéma. Lors de la mise à jour, le référentiel ajoute la troisième relation (au fichier de schéma) à sa table de relations en attente. Une fois que le fichier de schéma est présent dans le référentiel, la relation est automatiquement formée. Cependant, si la version 2.0 de form.xdp n’utilise plus le logo, la version 2.0 de form.xdp nʼaura pas de relation avec le logo.
 
-Toutes les opérations de mise à jour sont de nature atomique et transactionnelle. Par exemple, si deux utilisateurs lisent la même ressource et décident tous deux de mettre à jour la version 1.0 vers la version 2.0, lʼun dʼeux réussira et lʼautre échouera, lʼintégrité du référentiel sera maintenue et les deux utilisateurs recevront un message confirmant le succès ou lʼéchec. Si la transaction n’est pas validée, elle sera restaurée en cas de défaillance de la base de données et expirera ou sera restaurée en fonction du serveur d’applications.
+Toutes les opérations de mise à jour sont de nature atomique et transactionnelle. Par exemple, si deux utilisateurs lisent la même ressource et décident tous deux de mettre à jour la version 1.0 vers la version 2.0, lʼun dʼeux réussira et lʼautre échouera, lʼintégrité du référentiel sera maintenue et les deux utilisateurs recevront un message confirmant le succès ou lʼéchec. Si la transaction n’est pas validée, elle sera restaurée en cas d’échec de la base de données et expirera ou restaurera selon le serveur d’applications.
 
 Vous pouvez mettre à jour les ressources par programmation à l’aide de l’API Java du service Repository ou de l’API de service web.
 

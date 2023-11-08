@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '7144'
-ht-degree: 36%
+ht-degree: 35%
 
 ---
 
@@ -79,7 +79,7 @@ Vous pouvez configurer les propriétés suivantes pour un dossier de contrôle.
 
 >[!NOTE]
 >
->Si le serveur qui héberge le dossier Watched Folder ne dispose pas d’un mode d’exécution spécifié, le dossier est toujours activé, sans tenir compte des modes d’exécution sur le serveur.
+>Si le serveur hébergeant le dossier de contrôle ne dispose d’aucun des modes d’exécution spécifiés, celui-ci s’active toujours, quels que soient les modes d’exécution sur le serveur.
 
 * **outputFilePattern (chaîne)**: modèle du fichier de sortie. Vous pouvez spécifier un modèle de dossier ou de fichier. Si un modèle de dossier est spécifié, les fichiers de sortie portent des noms comme décrit dans les workflows. Si un modèle de fichier est spécifié, les fichiers de sortie portent des noms comme décrit dans le modèle de fichier. [Modèle de fichier et de dossier](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) peut également spécifier une structure de répertoire pour les fichiers de sortie. Il s’agit d’une propriété obligatoire.
 

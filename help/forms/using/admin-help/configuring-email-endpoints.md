@@ -8,10 +8,10 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '3775'
-ht-degree: 58%
+ht-degree: 53%
 
 ---
 
@@ -116,11 +116,11 @@ Pour que le processus des formulaires reçoive et traite les courriers électron
 
 **SMTP SSL activé :** lorsque cette option est sélectionnée, SSL via SMTP est activé.
 
-**Inclure le corps original de l’e-mail en tant que pièce jointe :** par défaut, lorsque vous envoyez un e-mail au serveur Forms, le texte original du message est inclus dans le corps du message. Pour inclure ce texte en pièce jointe à la place, sélectionnez cette option.
+**Incluez Le Corps De L&#39;Email D&#39;Origine En Pièce Jointe :** Par défaut, lorsque vous envoyez un email au serveur Forms, le texte d’origine du message est inclus dans le corps du message. Pour inclure ce texte en pièce jointe à la place, sélectionnez cette option.
 
 **Utiliser la ligne d’objet originelle pour les e-mails de résultat :** par défaut, le serveur Forms utilise les valeurs spécifiées dans les paramètres d’objet des e-mails de succès et d’erreur en tant qu’objet des e-mails de résultat envoyés. Pour que l’objet des messages électroniques de résultat soit le même que l’objet du message électronique original envoyé au serveur, sélectionnez cette option.
 
-**Objet de l’e-mail de succès :** après l’envoi d’un e-mail à un point d’entrée d’e-mail pour commencer ou continuer un processus, le serveur AEM Forms vous renvoie un message. Si votre email réussit, vous recevez un message de réussite. Si votre email échoue, vous recevez un message d’échec vous informant de son échec. Ce paramètre vous permet de spécifier l’objet des messages électroniques de réussite envoyés pour ce point de terminaison.
+**Success Email Subject :** Une fois que vous avez envoyé un courrier électronique à un point de fin de courrier électronique pour démarrer ou continuer un processus, vous recevez un courrier électronique de retour du serveur AEM Forms. Si votre email réussit, vous recevez un message de réussite. Si votre email échoue, vous recevez un message d’échec vous informant de son échec. Ce paramètre vous permet de spécifier l’objet des messages électroniques de réussite envoyés pour ce point de terminaison.
 
 **Corps de l’e-mail de succès :** permet de spécifier le corps de texte des e-mails de succès envoyés pour ce point d’entrée.
 
@@ -130,9 +130,9 @@ Pour que le processus des formulaires reçoive et traite les courriers électron
 
 **Corps des e-mails d’erreur :** permet de spécifier la première ligne du corps du texte des e-mails d’erreur envoyés pour ce point d’entrée.
 
-**Informations du résumé de l’e-mail :** chaque e-mail de succès ou d’erreur comporte une section comprenant le texte de l’e-mail original que vous avez envoyé au serveur Forms. Ce paramètre spécifie le texte qui apparaît au-dessus cette section.
+**Email Summary Info :** Chaque message de succès ou d’échec comprend une section contenant le texte du courrier électronique d’origine que vous avez envoyé au serveur Forms. Ce paramètre spécifie le texte qui apparaît au-dessus cette section.
 
-**Valider la boîte de réception avant de créer/mettre à jour ce point d’entrée :** lorsque cette option est sélectionnée, le serveur Forms vérifie que les paramètres SMTP/POP3 sont corrects avant de créer le point d’entrée. Lorsque vous cliquez sur Ajouter, un message s’affiche, indiquant si le compte de boîte de réception est valide. Si cette option n’est pas sélectionnée, AEM serveur forms crée le point de fin sans valider la boîte de réception.
+**Validez La Boîte De Réception Avant De Créer/Mettre À Jour Ce Point De Terminaison :** Lorsque cette option est sélectionnée, le serveur Forms vérifie que vos paramètres SMTP/POP3 sont corrects avant de créer le point de terminaison. Lorsque vous cliquez sur Ajouter, un message s’affiche, indiquant si le compte de boîte de réception est valide. Si cette option n’est pas sélectionnée, le serveur AEM Forms crée le point de terminaison sans valider la boîte de réception.
 
 **Encodage du jeu de caractères :** format de codage à utiliser pour l’e-mail. La valeur par défaut est UTF-8, que la plupart des utilisateurs en dehors du Japon utiliseront. Les utilisateurs d’un environnement japonais peuvent choisir ISO2022-JP.
 
@@ -206,11 +206,11 @@ Par exemple, un point de fin de courrier électronique est créé pour un servic
 
 La valeur par défaut est asynchrone.
 
-**Inclure le corps de l’e-mail d’origine en pièce jointe :** par défaut, lorsque vous envoyez un e-mail au serveur Forms, le texte original du message est inclus dans le corps du message. Pour inclure ce texte en pièce jointe à la place, sélectionnez cette option.
+**Insérez le corps du courrier électronique d’origine en tant que pièce jointe :** Par défaut, lorsque vous envoyez un email au serveur Forms, le texte d’origine du message est inclus dans le corps du message. Pour inclure ce texte en pièce jointe à la place, sélectionnez cette option.
 
 **Utiliser la ligne d’objet d’origine pour les e-mails de résultats :** par défaut, le serveur Forms utilise les valeurs spécifiées dans les paramètres d’objet des e-mails de réussite et d’erreur en tant qu’objet des e-mails de résultat envoyés. Pour que l’objet des messages électroniques de résultat soit le même que l’objet du message électronique original envoyé au serveur, sélectionnez cette option.
 
-**Objet de l’e-mail de succès :** après l’envoi d’un e-mail à un point d’entrée d’e-mail pour commencer ou continuer un processus, le serveur AEM Forms vous renvoie un message. Si votre email réussit, vous recevez un message de réussite. Si votre email échoue, vous recevez un message d’échec vous informant de son échec. Ce paramètre vous permet de spécifier l’objet des messages électroniques de réussite envoyés pour ce point de terminaison.
+**Success Email Subject :** Une fois que vous avez envoyé un courrier électronique à un point de fin de courrier électronique pour démarrer ou continuer un processus, vous recevez un courrier électronique de retour du serveur AEM Forms. Si votre email réussit, vous recevez un message de réussite. Si votre email échoue, vous recevez un message d’échec vous informant de son échec. Ce paramètre vous permet de spécifier l’objet des messages électroniques de réussite envoyés pour ce point de terminaison.
 
 **Corps de l’e-mail de succès :** permet de spécifier le corps de texte des e-mails de succès envoyés pour ce point d’entrée.
 
@@ -220,9 +220,9 @@ La valeur par défaut est asynchrone.
 
 **Corps des e-mails d’erreur :** permet de spécifier la première ligne du corps du texte des e-mails d’erreur envoyés pour ce point d’entrée.
 
-**Informations du résumé de l’e-mail :** chaque e-mail de succès ou d’erreur comporte une section comprenant le texte de l’e-mail original que vous avez envoyé au serveur Forms. Ce paramètre spécifie le texte qui apparaît au-dessus cette section.
+**Email Summary Info :** Chaque message de succès ou d’échec comprend une section contenant le texte du courrier électronique d’origine que vous avez envoyé au serveur Forms. Ce paramètre spécifie le texte qui apparaît au-dessus cette section.
 
-**Valider la boîte de réception avant de créer/mettre à jour ce point d’entrée :** lorsque cette option est sélectionnée, le serveur Forms vérifie que les paramètres SMTP/POP3 sont corrects avant de créer le point d’entrée. Lorsque vous cliquez sur Ajouter, un message s’affiche, indiquant si le compte de boîte de réception est valide. Si cette option n’est pas sélectionnée, AEM serveur forms crée le point de fin sans valider la boîte de réception.
+**Validez la boîte de réception avant de créer/mettre à jour ce point de terminaison :** Lorsque cette option est sélectionnée, le serveur Forms vérifie que vos paramètres SMTP/POP3 sont corrects avant de créer le point de terminaison. Lorsque vous cliquez sur Ajouter, un message s’affiche, indiquant si le compte de boîte de réception est valide. Si cette option n’est pas sélectionnée, le serveur AEM Forms crée le point de terminaison sans valider la boîte de réception.
 
 **Nom de l’opération :** ce paramètre est obligatoire. Liste des opérations pouvant être affectées au point de fin de courrier électronique. L’opération que vous sélectionnez ici détermine les champs affichés dans les sections Mappages des paramètres d’entrée et Mappages des paramètres de sortie .
 

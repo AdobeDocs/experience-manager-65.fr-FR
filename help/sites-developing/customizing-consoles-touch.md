@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
 exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 44%
+source-wordcount: '670'
+ht-degree: 42%
 
 ---
 
@@ -50,7 +50,7 @@ Elles peuvent être utilisées de différentes manières pour étendre vos conso
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recréez l’élément requis (tel qu’il existe dans `/libs`) sous `/apps`.
+>1. Recréez l’élément requis (c’est-à-dire, tel qu’il existe dans `/libs`) sous `/apps`
 >
 >1. Apportez les modifications désirées dans `/apps`.
 >

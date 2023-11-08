@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '17029'
+source-wordcount: '17027'
 ht-degree: 83%
 
 ---
@@ -351,7 +351,7 @@ Vous pouvez modifier les champs de signature d’un document de PDF à l’aide 
 
 Un *dictionnaire de verrouillage de champ* spécifie la liste des champs qui sont verrouillés lorsque le champ de signature est signé. Un champ verrouillé empêche les utilisateurs d’apporter des modifications au champ. Un *dictionnaire de valeur de départ* contient des informations contraignantes utilisées au moment de l’apposition de la signature. Par exemple, vous pouvez modifier les autorisations qui contrôlent les actions pouvant se produire sans invalider la signature.
 
-Lors de la modification d’un champ de signature existant, vous pouvez modifier le document PDF en fonction des besoins de votre entreprise. Par exemple, un nouveau besoin d’activité pourrait nécessiter de verrouiller tous les champs du document une fois le document signé.
+En modifiant un champ de signature existant, vous pouvez modifier le document du PDF pour tenir compte des besoins de l’entreprise. Par exemple, un nouveau besoin d’activité pourrait nécessiter de verrouiller tous les champs du document une fois le document signé.
 
 Cette section explique comment modifier un champ de signature en modifiant les valeurs du dictionnaire de verrouillage de champ et du dictionnaire de valeur de départ. Les modifications apportées au dictionnaire de verrouillage des champs de signature entraînent le verrouillage de tous les champs du document PDF lors de la signature d’un champ de signature. Les modifications apportées au dictionnaire des valeurs de départ interdisent certains types de modifications apportées au document.
 

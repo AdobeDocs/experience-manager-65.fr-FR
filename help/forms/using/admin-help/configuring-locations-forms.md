@@ -8,10 +8,10 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d2b7cfb-228c-4cc2-8fcd-d500f0010010
 exl-id: 0d9eb7fe-28a6-444e-957d-023687158c61
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 44%
+source-wordcount: '822'
+ht-degree: 42%
 
 ---
 
@@ -82,11 +82,11 @@ La valeur par défaut est une chaîne vide.
 **Emplacement par défaut :** il s’agit de la sélection par défaut. Lorsque cette option est sélectionnée, le cache est créé à un emplacement différent selon le serveur d’applications utilisé :
 
 * **JBoss :** [JBoss Home]\server\[install type]\svcdata\FormServer\Cache
-* **WebLogic :** [Répertoire racine WebLogic]\user_projects\domains\[nom de domaine aem-forms]\adobe\[nom du serveur forms]\FormServer\Cache
+* **WebLogic :** [WebLogic Home]\user_projects\domains\[nom de domaine aem-forms]\adobe\[nom du serveur Forms]\FormServer\Cache
 * **WebSphere :** [Répertoire racine IBM]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
 **Répertoire temporaire LC :** le cache est créé dans le sous-répertoire du répertoire temporaire dʼAEM Forms, qui est spécifié dans la console dʼadministration sous Paramètres > Paramètres de Core System > Configurations > Emplacement du répertoire temporaire. Le sous-répertoire se nomme adobeform_[nom_serveur].
 
 >[!NOTE]
 >
->Si vous utilisez un utilitaire de nettoyage des répertoires temporaires, sachez que si la suppression de ces répertoires n’affecte pas les fonctionnalités, elle peut affecter considérablement les performances pendant une courte période jusqu’à la création du nouveau cache. Pour éviter ce problème, ne supprimez pas ces répertoires lors de l’effacement du répertoire temporaire d’AEM forms.
+>Si vous utilisez un utilitaire de nettoyage des répertoires temporaires, bien que la suppression de ces répertoires n’affecte pas les fonctionnalités, elle peut affecter considérablement les performances pendant une courte période jusqu’à la création du nouveau cache. Pour éviter ce problème, ne supprimez pas ces répertoires lors de l’effacement du répertoire temporaire d’AEM forms.

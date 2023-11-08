@@ -10,10 +10,10 @@ discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 docset: aem65
 feature: Adaptive Forms
 exl-id: 255be73f-3169-457c-aaa7-a2fb59f1f2cd
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 75%
+source-wordcount: '738'
+ht-degree: 73%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 75%
 
 <span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/using/create-an-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
 
-Les formulaires adaptatifs prennent en charge différents événements XFA, propriétés, scripts et validations définis dans un fichier XDP, notamment : 
+Les formulaires adaptatifs prennent en charge divers événements XFA, propriétés, scripts et validations définis dans un fichier XDP, notamment :
 
 * Exécution de scripts définis sur les événements dans le fichier XDP.
 * Capture des valeurs par défaut et des propriétés comportementales pour les champs du fichier XDP.

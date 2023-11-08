@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '10228'
+source-wordcount: '10221'
 ht-degree: 23%
 
 ---
@@ -51,7 +51,7 @@ Pour plus d’informations sur le fonctionnement de la synchronisation et de l�
 
 **Autoriser une authentification étendue :** sélectionnez cette option pour activer l’authentification étendue, puis saisissez l’URL d’accueil de l’authentification étendue.
 
-La sélection de cette option permet aux applications clientes d’utiliser l’authentification étendue. L’authentification étendue fournit des processus d’authentification personnalisés et différentes options d’authentification configurées sur le serveur d’AEM forms. Par exemple, les utilisateurs peuvent désormais tester l’authentification SAML au lieu d’AEM nom d’utilisateur/mot de passe des formulaires, à partir d’Acrobat et du client Reader. Par défaut, l&#39;URL d&#39;entrée contient *localhost* comme nom du serveur. Remplacez le nom du serveur par un nom d’hôte complet. Le nom d’hôte dans l’URL d’entrée est automatiquement renseigné à partir de l’URL de base, si l’authentification étendue n’est pas encore activée. Voir [Ajout du fournisseur d’authentification étendue](configuring-client-server-options.md#add-the-extended-authentication-provider).
+La sélection de cette option permet aux applications clientes d’utiliser l’authentification étendue. L’authentification étendue fournit des processus d’authentification personnalisés et différentes options d’authentification configurées sur le serveur AEM Forms. Par exemple, les utilisateurs peuvent désormais tester l’authentification SAML au lieu d’AEM nom d’utilisateur/mot de passe des formulaires, à partir d’Acrobat et du client Reader. Par défaut, l&#39;URL d&#39;entrée contient *localhost* comme nom du serveur. Remplacez le nom du serveur par un nom d’hôte complet. Le nom d’hôte dans l’URL d’entrée est automatiquement renseigné à partir de l’URL de base, si l’authentification étendue n’est pas encore activée. Voir [Ajout du fournisseur d’authentification étendue](configuring-client-server-options.md#add-the-extended-authentication-provider).
 
 ***Remarque ** : l’authentification étendue est prise en charge sur Mac OS X doté de la version 11.0.6 d’Adobe Acrobat et ultérieure.*
 
@@ -99,7 +99,7 @@ AEM forms fournit un exemple de configuration que vous pouvez personnaliser pour
 >L’authentification étendue est prise en charge sur Apple Mac OS X avec Adobe Acrobat version 11.0.6 et ultérieure.
 
 1. Procurez-vous l’exemple de fichier WAR pour le déployer. Consultez le guide d’installation approprié à votre serveur d’applications.
-1. Assurez-vous que le serveur Forms dispose d’un nom complet plutôt que d’adresses IP comme URL de base et qu’il s’agit d’une URL HTTPS. Voir [Paramètres de configuration du serveur](configuring-client-server-options.md#server-configuration-settings).
+1. Assurez-vous que le serveur Forms dispose d’un nom complet au lieu d’adresses IP comme URL de base et qu’il s’agit d’une URL HTTPS. Voir [Paramètres de configuration du serveur](configuring-client-server-options.md#server-configuration-settings).
 1. Activez l’authentification étendue à partir de la page Configuration du serveur . Voir [Paramètres de configuration du serveur](configuring-client-server-options.md#server-configuration-settings).
 1. Ajoutez les URL de redirection d’authentification unique requises dans le fichier de configuration de User Management. Voir [Ajout d’URL de redirection d’authentification unique pour l’authentification étendue](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication).
 
@@ -154,7 +154,7 @@ Pour ouvrir hors connexion un document protégé par une stratégie, l’ordinat
 
 L’une des manières de réduire la menace envers les documents hors ligne consiste à éviter d’autoriser l’accès hors ligne à des documents particulièrement sensibles. Une autre méthode consiste à rouler périodiquement sur les clés principales. Lorsque Document Security place la clé au-dessus, les clés existantes ne peuvent plus accéder aux documents protégés par une stratégie. Par exemple, si un auteur obtient une clé principale à partir d’un ordinateur portable volé, cette clé ne peut pas être utilisée pour accéder aux documents protégés après le survol. Si vous pensez qu’une clé principale spécifique a été compromise, vous pouvez la survoler manuellement.
 
-Cependant, vous devez également savoir qu’un roulement de clés affecte toutes les clés principales, et non une seule. Cela réduit également l’évolutivité du système, car les clients doivent stocker plus de clés pour l’accès hors ligne. La fréquence de roulement des clés par défaut est de 20 jours. Il est recommandé de ne pas définir cette valeur sur 14 jours, car les personnes peuvent ne pas pouvoir afficher les documents hors ligne et les performances du système peuvent être affectées.
+Cependant, un roulement de clés affecte toutes les clés principales, et non une seule. Cela réduit également l’évolutivité du système, car les clients doivent stocker plus de clés pour l’accès hors ligne. La fréquence de roulement des clés par défaut est de 20 jours. Il est recommandé de ne pas définir cette valeur sur 14 jours, car les personnes peuvent ne pas pouvoir afficher les documents hors ligne et les performances du système peuvent être affectées.
 
 Dans l’exemple suivant, Clé1 est la plus ancienne des deux clés principales et Clé2 la plus récente. Lorsque vous cliquez pour la première fois sur le bouton Exécuter le roulement des clés maintenant , Clé1 n’est plus valide et une clé principale plus récente et valide (Clé3) est générée. Les utilisateurs obtiendront Key3 lorsqu’ils se synchronisent avec Document Security, généralement en ouvrant un document protégé en ligne. Toutefois, les utilisateurs ne sont pas obligés de se synchroniser avec Document Security tant qu’ils n’ont pas atteint la période d’ouverture hors connexion maximale spécifiée dans une stratégie. Après le premier roulement de clés, les utilisateurs qui restent hors ligne peuvent toujours ouvrir des documents hors ligne, y compris ceux protégés par Clé3, jusqu’à ce qu’ils atteignent la période d’ouverture hors ligne maximale. Lorsque vous cliquez une seconde fois sur le bouton Exécuter le roulement des clés maintenant , Clé2 n’est plus valide et Clé4 est créée. Les utilisateurs qui restent hors ligne pendant les deux roulements de clés ne peuvent pas ouvrir les documents protégés par Clé3 ou Clé4 tant qu’ils ne se synchronisent pas avec Document Security.
 

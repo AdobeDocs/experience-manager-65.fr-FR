@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: e50974a7-01ac-4a08-bea2-df9cc975c69e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 70%
+ht-degree: 55%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 70%
 
 Dans l’espace de travail AEM Forms, les gestionnaires peuvent désormais accéder à toutes les tâches assignées aux personnes au sein de leur hiérarchie (rapports directs ou indirects) et y effectuer diverses opérations. Les tâches sont accessibles par l’intermédiaire de l’onglet Tâches de l’espace de travail AEM Forms. Les actions prises en charge sur les tâches des rapports directs sont les suivantes :
 
-**Transférer** : permet de transférer une tâche à partir d’un rapport direct vers n’importe quel utilisateur.
+**Transférer** - Transférez une tâche d’un rapport direct à n’importe quel utilisateur.
 
-**Demander** : permet de demander une tâche d’un rapport direct.
+**Demander** - Demande une tâche d’un rapport direct.
 
-**Demander &amp; ouvrir** : permet de demander une tâche d’un rapport direct et de l’ouvrir automatiquement dans la liste des tâches du gestionnaire.
+**Demander et ouvrir** - Demande une tâche d’un rapport direct et l’ouvre automatiquement dans la liste des tâches du responsable.
 
-**Rejeter** : permet de rejeter une tâche transférée vers un rapport direct par un autre utilisateur. Cette option est disponible pour les tâches transférées vers un rapport direct par d’autres utilisateurs.
+**Rejeter** - Rejeter une tâche transférée vers un rapport direct par un autre utilisateur. Cette option est disponible pour les tâches transférées vers un rapport direct par d’autres utilisateurs.
 
 AEM Forms restreint l’accès d’un utilisateur aux seules tâches pour lesquelles cet utilisateur dispose d’un contrôle d’accès (ACL). Ceci permet de garantir que l’utilisateur ne puisse extraire que les tâches pour lesquelles il dispose de droits d’accès. En utilisant des services web et des implémentations tiers pour définir une hiérarchie, une organisation peut personnaliser la définition des rapports directs et de gestionnaire en fonction de ses besoins.
 

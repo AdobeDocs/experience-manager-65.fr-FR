@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '15468'
+source-wordcount: '15464'
 ht-degree: 82%
 
 ---
@@ -323,7 +323,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 ## Modifier les politiques {#modifying-policies}
 
-Vous pouvez modifier une politique existante à l’aide de l’API Java Document Security ou de l’API Web Service. Pour apporter des modifications à une politique existante, vous devez la récupérer, la modifier, puis la mettre à jour sur le serveur. Supposons, par exemple, que vous récupérez une politique existante et que vous étendez sa période de validité. Avant que la modification ne prenne effet, vous devez mettre la politique à jour.
+Vous pouvez modifier une politique existante à l’aide de l’API Java Document Security ou de l’API Web Service. Pour modifier une stratégie existante, vous devez la récupérer, la modifier, puis la mettre à jour sur le serveur. Supposons, par exemple, que vous récupérez une politique existante et que vous étendez sa période de validité. Avant que la modification ne prenne effet, vous devez mettre la politique à jour.
 
 Vous pouvez modifier une politique lorsque les besoins de l’entreprise changent et que la politique ne reflète plus ces besoins. Au lieu de créer une stratégie, vous pouvez simplement mettre à jour une stratégie existante.
 
@@ -1477,7 +1477,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 ## Modifier des filigranes {#modifying-watermarks}
 
-Vous pouvez modifier un filigrane existant à l’aide de l’API Java Document Security ou de l’API de service Web. Pour apporter des modifications à un filigrane existant, vous devez le récupérer, modifier ses attributs, puis le mettre à jour sur le serveur. Supposons, par exemple, que vous récupériez un filigrane et que vous modifiiez son attribut d’opacité. Avant que la modification ne prenne effet, vous devez mettre à jour le filigrane.
+Vous pouvez modifier un filigrane existant à l’aide de l’API Java Document Security ou de l’API de service Web. Pour modifier un filigrane existant, vous devez le récupérer, modifier ses attributs, puis le mettre à jour sur le serveur. Supposons, par exemple, que vous récupériez un filigrane et que vous modifiiez son attribut d’opacité. Avant que la modification ne prenne effet, vous devez mettre à jour le filigrane.
 
 Lorsque vous modifiez un filigrane, la modification a une incidence sur les documents futurs auxquels le filigrane est appliqué. En d’autres termes, les documents PDF existants contenant le filigrane ne sont pas affectés.
 

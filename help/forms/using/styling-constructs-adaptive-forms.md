@@ -1,18 +1,15 @@
 ---
 title: Mettre en forme des éléments pour les formulaires adaptatifs
-seo-title: Styling constructs for adaptive forms
 description: Utilisez la structure LESS pour personnaliser l’aspect des formulaires adaptatifs.
-seo-description: Use LESS framework to customize appearance of adaptive forms.
-uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2363'
+source-wordcount: '2361'
 ht-degree: 92%
 
 ---
@@ -58,7 +55,7 @@ Actuellement, les variables LESS sont définies uniquement pour ces propriétés
 
 ## Modification du style de composant {#changing-component-style}
 
-Vous pouvez modifier l’apparence, la disposition, le positionnement et la visibilité des éléments. Pour réaliser cette tâche, créez ou mettez à jour vos fichiers .css personnalisés pour inclure les mises en forme répertoriées dans cet article.
+Vous pouvez modifier l’aspect, la mise en page, le positionnement et la visibilité des éléments. Pour réaliser cette tâche, créez ou mettez à jour vos fichiers .css personnalisés pour inclure les mises en forme répertoriées dans cet article.
 
 Pour appliquer un style à un formulaire adaptatif, ouvrez le formulaire adaptatif pour l’édition, ouvrez les propriétés du conteneur de formulaires adaptatifs et spécifiez le chemin du fichier CSS personnalisé dans l’onglet de base. Mises en forme par défaut du formulaire adaptatif remplacé par les mises en forme répertoriées dans le fichier .css personnalisé.
 

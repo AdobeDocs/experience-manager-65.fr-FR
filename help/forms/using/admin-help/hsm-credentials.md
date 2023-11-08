@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1323'
 ht-degree: 11%
@@ -23,7 +23,7 @@ AEM forms Digital Signatures peut utiliser les informations d’identification s
 
 >[!NOTE]
 >
->Après avoir modifié votre configuration HSM, redémarrez le serveur d’AEM forms.
+>Après avoir modifié votre configuration HSM, redémarrez le serveur AEM Forms.
 
 ## Créer un alias pour les informations d’identification HSM lorsque l’appareil HSM est en ligne {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-online}
 
@@ -50,7 +50,7 @@ AEM forms Digital Signatures peut utiliser les informations d’identification s
 1. Dans la liste Type d’emplacement, sélectionnez Id d’emplacement, Index d’emplacement ou Nom du jeton, puis spécifiez une valeur dans la zone Infos sur l’emplacement. AEM forms utilise ces paramètres pour déterminer l’emplacement de stockage des informations d’identification sur le HSM.
 
    * **Nom du jeton :** correspond à un nom de partition (par exemple, HSMPART1).
-   * **ID d’emplacement :** nombre entier correspondant à l’emplacement, qui correspond à son tour à une partition. Par exemple, le client (serveur Forms) s’est d’abord enregistré avec la partition HSMPART1. Cela mappe l’emplacement 1 à la partition HSMPART1 pour ce client. Etant donné que HSMPART1 est la première partition enregistrée, l’ID d’emplacement est 1 et vous définissez Informations d’emplacement sur 1.
+   * **ID d’emplacement :** nombre entier correspondant à l’emplacement, qui correspond à son tour à une partition. Par exemple, le client (Forms Server) s’est d’abord enregistré avec la partition HSMPART1. Cela mappe l’emplacement 1 à la partition HSMPART1 pour ce client. Etant donné que HSMPART1 est la première partition enregistrée, l’ID d’emplacement est 1 et vous définissez Informations d’emplacement sur 1.
 
      L’identifiant d’emplacement est défini client par client. Si vous enregistrez une deuxième machine sur une partition différente (par exemple, HSMPART2 sur le même appareil HSM), l’emplacement 1 sera associé à la partition HSMPART2 pour ce client.
 
@@ -83,7 +83,7 @@ La colonne État reflète l’état actuel des informations d’identification. 
 
 ## Réinitialiser toutes les connexions HSM {#reset-all-hsm-connections}
 
-Réinitialisez les connexions ouvertes à un périphérique HSM après toute interruption de la session réseau entre le serveur Forms et le périphérique HSM. Par exemple, des interruptions peuvent survenir en raison d’une panne du réseau ou de la mise hors ligne du périphérique HSM pour une mise à jour du logiciel. Après une interruption, les connexions existantes sont obsolètes et toutes les demandes de signature de ces connexions échouent. L’option Réinitialiser toutes les connexions HSM efface les anciennes connexions.
+Réinitialisez les connexions ouvertes à un appareil HSM après toute interruption de la session réseau entre le serveur Forms et l’appareil HSM. Par exemple, des interruptions peuvent survenir en raison d’une panne du réseau ou de la mise hors ligne du périphérique HSM pour une mise à jour du logiciel. Après une interruption, les connexions existantes sont obsolètes et toutes les demandes de signature de ces connexions échouent. L’option Réinitialiser toutes les connexions HSM efface les anciennes connexions.
 
 1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification HSM.
 1. Cliquez sur Réinitialiser toutes les connexions HSM.

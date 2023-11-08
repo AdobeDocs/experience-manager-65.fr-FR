@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 exl-id: ed662279-0679-4ba3-b744-6649fb8dda17
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 52%
+source-wordcount: '977'
+ht-degree: 47%
 
 ---
 
@@ -41,7 +41,7 @@ Bien qu’il ne soit pas possible de prédire les futurs nombres avec une préci
 
 Il est de la responsabilité du chef de projet de déterminer les mesures à prendre en fonction des résultats et d’agir en conséquence.
 
-**L’engagement au cœur** - Bien qu’il appartienne au chef de projet de s’assurer que toutes les parties s’impliquent pleinement dans toutes les réunions (de statut, ateliers, etc.), vous devez tâcher de vous impliquer le plus tôt possible dans le cycle de projet, y compris pour les processus de collecte d’informations et d’analyse des exigences.
+**Devenir impliqué** - Bien qu’il soit de la responsabilité du chef de projet de s’assurer que toutes les parties sont pleinement impliquées dans toute réunion (état, ateliers, etc.), vous devez également essayer de vous impliquer le plus tôt possible dans le cycle du projet, y compris dans les processus de collecte d’informations et d’analyse des exigences.
 
 **Impliquer le client** Dans le même esprit, tâchez d’impliquer le client (dans la mesure du possible) lors de la définition de votre protocole et de vos scénarios de test.
 

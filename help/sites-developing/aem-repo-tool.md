@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: c46c9f0c-b0d2-4f2f-b95c-90fd3ced32a9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 74%
@@ -17,7 +17,7 @@ ht-degree: 74%
 
 L’outil AEM Repo est une solution simple pour transférer du contenu JCR entre votre système de fichiers local et le serveur AEM via une ligne de commande comparable à FTP. L’outil AEM Repo est similaire à l’[outil Jackrabbit FileVault](/help/sites-developing/ht-vlttool.md), à la différence qu’il est plus rapide, a des dépendances minimales et est un simple script Bash.
 
-Cet outil simplifie le transfert des fichiers pour le développeur et peut également être intégré dans IntelliJ et Eclipse pour rendre le développement encore plus efficace.
+Cet outil simplifie le transfert des fichiers pour le développeur et peut également être intégré dans IntelliJ et Eclipse afin de rendre le développement encore plus efficace.
 
 ## du commerce électronique {#overview}
 

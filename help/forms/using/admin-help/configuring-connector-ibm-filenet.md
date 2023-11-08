@@ -1,7 +1,7 @@
 ---
 title: Configuration de Connector for IBM FileNet
 seo-title: Configuring Connector for IBM FileNet
-description: Découvrez comment configurer le connecteur pour IBM FileNet pour permettre la communication entre AEM forms et IBM FileNet.
+description: Découvrez comment configurer Connector for IBM FileNet pour activer la communication entre AEM forms et IBM FileNet.
 seo-description: Learn how to configure the Connector for IBM FileNet to enable communication between AEM forms and IBM FileNet.
 uuid: 29d4e221-97f7-4cfb-b7e4-75a8289d2604
 contentOwner: admin
@@ -10,29 +10,29 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
 exl-id: f4045df5-a35b-41d7-910e-971017148597
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 100%
+ht-degree: 17%
 
 ---
 
 # Configuration de Connector for IBM FileNet {#configuring-connector-for-ibm-filenet}
 
-Le connecteur pour IBM FileNet permet la communication entre AEM forms et IBM FileNet. Pour plus d’informations, voir Connectors for ECM, dans le [Guide de référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+Connector for IBM FileNet permet la communication entre AEM forms et IBM FileNet. Pour plus d’informations, voir &quot;Connecteurs pour ECM&quot; dans [Référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 >[!NOTE]
 >
->Dans les versions précédentes, il était possible de stocker des actifs dans un référentiel ECM. Dans cette version, les actifs sont stockés dans le référentiel natif d’AEM forms et les services du fournisseur de référentiel sont ignorés. La migration d’actifs d’un référentiel ECM vers le référentiel AEM forms s’effectue lors de la mise à niveau vers AEM forms. Pour plus d’informations, consultez le guide de mise à niveau d’AEM forms correspondant à votre serveur d’applications.
+>Dans les versions antérieures, les ressources pouvaient être stockées dans un référentiel ECM. Dans cette version, les actifs sont stockés dans le référentiel natif d’AEM forms et les services du fournisseur de référentiel sont obsolètes. La migration des actifs d’un référentiel ECM vers le référentiel AEM forms est effectuée lorsque vous effectuez une mise à niveau vers AEM forms. Pour plus d’informations, consultez le guide de mise à niveau d’AEM forms correspondant à votre serveur d’applications.
 
 ## Configuration de la connexion à Content Engine {#configure-the-connection-to-the-content-engine}
 
-IBM FileNet P8 Content Engine fournit des services logiciels permettant de gérer le contenu d’entreprise et les objets commerciaux définis par les clients dans les référentiels de contenu FileNet.
+IBM FileNet P8 Content Engine fournit des services logiciels pour gérer le contenu d’entreprise et les objets commerciaux définis par les clients dans les référentiels de contenu FileNet.
 
-1. Dans Administration Console, sélectionnez Services > Connecteur pour IBM FileNet.
-1. Dans le champ URL Content Engine, saisissez l’URL de connexion complète. Par exemple :
+1. Dans Administration Console, cliquez sur Services > Connector for IBM FileNet.
+1. Dans la zone URL de Content Engine, saisissez l’URL de connexion complète. Par exemple :
 
-   Si vous utilisez FileNet Content Engine 4.x avec le transport CEWS, saisissez :
+   Si vous utilisez FileNet Content Engine 4.x avec le transport CEWS, saisissez :
 
    `cemp:https://ContentEngineHostNameorIP:port/wsi/FNCEWS40DIME?jaasConfigurationName=FileNetP8WSI`
 
@@ -45,38 +45,38 @@ IBM FileNet P8 Content Engine fournit des services logiciels permettant de gé
    * **Clair :** envoie les informations d’identification sur le réseau en mode non protégé
    * **Symétrique :** envoie les informations d’identification chiffrées sur le réseau
 
-1. Dans la zone Emplacement du fichier de chiffrement, entrez le chemin du fichier de chiffrement :
+1. Dans la zone Emplacement du fichier de chiffrement, saisissez le chemin d’accès au fichier de chiffrement :
 
-   * Si vous avez sélectionné Clair comme dispositif de protection des informations d’identification, ce mot-clé et sa valeur sont ignorés.
-   * Si vous avez sélectionné le dispositif de protection des informations d’identification Symétrique, le chemin que vous entrez pointe vers l’emplacement d’un fichier de chiffrement sur le serveur Forms qui contient les clés de cryptage à utiliser.
+   * Si vous avez sélectionné Effacer comme schéma de protection des informations d’identification, ce mot-clé et sa valeur sont ignorés.
+   * Si vous avez sélectionné Symétrique comme schéma de protection des informations d’identification, le chemin que vous saisissez pointe vers l’emplacement d’un fichier de chiffrement sur le serveur Forms qui contient les clés de cryptage à utiliser.
 
-1. Dans le champ Banque d’objets par défaut, entrez le connecteur de banque d’objets auquel AEM forms se connecte par défaut.
-1. Dans le champ Nom d’utilisateur, saisissez le nom d’un utilisateur possédant les droits d’accès à la banque d’objets par défaut spécifiée à l’étape précédente.
-1. Dans le champ Mot de passe, saisissez le mot de passe de l’utilisateur et cliquez sur Enregistrer.
+1. Dans la zone Banque d’objets par défaut, saisissez le connecteur de banque d’objets auquel AEM forms se connecte par défaut.
+1. Dans la zone Nom d’utilisateur , saisissez le nom d’un utilisateur disposant des droits d’accès à la banque d’objets par défaut que vous avez spécifiée à l’étape précédente.
+1. Dans la zone Mot de passe, saisissez le mot de passe de l’utilisateur et cliquez sur Enregistrer.
 
-## Configuration des paramètres de Process Engine {#configure-the-process-engine-settings}
+## Configuration des paramètres du moteur de processus {#configure-the-process-engine-settings}
 
 Connector for IBM FileNet contient le service Process Engine Connector for IBM FileNet, qui permet d’interagir avec IBM FileNet Process Engine. Vous pouvez configurer les paramètres de ce service.
 
-1. Dans Administration Console, sélectionnez Services > Connector for IBM FileNet.
-1. Pour activer l’utilisation du service Process Engine Connector pour IBM FileNet, sélectionnez Utiliser le service de Process Engine Connector.
-1. Dans le champ Routeur de processus/Point de connexion, saisissez le nom d’hôte ou l’adresse IP et le numéro de port suivi du nom du routeur de processus. Par exemple :
+1. Dans Administration Console, cliquez sur Services > Connecteur pour IBM FileNet.
+1. Pour activer l’utilisation du service Process Engine Connector for IBM FileNet, sélectionnez Use Process Engine Connector Service.
+1. Dans la zone Routeur de processus/Point de connexion, saisissez le nom d’hôte ou l’adresse IP et le numéro de port, suivis du nom du routeur de processus. Par exemple :
 
    `rmi://ProcessEngineHostNameorIP:port/Name`
 
-1. Dans le champ Nom d’utilisateur, saisissez le nom d’utilisateur utilisé pour établir la connexion au moteur de processus.
-1. Dans le champ Mot de passe, saisissez le mot de passe utilisé pour établir la connexion au moteur de processus et cliquez sur Enregistrer.
+1. Dans la zone User Name, saisissez le nom d’utilisateur utilisé pour se connecter au moteur de processus.
+1. Dans la zone Password, saisissez le mot de passe utilisé pour se connecter au moteur de processus et cliquez sur Save.
 
-## Validation des paramètres d’un service {#validation-of-service-settings}
+## Validation des paramètres du service {#validation-of-service-settings}
 
-Si vous saisissez un nom d’utilisateur ou un mot de passe incorrect lors de la configuration de la connexion à Content Engine ou des paramètres de Process Engine, vous obtiendrez les résultats suivants selon que les services sont en cours d’exécution ou non :
+Si vous saisissez un nom d’utilisateur ou un mot de passe incorrect lors de la configuration de la connexion à Content Engine ou des paramètres du moteur de processus, vous obtiendrez les résultats suivants, selon que les services sont en cours d’exécution ou non :
 
-* Si les services Repository Provider pour IBM FileNet et Content Repository Connector for IBM FileNet sont arrêtés, aucune erreur n’apparaît lorsque vous enregistrez les informations de configuration du service. Toutefois, lors du prochain démarrage du service, une exception sera générée et le service ne démarrera pas.
-* Si ni le service Repository Provider pour IBM FileNet ni le service Content Repository Connector for IBM FileNet ne sont démarrés, le service tente de valider immédiatement les informations d’identification lorsque vous enregistrez les informations de configuration du service. Dans ce cas, une erreur se produit et les informations de configuration ne sont pas enregistrées.
+* Si les services Repository Provider pour IBM FileNet et Content Repository Connector for IBM FileNet sont arrêtés, aucune erreur n’apparaît lorsque vous enregistrez les informations de configuration du service. Cependant, la prochaine fois que vous démarrez le service, une exception est générée et le service ne démarre pas.
+* Si le service Repository Provider pour IBM FileNet ou Content Repository Connector for IBM FileNet est démarré, le service tente de valider immédiatement les informations d’identification lorsque vous enregistrez les informations de configuration du service. Dans ce cas, une erreur se produit et les informations de configuration ne sont pas enregistrées.
 
 ## Modification du fournisseur de services de référentiel {#change-the-repository-service-provider}
 
-Vous pouvez configurer le fournisseur de services de référentiel à utiliser avec FileNet. Les appels des services de référentiel sont délégués au fournisseur que vous configurez.
+Vous pouvez configurer le fournisseur de services de référentiel à utiliser avec FileNet. Les appels du service Repository sont délégués au fournisseur que vous configurez.
 
 Les options suivantes sont disponibles :
 
@@ -90,5 +90,5 @@ Les options suivantes sont disponibles :
 >
 >pour sélectionner un fournisseur de services de référentiel qui n’est pas répertorié, configurez RepositoryService dans le composant Applications et services <!-- Fix broken link(See Managing Services) -->
 
-1. Dans Administration Console, sélectionnez Services > Connecteur pour IBM FileNet.
-1. Dans la zone Informations sur les fournisseurs de services de référentiel, sélectionnez un autre fournisseur de services de référentiel, puis cliquez sur Enregistrer.
+1. Dans Administration Console, cliquez sur Services > Connector for IBM FileNet.
+1. Dans la zone Informations sur le fournisseur de services de référentiel, sélectionnez l’autre fournisseur de services de référentiel, puis cliquez sur Enregistrer.

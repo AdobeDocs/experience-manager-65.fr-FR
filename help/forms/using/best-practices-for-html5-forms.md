@@ -12,7 +12,7 @@ discoiquuid: db22f775-fab1-4a78-b334-a9c4fa613e43
 docset: aem65
 feature: Mobile Forms
 exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 21%
@@ -46,7 +46,7 @@ Par conséquent, la réduction de la taille des ressources externes et l’utili
 
 * Utilisation [images compressées](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md). Cela réduit l’activité réseau et la quantité de mémoire nécessaire pour générer un formulaire. Par conséquent, le temps de chargement du formulaire diminue considérablement.
 * Utilisez l’option de minimisation dans AEM Configuration Manager (Day CQ HTML Library Manager) pour compresser les fichiers JavaScript et CSS. Pour plus d’informations, voir [Paramètres de configuration OSGi](/help/sites-deploying/osgi-configuration-settings.md).
-* Activez la compression web. Cela réduit la taille des requêtes et des réponses provenant d’un formulaire. Pour plus d’informations, voir [Réglage des performances du serveur d’AEM forms](https://helpx.adobe.com/fr/aem-forms/6-3/performance-tuning-aem-forms.html).
+* Activez la compression web. Cela réduit la taille des requêtes et des réponses provenant d’un formulaire. Pour plus d’informations, voir [Réglage des performances du serveur AEM Forms](https://helpx.adobe.com/fr/aem-forms/6-3/performance-tuning-aem-forms.html).
 
 ## Maintenir l’intérêt en vie, afficher uniquement les champs requis  {#keep-the-interest-alive-show-only-required-fields}
 

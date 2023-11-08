@@ -1,16 +1,14 @@
 ---
 title: Création d’applications mobiles
 description: Le tableau de bord AEM Mobile vous permet de créer, de créer et de déployer votre application mobile, de créer, de supprimer et de modifier les métadonnées de l’application. Consultez cette page pour en savoir plus.
-uuid: 293b5d29-df7e-42dd-ae64-8c677317e7a5
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1011'
 ht-degree: 1%
 
 ---
@@ -67,7 +65,7 @@ Le contenu peut être créé, mis à jour et supprimé dans AEM Mobile de la mê
 
 Une fois que vous avez ajouté ou modifié votre contenu par le biais de la mosaïque Gérer le contenu de la page , vous pouvez envoyer ces modifications à vos clients avec une mise à jour de la version du contenu.
 
-Le module de contenu permet à AEM’auteur d’applications de gérer le contenu de la page dans AEM et de demander à votre équipe de développement d’apporter des modifications à votre application Shell PhoneGap (c’est-à-dire la structure ou l’infrastructure de l’application), puis d’envoyer ces modifications rapidement à vos clients, sans avoir à enrôler un développeur pour qu’il les soumette à nouveau aux différentes boutiques pour distribution.
+Le module de contenu permet à AEM’auteur d’applications de gérer le contenu de la page dans AEM et de demander à votre équipe de développement de modifier votre application Shell PhoneGap (c’est-à-dire la structure ou l’infrastructure de l’application), puis d’envoyer ces modifications rapidement à vos clients, sans avoir à enrôler un développeur pour qu’il les soumette à nouveau aux divers magasins pour distribution.
 
 Le module de contenu crée un fichier ZIP, considéré comme un module de version de contenu, pour chaque mise à jour. Ces modules contiennent des ressources HTML et des pages HTML générées lors du rendu de l’application. Ils sont suffisamment intelligents pour ne compresser que les fichiers qui ont été modifiés depuis la dernière mise à jour.
 

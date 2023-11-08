@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '3498'
-ht-degree: 43%
+source-wordcount: '3493'
+ht-degree: 42%
 
 ---
 
@@ -547,7 +547,7 @@ Si le package de conception contient des balises de composant parsys, le Sidekic
 En cas d’erreur (par exemple, le package importé n’est pas un fichier zip valide), l’importation de conception n’importe pas le package. Un message d’erreur s’affiche en haut de la page, juste au-dessus de la zone de glisser-déposer. Des exemples de scénarios d’erreur sont présentés ici. Après avoir corrigé l’erreur, vous pouvez réimporter le fichier compressé mis à jour sur la même page d’entrée vierge. Les différents scénarios où des erreurs sont générées sont les suivants :
 
 * Le package de conception importé n’est pas une archive ZIP valide.
-* Le package de conception importé ne comporte pas de fichier index.html au niveau supérieur.
+* Le module de conception importé ne contient pas index.html au niveau supérieur.
 
 ### Avertissements affichés après l’importation {#warnings-displayed-after-import}
 
@@ -598,4 +598,4 @@ Alors `box img` est utilisé dans l’importateur de conception, la page d’ent
 
 >[!NOTE]
 >
->Les concepteurs doivent également tenir compte du fait que l’importateur ne reconnaît que le code placé à l’intérieur de la balise **id=cqcanvas**, autrement la conception n’est pas conservée.
+>Les concepteurs ne doivent coder que dans la variable **id=cqcanvas** est reconnue par l’importateur, sinon la conception n’est pas conservée.

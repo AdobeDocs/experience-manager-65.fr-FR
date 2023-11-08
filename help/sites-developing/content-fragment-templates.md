@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: a975ea2e-5e24-4a96-bd62-63bb98836ff2
 docset: aem65
 exl-id: 1b75721c-b223-41f0-88d9-bd855b529f31
-source-git-commit: a2b1bd5462ae1837470e31cfeb87a95af1c69be5
-workflow-type: ht
-source-wordcount: '674'
-ht-degree: 100%
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+workflow-type: tm+mt
+source-wordcount: '675'
+ht-degree: 93%
 
 ---
 
@@ -56,13 +56,12 @@ L’ordre de priorité est (dans l’ordre décroissant) `/conf`, `/apps`, `/lib
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recréez l’élément requis (tel qu’il existe dans `/libs`) sous `/apps`.
+>1. Recréez l’élément requis (c’est-à-dire, tel qu’il existe dans `/libs`) sous `/apps`
 >
 >1. Apportez les modifications désirées dans `/apps`.
 >
 
-
-La structure de base d’un modèle est stockée sous :
+La structure de base d’un modèle est conservée sous :
 
 ```xml
 conf
@@ -75,7 +74,7 @@ conf
               ...
 ```
 
-La structure spécifique étant :
+Avec la structure spécifique :
 
 ```xml
 + <template-name>
@@ -108,7 +107,7 @@ Plus de détails sur les nœuds et leurs propriétés :
 
 * **Modèle**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Nom</th>
@@ -150,7 +149,7 @@ Plus de détails sur les nœuds et leurs propriétés :
 
 * **Éléments**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Nom</th>
@@ -158,7 +157,7 @@ Plus de détails sur les nœuds et leurs propriétés :
      <th>Valeur</th>
     </tr>
     <tr>
-     <td><code>elements</code> </td>
+     <td><code>elements</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>obligatoire</p> </td>
      <td><p>Nœud contenant la définition des éléments du fragment de contenu. Il est obligatoire et doit contenir au moins un nœud enfant pour l’élément <strong>Principal</strong> mais peut contenir [1..n] nœuds enfants.</p> <p>Lorsque le modèle est utilisé, la sous-branche des éléments est copiée dans la sous-branche de modèle du fragment.</p> <p>Le premier élément (affiché dans CRXDE Lite) est automatiquement considéré comme l’élément <i>Principal</i> ; le nom du nœud n’a pas d’importance et le nœud lui-même n’a pas de signification particulière, mis à part le fait qu’il est représenté par la ressource principale ; les autres éléments sont traités comme des sous-ressources.</p> </td>
     </tr>
@@ -167,7 +166,7 @@ Plus de détails sur les nœuds et leurs propriétés :
 
 * **Nom de l’élément**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Nom</th>
@@ -209,7 +208,7 @@ Plus de détails sur les nœuds et leurs propriétés :
 
 * **Variations**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Nom</th>
@@ -217,7 +216,7 @@ Plus de détails sur les nœuds et leurs propriétés :
      <th>Valeur</th>
     </tr>
     <tr>
-     <td><code>variations</code> </td>
+     <td><code>variations</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>facultatif</p> </td>
      <td>Ce nœud facultatif contient la définition des variantes initiales du fragment de contenu.</td>
     </tr>
@@ -226,7 +225,7 @@ Plus de détails sur les nœuds et leurs propriétés :
 
 * **Nom de la variation**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Nom</th>
@@ -234,7 +233,7 @@ Plus de détails sur les nœuds et leurs propriétés :
      <th>Valeur</th>
     </tr>
     <tr>
-     <td><code>&lt;<i>variation-name</i>&gt;</code> </td>
+     <td><code>&lt;<i>variation-name</i>&gt;</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>requis si un nœud de variation est présent</p> </td>
      <td><p>Définit une variation initiale.<br /> La variation est ajoutée à tous les éléments du fragment de contenu par défaut.</p> <p>La variation aura le même contenu initial que l’élément correspondant (voir <code class="code">defaultContent/
        initialContentType</code>).</p> </td>

@@ -1,7 +1,7 @@
 ---
 title: API FormBridge pour les formulaires HTML5
 seo-title: Form Bridge APIs for HTML5 forms
-description: Les applications externes utilisent l’API FormBridge pour se connecter au formulaire pour périphériques mobiles XFA. L’API distribue un événement FormBridgeInitialized sur la fenêtre parent.
+description: Les applications externes utilisent l’API FormBridge pour se connecter au formulaire XFA Mobile. L’API distribue un événement FormBridgeInitialized sur la fenêtre parente.
 seo-description: External applications use the FormBridge API to connect to the XFA Mobile Form. The API dispatches a FormBridgeInitialized event on the parent window.
 uuid: 0db22649-522b-4857-9ffd-826c52381d15
 content-type: reference
@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 exl-id: b598ef47-49ff-4806-8cc7-4394aa068eaa
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+workflow-type: tm+mt
 source-wordcount: '940'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -43,7 +43,7 @@ window.addEventListener("FormBridgeInitialized",
 
 **getBridgeVersion()**
 
-Renvoie le numéro de version de la bibliothèque de script.
+Renvoie le numéro de version de la bibliothèque de script
 
 * **Input** : aucune
 * **Output** : numéro de version de la bibliothèque de script.
@@ -63,8 +63,8 @@ Renvoie le numéro de version de la bibliothèque de script.
    * **handler** : fonction à exécuter après la connexion de Form Bridge
    * **context** : objet pour lequel le contexte (valeur « this ») du *gestionnaire* est défini.
 
-* **Output** : aucune
-* **Error** : aucune
+* **Sortie**: aucune
+* **Erreur**: aucune
 
 **getDataXML(options)** : renvoie les données actuelles du formulaire au format XML.
 
@@ -73,15 +73,15 @@ Renvoie le numéro de version de la bibliothèque de script.
    * **options :** objet JavaScript contenant les propriétés suivantes :
 
       * **Error**: Error Handler Function
-      * **success** : fonction du gestionnaire de réussite. Cette fonction transmet un objet contenant du code XML à la propriété *data*.
-      * **context** : objet pour lequel le contexte (valeur « this ») de la fonction *success* est défini.
+      * **success** : fonction du gestionnaire de réussite. Cette fonction transmet un objet contenant du code XML dans *data* .
+      * **contexte**: objet auquel le contexte (ceci) de la propriété *success* est définie
       * **validationChecker** : fonction à appeler pour vérifier les erreurs de validation reçues du serveur. La fonction de validation transmet un tableau de chaînes d’erreur.
       * **formState** : état JSON du formulaire XFA pour lequel les données XML doivent être renvoyées. Si cette fonction n’est pas spécifiée, elle renvoie les données XML du formulaire actuellement généré.
 
 * **Output :** aucune
 * **Error :** aucune
 
-**registerConfig(configName, config)** : enregistre les configurations propres à l’utilisateur/au portail avec FormBridge. Ces configurations remplacent les configurations par défaut. Les configurations prises en charge sont spécifiées dans la section config.
+**registerConfig(configName, config)** : enregistre les configurations propres à l’utilisateur/au portail avec FormBridge. Ces configurations remplacent les configurations par défaut. Les configurations prises en charge sont spécifiées dans la section config .
 
 * **Entrée:**
 
@@ -89,40 +89,38 @@ Renvoie le numéro de version de la bibliothèque de script.
 
       * **widgetConfig :** permet à l’utilisateur de remplacer les widgets par défaut par des widgets personnalisés, dans le formulaire. La configuration est remplacée comme suit :
 
-         *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
+        *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
 
       * **pagingConfig :** permet à l’utilisateur de remplacer le comportement par défaut du rendu de la première page uniquement. La configuration est remplacée comme suit :
 
-         *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
+        *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
 
       * **LoggingConfig :** permet à l’utilisateur de remplacer le niveau de journalisation, de désactiver la journalisation d’une catégorie ou d’afficher ou non la console de journaux ou l’envoi au serveur. La configuration peut être remplacée comme suit :
 
-      ```javascript
-      formBridge.registerConfig{
-        "LoggerConfig" : {
-      {
-      "on":`<true *| *false>`,
-      "category":`<array of categories>`,
-      "level":`<level of categories>`, "
-      type":`<"console"/"server"/"both">`
-      }
-        }
-      ```
+     ```javascript
+     formBridge.registerConfig{
+       "LoggerConfig" : {
+     {
+     "on":`<true *| *false>`,
+     "category":`<array of categories>`,
+     "level":`<level of categories>`, "
+     type":`<"console"/"server"/"both">`
+     }
+       }
+     ```
 
       * **SubmitServiceProxyConfig :** permet aux utilisateurs d’enregistrer les soumissions et les services proxy de journal.
 
-         ```javascript
-         window.formBridge.registerConfig("submitServiceProxyConfig",
-         {
-         "submitServiceProxy" : "`<submitServiceProxy>`",
-         "logServiceProxy": "`<logServiceProxy>`",
-         "submitUrl" : "`<submitUrl>`"
-         });
-         ```
+        ```javascript
+        window.formBridge.registerConfig("submitServiceProxyConfig",
+        {
+        "submitServiceProxy" : "`<submitServiceProxy>`",
+        "logServiceProxy": "`<logServiceProxy>`",
+        "submitUrl" : "`<submitUrl>`"
+        });
+        ```
 
    * **config :** valeur de la configuration
-
-
 
 * **Output :** objet contenant la valeur d’origine de la configuration dans la propriété *data*.
 
@@ -149,8 +147,8 @@ Renvoie le numéro de version de la bibliothèque de script.
 **hideSubmitButtons()** : masque tous les boutons d’envoi dans le formulaire.
 
 * **Input** : aucune
-* **Output** : aucune
-* **Error** : renvoie l’exception si l’état du formulaire n’est pas initialisé
+* **Sortie**: aucune
+* **Erreur**: renvoie l’exception si l’état du formulaire n’est pas initialisé.
 
 **getFormState()** : renvoie le JSON représentant l’état du formulaire.
 
@@ -159,7 +157,7 @@ Renvoie le numéro de version de la bibliothèque de script.
 
 * **Error :** aucune
 
-**restoreFormState(options)** : restaure l’état du formulaire à partir de l’état JSON fourni dans l’objet options. L’état est appliqué et les gestionnaires de réussite ou d’erreur sont appelés après que l’opération soit terminée
+**restoreFormState(options)** : restaure l’état du formulaire à partir de l’état JSON fourni dans l’objet options. L’état est appliqué et les gestionnaires de succès ou d’erreur sont appelés une fois l’opération terminée.
 
 * **Entrée:**
 
@@ -177,7 +175,7 @@ Renvoie le numéro de version de la bibliothèque de script.
 
 * **Input :** expression SOM du champ sur lequel le ciblage est défini.
 * **Output :** aucune
-* **Error :** renvoie une exception si l’expression Som est incorrecte
+* **Erreur :** Génère une exception en cas d’expression Som incorrecte
 
 **setFieldValue (som, value)** : définit la valeur des champs pour les expressions SOM données.
 
@@ -187,7 +185,7 @@ Renvoie le numéro de version de la bibliothèque de script.
    * **value :** tableau contenant des valeurs correspondant aux expressions SOM fournies dans un tableau **SOM**. Si le type de données de la valeur n’est pas identique à fieldType, la valeur n’est pas modifiée.
 
 * **Output :** aucune
-* **Error :** renvoie une exception si une expression SOM est incorrecte.
+* **Erreur :** Génère une exception en cas d’expression Som incorrecte
 
 **getFieldValue (som)** : renvoie la valeur des champs des expressions SOM données.
 

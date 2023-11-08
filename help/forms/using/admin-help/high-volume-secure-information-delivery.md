@@ -1,7 +1,7 @@
 ---
 title: Envoi sécurisé de gros volumes d’information
 seo-title: High-volume secure information delivery
-description: Dans des environnements de production de masse, Document Security prend en charge l’association des licences aux utilisateurs plutôt qu’aux documents.
+description: Document Security prend en charge l’association de licences aux utilisateurs, plutôt qu’aux documents dans les environnements de production de masse.
 seo-description: Document security supports the association of licenses to users, rather than to the documents in mass production environments.
 uuid: 9747d283-506c-434e-9850-e50b95290cc8
 contentOwner: admin
@@ -11,23 +11,23 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b76d7d93-23a5-4c08-81f5-a56267b1556a
 feature: Document Security
 exl-id: 616e8821-ca96-4471-9120-0e1076a06178
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 100%
+ht-degree: 6%
 
 ---
 
 # Envoi sécurisé de gros volumes d’information {#high-volume-secure-information-delivery}
 
-Dans une environnement de production de masse tel que celui qui génère des factures mensuelles sécurisées pour une société de télécommunications, la création de licences propres à chaque document peut devenir un processus coûteux. Dans de tels cas, Document Security prend en charge l’association des licences aux utilisateurs plutôt qu’aux documents. La licence générée pour un utilisateur est utilisée pour tous les documents protégés pour l’utilisateur en question.
+Dans un environnement de production de masse, tel que celui qui génère des factures mensuelles sécurisées pour une société de télécommunications, la création de licences spécifiques à chaque document peut devenir un processus gourmand en ressources. Dans ce cas, Document Security prend en charge l’association de licences aux utilisateurs plutôt qu’aux documents. La licence générée pour un utilisateur est utilisée pour tous les documents protégés pour cet utilisateur.
 
-L’avantage de cette approche est que la taille de la base de données Document Security ne s’étend pas de façon linéaire avec les documents mais avec le nombre d’utilisateurs. En outre, étant donné qu’un seule licence par utilisateur suffit, la protection ultérieure des documents par le biais de ces stratégies devient plus rapide. Des fonctions telles que l’accès hors connexion, l’expiration des documents, et la révocation sont prises en charge pour tous les documents.
+L’un des avantages de cette approche est que la taille de la base de données Document Security ne s’accroît pas de manière linéaire avec les documents, mais avec le nombre d’utilisateurs. En outre, puisque vous n’avez besoin de créer la licence qu’une seule fois pour un utilisateur, la protection ultérieure des documents par le biais de ces stratégies devient plus rapide. Des fonctionnalités telles que l’accès hors ligne, l’expiration du document et la révocation sont prises en charge pour tous ces documents.
 
-Document Security prend également en charge les stratégies abstraites. Les stratégies abstraites sont des modèles de stratégie contenant tous les attributs de stratégie tels que les paramètres de sécurité des documents et les droits d’utilisation mais ne contenant aucune liste des entités. Les administrateurs peuvent créer autant de stratégies qu’ils le souhaitent à partir de la stratégie abstraite avec différentes entités ayant accès aux documents. Les modifications apportées à une stratégie abstraite n’ont pas d’incidence sur les stratégies réelles qui sont générées à partir des stratégies abstraites.
+Document Security prend également en charge les stratégies abstraites. Les stratégies abstraites sont des modèles de stratégie qui contiennent tous les attributs de stratégie, tels que les paramètres de Document Security et les droits d’utilisation, mais ne contiennent pas de liste d’entités. Les administrateurs peuvent créer un nombre illimité de stratégies à partir de la stratégie abstraite avec différentes entités qui doivent avoir accès aux documents. Les modifications apportées à la stratégie abstraite n’affectent pas les stratégies réelles générées à partir des stratégies abstraites.
 
-Dans le cas de la génération mensuelle de factures pour une société de télécommunications, vous créez une stratégie abstraite, des utilisateurs, puis générez des licences uniques pour chaque utilisateur. Les licences sont ensuite appliquées aux documents pour chaque utilisateur.
+S’il existe une génération mensuelle de factures pour une société de télécommunications, vous créez une stratégie abstraite, vous créez des utilisateurs, puis vous générez des licences uniques pour chaque utilisateur. Les licences sont ensuite appliquées aux documents pour chaque utilisateur.
 
-La création de stratégies abstraites est prise en charge uniquement par le biais du SDK Java de Document Security. Vous pouvez cependant administrer les stratégies que vous créez à partir des stratégies abstraites des pages Web de Document Security. Le comportement des stratégies créées à l’aide de cette méthode est identique à celui des stratégies créées à partir des pages Web de Document Security.
+La création d’une stratégie abstraite est prise en charge uniquement par le biais du SDK Java de Document Security. Vous pouvez toutefois administrer les stratégies que vous créez à partir de la stratégie abstraite des pages Web de Document Security. Les stratégies créées à l’aide de cette méthode ont un comportement identique à celles créées à partir des pages Web de Document Security.
 
 Pour plus d’informations, consultez [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_fr).

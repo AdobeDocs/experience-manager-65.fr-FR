@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '855'
-ht-degree: 15%
+ht-degree: 11%
 
 ---
 
@@ -58,7 +58,7 @@ Vous pouvez créer autant de modèles de recherche que nécessaire.
       * (Facultatif) Pour permettre aux utilisateurs de modifier la valeur de l’opérande dans Workspace, sélectionnez Autoriser l’utilisateur à modifier l’opérande.
       * (Facultatif) Pour permettre aux utilisateurs de modifier l’opérateur relationnel, sélectionnez Autoriser l’utilisateur à sélectionner un autre opérateur relationnel. Dans la liste qui s&#39;affiche, sélectionnez les opérateurs qui seront disponibles pour l&#39;utilisateur.
 
-     **Conseil** : *si vous avez sélectionné Nom du processus en tant qu’élément, vous pouvez cliquer sur l’icône à côté du champ de l’opérande pour afficher une liste dans laquelle vous pouvez sélectionner un processus en cours exécution sur le serveur Forms. Après avoir sélectionné un processus, toute variable définie pour ce processus peut être sélectionnée dans Variables de processus, dans la partie supérieure de l’onglet Critère.*
+     **Conseil**: *Si vous avez sélectionné Process Name en tant qu’élément, vous pouvez cliquer sur l’icône en regard du champ de l’opérande pour afficher une liste dans laquelle vous pouvez sélectionner un processus en cours d’exécution sur le serveur Forms. Après avoir sélectionné un processus, toute variable définie pour ce processus peut être sélectionnée dans Variables de processus, dans la partie supérieure de l’onglet Critère.*
 
      **Conseil** : *vous pouvez supprimer un élément du modèle de recherche en cliquant sur l’icône de suppression en regard du critère de recherche de l’élément.*
 

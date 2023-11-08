@@ -1,18 +1,16 @@
 ---
 title: Modification de lancements
-description: Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez modifier le contenu dans la copie de lancement correspondante.
-uuid: 3a310eeb-553d-4d2b-98b5-c5bc523b2aca
+description: Une fois un lancement créé pour une page (ou un ensemble de pages), vous pouvez modifier le contenu dans la copie de lancement des pages.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 93%
+source-wordcount: '289'
+ht-degree: 76%
 
 ---
 
@@ -20,7 +18,7 @@ ht-degree: 93%
 
 ## Modification de pages de lancement {#editing-launch-pages}
 
-Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez modifier le contenu dans la copie de lancement correspondante.
+Une fois un lancement créé pour une page (ou un ensemble de pages), vous pouvez modifier le contenu dans la copie de lancement des pages.
 
 1. Ouvrez la page pour modification.
 1. Dans le sidekick, sélectionnez l’onglet **Contrôle de version**, puis développez le groupe **Lancements**. Le titre du lancement en cours de modification utilise une police en gras.

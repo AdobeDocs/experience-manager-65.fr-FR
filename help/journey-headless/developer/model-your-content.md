@@ -2,10 +2,10 @@
 title: Comment modéliser votre contenu
 description: Dans cette partie du parcours de développement découplé AEM, apprenez à modéliser votre contenu pour une diffusion AEM découplée à l’aide de la modélisation de contenu avec des modèles de fragment de contenu et des fragments de contenu.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1809'
-ht-degree: 70%
+ht-degree: 68%
 
 ---
 
@@ -178,7 +178,7 @@ Par exemple :
 
 AEM fournit les types de données suivants pour que vous puissiez modéliser votre contenu :
 
-* Texte d’une seule ligne
+* Texte monoligne
 * Texte de plusieurs lignes
 * Nombre
 * Booléen
@@ -206,7 +206,7 @@ Le type de données peut être configuré pour permettre aux auteurs de fragment
 
 ### Création de modèles de fragment de contenu {#creating-content-fragment-models}
 
-Au début, vous devez activer les modèles de fragment de contenu pour votre site. Cette activation est effectuée dans le navigateur de configuration, sous Outils -> Général -> Explorateur de configurations. Vous pouvez choisir de configurer l’entrée globale ou de créer une configuration. Par exemple :
+Au début, vous devez activer les modèles de fragment de contenu pour votre site. Cette activation est effectuée dans le navigateur de configuration, sous Outils > Général > Explorateur de configuration. Vous pouvez choisir de configurer l’entrée globale ou de créer une configuration. Par exemple :
 
 ![Définir la configuration](assets/cfm-configuration.png)
 
@@ -214,7 +214,7 @@ Au début, vous devez activer les modèles de fragment de contenu pour votre sit
 >
 >Voir Ressources supplémentaires – Fragments de contenu dans l’explorateur de configurations
 
-Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Vous pouvez le faire sous Outils -> Ressources -> Modèles de fragment de contenu. Par exemple :
+Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Vous pouvez le faire sous Outils > Ressources > Modèles de fragment de contenu. Par exemple :
 
 ![Modèle de fragment de contenu ](assets/cfm-model.png)
 
@@ -228,7 +228,7 @@ Les fragments de contenu sont toujours basés sur un modèle de fragment de cont
 
 ### Sélection du modèle approprié {#select-model}
 
-La première étape pour créer réellement votre contenu consiste à créer un fragment de contenu. Pour ce faire, utilisez Créer -> Fragment de contenu dans le dossier requis sous Ressources -> Fichiers. L’assistant vous guide tout au long des étapes.
+La première étape pour créer réellement votre contenu consiste à créer un fragment de contenu. Pour ce faire, utilisez Créer > Fragment de contenu dans le dossier requis sous Ressources > Fichiers . L’assistant vous guide tout au long des étapes.
 
 Un fragment de contenu est basé sur un modèle de fragment de contenu spécifique que vous sélectionnez comme première étape du processus de création.
 

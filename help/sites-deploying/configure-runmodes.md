@@ -7,10 +7,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 90%
+source-wordcount: '745'
+ht-degree: 85%
 
 ---
 
@@ -69,11 +69,11 @@ Les modes d’exécution personnalisés peuvent également être sélectionnés 
 
 ## Utiliser samplecontent et nosamplecontent {#using-samplecontent-and-nosamplecontent}
 
-Ces modes permettent de contrôler l’utilisation d’un exemple de contenu. L’exemple de contenu est défini avant la création du démarrage rapide et peut inclure des packages, des configurations, etc :
+Ces modes permettent de contrôler l’utilisation d’un exemple de contenu. L’exemple de contenu est défini avant la création du démarrage rapide et peut inclure des modules, des configurations, etc. :
 
-* Le mode d’exécution `samplecontent` (mode par défaut) installe ce contenu.
+* La variable `samplecontent` le mode d’exécution installe ce contenu (le mode par défaut).
 
-* Le mode d’exécution `nosamplecontent` n’installe pas l’échantillon de contenu.
+* La variable `nosamplecontent` Le mode n’installe pas l’exemple de contenu.
 
 Le mode d’exécution nosamplecontent est conçu pour les installations de production.
 

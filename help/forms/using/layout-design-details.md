@@ -1,54 +1,50 @@
 ---
 title: Conception de la mise en page
-seo-title: Layout Design
-description: Détails de conception de la mise en page explique comment créer des mises en page à utiliser pour vos lettres ou vos communications interactives.
-seo-description: Layout Design Details explains how you can create layouts to be used for your letters or Interactive Communications.
-uuid: 469a8a71-88f7-4102-bb02-38ed05390f6c
+description: Détails de conception de la mise en page explique comment créer des mises en page à utiliser pour vos lettres ou communications interactives.
 content-type: reference
 topic-tags: correspondence-management, interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 683809ac-089b-49bf-a72c-67d32439081f
 docset: aem65
 feature: Correspondence Management
 exl-id: 9e1b0067-c7dc-4bbb-a209-d674592be858
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
-source-wordcount: '2170'
-ht-degree: 100%
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+workflow-type: tm+mt
+source-wordcount: '2171'
+ht-degree: 52%
 
 ---
 
 # Conception de la mise en page{#layout-design}
 
-Les modèles de formulaire XFA ou XDP sont ceux de :
+Les modèles de formulaire XFA ou XDP sont les modèles pour :
 
 * [Lettres](/help/forms/using/create-letter.md)
 * [Canal d’impression](/help/forms/using/web-channel-print-channel.md#printchannel) des [communications interactives](/help/forms/using/interactive-communications-overview.md)
 
-* Fragments de mise en page
+* Fragments de disposition
 
 Les XDP sont conçus dans Adobe Forms Designer. Cet article fournit des détails sur la manière de concevoir vos XDP pour créer des correspondances/communications interactives efficaces, notamment où utiliser les champs de formulaire ou les zones cibles et quand utiliser les fragments de disposition.
 
 ## Création d’une mise en page pour des lettres ou pour le canal d’impression des communications interactives {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
-Une mise en page définit l’apparence graphique d’une lettre ou d’un canal d’impression d’une communication interactive. La disposition peut comporter des champs de formulaire types comme « Adresse » et « Numéro de référence ». Elle contient également des sous-formulaires vides indiquant les zones cible. Le concepteur de formulaires crée la mise en page et, une fois celle-ci terminée, le spécialiste des applications l’envoie au serveur AEM. À partir de là, la mise en page peut être sélectionnée lors de la création d’un modèle de correspondance ou du canal d’impression d’une communication interactive.
+Une mise en page définit l’apparence graphique d’une lettre ou d’un canal d’impression d’une communication interactive. La disposition peut comporter des champs de formulaire types comme « Adresse » et « Numéro de référence ». Elle contient également des sous-formulaires vides indiquant les zones cible. Créez la mise en page dans le concepteur de formulaires et une fois l’application terminée, le spécialiste de l’application la télécharge sur AEM serveur. De là, vous pouvez sélectionner la mise en page lors de la création d’un modèle de correspondance ou d’un canal d’impression d’une communication interactive.
 
 ![Concepteur : crée une mise en page](assets/claimsubrogationlayout.png)
 
-Procédez comme suit pour créer des mises en page pour des lettres/le canal d’impression des communications interactives :
+Pour créer des mises en page pour les lettres/canal d’impression des communications interactives, procédez comme suit :
 
-1. Analysez la mise en page et déterminez le contenu qui se répétera sur toutes les pages. Il s’agit en général de l’en-tête et du pied de page. Ce contenu est placé sur les gabarits de la mise en page. Le contenu restant va dans le corps des pages de la mise en page. Dans un dossier de police, le logo et l’adresse de la société pourront être ajoutés à l’en-tête ou au pied de page du gabarit Par exemple, l’avis d’annulation utilise la même présentation.
-1. Lors de la conception des pages courantes, divisez le contenu des pages en sections. Chaque section est conçue comme un sous-formulaire intégré dans la mise en page ou comme une mise en page de fragment. Si la section contient un tableau, modélisez-la comme fragment de mise en page.
-1. Une mise en page peut être conçue comme suit :
+1. Analysez la mise en page et déterminez le contenu qui se répétera sur toutes les pages. Il s’agit en général de l’en-tête et du pied de page. Ce contenu est placé sur les gabarits de la mise en page. Le contenu restant va dans le corps des pages de la mise en page. Dans un douilleur de police, le logo et l’adresse de l’entreprise peuvent être ajoutés à l’en-tête et au pied de page du gabarit. Par exemple, l’avis d’annulation utilise la même disposition.
+1. Lors de la conception des pages courantes, divisez le contenu des pages en sections. Chaque section est conçue comme un sous-formulaire intégré dans la mise en page ou comme une mise en page de fragment. Si la section contient un tableau, modélisez-la en tant que fragment de mise en page.
+1. Une mise en page peut être conçue comme suit :
 
    1. Faites de chaque section un sous-formulaire distinct contenant tous les éléments de la section.
-   1. Faites de chaque section un enfant du même sous-formulaire parent. La mise en page du sous-formulaire parent est définie de manière à permettre à la mise en page des sections de s’ajuster si les sections précédentes accueillent des données fusionnées en quantité importante.
-   1. La section Résidence principale peut être réutilisée dans d’autres mises en page. Créez-la comme une mise en page de fragment.
-   1. La section Détails d’intérêt supplémentaires ne contient que deux éléments placés l’un au-dessous de l’autre, elle peut contenir des données de grande taille et elle est conçue comme une mise en page souple.
-   1. D’autres sections contiennent des éléments à des positions spécifiques ; elles sont donc conçues comme des mises en page positionnées.
-   1. Eclatez une section en plusieurs sous-formulaires si la section contient des éléments à des positions spécifiques et si ces éléments contiennent de grandes quantités de données. Organisez ensuite les sous-formulaires pour obtenir le comportement souhaité.
-   1. Pour la section Résidence principale, ajoutez une zone cible d’espace réservé. Cet espace réservé est lié au fragment Résidence principale au moment de la conception de la lettre/communication interactive.
-   1. Téléchargez la mise en page (et le fragment qui utilise la mise en page, le cas échéant) sur le serveur AEM Forms.
+   1. Faites en sorte que chaque sous-formulaire de section soit enfant du même sous-formulaire parent. La disposition du sous-formulaire parent est définie pour s’enchaîner de manière à ce que les sections se déplacent vers le bas en cas de données fusionnées dans les sections précédentes.
+   1. La section Résidence principale peut être réutilisée dans d’autres mises en page. Créez-la en tant que mise en page de fragment.
+   1. La section Détails d’intérêt supplémentaires ne contient que deux éléments placés l’un au-dessous de l’autre, elle peut contenir des données volumineuses et est conçue comme une mise en page souple.
+   1. Les autres sections contiennent des éléments à des positions spécifiques ; elles sont donc conçues comme des mises en page positionnées.
+   1. Ventilez une section dans des sous-formulaires si la section contient des éléments à des positions spécifiques et si ces éléments contiennent de grandes quantités de données. Organisez ensuite les sous-formulaires pour obtenir le comportement souhaité.
+   1. Pour la section Résidence principale, ajoutez une zone cible d’espace réservé. Cet espace réservé est lié à la résidence du Principal de fragment au moment de la conception de la lettre/communication interactive.
+   1. Téléchargez la mise en page (et le fragment, le cas échéant, qui utilise la mise en page) sur le serveur AEM Forms.
 
 ### Utiliser un sous-formulaire dans un modèle XDP {#usesubformxdp}
 
@@ -69,7 +65,7 @@ Effectuez les étapes suivantes pour utiliser un sous-formulaire dans un modèle
    ![Concepteur de composant](assets/subform_component_designer_new.png)
 
 1. Sélectionnez le sous-formulaire pour afficher les options correspondantes dans la fenêtre **Objet** dans le volet de droite.
-1. Sélectionnez l’onglet **Sous-formulaire** et sélectionnez **Distribué** dans la liste déroulante **Contenu**. Faites glisser l’extrémité gauche du sous-formulaire pour ajuster la longueur.
+1. Sélectionnez l’onglet **Sous-formulaire** et sélectionnez **Distribué** dans la liste déroulante **Contenu**. Faites glisser le point d’entrée gauche du sous-formulaire pour ajuster la longueur.
 
    ![Sous-formulaire avec enchaînement](assets/object_subform_flowed_new.png)
 
@@ -92,7 +88,7 @@ Effectuez les étapes suivantes pour utiliser un sous-formulaire dans un modèle
 1. Sélectionnez **Fichier** > **Enregistrer sous** pour enregistrer le fichier sur le système de fichiers local :
 
    1. Accédez à l’emplacement où enregistrer le fichier et nommer le modèle XDP.
-   1. Sélectionnez **.xdp** dans la liste déroulante **Type**.
+   1. Sélectionner **.xdp** de la **Enregistrer en tant que type** liste déroulante.
 
    1. Appuyez sur **Enregistrer**.
 
@@ -143,13 +139,13 @@ Effectuez les opérations suivantes pour utiliser le composant Tableau dans le m
 1. Sélectionnez **Fichier** > **Enregistrer sous** pour enregistrer le fichier sur le système de fichiers local :
 
    1. Accédez à l’emplacement où enregistrer le fichier et spécifiez le nom du modèle XDP.
-   1. Sélectionnez **.xdp** dans la liste déroulante **Type**.
+   1. Sélectionner **.xdp** de la **Enregistrer en tant que type** liste déroulante.
 
    1. Appuyez sur **Enregistrer**.
 
 ### Télécharger le modèle XDP sur le serveur AEM Forms {#uploadxdptemplate}
 
-Une fois que vous avez créé un modèle XDP à l’aide de Forms Designer, vous devez le télécharger sur le serveur AEM Forms pour qu’il soit disponible lors de la création de la communication interactive.
+Une fois que vous avez créé un modèle XDP à l’aide de Forms Designer, vous devez le charger sur le serveur AEM Forms afin que le modèle puisse être utilisé lors de la création de la communication interactive.
 
 1. Sélectionnez **Formulaires** > **Formulaires et documents**.
 1. Appuyez sur **Créer** > **Chargement de fichier**.
@@ -157,40 +153,40 @@ Une fois que vous avez créé un modèle XDP à l’aide de Forms Designer, vous
 
 ## Utilisation d’un schéma {#using-schema}
 
-Vous pouvez utiliser un schéma dans une mise en page ou dans un fragment de mise en page, mais ce n’est pas obligatoire. Si vous utilisez un schéma, vérifiez les éléments suivants :
+Vous pouvez utiliser un schéma dans une mise en page ou un fragment de mise en page , mais cela n’est pas obligatoire. Si vous utilisez un schéma, vérifiez les points suivants :
 
 1. La mise en page et tous les fragments de mise en page utilisés dans une lettre/communication interactive utilisent le même schéma que la lettre/communication interactive.
-1. Tous les champs obligatoires à remplir avec des données sont liés au schéma.
+1. Tous les champs à renseigner avec des données sont liés au schéma.
 
 ## Création de champs associables {#creating-relatable-fields}
 
-Par défaut, tous les champs sont considérés comme pouvant être associés à diverses sources de données. Si votre mise en page contient des champs qui ne sont pas associables à une source de données, nommez ces champs à l’aide d’un suffixe « _int » (interne), par exemple pageCount_int.
+Par défaut, tous les champs sont considérés comme associables à d’autres sources de données. Si votre mise en page contient des champs qui ne sont pas liés à une source de données, nommez le champ avec un suffixe &quot;_int&quot; (interne) ; par exemple, pageCount_int.
 
-Un champ associable doit :
+Un champ associable doit :
 
 * être un &lt;champ> XFA ou &lt;exclGroup>
-* disposer d’une référence de liaison XFA ;
-* s’il s’agit d’un champ &lt;exclGroup>, il doit contenir au moins un champ de bouton radio enfant, faute de quoi son type de valeur ne pourra pas être déterminé.
+* disposer d’une référence de liaison XFA ;
+* si c’est un &lt;exclgroup>, il doit comporter au moins un champ de bouton radio enfant ; sinon, son type de valeur ne peut pas être déterminé.
 
-Un champ associable doit :
+Un champ associable doit :
 
-* avoir un nom.
+* avoir un nom ;
 
-Un champ associable ne doit pas :
+Un champ associable ne doit pas :
 
-* inclure de suffixe « _int » dans son nom ;
-* avoir une liaison définie comme « aucune » ;
+* Inclure un suffixe &quot;_int&quot; dans son nom
+* ont une liaison définie sur &quot;none&quot;.
 * être l’enfant d’un élément &lt;exclGroup>
 
-Dès lors qu’un champ associable répond aux critères décrits ci-dessus, il peut être situé à n’importe quel emplacement et dans n’importe quel niveau d’imbrication de la mise en page. Vous pouvez utiliser les champs associables dans les pages de gabarit.
+Tant qu’un champ associable répond aux critères décrits ci-dessus, il peut se trouver à n’importe quel emplacement et dans n’importe quelle profondeur d’imbrication dans la mise en page. Vous pouvez utiliser des champs associables dans les gabarits.
 
-La configuration de la mise en page des champs est plus flexible que celle des sous-formulaires de zone cible. Mais les champs sont liés à un seul type de valeur. Vous pouvez définir un champ pour qu’il soit grand ou définir le champ avec une hauteur ou une largeur fixes, etc. Le résultat du module ou de la règle est envoyé dans le champ. 
+Les champs sont plus flexibles dans leur configuration de disposition que les sous-formulaires de zone cible, mais ils sont liés à un seul type de valeur. Vous pouvez agrandir ou définir un champ sur une largeur et une hauteur fixes, etc. Le résultat du module ou de la règle résolu est placé dans le champ .
 
 ## Quand utiliser des sous-formulaires et des champs de texte {#deciding-when-to-use-subforms-and-text-nbsp-fields}
 
-Utilisez un sous-formulaire si vous voulez capturer plusieurs contenus de module dans une mise en forme de haut en bas à flux vertical (plusieurs paragraphes ou images). Votre mise en page doit gérer le fait que le sous-formulaire se développe en hauteur afin d’accueillir son contenu. Si vous n’êtes pas sûr que la longueur du contenu associé au sous-formulaire/à la cible ne dépassera jamais l’espace réservé dans la mise en page pour le sous-formulaire, créez ce dernier en tant qu’enfant dans un conteneur de sous-formulaires à mise en page souple. Cette procédure garantit que les objets de mise en page situés en dessous du sous-formulaire se déplaceront vers le bas au fur et à mesure que le sous-formulaire s’agrandira.
+Utilisez un sous-formulaire si vous souhaitez capturer plusieurs contenus de module dans une disposition verticale descendante (plusieurs paragraphes ou images). Votre mise en page doit tenir compte du fait que la hauteur du sous-formulaire varie en fonction de son contenu. Si vous ne pouvez pas être certain que la longueur du contenu associé au sous-formulaire/à la cible ne dépasse jamais l’espace réservé au sous-formulaire dans la mise en page, créez le sous-formulaire en tant qu’enfant dans un conteneur de sous-formulaires avec enchaînement. Ce processus permet de s’assurer que les objets de mise en page situés sous le sous-formulaire sont dirigés vers le bas au fur et à mesure que le sous-formulaire se développe.
 
-Utilisez un champ si vous souhaitez capturer dans votre schéma de mise en page des données de module ou d’élément du dictionnaire de données (car les champs sont liés à des données) ou pour afficher un contenu de module dans une page de gabarit. N’oubliez pas que le contenu d’une page de gabarit ne présente pas une mise en page souple modulable en fonction du contenu de la page. Assurez-vous donc que le champ d’image est utilisé comme logo de l’en-tête. Le tableau qui suit indique plusieurs critères permettant de décider quand utiliser un sous-formulaire ou un champ dans une mise en page.
+Utilisez un champ si vous souhaitez capturer des données de module ou d’élément de dictionnaire de données dans le schéma de votre mise en page (car les champs sont liés à des données) ou pour afficher le contenu d’un module sur un gabarit. N’oubliez pas que le contenu d’une page de gabarit ne présente pas une mise en page souple modulable en fonction du contenu de la page. Assurez-vous donc que le champ d’image est utilisé comme logo de l’en-tête. Ce tableau fournit d’autres critères pour décider quand utiliser un sous-formulaire ou un champ dans une mise en page.
 
 <table>
  <tbody>
@@ -199,38 +195,38 @@ Utilisez un champ si vous souhaitez capturer dans votre schéma de mise en page 
    <td><p><strong>Utilisez un champ de texte lorsque</strong></p> </td>
   </tr>
   <tr>
-   <td><p>Il contient une combinaison d’éléments, tels que Nom de famille et Prénom.</p> </td>
-   <td><p>Il contient un seul élément, tel que Numéro de police.</p> </td>
+   <td><p>Il contient une combinaison d’éléments, tels que Nom et Prénom.</p> </td>
+   <td><p>Il contient un seul élément, tel qu’un numéro de police.</p> </td>
   </tr>
   <tr>
    <td><p>Il comprend plusieurs paragraphes.</p> </td>
-   <td><p>Le texte passe à la ligne suivante et est justifié.</p> </td>
+   <td><p>Le texte est encapsulé et justifié.</p> </td>
   </tr>
   <tr>
-   <td><p>Les groupes de données conditionnels, facultatifs et répétitifs sont liés à des sous-formulaires afin de réduire le risque d’erreurs de conception susceptibles de survenir lorsque des scripts sont utilisés pour obtenir les mêmes résultats.</p> </td>
-   <td><p>Les éléments tels que le logo et l’adresse de votre organisation apparaissent sur toutes les pages d’une lettre/communication interactive. Dans ce cas, créez des champs de formulaire pour ces éléments et placez-les sur la page de gabarit. Si vous définissez la liaison du champ sur « Aucune liaison de données », le champ Aucun champ apparaît comme champ associable dans l’Éditeur de lettre/communication interactive. Si vous souhaitez associer certains types de contenu à ces champs, ces derniers doivent contenir des liaisons.</p> <p>Si l’adresse de votre société contient plusieurs lignes de données, utilisez deux champs de texte avec l’option « Autoriser plusieurs lignes » pour représenter l’adresse dans la mise en page.</p> <p>Si le type de données d’un champ de texte est défini comme texte brut, la sortie du module se fait en version texte brut plutôt qu’en version texte enrichi (toutes les mises en forme sont ignorées). Pour conserver la mise en forme, définissez le type de données du champ de texte comme texte enrichi.</p> </td>
+   <td><p>Les groupes de données conditionnels, facultatifs et répétitifs sont liés à des sous-formulaires afin de réduire le risque d’erreurs de conception susceptibles de se produire si des scripts sont utilisés pour obtenir les mêmes résultats.</p> </td>
+   <td><p>Des éléments tels que le logo et l’adresse de votre entreprise apparaissent sur toutes les pages d’une lettre/communication interactive. Dans ce cas, créez des champs de formulaire pour ces éléments et placez-les sur le gabarit. Si vous définissez la liaison du champ sur "Aucune liaison de données", les champs "Aucun lien" apparaissent comme des champs associables dans l’éditeur de lettre/communication interactive. Si vous souhaitez associer un type de contenu à ces champs, ils doivent avoir une liaison.</p> <p>Si l’adresse de votre société contient plusieurs lignes de données, utilisez un champ de texte avec l’option "Permettre des lignes multiples" pour représenter l’adresse dans la mise en page.</p> <p>Si le type de données d’un champ de texte est défini sur texte brut, la version en texte brut de la sortie du module est utilisée à la place de la version en texte enrichi (toutes les mises en forme sont ignorées). Pour conserver la mise en forme, définissez le type de données du champ de texte sur texte enrichi.</p> </td>
   </tr>
   <tr>
-   <td><p>Le texte fait l’objet d’une mise en page souple.</p> </td>
-   <td><p>Les champs de texte et d’image sont utilisés dans les pages de gabarit. Les pages de gabarit ne peuvent pas utiliser de sous-formulaires comme zones cible.</p> </td>
+   <td><p>Enchaînement du texte</p> </td>
+   <td><p>Les champs de texte et d’image sont utilisés dans les pages de gabarit. Les pages de Principal ne peuvent pas utiliser de sous-formulaires comme zones cible.</p> </td>
   </tr>
   <tr>
-   <td><p>Les objets sont groupés et organisés sans lier le sous-formulaire à un élément de données.</p> </td>
+   <td><p>Les objets sont regroupés et organisés sans lier le sous-formulaire à un élément de données.</p> </td>
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td><p>Le sous-formulaire contient un champ de texte. Le sous-formulaire peut s’agrandir sans écraser les autres objets situés plus bas dans la mise en page.</p> </td>
-   <td><p>Vous avez besoin d’accéder facilement à ses données dans le post-traitement.</p> </td>
+   <td><p>Le sous-formulaire contient un champ de texte. Le sous-formulaire peut s’agrandir sans écraser d’autres objets en dessous dans la mise en page.</p> </td>
+   <td><p>Vous avez besoin d’un accès facile à ses données dans le post-traitement.</p> </td>
   </tr>
  </tbody>
 </table>
 
-## Configuration d’éléments répétitifs {#setting-up-repetitive-elements}
+## Configuration des éléments répétitifs {#setting-up-repetitive-elements}
 
-Lorsque des éléments comme le logo et l’adresse de votre organisation figurent sur toutes les pages d’une lettre/communication interactive, créez des champs de formulaire pour ces éléments et placez-les sur la page de gabarit. Utilisez la liaison Nom (Nom du champ) pour ces champs.
+Lorsque des éléments tels que le logo et l’adresse de votre entreprise apparaissent sur toutes les pages d’une lettre/communication interactive, créez des champs de formulaire pour ces éléments et placez-les sur le gabarit. Utilisez la liaison Nom (Nom du champ) pour ces champs.
 
 ## Spécifier le format de rendu du serveur {#specify-the-server-nbsp-render-format}
 
-Utilisez le format de rendu du serveur de la mise en page pour le formulaire XML dynamique, faute de quoi aucune lettre/communication interactive basée sur cette mise en page ne s’affichera correctement. Par défaut, le format de rendu du serveur dans LiveCycle Designer est défini comme formulaire XML dynamique. Pour vous assurer que vous utilisez le format correct :
+Utilisez le format de rendu du serveur de la mise en page pour le formulaire XML dynamique. Dans le cas contraire, les lettres/communications interactives basées sur cette mise en page ne seront pas correctement restituées. Par défaut, le format de rendu du serveur dans Forms Designer est défini sur Formulaire XML dynamique. Pour vous assurer que vous utilisez le format correct :
 
 * Dans Designer, cliquez sur **Fichier** > **Propriétés de formulaire** > **Valeurs par défaut** et assurez-vous que la configuration de Format/Rendu PDF est définie comme formulaire XML dynamique.

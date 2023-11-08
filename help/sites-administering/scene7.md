@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '5484'
+source-wordcount: '5483'
 ht-degree: 98%
 
 ---
@@ -383,7 +383,7 @@ Lorsqu’une ressource est ajoutée à Experience Manager Assets, elle est aut
 
 1. Sélectionnez l’icône d’Experience Manager et accédez à **[!UICONTROL Déploiement]** > **[!UICONTROL Services cloud]**.
 1. Sous l’en-tête Dynamic Media, sous Configurations disponibles, sélectionnez **[!UICONTROL dms7 (Dynamic Media)]**.
-1. Sélectionnez l’onglet **[!UICONTROL Avancé]** et sélectionnez la case à cocher **[!UICONTROL Activer le chargement automatique]**, puis sélectionnez **[!UICONTROL OK]**. Vous devez maintenant configurer le workflow Ressource de gestion des ressources numériques pour inclure le chargement vers Dynamic Media Classic.
+1. Sélectionnez l’onglet **[!UICONTROL Avancé]** et sélectionnez la case à cocher **[!UICONTROL Activer le chargement automatique]**, puis sélectionnez **[!UICONTROL OK]**. Vous devez configurer le workflow Ressources de gestion des actifs numériques pour inclure le téléchargement vers Dynamic Media Classic.
 
    >[!NOTE]
    >

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2318'
-ht-degree: 35%
+source-wordcount: '2319'
+ht-degree: 34%
 
 ---
 
@@ -300,7 +300,7 @@ Procédez comme suit pour ajouter ou supprimer des langues.
 
    >[!NOTE]
    >
-   >Le traducteur enregistre uniquement les traductions pour les langues qui sont [présentes dans le dictionnaire](#creating-a-dictionary) (c’est-à-dire, dans le chemin d’accès au dictionnaire, comme `/apps/myProject/i18n`).
+   >Le traducteur enregistre uniquement les traductions pour les langues qui sont réellement [présent dans le dictionnaire](#creating-a-dictionary) (c’est-à-dire, sous le chemin du dictionnaire tel que `/apps/myProject/i18n`).
    >
    >Vérifiez que ces langues correspondent à celles affichées dans la grille.
 

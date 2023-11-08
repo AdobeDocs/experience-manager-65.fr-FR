@@ -11,10 +11,10 @@ discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
 role: Admin
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2511'
-ht-degree: 61%
+source-wordcount: '2509'
+ht-degree: 59%
 
 ---
 
@@ -42,9 +42,9 @@ Pour télécharger des ressources de formulaires et de documents :
 1. Connectez-vous à l’instance AEM Forms.
 1. Appuyez sur l’icône Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Icône de navigation ![Boussole](assets/compass.png) > Formulaires > Formulaires et documents.
 1. Sélectionnez les ressources de formulaires et appuyez sur l’icône **Télécharger**.
-1. Dans la/les ressources de téléchargement, choisissez l’une des options suivantes, puis appuyez sur **Télécharger**.
+1. Dans Télécharger la ou les ressources, choisissez l’une des options suivantes, puis cliquez sur **Télécharger**.
 
-   * **Télécharger sous forme de package CRX :** utilisez l’option pour télécharger et déplacer toutes les ressources sélectionnées et les dépendances connexes d’une instance AEM Forms vers une autre. Toutes les ressources et tous les dossiers sont téléchargés sous forme de package CRX. Toutes les ressources de formulaire, y compris les formulaires créés dans AEM (formulaires adaptatifs, communications interactives et fragments de formulaires adaptatifs), les ensembles de formulaires, les modèles de formulaires, les documents PDF et les ressources (fichiers XSD, XFS et images), peuvent être téléchargés en tant que packages depuis l’interface utilisateur d’AEM Forms.
+   * **Télécharger sous forme de package CRX :** utilisez cette option pour télécharger et déplacer toutes les ressources sélectionnées et les dépendances connexes d’une instance AEM Forms vers une autre. Toutes les ressources et tous les dossiers sont téléchargés sous forme de package CRX. Tous les actifs de formulaire, y compris les formulaires créés dans AEM (formulaires adaptatifs, communications interactives et fragments de formulaires adaptatifs), les ensembles de formulaires, les modèles de formulaires, les documents de PDF et les ressources (XSD, XFS, images), peuvent être téléchargés en tant que package depuis l’interface utilisateur d’AEM Forms.
 L’avantage du téléchargement des ressources sous forme de package est le téléchargement des ressources qui ont été utilisées par la ressource à télécharger. Par exemple, si vous disposez d’un formulaire adaptatif qui utilise un modèle de formulaire, XSD et une image. Lorsque vous sélectionnez ce formulaire adaptatif et que vous le téléchargez sous forme de package, le package téléchargé contient également le modèle de formulaire, XSD et l’image. Toutes les propriétés de métadonnées (propriétés personnalisées incluses) associées à la ressource sont également téléchargées.
 
    * **Télécharger la/les ressources sous forme de fichiers binaires :** utilisez cette option pour télécharger uniquement les modèles de formulaire (XDP), les formulaires PDF (PDF), les documents (PDF) et les ressources (images, schémas, feuilles de style). Vous pouvez modifier ces ressources dans des applications externes. Cette option permet de télécharger les ressources de formulaires qui possèdent des fichiers binaires, telles que des fichiers XSD, XDP, des images, des fichiers PDF et XDP comme un fichier .zip.

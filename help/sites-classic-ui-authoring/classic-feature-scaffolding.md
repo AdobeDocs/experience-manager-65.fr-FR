@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 58%
+source-wordcount: '1426'
+ht-degree: 56%
 
 ---
 
@@ -72,7 +72,7 @@ La définition de boîte de dialogue d’un modèle automatique fonctionne de la
 
 * Les définitions de boîte de dialogue de composant sont rendues comme des boîtes de dialogue normales (comme illustré dans le volet central de l’éditeur de boîte de dialogue, par exemple), tandis que les définitions de boîte de dialogue de modèle automatique, bien qu’elles apparaissent comme des boîtes de dialogue normales dans l’éditeur de boîte de dialogue, sont rendues sur la page de modèle automatique sous la forme d’un formulaire de modèle automatique (comme illustré dans le modèle automatique **News** ci-dessus).
 * Les boîtes de dialogue de composant ne contiennent que les champs nécessaires pour définir le contenu d’un seul composant spécifique. Une boîte de dialogue de modèle automatique doit fournir des champs pour chaque propriété de chaque paragraphe de la page à créer.
-* Dans le cas des boîtes de dialogue de composant, le composant utilisé pour le rendu du contenu spécifié est implicite. Par conséquent, la propriété `sling:resourceType` du paragraphe est complétée automatiquement lors de la création du paragraphe. Avec un modèle automatique, toutes les informations définissant le contenu et le composant affecté pour un paragraphe donné doivent être fournies par la boîte de dialogue elle-même. Dans les boîtes de dialogue de modèle automatique, ces informations doivent être fournies en utilisant les champs *masqués* pour envoyer ces informations lors de la création de la page.
+* S’il existe des boîtes de dialogue de composant, le composant utilisé pour effectuer le rendu du contenu spécifié est implicite et, par conséquent, la variable `sling:resourceType` de la propriété du paragraphe est renseignée automatiquement lors de la création du paragraphe. Avec un modèle automatique, toutes les informations définissant le contenu et le composant affecté pour un paragraphe donné doivent être fournies par la boîte de dialogue elle-même. Dans les boîtes de dialogue de modèle automatique, ces informations doivent être fournies en utilisant les champs *masqués* pour envoyer ces informations lors de la création de la page.
 
 Un aperçu de l’exemple de la boîte de dialogue de modèle automatique **News** dans l’éditeur de boîte de dialogue permet d’expliquer comment cela fonctionne. Passez en mode conception sur la page du modèle automatique, puis cliquez sur le lien de l’éditeur de boîte de dialogue.
 

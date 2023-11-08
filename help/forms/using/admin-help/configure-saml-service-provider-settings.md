@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1169d0d1-cbfb-486b-acca-9b9de3d410dc
 exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '598'
-ht-degree: 10%
+ht-degree: 7%
 
 ---
 
@@ -25,7 +25,7 @@ Pour obtenir une explication de SAML, voir [Présentation technique du langage S
 
 1. Dans Administration Console, cliquez sur Paramètres > User Management > Configuration > Paramètres du fournisseur de services SAML.
 1. Dans la zone ID d’entité du fournisseur de services, saisissez un identifiant unique à utiliser comme identifiant pour l’implémentation du fournisseur de services AEM forms. Vous pouvez également définir cet ID unique lors de la configuration du fournisseur d’identité (par exemple, `um.lc.com`). Vous pouvez également utiliser l’URL d’accès à AEM forms (par exemple, `https://AEMformsserver`).
-1. Dans le champ URL de base du fournisseur de services, saisissez l’URL de base du serveur Forms (par exemple, `https://AEMformsserver:8080`).
+1. Dans la zone URL de base du fournisseur de services, saisissez l’URL de base de votre serveur Forms (par exemple : `https://AEMformsserver:8080`).
 1. (Facultatif) Pour permettre à AEM forms d’envoyer des demandes d’authentification signées au fournisseur d’identité, effectuez les tâches suivantes :
 
    * Utilisez Trust Manager pour importer des informations d’identification au format PKCS #12 avec des informations d’identification de signature de document sélectionnées comme type de Trust Store. (Voir [Gestion des informations d’identification locales](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials).)

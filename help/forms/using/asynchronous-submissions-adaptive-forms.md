@@ -1,20 +1,16 @@
 ---
 title: Envoi asynchrone de formulaires adaptatifs
-seo-title: Asynchronous submission of adaptive forms
 description: Découvrez comment configurer l’envoi asynchrone pour les formulaires adaptatifs.
-seo-description: Learn to configure asynchronous submission for adaptive forms.
-uuid: 6555ac63-4d99-4b39-a2d0-a7e61909106b
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 0a0d2109-ee1f-43f6-88e5-1108cd215da6
 docset: aem65
 feature: Adaptive Forms
 exl-id: bd0589e2-b15a-4f0e-869c-2da4760b1ff4
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 54%
+source-wordcount: '795'
+ht-degree: 50%
 
 ---
 
@@ -29,7 +25,7 @@ ht-degree: 54%
 
 Traditionnellement, les formulaires web sont configurés à des fins d’envoi synchrone. Lors d’un envoi synchrone, lorsque les utilisateurs envoient un formulaire, ils sont redirigés vers une page d’accusé de réception, une page de remerciement ou, en cas d’échec de l’envoi, une page d’erreur. Toutefois, les expériences Web modernes telles que les applications d’une seule page gagnent en popularité. Dans une application de ce type, la page Web reste statique tandis que l’interaction entre le client et le serveur se déroule en arrière-plan. Vous pouvez désormais fournir cette expérience avec des formulaires adaptatifs en configurant l’envoi asynchrone.
 
-Lors d’un envoi asynchrone, lorsqu’un utilisateur envoie un formulaire, le développeur de formulaires se connecte à une expérience distincte, notamment la redirection vers un autre formulaire ou une section distincte du site Web. L’auteur peut également enclencher des services distincts, tels que l’envoi de données à un autre entrepôt de données ou l’ajout d’un moteur d’analyse personnalisé. En cas d’envoi asynchrone, un formulaire adaptatif se comporte comme une application d’une seule page, car le formulaire ne se recharge pas ou son URL ne change pas lorsque les données du formulaire envoyé sont validées sur le serveur.
+Lors d’un envoi asynchrone, lorsqu’un utilisateur envoie un formulaire, le développeur de formulaires se connecte à une expérience distincte, notamment la redirection vers un autre formulaire ou une section distincte du site Web. L’auteur peut également ajouter des services distincts comme l’envoi de données à un autre magasin de données ou l’ajout d’un moteur d’analyse personnalisé. En cas d’envoi asynchrone, un formulaire adaptatif se comporte comme une application d’une seule page, car le formulaire ne se recharge pas ou son URL ne change pas lorsque les données du formulaire envoyé sont validées sur le serveur.
 
 Lisez la suite pour plus d’informations sur l’envoi asynchrone dans les formulaires adaptatifs.
 
@@ -41,14 +37,14 @@ Pour configurer l’envoi asynchrone d’un formulaire adaptatif :
 1. Dans la section des propriétés **[!UICONTROL Envoi]**, activez **[!UICONTROL Utiliser l’envoi asynchrone]**.
 1. Dans le **[!UICONTROL Lors de l’envoi]** , sélectionnez l’une des options suivantes à exécuter lors de l’envoi réussi d’un formulaire.
 
-   * **[!UICONTROL Rediriger vers l’URL]**: Redirige vers l’URL ou la page spécifiée lors de l’envoi du formulaire. Vous pouvez spécifier une URL ou sélectionner le chemin d’accès à une page dans le champ **[!UICONTROL URL/Chemin d’accès restreint.]**
+   * **[!UICONTROL Rediriger vers l’URL]**: redirige vers l’URL ou la page spécifiée lors de l’envoi du formulaire. Vous pouvez spécifier une URL ou sélectionner le chemin d’accès à une page dans le champ **[!UICONTROL URL/Chemin d’accès restreint.]**
    * **[!UICONTROL Afficher le message]** : affiche un message lors de l’envoi d’un formulaire. Vous pouvez rédiger un message dans le champ de texte situé en dessous de l’option Afficher le message. Le champ de texte prend en charge la mise en forme de texte enrichi.
 
 1. Appuyez sur ![check-button1](assets/check-button1.png) pour enregistrer les propriétés.
 
 ## Fonctionnement de l’envoi asynchrone {#how-asynchronous-submission-works}
 
-AEM Forms fournit des gestionnaires de réussite et d’erreur prêts à l’emploi pour les envois de formulaire. Les gestionnaires sont des fonctions côté client qui s’exécutent en fonction de la réponse du serveur. Lorsqu’un formulaire est envoyé, les données sont transmises au serveur pour validation, ce qui renvoie une réponse au client avec des informations sur l’événement de succès ou d’erreur pour l’envoi. Les informations sont transmises en tant que paramètres au gestionnaire approprié pour exécuter la fonction.
+AEM Forms fournit des gestionnaires de succès et d’erreur prêts à l’emploi pour les envois de formulaires. Les gestionnaires sont des fonctions côté client qui s’exécutent en fonction de la réponse du serveur. Lorsqu’un formulaire est envoyé, les données sont transmises au serveur pour validation, ce qui renvoie une réponse au client avec des informations sur l’événement de succès ou d’erreur pour l’envoi. Les informations sont transmises comme paramètres au gestionnaire approprié pour exécuter la fonction.
 
 En outre, les auteurs de formulaire et les développeurs peuvent écrire des règles au niveau du formulaire pour remplacer les gestionnaires par défaut. Pour plus d’informations, voir [Remplacement des gestionnaires par défaut à l’aide de règles](#custom).
 
@@ -69,7 +65,7 @@ La structure de la réponse du serveur pour l’événement de succès de l’en
 
 La réponse du serveur en cas d’envoi de formulaire réussi comprend :
 
-* Type de format des données de formulaire : XML ou JSON
+* Type de format de données de formulaire : XML ou JSON
 * Données de formulaire au format XML ou JSON
 * Option sélectionnée pour rediriger vers une page ou afficher un message tel que configuré dans le formulaire.
 * URL de la page ou contenu du message tel que configuré dans le formulaire
@@ -110,5 +106,5 @@ Effectuez les étapes suivantes pour écrire des règles dans l’éditeur de co
 1. Sélectionnez **[!UICONTROL Formulaire]** dans l’arborescence des objets de formulaire et appuyez sur **[!UICONTROL Créer]**.
 1. Sélectionner **[!UICONTROL Éditeur de code]** dans la liste déroulante sélection de mode .
 1. Dans l’éditeur de code, appuyez sur **[!UICONTROL Modifier le code]**. Appuyer **[!UICONTROL Modifier]** dans la boîte de dialogue de confirmation.
-1. Choisir **[!UICONTROL Envoi réussi]** ou **[!UICONTROL Erreur dans l’envoi]** de la **[!UICONTROL Événement]** menu déroulant.
+1. Choisir **[!UICONTROL Envoi réussi]** ou **[!UICONTROL Erreur lors de l’envoi]** de la **[!UICONTROL Événement]** menu déroulant.
 1. Créez une règle pour l’événement sélectionné et appuyez sur **[!UICONTROL Terminé]** pour enregistrer la règle.

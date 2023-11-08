@@ -1,7 +1,7 @@
 ---
 title: Répertoire de stockage global de documents
 seo-title: Global document storage directory
-description: Le répertoire de stockage global de documents est utilisé pour stocker les fichiers de longue durée utilisés dans un processus.
+description: Le répertoire de stockage global de documents (GDS) est utilisé pour stocker les fichiers de longue durée utilisés dans un processus.
 seo-description: The global document storage (GDS) directory is a directory used to store long-lived files that are used within a process.
 uuid: 7681672c-a0dc-4445-8004-1b1e2ed3d301
 contentOwner: admin
@@ -10,34 +10,34 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a33b8834-6e39-47eb-a53b-0982d32e80ad
 exl-id: 7a64a643-808b-4644-8fd3-0dafe83e8dd9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 100%
+ht-degree: 7%
 
 ---
 
 # Répertoire de stockage global de documents{#global-document-storage-directory}
 
-Le répertoire de *stockage global de documents* est utilisé pour stocker les fichiers de longue durée utilisés dans un processus. Ces fichiers comprennent des PDF, des stratégies et des modèles de formulaires. Les fichiers de longue durée jouent un rôle capital la plupart des déploiements d’AEM. Si certains d’entre eux sont perdus ou corrompus, le serveur Forms peut devenir instable. Les documents d’entrée pour les appels de travaux asynchrones sont également stockés dans le répertoire de stockage global de documents et doivent être disponibles pour traiter les demandes. Il est donc important que vous preniez en compte la fiabilité du système de fichiers hébergeant le répertoire de stockage global de documents. Utilisez une technologie RAID (Redundant Array of Independent Disks) ou toute autre technologie appropriée pour répondre à vos besoins en termes de qualité et de niveau de service.
+La variable *stockage global de documents (GDS)* directory est un répertoire utilisé pour stocker les fichiers de longue durée utilisés dans un processus. Ces fichiers comprennent des PDF, des stratégies et des modèles de formulaire. Les fichiers de longue durée sont une partie essentielle de l’état global de nombreux déploiements d’AEM forms. Si certains ou tous les documents de longue durée sont perdus ou corrompus, le serveur Forms peut devenir instable. Les documents d’entrée pour les appels de tâches asynchrones sont également stockés dans le répertoire de stockage global de documents et doivent être disponibles pour traiter les demandes. Il est important de tenir compte de la fiabilité du système de fichiers qui héberge le répertoire de stockage global de documents. Utilisez une matrice redondante de disques indépendants (RAID) ou d’autres technologies adaptées à vos besoins en termes de qualité et de niveau de service.
 
-Les fichiers de longue durée peuvent contenir des informations utilisateur sensibles. Des informations d’identification spéciales peuvent être nécessaires pour y accéder en utilisant les API ou les interfaces utilisateur d’AEM forms. Il est important de sécuriser correctement le répertoire de stockage global de documents au niveau du système d’exploitation. Seul le compte administrateur chargé d’exécuter le serveur d’applications doit disposer des autorisations d’accès en lecture/écriture sur ce répertoire.
+Les fichiers de longue durée peuvent contenir des informations utilisateur sensibles. Ces informations peuvent nécessiter des informations d’identification spéciales lors de l’accès à l’aide des API d’AEM forms ou des interfaces utilisateur. Il est important que le répertoire de stockage global de documents soit correctement sécurisé par le biais du système d’exploitation. Seul le compte administrateur utilisé pour exécuter le serveur d’applications doit disposer d’un accès en lecture/écriture au répertoire de stockage global de documents.
 
-Outre la sélection d’un répertoire de stockage global de documents sécurisé et situé à un emplacement de haute disponibilité, vous pouvez également activer le stockage de documents dans la base de données. Même en utilisant la base de données AEM forms pour le stockage de documents, AEM forms requiert toujours le répertoire de stockage global de documents (voir [Options de sauvegarde dans le cas de l’utilisation de la base de données pour le stockage de documents](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage)).
+Outre la sélection d’un répertoire de stockage global de documents sécurisé et hautement disponible, vous pouvez également activer le stockage de documents dans la base de données. Même si vous utilisez la base de données d’AEM forms pour le stockage de documents, AEM forms a toujours besoin du répertoire de stockage global de documents. (Voir [Options de sauvegarde lors de l’utilisation de la base de données pour le stockage de documents](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage).)
 
-Les données d’application AEM forms résident dans le répertoire de stockage global de documents et dans la base de données AEM forms. Le tableau suivant décrit les données et leur emplacement.
+Les données d’application d’AEM forms résident dans le répertoire de stockage global de documents et dans la base de données d’AEM forms. Le tableau suivant décrit les données et leur emplacement.
 
 <table>
  <thead>
   <tr>
-   <th><p>Données AEM forms</p></th>
+   <th><p>Données de formulaires AEM</p></th>
    <th><p>Base de données</p></th>
-   <th><p>Répertoire de stockage global de documents</p></th>
+   <th><p>GDS</p></th>
   </tr>
  </thead>
  <tbody>
   <tr>
-   <td><p>Données d’application (utilisateurs, rôles, processus, stratégies, points de fin, événements, etc.)</p></td>
+   <td><p>Données de l’application (utilisateurs, rôles, processus, stratégies, points de fin, événements, etc.)</p></td>
    <td><p>Oui</p></td>
    <td><p>Non</p></td>
   </tr>
@@ -52,7 +52,7 @@ Les données d’application AEM forms résident dans le répertoire de stockage
    <td><p>Oui</p></td>
   </tr>
   <tr>
-   <td><p>Référentiel de formulaires</p></td>
+   <td><p>Référentiel Forms</p></td>
    <td><p>Oui</p></td>
    <td><p>Non</p></td>
   </tr>
@@ -69,39 +69,39 @@ Les données d’application AEM forms résident dans le répertoire de stockage
  </tbody>
 </table>
 
-## Configuration du répertoire de stockage global de document {#configuring-the-gds-directory}
+## Configuration du répertoire de stockage global de documents {#configuring-the-gds-directory}
 
-L’emplacement du répertoire de stockage global de documents peut être configuré manuellement pendant la procédure d’installation d’AEM forms. Si le paramètre d’emplacement du stockage global de documents n’est pas défini pendant l’installation, l’emplacement par défaut utilisé est un sous-répertoire de l’emplacement d’installation du serveur d’applications :
+L’emplacement du répertoire de stockage global de documents peut être configuré manuellement pendant le processus d’installation d’AEM forms. Si le paramètre d’emplacement reste vide pendant l’installation, l’emplacement est défini par défaut sur un répertoire sous l’installation du serveur d’applications, comme suit :
 
 * (JBoss) `[appserver root]/server/[type]/svcnative/DocumentStorage`
 * (WebLo gic) `[appserverdomain]/'server'/adobe/DocumentServer/DocumentStorage`
 * (WebSphere) `[appserver root]/installedApps/adobe/'server'/DocumentStorage`
 
-## Modification de l’emplacement par défaut du stockage global de documents {#change-the-default-gds-location}
+## Modification de l’emplacement du répertoire de stockage global de documents par défaut {#change-the-default-gds-location}
 
-Vous pouvez modifier l’emplacement du répertoire de stockage global de documents dans Administration Console après l’installation d’AEM forms. Vous devez également déplacer les données manuellement pour terminer le processus.
+Vous pouvez modifier l’emplacement du répertoire de stockage global de documents dans Administration Console une fois l’installation d’AEM forms terminée. Vous devez déplacer manuellement les données pour terminer le processus.
 
 >[!NOTE]
 >
->procédez comme suit pour effectuer la migration des données, sinon vous risquez de perdre des données.
+>Effectuez la migration des données de la manière suivante, sans quoi vous risquez de perdre des données.
 
-1. Connectez-vous à Administration Console et cliquez sur Paramètres > Paramètres de Core System > Configurations.
-1. Dans la zone Répertoire de stockage global de documents, saisissez le chemin d’accès complet au nouveau répertoire, puis cliquez sur OK.
-1. Juste après, arrêtez le serveur d’applications.
-1. Déplacez tous les fichiers qui se trouvent dans l’ancien répertoire de stockage global de documents vers le nouvel emplacement, en conservant l’arborescence de répertoires internes.
+1. Connectez-vous à Administration Console et cliquez sur Paramètres > Paramètres de Core System > Configurations.
+1. Dans la zone Répertoire de stockage global de documents, saisissez le chemin d’accès complet au nouveau répertoire de stockage global de documents, puis cliquez sur OK.
+1. Arrêtez immédiatement le serveur d’applications.
+1. Déplacez tous les fichiers de l’ancien répertoire de stockage global de documents vers le nouvel emplacement, en conservant la structure de répertoires interne.
 1. Redémarrez le serveur d’applications.
 
-## A propos des fichiers de déploiement {#about-deployment-files}
+## À propos des fichiers de déploiement {#about-deployment-files}
 
-AEM forms est constitué de deux types de fichiers de déploiement : les conteneurs de service et les fichiers EAR de la plateforme Java 2 Enterprise Edition (J2EE). Ce sont des modules d’application J2EE standard qui contiennent les principales fonctionnalités d’AEM forms. Les fichiers EAR propres à chaque serveur d’applications sont les suivants :
+AEM forms se compose de deux types de fichiers de déploiement : les conteneurs de service et les fichiers EAR de Java 2 Platform Enterprise Edition (J2EE). Les fichiers EAR se composent de lots d’applications J2EE standard contenant les fonctionnalités de base d’AEM forms. Les fichiers EAR spécifiques au serveur d’applications sont les suivants :
 
 * adobe-core-*[appserver]*.ear
 * adobe-core-*[appserver]*-*[OS]*.ear
 
-L’implémentation d’AEM forms implique le déploiement des fichiers EAR assemblés et des fichiers de prise en charge sur le serveur d’applications sur lequel vous envisagez d’exécuter la solution AEM forms. Si vous avez configuré et assemblé plusieurs modules, les modules déployables sont contenus dans les fichiers EAR déployables. Pour déployer ces fichiers, copiez-les dans le répertoire *[appserver home]*\server\all\deploy.
+La mise en oeuvre d’AEM forms implique le déploiement des fichiers EAR assemblés et des fichiers de prise en charge sur le serveur d’applications sur lequel vous envisagez d’exécuter votre solution AEM forms. Si vous avez configuré et assemblé plusieurs modules, les modules déployables sont contenus dans les fichiers EAR déployables. Pour déployer ces fichiers, copiez-les dans le répertoire *[appserver home]*\server\all\deploy.
 
-Les modules et les fichiers d’archive d’AEM forms sont compressés dans des fichiers JAR. Comme ce ne sont pas des fichiers J2EE, ils ne sont pas déployés sur le serveur d’applications. Ils sont copiés dans le répertoire de stockage global de documents et une référence à leur emplacement est stockée dans la base de données AEM forms. C’est pourquoi le répertoire de stockage global de documents doit être partagé par tous les nœuds de la grappe. Ces derniers doivent avoir accès au répertoire de stockage central des DSC.
+Les modules et les fichiers d’archive d’AEM forms sont compressés dans des fichiers JAR. Puisqu’il ne s’agit pas de fichiers de type J2EE, ils ne sont pas déployés sur le serveur d’applications. Ils sont copiés dans le répertoire de stockage global de documents et une référence à leur emplacement est stockée dans la base de données d’AEM forms. Pour cette raison, le répertoire de stockage global de documents doit être partagé entre tous les noeuds de la grappe. Tous les noeuds doivent avoir accès au répertoire de stockage central pour les DSC.
 
 >[!NOTE]
 >
->avant de déployer les conteneurs de service, vérifiez que vous avez créé et configuré le répertoire de stockage global de documents (voir [Configuration du répertoire de stockage global de documents](global-document-storage-directory.md#configuring-the-gds-directory)).
+>Avant de déployer les conteneurs de service, assurez-vous d’avoir créé et configuré le répertoire de stockage global de documents. (Voir [Configuration du répertoire de stockage global de documents](global-document-storage-directory.md#configuring-the-gds-directory))

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 feature: Forms Portal
 exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
-source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '332'
-ht-degree: 28%
+ht-degree: 33%
 
 ---
 
@@ -21,11 +21,11 @@ AEM Forms vous permet d’enregistrer un formulaire en tant que brouillon. La fo
 
 Par défaut, AEM Forms stocke les données utilisateur associées au brouillon et à l’envoi d’un formulaire dans la variable `/content/forms/fp` sur l’instance de publication. En outre, les composants du portail AEM Forms fournissent des services de données, que vous pouvez utiliser pour personnaliser l’implémentation du stockage des données utilisateur pour les brouillons et les envois. Vous pouvez par exemple stocker des données utilisateur dans un entrepôt de données.
 
-## Prérequis  {#prerequisites}
+## Conditions préalables requises  {#prerequisites}
 
-* Activer [Composants du portail Forms](/help/forms/using/enabling-forms-portal-components.md)
-* Créez un [Page du portail Forms](/help/forms/using/creating-form-portal-page.md)
-* Activer [formulaires adaptatifs pour Forms Portal](/help/forms/using/draft-submission-component.md)
+* Activer des [composants Portail Formulaires](/help/forms/using/enabling-forms-portal-components.md)
+* Créer une [page Portail Formulaires](/help/forms/using/creating-form-portal-page.md)
+* Activer des [formulaires adaptatifs pour le Portail Formulaires](/help/forms/using/draft-submission-component.md)
 * En savoir plus sur les [détails d’implémentation du stockage personnalisé](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Service de données de brouillon {#draft-data-service}
@@ -40,7 +40,7 @@ Pour personnaliser le stockage des données utilisateur pour les brouillons, vou
 public interface DraftDataService {
 
     /**
-     * To save/modify user data for this userDataID, it will be null in case of creation
+     * To save/modify user data for this userDataID, it will be null if there is creation
      * @param draftDataID: unique identifier associated with the form data
      * @param formName: name of the form whose draft is being saved
      * @param formData: user data associated with this draft

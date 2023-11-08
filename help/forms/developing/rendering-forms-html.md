@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '4143'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -67,13 +67,13 @@ Vous devez explicitement passer d’un panneau à l’autre à l’aide des mét
 >
 >Si vous souhaitez personnaliser l’aspect du bouton Signature numérique HTML sur un formulaire HTML, vous devez modifier les propriétés suivantes dans le fichier fscdigsig.css (dans le fichier adobe-forms-ds.ear > adobe-forms-ds.war) :
 
-**.fsc-ds-ssb** : cette feuille de style s’applique en cas de champ de signe vide.
+**.fsc-ds-ssb**: cette feuille de style s’applique en cas de champ de signe vide.
 
-**.fsc-ds-ssv** : cette feuille de style s’applique en cas de champ de signe valide.
+**.fsc-ds-ssv**: cette feuille de style s’applique en cas de champ de signe valide.
 
-**.fsc-ds-ssc** : cette feuille de style s’applique dans le cas d’un champ de signe valide, mais où les données ont changé.
+**.fsc-ds-ssc**: cette feuille de style s’applique si un champ de signe valide existe mais que les données ont changé.
 
-**.fsc-ds-ssi** : cette feuille de style s’applique en cas de champ de signature non valide.
+**.fsc-ds-ssi**: cette feuille de style s’applique en cas de champ de signature non valide.
 
 **.fsc-ds-popup-bg** : cette propriété de feuille de style n’est pas utilisée.
 

@@ -1,19 +1,15 @@
 ---
 title: Utiliser l’espace de travail AEM Forms
-seo-title: Working with AEM Forms workspace
 description: Prise en main de l’espace de travail AEM Forms avec cet aperçu rapide des workflows de processus.
-seo-description: Get started with AEM Forms workspace with this quick overview of the process workflows.
-uuid: 36381e7b-1533-459c-80de-92e806a49cd5
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
 exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 29%
+source-wordcount: '1040'
+ht-degree: 27%
 
 ---
 
@@ -51,7 +47,7 @@ Vous pouvez approuver plusieurs tâches du même type. Une fois que vous sélect
 
 Flex Workspace n’est pas pris en charge pour les clients AEM Forms. Tous les clients qui utilisent Flex Workspace doivent passer à AEM Forms Workspace.
 
-Dans l’espace de travail AEM Forms, les services de rendu et d’envoi par défaut, dans le profil d’action par défaut, associés aux formulaires XDP ont changé et de nouveaux services ont été ajoutés. Pour plus d’informations, voir [Nouveau service de rendu et d’envoi](/help/forms/using/new-render-submit-service.md). Pour migrer les processus existants qui fonctionnent avec des formulaires XDP afin de pouvoir bénéficier de ces services, suivez [ces étapes](new-render-submit-service.md).
+Dans l’espace de travail AEM Forms, les services de rendu et d’envoi par défaut, dans le profil d’action par défaut, associés aux formulaires XDP ont changé et de nouveaux services ont été ajoutés. Pour plus d’informations, voir [Nouveau service de rendu et d’envoi](/help/forms/using/new-render-submit-service.md). Pour migrer vos processus existants, qui fonctionnent avec les formulaires XDP, afin d’utiliser ces services, vous pouvez suivre [ces étapes](new-render-submit-service.md).
 
 **Mappage des personnalisations de l’espace de travail Flex avec l’espace de travail AEM Forms**
 

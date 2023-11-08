@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '10692'
-ht-degree: 55%
+ht-degree: 54%
 
 ---
 
@@ -265,7 +265,7 @@ Les paramètres ci-dessous sont disponibles pour le service Generate PDF.
 
 **Taille du pool OCR :** taille du pool PaperCaptureService que PDF Generator utilise pour la reconnaissance optique de caractères (OCR). La valeur par défaut de ce paramètre (recommandée pour les systèmes à un processeur) est 3. Vous pouvez augmenter cette valeur pour les systèmes à plusieurs processeurs. Ce paramètre n’est valide que sur les systèmes Windows.
 
-**Famille de polices de remplacement pour les conversions de fichiers HTML en PDF :** nom de la famille de polices à utiliser dans les documents PDF lorsque la police utilisée dans le fichier HTML d’origine n’est pas disponible pour le serveur AEM Forms. Indiquez une famille de polices si vous prévoyez de convertir des pages de HTML qui utilisent des polices non disponibles. Par exemple, les pages créées dans des langues régionales peuvent utiliser des polices non disponibles.
+**Famille De Polices De Secours Pour Les Conversions HTML Vers PDF :** Nom de la famille de polices à utiliser dans les documents PDF lorsque la police utilisée dans le HTML d’origine n’est pas disponible pour le serveur AEM Forms. Indiquez une famille de polices si vous prévoyez de convertir des pages de HTML qui utilisent des polices non disponibles. Par exemple, les pages créées dans des langues régionales peuvent utiliser des polices non disponibles.
 
 **Logique de nouvelle tentative pour les conversions natives** : définit la logique des nouvelles tentatives de génération de fichiers PDF en cas d’échec de la première tentative de conversion.
 
@@ -283,7 +283,7 @@ Reprise de la conversion du PDF si le temps consommé pour la première tentativ
 
 ## Paramètres du service Guides ES4 Utilities {#guides-es4-utilities-service-settings}
 
-Lorsque vous créez un guide, certaines ressources, telles que la définition du guide, sont incorporées dans le guide. Les ressources peuvent également exister en tant que références aux ressources d’application stockées localement ou sur le serveur AEM forms. Le Guide ne contient pas de données, et les valeurs de l’emplacement et des entrées d’envoi ne sont pas adaptées à tous les environnements externes.
+Lorsque vous créez un guide, certaines ressources, telles que la définition du guide, sont incorporées dans le guide. Les ressources peuvent également exister en tant que références aux ressources d’application stockées localement ou sur le serveur AEM Forms. Le Guide ne contient pas de données, et les valeurs de l’emplacement et des entrées d’envoi ne sont pas adaptées à tous les environnements externes.
 
 Dans la plupart des cas, les services de rendu Guides par défaut suffisent à préparer un guide à utiliser dans Workspace ou d’autres environnements externes. (Dans la vue Services, dans Workbench, le service par défaut est Guides (system)/Processes/Render Guide - 1.0.) Le service Guide Utilities ( `GuidesUtility`) vous permet de créer un processus personnalisé pour le rendu d’un guide, le cas échéant.
 
@@ -482,7 +482,7 @@ Les paramètres ci-dessous sont disponibles pour le service PDFG Config ( `PDFGC
 
 **Server Conversion Timeout :** délai d’expiration de conversion de tâches maximal (en secondes) pour les services Generate PDF et Distiller. Ce paramètre limite le délai d’expiration de conversion maximal qui peut être spécifié dans le fichier config.xml et dans les pages d’Administration Console pour PDF Generator. La valeur par défaut est 270.
 
-**Server Global Timeout :** pendant les conversions PDF, un serveur Forms prend en compte le délai maximal d’expiration. Configurez la valeur du délai d’expiration pour résoudre ce problème.
+**Server Global Timeout :** Lors des conversions de PDF, un serveur Forms prend en compte le délai d’expiration. Configurez la valeur du délai d’expiration pour résoudre ce problème.
 
 **Job Options Prefix :** préfixe utilisé par le service Generate PDF pour ajouter une courte chaîne devant les fichiers d’options de tâche qu’il crée temporairement pour l’utilisation avec Acrobat Distiller. La valeur par défaut est pdfg.
 
@@ -755,11 +755,11 @@ Le service Web Service interagit avec les services Web en envoyant et en recevan
 
 Les paramètres suivants sont disponibles pour le service Web Service.
 
-**Stockage des clés :** le chemin d’accès complet au fichier de stockage des clés qui contient la clé privée à utiliser pour l’authentification. Le serveur Forms doit être en mesure d’accéder au fichier.
+**Stockage des clés :** le chemin d’accès complet au fichier de stockage des clés qui contient la clé privée à utiliser pour l’authentification. Le serveur Forms doit pouvoir accéder au fichier .
 
 **Mot de passe du stockage des clés :** le mot de passe du fichier de stockage des clés.
 
-**Type de stockage des clés :** le type de fichier de stockage des clés. N’indiquez aucune valeur pour utiliser le type de fichier de stockage de clés par défaut configuré pour la JVM exécutant le serveur Forms. Dans le cas contraire, indiquez l’une des valeurs suivantes :
+**Type de stockage des clés :** le type de fichier de stockage des clés. N’indiquez aucune valeur pour utiliser le type de fichier de stockage de clés par défaut configuré pour la JVM qui exécute le serveur Forms. Dans le cas contraire, indiquez l’une des valeurs suivantes :
 
 * jks
 * pkcs12
@@ -770,7 +770,7 @@ Les paramètres suivants sont disponibles pour le service Web Service.
 
 **Mot de passe du Trust Store :** le mot de passe du fichier truststore.
 
-**Type de Trust Store :** le type de truststore. N’indiquez aucune valeur pour utiliser le type de fichier de stockage de clés par défaut configuré pour la JVM exécutant le serveur Forms. Dans le cas contraire, indiquez l’une des valeurs suivantes :
+**Type de Trust Store :** le type de truststore. N’indiquez aucune valeur pour utiliser le type de fichier de stockage de clés par défaut configuré pour la JVM qui exécute le serveur Forms. Dans le cas contraire, indiquez l’une des valeurs suivantes :
 
 * jks
 * pkcs12
@@ -783,11 +783,11 @@ Le service XSLT Transformation (`XSLTService`) permet aux processus d’applique
 
 Le paramètre ci-dessous est disponible pour le service XSLT Transformation.
 
-**Nom de l’usine :** le nom complet de la classe Java à utiliser pour exécuter les transformations XSLT. Si aucune valeur n’est spécifiée, la valeur d’usine par défaut configurée dans la machine virtuelle Java exécutant le serveur Forms est utilisée.
+**Nom de l’usine :** le nom complet de la classe Java à utiliser pour exécuter les transformations XSLT. Si aucune valeur n’est spécifiée, la fabrique par défaut configurée dans la machine virtuelle Java exécutant le serveur Forms est utilisée.
 
 ## Modification des paramètres de sécurité d’un service {#modifying-security-settings-for-a-service}
 
-Le serveur Forms vous permet de configurer les paramètres de sécurité de chaque service, ce qui vous permet de configurer un contrôle d’accès affiné au niveau service par service.
+Forms Server permet de configurer les paramètres de sécurité de chaque service, ce qui permet de configurer un contrôle d’accès affiné au niveau service par service.
 
 Les profils de sécurité par défaut sont installés. Ils peuvent ensuite être configurés pour répondre aux besoins de votre système. Chaque profil de sécurité est associé à un domaine et est créé au niveau de l’utilisateur ou du groupe.
 

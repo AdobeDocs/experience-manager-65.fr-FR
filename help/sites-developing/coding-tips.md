@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '860'
 ht-degree: 59%
 
 ---
@@ -92,7 +92,7 @@ Pour le code Java™, AEM prend en charge slf4j en tant qu’API standard pour l
 * DEBUG : informations de niveau inférieur sur le traitement. Utile lors du débogage d’un problème avec la prise en charge.
 * TRACE : informations de niveau le plus bas, par exemple, entrée/sortie de méthodes. En règle générale, cette méthode ne sera utilisée que par les développeurs.
 
-Dans le cas de JavaScript, *console.log* ne doit être utilisé que pendant le développement et toutes les instructions de journal doivent être supprimées avant la publication.
+S’il existe du code JavaScript, *console.log* ne doit être utilisé que pendant le développement et toutes les instructions de journal doivent être supprimées avant la publication.
 
 ### Éviter la programmation des cultes de la cargaison {#avoid-cargo-cult-programming}
 

@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '9887'
 ht-degree: 87%
@@ -1735,4 +1735,4 @@ L’exemple de code C# suivant illustre comment signer un formulaire interactif 
 
 ### Les services commençant par la lettre I génèrent des fichiers proxy non valides {#services-starting-with-the-letter-i-produce-invalid-proxy-files}
 
-Le nom de certaines classes proxy générées par AEM Forms est incorrect lorsque vous utilisez Microsoft .Net 3.5 et WCF. Ce problème se produit lorsque des classes proxy sont créées pour les services IBMFilenetContentRepositoryConnector, IDPSchedulerService ou tout autre service dont le nom commence par la lettre I. Par exemple, le nom du client généré pour le service IBMFileNetContentRepositoryConnector est `BMFileNetContentRepositoryConnectorClient`. La lettre I est manquante dans la classe proxy générée.
+Le nom de certaines classes proxy générées par AEM Forms est incorrect lorsque vous utilisez Microsoft .Net 3.5 et WCF. Ce problème se produit lorsque des classes proxy sont créées pour IBMFilenetContentRepositoryConnector, IDPSchedulerService ou tout autre service dont le nom commence par la lettre I. Par exemple, le nom du client généré si IBMFileNetContentRepositoryConnector est `BMFileNetContentRepositoryConnectorClient`. La lettre I est manquante dans la classe proxy générée.

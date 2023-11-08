@@ -1,19 +1,15 @@
 ---
 title: Créer une correspondance
-seo-title: Create Correspondence
 description: Après avoir créé un modèle de lettre, vous pouvez l’utiliser pour créer une correspondance dans AEM Forms en gérant les données, le contenu et les pièces jointes.
-seo-description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
-uuid: 48cf2b26-c9b4-4127-9ea0-1b36addbff60
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3853'
-ht-degree: 99%
+source-wordcount: '3849'
+ht-degree: 98%
 
 ---
 
@@ -261,11 +257,11 @@ Vous pouvez effectuer des modifications relatives à la disposition et au conten
    >
    >Si vous utilisez Mozilla Firefox et le type de rendu HTML pour prévisualiser la lettre sous forme de fichier PDF aplati, veillez à employer le plug-in natif du navigateur et non le plug-in Acrobat. Pour sélectionner le plug-in natif du navigateur, accédez aux paramètres de Mozilla Firefox, puis à Type de contenu PDF et sélectionnez Aperçu dans Firefox.
 
-1. Si l’aperçu du fichier PDF aplati vous satisfait, cliquez sur **Envoyer** pour envoyer la lettre. Ou, pour apporter des modifications à la lettre, cliquez sur **Quitter la prévisualisation** pour rétablir l’aperçu de l’interface utilisateur Création de correspondance et y apporter des modifications. Lorsque vous appuyez sur Envoyer, si la configuration Gestion des instances de lettre est activée sur l’instance de publication, l’instance d’envoi de lettre est générée.
+1. Si l’aperçu du fichier PDF aplati vous satisfait, cliquez sur **Envoyer** pour envoyer la lettre. Ou, pour modifier la lettre, appuyez sur **Quitter l’aperçu** pour revenir à l’aperçu de l’interface utilisateur de création de correspondance de la lettre pour apporter des modifications à la lettre. Lorsque vous appuyez sur Envoyer, si la configuration Gestion des instances de lettre est activée sur l’instance de publication, l’instance d’envoi de lettre est générée.
 
    Pour plus d’informations, consultez la section Instance Brouillon sous Enregistrement de brouillons et envoi d’instances de lettre.
 
-   Vous pouvez également enregistrer la lettre en tant que brouillon pour y apporter des modifications plus tard.
+   Vous pouvez également enregistrer la lettre en tant que brouillon pour la modifier ultérieurement.
 
    Une fois les modifications apportées, vous pouvez envoyer la lettre à partir de l’aperçu HTML5 ou appuyer à nouveau sur Aperçu pour examiner le fichier PDF aplati.
 

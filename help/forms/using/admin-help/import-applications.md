@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 3%
@@ -51,7 +51,7 @@ Utilisez l’onglet Applications pour importer et gérer les applications créé
 
    L’onglet Propriétés à droite affiche les propriétés du noeud CRX sélectionné.
 
-   La variable **syncState** indique l’état de synchronisation des données entre AEM serveur forms et le référentiel CRX. Dès que le processus d’importation commence, cet état est défini sur 0 (zéro). Cet état indique que les données ne sont actuellement pas synchronisées. Lorsque les données sont synchronisées, l’état est défini sur 1.
+   La variable **syncState** indique l’état de synchronisation des données entre le serveur AEM Forms et le référentiel CRX. Dès que le processus d’importation commence, cet état est défini sur 0 (zéro). Cet état indique que les données ne sont actuellement pas synchronisées. Lorsque les données sont synchronisées, l’état est défini sur 1.
 
 ## Déployer une application {#deploy-an-application}
 

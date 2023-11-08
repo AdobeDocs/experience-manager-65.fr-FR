@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 93%
+source-wordcount: '980'
+ht-degree: 92%
 
 ---
 
@@ -151,7 +151,7 @@ Pour rendre un projet inactif, procédez comme suit.
 
 Pour supprimer un projet, procédez comme suit.
 
-1. Accédez au niveau supérieur de la console **Projets**.
+1. Accédez au niveau supérieur de la **Projets** console.
 1. Sélectionnez votre projet dans la console.
 1. Appuyez ou cliquez sur **Supprimer** dans la barre d’outils.
 1. AEM peut supprimer ou modifier les données associées au projet lors de la suppression du projet. Sélectionnez les options dont vous avez besoin dans la boîte de dialogue **Supprimer le projet**.

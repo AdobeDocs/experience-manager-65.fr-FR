@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1651'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -178,7 +178,7 @@ Il est possible de définir et personnaliser d’autres sélecteurs dans le cadr
 
 Si vous souhaitez utiliser l’éditeur statique d’un composant de texte créé dans une SPA, une configuration supplémentaire est nécessaire.
 
-1. Définissez un attribut (arbitraire) dans l’élément wrapper de conteneur incluant le texte HTML. Dans le cas du contenu d’exemple Journal WKND, il s’agit d’un élément `<div>` et le sélecteur qui a été utilisé est `data-rte-editelement`.
+1. Définissez un attribut (arbitraire) dans l’élément wrapper de conteneur incluant le texte HTML. S’il existe un exemple de contenu du journal WKND, il s’agit d’un `<div>` et le sélecteur utilisé est `data-rte-editelement`.
 1. Définissez la configuration `editElementQuery` sur la `cq:InplaceEditingConfig` du composant de texte AEM correspondant qui pointe vers ce sélecteur, par exemple `data-rte-editelement`. L’éditeur sait ainsi quel élément HTML encapsule le texte HTML.
 
 Pour obtenir un exemple de la façon dont cela est fait, reportez-vous à la section [Exemple de contenu Journal WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)

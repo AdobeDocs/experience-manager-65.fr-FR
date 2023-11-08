@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2718'
-ht-degree: 91%
+source-wordcount: '2717'
+ht-degree: 90%
 
 ---
 
@@ -221,7 +221,7 @@ XMP normalise la façon dont les métadonnées sont définies, créées et trait
 Toutes les métadonnées héritées d’EXIF, d’ID3 ou de Microsoft Office sont automatiquement converties au format XMP, qui peut être étendu pour prendre en charge le schéma de métadonnées spécifiques au client comme les catalogues de produits.
 
 Dans la norme XMP, les métadonnées sont constituées d’un ensemble de propriétés. Ces propriétés sont toujours associées à
-une entité spécifique appelée ressource ; c’est-à-dire qu’elles portent sur celle-ci. Dans le cas de XMP, il s’agit toujours de la ressource.
+une entité spécifique appelée ressource ; c’est-à-dire qu’elles portent sur celle-ci. S’il y a XMP, la ressource est toujours la ressource.
 
 ### Écosystème XMP {#xmp-ecosystem}
 

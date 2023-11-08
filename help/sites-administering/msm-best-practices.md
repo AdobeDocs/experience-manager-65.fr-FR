@@ -4,10 +4,10 @@ description: Découvrez les bonnes pratiques compilées par les équipes d’ing
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '1609'
-ht-degree: 80%
+source-wordcount: '1604'
+ht-degree: 79%
 
 ---
 
@@ -160,7 +160,7 @@ Les modifications apportées à la structure du contenu dans un plan directeur/u
 
 ## Personnalisation des déploiements {#customizing-rollouts}
 
-Les configurations de déploiement MSM sont fortement personnalisables. Vous devez savoir que l’automatisation des déploiements peut avoir des conséquences importantes. Il est recommandé de planifier *very* soigneusement avant, par exemple :
+Les configurations de déploiement MSM sont fortement personnalisables. L’automatisation des déploiements peut avoir des conséquences de grande envergure. Il est recommandé de planifier *very* soigneusement avant, par exemple :
 
 * L’automatisation des déploiements, par exemple, avec les [déclencheurs onModify](#onmodify)
 * La personnalisation des [propriétés/types de nœuds](#node-types-properties)

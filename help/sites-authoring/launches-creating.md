@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1039'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -64,9 +64,9 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
 
    >[!NOTE]
    >
-   >Pour ajouter des pages ou des branches à un lancement, elles doivent se trouver dans un site ; c’est-à-dire sous une racine de niveau supérieur commune.
+   >Pour ajouter des pages et/ou des branches à un lancement, elles doivent se trouver dans un site ; c’est-à-dire sous une racine de niveau supérieur commune.
    >
-   >Si un site contient des racines de langue sous le niveau supérieur, les pages et les branches d’un lancement doivent se trouver sous une racine de langue commune.
+   >Si un site contient des racines de langue situées sous le niveau supérieur, les pages et les branches d’un lancement doivent se trouver sous une racine de langue commune.
    >
    >Si vous essayez de créer un lancement avec une page parent ou enfant dans le chemin source, il échoue et renvoie l’erreur « La destination existe déjà à l’emplacement : chemin d’accès à la page ».
 

@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6092'
+source-wordcount: '6087'
 ht-degree: 55%
 
 ---
@@ -737,7 +737,7 @@ Par défaut, le portlet se connecte à l’instance de publication sur localhost
 
 >[!NOTE]
 >
->Ces procédures utilisent le portail WebSphere comme exemple, bien qu’elles soient aussi génériques que possible ; sachez que les procédures varient pour d’autres portails web. Bien que les étapes soient essentiellement identiques pour tous les portails web, vous devez redéfinir les étapes de votre portail web spécifique.
+>Ces procédures utilisent le portail WebSphere comme exemple, bien qu’elles soient aussi génériques que possible ; les procédures varient pour d’autres portails web. Bien que les étapes soient essentiellement identiques pour tous les portails web, vous devez redéfinir les étapes de votre portail web spécifique.
 
 #### Installation du portlet {#installing-the-portlet}
 

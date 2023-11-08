@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '4600'
-ht-degree: 59%
+source-wordcount: '4598'
+ht-degree: 58%
 
 ---
 
@@ -166,7 +166,7 @@ En règle générale, il est recommandé d’utiliser les index Lucene à moins 
 
 ### Indexation Solr {#solr-indexing}
 
-AEM fournit également la prise en charge de l’indexation Solr par défaut. Il est utilisé pour prendre en charge la recherche de texte intégral, mais il peut également être utilisé pour prendre en charge n’importe quel type de requête JCR. Solr doit être pris en compte lorsque les instances AEM n’ont pas la capacité du processeur pour gérer le nombre de demandes requises dans les déploiements intensifs en recherche, tels que les sites web pilotés par la recherche avec un grand nombre d’utilisateurs et d’utilisatrices en même temps. Alternativement, Solr peut être implémenté dans une approche basée sur un robot d’indexation afin d’utiliser certaines des fonctionnalités les plus avancées de la plateforme.
+AEM prend également en charge l’indexation Solr par défaut. Il est utilisé pour prendre en charge la recherche de texte intégral, mais il peut également être utilisé pour prendre en charge n’importe quel type de requête JCR. Solr doit être pris en compte lorsque les instances AEM n’ont pas la capacité du processeur pour gérer le nombre de demandes requises dans les déploiements intensifs en recherche, tels que les sites web pilotés par la recherche avec un grand nombre d’utilisateurs et d’utilisatrices en même temps. Alternativement, Solr peut être implémenté dans une approche basée sur un robot d’indexation afin d’utiliser certaines des fonctionnalités les plus avancées de la plateforme.
 
 Les index Solr peuvent être configurés pour être exécutés de manière intégrée sur le serveur AEM pour les environnements de développement ou peuvent être déchargés sur une instance distante afin d’améliorer l’évolutivité de la recherche dans les environnements de production et d’évaluation. Bien que le déchargement de la recherche améliore l’évolutivité, il introduit une latence ; pour cette raison, n’est pas recommandé sauf si nécessaire. Pour plus d’informations sur la configuration de l’intégration Solr et sur la création d’index Solr, voir [Documentation sur l’indexation et les requêtes Oak](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
 

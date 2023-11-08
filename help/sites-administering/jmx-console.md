@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '4962'
-ht-degree: 62%
+source-wordcount: '4963'
+ht-degree: 61%
 
 ---
 
@@ -597,7 +597,7 @@ Lecture seule.
 
 * Valeur renvoyée : aucune
 
-**becomeClusterMaster** Définit ce nœud de référentiel comme nœud maître du cluster. S’il n’est pas déjà le nœud principal, cette commande arrête le programme d’écoute de l’instance principale actuelle et démarre un programme d’écoute sur le nœud actuel. Ce nœud est ensuite défini comme nœud principal et redémarre, ce qui fait que tous les autres nœuds du cluster (c’est-à-dire ceux qui sont contrôlés par le nœud principal) se connectent à cette instance.
+**becomeClusterMaster** Définit ce nœud de référentiel comme nœud maître du cluster. S’il n’est pas déjà le nœud principal, cette commande arrête le programme d’écoute de l’instance principale actuelle et démarre un programme d’écoute sur le nœud actuel. Ce noeud est ensuite défini comme noeud maître et redémarre, ce qui entraîne tous les autres noeuds de la grappe (c’est-à-dire ceux qui sont contrôlés par le maître) à se connecter à cette instance.
 
 * Arguments : aucun
 * Valeur renvoyée : aucune

@@ -9,9 +9,9 @@ content-strategy: max-2018
 docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1734'
 ht-degree: 42%
 
 ---
@@ -27,19 +27,19 @@ L’utilitaire de migration convertit la variable [Ressources Forms adaptatives]
 
 >[!NOTE]
 >
->Dans le cas d’une mise à niveau dynamique, pour les actifs de Correspondence Management, vous pouvez exécuter la migration à chaque importation des actifs. Pour la migration de Correspondence Management, le package de compatibilité Forms doit être installé.
+>S’il existe une mise à niveau dynamique pour les actifs de Correspondence Management, vous pouvez exécuter la migration à chaque importation des actifs. Pour la migration de Correspondence Management, le package de compatibilité Forms doit être installé.
 
 ## Approche de la migration {#approach-to-migration}
 
 Vous pouvez [upgrade](../../forms/using/upgrade.md) vers la dernière version d’AEM Forms 6.5 à partir d’AEM Forms 6.4, 6.3 ou 6.2, ou vers une nouvelle installation. Selon que vous avez mis à niveau votre installation précédente ou procédé à une nouvelle installation, vous devez effectuer l’une des opérations suivantes :
 
-**Dans le cas d&#39;une mise à niveau statique**
+**En cas de mise à niveau statique**
 
 Si vous avez effectué une mise à niveau statique, l’instance mise à niveau contient déjà les actifs et les documents. Toutefois, avant de pouvoir utiliser les actifs et les documents, vous devez installer le [Package de compatibilité AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) (comprend le package de compatibilité Correspondence Management)
 
 Vous devez ensuite mettre à jour les ressources et les documents par [exécution de l’utilitaire de migration](#runningmigrationutility).
 
-**Dans le cas d’une installation dynamique**
+**S’il existe une installation dynamique**
 
 S’il s’agit d’une installation obsolète (nouvelle), vous devez installer les ressources et les documents avant de pouvoir les utiliser. [Package de compatibilité AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) (inclut le package de compatibilité Correspondence Management).
 

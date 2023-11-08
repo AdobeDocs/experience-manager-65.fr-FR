@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '7176'
-ht-degree: 27%
+source-wordcount: '7174'
+ht-degree: 26%
 
 ---
 
@@ -211,7 +211,7 @@ Les fichiers en lecture seule ne sont pas traités et ils sont enregistrés dans
 
 La valeur par défaut est failure/%Y/%M/%D/.
 
-**Conserver en cas d’échec :** conservation des fichiers d’entrée en cas d’échec de l’exécution de l’opération dans un service. La valeur par défaut est true.
+**Conserver en cas d’échec :** Conserver les fichiers d’entrée en cas d’échec de l’exécution de l’opération sur un service. La valeur par défaut est true.
 
 **Remplacer les noms de fichier en double :** lorsque cet attribut est défini sur « true », les fichiers du dossier obtenu et du dossier conservé sont remplacés. Lorsque la valeur est False, les fichiers et les dossiers comportant un suffixe d’index numérique sont utilisés pour le nom. La valeur par défaut est False.
 
@@ -225,7 +225,7 @@ Une valeur de -1 jour indique de ne jamais supprimer le dossier de résultats. L
 
 **Littéral :** le dossier de contrôle utilise la valeur saisie dans le champ telle qu’elle est affichée. Tous les types Java de base sont pris en charge. Par exemple, si une interface API utilise une entrée de type chaîne, long, nombre entier ou valeur booléenne, cette entrée est convertie en type approprié, puis le service est appelé.
 
-**Variable :** la valeur saisie est un modèle de fichier que le dossier de contrôle utilise pour sélectionner l’entrée. Par exemple, dans le cas du service de mot de passe chiffré où le document d’entrée doit être un fichier PDF, l’utilisateur peut utiliser &amp;ast;.pdf comme modèle de fichier. Le dossier de contrôle récupère tous les fichiers du dossier de contrôle correspondant à ce modèle et appelle le service pour chaque fichier. Lorsqu’une variable est utilisée, tous les fichiers d’entrée sont convertis en documents. Seules les API qui utilisent le type d’entrée Document sont prises en charge.
+**Variable :** la valeur saisie est un modèle de fichier que le dossier de contrôle utilise pour sélectionner l’entrée. Par exemple, en présence du service de mot de passe chiffré, où le document d’entrée doit être un fichier de PDF, l’utilisateur peut utiliser &amp;ast;.pdf comme modèle de fichier. Le dossier de contrôle récupère tous les fichiers du dossier de contrôle correspondant à ce modèle et appelle le service pour chaque fichier. Lorsqu’une variable est utilisée, tous les fichiers d’entrée sont convertis en documents. Seules les API qui utilisent le type d’entrée Document sont prises en charge.
 
 **Mappages des paramètres de sortie :** permet de configurer les sorties du service et de l’opération. Les paramètres disponibles dépendent du service qui utilise le point de fin Watched Folder.
 
@@ -271,7 +271,7 @@ Si le modèle de mappage des paramètres de sortie se termine par &quot;File.sep
 
 ## A propos du ralentissement {#about-throttling}
 
-Lorsque le ralentissement est activé pour un point de fin de dossier de contrôle, il limite le nombre de tâches du dossier de contrôle pouvant être traitées à un moment donné. Le nombre maximal de tâches est déterminé par la valeur Taille du lot, également configurable dans le point de fin Watched Folder. Les documents entrants dans le répertoire d’entrée du dossier de contrôle ne seront pas interrogés lorsque la limite de ralentissement aura été atteinte. Les documents resteront également dans le répertoire des entrées jusqu’à ce que d’autres tâches du dossier de contrôle soient terminées et qu’une autre tentative d’interrogation soit effectuée. Dans le cas d’un traitement synchrone, toutes les tâches traitées dans un seul sondage sont comptabilisées dans la limite de ralentissement, même si les tâches sont traitées consécutivement dans un seul thread.
+Lorsque le ralentissement est activé pour un point de fin de dossier de contrôle, il limite le nombre de tâches du dossier de contrôle pouvant être traitées à un moment donné. Le nombre maximal de tâches est déterminé par la valeur Taille du lot, également configurable dans le point de fin Watched Folder. Les documents entrants dans le répertoire d’entrée du dossier de contrôle ne seront pas interrogés lorsque la limite de ralentissement aura été atteinte. Les documents resteront également dans le répertoire des entrées jusqu’à ce que d’autres tâches du dossier de contrôle soient terminées et qu’une autre tentative d’interrogation soit effectuée. En cas de traitement synchrone, toutes les tâches traitées dans une interrogation tiendront compte de la limite de ralentissement, même si les tâches sont traitées consécutivement dans un seul thread.
 
 >[!NOTE]
 >
@@ -284,15 +284,15 @@ Watched Folder analyse le dossier input à chaque intervalle de répétition, s�
 L’option de ralentissement empêche le dossier de contrôle d’appeler de nouvelles tâches avant que les tâches précédentes ne soient terminées. Watched Folder détectera les tâches en cours et traitera les nouvelles tâches en fonction de la taille du lot moins les tâches en cours. Par exemple, dans le second appel, si le nombre de tâches terminées est de trois seulement et qu’une tâche est toujours en cours, Watched Folder appelle uniquement trois autres tâches.
 
 * Watched Folder s’appuie sur le nombre de fichiers présents dans le dossier stage pour déterminer le nombre de tâches en cours. Si les fichiers restent non traités dans le dossier stage, Watched Folder n’appelle plus aucune tâche. Par exemple, si la taille du lot est de quatre et que trois tâches sont bloquées, Watched Folder appellera une seule tâche dans les appels suivants. Il existe plusieurs scénarios qui peuvent empêcher le traitement des fichiers dans le dossier stage. Si les tâches sont bloquées, l’administrateur peut mettre un terme au traitement dans la page d’administration du processus des formulaires et Watched Folder sortira alors les fichiers du dossier d’étape.
-* Si le serveur Forms tombe en panne avant que Watched Folder puisse appeler les tâches, l’administrateur peut sortir les fichiers du dossier d’étape. Pour plus d’informations, voir [Points d’échec et récupération](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
-* Si le serveur Forms fonctionne mais que Watched Folder ne fonctionne pas lorsque le service Job Manager appelle de nouveau, ce qui arrive lorsque les services ne sont pas exécutés dans la séquence définie, l’administrateur peut sortir les fichiers du dossier d’étape. Pour plus d’informations, voir [Points d’échec et récupération](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+* Si le serveur Forms tombe en panne avant que Watched Folder ne puisse appeler les tâches, l’administrateur peut sortir les fichiers du dossier stage. Pour plus d’informations, voir [Points d’échec et récupération](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+* Si le serveur Forms est en cours d’exécution mais que Watched Folder ne s’exécute pas lorsque le service Job Manager rappelle, ce qui se produit lorsque les services ne démarrent pas dans l’ordre, l’administrateur peut sortir les fichiers du dossier stage. Pour plus d’informations, voir [Points d’échec et récupération](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 
 ## Performances et évolutivité {#performance-and-scalability}
 
 Watched Folder peut traiter 100 dossiers au total sur un seul noeud. Les performances de Watched Folder dépendent des performances du serveur Forms. Pour les appels asynchrones, les performances dépendent davantage de la charge du système et des tâches qui se trouvent dans la file d’attente de Job Manager.
 
-Les performances de Watched Folder peuvent être améliorées en ajoutant des noeuds à la grappe. Les tâches de Watched Folder sont distribuées sur les noeuds de la grappe en vertu du planificateur Quartz et, dans le cas de requêtes asynchrones, par le service Job Manager. Toutes les tâches sont conservées dans la base de données.
+Les performances de Watched Folder peuvent être améliorées en ajoutant des noeuds à la grappe. Les tâches Watched Folder sont distribuées sur les noeuds de la grappe en vertu du planificateur Quartz et, en cas de requêtes asynchrones, par le service Job Manager. Toutes les tâches sont conservées dans la base de données.
 
 Watched Folder dépend du service Planificateur pour la planification, la désplanification et la replanification des tâches. D’autres services, tels que le service de gestion des événements, le service User Manager et le service Email Provider, sont disponibles et partagent le pool de threads du service de programmation. Cela peut avoir une incidence sur les performances de Watched Folder. Le réglage du pool de threads du service de programmation sera nécessaire lorsque tous les services commenceront à l’utiliser.
 
@@ -408,7 +408,7 @@ Voici quelques conseils et astuces lors de la configuration du point de fin Watc
 
 ## Recommandations spécifiques au service pour les dossiers de contrôle {#service-specific-recommendations-for-watched-folders}
 
-Pour tous les services, vous devez ajuster la taille du lot et l’intervalle de répétition du dossier de contrôle de sorte que le rythme auquel Watched Folder sélectionne de nouveaux fichiers et dossiers en vue du traitement ne dépasse pas le nombre de tâches pouvant être traitées par le serveur d’AEM forms. Les paramètres réels à utiliser peuvent varier en fonction du nombre de dossiers de contrôle configurés, des services utilisant des dossiers de contrôle et de l’intensité des tâches sur le processeur.
+Pour tous les services, vous devez ajuster la taille du lot et l’intervalle de répétition du dossier de contrôle de sorte que le rythme auquel Watched Folder sélectionne de nouveaux fichiers et dossiers en vue du traitement ne dépasse pas le nombre de tâches pouvant être traitées par le serveur AEM Forms. Les paramètres réels à utiliser peuvent varier en fonction du nombre de dossiers de contrôle configurés, des services utilisant des dossiers de contrôle et de l’intensité des tâches sur le processeur.
 
 ### Recommandations relatives au service Generate PDF {#generate-pdf-service-recommendations}
 

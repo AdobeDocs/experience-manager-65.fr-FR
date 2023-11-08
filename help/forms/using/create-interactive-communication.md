@@ -1,19 +1,15 @@
 ---
 title: Créer une communication interactive
-seo-title: Create an Interactive Communication
 description: Créez une communication interactive à l’aide de l’éditeur de communication interactive. Utilisez la fonctionnalité de glisser-déposer pour créer la communication interactive et prévisualisez les sorties d’impression et web sur différents types d’appareils.
-seo-description: Create an Interactive Communication using the Interactive Communication editor. Use drag-and-drop functionality to build the Interactive Communication, and preview both print and web outputs on different device types.
-uuid: d524a3de-00b4-444f-b3c7-be443fa24ec8
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6168'
-ht-degree: 89%
+source-wordcount: '6163'
+ht-degree: 88%
 
 ---
 
@@ -141,7 +137,7 @@ L’interface de création vous permet de faire la distinction entre les champs 
 
 En outre, lorsque vous placez le pointeur de la souris sur ces éléments, une info-bulle s’affiche avec le message Champ (non lié) ou Variable (non lié).
 
-Une variable non liée utilisée dans un fragment de document peut parfois ne pas s’afficher dans l’interface de création. Cela peut se produire en raison d’une règle de texte intégrée dans un fragment de document ou dans le cas d’un fragment de condition. Dans ce cas, une info-bulle, mise en surbrillance en bleu, s’affiche dans le fragment de document. L’info-bulle affiche le nombre de variables non liées utilisées dans un fragment de document.
+Une variable non liée utilisée dans un fragment de document peut parfois ne pas s’afficher dans l’interface de création. Cela peut se produire en raison d’une règle de texte intégrée dans un fragment de document ou s’il existe un fragment de condition. Dans ce cas, une info-bulle, mise en surbrillance en bleu, s’affiche dans le fragment de document. L’info-bulle affiche le nombre de variables non liées utilisées dans un fragment de document.
 
 ![Variable non liée](assets/df_unbound_variable_new.png)
 
@@ -562,7 +558,7 @@ Appuyez sur **[!UICONTROL Oui]**.
 
 ### Synchroniser {#synchronize-1}
 
-Si vous utilisez Imprimer en tant que page principale pour le canal web et si vous modifiez le canal d’impression, vous pouvez synchroniser le contenu pour insérer les nouvelles modifications dans le canal web.
+Si vous utilisez l’impression en tant que Principal pour le canal web et que vous modifiez le canal d’impression, vous pouvez synchroniser le contenu pour apporter les modifications nouvellement apportées au canal web.
 
 1. Pour synchroniser le canal web avec le canal d’impression, passez au canal web et appuyez sur l’icône Plus d’options.
 

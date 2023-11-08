@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 2aef9048-9d6e-4f5d-b443-5e73f8066d76
 docset: aem65
 exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '461'
 ht-degree: 95%
 
 ---
@@ -41,7 +41,7 @@ Pour ce faire, définissez la [Configuration du composant de fragment de contenu
 
 Les services qui nécessitent l’enregistrement d’un composant sont les suivants :
 
-* Déterminer correctement les dépendances au cours de la publication (c.-à-d. s’assurer que les fragments et les modèles peuvent être publiés automatiquement avec une page s’ils ont été modifiés depuis la dernière publication).
+* Déterminer correctement les dépendances au cours de la publication (c’est-à-dire s’assurer que les fragments et les modèles peuvent être publiés automatiquement avec une page s’ils ont été modifiés depuis la dernière publication).
 * Prise en charge des fragments de contenu dans la recherche de texte intégral.
 * Gestion/traitement du *contenu intermédiaire.*
 * Gestion/traitement des *ressources multimédias mixtes.*

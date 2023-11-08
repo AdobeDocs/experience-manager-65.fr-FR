@@ -1,19 +1,15 @@
 ---
 title: Création de contenu ciblé en mode Ciblage
-seo-title: Authoring Targeted Content Using Targeting Mode
 description: Le mode Ciblage et le composant cible fournissent des outils pour créer du contenu pour les expériences
-seo-description: Targeting mode and the Target component provide tools for creating content for experiences
-uuid: cea85c1b-1bc3-4498-9eaa-4ad10dc58ea4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '5385'
+source-wordcount: '5383'
 ht-degree: 98%
 
 ---
@@ -635,7 +631,7 @@ Pour simuler l’expérience du visiteur ou de la visiteuse, utilisez les outils
 
    La page se modifie pour afficher le contenu ciblé pour le contexte actuel.
 
-1. Pour apporter des modifications aux offres affichées, passez en mode Ciblage. Pour l’activité de simulation sélectionnée, modifiez les offres pour le contexte que vous avez configuré en mode Aperçu.
+1. Pour modifier les offres affichées, passez en mode Ciblage . Pour l’activité de simulation sélectionnée, modifiez les offres pour le contexte que vous avez configuré en mode Aperçu.
 
 ## Configuration des options du composant cible {#configuring-target-component-options}
 

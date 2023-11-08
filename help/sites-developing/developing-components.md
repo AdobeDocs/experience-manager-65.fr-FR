@@ -12,10 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3446'
-ht-degree: 94%
+source-wordcount: '3447'
+ht-degree: 92%
 
 ---
 
@@ -181,7 +181,7 @@ newComponent (cq:Component)
             description
 ```
 
-La personnalisation d’une boîte de dialogue est similaire au développement d’un composant dans la mesure où la boîte de dialogue est elle-même un composant (c’est-à-dire un balisage rendu par un script de composant avec le comportement/style fourni par une bibliothèque cliente).
+La personnalisation d’une boîte de dialogue est similaire au développement d’un composant, car la boîte de dialogue est elle-même un composant (c’est-à-dire un balisage rendu par un script de composant avec le comportement/style fourni par une bibliothèque cliente).
 
 Pour consulter des exemples, voir :
 
@@ -243,7 +243,7 @@ Pour consulter un exemple, reportez-vous à :
 Selon vos besoins, vous pouvez effectuer l’une des opérations suivantes :
 
 * Étendre un champ de l’IU Granite par héritage de composant (`sling:resourceSuperType`)
-* Étendez un widget donné à partir de la bibliothèque de widgets sous-jacente (dans le cas de l’UI Granite, il s’agit de l’UI Coral), en suivant l’API de bibliothèque de widgets (héritage JS/CSS).
+* Étendez un widget donné à partir de la bibliothèque de widgets sous-jacente (s’il existe une IU Granite, il s’agit de l’IU Coral), en suivant l’API de bibliothèque de widgets (héritage JS/CSS).
 
 #### Accès aux champs de boîte de dialogue {#access-to-dialog-fields}
 

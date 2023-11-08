@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6818'
+source-wordcount: '6816'
 ht-degree: 55%
 
 ---
@@ -594,7 +594,7 @@ Pour plus d’informations, reportez-vous au tableau de la section [Configuratio
 
 L’exclusion du groupe d’administrateurs peut être modifiée ou augmentée dans la console système dans la section de configuration de **Liste d’exclusion de CUG Apache Jackrabbit Oak**.
 
-Sinon, il est possible de fournir et de déployer une mise en œuvre personnalisée de l’interface CugExclude pour ajuster l’ensemble des principaux exclus en cas de besoins spécifiques. Consultez la documentation relative à l’[aspect enfichable des CUG](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) pour plus d’informations et pour obtenir un exemple de mise en œuvre.
+Vous pouvez également fournir et déployer une implémentation personnalisée de l’interface CugExclude afin d’ajuster l’ensemble des entités exclues en cas de besoins spécifiques. Consultez la documentation relative à l’[aspect enfichable des CUG](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) pour plus d’informations et pour obtenir un exemple de mise en œuvre.
 
 ### Authentification : installation et configuration {#authentication-setup-and-configuration}
 

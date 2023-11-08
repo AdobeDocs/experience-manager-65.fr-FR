@@ -10,10 +10,10 @@ topic-tags: author, interactive-communications
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 feature: Adaptive Forms
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1162'
-ht-degree: 64%
+ht-degree: 62%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 64%
 | AEM 6.5 | Cet article |
 
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 AEM Forms permet aux développeurs de formulaires d’incorporer facilement des formulaires adaptatifs et des communications interactives dans une page d’AEM Sites ou une page Web hébergée en dehors d’AEM. Le formulaire adaptatif et la communication interactive incorporés sont entièrement fonctionnels et les utilisateurs peuvent remplir et envoyer le formulaire sans quitter la page. Il permet à l’utilisateur de rester dans le contexte d’autres éléments de la page web et d’interagir simultanément avec le formulaire ou la communication interactive.
 
@@ -44,7 +44,7 @@ AEM Forms fournit un composant que vous pouvez ajouter à vos pages de site. Le
 
 Pour incorporer un formulaire adaptatif ou une communication interactive dans une page AEM Sites qui utilise un modèle modifiable, vérifiez que le composant AEM Forms est configuré en tant que composant autorisé dans le modèle associé. Pour plus d’informations, voir **Politique et propriétés (conteneur de disposition)** dans [Création de modèles de page](/help/sites-authoring/templates.md).
 
-Si une page de site utilise un modèle statique, vous devez le configurer dans le système de paragraphe de la page de site. Pour plus d’informations, voir [Configuration des composants en mode Création](/help/sites-authoring/default-components-designmode.md).
+Si une page Sites utilise un modèle statique, vous devez la configurer dans le système de paragraphes de la page du site. Pour plus d’informations, consultez [Configuration des composants en mode Création](/help/sites-authoring/default-components-designmode.md).
 
 ## Incorporer un formulaire adaptatif ou une communication interactive {#af-component}
 

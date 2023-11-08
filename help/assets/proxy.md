@@ -4,10 +4,10 @@ description: Un proxy est une instance  [!DNL Experience Manager]  qui utilise 
 contentOwner: AG
 role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 85%
+source-wordcount: '842'
+ht-degree: 83%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 85%
 
 [!DNL Adobe Experience Manager Assets] utilise un proxy pour distribuer le traitement de certaines tâches.
 
-Un proxy est une instance Experience Manager spécifique (et parfois distincte) qui utilise des programmes de travail par de proxy comme des processeurs chargés de gérer une tâche et de produire un résultat. Un programme de travail par proxy peut être utilisé pour de nombreuses tâches. Dans le cas d’un proxy [!DNL Assets], il peut être utilisé pour le chargement de ressources pour afficher leurs rendus dans Assets. Par exemple, le [programme de travail par proxy IDS](indesign.md) utilise un serveur [!DNL Adobe InDesign] pour traiter les fichiers à utiliser dans Assets.
+Un proxy est une instance Experience Manager spécifique (et parfois distincte) qui utilise des programmes de travail par de proxy comme des processeurs chargés de gérer une tâche et de produire un résultat. Un programme de travail par proxy peut être utilisé pour de nombreuses tâches. Si une variable [!DNL Assets] proxy qui peut être utilisé pour charger des ressources à des fins de rendu dans Assets. Par exemple, le [programme de travail par proxy IDS](indesign.md) utilise un serveur [!DNL Adobe InDesign] pour traiter les fichiers à utiliser dans Assets.
 
 Lorsque le proxy est une instance distincte d’[!DNL Experience Manager], il contribue à réduire la charge sur la ou les instances de création [!DNL Experience Manager]. Par défaut, [!DNL Assets] exécute les tâches de traitement des ressources dans la même JVM (externalisée via proxy) pour réduire la charge sur l’instance de création [!DNL Experience Manager].
 

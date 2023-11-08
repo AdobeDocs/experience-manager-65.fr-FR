@@ -1,7 +1,7 @@
 ---
 title: Approvisionnement juste à temps d’utilisateurs
 seo-title: Just-in-time user provisioning
-description: Utilisez l’approvisionnement juste à temps pour ajouter des utilisateurs à User Management après l’authentification réussie et pour affecter de manière dynamique les rôles et les groupes appropriés au nouvel utilisateur.
+description: Utilisez la mise en service juste à temps pour ajouter des utilisateurs à User Management après une authentification réussie et affecter dynamiquement les rôles et groupes appropriés au nouvel utilisateur.
 seo-description: Use just-in-time provisioning to add users to User Management after successfull authentication and dynamically assign relevant roles and groups to the new user.
 uuid: a5ad4698-70bb-487b-a069-7133e2f420c2
 contentOwner: admin
@@ -10,24 +10,24 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
 exl-id: 7bde0a09-192a-44a8-83d0-c18e335e9afa
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 100%
+ht-degree: 33%
 
 ---
 
 # Approvisionnement juste à temps {#just-in-time-user-provisioning}
 
-AEM Forms prend en charge l’approvisionnement juste à temps des utilisateurs n’existant pas encore dans Gestion des utilisateurs. Grâce à la fonction d’approvisionnement juste à temps, les utilisateurs sont automatiquement ajoutés à User Management une fois leurs informations d’identification authentifiées. En outre, les rôles et les groupes appropriés sont affectés de manière dynamique au nouvel utilisateur.
+AEM forms prend en charge la mise en service juste à temps des utilisateurs qui n’existent pas encore dans User Management. Avec la mise en service juste à temps, les utilisateurs sont automatiquement ajoutés à User Management une fois leurs informations d’identification authentifiées. En outre, les rôles et groupes pertinents sont affectés dynamiquement au nouvel utilisateur.
 
-## Fonction de l’approvisonnement juste à temps {#need-for-just-in-time-user-provisioning}
+## Nécessité de l’approvisionnement juste à temps des utilisateurs {#need-for-just-in-time-user-provisioning}
 
-Voici comment l’authentification traditionnelle fonctionne :
+Voici comment fonctionne l’authentification traditionnelle :
 
-1. Lorsqu’un utilisateur tente de se connecter à AEM Forms, le gestionnaire des utilisateurs transmet les informations d’identification de ce dernier de manière séquentielle à tous les fournisseurs d’authentification disponibles. Les informations d’identification comprennent le nom d’utilisateur et le mot de passe, le ticket Kerberos, la signature PKCS7, etc.
-1. Le fournisseur d’authentification valide les informations d’identification.
-1. Il vérifie ensuite si l’utilisateur existe dans la base de données User Management. L’un des résultats suivants s’affiche :
+1. Lorsqu’un utilisateur tente de se connecter à AEM forms, User Management transmet les informations d’identification de l’utilisateur de manière séquentielle à tous les fournisseurs d’authentification disponibles. (Les informations d’identification comprennent un nom d’utilisateur/mot de passe, un ticket Kerberos, une signature PKCS7, etc.)
+1. Le fournisseur d’authentification valide les identifiants.
+1. Le fournisseur d’authentification vérifie ensuite si l’utilisateur existe dans la base de données User Management. Les résultats possibles sont les suivants :
 
    **Existe :** si l’utilisateur est en cours et déverrouillé, User Management renvoie un succès d’authentification. Toutefois, si l’utilisateur n’est pas en cours ou s’il est verrouillé, User Management signale un échec d’authentification.
 
@@ -35,16 +35,16 @@ Voici comment l’authentification traditionnelle fonctionne :
 
    **Non valide :** User Management renvoie un échec d’authentification.
 
-1. L’état indiqué par le fournisseur d’authentification est évalué. Si ce dernier a confirmé l’authentification, l’utilisateur peut alors ouvrir une session. Dans le cas contraire, User Management vérifie auprès du fournisseur d’authentification suivant. (les étapes 2 et 3)
-1. Un échec d’authentification est indiqué lorsqu’aucun fournisseur d’authentification disponible n’a pu valider les informations d’identification de l’utilisateur.
+1. Le résultat renvoyé par le fournisseur d’authentification est évalué. Si le fournisseur d’authentification a renvoyé une authentification réussie, l’utilisateur est autorisé à se connecter. Sinon, User Management vérifie auprès du fournisseur d’authentification suivant (étapes 2 à 3).
+1. L’échec de l’authentification est renvoyé si aucun fournisseur d’authentification disponible ne valide les informations d’identification de l’utilisateur.
 
-Lorsque l’approvisonnement juste à temps est mis en œuvre, un nouvel utilisateur est créé de manière dynamique dans User Management si l’un des fournisseurs d’authentification valide les informations d’identification de l’utilisateur (après l’étape 3 de la procédure d’authentification traditionnelle décrite ci-dessus).
+Lors de la mise en oeuvre de l’approvisionnement juste à temps, un nouvel utilisateur est créé dynamiquement dans User Management si l’un des fournisseurs d’authentification valide les informations d’identification de l’utilisateur. (Après l’étape 3 de la procédure d’authentification traditionnelle, ci-dessus.)
 
-## Mise en œuvre de l’approvisionnement juste à temps {#implement-just-in-time-user-provisioning}
+## Mise en oeuvre de l’approvisionnement juste à temps {#implement-just-in-time-user-provisioning}
 
 ### API pour l’approvisionnement juste à temps {#apis-for-just-in-time-provisioning}
 
-AEM Forms fournit les API suivantes pour l’approvisionnement juste à temps :
+AEM forms fournit les API suivantes pour la mise en service juste à temps :
 
 ```java
 package com.adobe.idp.um.spi.authentication  ;
@@ -81,7 +81,7 @@ public Boolean assign(User user);
 }
 ```
 
-### Remarques concernant la création d’un domaine de provisionnement juste à temps {#considerations-while-creating-a-just-in-time-enabled-domain}
+### Remarques concernant la création d’un domaine juste à temps {#considerations-while-creating-a-just-in-time-enabled-domain}
 
 * Lors de la création d’un `IdentityCreator` personnalisé pour un domaine hybride, assurez-vous qu’un mot de passe factice est spécifié pour l’utilisateur local. Ne laissez pas ce champ de mot de passe vide.
 * Recommandation : utilisez `DomainSpecificAuthentication` pour valider les informations d’identification de l’utilisateur pour un domaine spécifique.
@@ -90,23 +90,23 @@ public Boolean assign(User user);
 
 1. Écrivez un DSC qui met les API en œuvre dans la section « API pour l’approvisionnement juste à temps ».
 1. Déployez le DSC sur le serveur Forms.
-1. Créez un domaine de provisionnement juste à temps :
+1. Créer un domaine d’approvisionnement juste à temps:
 
-   * Dans Administration Console, cliquez sur Paramètres > User Management > Gestion des domaines > Nouveau domaine d’entreprise.
-   * Configurez le domaine et sélectionnez Activer l’approvisionnement juste à temps <!--Fix broken link (See Setting up and managing domains).-->
-   * Ajoutez des fournisseurs d’authentification. Durant l’ajout de fournisseurs d’authentification, dans l’écran de nouvelle authentification, sélectionnez un Créateur d’identité et un Fournisseur d’affectation enregistrés.
+   * Dans Administration Console, cliquez sur Paramètres > User Management > Gestion des domaines > Nouveau domaine d’entreprise.
+   * Configurez le domaine et sélectionnez Activer l’approvisionnement juste à temps. <!--Fix broken link (See Setting up and managing domains).-->
+   * Ajoutez des fournisseurs d’authentification. Lors de l’ajout de fournisseurs d’authentification, dans l’écran Nouvelle authentification, sélectionnez un créateur d’identités et un fournisseur d’affectation enregistrés.
 
 1. Enregistrez le nouveau domaine.
 
-## Arrière-plan {#behind-the-scenes}
+## En arrière-plan {#behind-the-scenes}
 
-Supposons qu’un utilisateur essaie de se connecter à AEM Forms et qu’un fournisseur d’authentification accepte ses informations d’identification. Si l’utilisateur n’existe pas encore dans la base de données Gestion des utilisateurs, la vérification de son identité échoue. AEM Forms effectue alors les actions suivantes :
+Supposons qu’un utilisateur essaie de se connecter à AEM forms et qu’un fournisseur d’authentification accepte ses informations d’identification. Si l’utilisateur n’existe pas encore dans la base de données User Management, la vérification d’identité de l’utilisateur échoue. AEM forms effectue désormais les actions suivantes :
 
 1. Création d’un objet `UserProvisioningBO` avec les données d’authentification et placement de l’objet dans une carte d’informations d’identification.
 1. Extraction et appel des `UserProvisioningBO` et `IdentityCreator` enregistrés pour le domaine en se basant sur les informations du domaine renvoyées par `AssignmentProvider`.
 1. Appelez `IdentityCreator`. Si une `AuthResponse` positive est renvoyée, extraction de `UserInfo` de la carte d’informations d’identification. Transmission de UserInfo à `AssignmentProvider` pour l’affectation des groupes et des rôles après la création de l’utilisateur.
-1. Si l’utilisateur est correctement créé, renvoi de la tentative de connexion de l’utilisateur comme réussie.
-1. Pour les domaines hybrides, extraction des informations de l’utilisateur des données d’authentification fournies au fournisseur d’authentification. Si l’information est correctement extraite, création de l’utilisateur par la même occasion.
+1. Si l’utilisateur a été créé avec succès, renvoyez la tentative de connexion de l’utilisateur.
+1. Pour les domaines hybrides, extrayez les informations utilisateur des données d’authentification fournies au fournisseur d’authentification. Si ces informations sont récupérées correctement, créez l’utilisateur à la volée.
 
 >[!NOTE]
 >

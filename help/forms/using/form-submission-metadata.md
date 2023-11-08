@@ -10,10 +10,10 @@ discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 67%
+source-wordcount: '738'
+ht-degree: 63%
 
 ---
 
@@ -25,7 +25,7 @@ Vous pouvez utiliser des valeurs saisies dans un élément de votre formulaire p
 
 Pour calculer les champs de métadonnées avec des valeurs saisies par l’utilisateur, ajoutez les éléments de votre formulaire aux métadonnées. Lorsqu’un utilisateur entre une valeur dans cet élément, un script utilise la valeur pour calculer les informations. Ces informations sont ajoutées dans les métadonnées. Lorsque vous ajoutez un élément sous la forme d’un champ de métadonnées, vous fournissez la clé correspondante. La clé est ajoutée en tant que champ dans les métadonnées et les informations calculées sont enregistrées en fonction de celle-ci.
 
-Par exemple, une compagnie d’assurance maladie publie un formulaire. Dans ce formulaire, un champ capture l’âge des utilisateurs finaux. Le client souhaite vérifier tous les envois dans une tranche d’âge spécifique après que plusieurs utilisateurs ont envoyé le formulaire. Plutôt que de parcourir toutes les données qui deviennent complexes à mesure que le nombre de formulaires augmente, des métadonnées supplémentaires aident le client. L’auteur du formulaire peut configurer quelles propriétés/données remplies par l’utilisateur final sont stockées au niveau supérieur afin de faciliter la recherche. Les métadonnées supplémentaires sont des informations remplies par l’utilisateur stockées au niveau supérieur du noeud de métadonnées, tel que l’auteur les a configurées.
+Par exemple, une compagnie d’assurance maladie publie un formulaire. Dans ce formulaire, un champ capture l’âge des utilisateurs finaux. Le client souhaite vérifier tous les envois dans une tranche d’âge spécifique après que plusieurs utilisateurs ont envoyé le formulaire. Plutôt que de parcourir toutes les données qui deviennent complexes à mesure que le nombre de formulaires augmente, des métadonnées supplémentaires aident le client. L’auteur du formulaire peut configurer les propriétés/données renseignées par l’utilisateur final qui sont stockées au niveau supérieur afin que la recherche soit la plus facile. Les métadonnées supplémentaires sont des informations remplies par l’utilisateur stockées au niveau supérieur du noeud de métadonnées, tel que l’auteur l’a configuré.
 
 Prenons un autre exemple de formulaire qui capture l’ID de courrier électronique et le numéro de téléphone. Lorsqu’un utilisateur visite ce formulaire de manière anonyme et abandonne le formulaire, l’auteur peut configurer le formulaire afin que l’ID d’adresse électronique et le numéro de téléphone soient automatiquement enregistrés. Ce formulaire est enregistré automatiquement et le numéro de téléphone et l’ID d’adresse électronique sont stockés dans le nœud de métadonnées du brouillon. Le tableau de bord de la gestion des leads est un cas d’utilisation de cette configuration.
 

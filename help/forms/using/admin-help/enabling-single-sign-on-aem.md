@@ -1,7 +1,7 @@
 ---
 title: Activation de l’authentification unique dans AEM forms
 seo-title: Enabling single sign-on in AEM forms
-description: Découvrez comment activer l’authentification unique (SSO) en utilisant des en-têtes HTTP et SPNEGO.
+description: Découvrez comment activer l’authentification unique (SSO) à l’aide d’en-têtes HTTP et de SPNEGO.
 seo-description: Learn how to enable single sign-on (SSO) using HTTP headers and SPNEGO.
 uuid: 2bc08b4f-dcbe-4a16-9025-32fc14605e13
 contentOwner: admin
@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
 exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+workflow-type: tm+mt
 source-wordcount: '1520'
-ht-degree: 100%
+ht-degree: 27%
 
 ---
 
@@ -21,59 +21,59 @@ ht-degree: 100%
 
 AEM Forms offre deux méthodes d’activation de l’authentification unique (SSO) : via les en-têtes HTTP et SPNEGO.
 
-Lorsque la fonction SSO est implémentée, les pages d’ouverture de session utilisateur d’AEM forms ne sont plus obligatoires. Elles ne s’affichent pas si l’utilisateur s’est déjà authentifié via le portail de son entreprise.
+Lorsque l’authentification unique est mise en oeuvre, les pages de connexion utilisateur des formulaires AEM ne sont pas requises et n’apparaissent pas si l’utilisateur est déjà authentifié via le portail de son entreprise.
 
-Si AEM forms n’est pas en mesure d’authentifier un utilisateur à l’aide de l’une de ces méthodes, l’utilisateur est redirigé vers une page d’ouverture de session.
+Si AEM forms ne peut pas authentifier un utilisateur à l’aide de l’une de ces méthodes, l’utilisateur est redirigé vers une page de connexion.
 
 ## Activation de la fonction SSO à l’aide d’en-têtes HTTP {#enable-sso-using-http-headers}
 
-La page Configuration du portail permet d’activer l’authentification unique (SSO) entre les applications et les applications prenant en charge l’acheminement de l’identité via l’en-tête HTTP. Lorsque la fonction SSO est implémentée, les pages d’ouverture de session utilisateur d’AEM forms ne sont plus obligatoires. Elles ne s’affichent pas si l’utilisateur s’est déjà authentifié via le portail de son entreprise.
+Vous pouvez utiliser la page de configuration du portail pour activer l’authentification unique (SSO) entre les applications et toute application qui prend en charge le transport de l’identité via l’en-tête HTTP. Lorsque l’authentification unique est mise en oeuvre, les pages de connexion utilisateur des formulaires AEM ne sont pas requises et n’apparaissent pas si l’utilisateur est déjà authentifié via le portail de son entreprise.
 
-Vous pouvez également activer la fonction SSO via SPNEGO (voir [Activation de la fonction SSO à l’aide de SPNEGO](enabling-single-sign-on-aem.md#enable-sso-using-spnego)).
+Vous pouvez également activer la fonction SSO à l’aide de SPNEGO. (voir [Activation de la fonction SSO à l’aide de SPNEGO](enabling-single-sign-on-aem.md#enable-sso-using-spnego)).
 
-1. Dans Administration Console, cliquez sur Paramètres > User Management > Configuration > Configurer les attributs de portail.
-1. Sélectionnez Oui pour activer l’authentification unique. Si vous sélectionnez Non, les autres paramètres de la page ne sont pas disponibles.
-1. Définissez les autres options de la page au besoin, puis cliquez sur OK :
+1. Dans Administration Console, cliquez sur Paramètres > User Management > Configuration > Configurer les attributs du portail.
+1. Sélectionnez Oui pour activer l’authentification unique. Si vous sélectionnez Non, les paramètres restants de la page ne sont pas disponibles.
+1. Définissez les autres options de la page selon les besoins, puis cliquez sur OK :
 
    * **Type d’authentification unique :** (obligatoire) sélectionnez En-tête HTTP pour activer la fonction SSO par le biais d’en-têtes HTTP.
-   * **En-tête HTTP de l’identificateur de l’utilisateur :** (obligatoire) nom de l’en-tête dont la valeur contient l’identificateur unique de l’utilisateur connecté. Cette valeur sert à rechercher l’utilisateur dans la base de données User Management. La valeur obtenue via cet en-tête doit correspondre à l’identificateur unique de l’utilisateur synchronisé à partir de l’annuaire LDAP (voir [Options utilisateur](/help/forms/using/admin-help/adding-configuring-users.md#user-settings)).
+   * **En-tête HTTP de l’identificateur de l’utilisateur :** (obligatoire) nom de l’en-tête dont la valeur contient l’identificateur unique de l’utilisateur connecté. User Management utilise cette valeur pour rechercher l’utilisateur dans la base de données User Management. La valeur obtenue de cet en-tête doit correspondre à l’identifiant unique de l’utilisateur synchronisé à partir de l’annuaire LDAP. (Voir [Paramètres utilisateur](/help/forms/using/admin-help/adding-configuring-users.md#user-settings).)
    * **La valeur de l’identificateur correspond à l’ID utilisateur de l’utilisateur et non à l’identificateur unique de l’utilisateur :** permet de mapper la valeur d’identificateur unique de l’utilisateur à l’ID utilisateur. Sélectionnez cette option si l’identificateur unique de l’utilisateur est une valeur binaire ne pouvant pas facilement être propagée sur les en-têtes HTTP (par exemple, objectGUID si vous synchronisez des utilisateurs à partir d’Active Directory).
-   * **En-tête HTTP du domaine :**(facultatif) nom de l’en-tête dont la valeur contient le nom du domaine. Utilisez ce paramètre uniquement si plusieurs en-têtes HTTP identifient l’utilisateur de façon unique. Utilisez ce paramètre lorsqu’il existe plusieurs domaines et que l’identificateur n’est unique que dans un seul domaine. Dans ce cas, indiquez le nom de l’en-tête dans cette zone de texte et spécifiez le mappage des domaines dans le champ Mappage de domaine (voir [Modification et conversion de domaines](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)).
+   * **En-tête HTTP du domaine :**(facultatif) nom de l’en-tête dont la valeur contient le nom du domaine. Utilisez ce paramètre uniquement si aucun en-tête HTTP unique n’identifie l’utilisateur de manière unique. Utilisez ce paramètre lorsque plusieurs domaines existent et que l’identifiant unique n’est unique que dans un seul domaine. Dans ce cas, indiquez le nom de l’en-tête dans cette zone de texte et spécifiez le mappage des domaines pour les multiples domaines dans la zone Mappage des domaines . (Voir [Modification et conversion de domaines](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).)
    * **Mappage de domaine :**(obligatoire) permet de spécifier le mappage de plusieurs domaines, au format *valeur de l’en-tête=nom du domaine*.
 
-      Par exemple, prenons une situation où l’en-tête HTTP d’un domaine est domainName et où il peut avoir les valeurs domain1, domain2 ou domain3. Dans ce cas, vous devez utiliser le mappage de domaine pour associer des valeurs domainName à des noms de domaine User Management. Chaque mappage doit se trouver sur une ligne distincte :
+     Prenons l’exemple d’une situation où l’en-tête HTTP d’un domaine est domainName et où il peut avoir des valeurs domain1, domain2 ou domain3. Dans ce cas, utilisez le mappage de domaine pour mapper les valeurs domainName aux noms de domaine User Management. Chaque mappage doit se trouver sur une ligne différente :
 
-      domain1=UMdomain1
+     domain1=UMdomain1
 
-      domain2=UMdomain2
+     domain2=UMdomain2
 
-      domain3=UMdomain3
+     domain3=UMdomain3
 
 ### Configuration des référents autorisés {#configure-allowed-referers}
 
-Pour connaître la procédure de configuration des référents autorisés, voir [Configuration des référents autorisés](/help/forms/using/admin-help/preventing-csrf-attacks.md#configure-allowed-referers).
+Pour connaître les étapes de configuration des référents autorisés, voir [Configuration des référents autorisés](/help/forms/using/admin-help/preventing-csrf-attacks.md#configure-allowed-referers).
 
-## Activation de la fonction SSO à l’aide de SPNEGO {#enable-sso-using-spnego}
+## Activation de l’authentification unique à l’aide de SPNEGO {#enable-sso-using-spnego}
 
-Vous pouvez recourir au mécanisme SPNEGO (Simple and Protected GSSAPI Negotiation Mechanism) pour activer l’authentification unique (SSO) lors de l’utilisation d’Active Directory sur votre serveur LDAP dans un environnement Windows. Lorsque la fonction SSO est activée, les pages de connexion d’utilisateur AEM forms ne sont pas requises et n’apparaissent pas.
+Vous pouvez utiliser le mécanisme de négociation GSSAPI simple et protégé (SPNEGO) pour activer l’authentification unique (SSO) lors de l’utilisation d’Active Directory comme serveur LDAP dans un environnement Windows. Lorsque l’authentification unique est activée, les pages de connexion utilisateur d’AEM forms ne sont pas requises et n’apparaissent pas.
 
-Vous pouvez également activer la fonction SSO à l’aide d’en-têtes HTTP (voir [Activation de la fonction SSO à l’aide d’en-têtes HTTP](enabling-single-sign-on-aem.md#enable-sso-using-http-headers)).
+Vous pouvez également activer la fonction SSO à l’aide d’en-têtes HTTP. (Voir [Activation de la fonction SSO à l’aide d’en-têtes HTTP](enabling-single-sign-on-aem.md#enable-sso-using-http-headers).)
 
 >[!NOTE]
 >
 >AEM Forms on JEE ne prend pas en charge la configuration de l’authentification unique à l’aide de Kerberos/SPNEGO dans plusieurs environnements d’un domaine enfant .
 
-1. Déterminez le domaine à utiliser pour activer la fonction SSO. Les utilisateurs et le serveur AEM forms doivent appartenir au même domaine Windows ou à un domaine de confiance.
-1. Dans Active Directory, créez un utilisateur représentant le serveur AEM forms (voir [Création d’un compte utilisateur](enabling-single-sign-on-aem.md#create-a-user-account)). Si vous configurez plusieurs domaines pour qu’ils utilisent SPNEGO, vérifiez que les mots de passe de tous les utilisateurs sont différents. Si des mots de passe sont identiques, l’authentification unique de SPNEGO ne fonctionne pas.
-1. Mappez le nom principal de service (voir [Mappage d’un nom principal de service (SPN)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn)).
-1. Configurez le contrôleur de domaine (voir [Prévention des échecs de contrôle d’intégrité de Kerberos](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures)).
-1. Ajoutez ou modifiez un domaine d’entreprise, comme indiqué dans les sections [Ajout de domaines](/help/forms/using/admin-help/adding-domains.md#adding-domains) ou [Modification et conversion de domaines](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains). Lors de la création ou de la modification du domaine d’entreprise, procédez comme suit :
+1. Déterminez le domaine à utiliser pour activer l’authentification unique. Le serveur AEM Forms et les utilisateurs doivent appartenir au même domaine Windows ou au même domaine de confiance.
+1. Dans Active Directory, créez un utilisateur qui représente le serveur AEM Forms. (Voir [Création d’un compte utilisateur](enabling-single-sign-on-aem.md#create-a-user-account).) Si vous configurez plusieurs domaines pour utiliser SPNEGO, assurez-vous que les mots de passe de chacun de ces utilisateurs sont différents. Si les mots de passe ne sont pas différents, l’authentification unique SPNEGO ne fonctionne pas.
+1. Mappez le nom principal du service. (Voir [Mappage d’un nom principal de service (SPN)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
+1. Configurez le contrôleur de domaine. (Voir [Prévention des échecs de contrôle d’intégrité de Kerberos](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
+1. Ajoutez ou modifiez un domaine d’entreprise comme décrit dans la section [Ajout de domaines](/help/forms/using/admin-help/adding-domains.md#adding-domains) ou [Modification et conversion de domaines](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains). Lorsque vous créez ou modifiez le domaine d’entreprise, effectuez les tâches suivantes :
 
-   * Ajoutez ou modifiez un annuaire qui contient vos informations Active Directory.
-   * Ajoutez LDAP en tant que fournisseur d’authentification.
-   * Ajoutez Kerberos en tant que fournisseur d’authentification. Fournissez les informations suivantes dans la page Nouvelle authentification ou Modifier l’authentification pour Kerberos :
+   * Ajoutez ou modifiez un répertoire contenant vos informations Active Directory.
+   * Ajoutez LDAP comme fournisseur d’authentification.
+   * Ajoutez Kerberos comme fournisseur d’authentification. Fournissez les informations suivantes sur la page Nouvelle authentification ou Modifier l’authentification pour Kerberos :
 
-      * **Fournisseur d’authentification :** Kerberos
+      * **Fournisseur d’authentification :** Kerberos
       * **IP DNS :** l’adresse IP du serveur DNS qui exécute AEM forms. Vous pouvez déterminer cette adresse IP en exécutant `ipconfig/all` sur la ligne de commande.
       * **Hôte KDC :** nom d’hôte complet ou adresse IP du serveur Active Directory utilisé pour l’authentification
       * **Utilisateur du service :** nom principal de service (SPN) transmis à l’outil KtPass. Dans l’exemple précédent, l’utilisateur du service est `HTTP/lcserver.um.lc.com`.
@@ -81,24 +81,24 @@ Vous pouvez également activer la fonction SSO à l’aide d’en-têtes HTTP (v
       * **Mot de passe du service :** mot de passe de l’utilisateur du service. Dans l’exemple précédent, le mot de passe du service est `password`.
       * **Activer SPNEGO :** active l’utilisation de SPNEGO pour l’authentification unique (SSO). Sélectionnez cette option.
 
-1. Configurez les paramètres du navigateur client SPNEGO (voir [Configuration des paramètres du navigateur client SPNEGO](enabling-single-sign-on-aem.md#configuring-spnego-client-browser-settings)).
+1. Configurez les paramètres du navigateur client SPNEGO. (Voir [Configuration des paramètres du navigateur client SPNEGO](enabling-single-sign-on-aem.md#configuring-spnego-client-browser-settings).)
 
 ### Création d’un compte utilisateur {#create-a-user-account}
 
-1. Dans SPNEGO, enregistrez un service en tant qu’utilisateur dans Active Directory sur le contrôleur de domaine pour représenter AEM forms. Dans le contrôleur de domaine, sélectionnez Démarrer > Outils d’administration > Utilisateurs et ordinateurs Active Directory. Si les Outils d’administration ne figurent pas dans le menu Démarrer, utilisez le Panneau de configuration.
-1. Cliquez sur le dossier Utilisateurs pour afficher une liste des utilisateurs.
-1. Cliquez avec le bouton droit de la souris sur le dossier Utilisateurs, puis sélectionnez Nouveau > Utilisateur.
-1. Saisissez le prénom/nom et le nom d’ouverture de session de l’utilisateur, puis cliquez sur Suivant. Par exemple, définissez les valeurs suivantes :
+1. Dans SPNEGO, enregistrez un service en tant qu’utilisateur dans Active Directory sur le contrôleur de domaine pour représenter AEM forms. Sur le contrôleur de domaine, accédez au menu Démarrer > Outils d’administration > Utilisateurs et ordinateurs Active Directory. Si Outils d’administration ne figure pas dans le menu Démarrer , utilisez le Panneau de Contrôle .
+1. Cliquez sur le dossier Utilisateurs pour afficher la liste des utilisateurs.
+1. Cliquez avec le bouton droit sur le dossier utilisateur et sélectionnez Nouveau > Utilisateur.
+1. Saisissez le prénom/nom et le nom de connexion de l’utilisateur, puis cliquez sur Suivant. Par exemple, définissez les valeurs suivantes :
 
-   * **Prénom** : umspnego
-   * **Nom d’ouverture de session de l’utilisateur** : spnegodemo
+   * **Prénom**: umspnego
+   * **Nom de connexion de l’utilisateur**: spnegodemo
 
-1. Saisissez un mot de passe. Saisissez par exemple *password*. Veillez à ce que la seule option activée soit Le mot de passe n’expire jamais.
+1. Saisissez un mot de passe. Par exemple, définissez-le sur *password*. Assurez-vous que l’option Mot de passe n’expire jamais est sélectionnée et qu’aucune autre option n’est sélectionnée.
 1. Cliquez sur Suivant, puis sur Terminer.
 
 ### Mappage d’un nom principal de service (SPN) {#map-a-service-principal-name-spn}
 
-1. Procurez-vous l’utilitaire KtPass. Cet utilitaire sert au mappage d’un SPN sur un DOMAINE. Vous pouvez obtenir l’utilitaire KtPass dans le pack d’outils ou dans le Kit de ressources techniques de Windows Server (Voir [Outils de support de Windows Server 2003 Service Pack 1](https://support.microsoft.com/kb/892777).)
+1. Procurez-vous l’utilitaire KtPass. Cet utilitaire est utilisé pour mapper un SPN à un REALM. Vous pouvez obtenir l’utilitaire KtPass dans le pack d’outils ou le kit de ressources Windows Server. (Voir [Outils d’assistance pour Windows Server 2003 Service Pack 1](https://support.microsoft.com/kb/892777).)
 1. Dans une invite de commande, exécutez `ktpass` à l’aide des arguments suivants :
 
    `ktpass -princ HTTP/`*hôte* `-mapuser`*utilisateur* `@`*REALM*
@@ -107,25 +107,25 @@ Vous pouvez également activer la fonction SSO à l’aide d’en-têtes HTTP (v
 
    `ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo`
 
-   Les valeurs à fournir sont décrites ci-dessous :
+   Les valeurs que vous devez fournir sont décrites comme suit :
 
-   **hôte :** nom complet du serveur Forms ou URL univoque. Dans notre exemple, il s’agit de lcserver.um.lc.com.
+   **hôte :** Nom qualifié complet du serveur Forms ou URL unique. Dans cet exemple, il est défini sur lcserver.um.lc.com.
 
-   **DOMAINE :** domaine Active Directory du contrôleur de domaine. Dans notre exemple, il s’agit de UM.LC.COM. Assurez-vous de saisir le domaine en lettres majuscules. Pour déterminer le domaine pour Windows 2003, procédez comme suit :
+   **REALM :** Domaine Active Directory du contrôleur de domaine. Dans cet exemple, il est défini sur UM.LC.COM. Assurez-vous de saisir le domaine en majuscules. Pour déterminer le domaine pour Windows 2003, procédez comme suit :
 
-   * Cliquez sur Poste de travail avec le bouton droit de la souris et sélectionnez Propriétés.
-   * Cliquez sur l’onglet Nom de l’ordinateur. La valeur Nom du domaine est celle que vous recherchez.
+   * Cliquez avec le bouton droit de la souris sur Mon ordinateur et sélectionnez Propriétés.
+   * Cliquez sur l’onglet Nom de l’ordinateur . La valeur Nom du domaine est celle que vous recherchez.
 
-   **utilisateur :** nom d’ouverture de session du compte utilisateur créé dans la tâche précédente. Dans notre exemple, il s’agit de spnegodemo.
+   **user :** Nom de connexion du compte utilisateur que vous avez créé dans la tâche précédente. Dans cet exemple, il est défini sur spnegodemo.
 
-Si vous rencontrez cette erreur :
+Si vous rencontrez cette erreur :
 
 ```shell
 DsCrackNames returned 0x2 in the name entry for spnegodemo.
 ktpass:failed getting target domain for specified user.
 ```
 
-Essayez de spécifier l’utilisateur comme étant spnegodemo@um.lc.com :
+essayez de spécifier l’utilisateur comme spnegodemo@um.lc.com :
 
 ```shell
 ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
@@ -133,26 +133,26 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 ### Prévention des échecs de contrôle d’intégrité de Kerberos {#prevent-kerberos-integrity-check-failures}
 
-1. Dans le contrôleur de domaine, sélectionnez Démarrer > Outils d’administration > Utilisateurs et ordinateurs Active Directory. Si les Outils d’administration ne figurent pas dans le menu Démarrer, utilisez le Panneau de configuration.
-1. Cliquez sur le dossier Utilisateurs pour afficher une liste des utilisateurs.
-1. Cliquez avec le bouton droit de la souris sur le compte utilisateur créé à l’étape précédente. Dans notre exemple, le compte utilisateur est `spnegodemo`.
+1. Sur le contrôleur de domaine, accédez au menu Démarrer > Outils d’administration > Utilisateurs et ordinateurs Active Directory. Si Outils d’administration ne figure pas dans le menu Démarrer , utilisez le Panneau de Contrôle .
+1. Cliquez sur le dossier Utilisateurs pour afficher la liste des utilisateurs.
+1. Cliquez avec le bouton droit sur le compte utilisateur que vous avez créé lors d’une tâche précédente. Dans notre exemple, le compte d’utilisateur est `spnegodemo`.
 1. Cliquez sur Réinitialiser le mot de passe.
-1. Saisissez puis confirmez le mot de passe saisi précédemment. Dans notre exemple, il s’agit de `password`.
-1. Désélectionnez la case à cocher Modifier le mot de passe à la prochaine ouverture de session, puis cliquez sur OK.
+1. Saisissez et confirmez le mot de passe saisi précédemment. Dans notre exemple, il s’agit de `password`.
+1. Désélectionnez Modifier le mot de passe lors de la prochaine connexion, puis cliquez sur OK.
 
 ### Configuration des paramètres du navigateur client SPNEGO {#configuring-spnego-client-browser-settings}
 
-Pour que l’authentification SPNEGO fonctionne, l’ordinateur client doit faire partie du domaine dans lequel le compte utilisateur a été créé. Vous devez également configurer le navigateur client pour autoriser l’authentification SPNEGO. De même, le site exigeant une authentification SPNEGO doit être un site de confiance.
+Pour que l’authentification SPNEGO fonctionne, l’ordinateur client doit faire partie du domaine dans lequel le compte utilisateur est créé. Vous devez également configurer le navigateur client pour autoriser l’authentification SPNEGO. De plus, le site qui nécessite une authentification SPNEGO doit être un site de confiance.
 
-Si vous accédez au serveur au moyen du nom de l’ordinateur, par exemple https://lcserver:8080, aucun paramètre n’est nécessaire pour Internet Explorer. Si vous saisissez une URL ne contenant aucun point (« . »), Internet Explorer traite le site comme un site intranet local. Si vous utilisez un nom qualifié complet pour le site, ce site doit être de confiance.
+Si vous accédez au serveur au moyen du nom de l’ordinateur, par exemple https://lcserver:8080, aucun paramètre n’est nécessaire pour Internet Explorer. Si vous saisissez une URL qui ne contient aucun point (&quot;.&quot;), Internet Explorer traite le site comme un site intranet local. Si vous utilisez un nom qualifié complet pour le site, le site doit être ajouté en tant que site de confiance.
 
-**Configuration d’Internet Explorer 6.x**
+**Configuration d’Internet Explorer 6.x**
 
-1. Sélectionnez Outils > Options Internet, puis cliquez sur l’onglet Sécurité.
+1. Accédez à Outils > Options Internet et cliquez sur l’onglet Sécurité .
 1. Cliquez sur l’icône Intranet local, puis sur Sites.
-1. Cliquez sur Avancé et dans le champ Ajouter ce site Web à la zone, saisissez l’URL du serveur Forms. Par exemple, saisissez `https://lcserver.um.lc.com`
-1. Cliquez plusieurs fois sur OK pour fermer toutes les boîtes de dialogue.
-1. Testez la configuration en accédant à l’URL du serveur AEM forms. Par exemple, dans la zone URL du navigateur, saisissez `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`.
+1. Cliquez sur Avancé et, dans la zone Ajouter ce site Web à la zone, saisissez l’URL de votre serveur Forms. Par exemple, saisissez `https://lcserver.um.lc.com`
+1. Cliquez sur OK jusqu’à la fermeture de toutes les boîtes de dialogue.
+1. Testez la configuration en accédant à l’URL de votre serveur AEM Forms. Par exemple, dans la zone URL du navigateur, saisissez `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`.
 
 **Configuration de Mozilla Firefox**
 
@@ -165,6 +165,6 @@ Si vous accédez au serveur au moyen du nom de l’ordinateur, par exemple https
 
    `.um.lc.com` : configure Firefox pour autoriser SPNEGO pour toute URL qui se termine par um.lc.com. Veillez à inclure le point (« . ») au début.
 
-   `lcserver.um.lc.com` : configure Firefox en vue d’autoriser SPNEGO pour un serveur spécifique uniquement. Ne faites pas précéder cette valeur d’un point (« . »).
+   `lcserver.um.lc.com` : configure Firefox en vue d’autoriser SPNEGO pour un serveur spécifique uniquement. Ne commencez pas cette valeur par un point (&quot;.&quot;).
 
-1. Testez la configuration en accédant à l’application. La page d’accueil de l’application cible s’affiche.
+1. Testez la configuration en accédant à l’application. La page d’accueil de l’application cible doit s’afficher.
