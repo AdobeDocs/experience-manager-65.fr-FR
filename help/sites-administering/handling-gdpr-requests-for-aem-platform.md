@@ -1,24 +1,24 @@
 ---
-title: Traitement des demandes en vertu du RGPD pour Adobe Experience Manager Foundation
-description: Traitement des demandes en vertu du RGPD pour Adobe Experience Manager Foundation
+title: Traiter des demandes en vertu du RGPD pour Adobe Experience Manager Foundation
+description: Traiter des demandes en vertu du RGPD pour Adobe Experience Manager Foundation
 contentOwner: sarchiz
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
-# Traitement des demandes en vertu du RGPD pour Adobe Experience Manager (AEM) Foundation{#handling-gdpr-requests-for-the-aem-foundation}
+# Traiter des demandes en vertu du RGPD pour Adobe Experience Manager (AEM) Foundation{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
->Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité, telles que le RGPD, le CCPA, etc.
+>Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité, comme le RGPD, le CCPA, etc.
 
 ## Prise en charge du RGPD par AEM Foundation {#aem-foundation-gdpr-support}
 
-En ce qui concerne AEM Foundation, les données personnelles stockées sont conservées dans le profil utilisateur. Par conséquent, les informations contenues dans cet article portent principalement sur la manière d’accéder aux profils utilisateur et de les supprimer, de traiter respectivement les demandes d’accès au RGPD et de suppression.
+En ce qui concerne AEM Foundation, les données personnelles stockées sont conservées dans le profil utilisateur. Par conséquent, les informations fournies dans cet article expliquent principalement comment accéder à ces profils utilisateurs et les supprimer pour répondre respectivement aux demandes d’accès et de suppression en vertu du RGPD.
 
 ## Accès à un profil utilisateur {#accessing-a-user-profile}
 
@@ -55,7 +55,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
      {"authorizables":[{"type":"user","authorizableId_xss":"cavery","authorizableId":"cavery","name_xss":"Carlene Avery","name":"Carlene Avery","home":"/home/users/we-retail/DSCP-athB1NYLBXvdTuN"}],"total":1}
 ```
 
-*Récupération des données utilisateur*
+*Récupérer des données de personnes*
 
 Utilisation du chemin de nœud de la propriété home de la charge utile JSON renvoyée par la commande ci-dessus :
 
@@ -78,11 +78,11 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![userdisable](assets/userdisable.png)
 
-1. Enfin, confirmez l’action:
+1. Enfin, confirmez l’action :
 
    ![image2018-2-6_1-40-58](assets/image2018-2-6_1-40-58.png)
 
-   L’interface utilisateur indique que l’utilisateur est désactivé en grisant et en ajoutant un verrou à la carte de profil :
+   L’interface utilisateur indique alors que le compte de la personne a été désactivé en grisant la vignette de profil et en y ajoutant un cadenas :
 
    ![disableduser](assets/disableduser.png)
 
@@ -96,7 +96,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
-1. Supprimez les noeuds de profil et tous leurs enfants. Les noeuds de profil sont associés à deux formats, selon la version AEM :
+1. Supprimez les nœuds de profil et tous leurs enfants. Les nœuds de profil sont associés à deux formats, selon la version d’AEM :
 
    1. Le profil privé par défaut sous `[!UICONTROL /profile]`
    1. `[!UICONTROL /profiles]`, pour les nouveaux profils créés à l’aide d’AEM 6.5
@@ -105,18 +105,18 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### API HTTP {#http-api-1}
 
-Les procédures suivantes utilisent la méthode `curl` l’outil de ligne de commande pour illustrer comment désactiver l’utilisateur avec la fonction **[!UICONTROL cavery]** `userId` et supprimer les profils de `cavery` disponibles à l’emplacement par défaut.
+Les procédures suivantes utilisent l’outil de ligne de commande `curl` pour illustrer comment désactiver la personne avec le **[!UICONTROL cavery]** `userId` et supprimer les profils de `cavery` disponibles à l’emplacement par défaut.
 
-* *Découverte de l’accueil de l’utilisateur*
+* *Découvrir l’accueil (home) des utilisateurs et utilisatrices*
 
 ```shell
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'
      {"authorizables":[{"type":"user","authorizableId_xss":"cavery","authorizableId":"cavery","name_xss":"Carlene Avery","name":"Carlene Avery","home":"/home/users/we-retail/DSCP-athB1NYLBXvdTuN"}],"total":1}
 ```
 
-* *Désactivation de l’utilisateur*
+* *Désactiver la personne*
 
-Utilisation du chemin de nœud de la propriété home de la charge utile JSON renvoyée par la commande ci-dessus :
+Utilisation du chemin de nœud de la propriété home de la payload JSON renvoyée par la commande ci-dessus :
 
 ```shell
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (GDPR in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
