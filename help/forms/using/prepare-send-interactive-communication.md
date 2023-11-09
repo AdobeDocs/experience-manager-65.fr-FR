@@ -1,24 +1,20 @@
 ---
 title: Préparer et envoyer une communication interactive à l’aide de l’interface utilisateur de l’agent
-seo-title: Prepare and send Interactive Communication using the Agent UI
-description: L’interface utilisateur de l’agent permet aux agents de préparer et d’envoyer une communication interactive au post-traitement. L’agent apporte les modifications requises autorisées et envoie la communication interactive à un post-traitement, comme un courrier électronique ou une impression.
-seo-description: Prepare and send Interactive Communication using the Agent UI
-uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
+description: L’interface utilisateur de l’agent permet aux agents de préparer et d’envoyer une communication interactive au post-traitement. L’agent effectue les modifications requises comme autorisé et envoie la communication interactive à un post-traitement, comme un courrier électronique ou une impression.
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '2020'
-ht-degree: 81%
+source-wordcount: '2021'
+ht-degree: 80%
 
 ---
 
 # Préparer et envoyer une communication interactive à l’aide de l’interface utilisateur de l’agent {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
-L’interface utilisateur de l’agent permet aux agents de préparer et d’envoyer une communication interactive au post-traitement. L’agent apporte les modifications requises autorisées et envoie la communication interactive à un post-traitement, comme un courrier électronique ou une impression.
+L’interface utilisateur de l’agent permet aux agents de préparer et d’envoyer une communication interactive au post-traitement. L’agent effectue les modifications requises comme autorisé et envoie la communication interactive à un post-traitement, comme un courrier électronique ou une impression.
 
 ## Présentation {#overview}
 
@@ -26,7 +22,7 @@ Après la création d’une communication interactive, l’agent peut ouvrir la 
 
 Tout en préparant la communication interactive à l’aide de l’interface utilisateur de l’agent, l’agent gère les aspects suivants de la communication interactive dans l’interface utilisateur de l’agent avant de l’envoyer en post-traitement :
 
-* **Données**: L’onglet Données de l’interface utilisateur de l’agent affiche toutes les variables modifiables par l’agent et les propriétés de modèle de données de formulaire déverrouillées dans la communication interactive. Ces variables/propriétés sont créées lors de la modification ou de la création de fragments de document inclus dans la communication interactive. L’onglet Données comprend également tous les champs créés dans le modèle de canal XDP/impression. L’onglet Données n’apparaît que lorsque des variables, des propriétés de modèle de données de formulaire ou des champs de la communication interactive peuvent être modifiés par l’agent.
+* **Données**: l’onglet Données de l’interface utilisateur de l’agent affiche toutes les variables modifiables par l’agent et les propriétés de modèle de données de formulaire déverrouillées dans la communication interactive. Ces variables/propriétés sont créées lors de la modification ou de la création de fragments de document inclus dans la communication interactive. L’onglet Données comprend également tous les champs qui sont créés dans le modèle de canal XDP/impression. L’onglet Données n’apparaît que lorsque des variables, des propriétés de modèle de données de formulaire ou des champs de la communication interactive peuvent être modifiés par l’agent.
 * **Contenu** : dans l’onglet Contenu, l’agent gère le contenu, tel que des fragments de documents et des variables de contenu dans la communication interactive. L’agent peut effectuer les modifications dans le fragment de document, comme autorisé, tout en créant la communication interactive dans les propriétés de ces fragments de document. L’agent peut également réorganiser, ajouter/supprimer un fragment de document et ajouter des sauts de page, si cela est autorisé.
 * **Pièces jointes** : l’onglet Pièces jointes apparaît dans l’interface utilisateur de l’agent uniquement si la communication interactive comporte des pièces jointes ou si l’agent a accès à la bibliothèque. L’agent peut être autorisé ou non à modifier les pièces jointes.
 
@@ -69,7 +65,7 @@ Dans l’onglet Contenu , gérez le contenu tel que les fragments de document et
 
    Dans l’onglet Contenu ou Données, en appuyant sur Mettre en surbrillance les modules sélectionnés dans les Contenus (![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) dans le coin supérieur gauche de l’aperçu, vous pouvez activer ou désactiver la fonctionnalité d’accès au fragment de document lorsque le texte, le paragraphe ou le champ de données approprié est sélectionné dans l’aperçu.
 
-   Les fragments qui peuvent être modifiés par l’agent lors de la création de la communication interactive comportent l’icône Modifier le contenu sélectionné (![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Appuyez sur l’icône Modifier le contenu sélectionné pour lancer le fragment en mode d’édition et y apporter des modifications. Utilisez les options suivantes pour mettre en forme et gérer le texte :
+   Les fragments qui peuvent être modifiés par l’agent lors de la création de la communication interactive ont l’option Modifier le contenu sélectionné ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Appuyez sur l’icône Modifier le contenu sélectionné pour lancer le fragment en mode d’édition et y apporter des modifications. Utilisez les options suivantes pour mettre en forme et gérer le texte :
 
    * [Options de mise en forme](#formattingtext)
 
@@ -110,7 +106,7 @@ Dans l’onglet Contenu , gérez le contenu tel que les fragments de document et
 
 ## Formatage de texte {#formattingtext}
 
-Lors de la modification d’un fragment de texte dans l’interface utilisateur de l’agent, la barre d’outils change en fonction du type de modifications à effectuer : Police, paragraphe ou liste :
+Lors de la modification d’un fragment de texte dans l’interface utilisateur de l’agent, la barre d’outils change en fonction du type de modifications que vous choisissez d’effectuer : Police, Paragraphe ou Liste :
 
 ![typeofformattingtoolbar](assets/typeofformattingtoolbar.png) ![Barre d’outils des polices](do-not-localize/fonttoolbar.png)
 
@@ -150,7 +146,7 @@ L’interface utilisateur de l’agent prend en charge 210 caractères spéciaux
 
 ![ ](do-not-localize/contentoptionsdocfragments.png)
 
-* **Flèches haut/bas**: Flèches permettant de déplacer des fragments de document vers le haut ou vers le bas dans la communication interactive.
+* **Flèches haut/bas**: flèches permettant de déplacer des fragments de document vers le haut ou vers le bas dans la communication interactive.
 * **Supprimer** : si cela est autorisé, supprimez le fragment de document de la communication interactive.
 * **Saut de page avant** (applicable aux modules enfant de la zone cible) : insère un saut de page avant le fragment de document.
 * **Retrait** : augmente ou réduit le retrait d’un fragment de document.
@@ -169,7 +165,7 @@ L’interface utilisateur de l’agent prend en charge 210 caractères spéciaux
 
 * Insertion d’une ligne vide : permet d’insérer une nouvelle ligne vide.
 * Sélection (icône représentant un œil) : inclut\exclut le fragment de document de la communication interactive.
-* Ignorer les puces/numérotations : permet d’ignorer les puces/numéros dans le fragment de document de la liste.
+* Ignorer les puces/numéros : activez cette option si vous souhaitez ignorer les puces/numéros dans le fragment de document de liste.
 * Valeurs vides (information) : indique le nombre de variables vides dans le fragment de document.
 
 ## Enregistrer des communications interactives en tant que brouillons {#save-as-draft}

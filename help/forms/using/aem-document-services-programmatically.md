@@ -5,7 +5,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 exl-id: 9bf090db-2c14-439e-ad78-6832678a309d
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
 source-wordcount: '6419'
 ht-degree: 45%
@@ -4460,7 +4460,7 @@ Le service PDF Generator fournit des API pour convertir des formats de fichier n
 
 ### GeneratePDFService {#generatepdfservice}
 
-Le service GeneratePDFService fournit des API pour convertir divers formats de fichier tels que .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, (obsolète).swf, .jpg, .bmp, .tif, .png, .html et de nombreux autres formats de fichier en PDF. Il fournit également des API pour exporter des PDF vers divers formats de fichiers et optimiser les PDF. Le service prend en charge les API suivantes :
+Le service GeneratePDFService fournit des API pour convertir divers formats de fichier tels que .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, .swf (obsolète), .jpg, .bmp, .tif, .png, .html et de nombreux autres formats de fichier en PDF. Il fournit également des API pour exporter des PDF vers divers formats de fichiers et optimiser les PDF. Le service prend en charge les API suivantes :
 
 * **createPDF**: convertit un type de fichier pris en charge en document de PDF. Il prend en charge les formats de fichier tels que Microsoft Word, Microsoft PowerPoint, Microsoft Excel et Microsoft Project. Outre les applications ci-dessus, tout type d’application générique tierce qui génère des PDF peut également être connecté à l’API.
 * **exportPDF**: convertit un document de PDF en type de fichier pris en charge. La méthode accepte un PDF comme entrée et exporte le contenu du PDF dans un format de type de fichier spécifié. Vous pouvez exporter un document PDF aux formats PostScript encapsulé (eps), HTML 3.2 (htm, html), HTML 4.01 avec CSS 1.0 (htm, html), JPEG (jpg, jpeg, jpe), JPEG2000 (jpf, jpx, jp2, j2k, j2c, jpc), document Microsoft Word (doc, docx), classeur Microsoft Excel (xlsx), présentation Microsoft PowerPoint (pptx), PNG (png), PostScript (ps), format RTF (RTF), texte (accessible) (txt), texte (ordinaire) (txt), TIFF (tif, tiff), XML 1.0 (xml), PDF/A-1a (sRVB), PDF/A-1b, PDF/A-2a (sRVB), PDF/A-2b (sRGB), PDF/A-3a (sRGB) et PDF/A-3b (sRGB). Vous pouvez également spécifier les [profils de contrôle en amont personnalisés](https://helpx.adobe.com/fr/acrobat/using/preflight-profiles-acrobat-pro.html) pour les sorties PDF.

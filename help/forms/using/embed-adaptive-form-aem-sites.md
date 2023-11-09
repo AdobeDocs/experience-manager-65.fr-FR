@@ -1,19 +1,15 @@
 ---
 title: Incorporer un formulaire adaptatif ou une communication interactive dans une page d’AEM Sites
-seo-title: Embed an adaptive form or interactive communication in AEM sites page
 description: Vous pouvez incorporer des formulaires adaptatifs dans AEM pages de sites. Les utilisateurs peuvent remplir et envoyer des formulaires sans quitter les pages du site.
-seo-description: You can embed adaptive forms in AEM sites pages. Users can fill and submit forms without leaving the site pages.
-uuid: 59b49e2f-6d95-42e5-b31e-fc40936c42d2
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author, interactive-communications
-discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 feature: Adaptive Forms
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 62%
+source-wordcount: '1164'
+ht-degree: 60%
 
 ---
 
@@ -68,7 +64,7 @@ Pour incorporer un formulaire adaptatif ou une communication interactive à l’
 
       * **Message de remerciement** : rédigez un message à l’aide de l’éditeur de texte enrichi à afficher après l’envoi du formulaire. Cette option n’est disponible que lorsque vous choisissez d’afficher un message de remerciement.
       * **Page de remerciement** : recherchez et sélectionnez la page à afficher après l’envoi du formulaire. Cette option n’est disponible que lorsque vous choisissez d’afficher une page de remerciement.
-      * **Actualiser la page lors de l’envoi** : activez cette option pour actualiser la page contenant le formulaire adaptatif incorporé afin d’afficher la page de remerciement. Dans le cas contraire, la page de remerciement remplace le formulaire adaptatif dans le conteneur d’AEM Forms sans actualiser la page. Cette option n’est disponible que lorsque vous choisissez d’afficher une page de remerciement.
+      * **Actualiser la page lors de l’envoi**: activez cette option pour pouvoir actualiser la page contenant le formulaire adaptatif incorporé afin d’afficher la page de remerciement. Dans le cas contraire, la page de remerciement remplace le formulaire adaptatif dans le conteneur d’AEM Forms sans actualiser la page. Cette option n’est disponible que lorsque vous choisissez d’afficher une page de remerciement.
 
    * **Thème** : sélectionnez un thème qui définit le style des composants de votre formulaire adaptatif ou de votre communication interactive. Style comprend des propriétés d’aspect, comme le style de police, la couleur d’arrière-plan, les dimensions et l’alignement.
    * **Hauteur** : indiquez la hauteur du conteneur. Laissez ce champ vide pour redimensionner automatiquement le conteneur.

@@ -1,19 +1,15 @@
 ---
 title: Prise en charge des scripts pour les formulaires HTML5
-seo-title: Scripting support for HTML5 forms
 description: JavaScript, propriétés FormCalc et autres méthodes prises en charge dans HTML5 Forms.
-seo-description: JavaScript, FormCalc properties, and other methods that are supported in HTML5 Forms.
-uuid: 697d5ec4-c818-41e4-b813-883c01b7ff3a
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '3887'
+source-wordcount: '3896'
 ht-degree: 21%
 
 ---
@@ -36,7 +32,7 @@ Les propriétés JavaScript, FormCalc et les méthodes prises en charge dans les
    <td>Indique le contenu du champ avant qu’il ne change en réponse aux actions d’un utilisateur. Cette valeur peut être rappelée, comme pour une fonction d’annulation.</td>
    <td><p>Ne fonctionne pas pour les listes déroulantes et les zones de liste. <code>PrevText </code> ne fonctionne pas correctement dans les cas suivants :</p>
     <ul>
-     <li>Lorsque vous appuyez sur certaines touches de caractères spéciaux (par exemple $, (,), &amp;, @, etc.) dans les champs numériques d’iPad, et </li>
+     <li>Lorsque vous appuyez sur certaines touches de caractères spéciaux (par exemple, $ ou , &amp; ou @ et plus) dans les champs numériques d’iPad, et </li>
      <li>Pour le champ Date (lorsque la date est saisie via le calendrier).<br /> </li>
     </ul> <p>La configuration de la valeur à l’aide du script n’est pas prise en charge.</p> </td>
   </tr>
@@ -52,7 +48,7 @@ Les propriétés JavaScript, FormCalc et les méthodes prises en charge dans les
     <ul>
      <li>Lorsque vous sélectionnez des textes de remplacement</li>
      <li>Lorsque vous supprimez, copiez et collez des textes.</li>
-     <li>Lorsque vous appuyez sur certaines touches de caractères spéciaux (par exemple $, (, ), &amp;, @, etc.) dans les champs numériques<br /> </li>
+     <li>Lorsque vous appuyez sur certaines touches de caractères spéciaux (par exemple, $ ou , &amp; ou @ et plus) dans les champs numériques<br /> </li>
      <li>Lorsque vous utilisez la combinaison maj+alphanumérique. </li>
      <li>Lorsque vous utilisez des champs de date et heure</li>
     </ul>
@@ -67,7 +63,7 @@ Les propriétés JavaScript, FormCalc et les méthodes prises en charge dans les
     <ul>
      <li>Lorsque vous sélectionnez des textes de remplacement</li>
      <li>Lorsque vous supprimez, copiez et collez des textes.</li>
-     <li>Lorsque vous appuyez sur certaines touches de caractères spéciaux (par exemple $, (,), &amp;, @, etc.) dans les champs numériques<br /> </li>
+     <li>Lorsque vous appuyez sur certaines touches de caractères spéciaux (par exemple, $ ou , &amp; ou @ et plus) dans les champs numériques<br /> </li>
      <li>Lorsque vous utilisez la combinaison maj+alphanumérique. </li>
      <li>Lorsque vous utilisez des champs de date et heure</li>
     </ul> <p>La configuration de la valeur à l’aide du script n’est pas prise en charge.</p> </td>

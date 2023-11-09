@@ -1,19 +1,15 @@
 ---
 title: Configurer le suivi des liens Adobe Analytics
-seo-title: Configuring Link Tracking for Adobe Analytics
 description: Découvrez comment configurer le suivi des liens pour SiteCatalyst.
-seo-description: Learn about configuring link tracking for SiteCatalyst.
-uuid: b6d5bd1c-f91a-4d38-9e9e-dc2bcb271dae
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
-source-git-commit: 5e94a0cdb363e95ce398ea4ed0bce4a6aba9e7ce
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '1612'
-ht-degree: 69%
+source-wordcount: '1615'
+ht-degree: 68%
 
 ---
 
@@ -29,7 +25,7 @@ Lorsque des utilisateurs cliquent sur des liens figurant sur les pages de votre 
 1. Avec **Afficher les configurations**, ouvrez le framework Adobe Analytics requis.
 1. Développez l’objet **Configuration du suivi des liens** et configurez selon les besoins (cette page fournit des détails supplémentaires) :
 
-   ![Structure d’Analytics](assets/aa-08.png)
+   ![Structure Analytics](assets/aa-08.png)
 
 ## Suivi des téléchargements de fichiers {#tracking-file-downloads}
 
@@ -79,7 +75,7 @@ Propriétés de suivi lorsque l’utilisateur clique sur des liens externes :
 Active le suivi des liens externes.
 
 * **Filtres externes**
-(Facultatif) Définit des filtres pour apparier les URL externes des cibles de lien. Lorsque les liens cibles correspondent au filtre, le lien est suivi. Les filtres externes sont utiles pour effectuer le suivi de certains liens externes uniquement sur vos pages.
+(Facultatif) Définit des filtres pour apparier les URL externes des cibles de lien. Lorsque les liens cibles correspondent au filtre, le lien est suivi. Les filtres externes ne sont utiles que pour effectuer le suivi de certains liens externes sur vos pages.
 
    Pour spécifier les liens externes à suivre, tapez entièrement ou partiellement l’URL du lien cible. S’il y a plusieurs filtres, séparez-les par une virgule. Entourez les chaînes littérales par des guillemets simples. Si aucune valeur (la valeur par défaut est `''`, deux guillemets simples) n’est entrée, tous les liens externes sont suivis.
 
@@ -93,7 +89,7 @@ Définit des filtres pour apparier les URL des liens internes. Lorsque le lien c
 * **Laisser la chaîne de requête**
 Inclut les paramètres URL lors de l’évaluation de correspondances avec des filtres internes et externes.
 
-  Activez cette option pour inclure les paramètres URL lors de l’évaluation d’URL du lien cible par rapport aux filtres externes et internes.
+  Activez cette option si vous souhaitez inclure des paramètres d’URL lors de l’évaluation des URL cibles des liens par rapport aux filtres externes et internes.
 
 Les propriétés de suivi des liens externes sont implémentées en tant que code dans le fichier `analytics.sitecatalyst.js` généré pour une page. L’exemple de code suivant est généré pour une page qui est associée à un framework ayant activé le suivi des liens externes avec la configuration suivante :
 
@@ -168,7 +164,7 @@ Cet exemple illustre le fonctionnement du mappage dans le cas du suivi et du dé
   </tr>
   <tr>
    <td>pagedata.title</td>
-   <td>eVar personnalisé 1 (eVar1)</td>
+   <td>EVar personnalisé 1 (eVar1)</td>
    <td>eVar1</td>
   </tr>
   <tr>
@@ -190,12 +186,12 @@ Cet exemple illustre le fonctionnement du mappage dans le cas du suivi et du dé
   </tr>
   <tr>
    <td>eventdata.keyword</td>
-   <td>eVar personnalisé 2 (eVar2)</td>
+   <td>EVar personnalisé 2 (eVar2)</td>
    <td>eVar2</td>
   </tr>
   <tr>
    <td>eventdata.results</td>
-   <td>eVar personnalisé 3 (eVar3)</td>
+   <td>EVar personnalisé 3 (eVar3)</td>
    <td>eVar3</td>
   </tr>
   <tr>
@@ -215,7 +211,7 @@ Cet exemple illustre le fonctionnement du mappage dans le cas du suivi et du dé
 1. Désélectionner **Laisser la chaîne de requête**.
 1. Utilisez la valeur suivante pour que la liste **Filtres externes** l’identifie en tant qu’URL externe :
 
-   `‘yahoo.com’`
+   `'yahoo.com'`
 
 1. Ajoutez la valeur suivante au champ **Événements de suivi des liens** :
 
@@ -315,8 +311,8 @@ Configurez votre framework Adobe Analytics pour activer le suivi des liens ad h
 
 Pour pouvoir configurer le suivi des liens ad hoc pour les composants **Texte** eux-mêmes, les configurations suivantes doivent avoir déjà été mises en œuvre :
 
-* Le [La structure Adobe Analytics est configurée pour activer le suivi des liens ad hoc.](#enabling-ad-hoc-link-tracking).
-* Le [qui contient la variable **Texte** est associé à la structure](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework).
+* La variable [La structure Adobe Analytics est configurée pour activer le suivi des liens ad hoc.](#enabling-ad-hoc-link-tracking).
+* La variable [qui contient la variable **Texte** est associé à la structure.](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework).
 
 Appliquez la procédure suivante afin de configurer le suivi des liens pour un composant **Texte** :
 
@@ -345,12 +341,12 @@ Appliquez la procédure suivante afin de configurer le suivi des liens pour un c
 1. (Facultatif) Pour suivre les données de variable avec le clic sur les liens, ajoutez les variables Adobe Analytics dans le champ **Inclure les variables Adobe Analytics**. Utilisez l’un des formats suivants :
 
    * *`<Variable-name>`*: *`<Dynamic Value>`*
-   * *`<Variable-name>`*: *`‘CONSTANT'`*
+   * *`<Variable-name>`*: *`'CONSTANT'`*
 
    Les exemples suivants illustrent chaque format :
 
    * `eVar10:pagedata.title`
-   * `prop1: ‘Aubergine'`
+   * `prop1: 'Aubergine'`
 
    S’il y a plusieurs valeurs, séparez-les par une virgule.
 

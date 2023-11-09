@@ -1,15 +1,11 @@
 ---
 title: Lancement des API de Services de document à partir d’un workflow AEM
-seo-title: Initiate Document Services APIs from AEM Workflow
 description: Découvrez comment appeler AEM Document Services sur DDX ou les entrées fournies. Découvrez également comment convertir le PDF en PDF/A
-seo-description: Learn how to invoke AEM Document services on DDX or supplied inputs. Also see hwo to convert PDF to PDF/A
-uuid: aacec2df-1ad6-4ff2-a99d-ef206efcdc09
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: 8b85bdc7-3864-49c9-81b0-cf15b8e986d9
 exl-id: 123087a2-9d09-4579-9185-2ccd7d25bf8d
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
 source-wordcount: '1167'
 ht-degree: 53%
@@ -61,7 +57,7 @@ L’onglet Options d’environnement vous permet de définir différentes option
 Selon le DDX d’entrée, l’API d’appel peut produire plusieurs documents de sortie. L’onglet Output documents vous permet de sélectionner le document de sortie à enregistrer.
 
 1. *Save Output dans Payload* : enregistre les documents de sortie sous le dossier de payload, ou remplace la payload, si celle-ci est un fichier.
-1. *Output Document&#39;s Map*: permet de spécifier explicitement où enregistrer chaque document de sortie en ajoutant une entrée par document de sortie. Chaque entrée spécifie le document et l’emplacement d’enregistrement. Un document de sortie peut remplacer la charge utile ou l’enregistrer dans le dossier de charge utile. Cette option peut être utile lorsque qu’il y a plusieurs documents de sortie.
+1. *Output Document&#39;s Map*: vous permet de spécifier explicitement où enregistrer chaque document de sortie en ajoutant une entrée par document de sortie. Chaque entrée spécifie le document et l’emplacement d’enregistrement. Un document de sortie peut remplacer la charge utile ou l’enregistrer dans le dossier de charge utile. Cette option peut être utile lorsque qu’il y a plusieurs documents de sortie.
 
 1. *Journal des tâches*: indique l’emplacement d’enregistrement du document de log de tâche, ce qui s’avère utile pour le dépannage des échecs.
 

@@ -7,7 +7,7 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
 source-wordcount: '2773'
 ht-degree: 2%
@@ -326,8 +326,8 @@ Si des modifications sont nécessaires, sur chaque instance de publication AEM :
 
      Emplacement dans le référentiel où les données utilisateur sont stockées. Pour un site de communauté, pour garantir aux membres les autorisations d’afficher le profil de l’autre, le chemin doit être le chemin par défaut. `/home/users/community`.
 
-   * **[!UICONTROL Activation des paramètres]** ne pas modifier
-   * **[!UICONTROL Paramètres d’URL]** ne pas modifier
+   * **[!UICONTROL Activation des paramètres]** - ne pas modifier
+   * **[!UICONTROL Paramètres d’URL]** - ne pas modifier
    * **[!UICONTROL Mettre à jour l’utilisateur]**
 
      Si cette case est cochée, actualise les données utilisateur dans le référentiel à chaque connexion afin de refléter les modifications de profil ou les données supplémentaires demandées. La valeur par défaut est désélectionnée.

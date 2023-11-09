@@ -7,9 +7,9 @@ feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '5739'
+source-wordcount: '5736'
 ht-degree: 98%
 
 ---
@@ -428,7 +428,7 @@ Vous pouvez effectuer les opérations suivantes avec les ressources que vous ave
 
 Trier les résultats de la recherche pour découvrir plus rapidement les ressources requises. Vous pouvez trier les résultats de recherche dans la vue Liste et uniquement lorsque vous sélectionnez **[[!UICONTROL Fichiers]](#searchui)** dans le panneau **[!UICONTROL Filtres]**. [!DNL Assets] utilise le tri côté serveur pour trier rapidement toutes les ressources (quel que soit leur nombre) dans un dossier ou les résultats d’une requête. Le tri côté serveur fournit des résultats plus rapides et plus précis que le tri côté client.
 
-Dans la vue Liste, vous pouvez trier les résultats de recherche tout comme vous pouvez trier les ressources de n’importe quel dossier. Le tri fonctionne sur ces colonnes : Nom, Titre, État, Dimensions, Taille, Évaluation, Utilisation, (Date de) création, (Date de) publication, Workflow et Extraits.
+Dans la vue Liste, vous pouvez trier les résultats de recherche tout comme vous pouvez trier les ressources de n’importe quel dossier. Le tri fonctionne sur ces colonnes : nom, titre, état, Dimensions, taille, évaluation, utilisation, création, modification, publication, workflow et extraction.
 
 Pour connaître les restrictions de la fonctionnalité de tri, voir [Restrictions](#limitations).
 
