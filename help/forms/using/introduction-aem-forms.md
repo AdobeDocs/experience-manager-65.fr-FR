@@ -11,10 +11,10 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: e4e2e8b58c0283182b2fbd4262a4ef9b607dac26
+source-git-commit: 6f45b0f8dad44e66570f6436a560060cbed56161
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 29%
+source-wordcount: '952'
+ht-degree: 30%
 
 ---
 
@@ -36,6 +36,10 @@ AEM Forms associe des outils de création, de gestion et de publication à des f
 Dans les grandes entreprises, les formulaires sont souvent créés et réutilisés en les copiant dans un système de gestion de contenu. La mise à jour d’une base de données volumineuse de formulaires et leur découverte peuvent représenter un défi considérable. AEM propose un portail de formulaires personnalisable qui permet aux clients et aux clientes de rechercher les formulaires dont ils ou elles ont besoin et d’y accéder via les canaux Web et mobiles.
 
 AEM Forms offre des outils de gestion de formulaires qui vous permettent non seulement de gérer les formulaires adaptatifs, mais aussi les formulaires XFA, les formulaires PDF et les actifs associés. Pour plus d’informations, voir [Présentation de la gestion des formulaires](../../forms/using/introduction-managing-forms.md).
+
+>[!NOTE]
+>
+>La fonction AEM Forms, telle que Forms adaptatif, est disponible dans [AEM 6.5 QuickStart](/help/sites-deploying/deploy.md), à des fins d’exploration et d’évaluation uniquement. Pour une utilisation en production, il est essentiel d’obtenir une licence valide pour AEM Forms.
 
 ![Fonctionnalités d’AEM forms](do-not-localize/4th-draft.gif)
 
@@ -124,6 +128,3 @@ Les documents personnalisés, tels que les reçus, les kits de bienvenue et les 
 
 Processus de communication personnalisée rationalisée
 
->[!NOTE]
->
->La fonctionnalité Forms adaptatif, disponible dans AEM 6.5 QuickStart, est conçue à des fins d’exploration et d’évaluation uniquement. Pour une utilisation en production, il est essentiel d’obtenir une licence valide pour AEM Forms, car les fonctionnalités d’Adaptive Forms nécessitent des licences appropriées.
