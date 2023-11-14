@@ -12,9 +12,9 @@ discoiquuid: da92d751-6f14-4512-9d77-7ecf098bd58e
 docset: aem65
 exl-id: ab4fc41f-e0e9-4577-aab2-f0b4298f9a59
 source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '250'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -24,12 +24,12 @@ Cette section contient des informations détaillées sur les journaux disponible
 
 >[!NOTE]
 >
->Pour plus d’informations sur les journaux, voir :
+>Pour plus d’informations sur les journaux, voir :
 >
->* [Maintenance du journal d’audit dans AEM ](/help/sites-administering/operations-audit-log.md)
+>* [Maintenance du journal d’audit dans AEM](/help/sites-administering/operations-audit-log.md)
 >* [Utilisation des enregistrements d’audit et des fichiers journaux](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
 
-CRX enregistre des journaux détaillés. Après avoir décompressé et démarré Quickstart, vous pouvez trouver les journaux aux emplacements suivants :
+CRX enregistre des journaux détaillés. Une fois que vous avez décompressé et démarré Quickstart, vous pouvez trouver les journaux aux emplacements suivants :
 
 * crx-quickstart/launchpad/logs
 * crx-quickstart/server/logs
@@ -39,13 +39,13 @@ CRX enregistre des journaux détaillés. Après avoir décompressé et démarré
 
 Le niveau de journalisation par défaut est INFO, ce qui signifie que les messages DÉBOGUER ne sont pas consignés.
 
-Pour activer le niveau de journalisation DEBUG, utilisez l’explorateur CRX pour définir la variable
+Pour activer le niveau de journalisation DEBUG, utilisez l’explorateur CRX pour définir
 
 ```xml
 /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level
 ```
 
-la propriété à corriger. Ne laissez pas le journal au niveau du journal DEBUG plus longtemps que nécessaire, car il génère de nombreux journaux.
+la propriété à corriger. Ne laissez pas le journal au niveau de journalisation DEBUG plus longtemps que nécessaire, car cela génère un grand nombre de journaux.
 
 Une ligne dans le fichier de débogage commence généralement par DEBUG, puis fournit le niveau de journalisation, l’action d’installation et le message du journal. Par exemple :
 
