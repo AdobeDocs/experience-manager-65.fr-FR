@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing
 content-type: reference
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 2c0e3052e32e32f794faa69177d5fdad95bec72f
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '990'
 ht-degree: 1%
 
 ---
@@ -89,12 +89,12 @@ Pour plus d’informations, voir [https://appium.io/](https://appium.io/).
 
 Pour plus d’informations, voir [https://saucelabs.com/](https://saucelabs.com/).
 
-**AppTestNow**
+<!-- **AppTestNow**
 
-* Un service d&#39;externalisation qui teste vos applications mobiles.
-* Il comprend un grand nombre d’appareils et offre un large éventail de types de tests : performances, qualité, fonctionnel, certification, localisation, consommation de données, etc.
+* An outsourcing service that tests your mobile apps.
+* Included is a large pool of devices and offers a wide range of types of testing: performance, quality, functional, certification, localization, data consumption, and so on.
 
-Pour plus d’informations, voir [https://apptestnow.com/](https://apptestnow.com/).
+For more information, see [https://apptestnow.com/](https://apptestnow.com/). -->
 
 **HockeyApp**
 
