@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager]
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
-source-git-commit: 41ef1b05e4082bb50b93ff6511542ed56a77497c
+source-git-commit: 7c5d45788583cce3403b8beca0c122a9ddf1ca49
 workflow-type: tm+mt
-source-wordcount: '3433'
+source-wordcount: '3613'
 ht-degree: 99%
 
 ---
@@ -41,11 +41,19 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 **Fonctions clés**
 
-* A
+* Assets, Dynamic Media - [Prise en charge du suivi de sous-titres et d’audio multiples pour les vidéos dans Dynamic Media](/help/assets/video.md#about-msma) : vous pouvez désormais facilement ajouter plusieurs sous-titres et plusieurs pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs et autrices peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface utilisateur.
+
+* Ressources - À partir des résultats de recherche, vous pouvez désormais accéder à l’emplacement du dossier contenant une ressource, ce qui vous permet d’effectuer diverses tâches de gestion des ressources. (ASSETS-23182)
 
 **Améliorations clés**
 
-* S
+* Les performances du sélecteur Polaris de sites dans les fragments de contenu ont été améliorées. (SITES-14092)
+
+* Activation de la personne Éditeur de page/Composant d’image Sites pour référencer des ressources à partir du service cloud Assets à distance. (SITES-13448, SITES-13433)
+
+* Pour trouver rapidement un projet en mode Liste où votre système peut contenir de nombreux projets, Adobe prend désormais en charge le tri côté serveur. Les nœuds de projet sont triés sur le serveur principal en fonction de la colonne sélectionnée par l’utilisateur ou l’utilisatrice avant d’effectuer leur rendu dans l’interface utilisateur. (NPR-41027)
+
+* AEM 6.5.18.0 prend en charge MongoDB, de la version 5.0 à la version 6.0.
 
 **Fonctionnalité obsolète**
 
@@ -57,7 +65,6 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 ### [!DNL Sites]{#sites-6519}
 
-* u
 
 #### Accessibilité{#sites-accessibility-6519}
 
