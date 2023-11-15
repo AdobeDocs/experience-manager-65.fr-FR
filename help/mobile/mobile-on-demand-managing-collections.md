@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: 0b4aa1a4-449a-4882-8f7c-3ceea6ac7f83
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '798'
 ht-degree: 2%
 
 ---
@@ -75,7 +75,7 @@ Le workflow pour modifier une collection :
 1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
 1. Sélectionnez un AEM article d’origine dans la **Gestion des collections** mosaïque.
 1. Cliquez sur la collection mise en surbrillance en mode Liste pour l’ouvrir dans l’éditeur de contenu.
-1. Utilisez l&#39;éditeur de contenu pour faire glisser le contenu d&#39;une collection (manuscrits, images, texte, etc.).
+1. Utilisez l’éditeur de contenu pour faire glisser du contenu de collection (manuscrits, images, texte, etc.).
 
 ### Affichage et modification des métadonnées dans une collection {#viewing-and-editing-the-metadata-within-a-collection}
 

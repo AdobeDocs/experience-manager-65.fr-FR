@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: fb1abaa0-9c02-4f20-aa7c-073def067452
 exl-id: c65a24e6-3041-4774-aeed-8e188ea19b78
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '663'
 ht-degree: 3%
 
 ---
@@ -83,7 +83,7 @@ Workflow de modification d’un article :
 1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
 1. Sélectionnez une bannière d’AEM source dans la mosaïque **Gérer les bannières**.
 1. Cliquez sur la bannière mise en surbrillance en mode Liste pour l’ouvrir dans l’éditeur de contenu.
-1. Utilisez l&#39;éditeur de contenu pour faire glisser le contenu de la bannière (manuscrits, images, texte, etc.).
+1. Utilisez l’éditeur de contenu pour faire glisser le contenu de la bannière (manuscrits, images, texte, etc.).
 
 ### Affichage et modification des métadonnées dans une bannière {#viewing-and-editing-the-metadata-within-a-banner}
 

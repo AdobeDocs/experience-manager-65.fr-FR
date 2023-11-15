@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: ea6c8aa3-f86e-4878-8550-fe1662f10696
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '681'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ Workflow de modification d’un article :
 1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
 1. Sélectionnez un AEM article d’origine dans la **Gestion des articles** mosaïque.
 1. Cliquez sur l’article en surbrillance dans la vue Liste pour l’ouvrir dans l’éditeur de contenu.
-1. Utilisez l&#39;éditeur de contenu pour faire glisser le contenu de l&#39;article (manuscrits, images, texte, etc.).
+1. Utilisez l’éditeur de contenu pour faire glisser le contenu d’un article (manuscrits, images, texte, etc.).
 
 ### Affichage et modification des métadonnées dans un article {#viewing-and-editing-the-metadata-within-an-article}
 

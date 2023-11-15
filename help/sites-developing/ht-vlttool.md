@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
 workflow-type: tm+mt
-source-wordcount: '2707'
-ht-degree: 83%
+source-wordcount: '2709'
+ht-degree: 82%
 
 ---
 
@@ -944,4 +944,4 @@ Votre dossier local est désormais synchronisé avec le référentiel. La synchr
 
 >[!NOTE]
 >
->La fonction de synchronisation VLT prend uniquement en charge des fichiers et dossiers simples, mais détecte les fichiers sérialisés Vault spéciaux (.content.xml, dialog.xml, etc.) et les ignore silencieusement. Il est donc possible d’utiliser la synchronisation Vault sur un passage en caisse vlt par défaut.
+>La fonction de synchronisation VLT ne prend en charge que les fichiers et dossiers simples, mais détecte les fichiers sérialisés Vault spéciaux (.content.xml, dialog.xml, etc.) et les ignore silencieusement. Il est donc possible d’utiliser la synchronisation Vault sur un passage en caisse vlt par défaut.
