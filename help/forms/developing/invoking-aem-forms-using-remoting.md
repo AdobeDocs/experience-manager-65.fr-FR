@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '4593'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -311,7 +311,7 @@ Pour activer l’authentification personnalisée dans la console d’administrat
 >
 Dans la version précédente d’AEM Forms, vous avez envoyé des informations d’identification à une destination en appelant la méthode `RemoteObject.setCredentials`. La méthode `setCredentials` ne transmettait pas réellement les informations d’identification au serveur avant la première tentative du composant pour se connecter au serveur. Par conséquent, si le composant a généré un événement d’erreur, vous ne pouvez pas être certain que l’erreur s’est produite en raison d’une erreur d’authentification ou pour une autre raison. La méthode `ChannelSet.login` établit la connexion avec le serveur lorsque vous l’appelez afin que vous puissiez gérer un problème d’authentification immédiatement. Bien que vous puissiez continuer à utiliser la méthode `setCredentials`, il est recommandé d’utiliser la méthode `ChannelSet.login`.
 
-Comme plusieurs destinations peuvent utiliser les mêmes canaux et l’objet ChannelSet correspondant, la connexion à une destination entraîne l’ouverture d’une session de l’utilisateur vers toute autre destination qui utilise le même canal ou les mêmes canaux. Si deux composants appliquent des informations d’identification différentes au même objet ChannelSet, les dernières informations d’identification appliquées sont utilisées. Si plusieurs composants utilisent le même objet ChannelSet authentifié, l’appel de la méthode `logout` déconnecte tous les composants des destinations.
+Comme plusieurs destinations peuvent utiliser les mêmes canaux et l’objet ChannelSet correspondant, la connexion à une destination se connecte aux journaux de l’utilisateur à toute autre destination qui utilise le même canal ou canal. Si deux composants appliquent des informations d’identification différentes au même objet ChannelSet, les dernières informations d’identification appliquées sont utilisées. Si plusieurs composants utilisent le même objet ChannelSet authentifié, l’appel de la méthode `logout` déconnecte tous les composants des destinations.
 
 L’exemple suivant utilise les méthodes `ChannelSet.login` et `ChannelSet.logout` avec un contrôle RemoteObject. Cette application effectue les actions suivantes :
 

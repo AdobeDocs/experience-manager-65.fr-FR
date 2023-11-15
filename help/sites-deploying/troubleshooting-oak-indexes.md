@@ -1,18 +1,15 @@
 ---
 title: Dépannage des index Oak
-seo-title: Troubleshooting Oak Indexes
 description: Découvrez comment identifier si l’indexation est lente, trouver la cause et résoudre le problème.
-uuid: 6567ddae-128c-4302-b7e8-8befa66b1f43
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 98%
+source-wordcount: '1474'
+ht-degree: 96%
 
 ---
 
@@ -22,7 +19,7 @@ ht-degree: 98%
 
 Le processus de réindexation interne d’AEM collecte les données du référentiel et les stocke dans les index Oak afin de prendre en charge l’interrogation performante du contenu. Dans des circonstances exceptionnelles, le processus peut être lent, voire bloqué. Cette page sert de guide de dépannage pour aider à identifier si l’indexation est lente, trouver la cause et résoudre le problème.
 
-Il est important de faire la distinction entre une réindexation qui prend trop de temps et une réindexation qui prend beaucoup de temps parce qu’elle indexe de grandes quantités de contenu. Par exemple, le temps nécessaire pour indexer le contenu est proportionnel à la quantité de contenu, de sorte que les référentiels de production volumineux prennent plus de temps à réindexer que les petits référentiels de développement.
+Il est important de faire la distinction entre la réindexation qui prend un temps incorrectement long et la réindexation qui prend beaucoup de temps car elle permet d’indexer de grandes quantités de contenu. Par exemple, le temps nécessaire pour indexer le contenu est proportionnel à la quantité de contenu, de sorte que les référentiels de production volumineux prennent plus de temps à réindexer que les petits référentiels de développement.
 
 Voir [Bonnes pratiques relatives aux requêtes et à l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md) pour plus d’informations sur quand et comment réindexer le contenu.
 

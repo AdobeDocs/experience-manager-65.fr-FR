@@ -8,9 +8,9 @@ topic-tags: content
 content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '3568'
+source-wordcount: '3574'
 ht-degree: 96%
 
 ---
@@ -358,11 +358,11 @@ Le gestionnaire de packages peut effectuer les validations suivantes :
 
 ##### Valider les importations de packages OSGi {#osgi-package-imports}
 
-**Contenu vérifié**
+**Éléments cochés**
 
 Cette validation inspecte le package pour tous les fichiers JAR (lots OSGi), extrait leur `manifest.xml` (qui contient les dépendances de version sur lesquelles le lot OSGi repose) et vérifie que l’instance AEM exporte lesdites dépendances avec les versions correctes.
 
-**Comment c’est rapporté ?**
+**Comment il est signalé**
 
 Toutes les dépendances de version qui ne peuvent pas être satisfaites par l’instance AEM est répertoriées dans le journal d’activité du Gestionnaire de packages.
 
@@ -376,13 +376,13 @@ Pour résoudre des erreurs dues à des lots OSGi non satisfaits, il faut ajuster
 
 ##### Valider les recouvrements {#overlays}
 
-**Contenu vérifié**
+**Éléments cochés**
 
 Cette validation détermine si le package en cours d’installation contient un fichier qui est déjà recouvert dans l’instance AEM de destination.
 
 Par exemple, étant donné un recouvrement présent dans `/apps/sling/servlet/errorhandler/404.jsp`, un package contenant `/libs/sling/servlet/errorhandler/404.jsp`, il modifiera donc le fichier existant dans `/libs/sling/servlet/errorhandler/404.jsp`.
 
-**Comment sont-ils signalés ?**
+**Comment il est exporté**
 
 Ces recouvrements sont décrits dans le Journal d’activités du Gestionnaire de packages.
 
@@ -400,11 +400,11 @@ Pour résoudre ce problème, le responsable du fichier de recouvrement dans `/ap
 
 ##### Valider les ACL {#acls}
 
-**Contenu vérifié**
+**Éléments cochés**
 
 Cette validation vérifie quelles autorisations sont ajoutées, comment elles seront gérées (fusion/remplacement) et si les autorisations actuelles seront affectées.
 
-**Comment est-ce rapporté ?**
+**Comment il est signalé**
 
 Les autorisations sont décrites dans le Journal d’activités du Gestionnaire de packages.
 

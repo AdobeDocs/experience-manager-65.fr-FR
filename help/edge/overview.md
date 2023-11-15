@@ -1,10 +1,10 @@
 ---
 title: Prise en main d’Edge Delivery Services
-description: Prise en main d’Edge Delivery Services (EDS).
+description: Prise en main d’Edge Delivery Services (EDS).
 exl-id: 8d2b2d6c-ae11-4829-842e-b186f5491713
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '866'
 ht-degree: 93%
 
 ---
@@ -45,7 +45,7 @@ Vous pouvez également utiliser Edge Delivery Services avec Adobe Target, Ana
 
 ## Accéder à Edge Delivery Services {#getting-access}
 
-Il est facile de commencer à utiliser Edge Delivery Services. Commencez en suivant [Prise en main - Tutoriel de développement](https://www.hlx.live/developer/tutorial).
+Il est facile de commencer à utiliser des Edge Delivery Services. Commencez en suivant [Prise en main - Tutoriel de développement](https://www.hlx.live/developer/tutorial).
 
 ## Obtenir de l’aide à partir d’Adobe {#adobe-gethelp}
 

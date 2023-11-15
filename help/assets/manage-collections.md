@@ -7,10 +7,10 @@ role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2202'
-ht-degree: 98%
+source-wordcount: '2204'
+ht-degree: 97%
 
 ---
 
@@ -222,7 +222,7 @@ Lorsque vous téléchargez une collection, la hiérarchie complète des ressourc
 
 ## Création de collections imbriquées {#creating-nested-collections}
 
-Vous pouvez ajouter une collection à une autre collection, créant ainsi une collection imbriquée.
+Vous pouvez ajouter une collection à une autre collection afin de créer une collection imbriquée.
 
 1. Dans la console Collections, sélectionnez la collection ou le groupe de collections désiré, et cliquez sur **[!UICONTROL À la collection]** dans la barre d’outils.
 

@@ -8,7 +8,7 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '6911'
 ht-degree: 97%
@@ -271,7 +271,7 @@ Pour modifier l’ordre des actifs dans la liste, cliquez et maintenez sur les i
    * **Sélectionné** : Lorsque cette option est sélectionnée, le contenu est présélectionné dans l’interface utilisateur de création de correspondance.
    * **Sauter les puces et la numérotation** : Lorsque cette option est sélectionnée, le contenu n’utilise pas les puces et la numérotation dans l’interface utilisateur de création de correspondance. (Cette option n’est pas disponible pour les modules d’image. En outre, parmi les options Sauter les puces et la numérotation, Composé et Ignorer le style de liste, une seule des options peut être appliquée à un module. L’une de ces options peut être utilisée pour un module lorsque vous sélectionnez Ajout de puces pour un module.)
    * **Mise en retrait** : Vous pouvez modifier le niveau de mise en retrait de chaque module/contenu sélectionné pour faire partie de la liste. La mise en retrait est spécifiée en termes de niveaux (en commençant par zéro), de sorte que chaque niveau de retrait corresponde à une marge de 36 points.
-   * **Composé :** Lorsqu’elle est sélectionnée, la numérotation composée est appliquée comme une combinaison du style de la liste extérieure (parente) et de celui de la liste imbriquée. La numérotation composée de cette liste imbriquée est basée sur l’ordre dans lequel cette liste imbriquée apparaît dans la liste extérieure.
+   * **Composé :** Lorsqu’elle est sélectionnée, la numérotation composée est appliquée comme une combinaison du style de la liste extérieure (parente) et de son propre style. La numérotation composée de cette liste imbriquée est basée sur l’ordre dans lequel cette liste imbriquée apparaît dans la liste extérieure.
    * **Ignorer le style de liste** : Si l’option Numérotation composée est désélectionnée, l’option Ignorer le style de liste est activée. Cette sélection ignore le style de la liste imbriquée et la numérotation se poursuit à partir de la liste extérieure. Par conséquent, les modules de la liste imbriquée sont traités comme faisant partie de la liste extérieure elle-même, indépendamment des styles spécifiés dans la liste imbriquée. Si l’option Ignorer le style de liste est désélectionnée pour une liste imbriquée, les modules qui font partie de cette liste imbriquée ont leur propre style de numérotation.
    * **Sous-formulaire solidaire :** Définit le saut de page des actifs d’une liste. Si vous définissez la propriété Sous-formulaire solidaire pour l’un des actifs d’une liste sur **On**, cet actif et l’actif suivant resteront sur la même page. Cela signifie que le contenu de la ressource sélectionnée et de la ressource suivante ne sera pas fractionné sur plusieurs pages.
 

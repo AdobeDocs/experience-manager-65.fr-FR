@@ -8,9 +8,9 @@ content-type: reference
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2284'
+source-wordcount: '2285'
 ht-degree: 73%
 
 ---
@@ -88,7 +88,7 @@ orderby=path
 
 L’objet de la variable `p.guessTotal` est de renvoyer le nombre approprié de résultats pouvant être affichés en combinant les valeurs minimum p.offset et p.limit viables. Utilisé avec des jeux de résultats de grande taille, ce paramètre offre des performances encore meilleures. Cela permet d’éviter de calculer le total (par exemple, en appelant result.getSize()) et de lire l’ensemble de résultats, optimisé jusqu’au moteur et à l’index Oak. Il peut s’agir d’une différence significative lorsqu’il y a 100 000 résultats, à la fois en termes de temps d’exécution et d’utilisation de la mémoire.
 
-L’inconvénient de ce paramètre est que les utilisateurs ne voient pas le total exact. Cependant, vous pouvez définir un nombre minimum comme p.guessTotal=1000 afin qu’il soit toujours lu jusqu’à 1 000, de sorte que vous obteniez des totaux exacts pour les jeux de résultats plus petits, mais s’il est plus que cela, vous pouvez uniquement afficher &quot;et plus&quot;.
+L’inconvénient de ce paramètre est que les utilisateurs ne voient pas le total exact. Cependant, vous pouvez définir un nombre minimum comme p.guessTotal=1000 afin qu’il soit toujours lu jusqu’à 1 000, de sorte que vous obtenez des totaux exacts pour les jeux de résultats plus petits, mais s’il est plus grand, vous pouvez uniquement afficher &quot;et plus&quot;.
 
 Ajoutez `p.guessTotal=true` à la requête ci-dessous pour voir comment cela fonctionne :
 

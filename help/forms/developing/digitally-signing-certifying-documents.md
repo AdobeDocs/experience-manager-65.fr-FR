@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '17027'
 ht-degree: 83%
@@ -51,7 +51,7 @@ Vous pouvez accomplir les tâches suivantes à l’aide du service Signature :
 
 ## Ajouter des champs de signature {#adding-signature-fields}
 
-Les signatures numériques apparaissent dans les champs de signature, qui sont des champs de formulaire contenant une représentation graphique de la signature. Les champs de signature peuvent être visibles ou invisibles. Les signataires peuvent utiliser un champ de signature préexistant ou il est possible d’ajouter un champ de signature par programme. Dans les deux cas, le champ de signature doit exister avant la signature du document PDF.
+Les signatures numériques apparaissent dans les champs de signature, qui sont des champs de formulaire contenant une représentation graphique de la signature. Les champs de signature peuvent être visibles ou invisibles. Les signataires peuvent utiliser un champ de signature préexistant ou un champ de signature peut être ajouté par programmation. Dans les deux cas, le champ de signature doit exister avant la signature du document PDF.
 
 Vous pouvez programmer l’ajout d’un champ de signature à l’aide de l’API Java du service Signature ou de l’API du service Web de signature. Vous pouvez ajouter plusieurs champs de signature à un document PDF. Cependant, chaque nom de champ de signature doit être unique.
 

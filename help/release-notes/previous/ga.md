@@ -2,9 +2,9 @@
 title: Notes générales de mise à jour d’ [!DNL Adobe Experience Manager]  6.5
 description: « Notes relatives à [!DNL Adobe Experience Manager] 6.5, décrivant les informations, les nouveautés, la procédure d’installation et les listes détaillées des modifications pour la version. »
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '4675'
+source-wordcount: '4676'
 ht-degree: 99%
 
 ---
@@ -187,7 +187,7 @@ Pour plus d’informations sur les modifications apportées à AEM Screens, con
 
 * Le rail [Référence](/help/sites-authoring/author-environment-tools.md#references) comporte une nouvelle section permettant de répertorier les liens internes pointant vers la page sélectionnée. Cela s’avère utile lorsque vous envisagez de mettre une page hors ligne ou de la supprimer, afin de déterminer les pages à ajuster avant de les mettre hors ligne.
 * La vue [Liste](/help/sites-authoring/basic-handling.md#list-view) comporte une nouvelle colonne de workflow indiquant le statut de la page dans un workflow.
-* Dans les [propriétés de page](/help/sites-authoring/editing-page-properties.md), il est désormais possible de rechercher des ressources existantes lors de l’attribution d’une miniature à la page (onglet Miniature).
+* Dans le [propriétés de page](/help/sites-authoring/editing-page-properties.md), il est désormais possible de rechercher des ressources existantes lors de l’attribution d’une miniature à la page (onglet Miniature).
 
 #### Éditeur de page {#page-editor}
 

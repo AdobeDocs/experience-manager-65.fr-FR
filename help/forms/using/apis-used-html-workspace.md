@@ -5,9 +5,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: 9034f73a-83f3-498e-b6a6-ad6577aa1a3a
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1059'
+source-wordcount: '1060'
 ht-degree: 3%
 
 ---
@@ -385,7 +385,7 @@ Les API suivantes sont utilisées dans l’espace de travail AEM Forms.
    <td>Il télécharge une note sur le serveur pour une tâche.</td>
   </tr>
   <tr>
-   <td>uploadRMAToServer (également appelé directement depuis un modèle HTML)<br /> </td>
+   <td>uploadRMAToServer (également appelé directement à partir d’un modèle HTML)<br /> </td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>uploadAttachment</td>
    <td>Elle télécharge une pièce jointe sur le serveur pour une tâche.</td>

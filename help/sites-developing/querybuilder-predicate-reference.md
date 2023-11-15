@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2347'
+source-wordcount: '2348'
 ht-degree: 30%
 
 ---
@@ -446,7 +446,7 @@ Prend en charge l’extraction de facettes de la même manière que le prédicat
 
 Groupe de prédicats racine. Prend en charge toutes les fonctionnalités d’un groupe et vous permet de définir des paramètres de requête globaux.
 
-Le nom « root » n’est jamais utilisé dans une requête ; il est implicite.
+Le nom &quot;root&quot; n’est jamais utilisé dans une requête, il est implicite.
 
 #### Propriétés {#properties-18}
 

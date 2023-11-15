@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 78842fb50d5aa5e5c22801389713cb3c69cac4bf
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '6489'
 ht-degree: 91%
@@ -159,7 +159,7 @@ Pour marquer un dossier sélectionné afin de le synchroniser avec Dynamic Medi
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 1. Pour prévisualiser en toute sécurité le contenu Dynamic Media avant qu’il ne soit publié, l’instance auteur Experience Manager utilise la validation basée sur les jetons et donc l’auteur Experience Manager prévisualise le contenu Dynamic Media par défaut. Cependant, vous pouvez également placer en liste autorisée d’autres adresses IP pour permettre aux utilisateurs d’accéder à l’aperçu sécurisé du contenu. Pour configurer cette action dans Experience Manager, consultez [Configurer la publication Dynamic Media pour le serveur d’image - Onglet Sécurité](/help/assets/dm-publish-settings.md#security-tab).
 
-Si vous souhaitez personnaliser davantage votre configuration, comme activer les autorisations ALC (liste de contrôles d’accès), vous pouvez éventuellement effectuer l’une des tâches de la rubrique [(Facultatif) Configuration de paramètres avancés dans Dynamic Media en mode Scene7](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+Si vous souhaitez personnaliser davantage votre configuration, en activant par exemple les autorisations de liste de contrôles d’accès (ACL), vous pouvez éventuellement effectuer l’une des tâches de la rubrique [(Facultatif) Configuration des paramètres avancés dans Dynamic Media en mode Scene7](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
 <!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
     * In the left rail, select the **[!UICONTROL Tools]** icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
@@ -664,7 +664,7 @@ La file d’attente de workflows Granite est utilisée pour le workflow **[!UICO
 
    Vous pouvez augmenter le **[!UICONTROL nombre maximal de tâches en parallèle]** afin de prendre en charge le chargement intensif de fichiers vers Dynamic Media. La valeur exacte dépend de la capacité matérielle. Dans certains cas, c’est-à-dire lors d’une migration initiale ou d’un chargement en bloc unique, vous pouvez utiliser une valeur élevée. Sachez toutefois que l’utilisation d’une valeur élevée (par exemple deux fois le nombre de cœurs) peut avoir des effets négatifs sur les activités simultanées. Testez et ajustez la valeur en fonction de votre cas d’utilisation particulier.
 
-<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
+<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0&ndash;1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
    Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic (Scene7). -->
 

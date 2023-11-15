@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: f37f239f-065b-44f8-acb1-93485b713b49
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Les pages de votre application doivent toutes se trouver sous /content/mobileapp
 
 ![chlimage_1-52](assets/chlimage_1-52.png)
 
-Par convention AEM, la première page de votre application doit être une redirection vers l’un de ses enfants qui sert de langue par défaut de l’application (en dans les cas de Geometrixx et de kit de démarrage). La page locale de niveau supérieur hérite généralement du composant &quot;splash-page&quot; de base (/libs/mobileapps/components/splash-page) qui prend en charge l’initialisation nécessaire pour prendre en charge l’installation des mises à jour de synchronisation de contenu en direct (le code contentInit se trouve à l’adresse /etc/clientlibs/mobile/content-sync/js/contentInit.js).
+Par convention AEM, la première page de votre application doit être une redirection vers l’un de ses enfants qui sert de langue par défaut de l’application (&quot;en&quot; dans les cas de Geometrixx et de kit de démarrage). La page locale de niveau supérieur hérite généralement du composant &quot;splash-page&quot; de base (/libs/mobileapps/components/splash-page) qui prend en charge l’initialisation nécessaire pour prendre en charge l’installation des mises à jour de synchronisation de contenu en direct (le code contentInit se trouve à l’adresse /etc/clientlibs/mobile/content-sync/js/contentInit.js).
 
 ## Modèles et composants {#templates-and-components}
 

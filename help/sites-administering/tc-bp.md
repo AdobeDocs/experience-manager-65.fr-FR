@@ -3,10 +3,10 @@ title: Bonnes pratiques de traduction
 description: Découvrez les bonnes pratiques compilées par les équipes d’ingénierie et de conseil d’Adobe pour vous aider à démarrer et à exécuter des projets de traduction.
 feature: Language Copy
 exl-id: 01a81c4b-cb30-4f7e-b281-7194ebb5fc70
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 96%
+source-wordcount: '837'
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ La création ou le développement d’une présence mondiale sur le web peut êt
 
 * **Planifiez votre expansion internationale** avant de mettre en œuvre votre premier site. Il est généralement plus difficile d’adapter un site existant à une utilisation mondiale lorsque le site a été créé dans un délai très court que de planifier dès le départ une extension à l’échelle mondiale :
 
-   * Évaluez le statut de maturité actuel de votre organisation en termes de localisation. Déterminez si vous disposez des **outils**, **processus** et **ressources** nécessaires pour prendre en charge une expansion internationale.
+   * Évaluez la maturité de votre organisation en matière de localisation. Déterminez si vous disposez des **outils**, **processus** et **ressources** nécessaires pour prendre en charge une expansion internationale.
    * Tenez compte des **réglementations internationales** et des **préférences linguistiques régionales**. Concevez des structures de contenu et des processus flexibles qui peuvent s’adapter à un environnement professionnel global en constante évolution.
 
 * Déterminez un modèle de **gouvernance** soutenant votre activité globale et utilisez des mécanismes AEM comme MSM et les permissions d’utilisateur afin d’appliquer le modèle sélectionné. Par exemple, déterminez si le contenu sera rédigé de manière centralisée et transmis ou extrait vers les régions ou pays. Déterminez le contenu qui peut être déverrouillé et modifié dans les zones géographiques. Déterminez qui est chargé de lancer et de gérer les traductions.
@@ -33,7 +33,7 @@ La création ou le développement d’une présence mondiale sur le web peut êt
 * Déterminez la manière dont le contenu est distribué par les pays et les régions. Pensez aux pays qui partagent des langues. Il est recommandé de créer des gabarits de langue, un calque de pages non activées, où le contenu traduit peut être révisé et modifié, puis envoyé ou extrait vers un site de pays partageant cette langue.
 * Il existe deux méthodes pour créer des gabarits de langue : à l’aide de copies de langue et à l’aide de MSM/Live Copies.
 
-   * L’approche impliquant des copies de langue est celle utilisée par la structure d’intégration de traduction prête à l’emploi d’AEM. C’est par conséquent la façon la plus facile de démarrer. Ce framework fournit une interface utilisateur qui permet, dès le départ, de propager et de traduire facilement les modifications du contenu du gabarit de langue principal (par exemple, l’anglais) sur les gabarits de langue. Cependant, à mesure que le projet se développe, l’automatisation des workflows devient de plus en plus nécessaire pour gérer la traduction du nombre croissant de pages et/ou de langues.
+   * L’approche de copie de langue est celle utilisée par AEM framework d’intégration de traduction prêt à l’emploi. C’est donc la méthode la plus simple pour commencer. Ce framework fournit une interface utilisateur qui permet, dès le départ, de propager et de traduire facilement les modifications du contenu du gabarit de langue principal (par exemple, l’anglais) sur les gabarits de langue. Cependant, à mesure que le projet se développe, l’automatisation des workflows devient de plus en plus nécessaire pour gérer la traduction du nombre croissant de pages et/ou de langues.
    * L’utilisation de MSM/Live Copies peut être une alternative pour les cas d’utilisation avancés, où les sites sont plus grands et plus complexes. Une gouvernance solide et l’automatisation des workflows sont nécessaires dès le départ pour gérer les relations d’héritage complexes entre le gabarit de langue anglaise et les autres gabarits de langue, et pour réduire les risques de remplacement des traductions existantes. Cette gestion est possible grâce à des connecteurs de traduction. Consultez [MSM et sites multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites) pour plus d’informations.
 
 * Si votre langue principale possède des variations globales, vous pouvez utiliser MSM pour créer une Live Copy à partir du gabarit global à utiliser pour la traduction. Par exemple, si la création globale est effectuée dans un gabarit anglais américain, créez un gabarit anglais international en tant que Live Copy et créez une base de traduction dans d’autres langues.

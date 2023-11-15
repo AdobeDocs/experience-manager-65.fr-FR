@@ -6,10 +6,10 @@ role: User
 feature: Asset Management,Asset Distribution
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: ht
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+workflow-type: tm+mt
 source-wordcount: '884'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -66,7 +66,7 @@ Pour autoriser le téléchargement de DAM à partir de votre gestion des ressour
 
 1. Créez un dossier avec une convention de nommage qui cible le mode d’exécution de publication (`config.publish`) : `/apps/<your-app-name>/config.publish`. Pour définir les propriétés de configuration d’un mode d’exécution, consultez les [Modes d’exécution](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode).
 1. Dans le dossier de configuration, créez un fichier de type `nt:file` nommé `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
-1. Remplissez `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` avec les éléments suivants. Définit une taille maximale (en octets) pour le téléchargement en tant que valeur de `asset.download.prezip.maxcontentsize`. L’exemple ci-dessous configure la taille maximale du téléchargement ZIP pour qu’il ne dépasse pas 100 Ko.
+1. Remplissez `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` avec les éléments suivants. Définit une taille maximale (en octets) pour le téléchargement en tant que valeur de `asset.download.prezip.maxcontentsize`. L’exemple ci-dessous configure la taille maximale du téléchargement ZIP pour qu’il ne dépasse pas 100 Ko.
 
    ```conf
    enabled=B"true"

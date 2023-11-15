@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '9151'
+source-wordcount: '9152'
 ht-degree: 98%
 
 ---
@@ -804,7 +804,7 @@ John Smith's publications
 >
 L’extrait de code ci-dessus est une illustration. Il est recommandé d’utiliser le composant **Image**.
 
-Il est conseillé de spécifier un texte du lien qui identifie l’objet du lien sans avoir besoin de contexte supplémentaire ; toutefois, cela n’est pas toujours possible. Des liens sans contexte peuvent être utilisés dans les cas suivants (vous trouverez des exemples HTML dans la section [Comment remplir le critère de réussite 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs)).
+Bien qu’il soit conseillé de fournir un texte de lien qui identifie l’objectif du lien sans avoir besoin de contexte supplémentaire, il est admis que ce n’est pas toujours possible. Il est possible d’utiliser des liens dépourvus de contexte dans les cas suivants. Un certain nombre d’exemples HTML figurent dans la section [Comment remplir le critère de réussite 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs).
 
 * Si le texte du lien fait partie d’une liste de liens étroitement liés et si l’élément de liste encadrant le lien fournit suffisamment de contexte.
 * Si l’objet d’un lien peut être clairement identifié dans le texte du paragraphe *précédent* (et non suivant).

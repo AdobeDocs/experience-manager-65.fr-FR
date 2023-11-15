@@ -7,10 +7,10 @@ topic-tags: adaptive_forms, author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1993'
-ht-degree: 96%
+source-wordcount: '1992'
+ht-degree: 95%
 
 ---
 
@@ -64,7 +64,7 @@ Les utilisateurs et utilisatrices d’AEM Forms peuvent utiliser le service reCA
    1. Appuyez sur **[!UICONTROL reCAPTCHA]**. La page de configuration s’ouvre. Sélectionnez le conteneur de configuration créé à l’étape précédente et appuyez sur **[!UICONTROL Créer]**.
    1. Sélectionnez la version reCAPTCHA Enterprise et indiquez le nom, l’ID de projet, la clé du site et la clé API (obtenue aux étapes 2 et 3) pour le service reCAPTCHA Enterprise.
    1. Sélectionnez le type de clé. Le type de clé doit être identique à la clé de site configurée dans le projet google cloud, par exemple : **Clé de site de case à cocher** ou **Clé de site basée sur les scores**.
-   1. Spécifiez un score de seuil compris entre 0 et 1 ([cliquez pour en savoir plus sur le score](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Les scores supérieurs ou égaux aux scores de seuil indiquent une interaction humaine, sinon il s’agit d’une interaction avec un robot.
+   1. Spécifiez un score de seuil compris entre 0 et 1 ([Cliquez pour en savoir plus sur le score](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Les scores supérieurs ou égaux aux scores de seuil indiquent une interaction humaine, sinon il s’agit d’une interaction avec un robot.
 
       > Remarque :
       >

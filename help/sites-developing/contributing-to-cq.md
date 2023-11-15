@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2668'
-ht-degree: 47%
+source-wordcount: '2669'
+ht-degree: 46%
 
 ---
 
@@ -25,7 +25,7 @@ Si vous contribuez à des composants d’AEM, familiarisez-vous avec AEM comme v
 
 Le protocole HyperText Transfer Protocol (HTTP) est au coeur de tout ce que nous faisons. Par conséquent, avant de contribuer à AEM, vous devez avoir une compréhension approfondie du protocole HTTP, idéalement dans la mesure où vous pouvez écrire votre propre mise en oeuvre Java™ d’un serveur HTTP multithread avec pool de threads. Vous devez également maîtriser le comportement de persistance HTTP/1.1 et posséder une connaissance approfondie des interactions côté serveur/client avec JavaScript, en particulier du style asynchrone d’interaction représenté par AJAX.
 
-Étant donné que le dynamisme des pages et le contenu interactif sont déterminants pour l’expérience WM, il est impératif que vous maîtrisiez le modèle d’objet de document et son potentiel pour la manipulation programmatique en réponse aux événements. Vous devez, par exemple, avoir des connaissances en matière de manipulation DOM en temps réel et de comportement de glisser-déposer sur plusieurs documents de navigateur (à l’aide d’iframes, par exemple).
+Comme le dynamisme des pages et le contenu interactif sont essentiels à la gestion de contenu web, il est essentiel que vous ayez une compréhension assez approfondie du modèle d’objet de document et de son potentiel de manipulation programmatique en réponse aux événements. Vous devez, par exemple, avoir des connaissances en matière de manipulation DOM en temps réel et de comportement de glisser-déposer sur plusieurs documents de navigateur (à l’aide d’iframes, par exemple).
 
 Au niveau le plus élevé, vous devez avoir une solide compréhension des éléments suivants :
 

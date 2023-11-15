@@ -11,10 +11,10 @@ topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
-workflow-type: ht
-source-wordcount: '2913'
-ht-degree: 100%
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+workflow-type: tm+mt
+source-wordcount: '2914'
+ht-degree: 99%
 
 ---
 
@@ -270,7 +270,7 @@ Suivez les directives de performance dans les cas suivants :
 * **Mise à niveau vers une nouvelle version** : lors de la mise à niveau vers une nouvelle version, il est important de comprendre les différences de performance par rapport à l’environnement en cours d’exécution. Il s’agit par exemple de la mise à niveau d’AEM 6.1 vers 6.2 ou d’AEM 6.0 CRX2 vers 6.2 OAK.
 * **Temps de réponse lent** : lorsque l’architecture Nodestore sélectionnée ne répond pas à vos besoins, il est important de comprendre les différences de performance par rapport aux autres options de topologie. Il s’agit par exemple du déploiement de TarMK au lieu de MongoMK ou de l’utilisation d’un magasin de données de fichiers au lieu d’un magasin de données Amazon S3 ou Microsoft® Azure.
 * **Ajout d’autres auteurs et autrices** : lorsque la topologie TarMK recommandée ne répond pas aux exigences de performance et que la mise à niveau du nœud d’instance de création a atteint la capacité maximale disponible, comprenez bien les différences de performance. Comparez l’utilisation de MongoMK avec trois nœuds d’instance de création ou plus. Par exemple, le déploiement de MongoMK au lieu de TarMK.
-* **Ajouter plus de contenu** : lorsque l’architecture recommandée de magasin de données ne répond pas à vos besoins, il est important de comprendre les différences de performance par rapport à d’autres options de magasin de données. Exemple : utilisation du magasin de données Amazon S3 ou Microsoft® Azure au lieu d’un magasin de données de fichiers.
+* **Ajouter plus de contenu**: lorsque l’architecture de l’entrepôt de données recommandée ne répond pas à vos besoins, il est important de comprendre les différences de performances par rapport aux autres options de l’entrepôt de données. Exemple : utilisation du magasin de données Amazon S3 ou Microsoft® Azure au lieu d’un magasin de données de fichiers.
 
 ## Présentation {#introduction}
 
@@ -321,16 +321,15 @@ Pour plus de détails sur les options de configuration disponibles, consultez la
 >Adobe vous recommande de choisir l’option de déploiement d’AEM sur Azure ou Amazon Web Services (AWS) à l’aide d’Adobe Managed Services. Les clientes et clients bénéficient d’une équipe qui dispose de l’expérience et des compétences nécessaires pour déployer et exploiter AEM dans ces environnements de cloud computing. Consultez les [documents complémentaires sur Adobe Managed Services](https://business.adobe.com/fr/products/experience-manager/managed-services.html?aemClk=t).
 >
 >Pour obtenir des recommandations sur le déploiement d’AEM sur Azure ou AWS, en dehors d’Adobe Managed Services, Adobe recommande de travailler directement avec le fournisseur de cloud. Vous pouvez également collaborer avec l’un des partenaires d’Adobe qui prend en charge le déploiement d’AEM dans l’environnement cloud de votre choix. Le fournisseur ou partenaire cloud sélectionné est responsable du dimensionnement, de la conception et de l’implémentation de l’architecture qu’ils prennent en charge pour répondre à vos besoins spécifiques en termes de performances, de charge, d’évolutivité et de sécurité.
->Consultez également la page des [exigences techniques](/help/sites-deploying/technical-requirements.md#supported-platforms).
 >
->
->
+>>Consultez également la page des [exigences techniques](/help/sites-deploying/technical-requirements.md#supported-platforms).
 
 ### Rechercher {#search-features}
 
 Les fournisseurs d’index personnalisés utilisés avec AEM sont répertoriés dans cette section. Pour en savoir plus sur l’indexation, consultez la section [Requêtes Oak et indexation](/help/sites-deploying/queries-and-indexing.md).
 
 >[!NOTE]
+>
 >Adobe recommande d’utiliser l’index Lucene dans la plupart des déploiements. Solr est réservé aux déploiements spécialisés et complexes qui demandent de l’évolutivité.
 
 ![chlimage_1-4](assets/chlimage_1-4a.png)
@@ -369,6 +368,7 @@ Pour plus d’informations sur le développement sur AEM, consultez la section [
 ### Scénarios de référence {#benchmark-scenarios}
 
 >[!NOTE]
+>
 >Les tests présentés sur cette page ont été réalisés dans un environnement de laboratoire.
 
 Les scénarios de test présentés ci-dessous sont utilisés pour les sections de référence des chapitres TarMK, MongoMk et TarMK contre MongoMk. Pour identifier le scénario qui a été utilisé pour un test comparatif particulier, consultez le champ de scénario du tableau [Caractéristiques techniques](/help/sites-deploying/performance-guidelines.md#tarmk-performance-benchmark).
@@ -406,6 +406,7 @@ Pour plus d’informations sur TarMK, consultez les [Scénarios de déploiement]
 ### Recommandations sur l’architecture minimale de TarMK {#tarmk-minimum-architecture-guidelines}
 
 >[!NOTE]
+>
 >Les recommandations relatives à l’architecture minimale présentées ci-dessous concernent les environnements de production et les sites à trafic élevé. Ces recommandations ne sont **pas** les [spécifications minimales](/help/sites-deploying/technical-requirements.md#prerequisites) requises pour exécuter AEM.
 
 Pour obtenir de bonnes performances lors de l’utilisation de TarMK, commencez par l’architecture suivante :
@@ -417,6 +418,7 @@ Pour obtenir de bonnes performances lors de l’utilisation de TarMK, commencez 
 Vous trouverez, dans l’exemple ci-dessous, les recommandations sur l’architecture d’AEM Sites et AEM Assets.
 
 >[!NOTE]
+>
 >La réplication sans binaires doit être **ACTIVÉE** si le magasin de données du fichier est partagé.
 
 **Recommandations sur l’architecture Tar pour AEM Sites**
@@ -490,7 +492,7 @@ Pour obtenir de bonnes performances, il est recommandé de définir les paramèt
 
 Les tests comparatifs ont été réalisés selon les spécifications suivantes :
 
-|  | **Nœud Auteur** |
+| | **Nœud Auteur** |
 |---|---|
 | Serveur | Matériel « métal nu » (HP) |
 | Système d’exploitation | Red Hat® Linux® |
@@ -507,6 +509,7 @@ Les tests comparatifs ont été réalisés selon les spécifications suivantes 
 #### Résultats de l’évaluation des performances {#performance-benchmark-results}
 
 >[!NOTE]
+>
 >Les chiffres présentés ci-dessous ont été normalisés à 1 comme référence et ne sont pas les chiffres de débit réels.
 
 ![chlimage_1-7](assets/chlimage_1-7a.png) ![chlimage_1-8](assets/chlimage_1-8a.png)
@@ -527,9 +530,11 @@ Pour tirer le meilleur parti des performances de MongoMK, commencez par l’artc
 * deux Dispatchers.
 
 >[!NOTE]
+>
 >Dans les environnements de production, MongoDB est toujours utilisé comme ensemble de répliques avec une instance principale et deux instances secondaires. L’instance principale gère les tâches de lecture et d’écriture, tandis que les instances secondaires peuvent s’occuper des opérations de lecture. Si le stockage n’est pas disponible, l’une des instances secondaires peut être remplacée par un arbitre, mais les ensembles de répliques de MongoDB doivent toujours être composés d’un nombre impair d’instances.
 
 >[!NOTE]
+>
 >La réplication sans binaires doit être **ACTIVÉE** si le magasin de données du fichier est partagé.
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
@@ -597,7 +602,7 @@ Pour obtenir de bonnes performances, il est recommandé de définir les paramèt
 
 Les tests comparatifs ont été réalisés selon les spécifications suivantes :
 
-|  | **Nœud Auteur** | **Nœud MongoDB** |
+| | **Nœud Auteur** | **Nœud MongoDB** |
 |---|---|---|
 | Serveur | Matériel « métal nu » (HP) | Matériel « métal nu » (HP) |
 | Système d’exploitation | Red Hat® Linux® | Red Hat® Linux® |
@@ -614,6 +619,7 @@ Les tests comparatifs ont été réalisés selon les spécifications suivantes 
 ### Résultats de l’évaluation des performances {#performance-benchmark-results-1}
 
 >[!NOTE]
+>
 >Les chiffres présentés ci-dessous ont été normalisés à 1 comme référence et ne sont pas les chiffres de débit réels.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png) ![chlimage_1-11](assets/chlimage_1-11a.png)
@@ -647,6 +653,7 @@ Pour plus d’informations sur la comparaison de TarMK et MongoMK, voir [Déploi
 ### Références concernant la comparaison de TarMK et MongoMK {#tarmk-vs-mongomk-benchmarks}
 
 >[!NOTE]
+>
 >Les chiffres présentés ci-dessous ont été normalisés à 1 comme référence et ne sont pas des chiffres de débit réels.
 
 ### Spécifications techniques du scénario 1 {#scenario-technical-specifications}
@@ -735,6 +742,7 @@ Pour plus d’informations sur la comparaison de TarMK et MongoMK, voir [Déploi
 ### Spécifications techniques du scénario 2 {#scenario-technical-specifications-1}
 
 >[!NOTE]
+>
 >Pour permettre le même nombre d’instances de création avec MongoDB qu’avec un système TarMK, vous avez besoin d’un cluster composé de deux nœuds AEM. Un cluster MongoDB à quatre nœuds peut gérer 1,8 fois plus d’instances de création qu’une instance TarMK. Un cluster MongoDB à huit nœuds peut gérer 2,3 fois plus d’instances de création qu’une instance TarMK.
 
 <table>
@@ -818,7 +826,7 @@ Pour plus d’informations sur la comparaison de TarMK et MongoMK, voir [Déploi
 
 ![chlimage_1-13](assets/chlimage_1-13a.png)
 
-### Conseils relatifs à l’évolutivité de l’architecture d’AEM ִSites et AEM Assets {#architecture-scalability-guidelines-for-aem-sites-and-assets}
+### Conseils relatifs à l’évolutivité de l’architecture d’AEM ִSites et d’AEM Assets {#architecture-scalability-guidelines-for-aem-sites-and-assets}
 
 ![chlimage_1-14](assets/chlimage_1-14a.png)
 

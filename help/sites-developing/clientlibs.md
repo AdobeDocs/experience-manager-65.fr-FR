@@ -7,7 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '2853'
 ht-degree: 85%
@@ -36,7 +36,7 @@ La méthode d’insertion standard d’une bibliothèque côté client (c’est-
 
 Bien que cette approche fonctionne en AEM, elle peut entraîner des problèmes lorsque les pages et leurs composants constitutifs deviennent complexes. Dans ce cas, il existe le risque que plusieurs copies de la même bibliothèque JS soient incluses dans la sortie finale du HTML. Pour éviter cela et permettre une organisation logique des bibliothèques côté client AEM les utilisateurs **dossiers de bibliothèques côté client**.
 
-Un dossier de bibliothèques côté client est un nœud de référentiel de type `cq:ClientLibraryFolder`. Sa définition en [notation CND](https://jackrabbit.apache.org/node-type-notation.html) est
+Un dossier de bibliothèques côté client est un nœud de référentiel de type `cq:ClientLibraryFolder`. Sa définition au [format CND](https://jackrabbit.apache.org/node-type-notation.html) est :
 
 ```shell
 [cq:ClientLibraryFolder] > sling:Folder

@@ -5,10 +5,10 @@ contentOwner: AG
 role: Architect, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '992'
-ht-degree: 48%
+ht-degree: 46%
 
 ---
 
@@ -71,9 +71,9 @@ La conception de la topologie de l’environnement [!DNL Experience Manager] né
 
 L’exemple de scénario comprend une ferme de cinq serveurs, un espace de stockage binaire S3 et Dynamic Media déjà configurés.
 
-Le Dispatcher partage une connexion de 100 Mbps avec deux entités, celle du monde externe et le déploiement [!DNL Experience Manager]. Pour les opérations simultanées de téléchargement et de chargement, vous devez diviser ce nombre par deux. Le stockage externe joint utilise une connexion distincte.
+Le répartiteur partage sa connexion de 100 Mbit/s avec deux entités, le monde extérieur et le [!DNL Experience Manager] déploiement. Pour les opérations simultanées de téléchargement et de chargement, vous devez diviser ce nombre par deux. Le stockage externe joint utilise une connexion distincte.
 
-Le déploiement [!DNL Experience Manager] partage sa connexion de 1 Gbps/s avec plusieurs services. Du point de vue de la topologie du réseau, cela équivaut à partager un seul canal avec plusieurs services.
+La variable [!DNL Experience Manager] Le déploiement partage sa connexion 1Gbit/s avec plusieurs services. Du point de vue de la topologie du réseau, cela équivaut à partager un seul canal avec plusieurs services.
 
 En révisant le réseau de l’appareil client vers le déploiement [!DNL Experience Manager], le plus petit goulot d’étranglement semble se situer au niveau du pare-feu d’entreprise de 10 Mbits. Vous pouvez utiliser ces valeurs dans le calcul de dimensionnement du [Guide du dimensionnement des ressources](assets-sizing-guide.md) pour déterminer l’expérience de l’utilisateur.
 

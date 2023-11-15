@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '2282'
-ht-degree: 65%
+ht-degree: 64%
 
 ---
 
@@ -217,7 +217,7 @@ La sauvegarde en ligne utilise l’algorithme suivant :
 
       Un fichier vide nommé « `backupInProgress.txt` » est créé dans le répertoire cible au début de la sauvegarde. Ce fichier est supprimé lorsque la sauvegarde est terminée.
 
-1. Les fichiers sont copiés du répertoire source vers le répertoire cible (ou vers un répertoire temporaire lors de la création d’un fichier ZIP). L’entrepôt de segments est copié avant le magasin de données afin d’éviter d’altérer le référentiel. Les données d’index et du cache sont omises lors de la création de la sauvegarde. Par conséquent, les données des répertoires `crx-quickstart/repository/cache` et `crx-quickstart/repository/index` ne sont pas incluses dans la sauvegarde. L’indicateur de la barre de progression du processus est compris entre 0 % et 70 % lors de la création d’un fichier ZIP ou entre 0 % et 100 % si aucun fichier ZIP n’est créé.
+1. Les fichiers sont copiés du répertoire source vers le répertoire cible (ou vers un répertoire temporaire lors de la création d’un fichier ZIP). L’entrepôt de segments est copié avant le magasin de données afin d’éviter d’altérer le référentiel. Les données d’index et du cache sont omises lors de la création de la sauvegarde. Par conséquent, les données des répertoires `crx-quickstart/repository/cache` et `crx-quickstart/repository/index` ne sont pas incluses dans la sauvegarde. L’indicateur de barre de progression du processus est compris entre 0 % et 70 % lors de la création d’un fichier zip ou entre 0 % et 100 % si aucun fichier zip n’est créé.
 
 1. Si la sauvegarde est effectuée dans un répertoire préexistant, les « anciens » fichiers du répertoire cible sont supprimés. Les anciens fichiers sont des fichiers qui n’existent pas dans le répertoire source.
 

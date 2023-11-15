@@ -2,10 +2,10 @@
 title: Premiers pas vers votre première expérience d’utilisation d’AEM découplé
 description: Dans cette partie du parcours de développement découplé AEM, vous découvrirez les étapes de mise en œuvre de votre première expérience découplée dans AEM, notamment des considérations concernant sa planification, et découvrirez également les bonnes pratiques pour rendre votre parcours aussi fluide que possible.
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1988'
-ht-degree: 94%
+source-wordcount: '1990'
+ht-degree: 93%
 
 ---
 
@@ -104,7 +104,7 @@ Un projet découplé doit son succès non seulement à la technologie mise en œ
 * En cas de restrictions d’accès, essayez d’aligner votre modèle de contenu avec ces exigences.
 * Votre hiérarchie de contenu doit se calquer sur ces exigences d’accès. Regroupez les contenus édités par le même groupe de personnes.
 * Regroupez les contenus similaires dans un dossier.
-   * Un auteur de contenu utilisera probablement un contenu existant pour le copier et le coller et créer du contenu. C’est pourquoi il sera plus efficace de le faire dans le même dossier.
+   * Il est plus probable qu’un auteur de contenu copie et colle du contenu existant pour créer du contenu. C’est pourquoi il sera plus efficace de le faire dans le même dossier.
    * AEM permet de définir des modèles autorisés par dossier afin que le bouton **Créer** n’affiche que les modèles pris en charge à cet emplacement.
 * La création de fragments de contenu en ligne par l’éditeur de fragments de contenu peut être simplifiée si le dossier racine est défini dans le modèle. Le praticien n’a alors pas à choisir un emplacement, mais doit simplement fournir un nom et peut commencer à modifier la nouvelle référence.
 

@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1068'
 ht-degree: 2%
 
 ---
@@ -79,7 +79,7 @@ La valeur par défaut est définie sur le verbe AJOUTER pour les composants Q&am
   La valeur par défaut est de 216000 heures (~24 ans).
 
 * **Taux de croissance du score**
-Cela permet d’indiquer un score compris entre 0 et la plage de notation, au-delà duquel la croissance ralentit pour limiter le nombre d’experts.
+Cela permet d’indiquer un score compris entre 0 et 0, au-delà duquel la croissance ralentit pour limiter le nombre d’experts.
 
   La valeur par défaut est 50.
 

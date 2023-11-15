@@ -1,19 +1,15 @@
 ---
 title: Gestion de projets
-seo-title: Managing Projects
 description: La console Projets vous permet d’organiser un projet en regroupant les ressources dans une seule entité à laquelle vous pouvez accéder et que vous pouvez gérer.
-seo-description: Projects lets you organize your project by grouping resources into one entity which can be acessed and managed intheProjects console
-uuid: ac937582-181f-429b-9404-3c71d1241495
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
-discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 91%
+source-wordcount: '981'
+ht-degree: 89%
 
 ---
 
@@ -135,7 +131,7 @@ Vous pouvez désormais créer des projets dans ce dossier. Vous pouvez créer pl
 
 ### Désactivation de projets {#making-projects-inactive-or-active}
 
-Vous pouvez vouloir désactiver un projet si vous l’avez terminé mais que vous souhaitez conserver ses informations. [Les projets inactifs s’affichent désormais](#viewing-active-inactive-projects) par défaut dans la console **Projets**.
+Vous pouvez marquer un projet comme inactif s’il est terminé, mais vous souhaitez tout de même conserver les informations le concernant. [Les projets inactifs s’affichent désormais](#viewing-active-inactive-projects) par défaut dans la console **Projets**.
 
 Pour rendre un projet inactif, procédez comme suit.
 

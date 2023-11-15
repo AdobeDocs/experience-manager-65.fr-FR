@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '3493'
+source-wordcount: '3495'
 ht-degree: 42%
 
 ---
@@ -365,7 +365,7 @@ Balise HTML permettant d’inclure le composant « lien graphique » dans le f
 
 ### Parsys {#parsys}
 
-Le composant parsys d’AEM est un composant conteneur qui peut contenir d’autres composants AEM. Il est possible d’ajouter un composant parsys dans le fichier HTML importé. Cela permet à l’utilisateur d’ajouter/supprimer des composants d’AEM modifiables à la page d’entrée, même après son importation.
+Le composant parsys d’AEM est un composant conteneur qui peut contenir d’autres composants AEM. Il est possible d’ajouter un composant parsys dans le HTML importé. Cela permet à l’utilisateur d’ajouter/supprimer des composants d’AEM modifiables à la page d’entrée, même après son importation.
 
 Le système de paragraphes permet aux utilisateurs d’ajouter des composants à l’aide du sidekick.
 

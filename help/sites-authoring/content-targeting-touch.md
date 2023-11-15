@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: personalization
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '5383'
-ht-degree: 98%
+source-wordcount: '5374'
+ht-degree: 96%
 
 ---
 
@@ -38,9 +38,9 @@ Les activités et les expériences qui s’affichent en mode Ciblage se répercu
 
 >[!NOTE]
 >
->Lorsque vous créez une campagne dans Adobe Target, elle affecte la propriété `thirdPartyId` à chaque campagne. Lorsque vous supprimez la campagne dans Adobe Target, la propriété thirdPartyId n’est pas supprimée. Vous ne pouvez pas réutiliser la propriété `thirdPartyId` pour des campagnes de différents types (AB, XT) et elle ne peut pas être supprimée manuellement. Pour éviter ce problème, attribuez un nom unique à chaque campagne. Ainsi, les noms de campagne ne peuvent pas être réutilisés dans différents types de campagnes.
+>Lorsque vous créez une campagne dans Adobe Target, elle affecte la propriété `thirdPartyId` à chaque campagne. Lorsque vous supprimez la campagne dans Adobe Target, la propriété thirdPartyId n’est pas supprimée. Vous ne pouvez pas réutiliser la propriété `thirdPartyId` pour des campagnes de différents types (AB, XT) et elle ne peut pas être supprimée manuellement. Pour éviter ce problème, attribuez un nom unique à chaque campagne ; les noms de campagne ne peuvent pas être réutilisés dans différents types de campagne.
 >
->Si vous utilisez le même nom dans le même type de campagne, vous remplacerez la campagne existante.
+>Si vous utilisez le même nom dans le même type de campagne, vous remplacez la campagne existante.
 >
 >Lors de la synchronisation, si le message d’erreur « Échec de la demande. `thirdPartyId` existe déjà. » s’affiche, modifiez le nom de la campagne et resynchronisez-la.
 
@@ -79,7 +79,7 @@ Pour ajouter une activité :
 
    >[!NOTE]
    >
-   >Il est recommandé de [créer des marques via la console Activités](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
+   >Adobe vous recommande de [créer des marques dans la console activités](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
    >
    >
    >Si vous créez une marque en utilisant un autre procédé, assurez-vous que le nœud `/campaigns/<brand>/master` existe pour éviter qu’une erreur ne se produise lorsque vous tenterez de créer une activité.
@@ -140,7 +140,7 @@ Après avoir [lancé le processus de ciblage](/help/sites-authoring/content-targ
 
 >[!CAUTION]
 >
->Soyez prudent lorsque vous désactivez le ciblage d’un composant déjà ciblé dans l’instance d’auteur. L’activité correspondante sera automatiquement supprimée de l’instance de publication.
+>Soyez prudent lorsque vous désactivez le ciblage d’un composant déjà ciblé dans l’instance d’auteur. L’activité correspondante est automatiquement supprimée de l’instance de publication.
 
 >[!NOTE]
 >
@@ -251,7 +251,7 @@ Effectuez la procédure suivante après [avoir lancé le processus de ciblage](/
 
    ![Cible](do-not-localize/chlimage_1.png)
 
-   Le contenu du composant est l’offre de l’expérience par défaut. Lorsqu’un composant est ciblé, son nœud par défaut sera répliqué pour chaque expérience. Cela est nécessaire afin de modifier le nœud de contenu adéquat lors d’une création spécifique à une expérience. Pour ces expériences autres que l’expérience par défaut, [ajoutez une offre personnalisée](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) ou [une offre de bibliothèque](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
+   Le contenu du composant est l’offre de l’expérience par défaut. Lorsqu’un composant est ciblé, son nœud par défaut est répliqué pour chaque expérience. Cela est nécessaire afin de modifier le nœud de contenu adéquat lors d’une création spécifique à une expérience. Pour ces expériences autres que l’expérience par défaut, [ajoutez une offre personnalisée](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) ou [une offre de bibliothèque](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
 
 #### Création d’une offre en ajoutant un composant cible {#creating-an-offer-by-adding-a-target-component}
 
@@ -342,7 +342,7 @@ Vous ne pouvez pas ajouter d’offres de bibliothèque à l’expérience par d�
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
-   Le sélecteur d’offres vous permet de rechercher ou de filtrer des offres. Lors de la navigation ou du filtrage, vous pouvez également trier les offres et modifier leur mode d’affichage. Le nombre dans l’angle supérieur droit indique le nombre d’offres disponibles dans la bibliothèque actuelle.
+   Le sélecteur d’offres vous permet de rechercher ou de filtrer des offres. Lors de la navigation ou du filtrage, vous pouvez également trier les offres et modifier leur mode d’affichage. Le nombre dans le coin supérieur droit indique le nombre d’offres disponibles dans la bibliothèque actuelle.
 
    * Cliquez ou appuyez sur **Parcourir** pour accéder à un autre dossier. Le volet de navigation s’affiche. Cliquez sur la flèche pour accéder aux dossiers. Cliquez ou appuyez sur **Parcourir** pour fermer le volet de navigation.
 
@@ -402,11 +402,11 @@ Les audiences s’affichent dans la partie gauche du diagramme de mappage, tandi
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
-Définissez une audience à l’aide d’un segment. La configuration cloud de la page détermine les segments à votre disposition. Lorsque la page n’est pas associée à une configuration cloud Adobe Target, les segments AEM sont disponibles pour définir des audiences. Lorsque la page est associée à une configuration cloud Adobe Target, vous utilisez des segments Target.
+Définissez une audience à l’aide d’un segment. La configuration du cloud de la page détermine les segments qui vous sont disponibles. Lorsque la page n’est pas associée à une configuration cloud Adobe Target, les segments AEM sont disponibles pour définir des audiences. Lorsque la page est associée à une configuration cloud Adobe Target, vous utilisez des segments Target.
 
 Pour plus d’informations sur les moteurs de ciblage, consultez [Moteur de ciblage](/help/sites-authoring/personalization.md#targeting-engine).
 
-Une audience ne doit pas être utilisée par plusieurs expériences. Un symbole d’avertissement s’affiche en regard d’une expérience lorsqu’elle est mappée à une audience mappée à une autre expérience.
+N’utilisez pas plus d’une expérience pour une audience. Un symbole d’avertissement s’affiche en regard d’une expérience lorsqu’elle est mappée à une audience mappée à une autre expérience.
 
 ![Symbole d’avertissement lorsqu’une expérience est mappée à une audience mappée à une autre expérience.](do-not-localize/chlimage_1-6.png)
 
@@ -508,7 +508,7 @@ Utilisez les options avancées pour déterminer ce qui se passe **après** qu’
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Incrémenter le décompte, libérer l’utilisateur et autoriser le retour</strong></td>
+   <td><strong>Incrémenter le décompte, libérer l’utilisateur et autoriser la rentrée</strong></td>
    <td>Sélectionnez l’expérience que voit le visiteur s’il entre à nouveau dans l’activité :
     <ul>
      <li>Même expérience</li>
@@ -517,7 +517,7 @@ Utilisez les options avancées pour déterminer ce qui se passe **après** qu’
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Incrémenter la comptabilisation, libérer l’utilisateur et bloquer le retour</strong></td>
+   <td><strong>Incrémenter le décompte, libérer l’utilisateur et bloquer la rentrée</strong></td>
    <td>Déterminez ce que l’utilisateur voit au lieu du contenu de l’activité :
     <ul>
      <li>Même expérience, sans suivi</li>

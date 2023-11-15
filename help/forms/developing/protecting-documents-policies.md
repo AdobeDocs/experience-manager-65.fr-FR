@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '15464'
+source-wordcount: '15462'
 ht-degree: 82%
 
 ---
@@ -1328,7 +1328,7 @@ Le tableau suivant répertorie les paires clé-valeur requises lors de la créat
   <tr>
    <td><p><code>WaterBackCmd:OPACITY</code></p></td>
    <td><p>Indique l’opacité du filigrane. La valeur par défaut est 0,5 si elle n’est pas spécifiée.</p></td>
-   <td><p>Valeur comprise entre 0.0 et 1.0.</p></td>
+   <td><p>Valeur comprise entre 0,0 et 1,0.</p></td>
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:ROTATION</code></p></td>

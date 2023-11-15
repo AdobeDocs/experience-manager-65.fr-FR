@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '3786'
-ht-degree: 52%
+source-wordcount: '3787'
+ht-degree: 51%
 
 ---
 
@@ -170,7 +170,7 @@ Pour créer un émulateur, voir [Création d’un émulateur mobile personnalis�
 **Principales caractéristiques des émulateurs mobiles**
 
 * Un groupe d’appareils est composé d’un ou de plusieurs émulateurs : la page de configuration du groupe d’appareils, par exemple /etc/mobile/groups/touch, contient la variable `emulators` sous la propriété `jcr:content` noeud .
-Remarque : Bien que le même émulateur puisse être affecté à plusieurs groupes d’appareils, ce n’est pas très logique.
+Remarque : bien qu’il soit possible que le même émulateur appartienne à plusieurs groupes d’appareils, cela n’a pas beaucoup de sens.
 
 * Au moyen de la boîte de dialogue de configuration du groupe d’appareils, la variable `emulators` est définie avec le chemin d’accès des émulateurs souhaités. Par exemple : `/libs/wcm/mobile/components/emulators/iPhone4`.
 

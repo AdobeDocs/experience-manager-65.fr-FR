@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2055'
-ht-degree: 75%
+source-wordcount: '2051'
+ht-degree: 73%
 
 ---
 
@@ -98,7 +98,7 @@ Il peut toutefois exister des cas dans lesquels cela n’est pas tout à fait n�
 
 >[!NOTE]
 >
->Bien que tous les modèles soient pris en charge dans AEM, les auteurs devront impérativement mettre en œuvre le troisième (et respecter ainsi les [principes de développement de SPA recommandés dans AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)) pour pouvoir interagir avec la SPA dans AEM et en modifier le contenu comme ils en ont l’habitude.
+>Bien que tous les modèles soient pris en charge dans AEM, uniquement en mettant en oeuvre le troisième (et en suivant donc la recommandation [Principes de développement SPA en AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)) peut permettre aux auteurs de contenu d’interagir avec le SPA et de le modifier dans AEM comme ils en ont l’habitude.
 
 ## Migration de SPA existantes vers AEM {#migrating-existing-spas-to-aem}
 

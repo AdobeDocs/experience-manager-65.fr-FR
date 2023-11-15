@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 63%
+source-wordcount: '790'
+ht-degree: 61%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 63%
 
 Par défaut, AEM utilise le gestionnaire d’authentification des jetons pour authentifier chaque demande. Toutefois, pour répondre aux demandes d’authentification, le gestionnaire d’authentification des jetons requiert l’accès au référentiel pour chaque demande. Ceci est dû au fait que des cookies sont utilisés pour maintenir l’état d’authentification. En toute logique, l’état doit être conservé dans le référentiel pour valider les requêtes suivantes. En effet, cela signifie que le mécanisme d’authentification est à l’état.
 
-Cela est particulièrement important pour l’évolutivité horizontale. Dans une configuration comportant plusieurs instances, comme la ferme de serveurs de publication représentée ci-dessous, l’équilibrage de charge ne peut pas être exécuté de façon optimale. Avec l’authentification avec état, l’état d’authentification persistante n’est disponible que sur l’instance où l’utilisateur est authentifié pour la première fois.
+Cela est particulièrement important pour l’évolutivité horizontale. Dans une configuration multi-instances comme la ferme de publication décrite ci-dessous, l’équilibrage de charge ne peut pas être réalisé de manière optimale. Avec l’authentification avec état, l’état d’authentification persistante n’est disponible que sur l’instance où l’utilisateur est authentifié pour la première fois.
 
 ![chlimage_1-33](assets/chlimage_1-33a.png)
 

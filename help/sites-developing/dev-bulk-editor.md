@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 53%
+source-wordcount: '1832'
+ht-degree: 52%
 
 ---
 
@@ -436,7 +436,7 @@ Chaque partie de l’éditeur en bloc peut être configurée. Le tableau suivant
      <li>cellCls : classe css </li>
      <li>readOnly : true pour ne pas pouvoir modifier la valeur </li>
      <li>case à cocher : true pour définir toutes les cellules de la colonne comme cases à cocher (valeurs true/false) </li>
-     <li>forcedPosition : valeur entière pour spécifier où la colonne doit être placée dans la grille (entre 0 et le nombre de colonnes-1)<p><br /> </p> </li>
+     <li>forcedPosition : valeur entière permettant de spécifier où la colonne doit être placée dans la grille (entre 0 et le nombre de colonnes-1)<p><br /> </p> </li>
     </ul> </td>
   </tr>
  </tbody>

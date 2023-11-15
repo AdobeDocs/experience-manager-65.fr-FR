@@ -2,10 +2,10 @@
 title: Comment mettre en ligne votre application découplée
 description: Dans cette partie du Parcours de développement AEM découplé, apprenez à déployer une application découplée.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1873'
-ht-degree: 98%
+source-wordcount: '1874'
+ht-degree: 97%
 
 ---
 
@@ -100,7 +100,7 @@ Pour plus d’informations sur la configuration d’un environnement de dévelop
 
 <!-- Start of CDN Review -->
 
-Il est maintenant temps de préparer votre application découplée AEM pour son lancement, en observant les bonnes pratiques décrites ci-dessous.
+Il est maintenant temps de préparer votre application AEM sans interface pour le lancement, en suivant les bonnes pratiques décrites ci-dessous.
 
 ### Sécurisation de votre application découplée avant son lancement {#secure-and-scale-before-launch}
 

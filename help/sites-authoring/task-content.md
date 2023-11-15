@@ -1,19 +1,15 @@
 ---
 title: Utilisation de tâches
-seo-title: Working with Tasks
 description: Les tâches représentent des éléments de travail à effectuer sur le contenu et sont utilisées dans les projets pour déterminer le niveau d’achèvement des tâches en cours
-seo-description: Tasks represent items of work to be done on content and are used in projects to determine the level of completeness of current tasks
-uuid: df4efb3f-8298-4159-acfe-305ba6b46791
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
-discoiquuid: 1b79d373-73f4-4228-b309-79e74d191f3e
 exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 97%
+source-wordcount: '594'
+ht-degree: 93%
 
 ---
 
@@ -50,7 +46,7 @@ Outre le suivi de l’avancée du projet, vous pouvez également afficher plus d
 
 #### Liste de tâches {#task-list}
 
-Cliquez sur le bouton représentant des points de suspension en bas à droite de la mosaïque des tâches pour afficher la boîte de réception filtrée en fonction des tâches liées au projet. Les détails de la tâche s’affichent avec les métadonnées, comme la date d’échéance, la personne désignée, la priorité et le statut.
+Cliquez sur le bouton représentant des points de suspension en bas à droite de la mosaïque des tâches pour afficher votre boîte de réception filtrée en fonction des tâches liées au projet. Les détails de la tâche s’affichent avec les métadonnées, comme la date d’échéance, la personne désignée, la priorité et le statut.
 
 ![Boîte de réception des tâches du projet](assets/project-tasks.png)
 

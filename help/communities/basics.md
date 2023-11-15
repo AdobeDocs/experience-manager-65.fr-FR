@@ -1,18 +1,14 @@
 ---
 title: Principes de base des composants des communautés
-seo-title: Communities Components Basics
 description: Ajout de fonctionnalités Communities à AEM sites en mode d’édition et configuration de composants
-seo-description: Add Communities features to AEM sites in edit mode and configure components
-uuid: c017a7c5-40d1-4592-9317-96fd727dac86
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '360'
 ht-degree: 2%
 
 ---
@@ -55,7 +51,7 @@ Les composants sélectionnés sont désormais disponibles dans l’explorateur d
 
 [Bibliothèques côté client](../../help/sites-developing/clientlibs.md) (clientlibs) sont nécessaires au bon fonctionnement (JavaScript) et au style (CSS) d’un composant.
 
-Lors de l’ajout d’un composant Communities à une page, si le résultat est une erreur ou une apparence inattendue, la première chose à essayer est d’ajouter les clientlibs requises pour le composant Communities. Pour plus d’informations, voir [Clientlibs des composants Communities](clientlibs.md).
+Lors de l’ajout d’un composant Communities à une page, si le résultat est une erreur ou une apparence inattendue, la première chose à essayer est d’ajouter les bibliothèques client requises pour le composant Communities. Pour plus d’informations, voir [Clientlibs des composants Communities](clientlibs.md).
 
 ### Exemple : révisions placées initialement sans bibliothèques clientes... {#example-initially-placed-reviews-without-client-libraries}
 

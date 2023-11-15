@@ -2,10 +2,10 @@
 title: Configurations et l’explorateur de configurations
 description: Description des configurations AEM et de leur gestion des paramètres d’espace de travail dans AEM.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 58%
+source-wordcount: '1483'
+ht-degree: 62%
 
 ---
 
@@ -29,7 +29,7 @@ Quelle que soit votre perspective, les configurations répondent à deux objecti
 
 ## Configurations en tant qu’administrateur {#configurations-administrator}
 
-L’administrateur AEM et les auteurs peuvent considérer les configurations comme des espaces de travail. Ces espaces de travail peuvent être utilisés pour rassembler des groupes de paramètres et leur contenu associé à des fins d’organisation en implémentant des droits d’accès pour ces fonctionnalités.
+L’administrateur ou administratrice AEM et les auteurs et autrices peuvent considérer les configurations comme des espaces de travail. Ces espaces de travail peuvent être utilisés pour rassembler des groupes de paramètres et leur contenu associé à des fins d’organisation en implémentant des droits d’accès pour ces fonctionnalités.
 
 Des configurations peuvent être créées pour de nombreuses fonctionnalités différentes dans AEM.
 
@@ -40,7 +40,7 @@ Des configurations peuvent être créées pour de nombreuses fonctionnalités di
 
 ### Exemple {#administrator-example}
 
-Par exemple, un administrateur peut créer deux configurations pour les modèles modifiables.
+Par exemple, un administrateur ou une administratrice peut créer deux configurations pour les modèles modifiables.
 
 * WKND-General
 * WKND-Magazine
@@ -75,8 +75,8 @@ Il est simple de créer une configuration dans AEM à l’aide du navigateur de 
    ![Création d’une configuration](assets/configuration-create.png)
 
    * Le **Titre** doit être descriptif.
-   * La variable **Nom** devient le nom du noeud dans le référentiel.
-      * Il est généré automatiquement en fonction du titre et adapté en fonction des [AEM les conventions d’affectation des noms.](/help/sites-developing/naming-conventions.md)
+   * Le **nom** deviendra celui du nœud dans le référentiel.
+      * Il sera généré automatiquement en fonction du titre et ajusté selon les [conventions de nommage AEM](/help/sites-developing/naming-conventions.md).
       * Il peut être adapté si nécessaire.
 1. Vérifiez le type de configurations que vous souhaitez autoriser.
    * [Configurations de cloud](/help/sites-administering/configurations.md)
@@ -91,7 +91,7 @@ Il est simple de créer une configuration dans AEM à l’aide du navigateur de 
 
 #### Modification des configurations et de leurs droits d’accès {#access-rights}
 
-Si vous considérez les configurations comme des espaces de travail, les droits d’accès peuvent être définis sur ces configurations afin d’appliquer qui peut accéder à ces espaces de travail ou qui ne peut pas y accéder.
+Si vous considérez les configurations comme des espaces de travail, les droits d’accès peuvent être définis sur ces configurations afin de définir qui peut ou non accéder à ces espaces de travail.
 
 1. Connectez-vous à AEM as a Cloud Service et dans le menu principal, sélectionnez **Outils** -> **Général** -> **Explorateur de configurations**.
 1. Sélectionnez la configuration à modifier, puis appuyez ou cliquez sur **Propriétés** dans la barre d’outils.
@@ -157,7 +157,7 @@ Examinons maintenant le contenu JCR correspondant :
 
 Dans cet exemple, vous pouvez supposer ici un dossier DAM spécifique à WKND et une configuration correspondante. Démarrage dans ce dossier `/content/dam/wknd`, vous pouvez constater qu’il existe une propriété string nommée `cq:conf` qui référence la configuration qui doit s’appliquer à la sous-arborescence. La propriété est définie sur la propriété `jcr:content` d’un dossier de ressources ou d’une page. Ces liens `conf` sont explicites. Il est donc facile de les suivre en regardant simplement le contenu dans CRXDE.
 
-Saut à l&#39;intérieur `/conf`, vous pouvez suivre la référence et voir qu’il existe une `/conf/wknd` noeud . Il s’agit d’une configuration. Sa recherche est transparente par rapport au code de l’application. L’exemple de code n’a jamais de référence dédiée. Il est masqué derrière l’objet `Conf`. La configuration qui s’applique est contrôlée par le contenu JCR.
+Saut à l&#39;intérieur `/conf`, vous pouvez suivre la référence et voir qu’il existe une `/conf/wknd` noeud . Il s’agit d’une configuration. Sa recherche est transparente par rapport au code de l’application. L’exemple de code n’a jamais de référence dédiée à ce code, il est masqué derrière la balise `Conf` . La configuration qui s’applique est contrôlée par le contenu JCR.
 
 Vous pouvez constater que la configuration contient un nom fixe `settings` qui contient les éléments réels, y compris le noeud `dam/imageserver` dont vous avez besoin dans ce cas. Un tel élément peut être considéré comme un &quot;document de paramètres&quot; et est représenté par un `cq:Page` inclusion d’un `jcr:content` contenant le contenu réel.
 

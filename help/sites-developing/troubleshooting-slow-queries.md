@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '2268'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -180,7 +180,7 @@ AEM prend en charge les langages de requête suivants :
 * JCR-SQL2
 * XPath
 
-L’exemple suivant utilise Query Builder étant donné que c’est le langage de requête le plus courant utilisé par l’équipe de développement AEM, mais les mêmes principes s’appliquent à JCR-SQL2 et XPath.
+L’exemple suivant utilise Query Builder comme langage de requête le plus courant utilisé par les développeurs AEM, mais les mêmes principes s’appliquent à JCR-SQL2 et XPath.
 
 1. Ajoutez une restriction de type de nœud afin que la requête soit résolue sur un index de propriété Lucene existant.
 

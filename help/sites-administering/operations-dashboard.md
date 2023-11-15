@@ -1,21 +1,17 @@
 ---
 title: Tableau de bord des opérations
-seo-title: Operations Dashboard
 description: Découvrez comment utiliser le tableau de bord des opérations dans Adobe Experience Manager.
-seo-description: Learn how to use the Operations Dashboard.
-uuid: ef24813f-a7a8-4b26-a496-6f2a0d9efef6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '6057'
-ht-degree: 99%
+source-wordcount: '6061'
+ht-degree: 98%
 
 ---
 
@@ -230,9 +226,9 @@ Un contrôle d’intégrité composite vise à agréger différents contrôles d
      <li>renvoie le statut Critique si au moins un jeu d’index échoue</li>
      <li>vérifie la valeur <code>lastIndexedTime</code> pour toutes les pistes d’indexation et :
       <ul>
-       <li>renvoie « Critique » si cela remonte à plus de 2 heures ; </li>
-       <li>renvoie « Avertissement » si le délai est compris entre 2 heures et 45 minutes ; </li>
-       <li>renvoie « OK » si cela remonte à moins de 45 minutes ; </li>
+       <li>renvoie l’état Critique s’il y a plus de 2 heures. </li>
+       <li>renvoie l’état d’avertissement s’il y a entre 2 heures et 45 minutes. </li>
+       <li>renvoie l’état OK s’il y a moins de 45 minutes. </li>
       </ul> </li>
      <li>si aucune de ces conditions n’est remplie, renvoie « OK ».</li>
     </ul> <p>Les seuils des états Critique et Avertissement sont configurables. Le MBean pour ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Remarque :</strong> Ce contrôle de l’intégrité est disponible avec AEM 6.4 et a été rétroporté dans AEM 6.3.0.1.</p> </td>
@@ -442,7 +438,7 @@ Exemples :
 
 >[!NOTE]
 >
->Les paramètres de la page de diagnostic n’ont aucune incidence sur ce qui est enregistré dans les fichiers journaux et inversement. Ainsi, même si le journal d’erreurs peut capturer des messages INFO, il est possible qu’ils ne s’affichent pas dans l’interface utilisateur des messages du journal. Par ailleurs, par le biais de l’interface utilisateur, il est possible de capturer des messages DÉBOGAGE provenant de certains packages sans que cela affecte le journal des erreurs. Pour plus d’informations sur la configuration des fichiers journaux, consultez la section [Journalisation](/help/sites-deploying/configure-logging.md).
+>Les paramètres de la page de diagnostic n’ont aucune incidence sur ce qui est enregistré dans les fichiers journaux et inversement. Ainsi, même si le journal d’erreurs peut capturer des messages INFO, il est possible qu’ils ne s’affichent pas dans l’interface utilisateur des messages du journal. De plus, par le biais de l’interface utilisateur, il est possible d’attraper les messages DEBUG de certains packages sans affecter le journal des erreurs. Pour plus d’informations sur la configuration des fichiers journaux, consultez la section [Journalisation](/help/sites-deploying/configure-logging.md).
 
 >[!NOTE]
 >
