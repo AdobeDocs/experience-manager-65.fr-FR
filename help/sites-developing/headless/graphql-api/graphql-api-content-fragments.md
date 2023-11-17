@@ -3,10 +3,10 @@ title: API AEM GraphQL pour l’utilisation des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 5bfd8216c9d3540ac6d795d434dab5afb7bce309
 workflow-type: tm+mt
-source-wordcount: '4774'
-ht-degree: 92%
+source-wordcount: '4848'
+ht-degree: 91%
 
 ---
 
@@ -715,7 +715,28 @@ Pour activer la mise en cache des requêtes persistantes, définissez la variabl
 
 >[!NOTE]
 >
->Pour que la variable [Exigences de Dispatcher pour les documents pouvant être mis en cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), Dispatcher ajoute le suffixe `.json` à toutes les URL de requête conservées, de sorte que le résultat puisse être mis en cache.
+>Lorsque la mise en cache de Dispatcher est activée pour les requêtes persistantes à l’aide de `Define CACHE_GRAPHQL_PERSISTED_QUERIES` an `ETag` L’en-tête est ajouté à la réponse par Dispatcher.
+>
+>Par défaut, la variable `ETag` header est configuré avec la directive suivante :
+>
+>```
+>FileETag MTime Size 
+>```
+>
+>Cependant, ce paramètre peut entraîner des problèmes lorsqu’il est utilisé pour les réponses de requête persistantes, car il ne tient pas compte des petites modifications apportées à la réponse.
+>
+>Pour atteindre un individu `ETag` calculs sur *each* réponse unique : `FileETag Digest` doit être utilisé dans la configuration du dispatcher :
+>
+>```xml
+><Directory />    
+>   ...    
+>   FileETag Digest
+></Directory> 
+>```
+
+>[!NOTE]
+>
+>Pour que la variable [Exigences de Dispatcher pour les documents pouvant être mis en cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), Dispatcher ajoute le suffixe `.json` à toutes les URL de requête persistantes, de sorte que le résultat puisse être mis en cache.
 >
 >Ce suffixe est ajouté par une règle de réécriture, une fois la mise en cache de requête persistante activée.
 
