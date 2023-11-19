@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager]
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
-source-git-commit: 746f34d394a072b133ca161c04585520c7ba6716
+source-git-commit: 31131af52ecb4f9c4caaf8e75e0a9213874b3a1e
 workflow-type: tm+mt
-source-wordcount: '3556'
-ht-degree: 99%
+source-wordcount: '3559'
+ht-degree: 98%
 
 ---
 
@@ -291,9 +291,7 @@ Pour obtenir des instructions sur l’installation du Pack de services sur Exper
 
 >[!NOTE]
 >
->Les fonctionnalités d’AEM Forms, telles que les formulaires adaptatifs, disponibles dans [AEM 6.5 QuickStart](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=fr), sont uniquement destinées à des fins d’exploration et d’évaluation. Pour une utilisation en production, il est essentiel d’obtenir une licence valide pour AEM Forms.
-
-
+>La fonction Forms adaptatif, disponible dans [AEM 6.5 QuickStart](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=fr), est conçu à des fins d’exploration et d’évaluation uniquement. Pour une utilisation en production, il est essentiel d’obtenir une licence valide pour AEM Forms, car les fonctionnalités d’Adaptive Forms nécessitent des licences appropriées.
 
 ### Installer le package d’index GraphQL pour les fragments de contenu d’Experience Manager{#install-aem-graphql-index-add-on-package}
 
