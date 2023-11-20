@@ -61,7 +61,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
-## Correction de problèmes dans le pack de services 18 {#fixed-issues}
+## Correction de problèmes dans le Pack de services 18 {#fixed-issues}
 
 ### [!DNL Sites]{#sites-6519}
 
@@ -73,7 +73,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 #### Interface utilisateur d’administration{#sites-adminui-6519}
 
 * La fonctionnalité Canal AEM Screens **[!UICONTROL Aperçu]** ne fonctionne pas ou ne s’affiche pas dans le tableau de bord. (SITES-15730)
-* Lors d’une opération de déplacement de page, si l’interface utilisateur ne peut pas afficher les références mais indique qu’elles sont automatiquement republiées, elles ne sont *pas* republiées. (SITES-16435)
+* Lors d’une opération de déplacement de page, si l’interface utilisateur ne peut pas afficher les références mais indique qu’elles sont automatiquement republiées, elles *ne sont pas* republiées. (SITES-16435)
 * Dans AEM 6.5 avec Pack de services 16 ou 17, dans la vue Liste des sites pour lesquels la colonne « Workflow » est activée, vous ne pouvez pas trier la liste en fonction des éléments de cette colonne. Aucun tri n’est effectué. (SITES-15385)
 * Pour un modèle de page de redirection, le champ de redirection est devenu obligatoire. Cependant, la validation du champ obligatoire n’est pas appliquée ni ne fonctionne dans ces deux scénarios : lorsqu’une page est créée sans valeur de redirection obligatoire ; il n’est pas possible de créer de page de redirection. La validation ne fonctionne pas lors de la navigation à l’aide de raccourcis clavier. Lorsque le champ est marqué comme non valide, elle ne se poursuit pas. (SITES-15903)
 * Certains **Liens entrants** n’étaient pas inclus dans le nombre affiché dans le panneau **Références**. Par exemple, le panneau affichait **Liens entrants (6)** mais il y avait en fait neuf liens entrants. (SITES-14816)
@@ -182,7 +182,7 @@ Les correctifs dans [!DNL Experience Manager] Forms sont fournis par le biais d
 * L’info-bulle « Présentation de la date relative » ne peut être fermée qu’en appuyant sur Échap (ESC) sur le clavier. L’info-bulle doit se fermer lorsque l’utilisateur ou l’utilisatrice sélectionne une partie de l’interface utilisateur. (NPR-41394)
 * Chaîne non localisée `Something went wrong while adding the private key.` lors de l’ajout d’un fichier de clé privée incorrect dans **Modifier l’utilisateur** > **Keystore**. (NPR-41366)
 * Des icônes sont nécessaires pour Microsoft® SharePoint et Microsoft® One Drive dans l’environnement AEM 6.5. (NPR-41354)
-* Chaîne « UserId/Password mismatch » non localisée dans la boîte de dialogue **Sécurité** > **Utilisateur** > **Créer**. (NPR-41245)
+* Chaîne « UserId/Password mismatch » non localisée. dans la boîte de dialogue **Sécurité** > **Utilisateur** > **Créer**. (NPR-41245)
 * Le code de fenêtre contextuelle et les gestionnaires d’événements sont chargés deux fois, rompant les interfaces utilisateur basées sur Coral3 créées par l’utilisateur ou l’utilisatrice. (NPR-41171)
 * La désélection ne fonctionne pas correctement après l’utilisation de « Sélectionner tout » dans la console AEM Sites. (NPR-41304)
 
@@ -373,7 +373,7 @@ Depuis le pack de services 13 et les versions ultérieures, le journal d’erre
 
   Pour résoudre cette exception, procédez comme suit :
 
-   1. Supprimez les deux dossiers suivants de `crx-quickstart/repository/`.
+   1. Supprimez les deux dossiers suivants de `crx-quickstart/repository/`
 
       * `cache`
       * `diff-cache`
