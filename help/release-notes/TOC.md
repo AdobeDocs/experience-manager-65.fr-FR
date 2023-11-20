@@ -7,10 +7,10 @@ breadcrumb-title: Notes de mise à jour
 user-guide-description: Découvrez les dernières fonctionnalités d’AEM 6.5 dans ces notes de mise à jour.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f618dbaafbbcd1511ea2a678db398b4bcbfda366
-workflow-type: ht
-source-wordcount: '71'
-ht-degree: 100%
+source-git-commit: f6069758853181f96376a77da8d46cc5228b9605
+workflow-type: tm+mt
+source-wordcount: '76'
+ht-degree: 93%
 
 ---
 
@@ -41,5 +41,6 @@ ht-degree: 100%
    + [6.5.0](previous/ga.md)
 + [Instructions d’installation pour le pack de services AEM Forms](aem-forms-current-service-pack-installation-instructions.md)
 + [Programme d’installation du correctif AEM Forms JEE](jee-patch-installer-65.md)
++ [Correctif du Service Pack AEM Forms](/help/release-notes/aem-forms-hotfix.md)
 + [Fonctionnalités obsolètes et supprimées](deprecated-removed-features.md)
 + [Statut des fonctionnalités de l’IU tactile](touch-ui-features-status.md)

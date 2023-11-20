@@ -22,7 +22,7 @@ Présentation vidéo détaillant les options d’intégration de plusieurs vues 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-Les fonctionnalités de gestion multisite de Live Copy et de Language Copy sont utilisées avec Commerce Integration Framework pour gérer globalement les sites dans les régions et les paramètres régionaux.
+Les fonctionnalités de gestion multisite de Live Copy et de Language Copy sont utilisées avec le Commerce integration framework pour gérer globalement les sites dans les régions et les paramètres régionaux.
 
 La configuration recommandée consiste à utiliser une relation 1:1 entre le site AEM et la vue de magasin Adobe Commerce.
 
