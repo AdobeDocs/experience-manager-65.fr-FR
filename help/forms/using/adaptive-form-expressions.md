@@ -1,16 +1,12 @@
 ---
 title: Expressions de formulaire adaptatif
-seo-title: Adaptive Form Expressions
 description: Utilisez les expressions de formulaires adaptatifs pour ajouter la validation, le calcul et la visibilité automatique d’une section activée ou désactivée.
-seo-description: Use adaptive forms expressions to add automatic validation, calculation, and turn visibility of a section on or off.
-uuid: c274dce5-8b87-472f-bff5-53b246fa6584
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 feature: Adaptive Forms
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
 source-wordcount: '2802'
 ht-degree: 89%
@@ -197,7 +193,7 @@ Les méthodes pour ajouter des validations sur un champ sont :
 
 ### Requis {#required}
 
-Pour rendre un composant obligatoire, dans la boîte de dialogue **Modifier** du composant, vous pouvez sélectionner l’option **Titre et texte > Obligatoire**. Vous pouvez également ajouter les **message requis** (facultatif) également. .
+Pour rendre un composant obligatoire, dans la boîte de dialogue **Modifier** du composant, vous pouvez sélectionner l’option **Titre et texte > Obligatoire**. Vous pouvez également ajouter les **message requis** (facultatif) également.
 
 ### Modèles de validation {#validation-patterns}
 

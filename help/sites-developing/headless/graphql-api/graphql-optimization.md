@@ -2,9 +2,9 @@
 title: Optimisation des requêtes GraphQL.
 description: Découvrez comment optimiser vos requêtes GraphQL lors du filtrage, de la pagination et du tri de vos fragments de contenu dans Adobe Experience Manager as a Cloud Service pour une diffusion de contenu sans interface.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
-source-wordcount: '1964'
+source-wordcount: '1965'
 ht-degree: 61%
 
 ---
@@ -316,7 +316,7 @@ Il existe plusieurs autres situations dans lesquelles une expression de filtre n
 
 ### Minimisation de l’imbrication de fragments de contenu {#minimize-content-fragment-nesting}
 
-L’imbrication de fragments de contenu est un excellent moyen de modéliser des structures de contenu personnalisées. Vous pouvez même avoir un fragment avec un fragment imbriqué, un fragment imbriqué, qui a...etc.
+L’imbrication de fragments de contenu est un excellent moyen de modéliser des structures de contenu personnalisées. Vous pouvez même avoir un fragment avec un fragment imbriqué qui comporte un fragment imbriqué, qui a... et ainsi de suite.
 
 Cependant, la création d’une structure avec trop de niveaux peut augmenter les temps de traitement pour une requête GraphQL, car GraphQL doit parcourir la hiérarchie complète de tous les fragments de contenu imbriqués.
 

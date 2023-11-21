@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 feature: Context Hub
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
-source-wordcount: '5002'
-ht-degree: 87%
+source-wordcount: '5004'
+ht-degree: 86%
 
 ---
 
@@ -224,7 +224,7 @@ Récupère les clés du magasin. Vous pouvez éventuellement récupérer les cl�
 
 **Paramètres**
 
-* **includeInternals :** une valeur `true` inclut les clés utilisées en interne dans les résultats. Ces clés commencent par le caractère de soulignement (&quot;_&quot;). La valeur par défaut est `false`.
+* **includeInternals :** Une valeur de `true` inclut les clés utilisées en interne dans les résultats. Ces clés commencent par le caractère de soulignement (&quot;_&quot;). La valeur par défaut est `false`.
 
 **Renvoie**
 
@@ -248,7 +248,7 @@ Récupère l’arbre de données du magasin. Vous pouvez éventuellement inclure
 
 **Paramètres**
 
-* `includeInternals:` : une valeur `true` inclut les paires clé/valeur utilisées en interne dans les résultats. Les clés de ces données commencent par le caractère de soulignement (&quot;_&quot;). La valeur par défaut est `false`.
+* `includeInternals:` Une valeur de `true` inclut les paires clé/valeur utilisées en interne dans les résultats. Les clés de ces données commencent par le caractère de soulignement (&quot;_&quot;). La valeur par défaut est `false`.
 
 **Renvoie**
 

@@ -1,16 +1,14 @@
 ---
 title: Éditeur de texte enrichi
 description: L’éditeur de texte enrichi est un bloc de création de base permettant de saisir du contenu texte dans AEM.
-uuid: 4bcce45a-e14f-41b7-8c6f-89d1e1bb595c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
 source-wordcount: '1835'
-ht-degree: 89%
+ht-degree: 88%
 
 ---
 
@@ -157,7 +155,7 @@ Vous pouvez modifier le style d’une liste en positionnant simplement le curseu
 
 ![Barre d’outils de liens](do-not-localize/cq55_rte_links.png)
 
-Pour générer un lien vers une URL (que ce soit à l’intérieur de votre site Web ou un emplacement externe) mettez en surbrillance le texte requis, puis cliquez sur l’icône Lien hypertexte :
+Un lien vers une URL (que ce soit dans votre site web ou un emplacement externe) est généré en mettant en surbrillance le texte requis, puis en cliquant sur l’icône de lien hypertexte :
 
 ![Icône Lien hypertexte](do-not-localize/chlimage_1-9.png)
 

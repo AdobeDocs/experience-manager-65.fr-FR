@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
-source-wordcount: '9152'
-ht-degree: 98%
+source-wordcount: '9151'
+ht-degree: 97%
 
 ---
 
@@ -606,7 +606,7 @@ Si vous utilisez la couleur comme vecteur d’information, vous devez fournir un
 * Contraste (minimum) : la présentation visuelle du texte et des images du texte présente un rapport de contraste d’au moins 4,5:1, sauf dans les cas suivants :
 
    * Texte grand format : le texte à grande échelle et les images de texte à grande échelle ont un rapport de contraste d’au moins 3:1.
-   * Texte décoratif : aucune exigence de contraste pour le texte ou le texte sous forme d’image intégré à un composant d’interface utilisateur inactif. Il s’agit d’un élément purement décoratif, invisible de tous ou intégré à une partie d’une image contenant un autre contenu significatif.
+   * Texte décoratif : le texte ou les images de texte faisant partie d’un composant d’interface utilisateur inactif, qui sont purement décoratifs ou ne sont visibles par personne, ou qui font partie d’une image contenant un autre contenu visuel significatif, n’ont aucune exigence de contraste.
    * Logotypes : aucune exigence de contraste pour le texte faisant partie d’un logo ou d’un nom de marque.
 
 #### Objectif – Contraste (minimum) (1.4.3) {#purpose-contrast-minimum}

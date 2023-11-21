@@ -1,16 +1,11 @@
 ---
 title: '« Didacticiel : créer un formulaire adaptatif »'
-seo-title: Create an adaptive form
 description: Découvrez comment créer, mettre en page et prévisualiser un formulaire adaptatif. Découvrez également comment configurer les actions d’envoi.
-seo-description: Learn to create, layout, and preview an adaptive form. Also, learn to configure submit actions.
-page-status-flag: de-activated
-uuid: 0010d274-a683-499e-9fa6-ce355d7898a0
-discoiquuid: 55c08940-8c25-4938-8e49-25bce20aaf22
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1384'
 ht-degree: 74%
 
 ---
@@ -29,7 +24,7 @@ Il est plus facile de créer et de gérer des formulaires en suivant un processu
 
 * [Créer un formulaire adaptatif permettant à un client d’ajouter une adresse de livraison](/help/forms/using/create-adaptive-form.md#step-create-the-adaptive-form)
 
-* [Mettre en forme les champs d’un formulaire adaptatif pour afficher et accepter les informations d’un client](/help/forms/using/create-adaptive-form.md#step-add-header-and-footer)
+* [Disposition des champs d’un formulaire adaptatif pour afficher et accepter les informations d’un client](/help/forms/using/create-adaptive-form.md#step-add-header-and-footer)
 
 * [Créer une action d’envoi pour envoyer un courrier électronique contenant du contenu de formulaire](/help/forms/using/create-adaptive-form.md#step-add-components-to-capture-and-display-information)
 * [Prévisualiser et envoyer un formulaire adaptatif](/help/forms/using/create-adaptive-form.md)
@@ -51,7 +46,7 @@ Il est plus facile de créer et de gérer des formulaires en suivant un processu
 
    Pour plus d’informations sur l’interface de création de formulaires adaptatifs et les composants disponibles, voir [Présentation de la création de formulaires adaptatifs](/help/forms/using/creating-adaptive-form.md).
 
-   ![newly-created-adaptive-form](assets/newly-created-adaptive-form.png)
+   ![Un formulaire adaptatif nouvellement créé.](assets/newly-created-adaptive-form.png)
 
 ## Étape 2 : ajout d’un en-tête et d’un pied de page {#step-add-header-and-footer}
 
@@ -60,7 +55,7 @@ AEM [!DNL Forms] fournit de nombreux composants pour l’affichage d’informat
 1. Cliquez sur ![toggle-side-panel](assets/toggle-side-panel.png) > ![treeextenall](assets/treeexpandall.png). L’explorateur de composants s’affiche. Faites glisser et déposez le composant **[!UICONTROL En-tête]** de l’explorateur de composants vers le formulaire adaptatif.
 1. Appuyer **[!UICONTROL Logo]**. La barre d’outils s’affiche. Cliquez sur ![aem_6_3_edit](assets/aem_6_3_edit.png) dans la barre d’outils, saisissez **We.Retail**, puis cliquez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-1. Appuyez sur Image. La barre d’outils s’affiche. Cliquez sur ![cmppr](assets/cmppr.png). L’explorateur de propriétés s’ouvre sur la partie gauche de l’écran. **[!UICONTROL Recherchez]** et téléchargez l’image du logo. Cliquez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). L’image apparaît dans l’en-tête.
+1. Appuyez sur Image. La barre d’outils s’affiche. Cliquez sur ![cmppr](assets/cmppr.png). L’explorateur de propriétés s’ouvre sur la partie gauche de l’écran. **[!UICONTROL Recherchez]** et téléchargez l’image du logo. Cliquez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). L’image s’affiche dans l’en-tête.
 
    Si vous n’en avez pas, vous pouvez appuyer sur Obtenir le fichier pour télécharger le logo utilisé dans cet article.
 
@@ -157,7 +152,7 @@ Les composants sont les blocs de construction d’un formulaire adaptatif. AEM [
 
    ![adaptive-form-with-all-the-components](assets/adaptive-form-with-all-the-components.png)
 
-## Étape 4 : Configuration de l’action d’envoi pour le formulaire adaptatif {#step-configure-submit-action-for-the-adaptive-form}
+## Étape 4 : configurer l’action d’envoi pour le formulaire adaptatif {#step-configure-submit-action-for-the-adaptive-form}
 
 Une action d’envoi est déclenchée lorsqu’un utilisateur clique sur le bouton Envoyer d’un formulaire adaptatif. Vous pouvez utiliser une action d’envoi pour enregistrer les données de formulaire dans le référentiel local, envoyer les données de formulaire à un point de terminaison REST, envoyer les données de formulaire sous forme d’e-mail, etc. Les formulaires adaptatifs fournissent quelques autres actions d’envoi prêtes à l’emploi. Pour plus d’informations, voir [Configuration de l’action Envoyer](/help/forms/using/configuring-submit-actions.md).
 
@@ -173,7 +168,7 @@ Les étapes suivantes vous permettent de configurer les actions d’envoi dʼe-m
    |--- |--- |
    | Origine | `donotreply@weretail.com` |
    | To | `${customer_Email}` |
-   | Objet | Remerciements : Vous avez ajouté l’adresse de livraison sur le site web We.Retail. |
+   | Objet | Remerciements : vous avez ajouté l’adresse de livraison sur le site Web We.Retail. |
    | Modèle de courrier électronique | Bonjour `${customer_Name}`, l’adresse suivante est ajoutée comme adresse de livraison pour votre compte : <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}` et `${customer_ZIPCode}`<br>. Cordialement, We.Retail |
    | Inclure les pièces jointes | Activé |
 

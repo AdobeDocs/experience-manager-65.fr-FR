@@ -4,10 +4,10 @@ description: Découvrez comment préparer le contenu à traduire dans Adobe Expe
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 79%
+source-wordcount: '684'
+ht-degree: 76%
 
 ---
 
@@ -29,7 +29,7 @@ L’exemple de site de démonstration de Geometrixx comprend plusieurs branches 
              |- zh
 ```
 
-Chaque branche de langue d’un site est appelée « copie de langue ». La page racine d’une copie de langue, appelée « racine de langue », identifie la langue du contenu de la copie de langue. Par exemple, `/content/geometrixx/fr` est la racine de langue de la copie en français. Les copies de langue doivent utiliser une [racine de langue configurée correctement](/help/sites-administering/tc-prep.md#creating-a-language-root) afin que la langue appropriée soit ciblée lorsque des sources sont traduites.
+Chaque branche de langue d’un site est appelée « copie de langue ». La page racine d’une copie de langue, appelée « racine de langue », identifie la langue du contenu de la copie de langue. Par exemple, `/content/geometrixx/fr` est la racine de langue de la copie en français. Les copies de langue doivent utiliser une [racine de langue correctement configurée](/help/sites-administering/tc-prep.md#creating-a-language-root) afin que la langue correcte soit ciblée lors de la traduction d’un site source.
 
 La copie de langue pour laquelle vous créez initialement le contenu du site est le gabarit de langue. Le gabarit de langue est la source qui est traduite dans d’autres langues.
 
