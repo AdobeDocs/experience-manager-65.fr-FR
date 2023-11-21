@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: b886336b5a66f16eb7b076aefc2ae326dedb2f52
 workflow-type: tm+mt
-source-wordcount: '3692'
+source-wordcount: '3696'
 ht-degree: 46%
 
 ---
@@ -727,6 +727,7 @@ Les plateformes suivantes sont marquées comme obsolètes dans la version AEM F
 
 - Adobe Acrobat 2017 - [La prise en charge principale d’Adobe Acrobat 2017 prend fin le 6 juin 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
 - Red Hat® Enterprise Linux® 7 (Kernel 3.x) (64 bits)
+- Microsoft® Windows Server 2016 (64 bits)
 - Microsoft® Office 2016
 - OpenOffice 4.1.2
 
