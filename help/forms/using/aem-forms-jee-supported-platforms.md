@@ -7,10 +7,10 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: b886336b5a66f16eb7b076aefc2ae326dedb2f52
+source-git-commit: 7ac81860e127f47aecfd948ddda34241627f457c
 workflow-type: tm+mt
-source-wordcount: '3696'
-ht-degree: 46%
+source-wordcount: '3974'
+ht-degree: 43%
 
 ---
 
@@ -36,6 +36,22 @@ Ce document répertorie les plateformes client et serveur prises en charge pour 
 >
 >- Pour obtenir une liste complète des exceptions concernant les plateformes de serveur prises en charge, voir [Exceptions aux plateformes de serveur prises en charge](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
 >- AEM Forms on JEE ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
+
+### Stratégie de mise à niveau et de support
+
+#### Programme complet
+
+- **Prise en charge de la mise à niveau pour les programmes d’installation complets**: un programme d’installation complet est publié avec chaque 6e version du Service Pack d’AEM. Par exemple, un programme d’installation complet a été publié avec les versions 6.5.12.0 et 6.5.18.0 SP. AEM Forms permet des mises à niveau directes exclusivement à partir des deux derniers programmes d’installation complets. Par exemple, AEM Forms facilite les mises à niveau directes vers la version 6.5.18.0 uniquement à partir des deux derniers programmes d’installation complets, à savoir 6.5.12.0 et 6.5.6.0. Si vous devez effectuer une mise à niveau à partir d’une mise à niveau antérieure, vous pouvez utiliser une mise à niveau en plusieurs étapes pour accéder d’abord à une version complète du programme d’installation prise en charge, puis à la dernière version.
+
+- **Obsolescence et suppression**: la prise en charge de la plateforme est mise à jour à chaque version complète du programme d’installation. Tout logiciel marqué comme obsolète dans la matrice des plates-formes lors d’une version complète du programme d’installation peut être supprimé de la matrice des plates-formes prises en charge dans une version ultérieure complète du programme d’installation, indiquant la fin de la prise en charge du logiciel.
+
+#### Service Packs
+
+- **Couverture du Service Pack**: Adobe fournit une assistance technique pour les environnements AEM Forms à l’aide des six derniers Service Packs. Si votre version actuelle est antérieure aux six derniers Service Packs, Adobe recommande vivement d’effectuer une mise à niveau vers la dernière version afin d’optimiser les performances, la sécurité et la prise en charge continue.
+
+- **Instructions du programme d’installation des correctifs**: lors de l’utilisation des programmes d’installation de correctifs pour la mise à jour, il est essentiel de vérifier que la version sous-jacente complète du programme d’installation n’a pas plus de deux versions. Par exemple, pendant l’installation du Service Pack 6.5.19.0, assurez-vous que la version sous-jacente du programme d’installation complet est 6.5.18.0 ou 6.5.12.0.
+
+- **Prise en charge de la mise à niveau des correctifs**: vous pouvez continuer la mise à niveau vers le dernier Service Pack jusqu’à ce que vous effectuiez également la mise à niveau vers les plateformes prises en charge les plus récentes. Par exemple, la mise à niveau du Service Pack 6.5.12.0 vers 6.5.19.0 est possible, à condition que vous passiez à une combinaison de plateformes prise en charge pour la version 6.5.19.0.
 
 ### Configurations recommandées {#recommendedconfigurations}
 
