@@ -4,9 +4,9 @@ description: Consultez les informations sur la mise à jour, y compris les nouve
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
 source-git-commit: 92481a37d3e2b84277d878547aaf174c7127f499
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3530'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -464,14 +464,15 @@ Pour résoudre le problème, recherchez le fichier `<AEM_Forms_Installation_dir>
 * Lorsqu’un formulaire adaptatif est publié, toutes ses dépendances, y compris les stratégies, sont republiées, même si aucune modification ne leur a été apportée. (FORMS-10454)
 * Lorsqu’un utilisateur ou une utilisatrice choisit de configurer un champ pour la première fois dans un formulaire adaptatif, l’option permettant d’enregistrer une configuration ne s’affiche pas dans l’explorateur de propriétés. Sélectionner un autre champ du formulaire adaptatif à configurer dans le même éditeur pour résoudre le problème.
 * Lorsqu’une URL de redirection est définie dans le conteneur de guide d’un formulaire adaptatif, la signature en ligne cesse de fonctionner. (FORMS-10493)
-Pour résoudre ce problème, téléchargez et installez le [correctif pour la version 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+Pour résoudre ce problème, téléchargez et installez le [correctif pour la version 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 * La publication de tous les modèles de document d’enregistrement (DoR) échoue. Seuls les modèles de document d’enregistrement basés sur des paramètres régionaux anglais et les modèles de document d’enregistrement associés basés sur les formulaires sont publiés. (FORMS-10535)
-Pour résoudre ce problème, téléchargez et installez le [correctif pour la version 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+Pour résoudre ce problème, téléchargez et installez le [correctif pour la version 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
 
 #### Communications interactives
 
-* Après la mise à niveau vers AEM Pack de services 18, il n’est pas possible d’ouvrir la communication interactive avec des images intégrées volumineuses en mode d’édition. (FORMS-10578) Pour résoudre le problème, téléchargez et installez le fichier [correctif pour la version 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+* Après la mise à niveau vers AEM Pack de services 18, il n’est pas possible d’ouvrir la communication interactive avec des images intégrées volumineuses en mode d’édition. (FORMS-10578)
+Pour résoudre le problème, téléchargez et installez le [correctif pour la version 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
 ## Lots OSGi et packages de contenu inclus{#osgi-bundles-and-content-packages-included}
 
