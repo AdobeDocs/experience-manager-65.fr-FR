@@ -2,10 +2,10 @@
 title: Fonctionnalités obsolètes et supprimées de la version 6.5 d’Adobe Experience Manager.
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans Adobe Experience Manager 6.5
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
-workflow-type: ht
-source-wordcount: '1712'
-ht-degree: 100%
+source-git-commit: bbd18486a77d7b46454aacff23147b38860bd895
+workflow-type: tm+mt
+source-wordcount: '1741'
+ht-degree: 98%
 
 ---
 
@@ -31,6 +31,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 
 | Domaine | Fonctionnalité | Remplacement | Version (SP) |
 |---|---|---|---|
+| Sites | La variable **Adobe AEM configuration des interrogations gérées** service : `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | La variable **Adobe AEM Analytics Report Sling Importer** service. Voir Connexion à Adobe Analytics et création de structures - [Configuration de l’intervalle d’importation](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
 | Screens | ActiveMQ dans AEM. ActiveMQ a été utilisé pour la communication entre deux instances de publication AEM. | Adobe recommande aux clientes et clients d’utiliser load-balancer. |  |
 | [!DNL Sites] | Propriétés des fragments d’expérience pour l’**État des médias sociaux**. |   | 6.5.11.0 |
 | [!DNL Sites] | Modèles de fragment de contenu, pour la création de fragments de contenu simples. | [Fragments de contenu structuré basés sur des modèles](/help/assets/content-fragments/content-fragments-models.md) maintenant. | 6.5.11.0 |
