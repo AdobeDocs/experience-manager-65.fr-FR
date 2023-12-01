@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 8d06457241919095fd9802f69df426a1cc6851da
+source-git-commit: f8f82ad5805095f331432471b614225f761e645c
 workflow-type: tm+mt
-source-wordcount: '3675'
-ht-degree: 93%
+source-wordcount: '3530'
+ht-degree: 92%
 
 ---
 
@@ -38,23 +38,12 @@ ht-degree: 93%
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
+**Principales fonctionnalités et améliorations**
+
 Voici quelques-unes des fonctionnalités et améliorations clés de cette version :
 
-**Fonctions clés**
-
-* Assets, Dynamic Media - [Prise en charge du suivi de sous-titres et d’audio multiples pour les vidéos dans Dynamic Media](/help/assets/video.md#about-msma) : vous pouvez désormais facilement ajouter plusieurs sous-titres et plusieurs pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs et autrices peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface utilisateur.
-
-* Ressources - À partir des résultats de recherche, vous pouvez désormais accéder à l’emplacement du dossier contenant une ressource, ce qui vous permet d’effectuer diverses tâches de gestion des ressources. (ASSETS-23182)
-
-**Améliorations clés**
-
-* Les performances du sélecteur Polaris de sites dans les fragments de contenu ont été améliorées. (SITES-14092)
-
 * Activation de la personne Éditeur de page/Composant d’image Sites pour référencer des ressources à partir du service cloud Assets à distance. (SITES-13448, SITES-13433)
-
-* Pour trouver rapidement un projet en mode Liste où votre système peut contenir de nombreux projets, Adobe prend désormais en charge le tri côté serveur. Les nœuds de projet sont triés sur le serveur principal en fonction de la colonne sélectionnée par l’utilisateur ou l’utilisatrice avant d’effectuer leur rendu dans l’interface utilisateur. (NPR-41027)
-
-* AEM 6.5.19.0 prend en charge MongoDB, de la version 5.0 à la version 6.0.
+* AEM prend désormais en charge le tri côté serveur pour accélérer la navigation du projet en mode Liste. Les noeuds de projet sont triés en fonction de la colonne sélectionnée par l’utilisateur avant d’apparaître dans l’interface.
 
 **Fonctionnalité obsolète**
 
@@ -292,7 +281,7 @@ Pour obtenir des instructions sur l’installation du Pack de services sur Exper
 
 >[!NOTE]
 >
->La fonctionnalité de formulaires adaptatifs, disponible dans [AEM 6.5 QuickStart](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=fr), est conçue à des fins d’exploration et d’évaluation uniquement. Pour une utilisation à des fins de production, il est essentiel d’obtenir une licence valide pour AEM Forms, car la fonctionnalité de formulaires adaptatifs nécessite une licence appropriée.
+>La fonctionnalité de formulaires adaptatifs, disponible dans [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=fr), est conçue à des fins d’exploration et d’évaluation uniquement. Pour une utilisation à des fins de production, il est essentiel d’obtenir une licence valide pour AEM Forms, car la fonctionnalité de formulaires adaptatifs nécessite une licence appropriée.
 
 ### Installer le package d’index GraphQL pour les fragments de contenu d’Experience Manager{#install-aem-graphql-index-add-on-package}
 
@@ -458,7 +447,7 @@ Pour résoudre le problème, recherchez le fichier `<AEM_Forms_Installation_dir>
 
 #### Installation du fragment de servlet (AEM Service Pack 6.5.14.0 ou version antérieure)
 
-* Si vous effectuez une mise à niveau vers AEM Service Pack 6.5.15.0 ou une version ultérieure et que votre instance AEM fonctionne sur Tomcat 8.5.88, il est obligatoire d’installer le fragment de servlet. *before* vous procédez à l&#39;installation du Service Pack 6.5.15.0 ou de toute version ultérieure.
+* Si vous effectuez une mise à niveau vers AEM Service Pack 6.5.15.0 ou version ultérieure et que votre instance AEM fonctionne sur Tomcat 8.5.88, il est obligatoire d’installer le fragment de servlet. *before* vous procédez à l&#39;installation du Service Pack 6.5.15.0 ou supérieur.
 * Il est obligatoire d’installer le fragment de servlet pour tous les serveurs d’applications, à l’exception de ceux exécutés sur JBoss® EAP 7.4.0.
 
 **Pour installer le fragment de servlet :**
@@ -485,8 +474,7 @@ Pour résoudre le problème, téléchargez et installez le [correctif pour la ve
 
 #### Communications interactives
 
-* Après la mise à niveau vers AEM Pack de services 18, il n’est pas possible d’ouvrir la communication interactive avec des images intégrées volumineuses en mode d’édition. (FORMS-10578)
-Pour résoudre le problème, téléchargez et installez le [correctif pour la version 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+* Après la mise à niveau vers AEM Pack de services 18, il n’est pas possible d’ouvrir la communication interactive avec des images intégrées volumineuses en mode d’édition. (FORMS-10578) Pour résoudre le problème, installez le [correctif pour la version 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
 ## Lots OSGi et packages de contenu inclus{#osgi-bundles-and-content-packages-included}
 
