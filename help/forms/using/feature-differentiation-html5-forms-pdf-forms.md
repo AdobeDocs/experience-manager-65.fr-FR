@@ -8,10 +8,10 @@ topic-tags: hTML5_forms
 docset: aem65
 feature: Mobile Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 40%
+ht-degree: 32%
 
 ---
 
@@ -48,7 +48,7 @@ Le tableau suivant indique les fonctionnalités prises en charge par les formula
   </tr>
   <tr>
    <td>Pagination<br /> </td>
-   <td><p>Un formulaire HTML5 est divisé en panneaux et cases pour lui donner une apparence similaire aux PDF forms. La taille de la page est calculée dynamiquement. Si tout le contenu d’une page d’un formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge est masquée. Un espace vide (espace vide) n’est pas affiché entre les pages au-dessus et au-dessous de la page vierge.</p> <p>Si la fusion de données ou les scripts ajoutent du contenu à une page, la longueur de la page s’étend pour s’adapter au contenu nouvellement ajouté. Aucune nouvelle page n’est ajoutée au formulaire pour s’adapter au contenu nouvellement ajouté. </p> <p><strong>Remarque :</strong> lorsque tout le contenu d’une page de formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge (espace blanc) reste visible entre la 1ère et 2e page mais pas entre les autres pages.</p> </td>
+   <td><p>Un formulaire HTML5 est divisé en panneaux et cases pour lui donner une apparence similaire aux PDF forms. La taille de la page est calculée dynamiquement. Si tout le contenu d’une page d’un formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge est masquée. Un espace vide (espace vide) n’est pas affiché entre les pages au-dessus et au-dessous de la page vierge.</p> <p>Si la fusion de données ou les scripts ajoutent du contenu à une page, la longueur de la page s’étend pour s’adapter au contenu nouvellement ajouté. Aucune nouvelle page n’est ajoutée au formulaire pour s’adapter au contenu nouvellement ajouté. </p> <p><strong>Remarque :</strong> Lorsque tout le contenu d’une page d’un formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge (espace vide) reste visible entre la première et la deuxième page, mais pas entre les autres pages.</p> </td>
    <td>La pagination des documents PDF dépend du contenu des données fusionnées ou du contenu de l’utilisateur : le nombre de pages est augmenté/réduit en conséquence.</td>
   </tr>
   <tr>

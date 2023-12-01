@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '3226'
-ht-degree: 41%
+ht-degree: 39%
 
 ---
 
@@ -128,13 +128,13 @@ Bien que le paramètre ND de base soit obligatoire dans Administration Console, 
 
 **Nom complet :** (obligatoire) attribut de schéma pour le nom complet de l’utilisateur.
 
-**ID de connexion :** (obligatoire) attribut de schéma pour l’ID de connexion de l’utilisateur.
+**Identifiant de connexion :** (obligatoire) attribut de schéma pour l’identifiant de connexion de l’utilisateur.
 
-**Nom :** (obligatoire) attribut de schéma pour le nom de l’utilisateur.
+**Nom :** (obligatoire) attribut de schéma pour le nom de l’utilisateur.
 
-**Prénom :** (obligatoire) attribut de schéma pour le prénom de l’utilisateur.
+**Prénom :** (obligatoire) attribut de schéma pour le prénom de l’utilisateur
 
-**Initiales :** attribut de schéma pour les initiales de l’utilisateur.
+**Initiales :** attribut de schéma pour les initiales de l’utilisateur.
 
 **Calendrier professionnel :** permet d’associer un calendrier professionnel à un utilisateur, en fonction de la valeur de ce paramètre (clé du calendrier professionnel). Les calendriers professionnels définissent les jours ouvrés et non ouvrés. AEM forms peut faire appel à des calendriers professionnels lors du calcul des dates et heures futures associées à des événements, tels que rappels, échéances et transmissions. La manière dont vous attribuez des clés de calendrier professionnel aux utilisateurs varie selon que vous utilisez un domaine d’entreprise, local ou hybride. Voir Configuration des calendriers professionnels. 
 
@@ -150,9 +150,9 @@ L’espace utilisé pour afficher le nom de la clé de calendrier professionnel 
 
 **Adresse électronique secondaire :** attribut de schéma pour l’adresse électronique secondaire de l’utilisateur.
 
-**Téléphone :** attribut de schéma pour le numéro de téléphone de l’utilisateur.
+**Téléphone :** attribut de schéma pour le numéro de téléphone de l’utilisateur.
 
-**Adresse postale :** attribut de schéma pour l’adresse postale de l’utilisateur.
+**Adresse postale :** attribut de schéma pour l’adresse postale de l’utilisateur.
 
 **Paramètres régionaux :** attribut de schéma contenant les paramètres régionaux ISO. La valeur de cet attribut est un code de langue à deux lettres ou un code de langue et de pays.
 

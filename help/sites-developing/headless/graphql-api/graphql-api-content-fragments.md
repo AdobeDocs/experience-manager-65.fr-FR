@@ -3,10 +3,10 @@ title: API AEM GraphQL pour l’utilisation des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 5bfd8216c9d3540ac6d795d434dab5afb7bce309
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '4848'
-ht-degree: 91%
+source-wordcount: '4847'
+ht-degree: 90%
 
 ---
 
@@ -554,7 +554,7 @@ Les critères de tri sont les suivants :
    * le premier champ de la liste définit l’ordre de tri principal
       * le deuxième champ est utilisé si deux valeurs du critère de tri principal sont égales
       * le troisième champ est utilisé si les deux premiers critères sont égaux, etc.
-   * valeur séparée par des points, c’est-à-dire field1.subfield.subfield, etc.
+   * notation pointillée, à savoir : `field1.subfield.subfield`, etc.
 * avec un sens d’ordre optionnel,
    * ASC (croissant) ou DESC (décroissant) ; la valeur par défaut est ASC,
    * le sens peut être spécifié par champ : vous pouvez trier un champ par ordre croissant et un autre par ordre décroissant (name, firstName DESC).

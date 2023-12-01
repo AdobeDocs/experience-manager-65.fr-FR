@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '1779'
+source-wordcount: '1778'
 ht-degree: 40%
 
 ---
@@ -159,7 +159,7 @@ En outre, il est vivement recommandé de configurer la banque de données sur un
 
 L’un des avantages supplémentaires du déploiement d’un ensemble de réplications MongoDB avec un cluster de plusieurs instances d’auteur est de disposer d’un scénario de récupération automatisée avec un temps d’arrêt minimal en cas d’échec des instances d’auteur, de la réplication MongoDB ou d’un centre de données complet. Néanmoins, le choix de MongoMK plutôt que TarMK ne doit pas être uniquement motivé par les exigences de reprise, car TarMK peut également fournir une solution de temps d’arrêt minimal avec un mécanisme de basculement contrôlé.
 
-Si les critères ci-dessus ne doivent pas être remplis au cours des dix-huit premiers mois du déploiement, nous vous recommandons de commencer par déployer AEM à l’aide de TarMK, puis de réévaluer votre configuration à une date ultérieure lorsque les critères ci-dessus s’appliquent, et enfin de déterminer s’il faut rester sur TarMK ou migrer vers MongoMK.
+Si les critères ci-dessus ne doivent pas être satisfaits au cours des 18 premiers mois du déploiement, nous vous recommandons de commencer par déployer AEM à l’aide de TarMK, puis de réévaluer votre configuration à une date ultérieure lorsque les critères ci-dessus s’appliquent, et enfin de déterminer s’il faut rester sur TarMK ou migrer vers MongoMK.
 
 ### Exceptions pour choisir AEM MongoMK plutôt que TarMK sur les instances de publication {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-publish-instances}
 

@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '9151'
+source-wordcount: '9148'
 ht-degree: 97%
 
 ---
@@ -577,15 +577,15 @@ Par exemple, assurez-vous que les informations fournies par couleur sont égalem
    <td><p><strong>Disponibilité</strong></p> </td>
   </tr>
   <tr>
-   <td><p>Mardi 16 mars<sup></sup></p> </td>
+   <td><p>Mardi 16 mars</p> </td>
    <td><p>SIÈGES DISPONIBLES</p> </td>
   </tr>
   <tr>
-   <td><p>Mercredi 17 mars<sup></p> </td>
+   <td><p>Mercredi 17 mars</p> </td>
    <td><p>SIÈGES DISPONIBLES</p> </td>
   </tr>
   <tr>
-   <td><p>Jeudi 18 mars<sup></sup></p> </td>
+   <td><p>Jeudi 18 mars</p> </td>
    <td><p>COMPLET</p> </td>
   </tr>
  </tbody>

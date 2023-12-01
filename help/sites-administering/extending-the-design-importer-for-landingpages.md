@@ -7,7 +7,7 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '3495'
 ht-degree: 42%
@@ -249,7 +249,7 @@ Propriétés prises en charge
 * URL Target, prend en charge l’URL tierce et AEM
 * Options de rendu de page (même fenêtre, nouvelle fenêtre, etc.)
 
-Balise HTML permettant d’inclure le composant « clics publicitaires » dans le fichier ZIP importé. Dans le cas présent, href mappe sur l’URL cible, &quot;Afficher les détails du produit&quot; mappe sur l’étiquette, etc.
+Balise HTML permettant d’inclure le composant « clics publicitaires » dans le fichier ZIP importé. Dans le cas présent, href mappe sur l’URL cible, &quot;Afficher les détails du produit&quot; est mappé sur le libellé, etc.
 
 ```xml
 <div id="cqcanvas">
@@ -282,7 +282,7 @@ Propriétés prises en charge
 * URL Target, prend en charge l’URL tierce et AEM
 * Options de rendu de page (même fenêtre, nouvelle fenêtre, etc.)
 
-Balise HTML permettant d’inclure le composant « lien graphique » dans le fichier ZIP importé. Ici href mappe sur l’URL cible, img src est l’image de rendu, &quot;titre&quot; est utilisé comme texte de survol, etc.
+Balise HTML permettant d’inclure le composant « lien graphique » dans le fichier ZIP importé. Dans le cas présent, href mappe sur l’URL cible, img src est l’image de rendu, &quot;titre&quot; est utilisé comme texte de survol, etc.
 
 ```xml
 <div id="cqcanvas">

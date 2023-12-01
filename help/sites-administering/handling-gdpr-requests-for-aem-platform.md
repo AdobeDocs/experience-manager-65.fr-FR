@@ -3,10 +3,10 @@ title: Traiter des demandes en vertu du RGPD pour Adobe Experience Manager Fo
 description: Traiter des demandes en vertu du RGPD pour Adobe Experience Manager Foundation
 contentOwner: sarchiz
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
-workflow-type: ht
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité, comme le RGPD, le CCPA, etc.
+>Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité, telles que le RGPD, le CCPA, etc.
 
 ## Prise en charge du RGPD par AEM Foundation {#aem-foundation-gdpr-support}
 

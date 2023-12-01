@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '6218'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
 
@@ -101,7 +101,7 @@ Dans la configuration XML que User Management exporte, le nœud racine dont la v
 
 Lors de l’utilisation dʼActive Directory, il est important de comprendre qu’une valeur `objectSID` n’est pas un attribut unique dans plusieurs domaines. Cette valeur stocke l’identifiant de sécurité d’un objet. Dans un environnement à domaines multiples (par exemple, une arborescence de domaines), la valeur `objectSID` peut être différente.
 
-Une valeur `objectSID` est modifiée si un objet est déplacé d’un domaine Active Directory vers un autre domaine. Certains objets ont la même valeur `objectSID` partout dans le domaine. Par exemple, des groupes tels que BUILTIN\Administrators, BUILTIN\Power Users, etc., auront la même valeur `objectSID` indépendamment des domaines. Ces valeurs `objectSID` sont bien connues.
+Une valeur `objectSID` est modifiée si un objet est déplacé d’un domaine Active Directory vers un autre domaine. Certains objets ont la même valeur `objectSID` partout dans le domaine. Par exemple, les groupes tels que BUILTIN\Administrators, BUILTIN\Power Users, etc., auraient le même `objectSID` indépendamment des domaines. Ces valeurs `objectSID` sont bien connues.
 
 ## Ajout d’utilisateurs {#adding-users}
 
@@ -576,7 +576,7 @@ Pour gérer les utilisateurs, groupes et domaines par programme à l’aide de l
 
 1. Appelez les opérations d’utilisateur ou de groupe appropriées.
 
-   Pour rechercher un utilisateur ou un groupe, appelez l’une des `DirectoryManagerServiceService` méthodes de recherche des entités (puisqu’une entité peut être un utilisateur ou un groupe). Dans l’exemple ci-dessous, la méthode `findPrincipalsWithFilter` est appelée à l’aide d’un filtre de recherche (un objet `PrincipalSearchFilter`). Lors de l’utilisation d’un objet `PrincipalSearchFilter`, les principaux locaux ne sont renvoyés que si la propriété `isLocal` est définie sur `true`. Ce comportement est différent de ce qui se produirait avec l’API Java.
+   Pour rechercher un utilisateur ou un groupe, appelez l’une des `DirectoryManagerServiceService` méthodes de recherche des entités (puisqu’une entité peut être un utilisateur ou un groupe). Dans l’exemple ci-dessous, la méthode `findPrincipalsWithFilter` est appelée à l’aide d’un filtre de recherche (un objet `PrincipalSearchFilter`). Lors de l’utilisation d’un objet `PrincipalSearchFilter`, les principaux locaux ne sont renvoyés que si la propriété `isLocal` est définie sur `true`. Ce comportement diffère de ce qui se produirait avec l’API Java.
 
    >[!NOTE]
    >

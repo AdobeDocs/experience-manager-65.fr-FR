@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: ea6c8aa3-f86e-4878-8550-fe1662f10696
-source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '681'
 ht-degree: 1%
@@ -84,7 +84,7 @@ Workflow de modification d’un article :
 
 ### Affichage et modification des métadonnées dans un article {#viewing-and-editing-the-metadata-within-an-article}
 
-Le contenu comme les articles, les bannières, etc., possède de nombreuses propriétés telles que les titres, descriptions, images. Cette action est utilisée pour afficher et modifier ces propriétés. Vous pouvez éventuellement charger ces modifications dans Mobile On-Demand lors de l’enregistrement.
+Le contenu tel que les articles, bannières, etc., présente de nombreuses propriétés telles que des titres, descriptions, images. Cette action est utilisée pour afficher et modifier ces propriétés. Vous pouvez éventuellement charger ces modifications dans Mobile On-Demand lors de l’enregistrement.
 
 Processus général d’affichage/de modification d’un article :
 

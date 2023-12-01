@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '6087'
 ht-degree: 55%
@@ -149,7 +149,7 @@ Ouvrez l’onglet **Configurations** et sélectionnez **Configuration du serveur
 
 Pour prendre en charge les déploiements automatisés et la configuration, le portlet de contenu d’AEM dispose d’une prise en charge de la configuration intégrée qui tente de lire les configurations du chemin d’accès aux classes fourni à l’application du portlet.
 
-Au démarrage, la propriété système **com.day.cq.po rtet.config** est lue pour détecter l’environnement actif. En règle générale, la valeur de cette propriété est du type **dev**, **prod**, **test** et ainsi de suite. Si aucun environnement n’est défini, aucune configuration n’est lue.
+Au démarrage, la propriété système **com.day.cq.po rtet.config** est lue pour détecter l’environnement actif. En règle générale, la valeur de cette propriété ressemble à **dev**, **prod**, **test**, etc. Si aucun environnement n’est défini, aucune configuration n’est lue.
 
 Si un environnement est défini, le système cherche un fichier config dans le chemin d’accès aux classes sous** **com/day/cq/portlet/{env}.config**, où **env** est remplacé par la valeur actuelle pour l’environnement. Ce fichier doit répertorier tous les fichiers de configuration pour cet environnement. Ces fichiers sont recherchés par rapport à l’emplacement du fichier .config. Par exemple, si le fichier contient une ligne `my.service.xml,`, ce fichier est lu à partir du chemin d’accès aux classes sous `com/day/cq/portlet/my.service.config.`. Le nom du fichier est composé de l’identifiant de persistance du service, suivi de **.config**. Dans l’exemple précédent, l’ID de persistance est **my.service**. Le format du fichier de configuration est le format utilisé par le programme d’installation OSGi Apache Sling.
 
@@ -501,7 +501,7 @@ Dans le HTML, vous pouvez utiliser les espaces réservés suivants, qui sont rem
 
 | Chaîne de l’espace réservé | Description |
 |---|---|
-| {name} | Nom du bouton, par exemple **auteur, précédent, actualiser**, etc. |
+| {name} | Nom du bouton, par exemple :**auteur, Précédent, Actualiser**, etc. |
 | {id} | Identifiant CSS du bouton. |
 | {url} | URL de la cible du bouton. |
 | {text} | Libellé du bouton. |
@@ -762,7 +762,7 @@ Pour configurer le portlet :
 
    >[!NOTE]
    >
-   >Si le portlet est configuré pour se connecter à AEM instances de création et de publication qui s’exécutent sur un chemin de contexte différent de** /**, vous devez activer la force **CQUrlInfo** dans la configuration du Gestionnaire de bibliothèques Html de ces instances AEM (par exemple, via la console web Felix) ou la modification ne fonctionnera pas et la boîte de dialogue Préférences ne s’affichera pas.
+   >Si le portlet est configuré pour se connecter à AEM instances de création et de publication qui s’exécutent sur un chemin de contexte différent de **/**, vous devez activer la force. **CQUrlInfo** dans la configuration du Gestionnaire de bibliothèques Html de ces instances AEM (par exemple, via la console web Felix) ou la modification ne fonctionnera pas et la boîte de dialogue Préférences ne s’affichera pas.
 
 1. Enregistrez les modifications apportées à la configuration sur le serveur d’applications.
 
