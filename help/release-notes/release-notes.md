@@ -6,7 +6,7 @@ exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
 source-git-commit: f8f82ad5805095f331432471b614225f761e645c
 workflow-type: tm+mt
 source-wordcount: '3530'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -88,7 +88,7 @@ vers
 #### Back-end principal{#sites-core-backend-6519}
 
 * Améliorez `StyleImpl`. (SITES-15164)
-* Améliorez la branche version/650 du pipeline WCM pour pouvoir exécuter des tests d’intégration pour ses modules. (SITES-12938)
+* Améliorez la version/branche 650 du pipeline WCM pour pouvoir exécuter des tests d’intégration pour ses modules. (SITES-12938)
 
 <!--#### Core Components{#sites-core-components-6519}
 
@@ -118,13 +118,13 @@ vers
 #### MSM - Live Copies{#sites-msm-live-copies-6519}
 
 * Le bouton Déploiement MSM ne fonctionne pas dans l’interface utilisateur graphique tactile. (SITES-16991)
-* La référence de lien n’est pas mise à jour dans le fragment d’expérience lors de la création d’une Live Copy ou du déploiement d’un fragment d’expérience. (SITES-15460)
+* La référence de lien n’est pas mise à jour dans un fragment d’expérience lors de la création d’une Live Copy ou du déploiement d’un fragment d’expérience. (SITES-15460)
 
 #### Éditeur de page{#sites-pageeditor-6519}
 
-* Dans Forms > Thèmes, si vous avez ouvert un thème dans l’éditeur de thèmes, que vous avez apporté quelques modifications et enregistré, puis que vous avez cliqué sur Aperçu, une icône de chargement est visible, mais l’aperçu réel ne se charge pas. (SITES-17164)
+* Dans Forms > Thèmes, si vous avez ouvert un thème dans l’éditeur de thèmes, que vous avez apporté des modifications que vous enregistrées, puis que vous avez cliqué sur Aperçu, qu’une icône de chargement est visible, mais que l’aperçu réel ne se charge pas. (SITES-17164)
 * La sélection de plusieurs types de fichiers de document sur le filtre de type de ressource ne fonctionne pas sur la console de page. Aucun résultat n’est trouvé même si les résultats d’un type de fichier particulier sont disponibles. Par conséquent, les auteurs et les autrices ne peuvent pas filtrer plusieurs documents. Ils ou elles doivent utiliser plusieurs types de documents et les filtrer un par un. (SITES-14047)
-* Après la mise à niveau d’une instance à partir d’AEM 6.5.17 et d’AEM 6.5.18, depuis l’éditeur de page, si vous avez sélectionné **[!UICONTROL Publier la page]**, vous êtes redirigé vers une URL qui n’existe pas. La personne doit être redirigée vers l’assistant de publication. (SITES-15856)
+* Après la mise à niveau d’une instance à partir d’AEM 6.5.17 et d’AEM 6.5.18, depuis l’éditeur de page, si vous sélectionnez **[!UICONTROL Publier la page]**, vous accédez à une URL qui n’existe pas. La personne doit être redirigée vers l’assistant de publication. (SITES-15856)
 * Copie redondante du Presse-papiers d’AEM lors d’un collage à partir du Presse-papiers du système d’exploitation. (SITES-15704)
 * Dans Ressources, la sélection de **[!UICONTROL Documents]** puis, sous **[!UICONTROL Filtertype]**, la sélection de **[!UICONTROL Microsoft® Word]** ou **[!UICONTROL Microsoft® Excel]** n’affiche aucun résultat, même si des fichiers des deux types existent. (SITES-14837)
 
@@ -136,7 +136,7 @@ vers
 
 #### [!DNL Dynamic Media]{#assets-dm-6519}
 
-* Une fois qu’une ressource est chargée dans AEM, le workflow `update_asset` est déclenché. Le workflow ne se termine jamais. En examinant les instances de workflow, le workflow se termine jusqu’à l’étape de chargement du produit. L’étape suivante consiste à charger par lots Scene7. L’utilisateur ou l’utilisatrice peut constater que la ressource se trouve dans Scene7 à partir de l’application Dynamic Media Classic. (ASSETS-30443)
+* Une fois qu’une ressource est chargée dans AEM, le workflow `update_asset` est déclenché. Le workflow ne se termine jamais. En examinant les instances de workflow, le workflow se termine jusqu’à l’étape de chargement du produit. L’étape suivante est le chargement par lots de Scene7. L’utilisateur ou l’utilisatrice peut constater que la ressource se trouve dans Scene7 à partir de l’application Dynamic Media Classic. (ASSETS-30443)
 * Un servlet (point d’entrée d’API) personnalisé renvoie un nom de fichier Dynamic Media (Scene7) incorrect. Cela se produit lorsqu’une ressource est supprimée et remplacée par une ressource du même nom. Le servlet personnalisé renvoie l’ancien nom de fichier Dynamic Media (Scene7), tandis qu’un appel API « jcr » renvoie le nom de fichier correct. (ASSETS-29476)
 * Même après la désactivation de la synchronisation au niveau du dossier, les journaux affichent le déclencheur de « Scene7 ReplicateOnModifyListener ». `ReplicateOnModifyListener/Worker` doit ignorer le traitement des ressources de dossier et des fragments de contenu autres que Dynamic Media. (ASSETS-26705)
 * Les personnes souffrant d’une déficience visuelle sont affectées si le focus n’est pas visible dans les éléments de liste déroulante (Contenu uniquement, Afficher, Plus d’options) en modes noir et blanc à contraste élevé. (ASSETS-25759)
@@ -273,7 +273,7 @@ Pour connaître les plateformes certifiées pour travailler avec cette version, 
 
 1. Tous les lots OSGi sont au statut **[!UICONTROL ACTIF]** ou **[!UICONTROL FRAGMENT]** dans la console OSGi (utilisez la console web : `/system/console/bundles`).
 
-1. Le lot OSGi `org.apache.jackrabbit.oak-core` est de la version 1.22.17 ou ultérieure (utiliser la console web : `/system/console/bundles`). <!-- NPR-41292 for 6.5.19.0 --> <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
+1. Le bundle OSGi `org.apache.jackrabbit.oak-core` est de la version 1.22.17 ou ultérieure (utiliser la console web : `/system/console/bundles`). <!-- NPR-41292 for 6.5.19.0 --> <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
 ### Installer le Pack de services pour [!DNL Experience Manager] Forms{#install-aem-forms-add-on-package}
 
@@ -445,21 +445,21 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 * Après l’installation du programme d’installation complet du Pack de services AEM 6.5.19.0, le déploiement EAR échoue sur JEE en utilisant l’installation clé en main de JBoss®.
 Pour résoudre le problème, recherchez le fichier `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` et mettez à jour `Adobe_Adobe_JAVA_HOME` vers `Adobe_JAVA_HOME` pour toutes les occurrences avant d’exécuter Configuration Manager. (CQDOC-20803)
 
-#### Installation du fragment de servlet (AEM Service Pack 6.5.14.0 ou version antérieure)
+#### Installer le fragment de servlet (Pack de services AEM 6.5.14.0 ou version antérieure)
 
 * Si vous effectuez une mise à niveau vers AEM Service Pack 6.5.15.0 ou version ultérieure et que votre instance AEM fonctionne sur Tomcat 8.5.88, il est obligatoire d’installer le fragment de servlet. *before* vous procédez à l&#39;installation du Service Pack 6.5.15.0 ou supérieur.
-* Il est obligatoire d’installer le fragment de servlet pour tous les serveurs d’applications, à l’exception de ceux exécutés sur JBoss® EAP 7.4.0.
+* Il est obligatoire d’installer le fragment de servlet pour tous les serveurs d’applications, à l’exception de ceux qui s’exécutent sur JBoss® EAP 7.4.0.
 
-**Pour installer le fragment de servlet :**
+**Pour installer le fragment de servlet :**
 
-1. Téléchargement du fragment de servlet à partir de [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar).
+1. Téléchargez le fragment de servlet à partir de la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar).
 1. Démarrez le serveur d’applications.
-1. Attendez que les journaux se stabilisent et vérifiez l’état du lot.
+1. Attendez que les journaux se stabilisent et vérifiez l’état du bundle.
 1. Ouvrez les lots de la console web. L’URL par défaut est `http://[Server]:[Port]/system/console/bundles`.
-1. Sélectionner **[!UICONTROL Installer]** ou **[!UICONTROL Mettre à jour]**.
+1. Cliquez sur **[!UICONTROL Installer]** ou **[!UICONTROL Mettre à jour]**.
 1. Sélectionner le fragment téléchargé
    `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar`
-1. Sélectionner **[!UICONTROL Installer]** ou **[!UICONTROL Mettre à jour]**.
+1. Cliquez sur **[!UICONTROL Installer]** ou **[!UICONTROL Mettre à jour]**.
 1. Attendez que le serveur d’applications se stabilise.
 1. Arrêtez le serveur d’applications.
 
@@ -468,15 +468,16 @@ Pour résoudre le problème, recherchez le fichier `<AEM_Forms_Installation_dir>
 * Lorsqu’un formulaire adaptatif est publié, toutes ses dépendances, y compris les stratégies, sont republiées, même si aucune modification ne leur a été apportée. (FORMS-10454)
 * Lorsqu’un utilisateur ou une utilisatrice choisit de configurer un champ pour la première fois dans un formulaire adaptatif, l’option permettant d’enregistrer une configuration ne s’affiche pas dans l’explorateur de propriétés. Sélectionner un autre champ du formulaire adaptatif à configurer dans le même éditeur pour résoudre le problème.
 * Lorsqu’une URL de redirection est définie dans le conteneur de guide d’un formulaire adaptatif, la signature en ligne cesse de fonctionner. (FORMS-10493)
-Pour résoudre le problème, téléchargez et installez le [correctif pour la version 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
-* La publication de tous les modèles de document d’enregistrement (DoR) échoue. Seuls les modèles de document d’enregistrement basés sur des paramètres régionaux anglais et les modèles de document d’enregistrement basés sur Forms associés sont publiés. (FORMS-10535) Pour résoudre le problème, téléchargez et installez le fichier [correctif pour la version 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+Pour résoudre ce problème, téléchargez et installez le [correctif pour la version 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+* La publication de tous les modèles de document d’enregistrement (DoR) échoue. Seuls les modèles de document d’enregistrement basés sur des paramètres régionaux anglais et les modèles de document d’enregistrement basés sur Forms associés sont publiés. (FORMS-10535)
+Pour résoudre le problème, téléchargez et installez le [correctif pour la version 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
 
 #### Communications interactives
 
 * Après la mise à niveau vers AEM Pack de services 18, il n’est pas possible d’ouvrir la communication interactive avec des images intégrées volumineuses en mode d’édition. (FORMS-10578) Pour résoudre le problème, installez le [correctif pour la version 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
-## Lots OSGi et packages de contenu inclus{#osgi-bundles-and-content-packages-included}
+## Bundles OSGi et packages de contenu inclus{#osgi-bundles-and-content-packages-included}
 
 Les documents texte suivants répertorient les bundles OSGi et les packages de contenu inclus dans [!DNL Experience Manager] 6.5.19.0 : <!-- UPDATE FOR EACH NEW RELEASE -->
 
