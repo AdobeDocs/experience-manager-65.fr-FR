@@ -7,10 +7,10 @@ topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1971'
-ht-degree: 11%
+source-wordcount: '1933'
+ht-degree: 9%
 
 ---
 
@@ -69,9 +69,9 @@ La personnalisation d’un thème fait référence au processus de modification 
 
 ### Conditions préalables pour personnaliser un thème {#prerequisites}
 
-* [Activation des composants principaux des formulaires adaptatifs pour votre environnement.](/help/forms/using/enable-adaptive-forms-core-components.md)
+* [Activation des composants principaux de Forms adaptatif](/help/forms/using/enable-adaptive-forms-core-components.md) pour votre environnement.
 
-* Installez la dernière version d’[Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven est un outil d’automatisation de génération couramment utilisé pour les projets Java™. L’installation de la dernière version vous garantit les dépendances nécessaires à la personnalisation du thème.
+* Installez la dernière version de [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven est un outil d’automatisation de génération couramment utilisé pour les projets Java™. L’installation de la dernière version vous garantit les dépendances nécessaires à la personnalisation du thème.
 
 * Découvrez comment créer une [bibliothèque cliente dans Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=fr). AEM fournit des bibliothèques clientes qui vous permettent de stocker votre code côté client dans le référentiel, de l’organiser en catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client.
 
@@ -145,7 +145,7 @@ Vous avez la possibilité de personnaliser des composants individuels ou d’eff
 
 La variable `variable.scss` contient les variables globales du thème. En mettant à jour ces variables, vous pouvez apporter des modifications liées au style au niveau du thème. Pour appliquer des styles au niveau du thème, procédez comme suit :
 
-1. Ouvrez le fichier `<your-theme-sources>/src/site/_variables.scss` en mode d’édition.
+1. Ouvrez le `<your-theme-sources>/src/site/_variables.scss` pour modification.
 1. Modifiez la valeur de n’importe quelle propriété. Par exemple, la couleur d’erreur par défaut est le rouge. Pour changer la couleur de l’erreur du rouge au bleu, modifiez le code hexadécimal de la couleur de la balise `$error`Variable . Par exemple, `$error: #196ee5`.
 
    ![Exemple : couleur d’erreur définie sur bleu](/help/forms/using/assets/theme-level-changes.png)
@@ -233,7 +233,7 @@ To apply and test the customized theme with an Adaptive Form:
 
 1. Log in to your AEM Forms author instance. 
 
-1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
+1. Select **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
 1. Click **Create** > **Adaptive Forms**. The wizard for creating Adaptive Form opens.
 
@@ -247,7 +247,7 @@ An Adaptive Form with the selected theme is created.
 
 1. Log in to your AEM Forms author instance. 
 
-1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
+1. Select **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
 1. Select an Adaptive Form and click Properties. 
 
@@ -271,7 +271,7 @@ Une fois que vous avez testé le thème sur votre environnement de développemen
 
 Une fois le package installé, le thème peut être sélectionné.
 
-![Bibliothèque cliente de thème](/help/forms/using/assets/themeclientlibrary.png)
+![Bibliothèque cliente du thème](/help/forms/using/assets/themeclientlibrary.png)
 
 >[!NOTE]
 >
@@ -283,8 +283,8 @@ Une fois le package installé, le thème peut être sélectionné.
 Les étapes pour appliquer un thème à un formulaire adaptatif sont les suivantes :
 
 1. Connectez-vous à votre instance d’auteur d’AEM locale.
-1. Entrez vos informations d’identification dans la page de connexion d’Experience Manager. Appuyez sur **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
-1. Cliquez sur **Créer** > **Formulaires adaptatifs**.
+1. Entrez vos informations d’identification dans la page de connexion d’Experience Manager. Sélectionner **Adobe Experience Manager** > **Forms** > **Forms et documents**.
+1. Cliquez sur **Créer** > **Forms adaptatif**.
 1. Sélectionnez un modèle de composants principaux de Forms adaptatif et cliquez sur **Suivant**. La variable **Ajouter des propriétés** s’affiche
 1. Spécifiez la variable **Nom** pour votre formulaire adaptatif.
 

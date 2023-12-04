@@ -9,9 +9,9 @@ docset: aem65
 feature: Interactive Images
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4275'
+source-wordcount: '4130'
 ht-degree: 98%
 
 ---
@@ -265,7 +265,7 @@ Si vous modifiez des images interactives avec des zones réactives et que vous r
 
    * Sélectionnez l’image pour pouvoir l’ouvrir dans la page Affichage des détails. Dans la barre d’outils, sélectionnez **[!UICONTROL Modifier]**.
 
-1. Près du coin supérieur gauche de la page, sélectionnez **[!UICONTROL Ajouter une zone réactive]** (icône Appuyer avec le doigt) pour ouvrir la page de gestion des zones réactives.
+1. Dans le coin supérieur gauche de la page, sélectionnez **[!UICONTROL Ajouter une zone réactive]** (icône de sélection à l’aide du doigt) pour ouvrir la page de gestion des zones réactives.
 1. Dans le coin supérieur gauche de la page, sélectionnez **[!UICONTROL Zone réactive]**.
 
    1. Dans le coin supérieur gauche de la page de gestion des zones réactives, sélectionnez **[!UICONTROL Zone réactive]**.

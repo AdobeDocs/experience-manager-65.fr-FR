@@ -10,10 +10,10 @@ discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
 feature: Adaptive Forms
 exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 38%
+source-wordcount: '592'
+ht-degree: 31%
 
 ---
 
@@ -32,8 +32,8 @@ Vous pouvez définir l’aspect général et le style d’un formulaire adaptati
 
 Pour ajouter des styles intégrés à un composant :
 
-1. Ouvrez votre formulaire dans l’éditeur de formulaires, puis choisissez le mode Style. Pour choisir le mode Style, dans la barre d’outils de la page, appuyez sur ](assets/canvas-drop-down.png)canvas-drop-down![ > **Style**.
-1. Sélectionnez un composant dans la page, puis appuyez sur le bouton Modifier ![edit-button](assets/edit-button.png). Les propriétés de style s’ouvrent dans la barre latérale.
+1. Ouvrez votre formulaire dans l’éditeur de formulaires, puis choisissez le mode Style. Pour passer en mode Style, dans la barre d’outils de la page, sélectionnez ![liste déroulante canevas](assets/canvas-drop-down.png) > **Style**.
+1. Sélectionnez un composant dans la page, puis cliquez sur le bouton Modifier . ![edit-button](assets/edit-button.png). Les propriétés de style s’ouvrent dans la barre latérale.
 
    Vous pouvez également sélectionner des composants dans l’arborescence de hiérarchie de formulaire dans la barre latérale. L’arborescence de hiérarchie de formulaires est disponible sous forme d’objets de formulaire dans la barre latérale.
 
@@ -51,7 +51,7 @@ Pour ajouter des styles intégrés à un composant :
    * Avancé (permet de saisir un CSS personnalisé pour le composant)
 
 1. De même, vous pouvez appliquer des styles pour d’autres parties d’un composant tels que Widget, Légende et Aide.
-1. Appuyez sur **Terminé** pour confirmer les modifications ou sur **Annuler** pour annuler les modifications.
+1. Sélectionner **Terminé** pour confirmer les modifications ou **Annuler** pour ignorer les modifications.
 
 ## Exemple : styles intégrés pour un composant de champ {#example-inline-styles-for-a-field-component}
 
@@ -81,12 +81,12 @@ Notez la modification du style de la zone de texte comme illustré ci-dessous ap
    <td><p>Zone de texte</p> </td>
    <td><p>background-color</p> </td>
    <td><p>#6495ED</p> </td>
-   <td><p>Modifie la couleur d’arrière-plan en CornflowerBlue (#6495ED)</p> <p>Remarque : Vous pouvez spécifier un nom de couleur ou son code hexadécimal dans le champ de valeur.</p> </td>
+   <td><p>Modifie la couleur de fond en CornflowerBlue (#6495ED)</p> <p>Remarque : vous pouvez spécifier un nom de couleur ou son code hexadécimal dans le champ de valeur.</p> </td>
   </tr>
   <tr>
    <td><p>Libellé</p> </td>
    <td><p>Dimensions et position &gt; largeur</p> </td>
-   <td><p>100 px</p> </td>
+   <td><p>100 px</p> </td>
    <td><p>Définit la largeur sur 100 px pour le libellé.</p> </td>
   </tr>
   <tr>

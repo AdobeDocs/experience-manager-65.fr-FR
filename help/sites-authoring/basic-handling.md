@@ -7,10 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2987'
-ht-degree: 59%
+source-wordcount: '2963'
+ht-degree: 57%
 
 ---
 
@@ -21,14 +21,14 @@ ht-degree: 59%
 >* Cette page est conçue pour donner un aperçu des opérations de gestion de base lors de l’utilisation de l’environnement de création Adobe Experience Manager (AEM). Il utilise la console **Sites** comme base.
 >
 >* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles et d’autres peuvent être disponibles dans certaines consoles uniquement. Des informations spécifiques sur les consoles individuelles et leurs fonctionnalités associées sont traitées plus en détail sur d’autres pages.
->* Des raccourcis clavier sont disponibles dans toute l’application AEM, notamment lors de l’[utilisation des consoles](/help/sites-authoring/keyboard-shortcuts.md) et de la [modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+>* Des raccourcis clavier sont disponibles dans toute AEM. En particulier lorsque [utilisation des consoles](/help/sites-authoring/keyboard-shortcuts.md) et [modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
 ## Prise en main {#getting-started}
 
 ### Interface utilisateur pour écrans tactiles {#a-touch-enabled-ui}
 
-L’interface utilisateur d’AEM est désormais adaptée aux écrans tactiles. Une interface tactile vous permet d’interagir avec le logiciel en appuyant sur l’écran, en maintenant la touche enfoncée et en le faisant glisser. L’expérience est totalement différente des actions de l’interface de bureau classique, où le clic, le double-clic, le bouton droit et le pointage avec la souris avaient pignon sur rue.
+L’interface utilisateur d’AEM est désormais adaptée aux écrans tactiles. Une interface tactile vous permet d’interagir avec le logiciel par des gestes tels que la sélection, le toucher et le glissement. L’expérience est totalement différente des actions de l’interface de bureau classique, où le clic, le double-clic, le bouton droit et le pointage avec la souris avaient pignon sur rue.
 
 Étant donné que l’interface utilisateur de AEM est tactile, vous pouvez utiliser les gestes tactiles sur vos appareils tactiles (par exemple, téléphone mobile ou tablette) et les actions de la souris sur un poste de travail classique.
 
@@ -42,21 +42,21 @@ Une fois connecté, vous accédez au [panneau de navigation](#navigation-panel).
 >
 >La console **Sites** est utilisée dans ce document pour garantir une bonne compréhension de l’utilisation de base d’AEM.
 >
->Pour commencer, cliquez ou appuyez sur **Sites**.
+>Pour commencer, cliquez sur **Sites**.
 
 ### Navigation dans le produit {#product-navigation}
 
-Lorsqu’une personne utilisatrice accède à une console pour la première fois, un tutoriel sur la navigation dans le produit en question s’affiche. Cliquez ou appuyez dessus pour obtenir une bonne vue d’ensemble de la gestion de base des AEM.
+Lorsqu’une personne utilisatrice accède à une console pour la première fois, un tutoriel sur la navigation dans le produit en question s’affiche. Cliquez pour obtenir une bonne vue d’ensemble de la gestion de base des AEM.
 
 ![Navigation dans le produit](assets/bh-02.png)
 
-Cliquez ou appuyez sur **Suivant** pour accéder à la page suivante de l’aperçu. Cliquez ou appuyez sur **Fermer** ou cliquez ou appuyez en dehors de la boîte de dialogue d’aperçu pour la fermer.
+Cliquez sur **Suivant** pour accéder à la page suivante de la présentation. Cliquez sur **Fermer** ou cliquez en dehors de la boîte de dialogue d’aperçu pour la fermer.
 
 La vue d’ensemble redémarre la prochaine fois que vous accédez à la console, sauf si vous affichez toutes les diapositives ou cochez l’option . **Ne plus afficher**.
 
 ## Navigation globale {#global-navigation}
 
-Pour passer d’une console à une autre, utilisez le panneau de navigation globale. Cliquez ou appuyez sur le lien Adobe Experience Manager, dans le coin supérieur gauche de l’écran, pour accéder au menu déroulant, qui s’affiche en mode plein écran.
+Pour passer d’une console à une autre, utilisez le panneau de navigation globale. Cela se déclenche sous la forme d’une liste déroulante plein écran lorsque vous cliquez sur le lien Adobe Experience Manager dans le coin supérieur gauche de l’écran.
 
 Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant sur **Fermer** pour revenir à votre position précédente.
 
@@ -324,12 +324,12 @@ La sélection d’une ressource spécifique dépend d’une combinaison de la vu
    <td>
     <ul>
      <li>Ordinateur de bureau :<br /> cliquez sur la vignette</li>
-     <li>Appareils mobiles :<br /> Appuyez sur la miniature.</li>
+     <li>Appareils mobiles :<br /> Sélectionner la miniature</li>
     </ul> </td>
    <td>
     <ul>
      <li>Ordinateur de bureau :<br /> cliquez sur la vignette</li>
-     <li>Appareils mobiles :<br /> Appuyez sur la miniature.</li>
+     <li>Appareils mobiles :<br /> Sélectionner la miniature</li>
     </ul> </td>
   </tr>
   <tr>
@@ -337,12 +337,12 @@ La sélection d’une ressource spécifique dépend d’une combinaison de la vu
    <td>
     <ul>
      <li>Ordinateur de bureau :<br /> pointez, puis utilisez l’action rapide</li>
-     <li>Appareils mobiles :<br /> Appuyez et maintenez la carte enfoncée.</li>
+     <li>Appareils mobiles :<br /> Sélection et maintien de la carte</li>
     </ul> </td>
    <td>
     <ul>
      <li>Ordinateur de bureau :<br /> cliquez sur la carte</li>
-     <li>Appareils mobiles :<br /> Appuyez sur la carte.</li>
+     <li>Appareils mobiles :<br /> Sélectionner la carte</li>
     </ul> </td>
   </tr>
   <tr>
@@ -350,12 +350,12 @@ La sélection d’une ressource spécifique dépend d’une combinaison de la vu
    <td>
     <ul>
      <li>Ordinateur de bureau :<br /> cliquez sur la vignette</li>
-     <li>Appareils mobiles :<br /> Appuyez sur la miniature.</li>
+     <li>Appareils mobiles :<br /> Sélectionner la miniature</li>
     </ul> </td>
    <td>
     <ul>
      <li>Ordinateur de bureau :<br /> cliquez sur la vignette</li>
-     <li>Appareils mobiles :<br /> Appuyez sur la miniature.</li>
+     <li>Appareils mobiles :<br /> Sélectionner la miniature</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -410,7 +410,7 @@ La sélection d’une ressource dans la colonne la plus à gauche affiche les re
      ![Vue Colonnes](assets/bh-17.png)
 
    * Les enfants de la ressource sur laquelle vous avez cliqué/appuyé s’affichent dans la colonne située à droite de celle-ci.
-   * Si vous appuyez ou cliquez sur un nom de ressource sans enfant, ses détails s’affichent dans la colonne finale.
+   * Si vous cliquez sur un nom de ressource qui n’a pas d’enfant, ses détails s’affichent dans la colonne finale.
 
 * Appuyez ou cliquez sur la miniature pour sélectionner la ressource.
 
@@ -435,7 +435,7 @@ La sélection d’une ressource dans la colonne la plus à gauche affiche les re
 
 * Le mode Carte affiche des cartes d’informations pour chaque élément au niveau actuel. Elles fournissent des informations telles que :
 
-   * une représentation visuelle du contenu de la page ;.
+   * Représentation visuelle du contenu de la page.
    * Le titre de la page ;
    * Des dates importantes (telles que la date de la dernière modification ou publication) ;
    * La page est verrouillée, masquée ou fait partie d’une Live Copy.
@@ -462,12 +462,12 @@ La sélection d’une ressource dans la colonne la plus à gauche affiche les re
 
    * Cette case apparaît cochée lorsque tous les éléments de la liste sont sélectionnés.
 
-      * Pour tout désélectionner, cliquez ou appuyez sur la case à cocher.
+      * Pour tout désélectionner, cochez la case .
 
    * Lorsque seuls certains éléments sont sélectionnés, le signe moins apparaît.
 
-      * Pour tout sélectionner, cliquez ou appuyez sur la case à cocher.
-      * Pour tout désélectionner, cliquez ou appuyez à nouveau sur la case à cocher.
+      * Pour tout sélectionner, cochez la case .
+      * Pour tout désélectionner, cochez à nouveau la case.
 
 * Sélectionnez les colonnes à afficher à l’aide du **Paramètres d’affichage** située sous le bouton Vues. Vous pouvez afficher les colonnes suivantes :
 
@@ -493,7 +493,7 @@ La sélection d’une ressource dans la colonne la plus à gauche affiche les re
 
   ![Modifier l’ordre](assets/bh-22.png)
 
-  Cliquez ou appuyez sur la barre de sélection verticale, puis faites glisser l’élément vers un nouvel emplacement dans la liste.
+  Cliquez sur la barre de sélection verticale et faites glisser l’élément vers un nouvel emplacement dans la liste.
 
   ![Modifier l’ordre - Faire glisser](assets/bh-23.png)
 

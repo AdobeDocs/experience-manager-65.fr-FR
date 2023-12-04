@@ -6,10 +6,10 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 51%
+source-wordcount: '1070'
+ht-degree: 48%
 
 ---
 
@@ -52,8 +52,8 @@ Les formulaires incluent certains champs et sections qui ne s’appliquent pas �
 Pour activer le chargement différé sur un fragment de formulaire adaptatif, procédez comme suit :
 
 1. Ouvrez le formulaire adaptatif en mode création qui contient le fragment que vous souhaitez activer pour le chargement différé.
-1. Sélectionnez le fragment de formulaire adaptatif et cliquez sur ![cmppr](assets/cmppr.png).
-1. Dans la barre latérale, activez **[!UICONTROL Chargement tardif d’un fragment]** et appuyez sur **Terminé**.
+1. Sélectionnez le fragment de formulaire adaptatif et sélectionnez ![cmppr](assets/cmppr.png).
+1. Dans la barre latérale, activez **[!UICONTROL Chargement différé du fragment]** et sélectionnez **Terminé**.
 
    ![Activer le chargement différé du fragment de formulaire adaptatif](assets/lazy-loading-fragment.png)
 
@@ -62,7 +62,7 @@ Pour activer le chargement différé sur un fragment de formulaire adaptatif, pr
 Vous pouvez marquer les valeurs des objets du fragment chargé en différé comme étant globales, de sorte qu’elles puissent être utilisées dans des scripts lorsque le fragment contenant n’est pas chargé. Procédez comme suit :
 
 1. Ouvrez le fragment de formulaire adaptatif en mode création.
-1. Appuyez sur le champ dont la valeur est à marquer comme globale, puis appuyez sur ![cmppr](assets/cmppr.png).
+1. Sélectionnez le champ dont vous souhaitez marquer la valeur comme globale, puis sélectionnez ![cmppr](assets/cmppr.png).
 1. Dans la barre latérale, activez **Utiliser la valeur pendant le chargement différé**.
 
    ![Champ de chargement différé dans la barre latérale](assets/enable-lazy-loading.png)

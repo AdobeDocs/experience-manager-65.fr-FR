@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: 81429735-cd52-4621-8dc2-10dd89df3052
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1674'
-ht-degree: 55%
+source-wordcount: '1653'
+ht-degree: 53%
 
 ---
 
@@ -68,16 +68,16 @@ Pour créer des variables pour les champs dont la source de données est l’int
 
    1. Sélectionner **Modèle de données de formulaire** de la **Modèle de données** .
 
-   1. Sélectionner **FDM_Create_First_IC** comme modèle de données de formulaire et appuyez sur **Sélectionner**.
+   1. Sélectionner **FDM_Create_First_IC** comme modèle de données de formulaire et sélectionnez **Sélectionner**.
 
-   1. Appuyez sur **Suivant**.
+   1. Sélectionnez **Suivant**.
 
-1. Sélectionnez la variable **Variables** dans le volet de gauche, puis appuyez sur **Créer**.
+1. Sélectionnez la variable **Variables** dans le volet de gauche, puis sélectionnez **Créer**.
 1. Dans le **Créer une variable** section :
 
    1. Entrée **Invoicenumber** comme nom de la variable.
    1. Sélectionner **Chaîne** comme type.
-   1. Appuyez sur **Créer**.
+   1. Sélectionnez **Créer**.
 
    ![Créer une variable de type Chaîne](assets/variable_create_string_new.png)
 
@@ -132,16 +132,16 @@ Pour créer des variables pour les champs dont la source de données est l’int
 
    1. Sélectionner **Modèle de données de formulaire** de la **Modèle de données** .
 
-   1. Sélectionner **FDM_Create_First_IC** comme modèle de données de formulaire et appuyez sur **Sélectionner**.
+   1. Sélectionner **FDM_Create_First_IC** comme modèle de données de formulaire et sélectionnez **Sélectionner**.
 
-   1. Appuyez sur **Suivant**.
+   1. Sélectionnez **Suivant**.
 
-1. Sélectionnez la variable **Variables** dans le volet de gauche, puis appuyez sur **Créer**.
+1. Sélectionnez la variable **Variables** dans le volet de gauche, puis sélectionnez **Créer**.
 1. Dans le **Créer une variable** section :
 
    1. Saisissez **Placesupply** comme nom de la variable.
    1. Sélectionner **Chaîne** comme type.
-   1. Appuyez sur **Créer**.
+   1. Sélectionnez **Créer**.
 
    Répétez les étapes 4 et 5 pour créer les variables suivantes :
 
@@ -195,16 +195,16 @@ Pour créer des variables pour les champs dont la source de données est l’int
 
    1. Sélectionner **Modèle de données de formulaire** de la **Modèle de données** .
 
-   1. Sélectionner **FDM_Create_First_IC** comme modèle de données de formulaire et appuyez sur **Sélectionner**.
+   1. Sélectionner **FDM_Create_First_IC** comme modèle de données de formulaire et sélectionnez **Sélectionner**.
 
-   1. Appuyez sur **Suivant**.
+   1. Sélectionnez **Suivant**.
 
-1. Sélectionnez la variable **Variables** dans le volet de gauche, puis appuyez sur **Créer**.
+1. Sélectionnez la variable **Variables** dans le volet de gauche, puis sélectionnez **Créer**.
 1. Dans le **Créer une variable** section :
 
    1. Saisissez **Previousbalance** comme nom de la variable.
    1. Sélectionnez **Numéro** comme type.
-   1. Appuyez sur **Créer**.
+   1. Sélectionnez **Créer**.
 
    Répétez les étapes 4 et 5 pour créer les variables suivantes :
 
@@ -262,9 +262,9 @@ Pour créer du texte statique et utiliser des éléments de modèle de données 
 
    1. Sélectionner **Modèle de données de formulaire** de la **Modèle de données** .
 
-   1. Sélectionner **FDM_Create_First_IC** comme modèle de données de formulaire et appuyez sur **Sélectionner**.
+   1. Sélectionner **FDM_Create_First_IC** comme modèle de données de formulaire et sélectionnez **Sélectionner**.
 
-   1. Appuyez sur **Suivant**.
+   1. Sélectionnez **Suivant**.
 
 1. Créez du texte statique pour les champs suivants à l’aide du volet de droite :
 
@@ -293,7 +293,7 @@ Pour créer du texte statique et utiliser des éléments de modèle de données 
 
    ![Récapitulatif des frais](assets/summary_charges_static_fdm_new.png)
 
-1. Sélectionnez le texte dans la ligne **Frais de services à valeur ajoutée** et cliquez sur **Créer une règle** afin de créer une condition basée sur la ligne affichée dans la communication interactive :
+1. Sélectionnez le texte dans le **Frais de services à valeur ajoutée** ligne et sélectionnez **Créer une règle** pour créer une condition d’après laquelle la ligne est affichée dans la communication interactive :
 1. Sur le **Créer une règle** fenêtre contextuelle :
 
    1. Sélectionner **Modèles et variables de données** puis **bills** > **callcharges**.

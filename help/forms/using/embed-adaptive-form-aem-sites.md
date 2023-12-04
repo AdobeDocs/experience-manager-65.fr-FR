@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author, interactive-communications
 feature: Adaptive Forms
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 60%
+source-wordcount: '1150'
+ht-degree: 56%
 
 ---
 
@@ -49,13 +49,13 @@ Pour incorporer un formulaire adaptatif ou une communication interactive à l’
 1. Ouvrez la page AEM sites, en mode d’édition, dans laquelle vous souhaitez incorporer un formulaire adaptatif ou une communication interactive.
 1. À partir du volet Explorateur des composants, faites glisser et déposez le composant Conteneur AEM Forms sur la page.
 
-   Vous pouvez également rechercher un formulaire adaptatif ou une communication interactive dans l’explorateur de ressources et le faire glisser sur la page Sites. Cela incorpore le formulaire dans un conteneur AEM Forms.
+   Vous pouvez également rechercher un formulaire adaptatif ou une communication interactive dans l’explorateur de ressources et le faire glisser sur la page Sites. Il incorpore le formulaire dans un conteneur AEM Forms.
 
    >[!NOTE]
    >
    >Les composants de plusieurs conteneurs d’AEM Forms sur une page ne sont pas pris en charge.
 
-1. Appuyez sur le composant Conteneur d’AEM Forms sur la page de site, puis appuyez sur ![settings_icon](assets/settings_icon.png) dans la barre d’action. La boîte de dialogue **[!UICONTROL Modifier le conteneur d’AEM Forms]** s’affiche.
+1. Sélectionnez le composant Conteneur AEM Forms incorporé dans la page Sites, puis sélectionnez ![settings_icon](assets/settings_icon.png) dans la barre d’actions. La boîte de dialogue **[!UICONTROL Modifier le conteneur d’AEM Forms]** s’affiche.
 1. Dans la boîte de dialogue Modifier le conteneur d’AEM Forms, précisez ce qui suit.
 
    * **Type de ressource :** sélectionnez le type de ressource à incorporer. Vous pouvez choisir entre formulaire adaptatif et communication interactive
@@ -87,7 +87,7 @@ AEM page de sites conserve une référence au formulaire adaptatif et à la comm
 Pour modifier toute configuration ou propriété du formulaire adaptatif et de la communication interactive incorporés, effectuez l’une des opérations suivantes.
 
 * Ouvrez le formulaire d’origine dans des formulaires adaptatifs ou une communication interactive dans les éditeurs respectifs et modifiez-le.
-* Appuyez sur le formulaire adaptatif ou la communication interactive à partir de la page du site en mode d’édition, puis appuyez sur **[!UICONTROL Modifier dans une nouvelle fenêtre]**. Le formulaire d’origine s’affiche en mode d’édition, et vous pouvez alors le modifier.
+* Sélectionnez le formulaire adaptatif ou la communication interactive dans la page du site en mode d’édition, puis sélectionnez **[!UICONTROL Modifier dans une nouvelle fenêtre]**. Le formulaire d’origine s’affiche en mode d’édition, et vous pouvez alors le modifier.
 
 >[!NOTE]
 >

@@ -10,10 +10,10 @@ discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 63%
+source-wordcount: '740'
+ht-degree: 59%
 
 ---
 
@@ -34,8 +34,8 @@ Prenons un autre exemple de formulaire qui capture l’ID de courrier électroni
 Effectuez les étapes suivantes pour ajouter un élément aux métadonnées :
 
 1. Ouvrez votre formulaire adaptatif en mode d’édition.\
-   Pour ouvrir le formulaire en mode d’édition, dans Forms Manager, sélectionnez le formulaire, puis appuyez sur **Ouvrir**.
-1. En mode d’édition, sélectionnez un composant, puis appuyez sur ![field-level](assets/field-level.png) > **Conteneur de formulaires adaptatifs**, puis appuyez sur ![cmppr](assets/cmppr.png).
+   Pour ouvrir le formulaire en mode d’édition, dans le gestionnaire de formulaires, sélectionnez le formulaire et sélectionnez **Ouvrir**.
+1. En mode d’édition, sélectionnez un composant, puis sélectionnez ![champ-level](assets/field-level.png) > **Conteneur de formulaires adaptatifs**, puis sélectionnez ![cmppr](assets/cmppr.png).
 1. Dans la barre latérale, cliquez sur **Métadonnées**.
 1. Dans la section Métadonnées, cliquez sur **Ajouter**.
 1. Utilisez le champ Valeur de l’onglet Métadonnées pour ajouter des scripts. Les scripts que vous ajoutez collectent des données à partir d’éléments sur le formulaire et calculent les valeurs qui sont ajoutées aux métadonnées.

@@ -11,10 +11,10 @@ discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
 role: Admin
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '2509'
-ht-degree: 59%
+ht-degree: 51%
 
 ---
 
@@ -40,9 +40,9 @@ Pour ces types de ressources, vous devez utiliser le gestionnaire de modules d�
 Pour télécharger des ressources de formulaires et de documents :
 
 1. Connectez-vous à l’instance AEM Forms.
-1. Appuyez sur l’icône Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Icône de navigation ![Boussole](assets/compass.png) > Formulaires > Formulaires et documents.
-1. Sélectionnez les ressources de formulaires et appuyez sur l’icône **Télécharger**.
-1. Dans Télécharger la ou les ressources, choisissez l’une des options suivantes, puis cliquez sur **Télécharger**.
+1. Sélectionner un Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icône > navigation ![boussole](assets/compass.png) icône > Forms > Forms et documents.
+1. Sélectionnez les actifs de formulaire et sélectionnez l’événement **Télécharger** Icône
+1. Dans la ou les ressources de téléchargement, choisissez l’une des options suivantes, puis sélectionnez **Télécharger**.
 
    * **Télécharger sous forme de package CRX :** utilisez cette option pour télécharger et déplacer toutes les ressources sélectionnées et les dépendances connexes d’une instance AEM Forms vers une autre. Toutes les ressources et tous les dossiers sont téléchargés sous forme de package CRX. Tous les actifs de formulaire, y compris les formulaires créés dans AEM (formulaires adaptatifs, communications interactives et fragments de formulaires adaptatifs), les ensembles de formulaires, les modèles de formulaires, les documents de PDF et les ressources (XSD, XFS, images), peuvent être téléchargés en tant que package depuis l’interface utilisateur d’AEM Forms.
 L’avantage du téléchargement des ressources sous forme de package est le téléchargement des ressources qui ont été utilisées par la ressource à télécharger. Par exemple, si vous disposez d’un formulaire adaptatif qui utilise un modèle de formulaire, XSD et une image. Lorsque vous sélectionnez ce formulaire adaptatif et que vous le téléchargez sous forme de package, le package téléchargé contient également le modèle de formulaire, XSD et l’image. Toutes les propriétés de métadonnées (propriétés personnalisées incluses) associées à la ressource sont également téléchargées.
@@ -63,11 +63,11 @@ Pour télécharger des ressources Formulaires et documents :
 >[!VIDEO](https://vimeo.com/)
 
 1. Connectez-vous à l’instance AEM Forms.
-1. Appuyez sur l’icône Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Icône de navigation ![Boussole](assets/compass.png) > Formulaires > Formulaires et documents.
-1. Appuyez sur **Créer** > **Chargement de fichier**. Une boîte de dialogue de téléchargement de formulaires ou de package apparaît.
-1. Dans la boîte de dialogue, recherchez et sélectionnez le package ou l’archive à importer. Vous pouvez également sélectionner le document PDF, les fichiers XSD, les images, les feuilles de style et les formulaires XDP. Appuyez sur **Ouvrir**. Le dossier ou le nom de fichier que vous sélectionnez ne doit pas contenir de caractères spéciaux.
+1. Sélectionner un Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icône > navigation ![boussole](assets/compass.png) icon> Forms> Forms &amp; Documents.
+1. Sélectionner **Créer** >**Téléchargement du fichier**. Une boîte de dialogue de téléchargement de formulaires ou de package apparaît.
+1. Dans la boîte de dialogue, recherchez et sélectionnez le package ou l’archive à importer. Vous pouvez également sélectionner le document PDF, les fichiers XSD, les images, les feuilles de style et les formulaires XDP. Sélectionner **Ouvrir**. Le dossier ou le nom de fichier que vous sélectionnez ne doit pas contenir de caractères spéciaux.
 
-   Dans la boîte de dialogue, vérifiez les détails des ressources en cours de chargement, puis appuyez sur **Charger**.
+   Dans la boîte de dialogue, vérifiez les détails des ressources en cours de chargement, puis sélectionnez **Télécharger**.
 
    Si vous chargez une ressource de formulaires existants, la ressource est mise à jour.
 
@@ -86,8 +86,8 @@ Vous pouvez exporter des thèmes dans AEM Forms, que vous pouvez utiliser dans d
 Pour télécharger un thème :
 
 1. Connectez-vous à l’instance AEM Forms.
-1. Appuyez sur l’icône Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Icône de navigation ![Boussole](assets/compass.png) > Formulaires > Thèmes.
-1. Sélectionnez le composant et appuyez sur **Télécharger**. Le thème est téléchargé sous forme d’archive (fichier .zip).
+1. Sélectionner un Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icône > navigation ![boussole](assets/compass.png) icon> Forms> Thèmes.
+1. Sélectionnez le thème et sélectionnez **Télécharger**. Le thème est téléchargé sous forme d’archive (fichier .zip).
 
 ### Chargement d’un thème {#uploading-a-theme}
 
@@ -101,7 +101,7 @@ Pour charger un thème :
 Le thème chargé est disponible dans la page Thèmes.
 
 1. Connectez-vous à l’instance AEM Forms.
-1. Appuyez sur l’icône Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Icône de navigation ![Boussole](assets/compass.png) > Formulaires > Thèmes.
+1. Sélectionner un Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icône > navigation ![boussole](assets/compass.png) icon> Forms> Thèmes.
 1. Cliquez sur **Créer** > **Chargement de fichier**. Dans l’invite de chargement de fichier, recherchez et sélectionnez un package de thème sur votre ordinateur et cliquez sur **Charger**. Le thème est chargé.
 
 ## Importation et exportation des actifs dans Correspondence Management {#import-and-export-assets-in-correspondence-management}
@@ -110,15 +110,15 @@ Pour partager des actifs, tels que des dictionnaires de données, des lettres et
 
 ### Exportation de fragments de document, de lettres et/ou de dictionnaires de données {#export-document-fragments-letters-and-or-data-dictionaries}
 
-1. Dans les lettres, les fragments de document ou les pages de dictionnaire de données, appuyez et sélectionnez les actifs à exporter dans un seul package, puis appuyez sur File d’attente pour téléchargement. Les ressources sont alignées pour l’exportation.
+1. Dans les lettres, les fragments de document ou les pages de dictionnaire de données, sélectionnez les actifs à exporter dans un package unique, puis sélectionnez File d’attente de téléchargement. Les ressources sont alignées pour l’exportation.
 1. Au besoin, répétez l’étape ci-dessus pour ajouter des lettres, des fragments de document et des dictionnaires de données.
-1. Appuyez sur **Download** (Télécharger). 
+1. Sélectionner **Télécharger**.
 1. Correspondance Management affiche la boîte de dialogue Télécharger la/les ressource(s) avec une liste de ressources se trouvant dans la liste d’exportation.
 
    ![exporter](assets/export.png)
 
-1. Pour afficher les dépendances exportées, appuyez sur Résoudre. Ou passez à l’étape suivante. Même si vous n’appuyez pas sur résoudre, les dépendances sont toujours exportées.
-1. Pour télécharger le fichier .cmp, appuyez sur **OK**.
+1. Pour afficher les dépendances exportées, sélectionnez Résoudre. Ou passez à l’étape suivante. Même si vous ne sélectionnez pas de résolution, les dépendances sont toujours exportées.
+1. Pour télécharger le fichier .cmp, sélectionnez **OK**.
 1. Correspondence Management télécharge un fichier .cmp sur votre ordinateur.
 
    Le fichier .cmp comprend les ressources exportées. Vous pouvez partager le fichier .cmp avec d’autres utilisateurs. D’autres utilisateurs peuvent importer le fichier .cmp dans un autre serveur pour obtenir toutes les ressources du nouveau serveur.
@@ -132,9 +132,9 @@ Par exemple, si Correspondence Management comporte une lettre qui utilise une im
 Pour télécharger tous les actifs de Correspondence Management et les dépendances connexes sous la forme d’un package, procédez comme suit :
 
 1. Connectez-vous au serveur AEM Forms en tant qu’utilisateur de formulaires.
-1. Appuyer **Adobe Experience Manager** dans la barre de navigation globale.
-1. Appuyez sur Outils (![Outils](assets/tools.png)), puis sur **Formulaires**.
-1. Appuyez sur **Exporter les ressources Correspondence Management**.
+1. Sélectionner **Adobe Experience Manager** dans la barre de navigation globale.
+1. Sélection d’outils ( ![outils](assets/tools.png)), puis sélectionnez **Forms**.
+1. Sélectionner **Exportation des actifs de Correspondence Management**.
 
    ![publish-cmp-assets-1](assets/publish-cmp-assets-1.png)
 
@@ -142,7 +142,7 @@ Pour télécharger tous les actifs de Correspondence Management et les dépendan
 
    ![export-last-run-details](assets/export-last-run-details.png)
 
-1. Appuyez sur **Exporter**, puis sur **OK** dans le message de confirmation.
+1. Sélectionner **Exporter** et, dans le message de confirmation, sélectionnez **OK**.
 
    Une fois le traitement par lot terminé, les détails de la dernière exécution et le lien de téléchargement du package sont mis à jour. Cela inclut des informations telles que la connexion de l’administrateur et si le lot a réussi ou échoué. Les actifs sont exportés vers un package et le lien Télécharger le package exporté s’affiche.
 
@@ -150,7 +150,7 @@ Pour télécharger tous les actifs de Correspondence Management et les dépendan
    >
    >Le processus Exporter tous les actifs ne peut pas être annulé une fois lancé. En outre, pendant que l’opération d’exportation est en cours de traitement, ne créez, supprimez, modifiez ou publiez aucune ressource, ni ne lancez le processus Publier toutes les ressources.a
 
-1. Appuyez sur le bouton **Télécharger le package exporté** lien pour télécharger le fichier de package.
+1. Sélectionnez la variable **Télécharger le package exporté** lien pour télécharger le fichier de package.
 
    Pour ajouter des ressources du package à une autre instance de Correspondence Management, [importez le package vers une instance AEM Forms](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
 
@@ -162,8 +162,8 @@ Vous pouvez importer des actifs qui sont exportés dans un fichier .cmp. Un fich
 >
 >Lors de l’importation d’anciens actifs de Correspondence Management pour la migration, connectez-vous à l’aide d’un compte administrateur. Pour plus d’informations sur la migration d’anciens actifs de Correspondence Management, voir [Migration des ressources de Correspondence Management vers AEM Forms 6.1](/help/forms/using/migration-utility.md).
 
-1. Dans le dictionnaire de données, les lettres, ou la page de fragments de documents, cliquez sur **Créer > Chargement de fichier** et sélectionnez le fichier .cmp.
-1. Correspondance Management affiche la boîte de dialogue d’importation des actifs avec la liste des actifs qui sont importés. Appuyez sur **Importer**.
+1. Dans le dictionnaire de données, les lettres ou la page de fragments de document, sélectionnez **Créer > Téléchargement du fichier** et sélectionnez le fichier .cmp.
+1. Correspondance Management affiche la boîte de dialogue d’importation des actifs avec la liste des actifs qui sont importés. Sélectionner **Importer**.
 
    Après l’importation des ressources, les propriétés suivantes des ressources sont mises à jour, tandis que les autres propriétés restent les mêmes :
 
@@ -202,7 +202,7 @@ Pour créer un dossier, procédez comme suit :
 
 1. Connectez-vous à l’interface utilisateur d’AEM Forms à l’adresse `https://<server>:<port>/aem/forms.html`.
 1. Accédez à l’emplacement où vous souhaitez créer un dossier.
-1. Appuyez sur Créer > Dossier.
+1. Sélectionnez Créer > Dossier.
 1. Saisissez les informations suivantes :
 
    * **Titre** : nom d’affichage du dossier.
@@ -216,7 +216,7 @@ Pour créer un dossier, procédez comme suit :
 
    Si un dossier portant le même nom que celui spécifié existe déjà, l’envoi échoue avec une erreur. Vous pouvez afficher le message d’erreur en pointant sur l’icône d’erreur ![aem6forms_error_alert](assets/aem6forms_error_alert.png) qui s’affiche en regard du champ Nom.
 
-   Vous pouvez appuyer sur le dossier que vous venez de créer afin de l’ouvrir et de créer des ressources ou des dossiers dans ce dossier. De plus, vous pouvez sélectionner un dossier et choisir de le mettre en file d’attente pour le télécharger, le supprimer ou modifier son nom.
+   Vous pouvez sélectionner le dossier que vous venez de créer pour y placer des ressources ou des dossiers. De plus, vous pouvez sélectionner un dossier et choisir de le mettre en file d’attente pour le télécharger, le supprimer ou modifier son nom.
 
    ![editdeletedownloadafolder](assets/editdeletedownloadafolder.png)
 
@@ -227,19 +227,19 @@ Vous pouvez utiliser des ressources et des lettres existantes pour créer rapide
 Procédez comme suit pour créer des copies de ressources et de lettres :
 
 1. Dans la page Ressources ou lettres appropriée, sélectionnez une ou plusieurs ressources/lettres. L’interface utilisateur affiche l’icône Copier.
-1. Appuyez sur Copier. L’interface utilisateur affiche l’icône Coller. Vous pouvez également choisir d’aller/de parcourir un dossier avant de le coller. Différents dossiers peuvent contenir des ressources portant le même nom. Pour plus d’informations sur les dossiers, voir [Dossiers et organisation des actifs](#folders-and-organizing-assets).
-1. Appuyez sur Coller. La boîte de dialogue Coller s’affiche. Le système génère automatiquement des noms et des titres pour les nouvelles copies d’actifs/de lettres, mais vous pouvez modifier les titres et les noms des actifs/lettres.
+1. Sélectionnez Copier. L’interface utilisateur affiche l’icône Coller. Vous pouvez également choisir d’aller/de parcourir un dossier avant de le coller. Différents dossiers peuvent contenir des ressources portant le même nom. Pour plus d’informations sur les dossiers, voir [Dossiers et organisation des actifs](#folders-and-organizing-assets).
+1. Sélectionnez Coller. La boîte de dialogue Coller s’affiche. Le système génère automatiquement des noms et des titres pour les nouvelles copies d’actifs/de lettres, mais vous pouvez modifier les titres et les noms des actifs/lettres.
 
    Si vous copiez et collez les ressources/lettres dans le même emplacement, un suffixe « -CopieXX » est ajouté au nom existant de la ressource/lettre. Si aucun titre n’existait pour la ressource/lettre copiée, le champ de titre généré automatiquement reste vide.
 
 1. Si nécessaire, modifiez le titre et le nom sous lesquels vous souhaitez enregistrer la copie de la ressource/lettre.
-1. Appuyez sur Coller. De nouvelles copies des ressources copiées sont créées.
+1. Sélectionnez Coller. De nouvelles copies des ressources copiées sont créées.
 
 ## Rechercher {#search-forms}
 
-L’interface utilisateur d’AEM Forms vous permet de rechercher du contenu. À l’aide de la barre située dans la partie supérieure, vous pouvez appuyer sur Rechercher **[A]** pour rechercher des ressources telles que des actifs et des documents dans votre contenu.
+L’interface utilisateur d’AEM Forms vous permet de rechercher du contenu. Dans la barre supérieure, vous pouvez sélectionner Rechercher. **[A]** pour rechercher des ressources telles que des ressources et des documents dans votre contenu.
 
-Lorsque vous recherchez des actifs, AEM Forms affiche le panneau latéral. Vous pouvez également appuyer sur ![assets-browser-content-only](assets/assets-browser-content-only.png) > Filtrer **[B]** pour appeler le panneau latéral. En utilisant les différents filtres du panneau latéral, vous pouvez affiner votre recherche. Le panneau latéral vous permet également d’enregistrer vos recherches.
+Lorsque vous recherchez des actifs, AEM Forms affiche le panneau latéral. Vous pouvez également sélectionner ![assets-browser-content-only](assets/assets-browser-content-only.png) > Filtre **[B]** pour appeler le panneau latéral. En utilisant les différents filtres du panneau latéral, vous pouvez affiner votre recherche. Le panneau latéral vous permet également d’enregistrer vos recherches.
 
 ![search_topbar](assets/search_topbar.png)
 

@@ -1,17 +1,13 @@
 ---
 title: Création et ajout de modèles et de composants
-seo-title: Creating and Adding Templates and Components
 description: Consultez cette page pour en savoir plus sur la création et l’ajout de modèles et de composants à votre application. La page utilise l’application de Geometrixx Unlimited comme application contenant un exemple de modèle d’application et de modèles de page.
-seo-description: Follow this page to learn about creating and adding templates and components to your app. The page uses Geometrixx Unlimited App as the app that contains a sample app template and page templates.
-uuid: 3a93017c-8094-413f-a01c-9b72025a2b20
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1151'
 ht-degree: 1%
 
 ---
@@ -45,7 +41,7 @@ Lors de la création d’une application basée sur le modèle d’une autre app
 Procédure de création d’une application basée sur un modèle d’application :
 
 1. Accédez au catalogue d’applications AEM Mobile : *&lt;server-url>/aem/apps.html/content/mobileapps*
-1. Sélectionner **Créer** —> **Application** comme illustré ci-dessous
+1. Sélectionner **Créer** -> **Application** comme illustré ci-dessous
 
 Une fois que vous avez créé une application à l’aide de ce modèle, vous pouvez ajouter des articles, des bannières et des collections à votre application. Pour revoir la création d’articles, de bannières et de collections, voir [Actions de gestion de contenu](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
@@ -90,7 +86,7 @@ L’article illimité est un exemple de modèle qui représente une mise en page
 
 Une fois créé, un auteur peut modifier le contenu d’un article en ajoutant des composants tels que du texte et des images. Les articles sont une extension des modèles de page d’AEM.
 
-Sélectionnez un article, puis cliquez sur **Modifier** pour ajouter des composants à l’article.
+Sélectionnez un article à modifier, puis cliquez sur **Modifier** pour ajouter des composants à l’article.
 
 ![chlimage_1-72](assets/chlimage_1-72.png) ![chlimage_1-73](assets/chlimage_1-73.png)
 
@@ -145,7 +141,7 @@ Une fois que le composant a déjà été inclus dans une page AEM, ainsi que que
 **Pour modifier un composant existant :**
 
 1. Sélectionnez cette page et assurez-vous que vous êtes connecté à **Modifier** et sélectionnez le composant.
-1. Appuyez sur l’icône de clé à molette pour configurer le composant.
+1. Sélectionner l’icône de clé à molette pour configurer le composant
 
 >[!NOTE]
 >

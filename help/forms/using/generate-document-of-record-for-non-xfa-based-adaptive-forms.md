@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3544'
-ht-degree: 73%
+source-wordcount: '3533'
+ht-degree: 68%
 
 ---
 
@@ -264,7 +264,7 @@ Effectuez les étapes suivantes pour configurer un document d’enregistrement p
 
 1. Dans l’instance d’auteur AEM, cliquez sur **Formulaires > Formulaires et documents**.
 1. Sélectionnez un formulaire, puis cliquez sur **Afficher les propriétés**.
-1. Dans la fenêtre Propriétés, appuyez sur **Modèle de formulaire**.
+1. Dans la fenêtre Propriétés, sélectionnez **Modèle de formulaire**.
 Vous pouvez également sélectionner un modèle de formulaire lorsque vous créez un formulaire.
 
    >[!NOTE]
@@ -300,8 +300,8 @@ Lors de la génération d’un document d’enregistrement, vous pouvez modifier
 
 Pour localiser les informations d’identité graphique que vous saisissez dans l’onglet Document d’enregistrement, vous devez vous assurer que les paramètres régionaux du navigateur sont correctement définis. Pour personnaliser les informations d’identité graphique d’un document d’enregistrement, procédez comme suit :
 
-1. Sélectionnez un panneau (panneau racine) dans le document d’enregistrement, puis appuyez sur ![configurer](assets/configure.png).
-1. Appuyez sur ![dortab](/help/forms/using/assets/dortab.png). L’onglet Document d’enregistrement s’affiche.
+1. Sélectionnez un panneau (panneau racine) dans le document d’enregistrement, puis sélectionnez ![configure](assets/configure.png).
+1. Sélectionner ![dortab](/help/forms/using/assets/dortab.png). L’onglet Document d’enregistrement s’affiche.
 1. Sélectionnez le modèle par défaut ou un modèle personnalisé pour le rendu du document d’enregistrement. Si vous sélectionnez le modèle par défaut, un aperçu miniature du document d’enregistrement s’affiche sous la liste déroulante Modèle .
 
    ![brandingtemplate](/help/forms/using/assets/brandingtemplate.png)
@@ -312,11 +312,11 @@ Pour localiser les informations d’identité graphique que vous saisissez dans 
 
    * **Image du logo** : vous pouvez choisir d’utiliser l’image du logo à partir du formulaire adaptatif, en choisir une dans le gestionnaire des actifs numériques ou en télécharger une depuis votre ordinateur.
    * **Titre du formulaire**
-   * **Texte d&#39;en-tête**
-   * **Libellé de clause de non-responsabilité**
-   * **Clause de non-responsabilité**
-   * **Texte de la clause de non-responsabilité**
-   * **Couleur d’accentuation** : la couleur dans laquelle le texte de l’en-tête et les lignes de séparation sont affichés dans le document ou l’enregistrement PDF
+   * **Texte d’en-tête**
+   * **Étiquette de non-responsabilité**
+   * **Exclusion**
+   * **Texte de non-responsabilité**
+   * **Couleur d’accentuation**: couleur dans laquelle le texte de l’en-tête et les lignes de séparateur sont rendus dans le document ou le PDF d’enregistrement.
    * **Famille de polices** : la famille de polices du texte dans le document d’enregistrement PDF
    * **Pour les composants Case à cocher et Bouton radio, affichez uniquement les valeurs sélectionnées.**
    * **Séparateur pour plusieurs valeurs sélectionnées**
@@ -346,7 +346,7 @@ Pour localiser les informations d’identité graphique que vous saisissez dans 
    </proto>
    ```
 
-1. Pour enregistrer les modifications d’identité graphique, appuyez sur Terminé.
+1. Pour enregistrer les modifications de marque, sélectionnez Terminé.
 
 ## Mises en page de tableau et de colonne pour les panneaux d’un document d’enregistrement {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -407,12 +407,12 @@ Vous pouvez appliquer des sauts de page dans un document d’enregistrement à l
 
 Pour appliquer un saut de page à un document d’enregistrement :
 
-1. Appuyez sur le panneau et sélectionnez ![Configurer](/help/forms/using/assets/configure.png)
+1. Sélectionnez le panneau, puis sélectionnez ![Configurer](/help/forms/using/assets/configure.png)
 1. Développez le **[!UICONTROL Document d’enregistrement]** pour afficher les propriétés.
 
-1. Dans la section **[!UICONTROL Pagination]**, appuyez sur ![Dossier](/help/forms/using/assets/folder-icon.png) dans le champ **[!UICONTROL Placer]**.
-1. Appuyez sur **[!UICONTROL Haut de la page suivante]**, puis sur **[!UICONTROL Sélectionner]**. Vous pouvez également appuyer sur **[!UICONTROL Haut de la page]**, sélectionnez le gabarit de page, puis appuyez sur **[!UICONTROL Sélectionner]** pour appliquer le saut de page.
-1. Appuyez sur ![Enregistrer](/help/forms/using/assets/save_icon.png) pour enregistrer les propriétés.
+1. Dans le **[!UICONTROL Pagination]** , sélectionnez ![Dossier](/help/forms/using/assets/folder-icon.png) dans le **[!UICONTROL Placer]** champ .
+1. Sélectionner **[!UICONTROL Haut de la page suivante]** et sélectionnez **[!UICONTROL Sélectionner]**. Vous pouvez également sélectionner **[!UICONTROL Haut de la page]**, sélectionnez le gabarit, puis **[!UICONTROL Sélectionner]** pour appliquer le saut de page.
+1. Sélectionner ![Enregistrer](/help/forms/using/assets/save_icon.png) pour enregistrer les propriétés.
 
 Le panneau sélectionné passe à la page suivante.
 
@@ -427,13 +427,13 @@ vous téléchargez un modèle XDP qui comprend quatre gabarits de page dans le s
 
 Pour appliquer les propriétés du deuxième gabarit de page à un panneau et les propriétés du troisième gabarit de page aux panneaux qui suivent, procédez comme suit :
 
-1. Appuyez sur le panneau pour appliquer le deuxième gabarit de page et sélectionnez ![Configurer](assets/cmppr.png).
-1. Dans la section **[!UICONTROL Pagination]**, appuyez sur ![Dossier](/help/forms/using/assets/folder-icon.png) dans le champ **[!UICONTROL Placer]**.
-1. Appuyez sur **[!UICONTROL Sur la page]**, sélectionnez le deuxième gabarit de page et appuyez sur **[!UICONTROL Sélectionner]**.
+1. Sélectionnez le panneau auquel appliquer le deuxième gabarit, puis sélectionnez ![Configurer](assets/cmppr.png).
+1. Dans le **[!UICONTROL Pagination]** , sélectionnez ![Dossier](/help/forms/using/assets/folder-icon.png) dans le **[!UICONTROL Placer]** champ .
+1. Sélectionner **[!UICONTROL Sur la page]**, sélectionnez le deuxième gabarit, puis **[!UICONTROL Sélectionner]**.
 AEM Forms applique le deuxième gabarit de page au panneau et à tous les panneaux suivants du formulaire adaptatif.
-1. Dans la section **[!UICONTROL Pagination]**, appuyez sur ![Dossier](/help/forms/using/assets/folder-icon.png) dans le champ **[!UICONTROL Après]**.
-1. Appuyez sur **[!UICONTROL Atteindre la page]**, sélectionnez le troisième gabarit de page et appuyez sur **[!UICONTROL Sélectionner]**.
-1. Appuyez sur ![Enregistrer](/help/forms/using/assets/save_icon.png) pour enregistrer les propriétés.
+1. Dans le **[!UICONTROL Pagination]** , sélectionnez ![Dossier](/help/forms/using/assets/folder-icon.png) dans le **[!UICONTROL Après]** champ .
+1. Sélectionner **[!UICONTROL Atteindre la page]**, sélectionnez le troisième gabarit, puis **[!UICONTROL Sélectionner]**.
+1. Sélectionner ![Enregistrer](/help/forms/using/assets/save_icon.png) pour enregistrer les propriétés.
 AEM Forms applique le troisième gabarit de page au panneau et à tous les panneaux suivants du formulaire adaptatif.
 
 

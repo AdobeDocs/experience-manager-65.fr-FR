@@ -6,10 +6,10 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3849'
-ht-degree: 98%
+source-wordcount: '3832'
+ht-degree: 83%
 
 ---
 
@@ -23,14 +23,14 @@ Après la création d’un [modèle de lettre dans Correspondence Management](..
 
 Sélectionnez la lettre à prévisualiser en procédant comme suit :
 
-1. Sur la page Lettres, appuyez sur **Sélectionner**.
+1. Sur la page Lettres, sélectionnez **Sélectionner**.
 1. Sélectionnez la lettre appropriée en appuyant dessus.
 
    ![Sélectionner une lettre](assets/1_selectletter.png)
 
    Sélectionner une lettre
 
-1. Pour une lettre basée sur un dictionnaire de données, sélectionnez **Prévisualisation** > **Prévisualisation**. Ou, pour une lettre qui n’est pas basée sur un dictionnaire de données, sélectionnez **Aperçu**. Vous pouvez également pointer sur une lettre (sans la sélectionner) avec la souris et appuyer sur l’icône Aperçu de la lettre pour la prévisualiser.
+1. Pour une lettre basée sur un dictionnaire de données, sélectionnez **Prévisualisation** > **Prévisualisation**. Ou, pour une lettre qui n’est pas basée sur un dictionnaire de données, sélectionnez **Aperçu**. Vous pouvez également survoler une lettre (sans la sélectionner) avec la souris et sélectionner l’icône Aperçu de la lettre pour la prévisualiser.
 
    >[!NOTE]
    >
@@ -63,7 +63,7 @@ Dans l’onglet Données, remplissez les champs de mise en page et les espaces r
 
 1. Saisissez les données et les variables de contenu dans les champs selon vos besoins. Remplissez tous les champs obligatoires identifiés par un astérisque (&#42;) pour activer le bouton **Envoyer**.
 
-   Appuyez sur une valeur de champ de données dans l’aperçu de lettre HTML pour mettre en surbrillance le champ de données correspondant dans l’onglet Données.
+   Sélectionnez une valeur de champ de données dans l’aperçu de lettre de HTML pour mettre en surbrillance le champ de données correspondant dans l’onglet Données .
 
    ![Saisissez des données dans la lettre](assets/2_enterdata.png) ![2_1_enterdata](assets/2_1_enterdata.png).
 
@@ -75,7 +75,7 @@ Dans l’onglet Contenu, gérez le contenu tel que les fragments de document et 
 
    ![Onglet Contenu - mettre en surbrillance le module dans le contenu](assets/3_content.png)
 
-1. Modifiez les modules de contenu, selon les besoins, dans l’onglet Contenu. Pour activer le module de contenu approprié dans la hiérarchie des contenus, vous pouvez soit appuyer sur la ligne ou le paragraphe concerné dans l’aperçu de la lettre, soit appuyer directement sur le module de contenu dans la hiérarchie des contenus.
+1. Modifiez les modules de contenu, selon les besoins, dans l’onglet Contenu. Pour mettre l’accent sur le module de contenu approprié dans la hiérarchie de contenu, vous pouvez sélectionner la ligne ou le paragraphe approprié dans l’aperçu de la lettre ou sélectionner le module de contenu directement dans la hiérarchie Contenu .
 
    Par exemple, la ligne « Nous avons passé en revue... » est sélectionnée dans le graphique ci-dessous et le module de contenu approprié est sélectionné dans l’onglet Contenu.
 
@@ -86,8 +86,8 @@ Dans l’onglet Contenu, gérez le contenu tel que les fragments de document et 
    Pour plus d’informations sur les actions disponibles pour différents modules dans l’interface utilisateur Création de correspondance, consultez la section [Actions et informations disponibles dans l’interface utilisateur de création de correspondance](#actions-and-info-available-in-the-create-correspondence-content-tab).
 
 1. Pour localiser les modules de contenu, utilisez le champ Rechercher. Saisissez le nom ou le titre complet ou partiel du module de contenu pour le rechercher dans la correspondance.
-1. Appuyez sur l’icône Affichage (![display](assets/display.png)) devant une liste, un texte, une condition ou une zone cible pour l’afficher ou le/la masquer dans la lettre.
-1. Pour modifier un module de texte incorporé ou modifiable, appuyez sur l’icône **Modifier** (![edittextmodule](assets/edittextmodule.png)) ou cliquez deux fois sur le module de texte approprié dans la prévisualisation de la lettre.
+1. Sélectionnez l’icône Afficher ( ![display](assets/display.png)) devant une liste, un texte, une condition ou une zone cible pour l’afficher ou le masquer dans la lettre.
+1. Pour modifier un module de texte modifiable ou en ligne, sélectionnez les **Modifier** icône ( ![edittextmodule](assets/edittextmodule.png)) ou double-cliquez sur le module de texte approprié dans l’aperçu de lettre.
 
    Le système affiche un éditeur de texte pour modifier et formater le texte.
 
@@ -131,22 +131,22 @@ Dans l’onglet Contenu, gérez le contenu tel que les fragments de document et 
 
    Correspondence Management offre une prise en charge intégrée de 210 caractères spéciaux. L’administrateur peut [ajouter la prise en charge de plus de caractères/de caractères spéciaux grâce à la personnalisation](../../forms/using/custom-special-characters.md).
 
-1. Pour mettre en surbrillance\mettre en évidence des parties de texte dans un module incorporé modifiable, sélectionnez le texte et appuyez sur Couleur de surbrillance.
+1. Pour mettre en surbrillance/mettre en évidence des parties de texte dans un module intégré modifiable, sélectionnez le texte et choisissez Couleur de surbrillance.
 
    ![letterbackgroundcolor](assets/letterbackgroundcolor.png)
 
-   Vous pouvez soit directement sélectionner une couleur de base `**[A]**` dans la palette correspondante ou appuyer sur **Sélectionner** après avoir utilisé le curseur `**[B]**` pour sélectionner la teinte de couleur appropriée.
+   Vous pouvez sélectionner directement une couleur de base. `**[A]**` dans la palette Couleurs de base ou sélectionnez **Sélectionner** après avoir utilisé le curseur `**[B]**` pour choisir l’nuance appropriée de la couleur.
 
-   Si vous le souhaitez, vous pouvez également accéder à l’onglet Avancé afin de sélectionner les niveaux de Teinte, Luminosité et Saturation appropriés `**[C]**` pour créer la couleur exacte, puis appuyer sur Sélectionner `**[D]**` pour appliquer la couleur de mise en évidence du texte.
+   Vous pouvez également accéder à l’onglet Avancé pour sélectionner la teinte, la luminosité et la saturation appropriées. `**[C]**` pour créer une couleur précise, puis sélectionnez Sélectionner `**[D]**` pour appliquer la couleur pour mettre le texte en surbrillance.
 
    ![textbackgroundcolor](assets/textbackgroundcolor.png)
 
-1. Effectuez les modifications appropriées de contenu et de format, puis appuyez sur **Enregistrer**. Appuyez sur (![editnextmoduleccr](assets/editnextmoduleccr.png)) pour vous déplacer entre les modules de texte modifiables, ou cliquez sur **Enregistrer et suivant** pour enregistrer les modifications et passez au module de texte modifiable suivant.
-1. Le système affiche également les variables vides pour chacune des branches. S’il n’existe aucune variable vide, les variables vides sont présentées comme 0. S’il y a des variables vides, vous pouvez appuyer sur une branche pour la développer et rechercher la variable vide. Utilisez la barre d’outils de contenu pour supprimer du contenu, augmenter ou diminuer le retrait du contenu, et insérer des sauts de page avant ou après le contenu.
+1. Apportez les modifications appropriées au contenu et au format, puis sélectionnez **Enregistrer**. Sélectionnez ( ![editnextmodueccr](assets/editnextmoduleccr.png)) pour vous déplacer entre des modules de texte modifiables ou sélectionnez **Enregistrer et suivant** pour enregistrer les modifications et passer au module de texte modifiable suivant.
+1. Le système affiche également les variables vides pour chacune des branches. S’il n’existe aucune variable vide, les variables vides sont présentées comme 0. S’il existe une variable vide, vous pouvez sélectionner une branche pour la développer et localiser la variable vide. Utilisez la barre d’outils de contenu pour supprimer du contenu, augmenter ou diminuer le retrait du contenu, et insérer des sauts de page avant ou après le contenu.
 
    Vous pouvez insérer des sauts de page au-dessus et en dessous des modules de données, même s’ils font partie de listes et de conditions.
 
-1. Appuyez sur Ouvrir/Fermer la variable de contenu (![opencontentvariables](assets/opencontentvariables.png)) pour ouvrir les variables de contenu et les remplir correctement.
+1. Sélectionnez Ouvrir/Fermer la variable de contenu ( ![opencontentvariables](assets/opencontentvariables.png)) pour ouvrir les variables de contenu et les remplir de manière appropriée.
 1. Lorsque vous renseignez la variable vide correctement, le nombre de variables vides est défini sur 0.
 
    Dans l’interface utilisateur Création de correspondance, le nombre de variables vides est affiché à chaque niveau de la hiérarchie de tout module qui contient au moins une variable. Si un module contient des variables vides, le nombre s’affiche au niveau de la variable, du module, de la zone cible et du modèle de lettre.
@@ -204,8 +204,8 @@ Dans l’onglet Contenu, gérez le contenu tel que les fragments de document et 
 ### Gestion des pièces jointes {#manage-attachments}
 
 1. Sélectionnez **les pièces jointes**. Correspondence Management affiche les pièces jointes disponibles de la manière dont elles ont été configurées lors de la création du modèle de lettre.
-1. Vous pouvez choisir de ne pas envoyer une pièce jointe avec la lettre en appuyant sur l’icône Afficher et en appuyant sur la croix dans la pièce jointe pour la supprimer de la lettre. Pour les pièces jointes spécifiées, lors de la création d’un modèle de lettre, comme étant obligatoires, les icônes Afficher et Supprimer sont désactivées.
-1. Cliquer sur l’icône d’accès à la bibliothèque (![libraryaccess](assets/libraryaccess.png)) pour accéder à la bibliothèque de contenu et insérer des ressources DAM comme pièces jointes.
+1. Vous pouvez choisir de ne pas envoyer de pièce jointe avec la lettre en appuyant sur l’icône d’affichage et sélectionner la croix dans la pièce jointe pour la supprimer de la lettre. Pour les pièces jointes spécifiées, lors de la création d’un modèle de lettre, comme étant obligatoires, les icônes Afficher et Supprimer sont désactivées.
+1. Sélectionnez Accès à la bibliothèque ( ![libraryaccess](assets/libraryaccess.png)) pour accéder à la bibliothèque de contenu afin d’insérer des ressources DAM en tant que pièces jointes.
 
    >[!NOTE]
    >
@@ -219,13 +219,13 @@ Dans l’onglet Contenu, gérez le contenu tel que les fragments de document et 
 
 Vous pouvez effectuer des modifications relatives à la disposition et au contenu pour vous assurer que la lettre apparaît exactement comme vous le souhaitez et l’envoyer aux différents post-processus.
 
-1. Pour mettre en surbrillance tout le contenu modifiable dans la lettre, cliquez sur **Mettre les sections modifiables en surbrillance**.
+1. Pour mettre en surbrillance tout le contenu modifiable dans la lettre, sélectionnez **Mettre en surbrillance les sections modifiables**.
 
    Les contenus modifiables de la lettre sont mis en surbrillance avec un arrière-plan gris.
 
    ![Mettre en surbrillance le contenu modifiable](assets/4_highlightmoduleincontent-1.png)
 
-1. Modifiez les modules de contenu, selon les besoins, dans l’onglet Contenu. Pour activer le module de contenu approprié dans la hiérarchie des contenus, vous pouvez soit appuyer sur la ligne ou le paragraphe concerné dans l’aperçu de la lettre, soit appuyer directement sur le module de contenu dans la hiérarchie des contenus.
+1. Modifiez les modules de contenu, selon les besoins, dans l’onglet Contenu. Pour mettre l’accent sur le module de contenu approprié dans la hiérarchie de contenu, vous pouvez sélectionner la ligne ou le paragraphe approprié dans l’aperçu de la lettre ou sélectionner le module de contenu directement dans la hiérarchie Contenu .
 
    Par exemple, la ligne « Pour accéder à… » est sélectionnée dans le graphique ci-dessous et le module de contenu correspondant est sélectionné dans l’onglet Contenu.
 
@@ -233,7 +233,7 @@ Vous pouvez effectuer des modifications relatives à la disposition et au conten
 
    Pour plus d’informations sur les actions disponibles pour différents modules dans l’interface utilisateur Création de correspondance, consultez la section [Actions et informations disponibles dans l’interface utilisateur de création de correspondance](#actions-and-info-available-in-the-create-correspondence-content-tab).
 
-1. Pour insérer un saut de page dans la lettre, cliquez à l’endroit où vous souhaitez insérer un saut de page et sélectionnez Saut de page avant ou Saut de page après ( ![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
+1. Pour ajouter un saut de page à la lettre, sélectionnez l’endroit où vous souhaitez insérer un saut de page et choisissez Saut de page avant ou Saut de page après ( ![pagebreakbebefore](assets/pagebreakbeforeafter.png)).
 
    Un espace réservé de saut de page explicite est inséré dans la lettre. Pour voir comment un saut de page explicite affecte la lettre, consultez l’aperçu sous forme de fichier PDF aplati.
 
@@ -243,13 +243,13 @@ Vous pouvez effectuer des modifications relatives à la disposition et au conten
 
    ![Saut de page explicite](assets/8_pagebreak.png)
 
-1. Pour enregistrer la lettre en tant que brouillon et poursuivre sa rédaction plus tard, appuyez sur Enregistrer en tant que brouillon. Pour utiliser cette option, votre lettre doit être [publiée](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Pour plus d’informations, consultez la section Instance Brouillon sous [Enregistrement de brouillons et envoi d’instances de lettre](#savingdrafts).
+1. Pour enregistrer la lettre en tant que brouillon, sur lequel vous pourrez continuer à travailler ultérieurement, sélectionnez Enregistrer en tant que brouillon. Pour utiliser cette option, votre lettre doit être [publiée](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Pour plus d’informations, consultez la section Instance Brouillon sous [Enregistrement de brouillons et envoi d’instances de lettre](#savingdrafts).
 
    ![saveasdraft](assets/saveasdraft.png)
 
-   La boîte de dialogue Nom du brouillon de la lettre s’affiche avec l’ID d’instance de lettre. Vous pouvez également modifier cet ID. Notez l’ID de lettre, puis appuyez sur **Terminé**. Vous pouvez utiliser cet ID ultérieurement pour [recharger le brouillon de la lettre](submit-letter-topostprocess.md#reloaddraft).
+   La boîte de dialogue Nom du brouillon de la lettre s’affiche avec l’ID d’instance de lettre. Vous pouvez également modifier cet ID. Notez l’ID de lettre, puis sélectionnez **Terminé**. Vous pouvez utiliser cet ID ultérieurement pour [recharger le brouillon de la lettre](submit-letter-topostprocess.md#reloaddraft).
 
-1. Pour afficher la lettre sous forme de fichier PDF aplati, avec la disposition et les sauts de page exacts, comme elle sera envoyée, cliquez sur Prévisualisation ( ![preview](assets/preview.png)).
+1. Pour prévisualiser la lettre comme un PDF aplati avec la mise en page exacte et les sauts de page tels qu’ils seront envoyés, cliquez sur ( ![aperçu](assets/preview.png)) Aperçu.
 
    La lettre s’affiche sous forme de fichier PDF aplati. Le PDF aplati ressemble à l’identique à la lettre telle qu’elle sera envoyée, avec les mêmes polices, sauts et disposition.
 
@@ -257,13 +257,13 @@ Vous pouvez effectuer des modifications relatives à la disposition et au conten
    >
    >Si vous utilisez Mozilla Firefox et le type de rendu HTML pour prévisualiser la lettre sous forme de fichier PDF aplati, veillez à employer le plug-in natif du navigateur et non le plug-in Acrobat. Pour sélectionner le plug-in natif du navigateur, accédez aux paramètres de Mozilla Firefox, puis à Type de contenu PDF et sélectionnez Aperçu dans Firefox.
 
-1. Si l’aperçu du fichier PDF aplati vous satisfait, cliquez sur **Envoyer** pour envoyer la lettre. Ou, pour modifier la lettre, appuyez sur **Quitter l’aperçu** pour revenir à l’aperçu de l’interface utilisateur de création de correspondance de la lettre pour apporter des modifications à la lettre. Lorsque vous appuyez sur Envoyer, si la configuration Gestion des instances de lettre est activée sur l’instance de publication, l’instance d’envoi de lettre est générée.
+1. Si l’aperçu du PDF aplati vous satisfait, sélectionnez **Envoyer** pour envoyer la lettre. Ou, pour modifier la lettre, sélectionnez **Quitter l’aperçu** pour revenir à l’aperçu de l’interface utilisateur de création de correspondance de la lettre pour apporter des modifications à la lettre. Lorsque vous sélectionnez Envoyer, si la configuration Gérer l’instance de lettre est activée sur l’instance de publication, l’instance de lettre d’envoi est générée.
 
    Pour plus d’informations, consultez la section Instance Brouillon sous Enregistrement de brouillons et envoi d’instances de lettre.
 
    Vous pouvez également enregistrer la lettre en tant que brouillon pour la modifier ultérieurement.
 
-   Une fois les modifications apportées, vous pouvez envoyer la lettre à partir de l’aperçu HTML5 ou appuyer à nouveau sur Aperçu pour examiner le fichier PDF aplati.
+   Après avoir apporté les modifications requises, vous pouvez envoyer la lettre depuis l’aperçu HTML5 ou sélectionner à nouveau Aperçu pour revoir la sortie du PDF aplati.
 
    Pour plus d’informations sur les différences entre les formulaires HTML5 et les formulaires PDF, voir [Différences de caractéristiques entre formulaires HTML5 et formulaires PDF](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
@@ -354,10 +354,10 @@ Vous trouverez ci-dessous les avantages et les fonctionnalités disponibles dans
 
 **Avantages de l’aperçu HTML/formulaires mobiles**
 
-* **Appuyez sur une valeur de champ de données pour mettre en surbrillance le champ de données correspondant** : dans l’interface utilisateur Création de correspondance, vous pouvez appuyer sur une valeur de champ de données de la lettre pour mettre en surbrillance le champ de données correspondant dans l’onglet Données. Pour plus d’informations, consultez [Saisir des données](#enterdata).
+* **Sélectionner une valeur de champ de données pour mettre en surbrillance le champ de données correspondant**: dans l’interface utilisateur de création de correspondance, vous pouvez sélectionner une valeur de champ de données dans la lettre pour mettre en surbrillance le champ de données correspondant dans l’onglet Données . Pour plus d’informations, consultez [Saisir des données](#enterdata).
 
 * **Prise en charge du navigateur** : retrait graduel de la prise en charge des navigateurs NPAPI, ce qui affecte l’aperçu PDF de la lettre. L’aperçu de la lettre pour les formulaires mobiles/HTML n’est pas affecté par ce problème.
-* **Mettre en surbrillance le contenu modifiable dans une lettre** : dans l’interface utilisateur Création de correspondance, vous pouvez appuyer sur Mettre en surbrillance le contenu modifiable pour mettre en surbrillance tout le contenu modifiable de la lettre en gris. Pour plus d’informations, consultez [Gestion du contenu](#managecontent).
+* **Mettre en surbrillance le contenu modifiable dans une lettre**: dans l’interface utilisateur de création de correspondance, vous pouvez sélectionner Mettre en surbrillance le contenu modifiable pour mettre en surbrillance tout le contenu modifiable de la lettre en gris. Pour plus d’informations, consultez [Gestion du contenu](#managecontent).
 
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`  **Avantages de l’aperçu PDF**

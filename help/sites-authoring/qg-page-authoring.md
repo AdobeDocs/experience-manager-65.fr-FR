@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1553'
-ht-degree: 86%
+source-wordcount: '1540'
+ht-degree: 72%
 
 ---
 
@@ -71,7 +71,7 @@ Il existe plusieurs moyens de rechercher une page. Vous pouvez soit naviguer, so
 
 1. Ouvrez le **Sites** (à l’aide de la **Sites** dans le [Navigation globale](/help/sites-authoring/basic-handling.md#global-navigation)) : ceci est déclenché (liste déroulante) lorsque vous sélectionnez le lien Adobe Experience Manager (en haut à gauche).
 
-1. Naviguez dans l’arborescence en appuyant/cliquant sur la page appropriée. La représentation des ressources de page dépend du mode d’affichage activé : [Carte, Liste ou Colonnes](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) :
+1. Naviguez dans l’arborescence en appuyant/cliquant sur la page appropriée. La représentation des ressources de page dépend de la vue que vous utilisez - [Carte, Liste ou Colonne](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
@@ -102,17 +102,17 @@ La sélection d’une page dépend de la vue utilisée dans la console :
 
 1. Mode Colonnes :
 
-   * Appuyez/cliquez sur la miniature de la ressource requise ; une coche apparaît sur la miniature afin d’indiquer que la page a été sélectionnée.
+   * Cliquez sur la miniature de la ressource requise ; une coche apparaît sur la miniature pour indiquer qu’elle a été sélectionnée.
 
 1. Vue Liste :
 
-   * Appuyez/cliquez sur la miniature de la ressource requise ; une coche apparaît sur la miniature afin d’indiquer que la page a été sélectionnée.
+   * Cliquez sur la miniature de la ressource requise ; une coche apparaît sur la miniature pour indiquer qu’elle a été sélectionnée.
 
 1. Mode Carte :
 
    * Passez en mode de sélection en [sélectionnant la ressource requise](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) avec :
 
-      * Un appareil mobile : maintenez appuyé
+      * Appareil mobile : maintenir appuyé
       * Ordinateur de bureau : en cliquant sur l’icône d’[action rapide](/help/sites-authoring/basic-handling.md#quick-actions) en forme de coche (illustrée ci-dessous).
 
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
@@ -158,24 +158,24 @@ Les [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions) son
 
    * [Modifiez le contenu d’un composant existant](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) sur la page :
 
-      * Ouvrez la barre d’outils du composant en appuyant ou en cliquant dessus. Utilisez l’icône **Modifier** (crayon) pour ouvrir la boîte de dialogue.
-      * Ouvrez l’éditeur statique du composant en maintenant appuyé ou en double-cliquant lentement. Les actions disponibles s’affichent (pour certains composants, la sélection est limitée).
+      * Ouvrez la barre d’outils du composant en cliquant ou en cliquant dessus. Utilisez l’icône **Modifier** (crayon) pour ouvrir la boîte de dialogue.
+      * Ouvrez l’éditeur statique pour le composant en le sélectionnant et en le maintenant enfoncé ou en double-cliquant lentement. Les actions disponibles s’affichent (pour certains composants, la sélection est limitée).
       * Pour afficher toutes les actions disponibles, passez en mode plein écran en cliquant sur l’icône suivante :
 
      ![Mode Plein écran](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [Configurez les propriétés d’un composant existant :](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
-      * Ouvrez la barre d’outils du composant en appuyant ou en cliquant dessus. Utilisez l’icône **Configurer** (clé à molette) pour ouvrir la boîte de dialogue.
+      * Ouvrez la barre d’outils du composant en cliquant ou en cliquant dessus. Utilisez l’icône **Configurer** (clé à molette) pour ouvrir la boîte de dialogue.
 
    * [Déplacer un composant](/help/sites-authoring/editing-content.md#moving-a-component) d’une des manières suivantes :
 
       * Faites glisser le composant vers son nouvel emplacement.
-      * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Cliquez sur les icônes **Couper** puis **Coller** suivant vos besoins.
+      * Ouvrez la barre d’outils du composant en cliquant ou en cliquant dessus. Utilisez la variable **Couper** then **Coller** au besoin.
 
    * [Copiez (et collez)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un composant :
 
-      * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Cliquez sur les icônes **Copier** puis **Coller** suivant vos besoins.
+      * Ouvrez la barre d’outils du composant en cliquant ou en cliquant dessus. Utilisez la variable **Copier** then **Coller** au besoin.
 
    >[!NOTE]
    >
@@ -183,11 +183,11 @@ Les [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions) son
 
    * [Supprimer](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un composant :
 
-      * Ouvrez la barre d’outils du composant (en appuyant ou en cliquant), puis cliquez sur l’icône **Supprimer**.
+      * Ouvrez la barre d’outils du composant en cliquant dessus, puis utilisez la méthode **Supprimer** Icône
 
    * [Ajouter des annotations](/help/sites-authoring/annotations.md#annotations) à la page :
 
-      * En mode **Annotation** (icône de bulle), ajoutez des annotations à l’aide de l’icône **Ajouter une annotation** (plus). Quittez le mode Annotation en cliquant sur la croix (X) en haut à droite.
+      * Sélectionnez la variable **Annoter** mode (icône de bulle vocale). Ajoutez des annotations à l’aide de la fonction **Ajouter une annotation** (plus) . Quittez le mode d’annotation en cliquant sur X en haut à droite.
 
      ![Annoter](do-not-localize/screen_shot_2018-03-21at160813.png)
 
@@ -305,7 +305,7 @@ Par exemple, l’icône de verrouillage se présente comme suit :
 
    ![screen-shot_2019-03-05at114412](assets/screen-shot_2019-03-05at114412.png)
 
-1. Appuyez ou cliquez sur le type de référence requis pour afficher d’autres détails et (le cas échéant) accomplir d’autres actions.
+1. Cliquez sur le type de référence requis pour afficher plus de détails et (le cas échéant) prendre d’autres mesures.
 
 ### Création d’une version d’une page {#creating-a-version-of-your-page}
 
@@ -315,7 +315,7 @@ Pour créer une [version](/help/sites-authoring/working-with-page-versions.md) d
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
-1. Appuyez ou cliquez sur la flèche Haut en bas à droite de la colonne Chronologie pour afficher d’autres boutons, y compris **Enregistrer comme version**.
+1. Cliquez sur la flèche Haut en bas à droite de la colonne Frise chronologique pour afficher d’autres boutons, notamment **Enregistrer comme version**.
 
    ![screen-shot_2019-03-05at114600](assets/screen-shot_2019-03-05at114600.png)
 
@@ -331,7 +331,7 @@ Le même mécanisme de base est appliqué pour restaurer ou pour comparer des ve
 
    Si une version de votre page a déjà été enregistrée, elle est répertoriée dans la chronologie.
 
-1. Appuyez/cliquez sur la version à restaurer, ce qui permet d’afficher d’autres boutons d’action :
+1. Cliquez sur la version à restaurer. Des boutons d’action supplémentaires s’affichent alors :
 
    * **Revenir à cette version**
 

@@ -8,10 +8,10 @@ uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1124'
-ht-degree: 55%
+source-wordcount: '1115'
+ht-degree: 47%
 
 ---
 
@@ -45,12 +45,12 @@ Un numéro d’ID de client unique est attribué à chaque client, ce qui permet
 
    [http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
 
-1. Appuyez sur le champ **[!UICONTROL ID de client]** et appuyez sur l’icône **[!UICONTROL Modifier les règles]**. La fenêtre Éditeur de règles s’ouvre.
-1. Appuyez sur le bouton **[!UICONTROL + Créer]** pour ajouter une règle. Il ouvre l’éditeur visuel.
+1. Sélectionnez la variable **[!UICONTROL ID de client]** et sélectionnez le champ **[!UICONTROL Modifier des règles]** Icône La fenêtre Éditeur de règles s’ouvre.
+1. Sélectionnez la variable **[!UICONTROL + Créer]** pour ajouter une règle. Il ouvre l’éditeur visuel.
 
    Dans l’éditeur visuel, l’instruction **[!UICONTROL QUAND]** est sélectionnée par défaut. En outre, l’objet de formulaire (dans ce cas, **[!UICONTROL ID de client]**) d’où vous avez lancé l’éditeur de règles est spécifié dans l’instruction **[!UICONTROL QUAND]**.
 
-1. Cliquez sur le menu déroulant **[!UICONTROL Sélectionner un état]** et sélectionnez **[!UICONTROL a changé]**.
+1. Sélectionnez la variable **[!UICONTROL Sélectionner un état]** et sélectionnez **[!UICONTROL est modifié]**.
 
    ![whencustomeridischanged](assets/whencustomeridischanged.png)
 
@@ -64,7 +64,7 @@ Un numéro d’ID de client unique est attribué à chaque client, ce qui permet
 
    ![dropobjectstooutputfield-retrievedata](assets/dropobjectstooutputfield-retrievedata.png)
 
-   Appuyez sur **[!UICONTROL Terminé]** pour enregistrer la règle. Dans la fenêtre Éditeur de règles, appuyez sur **[!UICONTROL Fermer]**.
+   Sélectionner **[!UICONTROL Terminé]** pour enregistrer la règle. Dans la fenêtre de l’éditeur de règles, sélectionnez **[!UICONTROL Fermer]**.
 
 1. Prévisualisez le formulaire adaptatif. Saisissez un identifiant dans la variable **[!UICONTROL ID de client]** champ . Le formulaire peut désormais récupérer les détails du client dans la base de données.
 
@@ -74,8 +74,8 @@ Un numéro d’ID de client unique est attribué à chaque client, ce qui permet
 
 Une fois les détails du client récupérés dans la base de données, vous pouvez mettre à jour l’adresse de livraison, l’état et le code postal. La procédure ci-dessous appelle un service de modèle de données de formulaire pour mettre à jour les informations client vers la base de données :
 
-1. Sélectionnez le champ **[!UICONTROL Envoyer]** et appuyez sur l’icône **[!UICONTROL Modifier les règles]**. La fenêtre Éditeur de règles s’ouvre.
-1. Sélectionnez la règle **[!UICONTROL Envoyer - Cliquer]** et appuyez sur l’icône **[!UICONTROL Modifier]**. Les options permettant de modifier la règle Envoi s’affichent.
+1. Sélectionnez la variable **[!UICONTROL Envoyer]** et sélectionnez le champ **[!UICONTROL Modifier des règles]** Icône La fenêtre Éditeur de règles s’ouvre.
+1. Sélectionnez la variable **[!UICONTROL Envoyer - Clic]** et sélectionnez la règle **[!UICONTROL Modifier]** Icône Les options permettant de modifier la règle Envoi s’affichent.
 
    ![règle-envoi](assets/submit-rule.png)
 
@@ -83,7 +83,7 @@ Une fois les détails du client récupérés dans la base de données, vous pouv
 
    ![envoi-est-activé](assets/submit-is-clicked.png)
 
-1. Dans le **[!UICONTROL ALORS]** , appuyez sur le bouton **[!UICONTROL + Ajouter une instruction]** . Sélectionner **[!UICONTROL Appeler le service]** de la **[!UICONTROL Sélectionner une action]** menu déroulant.
+1. Dans le **[!UICONTROL ALORS]** , sélectionnez l’option **[!UICONTROL + Ajouter une instruction]** . Sélectionner **[!UICONTROL Appeler le service]** de la **[!UICONTROL Sélectionner une action]** menu déroulant.
 1. Sélectionnez la variable **[!UICONTROL Mettre à jour l’adresse d’expédition]** du service **[!UICONTROL Sélectionner]** menu déroulant.
 
    ![mettre-à-jour-l’adresse-de-livraison](assets/update-shipping-address.png)
@@ -97,7 +97,7 @@ Une fois les détails du client récupérés dans la base de données, vous pouv
    >Ne faites pas glisser les champs **[!UICONTROL Nom]** et **[!UICONTROL ID du client]** vers l’élément tablename.property correspondant (par exemple, customerdetails.name). Cela permet d’éviter de mettre à jour le nom et l’ID du client par erreur.
 
 1. Glissez-déposez le champ **[!UICONTROL ID du client]** de l’onglet [!UICONTROL Objets de formulaire] vers le champ ID dans la zone **[!UICONTROL ENTREE]**. Les champs sans préfixe tablename (par exemple, customerdetails dans ce cas d’utilisation) servent de paramètre de recherche pour le service de mise à jour. Le champ **[!UICONTROL id]** dans ce cas d’utilisation identifie de manière unique un enregistrement dans la tableau **customerdetails**.
-1. Appuyez sur **[!UICONTROL Terminé]** pour enregistrer la règle. Dans la fenêtre Éditeur de règles, appuyez sur **[!UICONTROL Fermer]**.
+1. Sélectionner **[!UICONTROL Terminé]** pour enregistrer la règle. Dans la fenêtre de l’éditeur de règles, sélectionnez **[!UICONTROL Fermer]**.
 1. Prévisualisez le formulaire adaptatif. Récupérez les détails d’un client, mettez à jour l’adresse de livraison et envoyez le formulaire. Lorsque vous récupérez à nouveau les détails du même client, l’adresse de livraison mise à jour s’affiche.
 
 ## Étape 3 : (section bonus) Utilisez l’éditeur de code pour exécuter des validations et afficher des messages d’erreur {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
@@ -108,12 +108,12 @@ Les formulaires adaptatifs fournissent plusieurs composants avec des validations
 
 La procédure suivante montre comment créer une règle pour afficher un message d’erreur si l’ID du client entré dans le formulaire n’existe pas dans la base de données. La règle met également l’accent sur le champ **[!UICONTROL ID du client]** et le réinitialise. La règle utilise [l’API dataIntegrationUtils du service de modèle de données de formulaire](/help/forms/using/invoke-form-data-model-services.md) pour vérifier si l’ID du client existe dans la base de données.
 
-1. Appuyez sur le champ **[!UICONTROL ID du client]** et sur l’icône `Edit Rules`. La fenêtre [!UICONTROL Éditeur de règles] s’ouvre.
-1. Appuyez sur le bouton **[!UICONTROL + Créer]** pour ajouter une règle. Il ouvre l’éditeur visuel.
+1. Sélectionnez la variable **[!UICONTROL ID de client]** et sélectionnez le champ `Edit Rules` Icône La fenêtre [!UICONTROL Éditeur de règles] s’ouvre.
+1. Sélectionnez la variable **[!UICONTROL + Créer]** pour ajouter une règle. Il ouvre l’éditeur visuel.
 
    Dans l’éditeur visuel, l’instruction **[!UICONTROL QUAND]** est sélectionnée par défaut. En outre, l’objet de formulaire (dans ce cas, **[!UICONTROL ID de client]**) d’où vous avez lancé l’éditeur de règles est spécifié dans l’instruction **[!UICONTROL QUAND]**.
 
-1. Cliquez sur le menu déroulant **[!UICONTROL Sélectionner un état]** et sélectionnez **[!UICONTROL a changé]**.
+1. Sélectionnez la variable **[!UICONTROL Sélectionner un état]** et sélectionnez **[!UICONTROL est modifié]**.
 
    ![whencustomeridischanged](assets/whencustomeridischanged.png)
 

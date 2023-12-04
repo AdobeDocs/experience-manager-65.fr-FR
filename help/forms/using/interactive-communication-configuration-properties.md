@@ -1,7 +1,7 @@
 ---
 title: Propriétés de configuration des communications interactives
 seo-title: Interactive Communication configuration properties
-description: Modifier les propriétés de configuration par défaut des communications interactives
+description: Modification des propriétés de configuration par défaut des communications interactives
 seo-description: Edit default configuration properties for Interactive Communications
 uuid: 4030078f-64a3-40bb-9892-49e22a8da561
 contentOwner: anujkapo
@@ -12,10 +12,10 @@ discoiquuid: acb61d37-cd22-422e-bbf3-a2979b13ad41
 docset: aem65
 feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '614'
-ht-degree: 100%
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+workflow-type: tm+mt
+source-wordcount: '610'
+ht-degree: 44%
 
 ---
 
@@ -36,7 +36,7 @@ Les propriétés de configuration incluent :
 
 ## Configuration de fragments de document {#document-fragments-configuration}
 
-Cliquez sur **configuration de fragments de document** sur la page **Configuration de la console web d’Adobe Experience Manager** pour afficher les propriétés de configuration des fragments de document.
+Sélectionner **Configuration des fragments de document** sur le **Configuration de la console web Adobe Experience Manager** pour afficher les propriétés de configuration des fragments de document.
 
 <table>
  <tbody> 
@@ -47,7 +47,7 @@ Cliquez sur **configuration de fragments de document** sur la page **Configurati
    <td>Valeurs acceptables</td> 
   </tr> 
   <tr> 
-   <td>Data Display Formats</td> 
+   <td>Formats d’affichage des données</td> 
    <td>Format d’affichage spécifique aux paramètres régionaux pour les champs, variables et éléments de modèle de données de formulaire disponibles lors de la création d’une communication interactive pour les canaux d’impression et web.</td> 
    <td> 
     <ul> 
@@ -61,20 +61,20 @@ Cliquez sur **configuration de fragments de document** sur la page **Configurati
   </tr> 
   <tr> 
    <td>Indentation</td> 
-   <td>Largeur de l’unité unique de mise en retrait appliquée au texte dans des fragments de document de liste.</td> 
-   <td>12,7 mm</td> 
+   <td>Largeur d’une seule unité de mise en retrait appliquée au texte dans les fragments de document de liste.</td> 
+   <td>12,7 mm</td> 
    <td>Nombre</td> 
   </tr> 
   <tr> 
    <td>Roman Numbers Minimum Width</td> 
-   <td>Largeur minimale à appliquer à la puce/au champ numérique lors de l’utilisation de chiffres romains dans des fragments de document de liste. </td> 
-   <td>12,7 mm</td> 
+   <td>Largeur minimale à appliquer à la puce ou au champ numérique lors de l’utilisation de chiffres romains dans des fragments de document de liste. </td> 
+   <td>12,7 mm</td> 
    <td>Nombre</td> 
   </tr> 
   <tr> 
    <td>Number Minimum Width</td> 
-   <td>Largeur minimale à appliquer à la puce/au champ numérique lors de l’utilisation de listes numérotées à l’exception des chiffres romains dans des fragments de document de liste.</td> 
-   <td>8,0 mm</td> 
+   <td>Largeur minimale à appliquer à la puce ou au champ numérique lors de l’utilisation de listes numérotées à l’exception des chiffres romains dans des fragments de document de liste.</td> 
+   <td>8,0 mm</td> 
    <td>Nombre</td> 
   </tr> 
  </tbody> 
@@ -82,7 +82,7 @@ Cliquez sur **configuration de fragments de document** sur la page **Configurati
 
 ## Configurer la création de correspondance {#create-correspondence-configuration}
 
-Cliquez sur **Configuration de la création de correspondance** sur la page **Configuration de la console web d’Adobe Experience Manager** pour afficher les propriétés de configuration de l’interface utilisateur de l’agent.
+Sélectionner **Configuration de la création de correspondance** sur le **Configuration de la console web Adobe Experience Manager** pour afficher les propriétés de configuration de l’interface utilisateur de l’agent.
 
 <table>
  <tbody> 
@@ -94,12 +94,12 @@ Cliquez sur **Configuration de la création de correspondance** sur la page **Co
   </tr> 
   <tr> 
    <td>Afficher le contenu résolu pour modification</td> 
-   <td>Cochez la case pour afficher le contenu résolu (valeurs réelles au lieu d’espaces réservés) lors de la modification du module de texte sur l’interface utilisateur de l’agent.</td> 
+   <td>Cochez la case pour afficher le contenu résolu (valeurs réelles au lieu d’espaces réservés) lors de la modification du module de texte dans l’interface utilisateur de l’agent.</td> 
    <td>Non sélectionné</td> 
    <td>Non applicable</td> 
   </tr> 
   <tr> 
-   <td>Appliquer un filigrane lors de l’aperçu</td> 
+   <td>Application d’un filigrane pendant l’aperçu</td> 
    <td>Cochez la case pour appliquer un filigrane au canal d’impression de la communication interactive en mode Aperçu.</td> 
    <td>Non sélectionné</td> 
    <td>Non applicable</td> 
@@ -115,17 +115,17 @@ Cliquez sur **Configuration de la création de correspondance** sur la page **Co
 
 ## Configurer le canal web du formulaire adaptatif et de la communication interactive {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Appuyez sur **Configuration du canal web du formulaire adaptatif et de la communication interactive** sur la page **Configuration de la console web d’Adobe Experience Manager** pour afficher les propriétés de configuration du canal web du formulaire adaptatif et des communications interactives. Le tableau suivant décrit les propriétés liées aux communications interactives :
+Sélectionner **Configuration du canal web du formulaire adaptatif et de la communication interactive** sur le **Configuration de la console web Adobe Experience Manager** pour afficher les propriétés de configuration du canal web Forms adaptatif et communications interactives. Le tableau suivant décrit les propriétés liées aux communications interactives :
 
 | Propriété | Description | Valeur par défaut | Valeurs acceptables |
 |---|---|---|---|
 | Afficher l’espace réservé | Cochez la case pour activer l’affichage des espaces réservés pour les champs inclus dans les formulaires adaptatifs et les communications interactives. | Sélectionné | Non applicable |
-| Nombre maximal d’entrées de cache | Définissez le nombre maximal de formulaires adaptatifs et de communications interactives pouvant être récupérés à l’aide de la mémoire cache. | 100 | Nombre |
-| Rendre le nom de fichier unique | Cochez la case pour attribuer des noms uniques aux fichiers en tant que pièces jointes dans les formulaires adaptatifs et les communications interactives. | Non sélectionné | Non applicable |
+| Entrées de cache maximales | Définissez le nombre maximal de formulaires adaptatifs et de communications interactives pouvant être récupérés à l’aide de la mémoire cache. | 100 | Nombre |
+| Rendre le nom de fichier unique | Cochez la case pour que les noms des fichiers soient uniques en tant que pièces jointes dans le Forms adaptatif et les communications interactives. | Non sélectionné | Non applicable |
 
 ## Configurer les thèmes du canal web du formulaire adaptatif et de la communication interactive {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Appuyez sur **Configuration des thèmes du canal web du formulaire adaptatif et de la communication interactive** sur la page **Configuration de la console web d’Adobe Experience Manager** pour afficher les propriétés de configuration des thèmes du canal web du formulaire adaptatif et des communications interactives.
+Sélectionner **Configuration du thème du canal web du formulaire adaptatif et de la communication interactive** sur le **Configuration de la console web Adobe Experience Manager** pour afficher les propriétés de configuration des thèmes de canal web Forms adaptatif et Communications interactives.
 
 <table>
  <tbody> 
@@ -136,10 +136,10 @@ Appuyez sur **Configuration des thèmes du canal web du formulaire adaptatif et 
    <td>Valeurs acceptables</td> 
   </tr> 
   <tr> 
-   <td>Nom de la liste de polices</td> 
-   <td>Liste des polices pouvant être utilisées lors de la création de formulaires adaptatifs et de communications interactives.</td> 
-   <td><p>Georgia</p> <p>Book Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial black</p> <p>Impact</p> <p>Palatino Linotype</p> </td> 
-   <td>Toutes les polices valides du serveur Adobe</td> 
+   <td>Nom de la liste des polices</td> 
+   <td>Liste des polices disponibles lors de la création de Forms adaptatif et de communications interactives.</td> 
+   <td><p>Géorgie</p> <p>Book Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial black</p> <p>Impact</p> <p>Palatino Linotype</p> </td> 
+   <td>Toutes les polices de serveur d’Adobe valides</td> 
   </tr> 
  </tbody> 
 </table>

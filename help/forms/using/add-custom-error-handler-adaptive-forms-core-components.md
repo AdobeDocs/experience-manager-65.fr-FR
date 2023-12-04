@@ -6,14 +6,14 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
 exl-id: 2118d77f-1314-48f1-88e3-e27dd8e9f17b
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2331'
-ht-degree: 75%
+source-wordcount: '2278'
+ht-degree: 72%
 
 ---
 
-# Gestionnaires d’erreurs dans les formulaires adaptatifs (Composants principaux) {#error-handlers-in-adaptive-form}
+# Gestionnaires d’erreurs dans Forms adaptatif (composants principaux) {#error-handlers-in-adaptive-form}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -64,7 +64,7 @@ Le code ci-dessous illustre la structure de réponse d’échec existante :
 
 Où :
 
-* `errorCausedBy` décrit le motif de l’échec..
+* `errorCausedBy` décrit la raison de l’échec.
 * `errors` mentionnez le nom de champ qualifié des champs qui ont échoué aux critères de validation avec le message d’erreur de validation.
 * `originCode` est un champ ajouté par AEM, qui contient le code d’état http renvoyé par le service externe.
 * `originMessage` est un champ ajouté par AEM, qui contient les données d’erreur brutes renvoyées par le service externe.
@@ -167,7 +167,7 @@ Voici quelques options pour afficher les réponses d’erreur :
 
 Avant d’utiliser un gestionnaire d’erreur dans une Forms adaptative :
 
-* [Activation des composants principaux des formulaires adaptatifs pour votre environnement](enable-adaptive-forms-core-components.md).
+* [Activation des composants principaux de Forms adaptatif pour votre environnement](enable-adaptive-forms-core-components.md).
 * Connaissances de base en [créer une fonction personnalisée](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
 * Installez la dernière version d’[Apache Maven](https://maven.apache.org/download.cgi).
 
@@ -191,8 +191,8 @@ L’éditeur de règles vous permet d’effectuer les opérations suivantes :
 Un gestionnaire d’erreurs par défaut est pris en charge pour afficher les messages d’erreur sur les champs si la réponse d’erreur se trouve dans le schéma standard ou dans un échec de validation côté serveur.
 Pour comprendre comment utiliser un gestionnaire d’erreurs par défaut à l’aide de la méthode [Service d’appel de l’éditeur de règles](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=fr#invoke) , prenez un exemple de formulaire adaptatif simple avec deux champs, **Identifiant de paramètre prédéfini** et **Nom du paramètre prédéfini** et utilisez un gestionnaire d’erreurs par défaut au niveau de l’événement **Identifiant de paramètre prédéfini** pour vérifier les différentes erreurs renvoyées par le point de terminaison REST configuré pour appeler un service externe, par exemple : `200 - OK`,`404 - Not Found`, `400 - Bad Request`. Pour ajouter un gestionnaire d’erreurs par défaut à l’aide de l’action Invoke Service de l’éditeur de règles, procédez comme suit :
 
-1. Ouvrez un formulaire adaptatif en mode création, sélectionnez un composant de formulaire et appuyez sur **[!UICONTROL Éditeur de règles]** pour ouvrir ce dernier.
-1. Appuyez sur **[!UICONTROL Créer]**.
+1. Ouvrez un formulaire adaptatif en mode création, sélectionnez un composant de formulaire, puis sélectionnez **[!UICONTROL Éditeur de règles]** pour ouvrir l’éditeur de règles.
+1. Sélectionnez **[!UICONTROL Créer]**.
 1. Définissez une condition dans la section **Lorsque** de la règle. Par exemple : **When[Nom du champ Identifiant de l’animal domestique]** est modifiée. L’option Sélectionner est modifiée à partir du **Sélectionner un état** liste déroulante.
 1. Dans la section **Then** (Alors), sélectionnez **[!UICONTROL Invoke Service]** (Appeler un service) dans la liste déroulante **Select Action** (Sélectionner une action).
 1. Sélectionnez un **service Post** et ses liaisons de données correspondantes dans la section **Entrée**. Par exemple, pour valider **Identifiant d’animal domestique**, sélectionnez un **service Post** comme **GET /pet/{petId}**, puis sélectionnez **Identifiant d’animal domestique** dans la section **Entrée**.
@@ -216,8 +216,7 @@ Vous pouvez ajouter une fonction de gestionnaire d’erreurs personnalisé pour 
 
 Outre les actions mentionnées, les gestionnaires d’erreurs personnalisés peuvent être utilisés pour exécuter des fonctions personnalisées répondant à des besoins spécifiques de l’utilisateur ou l’utilisatrice.
 
-Le gestionnaire d’erreurs personnalisé est une fonction (bibliothèque cliente) conçue pour répondre aux erreurs renvoyées par un service externe et fournir une réponse personnalisée aux utilisateurs et utilisatrices finaux. Toute bibliothèque cliente avec l’annotation `@errorHandler` est considérée comme une fonction de gestionnaire d’erreurs personnalisé. Cette annotation permet d’identifier la fonction de gestionnaire d’erreurs spécifiée dans le fichier `.js`.
-
+Le gestionnaire d’erreurs personnalisé est une fonction (bibliothèque cliente) conçue pour répondre aux erreurs renvoyées par un service externe et fournir une réponse personnalisée aux utilisateurs et utilisatrices finaux. Toute bibliothèque cliente avec l’annotation `@errorHandler` est considérée comme une fonction de gestionnaire d’erreurs personnalisé. Cette annotation permet d’identifier la fonction de gestionnaire d’erreurs spécifiée dans la variable `.js` fichier .
 
 Pour comprendre comment créer et utiliser un gestionnaire d’erreurs personnalisé à l’aide de l’action [Service Invoke de l’éditeur de règles](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=fr#invoke), prenons un exemple de formulaire adaptatif avec deux champs, **Identifiant d’animal domestique** et **Nom de l’animal domestique** et utilisez un gestionnaire d’erreurs personnalisé sur le champ **Identifiant d’animal domestique** pour vérifier les différentes erreurs renvoyées par le point d’entrée REST configuré pour appeler un service externe, par exemple : `200 - OK`,`404 - Not Found`, `400 - Bad Request`.
 
@@ -296,8 +295,8 @@ Dans ce cas, le nom de la bibliothèque cliente est fourni comme suit : `customf
 
 Pour utiliser un gestionnaire d’erreurs personnalisé à l’aide de l’action **[!UICONTROL Service Invoke de l’éditeur de règles]** :
 
-1. Ouvrez un formulaire adaptatif en mode création, sélectionnez un composant de formulaire et appuyez sur **[!UICONTROL Éditeur de règles]** pour ouvrir ce dernier.
-1. Appuyez sur **[!UICONTROL Créer]**.
+1. Ouvrez un formulaire adaptatif en mode création, sélectionnez un composant de formulaire, puis sélectionnez **[!UICONTROL Éditeur de règles]** pour ouvrir l’éditeur de règles.
+1. Sélectionnez **[!UICONTROL Créer]**.
 1. Définissez une condition dans la section **Lorsque** de la règle. Par exemple, lorsque **[Nom du champ Identifiant de l’animal domestique]** est modifié, sélectionnez **est modifié** dans la liste déroulante **Sélectionner un état**.
 1. Dans la section **Then** (Alors), sélectionnez **[!UICONTROL Invoke Service]** (Appeler un service) dans la liste déroulante **Select Action** (Sélectionner une action).
 1. Sélectionnez un **service Post** et ses liaisons de données correspondantes dans la section **Entrée**. Par exemple, pour valider **Identifiant d’animal domestique**, sélectionnez un **service Post** comme **GET /pet/{petId}**, puis sélectionnez **Identifiant d’animal domestique** dans la section **Entrée**.

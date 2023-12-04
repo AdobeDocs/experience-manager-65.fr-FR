@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: d0768679182567cc7cd618adaa78b6518f902f7c
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1861'
-ht-degree: 49%
+source-wordcount: '1844'
+ht-degree: 48%
 
 ---
 
@@ -736,7 +736,7 @@ Pour permettre à tous les Forms adaptatifs basés sur un schéma JSON de géné
 
 1. Accédez à la console web Experience Manager à l’adresse `https://server:host/system/console/configMgr`.
 1. Localiser **[!UICONTROL Configuration de canal web de formulaire adaptatif et de communication interactive]**.
-1. Appuyez pour ouvrir la configuration en mode d’édition.
+1. Sélectionnez cette option pour ouvrir la configuration en mode d’édition.
 1. Sélectionnez la variable **[!UICONTROL Générer des données conformes aux schémas]** .
 1. Enregistrez les paramètres.
 

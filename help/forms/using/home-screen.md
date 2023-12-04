@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 docset: aem65
 exl-id: 6c6fb516-1b11-4da4-b638-4388a070e397
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 28%
+ht-degree: 20%
 
 ---
 
@@ -29,10 +29,10 @@ La figure suivante est annotée avec des légendes aux composants essentiels sur
 
 ![home-screen-1-1](assets/home-screen-1-1.png)-->
 
-1. **Bouton de menu :** appuyez sur le bouton **Menu** pour accéder aux tâches, aux formulaires, à la boîte d’envoi et aux paramètres. Si votre application AEM Forms est connectée à un serveur AEM Forms JEE, l’option Tâches s’affiche. L’option Tâches stocke également les brouillons créés à partir de tâches dans un processus. Pour les serveurs OSGi AEM Forms, l’option Tâches est masquée. La boîte d’envoi stocke les formulaires enregistrés et les brouillons avant qu’ils ne se synchronisent avec le serveur. Tous les formulaires enregistrés et les brouillons de la boîte d’envoi sont chargés sur le serveur AEM Forms lorsque l’application est [synchronisé avec le serveur](../../forms/using/sync-app.md). Pour plus d’informations sur les paramètres, voir [Mise à jour des paramètres généraux](../../forms/using/update-general-settings.md).
-1. **Tâche ou formulaire**: appuyez sur la tâche ou le formulaire répertorié à utiliser.
-1. **Points de suspension horizontaux**: indique que les actions sont disponibles pour le formulaire. Appuyez sur les points de suspension pour afficher les actions et la description fournies par l’auteur. Les options **Supprimer le brouillon** et **Terminé** sont visibles lorsque vous appuyez sur les points de suspension.
-1. **Icône Actualiser**: appuyez sur l’icône d’actualisation afin de synchroniser votre application avec le serveur AEM Forms.
+1. **Bouton Menu**: sélectionnez la variable **Menu** pour accéder à Tâches, Forms, Boîte d’envoi et Paramètres. Si votre application AEM Forms est connectée à un serveur AEM Forms JEE, l’option Tâches s’affiche. L’option Tâches stocke également les brouillons créés à partir de tâches dans un processus. Pour les serveurs OSGi AEM Forms, l’option Tâches est masquée. La boîte d’envoi stocke les formulaires enregistrés et les brouillons avant qu’ils ne se synchronisent avec le serveur. Tous les formulaires enregistrés et les brouillons de la boîte d’envoi sont chargés sur le serveur AEM Forms lorsque l’application est [synchronisé avec le serveur](../../forms/using/sync-app.md). Pour plus d’informations sur les paramètres, voir [Mise à jour des paramètres généraux](../../forms/using/update-general-settings.md).
+1. **Tâche ou formulaire**: sélectionnez la tâche ou le formulaire répertorié avec lequel vous souhaitez travailler.
+1. **Points de suspension horizontaux**: indique que les actions sont disponibles pour le formulaire. Appuyez sur les points de suspension pour afficher les actions et la description fournies par l’auteur. La variable **Supprimer le brouillon** et **Terminer** est visible lorsque vous sélectionnez les points de suspension.
+1. **Icône Actualiser**: sélectionnez l’icône d’actualisation afin de synchroniser votre application avec le serveur AEM Forms.
 
 ### Personnalisation de l’écran d’accueil {#customizing-the-home-screen}
 

@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3016'
-ht-degree: 57%
+source-wordcount: '3015'
+ht-degree: 62%
 
 ---
 
@@ -54,9 +54,9 @@ La barre d’outils permet d’accéder à de nombreuses options. Selon votre co
 
   ![Informations sur la page](do-not-localize/screen_shot_2018-03-22at111437.png)
 
-* **Emulateur**
+* **Émulateur**
 
-  Fait basculer la [barre d’outils de l’émulateur](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate) utilisée pour émuler l’aspect de la page sur un autre dispositif. Cette option est automatiquement basculée en mode de mise en page.
+  Fait basculer la [barre d’outils de l’émulateur](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate) utilisée pour émuler l’aspect de la page sur un autre appareil. Cette option est automatiquement basculée en mode de mise en page.
 
   ![Émulateur](do-not-localize/screen_shot_2018-03-22at111442.png)
 
@@ -98,11 +98,11 @@ Si la page fait partie d’un ou de plusieurs [workflows](/help/sites-authoring/
 
 >[!NOTE]
 >
->La barre de statut n’est visible que pour les comptes d’utilisateurs ou d’utilisatrices disposant des privilèges appropriés.
+>La barre de statut n’est visible que pour les comptes d’utilisateur ou d’utilisatrice disposant des privilèges appropriés.
 
-La notification répertorie le workflow qui s’exécute sur la page. Si l’utilisateur ou l’utilisatrice est impliqué dans l’étape de workflow en cours, les options pour [affecter le statut du workflow](/help/sites-authoring/workflows-participating.md) et obtenir plus d’informations sur le workflow sont également disponibles, par exemple :
+La notification répertorie le workflow qui s’exécute sur la page. Si la personne utilisatrice est impliquée dans l’étape de workflow en cours, les options pour [affecter le statut du workflow](/help/sites-authoring/workflows-participating.md) et obtenir plus d’informations sur le workflow sont également disponibles, par exemple :
 
-* **Terminer** : ouvre la boîte de dialogue **Terminer l’élément de travail**. box
+* **Terminer** - Ouvre la fenêtre **Terminer l’élément de travail** boîte de dialogue
 
 * **Déléguer** - Ouvre la fenêtre **Terminer l’élément de travail** boîte de dialogue
 
@@ -114,9 +114,9 @@ Si la page est soumise à plusieurs workflows, le nombre de workflows s&#39;affi
 
 ![Notification du nombre de workflows](assets/chlimage_1-122.png)
 
-## Espace réservé du composant {#component-placeholder}
+## Espace réservé au composant {#component-placeholder}
 
-L’espace réservé du composant est un indicateur indiquant où est positionné un composant lorsque vous le déposez, au-dessus du composant que vous survolez actuellement.
+L’espace réservé indique le positionnement du composant que vous déposez. Pour l’afficher, survolez le composant.
 
 * Lors de l’ajout d’un composant à la page (en le faisant glisser depuis l’explorateur de composants) :
 
@@ -130,7 +130,7 @@ L’espace réservé du composant est un indicateur indiquant où est positionn�
 
 ### Insertion d’un composant depuis l’explorateur de composants {#inserting-a-component-from-the-components-browser}
 
-Vous pouvez ajouter un composant à l’aide de la méthode [explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser). La variable [espace réservé du composant](#component-placeholder) affiche l’emplacement du composant :
+Vous pouvez ajouter un composant à l’aide de la méthode [explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser). L’[espace réservé du composant](#component-placeholder) vous indique où sera positionné le composant.
 
 1. Assurez-vous que votre page est en mode [**Modifier**](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Ouvrez l’[explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser).
@@ -159,9 +159,9 @@ Vous pouvez ajouter un composant à l’aide de la méthode **Faire glisser des 
 
    ![Insertion d’un nouveau composant.](assets/screen_shot_2018-03-22at112650.png)
 
-1. Le composant sélectionné est ajouté au bas de la page. [Modifier](#editmovecopypastedelete) le composant selon les besoins.
+1. Le composant sélectionné est ajouté au bas de la page. [Modifiez](#editmovecopypastedelete) le composant si nécessaire.
 
-### Insertion d’un composant à partir de l’Explorateur de ressources {#inserting-a-component-using-the-assets-browser}
+### Insertion d’un composant à partir de l’explorateur de ressources {#inserting-a-component-using-the-assets-browser}
 
 Vous pouvez également ajouter un composant à la page en faisant glisser une ressource depuis l’ [navigateur de ressources](/help/sites-authoring/author-environment-tools.md#assets-browser). Cela crée automatiquement un composant du type approprié (et contenant la ressource).
 
@@ -206,7 +206,7 @@ Pour créer un composant en faisant glisser l’un des types de ressources ci-de
 1. Ouvrez l’[explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assets-browser).
 1. Faites glisser le composant jusqu’à la position requise. La variable [espace réservé du composant](#component-placeholder) vous indique l’emplacement du composant.
 
-   Un composant, adapté au type de ressource, est créé à l’emplacement requis ; il contient la ressource sélectionnée.
+   Un composant, adapté au type de ressource, est créé à l’emplacement requis. Il contient la ressource sélectionnée.
 
 1. [Modifier](#editmovecopypastedelete) le composant, si nécessaire.
 
@@ -222,13 +222,13 @@ Lorsque vous parcourez les ressources, si vous constatez que vous devez apporter
 
 La sélection d’un composant ouvre la barre d’outils. Cela permet d’accéder à diverses actions qui peuvent être exécutées sur le composant.
 
-Les actions disponibles pour l’utilisateur sont affichées comme il convient ; toutes les actions ne peuvent pas être décrites ici.
+Les actions disponibles sont affichées comme il convient ; ces actions ne peuvent pas toutes être décrites ici.
 
 ![options de la barre d’outils des composants](assets/screen_shot_2018-03-22at112909.png)
 
 * **Modifier**
 
-  [Dépend du type de composant.](/help/sites-authoring/default-components.md), vous pouvez ainsi : [modifier le contenu du composant ;](#edit-content). Souvent, une barre d’outils est fournie.
+  [En fonction du type de composant](/help/sites-authoring/default-components.md), vous pouvez [en modifier le contenu](#edit-content). Souvent, une barre d’outils est fournie.
 
   ![Modifier](do-not-localize/screen_shot_2018-03-22at112936.png)
 
@@ -267,7 +267,7 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient ;
   Le composant est collé du Presse-papiers à la page. Le contenu d’origine reste ou non en fonction de l’utilisation de la copie ou de la coupure.
 
    * Vous pouvez coller les composants sur la même page ou sur une autre.
-   * L’élément collé est collé au-dessus de l’élément dans lequel vous sélectionnez l’action de collage.
+   * L’élément collé est collé au-dessus de l’élément pour lequel vous avez sélectionné l’action de collage.
    * L’action Coller n’est affichée que si du contenu se trouve dans le Presse-papiers.
 
   ![Coller](assets/screen_shot_2018-03-22at113553.png)
@@ -290,7 +290,7 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient ;
 
 * **Disposition**
 
-  Vous pouvez ainsi modifier la variable [layout](/help/sites-authoring/editing-content.md#edit-component-layout) du composant sélectionné. Cela s’applique uniquement au composant sélectionné et n’active pas le [mode de disposition](/help/sites-authoring/author-environment-tools.md#page-modes) pour la page entière.
+  Vous pouvez ainsi modifier la variable [layout](/help/sites-authoring/editing-content.md#edit-component-layout) du composant sélectionné. Cela s’applique uniquement au composant sélectionné et n’active pas le [mode de mise en page](/help/sites-authoring/author-environment-tools.md#page-modes) pour la page entière.
 
   ![Disposition](do-not-localize/screen_shot_2018-03-22at113044.png)
 
@@ -330,7 +330,7 @@ Les options de modification exactes dépendent du composant. Pour certains compo
 
 * Composant d’image - Plein écran
 
-  [Passage en mode Plein écran](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) pour le composant d’image , il permet de libérer de l’espace pour modifier l’image et d’afficher des options de modification supplémentaires, telles que **Lancer une Map** et **Réinitialiser le zoom**. En outre, le mode plein écran permet de sélectionner les paramètres prédéfinis de recadrage.
+  [Le passage en mode Plein écran](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) pour le composant d’image permet de libérer de l’espace pour modifier l’image et d’afficher des options de modification supplémentaires, telles que **Carte de lancement** et **Réinitialiser le zoom**. En outre, le mode plein écran permet de sélectionner les paramètres prédéfinis de recadrage.
 
   ![Composant d’image plein écran](assets/screen_shot_2018-03-22at120529.png)
 
@@ -368,7 +368,7 @@ Par exemple, le composant **Texte** :
 
 Pour déplacer un composant de paragraphe :
 
-1. Sélectionnez le paragraphe à déplacer en appuyant ou en cliquant longuement.
+1. Sélectionnez le paragraphe à déplacer en maintenant la souris enfoncée ou en cliquant et en maintenant la souris enfoncée.
 1. Faites glisser le paragraphe vers son nouvel emplacement. AEM indique où le paragraphe peut être déposé. Déposez-le à l’emplacement de votre choix.
 
    ![déplacement du composant de paragraphe](assets/screen_shot_2018-03-22at121821.png)
@@ -387,15 +387,15 @@ Au lieu de passer de manière répétée de la modification à [mode de mise en 
 
    ![Mode d’édition dans le formulaire](assets/screen_shot_2018-03-22at133756.png)
 
-   Cliquez ou appuyez sur **Disposition** pour que vous puissiez ajuster la disposition du composant.
+   Cliquez sur le bouton **Disposition** pour que vous puissiez ajuster la disposition du composant.
 
    ![Barre d’outils de composants](do-not-localize/chlimage_1-21.png)
 
-1. Une fois l’action de disposition sélectionnée :
+1. Une fois l’action de mise en page sélectionnée :
 
    * Les poignées de redimensionnement du composant s’affichent.
    * La barre d’outils de l’émulateur s’affiche en haut de l’écran.
-   * Les actions de disposition au lieu des actions de modification standard s’affichent dans la barre d’outils du composant.
+   * Les actions de mise en page au lieu des actions de modification standard s’affichent dans la barre d’outils du composant.
 
    ![Aperçu du formulaire sur plusieurs périphériques](assets/screen_shot_2018-03-22at133843.png)
 
@@ -407,7 +407,7 @@ Au lieu de passer de manière répétée de la modification à [mode de mise en 
 
 >[!NOTE]
 >
->L’action de mise en page est limitée au composant sélectionné. Par exemple, si vous modifiez la mise en page d’un composant, puis sélectionnez un autre composant, la barre d’outils d’édition standard (et non la barre d’outils de mise en page) s’affiche pour le nouveau composant sélectionné. Les poignées de redimensionnement et la barre d’outils de l’émulateur disparaissent.
+>L’action de disposition est limitée au composant sélectionné. Par exemple, si vous modifiez la mise en page d’un composant, puis sélectionnez un autre composant, la barre d’outils d’édition standard (et non la barre d’outils de mise en page) s’affiche pour le nouveau composant sélectionné. Les poignées de redimensionnement et la barre d’outils de l’émulateur disparaissent.
 >
 >Si vous devez modifier la mise en page globale de la page et affecter plusieurs composants, passez à la section [mode de mise en page](/help/sites-authoring/responsive-layout.md).
 
@@ -443,7 +443,7 @@ Vous pouvez annuler (puis réactiver) l’héritage. Selon le composant, vous po
 
   Boîte de dialogue de configuration. Par exemple, comme avec le système de paragraphes hérité :
 
-  ![Système de paragraphe hérité](assets/chlimage_1-124.png)
+  ![Système de paragraphes hérité](assets/chlimage_1-124.png)
 
 ## Modification du modèle de page {#editing-the-page-template}
 
@@ -455,7 +455,7 @@ Vous pouvez déterminer facilement le modèle sur lequel la page est basée en s
 
 ## Statut de la Live Copy {#live-copy-status}
 
-Le [mode de la page du statut de la Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) vous donne un aperçu rapide du statut de la Live Copy et des composants qui sont ou non hérités :
+Le [mode de la page du statut de la Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) vous donne une vue d’ensemble rapide du statut de la Live Copy et des composants qui sont ou non hérités :
 
 * Bordure verte : hérité
 * Bordure rose : héritage annulé
@@ -578,7 +578,7 @@ Le comportement des commandes Annuler et Rétablir est similaire à celui des au
 >Vous pouvez :
 >
 >* Rétablir les actions tant que vous n’avez pas effectué de modification de page depuis que vous avez utilisé l’option Annuler.
->* Annuler un maximum de 20 actions de modification (paramètre par défaut).
+>* Annuler un maximum de 20 actions de modification (paramètre par défaut).
 >* Utilisez également les [raccourcis clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) pour annuler et rétablir.
 >
 

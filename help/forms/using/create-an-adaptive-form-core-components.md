@@ -10,14 +10,14 @@ topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
 exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1794'
-ht-degree: 50%
+source-wordcount: '1743'
+ht-degree: 47%
 
 ---
 
-# Créer un formulaire adaptatif basé sur des composants principaux {#creating-an-adaptive-form-core-components}
+# Création d’un Forms adaptatif basé sur des composants principaux {#creating-an-adaptive-form-core-components}
 
 
 <span class="preview"> Adobe recommande d’utiliser les composants principaux pour [Ajout d’un Forms adaptatif à une page AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) ou [créer une Forms adaptative autonome](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
@@ -64,24 +64,24 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 
 1. Connectez-vous à votre [AEM instance d’auteur](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#author-and-publish-installs).
 
-1. Entrez vos informations d’identification dans la page de connexion d’Experience Manager. Une fois connecté, dans le coin supérieur gauche, appuyez sur **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents.]**.
+1. Entrez vos informations d’identification dans la page de connexion d’Experience Manager. Une fois connecté, dans le coin supérieur gauche, sélectionnez **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms et documents]**.
 
-1. Appuyer **[!UICONTROL Créer]**  > **[!UICONTROL Créer un Forms adaptatif]**.
+1. Sélectionner **[!UICONTROL Créer]**  > **[!UICONTROL Créer un Forms adaptatif]**.
 
 1. Sélectionnez un modèle de composants principaux de Forms adaptatif et cliquez sur **[!UICONTROL Suivant]**.
 
 1. La variable **[!UICONTROL Ajouter des propriétés]** apparaît. Spécifiez les valeurs des champs de propriété suivants. Les champs Titre et Nom sont obligatoires :
 
    * **[!UICONTROL Titre :]** Indique le nom d’affichage du formulaire. Le titre vous permet d’identifier le formulaire dans l’interface utilisateur [!DNL Experience Manager Forms] d’AEM Forms.
-   * **[!UICONTROL Nom :]** indique le nom du formulaire. Un nœud portant le nom spécifié est créé dans le référentiel. Lorsque vous commencez à saisir un titre, la valeur du champ Nom est automatiquement générée. Vous pouvez modifier la valeur suggérée. Le champ Nom ne peut contenir que des caractères alphanumériques, des traits d’union et des traits de soulignement.
+   * **[!UICONTROL Nom :]** indique le nom du formulaire. Un nœud portant le nom spécifié est créé dans le référentiel. Lorsque vous commencez à saisir un titre, la valeur du champ Nom est automatiquement générée. Vous pouvez modifier la valeur suggérée. Le champ Nom ne peut contenir que des caractères alphanumériques, des tirets et des traits de soulignement.
    * **[!UICONTROL Description :]** indique des informations détaillées relatives au formulaire.
    * **[!UICONTROL Bibliothèque cliente du thème]:** Indique le thème d’un formulaire adaptatif. Par défaut, la variable `adaptiveform.theme.canvas3` Le thème est sélectionné. Vous pouvez également choisir un thème différent dans la **[!UICONTROL Bibliothèque cliente du thème]** menu déroulant.
    * **[!UICONTROL Conteneur de configuration :]**  Définit un emplacement où sont stockés les fichiers de configuration pour le Forms adaptatif. Ces fichiers de configuration contiennent des paramètres et des propriétés liés au comportement et à l’aspect d’Adaptive Forms.
    * **[!UICONTROL Balises :]** indique les balises pour individualiser le formulaire adaptatif. Les balises aident à rechercher le formulaire. Pour créer des balises, saisissez les nouveaux noms de balise dans la boîte de dialogue **[!UICONTROL Balises.]**
-1. Appuyez sur **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche.
+1. Sélectionnez **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche.
 
 
-1. Appuyer **[!UICONTROL Modifier]** pour ouvrir le formulaire nouvellement créé dans un nouvel onglet. Le formulaire s’ouvre pour modification et affiche le contenu disponible dans le modèle. Il affiche également la barre latérale permettant de personnaliser le formulaire nouvellement créé.
+1. Sélectionner **[!UICONTROL Modifier]** pour ouvrir le formulaire nouvellement créé dans un nouvel onglet. Le formulaire s’ouvre pour modification et affiche le contenu disponible dans le modèle. Il affiche également la barre latérale permettant de personnaliser le formulaire nouvellement créé.
 
 
 ## Utilisation des composants principaux de Forms adaptatif pour créer votre formulaire
@@ -125,8 +125,8 @@ Lors de la soumission d’un formulaire, vous pouvez rediriger la personne utili
 
 Vous pouvez utiliser le modèle de données de formulaire pour connecter un formulaire à une source de données afin d’envoyer et de recevoir des données en fonction des actions de l’utilisateur ou de l’utilisatrice. Vous pouvez également connecter un formulaire à un schéma JSON pour recevoir les données envoyées dans un format prédéfini. Selon les besoins, connectez votre formulaire à un schéma JSON ou à un modèle de données de formulaire :
 
-* [Créer un schéma JSON et le charger dans votre environnement](/help/forms/using/adaptive-form-json-schema-form-model.md)
-* [Créer un modèle de données de formulaire](/help/forms/using/create-form-data-models.md)
+* [Création d’un schéma JSON et chargement dans votre environnement](/help/forms/using/adaptive-form-json-schema-form-model.md)
+* [Création d’un modèle de données de formulaire](/help/forms/using/create-form-data-models.md)
 
 ### Configuration d’un schéma JSON ou d’un modèle de données de formulaire pour votre formulaire
 
@@ -138,7 +138,7 @@ Pour configurer un schéma JSON ou un modèle de données de formulaire pour vot
 
    ![Cliquez sur l’icône de clé à molette pour ouvrir la boîte de dialogue Conteneur de formulaires adaptatifs afin de configurer un schéma JSON ou un modèle de données de formulaire.](/help/forms/using/assets/adaptive-forms-select-form-data-model-or-json-schema.png)
 
-1. Sélectionnez et configurez un schéma JSON ou un modèle de données de formulaire, en fonction de vos besoins:
+1. Sélectionnez et configurez un schéma JSON ou un modèle de données de formulaire, en fonction de vos besoins :
 
    * Lorsque vous sélectionnez l’option **[!UICONTROL Modèle de formulaire]**, utilisez l’option **[!UICONTROL Sélectionner un modèle de données de formulaire]** pour sélectionner un modèle de données de formulaire préconfiguré.
    * Lorsque vous sélectionnez l’option **[!UICONTROL Schéma]**, utilisez l’option **[!UICONTROL Schéma]** pour sélectionner un schéma JSON pour votre formulaire.
@@ -170,11 +170,11 @@ Vous pouvez utiliser le service de préremplissage de modèle de données de for
 <!--
 ## Edit Form Model properties of an Adaptive Form {#edit-form-model}
 
-1. Select the Adaptive Form and tap ![Page information](/help/forms/using/assets/configure-icon.svg) > **[!UICONTROL Open Properties]**. The Form Properties page opens. 
+1. Select the Adaptive Form and select ![Page information](/help/forms/using/assets/configure-icon.svg) > **[!UICONTROL Open Properties]**. The Form Properties page opens. 
 
 1. Go to the **[!UICONTROL Form Model]** tab and choose a form model. If the Adaptive Form is without a form model, you have the freedom to choose either a JSON schema or a form data model. On the other hand, if the Adaptive Form is already based on a form model, you have the option to switch to another form model of the same type. For instance, if the form is using a JSON schema, you can easily switch to another JSON schema, and similarly if the form is using a Form Data Model, you can switch to another Form Data Model. 
 
-1. Tap **[!UICONTROL Save]** to save the properties.
+1. Select **[!UICONTROL Save]** to save the properties.
 -->
 
 ## Prochaines étapes

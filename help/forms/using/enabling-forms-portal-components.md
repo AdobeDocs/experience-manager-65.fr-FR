@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: 4d318908-c724-4582-a82b-6e9b1c55705b
 feature: Forms Portal
 exl-id: 572194b7-063b-4c38-af43-aba78e9c51c6
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 77%
+source-wordcount: '332'
+ht-degree: 53%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 77%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 Les composants Forms Portal prêts à l’emploi ne sont pas disponibles. Pour que les composants apparaissent dans la liste des composants disponibles dans AEM sidekick, procédez comme suit :
@@ -30,15 +30,15 @@ Les composants Forms Portal prêts à l’emploi ne sont pas disponibles. Pour q
 
 1. Pour les pages utilisant un modèle statique, procédez comme suit :
 
-   1. Dans l’en-tête de la page, appuyez sur ![menu déroulant Canvas](assets/canvas-drop-down.png) > **Conception** pour ouvrir la page en mode Conception.
-   1. Cliquez sur n’importe quel composant (avec une bordure bleue), puis cliquez sur ![field-level](assets/field-level.png) pour sélectionner le système de paragraphe contenant le composant actif.
-   1. Dans le système de paragraphe, appuyez sur ![settings-icon](assets/settings_icon.png) pour ouvrir la boîte de dialogue d’édition pour le système de paragraphe.
-   1. Dans la liste **[!UICONTROL Composants autorisés]**, cochez les cases des composants **[!UICONTROL Services de document]** et **[!UICONTROL Prédicats de services de document]**. Appuyez sur **[!UICONTROL OK]**.
+   1. Dans l’en-tête de la page, sélectionnez ![liste déroulante canevas](assets/canvas-drop-down.png) > **Conception** pour ouvrir la page en mode Conception.
+   1. Sélectionnez un composant (avec une bordure bleue), puis sélectionnez ![champ-level](assets/field-level.png) pour sélectionner le système de paragraphes contenant le composant actif.
+   1. Dans le système de paragraphes, sélectionnez ![settings_icon](assets/settings_icon.png) pour ouvrir la boîte de dialogue Modifier du système de paragraphes.
+   1. Dans la liste **[!UICONTROL Composants autorisés]**, cochez les cases des composants **[!UICONTROL Services de document]** et **[!UICONTROL Prédicats de services de document]**. Sélectionnez **[!UICONTROL OK]**.
 
 1. Pour les pages utilisant un modèle dynamique, procédez comme suit :
 
-   1. Dans l’en-tête de la page, appuyez sur ![Propriétés](assets/properties.png) > **Modifier le modèle** pour ouvrir le modèle de la page.
-   1. Appuyez sur **Conteneur de présentation** et appuyez sur ![FeedManagement](/help/forms/using/assets/feedmanagement.png). Dans l’onglet **Composants autorisés**, activez les options **Services de documents et Prédicats de services de documents** (Prédicats de services de document), puis sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. Dans l’en-tête de la page, sélectionnez ![properties](assets/properties.png) > **Modifier le modèle** pour ouvrir le modèle de la page.
+   1. Sélectionner **Conteneur de mises en page** et sélectionnez ![FeedManagement](/help/forms/using/assets/feedmanagement.png). Dans le **Composants autorisés** , activez l’option **Services de document et prédicats de services de document** et sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 >[!NOTE]
 >

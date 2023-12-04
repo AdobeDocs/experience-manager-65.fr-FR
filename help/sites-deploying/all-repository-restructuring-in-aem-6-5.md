@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2688'
+source-wordcount: '2694'
 ht-degree: 56%
 
 ---
@@ -90,7 +90,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
         </ul> </li>
       </ol> </li>
      <li>Activez le mode d’édition dans l’éditeur de modèle de processus qui copiera la définition du modèle de processus dans /conf/global/workflow/models.</li>
-     <li>Appuyez sur le bouton Synchroniser pour synchroniser les modifications apportées au modèle de processus d’exécution sous /var/workflow/models.</li>
+     <li>Sélectionnez le bouton Synchroniser pour synchroniser les modifications apportées au modèle de processus d’exécution sous /var/workflow/models.</li>
      <li>Exportez le modèle de workflow (/conf/global/workflow/models/)&lt;workflow-model&gt;) et le modèle de processus d’exécution (/var/workflow/models/)&lt;workflow-model&gt;) et intégrer dans le projet AEM.
       <ol>
        <li>Par exemple, exportez :

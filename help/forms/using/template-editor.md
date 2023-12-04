@@ -7,10 +7,10 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2040'
-ht-degree: 80%
+source-wordcount: '2029'
+ht-degree: 73%
 
 ---
 
@@ -37,19 +37,19 @@ Par exemple, vous souhaitez que tous les auteurs de formulaire disposent de cert
 
 Vous pouvez accéder à l’éditeur de modèles à partir du menu Outils en accédant à **Adobe Experience Manager > Outils > Modèles**. Ici, les modèles sont organisés dans des dossiers activés pour les modèles modifiables. AEM fournit un dossier global pour organiser les modèles. Cependant, il n’est pas activé par défaut. Vous pouvez demander à votre administrateur d’activer le dossier global ou de créer un nouveau dossier pour les modèles. Pour plus d’informations sur la création de dossiers, voir [Dossiers de modèles](/help/sites-developing/page-templates-editable.md).
 
-Une fois que vous avez appuyé pour ouvrir un dossier, un bouton Créer s’affiche, vous permettant de créer un modèle pour les formulaires adaptatifs.
+Une fois que vous avez choisi d’ouvrir un dossier, un bouton Créer s’affiche, vous permettant de créer un modèle pour les formulaires adaptatifs.
 
 ### Création d’un modèle {#create-template}
 
 Après avoir créé un dossier, ouvrez-le et suivez les étapes ci-après pour créer un modèle :
 
-1. Dans la console Modèle, appuyez sur **Créer** à l’intérieur du dossier que vous avez créé.
-1. Dans la section Choisir un type de modèle, sélectionnez **Modèle de formulaire adaptatif** et appuyez sur **Suivant**.
+1. Dans la console Modèle, sélectionnez **Créer** dans le dossier que vous avez créé.
+1. Dans la section Choisir un type de modèle , sélectionnez **Modèle de formulaire adaptatif** et sélectionnez **Suivant**.
 
-1. Dans la section Détails du modèle, indiquez un titre de modèle, puis appuyez sur **Créer**.
+1. Dans la section Détails du modèle , indiquez un titre de modèle et sélectionnez **Créer**.
 Vous pouvez indiquer une description et une miniature que vous pouvez afficher lorsque vous pouvez sélectionner le modèle créé au moment de la création de formulaire.
 
-1. Appuyez sur **Terminé** pour revenir à la console, ou appuyez sur **Ouvrir** pour ouvrir le modèle dans l’éditeur.
+1. Sélectionner **Terminé** pour revenir à la console, ou sélectionnez **Ouvrir** pour ouvrir le modèle dans l’éditeur.
 
 ### Interface utilisateur de l’éditeur de modèles {#template-editor-ui}
 
@@ -113,7 +113,7 @@ Par exemple, vous pouvez ajouter le composant d’en-tête dans le modèle. Lors
 
 Lorsque l’option Contenu initial est sélectionnée, le conteneur de formulaires adaptatifs du modèle s’ouvre comme un formulaire adaptatif pour modification. Comme pour la création d’un formulaire adaptatif, vous pouvez spécifier les paramètres initiaux, tels que la sélection d’un thème et les actions d’envoi.
 
-Les auteurs et autrices de formulaires l’utilisent comme base pour créer un formulaire. La structure de flux de contenu est spécifiée dans le calque Contenu initial du modèle. Pour passer à la modification du contenu initial du modèle de formulaire, avant Aperçu dans la barre d’outils de la page, appuyez sur ![canvas-drop-down](assets/canvas-drop-down.png) > **Contenu initial**.
+Les auteurs et autrices de formulaires l’utilisent comme base pour créer un formulaire. La structure de flux de contenu est spécifiée dans le calque Contenu initial du modèle. Pour passer à l’édition du contenu initial du modèle de formulaire, avant Aperçu dans la barre d’outils de la page, sélectionnez ![liste déroulante canevas](assets/canvas-drop-down.png) **> Contenu initial**.
 ![Calque Contenu initial dans l’éditeur de modèles](assets/initial-content-layer.png)
 
 Calque Contenu initial dans l’éditeur de modèles affichant le conteneur de formulaires adaptatifs sélectionné pour la spécification des propriétés.
@@ -144,7 +144,7 @@ Modifiez le type Structure en type Contenu initial pour le calque et commencez �
 * Vous pouvez faire glisser le composant de panneau depuis le navigateur de composants et le déposer dans la barre latérale.
 * Vous pouvez ajouter un panneau enfant du `guideRootPanel` depuis la barre d’outils de composant.
 
-Pour créer les onglets Informations générales et Informations professionnelles, ajoutez deux panneaux au panneau enfant du `guideRootPanel`. Sélectionnez les panneaux et tapez sur ![cmppr](assets/cmppr.png) pour ouvrir les propriétés dans la barre latérale. Modifiez les noms d’élément en `general-info` et `professional-info`, et les titres en Informations générales et Informations professionnelle, respectivement. Dans la barre latérale, appuyez sur le contenu pour ouvrir l’explorateur de contenu. Dans l’onglet Objets de formulaire, sélectionnez `guideRootPanel`. Dans l’éditeur, le guideRootPanel est sélectionné. Tapez sur ![cmppr](assets/cmppr.png) dans la barre d’outils de composant pour ouvrir ses propriétés. Dans le champ Disposition de panneau, sélectionnez **Onglets supérieurs** et appuyez sur **Terminé**. La structure de modèle à onglets est appliquée.
+Pour créer les onglets Informations générales et Informations professionnelles, ajoutez deux panneaux au panneau enfant du `guideRootPanel`. Sélectionnez les panneaux et sélectionnez ![cmppr](assets/cmppr.png) pour ouvrir les propriétés dans la barre latérale. Modifiez les noms d’élément en `general-info` et `professional-info`, et les titres en Informations générales et Informations professionnelle, respectivement. Dans la barre latérale, sélectionnez le contenu à ouvrir dans l’explorateur de contenu. Dans l’onglet Objets de formulaire, sélectionnez `guideRootPanel`. Dans l’éditeur, le guideRootPanel est sélectionné. Sélectionner ![cmppr](assets/cmppr.png) dans la barre d’outils du composant pour ouvrir ses propriétés. Dans le champ Disposition de panneau , sélectionnez **Onglets en haut** et sélectionnez **Terminé**. La structure de modèle à onglets est appliquée.
 
 #### Ajout de contenu dans les onglets {#adding-content-in-tabs}
 
@@ -165,7 +165,7 @@ Lorsque vous créez un modèle, il est ajouté en tant que brouillon. Activez le
 1. Accédez à **Adobe Experience Manager > Outils > Modèles**, et ouvrez le dossier dans lequel vous avez créé le modèle.
 
 1. Le modèle que vous avez créé est marqué comme Brouillon.
-1. Sélectionnez le modèle, puis appuyez sur **Activer** dans la barre d’outils.
+1. Sélectionnez le modèle et choisissez **Activer** dans la barre d’outils.
 Lorsque vous créez un formulaire adaptatif, vous pouvez voir le modèle affiché lorsque vous êtes invité à choisir un modèle.
 
 ## Importation ou exportation d’un modèle {#importing-or-exporting-a-template}

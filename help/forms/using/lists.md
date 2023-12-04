@@ -8,10 +8,10 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '6911'
-ht-degree: 97%
+source-wordcount: '6904'
+ht-degree: 91%
 
 ---
 
@@ -42,7 +42,7 @@ La solution Correspondence Management prend en charge deux types d’éléments
 ### Créer du texte {#create-text}
 
 1. Sélectionnez **Formulaires** > **Fragments de document**.
-1. Appuyez sur **Créer** > **Texte** ou sélectionnez une ressource texte et appuyez sur **Modifier**.
+1. Sélectionner **Créer** > **Texte** Vous pouvez également sélectionner une ressource de texte et sélectionner **Modifier**.
 1. Spécifiez les informations suivantes pour le texte :
 
    * **Titre : (facultatif)** saisissez le titre de la ressource texte. Les titres n’ont pas besoin d’être uniques et peuvent contenir des caractères spéciaux et des caractères non anglais. Les textes sont référencés par leur titre (le cas échéant) comme dans les vignettes et les propriétés de l’actif.
@@ -51,7 +51,7 @@ La solution Correspondence Management prend en charge deux types d’éléments
    * **Dictionnaire de données** : Si vous le souhaitez, sélectionnez le dictionnaire de données auquel mapper l’actif. Cet attribut vous permet d’ajouter des références aux éléments du dictionnaire de données dans la ressource texte.
    * **Balises** : éventuellement, pour créer une balise personnalisée, entrez la valeur dans le champ de texte et appuyez sur Entrée. Vous pouvez voir votre balise sous le champ de texte des balises. Lorsque vous enregistrez ce texte, les balises nouvellement ajoutées sont également créées.
 
-1. Appuyez sur **Suivant**. Correspondence Management affiche la page Éditeur, où vous pouvez ajouter les paragraphes et les éléments de données de texte au texte.
+1. Sélectionner **Suivant**. Correspondence Management affiche la page Éditeur, où vous pouvez ajouter les paragraphes et les éléments de données de texte au texte.
 
    Le vérificateur orthographique par défaut de votre navigateur vérifie l’orthographe dans l’éditeur de texte. Pour gérer les vérifications d’orthographe et de grammaire, vous pouvez modifier les paramètres du vérificateur orthographique de votre navigateur ou installer des plug-ins/modules complémentaires externes de navigateur pour vérifier l’orthographe et la grammaire.
 
@@ -63,7 +63,7 @@ La solution Correspondence Management prend en charge deux types d’éléments
 
    * **Lien** : Insérer un lien [hypertexte](#insert-hyperlink) dans le texte.
    * **Répéter** : Imprime l’élément Collection dans le dictionnaire de données au moyen d’un délimiteur.
-   * **Condition** : appuyez pour insérer une condition. Insérez du texte en fonction de la condition. Si la condition est true, le texte est visible dans la lettre. Dans le cas contraire, il n’est pas visible.
+   * **Condition**: sélectionnez cette option pour insérer une condition. Insérez du texte en fonction de la condition. Si la condition est true, le texte est visible dans la lettre. Dans le cas contraire, il n’est pas visible.
    * **Ajouter la description** : ajouter une annotation à un fragment de texte. Il s’agit de métadonnées visibles pour l’auteur mais pas d’une partie de la lettre créée.
    * **Saut de page** : Si vous définissez l’attribut de saut de page d’un module de texte sur false, le module de texte n’est pas fractionné sur plusieurs pages.
 
@@ -106,13 +106,13 @@ La solution Correspondence Management prend en charge deux types d’éléments
 
    Correspondence Management offre une prise en charge intégrée de 210 caractères spéciaux. L’administrateur peut [ajouter la prise en charge de plus de caractères/de caractères spéciaux grâce à la personnalisation](/help/forms/using/custom-special-characters.md).
 
-1. Pour mettre en surbrillance\mettre en évidence des parties de texte dans un module incorporé modifiable, sélectionnez le texte et appuyez sur Couleur de surbrillance.
+1. Pour mettre en surbrillance/mettre en évidence des parties de texte dans un module intégré modifiable, sélectionnez le texte et choisissez Couleur de surbrillance.
 
    ![textbackgroundcolorapplication](assets/textbackgroundcolorapplied.png)
 
-   Vous pouvez directement sélectionner une couleur de base `**[A]**` dans la palette correspondante ou appuyer sur **Sélectionner** après l’utilisation du curseur `**[B]**` pour sélectionner la teinte de couleur appropriée.
+   Vous pouvez sélectionner directement une couleur de base. `**[A]**` dans la palette Couleurs de base ou sélectionnez **Sélectionner** après avoir utilisé le curseur `**[B]**` pour choisir l’nuance appropriée de la couleur.
 
-   Si vous le souhaitez, vous pouvez également accéder à l’onglet Avancé afin de sélectionner les niveaux de Teinte, Luminosité et Saturation appropriés `**[C]**` pour créer la couleur exacte, puis appuyer sur Sélectionner `**[D]**` pour appliquer la couleur de surbrillance du texte.
+   Vous pouvez également accéder à l’onglet Avancé pour sélectionner la teinte, la luminosité et la saturation appropriées. `**[C]**` pour créer une couleur précise, puis sélectionnez Sélectionner `**[D]**` pour appliquer la couleur pour mettre le texte en surbrillance.
 
    ![textbackgroundcolor-1](assets/textbackgroundcolor-1.png)
 
@@ -120,8 +120,8 @@ La solution Correspondence Management prend en charge deux types d’éléments
 
    Pour :
 
-   * Ajoutez au texte un élément du dictionnaire de données, sélectionnez un élément de données dans la liste, puis cliquez sur Insérer (![insertion](assets/insert.png)). Si vous sélectionnez Protégé, l’élément de dictionnaire de données est en lecture seule et il apparaît dans l’éditeur de lettre, mais pas dans l’interface utilisateur de création de correspondance ni dans le créateur de correspondance.
-   * Ajoutez un élément d’espace réservé dans le texte. Dans le panneau Éléments de données, appuyez sur Créer, saisissez les détails du nouvel élément de données, puis appuyez sur Créer pour ajouter le nouvel élément à la liste. Le nouvel espace réservé peut être inséré dans le texte de la même manière que l’élément du dictionnaire de données. Pour modifier un espace réservé, sélectionnez-le, puis appuyez sur Modifier.
+   * Ajoutez un élément du dictionnaire de données dans le texte, sélectionnez un élément de données dans la liste, puis choisissez Insérer ( ![insert](assets/insert.png)). Si vous sélectionnez Protégé, l’élément de dictionnaire de données est en lecture seule et il apparaît dans l’éditeur de lettre, mais pas dans l’interface utilisateur de création de correspondance ni dans le créateur de correspondance.
+   * Ajoutez un élément d’espace réservé dans le texte. Dans le panneau Éléments de données, sélectionnez Créer, saisissez les détails du nouvel élément de données, puis sélectionnez Créer pour ajouter le nouvel élément à la liste. Le nouvel espace réservé peut être inséré dans le texte de la même manière que l’élément du dictionnaire de données. Pour modifier un espace réservé, sélectionnez-le, puis choisissez Modifier.
 
    ![Éléments d’espace réservé](assets/placeholder_elements_in_xmldata.png)
 
@@ -134,7 +134,7 @@ La solution Correspondence Management prend en charge deux types d’éléments
    Vous pouvez également utiliser le symbole @ pour rechercher et ajouter des éléments du dictionnaire de données et de l’espace réservé dans l’éditeur de texte. Placez le curseur à l’endroit où vous souhaitez insérer l’élément. Saisissez @ suivi de la chaîne de recherche. L’éditeur de texte effectue l’opération de recherche sur tous les éléments du dictionnaire de données et de l’espace réservé disponibles dans le fragment de document texte. L’opération de recherche récupère et affiche les éléments contenant la chaîne de recherche sous forme de liste déroulante. Parcourez les résultats de la recherche et cliquez sur l’élément à insérer à l’emplacement du curseur. Appuyez sur Échap pour masquer les résultats de la recherche.
 
 1. Vous pouvez utiliser des conditions intégrés et la répétition afin que votre lettre soit hautement contextuelle et parfaitement structurée. Pour plus d’informations sur les conditions intégrées et la répétition, consultez la section [Conditions intégrées et répétition dans les lettres](/help/forms/using/cm-inline-condition.md).
-1. Appuyez sur **Enregistrer**.
+1. Sélectionnez **Enregistrer**.
 
 #### Insérer un hyperlien dans un texte {#insert-hyperlink}
 
@@ -142,9 +142,9 @@ Pour créer un lien hypertexte dans une ressource de texte, procédez comme suit
 
 1. Sélectionnez le texte ou l’objet de modèle de données dans l’éditeur de texte.
 
-2. Cliquez sur **[!UICONTROL Lien]**. Cliquez sur **[!UICONTROL Texte de remplacement]** pour supprimer le nom ou le texte de l’objet de modèle de données existant.
+2. Sélectionner **[!UICONTROL Lien]**. Sélectionner **[!UICONTROL Texte de remplacement]** pour supprimer le nom ou le texte de l’objet de modèle de données existant.
 
-3. Spécifiez l’URL et cliquez sur ![Enregistrer](assets/save_icon.svg).
+3. Spécifiez l’URL et sélectionnez ![Enregistrer](assets/save_icon.svg).
 
 ![Créer un lien hypertexte dans une ressource de texte](assets/text-create-hyperlink.png)
 
@@ -158,7 +158,7 @@ La fonction Rechercher et remplacer permet de rechercher (et de remplacer) n’i
 
 1. Ouvrez le module de texte dans l’éditeur de texte.
 
-1. Appuyez sur Rechercher et remplacer.
+1. Sélectionnez Rechercher et remplacer.
 1. Saisissez le texte à rechercher dans la zone de texte Rechercher et appuyez sur Rechercher. La recherche de texte est mise en surbrillance dans le module de texte.
 1. Pour rechercher l’occurrence suivante, cliquez à nouveau sur Rechercher.
 
@@ -185,7 +185,7 @@ La fonction Rechercher et remplacer permet de rechercher (et de remplacer) n’i
 #### Pour rechercher et remplacer du texte dans un module de texte {#to-search-and-replace-text-in-a-text-module}
 
 1. Ouvrez le module de texte dans l’éditeur de texte.
-1. Appuyez sur Rechercher et remplacer.
+1. Sélectionnez Rechercher et remplacer.
 1. Saisissez le texte à rechercher dans la zone de texte Rechercher et le texte à remplacer par le texte recherché et appuyez sur Remplacer.
 1. Si le texte de recherche est trouvé, il est remplacé par le texte de remplacement.
 
@@ -241,23 +241,23 @@ Une liste est un groupe de contenu associé qui peut être utilisé dans un mod�
    * **Nom :** il s’agit du nom unique de la liste. Deux ressources (texte, condition ou liste) ne peuvent porter le même nom, peu importe leur état. Dans le champ Nom, vous pouvez saisir uniquement des caractères, des chiffres et des tirets de langue anglaise. Le champ nom est automatiquement renseigné par la valeur dans le champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
    * **Description (facultatif)** : entrez une description de la ressource.
    * **Élément de données (facultatif)** : sélectionnez le dictionnaire de données auquel se connecter. Seules les ressources qui utilisent le même dictionnaire de données que la liste ou celles auxquelles aucun dictionnaire de données n’est affecté peuvent être ajoutées à la liste. L’affectation d’un dictionnaire de données à une liste permet à la personne qui crée un modèle de lettre de trouver plus facilement la liste appropriée.
-   * **Balises (facultatives)** : sélectionnez les balises à appliquer. Vous pouvez également saisir un nouveau nom de balise pour créer une balise. (La nouvelle balise est créée lorsque vous cliquez sur **Enregistrer**).
+   * **Balises (facultatives)** : sélectionnez les balises à appliquer. Vous pouvez également saisir un nouveau nom de balise pour créer une balise. (La nouvelle balise est créée lorsque vous sélectionnez **Enregistrer**.)
 
-1. Appuyez sur **Suivant**.
-1. Appuyez sur **Ajouter une ressource**.
-1. Pour ajouter des ressources à la liste, sélectionnez-les dans la page Sélectionner des ressources et appuyez sur **Terminé**.
+1. Sélectionnez **Suivant**.
+1. Sélectionnez **Ajouter un actif**.
+1. Pour ajouter des ressources à la liste, sélectionnez-les sur la page Sélectionner les ressources et sélectionnez **Terminé**.
 
    ![Sélectionner les actifs à ajouter à la liste](assets/selectassets.png)
 
 1. Les actifs sont ajoutés à la page Eléments de la liste.
-Pour modifier l’ordre des actifs dans la liste, cliquez et maintenez sur les icônes de flèches (![dragndrop](assets/dragndrop.png)), puis effectuez un glisser-déposer. Lorsque l’utilisateur ouvre un modèle de courrier dans l’interface utilisateur de création de correspondance, le contenu est assemblé dans l’ordre que vous avez défini ici.
+Pour modifier l’ordre des actifs dans la liste, cliquez sur l’icône des flèches ( ![dragndrop](assets/dragndrop.png) ) et effectuez un glisser-déposer. Lorsque l’utilisateur ouvre un modèle de courrier dans l’interface utilisateur de création de correspondance, le contenu est assemblé dans l’ordre que vous avez défini ici.
 
    ![Réorganiser et configurer les actifs dans une liste](assets/listitems.png)
 
 1. Vous pouvez sélectionner les options suivantes pour spécifier le comportement de la liste dans l’interface utilisateur CCR :
 
-   * **Accès à la bibliothèque** : pour activer l’accès à la bibliothèque pour l’ajout de ressources, appuyez sur Accès à la bibliothèque. Lorsque l’accès à la bibliothèque est activé, l’utilisateur ou l’utilisatrice peut ajouter plus de contenu à la liste. Dans le cas contraire, l’utilisateur ou l’utilisatrice se limite au contenu que vous avez défini pour la liste.
-   * **Ordre de verrouillage** : pour verrouiller l’ordre des actifs dans la liste et empêcher l’utilisateur de modifier cet ordre, appuyez sur Verrouiller l’ordre. Si vous ne sélectionnez pas cette option, l’utilisateur ou l’utilisatrice pourra modifier l’ordre des éléments de la liste.
+   * **Accès à la bibliothèque**: pour activer l’accès à la bibliothèque pour l’ajout de ressources, sélectionnez Accès à la bibliothèque. Lorsque l’accès à la bibliothèque est activé, l’utilisateur ou l’utilisatrice peut ajouter plus de contenu à la liste. Dans le cas contraire, l’utilisateur ou l’utilisatrice se limite au contenu que vous avez défini pour la liste.
+   * **Ordre de verrouillage**: pour verrouiller l’ordre des actifs dans la liste de sorte que l’utilisateur ne puisse pas modifier l’ordre, sélectionnez Verrouiller l’ordre. Si vous ne sélectionnez pas cette option, l’utilisateur ou l’utilisatrice pourra modifier l’ordre des éléments de la liste.
 
    * **Ajout de puces** : utilisez cette option pour appliquer une puce ou un style de numérotation au module. Vous pouvez utiliser un style de liste prédéfini ou personnalisé. Vous pouvez également indiquer le texte à afficher avant et après chaque élément de liste.
    * **Saut de page** : sélectionnez cette option (![saut](assets/break.png)) pour insérer un saut de page entre les contenus de liste. Lorsque cette option n’est pas sélectionnée (![pas de saut](assets/nobreak.png)), si le contenu de la liste déborde sur la page suivante, la liste entière est décalée vers la page suivante au lieu de faire un saut dans la page entre la liste.
@@ -275,7 +275,7 @@ Pour modifier l’ordre des actifs dans la liste, cliquez et maintenez sur les i
    * **Ignorer le style de liste** : Si l’option Numérotation composée est désélectionnée, l’option Ignorer le style de liste est activée. Cette sélection ignore le style de la liste imbriquée et la numérotation se poursuit à partir de la liste extérieure. Par conséquent, les modules de la liste imbriquée sont traités comme faisant partie de la liste extérieure elle-même, indépendamment des styles spécifiés dans la liste imbriquée. Si l’option Ignorer le style de liste est désélectionnée pour une liste imbriquée, les modules qui font partie de cette liste imbriquée ont leur propre style de numérotation.
    * **Sous-formulaire solidaire :** Définit le saut de page des actifs d’une liste. Si vous définissez la propriété Sous-formulaire solidaire pour l’un des actifs d’une liste sur **On**, cet actif et l’actif suivant resteront sur la même page. Cela signifie que le contenu de la ressource sélectionnée et de la ressource suivante ne sera pas fractionné sur plusieurs pages.
 
-1. Appuyez sur **Enregistrer**.
+1. Sélectionnez **Enregistrer**.
 
 ### Bonnes pratiques/conseils et astuces {#best-practices-tips-and-tricks}
 
@@ -313,25 +313,25 @@ L’éditeur de conditions vous permet de spécifier une condition par défaut. 
    * **Nom :** nom unique de la condition. Deux ressources (texte, condition ou liste) ne peuvent porter le même nom, peu importe leur état. Dans le champ Nom, vous pouvez saisir uniquement des caractères, des chiffres et des tirets de langue anglaise. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
    * **Description (facultatif) :** saisissez une description de la condition.
    * **Dictionnaire de données (facultatif)** : sélectionnez le dictionnaire de données auquel se connecter. Seules les ressources qui utilisent le même dictionnaire de données que la condition ou celles auxquelles aucun dictionnaire de données n’a été attribué peuvent être ajoutées à la liste. L’attribution d’un dictionnaire de données à une liste permet à la personne créant un modèle de lettre de trouver plus facilement la condition appropriée.
-   * **Balises (facultatif)** : sélectionnez les balises à appliquer. Vous pouvez également saisir un nouveau nom de balise pour créer une balise. (La nouvelle balise est créée lorsque vous cliquez sur **Enregistrer**).
+   * **Balises (facultatif)** : sélectionnez les balises à appliquer. Vous pouvez également saisir un nouveau nom de balise pour créer une balise. (La nouvelle balise est créée lorsque vous sélectionnez **Enregistrer**.)
 
-1. Appuyez sur **Suivant**.
-1. Cliquez sur **Ajouter la ressource**.
-1. Pour ajouter une ressource à la condition, sélectionnez celle de votre choix dans la page Sélection des ressources et cliquez sur **Terminé**. Les actifs sont ajoutés au volet Expression.
+1. Sélectionnez **Suivant**.
+1. Sélectionnez **Ajouter un actif**.
+1. Pour ajouter un actif à la condition, sélectionnez-le sur la page Sélectionner les actifs et sélectionnez **Terminé**. Les actifs sont ajoutés au volet Expression.
 1. Vous pouvez sélectionner les options suivantes pour spécifier le comportement de la condition au moment de l’exécution :
 
    * **Désactiver l’évaluation de résultats multiples\Activer l’évaluation de résultats multiples** : lorsque cette option est activée (qu’elle apparaît comme « Activer l’évaluation… »), toutes les conditions sont évaluées et le résultat est la somme de toutes les conditions vraies (true). Si cette option est désactivée (« Désactiver l’évaluation… »), alors seule la première condition vérifiée est évaluée et devient la sortie de la condition.
    * **Saut de page** : sélectionnez cette option (![saut de page](assets/break.png)) pour insérer un saut de page entre les modules des conditions. Lorsque cette option nʼest pas sélectionnée (![pas de saut de page](assets/nobreak.png)) et quʼune condition déborde sur la page suivante, la condition entière est décalée vers la page suivante, au lieu de marquer un saut de page entre les modules.
 
-1. Pour modifier l’ordre des ressources dans la condition, cliquez sur les icônes de flèches (![glisser-déposer](assets/dragndrop.png)) sans relâcher le bouton de la souris, puis effectuez un glisser-déposer. Lorsque l’utilisateur ouvre un modèle de courrier dans l’interface utilisateur de création de correspondance, le contenu est assemblé dans l’ordre que vous avez défini ici.
-1. Cliquez sur **Supprimer** pour supprimer la ligne. Si vous appuyez sur Supprimer pour la ligne par défaut, efface uniquement les informations d’actif.
-1. Cliquez sur **Copier** pour copier une ligne.
-1. Cliquez sur **Modifier** pour modifier la ressource ou l’expression.
+1. Pour modifier l’ordre des actifs dans la condition, cliquez sur l’icône de flèches ( ![dragndrop](assets/dragndrop.png) ) et effectuez un glisser-déposer. Lorsque l’utilisateur ouvre un modèle de courrier dans l’interface utilisateur de création de correspondance, le contenu est assemblé dans l’ordre que vous avez défini ici.
+1. Sélectionner **Supprimer** pour supprimer la ligne. Si vous sélectionnez Supprimer pour la ligne par défaut, efface uniquement les informations de la ressource.
+1. Sélectionner **Copier** pour dupliquer une ligne.
+1. Sélectionner **Modifier** pour modifier l’actif ou l’expression.
 
    Par ailleurs :
 
-   * Pour mettre à jour la ressource, appuyez sur l’icône de dossier sous la colonne Ressource.
-   * Pour ouvrir le Générateur d’expression afin d’insérer une expression, appuyez sur l’icône de dossier dans la colonne Expression. Pour plus d’informations sur le Générateur d’expression, consultez la section [Générateur d’expression](/help/forms/using/expression-builder.md).
+   * Pour mettre à jour la ressource, sélectionnez l’icône de dossier dans la colonne Ressource .
+   * Pour ouvrir le Générateur d’expression afin d’insérer une expression, sélectionnez l’icône de dossier située sous la colonne Expression . Pour plus d’informations sur le Générateur d’expression, consultez la section [Générateur d’expression](/help/forms/using/expression-builder.md).
 
 ### Bonnes pratiques, conseils et astuces {#best-practices-tips-and-tricks-1}
 
@@ -388,14 +388,14 @@ Tenez compte des points suivants lors de la conception de tableaux :
    * en-tête et pied de page pour une colonne supplémentaire ;
    * rapport de largeur pour chaque colonne.
 
-Vous pouvez imbriquer des fragments dans une lettre. Cela signifie que vous pouvez ajouter un fragment dans un fragment. La solution Correspondence Management prend en charge jusqu’à quatre niveaux d’imbrication dans une lettre : **Lettre**->**Fragment**->**Fragment**->**Fragment**->**Fragment**.
+Vous pouvez imbriquer des fragments dans une lettre. Cela signifie que vous pouvez ajouter un fragment dans un fragment. La solution Correspondence Management prend en charge jusqu’à quatre niveaux d’imbrication dans une lettre : **Lettre *>*Fragment *>*Fragment *>*Fragment *>*Fragment.**
 
 Pour un exemple détaillé de l’utilisation de tableaux statiques et dynamiques dans des fragments de disposition, voir [Exemple avec des fichiers modèles : utiliser des tableaux statiques et dynamiques dans une lettre](#examplewithsamplefiles).
 
 ### Création d’un fragment de mise en page {#creating-a-layout-fragment}
 
 1. Sélectionnez **Créer** > **Fragment de disposition**.
-1. Correspondence Management affiche les fichiers XDP disponibles. Sélectionnez le XDP sur lequel vous souhaitez baser votre fragment de disposition et appuyez sur **Suivant**.
+1. Correspondence Management affiche les fichiers XDP disponibles. Sélectionnez le fichier XDP sur lequel vous souhaitez baser votre fragment de mise en page et sélectionnez **Suivant**.
 1. Spécifiez les informations suivantes pour la mise en page :
 
    * **Titre (facultatif) :** Entrez le titre du fragment de mise en page. Le titre n’a pas besoin d’être unique et peut contenir des caractères spéciaux et des caractères non anglais. Les fragments de disposition sont référencés par leur titre (le cas échéant), comme dans les vignettes et les propriétés de la ressource.
@@ -403,7 +403,7 @@ Pour un exemple détaillé de l’utilisation de tableaux statiques et dynamique
    * **Description (facultatif)** : la description qui apparaît dans la liste de l’interface utilisateur de gestion des ressources.
    * **Balises (facultatif)** : si vous le souhaitez, sélectionnez les balises à appliquer à la condition. Vous pouvez également taper un nouveau nom de balise pour créer une balise.
 
-1. Cliquez sur l’onglet **Tableau** et spécifiez les informations suivantes pour la mise en page :
+1. Sélectionnez la variable **Tableau** et indiquez les informations suivantes pour la mise en page :
 
    * **Configuration pour** : sélectionnez le tableau à configurer. Dans la liste déroulante, le suffixe du nom de tableau est (Statique) si le tableau est statique ou (Dynamique) si le tableau est dynamique. Les tableaux statiques contiennent un nombre fixe de lignes. Les tableaux statiques peuvent contenir des zones cible et des champs. Ces zones cible et champs ne peuvent pas être liés à des DDE répétés. Les données liées à des cellules déterminent le nombre des lignes des tableaux dynamiques.
 
@@ -419,7 +419,7 @@ Pour un exemple détaillé de l’utilisation de tableaux statiques et dynamique
 
    Pour un exemple détaillé sur l’utilisation de tableaux statiques et dynamiques dans des fragments de disposition, consultez la section [Exemple avec fichiers exemple : utiliser des tableaux statiques et dynamiques dans une lettre](#examplewithsamplefiles).
 
-1. Appuyez sur **Enregistrer**.
+1. Sélectionnez **Enregistrer**.
 
 ### Télécharger un fichier XDP vers Correspondence Management {#upload-an-xdp-to-correspondence-management}
 
@@ -433,7 +433,7 @@ Lors de la création de zones cible dans Designer, il est utile de définir la l
 
 Pour définir la liaison par défaut :
 
-1. Dans Designer, cliquez sur **Outils** > **Options** > **Liaisons de données** > **Liaison de sous-formulaire**.
+1. Dans Designer, sélectionnez **Outils** > **Options** > **Liaisons de données** > **Liaison de sous-formulaire**.
 
 1. Dans la liste Liaison par défaut pour les nouveaux sous-formulaires, sélectionnez **Aucune liaison de données**.
 
@@ -548,7 +548,7 @@ Pour plus d’informations sur la conception de mises en pages, voir [Aide de De
 Pour créer rapidement un fragment de document avec des propriétés et du contenu similaires à un fragment de document existant, vous pouvez le copier-coller.
 
 1. Dans la liste des fragments de document, sélectionnez un ou plusieurs fragments de document. L’interface utilisateur affiche l’icône Copier.
-1. Appuyez sur Copier. L’interface utilisateur affiche l’icône Coller. Vous pouvez également choisir d’accéder à un dossier avant de le coller. Différents dossiers peuvent contenir des ressources portant le même nom. Pour plus d’informations sur les dossiers, voir [Dossiers et organisation des actifs](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
-1. Appuyez sur Coller. La boîte de dialogue Coller s’affiche. Si vous copiez et collez les fragments de document au même emplacement, le système attribue automatiquement des noms et des titres aux nouvelles copies de lettres, mais vous pouvez les modifier.
+1. Sélectionnez Copier. L’interface utilisateur affiche l’icône Coller. Vous pouvez également choisir d’accéder à un dossier avant de le coller. Différents dossiers peuvent contenir des ressources portant le même nom. Pour plus d’informations sur les dossiers, voir [Dossiers et organisation des actifs](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
+1. Sélectionnez Coller. La boîte de dialogue Coller s’affiche. Si vous copiez et collez les fragments de document au même emplacement, le système attribue automatiquement des noms et des titres aux nouvelles copies de lettres, mais vous pouvez les modifier.
 1. Si nécessaire, modifiez le titre et le nom sous lesquels vous souhaitez enregistrer la copie du fragment de document.
-1. Appuyez sur Coller. La copie du fragment de document est créée.
+1. Sélectionnez Coller. La copie du fragment de document est créée.

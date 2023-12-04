@@ -7,10 +7,10 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '10067'
-ht-degree: 99%
+source-wordcount: '10038'
+ht-degree: 98%
 
 ---
 
@@ -578,7 +578,7 @@ Pour supprimer une ressource ou un dossier contenant une ressource, procédez co
 
    * Si la ressource ne comporte aucune référence, elle est supprimée.
 
-   * Si la ressource comporte des références, un message d’erreur vous informe qu’**une ou plusieurs ressources sont référencées.** Vous pouvez sélectionner **[!UICONTROL Forcer la suppression]** ou **[!UICONTROL Annuler]**.
+   * Si la ressource comporte des références, un message d’erreur vous informe que **Une ou plusieurs ressources sont référencées.**. Vous pouvez sélectionner **[!UICONTROL Forcer la suppression]** ou **[!UICONTROL Annuler]**.
 
    >[!NOTE]
    >
@@ -655,7 +655,7 @@ Pour des recherches simples, avancées et personnalisées pour découvrir et uti
 
 Les icônes d’action rapide sont disponibles pour une ressource à la fois. Selon l’appareil, effectuez les actions suivantes pour afficher les icônes d’action rapide :
 
-* Appareils tactiles : appuyez longuement. Par exemple, sur un iPad, vous pouvez appuyer longuement sur une ressource pour afficher les actions rapides.
+* Appareils tactiles : appuyez longuement. Par exemple, sur une iPad, vous pouvez sélectionner une ressource et la maintenir enfoncée afin que les actions rapides s’affichent.
 * Appareils non tactiles : survolez avec le pointeur. Par exemple, sur un poste de travail, la barre d’actions rapides s’affiche si vous survolez la miniature de la ressource avec le pointeur de la souris.
 
 ### Navigation et sélection des ressources {#navigating-and-selecting-assets}
@@ -739,7 +739,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 1. Cliquez sur l’option **[!UICONTROL Annoter]** à partir de l’une des options suivantes :
 
    * [Actions rapides](/help/assets/manage-assets.md#quick-actions)
-   * Dans la barre d’outils, après avoir sélectionné la ressource    ou avoir accédé à la page de la ressource.
+   * Dans la barre d’outils après avoir sélectionné la ressource ou accédé à la page de la ressource.
 
 1. Ajoutez un commentaire dans la zone **[!UICONTROL Commentaire]** en bas de la chronologie. Une autre solution consiste à marquer une zone de l’image et à ajouter une annotation dans la boîte de dialogue **[!UICONTROL Ajouter une annotation]**.
 

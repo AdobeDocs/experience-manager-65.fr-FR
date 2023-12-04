@@ -10,10 +10,10 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '6919'
-ht-degree: 79%
+source-wordcount: '6940'
+ht-degree: 74%
 
 ---
 
@@ -203,7 +203,7 @@ La figure ci-dessous présente un exemple d’ajout dynamique de cases à cocher
 
 La variable **[!UICONTROL Définir la valeur de]** type de règle permet de définir la valeur d’un objet de formulaire selon que la condition spécifiée est remplie ou non. La valeur peut être définie sur la valeur d’un autre objet, d’une chaîne littérale, la valeur dérivée d’une expression ou d’une fonction mathématique, la valeur d’une propriété d’un autre objet ou la sortie d’un service de modèle de données de formulaire. De même, vous pouvez vérifier la condition d’un composant, d’une chaîne, d’une propriété ou les valeurs dérivées d’une fonction ou d’une expression mathématique.
 
-Notez que le type de règle Définir la valeur de n’est pas disponible pour tous les objets de formulaire, comme les boutons de panneaux et de barres d’outils. Une règle Définir la valeur de standard possède la structure suivante :
+Le type de règle Définir la valeur de n’est pas disponible pour tous les objets de formulaire, tels que les panneaux et les boutons de la barre d’outils. Une règle Définir la valeur de standard possède la structure suivante :
 
 
 
@@ -353,13 +353,13 @@ L’éditeur de règles offre une interface utilisateur exhaustive et néanmoins
 Pour lancer l’interface utilisateur de l’éditeur de règles :
 
 1. Ouvrez un formulaire adaptatif en mode création.
-1. Appuyez sur l’objet de formulaire pour lequel vous voulez créer une règle, puis sur ![edit-rules](assets/edit-rules.png) de la barre d’outils Composant. L’interface utilisateur de l’éditeur de règles s’affiche.
+1. Sélectionnez l’objet de formulaire pour lequel vous souhaitez créer une règle, puis, dans la barre d’outils des composants, sélectionnez ![edit-rules](assets/edit-rules.png). L’interface utilisateur de l’éditeur de règles s’affiche.
 
    ![create-rules](assets/create-rules.png)
 
    Toutes les règles existantes pour les objets de formulaire sélectionnés sont répertoriées dans cet écran. Pour plus d’informations sur la gestion des règles existantes, voir [Gestion des règles](#manage-rules).
 
-1. Appuyez sur **[!UICONTROL Créer]** pour créer une règle. L’éditeur visuel de l’interface utilisateur de l’éditeur de règles s’affiche par défaut la première fois que vous lancez l’éditeur de règles.
+1. Sélectionner **[!UICONTROL Créer]** pour écrire une nouvelle règle. L’éditeur visuel de l’interface utilisateur de l’éditeur de règles s’affiche par défaut la première fois que vous lancez l’éditeur de règles.
 
    ![Interface utilisateur de l’éditeur de règles](assets/rule-editor-ui.png)
 
@@ -385,7 +385,7 @@ L’onglet Fonctions comporte un jeu de fonctions intégrées, comme Somme de, M
 >
 >Vous pouvez effectuer une recherche de texte dans les noms et titres des objets et des fonctions à partir des onglets Objets de formulaire et Fonctions.
 
-Dans l’arborescence de gauche des objets de formulaire, vous pouvez appuyer sur les objets de formulaire pour afficher les règles appliquées à chacun des objets. Vous pouvez non seulement parcourir les règles des différents objets de formulaire mais également copier-coller des règles entre les objets du formulaire. Pour plus d’informations, reportez-vous à la section [Règles de copier-coller](#copy-paste-rules).
+Dans l’arborescence de gauche des objets de formulaire, vous pouvez sélectionner les objets de formulaire pour afficher les règles appliquées à chacun des objets. Vous pouvez non seulement parcourir les règles des différents objets de formulaire mais également copier-coller des règles entre les objets du formulaire. Pour plus d’informations, reportez-vous à la section [Règles de copier-coller](#copy-paste-rules).
 
 ### C. Basculement entre les objets de formulaire et les fonctions {#c-form-objects-and-functions-toggle-br}
 
@@ -436,15 +436,15 @@ Pour créer des règles, procédez comme suit :
 
 1. Tout d’abord, créez la règle pour contrôler la visibilité du champ Salaire du conjoint en fonction de l’option de l’utilisateur pour le bouton radio État civil.
 
-   Ouvrez le formulaire de demande de prêt en mode Création. Appuyez sur le composant **État civil** et appuyez sur ![edit-rules](assets/edit-rules.png). Ensuite, appuyez sur **[!UICONTROL Créer]** pour lancer l’éditeur de règles.
+   Ouvrez le formulaire de demande de prêt en mode Création. Sélectionnez la variable **État civil** composant et sélectionnez ![edit-rules](assets/edit-rules.png). Ensuite, sélectionnez **[!UICONTROL Créer]** pour lancer l’éditeur de règles.
 
    ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1.png)
 
    Lorsque vous lancez l’éditeur de règles, la règle Lorsque est sélectionnée par défaut. En outre, l’objet de formulaire (dans ce cas, État civil) d’où vous avez lancé l’éditeur de règles est spécifié dans l’instruction Lorsque.
 
-   Bien que vous ne puissiez pas changer ou modifier l’objet sélectionné, vous pouvez utiliser la liste déroulante de règles, comme indiqué ci-dessous, pour sélectionner un autre type de règle. Si vous souhaitez créer une règle sur un autre objet, appuyez sur Annuler pour quitter l’éditeur de règles et relancez-le depuis l’objet de formulaire de votre choix.
+   Bien que vous ne puissiez pas changer ou modifier l’objet sélectionné, vous pouvez utiliser la liste déroulante de règles, comme indiqué ci-dessous, pour sélectionner un autre type de règle. Si vous souhaitez créer une règle sur un autre objet, sélectionnez Annuler pour quitter l’éditeur de règles et la lancer à nouveau à partir de l’objet de formulaire de votre choix.
 
-1. Appuyez sur le menu déroulant **[!UICONTROL Sélectionner l’état]** et sélectionnez **[!UICONTROL est égal à]**. Le champ **[!UICONTROL Saisissez une chaîne]** s’affiche.
+1. Sélectionner **[!UICONTROL Sélectionner un état]** et sélectionnez **[!UICONTROL est égal à]**. Le champ **[!UICONTROL Saisissez une chaîne]** s’affiche.
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2.png)
 
@@ -462,7 +462,7 @@ Pour créer des règles, procédez comme suit :
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
-1. Faites glisser et déposez le champ **Salaire du conjoint** de l’onglet Objets de formulaire vers le champ **Déposez l’objet ou sélectionnez ici**. Vous pouvez également appuyer sur le champ **Déposez l’objet ou sélectionnez ici** et sélectionner le champ **Salaire du conjoint** dans le menu pop-up, qui répertorie tous les objets de formulaire dans le formulaire.
+1. Faites glisser et déposez le champ **Salaire du conjoint** de l’onglet Objets de formulaire vers le champ **Déposez l’objet ou sélectionnez ici**. Vous pouvez également sélectionner la variable **Déposez l’objet ou sélectionnez ici** et sélectionnez le champ **Salaire du conjoint** dans le menu contextuel, qui répertorie tous les objets de formulaire du formulaire.
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
 
@@ -470,7 +470,7 @@ Pour créer des règles, procédez comme suit :
 
    ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7.png)
 
-   Appuyez sur **Terminé** pour enregistrer la règle.
+   Sélectionner **Terminé** pour enregistrer la règle.
 
 1. Répétez les étapes 1 à 5 pour définir une autre règle pour masquer le champ de salaire du conjoint ou de la conjointe si la valeur de l’état civil est Célibataire. La règle s’affiche comme suit dans l’éditeur de règles.
 
@@ -484,13 +484,13 @@ Pour créer des règles, procédez comme suit :
 
 1. Ensuite, créez une règle pour calculer le niveau d’éligibilité de prêt, à hauteur de 50 % du salaire total, puis affichez-la dans le champ Éligibilité de prêt. Pour ce faire, créez des **Définir la valeur de** règles sur le champ Éligibilité de prêt .
 
-   En mode Création, appuyez sur le champ **[!UICONTROL Éligibilité de prêt]** et appuyez sur ![edit-rules](assets/edit-rules.png). Ensuite, appuyez sur **[!UICONTROL Créer]** pour lancer l’éditeur de règles.
+   En mode de création, sélectionnez l’option **[!UICONTROL Éligibilité de prêt]** champ et sélectionnez ![edit-rules](assets/edit-rules.png). Ensuite, sélectionnez **[!UICONTROL Créer]** pour lancer l’éditeur de règles.
 
 1. Sélectionnez la règle **[!UICONTROL Définir la valeur de]** dans la liste déroulante des règles.
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. Appuyez sur **[!UICONTROL Sélectionner l’option]** et sélectionnez **[!UICONTROL Expression mathématique]**. Un champ permettant de saisir l’expression mathématique s’ouvre.
+1. Sélectionner **[!UICONTROL Sélectionner une option]** et sélectionnez **[!UICONTROL Expression mathématique]**. Un champ permettant de saisir l’expression mathématique s’ouvre.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
@@ -504,7 +504,7 @@ Pour créer des règles, procédez comme suit :
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
-1. Ensuite, appuyez dans la zone en surbrillance autour du champ Expression et appuyez sur **Étendre l’expression**.
+1. Ensuite, sélectionnez dans la zone mise en surbrillance autour du champ d’expression et sélectionnez **Expression étendue**.
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13.png)
 
@@ -518,7 +518,7 @@ Pour créer des règles, procédez comme suit :
 
    Créez ensuite une condition qui fait que, lorsque True est renvoyé, l’expression s’exécute.
 
-1. Appuyez sur **Ajouter une condition** pour ajouter une instruction Lorsque.
+1. Sélectionner **Ajouter une condition** pour ajouter une instruction Lorsque .
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15.png)
 
@@ -532,7 +532,7 @@ Pour créer des règles, procédez comme suit :
 
    Enfin, la règle s’affiche comme suit dans l’éditeur de règles. ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
 
-   Appuyez sur **Terminé** pour enregistrer la règle.
+   Sélectionner **Terminé** pour enregistrer la règle.
 
 1. Répétez les étapes 7 à 12 pour définir une autre règle pour calculer le montant d’éligibilité si la valeur d’état civil est Célibataire. La règle s’affiche comme suit dans l’éditeur de règles.
 
@@ -569,7 +569,7 @@ Outre les fonctionnalités prêtes à l’emploi, comme *Somme de*, qui sont ré
 
 La balise `jsdoc` associée est nécessaire :
 
-* Si vous souhaitez personnaliser la configuration et la description.
+* Si vous souhaitez une configuration et une description personnalisées.
 * Parce qu’il y a plusieurs façons de déclarer une fonction dans`JavaScript,` et que les commentaires permettent de conserver une trace des fonctions.
 
 Pour plus d’informations, voir [usejsdoc.org](https://jsdoc.app/).
@@ -659,15 +659,15 @@ Pour créer une bibliothèque cliente et l’ajouter au référentiel CRX, proc�
 Une fois que vous avez ajouté votre bibliothèque client dans le référentiel CRX, utilisez-la dans votre formulaire adaptatif. Cela vous permet d’utiliser votre fonction personnalisée comme règle dans votre formulaire. Procédez comme suit pour ajouter la bibliothèque cliente dans votre formulaire adaptatif.
 
 1. Ouvrez votre formulaire en mode d’édition.
-Pour ouvrir un formulaire en mode d’édition, sélectionnez un formulaire, puis appuyez sur **Ouvrir**.
-1. En mode d’édition, sélectionnez un composant, puis appuyez sur ![field-level](assets/field-level.png) > **Conteneur de formulaires adaptatifs**, puis appuyez sur ![cmppr](assets/cmppr.png).
+Pour ouvrir un formulaire en mode d’édition, sélectionnez-le, puis **Ouvrir**.
+1. En mode d’édition, sélectionnez un composant, puis sélectionnez ![champ-level](assets/field-level.png) > **Conteneur de formulaires adaptatifs**, puis sélectionnez ![cmppr](assets/cmppr.png).
 1. Dans la barre latérale, sous Nom de bibliothèque cliente, ajoutez votre bibliothèque cliente. (`customfunction` dans l’exemple).
 
    ![Ajout de la bibliothèque cliente de fonction personnalisée](assets/clientlib.png)
 
-1. Sélectionnez la zone numérique d’entrée, et appuyez sur ![edit-rules](assets/edit-rules.png) pour ouvrir l’éditeur de règles.
-1. Appuyez sur **Créer une règle**. À l’aide des options indiquées ci-dessous, créez une règle pour enregistrer la valeur carrée de l’entrée dans le champ Sortie de votre formulaire.
-   [![Utilisation des fonctions personnalisées pour créer une règle](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Appuyez sur **Terminé**. Votre fonction personnalisée est ajoutée.
+1. Sélectionnez la zone numérique de saisie, puis sélectionnez ![edit-rules](assets/edit-rules.png) pour ouvrir l’éditeur de règles.
+1. Sélectionner **Créer une règle**. À l’aide des options indiquées ci-dessous, créez une règle pour enregistrer la valeur carrée de l’entrée dans le champ Sortie de votre formulaire.
+   [![Utilisation de fonctions personnalisées pour créer une règle](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Sélectionner **Terminé**. Votre fonction personnalisée est ajoutée.
 
 #### Types pris en charge pour la déclaration de fonction {#function-declaration-supported-types}
 
@@ -734,22 +734,22 @@ var c = {
 
 ## Gestion des règles {#manage-rules}
 
-Les règles existantes sur un objet de formulaire sont répertoriées lorsque vous appuyez sur l’objet et sur ![edit-rules1](assets/edit-rules1.png). Vous pouvez afficher le titre et un aperçu du résumé de la règle. De plus, l’interface utilisateur vous permet de développer et d’afficher le résumé complet des règles, de modifier l’ordre des règles, de modifier les règles et de supprimer des règles.
+Toutes les règles existantes sur un objet de formulaire sont répertoriées lorsque vous sélectionnez l’objet et sélectionnez ![edit-rules1](assets/edit-rules1.png). Vous pouvez afficher le titre et un aperçu du résumé de la règle. De plus, l’interface utilisateur vous permet de développer et d’afficher le résumé complet des règles, de modifier l’ordre des règles, de modifier les règles et de supprimer des règles.
 
 ![list-rules](assets/list-rules.png)
 
 Vous pouvez effectuer les actions suivantes sur les règles :
 
-* **Développer/Réduire** : la colonne Contenu dans la liste des règles affiche le contenu des règles. Si le contenu entier des règles n’est pas visible dans la vue par défaut, appuyez sur ![expand-rule-content](assets/expand-rule-content.png) pour le développer.
+* **Développer/Réduire** : la colonne Contenu dans la liste des règles affiche le contenu des règles. Si l’intégralité du contenu de la règle n’est pas visible dans la vue par défaut, sélectionnez ![expand-rule-content](assets/expand-rule-content.png) pour l’étendre.
 
 * **Réorganiser** : toute nouvelle règle que vous créez est empilée au bas de la liste des règles. Les règles sont exécutées de haut en bas. La règle en haut s’exécute en premier, suivie des autres règles du même type. Par exemple, si vous avez les règles Lorsque, Afficher, Activer et Lorsque en première, deuxième, troisième et quatrième positions depuis le haut respectivement, la règle Lorsque du haut est exécutée en premier, suivie de la règle Lorsque à la quatrième position. Ensuite, les règles Afficher et Activer seront exécutées.
 Vous pouvez modifier l’ordre d’une règle en appuyant sur ![sort-rules](assets/sort-rules.png) en regard ou la faire glisser et la déposer dans l’ordre souhaité dans la liste.
 
-* **Modifier** : pour modifier une règle, cochez la case située en regard du titre de la règle. D’autres options pour modifier et supprimer la règle s’affichent. Appuyez sur **Modifier** pour ouvrir la règle sélectionnée dans l’éditeur de règles en visuel ou dans l’éditeur de code, selon le mode utilisé pour créer la règle.
+* **Modifier** : pour modifier une règle, cochez la case située en regard du titre de la règle. D’autres options pour modifier et supprimer la règle s’affichent. Sélectionner **Modifier** pour ouvrir la règle sélectionnée dans l’éditeur de règles en mode visuel ou éditeur de code selon le mode utilisé pour créer la règle.
 
-* **Supprimer** : pour supprimer une règle, sélectionnez-la et appuyez sur **Supprimer**.
+* **Supprimer**: pour supprimer une règle, sélectionnez-la, puis **Supprimer**.
 
-* **Activer/Désactiver**: vous devrez peut-être suspendre temporairement l’utilisation d’une règle. Vous pouvez sélectionner une ou plusieurs règles, puis appuyer sur Désactiver dans la barre d’outils Actions pour les désactiver. Si une règle est désactivée, elle ne s’exécute pas lors de l’exécution. Pour activer une règle désactivée, vous pouvez la sélectionner puis appuyer sur Activer dans la barre d’outils Actions. La colonne de statut de la règle indique si la règle est activée ou désactivée.
+* **Activer/Désactiver**: vous devrez peut-être suspendre temporairement l’utilisation d’une règle. Vous pouvez sélectionner une ou plusieurs règles et sélectionner Désactiver dans la barre d’outils Actions pour les désactiver. Si une règle est désactivée, elle ne s’exécute pas lors de l’exécution. Pour activer une règle désactivée, vous pouvez la sélectionner et sélectionner Activer dans la barre d’outils des actions. La colonne de statut de la règle indique si la règle est activée ou désactivée.
 
 ![disablerule](assets/disablerule.png)
 
@@ -759,23 +759,23 @@ Vous pouvez copier-coller une règle d’un champ vers d’autres champs similai
 
 Pour copier-coller des règles, procédez comme suit :
 
-1. Appuyez sur l’objet de formulaire dont vous souhaitez copier une règle, puis, dans la barre d’outils des composants, appuyez sur ![editrule](assets/editrule.png). L’interface utilisateur de l’éditeur de règles s’affiche avec l’objet de formulaire sélectionné, et les règles existantes s’affichent.
+1. Sélectionnez l’objet de formulaire à partir duquel vous souhaitez copier une règle, puis, dans la barre d’outils du composant, sélectionnez ![editrule](assets/editrule.png). L’interface utilisateur de l’éditeur de règles s’affiche avec l’objet de formulaire sélectionné, et les règles existantes s’affichent.
 
    ![copyrule](assets/copyrule.png)
 
    Pour plus d’informations sur la gestion des règles existantes, voir [Gestion des règles](#manage-rules).
 
-1. Cochez la case en regard du titre de la règle. D’autres options de gestion de la règle s’affichent. Appuyez sur **Copier**.
+1. Cochez la case en regard du titre de la règle. D’autres options de gestion de la règle s’affichent. Sélectionnez **Copie**.
 
    ![copyrule2](assets/copyrule2.png)
 
-1. Sélectionnez un autre objet de formulaire dans lequel vous souhaitez coller la règle et appuyez sur **Coller**. De plus, vous pouvez modifier la règle pour y apporter des modifications.
+1. Sélectionnez un autre objet de formulaire auquel vous souhaitez coller la règle et sélectionnez **Coller**. De plus, vous pouvez modifier la règle pour y apporter des modifications.
 
    >[!NOTE]
    >
    >Vous pouvez coller une règle à un autre objet de formulaire uniquement si cet objet de formulaire prend en charge les événement de la règle copiée. Par exemple, un bouton prend en charge l’événement Cliquer. Vous pouvez coller une règle avec un événement Cliquer sur un bouton, mais pas dans une case à cocher.
 
-1. Appuyez sur **Terminé** pour enregistrer la règle.
+1. Sélectionner **Terminé** pour enregistrer la règle.
 
 ## Expressions imbriquées {#nestedexpressions}
 
@@ -785,7 +785,7 @@ Voici un exemple de règle imbriquée qui affiche un message concernant l’éli
 
 ![complexexpression](assets/complexexpression.png)
 
-Vous pouvez également faire glisser et déposer des conditions dans une règle pour la modifier. Appuyez et passez le curseur sur la poignée (![handle](assets/handle.png)) avant une condition. Une fois le pointeur affiché sous forme de main comme illustré ci-dessous, faites glisser la condition et déposez-la n’importe où dans la règle. La structure de la règle change.
+Vous pouvez également faire glisser et déposer des conditions dans une règle pour la modifier. Sélectionnez la poignée et survolez-la avec la souris ( ![handle](assets/handle.png)) avant une condition. Une fois le pointeur affiché sous forme de main comme illustré ci-dessous, faites glisser la condition et déposez-la n’importe où dans la règle. La structure de la règle change.
 
 ![glisser-déposer](assets/drag-and-drop.png)
 

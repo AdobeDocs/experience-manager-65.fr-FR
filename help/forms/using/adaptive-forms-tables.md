@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2475'
-ht-degree: 90%
+source-wordcount: '2459'
+ht-degree: 87%
 
 ---
 
@@ -63,7 +63,7 @@ Pour ajouter ou supprimer une ligne ou une colonne ou déplacer une ligne, cliqu
 
 * L’opération Ajouter ajoute une ligne au-dessous ou une colonne à droite de la ligne ou de la colonne sélectionnée.
 * L’opération Supprimer supprime la ligne ou la colonne sélectionnée.
-* Les opérations Déplacer vers le haut et Déplacer vers le bas permettent de déplacer la ligne sélectionnée vers le haut et vers le bas.
+* L’opération Déplacer vers le haut et Déplacer vers le bas déplace la ligne sélectionnée vers le haut et vers le bas.
 
 Le menu déroulant de la ligne fournit également l’opération Modifier pour modifier les propriétés, les paramètres et les options de style de la ligne.
 
@@ -77,7 +77,7 @@ Le menu déroulant de la ligne fournit également l’opération Modifier pour m
 
 Vous pouvez ajouter une description du tableau pour expliquer l’organisation des informations que les lecteurs d’écran peuvent interpréter et lire. Pour ajouter la description :
 
-1. Sélectionnez le tableau, puis appuyez sur ![cmppr](assets/cmppr.png) pour afficher ses propriétés dans la barre latérale.
+1. Sélectionnez le tableau, puis choisissez ![cmppr](assets/cmppr.png) pour afficher ses propriétés dans la barre latérale.
 1. Spécifiez le résumé dans l’onglet Accessibilité.
 1. Cliquez sur **Terminé**.
 
@@ -95,9 +95,9 @@ Pour appliquer le tri sur les colonnes du tableau, les cellules des colonnes du 
 
 Pour activer le tri :
 
-1. Sélectionnez le tableau et appuyez sur ![configure_icon](assets/configure_icon.png) (Configurer). Vous pouvez également sélectionner le tableau à l’aide de l’explorateur de **Contenu** dans le panneau latéral de la communication interactive.
+1. Sélectionnez le tableau, puis choisissez ![configure_icon](assets/configure_icon.png) (Configuration). Vous pouvez également sélectionner le tableau à l’aide de l’explorateur de **Contenu** dans le panneau latéral de la communication interactive.
 1. Sélectionnez **Activer le tri**.
-1. Appuyez sur ![done_icon](assets/done_icon.png) pour enregistrer les propriétés. Les icônes de tri, les flèches vers le haut et vers le bas, dans les en-têtes de colonnes, indiquent que le tri a été activé.
+1. Sélectionner ![done_icon](assets/done_icon.png) pour enregistrer les propriétés du tableau. Les icônes de tri, les flèches vers le haut et vers le bas, dans les en-têtes de colonnes, indiquent que le tri a été activé.
 
    ![Activer le tri](assets/enable_sorting_new.png)
 
@@ -116,7 +116,7 @@ Pour activer le tri :
 
 Pour définir la largeur des colonnes d’un tableau, procédez comme suit :
 
-1. Dans l’onglet **[!UICONTROL Contenu]**, appuyez sur la touche **[!UICONTROL Tableau]** et appuyez sur l’icône Configure (![Configurer](assets/configure-icon.svg)).
+1. Dans le **[!UICONTROL Contenu]** , sélectionnez l’onglet **[!UICONTROL Tableau]** et sélectionnez Configurer (![Configurer](assets/configure-icon.svg)).
 
 1. Saisissez la liste des valeurs séparées par des virgules dans le champ **[!UICONTROL Largeur de colonne]** pour spécifier la largeur proportionnelle de chaque colonne du tableau. Par exemple, pour un tableau qui comprend 3 colonnes, en spécifiant 2, 4, 6 comme valeurs dans le champ **[!UICONTROL Largeur de colonne]**, la largeur des colonnes est définie sur 2/12 pour la première colonne, 4/12 pour la deuxième colonne et 6/12 pour la troisième. 2/12 comme largeur de la première colonne fait référence à un sixième de la largeur du tableau. De même, 4/12 définit la largeur de la deuxième colonne sur un tiers de celle du tableau et 6/12 définit la largeur de la troisième colonne sur la moitié de celle du tableau.
 
@@ -124,9 +124,9 @@ Pour définir la largeur des colonnes d’un tableau, procédez comme suit :
 
 Vous pouvez définir le style d’un tableau à l’aide du mode Style de la barre d’outils de la page. Effectuez les étapes suivantes pour passer en mode Style et modifier le style du tableau.
 
-1. Dans la barre d’outils de la page, avant l’aperçu, appuyez sur ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
+1. Dans la barre d’outils de la page, avant Aperçu, sélectionnez ![liste déroulante canevas](assets/canvas-drop-down.png) > **Style**.
 
-1. Dans la barre latérale, sélectionnez le tableau, puis appuyez sur le bouton Modifier ![edit-button](assets/edit-button.png).
+1. Dans la barre latérale, sélectionnez le tableau et le bouton Modifier . ![edit-button](assets/edit-button.png).
 Vous pouvez afficher les propriétés de style dans la barre latérale.
 
 ![Propriétés de style d’un tableau](assets/style-table.png)
@@ -139,7 +139,7 @@ Vous pouvez afficher les propriétés de style dans la barre latérale.
 
 Les tableaux fournissent une assistance prête à l’emploi pour l’ajout ou la suppression dynamique de lignes au moment de l’exécution.
 
-1. Sélectionnez une ligne de tableau et appuyez sur ![cmppr](assets/cmppr.png).
+1. Sélectionnez une rangée de tableau, puis ![cmppr](assets/cmppr.png).
 1. Dans l’onglet Paramètres de répétition, spécifiez les valeurs minimale et maximale pour limiter le nombre de lignes dans le tableau.
 1. Cliquez sur **Terminé**.
 

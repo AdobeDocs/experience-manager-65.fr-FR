@@ -2,10 +2,10 @@
 title: Votre boîte de réception pour gérer les tâches
 description: Gestion de vos tâches avec la boîte de réception dans Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 94%
+source-wordcount: '1155'
+ht-degree: 89%
 
 ---
 
@@ -65,7 +65,7 @@ Prêt à l’emploi, AEM est préchargé avec quatre tâches affectées au group
 
 Pour ouvrir la boîte de réception des notifications AEM :
 
-1. Cliquez/appuyez sur l’indicateur dans la barre d’outils.
+1. Cliquez sur l’indicateur dans la barre d’outils.
 
 1. Sélectionnez **Afficher tout**. La variable **Boîte de réception AEM** s’ouvre. La boîte de réception affiche les éléments des workflows, des projets et des tâches.
 1. La vue par défaut est [Liste](#inbox-list-view), mais vous pouvez également passer à la vue [Calendrier](#inbox-calendar-view). Pour ce faire, utilisez le sélecteur de vue (barre d’outils, en haut à droite).
@@ -138,8 +138,8 @@ L’option Contrôle d’administration n’est visible que pour les membres du 
 
 * **Personnalisation des colonnes** : personnalisez une boîte de réception AEM pour modifier le titre par défaut d’une colonne, réorganiser la position d’une colonne et afficher des colonnes supplémentaires en fonction des données d’un workflow.
    * **Ajouter une colonne** : sélectionnez une colonne à ajouter dans la boîte de réception AEM.
-   * **Modifier la colonne** : passez la souris sur le titre de la colonne et appuyez sur l’icône ![modifier](assets/edit.svg) pour saisir le nom d’affichage d’une colonne.
-   * **Supprimer la colonne** : appuyez sur le l’icône ![supprimer](assets/delete_updated.svg) pour supprimer la colonne de la boîte de réception d’AEM.
+   * **Modifier la colonne**: placez le curseur sur le titre de la colonne et sélectionnez ![edit](assets/edit.svg) pour saisir le nom d’affichage d’une colonne.
+   * **Supprimer la colonne**: sélectionnez la variable ![delete](assets/delete_updated.svg) pour supprimer la colonne de la boîte de réception d’AEM.
    * **Déplacer la colonne** : faites glisser l’icône ![déplacer](assets/move_updated.svg) pour déplacer une colonne vers un nouvel emplacement dans la boîte de réception d’AEM.
 
   ![admin-control](assets/admin-control-column-customize.png)
@@ -152,7 +152,7 @@ L’option Contrôle d’administration n’est visible que pour les membres du 
 
 * **Navigation de l’utilisateur**
    * **Masquer les options de navigation :** sélectionnez cette option pour masquer les options de navigation disponibles dans l’en-tête. Les options de navigation incluent des liens vers d’autres solutions, un lien Aide et les options de création disponibles lorsque vous appuyez sur le logo ou le texte Adobe Experience Manager.
-* **Enregistrer :** appuyez/cliquez sur cette option pour enregistrer les paramètres.
+* **Enregistrer :** Cliquez sur cette option pour enregistrer les paramètres.
 
 ## Action sur un élément {#taking-action-on-an-item}
 
@@ -167,7 +167,7 @@ L’option Contrôle d’administration n’est visible que pour les membres du 
 
    Les actions disponibles varient selon l’élément et incluent les opérations suivantes :
 
-   * **Terminer** l’action ; par exemple une tâche ou un élément de workflow.
+   * **Terminer** par exemple, une tâche ou un élément de workflow.
    * **Réaffecter**/**Déléguer** un élément.
    * **Ouvrir** un élément ; selon le type d’élément, cette action permet d’effectuer les opérations suivantes :
 

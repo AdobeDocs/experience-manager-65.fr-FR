@@ -11,10 +11,10 @@ discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 feature: Correspondence Management
 exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1657'
-ht-degree: 29%
+source-wordcount: '1660'
+ht-degree: 28%
 
 ---
 
@@ -48,7 +48,7 @@ Vous pouvez insérer une condition intégrée dans une lettre en insérant la co
 >
 >Si vos actifs existants incluent les anciennes expressions de condition/répétition (antérieures à 6.2 SP1 CFP 4), les actifs affichent l’ancienne syntaxe de condition et de répétition. Toutefois, l’ancienne condition/répétition fonctionne. Les nouvelles et anciennes expressions de condition/répétition sont compatibles entre elles pour créer un mélange d’expressions de condition/répétition anciennes et nouvelles.
 
-1. Dans le module de texte approprié, sélectionnez la partie de texte à laquelle vous voulez appliquer des conditions et appuyez sur **Condition**.
+1. Dans le module de texte approprié, sélectionnez la partie de texte que vous souhaitez conditionner et sélectionnez **Condition**.
 
    ![1_selecttext](assets/1_selecttext.png)
 
@@ -60,9 +60,9 @@ Vous pouvez insérer une condition intégrée dans une lettre en insérant la co
    >
    >Une expression conditionnelle vide ou non valide ne peut pas être enregistrée. Il doit y avoir une expression conditionnelle valide à l’intérieur de `${}` pour enregistrer l’expression.
 
-1. Procédez comme suit pour créer une condition permettant d’évaluer si le texte sélectionné/conditionnel apparaît dans la lettre, puis appuyez sur la coche pour enregistrer l’expression :
+1. Procédez comme suit pour créer une condition permettant d’évaluer si le texte sélectionné/conditionnel apparaît dans la lettre, puis cochez la case pour enregistrer l’expression :
 
-   Appuyez deux fois sur un élément DD pour l’insérer dans la condition. Insérez l’opérateur approprié et créez la condition suivante dans la boîte de dialogue.
+   Double-sélectionnez un élément DD pour l’insérer dans la condition. Insérez l’opérateur approprié et créez la condition suivante dans la boîte de dialogue.
 
    ```javascript
    ${DD_creditcard_Gender=="Male"}
@@ -70,7 +70,7 @@ Vous pouvez insérer une condition intégrée dans une lettre en insérant la co
 
    Pour plus d’informations sur la création d’une expression, voir **Création d’expressions et de fonctions distantes à l’aide du générateur d’expression** in [Générateur d’expression](../../forms/using/expression-builder.md). La valeur spécifiée dans l’expression doit être prise en charge pour l’élément du dictionnaire de données. Pour de plus amples informations, voir [Dictionnaires de données](../../forms/using/data-dictionary.md).
 
-   Une fois la condition insérée, vous pouvez placer le pointeur de la souris sur la poignée gauche de la condition pour afficher la condition. Vous pouvez appuyer sur la poignée pour afficher le menu contextuel de la condition, qui vous permet de modifier ou de supprimer la condition.
+   Une fois la condition insérée, vous pouvez placer le pointeur de la souris sur la poignée gauche de la condition pour afficher la condition. Vous pouvez sélectionner la poignée pour afficher le menu contextuel de la condition, qui vous permet de modifier ou de supprimer la condition.
 
    ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremoveconditionpopup](assets/4_editconditionremoveconditionpopup.png)
 
@@ -111,13 +111,13 @@ L’exemple suivant vous indique les étapes à suivre pour utiliser la répéti
 
    ![2_selection](assets/2_selection.png)
 
-1. Appuyez sur Répéter.
+1. Sélectionnez Répéter.
 
    La boîte de dialogue Répéter s’affiche.
 
    ![3_repeatdialog](assets/3_repeatdialog.png)
 
-1. Sélectionnez Saut de ligne comme séparateur et, si nécessaire, appuyez sur Ajouter une condition pour créer une règle. Vous pouvez également utiliser le texte comme séparateur et spécifier les caractères à utiliser comme séparateur.
+1. Sélectionnez Saut de ligne comme séparateur et, si nécessaire, sélectionnez Ajouter une condition pour créer une règle. Vous pouvez également utiliser le texte comme séparateur et spécifier les caractères à utiliser comme séparateur.
 
    La boîte de dialogue Créer une règle s’affiche.
 
@@ -172,7 +172,7 @@ L’exemple suivant vous indique les étapes à suivre pour utiliser la répéti
 
    ![2_repeat_selecttext](assets/2_repeat_selecttext.png)
 
-1. Appuyez sur **Répéter**. La boîte de dialogue Répéter s’affiche avec une condition intégrée vide.
+1. Sélectionner **Répéter**. La boîte de dialogue Répéter s’affiche avec une condition intégrée vide.
 
    ![3_repeat_dialog](assets/3_repeat_dialog.png)
 
@@ -184,7 +184,7 @@ L’exemple suivant vous indique les étapes à suivre pour utiliser la répéti
 
    Sinon, si vous n’avez pas besoin d’effectuer un rendu des informations (ici les transactions) de manière sélective, laissez la condition vide en supprimant ce qui suit dans la boîte de dialogue : `${}`. L’enregistrement d’une expression de répétition est activé lorsque la fenêtre d’expression de répétition est vide (sans ${} lorsqu’aucune répétition n’est nécessaire) ou lorsqu’elle contient une condition valide pour la répétition.
 
-1. Sélectionnez un séparateur pour le formatage du texte dynamique et appuyez sur la coche à enregistrer :
+1. Sélectionnez un séparateur pour le formatage du texte dynamique et cochez la case à cocher à enregistrer :
 
    * **Saut de ligne**: insère un saut de ligne après chaque entrée de transaction dans la lettre de sortie.
    * **Texte**: insère le caractère de texte spécifié après chaque entrée de transaction dans la lettre de sortie.
@@ -193,7 +193,7 @@ L’exemple suivant vous indique les étapes à suivre pour utiliser la répéti
 
    ![4_repeat_hoverdetail](assets/4_repeat_hoverdetail.png)
 
-   Vous pouvez appuyer sur la poignée pour afficher le menu contextuel de la répétition, qui vous permet de modifier ou de supprimer la structure de la répétition.
+   Vous pouvez sélectionner la poignée pour afficher le menu contextuel de la répétition, qui vous permet de modifier ou supprimer la structure de la répétition.
 
    ![5_repeateditremove](assets/5_repeateditremove.png)
 

@@ -11,10 +11,10 @@ discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3154'
-ht-degree: 85%
+source-wordcount: '3141'
+ht-degree: 81%
 
 ---
 
@@ -94,7 +94,7 @@ Il vous permet de faire glisser des éléments de modèle de formulaire sur le f
 
   Permet de modifier les propriétés d’un composant. Les propriétés affichées varient en fonction d’un composant. Pour voir les propriétés du conteneur de formulaires adaptatifs :
 
-  Sélectionnez un composant, puis appuyez sur ![field-level](assets/field-level.png) > **[!UICONTROL Conteneur de formulaires adaptatifs]** et enfin sur ![cmppr](assets/cmppr.png).
+  Sélectionnez un composant, puis cliquez sur ![champ-level](assets/field-level.png) > **[!UICONTROL Conteneur de formulaires adaptatifs]**, puis sélectionnez ![cmppr](assets/cmppr.png).
 
 * **Explorateur de ressources**
 
@@ -279,16 +279,16 @@ Il vous permet de faire glisser des éléments de modèle de formulaire sur le f
 
 Voici quelques bonnes pratiques et points clés à retenir lorsque vous utilisez des composants de formulaire adaptatif :
 
-* Chaque composant est associé à des propriétés qui contrôlent son apparence et ses fonctionnalités. Pour configurer les propriétés d’un composant, appuyez sur celui-ci et sélectionnez ![cmppr](assets/cmppr.png) pour ouvrir les propriétés du composant dans l’explorateur de propriétés.
-* Un composant est identifié par son nom d’élément. Lorsque vous appuyez sur ![cmppr](assets/cmppr.png), vous pouvez changer le nom du composant en modifiant la valeur du champ **[!UICONTROL Nom de l’élément]** dans l’explorateur de propriétés. Le champ Nom de l’élément accepte uniquement les lettres, les chiffres, les tirets (-) et les traits de soulignement (_). Les autres caractères spéciaux ne sont pas autorisés et le nom de l’élément doit commencer par une lettre.
+* Chaque composant est associé à des propriétés qui contrôlent son apparence et ses fonctionnalités. Pour configurer les propriétés d’un composant, sélectionnez-le, puis sélectionnez ![cmppr](assets/cmppr.png) pour ouvrir les propriétés du composant dans l’explorateur de propriétés.
+* Un composant est identifié par son nom d’élément. Lorsque vous sélectionnez ![cmppr](assets/cmppr.png), vous pouvez modifier le nom du composant en modifiant la variable **[!UICONTROL Nom de l’élément]** valeur de champ dans l’explorateur de propriétés. Le champ Nom de l’élément accepte uniquement les lettres, les chiffres, les tirets (-) et les traits de soulignement (_). Les autres caractères spéciaux ne sont pas autorisés et le nom de l’élément doit commencer par une lettre.
 
-* Vous pouvez modifier la propriété de titre d’un composant de formulaire adaptatif en ligne dans l’éditeur de formulaire sans ouvrir le navigateur de propriétés tant que le titre est visible sur le formulaire. Pour ce faire :
+* Vous pouvez modifier la propriété de titre d’un composant de formulaire adaptatif en ligne dans l’éditeur de formulaire sans ouvrir le navigateur de propriétés tant que le titre est visible sur le formulaire. Procédez comme suit :
 
-   1. Appuyez pour sélectionner un composant qui a une propriété **[!UICONTROL Titre]** et dont la propriété **[!UICONTROL Masquer le titre]** est désactivée.
+   1. Sélectionnez cette option pour sélectionner un composant doté d’une **[!UICONTROL Titre]** et dont **[!UICONTROL Masquer le titre]** est désactivée.
 
-   1. Appuyez sur ![aem_6_3_edit](assets/aem_6_3_edit.png) pour rendre le titre modifiable.
+   1. Sélectionner ![aem_6_3_edit](assets/aem_6_3_edit.png) pour rendre le titre modifiable.
 
-   1. Modifiez le titre et appuyez sur la touche Retour ou appuyez n’importe où en dehors du composant pour enregistrer les modifications. Appuyez sur la touche Échap pour annuler les modifications.
+   1. Modifiez le titre et sélectionnez la touche Retour ou n’importe où en dehors du composant pour enregistrer les modifications. Sélectionnez la touche Échap pour ignorer les modifications.
 
 * Certains composants de formulaire adaptatifs, tels que Courrier électronique et Téléphone, incluent des modèles de validation prêts à l’emploi. Toutefois, vous pouvez spécifier une validation personnalisée en mettant à jour le champ **[!UICONTROL Modèle de validation]** sous l’accordéon Modèles dans les propriétés du composant. Voir les descriptions des composants dans le tableau ci-dessus pour plus d’informations sur les validations par défaut.
 
@@ -302,7 +302,7 @@ Voici quelques bonnes pratiques et points clés à retenir lorsque vous utilisez
 * Par défaut, le composant Pièce jointe permet à un utilisateur de joindre un seul fichier. Cependant, vous pouvez configurer les propriétés du composant pour prendre en charge plusieurs pièces jointes. En outre, si un utilisateur joint plusieurs fichiers avec le même nom de fichier, les pièces jointes peuvent entraîner des problèmes. Il est donc recommandé d’associer un identifiant unique pour chaque pièce jointe envoyée lors de l’envoi du formulaire. Pour ce faire :
 
    1. Sur votre serveur AEM Forms, accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console Web]**.
-   1. Recherchez **[!UICONTROL Service de configuration de formulaires adaptatifs]** et appuyez dessus.
+   1. Rechercher et sélectionner **[!UICONTROL Service de configuration Adaptive Forms]**.
    1. Dans la boîte de dialogue Service de configuration de formulaires adaptatifs, activez l’option **[!UICONTROL Rendre les noms de fichier uniques]**. Par défaut, elle est désactivée.
 
 * Pour permettre aux utilisateurs de joindre un PDF à l’aide du navigateur Safari, assurez-vous que **application/pdf** est ajouté à la propriété Types de fichiers pris en charge du composant Pièce jointe . Les formulaires adaptatifs créés avec la version précédente d’AEM Forms peuvent contenir **.pdf** au lieu de **application/pdf** dans la propriété Types de fichiers pris en charge.
@@ -343,7 +343,7 @@ La barre d’outils de la page, située en haut de l’écran, propose des optio
 
 Lorsque vous sélectionnez un composant, une barre d’outils s’affiche, vous permettant de l’utiliser. Vous avez la possibilité de couper, coller, déplacer et spécifier les propriétés des composants. Vous avez le choix entre :
 
-A. **Configurer** : lorsque vous appuyez sur **[!UICONTROL Configurer]**, les propriétés du composant sont visibles dans la barre latérale. La configuration de ces propriétés permet de personnaliser la capture de données. Vous pouvez changer le nom de l’élément du composant et indiquer le texte de libellé du champ Titre du composant. Le nom de l’élément vous permet de capturer les valeurs saisies par les utilisateurs et utilisatrices à l’aide du composant. Dans les propriétés du composant, vous indiquez le comportement du composant et gérez l’entrée de l’utilisateur ou utilisatrice. Configurez les propriétés dans la barre latérale pour capturer les données utilisateur et les utiliser pour un traitement approfondi. Les propriétés du conteneur de formulaires adaptatifs permettent de spécifier des bibliothèques clients, des mises en page, des thèmes, des documents d’enregistrement, des paramètres d’enregistrement, des paramètres d’envoi et des paramètres de métadonnées.
+A.**Configurer**: lorsque vous sélectionnez **[!UICONTROL Configurer]**, les propriétés du composant sont visibles dans la barre latérale. La configuration de ces propriétés permet de personnaliser la capture de données. Vous pouvez changer le nom de l’élément du composant et indiquer le texte de libellé du champ Titre du composant. Le nom de l’élément vous permet de capturer les valeurs saisies par les utilisateurs et utilisatrices à l’aide du composant. Dans les propriétés du composant, vous indiquez le comportement du composant et gérez l’entrée de l’utilisateur ou utilisatrice. Configurez les propriétés dans la barre latérale pour capturer les données utilisateur et les utiliser pour un traitement approfondi. Les propriétés du conteneur de formulaires adaptatifs permettent de spécifier des bibliothèques clients, des mises en page, des thèmes, des documents d’enregistrement, des paramètres d’enregistrement, des paramètres d’envoi et des paramètres de métadonnées.
 
 B. **Copier** : permet de copier un composant et le coller ailleurs dans le formulaire. Lorsque vous collez un composant, ce dernier obtient un nouveau nom d’élément mais conserve les propriétés du composant copié.
 
@@ -361,7 +361,7 @@ H. **Groupe** : permet de sélectionner plusieurs composants permettant de coup
 
 I. **Parent** : permet de sélectionner le parent d’un composant. Par exemple, un champ de texte se trouve dans une sous-section, qui réside elle-même dans une section. La section se trouve dans le panneau racine du guide et le conteneur du formulaire adaptatif est le parent d’un panneau racine de guide. Pour chaque composant s’affichent toutes les options avec la hiérarchie triée de bas en haut.
 
-Par exemple, si vous tapez **[!UICONTROL Parent]** pour une zone de texte, vous pouvez voir les éléments suivants :
+Par exemple, si vous sélectionnez **[!UICONTROL Parent]** pour une zone de texte, vous pouvez voir :
 
 * Sous-section
 * Section

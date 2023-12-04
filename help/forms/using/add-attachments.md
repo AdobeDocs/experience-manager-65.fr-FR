@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 docset: aem65
 exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 55%
+ht-degree: 35%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 55%
 
 ## Ajouter des pièces jointes dans les formulaires synchronisés avec le serveur AEM Forms Workflow (AEM Forms sur JEE) {#adding-annotations}
 
-L’application AEM Forms vous permet de joindre des images, des annotations et des notes de texte à votre formulaire synchronisé avec le serveur AEM Forms JEE. Si votre formulaire est chargé à partir d’un serveur AEM Forms Workflow, vos pièces jointes sont ajoutées au formulaire. Vous pouvez appuyer sur le bouton de pièce jointe ![attachments-app](assets/attachments-app.png) pour afficher toutes les pièces jointes dans un formulaire. La notification rouge indique le nombre de pièces jointes du formulaire. Si le formulaire ne compte aucune pièce jointe, le bouton rouge de notification n’est pas visible. Si le formulaire ne compte aucune pièce jointe, lorsque vous appuyez sur le bouton des pièces jointes ![attch](assets/attch.png), vous avez la possibilité de joindre des photos ou des annotations.
+L’application AEM Forms vous permet de joindre des images, des annotations et des notes de texte à votre formulaire synchronisé avec le serveur AEM Forms JEE. Si votre formulaire est chargé à partir d’un serveur AEM Forms Workflow, vos pièces jointes sont ajoutées au formulaire. Vous pouvez sélectionner le bouton de pièce jointe ![attachments-app](assets/attachments-app.png) pour afficher toutes les pièces jointes d’un formulaire. La notification rouge indique le nombre de pièces jointes du formulaire. Si le formulaire ne compte aucune pièce jointe, le bouton rouge de notification n’est pas visible. Si le formulaire ne contient aucune pièce jointe, lorsque vous sélectionnez le bouton pièces jointes . ![attch](assets/attch.png), vous avez la possibilité de joindre des photos ou des annotations.
 
 Vous avez le choix entre :
 
@@ -34,7 +34,7 @@ Vous avez le choix entre :
 
 ### L’écran Pièces jointes {#the-attachments-screen}
 
-Pour afficher toutes les pièces jointes au même endroit, appuyez sur ![attachments-app](assets/attachments-app.png). Vous pouvez ajouter, renommer ou supprimer des pièces jointes ici.
+Pour afficher toutes les pièces jointes à un emplacement, sélectionnez ![attachments-app](assets/attachments-app.png). Vous pouvez ajouter, renommer ou supprimer des pièces jointes ici.
 
 ![Toutes les pièces jointes au même endroit](assets/attachments-screen.png)
 
@@ -44,26 +44,26 @@ Vous pouvez utiliser le bouton **+** sur l’écran Pièces jointes pour joindre
 
 Vous pouvez utiliser l’appareil photo de votre appareil mobile ou des images enregistrées de votre appareil pour joindre une image dans le formulaire.
 
-1. Appuyez sur le bouton des pièces jointes ![attch](assets/attch.png) au bas de la fenêtre.
-1. Appuyez sur **Galerie** ou **Appareil photo** dans la fenêtre pop-up qui s’affiche.
+1. Sélectionner le bouton de pièce jointe ![attch](assets/attch.png) au bas de la fenêtre.
+1. Sélectionner **Galerie** ou **Appareil photo** dans la fenêtre contextuelle qui s’affiche.
 1. Selon l’option que vous sélectionnez, effectuez les opérations suivantes :
 
    1. Si vous sélectionnez **Appareil photo**.
 
-      Prenez une photo. Appuyez ensuite sur le bouton **Utiliser** ![use-pic](assets/use-pic.png).
+      Prenez une photo. Sélectionnez ensuite le **Utilisation** ![use-pic](assets/use-pic.png) bouton .
 
-      Alternativement, appuyez sur le bouton **Reprendre** ![retake](assets/retake.png) pour reprendre la photo.
+      Ou sélectionnez l’option **Retake** ![retake](assets/retake.png) pour reprendre la photo.
 
    1. Si vous sélectionnez **Galerie**.
 
-      L’explorateur d’images de l’appareil s’affiche. Dans le navigateur d’images de votre appareil, appuyez sur l’image que vous voulez joindre.
+      L’explorateur d’images de l’appareil s’affiche. Dans le navigateur d’images de votre appareil, sélectionnez l’image à joindre.
 
 ### Ajouter une note {#adding-a-note}
 
 L’option **Notes** vous permet d’ajouter des annotations à main levée et du texte en pièces jointes dans votre formulaire.
 
-1. Appuyez sur le bouton des pièces jointes ![attch](assets/attch.png) au bas de la fenêtre.
-1. Appuyez sur **Notes** dans la fenêtre pop-up qui s’affiche.
+1. Sélectionner le bouton de pièce jointe ![attch](assets/attch.png) au bas de la fenêtre.
+1. Sélectionner **Remarques** dans la fenêtre contextuelle qui s’affiche.
 1. Dans l’interface utilisateur de notes qui est lancée, capturez une saisie tactile à main levée.
 
    ![Interface de saisie tactile](assets/scribble-ui.png)

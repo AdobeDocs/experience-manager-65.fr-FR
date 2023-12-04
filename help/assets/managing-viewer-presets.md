@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4520'
+source-wordcount: '4422'
 ht-degree: 99%
 
 ---
@@ -354,7 +354,7 @@ Le tableau suivant répertorie les gestes pris en charge dans les visionneuses m
    <td><p>Affiche ou masque l’interface utilisateur</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Double appui</strong></p> </td>
+   <td><p><strong>Double sélection</strong></p> </td>
    <td><p>Ne s’applique pas</p> </td>
    <td><p>Zoom avant ou réinitialisation</p> </td>
    <td><p>Zoom avant ou réinitialisation</p> </td>

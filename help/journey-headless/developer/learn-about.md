@@ -2,10 +2,10 @@
 title: En savoir plus sur le développement CMS découplé
 description: Dans cette partie du parcours de développement découplé AEM, découvrez la technologie découplée et pourquoi l’utiliser.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1611'
-ht-degree: 92%
+source-wordcount: '1601'
+ht-degree: 90%
 
 ---
 
@@ -68,7 +68,7 @@ Omettre la tête (en mode découplé) permet de simplifier le CMS en éliminant 
 
 ## Découplage {#decoupling}
 
-La diffusion découplée est possible en exposant un ensemble d’interfaces de programmation d’applications (API) robustes et flexibles sur lesquelles toutes vos expériences peuvent s’appuyer. L’API sert de langage commun entre les services, en les liant au niveau du contenu grâce à une diffusion de contenu normalisée, mais en leur permettant de mettre en œuvre leurs propres solutions.
+La diffusion sans affichage est possible en exposant un ensemble d’interfaces de programmation d’applications (API) robustes et flexibles dans lesquelles toutes vos expériences peuvent effectuer un choix. L’API sert de langage commun entre les services, en les liant au niveau du contenu grâce à une diffusion de contenu normalisée, mais en leur permettant de mettre en œuvre leurs propres solutions.
 
 L’absence de tête est un exemple de découplage du contenu et de sa présentation. Dans un sens plus général, il s’agit de découpler les sections frontale (consommateur) et dorsale (gestion de contenu) de votre pile de services. Dans une configuration découplée, le système de présentation (la tête) est découplé de la gestion de contenu (la queue). L’un et l’autre n’interagissent que par le biais d’appels à des API.
 

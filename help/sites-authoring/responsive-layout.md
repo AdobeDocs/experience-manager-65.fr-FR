@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 85%
+source-wordcount: '1798'
+ht-degree: 82%
 
 ---
 
@@ -120,7 +120,7 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
 1. Pour sélectionner un appareil spécifique à émuler, vous pouvez effectuer l’une des opérations suivantes :
 
    * utiliser l’icône Sélectionner un périphérique et sélectionner l’appareil dans la liste déroulante ;
-   * appuyer ou cliquer sur l’indicateur de l’appareil dans la barre d’outils de l’émulateur.
+   * Cliquez sur l’indicateur de l’appareil dans la barre d’outils de l’émulateur.
 
    ![screen_shot_2018-03-23at084818](assets/screen_shot_2018-03-23at084818.png)
 
@@ -164,7 +164,7 @@ Un **conteneur de mise en page** est un système de paragraphes qui présente le
 >
 >Un conteneur de mise en page étant un système de paragraphes, la suppression du composant entraîne la suppression de la grille de mise en page et de tous les composants (ainsi que de leur contenu) qu’il contient.
 
-1. Si vous pointez ou appuyez sur l’espace réservé de la grille, le menu d’actions s’affiche.
+1. Si vous pointez ou sélectionnez l’espace réservé de la grille, le menu d’actions s’affiche.
 
    ![screen_shot_2018-03-23at085357](assets/screen_shot_2018-03-23at085357.png)
 
@@ -216,7 +216,7 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
   >
   >Les proportions et les rapports sont conservés lorsque des composants, tels que des **images**, sont redimensionnés.
 
-* Cliquez/appuyez sur un composant de contenu. La barre d’outils vous permet d’effectuer les opérations suivantes :
+* Cliquez sur un composant de contenu. La barre d&#39;outils permet d&#39;effectuer les opérations suivantes :
 
    * **Parent**
 
@@ -232,7 +232,7 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
-* En mode **Mise en page**, appuyez ou cliquez sur **Faire glisser les composants ici** pour sélectionner l’intégralité du composant. La barre d’outils de ce mode s’affiche.
+* Dans **Disposition** vous pouvez cliquer sur le bouton **Faire glisser des composants ici** pour sélectionner le composant entier. La barre d’outils de ce mode s’affiche.
 
   La barre d’outils propose différentes options en fonction de l’état du composant de mise en page et des composants qui lui sont associés. Par exemple :
 
@@ -244,7 +244,7 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
      ![Afficher les composants masqués](do-not-localize/screen_shot_2018-03-23at091007.png)
 
-   * **Rétablir la disposition du point d’arrêt** : rétablit la disposition par défaut. Aucune disposition personnalisée n’est donc imposée.
+   * **Rétablir la disposition du point d’arrêt** : rétablit la mise en page par défaut. Cela signifie qu’aucune disposition personnalisée ne sera imposée.
 
      ![Rétablir la disposition du point d’arrêt](do-not-localize/screen_shot_2018-03-23at091013.png)
 

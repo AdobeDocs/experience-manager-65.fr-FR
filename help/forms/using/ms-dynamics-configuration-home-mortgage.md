@@ -4,10 +4,10 @@ description: Découvrez comment utiliser les services Microsoft&reg; Dynamics 36
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: develop, Configuration
 exl-id: 2ac37dc5-d88d-4f98-8576-cd2ca6f0ea3a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 49%
+source-wordcount: '410'
+ht-degree: 37%
 
 ---
 
@@ -37,17 +37,17 @@ Avant de commencer à configurer Dynamics 365, vérifiez que vous disposez des �
    `https://[server]:[port]/editor.html/content/we-finance/global/en/loan-landing-page.html`
 
 1. Faites défiler l’écran jusqu’au calculateur de prêt immobilier.
-1. Sélectionnez le panneau de la colonne de droite (calculatrice) et appuyez sur pour afficher le menu contextuel. Dans le menu contextuel, appuyez sur Configurer. La boîte de dialogue Modifier le conteneur AEM Forms s’affiche.
+1. Sélectionnez le panneau de la colonne de droite (calculatrice) et choisissez d’afficher le menu contextuel. Dans le menu contextuel, sélectionnez Configurer. La boîte de dialogue Modifier le conteneur AEM Forms s’affiche.
 
    ![calculatorconfigurgurepanel](assets/calculatorconfigurepanel.png)
 
-1. Dans la boîte de dialogue Modifier le conteneur d’AEM Forms, accédez au chemin d’accès à l’actif et sélectionnez le calculateur de prêt immobilier dans chemin suivant, puis appuyez sur **Confirmer** :
+1. Dans la boîte de dialogue Modifier le conteneur AEM Forms , parcourez le chemin d’accès à la ressource, sélectionnez le calculateur de prêt immobilier à l’emplacement suivant et sélectionnez **Confirmer**:
 
    formsanddocuments/We.Finance/MS Dynamics/
 
    ![selectassetpath](assets/selectassetpath.png)
 
-1. Appuyez sur **Terminé**.
+1. Sélectionnez **Terminé**.
 1. Publiez la page modifiée.
 
    >[!NOTE]
@@ -60,7 +60,7 @@ Avant de commencer à configurer Dynamics 365, vérifiez que vous disposez des �
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
 
-   1. Importez le package de solution dans une instance de Microsoft® Dynamics. Dans votre instance Microsoft® Dynamics, accédez à **Paramètres** > **Solutions**, puis appuyez sur **Importer**.
+   1. Importez le package de solution dans une instance de Microsoft® Dynamics. Dans votre instance Microsoft® Dynamics, accédez à **Paramètres** > **Solutions** puis sélectionnez **Importer**.
 
 1. Pour configurer les coordonnées de l’utilisateur utilisées dans le site de référence, importez le package Sarah Rose Contact.CSV dans votre instance Microsoft® Dynamics :
 
@@ -68,4 +68,4 @@ Avant de commencer à configurer Dynamics 365, vérifiez que vous disposez des �
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
-   1. Importez le package dans votre instance Microsoft® Dynamics. Dans votre instance Microsoft® Dynamics, accédez à **Ventes** > **Contacts**, puis appuyez sur **Importer les données**.
+   1. Importez le package dans votre instance Microsoft® Dynamics. Dans votre instance Microsoft® Dynamics, accédez à **Ventes** > **Contacts** puis sélectionnez **Importer des données**.

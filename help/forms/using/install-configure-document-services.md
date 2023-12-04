@@ -4,10 +4,10 @@ description: Installez les services de documents d’AEM Forms pour créer, ass
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 2ad9cea10bcd152f4d2d874553bdbd3133dbe847
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '5499'
-ht-degree: 76%
+ht-degree: 75%
 
 ---
 
@@ -365,11 +365,11 @@ Copiez la police Unicode vers l’un des répertoires suivants, en fonction de v
 Le module complémentaire AEM Forms est une application déployée sur AEM. Le package contient AEM Forms Document Services et d’autres fonctionnalités AEM Forms. Pour installer le package, procédez comme suit : 
 
 1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
-1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
+1. Sélectionner **[!UICONTROL Adobe Experience Manager]** disponibles dans le menu d’en-tête.
 1. Dans la section **[!UICONTROL Filtres]** :
    1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]**.
-   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Rechercher des téléchargements]** pour filtrer les résultats.
-1. Appuyez sur le nom de package applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les conditions du CLUF]**, puis appuyez sur **[!UICONTROL Télécharger]**.
+   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Rechercher des téléchargements]** pour filtrer les résultats.
+1. Sélectionnez le nom du package correspondant à votre système d’exploitation, puis sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur]**, puis sélectionnez **[!UICONTROL Télécharger]**.
 1. Ouvrez [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
 1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 
@@ -491,7 +491,7 @@ Trust Store Management vous permet d’importer, de modifier et de supprimer des
 
 1. Connectez-vous à une instance AEM Forms en tant qu’administrateur.
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Trust Store]**.
-1. Cliquez sur **[!UICONTROL Créer un Trust Store]**. Définissez le mot de passe, puis cliquez sur **[!UICONTROL Enregistrer]**.
+1. Cliquez sur **[!UICONTROL Créer un Trust Store]**. Définissez un mot de passe et sélectionnez **[!UICONTROL Enregistrer]**.
 
 ### Configurer des certificats pour l’extension et le service de chiffrement des Readers {#set-up-certificates-for-reader-extension-and-encryption-service}
 

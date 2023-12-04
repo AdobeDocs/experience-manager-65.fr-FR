@@ -7,10 +7,10 @@ topic-tags: hTML5_forms
 docset: aem65
 feature: Mobile Forms
 exl-id: 7c8d501f-c953-495e-8bac-1f66fd99c783
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 72%
+source-wordcount: '480'
+ht-degree: 68%
 
 ---
 
@@ -40,4 +40,4 @@ La cible clé pour les formulaires HTML5 est les périphériques tactiles. Par c
 
 #### Format RTF (Texte enrichi) {#rich-text-format}
 
-Vous pouvez convertir un champ de texte en champ de texte enrichi. Le champ de texte enrichi permet dʼajouter des options de formatage au champ de texte. Pour effectuer une conversion, ouvrez Forms Designer et cliquez sur le champ de texte dans **[!UICONTROL Vue de conception]**. Dans lʼonglet **[!UICONTROL Champ]**, sélectionnez **[!UICONTROL Texte enrichi]** dans la liste déroulante **[!UICONTROL Format du champ]**. Désormais, lorsque le formulaire XFA est rendu sous la forme d’un formulaire HTML5, le champ est rendu sous la forme d’un champ de texte enrichi. Cliquez sur ![Maximiser](assets/maximize_icon.svg) pour afficher des options de formatage supplémentaires.
+Vous pouvez convertir un champ de texte en champ de texte enrichi. Le champ de texte enrichi permet dʼajouter des options de formatage au champ de texte. Pour effectuer une conversion, ouvrez Forms Designer, puis sélectionnez le champ de texte dans la section **[!UICONTROL Vue de conception]**. Dans lʼonglet **[!UICONTROL Champ]**, sélectionnez **[!UICONTROL Texte enrichi]** dans la liste déroulante **[!UICONTROL Format du champ]**. Désormais, lorsque le formulaire XFA est rendu sous la forme d’un formulaire HTML5, le champ est rendu sous la forme d’un champ de texte enrichi. Sélectionner ![Maximiser](assets/maximize_icon.svg) pour afficher d’autres options de mise en forme.

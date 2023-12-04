@@ -11,10 +11,10 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4031'
-ht-degree: 47%
+source-wordcount: '4024'
+ht-degree: 46%
 
 ---
 
@@ -186,7 +186,7 @@ Vous pouvez être autorisé à ajouter, mettre à jour, supprimer ou enregistrer
 
 ### Enregistrez votre travail sans terminer la tâche {#save-your-work-without-completing-the-task}
 
-1. Sur n’importe quel onglet, appuyez sur **Enregistrer**.
+1. Dans n’importe quel onglet, sélectionnez **Enregistrer**.
 
    La boîte de dialogue Enregistrer en tant que brouillon s’affiche. Le nom par défaut du brouillon est le nom de la tâche du modèle de tâche.
 
@@ -199,7 +199,7 @@ Vous pouvez être autorisé à ajouter, mettre à jour, supprimer ou enregistrer
    >
    >Pour en savoir plus, consultez Enregistrer régulièrement le brouillon dans [Gestion des préférences](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
-1. Dans la boîte de dialogue Enregistrer comme brouillon, spécifiez un nom unique pour la tâche et appuyez sur **OK.**
+1. Dans la boîte de dialogue Enregistrer en tant que brouillon, spécifiez un nom unique pour la tâche et sélectionnez **OK**.
 
    ![saveasdraftdialog_name](assets/saveasdraftdialog_name.png)
 

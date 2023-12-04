@@ -1,7 +1,7 @@
 ---
 title: Personnaliser l’identité graphique
 seo-title: Branding Customization
-description: Vous pouvez personnaliser l’icône et le nom de l’application, les images de lancement et la page de connexion pour donner à l’application AEM Forms un aspect différent et spécifique de l’entreprise.
+description: Personnalisez l’icône de l’application, le nom de l’application, les images de lancement et la page de connexion afin de donner à l’application AEM Forms une apparence spécifique à l’entreprise.
 seo-description: Customize the application icon, application name, launch images, and login page to provide a distinct organization-specific look and feel to AEM Forms app.
 uuid: fece0fa8-c417-45eb-93f1-a91b49835fa0
 contentOwner: robhagat
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
 exl-id: 9333705b-9944-4a74-a30f-7d9ec85fd824
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '886'
-ht-degree: 100%
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+workflow-type: tm+mt
+source-wordcount: '890'
+ht-degree: 54%
 
 ---
 
@@ -32,7 +32,7 @@ Exécutez les étapes suivantes pour personnaliser l’icône par défaut et l�
 
 >[!NOTE]
 >
->Pour toutes les icônes et les images, utilisez le format PNG non entrelacé.
+>Pour toutes les icônes et images, utilisez le format PNG non entrelacé.
 
 ### Personnalisation de l’icône et des images de lancement {#to-customize-icon-and-launch-images}
 
@@ -45,17 +45,17 @@ Exécutez les étapes suivantes pour personnaliser l’icône par défaut et l�
    * Pour lʼorientation portrait : `Default-Portrait~ipad.png` et `Default-Portrait@2x~ipad.png`
    * Pour lʼorientation paysage : `Default-Landscape~ipad.png` et `Default-Landscape@2x~ipad.png`
 
-   Chargez-les sur le projet de capture pour remplacer les fichiers existants du projet.
+   Chargez-les dans le projet Capture pour remplacer les fichiers existants du projet.
 
    >[!NOTE]
    >
-   >Vérifiez que le nom et la résolution de votre image correspondent à l’image que vous remplacez dans le projet.
+   >Assurez-vous que le nom et la résolution de votre image correspondent à l’image que vous remplacez dans le projet.
 
-1. Générez et exécutez l’application AEM Forms sur un périphérique ou un simulateur iOS.
+1. Générez et exécutez l’application AEM Forms sur un appareil ou un simulateur iOS.
 
 #### Pour Android {#for-android}
 
-1. Nommez les fichiers d’icône de l’application en tant que :
+1. Nommez les fichiers d’icône de l’application comme suit :
 
    `ic_launcher.png`
 
@@ -69,13 +69,13 @@ Exécutez les étapes suivantes pour personnaliser l’icône par défaut et l�
 
    >[!NOTE]
    >
-   >Vérifiez que le nom et la résolution de votre image correspondent à l’image que vous remplacez dans le projet.
+   >Assurez-vous que le nom et la résolution de votre image correspondent à l’image que vous remplacez dans le projet.
 
-1. Régénérez l’application AEM Forms.
+1. Recréez l’application AEM Forms.
 
 ### Pour Windows {#for-windows}
 
-1. Remplacez les icônes dans le chemin d’accès :
+1. Remplacez les icônes du chemin d’accès :
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\res\icons\windows`
 
@@ -85,9 +85,9 @@ Exécutez les étapes suivantes pour personnaliser l’icône par défaut et l�
 
    >[!NOTE]
    >
-   >Vérifiez que le nom et la résolution de votre image correspondent à l’image que vous remplacez dans le projet.
+   >Assurez-vous que le nom et la résolution de votre image correspondent à l’image que vous remplacez dans le projet.
 
-1. Régénérez l’application AEM Forms.
+1. Recréez l’application AEM Forms.
 
 ## Personnalisation du nom de l’application {#customize-the-app-name}
 
@@ -98,39 +98,39 @@ Exécutez les étapes suivantes pour personnaliser l’icône par défaut et l�
 
    Mettez à jour la valeur de l’attribut `CFBundleDisplayName` avec un nom que vous souhaitez afficher pour l’application.
 
-1. Générez et exécutez l’application AEM Forms sur un périphérique ou un simulateur iOS.
+1. Générez et exécutez l’application AEM Forms sur un appareil ou un simulateur iOS.
 
    Pour en savoir plus sur la création de l’application pour iOS, consultez la section [Configurer le projet Xcode et créer l’application iOS](/help/forms/using/setup-xcode-project-build-installer.md).
 
 ### Pour Android {#for-android-1}
 
-1. Ouvrez le code XML suivant dans un fichier texte ou éditeur XML quelconque :
+1. Ouvrez le fichier XML suivant dans un éditeur de texte ou XML quelconque :
 
    `[User_Home]/Projects/[your-project]/src/android/res/values/strings.xml and android/res/values-en/strings.xml`
 
 1. Mettez à jour la valeur pour la clé `app_name`.
-1. Régénérez l’application AEM Forms.
+1. Recréez l’application AEM Forms.
 
-   Pour en savoir plus sur la création de l’application pour Android, consultez la section [Configuration du projet Eclipse et génération de l’application Android](/help/forms/using/setup-eclipse-project-build-installer.md).
+   Pour plus d’informations sur la création de l’application pour Android, voir [Configuration du projet Eclipse et création de l’application Android](/help/forms/using/setup-eclipse-project-build-installer.md).
 
 ### Pour Windows {#for-windows-1}
 
-1. Ouvrez le code XML suivant dans un éditeur de texte quelconque : 
+1. Ouvrez le fichier XML suivant dans n’importe quel éditeur de texte :
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\config.xml`
 
 1. Mettez à jour la valeur dans la balise `<name>...</name>`.
-1. Régénérez l’application AEM Forms.
+1. Recréez l’application AEM Forms.
 
-   Pour en savoir plus sur la création de l’application pour Windows, consultez la section [Configuration du projet Visual Studio et génération d’une application Windows](/help/forms/using/setup-visual-studio-project-build-installer.md).
+   Pour plus d’informations sur la création de l’application pour Windows, voir [Configuration du projet Visual Studio et création de l’application Windows](/help/forms/using/setup-visual-studio-project-build-installer.md).
 
 ## Personnalisation des images sur la page de connexion {#customizing-images-on-the-login-page}
 
-La page de connexion de l’application AEM Forms dispose d’un logo et d’images d’arrière-plan. Le logo est situé au-dessus de la boîte de dialogue de connexion, tandis que l’image d’arrière-plan se trouve en dessous de celle-ci. Effectuez la procédure suivante pour personnaliser l’image par défaut sur la page de connexion :
+La page de connexion de l’application AEM Forms dispose d’un logo et d’images d’arrière-plan. Le logo se trouve au-dessus de la boîte de dialogue de connexion et l’image d’arrière-plan se trouve sous la boîte de dialogue de connexion. Effectuez les étapes suivantes pour personnaliser l’image par défaut sur la page de connexion :
 
 **Avant de commencer**
 
-Vérifiez que vous disposez des images suivantes :
+Vérifiez que vous disposez des images suivantes :
 
 <table>
  <tbody>
@@ -141,34 +141,34 @@ Vérifiez que vous disposez des images suivantes :
   </tr>
   <tr>
    <td><p>Logo</p> </td>
-   <td><p>72 x 72 pixels</p> </td>
+   <td><p>72 x 72 pixels</p> </td>
    <td><p>LC-logo.png</p> </td>
   </tr>
   <tr>
    <td><p>Image d’arrière-plan (portrait)</p> </td>
-   <td><p>1280 x 989 pixels</p> </td>
+   <td><p>1 280 x 989 pixels</p> </td>
    <td><p>Landing_bg.jpeg</p> </td>
   </tr>
  </tbody>
 </table>
 
-**Personnalisation des images de la page de connexion à l’aide de Xcode**
+**Personnalisation des images sur la page de connexion à l’aide de Xcode**
 
 1. Ouvrez le projet `Capture.xcodeproj` dans Xcode.
 
 1. Accédez au dossier `www/wsmobile/images`. 
 1. Pour changer le logo, remplacez le fichier `LC-logo.png` par défaut par le fichier `LC-logo.png` personnalisé.
 1. Pour changer l’arrière-plan, remplacez le fichier par défaut `Landing_bg.jpeg` par le fichier personnalisé `Landing_bg.jpeg`.
-1. Générez et exécutez l’application AEM Forms sur un périphérique ou un simulateur iOS.
+1. Générez et exécutez l’application AEM Forms sur un appareil ou un simulateur iOS.
 
-### Personnalisation des images des pages de connexion à l’aide d’Eclipse {#to-customize-images-on-the-login-pages-using-eclipse}
+### Personnalisation des images sur les pages de connexion à l’aide d’Eclipse {#to-customize-images-on-the-login-pages-using-eclipse}
 
 1. Ouvrez le projet Android dans Eclipse.
 
 1. Accédez au dossier `assets/www/wsmobile/images`. 
 1. Pour changer le logo, remplacez le fichier `LC-logo.png` par défaut par le fichier `LC-logo.png` personnalisé.
 1. Pour changer l’arrière-plan, remplacez le fichier par défaut `Landing_bg.jpeg` par le fichier personnalisé `Landing_bg.jpeg`.
-1. Générez et exécutez l’application AEM Forms sur un périphérique Android.
+1. Créez et exécutez l’application AEM Forms sur un appareil Android.
 
 ### Personnalisation des images sur les pages de connexion à l’aide de Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio}
 
@@ -177,15 +177,15 @@ Vérifiez que vous disposez des images suivantes :
 1. Accédez au dossier `MWSWindows\www\wsmobile\images`. 
 1. Pour changer le logo, remplacez le fichier `LC-logo.png` par défaut par le fichier `LC-logo.png` personnalisé.
 1. Pour changer l’arrière-plan, remplacez le fichier par défaut `Landing_bg.jpeg` par le fichier personnalisé `Landing_bg.jpeg`.
-1. Générez et exécutez l’application AEM Forms sur un périphérique Windows.
+1. Générez et exécutez l’application AEM Forms sur un appareil Windows.
 
 ## Personnalisation du logo dans le menu de l’application {#customizing_images_on_the_login_page-1}
 
-Après vous être connecté à l’application AEM Forms et avoir appuyé sur le bouton de menu, vous verrez le logo au-dessus du menu. Effectuez les étapes suivantes pour personnaliser le logo par défaut :
+Une fois que vous êtes connecté à l’application AEM Forms et que vous avez sélectionné le bouton de menu, le logo s’affiche au-dessus du menu. Effectuez les étapes suivantes pour personnaliser le logo par défaut :
 
 **Avant de commencer**
 
-Vérifiez que vous disposez de l’image suivante :
+Vérifiez que vous disposez de l’image suivante :
 
 <table>
  <tbody>
@@ -196,27 +196,27 @@ Vérifiez que vous disposez de l’image suivante :
   </tr>
   <tr>
    <td><p>Logo</p> </td>
-   <td><p>72 x 72 pixels</p> </td>
+   <td><p>72 x 72 pixels</p> </td>
    <td><p>aem_icon.png</p> </td>
   </tr>
  </tbody>
 </table>
 
-**Personnalisation des images de la page de connexion à l’aide de Xcode**
+**Personnalisation des images sur la page de connexion à l’aide de Xcode**
 
 1. Ouvrez le projet `Capture.xcodeproj` dans Xcode.
 
 1. Accédez au dossier `www/wsmobile/images`. 
 1. Pour changer le logo, remplacez le fichier par défaut `aem_icon.png` par le fichier personnalisé `aem_icon.png`.
-1. Générez et exécutez l’application AEM Forms sur un périphérique ou un simulateur iOS.
+1. Générez et exécutez l’application AEM Forms sur un appareil ou un simulateur iOS.
 
-### Personnalisation des images des pages de connexion à l’aide d’Eclipse {#to-customize-images-on-the-login-pages-using-eclipse-1}
+### Personnalisation des images sur les pages de connexion à l’aide d’Eclipse {#to-customize-images-on-the-login-pages-using-eclipse-1}
 
 1. Ouvrez le projet Android dans Eclipse.
 
 1. Accédez au dossier `assets/www/wsmobile/images`. 
 1. Pour changer le logo, remplacez le fichier par défaut `aem_icon.png` par le fichier `aem_icon.png` personnalisé.
-1. Générez et exécutez l’application AEM Forms sur un périphérique Android.
+1. Créez et exécutez l’application AEM Forms sur un appareil Android.
 
 ### Personnalisation des images sur les pages de connexion à l’aide de Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio-1}
 
@@ -224,4 +224,4 @@ Vérifiez que vous disposez de l’image suivante :
 
 1. Accédez au dossier `MWSWindows\www\wsmobile\images`. 
 1. Pour changer le logo, remplacez le fichier par défaut `aem_icon.png` par le fichier personnalisé `aem_icon.png`.
-1. Générez et exécutez l’application AEM Forms sur un périphérique Windows.
+1. Générez et exécutez l’application AEM Forms sur un appareil Windows.

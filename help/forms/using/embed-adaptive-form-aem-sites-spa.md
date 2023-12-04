@@ -10,10 +10,10 @@ discoiquuid: a74ed6c1-3006-4baf-bd77-ad4045e23c22
 docset: aem65
 feature: Adaptive Forms
 exl-id: b549f176-409a-4d81-8c2b-73d0dd0c6649
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 92%
+source-wordcount: '1107'
+ht-degree: 85%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 92%
 
 ## Présentation {#overview}
 
-AEM Forms permet aux développeurs de formulaires d’incorporer facilement des formulaires adaptatifs et des communications interactives dans une application dʼune seule page (SPA) AEM Sites. Le formulaire adaptatif et la communication interactive incorporés fonctionnent parfaitement et les utilisateurs peuvent remplir et envoyer le formulaire sans quitter la page. Cela permet à l’utilisateur de rester dans le contexte des autres éléments de la page web et d’interagir simultanément avec le formulaire adaptatif ou la communication interactive.
+AEM Forms permet aux équipes de développement de formulaires d’incorporer facilement des formulaires adaptatifs et des communications interactives dans une application monopage AEM Sites. Le formulaire adaptatif et la communication interactive incorporés fonctionnent parfaitement et les utilisateurs peuvent remplir et envoyer le formulaire sans quitter la page. Cela permet à l’utilisateur de rester dans le contexte des autres éléments de la page web et d’interagir simultanément avec le formulaire adaptatif ou la communication interactive.
 
-L’application d’une seule page AEM Sites vous permet dʼajouter un formulaire adaptatif ou une communication interactive à l’aide du [Composant Conteneur SPA AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Il s’agit d’un composant AEM Forms pour les SPA AEM Sites que vous pouvez ajouter à votre page Sites.
+L’application monopage AEM Sites vous permet dʼajouter un formulaire adaptatif ou une communication interactive à l’aide du [Composant Conteneur d’applications monopages d’AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Il s’agit d’un composant AEM Forms pour les SPA AEM Sites que vous pouvez ajouter à votre page Sites.
 
 Pour plus d’informations sur l’incorporation d’un formulaire adaptatif dans une page AEM Sites non SPA, consultez la section [Incorporation d’un formulaire adaptatif ou d’une communication interactive dans une page AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md).
 
@@ -59,7 +59,7 @@ Pour incorporer un formulaire adaptatif ou une communication interactive à l’
 1. Ouvrez la page AEM Sites, en mode Édition, dans laquelle vous souhaitez incorporer un formulaire adaptatif ou une communication interactive.
 1. Insérez le composant **AEM Form pour SPA** à l’aide de l’une des options suivantes :
 
-   * Cliquez sur le conteneur de dispositions sur la page Sites, puis sur **+** et sélectionnez le composant **AEM Form pour SPA**.
+   * Sélectionnez le conteneur de mises en page sur la page Sites, puis sélectionnez **+** et sélectionnez la variable **Formulaire AEM pour SPA** composant.
 
    * Depuis le panneau Explorateur des composants, faites glisser et déposez le composant **AEM Form pour SPA** sur la page.
    * Recherchez un formulaire adaptatif ou une communication interactive dans lʼexplorateur de ressources et effectuez une opération de glisser-déposer sur la page Sites. Le formulaire est ainsi incorporé dans un composant Conteneur AEM Forms pour SPA.
@@ -68,7 +68,7 @@ Pour incorporer un formulaire adaptatif ou une communication interactive à l’
    >
    >Le rendu de plusieurs composants de conteneurs SPA AEM Forms sur une page nʼest pas pris en charge. Plusieurs conteneurs SPA AEM Forms peuvent être incorporés sur une page, mais un seul composant est rendu à la fois. Assurez-vous qu’un seul composant est visible sur une page pour éviter toute erreur.
 
-1. Cliquez sur le composant Conteneur SPA AEM Forms sur la page Sites, puis sur ![settings_icon](assets/settings_icon.png) dans la barre d’action. La boîte de dialogue **Modifier le conteneur SPA AEM Forms** s’affiche.
+1. Sélectionnez le composant AEM Forms SPA Container incorporé dans la page Sites, puis sélectionnez ![settings_icon](assets/settings_icon.png) dans la barre d’actions. La boîte de dialogue **Modifier le conteneur SPA AEM Forms** s’affiche.
 1. Dans la boîte de dialogue **Modifier le conteneur AEM Forms**, précisez ce qui suit :
 
    * **Type de ressource :** sélectionnez le type de ressource à incorporer. Vous pouvez choisir entre **formulaire adaptatif** et **communication interactive**.
@@ -78,7 +78,7 @@ Pour incorporer un formulaire adaptatif ou une communication interactive à l’
 
    * **Thème** : sélectionnez un thème qui définit le style des composants de votre formulaire adaptatif ou de votre communication interactive. Style comprend des propriétés d’aspect, comme le style de police, la couleur d’arrière-plan, les dimensions et l’alignement.
 
-1. Appuyez sur ![done_icon](assets/done_icon.png) pour enregistrer les paramètres. Le formulaire adaptatif ou la communication interactive est maintenant incorporé à la page.
+1. Sélectionner ![done_icon](assets/done_icon.png) pour enregistrer les paramètres. Le formulaire adaptatif ou la communication interactive est maintenant incorporé à la page.
 
 ## Publier un formulaire adaptatif et une communication interactive incorporés {#publish-embedded-adaptive-form-and-interactive-communication}
 
@@ -95,7 +95,7 @@ La page AEM Sites conserve une référence au formulaire adaptatif et à la com
 Pour modifier une configuration ou une propriété du formulaire adaptatif ou de la communication interactive incorporés, effectuez l’une des opérations suivantes.
 
 * Ouvrez le formulaire original dans les formulaires adaptatifs ou la communication interactive dans les éditeurs respectifs et modifiez-les.
-* Cliquez sur le formulaire adaptatif ou la communication interactive à partir de la page Sites en mode Modifier, puis sélectionnez **Modifier dans une nouvelle fenêtre**. Le formulaire d’origine s’ouvre en mode dʼédition.
+* Sélectionnez le formulaire adaptatif ou la communication interactive dans la page Sites en mode d’édition, puis sélectionnez **Modifier dans une nouvelle fenêtre**. Le formulaire d’origine s’ouvre en mode dʼédition.
 
 ## Éléments à prendre en compte et bonnes pratiques {#considerations-and-best-practices}
 

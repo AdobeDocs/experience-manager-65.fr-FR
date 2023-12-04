@@ -10,10 +10,10 @@ discoiquuid: fe59d260-d392-4d6f-bb7e-2f2a1d701f51
 docset: aem65
 feature: Interactive Communication
 exl-id: 0c0dc6a2-b889-4516-8e08-1e9d31be2cce
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 61%
+source-wordcount: '1494'
+ht-degree: 48%
 
 ---
 
@@ -51,15 +51,15 @@ Les actifs des conditions rendues en fonction des règles appliquées et des val
    * **[!UICONTROL Description]**: saisissez une description du fragment de document.
    * **[!UICONTROL Modèle de données de formulaire]** : éventuellement, sélectionnez le bouton radio Modèle de données de formulaire pour créer la condition en fonction d’un modèle de données de formulaire. Lorsque vous sélectionnez le bouton Modèle de données de formulaire, le champ **[!UICONTROL Modèle de données de formulaire]** s’affiche. Recherchez et sélectionnez un modèle de données de formulaire. Lors de la création de la condition d’une communication interactive, veillez à utiliser le même modèle de données que celui que vous avez l’intention d’utiliser dans la communication interactive. Pour plus d’informations sur le modèle de données de formulaire, consultez la section [Intégration de données](../../forms/using/data-integration.md).
 
-   * **[!UICONTROL Balises]**: si vous le souhaitez, vous pouvez saisir une valeur dans le champ de texte de la balise personnalisée et appuyer sur Entrée. Lorsque vous enregistrez cette condition, les balises nouvellement ajoutées sont créées.
+   * **[!UICONTROL Balises]**: éventuellement, pour créer une balise personnalisée, saisissez la valeur dans le champ de texte et sélectionnez Entrée. Lorsque vous enregistrez cette condition, les balises nouvellement ajoutées sont créées.
 
-1. Appuyez sur **[!UICONTROL Suivant]**.
+1. Sélectionnez **[!UICONTROL Suivant]**.
 
    La page Créer une condition apparaît.
 
    ![createcondition](assets/createcondition.png)
 
-1. Appuyez sur **[!UICONTROL Ajouter des actifs]**.
+1. Sélectionner **[!UICONTROL Ajouter des ressources]**.
 
    La page Sélectionner les actifs apparaît et affiche les textes, listes, conditions et images disponibles pour l’ajout dans la condition.
 
@@ -67,7 +67,7 @@ Les actifs des conditions rendues en fonction des règles appliquées et des val
    >
    >Seules les ressources nouvellement créées, sans base, et les ressources basées sur FDM (créées à l’aide du même FDM que la condition en cours de création) apparaissent dans la page Sélectionner les ressources.
 
-1. Appuyez sur les ressources appropriées pour les sélectionner à inclure dans la condition, puis appuyez sur **[!UICONTROL Terminé]**.
+1. Sélectionnez les ressources appropriées à sélectionner pour les inclure dans la condition, puis sélectionnez **[!UICONTROL Terminé]**.
 
    La page Créer une condition s’affiche et répertorie les ressources ajoutées.
 
@@ -77,11 +77,11 @@ Les actifs des conditions rendues en fonction des règles appliquées et des val
 
    ![createconditionscreenassetsaddedannotated](assets/createconditionscreenassetsaddedannotated.png)
 
-   **[A] Rejeter la modification.** Appuyez sur cette icône pour rejeter les modifications que vous avez apportées à l’actif et à la règle dans la condition.
-   **[B] Accepter la modification.** Appuyez sur cette icône pour accepter les modifications que vous avez apportées à l’actif et à la règle dans la condition.
-   **[C] Dupliquer la ressource.** Appuyez sur cette icône pour créer une copie de la ressource avec la règle appliquée, le cas échéant, dans la condition. Vous pouvez ensuite modifier la règle et la ressource pour la ressource dupliquée. La duplication d’une ressource s’avère utile pour créer des règles similaires afin d’afficher d’autres ressources en fonction d’un contexte particulier.
-   **[D] Afficher l’aperçu.** Appuyez sur cette icône pour afficher un aperçu de l’actif dans la page Créer/Modifier la condition.
-   **Réorganiser le « serveur ».** Appuyez et maintenez cette icône enfoncée pour glisser-déposer des actifs et les réorganiser dans une condition.
+   **[A] Rejeter la modification.** Sélectionnez cette icône pour rejeter les modifications que vous avez apportées à l’actif et à la règle dans la condition.
+   **[B] Accepter la modification.** Sélectionnez cette icône pour accepter les modifications que vous avez apportées à la ressource et à la règle dans la condition.
+   **[C] Dupliquer la ressource.** Sélectionnez cette icône pour créer une copie de la ressource avec la règle appliquée, le cas échéant, dans la condition. Vous pouvez ensuite modifier la règle et la ressource pour la ressource dupliquée. La duplication d’une ressource s’avère utile pour créer des règles similaires afin d’afficher d’autres ressources en fonction d’un contexte particulier.
+   **[D] Afficher l’aperçu.** Sélectionnez cette icône pour afficher un aperçu de la ressource dans la page Créer/Modifier la condition .
+   **Réorganiser le « serveur ».** Sélectionnez cette icône et maintenez-la enfoncée pour faire glisser des ressources afin de les réorganiser dans une condition.
 
    Vous pouvez sélectionner les options suivantes pour spécifier le comportement de la condition au moment de l’exécution :
 
@@ -89,7 +89,7 @@ Les actifs des conditions rendues en fonction des règles appliquées et des val
 
    * **Saut de page** : sélectionnez cette option (![saut](assets/break.png)) afin d’insérer un saut de page entre les ressources des conditions. Lorsque cette option n’est pas sélectionnée (![nobreak](assets/nobreak.png)), si une condition déborde sur la page suivante dans la version imprimée, la condition entière est décalée vers la page suivante au lieu de faire irruption dans la page entre les ressources de la condition.
 
-1. Appuyer **[!UICONTROL Créer une règle]** pour ajouter des règles afin d’afficher ou de masquer les ressources, selon les besoins. Pour utiliser des variables dans les règles, voir [création de variables](#variables). Pour plus d’informations, consultez la section [Ajouter des règles à la condition](#ruleeditor).
+1. Sélectionner **[!UICONTROL Créer une règle]** pour ajouter des règles afin d’afficher ou de masquer les ressources, selon les besoins. Pour utiliser des variables dans les règles, voir [création de variables](#variables). Pour plus d’informations, consultez la section [Ajouter des règles à la condition](#ruleeditor).
 
    Les règles créées apparaissent dans la colonne RULE de l’écran Créer une condition.
 
@@ -99,7 +99,7 @@ Les actifs des conditions rendues en fonction des règles appliquées et des val
    >
    >Vous pouvez insérer dans votre condition des actifs dans lesquels des règles ou des répétitions ont déjà été appliquées.
 
-1. Appuyez sur **[!UICONTROL Enregistrer]**.
+1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
    La condition est créée. Vous pouvez maintenant utiliser la condition comme bloc de création lors de la création d’une communication interactive.
 
@@ -113,9 +113,9 @@ Vous pouvez modifier une condition en procédant comme suit. Vous pouvez égalem
 
 1. Sélectionnez **[!UICONTROL Formulaires]** > **[!UICONTROL Fragments de document]**.
 1. Accédez à la condition et sélectionnez-la.
-1. Appuyez sur **[!UICONTROL Modifier]**.
+1. Sélectionnez **[!UICONTROL Modifier]**.
 1. Effectuez les modifications nécessaires dans la condition. Pour plus de détails sur les informations que vous pouvez modifier dans une condition, consultez la section [Créer une condition](#createcondition).
-1. Appuyez sur **[!UICONTROL Enregistrer]** puis sur **[!UICONTROL Fermer]**.
+1. Sélectionner **[!UICONTROL Enregistrer]** puis sélectionnez **[!UICONTROL Fermer]**.
 
 ## Création de règles dans une condition {#ruleeditor}
 
@@ -130,7 +130,7 @@ Vous pouvez modifier une condition en procédant comme suit. Vous pouvez égalem
 
 ### Créer une règle dans une condition {#create-rule-in-condition}
 
-1. Lors de la création ou de la modification d’une condition, cliquez sur l’icône ![ruleeditoricon](assets/ruleeditoricon.png) (Éditeur de règles) de la ressource correspondante.
+1. Lors de la création ou de la modification d’une condition, sélectionnez ![ruleeditoricon](assets/ruleeditoricon.png) Icône (Éditeur de règles) de la ressource appropriée.
 
    La boîte de dialogue Créer une règle s’affiche. Outre la chaîne, le nombre, l’expression mathématique et la date, les éléments suivants sont également disponibles dans l’éditeur de règles pour la création d’instructions des règles :
 
@@ -152,53 +152,53 @@ Vous pouvez modifier une condition en procédant comme suit. Vous pouvez égalem
 
    Règle pour l’affichage d’un actif lorsque le type de politique est standard
 
-   * Lors de la création ou de la modification d’une règle, vous pouvez également cliquer sur ![icon_resize](assets/icon_resize.png) (Redimensionner) pour développer la boîte de dialogue Créer une règle/Modifier la règle. La boîte de dialogue développée, pleine fenêtre, vous permet de créer des [variables](#variables) pour créer des règles. Appuyez à nouveau sur Redimensionner pour revenir à la boîte de dialogue Créer une règle.
+   * Lorsque vous créez ou modifiez une règle, vous pouvez également sélectionner ![icon_resize](assets/icon_resize.png) (Redimensionner) pour développer la boîte de dialogue Créer une règle/Modifier la règle . La boîte de dialogue développée, pleine fenêtre, vous permet de créer des [variables](#variables) pour créer des règles. Sélectionnez Redimensionner pour revenir à la boîte de dialogue Créer une règle standard.
 
    * Vous pouvez également créer plusieurs conditions dans une règle.
 
-1. Appuyez sur **[!UICONTROL Terminé]**.
+1. Sélectionnez **[!UICONTROL Terminé]**.
 
    La règle est appliquée à la ressource.
 
 ## Création et utilisation de variables dans une condition {#variables}
 
-Lorsque vous créez ou modifiez une règle dans une condition, vous pouvez cliquer sur ![icon_resize](assets/icon_resize.png) (Redimensionner) afin de développer la boîte de dialogue Créer une règle/Modifier la règle. La boîte de dialogue développée, pleine fenêtre, vous permet d’effectuer les opérations suivantes :
+Lorsque vous créez ou modifiez une règle dans une condition, vous pouvez sélectionner ![icon_resize](assets/icon_resize.png) (Redimensionner) pour développer la boîte de dialogue Créer une règle\Modifier la règle . La boîte de dialogue développée, pleine fenêtre, vous permet d’effectuer les opérations suivantes :
 
 * Créer et utiliser des variables dans la règle
 * Glisser-déposer les propriétés et les variables du modèle de données de formulaire dans la règle
 
-Appuyez à nouveau sur Redimensionner pour revenir à la boîte de dialogue Créer une règle\Modifier la règle .
+Sélectionnez Redimensionner pour revenir à la boîte de dialogue Créer une règle\Modifier la règle .
 
 ### Créer des variables {#create-variables}
 
-1. Lorsque vous créez ou modifiez une règle dans une condition, vous pouvez cliquer sur ![icon_resize](assets/icon_resize.png) (Redimensionner) pour développer la boîte de dialogue Créer une règle/Modifier la règle.
+1. Lorsque vous créez ou modifiez une règle dans une condition, vous pouvez sélectionner ![icon_resize](assets/icon_resize.png) (Redimensionner) pour développer la boîte de dialogue Créer une règle\Modifier la règle .
 
    La boîte de dialogue développée, pleine fenêtre, s’affiche.
 
    ![expandededitruledialog](assets/expandededitruledialog.png)
 
-1. Dans le volet de gauche, appuyez sur **[!UICONTROL Variables]**.
+1. Dans le volet de gauche, sélectionnez **[!UICONTROL Variables]**.
 
    Le volet Variables apparaît.
 
    ![expandededitrulevariables](assets/expandededitrulevariables.png)
 
-1. Appuyez sur **[!UICONTROL Créer]**.
+1. Sélectionnez **[!UICONTROL Créer]**.
 
    Le volet Créer des variables s’affiche.
 
-1. Saisissez les informations suivantes et cliquez sur **[!UICONTROL Créer]** :
+1. Saisissez les informations suivantes et sélectionnez **[!UICONTROL Créer]**:
 
    * **[!UICONTROL Nom]** : nom de la variable.
    * **[!UICONTROL Description]** : entrez éventuellement une description de la variable.
    * **[!UICONTROL Type]** : sélectionnez un type de variable : chaîne, nombre, valeur booléenne ou date.
    * **[!UICONTROL Autoriser les valeurs spécifiques uniquement]** : pour les variables de type Chaîne et Nombre, vous pouvez garantir que l’agent choisisse parmi un ensemble spécifique de valeurs pour un espace réservé dans l’interface utilisateur de l’agent. Pour spécifier l’ensemble de valeurs, sélectionnez cette option puis entrez des valeurs séparées par des virgules qui sont autorisées dans le champ **[!UICONTROL Valeurs]**.
 
-1. Appuyez sur **[!UICONTROL Créer]**.
+1. Sélectionnez **[!UICONTROL Créer]**.
 
    La variable est créée et répertoriée dans le volet Variables.
 
 1. Pour insérer une variable dans la règle, glissez-déposez-la dans un espace réservé à une option de la règle.
-1. Après avoir construit une règle valide, appuyez sur **[!UICONTROL Terminé]**.
+1. Après avoir créé une règle valide, sélectionnez **[!UICONTROL Terminé]**.
 
    Procédez à d’autres modifications, si nécessaire, dans la condition et enregistrez-la.

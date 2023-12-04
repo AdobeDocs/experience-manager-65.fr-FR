@@ -7,10 +7,10 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms
 exl-id: bd0589e2-b15a-4f0e-869c-2da4760b1ff4
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 50%
+source-wordcount: '781'
+ht-degree: 44%
 
 ---
 
@@ -33,14 +33,14 @@ Lisez la suite pour plus d’informations sur l’envoi asynchrone dans les form
 
 Pour configurer l’envoi asynchrone d’un formulaire adaptatif :
 
-1. En mode de création de formulaire adaptatif, sélectionnez l’objet Conteneur de formulaires et appuyez sur ![cmppr1](assets/cmppr1.png) pour ouvrir ses propriétés.
+1. En mode de création de formulaire adaptatif, sélectionnez l’objet Conteneur de formulaires et choisissez ![cmppr1](assets/cmppr1.png) pour ouvrir ses propriétés.
 1. Dans la section des propriétés **[!UICONTROL Envoi]**, activez **[!UICONTROL Utiliser l’envoi asynchrone]**.
 1. Dans le **[!UICONTROL Lors de l’envoi]** , sélectionnez l’une des options suivantes à exécuter lors de l’envoi réussi d’un formulaire.
 
    * **[!UICONTROL Rediriger vers l’URL]**: redirige vers l’URL ou la page spécifiée lors de l’envoi du formulaire. Vous pouvez spécifier une URL ou sélectionner le chemin d’accès à une page dans le champ **[!UICONTROL URL/Chemin d’accès restreint.]**
    * **[!UICONTROL Afficher le message]** : affiche un message lors de l’envoi d’un formulaire. Vous pouvez rédiger un message dans le champ de texte situé en dessous de l’option Afficher le message. Le champ de texte prend en charge la mise en forme de texte enrichi.
 
-1. Appuyez sur ![check-button1](assets/check-button1.png) pour enregistrer les propriétés.
+1. Sélectionner ![check-button1](assets/check-button1.png) pour enregistrer les propriétés.
 
 ## Fonctionnement de l’envoi asynchrone {#how-asynchronous-submission-works}
 
@@ -102,9 +102,9 @@ Les développeurs et les auteurs de formulaires peuvent écrire des règles, au 
 
 Effectuez les étapes suivantes pour écrire des règles dans l’éditeur de code afin de gérer les événements de réussite et d’erreur.
 
-1. Ouvrez le formulaire adaptatif en mode création, sélectionnez n’importe quel objet de formulaire et cliquez sur ![edit-rules1](assets/edit-rules1.png) pour ouvrir l’éditeur de règles.
-1. Sélectionnez **[!UICONTROL Formulaire]** dans l’arborescence des objets de formulaire et appuyez sur **[!UICONTROL Créer]**.
+1. Ouvrez le formulaire adaptatif en mode création, sélectionnez un objet de formulaire, puis sélectionnez ![edit-rules1](assets/edit-rules1.png) pour ouvrir l’éditeur de règles.
+1. Sélectionner **[!UICONTROL Formulaire]** dans l’arborescence des objets de formulaire et sélectionnez **[!UICONTROL Créer]**.
 1. Sélectionner **[!UICONTROL Éditeur de code]** dans la liste déroulante sélection de mode .
-1. Dans l’éditeur de code, appuyez sur **[!UICONTROL Modifier le code]**. Appuyer **[!UICONTROL Modifier]** dans la boîte de dialogue de confirmation.
+1. Dans l’éditeur de code, sélectionnez **[!UICONTROL Modifier le code]**. Sélectionner **[!UICONTROL Modifier]** dans la boîte de dialogue de confirmation.
 1. Choisir **[!UICONTROL Envoi réussi]** ou **[!UICONTROL Erreur lors de l’envoi]** de la **[!UICONTROL Événement]** menu déroulant.
-1. Créez une règle pour l’événement sélectionné et appuyez sur **[!UICONTROL Terminé]** pour enregistrer la règle.
+1. Créez une règle pour l’événement sélectionné et sélectionnez **[!UICONTROL Terminé]** pour enregistrer la règle.

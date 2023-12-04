@@ -9,10 +9,10 @@ topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3979'
-ht-degree: 55%
+source-wordcount: '3982'
+ht-degree: 49%
 
 ---
 
@@ -245,11 +245,11 @@ Pour créer une correspondance, vous devez d’abord avoir les éléments suivan
 
    ![create-letter](assets/create-letter.png)
 
-1. Choisissez une disposition en cliquant dessus, puis sélectionnez **Suivant**.
+1. Sélectionnez une mise en page en appuyant dessus, puis sélectionnez **Suivant**.
 
    ![Sélection de la mise en page pour créer une lettre](assets/selectlayout.png)
 
-1. Saisissez les propriétés de la correspondance, puis cliquez sur **Enregistrer :**
+1. Saisissez les propriétés de la correspondance et sélectionnez **Enregistrer :**
 
    * **Titre (facultatif) :** saisissez le titre de la lettre. Le titre n’a pas besoin d’être unique et peut contenir des caractères spéciaux et des caractères non anglais.
    * **Nom :** nom unique de la lettre. Deux lettres ne peuvent en aucun cas porter le même nom. Dans le champ Nom, vous pouvez saisir uniquement des caractères, des chiffres et des tirets de langue anglaise. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
@@ -260,21 +260,21 @@ Pour créer une correspondance, vous devez d’abord avoir les éléments suivan
 
    ![Propriétés de correspondance](assets/createcorrespondenceproperties.png)
 
-1. Le système affiche le message suivant : « Lettre créée avec succès » (dans le message d’avertissement) Cliquez sur **Ouvrir** afin de configurer les modules de données et les fragments de disposition à l’intérieur de celui-ci. Vous pouvez également cliquer sur **Terminé** pour revenir à la page précédente.
+1. Le système affiche le message suivant : « Lettre créée avec succès » (dans le message d’alerte) Sélectionnez **Ouvrir** pour configurer les modules de données et les fragments de mise en page. Ou sélectionnez **Terminé** pour revenir à la page précédente.
 
    ![Message d’avertissement : lettre créée avec succès](assets/createcorrespondencecreated.png)
 
-   **Suivant** : lorsque vous cliquez sur **Ouvrir**, Correspondence Management affiche une représentation de la disposition répertoriant tous les composants présents dans la disposition (XDP). Poursuivez en insérant le [Modules de données et fragments de mise en page et configuration](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
+   **Suivant**: lorsque vous sélectionnez **Ouvrir**, Correspondence Management affiche une représentation de la mise en page répertoriant tous les composants de la mise en page (XDP). Poursuivez en insérant le [Modules de données et fragments de mise en page et configuration](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
 
 ### Insérer des modules de données et des fragments de mise en page dans une lettre et les configurer {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 
-Une fois la correspondance créée, cliquez sur Ouvrir pour afficher dans Correspondence Management une représentation de la disposition répertoriant tous les sous-formulaires/zones cible de la disposition (XDP). Dans chacune des zones cible, vous pouvez choisir d’insérer un module de données ou un fragment de mise en page (puis des modules de données dans le fragment de mise en page).
+Après la création d’une correspondance, lorsque vous sélectionnez Ouvrir, Correspondence Management affiche une représentation de la mise en page répertoriant tous les sous-formulaires/zones cible de la mise en page (XDP). Dans chacune des zones cible, vous pouvez choisir d’insérer un module de données ou un fragment de mise en page (puis des modules de données dans le fragment de mise en page).
 
 >[!NOTE]
 >
->Vous pouvez également appuyer sur l’icône Modifier d’une lettre dans la page Lettres pour insérer des modules de données et des fragments de mise en page dans une lettre et les configurer.
+>Vous pouvez également sélectionner l’icône Modifier d’une lettre dans la page Lettres pour Insérer des modules de données et des fragments de mise en page dans une lettre et les configurer.
 
-1. Cliquez sur **Insérer** pour chacun des sous-formulaires et sélectionnez des modules de données ou un fragment de disposition à insérer dans chaque sous-formulaire.
+1. Sélectionner **Insérer** pour chacun des sous-formulaires et sélectionnez des modules de données ou un fragment de mise en page à insérer dans chacun des sous-formulaires.
 
    ![Insertion de modules de données et de fragments de mise en page](assets/insertdmandlf.png)
 
@@ -283,7 +283,7 @@ Une fois la correspondance créée, cliquez sur Ouvrir pour afficher dans Corres
    ![nestedlf](assets/nestedlf.png)
 
 1. Si vous insérez un fragment de mise en page, son nom apparaît dans le sous-formulaire. Et selon le fragment sélectionné, les sous-formulaires imbriqués apparaissent dans le sous-formulaire.
-1. Une fois les modules de données sélectionnés insérés dans la mise en page, vous pouvez appuyer sur Configurer le mode et définir les éléments suivants après avoir appuyé sur l’icône Modifier pour chacun des modules :
+1. Une fois les modules de données sélectionnés insérés dans la mise en page, vous pouvez sélectionner le mode de configuration et définir les éléments suivants après avoir appuyé sur l’icône Modifier pour chacun des modules :
 
    1. **Modifiable**: lorsque cette option est sélectionnée, le contenu peut être modifié dans l’interface utilisateur de création de correspondance. Marquez le contenu comme modifiable uniquement s’il nécessite que l’utilisateur chargé de la conception de parcours (un expert en assurance, par exemple) le modifie.
    1. **Obligatoire**: lorsque cette option est sélectionnée, le contenu est requis dans l’interface utilisateur de création de correspondance.
@@ -294,20 +294,20 @@ Une fois la correspondance créée, cliquez sur Ouvrir pour afficher dans Corres
 
    ![Modules de données et fragments de mise en page insérés](assets/insertdmandlf2.png)
 
-1. Pour modifier un module, appuyez sur l’icône Modifier située en regard de celui-ci. Après modification des modules, cliquez sur **Enregistrer**.
+1. Pour modifier un module, cliquez sur l’icône Modifier située en regard de celui-ci. Après avoir modifié les modules, sélectionnez **Enregistrer**.
 
    Dans cette page, vous pouvez également procéder comme suit pour les sous-formulaires :
 
-   1. **Activation du texte libre** : quand le texte libre est activé, un utilisateur peut ajouter du texte en ligne dans la lettre grâce à la vue CCR. Dans la vue CCR, une action &quot;T&quot; est activée pour les zones cible pour lesquelles l’option Autoriser le texte libre est activée. Lorsque l’utilisateur appuie dessus, il demande le nom et la description du texte, puis, en appuyant sur OK, il ouvre ce texte en mode d’édition où l’utilisateur peut ajouter du texte. Cela se comporte donc comme d’autres modules de texte.
+   1. **Activation du texte libre** : quand le texte libre est activé, un utilisateur peut ajouter du texte en ligne dans la lettre grâce à la vue CCR. Dans la vue CCR, une action &quot;T&quot; est activée pour les zones cible pour lesquelles l’option Autoriser le texte libre est activée. Lorsque l’utilisateur la sélectionne, il demande le nom et la description du texte, puis, en appuyant sur OK, il ouvre ce texte en mode d’édition où l’utilisateur peut ajouter du texte. Cela se comporte donc comme d’autres modules de texte.
    1. **Ordre de verrouillage**: verrouille l’ordre des sous-formulaires dans la lettre. L’auteur n’est pas autorisé à réorganiser les sous-formulaires/composants lors de la création de la lettre.
 
    Dans cette page, vous pouvez également procéder comme suit pour chaque actif des sous-formulaires :
 
    1. **Modifier l’ordre des ressources** : faites glisser et déposez une ressource contenant l’icône de réorganisation d’une ressource (![glisser-déposer](assets/dragndrop.png)).
-   1. **Suppression d’actifs** : appuyez sur l’icône de suppression en regard d’un actif pour le supprimer.
-   1. **Aperçu des ressources** : cliquez sur l’icône d’aperçu ( ![afficher lʼaperçu](assets/showpreview.png)) en regard d’une ressource.
+   1. **Suppression de ressources**: sélectionnez l’icône Supprimer en regard d’une ressource pour la supprimer.
+   1. **Aperçu des ressources**: sélectionnez l’icône d’aperçu ( ![showpreview](assets/showpreview.png)) en regard d’une ressource.
 
-1. Appuyez sur **Suivant**.
+1. Sélectionnez **Suivant**.
 1. La page de données détaille la façon dont les champs de données et les variables sont utilisés dans le modèle. Les données peuvent être associées à des sources de données comme un dictionnaire de données ou des entrées utilisateur. Chaque champ définit les propriétés à partir desquelles le dictionnaire de données mappe les données ou la légende affichée pour les champs de saisie de l’utilisateur.
 
    Liaison :
@@ -337,19 +337,19 @@ Une fois la correspondance créée, cliquez sur Ouvrir pour afficher dans Corres
 
    ![linkages](assets/linkages.png)
 
-1. Après avoir spécifié la liaison, cliquez sur **Suivant**. Correspondence Management affiche l’écran de pièces jointes.
+1. Après avoir spécifié la liaison, sélectionnez **Suivant**. Correspondence Management affiche l’écran de pièces jointes.
 
 ### Configurez les pièces jointes {#set-up-the-attachments}
 
 1. Sélectionnez **Ajouter un actif**.
-1. Dans l’écran de sélection des ressources, cliquez sur les resources à joindre à la lettre et cliquez sur **Terminé**. Les actifs doivent d’abord être chargés dans Actifs. Il est conseillé de joindre uniquement des documents PDF et Microsoft Office, mais vous pouvez également joindre des images. Pour en savoir plus sur le téléchargement des ressources dans la gestion des ressources numériques, consultez la section [Télécharger des ressources](/help/assets/manage-assets.md).
-1. Pour verrouiller l’ordre des ressources dans la liste et empêcher l’expert en sinistre de le modifier, cliquez sur **Verrouiller l’ordre**. Si vous ne sélectionnez pas cette option, l’utilisateur pourra modifier l’ordre des éléments de la liste.
+1. Dans l’écran Sélectionner une ressource, sélectionnez les ressources à joindre à la lettre, puis sélectionnez **Terminé**. Les actifs doivent d’abord être chargés dans Actifs. Il est conseillé de joindre uniquement des documents PDF et Microsoft Office, mais vous pouvez également joindre des images. Pour en savoir plus sur le téléchargement des ressources dans la gestion des ressources numériques, consultez la section [Télécharger des ressources](/help/assets/manage-assets.md).
+1. Pour verrouiller l’ordre des actifs dans la liste de sorte que l’expert en assurance ne puisse pas modifier l’ordre, sélectionnez **Ordre de verrouillage**. Si vous ne sélectionnez pas cette option, l’utilisateur pourra modifier l’ordre des éléments de la liste.
 1. Pour modifier l’ordre des ressources, faites glisser et déposez une ressource contenant l’icône de réorganisation d’une ressource (![dragndrop](assets/dragndrop.png)).
-1. Cliquez sur **Modifier** en regard d’une pièce jointe et indiquez que celle-ci est obligatoire si vous souhaitez que l’auteur ne puisse pas la supprimer. Indiquez qu’une pièce jointe est sélectionnée si vous souhaitez qu’elle soit présélectionnée dans l’interface CCR.
+1. Sélectionner **Modifier** devant une pièce jointe et indiquez qu’une pièce jointe est obligatoire si vous ne souhaitez pas que l’auteur puisse la supprimer. Indiquez qu’une pièce jointe est sélectionnée si vous souhaitez qu’elle soit présélectionnée dans l’interface CCR.
 1. Sélectionnez **Accès à la bibliothèque** pour donner accès à la bibliothèque. Si l’accès à la bibliothèque est activé, l’utilisateur peut accéder à la bibliothèque de contenu lors de la création d’une lettre et insérer des pièces jointes.
 1. Sélectionnez **Configuration de pièces jointes** et spécifiez le nombre maximal de pièces jointes.
 
-1. Appuyez sur **Enregistrer**. Votre correspondance est créée et répertoriée dans la page Lettres.
+1. Sélectionnez **Enregistrer**. Votre correspondance est créée et répertoriée dans la page Lettres.
 
 Après la création d’un modèle de lettre dans Correspondence Management, l’utilisateur final/agent/expert en sinistre peut ouvrir la lettre dans l’interface utilisateur CCR et créer une correspondance en saisissant des données, en configurant le contenu et en gérant les pièces jointes. Pour en savoir plus, consultez la section [Créer une correspondance](/help/forms/using/create-correspondence.md).
 
@@ -412,7 +412,7 @@ Les valeurs suivantes du tableau
    <td>Oui</td> 
    <td>Oui</td> 
    <td>Oui<br /> </td> 
-   <td>N/A</td> 
+   <td>S/O</td> 
    <td>N/A</td> 
   </tr> 
   <tr> 
@@ -421,7 +421,7 @@ Les valeurs suivantes du tableau
    <td>Non</td> 
    <td>Oui</td> 
    <td>Oui</td> 
-   <td>Oui<br />. </td> 
+   <td>Oui<br /> </td> 
    <td>N/A</td> 
    <td>N/A<br /> </td> 
   </tr> 
@@ -473,7 +473,7 @@ Les valeurs suivantes du tableau
 Vous pouvez utiliser un modèle de lettre existant pour créer rapidement un modèle de lettre avec des propriétés, du contenu et des ressources héritées similaires, tels que des fragments de document et un dictionnaire de données. Pour ce faire, copiez et collez une lettre.
 
 1. Dans la page Lettres, sélectionnez une ou plusieurs lettres. L’interface utilisateur affiche l’icône Copier.
-1. Appuyez sur Copier. L’interface utilisateur affiche l’icône Coller. Vous pouvez également choisir d’accéder à un dossier avant de le coller. Différents dossiers peuvent contenir des ressources portant le même nom. Pour plus d’informations sur les dossiers, voir [Dossiers et organisation des actifs](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
-1. Appuyez sur Coller. La boîte de dialogue Coller s’affiche. Si vous copiez et collez les lettres au même endroit, le système attribue automatiquement des noms et des titres aux nouvelles copies des lettres, mais vous pouvez modifier les titres et les noms des lettres.
+1. Sélectionnez Copier. L’interface utilisateur affiche l’icône Coller. Vous pouvez également choisir d’accéder à un dossier avant de le coller. Différents dossiers peuvent contenir des ressources portant le même nom. Pour plus d’informations sur les dossiers, voir [Dossiers et organisation des actifs](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
+1. Sélectionnez Coller. La boîte de dialogue Coller s’affiche. Si vous copiez et collez les lettres au même endroit, le système attribue automatiquement des noms et des titres aux nouvelles copies des lettres, mais vous pouvez modifier les titres et les noms des lettres.
 1. Si nécessaire, modifiez le titre et le nom sous lesquels vous souhaitez enregistrer la copie de la lettre.
-1. Appuyez sur Coller. La copie de la lettre est créée. Vous pouvez désormais apporter les modifications requises à la lettre que vous venez de créer.
+1. Sélectionnez Coller. La copie de la lettre est créée. Vous pouvez désormais apporter les modifications requises à la lettre que vous venez de créer.

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 docset: aem65
 exl-id: d5970f90-2899-43a5-a3a0-61a2c844d919
-source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 40%
+source-wordcount: '235'
+ht-degree: 31%
 
 ---
 
@@ -30,7 +30,7 @@ Pour lancer un processus à partir de l’application Forms Adobe Experience Man
 1. Pour afficher les points de départ disponibles dans l’application AEM Forms, accédez à [Écran d’accueil](../../forms/using/home-screen.md).
 1. Sur l’écran d’**[!UICONTROL Accueil]**, la liste **[!UICONTROL Tous les formulaires]** s’affiche par défaut.
 
-   Le point de départ est associé à un formulaire. Appuyez sur le formulaire associé au point de départ dans la liste pour l’ouvrir.
+   Le point de départ est associé à un formulaire. Sélectionnez le formulaire associé au point de départ dans la liste pour l’ouvrir.
 
    Le formulaire associé au point de départ s’ouvre.
 
@@ -38,7 +38,7 @@ Pour lancer un processus à partir de l’application Forms Adobe Experience Man
 
    Vous pouvez ajouter des annotations à cette tâche à l’aide du bouton de la [pièce jointe](../../forms/using/add-attachments.md).
 
-1. Une fois que vous avez remplir le formulaire, appuyez sur le bouton **[!UICONTROL Envoyer.]**
+1. Une fois que vous avez rempli le formulaire, sélectionnez le **[!UICONTROL Envoyer]** bouton .
 
 Si l’application est hors ligne, le formulaire et ses données sont enregistrés dans le dossier de boîte d’envoi.
 

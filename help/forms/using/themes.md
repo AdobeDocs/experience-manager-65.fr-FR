@@ -7,10 +7,10 @@ content-strategy: max-2018
 docset: aem65
 feature: Adaptive Forms
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '6106'
-ht-degree: 82%
+source-wordcount: '6084'
+ht-degree: 81%
 
 ---
 
@@ -228,7 +228,7 @@ Lorsque vous mettez en forme un champ, tous les champs tels que l’âge, le nom
 
   En outre, dans la barre latérale, vous verrez une flèche dans la partie inférieure. Lorsque vous cliquez sur la flèche, vous bénéficiez de deux options supplémentaires : **Simuler la réussite** et **Simuler une erreur.** Ces options, ainsi que les options décrites ci-dessus, sont expliquées en détails [ci-dessous](../../forms/using/themes.md#using-rail).
 
-[![Editeur de thème où Rampe et Zone de travail sont mis en surbrillance.](assets/themes.png)](assets/themes-1.png) **A.** Barre latérale **B.** Zone de travail
+[![Éditeur de thème avec le rail et la zone de travail en surbrillance.](assets/themes.png)](assets/themes-1.png) **A.** Barre latérale **B.** Zone de travail
 
 ### Mise en forme des composants {#styling-components}
 
@@ -364,7 +364,7 @@ Lorsque vous sélectionnez un composant dans la zone de travail, la barre d’ou
 * **Widget de zone numérique** : vous permet de sélectionner le composant pour personnaliser son aspect dans la barre latérale.
 * **Widget de champ** : vous permet de sélectionner le composant générique pour la mise en forme. Dans cet exemple, tous les composants de saisie de texte (zone de texte/zone numérique/exécution numérique pas à pas/saisie de date) sont sélectionnés pour la mise en forme.
 
-* ![field-level](assets/field-level.png) : vous permet de basculer vers un composant générique pour le mettre en forme. Si vous sélectionnez une zone numérique et appuyez sur cette icône, le composant de champ est sélectionné. Si vous sélectionnez le composant de champ et appuyez sur cette icône, le panneau est sélectionné. Si vous continuez à appuyer sur cette icône pour la sélection, vous finissez par sélectionner le style de la mise en forme.
+* ![field-level](assets/field-level.png) : vous permet de basculer vers un composant générique pour le mettre en forme. Si vous sélectionnez une zone numérique et cliquez sur cette icône, le composant de champ est sélectionné. Si vous sélectionnez un composant de champ et que vous sélectionnez cette icône, le panneau est sélectionné. Si vous continuez à appuyer sur cette icône pour la sélection, vous finissez par sélectionner le style de la mise en forme.
 
 >[!NOTE]
 >
@@ -452,7 +452,7 @@ Effectuez les étapes suivantes pour personnaliser la mise en forme d’un compo
 1. Lorsque vous sélectionnez la zone numérique, vous pouvez afficher la barre d’outils des composants avec trois options :
 
    * **Widget de zone numérique**
-   * **Widget de champ** ![field-level](assets/field-level.png)
+   * **Widget de champ** ![champ-level](assets/field-level.png)
 
 1. Sélectionnez **Widget de zone numérique**.
 1. Le titre de la barre latérale passe à Widget de zone numérique et affiche des options pour personnaliser son aspect.
@@ -591,7 +591,7 @@ Pour copier un thème, procédez comme suit :
 
 1. Dans l’instance de création, accédez à **Adobe Experience Manager > Formulaires > Thèmes**.
 1. Ouvrez le dossier de la bibliothèque des thèmes.
-1. Dans le dossier de la bibliothèque de thèmes, placez le pointeur sur le thème prêt à l’emploi correspondant, puis appuyez sur **Copier**.
+1. Dans le dossier de la bibliothèque de thèmes, placez le pointeur sur le thème prêt à l’emploi correspondant, puis sélectionnez **Copier**.
 1. Collez le thème copié en dehors du dossier de la bibliothèque de thèmes.
 1. Personnalisez le thème copié.
 

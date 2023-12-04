@@ -4,10 +4,10 @@ description: Consultez la présentation du site de référence We.Gov afin de co
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 57b5ce89-6b01-4087-a485-6d9696f06378
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 24%
+source-wordcount: '842'
+ht-degree: 22%
 
 ---
 
@@ -39,7 +39,7 @@ En vertu de la loi sur l’accès à l’information, Sarah demande une copie de
 
 ### Démonstration {#see-it-yourself}
 
-Dans votre navigateur, ouvrez `https://<hostname>:<PublishPort>/wegov`. Sur le site We.Gov, appuyez sur Applications> Toutes les applications. Dans la page Toutes les applications, appuyez sur Appliquer sous Application dans le cadre de la loi sur l’accès à l’information.
+Dans votre navigateur, ouvrez `https://<hostname>:<PublishPort>/wegov`. Sur le site We.Gov, sélectionnez Applications > Toutes les applications. Dans la page Toutes les applications, sélectionnez Demander sous Demande d’accès à l’information (FOIA Request).
 
 ## Sarah commence sa demande d’informations dans le cadre de la loi sur l’accès à l’information {#sarah-starts-her-application-for-information-under-foia}
 
@@ -54,7 +54,7 @@ Sarah clique sur **Appliquer** et sur la page Formulaire de demande dans le cadr
 
 Demande de copie des registres des cas de l’Administration pour les enfants et les familles pour les années 2013 à 2016
 
-Sarah peut appuyer à tout moment **Enregistrer** pour enregistrer un brouillon du formulaire et y revenir ultérieurement pour remplir le formulaire et l’envoyer. Sarah envoie le formulaire.
+À tout moment, Sarah peut sélectionner **Enregistrer** pour enregistrer un brouillon du formulaire et y revenir ultérieurement pour remplir le formulaire et l’envoyer. Sarah envoie le formulaire.
 
 >[!NOTE]
 >

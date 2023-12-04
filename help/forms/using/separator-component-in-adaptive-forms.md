@@ -6,10 +6,10 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 11cbf865-c8e2-4833-b0b8-a3cb5e42f5cd
-source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 35%
+source-wordcount: '361'
+ht-degree: 32%
 
 ---
 
@@ -30,7 +30,7 @@ Vous pouvez utiliser le mode Mise en page pour définir le nombre de colonnes su
 
 Pour spécifier les propriétés d’un composant de séparateur :
 
-1. Sélectionnez un composant séparateur et appuyez sur ![cmppr](assets/cmppr.png). Les propriétés s’ouvrent dans la barre latérale.
+1. Sélectionnez un composant de séparateur et sélectionnez ![cmppr](assets/cmppr.png). Les propriétés s’ouvrent dans la barre latérale.
 1. Cliquez sur un onglet dans la section Propriétés CSS intégrées afin de spécifier les propriétés CSS. Par exemple : a. Dans l’onglet Champ, cliquez sur **Ajouter un élément**. Une ligne avec deux champs est ajoutée.
 1. Dans le premier champ de gauche, spécifiez une propriété CSS3 à appliquer. Par exemple : **border**. Vous pouvez également sélectionner une propriété en cliquant sur la flèche vers le bas. La liste déroulante n’est pas exhaustive et vous pouvez spécifier n’importe quel nom de propriété CSS3 prise en charge dans ce champ.
 1. Dans le champ adjacent, spécifiez une valeur valide pour la propriété CSS3 spécifiée. Par exemple : **Noir solide 3 px**.

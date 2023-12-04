@@ -11,10 +11,10 @@ discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2608'
-ht-degree: 84%
+source-wordcount: '2621'
+ht-degree: 81%
 
 ---
 
@@ -28,13 +28,13 @@ Lors de la création d’une communication interactive, vous pouvez ajouter des 
 
 Pour ajouter et configurer un graphique dans une communication interactive, procédez comme suit :
 
-1. Cliquez sur **Composants** dans la sidekick de la communication interactive.
+1. Sélectionner **Composants** à partir du sidekick de la communication interactive.
 1. Faites glisser, puis déposez le composant de **Graphique** sur l’un des composants suivants :
 
    * Canal d’impression : zone cible et champ Image
    * Canal web : panneau ou zone cible
 
-1. Cliquez sur le composant de graphique dans l’éditeur de communication interactive et sélectionnez **[!UICONTROL Configurer (]** ![configure_icon](assets/configure_icon.png)) dans la barre d’outils Composant.
+1. Sélectionnez le composant de graphique dans l’éditeur de communication interactive, puis sélectionnez **[!UICONTROL Configurer (]** ![configure_icon](assets/configure_icon.png)) dans la barre d’outils Composant.
 
    Les propriétés du graphique s’affichent dans le volet gauche.
 
@@ -47,13 +47,13 @@ Pour ajouter et configurer un graphique dans une communication interactive, proc
    Propriétés de base d’un graphique en ligne dans le canal web
 
 1. Configurez les [propriétés du graphique](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) selon le type de canal.
-1. (Canal d’impression uniquement) Dans les **[!UICONTROL Paramètres d’agent]**, indiquez si l’utilisation de ce graphique est obligatoire pour l’agent. Si l’option **[!UICONTROL L’utilisation de ce graphique est obligatoire pour l’agent]** n’est pas sélectionnée, l’agent peut cliquer sur l’icône du graphique représentant un œil dans l’onglet **[!UICONTROL Contenu]** de l’interface utilisateur de l’agent pour afficher/masquer le graphique.
+1. (Canal d’impression uniquement) Dans les **[!UICONTROL Paramètres d’agent]**, indiquez si l’utilisation de ce graphique est obligatoire pour l’agent. Si i **[!UICONTROL Il est obligatoire que l’agent utilise ce graphique]** n’est pas sélectionnée, l’agent peut sélectionner l’icône représentant un oeil pour le graphique dans la **[!UICONTROL Contenu]** de l’interface utilisateur de l’agent pour afficher ou masquer le graphique.
 
    ![chart_agentproperties](assets/chart_agentproperties.png)
 
-1. Cliquez sur ![done_icon](assets/done_icon.png) pour enregistrer les propriétés du graphique.
+1. Sélectionner ![done_icon](assets/done_icon.png) pour enregistrer les propriétés du graphique.
 
-   Cliquez sur **[!UICONTROL Prévisualisation]** pour afficher l’aspect et les données associées au graphique. Cliquez sur **[!UICONTROL Modifier]** pour reconfigurer les propriétés du graphique.
+   Sélectionner **[!UICONTROL Aperçu]** pour afficher l’aspect et les données associées au graphique. Sélectionner **[!UICONTROL Modifier]** pour reconfigurer les propriétés du graphique.
 
 ## Configurer les propriétés du graphique {#configure-chart-properties}
 

@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: ad71b423-02e1-4476-9c7c-f832cea6b0a6
 docset: aem65
 exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 62%
+source-wordcount: '744'
+ht-degree: 60%
 
 ---
 
@@ -32,11 +32,11 @@ La fonctionnalité de brouillons est activée prête à l’emploi. Lorsqu’un 
 Effectuez les étapes suivantes pour ajouter et configurer un composant Drafts &amp; Submissions :
 
 1. Faites glisser et déposez le **Brouillons et envois** sous la catégorie Document Services dans l’explorateur de composants sur votre page.
-1. Cliquez sur le composant, puis sur ![settings_icon](assets/settings_icon.png) pour ouvrir la boîte de dialogue Modifier du composant.
+1. Sélectionnez le composant, puis sélectionnez ![settings_icon](assets/settings_icon.png) pour ouvrir la boîte de dialogue Modifier du composant.
 
    ![Composant Drafts &amp; Submissions](assets/drafts-submissions-edit.png)
 
-1. Dans la boîte de dialogue Modifier, spécifiez les détails suivants et appuyez sur **Terminé** pour enregistrer les paramètres.
+1. Dans la boîte de dialogue Modifier, spécifiez les détails suivants et sélectionnez **Terminé** pour enregistrer les paramètres.
 
 <table>
  <tbody>

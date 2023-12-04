@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 61%
+source-wordcount: '1558'
+ht-degree: 56%
 
 ---
 
@@ -84,11 +84,11 @@ Outre le serveur JBoss®, vous pouvez ajouter l’argument jvm -Dabtesting.enabl
 
 AEM vous permet de créer une audience et de l’utiliser pour un test A/B. L’audience que vous créez dans AEM est disponible dans AEM Forms. Pour créer des audiences dans AEM, procédez comme suit :
 
-1. Dans l’instance d’auteur, appuyez sur **Adobe Experience Manager** > **Personnalisation** > **Publics**.
+1. Dans l’instance de création, sélectionnez **Adobe Experience Manager** > **Personnalisation** > **Audiences**.
 
-1. Dans la page Publics, appuyez sur **Créer un public > Créer le public cible**.
+1. Dans la page Audiences, sélectionnez **Créer une audience > Créer une audience cible**.
 1. Dans la boîte de dialogue Configuration d’Adobe Target, sélectionnez une configuration Cible et cliquez sur **Ok**.
-1. Sur la page Créer une audience, créez des règles. Les règles vous permettent de catégoriser l’audience. Par exemple, vous souhaitez catégoriser les audiences en fonction du système d’exploitation. Votre audience A provient de Windows et l’audience B de Linux®.
+1. Sur la page Créer une audience, créez des règles. Les règles vous permettent de catégoriser l’audience. Par exemple, vous souhaitez catégoriser les audiences en fonction du système d’exploitation. Votre audience A provient de Windows et l’audience B de Linux®.
 
    1. Pour catégoriser une audience en fonction de Windows, dans la #1 de règle, sélectionnez le **SE** type d’attribut. Dans la liste déroulante, sélectionnez **Windows.**
 
@@ -98,7 +98,7 @@ AEM vous permet de créer une audience et de l’utiliser pour un test A/B. L’
 
 Vous pouvez sélectionner l’audience lorsque vous configurez le test A/B d’un formulaire, comme illustré ci-dessous.
 
-## Créer un test A/B pour un formulaire adaptatif {#create-a-b-test}
+## Création d’un test A/B pour un formulaire adaptatif {#create-a-b-test}
 
 1. Accédez à **Formulaires et Documents** à l’adresse https://&lt;*nom de lʼhôte*>:&lt;*port*>/aem/forms.html/content/dam/formsanddocuments.
 
@@ -144,7 +144,7 @@ Pour mettre à jour le test A/B :
 
 ## Afficher et analyser le rapport de test A/B {#view-and-analyze-a-b-test-report}
 
-Une fois que vous avez activé l’exécution du test A/B pendant la période souhaitée, vous pouvez générer un rapport et contrôler quelle expérience a obtenu la meilleure conversion. Vous pouvez déclarer gagnante l’expérience la plus performante ou choisir d’exécuter un autre test A/B.
+Une fois que vous avez activé l’exécution du test A/B pendant la période souhaitée, vous pouvez générer un rapport et contrôler quelle expérience a obtenu la meilleure conversion. Vous pouvez désigner comme gagnante l’expérience la plus performante ou choisir d’exécuter un autre test A/B.
 
 Pour afficher et analyser le rapport de test A/B :
 

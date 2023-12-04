@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2206'
-ht-degree: 98%
+source-wordcount: '2136'
+ht-degree: 96%
 
 ---
 
@@ -81,7 +81,7 @@ Pour créer une communication interactive à partir d’enregistrements sauvegar
 
 1. Créez un [Dossier de contrôle](/help/forms/using/creating-configure-watched-folder.md) et configurez-le pour quʼil utilise l’API Batch :
    1. Connectez-vous à votre instance d’auteur AEM Forms.
-   1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Configurer le dossier de contrôle]**. Appuyez sur **[!UICONTROL Nouveau]**.
+   1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Configurer le dossier de contrôle]**. Sélectionnez **[!UICONTROL Nouveau]**.
    1. Spécifiez le **[!UICONTROL Nom]** et le **[!UICONTROL Chemin dʼaccès]** physique du dossier. Par exemple, `c:\batchprocessing`.
    1. Sélectionnez lʼoption **[!UICONTROL Service]** dans le champ **[!UICONTROL Traiter le fichier avec]**.
    1. Sélectionnez le service **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** dans le champ **[!UICONTROL Nom du service]**.
@@ -97,7 +97,7 @@ Pour créer une communication interactive à partir d’enregistrements sauvegar
       | batchType | Chaîne | Définissez la valeur sur PRINT, WEB ou WEB_AND_PRINT. La valeur par défaut est WEB_AND_PRINT. |
       | paramètres régionaux | Chaîne | Spécifiez les paramètres régionaux de la communication interactive de sortie. Le service prêt à l’emploi n’utilise pas l’option des paramètres régionaux, mais vous pouvez créer un service personnalisé pour générer des communications interactives localisées. La valeur par défaut est en_US. |
 
-   1. Appuyez sur **[!UICONTROL Créer]** Le dossier de contrôle est alors créé.
+   1. Sélectionner **[!UICONTROL Créer]** Le dossier de contrôle est alors créé.
 1. Utilisez le dossier de contrôle pour générer une communication interactive :
    1. Ouvrez le dossier de contrôle. Accédez au dossier d’entrée.
    1. Créez un dossier dans le dossier d’entrée et placez le fichier JSON dans le dossier nouvellement créé.
@@ -113,9 +113,9 @@ Vous combinez des données (enregistrements) enregistrées dans une source de do
 
 1. Configurer le modèle de données de formulaire du modèle
    1. Ouvrez le modèle de données de formulaire associé au modèle de communication interactive.
-   1. Sélectionnez l’OBJET DE MODÈLE DE NIVEAU SUPÉRIEUR, puis cliquez sur Modifier les propriétés.
+   1. Sélectionnez l’OBJET DE MODÈLE DE NIVEAU SUPÉRIEUR, puis sélectionnez Modifier les propriétés.
    1. Sélectionnez votre service de récupération ou dʼobtention dans le champ Service de lecture du volet Modifier les propriétés.
-   1. Cliquez sur l’icône en forme de crayon de l’argument de service de lecture pour lier l’argument à un attribut de requête et spécifier la valeur de liaison. Elle lie l’argument de service à la valeur d’attribut de liaison ou littérale spécifiée, qui est transmise au service en tant qu’argument pour extraire les détails associés à la valeur spécifiée de la source de données.
+   1. Sélectionnez l’icône en forme de crayon de l’argument de service de lecture pour lier l’argument à un attribut de requête et spécifier la valeur de liaison. Elle lie l’argument de service à la valeur d’attribut de liaison ou littérale spécifiée, qui est transmise au service en tant qu’argument pour extraire les détails associés à la valeur spécifiée de la source de données.
 
       <br>
         Dans cet exemple, l’argument id prendra la valeur de l’attribut id du profil utilisateur et le transmettra en tant qu’argument au service de lecture. Il lira et renverra les valeurs des propriétés associées à partir de l’objet de modèle de données de l’employé pour l’attribut id spécifié. Ainsi, si vous spécifiez 00250 dans le champ id du formulaire, le service de lecture lira les détails de l’employé avec l’ID d’employé 00250.
@@ -143,7 +143,7 @@ Vous combinez des données (enregistrements) enregistrées dans une source de do
 
 1. Créer et configurer un [Dossier de contrôle](/help/forms/using/creating-configure-watched-folder.md) pour quʼil utilise le service API Batch
    1. Connectez-vous à votre instance d’auteur AEM Forms.
-   1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Configurer le dossier de contrôle]**. Appuyez sur **[!UICONTROL Nouveau]**.
+   1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Configurer le dossier de contrôle]**. Sélectionnez **[!UICONTROL Nouveau]**.
    1. Spécifiez le **[!UICONTROL Nom]** et le **[!UICONTROL Chemin dʼaccès]** physique du dossier. Par exemple, `c:\batchprocessing`.
    1. Sélectionnez lʼoption **[!UICONTROL Service]** dans le champ **[!UICONTROL Traiter le fichier avec]**.
    1. Sélectionnez le service **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** dans le champ **[!UICONTROL Nom du service]**.
@@ -159,7 +159,7 @@ Vous combinez des données (enregistrements) enregistrées dans une source de do
       | batchType | Chaîne | Définissez la valeur sur PRINT, WEB ou WEB_AND_PRINT. La valeur par défaut est WEB_AND_PRINT. |
       | paramètres régionaux | Chaîne | Spécifiez les paramètres régionaux de la communication interactive de sortie. Le service prêt à l’emploi n’utilise pas l’option des paramètres régionaux, mais vous pouvez créer un service personnalisé pour générer des communications interactives localisées. La valeur par défaut est en_US. |
 
-   1. Appuyez sur **[!UICONTROL Créer]**. Le dossier de contrôle est créé.
+   1. Sélectionner **[!UICONTROL Créer]** Le dossier de contrôle est alors créé.
 1. Utilisez le dossier de contrôle pour générer une communication interactive :
    1. Ouvrez le dossier de contrôle. Accédez au dossier d’entrée.
    1. Créez un dossier dans le dossier d’entrée. Mettez le fichier JSON créé à l’étape 2 dans le dossier nouvellement créé.

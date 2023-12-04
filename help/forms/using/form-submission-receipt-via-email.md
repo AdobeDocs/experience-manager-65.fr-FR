@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
 docset: aem65
 exl-id: bca4044a-18a9-4b97-92de-eff1e9a840f9
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 74%
+ht-degree: 71%
 
 ---
 
@@ -43,7 +43,7 @@ L’action Envoyer un e-mail permet à un auteur d’envoyer automatiquement un 
 
 1. Ouvrez un formulaire adaptatif en mode d’**[!UICONTROL édition]**.
 
-1. Dans l’onglet **[!UICONTROL Contenu]**, appuyez sur **[!UICONTROL Conteneur de formulaires]**, puis sur ![configure](assets/configure-icon.svg) pour afficher les propriétés du formulaire adaptatif.
+1. Dans le **[!UICONTROL Contenu]** onglet, sélectionnez **[!UICONTROL Conteneur de formulaires]** et sélectionnez ![configure](assets/configure-icon.svg) pour afficher les propriétés du formulaire adaptatif.
 
 1. Dans la section **[!UICONTROL Envoi]**, sélectionnez **[!UICONTROL Envoyer un e-mail]** dans la liste déroulante **[!UICONTROL Action Envoyer]**.
 

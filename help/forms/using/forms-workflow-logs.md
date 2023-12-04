@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '292'
-ht-degree: 82%
+ht-degree: 77%
 
 ---
 
@@ -81,12 +81,12 @@ Procédez comme suit pour activer la journalisation de débogage pour les workfl
    https://&#39;[server]:[port]&#39;/system/console/configMgr
 
 1. Sélectionnez **[!UICONTROL Sling]** > **[!UICONTROL Prise en charge du journal]**.
-1. Appuyez sur **[!UICONTROL Ajouter une nouvelle journalisation]**.
+1. Sélectionner **[!UICONTROL Ajoutez un nouvel enregistreur.]**
 1. Sélectionnez **[!UICONTROL Débogage]** pour le **[!UICONTROL Niveau de journalisation]**.
 1. Indiquez l’emplacement du fichier journal. L’emplacement par défaut du fichier journal est le suivant : *logs\error.log*.
 1. Précisez le nom du package **com.adobe.granite.workflow.core** dans la colonne **[!UICONTROL Journalisation]**.
 
-   L’exécution de ces étapes permet de stocker les journaux de débogage du package **com.adobe.granite.workflow.core**. Appuyez sur **[!UICONTROL +]** et ajoutez les noms de packages suivants à la liste :
+   L’exécution de ces étapes permet de stocker les journaux de débogage du package **com.adobe.granite.workflow.core**. Sélectionner **[!UICONTROL +]** et ajoutez les noms de packages suivants à la liste :
 
    * com.adobe.fd.workflow
    * com.adobe.fd.workspace

@@ -11,10 +11,10 @@ discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1661'
-ht-degree: 53%
+source-wordcount: '1666'
+ht-degree: 49%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 53%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 Les composants de portail Forms fournissent aux développeurs Web des composants pour créer et personnaliser un portail de formulaires sur les sites Web créés à l’aide de Adobe Experience Manager (AEM). Pour un aperçu rapide de Forms Portal, reportez-vous à la section [Présentation de la publication de formulaires sur un portail](../../forms/using/introduction-publishing-forms.md).
@@ -58,13 +58,13 @@ Composant Search &amp; Lister dans une page avec une disposition Grille
 
 La zone de liste contient vos formulaires répertoriés. Le composant Search &amp; Lister fournit différentes options de configuration à utiliser pour contrôler l’affichage de formulaires dans le volet Liste.
 
-Pour configurer le volet de liste, cliquez sur le composant Search and Lister, puis sur ![settings_icon](assets/settings_icon.png). La boîte de dialogue **[!UICONTROL Modifier le composant]** s’ouvre.
+Pour configurer le volet Liste , sélectionnez le composant Search and Lister , puis sélectionnez ![settings_icon](assets/settings_icon.png). La boîte de dialogue **[!UICONTROL Modifier le composant]** s’ouvre.
 
 ![Volet Liste en mode d’édition](assets/edit-list.png)
 
 Volet Liste en mode d’édition
 
-La boîte de dialogue **Modifier** comprend plusieurs onglets fournissant des options de configuration décrites dans le tableau ci-dessous. Une fois la configuration terminée, cliquez sur **OK** pour l’enregistrer.
+La boîte de dialogue **Modifier** comprend plusieurs onglets fournissant des options de configuration décrites dans le tableau ci-dessous. Sélectionner **OK** pour enregistrer la configuration, une fois cette opération terminée.
 
 <table>
  <tbody>
@@ -86,7 +86,7 @@ La boîte de dialogue **Modifier** comprend plusieurs onglets fournissant des op
   <tr>
    <td> </td>
    <td>Modèle de mise en page</td>
-   <td>Mise en page des actifs. </td>
+   <td>Mise en page des ressources. </td>
   </tr>
   <tr>
    <td> </td>
@@ -130,7 +130,7 @@ La boîte de dialogue **Modifier** comprend plusieurs onglets fournissant des op
   </tr>
   <tr>
    <td> </td>
-   <td>Submit URL</td>
+   <td>Envoyer l’URL</td>
    <td><p>Configure un servlet vers lequel les données de formulaire sont envoyées.</p> <p><strong>Remarque :</strong> <em>L’URL d’envoi d’un formulaire peut être spécifiée à plusieurs endroits et son ordre de priorité est le suivant :</em></p>
     <ol>
      <li><em>La valeur Submit URL intégrée dans le formulaire (dans le bouton d’envoi) a la priorité la plus élevée.</em></li>
@@ -177,7 +177,7 @@ Une fois ajouté, l’attribut de date permet d’effectuer une recherche dans l
 
 Pour configurer l’attribut de date, procédez comme suit :
 
-1. Cliquez sur le composant, puis sur ![settings_icon](assets/settings_icon.png). La boîte de dialogue Edit (Modification du composant) s’ouvre.
+1. Sélectionnez le composant, puis sélectionnez ![settings_icon](assets/settings_icon.png). La boîte de dialogue Edit (Modification du composant) s’ouvre.
 1. Indiquez les informations suivantes :
 
    * **Type** : la seule option disponible est **Date de la dernière modification**.
@@ -188,7 +188,7 @@ Pour configurer l’attribut de date, procédez comme suit :
    * **Libellé Date de fin** : libellé ou légende correspondant au champ de date de fin.
    * **Masquer** : permet d’appliquer le filtre de date par défaut permettant de répertorier les formulaires. 
 
-1. Appuyez sur **OK**
+1. Sélectionner **OK**
 
 #### Prédicat de texte intégral {#full-text-predicate}
 
@@ -196,9 +196,9 @@ L’attribut de texte intégral permet d’effectuer une recherche de texte int�
 
 Pour configurer l’attribut de texte intégral, procédez comme suit :
 
-1. Sélectionnez le composant, puis cliquez sur ![settings_icon](assets/settings_icon.png). La boîte de dialogue Edit (Modification du composant) s’ouvre.
+1. Sélectionnez le composant, puis sélectionnez ![settings_icon](assets/settings_icon.png). La boîte de dialogue Edit (Modification du composant) s’ouvre.
 1. Indiquez le titre dans le champ **Titre principal**.
-1. Appuyer **Ok**
+1. Sélectionner **Ok**
 
 #### Prédicat de propriétés {#properties-predicate}
 
@@ -206,15 +206,15 @@ L’attribut de propriétés permet d’effectuer une recherche dans les formula
 
 Pour configurer l’attribut de propriétés, procédez comme suit :
 
-1. Sélectionnez le composant, puis cliquez sur ![settings_icon](assets/settings_icon.png). La boîte de dialogue Edit (Modification du composant) s’ouvre.
+1. Sélectionnez le composant, puis sélectionnez ![settings_icon](assets/settings_icon.png). La boîte de dialogue Edit (Modification du composant) s’ouvre.
 1. Dans l&#39;onglet Général , indiquez le libellé de la recherche. La valeur par défaut est **Propriétés**.
 
-1. Dans l’onglet Options, cliquez sur **Ajouter un élément.**
+1. Dans l’onglet Options, sélectionnez **Ajouter un élément.**
 1. Sélectionnez une propriété dans la liste déroulante et spécifiez un libellé de recherche pour la propriété dans le champ situé sous la liste déroulante.
 1. Répétez l’étape 4 pour ajouter d’autres propriétés. Vous pouvez également indiquer une valeur de filtre par défaut pour répertorier les formulaires basés sur les critères spécifiés et masquer la propriété pour les recherches effectuées par les utilisateurs finaux. Cochez la case Hide (Masquer) d’une propriété et spécifiez la valeur de filtre par défaut.
 Par exemple, si vous souhaitez afficher les formulaires dont le titre contient le mot « voyage », sélectionnez Masquer à côté de la propriété de titre. Spécifiez également « Voyage » dans la zone de texte Valeur de filtre par défaut.
 
-1. Appuyez sur **OK**
+1. Sélectionner **OK**
 
 #### Prédicat de balises {#tags-predicate}
 
@@ -222,10 +222,10 @@ L’attribut de balises permet d’effectuer une recherche dans les formulaires 
 
 Pour configurer l’attribut de balises, procédez comme suit :
 
-1. Sélectionnez le composant, puis cliquez sur ![settings_icon](assets/settings_icon.png). La boîte de dialogue Edit (Modification du composant) s’ouvre.
-1. Cliquez sur la flèche vers le bas située en regard du champ Balises.
+1. Sélectionnez le composant, puis sélectionnez ![settings_icon](assets/settings_icon.png). La boîte de dialogue Edit (Modification du composant) s’ouvre.
+1. Sélectionnez la flèche vers le bas située en regard du champ Balises .
 1. Sélectionner les balises appropriées
-1. Appuyez sur **OK**
+1. Sélectionner **OK**
 
 Les balises sélectionnées s’affichent dans le volet Rechercher, avec les cases à cocher à cocher. Les utilisateurs peuvent affiner leur recherche en fonction des balises.
 

@@ -7,10 +7,10 @@ topic-tags: adaptive_forms, author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
-source-git-commit: f2d8fd17787e756e9ee5a8fc6eaea726de6b66ba
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1832'
+ht-degree: 82%
 
 ---
 
@@ -51,17 +51,17 @@ Les utilisateurs et utilisatrices d’AEM Forms peuvent utiliser le service reCA
 
    1. Accédez à **[!UICONTROL Outils > Général > Navigateur de configuration]**. Pour plus d’informations, consultez la documentation relative au [Navigateur de configuration](/help/sites-administering/configurations.md).
    1. Procédez comme suit pour activer le dossier global pour les configurations cloud ou ignorez cette étape pour créer et configurer un autre dossier pour les configurations de service cloud.
-      1. Dans le navigateur de configuration, sélectionnez le dossier **[!UICONTROL global]** et appuyez sur **[!UICONTROL Propriétés]**.
+      1. Dans l’explorateur de configurations, sélectionnez la variable **[!UICONTROL global]** et sélectionnez **[!UICONTROL Propriétés]**.
       1. Dans la boîte de dialogue Propriétés de configuration, activez **[!UICONTROL Configurations cloud]**.
-      1. Appuyez sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer la configuration et fermer la boîte de dialogue.
+      1. Sélectionner **[!UICONTROL Enregistrer et fermer]** pour enregistrer la configuration et quitter la boîte de dialogue.
 
-   1. Dans le navigateur de configuration, appuyez sur **[!UICONTROL Créer]**.
+   1. Dans l’explorateur de configurations, sélectionnez **[!UICONTROL Créer]**.
    1. Dans la boîte de dialogue Créer une configuration, indiquez un titre pour le dossier et activez **[!UICONTROL Configurations cloud]**.
-   1. Appuyez sur **[!UICONTROL Créer]** pour créer le dossier activé pour les configurations de service cloud.
+   1. Sélectionner **[!UICONTROL Créer]** pour créer le dossier activé pour les configurations de service cloud.
 1. Configurez le service cloud pour reCAPTCHA Enterprise.
 
    1. Sur votre instance d’auteur Experience Manager, accédez à ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
-   1. Appuyez sur **[!UICONTROL reCAPTCHA]**. La page de configuration s’ouvre. Sélectionnez le conteneur de configuration créé à l’étape précédente et appuyez sur **[!UICONTROL Créer]**.
+   1. Sélectionner **[!UICONTROL reCAPTCHA]**. La page de configuration s’ouvre. Sélectionnez le conteneur de configuration créé à l’étape précédente et sélectionnez **[!UICONTROL Créer]**.
    1. Sélectionnez la version reCAPTCHA Enterprise et indiquez le nom, l’ID de projet, la clé du site et la clé API (obtenue aux étapes 2 et 3) pour le service reCAPTCHA Enterprise.
    1. Sélectionnez le type de clé. Le type de clé doit être identique à la clé de site configurée dans le projet google cloud, par exemple : **Clé de site de case à cocher** ou **Clé de site basée sur les scores**.
    1. Spécifiez un score de seuil compris entre 0 et 1 ([Cliquez pour en savoir plus sur le score](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Les scores supérieurs ou égaux aux scores de seuil indiquent une interaction humaine, sinon il s’agit d’une interaction avec un robot.
@@ -70,9 +70,9 @@ Les utilisateurs et utilisatrices d’AEM Forms peuvent utiliser le service reCA
       >
       > * Les auteurs et autrices de formulaires peuvent spécifier un score dans la plage adaptée à l’envoi ininterrompu de formulaires.
 
-   1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration du service cloud.
+   1. Sélectionner **[!UICONTROL Créer]** pour créer la configuration du service cloud.
 
-   1. Dans la boîte de dialogue Modifier le composant, spécifiez le nom, l’ID de projet, la clé du site, la clé API (obtenue aux étapes 2 et 3), sélectionnez le type de clé et saisissez le score de seuil. Appuyez sur **[!UICONTROL Enregistrer les paramètres]** puis sur **[!UICONTROL OK]** pour terminer la configuration.
+   1. Dans la boîte de dialogue Modifier le composant, spécifiez le nom, l’ID de projet, la clé du site, la clé API (obtenue aux étapes 2 et 3), sélectionnez le type de clé et saisissez le score de seuil. Sélectionner **[!UICONTROL Paramètres d’enregistrement]** puis sélectionnez **[!UICONTROL OK]** pour terminer la configuration.
 
 Une fois que le service reCAPTCHA Enterprise est activé, il peut être utilisé dans les formulaires adaptatifs. Voir [Utilisation du CAPTCHA dans les formulaires adaptifs](#using-reCAPTCHA).
 
@@ -86,21 +86,21 @@ Une fois que le service reCAPTCHA Enterprise est activé, il peut être utilisé
    1. Accédez à **[!UICONTROL Outils > Général > Navigateur de configuration]**. Pour plus d’informations, consultez la documentation relative au [Navigateur de configuration](/help/sites-administering/configurations.md).
    1. Procédez comme suit pour activer le dossier global pour les configurations cloud ou ignorez cette étape pour créer et configurer un autre dossier pour les configurations de service cloud.
 
-      1. Dans le navigateur de configuration, sélectionnez le dossier **[!UICONTROL global]** et appuyez sur **[!UICONTROL Propriétés]**.
+      1. Dans l’explorateur de configurations, sélectionnez la variable **[!UICONTROL global]** et sélectionnez **[!UICONTROL Propriétés]**.
 
       1. Dans la boîte de dialogue Propriétés de configuration, activez **[!UICONTROL Configurations cloud]**.
-      1. Appuyez sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer la configuration et fermer la boîte de dialogue.
+      1. Sélectionner **[!UICONTROL Enregistrer et fermer]** pour enregistrer la configuration et quitter la boîte de dialogue.
 
-   1. Dans le navigateur de configuration, appuyez sur **[!UICONTROL Créer]**.
+   1. Dans l’explorateur de configurations, sélectionnez **[!UICONTROL Créer]**.
    1. Dans la boîte de dialogue Créer une configuration, indiquez un titre pour le dossier et activez **[!UICONTROL Configurations cloud]**.
-   1. Appuyez sur **[!UICONTROL Créer]** pour créer le dossier activé pour les configurations de service cloud.
+   1. Sélectionner **[!UICONTROL Créer]** pour créer le dossier activé pour les configurations de service cloud.
 
 1. Configurez le service cloud pour reCAPTCHA v2.
 
    1. Sur votre instance d’auteur AEM, accédez à ![tools-1](assets/tools-1.png) > Déploiement > **Services cloud**.
-   1. Appuyez sur **[!UICONTROL reCAPTCHA]**. La page de configuration s’ouvre. Sélectionnez le conteneur de configuration créé à l’étape précédente et appuyez sur **[!UICONTROL Créer]**.
-   1. Sélectionnez la version reCAPTCHA v2, renseignez les champs Nom, Clé de site et Clé secrète pour le service reCAPTCHA (obtenus à l’étape 1), puis appuyez sur **[!UICONTROL Créer]** pour créer la configuration du service cloud.
-   1. Dans cette boîte de dialogue, spécifiez le site et les clés de site et secrète obtenues à l’étape 1. Appuyez sur **[!UICONTROL Enregistrer les paramètres]** puis sur **OK** pour terminer la configuration.
+   1. Sélectionner **[!UICONTROL reCAPTCHA]**. La page de configuration s’ouvre. Sélectionnez le conteneur de configuration créé à l’étape précédente et sélectionnez **[!UICONTROL Créer]**.
+   1. Sélectionnez la version reCAPTCHA v2, spécifiez Nom, Clé du site et Clé secrète pour le service reCAPTCHA (Obtenue à l’étape 1), puis sélectionnez **[!UICONTROL Créer]** pour créer la configuration du service cloud.
+   1. Dans cette boîte de dialogue, spécifiez le site et les clés de site et secrète obtenues à l’étape 1. Sélectionner **[!UICONTROL Paramètres d’enregistrement]** puis sélectionnez **OK** pour terminer la configuration.
 
    Une fois que le service reCAPTCHA est configuré, il peut être utilisé dans les formulaires adaptatifs. Pour plus d’informations, voir [Utilisation du CAPTCHA dans les formulaires adaptatifs](#using-captcha).
 
@@ -127,7 +127,7 @@ Pour utiliser le reCAPTCHA dans les formulaires adaptatifs :
    >
    >Le Captcha est sensible au temps et expire au bout d’une minute environ. Par conséquent, il est recommandé de placer le composant Captcha juste avant le bouton Soumettre dans le formulaire adaptatif.
 
-1. Sélectionnez le composant Captcha que vous avez ajouté et appuyez sur ![cmppr](assets/cmppr.png) pour modifier ses propriétés.
+1. Sélectionnez le composant Captcha que vous avez ajouté et sélectionnez ![cmppr](assets/cmppr.png) pour modifier ses propriétés.
 1. Indiquez un titre pour le widget CAPTCHA. La valeur par défaut est **Captcha**. Sélectionnez **Masquer le titre** si vous ne voulez pas que le titre apparaisse.
 1. Dans le menu déroulant **Service Captcha**, sélectionnez **reCAPTCHA** pour activer le service reCAPTCHA si vous l’avez configuré comme décrit dans [Service reCAPTCHA de Google](#google-reCAPTCHA).
 1. Sélectionnez une configuration dans la liste déroulante Paramètres.
@@ -226,11 +226,11 @@ Pour utiliser le reCAPTCHA dans les formulaires adaptatifs :
 
 ### Affichage ou masquage du composant CAPTCHA en fonction de règles {#show-hide-captcha}
 
-Vous pouvez choisir d’afficher ou de masquer le composant CAPTCHA en fonction des règles que vous appliquez à un composant d’un formulaire adaptatif. Appuyez sur le composant, sélectionnez ![modifier les règles](assets/edit-rules-icon.svg), puis appuyez sur **[!UICONTROL Créer]** pour créer une règle. Pour plus d’informations sur la création de règles, voir la section [Éditeur de règles](rule-editor.md).
+Vous pouvez choisir d’afficher ou de masquer le composant CAPTCHA en fonction des règles que vous appliquez à un composant d’un formulaire adaptatif. Sélectionnez le composant, puis sélectionnez ![modifier les règles](assets/edit-rules-icon.svg), puis sélectionnez **[!UICONTROL Créer]** pour créer une règle. Pour plus d’informations sur la création de règles, voir la section [Éditeur de règles](rule-editor.md).
 
 Par exemple, le composant CAPTCHA ne doit s’afficher dans un formulaire adaptatif que si la valeur du champ Valeur monétaire du formulaire est supérieure à 25 000.
 
-Appuyez sur le champ **[!UICONTROL Valeur monétaire]** dans le formulaire et créez les règles suivantes :
+Sélectionnez la variable **[!UICONTROL Valeur de devise]** dans le formulaire et créez les règles suivantes :
 
 ![Afficher ou masquer des règles](assets/rules-show-hide-captcha.png)
 
@@ -246,17 +246,17 @@ Vous pouvez valider le CAPTCHA dans un formulaire adaptatif lorsque vous envoyez
 
 Pour valider automatiquement un CAPTCHA lorsque vous envoyez un formulaire adaptatif :
 
-1. Appuyez sur le composant CAPTCHA et sélectionnez ![cmppr](assets/configure-icon.svg) pour afficher les propriétés du composant.
+1. Sélectionnez le composant CAPTCHA et sélectionnez ![cmppr](assets/configure-icon.svg) pour afficher les propriétés du composant.
 1. Dans la section **[!UICONTROL Valider le CAPTCHA]**, sélectionnez **[!UICONTROL Valider le CAPTCHA lors de l’envoi du formulaire]**.
-1. Appuyez sur ![Terminé](assets/save_icon.svg) pour enregistrer les propriétés du composant.
+1. Sélectionner ![Terminé](assets/save_icon.svg) pour enregistrer les propriétés du composant.
 
 #### Validation du CAPTCHA sur les actions et conditions des utilisateurs {#validate-captcha-user-action}
 
 Pour valider un CAPTCHA en fonction des conditions et des actions des utilisateurs :
 
-1. Appuyez sur le composant CAPTCHA et sélectionnez ![cmppr](assets/configure-icon.svg) pour afficher les propriétés du composant.
+1. Sélectionnez le composant CAPTCHA et sélectionnez ![cmppr](assets/configure-icon.svg) pour afficher les propriétés du composant.
 1. Dans la section **[!UICONTROL Valider le CAPTCHA]**, sélectionnez **[!UICONTROL Valider le CAPTCHA sur une action utilisateur]**.
-1. Appuyez sur ![Terminé](assets/save_icon.svg) pour enregistrer les propriétés du composant.
+1. Sélectionner ![Terminé](assets/save_icon.svg) pour enregistrer les propriétés du composant.
 
    >[!NOTE]
    >
@@ -287,7 +287,7 @@ Effectuez les étapes suivantes pour utiliser l’API `ValidateCAPTCHA` pour val
 
 1. Ajoutez le script qui inclut l’API `ValidateCAPTCHA` à l’action d’envoi personnalisée. Pour plus d’informations sur les actions d’envoi personnalisées, voir [Création d’une action d’envoi personnalisée pour les formulaires adaptatifs](custom-submit-action-form.md).
 1. Sélectionnez le nom de l’action d’envoi personnalisée dans la liste déroulante **[!UICONTROL Action d’envoi]** des propriétés **[!UICONTROL Envoi]** d’un formulaire adaptatif.
-1. Appuyez sur **[!UICONTROL Envoyer]**. Le CAPTCHA est validé en fonction des conditions définies dans l’API `ValidateCAPTCHA` de l’action d’envoi personnalisée.
+1. Sélectionner **[!UICONTROL Envoyer]**. Le CAPTCHA est validé en fonction des conditions définies dans l’API `ValidateCAPTCHA` de l’action d’envoi personnalisée.
 
 **Option 2 : utiliser l’API [!DNL Experience Manager Forms] ValidateCAPTCHA pour valider le CAPTCHA sur une action de l’utilisateur avant d’envoyer le formulaire**
 

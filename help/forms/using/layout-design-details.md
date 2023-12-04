@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: 9e1b0067-c7dc-4bbb-a209-d674592be858
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2170'
-ht-degree: 51%
+source-wordcount: '2171'
+ht-degree: 47%
 
 ---
 
@@ -56,7 +56,7 @@ Une fois que vous avez analysé la disposition requise pour créer votre communi
 
 Effectuez les étapes suivantes pour utiliser un sous-formulaire dans un modèle XDP :
 
-1. Ouvrez Forms Designer, sélectionnez **Fichier** > **Nouveau** > **Utiliser un formulaire vierge**, cliquez sur **Suivant**, puis sur **Terminer** pour ouvrir le formulaire en vue de la création d’un modèle.
+1. Ouvrez Forms Designer, puis sélectionnez **Fichier** > **Nouveau** > **Utiliser un formulaire vierge**, sélectionnez **Suivant**, puis sélectionnez **Terminer** pour ouvrir le formulaire à des fins de création de modèle.
 
    Assurez-vous que les options **Bibliothèque d’objets** et **Objet** sont sélectionnées dans le menu **Fenêtre**.
 
@@ -90,7 +90,7 @@ Effectuez les étapes suivantes pour utiliser un sous-formulaire dans un modèle
    1. Accédez à l’emplacement où enregistrer le fichier et nommer le modèle XDP.
    1. Sélectionner **.xdp** de la **Enregistrer en tant que type** liste déroulante.
 
-   1. Appuyez sur **Enregistrer**.
+   1. Sélectionnez **Enregistrer**.
 
 ### Utiliser le composant Champ d’image dans un modèle XDP {#use-image-field-component-in-an-xdp-template}
 
@@ -124,9 +124,9 @@ Effectuez les opérations suivantes pour utiliser le composant Tableau dans le m
 
    1. Spécifiez le nombre de lignes et de colonnes du tableau.
    1. Cochez la case **Inclure la rangée d’en-tête dans le tableau** pour inclure une ligne pour l’en-tête du tableau.
-   1. Appuyez sur **OK**.
+   1. Sélectionnez **OK**.
 
-1. Appuyez sur **+** dans le volet de gauche en regard du nom du tableau, faites un clic droit sur les noms de cellule inclus dans l’en-tête et dans les autres lignes, puis sélectionnez **Renommer l’objet** pour renommer les cellules du tableau.
+1. Sélectionner **+** dans le volet de gauche en regard du nom du tableau, cliquez avec le bouton droit sur les noms de cellule inclus dans l’en-tête et dans les autres lignes, puis sélectionnez **Rename Object** pour renommer les cellules du tableau.
 1. Cliquez sur les champs de texte de l’en-tête du tableau dans le **Vue de conception** et renommez-les.
 1. Faites glisser et déposez le composant **Champ de texte** de la **Bibliothèque d’objets** à chacune des cellules du tableau dans **Vue de conception**. Effectuez cette étape pour pouvoir lier les cellules du tableau aux objets de modèle de données de formulaire lors de la création de la communication interactive.
 
@@ -141,15 +141,15 @@ Effectuez les opérations suivantes pour utiliser le composant Tableau dans le m
    1. Accédez à l’emplacement où enregistrer le fichier et spécifiez le nom du modèle XDP.
    1. Sélectionner **.xdp** de la **Enregistrer en tant que type** liste déroulante.
 
-   1. Appuyez sur **Enregistrer**.
+   1. Sélectionnez **Enregistrer**.
 
 ### Télécharger le modèle XDP sur le serveur AEM Forms {#uploadxdptemplate}
 
 Une fois que vous avez créé un modèle XDP à l’aide de Forms Designer, vous devez le charger sur le serveur AEM Forms afin que le modèle puisse être utilisé lors de la création de la communication interactive.
 
 1. Sélectionnez **Formulaires** > **Formulaires et documents**.
-1. Appuyez sur **Créer** > **Chargement de fichier**.
-1. Accédez à l’emplacement du modèle XDP sur le système de fichiers local et appuyez sur **Ouvrir** pour importer le modèle XDP sur le serveur AEM Forms.
+1. Sélectionner **Créer** > **Téléchargement du fichier**.
+1. Accédez à l’emplacement du modèle XDP sur le système de fichiers local et sélectionnez **Ouvrir** pour importer le modèle XDP sur le serveur AEM Forms.
 
 ## Utilisation d’un schéma {#using-schema}
 

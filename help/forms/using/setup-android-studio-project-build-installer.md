@@ -1,14 +1,14 @@
 ---
-title: Configurez Android&trade ; Projet studio et construction d’Android&trade ; app
-description: Étapes de configuration d’Android&trade; Projet Studio et génération du programme d’installation pour l’application Forms Adobe Experience Manager (AEM)
+title: Configurez le projet Android&trade ; studio et créez l’application Android&trade ;
+description: Procédure de configuration du projet Android&trade; Studio et de génération du programme d’installation pour l’application Forms Adobe Experience Manager (AEM)
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 exl-id: 47d6af00-34d8-4e5d-8117-86fc1b6f58cb
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 62%
+source-wordcount: '584'
+ht-degree: 58%
 
 ---
 
@@ -21,11 +21,11 @@ AEM Forms fournit le code source complet de l’application AEM Forms. La source
 Pour obtenir le code source de l’application AEM Forms, procédez comme suit :
 
 1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
-1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
+1. Sélectionner **[!UICONTROL Adobe Experience Manager]** disponibles dans le menu d’en-tête.
 1. Dans la section **[!UICONTROL Filtres]** :
    1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]**.
-   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Rechercher des téléchargements]** pour filtrer les résultats.
-1. Appuyez sur le nom de package applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les conditions du CLUF]**, puis appuyez sur **[!UICONTROL Télécharger]**.
+   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Rechercher des téléchargements]** pour filtrer les résultats.
+1. Sélectionnez le nom du package correspondant à votre système d’exploitation, puis sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur]**, puis sélectionnez **[!UICONTROL Télécharger]**.
 1. Ouvrez [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
 1. Sélectionnez le package, puis cliquez sur **[!UICONTROL Installer]**.
 
@@ -65,7 +65,7 @@ L’image suivante affiche la structure du répertoire du dossier `android` dans
 
 1. Lancez Android™ Studio.
 
-   **Pour les utilisateurs Mac**: Mettez à jour le `local.properties` présent dans le fichier `[User_Home]/Projects/[your-project]/android` et pointez le `sdk.dir` vers `SDK` sur votre bureau.
+   **Pour les utilisateurs Mac**: mettez à jour la variable `local.properties` présent dans le fichier `[User_Home]/Projects/[your-project]/android` et pointez le `sdk.dir` vers `SDK` sur votre bureau.
 
    **Pour les utilisateurs de Windows®** : mettez à jour le fichier `local.properties` situé dans le dossier `%HOMEPATH%\Projects\[your-project]\android` et pointez la variable `sdk.dir` vers l’emplacement `SDK` de votre ordinateur.
 

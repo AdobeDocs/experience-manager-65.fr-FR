@@ -10,10 +10,10 @@ discoiquuid: 87f5f9f5-2d03-4565-830e-eacc3757e542
 docset: aem65
 feature: Form Data Model
 exl-id: 9a73a643-7ad4-49aa-a971-08d52679158d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 50%
+source-wordcount: '1268'
+ht-degree: 40%
 
 ---
 
@@ -51,7 +51,7 @@ Vous pouvez créer [formulaires adaptatifs](../../forms/using/creating-adaptive-
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. Appuyez pour développer le **[!UICONTROL modèle de données de formulaire sélectionné]**. Tous les modèles de données de formulaire disponibles sont répertoriés.
+1. Sélectionner pour développer **[!UICONTROL Sélectionner un modèle de données de formulaire]**. Tous les modèles de données de formulaire disponibles sont répertoriés.
 
    Sélectionnez un modèle de données à partir de .
 
@@ -93,19 +93,19 @@ Pour en savoir plus, voir:
 
 ## Aperçu avec des exemples de données {#preview-ic}
 
-L’éditeur de modèle de données de formulaire vous permet de générer et de modifier des exemples de données pour les objets de modèle de données dans le modèle de données de formulaire. Vous pouvez utiliser ces données pour prévisualiser et tester les communications interactives et les formulaires adaptatifs. Vous devez générer les exemples de données avant la prévisualisation, comme décrit dans la section [Utilisation d’un modèle de données de formulaire](../../forms/using/work-with-form-data-model.md#sample).
+L’éditeur de modèle de données de formulaire vous permet de générer et de modifier des exemples de données pour les objets de modèle de données dans le modèle de données de formulaire. Vous pouvez utiliser ces données pour prévisualiser et tester les communications interactives et les formulaires adaptatifs. Générez les données d’exemple avant de les prévisualiser, comme décrit dans la section [Utilisation du modèle de données de formulaire](../../forms/using/work-with-form-data-model.md#sample).
 
 Pour prévisualiser une communication interactive avec des exemples de données de modèle de données de formulaire :
 
 1. Dans l’instance d’auteur AEM, accédez à **[!UICONTROL Formulaires > Formulaires et documents]**.
-1. Sélectionnez une communication interactive et appuyez sur **[!UICONTROL Aperçu]** dans la barre d’outils pour sélectionner **[!UICONTROL Canal web]**, **[!UICONTROL Canal d’impression]** ou **[!UICONTROL Les deux canaux]** pour prévisualiser la communication interactive.
-1. Dans la boîte de dialogue Aperçu [*canal*], assurez-vous d’avoir sélectionné **[!UICONTROL Tester le modèle de données de formulaire]** et appuyez sur **[!UICONTROL Aperçu]**.
+1. Sélectionnez une communication interactive et sélectionnez **[!UICONTROL Aperçu]** dans la barre d’outils à sélectionner. **[!UICONTROL Canal web]**, **[!UICONTROL Canal d’impression]**, ou **[!UICONTROL Les deux canaux]** pour prévisualiser la communication interactive.
+1. Dans l’aperçu [*channel*] , assurez-vous que **[!UICONTROL Test de données de modèle de données de formulaire]** est sélectionné et sélectionnez **[!UICONTROL Aperçu]**.
 
 La communication interactive s’ouvre avec des exemples de données préremplies.
 
 ![web-preview](assets/web-preview.png)
 
-De même, pour prévisualiser un formulaire adaptatif avec des exemples de données, ouvrez le formulaire adaptatif en mode création et appuyez sur **[!UICONTROL Aperçu]**.
+De même, pour prévisualiser un formulaire adaptatif avec des données d’exemple, ouvrez le formulaire adaptatif en mode création et sélectionnez **[!UICONTROL Aperçu]**.
 
 ## Préremplissage à l’aide du service de modèle de données de formulaire {#prefill}
 
@@ -135,10 +135,10 @@ Vous pouvez également envoyer des pièces jointes de formulaire à une source d
 
 1. Ajoutez un objet de modèle de données qui inclut une propriété binaire au modèle de données de formulaire.
 1. Dans le formulaire adaptatif, faites glisser le composant **[!UICONTROL Pièce jointe]** depuis l’explorateur Composants vers le formulaire adaptatif.
-1. Appuyez pour sélectionner le composant ajouté et appuyez sur ![paramètres-icône](assets/settings_icon.png) pour ouvrir l’explorateur Propriétés du composant.
-1. Dans le champ Référence de liaison, appuyez sur ![foldersearch_18](assets/foldersearch_18.png) et naviguez pour sélectionner la propriété binaire que vous avez ajoutée dans le modèle de données de formulaire. Configurez d’autres propriétés en fonction de vos besoins.
+1. Sélectionnez pour sélectionner le composant ajouté et sélectionnez ![settings_icon](assets/settings_icon.png) pour ouvrir l’explorateur de propriétés du composant.
+1. Dans le champ Référence de liaison, sélectionnez ![foldersearch_18](assets/foldersearch_18.png) et accédez à pour sélectionner la propriété binaire que vous avez ajoutée dans le modèle de données de formulaire. Configurez d’autres propriétés en fonction de vos besoins.
 
-   Appuyez sur ![check-button](assets/check-button.png) pour enregistrer les propriétés. Le champ de pièce jointe est maintenant lié à la propriété binaire du modèle de données de formulaire.
+   Sélectionner ![check-button](assets/check-button.png) pour enregistrer les propriétés. Le champ de pièce jointe est maintenant lié à la propriété binaire du modèle de données de formulaire.
 
 1. Dans la section Envoi des propriétés du conteneur de formulaires adaptatifs, activez l’option **[!UICONTROL Envoyer les pièces jointes de formulaire]**. Elle envoie la pièce jointe dans le champ de propriété binaire à la source de données lors de l’envoi du formulaire.
 

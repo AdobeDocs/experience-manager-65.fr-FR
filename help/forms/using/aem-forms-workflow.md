@@ -5,10 +5,10 @@ topic-tags: publish, document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3679'
-ht-degree: 55%
+source-wordcount: '3667'
+ht-degree: 53%
 
 ---
 
@@ -65,8 +65,8 @@ L’exemple crée un modèle de workflow dans lequel une demande de prêt immobi
 
 1. Ouvrez la console Modèles de processus. L’URL par défaut est `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Sélectionnez **Créer**, puis **Créer un modèle**. La boîte de dialogue Ajouter un modèle de processus s’ouvre.
-1. Saisissez **Titre** et **Nom** (facultatif). par exemple, une demande de prêt immobilier. Appuyez sur **Terminé**.
-1. Sélectionnez le processus nouvellement créé et appuyez sur **Modifier**. Désormais, vous pouvez ajouter des étapes de processus pour créer une logique d’entreprise. Lorsque vous créez un modèle de processus pour la première fois, il contient :
+1. Saisissez **Titre** et **Nom** (facultatif). par exemple, une demande de prêt immobilier. Sélectionnez **Terminé**.
+1. Sélectionnez le modèle de workflow nouvellement créé et sélectionnez **Modifier**. Désormais, vous pouvez ajouter des étapes de processus pour créer une logique d’entreprise. Lorsque vous créez un modèle de processus pour la première fois, il contient :
 
    * Les étapes : Début du flux et Fin du flux. Ces étapes représentent le début et la fin du workflow. Ces étapes sont requises et ne peuvent pas être modifiées ni supprimées.
    * Un exemple d’étape Participant, dont le nom est Étape 1. Cette étape est configurée pour affecter un élément de travail à l’utilisateur administrateur. Supprimez cette étape.
@@ -79,7 +79,7 @@ L’exemple crée un modèle de workflow dans lequel une demande de prêt immobi
 
 1. Créez des étapes de workflow. Un workflow peut comporter plusieurs étapes. Ces étapes sont affichées dans la boîte de réception AEM et signalent la progression du workflow.
 
-   Pour définir une étape, appuyez sur l’icône ![info-circle](assets/info-circle.png) pour ouvrir les propriétés de modèle de processus, ouvrez l’onglet **Étapes**, ajoutez des étapes au modèle de processus et appuyez sur **Enregistrer et fermer**. Pour l’exemple de demande de prêt immobilier, créez des étapes : demande de prêt, état de la demande de prêt, documents à signer et document de prêt signé.
+   Pour définir une étape, sélectionnez la ![info-circle](assets/info-circle.png) pour ouvrir les propriétés du modèle de processus, ouvrez l’icône **Phases** , ajoutez des étapes pour le modèle de workflow, puis sélectionnez **Enregistrer et fermer**. Pour l’exemple de demande de prêt immobilier, créez des étapes : demande de prêt, état de la demande de prêt, documents à signer et document de prêt signé.
 
 1. Glissez-déposez l’explorateur d’étapes **Affecter une tâche** dans le modèle de processus. Faites-en la première étape du modèle.
 
@@ -214,7 +214,7 @@ Vous pouvez configurer un formulaire adaptatif pour synchroniser, envoyer et dé
 Un administrateur (membre du groupe fd-administrateurs) peut configurer un dossier réseau pour exécuter un workflow préconfiguré lorsqu’un utilisateur y place un fichier (tel qu’un fichier de PDF). Une fois le workflow terminé, il peut enregistrer le fichier de résultat dans un dossier de sortie spécifié. Ce dossier est appelé [Watched Folder](../../forms/using/watched-folder-in-aem-forms.md). Procédez comme suit pour configurer un dossier de contrôle afin de lancer un workflow :
 
 1. Sur votre instance d’auteur AEM, accédez à ![Outils-1](assets/tools-1.png) > **[!UICONTROL Formulaires]** > **[!UICONTROL Configurer le dossier de contrôle]**.  Une liste de dossiers de contrôle déjà configurés s’affiche.
-1. Appuyez sur **[!UICONTROL Nouveau]**. Une liste de champs s’affiche. Spécifiez une valeur pour les champs suivants afin de configurer un dossier de contrôle pour un workflow :
+1. Sélectionner **[!UICONTROL Nouveau]**. Une liste de champs s’affiche. Spécifiez une valeur pour les champs suivants afin de configurer un dossier de contrôle pour un workflow :
 
 <table>
  <tbody>
@@ -245,7 +245,7 @@ Un administrateur (membre du groupe fd-administrateurs) peut configurer un dossi
  </tbody>
 </table>
 
-1. Appuyer **Avancé**. Spécifiez une valeur pour le champ suivant puis cliquez sur **Créer**. Le dossier de contrôle est configuré pour lancer un processus. Désormais, chaque fois qu’un fichier est placé dans le répertoire d’entrée du dossier de contrôle, le processus spécifié est déclenché.
+1. Sélectionner **Avancé**. Spécifiez une valeur pour le champ suivant puis cliquez sur **Créer**. Le dossier de contrôle est configuré pour lancer un processus. Désormais, chaque fois qu’un fichier est placé dans le répertoire d’entrée du dossier de contrôle, le processus spécifié est déclenché.
 
    | Champ | Description |
    |---|---|
@@ -269,7 +269,7 @@ Vous pouvez utiliser les étapes Affecter une tâche et Envoyer un courrier éle
 
 ### Purge des instances de processus {#purge-workflow-instances}
 
-Réduire le nombre d’instances de processus améliore les performances du moteur de processus. Vous pouvez donc purger régulièrement les instances de processus terminées ou en cours d’exécution du référentiel. Pour plus d’informations, consultez [Purge régulière des instances de processus](/help/sites-administering/workflows-administering.md#regular) purge des instances de processus. 
+Réduire le nombre d’instances de processus améliore les performances du moteur de processus. Vous pouvez donc purger régulièrement les instances de processus terminées ou en cours d’exécution du référentiel. Pour plus d’informations, voir [Purge régulière des instances de workflow](/help/sites-administering/workflows-administering.md#regular) purge des instances de workflow.
 
 ## Paramétrer les données sensibles aux variables de workflow et les stocker dans des magasins de données externes {#externalize-wf-variables}
 
@@ -309,7 +309,7 @@ Voici les objectifs (et exemples) de ces propriétés :
 
 * **accountName** est le compte Azure où les données doivent être stockées.
 
-* **endpointSuffix**, par exemple, `core.windows.net`.
+* **endpointSuffix**, par exemple : `core.windows.net`.
 
 * **containerName** est le conteneur dans le compte où les données doivent être stockées. L’exemple suppose que le conteneur existe.
 

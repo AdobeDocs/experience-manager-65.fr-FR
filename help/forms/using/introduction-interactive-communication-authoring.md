@@ -7,10 +7,10 @@ topic-tags: interactive-communications
 docset: aem65
 feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1308'
-ht-degree: 77%
+source-wordcount: '1318'
+ht-degree: 65%
 
 ---
 
@@ -53,8 +53,7 @@ Dans l’explorateur de contenu, vous pouvez visualiser la hiérarchie des objet
 
 * **Explorateur de propriétés**
 
-  Permet de modifier les propriétés d’un composant. Les propriétés affichées varient en fonction du composant. Par exemple, pour afficher les propriétés du conteneur de document :
-sélectionnez un composant, puis cliquez sur ![field-level](assets/field-level.png) > **Conteneur de documents** et sélectionnez ![cmppr](assets/cmppr.png).
+  Permet de modifier les propriétés d’un composant. Les propriétés affichées varient en fonction du composant. Par exemple, pour afficher les propriétés du conteneur de documents : sélectionnez un composant, puis sélectionnez ![champ-level](assets/field-level.png) > **Conteneur de documents**, puis sélectionnez ![cmppr](assets/cmppr.png).
 
 * **L’explorateur de ressources**
 isole différents types de contenu, tels que des fragments de disposition, des images, des documents, des pages ou des séquences vidéo. L’auteur peut glisser-déposer des actifs dans la communication interactive.
@@ -81,14 +80,14 @@ isole différents types de contenu, tels que des fragments de disposition, des i
 
 Les points clés lors de l’utilisation des composants de communication interactive sont les suivants :
 
-* Chaque composant est associé à des propriétés qui contrôlent son apparence et ses fonctionnalités. Pour configurer les propriétés d’un composant, appuyez sur celui-ci et sélectionnez ![cmppr](assets/cmppr.png) pour ouvrir les propriétés du composant dans l’explorateur de propriétés.
-* Un composant est identifié par son nom d’élément. Lorsque vous cliquez sur ![cmppr](assets/cmppr.png), vous pouvez changer le nom du composant en modifiant la valeur du champ Nom de l’élément dans l’explorateur de propriétés. Le champ Nom de l’élément accepte uniquement les lettres, les chiffres, les tirets (-) et les traits de soulignement (_). Les autres caractères spéciaux ne sont pas autorisés et le nom de l’élément doit commencer par une lettre.
+* Chaque composant est associé à des propriétés qui contrôlent son apparence et ses fonctionnalités. Pour configurer les propriétés d’un composant, sélectionnez-le, puis sélectionnez ![cmppr](assets/cmppr.png) pour ouvrir les propriétés du composant dans l’explorateur de propriétés.
+* Un composant est identifié par son nom d’élément. Lorsque vous sélectionnez ![cmppr](assets/cmppr.png), vous pouvez modifier le nom du composant en modifiant la valeur du champ Nom de l’élément dans l’explorateur de propriétés. Le champ Nom de l’élément accepte uniquement les lettres, les chiffres, les tirets (-) et les traits de soulignement (_). Les autres caractères spéciaux ne sont pas autorisés et le nom de l’élément doit commencer par une lettre.
 * Vous pouvez modifier la propriété de titre d’un composant de communication interactive en ligne dans l’éditeur sans ouvrir l’explorateur de propriétés tant que le titre est visible sur la communication interactive. Pour ce faire :
 
-   1. Appuyez pour sélectionner un composant qui a une propriété Titre et dont la propriété Masquer le titre est désactivée.
-   1. Cliquez sur ![aem_6_3_edit](assets/aem_6_3_edit.png) pour rendre le titre modifiable.
+   1. Sélectionnez cette option pour sélectionner un composant doté d’une propriété Titre et dont la propriété Masquer le titre est désactivée.
+   1. Sélectionner ![aem_6_3_edit](assets/aem_6_3_edit.png) pour rendre le titre modifiable.
 
-   1. Modifiez le titre et appuyez sur la touche Retour ou appuyez n’importe où en dehors du composant pour enregistrer les modifications. Appuyez sur la touche Échap pour annuler les modifications.
+   1. Modifiez le titre et sélectionnez la touche Retour ou n’importe où en dehors du composant pour enregistrer les modifications. Sélectionnez la touche Échap pour ignorer les modifications.
 
 ## Barre d’outils de composants {#component-toolbar}
 
@@ -96,9 +95,9 @@ Les points clés lors de l’utilisation des composants de communication interac
 
 Lorsque vous sélectionnez un composant, une barre d’outils s’affiche pour vous permettre de l’utiliser. Vous avez la possibilité de couper, coller, déplacer et spécifier les propriétés des composants. Vous avez le choix entre :
 
-A. **Configurer** : lorsque vous appuyez sur **Configurer**, les propriétés du composant sont visibles dans la barre latérale.
+A.**Configurer**: lorsque vous sélectionnez **Configurer**, les propriétés du composant sont visibles dans la barre latérale.
 
-B.**Modifier les règles** : lorsque vous cliquez sur Modifier les règles, l’éditeur de règles apparaît dans lequel vous pouvez modifier et créer des règles pour le composant sélectionné. Dans l’éditeur de règles, vous pouvez également sélectionner d’autres objets de formulaire (composants) et modifier/créer des règles pour ces objets de formulaire.
+B.**Modifier des règles**: lorsque vous sélectionnez Modifier les règles, l’éditeur de règles s’affiche dans lequel vous pouvez modifier et créer des règles pour le composant sélectionné. Dans l’éditeur de règles, vous pouvez également sélectionner d’autres objets de formulaire (composants) et modifier/créer des règles pour ces objets de formulaire.
 
 C.** Copier** : permet de copier un composant et le coller ailleurs dans la communication interactive.
 

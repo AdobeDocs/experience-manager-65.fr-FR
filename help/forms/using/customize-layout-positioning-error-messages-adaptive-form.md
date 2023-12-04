@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 5cb3ee55-f411-4692-84f7-89bf6ade729d
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 23%
+ht-degree: 15%
 
 ---
 
@@ -30,8 +30,8 @@ Pour appliquer une disposition personnalisée à un champ, procédez comme suit 
 
 ### Personnalisation de la mise en page d’un seul champ {#customize-layout-of-a-single-field}
 
-1. Ouvrez le formulaire dans **Style** mode . Pour ouvrir le formulaire en mode Style, écrivez dans la barre d’outils de la page ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
-1. Dans la barre latérale, sous **Objets de formulaire**, sélectionnez le champ, puis cliquez sur le bouton de modification ![edit-button](assets/edit-button.png).
+1. Ouvrez le formulaire dans **Style** mode . Pour ouvrir le formulaire en mode Style, dans la barre d’outils de la page, sélectionnez ![liste déroulante canevas](assets/canvas-drop-down.png) > **Style**.
+1. Dans la barre latérale, sous **Objets de formulaire**, sélectionnez le champ et cliquez sur le bouton Modifier ![edit-button](assets/edit-button.png).
 1. Sélectionnez l’état du champ que vous souhaitez personnaliser, puis spécifiez la mise en forme de cet état.
 
    ![Spécification du style intégré d’un champ](assets/edit-error-state.png)
@@ -43,7 +43,7 @@ Avec AEM Forms, vous pouvez maintenant créer un thème et l’appliquer à votr
 Créez un thème à l’aide de l’éditeur de thème pour personnaliser la disposition de tous les champs de votre formulaire. Après avoir créé un thème, procédez comme suit pour l’appliquer à un formulaire :
 
 1. Ouvrez votre formulaire en mode d’édition.
-1. En mode d’édition, sélectionnez un composant, puis appuyez sur ![field-level](assets/field-level.png) > **Conteneur de formulaires adaptatifs**, puis appuyez sur ![cmppr](assets/cmppr.png).
+1. En mode d’édition, sélectionnez un composant, puis sélectionnez ![champ-level](assets/field-level.png) > **Conteneur de formulaires adaptatifs**, puis sélectionnez ![cmppr](assets/cmppr.png).
 1. Dans la barre latérale, sous Thème de formulaire adaptatif, sélectionnez le thème que vous avez créé à l’aide de l’éditeur de thème.
 
 ## Création d’une disposition de champ personnalisée {#create-a-custom-field-layout}
@@ -77,7 +77,7 @@ Créez un thème à l’aide de l’éditeur de thème pour personnaliser la dis
    }
    ```
 
-1. Pour améliorer l’apparence et le comportement, incluez la bibliothèque client créée dans le fichier de dispositiion (errorOnRight.jsp).
+1. Pour améliorer l’apparence et le comportement, incluez la bibliothèque client créée dans le fichier de mise en page (errorOnRight.jsp).
 1. Ouvrez la boîte de dialogue de modification du champ et sélectionnez le **Style** . Dans le **Configuration de la disposition du champ** , sélectionnez la mise en page nouvellement créée, puis cliquez sur **OK**.
 
 Le package ErrorOnRight.zip contient le code permettant d’afficher les messages d’erreur sur le côté droit des champs.

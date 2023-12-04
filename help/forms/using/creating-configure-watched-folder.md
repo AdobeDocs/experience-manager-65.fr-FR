@@ -5,10 +5,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1819'
-ht-degree: 54%
+source-wordcount: '1829'
+ht-degree: 52%
 
 ---
 
@@ -33,9 +33,9 @@ Avant de configurer un dossier de contrôle, vérifiez les éléments suivants 
 
 Effectuez les étapes suivantes pour créer un dossier de contrôle :
 
-1. Appuyer **Adobe Experience Manager** dans le coin supérieur gauche de l’écran.
-1. Appuyez sur **Outils** > **Formulaires** > **Configurer le dossier de contrôle.** Une liste de dossiers de contrôle déjà configurés s’affiche.
-1. Appuyez sur **Nouveau**. La liste des champs nécessaires à la création du dossier de contrôle s’affiche :
+1. Sélectionner **Adobe Experience Manager** dans le coin supérieur gauche de l’écran.
+1. Sélectionner **Outils** > **Forms** > **Configuration du dossier de contrôle** Une liste de dossiers de contrôle déjà configurés s’affiche.
+1. Sélectionner **Nouveau**. La liste des champs nécessaires à la création du dossier de contrôle s’affiche :
 
    * **Nom** : identifie le dossier de contrôle. Utilisez uniquement des caractères alphanumériques pour le nom.
    * **Chemin** : indique l’emplacement du dossier de contrôle. Dans un environnement organisé en grappe, ce paramètre doit pointer vers un dossier réseau partagé accessible à chaque utilisateur AEM sur différents noeuds d’une grappe.
@@ -59,7 +59,7 @@ Effectuez les étapes suivantes pour créer un dossier de contrôle :
 
    * **Modèle de fichier de sortie** : spécifiez une liste délimitée par point-virgule (;) de modèles utilisés par un dossier de contrôle pour déterminer le nom et l’emplacement des dossiers et fichiers de sortie. Pour plus d’informations sur les modèles de fichiers, voir [A propos des modèles de fichier](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
-1. Appuyer **Avancé**. L’onglet Avancé contient d’autres champs. La plupart de ces champs contiennent une valeur par défaut.
+1. Sélectionner **Avancé**. L’onglet Avancé contient d’autres champs. La plupart de ces champs contiennent une valeur par défaut.
 
    * **Filtre de mappeur de charge :** Lorsque vous créez un dossier de contrôle, il crée une structure de dossiers dans le dossier contrôlé. La structure de dossiers comporte des dossiers stage, result, preserve, input et failure. La structure de dossiers peut servir de charge utile d’entrée au workflow et accepter la sortie d’un workflow. Il peut également répertorier les points d’échec, le cas échéant. La structure d’une payload est différente de celle d’un dossier de contrôle. Vous pouvez écrire des scripts personnalisés pour mapper la structure d’un dossier de contrôle à la charge utile. Un tel script est appelé filtre du mappeur de charge utile. Deux mises en oeuvre de mappeur de charge prêt à l’emploi sont disponibles. Si vous n’avez pas [une implémentation personnalisée](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), utilisez une implémentation prête à l’emploi :
 
@@ -113,7 +113,7 @@ Effectuez les étapes suivantes pour créer un dossier de contrôle :
 
 Outre la modification du nom du dossier de contrôle, vous pouvez modifier toutes les propriétés d’un dossier de contrôle existant. Effectuez les étapes suivantes pour modifier les propriétés d’un dossier de contrôle existant :
 
-1. Appuyez sur le bouton **Adobe Experience Manager** dans le coin supérieur gauche de l’écran.
-1. Appuyez sur **Outils** > **Formulaires** > **Configurer le dossier de contrôle.** Une liste de dossiers de contrôle déjà configurés s’affiche.
-1. Sur le côté gauche de l’écran du dossier de contrôle, sélectionnez le dossier de contrôle et appuyez sur **Modifier.** La liste des champs nécessaire à la création du dossier de contrôle s’affiche. Les champs répertoriés dans l’onglet **Réglages de base** sont obligatoires. L’onglet Avancé contient d’autres champs. La plupart de ces champs contiennent une valeur par défaut. Vous pouvez modifier ces propriétés selon vos besoins.
-1. Après avoir modifié les propriétés, appuyez sur **Mettre à jour**. Les propriétés modifiées sont enregistrées.
+1. Sélectionnez la variable **Adobe Experience Manager** dans le coin supérieur gauche de l’écran.
+1. Sélectionner **Outils** > **Forms** > **Configuration du dossier de contrôle** Une liste de dossiers de contrôle déjà configurés s’affiche.
+1. Sur le côté gauche de l’écran du dossier de contrôle, sélectionnez le dossier de contrôle, puis sélectionnez **Modifier.** La liste des champs nécessaire à la création du dossier de contrôle s’affiche. Les champs répertoriés dans l’onglet **Réglages de base** sont obligatoires. L’onglet Avancé contient d’autres champs. La plupart de ces champs contiennent une valeur par défaut. Vous pouvez modifier ces propriétés selon vos besoins.
+1. Après avoir modifié les propriétés, sélectionnez **Mettre à jour**. Les propriétés modifiées sont enregistrées.
