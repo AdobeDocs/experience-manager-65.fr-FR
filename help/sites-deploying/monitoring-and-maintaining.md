@@ -10,10 +10,10 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '5939'
-ht-degree: 99%
+source-wordcount: '5793'
+ht-degree: 98%
 
 ---
 
@@ -125,8 +125,8 @@ Pour purger les versions d’un site web, procédez comme suit :
 
    ![la configuration de la purge de version](assets/version-purge-configuration.png),
 
-   * **la purge des chemins d’accès**.
-Définissez le chemin d’accès de début du contenu à purger. Par exemple, `/content/wknd`.
+   * **Purge des chemins**
+Définissez le chemin d’accès de début du contenu à purger, par exemple : `/content/wknd`.
 
      >[!CAUTION]
      >
@@ -238,13 +238,13 @@ Chaque demande d’accès est enregistrée ici en même temps que la réponse.
 Ce journal n’est utilisé que si [!DNL Dynamic Media] est activé. Le journal s7access enregistre chaque demande faite à [!DNL Dynamic Media] via `/is/image` et `/is/content`.
 
    * `stderr.log`
-Contient les messages d’erreur, de différents niveaux de gravité, générés lors du démarrage. Par défaut, le niveau de journalisation est défini sur `Warning` ( `WARN`)
+Contient les messages d’erreur, de différents niveaux de gravité, générés lors du démarrage. Par défaut, le niveau de journal est défini sur `Warning` ( `WARN`)
 
    * `stdout.log`
 Contient des messages de journaux indiquant les événements pendant le démarrage.
 
    * `upgrade.log`
-Fournit un journal de toutes les opérations de mise à niveau qui s’exécutent à partir de la des packages `com.day.compat.codeupgrade` et `com.adobe.cq.upgradesexecutor`.
+Fournit un journal de toutes les opérations de mise à niveau qui s’exécutent à partir de la variable `com.day.compat.codeupgrade` et `com.adobe.cq.upgradesexecutor` modules.
 
 * `<cq-installation-dir>/crx-quickstart/repository/segmentstore`
 
@@ -483,7 +483,7 @@ Ces entrées contiennent les mêmes informations que celles affichées lors de l
 
 #### Enregistrements d’audit OSGi à partir de la console web {#osgi-audit-records-from-the-web-console}
 
-Les événements OSGi produisent également des enregistrements d’audit pouvant être affichés dans l’onglet **Statut de la configuration** -> Onglet **Fichiers journaux** dans la console web Adobe AEM : 
+Les événements OSGi génèrent également des enregistrements d’audit qui peuvent être affichés à partir du **État de la configuration** onglet > **Fichiers journaux** dans la console web d’AEM :
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 

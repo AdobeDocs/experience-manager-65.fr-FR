@@ -4,10 +4,10 @@ description: Découvrez comment configurer la structure d’intégration de trad
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1571'
-ht-degree: 82%
+source-wordcount: '1497'
+ht-degree: 83%
 
 ---
 
@@ -180,14 +180,14 @@ Les propriétés des ressources contrôlent la façon dont les ressources sont c
  </tbody>
 </table>
 
-1. Dans la barre latérale, cliquez ou appuyez sur Outils > Opérations > Cloud > Cloud Service.
+1. Dans la barre latérale, cliquez sur Outils > Opérations > Cloud > Cloud Service.
 1. Dans la zone Intégration de traduction, la création ou non de configurations détermine le lien qui s’affiche :
 
-   * Si aucune configuration n’a été créée, cliquez ou appuyez sur Configurer maintenant.
-   * Si des configurations existent déjà, cliquez ou appuyez sur Afficher les configurations, puis cliquez ou appuyez sur le lien + qui s’affiche en regard de Configurations disponibles.
+   * Si aucune configuration n’a été créée, cliquez sur Configurer maintenant.
+   * Si des configurations existent déjà, cliquez sur Afficher les configurations, puis cliquez sur le lien + qui s’affiche en regard de Configurations disponibles.
 
-1. Saisissez le nom de la configuration, puis cliquez ou appuyez sur Créer.
-1. Configurez les propriétés dans l’onglet Sites, Communautés et Ressources, puis cliquez ou appuyez sur OK.
+1. Saisissez le nom de la configuration, puis cliquez sur Créer.
+1. Configurez les propriétés dans l’onglet Sites, Communautés et Ressources, puis cliquez sur OK.
 
 ## Configuration des pages pour la traduction {#configuring-pages-for-translation}
 
@@ -208,16 +208,16 @@ En outre, pour les [Composants SCF](/help/communities/scf.md) des communautés 
 
 Associez une page au fournisseur de traduction que vous utilisez pour traduire la page et les pages descendantes.
 
-1. Dans la console Sites, sélectionnez la page à configurer, puis cliquez ou appuyez sur Afficher les propriétés.
-1. Cliquez ou appuyez sur Modifier , puis sur l’onglet Cloud Service .
-1. Cliquez ou appuyez sur Ajouter une configuration > Intégration de traduction.
-1. Sélectionnez le fournisseur de traduction à utiliser, puis cliquez ou appuyez sur Terminé.
+1. Dans la console Sites, sélectionnez la page à configurer, puis cliquez sur Afficher les propriétés.
+1. Cliquez sur Modifier , puis sur l’onglet Cloud Service .
+1. Cliquez sur Ajouter une configuration > Intégration de traduction.
+1. Sélectionnez le fournisseur de traduction à utiliser, puis cliquez sur Terminé.
 
 ### Association des pages à une structure d’intégration de traduction {#associating-pages-with-a-translation-integration-framework}
 
 Associez une page au framework d’intégration de traduction qui définit la façon dont vous souhaitez effectuer la traduction de la page et des pages descendantes.
 
-1. Dans la console Sites, sélectionnez la page à configurer, puis cliquez ou appuyez sur Afficher les propriétés.
-1. Cliquez ou appuyez sur Modifier , puis sur l’onglet Cloud Service .
-1. Cliquez ou appuyez sur Ajouter une configuration > Intégration de traduction.
-1. Sélectionnez la structure d’intégration de traduction à utiliser, puis cliquez ou appuyez sur Terminé.
+1. Dans la console Sites, sélectionnez la page à configurer, puis cliquez sur Afficher les propriétés.
+1. Cliquez sur Modifier , puis sur l’onglet Cloud Service .
+1. Cliquez sur Ajouter une configuration > Intégration de traduction.
+1. Sélectionnez la structure d’intégration de traduction à utiliser, puis cliquez sur Terminé.

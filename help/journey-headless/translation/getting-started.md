@@ -2,10 +2,10 @@
 title: Prise en main de la traduction découplée dans AEM
 description: Découvrez comment organiser votre contenu découplé et comment fonctionnent les outils de traduction AEM.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1489'
-ht-degree: 92%
+source-wordcount: '1472'
+ht-degree: 90%
 
 ---
 
@@ -78,15 +78,15 @@ L’architecte de contenu travaille à définir cette structure dès le début d
 
 Comme les modèles de contenu définissent la structure de votre contenu, vous devez savoir quels champs de vos modèles doivent être traduits. En règle générale, vous travaillez avec l’architecte de contenu pour définir ces éléments. Pour parcourir les champs de vos modèles de contenu, procédez comme suit.
 
-1. Accédez à **Outils**, **Ressources** -> **Modèles de fragment de contenu**.
-1. Les modèles de fragment de contenu sont généralement stockés dans une structure de dossiers. Appuyez ou cliquez sur le dossier de votre projet.
-1. Les modèles y sont répertoriés. Appuyez ou cliquez sur le modèle pour afficher les détails.
+1. Accédez à **Outils** > **Ressources** > **Modèles de fragment de contenu**.
+1. Les modèles de fragment de contenu sont généralement stockés dans une structure de dossiers. Cliquez sur le dossier du projet.
+1. Les modèles y sont répertoriés. Cliquez sur le modèle pour afficher les détails.
    ![Modèles de fragment de contenu](assets/content-fragment-models.png)
 1. L’**Éditeur de modèle de fragment de contenu** s’ouvre.
    1. La colonne de gauche contient les champs du modèle. C’est cette colonne qui nous intéresse.
    1. La colonne de droite contient les champs qui peuvent être ajoutés au modèle. Nous pouvons ignorer cette colonne.
       ![Éditeur de modèles de fragment de contenu](assets/content-fragment-model-editor.png)
-1. Appuyez ou cliquez sur l’un des champs du modèle. AEM le coche et les détails de ce champ s’affichent dans la colonne de droite.
+1. Cliquez sur l’un des champs du modèle. AEM le coche et les détails de ce champ s’affichent dans la colonne de droite.
    ![Détail de l’Éditeur de modèles de fragment de contenu](assets/content-fragment-model-editor-detail.png)
 
 Notez le contenu du champ **Nom de la propriété** pour tous les champs qui doivent être traduits. Vous aurez besoin de ces informations plus tard dans le parcours. Ces **Noms de la propriété** sont nécessaires pour indiquer à AEM quels champs de votre contenu doivent être traduits.
@@ -192,4 +192,4 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de tra
 * [Gestion de projets de traduction](/help/sites-administering/tc-manage.md) : découvrez comment créer et gérer des projets de traduction automatique et humaine dans AEM.
 * Un [Présentation d’AEM en tant que CMS sans affichage](/help/sites-developing/headless/introduction.md)
 * La variable [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
-* [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
+* [Tutorials pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)

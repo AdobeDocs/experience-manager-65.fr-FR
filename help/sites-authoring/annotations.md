@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 86%
+source-wordcount: '632'
+ht-degree: 65%
 
 ---
 
@@ -65,15 +65,15 @@ Le mode Annotation permet de créer, modifier, déplacer ou supprimer des annota
 
    >[!NOTE]
    >
-   >Pour quitter le mode Annotation, appuyez/cliquez sur l’icône Annoter (symbole x) située à droite de la barre d’outils supérieure.
+   >Pour quitter le mode Annotation, cliquez sur l’icône Annoter (symbole x) située à droite de la barre d’outils supérieure.
 
-1. Cliquez/appuyez sur l’icône Ajouter une annotation (symbole plus à gauche de la barre d’outils) pour commencer à ajouter des annotations.
+1. Cliquez sur l’icône Ajouter une annotation (symbole plus à gauche de la barre d’outils) pour commencer à ajouter des annotations.
 
    >[!NOTE]
    >
-   >Pour arrêter l’ajout d’annotations (et revenir à l’affichage), appuyez/cliquez sur l’icône Annuler (symbole x dans un cercle blanc) à gauche de la barre d’outils supérieure.
+   >Pour arrêter l’ajout d’annotations (et revenir à l’affichage), cliquez sur l’icône Annuler (symbole x dans un cercle blanc) à gauche de la barre d’outils supérieure.
 
-1. Cliquez/appuyez sur le composant requis (les composants qui peuvent être annotés sont encadrés en bleu) pour ajouter l’annotation et ouvrir la boîte de dialogue :
+1. Cliquez sur le composant requis (les composants pouvant être annotés seront mis en surbrillance avec une bordure bleue) pour ajouter l’annotation et ouvrir la boîte de dialogue :
 
    ![screen_shot_2018-03-22at110606](assets/screen_shot_2018-03-22at110606.png)
 
@@ -100,17 +100,17 @@ Le mode Annotation permet de créer, modifier, déplacer ou supprimer des annota
 
 1. Après avoir modifié une annotation, vous pouvez effectuer ce qui suit :
 
-   * Cliquez ou appuyez sur le marqueur de texte pour ouvrir l’annotation. Une fois ouverte, vous pouvez afficher tout le texte, apporter des modifications ou supprimer l’annotation.
+   * Cliquez sur le marqueur de texte pour ouvrir l’annotation. Une fois ouverte, vous pouvez afficher tout le texte, apporter des modifications ou supprimer l’annotation.
 
       * Les esquisses ne peuvent pas être supprimées indépendamment de l’annotation.
 
    * Repositionner la marque de texte.
-   * Cliquez/appuyez sur un trait du schéma pour le sélectionner et le faire glisser jusqu’à la position voulue.
+   * Cliquez sur une ligne d’esquisse pour la sélectionner et faites-la glisser jusqu’à l’emplacement souhaité.
    * Déplacer ou copier un composant.
 
       * Toutes les annotations qui lui sont associées, ainsi que leurs esquisses, sont également déplacées ou copiées, mais leur position par rapport au paragraphe demeure inchangée.
 
-1. Pour quitter le mode Annotation et revenir au mode précédent, appuyez/cliquez sur l’icône Annoter (symbole x) à droite de la barre d’outils supérieure.
+1. Pour quitter le mode Annotation et revenir au mode précédemment utilisé, cliquez sur l’icône Annoter (symbole x) à droite de la barre d’outils supérieure.
 
 >[!NOTE]
 >

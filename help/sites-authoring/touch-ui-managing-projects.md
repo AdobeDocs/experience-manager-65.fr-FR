@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 89%
+source-wordcount: '964'
+ht-degree: 80%
 
 ---
 
@@ -34,7 +34,7 @@ Pour ce faire, le plus facile consiste à octroyer au groupe **projects-users** 
 
 Pour créer un projet, procédez comme suit.
 
-1. Dans la console **Projets**, appuyez/cliquez sur **Créer** pour ouvrir l’assistant **Créer un projet**.
+1. Dans le **Projets** console, cliquez sur **Créer** pour ouvrir le **Créer un projet** assistant.
 1. Sélectionnez le modèle, puis cliquez sur **Suivant**. Vous pouvez en savoir plus sur les modèles de projet standard [ici.](/help/sites-authoring/projects.md#project-templates)
 
    ![Assistant Créer un projet](assets/create-project-wizard.png)
@@ -43,7 +43,7 @@ Pour créer un projet, procédez comme suit.
 
    ![Étape Propriétés de l’assistant](assets/create-project-wizard-properties.png)
 
-1. Cliquez/appuyez sur **Créer**. Le message de confirmation vous demande si vous voulez ouvrir votre projet ou revenir à la console.
+1. Cliquez sur **Créer**. Le message de confirmation vous demande si vous voulez ouvrir votre projet ou revenir à la console.
 
 La procédure de création d’un projet est la même pour tous les modèles de projet. La différence entre les types de projets porte sur les [rôles utilisateur](/help/sites-authoring/projects.md) et les [workflows](/help/sites-authoring/projects-with-workflows.md) disponibles.
 
@@ -54,11 +54,11 @@ Les projets vous permettent de regrouper des ressources dans une seule entité p
 Pour associer des ressources à votre projet :
 
 1. Ouvrez votre projet à partir de la console **Projets**.
-1. Appuyez/cliquez sur **Ajouter une mosaïque** et sélectionnez la mosaïque à lier à votre projet. Vous pouvez sélectionner plusieurs types de mosaïque.
+1. Cliquez sur **Ajouter une mosaïque** et sélectionnez la mosaïque à lier à votre projet. Vous pouvez sélectionner plusieurs types de mosaïque.
 
    ![Ajouter une mosaïque](assets/project-add-tile.png)
 
-1. Cliquez/appuyez sur **Créer**. La ressource est désormais associée à votre projet et vous pouvez y accéder à partir du projet.
+1. Cliquez sur **Créer**. La ressource est désormais associée à votre projet et vous pouvez y accéder à partir du projet.
 
 ### Ajout d’éléments à une mosaïque {#adding-items-to-a-tile}
 
@@ -84,7 +84,7 @@ Vous pouvez afficher les éléments inclus dans une mosaïque actuelle ou modifi
 
 Pour ouvrir une mosaïque afin d’afficher ou de modifier des éléments :
 
-1. Appuyez ou cliquez sur l’icône représentant des points de suspension en bas à droite de la mosaïque.
+1. Cliquez sur l’icône représentant des points de suspension en bas à droite de la mosaïque.
 
    ![Mosaïque Tâches](assets/project-tile-tasks.png)
 
@@ -96,7 +96,7 @@ Pour ouvrir une mosaïque afin d’afficher ou de modifier des éléments :
 
 La chronologie du projet fournit des informations sur le moment auquel les ressources du projet ont été utilisées pour la dernière fois. Pour afficher la chronologie du projet, procédez comme suit.
 
-1. Dans la console **Projets**, cliquez ou appuyez sur **Chronologie** dans le sélecteur de rail en haut à gauche de la console.
+1. Dans le **Projets** console, cliquez sur **Chronologie** dans le sélecteur de rail en haut à gauche de la console.
    ![Sélection du mode Chronologie](assets/projects-timeline-rail.png)
 2. Dans la console, sélectionnez le projet pour lequel vous souhaitez afficher la chronologie.
    ![Mode Chronologie du projet](assets/project-timeline-view.png)
@@ -119,7 +119,7 @@ Plusieurs options permettent d’organiser vos projets de manière à faciliter 
 
 Vous pouvez créer des dossiers dans la console **Projets** pour regrouper et organiser des projets similaires.
 
-1. Dans la console **Projets**, appuyez ou cliquez sur **Créer**, puis sur **Créer un dossier**.
+1. Dans le **Projets** clic sur la console **Créer** puis **Créer un dossier**.
 
    ![Créer un dossier](assets/project-create-folder.png)
 
@@ -141,7 +141,7 @@ Pour rendre un projet inactif, procédez comme suit.
 
    ![Sélecteur de statut du projet dans la fenêtre des propriétés](assets/project-status.png)
 
-1. Appuyez ou cliquez sur **Enregistrer et fermer** pour enregistrer les modifications.
+1. Cliquez sur **Enregistrer et fermer** pour enregistrer vos modifications.
 
 ### Suppression de projets {#deleting-a-project}
 
@@ -149,13 +149,13 @@ Pour supprimer un projet, procédez comme suit.
 
 1. Accédez au niveau supérieur de la **Projets** console.
 1. Sélectionnez votre projet dans la console.
-1. Appuyez ou cliquez sur **Supprimer** dans la barre d’outils.
+1. Cliquez sur **Supprimer** dans la barre d’outils.
 1. AEM peut supprimer ou modifier les données associées au projet lors de la suppression du projet. Sélectionnez les options dont vous avez besoin dans la boîte de dialogue **Supprimer le projet**.
    * Supprimer les groupes de projets et les rôles
    * Supprimer le dossier de ressources du projet
    * Arrêter les workflows de projet
 
    ![Options de suppression de projet](assets/project-delete-options.png)
-1. Appuyez ou cliquez sur **Supprimer** pour supprimer le projet avec les options sélectionnées.
+1. Cliquez sur **Supprimer** pour supprimer le projet avec les options sélectionnées.
 
 Pour en savoir plus sur les groupes créés automatiquement par les projets, consultez la section [Création automatique de groupe](/help/sites-authoring/projects.md#auto-group-creation) pour plus d’informations.

@@ -1,8 +1,8 @@
 ---
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 62%
+source-wordcount: '505'
+ht-degree: 52%
 
 ---
 # Contribution à la documentation d’Adobe Experience Manager
@@ -30,19 +30,19 @@ La méthode choisie dépend de votre aisance pour modifier vous-même la documen
 
 >[!NOTE]
 >
->Les contributions proposées entrent dans le champ d’application des [Conditions d’utilisation d’Adobe](https://www.adobe.com/fr/legal/terms.html).
+>Les contributions que vous soumettez sont couvertes par la variable [Conditions d’utilisation de l’Adobe](https://www.adobe.com/fr/legal/terms.html).
 
 ### Création d’une demande {#create-an-issue}
 
 Vous avez une suggestion, une observation à propos des documents actuels ou une question sur la manière dont un élément est décrit ? Créez ensuite un problème. Les propositions relatives aux problèmes sont également excellentes si vous souhaitez apporter votre contribution, mais que vous n’êtes pas habitué à modifier les documents ou à générer vous-même une demande d’extraction.
 
-Les problèmes vous permettent de décrire facilement vos idées d’amélioration des documents, avant examen par un membre de l’équipe AEM Docs. Pour créer un problème, il suffit de cliquer sur le lien **Log an issue** (Soumettre un problème) en haut du panneau de navigation de droite d’une page.
+Les problèmes vous permettent de décrire facilement vos idées d’amélioration des documents, avant examen par un membre de l’équipe AEM Docs. Il vous suffit de cliquer sur **Enregistrer un problème** lien situé en haut du panneau de navigation de droite d’une page pour créer un problème.
 
 ### Créer une demande d’extraction {#create-a-pull-request}
 
 Si vous rencontrez un problème et savez exactement comment le résoudre, envisagez de créer une demande d’extraction. Les demandes d’extraction vous permettent d’apporter vos propres modifications à la documentation, avant examen pour inclusion par un membre de l’équipe Docs AEM. Il vous suffit de cliquer sur **Modifier cette page** lien situé en haut du panneau de navigation de droite d’une page pour apporter les modifications suggérées et créer la requête d’extraction.
 
-Toutes les demandes d’extraction doivent être accompagnées d’un [contrat de licence de contributeur (CLA) signé](https://opensource.adobe.com/cla.html). Cela donne à Adobe l’autorisation de redistribuer vos contributions
+Toutes les demandes d’extraction doivent être accompagnées d’un [contrat de licence du contributeur ou CLA](https://opensource.adobe.com/cla.html). Cela donne à Adobe l’autorisation de redistribuer vos contributions
 dans le cadre du projet. Vous n’avez besoin de soumettre un CLA Adobe qu’une seule fois. Par conséquent, si vous l’avez déjà soumis, vous n’avez rien à faire.
 
 ### Présentation rapide en vidéo

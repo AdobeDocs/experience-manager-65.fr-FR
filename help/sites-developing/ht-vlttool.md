@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2687'
 ht-degree: 82%
 
 ---
@@ -313,7 +313,7 @@ Le tableau suivant décrit toutes les commandes VLT disponibles. Reportez-vous �
 | Commande | Commande abrégée | Description |
 | `export` |  | Exporte à partir d’un référentiel JCR (système de fichiers Vault) vers le système de fichiers local, sans fichiers de contrôle. |
 | `import` |  | Importe un système de fichiers local dans un référentiel JCR (système de fichiers Vault). |
-| `checkout` | `co` | Extrait un système de fichiers Vault. Utilisez cette option pour un référentiel JCR initial dans le système de fichiers local. (Remarque : vous devez d’abord extraire le référentiel dans Subversion.) |
+| `checkout` | `co` | Extrait un système de fichiers Vault. Utilisez cette option pour un référentiel JCR initial dans le système de fichiers local. (Remarque : commencez par extraire le référentiel dans subversion.) |
 | `analyze` |  | Analyse les packages. |
 | `status` | `st` | Imprime le statut des fichiers et des répertoires de travail. |
 | `update` | `up` | Importe les modifications du référentiel dans la copie de travail. |
@@ -440,7 +440,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | format printf pour les liens de correctif (nom, id), par exemple, `[CQ520_HF_%s|%s]` |
+| `-l (--linkFormat) <format>` | format printf pour les liens de correctif (nom,id), par exemple, `[CQ520_HF_%s|%s]` |
 | `-v (--verbose)` | Sortie verbose |
 | `-q (--quiet)` | Imprime aussi petit que possible. |
 | `<localPaths> [<localPaths> ...]` | chemin local |

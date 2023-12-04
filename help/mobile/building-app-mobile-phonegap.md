@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 2%
+source-wordcount: '1028'
+ht-degree: 1%
 
 ---
 
@@ -29,8 +29,8 @@ Un article complet détaillé sur la création d’une application mobile à l�
 
 Déplacez les fichiers d’application vers l’instance de publication afin de pouvoir fournir des mises à jour de contenu aux instances installées de l’application mobile et de créer l’application à l’aide du contenu publié. Les applications se composent de deux branches de noeud dans le référentiel :
 
-* `/content/phonegap/apps/<application name>`: Pages web que les auteurs créent et activent.
-* `/content/phonegap/content/<application name>`: Fichiers de configuration d’application et configurations de synchronisation de contenu.
+* `/content/phonegap/apps/<application name>`: les pages web que les auteurs créent et activent.
+* `/content/phonegap/content/<application name>`: fichiers de configuration de l’application et configurations de synchronisation de contenu.
 
 >[!NOTE]
 >
@@ -41,9 +41,9 @@ Il vous suffit de déplacer les fichiers dans la variable `/content/phonegap/con
 AEM fournit deux méthodes pour déplacer du contenu en bloc vers l’instance de publication :
 
 * [Utilisation de la commande Activer l’arborescence](/help/sites-authoring/publishing-pages.md) sur la console de réplication.
-* [Créer un package](/help/sites-administering/package-manager.md) qui contient le contenu et réplique le module.
+* [Création d’un package](/help/sites-administering/package-manager.md) qui contient le contenu et réplique le module.
 
-Par exemple, une application mobile nommée phonegapapp est créée. Le noeud suivant doit être déplacé vers l’instance de publication : /content/phonegap/content/phonegapapp
+Par exemple, une application mobile nommée phonegapapp est créée. Le noeud suivant doit être déplacé vers l’instance de publication : /content/phonegap/content/phonegapapp.
 
 **Conseil :** Pour déplacer un module de l’instance d’auteur vers l’instance de publication, utilisez la commande Répliquer du module.
 
@@ -101,7 +101,7 @@ Déplacez le contenu de votre application mobile vers votre système de fichiers
    >
    >Le cache contient les mises à jour de contenu pour les applications installées. L’effacement du cache empêche toutes les mises à jour mises en cache.
 
-1. Dans la barre d’outils, cliquez ou appuyez sur l’icône Télécharger les ressources de l’interface de ligne de commande.
+1. Dans la barre d’outils, cliquez sur l’icône Télécharger les ressources de l’interface de ligne de commande.
 
    ![Icône Télécharger les ressources en ligne de commande indiquée par le symbole de tablette qui se chevauche.](do-not-localize/chlimage_1-1.png)
 
@@ -128,12 +128,12 @@ Utilisez l’interface de ligne de commande PhoneGap pour compiler et installer 
 
 Utilisez le service cloud PhoneGap pour créer votre application. Pour effectuer cette procédure, vous devez d’abord créer une configuration de PhoneGap Build.
 
-### Connexion à PhoneGap Build {#connecting-to-phonegap-build}
+### Connexion au PhoneGap Build {#connecting-to-phonegap-build}
 
 Créez une configuration de PhoneGap Build afin de pouvoir utiliser les services de PhoneGap Build depuis AEM. Indiquez le nom d’utilisateur et le mot de passe du compte PhoneGap Build que vous utiliserez pour créer vos applications mobiles.
 
 1. Ouvrez la page Outils . ([http://localhost:4502/tools.html](http://localhost:4502/tools.html)).
-1. Dans la zone Opérations CQ, cliquez sur Cloud Services.
+1. Dans la zone Opérations CQ, cliquez sur Cloud Service.
 1. Cliquez sur le lien Configurer maintenant pour PhoneGap Build.
 
    ![chlimage_1-17](assets/chlimage_1-17.png)

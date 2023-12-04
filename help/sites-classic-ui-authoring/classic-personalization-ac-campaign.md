@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1185'
 ht-degree: 49%
 
 ---
@@ -81,7 +81,7 @@ En outre, vous devrez peut-être également sélectionner le modèle Adobe Campa
 
    >[!NOTE]
    >
-   >Veillez à appuyer/cliquer sur **OK** ou **Appliquer** après avoir ajouté le service cloud. Cela active la variable **Adobe Campaign** pour fonctionner correctement.
+   >Veillez à cliquer sur **OK** ou **Appliquer** après avoir ajouté le service cloud. Cela active la variable **Adobe Campaign** pour fonctionner correctement.
 
 1. Si vous souhaitez appliquer un modèle de diffusion par e-mail spécifique (à partir d’Adobe Campaign), autre que le modèle d’**e-mail** par défaut, sélectionnez de nouveau **Propriétés de la page**. Sous l’onglet **Adobe Campaign**, entrez le nom interne du modèle de diffusion par e-mail dans l’instance Adobe Campaign associée.
 

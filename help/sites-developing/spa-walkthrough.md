@@ -4,9 +4,9 @@ description: Cet article présente les concepts d’une SPA et décrit l’utili
 topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1950'
+source-wordcount: '1945'
 ht-degree: 88%
 
 ---

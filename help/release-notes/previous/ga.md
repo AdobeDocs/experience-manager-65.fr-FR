@@ -2,10 +2,10 @@
 title: Notes générales de mise à jour d’ [!DNL Adobe Experience Manager]  6.5
 description: « Notes relatives à [!DNL Adobe Experience Manager] 6.5, décrivant les informations, les nouveautés, la procédure d’installation et les listes détaillées des modifications pour la version. »
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4676'
-ht-degree: 99%
+source-wordcount: '4484'
+ht-degree: 98%
 
 ---
 
@@ -218,7 +218,7 @@ Pour plus d’informations sur les modifications apportées à AEM Screens, con
 
 #### Gestion multisite (MSM, Multi-Site Management) {#multi-site-management-msm}
 
-* Pour les configurations de déploiement utilisant PushOnModify : amélioration de la gestion de l’opération de déplacement de page pour éviter les incohérences.
+* Pour les configurations de déploiement qui utilisent PushOnModify, une meilleure gestion de l’opération de déplacement de page afin d’éviter un état incohérent.
 * La création d’une page dans la structure de Live Copy crée une page autonome par défaut.
 * Utilisez les fonctionnalités MSM dans les applications monopages utilisant le SDK JS (également appelé Editeur de SPA).
 
@@ -428,7 +428,7 @@ AEM Forms 6.5 comporte plusieurs nouvelles fonctionnalités et améliorations.
 
 Consultez le [Résumé des nouvelles fonctionnalités et améliorations apportées à AEM 6.5 Forms](/help/forms/using/whats-new.md) pour plus d’informations sur les fonctionnalités nouvelles et améliorées et les ressources de documentation.
 
-### Utiliser le développement axé sur le client {#leverage-customer-focused-development}
+### Utiliser le développement axé sur le client {#use-customer-focused-development}
 
 Adobe applique un modèle de développement axé sur les clients et clientes afin qu’ils puissent contribuer à toutes les étapes du processus de développement, au cours des phases de spécification, de développement et de tests. Merci à tous les utilisateurs, utilisatrices et partenaires qui contribuent à ce processus.
 
@@ -487,10 +487,10 @@ L’interface utilisateur de est disponible dans les langues suivantes :
 * Français
 * Espagnol
 * Italien
-* Portugais brésilien
+* Portugais du Brésil
 * Japonais
 * Chinois simplifié
-* Chinois traditionnel  (prise en charge limitée)
+* Chinois traditionnel (prise en charge limitée)
 * Coréen
 
 [!DNL Experience Manager] 6.5 a été certifié dans le cadre de la norme GB18030-2005 CITS pour utiliser le codage des caractères chinois.
@@ -507,7 +507,7 @@ Recherchez la matrice complète des plateformes prises en charge, y compris le n
 
 >[!NOTE]
 >
->Oracle est passé à un modèle de support à long terme (LTS) pour les produits Oracle Java™ SE. Java™ 9 et 10 sont des versions non-LTS fournies par Oracle. Consultez la [feuille de route de la prise en charge d’Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html). Adobe assure uniquement la prise en charge des versions LTS de Java™ pour n’exécuter AEM qu’en exploitation. La version 11 de Java™ est recommandée pour une utilisation avec AEM 6.5.
+>Oracle est passé à un modèle de support à long terme (LTS) pour les produits Oracle Java™ SE. Java™ 9 et 10 sont des versions non-LTS par Oracle. Voir [Feuille de route du support Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html). Adobe assure uniquement la prise en charge des versions LTS de Java™ pour n’exécuter AEM qu’en exploitation. La version 11 de Java™ est recommandée pour une utilisation avec AEM 6.5.
 
 ## Fonctionnalités obsolètes et supprimées {#deprecated-and-removed-features}
 

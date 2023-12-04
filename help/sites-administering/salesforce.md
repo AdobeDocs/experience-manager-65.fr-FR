@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 0f3aaa0a-ccfb-4162-97a6-ee5485595d28
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1553'
-ht-degree: 41%
+source-wordcount: '1530'
+ht-degree: 40%
 
 ---
 
@@ -107,7 +107,7 @@ Pour exporter AEM utilisateurs en tant que prospects Salesforce, procédez comme
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
-1. Sélectionnez l’utilisateur AEM que vous souhaitez créer en tant que prospect en tant que **Payload** pour ce workflow (accueil -> utilisateurs). Veillez à sélectionner le noeud de profil de l’utilisateur, car il contient des informations telles que **givenName**, et  **familyName**, qui sont mappés aux pistes Salesforce **FirstName** et **LastName** des champs.
+1. Sélectionnez l’utilisateur AEM que vous souhaitez créer en tant que prospect en tant que **Payload** pour ce workflow (accueil > utilisateurs). Veillez à sélectionner le noeud de profil de l’utilisateur, car il contient des informations telles que **givenName**, et  **familyName**, qui sont mappés aux pistes Salesforce **FirstName** et **LastName** des champs.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2073'
+source-wordcount: '2072'
 ht-degree: 74%
 
 ---
@@ -146,7 +146,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Plage de dates </td>
+   <td>Période </td>
    <td>Recherche de ressources créées dans une plage spécifiée pour une propriété de date. Dans le panneau Rechercher, vous pouvez spécifier des dates de début et de fin.</td>
    <td>
     <ul>
@@ -180,7 +180,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Masqué  Filtrer</td>
+   <td>Filtre masqué</td>
    <td>Filtrez selon la propriété et la valeur, invisible pour l’utilisateur.</td>
    <td>
     <ul>
@@ -209,7 +209,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     <ul>
      <li>Libellé du champ</li>
      <li>Nom de la propriété*</li>
-     <li>Chemin d’accès au nœud d’options<br /> </li>
+     <li>Chemin du noeud d’options<br /> </li>
      <li>Sélection simple</li>
      <li>Description</li>
     </ul> </td>
@@ -506,7 +506,7 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
 
 1. Ouvrez la console **Formulaires de recherche** et sélectionnez la configuration à mettre à jour. Par exemple, le **rail de recherche d’administration de sites**.
 
-   Ensuite, cliquez/appuyez sur le bouton **Modifier les formulaires de recherche** Icône
+   Cliquez ensuite sur le bouton **Modifier les formulaires de recherche** Icône
 
 1. Selon la configuration, ajoutez une **Options** ou **Propriété Options** à la configuration.
 1. Mettez à jour les champs, notamment :

@@ -8,10 +8,10 @@ content-type: reference
 feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 44%
+source-wordcount: '984'
+ht-degree: 34%
 
 ---
 
@@ -56,12 +56,12 @@ Si le fragment de contenu inclut une collection, les ressources de la collection
 
 Pour pouvoir traduire des fragments de contenu contenant des supports variés, modifiez d’abord la structure de traduction par défaut afin de permettre la traduction des ressources et collections intégrées associées aux fragments de contenu.
 
-1. Cliquez/appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Déploiement > Services cloud]**.
-1. Localisez **[!UICONTROL Intégration de traduction]** sous **[!UICONTROL Adobe Marketing Cloud]**, puis cliquez/appuyez sur **[!UICONTROL Afficher les configurations]**.
+1. Cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils > Déploiement > Cloud Service]**.
+1. Localiser **[!UICONTROL Intégration de traduction]** under **[!UICONTROL Adobe Marketing Cloud]**, puis cliquez sur **[!UICONTROL Afficher les configurations]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
 
-1. Dans la liste des configurations disponibles, cliquez/appuyez sur **[!UICONTROL Configuration par défaut (configuration de l’intégration de traduction)]** afin d’ouvrir la page **[!UICONTROL Configuration par défaut]**.
+1. Dans la liste des configurations disponibles, cliquez sur **[!UICONTROL Configuration par défaut (configuration de l’intégration de traduction)]** pour ouvrir le **[!UICONTROL Configuration par défaut]** page.
 
    ![chlimage_1-445](assets/chlimage_1-445.png)
 
@@ -69,7 +69,7 @@ Pour pouvoir traduire des fragments de contenu contenant des supports variés, m
 
    ![chlimage_1-446](assets/chlimage_1-446.png)
 
-1. Accédez au **[!UICONTROL Ressources]** et sélectionnez **[!UICONTROL Ressources multimédias intégrées et collections associées]** de la **[!UICONTROL Traduire des ressources de fragments de contenu]** liste. Cliquez/appuyez sur **[!UICONTROL OK]** pour enregistrer les modifications.
+1. Accédez au **[!UICONTROL Ressources]** et sélectionnez **[!UICONTROL Ressources multimédias intégrées et collections associées]** de la **[!UICONTROL Traduire des ressources de fragments de contenu]** liste. Pour enregistrer les modifications, cliquez sur **[!UICONTROL OK]**.
 
    ![chlimage_1-447](assets/chlimage_1-447.png)
 
@@ -77,7 +77,7 @@ Pour pouvoir traduire des fragments de contenu contenant des supports variés, m
 
    ![chlimage_1-448](assets/chlimage_1-448.png)
 
-1. Cliquez/appuyez sur l’icône **[!UICONTROL Insérer une ressource]**.
+1. Cliquez sur le bouton **[!UICONTROL Insérer une ressource]** Icône
 
    ![chlimage_1-449](assets/chlimage_1-449.png)
 
@@ -85,28 +85,28 @@ Pour pouvoir traduire des fragments de contenu contenant des supports variés, m
 
    ![insérer une ressource dans le fragment de contenu](assets/column-view.png)
 
-1. Cliquez/appuyez sur l’icône **[!UICONTROL Associer le contenu]**.
+1. Cliquez sur le bouton **[!UICONTROL Associer du contenu]** Icône
 
    ![chlimage_1-451](assets/chlimage_1-451.png)
 
-1. Cliquez/appuyez sur **[!UICONTROL Associer le contenu]**.
+1. Cliquez sur **[!UICONTROL Associer du contenu]**.
 
    ![chlimage_1-452](assets/chlimage_1-452.png)
 
-1. Sélectionnez une collection et incluez-la dans le fragment de contenu. Cliquez/appuyez sur **[!UICONTROL Enregistrer]**.
+1. Sélectionnez une collection et incluez-la dans le fragment de contenu. Cliquez sur **[!UICONTROL Enregistrer]**.
 
    ![chlimage_1-453](assets/chlimage_1-453.png)
 
-1. Sélectionnez le fragment de contenu, puis cliquez/appuyez sur la **[!UICONTROL Navigation globale]** Icône
+1. Sélectionnez le fragment de contenu, puis cliquez sur le bouton **[!UICONTROL Navigation globale]** Icône
 1. Sélectionner **[!UICONTROL Références]** dans le menu pour afficher la variable **[!UICONTROL Références]** volet.
 
    ![chlimage_1-454](assets/chlimage_1-454.png)
 
-1. Cliquez/appuyez sur **[!UICONTROL Copies de langue]** sous **[!UICONTROL Copies]** afin d’afficher les copies de langue.
+1. Cliquez sur **[!UICONTROL Copies de langue]** under **[!UICONTROL Copies]** pour afficher les copies de langue.
 
    ![chlimage_1-455](assets/chlimage_1-455.png)
 
-1. Cliquez/appuyez sur **[!UICONTROL Créer et traduire]** en bas du panneau afin d’afficher la boîte de dialogue **[!UICONTROL Créer et traduire]**.
+1. Cliquez sur **[!UICONTROL Créer et traduire]** dans la partie inférieure du panneau pour afficher la variable **[!UICONTROL Créer et traduire]** boîte de dialogue.
 
    ![chlimage_1-456](assets/chlimage_1-456.png)
 
@@ -118,7 +118,7 @@ Pour pouvoir traduire des fragments de contenu contenant des supports variés, m
 
    ![chlimage_1-458](assets/chlimage_1-458.png)
 
-1. Indiquez le titre du projet dans le champ **[!UICONTROL Titre du projet]**, puis cliquez/appuyez sur **Créer**.
+1. Indiquez le titre du projet dans la variable **[!UICONTROL Titre du projet]** puis cliquez sur **Créer**.
 
    ![chlimage_1-459](assets/chlimage_1-459.png)
 
@@ -126,7 +126,7 @@ Pour pouvoir traduire des fragments de contenu contenant des supports variés, m
 
    ![chlimage_1-460](assets/chlimage_1-460.png)
 
-1. Cliquez/appuyez sur la mosaïque du projet pour ouvrir la page des détails du projet.
+1. Cliquez sur la mosaïque du projet pour ouvrir la page des détails du projet.
 
    ![chlimage_1-461](assets/chlimage_1-461.png)
 
@@ -139,7 +139,7 @@ Pour pouvoir traduire des fragments de contenu contenant des supports variés, m
 
    ![chlimage_1-463](assets/chlimage_1-463.png)
 
-1. Cliquez/appuyez sur le fragment de contenu afin de vérifier le chemin d’accès des ressources associées traduites.
+1. Cliquez sur le fragment de contenu pour vérifier le chemin d’accès aux ressources associées traduites.
 
    ![chlimage_1-464](assets/chlimage_1-464.png)
 

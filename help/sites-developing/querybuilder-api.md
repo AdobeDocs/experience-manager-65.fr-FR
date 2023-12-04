@@ -8,10 +8,10 @@ content-type: reference
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2285'
-ht-degree: 73%
+source-wordcount: '2033'
+ht-degree: 67%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 73%
 
 La fonctionnalité de la variable [Générateur de requêtes de partage de ressources](/help/assets/assets-finder-editor.md) est exposé par le biais d’une API Java™ et d’une API REST. Cette section décrit ces API.
 
-Le générateur de requêtes côté serveur ([`QueryBuilder`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html)) accepte une description de requête, crée et exécute une requête XPath, filtre éventuellement le jeu de résultats et, si vous le souhaitez, extrait également des facettes.
+Créateur de requêtes côté serveur ( [`QueryBuilder`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html)) accepte une description de requête, crée et exécute une requête XPath, filtre éventuellement le jeu de résultats et extrait également les facettes, le cas échéant.
 
 La description de requête correspond simplement à un ensemble de prédicats ([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html)). Par exemple, un prédicat de texte intégral correspond à la fonction `jcr:contains()` dans XPath.
 
@@ -43,7 +43,7 @@ L’API REST permet d’accéder aux mêmes fonctionnalités via HTTP avec les r
 
 Ces exemples sont fournis dans la notation de style des propriétés Java™. Pour les utiliser avec l’API Java™, utilisez une `HashMap` Java™ comme dans l’exemple d’API suivant.
 
-Pour le servlet JSON `QueryBuilder`, chaque exemple comprend un lien vers votre installation CQ locale (à l’emplacement par défaut, `http://localhost:4502`). Vous devez vous connecter à votre instance CQ avant d’utiliser ces liens.
+Pour le servlet JSON `QueryBuilder`, chaque exemple comprend un lien vers votre installation CQ locale (à l’emplacement par défaut, `http://localhost:4502`). Connectez-vous à votre instance CQ avant d’utiliser ces liens.
 
 >[!CAUTION]
 >
@@ -197,7 +197,7 @@ Utilisez le prédicat `tagid`, comme dans l’exemple, si vous connaissez l’I
 
 Utilisez le prédicat `tag` pour le chemin d’accès au titre de la balise (sans espaces).
 
-Étant donné que vous recherchiez des pages dans l’exemple précédent (nœuds `cq:Page`), utilisez le chemin d’accès relatif à partir de ce nœud pour le prédicat `tagid.property`, à savoir `jcr:content/cq:tags`. Par défaut, le prédicat `tagid.property` est simplement `cq:tags`.
+Dans l’exemple précédent, car vous recherchez des pages ( `cq:Page` ), utilisez le chemin d’accès relatif à partir de ce noeud pour la variable `tagid.property` prédicat, qui est `jcr:content/cq:tags`. Par défaut, le prédicat `tagid.property` est simplement `cq:tags`.
 
 ### Recherche dans plusieurs chemins d’accès (à l’aide de groupes) {#search-under-multiple-paths-using-groups}
 
@@ -262,7 +262,7 @@ type=cq:Page
 
 ### Recherche de plusieurs valeurs de propriété {#search-for-multiple-property-values}
 
-Pour éviter la constitution de groupes volumineux lorsque vous souhaitez rechercher plusieurs valeurs d’une propriété (`"A" or "B" or "C"`), vous pouvez fournir plusieurs valeurs au prédicat `property` :
+Pour éviter les groupes de grande taille lorsque vous souhaitez rechercher plusieurs valeurs d’une propriété ( `"A" or "B" or "C"`), vous pouvez fournir plusieurs valeurs à la variable `property` prédicat :
 
 `http://localhost:4502/bin/querybuilder.json?property=jcr%3atitle&property.1_value=Products&property.2_value=Square&property.3_value=Events`
 
@@ -321,7 +321,7 @@ Séparées par un espace :
 
 `http://localhost:4502/bin/querybuilder.json?p.hits=selective&property=jcr%3atitle&property.value=Triangle`
 
-[`http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle) [p.hits=selective&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.nodedepth=5&amp;p.properties=sling%3aresourceType%20jcr%3apath&amp;property=jcr%3atitle&amp;property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
+[`http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle) [p.hits=sélective&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.nodedepth=5&amp;p.properties=sling%3aresourceType%20jcr%3apath&amp;property=jcr%3atitle&amp;property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
 
 ```xml
 property=jcr:title

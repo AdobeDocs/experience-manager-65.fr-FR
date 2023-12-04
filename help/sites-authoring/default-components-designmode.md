@@ -2,10 +2,10 @@
 title: Configuration des composants par défaut en mode de conception
 description: Configuration des composants Adobe Experience Manager en mode de conception.
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 86%
+source-wordcount: '905'
+ht-degree: 81%
 
 ---
 
@@ -56,11 +56,11 @@ Pour activer ou désactiver un composant :
 
    ![screen_shot_2018-03-22at103113](assets/screen_shot_2018-03-22at103113.png)
 
-1. Appuyez ou cliquez sur un composant. Une bordure bleue s’affiche pour le composant lorsqu’il est sélectionné.
+1. Cliquez sur un composant. Une bordure bleue s’affiche pour le composant lorsqu’il est sélectionné.
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Cliquez ou appuyez sur l’icône **Parent**.
+1. Cliquez sur le bouton **Parent** Icône
 
    ![Parent](do-not-localize/screen_shot_2018-03-22at103204.png)
 
@@ -109,7 +109,7 @@ Pour activer ou désactiver un composant :
 
    ![screen_shot_2018-03-22at103113-1](assets/screen_shot_2018-03-22at103113-1.png)
 
-1. Appuyez ou cliquez sur un composant avec une bordure bleue. Dans cet exemple, un composant d’image de premier plan est sélectionné.
+1. Cliquez sur un composant avec une bordure bleue. Dans cet exemple, un composant d’image principale est sélectionné.
 
    ![screen_shot_2018-03-22at103434](assets/screen_shot_2018-03-22at103434.png)
 
@@ -153,4 +153,4 @@ Pour activer ou désactiver un composant :
 
    ![Déplacer](do-not-localize/screen_shot_2018-03-22at103816.png)
 
-1. Cliquez ou appuyez sur l’icône **Terminé** pour enregistrer et fermer la boîte de dialogue.
+1. Cliquez sur le bouton **Terminé** pour enregistrer et fermer la boîte de dialogue.

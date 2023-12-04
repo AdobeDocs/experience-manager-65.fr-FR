@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: d53ef3e2-14ca-4444-b563-be67be15c040
 exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 95%
+source-wordcount: '1281'
+ht-degree: 93%
 
 ---
 
@@ -96,7 +96,7 @@ Cette section présente uniquement les liens spécifiques à Adobe Campaign. Po
    * **Adobe Campaign : Désabonnement des services** : permet d’annuler les abonnements d’un ou d’une destinataire dans Adobe Campaign.
 
 1. Vous devez disposer d’un composant **Clé primaire chiffrée** (EPK) sur chaque formulaire. Ce composant définit le paramètre d’URL utilisé pour accepter la clé primaire chiffrée d’un profil Adobe Campaign. Dans Composants, sélectionnez Adobe Campaign afin que seuls ces composants soient visibles.
-1. Faites glisser le composant **Clé primaire chiffrée** sur le formulaire (n’importe où) et cliquez ou appuyez sur l’icône **Configuration**. Dans l’onglet **Adobe Campaign**, indiquez le nom du paramètre d’URL. Cliquez ou appuyez sur la coche pour enregistrer vos modifications.
+1. Faire glisser le composant **Clé de Principal chiffrée** dans le formulaire (n’importe où) et cliquez sur l’icône **Configuration** Icône Dans l’onglet **Adobe Campaign**, indiquez le nom du paramètre d’URL. Cliquez sur la coche pour enregistrer vos modifications.
 
    Les liens générés vers ce formulaire doivent utiliser ce paramètre d’URL et lui attribuer la clé primaire chiffrée d’un profil Adobe Campaign. La clé primaire chiffrée doit être correctement encodée en URL (pourcentage).
 

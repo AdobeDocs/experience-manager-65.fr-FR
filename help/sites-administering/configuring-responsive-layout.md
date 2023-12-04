@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1283'
-ht-degree: 95%
+source-wordcount: '1275'
+ht-degree: 92%
 
 ---
 
@@ -44,8 +44,8 @@ AEM effectue une mise en page réactive de vos pages en combinant plusieurs méc
 
         Le conteneur de dispositions peut être utilisé de manière standard pour la page, tout en permettant à l’utilisateur d’y ajouter d’autres conteneurs de mises en page, par exemple, pour contrôler les colonnes.
 
-* **[Mode Disposition](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-Une fois que le conteneur de disposition est positionné sur la page, vous pouvez utiliser la **Disposition** pour positionner le contenu dans la grille réactive.
+* **[Mode Mise en page](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
+Une fois le conteneur de mises en page positionné sur la page, vous pouvez utiliser la variable **Disposition** pour positionner le contenu dans la grille réactive.
 
 * [**Émulateur**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 Vous pouvez ainsi créer et modifier des sites web réactifs qui réorganisent la mise en page en fonction de la taille de l’appareil ou de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur ou l’utilisatrice peut alors voir comment le contenu est rendu à l’aide de l’émulateur.
@@ -63,7 +63,7 @@ Grâce à ces mécanismes de grille réactive, vous pouvez :
 
 >[!NOTE]
 >
->Dans une installation prête à l’emploi, une mise en page réactive a été configurée pour le [site de référence We.Retail](/help/sites-developing/we-retail.md). Vous devez encore [activer le composant Conteneur de dispositions](#enable-the-layout-container-component-for-page) pour d’autres pages.
+>Dans une installation prête à l’emploi, une mise en page réactive a été configurée pour le [site de référence We.Retail](/help/sites-developing/we-retail.md). [Activation du composant Conteneur de mises en page](#enable-the-layout-container-component-for-page) pour d’autres pages.
 
 ## Configuration de l’émulateur en responsive design {#configuring-the-responsive-emulator}
 

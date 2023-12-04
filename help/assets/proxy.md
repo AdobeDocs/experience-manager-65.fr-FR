@@ -4,10 +4,10 @@ description: Un proxy est une instance  [!DNL Experience Manager]  qui utilise 
 contentOwner: AG
 role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 83%
+source-wordcount: '824'
+ht-degree: 80%
 
 ---
 
@@ -21,7 +21,7 @@ Lorsque le proxy est une instance distincte d’[!DNL Experience Manager], il co
 
 ## Proxy (Accès HTTP) {#proxy-http-access}
 
-Un proxy est disponible via le servlet HTTP lorsqu’il est configuré de sorte à accepter les tâches de traitement dans le répertoire suivant :  `/libs/dam/cloud/proxy`. Ce servlet crée une tâche sling à partir des paramètres publiés. Il est ensuite ajouté à la file d’attente des tâches de proxy et connecté au worker de proxy approprié.
+Un proxy est disponible via le servlet HTTP lorsqu’il est configuré pour accepter des tâches de traitement à l’adresse : `/libs/dam/cloud/proxy`. Ce servlet crée une tâche sling à partir des paramètres publiés. Il est ensuite ajouté à la file d’attente des tâches de proxy et connecté au worker de proxy approprié.
 
 ### Opérations prises en charge {#supported-operations}
 
@@ -164,7 +164,7 @@ Le diagramme et les étapes suivants décrivent la marche à suivre :
 
    Par exemple, consultez `IDSJob.IDS_EXTENDSCRIPT_JOB` pour le programme de travail de proxy IDS.
 
-1. L’étape externe est utilisée pour déclencher l’événement et attendre qu’il soit terminé en interrogeant l’identifiant. Vous devez développer votre propre étape pour mettre en œuvre de nouvelles fonctionnalités.
+1. L’étape externe est utilisée pour déclencher l’événement et attendre qu’il soit terminé en interrogeant l’identifiant. Développez votre propre étape pour mettre en oeuvre de nouvelles fonctionnalités.
 
    Mettez en œuvre une API `WorkflowExternalProcess`, puis utilisez l’API JobService et votre rubrique de tâche pour préparer un événement de tâche et le distribuer à l’API JobService (un service OSGi).
 

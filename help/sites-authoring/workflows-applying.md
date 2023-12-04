@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 94%
+source-wordcount: '647'
+ht-degree: 90%
 
 ---
 
@@ -111,7 +111,7 @@ Indiquez les détails suivants :
 
 1. À l’étape **Domaine**, vous pouvez sélectionner :
 
-   * **Ajouter du contenu** pour ouvrir [l’explorateur de chemins d’accès](/help/sites-authoring/author-environment-tools.md#path-browser) et sélectionner des ressources supplémentaires. Lorsque vous êtes dans l’explorateur, cliquez/appuyez sur **l’option de sélection** pour ajouter du contenu à l’instance de workflow.
+   * **Ajouter du contenu** pour ouvrir le [navigateur de chemin](/help/sites-authoring/author-environment-tools.md#path-browser) et sélectionner des ressources supplémentaires ; lorsque vous vous trouvez dans le navigateur, cliquez sur **Sélectionner** pour ajouter le contenu à l’instance de workflow.
 
    * Une ressource existante pour afficher d’autres actions :
 

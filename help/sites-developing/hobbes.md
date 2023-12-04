@@ -9,10 +9,10 @@ topic-tags: components, testing
 discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
-workflow-type: ht
-source-wordcount: '771'
-ht-degree: 100%
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+workflow-type: tm+mt
+source-wordcount: '759'
+ht-degree: 91%
 
 ---
 
@@ -47,7 +47,7 @@ Lors de l’utilisation de tests automatisés dans AEM, il est important de comp
 
 Ouvrez la console de test pour voir les suites de tests enregistrées. Le panneau Tests contient une liste des suites de tests et de leurs cas de test.
 
-Accédez à la console Outils via **Navigation globale -> Outils > Opérations -> Test**.
+Accédez à la console Outils via **Navigation globale > Outils > Opérations > Test**.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -69,7 +69,7 @@ Une icône « X » indique l’échec d’un test :
 
 Pour exécuter une suite de tests, procédez comme suit :
 
-1. Dans le panneau Tests, cliquez ou appuyez sur le nom du cas de test que vous souhaitez exécuter pour développer les détails des actions.
+1. Dans le panneau Tests, cliquez sur le nom du cas de test à exécuter pour développer les détails des actions.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -91,7 +91,7 @@ Les suites de tests s’exécutent séquentiellement dans l’ordre dans lequel 
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-1. Dans le panneau Tests, appuyez ou cliquez sur le bouton **Exécuter tous les tests** ou sur le bouton **Exécuter les tests** sous le titre de la suite de tests que vous souhaitez exécuter.
+1. Dans le panneau Tests, cliquez sur l’une des options suivantes : **Exécution de tous les tests** ou le bouton **Exécution de tests** sous le titre de la suite de tests que vous souhaitez exécuter.
 
    ![Une image du bouton Exécuter tous les tests et du bouton Exécuter les tests, indiqué par un pointeur orienté vers la droite dans un cercle.](do-not-localize/chlimage_1-5.png)
 

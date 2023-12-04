@@ -4,10 +4,10 @@ description: Découvrez comment les variations peuvent rendre votre contenu déc
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2388'
-ht-degree: 62%
+source-wordcount: '2309'
+ht-degree: 60%
 
 ---
 
@@ -75,7 +75,7 @@ Vous pouvez effectuer les actions suivantes :
 
 ### Éditeur plein écran {#full-screen-editor}
 
-Lors de la modification d’un champ de plusieurs lignes de texte, vous pouvez ouvrir l’éditeur plein écran ; appuyez ou cliquez dans le texte, puis sélectionnez l’icône d’action suivante :
+Lors de la modification d’un champ de texte multiligne, vous pouvez ouvrir l’éditeur plein écran ; cliquez dans le texte réel, puis sélectionnez l’icône d’action suivante :
 
 ![Icône de l’éditeur plein écran](assets/cfm-variations-03.png)
 

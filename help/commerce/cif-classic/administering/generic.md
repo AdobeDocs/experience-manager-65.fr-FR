@@ -6,10 +6,10 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2929'
-ht-degree: 66%
+source-wordcount: '2907'
+ht-degree: 64%
 
 ---
 
@@ -194,7 +194,7 @@ Un modèle est nécessaire pour chaque type de produit distinct. Le modèle appr
 
    ![console produits avec les références ouvertes](/help/sites-administering/assets/chlimage_1-88.png)
 
-1. Cliquez/appuyez sur le type de référence (par exemple, Pages de produits) pour développer la liste.
+1. Cliquez sur le type de référence (par exemple, Pages de produits) pour développer la liste.
 1. Sélectionnez une référence spécifique pour afficher les options suivantes :
 
    * Accéder à la page produits
@@ -251,7 +251,7 @@ Vous pouvez ajouter plusieurs ressources dans le composant de produit, puis spé
 
    ![Ajout d’une copie d’écran de données de produit](/help/sites-administering/assets/chlimage_1-91.png)
 
-1. Sélectionnez **Ajouter**. Un nouvel espace réservé aux ressources s’affiche.
+1. Sélectionner **Ajouter**. Un nouvel espace réservé aux ressources s’affiche.
 1. Sélection **Modifier** ouvre une boîte de dialogue vous permettant de sélectionner une ressource.
 1. Sélectionnez la ressource à ajouter.
 
@@ -297,7 +297,7 @@ Le mécanisme de sélection de l’image à afficher est le suivant :
 1. Accédez à votre page produit.
 1. **Modifiez** le composant du produit.
 1. Saisissez le **Catégorie d’images** que vous avez choisi ( `cat1` par exemple).
-1. Sélectionnez **Terminé**. La page s’actualise et la ressource appropriée doit s’afficher.
+1. Sélectionner **Terminé**. La page s’actualise et la ressource appropriée doit s’afficher.
 
 #### Catalogue  {#catalog}
 
@@ -463,13 +463,13 @@ Pour générer un catalogue :
    ![assistant de création de catalogue](/help/sites-administering/assets/chlimage_1-99.png)
 
 1. Accédez au plan directeur de catalogue requis.
-1. Sélectionnez la variable **Sélectionner** et appuyez/cliquez sur le plan directeur de catalogue requis.
+1. Sélectionnez la variable **Sélectionner** et cliquez sur le plan directeur de catalogue requis.
 1. Sélectionnez **Suivant**.
 
    ![assistant de propriétés de catalogue](/help/sites-administering/assets/chlimage_1-100.png)
 
 1. Saisissez un **titre** et un **nom**.
-1. Cliquez sur le bouton **Créer.** Le catalogue est créé et une boîte de dialogue s’ouvre.
+1. Sélectionnez la variable **Créer** bouton . Le catalogue est créé et une boîte de dialogue s’ouvre.
 
    ![boîte de dialogue créée par le catalogue](/help/sites-administering/assets/chlimage_1-101.png)
 
@@ -524,7 +524,7 @@ Pour déployer un catalogue :
 
    ![déploiement](/help/sites-administering/do-not-localize/chlimage_1-24.png)
 
-1. Dans l’assistant, définissez le déploiement selon les besoins, puis appuyez/cliquez sur **Déployer les modifications**.
+1. Dans l’assistant, définissez le déploiement selon les besoins, puis cliquez sur **Déployer les modifications**.
 1. Une boîte de dialogue s’affiche. Sélectionner **Terminé** lorsque le processus est terminé.
 
 #### Déploiement d’un catalogue : UI classique {#rolling-out-a-catalog-classic-ui}
@@ -549,7 +549,7 @@ Pour déployer un catalogue :
 
    ![Icône Importer les plans directeurs](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
-1. Dans l’assistant, sélectionnez la source voulue, puis appuyez/cliquez sur **Suivant**.
+1. Dans l’assistant, sélectionnez la Source selon les besoins, puis cliquez sur **Suivant**.
 
    ![assistant de plan directeur](/help/sites-administering/assets/chlimage_1-102.png)
 

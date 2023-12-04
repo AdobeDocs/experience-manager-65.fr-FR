@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 93%
+source-wordcount: '586'
+ht-degree: 87%
 
 ---
 
@@ -52,7 +52,7 @@ Cliquez sur le bouton représentant des points de suspension en bas à droite de
 
 #### Détails de la tâche {#task-details}
 
-Pour plus d’informations sur une tâche particulière, dans la boîte de réception, appuyez ou cliquez sur la tâche pour la sélectionner, puis appuyez ou cliquez sur **Ouvrir** dans la barre d’outils.
+Pour plus d’informations sur une tâche particulière, dans la boîte de réception, cliquez sur la tâche pour la sélectionner, puis cliquez sur **Ouvrir** dans la barre d’outils.
 
 ![Détails de la tâche](assets/project-task-detail.png)
 
@@ -70,12 +70,12 @@ Vous pouvez ajouter de nouvelles tâches aux projets. Ces tâches apparaissent e
 Pour ajouter une tâche, procédez comme suit :
 
 1. Dans le projet, recherchez la mosaïque **Tâches**.
-1. Appuyez ou cliquez sur le chevron descendant en haut à droite de la mosaïque et sélectionnez **Créer une tâche**.
+1. Cliquez sur le chevron descendant en haut à droite de la mosaïque et sélectionnez **Créer une tâche**.
 1. Dans la fenêtre **Ajouter une tâche**, fournissez les informations sur la tâche, telles que la priorité, la personne désignée et la date d’échéance.
 
    ![Ajouter une tâche](assets/project-add-task.png)
 
-1. Appuyez ou cliquez sur **Envoyer**.
+1. Cliquez sur **Envoyer**.
 
 ## Utilisation des tâches dans la boîte de réception {#working-with-tasks-in-the-inbox}
 

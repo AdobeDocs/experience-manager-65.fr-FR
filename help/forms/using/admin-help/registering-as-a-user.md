@@ -2,7 +2,7 @@
 title: Enregistrement en tant qu’utilisateur
 seo-title: Registering as a User
 description: Découvrez comment utiliser les documents protégés par une stratégie que vous recevez d’un utilisateur de Document Security, même si vous êtes externe à l’organisation de l’utilisateur.
-seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user’s organization.
+seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user's organization.
 uuid: 4648b358-f545-434f-a3b2-2937e961dc64
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 feature: Document Security
 exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 7%
+source-wordcount: '695'
+ht-degree: 4%
 
 ---
 
@@ -43,11 +43,11 @@ Si vous êtes un utilisateur invité et que vous recevez un message d’enregist
 1. Ouvrez le courrier électronique d’enregistrement de Document Security. L’URL contenue dans le message est un lien vers la page Enregistrement des utilisateurs externes de Document Security.
 1. Cliquez sur l’URL ou copiez-la et collez-la dans votre navigateur. La page Enregistrement des utilisateurs externes s’affiche.
 1. Saisissez vos nom, numéro de téléphone, adresse, organisation et mot de passe dans les zones appropriées, puis saisissez à nouveau votre mot de passe dans la zone Confirmer le mot de passe . Votre mot de passe peut constituer n’importe quelle combinaison de huit caractères.
-1. Cliquez sur Enregistrer. Un message de remerciement s’affiche et vous informe de vérifier que votre email contient un message d’activation. Vous devez maintenant activer votre compte pour terminer le processus d’enregistrement.
+1. Cliquez sur Enregistrer. Un message de remerciement s’affiche et vous informe de vérifier que votre email contient un message d’activation. Activez maintenant votre compte pour terminer le processus d’enregistrement.
 
 ## Activation de votre compte d’utilisateur invité {#activate-your-invited-user-account}
 
-Une fois enregistré, Document Security vous envoie un courrier électronique d’activation. Vous devez activer votre compte à l&#39;aide de l&#39;URL contenue dans le message. Vous pouvez ensuite vous connecter à Document Security pour utiliser les documents protégés par une stratégie auxquels vous avez accès. Selon les fonctionnalités activées par l’administrateur pour les utilisateurs externes, vous pouvez être autorisé à créer des stratégies, à appliquer des stratégies à des documents et à ajouter d’autres utilisateurs externes à vos stratégies.
+Une fois enregistré, Document Security vous envoie un courrier électronique d’activation. Activez votre compte à l’aide de l’URL du message. Vous pouvez ensuite vous connecter à Document Security pour utiliser les documents protégés par une stratégie auxquels vous avez accès. Selon les fonctionnalités activées par l’administrateur pour les utilisateurs externes, vous pouvez être autorisé à créer des stratégies, à appliquer des stratégies à des documents et à ajouter d’autres utilisateurs externes à vos stratégies.
 
 Votre compte reste actif jusqu’à ce que l’administrateur le désactive ou le supprime.
 

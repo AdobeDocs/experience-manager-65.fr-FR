@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1563'
-ht-degree: 65%
+source-wordcount: '1482'
+ht-degree: 61%
 
 ---
 
@@ -24,9 +24,9 @@ Cet article comprend des détails relatifs au connecteur JCR Adobe pour Microsof
 
 SharePoint Connector prend en charge les fonctionnalités de base suivantes :
 
-* Lecture de contenu et de métadonnées à partir de SharePoint.
+* Lecture de contenu et de métadonnées depuis SharePoint.
 * Reconnaissance des paramètres de sécurité SharePoint pour le contenu consulté en appliquant l’authentification et l’autorisation SharePoint natives
-* Intégration de contenu à l’aide de l’outil de recherche de contenu
+* Intégration de contenu à l’aide de Content Finder
 * Utilisation de composants AEM, tels que Ressource externe pour afficher des images et des vidéos SharePoint
 * Synchronisation de SharePoint avec AEM Assets
 
@@ -47,8 +47,8 @@ Pour commencer à utiliser le connecteur, procédez comme suit :
 * Téléchargez le fichier de distribution du package de connecteur depuis la Distribution logicielle.
 * Copier un *license.properties* dans le répertoire contenant le fichier *cq-quickstart-6.4.0.jar* fichier .
 
-* Double-cliquez/appuyez sur le fichier .jar pour démarrer AEM, ou démarrez-le à partir de la ligne de commande.
-* Installez le package connecteur à partir de Package Manager.
+* Double-cliquez sur le fichier .jar pour démarrer AEM, ou démarrez-le à partir de la ligne de commande.
+* Installez le package connecteur depuis Package Manager.
 * Configurez les options du connecteur.
 
 ## Installation du connecteur SharePoint {#installing-sharepoint-connector}
@@ -97,12 +97,12 @@ Pour installer le package de contenu connecteur.
 
 1. Ouvrez un ticket d’assistance à l’Adobe pour demander le Feature Pack du connecteur.
 1. Téléchargez le package lorsqu’il est disponible, puis ouvrez Package Manager pour votre instance AEM.
-1. Appuyez/cliquez sur **Installer** sur la page de description du package.
-1. Dans la boîte de dialogue **Installer le package**, appuyez/cliquez sur **Installer**.
+1. Cliquez sur **Installer** dans la page de description du package.
+1. Dans la **Installer le module** boîte de dialogue, cliquez **Installer**.
 
    **Remarque** : Assurez-vous d’être connecté en tant qu’administrateur.
 
-1. Lorsque le package est installé, appuyez/cliquez sur **Fermer**.
+1. Lorsque le package est installé, cliquez sur **Fermer**.
 
 ## Configuration de SharePoint Connector {#configuring-sharepoint-connector}
 
@@ -118,7 +118,7 @@ Pour définir l’URL du serveur SharePoint et les options avancées, procédez 
 1. Recherchez le lot **Connecteur JCR Day pour Microsoft SharePoint**.
 1. Modifiez les valeurs de configuration.
 1. Définissez l’URL du serveur SharePoint comme valeur de **Espaces de travail**.
-1. Appuyez/cliquez sur **Enregistrer**.
+1. Cliquez sur **Enregistrer**.
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -155,7 +155,7 @@ Après avoir configuré le connecteur, vérifiez les éléments suivants :
 
 * Le serveur SharePoint s’exécute et les services web sont accessibles à l’instance de connecteur.
 * Les informations d’identification de l’utilisateur SharePoint sont valides et l’utilisateur dispose des autorisations SharePoint nécessaires
-* Le connecteur est installé et configuré correctement
+* Le connecteur est installé et configuré correctement.
 
 ### Configuration de la synchronisation DAM avec le serveur SharePoint {#configuring-dam-sync-with-the-sharepoint-server}
 
@@ -193,7 +193,7 @@ En particulier, les types d’authentification suivants sont disponibles :
 * Classic-Basic
 * Classic-Forms
 * Revendications - De base
-* Revendications Forms
+* Revendications basées sur Forms
 
 Le connecteur JCR d’AEM pour Microsoft SharePoint 2010 et Microsoft SharePoint 2013, version 4.0., prend en charge l’authentification basée sur les revendications (suggérée par Microsoft), qui fonctionne dans les modes suivants :
 
@@ -204,7 +204,7 @@ Le connecteur JCR d’AEM pour Microsoft SharePoint 2010 et Microsoft SharePo
 
 Allez à : [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
 
-1. Cliquez sur OSGi > Configuration.
+1. Cliquez sur OSGI > Configuration .
 1. Recherchez « Day JCR Connector for Microsoft SharePoint ».
 1. Cliquez sur « Modifier les valeurs de configuration ».
 1. Définissez la valeur de « Fabrique de connexions SharePoint » sur « com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory ».
@@ -215,7 +215,7 @@ Allez à : [http://localhost:4502/system/console/bundles](http://localhost:4502
 1. [Désactivez l’authentification par jeton](#disable-token-authentication).
 1. Allez à : [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
 1. Cliquez sur OSGI > Configuration.
-1. Rechercher **Connecteur JCR Day pour Microsoft SharePoint**.
+1. Recherchez **Connecteur JCR Day pour Microsoft SharePoint**.
 1. Cliquez sur `Edit the configuration values`.
 1. Définissez la valeur de la Fabrique de connexions SharePoint sur `com.day.crx.spi.sharepoint.security.WindowsAuthenticationConnectionFactory`.
 1. Cliquez sur **Enregistrer**.

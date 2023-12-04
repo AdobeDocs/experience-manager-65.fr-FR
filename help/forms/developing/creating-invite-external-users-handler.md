@@ -3,10 +3,10 @@ title: Créer un gestionnaire d’invitation d’utilisateurs externes
 description: Découvrez comment créer un gestionnaire d’invitation d’utilisateurs externes. Il permet au service de Rights Management d’inviter des utilisateurs externes à devenir des utilisateurs Rights Management.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 93%
+source-wordcount: '1126'
+ht-degree: 83%
 
 ---
 
@@ -34,9 +34,9 @@ Pour développer un gestionnaire d’invitation d’utilisateurs externes, proc�
 
 Pour configurer votre environnement de développement, vous devez créer un projet Java, tel qu’un projet Eclipse. La version d’Eclipse prise en charge est la version `3.2.1` ou ultérieure.
 
-La SPI Rights Management nécessite le réglage du fichier `edc-server-spi.jar` dans le chemin d’accès de classe de votre projet. Si vous ne référencez pas ce fichier JAR, vous ne pouvez pas utiliser la SPI Rights Management dans votre projet Java. Ce fichier JAR est installé avec le SDK AEM Forms dans le dossier `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi`.
+La SPI du Rights Management nécessite la `edc-server-spi.jar` à définir dans le chemin d’accès de classe de votre projet. Si vous ne référencez pas ce fichier JAR, vous ne pouvez pas utiliser la SPI Rights Management dans votre projet Java. Ce fichier JAR est installé avec le SDK AEM Forms dans le dossier `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi`.
 
-En plus de l’ajout du fichier `edc-server-spi.jar` dans le chemin de classe de votre projet, vous devez également ajouter les fichiers JAR requis pour utiliser l’API du service Rights Management. Ces fichiers sont nécessaires pour utiliser l’API du service Rights Management dans le gestionnaire d’invitation d’utilisateurs externes.
+En plus de l’ajout de la variable `edc-server-spi.jar` dans le chemin de classe de votre projet, vous devez également ajouter les fichiers JAR requis pour utiliser l’API Rights Management Service. Ces fichiers sont nécessaires pour utiliser l’API du service Rights Management dans le gestionnaire d’invitation d’utilisateurs externes.
 
 ## Définir l’implémentation du gestionnaire d’invitation d’utilisateurs externes {#define-invite-external-users-handler}
 
@@ -170,7 +170,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 ## Définir un fichier XML du composant du gestionnaire d’autorisations {#define-component-xml-authorization-handler}
 
-Vous devez définir un fichier XML de composant pour déployer le composant de gestionnaire d’utilisateurs externes. Un fichier XML de composant existe pour chaque composant et fournit des métadonnées sur le composant.
+Définissez un fichier XML de composant pour déployer le composant de gestionnaire d’utilisateurs externes. Un fichier XML de composant existe pour chaque composant et fournit des métadonnées sur le composant.
 
 Le fichier `component.xml` suivant est utilisé pour le gestionnaire d’invitation d’utilisateurs externes. Notez que le nom du service est `InviteExternalUsersSample` et que l’opération exposée par ce service est nommée `invitedUser`. Le paramètre d’entrée est une instance `java.util.List` et la valeur de sortie est un tableau d’instances `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult`.
 
@@ -203,19 +203,19 @@ Le fichier `component.xml` suivant est utilisé pour le gestionnaire d’invitat
 
 ## Regrouper le gestionnaire d’invitation d’utilisateurs externes {#packaging-invite-external-users-handler}
 
-Pour déployer le gestionnaire d’invitations d’utilisateurs externes vers AEM Forms, vous devez compresser votre projet Java dans un fichier JAR. Vous devez vous assurer que les fichiers JAR externes dont dépend la logique commerciale du gestionnaire d’invitations d’utilisateurs externes, tels que les fichiers `edc-server-spi.jar` et `adobe-rightsmanagement-client.jar`, sont également inclus dans le fichier JAR. De même, le fichier XML du composant doit être présent. Le fichier `component.xml` et les fichiers JAR externes doivent se trouver à la racine du fichier JAR.
+Pour déployer le gestionnaire d’invitations d’utilisateurs externes vers AEM Forms, vous devez compresser votre projet Java dans un fichier JAR. Assurez-vous que les fichiers JAR externes dont dépend la logique commerciale du gestionnaire d’invitation d’utilisateurs externes, tels que `edc-server-spi.jar` et `adobe-rightsmanagement-client.jar` sont également inclus dans le fichier JAR. De même, le fichier XML du composant doit être présent. Le fichier `component.xml` et les fichiers JAR externes doivent se trouver à la racine du fichier JAR.
 
 >[!NOTE]
 >
 >L’illustration ci-dessous présente une classe `BootstrapImpl`. Cette section n’explique pas comment créer une classe `BootstrapImpl`.
 
-L’illustration suivante montre le contenu du projet Java inclus dans le fichier JAR du gestionnaire d’invitations d’utilisateurs externes.
+L’illustration suivante présente le contenu du projet Java inclus dans le fichier JAR du gestionnaire d’utilisateurs externes.
 
 ![Inviter des utilisateurs](assets/ci_ci_InviteUsers.png)
 
 A. Fichiers JAR externes requis par le composant B. Fichier JAVA
 
-Vous devez compresser le gestionnaire d’invitations d’utilisateurs externes dans un fichier JAR. Dans le diagramme précédent, remarquez que les fichiers .JAVA sont répertoriés. Une fois compressés dans un fichier JAR, les fichiers .CLASS correspondants doivent également être spécifiés. Sans les fichiers .CLASS, le gestionnaire d’autorisations ne fonctionne pas.
+Regroupez le gestionnaire d’invitation d’utilisateurs externes dans un fichier JAR. Dans le diagramme précédent, remarquez que les fichiers .JAVA sont répertoriés. Une fois compressés dans un fichier JAR, les fichiers .CLASS correspondants doivent également être spécifiés. Sans les fichiers .CLASS, le gestionnaire d’autorisations ne fonctionne pas.
 
 >[!NOTE]
 >
@@ -231,7 +231,7 @@ Pour tester le gestionnaire d’invitations d’utilisateurs externes, vous pouv
 
 Pour ajouter des utilisateurs externes à l’invitation à l’aide de la console d’administration :
 
-1. Déployez le fichier JAR du gestionnaire d’invitations d’utilisateurs externes à l’aide de Workbench.
+1. Déployez le fichier JAR du gestionnaire d’invitation d’utilisateurs externes à l’aide de Workbench.
 1. Redémarrez le serveur d’applications.
 1. Connectez-vous à Administration Console.
 1. Cliquez sur **[!UICONTROL Services]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Configuration]** > Invité **[!UICONTROL Enregistrement d’utilisateur]**.

@@ -2,10 +2,10 @@
 title: Utilisation de l’éditeur de texte enrichi pour créer du contenu
 description: Utilisation de l’éditeur de texte enrichi pour créer du contenu dans Adobe Experience Manager 6.5.
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 87%
+source-wordcount: '264'
+ht-degree: 77%
 
 ---
 
@@ -19,11 +19,11 @@ L’éditeur de texte enrichi est une composante essentielle à la saisie de con
 
 ## Édition statique {#in-place-editing}
 
-Si vous sélectionnez un composant textuel en cliquant ou appuyant une seule fois dessus, il s’affiche dans la [barre d’outils de composant](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste), comme pour n’importe quel composant.
+La sélection d’un composant textuel en un seul clic affiche le [barre d’outils du composant](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) comme avec n’importe quel composant.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Appuyez/cliquez de nouveau ou sélectionnez initialement le composant avec un double appui/clic lent pour ouvrir la modification statique, qui possède sa propre barre d’outils. De là, vous pouvez modifier le contenu et apporter des modifications de base à la mise en forme.
+Appuyez/cliquez de nouveau ou sélectionnez initialement le composant avec un double clic lent pour ouvrir la modification statique, qui possède sa propre barre d’outils. De là, vous pouvez modifier le contenu et apporter des modifications de base à la mise en forme.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 

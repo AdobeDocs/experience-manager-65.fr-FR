@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 81%
+source-wordcount: '1858'
+ht-degree: 79%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 81%
 
 Le service Forms peut calculer les valeurs qu’un utilisateur saisit dans un formulaire et afficher les résultats. Pour calculer les données d’un formulaire, deux tâches sont nécessaires. Commencez par créer un script de conception de formulaire qui calcule les données du formulaire. Une conception de formulaire prend en charge trois types de scripts. Un type de script s’exécute sur le client, un autre sur le serveur et le troisième à la fois sur le serveur et sur le client. Le type de script décrit ici s’exécute sur le serveur. Les calculs côté serveur sont pris en charge pour les transformations HTML, PDF et Form Guide (obsolète).
 
-Dans le cadre du processus de conception de formulaire, vous pouvez utiliser des calculs et des scripts pour offrir une expérience utilisateur plus riche. Il est possible d’ajouter des calculs et des scripts à la plupart des champs et objets de formulaire. Vous devez créer un script de conception de formulaire pour effectuer des opérations de calcul sur les données qu’un utilisateur saisit dans un formulaire interactif.
+Dans le cadre du processus de conception de formulaire, vous pouvez utiliser des calculs et des scripts pour offrir une expérience utilisateur plus riche. Il est possible d’ajouter des calculs et des scripts à la plupart des champs et objets de formulaire. Créez un script de conception de formulaire pour effectuer des opérations de calcul sur les données qu’un utilisateur saisit dans un formulaire interactif.
 
 L’utilisateur saisit des valeurs dans le formulaire et clique ensuite sur le bouton Calculer pour afficher les résultats. Le processus suivant décrit un exemple d’application qui permet à un utilisateur de calculer des données :
 

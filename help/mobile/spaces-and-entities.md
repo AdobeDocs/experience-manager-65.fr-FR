@@ -1,18 +1,14 @@
 ---
 title: Espaces et entités
-seo-title: Developing AEM Mobile Content Services
 description: Cette page sert de landing page pour le développement d’AEM Mobile Content Services.
-seo-description: This page serves a landing page for developing AEM Mobile Content Services.
-uuid: eab5a61b-a9e8-4863-90a3-df1f18510cd8
 contentOwner: Jyotika Syal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: ef568577-c74e-4fc2-b66e-eedac2948310
 exl-id: 44591900-b01b-4a33-9910-839564477e7d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1191'
-ht-degree: 3%
+source-wordcount: '1206'
+ht-degree: 5%
 
 ---
 
@@ -56,7 +52,7 @@ Une fois que vous avez configuré les espaces dans le tableau de bord, procédez
 
 ## Gestion d’un espace {#managing-a-space}
 
-Une fois que vous avez créé un espace, cliquez sur la gauche pour le gérer dans la liste.
+Après avoir créé un espace, cliquez sur la gauche pour le gérer dans la liste.
 
 Vous pouvez afficher les propriétés de l’espace, supprimer l’espace ou publier l’espace et son contenu sur une instance de publication AEM.
 
@@ -111,7 +107,7 @@ La variable **Copie de la langue** permet aux auteurs de copier leur copie de la
 
 ### Ajout d’une copie de la langue {#adding-language-copy}
 
-1. Une fois que vous avez créé l’espace, cliquez sur cet espace pour créer une copie de langue.
+1. Après avoir créé l’espace, cliquez sur cet espace pour créer une copie de langue.
 
    Cliquez sur **Créer** et choisissez **Copie de la langue**.
 
@@ -220,7 +216,7 @@ Si les enfants d’entités, qui sont d’autres entités, sont collectés pour 
    >
    >Lorsque vous avez terminé d’ajouter des ressources à votre entité, vous pouvez choisir **Enregistrer** pour enregistrer les modifications ou choisir **Enregistrer et fermer** pour enregistrer et rediriger vers la liste de la console Espace dans laquelle les entités sont définies.
 
-   De plus, sélectionnez une entité dans la liste de la console d’espace et cliquez sur **Propriétés** pour afficher et modifier les propriétés d’une entité définie.
+   De plus, sélectionnez une entité dans la liste de la console Espace et cliquez sur **Propriétés** pour afficher et modifier les propriétés d’une entité définie.
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 

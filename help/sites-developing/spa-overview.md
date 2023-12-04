@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1652'
-ht-degree: 93%
+source-wordcount: '1644'
+ht-degree: 91%
 
 ---
 
@@ -168,7 +168,7 @@ Les versions précédentes de ces frameworks peuvent fonctionner avec le SDK de 
 
 ### Autres frameworks {#additional-frameworks}
 
-Il est possible de mettre en œuvre des frameworks SPA pour utiliser le SDK de l’éditeur de SPA d’AEM. Consultez le [Plan directeur d’applications monopages (SPA)](/help/sites-developing/spa-blueprint.md) pour connaître les exigences qu’un framework doit satisfaire pour créer une couche spécifique composée des modules, composants et services nécessaires pour travailler avec l’éditeur de SPA d’AEM.
+Il est possible de mettre en œuvre des frameworks SPA pour utiliser le SDK de l’éditeur de SPA d’AEM. Voir [Blueprint SPA](/help/sites-developing/spa-blueprint.md) pour les exigences qu’une structure doit satisfaire pour créer une couche spécifique à une structure composée de modules, de composants et de services à utiliser avec l’éditeur SPA d’AEM.
 
 ### Utilisation de plusieurs sélecteurs {#multiple-selectors}
 

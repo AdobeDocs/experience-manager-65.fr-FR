@@ -2,10 +2,10 @@
 title: Configuration des règles de traduction
 description: Découvrez comment définir des règles de traduction pour identifier le contenu à traduire.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 76%
+source-wordcount: '847'
+ht-degree: 74%
 
 ---
 
@@ -56,25 +56,25 @@ Les règles de traduction sont conçues pour gérer ces scénarios. Cependant, d
 
 Il existe une console **Configuration de traduction** disponible pour la configuration des règles de traduction. Pour y accéder :
 
-1. Accédez à **Outils** -> **Général**.
-1. Appuyez ou cliquez sur **Configuration de traduction**.
+1. Accédez à **Outils** > **Général**.
+1. Cliquez sur **Configuration de traduction**.
 
 Dans le **Configuration de traduction** Dans l’interface utilisateur, plusieurs options sont disponibles pour vos règles de traduction. Dans cette partie, nous mettons en évidence les étapes les plus nécessaires et les plus courantes requises pour une configuration de localisation découplée de base.
 
-1. Appuyez ou cliquez sur **Ajouter un contexte**, qui vous permet d’ajouter un chemin. Il s’agit du chemin d’accès du contenu qui sera affecté par la règle.
+1. Cliquez sur **Ajouter un contexte**, qui vous permet d’ajouter un chemin. Il s’agit du chemin d’accès du contenu qui sera affecté par la règle.
    ![Ajoutez du contexte](assets/add-translation-context.png)
-1. Utilisez le navigateur de chemins d’accès pour sélectionner le chemin requis et appuyez ou cliquez sur le bouton **Confirmer** pour enregistrer. N’oubliez pas que les fragments de contenu, qui contiennent du contenu découplé, se trouvent généralement sous `/content/dam/<your-project>`.
+1. Utilisez l’explorateur de chemins d’accès pour sélectionner le chemin d’accès requis et cliquez sur le bouton **Confirmer** pour enregistrer. N’oubliez pas que les fragments de contenu, qui contiennent du contenu découplé, se trouvent généralement sous `/content/dam/<your-project>`.
    ![Sélectionnez le chemin d’accès](assets/select-context.png)
 1. AEM enregistre la configuration.
-1. Vous devez sélectionner le contexte que vous avez créé, puis appuyer ou cliquer sur **Modifier**. Vous ouvrez ainsi la fenêtre de l’**Éditeur de règles de traduction** pour configurer les propriétés.
+1. Sélectionnez le contexte créé, puis cliquez sur **Modifier**. Vous ouvrez ainsi la fenêtre de l’**Éditeur de règles de traduction** pour configurer les propriétés.
    ![Éditeur de règles de traduction](assets/translation-rules-editor.png)
 1. Par défaut, toutes les configurations sont héritées du chemin d’accès parent, dans ce cas `/content/dam`. Décochez l’option **Hériter de`/content/dam`** pour ajouter des champs supplémentaires à la configuration.
 1. Une fois la case désélectionnée, dans la section **Général** de la liste, ajoutez les noms des propriétés du ou des modèles de fragment de contenu que vous avez [précédemment identifiés comme des champs à traduire](getting-started.md#content-models).
    1. Saisissez le nom de la propriété dans le champ **Nouvelle propriété**.
    1. Les options **Traduire** et **Hériter** sont cochées automatiquement.
-   1. Appuyez ou cliquez sur **Ajouter**.
+   1. Cliquez sur **Ajouter**.
    1. Répétez ces étapes pour tous les champs que vous devez traduire.
-   1. Cliquez ou appuyez sur **Enregistrer**.
+   1. Cliquez sur **Enregistrer**.
       ![Ajouter une propriété](assets/add-property.png)
 
 Vous avez maintenant configuré vos règles de traduction.

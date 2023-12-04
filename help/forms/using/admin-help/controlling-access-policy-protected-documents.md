@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '2167'
 ht-degree: 22%
 
 ---
@@ -42,7 +42,7 @@ Vous pouvez également afficher plus de détails, décrits ci-dessous, sur un do
 
 >[!NOTE]
 >
->Vous devez utiliser le lien Nom de la stratégie sur la page Détails du document pour accéder aux stratégies générées automatiquement dans Microsoft Outlook pour les destinataires d’un document joint à un message électronique. Ces stratégies n’apparaissent pas dans la page des stratégies.
+>Utilisez le lien Nom de la stratégie sur la page Détails du document pour accéder aux stratégies générées automatiquement dans Microsoft Outlook pour les destinataires d’un document joint à un message électronique. Ces stratégies n’apparaissent pas dans la page des stratégies.
 
 **Nom du document :** nom du document sélectionné.
 
@@ -52,7 +52,7 @@ Vous pouvez également afficher plus de détails, décrits ci-dessous, sur un do
 
 **Éditeur :** nom de l’utilisateur qui a appliqué la politique au document.
 
-**Nom de la politique :** nom de la politique utilisée pour protéger le document. Vous pouvez cliquer sur le nom pour ouvrir la stratégie. Vous devez utiliser ce lien pour accéder aux stratégies générées par Acrobat pour les destinataires d’un document joint à un message électronique dans Outlook. Ces stratégies n’apparaissent pas dans la page Stratégies .
+**Nom de la politique :** nom de la politique utilisée pour protéger le document. Vous pouvez cliquer sur le nom pour ouvrir la stratégie. Utilisez ce lien pour accéder aux stratégies générées par Acrobat pour les destinataires d’un document joint à un message électronique dans Outlook. Ces stratégies n’apparaissent pas dans la page Stratégies .
 
 **Type de politique :** type de la politique appliquée au document.
 

@@ -2,10 +2,10 @@
 title: Création d’expériences commerciales
 description: Le module complémentaire CIF étend la création Adobe Experience Manager avec des fonctionnalités spécifiques au commerce.
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 94%
+ht-degree: 89%
 
 ---
 
@@ -33,7 +33,7 @@ Cliquer sur la catégorie parent ramène l’auteur au niveau du produit.
 
 ![Composant Teaser sans sélection](/help/commerce/cif/assets/authoring/teaser_component_without_selection.png)
 
-La boîte de dialogue de configuration de ce composant nécessite un produit. CIF utilise le SKU comme identifiant de produit. Les auteurs peuvent saisir le SKU manuellement ou cliquer sur l’icône de dossier pour ouvrir le sélecteur de produit. Après avoir sélectionné et fermé le sélecteur, la boîte de dialogue du composant affiche le nom du produit sélectionné.
+La boîte de dialogue de configuration de ce composant nécessite un produit. CIF utilise le SKU comme identifiant de produit. Les auteurs peuvent saisir le SKU manuellement ou cliquer sur l’icône de dossier pour ouvrir le sélecteur de produits. Après avoir sélectionné et fermé le sélecteur, la boîte de dialogue du composant affiche le nom du produit sélectionné.
 
 ![Composant Teaser avec sélection](/help/commerce/cif/assets/authoring/teaser_component_with_selection.png)
 

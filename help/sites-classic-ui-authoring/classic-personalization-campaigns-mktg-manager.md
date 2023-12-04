@@ -1,20 +1,16 @@
 ---
 title: Utiliser Marketing Campaign Manager
-seo-title: Working with the Marketing Campaign Manager
 description: La console Marketing Campaign Manager (MCM) vous aide à gérer des campagnes multicanaux. Grâce à ce logiciel d’automatisation du marketing, vous pouvez gérer toutes vos marques, campagnes et expériences, ainsi que les segments, listes, prospects et rapports associés.
-seo-description: The Marketing Campaign Manager (MCM) is a console that helps you manage multi-channel campaigns. With this marketing automation software you can manage all your brands, campaigns and experiences together with the related segments, lists, leads, and reports.
-uuid: 63b817e4-34b9-42b8-845b-e0b7d9af3a96
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
 exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 91%
+source-wordcount: '1161'
+ht-degree: 87%
 
 ---
 
@@ -113,10 +109,7 @@ Pour accéder aux campagnes existantes, dans le MCM, cliquez sur **Campagnes**.
 
 * **Dans le volet de gauche** :
 Vous voyez la liste de toutes les marques et campagnes.
-Un seul clic sur une marque permet d’effectuer les deux opérations suivantes :
-
-   * développer la liste pour afficher toutes les campagnes associées dans le volet de gauche ; cette liste indique également le nombre d’expériences qui existent pour chaque campagne ;
-   * ouvrir l’aperçu de la marque dans le volet de droite.
+Cliquez sur une marque pour développer la liste afin d’afficher toutes les campagnes associées dans le volet de gauche. Cette liste indique également le nombre d’expériences qui existent pour chaque campagne. Il ouvre également l’aperçu de la marque dans le volet de droite.
 
 * **Dans le volet de droite** :
 Des icônes sont affichées pour chaque marque (les anciennes campagnes ne sont pas visibles).

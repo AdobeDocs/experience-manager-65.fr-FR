@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 62%
+source-wordcount: '407'
+ht-degree: 57%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 62%
 
 En raison de la possibilité de valeurs différentes, les propriétés de page ne sont, par défaut, pas activées pour la modification en masse. Elles doivent être explicitement autorisées (activées). Lors de la définition des propriétés de page à mettre à disposition pour la modification en masse, vous devez tenir compte de certaines implications, telles que :
 
-* Certains champs sont généralement uniques ; par exemple, un titre de page. Vous devez décider s’il est utile d’activer ces champs pour la modification en masse, lorsqu’une valeur sera appliquée.
+* Certains champs sont généralement uniques ; par exemple, un titre de page. Déterminez s’il est pertinent d’activer ces champs pour la modification en masse, lorsqu’une valeur sera appliquée.
 * Certains champs peuvent posséder plusieurs valeurs, ce qui nécessite une représentation significative lors du rendu.
 
   Par exemple, une case à cocher indiquant « Prêt pour publication ». Il peut y avoir plusieurs valeurs avant la modification en masse (par exemple, prête, en cours de révision, en cours).

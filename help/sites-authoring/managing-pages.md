@@ -2,10 +2,10 @@
 title: Créer et organiser des pages avec AEM
 description: Découvrez comment créer et gérer des pages avec Adobe Experience Manager.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2412'
-ht-degree: 88%
+source-wordcount: '2417'
+ht-degree: 83%
 
 ---
 
@@ -164,7 +164,7 @@ Liste des modèles utilisables lors de la génération de la nouvelle page.
 
 ### Composants {#components}
 
-Les composants sont des éléments fournis par AEM pour vous permettre d’ajouter des types spécifiques de contenu. Des [composants « prêts à l’emploi »](/help/sites-authoring/default-components-console.md) sont fournis avec AEM pour procurer une fonctionnalité complète. Il s’agit des composants suivants :
+Les composants sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. AEM s’accompagne d’un éventail de [Composants prêts à l’emploi](/help/sites-authoring/default-components-console.md) qui offrent des fonctionnalités complètes. Il s’agit notamment :
 
 * Texte
 * Image
@@ -192,7 +192,7 @@ Avant de pouvoir commencer à créer du contenu, vous devez créer une page, à 
 
 1. À la première étape de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
-   * Sélectionnez le modèle à utiliser pour créer la page, puis cliquez ou appuyez sur **Suivant** pour poursuivre.
+   * Sélectionnez le modèle à utiliser pour créer la page, puis cliquez sur **Suivant** pour continuer.
 
    * Cliquez/appuyez sur **Annuler** pour interrompre le processus.
 
@@ -200,7 +200,7 @@ Avant de pouvoir commencer à créer du contenu, vous devez créer une page, à 
 
 1. À l’étape finale de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
-   * Utilisez les trois onglets pour accéder aux [propriétés de la page](/help/sites-authoring/editing-page-properties.md) à attribuer à la nouvelle page, puis cliquez ou appuyez sur **Créer** pour réellement créer la page.
+   * Utilisez les trois onglets pour saisir la variable [propriétés de page](/help/sites-authoring/editing-page-properties.md) que vous souhaitez attribuer à la nouvelle page, puis cliquez sur **Créer** pour créer réellement la page.
 
    * Utilisez **Précédent** pour revenir à la sélection de modèle.
 
@@ -325,7 +325,7 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
 1. À l’étape **Renommer** de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
-   * Spécifiez le nom à attribuer à la page après son déplacement et cliquez/appuyez sur **Suivant** pour poursuivre.
+   * Spécifiez le nom à attribuer à la page après son déplacement, puis cliquez sur **Suivant** pour continuer.
 
    * Cliquez/appuyez sur **Annuler** pour interrompre le processus.
 
@@ -386,7 +386,7 @@ Les actions de déplacement de page sont toujours traitées de manière asynchro
 
   ![Déplacement de page asynchrone](assets/asynchronous-page-move.png)
 
-L’état des tâches asynchrones peut être vérifié dans le [**tableau de bord État des tâches asynchrones**](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) en sélectionnant **Navigation globale** -> **Outils** -> **Opérations** -> **Tâches**.
+L’état des tâches asynchrones peut être vérifié dans la variable [**État des tâches asynchrones** tableau de bord](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Navigation globale** > **Outils** > **Opérations** > **Tâches**
 
 >[!NOTE]
 >
@@ -413,7 +413,7 @@ L’état des tâches asynchrones peut être vérifié dans le [**tableau de bor
    * **Supprimer** pour confirmer l’action :
 
       * Si la page ne comporte aucune référence, elle est supprimée.
-      * Si la page comporte des références, un message vous informe qu’**une ou plusieurs pages sont référencées.** Vous pouvez sélectionner **Forcer la suppression** ou **Annuler**.
+      * Si la page comporte des références, un message vous informe que **Une ou plusieurs pages sont référencées.** Vous pouvez sélectionner **Forcer la suppression** ou **Annuler**.
 
 >[!NOTE]
 >

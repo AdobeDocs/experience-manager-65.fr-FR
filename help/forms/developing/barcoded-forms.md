@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1915'
-ht-degree: 95%
+source-wordcount: '1911'
+ht-degree: 84%
 
 ---
 
@@ -53,7 +53,7 @@ Pour décoder les données d’un formulaire PDF, procédez comme suit :
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -70,7 +70,7 @@ Avant de pouvoir effectuer par programmation une opération de service Barcoded�
 
 **Obtenir un formulaire PDF contenant des données à code à barres**
 
-Vous devez obtenir un formulaire PDF doté dʼun code à barres contenant des données utilisateur.
+Obtenez un formulaire de PDF contenant un code à barres contenant des données utilisateur.
 
 **Décoder les données du formulaire PDF**
 
@@ -128,7 +128,7 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
 
 1. Décoder les données du formulaire PDF
 
-   Décodez les données du formulaire en appelant la méthode `decode` de l’objet `BarcodedFormsServiceClient` et en transmettant les valeurs suivantes :
+   Décodez les données du formulaire en appelant la fonction `BarcodedFormsServiceClient` de `decode` et transmission des valeurs suivantes :
 
    * L’objet `com.adobe.idp.Document` contenant le formulaire PDF.
    * Un objet `java.lang.Boolean` spécifiant s’il faut décoder un code à barres PDF417.
@@ -145,9 +145,9 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
 
 1. Convertir les données en source de données XML
 
-   Convertissez les données décodées en données XDP ou XFDF en appelant la méthode `extractToXML` de l’objet `BarcodedFormsServiceClient` et en transmettant les valeurs suivantes :
+   Convertissez les données décodées en données XDP ou XFDF en appelant la fonction `BarcodedFormsServiceClient` de `extractToXML` et transmission des valeurs suivantes :
 
-   * L’objet `org.w3c.dom.Document` qui contient des données décodées (veillez à utiliser la valeur de retour de la méthode `decode`).
+   * La variable `org.w3c.dom.Document` qui contient des données décodées (veillez à utiliser l’objet `decode` valeur renvoyée par la méthode ).
    * Une valeur d’énumération `com.adobe.livecycle.barcodedforms.Delimiter` spécifiant le délimiteur de ligne. Il est recommandé de spécifier `Delimiter.Carriage_Return`.
    * Une valeur d’énumération `com.adobe.livecycle.barcodedforms.Delimiter` spécifiant le délimiteur de champ. Par exemple, spécifiez `Delimiter.Tab`.
    * Une valeur d’énumération `com.adobe.livecycle.barcodedforms.XMLFormat` spécifiant s’il faut convertir les données du code à barres en données XML XDP ou XFDF. Par exemple, spécifiez `XMLFormat.XDP` pour convertir les données en données XDP.
@@ -162,7 +162,7 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
 
    * Effectuez une itération à l’aide du `java.util.List` pour obtenir chaque objet `org.w3c.dom.Document` qui se trouve dans la liste.
    * Pour chaque élément de la liste, convertissez l’objet `org.w3c.dom.Document` en un objet `com.adobe.idp.Document`. (La logique d’application qui convertit un objet `org.w3c.dom.Document` en un objet `com.adobe.idp.Document` est illustrée dans l’exemple Décoder des données de formulaire à code à barres à l’aide de l’API Java).
-   * Enregistrez les données XML en tant que fichier XML en appelant la méthode `copyToFile` de l’objet `com.adobe.idp.Document` et en transmettant un objet File représentant le fichier XML.
+   * Enregistrez les données XML en tant que fichier XML en appelant la méthode `com.adobe.idp.Document` de `copyToFile`, et transmission d’un objet File représentant le fichier XML.
 
 **Voir également**
 
@@ -189,13 +189,13 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF contenant un code à barres.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du document PDF et son mode d’ouverture.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à sa propriété `binaryData` le contenu du tableau d’octets.
 
 1. Décoder les données du formulaire PDF
 
-   Décodez les données du formulaire en appelant la méthode `decode` de l’objet `BarcodedFormsServiceService` et en transmettant les valeurs suivantes :
+   Décodez les données du formulaire en appelant la fonction `BarcodedFormsServiceService` de `decode` et transmission des valeurs suivantes :
 
    * L’objet `BLOB` contenant le formulaire PDF.
    * Un objet `Boolean` spécifiant s’il faut décoder un code à barres PDF417.
@@ -212,9 +212,9 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
 
 1. Convertir les données en source de données XML
 
-   Convertissez les données décodées en données XDP ou XFDF en appelant la méthode `extractToXML` de l’objet `BarcodedFormsServiceService` et en transmettant les valeurs suivantes :
+   Convertissez les données décodées en données XDP ou XFDF en appelant la fonction `BarcodedFormsServiceService` de `extractToXML` et transmission des valeurs suivantes :
 
-   * Une valeur de chaîne qui contient des données décodées (veillez à utiliser la valeur de retour de la méthode `decode`).
+   * Une valeur string qui contient des données décodées (veillez à utiliser la variable `decode` valeur renvoyée par la méthode ).
    * Une valeur d’énumération `Delimiter` spécifiant le délimiteur de ligne. Il est recommandé de spécifier `Delimiter.Carriage_Return`.
    * Une valeur d’énumération `Delimiter` spécifiant le délimiteur de champ. Par exemple, spécifiez `Delimiter.Tab`.
    * Une valeur d’énumération `XMLFormat` spécifiant s’il faut convertir les données du code à barres en données XML XDP ou XFDF. Par exemple, spécifiez `XMLFormat.XDP` pour convertir les données en données XDP.
@@ -228,9 +228,9 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
 1. Traiter les données décodées
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF sécurisé.
-   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` qui a été renvoyé par la méthode `encryptPDFUsingPassword`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `binaryData` de l’objet `BLOB`.
+   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` qui a été renvoyé par la méthode `encryptPDFUsingPassword`. Renseignez le tableau d’octets en obtenant la valeur de la variable `BLOB` de `binaryData` membre de données.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
+   * Ecrivez le contenu du tableau d’octets dans un fichier de PDF en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
 
 **Voir également**
 

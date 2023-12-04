@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: e56986b2-397e-4802-992b-05a9ea7b2e36
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 82%
+source-wordcount: '805'
+ht-degree: 76%
 
 ---
 
@@ -70,7 +70,7 @@ Vous pouvez créer la newsletter avec du contenu ciblé dans l’interface utili
 
 Pour créer une newsletter avec du contenu ciblé :
 
-1. Créez une newsletter avec le contenu ciblé : en dessous des campagnes par e-mail dans Geometrixx Outdoors, cliquez ou appuyez sur **Créer** > **Page** et sélectionnez l’un des modèles d’e-mail Adobe Campaign.
+1. Créer une newsletter avec du contenu ciblé : sous Campagnes par e-mail en Geometrixx Outdoors, cliquez sur **Créer** > **Page**, puis sélectionnez l’un des modèles Adobe Campaign Mail.
 
    >[!NOTE]
    >
@@ -84,7 +84,7 @@ Pour créer une newsletter avec du contenu ciblé :
 
    >[!NOTE]
    >
-   >Par défaut, les exemples d’e-mails inclus avec AEM utilisent Adobe Campaign comme moteur de ciblage. Pour les newsletters personnalisées, vous devrez peut-être sélectionner Adobe Campaign comme moteur de ciblage. Lors du ciblage, appuyez ou cliquez sur + dans la barre d’outils, saisissez le titre de la nouvelle activité, puis sélectionnez **Adobe Campaign** comme moteur de ciblage.
+   >Par défaut, les exemples d’e-mails inclus avec AEM utilisent Adobe Campaign comme moteur de ciblage. Pour les newsletters personnalisées, vous devrez peut-être sélectionner Adobe Campaign comme moteur de ciblage. Lors du ciblage, cliquez sur + dans la barre d’outils, saisissez le titre de la nouvelle activité, puis sélectionnez **Adobe Campaign** comme moteur de ciblage.
 
 1. Cliquez sur **Par défaut**, puis sur le composant Texte et personnalisation que vous avez ajouté, et vous verrez une cible comportant une flèche. Cliquez sur l’icône pour cibler ce composant.
 

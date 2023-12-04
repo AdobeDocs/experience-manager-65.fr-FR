@@ -8,10 +8,10 @@ content-type: reference
 pagetitle: Configuring Email
 role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 6%
+source-wordcount: '796'
+ht-degree: 3%
 
 ---
 
@@ -41,7 +41,7 @@ Le service de messagerie par défaut est requis pour les notifications et les ab
 
 Reposez-vous sur la documentation de [Configuration des notifications par e-mail](../../help/sites-administering/notification.md), mais avec une différence dans ce champ `"From" address` is *not* obligatoire et doit être laissé vide.
 
-Par exemple (renseigné avec des valeurs à des fins d’illustration uniquement) :
+Par exemple, (renseigné avec des valeurs à des fins d’illustration uniquement) :
 
 ![email-config](assets/email-config.png)
 
@@ -170,7 +170,7 @@ Pour que le courrier électronique soit importé dans le référentiel, il est n
 
   Par exemple : [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
 
-* Sélectionnez **[!UICONTROL Ajouter]**
+* Sélectionner **[!UICONTROL Ajouter]**
 
   ![polling-importer](assets/polling-importer.png)
 

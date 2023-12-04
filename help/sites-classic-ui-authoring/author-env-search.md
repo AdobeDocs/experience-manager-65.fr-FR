@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 8d32960c-47c3-4e92-b02e-ad4d8fea7b2d
 docset: aem65
 exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 94%
+source-wordcount: '412'
+ht-degree: 88%
 
 ---
 
@@ -26,7 +26,7 @@ L’environnement de création d’AEM comporte divers mécanismes de recherche 
 
 ## Principes de base de la recherche {#search-basics}
 
-Pour accéder au panneau de recherche, cliquez sur l’onglet **Rechercher** dans la partie supérieure du volet de gauche de la console appropriée.
+Pour accéder au panneau de recherche, cliquez sur le **Rechercher** dans la partie supérieure du volet gauche de la console appropriée.
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 

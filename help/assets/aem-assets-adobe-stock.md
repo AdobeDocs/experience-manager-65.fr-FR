@@ -6,10 +6,10 @@ feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 hide: true
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2483'
-ht-degree: 98%
+source-wordcount: '2446'
+ht-degree: 97%
 
 ---
 
@@ -166,7 +166,7 @@ Pour générer les identifiants du compte de service et la payload JWT :
 
 1. Sélectionnez le profil de produit **[!UICONTROL Adobe Stock]** par défaut et cliquez sur **[!UICONTROL Enregistrer l’API configurée]**.
 
-1. Après la configuration de l’API, vous êtes redirigé vers sa page d’aperçu. Dans la navigation de gauche, sous **[!UICONTROL Identifiants]**, cliquez sur **[!UICONTROL Compte de service (JWT)]**. Vous pouvez alors afficher les identifiants et effectuer des actions telles que la génération des jetons JWT, la copie des informations d’identification et la récupération du secret client.
+1. Après la configuration de l’API, vous êtes redirigé vers sa page d’aperçu. Dans la navigation de gauche sous **[!UICONTROL Informations d’identification]**, cliquez sur le **[!UICONTROL Compte de service (JWT)]** . Vous pouvez alors afficher les identifiants et effectuer des actions telles que la génération des jetons JWT, la copie des informations d’identification et la récupération du secret client.
 
 1. Dans l’onglet **[!UICONTROL Client Credentials]** (Informations d’identification client), copiez l’**[!UICONTROL ID client]**.
 
@@ -377,7 +377,7 @@ Les utilisateurs peuvent afficher les propriétés de toutes les ressources, ave
 
 * **La fonctionnalité de restriction des utilisateurs pour l’obtention de la licence ne fonctionne pas correctement** : tous les utilisateurs qui disposent des autorisations `read` pour la configuration de Stock sont autorisés à rechercher les ressources d’[!DNL Adobe Stock] et à obtenir une licence.
 
-* **Les utilisateurs non administrateurs doivent activer manuellement la configuration cloud d’[!DNL Adobe Stock]** : dans la fenêtre des **[!UICONTROL Préférences utilisateur]**, la **[!UICONTROL Configuration de Stock]** affiche la configuration cloud d’[!DNL Adobe Stock] comme étant activée, mais elle ne fonctionne pas pour un utilisateur non administrateur. L’utilisateur doit cliquer sur le bouton **[!UICONTROL Accepter]** pour activer la configuration de Stock. En l’absence de cette étape, le système affiche un message d’erreur lors de l’accès aux **[!UICONTROL Ressources]**.
+* **Les utilisateurs non administrateurs doivent activer manuellement la configuration cloud d’[!DNL Adobe Stock]** : dans la fenêtre des **[!UICONTROL Préférences utilisateur]**, la **[!UICONTROL Configuration de Stock]** affiche la configuration cloud d’[!DNL Adobe Stock] comme étant activée, mais elle ne fonctionne pas pour un utilisateur non administrateur. L’utilisateur doit cliquer sur le bouton **[!UICONTROL Accepter]** pour activer la configuration Stock. En l’absence de cette étape, le système affiche un message d’erreur lors de l’accès aux **[!UICONTROL Ressources]**.
 
 * **L’avertissement d’image éditoriale n’est pas affiché** : lors de l’octroi d’une licence pour une image, les utilisateurs ne peuvent pas vérifier si une image est destinée à une utilisation éditoriale uniquement. Pour lutter contre une éventuelle utilisation abusive, les administrateurs peuvent désactiver l’accès aux ressources éditoriales à partir d’Admin Console.
 

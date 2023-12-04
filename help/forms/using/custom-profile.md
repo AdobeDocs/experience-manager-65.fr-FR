@@ -10,10 +10,10 @@ topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: Mobile Forms
 exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 81%
+source-wordcount: '656'
+ht-degree: 79%
 
 ---
 
@@ -74,7 +74,7 @@ Pour créer un profil personnalisé, procédez comme suit :
 Après avoir créé un profil personnalisé, ajoutez des informations de rendu à ce profil. Lors de la réception d’une demande pour le nouveau profil, CRX vérifie l’existence du dossier /apps pour la page JSP à rendre. Créez la page JSP dans le dossier /apps .
 
 1. Dans le volet de gauche, accédez au dossier `/apps`.
-1. Effectuez un clic droit sur le dossier `/apps` et créez un dossier intitulé **hrform**.
+1. Cliquez avec le bouton droit de la souris sur le `/apps` et choisissez de créer un dossier portant le nom **hrform**.
 1. Dans le dossier **hrform**, créez un dossier intitulé **demo**.
 1. Cliquez sur le bouton **Enregistrer tout**.
 1. Accédez à `/libs/xfaforms/profile/html.jsp` et copiez le nœud **html.jsp**.

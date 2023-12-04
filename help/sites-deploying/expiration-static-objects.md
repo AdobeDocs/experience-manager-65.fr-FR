@@ -7,10 +7,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 36%
+source-wordcount: '416'
+ht-degree: 31%
 
 ---
 
@@ -35,7 +35,7 @@ Tous les fichiers, qui ne sont pas dynamiques et qui ne changent pas au fil du t
 
 >[!CAUTION]
 >
->Soyez prudent lorsque vous définissez la période pendant laquelle un objet est considéré comme étant à jour. Comme il y a *pas de vérification tant que la période spécifiée n’a pas expiré*, le client peut finir par présenter de l’ancien contenu à partir du cache.
+>Soyez prudent lorsque vous définissez la période pendant laquelle un objet est considéré comme à jour. Comme il y a *pas de vérification tant que la période spécifiée n’a pas expiré*, le client peut finir par présenter de l’ancien contenu à partir du cache.
 
 1. **Pour une instance d’auteur :**
 

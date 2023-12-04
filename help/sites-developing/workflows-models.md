@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2451'
-ht-degree: 47%
+source-wordcount: '2462'
+ht-degree: 45%
 
 ---
 
@@ -97,7 +97,7 @@ Sélection **Modifier** Will :
 
 ### Ajout d’une étape à un modèle {#adding-a-step-to-a-model}
 
-Vous devez ajouter des étapes à votre modèle pour représenter l’activité à exécuter : chaque étape effectue une activité spécifique. Une sélection de composants d’étape est disponible dans une instance d’AEM standard.
+Ajoutez des étapes à votre modèle pour représenter l’activité à exécuter : chaque étape effectue une activité spécifique. Une sélection de composants d’étape est disponible dans une instance d’AEM standard.
 
 Lorsque vous modifiez un modèle, les étapes disponibles s’affichent dans les différents groupes du **Explorateur d’étapes**. Par exemple :
 
@@ -144,7 +144,7 @@ Vous pouvez **Configurer** et personnaliser le comportement d’une étape de wo
 
 1. Pour ouvrir la **Propriétés de l’étape** pour une étape :
 
-   * Cliquez/appuyez sur* *l’étape dans le modèle de workflow et sélectionnez ensuite **Configurer** dans la barre d’outils du composant.
+   * Cliquez sur l’étape* *dans le modèle de workflow et sélectionnez **Configurer** dans la barre d’outils du composant.
 
    * Double-cliquez sur l’étape.
 
@@ -218,7 +218,7 @@ Vous pouvez configurer un modèle de workflow pour [Prise en charge multi-ressou
 
 ### Configuration des étapes de workflow (qui affichent la progression du workflow) {#configuring-workflow-stages-that-show-workflow-progress}
 
-[Les phases de workflow permettent de visualiser la progression d’un workflow lors de la gestion des tâches.](/help/sites-developing/workflows.md#workflow-stages)
+[Étapes de workflow](/help/sites-developing/workflows.md#workflow-stages) vous aide à visualiser la progression d’un workflow lors de la gestion des tâches.
 
 >[!CAUTION]
 >
@@ -324,11 +324,11 @@ Vous pouvez également configurer les AEM à afficher **DEBUG** messages dans le
 
 Pour illustrer certaines des possibilités de création d’un workflow, l’exemple suivant crée une variante du workflow `Publish Example`.
 
-1. [Créer un modèle de processus](#creating-a-new-workflow).
+1. [Création d’un modèle de workflow](#creating-a-new-workflow).
 
    Le nouveau workflow contiendra :
 
-   * **Début de flux**
+   * **Début du flux**
    * `Step 1`
    * **Fin de flux**
 
@@ -392,7 +392,7 @@ Pour illustrer certaines des possibilités de création d’un workflow, l’exe
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
-### Exemple : définition d’une règle pour une division OU Utilisation du script ECMA {#defineruleecmascript}
+### Exemple : définition d’une règle pour une division OU à l’aide d’un script ECMA {#defineruleecmascript}
 
 **Division OU** vous permet d’introduire des chemins de traitement conditionnel dans votre workflow.
 

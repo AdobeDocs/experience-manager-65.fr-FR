@@ -8,10 +8,10 @@ topic-tags: content
 content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3574'
-ht-degree: 96%
+source-wordcount: '3565'
+ht-degree: 91%
 
 ---
 
@@ -53,7 +53,7 @@ Pour créer, modifier, charger et installer des packages, les utilisateurs doive
 
 Vous pouvez accéder au gestionnaire de packages de trois façons :
 
-1. À partir du menu principal d’AEM -> **Outils** -> **Déploiement** -> **Packages**
+1. À partir du menu principal AEM > **Outils** > **Déploiement** > **Packages**
 1. Depuis [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) en utilisant la barre de sélection supérieure
 1. Directement en accédant à `http://<host>:<port>/crx/packmgr/`
 
@@ -106,7 +106,7 @@ Si le package a été modifié ou n’a jamais été conçu, le statut est prés
 
 ## Paramètres du package {#package-settings}
 
-Un package est essentiellement un ensemble de filtres et les données du référentiel basées sur ces filtres. Dans l’interface utilisateur du gestionnaire de packages, vous pouvez cliquer sur un package, puis sur le bouton **Modifier** pour afficher les détails d’un package, y compris les paramètres suivants.
+Un package est essentiellement un ensemble de filtres et les données du référentiel basées sur ces filtres. À l’aide de l’interface utilisateur du gestionnaire de modules, vous pouvez cliquer sur un module, puis sur **Modifier** pour afficher les détails d’un package, y compris les paramètres suivants.
 
 * [Paramètres généraux](#general-settings)
 * [Filtres de package](#package-filters)
@@ -283,7 +283,7 @@ Une fois qu’un package a été créé, il peut être réencapsulé. Le retour 
 
 1. Cliquez sur **Enregistrer**.
 
-1. Cliquez sur **Plus** -> **Réencapsuler**. Une boîte de dialogue vous demandera une confirmation.
+1. Cliquez sur **Plus** > **Réencapsuler** et une boîte de dialogue de confirmation s’affiche.
 
 ### Afficher d’autres versions de package {#other-versions}
 
@@ -293,7 +293,7 @@ Comme chaque version d’un package apparaît dans la liste comme n’importe qu
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
-1. Cliquez sur **Plus** -> **Autres versions** et une boîte de dialogue s’ouvre avec une liste d’autres versions du même package avec des informations sur le statut.
+1. Cliquez sur **Plus** > **Autres versions** et une boîte de dialogue s’ouvre avec une liste d’autres versions du même package avec des informations d’état.
 
 ### Afficher le contenu du package et test de l’installation {#viewing-package-contents-and-testing-installation}
 
@@ -303,11 +303,11 @@ Une fois un package créé, vous pouvez afficher son contenu.
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
-1. Pour afficher le contenu, cliquez sur **Plus** -> **Contenu**, et le gestionnaire de packages répertorie l’intégralité du contenu du package dans le journal des activités.
+1. Pour afficher le contenu, cliquez sur **Plus** > **Contenu** et Package Manager répertorie l’intégralité du contenu du module dans le journal d’activité.
 
    ![Contenu du package](assets/package-contents.png)
 
-1. Pour exécuter un essai de l’installation, cliquez sur **Plus** -> **Test de l’installation** et le Gestionnaire de packages établit un rapport sur les résultats dans le journal d’activité comme si l’installation avait été effectuée.
+1. Pour exécuter une exécution d’essai de l’installation, cliquez sur **Plus** > **Test de l’installation** et les rapports Gestionnaire de modules dans l’activité consignent les résultats comme si l’installation avait été effectuée.
 
    ![Test de l’installation](assets/test-install.png)
 
@@ -435,7 +435,7 @@ La validation doit toujours avoir lieu après le chargement du package, mais ava
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
-1. Pour valider le package, cliquez sur **Plus** -> **Valider**.
+1. Pour valider le package, cliquez sur **Plus** > **Valider**,
 
 1. Dans la boîte de dialogue modale qui s’affiche alors, utilisez les cases à cocher pour sélectionner le ou les types de validation et commencez la validation en cliquant sur **Valider**.
 
@@ -473,13 +473,13 @@ Les packages sont définis par leurs filtres. Vous pouvez demander au Gestionnai
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
-1. Cliquez sur **Plus** -> **Couverture**.
+1. Cliquez sur **Plus** > **Couverture**.
 
 1. Les détails de la couverture sont répertoriés dans le journal d’activité.
 
 ### Installation des packages {#installing-packages}
 
-Le chargement d’un package ajoute uniquement le contenu du package au référentiel, mais il n’est pas accessible. Vous devez installer le package chargé pour utiliser son contenu.
+Le chargement d’un package ajoute uniquement le contenu du package au référentiel, mais il n’est pas accessible. Installez le package téléchargé pour utiliser le contenu du package.
 
 >[!CAUTION]
 >
@@ -543,7 +543,7 @@ La désinstallation d’un package ramène le contenu du référentiel à l’in
 
 1. Ouvrez les détails du package que vous souhaitez désinstaller à partir de la liste des packages en cliquant sur le nom du package.
 
-1. Pour supprimer le contenu de ce package du référentiel, cliquez sur **Plus** -> **Désinstaller**.
+1. Cliquez sur **Plus** > **Désinstaller**, pour supprimer le contenu de ce module du référentiel.
 
 1. Une boîte de dialogue vous invite à confirmer et énumère toutes les modifications apportées.
 
@@ -569,7 +569,7 @@ Répliquez le contenu d’un package afin de l’installer dans l’instance de 
 
 1. Ouvrez les détails du package que vous souhaitez répliquer depuis la liste des packages en cliquant sur le nom du package.
 
-1. Cliquez sur **Plus** -> **Répliquer**.
+1. Cliquez sur **Plus** > **Répliquer**.
 
 1. Le package est répliqué et les détails sont signalés dans le journal d’activité.
 

@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '6945'
+source-wordcount: '6922'
 ht-degree: 6%
 
 ---
@@ -555,7 +555,7 @@ Définition de la structure de contenu du système hérité. Il est utilisé à 
 
 ### Performances historiques et IPC de performance historique {#historical-performance-and-historical-performance-kpis}
 
-Vous devez collecter et documenter les statistiques de performances et les indicateurs de performance clés du système hérité. Ils sont ensuite utilisés comme point de référence et pour l’évaluation comparative de la nouvelle solution.
+collecter et documenter les statistiques de performances et les indicateurs de performance clés du système hérité ; Ils sont ensuite utilisés comme point de référence et pour l’évaluation comparative de la nouvelle solution.
 
 ### Identification des solutions/fonctionnalités clés essentielles {#identify-critical-key-solutions-functionalities}
 
@@ -1236,7 +1236,7 @@ La Spécification technique couvre (entre autres informations) :
 
 * interfaces
 * configurations
-* API 
+* API
 * les services qui prennent en charge les exigences de la solution ;
 
 ### Spécification du modèle {#template-specification}

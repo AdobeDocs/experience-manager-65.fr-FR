@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '17027'
+source-wordcount: '16882'
 ht-degree: 83%
 
 ---
@@ -87,7 +87,7 @@ Avant d’effectuer par programmation une opération du service Signature, vous 
 
 **Obtenir un document PDF auquel un champ de signature est ajouté**
 
-Vous devez obtenir un document PDF auquel un champ de signature est ajouté.
+Obtenez un document de PDF auquel un champ de signature est ajouté.
 
 **Ajouter un champ de signature**
 

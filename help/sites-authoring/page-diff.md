@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 86%
+source-wordcount: '569'
+ht-degree: 81%
 
 ---
 
@@ -68,7 +68,7 @@ L’outil de comparaison détecte les modifications effectuées sur les composan
 
 ### Affichage en mode plein écran {#fullscreen-and-exiting}
 
-Si vous souhaitez vous concentrer sur un contenu spécifique, vous pouvez cliquer sur l’icône du mode plein écran pour l’un ou l’autre des deux « côtés » de votre comparaison. Cela vous permet d’afficher la version en plein écran dans la fenêtre du navigateur.
+Pour vous concentrer sur un contenu particulier, vous pouvez cliquer sur l’icône Plein écran de l’un des &quot;côtés&quot; de la comparaison côte à côte afin de l’agrandir dans la fenêtre du navigateur.
 
 ![Icône du mode Plein écran](do-not-localize/chlimage_1-18.png)
 

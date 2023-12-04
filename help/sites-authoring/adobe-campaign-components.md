@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: personalization
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2834'
-ht-degree: 95%
+source-wordcount: '2859'
+ht-degree: 93%
 
 ---
 
@@ -79,7 +79,7 @@ Vous pouvez faire glisser et déposer une image à partir de l’[explorateur de
 
 >[!NOTE]
 >
->Pour enregistrer l’image, vous devez renseigner le champ **Texte de remplacement**.
+>Saisissez les informations dans le champ **Texte de remplacement** ou l’image ne peut pas être enregistrée.
 
 Une fois l’image chargée (pas avant), vous pouvez utiliser la [modification statique](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) pour recadrer/faire pivoter l’image, au besoin :
 
@@ -97,14 +97,14 @@ Différentes autres options sont disponibles en mode Plein écran. Par exemple, 
 
 Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
 
-* **Map**
-Pour mapper une image, sélectionnez Mapper. Vous pouvez spécifier ensuite comment créer la zone cliquable (rectangle, polygone, etc.) et l’emplacement sur lequel la zone doit pointer.
+* **Mapper**
+Pour faire correspondre une image, sélectionnez Mapper. Vous spécifiez ensuite comment créer l’image interactive (rectangle, polygone, etc.) et l’emplacement où doit pointer la zone.
 
 * **Recadrer**
-Sélectionnez Recadrer pour effectuer un recadrage d’une image. Utilisez la souris pour effectuer le recadrage.
+Sélectionnez cette option pour recadrer une image à l’aide de la souris.
 
 * **Rotation**
-Pour faire pivoter une image, sélectionnez Rotation. Répétez l’opération jusqu’à ce que l’image ait pivoté comme vous le souhaitez.
+Pour faire pivoter une image, sélectionnez Rotation, à plusieurs reprises si nécessaire.
 
 * **Effacer**
 Permet de supprimer l’image actuelle.
@@ -128,7 +128,7 @@ Permet de définir la hauteur et la largeur de l’image.
 
 >[!NOTE]
 >
->Pour enregistrer l’image, vous devez renseigner le champ **Texte de remplacement** sur l’**onglet Avancé**. Sinon, le message d’erreur ci-dessous s’affiche :
+>Saisissez les informations dans le champ **Texte de remplacement** dans le champ **Avancé** ou l’image ne peut pas être enregistrée et le message d’erreur suivant s’affiche :
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -150,14 +150,14 @@ Légende du lien. Il s’agit du texte que les utilisateurs voient.
 Ajoute des informations supplémentaires sur l’utilisation du lien.
 
 * **LinkType**
-Dans la liste déroulante, sélectionnez entre une **URL personnalisée** et un **Document adaptatif**. Ce champ est obligatoire. Si vous sélectionnez URL personnalisée, vous pouvez fournir l’URL du lien. Si vous sélectionnez Document adaptatif, vous pouvez fournir le chemin du document.
+Dans la liste déroulante, sélectionnez entre un **URL personnalisée** et un **Document adaptatif**. Ce champ est obligatoire. Si vous sélectionnez URL personnalisée, vous pouvez fournir l’URL du lien. Si vous sélectionnez Document adaptatif, vous pouvez fournir le chemin du document.
 
 * **Paramètre d’URL supplémentaire**
 Ajoutez des paramètres d’URL supplémentaires. Cliquez sur Ajouter un élément pour ajouter plusieurs éléments.
 
 >[!NOTE]
 >
->Pour enregistrer le composant, vous devez renseigner le champ **Type de lien** sur l’onglet **Informations sur l’URL**. Autrement, le message d’erreur ci-dessous s’affiche :
+>Saisissez les informations dans le champ **Type de lien** dans le champ **Informations sur l’URL** ou le composant ne peut pas enregistrer et le message d’erreur suivant s’affiche :
 >
 >`Validation failed. Verify the values of the marked fields.`
 >

@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2227'
-ht-degree: 58%
+source-wordcount: '2246'
+ht-degree: 56%
 
 ---
 
@@ -95,7 +95,7 @@ L’apparence et la gestion réelles de l’appareil dépendent du type d’appa
    * Filtrer les composants par nom
    * Restreindre l’affichage à un groupe spécifique à l’aide de la liste déroulante.
 
-  Pour obtenir une description plus détaillée du composant, vous pouvez cliquer ou appuyer sur l’icône d’informations en regard du composant dans le navigateur **Composants** (le cas échéant). Par exemple, pour le **conteneur de mise en page** :
+  Pour obtenir une description plus détaillée du composant, vous pouvez cliquer sur l’icône d’information en regard du composant dans la variable **Composants** navigateur (le cas échéant). Par exemple, pour le **conteneur de mise en page** :
 
   ![ateat-06](assets/ateat-06.png)
 
@@ -129,7 +129,7 @@ Pour ajouter une ressource à votre page, sélectionnez-la et faites-la glisser 
 
 >[!NOTE]
 >
->Vous pouvez agir ainsi pour des ressources et des types de composants spécifiques. Voir [Insertion d’un composant à l’aide de l’explorateur de ressources](/help/sites-authoring/editing-content.md#inserting-a-component-using-the-assets-browser) pour en savoir plus.
+>Cette option est disponible pour des ressources et des types de composants spécifiques. Voir [Insertion d’un composant à l’aide de l’explorateur de ressources](/help/sites-authoring/editing-content.md#inserting-a-component-using-the-assets-browser) pour plus d’informations.
 
 Dans la barre d’outils supérieure de l’explorateur de ressources, vous pouvez filtrer les ressources en procédant comme suit :
 
@@ -282,7 +282,7 @@ Le bouton Informations sur la page (icône d’égaliseur) ouvre un menu qui fou
 
 Par exemple, le cas échéant, **Informations sur la page** propose également les options suivantes :
 
-* [Promouvoir le lancement](/help/sites-authoring/launches-promoting.md) si la page correspond à un lancement
+* [Convertir le lancement](/help/sites-authoring/launches-promoting.md) si la page est un lancement ;
 * [Ouvrir dans l’interface utilisateur classique](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) si cette option était [activé par un administrateur](/help/sites-administering/enable-classic-ui-editor.md)
 
 Le menu **Informations sur la page** peut en outre donner accès à des analyses et recommandations, le cas échéant.
@@ -344,7 +344,7 @@ L’explorateur de chemins d’accès est organisé de la même façon que le [m
 
 ![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
-* Lorsqu’une ressource est sélectionnée, le bouton **Sélectionner** situé en haut à droite de la boîte de dialogue devient actif. Cliquez ou appuyez pour confirmer la sélection. **Annulez** pour abandonner.
+* Lorsqu’une ressource est sélectionnée, le bouton **Sélectionner** situé en haut à droite de la boîte de dialogue devient actif. Cliquez pour confirmer la sélection ou **Annuler** pour abandonner.
 * Si le contexte permet la sélection de plusieurs ressources, la sélection d’une ressource active également le bouton **Sélectionner**, mais ajoute également le nombre de ressources sélectionnées en haut à droite de la fenêtre. Cliquez sur **X** en regard du nombre pour tout désélectionner.
 * Lorsque vous parcourez l’arborescence, votre emplacement est reflété dans le chemin de navigation de la boîte de dialogue. Ces chemins de navigation peuvent également être utilisés pour accéder rapidement à la hiérarchie des ressources.
 * Vous pouvez à tout moment utiliser le champ de recherche en haut de la boîte de dialogue. Cliquez sur le **X** dans le champ de recherche pour effacer la recherche.

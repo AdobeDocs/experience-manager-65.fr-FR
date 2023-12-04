@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '10221'
+source-wordcount: '10266'
 ht-degree: 23%
 
 ---
@@ -734,7 +734,7 @@ Vous pouvez effectuer les modifications suivantes à l’aide du fichier de conf
 
 >[!NOTE]
 >
->L’importation du fichier de configuration reconfigure votre système en fonction des informations contenues dans le fichier. Les exceptions sont les informations de configuration de filigrane dynamique et d’événements personnalisés, qui ne sont pas enregistrées avec le fichier de configuration exporté. Vous devez configurer ces informations manuellement dans votre nouveau système. Seul un administrateur système ou un consultant en services professionnels qui connaît Document Security et XML doit modifier le contenu d’un fichier de configuration, par exemple pour reconfigurer un paramètre corrompu ou pour régler les paramètres d’un scénario de déploiement d’entreprise particulier.
+>L’importation du fichier de configuration reconfigure votre système en fonction des informations contenues dans le fichier. Les exceptions sont les informations de configuration de filigrane dynamique et d’événements personnalisés, qui ne sont pas enregistrées avec le fichier de configuration exporté. Configurez ces informations manuellement dans votre nouveau système. Seul un administrateur système ou un consultant en services professionnels qui connaît Document Security et XML doit modifier le contenu d’un fichier de configuration, par exemple pour reconfigurer un paramètre corrompu ou pour régler les paramètres d’un scénario de déploiement d’entreprise particulier.
 
 **Exporter un fichier de configuration**
 

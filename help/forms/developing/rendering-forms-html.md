@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4143'
-ht-degree: 80%
+source-wordcount: '4102'
+ht-degree: 79%
 
 ---
 
@@ -99,7 +99,7 @@ Dans un formulaire de plusieurs pages, les modifications apportées par JavaScri
 
 Vous pouvez appeler des scripts personnalisés avant d’envoyer un formulaire. Cette fonctionnalité fonctionne sur tous les navigateurs disponibles. Cependant, elle ne peut être utilisée que lorsque les utilisateurs effectuent le rendu du formulaire HTML dont la propriété `Output Type` est définie sur `Form Body`. Cela ne fonctionne pas lorsque la propriété `Output Type` est définie sur `Full HTML`. Pour connaître les étapes de configuration de cette fonctionnalité, consultez la section Configurer des formulaires dans l’aide d’administration.
 
-Vous devez d’abord définir une fonction de rappel appelée avant l’envoi du formulaire, où le nom de la fonction est `_user_onsubmit`. On suppose que la fonction ne renvoie aucune exception ou que, dans ce cas, l’exception est ignorée. Il est recommandé de placer la fonction JavaScript dans la section HEAD du fichier HTML. Vous pouvez toutefois la déclarer n’importe où avant la fin des balises de script qui incluent `xfasubset.js`.
+Commencez par définir une fonction de rappel appelée avant d’envoyer le formulaire, où le nom de la fonction est `_user_onsubmit`. On suppose que la fonction ne renvoie aucune exception ou que, dans ce cas, l’exception est ignorée. Il est recommandé de placer la fonction JavaScript dans la section HEAD du fichier HTML. Vous pouvez toutefois la déclarer n’importe où avant la fin des balises de script qui incluent `xfasubset.js`.
 
 Lorsque le serveur de formulaires effectue le rendu d’un fichier XDP contenant une liste déroulante, il crée deux champs de texte masqués en plus de créer la liste déroulante. Ces champs de texte stockent les données de la liste déroulante (l’un stocke le nom d’affichage des options et l’autre stocke la valeur des options). Par conséquent, chaque fois qu’un utilisateur envoie le formulaire, toutes les données de la liste déroulante sont envoyées. Supposons que vous ne souhaitiez pas envoyer autant de données à chaque fois. Vous pouvez alors écrire un script personnalisé permettant de désactiver cela. Par exemple : le nom de la liste déroulante est `drpOrderedByStateProv` et est placé sous l’en-tête de sous-formulaire. Le nom de l’élément d’entrée HTML est `header[0].drpOrderedByStateProv[0]`. Les noms des champs masqués qui stockent et envoient les données de la liste déroulante sont les suivants : `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`.
 
@@ -127,7 +127,7 @@ Les scripts qui s’exécutent sur le client ou à la fois sur le client et le s
 
 Lors de l’exécution de scripts sur le client, seul le panneau actuel affiché peut utiliser un script ; par exemple, vous ne pouvez pas créer de script pour les champs du panneau A lorsque le panneau B est affiché. Lors de l’exécution de scripts sur le serveur, tous les panneaux sont accessibles.
 
-Vous devez également faire attention lorsque vous utilisez des expressions de modèle d’objet de script (SOM) dans des scripts exécutés sur le client. Seul un sous-ensemble simplifié d’expressions SOM est pris en charge par les scripts qui s’exécutent sur le client.
+Soyez prudent lorsque vous utilisez des expressions SOM (Scripting Object Model) dans des scripts exécutés sur le client. Seul un sous-ensemble simplifié d’expressions SOM est pris en charge par les scripts qui s’exécutent sur le client.
 
 ## Durée d’événement {#event-timing}
 
@@ -236,7 +236,7 @@ Si vous générez un formulaire AHTML, il est recommandé de ne pas ajouter de b
 
 **Rendre un formulaire au format HTML**
 
-Pour générer un formulaire HTML, vous devez spécifier une conception de formulaire créée dans Designer et enregistrée en tant que fichier XDP. Vous devez également sélectionner un type de transformation HTML. Par exemple, vous pouvez spécifier le type de transformation HTML qui effectue le rendu d’un HTML dynamique pour Internet Explorer 5.0 ou version ultérieure.
+Pour effectuer le rendu d’un formulaire HTML, spécifiez une conception de formulaire qui a été créée dans Designer et enregistrée en tant que fichier XDP. Sélectionnez un type de transformation de HTML. Par exemple, vous pouvez spécifier le type de transformation HTML qui effectue le rendu d’un HTML dynamique pour Internet Explorer 5.0 ou version ultérieure.
 
 Le rendu d’un formulaire HTML nécessite également des valeurs, telles que des valeurs URI requises pour effectuer le rendu d’autres types de formulaire.
 

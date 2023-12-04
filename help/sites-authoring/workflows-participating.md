@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1519'
-ht-degree: 88%
+source-wordcount: '1521'
+ht-degree: 79%
 
 ---
 
@@ -44,7 +44,7 @@ Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**),
    * Le nombre de workflows auxquels la page est soumise. Vous pouvez effectuer les actions suivantes :
 
       * utiliser les flèches gauche/droite pour parcourir les informations sur le statut des différents workflows ;
-      * cliquer/appuyer sur le nombre pour ouvrir la liste déroulante de tous les workflows applicables, puis sélectionner le workflow que vous souhaitez afficher dans la barre d’état.
+      * cliquez sur le nombre réel pour ouvrir une liste déroulante de tous les workflows applicables, puis sélectionnez le workflow à afficher dans la barre d&#39;état.
 
   ![wf-59](assets/wf-59.png)
 
@@ -55,7 +55,7 @@ Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**),
   >
   >Les actions s’affichent lorsque la personnes utilisatrice actuelle est directement impliquée dans l’étape actuelle du workflow.
 
-* Lorsque la **chronologie** est ouverte pour la ressource, l’étape du workflow s’affiche. Lorsque vous cliquez ou appuyez sur la bannière d’alerte, les actions disponibles s’affichent également :
+* Lorsque la **chronologie** est ouverte pour la ressource, l’étape du workflow s’affiche. Lorsque vous cliquez sur la bannière d’alerte, les actions disponibles s’affichent également :
 
   ![screen-shot_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
 
@@ -80,7 +80,7 @@ Vous pouvez terminer une étape de participant à partir des éléments suivants
 Utilisez la procédure suivante pour terminer l’élément de travail :
 
 1. Ouvrez la **[boîte de réception AEM](/help/sites-authoring/inbox.md)**.
-1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (appuyez/cliquez sur la miniature).
+1. Sélectionnez l’élément de workflow sur lequel vous souhaitez effectuer une action (cliquez sur la miniature).
 1. Sélectionnez **Terminer** dans la barre d’outils.
 1. La variable **Terminer l’élément de travail** s’ouvre. Sélectionnez la variable **Étape suivante** à partir du sélecteur de liste déroulante et ajoutez une **Commentaire** si nécessaire.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
@@ -102,7 +102,7 @@ Vous pouvez également utiliser la chronologie pour terminer et avancer d’une 
 
    ![screen-shot_2019-03-05at120744](assets/screen-shot_2019-03-05at120744.png)
 
-1. Cliquez ou appuyez sur la bannière d’alerte pour afficher les actions disponibles. Sélectionnez **Avancer** :
+1. Cliquez sur la bannière d’alerte pour afficher les actions disponibles. Sélectionnez **Avancer** :
 
    ![screen-shot_2019-03-05at120453-1](assets/screen-shot_2019-03-05at120453-1.png)
 
@@ -139,7 +139,7 @@ Vous pouvez déléguer une étape de participant depuis :
 Utilisez la procédure suivante pour déléguer un élément de travail :
 
 1. Ouvrez la **[boîte de réception AEM](/help/sites-authoring/inbox.md)**.
-1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (appuyez/cliquez sur la miniature).
+1. Sélectionnez l’élément de workflow sur lequel vous souhaitez effectuer une action (cliquez sur la miniature).
 1. Sélectionnez **Déléguer** dans la barre d’outils.
 1. La boîte de dialogue s’ouvre. Spécifiez la variable **Utilisateur** à partir du sélecteur de liste déroulante (il peut également s’agir d’un groupe) et ajoutez une **Commentaire** si nécessaire.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
@@ -158,7 +158,7 @@ Utilisez la procédure suivante pour déléguer un élément de travail :
 Vous pouvez également utiliser la chronologie pour déléguer et/ou attribuer une étape :
 
 1. Sélectionnez la page requise et ouvrez la **chronologie** (ou ouvrez la **chronologie** et sélectionnez la page).
-1. Cliquez ou appuyez sur la bannière d’alerte pour afficher les actions disponibles. Sélectionnez **Modifier la personne désignée** :
+1. Cliquez sur la bannière d’alerte pour afficher les actions disponibles. Sélectionnez **Modifier la personne désignée** :
 
    ![screen-shot_2019-03-05at120453-2](assets/screen-shot_2019-03-05at120453-2.png)
 
@@ -189,7 +189,7 @@ Vous pouvez revenir en arrière sur une étape de participant depuis :
 Procédez comme suit pour revenir en arrière :
 
 1. Ouvrez la **[boîte de réception AEM](/help/sites-authoring/inbox.md)**.
-1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (appuyez/cliquez sur la miniature).
+1. Sélectionnez l’élément de workflow sur lequel vous souhaitez effectuer une action (cliquez sur la miniature).
 1. Sélectionnez **Revenir en arrière** pour ouvrir la boîte de dialogue.
 
 1. Spécifiez la variable **Étape précédente** et ajoutez une **Commentaire** si nécessaire.
@@ -209,7 +209,7 @@ Procédez comme suit pour revenir en arrière :
 Vous pouvez également utiliser la chronologie pour revenir à une étape précédente et la restaurer :
 
 1. Sélectionnez la page requise et ouvrez la **chronologie** (ou ouvrez la **chronologie** et sélectionnez la page).
-1. Cliquez ou appuyez sur la bannière d’alerte pour afficher les actions disponibles. Sélectionnez **Restaurer** :
+1. Cliquez sur la bannière d’alerte pour afficher les actions disponibles. Sélectionnez **Restaurer** :
 
    ![screen-shot_2019-03-05at121131](assets/screen-shot_2019-03-05at121131.png)
 
@@ -251,7 +251,7 @@ Vous pouvez ouvrir les détails de l’élément de travail à partir de :
 Pour ouvrir un élément de workflow et afficher les détails :
 
 1. Ouvrez la **[boîte de réception AEM](/help/sites-authoring/inbox.md)**.
-1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (appuyez/cliquez sur la miniature).
+1. Sélectionnez l’élément de workflow sur lequel vous souhaitez effectuer une action (cliquez sur la miniature).
 1. Sélectionnez **Ouvrir** pour ouvrir les onglets d’informations.
 
 1. Si nécessaire, sélectionnez l’action appropriée, fournissez les détails et confirmez avec **OK** (ou **Annuler**).
@@ -274,7 +274,7 @@ Vous pouvez afficher les détails de la charge utile associée à l’instance d
 Pour afficher la charge utile et les ressources de l’instance de workflow :
 
 1. Ouvrez la **[boîte de réception AEM](/help/sites-authoring/inbox.md)**.
-1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (appuyez/cliquez sur la miniature).
+1. Sélectionnez l’élément de workflow sur lequel vous souhaitez effectuer une action (cliquez sur la miniature).
 1. Sélectionnez **Afficher la charge utile** dans la barre d’outils pour ouvrir la boîte de dialogue.
 
    Un package de workflow étant simplement un ensemble de pointeurs vers les chemins d’accès au sein du référentiel, vous pouvez y ajouter, supprimer ou modifier les entrées pour définir ce qu’il référence. Utilisez le composant **Définition de ressource** pour ajouter de nouvelles entrées.

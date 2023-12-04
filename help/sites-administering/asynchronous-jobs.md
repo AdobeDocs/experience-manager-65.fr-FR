@@ -2,10 +2,10 @@
 title: Tâches asynchrones
 description: Adobe Experience Manager optimise les performances en exécutant de manière asynchrone certaines tâches gourmandes en ressources.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 94%
+source-wordcount: '791'
+ht-degree: 91%
 
 ---
 
@@ -21,7 +21,7 @@ Ces opérations comprennent :
 * Récupération des ressources dépassant la limite de seuil définie à partir d’un déploiement Experience Manager distant
 * Déploiement de Live Copies
 
-Vous pouvez afficher l’état des tâches asynchrones à partir du tableau de bord **[!UICONTROL État des tâches asynchrones]** dans **Navigation globale** -> **Outils** -> **Opérations** -> **Tâches**.
+Vous pouvez afficher l’état des tâches asynchrones à partir du **[!UICONTROL État des tâches asynchrones]** tableau de bord à **Navigation globale** > **Outils** > **Opérations** > **Tâches**.
 
 >[!NOTE]
 >

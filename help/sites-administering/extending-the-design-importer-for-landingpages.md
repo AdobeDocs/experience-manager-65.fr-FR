@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3495'
-ht-degree: 42%
+source-wordcount: '3443'
+ht-degree: 40%
 
 ---
 
@@ -58,10 +58,10 @@ Aide-mémoire pour la page d’entrée
 
 Voici un exemple de mise en page du fichier zip :
 
-* /index.html -> fichier de HTML de landing page
-* /css -> à ajouter à la bibliothèque cliente CSS
-* /img -> toutes les images et tous les actifs
-* /js -> à ajouter à la bibliothèque cliente JS
+* /index.html > fichier de HTML de landing page
+* /css > à ajouter à la bibliothèque cliente CSS
+* /img > toutes les images et ressources
+* /js > à ajouter à la bibliothèque cliente JS
 
 La disposition s’appuie sur les bonnes pratiques HTML5 Boilerplate. Pour en savoir plus, consultez [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
@@ -111,7 +111,7 @@ La section suivante décrit la modification de votre fichier HTML de manière à
 
 Avant l’importation, notez les restrictions suivantes :
 
-### Les attributs, tels que class ou id, appliqués à la balise &amp;lt;body> ne sont pas conservés. {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
+### Tout attribut tel que class ou id appliqué à la balise &amp;lt;body> n’est pas conservé. {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
 Si un attribut tel que id ou class est appliqué à la balise body, par exemple : `<body id="container">` il n’est pas conservé après l’importation. La conception importée ne doit donc avoir aucune dépendance sur les attributs appliqués à la balise `<body>`.
 
@@ -156,8 +156,8 @@ L’insertion des balises ci-dessus dans le fichier HTML produit les effets suiv
 
 Pour ajouter un texte avec une liste :
 
-* 1st
-* 2nd
+* 1er
+* 2e
 
 qui peuvent être modifiés dans l’éditeur d’éditeur de texte enrichi :
 
@@ -530,7 +530,7 @@ Le tableau ci-dessous décrit brièvement les propriétés :
 >
 >>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
->Et vous devez remplacer `CQ_DESIGN_PATH`par `VIPURL` dans le motif de recherche, celui-ci doit se présenter comme suit :
+>Et vous devez remplacer `CQ_DESIGN_PATH` avec `VIPURL` dans le modèle de recherche, votre modèle de recherche doit se présenter comme suit :
 >
 >`/\* *VIPURL *\*/ *(['"])`
 

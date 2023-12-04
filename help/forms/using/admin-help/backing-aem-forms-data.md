@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 10%
+source-wordcount: '1515'
+ht-degree: 9%
 
 ---
 
@@ -37,7 +37,7 @@ Si la base de données s’exécute en mode de journalisation, comme décrit dan
 
 ## Sauvegarde de la base de données, du répertoire de stockage global de documents, du référentiel AEM et des répertoires racine de stockage de contenu {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
 
-Vous devez mettre AEM Forms en mode de sauvegarde sécurisé (instantané) ou de sauvegarde restauration (couverture continue). Avant de configurer AEM Forms pour qu’il passe en mode de sauvegarde, vérifiez les points suivants :
+Placez AEM Forms en mode de sauvegarde sécurisé (instantané) ou de sauvegarde restauration (couverture continue). Avant de configurer AEM Forms pour qu’il passe en mode de sauvegarde, vérifiez les points suivants :
 
 * Vérifiez la version du système et enregistrez les correctifs ou mises à jour appliqués depuis la dernière sauvegarde complète de l’image système effectuée.
 * Si vous utilisez des sauvegardes en mode restauration ou instantané, assurez-vous que votre base de données est configurée avec les paramètres de journal corrects pour permettre les sauvegardes à chaud de la base de données. (Voir [Base de données AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).)

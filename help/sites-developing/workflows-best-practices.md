@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1922'
-ht-degree: 23%
+source-wordcount: '1925'
+ht-degree: 22%
 
 ---
 
@@ -297,7 +297,7 @@ Il est recommandé d’utiliser l’avance du gestionnaire, car elle offre de me
 
 Vous pouvez définir [étapes de workflow](/help/sites-developing/workflows.md#workflow-stages), puis attribuez des tâches/étapes à une étape de workflow spécifique.
 
-Ces informations sont utilisées pour afficher la progression d’un workflow lorsque vous cliquez sur l’onglet [**Informations sur le workflow** d’un élément de travail dans la **Boîte de réception**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). Les modèles de workflow existants peuvent être modifiés pour ajouter des phases.
+Ces informations sont utilisées pour afficher la progression d&#39;un workflow lorsque vous cliquez sur le bouton [**Informations sur le workflow** de l’onglet d’un élément de travail à partir de **Boîte de réception**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). Les modèles de workflow existants peuvent être modifiés pour ajouter des phases.
 
 ### Étape Activer le processus de page {#activate-page-process-step}
 

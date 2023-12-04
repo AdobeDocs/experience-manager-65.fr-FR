@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 65%
+source-wordcount: '528'
+ht-degree: 63%
 
 ---
 
@@ -34,10 +34,10 @@ Le code client identifie le compte client Adobe Target lors de l’appel du serv
 
 L’[agent de réplication](/help/sites-deploying/replication.md) Test&amp;Target doit être activé sur l’instance de création. Notez que cet agent de réplication n’est pas activé par défaut si vous utilisez le mode d’exécution [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) pour installer AEM. Pour plus d’informations sur la sécurisation de votre environnement de production, voir [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md).
 
-1. Sur la page d’accueil AEM, cliquez ou appuyez sur **Outils** > **Déploiement** > **Réplication**.
-1. Cliquez ou appuyez sur **Agents sur l’auteur**.
-1. Cliquez ou appuyez sur **Test et ciblage (test et cible)** agent de réplication, puis cliquez ou appuyez sur **Modifier**.
-1. Sélectionnez l’option Activé , puis cliquez ou appuyez sur **OK**.
+1. Sur la page d’accueil AEM, cliquez sur **Outils** > **Déploiement** > **Réplication**.
+1. Cliquez sur **Agents sur l’auteur**.
+1. Cliquez sur le bouton **Test et ciblage (test et cible)** agent de réplication, puis cliquez sur **Modifier**.
+1. Sélectionnez l’option Activé , puis cliquez sur **OK**.
 
    >[!NOTE]
    >
@@ -47,9 +47,9 @@ L’[agent de réplication](/help/sites-deploying/replication.md) Test&amp;Targe
 
 ## Sécurisation du nœud de paramètres d’activité {#securing-the-activity-settings-node}
 
-Vous devez sécuriser le nœud de paramètres d’activité **c:ActivitySettings** sur l’instance de publication de sorte qu’il ne soit pas accessible pour les utilisateurs normaux. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
+Sécurisez le nœud de paramètres d’activité **cq:ActivitySettings** sur l’instance de publication de sorte qu’il ne soit pas accessible pour les personnes utilisatrices normales. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
 
-Le nœud **cq:ActivitySettings** est disponible dans CRXDE Lite sous `/content/campaigns/*nameofbrand*`/*sous le nœud jcr:content des activités,* par exemple, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Ce nœud est créé après que vous ciblez un composant.
+La variable **cq:ActivitySettings** est disponible dans CRXDE Lite sous `/content/campaigns/*nameofbrand*`* *sous le noeud jcr:content des activités ;* *par exemple, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Ce nœud est créé après que vous ciblez un composant.
 
 Le nœud **cq:ActivitySettings** sous le nœud jcr:content de l’activité est protégé par les ACL suivantes :
 

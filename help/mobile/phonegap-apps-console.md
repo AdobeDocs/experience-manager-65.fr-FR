@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2675'
 ht-degree: 1%
 
 ---
@@ -107,16 +107,16 @@ Après avoir créé une application mobile, vous pouvez modifier ses propriété
 
 #### Modification du titre, de la description et de l’icône {#change-the-title-description-and-icon}
 
-1. Sur le rail, cliquez ou appuyez sur Applications.
+1. Sur le rail, cliquez sur Applications.
 1. Sélectionnez l’application à configurer, puis cliquez sur l’icône Afficher les propriétés de page .
 
    ![Icône Afficher les propriétés de page indiquée par la lettre I dans un cercle.](do-not-localize/chlimage_1-8.png)
 
-1. Pour modifier les valeurs de propriété, cliquez ou appuyez sur l’icône Modifier .
+1. Pour modifier les valeurs de propriété, cliquez sur l’icône Modifier .
 
    ![L’icône Modifier indiquée par un crayon.](do-not-localize/chlimage_1-9.png)
 
-1. Configurez les propriétés de base et avancées, puis cliquez ou appuyez sur l’icône Terminé .
+1. Configurez les propriétés de base et avancées, puis cliquez sur l’icône Terminé .
 
    ![Icône Terminé indiquée par une coche.](do-not-localize/chlimage_1-10.png)
 
@@ -127,11 +127,11 @@ Après avoir créé une application mobile, vous pouvez modifier ses propriété
 
    ![Icône Afficher les propriétés de l’application indiquée par la lettre I dans un cercle.](do-not-localize/chlimage_1-11.png)
 
-1. Pour modifier les valeurs de propriété, cliquez ou appuyez sur l’icône Modifier .
+1. Pour modifier les valeurs de propriété, cliquez sur l’icône Modifier .
 
    ![L’icône Modifier indiquée par un crayon.](do-not-localize/chlimage_1-12.png)
 
-1. Configurez les propriétés dans les onglets De base, Avancé, Créer et Analytics, puis cliquez ou appuyez sur l’icône Terminé.
+1. Configurez les propriétés dans les onglets De base, Avancé, Créer et Analytics, puis cliquez sur l’icône Terminé.
 
    ![Icône Terminé indiquée par une coche.](do-not-localize/chlimage_1-13.png)
 
@@ -139,8 +139,8 @@ Après avoir créé une application mobile, vous pouvez modifier ses propriété
 
 Après avoir créé l’application mobile, ajoutez le contenu utilisé comme interface utilisateur de l’application.
 
-1. Sur le rail, cliquez ou appuyez sur Applications.
-1. Cliquez ou appuyez sur l’application, puis sur Anglais.
+1. Sur le rail, cliquez sur Applications.
+1. Cliquez sur l’application, puis sur Anglais.
 1. Modifiez la page d’accueil ou ajoutez des pages enfants selon les besoins.
 
 ### Déplacement de contenu vers des applications mobiles {#moving-content-to-mobile-applications}
@@ -160,8 +160,8 @@ La synchronisation de contenu effectue également le suivi lorsque les mises à 
 
 Procédez comme suit sur l’instance où vous souhaitez mettre à jour le cache. Par exemple, si votre application demande des mises à jour à partir de l’instance de publication, effectuez la procédure sur l’instance de publication.
 
-1. Sur le rail, cliquez ou appuyez sur Applications, puis sur votre application.
-1. Sélectionnez la page de démarrage, puis cliquez ou appuyez sur l’icône Mettre à jour le cache .
+1. Sur le rail, cliquez sur Applications, puis sur votre application.
+1. Sélectionnez la page de démarrage, puis cliquez sur l’icône Mettre à jour le cache .
 
    ![L’icône Mettre à jour le cache est indiquée par une barre répartie par une bande avec un symbole de recyclage.](do-not-localize/chlimage_1-14.png)
 
@@ -238,7 +238,7 @@ Le contenu de la page d’accueil se compose des outils de navigation suivants :
 
 La page Engrenage permet aux utilisateurs d’accéder aux pages de produits. Un composant de liste de menus permet d’accéder aux pages enfants de la page d’engrenage. Les pages enfants sont des catégories de produits que le site web propose.
 
-* Saison 
+* Saison
 * Vêtements
 * Genre
 * Activity

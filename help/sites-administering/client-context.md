@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 53%
+source-wordcount: '1961'
+ht-degree: 49%
 
 ---
 
@@ -175,7 +175,7 @@ Vous pouvez également sélectionner un profil avec le curseur de sélection :
 
 ### Modification de la plateforme du navigateur {#changing-the-browser-platform}
 
-1. Double-cliquez sur l’icône représentant la plateforme de navigateur. Le sélecteur s’ouvre. Utilisez les flèches pour naviguer et voir les plateformes/navigateurs disponibles :
+1. Double-cliquez sur l’icône représentant la plateforme du navigateur. Le sélecteur s’ouvre. Utilisez les flèches pour naviguer et voir les plateformes/navigateurs disponibles :
 
    ![Sélecteur de plateforme de navigateur](assets/clientcontext_browserplatform.png)
 
@@ -191,7 +191,7 @@ Vous pouvez également sélectionner un profil avec le curseur de sélection :
 
 ### Modification de la sélection des balises {#changing-the-tag-selection}
 
-1. Double-cliquez sur la section Nuage de tags de ClientContext. La boîte de dialogue s’ouvre, dans laquelle vous pouvez sélectionner des balises :
+1. Double-cliquez sur la section Nuage de balises de ClientContext. La boîte de dialogue s’ouvre, dans laquelle vous pouvez sélectionner des balises :
 
    ![Boîte de dialogue Nuage de balises](assets/clientcontext_tagselection.png)
 
@@ -209,7 +209,7 @@ La modification du contexte client peut être utilisée pour définir (ou réini
 
 ### Ajout d’un composant de propriété {#adding-a-property-component}
 
-Après avoir ouvert la **page de conception du contexte client**, vous pouvez également **Ajouter** une propriété entièrement nouvelle à l’aide des composants disponibles (les composants sont répertoriés dans le sidekick ou la boîte de dialogue **Insérer un nouveau composant** qui s’affiche si vous double-cliquez sur la case **Faire glisser des composants ou éléments ici**) :
+Après avoir ouvert la **Page de conception de ClientContext**, vous pouvez également **Ajouter** une propriété entièrement nouvelle à l’aide des composants disponibles (les composants sont répertoriés dans le sidekick ou dans la variable **Insérer un nouveau composant** qui s’ouvre après un double-clic sur la **Faire glisser des composants ou des ressources ici** box) :
 
 ![Ajout d’une propriété à la fenêtre ClientContext](assets/clientcontext_alisonparker_new.png)
 

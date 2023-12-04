@@ -3,10 +3,10 @@ title: Configuration des modules externes d’éditeur de texte enrichi
 description: Apprenez à configurer les modules externes d’éditeur de texte enrichi d’Adobe Experience Manager afin d’activer différentes fonctionnalités.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4395'
-ht-degree: 66%
+source-wordcount: '4391'
+ht-degree: 65%
 
 ---
 
@@ -95,7 +95,7 @@ Les trois icônes ci-dessous peuvent être mises à la disposition des auteurs d
 
 Pour configurer l’éditeur de texte enrichi afin qu’il affiche les icônes requises, procédez comme suit.
 
-1. Accédez à votre composant, par exemple, `/apps/<myProject>/components/text`.
+1. Accédez à votre composant, par exemple : `/apps/<myProject>/components/text`.
 1. Accédez au nœud `rtePlugins/edit`. Voir [Activation d’un module externe](#activateplugin) si le nœud n’existe pas.
 1. Créez la propriété `features` sur le nœud `edit` et ajoutez une ou plusieurs des fonctions. Enregistrez toutes les modifications.
 
@@ -380,7 +380,7 @@ Les formats de paragraphe peuvent être mis à disposition pour être sélection
 
    * **Nom** `tag`
    * **Type** `String`
-   * **Valeur** La balise block pour le format, par exemple : p, h1, h2.
+   * **Valeur** Balise block pour le format, par exemple : p, h1, h2.
 
      Vous n’avez pas besoin de saisir les crochets de séparation.
 
@@ -587,7 +587,7 @@ Une installation d’AEM standard inclut les dictionnaires pour l’anglais amé
 >
 Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte. Pour exécuter le vérificateur orthographique, cliquez sur le [!UICONTROL Vérificateur orthographique] de la barre d’outils. L’éditeur de texte enrichi vérifie l’orthographe des mots et souligne les mots mal orthographiés.
 >
-Si vous incorporez des modifications que le vérificateur orthographique suggère, le statut du texte change et les mots mal orthographiés ne sont plus mis en surbrillance. Pour exécuter le vérificateur orthographique, appuyez/cliquez de nouveau sur le bouton Vérificateur orthographique.
+Si vous incorporez des modifications que le vérificateur orthographique suggère, le statut du texte change et les mots mal orthographiés ne sont plus mis en surbrillance. Pour exécuter le vérificateur orthographique, cliquez de nouveau sur le bouton Vérificateur orthographique .
 
 ## Configuration de la taille de l’historique pour les actions d’annulation et de rétablissement {#undohistory}
 

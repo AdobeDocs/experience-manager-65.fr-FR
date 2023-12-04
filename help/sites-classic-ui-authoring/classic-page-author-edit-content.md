@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 91%
+source-wordcount: '1829'
+ht-degree: 87%
 
 ---
 
@@ -181,7 +181,7 @@ Vous pouvez annuler (puis réactiver) l’héritage. Selon le composant, vous po
 
 1. **Live Copy**
 
-   Si un composant fait partie d’une live copy ou d’un lancement, il est signalé par une icône de cadenas. Vous pouvez cliquer sur le cadenas pour annuler l’héritage.
+   Si un composant fait partie d’une Live Copy ou d’un lancement, il est signalé par une icône de cadenas. Vous pouvez cliquer sur le cadenas pour annuler l’héritage.
 
    * L’icône de cadenas s’affiche lorsque le composant est sélectionné, par exemple :
 
@@ -239,7 +239,7 @@ Pour verrouiller une page, procédez comme suit :
 
    ![screen_shot_2012-02-08at15750pm](assets/screen_shot_2012-02-08at15750pm.png)
 
-   Un message indique aux autres utilisateurs que la page est verrouillée. De plus, dans le volet de droite de la console **Sites web**, la gestion de contenu Web AEM indique que la page est verrouillée et quel utilisateur l’a verrouillée.
+   Un message indique que votre page est verrouillée pour d’autres utilisateurs. En outre, dans le volet de droite de la variable **Sites web** console, AEM WCM affiche la page comme verrouillée et indique quel utilisateur l’a verrouillée.
 
    ![screen_shot_2012-02-08at20657pm](assets/screen_shot_2012-02-08at20657pm.png)
 

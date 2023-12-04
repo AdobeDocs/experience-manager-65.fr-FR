@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 93%
+source-wordcount: '831'
+ht-degree: 91%
 
 ---
 
@@ -111,7 +111,7 @@ La console Lancements présente un aperçu de vos lancements et vous permet d’
 
 * La console **Outils** : **Outils**, **Sites**, **Lancements**.
 
-* Ou directement avec [.https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
+* Ou directement avec [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
 
 ## Lancements dans les références (console Sites) {#launches-in-references-sites-console}
 
@@ -121,6 +121,6 @@ La console Lancements présente un aperçu de vos lancements et vous permet d’
 
    ![Onglet Référence - Lancements](assets/screen-shot_2019-03-05at121901-1.png)
 
-1. Appuyez/cliquez sur le lancement qui vous intéresse. La liste des actions possibles s’affiche :
+1. Cliquez sur le lancement correspondant, la liste des actions possibles s&#39;affiche :
 
    ![Sélectionner le lancement pour afficher les actions possibles](assets/screen-shot_2019-03-05at121952-1.png)

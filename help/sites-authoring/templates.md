@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4834'
-ht-degree: 83%
+source-wordcount: '4825'
+ht-degree: 79%
 
 ---
 
@@ -118,9 +118,9 @@ Lorsque vous utilisez un modèle pour [création d’une page](/help/sites-autho
 
 Lors de la création d’un modèle modifiable :
 
-* Utilisez la **console de modèles**. Elle est accessible dans la section **Général** de la console **Outils**.
+* Utilisez la variable **Modèle** console. Cette option est disponible dans la **Général** de la **Outils** console.
 
-   * Ou directement à l’adresse : [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
+   * Ou directement à l’adresse : [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * Si besoin, vous pouvez [créer un dossier pour les modèles](#creating-a-template-folder-admin).
 * [Créer un modèle](#creatinganewtemplateauthor), initialement vide
@@ -151,7 +151,7 @@ Vous devez créer un dossier de modèles pour votre projet afin de contenir les 
 
 ### Création d’un modèle - Créateur de modèles {#creating-a-new-template-template-author}
 
-1. Ouvrez la **console de modèles** (en sélectionnant **Outils ->** **Général**), puis accédez au dossier souhaité.
+1. Ouvrez le **Console de modèles** (via **Outils >** **Général**), puis accédez au dossier requis.
 
    >[!NOTE]
    >
@@ -173,7 +173,7 @@ Vous devez créer un dossier de modèles pour votre projet afin de contenir les 
    * **Nom du modèle**
    * **Description**
 
-1. Sélectionnez **Créer**. Un message de confirmation s’affiche. Sélectionnez **Ouvrir**[](#editingatemplate) pour commencer à modifier le modèle ou **Terminé** pour revenir à la console de modèles.
+1. Sélectionnez **Créer**. Une confirmation s’affiche, sélectionnez **Ouvrir** pour commencer [modification du modèle](#editingatemplate) ou **Terminé** pour revenir à la console de modèles.
 
    >[!NOTE]
    >
@@ -221,14 +221,14 @@ Pour définir la miniature du modèle :
 1. Modifiez les propriétés du modèle.
 1. Choisissez si vous souhaitez télécharger une miniature ou la générer à partir du contenu du modèle.
 
-   * Si vous souhaitez télécharger une miniature, cliquez ou appuyez sur **Télécharger l’image**
-   * Si vous souhaitez générer une miniature, cliquez ou appuyez sur **Générer l’aperçu**
+   * Si vous souhaitez télécharger une miniature, cliquez sur **Télécharger l’image**
+   * Si vous souhaitez générer une miniature, cliquez sur **Générer l’aperçu**
 
 1. Pour les deux méthodes, un aperçu de la miniature s’affiche.
 
-   Si ce n’est pas le cas, cliquez ou appuyez sur **Effacer** pour charger une autre image ou générer à nouveau la miniature.
+   Si ce n’est pas le cas, cliquez sur **Effacer** pour charger une autre image ou générer à nouveau la miniature.
 
-1. Lorsque la miniature vous satisfait, cliquez ou appuyez sur **Enregistrer et fermer**.
+1. Lorsque la miniature vous satisfait, cliquez sur **Enregistrer et fermer**.
 
 ### Activation et autorisation d’un modèle – Créateur de modèles {#enabling-and-allowing-a-template-template-author}
 
@@ -292,7 +292,7 @@ Dans la mesure où il est référencé lors du rendu d’une page, le modèle (t
 
 1. Sélectionnez **Publier** dans la barre d’outils pour terminer l’action.
 
-## Modification des modèles   – Créateurs de modèles {#editing-templates-template-authors}
+## Modification de modèles - Créateurs de modèles {#editing-templates-template-authors}
 
 Lorsque vous créez ou modifiez un modèle, vous pouvez définir différents aspects. La modification de modèles est similaire à la création de pages.
 
@@ -463,13 +463,13 @@ Dans **Structure** du mode de l’éditeur de modèles :
 
   Par exemple, pour un composant d’image, les largeurs autorisées peuvent être définies, ainsi que l’activation du chargement différé.
 
-  Si un paramètre permet plusieurs configurations, cliquez ou appuyez sur le bouton **Ajouter** pour ajouter une autre configuration.
+  Si un paramètre permet plusieurs configurations, cliquez sur le bouton **Ajouter** pour ajouter une autre configuration.
 
   ![chlimage_1-141](assets/chlimage_1-141.png)
 
-  Pour supprimer une configuration, cliquez ou appuyez sur le bouton **Supprimer** situé à droite de la configuration.
+  Pour supprimer une configuration, cliquez sur le bouton **Supprimer** situé à droite de la configuration.
 
-  Pour supprimer une configuration, cliquez ou appuyez sur le bouton **Supprimer**.
+  Pour supprimer une configuration, cliquez sur le bouton ** Supprimer**.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -487,7 +487,7 @@ Dans **Structure** du mode de l’éditeur de modèles :
 
   >[!NOTE]
   >
-  >[Les politiques de contenu pour les composants impliquant la mise en œuvre de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) peuvent uniquement être définies pour les options accessibles par les paramètres de l’interface utilisateur, via ses propres paramètres d’interface utilisateur.  [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[Stratégies de contenu pour les composants implémentant l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) ne peut être défini que pour les options rendues disponibles par l’éditeur de texte enrichi via ses paramètres d’interface utilisateur. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Stratégie et propriétés (conteneur de mises en page)**
 
@@ -529,9 +529,9 @@ Dans **Structure** du mode de l’éditeur de modèles :
 
   Dans l’onglet **Composants par défaut**, vous définissez les composants qui sont automatiquement associés à des types de médias donnés. Ainsi, lorsqu’un créateur fait glisser une ressource depuis le navigateur des ressources, AEM sait avec quel composant l’associer. Notez que seuls les composants avec des zones de dépôt sont disponibles pour cette configuration.
 
-  Cliquez ou appuyez sur **Ajouter un mappage** pour ajouter un nouveau mappage de composant et de type MIME.
+  Cliquez sur **Ajouter un mappage** pour ajouter un nouveau mappage de composant et de type MIME.
 
-  Sélectionnez un composant dans la liste, puis cliquez ou appuyez sur **Ajouter un type** pour ajouter un type MIME à un composant déjà mappé. Cliquez sur l’icône **Supprimer** pour supprimer un type MIME.
+  Sélectionnez un composant dans la liste, puis cliquez sur **Ajouter un type** pour ajouter un type MIME supplémentaire à un composant déjà mappé. Cliquez sur l’icône **Supprimer** pour supprimer un type MIME.
 
   ![chlimage_1-145](assets/chlimage_1-145.png)
 

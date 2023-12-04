@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '6087'
+source-wordcount: '6076'
 ht-degree: 55%
 
 ---
@@ -727,7 +727,7 @@ Utilisez le composant Portail pour ajouter une fenêtre du portlet à votre page
 
 Pour accéder au contenu fourni par AEM WCM, le serveur du portail peut disposer d’AEM Portal Director Portlet. Pour ce faire, installez, configurez et ajoutez le portlet à la page du portail à l’aide des étapes fournies dans cette section.
 
-Par défaut, le portlet se connecte à l’instance de publication sur localhost 4503 et l’instance de création sur locahost 4502. Ces valeurs peuvent être modifiées lors du déploiement du portlet. Portal Director est disponible sous forme de contenu dans le référentiel, sous /libs/portal/directory. Vous devez télécharger le fichier war de l’application avant de l’utiliser.
+Par défaut, le portlet se connecte à l’instance de publication sur localhost 4503 et l’instance de création sur locahost 4502. Ces valeurs peuvent être modifiées lors du déploiement du portlet. Portal Director est disponible sous forme de contenu dans le référentiel, sous /libs/portal/directory. Téléchargez le fichier war de l’application avant de l’utiliser.
 
 ### Téléchargement du fichier WAR {#downloading-the-war-file}
 

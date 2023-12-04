@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 41%
+source-wordcount: '1168'
+ht-degree: 40%
 
 ---
 
@@ -100,7 +100,7 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
 
 * Laissez passer les en-têtes d’authentification de base :
 
-   * Pour permettre à AEM d’authentifier un utilisateur, désactivez la sécurité administrative globale du serveur WebSphere®. Pour cela, accédez à Sécurité -> Sécurité globale et décochez la case Activer la sécurité administrative, enregistrez et redémarrez le serveur.
+   * Pour permettre à AEM d’authentifier un utilisateur, désactivez la sécurité administrative globale du serveur WebSphere® : accédez à Sécurité > Sécurité globale et décochez la case Activer la sécurité administrative , enregistrez et redémarrez le serveur.
 
 * Définissez `"JAVA_OPTS= -Xmx2048m"`.
 * Si vous souhaitez installer AEM à l’aide de la racine du contexte = /, modifiez la racine du contexte de l’application web par défaut existante.
@@ -175,7 +175,7 @@ Cette opération utilise une simple disposition de serveur avec uniquement un se
    * Supprimez les marques de commentaire du paramètre sling.home initial et définissez ce chemin d’accès en fonction de vos besoins (voir la Description générale).
    * Recompressez le fichier Web.xml.
 
-* Déployez le fichier war AEM. en tant qu’application (pour les autres paramètres, utilisez les paramètres par défaut)
+* Déployer AEM fichier war en tant qu’application (pour les autres paramètres, utilisez les paramètres par défaut)
 * L&#39;installation peut prendre du temps...
 * Vérifiez que l’installation est terminée comme indiqué ci-dessus dans la Description générale (par exemple, en contournant le fichier error.log).
 * Vous pouvez modifier la racine du contexte dans l’onglet Configuration de l’application Web dans la `/console` WebLogic.

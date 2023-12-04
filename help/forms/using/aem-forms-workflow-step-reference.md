@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '7687'
-ht-degree: 75%
+source-wordcount: '7640'
+ht-degree: 74%
 
 ---
 
@@ -67,7 +67,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 
    * **[!UICONTROL Sélectionnez le fichier de données d’entrée en utilisant :]** chemin d’accès du fichier de données d’entrée (.json, .xml, .doc ou modèle de données de formulaire). Vous pouvez récupérer le fichier de données d’entrée à l’aide d’un chemin d’accès relatif à la charge utile ou récupérer le fichier stocké dans une variable de type de données Document, XML ou JSON. Par exemple, le fichier contient les données envoyées pour le formulaire via une application de boîte de réception AEM. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/workflow/data.
 
-   * **Sélectionner les pièces jointes d’entrée en utilisant :** les pièces jointes disponibles à l’emplacement sont jointes au formulaire associé à la tâche. Le chemin d’accès peut être relatif à la payload ou récupérer les pièces jointes stockées dans une variable du type ArrayList du document. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/attachments/. Vous pouvez spécifier des pièces jointes placées par rapport à la charge utile ou utiliser une variable de type document (Liste de tableaux > Document) pour spécifier une pièce jointe d’entrée pour le formulaire adaptatif..
+   * **Sélectionner les pièces jointes d’entrée en utilisant :** les pièces jointes disponibles à l’emplacement sont jointes au formulaire associé à la tâche. Le chemin d’accès peut être relatif à la payload ou récupérer les pièces jointes stockées dans une variable du type ArrayList du document. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/attachments/. Vous pouvez spécifier des pièces jointes placées par rapport à la charge utile ou utiliser une variable de type document (Tableau > Liste > Document) pour spécifier une pièce jointe d’entrée pour le formulaire adaptatif.
 
       * **Choisir JSON en entrée :** sélectionnez un fichier JSON en entrée en utilisant un chemin d’accès relatif à la payload ou stocké dans une variable de type de données Document, JSON ou modèle de données de formulaire. Cette option est disponible si vous sélectionnez Interface utilisateur de l’agent de communication interactive ou Document du canal Web de communication interactive dans la liste déroulante Type.
       * **Sélectionner un service de préremplissage personnalisé :** sélectionnez le service de préremplissage pour récupérer les données et préremplir le document du canal web de communication interactive ou l’interface utilisateur de l’agent.
@@ -104,7 +104,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **Modèle d’e-mail HTML** : sélectionnez le modèle de l’e-mail de notification. Pour modifier un modèle, modifiez le fichier situé à l’emplacement /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt dans le référentiel CRX.
 * **Autoriser la délégation à :** La boîte de réception AEM fournit à l’utilisateur connecté une option lui permettant de déléguer le processus affecté à un autre utilisateur. Vous pouvez déléguer au sein du même groupe ou à l’utilisateur ou l’utilisatrice du workflow d’un autre groupe. Si la tâche est affectée à un seul utilisateur ou une seule utilisatrice et que la fonction **Autoriser la délégation aux membres du groupe désigné** est sélectionnée, alors il n’est pas possible de déléguer la tâche à un autre utilisateur ou une autre utilisatrice ou un autre groupe.
 * **Paramètres de partage :** la boîte de réception AEM propose des options permettant de partager une ou toutes les tâches de la boîte de réception avec d’autres utilisateurs :
-   * Lorsque l’option **Autoriser les personnes désignées à partager explicitement dans la boîte de réception** est sélectionnée, l’utilisateur peut sélectionner la tâche dans la boîte de réception AEM et la partager avec un autre utilisateur AEM.
+   * Lorsque la variable **Autoriser les personnes désignées à partager explicitement dans la boîte de réception** est sélectionnée, l’utilisateur peut cliquer sur la tâche et la partager avec un autre utilisateur AEM.
    * Lorsque l’option **Autoriser les personnes désignées à partager via le partage de boîte de réception** est sélectionnée et que les utilisateurs partagent leurs éléments de boîte de réception ou permettent à d’autres utilisateurs d’accéder à leurs éléments de boîte de réception, seules les tâches dont l’option mentionnée précédemment est activée sont partagées avec d’autres utilisateurs.
 
 * **Actions et actions par défaut :** les actions Prêt à l’emploi, Envoyer, Enregistrer et Réinitialiser sont disponibles. Par défaut, toutes les actions par défaut sont activées.
@@ -186,7 +186,7 @@ Si vous spécifiez le chemin d’accès d’un dossier (des pièces jointes, par
 
 **Enregistrer Chemin d’accès du document d’enregistrement généré :** spécifier l’emplacement pour conserver un fichier de document d’enregistrement. Vous pouvez remplacer le dossier de payload, placer le document d’enregistrement à un emplacement du répertoire de payload ou stocker le document d’enregistrement dans une variable de type de données Document.
 
-**Paramètre régional** : spécifiez la langue du document d’enregistrement. Sélectionnez **Littéral** pour sélectionner le paramètre régional dans une liste déroulante ou **Variable** pour récupérer le paramètre régional à partir de la valeur stockée dans une variable de type de données Chaîne. Vous devez définir le code de la langue lors du stockage de la valeur de la langue dans une variable. Par exemple, spécifiez **en_US** pour l’anglais et **fr_FR** pour le français.
+**Paramètre régional** : spécifiez la langue du document d’enregistrement. Sélectionnez **Littéral** pour sélectionner le paramètre régional dans une liste déroulante ou **Variable** pour récupérer le paramètre régional à partir de la valeur stockée dans une variable de type de données Chaîne. Vous devez définir le code du paramètre régional lors du stockage de la valeur du paramètre régional dans une variable. Par exemple, spécifiez **en_US** pour l’anglais et **fr_FR** pour le français.
 
 ## Étape Invoquer le service de modèle de données de formulaire {#invoke-form-data-model-service-step}
 
@@ -279,7 +279,7 @@ L’étape Signer le document vous permet d’utiliser Adobe Sign pour signer de
 
 * **Nom du contrat :** indiquez le titre du contrat. Le nom de l&#39;accord fait partie de l&#39;objet et du corps du message envoyé aux destinataires. Vous pouvez soit stocker le nom dans une variable de type de données Chaîne, soit sélectionner **Littéral** pour l’ajouter manuellement.
 
-* **Paramètre régional :** spécifiez la langue pour les options de messagerie et de vérification. Vous pouvez stocker le paramètre régional dans une variable de type de données Chaîne ou sélectionner **Littéral** pour choisir le paramètre régional dans la liste des options disponibles. Vous devez définir le code de la langue lors du stockage de la valeur de la langue dans une variable. Par exemple, spécifiez **en_US** pour l’anglais et **fr_FR** pour le français.
+* **Paramètre régional :** spécifiez la langue pour les options de messagerie et de vérification. Vous pouvez stocker le paramètre régional dans une variable de type de données Chaîne ou sélectionner **Littéral** pour choisir le paramètre régional dans la liste des options disponibles. Vous devez définir le code du paramètre régional lors du stockage de la valeur du paramètre régional dans une variable. Par exemple, spécifiez **en_US** pour l’anglais et **fr_FR** pour le français.
 
 * **Configuration cloud Adobe Sign** : sélectionnez une configuration cloud Adobe Sign. Si vous n’avez pas configuré Adobe Sign pour AEM Forms, voir [Intégrer Adobe Sign à AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
@@ -357,7 +357,7 @@ Exporte les données d’un fichier PDF forms ou XDP. Vous devez saisir le chemi
 
 Convertit un document PDF au format sélectionné.
 
-### Étape de Générer un PDF non interactif {#generatenoninteractive}
+### Étape Générer un PDF non interactif {#generatenoninteractive}
 
 Générez un PDF non interactif. Cette étape comprend différentes options de personnalisation.
 

@@ -10,10 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 41%
+ht-degree: 39%
 
 ---
 
@@ -40,7 +40,7 @@ Vous pouvez créer efficacement du contenu pour les sites internationaux et mult
 * Utilisez [Multi Site Manager](/help/sites-administering/msm.md) pour effectuer les tâches suivantes :
 
    * Réutilisez le contenu du site maître et les traductions pour créer des sites pour d’autres pays et cultures.
-   * Veillez à limiter l’utilisation de Multi Site Manager au contenu dans une langue, par exemple, le gabarit anglais -> branches de langue anglaise dans les sites de pays, le gabarit français -> branches de langue française dans les sites de pays.
+   * Veillez à limiter l’utilisation de Multi Site Manager au contenu dans une langue, par exemple, le gabarit anglais > branches de langue anglaise dans les sites de pays, le gabarit français > branches de langue française dans les sites de pays.
    * Si nécessaire, désolidarisez des éléments des Live Copies pour ajouter des détails de localisation.
 
 Le diagramme suivant illustre la manière dont les principaux concepts sont en corrélation (mais n’affiche pas tous les niveaux/éléments impliqués) :
@@ -60,7 +60,7 @@ Le diagramme suivant illustre la manière dont les principaux concepts sont en c
 >
 >Dans tous les cas, il est recommandé de lire les bonnes pratiques suivantes :
 >
->* [Bonnes pratiques liées à MSM](/help/sites-administering/msm-best-practices.md) ; en particulier :
+>* [Bonnes pratiques pour MSM](/help/sites-administering/msm-best-practices.md), en particulier :
 >
 >   * [Créer un site](/help/sites-administering/msm-best-practices.md#create-site)
 >   * [MSM et sites web multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)

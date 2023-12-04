@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: 5fa385a7-f030-4c0c-8938-0991d02ef361
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1682'
 ht-degree: 82%
 
 ---
@@ -63,9 +63,9 @@ Avant de pouvoir effectuer par programmation une opération prise en charge par 
 
 Pour afficher un formulaire HTML utilisant un fichier CSS personnalisé, veillez à référencer un fichier CSS existant.
 
-**Rendre un formulaire HTML**
+**Effectuer le rendu d’un formulaire HTML**
 
-Pour générer un formulaire HTML, vous devez spécifier une conception de formulaire créée dans Designer et enregistrée en tant que fichier XDP. Vous devez également sélectionner un type de transformation HTML. Par exemple, vous pouvez spécifier le type de transformation HTML qui effectue le rendu d’un HTML dynamique pour Internet Explorer 5.0 ou version ultérieure.
+Pour effectuer le rendu d’un formulaire HTML, spécifiez une conception de formulaire qui a été créée dans Designer et enregistrée en tant que fichier XDP. Sélectionnez un type de transformation de HTML. Par exemple, vous pouvez spécifier le type de transformation HTML qui effectue le rendu d’un HTML dynamique pour Internet Explorer 5.0 ou version ultérieure.
 
 Le rendu d’un formulaire HTML nécessite également des valeurs, telles que les valeurs URI nécessaires au rendu d’autres types de formulaires.
 

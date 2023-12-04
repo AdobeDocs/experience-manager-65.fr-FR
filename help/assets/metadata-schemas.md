@@ -7,10 +7,10 @@ role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3616'
-ht-degree: 98%
+source-wordcount: '3595'
+ht-degree: 96%
 
 ---
 
@@ -125,7 +125,7 @@ Pour garantir que le composant s’affiche correctement dans le formulaire de sc
 * **Obligatoire** : utilisez cette propriété pour marquer une propriété de métadonnées comme étant obligatoire sur la page Propriétés.
 * **Désactiver la modification** : utilisez cette propriété pour interdire toute modification apportée à une propriété sur la page des propriétés.
 * **Afficher le champ vide en lecture seule** : utilisez cette propriété pour afficher une propriété de métadonnées sur la page Propriétés même si elle ne possède pas de valeur. Par défaut, lorsqu’une propriété de métadonnées ne possède pas de valeur, elle n’est pas répertoriée sur la page Propriétés.
-* **Afficher la liste classée** : utilisez cette propriété pour afficher une liste classée de choix..
+* **Afficher la liste classée**: utilisez cette propriété pour afficher une liste classée de choix.
 * **Choix** : utilisez cette propriété pour spécifier des choix dans une liste.
 * **Description** : utilisez cette propriété pour ajouter une brève description pour le composant de métadonnées.
 * **Classe** : classe d’objet à laquelle la propriété est associée.
@@ -139,7 +139,7 @@ Si vous sélectionnez l’option **[!UICONTROL Obligatoire]**, vous pouvez reche
 
 ![Option sélectionnée dans le prédicat Validation des métadonnées du panneau Filtres](assets/invalid-metadata-predicate.png)
 
-Si vous ajoutez le composant Métadonnées contextuelles à un onglet d’un formulaire de schéma, le composant apparaît sous forme de liste sur la page Propriétés des ressources auxquelles ce      schéma particulier est appliqué. La liste inclut tous les autres onglets, à l’exception de celui auquel vous avez appliqué le composant Métadonnées contextuelles. Actuellement, cette fonctionnalité fournit des fonctions de base pour contrôler l’affichage des métadonnées en fonction du contexte.
+Si vous ajoutez le composant Métadonnées contextuelles à un onglet d’un formulaire de schéma, le composant apparaît sous la forme d’une liste dans la page de propriétés des ressources auxquelles ce schéma spécifique est appliqué. La liste inclut tous les autres onglets, à l’exception de celui auquel vous avez appliqué le composant Métadonnées contextuelles. Actuellement, cette fonctionnalité fournit des fonctions de base pour contrôler l’affichage des métadonnées en fonction du contexte.
 
 ![Composant de métadonnées contextuelles répertoriant les onglets des propriétés des ressources](assets/metadata-contextual-component-list.png)
 
@@ -330,7 +330,7 @@ Les métadonnées modifiées définies dans le schéma de métadonnées de la va
 L’héritage des métadonnées par les ressources est basé sur le schéma appliqué au dossier de premier niveau dans la hiérarchie. Le même schéma est appliqué ou hérité par les sous-dossiers. Si un autre schéma est appliqué au niveau du sous-dossier, l’héritage s’arrête.
 
 1. Dans l’interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**. La page **[!UICONTROL Formulaires de schéma de métadonnées]** s’affiche.
-1. Cochez la case située avant un formulaire, par exemple le formulaire de métadonnées par défaut, puis cliquez sur le bouton **[!UICONTROL Copier]** et enregistrez-le en tant que formulaire personnalisé. Spécifiez un nom personnalisé pour le formulaire, par exemple, `my_default`. Vous pouvez également créer un formulaire personnalisé.
+1. Cochez la case située avant un formulaire, par exemple le formulaire de métadonnées par défaut, puis cliquez sur le bouton **[!UICONTROL Copier]** et enregistrez-le en tant que formulaire personnalisé. Spécifiez un nom personnalisé pour le formulaire, par exemple : `my_default`. Vous pouvez également créer un formulaire personnalisé.
 
 1. Sur la page **[!UICONTROL Formulaires de schéma de métadonnées]**, sélectionnez le formulaire `my_default`, puis cliquez sur **[!UICONTROL Modifier]**.
 
@@ -378,7 +378,7 @@ Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’a
 
    >[!CAUTION]
    >
-   >Les contrôles de validation des métadonnées sont des tâches qui nécessitent de nombreuses ressources et qui peuvent donc altérer les performances de votre système. Planifiez les contrôles en conséquence. Si le serveur ne peut pas gérer la charge, essayez de désactiver cette tâche..
+   >Les contrôles de validation des métadonnées sont des tâches qui nécessitent de nombreuses ressources et qui peuvent donc altérer les performances de votre système. Planifiez les contrôles en conséquence. Si le serveur ne peut pas gérer la charge, essayez de désactiver cette tâche.
 
 <!-- TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
 -->

@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3219'
-ht-degree: 98%
+source-wordcount: '3186'
+ht-degree: 96%
 
 ---
 
@@ -217,7 +217,7 @@ Il existe plusieurs manières de créer un dossier.
 
 ### Utilisation de l’explorateur de configurations {#using-the-configuration-browser}
 
-1. Accédez à **Navigation globale** > **Outils** > **Explorateur de configurations**.
+1. Accédez à **Navigation globale** > **Outils** > **Explorateur de configuration**.
 
    Les dossiers existants sont répertoriés à gauche, y compris le dossier **Global**.
 
@@ -265,7 +265,7 @@ Le tableau suivant présente les autorisations nécessaires à l’édition de m
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/templates</code></td>
    <td>Créateurs de modèles<br /> </td>
    <td>lecture, écriture, réplication</td>
-   <td>Auteurs de modèles qui créent, lisent, mettent à jour, suppriment et répliquent des modèles dans l’espace spécifique au site <code>/conf</code>.</td>
+   <td>Créateurs de modèles qui créent, lisent, mettent à jour, suppriment et répliquent des modèles spécifiques à un site. <code>/conf</code> space</td>
   </tr>
   <tr>
    <td>Utilisateur web anonyme</td>
@@ -281,7 +281,7 @@ Le tableau suivant présente les autorisations nécessaires à l’édition de m
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/policies</code></td>
    <td><code>Template Author</code></td>
    <td>lecture, écriture, réplication</td>
-   <td>Auteurs de modèles qui créent, lisent, mettent à jour, suppriment et répliquent des modèles dans l’espace spécifique au site <code>/conf</code>.</td>
+   <td>Créateurs de modèles qui créent, lisent, mettent à jour, suppriment et répliquent des modèles spécifiques à un site. <code>/conf</code> space</td>
   </tr>
   <tr>
    <td>Utilisateur web anonyme</td>
@@ -593,7 +593,7 @@ Les stratégies de page vous permettent de définir [stratégie de contenu](#con
    * [Définissez les chemins d’accès aux modèles autorisés dans les **Propriétés de la page**](/help/sites-authoring/templates.md#allowing-a-template-author) de la page appropriée ou de la page racine d’une sous-branche.
    * Définissez la propriété :
      `cq:allowedTemplates`
-Sur le nœud `jcr:content` de la branche requise.
+Sur le `jcr:content` noeud de la branche requise.
 
    Par exemple, avec la valeur suivante :
 

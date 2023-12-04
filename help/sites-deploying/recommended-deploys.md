@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1778'
-ht-degree: 40%
+source-wordcount: '1759'
+ht-degree: 39%
 
 ---
 
@@ -177,7 +177,7 @@ Certaines conditions préalables et des recommandations sont disponibles si vous
 1. L’expertise de MongoDB doit être présente au sein de l’équipe partenaire ou du client pour être en mesure de maintenir et de gérer un environnement MongoDB existant ou nouveau ;
 1. Vous pouvez choisir de déployer la version commerciale ou open source de MongoDB (AEM prend en charge les deux), mais vous devez acheter un contrat de maintenance et de support MongoDB directement auprès de MongoDB Inc ;
 1. Les architectures et infrastructures globales d&#39;AEM et de MongoDB doivent être bien définies et validées par un architecte d&#39;AEM Adobe ;
-1. Vous devez examiner le modèle de prise en charge des déploiements d’AEM qui incluent MongoDB.
+1. Examinez le modèle de prise en charge des déploiements d’AEM qui incluent MongoDB.
 
 **Recommandations essentielles pour les déploiements de MongoDB :**
 

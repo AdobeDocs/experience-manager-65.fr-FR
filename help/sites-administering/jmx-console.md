@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4963'
-ht-degree: 61%
+source-wordcount: '4830'
+ht-degree: 62%
 
 ---
 
@@ -602,7 +602,7 @@ Lecture seule.
 * Arguments : aucun
 * Valeur renvoyée : aucune
 
-**joinCluster** Ajoute ce référentiel à un cluster en tant que nœud contrôlé par le nœud principal du cluster. Vous devez fournir un nom d’utilisateur et un mot de passe pour l’authentification. La connexion utilise l’authentification de base. Les informations d’identification de sécurité sont codées en base 64 avant d’être envoyées au serveur.
+**joinCluster** Ajoute ce référentiel à un cluster en tant que nœud contrôlé par le nœud principal du cluster. Indiquez un nom d’utilisateur et un mot de passe à des fins d’authentification. La connexion utilise l’authentification de base. Les informations d’identification de sécurité sont codées en base 64 avant d’être envoyées au serveur.
 
 * Arguments :
 

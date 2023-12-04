@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2749'
+source-wordcount: '2770'
 ht-degree: 43%
 
 ---
@@ -102,7 +102,7 @@ En mode Création, à partir de la newsletter ou de l’e-mail, vous ne pourrez 
 
    ![chlimage_1-19](assets/chlimage_1-19a.png)
 
-1. Sélectionnez **Services Cloud** et cliquez sur le signe « **+** » pour ajouter une configuration. Sélectionnez une des configurations affichées (peu importe laquelle). Cliquez ou appuyez sur le signe « **+** » pour ajouter une autre configuration, puis sélectionnez **Adobe Campaign**.
+1. Sélectionnez **Services Cloud** et cliquez sur le signe « **+** » pour ajouter une configuration. Sélectionnez une des configurations affichées (peu importe laquelle). Cliquez sur le bouton **+** signer pour ajouter une autre configuration, puis sélectionner **Adobe Campaign**.
 
    >[!NOTE]
    >
@@ -201,7 +201,7 @@ Vous pouvez prévisualiser l’aspect de la newsletter et prévisualiser la pers
 
    ![chlimage_1-29](assets/chlimage_1-29a.png)
 
-1. Vous pouvez afficher les données sources provenant d’Adobe Campaign associées au personnage actuellement sélectionné. Pour ce faire, cliquez/appuyez sur le module Adobe Campaign dans la barre ContextHub. Une boîte de dialogue s’ouvre alors, affichant toutes les données sources du profil actuel. Là encore, les données s’adaptent lors du changement pour un autre persona.
+1. Vous pouvez afficher les données sources provenant d’Adobe Campaign associées au personnage actuellement sélectionné. Pour ce faire, cliquez sur le module Adobe Campaign dans la barre ContextHub. Une boîte de dialogue s’ouvre alors, affichant toutes les données sources du profil actuel. Là encore, les données s’adaptent lors du changement pour un autre persona.
 
    ![chlimage_1-30](assets/chlimage_1-30a.png)
 

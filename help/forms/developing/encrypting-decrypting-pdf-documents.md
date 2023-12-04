@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '8184'
-ht-degree: 97%
+source-wordcount: '8133'
+ht-degree: 96%
 
 ---
 
@@ -80,7 +80,7 @@ Pour effectuer par programmation une opération de service Encryption, vous deve
 
 **Obtenir un document PDF à chiffrer**
 
-Vous devez obtenir un document PDF non chiffré pour chiffrer le document avec un mot de passe. Si vous essayez de sécuriser un document PDF déjà chiffré, une exception sera générée.
+Obtenez un document de PDF non chiffré pour chiffrer le document avec un mot de passe. Si vous essayez de sécuriser un document PDF déjà chiffré, une exception sera générée.
 
 **Définir les options d’exécution du chiffrement**
 
@@ -289,7 +289,7 @@ Pour effectuer par programmation une opération de service Encryption, vous deve
 
 **Obtenir un document PDF à chiffrer**
 
-Pour chiffrer, vous devez obtenir un document PDF non chiffré. Si vous tentez de sécuriser un document PDF déjà chiffré, une exception est générée.
+Obtenez un document de PDF non chiffré à chiffrer. Si vous tentez de sécuriser un document PDF déjà chiffré, une exception est générée.
 
 **Référencer le certificat**
 
@@ -499,7 +499,7 @@ Pour effectuer par programmation une opération de service Encryption, vous deve
 
 **Obtenir le document PDF chiffré**
 
-Vous devez obtenir un document PDF chiffré pour supprimer le chiffrement avec certificat. Si vous tentez de supprimer le chiffrement d’un document PDF non chiffré, une exception est générée. De même, si vous tentez de supprimer le chiffrement avec certificat d’un document chiffré par mot de passe, une exception est générée.
+Obtenez un document de PDF chiffré pour supprimer le chiffrement avec certificat. Si vous tentez de supprimer le chiffrement d’un document PDF non chiffré, une exception est générée. De même, si vous tentez de supprimer le chiffrement avec certificat d’un document chiffré par mot de passe, une exception est générée.
 
 **Supprimer le chiffrement**
 
@@ -660,7 +660,7 @@ Pour effectuer par programmation une opération de service Encryption, vous deve
 
 **Obtenir le document PDF chiffré**
 
-Vous devez obtenir un document PDF chiffré pour supprimer le chiffrement avec mot de passe. Si vous tentez de supprimer le chiffrement d’un document PDF non chiffré, une exception est générée.
+Obtenez un document de PDF chiffré pour supprimer le chiffrement avec mot de passe. Si vous tentez de supprimer le chiffrement d’un document PDF non chiffré, une exception est générée.
 
 **Supprimer le mot de passe**
 
@@ -807,7 +807,7 @@ Pour effectuer par programmation une opération de service Encryption, vous deve
 
 **Obtenir le document PDF chiffré**
 
-Vous devez obtenir un document de PDF chiffré pour le déverrouiller. Si vous tentez de déverrouiller un document PDF non chiffré, une exception est générée.
+Obtenez un document de PDF chiffré pour le déverrouiller. Si vous tentez de déverrouiller un document PDF non chiffré, une exception est générée.
 
 **Déverrouiller le document**
 
@@ -984,7 +984,7 @@ Pour effectuer par programmation une opération de service Encryption, vous deve
 
 **Obtenir le document PDF chiffré**
 
-Vous devez obtenir un document PDF pour déterminer le type de chiffrement qui le protège.
+Obtenez un document de PDF pour déterminer le type de chiffrement qui le protège.
 
 **Déterminer le type de chiffrement**
 

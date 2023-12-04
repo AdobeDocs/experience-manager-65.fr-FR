@@ -2,7 +2,7 @@
 title: Créer des pages de contenu dans AEM
 description: Tâches impliquées lors de la création d’une page de contenu dans Adobe Experience Manager 6.5.
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 71%
@@ -41,7 +41,7 @@ Depuis un explorateur coulissant qui s’ouvre sur le côté gauche d’une page
 Sur le côté gauche d’une page modifiable, un navigateur coulissant peut être ouvert ; des ressources peuvent être glissées sur la page, par exemple pour positionner des ressources ou créer des liens vers d’autres pages.
 
 * **Barre d’outils de composant**
-Un double-clic ou un double-clic lent ou un double-clic lent affiche la barre d’outils appropriée (une seule pour la barre d’outils d’édition statique, puis deux lents pour la barre d’outils complète).
+Un double-clic lent ou unique affiche la barre d’outils appropriée (une seule pour la barre d’outils d’édition statique, puis deux lents pour la barre d’outils complète).
 
 * **[Mise en page réactive](/help/sites-authoring/responsive-layout.md)**
 Vous disposez ainsi d’un système de paragraphes qui vous permet de positionner les composants dans une grille réactive.

@@ -2,10 +2,10 @@
 title: Expiration des certificats Reader Extensions et son impact
 description: Expiration des certificats Reader Extensions et son impact
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 98%
+source-wordcount: '1088'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +38,7 @@ R. Tous les documents PDF étendus à l’aide de certificats de production dél
 
 **Q. La description des nouveaux certificats est-elle différente de celle des anciens certificats ?**
 
-R. La description des nouveaux certificats Extensions d’Acrobat Reader mentionne **G3-P24** comme nom du programme. Dans la description des anciens certificats (certificats basés sur « Adobe Root CA »), **P24** est mentionné comme nom du programme.
+R. La description des nouveaux certificats Extensions d’Acrobat Reader mentionne **G3-P24** comme nom du programme. Dans la description des anciens certificats (certificats basés sur &quot;Adobe Root CA&quot;), **P24** est mentionné comme nom du programme.
 
 **Q. Comment obtenir les derniers certificats ?**
 
@@ -124,7 +124,7 @@ Applying new certificates on AEM Forms on JEE stack requires importing new crede
 
 #### Import and configure credentials 
 
-You can use the Trust Store Management pages to import a new credential. The Trust Store may contain more than one Reader Extensions credential. You must designate one of those credentials as the default Reader Extensions credential. The default credential is used when a Workbench user is unable to determine which credential to use during process creation. These rules apply to default credentials:
+You can use the Trust Store Management pages to import a new credential. The Trust Store may contain more than one Reader Extensions credential. Designate one of those credentials as the default Reader Extensions credential. The default credential is used when a Workbench user is unable to determine which credential to use during process creation. These rules apply to default credentials:
 
 * If you import a Reader Extensions credential and the Trust Store contains no other Reader Extensions credentials, it is set as the default.
 * If you import a Reader Extensions credential with the Default option selected, the default type is removed from an existing default credential. The imported credential becomes the default.

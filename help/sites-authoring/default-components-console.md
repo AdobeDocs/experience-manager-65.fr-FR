@@ -2,10 +2,10 @@
 title: Console des composants
 description: La console Composants vous permet de parcourir tous les composants définis pour votre instance et d’afficher les informations clés de chaque composant.
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 57%
+ht-degree: 55%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 57%
 
 La console Composants vous permet de parcourir tous les composants définis pour votre instance et d’afficher les informations clés de chaque composant.
 
-Elle est accessible via **Outils** -> **Général** -> **Composants**. Dans la console, les vues Carte et Liste sont disponibles. Comme il n’existe pas de structure d’arborescence pour les composants, le mode Colonnes n’est pas disponible.
+Il est accessible à partir de **Outils >** **Général >** **Composants**. Dans la console, les vues Carte et Liste sont disponibles. Comme il n’existe pas de structure d’arborescence pour les composants, le mode Colonnes n’est pas disponible.
 
 ![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
@@ -29,7 +29,7 @@ Avec l’icône **Contenu uniquement** (en haut à gauche), vous pouvez ouvrir l
 
 ### Détails des composants {#component-details}
 
-Pour afficher des détails sur un composant spécifique, appuyez/cliquez sur la ressource requise. Trois onglets sont proposés :
+Pour afficher des détails sur un composant spécifique, cliquez sur la ressource requise. Trois onglets sont proposés :
 
 * **Propriétés**
 

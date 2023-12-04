@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '538'
 ht-degree: 28%
 
 ---
@@ -21,7 +21,7 @@ Les composants principaux sont des composants modernes et flexibles qui offrent 
 
 1. Démarrez Adobe Experience Manager (AEM) avec l’exemple de contenu We.Retail et ouvrez le [Console Composants](/help/sites-authoring/default-components-console.md).
 
-   **Navigation globale -> Outils -> Composants**
+   **Navigation globale > Outils > Composants**
 
 1. En ouvrant le rail dans la console Composants, vous pouvez filtrer un groupe de composants particulier. Les composants principaux se trouvent dans
 

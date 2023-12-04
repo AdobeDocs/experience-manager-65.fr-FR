@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3306'
-ht-degree: 74%
+source-wordcount: '3251'
+ht-degree: 72%
 
 ---
 
@@ -53,7 +53,7 @@ Experience Server fournit les services d’expérience sur lesquels AEM est bas�
 
 ### Introduction à Sling {#introduction-to-sling}
 
-AEM repose sur [Sling](https://sling.apache.org/index.html), un framework d’application web basé sur des principes REST. Il facilite le développement d’applications orientées contenu. Sling utilise un référentiel JCR, tel qu’Apache Jackrabbit ou, s’il y a AEM, le référentiel de contenu CRX, comme entrepôt de données. The Apache Software Foundation a contribué au développement de Sling. Plus d’informations sont disponibles sur Apache.
+AEM est créé à l’aide de [Sling](https://sling.apache.org/index.html), une structure d&#39;application web basée sur les principes REST qui permet le développement aisé d&#39;applications orientées contenu. Sling utilise un référentiel JCR, tel qu’Apache Jackrabbit ou, s’il y a AEM, le référentiel de contenu CRX, comme entrepôt de données. The Apache Software Foundation a contribué au développement de Sling. Plus d’informations sont disponibles sur Apache.
 
 Avec Sling, le type de contenu à diffuser n’est pas la première considération en matière de traitement. Il s’agit plutôt de savoir si l’URL se résout en un objet de contenu pour lequel un script peut ensuite être identifié afin d’effectuer le rendu. Cela offre une excellente prise en charge aux auteurs et autrices de contenu web pour créer des pages facilement personnalisées selon leurs besoins.
 
@@ -106,7 +106,7 @@ Nous pouvons la diviser en plusieurs parties composites :
 
 **host** Nom du site web.
 
-**chemin du contenu** Chemin spécifiant le contenu à rendre. Utilisé avec l’extension . Dans cet exemple, ils traduisent en `tools/spy.html`.
+**content path** Chemin d’accès spécifiant le contenu à rendre. Utilisé avec l’extension . Dans cet exemple, ils traduisent en `tools/spy.html`.
 
 **selectors** Utilisé pour d’autres méthodes de rendu du contenu ; dans cet exemple, une version imprimable au format A4.
 
@@ -211,11 +211,10 @@ En reprenant l’exemple ci-dessus, si `sling:resourceType` est `hr/jobs` alors 
 
 Si plusieurs scripts s’appliquent pour une requête donnée, celui avec la meilleure correspondance est sélectionné. Plus une correspondance est précise, mieux c’est. En d’autres termes, plus il y a de correspondances avec les sélecteurs, mieux c’est, indépendamment de toute correspondance entre l’extension de la requête ou le nom de la méthode.
 
-Par exemple, envisagez une demande d’accès à la ressource
-
+Prenons l’exemple d’une demande d’accès à la ressource.
 `/content/corporate/jobs/developer.print.a4.html`
 de type
-`sling:resourceType="hr/jobs"`.
+`sling:resourceType="hr/jobs"`
 
 En supposant que les scripts suivants sont présents au bon emplacement :
 
@@ -299,7 +298,7 @@ Pour ce faire, utilisez sling:include(&quot;/&lt;path>/&lt;resource>&quot;). Cel
 
 ## OSGI {#osgi}
 
-OSGi désigne une architecture permettant de développer et de déployer des applications et des bibliothèques modulaires (également connu sous le nom de Dynamic Module System for Java™). Les conteneurs OSGi vous permettent de diviser votre application en modules individuels (des fichiers jar contenant des méta-informations supplémentaires et appelés lots dans la terminologie OSGi) et de gérer les interdépendances entre eux avec :
+OSGi définit une architecture pour le développement et le déploiement d’applications et de bibliothèques modulaires (il est également appelé système de modules dynamiques pour Java™). Les conteneurs OSGi vous permettent de diviser votre application en modules individuels (des fichiers jar contenant des méta-informations supplémentaires et appelés lots dans la terminologie OSGi) et de gérer les interdépendances entre eux avec :
 
 * Services mis en œuvre dans le conteneur
 * Contrat entre le conteneur et votre application
@@ -323,7 +322,7 @@ Vous pouvez ainsi effectuer les actions suivantes sur l’un des packages de vot
 * arrêter
 * mise à jour
 * désinstallation
-* Afficher le statut
+* voir l’état
 * accéder à des informations plus détaillées (par exemple, nom symbolique, version et emplacement) sur les lots spécifiques ;
 
 Voir [Console web](/help/sites-deploying/web-console.md), [Configuration OSGI](/help/sites-deploying/configuring-osgi.md), et [Paramètres de configuration OSGi](/help/sites-deploying/osgi-configuration-settings.md) pour plus d’informations.

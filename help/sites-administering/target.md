@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 454854f8-6053-406c-888d-f427777bf570
 exl-id: 2b17d8cd-a43c-4d54-b990-a6f0cb1db22b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 91%
+source-wordcount: '567'
+ht-degree: 90%
 
 ---
 
@@ -48,16 +48,16 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 >Si vous utilisez Target avec une configuration de proxy personnalisée, vous devez configurer les deux configurations de proxy client HTTP, car certaines fonctionnalités d’AEM utilisent les API 3.x et d’autres les API 4.x :
 >
 >* La version 3.x est configurée avec [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* Les API 4.x sont configurées avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>* Les API 4.x sont configurées avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator).
 >
 
 >[!CAUTION]
 >
->Vous devez sécuriser le nœud de paramètres d’activité **c:ActivitySettings** sur l’instance de publication de sorte qu’il ne soit pas accessible pour les utilisateurs normaux. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
+>Sécurisez le nœud de paramètres d’activité **cq:ActivitySettings** sur l’instance de publication de sorte qu’il ne soit pas accessible pour les personnes utilisatrices normales. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
 >
 >Voir [Conditions préalables à l’intégration à Adobe Target](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node) pour plus d’informations.
 
-Une fois l’intégration terminée, vous pouvez [créer du contenu ciblé](/help/sites-authoring/content-targeting-touch.md) qui envoie les données de visiteur à Adobe Target. Notez que les composants de page requièrent un code spécifique pour activer le ciblage du contenu. (consultez [Développement pour le contenu ciblé](/help/sites-developing/target.md)). 
+Une fois l’intégration terminée, vous pouvez [créer du contenu ciblé](/help/sites-authoring/content-targeting-touch.md) qui envoie les données de visiteur à Adobe Target. Notez que les composants de page requièrent un code spécifique pour activer le ciblage du contenu. (Voir [Développement pour le contenu ciblé](/help/sites-developing/target.md).)
 
 >[!NOTE]
 >

@@ -12,9 +12,9 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2694'
+source-wordcount: '2672'
 ht-degree: 70%
 
 ---
@@ -118,7 +118,7 @@ Le tableau ci-dessous répertorie les configurations de déploiement installées
   </tr>
   <tr>
    <td>Configuration de déploiement du catalogue héritée (5.6.0)</td>
-   <td>Obsolète. Utilisez l’API Catalog Generator au lieu de MSM pour les déploiements de catalogue.</td>
+   <td>Obsolète. Utilisez le générateur de catalogue au lieu de MSM pour les déploiements de catalogue.</td>
    <td>En cas de déploiement</td>
    <td>editProperties</td>
   </tr>
@@ -322,7 +322,7 @@ Plusieurs propriétés et types de nœud sont exclus par défaut. Ils sont défi
 
 Par défaut, les propriétés correspondant aux expressions régulières suivantes sont exclues (c’est-à-dire, non mises à jour) au moment du déploiement :
 
-![Action de mise à jour de contenu MSM CQ](assets/chlimage_1.png)
+![Action de mise à jour du contenu CQ MSM](assets/chlimage_1.png)
 
 Vous pouvez modifier les expressions en définissant la liste d’exclusions, au besoin.
 
@@ -394,7 +394,7 @@ Vous pouvez également configurer les configurations du déploiement d’une pag
 
    ![Configurations de déploiement sélectionnées](assets/chlimage_1-2.png)
 
-1. Cliquez ou appuyez sur **Enregistrer**.
+1. Cliquez sur **Enregistrer**.
 
 ### Définition de la configuration du déploiement pour une page de plan directeur {#setting-the-rollout-configuration-for-a-blueprint-page}
 
@@ -412,8 +412,8 @@ Les pages enfants de la page de plan directeur héritent de la configuration. Lo
 
 Spécifiez une configuration du déploiement à utiliser comme valeur système par défaut. Pour spécifier la valeur par défaut, configurez le service OSGi :
 
-* **Gestionnaire de relations en direct de gestion de contenu web Day CQ**
-Le PID du service est `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
+* **Day CQ WCM Live Relationship Manager**
+le PID du service est `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
 Configurez le service à l’aide de la [console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou d’un [nœud de référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 

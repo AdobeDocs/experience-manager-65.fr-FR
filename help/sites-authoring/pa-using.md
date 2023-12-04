@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 86%
+source-wordcount: '638'
+ht-degree: 88%
 
 ---
 
@@ -34,9 +34,9 @@ Chaque colonne indique une valeur pour la période de création de rapports actu
 >Pour modifier la période de mise à jour, [configurez l’intervalle d’importation](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
 1. Ouvrez le **Sites** console, par exemple : [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
-1. À l’extrême droite de la barre d’outils (coin supérieur droit), cliquez ou appuyez sur l’icône à sélectionner **Mode Liste** (l’icône affichée dépend de la variable [vue actuelle](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
+1. Dans l’extrême droite de la barre d’outils (coin supérieur droit), cliquez sur l’icône pour sélectionner **Mode Liste** (l’icône affichée dépend de la variable [vue actuelle](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. Encore une fois, à l’extrême droite de la barre d’outils (coin supérieur droit), cliquez ou appuyez sur l’icône, puis sélectionnez **Paramètres d’affichage**. La variable **Configuration des colonnes** s’ouvre. Apportez les modifications requises et confirmez-les avec la commande **Mettre à jour**.
+1. Cliquez de nouveau sur l’icône située à l’extrême droite de la barre d’outils (dans le coin supérieur droit), puis sélectionnez **Paramètres d’affichage**. La variable **Configuration des colonnes** s’ouvre. Apportez les modifications requises et confirmez-les avec la commande **Mettre à jour**.
 
    ![aa-04](assets/aa-04.png)
 

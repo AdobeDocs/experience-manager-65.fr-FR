@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1772'
-ht-degree: 82%
+source-wordcount: '1745'
+ht-degree: 72%
 
 ---
 
@@ -52,7 +52,7 @@ Lorsque l’intégralité de l’instruction est vraie, alors le segment a été
 
 >[!CAUTION]
 >
->L’éditeur de segment ne vérifie aucune référence circulaire. Par exemple, le segment A fait référence à un autre segment B, qui, à son tour, fait référence au segment A. Vous devez vous assurer que vos segments ne contiennent aucune référence circulaire.
+>L’éditeur de segment ne vérifie aucune référence circulaire. Par exemple, le segment A fait référence à un autre segment B, qui, à son tour, fait référence au segment A. Assurez-vous que vos segments ne contiennent aucune référence circulaire.
 
 ### Conteneurs {#containers}
 
@@ -78,24 +78,24 @@ Les comparaisons de segments suivantes sont disponibles par défaut pour évalue
 <table>
  <tbody>
   <tr>
-   <td>Propriété-Valeur<br />. </td>
+   <td>Propriété-Valeur<br /> </td>
    <td>Compare une propriété d’une boutique à une valeur définie.<br /> </td>
   </tr>
   <tr>
    <td>Propriété-Propriété</td>
-   <td>Compare une propriété d’une boutique à une autre propriété.<br />. </td>
+   <td>Compare une propriété d’un magasin à une autre propriété.<br /> </td>
   </tr>
   <tr>
    <td>Propriété-Référence de segment</td>
-   <td>Compare une propriété d’une boutique à un autre segment référencé.<br />. </td>
+   <td>Compare une propriété d’une boutique à un autre segment référencé.<br /> </td>
   </tr>
   <tr>
    <td>Propriété-Référence de script</td>
-   <td>Compare une propriété d’une boutique aux résultats d’un script.<br />. </td>
+   <td>Compare une propriété d’un magasin aux résultats d’un script.<br /> </td>
   </tr>
   <tr>
    <td>Référence de segment-Référence de script</td>
-   <td>Compare un segment référencé aux résultats d’un script.<br />. </td>
+   <td>Compare un segment référencé aux résultats d’un script.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -133,11 +133,11 @@ Pour définir votre nouveau segment, procédez comme suit :
 
 1. Après avoir [accédé aux segments](/help/sites-administering/segmentation.md#accessing-segments), [naviguez jusqu’au dossier](#organizing-segments) dans lequel vous souhaitez créer le segment.
 
-1. Appuyez ou cliquez sur le bouton Créer et sélectionnez **Créer un segment ContextHub**.
+1. cliquez sur le bouton Créer et sélectionnez **Créer un segment ContextHub**.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. Dans le **Nouveau segment ContextHub**, saisissez un titre pour le segment et une valeur d’amplification si nécessaire, puis appuyez ou cliquez sur **Créer**.
+1. Dans le **Nouveau segment ContextHub**, saisissez un titre pour le segment et une valeur d’amplification si nécessaire, puis cliquez sur **Créer**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -147,7 +147,7 @@ Pour définir votre nouveau segment, procédez comme suit :
    * Valeur maximale : `1000000`
 
 1. Faites glisser une comparaison ou une référence vers l’éditeur de segments qui apparaîtra dans le conteneur ET par défaut.
-1. Double-cliquez ou appuyez sur l’option de configuration de la nouvelle référence ou du nouveau segment pour modifier les paramètres. Dans cet exemple, nous testons des personnes à San José.
+1. Double-cliquez sur l’option de configuration de la nouvelle référence ou du nouveau segment pour éditer les paramètres spécifiques. Dans cet exemple, nous testons des personnes à San José.
 
    ![screen_shot_2012-02-02at103135am](assets/screen_shot_2012-02-02at103135ama.png)
 
@@ -233,7 +233,7 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 ### Créer un dossier {#create-folder}
 
-1. Après [accès aux segments](#accessing-segments), appuyez ou cliquez sur le bouton **Créer** et sélectionnez **Dossier**.
+1. Après [accès aux segments](#accessing-segments), cliquez sur le **Créer** et sélectionnez **Dossier**.
 
    ![Ajouter un dossier](assets/contexthub-create-segment.png)
 
@@ -245,24 +245,24 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
    ![Créer un dossier](assets/contexthub-create-folder.png)
 
-1. Appuyez ou cliquez sur **Créer**.
+1. Cliquez sur **Créer**.
 
    ![Confirmer le dossier](assets/contexthub-confirm-folder.png)
 
 1. Le dossier s’affiche dans la liste des segments.
    * La manière dont vous triez vos colonnes aura une incidence sur l’emplacement d’affichage du nouveau dossier dans la liste.
-   * Vous pouvez appuyer ou cliquer sur les en-têtes de colonne pour adapter votre tri.
+   * Vous pouvez cliquer sur les en-têtes de colonne pour ajuster votre tri.
      ![Le nouveau dossier](assets/contexthub-folder.png)
 
 ### Modifier les dossiers existants {#modify-folders}
 
-1. Après [accès aux segments](#accessing-segments), cliquez ou appuyez sur le dossier à modifier pour le sélectionner.
+1. Après [accès aux segments](#accessing-segments), cliquez sur le dossier à modifier pour le sélectionner.
 
    ![Sélectionner un dossier](assets/contexthub-select-folder.png)
 
-1. Appuyez ou cliquez sur **Renommer** dans la barre d’outils pour renommer le dossier.
+1. Cliquez sur **Renommer** dans la barre d’outils pour renommer le dossier.
 
-1. Saisissez un nouveau **Titre du dossier** et appuyez ou cliquez sur **Enregistrer**.
+1. Fournissez un nouveau **Titre du dossier** et cliquez sur **Enregistrer**.
 
    ![Renommer un dossier](assets/contexthub-rename-folder.png)
 
@@ -272,25 +272,25 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 ### Supprimer un dossier
 
-1. Après [accès aux segments](#accessing-segments), cliquez ou appuyez sur le dossier à modifier pour le sélectionner.
+1. Après [accès aux segments](#accessing-segments), cliquez sur le dossier à modifier pour le sélectionner.
 
    ![Sélectionner un dossier](assets/contexthub-select-folder.png)
 
-1. Appuyez ou cliquez sur **Supprimer** dans la barre d’outils pour supprimer le dossier.
+1. Cliquez sur **Supprimer** dans la barre d’outils pour supprimer le dossier.
 
 1. Une boîte de dialogue présente une liste de dossiers sélectionnés pour suppression.
 
    ![Confirmer la suppression](assets/contexthub-confirm-segment-delete.png)
 
-   * Appuyez ou cliquez sur **Supprimer** pour confirmer.
-   * Appuyez ou cliquez sur **Annuler** pour abandonner.
+   * Cliquez sur **Supprimer** pour confirmer.
+   * Cliquez sur **Annuler** pour abandonner.
 
 1. Si l’un des dossiers sélectionnés contient des sous-dossiers ou des segments, leur suppression doit être confirmée.
 
    ![Confirmer la suppression des enfants](assets/contexthub-confirm-segment-child-delete.png)
 
-   * Appuyez ou cliquez sur **Forcer la suppression** pour confirmer.
-   * Appuyez ou cliquez sur **Annuler** pour abandonner.
+   * Cliquez sur **Forcer la suppression** pour confirmer.
+   * Cliquez sur **Annuler** pour abandonner.
 
 >[!NOTE]
 >

@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2199'
-ht-degree: 98%
+source-wordcount: '2122'
+ht-degree: 97%
 
 ---
 
@@ -27,8 +27,7 @@ L’[assistant de souscription](/help/sites-administering/opt-in.md) qui [intèg
 
 Vous pouvez également configurer Adobe Target pour utiliser Adobe Target en tant que source de création de rapports lors du ciblage de contenu en configurant la configuration d’Analytics Cloud A4T.
 
-Pour trouver la configuration et le framework de cloud, accédez à **Services cloud** via **Outils** > **Déploiement** > **Cloud**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
-Sous Adobe Target, cliquez ou appuyez sur **Afficher les configurations**.
+Pour trouver la configuration et le framework de cloud, accédez à **Services cloud** via **Outils** > **Déploiement** > **Cloud**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)) Sous Adobe Target, cliquez sur **Afficher les configurations**.
 
 ### Propriétés de configuration de Target configurée {#provisioned-target-configuration-properties}
 
@@ -91,7 +90,7 @@ Pour ce faire, vous devez spécifier quelle configuration cloud d’A4T à conne
    >1. Accédez à **Outils** > **Général** > **CRXDE Lite**.
    1. Accédez à la [Boîte de dialogue de configuration A4T Analytics](#a4t-analytics-config-dialog) (voir ci-dessous)
    1. Définissez la propriété **désactiver** sur **false**.
-   1. Appuyez ou cliquez sur **Tout enregistrer**.
+   1. Cliquez sur **Enregistrer tout**.
 
 #### Boîte de dialogue de configuration A4T Analytics {#a4t-analytics-config-dialog}
 
@@ -154,7 +153,7 @@ Pour créer une configuration cloud Target dans AEM, procédez come suit :
    1. Accédez à **Outils** > **Général** > **CRXDE Lite**.
    1. Accédez à **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**.
    1. Définissez la propriété **désactiver** sur **false**.
-   1. Appuyez ou cliquez sur **Tout enregistrer**.
+   1. Cliquez sur **Enregistrer tout**.
 
 1. Dans la boîte de dialogue, saisissez les valeurs pour ces propriétés.
 
@@ -244,10 +243,10 @@ Lorsque vous associez une page au framework, les pages enfants héritent de l’
 1. Dans la console **Sites**, accédez au site à configurer.
 1. À l’aide des [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions) ou du [mode de sélection](/help/sites-authoring/basic-handling.md), sélectionnez **Afficher les propriétés.**
 1. Sélectionnez l’onglet **Services cloud**.
-1. Appuyez ou cliquez sur **Modifier**.
-1. Appuyez/cliquez sur **Ajouter une configuration** sous **Configurations du service cloud** et sélectionnez **Adobe Target**.
+1. Cliquez sur **Modifier**.
+1. Cliquez sur **Ajouter une configuration** under **Configurations de Cloud Service** et sélectionnez **Adobe Target**.
 
-   ![Ajouter la configuration](assets/chlimage_1-165.png)
+   ![Ajouter une configuration](assets/chlimage_1-165.png)
 
 1. Sélectionnez le cadre que vous souhaitez sous **Référence de configuration**.
 
@@ -255,7 +254,7 @@ Lorsque vous associez une page au framework, les pages enfants héritent de l’
    >
    Veillez à sélectionner le **cadre** spécifique que vous avez créé et non la configuration cloud Target dans laquelle il a été créé.
 
-1. Appuyez/cliquez sur **Terminé.**
+1. Cliquez sur **Terminé**.
 1. Activez la page racine du site web pour la répliquer sur le serveur de publication. (Voir [Publication de pages](/help/sites-authoring/publishing-pages.md).)
 
    >[!NOTE]

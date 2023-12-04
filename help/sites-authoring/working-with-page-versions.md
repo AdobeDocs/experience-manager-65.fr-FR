@@ -1,11 +1,11 @@
 ---
 title: Utiliser les versions de page de contenu
-description: Créer, comparer et restaurer des versions d’une page dans Adobe Experience Manager.
+description: Créez, comparez et restaurez des versions d’une page dans Adobe Experience Manager.
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1501'
-ht-degree: 71%
+source-wordcount: '1510'
+ht-degree: 68%
 
 ---
 
@@ -16,7 +16,7 @@ Le contrôle de version permet de créer un « instantané » d’une page à 
 * Créez une version d’une page.
 * Restaurer une page sur une version précédente ; par exemple :
    * pour annuler une modification que vous avez apportée à la page.
-* Comparer la version actuelle d’une page à une version précédente:
+* Comparer la version actuelle d’une page avec une version précédente :
    * pour mettre en évidence les différences entre le texte et les images.
 
 ## Création d’une version {#creating-a-new-version}
@@ -31,7 +31,7 @@ Vous pouvez créer une version de votre ressource depuis :
 1. Accédez à la page pour laquelle créer une version.
 1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Ouvrez la colonne **Chronologie**.
-1. Cliquez ou appuyez sur la flèche près du champ de commentaire pour afficher les options :
+1. Cliquez sur la pointe de la flèche près du champ de commentaire pour afficher les options :
 
    ![Chronologie : Enregistrer comme version](assets/screen-shot_2019-03-05at112335.png)
 
@@ -195,7 +195,7 @@ La fonction de distorsion du temps Timewarp permet de simuler l’état *publié
 >
 >[Timewarp peut également être utilisé avec les lancements pour prévisualiser les futurs](/help/sites-authoring/launches.md) lors de l’exécution d’AEM version 6.5.10.0 ou supérieure.
 
-La création de contenu est un processus continu et collaboratif. L’objectif de Timewarp est de permettre aux auteurs de suivre le site web publié au fil du temps, afin de les aider à comprendre comment le contenu a changé. Cette fonctionnalité utilise les versions de page pour déterminer l’état de l’environnement de publication:
+La création de contenu est un processus continu et collaboratif. L’objectif de Timewarp est de permettre aux auteurs de suivre le site web publié au fil du temps, afin de les aider à comprendre comment le contenu a changé. Cette fonction utilise les versions de page pour déterminer l’état de l’environnement de publication :
 
 * Le système recherche la version de page qui était active à l’heure sélectionnée.
    * Cette version de page a été créée/activée. *before* point dans le temps sélectionné dans Timewarp.
@@ -210,7 +210,7 @@ Timewarp est un [mode](/help/sites-authoring/author-environment-tools.md#page-mo
 
    ![Sélectionnez Timewarp dans la sélection de mode.](assets/wwpv-01.png)
 
-1. Dans la boîte de dialogue, définissez une date et une heure cibles, puis cliquez ou appuyez sur **Définir la date**. Si vous ne sélectionnez pas d’heure, l’heure actuelle est utilisée par défaut.
+1. Dans la boîte de dialogue, définissez une date et une heure cibles, puis cliquez sur **Définir la date**. Si vous ne sélectionnez pas d’heure, l’heure actuelle est utilisée par défaut.
 
    ![Définir la date](assets/wwpv-02.png)
 

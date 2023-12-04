@@ -11,10 +11,10 @@ topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 feature: Configuring
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
-source-git-commit: b8027a8564f2dce408e7cd5b01f3b86c703c9e3a
-workflow-type: ht
-source-wordcount: '1392'
-ht-degree: 100%
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+workflow-type: tm+mt
+source-wordcount: '1319'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ Veuillez suivre les étapes c-dessous pour la configuration de MSSL pour la rép
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-Vous devez déterminer le compte d’utilisateur ou d’utilisatrice qui effectue la réplication. Lors de l’installation du certificat de création approuvé sur l’instance de publication, le certificat est associé à ce compte d’utilisateur ou d’utilisatrice.
+Déterminez le compte d’utilisateur qui effectue la réplication. Lors de l’installation du certificat de création approuvé sur l’instance de publication, le certificat est associé à ce compte d’utilisateur ou d’utilisatrice.
 
 ## Obtention ou création d’informations d’identification pour MSSL {#obtaining-or-creating-credentials-for-mssl}
 
@@ -148,7 +148,7 @@ Pour effectuer la procédure suivante, vous devez être connecté(e) en tant qu�
 ### Installer la clé privée de création {#install-the-author-private-key}
 
 1. Ouvrez la page de gestion des utilisateurs pour l’instance d’auteur. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. Pour ouvrir les propriétés de votre compte d’utilisateur, cliquez ou appuyez sur votre nom d’utilisateur.
+1. Pour ouvrir les propriétés de votre compte d’utilisateur, cliquez sur votre nom d’utilisateur.
 1. Si le lien Créer un KeyStore apparaît dans la zone Paramètres du compte, cliquez sur le lien. Configurez un mot de passe, puis cliquez sur OK.
 1. Dans la zone Paramètres du compte, cliquez sur Gérer le KeyStore.
 
@@ -167,7 +167,7 @@ Pour effectuer la procédure suivante, vous devez être connecté(e) en tant qu�
 ### Installation du certificat de publication {#install-the-publish-certificate}
 
 1. Ouvrez la page de gestion des utilisateurs pour l’instance d’auteur. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. Pour ouvrir les propriétés de votre compte d’utilisateur, cliquez ou appuyez sur votre nom d’utilisateur.
+1. Pour ouvrir les propriétés de votre compte d’utilisateur, cliquez sur votre nom d’utilisateur.
 1. Si le lien Créer TrustStore apparaît dans la zone Paramètres du compte, cliquez sur le lien, créez un mot de passe pour TrustStore et cliquez sur OK.
 1. Dans la zone Paramètres du compte, cliquez sur Gérer le TrustStore.
 1. Cliquez sur Ajouter le certificat à partir du fichier CER.
@@ -191,7 +191,7 @@ Pour effectuer la procédure suivante, vous devez être connecté(e) en tant qu�
 ### Installer la clé privée de publication {#install-the-publish-private-key}
 
 1. Ouvrez la page Gestion des utilisateurs pour l’instance de création. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
-1. Pour ouvrir les propriétés de votre compte d’utilisateur, cliquez ou appuyez sur votre nom d’utilisateur.
+1. Pour ouvrir les propriétés de votre compte d’utilisateur, cliquez sur votre nom d’utilisateur.
 1. Si le lien Créer un KeyStore apparaît dans la zone Paramètres du compte, cliquez sur le lien. Configurez un mot de passe, puis cliquez sur OK.
 1. Dans la zone Paramètres du compte, cliquez sur Gérer le KeyStore.
 1. Cliquez sur Ajouter la clé privée à partir du fichier du magasin de clés.

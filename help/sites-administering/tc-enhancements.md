@@ -5,10 +5,10 @@ topic-tags: site-features
 content-type: reference
 feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 86%
+source-wordcount: '669'
+ht-degree: 79%
 
 ---
 
@@ -20,7 +20,7 @@ Cette page présente des améliorations et des améliorations incrémentielles a
 
 Des options pour améliorer la productivité des projets de traduction ont été ajoutées, telles que la promotion et la suppression automatiques des lancements de traduction, et la planification de l’exécution périodique d’un projet de traduction.
 
-1. Dans votre projet de traduction, cliquez ou appuyez sur les points de suspension en bas de la mosaïque **Résumé de traduction**.
+1. Dans votre projet de traduction, cliquez sur les points de suspension en bas de la page **Résumé de traduction** mosaïque.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
@@ -40,7 +40,7 @@ Des options pour améliorer la productivité des projets de traduction ont été
 
 Il est possible de configurer plusieurs langues cibles dans un projet de traduction, afin de réduire le nombre total de projets de traduction créés.
 
-1. Dans votre projet de traduction, cliquez ou appuyez sur les points de suspension en bas de la mosaïque **Résumé de traduction**.
+1. Dans votre projet de traduction, cliquez sur les points en bas de la page **Résumé de traduction** mosaïque.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
@@ -110,11 +110,11 @@ Une propriété peut désormais être sélectionnée dans la vue Liste de Sites.
 
    ![screen_shot_2018-04-23at130646](assets/screen_shot_2018-04-23at130646.jpg)
 
-1. Cliquez ou appuyez sur **Paramètres**.
+1. Cliquez sur **Paramètres d’affichage**.
 
    ![screen_shot_2018-04-23at130844](assets/screen_shot_2018-04-23at130844.jpg)
 
-1. Cochez la case **Traduit** sous **Traduction** et appuyez/cliquez sur **Mettre à jour**.
+1. Vérifier **Traduit** sous **Traduction** et cliquez sur **Mettre à jour**.
 
    ![screen_shot_2018-04-23at130955](assets/screen_shot_2018-04-23at130955.jpg)
 

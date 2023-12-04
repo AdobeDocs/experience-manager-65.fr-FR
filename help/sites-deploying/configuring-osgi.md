@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1971'
-ht-degree: 96%
+source-wordcount: '1954'
+ht-degree: 95%
 
 ---
 
@@ -84,7 +84,7 @@ Pour mettre à jour une configuration avec la console web :
 
 1. Accédez à l’onglet **Configuration** de la console web en effectuant l’une des opérations suivantes :
 
-   * Ouvrant la console web à partir du lien du menu **Outil -> Opérations**. Après votre connexion à la console, vous pouvez utiliser le menu déroulant :
+   * Ouverture de la console web à partir du lien sur la page **Outil > Opérations** . Après votre connexion à la console, vous pouvez utiliser le menu déroulant :
 
      **OSGi >**
 
@@ -99,7 +99,7 @@ Pour mettre à jour une configuration avec la console web :
    * cliquant sur l’icône **Modifier** pour ce lot ;
    * cliquant sur le **nom** du lot.
 
-1. Une boîte de dialogue s’affiche. Ici, vous pouvez apporter les modifications appropriées. Par exemple, définir le **Niveau de journalisation** sur `INFO` :
+1. Une boîte de dialogue s’affiche. Vous pouvez y apporter des modifications selon vos besoins. Par exemple, définissez la variable **Niveau de journalisation** to `INFO`:
 
    ![chlimage_1-140](assets/chlimage_1-140.png)
 

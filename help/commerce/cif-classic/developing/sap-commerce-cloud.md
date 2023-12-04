@@ -1,14 +1,14 @@
 ---
 title: Développement avec SAP Commerce Cloud
-description: La structure d’intégration SAP Commerce Cloud comprend une couche d’intégration et une API..
+description: La structure d’intégration de Commerce Cloud SAP comprend une couche d’intégration avec une API.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2303'
 ht-degree: 32%
 
 ---
@@ -562,7 +562,7 @@ L’intégration est fournie entre AEM et différents systèmes eCommerce. Cela 
 
 Un front-end AEM peut être positionné devant une implémentation hybris existante. Un moteur Hybris peut également être ajouté à une installation AEM existante. Pour ce faire, les systèmes doivent pouvoir gérer avec élégance les utilisateurs existants dans l’un ou l’autre des systèmes :
 
-* AEM -> hybris
+* AEM > hybris
 
    * Lorsque vous vous connectez à hybris, si l’utilisateur AEM n’existe pas :
 
@@ -571,7 +571,7 @@ Un front-end AEM peut être positionné devant une implémentation hybris exista
 
    * Voir : `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
 
-* hybris -> AEM
+* hybris > AEM
 
    * Lors de l’ouverture d’une session AEM, si le système reconnaît l’utilisateur :
 

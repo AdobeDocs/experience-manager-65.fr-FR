@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1884'
-ht-degree: 66%
+source-wordcount: '1890'
+ht-degree: 65%
 
 ---
 
@@ -109,12 +109,12 @@ Si vous devez exécuter le nettoyage de la mémoire d’entrepôt de données en
 
 Avant d’exécuter le nettoyage de la mémoire d’entrepôt de données, vous devez vérifier qu’aucune sauvegarde n’est en cours d’exécution à ce moment-là.
 
-1. Ouvrez le tableau de bord des opérations en procédant comme suit : **Navigation** -> **Outils** -> **Opérations** -> **Maintenance**.
-1. Cliquez ou appuyez sur **Période de maintenance hebdomadaire**.
+1. Ouvrez le tableau de bord des opérations en procédant comme suit : **Navigation** > **Outils** > **Opérations** > **Maintenance**.
+1. Cliquez sur le bouton **Période de maintenance hebdomadaire**.
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-1. Sélectionnez la tâche **Nettoyage de la mémoire du magasin de données**, puis cliquez ou appuyez sur l’icône **Exécuter**.
+1. Sélectionnez la variable **Nettoyage de la mémoire d’entrepôt de données** puis cliquez sur le bouton **Exécuter** Icône
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 

@@ -2,10 +2,10 @@
 title: Publication de pages de contenu
 description: Découvrez comment publier des pages de contenu dans Adobe Experience Manager 6.5.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 91%
+source-wordcount: '1673'
+ht-degree: 87%
 
 ---
 
@@ -95,7 +95,7 @@ L’option **Publication rapide** concerne les cas simples. Elle publie immédia
 
 Pour publier une page avec publication rapide :
 
-1. Sélectionnez la ou les pages dans la console Sites et cliquez ensuite sur le bouton **Publication rapide**.
+1. Sélectionnez la ou les pages dans la console Sites, puis cliquez sur le bouton **Publication rapide** bouton .
 
    ![pp-02](assets/pp-02.png)
 
@@ -111,11 +111,11 @@ Pour publier une page avec publication rapide :
 
 #### Gérer la publication {#manage-publication}
 
-La méthode **Gérer la publication** propose plus d’options que Publication rapide, dont la possibilité d’inclure des pages enfants, de personnaliser les références ou encore de lancer n’importe quel workflow applicable. Elle offre également la possibilité de publier la page à une date ultérieure.
+**Gérer la publication** offre plus d’options que Publication rapide, ce qui permet l’inclusion de pages enfants, la personnalisation des références et le démarrage de tout processus applicable, ainsi que la possibilité de publier à une date ultérieure.
 
 Pour publier ou dépublier une page à l’aide de l’option Gérer la publication :
 
-1. Sélectionnez la ou les pages dans la console Sites et cliquez ensuite sur le bouton **Gérer la publication**.
+1. Sélectionnez la ou les pages dans la console Sites, puis cliquez sur le bouton **Gérer la publication** bouton .
 
    ![pp-02-1](assets/pp-02-1.png)
 
@@ -215,7 +215,7 @@ Lors de la modification d’une page, si vous la dépubliez, sélectionnez **Dé
 
 De la même façon que vous [utilisez l’option Gérer la publication pour publier une page](/help/sites-authoring/publishing-pages.md#manage-publication), vous pouvez l’utiliser pour la dépublication.
 
-1. Sélectionnez la ou les pages dans la console Sites et cliquez ensuite sur le bouton **Gérer la publication**.
+1. Sélectionnez la ou les pages dans la console Sites, puis cliquez sur le bouton **Gérer la publication** bouton .
 1. L’assistant **Gérer la publication** démarre. Dans la première étape, **Options**, sélectionnez **Dépublier** au lieu de l’option par défaut, à savoir **Publier**.
 
    ![chlimage_1-5](assets/chlimage_1-5.png)

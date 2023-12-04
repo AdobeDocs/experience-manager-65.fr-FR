@@ -1,6 +1,6 @@
 ---
 title: Utilisation de Dynamic Media
-description: Découvrez comment utiliser Dynamic Media pour diffuser des ressources pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux.
+description: Découvrez comment utiliser Dynamic Media afin de diffuser des ressources pour une utilisation sur le Web, les appareils mobiles et les réseaux sociaux.
 uuid: 4dc0f436-d20e-4e8b-aeff-5515380fa44d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,10 +10,10 @@ discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Collaboration,Asset Management
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 88%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 [Dynamic Media](https://business.adobe.com/fr/products/experience-manager/assets/dynamic-media.html) fournit des ressources visuelles de marchandisage et de marketing à la demande, automatiquement dimensionnées pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources de sources originales, Dynamic Media génère et diffuse en temps réel plusieurs variantes d’un même contenu enrichi par le biais de son réseau mondial et évolutif, aux performances optimisées.
 
-Dynamic Media offre des expériences de visualisation interactives, notamment des fonctions vidéo, de zoom et de rotation à 360°. Cette fonctionnalité intègre de manière unique les processus de la solution de gestion des ressources numériques Adobe Experience Manager (Assets), afin de simplifier et rationaliser le processus de gestion des campagnes numériques.
+Dynamic Media offre des expériences de visionnage interactives, notamment des fonctions vidéo, de zoom et de rotation à 360°. Cette fonctionnalité intègre de manière unique les workflows de la solution de gestion des ressources numériques Adobe Experience Manager (Assets), afin de simplifier et de rationaliser le processus de gestion des campagnes numériques.
 
 <!-- >ARTICLE IS MISSING. GIVES 404 [!NOTE]
 >
@@ -44,7 +44,7 @@ Les fonctionnalités uniquement incluses dans Dynamic Media sont les suivantes�
 * [Vidéo](video.md)
 * [Diffusion de ressources Dynamic Media](delivering-dynamic-media-assets.md)
 * [Gestion des ressources](managing-assets.md)
-* [Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide](custom-pop-ups.md)
+* [Création de pop-ups personnalisés à l’aide de l’aperçu rapide](custom-pop-ups.md)
 
 Consultez également [Configuration de Dynamic Media](administering-dynamic-media.md).
 
@@ -82,7 +82,7 @@ Les ressources compatibles avec Dynamic Media comprennent les `pyramid.tiffs`.
 
 ### Modification des vues des ressources {#asset-views-change}
 
-Lorsque Dynamic Media est activé, vous pouvez effectuer un zoom avant et arrière en cliquant sur les boutons `+` et `-`. Vous pouvez également cliquer/appuyer pour effectuer un zoom sur une zone spécifique. L’option Revenir à cette version rétablit la version originale, et vous pouvez afficher l’image en mode plein écran en cliquant sur les flèches diagonales. Lorsque Dynamic Media est activé, cette fonctionnalité ressemble à celle-ci :
+Lorsque Dynamic Media est activé, vous pouvez effectuer un zoom avant ou arrière en cliquant sur le `+` et `-` des boutons. Vous pouvez également cliquer pour effectuer un zoom sur une zone spécifique. L’option Rétablir vous ramène à la version d’origine. Vous pouvez afficher l’image en plein écran en cliquant sur les flèches diagonales. L’option Dynamic Media activée ressemble à ceci :
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

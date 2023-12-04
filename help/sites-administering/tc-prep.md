@@ -4,10 +4,10 @@ description: Découvrez comment préparer le contenu à traduire dans Adobe Expe
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 76%
+source-wordcount: '669'
+ht-degree: 59%
 
 ---
 
@@ -47,29 +47,29 @@ Créez une racine de langue comme page racine d’une copie de langue qui identi
 
 Pour créer la racine de langue, créez une page, puis utilisez le code de langue ISO comme valeur de la propriété Nom. Le code de la langue doit être dans l’un des formats suivants :
 
-* `<language-code>`Le code de langue pris en charge est un code à deux lettres défini par la norme ISO-639-1, par exemple, `en`.
+* `<language-code>`Le code de langue pris en charge est un code à deux lettres défini par la norme ISO-639-1, par exemple : `en`.
 
-* `<language-code>_<country-code>` ou `<language-code>-<country-code>`Le code pays pris en charge est un code à deux lettres, en minuscules ou en majuscules, défini par la norme ISO 3166. par exemple, `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>_<country-code>` ou `<language-code>-<country-code>`Le code de pays pris en charge est un code à deux lettres en minuscules ou en majuscules, comme défini par la norme ISO 3166, par exemple : `en_US`, `en_us`, `en_GB`, `en-gb`.
 
 Vous pouvez utiliser l’un de ces formats en fonction de la structure choisie pour votre site international. Par exemple, la propriété Nom de la page racine de la copie de langue française de l’exemple de site Geometrixx est définie sur `fr`. La propriété Name est utilisée comme nom du noeud de page dans le référentiel et détermine donc le chemin d’accès de la page. (http://localhost:4502/content/geometrixx/fr.html)
 
 La procédure ci-dessous utilise l’interface utilisateur optimisée pour les écrans tactiles pour créer une copie de langue d’un site web. Pour obtenir des instructions sur l’utilisation de l’interface utilisateur classique, voir [Création d’une racine de langue à l’aide de l’interface utilisateur classique](/help/sites-administering/tc-lroot-classic.md).
 
 1. Accédez à Sites.
-1. Cliquez ou appuyez sur le site pour lequel vous souhaitez créer une copie de langue.
+1. Cliquez sur le site pour lequel vous souhaitez créer une copie de langue.
 
-   Par exemple, pour créer une copie de langue du site Geometrixx Outdoors, cliquez ou appuyez sur Site Geometrixx Outdoors.
+   Par exemple, pour créer une copie de langue du site Geometrixx Outdoors, cliquez sur Site Geometrixx Outdoors.
 
-1. Cliquez ou appuyez sur Créer, puis sur Créer une page.
+1. Cliquez sur Créer, puis sur Créer une page.
 
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
-1. Sélectionnez le modèle de page, puis cliquez ou appuyez sur Suivant.
-1. Dans le champ Nom, entrez le code de pays au format `<language-code>` ou `<language-code>_<country-code>`, par exemple, `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Saisissez un titre pour la page.
+1. Sélectionnez le modèle de page, puis cliquez sur Suivant.
+1. Dans le champ Nom , saisissez le code de pays au format de `<language-code>` ou `<language-code>_<country-code>`, par exemple : `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Saisissez un titre pour la page.
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 
-1. Cliquez ou appuyez sur Créer. Dans la boîte de dialogue de confirmation, cliquez ou appuyez sur **Terminé** pour revenir à la console Sites ou sur **Ouvrir** pour ouvrir la copie de langue.
+1. Cliquez sur Créer. Dans la boîte de dialogue de confirmation, cliquez sur l’une des options suivantes : **Terminé** pour revenir à la console Sites, ou **Ouvrir** pour ouvrir la copie de langue.
 
 ## Affichage de le statut des racines de langue {#seeing-the-status-of-language-roots}
 
@@ -79,8 +79,8 @@ L’IU optimisée pour les écrans tactiles fournit un panneau Références qui 
 
 La procédure ci-dessous utilise l’interface utilisateur optimisée pour les écrans tactiles afin d’afficher le panneau Références d’une page.
 
-1. Dans la console Sites, sélectionnez une page du site, puis cliquez ou appuyez sur **Références**.
+1. Dans la console Sites, sélectionnez une page du site, puis cliquez sur **Références**.
 
    ![chlimage_1-24](assets/chlimage_1-24a.png)
 
-1. Dans le panneau Références, cliquez ou appuyez sur **Copies de langue**. Le panneau Copies de langue affiche les copies de langue du site web.
+1. Dans le panneau Références, cliquez sur **Copies de langue**. Le panneau Copies de langue affiche les copies de langue du site web.

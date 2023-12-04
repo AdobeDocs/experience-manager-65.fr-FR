@@ -4,9 +4,9 @@ description: Le test Tough Day simule la charge quotidienne d’environ 1 000 au
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1824'
 ht-degree: 62%
 
 ---
@@ -238,7 +238,7 @@ tests:
   - add : CreatePageTreeTest
 ```
 
-Les tests existants d’une suite donnée peuvent également être reconfigurés à l’aide du paramètre `config`. Vous devez également spécifier le nom de la suite et le nom réel du test (et non le nom de la classe de test). Le nom du test est disponible dans la propriété `name` de la classe de test. Pour savoir comment retrouver les propriétés de test, lisez la section [Modification des propriétés de test](/help/sites-developing/tough-day.md#changing-the-test-properties).
+Les tests existants d’une suite donnée peuvent également être reconfigurés à l’aide du paramètre `config`. Indiquez également le nom de la suite et le nom réel du test (et non le nom de la classe de test). Le nom du test est disponible dans la propriété `name` de la classe de test. Pour savoir comment retrouver les propriétés de test, lisez la section [Modification des propriétés de test](/help/sites-developing/tough-day.md#changing-the-test-properties).
 
 Dans l’exemple ci-dessous, le titre de la ressource par défaut pour `CreatePageTreeTest` (nommé `UploadAsset`) est remplacé par « NewAsset ».
 
@@ -260,7 +260,7 @@ tests:
       title : NewAsset
 ```
 
-Vous pouvez également supprimer les tests des suites prédéfinies ou des éditeurs de la configuration par défaut à l’aide de l’option `exclude` . Vous devez également spécifier le nom de la suite et le nom réel du test (et non le test C). `lass` name). Le nom du test est disponible dans la propriété `name` de la classe de test. Dans l’exemple ci-dessous, le test `CreatePageTreeTest` (nommé `UploadAsset`) est supprimé de la suite toughday.
+Vous pouvez également supprimer les tests des suites prédéfinies ou des éditeurs de la configuration par défaut à l’aide de l’option `exclude` . Indiquez également le nom de la suite et le nom réel du test (et non le test C). `lass` name). Le nom du test est disponible dans la propriété `name` de la classe de test. Dans l’exemple ci-dessous, le test `CreatePageTreeTest` (nommé `UploadAsset`) est supprimé de la suite toughday.
 
 En utilisant les paramètres de ligne de commande :
 

@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 82%
+source-wordcount: '821'
+ht-degree: 80%
 
 ---
 
@@ -135,7 +135,7 @@ Les assertions SAML sont signées et peuvent éventuellement être chiffrées. P
 Vous pouvez configurer un enregistreur pour déboguer les problèmes qui peuvent survenir lors d’une mauvaise configuration de SAML. Vous pouvez le faire en procédant comme suit :
 
 1. Accédez à la console web à l’adresse *http://localhost:4502/system/console/configMgr*.
-1. Recherchez et cliquez sur l’entrée nommée **Configuration de l’enregistreur de connexion Sling Apache** et cliquez dessus.
+1. Recherchez et cliquez sur l’entrée appelée **Configuration de l’enregistreur de journalisation Apache Sling**
 1. Créez un journal avec la configuration suivante :
 
    * **Niveau de journal :** Déboguer

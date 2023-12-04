@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
 exl-id: 78673609-8cbc-4b4b-953e-56c31ea1b4ea
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
-workflow-type: ht
-source-wordcount: '369'
-ht-degree: 100%
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+workflow-type: tm+mt
+source-wordcount: '362'
+ht-degree: 84%
 
 ---
 
@@ -23,7 +23,7 @@ La barre d’outils [ContextHub](/help/sites-developing/contexthub.md) affiche l
 
 La barre d’outils se compose d’une série de modes d’UI qui contiennent un ou plusieurs modules d’UI.
 
-* Les modes d’UI sont des icônes qui s’affichent sur le côté gauche de la barre d’outils. Lorsque vous cliquez ou appuyez sur une icône, la barre d’outils affiche les modules d’UI qu’elle contient.
+* Les modes d’UI sont des icônes qui s’affichent sur le côté gauche de la barre d’outils. Lorsque vous cliquez sur une icône, la barre d’outils affiche les modules d’IU qu’elle contient.
 * Les modules d’UI affichent les données d’un ou de plusieurs magasins ContextHub. Certains modules d’UI permettent également de manipuler les données du magasin.
 
 ContextHub installe plusieurs modes d’IU et modules d’IU. Votre administrateur ou administratrice a peut-être [configuré ContextHub](/help/sites-developing/ch-configuring.md) pour en afficher d’autres.
@@ -36,11 +36,11 @@ La barre d’outils ContextHub est disponible en mode Aperçu. La barre d’outi
 
 ![screen_shot_2018-03-23at093730](assets/screen_shot_2018-03-23at093730.png)
 
-1. Avec votre page ouverte pour édition, cliquez ou appuyez sur Aperçu sur la barre d’outils.
+1. Une fois la page ouverte pour modification, cliquez sur Aperçu dans la barre d’outils.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. Pour afficher la barre d’outils, appuyez ou cliquez sur l’icône ContextHub.
+1. Pour afficher la barre d’outils, cliquez sur l’icône ContextHub.
 
    ![ContextHub](do-not-localize/screen_shot_2018-03-23at093621.png)
 
@@ -66,6 +66,6 @@ La fenêtre contextuelle d’un module peut inclure des éléments de formulaire
 
 ### Mode Plein écran {#fullscreen-mode}
 
-Les fenêtres contextuelles peuvent inclure une icône sur laquelle vous cliquez ou appuyez afin que le contenu de la fenêtre contextuelle englobe l’intégralité de la fenêtre du navigateur.
+Les fenêtres contextuelles peuvent inclure une icône sur laquelle vous cliquez pour développer le contenu de la fenêtre contextuelle qui couvre l’intégralité de la fenêtre ou de l’écran du navigateur.
 
 ![Plein écran](do-not-localize/chlimage_1-18.png)

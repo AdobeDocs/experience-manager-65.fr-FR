@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1129'
-ht-degree: 51%
+source-wordcount: '1128'
+ht-degree: 49%
 
 ---
 
@@ -110,7 +110,7 @@ Lorsque l’intégralité de l’instruction est vraie, alors ce segment a été
 
 >[!CAUTION]
 >
->L’éditeur de segment ne vérifie aucune référence circulaire. Par exemple, le segment A fait référence à un autre segment B, qui à son tour référence le segment A. Vous devez vous assurer que vos segments ne contiennent aucune référence circulaire.
+>L’éditeur de segment ne vérifie aucune référence circulaire. Par exemple, le segment A fait référence à un autre segment B, qui, à son tour, fait référence au segment A. Assurez-vous que vos segments ne contiennent aucune référence circulaire.
 
 >[!NOTE]
 >
@@ -130,7 +130,7 @@ Pour définir votre nouveau segment :
    ![Première étape de la création d’un segment dans l’éditeur de segments](assets/screen_shot_2012-02-02at101726am.png)
 
 1. Utilisez le sidekick ou le menu contextuel (en général, cliquez avec le bouton droit de la souris, puis sélectionnez **Nouveau** pour ouvrir la fenêtre Insérer un nouveau composant) et recherchez la caractéristique de segment dont vous avez besoin. Faites-le ensuite glisser sur le **Éditeur de segment** il apparaît dans la valeur par défaut. **ET** conteneur.
-1. Double-cliquez sur la nouvelle caractéristique pour éditer les paramètres spécifiques, par exemple, la position de la souris :
+1. Double-cliquez sur la nouvelle caractéristique pour modifier les paramètres spécifiques, par exemple la position de la souris :
 
    ![Modification d’un composant dans l’éditeur de segment](assets/screen_shot_2012-02-02at103135am.png)
 

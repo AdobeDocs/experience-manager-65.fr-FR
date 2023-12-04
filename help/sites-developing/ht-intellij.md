@@ -8,10 +8,10 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 95%
+source-wordcount: '639'
+ht-degree: 91%
 
 ---
 
@@ -58,7 +58,7 @@ Pour que cela fonctionne, suivez les instructions de la section [Comment travail
 1. Ouvrez la boîte de dialogue d’**importation** dans IntelliJ IDEA en
 
    * sélectionnant **Importer un projet** dans l’écran de bienvenue si aucun projet n’est ouvert ;
-   * sélectionnant **Fichier -> Importer projet** dans le menu principal.
+   * Sélection **Fichier > Importer un projet** depuis le menu principal
 
 1. Dans la boîte d’importation, sélectionnez le fichier POM du projet.
 
@@ -86,7 +86,7 @@ Les étapes suivantes sont nécessaires pour déboguer des JSP avec IntelliJ IDE
 
 IntelliJ IDEA doit comprendre où trouver les JSP pour le débogage. Étant donné que IDEA ne peut pas interpréter les paramètres `content-package-maven-plugin`, il doit être configuré manuellement.
 
-1. Accédez à **Fichier -> Structure du projet**.
+1. Accédez à **Fichier > Structure de projet**
 1. Sélectionnez le module **Content**.
 1. Cliquez sur **+** au-dessus de la liste des modules et sélectionnez **Web**.
 1. Sélectionnez le `content/src/main/content/jcr_root subdirectory` de votre projet en tant que répertoire de ressources web, comme illustré dans la capture d’écran ci-dessous.
@@ -104,7 +104,7 @@ IntelliJ IDEA doit comprendre où trouver les JSP pour le débogage. Étant don
 
 #### Configuration d’un profil de débogage {#configure-a-debug-profile}
 
-1. Accédez à **Exécuter -> Modifier les configurations**.
+1. Accédez à **Exécuter > Modifier les configurations**
 1. Appuyez sur **+** et sélectionnez **JSR45 à distance**.
 1. Dans la boîte de configuration, sélectionnez **Configurer** en face de **Serveur d’applications** et configurez un serveur Générique.
 1. Définissez la page de démarrage sur une URL appropriée si vous souhaitez ouvrir un navigateur lorsque vous commencez le débogage.
@@ -141,7 +141,7 @@ CQ_JVM_OPTS="$CQ_JVM_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,su
 
 La configuration est à présent terminée pour le débogage de vos JSP dans AEM.
 
-1. Sélectionnez **Exécuter -> Déboguer -> Votre profil de débogage**.
+1. Sélectionner **Exécutez > Débogage > Votre profil de débogage**
 1. Définissez des points d’arrêt dans votre code de composant.
 1. Accédez à une page dans votre navigateur.
 

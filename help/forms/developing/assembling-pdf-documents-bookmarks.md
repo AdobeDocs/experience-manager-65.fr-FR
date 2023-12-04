@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 role: Developer
 exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2558'
-ht-degree: 87%
+source-wordcount: '2519'
+ht-degree: 85%
 
 ---
 
@@ -152,7 +152,7 @@ Pour assembler un PDF contenant de nouveaux signets, vous devez référencer un 
 
 **Ajouter le document PDF et le document XML de signet à une collection Map**
 
-Vous devez ajouter le document PDF auquel les signets sont ajoutés et le document XML du signet à la collection Map. En toute logique, l’objet de collection Map contient deux éléments : un document PDF et le document XML de signet.
+Ajoutez le document du PDF auquel les signets sont ajoutés ainsi que le document XML du signet à la collection Map. En toute logique, l’objet de collection Map contient deux éléments : un document PDF et le document XML de signet.
 
 **Définir les options d’exécution**
 
@@ -164,7 +164,7 @@ Pour assembler un document PDF contenant de nouveaux signets, utilisez le `invok
 
 **Enregistrer le document PDF contenant des signets**
 
-Vous devez extraire les résultats de l’objet map renvoyé et enregistrer le document PDF correspondant. (Reportez-vous à « Extraire les résultats » dans [Assembler des documents PDF par programmation](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+Extrayez les résultats de l’objet map renvoyé et enregistrez le document PDF correspondant. (Reportez-vous à « Extraire les résultats » dans [Assembler des documents PDF par programmation](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 **Voir également**
 

@@ -3,10 +3,10 @@ title: Configurez l’éditeur de texte enrichi pour créer du contenu dans Adob
 description: Découvrez comment configurer l’éditeur de texte enrichi Adobe Experience Manager pour créer du contenu dans Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2921'
-ht-degree: 98%
+source-wordcount: '2883'
+ht-degree: 97%
 
 ---
 
@@ -56,13 +56,13 @@ Les auteurs peuvent créer et modifier du contenu textuel dans Experience Manage
 
 ### Modification en ligne {#inline-editing}
 
-Une fois ouvert (à l’aide d’un double appui/clic lent), le contenu peut être modifié dans la page. Une barre d’outils compacte avec des options très basiques est présentée.
+Une fois ouvert (à l’aide d’un double clic lent), le contenu peut être modifié dans la page. Une barre d’outils compacte avec des options très basiques est présentée.
 
 ![Modification en ligne avec une barre d’outils basiques dans l’IU tactile](assets/chlimage_1-36.png)
 
 * : modification en ligne avec une barre d’outils basiques dans l’IU tactile*
 
-Dans l’UI classique, un double-clic lent sur le composant permet la modification en ligne et un contour orange met le contenu en surbrillance. Si l’outil de recherche de contenu est ouvert, une barre d’outils contenant les différentes options de mise en forme d’éditeur de texte enrichi s’affiche en haut de la fenêtre. Si l’outil de recherche n’est pas ouvert, les options de mise en forme n’apparaissent pas et vous pouvez uniquement effectuer des modifications de base sur le texte.
+Dans l’interface utilisateur classique, un double-clic lent sur le composant permet la modification en ligne et un contour orange met le contenu en surbrillance. Si l’outil de recherche de contenu est ouvert, une barre d’outils contenant les différentes options de mise en forme d’éditeur de texte enrichi s’affiche en haut de la fenêtre. Si l’outil de recherche n’est pas ouvert, les options de mise en forme n’apparaissent pas et vous pouvez uniquement effectuer des modifications de base sur le texte.
 
 ### Modification en plein écran {#full-screen-editing}
 

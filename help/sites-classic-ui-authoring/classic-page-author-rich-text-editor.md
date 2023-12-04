@@ -5,10 +5,10 @@ contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1835'
-ht-degree: 88%
+source-wordcount: '1764'
+ht-degree: 86%
 
 ---
 
@@ -88,7 +88,7 @@ Tandis qu’une disposition est appliquée à l’intégralité d’un paragraph
 
 Seul un format spécifique peut être modifié (la valeur par défaut est **[!UICONTROL Paragraphe]**).
 
-Un style peut être supprimé. Placez le curseur dans le texte auquel le style a été appliqué, puis cliquez sur l’icône Supprimer :
+Un style peut être supprimé. Placez le curseur dans le texte auquel le style a été appliqué, puis cliquez sur l’icône Supprimer :
 
 >[!CAUTION]
 >
@@ -183,7 +183,7 @@ Pour rompre le lien, placez le curseur n’importe où dans le texte du lien et 
 
 ![Barre d’outils des ancres](do-not-localize/cq55_rte_anchor.png)
 
-Vous pouvez créer une ancre n’importe où dans le texte en positionnant le curseur ou en sélectionnant du texte. Cliquez ensuite sur l’icône **Ancre** pour ouvrir la boîte de dialogue.
+Vous pouvez créer une ancre n’importe où dans le texte en positionnant le curseur ou en sélectionnant du texte. Cliquez ensuite sur le bouton **Ancre** s’affiche.
 
 Saisissez le nom de l’ancre, puis cliquez sur **OK** pour enregistrer.
 

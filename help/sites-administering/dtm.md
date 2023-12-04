@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
 exl-id: 1e0821f5-627f-4262-ba76-62303890e112
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2205'
-ht-degree: 68%
+source-wordcount: '2148'
+ht-degree: 67%
 
 ---
 
@@ -58,7 +58,7 @@ Si vous le souhaitez, votre instance de création peut utiliser les bibliothèqu
 
 Lorsqu’AEM héberge les bibliothèques de gestion dynamique des balises, vous pouvez utiliser le service de crochet de déploiement de gestion dynamique des balises pour pousser automatiquement les mises à jour de la bibliothèque vers AEM. Les mises à jour de la bibliothèque sont envoyées lorsque des modifications sont apportées aux bibliothèques (par exemple, lorsque les propriétés Web de gestion dynamique des balises sont modifiées).
 
-Pour utiliser le crochet de déploiement, la gestion dynamique des balises doit pouvoir se connecter à l’instance AEM qui héberge les bibliothèques. Vous devez [autoriser l’accès à AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) pour les serveurs de gestion dynamique des balises.
+Pour utiliser le crochet de déploiement, la gestion dynamique des balises doit pouvoir se connecter à l’instance AEM qui héberge les bibliothèques. [Activer l’accès à AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) pour les serveurs Dynamic Tag Management.
 
 Dans certains cas, AEM peut être inaccessible (par exemple, lorsqu’il se trouve derrière un pare-feu). Dans ces cas, vous pouvez utiliser l’option d’importateur d’interrogations d’AEM pour récupérer régulièrement les bibliothèques. Une expression de tâche cron détermine la planification des téléchargements de bibliothèque.
 

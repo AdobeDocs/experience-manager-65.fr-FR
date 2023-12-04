@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3589'
-ht-degree: 69%
+source-wordcount: '3499'
+ht-degree: 67%
 
 ---
 
@@ -117,7 +117,7 @@ Procédez comme suit pour spécifier les valeurs par défaut de la variable **Ti
 >
 >Les valeurs de champ s’affichent sur l’instance d’étape lorsque les deux exigences suivantes sont satisfaites :
 >
->* La boîte de dialogue de modification de l’étape stocke le titre et la description dans les emplacements suivants :  >
+>* La boîte de dialogue de modification de l’étape stocke le titre et la description aux emplacements suivants : >
 >* `./jcr:title`
 >* Emplacements `./jcr:description`
 >
@@ -1042,4 +1042,4 @@ Exemple de `_cq_dialog/.content.xml` utilisé dans ce cas de figure :
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
 >
->  Vous n’avez pas à modifier les `/libs`, utilisez-les simplement comme exemples. Si vous souhaitez utiliser l’une des étapes existantes, copiez-les dans `/apps` et modifiez-les ici.
+>  Ne modifiez rien dans `/libs`, utilisez-les simplement comme exemples. Si vous souhaitez utiliser l’une des étapes existantes, copiez-les dans `/apps` et éditez-les ici.

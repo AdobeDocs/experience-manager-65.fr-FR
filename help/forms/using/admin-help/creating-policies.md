@@ -11,16 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fa054d30-c7dc-4b64-acf1-cbcbe8827df5
 feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4715'
-ht-degree: 19%
+source-wordcount: '4713'
+ht-degree: 15%
 
 ---
 
 # Créer et gérer des politiques {#creating-and-managing-policies}
 
-Une *politique* définit un jeu de paramètres de confidentialité et les utilisateurs et utilisatrices habilités à accéder au document auquel la politique est appliquée. A *jeu de stratégies* est utilisé pour regrouper un ensemble de stratégies ayant un objectif commercial commun. Ces jeux de politiques sont ensuite rendus accessibles à un sous-ensemble d’utilisateurs et utilisatrices du système. Pour plus d’informations sur les stratégies, voir [Stratégies et documents protégés par une stratégie](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
+Une *politique* définit un jeu de paramètres de confidentialité et les utilisateurs et utilisatrices habilités à accéder au document auquel la politique est appliquée. A *jeu de stratégies* est utilisé pour regrouper un ensemble de stratégies ayant un objectif commercial commun. Ces jeux de stratégies sont ensuite mis à la disposition d’un sous-ensemble d’utilisateurs du système. Pour plus d’informations sur les stratégies, voir [Stratégies et documents protégés par une stratégie](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
 
 ## Types de stratégies {#types-of-policies}
 
@@ -28,7 +28,7 @@ Document Security fournit les types de stratégies suivants.
 
 **Stratégies personnelles**
 
-Les utilisateurs peuvent créer, modifier, copier, supprimer et appliquer leurs propres stratégies avec des paramètres appropriés à une situation donnée. Seule la personne qui crée une stratégie et les administrateurs peuvent accéder à cette stratégie personnelle. Les stratégies personnelles apparaissent dans l’onglet Mes stratégies de la page Stratégies.
+Les utilisateurs peuvent créer, modifier, copier, supprimer et appliquer leurs propres stratégies avec des paramètres appropriés à une situation donnée. Seule la personne qui crée une stratégie et l’administrateur peut accéder à cette stratégie personnelle. Les stratégies personnelles apparaissent dans l’onglet Mes stratégies de la page Stratégies.
 
 Les utilisateurs invités peuvent également créer, modifier, copier et supprimer des stratégies personnelles si l’administrateur active cette fonctionnalité.
 
@@ -38,9 +38,9 @@ Les administrateurs et les coordinateurs de jeux de stratégies créent des stra
 
 Lors de la première installation de Document Security, celle-ci contient une stratégie partagée nommée *Restreindre à toutes les entités*. Lorsque cette stratégie est appliquée à un document, tout utilisateur qui peut se connecter à Document Security peut accéder au document. Cette stratégie figure dans le jeu de stratégies nommé *Jeu de stratégies global*. Par défaut, cette stratégie n’est pas activée. Vous pouvez l’activer si elle correspond aux besoins de votre entreprise.
 
-**Stratégies générées automatiquement par Microsoft Outlook**
+**Stratégies générées automatiquement par Microsoft® Outlook**
 
-Acrobat vous permet d’appliquer des stratégies aux documents que vous envoyez en tant que pièces jointes d’email dans Microsoft Outlook. Dans Outlook, vous pouvez protéger un document à l’aide d’une stratégie existante ou d’une stratégie générée automatiquement par Acrobat et générée avec les paramètres de confidentialité par défaut, et l’appliquer au document joint à un message électronique. (Voir *[Aide d’Acrobat](https://help.adobe.com/fr_FR/acrobat/pro/using/index.html)*.)
+Acrobat vous permet d’appliquer des stratégies aux documents que vous envoyez en tant que pièces jointes d’email dans Microsoft® Outlook. Dans Outlook, vous pouvez protéger un document à l’aide d’une stratégie existante. Vous pouvez également utiliser une stratégie générée automatiquement par Acrobat avec les paramètres de confidentialité par défaut et l’appliquer au document joint à un message électronique. (Voir *[Aide d’Acrobat](https://help.adobe.com/fr_FR/acrobat/pro/using/index.html)*.)
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ La manière dont vous interagissez avec les stratégies et les jeux de stratégi
 
 **Coordinateurs de jeux de politiques :** les coordinateurs de jeux de politiques peuvent créer et gérer les politiques partagées figurant dans les jeux de politiques pour lesquels ils ont été désignés en tant que coordinateur. Au sein de l’organisation, c’est généralement la personne la plus à même de créer des politiques dans un jeu donné.
 
-**Administrateurs :** les administrateurs peuvent modifier les politiques personnelles de n’importe quel utilisateur. Ils peuvent créer des stratégies partagées. Ils peuvent également créer, modifier et supprimer des jeux de stratégies, et désigner des coordinateurs de jeux de stratégies.
+**Administrateurs :** Les administrateurs peuvent modifier les stratégies personnelles de n’importe quel utilisateur. Ils peuvent créer des stratégies partagées. Ils peuvent également créer, modifier et supprimer des jeux de stratégies, et désigner des coordinateurs de jeux de stratégies.
 
 Pour plus d’informations sur les différents rôles de Document Security, consultez la section [À propos des utilisateurs de Document Security](/help/forms/using/admin-help/document-security.md#about-document-security-users).
 
@@ -64,23 +64,23 @@ Les utilisateurs peuvent créer ou modifier des stratégies personnelles pour le
 
 ### Considérations relatives à la modification de stratégies {#considerations-for-editing-policies}
 
-Lorsque vous modifiez une stratégie, les modifications affectent les documents actuellement protégés par la stratégie, ainsi que les documents protégés par la stratégie par la suite. Par exemple, si vous supprimez des destinataires d’une stratégie actuellement appliquée à un document, les destinataires ne peuvent plus ouvrir le document.
+Lorsque vous modifiez une stratégie, les modifications affectent les documents actuellement protégés par la stratégie, ainsi que les documents protégés par la stratégie par la suite. Par exemple, si vous supprimez des destinataires d’une stratégie appliquée à un document, les destinataires ne peuvent plus ouvrir le document.
 
 L’état du document détermine le moment où la modification prend effet :
 
 * Si le document est en ligne, les modifications sont appliquées immédiatement, sauf si l’utilisateur l’a ouvert. Dans ce cas, l’utilisateur doit fermer le document pour que les modifications soient prises en compte.
-* Si un destinataire utilise le document hors ligne (par exemple, sur un ordinateur portable), les modifications prennent effet la prochaine fois que le destinataire mettra le document en ligne et se synchronise avec Document Security en ouvrant un document protégé par une stratégie.
+* Si un destinataire utilise le document hors ligne (par exemple, sur un ordinateur portable), les modifications prennent effet lors de la prochaine mise en ligne du document par le destinataire. Il se synchronise ensuite avec Document Security en ouvrant un document protégé par une stratégie.
 
 >[!NOTE]
 >
->Les stratégies qu’Acrobat génère automatiquement pour les destinataires des documents joints aux emails dans Microsoft Outlook n’apparaissent pas dans la liste des stratégies. Vous ne pouvez afficher ces stratégies qu’en ouvrant la page Détails du document du document associé.
+>Les stratégies qu’Acrobat génère automatiquement pour les destinataires des documents joints aux emails dans Microsoft® Outlook n’apparaissent pas dans la liste des stratégies. Vous ne pouvez afficher ces stratégies qu’en ouvrant la page Détails du document du document associé.
 
 Lorsque vous modifiez des stratégies, ces restrictions s’appliquent :
 
 * Les utilisateurs invités ne peuvent modifier les stratégies que si l’administrateur active cette fonctionnalité. Si vous ne pouvez pas modifier de stratégies, l’option Modifier n’est pas disponible.
 * Les coordinateurs de jeux de stratégies ne peuvent modifier les stratégies des jeux de stratégies que s’ils disposent des autorisations appropriées. Le super-utilisateur ou l’administrateur de jeux de stratégies définit ces autorisations dans l’interface d’administration de Document Security.
 * Si un filigrane est configuré pour la stratégie et que l’administrateur l’a supprimé depuis la création de la stratégie, ce filigrane ne sera plus appliqué aux documents si vous modifiez et enregistrez la stratégie. Les filigranes supprimés restent en vigueur uniquement pour les stratégies existantes tant que vous ne modifiez pas la stratégie. Si vous modifiez la stratégie, vous devez sélectionner un autre filigrane pour remplacer celui qui a été supprimé.
-* Vous ne pouvez pas accorder l’accès anonyme à un document en modifiant la stratégie actuellement appliquée. Si vous modifiez la stratégie, les utilisateurs doivent toujours se connecter pour accéder au document. Pour autoriser l’accès anonyme à ce document, vous devez d’abord supprimer la stratégie dans l’application cliente, puis appliquer une autre stratégie autorisant l’accès anonyme.
+* Vous ne pouvez pas accorder l’accès anonyme à un document en modifiant la stratégie appliquée. Si vous modifiez la stratégie, les utilisateurs doivent toujours se connecter pour accéder au document. Pour autoriser l’accès anonyme à ce document, vous devez d’abord supprimer la stratégie dans l’application cliente, puis appliquer une autre stratégie autorisant l’accès anonyme.
 * Les stratégies qu’Acrobat génère automatiquement pour les destinataires d’un document joint à un message électronique dans Microsoft Outlook n’apparaissent pas dans la liste des stratégies. Pour accéder à cette stratégie, recherchez le document dans la page Documents, ouvrez la page Détails du document, puis cliquez sur le nom de la stratégie dans la liste des détails du document.
 
 **Création ou modification d’une stratégie**
@@ -103,14 +103,14 @@ Lorsque vous modifiez des stratégies, ces restrictions s’appliquent :
    * barre oblique inverse (\)
    * Barre oblique (/)
 
-   Si vous utilisez le caractère suivant dans le nom ou la description, il est converti en espaces :
+   Si vous avez utilisé le caractère suivant dans le nom ou la description, il est converti en espaces :
 
    * Retour chariot (caractère ASCII 13)
    * nouvelle ligne (caractère ASCII 10).
 
    >[!NOTE]
    >
-   >Vous pouvez créer un nom de stratégie contenant des caractères étendus. Toutefois, lors d’une comparaison entre deux chaînes, les caractères accentués et non accentués tels que &quot;e&quot; et &quot;é&quot; sont considérés comme identiques. Lorsqu’une personne crée une stratégie, une comparaison est effectuée pour vérifier si une stratégie portant le même nom existe déjà. La comparaison ne peut pas distinguer les noms identiques, à l’exception des caractères accentués. On suppose que la stratégie a déjà été ajoutée à la base de données et que la nouvelle stratégie n&#39;a pas été ajoutée.
+   Vous pouvez créer un nom de stratégie contenant des caractères étendus. Toutefois, lors d’une comparaison entre deux chaînes, les caractères accentués et non accentués tels que &quot;e&quot; et &quot;é&quot; sont considérés comme identiques. Lorsqu’une personne crée une stratégie, une comparaison est effectuée pour vérifier s’il existe une stratégie portant le même nom. La comparaison ne peut pas distinguer les noms identiques, à l’exception des caractères accentués. On suppose que la stratégie a déjà été ajoutée à la base de données et que la nouvelle stratégie n&#39;a pas été ajoutée.
 
 1. Ajoutez des utilisateurs et des groupes à la stratégie et définissez les autorisations appropriées. (Voir [Utilisateurs et groupes](creating-policies.md#users-and-groups).)
 1. Sous Paramètres généraux, sélectionnez les options appropriées. (Voir [Paramètres généraux](creating-policies.md#general-settings).)
@@ -130,21 +130,21 @@ Dans la zone Utilisateurs et groupes , vous spécifiez les utilisateurs ayant ac
 
 >[!NOTE]
 >
->L’éditeur est l’utilisateur qui protège le document avec la stratégie. Cet utilisateur est toujours inclus par défaut dans une stratégie, avec des droits d’accès complets, notamment des fonctionnalités de révocation et de changement de stratégie. Toutefois, les administrateurs peuvent modifier les droits d’accès de l’éditeur pour les stratégies partagées. Par exemple, l’administrateur peut empêcher l’éditeur de révoquer l’accès au document ou de changer de stratégie.
+L’éditeur est l’utilisateur qui protège le document avec la stratégie. Cet utilisateur est toujours inclus par défaut dans une stratégie, avec des droits d’accès complets, notamment des fonctionnalités de révocation et de changement de stratégie. Toutefois, les administrateurs peuvent modifier les droits d’accès de l’éditeur pour les stratégies partagées. Par exemple, l’administrateur peut empêcher l’éditeur de révoquer l’accès au document ou de changer de stratégie.
 
-**Ajouter un utilisateur ou un groupe :** pour ajouter un utilisateur ou un groupe d’utilisateurs, cliquez sur Ajouter un utilisateur ou un groupe, puis sur Recherche avancée pour trouver des utilisateurs ou des groupes. Les utilisateurs incluent les utilisateurs internes de votre entreprise et les utilisateurs invités qui se sont enregistrés auprès de Document Security. Lorsque vous sélectionnez cette option, la page Ajouter un utilisateur ou un groupe s’affiche :
+**Ajouter un utilisateur ou un groupe :** Pour ajouter un utilisateur ou un groupe d’utilisateurs, cliquez sur Ajouter un utilisateur ou un groupe, puis sur Recherche avancée afin de trouver des utilisateurs ou des groupes. Les utilisateurs incluent les utilisateurs internes de votre entreprise et les utilisateurs invités qui se sont enregistrés auprès de Document Security. Lorsque vous sélectionnez cette option, la page Ajouter un utilisateur ou un groupe s’affiche :
 
 * Dans la zone Rechercher, saisissez le nom ou l’adresse électronique de l’utilisateur ou du groupe.
 * Dans la liste Utilisation, sélectionnez Nom ou Adresse électronique.
 * Dans la liste Type, sélectionnez Utilisateur ou Groupe.
-* Sélectionnez le domaine à rechercher dans la liste Dans, puis cliquez sur Rechercher.
+* Sélectionnez le domaine dans lequel effectuer la recherche, puis cliquez sur Rechercher.
 * Lorsque les résultats sont renvoyés, sélectionnez l’utilisateur ou le groupe à ajouter, puis cliquez sur Ajouter.
 
 >[!NOTE]
 >
->Si vous saisissez un nom d’utilisateur invité ou une adresse électronique correcte et qu’aucun résultat n’est renvoyé, l’utilisateur n’est peut-être pas encore enregistré ou le compte peut être supprimé. Vous pouvez essayer d’ajouter l’utilisateur en tant qu’utilisateur invité ou contacter votre administrateur.
+Si vous saisissez un nom d’utilisateur invité ou une adresse électronique correcte et qu’aucun résultat n’est renvoyé, l’utilisateur n’est peut-être pas encore enregistré ou le compte peut être supprimé. Vous pouvez essayer d’ajouter l’utilisateur en tant qu’utilisateur invité ou contacter votre administrateur.
 
-**Inviter un nouvel utilisateur :** pour ajouter un utilisateur invité, cliquez sur Inviter un nouvel utilisateur, entrez l’adresse électronique de l’utilisateur dans la zone qui s’affiche, puis cliquez sur Inviter. Cette option est disponible uniquement si l’administrateur l’a activée. Lorsque vous ajoutez de nouveaux utilisateurs invités à une stratégie, Document Security envoie un courrier électronique d’invitation à l’enregistrement si les utilisateurs ne sont pas déjà invités à s’enregistrer. Les utilisateurs doivent utiliser le lien contenu dans l’e-mail pour créer un compte, puis activer le compte.
+**Inviter un nouvel utilisateur :** Pour ajouter un utilisateur invité, cliquez sur Inviter un nouvel utilisateur, saisissez l’adresse électronique de l’utilisateur dans la zone qui s’affiche, puis cliquez sur Inviter. Cette option est disponible uniquement si l’administrateur l’a activée. Lorsque vous ajoutez de nouveaux utilisateurs invités à une stratégie, Document Security envoie un courrier électronique d’invitation à l’enregistrement si les utilisateurs ne sont pas déjà invités à s’enregistrer. Les utilisateurs doivent utiliser le lien contenu dans l’e-mail pour créer un compte, puis activer le compte.
 
 Après enregistrement, les utilisateurs invités peuvent utiliser les documents protégés par une stratégie pour lesquels ils disposent d’une autorisation. En fonction des fonctionnalités activées par l’administrateur, les utilisateurs externes peuvent être autorisés à appliquer des stratégies à des documents, à créer, modifier et supprimer des stratégies et à ajouter d’autres utilisateurs externes aux stratégies.
 
@@ -152,7 +152,7 @@ Après enregistrement, les utilisateurs invités peuvent utiliser les documents 
 
 >[!NOTE]
 >
->Pour autoriser l’accès anonyme à un document protégé par une stratégie qui ne l’a pas actuellement, supprimez la stratégie existante, puis appliquez une stratégie qui autorise l’accès anonyme. Si vous changez de stratégie ou si vous la modifiez, les utilisateurs doivent toujours se connecter pour accéder au document.
+Pour autoriser l’accès anonyme à un document protégé par une stratégie qui ne l’a pas actuellement, supprimez la stratégie existante, puis appliquez une stratégie qui autorise l’accès anonyme. Si vous changez de stratégie ou si vous la modifiez, les utilisateurs doivent toujours se connecter pour accéder au document.
 
 #### Spécification des autorisations de document pour les utilisateurs et les groupes {#specify-the-document-permissions-for-users-and-groups}
 
@@ -160,7 +160,7 @@ Vous pouvez définir des autorisations de document pour un utilisateur ou un gro
 
 Par défaut, tous les documents protégés par une stratégie disposent d’une autorisation qui permet aux utilisateurs de les ouvrir en ligne.
 
-Les onglets Autorisations et Options s’affichent dans Document Security.
+L’onglet Autorisations et options s’affiche dans Document Security.
 
 Ces autorisations de document sont disponibles dans l’onglet Autorisations . Vous pouvez appliquer ces autorisations aux fichiers PDF, PTC Pro/E et Microsoft Office.
 
@@ -192,7 +192,7 @@ Ces autorisations de document sont disponibles dans l’onglet Options . Vous po
 
 **Hors ligne :** autorise l’utilisateur à afficher hors ligne un document protégé par cette politique.
 
-**Validité des autorisations :** sélectionnez Autorisations toujours valables ou définissez une période de validité pour les autorisations du document. Si vous sélectionnez une période de validité, cliquez sur les icônes du calendrier pour sélectionner une date et utilisez les flèches pour indiquer l&#39;heure au format 24 heures.
+**Validité des autorisations :** Sélectionnez Autorisations toujours valides ou définissez une période de validité d’autorisation de document. Si vous sélectionnez une période de validité, cliquez sur l&#39;icône de calendrier pour sélectionner une date et utilisez les flèches pour indiquer l&#39;heure au format 24 heures.
 
 Pour les stratégies partagées, les administrateurs peuvent désactiver les privilèges suivants pour l’éditeur de document (l’utilisateur qui applique la stratégie à un document) :
 
@@ -216,15 +216,15 @@ La zone Paramètres généraux contient les paramètres suivants :
 
 >[!NOTE]
 >
->les dates de validité reposent sur le fuseau horaire du système Document Security, et non sur celui de votre ordinateur local.
+les dates de validité reposent sur le fuseau horaire du système Document Security, et non sur celui de votre ordinateur local.
 
 **Réaliser un audit :** permet d’activer ou de désactiver la réalisation d’un audit des événements associés à un document protégé par une politique. Par exemple, Document Security peut enregistrer des événements tels que des tentatives d’ouverture d’un document. Les événements contrôlés apparaissent dans la liste de la page Événements . Si vous ne sélectionnez pas cette option, Document Security n’enregistre pas les événements pour les documents associés à la stratégie.
 
 >[!NOTE]
 >
->L’administrateur doit également activer le contrôle du serveur sur la page de configuration des paramètres de contrôle et de confidentialité pour que la fonction de contrôle fonctionne.
+L’administrateur doit également activer le contrôle du serveur sur la page de configuration des paramètres de contrôle et de confidentialité pour que la fonction de contrôle fonctionne.
 
-**Suivi des utilisations étendues :** activez ou désactivez le suivi des utilisations étendues. Document Security prend en charge le suivi des événements utilisateur associés à diverses opérations effectuées sur un fichier de PDF. Vous pouvez accéder à l’objet Document Security à l’aide d’un script Java. Un clic sur un bouton, un fichier multimédia en cours de lecture ou l’enregistrement d’un fichier sont quelques exemples d’événements pouvant être déclenchés à partir d’un PDF protégé par une stratégie. À l’aide de l’objet Document Security, vous pouvez également récupérer des informations sur l’utilisateur. Le suivi des événements peut être activé à partir du serveur Document Security au niveau global ou au niveau des stratégies.
+**Suivi des utilisations étendues :** activez ou désactivez le suivi des utilisations étendues. Document Security prend en charge le suivi des événements utilisateur associés à diverses opérations effectuées sur un fichier de PDF. Vous pouvez accéder à l’objet Document Security à l’aide d’un script Java. Un clic sur un bouton, un fichier multimédia en cours de lecture ou l’enregistrement d’un fichier sont quelques exemples d’événements déclenchés à partir d’un PDF protégé par une stratégie. À l’aide de l’objet Document Security, vous pouvez également récupérer des informations sur l’utilisateur. Le suivi des événements peut être activé à partir du serveur Document Security au niveau global ou au niveau des stratégies.
 
 **Période d’ouverture hors ligne :** nombre maximum de jours pendant lesquels le destinataire peut utiliser le document protégé par une politique hors ligne (c’est-à-dire sans être connecté à Internet ou à un réseau). À l’issue de cette période d’ouverture, le ou la destinataire doit resynchroniser le document pour continuer à l’utiliser.
 
@@ -236,25 +236,25 @@ Sélectionnez les fournisseurs d&#39;authentification externes si vous en avez d
 
 Vous pouvez remplacer les paramètres d’authentification que vous avez configurés sur le serveur et spécifier les options d’authentification pertinentes pour cette stratégie. Sélectionnez Remplacer les paramètres d’authentification globaux, puis sélectionnez les options d’authentification pertinentes pour cette stratégie. Les options d’authentification suivantes sont disponibles :
 
-**Autoriser l’authentification par nom d’utilisateur / mot de passe :** sélectionnez cette option pour permettre aux applications clientes d’utiliser l’authentification par nom d’utilisateur / mot de passe lors de la connexion au serveur.
+**Autoriser l’authentification par mot de passe du nom d’utilisateur :** Sélectionnez cette option si vous souhaitez permettre aux applications clientes d’utiliser l’authentification par nom d’utilisateur/mot de passe lors de la connexion au serveur.
 
-**Autoriser l’authentification Kerberos :** sélectionnez cette option pour permettre aux applications clientes d’utiliser l’authentification Kerberos lors de la connexion au serveur.
+**Autoriser l’authentification Kerberos :** Sélectionnez cette option si vous souhaitez permettre aux applications clientes d’utiliser l’authentification Kerberos lors de la connexion au serveur.
 
-**Autoriser l’authentification de certificat client :** sélectionnez cette option pour permettre aux applications clientes d’utiliser l’authentification de certificat lors de la connexion au serveur.
+**Autoriser l’authentification de certificat client :** Sélectionnez cette option si vous souhaitez permettre aux applications clientes d’utiliser l’authentification par certificat lors de la connexion au serveur.
 
 **Autoriser l’authentification étendue :** sélectionnez cette option pour activer l’authentification étendue. La sélection de cette option permet aux applications clientes d’utiliser l’authentification étendue. L’authentification étendue fournit des processus d’authentification personnalisés et différentes options d’authentification configurées sur le serveur Document Security.
 
-Si vous remplacez les paramètres d’authentification globale, vous pouvez choisir les options d’authentification pertinentes pour cette stratégie. Par exemple, si vous avez activé trois options d’authentification (nom d’utilisateur et mot de passe, certificat client et authentification étendue) sur le serveur, vous pouvez remplacer ce paramètre global et sélectionner uniquement l’authentification étendue pour cette stratégie. Vous devez vous assurer que l’option d’authentification que vous sélectionnez ici est déjà configurée sur le serveur. Dans cet exemple, vous ne pouvez pas sélectionner Kerberos comme option d’authentification, car elle n’est pas configurée sur le serveur.
+Si vous remplacez les paramètres d’authentification globale, vous pouvez choisir les options d’authentification pertinentes pour cette stratégie. Par exemple, si vous avez activé trois options d’authentification (nom d’utilisateur et mot de passe, certificat client et authentification étendue) sur le serveur, vous pouvez remplacer ce paramètre global et sélectionner uniquement l’authentification étendue pour cette stratégie. Assurez-vous que l’option d’authentification que vous sélectionnez ici est déjà configurée sur le serveur. Dans cet exemple, vous ne pouvez pas sélectionner Kerberos comme option d’authentification, car elle n’est pas configurée sur le serveur.
 
 >[!NOTE]
 >
->L’authentification étendue est prise en charge sur Apple Mac OS X avec Adobe Acrobat version 11.0.6 et ultérieure.
+L’authentification étendue est prise en charge sur Apple Mac OS X avec Adobe Acrobat version 11.0.6 et ultérieure.
 
 ### Paramètres avancés {#advanced-settings}
 
 La zone Paramètres avancés contient les paramètres suivants :
 
-**Filigrane dynamique :** sélectionnez un filigrane à afficher dynamiquement dans les pages d’un document (par exemple lorsqu’un destinataire imprime le document). Les filigranes dynamiques identifient de manière unique un document, ce qui permet d’assurer la confidentialité de ce dernier et d’empêcher toute violation du droit d’auteur. Par exemple, l’administrateur peut configurer un filigrane dynamique qui affiche la date actuelle, le nom d’utilisateur ou l’identifiant de la personne qui utilise le document, ou le nom de la stratégie utilisée pour protéger le document. Un filigrane peut également afficher du texte personnalisé ou des éléments graphiques s’ils sont configurés. Les administrateurs configurent les options des filigranes, et les administrateurs et les utilisateurs peuvent les appliquer aux stratégies.
+**Filigrane dynamique :** sélectionnez un filigrane à afficher dynamiquement dans les pages d’un document (par exemple lorsqu’un destinataire imprime le document). Les filigranes dynamiques identifient de manière unique un document, ce qui permet d’assurer la confidentialité de ce dernier et d’empêcher toute violation du droit d’auteur. Par exemple, l’administrateur peut configurer un filigrane dynamique qui affiche la date actuelle, le nom d’utilisateur ou l’identifiant de la personne qui utilise le document. ou le nom de la stratégie utilisée pour protéger le document. Un filigrane peut également afficher du texte ou des éléments graphiques personnalisés, s’ils sont configurés. Les administrateurs configurent les options de filigrane, et les administrateurs et les utilisateurs peuvent les appliquer aux stratégies.
 
 (Voir [Configuration des filigranes dynamiques](/help/forms/using/admin-help/configuring-client-server-options.md#configure-dynamic-watermarks).)
 
@@ -262,7 +262,7 @@ Si vous modifiez une stratégie et que l’administrateur a supprimé un filigra
 
 >[!NOTE]
 >
->Dans le cas des stratégies qui autorisent l’accès anonyme d’un utilisateur, le nom d’utilisateur et l’identifiant d’un utilisateur anonyme ne s’affichent pas en filigrane, même si vous sélectionnez ce type de filigrane.
+Dans le cas des stratégies qui autorisent l’accès anonyme d’un utilisateur, le nom d’utilisateur et l’identifiant d’un utilisateur anonyme ne s’affichent pas en filigrane, même si vous sélectionnez ce type de filigrane.
 
 **N’utiliser que des modules externes Acrobat certifiés pour PDF :** lorsque cette option est sélectionnée pour une politique, elle spécifie qu’Acrobat version 8.0 ou ultérieure doit s’exécuter en mode certifié lors de l’ouverture de documents sécurisés par cette politique. Lorsqu’Acrobat s’exécute en mode certifié, il ne charge aucun module externe tiers.
 
@@ -300,7 +300,7 @@ Un X rouge apparaît en regard d’une stratégie désactivée.
 
 >[!NOTE]
 >
->Les administrateurs ne peuvent pas désactiver les stratégies personnelles, et les utilisateurs ne peuvent pas activer ni désactiver leurs propres stratégies.
+Les administrateurs ne peuvent pas désactiver les stratégies personnelles, et les utilisateurs ne peuvent pas activer ni désactiver leurs propres stratégies.
 
 1. Dans la page Document Security, cliquez sur Stratégies, puis sur l’onglet Jeux de stratégies.
 1. Cliquez sur le nom du jeu de stratégies approprié, puis sur l’onglet Stratégies .
@@ -310,9 +310,9 @@ Un X rouge apparaît en regard d’une stratégie désactivée.
 
 L’onglet Mes stratégies vous permet de rechercher des stratégies personnelles.
 
-Les jeux de stratégies créés par les administrateurs sont répertoriés dans l’onglet Jeux de stratégies de la page Stratégies avec des informations sur le jeu de stratégies, notamment son nom, la date de création et de modification, ainsi qu’une description. Cliquez sur le nom d’un jeu de stratégies pour en afficher les détails. Les coordinateurs de jeux de stratégies autorisés à gérer les stratégies peuvent créer des stratégies partagées au sein d’un jeu de stratégies spécifique.
+Les jeux de stratégies créés par les administrateurs sont répertoriés dans l’onglet Jeux de stratégies de la page Stratégies. Ils contiennent des informations sur le jeu de stratégies, notamment son nom, la date de création et de modification, ainsi qu’une description. Cliquez sur le nom d’un jeu de stratégies pour en afficher les détails. Les coordinateurs de jeux de stratégies autorisés à gérer les stratégies peuvent créer des stratégies partagées au sein d’un jeu de stratégies spécifique.
 
-Lorsque vous créez ou modifiez une stratégie, une page s’affiche dans laquelle vous pouvez configurer des détails tels que le nom de la stratégie, les niveaux d’autorisation, les paramètres de confidentialité et les destinataires à inclure dans la stratégie.
+Lorsque vous créez ou modifiez une stratégie, une page s’affiche dans laquelle vous pouvez configurer le nom de la stratégie, les niveaux d’autorisation, les paramètres de confidentialité et les destinataires à inclure dans la stratégie.
 
 L’administrateur peut configurer les paramètres de confidentialité suivants pour une stratégie :
 
@@ -326,10 +326,10 @@ Vous pouvez afficher des informations plus détaillées sur une stratégie qui a
 
 >[!NOTE]
 >
->Les stratégies qu’Acrobat génère automatiquement pour les destinataires des documents joints aux emails dans Microsoft Outlook n’apparaissent pas dans la liste des stratégies. Vous ne pouvez afficher ces stratégies qu’en ouvrant la page Détails du document du document associé.
+Les stratégies qu’Acrobat génère automatiquement pour les destinataires des documents joints aux emails dans Microsoft Outlook n’apparaissent pas dans la liste des stratégies. Vous ne pouvez afficher ces stratégies qu’en ouvrant la page Détails du document du document associé.
 
 1. Dans la page Document Security, cliquez sur Stratégies, puis sur l’onglet Mes stratégies.
-1. Renseignez les informations de recherche pour rechercher des stratégies personnelles.
+1. Renseignez les informations de recherche afin de pouvoir rechercher des stratégies personnelles.
 1. Sélectionnez la stratégie appropriée dans la liste.
 1. Sur la page Détails de la stratégie, vous pouvez afficher des détails sur la stratégie, la modifier ou afficher les événements liés à la stratégie.
 
@@ -343,7 +343,7 @@ Les administrateurs peuvent rechercher des stratégies partagées et des straté
 
 1. Dans la liste Rechercher, sélectionnez l’une des options suivantes :
 
-   **ID de politique :** numéro d’identification de politique généré lors de la création de la politique par l’utilisateur. Vous devez saisir l’ID de politique exact.
+   **ID de politique :** numéro d’identification de politique généré lors de la création de la politique par l’utilisateur. Saisissez l’identifiant de stratégie exact.
 
    **Nom de la politique :** nom de la politique. Vous pouvez rechercher une partie ou la totalité du nom de la stratégie.
 
@@ -372,14 +372,14 @@ Les utilisateurs externes ne peuvent copier des stratégies que si l’administr
    * barre oblique inverse (\)
    * Barre oblique (/)
 
-   Si vous utilisez le caractère suivant dans le nom ou la description, il est converti en espaces :
+   Si vous avez utilisé le caractère suivant dans le nom ou la description, il est converti en espaces :
 
    * Retour chariot (caractère ASCII 13)
    * nouvelle ligne (caractère ASCII 10).
 
    >[!NOTE]
    >
-   >Vous pouvez créer un nom de stratégie contenant des caractères étendus. Toutefois, lors d’une comparaison entre deux chaînes, les caractères accentués et non accentués tels que &quot;e&quot; et &quot;é&quot; sont considérés comme identiques. Lorsqu’une personne crée une stratégie, une comparaison est effectuée pour vérifier si une stratégie portant le même nom existe déjà. La comparaison ne peut pas distinguer les noms identiques, à l’exception des caractères accentués. On suppose que la stratégie a déjà été ajoutée à la base de données et que la nouvelle stratégie n&#39;a pas été ajoutée.
+   Vous pouvez créer un nom de stratégie contenant des caractères étendus. Toutefois, lors d’une comparaison entre deux chaînes, les caractères accentués et non accentués tels que &quot;e&quot; et &quot;é&quot; sont considérés comme identiques. Lorsqu’une personne crée une stratégie, une comparaison est effectuée pour vérifier s’il existe une stratégie portant le même nom. La comparaison ne peut pas distinguer les noms identiques, à l’exception des caractères accentués. On suppose que la stratégie a déjà été ajoutée à la base de données et que la nouvelle stratégie n&#39;a pas été ajoutée.
 
 1. Cliquez sur OK.
 
@@ -396,7 +396,7 @@ Les utilisateurs invités ne peuvent supprimer des stratégies que si l’admini
 
 >[!NOTE]
 >
->Vous devez utiliser l’application cliente pour supprimer des stratégies de documents. (Voir l’aide d’Acrobat ou l’aide des extensions Acrobat Reader DC appropriée.)
+Utilisez l’application cliente pour supprimer des stratégies de documents. (Voir l’aide d’Acrobat ou l’aide des extensions Acrobat Reader DC appropriée.)
 
 ## Tri de la liste des stratégies {#sort-the-policy-list}
 

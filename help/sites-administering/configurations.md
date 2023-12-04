@@ -2,10 +2,10 @@
 title: Configurations et l’explorateur de configurations
 description: Description des configurations AEM et de leur gestion des paramètres d’espace de travail dans AEM.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1483'
-ht-degree: 62%
+source-wordcount: '1472'
+ht-degree: 60%
 
 ---
 
@@ -68,8 +68,8 @@ L’explorateur de configurations permet à un administrateur de créer, gérer 
 
 Il est simple de créer une configuration dans AEM à l’aide du navigateur de configuration.
 
-1. Connectez-vous à AEM as a Cloud Service et dans le menu principal, sélectionnez **Outils** -> **Général** -> **Explorateur de configurations**.
-1. Appuyez ou cliquez sur **Créer**.
+1. Connectez-vous à AEM as a Cloud Service et sélectionnez dans le menu principal **Outils** > **Général** > **Explorateur de configuration**.
+1. Cliquez sur **Créer**.
 1. Indiquez un **Titre** et un **Nom** pour votre configuration.
 
    ![Création d’une configuration](assets/configuration-create.png)
@@ -83,7 +83,7 @@ Il est simple de créer une configuration dans AEM à l’aide du navigateur de 
    * [Segments Context Hub](/help/sites-administering/segmentation.md)
    * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
    * [Modèles modifiables](/help/sites-authoring/templates.md)
-1. Appuyez ou cliquez sur **Créer**.
+1. Cliquez sur **Créer**.
 
 >[!TIP]
 >
@@ -93,8 +93,8 @@ Il est simple de créer une configuration dans AEM à l’aide du navigateur de 
 
 Si vous considérez les configurations comme des espaces de travail, les droits d’accès peuvent être définis sur ces configurations afin de définir qui peut ou non accéder à ces espaces de travail.
 
-1. Connectez-vous à AEM as a Cloud Service et dans le menu principal, sélectionnez **Outils** -> **Général** -> **Explorateur de configurations**.
-1. Sélectionnez la configuration à modifier, puis appuyez ou cliquez sur **Propriétés** dans la barre d’outils.
+1. Connectez-vous à AEM as a Cloud Service et sélectionnez dans le menu principal **Outils** > **Général** > **Explorateur de configuration**.
+1. Sélectionnez la configuration à modifier, puis cliquez sur **Propriétés** dans la barre d’outils.
 1. Sélectionnez les fonctionnalités supplémentaires à ajouter à la configuration.
 
    >[!NOTE]

@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '10692'
+source-wordcount: '10702'
 ht-degree: 54%
 
 ---
@@ -147,7 +147,7 @@ Les paramètres ci-dessous sont disponibles pour le service Distiller.
 
 De nouveaux paramètres peuvent être créés dans l’interface utilisateur du PDF Generator.
 
-**Paramètres de protection :** paramètres de protection préconfigurés appliqués aux documents PDF générés. La valeur par défaut est No Security. Vous devez créer des paramètres de sécurité à l’aide de PDF Generator, puis saisir le paramètre ici.
+**Paramètres de protection :** paramètres de protection préconfigurés appliqués aux documents PDF générés. La valeur par défaut est No Security. Créez des paramètres de sécurité à l’aide de PDF Generator, puis saisissez le paramètre ici.
 
 **Taille du pool :** taille initiale du pool. Lorsque le service Distiller est déployé, ce nombre est utilisé pour déterminer le nombre d’instances d’implémentation du service qui sont créées et allouées au pool libre en attente de demandes d’appel. Le conteneur de services peut alors répondre immédiatement aux demandes d’appel sans avoir à initialiser au préalable une instance de service.
 
@@ -269,7 +269,7 @@ Les paramètres ci-dessous sont disponibles pour le service Generate PDF.
 
 **Logique de nouvelle tentative pour les conversions natives** : définit la logique des nouvelles tentatives de génération de fichiers PDF en cas d’échec de la première tentative de conversion.
 
-**Pas de nouvelle tentative**
+**Aucune reprise**
 
 Ne tentez pas de relancer la conversion du PDF si la première tentative de conversion a échoué.
 
@@ -277,7 +277,7 @@ Ne tentez pas de relancer la conversion du PDF si la première tentative de conv
 
 Effectuez une nouvelle tentative de conversion de PDF, que le délai d’expiration ait été atteint ou non. Le délai d’expiration par défaut de la première tentative est de 270 s.
 
-**Réessayer selon le temps imparti**
+**Réessayer si le temps le permet**
 
 Reprise de la conversion du PDF si le temps consommé pour la première tentative de conversion est inférieur au délai d’expiration spécifié. Par exemple, si le délai d’expiration est de 270 s et que la première tentative a duré 200 s, PDF Generator tente de relancer la conversion. Si la première tentative elle-même a duré 270 s, la conversion ne sera pas retentée.
 
@@ -332,7 +332,7 @@ La valeur macKeySeed est la valeur de départ du générateur de nombres aléato
 
 Modifiez la valeur macKeySeed lorsque vous devez actualiser les URL sécurisées. L’actualisation des URL sécurisées dépend de votre stratégie de sécurité. Elle est similaire à la stratégie d’actualisation permettant de modifier le mot de passe racine principal du serveur. macSeedValue est analogue au mot de passe principal pour les URL sécurisées, car il est utilisé pour générer un nouveau nombre aléatoire unique à utiliser dans la génération et la récupération d’URL sécurisées.
 
-Vous devez redémarrer la grappe, car macSeedValue est en lecture seule au démarrage du système. Tous les noeuds doivent redémarrer pour lire la valeur, car ils l’utilisent indépendamment pour initialiser leurs nombres aléatoires internes avec la valeur de départ.
+Redémarrez la grappe, car macSeedValue est en lecture seule au démarrage du système. Tous les noeuds doivent redémarrer pour lire la valeur, car ils l’utilisent indépendamment pour initialiser leurs nombres aléatoires internes avec la valeur de départ.
 
 ## Paramètres du service JDBC {#jdbc-service-settings}
 

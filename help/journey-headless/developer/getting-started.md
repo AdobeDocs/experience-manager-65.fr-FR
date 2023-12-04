@@ -2,10 +2,10 @@
 title: Prise en main d’AEM Headless
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3032'
-ht-degree: 92%
+source-wordcount: '2998'
+ht-degree: 91%
 
 ---
 
@@ -78,7 +78,7 @@ Les fragments de contenu contiennent du contenu structuré et peuvent être diff
 
 Pour modifier votre contenu en mode découplé, AEM propose deux API robustes.
 
-* L’API GraphQL permet de créer des requêtes d’accès et de diffusion de fragments de contenu.
+* L’API GraphQL vous permet de créer des demandes d’accès et de diffusion de fragments de contenu.
 * L’API REST Assets vous permet de créer et de modifier des fragments de contenu (et d’autres ressources).
 
 Vous découvrirez ces API et comment les utiliser dans une partie ultérieure du parcours AEM découplé. Ou, voir la [ressources supplémentaires](#additional-resources) pour plus d’informations.
@@ -240,7 +240,7 @@ Pour une [mise en œuvre découplée de type général à l’aide d’AEM,](#le
 
 Pour la réussite d’un projet, les performances doivent être prises en compte avant la création d’un contenu.
 
-Vous devez comprendre les attentes de vos utilisateurs/visiteurs et concevoir le projet pour eux. Définissez des objectifs de niveau de service (SLO) et mesurez-les pour savoir si vous répondez aux attentes de vos utilisateurs.
+Assurez-vous de bien comprendre les attentes de vos utilisateurs/visiteurs et concevez-les. Définissez des objectifs de niveau de service (SLO) et mesurez-les pour savoir si vous répondez aux attentes de vos utilisateurs.
 
 #### Modèles de trafic {#traffic-patterns}
 

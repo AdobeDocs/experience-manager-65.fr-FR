@@ -9,9 +9,9 @@ docset: aem65
 role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1392'
 ht-degree: 92%
 
 ---
@@ -26,7 +26,7 @@ Ces règles peuvent inclure l’ajout de métadonnées, le recadrage intelligent
 * [Profils d’image](/help/assets/image-profiles.md)
 * [Profils vidéo](/help/assets/video-profiles.md)
 
-Vous devez disposer des droits d’administrateur pour créer, modifier et supprimer des profils vidéo, de métadonnées ou d’image.
+Vous avez besoin de droits d’administrateur pour créer, modifier et supprimer des métadonnées, des images ou des profils vidéo.
 
 Après avoir créé votre profil de métadonnées, d’image ou vidéo, vous l’affectez à un ou plusieurs dossiers que vous utilisez comme destination des ressources nouvellement chargées.
 

@@ -2,10 +2,10 @@
 title: Guide de démarrage rapide sur la création de modèles de fragments de contenu découplés
 description: Définissez la structure du contenu que vous créez et diffusez à l’aide des fonctionnalités Adobe Experience Manager (AEM) sans interface utilisateur graphique à l’aide des modèles de fragment de contenu.
 exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 53%
+source-wordcount: '478'
+ht-degree: 54%
 
 ---
 
@@ -23,15 +23,15 @@ Les modèles de fragment de contenu définissent la structure des données et du
 
 Un architecte de l’information ne réaliserait ces tâches qu’occasionnellement, lorsque de nouveaux modèles sont nécessaires. Pour les besoins de ce guide de prise en main, vous ne créez qu’un seul modèle.
 
-1. Connectez-vous à AEM et, dans le menu principal, sélectionnez **Outils > Ressources > Modèles de fragments de contenu**.
-1. Appuyez ou cliquez sur le dossier créé lors de la création de votre configuration.
+1. Connectez-vous à AEM et sélectionnez dans le menu principal **Outils > Ressources > Modèles de fragment de contenu**.
+1. Cliquez sur le dossier créé lors de la création de votre configuration.
 
    ![Le dossier de modèles](assets/models-folder.png)
-1. Appuyez ou cliquez sur **Créer**.
+1. Cliquez sur **Créer**.
 1. Fournissez une **Titre du modèle**, **Balises**, et **Description**. Vous pouvez également sélectionner/désélectionner l’option **Activer le modèle** pour contrôler si le modèle est immédiatement activé lors de sa création.
 
    ![Création d’un modèle](assets/models-create.png)
-1. Dans la fenêtre de confirmation, appuyez ou cliquez sur **Ouvrir** pour configurer votre modèle.
+1. Dans la fenêtre de confirmation, cliquez sur **Ouvrir** pour configurer votre modèle.
 
    ![Fenêtre de confirmation](assets/models-confirmation.png)
 1. Utilisez l’**Éditeur de modèles de fragment de contenu** pour créer votre modèle de fragment de contenu en faisant glisser des champs depuis la colonne **Types de données**.
@@ -41,14 +41,14 @@ Un architecte de l’information ne réaliserait ces tâches qu’occasionnellem
 1. Une fois que vous avez placé un champ, vous devez configurer ses propriétés. L’éditeur passe automatiquement à la fonction **Propriétés** pour le champ ajouté où vous pouvez renseigner les champs obligatoires.
 
    ![Configuration des propriétés](assets/models-configure-properties.png)
-1. Lorsque vous avez fini de créer votre modèle, appuyez ou cliquez sur **Enregistrer**.
+1. Lorsque vous avez terminé de créer votre modèle, cliquez sur **Enregistrer**.
 
-1. Le mode du modèle que vous venez de créer varie selon que vous avez sélectionné ou non **Activer le modèle** lors de la création du modèle :
+1. Le mode du modèle que vous venez de créer varie selon votre sélection ou non de l’option **Activer le modèle** lors de la création du modèle :
    * sélectionné : le nouveau modèle est déjà **Activé**
-   * non sélectionné : le nouveau modèle est créé dans **Version préliminaire** mode
+   * non sélectionné - le nouveau modèle sera créé en mode **Brouillon**
 
-1. Si elle n’est pas déjà activée, le modèle doit être **Activé** pour l’utiliser.
-   1. Sélectionnez le modèle créé, puis appuyez ou cliquez sur **Activer**.
+1. S’il n’est pas déjà activé, le modèle doit être **Activé** pour pouvoir l’utiliser.
+   1. Sélectionnez le modèle créé, puis cliquez sur **Activer**.
 
       ![Activation du modèle](assets/models-enable.png)
    1. Confirmez l’activation du modèle en appuyant ou en cliquant sur **Activer** dans la boîte de dialogue de confirmation.

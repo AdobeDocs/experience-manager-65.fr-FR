@@ -2,10 +2,10 @@
 title: FAQ sur AEM
 description: Utilisez ces FAQ pour comprendre, configurer et résoudre les problèmes ou workflows courants dans AEM.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 47%
+source-wordcount: '1011'
+ht-degree: 40%
 
 ---
 
@@ -89,7 +89,7 @@ Si l’utilisateur, le téléchargement des fichiers de film ne dispose pas des 
 
 #### Quels sont les paramètres par défaut pour les configurations prêtes à l’emploi lors de la création d’une copie de langue ? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
-Lorsque vous créez une copie de langue par le biais de l’IU optimisée pour les écrans tactiles (**Références** ->**Mettre à jour la copie de langue**), un nouveau dossier de gestion des ressources numériques est créé sous la nouvelle langue et les ressources sont référencées à partir de cet emplacement.
+Lorsque vous créez une copie de langue via l’interface utilisateur tactile (**Références** > **Mettre à jour la copie de la langue**), un nouveau dossier DAM est créé sous la nouvelle langue et les ressources y sont référencées.
 
 Il s’agit du paramètre par défaut pour les configurations prêtes à l’emploi. Vous pouvez définir **Traduire les ressources de page** sur **Ne pas traduire** dans les configurations de traduction.
 Pour AEM 6.4, **Outils** > **Services cloud** > **Services cloud de traduction**.

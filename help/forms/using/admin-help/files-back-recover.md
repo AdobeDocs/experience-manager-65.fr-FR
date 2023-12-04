@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2065'
-ht-degree: 16%
+source-wordcount: '2017'
+ht-degree: 13%
 
 ---
 
@@ -33,7 +33,7 @@ L’emplacement du répertoire de stockage global de documents est déterminé p
 
 ### Emplacement du répertoire de stockage global de documents {#gds-location}
 
-Si vous laissez le paramètre d’emplacement vide lors de l’installation, l’emplacement par défaut est un répertoire sous l’installation du serveur d’applications. Vous devez sauvegarder le répertoire suivant pour votre serveur d’applications :
+Si vous laissez le paramètre d’emplacement vide lors de l’installation, l’emplacement par défaut est un répertoire sous l’installation du serveur d’applications. Sauvegardez le répertoire suivant pour votre serveur d’applications :
 
 * (JBoss) `[appserver root]/server/'server'/svcnative/DocumentStorage`
 * (WebLo gic) `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage`

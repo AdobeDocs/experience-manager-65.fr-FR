@@ -4,10 +4,10 @@ description: Découvrez comment les modèles de fragment de contenu constituent 
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
-source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 60%
+source-wordcount: '2310'
+ht-degree: 70%
 
 ---
 
@@ -18,7 +18,7 @@ Les modèles de fragment de contenu d’AEM définissent la structure du contenu
 Pour utiliser des modèles de fragment de contenu, vous pouvez :
 
 1. [Activation de la fonctionnalité Modèle de fragment de contenu pour votre instance](/help/assets/content-fragments/content-fragments-configuration-browser.md).
-1. [Créer](#creating-a-content-fragment-model) et [configurer](#defining-your-content-fragment-model) vos modèles de fragments de contenu.
+1. [Créer](#creating-a-content-fragment-model), et [configure](#defining-your-content-fragment-model), vos modèles de fragment de contenu.
 1. [Activation des modèles de fragment de contenu](#enabling-disabling-a-content-fragment-model) à utiliser lors de la création de fragments de contenu.
 1. [Autorisez vos modèles de fragments de contenu sur les dossiers de ressources requis](#allowing-content-fragment-models-assets-folder) en configurant des **politiques**.
 
@@ -26,7 +26,7 @@ Pour utiliser des modèles de fragment de contenu, vous pouvez :
 
 1. Accédez à **Outils**, **Ressources**, puis ouvrez les **modèles de fragment de contenu**.
 1. Accédez au dossier approprié à votre [configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md).
-1. Utilisation **Créer** pour ouvrir l’assistant.
+1. Utilisez **Créer** pour ouvrir l’assistant.
 
    >[!CAUTION]
    >
@@ -36,7 +36,7 @@ Pour utiliser des modèles de fragment de contenu, vous pouvez :
 
    ![titre et description](assets/cfm-models-02.png)
 
-1. Utilisation **Créer** pour enregistrer le modèle vide. Un message indique le succès de l’action. Vous pouvez sélectionner **Ouvrir** pour modifier immédiatement le modèle ; ou **Terminé** pour revenir à la console.
+1. Utilisez **Créer** pour enregistrer le modèle vide. Un message indique le succès de l’action. Vous pouvez sélectionner **Ouvrir** pour modifier immédiatement le modèle ; ou **Terminé** pour revenir à la console.
 
 ## Définition de votre modèle de fragment de contenu {#defining-your-content-fragment-model}
 
@@ -50,16 +50,16 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
 
-1. Ouvrez le modèle requis pour **Modifier**; utilisez l’action rapide ou sélectionnez le modèle, puis l’action dans la barre d’outils.
+1. Ouvrez le modèle requis en vue de le **Modifier** ; utilisez l’action rapide ou sélectionnez le modèle, puis l’action dans la barre d’outils.
 
-   Une fois ouvert, l’éditeur de modèles affiche :
+   Une fois ouvert, l’éditeur de modèles affiche :
 
    * à gauche : les champs déjà définis
    * à droite : les **types de données** disponibles pour la création des champs (et les **propriétés** à utiliser une fois les champs créés).
 
    >[!NOTE]
    >
-   >Lorsqu’un champ est défini sur **Obligatoire**, la variable **Libellé** indiqué dans le volet de gauche est marqué d’un astérisque (**&#42;**).
+   >Lorsqu’un champ est **obligatoire**, le **libellé** indiqué dans le volet de gauche est signalé par un astérisque (**&#42;**).
 
    ![propriétés](assets/cfm-models-03.png)
 
@@ -78,7 +78,7 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
         >
         >Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, les noms ne doivent contenir que les caractères A-Z, a-z, 0-9 et le trait de soulignement &quot;_&quot; comme caractère spécial.
         >
-        >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou mettez à jour ces caractères.
+        >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
      Par exemple :
 
@@ -86,7 +86,7 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
 
 1. **Pour supprimer un champ**
 
-   Sélectionnez le champ requis, puis cliquez/appuyez sur l’icône corbeille. Vous êtes invité à confirmer l’action.
+   Sélectionnez le champ requis, puis cliquez sur l’icône représentant une corbeille. Le système vous invite à confirmer l’action.
 
    ![supprimer](assets/cfm-models-06.png)
 
@@ -125,12 +125,12 @@ Une sélection de types de données est disponible pour la définition de votre 
 * **Objet JSON**
    * Permet à l’auteur du fragment de contenu de saisir la syntaxe JSON dans les éléments correspondants d’un fragment.
       * Pour permettre à AEM de stocker le fichier JSON direct copié et collé à partir d’un autre service.
-      * Le fichier JSON est transmis et généré au format JSON dans GraphQL.
+      * Le fichier JSON est transmis et généré sous la forme JSON dans GraphQL.
       * Inclut le surlignage de la syntaxe JSON, la saisie automatique et le surlignage des erreurs dans l’éditeur de fragment de contenu.
 * **Espace réservé pour tabulation**
    * Permet l’introduction d’onglets à utiliser lors de la modification du contenu du fragment de contenu.
-Il s’affiche sous la forme d’un séparateur dans l’éditeur de modèles, séparant les sections de la liste des types de données de contenu. Chaque instance représente le début d’un nouvel onglet.
-Dans l’éditeur de fragment, chaque instance s’affiche sous la forme d’un onglet.
+Il s’affiche sous forme de séparateur dans l’éditeur de modèles et permet de séparer les sections de la liste des types de données de contenu. Chaque instance représente le début d’un nouvel onglet.
+Dans l’éditeur de fragments, chaque instance s’affiche sous la forme d’un onglet.
 
      >[!NOTE]
      >
@@ -147,10 +147,10 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
 
   >[!CAUTION]
   >
-  >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou mettez à jour ces caractères.
+  >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
 * **Rendu comme**
-Les différentes options permettant de réaliser/rendre le champ dans un fragment. Cela vous permet souvent de définir si l’auteur voit une seule instance du champ ou s’il est autorisé à créer plusieurs instances.
+Les différentes options permettant de réaliser/rendre le champ dans un fragment. Il est ainsi souvent possible de définir si la personne chargée de la création de contenu verra une seule instance du champ ou si elle sera autorisée à créer plusieurs instances.
 
 * **Libellé du champ**
 Saisie d’un **Libellé du champ** autogénère une **Nom de la propriété**, qui peut ensuite être mis à jour manuellement, si nécessaire.
@@ -173,7 +173,7 @@ Le contenu (du champ spécifique) doit être unique dans tous les fragments de c
 
   Cette propriété permet de s’assurer que les auteurs de contenu ne peuvent pas répéter le contenu déjà ajouté dans un autre fragment du même modèle.
 
-  Par exemple, un champ **Une seule ligne de texte** appelé `Country` dans le modèle de fragment de contenu ne peut pas avoir la valeur `Japan` dans deux fragments de contenu dépendants. Un avertissement s’affiche lorsque la seconde instance est tentée.
+  Par exemple, un champ **Une seule ligne de texte** appelé `Country` dans le modèle de fragment de contenu ne peut pas avoir la valeur `Japan` dans deux fragments de contenu dépendants. Un avertissement est émis en cas de tentative concernant la deuxième instance.
 
   >[!NOTE]
   >
@@ -391,12 +391,12 @@ Les modèles de fragment de contenu autorisés pour un dossier sont résolus com
 >
 >La suppression d’un modèle de fragment de contenu peut avoir un impact sur les fragments dépendants.
 
-Pour supprimer un modèle de fragment de contenu :
+Pour supprimer un modèle de fragment de contenu :
 
 1. Accédez à **Outils**, **Ressources**, puis ouvrez les **modèles de fragment de contenu**.
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
-1. Sélectionnez votre modèle, suivi de **Supprimer** dans la barre d’outils.
+1. Sélectionnez votre modèle, puis l’option **Supprimer** dans la barre d’outils.
 
    >[!NOTE]
    >
@@ -406,7 +406,7 @@ Pour supprimer un modèle de fragment de contenu :
 
 Les modèles de fragment de contenu doivent être publiés lorsque/avant tout fragment de contenu dépendant est publié.
 
-Pour publier un modèle de fragment de contenu :
+Pour publier un modèle de fragment de contenu :
 
 1. Accédez à **Outils**, **Ressources**, puis ouvrez les **modèles de fragment de contenu**.
 
@@ -416,7 +416,7 @@ L’état publié est indiqué dans la console.
 
    >[!NOTE]
    >
-   >Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique et le modèle est publié avec le fragment.
+   >Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique, ainsi que le fait que le modèle est publié avec le fragment.
 
 ## Dépublication d’un modèle de fragment de contenu {#unpublishing-a-content-fragment-model}
 

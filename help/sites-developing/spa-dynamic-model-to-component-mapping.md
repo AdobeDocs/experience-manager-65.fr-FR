@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 82%
+source-wordcount: '333'
+ht-degree: 71%
 
 ---
 
@@ -27,7 +27,7 @@ Le module `ComponentMapping` est fourni au projet front-end sous la forme d’un
 
 Chaque élément présent dans le modèle contient un champ `:type` qui expose un type de ressource AEM. Une fois monté, le composant front-end peut être rendu à l’aide du fragment de modèle reçu des bibliothèques associées.
 
-Pour plus d’informations sur l’analyse des modèles et l’accès des composants front-end, consultez le [Plan directeur d’applications monopages (SPA)](/help/sites-developing/spa-blueprint.md).
+Voir [Blueprint SPA](/help/sites-developing/spa-blueprint.md) pour plus d’informations sur l’analyse des modèles et l’accès des composants front-end au modèle.
 
 Consultez également le package npm : [https://www.npmjs.com/package/@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping).
 
@@ -38,7 +38,7 @@ Les applications monopages qui utilisent le SDK JavaScript d’application monop
 1. Les composants front-end s’enregistrent eux-mêmes dans le [magasin de mappage de composants](/help/sites-developing/spa-dynamic-model-to-component-mapping.md#componentmapping-module).
 1. Ensuite, le [conteneur](/help/sites-developing/spa-blueprint.md#container), qui a reçu un modèle du [fournisseur de modèles](/help/sites-developing/spa-blueprint.md#the-model-provider), effectue une itération sur son contenu de modèle (`:items`).
 
-1. S’il y a une page, ses enfants (`:children`) obtiennent d’abord une classe de composant du [mappage des composants](/help/sites-developing/spa-blueprint.md#componentmapping), puis l’instancient.
+1. S’il existe une page, ses enfants ( `:children`) Commencez par obtenir une classe de composant à partir de la propriété [Mappage des composants](/help/sites-developing/spa-blueprint.md#componentmapping) puis instanciez-le.
 
 ## Initialisation de l’application {#app-initialization}
 
