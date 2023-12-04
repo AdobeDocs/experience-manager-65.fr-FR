@@ -4,10 +4,10 @@ description: Installez les services de documents d’AEM Forms pour créer, ass
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 03ed3606e89d87bf2f95b56a1eeb6b7dc4bec13a
 workflow-type: tm+mt
-source-wordcount: '5512'
-ht-degree: 79%
+source-wordcount: '5521'
+ht-degree: 75%
 
 ---
 
@@ -30,7 +30,7 @@ AEM Forms fournit un ensemble de services OSGi pour exécuter différentes opé
 
 * **Service Output :** permet de créer des documents dans différents formats, y compris PDF et les formats d’imprimantes laser et d’imprimantes d’étiquettes. Les formats d’imprimantes laser sont les suivants : PostScript et PCL (Printer Control Language). Pour plus d’informations, consultez la section [Service Output](/help/forms/using/output-service.md).
 
-* **Service PDF Generator :** fournit des API pour convertir des formats de fichier natifs en PDF. Il convertit également des fichiers PDF en d’autres formats et optimise la taille des documents PDF. Pour plus d’informations, consultez la section [Service PDF Generator](aem-document-services-programmatically.md#pdfgeneratorservice).
+* **Service PDF Generator :** Le service PDF Generator fournit des API pour convertir des formats de fichiers natifs en PDF. Il convertit également des fichiers PDF en d’autres formats et optimise la taille des documents PDF. Pour plus d’informations, consultez la section [Service PDF Generator](aem-document-services-programmatically.md#pdfgeneratorservice).
 
 * **Service Reader Extension :** permet à votre organisation de partager facilement des documents PDF interactifs en ajoutant des droits dʼutilisation aux fonctionnalités dʼAdobe Reader. Ce service active des fonctionnalités indisponibles à l’ouverture d’un document PDF dans Adobe Reader, comme l’ajout de commentaires dans un document, le remplissage de formulaires et l’enregistrement du document. Pour plus d’informations, consultez la section [Service Reader Extensions](/help/forms/using/overview-aem-document-services.md#reader-extension-service).
 
@@ -42,7 +42,7 @@ AEM Forms fournit un ensemble de services OSGi pour exécuter différentes opé
 
   Le service de signature accède aux certificats et aux informations d’identification stockées dans le trust store. Pour plus d’informations, consultez la section [Service Signature](/help/forms/using/aem-document-services-programmatically.md).
 
-AEM Forms est une plateforme d’entreprise performante et les services de documents ne sont quʼune des fonctionnalités proposées. Pour obtenir la liste complète des fonctionnalités, voir [Présentation d’AEM Forms](/help/forms/using/introduction-aem-forms.md).
+AEM Forms est une plate-forme d’entreprise puissante et Document Services n’est qu’une des fonctionnalités d’AEM Forms. Pour obtenir la liste complète des fonctionnalités, voir [Présentation d’AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
 ## Topologie de déploiement {#deployment-topology}
 
@@ -406,7 +406,7 @@ Le module complémentaire AEM Forms est une application déployée sur AEM. Le p
 
    >[!NOTE]
    >
-   Vos droits d’utilisation relatifs aux polices fournies par des sociétés autres qu’Adobe sont régis par les contrats de licence accompagnant ces polices. Ils ne sont pas couverts par la licence d’utilisation du logiciel Adobe qui vous est concédée. Adobe vous recommande de vous assurer que vous agissez en conformité avec tous les contrats de licence non-Adobe applicables avant d’utiliser des polices non-Adobe avec des logiciels Adobe, notamment en ce qui concerne l’utilisation de polices dans des environnements de serveurs.
+   Vos droits d’utilisation relatifs aux polices fournies par des sociétés autres qu’Adobe sont régis par les contrats de licence accompagnant ces polices. Ils ne sont pas couverts par la licence d’utilisation du logiciel Adobe qui vous est concédée. Adobe vous recommande de vérifier et de vous assurer que vous êtes conforme à tous les contrats de licence non-Adobe applicables avant d’utiliser des polices non-Adobe avec un logiciel Adobe, en particulier concernant l’utilisation de polices dans un environnement serveur.
 Lorsque vous installez de nouvelles polices dans le dossier de polices, redémarrez l’instance AEM Forms.
    >
 
@@ -503,7 +503,7 @@ Avant de configurer des certificats, assurez -vous que vous disposez des éléme
 
 * Mot de passe de la clé privée fourni avec le certificat.
 
-* Alias de la clé privée. Vous pouvez exécuter la commande Java keytool pour afficher l’alias de la clé privée :
+* Alias de clé privée. Vous pouvez exécuter la commande Java keytool pour afficher l’alias de la clé privée :
   `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
 * Mot de passe du fichier de stockage de clés. Si vous utilisez le certificat Reader Extensions d’Adobe, le mot de passe du fichier KeyStore est toujours identique au mot de passe de la clé privée.
@@ -579,7 +579,7 @@ Le service Assembler dépend du service Reader Extensions, du service Signature,
 
 L’[outil System Readiness](#srt-configuration) vérifie si l’ordinateur est correctement configuré pour exécuter les conversions de PDF Generator. L’outil génère un rapport à l’emplacement spécifié. Pour exécuter l’outil :
 
-1. Ouvrez une invite de commandes et accédez au dossier `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools`.
+1. Ouvrez l’invite de commande. Accédez au dossier `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools`.
 
 1. Exécutez la commande suivante à partir de l’invite de commande :
 
@@ -648,7 +648,7 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 **Microsoft® Windows**
 
-* Assurez-vous que la [version 32 bits prise en charge ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft Office est installée et que les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
+* Assurez-vous que la variable 32 bits [version prise en charge](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft Office est installé et les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
 * Assurez-vous qu’un utilisateur ou qu’une utilisatrice de PDF Generator est ajouté(e) à l’interface utilisateur de configuration du PDF.
 * Assurez-vous que l’utilisateur ou l’utilisatrice de PDF Generator est membre du groupe d’administrateurs et que le privilège [Remplacer un jeton de niveau processus](#grant-the-replace-a-process-level-token-privilege) est défini pour l’utilisateur ou l’utilisatrice.
 * Assurez-vous que l’utilisateur ou l’utilisatrice est configuré(e) dans l’interface utilisateur de PDF Generator et qu’il ou elle effectue les actions suivantes :
@@ -668,6 +668,10 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 * En cas de problèmes lors de l’installation d’OpenOffice, assurez-vous que les [bibliothèques 32 bits](#extrarequirements) requises pour l’installation d’OpenOffice sont disponibles.
 
 +++
+
++++Microsoft Office 2019 ne fonctionne pas sur Microsoft Windows Server 2019
+
+* Vérifiez que vous n’avez aucune connexion distante active avec AEM serveur.
 
 Problèmes de conversion HTML vers PDF
 
@@ -788,8 +792,23 @@ Lorsque l’utilisateur ou l’utilisatrice tente de convertir des fichiers Word
 *Message d’erreur du convertisseur principal :
 ALC-PDG-015-003-Le système ne peut pas ouvrir le fichier d’entrée. Envoyez à nouveau votre fichier ou contactez votre administrateur système.*
 
-Pour résoudre le problème, voir [Impossible de convertir un fichier Word ou Excel en PDF sous Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+Pour résoudre les problèmes, voir [Impossible de convertir un fichier Word ou Excel en PDF sous Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
 
++++ Impossible de convertir les fichiers Excel en PDF sous Windows Server 2019
+
+Lorsque vous convertissez Microsoft Excel 2019 en PDF sous Microsoft Windows Server 2019, vous devez vous assurer que les conditions suivantes sont remplies :
+
+* Lors de l’utilisation du service PDF Generator, votre ordinateur Windows ne doit pas avoir de connexion distante active au serveur AEM (session Windows RDP).
+* L’imprimante par défaut doit être définie sur Adobe PDF.
+
+>[!NOTE]
+* Pour Apple macOS et Ubuntu OS, il n’est pas nécessaire de configurer les paramètres ci-dessus.
+
++++ Impossible de convertir les fichiers XPS en PDF
+
+Pour résoudre le problème, [création d’une clé de registre spécifique à une fonctionnalité sous Windows](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
+
++++
 
 ## Étapes suivantes {#next-steps}
 
