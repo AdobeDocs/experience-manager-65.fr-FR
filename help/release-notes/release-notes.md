@@ -4,9 +4,9 @@ description: Consultez les informations sur la mise à jour, y compris les nouve
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
 source-git-commit: f8f82ad5805095f331432471b614225f761e645c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3530'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 97%
 Voici quelques-unes des fonctionnalités et améliorations clés de cette version :
 
 * Activation de la personne Éditeur de page/Composant d’image Sites pour référencer des ressources à partir du service cloud Assets à distance. (SITES-13448, SITES-13433)
-* AEM prend désormais en charge le tri côté serveur pour accélérer la navigation du projet en mode Liste. Les noeuds de projet sont triés en fonction de la colonne sélectionnée par l’utilisateur avant d’apparaître dans l’interface.
+* AEM prend désormais en charge le tri côté serveur pour accélérer la navigation du projet en vue Liste. Les nœuds de projet sont triés en fonction de la colonne sélectionnée par l’utilisateur ou l’utilisatrice avant d’apparaître dans l’interface.
 
 **Fonctionnalité obsolète**
 
@@ -447,7 +447,7 @@ Pour résoudre le problème, recherchez le fichier `<AEM_Forms_Installation_dir>
 
 #### Installer le fragment de servlet (Pack de services AEM 6.5.14.0 ou version antérieure)
 
-* Si vous effectuez une mise à niveau vers AEM Service Pack 6.5.15.0 ou version ultérieure et que votre instance AEM fonctionne sur Tomcat 8.5.88, il est obligatoire d’installer le fragment de servlet. *before* vous procédez à l&#39;installation du Service Pack 6.5.15.0 ou supérieur.
+* Si vous effectuez une mise à niveau vers le pack de services 6.5.15.0 ou une version ultérieure et que votre instance AEM fonctionne sur Tomcat 8.5.88, il est obligatoire d’installer le fragment de servlet *avant* de procéder à l’installation du pack de services 6.5.15.0 ou de toute version ultérieure.
 * Il est obligatoire d’installer le fragment de servlet pour tous les serveurs d’applications, à l’exception de ceux qui s’exécutent sur JBoss® EAP 7.4.0.
 
 **Pour installer le fragment de servlet :**
@@ -475,7 +475,8 @@ Pour résoudre le problème, téléchargez et installez le [correctif pour la ve
 
 #### Communications interactives
 
-* Après la mise à niveau vers AEM Pack de services 18, il n’est pas possible d’ouvrir la communication interactive avec des images intégrées volumineuses en mode d’édition. (FORMS-10578) Pour résoudre le problème, installez le [correctif pour la version 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+* Après la mise à niveau vers AEM Pack de services 18, il n’est pas possible d’ouvrir la communication interactive avec des images intégrées volumineuses en mode d’édition. (FORMS-10578)
+Pour résoudre le problème, installez le [correctif pour la version 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
 ## Bundles OSGi et packages de contenu inclus{#osgi-bundles-and-content-packages-included}
 
