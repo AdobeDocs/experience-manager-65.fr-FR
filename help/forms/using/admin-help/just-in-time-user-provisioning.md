@@ -1,19 +1,15 @@
 ---
 title: Approvisionnement juste à temps d’utilisateurs
-seo-title: Just-in-time user provisioning
 description: Utilisez la mise en service juste à temps pour ajouter des utilisateurs à User Management après une authentification réussie et affecter dynamiquement les rôles et groupes appropriés au nouvel utilisateur.
-seo-description: Use just-in-time provisioning to add users to User Management after successfull authentication and dynamically assign relevant roles and groups to the new user.
-uuid: a5ad4698-70bb-487b-a069-7133e2f420c2
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
 exl-id: 7bde0a09-192a-44a8-83d0-c18e335e9afa
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 33%
+source-wordcount: '575'
+ht-degree: 32%
 
 ---
 
@@ -90,7 +86,7 @@ public Boolean assign(User user);
 
 1. Écrivez un DSC qui met les API en œuvre dans la section « API pour l’approvisionnement juste à temps ».
 1. Déployez le DSC sur le serveur Forms.
-1. Créer un domaine d’approvisionnement juste à temps:
+1. Créez un domaine juste à temps :
 
    * Dans Administration Console, cliquez sur Paramètres > User Management > Gestion des domaines > Nouveau domaine d’entreprise.
    * Configurez le domaine et sélectionnez Activer l’approvisionnement juste à temps. <!--Fix broken link (See Setting up and managing domains).-->

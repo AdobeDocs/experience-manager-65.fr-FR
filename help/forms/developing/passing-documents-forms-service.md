@@ -1,20 +1,16 @@
 ---
 title: Transmission de documents au service Forms
-seo-title: Passing Documents to the FormsService
 description: Transmettez au service Forms un objet com.adobe.idp.Document contenant la conception du formulaire. Le service Forms effectue le rendu de la conception de formulaire dans l’objet com.adobe.idp.Document .
-seo-description: Pass a com.adobe.idp.Document object that contains the form design to the Forms service. The Forms service renders the form design in the com.adobe.idp.Document object.
-uuid: 841e97f3-ebb8-4340-81a9-b6db11f0ec82
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: e23de3c3-f8a0-459f-801e-a0942fb1c6aa
 role: Developer
 exl-id: 29c7ebda-407a-464b-a9db-054163f5b737
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1677'
 ht-degree: 98%
 
 ---
@@ -103,8 +99,8 @@ Transmettez un document obtenu à partir de Content Services (obsolète) à l’
 
    Appelez la méthode `renderPDFForm2` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-   * Un objet `com.adobe.idp.Document` contenant la conception du formulaire récupéré dans Content Services (obsolète).
-   * Un objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un objet `com.adobe.idp.Document`.
+   * Un objet `com.adobe.idp.Document` contenant la conception du formulaire récupéré à partir de Content Services (obsolète).
+   * Un objet `com.adobe.idp.Document` qui contient les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un objet `com.adobe.idp.Document`.
    * Un objet `PDFFormRenderSpec` qui stocke les options d’exécution. Cette valeur est un paramètre facultatif. Vous pouvez indiquer `null` si vous ne souhaitez pas spécifier d’options d’exécution.
    * Un objet `URLSpec` qui contient des valeurs URI. Cette valeur est un paramètre facultatif. Vous pouvez spécifier `null`.
    * Un objet `java.util.HashMap` qui stocke les pièces jointes. Cette valeur est un paramètre facultatif. Vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
@@ -179,8 +175,8 @@ Transmettez un document obtenu à partir de Content Services (obsolète) en util
 
    Appelez la méthode `renderPDFForm2` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-   * Un objet `BLOB` contenant la conception du formulaire récupéré dans Content Services (obsolète).
-   * Un objet `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un objet `BLOB`.
+   * Un objet `BLOB` contenant la conception du formulaire récupéré à partir de Content Services (obsolète).
+   * Un objet `BLOB` qui contient les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un objet `BLOB`.
    * Un objet `PDFFormRenderSpec` qui stocke les options d’exécution. Cette valeur est un paramètre facultatif. Vous pouvez indiquer `null` si vous ne souhaitez pas spécifier d’options d’exécution.
    * Un objet `URLSpec` qui contient des valeurs URI. Cette valeur est un paramètre facultatif. Vous pouvez spécifier `null`.
    * Un objet `Map` qui stocke les pièces jointes. Cette valeur est un paramètre facultatif. Vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.

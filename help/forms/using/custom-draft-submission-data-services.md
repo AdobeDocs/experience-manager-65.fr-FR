@@ -1,13 +1,11 @@
 ---
 title: Personnaliser les services de données de brouillon et d’envoi
 description: AEM Forms, par défaut, stocke les brouillons et les formulaires adaptatifs envoyés, dans un nœud par défaut de l’instance de publication. Cependant, vous pouvez configurer les services de données de brouillon et d’envoi d’AEM Forms pour personnaliser le stockage des brouillons et des formulaires adaptatifs envoyés.
-uuid: c3ec1708-3b11-4142-93f0-1cffb6643f34
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 602fd6a9-9a65-411c-8475-a4082a3fdee0
 exl-id: ed10ef8c-7b9c-43cf-bea8-7cf9742a8cac
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 100%

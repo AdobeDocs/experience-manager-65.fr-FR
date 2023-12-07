@@ -1,18 +1,14 @@
 ---
 title: Réduire les problèmes de sérialisation dans AEM
-seo-title: Mitigating serialization issues in AEM
 description: Découvrez comment atténuer les problèmes de sérialisation dans AEM.
-seo-description: Learn how to mitigate serialization issues in AEM.
-uuid: c3989dc6-c728-40fd-bc47-f8427ed71a49
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: f3781d9a-421a-446e-8b49-40744b9ef58e
 exl-id: 01e9ab67-15e2-4bc4-9b8f-0c84bcd56862
-source-git-commit: 614c4c88f3f09feb5a400ade9f45f634ac4fbcd5
-workflow-type: ht
-source-wordcount: '910'
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '904'
 ht-degree: 100%
 
 ---
@@ -76,9 +72,10 @@ La configuration de pare-feu est dynamique et peut être changée à tout moment
 1. recherchant **Configuration du pare-feu de désérialisation** et en cliquant dessus.
 
    >[!NOTE]
-   >Vous pouvez également accéder directement à la page de configuration en accédant à l’URL :
-   >* `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
-
+   >
+   Vous pouvez également accéder directement à la page de configuration en accédant à l’URL :
+   >
+   * `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 
 Cette configuration contient la liste autorisée, la liste bloquée et la journalisation de désérialisation.
 
@@ -109,7 +106,8 @@ Lorsque vous accédez à l’URL, une liste des contrôles de l’intégrité as
 Pour plus d’informations sur la résolution des problèmes avec l’agent, voir [Gestion des erreurs avec le chargement dynamique de l’agent](#handling-errors-with-dynamic-agent-loading) ci-dessous.
 
 >[!NOTE]
->Si vous ajoutez `org.apache.commons.collections.functors` à la liste autorisée, le contrôle de l’intégrité échoue toujours.
+>
+Si vous ajoutez `org.apache.commons.collections.functors` à la liste autorisée, le contrôle de l’intégrité échoue toujours.
 
 ## Gérer les erreurs avec le chargement dynamique de l’agent {#handling-errors-with-dynamic-agent-loading}
 
@@ -124,10 +122,12 @@ Pour charger l’agent manuellement, procédez comme suit :
    ```
 
    >[!NOTE]
-   >Requiert que vous utilisiez également l’option -nofork CQ/AEM, ainsi que les paramètres de mémoire JVM appropriés, car l’agent n’est pas activé sur une JVM dupliquée.
+   >
+   Requiert que vous utilisiez également l’option -nofork CQ/AEM, ainsi que les paramètres de mémoire JVM appropriés, car l’agent n’est pas activé sur une JVM dupliquée.
 
    >[!NOTE]
-   >La distribution Adobe du fichier JAR de l’agent NotSoSerial réside dans le dossier `crx-quickstart/opt/notsoserial/` pour votre installation AEM.
+   >
+   La distribution Adobe du fichier JAR de l’agent NotSoSerial réside dans le dossier `crx-quickstart/opt/notsoserial/` pour votre installation AEM.
 
 1. Arrêtez et redémarrez la JVM.
 

@@ -1,19 +1,15 @@
 ---
 title: Stratégies de sauvegarde pour les dossiers de contrôle
-seo-title: Backup strategies for watched folders
 description: Ce document décrit l’impact des dossiers de contrôle sur différents scénarios de sauvegarde et de récupération, les limites et les résultats de ces scénarios, ainsi que la manière de minimiser les pertes de données.
-seo-description: This document describes how watched folders are affected by different backup and recovery scenarios, the limitations and outcomes of these scenarios, and how to minimize data loss.
-uuid: c61997b8-6c36-4bd9-90e5-411841a6c176
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 exl-id: 0d36160a-29fa-4cc4-a0ff-fc681d3e040e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 21%
+source-wordcount: '1080'
+ht-degree: 20%
 
 ---
 
@@ -62,9 +58,9 @@ Le tableau suivant décrit la manipulation de cinq fichiers d’exemple (fichier
    <td><p>fichier1, fichier2, fichier3, fichier4</p></td>
    <td><p>fichier2, fichier3, fichier4</p></td>
    <td><p>fichier3, fichier4</p></td>
-   <td><p>file4</p></td>
+   <td><p>fichier4</p></td>
    <td><p>empty</p></td>
-   <td><p>file5</p></td>
+   <td><p>fichier5</p></td>
    <td><p>empty</p></td>
   </tr>
   <tr>
@@ -72,10 +68,10 @@ Le tableau suivant décrit la manipulation de cinq fichiers d’exemple (fichier
    <td><p>empty</p></td>
    <td><p>file1</p></td>
    <td><p>file2</p></td>
-   <td><p>file3</p></td>
-   <td><p>file4</p></td>
+   <td><p>fichier3</p></td>
+   <td><p>fichier4</p></td>
    <td><p>empty</p></td>
-   <td><p>file5</p></td>
+   <td><p>fichier5</p></td>
   </tr>
   <tr>
    <td><p>Sortie</p></td>

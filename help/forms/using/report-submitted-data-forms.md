@@ -1,19 +1,15 @@
 ---
 title: API pour travailler avec des formulaires envoyés sur le portail de formulaires
-seo-title: APIs to work with submitted forms on forms portal
-description: AEM Forms fournit des API que vous pouvez utiliser pour interroger et agir sur des données de formulaire envoyées sur le portail de formulaires.
-seo-description: AEM Forms provides APIs that you can use to query and take actions on submitted forms data in forms portal.
-uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
+description: AEM Forms fournit des API que vous pouvez utiliser pour interroger et agir sur les données de formulaires envoyées dans Forms Portal.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
-discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 feature: Forms Portal
 exl-id: a685889e-5d24-471c-926d-dbb096792bc8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '541'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '538'
+ht-degree: 36%
 
 ---
 
@@ -35,7 +31,7 @@ Cette API ne nécessite pas de paramètres supplémentaires.
 
 ### Réponse {#response}
 
-L’objet de réponse contient un tableau JSON qui inclut les noms de formulaires et leur chemin d’accès au référentiel. La structure de la réponse est comme suit :
+L’objet de réponse contient un tableau JSON qui inclut les noms des formulaires et leur chemin d’accès au référentiel. La structure de la réponse est la suivante :
 
 ```json
 [
@@ -61,11 +57,11 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 
 ## GET /content/forms/portal/submission.review.json?func=getAllSubmissions {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
 
-Renvoie les détails de tous les formulaires envoyés. Cependant, vous pouvez utiliser les paramètres d’URL pour limiter les résultats.
+Renvoie les détails de tous les formulaires envoyés. Vous pouvez toutefois utiliser des paramètres d’URL pour limiter les résultats.
 
 ### paramètres d’URL {#url-parameters-1}
 
-Spécifiez les paramètres suivants dans l’URL de requête :
+Spécifiez les paramètres suivants dans l’URL de requête :
 
 <table>
  <tbody>
@@ -75,23 +71,23 @@ Spécifiez les paramètres suivants dans l’URL de requête :
   </tr>
   <tr>
    <td><code>formPath</code></td>
-   <td>Spécifie le chemin d’accès au référentiel CRX dans lequel se trouve le formulaire. Si vous ne spécifiez pas le chemin d’accès au formulaire, une réponse vide est envoyée.<br /> </td>
+   <td>Spécifie le chemin d’accès au référentiel CRX où réside le formulaire. Si vous ne spécifiez pas le chemin d’accès au formulaire, une réponse vide est renvoyée.<br /> </td>
   </tr>
   <tr>
-   <td><code>offset</code> (facultatif)</td>
-   <td>Spécifie le point de départ dans l’index de l’ensemble de résultats. La valeur par défaut est <strong>0</strong>.</td>
+   <td><code>offset</code><br /> (facultatif)</td>
+   <td>Indique le point de départ dans l’index du jeu de résultats. La valeur par défaut est <strong>0</strong>.</td>
   </tr>
   <tr>
-   <td><code>limit</code> (facultatif)</td>
+   <td><code>limit</code><br /> (facultatif)</td>
    <td>Limite le nombre de résultats. La valeur par défaut est <strong>30</strong>.</td>
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (facultatif)</td>
-   <td>Spécifie la propriété pour trier les résultats. La valeur par défaut est <strong>jcr:lastModified</strong>, elle trie les résultats selon l’heure de la dernière modification.</td>
+   <td>Spécifie la propriété pour trier les résultats. La valeur par défaut est <strong>jcr:lastModified</strong>, qui trie les résultats en fonction de l’heure de la dernière modification.</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (facultatif)</td>
-   <td>Spécifie l’ordre pour trier les résultats. La valeur par défaut est <strong>desc</strong>, elle trie les résultats dans l’ordre décroissant. Vous pouvez spécifier <code>asc</code> pour trier les résultats dans l’ordre croissant.</td>
+   <td>Indique l’ordre de tri des résultats. La valeur par défaut est <strong>desc</strong>, qui trie les résultats dans l’ordre décroissant. Vous pouvez spécifier <code>asc</code> pour trier les résultats dans l’ordre croissant.</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (facultatif)</td>
@@ -99,14 +95,14 @@ Spécifiez les paramètres suivants dans l’URL de requête :
   </tr>
   <tr>
    <td><code>search</code> <br /> (facultatif)</td>
-   <td>Recherche la valeur spécifiée dans les propriétés de formulaire, puis renvoie les formulaires avec les valeurs correspondantes. La valeur par défaut est <strong>""</strong>.</td>
+   <td>Recherche la valeur spécifiée dans les propriétés du formulaire et renvoie les formulaires avec les valeurs correspondantes. La valeur par défaut est <strong>""</strong>.</td>
   </tr>
  </tbody>
 </table>
 
 ### Réponse {#response-1}
 
-L’objet de réponse contient un tableau JSON qui comprend les informations des formulaires spécifiés. La structure de la réponse est comme suit :
+L’objet de réponse contient un tableau JSON qui inclut les détails des formulaires spécifiés. La structure de la réponse est la suivante :
 
 ```json
 {
@@ -135,16 +131,16 @@ Ajoute un commentaire à l’instance d’envoi spécifiée.
 
 ### paramètres d’URL {#url-parameters-2}
 
-Spécifiez les paramètres suivants dans l’URL de requête :
+Spécifiez les paramètres suivants dans l’URL de requête :
 
 | Paramètre | Description |
 |---|---|
 | `submitID` | Définit l’ID des métadonnées associé à une instance d’envoi. |
-| `Comment` | Spécifie le texte pour que le commentaire s’ajoute à l’instance d’envoi spécifiée. |
+| `Comment` | Spécifie le texte que le commentaire doit ajouter à l’instance d’envoi spécifiée. |
 
 ### Réponse {#response-2}
 
-Renvoie un ID de commentaire sur la publication réussie d’un commentaire.
+Renvoie un identifiant de commentaire lors de la publication réussie d’un commentaire.
 
 ### Exemple {#example-2}
 
@@ -166,15 +162,15 @@ Renvoie tous les commentaires publiés sur l’instance d’envoi spécifiée.
 
 ### paramètres d’URL {#url-parameters-3}
 
-Spécifiez le paramètre suivant dans l’URL de requête :
+Spécifiez le paramètre suivant dans l’URL de requête :
 
 | Paramètre | Description |
 |---|---|
-| `submitID` | Définit l’ID des métadonnées d’une instance d’envoi. |
+| `submitID` | Indique l’ID de métadonnées d’une instance d’envoi. |
 
 ### Réponse {#response-3}
 
-L’objet de réponse contient un tableau JSON qui comprend tous les commentaires associés à l’ID d’envoi spécifié. La structure de la réponse est comme suit :
+L’objet de réponse contient un tableau JSON qui inclut tous les commentaires associés à l’ID d’envoi spécifié. La structure de la réponse est la suivante :
 
 ```json
 [{
@@ -200,11 +196,11 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 
 ## POST /content/forms/portal/submission.review.json?func=updateSubmission {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
 
-Met à jour la valeur de la propriété spécifiée de l’instance spécifiée de formulaire envoyé.
+Met à jour la valeur de la propriété spécifiée de l’instance de formulaire envoyée spécifiée.
 
 ### paramètres d’URL {#url-parameters-4}
 
-Spécifiez les paramètres suivants dans l’URL de requête :
+Spécifiez les paramètres suivants dans l’URL de requête :
 
 | Paramètre | Description |
 |---|---|
@@ -214,7 +210,7 @@ Spécifiez les paramètres suivants dans l’URL de requête :
 
 ### Réponse {#response-4}
 
-Renvoie un objet JSON avec des informations sur la mise à jour publiée.
+Renvoie un objet JSON contenant des informations sur la mise à jour publiée.
 
 ### Exemple {#example-4}
 

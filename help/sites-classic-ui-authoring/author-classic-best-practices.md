@@ -1,16 +1,12 @@
 ---
 title: Bonnes pratiques
-seo-title: Best Practices
-description: Les meilleures pratiques en matière de création décrivent comment utiliser AEM de la manière la plus efficace possible. Cette liste croissante de rubriques inclut une variété d’aspects dans AEM.
-seo-description: Authoring best practices describe how to use AEM in the most efficient and most effective way possible. This growing list of topics includes a variety of areas in AEM.
-uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
+description: Les bonnes pratiques de création décrivent comment utiliser AEM de la manière la plus efficace possible. Cette liste croissante de sujets englobe un large éventail de domaines dans AEM.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
-source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 100%
 
@@ -19,9 +15,9 @@ ht-degree: 100%
 
 # Bonnes pratiques{#best-practices}
 
-Les meilleures pratiques en matière de création décrivent comment utiliser AEM de la manière la plus efficace possible. Cette liste croissante de rubriques inclut une variété d’aspects dans AEM.
+Les bonnes pratiques de création décrivent comment utiliser AEM de la manière la plus efficace possible. Cette liste croissante de sujets englobe un large éventail de domaines dans AEM.
 
-Une documentation sur les meilleures pratiques est disponible pour les aspects suivants :
+La documentation relative aux bonnes pratiques est disponible pour les domaines suivants :
 
 * [Assets](#assets)
 * [Sites](#sites)
@@ -33,7 +29,7 @@ Pour connaître les bonnes pratiques en matière d’administration, de déploie
 * [Bonnes pratiques de développement](/help/sites-developing/best-practices.md)
 * [Bonnes pratiques de déploiement](/help/sites-deploying/best-practices.md)
 
-Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont reliés.
+Les documents spécifiques sont décrits et associés dans les tableaux qui suivent.
 
 ## Assets {#assets}
 
@@ -44,15 +40,15 @@ Les bonnes pratiques concernant Assets, y compris les fonctionnalités Dynamic 
   <tr>
    <td>Formats de fichier</td>
    <td><a href="/help/assets/assets-file-format-best-practices.md">Bonnes pratiques concernant les formats de fichier de ressource</a></td>
-   <td>Décrit les bonnes pratiques de prise en charge des fichiers dans AEM Assets. </td>
+   <td>Décrit les bonnes pratiques de prise en charge des fichiers dans AEM Assets.</td>
   </tr>
   <tr>
    <td>Codage vidéo</td>
    <td><a href="/help/assets/video.md#best-practices-for-encoding-videos">Bonnes pratiques en matière de codage</a></td>
-   <td>Décrit les meilleures pratiques concernant le codage de fichiers vidéo source.</td>
+   <td>Décrit les bonnes pratiques relatives au codage de fichiers vidéo sources.</td>
   </tr>
   <tr>
-   <td>Imagerie dynamique</td>
+   <td>Dynamic Imaging</td>
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Bonnes pratiques relatives à Dynamic Imaging</a></td>
    <td><p>Décrit comment affiner une image pour obtenir les meilleurs résultats et la meilleure manière d’optimiser la qualité de vos images si vous utilisez la fonctionnalité de Dynamic Media ou si vous intégrez Dynamic Media Classic. </p> </td>
   </tr>
@@ -66,7 +62,7 @@ Les bonnes pratiques concernant Assets, y compris les fonctionnalités Dynamic 
 
 ## Sites {#sites}
 
-Les meilleures pratiques en termes de création et de gestion du contenu de votre site web sont les suivantes :
+La gestion et la création du contenu de votre site web comportent les bonnes pratiques suivantes :
 
 Création : [Environnement et outils de création](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Fournit un aperçu sur la création de pages.
 

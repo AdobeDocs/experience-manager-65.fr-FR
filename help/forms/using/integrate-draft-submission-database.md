@@ -1,18 +1,14 @@
 ---
 title: Exemple d’intégration d’un composant brouillons et envois à une base de données
-seo-title: Sample for integrating drafts & submissions component with database
-description: Référencez l’implémentation des services de données et de métadonnées personnalisés pour intégrer les composants brouillons et envois à une base de données.
-seo-description: Reference implementation of customized data and metadata services to integrate drafts and submissions component with a database.
-uuid: ccdb900e-2c2e-4ed3-8a88-5c97aa0092a1
+description: Référencez l’implémentation des services de données et de métadonnées personnalisés pour intégrer le composant brouillons et envois à une base de données.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: ht
-source-wordcount: '1467'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '1472'
+ht-degree: 50%
 
 ---
 
@@ -20,16 +16,15 @@ ht-degree: 100%
 
 ## Aperçu de l’exemple {#sample-overview}
 
-Le composant brouillons et envois du portail AEM Forms permet aux utilisateurs d’enregistrer leurs formulaires en tant que brouillons et de les envoyer ultérieurement via n’importe quel périphérique. En outre, les utilisateurs peuvent visualiser leurs formulaires envoyés sur le portail. Pour activer cette fonctionnalité, AEM Forms fournit des services de données et de métadonnées pour stocker les données spécifiées par un utilisateur dans le formulaire et les métadonnées de formulaire associées aux brouillons et aux formulaires envoyés. Ces données sont stockées dans le référentiel CRX, par défaut. Toutefois, à mesure que les utilisateurs interagissent avec les formulaires via l’instance de publication AEM, qui se trouve généralement à l’extérieur du pare-feu d’entreprise, les organisations peuvent vouloir personnaliser le stockage de données pour qu’il soit plus sécurisé et fiable. 
+Le composant brouillons et envois du portail AEM Forms permet aux utilisateurs d’enregistrer leurs formulaires en tant que brouillons et de les envoyer ultérieurement à partir de n’importe quel périphérique. En outre, les utilisateurs peuvent afficher leurs formulaires envoyés sur le portail. Pour activer cette fonctionnalité, AEM Forms fournit des services de données et de métadonnées pour stocker les données renseignées par un utilisateur dans le formulaire et les métadonnées de formulaire associées aux brouillons et aux formulaires envoyés. Ces données sont stockées dans le référentiel CRX, par défaut. Cependant, lorsque les utilisateurs interagissent avec les formulaires via AEM instance de publication, qui se trouve généralement en dehors du pare-feu de l’entreprise, les entreprises peuvent vouloir personnaliser le stockage des données pour qu’il soit plus sécurisé et fiable.
 
-L’exemple présenté dans ce document est une implémentation de référence des services de données et de métadonnées personnalisés pour intégrer le composant brouillons et envois à une base de données. La base de données utilisée dans l’exemple d’implémentation est **MySQL 5.6.24**. Cependant, vous pouvez intégrer le composant brouillons et envois à n’importe quelle base de données de votre choix. 
+L’exemple présenté dans ce document est une implémentation de référence des services de données et de métadonnées personnalisés pour intégrer le composant brouillons et envois à une base de données. La base de données utilisée dans l’exemple d’implémentation est : **MySQL 5.6.24**. Cependant, vous pouvez intégrer le composant brouillons et envois à n’importe quelle base de données de votre choix.
 
 >[!NOTE]
 >
->* Les exemples et les configurations décrits dans ce document correspondent à MySQL 5.6.24 et vous devez les remplacer de manière appropriée selon votre système de base de données. 
->* Vérifiez que vous avez installé la dernière version du package complémentaire AEM Forms. Pour obtenir la liste des packages disponibles, consultez l’article sur les [versions d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
+>* Les exemples et configurations décrits dans ce document sont conformes à MySQL 5.6.24 et vous devez les remplacer de manière appropriée pour votre système de base de données.
+>* Vérifiez que vous avez installé la dernière version du module complémentaire AEM Forms. Pour obtenir la liste des packages disponibles, voir la section [Versions d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) article.
 >* L’exemple de package fonctionne uniquement avec les actions d’envoi de formulaires adaptatifs.
-
 
 ## Installer et configurer l’exemple {#set-up-and-configure-the-sample}
 
@@ -37,15 +32,15 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 
 1. Téléchargez le package suivant **aem-fp-db-integration-sample-pkg-6.1.2.zip** vers votre système de fichiers.
 
-   Exemple de package pour l’intégration de base de données
+   Exemple de package pour l&#39;intégration à une base de données
 
 [Obtenir le fichier](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Accédez au gestionnaire de modules AEM à l’adresse https://[*host*]:[*port*]/crx/packmgr/.
+1. Accédez au gestionnaire de package AEM à l’adresse https://[*host*]:[*port*]/crx/packmgr/.
 1. Cliquez sur **[!UICONTROL Upload Package]** (Télécharger le package).
 
 1. Parcourez l’arborescence pour sélectionner le package **aem-fp-db-integration-sample-pkg-6.1.2.zip** et cliquez sur **[!UICONTROL OK]**.
-1. Cliquez sur **[!UICONTROL Installer]** en regard du package pour installer le package. 
+1. Cliquez sur **[!UICONTROL Installer]** en regard du module pour installer le module.
 1. Accédez à la page de **[!UICONTROL configuration de la console web AEM]**
 à l’adresse https://[*host*]:[*port*]/system/console/configMgr.
 1. Cliquez pour ouvrir **[!UICONTROL Forms Portal Draft and Submission Configuration]** (Configuration des brouillons et des envois du portail Forms) en mode d’édition.
@@ -54,12 +49,12 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 
    | **Propriété** | **Description** | **Valeur** |
    |---|---|---|
-   | Service de données de brouillon du portail Forms  | Identifiant du service de données de brouillon | formsportal.sampledataservice |
-   | Service de métadonnées de brouillon du portail Forms  | Identifiant du service de métadonnées de brouillon | formsportal.samplemetadataservice |
-   | Service de données d’envoi du portail Forms | Identifiant du service de données d’envoi | formsportal.sampledataservice |
-   | Service de métadonnées d’envoi du portail Forms  | Identifiant du service de métadonnées d’envoi | formsportal.samplemetadataservice |
-   | Service de données de signature en attente du portail Forms | Identificateur du service de données de signature en attente | formsportal.sampledataservice |
-   | Service de métadonnées de signature en attente du portail Forms | Identificateur du service de métadonnées de signature en attente | formsportal.samplemetadataservice |
+   | Service de données de brouillon du portail Formulaires | Identifiant du service de données de brouillon | formsportal.sampledataservice |
+   | Service de métadonnées de brouillon du portail Formulaires | Identifiant du service de métadonnées de brouillon | formsportal.samplemetadataservice |
+   | Service de données d’envoi du portail Formulaires | Identifiant du service de données d’envoi | formsportal.sampledataservice |
+   | Service de métadonnées d’envoi du portail Formulaires | Identifiant du service de métadonnées d’envoi | formsportal.samplemetadataservice |
+   | Service de données de signature en attente du portail Formulaires | Identificateur du service de données de signature en attente | formsportal.sampledataservice |
+   | Service de métadonnées de signature en attente du portail Formulaires | Identificateur du service de métadonnées de signature en attente | formsportal.samplemetadataservice |
 
    >[!NOTE]
    >
@@ -74,13 +69,14 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 
    Vous pouvez modifier les noms des tableaux de données et de métadonnées.
 
-   Pour spécifier un autre nom pour le tableau de métadonnées :
+   Pour donner un nom différent au tableau de métadonnées :
 
-   * Dans la configuration de la console Web, recherchez et cliquez sur Exemple d’implémentation de service de métadonnées du portail de formulaires. Vous pouvez modifier les valeurs de la source de données, et le nom du tableau des métadonnées/métadonnées supplémentaires.
+   * Dans la configuration de la console web, recherchez et cliquez sur Exemple de mise en oeuvre du service de métadonnées Forms Portal. Vous pouvez modifier les valeurs de la source de données, du nom de la table des métadonnées/métadonnées supplémentaires.
 
-   Pour spécifier un autre nom pour le tableau de données :
+   Pour attribuer un nom différent au tableau de données :
 
-   * Dans la configuration de la console Web, recherchez et cliquez sur Exemple d’implémentation de service de données du portail de formulaires. Vous pouvez modifier les valeurs de la source de données, et le nom du tableau de données.
+   * Dans la configuration de la console web, recherchez et cliquez sur Exemple de mise en oeuvre du service de données du portail Forms. Vous pouvez modifier les valeurs de la source de données et du nom du tableau de données.
+
    >[!NOTE]
    >
    >Si vous modifiez les noms du tableau, renseignez-les dans la configuration du portail Formulaires.
@@ -88,7 +84,7 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 1. Laissez les autres configurations inchangées et cliquez sur **[!UICONTROL Save]** (Enregistrer).
 
 1. La connexion à la base de données peut être effectuée via la source de données mise en pool de la connexion Apache Sling.
-1. Pour la connexion Apache Sling, recherchez le **[!UICONTROL pool de connexions Apache Sling Days Commons]** en mode d’édition dans la configuration de la console Web. Spécifiez les valeurs des propriétés comme décrit dans le tableau suivant :
+1. Pour la connexion Apache Sling, recherchez et cliquez pour ouvrir **[!UICONTROL Source de données en pool de la connexion Apache Sling]** en mode d’édition dans la configuration de la console web. Spécifiez les valeurs des propriétés comme décrit dans le tableau suivant :
 
 <table>
  <tbody>
@@ -98,10 +94,10 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
   </tr>
   <tr>
    <td>Nom de la source de données</td>
-   <td><p>Un nom de source de données pour filtrer les pilotes du pool de la source de données</p> <p><strong>Remarque : </strong><em>l’exemple d’implémentation utilise FormsPortal comme nom de la source de données.</em></p> </td>
+   <td><p>Un nom de source de données pour filtrer les pilotes du pool de la source de données</p> <p><strong>Remarque : </strong><em>L’exemple d’implémentation utilise FormsPortal comme nom de la source de données.</em></p> </td>
   </tr>
   <tr>
-   <td>Classe de pilote JDBC </td>
+   <td>Classe de pilote JDBC</td>
    <td>com.mysql.jdbc.Driver</td>
   </tr>
   <tr>
@@ -110,26 +106,26 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
   </tr>
   <tr>
    <td>Nom d’utilisateur</td>
-   <td>Un nom d’utilisateur pour s’authentifier et effectuer des opérations sur les tableaux de base de données </td>
+   <td>Nom d’utilisateur pour l’authentification et l’exécution d’actions sur les tables de base de données</td>
   </tr>
   <tr>
    <td>Mot de passe</td>
-   <td>Mot de passe associé au nom d’utilisateur </td>
+   <td>Mot de passe associé au nom d’utilisateur</td>
   </tr>
   <tr>
-   <td>isolation de transaction</td>
+   <td>Isolation des transactions</td>
    <td>READ_COMMITTED</td>
   </tr>
   <tr>
-   <td>Nombre maximum de connexions actives</td>
+   <td>Nombre max. de connexions actives</td>
    <td>1 000</td>
   </tr>
   <tr>
-   <td>Nombre maximum de connexions inactives</td>
+   <td>Nombre max. de connexions inactives</td>
    <td>100</td>
   </tr>
   <tr>
-   <td>Nombre minimum de connexions inactives</td>
+   <td>Nombre min. de connexions inactives</td>
    <td>10</td>
   </tr>
   <tr>
@@ -137,7 +133,7 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
    <td>10</td>
   </tr>
   <tr>
-   <td>Attente maximale</td>
+   <td>Attente max.</td>
    <td>100 000</td>
   </tr>
   <tr>
@@ -145,15 +141,15 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
    <td>Cochée</td>
   </tr>
   <tr>
-   <td>Tester lors de l’inactivité</td>
+   <td>Test en mode inactif</td>
    <td>Cochée</td>
   </tr>
   <tr>
    <td>Requête de validation</td>
-   <td>Les valeurs d’exemple sont SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</td>
+   <td>Exemples de valeurs : SELECT 1(mysql), select 1 from dual (oracle), SELECT 1 (MS Sql Server) (validationQuery).</td>
   </tr>
   <tr>
-   <td>Délai d’expiration de la requête de validation</td>
+   <td>Délai d’expiration des requêtes de validation</td>
    <td>10 000</td>
   </tr>
  </tbody>
@@ -161,19 +157,18 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 
 >[!NOTE]
 >
->* Le pilote JDBC pour MySQL n’est pas fourni avec l’exemple. Assurez-vous de vous l’être procuré et spécifiez les informations requises pour configurer le pool de connexions JDBC. 
->* Pointez vos instances d’auteur et de publication pour utiliser la même base de données. La valeur du champ URI de la connexion JDBC doit être identique pour toutes les instances d’auteur et de publication.
-
+>* Le pilote JDBC pour MySQL n’est pas fourni avec l’exemple. Assurez-vous que vous avez fourni les informations requises pour configurer le pool de connexions JDBC.
+>* Pointez vos instances de création et de publication pour utiliser la même base de données. La valeur du champ URI de connexion JDBC doit être identique pour toutes les instances d’auteur et de publication.
 
 1. Laissez les autres configurations inchangées et cliquez sur **[!UICONTROL Save]** (Enregistrer).
 
-1. Si vous disposez déjà d’un tableau dans le schéma de la base de données, passez à l’étape suivante.
+1. Si vous disposez déjà d’un tableau dans le schéma de base de données, passez à l’étape suivante.
 
-   Sinon, si vous ne possédez pas déjà un tableau dans le schéma de la base de données, exécutez les instructions SQL suivantes pour créer des tableaux distincts pour les données, les métadonnées et les métadonnées supplémentaires dans le schéma de base de données :
+   Dans le cas contraire, si vous ne disposez pas déjà d’un tableau dans le schéma de base de données, exécutez les instructions SQL suivantes pour créer des tableaux distincts pour les données, les métadonnées et les métadonnées supplémentaires dans le schéma de base de données :
 
    >[!NOTE]
    >
-   >Vous n’avez pas besoin de bases de données différentes pour les instances d’auteur et de publication. Utilisez la même base de données sur toutes les instances d’auteur et de publication.
+   >Vous n’avez pas besoin de bases de données différentes pour les instances de création et de publication. Utilisez la même base de données sur toutes les instances d’auteur et de publication.
 
    **Instruction SQL pour le tableau de données**
 
@@ -239,7 +234,7 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-   **Instruction SQL pour le tableau de commentaires**
+   **Instruction SQL pour la table des commentaires**
 
    ```sql
    CREATE TABLE `commenttable` (
@@ -250,7 +245,7 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
    `time` varchar(255) DEFAULT NULL);
    ```
 
-1. Si vous avez déjà des tableaux (données, métadonnées et métadonnées supplémentaires) dans le schéma de la base de données, exécutez les requêtes de modification du tableau suivant :
+1. Si vous disposez déjà des tables (données, métadonnées et métadonnées supplémentaires) dans le schéma de base de données, exécutez les modifications de requête de tableau suivantes :
 
    **Instruction SQL pour la modification du tableau de données**
 
@@ -299,7 +294,7 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
    ALTER TABLE `additionalmetadatatable` CHANGE `value` `value` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `key` `key` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
    ```
 
-L’exemple d’implémentation est désormais configuré, et vous pouvez l’utiliser pour répertorier vos brouillons et envois tout en stockant toutes les données et métadonnées dans une base de données. Voyons maintenant comment les services de données et de métadonnées sont configurés dans l’exemple. 
+L’exemple d’implémentation est maintenant configuré. Vous pouvez l’utiliser pour répertorier vos brouillons et envois tout en stockant toutes les données et métadonnées dans une base de données. Voyons maintenant comment les services de données et de métadonnées sont configurés dans l’exemple.
 
 ## Installer le fichier mysql-connector-java-5.1.39-bin.jar {#install-mysql-connector-java-bin-jar-file}
 
@@ -321,14 +316,14 @@ Le fichier zip suivant contient `FormsPortalSampleDataServiceImpl` et `FormsPort
 
 [Obtenir le fichier](assets/sample_package.zip)
 
-## Vérifiez la longueur du nom de fichier  {#verify-length-of-the-file-name}
+## Vérification de la longueur du nom de fichier  {#verify-length-of-the-file-name}
 
-L’implémentation de la base de données du portail Forms utilise un tableau de métadonnées supplémentaire. Le tableau a une clé principale composite basée sur les colonnes Key et ID du tableau. MySQL autorise les clés principales jusqu’à 255 caractères. Vous pouvez utiliser le script de validation côté client suivant pour vérifier la longueur du nom de fichier joint au widget de fichier. La validation est exécutée lorsqu’un fichier est joint. Le script fourni dans la procédure suivante affiche un message lorsque le nom de fichier est supérieur à 150 (extension comprise). Vous pouvez modifier le script pour vérifier un nombre différent de caractères.
+L’implémentation de la base de données de Forms Portal utilise un tableau de métadonnées supplémentaire. Le tableau comporte une clé primaire composite basée sur les colonnes Clé et Identifiant du tableau. MySQL autorise les clés primaires jusqu’à 255 caractères. Vous pouvez utiliser le script de validation côté client suivant pour vérifier la longueur du nom de fichier joint au widget de fichier. La validation est exécutée lorsqu’un fichier est joint. Le script fourni dans la procédure suivante affiche un message lorsque le nom de fichier est supérieur à 150 (extension comprise). Vous pouvez modifier le script pour vérifier un nombre différent de caractères.
 
-Effectuez les étapes suivantes pour créer [une bibliothèque cliente](/help/sites-developing/clientlibs.md) et utilisez le script :
+Effectuez les étapes suivantes pour créer [une bibliothèque cliente](/help/sites-developing/clientlibs.md) et utilisez le script :
 
 1. Connectez-vous à CRXDE et accédez à /etc/clientlibs/
-1. Créez un nœud de type **cq:ClientLibraryFolder** et indiquez le nom du nœud. Par exemple, `validation`.
+1. Création d’un noeud de type **cq:ClientLibraryFolder** et indiquez le nom du noeud. Par exemple, `validation`.
 
    Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
@@ -398,15 +393,15 @@ Effectuez les étapes suivantes pour créer [une bibliothèque cliente](/help/si
 
    >[!NOTE]
    >
-   >Le script est destiné au composant de widget de pièce jointe en standard. Si vous avez personnalisé le widget de pièce jointe en standard, modifiez le script ci-dessus pour incorporer les modifications respectives.
+   >Le script est destiné au composant de widget de pièce jointe prêt à l’emploi. Si vous avez personnalisé le widget de pièce jointe prêt à l’emploi, modifiez le script ci-dessus pour incorporer les modifications respectives.
 
-1. Ajoutez la propriété suivante au dossier créé à l’étape 2 et cliquez sur **[!UICONTROL Enregistrer tout]**.
+1. Ajoutez la propriété suivante au dossier créé à l’étape 2, puis cliquez sur **[!UICONTROL Enregistrer tout]**.
 
-   * **[!UICONTROL Nom :]** catégories
+   * **[!UICONTROL Nom :]** categories
 
    * **[!UICONTROL Type :]** Chaîne
 
-   * **[!UICONTROL Valeur :]** fp.validation
+   * **[!UICONTROL Valeur :]** fp.validation
 
    * **[!UICONTROL Option multiple :]** Activé 
 

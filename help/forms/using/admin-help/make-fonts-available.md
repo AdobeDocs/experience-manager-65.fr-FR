@@ -1,35 +1,31 @@
 ---
 title: Rendre les polices disponibles
-seo-title: Make fonts available
-description: Assurez-vous que les polices utilisées dans un formulaire sont bien disponibles sur le serveur d’applications J2EE hébergeant AEM forms.
-seo-description: Ensure that the fonts used within a form are available for use on the J2EE application server hosting AEM forms.
-uuid: 6588b4b6-f866-4253-91c8-3aa174340e8c
+description: Assurez-vous que les polices utilisées dans un formulaire sont disponibles sur le serveur d’applications J2EE hébergeant AEM forms.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9f58a6c4-3190-49d4-800c-4a55dca7c296
 exl-id: e9eae896-b1e4-4caa-b466-ac8c9e7416a4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '219'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 16%
 
 ---
 
 # Rendre les polices disponibles {#make-fonts-available}
 
-Assurez-vous que les polices utilisées dans un formulaire sont bien disponibles sur le serveur d’applications J2EE hébergeant AEM forms. Prenons l’exemple suivant. Un concepteur de formulaire ajoute une police dans le répertoire de polices utilisé par Designer et crée un formulaire utilisant cette police sur un autre ordinateur. Placez cette police dans le répertoire des polices du client pour que le service Output puisse l’utiliser. Si ce répertoire n’existe pas, créez-le sur le serveur d’applications J2EE hébergeant AEM forms.
+Assurez-vous que les polices utilisées dans un formulaire sont disponibles sur le serveur d’applications J2EE hébergeant AEM forms. Prenons l’exemple suivant. Un concepteur de formulaire ajoute une police dans le répertoire des polices utilisé par Designer et crée un formulaire qui l’utilise sur un ordinateur distinct. Pour que le service Output utilise la police, placez-la dans le répertoire des polices du client. Si le répertoire des polices du client n’existe pas, créez-en un sur le serveur d’applications J2EE hébergeant AEM forms.
 
-Pour plus d’informations sur les paramètres de police supplémentaires, consultez la section [Configuration des paramètres généraux d’AEM forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).
+Pour plus d’informations sur les paramètres de police supplémentaires, voir [Configuration des paramètres généraux d’AEM forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).
 
-**Spécification de l’emplacement du répertoire des polices du client**
+**Définition de l’emplacement du répertoire des polices du client**
 
-1. Dans Administration Console, cliquez sur Paramètres > Paramètres de Core System > Configurations.
-1. Dans la zone Emplacement du répertoire des polices système, saisissez le chemin du répertoire des polices du client. Vous pouvez ajouter plusieurs répertoires en les séparant par des points-virgules **;**
+1. Dans Administration Console, cliquez sur Paramètres > Paramètres de Core Systems > Configurations.
+1. Dans la zone Emplacement du répertoire des polices système, saisissez le chemin d’accès au répertoire des polices du client. Vous pouvez ajouter plusieurs répertoires en les séparant par des points-virgules **;**
 1. Cliquez sur OK.
 1. Redémarrez le système sur lequel AEM forms est installé.
 
 >[!NOTE]
 >
->Les polices sont sélectionnées à partir du cache des polices du système Windows et un redémarrage du système est requis pour mettre à jour le cache. Après avoir spécifié le répertoire des polices du client, assurez-vous de redémarrer le système sur lequel AEM Forms est installé.
+>Les polices sont sélectionnées à partir du cache des polices du système Windows et un redémarrage du système est nécessaire pour mettre à jour le cache. Après avoir spécifié le répertoire des polices du client, assurez-vous de redémarrer le système sur lequel AEM Forms est installé.

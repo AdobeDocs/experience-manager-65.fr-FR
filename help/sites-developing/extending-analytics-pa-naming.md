@@ -1,19 +1,15 @@
 ---
 title: Implémentation de la dénomination des pages côté serveur pour Analytics
-seo-title: Implementing Server-Side Page Naming for Analytics
 description: Adobe Analytics utilise la propriété s.pageName pour identifier de manière unique les pages et associer les données collectées pour les pages.
-seo-description: Adobe Analytics uses the s.pageName property to uniquely identify pages and to associate the data that is collected for the pages
-uuid: 37b92099-0cce-4b2d-b55c-928f636dbd7e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
 exl-id: 17a4e4dc-804e-44a9-9942-c37dbfc8016f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 73%
+source-wordcount: '847'
+ht-degree: 72%
 
 ---
 
@@ -43,7 +39,7 @@ Le service `DefaultPageNameProvider` détermine laquelle des variables CQ est m
 
 * `pagedata.navTitle` : le service utilise `page.getNavigationTitle()`
 
-L’objet `page` est l’objet [`com.day.cq.wcm.api.Page`Java ](https://helpx.adobe.com/fr/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) de la page.
+La variable `page` est que la variable [`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/fr/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) Objet Java pour la page.
 
 Si vous ne mappez pas de variable CQ sur la propriété `s.pageName` dans le framework, la valeur de `s.pageName` est générée à partir du chemin d’accès de la page. Par exemple, la page dont le chemin d’accès est `/content/geometrixx/en` utilise la valeur `content:geometrixx:en` pour la propriété `s.pageName`.
 

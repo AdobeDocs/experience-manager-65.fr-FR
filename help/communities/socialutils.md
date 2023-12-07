@@ -1,18 +1,14 @@
 ---
 title: Refactorisation de SocialUtils
-seo-title: SocialUtils Refactoring
 description: Le package com.adobe.cq.social.ugcbase.SocialUtils a été abandonné dans AEM 6.1.
-seo-description: The package com.adobe.cq.social.ugcbase.SocialUtils was deprecated in AEM 6.1
-uuid: 54a0d98e-5ead-4c12-850f-8252ea9b3263
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
 exl-id: 0f731ec6-a12e-4098-a1ec-ee4cd4dc1432
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '295'
 ht-degree: 1%
 
 ---
@@ -33,15 +29,15 @@ Les tableaux suivants répertorient les méthodes à utiliser au lieu de `Social
 | SocialResourceProvider getSocialResourceProvider(Resource) |  |
 | SocialResourceConfiguration getStorageConfig(Resource resource) |  |
 | Resource getUGCResource(Resource userResource) |  |
-| Resource getUGCResource(Resource userResource, ResourceResolverFactory rf) | new |
-| Ressource getUGCResource(Resource userResource, ResourceResolverFactory rf, String resourceTypeHint) | new |
+| Resource getUGCResource(Resource userResource, ResourceResolverFactory rf) | nouveau |
+| Ressource getUGCResource(Resource userResource, ResourceResolverFactory rf, String resourceTypeHint) | nouveau |
 | Ressource getUGCResource(Resource userResource, String resourceTypeHint) |  |
 | boolean hasModératePermissions(Resource resource) |  |
 | String resourceToACLPath(Resource resource) |  |
 | String resourceToUGCStoragePath(Resource resource) | remplace String resourceToUGCPath(Resource resource) |
 | Chaîne UGCToResourcePath(ressource ressource) |  |
 | Chaîne UGCToResourcePath(String ugcPath) | signature de méthode modifiée |
-| Chaîne UGCToResourcePath(chaîne ugcPath, résolveur ResourceResolver) | new |
+| Chaîne UGCToResourcePath(chaîne ugcPath, résolveur ResourceResolver) | nouveau |
 
 | Méthodes dans `com.adobe.cq.social.`Utilitaires.resource.api.SocialResourceUtilities |
 |---|
@@ -61,7 +57,7 @@ Les tableaux suivants répertorient les méthodes à utiliser au lieu de `Social
 
 ## Pour une utilisation interne uniquement {#for-internal-use-only}
 
-| booléen canAddNode(session de session, chemin de chaîne) |
+| booléen canAddNode(session de session, chemin d’accès de chaîne) |
 |---|
 | Chaîne createUniqueNameHint(message de chaîne) |
 | Chaîne createUniqueNameHint(message de chaîne, int numRandomChars) |

@@ -1,19 +1,15 @@
 ---
 title: Créer un formulaire adaptatif à l’aide d’un jeu de formulaires adaptatifs
-seo-title: Create an adaptive form using a set of adaptive forms
 description: Avec AEM Forms, rassemblez les formulaires adaptatifs pour créer un seul grand formulaire adaptatif et comprenez ses fonctionnalités.
-seo-description: With AEM Forms, bring adaptive forms together to author a single large adaptive form, and understand its features.
-uuid: e52e4f90-8821-49ec-89ff-fbf07db69bd2
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 264aa8c0-ba64-4768-b3d1-1b9baa6b4d72
 docset: aem65
 feature: Adaptive Forms
 exl-id: 4254c2cb-66cc-4a46-b447-bc5e32def7a0
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 46%
+source-wordcount: '620'
+ht-degree: 42%
 
 ---
 
@@ -39,7 +35,7 @@ Des fonctionnalités telles que la création indépendante et le chargement diff
 
 ## En arrière-plan {#behind-the-scenes}
 
-Vous pouvez ajouter des formulaires adaptatifs et des fragments XSD dans le formulaire parent. La structure du formulaire parent est la même que [n’importe quel formulaire adaptatif](../../forms/using/prepopulate-adaptive-form-fields.md). Lorsque vous ajoutez un formulaire adaptatif en tant que formulaire enfant, il est ajouté sous la forme d’un panneau dans le formulaire parent. Les données d’un formulaire enfant lié sont stockées sous les données racines `data` de la section `afBoundData` du schéma XML du formulaire parent.
+Vous pouvez ajouter des formulaires adaptatifs et des fragments XSD dans le formulaire parent. La structure du formulaire parent est la même que [tout formulaire adaptatif](../../forms/using/prepopulate-adaptive-form-fields.md). Lorsque vous ajoutez un formulaire adaptatif en tant que formulaire enfant, il est ajouté sous la forme d’un panneau dans le formulaire parent. Les données d’un formulaire enfant lié sont stockées sous les données racines `data` de la section `afBoundData` du schéma XML du formulaire parent.
 
 Par exemple, vos clients remplissent un formulaire de demande. Les deux premiers champs du formulaire sont le nom et l’identité. Son XML est :
 
@@ -143,7 +139,7 @@ Effectuez les étapes suivantes pour ajouter un formulaire adaptatif en tant que
 
 1. Ouvrez le formulaire parent en mode d’édition.
 1. Dans la barre latérale, cliquez sur **Ressources** ![assets-browser](assets/assets-browser.png). Sous Ressources, sélectionner **Formulaire adaptatif** dans la liste déroulante.
-   [![Sélection d’un formulaire adaptatif dans Ressources](assets/asset.png)](assets/asset-1.png)
+   [![Sélection d’un formulaire adaptatif sous Assets](assets/asset.png)](assets/asset-1.png)
 
 1. Glissez et déposez le formulaire adaptatif que vous souhaitez ajouter en tant que formulaire enfant.
-   [![Faites glisser le formulaire adaptatif sur votre site](assets/drag-drop.png)](assets/drag-drop-1.png). Le formulaire adaptatif que vous déposez est ajouté en tant que formulaire enfant.
+   [![Faites glisser le formulaire adaptatif sur votre site](assets/drag-drop.png)](assets/drag-drop-1.png)Le formulaire adaptatif que vous déposez est ajouté en tant que formulaire enfant.

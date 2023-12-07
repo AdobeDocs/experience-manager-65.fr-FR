@@ -1,25 +1,21 @@
 ---
 title: Démarrer et arrêter WebSphere Application Server
-seo-title: Starting and stopping WebSphere Application Server
-description: Plusieurs procédures nécessitent d’arrêter ou de démarrer l’instance de WebSphere sur laquelle vous souhaitez déployer les produits AEM forms. Ce document explique le démarrage et l’arrêt de WebSphere Application Server.
-seo-description: Several procedures require you to stop or start the instance of WebSphere where you want to deploy AEM forms products. This document describes how to start and stop the WebSphere Application Server.
-uuid: e0373197-aa57-4087-933d-92a86840a11a
+description: Plusieurs procédures nécessitent l’arrêt ou le démarrage de l’instance de WebSphere sur laquelle vous souhaitez déployer AEM produits forms. Ce document explique comment démarrer et arrêter WebSphere Application Server.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: bcd16691-67ab-4694-9e6b-c9d3e0c7bf0b
 exl-id: 1a4e8f20-0644-4c96-9f52-f7a59521eac9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '189'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 56%
 
 ---
 
 # Démarrer et arrêter WebSphere Application Server {#starting-and-stopping-websphere-application-server}
 
-Plusieurs procédures nécessitent d’arrêter ou de démarrer l’instance de WebSphere sur laquelle vous souhaitez déployer les produits AEM forms. Si vous ne savez pas si le serveur d’applications a déjà été démarré, vous pouvez commencer par vérifier l’état de WebSphere Application Server.
+Plusieurs procédures nécessitent l’arrêt ou le démarrage de l’instance de WebSphere sur laquelle vous souhaitez déployer AEM produits forms. Si vous ne savez pas si le serveur d’applications a démarré, vous pouvez d’abord afficher l’état de WebSphere Application Server.
 
 ## Affichage de l’état de WebSphere Application Server {#view-the-status-of-websphere-application-server}
 

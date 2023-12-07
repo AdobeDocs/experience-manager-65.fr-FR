@@ -1,34 +1,30 @@
 ---
 title: Tracking des résultats et formulation de commentaires
-seo-title: Tracking results and providing feedback
-description: C’est à vous qu’il appartient de définir la manière et l’endroit où vous définissez les scénarios de test, ainsi que le plan de test qui en résulte.
-seo-description: How and where you define the test cases, and the resulting test plan, is at your own discretion
-uuid: b4b811d4-4ca0-4477-a866-b262f9a698f4
+description: C’est à vous qu’il appartient de définir comment et où vous définissez les cas de test, ainsi que le plan de test qui en résulte.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: 2fff5f64-d330-4b32-a861-1f5315363b69
 exl-id: 270e66d1-a3f2-457a-90d1-28b9f3c8c218
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '159'
-ht-degree: 100%
+ht-degree: 6%
 
 ---
 
 # Tracking des résultats et formulation de commentaires{#tracking-results-and-providing-feedback}
 
-C’est à vous qu’il appartient de définir la manière et l’endroit où vous définissez les scénarios de test, ainsi que le plan de test qui en résulte. De nombreux outils sont disponibles à cet effet.
+La manière et l’emplacement de définition des cas de test, ainsi que le plan de test qui en résulte, sont à votre discrétion ; de nombreux outils sont disponibles.
 
-Cependant, quel que soit l’outil ou la méthode que vous choisissez, les informations stockées :
+Toutefois, quelle que soit la méthode ou l’outil de votre choix, les informations stockées :
 
-* Doivent être :
+* Doit être :
 
-   * Limitées au suivi du scénario de test et de ses résultats. De cette manière, la maintenance reste simple et le document peut fournir une présentation claire de la progression du test.
-   * Conservées sous la forme d’une copie unique, disponible pour tous les membres appropriés de l’équipe du projet.
-   * Neutres et limitées aux résultats du test. Il est de la responsabilité du chef de projet de déterminer les mesures à prendre en fonction des résultats du test.
+   * Limité au suivi du cas de test et de ses résultats. Cela garantit que la maintenance reste simple et le document peut fournir un aperçu clair de la progression des tests.
+   * Conservée en tant que copie unique, disponible pour tous les membres appropriés de l’équipe du projet.
+   * Neutre et limité aux résultats du test. Il incombe au chef de projet de prendre des décisions sur les actions résultant des résultats du test.
 
-* Ne doivent pas être :
+* Ne doit pas être :
 
-   * Étendues pour inclure des informations de suivi, qu’il s’agisse de bogues, de nouvelles fonctions ou encore d’actions de suivi. Ces informations doivent être conservées ailleurs. Pour rappel, de nombreux outils sont disponibles à cet effet.
+   * Étendu pour inclure les informations de suivi : ni les bogues, ni les nouvelles fonctionnalités, ni les actions de suivi. Ces informations doivent être conservées ailleurs, là encore, de nombreux outils sont disponibles.

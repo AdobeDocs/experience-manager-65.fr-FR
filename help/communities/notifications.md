@@ -1,27 +1,23 @@
 ---
 title: Notifications de communautés
-seo-title: Communities Notifications
 description: AEM Communities comporte des notifications qui affichent des événements présentant un intérêt pour le membre de la communauté connecté
-seo-description: AEM Communities has notifications that display events of interest to the signed-in community member
-uuid: 2f5ea4b5-7308-414e-a3f8-2e8aa76b1ef4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ab9088b7-a691-4153-ac82-1e8c0a19ed5d
 docset: aem65
 role: Admin
 exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '609'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 # Notifications de communautés {#communities-notifications}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 AEM Communities fournit une section de notifications qui affiche les événements d’intérêt pour les membres de la communauté connectés.
 
@@ -39,7 +35,7 @@ Ce qui distingue les notifications des activités et des abonnements est :
    * Les activités requièrent la [fonction de flux d’activités](/help/communities/functions.md#activity-stream-function) à inclure dans la structure du site de la communauté.
    * Abonnements requis [configuration de l&#39;email](/help/communities/email.md).
 
-* L’implémentation des notifications se fait par le biais de canaux évolutives et enfichables :
+* La mise en oeuvre des notifications s’effectue par le biais de canaux évolutives et enfichables :
 
    * Les activités ne sont disponibles que sur le web.
    * Les abonnements ne sont disponibles que par email.
@@ -73,11 +69,11 @@ Les composants doivent être configurés pour activer les éléments suivants. L
 
 ![notifications](assets/notifications.png)
 
-Le **[!UICONTROL Suivez]** permet de suivre les entrées sous forme d’activités, d’abonnements et/ou de notifications. Chaque fois que la fonction **[!UICONTROL Suivez]** est sélectionné, il est possible d’activer ou de désactiver une sélection. Le `Email Subscriptions` n’est présente que lorsqu’elle est configurée.
+La variable **[!UICONTROL Suivez]** permet de suivre les entrées sous forme d’activités, d’abonnements et/ou de notifications. Chaque fois que la fonction **[!UICONTROL Suivez]** est sélectionné, il est possible d’activer ou de désactiver une sélection. La variable `Email Subscriptions` n’est présente que lorsqu’elle est configurée.
 
 Si l’une des méthodes suivantes est sélectionnée, le texte du bouton devient **[!UICONTROL Suivre]**. Pour des raisons pratiques, il est possible de sélectionner `Unfollow All` pour désactiver toutes les méthodes.
 
-Le **[!UICONTROL Suivez]** s’affiche :
+La variable **[!UICONTROL Suivez]** s’affiche :
 
 * Lors de l’affichage du profil d’un autre membre.
 * Sur une page principale, comme les forums, les Q&amp;R et les blogs :
@@ -122,11 +118,11 @@ Lorsque le canal Email est activé, le membre reçoit un email contenant un lien
 
 ![notifications5](assets/notifications5.png)
 
-## Personnalisation des notifications par e-mail {#customize-email-notifications}
+## Personnalisation des notifications par courrier électronique {#customize-email-notifications}
 
 Les organisations peuvent personnaliser les notifications par e-mail en [superposition](/help/communities/client-customize.md#overlays) les modèles à l’adresse **/libs/settings/community/templates/email/html**.
 
-Par exemple, pour modifier les notifications de mentions par courrier électronique (pour un composant Communities), ajoutez une **if** condition pour verbe **mentions** dans les modèles des composants pour lesquels vous avez activé la fonction **@mentions** prise en charge.
+Par exemple, pour modifier les notifications de mentions par courrier électronique (pour un composant Communities), ajoutez une **if** condition pour verbe **mentions** dans les modèles des composants pour lesquels vous avez activé la fonction **@mentions** la prise en charge.
 
 Pour modifier le modèle de notification électronique pour @mention dans les commentaires de blog, placez le modèle prêt à l’emploi à l’adresse : **/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/fr**
 

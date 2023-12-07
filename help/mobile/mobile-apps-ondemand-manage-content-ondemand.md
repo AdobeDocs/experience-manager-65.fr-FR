@@ -1,18 +1,14 @@
 ---
 title: Gestion du contenu
-seo-title: Managing Content
 description: Les actions de gestion de contenu sont les blocs de création qui permettent de créer et de gérer du contenu dans une application. Consultez cette page pour en savoir plus.
-seo-description: Content Management actions are the building blocks that help to create and manage content within an application. Follow this page to learn more.
-uuid: ab680836-133b-45b9-913c-e721b7e9fc04
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: 89fc3701-0472-4629-95d3-da577581a0f0
 exl-id: 4e37e814-ceb6-4dfa-a4d3-754f15ca4edf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '276'
 ht-degree: 3%
 
 ---
@@ -27,7 +23,7 @@ Les actions de gestion de contenu sont les blocs de création qui permettent de 
 
 ## Présentation du contenu {#content-overview}
 
-Si vous pensez à un magazine en ligne, le contenu principal comprend des articles, des publicités et des couvertures. Trois types principaux de contenu Mobile On Demand peuvent être créés dans AEM :
+Si vous pensez à un magazine en ligne, le contenu principal comprend des articles, des publicités et des couvertures. Il est possible de créer trois types principaux de contenu Mobile On Demand dans AEM :
 
 * **Articles**: texte basé sur l’art pour transmettre des informations
 * **Bannières :** liens promotionnels typiquement graphiques

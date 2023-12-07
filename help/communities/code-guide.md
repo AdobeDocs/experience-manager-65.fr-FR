@@ -1,16 +1,12 @@
 ---
 title: Consignes de codage
-seo-title: Coding Guidelines
 description: Conseils, astuces et conseils pour les développeurs de communautés
-seo-description: Communities developer guidelines, tips, and tricks
-uuid: 311ef4f7-7f2c-44c3-bcf2-f68713752623
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 244cd43c-a573-495d-b80c-b97ba9d19b75
 exl-id: a23aab83-1dfa-4d91-9b6b-6246a2103896
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 3%
@@ -21,7 +17,7 @@ ht-degree: 3%
 
 ## Conseils, astuces et astuces {#guidelines-tips-and-tricks}
 
-L’utilisation d’AEM Communities est passée d’une dépendance importante aux pages de serveur Java à une flexibilité dans le choix de langages de script de modèle dans lesquels la logique commerciale, le style et le contenu de page sont distincts l’un de l’autre.
+L’utilisation d’AEM Communities est passée d’une dépendance importante à Java Server Pages à une flexibilité dans le choix de langages de script de modèle dans lesquels la logique commerciale, le style et le contenu de page sont différents les uns des autres.
 
 L’API SocialResourceProvider offre une plus grande flexibilité pour l’utilisation du contenu généré par l’utilisateur, ce qui évite d’avoir à identifier ce qui [SRP](srp.md) a été sélectionnée pour le déploiement.
 
@@ -35,10 +31,10 @@ Vous trouverez ci-dessous diverses instructions de codage et bonnes pratiques po
 
 ### Scripts  {#scripts}
 
-* [Chargement partiel des composants de communauté](sideloading.md) : procédure d’ajout dynamique d’un composant après le chargement de la page.
+* [Chargement partiel des composants des communautés](sideloading.md) : procédure d’ajout dynamique d’un composant après le chargement de la page.
 * [Principes élémentaires de l’éditeur de texte enrichi](rte.md) - Comment personnaliser l’interface utilisateur de texte enrichi fournie aux membres pour la publication de contenu.
 
 ### IDE {#ide}
 
-* [Utilisation de Maven pour Communities](maven.md) - Comment inclure le fichier jar de l’API Communities.
+* [Utilisation de Maven pour Communities](maven.md) - Découvrez comment inclure le fichier jar de l’API Communities.
 * [Refactorisation de SocialUtils](socialutils.md) - méthodes d’utilitaire pour SRP qui remplacent SocialUtils.

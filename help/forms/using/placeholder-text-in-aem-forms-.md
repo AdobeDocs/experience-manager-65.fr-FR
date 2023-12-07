@@ -1,19 +1,15 @@
 ---
 title: Texte d’espace réservé dans AEM Forms
-seo-title: Placeholder text in AEM Forms
 description: Le texte d’espace réservé est destiné à aider l’utilisateur à saisir des données lorsque la commande n’a pas de valeur. Il peut s’agir d’un exemple de valeur ou d’une brève description du format attendu.
-seo-description: Placeholder text is intended to aid the user with data entry when the control has no value. It could be a sample value or a brief description of the expected format.
-uuid: 69f80722-93db-4932-9016-4b530e183d4e
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: f9ff2cc5-3f0a-4b2f-a206-2fe0985646ea
 docset: aem65
 feature: Adaptive Forms
 exl-id: 6b6e27b5-8b4e-489c-9e72-4d256692c1ca
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 49%
+source-wordcount: '267'
+ht-degree: 48%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 49%
 
 <span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/using/create-an-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
 
-Le texte d’espace réservé représente un mot ou une expression courte. L’objectif est d’aider l’utilisateur à saisir des données lorsque le contrôle ne possède aucune valeur. Un texte d’espace réservé peut être un exemple de valeur ou une brève description du format attendu. Le texte d’espace réservé s’affiche avant que l’utilisateur ne saisisse une valeur et il est supprimé lorsque l’utilisateur saisit ou sélectionne une valeur.
+Le texte d’espace réservé représente un mot ou une expression courte. L’objectif est d’aider l’utilisateur à saisir des données lorsque le contrôle n’a pas de valeur. Un texte d’espace réservé peut être un exemple de valeur ou une brève description du format attendu. Le texte d’espace réservé s’affiche avant que l’utilisateur ne saisisse une valeur et il est supprimé lorsque l’utilisateur saisit ou sélectionne une valeur.
 
 >[!NOTE]
 >

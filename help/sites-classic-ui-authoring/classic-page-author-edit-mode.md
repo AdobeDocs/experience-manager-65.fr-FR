@@ -1,19 +1,15 @@
 ---
 title: Composants pour la création de pages
-seo-title: Components for Page Authoring
 description: Les composants sont disponibles lors de la modification d’une page à partir de l’onglet Composants du sidekick et du sélecteur Insérer un nouveau composant (lorsque vous double-cliquez dans la zone Faire glisser des composants ou éléments ici).
-seo-description: The components are available when editing a page from the Components tab of the sidekick and the Insert New Component selector (when you double-click in the Drag components or assets here area).
-uuid: c353073d-d4d1-4529-b8bd-d0ca302cc9a0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '6026'
+source-wordcount: '5991'
 ht-degree: 96%
 
 ---
@@ -182,12 +178,12 @@ Entrez une requête de recherche en texte brut.
 
       * **Options de la recherche avancée**
 
-         * **Notation des prédicats de QueryBuilder**
-Entrez une requête de recherche à l’aide de la notation des prédicats de QueryBuilder. Par exemple, entrez « fulltext=Marketing » pour afficher dans le carrousel toutes les pages comportant le terme « Marketing » dans leur contenu.
-Consultez [API QueryBuilder](/help/sites-developing/querybuilder-api.md) pour consulter une étude complète sur les expressions de requête et d’autres exemples.
+         * **Notation des prédicats de Query Builder**
+Vous pouvez saisir une requête de recherche à l’aide de la notation de prédicat de Query Builder. Par exemple, vous pouvez saisir &quot;fulltext=Marketing&quot; pour que toutes les pages comportant &quot;Marketing&quot; dans leur contenu s’affichent dans le carrousel.
+Consultez [API QueryBuilder](/help/sites-developing/querybuilder-api.md) pour découvrir une étude complète sur les expressions de requête et d’autres exemples.
 
    * **Classer par**
-Sélectionnez `jcr:title`, `jcr:created`, `cq:lastModified` ou `cq:template` dans le menu déroulant.
+Sélectionner `jcr:title`, `jcr:created`, `cq:lastModified`, ou `cq:template` dans le menu déroulant.
 
    * **Limite**
 Facultatif. Nombre maximal d’éléments que vous souhaitez utiliser dans le carrousel.
@@ -678,7 +674,7 @@ Un nuage de balises affiche une sélection des balises appliquées au contenu de
 Lorsque vous configurez le composant Nuage de balises, vous pouvez spécifier les options suivantes :
 
 * **Balises à afficher**
-Emplacement à partir duquel les balises à afficher sont rassemblées. Faites votre choix entre une page, une page avec tous les enfants ou toutes les balises.
+Emplacement où sont collectées les balises à afficher : page, page avec tous les enfants ou toutes les balises.
 
 * **Page**
 Sélectionnez la page à référencer.
@@ -1044,8 +1040,7 @@ Page utilisée lors de la création d’un compte.
 
       * **Créer le contenu**
 
-         * Chemin d’accès au contenu
-Chemin d’accès à tout contenu dont le formulaire produit une image mémoire. Entrez un chemin d’accès qui se termine par une barre oblique `/`. Celle-ci signifie que pour chaque port de formulaire, un nœud est créé à l’emplacement donné ; par exemple :
+         * Chemin d’accès au contenu Chemin d’accès au contenu de tout contenu que le formulaire vide. Saisissez un chemin qui se termine par une barre oblique `/`. La barre oblique signifie que, pour chaque port de formulaire, un nouveau nœud est créé à l’emplacement indiqué, par exemple :
            `/forms/feedback/`
 
          * **Type**

@@ -1,27 +1,23 @@
 ---
-title: SRP - Stockage de contenu de la communauté
-seo-title: SRP - Community Content Storage
+title: SRP - Stockage de contenu communautaire
 description: Depuis AEM Communities 6.1, le contenu généré par l’utilisateur est stocké dans un seul magasin commun fourni par un fournisseur de ressources de stockage (SRP).
-seo-description: As of AEM Communities 6.1, user generated content (UGC) is stored in a single, common store provided by a storage resource provider (SRP)
-uuid: d45e03c4-378b-4510-a6a0-d48c8cb879d9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 6f13b21a-f4ef-4889-9b8e-4da3f846fa35
 docset: aem65
 role: Admin
 exl-id: e29aae44-67be-43d2-8004-c986412d9e63
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
 
-# SRP - Stockage de contenu de la communauté {#srp-community-content-storage}
+# SRP - Stockage de contenu communautaire {#srp-community-content-storage}
 
-## Présentation  {#introduction}
+## Présentation {#introduction}
 
 Depuis AEM Communities 6.1, le contenu généré par l’utilisateur est stocké dans un seul magasin commun fourni par un fournisseur de ressources de stockage (SRP). Il existe plusieurs options de SRP que vous pouvez sélectionner, telles que ASRP, MSRP et JSRP.
 
@@ -37,7 +33,7 @@ Pour plus d’informations sur l’utilisation de la SRP pour le contenu génér
 
 >[!CAUTION]
 >
->À partir de la version AEM 6.1, [Le contenu généré par l’utilisateur n’est jamais répliqué.](#ugc-never-replicated).
+>À partir de la version AEM 6.1, [Le contenu généré par l’utilisateur n’est jamais répliqué](#ugc-never-replicated).
 >
 >Lorsque le déploiement n’inclut pas de magasin commun, tel que la valeur par défaut [JSRP](/help/communities/topologies.md#jsrp) topologie, le contenu généré par l’utilisateur ne sera visible que sur l’instance de publication ou d’auteur AEM sur laquelle il a été saisi. Ce n’est que si la topologie inclut une grappe de publication que le contenu généré par l’utilisateur sera visible sur n’importe quelle instance de publication.
 
@@ -81,7 +77,7 @@ ASRP convient :
 
 Avec cette option, le contenu généré par l’utilisateur est conservé directement dans une instance de base de données MySQL locale.
 
-DSRP requiert :
+Le DSRP requiert :
 
 * Une installation locale de MySQL pour stocker le contenu de la communauté.
 * Une installation locale d’Apache Solr.
@@ -97,12 +93,12 @@ DSRP convient :
 
 Avec l’option par défaut, il n’y a pas de boutique courante. Le contenu généré par l’utilisateur n’est conservé que dans le même référentiel JCR que l’instance AEM dans laquelle il a été saisi.
 
-JSRP:
+JSRP :
 
 * Stocke le contenu de la communauté dans le référentiel JCR de l’instance d’auteur ou de publication AEM à laquelle il a été publié.
 * Nécessite l’accès programmatique au contenu généré par l’utilisateur via l’API SRP.
 * Nécessite un cluster de publication si plusieurs instances de publication sont déployées (il n’existe aucun mécanisme de réplication entre les instances de publication dans une ferme TarMK).
-* la modération est effectuée uniquement dans l’environnement de publication (il n’existe aucun mécanisme de réplication inverse/transfert entre l’auteur et la publication).
+* la modération est effectuée uniquement dans l’environnement de publication (il n’existe pas de mécanisme de réplication inverse/transfert entre l’auteur et la publication).
 * Il est préférable pour le développement, les démonstrations et la formation.
 
 ## Configuration de la SRP {#configuring-srp}
@@ -132,7 +128,7 @@ Bien que le contenu du site soit répliqué, le contenu généré par l’utilis
 
 ### Gestion des données utilisateur {#managing-user-data}
 
-Ce qui intéresse aussi les CommunitIes [*utilisateurs*, *groupes d’utilisateurs*, et *profils utilisateur*](/help/communities/users.md). Ces données liées à l’utilisateur, lorsqu’elles sont créées et mises à jour dans l’environnement de publication, doivent être mises à la disposition d’autres instances de publication lorsque la topologie est une [batterie de publication](/help/sites-deploying/recommended-deploys.md#tarmk-farm).
+Ce qui intéresse aussi les CommunitId [*utilisateurs*, *groupes d’utilisateurs*, et *profils utilisateur*](/help/communities/users.md). Une fois créées et mises à jour dans l’environnement de publication, ces données liées aux utilisateurs doivent être mises à la disposition d’autres instances de publication lorsque la topologie est une [batterie de publication](/help/sites-deploying/recommended-deploys.md#tarmk-farm).
 
 Depuis AEM Communities 6.1, les données liées à l’utilisateur sont synchronisées à l’aide de la distribution Sling plutôt que de la réplication. Pour plus d’informations, voir [Synchronisation des utilisateurs](/help/communities/sync.md).
 
@@ -140,4 +136,4 @@ Depuis AEM Communities 6.1, les données liées à l’utilisateur sont synchron
 
 Lors de la mise à niveau vers AEM 6.5 Communities, si du contenu créé par l’utilisateur préexistant doit être conservé, des étapes doivent être prises selon que la communauté AEM 5.6.1 ou 6.0 a utilisé le stockage Adobe à la demande ou le stockage on-premise du contenu créé par l’utilisateur.
 
-Pour plus d’informations, rendez-vous sur [Mise à niveau vers AEM Communities 6.5](/help/communities/upgrade.md).
+Pour plus d’informations, consultez [Mise à niveau vers AEM Communities 6.5](/help/communities/upgrade.md).

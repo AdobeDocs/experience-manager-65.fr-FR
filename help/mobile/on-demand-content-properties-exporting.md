@@ -1,19 +1,15 @@
 ---
 title: Utilisation des propriétés de contenu pour exporter du contenu
-seo-title: Using Content Properties to Export Content
 description: La page suivante présente les propriétés et les noeuds de l’application.
-seo-description: The following page shows App Properties and Nodes.
-uuid: 73f1832f-e457-47d0-a0e1-80af90897d31
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: a3006835-b1d2-47d6-959a-cdb692e34e1e
 exl-id: db1c33c9-8539-436d-b4d0-3d5e6fd688ed
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 4%
+source-wordcount: '332'
+ht-degree: 3%
 
 ---
 
@@ -46,7 +42,7 @@ Le tableau suivant affiche **Propriétés et noeuds de l’application**.
   <tr>
    <td>dps-exportTemplate</td>
    <td>String:Path</td>
-   <td><p>Chemin d’accès aux configurations d’exportation de l’application. La configuration d’exportation est un dossier avec 2 modèles de configuration d’exportation ContentSync enfants ;</p> <p><i>dps-article</i>: Configuration de l’exportation ContentSync pour exporter le contenu d’un article</p> <p><i>dps-HTMLResources</i>: Configuration de l’exportation ContentSync pour exporter des ressources partagées d’application/article</p> </td>
+   <td><p>Chemin des configurations d’exportation de l’application. La configuration d’exportation est un dossier avec 2 modèles de configuration d’exportation ContentSync enfants ;</p> <p><i>dps-article</i>: configuration de l’exportation ContentSync pour exporter le contenu de l’article</p> <p><i>dps-HTMLResources</i>: configuration de l’exportation de ContentSync pour exporter des ressources partagées d’application/article</p> </td>
   </tr>
   <tr>
    <td>dps-projectId</td>
@@ -71,12 +67,12 @@ Le tableau suivant affiche **Propriétés et noeuds de l’application**.
   <tr>
    <td>dps-sharedHTMLResources-lastUploadedBy</td>
    <td>Chaîne : userid</td>
-   <td>Identifiant de l’utilisateur qui a effectué le dernier chargement de la demande de ressources partagées d’AEM vers AEM Mobile.</td>
+   <td>Identifiant de l’utilisateur qui a effectué le dernier chargement de requête de ressources partagées depuis AEM vers AEM Mobile.</td>
   </tr>
   <tr>
    <td>page-dashboard-config</td>
    <td>String:Path</td>
-   <td>Chemin d’accès à la configuration d’un tableau de bord. Le chemin peut être redirigé vers une configuration de tableau de bord personnalisée, si nécessaire.</td>
+   <td>Chemin d’accès à une configuration de tableau de bord. Le chemin peut être redirigé vers une configuration de tableau de bord personnalisée, si nécessaire.</td>
   </tr>
   <tr>
    <td>sling:resourceType</td>

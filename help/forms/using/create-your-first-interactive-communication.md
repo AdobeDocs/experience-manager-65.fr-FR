@@ -1,19 +1,15 @@
 ---
 title: 'Tutoriel : créer votre première communication interactive'
-seo-title: Create your first Interactive Communication
 description: Découvrez comment créer votre première communication interactive.
-seo-description: Learn to create your first Interactive Communication.
-uuid: ed5003c6-ba3a-4fcb-8645-c7b607b22fb5
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communications, introduction
-discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 feature: Interactive Communication
 exl-id: b20bb719-5686-466e-8dde-279b8471bfe3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 36%
+source-wordcount: '976'
+ht-degree: 37%
 
 ---
 
@@ -25,7 +21,7 @@ Découvrez comment créer votre première communication interactive.
 
 Les communications interactives centralisent et gèrent la création, l’assemblage et la livraison de correspondances sécurisées, personnalisées et interactives telles que la correspondance commerciale, les documents, les déclarations, les courriers marketing, les factures et les kits de bienvenue. Les communications interactives peuvent être fournies par deux canaux : impression et web. Le canal d’impression est utilisé pour créer des communications PDF et papier, tandis que le canal web est utilisé pour diffuser des expériences en ligne.
 
-Ce didacticiel fournit un cadre de bout en bout pour la création d’une communication interactive. Le tutoriel est organisé en cas d’utilisation et en plusieurs guides. Chaque guide vous aide à créer des fonctionnalités utilisées comme blocs de création pour créer une communication interactive.
+Ce didacticiel fournit un cadre de bout en bout pour la création d’une communication interactive. Le tutoriel consiste en un cas d’utilisation et plusieurs guides. Chaque guide vous aide à créer des fonctionnalités utilisées comme blocs de création pour créer une communication interactive.
 
 L’image suivante illustre les blocs de création nécessaires à la création d’une communication interactive.
 

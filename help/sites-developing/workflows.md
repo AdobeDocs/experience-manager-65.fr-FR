@@ -1,18 +1,14 @@
 ---
 title: Développement et extension des workflows
-seo-title: Developing and Extending Workflows
 description: AEM fournit plusieurs outils et ressources pour créer des modèles de workflow, développer des étapes de workflow et interagir par programme avec les workflows.
-seo-description: AEM provides several tools and resources for creating workflow models, developing workflow steps, and for programmatically interacting with workflows
-uuid: 5a857589-3b13-4519-bda2-b1dab6005550
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 8954e3df-3afa-4d53-a7e1-255f3b8f499f
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
-workflow-type: ht
-source-wordcount: '1473'
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '1460'
 ht-degree: 100%
 
 ---
@@ -45,7 +41,6 @@ Les principaux aspects sont abordés ci-dessous, tandis que les pages suivantes 
 >* Consultez le [webinaire Demandez aux experts d’AEM relatif aux workflows](https://communities.adobeconnect.com/p5s33iburd54/) (en anglais).
 >* les modifications apportées aux emplacements des informations, consultez [Restructuration de référentiel dans AEM 6.5](/help/sites-deploying/repository-restructuring.md) et [Bonnes pratiques relatives aux workflows – Emplacements](/help/sites-developing/workflows-best-practices.md#locations).
 >
-
 
 ## Modèle {#model}
 
@@ -114,9 +109,9 @@ Les instances finalisées et terminées sont archivées.
 
 ### Boîte de réception {#inbox}
 
-Chaque compte utilisateur possède sa propre boîte de réception de workflow dans laquelle les `WorkItems` attribués sont accessibles.
+Chaque compte d’utilisateur possède sa propre boîte de réception de workflow dans laquelle les `WorkItems` attribués sont accessibles.
 
-Les `WorkItems` sont attribués au compte utilisateur directement ou au groupe auquel ils appartiennent.
+Les `WorkItems` sont attribués au compte d’utilisateur directement ou au groupe auquel ils appartiennent.
 
 ### Types de workflow {#workflow-types}
 
@@ -126,15 +121,15 @@ Il existe différents types de workflows, comme indiqué dans la console Modèle
 
 * **Par défaut**
 
-   Ces types sont des workflows prêts à l’emploi inclus dans une instance standard d’AEM.
+  Ces types sont des workflows prêts à l’emploi inclus dans une instance standard d’AEM.
 
 * Workflows personnalisés (aucun indicateur dans la console)
 
-   Ces workflows ont été créés à partir de zéro ou à partir de workflows prêts à l’emploi auxquels ont été ajoutées des personnalisations.
+  Ces workflows ont été créés à partir de zéro ou à partir de workflows prêts à l’emploi auxquels ont été ajoutées des personnalisations.
 
 * **Hérité**
 
-   Il s’agit des workflows créés dans une version antérieure d’AEM. Ces workflows peuvent être conservés pendant une mise à niveau ou exportés sous la forme d’un package de workflow à partir de la version précédente, puis importés dans la nouvelle version.
+  Il s’agit des workflows créés dans une version antérieure d’AEM. Ces workflows peuvent être conservés pendant une mise à niveau ou exportés sous la forme d’un package de workflow à partir de la version précédente, puis importés dans la nouvelle version.
 
 ### Workflows transitoires {#transient-workflows}
 
@@ -159,7 +154,6 @@ Les workflows transitoires ont été introduits pour charger de nombreuses resso
 >* Le workflow entre dans une **Division ET**. Dans ce cas, l’historique d’exécution est nécessaire pour la confirmation du statut.
 >* Lorsque le workflow transitoire entre dans une étape de participant, il change de mode, au moment de l’exécution, et passe à non transitoire. Lorsque la tâche est transmise à une personne, l’historique doit être conservé.
 >
-
 
 >[!CAUTION]
 >

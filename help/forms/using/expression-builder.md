@@ -1,20 +1,16 @@
 ---
 title: Fonctions distantes du Générateur d’expression
-seo-title: Expression Builder
-description: Le Générateur d’expression de Correspondence Management permet de créer des expressions et des fonctions distantes.
-seo-description: Expression Builder in Correspondence Management lets you create expressions and remote functions.
-uuid: 6afb84c0-ad03-4bb1-a154-d46cc47650ae
+description: Le Générateur d’expression dans Correspondence Management vous permet de créer des expressions et des fonctions distantes.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 68e3071e-7ce6-4bdc-8561-14bcaeae2b6c
 docset: aem65
 feature: Correspondence Management
 exl-id: b41af9fe-c698-44b3-9ac6-97d42cdc02d4
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
-source-wordcount: '786'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '783'
+ht-degree: 64%
 
 ---
 
@@ -30,11 +26,11 @@ Comme le Générateur d’expression utilise en interne les bibliothèques EL JS
 
 ### Opérateurs  {#operators}
 
-Les opérateurs pouvant être utilisées dans les expressions sont disponibles dans la barre supérieure du Générateur d’expression.
+Les opérateurs pouvant être utilisés dans les expressions sont disponibles dans la barre supérieure du générateur d’expression.
 
 ### Exemples d’expressions {#exampleexpressions}
 
-Vous trouverez ci-dessous quelques exemples d’EL JSP couramment utilisés que vous pouvez utiliser dans votre solution Correspondence Management :
+Voici quelques exemples d’EL JSP couramment utilisés que vous pouvez utiliser dans votre solution Correspondence Management :
 
 * Pour ajouter deux nombres : ${number1 + number2}
 * Pour concaténer deux chaînes : ${str1} ${str2}
@@ -69,21 +65,21 @@ Vous trouverez plus d’informations dans [Spécification de l’EL JSP](https:/
 
 ### Fonction distante {#remote-function}
 
-Les fonctions distantes offrent la possibilité d’utiliser la logique personnalisée dans les expressions. Vous pouvez écrire une logique personnalisée à utiliser dans l’expression comme méthode dans Java et la même fonction peut être utilisée dans les expressions. Les fonctions distantes disponibles sont répertoriées dans l’onglet « Fonctions distantes » sur le côté gauche du gestionnaire d’expression.
+Les fonctions distantes offrent la possibilité d’utiliser une logique personnalisée dans les expressions. Vous pouvez écrire une logique personnalisée à utiliser dans l’expression comme méthode dans Java et la même fonction peut être utilisée dans les expressions. Les fonctions distantes disponibles sont répertoriées dans l’onglet « Fonctions distantes » sur le côté gauche du gestionnaire d’expression.
 
 ![remotefunction](assets/remotefunction.png)
 
 #### Ajout de fonctions distantes personnalisées {#adding-custom-remote-functions}
 
-Vous pouvez créer un regroupement personnalisé pour exporter vos propres fonctions distantes à utiliser dans les expressions. Pour créer un lot personnalisé afin d’exporter vos propres fonctions distantes, effectuez les tâches suivantes. Cet onglet indique comment créer une fonction personnalisée tirant parti de sa chaîne d’entrée.
+Vous pouvez créer un regroupement personnalisé pour exporter vos propres fonctions distantes à utiliser dans les expressions. Pour créer un lot personnalisé afin d’exporter vos propres fonctions distantes, effectuez les tâches suivantes. Il indique comment écrire une fonction personnalisée qui capitalise sa chaîne d’entrée.
 
-1. Définissez une interface pour le service OSGi, contenant des méthodes à exporter pour l’utilisation par Expression Manager.
+1. Définissez une interface pour le service OSGi contenant les méthodes qui sont exportées pour utilisation par Expression Manager.
 1. Déclarez les méthodes sur l’interface A et annotez-les au moyen de l’annotation @ServiceMethod (com.adobe.exm.expeval.ServiceMethod). Expression Manager ignore les méthodes non annotées. L’annotation ServiceMethod présente les attributs facultatifs suivants, qui peuvent également être définis :
 
-   1. **Enabled** : indique si la méthode est activée. Expression Manager ignore toute méthode désactivée.
-   1. **familyId** : indique la famille (groupe) de méthodes. Si cet attribut n’est pas spécifié, Expression Manager présume que la méthode appartient à la famille par défaut. Il n’y a aucun registre de familles (à l’exception de celui par défaut) d’où sont sélectionnées les fonctions. Expression Manager crée le registre de façon dynamique en prenant en compte l’ensemble des ID de famille spécifiés par toutes les fonctions exportées par les différents lots. Assurez-vous que l’ID spécifié ici est raisonnablement lisible étant donné qu’il apparaît également dans l’interface utilisateur de création d’expression.
-   1. **displayName** : nom intelligible de la fonction. Ce nom apparaît dans l’interface utilisateur de création. Si cet attribut n’est pas spécifié, Expression Manager crée un nom par défaut à l’aide du préfixe et du nom local de la fonction.
-   1. **Description** : description détaillée de la fonction. Cette description apparaît dans l’interface utilisateur de création. Si l’attribut est vide, Expression Manager construit une description par défaut à l’aide du préfixe et du nom local de la fonction.
+   1. **Activé**: détermine si cette méthode est activée. Expression Manager ignore les méthodes désactivées.
+   1. **familyId** : indique la famille (groupe) de méthodes. S’il est vide, Expression Manager suppose que la méthode appartient à la famille par défaut. Il n’y a aucun registre de familles (à l’exception de celui par défaut) d’où sont sélectionnées les fonctions. Expression Manager crée le registre de façon dynamique en prenant en compte l’ensemble des ID de famille spécifiés par toutes les fonctions exportées par les différents lots. Assurez-vous que l’ID qu’ils spécifient ici est raisonnablement lisible, puisqu’il s’affiche également dans l’interface utilisateur de création d’expression.
+   1. **displayName** : nom intelligible de la fonction. Ce nom apparaît dans l’interface utilisateur de création. S’il est vide, Expression Manager crée un nom par défaut à l’aide du préfixe de la fonction et du nom local.
+   1. **Description**: description détaillée de la fonction. Cette description apparaît dans l’interface utilisateur de création. S’il est vide, Expression Manager crée une description par défaut à l’aide du préfixe et du nom local de la fonction.
 
    ```java
    package mergeandfuse.com;
@@ -96,7 +92,7 @@ Vous pouvez créer un regroupement personnalisé pour exporter vos propres fonct
    }
    ```
 
-   Les paramètres des méthodes peuvent également être annotés de manière facultative au moyen de l’annotation @ServiceMethodParameter (com.adobe.exm.expeval.ServiceMethodParameter). Cette annotation est uniquement utilisée pour spécifier les noms intelligibles et les descriptions des paramètres de méthode à utiliser dans l’interface utilisateur de création. Assurez-vous que les paramètres et les valeurs renvoyées relatives aux méthodes d’interface correspondent à l’un des types suivants :
+   Les paramètres des méthodes peuvent également être annotés de manière facultative au moyen de l’annotation @ServiceMethodParameter (com.adobe.exm.expeval.ServiceMethodParameter). Cette annotation n’est utilisée que pour spécifier des noms lisibles par l’utilisateur et des descriptions des paramètres de méthode à utiliser dans l’interface utilisateur de création. Assurez-vous que les paramètres et les valeurs renvoyées des méthodes d’interface appartiennent à l’un des types suivants :
 
    * java.lang.String
    * java.lang.Character
@@ -119,7 +115,6 @@ Vous pouvez créer un regroupement personnalisé pour exporter vos propres fonct
    * java.util.Date
    * java.util.List
 
-
 1. Définissez l’implémentation de l’interface, puis configurez-la comme un service OSGi et définissez les propriétés de services suivantes :
 
 ```jsp
@@ -129,7 +124,7 @@ Vous pouvez créer un regroupement personnalisé pour exporter vos propres fonct
   @org.apache.felix.scr.annotations.Property(name = "exm.service", boolValue = true)})
 ```
 
-L’entrée exm.service=true indique à Expression Manager que le service contient des fonctions distantes dont il peut se servir dans les expressions. La valeur &lt;service_id> doit être un identifiant Java valide (contenant uniquement des caractères alphanumériques ainsi que les symboles _ et $). Cette valeur, précédée du mot-clé REMOTE_, forme le préfixe utilisé au sein des expressions. Par exemple, une interface avec une méthode annotée bar() et un ID de service foo dans les propriétés de service peuvent être référencés dans les expressions à l’aide de la chaîne REMOTE_foo:bar().
+L’entrée exm.service=true indique à Expression Manager que le service contient des fonctions distantes dont il peut se servir dans les expressions. La valeur &lt;service_id> doit être un identifiant Java valide (contenant uniquement des caractères alphanumériques ainsi que les symboles _ et $). Cette valeur, précédée du mot-clé REMOTE_, forme le préfixe utilisé au sein des expressions. Par exemple, une interface avec une méthode annotée bar() et l’ID de service foo dans les propriétés du service peut être référencée dans les expressions à l’aide de REMOTE_foo:bar().
 
 ```java
 package mergeandfuse.com;
@@ -155,7 +150,7 @@ public class RemoteFuntionImpl implements RemoteFunction {
 }
 ```
 
-Voici des exemples d’échantillons à utiliser :
+Vous trouverez ci-dessous des exemples d’archives à utiliser :
 
 * **GoodFunctions.jar.zip** est le fichier jar avec un lot contenant un exemple de définition de fonction distante. Téléchargez le fichier GoodFunctions.jar.zip et décompressez-le pour obtenir le fichier jar.
 * **GoodFunctions.zip** est le package de code source pour définir une fonction distante personnalisée et créer un lot pour elle.

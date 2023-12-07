@@ -1,16 +1,13 @@
 ---
 title: Incorporation d’Adobe Sign à AEM Forms
-seo-title: Integrate Adobe Sign with AEM Adaptive Forms
 description: Découvrez comment configurer Adobe Sign pour votre Forms adaptatif AEM. Adobe Sign améliore le flux de travail et traite les documents pour les questions juridiques, commerciales, salariales, de gestion des ressources humaines, etc.
-uuid: e5049775-fb6c-4228-9823-e6a2811460da
 contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1981'
 ht-degree: 84%

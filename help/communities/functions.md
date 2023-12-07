@@ -1,21 +1,17 @@
 ---
 title: Fonctions de la communauté
-seo-title: Community Functions
 description: Découvrez comment accéder à la console Fonctions de la communauté
-seo-description: Learn how to access the Community Functions console
-uuid: d3d70134-f318-4709-a673-b01a3467d980
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 role: Admin
 exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2220'
-ht-degree: 6%
+source-wordcount: '2215'
+ht-degree: 2%
 
 ---
 
@@ -84,15 +80,15 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 
 * [Paramètres de titre et d’URL](#title-and-url-settings)
 
-* **Afficher la vue Mes activités**
+* **Afficher la vue &quot;Mes activités&quot;**
 
   Si cette option est sélectionnée, la page Activités comprend un onglet qui filtre les activités en fonction de celles générées dans la communauté par le membre actuel. La valeur par défaut est sélectionnée.
 
-* **Afficher la vue Toutes les activités**
+* **Afficher la vue &quot;Toutes les activités&quot;**
 
   Si cette option est sélectionnée, la page Activités comprend un onglet qui inclut toutes les activités générées au sein de la communauté auxquelles le membre actuel a accès. La valeur par défaut est sélectionnée.
 
-* **Afficher la vue Fil d’actualité**
+* **Afficher la vue &quot;Flux de nouvelles&quot;**
 
   Si cette option est sélectionnée, les pages Activités comprennent un onglet qui filtre les activités en fonction de celles que le membre actuel suit. La valeur par défaut est sélectionnée.
 
@@ -114,7 +110,7 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 
   Si cette option est sélectionnée, le blog offre aux membres la possibilité de télécharger des fichiers. La valeur par défaut est sélectionnée.
 
-* **Autoriser les réponses à thème**
+* **Autoriser les réponses à threads**
 
   S’il n’est pas sélectionné, le blog autorise les réponses (commentaires) à un article, mais les réponses aux commentaires ne sont pas autorisées. La valeur par défaut est sélectionnée.
 
@@ -132,7 +128,7 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 
 * [Paramètres de titre et d’URL](#title-and-url-settings)
 
-* **Autoriser l’épinglage**
+* **Permettre la mise en page**
 
   Si cette option est sélectionnée, le forum permet d’épingler les réponses aux sujets au début de la liste des commentaires. La valeur par défaut est sélectionnée.
 
@@ -144,7 +140,7 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 
   Si cette option est sélectionnée, le blog offre aux membres la possibilité de télécharger des fichiers. La valeur par défaut est sélectionnée.
 
-* **Autoriser les réponses à thème**
+* **Autoriser les réponses à threads**
 
   S’il n’est pas sélectionné, le blog autorise les réponses (commentaires) à un article, mais les réponses aux commentaires ne sont pas autorisées. La valeur par défaut est sélectionnée.
 
@@ -178,7 +174,7 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 
 * [Paramètres de titre et d’URL](#title-and-url-settings)
 
-* **Autoriser l’épinglage**
+* **Permettre la mise en page**
 
   Si cette option est sélectionnée, le forum permet d’épingler les réponses aux sujets au début de la liste des commentaires. La valeur par défaut est sélectionnée.
 
@@ -190,7 +186,7 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 
   Si cette option est sélectionnée, le forum offre aux membres la possibilité de télécharger des fichiers. La valeur par défaut est sélectionnée.
 
-* **Autoriser les réponses à thème**
+* **Autoriser les réponses à threads**
 
   S’il n’est pas sélectionné, le forum autorise les commentaires sur un sujet, mais les réponses à ces commentaires ne sont pas autorisées. La valeur par défaut est sélectionnée.
 
@@ -220,7 +216,7 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 
 * [Paramètres de titre et d’URL](#title-and-url-settings)
 
-* **Sélectionner les modèles de groupe**
+* **Sélectionner des modèles de groupe**
 
   Une liste déroulante qui permet de sélectionner un ou plusieurs modèles de groupe activés à partir desquels le futur créateur d’un nouveau groupe de communauté (dans l’environnement de publication) peut choisir.
 
@@ -228,7 +224,7 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 
   Si cette option est sélectionnée, le forum permet uniquement aux membres privilégiés de publier des sujets en autorisant la sélection d’une [groupe de sécurité des membres privilégiés](/help/communities/users.md#privileged-members-group). Si cette option n’est pas sélectionnée, tous les membres de la communauté sont autorisés à publier du contenu. La valeur par défaut est désélectionnée.
 
-* **Autoriser la publication de la création**
+* **Autoriser la création de publication**
 
   Si cette option est sélectionnée, les membres autorisés de la communauté peuvent créer un groupe dans l’environnement de publication. Si cette option est désélectionnée, les nouveaux groupes (sous-communautés) ne peuvent être créés que dans l’environnement de création à partir de la console Groupes de sites de communautés .
 La valeur par défaut est sélectionnée.
@@ -251,7 +247,7 @@ Lorsqu’elle est ajoutée à un modèle, la boîte de dialogue suivante s’ouv
 
   Si cette option est sélectionnée, l’idée inclut la possibilité pour les membres de charger des fichiers. La valeur par défaut est sélectionnée.
 
-* **Autoriser les réponses à thème**
+* **Autoriser les réponses à threads**
 
   Si elle n’est pas sélectionnée, l’idée autorise les réponses (commentaires) à un sujet, mais les réponses aux commentaires ne sont pas autorisées. La valeur par défaut est sélectionnée.
 
@@ -276,12 +272,12 @@ Lorsqu’elle est ajoutée à un modèle, la boîte de dialogue suivante s’ouv
   Si cette option est sélectionnée, une colonne pour les icônes de badge est incluse dans le tableau de classement.
 La valeur par défaut est désélectionnée.
 
-* **Afficher le nom de badge**
+* **Nom du badge d’affichage**
 
   Si cette option est sélectionnée, une colonne pour le nom du badge est incluse dans le tableau de classement.
 La valeur par défaut est désélectionnée.
 
-* **Afficher l’avatar**
+* **Avatar d’affichage**
 
   Si cette option est sélectionnée, l’avatar du membre est inclus dans le tableau de classement, en regard du lien de son nom vers son profil de membre.
 La valeur par défaut est désélectionnée.
@@ -302,7 +298,7 @@ Lorsqu’elle est ajoutée à un modèle, la configuration autorise la restricti
 
 * [Paramètres de titre et d’URL](#title-and-url-settings)
 
-* **Autoriser l’épinglage**
+* **Permettre la mise en page**
 
   Si cette option est sélectionnée, le forum permet d’épingler les réponses aux sujets au début de la liste des commentaires. La valeur par défaut est sélectionnée.
 
@@ -314,7 +310,7 @@ Lorsqu’elle est ajoutée à un modèle, la configuration autorise la restricti
 
   Si cette option est sélectionnée, le forum Q&amp;R offre aux membres la possibilité de télécharger des fichiers. La valeur par défaut est sélectionnée.
 
-* **Autoriser les réponses à thème**
+* **Autoriser les réponses à threads**
 
   Si cette option n’est pas sélectionnée, le forum Q&amp;R permet d’envoyer des commentaires (réponses) à une question publiée, mais les réponses aux réponses ne sont pas autorisées. La valeur par défaut est sélectionnée.
 
@@ -334,11 +330,11 @@ Pour créer une fonction de communauté, sélectionnez la fonction `Create Commu
 
 Dans le panneau Nom de la fonction de la communauté , un nom, une description et si la fonction est activée ou désactivée sont configurés :
 
-* **Nom de fonction de la communauté**
+* **Nom de la fonction communautaire**
 
   Nom de fonction utilisé pour l’affichage et le stockage.
 
-* **Description des fonctions de la communauté**
+* **Description de la fonction communautaire**
 
   Description de la fonction à afficher.
 

@@ -1,20 +1,16 @@
 ---
 title: Ajout de propriétés personnalisées aux actifs Correspondence Management
-seo-title: Add custom properties to Correspondence Management assets
 description: Découvrez comment ajouter des propriétés personnalisées aux actifs Correspondence Management.
-seo-description: Learn how to add custom properties to Correspondence Management assets.
-uuid: 4716e181-d3ea-424b-9544-376cc649bce7
 content-type: reference
 topic-tags: correspondence-management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 79437b96-7b57-4581-b7e7-fcaedc3d05de
 docset: aem65
 feature: Correspondence Management
 exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '4428'
-ht-degree: 53%
+source-wordcount: '4431'
+ht-degree: 52%
 
 ---
 
@@ -71,7 +67,7 @@ procédez comme suit pour ajouter une propriété personnalisée à tous les typ
 
 1. Dans le dossier d’éléments que vous avez créé, ajoutez un nœud à la propriété personnalisée dans toute la ressource (exemple : GeoLocation) en procédant comme suit :
 
-   1. Cliquez avec le bouton droit sur le dossier éléments et sélectionnez **Créer** > **Créer un nœud**.
+   1. Cliquez avec le bouton droit sur le dossier éléments et sélectionnez **Créer** > **Créer un noeud**.
 
       ![Créer un nœud dans CRX](assets/itemscreatenode.png)
 
@@ -339,7 +335,7 @@ Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à
 
 1. Dans le dossier d’éléments que vous venez de créer, ajoutez un nœud dans l’onglet personnalisé dans la ressource (ici : mytab, ce nom n’apparaît pas dans l’interface utilisateur) en procédant comme suit :
 
-   1. Cliquez avec le bouton droit sur le dossier éléments et sélectionnez **Créer** > **Créer un nœud**.
+   1. Cliquez avec le bouton droit sur le dossier éléments et sélectionnez **Créer** > **Créer un noeud**.
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
       **Nom :** mytab (ou le nom que vous souhaitez donner à cette propriété)
@@ -427,7 +423,7 @@ Procédez comme suit pour ajouter une propriété à un type de ressource :
 
 1. Dans le dossier d’éléments que vous avez créé, ajoutez un nœud à l’onglet personnalisé dans la ressource (exemple : customtab) en procédant comme suit :
 
-   1. Cliquez avec le bouton droit sur le dossier éléments et sélectionnez **Créer** > **Créer un nœud**.
+   1. Cliquez avec le bouton droit sur le dossier éléments et sélectionnez **Créer** > **Créer un noeud**.
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
       **Nom :** customtab (ou le nom que vous souhaitez donner à cette propriété)

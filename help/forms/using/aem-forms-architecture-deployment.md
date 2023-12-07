@@ -1,19 +1,15 @@
 ---
 title: Topologies d’architecture et de déploiement pour AEM Forms
-seo-title: Architecture and deployment topologies for AEM Forms
 description: Informations détaillées sur l’architecture d’AEM Forms et les topologies recommandées pour les nouveaux clients et les clients AEM existants et les clients effectuant une mise à niveau de LiveCycle ES4 vers AEM Forms.
-seo-description: Architecture details for AEM Forms and recommended topologies for new and existing AEM customers and customers upgrading from LiveCycle ES4 to AEM Forms.
-uuid: 90baa57a-4785-4b49-844c-a44717d3c12d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
-discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2469'
 ht-degree: 76%
 
 ---
@@ -37,7 +33,7 @@ L’architecture d’AEM Forms comprend les composants suivants :
 * **Services Forms :** fournissez des fonctionnalités liées aux formulaires, telles que la création, l’assemblage, la distribution et l’archivage de documents PDF, l’ajout de signatures numériques pour limiter l’accès aux documents et le décodage de formulaires à codes-barres. Ces services sont disponibles publiquement à des fins d’utilisation par le code personnalisé co-déployé dans AEM.
 * **Couche Web :** JSP ou servlets, reposant sur les services communs et de formulaires, qui fournissent les fonctionnalités suivantes :
 
-   * **Interface utilisateur frontale de création** : interface utilisateur de création et de gestion de formulaires pour créer et gérer des formulaires.
+   * **Interface utilisateur front-end de création** : interface utilisateur de création et de gestion de formulaires pour créer et gérer des formulaires.
    * **Interface frontale de rendu et d’envoi de formulaire**: interface utilisateur destinée à être utilisée par les utilisateurs finaux d’AEM Forms (par exemple, les citoyens accédant à un site web gouvernemental). Cette interface fournit des fonctionnalités de rendu de formulaire (affichage du formulaire dans un navigateur web) et d’envoi.
    * **API REST** : les JSP et servlets exportent un sous-ensemble de services de formulaires à des fins d’utilisation distante par des clients HTTP appropriés, comme le kit SDK mobile des formulaires.
 
@@ -85,7 +81,7 @@ L’image suivante affiche diverses configurations de serveur AEM Forms et leurs
 
 * **Stockage et post-traitement des données de correspondance provenant d’une instance de publication :** les workflows AEM exécutent le post-traitement facultatif des définitions de lettre correspondantes. Ces processus peuvent enregistrer les données finales traitées dans des magasins de données externes appropriés.
 
-* **Hébergement de HTML Workspace** : une instance de traitement héberge l’interface pour HTML Workspace. HTML Workspace fournit l’interface utilisateur pour l’affectation de tâche/groupe associée pour les processus de révision et d’approbation.
+* **Hébergement de HTML Workspace** : une instance de traitement héberge le front-end de HTML Workspace. HTML Workspace fournit l’interface utilisateur pour l’affectation de tâche/groupe associée pour les processus de révision et d’approbation.
 
 Une instance de traitement est configurée pour s’exécuter en mode de création pour les raisons suivantes :
 

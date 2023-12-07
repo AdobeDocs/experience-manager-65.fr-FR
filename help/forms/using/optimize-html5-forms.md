@@ -1,37 +1,33 @@
 ---
 title: Optimiser les formulaires HTML5
-seo-title: Optimizing HTML5 forms
 description: Vous pouvez optimiser la taille de sortie des formulaires HTML5.
-seo-description: You can optimize the output size of the HTML5 forms.
-uuid: 959f0b6a-9e4d-478a-afa8-4c39011fdf7a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: Mobile Forms
 exl-id: 14309ebd-8d00-4ca5-b4ab-44d80d97d066
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '283'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 29%
 
 ---
 
 # Optimiser les formulaires HTML5 {#optimizing-html-forms}
 
-Les formulaires HTML5 génèrent des formulaires au format HTML5. Le résultat peut être volumineux en fonction de facteurs comme la taille du formulaire et les images qu’il contient. Pour optimiser le transfert de données, l’approche recommandée consiste à compresser la réponse HTML à l’aide du serveur Web à partir duquel la requête est traitée. Cette approche permet de réduire la taille de la réponse, le trafic réseau et le temps nécessaire pour transmettre les données entre le serveur et le client.
+HTML5 forms effectue le rendu des formulaires au format HTML5. La sortie générée peut être volumineuse en fonction de facteurs tels que la taille du formulaire et les images qu’il contient. Pour optimiser le transfert de données, l’approche recommandée consiste à compresser la réponse du HTML à l’aide du serveur web à partir duquel la requête est traitée. Cette approche réduit la taille de la réponse, le trafic réseau et le temps nécessaire pour diffuser les données entre le serveur et les ordinateurs clients.
 
-Cet article décrit les étapes à suivre pour activer la compression sur le serveur Web Apache 2.0 32 bits, avec JBoss.
+Cet article décrit les étapes requises pour activer la compression sur le serveur web Apache 2.0 32 bits, avec JBoss.
 
 >[!NOTE]
 >
 >Les instructions suivantes ne concernent que le serveur web Apache 2.0 32 bits.
 
-Procurez-vous le logiciel du serveur Web Apache applicable sur votre système d’exploitation :
+Procurez-vous le logiciel du serveur web Apache correspondant à votre système d’exploitation :
 
-* Pour Windows, téléchargez le serveur Web Apache sur le site Apache HTTP Server Project.
-* Pour Solaris 64 bits, téléchargez le serveur Web Apache sur le site Sunfreeware pour Solaris.
-* Pour Linux, le serveur Web Apache est préinstallé sur le système.
+* Pour Windows, téléchargez le serveur web Apache à partir du site Apache HTTP Server Project.
+* Pour Solaris 64 bits, téléchargez le serveur web Apache à partir du site Web Sunfreeware for Solaris.
+* Pour Linux, le serveur web Apache est préinstallé sur un système Linux.
 
 Apache peut communiquer avec JBoss à l’aide du protocole HTTP ou AJP.
 
@@ -45,7 +41,7 @@ Apache peut communiquer avec JBoss à l’aide du protocole HTTP ou AJP.
 
    >[!NOTE]
    >
-   >Pour Linux, la valeur par défaut d’APACHE_HOME est /etc/httpd/.
+   >Pour Linux, le répertoire APACHE_HOME par défaut est /etc/httpd/.
 
 1. Configurez le proxy sur le port 8080 de JBoss.
 
@@ -61,9 +57,8 @@ Apache peut communiquer avec JBoss à l’aide du protocole HTTP ou AJP.
    >Lorsque vous utilisez un proxy, les modifications de configuration suivantes sont requises :
    >
    >* Accès : *https://&lt;server>:&lt;port>/system/console/configMgr*
-   * Modification de la configuration pour Apache Sling Referrer Filter
-   * Dans le champ Allow Hosts (Autoriser les hôtes), ajoutez une entrée pour le serveur proxy
-
+   * Modification de la configuration pour Apache Sling Referrer Filter
+   * Dans le champ Autoriser les hôtes, ajoutez l’entrée pour le serveur proxy.
 
 1. Activez la compression.
 

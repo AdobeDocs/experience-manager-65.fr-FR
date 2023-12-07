@@ -1,19 +1,15 @@
 ---
 title: Affichage de l’avatar de l’utilisateur
-seo-title: Displaying the user avatar
 description: Comment personnaliser l’espace de travail AEM Forms pour afficher l’image d’un utilisateur connecté.
-seo-description: How to customize the AEM Forms workspace to display the image of a logged-in user.
-uuid: 2961dc93-f0d0-4842-80f1-3c239a20e348
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
 exl-id: ee0708b0-b630-4a2b-84b6-3c0b92dd7777
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '192'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 78%
 
 ---
 
@@ -26,7 +22,7 @@ L’avatar de l’utilisateur connecté s’affiche dans le coin supérieur droi
 >le rapport d’aspect des images de l’utilisateur est de 1:1.
 
 1. Créez un DSC, à l’aide des détails mentionnés dans l’étape suivante. Pour plus d’informations, voir la section « Développement des composants d’AEM Forms » dans le guide [Programmer avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_fr).
-1. Dans le DSC, définissez une nouvelle SPI qui expose les méthodes getCurrentUserImageUrl et getUserImageUrl afin d’obtenir l’URL d’image d’un utilisateur d’AEM Forms. Voici un exemple de fragment de code Java™ :
+1. Dans le DSC, définissez une nouvelle SPI qui expose les méthodes getCurrentUserImageUrl et getUserImageUrl afin d’obtenir l’URL d’image d’un utilisateur d’AEM Forms. Voici un exemple de fragment de code Java™ :
 
    ```java
    public class DemoUserImageURLProviderService {
@@ -41,9 +37,9 @@ L’avatar de l’utilisateur connecté s’affiche dans le coin supérieur droi
    }
    ```
 
-1. Créez un fichier component.xml. Assurez-vous que spec-id est comme dans le fragment de code ci-dessous.
+1. Créez un fichier component.xml. Assurez-vous que spec-id est comme illustré dans le fragment de code ci-dessous.
 
-   Le fragment de code suivant est un exemple. Personnalisez-le pour l’adapter à vos besoins spécifiques.
+   Le fragment de code suivant est un exemple. Personnalisez-la selon vos besoins.
 
    ```java
    <component xmlns="https://adobe.com/idp/dsc/component/document">

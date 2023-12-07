@@ -1,17 +1,13 @@
 ---
 title: La Liste de contrôle – Référence supplémentaire
-seo-title: The Checklist - Further Reference
 description: Découvrez d’autres informations qui développent et/ou complètent les documents et principes couverts par la section Gestion des projets - Liste des bonnes pratiques.
-seo-description: Learn about further details that elaborate on and/or augment the documents and principles covered by the Managing Projects - Best Practices Checklist.
-uuid: 58a8b4ab-e447-4a12-b9e9-4cd3db11e06a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
-discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '3699'
 ht-degree: 100%
 
@@ -71,7 +67,7 @@ Comme pour tout projet, il est essentiel d’établir des règles de base dès q
 
 * **Rôles**
 
-   Les rôles doivent être clairement définis et connus de toutes les personnes qui participent au projet. En outre, il est conseillé de mettre en évidence les rôles suivants :
+  Les rôles doivent être clairement définis et connus de toutes les personnes qui participent au projet. En outre, il est conseillé de mettre en évidence les rôles suivants :
 
    * les décideurs et décideuses ;
    * les points de contact ;
@@ -82,7 +78,7 @@ Comme pour tout projet, il est essentiel d’établir des règles de base dès q
 
 * **Implication**
 
-   En impliquant dès que possible les parties intéressées, vous pouvez les encourager à devenir *parties prenantes* du projet. Vous augmentez ainsi leur engagement en vue du succès du projet.
+  En impliquant dès que possible les parties intéressées, vous pouvez les encourager à devenir *parties prenantes* du projet. Vous augmentez ainsi leur engagement en vue du succès du projet.
 
    * Côté clientèle, ce rôle inclut les personnes qui travaillent au quotidien avec le système.
    * Au sein de votre propre équipe de projet, cette implication inclut également les personnes responsables de l’assurance qualité. Mieux elles comprennent les exigences de la clientèle, mieux elles peuvent planifier les tests.
@@ -93,20 +89,20 @@ Comme pour tout projet, il est essentiel d’établir des règles de base dès q
 
 * **Processus**
 
-   Les processus définis dépendent de votre projet individuel. Là encore, essayez de garder ces processus simples, en tenant compte des éléments suivants :
+  Les processus définis dépendent de votre projet individuel. Là encore, essayez de garder ces processus simples, en tenant compte des éléments suivants :
 
    * Vous devez définir des processus (et voies de communication) pour interagir avec des tiers, comme les agences de conception et les fournisseurs de logiciels tiers.
    * Souvent, le client ou la cliente dispose de ses propres procédures et outils de gestion de projet et de création de rapports.
 
 * **Outils de tracking**
 
-   De nombreux outils sont disponibles pour effectuer le tracking d’informations sur les bugs, les tâches et d’autres aspects de votre projet. Voir [Vue d’ensemble des outils potentiels](#overview-of-potential-tools) pour plus d’informations.
+  De nombreux outils sont disponibles pour effectuer le tracking d’informations sur les bugs, les tâches et d’autres aspects de votre projet. Voir [Vue d’ensemble des outils potentiels](#overview-of-potential-tools) pour plus d’informations.
 
    * Le point essentiel à noter ici est de ne conserver qu’une seule copie de l’information et de la partager (et donc d’accéder à l’outil utilisé). Ce workflow facilite la maintenance et permet d’éviter les incohérences.
 
 * **Portée**
 
-   Définissez clairement ce qui doit être couvert par le projet à différents niveaux :
+  Définissez clairement ce qui doit être couvert par le projet à différents niveaux :
 
    * les versions individuelles (si un processus de publication itératif est utilisé, et qu’elles soient diffusées ou non aux clientes et clients ou à votre équipe de test interne) ;
    * le projet AEM ;
@@ -115,7 +111,7 @@ Comme pour tout projet, il est essentiel d’établir des règles de base dès q
 
 * **Création de rapports**
 
-   Définissez clairement les informations que vous souhaitez rapporter, sous quelle forme, à quelle fréquence et à qui.
+  Définissez clairement les informations que vous souhaitez rapporter, sous quelle forme, à quelle fréquence et à qui.
 
 * **Terminologie**
 
@@ -242,14 +238,14 @@ Les temps de réponse que vous visez sont différents dans les environnements de
 
 * **Environnement de création**
 
-   Cet environnement est utilisé par les auteurs et autrices qui saisissent et mettent à jour du contenu. Il doit donc :
+  Cet environnement est utilisé par les auteurs et autrices qui saisissent et mettent à jour du contenu. Il doit donc :
 
    * répondre aux besoins de quelques utilisateurs et utilisatrices qui génèrent un grand nombre de requêtes lors de la mise à jour de pages de contenu et les éléments individuels de ces pages ;
    * être aussi rapide que possible afin d’optimiser leur productivité pour intégrer du contenu à votre site web.
 
 * **Environnement de publication**
 
-   Cet environnement intègre le contenu que vous mettez à la disposition de vos utilisateurs et utilisatrices :
+  Cet environnement intègre le contenu que vous mettez à la disposition de vos utilisateurs et utilisatrices :
 
    * la vitesse reste essentielle, mais elle est souvent plus faible qu’un environnement de création ;
    * d’autres mécanismes d’amélioration des performances sont souvent appliqués :
@@ -285,13 +281,13 @@ Il existe plusieurs mécanismes permettant de surveiller les temps de réponse 
 
 * **Surveillance des temps de réponse avec le request.log AEM**
 
-   Le journal des requêtes est un point de départ intéressant pour l’analyse de performances. Entre autres informations, vous pouvez consulter les temps de réponse des requêtes individuelles. Voir [Optimisation des performances](/help/sites-deploying/configuring-performance.md) pour plus d’informations.
+  Le journal des requêtes est un point de départ intéressant pour l’analyse de performances. Entre autres informations, vous pouvez consulter les temps de réponse des requêtes individuelles. Voir [Optimisation des performances](/help/sites-deploying/configuring-performance.md) pour plus d’informations.
 
 * **Surveillance des temps de réponse avec des commentaires HTML**
 
-   Les commentaires HTML peuvent être utilisés pour inclure des informations sur le temps de réponse dans la source de chaque page :
+  Les commentaires HTML peuvent être utilisés pour inclure des informations sur le temps de réponse dans la source de chaque page :
 
-   `</body> </html>v <-- Page took 58 milliseconds to be rendered by the server --> Response times for search requests`
+  `</body> </html>v <-- Page took 58 milliseconds to be rendered by the server --> Response times for search requests`
 
 #### Requêtes de recherche {#search-requests}
 
@@ -317,11 +313,11 @@ Ces requêtes de recherche doivent être prévues et intégrées dès le début 
 
 * **Surveillance des temps de réponse de la recherche avec le fichier request.log d’AEM**
 
-   Là encore, le fichier request.log peut être utilisé pour surveiller les temps de réponse des requêtes de recherche. Voir [Optimisation des performances](/help/sites-deploying/configuring-performance.md) pour plus d’informations.
+  Là encore, le fichier request.log peut être utilisé pour surveiller les temps de réponse des requêtes de recherche. Voir [Optimisation des performances](/help/sites-deploying/configuring-performance.md) pour plus d’informations.
 
 * **Mécanismes programmés pour mesurer les temps de réponse des recherches**
 
-   Pour personnaliser les informations que vous collectez sur les requêtes de recherche et leurs performances, il est recommandé d’inclure la collecte d’informations dans le code source de votre projet. Voir [Optimisation des performances](/help/sites-deploying/configuring-performance.md) pour plus d’informations.
+  Pour personnaliser les informations que vous collectez sur les requêtes de recherche et leurs performances, il est recommandé d’inclure la collecte d’informations dans le code source de votre projet. Voir [Optimisation des performances](/help/sites-deploying/configuring-performance.md) pour plus d’informations.
 
 ### Simultanéité {#concurrency}
 
@@ -353,15 +349,15 @@ Avant de discuter des mesures connexes, une définition rapide des termes :
 
 * **Capacité et volume**
 
-   | Quoi / Où | Capacité | Volume |
-   |---|---|---|
-   | Client | Puissance de calcul de l’ordinateur de l’utilisateur ou utilisatrice. | Complexité de la mise en page. |
-   | Réseau | Bande passante réseau. | Taille de la page (code, images, etc.). |
-   | Cache du Dispatcher | Mémoire serveur du serveur Web (mémoire principale et disque dur). | Serveur web (mémoire principale et disque dur). Nombre et taille des pages mises en cache. |
-   | Cache de sortie | Mémoire serveur du serveur AEM (mémoire principale et disque dur). | Nombre et taille des pages dans le cache de sortie, et nombre de dépendances par page. Le cache du Dispatcher réduit ce volume. |
-   | Serveur web | Puissance de calcul du serveur Web. | Nombre de requêtes. La mise en cache réduit ce volume. |
-   | Modèle | Puissance de calcul du serveur web. | Complexité des modèles. |
-   | Référentiel | Performances du référentiel. | Nombre de pages chargées à partir du référentiel. |
+  | Quoi / Où | Capacité | Volume |
+  |---|---|---|
+  | Client | Puissance de calcul de l’ordinateur de l’utilisateur ou utilisatrice. | Complexité de la mise en page. |
+  | Réseau | Bande passante réseau. | Taille de la page (code, images, etc.). |
+  | Cache du Dispatcher | Mémoire serveur du serveur Web (mémoire principale et disque dur). | Serveur web (mémoire principale et disque dur). Nombre et taille des pages mises en cache. |
+  | Cache de sortie | Mémoire serveur du serveur AEM (mémoire principale et disque dur). | Nombre et taille des pages dans le cache de sortie, et nombre de dépendances par page. Le cache du Dispatcher réduit ce volume. |
+  | Serveur web | Puissance de calcul du serveur Web. | Nombre de requêtes. La mise en cache réduit ce volume. |
+  | Modèle | Puissance de calcul du serveur web. | Complexité des modèles. |
+  | Référentiel | Performances du référentiel. | Nombre de pages chargées à partir du référentiel. |
 
 ### Autres mesures {#other-metrics}
 
@@ -387,7 +383,6 @@ La [liste de contrôle de sécurité](/help/sites-administering/security-checkli
 >* sont conçus comme un aperçu abstrait ; voir la [Liste de contrôle du projet](/help/managing/best-practices.md) pour des phases/jalons/tâches spécifiques.
 >* Toutes les échelles de temps sont théoriques.
 >
-
 
 Pour une nouvelle implémentation d’un projet AEM standard, tenez compte des tâches suivantes :
 
@@ -423,12 +418,12 @@ Voici quelques points à noter pour chaque catégorie :
       * Le premier sprint entraîne le premier déploiement dans votre environnement de test.
       * Chaque sprint a un résultat exécutable.
       * Chaque sprint reçoit une approbation client (minimum de test structuré avec commentaires).
+
    * Planifiez l’éventualité d’une mise à jour de la version d’AEM disponible au cours du projet.
    * Planifiez les tests et l’optimisation lors des sprints.
    * Planifiez les phases de stabilisation et d’optimisation.
    * Créez un journal des éléments à planifier pour les prochaines versions.
    * Planifiez la prise en charge et la participation des partenaires.
-
 
 * **Infrastructure**
 
@@ -438,12 +433,14 @@ Voici quelques points à noter pour chaque catégorie :
       * Définissez les objectifs de performances (cela signifie que vous devez définir clairement les attentes).
       * Définissez l’architecture du matériel et de l’infrastructure, y compris le dimensionnement.
       * Définissez le déploiement.
+
    * Utilisez plusieurs itérations. Pour la préparation du premier sprint et de la configuration initiale, préparez les éléments suivants :
 
       * Environnement de développement.
       * Processus de développement.
       * Environnement de test.
       * Processus de déploiement (y compris la gestion de la configuration).
+
    * Planifiez plusieurs tests de chargement.
    * Planifiez les tests et l’optimisation lors des sprints.
    * Planifiez une phase de stabilisation et d’optimisation.
@@ -451,8 +448,6 @@ Voici quelques points à noter pour chaque catégorie :
    * Utilisez aussi tôt que possible les utilisateurs et utilisatrices nommés et les rôles définis.
    * Planifiez les formations (formation des administrateurs et administratrices, par exemple).
    * Planifiez le transfert vers les opérations.
-
-
 
 * **Contenu**
 

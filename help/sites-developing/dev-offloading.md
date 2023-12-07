@@ -1,31 +1,27 @@
 ---
 title: Créer et utiliser des tâches pour le déchargement
-seo-title: Creating and Consuming Jobs for Offloading
-description: La fonctionnalité Apache Sling Discovery fournit une API Java qui vous permet de créer des tâches JobManager et des services JobConsumer qui utilisent ces dernières.
-seo-description: The Apache Sling Discovery feature provides a Java API that enables you to create JobManager jobs and JobConsumer services that consume them
-uuid: d6a5beb0-0618-4b61-9b52-570862eac920
+description: La fonctionnalité Apache Sling Discovery fournit une API Java qui vous permet de créer des tâches JobManager et des services JobConsumer qui les utilisent.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
 exl-id: 4e6f452d-0251-46f3-ba29-1bd85cda73a6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '392'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 38%
 
 ---
 
 # Créer et utiliser des tâches pour le déchargement{#creating-and-consuming-jobs-for-offloading}
 
-La fonctionnalité Apache Sling Discovery fournit une API Java qui vous permet de créer des tâches JobManager et des services JobConsumer qui utilisent ces dernières.
+La fonctionnalité Apache Sling Discovery fournit une API Java qui vous permet de créer des tâches JobManager et des services JobConsumer qui les utilisent.
 
 Pour plus d’informations sur la création de topologies de déchargement et la configuration de la consommation de rubrique, voir [Tâches de déchargement](/help/sites-deploying/offloading.md).
 
 ## Gestion des charges utiles de la tâche {#handling-job-payloads}
 
-La structure de déchargement définit deux propriétés de tâche que vous utilisez pour identifier la charge utile de la tâche. Les agents de réplication de déchargement utilisent ces propriétés pour identifier les ressources à répliquer sur les instances de la topologie :
+La structure de déchargement définit deux propriétés de tâche que vous utilisez pour identifier la charge utile de la tâche. Les agents de réplication de déchargement utilisent ces propriétés pour identifier les ressources à répliquer sur les instances dans la topologie :
 
 * `offloading.job.input.payload` : liste de chemins d’accès au contenu séparés par des virgules. Le contenu est répliqué sur l’instance qui exécute la tâche.
 * `offloading.job.output.payload` : liste de chemins d’accès au contenu séparés par des virgules. Une fois l’exécution de la tâche terminée, le payload est répliqué sur ces chemins d’accès sur l’instance qui a créé la tâche.
@@ -35,17 +31,17 @@ Utilisez l’énumération `OffloadingJobProperties` pour faire référence aux 
 * `OffloadingJobProperties.INPUT_PAYLOAD.propertyName()`
 * `OffloadingJobProperties.OUTPUT_PAYLOAD.propetyName()`
 
-Une charge utile n’est pas obligatoire pour les tâches. Elle est toutefois nécessaire si la tâche requiert la manipulation d’une ressource et si l’ordinateur sur lequel elle est déchargée n’a pas servi à la créer.
+Les tâches ne nécessitent pas de payloads. Toutefois, la charge utile est nécessaire si la tâche nécessite la manipulation d’une ressource et si la tâche est déchargée sur un ordinateur qui n’a pas créé la tâche.
 
 ## Création de tâches pour le déchargement {#creating-jobs-for-offloading}
 
-Créez un client qui appelle la méthode JobManager.addJob afin de créer une tâche exécutée par un service JobConsumer sélectionné automatiquement. Indiquez les informations suivantes pour créer la tâche :
+Créez un client qui appelle la méthode JobManager.addJob pour créer une tâche qu’un JobConsumer sélectionné automatiquement exécute. Indiquez les informations suivantes pour créer la tâche :
 
-* Rubrique : rubrique de tâche.
+* Rubrique : Rubrique de la tâche.
 * Nom : (Facultatif)
 * Carte des propriétés : objet `Map<String, Object>` contenant un nombre indéfini de propriétés, telles que les chemins de payload en entrée et en sortie. Cet objet Map est disponible pour l’objet JobConsumer qui exécute la tâche.
 
-L’exemple de service suivant crée une tâche pour un chemin de charge utile en entrée et de rubrique donné.
+L’exemple de service suivant crée une tâche pour une rubrique et un chemin de payload d’entrée donnés.
 
 ```java
 package com.adobe.example.offloading;
@@ -168,7 +164,7 @@ public class MyJobConsumer implements JobConsumer {
 }
 ```
 
-La classe MyJobConsumer génère les messages de journal suivants pour une charge utile en entrée de /content/geometrixx/de/services :
+La classe MyJobConsumer génère les messages de journal suivants pour un payload d’entrée /content/geometrixx/de/services :
 
 ```shell
 10.06.2013 16:02:40.803 *INFO* [pool-7-thread-17-<main queue>(com/adobe/example/offloading)] com.adobe.example.offloading.MyJobConsumer Consuming job of topic: com/adobe/example/offloading
@@ -176,13 +172,13 @@ La classe MyJobConsumer génère les messages de journal suivants pour une charg
 10.06.2013 16:02:40.884 *INFO* [pool-7-thread-17-<main queue>(com/adobe/example/offloading)] com.adobe.example.offloading.MyJobConsumer Job OK for payload /content/geometrixx/de/services
 ```
 
-Vous pouvez observer la propriété consommée à l’aide de CRXDE Lite :
+La propriété Consumed peut être observée à l’aide de CRXDE Lite :
 
 ![chlimage_1-25](assets/chlimage_1-25a.png)
 
 ## Dépendances Maven {#maven-dependencies}
 
-Ajoutez les définitions de dépendance suivantes à votre fichier pom.xml, de sorte que Maven puisse résoudre les classes liées au déchargement.
+Ajoutez les définitions de dépendance suivantes à votre fichier pom.xml afin que Maven puisse résoudre les classes liées au déchargement.
 
 ```xml
 <dependency>
@@ -199,7 +195,7 @@ Ajoutez les définitions de dépendance suivantes à votre fichier pom.xml, de s
 </dependency>
 ```
 
-Les exemples précédents nécessitaient également les définitions de dépendance suivantes :
+Les exemples précédents nécessitaient également les définitions de dépendance suivantes :
 
 ```xml
 <dependency>

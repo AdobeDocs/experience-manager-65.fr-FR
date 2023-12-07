@@ -1,25 +1,21 @@
 ---
 title: Configurer le mot de passe de liaison LDAP
-seo-title: Configure the LDAP bind password
-description: Découvrez comment configurer le champ du mot de passe de liaison avant d’importer le fichier de configuration dans un autre système.
-seo-description: Learn how to configure the bind password field before you import the configuration file into another system.
-uuid: 1ab1907c-8b55-4b6f-bd5b-49f22d78b8a8
+description: Découvrez comment configurer le champ de mot de passe de liaison avant d’importer le fichier de configuration dans un autre système.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 165b3950-b03f-4848-8361-ffb0a26d2658
 exl-id: c72794f5-8767-409e-a1df-91a8fdc54d18
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 100%
+ht-degree: 60%
 
 ---
 
 # Configurer le mot de passe de liaison LDAP{#configure-the-ldap-bind-password}
 
-Pour éviter les risques de sécurité, le champ du mot de passe de liaison n’est pas configuré dans le fichier de configuration (config.xml) exporté. Avant d’importer ce fichier dans un autre système, veillez à configurer ce mot de passe, qui remplace le mot de passe défini dans la base de données. Un mot de passe null ne remplace pas un mot de passe non null existant.
+Pour éviter tout risque de sécurité, le champ du mot de passe de liaison dans le fichier de configuration exporté (config.xml) n&#39;est pas configuré. Avant d’importer le fichier de configuration dans un autre système, assurez-vous de configurer ce mot de passe. Ce mot de passe remplace un mot de passe existant qui est stocké dans la base de données. Un mot de passe nul ne remplace pas une valeur de mot de passe non nulle existante.
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Importer et exporter des fichiers de configuration.
 1. Pour exporter le paramètre de configuration en cours dans un fichier, cliquez sur Exporter, puis enregistrez le fichier de configuration dans un autre emplacement.

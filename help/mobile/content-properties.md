@@ -1,18 +1,14 @@
 ---
 title: Propriétés et noeuds de contenu
-seo-title: Content Properties and Nodes
 description: Consultez cette page pour en savoir plus sur les propriétés de contenu et les noeuds.
-seo-description: Follow this page to learn about content properties and nodes.
-uuid: 2dad52c8-5b6c-4b90-8498-62217a9a27fc
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
 exl-id: 05c8c846-69cc-4075-9149-33890b3d1e08
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '354'
 ht-degree: 21%
 
 ---
@@ -25,7 +21,7 @@ ht-degree: 21%
 
 Les articles, bannières et collections sont représentés sous la forme cq:Pages dans AEM.
 
-Ils partagent les mêmes propriétés communes que dans n’importe quel cq:Page , en plus de plusieurs autres propriétés affichées ci-dessous qui représentent les métadonnées des services mobiles à la demande Adobe Experience Manager (AEM) et l’intégration prenant en charge les propriétés.
+Ils partagent les mêmes propriétés communes que dans n’importe quel cq:Page , en plus de plusieurs autres propriétés affichées ci-dessous qui représentent les métadonnées des services Mobile On Demand de Adobe Experience Manager (AEM) et l’intégration qui prennent en charge les propriétés.
 
 Les tableaux suivants décrivent les propriétés et les noeuds du contenu.
 
@@ -35,7 +31,7 @@ Les tableaux suivants décrivent les propriétés et les noeuds du contenu.
 |---|---|---|---|
 | dps-id | Chaîne |  | affectée par AEM Mobile et stockée par AEM une fois chargée dans AEM Mobile ou importée depuis AEM Mobile |
 | dps-resourceType | Chaîne | dps:Article | dps:Bannière | dps:Collection | propriété de type d’entité |
-| dps-version | Chaîne |  | version de l’entité AEM Mobile (également contenue dans aemm-id complet) |
+| dps-version | Chaîne |  | version de l’entité AEM Mobile (également contenue dans l’aemm-id complet) |
 | dps-lastSynced | Date |  | date de la dernière synchronisation/importation d’AEM Mobile dans AEM |
 | dps-lastUploaded | Date |  | date du dernier téléchargement d’AEM vers AEM Mobile |
 | dps-lastUploadedBy | Chaîne : userid |  | ID de l’utilisateur qui a effectué la dernière requête de chargement d’AEM vers AEM Mobile |

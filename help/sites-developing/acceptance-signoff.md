@@ -1,33 +1,29 @@
 ---
 title: Acceptation et approbation
-seo-title: Acceptance and Sign-off
-description: Les tests d’acceptation constituent une catégorie spéciale de tests utilisés pour vérifier que le projet satisfait aux exigences du client et que ce dernier l’accepte.
-seo-description: Acceptance Tests are a special category of test used to verify that the project fulfils the customer's requirements and that the customer accepts the project
-uuid: 6bdd2a99-d141-43ef-9102-99e65aba02d3
+description: Les tests d’acceptation sont une catégorie spéciale de tests utilisés pour vérifier que le projet satisfait aux exigences du client et que le client accepte le projet.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: d8da194f-f161-4ba7-b8cc-c2c282dc9c83
 exl-id: 30ac9a63-f9e6-4075-b67e-4524d11a0e29
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 100%
+ht-degree: 10%
 
 ---
 
 # Acceptation et approbation{#acceptance-and-sign-off}
 
-Comme indiqué précédemment, les [tests d’acceptation](/help/sites-developing/planning.md) forment une catégorie de tests conçus spécialement pour vérifier les points suivants :
+Comme mentionné ci-dessus : [Tests d’acceptation](/help/sites-developing/planning.md) sont une catégorie spéciale de test utilisée pour vérifier que :
 
 * le projet répond aux exigences du client ;
 * Le client accepte le projet.
 
-Ils doivent être définis par le client et par le chef de projet. Ils revêtent une importance particulière, en ce sens qu’ils sont souvent liés à la facturation finale.
+Elles doivent être définies par le client et le chef de projet. Elles ont une signification particulière car elles sont souvent liées à la facturation finale.
 
-C’est la raison pour laquelle :
+Pour cette raison, ils doivent être :
 
-* Ils doivent être définis dès que possible.
-* Ils doivent être mis à jour lorsque cela s’avère nécessaire.
+* Défini le plus tôt possible.
+* Mise à jour chaque fois que nécessaire.
 * Toute modification doit être formellement acceptée et signée par les deux parties (partenaire et client).

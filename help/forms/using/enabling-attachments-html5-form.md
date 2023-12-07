@@ -1,19 +1,15 @@
 ---
 title: Activer les pièces jointes pour un formulaire HTML5
-seo-title: Enabling attachments for an HTML5 form
-description: Par défaut, la prise en charge de pièces jointes des formulaires HTML5 est désactivée.
-seo-description: By default, the attachment support for HTML5 forms is disabled.
-uuid: 2c62ac3e-4b27-46c7-a61d-a805fb5d26fb
+description: Par défaut, la prise en charge des pièces jointes pour les formulaires HTML5 est désactivée.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 feature: Mobile Forms
 exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
-source-git-commit: 6e2a0f053a1f6989524e9ae2b1dcb001b0397ac6
-workflow-type: ht
-source-wordcount: '335'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '339'
+ht-degree: 85%
 
 ---
 
@@ -27,7 +23,7 @@ Vous pouvez télécharger, prévisualiser, et envoyer des pièces jointes avec d
    |--- |---|
    | multiSelect | vrai ou faux (vrai par défaut) |
    | fileSizeLimit | Nombre en Mo (2 Mo par défaut). Par exemple, 5. |
-   | buttonText | Texte des boutons de la fenêtre contextuelle (« Joindre » par défaut). |
+   | buttonText | Texte des boutons de la fenêtre pop-up (« Joindre » par défaut). |
    | d’accepter ; | liste séparée par des virgules des types de fichiers à accepter (« audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf » par défaut). |
 
    Par exemple :
@@ -38,10 +34,10 @@ Vous pouvez télécharger, prévisualiser, et envoyer des pièces jointes avec d
 
    >[!NOTE]
    >
-   >Microsoft Internet Explorer 9 permet aux utilisateurs de joindre un fichier plus volumineux que la limite spécifiée. Il s’agit d’un problème connu.
+   >Dans Microsoft Internet Explorer 9, les utilisateurs peuvent joindre des fichiers supérieurs à la limite spécifiée. C&#39;est un problème connu.
 
 1. Utilisez [l’éditeur de métadonnées](/help/forms/using/manage-form-metadata.md) pour sélectionner le profil personnalisé que vous avez créé ci-dessus pour les formulaires HTML5.
-1. Générez votre modèle de formulaire avec un profil personnalisé et l’icône de pièces jointes apparaît sur la barre d’outils Formulaires.
+1. Effectuez le rendu de votre modèle de formulaire avec un profil personnalisé et l’icône de pièces jointes apparaît dans la barre d’outils de formulaires.
 
    >[!NOTE]
    >

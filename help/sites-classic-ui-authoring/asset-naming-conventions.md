@@ -1,19 +1,15 @@
 ---
 title: Conventions de dénomination pour le test des ressources
-seo-title: Naming conventions for assets
 description: Les nœuds dans le référentiel sont soumis aux conventions de dénomination de Java Content Repository. Toutefois, Adobe Experience Manager impose d’autres conventions pour le nom des nœuds de ressource.
-seo-description: Nodes in the repository are subject to naming conventions of the Java Content Repository. However, Adobe Experience Manager imposes further conventions for the name of asset nodes.
-uuid: 6b622a60-90e8-461e-9b67-42c11c7038f9
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
-discoiquuid: 55e66c66-0120-4ed4-94c5-d65a434bb59b
 exl-id: bb6a5913-0871-47c7-8641-936e98920ec0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '128'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 69%
 
 ---
 
@@ -23,14 +19,14 @@ Les nœuds dans le référentiel sont soumis aux conventions de dénomination de
 
 ## Interface utilisateur classique {#classic-ui}
 
-L’IU classique applique des restrictions plus strictes :
+L’IU classique impose des restrictions plus strictes :
 
-* Valide le nom de ressource dans le cas d’un nom de nœud explicite lorsque :
+* Valide le nom de la ressource lorsqu’un nom de noeud explicite est utilisé dans l’une des situations suivantes :
 
-   * un titre de ressource est fourni pour la conversion dans le nom de nœud
-   * un nom de nœud explicite est fourni
+   * un titre de ressource est fourni pour la conversion dans le nom de noeud.
+   * un nom de nœud explicite est fourni.
 
-* Caractères valides (seuls ces caractères sont effectivement valides lorsqu’une ressource est créée dans l’IU classique) :
+* Caractères valides (seuls ces caractères sont réellement valides lors de la création d’une ressource dans l’interface utilisateur classique) :
 
    * « a » à « z »
    * « A » à « Z »

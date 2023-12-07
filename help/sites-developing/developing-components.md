@@ -1,21 +1,17 @@
 ---
 title: Développer des composants AEM
-seo-title: Developing AEM Components
 description: Les composants AEM servent à stocker, mettre en forme et générer le rendu du contenu diffusé dans vos pages Web.
-seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
-uuid: 1f39daa6-7277-45a2-adcc-74b58c93b8e4
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3447'
-ht-degree: 91%
+source-wordcount: '3246'
+ht-degree: 90%
 
 ---
 
@@ -398,7 +394,7 @@ Ce comportement, et la relation ressource-à-composant requise, peuvent être co
    * `assetMimetype` :
 
       * Type : `String`
-      * Valeur : type mime de l’actif associé, par exemple, `image/*`
+      * Valeur : type MIME de la ressource associée ; par exemple, `image/*`
 
    * `droptarget` :
 
@@ -455,7 +451,7 @@ Lors de la migration d’un composant de l’IU classique vers un composant pouv
 
 * Les composants :
 
-   * migrent le code [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code)  qui utilise des fonctions spécifiques à l’IU classique ;
+   * Migrer [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) code qui utilise des fonctions spécifiques à l’IU classique
    * Plugin RTE. Pour plus d’informations, consultez [Configuration de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md) ;
    * [migrent le code `cq:listener`](#migrating-cq-listener-code) qui utilise des fonctions spécifiques à l’IU classique.
 

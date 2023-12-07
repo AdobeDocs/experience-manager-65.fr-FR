@@ -1,20 +1,16 @@
 ---
 title: Créer le balisage dans une application AEM
-seo-title: Building Tagging into an AEM Application
 description: Utilisation ou extension de balises par programmation dans une application AEM personnalisée
-seo-description: Programmatically work with tags or extending tags within a custom AEM application
-uuid: 0549552e-0d51-4162-b418-babf4ceee046
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
-source-git-commit: 325af649564d93beedfc762a8f5beacec47b1641
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 67%
+source-wordcount: '849'
+ht-degree: 75%
 
 ---
 
@@ -134,7 +130,7 @@ Le widget de formulaire `CQ.tagging.TagInputField` est destiné à la saisie de 
 
 ## Tag Garbage Collector {#the-tag-garbage-collector}
 
-Tag Garbage Collector est un service d’arrière-plan qui nettoie les balises masquées et inutilisées. Les balises masquées et non utilisées sont des balises `/content/cq:tags` qui ont une propriété `cq:movedTo` et ne sont pas appliquées à un nœud de contenu. Leur nombre est nul. En utilisant ce processus de suppression différée, le noeud de contenu (c’est-à-dire, le `cq:tags` ) ne doit pas être mise à jour dans le cadre de l’opération de déplacement ou de fusion. Les références de la propriété `cq:tags` sont automatiquement mises à jour lorsque la propriété `cq:tags` est mise à jour, par exemple via la boîte de dialogue des propriétés de la page.
+Tag Garbage Collector est un service d’arrière-plan qui nettoie les balises masquées et inutilisées. Les balises masquées et non utilisées sont des balises `/content/cq:tags` qui ont une propriété `cq:movedTo` et ne sont pas appliquées à un nœud de contenu. Leur nombre est nul. Avec ce processus de suppression à l’arrière-plan, le nœud de contenu (c’est-à-dire la propriété `cq:tags`) n’a pas besoin d’être mis à jour lors du déplacement ou de la fusion. Les références de la propriété `cq:tags` sont automatiquement mises à jour lorsque la propriété `cq:tags` est mise à jour, par exemple via la boîte de dialogue des propriétés de la page.
 
 Tag Garbage Collector s’exécute par défaut une fois par jour. Vous pouvez le configurer à l’adresse suivante :
 
@@ -152,7 +148,7 @@ La recherche de balises et l’obtention de la liste des balises fonctionnent co
 
 ## Balises dans différentes langues {#tags-in-different-languages}
 
-Comme le décrit la documentation relative à la gestion des balises, dans la section [Gestion des balises dans différentes langues](/help/sites-administering/tags.md#managing-tags-in-different-languages), une balise `title` peut être définie dans différentes langues. Une propriété sensible à la langue est ensuite ajoutée au nœud de la balise. Cette propriété a le format `jcr:title.<locale>`, par ex. `jcr:title.fr` pour la traduction en français. Le `<locale>` doit être une chaîne de paramètres régionaux ISO en minuscules et utiliser &quot;_&quot; au lieu de &quot;-&quot;, par exemple : `de_ch`.
+Comme le décrit la documentation relative à la gestion des balises, dans la section [Gestion des balises dans différentes langues](/help/sites-administering/tags.md#managing-tags-in-different-languages), une balise `title` peut être définie dans différentes langues. Une propriété sensible à la langue est ensuite ajoutée au nœud de la balise. Cette propriété a le format `jcr:title.<locale>`, par ex. `jcr:title.fr` pour la traduction en français. La variable `<locale>` doit être une chaîne de paramètres régionaux ISO en minuscules et utiliser &quot;_&quot; au lieu de &quot;-&quot;, par exemple : `de_ch`.
 
 Lorsque la balise **Animals** est ajoutée à la page **Produits**, la valeur `stockphotography:animals` est ajoutée à la propriété `cq:tags` du nœud /content/geometrixx/fr/products/jcr:content. La traduction est référencée à partir du nœud de balise.
 
@@ -182,7 +178,7 @@ Dans AEM, la langue peut être identifiée à partir de la langue de la page ou 
 
    * `slingRequest.getLocale()`
 
-Le `currentPage` et `slingRequest` sont disponibles dans une JSP via la fonction [&lt;cq:definedobjects>](/help/sites-developing/taglib.md) balise .
+La variable `currentPage` et `slingRequest` sont disponibles dans une JSP via la fonction [&lt;cq:definedobjects>](/help/sites-developing/taglib.md) balise .
 
 Pour le balisage, la localisation dépend du contexte comme balise . `titles`peut être affiché dans la langue de la page, dans la langue de l’utilisateur ou dans toute autre langue.
 
@@ -198,7 +194,7 @@ La nouvelle langue (finnois) est désormais disponible dans la boîte de dialogu
 
 >[!NOTE]
 >
->La nouvelle langue doit être l&#39;une des langues AEM reconnues. En d’autres termes, il doit être disponible sous la forme d’un noeud . `/libs/wcm/core/resources/languages`.
+>La nouvelle langue doit être l&#39;une des langues AEM reconnues. En d’autres termes, il doit être disponible sous forme de noeud sous `/libs/wcm/core/resources/languages`.
 
 >[!CAUTION]
 >

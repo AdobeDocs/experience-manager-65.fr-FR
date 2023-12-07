@@ -1,16 +1,12 @@
 ---
 title: Modification et conversion de domaines existants
-seo-title: Editing and converting existing domains
 description: Découvrez comment modifier les paramètres des domaines existants à partir de la page Gestion des domaines. Convertissez un domaine d’entreprise existant en domaine hybride ou inversement.
-seo-description: Learn how to change the settings for existing domains from the Domain Management page. Convert an existing enterprise domain to a hybrid domain or conversely.
-uuid: 4cc9547e-b4ec-4588-b1cf-18720f06149a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 44dec184-3ef7-4ba6-a87f-ad171d3cb188
 exl-id: 34ac5f8b-f209-4f99-ad71-4df6f2c88c1e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 16%
@@ -21,7 +17,7 @@ ht-degree: 16%
 
 Vous pouvez modifier les paramètres des domaines existants à partir de la page Gestion des domaines . Vous pouvez également convertir un domaine d’entreprise existant en domaine hybride.
 
-## Modification d’un domaine existant {#edit-an-existing-domain}
+## Modifier un domaine existant {#edit-an-existing-domain}
 
 1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur le nom du domaine à modifier.
@@ -42,7 +38,7 @@ Vous pouvez modifier les paramètres des domaines existants à partir de la page
 >
 >Si le domaine d’entreprise que vous convertissez ne contient pas de paramètres d’annuaire, tout paramètre d’authentification LDAP est perdu.
 
-## Conversion d’un domaine hybride en domaine d’entreprise {#convert-a-hybrid-domain-to-an-enterprise-domain}
+## Convertir un domaine hybride en domaine d’entreprise {#convert-a-hybrid-domain-to-an-enterprise-domain}
 
 1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur le nom du domaine hybride à convertir.

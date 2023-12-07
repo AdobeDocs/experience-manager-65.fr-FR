@@ -1,16 +1,14 @@
 ---
 title: Personnalisation et extensions de fragments de contenu
-seo-title: Customizing and Extending Content Fragments
 description: Un fragment de contenu étend une ressource standard. Découvrez comment les personnaliser.
-seo-description: A content fragment extends a standard asset. Learn how you can customize them.
 topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2794'
-ht-degree: 65%
+source-wordcount: '2728'
+ht-degree: 63%
 
 ---
 
@@ -163,7 +161,7 @@ L’implémentation principale des fragments de contenu est, par exemple, charg�
 Les paramètres correspondants peuvent être configurés dans la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) pour le lot OSGi **Configuration des composants de fragments de contenu**.
 
 * **Types de ressources**
-Une liste de `sling:resourceTypes` peut être fournie de façon à définir les composants qui sont utilisés pour le rendu des fragments de contenu et l’endroit où le traitement en arrière-plan doit être appliqué.
+Une liste de `sling:resourceTypes` peut être fourni pour définir les composants utilisés pour le rendu des fragments de contenu et l’emplacement auquel le traitement en arrière-plan doit être appliqué.
 
 * **Propriétés de référence**
 Une liste de propriétés peut être configurée pour spécifier l’emplacement où la référence au fragment est stockée pour le composant correspondant.
@@ -325,7 +323,7 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
       * Ajout de collections
       * Suppression de collections
 
-   * Accès au modèle du fragment  (ancien ou nouveau)
+   * Accès au modèle ou au modèle du fragment
 
   Les interfaces qui représentent les éléments principaux d’un fragment sont les suivantes :
 

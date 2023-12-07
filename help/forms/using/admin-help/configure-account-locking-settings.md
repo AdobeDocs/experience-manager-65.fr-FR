@@ -1,29 +1,25 @@
 ---
 title: Configurer les paramètres de verrouillage des comptes
-seo-title: Configure account-locking settings
-description: Utilisez l’option Activer le verrouillage de compte pour verrouiller des comptes utilisateur après un nombre spécifié d’échecs d’authentification consécutifs.
-seo-description: Use the Enable Account Locking option to lock user accounts after a specified number of consecutive authentication failures.
-uuid: 5ff3fb76-8b11-4818-9a75-40ed8e121da5
+description: Utilisez l’option Activer le verrouillage de compte pour verrouiller les comptes utilisateur après un nombre spécifié d’échecs d’authentification consécutifs.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: d4409c6b-f4ef-499c-8daa-e93a163ff8ab
 exl-id: eb8c748d-51d9-4684-97c5-e982ad84ba9f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '194'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '196'
+ht-degree: 13%
 
 ---
 
 # Configurer les paramètres de verrouillage des comptes {#configure-account-locking-settings}
 
-Lorsque vous ajoutez un domaine, spécifiez s’il convient d’activer le verrouillage des comptes. Si l’option Activer le verrouillage de compte est activée, les comptes d’utilisateurs sont verrouillés après un certain nombre d’échecs d’authentification consécutifs. Après une durée définie, l’utilisateur peut à nouveau tenter de s’authentifier, ce qui évite que les utilisateurs ne tentent plusieurs combinaisons d’informations d’identification pour accéder au système.
+Lorsque vous ajoutez un domaine, indiquez s’il faut activer le verrouillage des comptes. Lorsque l’option Activer le verrouillage de compte est sélectionnée, les comptes utilisateur sont verrouillés après un nombre spécifié d’échecs d’authentification consécutifs. Après une durée spécifiée, l’utilisateur peut à nouveau tenter de s’authentifier. Cette fonctionnalité empêche les utilisateurs d’essayer différentes combinaisons d’informations d’identification pour accéder au système.
 
-Utilisez les paramètres de la page Gestion des domaines pour spécifier le nombre maximum d’échecs d’authentification et la durée de verrouillage des comptes. Ces paramètres s’appliquent à tous les domaines dans lesquels le verrouillage des comptes est activé.
+Utilisez les paramètres de la page Gestion des domaines pour spécifier le nombre maximal d’échecs d’authentification et la durée de verrouillage des comptes. Ces paramètres s’appliquent à tous les domaines pour lesquels le verrouillage de compte est activé.
 
 1. Dans la console dʼadministration, cliquez sur **[!UICONTROL Paramètres > Gestion des utilisateurs > Gestion des domaines]**.
-1. Dans la zone Echecs d’authentification consécutifs max., indiquez le nombre de tentatives consécutives dont dispose un utilisateur pour ouvrir une session avant que son compte ne soit verrouillé. La valeur par défaut est 20.
-1. Dans la zone Déverrouiller le compte après (minutes), indiquez la durée de verrouillage du compte utilisateur en minutes. A l’issue de ce délai, l’utilisateur peut tenter d’ouvrir une autre session. La valeur par défaut est 30.
+1. Dans la zone Echecs d’authentification consécutifs maximum, saisissez le nombre de tentatives consécutives d’ouverture de session d’un utilisateur avant que son compte ne soit verrouillé. La valeur par défaut est 20.
+1. Dans la zone Déverrouiller le compte après (minutes) , saisissez le nombre de minutes pendant lesquelles le compte utilisateur est verrouillé. Après le nombre de minutes spécifié, l’utilisateur peut tenter de se reconnecter. La valeur par défaut est 30.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.

@@ -1,39 +1,35 @@
 ---
 title: Modification de la police de l’interface
-seo-title: Changing the font on the interface
-description: Procédure de modification des polices sur l’interface utilisateur de manière sélective.
-seo-description: How to change the fonts on the user interface selectively.
-uuid: 421fdd24-441a-4092-8c52-f3ed3d5d5671
+description: Comment modifier les polices de l’interface utilisateur de manière sélective.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 9fcb80b4-cbc2-48a5-afd1-4f3bc50bc503
 docset: aem65
 exl-id: 226f70f0-8eb4-4724-b496-5801dc6b436f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '276'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 51%
 
 ---
 
 # Modification de la police de l’interface{#changing-the-font-on-the-interface}
 
-Vous pouvez modifier la police affichée dans l’espace de travail AEM Forms. Les polices utilisées dans une section spécifique de l’interface utilisateur sont définies dans la section correspondante de la feuille de style. Vous pouvez modifier les polices sur l’interface utilisateur de manière sélective.
+Vous pouvez modifier la police affichée dans l’espace de travail AEM Forms. Les polices utilisées dans une section spécifique de l’interface utilisateur sont définies dans la section correspondante de la feuille de style. Vous pouvez modifier les polices de l’interface utilisateur de manière sélective.
 
 Suivez les [Étapes génériques de personnalisation de l’espace de travail AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md) et en fonction de vos besoins, suivez les étapes de personnalisation de CSS, HTML ou des deux.
 
 1. Modifiez ou ajoutez la famille de police dans un style existant.
-1. Modifiez ou ajoutez la famille de police en ligne pour l’élément HTML.
-1. Ajoutez un style et utilisez-le pour l’élément HTML.
+1. Modifiez ou ajoutez la famille de polices intégrée pour l’élément de HTML.
+1. Ajoutez un style et utilisez-le pour l’élément de HTML.
 
 Par exemple, pour remplacer la police du texte de la barre de navigation supérieure par Courier New, procédez comme suit :
 
 1. Connectez-vous à CRXDE Lite en accédant à `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Utilisez l’une des méthodes suivantes :
 
-   1. Pour modifier la famille de police dans un style existant, ajoutez la ligne suivante dans le fichier newStyle.css sous /apps/ws/css.
+   1. Pour modifier la famille de polices dans un style existant, ajoutez ce qui suit dans le fichier newStyle.css sous /apps/ws/css.
 
       ```css
       #topnav a {
@@ -54,7 +50,7 @@ Par exemple, pour remplacer la police du texte de la barre de navigation supéri
 
       Ouvrez le fichier /apps/ws/js/registry.js pour modifier et remplacer `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` par `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
 
-   1. Pour ajouter un style qui définit la famille de police, ajoutez la ligne suivante dans le fichier newStyle.css sous /apps/ws/css.
+   1. Pour ajouter un style définissant la famille de polices, ajoutez ce qui suit dans le fichier newStyle.css situé dans /apps/ws/css.
 
       ```css
       .myNewFontStyle a {
@@ -62,7 +58,7 @@ Par exemple, pour remplacer la police du texte de la barre de navigation supéri
       }
       ```
 
-      Pour ajouter la famille de police en ligne pour l’élément HTML, ajoutez le code suivant dans le fichier appnavigation.html sous /apps/ws/js/runtime/templates.
+      Pour ajouter la famille de polices intégrée pour l’élément de HTML, ajoutez ce qui suit dans le fichier appnavigation.html à l’adresse /apps/ws/js/runtime/templates.
 
       ```jsp
       <div id="topnav" class="myNewFontStyle">

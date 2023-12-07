@@ -1,20 +1,16 @@
 ---
 title: Notions fondamentales sur les flux d’activités
-seo-title: Activity Stream Essentials
 description: Liste des activités récentes effectuées par un membre ou liste des activités récentes sur un seul fil de contenu
-seo-description: List of recent activites performed by a member or a list of recent activities on a single thread of content
-uuid: 30c5ac08-0af0-4670-9d81-0beb5c93e00a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 8714b456-527a-457b-82c4-21bd445dfd9c
 docset: aem65
 exl-id: d98bcbe4-3f80-49ec-b40c-417be0d97350
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 3%
+source-wordcount: '267'
+ht-degree: 2%
 
 ---
 
@@ -34,7 +30,7 @@ Un membre peut suivre un flux d’activité en suivant un autre individu ou un a
 
 A *fil d&#39;actualités* est une fusion des flux d’activité suivis par un membre dans un seul flux.
 
-A *[graphique social](/help/communities/essentials-socialgraph.md)* capture les relations suivantes d’un membre à un autre.
+A *[graphique social](/help/communities/essentials-socialgraph.md)* capture les relations suivantes d’un membre par rapport à un autre.
 
 ## Principes élémentaires pour le côté client {#essentials-for-client-side}
 

@@ -1,22 +1,20 @@
 ---
 title: Création et gestion de révisions dans des formulaires
-seo-title: Creating and managing reviews in forms
-description: Une révision est un mécanisme qui permet à un ou plusieurs réviseurs ou réviseuses de commenter un formulaire.
-seo-description: A Review is a mechanism that allows one or more reviewers to comment on a form.
+description: Une révision est un mécanisme qui permet à un ou plusieurs réviseurs ou réviseuses de commenter des formulaires.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 93%
+source-wordcount: '701'
+ht-degree: 92%
 
 ---
 
-# Création et gestion de révisions de formulaires{#creating-and-managing-reviews-to-forms}
+# Création et gestion des révisions de formulaires{#creating-and-managing-reviews-to-forms}
 
 <span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/using/create-an-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
 
@@ -37,7 +35,7 @@ Une révision est un mécanisme qui permet à un ou plusieurs réviseurs ou rév
 
    * **Titre** (obligatoire) : il peut contenir des caractères alphanumériques, des tirets et des traits de soulignement.
    * **Description** (factultative) : description de la finalité ou du contenu de la révision.
-   * **Echéance** (facultative) : date de fin de la révision. Une fois l’échéance passée, la tâche est indiquée comme étant « En retard ».
+   * **Échéance** (facultative) : date de fin de la révision. Une fois l’échéance passée, la tâche est indiquée comme étant « En retard ».
    * **Nom du réviseur ou de la réviseuse** : au moins un nom doit être indiqué. utilisez la zone liste déroulante pour ajouter des réviseurs ou réviseuses, en saisissant une liste de noms de tous les noms correspondants ; sélectionnez un nom, puis cliquez sur **Ajouter**. La section suivante de l’onglet **Réviseurs** affiche le nom de tous les réviseurs et réviseuses.
 
 1. Cliquez sur **Démarrer** pour lancer une révision.
@@ -58,7 +56,7 @@ Cette section décrit ce qui se produit lorsqu’une révision est créée ou co
 
    Alerte de notification du réviseur
 
-1. La zone de commentaire est accessible aux personnes effectuant la révision du formulaire. D&#39;autres peuvent lire les commentaires, mais ne peuvent pas en ajouter d’autres.
+1. La zone de commentaire est accessible aux personnes effectuant la révision du formulaire. D’autres personnes peuvent lire les commentaires, mais ne peuvent pas en ajouter d’autres.
 
 ## Gestion d’une révision {#managing-a-review}
 
@@ -73,7 +71,7 @@ Cette section décrit ce qui se produit lorsqu’une révision est créée ou co
 
    Cliquez sur l’icône **Gérer la révision** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 
-   Cette icône est désactivée pour les utilisateurs ou utilisatrices autres que l’initiateur ou l’initiatrice.
+   Cette icône est désactivée pour les utilisateurs et utilisatrices autres que l’initiateur ou l’initiatrice.
 
 1. Un écran affiche alors les informations suivantes :
 
@@ -91,7 +89,7 @@ Cette section décrit ce qui se produit lorsqu’une révision est créée ou co
 
 Cette section décrit ce qui se produit lorsque **vous modifiez ou mettez fin à une révision** :
 
-1. Si la description de la révision est modifiée, la tâche correspondante des réviseurs/réviseuses et de la personne ayant lancé la révision est mise à jour.
+1. Si la description de la révision est modifiée, la tâche correspondante des réviseurs/réviseuses et de l’initiateur ou l’initiatrice de la révision est mise à jour.
 1. Si l’échéance de la révision est modifiée, la nouvelle date est appliquée à la tâche correspondante pour les réviseurs et les réviseuses.
 
 1. Si un réviseur est supprimé :

@@ -1,16 +1,12 @@
 ---
 title: Renforcer et sécuriser AEM Forms dans un environnement OSGi
-seo-title: Hardening and Securing AEM forms on OSGi environment
 description: Découvrez les recommandations et les bonnes pratiques relatives à la sécurisation d’AEM Forms sur un serveur OSGi.
-seo-description: Learn recommendations and best practices for securing AEM Forms on OSGi server.
-uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
-discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
 role: Admin
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1440'
+source-wordcount: '1434'
 ht-degree: 21%
 
 ---
@@ -164,7 +160,7 @@ Un ensemble différent de personnages utilisateur est requis pour les instances 
 
 * Seuls les utilisateurs du groupe forms-users peuvent prévisualiser, créer des brouillons et envoyer des formulaires.
 * Seuls les utilisateurs du groupe cm-user-agent peuvent prévisualiser les lettres Correspondence Management.
-* Désactivation de tous les accès anonymes non indispensables.
+* Désactivez tous les accès anonymes non indispensables.
 
 **Sur une instance d’auteur :**
 

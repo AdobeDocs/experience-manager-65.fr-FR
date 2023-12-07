@@ -1,19 +1,15 @@
 ---
 title: Didacticiel de mise en route (SOAP) de lʼAPI Java du service Signature
-seo-title: Signature Service Java API QuickStart(SOAP)
 description: 'Le service Signature vous permet dʼeffectuer les actions suivantes : ajout dʼun champ de signature à un document PDF, récupération des noms de champs de signature, modification dʼun champ de signature, signature numérique dʼun document PDF, signature numérique dʼun formulaire XFA, certification dʼun document PDF, vérification dʼune signature numérique, vérification de plusieurs signatures numériques et suppression dʼune signature numérique.'
-seo-description: Use the Signature service to add a signature field to a PDF document, retrieve signature field names, modify a signature field, digitally sign a PDF document, digitally sign an XFA-based form, certify a PDF document, verify a digital signature, verify multiple digital signatures, and remove a digital signature.
-uuid: ae6adf23-b119-45f6-bd57-73d8d9ca8ecb
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 07fffbd5-5430-4abc-b532-0840ecc7b1b0
 role: Developer
 exl-id: 34069505-a6cf-4540-932b-604f81823178
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '867'
 ht-degree: 89%
 
 ---

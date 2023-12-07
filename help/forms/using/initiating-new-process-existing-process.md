@@ -1,33 +1,29 @@
 ---
 title: Démarrer un nouveau processus avec les données de processus existantes dans l’espace de travail AEM Forms
-seo-title: Initiating a new process with existing process data in AEM Forms workspace
-description: Découvrez comment vous pouvez démarrer un nouveau processus avec les données de processus existantes dans l’espace de travail AEM Forms.
-seo-description: See how you can initiate a new process with existing process data in AEM Forms workspace.
-uuid: 4cb96d7f-483b-4db4-bea1-57948931423d
+description: Découvrez comment lancer un nouveau processus avec les données de processus existantes dans l’espace de travail AEM Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: cbc5af90-5d51-4fdb-ac72-eea91137975d
 docset: aem65
 exl-id: 6fa97c06-9238-4444-b67f-983ef3b6fdc8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '236'
-ht-degree: 100%
+ht-degree: 27%
 
 ---
 
 # Démarrer un nouveau processus avec les données de processus existantes dans l’espace de travail AEM Forms{#initiating-a-new-process-with-existing-process-data-in-aem-forms-workspace}
 
-Vous pouvez lancer un nouveau processus à l’aide des données de processus existantes. La nécessité de lancer un nouveau processus à partir des données de processus existantes survient lorsqu’un même formulaire doit être utilisé fréquemment et que son contenu inclut peu de modifications, comme les formulaires pour congés payés. Cette fonction permet de gagner du temps et de faciliter l’expérience des utilisateurs, en particulier lorsque le processus implique le remplissage de longs formulaires.
+Vous pouvez lancer un nouveau processus à l’aide des données d’un processus existant. La nécessité d’initier un nouveau processus à partir des données de processus existantes survient lorsque nous devons fréquemment utiliser le même formulaire avec peu de modifications de contenu, comme les formulaires pour congés payés. Cette fonctionnalité permet aux utilisateurs de gagner du temps et de faire des efforts, en particulier lorsque le processus a un long formulaire à remplir.
 
-Vous trouverez ci-dessous les étapes à suivre pour lancer un nouveau processus à partir des données de processus existantes : -
+Voici les étapes pour lancer un nouveau processus à partir des données de processus existantes : -
 
-1. Il peut effectuer l’une des opérations suivantes :
+1. Effectuez l’une des opérations suivantes :
 
-   * Dans Suivi, cliquez sur l’instance de processus dont vous souhaitez utiliser les données. Dans la vue Historique des processus dans le volet droit, cliquez sur la ligne de tâche correspondant au point de départ.
-   * Dans Suivi, sélectionnez un modèle de recherche pour afficher une liste des instances de processus. Sélectionnez l’instance dont vous souhaitez utiliser les données.
-   * Dans l’onglet **[!UICONTROL Tâches]**, sélectionnez une tâche. Cliquez sur l’onglet **[!UICONTROL Historique]** et sélectionnez une tâche qui a lancé une instance de processus.
+   * Dans Tracking, cliquez sur l’instance de processus dont vous souhaitez utiliser les données. Dans la vue Historique des processus du volet de droite, cliquez sur la ligne de tâche correspondant au point de départ.
+   * Dans Suivi, sélectionnez un modèle de recherche pour afficher une liste des instances de processus. Sélectionnez l&#39;instance dont vous souhaitez utiliser les données.
+   * Dans le **[!UICONTROL Tâches]** , sélectionnez la tâche. Cliquez sur le bouton **[!UICONTROL Histoire]** et sélectionnez la tâche qui a lancé l’instance de processus.
 
    ![Sélection de la tâche](assets/start3_new.png) ![Sélection de la tâche](assets/start1_new.png)
 

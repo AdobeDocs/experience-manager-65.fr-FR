@@ -1,27 +1,23 @@
 ---
 title: Principes de base de la SRP et du contenu généré par l’utilisateur
-seo-title: SRP and UGC Essentials
 description: Présentation du fournisseur de ressources de stockage et du contenu généré par l’utilisateur
-seo-description: Storage resource provider and user-generated content overview
-uuid: a4ee8725-f554-4fcf-ac1e-34878d6c02f8
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 0763f236-5648-49e9-8a24-dbc8f4c77ee3
 exl-id: 8279684f-23dd-4234-bf01-fd2ce74bcb4e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
 
 # Principes de base de la SRP et du contenu généré par l’utilisateur {#srp-and-ugc-essentials}
 
-## Présentation  {#introduction}
+## Présentation {#introduction}
 
-Si vous ne connaissez pas le fournisseur de ressources de stockage (SRP) et sa relation avec le contenu généré par l’utilisateur, rendez-vous sur la page [Stockage de contenu communautaire](working-with-srp.md) et [Présentation du fournisseur de ressources de stockage](srp.md).
+Si vous ne connaissez pas le fournisseur de ressources de stockage (SRP) et sa relation avec le contenu généré par l’utilisateur, consultez la page [Stockage de contenu communautaire](working-with-srp.md) et [Présentation du fournisseur de ressources de stockage](srp.md).
 
 Cette section de la documentation fournit des informations essentielles sur la SRP et le contenu généré par l’utilisateur.
 
@@ -115,20 +111,20 @@ Voici un exemple de composant : [composant de commentaires](http://localhost:450
 
 La création du contenu créé par l’utilisateur crée également une [noeud fantôme](srp.md#about-shadow-nodes-in-jcr) auxquelles les listes de contrôle d’accès nécessaires sont appliquées. Le chemin d’accès au noeud fantôme correspondant dans le référentiel local est le résultat de l’ajout du chemin racine du noeud fantôme au chemin d’accès du composant :
 
-* Chemin racine = `/content/usergenerated`
+* Chemin d’accès racine = `/content/usergenerated`
 * Noeud fantôme de commentaire = `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 **Emplacement UGC**
 
 Le contenu généré par l’utilisateur est créé dans aucun de ces emplacements et ne doit être accessible qu’à l’aide d’une [utility method](#utility-method-to-access-ugc) qui appelle l’API SRP.
 
-* Chemin racine = `/content/usergenerated/asi/srp-choice`
+* Chemin d’accès racine = `/content/usergenerated/asi/srp-choice`
 * Noeud UGC pour JSRP = `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`
 
 *Soyez conscient*, pour JSRP, le noeud UGC *only* être présent sur l’instance AEM (auteur ou publication) sur laquelle il a été saisi. Si elle est saisie sur une instance de publication, la modération ne sera pas possible dans la console de modération de l’instance de création.
 
 ## Informations connexes {#related-information}
 
-* [Présentation du fournisseur de ressources de stockage](srp.md) - Présentation et présentation de l’utilisation du référentiel.
+* [Présentation du fournisseur de ressources de stockage](srp.md) - Présentation et utilisation du référentiel - Aperçu.
 * [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
 * [Refactorisation de SocialUtils](socialutils.md) - Mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.

@@ -1,21 +1,17 @@
 ---
 title: Paramètres de configuration OSGi
-seo-title: OSGi Configuration Settings
 description: Cet article décrit les paramètres de configuration OSGi (répertoriés en fonction de l’offre groupée) pertinents pour la mise en œuvre du projet. La liste sert de ligne directrice et n’est pas exhaustive.
-seo-description: This article details the OSGi configuration settings (listed according to bundle) that are relevant to project implementation. The list acts as a guideline and it is not exhaustive.
-uuid: 192d3287-ec99-403b-bab0-45721e4e3abd
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3429'
-ht-degree: 99%
+source-wordcount: '3360'
+ht-degree: 98%
 
 ---
 
@@ -212,7 +208,7 @@ La **Resource Resolver Factory d’Apache Sling** configure les aspects centr
 
 * Les **URL virtuelles** pour définir vos mappages aux URL de redirection.
 
-* **Mappages d’URL** : pour définir tous les alias, par exemple, de `/content` à `/`.
+* **Mappages d’URL** pour définir les alias. Par exemple, à partir de `/content` to `/`.
 
 * L’**Emplacement du mappage**, la configuration du mappeur extériorisée dans `/etc/map`
 
@@ -239,7 +235,7 @@ Plusieurs paramètres peuvent être définis, notamment :
 * Les **chemins d’exécution** : ils répertorient les chemins d’accès à rechercher pour les scripts exécutables. En configurant des chemins spécifiques, vous pouvez limiter les scripts à exécuter. Si vous ne configurez aucun chemin, le chemin par défaut est utilisé (`/` = root). Cela permet d’exécuter de tous les scripts.
 Si la valeur configurée du chemin se termine par une barre oblique, la recherche concerne l’arborescence entière. En l’absence de barre oblique, le script n’est exécuté que s’il s’agit d’une correspondance exacte.
 
-* **Utilisateur du script** : cette propriété facultative peut spécifier le compte utilisateur du référentiel utilisé pour lire les scripts. Si vous ne spécifiez aucun compte, l’utilisateur `admin` est utilisé par défaut.
+* **Utilisateur du script** : cette propriété facultative peut spécifier le compte d’utilisateur du référentiel utilisé pour lire les scripts. Si vous ne spécifiez aucun compte, l’utilisateur `admin` est utilisé par défaut.
 
 * **Extensions par défaut** : la liste des extensions adoptant le comportement par défaut. Le dernier segment de chemin du type de ressource peut être utilisé comme nom du script.
 
@@ -340,7 +336,7 @@ Différentes propriétés de configuration sont disponibles :
 Chemin pour lequel ce gestionnaire d’authentification est actif. Si ce paramètre n’est pas renseigné, le gestionnaire d’authentification est désactivé. Par exemple, si vous utilisez le chemin /, le gestionnaire d’authentification est utilisé pour l’ensemble du référentiel.
 
 * **Classement de service**
-La valeur de classement du service OSGi Framework est utilisée pour indiquer l’ordre d’appel de ce service. Cette valeur est une valeur `int`, pour laquelle des valeurs plus élevées désignent une priorité plus élevée.
+La valeur de classement du service OSGi Framework est utilisée pour indiquer l’ordre d’appel de ce service. Cette valeur est une `int` lorsque les valeurs plus élevées désignent une priorité plus élevée.
 La valeur par défaut est `0`.
 
 * **Noms des en-têtes**
@@ -353,7 +349,7 @@ Les noms de cookies pouvant contenir un identifiant utilisateur.
 Les noms de paramètres de requête pouvant fournir l’identifiant utilisateur.
 
 * **La carte utilisateur**
-Pour les utilisateurs sélectionnés, le nom d’utilisateur extrait de la requête HTTP peut être remplacé par un nom différent dans l’objet des informations d’authentification. Le mappage est défini ici. Si le nom d’utilisateur `admin` apparaît d’un côté ou de l’autre de la carte, le mappage est ignoré. Le caractère « = » doit être placé dans une séquence d’échappement avec un « \ » au début.
+Pour les utilisateurs sélectionnés, le nom d’utilisateur extrait de la requête HTTP peut être remplacé par un nom différent dans l’objet des informations d’authentification. Le mappage est défini ici. Si le nom d’utilisateur `admin` apparaît de chaque côté de la carte, le mappage est ignoré. Le caractère « = » doit être placé dans une séquence d’échappement avec un « \ » au début.
 
 * **Format**
 Indique le format dans lequel l’identifiant utilisateur est fourni. Utilisez :

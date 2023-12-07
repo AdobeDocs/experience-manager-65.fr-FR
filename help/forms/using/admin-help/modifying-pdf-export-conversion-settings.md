@@ -1,32 +1,28 @@
 ---
 title: Modifier les paramètres de conversion de l’exportation au format PDF
-seo-title: Modifying the PDF Export conversion settings
-description: Découvrez comment modifier les paramètres de conversion de l’exportation au format PDF.
-seo-description: Learn how to modify the PDF Export conversion settings.
-uuid: 7bade010-f422-4a76-a876-705e3cf346e6
+description: Découvrez comment modifier les paramètres de conversion de l’exportation PDF.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 982f7b7e-9ba9-437f-a337-76c355b328ac
 feature: PDF Generator
 exl-id: 48a5d992-4681-41a8-8d1d-4da6767134c2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '166'
-ht-degree: 100%
+ht-degree: 7%
 
 ---
 
 # Modifier les paramètres de conversion de l’exportation au format PDF {#modifying-the-pdf-export-conversion-settings}
 
-Utilisez la procédure décrite ci-dessous pour modifier les paramètres de conversion en cas d’exportation d’un fichier PDF, EPS, DOC, TXT, RTF, XML ou HTML. Par défaut, le fichier PDF utilise les paramètres Enregistrer sous configurés dans Adobe Acrobat Professional ou Acrobat Standard. Par exemple, avec les paramètres Enregistrer sous configurés par défaut dans Acrobat pour la conversion d’un fichier PDF au format EPS, une seule page du fichier PDF est convertie au format EPS.
+Utilisez la procédure ci-dessous pour modifier les paramètres de conversion pour exporter un PDF, une EPS, un DOC, un TXT, un RTF, un XML ou un fichier de HTML. Par défaut, le fichier du PDF utilise les paramètres Enregistrer sous par défaut configurés dans Adobe Acrobat Professional ou Acrobat Standard. Par exemple, les paramètres Enregistrer sous par défaut d’Acrobat pour la conversion d’un fichier de PDF en EPS ne génèrent qu’une seule page du fichier de PDF convertie en EPS.
 
 >[!NOTE]
 >
->les modifications apportées aux paramètres Enregistrer sous pour un format de fichier s’appliquent à toutes les conversions du même type lors de leur exportation à partir de PDF Generator.
+>Après avoir modifié le paramètre Enregistrer sous pour un format de fichier, il s’applique à toutes les conversions du même type lorsqu’elles sont exportées à partir de PDF Generator.
 
-1. Avec le fichier PDF ouvert dans Acrobat, sélectionnez Fichier > Enregistrer sous.
+1. Une fois le fichier du PDF ouvert dans Acrobat, choisissez Fichier > Enregistrer sous.
 1. Dans la liste Type, sélectionnez le format approprié.
-1. Cliquez sur Paramètres et définissez les paramètres appropriés.
-1. Cliquez sur OK, puis cliquez sur Enregistrer pour exporter le fichier PDF.
+1. Cliquez sur Paramètres , puis définissez les paramètres de format de fichier selon vos besoins.
+1. Cliquez sur OK, puis sur Enregistrer pour exporter le fichier du PDF.

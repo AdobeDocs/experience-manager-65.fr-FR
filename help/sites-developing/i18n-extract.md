@@ -1,18 +1,14 @@
 ---
 title: Extraire des chaînes pour la traduction
-seo-title: Extracting Strings for Translating
 description: Utilisez xgettext-maven-plugin pour extraire du code source des chaînes qui doivent être traduites.
-seo-description: Use xgettext-maven-plugin to extract strings from your source code that need translating
-uuid: 2c586ecb-8494-4f8f-b31a-1ed73644d611
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
-discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '475'
 ht-degree: 56%
 
 ---
@@ -107,7 +103,7 @@ aucun POM :
 mvn -N com.adobe.granite.maven:xgettext-maven-plugin:1.2.2:extract  -Dxgettext.verbose=true -Dxgettext.target=out -Dxgettext.rules=i18n.any -Dxgettext.root=.
 ```
 
-Avec POM : Ajoutez ceci au POM :
+Avec POM : ajoutez ceci au POM :
 
 ```xml
 <build>

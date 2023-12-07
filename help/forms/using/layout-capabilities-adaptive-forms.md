@@ -1,18 +1,14 @@
 ---
 title: Fonctionnalités de disposition des formulaires adaptatifs
-seo-title: Layout capabilities of adaptive forms
 description: La mise en page et l’aspect des formulaires adaptatifs sur divers appareils sont régis par les paramètres de mise en page. Comprenez les différentes dispositions et leur mode d’application.
-seo-description: Layout and appearances of adaptive forms on various devices are governed by the layout settings. Understand the various layouts and how to apply them.
-uuid: 79022ac2-1aa3-47c5-b094-cbe83334ea62
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
 docset: aem65
 feature: Adaptive Forms
 exl-id: 3db623a4-f1ad-4b7f-97e8-0be138aa8b26
-source-git-commit: 498fb5f6f923710a907e1cf525f56f49850e16b2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1193'
 ht-degree: 64%
 
 ---
@@ -95,7 +91,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 Expression de fin d’étape dans la disposition Assistant d’un formulaire à plusieurs étapes
 
-![Formulaire avec assistant](assets/wizard-layout.png)
+![Formulaire avec mise en page d‘assistant](assets/wizard-layout.png)
 
 Formulaire avec assistant
 

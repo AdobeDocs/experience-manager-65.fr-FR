@@ -1,17 +1,15 @@
 ---
 title: Prise en main de Process Reporting
 description: Étapes à suivre pour commencer à utiliser le module Process Reporting d’AEM Forms sur JEE.
-uuid: 685cad39-da2c-411d-a0b0-201917438bcf
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: process-reporting
-discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1673'
-ht-degree: 100%
+source-wordcount: '1676'
+ht-degree: 98%
 
 ---
 
@@ -68,7 +66,7 @@ Pour modifier le planning de publication, procédez comme suit :
 1. Redémarrez l’instance de serveur d’AEM Forms.
 
 1. Arrêtez l’instance du serveur d’AEM Forms.
-1. Connectez-vous à la console d’administration WebSphere®. Dans l’arborescence de navigation, cliquez sur **Servers** > **Application servers**, puis sur le nom du serveur dans le volet de droite.
+1. Connectez-vous à la console d’administration WebSphere®. Dans l’arborescence de navigation, cliquez sur **Serveurs** > **Serveurs d’application** puis, dans le volet de droite, cliquez sur le nom du serveur.
 
 1. Sous Server Infrastructure, cliquez sur **Java™ and Process Management** > **Process Definition**.
 

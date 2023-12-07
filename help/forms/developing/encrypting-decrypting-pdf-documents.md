@@ -1,17 +1,13 @@
 ---
 title: Chiffrer et déchiffrer des documents PDF
-seo-title: Encrypting and Decrypting PDF Documents
 description: Utilisez le service Encryption pour chiffrer et déchiffrer des documents. Les tâches du service Encryption incluent le chiffrement de documents PDF par mot de passe, le chiffrement de documents PDF par certificat, la suppression du chiffrement par mot de passe de documents PDF, la suppression du chiffrement par certificat de documents PDF, le déverrouillage de documents PDF afin que d’autres opérations de service puissent être effectuées et la détermination du type de chiffrement de documents PDF sécurisés.
-seo-description: Use the Encryption service to encrypt and decrypt documents. The Encryption service tasks include encrypting a PDF document with a password, encrypting a PDF document with a certificate, removing password-based encryption from a PDF document, removing certificate-based encryption from a PDF document, unlocking the PDF document so that other service operations can be performed, and determining the encryption type of a secured PDF document.
-uuid: 4e4e2716-c21f-4bfe-ae7a-7e91442414ef
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '8133'
 ht-degree: 96%

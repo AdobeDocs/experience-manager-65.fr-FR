@@ -1,26 +1,22 @@
 ---
 title: Fragments de formulaires adaptatifs de référence
-seo-title: Reference adaptive form fragments
-description: AEM Forms propose des fragments de formulaires adaptatifs que vous pouvez utiliser en tant que ressources pour créer un formulaire rapidement.
-seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
-uuid: 85401274-6691-4726-8b70-b93fd46de053
+description: AEM Forms fournit des fragments de formulaire adaptatif que vous pouvez utiliser comme ressources pour créer rapidement un formulaire.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
 exl-id: 933c164e-7c39-4d2e-834b-53a3c2b4ec90
-source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
-workflow-type: ht
-source-wordcount: '389'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '381'
+ht-degree: 62%
 
 ---
 
 # Fragments de formulaires adaptatifs de référence{#reference-adaptive-form-fragments}
 
-[Un fragment de formulaire adaptatif](../../forms/using/adaptive-form-fragments.md) est un groupe de champs ou un panneau contenant un groupe de champs que vous pouvez utiliser lors de la création d’un formulaire. Il vous permet de créer un formulaire facilement et rapidement. Vous pouvez glisser-déposer un fragment de formulaire adaptatif dans un formulaire à l’aide du navigateur de ressources de la barre latérale, et vous pouvez le modifier dans l’éditeur de formulaire.
+[Fragment de formulaire adaptatif](../../forms/using/adaptive-form-fragments.md) est un groupe de champs ou un panneau contenant un groupe de champs que vous pouvez utiliser lors de la création d’un formulaire. Il vous permet de créer un formulaire facilement et rapidement. Vous pouvez glisser-déposer un fragment de formulaire adaptatif dans un formulaire à l’aide du navigateur de ressources de la barre latérale, et vous pouvez le modifier dans l’éditeur de formulaire.
 
-Pour les auteurs de formulaires adaptatifs, des fragments de référence sont fournis dans le [pack de modules complémentaires AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr). Il inclut les configurations suivantes :
+Pour les auteurs de formulaires adaptatifs, des fragments de référence sont fournis dans le [package de modules complémentaires AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr). Il comprend les fragments suivants :
 
 * Adresse
 * Coordonnées
@@ -33,13 +29,13 @@ Pour les auteurs de formulaires adaptatifs, des fragments de référence sont fo
 * Conditions générales
 * Conditions générales avec griffonnage
 
-Lorsque vous installez le package, un dossier Fragments de référence contenant des fragments de référence est créé sous Formulaires et documents. Pour installer un pack, voir [Utilisation de packs](/help/sites-administering/package-manager.md).
+Lorsque vous installez le package, un dossier Fragments de référence contenant des fragments de référence est créé sous Forms &amp; Documents. Pour installer un package, voir [Utilisation de packages](/help/sites-administering/package-manager.md).
 
 ![Tous les fragments répertoriés](assets/ootb-frags.png)
 
 ## Adresse {#address}
 
-Comprend des champs permettant de spécifier l’adresse postale. Les champs disponibles sont les suivants : adresse, code postal, ville, État et pays. Ce fragment comprend également un service web préconfiguré qui renseigne la ville et l’État pour un code postal américain donné.
+Comprend des champs pour spécifier l’adresse postale. Les champs disponibles sont Adresse postale, Code postal, Ville, État et pays. Il comprend également un service Web préconfiguré qui renseigne la ville et l’état pour un code postal américain spécifié.
 
 ![Fragment d’adresse](assets/address.png)
 
@@ -60,7 +56,7 @@ Comprend des champs permettant de saisir le numéro de téléphone et l’adress
 ## Informations de carte de crédit {#credit-card-information}
 
 Comprend des champs permettant de capturer les informations de carte de crédit qui peuvent être utilisées pour le traitement des paiements.
-[ ![Fragment d’informations de carte de crédit](assets/cc-info.png)](assets/cc-info-1.png)
+[![Fragment d’informations de carte de crédit](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Emploi actuel {#current-employment}
 
@@ -84,7 +80,7 @@ Comprend des champs permettant d’indiquer des informations sur une ou plusieur
 
 ## Historique d’emploi {#employment-history}
 
-Comprend des champs permettant de saisir l’historique d’emploi. Il permet d’ajouter plusieurs entreprises.
+Comprend des champs pour capturer l’historique des emplois. Il permet d’ajouter plusieurs organisations.
 
 ![Fragment d’historique d’emploi](assets/emp-history.png)
 
@@ -94,7 +90,7 @@ Comprend des champs permettant de saisir l’historique d’emploi. Il permet d�
 
 ## Recettes et dépenses {#income-expenditure}
 
-Comprend des champs permettant de capturer les dépenses et le flux de trésorerie mensuels. Les formulaires qui nécessitent la saisie des détails financiers peuvent utiliser ce fragment pour capturer les revenus et les dépenses.
+Comprend des champs pour capturer les flux de trésorerie et les dépenses mensuels. Les Forms qui demandent aux utilisateurs de fournir des détails financiers peuvent utiliser ce fragment pour capturer les recettes et les dépenses.
 
 ![Fragment de recettes et de dépenses](assets/income.png)
 

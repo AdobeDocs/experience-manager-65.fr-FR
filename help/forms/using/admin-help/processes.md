@@ -1,27 +1,23 @@
 ---
 title: Gestion de processus
-seo-title: Managing Processes
-description: La page Liste de processus répertorie les processus initiés par un utilisateur ou démarrés automatiquement. Découvrez la gestion des processus.
-seo-description: The Process List page shows the processes that a user has initiated or that were started automatically. Learn more about managing the processes.
-uuid: 4cd17400-681a-4e40-996c-7dda57ce449a
+description: La page Liste des processus affiche les processus initiés par un utilisateur ou démarrés automatiquement. Découvrez la gestion des processus.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 37e702c2-8716-4360-a3eb-d9877b28cc86
 exl-id: 21a2317d-3542-4ccb-98db-3cedf20c89ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '1631'
-ht-degree: 100%
+ht-degree: 39%
 
 ---
 
 # Gestion de processus {#managing-processes}
 
-La page Liste de processus répertorie les processus initiés par un utilisateur ou démarrés automatiquement.
+La page Liste des processus affiche les processus initiés par un utilisateur ou démarrés automatiquement.
 
-1. Dans Administration Console, cliquez sur Services > Processus des formulaires > Processus des formulaires. La Liste de processus présente les informations suivantes :
+1. Dans Administration Console, cliquez sur Services > Processus Forms > Processus Forms. La liste des processus affiche les informations suivantes :
 
    **Nom du processus - Version :** nom du processus, tel que défini dans Workbench.
 
@@ -31,13 +27,13 @@ La page Liste de processus répertorie les processus initiés par un utilisateur
 
    **Date de création :** date et heure auxquelles le processus a été déployé.
 
-1. Cliquez sur le nom d’un processus pour afficher les instances de ce processus dans la page Instance du processus.
+1. Cliquez sur le nom d’un processus pour afficher ses instances de processus sur la page Instance du processus .
 
-## Utilisation d’instances de processus {#working-with-process-instances}
+## Utilisation des instances de processus {#working-with-process-instances}
 
-Si vous accédez à la page Instance du processus à partir de la page Liste de processus, toutes les instances de processus que vous avez sélectionnées sont répertoriées. Si vous accédez à la page Instance du processus après avoir exécuté une recherche, seules les instances de processus trouvées sont répertoriées.
+Si vous accédez à la page Instance du processus à partir de la page Liste des processus, toutes les instances de processus que vous avez sélectionnées sont répertoriées. Si vous accédez à la page Instance du processus après avoir effectué une recherche, seules les instances de processus trouvées sont répertoriées.
 
-Pour chaque instance de processus, la liste présente les informations suivantes :
+Pour chaque instance de processus, la liste affiche les informations suivantes :
 
 **Identifiant de processus :** identifiant attribué par Forms Workflow lorsque le processus est instancié (démarré par un utilisateur ou une étape automatisée). Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
 
@@ -49,15 +45,15 @@ Pour chaque instance de processus, la liste présente les informations suivantes
 
 **Date de mise à jour :** date et heure du dernier changement d’état de l’instance de processus.
 
-Dans la page Instance du processus, vous pouvez exécuter les tâches suivantes :
+Vous pouvez effectuer les tâches suivantes sur la page Instance du processus :
 
-* Sélectionner une instance de processus pour afficher des informations détaillées sur cette instance comme, par exemple, ses opérations et ses processus secondaires. Lorsque vous sélectionnez une instance de processus, la page Détails de l’instance du processus s’affiche.
-* Suspendre ou arrêter des instances de processus, ou encore en annuler la suspension.
-* Rechercher une instance de processus. Pour lancer une recherche, cliquez sur Rechercher.
+* Sélectionnez une instance de processus pour afficher des détails sur celle-ci, tels que ses opérations et ses sous-processus. Lorsque vous sélectionnez une instance de processus, la page Détails de l’instance du processus s’affiche.
+* Suspendre, annuler la suspension ou arrêter des instances de processus.
+* Recherchez une instance de processus. Pour lancer une recherche, cliquez sur Rechercher.
 
 ### À propos des états d’instances de processus {#about-process-instance-statuses}
 
-Une instance de processus, y compris ses processus secondaires, peut présenter les états suivants :
+Une instance de processus, y compris les sous-processus, peut avoir les états suivants :
 
 **ACHEVÉ :** toutes les branches et opérations de l’instance de processus sont achevées. ACHEVE est l’état final d’une instance de processus.
 
@@ -79,43 +75,43 @@ Une instance de processus, y compris ses processus secondaires, peut présenter 
 
 >[!NOTE]
 >
->Si une demande est envoyée pour changer l’état d’une instance de processus (par exemple, pour suspendre ou arrêter l’instance), la demande entre dans la file d’attente des commandes du processus des formulaires. Selon la taille de la file d’attente et la vitesse de traitement globale, il est possible que l’état affiché ne change pas avant que la page ait été rechargée une ou plusieurs fois.
+>Lorsqu’une demande est envoyée pour modifier l’état d’une instance de processus (par exemple, pour suspendre ou arrêter), la demande entre dans la file d’attente des commandes du processus des formulaires. Selon la taille de la file d’attente et la vitesse de traitement globale, l’état affiché peut ne pas changer tant que la page n’est pas rechargée une ou plusieurs fois.
 
 ### Suspension ou annulation de la suspension des instances de processus {#suspend-or-unsuspend-process-instances}
 
-Si vous devez dépanner un problème ou si vous savez qu’une instance de processus rencontrera un problème lors d’une étape ultérieure en raison d’une condition externe, vous pouvez suspendre temporairement l’instance de processus.
+Si vous devez résoudre un problème ou si vous savez qu’une instance de processus rencontrera un problème à une étape ultérieure en raison d’une condition externe, vous pouvez suspendre temporairement l’instance de processus.
 
 Vous pouvez suspendre les instances de processus dont l’état est EN COURS.
 
-Lorsque vous suspendez une instance de processus, son état devient SUSPENSION EN COURS, puis SUSPENDU, et le processus s’interrompt momentanément au niveau de l’opération en cours. L’instance de processus conserve cet état jusqu’à ce que l’état soit défini sur NON SUSPENDU.
+Après avoir suspendu une instance de processus, son état passe à SUSPENSION, puis SUSPENDU, et le processus s’interrompt au cours de son opération actuelle. L’instance de processus reste dans cet état jusqu’à ce que l’état soit défini sur NON SUSPENDU.
 
-L’état d’une instance de processus ne peut être défini sur NON SUSPENDU que si l’état de cette instance est SUSPENDU.
+Seules les instances de processus dont l’état est SUSPENDU peuvent être modifiées en NON SUSPENDU.
 
-Quand vous annulez la suspension d’une instance de processus, son état devient EN COURS et l’instance de processus continue à exécuter l’opération depuis l’endroit où elle avait été suspendue.
+Lorsque vous annulez la suspension d’une instance de processus, son état devient EN COURS, et l’opération qui l’a suspendue se poursuit.
 
 Lorsque vous suspendez une instance de processus qui a appelé d’autres processus (processus enfants) en utilisant leur opération d’appel, les processus enfants sont également suspendus.
 
-1. Dans Administration Console, cliquez sur Services > Processus des formulaires > Processus des formulaires. 
-1. Dans la page Instance du processus, sélectionnez le processus, puis cliquez sur Suspendre ou Non suspendu.
+1. Dans Administration Console, cliquez sur Services > Processus Forms > Processus Forms.
+1. Sur la page Instance du processus, sélectionnez le processus, puis cliquez sur Suspendre ou Annuler la suspension.
 
 ### Arrêt d’une instance de processus {#terminate-a-process-instances}
 
-Si une opération d’une instance de processus a bloqué ou a rencontré une autre condition d’erreur, ou si vous avez besoin de forcer l’arrêt de l’exécution d’une instance de processus, vous pouvez arrêter l’instance de processus.
+Si une opération d’une instance de processus a bloqué ou a rencontré une autre condition d’erreur, ou si vous devez forcer l’arrêt de l’exécution d’une instance de processus, vous pouvez arrêter l’instance de processus.
 
-Vous pouvez arrêter toutes les instances de processus, quel que soit leur état.
+Vous pouvez arrêter les instances de processus ayant un état quelconque.
 
-Une fois que vous avez terminé une instance de processus, son état devient PRESQUE TERMINE, puis TERMINE, et le processus s’arrête au niveau de l’opération en cours. Aucune opération supplémentaire n’est exécutée et toutes les opérations et les tâches associées sont arrêtées.
+Lorsque vous arrêtez une instance de processus, son état devient TERMINATING, puis TERMINATED, et le processus s’arrête à son opération actuelle. Aucune autre opération n’est exécutée et toutes les opérations et tâches associées sont arrêtées.
 
-1. Dans Administration Console, cliquez sur Services > Processus des formulaires > Processus des formulaires. 
-1. Dans la page Instance du processus, sélectionnez le processus, puis cliquez sur Arrêter.
+1. Dans Administration Console, cliquez sur Services > Processus Forms > Processus Forms.
+1. Sur la page Instance du processus, sélectionnez le processus, puis cliquez sur Arrêter.
 
-## Utilisation de détails d’instances de processus {#working-with-process-instance-details}
+## Utilisation des détails d’instance de processus {#working-with-process-instance-details}
 
-La page Détails de l’instance du processus affiche l’historique d’une instance de processus.
+La page Détails de l’instance de processus affiche l’historique d’une instance de processus.
 
-La zone Résumé présente des informations de base sur l’instance de processus.
+La zone Résumé affiche des informations de base sur l’instance de processus.
 
-Sur l’onglet Opérations, les opérations de l’instance de processus sont affichées dans l’ordre dans lequel elles se sont achevées, avec les informations suivantes :
+Dans l’onglet Opérations , chaque opération de l’instance de processus s’affiche dans l’ordre de la fin, du premier au dernier, avec les informations suivantes :
 
 **Nom de l’opération :** nom de l’opération, tel que défini dans Workbench.
 
@@ -127,7 +123,7 @@ Sur l’onglet Opérations, les opérations de l’instance de processus sont af
 
 **Date d’achèvement :** date et heure auxquelles l’opération s’est achevée.
 
-Un processus secondaire est une instance de processus qui a été démarrée par un autre processus et qui s’exécute indépendamment de cet autre processus. Des processus secondaires ne sont affichés que s’ils ont été conçus comme faisant partie du processus dans Workbench. Sur l’onglet Processus secondaires, chaque processus secondaire est affiché avec les informations suivantes :
+Un sous-processus est une instance de processus démarrée par un autre processus et s’exécute indépendamment de cet autre processus. Les sous-processus ne s’affichent que s’ils ont été conçus dans le cadre du processus dans Workbench. Dans l’onglet Sous-processus , chaque sous-processus est affiché avec les informations suivantes :
 
 **Identifiant du processus :** entier positif attribué par Forms Workflow lorsque le processus est instancié (démarré par un utilisateur ou une étape automatisée). Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
 
@@ -139,15 +135,15 @@ Un processus secondaire est une instance de processus qui a été démarrée par
 
 **Date de mise à jour :** date et heure du dernier changement de statut du processus secondaire.
 
-Dans la page Détails de l’instance du processus, vous pouvez exécuter les tâches suivantes :
+Vous pouvez effectuer les tâches suivantes sur la page Détails de l’instance du processus :
 
-* Sélectionner une opération pour afficher des informations détaillées sur cette opération. Si vous sélectionnez une opération, la page Détails de l’opération s’affiche.
-* Sélectionner un processus secondaire pour afficher des informations détaillées sur ce processus secondaire. Lorsque vous sélectionnez un processus secondaire, la page Détails de l’instance du processus s’affiche.
-* Arrêter ou essayer de relancer des opérations ou des processus secondaires, selon leur état.
+* Sélectionnez une opération pour en afficher les détails. Lorsque vous sélectionnez une opération, la page Détails de l’opération s’affiche.
+* Sélectionnez un sous-processus pour afficher les détails le concernant. Lorsque vous sélectionnez un processus secondaire, la page Détails de l’instance du processus s’affiche.
+* Arrêtez ou relancez des opérations ou des sous-processus, selon leur état.
 
-### A propos des états d’opérations {#about-operation-statuses}
+### A propos des statuts des opérations {#about-operation-statuses}
 
-Une opération (une étape dans un processus) peut présenter les états suivants :
+Une opération (une étape dans un processus) peut avoir les états suivants :
 
 **ACHEVÉ :** l’opération s’est achevée.
 
@@ -157,40 +153,40 @@ Une opération (une étape dans un processus) peut présenter les états suivant
 
 **INTERROMPU :** l’opération a été arrêtée par un administrateur.
 
-### Arrêt d’opérations ou de processus secondaires {#terminate-operations-or-subprocesses}
+### Arrêt des opérations ou des sous-processus {#terminate-operations-or-subprocesses}
 
-Si une opération ou un processus secondaire a bloqué ou a rencontré une autre condition d’erreur, ou si vous avez besoin de forcer l’arrêt d’une opération ou d’un processus secondaire, vous pouvez arrêter cette opération ou ce processus secondaire.
+Si une opération ou un sous-processus a bloqué ou a rencontré une autre condition d’erreur, ou si vous devez forcer l’arrêt de l’exécution d’une opération ou d’un sous-processus, vous pouvez l’arrêter.
 
-Vous pouvez arrêter une opération dont l’état est EN COURS.
+Vous pouvez arrêter une opération qui est EN COURS.
 
-Lorsque vous arrêtez une opération, son état devient TERMINE. L’opération ne s’achève pas et l’exécution de l’instance de processus est interrompue.
+Lorsque vous arrêtez une opération, son état devient TERMINÉ. L’opération ne se termine pas et l’instance de processus s’arrête.
 
-Vous pouvez arrêter un processus secondaire, quel que soit son état.
+Vous pouvez arrêter un sous-processus qui a un état quelconque.
 
-Une fois que vous avez arrêté un processus secondaire, son état devient PRESQUE TERMINE, puis TERMINE, et l’instance de processus s’interrompt au niveau de l’opération en cours. Aucune opération supplémentaire n’est exécutée dans le processus secondaire, bien que l’instance de processus parente continue à être exécutée.
+Lorsque vous arrêtez un sous-processus, son état devient TERMINATING, puis TERMINATED, et l’instance de processus s’arrête à ses opérations actuelles. Aucune autre opération n’est exécutée dans le sous-processus, bien que l’instance de processus parente continue de s’exécuter.
 
-Vous ne pouvez pas arrêter des processus dont le schéma de processus contient des éléments de la passerelle. Si vous arrêtez ce type de processus, les opérations se trouvant dans les éléments de la passerelle ne sont pas concernées. Pour arrêter ces opérations, vous devez les arrêter directement.
+Vous ne pouvez pas arrêter les processus dont le diagramme de processus contient des éléments de passerelle. Si vous tentez d’arrêter ces types de processus, les opérations dans les éléments de passerelle ne sont pas affectées. Pour arrêter les opérations qui se trouvent dans un élément de passerelle, vous devez arrêter directement les opérations.
 
-1. Dans la page Détails de l’instance du processus, cliquez sur l’onglet Opérations ou Processus secondaires.
-1. Sélectionnez l’opération ou le processus secondaire, puis cliquez sur Arrêter.
+1. Sur la page Détails de l’instance du processus, cliquez sur l’onglet Opérations ou Sous-processus .
+1. Sélectionnez l’opération ou le sous-processus, puis cliquez sur Arrêter.
 
-### Tentative de redémarrage d’une opération {#retry-an-operation}
+### Réessayer une opération {#retry-an-operation}
 
-Vous pouvez essayer de relancer une opération dont l’état est BLOQUE.
+Vous pouvez effectuer une nouvelle opération dont l’état est BLOQUÉ.
 
-Lorsque vous essayez de relancer une opération, une requête est envoyée au processus des formulaires pour redémarrer l’opération. Si la requête aboutit, l’état devient EN COURS. Si l’opération ne peut pas être redémarrée, son état reste BLOQUE ; il est possible que vous deviez alors l’arrêter.
+Lorsque vous essayez de relancer une opération, une requête est envoyée au processus des formulaires pour redémarrer l’opération. Si la requête aboutit, l’état devient EN COURS. Si l’opération ne peut pas être redémarrée, elle reste bloquée et vous devrez peut-être l’arrêter.
 
-1. Dans la page Détails de l’instance du processus, cliquez sur l’onglet Opérations.
-1. Sélectionnez l’opération, puis cliquez sur Nouvel essai.
+1. Sur la page Détails de l’instance du processus, cliquez sur l’onglet Opérations .
+1. Sélectionnez l’opération et cliquez sur Réessayer.
 
-## Utilisation d’opérations {#working-with-operations}
+## Utilisation des opérations {#working-with-operations}
 
-La page Détails de l’opération affiche le résumé d’une opération dans un processus et ses affectations d’utilisateurs actuelles.
+La page Détails de l’opération présente un résumé d’une opération dans un processus et ses affectations d’utilisateurs actuelles.
 
-1. Dans Administration Console, cliquez sur Services > Processus des formulaires > Processus des formulaires. 
-1. Cliquez sur le nom d’un processus pour afficher ses instances. Cliquez sur une instance de processus pour afficher la page Détails de l’instance du processus, puis sélectionnez une opération pour afficher la page Détails de l’opération.
+1. Dans Administration Console, cliquez sur Services > Processus Forms > Processus Forms.
+1. Cliquez sur le nom d’un processus pour afficher ses instances de processus. Cliquez sur une instance de processus pour afficher la page Détails de l’instance du processus, puis sélectionnez une opération pour afficher la page Détails de l’opération .
 
-   Pour chaque tâche, la liste présente les informations suivantes :
+   Pour chaque tâche, la liste affiche les informations suivantes :
 
    **Nom du processus - Version :** nom du processus, tel que défini dans Workbench.
 

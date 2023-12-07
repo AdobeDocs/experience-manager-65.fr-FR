@@ -1,20 +1,16 @@
 ---
 title: Journalisation
-seo-title: Logging
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
-seo-description: Learn how to configure global parameters for the central logging service, specific settings for the individual services or how to request data logging.
-uuid: 8c9e3628-2f2c-445d-9706-5c7725b85fe2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
 feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 54%
+source-wordcount: '650'
+ht-degree: 51%
 
 ---
 
@@ -24,7 +20,7 @@ AEM vous offre la possibilité de configurer :
 
 * paramètres globaux pour le service de journalisation central
 * journalisation des données de requête ; configuration de journalisation spécialisée pour les informations de requête
-* les paramètres spécifiques des services individuels ; par exemple, un fichier journal individuel et le format des messages du journal.
+* des paramètres spécifiques pour les services individuels ; par exemple, un fichier journal individuel et le format des messages du journal.
 
 Il s’agit toutes de [configurations OSGi](/help/sites-deploying/configuring-osgi.md).
 

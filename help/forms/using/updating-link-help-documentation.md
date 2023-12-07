@@ -1,19 +1,15 @@
 ---
 title: Mise à jour du lien vers la documentation
-seo-title: Updating the link to the documentation
-description: Comment mettre à jour la destination du lien d’aide de l’espace de travail dans l’espace de travail AEM Forms pour renvoyer à votre lien de documentation personnalisé.
-seo-description: How-to update the destination of Workspace Help link in AEM Forms workspace to point to your custom documentation link.
-uuid: 64056d10-1451-44ed-8f25-81a21037dc75
+description: Comment mettre à jour la destination du lien d’aide de Workspace dans l’espace de travail AEM Forms pour qu’il pointe vers votre lien de documentation personnalisé.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 788c427f-190f-4580-9efd-6a4c4a008837
 exl-id: ca637bea-05c1-4920-9283-e782f07607de
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 60%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 100%
 
 Vous pouvez accéder au contenu de l’aide par défaut pour l’espace de travail AEM Forms en sélectionnant **Aide > Aide de Workspace**. Le chemin pointe vers la documentation en ligne sur le site Web d’Adobe. Cependant, vous pouvez le mettre à jour pour qu’il pointe vers une autre URL.
 
-Tenez compte des cas d’utilisation suivants lorsque vous souhaitez changer l’URL d’aide par défaut :
+Tenez compte des cas d’utilisation suivants où vous pouvez modifier l’URL d’aide par défaut :
 
 * Pour fournir une aide localisée dans une langue de votre choix.
 * Pour fournir un contenu d’aide personnalisé pour votre espace de travail personnalisé.

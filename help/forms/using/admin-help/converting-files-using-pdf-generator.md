@@ -1,18 +1,16 @@
 ---
 title: Conversion de fichiers à l’aide de PDF Generator
 description: Le service PDF Generator convertit les formats de fichiers natifs en PDF. Il convertit également des fichiers PDF en d’autres formats et optimise la taille des documents PDF.
-uuid: 295afb8f-130a-44f5-b0ab-e4c93c0c9e52
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 feature: PDF Generator
 exl-id: 0e2c12b5-24c8-4aca-8826-cb661051ce4f
-source-git-commit: 22d9b22a0fc0bc5f753f2e11ca66e2627e1a8405
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 12%
+source-wordcount: '1173'
+ht-degree: 11%
 
 ---
 
@@ -110,7 +108,7 @@ Vous pouvez exporter des fichiers PDF vers différents formats de fichier, comme
 1. Dans la liste Fichier Export PDF à répertorier, sélectionnez le format vers lequel exporter le fichier PDF.
 1. Dans la zone Définir un délai d’expiration, saisissez le délai d’attente avant que l’application ne expire. La valeur par défaut est de 270 secondes.
 
-   La durée de conversion affichée lors de la conversion du fichier peut être supérieure à la valeur spécifiée ici. Le temps de conversion inclut le temps passé à attendre le thread ou le processus, le temps nécessaire pour convertir le fichier et le temps pris par le convertisseur de secours (le cas échéant). time. La valeur Spécifier un délai d’expiration correspond au temps nécessaire pour convertir le fichier.
+   La durée de conversion affichée lors de la conversion du fichier peut être supérieure à la valeur spécifiée ici. Le temps de conversion inclut le temps passé à attendre le thread ou le processus, le temps nécessaire pour convertir le fichier et le temps pris par le convertisseur de secours (le cas échéant). temps. La valeur Spécifier un délai d’expiration correspond au temps nécessaire pour convertir le fichier.
 
 1. (Facultatif) Dans l’option **Spécifier un profil de contrôle en amont personnalisé**, cliquez sur Parcourir et sélectionnez un [profil de contrôle en amont personnalisé](https://helpx.adobe.com/fr/acrobat/using/preflight-profiles-acrobat-pro.html). Les profils de contrôle en amont sont uniquement utilisés lors de la conversion de documents au format d’archivage PDF (PDF/A).
 1. Cliquez sur Exporter. Une fois la conversion terminée, un lien vers le fichier exporté s’affiche.

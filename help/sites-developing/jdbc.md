@@ -1,19 +1,15 @@
 ---
 title: Connexion à des bases de données SQL
-seo-title: Connecting to SQL Databases
 description: 'Accédez à une base de données SQL externe, de sorte que vos applications AEM puissent interagir avec les données :'
-seo-description: Access an external SQL database to so that your AEM applications can interact with the data
-uuid: 0af0ed08-9487-4c37-87ce-049c9b4c1ea2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 92%
+source-wordcount: '895'
+ht-degree: 91%
 
 ---
 
@@ -100,7 +96,7 @@ Dans CQ, il existe plusieurs méthodes pour gérer les paramètres de configurat
 
 Les propriétés suivantes sont disponibles pour configurer un service de connexion en pool. Les noms des propriétés sont répertoriés tels qu’ils apparaissent dans la console web. Le nom correspondant à un nœud `sling:OsgiConfig` apparaît entre parenthèses. Des exemples de valeurs sont affichés pour un serveur HSQLDB et une base de données dont le pseudonyme est `mydb` :
 
-* Classe de pilotes JDBC (`jdbc.driver.class`) : classe Java™ à utiliser pour implémenter l’interface java.sql.Driver, par exemple, `org.hsqldb.jdbc.JDBCDriver`. Le type de données est `String`.
+* Classe de pilote JDBC ( `jdbc.driver.class`) : classe Java™ à utiliser pour mettre en oeuvre l’interface java.sql.Driver, par exemple : `org.hsqldb.jdbc.JDBCDriver`. Le type de données est `String`.
 
 * URI de connexion JDBC ( `jdbc.connection.uri`) : URL de la base de données à utiliser pour créer la connexion, par exemple : `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. Le format de l’URL doit être valide pour être utilisé avec la méthode getConnection de la classe java.sql.DriverManager. Le type de données est `String`.
 

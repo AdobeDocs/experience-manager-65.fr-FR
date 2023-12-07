@@ -1,16 +1,12 @@
 ---
 title: Création d’une mise en page de barre d’outils personnalisée
-seo-title: Creating custom toolbar layout
 description: Vous pouvez spécifier une mise en page de barre d’outils pour le formulaire. La mise en page de barre d’outils définit les commandes et la mise en page de la barre d’outils du formulaire.
-seo-description: You can specify a toolbar layout for the form. The toolbar layout defines the commands and the layout of the toolbar on the form.
-uuid: 389a715a-4c91-4a63-895d-bb2d0f1054eb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 0d817a7e-2758-4308-abda-6194716c2d97
 docset: aem65
 exl-id: 44516956-00aa-41d5-a7e9-746c7618e5db
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 46%
@@ -39,12 +35,12 @@ Vous pouvez également créer une mise en page de barre d’outils personnalisé
 
 La procédure suivante décrit les étapes de création d’une barre d’outils personnalisée qui affiche trois actions dans la barre d’outils et les autres actions dans une liste déroulante de la barre d’outils.
 
-Le package de contenu joint contient le code complet décrit ci-dessous. Une fois le package de contenu installé, ouvrez `/content/forms/af/CustomLayoutDemo.html` pour afficher la démonstration de la mise en page de la barre d’outils personnalisée.
+Le package de contenu joint contient le code complet décrit ci-dessous. Une fois le package de contenu installé, ouvrez `/content/forms/af/CustomLayoutDemo.html` pour afficher la démonstration relative à la mise en page de la barre d’outils personnalisée.
 
 CustomToolbarLayoutDemo.zip
 
 [Obtenir le fichier](assets/customtoolbarlayoutdemo.zip)
-Démonstration de la mise en page de la barre d’outils personnalisée
+Démonstration relative à la mise en page de la barre d’outils personnalisée
 
 ## Pour créer une mise en page de barre d’outils personnalisée {#layout-1}
 
@@ -74,7 +70,7 @@ Démonstration de la mise en page de la barre d’outils personnalisée
 
    Nœud avec description appropriée
 
-   Votre nouvelle mise en page de barre d’outils personnalisée s’affiche dans la configuration de la boîte de dialogue **Barre d’outils du formulaire adaptatif**. 
+   Votre nouvelle mise en page de barre d’outils personnalisée s’affiche dans la configuration de la boîte de dialogue **Barre d’outils du formulaire adaptatif**.
 
    ![Liste des mises en page de barre d’outils](assets/toolbar4.png)
 

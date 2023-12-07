@@ -1,18 +1,14 @@
 ---
 title: '« Tutoriel : Création de votre premier formulaire adaptatif »'
-seo-title: "Tutorial: Create your first adaptive form"
 description: Apprenez à créer des formulaires professionnels, interactifs et réactifs.
-seo-description: Learn to create business class, interactive, and responsive forms.
-uuid: ee351a3f-ea6a-4b4c-8045-4948ad51b7c1
 topic-tags: introduction
-discoiquuid: 1142bcd4-e3a7-41ce-a710-132ae6c21dbe
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 59%
+source-wordcount: '905'
+ht-degree: 56%
 
 ---
 
@@ -20,7 +16,7 @@ ht-degree: 59%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 
@@ -30,12 +26,12 @@ ht-degree: 59%
 
 Vous recherchez un mobile-friendly **expérience de formulaires** qui permet de simplifier l&#39;enrôlement, d&#39;augmenter l&#39;engagement et de réduire le temps de disponibilité, **formulaires adaptatifs** est parfaite pour vous. Les formulaires adaptatifs offrent une expérience de formulaires adaptée aux analyses, à l’automatisation et aux appareils mobiles. Vous pouvez facilement créer des formulaires réactifs et interactifs, utiliser des processus automatisés pour réduire les tâches administratives et répétitives et utiliser l’analyse de données pour améliorer et personnaliser l’expérience des clients avec vos formulaires.
 
-Ce tutoriel fournit une structure de bout en bout pour créer un formulaire adaptatif. Le tutoriel est organisé en cas d’utilisation et en plusieurs guides. Chaque guide vous aide à apprendre et à ajouter de nouvelles fonctionnalités au formulaire adaptatif créé dans ce tutoriel. Vous disposez d’un formulaire adaptatif fonctionnel après chaque guide. Le guide de création d’un formulaire adaptatif est disponible. Les guides suivants seront bientôt disponibles. À la fin de ce didacticiel, vous serez capable de :
+Ce tutoriel fournit une structure de bout en bout pour créer un formulaire adaptatif. Le tutoriel consiste en un cas d’utilisation et plusieurs guides. Chaque guide vous aide à apprendre et à ajouter de nouvelles fonctionnalités au formulaire adaptatif créé dans ce tutoriel. Vous disposez d’un formulaire adaptatif fonctionnel après chaque guide. Le guide de création d’un formulaire adaptatif est disponible. Les guides suivants seront bientôt disponibles. À la fin de ce didacticiel, vous serez capable de :
 
 * Créez un formulaire adaptatif et un modèle de données de formulaire.
 * Mettez en forme votre formulaire adaptatif.
 * Utilisez l’éditeur de règles de formulaire adaptatif pour créer des règles de fonctionnement.
-* Testez et publiez un formulaire adaptatif.
+* Tester et publier un formulaire adaptatif.
 
 ![création-d’un-workflow-de-formulaire-adaptif](assets/create-daptive-form-workflow.png)
 
@@ -107,7 +103,7 @@ Les formulaires adaptatifs comportent des thèmes et un [éditeur](../../forms/u
 
 Objectifs:
 
-* Application d’un thème prêt à l’emploi à un formulaire adaptatif
+* Appliquer un thème prêt à l’emploi à un formulaire adaptatif
 * Création d’un thème pour le formulaire adaptatif à l’aide de l’éditeur de thème
 * Utiliser des polices web dans un thème personnalisé
 

@@ -1,17 +1,15 @@
 ---
 title: Règlements sur la protection et la confidentialité des données – Préparation d’Adobe Experience Manager
 description: Découvrez la prise en charge d’Adobe Experience Manager pour les règlements sur la protection et la confidentialité des données. Cela comprend le Règlement général sur la protection des données (RGPD) de l’UE, la loi sur la protection de la vie privée des consommateurs et consommatrices de Californie (California Consumer Privacy Act) et la manière de s’y conformer lors de la mise en œuvre d’un nouveau projet AEM.
-uuid: 9b0b8101-929c-4232-8c6e-1f9b8b2e0aa2
 contentOwner: AEM Docs
 topic-tags: introduction, grdp
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-discoiquuid: 0bcd7ac4-3071-466d-bd11-701f35ccf5bd
 docset: aem65
 exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
-workflow-type: ht
-source-wordcount: '907'
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '890'
 ht-degree: 100%
 
 ---
@@ -22,7 +20,7 @@ ht-degree: 100%
 >
 >Le contenu de ce document ne constitue pas un avis juridique et ne vise pas à le remplacer.
 >
->Veuillez consulter le service juridique de votre entreprise pour obtenir des conseils concernant les règlements sur la protection et la confidentialité des données.
+>Consultez le service juridique de votre entreprise pour obtenir des conseils concernant les réglementations sur la protection et la confidentialité des données.
 
 >[!NOTE]
 >
@@ -120,7 +118,7 @@ Pour plus d’informations, consultez les sections suivantes :
 
 ## AEM Communities {#aem-communities}
 
-AEM Communities accorde aux titulaires de données le droit à la portabilité des données, le droit d’accès et le droit à l’oubli par des [API prêtes à l’emploi](/help/communities/user-ugc-management-service.md). Ces API permettent une suppression et une exportation en bloc du contenu créé par l’utilisateur ou l’utilisatrice, de même que la désactivation des comptes utilisateur identifiés par leur ID autorisable. Toutefois, la suppression définitive du compte utilisateur est réalisable par la suppression du nœud utilisateur dans CRXDE Lite, ce qui répond à la nécessité d’un droit d’opposition facile du système.
+AEM Communities accorde aux titulaires de données le droit à la portabilité des données, le droit d’accès et le droit à l’oubli par des [API prêtes à l’emploi](/help/communities/user-ugc-management-service.md). Ces API permettent une suppression et une exportation en bloc du contenu créé par l’utilisateur ou l’utilisatrice, de même que la désactivation des comptes d’utilisateurs identifiés par leur ID autorisable. Toutefois, la suppression définitive du compte d’utilisateur est réalisable par la suppression du nœud utilisateur dans CRXDE Lite, ce qui répond à la nécessité d’un droit d’opposition facile du système.
 
 En outre, AEM Communities offre par défaut une confidentialité en raison de sa console de modération en bloc, qui permet aux membres privilégiés de rechercher et de supprimer les contributions et les détails des utilisateurs et utilisatrices. La console de gestion des membres permet de limiter au point d’interdire un contributeur ou une contributrice. En outre, il autorise les titulaires de données à supprimer les contributions qu’ils ont créées.
 

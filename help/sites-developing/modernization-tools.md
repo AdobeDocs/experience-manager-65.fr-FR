@@ -1,14 +1,12 @@
 ---
 title: Outils de modernisation d’AEM
-seo-title: AEM Modernization Tools
 description: Les outils de modernisation d’AEM vous aident à convertir vos fonctionnalités d’AEM héritées pour qu’elles tirent parti des dernières technologies.
-seo-description: AEM Modernization Tools help you easily convert your legacy AEM features to the latest technology
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 8865a641-fdac-43ab-b1c3-722f120cd749
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: ht
-source-wordcount: '87'
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '78'
 ht-degree: 100%
 
 ---
@@ -18,7 +16,7 @@ ht-degree: 100%
 [Les outils de modernisation d’AEM permettent de convertir facilement les éléments suivants :](https://opensource.adobe.com/aem-modernize-tools/)
 
 * Les [modèles statiques](page-templates-static.md) en [modèles modifiables](page-templates-editable.md)
-* Les [configurations de conception](page-templates-static.md) en [stratégies](page-templates-editable.md)
+* Les [configurations de conception](page-templates-static.md) en [politiques](page-templates-editable.md)
 * Les [composants de base](/help/sites-authoring/default-components-foundation.md) en [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 * L’[interface utilisateur classique](website.md) en [interface utilisateur optimisée pour les écrans tactiles](touch-ui-concepts.md)
 

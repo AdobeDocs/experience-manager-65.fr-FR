@@ -1,12 +1,11 @@
 ---
 title: Adobe Experience Manager Mobile - Préparation au RGPD
 description: Découvrez comment Adobe Experience Manager est prêt à vous aider à respecter le RGPD.
-uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '683'
 ht-degree: 1%
 
 ---
@@ -37,7 +36,7 @@ Contactez l’assistance clientèle d’Adobe afin de pouvoir envoyer une demand
 
 Les identifiants suivants sont requis pour localiser les données client. Tout sous-ensemble reçu implique que les autres identifiants n’étaient pas applicables à cet utilisateur.
 
-Obligatoire:
+Obligatoire :
 
 * ID de contrat du client : *dpsc-contractId*
 

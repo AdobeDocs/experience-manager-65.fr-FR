@@ -1,17 +1,13 @@
 ---
 title: Abonnements des communautés
-seo-title: Communities Subscriptions
 description: Les membres de la communauté interagissent avec d’autres membres par courrier électronique.
-seo-description: Community members interact with other members through email
-uuid: a4b98769-c219-4e18-8e80-9a806ab979ff
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 role: Admin
 exl-id: 338be220-659a-459c-8e90-55e3a11ddeb0
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 1%
@@ -20,7 +16,7 @@ ht-degree: 1%
 
 # Abonnements des communautés {#communities-subscriptions}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 À partir des communautés [FP1](deploy-communities.md#latestfeaturepack), les membres de la communauté peuvent interagir avec la communauté par courrier électronique à l’aide d’une fonctionnalité appelée abonnements.
 
@@ -40,7 +36,7 @@ L&#39;email doit être paramétré pour que les abonnements soient fonctionnels 
 
 Pour obtenir des instructions sur la configuration du courrier électronique, voir [Configuration du courrier électronique](email.md).
 
-**Activation des abonnements et suivez**
+**Activation des abonnements et suivez les**
 
 Les composants doivent être configurés pour activer les abonnements. *et* suivant . Fonctionnalités qui autorisent les abonnements : [blog](blog-feature.md), [forum](forum.md) et [Q&amp;R](working-with-qna.md).
 
@@ -48,11 +44,11 @@ Les composants doivent être configurés pour activer les abonnements. *et* suiv
 
 ![subscription-following](assets/subscription-following.png)
 
-Le **Suivez** permet de suivre les entrées sous forme d’activités, d’abonnements et/ou de notifications. Chaque fois que la fonction **Suivez** est sélectionné, il est possible d’activer ou de désactiver une sélection.
+La variable **Suivez** permet de suivre les entrées sous forme d’activités, d’abonnements et/ou de notifications. Chaque fois que la fonction **Suivez** est sélectionné, il est possible d’activer ou de désactiver une sélection.
 
 Si l’une des méthodes suivantes est sélectionnée, le texte du bouton devient **Suivre**. Pour des raisons pratiques, il est possible de sélectionner `Unfollow All` pour désactiver toutes les méthodes.
 
-Le **Suivez** inclut le bouton `Email Subscriptions` n’est disponible que lorsqu’un forum, QnA ou blog est configuré pour activer les abonnements aux emails. Ce bouton apparaît :
+La variable **Suivez** inclut le bouton `Email Subscriptions` n’est disponible que lorsqu’un forum, QnA ou blog est configuré pour activer les abonnements aux emails. Ce bouton apparaît :
 
 * Sur la page principale du forum activé, Q&amp;R ou blog enverra un e-mail pour toutes les activités sous cette fonction.
 
@@ -62,10 +58,10 @@ Le **Suivez** inclut le bouton `Email Subscriptions` n’est disponible que lors
 
 Lorsque le courrier électronique est [configuré pour répondre par email](email.md#configure-polling-importer), le membre qui s’est abonné recevra un email avec le contenu publié et un lien vers le contenu en ligne.
 
-S&#39;ils répondent à l&#39;email, le contenu qu&#39;ils saisissent dans la réponse apparaîtra en ligne.
+S&#39;ils répondent à l&#39;email, le contenu qu&#39;ils saisissent dans la réponse apparaîtra sous forme de contenu en ligne.
 
 ![email-response](assets/email-reply.png)
 
 Le temps nécessaire à la publication d’une réponse est contrôlé par la variable [intervalle de mise à jour de l’importateur d’interrogations](email.md#configure-polling-importer).
 
-![AQ](assets/qa.png)
+![QA](assets/qa.png)

@@ -1,18 +1,14 @@
 ---
 title: Utiliser la signature tactile dans les formulaires HTML5
-seo-title: Using Scribble Signature in HTML5 forms
 description: Les formulaires HTML5 sont de plus en plus utilisés sur les appareils tactiles, qui prennent tous en charge les signatures. La signature de documents sur les périphériques mobiles devient une méthode acceptée de signature de formulaires sur les périphériques mobiles.
-seo-description: HTML5 forms are increasingly used on touch devices, and one common requirement is to support signatures. Signing documents on mobile devices is becoming an accepted way of signing forms on mobile devices.
-uuid: 163dd55a-971a-4dd4-93a7-a14e80184d9b
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
-discoiquuid: ecd7f538-9c24-48e7-8450-596851e99cff
 docset: aem65
 feature: Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 32%

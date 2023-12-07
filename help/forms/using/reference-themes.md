@@ -1,24 +1,20 @@
 ---
 title: Thèmes de référence
-seo-title: Reference Themes
 description: AEM Forms fournit les thèmes de formulaires adaptatifs que vous pouvez obtenir à partir de la Distribution de logiciels et utiliser pour conférer un style à un formulaire.
-seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
-uuid: 3c6bd309-aa5a-4953-91ed-25ed5ba5671a
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: a69d3787-8149-4bca-835d-aeecfb11702b
 docset: aem65
 exl-id: f6c24894-c322-4c44-b001-8978954d6e53
-source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
-workflow-type: ht
-source-wordcount: '533'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '525'
+ht-degree: 68%
 
 ---
 
 # Thèmes de référence{#reference-themes}
 
-Les [thèmes](../../forms/using/themes.md) vous permettent de styliser vos formulaires sans aucune connaissance approfondie de CSS. En plus du thème par défaut, vous pouvez obtenir les thèmes suivants en installant le module complémentaire [AEM Forms add-on](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) :
+Les [thèmes](../../forms/using/themes.md) vous permettent de styliser vos formulaires sans aucune connaissance approfondie de CSS. En plus du thème par défaut, vous pouvez obtenir les thèmes suivants en installant le [package complémentaire AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) :
 
 * Beryl
 * Exec
@@ -29,13 +25,13 @@ Les [thèmes](../../forms/using/themes.md) vous permettent de styliser vos formu
 * U.S. Web Design Standards
 * Tranquil
 
-Chaque thème comporte un style unique et élégant que vous pouvez utiliser pour créer des formulaires adaptatifs attrayants pour vos utilisateurs. Il contient un style unique pour les sélecteurs tels qu’un panneau, une zone de texte, une boîte de dialogue numérique, un bouton radio, un tableau et un commutateur. Les styles dans ces thèmes sont basés sur des exigences. Par exemple, dans un scénario particulier vous avez besoin d’un thème minimaliste avec des polices très lisibles. Le thème Liberty permet d’obtenir cette apparence.
+Chaque thème contient un style unique et élégant que vous pouvez utiliser pour créer des formulaires adaptatifs attrayants pour vos utilisateurs et vos utilisatrices. Il contient des styles uniques pour les sélecteurs tels que le panneau, la zone de texte, la zone numérique, le bouton radio, le tableau et le commutateur. Les styles de ces thèmes varient selon les besoins. Par exemple, dans un scénario particulier, vous avez besoin d’un thème minimaliste avec des polices très lisibles. Le thème Liberty permet d’obtenir cette apparence.
 
 ![Thèmes de référence](assets/ref-themes.png)
 
-Les thèmes inclus dans ce package sont réactifs et le style de ces thèmes est défini pour des affichages mobiles et de bureau. La plupart des navigateurs modernes sur différents périphériques peuvent sans problème rendre des formulaires auxquels est appliqué l’un de ces thèmes.
+Les thèmes inclus dans ce module sont réactifs et la mise en forme de ces thèmes est définie pour les affichages mobiles et de bureau. La plupart des navigateurs modernes sur différents appareils peuvent sans problème rendre des formulaires auxquels est appliqué l’un de ces thèmes.
 
-Pour plus d’informations sur l’installation du module, voir [Comment travailler avec les modules](/help/sites-administering/package-manager.md).
+Pour plus d’informations sur l’installation du package, voir [Comment travailler avec les packages](/help/sites-administering/package-manager.md).
 
 ## Beryl {#beryl}
 
@@ -49,7 +45,7 @@ Le thème Beryl est utilisé par le formulaire adaptatif We.Gov et souligne l’
 
 ## Exec {#exec}
 
-Le thème Exec permet d’éviter des remplissages d’arrière-plan plein pour mettre en évidence les composants de formulaire. Sélectionner et cliquer sur des composants modifie les couleurs de police. Par rapport au thème de la zone de travail par défaut, la couleur de la police du texte dans l’onglet sélectionné devient bleu foncé. Remarquez que les boutons de navigation et d’envoi sont différents du thème Beryl.
+Le thème Exec évite les remplissages d’arrière-plan solides pour mettre en évidence les composants de formulaire. Lorsque vous sélectionnez et cliquez sur des composants, les couleurs de la police sont modifiées. Par rapport au thème Canevas par défaut, la couleur de police du texte dans l’onglet sélectionné passe au bleu foncé. Notez la différence entre les boutons de navigation et d’envoi et le thème Beryl.
 
 ![Thème Exec](assets/exec.png)
 
@@ -59,7 +55,7 @@ Le thème Exec permet d’éviter des remplissages d’arrière-plan plein pour 
 
 ## Exec Light {#exec-light}
 
-Le thème Exec Light utilise l’espace vierge pour créer une expérience homogène. Les boutons Suivante et Envoyer bénéficient d’un remplissage plein et d’une ombre 3D. Les onglets sélectionnés du côté gauche bénéficient d’une flèche au lieu de doubles coches.
+Le thème Exec Light utilise l’espace blanc pour créer une expérience transparente. Les boutons Suivant et Envoyer ont un remplissage plein et une ombre 3D. Les onglets sélectionnés sur la gauche ont une flèche au lieu de deux coches.
 
 ![Thème Exec light](assets/exec-light.png)
 
@@ -69,7 +65,7 @@ Le thème Exec Light utilise l’espace vierge pour créer une expérience homog
 
 ## Liberty {#liberty}
 
-Le thème Liberty utilise une approche minimaliste pour mettre en avant les éléments importants. Par exemple, la couleur de police de l’onglet visité devient verte. Vous pouvez uniquement afficher le contour inférieur de la zone de texte qui simule l’aspect d’un formulaire papier avec des lignes. La zone de texte active dispose d’un contour inférieur noir, tandis que les autres disposent d’un contour inférieur gris clair.
+Le thème de la liberté utilise une approche minimaliste pour mettre en évidence l&#39;important. Par exemple, la couleur de police de l’onglet visité passe au vert. Vous ne pouvez afficher que le contour inférieur de la zone de texte qui imite l’aspect d’un formulaire papier avec des lignes. La zone de texte active a un contour inférieur noir, tandis que d’autres ont un contour inférieur gris clair.
 
 ![Thème Liberty](assets/liberty.png)
 
@@ -79,7 +75,7 @@ Le thème Liberty utilise une approche minimaliste pour mettre en avant les él�
 
 ## Tranquil {#tranquil}
 
-Le thème Tranquil fournit des nuances claires et foncées du modèle de couleurs Tranquil à différents composants d’un formulaire. Par exemple, les boutons radio, les panneaux et les onglets disposent de différentes nuances de vert.
+Le thème Tranquil fournit des nuances claires et sombres du jeu de couleurs Tranquil pour mettre en évidence différents composants d’un formulaire. Par exemple, les boutons radio, les panneaux et les onglets ont une nuance de vert différente.
 
 ![Thème Tranquil](assets/tranquil.png)
 
@@ -89,7 +85,7 @@ Le thème Tranquil fournit des nuances claires et foncées du modèle de couleur
 
 ## Ultramarine {#ultramarine}
 
-Le thème Ultramarine utilise des nuances de bleu profond pour mettre en évidence les composants tels que les onglets, les panneaux, les zones de texte et les boutons.
+Le thème Ultramarine met en évidence les composants tels que les onglets, les panneaux, les zones de texte et les boutons avec des tons bleu foncé.
 
 ![Thème Ultramarine](assets/ultramarine.png)
 

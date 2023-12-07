@@ -1,18 +1,14 @@
 ---
 title: Topologies recommandées pour Communities
-seo-title: Recommended Topologies for Communities
 description: Comment aborder la gestion du contenu généré par l’utilisateur
-seo-description: How to approach the handling of user-generated content (UGC)
-uuid: 4bc1c423-0ba9-4f2e-b11c-4d6824f45641
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 exl-id: b6658330-d862-44e3-aac0-824fb91cd087
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '548'
 ht-degree: 6%
 
 ---
@@ -37,9 +33,10 @@ L’exigence d’un magasin commun entraîne les topologies recommandées suivan
 
 >[!NOTE]
 >
->Pour AEM Communities, [Le contenu généré par l’utilisateur n’est jamais répliqué.](working-with-srp.md#ugc-never-replicated).
+>Pour AEM Communities, [Le contenu généré par l’utilisateur n’est jamais répliqué](working-with-srp.md#ugc-never-replicated).
 >
 >Lorsque le déploiement n’inclut pas une [magasin commun](working-with-srp.md), le contenu généré par l’utilisateur ne sera visible que sur l’instance de publication ou d’auteur AEM sur laquelle il a été saisi.
+>
 
 >[!NOTE]
 >
@@ -94,20 +91,20 @@ Si vous choisissez [ASRP](asrp.md), [DSRP](dsrp.md) ou [MSRP](msrp.md) pour la p
 
 * [Synchronisation des utilisateurs](sync.md)
 
-   Décrit la synchronisation des données utilisateur entre les instances de fermes de publication.
+  Décrit la synchronisation des données utilisateur entre les instances de fermes de publication.
 
 * [Gestion des utilisateurs et des groupes d’utilisateurs](users.md)
 
-   Discute des rôles des utilisateurs et des groupes d’utilisateurs dans les environnements de création et de publication.
+  Discute des rôles des utilisateurs et des groupes d’utilisateurs dans les environnements de création et de publication.
 
 * UGC [magasin commun](working-with-srp.md)
 
-   Décrit le stockage du contenu de la communauté distinct du contenu du site.
+  Décrit le stockage du contenu de la communauté distinct du contenu du site.
 
 * [Magasins de noeuds et entrepôts de données](../../help/sites-deploying/data-store-config.md)
 
-   Fondamentalement, le contenu du site est stocké dans un magasin de noeuds. Pour Assets, un entrepôt de données peut être configuré pour stocker des données binaires. Pour Communities, un magasin commun doit être configuré pour sélectionner la SRP.
+  Fondamentalement, le contenu du site est stocké dans un magasin de noeuds. Pour Assets, un entrepôt de données peut être configuré pour stocker des données binaires. Pour Communities, un magasin commun doit être configuré pour sélectionner la SRP.
 
 * [Éléments de stockage](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
-   Décrit les deux implémentations de stockage de noeud : Tar et MongoDB.
+  Décrit les deux implémentations de stockage de noeuds : Tar et MongoDB.

@@ -1,20 +1,16 @@
 ---
 title: MSRP - Fournisseur de ressources de stockage MongoDB
-seo-title: MSRP - MongoDB Storage Resource Provider
 description: Configurer AEM Communities pour utiliser une base de données relationnelle comme magasin commun
-seo-description: Set up AEM Communities to use a relational database as its common store
-uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 role: Admin
 exl-id: 799d5ae1-caac-4c92-8835-696ad25de553
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1190'
-ht-degree: 4%
+source-wordcount: '1142'
+ht-degree: 1%
 
 ---
 
@@ -51,9 +47,9 @@ Voir aussi [Caractéristiques des options SRP](working-with-srp.md#characteristi
 
 ### Sélectionner MSRP {#select-msrp}
 
-Le [Console de configuration de stockage](srp-config.md) permet de sélectionner la configuration de stockage par défaut, qui identifie l’implémentation de la SRP à utiliser.
+La variable [Console de configuration de stockage](srp-config.md) permet de sélectionner la configuration de stockage par défaut, qui identifie l’implémentation de la SRP à utiliser.
 
-À l’auteur, pour accéder à la console Configuration de stockage :
+Sur l’instance de création, pour accéder à la console Configuration de stockage :
 
 * Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Communautés]** > **[!UICONTROL Configuration de stockage]**.
 
@@ -62,29 +58,29 @@ Le [Console de configuration de stockage](srp-config.md) permet de sélectionner
 * Sélectionner **[!UICONTROL MongoDB Storage Resource Provider (MSRP)]**
 * **[!UICONTROL Configuration de mongoDB]**
 
-   * **[!UICONTROL URI de mongoDB]**
+   * **[!UICONTROL URI mongoDB]**
 
      *default*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
 
-   * **[!UICONTROL Base de données mongoDB]**
+   * **[!UICONTROL base de données mongoDB]**
 
-     *default*: communities
+     *default*: communautés
 
    * **[!UICONTROL Collection UGC mongoDB]**
 
-     *default*: content
+     *default*: contenu
 
    * **[!UICONTROL Collection de pièces jointes mongoDB]**
 
-     *default*: attachments
+     *default*: pièces jointes
 
 * **[!UICONTROL SolrConfiguration]**
 
-   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Hôte Zookeeper**
+   * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Hôte**
 
-     Lors de l’exécution de [Mode SolrCloud](solr.md#solrcloud-mode) avec un ZooKeeper externe, définissez cette valeur sur la variable `HOST:PORT` pour le ZooKeeper, par exemple *my.server.com:2181*
+     Lorsque vous exécutez [Mode SolrCloud](solr.md#solrcloud-mode) avec un ZooKeeper externe, définissez cette valeur sur la variable `HOST:PORT` pour le ZooKeeper, par exemple *my.server.com:2181*
 
-     Pour un ensemble ZooKeeper, saisissez des valeurs séparées par des virgules. `HOST:PORT` des valeurs, telles que *host1:2181,host2:2181*
+     Pour un ensemble ZooKeeper, saisissez des valeurs séparées par des virgules. `HOST:PORT` par exemple, *host1:2181,host2:2181*
 
      Laissez vide si Solr est exécuté en mode autonome à l’aide du ZooKeeper interne.
      *Par défaut*: *&lt;blank>*
@@ -98,7 +94,7 @@ Laissez vide si vous exécutez en mode SolrCloud.
 Nom de la collection Solr.
         *Par défaut*: collection1
 
-* Sélectionnez **[!UICONTROL Envoyer]**
+* Sélectionnez **[!UICONTROL Envoyer]**.
 
 >[!NOTE]
 >
@@ -106,11 +102,11 @@ Nom de la collection Solr.
 
 ### Jeu de Secondaires MongoDB {#mongodb-replica-set}
 
-Pour l’environnement de production, il est vivement recommandé de configurer un ensemble de réplications, un groupe de serveurs MongoDB qui implémente la réplication Principale-secondaire et le basculement automatisé.
+Pour l’environnement de production, il est vivement recommandé de configurer un ensemble de réplications, un groupe de serveurs MongoDB qui implémente la réplication primaire et secondaire et le basculement automatisé.
 
-Pour en savoir plus sur les jeux de réplications, consultez les [Réplication](https://docs.mongodb.org/manual/replication/) documentation.
+Pour en savoir plus sur les jeux de réplications, consultez les [Réplication](https://docs.mongodb.org/manual/replication/) la documentation.
 
-Pour utiliser des jeux de réplications et apprendre à définir des connexions entre les applications et les instances MongoDB, consultez les [Format URI de chaîne de connexion](https://docs.mongodb.org/manual/reference/connection-string/) documentation.
+Pour utiliser des jeux de réplications et apprendre à définir des connexions entre les applications et les instances MongoDB, consultez les [Format URI de chaîne de connexion](https://docs.mongodb.org/manual/reference/connection-string/) la documentation.
 
 #### Exemple d’URL pour la connexion à un jeu de Secondaires  {#example-url-for-connecting-to-a-replica-set}
 
@@ -136,7 +132,7 @@ Pour plus d’informations sur la configuration, voir [Configuration Solr pour S
 
 Si vous effectuez une mise à niveau à partir d’une version antérieure configurée avec MSRP, il vous faudra :
 
-1. Effectuez les opérations suivantes : [Mise à niveau vers AEM Communities](upgrade.md)
+1. Exécutez la variable [Mise à niveau vers AEM Communities](upgrade.md)
 1. Installation de nouveaux fichiers de configuration Solr
    * Pour [MLS standard](solr.md#installing-standard-mls)
    * Pour [MLS avancé](solr.md#installing-advanced-mls)
@@ -148,7 +144,7 @@ MSRP doit être identifié comme le magasin commun sur toutes les instances d’
 
 Pour rendre la configuration identique disponible dans l’environnement de publication, connectez-vous à votre instance d’auteur et procédez comme suit :
 
-* Accédez à à partir du menu principal **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Réplication]**.
+* Accédez au **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Réplication]**.
 * Sélectionner **[!UICONTROL Activer l’arborescence]**
 * **[!UICONTROL Chemin de début]**:
    * Accédez à `/etc/socialconfig/srpc/`
@@ -165,7 +161,7 @@ Pour plus d’informations sur *utilisateurs*, *profils utilisateur* et *groupes
 
 Il existe un point d’entrée HTTP pour la réindexation Solr pour MSRP lors de l’installation de nouveaux fichiers de configuration ou de la réparation d’un index Solr endommagé.
 
-Avec cet outil, MongoDB est la source de *vérité* pour MSRP ; Les sauvegardes ne doivent être effectuées que de MongoDB.
+Avec cet outil, MongoDB est la source de *vérité* pour MSRP ; les sauvegardes de MongoDB doivent être effectuées uniquement.
 
 L’arborescence UGC entière peut être réindexée, ou seulement une sous-arborescence spécifique, comme spécifié par le paramètre *path *data .
 
@@ -204,7 +200,7 @@ cURL -u *signature* -d *data* *reindex-url*
 
 >[!NOTE]
 >
->Si vous êtes [réindexation DSRP Solr](dsrp.md), l’URL est **/services/social/datastore/rdb/reindex**
+>Si vous [réindexation DSRP Solr](dsrp.md), l’URL est **/services/social/datastore/rdb/reindex**
 
 ### Exemple de réindexation MSRP {#msrp-reindex-example}
 
@@ -226,10 +222,10 @@ Sur toutes les instances d’AEM de création et de publication, consultez à no
 
 * Dans JCR, si [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
-   * Ne contient pas d’objet [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) , cela signifie que le fournisseur de stockage est JSRP.
+   * Ne contient pas de [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) , cela signifie que le fournisseur de stockage est JSRP.
    * Si le noeud srpc existe et contient le noeud [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), les propriétés de la configuration par défaut doivent définir MSRP comme fournisseur par défaut.
 
-### Le contenu généré par l’utilisateur disparaît après la mise à niveau {#ugc-disappears-after-upgrade}
+### UGC disparaît après la mise à niveau {#ugc-disappears-after-upgrade}
 
 Si vous effectuez une mise à niveau à partir d’un site AEM Communities 6.0 existant, tout contenu généré par l’utilisateur préexistant doit être converti pour être conforme à la structure requise pour la variable [SRP](srp.md) API après la mise à niveau vers AEM Communities 6.3.
 
@@ -243,7 +239,7 @@ L’outil de migration peut être personnalisé pour exporter le contenu créé 
 
 Si l’erreur suivante s’affiche dans les journaux, elle indique que le fichier de schéma Solr n’est pas correctement configuré.
 
-#### JsonMappingException : provider_id de champ non défini {#jsonmappingexception-undefined-field-provider-id}
+#### JsonMappingException : champ non défini provider_id {#jsonmappingexception-undefined-field-provider-id}
 
 ```xml
 Caused by: com.fasterxml.jackson.databind.JsonMappingException: undefined field provider_id
@@ -253,7 +249,7 @@ at com.adobe.cq.social.scf.core.BaseSocialComponent.toJSONString(BaseSocialCompo
 ... 124 common frames omitted
 ```
 
-Pour résoudre l’erreur, en suivant les instructions de la rubrique [Installation de MLS standard](solr.md#installing-standard-mls), assurez-vous que :
+Pour résoudre l’erreur, en suivant les instructions de la rubrique [Installation de MLS standard](solr.md#installing-standard-mls), vérifiez :
 
 * Les fichiers de configuration XML ont été copiés à l’emplacement Solr approprié.
 * Solr a été redémarré après que les nouveaux fichiers de configuration ont remplacé les fichiers existants.

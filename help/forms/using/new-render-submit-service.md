@@ -1,18 +1,14 @@
 ---
 title: Nouveau service de rendu et d’envoi
-seo-title: New render and submit service
 description: Définissez les services de rendu et d’envoi dans Workbench pour effectuer le rendu d’un formulaire XDP en tant que HTML ou PDF en fonction de l’appareil à partir duquel il est accessible.
-seo-description: Define render and submit services in Workbench to render XDP form as HTML or PDF depending on the device it is accessed from.
-uuid: 7f8348a1-753c-4dab-87d5-4a4a301198dd
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 6a32d240-c6a6-4937-a31f-7a5ec3c60b1f
 docset: aem65
 exl-id: 46de0101-9607-4429-84c3-7c1f34d2da27
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '891'
 ht-degree: 57%
 
 ---

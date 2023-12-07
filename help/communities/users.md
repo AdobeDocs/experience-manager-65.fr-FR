@@ -1,20 +1,16 @@
 ---
 title: Gestion des utilisateurs et des groupes d’utilisateurs
-seo-title: Managing Users and User Groups
 description: Les utilisateurs d’AEM Communities peuvent s’enregistrer et modifier leurs profils.
-seo-description: Users of AEM Communities can self-register and edit their profiles
-uuid: aeba424e-ea7e-4da5-b94f-ea8af4caa7d2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1912'
-ht-degree: 1%
+source-wordcount: '1910'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +48,7 @@ Lorsqu’un nouveau site communautaire est créé, de nouveaux groupes d’utili
 
 Les noms des groupes sont générés à partir du nom donné au site pendant la [création de site communautaire](sites-console.md#step13asitetemplate). Les identifiants uniques évitent les conflits de noms pour les sites de communauté et les groupes de communautés portant le même nom sur le même serveur.
 
-Par exemple, si le nom du site était &quot;*engager*&quot; pour un site intitulé &quot;We.Retail Engage&quot;, l’un des groupes d’utilisateurs créés serait :
+Par exemple, si le nom du site était &quot;*engager*&quot; pour un site intitulé &quot;Interagir&quot;, l’un des groupes d’utilisateurs créés serait :
 
 * Communauté *Interagir* Membres
 
@@ -214,7 +210,7 @@ Voici quelques détails de configuration spécifiques aux membres de la communau
    * Définissez les propriétés suivantes :
 
       * **[!UICONTROL Abonnement automatique des utilisateurs]**: `community-<site name>-<uid>-members`
-      * **[!UICONTROL Préfixe du chemin d’accès de l’utilisateur ou de l’utilisatrice]**: `/community`
+      * **[!UICONTROL Préfixe de chemin d’accès utilisateur]**: `/community`
       * **[!UICONTROL Préfixe de chemin d’accès au groupe]**: `/community`
 
 4. [Module de connexion externe](../../help/sites-administering/ldap-config.md#the-external-login-module)

@@ -1,18 +1,14 @@
 ---
 title: Personnalisation des onglets d’une tâche
-seo-title: Customizing tabs for a task
-description: Comment personnaliser les noms des onglets des tâches dans l’espace de travail LiveCycle AEM Forms.
-seo-description: How-to customize the names of the tabs for your tasks, in LiveCycle AEM Forms workspace.
-uuid: 77eabb63-f8ea-4ec0-8a41-b51c65cdecc0
+description: Comment personnaliser les noms des onglets de vos tâches, dans l’espace de travail AEM Forms LiveCycle.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: ac0a281f-f589-4a70-9bc7-1a23e054b02f
 exl-id: 8412cfec-bcab-40b7-9e5b-fcc211d43c0b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '101'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 

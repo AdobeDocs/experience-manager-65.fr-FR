@@ -1,20 +1,16 @@
 ---
 title: Créer de façon dynamique des documents DDX
-seo-title: Dynamically Creating DDX Documents
 description: Créez un document DDX de façon dynamique à l’aide de l’API Java et de l’API Web Service. La création dynamique d’un document DDX vous permet d’utiliser dans le document DDX des valeurs obtenues lors de l’exécution.
-seo-description: Create a DDX document dynamically using the Java API and Web Service API. Dynamically creating a DDX document enables you to use values in the DDX document that are obtained during run-time.
-uuid: b73e8069-6c9f-4517-a0ae-f3d503191d2d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
 role: Developer
 exl-id: b3c19c82-e26f-4dc8-b846-6aec705cee08
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2162'
+source-wordcount: '2153'
 ht-degree: 80%
 
 ---
@@ -237,7 +233,7 @@ Créez de manière dynamique un document DDX et désassemblez un document PDF à
 1. Convertissez le document DDX.
 
    * Créez un objet `System.IO.MemoryStream` en utilisant son constructeur.
-   * Renseignez l’objet `MemoryStream` avec le document DDX en utilisant l’objet `XmlElement` qui représente le document DDX. Appelez la méthode `Save` de l’objet `XmlElement` et transmettez l’objet `MemoryStream`. 
+   * Renseignez l’objet `MemoryStream` avec le document DDX en utilisant l’objet `XmlElement` qui représente le document DDX. Appeler la variable `XmlElement` de `Save` et transmettez la méthode `MemoryStream` .
    * Créez un tableau d’octets et renseignez-le avec des données dans la variable `MemoryStream` . Le code suivant présente la logique de cette application :
 
      ` int bufLen = Convert.ToInt32(stream.Length);  byte[] byteArray = new byte[bufLen];  stream.Position = 0;  int count = stream.Read(byteArray, 0, bufLen);`

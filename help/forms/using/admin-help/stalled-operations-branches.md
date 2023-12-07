@@ -1,32 +1,28 @@
 ---
 title: Travailler avec des opérations et des branches bloquées
-seo-title: Working with stalled operations and branches
-description: La page Opérations bloquées et la page Branches bloquées répertorient les processus bloqués.
-seo-description: The Stalled Operations page and the Stalled Branches page show the processes that have stalled.
-uuid: 5f6202b0-79c2-4c3c-847a-236c0366e60b
+description: La page Opérations bloquées et la page Branches bloquées affichent les processus qui ont bloqué.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 8c2567f3-7220-436a-b9f2-2824a98c1ccc
 exl-id: c96faae0-2b0f-4334-b61c-f13b2d1ec179
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
 source-wordcount: '707'
-ht-degree: 100%
+ht-degree: 16%
 
 ---
 
 # Travailler avec des opérations et des branches bloquées {#working-with-stalled-operations-and-branches}
 
-La page Opérations bloquées et la page Branches bloquées répertorient les processus bloqués. Un processus peut bloquer lorsqu’une erreur survient pendant ou après l’exécution d’une opération ou en raison d’une opération de blocage délibérée dans le processus :
+La page Opérations bloquées et la page Branches bloquées affichent les processus qui ont bloqué. Un processus peut bloquer lorsqu’une erreur se produit pendant ou après l’exécution d’une opération ou en raison d’une opération de blocage délibérée dans le processus :
 
-* Les opérations peuvent bloquer suite à une erreur imprévue. Toutefois, une opération de blocage de branche dans un processus arrête délibérément l’exécution d’un processus et implique l’intervention de l’administrateur.
-* Les branches peuvent bloquer entre des opérations pendant l’évaluation d’une règle.
+* Les opérations peuvent se bloquer en raison d’une erreur imprévue. Cependant, une opération de blocage de branche dans un processus empêche délibérément un processus de s’exécuter davantage et requiert l’intervention de l’administrateur.
+* Les branches peuvent bloquer entre les opérations lors de l’évaluation d’une règle.
 
-Quand un processus bloque, l’exécution de toutes les opérations suivantes est interrompue jusqu’à ce que le problème soit corrigé et que l’opération ou la branche soit redémarrée.
+Lorsqu’un processus bloque, aucune autre opération n’est exécutée tant que le problème n’a pas été résolu et que l’opération ou la branche n’a pas été redémarrée.
 
-Pour chaque élément bloqué, la liste présente les informations suivantes :
+Pour chaque élément bloqué, la liste affiche les informations suivantes :
 
 **Nom de l’opération ou nom de la branche :** le nom de l’opération ou de la branche.
 
@@ -40,47 +36,47 @@ Pour chaque élément bloqué, la liste présente les informations suivantes :
 
 **Date du blocage :** date et heure auxquelles l’opération ou la branche ont été bloquées.
 
-Vous pouvez exécuter les tâches suivantes dans la page Opérations bloquées ou Branches bloquées :
+Vous pouvez effectuer les tâches suivantes sur la page Opérations bloquées ou Branches bloquées :
 
-* Sélectionner une erreur pour afficher des informations détaillées sur cette erreur. Si vous sélectionnez une erreur, la page Détails d’erreur s’affiche.
-* Arrêter ou essayer de relancer les opérations bloquées ou essayer de relancer les branches bloquées.
+* Sélectionnez une erreur pour en afficher les détails. Lorsque vous sélectionnez une erreur, la page Détails de l’erreur s’affiche.
+* Arrêtez ou essayez de relancer des opérations bloquées ou essayez de relancer des branches bloquées.
 
 ## Arrêt ou nouvelle tentative d’opérations ou de branches bloquées {#terminating-or-retrying-stalled-operations-or-branches}
 
-Dans la page Opérations bloquées, vous pouvez arrêter les instances de processus affichées.
+Sur la page Opérations bloquées, vous pouvez arrêter les instances de processus affichées.
 
-Lorsque vous arrêtez une instance de processus, l’exécution de cette instance s’arrête et aucune opération supplémentaire n’est exécutée. En règle générale, vous n’arrêtez un processus que s’il a bloqué, ou que s’il est inutilisable suite à une erreur et ne peut pas être corrigé ou redémarré.
+Lorsque vous arrêtez une instance de processus, celle-ci s’arrête et aucune opération supplémentaire n’a lieu. En règle générale, vous arrêtez un processus uniquement s’il devient bloqué ou inutilisable en raison d’une erreur et qu’il ne peut pas être corrigé et redémarré.
 
-Dans la page Opérations bloquées ou Branches bloquées, vous pouvez essayer de relancer l’opération ou la branche.
+Sur la page Opérations bloquées ou Branches bloquées, vous pouvez relancer l’opération ou la branche.
 
-Lorsque vous essayez de relancer une opération, une requête est envoyée au processus des formulaires pour redémarrer l’opération. Si l’erreur qui a généré le blocage du processus a été corrigée et que la requête de nouvelle tentative réussit, l’exécution du processus recommence à partir du point où le processus a bloqué. Son état devient alors EN COURS. Si l’opération ne peut pas être redémarrée, son état reste BLOQUE ; il est possible que vous deviez alors l’arrêter.
+Lorsque vous essayez de relancer une opération, une requête est envoyée au processus des formulaires pour redémarrer l’opération. Si l’erreur qui a provoqué le blocage du processus a été corrigée et que la requête de nouvelle tentative a réussi, le processus recommence à s’exécuter à partir du point où il a bloqué et son état passe à EN COURS. Si l’opération ne peut pas être redémarrée, elle reste bloquée et vous devrez peut-être l’arrêter.
 
 ### Arrêt d’une opération bloquée {#terminate-a-stalled-operation}
 
-1. Dans Administration Console, cliquez sur Services > Processus des formulaires > Erreurs des opérations bloquées.
-1. Dans la page Opérations bloquées, sélectionnez l’élément à arrêter, puis cliquez sur Arrêter.
+1. Dans Administration Console, cliquez sur Services > Processus des formulaires > Erreurs des opérations bloquées.
+1. Sur la page Opérations bloquées , sélectionnez l’élément que vous souhaitez arrêter, puis cliquez sur Arrêter.
 
-### Tentative de redémarrage d’une opération ou d’une branche bloquée {#retry-a-stalled-operation-or-branch}
+### Réessayer une opération ou une branche bloquée {#retry-a-stalled-operation-or-branch}
 
-1. Dans Administration Console, cliquez sur Services > Processus des formulaires, puis sélectionnez Erreurs des opérations bloquées ou Erreurs de branche bloquée.
-1. Dans la page Opérations bloquées ou Branches bloquées, sélectionnez l’élément que vous souhaitez relancer, puis cliquez sur Nouvel essai.
+1. Dans Administration Console, cliquez sur Services > Processus des formulaires, puis sur Erreurs des opérations bloquées ou Erreurs de branche bloquée.
+1. Sur la page Opérations bloquées ou Branches bloquées , sélectionnez l’élément que vous souhaitez réessayer, puis cliquez sur Réessayer.
 
-## Affichage des détails d’erreur des opérations ou des branches bloquées {#viewing-error-details-about-stalled-operations-or-branches}
+## Affichage des détails d’erreur sur les opérations ou les branches bloquées {#viewing-error-details-about-stalled-operations-or-branches}
 
-Si vous sélectionnez une erreur dans la liste des éléments bloqués de la page Opérations bloquées ou Branches bloquées, la page Détails d’erreur s’affiche, présentant des informations détaillées sur l’erreur, susceptibles de vous aider à corriger le problème.
+Si vous sélectionnez une erreur dans la liste des éléments bloqués de la page Opérations bloquées ou Branches bloquées, la page Détails de l’erreur s’affiche, qui affiche des détails sur l’erreur qui peut vous aider à résoudre le problème.
 
-La zone située en bas de la page contient des informations sur l’erreur.
+La zone située au bas de la page contient les informations d’erreur.
 
-Depuis la page Détails d’erreur, vous pouvez également arrêter ou essayer de relancer des opérations bloquées et essayer de relancer des branches bloquées.
+Vous pouvez également arrêter ou essayer de relancer des opérations bloquées et essayer de relancer des branches bloquées à partir de la page Détails de l’erreur .
 
-## Le processus n’est pas gelé si aucun utilisateur de transmission n’existe {#process-does-not-stall-when-escalation-user-does-not-exist}
+## Le processus n’est pas bloqué lorsque l’utilisateur de réaffectation n’existe pas {#process-does-not-stall-when-escalation-user-does-not-exist}
 
-Les erreurs se produisent lorsque l’opération Attribuer une tâche du service User d’AEM forms est configurée pour transmettre la tâche à un autre utilisateur après une période déterminée, et lorsque l’utilisateur destinataire de la transmission est supprimé après l’exécution de l’opération Attribuer une tâche, mais avant que la transmission n’ait lieu.
+Des erreurs se produisent lorsque l’opération Assign Task du service Utilisateur d’AEM forms est configurée pour réaffecter la tâche à un autre utilisateur après une période spécifique, et que l’utilisateur de réaffectation est supprimé après l’exécution de l’opération Assign Task mais avant la transmission.
 
-Dans ces cas-là, l’état du processus et de la tâche ne change pas au moment configuré pour la transmission. La transmission n’a pas lieu, mais le processus ne se bloque pas. Le message suivant s’affiche dans le fichier journal du serveur :
+Lorsque cette situation se produit, l’état du processus et de la tâche ne change pas au moment configuré de la réaffectation, et celle-ci ne se produit pas, mais le processus ne se bloque pas. Le message suivant apparaît dans le journal du serveur :
 
-« L’entité de sécurité spécifiée pour la transmission n’est pas valide pour l’ID de la tâche :*numéro*, file d’attente spécifiée :*numéro* ».
+&quot;L’entité spécifiée pour la transmission n’est pas valide, pour taskID : *nombre*, queue spécifiée : *nombre*.&quot;
 
-Si l’utilisateur de transmission est supprimé avant que la tâche ne soit générée (avant l’exécution de l’opération Attribuer une tâche), le processus est gelé ou l’événement d’exception InvalidPrincipal est généré.
+Si l’utilisateur de réaffectation est supprimé avant que la tâche ne soit générée (avant l’exécution de l’opération Assign Task), le processus se bloque ou l’événement d’exception InvalidPrincipal est généré.
 
-Pour éviter ce problème, lorsque vous supprimez un utilisateur, recherchez les tâches lui appartenant et traitez-les de manière appropriée (voir [Utilisation de tâches](/help/forms/using/admin-help/tasks.md#working-with-tasks)).
+Pour éviter ce problème, lorsque vous supprimez un utilisateur, recherchez les tâches qui lui sont associées et traitez-les en conséquence. (Voir [Utilisation des tâches](/help/forms/using/admin-help/tasks.md#working-with-tasks).)

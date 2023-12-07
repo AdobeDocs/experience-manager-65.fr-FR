@@ -1,14 +1,12 @@
 ---
 title: Configurer la sortie de formulaire
 description: Découvrez comment configurer la sortie de formulaire. Pour configurer la sortie du formulaire et activer la fonction, utilisez les scripts personnalisés avant l’envoi du formulaire.
-uuid: 70aad14e-c845-4ef3-a751-ad8860d5d505
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
 exl-id: d739806c-ce72-40fd-b304-3262a0988d96
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 38%

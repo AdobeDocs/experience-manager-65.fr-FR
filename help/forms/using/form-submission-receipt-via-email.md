@@ -1,16 +1,12 @@
 ---
 title: Envoi d’un accusé de réception d’envoi de formulaire par e-mail
-seo-title: Sending a form submission acknowledgement via email
 description: AEM Forms vous permet de configurer l’action d’envoi par courrier électronique qui envoie un accusé de réception à un utilisateur lors de l’envoi du formulaire.
-seo-description: AEM Forms lets you configure the email submit action that sends an acknowledgement to a user on submitting the form.
-uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
 docset: aem65
 exl-id: bca4044a-18a9-4b97-92de-eff1e9a840f9
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 71%

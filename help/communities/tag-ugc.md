@@ -1,26 +1,22 @@
 ---
-title: Balisage de contenu généré par l’utilisateur
-seo-title: Tagging User Generated Content
+title: Balisage du contenu généré par l’utilisateur
 description: Le balisage du contenu généré par l’utilisateur (UGC) permet aux membres de la communauté d’aider d’autres membres à rechercher du contenu.
-seo-description: Tagging of user generated content (UGC) is how community members can help other members search for content
-uuid: ce125d7c-6fc1-44c7-9f67-eca6f599d8e3
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
 role: Admin
 exl-id: 1ecb41e5-c959-4380-a5c7-df9fc3a7703a
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '227'
-ht-degree: 8%
+ht-degree: 4%
 
 ---
 
-# Balisage de contenu généré par l’utilisateur {#tagging-user-generated-content}
+# Balisage du contenu généré par l’utilisateur {#tagging-user-generated-content}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Le balisage du contenu généré par les utilisateurs est le moyen par lequel les membres de la communauté peuvent aider d’autres membres à rechercher du contenu.
 

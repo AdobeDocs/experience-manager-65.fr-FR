@@ -1,18 +1,14 @@
 ---
 title: Gérer les catégories affichées dans Workspace
-seo-title: Managing the categories displayed in Workspace
 description: Dans Workspace, les processus qu’un utilisateur peut démarrer s’affichent dans des catégories dans le volet de navigation de gauche. Découvrez comment gérer ces catégories affichées dans Workspace.
-seo-description: In Workspace, the processes that a user can start are displayed in categories in the left navigation pane. Learn how you can manage these categories displayed in Workspace.
-uuid: c2a275f5-872e-467f-9f07-4b130631e8a8
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 0d1536a2-10ac-4031-bd7f-264b02d0d75f
 exl-id: 62621fe9-f69f-4bc0-aecc-d7bcc3064516
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '482'
 ht-degree: 9%
 
 ---
@@ -46,7 +42,7 @@ Si vous utilisez MySQL comme base de données d’AEM forms, Administration Cons
 1. Sélectionnez la catégorie à modifier, puis cliquez sur Modifier. Vous pouvez également double-cliquer sur une catégorie à modifier.
 1. Editez le nom de la catégorie dans la zone Nom .
 
-## Supprimer une catégorie {#remove-a-category}
+## Suppression d’une catégorie {#remove-a-category}
 
 Vous pouvez supprimer uniquement les catégories qui ne sont pas utilisées.
 

@@ -1,16 +1,14 @@
 ---
-title: Résolution des problèmes Problèmes d’installation avec AEM
+title: Dépanner les problèmes d’installation avec AEM
 description: Cet article aborde certains des problèmes d’installation que vous pouvez rencontrer avec AEM.
-uuid: 2ca898c3-b074-4ccd-a383-b92f226e6c14
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: ht
-source-wordcount: '1171'
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '1160'
 ht-degree: 100%
 
 ---
@@ -57,7 +55,7 @@ Pour résoudre le problème, procédez comme suit :
 * Ouvrez un menu contextuel (généralement avec le bouton droit de la souris) dans le démarrage rapide de la gestion de contenu web d’AEM, puis sélectionnez « Ouvrir avec… ».
 * Vérifiez si Java™ ou Sun Java™ est répertorié et essayez d’exécuter la gestion de contenu web d’AEM avec ce logiciel. Si plusieurs versions de Java™ sont installées, sélectionnez celle prise en charge.
 
-   Si cette étape porte ses fruits et que votre système d’exploitation permet de définir le programme sélectionné pour exécuter les fichiers .jar par défaut, sélectionnez-le. Double-cliquez à présent sur le fichier jar de démarrage rapide pour vérifier si le problème est résolu.
+  Si cette étape porte ses fruits et que votre système d’exploitation permet de définir le programme sélectionné pour exécuter les fichiers .jar par défaut, sélectionnez-le. Double-cliquez à présent sur le fichier jar de démarrage rapide pour vérifier si le problème est résolu.
 
 * Parfois, la réinstallation de la version Java™ prise en charge permet de restaurer l’association correcte.
 * Vous pouvez toujours exécuter CRX à l’aide de la ligne de commande ou des scripts start/stop, comme décrit précédemment dans ce document.

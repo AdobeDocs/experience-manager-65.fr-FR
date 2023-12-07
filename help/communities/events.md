@@ -1,25 +1,21 @@
 ---
 title: Événements OSGi pour les composants Communities
-seo-title: OSGi Events for Communities Components
 description: Les événements OSGi sont envoyés et peuvent déclencher des écouteurs asynchrones.
-seo-description: OSGi events are sent that can trigger asynchronous listeners
-uuid: 317e2add-689d-4c99-ae38-0703b6649cb7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 exl-id: 8049d797-e758-44c2-a89b-51d2b2fca8dc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 5%
+source-wordcount: '592'
+ht-degree: 6%
 
 ---
 
 # Événements OSGi pour les composants Communities  {#osgi-events-for-communities-components}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Lorsque les membres interagissent avec les fonctionnalités de Communities, des événements OSGi sont envoyés, qui peuvent déclencher des écouteurs asynchrones, tels que des notifications ou des jeux vidéo (notation et badge).
 
@@ -36,8 +32,8 @@ SocialEvent `topic`= com/adobe/cq/social/calendar
 |---|---|
 | POST | Un membre crée un événement de calendrier |
 | AJOUTER | Commentaires des membres sur un événement de calendrier |
-| UPDATE | L’événement ou le commentaire de calendrier du membre est modifié. |
-| DELETE | L’événement ou le commentaire de calendrier du membre est supprimé. |
+| MISE À JOUR | L’événement ou le commentaire de calendrier du membre est modifié. |
+| SUPPRIMER | L’événement ou le commentaire de calendrier du membre est supprimé. |
 
 [Composant Commentaires](essentials-comments.md)
 SocialEvent `topic`= com/adobe/cq/social/comment
@@ -46,8 +42,8 @@ SocialEvent `topic`= com/adobe/cq/social/comment
 |---|---|
 | POST | Un membre crée un commentaire |
 | AJOUTER | Réponses des membres au commentaire |
-| UPDATE | Le commentaire du membre est modifié |
-| DELETE | Le commentaire du membre est supprimé. |
+| MISE À JOUR | Le commentaire du membre est modifié |
+| SUPPRIMER | Le commentaire du membre est supprimé |
 
 [Composant Bibliothèque de fichiers](essentials-file-library.md)
 SocialEvent `topic`= com/adobe/cq/social/fileLibrary
@@ -56,8 +52,8 @@ SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 |---|---|
 | POST | Un membre crée un dossier |
 | ATTACH | Le membre charge un fichier |
-| UPDATE | Le membre met à jour un dossier ou un fichier |
-| DELETE | Le membre supprime un dossier ou un fichier |
+| MISE À JOUR | Le membre met à jour un dossier ou un fichier |
+| SUPPRIMER | Le membre supprime un dossier ou un fichier |
 
 [Composant du forum](essentials-forum.md)
 SocialEvent `topic`= com/adobe/cq/social/forum
@@ -66,8 +62,8 @@ SocialEvent `topic`= com/adobe/cq/social/forum
 |---|---|
 | POST | Rubrique de forum créée par un membre |
 | AJOUTER | Réponses des membres au sujet du forum |
-| UPDATE | Le sujet ou la réponse du forum du membre est modifié |
-| DELETE | Suppression de la rubrique ou de la réponse du forum du membre |
+| MISE À JOUR | Le sujet ou la réponse du forum du membre est modifié |
+| SUPPRIMER | Suppression de la rubrique ou de la réponse du forum du membre |
 
 [Composant Journal](blog-developer-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/journal
@@ -76,8 +72,8 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 |---|---|
 | POST | Un membre crée un article de blog. |
 | AJOUTER | Commentaires des membres sur un article de blog |
-| UPDATE | Article ou commentaire du blog du membre modifié |
-| DELETE | L’article ou le commentaire du blog du membre est supprimé. |
+| MISE À JOUR | Article ou commentaire du blog du membre modifié |
+| SUPPRIMER | L’article ou le commentaire du blog du membre est supprimé. |
 
 [Composant Q&amp;R](qna-essentials.md)
 SocialEvent `topic` = com/adobe/cq/social/qna
@@ -86,10 +82,10 @@ SocialEvent `topic` = com/adobe/cq/social/qna
 |---|---|
 | POST | Un membre crée une question Q&amp;R |
 | AJOUTER | Un membre crée une réponse Q&amp;R |
-| UPDATE | Question ou réponse Q&amp;R du membre modifié |
+| MISE À JOUR | Question ou réponse Q&amp;R du membre modifié |
 | SELECT | La réponse du membre est sélectionnée |
 | UNSELECT | La réponse du membre est désélectionnée |
-| DELETE | Question ou réponse Q&amp;R du membre supprimée |
+| SUPPRIMER | Question ou réponse Q&amp;R du membre supprimée |
 
 [Composant Révisions](reviews-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/review
@@ -97,8 +93,8 @@ SocialEvent `topic`= com/adobe/cq/social/review
 | **Verbe** | **Description** |
 |---|---|
 | POST | Création d’une révision par membre |
-| UPDATE | La révision du membre est modifiée. |
-| DELETE | La révision du membre est supprimée |
+| MISE À JOUR | La révision du membre est modifiée. |
+| SUPPRIMER | La révision du membre est supprimée. |
 
 [Composant d’évaluation](rating-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/tally
@@ -122,9 +118,9 @@ SocialEvent `topic`= com/adobe/cq/social/modération
 | **Verbe** | **Description** |
 |---|---|
 | DENY | Le contenu du membre est refusé |
-| INDICATEUR INAPPROPRIÉ | Le contenu du membre est marqué |
+| INDICATEUR : INAPPROPRIÉ | Le contenu du membre est marqué |
 | INAPPROPRIÉ | Le contenu du membre n’est pas marqué |
-| ACCEPT | Le contenu du membre est approuvé par le modérateur |
+| ACCEPTER | Le contenu du membre est approuvé par le modérateur |
 | CLOSE | Le membre ferme le commentaire aux modifications et aux réponses |
 | OUVRIR | Commentaire de réouverture de membre |
 
@@ -132,7 +128,7 @@ SocialEvent `topic`= com/adobe/cq/social/modération
 
 Pour un composant personnalisé, la variable [Classe abstraite SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) doit être étendu d pour enregistrer les événements du composant comme `actions`qui se produit pour un `topic`.
 
-L’événement personnalisé remplace la méthode . `getVerb()` afin qu’une `verb`est renvoyé pour chaque `action`. Le `verb` renvoyé pour une action peut être une méthode couramment utilisée (telle que `POST`) ou spécialisé pour le composant (par exemple `ADD RATING`). Il existe une *n-1* relation entre `actions`et `verbs`.
+L’événement personnalisé remplace la méthode . `getVerb()` afin qu’une `verb`est renvoyé pour chaque `action`. La variable `verb` renvoyé pour une action peut être une méthode couramment utilisée (telle que `POST`) ou spécialisé pour le composant (par exemple `ADD RATING`). Il existe une *n-1* relation entre `actions`et `verbs`.
 
 >[!NOTE]
 >

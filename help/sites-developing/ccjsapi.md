@@ -1,19 +1,15 @@
 ---
 title: API JavaScript ClientContext
-seo-title: Client Context JavaScript API
 description: Découvrez l’API JavaScript pour ClientContext dans Adobe Experience Manager.
-seo-description: The JavaScript API for Client Context
-uuid: be58998c-f23e-4768-8394-1f1ad3994c4c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
 feature: Context Hub
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3157'
+source-wordcount: '3106'
 ht-degree: 56%
 
 ---
@@ -204,7 +200,7 @@ Nom du magasin. Utilisez la méthode `getInstance` pour récupérer cette valeur
 
 Voir également CQ_Analytics.SessionStore pour connaître les méthodes héritées.
 
-#### effacer() {#clear}
+#### clear() {#clear}
 
 Supprime les données du magasin de sessions et supprime toutes les propriétés d’initialisation.
 
@@ -613,7 +609,7 @@ Utilisez loadInitProperties pour renseigner les données du magasin de sessions 
 
 Aucune valeur renvoyée.
 
-#### effacer() {#clear-1}
+#### clear() {#clear-1}
 
 Supprime toutes les propriétés de données du magasin.
 
@@ -778,7 +774,7 @@ Définit les valeurs d’une propriété. Déclenche l’événement `update` à
 **Paramètres**
 
 * name : chaîne. Nom de la propriété.
-* value : chaîne. Valeur de propriété.
+* value : chaîne. Valeur de la propriété.
 
 **Renvoie**
 

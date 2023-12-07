@@ -1,16 +1,12 @@
 ---
 title: Personnalisation des modèles de recherche
-seo-title: Customizing search templates
 description: Vous pouvez créer des modèles de recherche à utiliser dans Workspace pour rechercher des instances de processus à partir des pages de tâches et de suivi. Vous pouvez également modifier ou supprimer des modèles de recherche existants.
-seo-description: You can create search templates to be used in Workspace to search for instances of processes from the To Do and Tracking pages. You can also edit or delete existing search templates.
-uuid: 2043ba8a-07f0-4054-af3c-f3a14c2183ab
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 11%
@@ -80,7 +76,7 @@ Vous pouvez créer autant de modèles de recherche que nécessaire.
 
 1. Cliquez sur l’onglet Enregistrer .
 1. (Facultatif) Si vous créez un modèle de recherche, attribuez-lui un nom unique. Si vous ne spécifiez pas de nom unique, vous pouvez remplacer un modèle existant.
-1. Cliquez sur le bouton Enregistrer.
+1. Cliquez sur le bouton Enregistrer .
 
 ## Suppression d’un modèle de recherche {#delete-a-search-template}
 

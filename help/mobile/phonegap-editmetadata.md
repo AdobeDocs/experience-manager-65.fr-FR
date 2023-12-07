@@ -1,19 +1,15 @@
 ---
 title: Modification des métadonnées d’application
-seo-title: Editing App Metadata
-description: Les métadonnées de l’application sont requises pour publier une application dans le magasin d’un fournisseur. Consultez cette page pour en savoir plus sur la modification des données d’application.
-seo-description: App metadata is required details for releasing an application to a vendor's store. Follow this page to learn about editing app data.
-uuid: c140be0f-8403-416e-af0f-29072a2ab942
+description: Les métadonnées de l’application sont requises pour la publication d’une application dans le magasin d’un fournisseur. Consultez cette page pour en savoir plus sur la modification des données d’application.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-discoiquuid: 07b38da6-2efa-4a43-9afa-7151a241a5ad
 exl-id: 897a04b9-e357-4f1c-8aa0-2c2528f8556d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 4%
+source-wordcount: '377'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +19,7 @@ ht-degree: 4%
 >
 >Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-Le **Gérer l’application** La mosaïque et la page &quot;Gérer l’application&quot; permettent d’afficher et de modifier les métadonnées de l’application. Les métadonnées de l’application sont requises pour publier une application dans le magasin d’un fournisseur. Il peut s’agir de métadonnées courantes, de métadonnées iOS et de captures d’écran. Voir [Mosaïque Gérer l’application](/help/mobile/phonegap-app-details-tile.md) pour plus d’informations sur les métadonnées courantes et iOS.
+La variable **Gérer l’application** La mosaïque et la page Gérer l’application permettent d’afficher et de modifier les métadonnées de l’application. Les métadonnées de l’application sont requises pour la publication d’une application dans le magasin d’un fournisseur. Il peut s’agir de métadonnées courantes, de métadonnées iOS et de captures d’écran. Voir [Mosaïque Gérer l’application](/help/mobile/phonegap-app-details-tile.md) pour plus d’informations sur les métadonnées courantes et iOS.
 
 ## Modification des données de l’application {#editing-the-app-data}
 
@@ -33,7 +29,7 @@ Pour modifier les métadonnées de l’application :
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-1. Pour afficher ou modifier les détails, cliquez sur &quot;...&quot;. dans le coin inférieur droit du **Gérer l’application** mosaïque.
+1. Pour afficher ou modifier les détails, cliquez sur &quot;...&quot; dans le coin inférieur droit de la page **Gérer l’application** mosaïque.
 
 1. Saisissez ou affichez les détails dans l’un des cinq onglets disponibles, comme illustré dans la figure ci-dessous.
 
@@ -43,7 +39,7 @@ Pour modifier les métadonnées de l’application :
 
 Vous pouvez modifier les métadonnées IOS communes :
 
-* Sélectionnez la **Avancé** de la page de description de l’application.
+* Sélectionnez la variable **Avancé** de la page de description de l’application.
 * Modifiez ou affichez les métadonnées communes et IOS. Pour plus d’informations, reportez-vous aux figures ci-dessous.
 
 ![chlimage_1-31](assets/chlimage_1-31.png) ![chlimage_1-32](assets/chlimage_1-32.png)

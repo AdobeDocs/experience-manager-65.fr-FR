@@ -1,19 +1,15 @@
 ---
 title: Présentation des services de document AEM
-seo-title: Overview of AEM Document Services
 description: Les services de document AEM sont un ensemble de services OSGi permettant de créer, d’assembler et de sécuriser des documents PDF.
-seo-description: AEM Document Services are a set of OSGi Services for creating, assembling, and securing PDF Documents.
-uuid: 439144b7-f805-4819-9ed9-a6e9e374b5ed
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: 10d406db-ac10-479b-b08b-d0735116a12b
 docset: aem65
 exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 59%
+source-wordcount: '1413'
+ht-degree: 58%
 
 ---
 
@@ -46,10 +42,10 @@ Lorsque vous utilisez le service Output pour fusionner des données XML avec une
 
 Les quatre opérations suivantes du service Output sont disponibles :
 
-* **generatePDFOuput**: Fusionne une conception de formulaire avec des données pour générer un document de PDF
+* **generatePDFOuput**: fusionne une conception de formulaire avec des données pour générer un document de PDF.
 * **generatePrintedOutput** : fusionne une conception de formulaire avec des données pour générer un document à envoyer à une imprimante laser ou une imprimante d’étiquettes réseau.
 
-* **generatePDFOutputBatch**: Fusionne plusieurs modèles avec plusieurs enregistrements de données en un seul appel pour générer un lot de fichiers de PDF. Il existe également une option pour générer un PDF unique en combinant tous les PDF.
+* **generatePDFOutputBatch**: fusionne plusieurs modèles avec plusieurs enregistrements de données en un seul appel pour générer un lot de fichiers de PDF. Il existe également une option pour générer un PDF unique en combinant tous les PDF.
 * **generatePrintedOutputBatch** : fusionne en un seul appel plusieurs modèles avec plusieurs enregistrements de données pour générer un lot de documents d’impression (PS, PCL, ZPL, DPL, IPL, TPCL). Il existe également une option pour générer un document d’impression unique.
 
 ## Incohérence affectant le service assembleur {#assembler-service}

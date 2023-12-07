@@ -1,17 +1,15 @@
 ---
 title: Ajout de fonctionnalités Dynamic Media Classic (Scene7) à votre page
 description: Adobe Dynamic Media Classic (Scene7) est une solution hébergée pour la gestion, l’amélioration, la publication et la diffusion de contenus multimédias enrichis sur les canaux web, mobiles, par e-mail, sur les appareils connectés à Internet et par impression.
-uuid: dc463e2d-a452-490e-88af-f79bdaa3b089
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
-discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3532'
+source-wordcount: '3545'
 ht-degree: 99%
 
 ---
@@ -132,7 +130,7 @@ Adobe recommande de publier des ressources dans Dynamic Media Classic (Scene7)
 Les composants Dynamic Media Classic (Scene7) suivants sont disponibles dans Experience Manager :
 
 * Zoom
-* Fenêtre déroulante (Zoom)
+* Fenêtre déroulante (zoom)
 * Modèle d’image
 * Image
 * Vidéo

@@ -1,20 +1,16 @@
 ---
 title: Présentation d’AEM Forms
-seo-title: Introduction to AEM Forms
 description: Avec Adobe Experience Manager Forms, les utilisateurs professionnels peuvent intégrer des formulaires adaptatifs, réactifs et attrayants à des sites web et mobiles, ce qui simplifie le processus d’inscription numérique et augmente les taux de conversion des clients.
-seo-description: With Adobe Experience Manager Forms, business users can integrate engaging, responsive, and adaptive forms into web and mobile sites, simplifying the digital enrollment process and increasing customer conversion rates.
-uuid: a6564997-4227-4d5d-b27d-47a55a386238
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
-discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: f8f82ad5805095f331432471b614225f761e645c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 34%
+source-wordcount: '952'
+ht-degree: 28%
 
 ---
 
@@ -29,11 +25,11 @@ Pour plus d’informations sur les dernières fonctionnalités et améliorations
 
 ## À propos d’AEM Forms {#about-aem-forms}
 
-Adobe Experience Manager (AEM) offre une solution conviviale pour créer, gérer, publier et mettre à jour des formulaires numériques complexes tout en s’intégrant aux processus principaux, aux règles métier et aux données.
+Adobe Experience Manager (AEM) offre une solution conviviale pour créer, gérer, publier et mettre à jour des formulaires numériques complexes tout en s’intégrant aux processus principaux, aux règles métier et aux données.
 
 AEM Forms associe des outils de création, de gestion et de publication à des fonctionnalités de gestion des correspondances, de sécurité des documents et d’analytique intégré pour offrir un environnement complet et convivial. Conçu pour fonctionner sur des canaux Web et mobiles, AEM Forms peut être efficacement intégré à vos processus métier, ce qui réduit les processus papier et les erreurs tout en améliorant l’efficacité.
 
-Dans les grandes entreprises, les formulaires sont souvent créés et réutilisés en les copiant dans un système de gestion de contenu. La mise à jour d’une base de données volumineuse de formulaires et leur découverte peuvent représenter un défi considérable. AEM propose un portail de formulaires personnalisable qui permet aux clients et aux clientes de rechercher les formulaires dont ils ou elles ont besoin et d’y accéder via les canaux Web et mobiles.
+Dans les grandes entreprises, les formulaires sont souvent créés et réutilisés en les copiant dans un système de gestion de contenu. La mise à jour d’une base de données volumineuse de formulaires et leur découverte peuvent représenter un défi considérable. AEM fournit un portail Forms personnalisable qui permet aux clients de rechercher et d’accéder aux formulaires dont ils ont besoin sur les canaux web et mobiles.
 
 AEM Forms offre des outils de gestion de formulaires qui vous permettent non seulement de gérer les formulaires adaptatifs, mais aussi les formulaires XFA, les formulaires PDF et les actifs associés. Pour plus d’informations, voir [Présentation de la gestion des formulaires](../../forms/using/introduction-managing-forms.md).
 
@@ -62,7 +58,7 @@ AEM Forms vous permet d’étendre les formulaires nouveaux et existants pour cr
 * HTML et PDF forms pixels parfaits et paginés qui ressemblent presque à du papier, ou
 * formulaires adaptatifs qui s’affichent automatiquement pour le périphérique et le navigateur d’un utilisateur.
 
-**Formulaires PDF**
+**PDF forms**
 
 Les PDF forms peuvent être remplis hors ligne, enregistrés localement et les données de formulaire envoyées lors de votre prochaine mise en ligne. Vous pouvez utiliser des codes à barres 2D pour capturer des données de formulaire et des signatures numériques pour valider l’authenticité des utilisateurs.
 

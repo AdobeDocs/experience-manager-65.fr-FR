@@ -1,19 +1,15 @@
 ---
 title: Préremplissage des champs de formulaires adaptatifs
-seo-title: Prefill adaptive form fields
 description: Employez les données existantes pour préremplir les champs d’un formulaire adaptatif.
-seo-description: With adaptive forms, you users can prefill basic information in a form by logging in with their social profiles. This article describes how you can accomplish this.
-uuid: 574de83a-7b5b-4a1f-ad37-b9717e5c14f1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 feature: Adaptive Forms
 exl-id: 29cbc330-7b3d-457e-ba4a-7ce6091f3836
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2248'
-ht-degree: 65%
+source-wordcount: '2203'
+ht-degree: 79%
 
 ---
 
@@ -204,15 +200,15 @@ Voici un exemple sans le wrapper `afData/afBoundData` :
 
 >[!NOTE]
 >
->L’utilisation de champs non liés dans les panneaux liés (panneaux avec une valeur bindRef non vides qui ont été créés en faisant glisser des composants de l’onglet Sidekick ou Sources de données) est **not** recommandé, car il peut entraîner une perte de données des champs non liés. Il est recommandé d’utiliser des noms de champs uniques dans le formulaire, notamment pour les champs non liés.
+>L’utilisation de champs non liés dans les panneaux liés (panneaux avec une valeur bindRef non vides qui ont été créés en faisant glisser des composants du Sidekick ou de l’onglet Sources de données) **n’est pas** recommandée car elle peut entraîner une perte de données des champs non liés. Il est recommandé d’utiliser des noms de champs uniques dans le formulaire, notamment pour les champs non liés.
 
 ### Formulaire adaptatif sans modèle de formulaire {#adaptive-form-with-no-form-model}
 
 Pour les formulaires adaptatifs sans modèle de formulaire, les données de tous les champs se trouveront sous l’onglet `<data>` de la balise `<afUnboundData> tag`.
 
-Notez également les points suivants :
+Prenez également en compte les points suivants :
 
-Les balises XML des données utilisateur envoyées pour différents champs sont générées à l’aide du nom des champs. Par conséquent, les noms des champs doivent être uniques.
+Les balises XML des données utilisateur envoyées pour différents champs sont générées avec le nom des champs. Par conséquent, les noms des champs doivent être uniques.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><afData>
@@ -260,7 +256,7 @@ Pour activer le service de préremplissage, spécifiez la configuration de servi
 
    >[!NOTE]
    >
-   >Le protocole crx s’occupe de la sécurité des données préremplies et par conséquent, est activé par défaut. Le préremplissage via d’autres protocoles à l’aide d’une expression régulière générique peut entraîner une vulnérabilité. Dans la configuration, spécifiez une configuration d’URL sécurisée pour protéger vos données.
+   >Le protocole crx s’occupe de la sécurité des données préremplies et par conséquent, est activé par défaut. Le préremplissage par le biais d’autres protocoles à l’aide de l’expression regex peut entraîner une vulnérabilité. Dans la configuration, spécifiez une configuration d’URL sécurisée pour protéger vos données.
 
 ## Cas étrange des panneaux répétables {#the-curious-case-of-repeatable-panels}
 
@@ -271,7 +267,7 @@ En règle générale, les champs liés (schéma de formulaire) et non liés sont
 
 >[!NOTE]
 >
->En règle générale, ne mélangez pas les champs liés et non liés s’ils sont recoupés dans des données remplies par l’utilisateur final dans des champs non liés. Si possible, vous devez modifier le schéma ou le modèle de formulaire XFA et ajouter une entrée pour les champs non liés, de sorte qu’il devienne également lié et que ses données soient disponibles comme d’autres champs dans les données envoyées.
+>En règle générale, vous ne devez pas mélanger de champs liés et non liés s’ils sont recoupés dans les données remplies dans les champs non liés par l’utilisatrice ou utilisateur final. Si possible, vous devez modifier le schéma ou le modèle de formulaire XFA et ajouter une entrée pour les champs non liés pour qu’ils deviennent également liés et que ses données soient disponibles comme tout autre champ dans les données envoyées.
 
 ## Protocoles pris en charge pour le préremplissage des données utilisateur {#supported-protocols-for-prefilling-user-data}
 
@@ -306,7 +302,7 @@ https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=servic
 ```
 
 * SERVICE_NAME fait référence au nom du service de préremplissage OSGI. Voir [Création et exécution d’un service de préremplissage](../../forms/using/prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
-* IDENTIFIER fait référence à toutes les métadonnées requises par le service de préremplissage OSGI pour récupérer les données de préremplissage. Un identifiant de l’utilisateur connecté est un exemple de métadonnées qui peut être utilisé.
+* IDENTIFIER fait référence à toutes les métadonnées requises par le service de préremplissage OSGI pour récupérer les données de préremplissage. Un identifiant à la personne connectée est un exemple de métadonnées qui pourraient être utilisées.
 
 >[!NOTE]
 >
@@ -332,9 +328,9 @@ Vous pouvez également définir l’attribut `data` dans `slingRequest`, où l�
 %>
 ```
 
-Vous pouvez écrire une chaîne XML ou JSON simple contenant toutes vos données et la définir dans slingRequest. Vous pouvez facilement le faire dans votre JSP de rendu pour tout composant que vous souhaitez inclure dans la page où vous pouvez définir l’attribut data slingRequest .
+Vous pouvez écrire une chaîne XML ou JSON simple contenant toutes les données et la définir dans slingRequest. Cette opération peut facilement être effectuée dans le JSP de rendu pour tout composant que vous souhaitez inclure dans la page où vous pouvez définir l’attribut data slingRequest.
 
-Par exemple, lorsque vous souhaitez une conception spécifique pour votre page avec un type spécifique d’en-tête. Pour obtenir ce résultat, vous pouvez écrire votre propre fichier `header.jsp` à inclure dans votre composant de page et définir l’attribut.`data`
+Imaginons que vous souhaitez une conception spécifique pour votre page avec un type spécifique d’en-tête. Pour obtenir ce résultat, vous pouvez écrire votre propre fichier `header.jsp` à inclure dans votre composant de page et définir l’attribut.`data`
 
 Prenons un autre bon exemple dans lequel vous souhaitez préremplir les données à la connexion par le biais de comptes de réseau social tels que Facebook, Twitter ou LinkedIn. Dans ce cas, vous pouvez inclure un JSP simple dans `header.jsp` qui récupère les données du compte d’utilisateur et définit le paramètre data.
 
@@ -363,7 +359,7 @@ Le service de préremplissage est un service OSGi et fait partie du bundle OSGi.
 Le package standard (exemple de package de service de préremplissage) contient un exemple d’implémentation du service de préremplissage AEM Forms. Ouvrez le package standard dans un éditeur de code. Par exemple, ouvrez le projet standard dans Eclipse pour le modifier. Après avoir ouvert le package standard dans un éditeur de code, procédez comme suit pour créer le service.
 
 1. Ouvrez le fichier src\main\java\com\adobe\test\Prefill.java pour le modifier.
-1. Dans le code, définissez la valeur de :
+1. Dans le code, définissez la valeur de :
 
    * `nodePath:` la variable de chemin de nœud pointant vers l’emplacement du référentiel crx contient le chemin du fichier (de préremplissage) de données. Par exemple, /content/prefilldata.xml
    * `label:` le paramètre label spécifie le nom d’affichage du service. Par exemple, service de préremplissage par défaut

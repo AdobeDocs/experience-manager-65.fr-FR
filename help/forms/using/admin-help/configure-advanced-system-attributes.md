@@ -1,25 +1,21 @@
 ---
 title: Configurer les attributs système avancés
-seo-title: Configure advanced system attributes
-description: Utilisez la page Configurer les attributs système avancés pour modifier certains paramètres du fichier de configuration sans qu’il soit nécessaire de l’exporter, de le modifier et de l’importer.
-seo-description: Use the Configure Advanced System Attributes page to modify certain settings in the configuration file without the need to export, edit, and import the file.
-uuid: 6bcfbaa9-f492-46aa-97d2-00fc3e67d0d7
+description: Utilisez la page Configurer les attributs système avancés pour modifier certains paramètres du fichier de configuration sans avoir à exporter, modifier et importer le fichier.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 533ad3f7-3905-420d-8bb9-8ae8f14fb28e
 exl-id: 809af2c0-6f5c-4dd4-af48-dbf476c9ea45
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '475'
-ht-degree: 100%
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '480'
+ht-degree: 88%
 
 ---
 
 # Configurer les attributs système avancés {#configure-advanced-system-attributes}
 
-Utilisez la page Configurer les attributs système avancés pour modifier certains paramètres du fichier de configuration sans qu’il soit nécessaire de l’exporter, de le modifier et de l’importer (voir [Importation et exportation du fichier de configuration](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file)).
+Utilisez la page Configurer les attributs système avancés pour modifier certains paramètres du fichier de configuration sans avoir à exporter, modifier et importer le fichier. (Voir [Import et export du fichier de configuration](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
 1. Dans la console d’administration, cliquez sur **[!UICONTROL Paramètres > User Management > Configuration > Configurer les attributs système avancés]**.
 1. (Facultatif) Modifiez l’un des attributs de session suivants :

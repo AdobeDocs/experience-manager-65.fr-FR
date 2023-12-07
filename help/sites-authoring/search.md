@@ -1,18 +1,16 @@
 ---
 title: Recherche complète
 description: Trouvez votre contenu plus rapidement grâce à une recherche complète.
-uuid: 21605b96-b467-4d01-9a64-9d0648d539f1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 82%
+source-wordcount: '517'
+ht-degree: 79%
 
 ---
 
@@ -32,9 +30,9 @@ La recherche est disponible dans la barre d’outils supérieure :
 
 Avec le rail de recherche, vous pouvez accomplir ce qui suit :
 
-* Rechercher un mot-clé, un chemin ou une balise.
+* Recherchez un mot-clé, chemin ou balise spécifique.
 * Filtrez selon des critères spécifiques à une ressource, tels que les dates de modification, l’état de la page, la taille du fichier, etc.
-* Définir et utiliser une [recherche enregistrée](#saved-searches) sur la base des critères ci-dessus.
+* Définissez et utilisez un [recherche enregistrée](#saved-searches) - selon les critères ci-dessus.
 
 >[!NOTE]
 >

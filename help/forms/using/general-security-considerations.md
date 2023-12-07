@@ -1,19 +1,15 @@
 ---
 title: Considérations générales sur la sécurité pour AEM Forms sur JEE
-seo-title: General Security Considerations for AEM Forms on JEE
 description: Découvrez comment préparer le renforcement de votre environnement AEM Forms sur JEE.
-seo-description: Learn how to prepare for hardening your AEM Forms on JEE environment.
-uuid: 4d098731-fc8f-41d7-98b5-5c2e31211614
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
-discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
-workflow-type: ht
-source-wordcount: '1059'
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+workflow-type: tm+mt
+source-wordcount: '996'
 ht-degree: 100%
 
 ---
@@ -233,7 +229,7 @@ Les informations d’identification de messagerie stockées par les applications
 
 ### Contenu sensible pour Rights Management dans la base de données {#sensitive-content-for-rights-management-in-the-database}
 
-AEM Forms sur JEE utilise sa base de données pour stocker des informations clés sur des documents sensibles et d’autres données cryptographiques utilisées pour les documents de stratégie. Le fait de sécuriser la base de données contre les intrusions contribue à la protection de ces informations sensibles.
+AEM Forms sur JEE utilise sa base de données pour stocker des informations clés sur des documents sensibles et d’autres données cryptographiques utilisées pour les documents de politique. Le fait de sécuriser la base de données contre les intrusions contribue à la protection de ces informations sensibles.
 
 ### Mot de passe en texte clair {#password-in-clear-text-format-in-adobe-ds-xml}
 

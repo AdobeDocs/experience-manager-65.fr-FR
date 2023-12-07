@@ -1,18 +1,14 @@
 ---
 title: Création d’une configuration d’exportation d’article
-seo-title: Creating Article Export Configuration
-description: Consultez cette page pour en savoir plus sur l’exportation de contenu d’Adobe Experience Manager (AEM) en vue de leur téléchargement vers AEM Mobile.
-seo-description: Follow this page to learn about exporting content from Adobe Experience Manager (AEM) for upload to AEM Mobile.
-uuid: 089bc15b-669e-4623-bdbb-fd9abf46e098
+description: Consultez cette page pour en savoir plus sur l’exportation de contenu à partir de Adobe Experience Manager (AEM) pour le transfert vers AEM Mobile.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: bc681589-5d46-44cd-888d-b0722a2fd006
 exl-id: 5295f383-3b46-4456-9177-65de68e39a85
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '292'
 ht-degree: 1%
 
 ---
@@ -25,7 +21,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->**Prérequis**:
+>**Condition requise**:
 >
 >Avant d’en savoir plus sur la création et la modification de ressources partagées, voir [Synchronisation du contenu](/help/mobile/mobile-ondemand-contentsync.md) pour comprendre les concepts de base.
 
@@ -33,13 +29,13 @@ Les utilisateurs d’AEM Mobile utilisent la synchronisation de contenu pour exp
 
 La propriété ***dps-exportTemplate*** mentionné dans le tableau ci-dessus, définit le chemin d’accès aux configurations d’exportation de l’application. Définissez cette propriété pour créer et modifier des ressources partagées.
 
-Les ressources suivantes décrivent l’exportation de contenu d’Adobe Experience Manager (AEM) en vue d’un transfert vers AEM Mobile.
+Les ressources suivantes décrivent l’exportation de contenu à partir de Adobe Experience Manager (AEM) pour téléchargement vers AEM Mobile.
 
 Les articles contiennent du contenu qui doit être exporté et chargé. Une partie de ce contenu peut être partagée entre les articles.
 
 Utilisation [ContentSync](/help/mobile/mobile-ondemand-contentsync.md) pour rassembler le contenu et créer une ***Ressources partagées*** module.
 
-Configuration ContentSync disponible à l’adresse **&lt;dps-exporttemplate>/dps-article>** doit être configuré pour exporter tout le contenu nécessaire au rendu statique des propriétés sur l’appareil.
+Configuration ContentSync disponible à l’adresse **&lt;dps-exporttemplate>/dps-article>** doit être configuré pour exporter tout le contenu requis pour le rendu statique des propriétés sur l’appareil.
 
 >[!CAUTION]
 >

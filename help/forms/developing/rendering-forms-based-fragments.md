@@ -1,21 +1,17 @@
 ---
 title: Générer des formulaires reposant sur des fragments
-seo-title: Rendering Forms Based on Fragments
 description: Utilisez le service Forms pour restituer des formulaires reposant sur des fragments créés à l’aide de Designer.
-seo-description: Use the Forms service to render forms that are based on fragments created using Designer.
-uuid: 9c9a730d-f970-41f8-afed-4e6b6d3d393d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 role: Developer
 exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2199'
-ht-degree: 91%
+source-wordcount: '2189'
+ht-degree: 90%
 
 ---
 
@@ -27,7 +23,7 @@ ht-degree: 91%
 
 Le service Forms peut restituer des formulaires reposant sur des fragments créés à l’aide de Designer. Un *fragment* est une partie réutilisable d’un formulaire et est enregistrée en tant que fichier XDP distinct pouvant être inséré dans plusieurs conceptions de formulaire. Un fragment peut très bien inclure un bloc d’adresse ou un paragraphe juridique, par exemple.
 
-L’utilisation de fragments simplifie et accélère la création et la gestion d’un grand nombre de formulaires. Lors de la création d’un formulaire, vous insérez une référence au fragment requis et celui-ci s’affiche dans le nouveau formulaire. La référence au fragment contient un sous-formulaire pointant vers le fichier XDP physique. Pour plus d’informations sur la création de conceptions de formulaires reposant sur des fragments, consultez la section [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).
+L’utilisation de fragments simplifie et accélère la création et la gestion d’un grand nombre de formulaires. Lors de la création d’un formulaire, vous insérez une référence au fragment requis qui s’affiche dans le formulaire. La référence au fragment contient un sous-formulaire pointant vers le fichier XDP physique. Pour plus d’informations sur la création de conceptions de formulaires reposant sur des fragments, consultez la section [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).
 
 Un fragment peut inclure plusieurs sous-formulaires qui sont placés dans un jeu de sous-formulaires de choix. Les jeux de sous-formulaires de choix contrôlent l’affichage des sous-formulaires en fonction du flux de données d’une connexion aux données. Vous vous servez d’instructions conditionnelles pour déterminer le sous-formulaire du jeu devant s’afficher dans le formulaire obtenu. Par exemple, chaque sous-formulaire faisant partie d’un jeu peut comprendre des informations relatives à un emplacement géographique particulier et le sous-formulaire affiché peut être déterminé d’après l’emplacement de lʼutilisateur.
 
