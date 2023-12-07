@@ -4,9 +4,9 @@ description: Traiter des demandes en vertu du RGPD pour Adobe Experience Manag
 contentOwner: sarchiz
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
 source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
-workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 93%
+workflow-type: ht
+source-wordcount: '458'
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 93%
 
 >[!IMPORTANT]
 >
->Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité, telles que le RGPD, le CCPA, etc.
+>Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité, comme le RGPD, le CCPA, etc.
 
 ## Prise en charge du RGPD par AEM Foundation {#aem-foundation-gdpr-support}
 
@@ -24,7 +24,7 @@ En ce qui concerne AEM Foundation, les données personnelles stockées sont con
 
 ### Étapes manuelles {#manual-steps}
 
-1. Ouvrez la console d’administration des utilisateurs en accédant à **[!UICONTROL Paramètres – Sécurité – Utilisateurs]** ou en accédant directement à `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`.
+1. Ouvrez la console d’administration des utilisateurs en accédant à **[!UICONTROL Paramètres – Sécurité – Utilisateurs]** ou en accédant directement à `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
 
    ![useradmin2](assets/useradmin2.png)
 
