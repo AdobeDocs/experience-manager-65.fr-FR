@@ -5,10 +5,10 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 4158315c28412bb9498c7d49d21b3f4d72681fc6
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 73%
+source-wordcount: '1533'
+ht-degree: 71%
 
 ---
 
@@ -163,7 +163,7 @@ Pour configurer un modèle de données de formulaire, procédez comme suit :
 
       ![id-arg](assets/id-arg.png)
 
-   1. Sélectionner **[!UICONTROL Terminé]** pour enregistrer les propriétés de l’objet de modèle de données. **[!UICONTROL Sélectionnez ensuite Enregistrer]** pour enregistrer le modèle de données de formulaire.
+   1. Sélectionnez **[!UICONTROL Terminé]** pour enregistrer les propriétés de l’objet de modèle de données. **[!UICONTROL Sélectionnez ensuite Enregistrer]** pour enregistrer le modèle de données de formulaire.
 
       Les services **[!UICONTROL get]** et **[!UICONTROL update]** sont ajoutés en tant que services par défaut pour l’objet de modèle de données.
 
@@ -221,7 +221,7 @@ Procédez comme suit pour effectuer le test :
 
 1. Accédez au **[!UICONTROL Modèle]** , sélectionnez l’onglet **customerdetails** objet de modèle de données, puis sélectionnez **[!UICONTROL Objet de modèle de test]**.
 1. Dans la fenêtre [!UICONTROL Tester le modèle/service], sélectionnez **[!UICONTROL Objet de modèle de lecture]** dans le menu déroulant **[!UICONTROL Sélectionner le modèle/service]**.
-1. Dans le **customerdetails** , indiquez une valeur pour la variable **id** argument existant dans le [!DNL MySQL] base de données et sélectionner **[!UICONTROL Test]**.
+1. Dans la section customerdetails **, spécifiez une valeur pour l’argument** id **qui existe dans la** base de données configurée [!DNL MySQL] et sélectionnez **[!UICONTROL Tester]**.
 
    Les détails du client associés à l’ID spécifié sont récupérés et affichés dans la section **[!UICONTROL Sortie]**, comme indiqué ci-dessous.
 
@@ -236,3 +236,8 @@ Procédez comme suit pour effectuer le test :
    Désormais, si vous testez à nouveau le service de lecture de modèle pour l’ID 7107215, il récupère et affiche les détails client mis à jour comme illustré ci-dessous.
 
    ![read-updated](assets/read-updated.png)
+
+
+>[!NOTE]
+>
+> Vous pouvez créer et utiliser la configuration Liste SharePoint à l’aide du modèle de données de formulaire dans un formulaire adaptatif, pour enregistrer des données ou générer un document d’enregistrement dans une liste SharePoint. Voir [Connexion d’un formulaire adaptatif à une liste SharePoint Microsoft®](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration), pour obtenir des instructions détaillées.
