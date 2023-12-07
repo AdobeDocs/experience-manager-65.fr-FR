@@ -1,20 +1,16 @@
 ---
 title: ASRP - Fournisseur de ressources de stockage d’Adobe
-seo-title: ASRP - Adobe Storage Resource Provider
 description: Configurer AEM Communities pour utiliser une base de données relationnelle comme magasin commun
-seo-description: Set up AEM Communities to use a relational database as its common store
-uuid: abe47ad9-9f72-4dad-a5e9-6d621a9722d4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 role: Admin
 exl-id: 6430ed96-5d96-41b6-866f-90b34ff84f7a
-source-git-commit: 42feafa381c129117dae5345255702f0b0951a17
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '792'
 ht-degree: 1%
 
 ---
@@ -44,7 +40,7 @@ Les clés client et secrète sont partagées dans toutes les suites de rapports 
 
 ### Sélectionner ASRP {#select-asrp}
 
-Le [Console de configuration de stockage](/help/communities/srp-config.md) permet de sélectionner la configuration de stockage par défaut, qui identifie l’implémentation de la SRP à utiliser.
+La variable [Console de configuration de stockage](/help/communities/srp-config.md) permet de sélectionner la configuration de stockage par défaut, qui identifie l’implémentation de la SRP à utiliser.
 
 **Sur l’instance d’auteur AEM :**
 
@@ -54,10 +50,10 @@ Le [Console de configuration de stockage](/help/communities/srp-config.md) perme
 
 Les informations suivantes proviennent du processus de mise en service :
 
-* **URL du centre de données**: Menu déroulant permettant de sélectionner le centre de données de production identifié par le représentant de votre compte.
-* **Suite de rapports par défaut**: Saisissez le nom de la suite de rapports par défaut.
-* **Clé client**: Entrez la clé du consommateur.
-* **Secret**: Saisissez le secret.
+* **URL du centre de données**: Menu déroulant pour sélectionner le centre de données de production identifié par le représentant de votre compte.
+* **Suite de rapports par défaut**: saisissez le nom de la suite de rapports par défaut.
+* **Clé client**: saisissez la clé du consommateur.
+* **Secret**: saisissez le secret.
 * Sélectionnez **Envoyer**.
 
 Préparez les instances de publication :
@@ -69,13 +65,13 @@ Après avoir soumis la configuration, testez la connexion :
 
 * Sélectionner **Configuration du test**.
 
-   Pour chaque instance de création et de publication, testez la connexion au centre de données à partir de la console Configuration de stockage .
+  Pour chaque instance de création et de publication, testez la connexion au centre de données à partir de la console Configuration de stockage .
 
 * Assurez-vous que les URL de site pour les données de profil sont routables à partir du centre de données par [externalisation des liens](#externalize-links).
 
 ### Réplication de la clé de chiffrement {#replicate-the-crypto-key}
 
-La clé du client et la clé secrète sont chiffrées. Pour que les clés soient chiffrées/déchiffrées correctement, la Principale clé Crypto Granite doit être la même sur toutes les instances AEM.
+La clé du client et la clé secrète sont chiffrées. Pour que les clés soient chiffrées/déchiffrées correctement, la clé primaire Crypto Granite doit être la même sur toutes les instances AEM.
 
 Suivez les instructions de la section [Réplication de la clé de chiffrement](/help/communities/deploy-communities.md#replicate-the-crypto-key).
 
@@ -97,7 +93,7 @@ Pour rendre la configuration identique disponible dans l’environnement de publ
 
 Sur l’instance d’auteur AEM :
 
-* Accédez à à partir du menu principal **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Réplication]**
+* Accédez au **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Réplication]**
 * Sélectionner **Activer l’arborescence**
 * **Chemin de début**: accédez à `/conf/global/settings/communities/srpc/`
 * Désélectionner **Modifié uniquement**
@@ -107,7 +103,7 @@ Sur l’instance d’auteur AEM :
 
 >[!CAUTION]
 >
->Si vous activez ASRP sur un site de communauté publié, tout contenu UGC déjà stocké dans [JCR](/help/communities/jsrp.md) n’est plus visible, car il n’existe aucune synchronisation des données entre l’espace de stockage on-premise et l’espace de stockage dans le cloud.
+>Si vous activez ASRP sur un site de communauté publié, tout contenu UGC déjà stocké dans [JCR](/help/communities/jsrp.md) n’est plus visible, car il n’existe aucune synchronisation des données entre le stockage on-premise et le stockage dans le cloud.
 
 **`AEM Communities Extension`** a été précédemment introduit dans les communautés sociales d’AEM 6.0 en tant que service cloud. À compter de la version 6.1 d’AEM Communities, aucune configuration de cloud n’est nécessaire, il vous suffit de sélectionner ASRP dans la [console de configuration de stockage](/help/communities/srp-config.md).
 
@@ -122,7 +118,7 @@ Pour plus d’informations sur *utilisateurs*, *profils utilisateur* et *groupes
 
 ## Résolution des problèmes {#troubleshooting}
 
-### Le contenu généré par l’utilisateur disparaît après la mise à niveau {#ugc-disappears-after-upgrade}
+### UGC disparaît après la mise à niveau {#ugc-disappears-after-upgrade}
 
 Si vous effectuez une mise à niveau à partir d’un site de communauté sociale AEM 6.0 existant, veillez à suivre la [instructions de mise à niveau](/help/communities/upgrade.md#adobe-cloud-storage), sinon le contenu généré par l’utilisateur semble être perdu.
 
@@ -146,5 +142,5 @@ Sur toutes les instances d’AEM de création et de publication, consultez à no
 
 Dans JCR, si [/conf/global/settings/communities](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
 
-* Ne contient pas d’objet [srpc](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp) , cela signifie que le fournisseur de stockage est JSRP.
+* Ne contient pas de [srpc](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp) , cela signifie que le fournisseur de stockage est JSRP.
 * Si le noeud srpc existe et contient [defaultconfiguration](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp/defaultconfiguration) , les propriétés de la configuration par défaut définissent ASRP comme fournisseur par défaut.

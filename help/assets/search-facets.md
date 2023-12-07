@@ -6,10 +6,10 @@ role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '2416'
-ht-degree: 96%
+source-wordcount: '2411'
+ht-degree: 93%
 
 ---
 
@@ -72,7 +72,7 @@ Pour des recherches de texte intégral, ajoutez le prédicat **[!UICONTROL Texte
 1. Pour fermer l’aperçu, cliquez sur **[!UICONTROL Fermer]** ![fermer](assets/do-not-localize/close.png) dans le coin supérieur droit de l’aperçu.
 1. Pour enregistrer les paramètres, cliquez sur **[!UICONTROL Terminé]**.
 1. Accédez au panneau Rechercher dans l’interface utilisateur d’[!DNL Assets]. Le prédicat Propriété est ajouté au panneau.
-1. Dans la zone de texte, saisissez une description de la ressource à rechercher. Par exemple, `Adobe`. Lorsque vous effectuez une recherche, les ressources dont la description correspond à « `Adobe` » sont répertoriés dans les résultats de la recherche.
+1. Saisissez une description pour la ressource à rechercher dans la zone de texte. Par exemple, saisissez `Adobe`. Lorsque vous effectuez une recherche, les ressources dont la description correspond à « `Adobe` » sont répertoriés dans les résultats de la recherche.
 
 ## Ajout d’un prédicat Options {#adding-an-options-predicate}
 
@@ -113,7 +113,7 @@ Si vous souhaitez utiliser un nœud existant, indiquez-le à l’aide de la boî
 1. Cliquez sur le logo d’[!DNL Experience Manager], puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Formulaires de recherche]**.
 1. Sur la page **[!UICONTROL Formulaires de recherche]**, sélectionnez **[!UICONTROL Rail de recherche d’administration de ressources]**, puis cliquez sur **[!UICONTROL Modifier]**.
 1. Sur la page **[!UICONTROL Modifier le formulaire de recherche]**, faites glisser **[!UICONTROL Options du prédicat]** de l’onglet **[!UICONTROL Sélectionner le prédicat]** jusqu’au volet principal.
-1. Dans l’onglet **[!UICONTROL Paramètres]**, saisissez un libellé et un nom pour la propriété. Par exemple, pour rechercher des ressources en fonction de leur format, spécifiez un nom convivial pour le libellé, par exemple : **[!UICONTROL Type de fichier]**. Spécifiez la propriété en fonction de laquelle la recherche doit être effectuée dans le champ de propriété, par exemple, `jcr:content/metadata/dc:format.`
+1. Dans l’onglet **[!UICONTROL Paramètres]**, saisissez un libellé et un nom pour la propriété. Par exemple, pour rechercher des ressources en fonction de leur format, spécifiez un nom convivial pour le libellé, par exemple : **[!UICONTROL Type de fichier]**. Indiquez la propriété sur laquelle sera axée la recherche dans le champ de propriété ; par exemple, `jcr:content/metadata/dc:format.`
 1. Utilisez l’une des méthodes suivantes :
 
    * Dans le champ **[!UICONTROL Nom de la propriété]**, indiquez le chemin du fichier JSON où sont définis les nœuds des options et spécifiez les paires clé-valeur correspondantes.
@@ -126,7 +126,7 @@ Si vous souhaitez utiliser un nœud existant, indiquez-le à l’aide de la boî
    Champs disponibles dans le prédicat Options
 
 1. Dans le champ **[!UICONTROL Description]**, saisissez une description facultative, puis cliquez sur **[!UICONTROL Terminé]**.
-1. Accédez au panneau Rechercher. Le prédicat Options est ajouté au panneau **Rechercher**. Les options proposées pour **[!UICONTROL Type de fichier]** sont présentées sous la forme de cases à cocher.
+1. Accédez au panneau Rechercher. Le prédicat Options est ajouté à la variable **Rechercher** du panneau. Les options proposées pour **[!UICONTROL Type de fichier]** sont présentées sous la forme de cases à cocher.
 
 ## Ajout d’un prédicat de propriété à plusieurs valeurs {#adding-a-multi-value-property-predicate}
 
@@ -167,7 +167,7 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
 | [!UICONTROL Texte intégral] | Prédicat de recherche permettant d’effectuer une recherche de texte intégral dans un nœud de ressource entier. Il est mappé à l’opérateur jcr:contains. Vous pouvez spécifier un chemin d’accès relatif si vous souhaitez effectuer une recherche de texte intégral sur une partie spécifique du nœud de ressource. | <ul><li>Libellé</li><li>Espace réservé</li><li>Nom de la propriété</li><li>Description</li></ul> |
 | [!UICONTROL Explorateur de chemins d’accès] | Prédicat de recherche permettant de rechercher des ressources dans des dossiers et des sous-dossiers à un chemin d’accès racine préconfiguré. | <ul><li>Espace réservé</li><li>Chemin d’accès racine</li><li>Description</li></ul> |
 | [!UICONTROL Chemin] | Utilisez-le pour filtrer les résultats selon l’emplacement. Vous pouvez spécifier plusieurs chemins d’accès en tant qu’options. | <ul><li>Libellé</li><li>Chemin</li><li>Description</li></ul> |
-| [!UICONTROL Statut de publication] | Prédicat de recherche permettant de rechercher des ressources en fonction de leur statut de publication. | <ul><li>Libellé</li><li>Nom de la propriété</li><li>Description</li></ul> |
+| [!UICONTROL Statut de publication] | Prédicat de recherche permettant de rechercher des ressources selon leur état de publication. | <ul><li>Libellé</li><li>Nom de la propriété</li><li>Description</li></ul> |
 | [!UICONTROL Date relative] | Prédicat de recherche permettant de rechercher des ressources en fonction de leur date de création. Vous pouvez, par exemple, configurer des options telles qu’il y a 2 mois, il y a 3 semaines, etc. | <ul><li>Libellé</li><li>Nom de la propriété</li><li>Date relative</li></ul> |
 | [!UICONTROL Étendue] | Prédicat de recherche permettant de rechercher des ressources comprises dans une étendue spécifiée. Dans le panneau Rechercher, vous pouvez spécifier des valeurs maximale et minimale pour l’étendue. | <ul><li>Libellé</li><li>Nom de la propriété</li><li>Description</li></ul> |
 | [!UICONTROL Période] | Prédicat de recherche permettant de rechercher des ressources créées pendant une période spécifiée pour une propriété de date. Dans le panneau de recherche, vous pouvez spécifier des dates de début et de fin à l’aide du sélecteur de dates. | <ul><li>Libellé</li><li>Espace réservé</li><li>Nom de la propriété</li><li>Texte de la plage (De)</li><li>Texte de la plage (À)</li><li>Description</li></ul> |

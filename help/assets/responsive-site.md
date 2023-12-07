@@ -1,19 +1,17 @@
 ---
 title: Diffusion d’images optimisées pour un site réactif
-description: Découvrez comment utiliser la fonctionnalité de code réactif pour diffuser des images optimisées.
-uuid: 7c6baef5-7513-4644-94ed-2383e8724c17
+description: Utilisation de la fonction de code réactif pour diffuser des images optimisées
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 feature: Asset Management
 role: User, Admin
 exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+workflow-type: tm+mt
+source-wordcount: '340'
+ht-degree: 91%
 
 ---
 
@@ -52,6 +50,6 @@ Consultez également la section [Liaison d’URL à une application web](linking
 
 ## Utilisation du protocole HTTP/2 pour diffuser vos ressources Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
 
-HTTP/2 est le nouveau protocole web qui améliore la manière dont les serveurs et les navigateurs communiquent. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. La diffusion de ressources Dynamic Media est prise en charge via HTTP/2 pour améliorer les temps de réponse et de chargement.
+HTTP/2 est le nouveau protocole Web mis à jour qui améliore la communication entre les navigateurs et les serveurs. Il permet un transfert plus rapide des informations et réduit la puissance de traitement nécessaire. La diffusion des ressources Dynamic Media est prise en charge via HTTP/2, qui offre de meilleurs temps de réponse et de chargement.
 
 Voir [Diffusion du contenu sur HTTP2](http2.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.

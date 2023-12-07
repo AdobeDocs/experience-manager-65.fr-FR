@@ -1,22 +1,18 @@
 ---
 title: Publication de dossiers sur Brand Portal
-seo-title: Publish folders to Brand Portal
-description: Découvrez comment publier des dossiers ou en annuler la publication sur Brand Portal.
-seo-description: Learn how to publish and unpublish folders to Brand Portal.
-uuid: 350beb85-c0fb-4a1c-8597-c03592c02d3d
+description: Découvrez comment publier des dossiers et en annuler la publication sur Brand Portal.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: brand-portal
 content-type: reference
-discoiquuid: 39b8cf9b-afec-4c9a-8a5d-7fc87e643f26
 docset: aem65
 feature: Brand Portal
 role: User
 exl-id: 92a156f0-ce2a-4c83-bd57-0c29efbf784f
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
-source-wordcount: '566'
-ht-degree: 100%
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+workflow-type: tm+mt
+source-wordcount: '565'
+ht-degree: 90%
 
 ---
 
@@ -36,17 +32,18 @@ Si vous apportez des modifications ultérieures à la ressource ou au dossier d�
 
    ![publish2bp](assets/publish2bp.png)
 
-1. **Publication instantanée des dossiers**
+1. **Publier immédiatement des dossiers**
 
    Pour publier les dossiers sélectionnés sur Brand Portal, effectuez l’une des opérations suivantes :
 
    * Dans la barre d’outils, sélectionnez **Publication rapide**. Ensuite, sélectionnez **Publier sur Brand Portal** dans le menu.
 
    * Dans la barre d’outils, sélectionnez **Gérer la publication**.
+
    1. Dans **Action**, sélectionnez **Publication sur Brand Portal**, depuis **Planification** sélectionnez **Maintenant**, puis cliquez sur **Suivant.**
    1. Confirmez votre sélection dans **Portée** et cliquez sur **Publier sur Brand Portal**.
 
-   Un message indique que le dossier a été placé en file d’attente pour publication sur Brand Portal. Connectez-vous à l’interface Brand Portal pour voir le dossier publié.
+   Un message indique que le dossier a été placé en file d’attente pour publication sur Brand Portal. Connectez-vous à l’interface Brand Portal pour afficher le dossier publié.
 
    **Publication ultérieure de dossiers**
 
@@ -63,43 +60,40 @@ Si vous apportez des modifications ultérieures à la ressource ou au dossier d�
 
       ![manageschedulepub](assets/manageschedulepub.png)
 
+## Dépublication de dossiers sur Brand Portal {#unpublish-folders-from-brand-portal}
 
+Vous pouvez supprimer n’importe quel dossier de ressources publié sur Brand Portal en la dépubliant à partir de l’instance d’auteur AEM. Une fois que vous avez dépublié le dossier d’origine, sa copie n’est plus disponible pour les utilisateurs de Brand Portal.
 
-## Annulation de la publication de dossiers sur Brand Portal {#unpublish-folders-from-brand-portal}
+Vous avez la possibilité d’annuler rapidement la publication de dossiers à partir de Brand Portal ou de la planifier pour une date et une heure ultérieures. Pour dépublier des dossiers de ressources de Brand Portal :
 
-Vous pouvez supprimer n’importe quel dossier de ressources publié sur Brand Portal en annulant la publication à partir de l’instance d’auteur AEM. Une fois que vous avez annulé la publication du dossier original, sa copie n’est plus disponible pour les utilisateurs de Brand Portal.
-
-Vous avez la possibilité d’annuler rapidement la publication de dossiers sur Brand Portal ou de planifier l’annulation à une date et une heure ultérieures. Pour annuler la publication de dossiers de ressources sur Brand Portal :
-
-1. Depuis l’interface d’AEM Assets de l’instance d’auteur AEM, sélectionnez le dossier dont vous souhaitez annuler la publication.
+1. Depuis l’interface d’AEM Assets de l’instance d’auteur AEM, sélectionnez le dossier que vous souhaitez dépublier.
 
    ![publish2bp-1](assets/publish2bp.png)
 
 1. Dans la barre d’outils, cliquez sur **Gérer la publication**.
 
-1. **Annulation rapide d’une publication sur Brand Portal**
+1. **Annuler la publication sur Brand Portal maintenant**
 
-   Pour annuler rapidement la publication du dossier désiré sur Brand Portal :
+   Pour annuler rapidement la publication du dossier souhaité dans Brand Portal :
 
    1. Dans la barre d’outils, sélectionnez **Gérer la publication**.
-   1. Dans **Action**, sélectionnez **Annuler la publication sur Brand Portal**, depuis **Planification** sélectionnez **Maintenant**, puis cliquez sur **Suivant.**
-   1. Confirmez votre sélection dans **Portée** et cliquez sur **Annuler la publication sur Brand Portal**.
+   1. Dans **Action**, sélectionnez **Dépublier sur Brand Portal**, depuis **Planification** sélectionnez **Maintenant**, puis cliquez sur **Suivant.**
+   1. Confirmez votre sélection dans **Portée** et cliquez sur **Dépublier sur Brand Portal**.
 
    ![confirm-unpublish](assets/confirm-unpublish.png)
 
-   **Annulation ultérieure de la publication sur Brand Portal**
+   **Dépublication ultérieure sur Brand Portal**
 
    Pour planifier l’annulation de la publication d’un dossier sur Brand Portal à une date et à une heure ultérieures :
 
    1. Dans la barre d’outils, sélectionnez **Gérer la publication**.
-   1. Dans **Action**, sélectionnez **Annuler la publication sur Brand Portal** et sélectionnez **Plus tard** dans **Planification**.
+   1. Dans **Action**, sélectionnez **Dépublier sur Brand Portal** et sélectionnez **Plus tard** dans **Planification**.
    1. Sélectionnez une **Date d’activation** et spécifiez l’heure. Cliquez sur **Suivant**.
    1. Confirmez votre sélection dans **Portée** et cliquez sur **Suivant**.
-   1. Spécifiez un **Titre de workflow** sous **Processus**. Cliquez sur **Annuler la publication ultérieurement.**
+   1. Spécifiez un **Titre de workflow** sous **Processus**. Cliquez sur **Dépublier ultérieurement**.
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
-
 >[!NOTE]
 >
->La procédure de publication/d’annulation de publication vers/depuis Brand Portal est identique à la procédure correspondante pour les dossiers.
+>La procédure de publication/de dépublication vers/depuis Brand Portal est identique à la procédure correspondante pour les dossiers.

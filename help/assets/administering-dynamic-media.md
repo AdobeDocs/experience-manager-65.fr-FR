@@ -1,16 +1,14 @@
 ---
 title: Configuration de Dynamic Media
 description: Pour installer Dynamic Media, vous devez configurer Dynamic Media et gérer les paramètres prédéfinis d’image et de visionneuse.
-uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 role: User, Admin
 exl-id: 85fa0414-354e-4530-81f9-a5659bb7f2fd
 feature: Configuration
-source-git-commit: 8353e6fcc76dd63a0816babbe593f474abbc4508
-workflow-type: ht
-source-wordcount: '260'
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+workflow-type: tm+mt
+source-wordcount: '255'
 ht-degree: 100%
 
 ---
@@ -43,6 +41,5 @@ Voir aussi les rubriques suivantes :
 >**Si vous effectuez une mise à niveau :**
 >
 >* Après la mise en service d’Experience Manager, toutes les ressources que vous chargez sont automatiquement activées pour Dynamic Media (à moins que cela n’ait été explicitement désactivé par votre administrateur système). Si vous utilisez une instance d’Experience Manager mise à niveau et que Dynamic Media est un nouveau concept pour vous, vous devrez peut-être retraiter vos ressources pour les rendre compatibles avec Dynamic Media.
-
 
 

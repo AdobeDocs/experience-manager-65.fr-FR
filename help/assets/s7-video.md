@@ -1,20 +1,18 @@
 ---
 title: Vidéo
 description: Découvrez la gestion centralisée des ressources vidéo dans Adobe Experience Manager Assets, où vous pouvez charger des vidéos pour le codage automatique vers Dynamic Media Classic et accéder directement aux vidéos Dynamic Media Classic à partir de Experience Manager Assets. L’intégration des vidéos Dynamic Media Classic étend la portée de la vidéo optimisée sur tous les écrans.
-uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
-discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: User, Admin
 mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1559'
-ht-degree: 89%
+source-wordcount: '1551'
+ht-degree: 88%
 
 ---
 
@@ -151,7 +149,7 @@ Les différents codages vidéo sont créés selon les paramètres prédéfinis d
 
 1. Dans Experience Manager, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Console de configuration]**.
 1. Dans la **[!UICONTROL console de configuration]**, accédez à **[!UICONTROL Outils]** -> **[!UICONTROL Gestion des ressources numériques]** -> **[!UICONTROL Profils vidéo]** dans l’arborescence de navigation.
-1. Créez un profil vidéo S7. Dans le menu **[!UICONTROL Nouveau]**, sélectionnez **[!UICONTROL Créer une page]**, puis sélectionnez le modèle de profil vidéo Scene7. Attribuez un nom à la nouvelle page de profil vidéo et sélectionnez **[!UICONTROL Créer]**.
+1. Créez un profil vidéo S7. Dans le **[!UICONTROL Nouveau]**. menu, sélectionnez **[!UICONTROL Créer une page]** puis sélectionnez le modèle Profil vidéo Scene7 . Attribuez un nom à la nouvelle page de profil vidéo et sélectionnez **[!UICONTROL Créer]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 

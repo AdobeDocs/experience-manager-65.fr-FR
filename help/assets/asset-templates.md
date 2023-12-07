@@ -5,10 +5,10 @@ contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 83%
+source-wordcount: '1552'
+ht-degree: 82%
 
 ---
 
@@ -105,7 +105,7 @@ Vous pouvez modifier un dérivé immédiatement après sa création. Vous pouvez
 
    ![chlimage_1-114](assets/chlimage_1-319.png)
 
-   Vous pouvez également rechercher des images à l’aide de mots-clés, de balises ou selon leur statut de publication. Vous pouvez parcourir le référentiel d’[!DNL Experience Manager Assets] et accéder à l’emplacement de l’image souhaitée.
+   Vous pouvez également rechercher des images à l’aide de mots-clés, de balises et en fonction de leur état de publication. Vous pouvez parcourir le référentiel d’[!DNL Experience Manager Assets] et accéder à l’emplacement de l’image souhaitée.
 
    ![chlimage_1-115](assets/chlimage_1-320.png)
 

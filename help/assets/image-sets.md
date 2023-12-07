@@ -1,20 +1,18 @@
 ---
 title: Visionneuses d’images
 description: Découvrez comment utiliser des visionneuses d’images dans Dynamic Media.
-uuid: ca2fd5b0-656e-4960-b10c-f0ec3d418760
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+workflow-type: tm+mt
+source-wordcount: '2196'
+ht-degree: 85%
 
 ---
 
@@ -28,9 +26,9 @@ Les visionneuses d’images sont désignées par une bannière comportant le mot
 
 Dans une visionneuse d’images, vous pouvez également créer des échantillons en créant une visionneuse d’images et en ajoutant des miniatures.
 
-Cette application est utile lorsque vous souhaitez afficher un élément avec une couleur, un modèle ou une finition différente. Pour créer une visionneuse d’images avec des échantillons de couleur, vous avez besoin d’une image pour chaque couleur, modèle ou finition que vous souhaitez présenter aux utilisateurs. Vous avez également besoin d’un échantillon de couleurs, de modèle ou de finition pour chaque couleur, modèle ou finition.
+Cette application est utile lorsque vous souhaitez afficher un élément avec une couleur, un modèle ou une finition différente. Pour créer une visionneuse d’images avec des échantillons de couleur, vous avez besoin d’une image pour chaque couleur, modèle ou finition que vous souhaitez présenter aux utilisateurs. Vous avez également besoin d’un échantillon de couleur, de motif ou de finition pour chaque couleur, motif ou finition.
 
-Par exemple, supposons que vous souhaitez présenter les images d’une casquette avec différentes couleurs de visière : rouge, vert et bleu. Dans ce cas, vous avez besoin de trois prises de vue de la même casquette. Vous avez besoin d’une prise de vue avec une visière rouge, une avec une verte et une avec une bleue. Vous avez également besoin d’un échantillon de couleurs rouge, vert et bleu. Les échantillons de couleurs servent de miniatures sur lesquelles les utilisateurs sélectionnent la visionneuse des séries d’échantillons pour voir les visières rouge, verte ou bleue.
+Supposons, par exemple, que vous souhaitiez présenter des images de calques avec des couleurs différentes ; les calques sont rouge, vert et bleu. Dans ce cas, vous avez besoin de trois prises de vue de la même casquette. Vous avez besoin d&#39;une prise avec un rouge, une avec un vert, et une avec une facture bleue. Vous avez également besoin d’un échantillon de couleur rouge, vert et bleu. Les échantillons de couleurs servent de miniatures sur lesquelles les utilisateurs sélectionnent la visionneuse des séries d’échantillons pour voir les visières rouge, verte ou bleue.
 
 >[!NOTE]
 >
@@ -111,23 +109,22 @@ Consultez la section [Dynamic Media - Formats d’image matricielle pris en cha
 
 Avant de créer une visionneuse d’images, assurez-vous que la taille et le format des images sont corrects.
 
-Pour créer une visionneuse d’images à plusieurs vues, vous avez besoin d’images qui montrent un élément depuis différents points de vue ainsi que différents aspects du même élément. L’objectif est de mettre en avant les fonctionnalités importantes d’un élément afin que les utilisateurs aient un tableau complet de son apparence et son fonctionnement.
+Pour créer une visionneuse d’images à vues multiples, vous avez besoin d’images qui présentent un élément de différents points de vue ou qui présentent différents aspects d’un même élément. L’objectif est de mettre en évidence les fonctionnalités importantes d’un élément afin que les visiteurs puissent avoir une vue d’ensemble complète de ce qu’il ressemble ou fait.
 
-Comme les utilisateurs peuvent zoomer sur les images dans les visionneuses d’images, assurez-vous que la dimension la plus grande des images comporte au moins 2000 pixels. <!-- Assets support many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
+Comme les utilisateurs peuvent zoomer sur les images dans les visionneuses d’images, assurez-vous qu’elles font au moins 2 000 pixels dans leur dimension la plus grande. <!-- Assets support many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
 
 >[!NOTE]
 >
 >En outre, si vous utilisez des miniatures pour indiquer des échantillons de produit, vous devez effectuer les opérations suivantes :
 >
->Vous avez besoin de vignettes ou de prises de vue différentes de la même image la présentant avec différentes couleurs, modèles et finitions. Vous avez également besoin de fichiers de miniatures qui correspondent aux différentes couleurs, modèles et finitions. Par exemple, pour présenter des miniatures avec une visionneuse d’images de la même veste en noir, marron et vert, vous avez besoin :
+>Vous avez besoin de vignettes ou de différents clichés d’une même image qui apparaissent dans différentes couleurs, motifs ou finitions. Vous avez également besoin de fichiers miniatures qui correspondent aux différentes couleurs, modèles ou finitions. Par exemple, pour présenter des miniatures avec une visionneuse d’images présentant la même veste en noir, marron et vert, vous avez besoin des éléments suivants :
 >
->* D’une prise de vue en noir, en marron et en vert de la même veste.
->* Une miniature de couleur noire, marron et verte.
-
+>* Une prise de vue noire, marron et verte de la même veste.
+>* Miniature en noir, marron et vert.
 
 ## Création d’une visionneuse d’images {#creating-image-sets}
 
-Vous pouvez créer des visionneuses d’images par l’interface utilisateur ou par l’API. Cette section décrit comment créer des visionneuses d’images dans l’interface utilisateur.
+Vous pouvez créer des visionneuses d’images par le biais de l’interface utilisateur ou de l’API. Cette section décrit comment créer des visionneuses d’images dans l’interface utilisateur.
 
 >[!NOTE]
 >
@@ -157,7 +154,7 @@ Consultez également la section [Limites de Dynamic Media](/help/assets/limitat
 
    ![6_5_imagesets-createpulldown](assets/6_5_imagesets-createpulldown.png)
 
-1. Dans le champ **[!UICONTROL Titre]** de la page de l’éditeur de visionneuse d’images, entrez un nom pour la visionneuse d’images. Le nom apparaît dans la bannière située sur la visionneuse d’images. Vous pouvez aussi saisir une description.
+1. Dans le champ **[!UICONTROL Titre]** de la page de l’éditeur de visionneuse d’images, entrez un nom pour la visionneuse d’images. Le nom apparaît dans la bannière de la visionneuse d’images. Vous pouvez aussi saisir une description.
 
    ![6_5_imageset-creatingnewset](assets/6_5_imageset-creatingnewset.png)
 
@@ -166,9 +163,10 @@ Consultez également la section [Limites de Dynamic Media](/help/assets/limitat
    * Dans le coin supérieur gauche de la page de l’éditeur de visionneuse d’images, sélectionnez **[!UICONTROL Ajouter une ressource]**.
 
    * Au milieu de la page de l’éditeur de visionneuse d’images, sélectionnez **[!UICONTROL Appuyer pour ouvrir le sélecteur de ressources]**.
+
    Sélectionnez les ressources que vous souhaitez inclure dans la visionneuse d’image. Les ressources sélectionnées sont cochées. Lorsque vous avez terminé, en haut à droite de la page, sélectionnez **[!UICONTROL Sélectionner]**.
 
-   Le sélecteur de ressources vous permet de rechercher des ressources en saisissant un mot-clé, puis en appuyant ou en cliquant sur **[!UICONTROL Entrée]**. Vous pouvez également appliquer des filtres pour affiner vos résultats de recherche. Vous pouvez filtrer par chemin, collection, type de fichier et balise. Sélectionnez le filtre, puis sélectionnez l’icône **[!UICONTROL Filtre]** de la barre d’outils. Modifiez l’affichage en appuyant sur l’icône Affichage et en sélectionnant **[!UICONTROL Mode Colonnes]**, **[!UICONTROL Mode Carte]** ou **[!UICONTROL Mode Liste]**.
+   Le sélecteur de ressources vous permet de rechercher des ressources en saisissant un mot-clé, puis en appuyant ou en cliquant sur **[!UICONTROL Entrée]**. Vous pouvez également appliquer des filtres pour affiner vos résultats de recherche. Vous pouvez filtrer par chemin, collection, type de fichier et balise. Sélectionnez le filtre, puis sélectionnez l’icône **[!UICONTROL Filtre]** de la barre d’outils. Modifiez l’affichage en appuyant sur l’icône Affichage et en sélectionnant **[!UICONTROL Vue Colonnes]**, **[!UICONTROL Vue Carte]** ou **[!UICONTROL Vue Liste]**.
 
    Voir [Utilisation de sélecteurs](/help/assets/working-with-selectors.md).
 
@@ -187,6 +185,7 @@ Consultez également la section [Limites de Dynamic Media](/help/assets/limitat
    * Pour supprimer une image, sélectionnez-la et sélectionnez **[!UICONTROL Supprimer l’élément]**.
 
    * Pour appliquer un paramètre prédéfini, en haut à droite de la page, sélectionnez **[!UICONTROL Paramètre prédéfini]**, puis sélectionnez un paramètre prédéfini à appliquer en une seule fois à toutes les ressources.
+
    >[!NOTE]
    >
    >Lors de la création de la visionneuse d’images, vous pouvez modifier la miniature de la visionneuse d’images ou autoriser Experience Manager à la sélectionner automatiquement en fonction des ressources de la visionneuse d’images. Pour sélectionner une miniature, sélectionnez **[!UICONTROL Modifier la miniature]** au-dessus du champ Titre de la page de l’éditeur de visionneuse d’images, puis sélectionnez une image (vous pouvez également accéder à d’autres dossiers pour rechercher des images). Si vous avez sélectionné une miniature et décidez ensuite que vous souhaitez qu’Experience Manager en génère une depuis la visionneuse d’images, sélectionnez **[!UICONTROL Basculez sur]** > **[!UICONTROL Miniature automatique]**.
@@ -205,17 +204,17 @@ Notez toutefois que les visionneuses créées à l’aide de paramètres prédé
 
 * Ouvrez les propriétés d’une ressource individuelle. Les propriétés indiquent les visionneuses dont la ressource sélectionnée fait partie ou auxquelles elle est référencée. Sélectionnez le nom de la visionneuse si vous souhaitez afficher la totalité de la visionneuse.
 
-   ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties2.png)
+  ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties2.png)
 
 * À partir de l’image membre d’une visionneuse, sélectionnez le menu **[!UICONTROL Visionneuses]** pour afficher les visionneuses dont la ressource fait partie.
 
-   ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
+  ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
 * À partir de la recherche, vous pouvez sélectionner **[!UICONTROL Filtre]**, développer **[!UICONTROL Dynamic Media]**, puis sélectionner **[!UICONTROL Jeux]**.
 
-   La recherche renvoie les visionneuses correspondantes qui ont soit été créées manuellement dans l’interface utilisateur, soit automatiquement au moyen de paramètres prédéfinis d’ensemble par lot. Dans le cas des visionneuses automatisées, la requête de recherche est effectuée à l’aide du critère « Commence par », à la différence de la recherche Experience Manager qui repose sur l’utilisation du critère « Contient ». Définir le filtre sur **[!UICONTROL Visionneuses]** est le seul moyen de rechercher des ensembles automatisés.
+  La recherche renvoie les visionneuses correspondantes qui ont soit été créées manuellement dans l’interface utilisateur, soit automatiquement au moyen de paramètres prédéfinis d’ensemble par lot. Dans le cas des visionneuses automatisées, la requête de recherche est effectuée à l’aide du critère « Commence par », à la différence de la recherche Experience Manager qui repose sur l’utilisation du critère « Contient ». Définir le filtre sur **[!UICONTROL Visionneuses]** est le seul moyen de rechercher des ensembles automatisés.
 
-   ![chlimage_1-134](assets/chlimage_1-134.png)
+  ![chlimage_1-134](assets/chlimage_1-134.png)
 
 >[!NOTE]
 >
@@ -228,8 +227,8 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
 * Ajouter des images à la visionneuse d’images.
 * Réorganiser des images dans la visionneuse d’images.
 * Supprimer des ressources de la visionneuse d’images.
-* Appliquer des paramètres prédéfinis de visionneuse.
-* Supprimer la visionneuse d’images.
+* Appliquez des paramètres prédéfinis de visionneuse.
+* Supprimez la visionneuse d’images.
 
 **Pour modifier une visionneuse d’images, procédez comme suit :**
 
@@ -239,15 +238,14 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
    * Pointez sur une ressource de visionneuse d’image, sélectionnez **[!UICONTROL Sélectionner]** (icône de coche), puis **[!UICONTROL Modifier]** sur la barre d’outils.
    * Sélectionnez une ressource de visionneuse d’images, puis sélectionnez **[!UICONTROL Modifier]** (icône de crayon) dans la barre d’outils.
 
-1. Pour modifier les images d’une visionneuse d’images, procédez comme suit :
+1. Pour modifier les images de la visionneuse d’images, effectuez l’une des opérations suivantes :
 
-   * Pour réorganiser les ressources, faites glisser une image vers un nouvel emplacement (sélectionnez l’icône de réorganisation pour déplacer des éléments).
+   * Pour réorganiser les ressources, faites glisser une image vers un nouvel emplacement (sélectionnez l’icône de réorganisation pour déplacer les éléments).
    * Pour trier les éléments dans l’ordre ascendant ou descendant, sélectionnez l’en-tête de colonne.
    * Pour ajouter une ressource ou mettre à jour une ressource existante, sélectionnez **[!UICONTROL Ajouter une ressource]**. Accédez à une ressource, sélectionnez-la, puis sélectionnez **[!UICONTROL Sélectionner]** en haut à droite de la page.
-
-      >[!NOTE]
-      >
-      >Si vous supprimez l’image utilisée par Experience Manager pour la miniature en la remplaçant par une autre image, la ressource originale s’affiche toujours.
+     >[!NOTE]
+     >
+     >Si vous supprimez l’image utilisée par Experience Manager pour la miniature en la remplaçant par une autre image, la ressource originale s’affiche toujours.
    * Pour supprimer une ressource, sélectionnez-la et sélectionnez **[!UICONTROL Supprimer l’élément]**.
    * Pour appliquer un paramètre prédéfini, en haut à droite de la page, sélectionnez **[!UICONTROL Paramètre prédéfini]**, puis sélectionnez un paramètre prédéfini de visionneuse.
    * Pour ajouter ou changer une miniature, sélectionnez l’icône de miniature située à droite de la ressource. Naviguez jusqu’à la nouvelle miniature ou ressource d’échantillon, sélectionnez-la, puis sélectionnez **[!UICONTROL Sélectionner]**.

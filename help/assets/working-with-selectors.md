@@ -1,19 +1,17 @@
 ---
 title: Utilisation des sélecteurs
-description: Sélection de ressources pour les images interactives, vidéos interactives et bannières de carrousel
-uuid: 6231739c-bf49-4069-90a4-57848cc68d9a
+description: Sélection de ressources pour des images interactives, des vidéos interactives et des bannières de carrousel
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 role: User, Admin
 exl-id: 6d165b0d-e3e7-4115-8f2a-827679754b3b
 feature: Selectors
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+workflow-type: tm+mt
+source-wordcount: '741'
+ht-degree: 98%
 
 ---
 
@@ -57,7 +55,7 @@ Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaite
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
-   Sélectionnez **[!UICONTROL Afficher sous]** pour changer l’affichage des produits (mode **[!UICONTROL Liste]** ou mode **[!UICONTROL Carte]**).
+   Sélectionnez **[!UICONTROL Afficher sous]** pour changer l’affichage des produits (**[!UICONTROL Vue Liste]** ou **[!UICONTROL Vue Carte]**).
 
    ![chlimage_1-526](assets/chlimage_1-526.png)
 
@@ -110,7 +108,7 @@ Reportez-vous également à la section [Sélecteur de ressources](search-assets.
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   Sélectionnez **[!UICONTROL Afficher sous]** pour changer l’affichage des produits (en mode **[!UICONTROL Liste]**, en mode **[!UICONTROL Colonne]** ou en mode **[!UICONTROL Carte]**).
+   Sélectionnez **[!UICONTROL Afficher sous]** pour changer l’affichage des produits (**[!UICONTROL Vue Liste]**, **[!UICONTROL Vue Colonne]** ou **[!UICONTROL Vue Carte]**).
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 

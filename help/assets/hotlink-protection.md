@@ -1,18 +1,16 @@
 ---
 title: Activation de la protection de lien dynamique dans Dynamic Media
 description: Informations sur la manière d’activer la protection de lien dynamique dans Dynamic Media.
-uuid: 5f93bc27-5edd-4143-8701-87896c52f0af
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
-discoiquuid: a70aa448-0f58-4ed2-9381-afcc76fa827f
 role: User, Admin
 exl-id: 698e8bdb-9b31-49ab-8560-26b05109bb23
 feature: Configuration
-source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
-workflow-type: ht
-source-wordcount: '201'
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+workflow-type: tm+mt
+source-wordcount: '196'
 ht-degree: 100%
 
 ---

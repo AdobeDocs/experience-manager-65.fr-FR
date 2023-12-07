@@ -1,20 +1,18 @@
 ---
 title: Vidéo 360/VR
-description: Découvrez comment utiliser les vidéos à 360° et de réalité virtuelle (VR) dans Dynamic Media.
-uuid: c21bf2c0-7acc-401f-857e-0186de86e7a1
+description: Découvrez comment utiliser les vidéos 360 et de réalité virtuelle (VR) dans Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
 feature: 360 VR Video
 role: User, Admin
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: c0a60ec39e35fa8113ce9e1795561709b9c7e289
-workflow-type: ht
-source-wordcount: '1109'
-ht-degree: 100%
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+workflow-type: tm+mt
+source-wordcount: '1143'
+ht-degree: 92%
 
 ---
 
@@ -24,7 +22,7 @@ Les vidéos 360 enregistrent une vue dans chaque direction au même moment. Ell
 
 Le mode Scene7 de Dynamic Media inclut une prise en charge native de la diffusion de ressources vidéo 360. Par défaut, aucune configuration supplémentaire n’est nécessaire pour l’affichage ou la lecture. Vous diffusez une vidéo 360 avec des extensions vidéo standard telles que .mp4, .mkv et .mov. Le codec le plus courant est H.264.
 
-Cette section décrit l’utilisation de la visionneuse de vidéos 360/VR pour obtenir un rendu équirectangulaire et une expérience de visionnage immersive d’une pièce, d’une propriété, d’un lieu, d’un paysage, d’une procédure médicale, etc.
+Cette section décrit l’utilisation de la visionneuse de vidéos 360/VR pour effectuer le rendu d’une vidéo équirectangulaire pour une expérience de visionnage immersive d’une pièce, d’une propriété, d’un emplacement, d’un paysage, d’une procédure médicale, etc.
 
 L’audio spatial n’est actuellement pas pris en charge ; si l’audio est mixé en stéréo, la balance (G/D) ne change pas lorsque le client change l’angle de vue de la caméra.
 
@@ -39,7 +37,7 @@ Sélectionnez [Station spatiale 360](https://s7d1.scene7.com/s7viewers/html5/Vid
 
 ## Vidéo 360/VR et Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
-Vous pouvez utiliser Adobe Premier Pro pour visualiser et modifier des séquences vidéo 360/VR. Par exemple, vous pouvez placer des logos et du texte correctement dans une scène et appliquer des effets et des transitions conçus spécialement pour les médias équirectangulaires.
+Vous pouvez utiliser Adobe Premier Pro pour visualiser et modifier des séquences vidéo 360/VR. Par exemple, vous pouvez placer correctement des logos et du texte dans une scène et appliquer des effets et des transitions conçus spécifiquement pour les médias équirectangulaires.
 
 Voir [Modification de la vidéo 360/VR](https://helpx.adobe.com/fr/premiere-pro/how-to/edit-360-vr-video.html).
 
@@ -63,11 +61,13 @@ Les ressources vidéo 360 chargées dans Adobe Experience Manager sont consid
 
       * 1080p – 1920 x 1080, connu sous le nom de résolution Full HD ou FHD ou,
       * 2160p – 3840 x 2160, connu sous le nom de résolution 4K, UHD ou Ultra HD. Cette résolution d’affichage importante est le plus souvent utilisée sur les téléviseurs et moniteurs d’ordinateur Premium. La résolution 2160p est souvent appelée « 4K », car la largeur est proche de 4 000 pixels. En d’autres termes, elle offre quatre fois plus de pixels que la résolution 1080p.
+
    * [Créez un profil de vidéo adaptative personnalisé](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) avec des rendus de qualité supérieure. Par exemple, créez un profil de vidéo adaptative qui contient les trois paramètres suivants :
 
       * Largeur=auto ; hauteur=720 ; bitrate=2500 Kbit/s
       * Largeur=auto ; hauteur=1080 ; bitrate=5000 Kbit/s
       * Largeur=auto ; hauteur=1440 ; bitrate=6600 Kbit/s
+
    * Traitez le contenu vidéo 360 dans un dossier destiné exclusivement aux ressources vidéo 360.
 
    Cette approche impose des exigences plus élevées au réseau et au processeur de l’utilisateur final.
@@ -85,7 +85,7 @@ Par défaut, Experience Manager détecte la vidéo comme étant « 360 » si 
    * **Type de propriété** - Double
    * **Valeur** - rapport d’aspect, 2.0 par défaut.
 
-Une fois cette propriété définie, elle prend effet immédiatement sur les vidéos existantes et les vidéos récemment téléchargées.
+Une fois cette propriété définie, elle prend effet immédiatement sur les vidéos existantes et les vidéos nouvellement chargées.
 
 Le rapport d’aspect s’applique aux ressources vidéo 360 pour la page des détails de la ressource et le [composant de gestion de contenu web média de vidéo 360](/help/assets/adding-dynamic-media-assets-to-pages.md#dynamic-media-components).
 
@@ -124,7 +124,8 @@ Voir [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-m
 
    * Dans la liste des visionneuses, sélectionnez **[!UICONTROL Video360VR]**.
 
-      Une vidéo de réalité virtuelle (VR) est un contenu vidéo immersif accessible grâce à un casque de réalité virtuelle. À l’instar des vidéos ordinaires, vous créez une vidéo de réalité virtuelle au début, lorsqu’elle est en cours d’enregistrement ou capturée à l’aide de caméras à 360 degrés.
+     Une vidéo de réalité virtuelle (VR) est un contenu vidéo immersif accessible grâce à un casque de réalité virtuelle. À l’instar des vidéos ordinaires, vous créez une vidéo de réalité virtuelle au début, lorsqu’elle est en cours d’enregistrement ou capturée à l’aide de caméras à 360 degrés.
+
    ![Capture d’écran d’un gros plan de la Station spatiale internationale flottant dans l’espace avec la terre et le soleil partiellement visibles en arrière-plan.](assets/6_5_360video-preview-video360vr.png)
    *Capture d’écran d’une vidéo 360 VR.*
 

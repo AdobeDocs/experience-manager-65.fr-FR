@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '2072'
-ht-degree: 74%
+ht-degree: 73%
 
 ---
 
@@ -242,7 +242,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Statut de publication </td>
-   <td>Recherche de ressources en fonction de leur statut de publication</td>
+   <td>Recherche de ressources en fonction de leur état de publication</td>
    <td>
     <ul>
      <li>Libellé du champ</li>

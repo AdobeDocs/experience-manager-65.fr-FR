@@ -1,21 +1,19 @@
 ---
-title: Dépannage de Dynamic Media  en mode Scene7
+title: Dépannage de Dynamic Media en mode Scene7
 description: Découvrez comment résoudre les problèmes de configuration, de configuration et d’ordre général dans Dynamic Media lorsqu’il s’exécute en mode Scene7.
-uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
 role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Troubleshooting
 mini-toc-levels: 3
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 75%
+source-wordcount: '1393'
+ht-degree: 74%
 
 ---
 
@@ -210,7 +208,7 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
 
 Si vous rencontrez des problèmes avec les visionneuses, reportez-vous aux conseils de dépannage ci-dessous.
 
-### Problème : les paramètres prédéfinis de la visionneuse ne sont pas publiés. {#viewers-not-published}
+### Problème : les paramètres prédéfinis de la visionneuse ne sont pas publiés {#viewers-not-published}
 
 **Débogage**
 
@@ -244,7 +242,7 @@ Dans CRXDE Lite, procédez comme suit :
    * `"is/content"`
    * `dam:scene7Folder`
    * `<asset-name>`
-Exemple : `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+Exemple : `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
 
 **Solution**
 

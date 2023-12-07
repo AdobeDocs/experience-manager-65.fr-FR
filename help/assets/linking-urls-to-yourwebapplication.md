@@ -1,19 +1,17 @@
 ---
 title: Liaison d’URL à votre application web
 description: Comment lier des URL à votre application web dans Dynamic Media
-uuid: cf599e66-b1f9-40c0-b572-cea19f2e6793
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: User, Admin
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: Configuration
-source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
-workflow-type: ht
-source-wordcount: '1279'
-ht-degree: 100%
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+workflow-type: tm+mt
+source-wordcount: '1284'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +19,7 @@ ht-degree: 100%
 
 Vos applications et sites web accèdent aux services Dynamic Media par l’intermédiaire d’appels d’URL. Après la publication d’une ressource, Dynamic Media active une chaîne d’URL qui référence la ressource. Vous pouvez coller ces URL dans un navigateur Web à des fins de test.
 
-Vous ne pouvez lier ces URL que si vous *n’utilisez pas* Experience Manager pour la gestion de contenu web. La liaison, à la différence de l’intégration, est utilisée lorsque vous souhaitez présenter un lecteur vidéo dans une fenêtre contextuelle ou modale. Dans le cas contraire, [vous pouvez ajouter les ressources directement à votre page](adding-dynamic-media-assets-to-pages.md).
+Vous ne pouvez lier ces URL que si vous *n’utilisez pas* Experience Manager pour la gestion de contenu web. La liaison, à la différence de l’intégration, est utilisée lorsque vous souhaitez présenter un lecteur vidéo dans une fenêtre pop-up ou modale. Dans le cas contraire, [vous pouvez ajouter les ressources directement à votre page](adding-dynamic-media-assets-to-pages.md).
 
 Pour placer ces chaînes URL dans vos pages et applications web, copiez-les depuis Dynamic Media.
 
@@ -69,19 +67,19 @@ Il existe plusieurs manières d’obtenir une chaîne d’URL. Toutefois, les é
 
    * Si vous avez sélectionné une image, dans le menu déroulant, sélectionnez **[!UICONTROL Rendus]**.
 
-      Sous l’en-tête **[!UICONTROL Dynamique]**, sélectionnez un nom de paramètre prédéfini afin d’afficher son rendu dans le cadre de droite. Si nécessaire, faites défiler la liste Rendus pour afficher l’en-tête Dynamic.
+     Sous l’en-tête **[!UICONTROL Dynamique]**, sélectionnez un nom de paramètre prédéfini afin d’afficher son rendu dans le cadre de droite. Si nécessaire, faites défiler la liste Rendus pour afficher l’en-tête Dynamic.
 
-      Dans la partie inférieure du rail gauche, sélectionnez **[!UICONTROL URL]**.
+     Dans la partie inférieure du rail gauche, sélectionnez **[!UICONTROL URL]**.
 
-      ![chlimage_1-270](assets/chlimage_1-270.png)
+     ![chlimage_1-270](assets/chlimage_1-270.png)
 
    * Si vous avez sélectionné une visionneuse à 360°, une visionneuse d’images, un ensemble de carrousel ou une vidéo, dans le menu déroulant, sélectionnez **[!UICONTROL Visionneuses]**.
 
-      Dans le rail de gauche, sélectionnez un nom de paramètre prédéfini de la visionneuse. Un aperçu de la visionneuse ou de la vidéo s’ouvre dans une page distincte.
+     Dans le rail de gauche, sélectionnez un nom de paramètre prédéfini de la visionneuse. Un aperçu de la visionneuse ou de la vidéo s’ouvre dans une page distincte.
 
-      Dans le rail de gauche, dans la partie inférieure, sélectionnez **[!UICONTROL URL]**.
+     Dans le rail de gauche, dans la partie inférieure, sélectionnez **[!UICONTROL URL]**.
 
-      ![chlimage_1-271](assets/chlimage_1-271.png)
+     ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. Sélectionnez le texte et copiez-le dans le navigateur web pour prévisualiser la ressource ou l’ajouter à la page de contenu web.
 
@@ -115,11 +113,11 @@ Dynamic Media prend en charge la diffusion de ressources statiques, qui sont des
 
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
-         Par exemple, `https://aem.com/is/content/adobe/image.gif`.
+        Par exemple, `https://aem.com/is/content/adobe/image.gif`.
+
    * Sélectionnez **[!UICONTROL Ressource]** > **[!UICONTROL Rendus dynamiques]**, puis sélectionnez un rendu dynamique de la ressource statique et copiez l’URL.
 
-      Modifiez l’URL copiée afin d’utiliser `is/content` au lieu de `is/image/` dans le chemin d’accès.
-
+     Modifiez l’URL copiée afin d’utiliser `is/content` au lieu de `is/image/` dans le chemin d’accès.
 
 ## Obtention d’une URL de vidéo pour un rendu vidéo publié {#obtaining-a-video-url-for-a-published-video-rendition}
 
@@ -173,14 +171,13 @@ Dynamic Media prend en charge la diffusion de ressources statiques, qui sont des
 
    * Sous **[!UICONTROL ID d’enregistrement]**, copiez le nom du client dans la dernière partie de l’ID. Le nom du client copié est nécessaire ultérieurement dans ces étapes.
 
-      Par exemple, si l’ID d’enregistrement est `87654321|demoCo`, le nom du client est `demoCo`.
-
+     Par exemple, si l’ID d’enregistrement est `87654321|demoCo`, le nom du client est `demoCo`.
 
 1. En fonction du protocole de diffusion vidéo que vous utilisez, copiez le sélecteur de protocole correspondant. Le sélecteur de protocole copié est nécessaire ultérieurement au cours de ces étapes.
 
    | Protocole de diffusion vidéo que vous utilisez | Sélecteur de protocole à utiliser |
    |---|---|
-   | HTTP   <br> Si vous utilisez le HTTP (diffusion vidéo non sécurisée), assurez-vous de remplacer « https » par « http » dans la valeur d’URL du service vidéo que vous avez copiée précédemment. | `public/` |
+   | HTTP <br> Si vous utilisez HTTP (diffusion vidéo non sécurisée), veillez à remplacer https par http dans la valeur URL du service vidéo que vous avez copiée précédemment. | `public/` |
    | HTTPS | `public-ssl/` |
 
 1. Copiez le chemin complet de la ressource vidéo dans Experience Manager, tel qu’il est traité par Dynamic Media. Le chemin d’accès à la ressource vidéo copié est nécessaire ultérieurement dans ces étapes.

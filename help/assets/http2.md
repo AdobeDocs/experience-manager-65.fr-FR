@@ -1,19 +1,17 @@
 ---
 title: Diffusion de contenu HTTP2
 description: Découvrez comment HTTP/2 améliore la communication entre les navigateurs et les serveurs, ce qui accélère le transfert des informations tout en réduisant la puissance de traitement nécessaire.
-uuid: d9deb945-bdf5-4d6b-95c8-8bae4442e618
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 role: User, Admin
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
 feature: Publishing,Configuration
-source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 85%
+source-wordcount: '749'
+ht-degree: 93%
 
 ---
 
@@ -37,18 +35,18 @@ Le site web suivant décrit HTTP/2 et ses avantages de manière simple et rapide
 
 L’amélioration des performances peut varier considérablement. Elle repose sur de nombreux facteurs, tels que le code de votre site web, la manière dont vous utilisez Dynamic Media, l’appareil, l’écran et l’emplacement du consommateur.
 
-Les tests effectués par l’Adobe lui-même ont donné les résultats suivants :
+Les tests effectués par Adobe ont donné les résultats suivants :
 
 * Pour les images, le temps de réponse s’est amélioré de 7 % à 28 % selon l’appareil et le navigateur. Les gains de performances les plus notables ont été enregistrés sur les appareils iOS.
-* Pour les visionneuses, les performances de chargement ont été améliorées à 15 %.
+* Pour les visionneuses, les performances de chargement ont été améliorées jusqu’à 15 %.
 
-La démonstration suivante illustre la différence entre le chargement HTTP/1 et HTTP/2 :
+La démonstration suivante illustre la différence entre le chargement HTTP/1 et HTTP/2 :
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
 ## Puis-je passer à HTTP/2 ? {#am-i-eligible-to-switch-over-to-http}
 
-Pour utiliser HTTP/2, vous devez respecter les conditions suivantes :
+Pour utiliser HTTP/2, vous devez respecter les conditions suivantes :
 
 * Utilisez le protocole HTTPS sécurisé pour vos demandes de médias riches.
 * Utilisez le CDN de lots Adobe (réseau de diffusion de contenu) dans le cadre de votre licence Dynamic Media.
@@ -90,7 +88,7 @@ Les demandes sont traitées dans l’ordre dans lequel l’assistance clientèle
 
 ## Quels risques présente la transition vers HTTP/2 ? {#what-are-the-risks-with-moving-to-http}
 
-La transition vers HTTP/2 efface votre cache sur le réseau de diffusion de contenu, car elle implique de passer à une nouvelle configuration du réseau de diffusion de contenu.
+La transition vers HTTP/2 efface votre cache sur le réseau CDN, car elle implique de passer à une nouvelle configuration du réseau CDN.
 
 Le contenu non mis en cache atteint directement les serveurs Adobe d’origine jusqu’à ce que le cache soit reconstruit. C’est pour cette raison qu’Adobe prévoit de ne gérer que quelques transitions à la fois afin d’offrir des performances acceptables lors de l’extraction des demandes du site d’origine.
 

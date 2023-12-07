@@ -1,19 +1,17 @@
 ---
 title: Incorporation de la visionneuse de vidéos ou d’images ou de la visionneuse dimensionnelle Dynamic Media dans une page Web
 description: Découvrez comment intégrer des images 3D, des images ou des vidéos Dynamic Media dans une page Web.
-uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 feature: Viewers
 role: User, Admin
 exl-id: 203ea349-ef4c-421c-b4b6-76ee9d46ec34
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
-workflow-type: ht
-source-wordcount: '380'
-ht-degree: 100%
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+workflow-type: tm+mt
+source-wordcount: '383'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +27,7 @@ Consultez [Diffusion d’images optimisées pour un site réactif](responsive-si
 
 >[!NOTE]
 >
->Le code incorporé n’est pas disponible pour la copie tant que vous n’avez pas publié la ressource sélectionnée. En outre, vous devez également publier le paramètre de visionneuse prédéfini ou le paramètre d’image prédéfini.
+>Le code incorporé ne peut pas être copié tant que vous n’avez pas publié la ressource sélectionnée. En outre, vous devez également publier le paramètre de visionneuse prédéfini ou le paramètre d’image prédéfini.
 >
 >Consultez la section [Publication de ressources](publishing-dynamicmedia-assets.md).
 >
@@ -57,6 +55,6 @@ Consultez [Diffusion d’images optimisées pour un site réactif](responsive-si
 
 ## Utilisation de HTTP/2 pour diffuser vos ressources Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 est le nouveau protocole web qui améliore la manière dont les serveurs et les navigateurs communiquent. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
+HTTP/2 est le nouveau protocole Web mis à jour qui améliore la communication entre les navigateurs et les serveurs. Il permet un transfert plus rapide des informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
 
 Voir [Diffusion du contenu sur HTTP2](http2.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.

@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: f8f82ad5805095f331432471b614225f761e645c
-workflow-type: ht
-source-wordcount: '3530'
-ht-degree: 100%
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+workflow-type: tm+mt
+source-wordcount: '3552'
+ht-degree: 99%
 
 ---
 
@@ -109,7 +109,7 @@ vers
 #### Éditeur de requête GraphQL{#sites-graphql-query-editor-6519}
 
 * L’interface utilisateur de l’éditeur GraphQL ne vous permet pas de parcourir toutes les requêtes persistantes lorsqu’il y a un nombre élevé de requêtes (plus de 25, par exemple). (SITES-16008)
-* L’éditeur GraphQL n’enregistre pas le statut de publication des requêtes persistantes. Le bouton Annuler la publication s’affiche dans l’éditeur GraphQL, mais l’icône indiquant que la requête persistante est publiée n’apparaît pas. Une actualisation de la page affiche que la requête persistante n’est même pas publiée. (SITES-15858)
+* L’éditeur GraphQL n’enregistre pas l’état de publication des requêtes persistantes. Le bouton Annuler la publication s’affiche dans l’éditeur GraphQL, mais l’icône indiquant que la requête persistante est publiée n’apparaît pas. Une actualisation de la page affiche que la requête persistante n’est même pas publiée. (SITES-15858)
 
 #### Lancements{#sites-launches-6519}
 
@@ -242,7 +242,7 @@ Les correctifs dans [!DNL Experience Manager] Forms sont fournis par le biais d
 
 1. Avant l’installation, prenez un instantané ou exécutez une sauvegarde récente de votre instance [!DNL Experience Manager].
 
-1. Téléchargez le pack de services à partir de la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Téléchargez le Service Pack à partir de [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Ouvrez le gestionnaire de modules et cliquez sur **[!UICONTROL Charger le module]** pour charger le module. Pour en savoir plus, consultez la section [Gestionnaire de modules](/help/sites-administering/package-manager.md).
 
@@ -269,7 +269,7 @@ Vous pouvez utiliser deux méthodes différentes pour installer automatiquement
 
 Pour connaître les plateformes certifiées pour travailler avec cette version, reportez-vous à la section des [exigences techniques](/help/sites-deploying/technical-requirements.md).
 
-1. La page d’informations sur les produits (`/system/console/productinfo`) affiche la chaîne de version mise à jour `Adobe Experience Manager (6.5.19.0)` sous [!UICONTROL Produits installés]. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. la page d’informations sur les produits (`/system/console/productinfo`) affiche la chaîne de version mise à jour. `Adobe Experience Manager (6.5.19.0)` under [!UICONTROL Produits installés]. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Tous les lots OSGi sont au statut **[!UICONTROL ACTIF]** ou **[!UICONTROL FRAGMENT]** dans la console OSGi (utilisez la console web : `/system/console/bundles`).
 
@@ -468,7 +468,7 @@ Pour résoudre le problème, recherchez le fichier `<AEM_Forms_Installation_dir>
 * Lorsqu’un formulaire adaptatif est publié, toutes ses dépendances, y compris les stratégies, sont republiées, même si aucune modification ne leur a été apportée. (FORMS-10454)
 * Lorsqu’un utilisateur ou une utilisatrice choisit de configurer un champ pour la première fois dans un formulaire adaptatif, l’option permettant d’enregistrer une configuration ne s’affiche pas dans l’explorateur de propriétés. Sélectionner un autre champ du formulaire adaptatif à configurer dans le même éditeur pour résoudre le problème.
 * Lorsqu’une URL de redirection est définie dans le conteneur de guide d’un formulaire adaptatif, la signature en ligne cesse de fonctionner. (FORMS-10493)
-Pour résoudre ce problème, téléchargez et installez le [correctif pour la version 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+Pour résoudre le problème, téléchargez et installez le [correctif pour la version 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 * La publication de tous les modèles de document d’enregistrement (DoR) échoue. Seuls les modèles de document d’enregistrement basés sur des paramètres régionaux anglais et les modèles de document d’enregistrement basés sur Forms associés sont publiés. (FORMS-10535)
 Pour résoudre le problème, téléchargez et installez le [correctif pour la version 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 

@@ -1,19 +1,17 @@
 ---
 title: Installation du pack de fonctionnalités 18912 pour la migration de ressources en bloc
 description: Le pack de fonctionnalités 18912 vous permet soit d’ingérer en bloc des ressources par FTP, soit de migrer des ressources de Dynamic Media Classic vers Dynamic Media sur Adobe Experience Manager. Ce pack de fonctionnalités optionnel est fourni par l’assistance d’Adobe.
-uuid: 45c2f5f8-4368-4d7b-a43e-fe96cfb272fd
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
-discoiquuid: 5d5eebe4-46c9-4028-9354-c5f27944fcdc
 docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 53ea2cf7-d633-4ab9-a869-ce76eb1c01e5
-source-git-commit: fc148a5f5e0fcaac2980dc73004fa92ac3b91fb3
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '407'
 ht-degree: 92%
 
 ---
@@ -37,7 +35,7 @@ Consultez également la section [Configuration de Dynamic Media en mode Scene7]
 **Pour installer le pack de fonctionnalités 18912 pour la migration en bloc de ressources :**
 
 1. Dans votre instance Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Utilisateurs]** et sélectionnez **[!UICONTROL Créer un utilisateur]**. Cet utilisateur de service doit disposer des autorisations de *lecture/écriture* sur `/content/dam.`.
-1. Dans le **[!UICONTROL ID]** et **[!UICONTROL Mot de passe]** , saisissez un nom d’utilisateur et un mot de passe ; par exemple, **Utilisateur FTP**. Ce nom apparaît dans la chronologie en tant qu’utilisateur ayant créé la ressource. Lorsqu’une ressource est chargée à partir du FTP, elle est considérée comme créée lorsqu’elle est chargée sur le serveur FTP et envoyée vers Experience Manager.
+1. Dans le **[!UICONTROL ID]** et **[!UICONTROL Password]** , saisissez un nom d’utilisateur et un mot de passe, par exemple : **Utilisateur FTP**. Ce nom apparaît dans la chronologie en tant qu’utilisateur ayant créé la ressource. Lorsqu’une ressource est chargée à partir du FTP, elle est considérée comme créée lorsqu’elle est chargée sur le serveur FTP et envoyée vers Experience Manager.
 1. Contactez l’[assistance clientèle Adobe pour Experience Manager](https://experienceleague.adobe.com/?support-solution=General&amp;lang=fr#support) pour demander l’accès au pack de fonctionnalités 18912 pour le téléchargement. Vous aurez peut-être besoin des informations suivantes lorsque vous contactez l’assistance :
 
    * L’adresse IP du serveur de l’instance d’auteur, y compris le numéro de port (4502 par défaut)

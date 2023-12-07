@@ -1,20 +1,18 @@
 ---
 title: Profils vidéo
 description: Dynamic Media est fourni avec un profil prédéfini de codage vidéo adaptatif. Les paramètres de ce profil prêt à l’emploi sont optimisés pour offrir à vos clients la meilleure expérience de visionnage possible. Vous pouvez également ajouter un recadrage intelligent à vos vidéos.
-uuid: 26a20984-db63-41e9-b16c-6e164b7596a0
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 feature: Video Profiles
 role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '3732'
+source-wordcount: '3770'
 ht-degree: 98%
 
 ---
@@ -63,7 +61,7 @@ Le tableau ci-après identifie les profils de codage recommandés pour la diffus
    <td><strong>Débit vidéo (kbit/s)</strong></td>
    <td><strong>Taux de rafraîchissement vidéo (i/s)</strong></td>
    <td><strong>Codec audio</strong></td>
-   <td><strong>Débit audio  (kbit/s)</strong></td>
+   <td><strong>Débit audio (Kbits/s)</strong></td>
   </tr>
   <tr>
    <td><p>MP4 H.264 (mp4)</p> </td>

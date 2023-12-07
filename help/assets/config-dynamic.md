@@ -2,21 +2,19 @@
 title: Configuration de Dynamic Media en mode hybride
 description: Découvrez comment configurer Dynamic Media en mode hybride.
 mini-toc-levels: 3
-uuid: 39ad7d83-d310-4baf-9d85-5532c2f201f3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '7791'
-ht-degree: 88%
+source-wordcount: '7684'
+ht-degree: 87%
 
 ---
 
@@ -80,7 +78,7 @@ Vous pouvez choisir d’implémenter Dynamic Media uniquement pour les images, 
   </tr>
   <tr>
    <td>Diffuser UNIQUEMENT des images en production</td>
-   <td>Les images sont diffusées via des serveurs dans les centres de données d’Adobe du monde entier, puis mises en cache par un réseau de diffusion de contenu pour une portée globale et des performances évolutives.</td>
+   <td>Les images sont diffusées via des serveurs situés dans les centres de données mondiaux d’Adobe, puis mises en cache par un réseau de diffusion de contenu pour une portée globale et des performances évolutives.</td>
    <td>
     <ol>
      <li>Sur le nœud <strong>auteur</strong> d’Experience Manager, <a href="#enabling-dynamic-media">activez Dynamic Media</a>.</li>
@@ -95,7 +93,7 @@ Vous pouvez choisir d’implémenter Dynamic Media uniquement pour les images, 
   </tr>
   <tr>
    <td>Diffuser UNIQUEMENT des images en préproduction (développement, QE, évaluation, etc.)</td>
-   <td>Les images sont livrées via le nœud de publication d’Experience Manager. Dans ce scénario, puisque le trafic est minimal, il n’est pas nécessaire d’envoyer les images vers le centre données d’Adobe. Il permet également un aperçu sécurisé du contenu avant le lancement de l’exploitation.</td>
+   <td>Les images sont livrées via le nœud de publication d’Experience Manager. Dans ce scénario, le trafic étant minimal, il n’est pas nécessaire de diffuser des images vers le centre de données d’Adobe. Il permet également un aperçu sécurisé du contenu avant le lancement de l’exploitation.</td>
    <td>
     <ol>
      <li>Sur le nœud <strong>auteur</strong> d’Experience Manager, <a href="#enabling-dynamic-media">activez Dynamic Media</a>.</li>
@@ -121,7 +119,7 @@ Vous pouvez choisir d’implémenter Dynamic Media uniquement pour les images, 
   </tr>
   <tr>
    <td>Diffuser À LA FOIS des images et des vidéos en production</td>
-   <td><p>Les vidéos sont diffusées et mises en cache par un réseau de diffusion de contenu pour des performances évolutives et une portée globale. Les images et les images d’affiche vidéo sont diffusées via les serveurs des centres de données d’Adobe dans le monde entier, puis mises en cache par un réseau de diffusion de contenu pour une portée globale et des performances évolutives.</p> <p>Reportez-vous aux sections précédentes pour configurer les images ou les vidéos en préexploitation. </p> </td>
+   <td><p>Les vidéos sont diffusées et mises en cache par un réseau de diffusion de contenu pour des performances évolutives et une portée globale. Les images et les images d’affiche vidéo sont diffusées via les serveurs des centres de données mondiaux d’Adobe, puis mises en cache par un réseau de diffusion de contenu pour une portée globale et des performances évolutives.</p> <p>Reportez-vous aux sections précédentes pour configurer les images ou les vidéos en préexploitation. </p> </td>
    <td>
     <ol>
      <li>Sur le nœud <strong>auteur</strong> d’Experience Manager, <a href="#enabling-dynamic-media">activez Dynamic Media</a>.</li>
@@ -301,7 +299,7 @@ Configurez l’authentification de réplication sur l’auteur afin de pouvoir r
    * Sélectionnez le **[!UICONTROL fichier KeyStore]**. Accédez au fichier KeyStore fourni par Adobe, sélectionnez-le puis sélectionnez **[!UICONTROL Ouvrir]**.
    * Dans le champ **[!UICONTROL Mot de passe du fichier KeyStore]**, entrez le mot de passe du fichier KeyStore. Ce n’est **pas** le mot de passe du KeyStore que vous avez créé à l’étape 5. C’est le mot de passe du fichier KeyStore fourni par Adobe dans l’e-mail de bienvenue qui vous a été envoyé pendant le provisionnement. Contactez le service clientèle Adobe si vous n’avez pas reçu le mot de passe du fichier KeyStore.
    * Dans le champ **[!UICONTROL Mot de passe de la clé privée]**, entrez le mot de passe de la clé privée (ce peut être le même mot de passe de clé privée que celui fourni à l’étape précédente). Adobe vous fournit ce mot de passe de clé privée dans l’e-mail de bienvenue qui vous est envoyé pendant le provisionnement. Contactez le service clientèle Adobe si vous n’avez pas reçu le mot de passe de clé privée.
-   * Dans le champ **[!UICONTROL Alias de la clé privée]**, entrez l’alias de la clé privée, par exemple `*companyname*-alias`. Adobe vous fournit cet alias de clé privée dans l’e-mail de bienvenue qui vous est envoyé pendant le provisionnement. Contactez le service clientèle Adobe si vous n’avez pas reçu d’alias de clé privée.
+   * Dans le **[!UICONTROL Alias de clé privée]** , saisissez l’alias de la clé privée. Par exemple, `*companyname*-alias`. Adobe vous fournit cet alias de clé privée dans l’e-mail de bienvenue qui vous est envoyé pendant le provisionnement. Contactez le service clientèle Adobe si vous n’avez pas reçu d’alias de clé privée.
 
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 

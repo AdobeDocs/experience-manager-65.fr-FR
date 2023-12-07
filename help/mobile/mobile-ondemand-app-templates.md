@@ -5,7 +5,7 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 1%
@@ -41,7 +41,7 @@ Lors de la création d’une application basée sur le modèle d’une autre app
 Procédure de création d’une application basée sur un modèle d’application :
 
 1. Accédez au catalogue d’applications AEM Mobile : *&lt;server-url>/aem/apps.html/content/mobileapps*
-1. Sélectionner **Créer** -> **Application** comme illustré ci-dessous
+1. Sélectionner **Créer** > **Application** comme illustré ci-dessous
 
 Une fois que vous avez créé une application à l’aide de ce modèle, vous pouvez ajouter des articles, des bannières et des collections à votre application. Pour revoir la création d’articles, de bannières et de collections, voir [Actions de gestion de contenu](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
