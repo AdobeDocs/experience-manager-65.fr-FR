@@ -3,10 +3,10 @@ title: Exigences techniques
 description: Liste des plateformes clientes et serveur prises en charge pour Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '3597'
-ht-degree: 89%
+source-wordcount: '3625'
+ht-degree: 86%
 
 ---
 
@@ -191,7 +191,7 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 | **Plateforme** | **Niveau de prise en charge** |
 |---|---|
 | **Linux®, basé sur la distribution Red Hat®** | A : prise en charge de : `[1]` `[3]` |
-| Linux, en fonction de la distribution Debian, incluse Ubuntu  | A : pris en charge `[1]` `[2]` |
+| Linux, en fonction de la distribution Debian, incluse Ubuntu  | A : prise en charge de : `[1]` `[2]` |
 | Linux, en fonction de la distribution SUSE® | A : prise en charge de `[1]` |
 | Microsoft® Windows Server 2019 `[4]` | R : prise en charge restreinte des nouveaux contrats `[5]` |
 | Microsoft® Windows Server 2016 `[4]` | R : prise en charge restreinte des nouveaux contrats `[5]` |
@@ -202,6 +202,15 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 1. Noyau Linux® 2.6.3. x, 4. x, et 5. x contient des dérivés de la distribution Red Hat®, y compris Red Hat® Enterprise Linux, CentOS, Oracle Linux® et Amazon Linux®. Les fonctions de module complémentaire AEM Forms sont uniquement prises en charge sur CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 et Red Hat® Enterprise Linux® 9.
 1. AEM Forms est pris en charge sur Ubuntu 20.04 LTS.
 1. Distribution Linux® prise en charge par Adobe Managed Services.
+
+   >[REMARQUE !]
+Pour les serveurs basés sur Linux (pile OSGI et JEE), le module complémentaire AEM Forms nécessite des dépendances d’exécution telles que :
+   * glibc.x86_64 (2.17-196)
+   * libX11.x86_64 (1.6.7-4)
+   * zlib.x86-64 (1.2.7-17)
+   * libxcb.x86_64 (1.13-1.el7)
+   * libXau.x86_64 (1.0.8-2.1.el7)
+
 1. Les déploiements en exploitation Microsoft® Windows sont pris en charge pour les clients et clientes effectuant une mise à niveau vers la version 6.5 et pour une utilisation en dehors de l’environnement d’exploitation. Les nouveaux déploiements sont à la demande pour AEM Sites et Assets.
 1. AEM Forms est pris en charge sur Microsoft® Window Server sans les restrictions de niveau de prise en charge R.
 1. AEM Forms a supprimé la prise en charge de Microsoft® Windows Server 2016.
@@ -215,7 +224,6 @@ Si vous installez AEM Forms 6.5, assurez-vous d’avoir installé le redistribu
 * Redistribuable Microsoft® Visual C++ 2012
 * Microsoft® Visual C++ 2013 redistribuable
 * Microsoft® Visual C++ 2019 (VC14.28 ou version ultérieure) redistribuable
-
 
 
 ### Environnements virtuels et de cloud computing {#virtual-cloud-computing-environments}
@@ -349,11 +357,11 @@ Tout fonctionne sans problème, dans la mesure où aucune configuration particul
 
 Lorsqu’une adresse IP doit être spécifiée, vous pouvez effectuer une sélection (au besoin) parmi les options suivantes :
 
-* une adresse IPv6. Par exemple, `https://[ab12::34c5:6d7:8e90:1234]:4502` ;
+* Adresse IPv6. Par exemple, `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
-* une adresse IPv4. Par exemple, `https://123.1.1.4:4502` ;
+* Adresse IPv4. Par exemple, `https://123.1.1.4:4502`
 
-* un nom de serveur. Par exemple, `https://www.yourserver.com:4502` ;
+* Nom du serveur. Par exemple, `https://www.yourserver.com:4502`
 
 * le scénario par défaut de `localhost` est interprété pour les installations réseau IPv4 et IPv6. Par exemple, `https://localhost:4502`.
 
@@ -374,7 +382,7 @@ Pour les clientes et clients Dynamic Media qui exécutent Dynamic Media en mod
 Les exigences matérielles suivantes s’appliquent à Linux® et Windows :
 
 * Processeur Intel Xeon® ou AMD® Opteron avec au moins quatre cœurs
-* Au moins 16 Go de RAM
+* Au moins 16 Go de RAM
 
 #### Linux® {#linux}
 
@@ -520,7 +528,8 @@ En outre :
 * Accélération matérielle de la vidéo (facultatif)
 * Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC
 * Droits d’administration pour l’installation de Designer
-* Microsoft Visual C++ 2019 (VC 14.28 ou version ultérieure) Runtime 32 bits
+* Microsoft Visual C++ 2019 (VC 14.28 ou version ultérieure) Runtime 32 bits pour AEM Forms Designer 32 bits
+* Microsoft Visual C++ 2019 (VC 14.28 ou version ultérieure) 64 bits pour AEM Forms Designer 64 bits (pour la pile OSGI et JEE)
 
 ### Conditions requises pour l’écriture différée des métadonnées AEM Assets XMP {#requirements-for-aem-assets-xmp-metadata-write-back}
 
@@ -535,6 +544,6 @@ L’écriture différée XMP est prise en charge et activée pour les plateforme
 
 * **Formats de fichier :** JPEG, PNG, TIFF, PDF, INDD, AI et EPS.
 
-### Conditions requises pour qu’AEM Assets traite les ressources lourdes en métadonnées sous Linux® {#assetsonlinux}
+### Conditions requises pour qu’AEM Assets traite les ressources lourdes en métadonnées sous Linux® {#assetsonlinux}
 
 Le processus XMPFilesProcessor nécessite le fonctionnement de la bibliothèque GLIBC_2.14. Utilisez un noyau Linux® qui contient GLIBC_2.14, par exemple, le noyau Linux® version 3.1.x. Cela améliore les performances de traitement des ressources qui contiennent un grand nombre de métadonnées, comme les fichiers de PSD. L’utilisation d’une version précédente de GLIBC entraîne une erreur dans les journaux commençant par `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.

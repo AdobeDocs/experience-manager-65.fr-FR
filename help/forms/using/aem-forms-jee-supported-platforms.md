@@ -7,10 +7,10 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 1630805be43ce9bb52a8fe1bbe50b2b934d4922c
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3984'
+ht-degree: 38%
 
 ---
 
@@ -110,17 +110,17 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <th><p><strong>Définitions de correctif prises en charge</strong></p> </th>
   </tr>
   <tr> 
-   <td><p>Oracle Java™ SE 11 (64 bits) <sup> [8] </sup> </p>  </td>
+   <td><p>Oracle Java™ SE 11 (64 bits) <sup> [8] </sup> </p>  </td>
    <td><p>A : Pris en charge</p> </td>
    <td><p>Versions et mises à jour mineures </p> </td>
   </tr>
   <tr>
-   <td>Azul Zulu OpenJDK 11 64 bits</td>
+   <td>Azul Zulu OpenJDK 11 - 64 bits</td>
    <td>Z : non pris en charge</td>
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td>Azul Zulu OpenJDK 8 64 bits</td>
+   <td>Azul Zulu OpenJDK 8 - 64 bits</td>
    <td>Z : Non pris en charge</td>
    <td><p> </p> </td>
   </tr>
@@ -197,7 +197,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 - IBM® DB2® n’est pas pris en charge pour les nouvelles installations. Elle est prise en charge uniquement pour les clients existants effectuant une mise à niveau vers AEM 6.5 Forms.
 - MongoDB est un logiciel tiers non inclus dans le package de licence d’AEM. Pour plus d’informations, voir [Politique de licence MongoDB](https://www.mongodb.org/about/licensing/).
 - Pour tirer le meilleur parti de votre déploiement AEM, Adobe recommande d’obtenir une licence de la version MongoDB Enterprise afin de bénéficier d’une assistance professionnelle.
-- Vous obtiendrez auprès de l’équipe d’assistance clientèle d’Adobe une aide adaptée aux problèmes admissibles relatifs à l’utilisation de MongoDB avec AEM. Pour plus d’informations, consultez la page [MongoDB pour Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
+- L’assistance clientèle d’Adobe aide à résoudre les problèmes admissibles liés à l’utilisation de MongoDB avec AEM. Pour plus d’informations, consultez la page [MongoDB pour Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 - Le système de fichiers comprend le stockage de bloc compatible avec POSIX. Cela inclut la technologie de stockage réseau. Gardez à l’esprit que les performances du système de fichiers peuvent varier et avoir une incidence sur les performances globales. Il est recommandé de charger les AEM de test avec le système de fichiers réseau/distant.
 - Seul le moteur de stockage WiredTiger de MongoDB est pris en charge.
 - La fragmentation MongoDB n’est pas pris en charge dans AEM. 
@@ -220,7 +220,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td><p>Fourni avec l’installation d’AEM Forms on JEE.</p> </td>
   </tr>
   <tr>
-   <td>Microsoft® SQL Server <br /> </td>
+   <td>Microsoft® SQL Server<br /> </td>
    <td><p>Pilote Microsoft® SQL Server JDBC 8.2.2<br /> </p> <p>sqljdbc8.jar</p> </td>
    <td><p>Téléchargez-le sur le site Web de Microsoft®.</p> </td>
   </tr>
@@ -242,12 +242,12 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td><p><strong>Définitions de correctif prises en charge</strong></p> </td>
   </tr>
   <tr>
-   <td>Oracle WebLogic Server 12.2.1 (12c R2) (Obsolète)</td>
+   <td>Oracle WebLogic Server 12.2.1 (12c R2) (obsolète) <sup>[9]</sup></td>
    <td>A : Pris en charge</td>
    <td>Service Pack et mises à jour critiques</td>
   </tr>
   <tr>
-   <td>Oracle WebLogic Server 14c </td>
+   <td>Oracle WebLogic Server 14c <sup>[9]</sup></td>
    <td>A : Pris en charge</td>
    <td>Service Pack et mises à jour critiques</td>
   </tr>
@@ -355,6 +355,9 @@ Tenez compte des exceptions suivantes lors du choix d’une plateforme pour conf
 1. AEM Forms on JEE ne prend pas en charge le serveur d’applications WebSphere® sur CentOS.
 1. AEM Forms on JEE ne prend pas en charge le contrôle d’accès basé sur les rôles JBoss® (RBAC).
 1. AEM Forms on JEE prend uniquement en charge le SDK Oracle Java™ SE 11 (64 bits) pour le serveur d’applications JBoss® EAP 7.4.
+1. Les versions de JDK supérieures à 1.8.0_281 ne sont pas prises en charge pour le serveur WebLogic. (FORMS-8498)
+1. [!DNL Microsoft® Windows Server 2019] ne prend pas en charge [!DNL MySQL 5.7] et [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] ne prend pas en charge les installations clé en main pour [!DNL Experience Manager Forms 6.5.10.0 and later]. (CQDOC-18312)
+
 
 Tenez également compte des points suivants lors du choix de logiciels pour les déploiements d’Adobe AEM Forms on JEE :
 
@@ -471,7 +474,7 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
 >
 PDF Generator ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
 >
-En outre : :
+En outre :
 >
 - PDF Generator nécessite une version 32 bits de [Acrobat 2020 Classic track version 20.004.30006](https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html) pour effectuer la conversion.
 - PDF Generator ne prend en charge que la version commerciale 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion.
@@ -479,11 +482,11 @@ En outre : :
 - Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux®.
 - Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont uniquement prises en charge sous Windows.
 - Une version d’Acrobat est fournie avec AEM Forms pour activer la fonctionnalité PDF Generator. La version groupée ne doit être accessible par programmation qu’avec AEM Forms, pendant la durée de la licence AEM Forms, pour une utilisation avec AEM Forms PDF Generator. Pour plus d’informations, voir la description du produit AEM Forms selon votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
-- Le service PDF Generator ne prend pas en charge Microsoft® Windows 10.
--PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft® Visio 2019. Vous pouvez continuer à utiliser Microsoft® Visio 2016 pour convertir des fichiers .VSD et .VSDX.
+- Le service PDF Generator ne prend pas en charge Microsoft® Windows 10.
+-PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft® Visio 2019. Vous pouvez continuer à utiliser Microsoft® Visio 2016 pour convertir des fichiers .VSD et .VSDX.
 - PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft® Project 2019. Vous pouvez continuer à utiliser Microsoft® Project 2016 pour convertir des fichiers .MPP.
-- PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft® Visio 2019.
-- PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft® Project 2019.
+- PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft® Visio 2019.
+- PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft® Project 2019.
 >
 
 ### Exceptions de la prise en charge de l’accessibilité {#exceptions-to-accessibility-support}
@@ -506,7 +509,7 @@ Les sous-systèmes suivants d’AEM Forms ne sont pas [508](https://www.section5
    <td>Configuration matérielle requise</td>
   </tr>
   <tr>
-   <td>Microsoft® Windows Server </td>
+   <td>Microsoft® Windows Server</td>
    <td>Processeur Intel Xeon® E5-2680, 2,4 GHz ou équivalent<br /> VMware ESX 5.1 ou version ultérieure<br /> RAM : 6 Go (système d’exploitation 64 bits avec JVM 64 bits)<br /> Espace disque disponible : 15 Go d’espace temporaire plus 22 Go<br /> pour AEM Forms on JEE</td>
   </tr>
   <tr>
@@ -840,9 +843,9 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 |  | **Suppression de l’assistance (PDF Generator et en général) :** |  |
 |  | Microsoft® SharePoint 2016 |  |
 |  | Microsoft® Office 2016 |  |
-|  | Microsoft® Office Visio 2016 |  |
-|  | Microsoft® Publisher 2016 |  |
-|  | Microsoft® Project 2016 |  |
+|  | Microsoft® Office Visio 2016 |  |
+|  | Microsoft® Publisher 2016 |  |
+|  | Microsoft® Project 2016 |  |
 |  | OpenOffice 4.1.2 |  |
 |  | Acrobat 2017 (Suivi classique) version 17.011.30078 ou ultérieure |  |
 

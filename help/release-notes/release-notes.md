@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '3552'
-ht-degree: 99%
+source-wordcount: '4233'
+ht-degree: 78%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 99%
 | -------- | ---------------------------- |
 | Version | 6.5.19.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Type | Mise à jour du pack de services |
-| Date | Jeudi 30 novembre 2023 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Date | Jeudi 7 décembre 2023 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
 ## Éléments compris dans [!DNL Experience Manager] 6.5.19.0 {#what-is-included-in-aem-6519}
@@ -38,12 +38,30 @@ ht-degree: 99%
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
-**Principales fonctionnalités et améliorations**
+## Principales fonctionnalités et améliorations
 
 Voici quelques-unes des fonctionnalités et améliorations clés de cette version :
 
 * Activation de la personne Éditeur de page/Composant d’image Sites pour référencer des ressources à partir du service cloud Assets à distance. (SITES-13448, SITES-13433)
 * AEM prend désormais en charge le tri côté serveur pour accélérer la navigation du projet en vue Liste. Les nœuds de projet sont triés en fonction de la colonne sélectionnée par l’utilisateur ou l’utilisatrice avant d’apparaître dans l’interface.
+
+### [!DNL Forms]
+
+* **Nouveaux composants principaux de formulaires adaptatifs**: des onglets verticaux, des termes et conditions et une case à cocher sont ajoutés pour améliorer l’évolutivité des formulaires.
+   * **[Composant de case à cocher](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: Forms adaptatif basé sur les composants principaux peut désormais inclure un composant de case à cocher. Il permet aux utilisateurs de faire des choix binaires, en sélectionnant ou en désélectionnant une option particulière. Il s’affiche généralement sous la forme d’une petite case sur laquelle vous pouvez cliquer ou appuyer pour basculer entre deux états : cochée et décochée. La case à cocher est un élément de formulaire courant utilisé pour présenter un choix oui/non ou vrai/faux.
+
+   * **[Composant Termes et conditions](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: Forms adaptatif basé sur les composants principaux peut désormais inclure un composant Conditions générales. Il permet aux auteurs de formulaires d’introduire une section spécifique dans le formulaire, dans laquelle les utilisateurs reçoivent les conditions ou les accords juridiques associés à l’utilisation d’un service, d’un produit ou d’une plateforme. Ce composant est conçu pour informer les utilisateurs des règles, des réglementations et des obligations auxquelles ils acceptent d’envoyer le formulaire.
+
+     ![Composants Onglets verticaux, Termes et conditions et Case à cocher](/help/forms/using/assets/forms-components.png)
+
+   * **[Composant Onglets verticaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: Forms adaptatif basé sur les composants principaux peut désormais organiser le contenu du formulaire dans une liste verticale d’onglets, fournissant ainsi une disposition structurée et navigable. L’utilisation d’onglets verticaux dans un formulaire peut améliorer l’expérience globale de l’utilisateur en simplifiant la navigation et en améliorant l’organisation du contenu du formulaire, en particulier lorsqu’un formulaire contient plusieurs sections ou des informations complexes.
+
+* **[Version 64 bits d’AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**: la version 64 bits d’AEM Forms Designer offre des performances, une évolutivité et une gestion de la mémoire améliorées pour vous permettre de créer des formulaires. Grâce à l’architecture 64 bits, vous pouvez réaliser facilement des projets plus volumineux et plus complexes, assurant ainsi des workflows de conception transparents et une efficacité optimisée. Tirez parti de vos capacités de conception de formulaire et embrassez l’avenir d’AEM Forms Designer avec cette version de pointe.
+
+* **[Connexion d’une Forms adaptative à une liste Microsoft® SharePoint](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms fournit une intégration prête à l’emploi pour envoyer directement les données de formulaire à la liste SharePoint, ce qui vous permet d’utiliser les fonctionnalités de listes de  SharePoint . Vous pouvez configurer Microsoft SharePoint List comme source de données pour un modèle de données de formulaire et utiliser l’action d’envoi Envoyer à l’aide du modèle de données de formulaire pour connecter un formulaire adaptatif à la liste SharePoint.
+
+* **[Prise en charge de la configuration des propriétés de document d’enregistrement pour les fragments de formulaire adaptatif](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)**: vous pouvez désormais personnaliser facilement vos fragments de formulaire adaptatif et ses champs dans l’éditeur de formulaire adaptatif.
+
 
 **Fonctionnalité obsolète**
 
@@ -149,9 +167,11 @@ vers
 
 ### [!DNL Forms]{#forms-6519}
 
-Les correctifs dans [!DNL Experience Manager] Forms sont fournis par le biais d’un package complémentaire distinct une semaine après la date de publication prévue du Pack de services [!DNL Experience Manager]. Dans ce cas, la publication du package complémentaire AEM 6.5.19.0 Forms est planifiée pour le jeudi 30 novembre 2023. Une liste des correctifs et améliorations de Forms sera ajoutée à cette section après cette publication.
+#### [!DNL Adaptive Forms]
 
-* Ajout de la liste de contrôle d’accès pour que l’utilisateur ou l’utilisatrice `fd-cloudservice` puisse lire ou mettre à jour les configurations Microsoft® sous `cloudconfigs/microsoftoffice`. (FORMS-11142)
+<!-- Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.19.0 Forms add-on package release is scheduled for Thursday, November 30, 2023. A list of Forms fixes and enhancements would be added to this section post the release.-->
+
+<!--* Adding Access Control List for `fd-cloudservice` user to be able to read or update the Microsoft&reg; configurations under `cloudconfigs/microsoftoffice`. (FORMS-11142) -->
 
 <!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
 * **Document Services**
@@ -166,6 +186,32 @@ Les correctifs dans [!DNL Experience Manager] Forms sont fournis par le biais d
 <!--### Commerce{#commerce-6519}
 
 * A -->
+
+* Lorsqu’un utilisateur ajoute une barre d’outils au formulaire adaptatif, le libellé du conteneur de formulaires affiche un comportement erratique, car il ne change pas avec la langue préférée sélectionnée par l’auteur pour Forms. (FORMS-11371)
+* Dans AEM Forms Workspace, le champ déroulant sélectionne la première option par défaut sur l’interface utilisateur. (FORMS-11346)
+* La configuration linguistique dans AEM ne s’affiche pas si vous utilisez des paramètres régionaux à cinq caractères et que le séparateur décimal n’est pas correctement rendu dans la lettre. (FORMS-11344)
+* Lorsqu’un utilisateur génère la sortie XML à l’aide du processus Workbench, elle échoue pour certains fichiers. (FORMS-11314)
+* Lorsqu’un utilisateur génère un aperçu du document d’enregistrement (DOR) dans des langues autres que l’anglais, il ne fonctionne pas. (FORMS-11106)
+* Lorsqu’un utilisateur convertit certains fichiers image avec PDFG sur une instance OSGI basée sur Linux avec JDK11, il ne convertit pas. (FORMS-11105)
+* Lorsque l’utilisateur installe le module complémentaire AEM Forms, il rompt le panneau de l’arborescence de contenu dans AEM Sites. (FORMS-10912)
+* Lorsqu’un utilisateur copie des dates à l’aide d’un lecteur d’écran NVDA à partir du composant de sélecteur de date, la lecture n’est pas correcte. (FORMS-10805) 
+* Dans l’éditeur de règles Forms, l’utilisateur ne peut pas définir la valeur du bouton radio/case à cocher lorsque le type de valeur de données est Booléen. (FORMS-10713)
+* Lorsqu’un utilisateur ajoute des éléments dans un formulaire adaptatif, celui-ci est ajouté dans l’ordre inverse à une liste déroulante. (FORMS-10456)
+* Lorsqu’une liste déroulante est effacée à l’aide de l’éditeur de règles, la première valeur fournie s’affiche toujours, même si la valeur a été effacée. (FORMS-9963) 
+* Les utilisateurs ne peuvent pas accéder au titre du formulaire à l’aide de lecteurs d’écran tels que NVDA. (FORMS-8815) 
+* Les utilisateurs ne peuvent pas accéder au sous-titre d’un formulaire à l’aide de lecteurs d’écran tels que NVDA. (FORMS-8814) 
+* Dans la source de page du formulaire HTML, l’attribut de clé d’accès est vide et ne fonctionne pas. (FORMS-5753) 
+* Dans la boîte de dialogue À propos de Workspace, le texte &quot;Adobe Experience Manager - Forms&quot; est présenté sous forme de texte. (FORMS-5748)
+
+#### [!DNL Forms Designer]{#forms-designer-6519}
+
+* Lorsqu’un utilisateur tente de lire des PDF forms non interactifs par le biais de lecteurs d’écran, certains éléments de liste ne sont pas lus ou ignorés. (LC-3921645) 
+* Lorsqu’un utilisateur parcourt les champs modifiables à l’aide de tabulations, il n’effectue pas le suivi régulier de tous les champs de formulaire du PDF. (LC-3921631) 
+* L’ordre des balises est modifié de manière aléatoire dans PDF, même si le balisage dans Forms Designer est correct. (LC-3921313) 
+* Une liste ne s’affiche pas correctement dans les balises de Adobe Acrobat Reader ou Adobe Acrobat DC. (LC-3921306)
+* Les niveaux d’en-tête correctement attribués dans Forms Designer sont changés aléatoirement en `<P>` dans Adobe Acrobat. (LC-3921305) 
+* Dans un tableau, l’identifiant d’un objet ne peut pas être modifié une fois qu’il a été attribué. (LC-3921134) 
+* Si des cellules fusionnées se trouvent dans le tableau, aucune interface utilisateur graphique n’est disponible pour définir la plage (ligne et colonne) et la portée dans un tableau complexe dans AEM Forms Designer. (LC-3919532) 
 
 ### Foundation{#foundation-6519}
 
@@ -418,8 +464,6 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 
 #### Plateformes prises en charge
 
-* Les versions de JDK supérieures à 1.8.0_281 ne sont pas prises en charge pour le serveur WebLogic JEE. (FORMS-8498, CQDOC-20383)
-* [!DNL Microsoft® Windows Server 2019] ne prend pas en charge [!DNL MySQL 5.7] et [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] ne prend donc pas en charge les installations clé en main pour [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
 * JDK 11.0.20 n’est pas pris en charge pour installer le programme d’installation AEM Forms on JEE. Seules la version JDK 11.0.19 ou les versions antérieures sont prises en charge pour installer le programme d’installation AEM Forms on JEE. (FORMS-10659)
 
 #### Installation
@@ -467,16 +511,10 @@ Pour résoudre le problème, recherchez le fichier `<AEM_Forms_Installation_dir>
 
 * Lorsqu’un formulaire adaptatif est publié, toutes ses dépendances, y compris les stratégies, sont republiées, même si aucune modification ne leur a été apportée. (FORMS-10454)
 * Lorsqu’un utilisateur ou une utilisatrice choisit de configurer un champ pour la première fois dans un formulaire adaptatif, l’option permettant d’enregistrer une configuration ne s’affiche pas dans l’explorateur de propriétés. Sélectionner un autre champ du formulaire adaptatif à configurer dans le même éditeur pour résoudre le problème.
-* Lorsqu’une URL de redirection est définie dans le conteneur de guide d’un formulaire adaptatif, la signature en ligne cesse de fonctionner. (FORMS-10493)
-Pour résoudre le problème, téléchargez et installez le [correctif pour la version 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
-* La publication de tous les modèles de document d’enregistrement (DoR) échoue. Seuls les modèles de document d’enregistrement basés sur des paramètres régionaux anglais et les modèles de document d’enregistrement basés sur Forms associés sont publiés. (FORMS-10535)
-Pour résoudre le problème, téléchargez et installez le [correctif pour la version 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+* Lorsque les utilisateurs exécutent l’action d’envoi, l’envoi échoue avec une erreur :
+  ` javax.servlet.ServletException: java.lang.NoSuchMethodError`
+Pour résoudre le problème, [recompilez les scripts Sling tels que JSP, Java et Sightly.](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
 
-
-#### Communications interactives
-
-* Après la mise à niveau vers AEM Pack de services 18, il n’est pas possible d’ouvrir la communication interactive avec des images intégrées volumineuses en mode d’édition. (FORMS-10578)
-Pour résoudre le problème, installez le [correctif pour la version 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
 ## Bundles OSGi et packages de contenu inclus{#osgi-bundles-and-content-packages-included}
 

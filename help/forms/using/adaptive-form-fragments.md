@@ -6,10 +6,10 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
-source-git-commit: ab40115c373cc06a7600494288b2670deb914e1a
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '2291'
-ht-degree: 47%
+source-wordcount: '2359'
+ht-degree: 45%
 
 ---
 
@@ -164,6 +164,10 @@ Vous pouvez créer des fragments de formulaire adaptatif imbriqués, ce qui sign
 ### Modification des fragments {#change-fragments}
 
 Vous pouvez remplacer ou modifier un fragment de formulaire adaptatif par un autre fragment à l’aide du **Sélection de la ressource Fragment** dans la boîte de dialogue Modifier le composant pour un panneau de fragment de formulaire adaptatif.
+
+### Générer un document d’enregistrement pour le fragment de formulaire adaptatif {#generate-DOR-for-fragments}
+
+Le document d’enregistrement (DOR) vous permet de conserver les informations de vos formulaires au format d’impression ou de document. Par conséquent, il vous permet de suivre les informations relatives à vos clients à tout moment ultérieurement et vous pouvez également utiliser le document d’enregistrement pour archiver les formulaires et le contenu ensemble au format PDF. [Découvrez comment générer un document d’enregistrement pour les fragments de formulaire adaptatif](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
 ### Utilisation d’un fragment de formulaire plusieurs fois dans un formulaire adaptatif {#using-form-fragment-mutiple-times-in-af}
 

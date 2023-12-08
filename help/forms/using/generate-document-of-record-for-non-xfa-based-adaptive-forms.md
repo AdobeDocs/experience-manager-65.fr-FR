@@ -7,14 +7,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '3533'
-ht-degree: 68%
+source-wordcount: '3583'
+ht-degree: 66%
 
 ---
 
-# Générer un document d’enregistrement pour les formulaires adaptatifs{#generate-document-of-record-for-adaptive-forms}
+# Générer un document d’enregistrement pour les formulaires adaptatifs ou les fragments de formulaire adaptatif {#generate-document-of-record-for-adaptive-forms}
 
 <span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/using/create-an-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
 
@@ -28,7 +28,7 @@ ht-degree: 68%
 
 Après l’envoi d’un formulaire, vos clients veulent généralement conserver un enregistrement, sous forme imprimée ou de document, des informations qu’ils ont intégrées au formulaire pour s’y reporter ultérieurement. On parle ici de document d’enregistrement.
 
-Cet article explique comment générer un document d’enregistrement pour les formulaires adaptatifs.
+Cet article explique comment générer un document d’enregistrement pour le Forms adaptatif ou le fragment de formulaire adaptatif.
 
 >[!NOTE]
 >
@@ -66,6 +66,8 @@ Voici les avantages apportés par un document d’enregistrement automatiquement
 Pour générer un document d’enregistrement pour les formulaires adaptatifs, il vous faut les éléments suivants :
 
 **Formulaire adaptatif** : un formulaire adaptatif pour lequel vous souhaitez générer un document d’enregistrement.
+
+**Fragment de formulaire adaptatif** Fragment de formulaire adaptatif pour lequel vous souhaitez générer un document d’enregistrement.
 
 **Modèle de base (recommandé)** : modèle XFA (fichier XDP) créé dans AEM Designer. Le modèle de base est utilisé pour spécifier les informations en termes de style et d’identité graphique pour le modèle de document d’enregistrement.
 
@@ -271,7 +273,7 @@ Vous pouvez également sélectionner un modèle de formulaire lorsque vous crée
    >
    >Sous l’onglet Modèle de formulaire, veillez à sélectionner **Schéma** ou **Aucun** dans la liste déroulante **Choisir parmi**. **[!UICONTROL Les documents d’enregistrement ne sont pas pris en charge dans le cadre de formulaires basés sur XFA ou de formulaires adaptatifs auxquels un modèle de formulaire est appliqué.]**
 
-1. Dans la section Configuration du modèle de document d’enregistrement de l’onglet Modèle de formulaire, sélectionnez l’une des options suivantes :
+1. Dans la section Configuration du modèle de document d’enregistrement de l’onglet Modèle de formulaire, sélectionnez l’une des options suivantes :
 
    **Aucun** : utilisez cette option si vous ne souhaitez pas configurer de document d’enregistrement pour le formulaire.
 
@@ -394,6 +396,10 @@ Les paramètres du document d’enregistrement d’un composant sont disponibles
    * **[!UICONTROL Débordement]** > **[!UICONTROL Aller à la zone de contenu]** > Nom de la zone de contenu : commence à remplir la zone de contenu indiquée.
    * **[!UICONTROL Débordement]** > **[!UICONTROL Aller à la page]** > Nom de la page : commence à remplir la page indiquée.
 
+  >[!NOTE]
+  >
+  > La propriété Pagination n’est pas disponible pour les fragments de formulaire adaptatif.
+
 Pour plus d’informations sur la manière d’appliquer des sauts de page et d’appliquer plusieurs gabarits de page dans un document d’enregistrement, voir [Appliquer un saut de page dans un document d’enregistrement](#apply-page-breaks-in-dor) et [Appliquer plusieurs gabarits de page à un document d’enregistrement](#apply-multiple-master-pages-dor).
 
 **Paramètres des niveaux de formulaires**
@@ -436,6 +442,9 @@ AEM Forms applique le deuxième gabarit de page au panneau et à tous les pannea
 1. Sélectionner ![Enregistrer](/help/forms/using/assets/save_icon.png) pour enregistrer les propriétés.
 AEM Forms applique le troisième gabarit de page au panneau et à tous les panneaux suivants du formulaire adaptatif.
 
+>[!NOTE]
+>
+> Vous ne pouvez pas appliquer plusieurs gabarits à un document d’enregistrement pour un fragment de formulaire adaptatif.
 
 ## Considérations essentielles lors de l’utilisation de documents d’enregistrement {#key-considerations-when-working-with-document-of-record}
 
