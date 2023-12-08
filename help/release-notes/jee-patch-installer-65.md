@@ -6,7 +6,7 @@ exl-id: 6b17472b-9226-4319-b305-4dba862d21af
 source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
 source-wordcount: '528'
-ht-degree: 88%
+ht-degree: 93%
 
 ---
 
@@ -32,7 +32,7 @@ Le programme d’installation du correctif JEE AEM 6.5 Forms comprend tous les 
 1. Dans le répertoire, dont le nom dépend du système d’exploitation que vous utilisez :
 
    * **Windows**
-Accédez au répertoire approprié sur le support d’installation ou dans le dossier de votre disque dur dans lequel vous avez copié le programme d’installation, puis double-cliquez sur le fichier aemforms65_cfp_install.exe .
+Accédez au répertoire approprié sur le support ou dossier d’installation de votre disque dur dans lequel le programme d’installation a été copié, puis double-cliquez sur le fichier aemforms65_cfp_install.exe.
 
       * (Windows 32 bits) `Windows\Disk1\InstData\VM`
       * (Windows 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
