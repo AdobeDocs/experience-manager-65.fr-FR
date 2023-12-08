@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 docset: aem65
 exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '890'
 ht-degree: 100%
 
