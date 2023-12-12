@@ -6,9 +6,9 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 302a76fb9470e2ef177f60aea10312d6091becb9
+source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
 workflow-type: tm+mt
-source-wordcount: '2584'
+source-wordcount: '2581'
 ht-degree: 73%
 
 ---
@@ -203,7 +203,7 @@ Pour connecter AEM Forms à votre liste Microsoft® SharePoint, procédez comme 
 
 Vous pouvez utiliser la configuration Liste SharePoint créée dans un formulaire adaptatif pour enregistrer des données ou générer un document d’enregistrement dans une liste SharePoint. Effectuez les étapes suivantes pour utiliser une configuration de stockage Liste SharePoint dans un formulaire adaptatif comme suit :
 
-1. [Création d’un modèle de données de formulaire à l’aide de la configuration de liste SharePoint Microsoft®](/help/forms/using/create-form-data-model.md)
+1. [Création d’un modèle de données de formulaire à l’aide de Microsoft](/help/forms/using/create-form-data-model.md)
 1. [Configuration du modèle de données de formulaire pour récupérer et envoyer des données](/help/forms/using/work-with-form-data-model.md#configure-services)
 1. [Création d’un formulaire adaptatif](/help/forms/using/create-adaptive-form.md).
 1. [Configuration de l’action Envoyer à l’aide d’un modèle de données de formulaire](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)

@@ -1,64 +1,69 @@
 ---
-title: Résumé des nouvelles fonctionnalités | AEM 6.5 Forms
-description: Fonctionnalités et améliorations les plus récentes d’AEM forms et documents, la solution de gestion de l’expérience numérique la plus avancée du monde.
+title: Résumé des nouvelles fonctionnalités | AEM 6.5 Forms
+description: Dernières fonctionnalités et améliorations apportées aux formulaires et documents AEM, la solution de gestion de l’expérience numérique la plus avancée au monde.
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 4%
+source-wordcount: '637'
+ht-degree: 85%
 
 ---
 
-# Résumé des nouvelles fonctionnalités | AEM 6.5 Forms{#new-features-summary-aem-forms}
+# Résumé des nouvelles fonctionnalités | AEM 6.5 Forms{#new-features-summary-aem-forms}
 
-| Produit | Adobe Experience Manager 6.5 |
+| Produit | Adobe Experience Manager 6.5 |
 | -------- | ---------------------------- |
 | Version | 6.5.19.0 |
 | Type | Mise à jour du pack de services |
-| Date | samedi 8 décembre 2023 |
+| Date | Vendredi 8 décembre 2023 |
 
-## Éléments inclus dans Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0)
+## Éléments inclus dans Adobe Experience Manager 6.5 Forms Pack de services 19 (6.5.19.0)
 
-Experience Manager 6.5.19.0 comprend de nouvelles fonctionnalités, des améliorations importantes demandées par les clients, des correctifs de bogues, ainsi que des améliorations de performances, de stabilité et de sécurité, publiées depuis la version initiale de 6.5 en avril 2019. [Installer ce Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=fr) sur Experience Manager 6.5.
+Experience Manager 6.5.19.0 comprend de nouvelles fonctionnalités, des améliorations importantes demandées par les clientes et les clients, des correctifs de bugs ainsi que des améliorations en termes de performances, de stabilité et de sécurité, publiés depuis la version initiale 6.5 d’avril 2019. [Installez ce Pack de services](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=fr) sur Experience Manager 6.5.
 
 ### Nouvelles fonctionnalités
 
-#### Nouveaux composants principaux de formulaires adaptatifs
+#### Nouveaux composants principaux des formulaires adaptatifs
 
-Des onglets verticaux, des termes et conditions et une case à cocher sont ajoutés afin d’améliorer l’évolutivité des formulaires.
+Des onglets verticaux, des conditions générales et une case à cocher sont ajoutés afin d’améliorer l’évolutivité des formulaires.
 
-* **[Composant de case à cocher](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: Forms adaptatif basé sur les composants principaux peut désormais inclure un composant de case à cocher. Il permet aux utilisateurs de faire des choix binaires, en sélectionnant ou en désélectionnant une option particulière. Il s’affiche généralement sous la forme d’une petite case sur laquelle vous pouvez cliquer ou appuyer pour basculer entre deux états : cochée et décochée. La case à cocher est un élément de formulaire courant utilisé pour présenter un choix oui/non ou vrai/faux.
+* **[Composant Case à cocher](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html?lang=fr)** : les formulaires adaptatifs basés sur les composants principaux peuvent désormais inclure un composant de case à cocher. Il permet aux utilisateurs et utilisatrices de faire des choix binaires, en sélectionnant ou en désélectionnant une option particulière. Il s’affiche généralement sous la forme d’une petite case sur laquelle vous pouvez cliquer ou appuyer pour basculer entre deux états : cochée et décochée. La case à cocher est un élément de formulaire courant, utilisé pour présenter un choix oui/non ou vrai/faux.
 
-* **[Composant Termes et conditions](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: Forms adaptatif basé sur les composants principaux peut désormais inclure un composant Conditions générales. Il permet aux auteurs de formulaires d’introduire une section spécifique dans le formulaire, dans laquelle les utilisateurs reçoivent les conditions ou les accords juridiques associés à l’utilisation d’un service, d’un produit ou d’une plateforme. Ce composant est conçu pour informer les utilisateurs des règles, des réglementations et des obligations auxquelles ils acceptent d’envoyer le formulaire.
+* **[Composant Conditions générales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=fr)** : les formulaires adaptatifs basés sur les composants principaux peuvent désormais inclure un composant Conditions générales. Il permet aux personnes créant les formulaires d’introduire une section spécifique dans le formulaire, dans laquelle les utilisateurs et utilisatrices peuvent consulter les conditions générales ou les accords juridiques associés à l’utilisation d’un service, d’un produit ou d’une plateforme. Ce composant est conçu pour informer les utilisateurs et utilisatrices des règles, des réglementations et des obligations qu’ils acceptent en envoyant le formulaire.
 
-  ![Composants Onglets verticaux, Termes et conditions et Case à cocher](/help/forms/using/assets/forms-components.png)
+  ![Composants Onglets verticaux, Conditions générales et Case à cocher.](/help/forms/using/assets/forms-components.png)
 
-* **[Composant Onglets verticaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: Forms adaptatif basé sur les composants principaux peut désormais organiser le contenu du formulaire dans une liste verticale d’onglets, fournissant ainsi une disposition structurée et navigable. L’utilisation d’onglets verticaux dans un formulaire peut améliorer l’expérience globale de l’utilisateur en simplifiant la navigation et en améliorant l’organisation du contenu du formulaire, en particulier lorsqu’un formulaire contient plusieurs sections ou des informations complexes.
+* **[Composant Onglets verticaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html?lang=fr)** : les formulaires adaptatifs basés sur les composants principaux peuvent désormais organiser le contenu des formulaires en une liste verticale d’onglets, ce qui assure une disposition structurée et navigable. L’utilisation d’onglets verticaux dans un formulaire peut améliorer l’expérience globale de l’utilisateur ou de l’utilisatrice en simplifiant la navigation et en améliorant l’organisation du contenu du formulaire, en particulier lorsqu’un formulaire contient plusieurs sections ou des informations complexes.
 
-#### Version 64 bits d’AEM Forms Designer
+#### Version 64 bits d’AEM Forms Designer
 
-La variable [Version 64 bits d’AEM Forms Designer](/help/forms/using/installing-configuring-designer.md) offre une gestion améliorée des performances, de l’évolutivité et de la mémoire pour améliorer votre expérience de création de formulaire. Grâce à l’architecture 64 bits, vous pouvez réaliser facilement des projets plus volumineux et plus complexes, assurant ainsi des workflows de conception transparents et une efficacité optimisée. Tirez parti de vos capacités de conception de formulaire et embrassez l’avenir d’AEM Forms Designer avec cette version de pointe.
+La [version 64 bits d’AEM Forms Designer](/help/forms/using/installing-configuring-designer.md) offre des performances, une évolutivité et une gestion de la mémoire améliorées pour optimiser votre expérience de création de formulaires. Grâce à l’architecture 64 bits, vous pouvez aborder facilement des projets plus volumineux et plus complexes, assurant ainsi des workflows de conception transparents et une efficacité optimisée. Améliorez encore vos capacités de conception de formulaire et accueillez l’avenir d’AEM Forms Designer avec cette version de pointe.
 
-#### Connexion d’une Forms adaptative à une liste Microsoft® SharePoint
+#### Connexion de formulaires adaptatifs à une liste Microsoft® SharePoint
 
-AEM Forms fournit une intégration prête à l’emploi à [envoyer des données de formulaire directement à la liste SharePoint](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)), vous permettant d’utiliser les fonctionnalités Listes de SharePoint de . Vous pouvez configurer Microsoft® SharePoint List comme source de données pour un modèle de données de formulaire et utiliser l’action d’envoi Envoyer à l’aide du modèle de données de formulaire pour connecter un formulaire adaptatif à la liste SharePoint.
+AEM Forms fournit une intégration prête à l’emploi pour [envoyer des données de formulaire directement à la liste SharePoint](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list), ce qui vous permet d’utiliser les fonctionnalités des listes SharePoint. Vous pouvez configurer une liste Microsoft® SharePoint comme source de données pour un modèle de données de formulaire et utiliser l’action Envoyer à l’aide du modèle de données de formulaire pour connecter un formulaire adaptatif à la liste SharePoint.
 
 #### Prise en charge de la configuration des propriétés de document d’enregistrement pour les fragments de formulaire adaptatif
 
-Vous pouvez désormais facilement [personnalisation des fragments de formulaire adaptatif et de ses champs dans l’éditeur de formulaire adaptatif](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+Vous pouvez maintenant facilement [personnaliser vos fragments de formulaire adaptatif et ses champs dans l’éditeur de formulaires adaptatifs](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+
+#### Inclut la version 64 bits de XMLFM
+
+L’itération 64 bits de XMLFM offre des performances accrues, une évolutivité et une gestion de la mémoire améliorée. Il s’agit du premier service natif 64 bits déployé côté serveur. En exploitant sa capacité inhérente à accéder à des ressources de mémoire considérablement plus importantes par rapport à son équivalent 32 bits, XMLFM 64 bits permet une gestion transparente des charges de travail de rendu plus importantes. Ce jalon représente non seulement un bond en avant en termes de performances, mais il introduit également des améliorations clés de la structure de service native dans le serveur AEM Forms. Cette mise à jour permet au serveur AEM Forms de prendre en charge en toute transparence tout service natif 64 bits.
+
 
 
 ## Correctifs
 
-Cette version comprend également des correctifs pour les problèmes signalés par plus de 20 clients. Pour obtenir la liste détaillée des correctifs inclus dans le Service Pack, voir [notes de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=en#forms-6519)
+Cette version comprend également des correctifs pour plus de 20 problèmes signalés par des clientes et clients. Pour obtenir la liste détaillée des correctifs inclus dans le Pack de services, voir les [notes de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=en#forms-6519?lang=fr).
 
 
-## Installation du Service Pack
+## Installer le Pack de services
 
-Le Service Pack apporte de nouvelles fonctionnalités et des correctifs pour AEM Forms on JEE et AEM Forms on OSGi. Les instructions d’installation présentent des modifications par rapport aux Service Packs précédents. Pour obtenir des instructions d’installation, voir [Instructions d’installation du Service Pack AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en).
+Le Pack de services apporte de nouvelles fonctionnalités et des correctifs de bugs pour AEM Forms on JEE et AEM Forms on OSGi. Les instructions d’installation présentent des modifications par rapport aux Packs de service précédents. Pour obtenir des instructions d’installation, voir les [instructions d’installation du Pack de services AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=fr).
 
 
 
