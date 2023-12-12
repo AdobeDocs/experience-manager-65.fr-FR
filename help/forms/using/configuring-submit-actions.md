@@ -6,10 +6,10 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: ab40115c373cc06a7600494288b2670deb914e1a
+source-git-commit: 302a76fb9470e2ef177f60aea10312d6091becb9
 workflow-type: tm+mt
-source-wordcount: '2595'
-ht-degree: 72%
+source-wordcount: '2584'
+ht-degree: 73%
 
 ---
 
@@ -168,8 +168,6 @@ L’éditeur de Forms adaptatif fournit la variable **Appeler un flux Microsoft�
 Après une configuration réussie, utilisez la méthode [Appeler un flux Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) Action d’envoi pour envoyer des données à un flux d’automatisation Power.
 
 ## Envoyer à la liste SharePoint Microsoft®{#submit-to-sharedrive}
-
-<span class="preview"> Il s’agit d’une fonctionnalité de préversion accessible via notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 L’action d’envoi **[!UICONTROL Soumettre à SharePoint]** connecte un formulaire adaptatif à un stockage Microsoft® SharePoint. Vous pouvez envoyer le fichier de données de formulaire, les pièces jointes ou le document d’enregistrement au stockage Microsoft® SharePoint connecté.
 

@@ -1,9 +1,10 @@
 ---
 title: L’exécution de plusieurs services malgré AEM Forms n’a pas commencé.
 description: Même si AEM Forms n’a pas entièrement démarré, il traite plusieurs services.
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+exl-id: 4ec40412-15b1-434b-a919-2cf23f48077c
+source-git-commit: faa628ac4a4631564141f68f3efc9d69a67e5c40
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '96'
 ht-degree: 4%
 
 ---
@@ -21,9 +22,4 @@ La solution s’applique au serveur AEM Forms on JEE et à AEM Forms on OSGi Ser
 
 ## Solution {#solution}
 
-Pour résoudre le problème, les utilisateurs ajoutent un argument . `Dcom.adobe.livecycle.dsc.deferServiceStart=true` to [fichier batch](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/command-line-start-and-stop.html#windows-platform-start-bat-script-example) au démarrage du serveur.
-
-
-
-
-
+Pour résoudre le problème, ajoutez un argument . `Dcom.adobe.livecycle.dsc.deferServiceStart=true` to [fichier batch](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/command-line-start-and-stop.html#windows-platform-start-bat-script-example) au démarrage du serveur.
