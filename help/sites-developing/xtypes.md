@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 exl-id: 06ca4e6d-9ab7-4c5b-905c-07c448632f2b
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 25c444e2093d118259925034e0d630ab0effc473
 workflow-type: tm+mt
-source-wordcount: '6381'
-ht-degree: 88%
+source-wordcount: '3865'
+ht-degree: 78%
 
 ---
 
@@ -79,7 +79,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-desso
 
   Classe de base pour n’importe quel [composant](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Component) qui doit être dimensionné comme une boîte, en utilisant la largeur et la hauteur.
 
-  BoxComponent fournit des réglages de modèle de boîte automatiques pour le dimensionnement et le positionnement et fonctionne correctement dans le modèle de rendu des composants.
+  BoxComponent fournit des réglages de modèle de boîte automatique pour le dimensionnement et le positionnement et fonctionne correctement dans le modèle de rendu des composants.
 
 * browsedialog
 
@@ -123,7 +123,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-desso
 
   [CQ.Ext.chart.Chart](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart)
 
-  Le package CQ.Ext.chart fournit la fonctionnalité de visualisation des données avec une représentation graphique basée sur Flash. Chaque graphique est directement lié à un CQ.Ext.data.Store, ce qui permet la mise à jour automatique du graphique. Pour modifier l’aspect d’un graphique, reportez-vous aux options de configuration [chartStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) et [extraStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart).
+  Le package CQ.Ext.chart permet de visualiser des données avec un graphique Flash. Chaque graphique est directement lié à un CQ.Ext.data.Store, ce qui permet la mise à jour automatique du graphique. Pour modifier l’aspect d’un graphique, reportez-vous aux options de configuration [chartStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) et [extraStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart).
 
 * checkbox
 
@@ -251,7 +251,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-desso
 
   [CQ.CustomContentPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.CustomContentPanel)
 
-  CustomContentPanel est un type spécial de panneau à utiliser dans [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog) : son contenu est récupéré depuis et vers une URL différente des autres champs de la boîte de dialogue.
+  CustomContentPanel est un panneau spécial à utiliser dans [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog): son contenu est récupéré à partir d’ et envoyé vers une URL différente des autres champs de la boîte de dialogue.
 
 * cycle
 
@@ -293,7 +293,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-desso
 
   [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)
 
-  La boîte de dialogue est un type spécial de fenêtre avec un formulaire dans le corps et un groupe de boutons dans le pied de page. Il est généralement utilisé pour modifier du contenu, mais peut également afficher des informations uniquement.
+  La boîte de dialogue est une fenêtre spéciale avec un formulaire dans le corps et un groupe de boutons dans le pied de page. Il est généralement utilisé pour modifier du contenu, mais peut également afficher des informations uniquement.
 
 * dialogfieldset
 
@@ -413,7 +413,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-desso
 
   [CQ.Ext.form.HtmlEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor)
 
-  Fournit un composant d’éditeur HTML léger. Certaines fonctionnalités de la barre d’outils ne sont pas prises en charge par Safari et seront automatiquement masquées si nécessaire. Elles sont indiquées dans les options de configuration le cas échéant.
+  Fournit un composant d’éditeur HTML léger. Certaines fonctionnalités de la barre d’outils ne sont pas prises en charge par Safari et sont automatiquement masquées si nécessaire. Elles sont indiquées dans les options de configuration le cas échéant.
 
   Les boutons de la barre d’outils de l’éditeur ont des infos-bulle définies dans la propriété [buttonTips](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor).
 
@@ -463,7 +463,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-desso
 
   [CQ.Ext.list.ListView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.ListView)
 
-  CQ.Ext.list.ListView est une implémentation rapide et légère d’une [grille](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) comme une vue.
+  CQ.Ext.list.ListView est une implémentation rapide et légère d’une [En forme de grille](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) vue.
 
 * livecopyproperties
 
@@ -793,7 +793,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-desso
 
   [CQ.wcm.Statistics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Statistics)
 
-  Statistics affiche les impressions de pages sous forme graphique. Le widget permet de sélectionner une période. Les statistiques doivent être affichées pour cette période.
+  Statistics affiche les impressions de pages sous forme graphique. Le widget permet de sélectionner la période pour laquelle les statistiques doivent être affichées.
 
 * store
 
