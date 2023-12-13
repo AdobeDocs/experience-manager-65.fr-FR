@@ -4,9 +4,9 @@ description: Découvrez comment utiliser le programme d’installation du correc
 content-type: reference
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
 source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '528'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Accédez au répertoire approprié puis, dans l’invite de commande, saisissez 
 1. **[Pour Windows uniquement] :** procédez comme suit :
    * Désélectionnez l’option **Démarrer le Configuration Manager** avant de cliquer sur **[!UICONTROL Terminé]**. Exécutez **Configuration Manager** en utilisant le fichier **ConfigurationManager.bat** situé dans `[aem-forms root]\configurationManager\bin`.
 
-   * Vous pouvez aussi désélectionner l’option **Démarrer Configuration Manager** avant de cliquer sur **[!UICONTROL Terminé]**. Avant exécution **Configuration Manager** using **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, accédez à *`<AEMForms_Install_Dir>\configurationManager\bin`* et remplacez le répertoire **ConfigurationManager.lax** et **ConfigurationManager_IPV6.lax** avec la dernière version [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) et [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) Fichiers, recherche et remplacement **axis-1.4.1.1.jar** avec **axis-1.4.1.2.jar** dans ces deux fichiers.
+   * Vous pouvez aussi désélectionner l’option **Démarrer Configuration Manager** avant de cliquer sur **[!UICONTROL Terminé]**. Avant d’exécuter **Configuration Manager** à l’aide de **ConfigurationManager.exe** ou de **ConfigurationManager_IPv6.exe**, accédez au répertoire *`<AEMForms_Install_Dir>\configurationManager\bin`* et remplacez **ConfigurationManager.lax** et **ConfigurationManager_IPV6.lax** par la dernière version des fichiers [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) et [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax), recherchez et remplacez **axis-1.4.1.1.jar** par **axis-1.4.1.2.jar** dans ces deux fichiers.
 
    >[!NOTE]
    >
