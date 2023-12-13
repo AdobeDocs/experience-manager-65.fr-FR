@@ -3,9 +3,9 @@ title: Exigences techniques
 description: Liste des plateformes clientes et serveur prises en charge pour Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
 workflow-type: tm+mt
-source-wordcount: '3625'
+source-wordcount: '3624'
 ht-degree: 86%
 
 ---
@@ -203,8 +203,9 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 1. AEM Forms est pris en charge sur Ubuntu 20.04 LTS.
 1. Distribution Linux® prise en charge par Adobe Managed Services.
 
-   >[REMARQUE !]
-Pour les serveurs basés sur Linux (pile OSGI et JEE), le module complémentaire AEM Forms nécessite des dépendances d’exécution telles que :
+   >[!NOTE]
+   >
+   Pour les serveurs basés sur Linux (pile OSGI et JEE), le module complémentaire AEM Forms nécessite des dépendances d’exécution telles que :
    * glibc.x86_64 (2.17-196)
    * libX11.x86_64 (1.6.7-4)
    * zlib.x86-64 (1.2.7-17)
