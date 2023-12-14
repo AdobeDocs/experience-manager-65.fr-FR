@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: d3f18320ca8a9a100e1aa6344a1c9424d0ff03ca
+source-git-commit: 2118cecd8e66e41a1ce1c859cf62b1f18f7cb891
 workflow-type: tm+mt
-source-wordcount: '4225'
+source-wordcount: '4270'
 ht-degree: 94%
 
 ---
@@ -211,8 +211,9 @@ vers
 * L’ordre des balises est modifié de manière aléatoire dans le PDF, même si le balisage dans le concepteur de formulaires est correct. (LC-3921313) 
 * Une liste ne s’affiche pas correctement dans les balises d’Adobe Acrobat Reader ou Adobe Acrobat DC. (LC-3921306)
 * Les niveaux d’en-tête correctement attribués dans le concepteur de formulaires sont changés aléatoirement en balise `<P>` dans Adobe Acrobat. (LC-3921305) 
-* Dans un tableau, l’identifiant d’un objet ne peut pas être modifié une fois qu’il a été attribué. (LC-3921134) 
-* Si des cellules fusionnées se trouvent dans le tableau, aucune interface utilisateur graphique n’est disponible pour définir la plage (ligne et colonne) et la portée dans un tableau complexe du concepteur de formulaires AEM. (LC-3919532) 
+* Dans un tableau, l’identifiant d’un objet quelconque ne peut pas être modifié une fois qu’il a été attribué. (LC-3921134) 
+* Si des cellules fusionnées se trouvent dans le tableau, aucune interface utilisateur graphique n’est disponible pour définir la plage (ligne et colonne) et la portée dans un tableau complexe du concepteur de formulaires AEM. (LC-3919532)
+  <!--* After applying AEM Service Pack 6.5.15.0 patch installer, notice generation fails intermittently  . (LC-3921530)-->
 
 ### Foundation{#foundation-6519}
 
@@ -517,8 +518,9 @@ Pour résoudre le problème, recherchez le fichier `<AEM_Forms_Installation_dir>
 * Lorsqu’un formulaire adaptatif est publié, toutes ses dépendances, y compris les stratégies, sont republiées, même si aucune modification ne leur a été apportée. (FORMS-10454)
 * Lorsqu’un utilisateur ou une utilisatrice choisit de configurer un champ pour la première fois dans un formulaire adaptatif, l’option permettant d’enregistrer une configuration ne s’affiche pas dans l’explorateur de propriétés. Sélectionner un autre champ du formulaire adaptatif à configurer dans le même éditeur pour résoudre le problème.
 * Lorsque des utilisateurs ou des utilisatrices exécutent l’action d’envoi, l’envoi échoue avec une erreur :
-  ` javax.servlet.ServletException: java.lang.NoSuchMethodError`
-Pour résoudre le problème, [recompilez les scripts Sling tels que JSP, Java™ et Sightly.](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution?lang=fr). (FORMS-8542)
+  `javax.servlet.ServletException: java.lang.NoSuchMethodError`
+Pour résoudre le problème, [recompilez les scripts Sling tels que JSP, Java et Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution?lang=fr). (FORMS-8542)
+* Lorsqu’un utilisateur tente de sélectionner une police pour ses documents de PDF dans Adminui sous le chemin d’accès Accueil > Services > PDF Generator > Paramètres Adobe PDF, la liste des polices s’affiche vide. L’utilisateur ne peut pas ajouter de polices aux listes &quot;Toujours incorporer&quot; et &quot;Ne jamais incorporer&quot;. (FORMS-12095)
 
 
 ## Bundles OSGi et packages de contenu inclus{#osgi-bundles-and-content-packages-included}
