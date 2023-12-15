@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 287717e39ff58396de6d63a89e2b3d8fef4e6888
+source-git-commit: 8fc35ac465240cafdce5346f2f7e9ba15c8d1fef
 workflow-type: tm+mt
-source-wordcount: '4288'
-ht-degree: 93%
+source-wordcount: '4333'
+ht-degree: 92%
 
 ---
 
@@ -522,7 +522,13 @@ Pour résoudre le problème, recherchez le fichier `<AEM_Forms_Installation_dir>
   `javax.servlet.ServletException: java.lang.NoSuchMethodError`
 Pour résoudre le problème, [recompilez les scripts Sling tels que JSP, Java™ et Sightly.](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution?lang=fr). (FORMS-8542)
 * Après avoir installé AEM Service Pack 6.5.14.0 et versions ultérieures, les utilisateurs ne peuvent pas sélectionner de police dans l’interface utilisateur d’administration de JEE pour les documents du PDF lorsqu’ils accèdent à `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, car la liste des polices apparaît vide. (FORMS-12095)
-  <!--The font enumeration fails due to the missing Ps2Pdf service file.-->
+
+####  d’AEM Forms sur JEE
+
+* Des vulnérabilités de sécurité critiques ont été signalées pour Struts 2 RCE, un framework d’applications web populaire et open source pour le développement d’applications web Java EE. Adobe a été publié [AEM 6.5 Service Pack 19.1 (6.5.19.1)](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md) pour résoudre la vulnérabilité dans AEM Forms on JEE.
+
+
+<!--The font enumeration fails due to the missing Ps2Pdf service file.-->
 
 ## Bundles OSGi et packages de contenu inclus{#osgi-bundles-and-content-packages-included}
 
