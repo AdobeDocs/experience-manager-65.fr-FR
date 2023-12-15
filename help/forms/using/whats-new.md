@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
 source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '637'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -50,9 +50,9 @@ AEM Forms fournit une intégration prête à l’emploi pour [envoyer des donn�
 
 Vous pouvez maintenant facilement [personnaliser vos fragments de formulaire adaptatif et ses champs dans l’éditeur de formulaires adaptatifs](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
-#### Inclut la version 64 bits de XMLFM
+#### Inclut la version 64 bits de XMLFM
 
-L’itération 64 bits de XMLFM offre des performances accrues, une évolutivité et une gestion de la mémoire améliorée. Il s’agit du premier service natif 64 bits déployé côté serveur. En exploitant sa capacité inhérente à accéder à des ressources de mémoire considérablement plus importantes par rapport à son équivalent 32 bits, XMLFM 64 bits permet une gestion transparente des charges de travail de rendu plus importantes. Ce jalon représente non seulement un bond en avant en termes de performances, mais il introduit également des améliorations clés de la structure de service native dans le serveur AEM Forms. Cette mise à jour permet au serveur AEM Forms de prendre en charge en toute transparence tout service natif 64 bits.
+L’itération 64 bits de XMLFM améliore les performances, l’évolutivité et la gestion de la mémoire. Il s’agit du premier service natif 64 bits déployé côté serveur. En exploitant sa capacité inhérente à accéder à des ressources de mémoire considérablement plus importantes par rapport à son équivalent 32 bits, XMLFM 64 bits permet une gestion transparente des charges de travail de rendu plus importantes. Ce jalon représente non seulement un bond en avant en termes de performances, mais il introduit également des améliorations clés de la structure de service native dans le serveur AEM Forms. Cette mise à jour permet au serveur AEM Forms de prendre en charge n’importe quel service natif 64 bits en toute transparence.
 
 
 
