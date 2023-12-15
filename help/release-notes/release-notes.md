@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: b5ecac71b07bfceb2708f20fe50965dec25e2194
+source-git-commit: e67d7aa9ab1dd00daad3518904bded258e31128c
 workflow-type: tm+mt
-source-wordcount: '4259'
-ht-degree: 94%
+source-wordcount: '4288'
+ht-degree: 93%
 
 ---
 
@@ -213,7 +213,8 @@ vers
 * Les niveaux d’en-tête correctement attribués dans le concepteur de formulaires sont changés aléatoirement en balise `<P>` dans Adobe Acrobat. (LC-3921305) 
 * Dans un tableau, l’identifiant d’un objet quelconque ne peut pas être modifié une fois qu’il a été attribué. (LC-3921134) 
 * Si des cellules fusionnées se trouvent dans le tableau, aucune interface utilisateur graphique n’est disponible pour définir la plage (ligne et colonne) et la portée dans un tableau complexe du concepteur de formulaires AEM. (LC-3919532)
-  <!--* After applying AEM Service Pack 6.5.15.0 patch installer, notice generation fails intermittently  . (LC-3921530)-->
+* Lorsqu’un utilisateur tente de générer des documents de PDF après l’installation du module complémentaire Forms sur AEM Forms Service Pack 6.5.15.0, il échoue par intermittence et affiche l’erreur :
+   * `OutputServiceException AEM_OUT_001_003:Unexpected Exception: 0 Out of Memory Caused by: org.omg.CORBA.COMM_FAILURE: null` (LC-3921530)
 
 ### Foundation{#foundation-6519}
 
