@@ -9,9 +9,9 @@ breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 role: User
 feature: Forms Service
-source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
+source-git-commit: 287717e39ff58396de6d63a89e2b3d8fef4e6888
 workflow-type: tm+mt
-source-wordcount: '3765'
+source-wordcount: '3774'
 ht-degree: 97%
 
 ---
@@ -701,6 +701,7 @@ ht-degree: 97%
    + [Problème d’installation du Service Pack d’AEM Forms JEE 6.5.15.0 dans l’environnement JBoss Linux](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
    + [Traitement des documents même si le serveur AEM Forms n’est pas entièrement opérationnel](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
    + [Impossible d’utiliser le service Output, Forms ou Document d’enregistrement (DoR)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
+     [Réduction des vulnérabilités de Struts 2 RCE pour Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
 + Documentation héritée {#legacy-documentation}
    + [Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML](developing/building-xml.md)
    + [Compresser et décompresser des fichiers à l’aide d’un DSC personnalisé AEM Forms sur JEE](developing/compressing-decompressing-custom-dsc.md)

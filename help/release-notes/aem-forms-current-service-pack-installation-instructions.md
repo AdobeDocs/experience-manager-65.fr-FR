@@ -2,10 +2,10 @@
 title: Instructions d’installation du correctif AEM Forms pour AEM Forms
 description: Instructions d’installation du Pack de services AEM Forms pour l’environnement OSGi et JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
-workflow-type: ht
-source-wordcount: '1711'
-ht-degree: 100%
+source-git-commit: 287717e39ff58396de6d63a89e2b3d8fef4e6888
+workflow-type: tm+mt
+source-wordcount: '1755'
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 | Produit | Version |
 |---|---|
-| d’Adobe Experience Manager Forms 6.5 | 6.5.19.0 |
+| d’Adobe Experience Manager Forms 6.5 | 6.5.19.0 (OSGi) 6.5.19.0 (JEE) |
 | Type | Mise à jour du pack de services |
 | Date | 8 décembre 2023 |
 | URL de téléchargement | [Dernières versions d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) |
@@ -65,6 +65,9 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 +++2. Téléchargez le logiciel requis.
 
 * [Service Pack AEM Forms on JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr)
+
+Des vulnérabilités de sécurité critiques ont été signalées pour Struts 2 RCE, un framework d’applications web populaire et open source pour le développement d’applications web Java EE. Adobe a publié AEM Service Pack 19.1 (6.5.19.1) pour répondre à la vulnérabilité dans AEM Forms on JEE.
+
 * [AEM Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=fr)
 * [Package de modules complémentaires Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr)
 * [Servlet de fragment](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
@@ -173,7 +176,7 @@ Le package est automatiquement installé.
 
   >[!NOTE]
   >
-  >Le Service Pack Experience Manager ne prend pas en charge l’installation en Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+  Le Service Pack Experience Manager ne prend pas en charge l’installation en Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **Validation de l’installation**
 
@@ -205,7 +208,7 @@ Le package est automatiquement installé.
 
 >[!NOTE]
 >
->Si vous installez le pack de services AEM Forms pour la base de données relationnelle, il est obligatoire de sauvegarder DB_schema.
+Si vous installez le pack de services AEM Forms pour la base de données relationnelle, il est obligatoire de sauvegarder DB_schema.
 
 +++
 
@@ -218,12 +221,12 @@ Le package est automatiquement installé.
 
 +++ 3. Installez les packages redistribuables Microsoft Visual C++.
 
-* Téléchargez et installez la [version 64 bits des packages redistribuables Microsoft Visual C++ pour Visual Studio 2015, 2017, 2019 et 2022](https://learn.microsoft.com/fr-fr/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) sur l’ordinateur sur lequel AEM 6.5 Forms est installé.
+* Téléchargez et installez la [version 64 bits des packages Microsoft Visual C++ redistribuables pour Visual Studio 2015, 2017, 2019 et 2022](https://learn.microsoft.com/fr-fr/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) sur l’ordinateur sur lequel AEM 6.5 Forms est installé.
 
 >[!NOTE]
 >
 >
->Assurez-vous d’installer la version redistribuable, même si une version précédente est installée, afin de garantir la disponibilité de la dernière version.
+Assurez-vous d’installer la version redistribuable, même si une version précédente est installée, afin de garantir la disponibilité de la dernière version.
 
 +++
 
@@ -244,7 +247,7 @@ Vous pouvez utiliser deux méthodes différentes pour installer automatiquement 
 
   >[!NOTE]
   >
-  >Le Service Pack Experience Manager ne prend pas en charge l’installation Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+  Le Service Pack Experience Manager ne prend pas en charge l’installation Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **Validation de l’installation**
 

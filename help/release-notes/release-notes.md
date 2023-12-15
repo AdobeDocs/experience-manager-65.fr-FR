@@ -3,7 +3,7 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: e67d7aa9ab1dd00daad3518904bded258e31128c
+source-git-commit: 287717e39ff58396de6d63a89e2b3d8fef4e6888
 workflow-type: tm+mt
 source-wordcount: '4288'
 ht-degree: 93%
