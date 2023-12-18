@@ -6,35 +6,35 @@ role: Developer
 feature: Asset Management
 exl-id: 2a08a7c1-8be9-42d1-9983-f9c8b12ea4e8
 source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '262'
-ht-degree: 32%
+ht-degree: 100%
 
 ---
 
 # Intégration d’[!DNL Assets] avec flux d’activité {#integrating-assets-with-activity-stream}
 
-[!DNL Adobe Experience Manager Assets] Les utilisateurs effectuent de nombreuses opérations, telles que la création, le chargement et la suppression d’actifs. Ces actions peuvent être enregistrées afin que vous puissiez fournir un historique de ce qui a été fait par un utilisateur. Cette section décrit les fonctionnalités d’enregistrement de [!DNL Experience Manager] et comment configurer [!DNL Experience Manager] pour enregistrer des événements spécifiques.
+Les utilisateurs et utilisatrices [!DNL Adobe Experience Manager Assets] effectuent de nombreuses opérations, telles que la création, le chargement et la suppression de ressources. Ces actions peuvent être enregistrées de manière à fournir un historique de toutes les actions réalisées par un utilisateur ou une utilisatrice. Cette section décrit les fonctionnalités d’enregistrement d’[!DNL Experience Manager] ainsi que la procédure de configuration d’[!DNL Experience Manager] pour enregistrer des événements spécifiques.
 
 ## Considérations concernant les performances et comportement par défaut {#performance-considerations-and-default-behavior}
 
-Cette intégration peut nécessiter du processeur et de l’espace disque, par exemple lors d’un import en masse. Pour toutes ces raisons, la [!DNL Assets] l’intégration au flux d’activités est désactivée par défaut.
+Cette intégration peut solliciter une puissance de processeur et un espace disque conséquents, par exemple lors d’opérations d’import en bloc. Pour ces raisons, l’intégration d’[!DNL Assets] au flux d’activités est désactivée par défaut.
 
 ## Événements d’actions pris en charge {#supported-action-events}
 
-Vous pouvez configurer les événements suivants pour qu’ils soient enregistrés :
+Vous pouvez configurer les événements suivants pour qu’ils soient enregistrés :
 
-* Licence acceptée (ACCEPTÉE)
+* Licence acceptée (ACCEPTED)
 * Ressource créée (ASSET_CREATED)
 * Ressource déplacée (ASSET_MOVED)
 * Ressource supprimée (ASSET_REMOVED)
 * Licence refusée (REJECTED)
-* Ressource téléchargée (TÉLÉCHARGÉE)
+* Ressource téléchargée (DOWNLOADED)
 * Ressource versionnée (VERSIONED)
-* Version des ressources restaurée (RESTAURÉE)
+* Version de la ressource restaurée (RESTORED)
 * Métadonnées de ressource mises à jour (METADATA_UPDATED)
 * Ressource publiée sur un système externe (PUBLISHED_EXTERNAL)
-* Mise à jour d’origine de la ressource (ORIGINAL_UPDATED)
+* Originale de la ressource mis à jour (ORIGINAL_UPDATED)
 * Rendu de la ressource mis à jour (RENDITION_UPDATED)
 * Rendu de la ressource supprimé (RENDITION_REMOVED)
 * Sous-ressource mise à jour (SUBASSET_UPDATED)
@@ -52,10 +52,10 @@ La [console Web](/help/sites-deploying/configuring-osgi.md) permet d’accéder 
 
 1. Cochez **[!UICONTROL Activer ce service]**.
 
-1. Vérifier **[!UICONTROL Types d’événement]** que vous souhaitez enregistrer dans le flux d’activité de l’utilisateur.
+1. Vérifiez les **[!UICONTROL types d’événement]** que vous souhaitez enregistrer dans le flux d’activités de l’utilisateur ou l’utilisatrice.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 ## Lecture d’événements enregistrés {#reading-recorded-events}
 
-Les événements enregistrés sont stockés en tant qu’activités. Vous pouvez les consulter par programmation en utilisant [l’API ActivityManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
+Les événements enregistrés sont stockés en tant qu’activités. Vous pouvez les consulter par programmation en utilisant [l’API ActivityManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html?lang=fr).

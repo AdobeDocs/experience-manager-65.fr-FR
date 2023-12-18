@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
 source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '514'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
@@ -24,11 +24,11 @@ Accédez tout d’abord à l’option [Utilisateur](/help/sites-authoring/user-p
 
 ## Paramètres utilisateur {#user-settings}
 
-La variable **Utilisateur** La boîte de dialogue paramètres vous donne accès aux options suivantes :
+La boîte de dialogue des paramètres **Utilisateur** vous donne accès aux options suivantes :
 
 * Se faire passer pour
 
-   * Avec la variable [Se faire passer pour](/help/sites-administering/security.md#impersonating-another-user) fonctionnalité qu’un utilisateur peut utiliser au nom d’un autre utilisateur.
+   * La fonction [Se faire passer pour](/help/sites-administering/security.md#impersonating-another-user) permet à un utilisateur ou une utilisatrice de travailler au nom d’un ou d’une autre.
 
 * Profil
 
@@ -44,21 +44,21 @@ La variable **Utilisateur** La boîte de dialogue paramètres vous donne accès 
 
 La boîte de dialogue **Mes préférences** est accessible par l’intermédiaire de l’option [Utilisateur](/help/sites-authoring/user-properties.md#user-settings) dans l’en-tête.
 
-Chaque utilisateur peut définir certaines propriétés pour lui-même.
+Chaque utilisateur ou utilisatrice peut définir certaines propriétés pour lui-même ou pour elle-même.
 
 ![screen-shot_2019-03-05at100322](assets/screen-shot_2019-03-05at100322.png)
 
 * **Langue**
 
-  Cette option définit la langue à utiliser pour l’interface utilisateur de l’environnement de création. Sélectionnez la langue souhaitée dans la liste disponible.
+  Cette option définit la langue à utiliser pour l’interface utilisateur de l’environnement de création. Sélectionnez la langue souhaitée dans la liste.
 
   Cette configuration est également utilisée pour l’IU classique.
 
 * **Gestion des fenêtres**
 
-  Cela définit le comportement ou l’ouverture des fenêtres. Vous avez le choix entre :
+  Définit le comportement ou l’ouverture des fenêtres. Vous avez le choix entre :
 
-   * **Fenêtres multiples** (Par défaut)
+   * **Fenêtres multiples** (par défaut)
 
       * Les pages s’ouvrent dans une nouvelle fenêtre.
 
@@ -68,18 +68,18 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
 
 * **Afficher les actions de bureau pour Assets**
 
-  Cette option nécessite l’utilisation d’une appli de bureau AEM.
+  Cette option nécessite l’utilisation d’une application de bureau AEM.
 
 * **Couleur de l’annotation**
 
   Cette option définit la couleur par défaut utilisée lors de la création d’annotations.
 
-   * Cliquez sur le bloc de couleur pour ouvrir le sélecteur d’échantillon et sélectionner une couleur.
+   * Cliquez sur le bloc de couleur pour ouvrir le sélecteur d’échantillons et sélectionner une couleur.
    * Vous pouvez également saisir le code hexadécimal de la couleur désirée dans le champ.
 
 * **Présentation de la date relative**
 
-  Pour améliorer la lisibilité, AEM effectue le rendu des dates au cours des sept derniers jours sous forme de dates relatives (par exemple, il y a trois jours) et des dates plus anciennes sous forme de dates exactes (par exemple, 20 mars 2017).
+  Pour améliorer la lisibilité, AEM effectue le rendu des dates des sept derniers jours en tant que dates relatives (par exemple, il y a trois jours) et celui des dates antérieures en tant que dates précises (par exemple, le 20 mars 2017).
 
   Cette option définit la manière dont les dates sont affichées dans le système. Les options suivantes sont disponibles :
 
@@ -101,7 +101,7 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
    * [Raccourcis clavier lors de la modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
 
-  Cette option active les raccourcis clavier. Par défaut, elles sont activées, mais peuvent être désactivées, par exemple si un utilisateur a certaines exigences d’accessibilité.
+  Cette option active les raccourcis clavier. Ils sont activés par défaut, mais peuvent être désactivés, par exemple si un utilisateur ou une utilisatrice a certaines exigences en matière d’accessibilité.
 
 * **Utilisez une expérience de création de contenu classique**.
 
@@ -109,8 +109,8 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
 
 * **Activer la page d’accueil des ressources**
 
-  Cette option n’est disponible que si l’administrateur système a activé l’expérience de page d’accueil des ressources pour l’ensemble de l’entreprise.
+  Cette option est disponible uniquement si l’administrateur ou l’administratrice système a activé l’expérience Page d’accueil des ressources pour l’ensemble de l’organisation.
 
 * **Configuration Stock**
 
-  Cette option vous permet de définir la configuration Adobe Stock souhaitée. Elle n’est disponible que si l’administrateur système a activé [Intégration d’Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+  Cette option permet de définir la configuration Adobe Stock préférée. Elle n’est disponible que si l’administrateur ou administratrice système a activé [l’intégration d’Adobe Stock](/help/assets/aem-assets-adobe-stock.md).

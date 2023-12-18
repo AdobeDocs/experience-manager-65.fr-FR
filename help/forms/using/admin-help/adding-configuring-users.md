@@ -1,13 +1,13 @@
 ---
-title: Ajouter et configurer des utilisateurs
-description: Les paramètres de gestion des utilisateurs de la console d’administration vous permettent de créer ou de supprimer des utilisateurs et de configurer d’autres paramètres utilisateur.
+title: Ajouter et configurer des utilisateurs et des utilisatrices
+description: Les paramètres User Management dans la console d’administration vous permettent de créer ou supprimer des utilisateurs ou des utilisatrices et de configurer d’autres paramètres utilisateur.
 contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1733'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -67,11 +67,11 @@ Spécifiez les paramètres ci-dessous lorsque vous créez ou modifiez un utilisa
 
 **Paramètres régionaux :** paramètres régionaux ISO de l’utilisateur ou de l’utilisatrice.
 
-**Clé du calendrier professionnel :** (facultatif) permet d’associer un calendrier professionnel à un utilisateur, en fonction de la valeur de ce paramètre. Les calendriers professionnels définissent les jours ouvrés et non ouvrés. AEM forms peut faire appel à des calendriers professionnels lors du calcul des dates et heures futures associées à des événements, tels que rappels, échéances et transmissions. Les clés de calendrier professionnel sont attribuées à des utilisateurs et des utilisatrices en fonction du domaine utilisé, tel que le domaine d’entreprise, local ou hybride (Voir [Ajout de domaines](/help/forms/using/admin-help/adding-domains.md#adding-domains).)
+**Clé du calendrier professionnel :** (facultatif) permet d’associer un calendrier professionnel à un utilisateur, en fonction de la valeur de ce paramètre. Les calendriers professionnels définissent les jours ouvrés et non ouvrés. AEM forms peut faire appel à des calendriers professionnels lors du calcul des dates et heures futures associées à des événements, tels que rappels, échéances et transmissions. Les clés de calendrier professionnel sont attribuées à des utilisateurs et des utilisatrices en fonction du domaine utilisé, tel que le domaine d’entreprise, local ou hybride. (Voir [Ajout de domaines](/help/forms/using/admin-help/adding-domains.md#adding-domains).)
 
 Si vous utilisez un domaine local ou hybride, les informations relatives aux utilisateurs et utilisatrices ne sont stockées que dans la base de données User Management. Pour ces utilisateurs et utilisatrices, définissez la clé de calendrier professionnel sur une chaîne. Associez ensuite la clé de calendrier professionnel (la chaîne) à un calendrier professionnel dans Forms Workflow.
 
-Si vous utilisez un domaine d’entreprise, les informations sur les utilisateurs et utilisatrices résident dans un système de stockage tiers, tel qu’un annuaire LDAP. User Management synchronise les informations utilisateur de l’annuaire avec la base de données User Management. Cette fonctionnalité vous permet de mapper une clé de calendrier professionnel à un champ de l’annuaire LDAP. Imaginons, par exemple, un scénario où chaque utilisateur ou utilisatrice enregistré(e) dans votre annuaire dispose d’un champ pays et où vous souhaitez affecter des calendriers professionnels en fonction du pays dans lequel l’utilisateur ou l’utilisatrice se trouve. Dans ce cas, vous indiquez le nom du champ pays dans le champ clé du calendrier professionnel. Vous pouvez ensuite associer les clés de calendrier professionnel (valeurs définies pour le champ pays dans l’annuaire LDAP) aux calendriers professionnels dans Forms Workflow.
+Si vous utilisez un domaine d’entreprise, les informations sur les utilisateurs et utilisatrices résident dans un système de stockage tiers, tel qu’un annuaire LDAP. User Management synchronise les informations utilisateur de l’annuaire avec la base de données User Management. Cette fonctionnalité vous permet d’associer une clé de calendrier professionnel à un champ de l’annuaire LDAP. Imaginons, par exemple, un scénario où chaque utilisateur ou utilisatrice enregistré(e) dans votre annuaire dispose d’un champ pays et où vous souhaitez affecter des calendriers professionnels en fonction du pays dans lequel l’utilisateur ou l’utilisatrice se trouve. Dans ce cas, vous indiquez le nom du champ pays dans le champ clé du calendrier professionnel. Vous pouvez ensuite associer les clés de calendrier professionnel (valeurs définies pour le champ pays dans l’annuaire LDAP) aux calendriers professionnels dans Forms Workflow.
 
 Pour plus d’informations sur les calendriers professionnels, notamment sur la façon d’associer des clés de calendrier professionnel à des calendriers professionnels, voir [Configuration des calendriers professionnels](/help/forms/using/admin-help/configuring-business-calendars.md#configuring-business-calendars).
 

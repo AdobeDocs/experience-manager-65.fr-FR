@@ -3,9 +3,9 @@ title: Comment générer et utiliser des hachages dans les PDF forms dynamiques�
 description: Génération et utilisation de hachages dans les PDF forms dynamiques.
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1246'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -19,27 +19,27 @@ Une certaine expérience avec AEM Forms sur JEE Designer est requise, de même q
 
 Débutant
 
-Lorsque vous souhaitez masquer un mot de passe dans votre formulaire de PDF et que vous ne souhaitez pas le placer en texte clair dans le code source ou ailleurs dans le document du PDF, il est essentiel de savoir comment générer et utiliser les hachages MD4, MD5, SHA-1 et SHA-256.
+Lorsque vous souhaitez masquer un mot de passe dans votre formulaire PDF et que vous ne voulez pas qu’il apparaisse en clair dans le code source ou ailleurs dans le document PDF, il est essentiel de savoir comment générer et utiliser les hachages MD4, MD5, SHA-1 et SHA-256.
 
-L’idée est d’obscurcir le mot de passe en générant un hachage unique et de stocker ce hachage dans le document PDF. Ce hachage unique peut être généré par différentes fonctions de hachage. Dans cet article, vous découvrirez comment les générer dans le formulaire du PDF et comment les utiliser.
+L’idée est d’obscurcir le mot de passe en générant un hachage unique et de stocker ce hachage dans le document PDF. Ce hachage unique peut être généré par différentes fonctions de hachage. Dans cet article, vous allez voir comment les générer dans le formulaire PDF et comment les utiliser.
 
-Une fonction de hachage utilise une longue chaîne (ou un message) de n’importe quelle longueur comme entrée et produit une chaîne de longueur fixe comme sortie, parfois appelée condensé du message ou empreinte numérique.
+Une fonction de hachage prend en entrée une longue chaîne (ou message) de n’importe quelle longueur et produit en sortie une chaîne de longueur fixe, parfois appelée Condensé de message ou empreinte numérique.
 
-AEM Forms on JEE Designer permet d’implémenter les différentes fonctions de hachage dans les objets de script en tant que JavaScript et de les exécuter dans un document de PDF dynamique. Les PDF d’exemple qui sont inclus dans les fichiers d’exemple de cet article utilisent des implémentations open source des fonctions de hachage suivantes :
+AEM Forms on JEE Designer vous permet d’implémenter les différentes fonctions de hachage dans des objets de script en JavaScript et de les exécuter dans un document PDF dynamique. Les PDF d’exemple qui sont inclus dans les fichiers d’exemple de cet article utilisent des implémentations open source des fonctions de hachage suivantes :
 
 * MD4 et MD5, conçus par Ronald Rivest.
 
 * SHA-1 et SHA-256, telles qu’elles sont définies par le NIST.
 
-Le plus grand avantage de l’utilisation des hachages est que vous n’avez pas à comparer directement les mots de passe en comparant les chaînes de texte claires ; vous pouvez plutôt comparer les deux hachages des deux mots de passe. Comme il est peu probable que deux chaînes différentes aient le même hachage, si les deux hachages sont identiques, alors vous pouvez supposer que les chaînes comparées (dans ce cas, les mots de passe) sont également identiques.
+L’utilisation des hachages a pour principal avantage de ne pas avoir à comparer directement les mots de passe en comparant des chaînes de texte en clair ; au lieu de cela, vous pouvez comparer les deux hachages des deux mots de passe. Comme il est peu probable que deux chaînes différentes aient le même hachage, si les deux hachages sont identiques, alors vous pouvez supposer que les chaînes comparées (dans ce cas, les mots de passe) sont également identiques.
 
 >[!NOTE]
 >
->Il existe des problèmes de sécurité bien connus (appelés collisions de hachage) avec MD4 ou MD5. En raison de ces collisions de hachage et d’autres piratages de SHA-1 (y compris les tables arc-en-ciel), j’ai décidé de me concentrer sur la fonction de hachage SHA-256 dans le deuxième échantillon. Pour plus d’informations, consultez les pages [Collision](https://fr.wikipedia.org/wiki/Collision_(informatique)) et [Tableau arc-en-ciel](https://fr.wikipedia.org/wiki/Rainbow_table) de Wikipédia.
+>Il existe des problèmes de sécurité bien connus (appelés collisions de hachage) avec MD4 ou MD5. En raison de ces collisions de hachage et d’autres piratages de SHA-1 (y compris les tables arc-en-ciel), j’ai décidé de me concentrer sur la fonction de hachage SHA-256 dans le deuxième exemple. Pour plus d’informations, consultez les pages [Collision](https://fr.wikipedia.org/wiki/Collision_(informatique)) et [Tableau arc-en-ciel](https://fr.wikipedia.org/wiki/Rainbow_table) de Wikipédia.
 
 ## Examiner les objets de script {#examining-script-objects}
 
-Lorsque vous ouvrez l’un des deux exemples fournis dans AEM Forms on JEE Designer, les quatre objets de script sont répertoriés dans la palette Hiérarchie (voir la figure ci-dessous).
+Lorsque vous ouvrez l’un des deux exemples fournis dans AEM Forms on JEE Designer, vous trouvez les quatre objets de script dans la palette Hiérarchie (voir la figure ci-dessous).
 
 ![Variables](assets/variables.jpg)
 
@@ -60,7 +60,7 @@ Pour voir l’implémentation JavaScript des fonctions de hachage dans ces objet
 
 Comme vous pouvez le constater dans cette liste, différentes fonctions sont disponibles pour les différents types de sortie du hachage. Vous pouvez choisir entre `hex_` pour les chiffres hexadécimaux, `b64_` pour la sortie codée en Base64, ou `str_` pour un simple codage de chaîne.
 
-Selon la fonction de hachage choisie, la longueur du hachage varie :
+Selon la fonction de hachage choisie, la longueur du hachage varie :
 
 * MD4 : 128 bits
 * MD5 : 128 bits
@@ -75,11 +75,11 @@ Les exemples de fichiers pour cet article incluent deux formulaires PDF. Le prem
 
 Pour tester le premier exemple, procédez comme suit :
 
-1. Après avoir téléchargé et décompressé les fichiers d’exemple, ouvrez hashing_forms_sample1.pdf avec AEM Forms on JEE Designer. Vous pouvez également utiliser Adobe Reader ou Adobe Acrobat Professional pour ouvrir et afficher l’exemple, mais vous ne pourrez pas voir le code source.
+1. Après avoir téléchargé et décompressé les fichiers d’exemple, ouvrez hashing_forms_sample1.pdf avec AEM Forms on JEE Designer. Vous pouvez également utiliser Adobe Reader ou Adobe Acrobat Professional pour ouvrir et afficher l’exemple, mais vous ne pourrez pas voir le code source.
 1. Dans le champ de texte intitulé [!UICONTROL texte clair], saisissez un mot de passe ou tout autre message que vous souhaitez hacher.
 1. Cliquez sur l’un des quatre boutons pour générer le hachage MD4, MD5, SHA-1 ou SHA-256. Selon le bouton sur lequel vous avez appuyé, l’une des quatre fonctions de hachage qui produit la sortie hexadécimale est appelée et votre chaîne ou votre message est haché.
 
-Le résultat de l’opération de hachage s’affiche dans le champ intitulé [!UICONTROL hachage]. La longueur du hachage varie en fonction de la fonction de hachage choisie.
+Le résultat de l’opération de hachage s’affiche dans le champ intitulé [!UICONTROL hachage]. La longueur du hachage varie selon la fonction de hachage choisie.
 
 Tous les exemples utilisent des chiffres hexadécimaux comme type de sortie. Vous pouvez utiliser l’éditeur de script pour modifier les exemples et modifier le type de sortie en base64 ou en chaîne simple.
 
@@ -89,11 +89,11 @@ Le deuxième exemple illustre la comparaison des hachages en arrière-plan, sans
 
 Suivez les étapes ci-dessous pour essayer le deuxième exemple :
 
-1. Ouvrez `hashing_forms_sample2.pdf` avec AEM Forms on JEE Designer. Vous pouvez également utiliser Adobe Reader ou Adobe Acrobat Professional pour ouvrir et afficher l’exemple, mais vous ne pourrez pas voir le code source.
+1. Ouvrez `hashing_forms_sample2.pdf` avec AEM Forms on JEE Designer. Vous pouvez également utiliser Adobe Reader ou Adobe Acrobat Professional pour ouvrir et afficher l’exemple, mais vous ne pourrez pas voir le code source.
 1. Sélectionnez l’un des deux champs de mot de passe intitulés [!UICONTROL Password MAN] ou [!UICONTROL Password WOMAN] et saisissez les mots de passe :
    1. Le mot de passe pour Man est `bob`.
    1. Le mot de passe pour Woman est `alice`.
-1. Lorsque vous déplacez la sélection hors des champs de mot de passe ou appuyez sur la touche Entrée, le hachage du mot de passe que vous avez saisi est généré automatiquement et comparé au hachage stocké du mot de passe correct en arrière-plan. Les mots de passe corrects et hachés sont stockés dans les champs de texte invisibles intitulés `passwd_man_hashed` et `passwd_woman_hashed`. Si vous saisissez le mot de passe correct pour l’homme, les champs de texte intitulés `Man 1` et `Man 2` sont rendus accessibles afin que vous puissiez y saisir du texte. Le même comportement s&#39;applique aux champs de la femme.
+1. Lorsque vous déplacez la sélection hors des champs de mot de passe ou appuyez sur la touche Entrée, le hachage du mot de passe que vous avez saisi est généré automatiquement et comparé au hachage stocké du mot de passe correct en arrière-plan. Les mots de passe corrects et hachés sont stockés dans les champs de texte invisibles intitulés `passwd_man_hashed` et `passwd_woman_hashed`. Si vous saisissez le mot de passe correct pour l’homme, les champs de texte intitulés `Man 1` et `Man 2` sont rendus accessibles afin que vous puissiez y saisir du texte. Le même comportement s’applique aux champs pour la femme.
 1. Vous pouvez éventuellement cliquer sur le bouton « supprimer les mots de passe », ce qui désactive les champs de texte et modifie leur bordure.
 
 Le code permettant de comparer les deux valeurs hachées et d’activer les champs de texte est simple :
@@ -109,7 +109,7 @@ if (soHASHING_SHA256.hex_sha256(this.rawValue) == passwd_man_hashed.rawValue){
 
 ## Que faire ensuite {#next-steps}
 
-Où auriez-vous besoin de quelque chose comme ça ? Prenons l’exemple d’un formulaire PDF contenant des champs qui ne doivent être remplis que par des personnes autorisées. En sécurisant ces champs avec un mot de passe, qui ne peut être affiché en clair nulle part dans le document comme dans Sample_2.pdf, vous pouvez vous assurer que ces champs sont accessibles uniquement aux utilisateurs qui connaissent le mot de passe.
+Où auriez-vous besoin de quelque chose comme ça ? Prenons l’exemple d’un formulaire PDF contenant des champs qui ne doivent être remplis que par des personnes autorisées. En sécurisant ces champs avec un mot de passe qui ne peut être affiché en clair nulle part dans le document comme dans Sample_2.pdf, vous pouvez vous assurer que ces champs sont accessibles uniquement aux utilisateurs et utilisatrices qui connaissent le mot de passe.
 
 Je vous encourage à continuer à explorer les deux exemples de fichiers PDF.  Vous pouvez générer de nouvelles valeurs de hachage avec Sample_1.pdf et utiliser les valeurs générées pour modifier le mot de passe ou la fonction de hachage utilisée dans Sample_2.pdf.  Les ressources répertoriées dans la section Attributions fournissent également des informations supplémentaires sur le hachage et les implémentations JavaScript spécifiques utilisées dans cet article.
 

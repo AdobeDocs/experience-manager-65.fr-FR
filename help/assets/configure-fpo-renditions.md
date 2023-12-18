@@ -7,9 +7,9 @@ feature: Renditions
 exl-id: 1e4ddd73-a31c-4ddd-94eb-1dac6a4835b3
 hide: true
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1072'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

@@ -6,9 +6,9 @@ feature: Integrations
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: true
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1154'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ Vous trouverez ci-dessous les détails des fonctionnalités disponibles à trave
 | Transmission en temps réel des métadonnées Workfront mises à jour vers AEM | Mettez automatiquement à jour les métadonnées Workfront mappées à AEM sans transmettre à nouveau une ressource ou une nouvelle version d’une ressource. | ✓ | Non | ✓ |
 | Mapper les métadonnées de Workfront aux dossiers AEM Assets | Synchronisez les métadonnées des projets Workfront avec les dossiers AEM liés. | Non | ✓ | ✓ |
 | Mettre à jour les métadonnées AEM avec de nouvelles versions | Une configuration peut être effectuée dans AEM pour déterminer si une ressource nouvellement versionnée dans Workfront transmet également les modifications apportées à ses métadonnées. | Non | ✓ | Non |
-| Mettre automatiquement à jour les métadonnées AEM lors des modifications apportées aux formulaires personnalisés dans Workfront | AEM vous permet de vous abonner aux mises à jour des formulaires de document dans Workfront. Par conséquent, toute mise à jour apportée aux métadonnées du formulaire personnalisé du document Workfront modifie les valeurs des champs de métadonnées AEM mappés. | Non | ✓ | Non |
+| Mettre automatiquement à jour les métadonnées AEM lors des modifications apportées aux formulaires personnalisés dans Workfront | AEM vous permet de vous abonner aux mises à jour des formulaires de documents dans Workfront. Par conséquent, toute mise à jour apportée aux métadonnées du formulaire personnalisé du document Workfront modifie les valeurs des champs de métadonnées AEM mappés. | Non | ✓ | Non |
 | **Workflows (prêts à l’emploi)** |
 | Créer une version BAT sur les ressources liées | Lors de la liaison d’une ressource dans Workfront, un BAT peut être automatiquement généré. | Non | Personnalisé | Non |
 | Définir le statut des objets Workfront | Définissez les statuts des objets Workfront en fonction de conditions configurables à l’aide de workflows AEM. | Non | ✓ | À venir |

@@ -3,9 +3,9 @@ title: Guide de prise en main pour l’accès et la diffusion de fragments de co
 description: Découvrez comment utiliser l’API HTTP Assets d’AEM pour gérer les fragments de contenu et l’API GraphQL dans la diffusion de contenu de fragments de contenu en mode découplé.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '555'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
@@ -17,26 +17,26 @@ Découvrez comment utiliser l’API HTTP Assets d’AEM pour gérer les fragment
 
 [Maintenant que vous avez créé des fragments de contenu](create-content-fragment.md), vous pouvez utiliser les API d’AEM pour une diffusion découplée.
 
-* [API GRAPHQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) permet de créer des requêtes d’accès et de diffusion de fragments de contenu.
-   * Pour l’utiliser, [les points de fin doivent être définis et activés dans AEM](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint), et si nécessaire, l’événement [Interface GraphiQL installée](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface).
-* [API REST Assets](/help/assets/assets-api-content-fragments.md) vous permet de créer et de modifier des fragments de contenu (et d’autres ressources).
+* [L’API GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) permet de créer des requêtes d’accès et de diffusion de fragments de contenu.
+   * Pour l’utiliser, les [points d’entrée doivent être définis et activés dans AEM](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint), et si nécessaire, l’[interface GraphQL doit être installée](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface).
+* [L’API REST Assets](/help/assets/assets-api-content-fragments.md) permet de créer et de modifier des fragments de contenu (et d’autres ressources).
 
-Le reste de ce guide porte sur l’accès à GraphQL et la diffusion de fragments de contenu.
+Le reste de ce guide porte sur l’accès à GraphQL et la diffusion de fragments de contenu.
 
 ## Comment diffuser un fragment de contenu avec GraphQL {#how-to-deliver-a-content-fragment}
 
-Les architectes d’informations doivent concevoir des requêtes pour leurs points de terminaison de canal afin de diffuser du contenu. Ces requêtes ne doivent être prises en compte qu’une seule fois par point de terminaison et par modèle. Pour les besoins de ce guide de prise en main, vous ne devez en créer qu’un seul.
+Les architectes d’informations doivent concevoir des requêtes pour leurs points d’entrée de canal afin de diffuser du contenu. Ces requêtes ne doivent être prises en compte qu’une seule fois par point d’entrée et par modèle. Pour les besoins de ce guide de prise en main, il suffit d’en créer un exemplaire.
 
 1. Connectez-vous à AEM et accédez à l’[interface GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md) :
    * Par exemple : `http://<host>:<port>/aem/graphiql.html`.
 
-1. GraphiQL est un éditeur de requêtes intégré au navigateur pour GraphQL. Vous pouvez l’utiliser pour créer des requêtes afin de récupérer des fragments de contenu afin de les diffuser sans problème au format JSON.
-   * Le panneau de gauche vous permet de créer votre requête.
+1. GraphiQL est un éditeur de requêtes intégré au navigateur pour GraphQL. Vous pouvez l’utiliser pour créer des requêtes permettant de récupérer des fragments de contenu afin de les diffuser de manière découplée en mode JSON.
+   * Le volet de gauche permet de construire votre requête.
    * Le volet de droite affiche les résultats.
    * L’éditeur de requêtes comprend la saisie du code et des touches d’accès rapide pour exécuter facilement la requête.
      ![Éditeur GraphiQL](assets/graphiql.png)
 
-1. En supposant que le modèle que vous avez créé ait été appelé `person` avec des champs `firstName`, `lastName`, et `position`, vous pouvez créer une requête simple pour récupérer le contenu du fragment de contenu.
+1. En supposant que le modèle que vous avez créé s’appelle `person`, avec les champs `firstName`, `lastName` et `position`, vous pouvez créer une requête simple pour récupérer le contenu du fragment de contenu.
 
    ```text
    query 
@@ -61,18 +61,18 @@ Les architectes d’informations doivent concevoir des requêtes pour leurs poin
    ![Résultats GraphiQL](assets/graphiql-results.png)
 
 1. Cliquez sur :
-   * **Documents** dans le coin supérieur droit de la page pour afficher la documentation contextuelle afin de vous aider à créer vos requêtes qui s’adaptent à vos propres modèles.
+   * **Docs** en haut à droite de la page pour afficher la documentation contextuelle afin de vous aider à créer vos requêtes adaptées à vos propres modèles.
    * **Histoire** dans la barre d’outils supérieure pour afficher les requêtes précédentes.
    * Cliquez sur **Enregistrer sous** et **Enregistrer** pour enregistrer vos requêtes, après quoi vous pouvez les répertorier et les récupérer à partir du panneau **Requêtes persistantes** et de l’**instance de publication**.
      ![Documentation GraphiQL](assets/graphiql-documentation.png)
 
-GraphQL active des requêtes structurées qui peuvent cibler non seulement des jeux de données spécifiques ou des objets de données individuels, mais aussi fournir des éléments spécifiques des objets, des résultats imbriqués, offrir une prise en charge des variables de requête, et bien plus encore.
+GraphQL permet d’utiliser des requêtes structurées qui peuvent cibler non seulement des ensembles de données spécifiques ou des objets de données individuels, mais également fournir des éléments spécifiques des objets, des résultats imbriqués, une prise en charge des variables de requête, et bien plus encore.
 
-GraphQL peut éviter les demandes d’API itératives et la sur-diffusion. Il permet plutôt la diffusion en masse de ce qui est exactement nécessaire pour le rendu en tant que réponse à une requête API unique. Le fichier JSON produit peut être utilisé pour diffuser des données vers d’autres sites ou applications.
+GraphQL peut éviter les demandes d’API itératives et la sur-diffusion. En revanche, il permet de diffuser en bloc simplement ce qui est nécessaire pour le rendu en réponse à une seule requête d’API. Le fichier JSON produit peut être utilisé pour diffuser des données vers d’autres sites ou applications.
 
 ## Étapes suivantes {#next-steps}
 
-C’est terminé ! Vous possédez maintenant une compréhension de base de la gestion de contenu découplée dans AEM. Il existe de nombreuses autres ressources où vous pouvez approfondir vos connaissances pour une compréhension complète des fonctionnalités disponibles.
+C’est terminé ! Vous possédez maintenant une compréhension de base de la gestion de contenu découplée dans AEM. Bien entendu, il existe beaucoup d’autres ressources que vous pouvez approfondir pour mieux comprendre les fonctionnalités disponibles.
 
 * **[Explorateur de configurations](create-configuration.md)** – Pour plus d’informations sur l’Explorateur de configurations AEM
 * **[Fragments de contenu](/help/assets/content-fragments/content-fragments.md)** – Pour plus d’informations sur la création et la gestion de fragments de contenu

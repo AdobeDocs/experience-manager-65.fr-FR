@@ -7,9 +7,9 @@ feature: Asset Management,Search
 exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
 hide: true
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '803'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 73%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| Adobe Experience Manager (AEM) as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=fr) |
+| Adobe Experience Manager (AEM) as a Cloud Service. | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 L’ensemble des ressources numériques, des métadonnées et du contenu des documents Microsoft® Office et PDF sont extraits et rendus utilisables dans une requête. Les recherches permettent un filtrage élaboré des ressources et respectent entièrement les autorisations. Les métadonnées sont traitées en détail dans la section Métadonnées de la gestion des ressources numériques.
 
-[!DNL Experience Manager Assets] prend en charge plusieurs manières d’organiser le contenu. Vous pouvez les organiser de manière hiérarchique à l’aide de dossiers ou les organiser de manière ad hoc et non ordonnée à l’aide de balises, par exemple. Les utilisateurs peuvent modifier les balises dans l’éditeur de ressources de gestion des actifs numériques où les sous-ressources, rendus et métadonnées sont affichés.
+[!DNL Experience Manager Assets] prend en charge plusieurs manières d’organiser le contenu. Vous pouvez l’organiser de façon hiérarchique à l’aide de dossiers ou de manière ad hoc et non classée à l’aide de balises, par exemple. Les utilisateurs peuvent modifier les balises dans l’éditeur de ressources de gestion des actifs numériques où les sous-ressources, rendus et métadonnées sont affichés.
 
 ## Organisation des ressources dans des dossiers {#organize-using-folders}
 
@@ -42,13 +42,13 @@ La méthode la plus simple pour organiser les ressources consiste à les enregis
    * **Dossiers reposant sur une date** : contiennent des ressources numériques en fonction d’une date de création ou d’une date de dernière modification.
 
 * Créez un répertoire de dossiers qui n’est pas susceptible de changer afin que les processus de personnalisation ou d’autonomisation puissent continuer à fonctionner. Par exemple, les profils de traitement affectés continuent à fonctionner.
-* Si une ressource est déjà publiée, vous utilisez [!DNL Experience Manager] pour déplacer la ressource vers un autre dossier et la republier à partir de son nouvel emplacement, l’emplacement de la ressource publiée d’origine est toujours disponible, ainsi que la ressource republiée. Toutefois, la version d’origine de la ressource publiée est *« perdue »* pour [!DNL Experience Manager] et elle ne peut pas être dépubliée. Il est donc recommandé de dépublier une ressource avant de la déplacer vers un autre dossier.
+* Si une ressource est déjà publiée, vous devez utiliser [!DNL Experience Manager] pour la déplacer vers un autre dossier et la republier à partir du nouvel emplacement. L’emplacement de la ressource publiée d’origine est toujours disponible avec la ressource republiée. Toutefois, la version d’origine de la ressource publiée est *« perdue »* pour [!DNL Experience Manager] et elle ne peut pas être dépubliée. Il est donc recommandé de dépublier une ressource avant de la déplacer vers un autre dossier.
 
 ## Organisation de ressources à l’aide de balises {#use-tags-to-organize-assets}
 
-À l’aide de balises, en tant que métadonnées, vous pouvez facilement rechercher des ressources, créer des collections à l’aide des résultats de recherche, améliorer le classement de certaines ressources et utiliser des algorithmes d’intelligence artificielle d’Adobe Sensei pour la découverte de ressources.
+À l’aide de balises telles que les métadonnées, vous pouvez facilement rechercher des ressources, créer des collections à l’aide des résultats de recherche, améliorer le classement de certaines ressources et appliquer des algorithmes d’IA d’Adobe Sensei pour la découverte de ressources.
 
-[!DNL Adobe Experience Manager Assets] utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe Sensei, le framework d’intelligence artificielle et d’apprentissage automatique de l’Adobe, qui peut être formé pour reconnaître et appliquer des balises standard et spécifiques à l’entreprise à l’imagerie. Les balises intelligentes peuvent également identifier le contenu, les mots ou les expressions et appliquer automatiquement des balises descriptives aux ressources.
+[!DNL Adobe Experience Manager Assets] utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe Sensei, l’intelligence artificielle et la structure de machine learning d’Adobe, qui peuvent être entraînés pour reconnaître et pour appliquer des balises standards et commerciales à l’imagerie. Les balises intelligentes peuvent également identifier le contenu, les mots ou les expressions et appliquer automatiquement des balises descriptives aux ressources.
 
 Pour plus d’informations, consultez les articles suivants :
 
@@ -58,9 +58,9 @@ Pour plus d’informations, consultez les articles suivants :
 
 ## Organisation en tant que collections {#organize-as-collections}
 
-Grâce aux collections de ressources dans [!DNL Experience Manager Assets], vous pouvez optimiser la possibilité de créer, modifier et partager des ressources entre les utilisateurs. Créez plusieurs types de collections en fonction de leur utilisation, y compris les collections qui contiennent une liste de référence statique de ressources, dossiers et collections, ainsi que les collections qui extraient les ressources en fonction de critères de recherche. Vous pouvez également créer des collections avec des ressources provenant de différents emplacements et les partager avec plusieurs utilisateurs disposant de différents niveaux d’accès, d’affichage et de modification.
+Grâce aux collections de ressources dans [!DNL Experience Manager Assets], vous pouvez optimiser la possibilité de créer, modifier et partager des ressources entre les utilisateurs. Créez plusieurs types de collections en fonction de leur utilisation, y compris des collections qui contiennent une liste de références statiques des ressources, dossiers et collections, ainsi que des collections qui extraient des ressources en fonction de critères de recherche. En outre, vous pouvez créer des collections avec des ressources provenant de différents emplacements et les partager avec plusieurs utilisateurs et utilisatrices disposant de différents niveaux d’accès, d’affichage et de modification des privilèges.
 
-Pour plus d’informations, voir [gestion des collections](manage-collections.md).
+Pour plus d’informations, consultez [Gérer les collections](manage-collections.md).
 
 <!-- TBD items: add screenshots where applicable
 Any hints/recommendations of when to use what method of organizing? Some examples of how organizing helps towards a better taxonomy and improved content velocity.

@@ -1,44 +1,44 @@
 ---
 title: Distribuer l’application AEM Forms
-description: Utilisez la gestion des périphériques mobiles (MDM) pour le déploiement à grande échelle des applications sur les périphériques mobiles.
+description: Les solutions MDM (Mobile Device Management) permettent le déploiement à grande échelle des applications sur des appareils mobiles.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 exl-id: 375cfa95-ac6f-44c4-a736-f5dd55d24195
 source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '243'
-ht-degree: 22%
+ht-degree: 100%
 
 ---
 
 # Distribuer l’application AEM Forms {#distribute-aem-forms-app}
 
-La gestion des périphériques mobiles (MDM) permet le déploiement à grande échelle d’applications sur des périphériques mobiles.
+Les solutions MDM (Mobile Device Management) permettent le déploiement à grande échelle des applications sur des appareils mobiles.
 
 >[!NOTE]
 >
->Cette distribution s’applique uniquement aux appareils iOS et Android™.
+>Cette distribution s’applique aux appareils iOS et Android™ uniquement.
 
-## Principales fonctionnalités des solutions MDM : {#main-features-generally-provided-by-mdm-solutions}
+## Principales fonctionnalités des solutions MDM : {#main-features-generally-provided-by-mdm-solutions}
 
 * Enregistrement des appareils dans votre environnement d’entreprise
 * Configuration et mise à jour des paramètres des appareils
 * Application des normes de sécurité.
 * Sécurisation de l’accès mobile aux ressources de l’entreprise
 
-Une solution MDM accompagnée de la gestion des applications mobiles vous permet de gérer les applications internes, publiques et achetées sur les périphériques mobiles de votre entreprise.
+Une solution MDM doublée de fonctions MAM (Mobile Application Management) vous permet de gérer les applications internes, publiques et achetées via les appareils mobiles de votre entreprise.
 
-L’administrateur MDM peut charger des fichiers ipa et apk sur le serveur MDM et contrôler les utilisateurs qui peuvent accéder aux fichiers ipa ou apk. L’administrateur peut également contrôler les paramètres de profil qui correspondent à chaque application.
+L’administrateur ou administratrice MDM peut transférer des fichiers .ipa et .apk sur le serveur MDM et contrôler les utilisateurs et utilisatrices ayant accès à ces fichiers. L’administrateur ou administratrice peut également contrôler les paramètres de profil qui correspondent à chaque application.
 
 ## Paramètres de profil affectant l’application AEM Forms {#profile-settings-affecting-the-aem-forms-app-br}
 
-Les paramètres de profil suivants sur votre appareil affectent le fonctionnement de l’application AEM Forms sur votre appareil :
+Les paramètres de profil suivants sur votre appareil affecteront le fonctionnement de lʼapplication AEM Forms sur celui-ci :
 
-* **Utilisation autorisée de l’appareil photo** dans le **Fonctionnalité du périphérique** section
+* **Autoriser l’utilisation de l’appareil photo** dans la section **Fonctionnalité de l’appareil**
 
-Si vous désactivez **Utilisation autorisée de l’appareil photo**, la fonction de caméra de la fonction [Annotation photo](/help/forms/using/add-attachments.md) ne fonctionne pas. Activez cette option pour utiliser l’appareil photo dans l’application.
+Si vous désactivez **Autoriser l’utilisation de l’appareil photo**, la fonction appareil photo de l’[Annotation photographique](/help/forms/using/add-attachments.md) ne fonctionnera pas. Activez cette option pour utiliser l’appareil photo dans l’application.
 
-* **Requiert un code de passe sur l’appareil** dans la section Stratégies de code de passe
+* **Mot de passe requis sur l’appareil** dans la section Politiques de mot de passe
 
-Pour activer le **chiffrement des données d’application**, nous vous conseillons d’activer le **mot de passe** sur votre appareil. Si le code de passe n’est pas défini sur l’appareil, les données de l’application stockées sur l’appareil ne sont pas chiffrées.
+Pour activer le **chiffrement des données d’application**, nous vous conseillons d’activer le **mot de passe** sur votre appareil. Si aucun mot de passe n’est défini sur l’appareil, les données d’application stockées sur l’appareil ne sont pas chiffrées.

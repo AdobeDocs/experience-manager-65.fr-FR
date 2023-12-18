@@ -8,15 +8,15 @@ content-type: reference
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
 source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '594'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 # Consoles Outils {#tools-consoles}
 
-La variable **Outils** les consoles vous donnent accès à plusieurs outils spécialisés pour administrer des sites web, des ressources numériques et d’autres aspects de votre référentiel de contenu. Il existe actuellement deux versions de la console **Outils** en fonction de l’interface utilisateur que vous utilisez :
+Les consoles **Outils** permettent d’accéder à différents outils spécialisés pour administrer des sites web, des ressources numériques et d’autres aspects du référentiel de contenu. Il existe actuellement deux versions de la console **Outils** en fonction de l’interface utilisateur que vous utilisez :
 
 * [Outils – IU optimisée pour les écrans tactiles](#tools-touch-optimized-ui)
 * [Outils – IU classique](#tools-classic-ui)
@@ -370,11 +370,11 @@ La variable **Outils** les consoles vous donnent accès à plusieurs outils spé
   </tr>
   <tr>
    <td>Configurations du contexte client<br /> </td>
-   <td>ClientContext représente un ensemble de données utilisateur assemblées de manière dynamique. Les configurations par défaut et Experience Cloud sont conservées ici.<br /> </td>
+   <td>ClientContext représente un ensemble de données utilisateur assemblées de manière dynamique. Les configurations Experience Cloud et par défaut sont conservées ici.<br /> </td>
   </tr>
   <tr>
    <td>Configuration des services cloud<br /> </td>
-   <td>Contient des configurations liées à l’intégration à Adobe Experience Cloud.</td>
+   <td>Contient des configurations liées à l’intégration à Adobe Experience Cloud.</td>
   </tr>
   <tr>
    <td>Paramètres cloud<br /> </td>
@@ -386,11 +386,11 @@ La variable **Outils** les consoles vous donnent accès à plusieurs outils spé
   </tr>
   <tr>
    <td>Gestion des ressources numériques (DAM) </td>
-   <td>Accès à différentes options.</td>
+   <td>Permet d’accéder à différentes options.</td>
   </tr>
   <tr>
    <td>Tableaux de bord</td>
-   <td>Créez des tableaux de bord de rapports ; ils offrent un moyen personnalisable de définir des pages qui affichent des données consolidées.</td>
+   <td>Permet de créer des tableaux de bord de rapports. Ces derniers offrent un moyen personnalisable de définir des pages qui affichent des données consolidées.</td>
   </tr>
   <tr>
    <td>Documentation personnalisée</td>
@@ -402,11 +402,11 @@ La variable **Outils** les consoles vous donnent accès à plusieurs outils spé
   </tr>
   <tr>
    <td>Envois de formulaire</td>
-   <td>Liste des envois de formulaire reçus.</td>
+   <td>La liste des envois de formulaire reçus.</td>
   </tr>
   <tr>
    <td>Importateurs </td>
-   <td>Accès à différentes options.</td>
+   <td>Permet d’accéder à différentes options.</td>
   </tr>
   <tr>
    <td>Vérificateur de lien externe</td>
@@ -422,19 +422,19 @@ La variable **Outils** les consoles vous donnent accès à plusieurs outils spé
   </tr>
   <tr>
    <td>Réplication - Agents de réplication</td>
-   <td>Utilisé pour répliquer les données de l’instance d’auteur sur Publier lors de la publication de pages ou avec la réplication inverse pour renvoyer les commentaires des utilisateurs de l’environnement de publication à l’auteur.</td>
+   <td>Utilisé pour répliquer les données de l’instance de création à l’instance de publication lors de la publication des pages ou avec la réplication inverse pour renvoyer à l’instance de création les commentaires des utilisateurs et utilisatrices à partir de l’environnement de publication.</td>
   </tr>
   <tr>
    <td>Rapports</td>
-   <td>AEM fournit toute une gamme de rapports personnalisés, vous permet de créer des rapports personnalisés ou de développer les vôtres.</td>
+   <td>AEM fournit toute une gamme de rapports personnalisés, vous permettant de créer des rapports personnalisés et/ou de développer vos propres rapports.</td>
   </tr>
   <tr>
    <td>Génération de modèles automatique de page par défaut</td>
-   <td>Avec la génération de modèles automatique, vous pouvez créer un formulaire (un modèle automatique) avec des champs qui reflètent la structure souhaitée pour vos pages, puis utiliser ce formulaire pour créer facilement des pages en fonction de cette structure.</td>
+   <td>Grâce à la fonction de génération de modèles automatiques, vous pouvez créer un formulaire (un modèle automatique) avec des champs qui reflètent la structure que vous souhaitez pour vos pages, puis utiliser ce formulaire pour créer facilement des pages basées sur cette structure.</td>
   </tr>
   <tr>
    <td>Sécurité – Configuration en libre-service </td>
-   <td>Configurez les courriers électroniques que les utilisateurs reçoivent automatiquement lorsqu’ils créent un compte ou réinitialisent un mot de passe et pour confirmer qu’un mot de passe a été réinitialisé.</td>
+   <td>Permet de configurer les e-mails que les utilisateurs et utilisatrices reçoivent automatiquement lorsqu’ils créent un compte ou réinitialisent un mot de passe et de confirmer qu’un mot de passe a été réinitialisé.</td>
   </tr>
   <tr>
    <td>Segmentation</td>
@@ -450,7 +450,7 @@ La variable **Outils** les consoles vous donnent accès à plusieurs outils spé
   </tr>
   <tr>
    <td>Contrôle de version - Purger les versions</td>
-   <td>Purge des versions de page selon les besoins.</td>
+   <td>Purger les versions de page selon les besoins.</td>
   </tr>
   <tr>
    <td>Workflow</td>

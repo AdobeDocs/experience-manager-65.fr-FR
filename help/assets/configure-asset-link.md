@@ -6,9 +6,9 @@ role: Admin
 feature: Asset Management
 exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3148'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -260,7 +260,7 @@ Experience Manager contient des index utilisés pour l’interrogation. Créez 
 
 ## Configuration de la recherche visuelle ou par analogie {#configure-visual-similarity-search}
 
-La fonctionnalité de recherche visuelle vous permet de rechercher des ressources visuellement similaires dans le référentiel AEM Assets à l’aide du panneau Adobe Asset Link . Cette fonctionnalité est disponible dans la version 6.5.0 ou une version ultérieure et seules les ressources indexées sont recherchées. Pour plus d’informations, consultez [Comment configurer la recherche visuelle](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=fr#configvisualsearch).
+La fonctionnalité de recherche visuelle vous permet de rechercher des ressources visuellement similaires dans le référentiel AEM Assets à l’aide du panneau Adobe Asset Link. Cette fonctionnalité est disponible dans la version 6.5.0 ou une version ultérieure et seules les ressources indexées sont recherchées. Pour plus d’informations, consultez [Comment configurer la recherche visuelle](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=fr#configvisualsearch).
 
 ## Génération de rendus pour placement uniquement pour Adobe InDesign {#fpo-renditions}
 

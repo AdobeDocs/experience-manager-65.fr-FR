@@ -3,9 +3,9 @@ title: En savoir plus sur la définition de métadonnées et de balisage pour le
 description: En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu
 exl-id: b4cc1311-1ef7-409a-bd41-0456519b3436
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '257'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -32,11 +32,11 @@ Vous pouvez utiliser trois méthodes pour ajouter des métadonnées et des balis
 
   ![Créer un fragment de contenu – Indiquez le nom](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* La variable **Variations** de l’éditeur de fragment de contenu vous permet d’ajouter des **Balises** de votre projet :
+* L’onglet **Variations** de l’éditeur de fragment de contenu vous permet d’ajouter des **Balises** prédéfinies depuis votre projet :
 
   ![Éditeur de fragment de contenu – Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
-* La variable **Métadonnées** dans l’onglet de l’éditeur de fragment de contenu, vous pouvez ajouter différents champs de métadonnées et des champs prédéfinis. **Balises** de votre projet :
+* L’onglet **Métadonnées** de l’éditeur de fragment de contenu vous permet d’ajouter différents champs de métadonnées et des **Balises** prédéfinies à partir de votre projet :
 
   ![Éditeur de fragment de contenu – Métadonnées](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
