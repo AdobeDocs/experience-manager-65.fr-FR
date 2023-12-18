@@ -1,20 +1,20 @@
 ---
-title: Réduction des vulnérabilités de Struts 2 RCE pour Experience Manager Forms on JEE
-description: Réduction des vulnérabilités de Struts 2 RCE pour Experience Manager Forms on JEE
+title: Réduction des vulnérabilités de Struts 2 pour Experience Manager Forms on JEE
+description: Réduction des vulnérabilités de Struts 2 pour Experience Manager Forms on JEE
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
-source-git-commit: 531eed9bb6d7792a6da0104b533a505738a64786
+source-git-commit: 5f5fcc10927d62cdfaeb0770c34052ceda02b2e8
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '479'
 ht-degree: 2%
 
 ---
 
 
-# Réduction des vulnérabilités de Struts 2 RCE pour Experience Manager Forms {#mitigatin-struts2-rce-vulnerabilities-for-aem-forms}
+# Réduction des vulnérabilités des débuts 2 pour Experience Manager Forms {#mitigatin-struts2-rce-vulnerabilities-for-aem-forms}
 
 ## Problème
 
@@ -46,20 +46,22 @@ Vous pouvez utiliser les étapes de limitation manuelle pour résoudre le probl�
    * patch-archive.bat
    * patch-archive.sh
 1. Ouvrez la fenêtre du terminal et accédez au dossier contenant les fichiers extraits.
-1. Utilisez l’outil de correction manuelle pour rechercher, répertorier et remplacer tous les fichiers JAR de struts2. Pour rechercher et remplacer le fichier jar struts2-core-2.5.30 et struts2-core.jar :
+1. Utilisez l’outil de correction manuelle pour rechercher, répertorier et remplacer tous les fichiers JAR de struts2. L’outil nécessite une connexion Internet, car il télécharge les dépendances au moment de l’exécution. Donc, avant d&#39;exécuter l&#39;outil, vérifiez que vous êtes connecté à Internet.
+
+Pour rechercher et remplacer le fichier jar struts2-core-2.5.30 et struts2-core.jar :
 
 
 >[!BEGINTABS]
 
 >[!TAB Windows]
 
-1. Exécutez la commande suivante pour répertorier tous les fichiers jar struts2. Avant d’exécuter la commande, remplacez le chemin d’accès de la commande ci-dessus par celui de votre serveur de formulaires AEM :
+1. Exécutez la commande suivante pour répertorier tous les fichiers jar struts2. Avant d’exécuter la commande, remplacez le chemin d’accès de la commande par le chemin d’accès de votre serveur AEM Forms :
 
    ```
    patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
    ```
 
-1. Exécutez les commandes suivantes dans l’ordre indiqué pour le remplacement récursif statique. Avant d’exécuter la commande . Remplacez le chemin d’accès dans la commande ci-dessus par le chemin d’accès de votre serveur de formulaires AEM et par le chemin d’accès `struts2-core-2.5.33.jar` fichier .
+1. Exécutez les commandes suivantes dans l’ordre indiqué pour le remplacement récursif statique. Avant d’exécuter la commande . Remplacez le chemin d’accès dans la commande par le chemin d’accès de votre serveur AEM Forms et par le chemin d’accès `struts2-core-2.5.33.jar` fichier .
 
 
    ```
@@ -74,13 +76,13 @@ Vous pouvez utiliser les étapes de limitation manuelle pour résoudre le probl�
 
 >[!TAB Linux]
 
-1. Exécutez la commande suivante pour répertorier tous les fichiers jar struts2. Avant d’exécuter la commande, remplacez le chemin d’accès de la commande ci-dessus par celui de votre serveur de formulaires AEM :
+1. Exécutez la commande suivante pour répertorier tous les fichiers jar struts2. Avant d’exécuter la commande, remplacez le chemin d’accès de la commande par le chemin d’accès de votre serveur AEM Forms :
 
    ```
    patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
    ```
 
-1. Exécutez les commandes suivantes dans l’ordre indiqué pour le remplacement récursif statique. Avant d’exécuter la commande Remplacez le chemin d’accès de la commande ci-dessus par le chemin d’accès de votre serveur de formulaires AEM et par le chemin d’accès `struts2-core-2.5.33.jar` fichier .
+1. Exécutez les commandes suivantes dans l’ordre indiqué pour le remplacement récursif statique. Avant d’exécuter la commande, remplacez le chemin d’accès de la commande par le chemin d’accès de votre serveur AEM Forms et par le chemin d’accès `struts2-core-2.5.33.jar` fichier .
 
    ```
    patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace \temp\struts2-core-2.5.33.jar
