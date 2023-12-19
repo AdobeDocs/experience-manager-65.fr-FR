@@ -27,7 +27,7 @@ Dans le cas ci-dessus, L’option **Comptes dans n’importe quel répertoire de
    >
    > * Pour l’application **Comptes dans n’importe quel répertoire d’organisation (n’importe quel répertoire Azure AD - à plusieurs clients)**, Adobe recommande d’utiliser un compte professionnel plutôt qu’un compte de messagerie personnel.
    > * L’application **Comptes Microsoft® personnels uniquement** n’est pas prise en charge.
-   * Adobe recommande d’utiliser l’application **Compte Microsoft® à plusieurs clients et personnel**.
+   >* Adobe recommande d’utiliser l’application **Compte Microsoft® à plusieurs clients et personnel**.
 
 1. Ensuite, accédez à **Certificats et secrets**, cliquez sur **Nouveau secret client** et suivez les étapes sur l’écran pour créer un secret. Veillez à prendre note de cette valeur de secret pour une utilisation ultérieure.
 
@@ -56,7 +56,7 @@ Dans le cas ci-dessus, L’option **Comptes dans n’importe quel répertoire de
 
    >[!NOTE]
    >
-   Il est obligatoire de sélectionner les cases à cocher **Jetons d’accès** et **Jetons d’ID**.
+   >Il est obligatoire de sélectionner les cases à cocher **Jetons d’accès** et **Jetons d’ID**.
 
 1. Cliquez sur **Présentation** dans le volet de gauche et copiez les valeurs pour **ID d’application (client)**, **ID de répertoire (client)**, et **Secret client** pour une utilisation ultérieure.
 
@@ -72,7 +72,7 @@ Ensuite, vous devez générer le code d’autorisation tel qu’indiqué dans le
 
    >[!NOTE]
    >
-   Dans le cas d’une application à client(e) unique, remplacez `common` par votre `[tenantid]` dans l’URL suivante pour générer le code d’autorisation : `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
+   >Dans le cas d’une application à client(e) unique, remplacez `common` par votre `[tenantid]` dans l’URL suivante pour générer le code d’autorisation : `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
 
 1. Lorsque vous tapez l’URL ci-dessus, vous êtes redirigé(e) vers l’écran de connexion :
    ![Écran de connexion](/help/forms/using/assets/azure_loginscreen.png)
@@ -97,8 +97,8 @@ Vous devez ensuite générer le jeton d’actualisation tel qu’expliqué dans 
 
    >[!NOTE]
    >
-   Dans une application à client(e) unique, pour générer un jeton d’actualisation, utilisez la commande cURL suivante et remplacez `common` par le `[tenantid]` dans :
-   `curl -H "ContentType application/x-www-form-urlencoded" -d "client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]" -X POST https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/token`
+   >Dans une application à client(e) unique, pour générer un jeton d’actualisation, utilisez la commande cURL suivante et remplacez `common` par le `[tenantid]` dans :
+   >`curl -H "ContentType application/x-www-form-urlencoded" -d "client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]" -X POST https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/token`
 
 1. Prenez note du jeton d’actualisation.
 
@@ -110,7 +110,7 @@ Maintenant, configurez le service de messagerie sur le dernier serveur JEE en vo
 
    >[!NOTE]
    >
-   Pour activer le service d’authentification oAuth 2.0, il est obligatoire de cocher la case **Si le serveur SMTP requiert une authentification (authentification SMTP)**.
+   >Pour activer le service d’authentification oAuth 2.0, il est obligatoire de cocher la case **Si le serveur SMTP requiert une authentification (authentification SMTP)**.
 
 1. Définir **Paramètres d’authentification oAuth 2.0** sur `True`.
 1. Copiez les valeurs de **ID client** et **Secret client** à partir du portail Azure.
@@ -123,8 +123,8 @@ Maintenant, configurez le service de messagerie sur le dernier serveur JEE en vo
 
    >[!NOTE]
    >
-   * Le protocole Transport Security possède les valeurs valides suivantes : &#39;blank&#39;, &#39;SSL&#39; ou &#39;TLS&#39;. Définissez les valeurs **SMTP Transport Security** et **Receive Transport Security** sur **TLS** pour activer le service d’authentification oAuth.
-   * Le **protocole POP3** n’est pas pris en charge pour OAuth lors de l’utilisation de points d’entrée d’e-mail.
+   >* Le protocole Transport Security possède les valeurs valides suivantes : &#39;blank&#39;, &#39;SSL&#39; ou &#39;TLS&#39;. Définissez les valeurs **SMTP Transport Security** et **Receive Transport Security** sur **TLS** pour activer le service d’authentification oAuth.
+   >* Le **protocole POP3** n’est pas pris en charge pour OAuth lors de l’utilisation de points d’entrée d’e-mail.
 
    ![Paramètres de connexion](/help/forms/using/assets/oauth_connectionsettings.png)
 
@@ -134,7 +134,7 @@ Maintenant, configurez le service de messagerie sur le dernier serveur JEE en vo
 
    >[!NOTE]
    >
-   Si vous souhaitez modifier le paramètre d’authentification Auth 2.0 en authentification de base pour un processus particulier dans un Workbench, vous pouvez définir la valeur **Authentification OAuth 2.0** sur « False » sous **Utiliser les paramètres globaux** dans l’onglet **Paramètres de connexion**.
+   >Si vous souhaitez modifier le paramètre d’authentification Auth 2.0 en authentification de base pour un processus particulier dans un Workbench, vous pouvez définir la valeur **Authentification OAuth 2.0** sur « False » sous **Utiliser les paramètres globaux** dans l’onglet **Paramètres de connexion**.
 
 ## Pour activer les notifications de tâche oAuth {#enable_oauth_task}
 
@@ -148,7 +148,7 @@ Maintenant, configurez le service de messagerie sur le dernier serveur JEE en vo
 
    >[!NOTE]
    >
-   Pour en savoir plus sur les notifications de tâche, [cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/manage-endpoints/configuring-email-endpoints.html?lang=fr#create-an-email-endpoint-for-the-complete-task-service).
+   >Pour en savoir plus sur les notifications de tâche, [cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/manage-endpoints/configuring-email-endpoints.html?lang=fr#create-an-email-endpoint-for-the-complete-task-service).
 
 ## Pour configurer le point d’entrée de l’e-mail, {#configure_email_endpoint}
 
@@ -162,7 +162,7 @@ Maintenant, configurez le service de messagerie sur le dernier serveur JEE en vo
 
    >[!NOTE]
    >
-   Pour plus d’informations sur la configuration des points d’entrée d’e-mail, cliquez sur [Configuration d’un point d’entrée d’e-mail](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/manage-endpoints/configuring-email-endpoints.html?lang=fr).
+   >Pour plus d’informations sur la configuration des points d’entrée d’e-mail, cliquez sur [Configuration d’un point d’entrée d’e-mail](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/manage-endpoints/configuring-email-endpoints.html?lang=fr).
 
 ## Résolution des problèmes {#troubleshooting}
 

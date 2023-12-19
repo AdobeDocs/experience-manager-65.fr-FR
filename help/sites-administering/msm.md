@@ -281,7 +281,7 @@ Dans l’exemple précédent, `/content/we-retail/language-masters/en` est le si
 
 >[!NOTE]
 >
-Les graphiques et les descriptions de cette section représentent des instantanés de Live Copies potentielles. Ils ne sont pas exhaustifs, mais offrent un aperçu mettant en évidence les caractéristiques spécifiques.
+>Les graphiques et les descriptions de cette section représentent des instantanés de Live Copies potentielles. Ils ne sont pas exhaustifs, mais offrent un aperçu mettant en évidence les caractéristiques spécifiques.
 
 Lorsque vous créez initialement une Live Copy, les pages sources sélectionnées sont reflétées sur une base 1:1 dans la Live Copy. Par la suite, de nouvelles ressources (pages et/ou paragraphes) peuvent également être créées directement dans la Live Copy. Il est donc utile d’être conscient de ces variations et de savoir comment elles affectent la synchronisation. Les compositions possibles sont les suivantes :
 
@@ -323,7 +323,7 @@ Lorsque vous créez (ou un processus crée) une [page dans une Live Copy exista
 
 >[!NOTE]
 >
-Si vous déplacez ou renommez une page de la branche Live Copy, cette opération est traitée (en interne) comme une Live Copy imbriquée pour permettre à AEM d’effectuer le suivi des relations.
+>Si vous déplacez ou renommez une page de la branche Live Copy, cette opération est traitée (en interne) comme une Live Copy imbriquée pour permettre à AEM d’effectuer le suivi des relations.
 
 #### Live Copies empilées {#stacked-live-copies}
 
@@ -384,7 +384,7 @@ Une configuration de déploiement définit quand et comment une Live Copy est sy
 
   >[!NOTE]
   >
-  Vous pouvez créer des actions personnalisées pour votre instance à l’aide de l’API Java™.
+  >Vous pouvez créer des actions personnalisées pour votre instance à l’aide de l’API Java™.
 
 Les configurations de déploiement peuvent être réutilisées, de sorte que plusieurs Live Copies puissent utiliser la même configuration de déploiement. L’installation standard comprend plusieurs [configurations de déploiement](/help/sites-administering/msm-sync.md#installed-rollout-configurations).
 
@@ -406,13 +406,13 @@ Vous pouvez également [désolidariser une Live Copy](/help/sites-administering
 
 >[!CAUTION]
 >
-L’action Désolidariser est définitive et irréversible.
+>L’action Désolidariser est définitive et irréversible.
 
 L’action Désolidariser supprime définitivement les relations en direct entre une Live Copy et sa page de plan directeur. Toutes les propriétés MSM sont supprimées de la Live Copy et les pages Live Copy deviennent une copie autonome.
 
 >[!NOTE]
 >
-Consultez [Désolidarisation d’une Live Copy](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) pour plus d’informations, y compris pour connaître l’impact associé sur les sous-pages et les pages parentes.
+>Consultez [Désolidarisation d’une Live Copy](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) pour plus d’informations, y compris pour connaître l’impact associé sur les sous-pages et les pages parentes.
 
 ## Étapes standard d’utilisation de MSM {#standard-steps-for-using-msm}
 

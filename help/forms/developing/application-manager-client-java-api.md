@@ -248,7 +248,7 @@ L’exemple de code Java™ suivant importe une application à l’aide de l’A
 
 >[!NOTE]
 >
-L’API Java™ importApplication() remplace les applications existantes du même nom par une application plus récente. Pour mettre à jour une application existante, utilisez l’API importApplication() au lieu de l’API updateApplication().
+>L’API Java™ importApplication() remplace les applications existantes du même nom par une application plus récente. Pour mettre à jour une application existante, utilisez l’API importApplication() au lieu de l’API updateApplication().
 
 ```java
 /*
