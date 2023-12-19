@@ -9,7 +9,7 @@ exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 22%
+ht-degree: 89%
 
 ---
 
@@ -20,11 +20,11 @@ We.Retail a été créé avec une structure de site globalisée offrant un gabar
 ## Essayer de le faire {#trying-it-out}
 
 1. Ouvrez la console Sites à partir de **Navigation globale > Sites**.
-1. Passez en mode Colonnes (s’il n’est pas déjà actif) et sélectionnez We.Retail. Notez l’exemple de structure par pays avec la Suisse, les Etats-Unis, la France, etc., à côté du Principal Langue.
+1. Passez en vue Colonnes (si elle n’est pas déjà active) et sélectionnez We.Retail. Notez l’exemple de structure pour la Suisse, les États-Unis, la France, etc. avec les gabarits de langue.
 
    ![chlimage_1-87](assets/chlimage_1-87a.png)
 
-1. Sélectionnez Suisse et affichez les racines de la langue pour les langues de ce pays. Il n&#39;y a pas encore de contenu sous ces racines.
+1. Sélectionnez Suisse et affichez les racines de langue pour les langues de ce pays. Il n’y a pas encore de contenu sous ces racines.
 
    ![chlimage_1-88](assets/chlimage_1-88a.png)
 
@@ -32,9 +32,9 @@ We.Retail a été créé avec une structure de site globalisée offrant un gabar
 
    ![chlimage_1-89](assets/chlimage_1-89a.png)
 
-1. Revenez au mode Colonnes, cliquez sur le Principal Langue et affichez les racines du gabarit de langue avec le contenu. Seul l&#39;anglais a du contenu.
+1. Revenez en vue Colonnes, cliquez sur le gabarit de langue et affichez ses racines avec le contenu. Seul l’anglais comporte du contenu.
 
-   We.Retail n’est fourni avec aucun contenu traduit, mais la structure et la configuration sont en place pour vous permettre de démontrer les services de traduction.
+   We.Retail n’est fourni avec aucun contenu traduit, mais la structure et la configuration sont en place pour vous permettre d’appliquer des services de traduction.
 
    ![chlimage_1-90](assets/chlimage_1-90a.png)
 
@@ -42,19 +42,19 @@ We.Retail a été créé avec une structure de site globalisée offrant un gabar
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
-1. Cochez la case en regard de l’option **Copies de langue** libellé pour sélectionner toutes les copies de langue. Dans le **Mise à jour des copies de langue** de la section , sélectionnez l’option pour **Création d’un projet de traduction**. Attribuez un nom au projet et cliquez sur **Mettre à jour**.
+1. Cochez la case en regard du libellé **Copies de langue** pour sélectionner toutes les copies de langue. Dans la section **Mise à jour des copies de langue**, sélectionnez l’option pour **Créer un projet de traduction**. Indiquez un nom pour le projet puis cliquez sur **Mettre à jour**.
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
-1. Un projet est créé pour chaque traduction de langue. Les afficher sous **Navigation > Projets**.
+1. Un projet est créé pour chaque langue traduite. Les afficher sous **Navigation > Projets**.
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
-1. Cliquez sur Allemand pour afficher les détails du projet de traduction. L’état se trouve dans **Version préliminaire**. Pour commencer la traduction avec le service de traduction de Microsoft®, cliquez sur le chevron en regard de l’option **Tâche de traduction** titre et sélectionner **Début**.
+1. Cliquez sur Allemand pour afficher les détails du projet de traduction. Le statut est **Brouillon**. Pour commencer la traduction avec le service de traduction de Microsoft®, cliquez sur le chevron en regard du titre **Tâche de traduction** et sélectionnez **Démarrer**.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-1. Le projet de traduction commence. Cliquez sur les points de suspension en bas de la carte Tâche de traduction pour afficher les détails. Pages avec l’état **Prêt pour la révision** ont déjà été traduits par le service de traduction.
+1. Le projet de traduction commence. Cliquez sur les points de suspension en bas de la carte Tâche de traduction pour afficher les détails. Les pages ayant le statut **Prête pour la révision** ont déjà été traduites par le service de traduction.
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
 
@@ -64,7 +64,7 @@ We.Retail a été créé avec une structure de site globalisée offrant un gabar
 
 >[!NOTE]
 >
->Cette procédure a démontré l’intégration intégrée à la traduction automatique de Microsoft®. En utilisant la variable [AEM structure d’intégration de traduction](/help/sites-administering/translation.md), vous pouvez intégrer de nombreux services de traduction standard pour orchestrer la traduction d’AEM.
+>Cette procédure montre l’intégration de la traduction automatique de Microsoft®. En utilisant le [framework d’intégration de traduction AEM](/help/sites-administering/translation.md), vous pouvez intégrer de nombreux services de traduction standard pour orchestrer la traduction d’AEM.
 
 ## Informations supplémentaires {#further-information}
 

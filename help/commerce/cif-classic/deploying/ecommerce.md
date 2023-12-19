@@ -1,12 +1,12 @@
 ---
 title: Présentation du commerce électronique
-description: AEM eCommerce générique est disponible dans le cadre de l’installation standard et vous fournit toutes les fonctionnalités de la structure eCommerce.
+description: L’e-commerce générique AEM est disponible dans le cadre de l’installation standard et vous offre toutes les fonctionnalités de la structure d’e-commerce.
 feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 79%
+source-wordcount: '270'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ Adobe propose deux versions de framework d’intégration de Commerce :
 |                         | CIF on-Prem | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versions d’AEM prises en charge | AEM On-Prem ou AMS 6.x | AEM AMS 6.4 et 6.5 |
-| Back-end | - AEM, Java <br> - Intégration monolithique, mappage de prégénération (modèle)<br> - Référentiel JCR | - ADOBE COMMERCE <br>- Java et JavaScript <br>- Aucune donnée Commerce stockée dans le référentiel JCR |
+| Back-end | - AEM, Java <br> - Intégration monolithique, mappage de prégénération (modèle)<br> - Référentiel JCR | - Adobe Commerce <br>- Java et JavaScript <br>- Aucune donnée Commerce stockée dans le référentiel JCR |
 | Front-end | Pages générées côté serveur AEM | Application de page mixte (rendu hybride) |
 | Catalogue de produits | - Importateur de produits, éditeur, mise en cache dans AEM <br>- Catalogues réguliers avec des pages AEM ou proxy | - Pas d’importation de produit <br>- Modèles génériques <br>- Données à la demande via le connecteur |
 | Évolutivité | - Peut prendre en charge jusqu’à quelques millions de produits (selon le cas d’utilisation) <br> - Mise en cache sur Dispatcher | - Aucune limitation de volume <br>- Mise en cache sur Dispatcher ou CDN |
@@ -28,7 +28,7 @@ Adobe propose deux versions de framework d’intégration de Commerce :
 | Quand l’utiliser | Cas d’utilisation limités : dans le cas de scénarios dans lesquels de petits catalogues statiques doivent être importés | Solution préférée dans la plupart des cas d’utilisation |
 
 
-## Déploiement d’autres mises en oeuvre {#deploying-other-implementations}
+## Déploiement d’autres mises en œuvre {#deploying-other-implementations}
 
 Pour AEM et Adobe Commerce, voir [Intégration AEM et Adobe Commerce](/help/commerce/cif/integrating/magento.md) en utilisant la variable [Commerce integration framework](/help/commerce/cif/introduction.md).
 

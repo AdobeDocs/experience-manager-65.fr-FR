@@ -10,7 +10,7 @@ exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '5991'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -91,7 +91,7 @@ Si l’image est au format JPEG, sa qualité peut aussi dépendre de la taille d
 
 #### Propriétés {#properties}
 
-La boîte de dialogue vous permet de modifier les propriétés de votre instance du composant Image adaptative, dont la plupart sont communes au composant Image sur lequel il est basé. Les propriétés sont disponibles dans deux onglets :
+La boîte de dialogue permet de modifier les propriétés pour votre instance du composant Image adaptative. Parmi ces propriétés, nombreuses sont celles qui sont communes au composant d’image sur lequel il est basé. Les propriétés sont disponibles dans deux onglets :
 
 * **Image**
 
@@ -127,7 +127,7 @@ Pour plus d’informations sur la personnalisation du composant d’image adapta
 
 ### Carrousel {#carousel}
 
-Le composant Carrousel vous permet d’afficher les images associées à des pages individuelles :
+Le composant de carrousel vous permet d’afficher des images associées à des pages individuelles :
 
 * une à la fois
 * pour une courte durée
@@ -393,7 +393,7 @@ L’image finale (avec son **Titre** et sa **Description**) peut s’afficher co
 
 ### Liste {#list}
 
-Le composant Liste permet de configurer les critères de recherche pour l’affichage d’une liste :
+Le composant Liste vous permet de configurer des critères de recherche pour l’affichage d’une liste :
 
 * **Liste**
 
@@ -692,7 +692,7 @@ Pour plus d’informations sur l’application de balises, voir [Utilisation des
 >
 >Adobe recommande d’utiliser le composant **Tableau** pour les tableaux, bien qu’ils puissent également être construits avec le composant **Texte**.
 
-Le composant Texte permet de saisir un bloc de texte à l’aide d’un éditeur WYSIWYG, avec les fonctionnalités fournies par [Éditeur de texte enrichi](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md). Une sélection d’icônes vous permet de mettre en forme le texte, notamment les caractéristiques de police, l’alignement, les liens, les listes et la mise en retrait.
+Le composant Texte permet de saisir un bloc de texte en utilisant un éditeur WYSIWYG, avec les fonctionnalités de l’[éditeur de texte enrichi](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md). Une série d’icônes permet de mettre en forme le texte dont les attributs de police, alignement, liens, listes et mise en retrait.
 
 ![dc_text](assets/dc_text.png)
 
@@ -725,7 +725,7 @@ Vous pouvez configurer :
 
 * **Propriétés de l’image** (**Propriétés d’image avancées**)
 
-  Permet de définir les éléments suivants :
+  Permet de spécifier les éléments suivants :
 
    * **Ressource image**
 
@@ -871,7 +871,7 @@ Lors de la configuration de l’un des composants de formulaire, les onglets sui
 
 * **Titre et texte**
 
-  Cet onglet vous invite à renseigner des informations de base, telles que le titre du formulaire et tout texte d’accompagnement. Le cas échéant, il vous permet également de définir d’autres informations clés, telles que si le champ peut être sélectionné plusieurs fois et si des éléments peuvent être sélectionnés.
+  Cet onglet vous invite à renseigner des informations de base, telles que le titre du formulaire et tout texte d’accompagnement. Le cas échéant, il vous permet également d’apporter d’autres informations essentielles ; par exemple, s’il s’agit d’un champ à sélection multiple ou encore les différents éléments pouvant être sélectionnés.
 
 * **Valeurs initiales**
 
@@ -1187,7 +1187,7 @@ Vous pouvez configurer différents paramètres pour ce composant, notamment un m
 
 ### Groupe de cases à cocher {#checkbox-group}
 
-Une case à cocher permet de créer une liste d’une ou plusieurs cases à cocher, dont plusieurs peuvent être sélectionnées en même temps.
+Une case à cocher vous permet de créer une liste composée d’une ou de plusieurs cases à cocher. Plusieurs d’entre elles peuvent être simultanément cochées.
 
 ![dc_form_checkboxgroupuse](assets/dc_form_checkboxgroupuse.png)
 
@@ -1292,7 +1292,7 @@ Vous pouvez spécifier le nom de l’élément ainsi qu’un titre et une descri
 
 ### Bouton Envoyer {#submit-button}
 
-Ce composant permet de créer un bouton d’envoi, avec le texte par défaut :
+Ce composant vous permet de créer un bouton Envoyer avec le texte par défaut :
 
 ![dc_form_submitbutton](assets/dc_form_submitbutton.png)
 
@@ -1302,7 +1302,7 @@ Ou votre propre texte :
 
 ### Champ des balises {#tags-field}
 
-Ce champ permet de sélectionner des balises :
+Ce champ permet de sélectionner des balises :
 
 ![dc_form_tags_use](assets/dc_form_tags_use.png)
 

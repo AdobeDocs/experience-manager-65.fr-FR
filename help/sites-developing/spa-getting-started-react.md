@@ -1,6 +1,6 @@
 ---
 title: Prise en main des SPA dans AEM avec React
-description: Cet article présente un exemple d’application SPA, explique comment elle est structurée et vous permet de prendre rapidement en main votre propre SPA à l’aide du framework React.
+description: Cet article présente un exemple d’application SPA, explique comment elle est structurée et vous permet de prendre rapidement en main votre propre SPA à l’aide du framework React.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -10,7 +10,7 @@ exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '1148'
-ht-degree: 86%
+ht-degree: 91%
 
 ---
 
@@ -222,7 +222,7 @@ class Image extends Component {
 MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);
 ```
 
-L’idée centrale de SPA dans AEM est de mapper les composants de la version de la version de la version de la version de la version de la version de la version de la version de la version de la version de la version d’SPA aux composants de la version d’ et de mettre à jour le composant lorsque le contenu est modifié (et inversement). Consultez le document [Aperçu de l’éditeur de SPA](/help/sites-developing/spa-overview.md), qui résume ce modèle de communication.
+Les SPA dans AEM ont comme principale finalité de mapper les composants SPA aux composants AEM et de mettre à jour le composant lorsque le contenu est modifié (et inversement). Consultez le document [Aperçu de l’éditeur de SPA](/help/sites-developing/spa-overview.md), qui résume ce modèle de communication.
 
 `MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);`
 

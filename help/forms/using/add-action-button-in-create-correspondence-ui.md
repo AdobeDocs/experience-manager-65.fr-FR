@@ -1,6 +1,6 @@
 ---
 title: Ajouter un bouton d’action personnalisé dans l’interface utilisateur de création de correspondance
-description: Découvrez comment ajouter une action ou un bouton personnalisé dans l’interface utilisateur de création de correspondance
+description: Découvrez comment ajouter une action ou un bouton personnalisé dans l’interface utilisateur de création de correspondance.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
@@ -9,8 +9,8 @@ feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1879'
-ht-degree: 78%
+source-wordcount: '1854'
+ht-degree: 98%
 
 ---
 
@@ -18,23 +18,23 @@ ht-degree: 78%
 
 ## Présentation {#overview}
 
-La solution Correspondence Management vous permet d’ajouter des actions personnalisées à l’interface utilisateur de création de correspondance.
+La solution Correspondence Management vous permet d’ajouter des actions personnalisées à l’interface utilisateur Créer une correspondance.
 
 Le scénario présenté dans ce document explique comment créer un bouton dans l’interface utilisateur de création de correspondance pour partager une lettre sous la forme d’un PDF de révision joint à un e-mail.
 
 ### Prérequis {#prerequisites}
 
-Pour terminer ce scénario, vous devez disposer des éléments suivants :
+Les éléments suivants sont requis afin de réaliser ce scénario :
 
-* Connaissance de CRX et JavaScript
-* LiveCycle Server
+* Découverte de CRX et JavaScript
+* Serveur LiveCycle
 
-## Scénario : création du bouton dans l’interface utilisateur de création de correspondance pour envoyer une lettre à réviser {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
+## Scénario : création du bouton dans l’interface utilisateur de création de correspondance pour envoyer une lettre à réviser {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
 
-L’ajout d’un bouton avec une action (ici, envoyer une lettre pour révision) à l’interface utilisateur de création de correspondance comprend :
+L’ajout d’un bouton avec une action (ici, envoyer une lettre pour révision) à l’interface utilisateur de création de correspondance comprend :
 
-1. Ajout du bouton à l’interface utilisateur de création de correspondance
-1. Ajout d’une gestion des actions au bouton
+1. Ajouter le bouton à l’interface utilisateur de création de correspondance
+1. Ajouter une gestion d’actions au bouton
 1. L’ajout du processus LiveCycle pour permettre le traitement d’action
 
 ### Ajout du bouton à l’interface utilisateur de création de correspondance {#add-the-button-to-the-create-correspondence-user-interface}
@@ -65,14 +65,14 @@ L’ajout d’un bouton avec une action (ici, envoyer une lettre pour révision)
 
    1. Accédez à « /libs/fd/cm/config/defaultApp/acmExtensionsConfig.xml ».
 
-   1. Cliquez avec le bouton droit sur le fichier acmExtensionsConfig.xml et sélectionnez **Copier**.
+   1. Faites un clic droit sur le fichier acmExtensionsConfig.xml et sélectionnez **Copier**.
 
       ![Copie du fichier acmExtensionsConfig.xml](assets/3_acmextensionsconfig_xml_copy.png)
 
-   1. Cliquez avec le bouton droit de la souris sur le **defaultApp** dossier sous &quot;/apps/fd/cm/config/defaultApp/&quot;, puis sélectionnez **Coller**.
+   1. Cliquez avec le bouton droit de la souris sur le dossier **defaultApp** sous « /apps/fd/cm/config/defaultApp/ », puis sélectionnez **Coller**.
    1. Cliquez sur **Enregistrer tout**.
 
-1. Double-cliquez sur la copie du fichier acmExtentionsConfig.xml que vous venez de créer dans le dossier des applications. Le fichier s’ouvre pour modification.
+1. Double-cliquez sur la copie du fichier acmExtentionsConfig.xml que vous venez de créer dans le dossier des applications. Le fichier s’ouvre en vue de sa modification.
 1. Recherchez le code suivant :
 
    ```xml
@@ -99,13 +99,13 @@ L’ajout d’un bouton avec une action (ici, envoyer une lettre pour révision)
 
    ![balise customAction](assets/5_acmextensionsconfig_xml.png)
 
-   La balise modelExtension comporte un ensemble de balises enfants customAction configurant l’action, les autorisations et l’aspect du bouton d’action. Voici la liste des balises de configuration customAction :
+   La balise modelExtension comporte un ensemble de balises enfants customAction configurant l’action, les autorisations et l’aspect du bouton d’action. Voici la liste des balises de configuration customAction :
 
    | **Nom** | **Description** |
    |---|---|
    | name | Le nom alphanumérique de l’action à exécuter. La valeur de cette balise est obligatoire, doit être unique (dans la balise modelExtension) et doit commencer par une lettre de l’alphabet. |
-   | label | Libellé à afficher sur le bouton d’action |
-   | tooltip | Texte de l’info-bulle du bouton, qui s’affiche lorsque l’utilisateur passe la souris sur le bouton. |
+   | label | Libellé du bouton d’action. |
+   | tooltip | Texte de l’info-bulle du bouton, qui s’affiche lorsque l’utilisateur ou l’utilisatrice passe le pointeur de la souris sur le bouton. |
    | styleName | Nom du style personnalisé appliqué au bouton d’action. |
    | permissionName | L’action correspondante s’affiche uniquement si l’utilisateur dispose de l’autorisation spécifiée par la valeur permissionName. Lorsque vous spécifiez la valeur permissionName en tant que `forms-users`, tous les utilisateurs ont accès à cette option. |
    | actionHandler | Nom complet de la classe ActionHandler appelée lorsque l’utilisateur clique sur le bouton. |
@@ -120,7 +120,7 @@ L’ajout d’un bouton avec une action (ici, envoyer une lettre pour révision)
 
 1. Cliquez sur **Enregistrer tout**.
 
-#### Créez un dossier de paramètres régionaux avec le fichier de propriétés dans la branche /apps {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
+#### Créer un dossier de paramètres régionaux avec le fichier de propriétés dans la branche /apps {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
 
 Le fichier ACMExtensionsMessages.properties comprend des libellés et des messages d’info-bulles correspondant à plusieurs champs de l’interface utilisateur de création de correspondance. Effectuez une copie de ce fichier dans la branche /apps afin que les actions/boutons personnalisé(e)s fonctionnent.
 
@@ -158,9 +158,9 @@ Le fichier ACMExtensionsMessages.properties comprend des libellés et des messag
 
 1. Cliquez sur **Enregistrer tout**.
 
-#### Redémarrez le lot du bloc de création Adobe Asset Composer {#restart-the-adobe-asset-composer-building-block-bundle}
+#### Redémarrer le bundle du bloc de création Adobe Asset Composer {#restart-the-adobe-asset-composer-building-block-bundle}
 
-Après avoir effectué chaque modification côté serveur, redémarrez le lot du bloc de création Asset Composer Adobe. Dans ce scénario, les fichiers acmExtensionsConfig.xml et ACMExtensionsMessages.properties côté serveur sont modifiés et, par conséquent, le lot du bloc de création Adobe Asset Composer nécessite un redémarrage.
+Après avoir effectué chaque modification côté serveur, redémarrez le bundle du bloc de création Adobe Asset Composer. Dans ce scénario, les fichiers acmExtensionsConfig.xml et ACMExtensionsMessages.properties côté serveur sont modifiés et, par conséquent, le lot du bloc de création Adobe Asset Composer nécessite un redémarrage.
 
 >[!NOTE]
 >
@@ -172,11 +172,11 @@ Après avoir effectué chaque modification côté serveur, redémarrez le lot du
 
    ![Bloc de création Adobe Asset Composer](assets/6_assetcomposerbuildingblockbundle.png)
 
-Après le redémarrage du lot du bloc de création Adobe Asset Composer, le bouton personnalisé s’affiche dans l’interface utilisateur de création de correspondance. Vous pouvez ouvrir une lettre dans l’interface utilisateur de création de correspondance pour prévisualiser le bouton personnalisé.
+Après le redémarrage du bundle du bloc de création Adobe Asset Composer, le bouton personnalisé s’affiche dans l’interface utilisateur de création de correspondance. Vous pouvez ouvrir une lettre dans l’interface utilisateur de création de correspondance afin de prévisualiser le bouton personnalisé.
 
-### Ajout de la gestion des actions au bouton {#add-action-handling-to-the-button}
+### Ajouter un traitement d’action au bouton {#add-action-handling-to-the-button}
 
-Par défaut, l’interface utilisateur de création de correspondance dispose de l’implémentation d’ActionHandler dans le fichier cm.domain.js à l’emplacement suivant :
+Par défaut, la classe ActionHandler est intégrée dans le fichier cm.domain.js de l’interface utilisateur de création de correspondance à l’emplacement suivant :
 
 /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccr/js/cm.domain.js
 
@@ -220,7 +220,7 @@ Le traitement de l’action/du bouton lors d’un clic sur l’action/le bouton 
       Nommez le fichier ccrcustomization.js.
 
    1. Double-cliquez sur le fichier ccrcustomization.js pour l’ouvrir dans CRX.
-   1. Dans le fichier , collez le code suivant, puis cliquez sur **Enregistrer tout**:
+   1. Dans le fichier, collez le code suivant puis cliquez sur **Enregistrer tout** :
 
       ```javascript
       /* for adding and handling custom actions in Extensible Toolbar.
@@ -319,11 +319,11 @@ Le traitement de l’action/du bouton lors d’un clic sur l’action/le bouton 
       '</div>';
       ```
 
-### Ajouter le processus de LiveCycle pour activer l’action <span class="acrolinxCursorMarker"></code>gestion {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Ajouter le processus LiveCycle pour activer le traitement de l’action <span class="acrolinxCursorMarker"></code>gestion {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 Dans ce scénario, activez les composants suivants, qui font partie du fichier joint components.zip :
 
-* Composant DSC jar (DSCSample.jar)
+* Composant JAR DSC (DSCSample.jar)
 * Processus LCA d’envoi de la lettre pour révision (SendLetterForReview.lca)
 
 Téléchargez et décompressez le fichier components.zip pour obtenir les fichiers DSCSample.jar et SendLetterForReview.lca. Utilisez ces fichiers comme indiqué dans les procédures suivantes.
@@ -387,9 +387,9 @@ Indiquez dans le serveur Experience Manager les services LiveCycle auxquels vous
 
 1. Cliquez sur **Enregistrer**.
 
-#### Configuration du service de messagerie {#configure-the-email-service}
+#### Configurer le service de messagerie {#configure-the-email-service}
 
-Dans ce scénario, pour que Correspondence Management puisse envoyer un email, configurez le service de messagerie dans le serveur LiveCycle.
+Dans ce scénario, configurez le service de messagerie dans le serveur LiveCycle afin que Correspondence Management puisse envoyer un e-mail.
 
 1. Connectez-vous avec les informations d’identification d’administrateur à l’interface administrateur du serveur LiveCycle à `https:/[lc server]:[lc port]/adminui`.
 
@@ -426,7 +426,7 @@ Pour plus d’informations, voir [Connexion d’AEM Forms à Adobe LiveCycle](
 
 #### Importer DSC vers LiveCycle {#import-dsc-to-livecyle}
 
-Le fichier DSCSample.jar utilise l’API renderLetter pour effectuer le rendu d’une lettre sous forme d’octets PDF à partir des données XML fournies par DSC en tant qu’entrée. Pour plus d’informations sur renderLetter et les autres API, voir [Service de rendu de lettre](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
+Le fichier DSCSample.jar utilise l’API renderLetter pour effectuer le rendu d’une lettre sous forme d’octets PDF à partir des données XML fournies par DSC en tant qu’entrée. Pour plus d’informations sur l’API renderLetter et les autres API, consultez [Service de rendu de lettre](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Démarrez Workbench et connectez-vous.
 1. Sélectionnez **Fenêtre > Afficher les vues > Composants**. La vue Composants est ajoutée à Workbench ES2.
@@ -438,7 +438,7 @@ Le fichier DSCSample.jar utilise l’API renderLetter pour effectuer le rendu d�
 
 ## Envoyer une lettre pour révision {#send-letter-for-review}
 
-Après avoir configuré l’action et le bouton permettant d’envoyer la lettre pour révision :
+Après avoir configuré l’action et le bouton d’envoi de la lettre pour révision :
 
 1. Videz la mémoire cache du navigateur.
 

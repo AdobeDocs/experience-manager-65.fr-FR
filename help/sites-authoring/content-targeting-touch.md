@@ -10,7 +10,7 @@ exl-id: edde225d-0be7-4306-8dda-d18d46fae977
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '5284'
-ht-degree: 84%
+ht-degree: 85%
 
 ---
 
@@ -394,9 +394,9 @@ Ouvrez une offre de bibliothèque à partir d’une expérience en mode Ciblé p
 
 ## Cible : configuration des audiences {#target-configuring-the-audiences}
 
-L’étape Cibler du [processus de ciblage](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) implique le mappage des audiences avec les expériences que vous avez utilisées à l’étape Créer. La page Cible affiche les audiences que chaque expérience cible. Vous pouvez spécifier ou modifier l’audience de chaque expérience. Si vous utilisez Adobe Target, vous pouvez également créer des tests A/B qui vous permettent de cibler un pourcentage du trafic pour une audience sur une expérience particulière.
+L’étape Cibler du [processus de ciblage](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) implique le mappage des audiences avec les expériences que vous avez utilisées à l’étape Créer. La page Cible affiche les audiences que chaque expérience cible. Vous pouvez spécifier ou modifier l’audience de chaque expérience. Si vous utilisez Adobe Target, vous pouvez également créer des tests A/B qui vous permettent de cibler un pourcentage du trafic pour une audience sur une expérience particulière.
 
-### Si vous utilisez le ciblage d’AEM ou d’Adobe Target (ciblage d’expériences)…  {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
+### Si vous utilisez le ciblage d’AEM ou d’Adobe Target (ciblage d’expériences)… {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
 Les audiences s’affichent dans la partie gauche du diagramme de mappage, tandis que les expériences s’affichent dans la partie droite.
 
@@ -688,7 +688,7 @@ Si vous sélectionnez Adobe Target comme moteur :
   </tr>
   <tr>
    <td><strong>Inclure les segments résolus</strong></td>
-   <td><p>Si vous cochez cette case, tous les segments résolus dans l’appel de mbox et les paramètres configurés dans la page et dans le framework sont inclus.</p> <p>Cela ne fonctionne que dans les situations où vous utilisez une API XML, pour synchronisez les segments AEM. Si des segments dans AEM ne sont pas gérés par Adobe Target (comme les segments de script), cette option vous permet de résoudre le segment dans AEM et d’envoyer à Adobe Target des informations indiquant que le segment est actif.</p> </td>
+   <td><p>Si vous cochez cette case, tous les segments résolus dans l’appel de mbox et les paramètres configurés dans la page et dans le framework sont inclus.</p> <p>Cela ne fonctionne que dans les situations où vous utilisez une API XML, pour synchronisez les segments AEM. Si des segments dans AEM ne sont pas gérés par Adobe Target (comme les segments de script), cette option vous permet de résoudre le segment dans AEM et d’envoyer à Adobe Target des informations indiquant que le segment est actif.</p> </td>
   </tr>
   <tr>
    <td><strong>Paramètres contextuels hérités</strong></td>

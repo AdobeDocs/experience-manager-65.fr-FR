@@ -5,13 +5,13 @@ exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '264'
-ht-degree: 77%
+ht-degree: 81%
 
 ---
 
 # Utilisation de l’éditeur de texte enrichi pour créer du contenu {#use-rich-text-editor-to-author-content}
 
-L’éditeur de texte enrichi est une composante essentielle à la saisie de contenu texte dans AEM. Il constitue la base de divers composants, notamment :
+L’éditeur de texte enrichi (RTE) est une composante essentielle à la saisie de contenu textuel dans AEM. Il constitue la base de divers composants, notamment :
 
 * Texte
 * Image du texte
@@ -29,7 +29,7 @@ Appuyez/cliquez de nouveau ou sélectionnez initialement le composant avec un do
 
 Cette barre d’outils propose les options suivantes :
 
-* **Format**: permet de définir les styles Gras, Italique et Souligné.
+* **Format** : permet de définir les styles Gras, Italique et Souligné.
 * **Listes** : permet de créer des listes à puces ou numérotées, ou de définir une mise en retrait.
 * **Lien hypertexte**
 * **Dissocier**

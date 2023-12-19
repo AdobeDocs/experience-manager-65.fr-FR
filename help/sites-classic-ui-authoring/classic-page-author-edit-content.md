@@ -10,7 +10,7 @@ exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '1829'
-ht-degree: 87%
+ht-degree: 91%
 
 ---
 
@@ -211,7 +211,7 @@ Lors de l’aperçu des pages, les deux icônes situées dans la bordure inféri
 
   ![Icône Modifier représentée par un symbole de crayon.](do-not-localize/chlimage_1-6.png)
 
-* L’icône en forme de loupe permet de sélectionner le mode d’aperçu dans lequel la page est affichée telle qu’elle sera dans l’environnement de publication (une actualisation de page est parfois également nécessaire) :
+* L’icône en forme de loupe permet de sélectionner le mode d’aperçu. La page s’affiche alors telle qu’elle sera rendue dans l’environnement de publication (une actualisation de page peut s’avérer nécessaire) :
 
   ![Icône du mode Aperçu indiquée par un symbole de loupe.](do-not-localize/chlimage_1-7.png)
 
@@ -221,7 +221,7 @@ Lors de l’aperçu des pages, les deux icônes situées dans la bordure inféri
 
 ## Rechercher et remplacer {#find-replace}
 
-Pour des modifications à plus grande échelle de la même expression, une **[Rechercher et remplacer](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** l’option de menu vous permet de rechercher et de remplacer plusieurs instances d’une chaîne dans une section du site web.
+Pour des modifications à plus grande échelle de la même expression, l’option de menu **[Rechercher et remplacer](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** vous permet de rechercher et de remplacer plusieurs instances d’une chaîne dans une section du site web.
 
 ## Verrouillage d’une page {#locking-a-page}
 

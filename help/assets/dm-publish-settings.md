@@ -1,6 +1,6 @@
 ---
 title: Configurer la configuration de publication Dynamic Media pour Image Server
-description: Découvrez comment configurer la configuration de la publication Dynamic Media pour Image Server afin de pouvoir publier des ressources. Vous pouvez également tester vos ressources avant de les rendre publiques.
+description: Découvrez comment configurer la configuration de la publication Dynamic Media pour Image Server afin de pouvoir publier des ressources. Vous pouvez également tester vos ressources avant de les rendre publiques.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
@@ -11,8 +11,8 @@ mini-toc-levels: 4
 exl-id: c86e79c4-e887-4ee3-bb54-eeffb34a33c2
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3509'
-ht-degree: 99%
+source-wordcount: '3351'
+ht-degree: 100%
 
 ---
 

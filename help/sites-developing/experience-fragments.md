@@ -1,5 +1,5 @@
 ---
-title: Fragments d’expérience dans le développement Adobe Experience Manager Sites
+title: Fragments d’expérience dans l’instance de développement d’Adobe Experience Manager Sites
 description: Découvrez comment personnaliser des fragments d’expérience pour Adobe Experience Manager.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,8 +9,8 @@ docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
 source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 86%
+source-wordcount: '1781'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ En l’absence de `/libs/cq/experience-fragments/components/xfpage/xfpage.html`,
 
 Le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML brut.
 
-Cette option est disponible à partir du navigateur, mais son principal objectif est d’autoriser d’autres applications (par exemple, des applications web tierces et des implémentations mobiles personnalisées) à accéder directement au contenu du fragment d’expérience, en utilisant uniquement l’URL.
+Même s’il est directement disponible dans le navigateur, son principal objectif consiste à autoriser d’autres applications (des applications web tierces et des implémentations mobiles personnalisées, par exemple) à accéder directement au contenu du fragment d’expérience à l’aide de l’URL uniquement.
 
 Le rendu HTML brut ajoute le protocole, l’hôte et le chemin de contexte aux chemins suivants :
 
@@ -71,7 +71,7 @@ Il est recommandé de configurer la réécriture à l’aide d’un recouvrement
 
 ## Variations sociales {#social-variations}
 
-Les variations sociales peuvent être publiées sur les réseaux sociaux (texte et image). Dans Adobe Experience Manager (AEM), ces variantes sociales peuvent contenir des composants ; par exemple, des composants de texte ou d’image.
+Les variations sociales peuvent être publiées sur les réseaux sociaux (texte et image). Dans Adobe Experience Manager (AEM), ces variations sociales peuvent contenir des composants ; des composants texte ou image, par exemple.
 
 L’image et le texte de la publication sur le réseau social peuvent être extraits de n’importe quel type de ressource d’image ou de ressource de texte, à n’importe quel niveau de profondeur (dans le bloc fonctionnel ou dans le conteneur de mise en page).
 
@@ -98,7 +98,7 @@ Les composants qui ne respectent pas cette convention ne sont pas pris en compte
 >
 >***Seuls*** les [modèles modifiables](/help/sites-developing/page-templates-editable.md) sont pris en charge pour les fragments d’expérience.
 
-Lors du développement d’un modèle pour les fragments d’expérience, vous pouvez suivre les pratiques standard d’une [modèle modifiable](/help/sites-developing/page-templates-editable.md).
+Lors du développement d’un nouveau modèle pour les fragments d’expérience, vous pouvez suivre les pratiques standard en vigueur pour un [modèle modifiable](/help/sites-developing/page-templates-editable.md).
 
 Pour créer un modèle de fragment d’expérience détecté par l’assistant **Créer un fragment d’expérience**, vous devez suivre l’un des ensembles de règles suivants :
 
@@ -134,7 +134,7 @@ Dans AEM, vous avez la possibilité de créer des fragments d’expérience. Un 
 * est constitué d’un groupe de composants avec une mise en page ;
 * peut exister indépendamment d’une page AEM.
 
-De tels groupes sont notamment utilisés pour incorporer du contenu dans des points de contact tiers, tels qu’Adobe Target.
+De tels groupes sont notamment utilisés pour incorporer du contenu dans des points de contact tiers, tels qu’Adobe Target.
 
 ### Réécriture de liens par défaut {#default-link-rewriting}
 
@@ -146,7 +146,7 @@ La fonction [Exporter vers Target](/help/sites-administering/experience-fragment
 
 Cette fonction peut être [activée sur une instance de création d’AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). Elle nécessite une configuration Adobe Target valide, ainsi que des configurations pour l’externaliseur de liens.
 
-L’externaliseur de liens sert à déterminer les URL appropriées qui sont nécessaires lors de la création de la version de l’offre Target HTML, qui est ensuite envoyée à Adobe Target. Cela s’avère nécessaire dans la mesure où Adobe Target exige que tous les liens de l’offre HTML Target soient accessibles au public ; cela signifie que les ressources auxquelles les liens font référence et le fragment d’expérience proprement dit doivent être publiés avant d’être utilisés.
+L’externaliseur de liens sert à déterminer les URL appropriées qui sont nécessaires lors de la création de la version de l’offre Target HTML, qui est ensuite envoyée à Adobe Target. Cela s’avère nécessaire dans la mesure où Adobe Target exige que tous les liens de l’offre HTML Target soient accessibles au public ; cela signifie que les ressources auxquelles les liens font référence et le fragment d’expérience proprement dit doivent être publiés avant d’être utilisés.
 
 Par défaut, lorsque vous créez une offre HTML Target, une requête est envoyée à un sélecteur Sling personnalisé dans AEM. Ce sélecteur est appelé `.nocloudconfigs.html`. Comme son nom l’indique, il crée un rendu HTML brut d’un fragment d’expérience, mais n’inclut pas de configurations cloud (qui seraient des informations superflues).
 
@@ -162,12 +162,12 @@ Une fois la page HTML générée, le pipeline Sling Rewriter apporte des modific
 
    1. Attributs `src`
    1. Attributs `href`
-   1. `*-src` Attributs (comme data-src, custom-src, etc.)
-   1. `*-href` Attributs (comme `data-href`, `custom-href`, `img-href`, etc.)
+   1. Attributs `*-src` (comme data-src, custom-src, etc.)
+   1. Attributs `*-href` (comme `data-href`, `custom-href`, `img-href`, etc.)
 
    >[!NOTE]
    >
-   >En règle générale, les liens internes du HTML sont des liens relatifs, mais il peut arriver que des composants personnalisés fournissent des URL complètes dans le HTML. Par défaut, AEM ignore ces URL complètes et n’effectue aucune modification.
+   >Les liens internes du code HTML sont des liens relatifs, mais il peut arriver que des composants personnalisés fournissent des URL complètes dans le code HTML. Par défaut, AEM ignore ces URL complètes et n’effectue aucune modification.
 
    Les liens de ces attributs sont exécutés via l’externaliseur de liens AEM `publishLink()` afin de recréer l’URL comme si elle se trouvait sur une instance publiée et, de ce fait, accessible au public.
 
@@ -184,7 +184,7 @@ Pour ces cas d’utilisation, AEM propose l’interface du fournisseur de rééc
 >
 >Cette interface a été introduite dans le [SP1 AEM 6.5 (6.5.1.0)](/help/release-notes/previous/6.5.1.md).
 
-Pour les cas plus complexes, non couverts par le [paramètre par défaut](#default-link-rewriting), AEM propose l’interface du fournisseur de réécriture de liens. Il s’agit d’une interface `ConsumerType` que vous pouvez implémenter dans vos bundles sous la forme d’un service. Elle ignore les modifications qu’AEM effectue sur les liens internes d’une offre HTML telle qu’elle est générée à partir d’un fragment d’expérience. Cette interface vous permet de personnaliser le processus de réécriture des liens de HTML interne afin de l’adapter aux besoins de votre entreprise.
+Pour les cas plus complexes, non couverts par le [paramètre par défaut](#default-link-rewriting), AEM propose l’interface du fournisseur de réécriture de liens. Il s’agit d’une interface `ConsumerType` que vous pouvez implémenter dans vos bundles sous la forme d’un service. Elle ignore les modifications qu’AEM effectue sur les liens internes d’une offre HTML telle qu’elle est générée à partir d’un fragment d’expérience. Cette interface vous permet de personnaliser le processus de réécriture des liens HTML internes afin de l’adapter aux besoins de votre entreprise.
 
 Voici quelques exemples d’implémentation de cette interface en tant que service :
 
@@ -212,7 +212,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 ### Utilisation de l’interface du fournisseur de réécriture de liens {#how-to-use-the-link-rewriter-provider-interface}
 
-Pour utiliser l’interface, vous devez d’abord créer un lot contenant un nouveau composant de service qui implémente l’interface du fournisseur de réécriture de liens.
+Avant d’utiliser cette interface, vous devez créer un lot contenant un nouveau composant de service qui l’implémente.
 
 Ce service est utilisé pour se connecter à la réécriture Exporter vers Target du fragment d’expérience afin d’avoir accès aux différents liens.
 
@@ -312,7 +312,7 @@ L’appel de la méthode `rewriteLink()` est effectué à l’aide des paramètr
 rewriteLink(link="/etc.clientlibs/foundation/clientlibs/main.css", tag="link", attribute="href" )
 ```
 
-Lorsque vous créez le service, vous pouvez prendre des décisions en fonction de l’entrée donnée, puis réécrire le lien en conséquence.
+Lorsque vous créez le service, vous pouvez prendre des décisions en fonction de l’entrée indiquée, puis réécrire le lien en conséquence.
 
 Dans notre exemple, nous souhaitons supprimer la partie `/etc.clientlibs` de l’URL et ajouter le domaine externe approprié. Pour simplifier les choses, nous partons du principe que nous avons accès à un résolveur de ressources pour le service, comme dans `rewriteLinkExample2` :
 

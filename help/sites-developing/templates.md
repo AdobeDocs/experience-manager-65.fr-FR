@@ -10,7 +10,7 @@ exl-id: 59f01bb1-4ff1-42b6-afc9-56d448b1f803
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '924'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ Les avantages des modèles modifiables sont les suivants :
 
 * ils peuvent être [créés](/help/sites-authoring/templates.md#creating-a-new-template-template-author) et [modifiés](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) par vos auteurs et autrices.
 
-* Ils ont été introduits pour vous permettre de définir les éléments suivants pour toutes les pages créées avec le modèle :
+* ils permettent de définir les éléments suivants, et ce pour toutes les pages créées avec le modèle :
 
    * la structure ;
    * le contenu initial ;

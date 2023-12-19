@@ -9,13 +9,13 @@ exl-id: 76a46c62-d47d-4970-8a3a-d56015639548
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '847'
-ht-degree: 51%
+ht-degree: 63%
 
 ---
 
 # Catalog Producer{#catalog-producer}
 
-Découvrez comment utiliser Catalog Producer dans AEM Assets pour générer des catalogues de produits à l’aide de vos ressources numériques.
+Découvrez comment utiliser Catalog Producer dans AEM Assets pour générer des catalogues de produits à l’aide de vos ressources numériques.
 
 Grâce au Catalog Producer d’Adobe Experience Manager (AEM) Assets, vous pouvez créer des catalogues pour vos produits de marque à l’aide de modèles InDesign importés à partir d’une application InDesign. Pour importer des modèles InDesign, intégrez d’abord AEM Assets à un serveur InDesign.
 
@@ -33,7 +33,7 @@ Dans le cadre du processus d’intégration, configurez le workflow **Ressource 
 >
 >Seuls des fichiers InDesign (.indd) sont utilisés comme modèles. Les fichiers avec l’extension .indt ne sont pas pris en charge.
 
-## Créer un catalogue {#creating-a-catalog}
+## Création d’un catalogue {#creating-a-catalog}
 
 Catalog Producer utilise des données de gestion d’informations sur les produits pour mapper les propriétés d’un produit aux propriétés XML affichées dans le modèle. Pour créer un catalogue, procédez comme suit :
 
@@ -53,8 +53,8 @@ Catalog Producer utilise des données de gestion d’informations sur les produ
 1. Pour ajouter des pages au catalogue, cliquez sur **Créer** dans la barre d’outils, puis sélectionnez l’option **Nouvelle page** .
 1. Dans l’assistant, sélectionnez un modèle InDesign pour votre page. Cliquez ensuite sur **Suivant**.
 1. Spécifiez un nom pour la page et une description (facultative). Indiquez des balises, le cas échéant.
-1. Cliquez sur le bouton **Créer** dans la barre d’outils. Cliquez ensuite sur **Ouvrir** dans la boîte de dialogue. Les propriétés du produit sont affichées dans le volet gauche. Les propriétés prédéfinies du modèle d’InDesign s’affichent dans le volet de droite.
-1. Dans le volet de gauche, faites glisser les propriétés du produit vers les propriétés du modèle d’InDesign, puis créez un mappage entre elles.
+1. Cliquez sur le bouton **Créer** dans la barre d’outils. Cliquez ensuite sur **Ouvrir** dans la boîte de dialogue. Les propriétés du produit sont affichées dans le volet gauche. Les propriétés prédéfinies du modèle InDesign s’affichent dans le volet de droite.
+1. Dans le volet de gauche, faites glisser les propriétés du produit vers les propriétés du modèle InDesign, puis créez un mappage entre elles.
 
    Pour afficher la page en temps réel, cliquez sur la **Aperçu** dans le volet de droite.
 
@@ -86,7 +86,7 @@ Catalog Producer utilise des données de gestion d’informations sur les produ
    >
    >Pour modifier les métadonnées d’un produit référencé, accédez à la console Produits (**Logo AEM** > **Commerce** > **Produits**) et sélectionnez le produit. Cliquez ensuite sur le bouton **Afficher les propriétés** dans la barre d’outils, puis modifiez les métadonnées dans la page Propriétés de la ressource.
 
-1. Pour réorganiser les pages du catalogue, cliquez sur le bouton **Créer** dans la barre d’outils, puis choisissez **Fusion** dans le menu. Dans l’assistant, le carrousel situé en haut vous permet de réorganiser les pages en les faisant glisser. Vous pouvez également supprimer des pages.
+1. Pour réorganiser les pages du catalogue, cliquez sur le bouton **Créer** dans la barre d’outils, puis choisissez **Fusion** dans le menu. Dans l’assistant, le carrousel dans la partie supérieure permet de réorganiser les pages en les faisant glisser. Vous pouvez également supprimer des pages.
 
 1. Cliquez sur **Suivant**. Pour ajouter un fichier d’InDesign existant comme page de garde, cliquez sur **Parcourir** en regard de la variable **Sélectionner la page de couverture** et indiquez le chemin d’accès au modèle de page de garde.
 1. Cliquez sur **Enregistrer**, puis cliquez sur **Terminé** pour fermer la boîte de dialogue de confirmation.

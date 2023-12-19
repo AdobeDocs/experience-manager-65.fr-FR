@@ -12,7 +12,7 @@ role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6618'
+source-wordcount: '6664'
 ht-degree: 99%
 
 ---
@@ -536,7 +536,7 @@ Pour installer une extension, sélectionner **[!UICONTROL Installer]**. Si néce
 
 Le cas échéant, les extensions suivantes doivent être installées et configurées :
 
-* (Obligatoire) Extension *Experience Cloud ID Service* 
+* (Obligatoire) *Service d’ID d’Experience Cloud* extension .
 
 Aucune configuration supplémentaire n’est nécessaire, acceptez les valeurs proposées. Lorsque vous avez terminé, veillez à sélectionner **[!UICONTROL Enregistrer]**.
 

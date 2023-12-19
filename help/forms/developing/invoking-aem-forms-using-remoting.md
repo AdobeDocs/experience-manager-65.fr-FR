@@ -9,8 +9,8 @@ role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
 source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '4593'
-ht-degree: 96%
+source-wordcount: '4570'
+ht-degree: 97%
 
 ---
 
@@ -615,11 +615,11 @@ Vous pouvez utiliser la console d’administration pour définir si les document
 1. Cliquez sur **Paramètres**.
 1. Cliquez sur **Paramètres de Core System.**
 1. Cliquez sur Configurations.
-1. Assurez-vous que l’option Autoriser le téléchargement de documents non sécurisés à partir d’applications Flex n’est pas sélectionnée.
+1. Assurez-vous que l’option Autoriser le chargement de documents non sécurisés à partir d’applications Flex n’est pas sélectionnée.
 
 >[!NOTE]
 >
-Pour configurer AEM Forms de sorte qu’il accepte les documents non sécurisés, sélectionnez l’option Autoriser le téléchargement de documents non sécurisés à partir des applications Flex . Redémarrez ensuite une application ou un service pour vous assurer que le paramètre a pris effet.
+Pour configurer AEM Forms de sorte qu’il accepte les documents non sécurisés, sélectionnez l’option Autoriser le chargement de documents non sécurisés à partir des applications Flex. Redémarrez ensuite une application ou un service pour vous assurer que le paramètre a pris effet.
 
 ### Démarrage rapide : appeler un processus de courte durée en transmettant un document sécurisé à l’aide de Remoting {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
 

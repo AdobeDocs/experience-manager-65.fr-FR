@@ -4,8 +4,8 @@ description: Utilisez AEM pour rendre le contenu Web accessible et utilisable pa
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
 source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '13806'
-ht-degree: 98%
+source-wordcount: '13636'
+ht-degree: 96%
 
 ---
 
@@ -65,7 +65,7 @@ Par ailleurs, les alternatives textuelles ont l’avantage de permettre l’inde
 
 #### Comment procéder – Contenu non textuel (1.1.1) {#how-to-meet-non-text-content}
 
-Pour les images statiques, la règle de base consiste à fournir un équivalent textuel. Pour ce faire, vous pouvez utiliser le champ **Texte secondaire**. Voir par exemple, le composant principal d’**[image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=fr)**.
+Pour les images statiques, la règle de base consiste à fournir un équivalent textuel. Vous pouvez le faire dans la variable **Texte de remplacement** champ . Voir, par exemple, le composant principal **[Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=fr)**.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Voici quelques-uns des types spécifiques de contenu non textuel auquel un texte
 
 * Photos illustratives : il s’agit de photos de personnes, d’objets ou de lieux. Il est important de réfléchir au rôle de la photo dans la page. En général, il est recommandé de décrire le contenu de l’image, car la technologie d’assistance annonce le type d’élément (par exemple, `graphic` ou `image`) ; l’utilisation d’éléments `screenshot` ou `illustration` peut clarifier les descriptions des textes secondaires, mais cela dépend du contexte. La cohérence est un facteur important. Il faut prendre la même décision pour l’ensemble de l’équipe de création et l’appliquer tout au long de l’expérience du client ou de la cliente.
 * Icônes : certains petits pictogrammes (images) communiquent parfois des informations spécifiques. Ils doivent être utilisés de manière uniforme sur une page et un site. Toutes les instances de l’icône sur une page ou un site doivent avoir le même texte secondaire bref et succinct, sauf si cela duplique de manière superflue le texte adjacent.
-* Tableaux et graphiques : ils représentent généralement des données numériques. Pour proposer un texte secondaire, vous pouvez par exemple inclure un bref résumé des principales tendances affichées dans le tableau ou graphique. Si nécessaire, fournissez une description plus détaillée sous forme de texte dans le champ **Description** de l’onglet **Avancé** des propriétés d’image. En outre, vous pouvez fournir les données sources sous forme tabulaire ailleurs dans la page ou le site.
+* Tableaux et graphiques : ils représentent généralement des données numériques. Ainsi, une option permettant de fournir un texte secondaire peut être d’inclure un bref résumé des principales tendances affichées dans le graphique ou le graphique. Si nécessaire, fournissez également une description plus détaillée dans le texte à l’aide du champ **Description** dans l’onglet **Propriétés d’image avancées**. En outre, vous pouvez fournir les données sources sous forme tabulaire ailleurs dans la page ou le site.
 * Cartes, diagrammes, organigrammes : pour les graphiques produisant des données spatiales (par exemple, pour la description des relations entre des objets ou un processus), assurez-vous que le message clé est fourni au format texte et que ces informations textuelles sont placées à proximité de chaque point de données associé. Dans le cas des cartes, il est probable que l’utilisation d’un équivalent en texte intégral ne soit pas adaptée. Toutefois, si la carte est fournie pour aider les gens à trouver leur chemin vers un emplacement donné, alors le texte secondaire de l’image de la carte peut indiquer brièvement *Carte de X*, puis donner des indications vers cet emplacement en texte à un autre endroit, dans la page ou dans le champ **Description** de l’onglet **Avancé** du composant **Image**.
 * CAPTCHA : un CAPTCHA est un *test public de Turing entièrement automatisé destiné à distinguer les ordinateurs des humains*. Ce contrôle de sécurité utilisé sur les pages web pour distinguer les humains des logiciels malveillants peut toutefois entraîner des barrières à l’accessibilité. Le CAPTCHA, sous forme d’images, nécessite que les utilisateurs et utilisatrices décrivent ce qu’ils voient pour réussir le test de sécurité. Il n’est évidemment pas possible de fournir un texte secondaire à l’image. Vous devrez donc envisager d’autres solutions non graphiques. Le W3C propose quelques suggestions, telles que les suivantes :
    * Puzzles logiques
@@ -462,7 +462,7 @@ Assurez-vous que toutes les informations qui reposent sur les caractéristiques 
 
 >[!NOTE]
 >
->Ce critère de réussite traite spécifiquement de la perception des couleurs. Les autres formes de perception sont traitées à la règle [Adaptable (1.3)](#adaptable), comme l’accès à la couleur par programme informatique et les autres formes de codage de la présentation visuelle.
+>Ce critère de réussite traite spécifiquement de la perception des couleurs. D’autres formes de perception sont abordées dans la section [Adaptable (1.3)](#adaptable); y compris l’accès programmatique à la couleur et à d’autres codes de présentation visuelle.
 
 #### Objectif – Utilisation de la couleur (1.4.1) {#purpose-use-of-color}
 
@@ -699,7 +699,7 @@ Appliquez les règles indiquées dans la section [Comment remplir le critère de
 Remarques :
 
 1. Pour connaître les exigences relatives au contenu scintillant ou flashant, voir Ne pas concevoir de contenu susceptible de provoquer des crises (2.3).
-1. Puisque tout contenu ne satisfaisant pas ce critère de réussite peut interférer avec la capacité de l’utilisateur à exploiter la page entière, tout le contenu présent dans la page web (qu’il soit utilisé pour satisfaire d’autres critères de réussite ou non) doit satisfaire ce critère de réussite. Voir [Exigence de conformité 5 : Non-interférence](https://www.w3.org/TR/WCAG20/#cc5).
+1. Puisque tout contenu ne satisfaisant pas ce critère de réussite peut interférer avec la capacité de l’utilisateur à utiliser la page entière, tout le contenu de la page web (qu’il soit utilisé pour satisfaire d’autres critères de réussite ou non) doit satisfaire à ce critère de réussite. Consultez [Exigence de conformité 5 : non interférence](https://www.w3.org/TR/WCAG20/#cc5).
 1. Le contenu mis à jour régulièrement par un logiciel ou diffusé en continu à l’utilisateur ou l’utilisatrice n’est pas tenu de conserver ou présenter des informations générées ou reçues entre la mise en pause et la reprise de la présentation. En effet, cela peut être techniquement impossible et peut induire en erreur dans de nombreuses situations.
 1. Une animation dans le cadre d’une phase de préchargement ou d’une situation similaire peut être considérée comme essentielle si l’interaction ne peut pas se produire au cours de cette phase pour tous les utilisateurs et utilisatrices, et si le fait de ne pas indiquer la progression risque de dérouter les utilisateurs et les utilisatrices ou de leur faire croire que le contenu a été figé ou interrompu.
 
@@ -838,7 +838,7 @@ Avant tout, veillez à ce que l’objectif d’un lien soit clairement décrit d
    * Texte : Cours du soir de l’automne 2010 – Détails.
    * Motif : il est possible d’améliorer le texte du lien en adaptant légèrement le texte et sa position.
 
-Les liens doivent être formulés de manière cohérente sur toutes les pages, en particulier pour les barres de navigation. Si, par exemple, un lien vers une page spécifique est nommé **Publications** sur une page, il doit être nommé de la même façon sur toutes les autres pages.
+Les liens doivent être formulés de manière cohérente sur toutes les pages, en particulier pour les barres de navigation. Par exemple, si un lien vers une page spécifique est nommé **Publications** sur une page, utilisez ce texte sur d’autres pages pour garantir la cohérence.
 
 Au moment de la rédaction de cet article, l’utilisation des attributs de titre pose certains problèmes. Ils ne permettent pas de s’assurer que des liens similaires présentés sur une page donnent des informations uniques sur la destination (par exemple, la mention « en savoir plus » se rapporte souvent à plusieurs destinations différentes) :
 
@@ -848,7 +848,7 @@ Au moment de la rédaction de cet article, l’utilisation des attributs de titr
 
 Ainsi, bien que l’attribut de titre puisse fournir un contexte supplémentaire à un lien, gardez à l’esprit ses limites et ne l’utilisez pas comme alternative au texte du lien approprié.
 
-Si le lien est composé d’une image, veillez à ce que le texte secondaire de l’image décrive la destination du lien. Par exemple, si une image de bibliothèque est définie comme lien vers les publications d’une personne, le texte secondaire doit indiquer **Publications de Jean Dupont** et non **Bibliothèque**.
+Lorsque le lien est composé d’une image, assurez-vous que le texte secondaire de l’image décrit la destination du lien. Par exemple, si une image d’une bibliothèque est définie comme lien vers les publications d’une personne, le texte secondaire doit être lu : **Publications de John Smith** et non **Bibliothèque**.
 
 Si l’ancre de lien contient du texte qui décrit la destination du lien en plus de l’élément image (et donc que le texte apparaît à côté de l’image), utilisez un attribut de remplacement vide pour l’image :
 
@@ -985,7 +985,7 @@ Dans AEM, la langue par défaut de la page est définie lors de la création de 
 
 * [Compréhension du critère de réussite 3.1.1](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html)
 * [Comment remplir le critère de réussite 3.1.1](https://www.w3.org/WAI/WCAG21/quickref/#language-of-page)
-* Les codes reposent sur la norme ISO 639-1. Vous trouverez une liste de codes plus complète pour chaque langue sur le site [W3Schools.com](https://www.w3schools.com/tags/ref_language_codes.asp).
+* Les codes sont basés sur la norme ISO 639-1. Vous trouverez une liste plus complète de codes pour chaque langue à l’adresse [Site W3 Schools](https://www.w3schools.com/tags/ref_language_codes.asp).
 
 ### Langue d’un passage (3.1.2)  {#language-of-parts}
 
@@ -1025,7 +1025,7 @@ De même, le navigateur peut restituer correctement un mot ou une expression emp
 
 >[!NOTE]
 >
->Il n’est pas nécessaire d’adhérer à ce critère de succès pour les noms ou villes dans différentes langues ou lors de l’utilisation de mots ou d’expressions empruntés qui sont devenus courants dans la langue par défaut (tel que *diktat* en français).
+>Il n’est pas nécessaire de suivre ce critère de réussite lors de l’inclusion de noms ou de villes dans différentes langues. Ou, lorsque vous utilisez des mots ou expressions empruntés qui sont devenus courants dans la langue par défaut, comme *schadenfreude* en anglais.
 
 Pour ajouter l’élément span, avec un langage approprié, vous pouvez modifier manuellement votre balisage HTML en mode d’édition source de l’éditeur de texte enrichi afin qu’il se lise comme ci-dessus. Vous pouvez également inclure l’attribut `lang` dans l’éditeur de texte enrichi par un administrateur système (voir [Ajout de la prise en charge d’éléments et d’attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
@@ -1206,7 +1206,7 @@ Les libellés sont positionnés immédiatement à droite du champ.
 * Tous les autres composants de formulaire (par exemple, zones de texte, zones de liste modifiable) :
 les libellés sont positionnés immédiatement au-dessus ou à gauche du champ.
 
-Dans les formulaires simples avec des fonctionnalités très limitées, un bouton `Submit` étiqueté de manière appropriée peut servir de libellé pour le champ adjacent (par exemple, `Search`). Cela s’avère utile dans les cas où il peut être difficile de trouver de l’espace pour le texte du libellé.
+Dans les formulaires simples avec des fonctionnalités limitées, étiquetez correctement une `Submit` peut agir comme libellé pour le champ adjacent (par exemple : `Search`). Cela s’avère utile dans les cas où il peut être difficile de trouver de l’espace pour le texte du libellé.
 
 #### En savoir plus – Étiquettes ou instructions (3.3.2) {#more-information-labels-or-instructions}
 

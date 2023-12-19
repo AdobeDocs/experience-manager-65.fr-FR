@@ -9,17 +9,17 @@ exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
 source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '2459'
-ht-degree: 87%
+ht-degree: 96%
 
 ---
 
 # Tableaux dans les formulaires adaptatifs{#tables-in-adaptive-forms}
 
-<span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/using/create-an-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
+<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/adaptive-forms-tables.html) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/adaptive-forms-tables.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 
@@ -59,13 +59,13 @@ Vous pouvez fusionner deux cellules du corps ou plus en sélectionnant les cellu
 
 Vous pouvez ajouter et supprimer une ligne ou une colonne, et déplacer une ligne vers le haut ou vers le bas dans un tableau.
 
-Pour ajouter ou supprimer une ligne ou une colonne ou déplacer une ligne, cliquez sur une cellule dans une ligne ou une colonne. Un menu déroulant s’affiche en haut de la colonne et à gauche de la ligne. Le menu supérieur propose des options pour ajouter ou supprimer la colonne, tandis que le menu de gauche permet d’ajouter, de supprimer ou de déplacer la ligne.
+Pour ajouter ou supprimer une ligne ou une colonne ou déplacer une ligne, cliquez sur une cellule dans une ligne ou une colonne. Un menu déroulant s’affiche en haut de la colonne et à gauche de la ligne. Le menu de la partie supérieure fournit des options permettant d’ajouter ou de supprimer la colonne, alors que le menu de gauche permet d’ajouter, de supprimer ou de déplacer la ligne.
 
 * L’opération Ajouter ajoute une ligne au-dessous ou une colonne à droite de la ligne ou de la colonne sélectionnée.
-* L’opération Supprimer supprime la ligne ou la colonne sélectionnée.
-* L’opération Déplacer vers le haut et Déplacer vers le bas déplace la ligne sélectionnée vers le haut et vers le bas.
+* L’opération Supprimer permet de supprimer la ligne ou la colonne sélectionnée.
+* Les opérations Déplacer vers le haut et Déplacer vers le bas permettent de déplacer la ligne sélectionnée vers le haut et vers le bas.
 
-Le menu déroulant de la ligne fournit également l’opération Modifier pour modifier les propriétés, les paramètres et les options de style de la ligne.
+Le menu déroulant pour la ligne propose également l’opération Modifier pour modifier les propriétés, les paramètres et les options de style de la ligne.
 
 ![add-delete-move-row-column](assets/add-delete-move-row-column.png)
 
@@ -153,7 +153,7 @@ Lors de l’exécution, vous verrez les boutons **+** et *-* pour ajouter ou sup
 
 ## Expressions dans un tableau {#expressions-in-a-table}
 
-Les tableaux des formulaires adaptatifs vous permettent d’écrire des expressions dans JavaScript pour induire des comportements, tels qu’afficher ou masquer un tableau ou une ligne, additionner tous les nombres et afficher le total dans une cellule, activer ou désactiver une cellule, valider la saisie de l’utilisateur, etc. Ces expressions utilisent le modèle de script API des formulaires adaptatifs.
+Les tableaux des formulaires adaptatifs permettent d’écrire des expressions en JavaScript pour induire des comportements, tels qu’afficher ou masquer un tableau ou une ligne, additionner tous les nombres et afficher le total dans une cellule, activer ou désactiver une cellule, valider une entrée utilisateur, etc. Ces expressions utilisent le modèle de script API des formulaires adaptatifs.
 
 Alors que les tableaux et les lignes ne prennent en charge que les expressions de visibilité pour contrôler leur visibilité en fonction de la valeur renvoyée par une expression, les cellules prennent en charge les expressions suivantes :
 
@@ -211,7 +211,7 @@ Colonne développée d’un tableau sur un appareil mobile
 
 ## Fusion de données dans un tableau {#merge-data-in-a-table}
 
-Les tableaux des formulaires adaptatifs vous permettent de remplir le tableau au moment de l’exécution à l’aide des données d’un fichier XML. Le fichier XML de données peut résider dans le système de fichiers local de l’ordinateur sur lequel le serveur AEM Forms s’exécute ou dans le référentiel CRX.
+Les tableaux des formulaires adaptatifs permettent de renseigner le tableau lors de l’exécution avec des données provenant d’un fichier XML. Le fichier XML de données peut résider dans le système de fichiers local de l’ordinateur sur lequel le serveur AEM Forms s’exécute ou dans le référentiel CRX.
 
 Prenons l’exemple du tableau récapitulatif de transactions bancaires suivant, que nous voulons renseigner avec des données provenant d’un fichier XML.
 

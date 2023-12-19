@@ -10,7 +10,7 @@ hide: true
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '3908'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ Les différents rôles impliqués pour configurer et utiliser la fonctionnalité
 
 ### Architecture des ressources connectées {#connected-assets-architecture}
 
-Experience Manager vous permet de connecter un déploiement DAM distant en tant que source à plusieurs Experience Manager. [!DNL Sites] déploiements. Toutefois, vous pouvez connecter un déploiement [!DNL Sites] à un seul déploiement DAM à distance.
+Experience Manager vous permet de connecter un déploiement DAM à distance en tant que source à plusieurs déploiements [!DNL Sites] Experience Manager. Toutefois, vous pouvez connecter un déploiement [!DNL Sites] à un seul déploiement DAM à distance.
 
 Évaluez le nombre optimal d’instances Sites à connecter à un déploiement DAM distant. Adobe recommande de connecter progressivement les instances Sites au déploiement et de tester l’absence d’impact sur les performances au niveau de la gestion des actifs numériques distants, car chaque instance Sites connectée contribue au trafic de données sur la gestion des actifs numériques distants.
 
@@ -315,7 +315,7 @@ Vous pouvez ajouter des ressources au déploiement [!DNL Sites]. Toutefois, ces 
 
 * Pour obtenir des informations sur l’utilisation des ressources, configurez la fonctionnalité [Assets Insight](/help/assets/asset-insights.md) sur l’instance [!DNL Sites].
 
-* Vous ne pouvez pas faire glisser la ressource distante sur le [Boîte de dialogue de configuration du composant Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog). Cependant, vous pouvez faire glisser la ressource distante directement vers le composant image de la page Sites sans cliquer sur **[!UICONTROL Configurer]**.
+* Vous ne pouvez pas faire glisser la ressource distante vers la [boîte de dialogue de configuration du composant d’image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=fr#configure-dialog). Vous pouvez toutefois la faire glisser directement sur le composant d’image de la page Sites sans cliquer sur **[!UICONTROL Configurer]**.
 
 ### Autorisations et gestion des ressources {#permissions-and-managing-assets}
 

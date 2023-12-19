@@ -6,8 +6,8 @@ feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 91%
+source-wordcount: '1158'
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ Le fichier s’applique à tous les projets de traduction.
 Les règles comprennent les informations suivantes :
 
 * Le chemin d’accès au nœud auquel la règle s’applique. La règle s’applique également aux descendants du nœud.
-* Les noms des propriétés de nœud contenant le contenu à traduire : Cette propriété peut être spécifique à un type de ressource en particulier ou à tous les types de ressource.
+* Les noms des propriétés du noeud qui contiennent le contenu à traduire. Cette propriété peut être spécifique à un type de ressource en particulier ou à tous les types de ressource.
 
 Par exemple, vous pouvez créer une règle traduisant le contenu que les auteurs ajoutent à tous les composants Texte de base d’AEM sur vos pages. La règle peut identifier le nœud `/content` et la propriété `text` du composant `foundation/components/text`.
 
@@ -101,10 +101,10 @@ Utilisez la syntaxe de règle suivante pour inclure les ressources qui sont inco
 
 Chaque élément `assetNode` présente les caractéristiques suivantes :
 
-* Un attribut `resourceType` qui est égal au chemin d’accès correspondant au composant 
+* One `resourceType` qui est égal au chemin d’accès qui fait référence au composant.
 * Un attribut `assetReferenceAttribute` qui est égal au nom de la propriété stockant le fichier binaire de ressource (pour les ressources incorporées) ou le chemin d’accès à la ressource référencée
 
-L’exemple suivant extrait des images du composant Image de base :
+L’exemple suivant extrait les images à partir du composant de base de l’image :
 
 ```xml
 <assetNode resourceType="foundation/components/image" assetReferenceAttribute="fileReference"/>
@@ -182,7 +182,7 @@ Voici un exemple du fichier xml obtenu lorsque l’option **Est profond** n’es
 </filter>
 ```
 
-**inherit** Ceci s’applique aux propriétés. Par défaut, chaque propriété est héritée, mais si vous souhaitez qu’une propriété ne soit pas héritée sur l’enfant, vous pouvez la marquer comme étant fausse afin qu’elle ne soit appliquée qu’à ce noeud spécifique.
+**inherit** Ceci s’applique aux propriétés. Par défaut, chaque propriété est héritée, mais si vous souhaitez qu’une propriété ne soit pas héritée par l’enfant, vous pouvez marquer cette propriété comme étant égale à « false » pour qu’elle soit appliquée uniquement à ce nœud spécifique.
 
 Dans l’interface utilisateur, vous pouvez cocher/décocher **Hériter** dans l’onglet **Propriétés**.
 

@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
 source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '1348'
-ht-degree: 54%
+source-wordcount: '1351'
+ht-degree: 70%
 
 ---
 
@@ -33,7 +33,8 @@ Pour créer une version d’une page :
 
 1. Entrez un commentaire dans la zone **Commenter** (facultatif).
 1. Pour définir un libellé pour la version (facultatif), cliquez sur le bouton **Plus >>** et définissez le **Libellé** pour attribuer un nom à la version. Si le libellé n’est pas défini, la version se voit attribuer un numéro automatiquement incrémenté.
-1. Cliquez sur **Créer la version**. Un message grisé s’affiche sur la page ; par exemple : Version 1.2 créée pour : Chemises.
+1. Cliquez sur **Créer la version**. Un message grisé apparaît sur la page, indiquant par exemple :
+Version 1.2 créée pour : Chemises.
 
 >[!NOTE]
 >
@@ -44,11 +45,11 @@ Pour créer une version d’une page :
 Pour restaurer la version précédente d’une page :
 
 1. Ouvrez la page dont vous souhaitez restaurer une version précédente.
-1. Dans le sidekick, sélectionnez la variable **Contrôle de version** , puis la variable **Restaurer la version** sous-onglet.
+1. Dans le sidekick, sélectionnez l’onglet **Contrôle de version**, puis le sous-onglet **Restaurer une version**.
 
    ![screen_shot_2012-02-14at42949pm](assets/screen_shot_2012-02-14at42949pm.png)
 
-1. Sélectionnez la version à restaurer, puis sélectionnez **Restaurer**.
+1. Sélectionnez la version à restaurer, puis cliquez/appuyez sur **Restaurer**.
 
 ## Restaurer une version de page à partir de la console {#restoring-a-page-version-from-the-console}
 
@@ -59,7 +60,7 @@ Appliquez cette méthode pour restaurer une version de page. Elle peut égalemen
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
-1. Si vous sélectionnez **Restaurer la version**, les versions de documents dans le dossier actif sont répertoriées. Même si une page a été supprimée, la dernière version est répertoriée :
+1. Si vous sélectionnez **Restaurer la version**, les versions de documents dans le dossier actif sont répertoriées. Même si une page a été supprimée, sa dernière version est répertoriée :
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
@@ -75,7 +76,7 @@ Appliquez cette méthode pour restaurer une version de page. Elle peut égalemen
 
    ![screen_shot_2012-02-08at45743pm-1](assets/screen_shot_2012-02-08at45743pm-1.png)
 
-1. Cliquez sur **Restaurer**. AEM restaure l’arborescence que vous avez sélectionnée.
+1. Cliquez sur **Restaurer**. AEM restaure l’arborescence sélectionnée.
 
 ## Comparer à une version précédente {#comparing-with-a-previous-version}
 
@@ -86,7 +87,7 @@ Comparer la version actuelle d’une page à une version précédente :
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
-1. Sélectionnez la version à comparer, puis cliquez sur le bouton **Diff** bouton .
+1. Sélectionnez la version pour laquelle effectuer la comparaison, puis cliquez sur le bouton **Diff**.
 1. Les différences entre la version actuelle et la version sélectionnée sont signalées de la façon suivante :
 
    * Le texte qui a été supprimé apparaît en rouge et barré.
@@ -112,7 +113,7 @@ Pour ce faire :
 
 >[!NOTE]
 >
->Si des versions sont supprimées du référentiel, Timewarp ne peut pas afficher la vue correcte. En outre, si des éléments (tels que du code, des feuilles de style CSS et des images) pour le rendu du site web ont été modifiés, la vue diffère de ce qu’elle était initialement, car ces éléments ne sont pas versionnés dans le référentiel.
+>Si des versions sont supprimées du référentiel, la distorsion du temps n’est pas en mesure d’afficher la vue correcte. Si des éléments destinés au rendu du site web (tels que du code, des feuilles css et des images) ont été modifiés, la vue est différente de ce qu’elle était initialement, étant donné que ces éléments n’ont pas de contrôle de version dans le référentiel.
 
 ### Utiliser le calendrier Timewarp {#using-the-timewarp-calendar}
 
@@ -120,7 +121,7 @@ Timewarp est disponible à partir du sidekick.
 
 La version calendrier sert à afficher un jour spécifique :
 
-1. Ouvrez l’onglet **Contrôle de version**, puis cliquez sur **Timewarp** (près du bas du sidekick). La boîte de dialogue suivante s’affiche :
+1. Ouvrez l’onglet **Contrôle de version**, puis cliquez sur **Timewarp** (près du bas du sidekick). La boîte de dialogue suivante s’affiche :
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
@@ -153,13 +154,13 @@ La version de frise chronologique sert à afficher une vue d’ensemble des acti
 
 Si vous souhaitez afficher la frise chronologique du document :
 
-1. Pour afficher la chronologie, effectuez l’une des opérations suivantes :
+1. Pour afficher le journal, effectuez l’une des opérations suivantes :
 
-   1. Ouvrez le **Contrôle de version** puis cliquez sur **Timewarp** (près du bas du sidekick).
+   1. Ouvrez l’onglet **Contrôle de version**, puis cliquez sur **Distorsion du temps** (près du bas du sidekick).
 
-   1. Utilisez la boîte de dialogue du sidekick affichée après [utilisation du calendrier Timewarp](#using-the-timewarp-calendar).
+   1. Utilisez la boîte de dialogue du sidekick qui s’affiche après avoir [utilisé le calendrier de Distorsion du temps](#using-the-timewarp-calendar).
 
-1. Cliquez sur **Afficher la chronologie** - la chronologie du document s’affiche, par exemple :
+1. Cliquez sur **Afficher le journal** : le journal du document s’affiche, par exemple :
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
@@ -173,7 +174,7 @@ Dans l’exemple ci-dessous, la ligne rouge indique que la page a été modifié
 
 1. Cliquez sur :
 
-   1. **Aller** pour afficher le contenu de la page publiée à l’heure sélectionnée.
+   1. Cliquez sur **Aller** pour afficher le contenu de la page publiée au moment sélectionné.
    1. Lors de l’affichage de ce contenu, utilisez **Quitter Timewarp** pour quitter et revenir à la page de création actuelle.
 
 ### Limites du mode Timewarp {#timewarp-limitations}
@@ -190,4 +191,4 @@ Timewarp s’efforce de reproduire au mieux une page à un moment donné. Toutef
 
 >[!CAUTION]
 >
->Timewarp est conçu pour aider les auteurs à comprendre et à créer leur contenu. Il ne s’agit pas d’un journal d’audit et il n’est pas destiné à des fins juridiques.
+>La distorsion du temps est conçue pour aider les auteurs et autrices à comprendre et à créer du contenu. Il ne s’agit pas d’un journal d’audit et il n’est pas destiné à des fins juridiques.

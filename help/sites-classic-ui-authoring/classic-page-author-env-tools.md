@@ -10,7 +10,7 @@ exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '892'
-ht-degree: 88%
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ L’environnement de création d’AEM comprend divers mécanismes permettant d�
 
 ## Administration de sites {#site-administration}
 
-La variable **Sites web** vous permet de gérer et de parcourir votre site web. En utilisant les deux volets, la structure de votre site web peut être développée et des actions peuvent être entreprises sur l’élément requis.
+La console **Sites web** vous permet de gérer et de parcourir votre site web. En utilisant les deux volets, la structure de votre site web peut être développée et des actions peuvent être entreprises sur l’élément requis.
 
 ![chlimage_1-108](assets/chlimage_1-108.png)
 
@@ -44,7 +44,7 @@ Ou en utilisant le bouton **Aide** dans la boîte de dialogue de modification de
 
 ## Sidekick {#sidekick}
 
-La variable **Composants** dans l’onglet du sidekick, vous pouvez parcourir les composants pouvant être ajoutés à la page active. Le groupe requis peut être développé, puis un composant déplacé vers l’emplacement requis sur la page.
+Dans l’onglet **Composants** du sidekick, vous pouvez parcourir les composants pouvant être ajoutés à la page active. Le groupe requis peut être développé, puis un composant déplacé vers l’emplacement requis sur la page.
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
@@ -191,10 +191,10 @@ Lors de la modification d’une page dans l’IU classique, plusieurs modes sont
 La rangée d’icônes située au bas du sidekick permet de changer de mode pour le traitement des pages :
 
 * [Modifier](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
-Il s’agit du mode par défaut qui permet de modifier la page, d’ajouter ou de supprimer des composants et d’effectuer d’autres modifications.
+Il s’agit du mode par défaut qui vous permet de modifier la page, d’ajouter ou de supprimer des composants et de réaliser d’autres changements.
 
 * [Aperçu](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages)
-Ce mode permet de prévisualiser la page comme si elle apparaissait sur votre site web sous sa forme définitive.
+Ce mode permet d’afficher un aperçu de la page comme si elle apparaissait sur votre site web sous sa forme définitive.
 
 * [Conception](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#main-pars-procedure-0)
 Dans ce mode, vous avez la possibilité de modifier la conception de la page en configurant les composants accessibles.

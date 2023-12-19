@@ -9,8 +9,8 @@ feature: Configuring
 exl-id: 9acbf61f-73a8-4998-9421-dd933f30ac8a
 source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 65%
+source-wordcount: '706'
+ht-degree: 69%
 
 ---
 
@@ -61,13 +61,13 @@ Une liste des configurations s’affiche :
 Deux types de configurations sont disponibles dans les listes déroulantes de cet écran :
 
 * **Configurations**
-Permet de mettre à jour les configurations existantes. Elles possèdent une identité persistante (PID) et peuvent être :
+Vous permet de mettre à jour les configurations existantes. Elles possèdent une identité persistante (PID) et peuvent être :
 
    * standard ou intégrales pour AEM. Elles sont nécessaires ; si elles sont supprimées, les valeurs sont renvoyées aux paramètres par défaut.
    * les instances créées à partir des configurations d’usine ; ces instances sont créées par l’utilisateur ou l’utilisatrice et la suppression supprime l’instance.
 
 * **Configurations d’usine**
-Permet de créer une instance de l’objet de fonctionnalité requis.
+Vous permet de créer une instance de l’objet de la fonctionnalité requise.
 
   Il est attribué à une identité persistante, puis répertorié dans la liste déroulante Configurations .
 
@@ -153,7 +153,7 @@ En utilisant cet onglet vous pouvez réaliser les opérations suivantes :
 
 ## Composants {#components}
 
-La variable **Composants** vous permet d’activer et/ou de désactiver les différents composants. Il est accessible par les éléments suivants :
+L’onglet **Composants** vous permet d’activer et de désactiver divers composants. Il est accessible par les éléments suivants :
 
 * Le menu déroulant :
 

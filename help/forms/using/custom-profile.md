@@ -1,6 +1,6 @@
 ---
 title: Créer un profil personnalisé pour HTML5 forms
-description: Un profil HTML5 forms est un nœud de ressources dans Apache Sling. Il représente une version personnalisée du service de rendu de HTML5 forms.
+description: Un profil HTML5 forms est un nœud de ressources dans Apache Sling. Il représente une version personnalisée du service de rendu des formulaires HTML5.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
@@ -9,7 +9,7 @@ exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '656'
-ht-degree: 79%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ Un profil est un nœud de ressources dans [Apache Sling](https://sling.apache.or
 
 Le nœud de profil présente la propriété **sling:resourceSuperType** et la valeur par défaut est **xfaforms/profile**.  Le script de génération du nœud figure dans le dossier /libs/xfaforms/profile.
 
-Les scripts Sling sont des scripts JSP. Ces scripts JSP servent de conteneurs pour rassembler le code HTML du formulaire demandé et les artefacts JS/CSS requis. Ces scripts Sling sont également appelés des **scripts de rendu de profil**. Le rendu de profil appelle le service Forms OSGi afin de générer le formulaire demandé.
+Les scripts Sling sont des scripts JSP. Ces scripts JSP servent de conteneurs pour rassembler le code HTML du formulaire demandé et les artefacts JS/CSS requis. Ces scripts Sling sont également appelés des **scripts de rendu de profil**. Le rendu de profil appelle le service Forms OSGi afin de générer le formulaire demandé.
 
 Le script de profil est dans html.jsp et html.POST.jsp pour les demandes GET et POST. Vous pouvez copier et modifier un ou plusieurs fichiers à remplacer pour y ajouter vos personnalisations. N’apportez aucune modification car la mise à jour des correctifs écrase de telles modifications.
 
@@ -35,7 +35,7 @@ Le module config.jsp contient les différentes configurations telles que les ser
 
 ## toolbar.jsp {#toolbar-jsp}
 
-Le module toolbar.jsp contient le code pour créer la barre d’outils colorée. Pour supprimer la barre d’outils, supprimez toolbar.jsp de HTML.jsp
+Le module toolbar.jsp contient le code pour créer la barre d’outils colorée. Pour supprimer la barre d’outils, supprimez toolbar.jsp de HTML.jsp.
 
 ## formBody.jsp {#formbody-jsp}
 
@@ -43,11 +43,11 @@ Le module de formBody.jsp sert à la représentation HTML du formulaire XFA.
 
 ## nav_footer.jsp {#nav-footer-jsp}
 
-Au départ, le HTML5 ne génère que la première page du formulaire. Lorsqu’un utilisateur fait défiler le formulaire, le reste des formulaires est chargé. Cela accélère l’expérience de chargement. Le composant nav_footer.jsp contient tous les styles et éléments requis pour faciliter le chargement des pages dans le défilement.
+HTML5 forms commence par générer uniquement la première page du formulaire. Lorsqu’un utilisateur ou une utilisatrice fait défiler le formulaire, le reste des formulaires est chargé. La vitesse de chargement est ainsi optimisée. Le composant nav_footer.jsp contient tous les styles et éléments requis pour faciliter le chargement des pages dans le défilement.
 
 ## footer.jsp {#footer-jsp}
 
-Le module footer.jsp est vide. Il vous permet d’ajouter des scripts qui ne sont utilisés que pour l’interaction de l’utilisateur.
+Le module footer.jsp est vide. Ce module vous permet d’ajouter des scripts qui ne sont utilisés que pour l’interaction utilisateur.
 
 ## Création de profils personnalisés {#creating-custom-profiles}
 
@@ -65,9 +65,9 @@ Pour créer un profil personnalisé, procédez comme suit :
 
 1. Cliquez sur Enregistrer tout dans le menu de la barre d’outils pour enregistrer les modifications.
 
-### Création du script de rendu de profil {#create-the-profile-renderer-script}
+### Créez un script de rendu de profil. {#create-the-profile-renderer-script}
 
-Après avoir créé un profil personnalisé, ajoutez des informations de rendu à ce profil. Lors de la réception d’une demande pour le nouveau profil, CRX vérifie l’existence du dossier /apps pour la page JSP à rendre. Créez la page JSP dans le dossier /apps .
+Après avoir créé un profil personnalisé, ajoutez-lui des informations du moteur de rendu. Lors de la réception d’une demande concernant le nouveau profil, CRX vérifie l’existence du dossier /apps pour la page JSP à rendre. Créez la page JSP dans le dossier /apps.
 
 1. Dans le volet de gauche, accédez au dossier `/apps`.
 1. Cliquez avec le bouton droit de la souris sur le `/apps` et choisissez de créer un dossier portant le nom **hrform**.

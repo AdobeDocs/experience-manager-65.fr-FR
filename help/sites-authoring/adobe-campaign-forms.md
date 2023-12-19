@@ -9,7 +9,7 @@ exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1281'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -71,7 +71,7 @@ Tout d’abord, vérifiez que la connexion entre les instances de création et d
 
 ## Modifier le contenu d’un formulaire {#editing-form-content}
 
-Les formulaires dédiés à Adobe Campaign comportent des composants spécifiques. Ces composants disposent d’une option permettant de lier chaque champ du formulaire à un champ de la base de données Adobe Campaign.
+Les formulaires dédiés à Adobe Campaign comportent des composants spécifiques. Ces composants disposent d’une option permettant de lier chaque champ du formulaire à un champ de la base de données d’Adobe Campaign.
 
 >[!NOTE]
 >

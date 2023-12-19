@@ -4,8 +4,8 @@ description: Découvrez les composants de base dans Adobe Experience Manager 6.5
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7204'
-ht-degree: 97%
+source-wordcount: '6872'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 97%
 
 Les composants de base ont été conçus pour être utilisés lors de la création de contenu d’une page web standard. Ils forment un sous-ensemble des composants prêts à l’emploi disponibles dans une installation standard d’AEM.
 
-Certains d’entre eux sont immédiatement accessibles via l’explorateur de composants, d’autres sont également disponibles dans le [mode de conception](/help/sites-authoring/default-components-designmode.md) (si la page est basée sur un modèle statique) ou en [modifiant le modèle](/help/sites-authoring/templates.md) (si la page est basée sur un modèle modifiable).
+Certains sont immédiatement disponibles via l’explorateur de composants. D’autres ressources sont également disponibles en utilisant [mode de conception](/help/sites-authoring/default-components-designmode.md) (si la page est basée sur un modèle statique) ou par [modification du modèle](/help/sites-authoring/templates.md) (si la page est basée sur un modèle modifiable).
 
 L’utilisation des composants de base est prise en charge, mais ils ont été abandonnés et remplacés par des composants principaux qui offrent plus d’extensibilité et de flexibilité.
 
@@ -109,7 +109,7 @@ Si l’image est au format JPEG, sa qualité peut aussi dépendre de la taille d
 
 #### Propriétés {#properties}
 
-La boîte de dialogue vous permet de modifier les propriétés de votre instance du composant Image adaptative, dont la plupart sont communes au composant Image sur lequel il est basé. Les propriétés sont disponibles dans deux onglets :
+La boîte de dialogue permet de modifier les propriétés pour votre instance du composant Image adaptative. Parmi ces propriétés, nombreuses sont celles qui sont communes au composant d’image sur lequel il est basé. Les propriétés sont disponibles dans deux onglets :
 
 * **Image**
 
@@ -149,7 +149,7 @@ Pour plus d’informations sur la personnalisation du composant d’image adapta
 >
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal de carrousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=fr).
 
-Le composant Carrousel vous permet d’afficher les images associées à des pages individuelles :
+Le composant de carrousel vous permet d’afficher des images associées à des pages individuelles :
 
 * une à la fois
 * pour une courte durée
@@ -200,12 +200,12 @@ Entrez une requête de recherche en texte brut.
 
       * **Options de la recherche avancée**
 
-         * **Notation des prédicats de QueryBuilder**
-Entrez une requête de recherche à l’aide de la notation des prédicats de QueryBuilder. Par exemple, entrez « fulltext=Marketing » pour afficher dans le carrousel toutes les pages comportant le terme « Marketing » dans leur contenu.
-Consultez [API QueryBuilder](/help/sites-developing/querybuilder-api.md) pour consulter une étude complète sur les expressions de requête et d’autres exemples.
+         * **Notation des prédicats de Query Builder**
+Vous pouvez saisir une requête de recherche à l’aide de la notation de prédicat de Query Builder. Par exemple, vous pouvez saisir &quot;fulltext=Marketing&quot; pour que toutes les pages comportant &quot;Marketing&quot; dans leur contenu s’affichent dans le carrousel.
+Consultez [API QueryBuilder](/help/sites-developing/querybuilder-api.md) pour découvrir une étude complète sur les expressions de requête et d’autres exemples.
 
    * **Classer par**
-Sélectionnez `jcr:title`, `jcr:created`, `cq:lastModified` ou `cq:template` dans le menu déroulant.
+Sélectionner `jcr:title`, `jcr:created`, `cq:lastModified`, ou `cq:template` dans le menu déroulant.
 
    * **Limite**
 Facultatif. Nombre maximal d’éléments que vous souhaitez utiliser dans le carrousel.
@@ -462,7 +462,7 @@ Ce composant fournit un système de paragraphes/grille qui permet d’ajouter et
 >
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Liste](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=fr).
 
-Le composant Liste permet de configurer les critères de recherche pour l’affichage d’une liste :
+Le composant Liste vous permet de configurer des critères de recherche pour l’affichage d’une liste :
 
 * **Liste**
 
@@ -810,7 +810,7 @@ Pour plus d’informations sur l’application de balises, reportez-vous à la r
 >
 >Le composant de base **Texte** est basé sur l’[éditeur de texte enrichi](/help/sites-authoring/rich-text-editor.md), tout comme le composant de base **Tableau**.
 
-Le composant Texte permet de saisir un bloc de texte à l’aide d’un éditeur WYSIWYG, avec les fonctionnalités fournies par [Éditeur de texte enrichi](/help/sites-authoring/rich-text-editor.md). Une sélection d’icônes vous permet de mettre en forme le texte, notamment les caractéristiques de police, l’alignement, les liens, les listes et la mise en retrait.
+Le composant Texte et personnalisation permet de saisir un bloc de texte en utilisant un éditeur WYSIWYG, avec les fonctionnalités de [l&#39;éditeur de texte enrichi](/help/sites-authoring/rich-text-editor.md). Une série d’icônes permet de mettre en forme le texte dont les attributs de police, alignement, liens, listes et mise en retrait.
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -847,7 +847,7 @@ Vous pouvez configurer :
 
 * **Propriétés de l’image** (**Propriétés d’image avancées**)
 
-  Permet de définir les éléments suivants :
+  Permet de spécifier les éléments suivants :
 
    * **Ressource image**
 
@@ -1008,7 +1008,7 @@ Lors de la configuration de l’un des composants de formulaire, les onglets sui
 
 * **Titre et texte**
 
-  Cet onglet vous invite à renseigner des informations de base, telles que le titre du formulaire et tout texte d’accompagnement. Le cas échéant, il vous permet également de définir d’autres informations clés, telles que si le champ peut être sélectionné plusieurs fois et si des éléments peuvent être sélectionnés.
+  Cet onglet vous invite à renseigner des informations de base, telles que le titre du formulaire et tout texte d’accompagnement. Le cas échéant, il vous permet également d’apporter d’autres informations essentielles ; par exemple, s’il s’agit d’un champ à sélection multiple ou encore les différents éléments pouvant être sélectionnés.
 
 * **Valeurs initiales**
 
@@ -1358,7 +1358,7 @@ Vous pouvez configurer différents paramètres pour ce composant, notamment un m
 >
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Options de formulaire](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html?lang=fr).
 
-Une case à cocher permet de créer une liste d’une ou plusieurs cases à cocher, dont plusieurs peuvent être sélectionnées en même temps.
+Une case à cocher vous permet de créer une liste composée d’une ou de plusieurs cases à cocher. Plusieurs d’entre elles peuvent être simultanément cochées.
 
 ![dc_form_checkboxgroupuse](assets/dc_form_checkboxgroupuse.png)
 
@@ -1509,7 +1509,7 @@ Vous pouvez spécifier le nom de l’élément ainsi qu’un titre et une descri
 >
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Bouton de formulaire](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html?lang=fr).
 
-Ce composant permet de créer un bouton d’envoi, avec le texte par défaut :
+Ce composant vous permet de créer un bouton Envoyer avec le texte par défaut :
 
 ![dc_form_submitbutton](assets/dc_form_submitbutton.png)
 
@@ -1523,7 +1523,7 @@ Ou votre propre texte :
 >
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
 
-Ce champ permet de sélectionner des balises :
+Ce champ permet de sélectionner des balises :
 
 ![dc_form_tags_use](assets/dc_form_tags_use.png)
 

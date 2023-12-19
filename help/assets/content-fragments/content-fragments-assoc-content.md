@@ -6,8 +6,8 @@ role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
 source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 90%
+source-wordcount: '246'
+ht-degree: 93%
 
 ---
 
@@ -30,7 +30,7 @@ Pour créer l’association, vous devez d’abord [ajouter vos ressources multim
 1. Selon que des collections ont déjà été associées ou non, sélectionnez l’une des options suivantes :
 
    * **Associer le contenu** : il s’agira de la première collection associée
-   * **Associer la collection** - collections associées déjà configurées
+   * **Associer la collection** : les collections associées qui sont déjà configurées.
 
 1. Sélectionnez la collection requise.
 
@@ -47,6 +47,6 @@ Pour créer l’association, vous devez d’abord [ajouter vos ressources multim
 Une fois que vous avez associé une collection, vous pouvez :
 
 * **Supprimer** l’association.
-* **Ajouter de ressources** à la collection.
+* **Ajouter des ressources** à la collection.
 * Sélectionner une ressource pour effectuer d’autres actions.
 * Modifier la ressource.

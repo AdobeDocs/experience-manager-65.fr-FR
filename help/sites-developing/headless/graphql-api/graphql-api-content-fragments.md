@@ -5,8 +5,8 @@ feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '4847'
-ht-degree: 90%
+source-wordcount: '4781'
+ht-degree: 95%
 
 ---
 
@@ -104,7 +104,7 @@ AEM fournit des fonctionnalités de conversion des requêtes (des deux types) en
 
 ### Bonnes pratiques en matière de requêtes GraphQL (Dispatcher et réseau CDN) {#graphql-query-best-practices}
 
-[Requêtes persistantes](/help/sites-developing/headless/graphql-api/persisted-queries.md) sont la méthode recommandée à utiliser sur les instances de publication en tant que :
+Il est recommandé d’utiliser les [Requêtes persistantes](/help/sites-developing/headless/graphql-api/persisted-queries.md) sur les instances de publication en raison des avantages suivants :
 
 * Elles sont mises en cache.
 * Elles sont gérées de manière centralisée par AEM
@@ -118,7 +118,7 @@ Les requêtes GraphQL utilisant des requêtes POST ne sont pas recommandées, ca
 
 Bien que GraphQL prenne également en charge les requêtes de GET, ces requêtes peuvent atteindre des limites (par exemple, la longueur de l’URL) qui peuvent être évitées à l’aide de requêtes persistantes.
 
-Voir [Activation de la mise en cache des requêtes persistantes](#enable-caching-persisted-queries) pour plus de détails.
+Voir [Activer le cache des requêtes persistantes](#enable-caching-persisted-queries) pour plus de détails.
 
 >[!NOTE]
 >
@@ -195,7 +195,7 @@ Par exemple, si un utilisateur ou une utilisatrice crée un modèle de fragment 
 
    * Trois d’entre eux ont été contrôlés par l’utilisateur ou utilisatrice : `author`, `main` et `referencearticle`.
 
-   * Les autres champs ont été ajoutés automatiquement par AEM et représentent des méthodes utiles pour fournir des informations sur un certain fragment de contenu (dans cet exemple, les [« champs d’assistance »](#helper-fields), `_path`, `_metadata` et `_variations`).
+   * Les autres champs ont été ajoutés automatiquement par AEM et représentent des méthodes utiles pour fournir des informations sur un certain fragment de contenu. Dans cet exemple, (la variable [champ d’assistance](#helper-fields)) `_path`, `_metadata`, `_variations`.
 
 1. Après qu’un utilisateur a créé un fragment de contenu reposant sur le modèle d’article, il peut être interrogé via GraphQL. Vous trouverez des exemples à la section [Exemples de Requêtes](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#graphql-sample-queries) (basée sur un [modèle de structure de fragment de contenu à utiliser avec GraphQL](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
 
@@ -259,7 +259,7 @@ GraphQL pour AEM prend en charge une liste de types. Tous les types de données 
 | Énumération |  `String` |  Utilisé pour afficher une option à partir d’une liste d’options définies lors de la création du modèle |
 |  Balises |  `[String]` |  Utilisé pour afficher une liste de chaînes représentant les balises utilisées dans AEM |
 | Référence de contenu |  `String` |  Utilisé pour afficher le chemin vers une autre ressource dans AEM |
-| Référence du fragment |  *Un type de modèle* <br><br>Un seul champ : `Model` - Type de modèle, référencé directement <br><br>Champ multiple, avec un type référencé : `[Model]` - Tableau de type `Model`, référencé directement à partir du tableau <br><br>Champ multiple, avec plusieurs types référencés : `[AllFragmentModels]` - Tableau de tous les types de modèle, référencé à partir d’un tableau avec un type d’union | Utilisé pour référencer un ou plusieurs fragments de contenu de certains types de modèles, définis lors de la création du modèle |
+| Référence du fragment |  *Un type de modèle* <br><br>Champ simple : `Model` - Type de modèle, référencé directement <br><br>Multichamp, avec un type référencé : `[Model]` - Tableau de type `Model`, référencé directement à partir du tableau <br><br>Multichamp, avec plusieurs types référencés : `[AllFragmentModels]` - Tableau de tous les types de modèle, référencé à partir d’un tableau avec type d’union | Utilisé pour référencer un ou plusieurs fragments de contenu de certains types de modèles, définis lors de la création du modèle |
 
 {style="table-layout:auto"}
 
@@ -693,21 +693,21 @@ query {
 
 >[!CAUTION]
 >
->Si la mise en cache dans Dispatcher est activée, la fonction [Filtre CORS](#cors-filter) n’est pas nécessaire. Cette section peut donc être ignorée.
+>Si la mise en cache dans Dispatcher est activée, le [Filtre CORS](#cors-filter) n’est pas nécessaire. Cette section peut donc être ignorée.
 
-La mise en cache des requêtes persistantes n’est pas activée par défaut dans Dispatcher. L’activation par défaut n’est pas possible, car les clients qui utilisent le partage de ressources cross-origin (CORS) avec plusieurs origines doivent examiner et éventuellement mettre à jour leur configuration Dispatcher.
+La mise en cache des requêtes persistantes n’est pas activée par défaut dans Dispatcher. L’activation par défaut n’est pas possible, car les clients ou clientes qui utilisent le partage de ressources entre origines multiples (CORS) doivent examiner et éventuellement mettre à jour la configuration de Dispatcher.
 
 >[!NOTE]
 >
->Dispatcher ne met pas en cache la variable `Vary` en-tête .
+>Dispatcher ne met pas en cache l’en-tête `Vary`.
 >
 >La mise en cache d’autres en-têtes liés à CORS peut être activée dans Dispatcher, mais peut s’avérer insuffisante en cas d’origines CORS multiples.
 
-### Activation de la mise en cache des requêtes persistantes {#enable-caching-persisted-queries}
+### Activer la mise en cache des requêtes persistantes {#enable-caching-persisted-queries}
 
-Pour activer la mise en cache des requêtes persistantes, définissez la variable Dispatcher . `CACHE_GRAPHQL_PERSISTED_QUERIES`:
+Pour activer la mise en cache des requêtes persistantes, définissez la variable du Dispatcher `CACHE_GRAPHQL_PERSISTED_QUERIES` :
 
-1. Ajout de la variable au fichier de Dispatcher `global.vars`:
+1. Ajoutez la variable au fichier du Dispatcher `global.vars` :
 
    ```xml
    Define CACHE_GRAPHQL_PERSISTED_QUERIES
@@ -736,18 +736,18 @@ Pour activer la mise en cache des requêtes persistantes, définissez la variabl
 
 >[!NOTE]
 >
->Pour que la variable [Exigences de Dispatcher pour les documents pouvant être mis en cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), Dispatcher ajoute le suffixe `.json` à toutes les URL de requête persistantes, de sorte que le résultat puisse être mis en cache.
+>Pour que la variable [Exigences de Dispatcher pour les documents pouvant être mis en cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=fr#how-does-the-dispatcher-return-documents%3F), Dispatcher ajoute le suffixe `.json` à toutes les URL de requête persistantes, de sorte que le résultat puisse être mis en cache.
 >
->Ce suffixe est ajouté par une règle de réécriture, une fois la mise en cache de requête persistante activée.
+>Ce suffixe est ajouté par une règle de réécriture, une fois la mise en cache des requêtes persistantes activée.
 
 ### Configuration CORS dans Dispatcher {#cors-configuration-in-dispatcher}
 
-Les clients qui utilisent des requêtes CORS doivent peut-être passer en revue et mettre à jour leur configuration CORS dans Dispatcher.
+Les clients et les clientes qui utilisent des requêtes CORS doivent peut-être passer en revue et mettre à jour leur configuration CORS dans Dispatcher.
 
-* La variable `Origin` L’en-tête ne doit pas être transmis à AEM publication via Dispatcher :
-   * Vérifiez les `clientheaders.any` fichier .
-* Au lieu de cela, les demandes CORS doivent être évaluées pour les origines autorisées au niveau de Dispatcher. Cette approche garantit également que les en-têtes liés à CORS sont correctement définis, à un seul endroit, dans tous les cas.
-   * Une telle configuration doit être ajoutée à la variable `vhost` fichier . Vous trouverez ci-dessous un exemple de configuration. Pour plus de simplicité, seule la partie relative à CORS a été fournie. Vous pouvez l’adapter à vos cas d’utilisation spécifiques.
+* L’en-tête `Origin` ne doit pas être transmis à l’instance de publication AEM via Dispatcher :
+   * Vérifiez le fichier `clientheaders.any`.
+* Au lieu de cela, les requêtes CORS doivent être évaluées pour les origines autorisées au niveau de Dispatcher. Cette approche garantit également que les en-têtes liés à CORS sont correctement définis, à un seul endroit, dans tous les cas.
+   * Une telle configuration doit être ajoutée au fichier `vhost`. Vous trouverez ci-dessous un exemple de configuration. Pour plus de simplicité, seule la partie relative à CORS a été fournie. Vous pouvez l’adapter à vos cas d’utilisation spécifiques.
 
   ```xml
   <VirtualHost *:80>
@@ -894,7 +894,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
    * Et les opérations :
 
-      * `_operator` : pour appliquer des opérateurs spécifiques ; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
+      * `_operator` : appliquer des opérateurs spécifiques ; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
          * Voir [Exemple de requête – Toutes les personnes qui ne portent pas le nom « Jobs »](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-persons-not-jobs)
          * Voir [Exemple de requête – Toutes les aventures où `_path` commence par un préfixe spécifique](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-all-adventures-cycling-path-filter)
 
@@ -917,7 +917,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
 >[!CAUTION]
 >
->If [La mise en cache dans Dispatcher a été activée.](#graphql-persisted-queries-enabling-caching-dispatcher) Le filtre CORS n’est pas nécessaire. Cette section peut donc être ignorée.
+>Si [la mise en cache dans Dispatcher a été activée](#graphql-persisted-queries-enabling-caching-dispatcher), le filtre CORS n’est pas nécessaire. Cette section peut donc être ignorée.
 
 >[!NOTE]
 >

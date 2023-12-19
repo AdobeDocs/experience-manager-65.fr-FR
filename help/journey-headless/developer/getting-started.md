@@ -5,7 +5,7 @@ exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '2998'
-ht-degree: 91%
+ht-degree: 96%
 
 ---
 
@@ -70,7 +70,7 @@ Les modèles de fragment de contenu définissent la structure des données et du
 
 ### Fragments de contenu {#content-fragments}
 
-Les fragments de contenu vous permettent de concevoir, créer, organiser et publier du contenu indépendant des pages. Ils vous permettent de préparer le contenu prêt à être utilisé à plusieurs emplacements et sur plusieurs canaux.
+Les fragments de contenu vous permettent de concevoir, de créer, d’organiser et de publier du contenu indépendant des pages. Ils permettent de préparer le contenu prêt à être utilisé dans des emplacements multiples et sur plusieurs canaux.
 
 Les fragments de contenu contiennent du contenu structuré et peuvent être diffusés au format JSON.
 
@@ -78,8 +78,8 @@ Les fragments de contenu contiennent du contenu structuré et peuvent être diff
 
 Pour modifier votre contenu en mode découplé, AEM propose deux API robustes.
 
-* L’API GraphQL vous permet de créer des demandes d’accès et de diffusion de fragments de contenu.
-* L’API REST Assets vous permet de créer et de modifier des fragments de contenu (et d’autres ressources).
+* L’API GraphQL permet de créer des requêtes d’accès et de diffusion de fragments de contenu.
+* L’API REST Assets permet de créer et de modifier des fragments de contenu (et d’autres ressources).
 
 Vous découvrirez ces API et comment les utiliser dans une partie ultérieure du parcours AEM découplé. Ou, voir la [ressources supplémentaires](#additional-resources) pour plus d’informations.
 
@@ -139,9 +139,9 @@ Pour la réussite d’un projet, il est important de définir clairement non seu
 
 ### Portée {#scope}
 
-Il est très important de définir clairement la portée du projet. La portée informe les critères d’acceptation et vous permet d’établir une définition de &quot;terminé&quot;.
+Il est très important de définir clairement la portée du projet. La portée définit les critères d’acceptation et permet d’établir une définition de l’état « terminé ».
 
-La première question que vous devez vous poser est la suivante : « Quel est l’objectif que je veux atteindre grâce à AEM découplé ? » La réponse doit généralement être que vous disposez ou aurez à l’avenir une application d’expérience que vous avez créée avec vos propres outils de développement et non avec AEM. Cette application d’expérience peut être une application mobile, un site web ou toute autre application d’expérience destinée aux utilisateurs finaux. La finalité d’AEM découplé est d’alimenter votre application d’expérience en contenus créés, stockés et gérés dans AEM à l’aide d’API dernier cri. Celles-ci appellent AEM découplé pour récupérer du contenu, ou même du contenu intégralement CRUD, directement depuis votre application d’expérience. Si ce n’est pas ce que vous souhaitez faire, vous devrez probablement [revenir à la documentation d’AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr) et déterminer la section la mieux adaptée à ce que vous souhaitez accomplir.
+La première question que vous devez vous poser est la suivante : « Quel est l’objectif que je veux atteindre grâce à AEM Headless ? » En général, la réponse devrait indiquer que vous disposez ou disposerez d’une application d’expérience créée avec vos propres outils de développement, et non avec AEM. Cette application d’expérience peut être une application mobile, un site web ou toute autre application d’expérience destinée aux utilisateurs finaux. La finalité d’AEM découplé est d’alimenter votre application d’expérience en contenus créés, stockés et gérés dans AEM à l’aide d’API dernier cri. Celles-ci appellent AEM découplé pour récupérer du contenu, ou même du contenu intégralement CRUD, directement depuis votre application d’expérience. Si ce n’est pas ce que vous souhaitez faire, vous devrez probablement [revenir à la documentation d’AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr) et déterminer la section la mieux adaptée à ce que vous souhaitez accomplir.
 
 ### Rôles et responsabilités {#roles-responsibilities}
 
@@ -156,7 +156,7 @@ Les rôles de chaque projet individuel varient, mais les plus importants à pren
 
 L’administrateur est responsable de l’installation et de la configuration de base de votre système. Par exemple, l’administrateur configure votre organisation dans le système de gestion des utilisateurs d’Adobe, désigné sous le nom d’IMS (Identity Management System). Il est le premier utilisateur de l’organisation à recevoir une invitation d’Adobe par e-mail, une fois votre organisation créée dans I’IMS. L’administrateur a la possibilité de se connecter à l’IMS et d’ajouter des utilisateurs d’autres personnages.
 
-Une fois les utilisateurs configurés par l’administrateur, ils disposent des autorisations nécessaires pour accéder à toutes les ressources AEM afin d’accomplir leur travail en tant que contributeurs à la diffusion de l’application d’expérience à l’aide d’AEM Headless.
+Une fois les personnes configurées par l’administrateur ou l’administratrice, celles-ci possèdent les autorisations nécessaires pour accéder à toutes les ressources d’AEM. Ils pourront ainsi accomplir leur travail de contributeurs pour la diffusion de l’application d’expérience à l’aide d’AEM Headless.
 
 L’administrateur doit être l’utilisateur qui a installé AEM et préparé l’environnement d’exécution pour permettre aux [auteurs de contenu](#content-author) de créer et de mettre à jour du contenu, et aux [développeurs](#developer) d’utiliser des API qui récupèrent ou modifient du contenu pour leurs applications d’expérience.
 
@@ -255,7 +255,7 @@ Pour comprendre le trafic et les schémas de trafic, commencez par recueillir de
 
 #### Fréquence de mise à jour {#update-frequency}
 
-Souvent, les différentes sections d’expériences ont des fréquences de mises à jour de contenu variables. Comprendre cela est important pour pouvoir affiner les configurations du réseau de diffusion de contenu et du cache. Il s’agit également d’une entrée importante pour les [Architectes de contenu](#content-architects), car ils conçoivent des modèles pour représenter votre contenu. Prenez en compte les éléments suivants :
+Souvent, les différentes sections d’expériences ont des fréquences de mises à jour de contenu variables. Il est important de comprendre cela pour pouvoir affiner les configurations du réseau CDN et du cache. Il s’agit également d’une entrée importante pour les [Architectes de contenu](#content-architects), car ils conçoivent des modèles pour représenter votre contenu. Prenez en compte les éléments suivants :
 
 * Certains types de contenu doivent-ils expirer au-delà d’une certaine période ?
 * Certains éléments sont-ils spécifiques à l’utilisateur, donc sans pouvoir être mis en cache ?
@@ -275,11 +275,11 @@ Vous devriez poursuivre votre parcours avec AEM découplé en consultant le docu
 
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement en mode découplé en examinant le document [Accès à votre première expérience à l’aide d’AEM découplé](path-to-first-experience.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre le parcours en mode découplé.
 
-* [Modes Pile complète et Découplé dans AEM](/help/sites-developing/headful-headless.md) – Discussion complète sur les niveaux d’intégration en mode découplé disponibles dans AEM.
+* [Modes Pile complète et Découplé dans AEM](/help/sites-developing/headful-headless.md) – Discussion exhaustive sur les niveaux d’intégration en mode découplé disponibles dans AEM.
 
-* Un [Présentation d’AEM en tant que CMS sans affichage](/help/sites-developing/headless/introduction.md)
+* [Présentation d’AEM en tant que CMS découplé](/help/sites-developing/headless/introduction.md)
 
-* [Parcours de traduction découplé AEM](/help/journey-headless/translation/overview.md) – Ce parcours de documentation vous donne une compréhension globale de la technologie découplée, de la manière dont AEM diffuse du contenu découplé et de la manière dont vous pouvez le traduire.
+* [Parcours de traduction AEM Headless](/help/journey-headless/translation/overview.md) – Ce parcours de documentation vous donne une compréhension globale de la technologie découplée, de la manière dont AEM diffuse du contenu découplé et comment vous pouvez le traduire.
 
 * [Tutoriels sur AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) – Ces tutoriels pratiques vous permettront de découvrir comment utiliser, avec AEM, les différentes options de diffusion de contenu vers des points d’entrée en mode découplé et choisir ce qui vous convient.
 * [Gestion de contenu en mode découplé à l’aide des API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) : suivez ce cours pour bénéficier d’un aperçu de l’API GraphQL implémentée dans AEM. L’authentification à l’aide de l’Adobe ID est requise.
@@ -295,4 +295,4 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de dé
 * [API GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) – Documentation technique expliquant comment créer des demandes d’accès et de diffusion de fragments de contenu.
 * [API REST Assets](/help/assets/assets-api-content-fragments.md) – Documentation technique expliquant comment créer et modifier des fragments de contenu (et d’autres ressources).
 * [Requêtes persistantes](/help/sites-developing/headless/graphql-api/persisted-queries.md) – Documentation technique sur les requêtes persistantes dans AEM
-* La variable [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* Le [Portail de développement AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)

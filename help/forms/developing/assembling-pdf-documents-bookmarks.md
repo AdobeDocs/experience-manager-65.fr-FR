@@ -11,7 +11,7 @@ exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '2519'
-ht-degree: 85%
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ Lorsqu’un utilisateur clique sur le signet *Ouvrir les détails du prêt*, le 
 
 >[!NOTE]
 >
->Avant de lire cette section, il est recommandé de vous familiariser avec l’assemblage de documents PDF à l’aide du service Assembler. Cette section nʼaborde pas les concepts tels que la création dʼun objet de collection contenant des documents dʼentrée, ou lʼapprentissage de lʼextraction des résultats de lʼobjet de collection retourné. (Consultez la section [Assembler par programmation des documents PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents)).
+>Avant dʼentamer cette section, il est recommandé de se familiariser avec l’assemblage de documents PDF à l’aide du service Assembler. Cette section nʼaborde pas les concepts tels que la création dʼun objet de collection contenant des documents dʼentrée, ou lʼapprentissage de lʼextraction des résultats de lʼobjet de collection retourné. (Consultez la section [Assembler par programmation des documents PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents)).
 
 >[!NOTE]
 >
@@ -109,7 +109,7 @@ Pour assembler un document PDF contenant des signets, procédez comme suit :
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -156,7 +156,7 @@ Vous pouvez définir des options d’exécution qui contrôlent le comportement 
 
 **Assembler le document PDF**
 
-Pour assembler un document PDF contenant de nouveaux signets, utilisez le `invokeDDX` opération. La raison pour laquelle vous devez utiliser l’opération `invokeDDX` plutôt que dʼautres opérations du service Assembler telles que `invokeOneDocument` est que le service Assembler requiert un document XML de signet qui est transmis dans l’objet de collection Map. Cet objet est un paramètre de l’opération `invokeDDX`.
+Pour assembler un document PDF contenant de nouveaux signets, utilisez l’opération `invokeDDX` du service Assembler. La raison pour laquelle vous devez utiliser l’opération `invokeDDX` plutôt que dʼautres opérations du service Assembler telles que `invokeOneDocument` est que le service Assembler requiert un document XML de signet qui est transmis dans l’objet de collection Map. Cet objet est un paramètre de l’opération `invokeDDX`.
 
 **Enregistrer le document PDF contenant des signets**
 
@@ -176,7 +176,7 @@ Pour assembler un document PDF avec des signets à l’aide de l’API du servic
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR client, tels que adobe-assembler-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers JAR clients, tels que adobe-assembler-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un client Assembler PDF.
 
@@ -201,12 +201,12 @@ Pour assembler un document PDF avec des signets à l’aide de l’API du servic
 1. Ajoutez le document PDF et le document XML du signet à une collection Map.
 
    * Créez un objet `java.util.Map` qui permet de stocker le document PDF d’entrée et le document XML de signet.
-   * Ajoutez le document du PDF d’entrée en appelant la méthode `java.util.Map` de `put` et transmission des arguments suivants :
+   * Ajoutez le document PDF d’entrée en appelant la méthode `put` de l’objet `java.util.Map` et en transmettant les arguments suivants :
 
       * Une valeur de chaîne qui représente le nom de la clé. Cette valeur doit correspondre à celle de l’élément source PDF spécifié dans le document DDX.
       * Un objet `com.adobe.idp.Document` contenant le document PDF d’entrée.
 
-   * Ajoutez le document XML du signet en appelant la fonction `java.util.Map` de `put` et transmission des arguments suivants :
+   * Ajoutez le document XML de signet en appelant la méthode `put` de l’objet `java.util.Map` et en transmettant les arguments suivants :
 
       * Une valeur de chaîne qui représente le nom de la clé. Cette valeur doit correspondre à la valeur de l’élément source Bookmarks spécifié dans le document DDX.
       * Un objet `com.adobe.idp.Document` contenant le document XML de signet.
@@ -214,11 +214,11 @@ Pour assembler un document PDF avec des signets à l’aide de l’API du servic
 1. Définissez les options d’exécution.
 
    * Créez un objet `AssemblerOptionSpec` qui stocke les options d’exécution en utilisant son constructeur.
-   * Définissez les options d’exécution pour répondre à vos exigences professionnelles en appelant une méthode appartenant à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de continuer à traiter une tâche en cas d’erreur, appelez la fonction `AssemblerOptionSpec` de `setFailOnError` méthode et transmission `false`.
+   * Définissez les options d’exécution pour répondre à vos exigences professionnelles en appelant une méthode appartenant à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de continuer à traiter une tâche en cas d’erreur, appelez la méthode `setFailOnError` de l’objet `AssemblerOptionSpec` et transmettez `false`.
 
 1. Assemblez le document PDF.
 
-   Appeler la variable `AssemblerServiceClient` de `invokeDDX` et transmettez les valeurs requises suivantes :
+   Appelez la méthode `invokeDDX` de lʼobjet `AssemblerServiceClient` et transmettez les valeurs requises suivantes :
 
    * Un objet `com.adobe.idp.Document` représentant le document DDX à utiliser.
    * Un objet `java.util.Map` contenant le document PDF d’entrée et le document XML de signet.
@@ -230,9 +230,9 @@ Pour assembler un document PDF avec des signets à l’aide de l’API du servic
 
    Pour obtenir le document PDF nouvellement créé, procédez comme suit :
 
-   * Appeler la variable `AssemblerResult` de `getDocuments` . Cette méthode renvoie un objet `java.util.Map`.
+   * Appelez la méthode `getDocuments` de lʼobjet `AssemblerResult`. Celle-ci renvoie un objet `java.util.Map`.
    * Effectuez une itération au sein de l’objet `java.util.Map` jusqu’à ce que vous trouviez l’objet `com.adobe.idp.Document` résultant. (Vous pouvez utiliser l’élément de résultat PDF spécifié dans le document DDX pour obtenir le document).
-   * Appeler la variable `com.adobe.idp.Document` de `copyToFile` pour extraire le document du PDF.
+   * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour extraire le document PDF.
 
 **Voir également**
 
@@ -259,7 +259,7 @@ Assemblez un document PDF avec des signets à l’aide de l’API du service Ass
    * Créez un objet `AssemblerServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en récupérant la valeur du champ `AssemblerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
@@ -271,24 +271,24 @@ Assemblez un document PDF avec des signets à l’aide de l’API du service Ass
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` est utilisé pour stocker le document DDX.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du document DDX et son mode d’ouverture.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Référencez un document PDF auquel des signets sont ajoutés.
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le PDF d’entrée.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du document PDF d’entrée et son mode d’ouverture.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Référencez le document XML du signet.
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le document XML du signet.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du document PDF d’entrée et son mode d’ouverture.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Ajoutez le document PDF et le document XML du signet à une collection Map.
@@ -302,11 +302,11 @@ Assemblez un document PDF avec des signets à l’aide de l’API du service Ass
 1. Définissez les options d’exécution.
 
    * Créez un objet `AssemblerOptionSpec` qui stocke les options d’exécution en utilisant son constructeur.
-   * Définissez les options d’exécution pour répondre à vos exigences professionnelles en attribuant une valeur à un membre de données qui appartient à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de continuer à traiter une tâche en cas d’erreur, affectez `false` à la fonction `AssemblerOptionSpec` de `failOnError` membre de données.
+   * Définissez les options d’exécution pour répondre à vos exigences professionnelles en attribuant une valeur à un membre de données qui appartient à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de continuer à traiter une tâche en cas d’erreur, affectez `false` au membre de données `failOnError` de l’objet `AssemblerOptionSpec`.
 
 1. Assemblez le document PDF.
 
-   Appeler la variable `AssemblerServiceClient` de `invokeDDX` et transmettez les valeurs suivantes :
+   Appelez la méthode `invokeDDX` de l’objet `AssemblerServiceClient` et transmettez les valeurs suivantes :
 
    * Un objet `BLOB` qui représente le document DDX.
    * Le tableau `MyMapOf_xsd_string_To_xsd_anyType` qui contient les documents d’entrée.
@@ -318,9 +318,9 @@ Assemblez un document PDF avec des signets à l’aide de l’API du service Ass
 
    Pour obtenir le document PDF nouvellement créé, procédez comme suit :
 
-   * Accédez au `AssemblerResult` de `documents` , qui est un `Map` contenant les documents du PDF de résultats.
-   * Effectuez une itération au sein de l’objet `Map` jusqu’à ce que vous trouviez la clé correspondant au nom du document généré. Collez ensuite le de ce membre du tableau `value` à `BLOB`.
-   * Extrayez les données binaires qui représentent le document du PDF en accédant à ses `BLOB` de `MTOM` champ . Cette opération renvoie un tableau d’octets que vous pouvez enregistrer dans un fichier PDF.
+   * Accédez au champ `documents` de lʼobjet `AssemblerResult`, qui est un objet `Map` contenant les documents PDF obtenus.
+   * Effectuez une itération au sein de l’objet `Map` jusqu’à ce que vous trouviez la clé correspondant au nom du document généré. Convertissez ensuite la `value` de ce ou cette membre de tableau en `BLOB`.
+   * Procédez à lʼextraction des données binaires qui représentent le document PDF en accédant au champ `MTOM` de son objet `BLOB`. Cette opération renvoie un tableau d’octets que vous pouvez enregistrer dans un fichier PDF.
 
 **Voir également**
 

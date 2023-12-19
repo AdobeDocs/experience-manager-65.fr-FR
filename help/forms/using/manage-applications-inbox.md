@@ -1,6 +1,6 @@
 ---
 title: Gestion des applications et des tâches Forms dans la boîte de réception AEM
-description: AEM boîte de réception vous permet de lancer des processus Forms via l’envoi d’applications et la gestion des tâches.
+description: La boîte de réception AEM vous permet de lancer des workflows basés sur l’utilisation de Forms via l’envoi d’applications et de tâches de gestion.
 contentOwner: vishgupt
 topic-tags: document_services, publish
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,7 +9,7 @@ exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1067'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 

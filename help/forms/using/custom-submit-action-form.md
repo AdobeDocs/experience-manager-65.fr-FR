@@ -17,7 +17,7 @@ ht-degree: 99%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 Les formulaires adaptatifs requièrent des actions Envoyer pour traiter les données spécifiées par lʼutilisateur. Une action Envoyer détermine la tâche effectuée sur les données envoyées à lʼaide dʼun formulaire adaptatif. Adobe Experience Manager (AEM) contient des [actions Envoyer prêtes à l’emploi](../../forms/using/configuring-submit-actions.md) qui montrent les tâches personnalisées que vous pouvez effectuer à l’aide des données envoyées par l’utilisateur. Vous pouvez par exemple effectuer des tâches comme envoyer un courrier électronique ou stocker les données.

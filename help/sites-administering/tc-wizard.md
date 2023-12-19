@@ -6,7 +6,7 @@ exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 61%
+ht-degree: 73%
 
 ---
 
@@ -18,7 +18,7 @@ L’assistant Copie de la langue est une expérience guidée pour créer et gér
 >
 >L’utilisateur doit être membre du groupe projects-administrators pour créer la copie de langue d’un site.
 
-Pour accéder à cet assistant :
+Pour accéder à cet assistant :
 
 1. Dans Sites, sélectionnez une page, puis cliquez sur Créer.
 
@@ -28,7 +28,7 @@ Pour accéder à cet assistant :
 
    ![chlimage_1-10](assets/chlimage_1-10.jpeg)
 
-1. La variable **Sélectionner la source** de l’assistant, vous pouvez ajouter ou supprimer des pages. Vous avez également la possibilité d’inclure ou d’exclure les sous-pages.
+1. L’étape **Sélectionner la source** de l’assistant vous permet d’ajouter/supprimer des pages. Vous avez également la possibilité d’inclure ou d’exclure les sous-pages.
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
 

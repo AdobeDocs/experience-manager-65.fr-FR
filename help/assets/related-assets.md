@@ -7,14 +7,14 @@ feature: Collaboration,Asset Management
 exl-id: ddb69727-74a0-4a4d-a14e-7d3bb5ceea2a
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 62%
+source-wordcount: '640'
+ht-degree: 96%
 
 ---
 
 # Ressources liées {#related-assets}
 
-[!DNL Adobe Experience Manager Assets] vous permet de mettre en relation manuellement des ressources en fonction des besoins de votre organisation à l’aide de la fonctionnalité Ressources associées. Vous pouvez, par exemple, associer un fichier de licence à une ressource ou à une image/vidéo sur une rubrique similaire. Vous pouvez mettre en relation des ressources qui partagent certains attributs communs. Vous pouvez également utiliser la fonction pour créer des relations sources/dérivées entre les ressources. Par exemple, si vous disposez d’un fichier de PDF généré à partir d’un fichier INDD, vous pouvez associer le fichier de PDF à son fichier INDD source.
+[!DNL Adobe Experience Manager Assets] vous permet de mettre en relation manuellement des ressources en fonction des besoins de votre organisation à l’aide de la fonctionnalité Ressources associées. Vous pouvez, par exemple, associer un fichier de licence à une ressource ou à une image/vidéo sur une rubrique similaire. Vous pouvez mettre en relation des ressources qui partagent certains attributs communs. Vous pouvez également utiliser la fonction pour créer des relations sources/dérivées entre les ressources. Par exemple, si vous disposez d’un fichier PDF généré à partir d’un fichier INDD, vous pouvez associer le fichier PDF à son fichier INDD source.
 
 Grâce à cette fonctionnalité, vous avez la possibilité de partager un fichier PDF ou JPG basse résolution avec des fournisseurs ou des agences et de rendre le fichier INDD haute résolution disponible uniquement sur demande.
 
@@ -41,22 +41,22 @@ Grâce à cette fonctionnalité, vous avez la possibilité de partager un fichie
 1. Pour mettre en relation une autre ressource avec celle que vous avez sélectionnée, cliquez sur **[!UICONTROL Mettre en relation]** ](assets/do-not-localize/link-relate.png)lier des ressources![ dans la barre d’outils.
 1. Utilisez l’une des méthodes suivantes :
 
-   * Pour mettre en relation le fichier source de la ressource, sélectionnez **[!UICONTROL Source]** dans la liste.
+   * Pour associer le fichier source de la ressource, sélectionnez **[!UICONTROL Source]** dans la liste.
    * Pour mettre en relation un fichier dérivé avec la ressource, sélectionnez **[!UICONTROL Dérivés]** dans la liste.
    * Pour créer une relation bidirectionnelle entre les ressources, sélectionnez **[!UICONTROL Autres]** dans la liste.
 
-1. Dans la **[!UICONTROL Sélectionner une ressource]** , accédez à l’emplacement de la ressource à mettre en relation, puis sélectionnez-la.
+1. À l&#39;écran **[!UICONTROL Sélectionner une ressource]**, accédez à l’emplacement de la ressource à associer puis sélectionnez-la.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
 1. Cliquez sur **[!UICONTROL Confirmer]**.
-1. Cliquez sur **[!UICONTROL OK]** pour fermer la boîte de dialogue. Selon la relation que vous avez choisie à l’étape 3, l’actif associé est répertorié sous une catégorie appropriée dans la **[!UICONTROL Associé]** . Par exemple, si la ressource que vous avez liée est le fichier source de la ressource actuelle, elle est répertoriée sous **[!UICONTROL Source]**.
+1. Cliquez sur **[!UICONTROL OK]** pour fermer la boîte de dialogue. Selon la relation que vous avez choisie à l’étape 3, la ressource associée est répertoriée sous une catégorie appropriée dans la section **[!UICONTROL Associé]** . Par exemple, si la ressource que vous avez associée est le fichier source de la ressource actuelle, elle est répertoriée sous **[!UICONTROL Source]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
 1. Pour annuler la relation avec une ressource, cliquez sur **[!UICONTROL Dissocier]** ![dissociation des ressources](assets/do-not-localize/link-unrelate-icon.png) dans la barre d’outils.
 
-1. Sélectionnez les ressources que vous souhaitez annuler la mise en relation dans la **[!UICONTROL Supprimer les relations]** puis cliquez sur **[!UICONTROL Sans relation]**.
+1. Sélectionnez la ou les ressources que vous souhaitez dissocier dans la boîte de dialogue **[!UICONTROL Supprimer les relations]**, puis cliquez sur **[!UICONTROL Dissocier]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 

@@ -680,7 +680,7 @@ Certains de ces outils dépendent de votre système d’exploitation.
 
 Ce fichier permet d’enregistrer des données de base sur chaque demande envoyée à AEM. Vous pouvez en tirer des conclusions précieuses.
 
-`request.log` fournit une méthode intégrée pour identifier la durée des demandes. À des fins de développement, il est utile d’utiliser `tail -f` sur `request.log` et d’observer les temps de réponse lents. Pour analyser une plus grande `request.log`, Adobe recommande la variable [utilisation de `rlog.jar` qui permet de trier et filtrer les temps de réponse](#using-rlog-jar-to-find-requests-with-long-duration-times).
+`request.log` fournit une méthode intégrée pour identifier la durée des demandes. À des fins de développement, il est utile d’utiliser `tail -f` sur `request.log` et d’observer les temps de réponse lents. Pour analyser un `request.log` plus volumineux, Adobe recommande [l’utilisation de `rlog.jar`, qui permet de trier et de filtrer les temps de réponse](#using-rlog-jar-to-find-requests-with-long-duration-times).
 
 Adobe recommande d’isoler les pages « lentes » de `request.log`, puis de les régler individuellement pour de meilleures performances. Incluez des mesures de performances par composant ou utilisez un outil de profilage des performances tel que ` [yourkit](https://www.yourkit.com/)`.
 

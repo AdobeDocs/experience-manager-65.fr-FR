@@ -1,6 +1,6 @@
 ---
 title: Configuration de la segmentation avec ContextHub
-description: Découvrez comment configurer la segmentation avec ContextHub.
+description: Découvrez comment configurer la segmentation avec Context Hub.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -9,7 +9,7 @@ exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '1745'
-ht-degree: 72%
+ht-degree: 79%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 72%
 >Cette section décrit la configuration de la segmentation lors de l’utilisation du ContextHub. Si vous utilisez la fonctionnalité ClientContext, consultez la documentation appropriée pour [configuration de la segmentation pour ClientContext](/help/sites-administering/campaign-segmentation.md).
 >
 
-La segmentation est un élément clé de la création d’une campagne. Voir [Gestion des audiences](/help/sites-authoring/managing-audiences.md) pour plus d’informations sur le fonctionnement de la segmentation et les termes clés.
+La segmentation est un élément clé de la création d’une campagne. Voir [Gestion des audiences](/help/sites-authoring/managing-audiences.md) pour plus d’informations sur le fonctionnement de la segmentation et en connaître les termes clés.
 
 En fonction des informations que vous avez déjà collectées sur les visiteurs de votre site et des objectifs que vous souhaitez atteindre, vous devez définir les segments et les stratégies nécessaires au contenu ciblé.
 
 Ces segments sont ensuite utilisés pour fournir aux visiteurs du contenu spécifiquement ciblé. Ce contenu est conservé dans la section [Personnalisation](/help/sites-authoring/personalization.md) du site web. Les [activités](/help/sites-authoring/activitylib.md) définies ici peuvent être ajoutées à n’importe quelle page et définissent à quel segment de visiteurs le contenu spécialisé s’applique.
 
-AEM vous permet de personnaliser facilement l’expérience de vos utilisateurs. Il vous permet également de vérifier les résultats de vos définitions de segment.
+AEM vous permet de personnaliser facilement l’expérience de vos utilisateurs et utilisatrices. Il vous permet également de vérifier les résultats de vos définitions de segment.
 
 ## Accès aux segments {#accessing-segments}
 
@@ -42,7 +42,7 @@ Sélectionnez votre configuration pour afficher les segments, par exemple, le si
 
 ## Éditeur de segment {#segment-editor}
 
-La variable **Éditeur de segment** permet de modifier facilement un segment. Pour modifier un segment, sélectionnez un segment dans la [liste de segments](/help/sites-administering/segmentation.md#accessing-segments) et cliquez sur le bouton **Modifier**.
+L&#39;**Éditeur de segment** vous permet de modifier facilement un segment : Pour modifier un segment, sélectionnez un segment dans la [liste de segments](/help/sites-administering/segmentation.md#accessing-segments) et cliquez sur le bouton **Modifier**.
 
 ![segmenteditor](assets/segmenteditor.png)
 
@@ -56,7 +56,7 @@ Lorsque l’intégralité de l’instruction est vraie, alors le segment a été
 
 ### Conteneurs {#containers}
 
-Les conteneurs suivants sont disponibles prêts à l’emploi et vous permettent de regrouper des comparaisons et des références pour l’évaluation booléenne. Ils peuvent être déplacés de l’explorateur de composants vers l’éditeur. Voir la section suivante, [Utilisation de conteneurs ET et OU](/help/sites-administering/segmentation.md#using-and-and-or-containers) pour plus d’informations.
+Les conteneurs suivants sont disponibles clé en main et vous permettent de regrouper des comparaisons et des références en vue de l’évaluation booléenne. Ils peuvent être déplacés de l’explorateur de composants vers l’éditeur. Voir la section suivante, [Utilisation de conteneurs ET et OU](/help/sites-administering/segmentation.md#using-and-and-or-containers) pour plus d’informations.
 
 <table>
  <tbody>
@@ -146,30 +146,30 @@ Pour définir votre nouveau segment, procédez comme suit :
    * Valeur minimale : `0`
    * Valeur maximale : `1000000`
 
-1. Faites glisser une comparaison ou une référence vers l’éditeur de segments qui apparaîtra dans le conteneur ET par défaut.
-1. Double-cliquez sur l’option de configuration de la nouvelle référence ou du nouveau segment pour éditer les paramètres spécifiques. Dans cet exemple, nous testons des personnes à San José.
+1. Faites glisser une comparaison ou une référence vers l’Éditeur de segments qui apparaîtra dans le conteneur ET par défaut.
+1. Double-cliquez sur l’option de configuration de la nouvelle référence ou du nouveau segment pour éditer les paramètres spécifiques. Dans cet exemple, des personnes situées à San Jose font l’objet d’un test.
 
    ![screen_shot_2012-02-02at103135am](assets/screen_shot_2012-02-02at103135ama.png)
 
    Si possible, veillez à toujours définir un **type de données** pour vous assurer que vos comparaisons sont évaluées correctement. Voir [Comparaisons](/help/sites-administering/segmentation.md#comparisons) pour plus d’informations.
 
-1. Cliquez sur **OK** pour enregistrer votre définition :
-1. Ajoutez d’autres composants, en fonction de vos besoins. Vous pouvez formuler des expressions booléennes à l’aide des composants de conteneur pour des comparaisons ET et OU (voir la rubrique [Utilisation des conteneurs ET et OU](/help/sites-administering/segmentation.md#using-and-and-or-containers) ci-dessous). Avec l’éditeur de segment, vous pouvez supprimer les composants qui ne sont plus nécessaires ou les faire glisser vers de nouveaux emplacements dans l’instruction.
+1. Cliquez sur **OK** pour enregistrer votre définition :
+1. Ajoutez d’autres composants, en fonction de vos besoins. Vous pouvez formuler des expressions booléennes à l’aide des composants de conteneur pour des comparaisons ET et OU (voir la rubrique [Utilisation des conteneurs ET et OU](/help/sites-administering/segmentation.md#using-and-and-or-containers) ci-dessous). Avec l’Éditeur de segment, vous pouvez supprimer les composants qui ne sont plus nécessaires ou les faire glisser vers de nouveaux emplacements dans l’instruction.
 
 ### Utilisation des conteneurs ET et OU {#using-and-and-or-containers}
 
-Avec les composants de conteneur ET et OU, vous pouvez créer des segments complexes dans AEM. Pour ce faire, il est utile de tenir compte de quelques points importants :
+Avec les composants de conteneur ET et OU, vous pouvez créer des segments complexes dans AEM. Pour ce faire, il est utile de tenir compte de quelques points de base :
 
 * Le niveau supérieur de la définition est toujours le conteneur ET qui est initialement créé. Cela ne peut pas être modifié, mais n’a aucun effet sur le reste de votre définition de segment.
 * Assurez-vous que l’imbrication de votre conteneur a un sens. Les conteneurs peuvent être considérés comme des crochets de votre expression booléenne.
 
-L’exemple suivant est utilisé pour sélectionner les visiteurs qui sont considérés comme appartenant à notre groupe d’âges préféré :
+L’exemple suivant permet de sélectionner les visiteurs et les visiteuses qui sont considérés comme appartenant à notre groupe cible d’âge :
 
-Homme et entre 30 et 59 ans
+Des hommes et qui ont entre 30 et 59 ans
 
 OU
 
-Femme et entre 30 et 59 ans
+Des femmes et qui ont entre 30 et 59 ans
 
 Commencez par placer un composant de conteneur OU dans le conteneur ET par défaut. Dans le conteneur OU, ajoutez deux conteneurs ET puis, dans ces deux conteneurs, vous pouvez ajouter les composants de propriété ou de référence.
 
@@ -223,8 +223,8 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 #### Référencement d’un script {#referencing-a-script}
 
-1. Créez un segment ContextHub.
-1. Ajoutez le composant **Référence de script** à l’emplacement souhaité du segment.
+1. Créer un segment ContextHub.
+1. Ajouter le composant **Référence de script** à l’emplacement souhaité du segment.
 1. Ouvrez la boîte de dialogue de modification du composant **Référence de script**. S’il est [correctement configuré](/help/sites-administering/segmentation.md#defining-a-script-to-reference), le script doit être disponible dans le menu déroulant **Nom du script**.
 
 ## Organisation des segments {#organizing-segments}
@@ -302,8 +302,8 @@ Une fois le segment défini, les résultats potentiels peuvent être testés ave
 
 1. Affichez l’aperçu d’une page.
 1. Cliquez sur l’icône ContextHub pour afficher la barre d’outils ContextHub.
-1. Sélectionnez une personne qui correspond au segment que vous avez créé
-1. ContextHub résout les segments applicables pour la personne sélectionnée
+1. Sélectionnez une personne qui correspond au segment que vous avez créé.
+1. ContextHub résout les segments applicables pour la persona sélectionnée.
 
 Par exemple, notre définition de segment simple pour identifier les utilisateurs dans notre classe d’âges principale est une définition de segment simple basée sur l’âge et le sexe de l’utilisateur. Le chargement d’une personne spécifique correspondant à ces critères indique si ce segment a été résolu avec succès :
 

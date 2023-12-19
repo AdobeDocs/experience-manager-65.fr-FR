@@ -8,13 +8,13 @@ exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
 source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '1844'
-ht-degree: 48%
+ht-degree: 99%
 
 ---
 
 # Création de formulaires adaptatifs à l’aide d’un schéma JSON {#creating-adaptive-forms-using-json-schema}
 
-<span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/using/create-an-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
+<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -35,13 +35,13 @@ La création d’un formulaire adaptatif à l’aide d’un schéma JSON en tant
 
 Les fonctionnalités clés de l’utilisation d’un schéma JSON sont les suivantes :
 
-* La structure du modèle JSON s’affiche sous forme d’arborescence sous l’onglet Outil de recherche de contenu en mode création pour un formulaire adaptatif. Vous pouvez faire glisser et ajouter un élément de la hiérarchie JSON au formulaire adaptatif.
-* Vous pouvez préremplir le formulaire à l’aide de JSON conforme au schéma associé.
-* Lors de l’envoi, les données saisies par l’utilisateur sont envoyées au format JSON en phase avec le schéma associé.
+* La structure du modèle JSON s’affiche sous forme d’arborescence sous l’onglet Outil de recherche de contenu en mode création pour un formulaire adaptatif. Vous pouvez faire glisser et ajouter un élément de la hiérarchie JSON dans le formulaire adaptatif.
+* Vous pouvez préremplir le formulaire avec le code JSON conforme au schéma associé.
+* Au moment de l’envoi, les données saisies par l’utilisateur ou l’utilisatrice sont envoyées au format JSON approprié pour le schéma associé.
 
-Un schéma JSON se compose de types d’éléments simples et complexes. Les éléments possèdent des attributs qui ajoutent des règles à ceux-ci. Lorsque ces éléments et attributs sont déplacés sur un formulaire adaptatif, ils sont automatiquement mappés au composant de formulaire adaptatif correspondant.
+Un schéma JSON se compose de types d’éléments simples et complexes. Les éléments possèdent des attributs qui ajoutent des règles à ceux-ci. Lorsque ces éléments et attributs sont déplacés vers un formulaire adaptatif, ils sont automatiquement mis en correspondance avec les composants de formulaires adaptatifs correspondants.
 
-Ce mappage des éléments JSON avec les composants de formulaire adaptatif est le suivant :
+Cette mise en correspondance des éléments JSON avec les composants de formulaires adaptatifs est la suivante :
 
 ```json
 "birthDate": {
@@ -70,18 +70,18 @@ Ce mappage des éléments JSON avec les composants de formulaire adaptatif est l
   </tr>
   <tr>
    <td><p>Propriétés de chaînes avec contrainte d’énumération et enumNames.</p> <p>Syntaxe,</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td>
-   <td><p>Composant Liste déroulante :</p>
+   <td><p>Composant de liste déroulante :</p>
     <ul>
-     <li>Les valeurs répertoriées dans enumNames s’affichent dans la zone de dépôt.</li>
+     <li>Les valeurs énumérées dans enumNames s’affichent dans la zone de dépôt.</li>
      <li>Les valeurs répertoriées dans l’énumération sont utilisées pour le calcul.</li>
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Propriété de chaîne avec contrainte de format. Par exemple, courrier électronique et date.</p> <p>Syntaxe,</p> <p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"format" : "email"</code></p> <p><code>}</code></p> <p> </p> </td>
+   <td><p>Propriété de chaîne avec contrainte de format. Par exemple, e-mail et date.</p> <p>Syntaxe,</p> <p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"format" : "email"</code></p> <p><code>}</code></p> <p> </p> </td>
    <td>
     <ul>
-     <li>Le composant Email est mappé lorsque le type est chaîne et le format est email.</li>
-     <li>Le composant de zone de texte avec validation est mappé lorsque le type est chaîne et le format est nom d’hôte.</li>
+     <li>Le composant d’e-mail est mappé lorsque le type est une chaîne et le format un e-mail.</li>
+     <li>Le composant de textbox avec validation est mappé lorsque le type est une chaîne et le format un nom d’hôte.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -89,24 +89,24 @@ Ce mappage des éléments JSON avec les composants de formulaire adaptatif est l
    <td><br /> <br /> Champ de texte<br /> <br /> <br /> </td>
   </tr>
   <tr>
-   <td>propriété number<br /> </td>
-   <td>Champ numérique dont le sous-type est défini pour flotter<br /> </td>
+   <td>propriété de nombre<br /> </td>
+   <td>Champ numérique dont le sous-type est défini comme flottant<br /> </td>
   </tr>
   <tr>
-   <td>propriété integer<br /> </td>
+   <td>propriété Entier<br /> </td>
    <td>Champ numérique dont le sous-type est défini sur entier<br /> </td>
   </tr>
   <tr>
-   <td>propriété boolean<br /> </td>
+   <td>propriété Booléen<br /> </td>
    <td>Basculer<br /> </td>
   </tr>
   <tr>
-   <td>propriété object<br /> </td>
+   <td>propriété de l’objet<br /> </td>
    <td>Panneau<br /> </td>
   </tr>
   <tr>
-   <td>Propriété du tableau</td>
-   <td>Panneau répétable dont le minimum et le maximum sont respectivement égaux à minItems et maxItems. Seuls les tableaux homogènes sont pris en charge. Par conséquent, la contrainte d’éléments doit être un objet et n’est pas un tableau.<br /> </td>
+   <td>propriété de tableau</td>
+   <td>Panneau répétable dont les valeurs min et max sont respectivement égales à minItems et maxItems. Seuls les tableaux homogènes sont pris en charge. Par conséquent, la contrainte d’éléments doit être un objet et n’est pas un tableau.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -338,7 +338,7 @@ Les clés de définition sont utilisées pour identifier les schémas réutilisa
 }
 ```
 
-L’exemple ci-dessus définit un enregistrement de client, où chaque client possède à la fois une adresse de livraison et une adresse de facturation. La structure des deux adresses est la même (les adresses ont une adresse de rue, une ville et un état), il est donc préférable de ne pas dupliquer les adresses. Cela facilite également l’ajout et la suppression de champs pour toute modification ultérieure.
+L’exemple ci-dessus définit un enregistrement client dans lequel chaque client ou cliente dispose d’une adresse d’expédition et de facturation. La structure des deux adresses est la même : les adresses indiquent une rue, la ville et un État. Il est donc préférable de ne pas dupliquer les adresses. Cela facilite également l’ajout et la suppression de champs pour toute modification ultérieure.
 
 ## Préconfiguration des champs dans la définition du schéma JSON {#pre-configuring-fields-in-json-schema-definition}
 
@@ -364,7 +364,7 @@ Vous pouvez utiliser la propriété **aem:afProperties** pour préconfigurer le 
 
 ## Configuration de scripts ou d’expressions pour les objets de formulaire  {#configure-scripts-or-expressions-for-form-objects}
 
-JavaScript est le langage d’expression des formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides et utilisent des API de modèle de script de formulaires adaptatifs. Vous pouvez préconfigurer les objets de formulaire pour [évaluer une expression](adaptive-form-expressions.md) sur un événement de formulaire.
+JavaScript est le langage d’expression des formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Vous pouvez préconfigurer les objets de formulaire pour [évaluer une expression](adaptive-form-expressions.md) sur un événement de formulaire.
 
 Utilisez la propriété aem:afproperties pour préconfigurer les expressions ou scripts de formulaires adaptatifs pour les composants de ces formulaires. Par exemple, lorsque l’événement initialize est déclenché, le code ci-dessous définit la valeur du champ téléphonique et imprime une valeur dans le journal :
 
@@ -565,7 +565,7 @@ Vous devez être membre du [groupe forms-power-user](forms-groups-privileges-tas
    <td> </td>
   </tr>
   <tr>
-   <td>Draw</td>
+   <td>Dessin</td>
    <td><img alt="Icône de coche Oui" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td><img alt="Icône de coche Oui" src="assets/yes_tick.png" /></td>
@@ -656,7 +656,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON po
   <tr>
    <td><p><code>minimum</code></p> </td>
    <td><p>Chaîne</p> </td>
-   <td><p>Indique la limite inférieure pour les valeurs numériques et les dates. Par défaut, la valeur minimale est incluse.</p> </td>
+   <td><p>Définit la limite inférieure pour les valeurs numériques et les dates. Par défaut, la valeur minimale est incluse.</p> </td>
    <td>
     <ul>
      <li>Zone numérique</li>
@@ -667,7 +667,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON po
   <tr>
    <td><p><code>exclusiveMaximum</code></p> </td>
    <td><p>Booléen</p> </td>
-   <td><p>Si la valeur est true, la valeur numérique ou la date spécifiée dans le composant du formulaire doit être inférieure à la valeur numérique ou la date spécifiée pour la propriété maximum.</p> <p>Si la valeur est false, la valeur numérique ou la date spécifiée dans le composant du formulaire doit être inférieure ou égale à la valeur numérique ou à la date spécifiée pour la propriété maximum.</p> </td>
+   <td><p>Si elle est définie sur true, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être inférieure à la valeur numérique ou la date spécifiée pour la propriété maximum.</p> <p>Si elle est définie sur false, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être inférieure ou égale à la valeur numérique ou la date spécifiée pour la propriété maximum.</p> </td>
    <td>
     <ul>
      <li>Zone numérique</li>
@@ -678,7 +678,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON po
   <tr>
    <td><p><code>exclusiveMinimum</code></p> </td>
    <td><p>Booléen</p> </td>
-   <td><p>Si la valeur est true, la valeur numérique ou la date spécifiée dans le composant du formulaire doit être supérieure à la valeur numérique ou à la date spécifiée pour la propriété minimum.</p> <p>Si la valeur est false, la valeur numérique ou la date spécifiée dans le composant du formulaire doit être supérieure ou égale à la valeur numérique ou à la date spécifiée pour la propriété minimale.</p> </td>
+   <td><p>Si elle est définie sur true, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être supérieure à la valeur numérique ou la date spécifiée pour la propriété minimum.</p> <p>Si elle est définie sur false, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être supérieure ou égale à la valeur numérique ou la date spécifiée pour la propriété minimum.</p> </td>
    <td>
     <ul>
      <li>Zone numérique</li>
@@ -698,7 +698,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON po
   <tr>
    <td><code>maxLength</code></td>
    <td>Chaîne</td>
-   <td>Indique le nombre maximal de caractères autorisés dans un composant. La longueur maximale doit être égale ou supérieure à zéro.</td>
+   <td>Spécifie le nombre maximal de caractères autorisés dans un composant. La longueur maximale doit être égale ou supérieure à zéro.</td>
    <td>
     <ul>
      <li>Zone de texte</li>
@@ -707,7 +707,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON po
   <tr>
    <td><p><code>pattern</code></p> </td>
    <td><p>Chaîne</p> </td>
-   <td><p>Indique la séquence des caractères. Un composant accepte les caractères si les caractères sont conformes au modèle spécifié.</p> <p>La propriété pattern correspond au modèle de validation du composant de formulaire adaptatif correspondant.</p> </td>
+   <td><p>Spécifie la séquence de caractères. Un composant accepte les caractères si les caractères sont conformes au modèle spécifié.</p> <p>La propriété de modèle mappe au modèle de validation du composant de formulaire adaptatif correspondant.</p> </td>
    <td>
     <ul>
      <li>Tous les composants de formulaires adaptatifs qui sont mappés vers un schéma XSD </li>
@@ -730,26 +730,26 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON po
 
 
 
-## Activation des données conformes aux schémas {#enablig-schema-compliant-data}
+## Activer des données conformes aux schémas {#enablig-schema-compliant-data}
 
-Pour permettre à tous les Forms adaptatifs basés sur un schéma JSON de générer des données conformes au schéma lors de l’envoi du formulaire, procédez comme suit :
+Pour permettre à tous les formulairess adaptatifs basés sur un schéma JSON de générer des données conformes au schéma lors de l’envoi du formulaire, procédez comme suit :
 
-1. Accédez à la console web Experience Manager à l’adresse `https://server:host/system/console/configMgr`.
-1. Localiser **[!UICONTROL Configuration de canal web de formulaire adaptatif et de communication interactive]**.
+1. Accédez à la console web Experience Manager à l’adresse `https://server:host/system/console/configMgr`.
+1. Recherchez **[!UICONTROL Configuration des canaux web du formulaire adaptatif et de la communication interactive]**
 1. Sélectionnez cette option pour ouvrir la configuration en mode d’édition.
-1. Sélectionnez la variable **[!UICONTROL Générer des données conformes aux schémas]** .
+1. Cochez la case **[!UICONTROL Générer des données conformes aux schémas]**.
 1. Enregistrez les paramètres.
 
-![configuration du canal web de formulaire adaptatif et de communication interactive](/help/forms/using/assets/af-ic-web-channel-configuration.png)
+![configuration des canaux web du formulaire adaptatif et de la communication interactive](/help/forms/using/assets/af-ic-web-channel-configuration.png)
 
 ## Éléments non pris en charge  {#non-supported-constructs}
 
 Les formulaires adaptatifs ne prennent pas en charge les éléments suivants de schéma JSON :
 
 * Type null
-* Types d’unions, tels que les types appropriés, et
-* OneOf, AnyOf, AllOf et NOT
-* Seuls les tableaux homogènes sont pris en charge. Par conséquent, la contrainte d’éléments doit être un objet et non un tableau.
+* Types d’union tels que n’importe lequel, et
+* OneOf, AnyOf, AllOf, et NOT
+* Seuls les tableaux homogènes sont pris en charge. Par conséquent, la contrainte d’éléments doit être un objet et ne doit pas être un tableau.
 
 ## Questions fréquemment posées {#frequently-asked-questions}
 
@@ -757,9 +757,9 @@ Les formulaires adaptatifs ne prennent pas en charge les éléments suivants de 
 
 Dans un sous-formulaire répétable, vous devez utiliser le sous-formulaire complet. Si vous souhaitez uniquement des champs sélectifs, utilisez la structure entière et supprimez les champs indésirables.
 
-**Je dispose d’une longue structure complexe dans l’outil de recherche de contenu. Comment puis-je trouver un élément spécifique ?**
+**Je dispose d’une longue structure complexe dans l’Outil de recherche de contenu. Comment puis-je trouver un élément spécifique ?**
 
-Vous disposez de deux options :
+Vous disposez de deux options :
 
 * Parcourez la structure de l’arborescence.
 * Utilisez la zone Rechercher pour rechercher un élément.

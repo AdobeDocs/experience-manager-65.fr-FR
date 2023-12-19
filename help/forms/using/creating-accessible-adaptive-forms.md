@@ -1,6 +1,6 @@
 ---
 title: Créer des formulaires adaptatifs accessibles
-description: AEM Forms vous fournit des outils, ainsi que la création de formulaires adaptatifs accessibles, et vous aide à vous conformer aux normes d’accessibilité.
+description: AEM Forms propose les outils nécessaires pour créer des formulaires adaptatifs accessibles et répondre aux normes d’accessibilité.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
@@ -9,19 +9,19 @@ exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '2099'
-ht-degree: 85%
+ht-degree: 94%
 
 ---
 
 # Créer des formulaires adaptatifs accessibles{#creating-accessible-adaptive-forms}
 
-<span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/using/create-an-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
+<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
 ## Présentation {#introduction}
 
-Un formulaire accessible est un formulaire utilisable par tout le monde, y compris par les utilisateurs souffrant de handicaps. Les Forms adaptatives comprennent plusieurs fonctionnalités qui améliorent la convivialité pour les utilisateurs avec des fonctionnalités différentes. L’intégration de l’accessibilité dans les formulaires adaptatifs permet non seulement le plus large public possible de contenu, mais elle est également requise lors de la fourniture de documents dans des zones géographiques où la conformité aux normes d’accessibilité est obligatoire. AEM Forms aide les développeurs à se conformer à ces normes d’accessibilité.
+Un formulaire accessible est un formulaire utilisable par tout le monde, y compris par les utilisateurs souffrant de handicaps. Les Forms adaptatives comprennent plusieurs fonctionnalités qui améliorent la convivialité pour les utilisateurs avec des fonctionnalités différentes. L’intégration d’options d’accessibilité dans des formulaires adaptatifs ne permet pas seulement d’élargir l’audience. Il s’agit, en effet, d’une exigence lors de la diffusion de documents dans des régions où le respect des normes d’accessibilité constitue une obligation. AEM Forms aide les développeurs à se conformer à ces normes d’accessibilité.
 
-Lors de la création d’un formulaire adaptatif, l’auteur doit tenir compte des points suivants pour créer un formulaire adaptatif accessible :
+Lors de la création d’un formulaire adaptatif, le créateur ou la créatrice doit tenir compte des points suivants pour créer un formulaire adaptatif accessible :
 
 * Vérifier le formulaire à l’aide de l’outil de test d’accessibilité ANDI (Accessible Name and Description Inspecteur)
 * Fournissez des libellés appropriés pour les commandes de formulaire
@@ -137,26 +137,26 @@ Sélectionnez un composant d’image, puis ![cmppr](assets/cmppr.png). Dans la b
 
 ### 4. Fournissez un contraste des couleurs suffisant {#provide-sufficient-color-contrast}
 
-Dans le cadre des fonctions d’accessibilité, il convient de tenir compte de quelques points supplémentaires concernant l’utilisation des couleurs. Les créateurs et créatrices de formulaires peuvent utiliser des couleurs pour améliorer l’apparence des formulaires, en mettant en surbrillance différents composants. Cependant, une utilisation inappropriée des couleurs peut rendre le formulaire difficile à lire, voire totalement illisible, pour des personnes souffrant de certains handicaps.
+Dans le cadre des fonctions d’accessibilité, il convient de tenir compte de quelques points supplémentaires concernant l’utilisation des couleurs. Les créateurs et créatrices de formulaires peuvent utiliser des couleurs pour améliorer l’apparence des formulaires, en mettant en surbrillance différents composants. Cependant, une utilisation inappropriée des couleurs peut rendre le formulaire difficile à lire, voire totalement illisible, pour certaines personnes en situation de handicap.
 
-Les utilisateurs ayant une déficience visuelle s’appuient sur le contraste prononcé entre le texte et l’arrière-plan pour lire du contenu numérique. En l’absence de contraste suffisant, la lecture d’un formulaire peut s’avérer difficile, voire impossible, pour certaines personnes utilisatrices.
+Les utilisateurs ayant une déficience visuelle s’appuient sur le contraste prononcé entre le texte et l’arrière-plan pour lire du contenu numérique. En l’absence de contraste suffisant, la lecture d’un formulaire peut s’avérer difficile, voire impossible, pour certaines personnes.
 
-Il est conseillé d’utiliser la police et les couleurs d’arrière-plan par défaut, à savoir le contenu noir sur fond blanc. Si vous modifiez les couleurs par défaut, choisissez une couleur de premier plan foncée sur un arrière-plan clair ou inversement.
+Il est conseillé d’utiliser la police et les couleurs d’arrière-plan par défaut, à savoir le contenu noir sur fond blanc. Si vous modifiez les couleurs par défaut, optez pour une couleur de premier plan foncée sur un arrière-plan clair, ou inversement.
 
-Voir [Création de thèmes personnalisés pour les formulaires adaptatifs](/help/forms/using/creating-custom-adaptive-form-themes.md), pour plus d’informations sur la modification du contraste de couleur et du thème pour les formulaires adaptatifs.
+Pour plus d’informations sur la modification du contraste de couleur et du thème des formulaires adaptatifs, reportez-vous à [Création de thèmes personnalisés pour les formulaires adaptatifs](/help/forms/using/creating-custom-adaptive-form-themes.md).
 
 ### 5. Assurez-vous que les commandes de formulaire sont accessibles au clavier {#ensure-that-form-controls-are-keyboard-accessible}
 
-Un formulaire accessible peut être rempli complètement en utilisant uniquement le clavier ou un périphérique de saisie équivalent. Certaines personnes utilisatrices ayant une mobilité réduite ou une déficience visuelle sont parfois contraintes de n’utiliser que le clavier. De plus, de nombreuses personnes utilisatrices préfèrent saisir leurs données au moyen du clavier plutôt que de la souris. En proposant différents modes de saisie des données, vous créez également des formulaires qui répondent aux préférences de l’ensemble des utilisateurs et utilisatrices.
+Un formulaire accessible peut être rempli complètement en utilisant uniquement le clavier ou un périphérique de saisie équivalent. Certaines personnes ayant une mobilité réduite ou malvoyantes sont parfois contraintes de n’utiliser que le clavier. De plus, de nombreuses personnes préfèrent saisir leurs données au moyen du clavier plutôt que de la souris. En proposant différents modes de saisie des données, vous créez également des formulaires qui répondent aux préférences de l’ensemble des utilisateurs et utilisatrices.
 
-Les raccourcis clavier suivants sont disponibles dans AEM Forms.
+Les raccourcis clavier suivants sont disponibles dans AEM Forms.
 
 | Action | Raccourci clavier |
 |---|---|
 | Déplacer le curseur vers l’avant dans un formulaire | Tabulation |
 | Déplacer le curseur vers l’arrière dans un formulaire | Maj+Tabulation |
-| Accéder au panneau suivant | Alt+Flèche vers la droite |
-| Revenir au panneau précédent | Alt+Flèche vers la gauche |
+| Accéder au panneau suivant | Alt+Flèche Droite |
+| Revenir au panneau précédent | Alt+Flèche Gauche |
 | Réinitialiser les données saisies dans un formulaire | Alt+R |
 | Envoyer un formulaire | Alt+S |
 

@@ -1,12 +1,12 @@
 ---
 title: '« Didacticiel : créer un formulaire adaptatif »'
-description: Découvrez comment créer, mettre en page et prévisualiser un formulaire adaptatif. Découvrez également comment configurer les actions d’envoi.
+description: Apprenez à créer, à mettre en page et à prévisualiser un formulaire adaptatif. Découvrez également comment configurer les actions d’envoi.
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
 source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '1313'
-ht-degree: 59%
+ht-degree: 85%
 
 ---
 
@@ -18,7 +18,7 @@ Ce tutoriel fait partie de la série [Création de votre premier formulaire adap
 
 ## À propos du tutoriel {#about-the-tutorial}
 
-Les formulaires adaptatifs sont des formulaires de nouvelle génération dynamiques et réactifs. Vous pouvez utiliser des formulaires adaptatifs pour offrir des expériences personnalisées. Vous pouvez également intégrer des formulaires adaptatifs à [!DNL Adobe Analytics] à des fins d’utilisation des statistiques et à [!DNL Adobe Campaign] pour la gestion des campagnes. Pour plus d’informations sur les fonctionnalités des formulaires adaptatifs, consultez la section [Présentation de la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md).
+Les formulaires adaptatifs sont des formulaires dynamiques et réactifs de nouvelle génération. Vous pouvez utiliser des formulaires adaptatifs pour offrir des expériences personnalisées. Vous pouvez également intégrer des formulaires adaptatifs à [!DNL Adobe Analytics] à des fins d’utilisation des statistiques et à [!DNL Adobe Campaign] pour la gestion des campagnes. Pour plus d’informations sur les fonctionnalités des formulaires adaptatifs, consultez la section [Présentation de la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md).
 
 Il est plus facile de créer et de gérer des formulaires en suivant un processus approprié. Dans cet article, vous apprenez à :
 
@@ -44,18 +44,18 @@ Il est plus facile de créer et de gérer des formulaires en suivant un processu
 
 1. Sélectionnez **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche. Sélectionner **[!UICONTROL Ouvrir]** pour ouvrir le formulaire nouvellement créé dans un nouvel onglet. Le formulaire s’ouvre pour modification. Il affiche également la barre latérale permettant de personnaliser le formulaire nouvellement créé selon vos besoins.
 
-   Pour plus d’informations sur l’interface de création de formulaires adaptatifs et les composants disponibles, voir [Présentation de la création de formulaires adaptatifs](/help/forms/using/creating-adaptive-form.md).
+   Pour plus d’informations sur l’interface de création de formulaires adaptatifs et les composants disponibles, consultez [Présentation de la création de formulaires adaptatifs](/help/forms/using/creating-adaptive-form.md).
 
    ![Un formulaire adaptatif nouvellement créé.](assets/newly-created-adaptive-form.png)
 
 ## Étape 2 : ajout d’un en-tête et d’un pied de page {#step-add-header-and-footer}
 
-AEM [!DNL Forms] fournit de nombreux composants pour l’affichage d’informations sur un formulaire adaptatif. Les composants En-tête et Pied de page permettent d’obtenir un aspect cohérent pour un formulaire. Un en-tête comprend généralement le logo d’une société, le titre du formulaire et le résumé. Un pied de page contient généralement des informations de copyright, ainsi que des liens vers d’autres pages.
+AEM [!DNL Forms] fournit de nombreux composants pour l’affichage d’informations sur un formulaire adaptatif. Les composants d’en-tête et de pied de page contribuent à une apparence cohérente du formulaire. Un en-tête comprend généralement le logo d’une entreprise, le titre du formulaire et un résumé. Un pied de page contient généralement des informations de copyright, ainsi que des liens vers d’autres pages.
 
 1. Sélectionner ![bouton bascule-côté-panneau](assets/toggle-side-panel.png) > ![treeextenall](assets/treeexpandall.png). L’explorateur de composants s’affiche. Faites glisser et déposez le composant **[!UICONTROL En-tête]** de l’explorateur de composants vers le formulaire adaptatif.
 1. Sélectionner **[!UICONTROL Logo]**. La barre d’outils s’affiche. Sélectionner ![aem_6_3_edit](assets/aem_6_3_edit.png) dans la barre d’outils, saisissez **We.Retail**, puis sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-1. Sélectionnez Image. La barre d’outils s’affiche. Sélectionner ![cmppr](assets/cmppr.png). L’explorateur de propriétés s’ouvre sur la partie gauche de l’écran. **[!UICONTROL Recherchez]** et téléchargez l’image du logo. Sélectionner ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). L’image s’affiche dans l’en-tête.
+1. Sélectionnez Image. La barre d’outils s’affiche. Sélectionner ![cmppr](assets/cmppr.png). L’explorateur de propriétés s’ouvre sur la partie gauche de l’écran. **[!UICONTROL Recherchez]** et téléchargez l’image du logo. Sélectionner ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). L’image apparaît dans l’en-tête.
 
    Si vous n’en avez pas, vous pouvez sélectionner Obtenir un fichier pour télécharger le logo utilisé dans cet article.
 
@@ -70,7 +70,7 @@ AEM [!DNL Forms] fournit de nombreux composants pour l’affichage d’informat
 Les composants sont les blocs de construction d’un formulaire adaptatif. AEM [!DNL Forms]fournit de nombreux composants pour la capture et l’affichage d’informations dans un formulaire adaptatif. Vous pouvez faire glisser les composants de ![treeexpandall](assets/treeexpandall.png) vers un formulaire. Pour en savoir plus sur les composants disponibles et les fonctionnalités correspondantes, voir [Présentation de la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md).
 
 1. Faites glisser le **[!UICONTROL composant de zone numérique]** vers le formulaire adaptatif. Placez-le avant le composant de pied de page. Ouvrez les propriétés du composant, modifiez **[!UICONTROL Titre]** du composant à **`Customer ID`**, modifier **[!UICONTROL Nom de l’élément]** to **`customer_ID`**, activez la variable **[!UICONTROL Champ obligatoire]** , activez l’option **[!UICONTROL Use HTML5 Number Input Type]** et sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
-1. Faites glisser trois composants de zone de texte vers le formulaire adaptatif. Placez-les avant le composant de pied de page. Définissez les propriétés suivantes pour ces zones de texte. :
+1. Faites glisser trois composants de la zone de texte vers le formulaire adaptatif. Placez-les avant le pied de page. Définissez les propriétés suivantes pour ces zones de texte. :
 
    <table> 
     <tbody> 
@@ -99,7 +99,7 @@ Les composants sont les blocs de construction d’un formulaire adaptatif. AEM [
       <td>Activé</td> 
      </tr> 
      <tr> 
-      <td>Autoriser plusieurs lignes<br /> </td> 
+      <td>Permettre des lignes multiples<br /> </td> 
       <td>Désactivé</td> 
       <td>Activé</td> 
       <td>Désactivé</td> 
@@ -115,7 +115,7 @@ Les composants sont les blocs de construction d’un formulaire adaptatif. AEM [
    | Nom de l’élément | customer_ZIPCode |
    | Nombre maximal de chiffres | 6 |
    | Champ obligatoire | Activé |
-   | Type de modèle d’affichage | Aucun motif |
+   | Type de modèle d’affichage | Aucun modèle |
 
 1. Faites glisser un composant **[!UICONTROL Courrier électronique]** avant le composant de pied de page. Ouvrez les propriétés du composant, définissez les valeurs répertoriées dans le tableau ci-dessous, puis sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -125,7 +125,7 @@ Les composants sont les blocs de construction d’un formulaire adaptatif. AEM [
    | Nom de l’élément | customer_Email |
    | Champ obligatoire | Activé |
 
-1. Faites glisser un **[!UICONTROL Pièce jointe]** avant le composant de pied de page. Ouvrez les propriétés du composant, définissez les valeurs répertoriées dans le tableau ci-dessous, puis sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Faites glisser un composant **[!UICONTROL Pièce jointe]** avant le composant de pied de page. Ouvrez les propriétés du composant, définissez les valeurs répertoriées dans le tableau ci-dessous, puis sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -135,7 +135,7 @@ Les composants sont les blocs de construction d’un formulaire adaptatif. AEM [
      </tr> 
      <tr> 
       <td>Titre</td> 
-      <td>Preuve d'adresse approuvée par le gouvernement<br /> </td> 
+      <td>Preuve d’adresse approuvée par le gouvernement<br /> </td> 
      </tr> 
      <tr> 
       <td>Nom de l’élément</td> 
@@ -148,13 +148,13 @@ Les composants sont les blocs de construction d’un formulaire adaptatif. AEM [
     </tbody> 
    </table>
 
-1. Faites glisser un **[!UICONTROL Bouton Envoyer]** du formulaire adaptatif. Placez-le avant le composant de pied de page. Ouvrez les propriétés du composant, remplacez Nom de l’élément par `address_addition_update_submit`, sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). La mise en page du formulaire est complète et le formulaire a l’apparence suivante :
+1. Faites glisser un composant **[!UICONTROL Bouton Envoyer]** vers le formulaire adaptatif. Placez-le avant le composant de pied de page. Ouvrez les propriétés du composant, remplacez Nom de l’élément par `address_addition_update_submit`, sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). La mise en page du formulaire est complète et le formulaire a l’apparence suivante :
 
    ![adaptive-form-with-all-the-components](assets/adaptive-form-with-all-the-components.png)
 
-## Étape 4 : configurer l’action d’envoi pour le formulaire adaptatif {#step-configure-submit-action-for-the-adaptive-form}
+## Étape 4 : configuration de l’action d’envoi du formulaire adaptatif {#step-configure-submit-action-for-the-adaptive-form}
 
-Une action d’envoi est déclenchée lorsqu’un utilisateur clique sur le bouton Envoyer d’un formulaire adaptatif. Vous pouvez utiliser une action d’envoi pour enregistrer les données de formulaire dans le référentiel local, envoyer les données de formulaire à un point de terminaison REST, envoyer les données de formulaire sous forme d’e-mail, etc. Les formulaires adaptatifs fournissent quelques autres actions d’envoi prêtes à l’emploi. Pour plus d’informations, voir [Configuration de l’action Envoyer](/help/forms/using/configuring-submit-actions.md).
+Une action d’envoi est déclenchée lorsqu’un utilisateur ou une utilisatrice clique sur le bouton Envoyer d’un formulaire adaptatif. Vous pouvez utiliser une action d’envoi pour enregistrer des données de formulaire dans le référentiel local, envoyer des données de formulaire vers un point d’entrée REST, envoyer des données de formulaire par e-mail, et plus encore. Les formulaires adaptatifs fournissent quelques autres actions d’envoi prêtes à l’emploi. Pour plus de détails, consultez [Configuration de l’action Envoyer](/help/forms/using/configuring-submit-actions.md).
 
 Les étapes suivantes vous permettent de configurer les actions d’envoi dʼe-mail et d’envoi de démonstration du formulaire :
 
@@ -168,20 +168,20 @@ Les étapes suivantes vous permettent de configurer les actions d’envoi dʼe-m
    |--- |--- |
    | Origine | `donotreply@weretail.com` |
    | To | `${customer_Email}` |
-   | Objet | Remerciements : vous avez ajouté l’adresse de livraison sur le site Web We.Retail. |
-   | Modèle de courrier électronique | Bonjour `${customer_Name}`, l’adresse suivante est ajoutée comme adresse de livraison pour votre compte : <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}` et `${customer_ZIPCode}`<br>. Cordialement, We.Retail |
+   | Objet | Accusé de réception : vous avez ajouté l’adresse de livraison sur le site web de We.Retail. |
+   | Modèle d’e-mail | Bonjour `${customer_Name}`, l’adresse suivante est ajoutée comme adresse de livraison pour votre compte : <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}` et `${customer_ZIPCode}`<br>. Cordialement, We.Retail |
    | Inclure les pièces jointes | Activé |
 
-   Votre formulaire est prêt. Vous pouvez maintenant prévisualiser le formulaire et tester la fonctionnalité. Si vous avez utilisé le nom mentionné dans le tutoriel et avez accédé au formulaire sur la machine qui exécute le serveur AEM [!DNL Forms], le formulaire est disponible à l’adresse [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).
+   Votre formulaire est prêt. Vous pouvez à présent prévisualiser le formulaire et tester la fonctionnalité. Si vous avez utilisé le nom mentionné dans le tutoriel et avez accédé au formulaire sur la machine qui exécute le serveur AEM [!DNL Forms], le formulaire est disponible à l’adresse [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).
 
 ## Étape 5 : prévisualisation et envoi du formulaire adaptatif {#step-preview-and-submit-the-adaptive-form}
 
-Vous pouvez utiliser l’option **[!UICONTROL Aperçu]** pour évaluer l’apparence et le comportement d’un formulaire. Vous pouvez envoyer un formulaire en mode Aperçu et vérifier également les validations appliquées à un formulaire. Par exemple, si une erreur s’affiche lorsqu’un champ obligatoire est laissé vide.
+Vous pouvez utiliser l’option **[!UICONTROL Aperçu]** pour évaluer l’apparence et le comportement d’un formulaire. Vous pouvez envoyer un formulaire en mode aperçu et vérifier les validations appliquées à un formulaire. Si une erreur s’affiche lorsqu’un champ obligatoire est laissé vide, par exemple.
 
-Les formulaires adaptatifs offrent également la possibilité d’émuler l’expérience d’un formulaire pour divers périphériques. Par exemple, pour iPhone, iPad et appareils de bureau. Vous pouvez utiliser les options **[!UICONTROL Prévisualisation]** et **[!UICONTROL Gestionnaire de]** ![l’émulateur](assets/ruler.png) conjointement pour prévisualiser un formulaire pour les appareils dotés de tailles d’écran différentes.
+Les formulaires adaptatifs permettent également d’émuler l’expérience d’un formulaire pour différents appareils. Par exemple, pour iPhone, iPad et appareils de bureau. Vous pouvez utiliser les options **[!UICONTROL Prévisualisation]** et **[!UICONTROL Gestionnaire de]** ![l’émulateur](assets/ruler.png) conjointement pour prévisualiser un formulaire pour les appareils dotés de tailles d’écran différentes.
 
 1. Sélectionnez la variable **[!UICONTROL Aperçu]** sur le côté droit de l’éditeur de formulaire. Le formulaire s’ouvre en mode aperçu. Si vous avez utilisé le nom mentionné dans le didacticiel, l’URL de l’aperçu du formulaire est [http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
 1. Utilisez ![gestionnaire](assets/ruler.png) pour visualiser l’apparence du formulaire sur différents appareils.
-1. Renseignez les champs du formulaire et sélectionnez **[!UICONTROL Envoyer]**. Le formulaire est envoyé et vous êtes redirigé vers la valeur par défaut **Merci** page. Vous pouvez également spécifier une page de remerciement personnalisée. Pour plus de détails, voir [Configuration de la page de redirection](/help/forms/using/configuring-redirect-page.md).
+1. Renseignez les champs du formulaire et sélectionnez **[!UICONTROL Envoyer]**. Le formulaire est envoyé et vous êtes redirigé(e) vers la **page de remerciement** par défaut. Vous pouvez également spécifier une page de remerciement personnalisée. Pour plus de détails, voir [Configuration de la page de redirection](/help/forms/using/configuring-redirect-page.md).
 
 Le formulaire adaptatif pour l’ajout d’une adresse est prêt. Si vous avez utilisé le nom mentionné dans le tutoriel et avez accédé au formulaire sur la machine qui exécute le serveur AEM Forms, le formulaire est alors disponible à l’adresse [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).

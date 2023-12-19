@@ -1,6 +1,6 @@
 ---
 title: Prise en charge de nouveaux paramètres régionaux pour la localisation de formulaires adaptatifs
-description: AEM Forms vous permet d’ajouter de nouveaux paramètres régionaux pour localiser les formulaires adaptatifs. Les paramètres régionaux pris en charge par défaut sont l’anglais, le français, l’allemand et le japonais.
+description: AEM Forms vous permet d’ajouter de nouveaux paramètres régionaux pour localiser les formulaires adaptatifs. Les paramètres régionaux pris en charge par défaut sont l’anglais, le français, l’allemand et le japonais.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
@@ -10,8 +10,8 @@ role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
 source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 87%
+source-wordcount: '796'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 87%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 ## À propos des dictionnaires de paramètres régionaux {#about-locale-dictionaries}
@@ -28,7 +28,7 @@ La localisation des formulaires adaptatifs repose sur deux types de dictionnaire
 
 **Dictionnaire spécifique au formulaire** : il contient des chaînes utilisées dans des formulaires adaptatifs. Par exemple, étiquettes, noms de champs, messages d’erreur, descriptions d’aide, etc. Il est géré sous forme de jeu de fichiers XLIFF pour chaque jeu de paramètres régionaux et accessible à l’adresse `https://<host>:<port>/libs/cq/i18n/translator.html`.
 
-**Dictionnaires globaux** : la bibliothèque client AEM comporte deux dictionnaires globaux, gérés en tant qu’objets JSON. Ces dictionnaires contiennent les messages d’erreur par défaut, les noms des mois, les symboles de devise, les modèles de date et d’heure, etc. Vous pouvez trouver ces dictionnaires dans CRXDe Lite, à l’adresse /libs/fd/xfaforms/clientlibs/I18N. Ces emplacements contiennent des dossiers distincts pour chaque jeu de paramètres régionaux. Comme les dictionnaires globaux ne sont généralement pas mis à jour fréquemment, conserver des fichiers JavaScript distincts pour chaque paramètre régional permet aux navigateurs de les mettre en cache et de réduire l’utilisation de la bande passante du réseau lors de l’accès à différents formulaires adaptatifs sur le même serveur.
+**Dictionnaires globaux** : la bibliothèque client AEM comporte deux dictionnaires globaux, gérés en tant qu’objets JSON. Ces dictionnaires contiennent les messages d’erreur par défaut, les noms des mois, les symboles de devise, les modèles de date et d’heure, etc. Vous pouvez trouver ces dictionnaires dans CRXDe Lite, à l’adresse /libs/fd/xfaforms/clientlibs/I18N. Ces emplacements contiennent des dossiers distincts pour chaque jeu de paramètres régionaux. Étant donné que les dictionnaires globaux ne sont généralement pas mis à jour fréquemment, conserver des fichiers JavaScript distincts pour chaque jeu de paramètres régionaux permet aux navigateurs de les mettre en cache et de réduire l’utilisation de la bande passante du réseau lors de l’accès à différents formulaires adaptatifs sur le même serveur.
 
 ### Comment fonctionne la localisation des formulaires adaptatifs  {#how-localization-of-adaptive-form-works}
 
@@ -39,7 +39,7 @@ Deux méthodes permettent d’identifier les paramètres régionaux du formulair
 * en examinant les paramètres ci-dessous dans l’ordre spécifié :
 
    * Paramètre de requête `afAcceptLang`
-Pour remplacer les paramètres régionaux du navigateur des utilisateurs, vous pouvez transmettre le paramètre de demande `afAcceptLang` pour forcer les paramètres régionaux. Par exemple, l’URL suivante est forcée de rendre le formulaire dans les paramètres régionaux japonais :
+Pour remplacer la langue du navigateur des utilisateurs et des utilisatrices, vous pouvez transmettre le paramètre de requête `afAcceptLang` afin de forcer les paramètres régionaux. Par exemple, l’URL suivante est forcée de rendre le formulaire dans les paramètres régionaux japonais :
      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
    * La langue du navigateur défini pour l’utilisateur, qui est spécifiée dans la demande par le biais de l’en-tête `Accept-Language`.
@@ -74,8 +74,8 @@ Pour ajouter un nouveau paramètre régional lors de l’exécution des formulai
 ### Ajouter des paramètres régionaux au Guide Localization Service {#add-a-locale-to-the-guide-localization-service-br}
 
 1. Accédez à `https://'[server]:[port]'/system/console/configMgr`.
-1. Cliquez pour modifier le **Guide Localization Service** composant.
-1. Ajoutez les paramètres régionaux à ajouter à la liste des paramètres régionaux pris en charge.
+1. Cliquez pour modifier le composant **Guide Localization Service**.
+1. Ajoutez le paramètre régional souhaité à la liste des paramètres régionaux pris en charge.
 
 ![GuideLocalizationService](assets/configservice.png)
 
@@ -95,7 +95,7 @@ I18N.js
 
 ### Ajouter la bibliothèque cliente de formulaires adaptatifs pour un paramètre régional {#add-adaptive-form-client-library-for-a-locale-br}
 
-Création d’un noeud de type `cq:ClientLibraryFolder` under `etc/<folderHierarchy>`, avec la catégorie comme `guides.I18N.<locale>` et les dépendances en tant que `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` et `guide.common`. &quot;
+Créez un nœud de type `cq:ClientLibraryFolder` sous `etc/<folderHierarchy>`, avec la catégorie `guides.I18N.<locale>` et les dépendances `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` et `guide.common`.
 
 Ajouter les fichiers suivants à la bibliothèque cliente :
 

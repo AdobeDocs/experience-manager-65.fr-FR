@@ -5,7 +5,7 @@ exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '2115'
-ht-degree: 69%
+ht-degree: 81%
 
 ---
 
@@ -24,10 +24,10 @@ Maintenant que votre connecteur et vos règles de traduction sont configurés, c
 
 ## Objectif {#objective}
 
-Ce document vous aide à comprendre comment utiliser les projets de traduction AEM ainsi que le connecteur et vos règles de traduction pour traduire le contenu. Après avoir lu ce document, vous devez effectuer les opérations suivantes :
+Ce document vous aide à comprendre comment utiliser les projets de traduction AEM ainsi que le connecteur et vos règles de traduction pour traduire le contenu. Après avoir lu ce document, vous devez effectuer les opérations suivantes :
 
 * comprendre ce qu’est un projet de traduction ;
-* Créez des projets de traduction.
+* créer des projets de traduction ;
 * savoir comment utiliser des projets de traduction pour traduire votre contenu découplé.
 
 ## Création d’un projet de traduction {#creating-translation-project}
@@ -41,7 +41,7 @@ Les projets de traduction peuvent être créés de deux manières :
 1. Sélectionnez la racine de la langue du contenu et configurez AEM afin qu’il crée automatiquement le projet de traduction en fonction du chemin du contenu.
 1. Créez un projet vierge et sélectionnez manuellement le contenu à ajouter au projet de traduction.
 
-Ces deux approches ne diffèrent que par le personnage qui effectue la traduction :
+Ces deux approches sont acceptables, le choix dépendra de l’identité de la personne responsable de la traduction :
 
 * Le gestionnaire de projet de traduction a souvent besoin de plus de flexibilité et de sélectionner manuellement le contenu du projet de traduction.
 * Si le propriétaire du contenu est également le responsable de la traduction, il est souvent plus facile de laisser AEM créer automatiquement le projet en fonction du chemin de contenu sélectionné.
@@ -53,7 +53,7 @@ Les deux approches sont explorées dans les sections suivantes.
 Pour les propriétaires de contenu qui sont également responsables de la traduction, il est souvent plus facile de laisser AEM créer automatiquement le projet de traduction. Pour permettre à AEM de créer automatiquement un projet de traduction en fonction de votre chemin d’accès au contenu :
 
 1. Accédez à **Navigation** > **Ressources** > **Fichiers**. N’oubliez pas que le contenu découplé dans AEM est stocké en tant que ressources appelées fragments de contenu.
-1. Sélectionnez la racine de langue de votre projet. Dans ce cas, `/content/dam/wknd/en` est sélectionnée.
+1. Sélectionnez la racine de langue de votre projet. Dans ce cas, `/content/dam/wknd/en`.
 1. Cliquez sur le sélecteur de rail et affichez le **Références** du panneau.
 1. Cliquez sur **Copies de langue**.
 1. Cochez l’option **Copies de langue**.
@@ -93,7 +93,7 @@ Pour les gestionnaires de projets de traduction, il est souvent nécessaire de s
 
    ![Onglet De base du projet](assets/project-basic-tab.png)
 
-1. Sur le **Avancé** , utilisez l’onglet **Langue cible** pour sélectionner les langues dans lesquelles votre contenu doit être traduit. Cliquez sur **Créer**.
+1. Dans l’onglet **Avancé**, utilisez le menu déroulant **Langue cible** pour sélectionner la ou les langues dans lesquelles votre contenu doit être traduit. Cliquez sur **Créer**.
 
    ![Onglet Avancé du projet](assets/project-advanced-tab.png)
 
@@ -117,7 +117,7 @@ Pour afficher le projet de traduction :
 Le projet est divisé en plusieurs cartes.
 
 * **Résumé** : cette carte affiche les informations d’en-tête de base du projet, parmi lesquelles le propriétaire, la langue et le fournisseur de traduction.
-* **Tâche de traduction** - Cette carte ou ces cartes présentent un aperçu de la tâche de traduction proprement dite, y compris son état, le nombre de ressources, etc. En règle générale, il existe une tâche par langue, avec le code de langue ISO-2 ajouté au nom de la tâche.
+* **Tâche de traduction** : cette ou ces cartes présentent un aperçu de la tâche de traduction proprement dite, notamment son statut, le nombre de ressources, etc. En règle générale, il existe une tâche par langue, avec le code de langue ISO-2 ajouté au nom de la tâche.
 * **Équipe** : cette carte montre les utilisateurs qui collaborent à ce projet de traduction. Ce parcours ne couvre pas cette rubrique.
 * **Tâches** : les tâches supplémentaires associées à la traduction du contenu, telles que les éléments à réaliser ou les éléments de workflow. Ce parcours ne couvre pas cette rubrique.
 
@@ -150,7 +150,7 @@ Les traductions automatiques sont renvoyées automatiquement avec un statut **Ap
 
 ### Utilisation d’un projet de traduction créé manuellement {#using-manual-project}
 
-Lors de la création manuelle d’un projet de traduction, AEM crée les tâches nécessaires, mais ne sélectionne pas automatiquement le contenu à inclure. Cela permet au chef de projet de traduction de choisir le contenu à traduire.
+Lors de la création manuelle d’un projet de traduction, AEM crée les tâches nécessaires, mais ne sélectionne pas automatiquement le contenu à inclure. Cela permet au ou à la chef de projet de traduction de choisir le contenu à traduire.
 
 Pour ajouter du contenu à une tâche de traduction :
 
@@ -199,7 +199,7 @@ Les traductions automatiques sont renvoyées automatiquement avec un statut **Ap
 
 ## Vérification du contenu traduit {#reviewing}
 
-[Comme nous l&#39;avons vu,](#using-translation-project) le contenu traduit par l’ordinateur retourne en AEM avec l’état de **Approuvé** puisque l&#39;hypothèse est que la traduction automatique est utilisée, aucune intervention humaine n&#39;est nécessaire. Cependant, il est toujours possible de consulter le contenu traduit.
+[Comme nous l’avons vu précédemment,](#using-translation-project) le contenu traduit automatiquement revient dans AEM avec le statut **Approuvé**, en partant de l’hypothèse que la traduction automatique étant utilisée, aucune intervention humaine n’est nécessaire. Cependant, il est toujours possible de revoir le contenu traduit.
 
 Il vous suffit d’accéder à la tâche de traduction terminée et de sélectionner un élément de ligne en appuyant ou en cliquant sur la case à cocher. L’icône **Afficher dans le fragment de contenu** s’affiche dans la barre d’outils.
 
@@ -211,7 +211,7 @@ Cliquez sur cette icône pour ouvrir le fragment de contenu traduit dans la cons
 
 Vous pouvez modifier le fragment de contenu si nécessaire, à condition que vous disposiez des autorisations appropriées, mais la modification des fragments de contenu dépasse la portée de ce parcours. Consultez la section [Ressources supplémentaires](#additional-resources) à la fin de ce document pour plus d’informations sur cette rubrique.
 
-Le but du projet est de collecter toutes les ressources liées à une traduction en un seul endroit pour un accès facile et un aperçu clair. Cependant, comme vous pouvez le voir en affichant les détails d’un élément traduit, les traductions sont elles-mêmes renvoyées dans le dossier des ressources de la langue de traduction. Dans cet exemple, le dossier est :
+Le but du projet est de collecter toutes les ressources liées à une traduction en un seul endroit pour un accès facile et un aperçu clair. Cependant, comme vous pouvez le voir en affichant les détails d’un élément traduit, les traductions sont elles-mêmes renvoyées dans le dossier des ressources de la langue de traduction. Dans cet exemple, le dossier est :
 
 ```text
 /content/dam/wknd/es
@@ -223,7 +223,7 @@ Si vous accédez à ce dossier via **Navigation** > **Ressources** > **Fichiers*
 
 La structure de traduction d’AEM reçoit les traductions du connecteur de traduction, puis crée automatiquement la structure de contenu en fonction de la racine de langue et à l’aide des traductions fournies par le connecteur.
 
-Il est important de comprendre que ce contenu n’est pas publié et n’est donc pas prêt à être utilisé pour vos services découplés. Vous découvrez cette structure de création et de publication et découvrez comment publier le contenu traduit à l’étape suivante du parcours de traduction.
+Il est important de comprendre que ce contenu n’est pas publié et n’est donc pas prêt à être utilisé pour vos services découplés. Vous en apprenez plus sur cette structure de création et de publication et découvrez comment publier le contenu traduit à l’étape suivante du parcours de traduction.
 
 ## Traduction humaine {#human-translation}
 
@@ -233,13 +233,13 @@ La traduction humaine dépasse le cadre de ce parcours de localisation. Consulte
 
 ## Prochaines étapes {#what-is-next}
 
-Maintenant que vous avez terminé cette partie du parcours de traduction sans interface utilisateur graphique, vous devriez pouvoir effectuer les opérations suivantes :
+Maintenant que vous avez terminé cette partie du parcours de traduction découplé, vous devriez pouvoir effectuer les opérations suivantes :
 
 * comprendre ce qu’est un projet de traduction ;
-* Créez des projets de traduction.
+* créer des projets de traduction ;
 * savoir comment utiliser des projets de traduction pour traduire votre contenu découplé.
 
-Tirez parti de ces connaissances et continuez votre parcours de traduction AEM sans interface utilisateur graphique en consultant le document. [Publier le contenu traduit](publish-content.md) où vous apprenez à publier votre contenu traduit et comment mettre à jour ces traductions à mesure que votre contenu racine de langue change.
+Appuyez-vous sur ces connaissances pour poursuivre votre parcours de traduction découplé AEM en consultant le document [Publication du contenu traduit](publish-content.md), dans lequel vous apprendrez à publier votre contenu traduit et à mettre à jour ces traductions à mesure que votre contenu de langue racine évolue.
 
 ## Ressources supplémentaires {#additional-resources}
 

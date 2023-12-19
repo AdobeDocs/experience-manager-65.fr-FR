@@ -9,7 +9,7 @@ exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '2080'
-ht-degree: 88%
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 88%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 Une variable dans un modèle de processus permet de stocker une valeur en fonction de son type de données. Vous pouvez utiliser le nom de la variable dans n’importe quelle étape de workflow pour récupérer la valeur stockée dans la variable. Vous pouvez également utiliser des noms de variable pour définir des expressions afin de prendre des décisions de routage.
@@ -51,7 +51,7 @@ Vous avez besoin du [Package de modules complémentaires AEM Forms](https://exp
 
 Pour créer une variable, procédez comme suit :
 
-1. Sur une instance AEM, accédez à Outils . ![Outils](/help/forms/using/assets/hammer.png) > Workflow > Modèles.
+1. Sur une instance AEM, accédez à Outils ![Outils](/help/forms/using/assets/hammer.png) > Workflow > Modèles.
 1. Sélectionner **[!UICONTROL Créer]** et indiquez le titre et un nom facultatif pour le modèle de workflow. Sélectionnez le modèle, puis sélectionnez **[!UICONTROL Modifier]**.
 1. Sélectionnez l’icône de variables disponible dans le sidekick du modèle de workflow, puis sélectionnez **[!UICONTROL Ajouter une variable]**.
 
@@ -177,7 +177,7 @@ Pour consulter d’autres exemples, consultez la section [Créer un modèle de w
 
 #### Étape d’accès {#go-to-step}
 
-La variable **Atteindre l’étape** permet de spécifier l’étape suivante du modèle de workflow à exécuter, en fonction du résultat d’une expression de routage.
+L’**étape d’accès** permet de spécifier l’étape suivante du modèle de workflow à exécuter, selon le résultat d’une expression de routage.
 
 Tout comme l’étape de division OU, vous pouvez définir l’expression de routage de l’étape d’accès à l’aide d’une définition de règle, d’un script ECMA ou d’un script externe.
 

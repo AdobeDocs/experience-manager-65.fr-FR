@@ -9,7 +9,7 @@ exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
 source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
 source-wordcount: '2073'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 80%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 
 ![Intégration de données](do-not-localize/data-integeration.png)
 
-L’intégration de données AEM Forms vous permet de configurer des sources de données disparates et de vous y connecter. Les types suivants sont pris en charge par défaut : Toutefois, avec peu de personnalisation, vous pouvez intégrer d’autres sources de données.
+L’intégration de données AEM Forms permet de configurer des sources de données disparates et de s’y connecter. Les types suivants sont pris en charge par défaut : Toutefois, avec peu de personnalisation, vous pouvez intégrer d’autres sources de données.
 
 * Bases de données relationnelles : MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS, postgreSQL et Sybase
 * Profil utilisateur AEM

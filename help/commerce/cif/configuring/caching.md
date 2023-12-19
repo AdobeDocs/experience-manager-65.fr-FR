@@ -4,8 +4,8 @@ description: Découvrez les différentes configurations disponibles pour activer
 exl-id: ecce64bf-5960-4ddb-b6e3-dad401038c11
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 87%
+source-wordcount: '818'
+ht-degree: 89%
 
 ---
 
@@ -27,7 +27,7 @@ Avant d’envoyer une requête GraphQL, le client vérifie si cette requête **e
 
 ### Exemples
 
-Nous vous recommandons de configurer une certaine mise en cache pour le service de recherche qui récupère toutes les valeurs d’agrégations/de facettes disponibles affichées sur les pages de recherche de produits et de catégories. Ces valeurs ne changent généralement que lorsqu’un nouvel attribut est par exemple ajouté aux produits. Par conséquent, la durée de cette entrée de cache peut être &quot;importante&quot; si l’ensemble des attributs de produit ne change pas souvent. Bien qu’il s’agisse d’un projet spécifique, Adobe recommande des valeurs de quelques minutes dans les phases de développement du projet et de quelques heures sur les systèmes de production stables.
+Nous vous recommandons de configurer une certaine mise en cache pour le service de recherche qui récupère toutes les valeurs d’agrégations/de facettes disponibles affichées sur les pages de recherche de produits et de catégories. Ces valeurs ne changent généralement que lorsqu’un nouvel attribut est par exemple ajouté aux produits. Par conséquent, la durée de cette entrée de cache peut être &quot;importante&quot; si l’ensemble des attributs de produit ne change pas souvent. Bien que ce soit spécifique au projet, Adobe recommande des valeurs de quelques minutes dans les phases de développement du projet et de quelques heures sur des systèmes de production stables.
 
 Ces valeurs sont généralement configurées avec l’entrée de cache suivante :
 

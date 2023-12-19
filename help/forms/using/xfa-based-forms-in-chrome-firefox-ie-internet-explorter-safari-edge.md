@@ -6,7 +6,7 @@ exl-id: fdd15315-e0d6-4d80-acb4-2e0ecec716c4
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '341'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 93%
 De nombreuses versions récentes de navigateur offrent leur propre prise en charge limitée des formulaires PDF basés sur XFA. Bien que ces navigateurs puissent ouvrir des formulaires PDF XFA, les fonctionnalités proposées sont limitées. Si vous ne pouvez pas ouvrir ou envoyer un formulaire PDF XFA dans un navigateur moderne, utilisez l’une des méthodes suivantes :
 
 * Utilisez [Adobe® Acrobat®](https://www.adobe.com/fr/acrobat.html) ou [Adobe® Reader®](https://get.adobe.com/fr/reader/) version 8 ou ultérieure pour ouvrir et envoyer des formulaires PDF basés sur XFA.
-* Acrobat et Reader, sous Microsoft® Windows®, vous permettent de configurer pour ouvrir des PDF en mode Affichage protégé, ce qui empêche l’ouverture de PDF forms basés sur XFA. Assurez-vous que le mode protégé d’Acrobat ou de Reader est désactivé. Pour plus d’informations, voir [Mode protégé (Windows uniquement)](https://helpx.adobe.com/fr/reader/using/protected-mode-windows.html).
+* Acrobat et Reader, sous Microsoft® Windows®, vous permettent de définir l’ouverture des PDF en mode d’affichage protégé, ce qui empêche l’ouverture de formulaires PDF XFA. Assurez-vous que le mode protégé d’Acrobat ou de Reader est désactivé. Pour plus d’informations, voir [Mode protégé (Windows uniquement)](https://helpx.adobe.com/fr/reader/using/protected-mode-windows.html).
 * (Pour les développeurs et développeuses Forms) Adobe Experience Manager Forms prend également en charge :
 
    * [Le rendu des formulaires basés sur XFA vers des formulaires HTML5](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/introduction.html?lang=fr#key-capabilities-of-html-forms-br) de sorte que les formulaires puissent être ouverts dans les navigateurs prenant en charge le format HTML5, y compris ceux qui équipent les appareils mobiles comme l’iPad. Le rendu HTML5 des formulaires conserve la disposition de la conception de formulaire et prend en charge la plupart des logiques de formulaire (JavaScript, form calc et validations de formulaire, par exemple) intégrées dans le modèle de formulaire XFA.

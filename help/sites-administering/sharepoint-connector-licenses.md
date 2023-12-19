@@ -1,6 +1,6 @@
 ---
 title: Licences, notices de copyright et clauses de non-responsabilité de SharePoint Connector
-description: Découvrez les licences SharePoint Connector, les avis de copyright et les clauses de non-responsabilité.
+description: Découvrez les licences, notices de copyright et clauses de non-responsabilité de SharePoint Connector.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -9,8 +9,8 @@ docset: aem65
 exl-id: b9342330-31f6-49cb-965e-4bab61f98d4c
 source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 62%
+source-wordcount: '333'
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 62%
 
 Cette section répertorie toutes les licences, les notices de copyright et les clauses de non-responsabilité qui doivent être explicitement mentionnées avec Day JCR Connector for MS® SharePoint.
 
-## Présentation des bibliothèques tierces connecteurs {#overview-of-connector-rd-party-libraries}
+## Présentation des bibliothèques tierces de Connector {#overview-of-connector-rd-party-libraries}
 
-Le tableau suivant répertorie les bibliothèques tierces utilisées dans les bibliothèques principales de SharePoint Connector, ainsi que les licences, les notices de copyright ou les clauses de non-responsabilité qui les couvrent :
+Le tableau suivant répertorie les bibliothèques tierces utilisées dans les bibliothèques principales de SharePoint Connector, ainsi que les licences, les notices de copyright ou les clauses de non-responsabilité qui les couvrent :
 
 | Bibliothèque | Type de licence |
 |---|---|
@@ -59,9 +59,9 @@ Le tableau suivant répertorie les bibliothèques tierces utilisées dans les bi
 | xml-apis | [Apache](#apache) (contient des portions couvertes par les licences de domaine public et de logiciels W3C) |
 | XmlSchema | [Apache](#apache) |
 
-## Présentation des bibliothèques tierces CRX {#overview-of-crx-rd-party-libraries}
+## Présentation des bibliothèques tierces CRX {#overview-of-crx-rd-party-libraries}
 
-Le tableau suivant répertorie les bibliothèques tierces utilisées dans CRX, ainsi que les licences, les notices de copyright ou les clauses de non-responsabilité qui les couvrent :
+Le tableau suivant répertorie les bibliothèques tierces utilisées dans CRX, ainsi que les licences, les notices de copyright ou les clauses de non-responsabilité qui les couvrent :
 
 <table>
  <colgroup>
@@ -151,9 +151,9 @@ Le tableau suivant répertorie les bibliothèques tierces utilisées dans CRX, a
  </tbody>
 </table>
 
-## Présentation des bibliothèques tierces CQSE {#overview-of-cqse-rd-party-libraries}
+## Présentation des bibliothèques tierces CQSE {#overview-of-cqse-rd-party-libraries}
 
-Le tableau suivant répertorie les bibliothèques tierces utilisées dans le moteur Communiqué Servlet, ainsi que les licences, les notices de copyright ou les clauses de non-responsabilité qui les couvrent :
+Le tableau suivant répertorie les bibliothèques tierces utilisées dans le moteur Communiqué Servlet, ainsi que les licences, les notices de copyright ou les clauses de non-responsabilité qui les couvrent :
 
 <table>
  <colgroup>
@@ -207,11 +207,11 @@ Le tableau suivant répertorie les bibliothèques tierces utilisées dans le mot
   </tr>
   <tr>
    <td><br /> </td>
-   <td><a href="#w-c-document">Document W3C</a></td>
+   <td><a href="#w-c-document">Document W3C</a></td>
   </tr>
   <tr>
    <td><br /> </td>
-   <td><a href="#w-c-software">Logiciels W3C</a></td>
+   <td><a href="#w-c-software">Logiciels W3C</a></td>
   </tr>
  </tbody>
 </table>
@@ -1090,7 +1090,7 @@ Le tableau suivant répertorie les bibliothèques tierces utilisées dans le mot
      (LFI#95810/Form ID#011801)
 ```
 
-## Document W3C {#w-c-document}
+## Document W3C {#w-c-document}
 
 ```xml
      This license came from: https://www.w3.org/Consortium/Legal/
@@ -1176,7 +1176,7 @@ Le tableau suivant répertorie les bibliothèques tierces utilisées dans le mot
      (last updated by reagle on 1999/04/99.)
 ```
 
-## Logiciels W3C {#w-c-software}
+## Logiciels W3C {#w-c-software}
 
 ```xml
      This license came from: <a href="https://www.w3.org/Consortium/Legal/" TARGET="_blank" >https://www.w3.org/Consortium/Legal/</a>

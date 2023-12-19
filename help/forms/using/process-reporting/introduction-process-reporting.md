@@ -9,7 +9,7 @@ exl-id: 674d28dc-7353-49de-9e12-b1998e1509c7
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 86%
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 86%
 
 Process Reporting est un outil de navigateur que vous utilisez pour créer et afficher des rapports sur les processus et tâches AEM Forms.
 
-La création de rapports de processus fournit un ensemble de rapports prêts à l’emploi qui vous permettent de filtrer, d’afficher des informations sur les processus à long terme, la durée de processus et le volume de workflow.
+Process Reporting fournit un ensemble de rapports d’usine qui vous permettent de filtrer et d’afficher des informations sur les processus à long terme, la durée de processus et le volume de workflows.
 
 En outre, Process Reporting fournit une interface permettant d’exécuter des requêtes ad hoc et d’intégrer des vues de rapports personnalisées dans son interface utilisateur.
 

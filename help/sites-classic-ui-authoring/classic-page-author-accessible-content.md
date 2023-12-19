@@ -9,8 +9,8 @@ content-type: reference
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
 source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '9148'
-ht-degree: 97%
+source-wordcount: '9100'
+ht-degree: 94%
 
 ---
 
@@ -102,7 +102,7 @@ une image est ajoutée à partir du référentiel de ressources numériques. Si 
 
 >[!NOTE]
 >
->Dans les deux scénarios ci-dessus, la valeur **Texte de remplacement** par défaut n’est pas visible dans l’onglet des **Propriétés d’image avancées**. Pour modifier la valeur par défaut, il vous suffit d’entrer une nouvelle valeur dans le champ **Texte de remplacement**.
+>Dans les deux scénarios ci-dessus, la valeur par défaut **Texte de remplacement** n’est pas visible dans le **Propriétés d’image avancées** . Pour modifier la valeur par défaut, il vous suffit de saisir une nouvelle valeur dans la variable **Texte de remplacement** champ .
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Petits pictogrammes (graphiques) véhiculant des informations spécifiques. Ils 
 
 ces éléments présentent généralement des données numériques. Il est également possible de fournir un texte alternatif en fournissant un bref résumé des principales tendances affichées dans le diagramme ou le graphique. Si nécessaire, fournissez également une description plus détaillée dans le texte à l’aide du champ **Description** dans l’onglet **Propriétés d’image avancées**. En outre, vous pouvez fournir les données sources sous forme tabulaire ailleurs dans la page ou le site.
 
-![Exemple de graphique. La meilleure approche pour fournir un équivalent est présentée ci-dessous.](assets/chlimage_1-2a.jpeg)
+![Exemple de graphique. Voici la meilleure approche pour fournir une alternative.](assets/chlimage_1-2a.jpeg)
 
 Pour spécifier un équivalent textuel pour cet exemple de graphique, ajoutez un texte `alt` concis à l’image, puis un équivalent textuel complet juste après l’image.
 
@@ -554,7 +554,7 @@ L’utilisation de termes descriptifs est acceptable s’ils ont une significati
 
 >[!NOTE]
 >
-Ce critère de réussite traite spécifiquement de la perception des couleurs. Les autres formes de perception sont traitées à la règle [Adaptable (1.3)](#adaptable), comme l’accès à la couleur par programme informatique et les autres formes de codage de la présentation visuelle.
+Ce critère de réussite traite spécifiquement de la perception des couleurs. D’autres formes de perception sont abordées dans la section [Adaptable (1.3)](#adaptable); y compris l’accès programmatique à la couleur et à d’autres codes de présentation visuelle.
 
 #### Objectif – Utilisation de la couleur (1.4.1) {#purpose-use-of-color}
 
@@ -681,7 +681,7 @@ Si des images de texte doivent être utilisées, utilisez le CSS pour remplacer 
 Remarques :
 
 1. Pour connaître les exigences relatives au contenu scintillant ou flashant, voir [Ne pas concevoir de contenu susceptible de provoquer des crises (2.3)](#seizures).
-1. Puisque tout contenu ne satisfaisant pas ce critère de réussite peut interférer avec la capacité de l’utilisateur à exploiter la page entière, tout le contenu présent dans la page web (qu’il soit utilisé pour satisfaire d’autres critères de réussite ou non) doit satisfaire ce critère de réussite. Voir [Exigence de conformité 5 : Non-interférence](https://www.w3.org/TR/WCAG20/#cc5).
+1. Puisque tout contenu ne satisfaisant pas ce critère de réussite peut interférer avec la capacité de l’utilisateur à utiliser la page entière, tout le contenu de la page web (qu’il soit utilisé pour satisfaire d’autres critères de réussite ou non) doit satisfaire à ce critère de réussite. Consultez [Exigence de conformité 5 : non interférence](https://www.w3.org/TR/WCAG20/#cc5).
 1. Le contenu mis à jour régulièrement par un logiciel ou diffusé en continu à l’utilisateur ou l’utilisatrice n’est pas tenu de conserver ou présenter des informations générées ou reçues entre la mise en pause et la reprise de la présentation. En effet, cela peut être techniquement impossible et peut induire en erreur dans de nombreuses situations.
 1. Une animation dans le cadre d’une phase de préchargement ou d’une situation similaire peut être considérée comme essentielle si l’interaction ne peut pas se produire au cours de cette phase pour tous les utilisateurs et utilisatrices, et si le fait de ne pas indiquer la progression risque de dérouter les utilisateurs et les utilisatrices ou de leur faire croire que le contenu a été figé ou interrompu.
 
@@ -779,7 +779,7 @@ Avant tout, veillez à ce que l’objectif d’un lien soit clairement décrit d
    * Texte : Cours du soir de l’automne 2010 – Détails.
    * Motif : il est possible d’améliorer le texte du lien en adaptant légèrement le texte et sa position.
 
-Les liens doivent être formulés de manière cohérente sur toutes les pages, en particulier pour les barres de navigation. Si, par exemple, un lien vers une page spécifique est nommé **Publications** sur une page, il doit être nommé de la même façon sur toutes les autres pages.
+Les liens doivent être formulés de manière cohérente sur toutes les pages, en particulier pour les barres de navigation. Par exemple, si un lien vers une page spécifique est nommé **Publications** sur une page, utilisez ce texte sur d’autres pages pour garantir la cohérence.
 
 Cependant, au moment de la rédaction de cet article, l’utilisation des titres pose certains problèmes :
 
@@ -789,7 +789,7 @@ Cependant, au moment de la rédaction de cet article, l’utilisation des titres
 
 Ainsi, bien que l’attribut de titre puisse fournir un contexte supplémentaire à un lien, gardez à l’esprit ses limites et ne l’utilisez pas comme alternative au texte du lien approprié.
 
-Si le lien est composé d’une image, veillez à ce que le texte secondaire de l’image décrive la destination du lien. Par exemple, si une image de bibliothèque est définie comme lien vers les publications d’une personne, le texte secondaire doit indiquer **Publications de Jean Dupont** et non **Bibliothèque**.
+Lorsque le lien est composé d’une image, assurez-vous que le texte secondaire de l’image décrit la destination du lien. Par exemple, si une image d’une bibliothèque est définie comme lien vers les publications d’une personne, le texte secondaire doit être lu : **Publications de John Smith** et non **Bibliothèque**.
 
 Si l’ancre de lien contient du texte qui décrit la destination du lien en plus de l’élément image (et donc que le texte apparaît à côté de l’image), utilisez un attribut de remplacement vide pour l’image :
 
@@ -814,7 +814,7 @@ Bien qu’il soit conseillé de fournir un texte de lien qui identifie l’objec
 
 Parfois, lorsqu’il existe plusieurs liens sur une page (chacun d’eux fournissant la direction d’un lien avec des détails complexes mais nécessaires), il peut être approprié de fournir une version alternative de la page web qui affiche exactement le même contenu, mais avec un texte de lien moins détaillé.
 
-Toutefois, il est possible d’utiliser des scripts de sorte qu’un texte minimal soit fourni avec le lien lui-même, mais, à l’activation d’une commande appropriée placée vers le haut de la page, que le texte du lien soit *développé* afin d’afficher davantage de détails. Une approche similaire consiste à utiliser une feuille de style CSS afin de *masquer* le lien complet pour les personnes voyantes, tout en l’affichant dans son intégralité pour les utilisateurs et utilisatrices d’un lecteur d’écran. Cela ne fait pas partie du sujet de ce document ; toutefois, vous en apprendrez davantage dans la section [En savoir plus – Fonction du lien (selon le contexte) (2.4.4)](#more-information-link-purpose-in-context).
+Vous pouvez également utiliser des scripts afin qu’une quantité minimale de texte soit fournie dans le lien lui-même. Mais lors de l’activation d’un contrôle approprié positionné en haut de la page, le texte du lien est *expand* plus de détails. Une approche similaire consiste à utiliser CSS pour *masquer* le lien complet aux utilisateurs et utilisatrices voyants, mais il est toujours affiché en plein écran pour les utilisateurs et utilisatrices de lecteurs d’écran. Bien que cette information ne relève pas du présent document, vous trouverez plus de détails sur la façon d’y parvenir dans la section [Comprendre – Fonction du lien (selon le contexte) (2.4.4)](#more-information-link-purpose-in-context).
 
 #### En savoir plus – Fonction du lien (selon le contexte) (2.4.4) {#more-information-link-purpose-in-context}
 
@@ -858,7 +858,7 @@ Dans AEM, la langue par défaut de la page est définie lors de sa création, ma
 
 * [Compréhension du critère de réussite 3.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html)
 * [Comment remplir le critère de réussite 3.1.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-doc-lang-id)
-* Les codes reposent sur la norme ISO 639-1. Vous trouverez une liste de codes plus complète pour chaque langue sur le site [W3Schools.com](https://www.w3schools.com/tags/ref_language_codes.asp).
+* Les codes sont basés sur la norme ISO 639-1. Vous trouverez une liste plus complète de codes pour chaque langue à l’adresse [Site W3 Schools](https://www.w3schools.com/tags/ref_language_codes.asp).
 
 ### Langue d’un passage (3.1.2)  {#language-of-parts}
 
@@ -939,7 +939,7 @@ Lorsque des boutons d’image sont utilisés (par exemple, le composant **Bouton
 
 Lorsqu’il existe un groupe de commandes apparentées, tel que **Groupe de boutons radio**, un titre peut être nécessaire pour le groupe de commandes et pour chaque commande. Lors de l’ajout d’un ensemble de boutons radio dans AEM, le champ **Titre** fournit le titre de ce groupe, tandis que les titres individuels sont spécifiés lors de la création des boutons radio (**Éléments**).
 
-![Ajout d’élément au groupe de cases d’option. Le titre du groupe est « Contactez-moi avant le », défini dans le champ Titre.](assets/chlimage_1-24a.png)
+![Ajout d’éléments au groupe radio. Le titre du groupe est &quot;Contactez-moi par&quot; - défini dans le champ Titre .](assets/chlimage_1-24a.png)
 
 Cependant, il n’existe aucune association par programmation entre le titre du groupe et les boutons radio eux-mêmes. Les personnes modifiant les modèles doivent encapsuler le titre dans les balises `fieldset` et `legend` nécessaires pour créer cette association, ce qui ne peut être fait qu’en modifiant le code source de la page. Un administrateur ou une administratrice du système peut également ajouter la prise en charge de ces éléments afin qu’ils apparaissent dans la boîte de dialogue **Propriétés du champ** (voir [Ajout de la prise en charge d’éléments et d’attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
@@ -961,7 +961,7 @@ Les libellés sont positionnés immédiatement à droite du champ.
 
 les libellés sont positionnés immédiatement au-dessus ou à gauche du champ.
 
-Dans les formulaires simples avec des fonctionnalités très limitées, un bouton `Submit` étiqueté de manière appropriée peut servir de libellé pour le champ adjacent (par exemple, `Search`). Cela s’avère utile dans les cas où il peut être difficile de trouver de l’espace pour le texte du libellé.
+Dans les formulaires simples avec des fonctionnalités limitées, étiquetez correctement une `Submit` peut agir comme libellé pour le champ adjacent (par exemple : `Search`). Cela s’avère utile dans les cas où il peut être difficile de trouver de l’espace pour le texte du libellé.
 
 #### En savoir plus – Étiquettes ou instructions (3.3.2) {#more-information-labels-or-instructions}
 

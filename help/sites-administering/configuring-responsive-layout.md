@@ -10,7 +10,7 @@ exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1275'
-ht-degree: 92%
+ht-degree: 95%
 
 ---
 
@@ -44,7 +44,7 @@ AEM effectue une mise en page réactive de vos pages en combinant plusieurs méc
 Une fois le conteneur de mises en page positionné sur la page, vous pouvez utiliser la variable **Disposition** pour positionner le contenu dans la grille réactive.
 
 * [**Émulateur**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
-Vous pouvez ainsi créer et modifier des sites web réactifs qui réorganisent la mise en page en fonction de la taille de l’appareil ou de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur ou l’utilisatrice peut alors voir comment le contenu est rendu à l’aide de l’émulateur.
+Cette action vous permet de créer et de modifier des sites web réactifs qui réorganisent la disposition en fonction de la taille de l’appareil ou de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur ou l’utilisatrice peut alors voir comment le contenu est rendu à l’aide de l’émulateur.
 
 >[!CAUTION]
 >
@@ -63,7 +63,7 @@ Grâce à ces mécanismes de grille réactive, vous pouvez :
 
 ## Configuration de l’émulateur en responsive design {#configuring-the-responsive-emulator}
 
-Cette tâche vous permet d’afficher la réponse **Émulateur** sur votre site.
+Ces tâches vous permettent d’afficher l’**émulateur** sur votre site.
 
 ### Enregistrer vos composants de page pour l’émulation {#register-your-page-components-for-emulation}
 

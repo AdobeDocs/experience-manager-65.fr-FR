@@ -8,7 +8,7 @@ exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '1764'
-ht-degree: 86%
+ht-degree: 90%
 
 ---
 
@@ -159,7 +159,7 @@ Un lien vers une URL (que ce soit dans votre site web ou un emplacement externe)
 
 ![Icône Lien hypertexte](do-not-localize/chlimage_1-9.png)
 
-Une boîte de dialogue vous permet de spécifier l’URL cible, mais aussi de spécifier si elle doit être ouverte dans une nouvelle fenêtre.
+Une boîte de dialogue vous permet de spécifier l’URL cible, ainsi que de déterminer si elle doit s’ouvrir dans une nouvelle fenêtre.
 
 ![cq55_rte_link_use](assets/cq55_rte_link_use.png)
 
@@ -167,7 +167,7 @@ Vous pouvez :
 
 * saisir directement une URI ;
 * utiliser un plan de site (sitemap) pour sélectionner une page de votre site Web ;
-* Saisissez l’URI, puis ajoutez l’ancre cible ; par exemple, `www.TargetUri.org#AnchorName`
+* saisir l’URI, puis ajouter l’ancre cible ; par exemple, `www.TargetUri.org#AnchorName` ;
 * saisir une ancre seule (pour faire référence à la « page en cours »), `#anchor`#, par exemple ;
 * rechercher une page dans l’outil de recherche de contenu, puis faire glisser son icône dans la boîte de dialogue Lien hypertexte.
 
@@ -205,7 +205,7 @@ La recherche commence toujours à partir de la position actuelle du curseur dans
 
 ![cq55_rte_find_use](assets/cq55_rte_find_use.png)
 
-La variable **Remplacer** permet de **Rechercher**, puis **Remplacer** une instance individuelle avec le texte spécifié, ou **Remplacer tout** dans le composant actif.
+L’option **Remplacer** permet de **rechercher**, puis de **remplacer** une instance par le texte indiqué ou de **remplacer toutes** les instances du composant actif.
 
 ![cq55_rte_findreplace_use](assets/cq55_rte_findreplace_use.png)
 
@@ -381,7 +381,7 @@ Survolez avec la souris pour afficher une version agrandie du caractère, puis c
 
 ![Barre d’outils du mode de modification de la source](do-not-localize/cq55_rte_sourceedit.png)
 
-Le mode d’édition source permet d’afficher et de modifier le HTML sous-jacent du composant.
+Le mode de modification de la source vous permet d’afficher et de modifier le code HTML sous-jacent du composant.
 
 Le texte suivant :
 

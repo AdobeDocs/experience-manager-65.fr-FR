@@ -9,7 +9,7 @@ exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '3251'
-ht-degree: 72%
+ht-degree: 73%
 
 ---
 
@@ -133,8 +133,8 @@ Avec Sling, vous spécifiez le script à appliquer pour le rendu d’une entité
 
 La requête est décomposée et les informations nécessaires sont extraites. Recherche du référentiel pour la ressource demandée (nœud de contenu) :
 
-* first Sling vérifie si un noeud existe à l’emplacement spécifié dans la requête ; par exemple, `../content/corporate/jobs/developer.html`
-* si aucun noeud n’est trouvé, l’extension est supprimée et la recherche est répétée ; par exemple, `../content/corporate/jobs/developer`
+* Tout d’abord, Sling vérifie s’il existe un nœud à l’emplacement spécifié dans la demande. Par exemple, `../content/corporate/jobs/developer.html`.
+* Si aucun nœud n’est identifié, l’extension est supprimée et la recherche recommence. Par exemple, `../content/corporate/jobs/developer`.
 * si aucun noeud n’est trouvé, Sling renvoie le code http 404 (Introuvable).
 
 Sling permet également à des éléments autres que des nœuds JCR d’être des ressources, mais il s’agit là d’une fonctionnalité avancée.

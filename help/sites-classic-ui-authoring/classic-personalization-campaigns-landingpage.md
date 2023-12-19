@@ -1,6 +1,6 @@
 ---
 title: Pages de destination
-description: La fonction landing pages permet d’importer rapidement et facilement une conception et un contenu directement dans une page AEM. Le code HTML et les ressources connexes préparés par un développeur ou une développeuse web pourront être importés, en intégralité ou partiellement.
+description: La fonction Pages de destination permet d’importer rapidement et facilement les conceptions et les contenu directement dans une page AEM. Le code HTML et les ressources connexes préparés par un développeur ou une développeuse web pourront être importés, en intégralité ou partiellement.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -9,87 +9,87 @@ docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
 source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '3323'
-ht-degree: 43%
+source-wordcount: '3360'
+ht-degree: 95%
 
 ---
 
 # Pages de destination{#landing-pages}
 
-La fonction landing pages permet d’importer rapidement et facilement une conception et un contenu directement dans une page AEM. Le code HTML et les ressources connexes préparés par un développeur web pourront être importés, en intégralité ou partiellement. Cette fonctionnalité est utile pour créer des landing pages marketing qui ne sont actives que pendant une durée limitée et qui doivent être créées rapidement.
+La fonction Pages de destination permet d’importer rapidement et facilement les conceptions et les contenu directement dans une page AEM. Le code HTML et les ressources connexes préparés par un développeur web pourront être importés, en intégralité ou partiellement. Cette fonctionnalité est utile pour créer des pages de destination marketing qui ne sont actives que pendant une durée limitée et qui doivent être créées rapidement.
 
-Cette page décrit les éléments suivants :
+Cette page contient les informations suivantes :
 
-* à quoi ressemblent les landing pages dans AEM incluant les composants disponibles
-* comment créer une landing page et importer un bloc de conception
-* utilisation des landing pages dans AEM
-* configuration des landing pages mobiles
+* aspect des pages de destination dans AEM et composants disponibles ;
+* méthode de création d’une page de destination et import d’un package de conception ;
+* utilisation des pages de destination dans AEM ;
+* configuration des pages de destination pour appareils mobiles.
 
-La préparation du module de conception à importer est traitée dans la section [Extension et configuration de l’importateur de conception](/help/sites-administering/extending-the-design-importer-for-landingpages.md). L’intégration à Adobe Analytics est présentée dans la section [Intégration de pages d’entrée à Adobe Analytics.](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
+La préparation du package de conception à importer est traitée dans la section [Extension et configuration de l’importateur de conception](/help/sites-administering/extending-the-design-importer-for-landingpages.md). L’intégration à Adobe Analytics est présentée dans la section [Intégration des pages de destination à Adobe Analytics.](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
 
 >[!CAUTION]
 >
->l’importateur de conception, utilisé pour importer des landing pages, [a été abandonné avec AEM 6.5.](/help/release-notes/deprecated-removed-features.md#deprecated-features).
+>L’importateur de conception, utilisé pour importer des pages de destination, [a été abandonné avec AEM 6.5.](/help/release-notes/deprecated-removed-features.md#deprecated-features).
 
 >[!CAUTION]
 >
 >Étant donné que l’importateur de conception doit pouvoir accéder à `/apps`, il ne fonctionnera pas dans les environnements cloud conteneurisés où `/apps` est immuable.
 
-## Que sont les landing pages ? {#what-are-landing-pages}
+## Que sont les pages de destination ? {#what-are-landing-pages}
 
-Les pages d’entrée sont des sites d’une ou de plusieurs pages qui sont le &quot;point de terminaison&quot; d’une diffusion marketing, par exemple, avec des courriers électroniques, des mots-clés/bannières, des médias sociaux. Une page d’entrée peut avoir plusieurs objectifs, mais tous ont une chose en commun : le visiteur doit accomplir une tâche et définir le succès d’une page d’entrée.
+Les pages d’entrée sont des sites d’une ou de plusieurs pages qui sont le &quot;point de terminaison&quot; d’une diffusion marketing, par exemple, avec des courriers électroniques, des mots-clés/bannières, des médias sociaux. Une page de destination peut avoir plusieurs objectifs, mais tous ont un élément en commun : la personne doit accomplir une tâche, ce qui conditionne le succès de la page de destination.
 
-La fonction Pages d’entrée d’AEM permet aux marketeurs de collaborer avec les concepteurs web des agences ou des équipes créatives internes afin de créer des conceptions de page qui peuvent être facilement importées dans AEM et qui restent modifiables par les marketeurs et publiées sous la même gouvernance que les autres sites optimisés par l’.
+La fonctionnalité Pages de destination d’AEM permet aux spécialistes marketing de collaborer avec les concepteurs et conceptrices web des agences ou des équipes créatives internes, afin de créer des conceptions de page qui peuvent être facilement importées dans AEM et qui restent modifiables par les spécialistes marketing. Par ailleurs, elles peuvent être publiées sous la même gouvernance que les autres sites optimisés par AEM.
 
-Dans AEM, vous créez des landing pages en procédant comme suit :
+Dans AEM, procédez comme suit pour créer des pages de destination :
 
-1. Créez une page dans AEM qui contient le canevas des landing pages. AEM est fourni avec un exemple nommé **Page d’importateur**.
+1. Créez une page dans AEM qui contient la zone de travail des pages de destination. AEM est fourni avec un exemple nommé **Page d’importateur**.
 
 1. [Préparez le code HTML et les ressources.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
 1. Regroupez les ressources dans un fichier ZIP appelé « package de conception ».
 1. Importez le package de conception sur la page de l’importateur.
 1. Modifiez et publiez la page.
 
-### Pages d’entrée du bureau {#desktop-landing-pages}
+### Pages de destination pour postes de travail {#desktop-landing-pages}
 
-Voici un exemple de landing page dans AEM :
+Voici un exemple de page de destination dans AEM :
 
 ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-### Pages d’entrée mobiles {#mobile-landing-pages}
+### Pages de destination pour mobiles {#mobile-landing-pages}
 
-Une landing page peut également avoir une version mobile de la page. Pour disposer d’une version mobile distincte de la page de destination, la conception de l’importation doit comporter deux fichiers HTML : *index.htm(l)* et *mobile.index.htm(l)*.
+Une page de destination peut également avoir une version pour mobiles. Pour disposer d’une version mobile distincte de la page de destination, la conception de l’importation doit comporter deux fichiers HTML : *index.htm(l)* et *mobile.index.htm(l)*.
 
 La procédure d’importation de ces pages de destination est identique à celle d’une page de destination normale ; la conception de page de destination est associée à un fichier HTML supplémentaire correspondant à la page de destination pour mobiles. Ce fichier HTML doit, lui aussi, disposer d’une balise `div` de canevas avec `id=cqcanvas`, comme c’est le cas pour la page de destination pour ordinateurs de bureau. De plus, il prend en charge tous les composants modifiables décrits pour la page de destination pour ordinateurs de bureau.
 
-La page de destination pour mobiles est créée en tant que page enfant de la page de destination pour ordinateurs de bureau. Pour l’ouvrir, accédez à la page d’entrée dans Sites web et ouvrez la page enfant.
+La page de destination pour mobiles est créée en tant que page enfant de la page de destination pour ordinateurs de bureau. Pour l’ouvrir, accédez à la page de destination dans Sites web et ouvrez la page enfant.
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
 >[!NOTE]
 >
->La page d’entrée mobile est supprimée/désactivée avec la page d’entrée pour ordinateur de bureau si la page d’entrée pour ordinateur de bureau est supprimée ou désactivée.
+>La page de destination pour mobiles est supprimée/désactivée en même temp que la page de destination pour postes de travail correspondante.
 
-## Composants de page d’entrée {#landing-page-components}
+## Composants de page de destination {#landing-page-components}
 
-Pour rendre des parties du HTML importées modifiables dans AEM, vous pouvez mapper directement le contenu du HTML Landing pages aux composants AEM. Par défaut, l’importateur de conception comprend les composants suivants :
+Pour rendre des parties HTML importées modifiables dans AEM, vous pouvez mapper directement le contenu HTML des pages de destination aux composants AEM. Par défaut, l’importateur de conception comprend les composants suivants :
 
 * Texte, pour tout texte
-* Titre, pour le contenu des balises H1-6
+* Titre, pour le contenu des balises H1-6
 * Image, pour les images qui doivent être échangeables
-* Appel à l’action :
+* Appel à action :
 
-   * Lien de clic publicitaire
+   * Lien des clics publicitaires
    * Lien graphique
 
-* Formulaire de piste CTA, pour capturer des informations sur l’utilisateur
-* Système de paragraphe (Parsys), pour permettre l’ajout de tout composant ou la conversion du composant ci-dessus.
+* Formulaire de piste CTA, pour capturer des informations sur l’utilisateur ou l’utilisatrice
+* Système de paragraphe (Parsys), pour permettre l’ajout ou la conversion de composants
 
 En outre, il est possible d’étendre cette fonctionnalité et de prendre en charge les composants personnalisés. Cette section décrit les composants en détail.
 
 ### Texte {#text}
 
-Le composant Texte vous permet de saisir un bloc de texte à l’aide d’un éditeur WYSIWYG. Voir [Composant textuel](/help/sites-authoring/default-components.md#text) pour plus d’informations.
+Le composant Texte vous permet de saisir un bloc de texte à l’aide d’un éditeur WYSIWYG. Pour plus d’informations, consultez [Composant Texte](/help/sites-authoring/default-components.md#text) .
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 
@@ -99,7 +99,7 @@ Voici un exemple de composant Texte sur une page de destination :
 
 #### Titre {#title}
 
-Le composant Titre vous permet d’afficher un titre et de configurer la taille (h1-6). Voir [Composant du titre](/help/sites-authoring/default-components.md#title) pour plus d’informations.
+Le composant Titre vous permet d’afficher un titre et de configurer la taille (h1-6). Pour plus d’informations, consultez [Composant Titre](/help/sites-authoring/default-components.md#title).
 
 ![chlimage_1-25](assets/chlimage_1-25.png)
 
@@ -109,7 +109,7 @@ Voici un exemple de composant Titre sur une page de destination :
 
 #### Image {#image}
 
-Le composant d’image affiche une image que vous pouvez faire glisser à partir de l’outil de recherche de contenu ou cliquer pour la télécharger. Voir [composant image](/help/sites-authoring/default-components.md) pour plus d’informations.
+Le composant Image affiche une image que vous pouvez faire glisser à partir de l’outil de recherche de contenu ou sur laquelle vous pouvez cliquer pour la charger. Pour plus d’informations, consultez [Composant Image](/help/sites-authoring/default-components.md).
 
 ![chlimage_1-27](assets/chlimage_1-27.png)
 
@@ -119,18 +119,18 @@ Voici un exemple de composant Image sur une page de destination :
 
 #### Appel à l’action (CTA) {#call-to-action-cta}
 
-Une conception de page d’entrée peut comporter plusieurs liens ; certains d’entre eux peuvent être conçus comme des &quot;appels à l’action&quot;.
+Une conception de page de destination peut comporter plusieurs liens. Certains d’entre eux peuvent être conçus comme des « appels à l’action ».
 
 L’appel à l’action (CTA) est utilisé pour inciter le visiteur à agir immédiatement sur la page d’entrée, par exemple &quot;S’abonner maintenant&quot;, &quot;Afficher cette vidéo&quot;, &quot;Durée limitée&quot;, etc.
 
-* Lien des clics publicitaires : permet d’ajouter un lien texte qui, lorsqu’un utilisateur clique dessus, dirige le visiteur vers une URL cible.
-* Lien graphique : permet d’ajouter une image qui, lorsqu’un utilisateur clique dessus, dirige le visiteur vers une URL cible.
+* Lien de clics publicitaires : permet d’ajouter un lien texte qui, lorsqu’il est fait l’objet d’un clic, dirige le visiteur ou la visiteuse vers une URL cible.
+* Lien graphique : permet d’ajouter une image qui, lorsqu’elle fait l’objet d’un clic, dirige le visiteur ou la visiteuse vers une URL cible.
 
-Les deux composants CTA disposent d’options similaires. Le lien Clic publicitaire contient d’autres options de texte enrichi. Les composants sont décrits en détail dans les paragraphes suivants.
+Les deux composants CTA disposent d’options similaires. Le lien de clics publicitaires disposent d’autres options de texte enrichi. Les composants sont décrits en détail dans les paragraphes suivants.
 
-#### Lien des clics publicitaires {#click-through-link}
+#### Lien de clics publicitaires {#click-through-link}
 
-Ce composant CTA peut être utilisé pour ajouter un lien texte sur la page d’entrée. Vous pouvez cliquer sur ce lien pour amener l’utilisateur à l’URL cible spécifiée dans les propriétés du composant. Il fait partie du groupe &quot;Appel à l’action&quot;.
+Vous pouvez utiliser ce composant CTA pour ajouter un lien textuel sur la page de destination. Lorsqu’une personne clique sur ce lien, elle accède à l’URL cible spécifiée dans les propriétés du composant. Il fait partie du groupe « Appel à l’action ».
 
 ![chlimage_1-29](assets/chlimage_1-29.png)
 
@@ -138,12 +138,12 @@ Ce composant CTA peut être utilisé pour ajouter un lien texte sur la page d’
 
 **Cible URL** Saisissez l’URI à laquelle les utilisateurs accéderont s’ils cliquent sur le texte. 
 
-**Options de rendu** Décrit les options de rendu. Vous pouvez effectuer une sélection parmi les options suivantes :
+**Options de rendu** Décrit les options de rendu. Vous pouvez effectuer une sélection parmi les options suivantes :
 
 * Charger la page dans une nouvelle fenêtre de navigateur
 * Charger la page dans la fenêtre active
-* Chargement de page dans le cadre parent
-* Annuler toutes les images et charger la page dans la fenêtre complète du navigateur
+* Charger la page dans le cadre parent
+* Annuler tous les cadres et charger la page dans une fenêtre du navigateur
 
 **CSS** Dans l’onglet Style, saisissez le chemin d’accès à votre feuille de styles CSS.
 
@@ -155,7 +155,7 @@ Voici un exemple de lien de clics publicitaires :
 
 #### Lien graphique {#graphical-link}
 
-Vous pouvez utiliser ce composant CTA pour ajouter une image graphique avec un lien sur la page de destination. Il peut s’agir d’un simple bouton ou d’une image en arrière-plan. Lorsque l’utilisateur clique sur l’image, il est amené à l’URL cible spécifiée dans les propriétés du composant. Cela fait partie de la **Appel à l’action** groupe.
+Vous pouvez utiliser ce composant CTA pour ajouter une image graphique avec un lien sur la page de destination. Il peut s’agir d’un simple bouton ou d’une image en arrière-plan. Lorsqu’une personne clique sur l’image, elle accède à l’URL cible spécifiée dans les propriétés du composant. Cela fait partie du groupe **Appel à l’action**.
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
@@ -163,12 +163,12 @@ Vous pouvez utiliser ce composant CTA pour ajouter une image graphique avec un l
 
 **Cible URL** Saisissez l’URI à laquelle les utilisateurs accéderont s’ils cliquent sur l’image.
 
-**Options de rendu** Décrit les options de rendu. Vous pouvez effectuer une sélection parmi les options suivantes :
+**Options de rendu** Décrit les options de rendu. Vous pouvez effectuer une sélection parmi les options suivantes :
 
 * Charger la page dans une nouvelle fenêtre de navigateur
 * Charger la page dans la fenêtre active
-* Chargement de page dans le cadre parent
-* Annuler toutes les images et charger la page dans la fenêtre complète du navigateur
+* Charger la page dans le cadre parent
+* Annuler tous les cadres et charger la page dans une fenêtre du navigateur
 
 **CSS** Dans l’onglet Style, saisissez le chemin d’accès à votre feuille de styles CSS.
 
@@ -178,18 +178,18 @@ Voici un exemple de lien graphique :
 
 ![chlimage_1-32](assets/chlimage_1-32.png)
 
-### Formulaire de piste CTA (Appel à l’action) {#call-to-action-cta-lead-form}
+### Formulaire de prospect CTA (appel à l’action) {#call-to-action-cta-lead-form}
 
-Le formulaire de piste est utilisé pour collecter des informations sur le profil d’un visiteur/prospect. Ces informations pourront être stockées et exploitées ultérieurement pour mener une campagne marketing efficace. Ces informations comprennent généralement le titre, le nom, l’adresse électronique, la date de naissance, l’adresse, l’intérêt, etc. Cela fait partie de la **Formulaire de piste CTA** groupe.
+Le formulaire de piste est utilisé pour collecter des informations sur le profil d’un visiteur/prospect. Ces informations pourront être stockées et exploitées ultérieurement pour mener une campagne marketing efficace. Il s’agit généralement du titre, du nom, de l’adresse e-mail, de la date de naissance, de l’adresse, du centre d’intérêt, etc. Il fait partie du groupe **Formulaire de prospect CTA**.
 
-Voici un exemple de formulaire de piste CTA :
+Voici un exemple de formulaire de prospect CTA :
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
-Les formulaires de piste CTA sont construits à partir de plusieurs composants différents :
+Les formulaires de prospect CTA se composent de plusieurs composants différents :
 
-* **Formulaire de piste**
-Le composant Formulaire de piste définit le début et la fin d’un nouveau formulaire de piste sur une page. D’autres composants peuvent être placés entre ces éléments, tels que « ID d’e-mail », « Prénom », etc.
+* **Formulaire de prospect**
+Le composant Formulaire de prospect définit le début et la fin d’un nouveau formulaire dans une page. D’autres composants peuvent être placés entre ces éléments, tels que « ID d’e-mail », « Prénom », etc.
 
 * **Champs et éléments de formulaires**
 Les champs et les éléments de formulaires peuvent inclure des zones textuelles, des cases d’option, des images, etc. L’utilisateur effectue souvent une action dans un champ de formulaire, comme saisir du texte. Consultez chaque élément de formulaires pour plus d’informations.
@@ -203,17 +203,17 @@ Les composants suivants sont disponibles à partir du Sidekick pour le formulair
 
 ![chlimage_1-34](assets/chlimage_1-34.png)
 
-#### Paramètres communs à de nombreux composants de formulaire de piste {#settings-common-to-many-lead-form-components}
+#### Paramètres communs à de nombreux composants de formulaire de prospect {#settings-common-to-many-lead-form-components}
 
-Bien que chacun des composants du formulaire de piste ait un objectif différent, la plupart d’entre eux sont composés d’options et de paramètres similaires.
+Bien que chacun des composants de formulaire de prospect ait un objectif différent, la plupart sont composés d’options et de paramètres similaires.
 
-Lors de la configuration de l’un des composants de formulaire, les onglets suivants sont disponibles dans la boîte de dialogue :
+Lors de la configuration de l’un des composants de formulaire, les onglets suivants sont disponibles dans la boîte de dialogue :
 
 * **Titre et texte**
-Ici, vous devez spécifier les informations de base, telles que le titre du composant et tout texte d’accompagnement. Le cas échéant, il vous permet également de définir d’autres informations clés, telles que si le champ peut être sélectionné plusieurs fois et si des éléments peuvent être sélectionnés.
+Cet onglet vous invite à renseigner des informations de base, telles que le titre du composant et tout texte d’accompagnement. Le cas échéant, il vous permet également d’apporter d’autres informations essentielles ; par exemple, s’il s’agit d’un champ à sélection multiple ou encore les différents éléments pouvant être sélectionnés.
 
 * **Valeurs initiales**
-Permet de spécifier une valeur par défaut.
+Permet d’indiquer une valeur par défaut.
 
 * **Contraintes**
 Permet d’indiquer si un champ est obligatoire et les contraintes qui lui sont appliquées (doit être numérique, par exemple).
@@ -225,11 +225,11 @@ Indique la taille et le style des champs.
 >
 >Les champs affichés varient en fonction du composant individuel.
 >
->Toutes les options ne sont pas disponibles pour tous les composants de formulaire de piste. Voir Forms pour plus d’informations sur ces [paramètres communs](/help/sites-authoring/default-components.md#formsgroup).
+>Toutes les options ne sont pas disponibles pour tous les composants du formulaire de prospect. Voir Forms pour plus d’informations sur ces [paramètres communs](/help/sites-authoring/default-components.md#formsgroup).
 
-#### Composants de formulaire de piste {#lead-form-components}
+#### Composants de formulaire de prospect {#lead-form-components}
 
-La section suivante décrit les composants disponibles pour les formulaires de piste Appel à l’action .
+La section suivante décrit les composants disponibles pour les formulaires de prospect CTA.
 
 **À propos** Permet aux utilisateurs d’ajouter des informations de type « À propos ».
 
@@ -263,9 +263,9 @@ La section suivante décrit les composants disponibles pour les formulaires de p
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
-Le composant Formulaire de prospect définit le début et la fin d’un formulaire à l’aide des éléments **Début du formulaire** et **Fin de formulaire**. Ils sont toujours associés pour s’assurer que le formulaire est correctement défini.
+Le composant Formulaire de prospect définit le début et la fin d’un formulaire à l’aide des éléments **Début du formulaire** et **Fin de formulaire**. Le début et la fin sont toujours associés pour s’assurer que le formulaire est correctement défini.
 
-Après avoir ajouté le formulaire de piste, vous pouvez configurer le début ou la fin du formulaire en cliquant sur **Modifier** dans la barre correspondante.
+Après avoir ajouté le formulaire de prospect, vous pouvez configurer le début ou la fin du formulaire en cliquant sur **Modifier** dans la barre correspondante.
 
 **Début du formulaire de lead**
 
@@ -282,9 +282,9 @@ Deux onglets sont disponibles pour la configuration, **Formulaire** et **Avancé
 **Options de publication** Les options de publication suivantes sont disponibles :
 
 * Créer un prospect
-* Service de messagerie électronique : créer un abonné et l’ajouter à la liste. Utilisez cette option si vous utilisez un fournisseur de services de messagerie tel qu’ExactTarget.
-* Service de messagerie électronique : envoyer un message de répondeur automatique. Utilisez cette option si vous utilisez un fournisseur de services de messagerie tel qu’ExactTarget.
-* Service de messagerie électronique : désabonner l’utilisateur de la liste. Utilisez cette option si vous utilisez un fournisseur de services de messagerie tel qu’ExactTarget.
+* Service de messagerie : permet de créer une personne abonnée et de l’ajouter à la liste. Utilisez cette option si vous utilisez un fournisseur de services de messagerie comme ExactTarget.
+* Service de messagerie : permet d’envoyer un message de répondeur automatique. Sélectionnez cette option si vous utilisez un fournisseur de services de messagerie comme ExactTarget.
+* Service de messagerie : permet de désabonner l’utilisateur ou l’utilisatrice de la liste. Sélectionnez cette option si vous utilisez un fournisseur de services de messagerie comme ExactTarget.
 * Désabonner l’utilisateur
 
 **L’identifiant de formulaire** L’identifiant de formulaire d’un prospect l’identifie de façon unique. Utilisez cet identifiant si plusieurs formulaires figurent sur une seule page ; assurez-vous qu’ils présentent des identifiants différents.
@@ -327,27 +327,27 @@ Nom qui apparaît sur le bouton Réinitialiser.
 * **Description**
 Informations qui s’affichent sous le bouton.
 
-## Création d’une page d’entrée {#creating-a-landing-page}
+## Créer une page de destination {#creating-a-landing-page}
 
-Lorsque vous créez une landing page, vous devez effectuer trois étapes :
+Lorsque vous créez une page de destination, vous devez effectuer trois étapes :
 
 1. Créez une page d’importateur.
 1. [Préparez le code HTML pour l’importation.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
 1. Importez le package de conception.
 
-### Utilisation de l’importateur de conception {#use-of-the-design-importer}
+### Utiliser l’importateur de conception {#use-of-the-design-importer}
 
-Comme l’importation de pages implique la préparation du HTML, la vérification et le test des pages, l’importation de pages d’entrée est conçue comme une tâche d’administration. En tant qu’administrateur, l’utilisateur effectuant l’importation a besoin d’autorisations de lecture, d’écriture, de création et de suppression sur `/apps`. Si l’utilisateur ne dispose pas de ces autorisations, l’importation échouera.
+Comme l’import de pages implique la préparation du code HTML, la vérification et le test des pages, l’import de pages de destination est conçue comme une tâche d’administration. En tant qu’administrateur, l’utilisateur effectuant l’importation a besoin d’autorisations de lecture, d’écriture, de création et de suppression sur `/apps`. Si l’utilisateur ne dispose pas de ces autorisations, l’importation échouera.
 
 >[!NOTE]
 >
 >Étant donné que l’importateur de conception est conçu comme un outil d’administration ayant besoin d’autorisations de lecture, d’écriture, de création et de suppression sur `/apps`, Adobe déconseille de l’utiliser en production.
 
-Adobe recommande d’utiliser l’importateur de conception sur une instance d’évaluation. Sur une instance d’évaluation, l’importation peut être testée et validée par un développeur qui est ensuite responsable du déploiement du code sur l’instance de production.
+Adobe recommande d’utiliser l’importateur de conception sur une instance d’évaluation. Sur une instance d’évaluation, l’import peut être testé et validé par un développeur ou une développeuse qui est ensuite responsable du déploiement du code sur l’instance de production.
 
-### Création d’une page d’importateur {#creating-an-importer-page}
+### Créer une page d’importateur {#creating-an-importer-page}
 
-Avant de pouvoir importer votre conception de page d’entrée, vous devez créer une page d’importateur, par exemple, sous une campagne. Le modèle Page d’importateur vous permet d’importer votre landing page HTML complète. La page contient une zone de dépôt dans laquelle le bloc de conception de page d’entrée peut être importé par glisser-déposer.
+Avant de pouvoir importer votre conception de page d’entrée, vous devez créer une page d’importateur, par exemple, sous une campagne. Le modèle Page d’importateur vous permet d’importer votre page de destination HTML complète. La page contient une zone de dépôt dans laquelle le package de conception de la page de destination peut être importé par glisser-déposer.
 
 >[!NOTE]
 >
@@ -355,7 +355,7 @@ Avant de pouvoir importer votre conception de page d’entrée, vous devez crée
 
 Pour créer une landing page :
 
-1. Accédez au **Sites web** console.
+1. Accédez à la console **Sites web**.
 1. Sélectionnez votre campagne dans le volet de gauche.
 1. Cliquez sur **Nouveau** pour ouvrir la fenêtre **Créer une page**.
 1. Sélectionnez le modèle **Page d’importateur**, ajoutez un titre et, éventuellement, un nom, puis cliquez sur **Créer**.
@@ -364,66 +364,66 @@ Pour créer une landing page :
 
    La nouvelle page de l’importateur s’affiche.
 
-### Préparation du HTML pour l’importation {#preparing-the-html-for-import}
+### Préparer le code HTML pour l’import {#preparing-the-html-for-import}
 
-Avant d’importer le module de conception, le HTML doit être préparé. Voir [Extension et configuration de l’importation de conception](/help/sites-administering/extending-the-design-importer-for-landingpages.md) pour plus d’informations.
+Avant d’importer le package de conception, le code HTML doit être préparé. Voir [Extension et configuration de l’import de conception](/help/sites-administering/extending-the-design-importer-for-landingpages.md) pour plus d’informations.
 
-### Importation du module de conception {#importing-the-design-package}
+### Importer le package de conception {#importing-the-design-package}
 
-Une fois la page d’importateur créée, vous pouvez y importer un module de conception. Vous trouverez des informations détaillées sur la création du module de conception et sa structure recommandée dans la section [Extension et configuration de l’importation de conception](/help/sites-administering/extending-the-design-importer-for-landingpages.md).
+Une fois la page d’importateur créée, vous pouvez y importer un package de conception. Vous trouverez des informations détaillées sur la création du package de conception et sa structure recommandée dans la section [Extension et configuration de l’import de conception](/help/sites-administering/extending-the-design-importer-for-landingpages.md).
 
-En supposant que le module de conception soit prêt, les étapes suivantes décrivent comment importer le module de conception sur une page d’importateur.
+En supposant que le package de conception soit prêt, les étapes suivantes décrivent comment importer le package de conception sur une page d’importateur.
 
-1. Ouvrez la page d’importateur que vous utilisez. [créé précédemment](#creatingablankcanvaspage).
+1. Ouvrez la page d’importateur que vous avez [créée précédemment](#creatingablankcanvaspage).
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
-1. Faites glisser et déposez le module de conception dans la zone de dépôt. Notez que la flèche change de direction lorsqu’un package est glissé dessus.
-1. Après avoir effectué un glisser-déposer, la page d’entrée s’affiche à la place de la page d’importateur. La page de destination HTML a bien été importée.
+1. Faites glisser le package de conception et déposez-le dans la zone de dépôt. Notez que la flèche change de direction lorsque vous faites glisser un package dessus.
+1. Après avoir effectué un glisser-déposer, la page de destination s’affiche à la place de la page d’importateur. La page de destination HTML a bien été importée.
 
    ![chlimage_1-2-1](assets/chlimage_1-2-1.png)
 
 >[!NOTE]
 >
->Lors de l’importation, les balises sont assainies pour des raisons de sécurité et pour éviter d’importer et de publier des balises non valides. Cela suppose que les balises HTML uniquement et que toutes les autres formes d’éléments tels que les SVG en ligne ou les composants web soient filtrées.
+>Lors de l’importation, les balises sont assainies pour des raisons de sécurité et pour éviter d’importer et de publier des balises non valides. Cela suppose que les balises HTML et que toutes les autres formes d’éléments tels que les SVG en ligne ou les composants web soient filtrées.
 
 >[!NOTE]
 >
->Si vous rencontrez des problèmes lors de l’importation du module de conception, voir [Dépannage](/help/sites-administering/extending-the-design-importer-for-landingpages.md#troubleshooting).
+>Si vous rencontrez des problèmes lors de l’import du package de conception, consultez [Résolutions des problèmes](/help/sites-administering/extending-the-design-importer-for-landingpages.md#troubleshooting).
 
-## Utilisation des landing pages {#working-with-landing-pages}
+## Utiliser les pages de destination {#working-with-landing-pages}
 
-La conception et les ressources d’une page d’entrée sont généralement créées par un concepteur, éventuellement au sein d’une agence, dans des outils qu’ils utilisent comme Adobe Photoshop ou Adobe Dreamweaver. Une fois la conception terminée, le concepteur envoie, au service marketing, un fichier compressé contenant tous les éléments. Le contact en marketing est alors chargé de déposer le fichier zip dans AEM et de publier le contenu.
+La conception et les ressources d’une page de destination sont généralement créées par un concepteur ou une conceptrice, éventuellement au sein d’une agence, avec des outils comme Adobe Photoshop ou Adobe Dreamweaver. Une fois la conception terminée, le concepteur envoie, au service marketing, un fichier compressé contenant tous les éléments. Le contact marketing est alors chargé de déposer le fichier zip dans AEM et de publier le contenu.
 
-En outre, le concepteur peut avoir à apporter des modifications à la landing page après son importation en modifiant ou en supprimant du contenu et en configurant les composants d’appel à l’action. Enfin, le marketeur souhaite afficher un aperçu de la landing page, puis activer la campagne pour s&#39;assurer que la landing page est publiée.
+En outre, le concepteur ou la conceptrice peut avoir à apporter des modifications à la page de destination après son import en modifiant ou en supprimant du contenu et en configurant les composants d’appel à l’action. Enfin, le spécialiste marketing souhaite afficher un aperçu de la page de destination, puis activer la campagne pour s’assurer que la page de destination est publiée.
 
-Cette section décrit la procédure à suivre :
+Cette section décrit les tâches suivantes :
 
-* Supprimer une landing page
-* Téléchargez le module de conception
-* Affichage des informations d’importation
-* Réinitialiser une landing page
+* Supprimer une page de destination
+* Télécharger le package de conception
+* Afficher les informations d’import
+* Réinitialiser une page de destination
 * [Configuration des composants CTA et ajout de contenu à la page](#call-to-action-cta)
-* Prévisualiser la landing page
-* Activer/publier une landing page
+* Prévisualiser la page de destination
+* Activer/publier une page de destination
 
-Lorsque vous importez le module de conception, **Effacer la conception** et **Télécharger le fichier compressé importé** sont disponibles dans le menu des paramètres de la page :
+Lorsque vous importez le package de conception, les options **Effacer la conception** et **Télécharger le fichier compressé importé** sont disponibles dans le menu des paramètres de la page :
 
 ![chlimage_1-3-1](assets/chlimage_1-3-1.png)
 
-### Téléchargement du bloc de conception importé {#downloading-the-imported-design-package}
+### Télécharger le package de conception importé {#downloading-the-imported-design-package}
 
-Le téléchargement du fichier zip permet d&#39;enregistrer le fichier zip importé avec une landing page spécifique. Les modifications effectuées sur une page ne sont pas ajoutées au fichier zip.
+Le téléchargement du fichier zip permet d&#39;enregistrer le fichier zip importé avec une page de destination spécifique. Les modifications effectuées sur une page ne sont pas ajoutées au fichier zip.
 
-Pour télécharger le module de conception importé, cliquez sur **Télécharger le fichier Zip** dans la barre d’outils de la page d’entrée.
+Pour télécharger le package de conception importé, cliquez sur **Télécharger le fichier compressé** dans la barre d’outils de la page de destination.
 
-### Affichage des informations d’importation {#viewing-import-information}
+### Afficher les informations d’import {#viewing-import-information}
 
-Vous pouvez à tout moment afficher des informations sur la dernière importation en cliquant sur le point d’exclamation bleu en haut de la page d’entrée dans l’interface utilisateur classique.
+Vous pouvez à tout moment afficher des informations sur le dernier import en cliquant sur le point d’exclamation bleu en haut de la page de destination dans l’interface utilisateur classique.
 
 ![chlimage_1-47](assets/chlimage_1-47.png)
 
-Si le module de conception importé présente certains problèmes, par exemple s’il fait référence à des images/scripts qui n’existent pas dans le module, et ainsi de suite, l’importateur de conception affiche ces problèmes sous la forme d’une liste. Pour afficher la liste des problèmes, dans l’interface utilisateur classique, cliquez sur le lien Problèmes dans la barre d’outils de la page d’entrée. Sur l’image suivante, la fenêtre Problèmes d’importation s’affiche lorsque vous cliquez sur **Problèmes**.
+Si le package de conception importé présente certains problèmes, par exemple s’il fait référence à des images/scripts qui n’existent pas dans le package, ou autre, l’importateur de conception affiche ces problèmes sous la forme d’une liste. Pour afficher la liste des problèmes, dans l’interface utilisateur classique, cliquez sur le lien Problèmes dans la barre d’outils de la page de destination. Sur l’image suivante, la fenêtre Problèmes d’importation s’affiche lorsque vous cliquez sur **Problèmes**.
 
 ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
@@ -437,26 +437,26 @@ Lors de l’effacement de la page de destination, vous pouvez supprimer les modi
 >
 >Si vous décidez de supprimer les modifications de contenu, toutes les modifications que vous avez apportées à la page d’entrée importée et toutes les propriétés de page sont perdues lorsque vous cliquez sur **Effacer**.
 
-### Modification et ajout de composants sur une page d’entrée {#modifying-and-adding-components-on-a-landing-page}
+### Modifier et ajouter des composants sur une page de destination {#modifying-and-adding-components-on-a-landing-page}
 
-Pour modifier des composants sur la page d’entrée, double-cliquez dessus pour les ouvrir et les modifier comme vous le feriez pour tout autre composant.
+Pour modifier des composants sur la page de destination, double-cliquez dessus pour les ouvrir et les modifier comme vous le feriez pour tout autre composant.
 
-Pour ajouter des composants sur la page d’entrée, faites-les glisser et déposez-les sur la page d’entrée (depuis le sidekick dans l’interface utilisateur classique ou depuis le volet Composants de l’interface utilisateur optimisée pour les écrans tactiles), puis modifiez-les selon les besoins.
+Pour ajouter des composants sur la page de destination, faites-les glisser et déposez-les sur la page de destination (depuis le sidekick dans l’interface utilisateur classique ou depuis le volet Composants de l’interface utilisateur optimisée pour les écrans tactiles), puis modifiez-les selon les besoins.
 
 >[!NOTE]
 >
->Si un composant de la landing page ne peut pas être modifié, vous devez réimporter le fichier zip après [modification du fichier de HTML.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Cela signifie que pendant l’importation, les parties non modifiables n’ont pas été converties en composants AEM.
+>Si un composant de la page de destination ne peut pas être modifié, vous devez réimporter le fichier zip après [modification du fichier HTML.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Cela signifie que pendant l’import, les parties non modifiables n’ont pas été converties en composants AEM.
 
-### Supprimer une landing page {#deleting-a-landing-page}
+### Supprimer une page de destination {#deleting-a-landing-page}
 
-La suppression d&#39;une landing page est comme la suppression d&#39;une page d&#39;AEM normale.
+La suppression d’une page de destination fonctionne comme la suppression d’une page AEM normale.
 
-La seule exception est que lorsque vous supprimez une landing page pour ordinateur de bureau, elle supprime également la landing page mobile correspondante (si elle est présente), mais pas l’inverse.
+La seule exception est que lorsque vous supprimez une page de destination pour postes de travail, elle supprime également la page de destination pour mobiles correspondante (si elle existe), mais pas l’inverse.
 
-### Publier une landing page {#publishing-a-landing-page}
+### Publier une page de destination {#publishing-a-landing-page}
 
 Vous pouvez publier la page de destination et toutes ses dépendances comme vous publieriez une page normale.
 
 >[!NOTE]
 >
->La publication de la landing page Bureau publie également sa version mobile correspondante (le cas échéant). Mais la publication d’une landing page mobile ne publie pas la version de bureau.
+>La publication de la page de destination pour postes de travail publie également sa version mobile correspondante (le cas échéant). En revanche, la publication d’une page de destination pour mobiles ne publie pas la version pour postes de travail.

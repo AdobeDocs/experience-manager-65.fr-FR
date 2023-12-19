@@ -4,8 +4,8 @@ description: Documentation CMS d’AEM Headless. Commencez ici pour un parcours
 exl-id: f24fb308-daa7-426f-ba45-37a236b5a500
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 89%
+source-wordcount: '1204'
+ht-degree: 91%
 
 ---
 
@@ -54,7 +54,7 @@ Les informations contenues dans ce parcours peuvent être utiles à tous les act
 
 Vous découvrirez de nombreux sujets dans ce parcours. Les articles suivants vous donnent une connaissance fondamentale sur les projets découplés dans AEM et vous proposent des liens vers une documentation technique détaillée.
 
-Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si vous n’avez pas d’interface en AEM, Adobe vous recommande de commencer par le début et de progresser de manière séquentielle.
+Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si le concept de découplage dans AEM est nouveau pour vous, nous vous recommandons de commencer par le début et de progresser de manière chronologique.
 
 | Numéro | Article | Description |
 |---|---|---|
@@ -92,6 +92,6 @@ Ainsi, les parcours sont conçus pour être autonomes. Cependant, plusieurs d’
 * [Parcours d’architecture découplée](/help/journey-headless/architect/overview.md) – Faites vos premiers pas avec cette introduction sur les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager, et découvrez comment modéliser le contenu de votre projet.
 * [Documentation technique d’AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr) – Si vous connaissez déjà bien les technologies AEM et découplées, vous pouvez consulter directement notre documentation technique détaillée.
 
-   * Un [Présentation d’AEM en tant que CMS sans affichage](/help/sites-developing/headless/introduction.md)
+   * Une [présentation d’AEM en tant que CMS découplé](/help/sites-developing/headless/introduction.md)
 
-* La variable [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* Le [portail de développement d’AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)

@@ -1,6 +1,6 @@
 ---
 title: Afficher des informations dans le volet Résumé de la tâche
-description: Dans l’espace de travail AEM Forms, un volet Résumé de la tâche peut être configuré pour résumer la tâche ou afficher toute autre page web.
+description: Dans l’espace de travail AEM Forms, un volet Résumé de la tâche peut être configuré pour résumer la tâche ou afficher toute autre page web.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,23 +9,23 @@ exl-id: 0b3087fe-a3fb-4eac-ad4b-c123526e8195
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
 # Afficher des informations dans le volet Résumé de la tâche {#displaying-information-in-the-task-summary-pane}
 
-Lorsque vous ouvrez une tâche dans l’espace de travail AEM Forms, un volet Résumé de la tâche peut afficher un résumé de la tâche. Ces informations supplémentaires et pertinentes pour une tâche ajoutent de la valeur pour l’utilisateur final de l’espace de travail AEM Forms.
+Lorsque vous ouvrez une tâche dans l’espace de travail AEM Forms, un volet Résumé de la tâche peut afficher un résumé de la tâche. Ces informations supplémentaires et pertinentes pour une tâche ajoutent de la valeur pour l’utilisateur final ou l’utilisatrice finale de l’espace de travail AEM Forms.
 
-L’espace de travail AEM Forms vous permet d’afficher une page web de votre choix dans le volet Résumé de la tâche. Un processus peut être créé pour afficher un volet Résumé de la tâche en utilisant Workbench.
+L’espace de travail AEM Forms permet d’afficher une page web de votre choix dans le volet Résumé de la tâche. Un processus peut être créé pour afficher un volet Résumé de la tâche en utilisant Workbench.
 
-1. Créez un processus Assign Task dans Workbench. Pour plus d’informations sur l’opération Assign Task, voir la rubrique Référence de service dans [Aide de Workbench](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/).
+1. Créez un processus Affecter une tâche dans Workbench. Pour plus d’informations sur l’opération Affecter une tâche, voir la rubrique Référence de service dans l’[Aide de Workbench](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/).
 
    >[!NOTE]
    >
-   >si une URL TaskSummary existe, la vue Résumé de la tâche s’ouvre par défaut au lieu de la vue Formulaire. Dans ce cas, même lorsqu’un utilisateur active l’option &quot;Ouvrir le formulaire en mode agrandi&quot; dans Assign Task, le formulaire ne s’ouvre pas en mode agrandi.
+   >si une URL TaskSummary existe, la vue Résumé de la tâche s’ouvre par défaut au lieu de la vue Formulaire. Dans ce cas, même lorsqu’un utilisateur ou une utilisatrice active l’option « Ouvrir le formulaire en mode agrandi » dans Affecter une tâche, le formulaire ne s’ouvre pas en mode agrandi.
 
-1. Configurez le champ URL du résumé de la tâche. Vous pouvez spécifier une valeur littérale, un modèle, une variable ou une expression XPath.
+1. Configurez le champ URL du résumé de la tâche. Vous pouvez spécifier une valeur littérale, un modèle, une variable ou une expression XPath.
 1. Vous trouverez ci-dessous un exemple d’affichage des informations sur la page Résumé de la tâche.
 
    * Connectez-vous à l’environnement CRXDE Lite à l’adresse `https://'[server]:[port]'/lc/crx/de`.

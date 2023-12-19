@@ -10,7 +10,7 @@ exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '7812'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
@@ -46,29 +46,29 @@ Photoshop CS3 et CS4 ne sont pas pris en charge, car ils ne prennent pas en char
 
 * Adobe FrameMaker® 7.2 et 8 pour convertir le format FM (Windows uniquement).
 * Adobe PageMaker 7.0 pour convertir les formats PMD, PM6, P65 et PM (Windows uniquement).
-* Formats natifs pris en charge par les applications tierces (nécessite le développement de fichiers de configuration spécifiques à l’application) (Windows uniquement)
+* Formats natifs pris en charge par les applications tierces (requiert le développement de fichiers d’installation spécifiques à l’application) (Windows uniquement)
 
-Le service Generate PDF convertit les formats de fichiers standard suivants en PDF.
+Le service Generate PDF peut convertir les formats standards suivants en PDF.
 
-* Formats vidéo : SWF, FLV (Windows uniquement)
-* Formats d’image : JPEG, JPG, JP2, J2Kí, JPC, J2C, GIF, BMP, TIFF, TIF, PNG, JPF
-* HTML (Windows, Sun™ Solaris™ et Linux®)
+* Formats vidéo : SWF, FLV (Windows uniquement)
+* Formats image : JPEG, JPG, JP2, J2Kí, JPC, J2C, GIF, BMP, TIFF, TIF, PNG, JPF
+* HTML (Windows, Sun™, Solaris™ et Linux®).
 
-Le service Generate PDF convertit PDF aux formats de fichier suivants (Windows uniquement) :
+Le service Generate PDF peut convertir des PDF aux formats de fichiers suivants (Windows uniquement) :
 
-* Encapsulated PostScript (EPS)
+* Encapsulated Postscript (EPS)
 * HTML 3.2
-* HTML 4.01 avec CSS 1.0
-* DOC (format Word Microsoft)
+* HTML 4.01 avec CSS 1.0
+* DOC (format Microsoft Word)
 * RTF
-* Texte (accessible et brut)
+* Texte (à la fois accessible et brut)
 * XML
 * PDF/A-1a utilisant uniquement l’espace colorimétrique DeviceRGB.
 * PDF/A-1b utilisant uniquement l’espace colorimétrique DeviceRGB.
 
-Le service Generate PDF requiert que vous effectuiez les tâches administratives suivantes :
+Le service Generate PDF requiert que vous réalisiez ces tâches administratives :
 
-* Installez les applications natives requises sur l’ordinateur hébergeant AEM Forms
+* Installez les applications natives requises sur l’ordinateur hébergeant AEM Forms.
 * Installez Adobe Acrobat Professional ou Acrobat Pro Extended 9.2 sur l’ordinateur hébergeant AEM Forms.
 * Réalisez les tâches consécutives à l’installation.
 
@@ -144,7 +144,7 @@ Convertissez un document Microsoft Word en document PDF à l’aide de l’API G
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR client, tels que adobe-generatepdf-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers JAR du client, tels que adobe-generatepdf-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un client Generate PDF.
 
@@ -158,7 +158,7 @@ Convertissez un document Microsoft Word en document PDF à l’aide de l’API G
 
 1. Convertissez le fichier en document PDF.
 
-   Convertissez le fichier en document PDF en appelant la méthode `GeneratePdfServiceClient` de `createPDF2` et transmission des valeurs suivantes :
+   Convertissez le fichier en document PDF en appelant la méthode `createPDF2` de l’objet `GeneratePdfServiceClient` et en transmettant les valeurs suivantes :
 
    * Un objet `com.adobe.idp.Document` représentant le fichier à convertir.
    * Un objet `java.lang.String` contenant l’extension de fichier.
@@ -174,13 +174,13 @@ Convertissez un document Microsoft Word en document PDF à l’aide de l’API G
 
    Pour obtenir le document PDF, procédez comme suit :
 
-   * Appeler la variable `CreatePDFResult` de `getCreatedDocument` , qui renvoie une `com.adobe.idp.Document` .
-   * Appeler la variable `com.adobe.idp.Document` de `copyToFile` pour extraire le document du PDF à partir de l’objet créé à l’étape précédente.
+   * Appelez la méthode `getCreatedDocument` de l’objet `CreatePDFResult`, qui renvoie un objet `com.adobe.idp.Document`.
+   * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour extraire le document PDF de l’objet créé à l’étape précédente.
 
    Si vous avez utilisé la méthode `createPDF2` pour obtenir le document de journal (qui ne s’applique pas aux conversions HTML), procédez comme suit :
 
-   * Appeler la variable `CreatePDFResult` de `getLogDocument` . Celle-ci renvoie un objet `com.adobe.idp.Document`.
-   * Appeler la variable `com.adobe.idp.Document` de `copyToFile` pour extraire le document journal.
+   * Appelez la méthode `getLogDocument` de l’objet `CreatePDFResult`. Celle-ci renvoie un objet `com.adobe.idp.Document`.
+   * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour extraire le document journal.
 
 **Voir également**
 
@@ -209,7 +209,7 @@ Convertissez un document Microsoft Word en document PDF à l’aide de l’API 
    * Créez un objet `GeneratePDFServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `GeneratePDFServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Toutefois, spécifiez `?blob=mtom`.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `GeneratePDFServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
@@ -221,13 +221,13 @@ Convertissez un document Microsoft Word en document PDF à l’aide de l’API 
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le fichier que vous souhaitez convertir en document PDF.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur de chaîne représentant l’emplacement du fichier à convertir et son mode d’ouverture.
-   * Créez un tableau d’octets stockant le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets stockant le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en affectant à sa propriété `MTOM` le contenu du tableau d’octets.
 
 1. Convertissez le fichier en document PDF.
 
-   Convertissez le fichier en document PDF en appelant la méthode `GeneratePDFServiceService` de `CreatePDF2` et transmission des valeurs suivantes :
+   Convertissez le fichier en document PDF en appelant la méthode `CreatePDF2` de l’objet `GeneratePDFServiceService` et en transmettant les valeurs suivantes :
 
    * Un objet `BLOB` représentant le fichier à convertir.
    * Une chaîne contenant l’extension de fichier.
@@ -241,10 +241,10 @@ Convertissez un document Microsoft Word en document PDF à l’aide de l’API 
 
 1. Récupérez les résultats.
 
-   * Récupérez le document de PDF converti en attribuant la variable `BLOB` de `MTOM` à un tableau d’octets. Le tableau d’octets représente le document PDF converti. Veillez à utiliser l’objet `BLOB` servant de paramètre de sortie pour la méthode `createPDF2`.
+   * Récupérez le document PDF converti en attribuant au champ `MTOM` de l’objet `BLOB` un tableau d’octets. Le tableau d’octets représente le document PDF converti. Veillez à utiliser l’objet `BLOB` servant de paramètre de sortie pour la méthode `createPDF2`.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF converti.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Ecrivez le contenu du tableau d’octets dans un fichier de PDF en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
+   * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**
 
@@ -310,7 +310,7 @@ Pour convertir un document HTML en document PDF à l’aide de l’API Generate�
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR client, tels que adobe-generatepdf-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers JAR du client, tels que adobe-generatepdf-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un client Generate PDF.
 
@@ -322,7 +322,7 @@ Pour convertir un document HTML en document PDF à l’aide de l’API Generate�
 
 1. Convertissez le contenu du fichier HTML en document PDF.
 
-   Appeler la variable `GeneratePdfServiceClient` de `htmlToPDF2` et transmettez les valeurs suivantes :
+   Appelez la méthode `htmlToPDF2` de l’objet `GeneratePdfServiceClient` et transmettez les valeurs suivantes :
 
    * Un objet `java.lang.String` contenant l’URL du fichier HTML à convertir.
    * Un objet `java.lang.String` contenant les paramètres de type de fichier à utiliser lors de la conversion. Les paramètres de type de fichier peuvent inclure des niveaux d’indexation.
@@ -334,8 +334,8 @@ Pour convertir un document HTML en document PDF à l’aide de l’API Generate�
 
    La méthode `htmlToPDF2` renvoie un objet `HtmlToPdfResult` contenant le nouveau document PDF généré. Pour obtenir le document PDF nouvellement créé, procédez comme suit :
 
-   * Appeler la variable `HtmlToPdfResult` de `getCreatedDocument` . Celle-ci renvoie un objet `com.adobe.idp.Document`.
-   * Appeler la variable `com.adobe.idp.Document` de `copyToFile` pour extraire le document du PDF à partir de l’objet créé à l’étape précédente.
+   * Appelez la méthode `getCreatedDocument` de lʼobjet `HtmlToPdfResult`. Celle-ci renvoie un objet `com.adobe.idp.Document`.
+   * Appelez la méthode `copyToFile` de lʼobjet `com.adobe.idp.Document` pour extraire le document PDF de lʼobjet créé à lʼétape précédente.
 
 **Voir également**
 
@@ -366,7 +366,7 @@ Pour convertir le contenu HTML en document PDF à l’aide de l’API Generate 
    * Créez un objet `GeneratePDFServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `GeneratePDFServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Toutefois, spécifiez `?blob=mtom`.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `GeneratePDFServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
@@ -380,7 +380,7 @@ Pour convertir le contenu HTML en document PDF à l’aide de l’API Generate 
 
 1. Convertissez le contenu du fichier HTML en document PDF.
 
-   Convertissez le contenu du HTML en document de PDF en appelant la méthode `GeneratePDFServiceService` de `HtmlToPDF2` et transmettez les valeurs suivantes :
+   Convertissez le contenu HTML en document PDF en appelant la méthode `HtmlToPDF2` de l’objet `GeneratePDFServiceService` et transmettez les valeurs suivantes :
 
    * Une chaîne contenant le contenu HTML à convertir.
    * Un objet `java.lang.String` contenant les paramètres de type de fichier à utiliser lors de la conversion.
@@ -391,10 +391,10 @@ Pour convertir le contenu HTML en document PDF à l’aide de l’API Generate 
 
 1. Récupérez les résultats.
 
-   * Récupérez le document de PDF converti en attribuant la variable `BLOB` de `MTOM` à un tableau d’octets. Le tableau d’octets représente le document PDF converti. Veillez à utiliser l’objet `BLOB` servant de paramètre de sortie pour la méthode `HtmlToPDF2`.
+   * Récupérez le document PDF converti en attribuant au champ `MTOM` de l’objet `BLOB` un tableau d’octets. Le tableau d’octets représente le document PDF converti. Veillez à utiliser l’objet `BLOB` servant de paramètre de sortie pour la méthode `HtmlToPDF2`.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF converti.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Ecrivez le contenu du tableau d’octets dans un fichier de PDF en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
+   * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**
 
@@ -460,7 +460,7 @@ Convertissez un document PDF en fichier RTF à l’aide de l’API Generate PDF 
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR client, tels que adobe-generatepdf-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers JAR du client, tels que adobe-generatepdf-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un client Generate PDF.
 
@@ -473,7 +473,7 @@ Convertissez un document PDF en fichier RTF à l’aide de l’API Generate PDF 
 
 1. Convertissez le document PDF.
 
-   Appeler la variable `GeneratePdfServiceClient` de `exportPDF2` et transmettez les valeurs suivantes :
+   Appelez la méthode `exportPDF2` de l’objet `GeneratePdfServiceClient` et transmettez les valeurs suivantes :
 
    * Objet `com.adobe.idp.Document` représentant le fichier PDF à convertir.
    * Objet `java.lang.String` contenant le nom du fichier à convertir.
@@ -487,8 +487,8 @@ Convertissez un document PDF en fichier RTF à l’aide de l’API Generate PDF 
 
    Pour obtenir le fichier nouvellement créé, procédez comme suit :
 
-   * Appeler la variable `ExportPDFResult` de `getConvertedDocument` . Celle-ci renvoie un objet `com.adobe.idp.Document`.
-   * Appeler la variable `com.adobe.idp.Document` de `copyToFile` pour extraire le nouveau document.
+   * Appelez la méthode `getConvertedDocument` de l’objet `ExportPDFResult`. Celle-ci renvoie un objet `com.adobe.idp.Document`.
+   * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour extraire le nouveau document.
 
 **Voir également**
 
@@ -517,7 +517,7 @@ Convertissez un document PDF en fichier RTF à l’aide de l’API Generate PDF 
    * Créez un objet `GeneratePDFServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `GeneratePDFServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Toutefois, spécifiez `?blob=mtom`.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `GeneratePDFServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
@@ -529,13 +529,13 @@ Convertissez un document PDF en fichier RTF à l’aide de l’API Generate PDF 
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF converti.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en affectant à sa propriété `MTOM` le contenu du tableau d’octets.
 
 1. Convertissez le document PDF.
 
-   Appeler la variable `GeneratePDFServiceServiceWse` de `ExportPDF2` et transmettez les valeurs suivantes :
+   Appelez la méthode `ExportPDF2` de l’objet `GeneratePDFServiceServiceWse` et transmettez les valeurs suivantes :
 
    * Objet `BLOB` représentant le fichier PDF à convertir.
    * Chaîne contenant le nom du chemin d’accès au fichier à convertir.
@@ -546,10 +546,10 @@ Convertissez un document PDF en fichier RTF à l’aide de l’API Generate PDF 
 
 1. Enregistrez le fichier converti.
 
-   * Récupérez le document RTF converti en attribuant la valeur `BLOB` de `MTOM` à un tableau d’octets. Le tableau d’octets représente le document RTF converti. Veillez à utiliser l’objet `BLOB` servant de paramètre de sortie pour la méthode `ExportPDF2`.
+   * Récupérez le document RTF converti en attribuant au champ `MTOM` de l’objet `BLOB` un tableau d’octets. Le tableau d’octets représente le document RTF converti. Veillez à utiliser l’objet `BLOB` servant de paramètre de sortie pour la méthode `ExportPDF2`.
    * Créez un objet `System.IO.FileStream` en utilisant son constructeur. Transmettez une valeur de chaîne représentant l’emplacement du fichier RTF.
    * Créez un objet `System.IO.BinaryWriter` en appelant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Ecrivez le contenu du tableau d’octets dans un fichier RTF en appelant la fonction `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
+   * Écrivez le contenu du tableau d’octets dans un fichier RTF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**
 
@@ -649,7 +649,7 @@ Lorsque cette section et la section suivante décrivent des boîtes de dialogue 
 
 En revanche, si ces éléments sont décrits du point de vue de leur représentation interne, le terme *élément de fenêtre* est utilisé. La représentation interne des éléments de fenêtre est une hiérarchie, où chaque instance d’élément de fenêtre est identifiée par des libellés. L’instance d’élément de fenêtre décrit également ses caractéristiques physiques et son comportement.
 
-Du point de vue de l’utilisateur, les boîtes de dialogue et leurs composants présentent différents comportements, certains éléments de boîte de dialogue étant masqués jusqu’à ce qu’ils soient activés. Du point de vue de la représentation interne, ce problème de comportement nʼexiste pas. Par exemple, la représentation interne d’une boîte de dialogue ressemble à celle des composants qu’elle contient, si ce n’est que les composants sont imbriqués dans la boîte de dialogue.
+Du point de vue de l’utilisateur ou de l’utilisatrice, les boîtes de dialogue et leurs composants présentent différents comportements, certains éléments de boîte de dialogue étant masqués jusqu’à leur activation. Du point de vue de la représentation interne, ce problème de comportement nʼexiste pas. Par exemple, la représentation interne d’une boîte de dialogue ressemble à celle des composants qu’elle contient, si ce n’est que les composants sont imbriqués dans la boîte de dialogue.
 
 Cette section décrit les éléments XML qui fournissent des instructions à AppMon. Ces éléments portent des noms tels que élément `dialog` et élément `window`. Ce document utilise une police à espacement fixe pour distinguer les éléments XML. L’élément `dialog` identifie une boîte de dialogue qu’un fichier de script XML peut faire afficher, intentionnellement ou non. L’élément `window` identifie un élément de fenêtre (boîte de dialogue ou composants d’une boîte de dialogue).
 
@@ -665,13 +665,13 @@ Hiérarchie des fichiers XML de script et de dialogue
 
 Un *fichier XML de script* spécifie une série d’étapes qui demandent à l’application native de naviguer vers certains éléments de fenêtre, puis de fournir des réponses à ces éléments. La plupart des réponses sont du texte ou des frappes de touches qui correspondent à l’entrée quʼun utilisateur fournirait à un champ, une zone de liste ou un bouton dans la boîte de dialogue correspondante.
 
-Le service Generate PDF prend en charge les fichiers XML de script afin de demander à une application native d’imprimer un fichier natif. Cependant, les fichiers XML de script peuvent être utilisés pour accomplir toute tâche qu’un utilisateur peut effectuer lors de l’interaction avec les boîtes de dialogue de l’application native.
+Le service Generate PDF prend en charge les fichiers XML de script afin de permettre à une application native d’imprimer un fichier natif. Cependant, les fichiers XML de script peuvent être utilisés pour accomplir toute tâche qu’un utilisateur ou une utilisatrice peut effectuer lors de l’interaction avec les boîtes de dialogue de l’application native.
 
 Les étapes dʼun fichier XML de script sont exécutées dans lʼordre et chacune dʼentre elles doit obligatoirement être réalisée avant de passer à la suivante. Le seul test conditionnel pris en charge est le délai d’expiration/de nouvelle tentative, qui entraîne l’arrêt d’un script si une étape ne se termine pas correctement dans un délai spécifique et après un certain nombre de tentatives.
 
 Outre le fait que les étapes sont séquentielles, les instructions d’une étape sont également exécutées dans l’ordre. Assurez-vous que les étapes et les instructions correspondent à l’ordre dans lequel un utilisateur effectue les mêmes étapes.
 
-Chaque étape d’un fichier XML de script identifie l’élément de fenêtre qui doit s’afficher si les instructions de l’étape sont correctement exécutées. Si une boîte de dialogue inattendue apparaît lors de l’exécution d’une action de script, le service Generate PDF recherche les fichiers XML de boîte de dialogue, comme décrit dans la section suivante.
+Chaque étape d’un fichier XML de script identifie l’élément de fenêtre qui doit apparaître si les instructions de l’étape sont correctement exécutées. Si une boîte de dialogue inattendue apparaît lors de l’exécution d’une action de script, le service Generate PDF recherche les fichiers XML de boîte de dialogue, comme décrit dans la section suivante.
 
 #### Fichiers XML de boîte de dialogue {#dialog-xml-files}
 
@@ -687,7 +687,7 @@ Lorsque le système ou l’application native affiche une boîte de dialogue qui
 
 Si le service Generate PDF trouve une correspondance pour la boîte de dialogue, il la ferme en lui envoyant la frappe ou toute autre action spécifiée pour la boîte de dialogue. Si les instructions de la boîte de dialogue indiquent un message d’abandon, le service Generate PDF met fin à la tâche en cours d’exécution et génère un message d’erreur. Un tel message d’abandon serait spécifié dans l’élément `abortMessage` de la grammaire XML du script.
 
-Si le service Generate PDF rencontre une boîte de dialogue qui n’est décrite dans aucun des fichiers précédemment répertoriés, le service Generate PDF intègre la légende de la boîte de dialogue dans l’entrée du fichier journal. La tâche en cours d’exécution finit par s’arrêter. Vous pouvez alors utiliser les informations du fichier journal pour composer de nouvelles instructions dans le fichier XML de boîte de dialogue supplémentaire pour l’application native.
+Si le service Generate PDF rencontre une boîte de dialogue qui n’est décrite dans aucun des fichiers répertoriés précédemment, le service Generate PDF intègre la légende de la boîte de dialogue dans l’entrée du fichier journal. La tâche en cours d’exécution finit par s’arrêter. Vous pouvez alors utiliser les informations du fichier journal pour composer de nouvelles instructions dans le fichier XML de boîte de dialogue supplémentaire pour l’application native.
 
 ### Ajouter ou modifier la prise en charge d’un format de fichier natif {#adding-or-modifying-support-for-a-native-file-format}
 
@@ -711,7 +711,7 @@ Si les attributs ne permettent pas d’identifier une légende, vous pouvez iden
 
 Tenez compte de ces problèmes :
 
-* Microsoft Spy++ affiche les sous-titres à l’aide d’une esperluette (&amp;) pour identifier la touche chaude de la légende. Par exemple, Spy++ affiche la légende d’une boîte de dialogue d’impression sous la forme `Pri&nt`, ce qui indique que la touche de raccourci est *n*. Les titres des légendes dans les fichiers XML des scripts et des boîtes de dialogue doivent omettre les esperluettes.
+* Microsoft Spy++ affiche les légendes à l’aide de l’esperluette (&amp;) pour identifier la touche de raccourci de la légende. Par exemple, Spy++ affiche la légende d’une boîte de dialogue d’impression sous la forme `Pri&nt`, ce qui indique que la touche de raccourci est *n*. Les titres des légendes dans les fichiers XML des scripts et des boîtes de dialogue doivent omettre les esperluettes.
 * Certaines légendes comportent des sauts de ligne. Le service Generate PDF ne peut pas identifier les sauts de ligne. Si une légende comprend un saut de ligne, incluez une partie suffisante de la légende pour la différencier des autres éléments du menu, puis utilisez des expressions régulières pour la partie omise. Un exemple est (`^Long caption title$`). (Voir [Utiliser des expressions régulières dans les attributs de légende](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes).)
 * Utilisez des entités de caractères (également appelées séquences d’échappement) pour les caractères XML réservés. Par exemple, utilisez `&` pour les esperluettes, `<` et `>` pour les symboles inférieur à ou supérieur à, `&apos;` pour les apostrophes et `&quot;` pour les guillemets.
 
@@ -878,7 +878,7 @@ Cette procédure explique comment mettre à jour le fichier de configuration du 
 
 >[!NOTE]
 >
-Le nom de l’application est spécifié en tant que valeur de la variable `GenericApp` élément `name` attribut. Cette valeur doit correspondre exactement au nom spécifié dans le script que vous développez pour cette application. De même, la `GenericApp` élément `displayName` doit correspondre exactement à l’attribut du script correspondant. `expectedWindow` légende de la fenêtre. Une telle équivalence est évaluée après résolution de toutes les expressions régulières qui apparaissent dans les attributs `displayName` ou `caption`.
+Le nom de l’application est spécifié comme la valeur de l’attribut `name` de l’élément `GenericApp`. Cette valeur doit correspondre exactement au nom spécifié dans le script que vous développez pour cette application. De même, l’attribut `displayName` de l’élément `GenericApp` doit correspondre exactement à la légende de fenêtre `expectedWindow` du script correspondant. Une telle équivalence est évaluée après résolution de toutes les expressions régulières qui apparaissent dans les attributs `displayName` ou `caption`.
 
 Dans cet exemple, les données de configuration par défaut fournies avec le service Generate PDF ont été modifiées afin de spécifier que le Bloc-notes (et non Microsoft Word) doit être utilisé pour traiter les fichiers portant l’extension .txt. Avant cette modification, Microsoft Word était spécifié comme application native pour le traitement de ces fichiers.
 

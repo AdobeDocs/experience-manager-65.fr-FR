@@ -1,6 +1,6 @@
 ---
 title: Dépannage de Dynamic Media en mode Scene7
-description: Découvrez comment résoudre les problèmes de configuration, de configuration et d’ordre général dans Dynamic Media lorsqu’il s’exécute en mode Scene7.
+description: Découvrez comment résoudre les problèmes d’installation, de configuration et d’ordre général de Dynamic Media lorsqu’il s’exécute en mode Scene7.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -13,17 +13,17 @@ mini-toc-levels: 3
 source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '1393'
-ht-degree: 74%
+ht-degree: 99%
 
 ---
 
 # Dépannage de Dynamic Media en mode Scene7{#troubleshooting-dynamic-media-scene-mode}
 
-Le document suivant décrit la résolution des problèmes liés à l’exécution de Dynamic Media. **dynamicmedia_scene7** mode d’exécution.
+Le document suivant décrit la résolution des problèmes liés à l’exécution de Dynamic Media en mode **dynamicmedia_scene7**.
 
-## Configuration et configuration {#setup-and-configuration}
+## Installation et configuration {#setup-and-configuration}
 
-Vérifiez que Dynamic Media a été configuré correctement en procédant comme suit :
+Vérifiez que Dynamic Media a été installé correctement en procédant comme suit :
 
 * La commande de démarrage contient l’argument de mode d’exécution `-r dynamicmedia_scene7`.
 * Tous les packs de correctifs cumulatifs (CFP) Adobe Experience Manager 6.4 ont été installés *avant* tout pack de fonctionnalités Dynamic Media disponible.
@@ -34,7 +34,7 @@ Vérifiez que Dynamic Media a été configuré correctement en procédant comme 
 * Accédez à l’interface utilisateur des services cloud et vérifiez que le compte fourni s’affiche sous **[!UICONTROL Configurations disponibles]**.
 * Assurez-vous que l’agent de réplication `Dynamic Media Asset Activation (scene7)` est activé.
 
-  Cet agent de réplication se trouve sous Agents sur l’auteur.
+  Cet agent de réplication se trouve sous Agents sur l’instance de création.
 
 ## Général (toutes les ressources) {#general-all-assets}
 
@@ -83,53 +83,53 @@ Si des problèmes surviennent avec les images et les visionneuses, reportez-vous
    <td><strong>Solution</strong></td>
   </tr>
   <tr>
-   <td>Impossible d’accéder au bouton Copier l’URL/Incorporer en mode Détails de la ressource</td>
+   <td>Impossible d’accéder au bouton Copier l’URL/Incorporer dans l’affichage des détails de la ressource</td>
    <td>
     <ol>
-     <li><p>Accédez à CRX/DE :</p>
+     <li><p>Accédez à CRX/DE :</p>
       <ul>
        <li>Vérifiez si le paramètre prédéfini dans le JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> est défini. Cet emplacement s’applique si vous avez effectué la mise à niveau d’Experience Manager 6.x vers la version 6.4 et si vous avez choisi de ne pas utiliser la migration. Dans le cas contraire, l’emplacement est <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
        <li>Vérifiez que la ressource dans le JCR présente <code>dam:scene7FileStatus</code><strong> </strong>sous Métadonnées défini sur <code>PublishComplete</code>.</li>
       </ul> </li>
     </ol> </td>
-   <td><p>Actualisez la page ou accédez à une autre page et revenez sur la page (le code JSP de rail latéral doit être recompilé)</p> <p>Si cela ne fonctionne pas :</p>
+   <td><p>Actualisez la page ou accédez à une autre page et revenez sur la page (le code JSP de rail latéral doit être recompilé)</p> <p>Si cela ne fonctionne pas :</p>
     <ul>
      <li>Publiez la ressource.</li>
      <li>Rechargez la ressource et publiez-la.</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Sélecteur de ressources dans l’éditeur de visionneuse bloqué dans le chargement perpétuel</td>
+   <td>Le sélecteur de ressources dans l’éditeur défini est bloqué dans le chargement perpétuel.</td>
    <td><p>Problème connu à corriger dans la version 6.4</p> </td>
    <td><p>Fermez le sélecteur et rouvrez-le.</p> </td>
   </tr>
   <tr>
-   <td><strong>Sélectionner</strong> n’est pas actif après la sélection d’une ressource dans le cadre de la modification d’une visionneuse</td>
+   <td>Le bouton <strong>Sélectionner</strong> n’est pas actif après la sélection d’une ressource dans le cadre de la modification d’un ensemble.</td>
    <td><p> </p> <p>Problème connu à corriger dans la version 6.4</p> <p> </p> </td>
    <td><p>Sélectionnez un autre dossier dans le sélecteur de ressources et revenez pour sélectionner la ressource.</p> </td>
   </tr>
   <tr>
-   <td>La zone réactive du carrousel se déplace après le basculement entre les diapositives</td>
+   <td>La zone réactive du carrousel se déplace après le basculement entre les diapositives.</td>
    <td><p>Vérifiez que toutes les diapositives ont la même taille.</p> </td>
    <td><p>Utilisez uniquement des images de la même taille pour le carrousel.</p> </td>
   </tr>
   <tr>
-   <td>L’image n’est pas prévisualisée avec la visionneuse Dynamic Media</td>
+   <td>L’image n’est pas prévisualisée avec la visionneuse Dynamic Media.</td>
    <td><p>Vérifiez que la ressource contient <code>dam:scene7File</code> dans les propriétés de métadonnées (CRXDE Lite).</p> </td>
    <td><p>Vérifiez que le traitement de toutes les ressources est terminé.</p> </td>
   </tr>
   <tr>
-   <td>La ressource téléchargée ne s’affiche pas dans le sélecteur de ressources</td>
+   <td>La ressource chargée ne s’affiche pas dans le sélecteur de ressources.</td>
    <td><p>Vérifiez que la ressource présente la propriété <code>jcr:content</code> &gt; <strong><code>dam:assetState</code></strong> = <code>processed</code> (CRXDE Lite)</p> </td>
    <td><p>Vérifiez que le traitement de toutes les ressources est terminé.</p> </td>
   </tr>
   <tr>
-   <td>La bannière en mode Carte affiche <strong>Nouveau</strong> lorsque le traitement de la ressource n’a pas commencé</td>
+   <td>La bannière en mode Carte affiche <strong>Nouveau</strong> lorsque le traitement de la ressource n’a pas commencé.</td>
    <td>Vérifiez que la ressource <code>jcr:content</code> &gt; <code>dam:assetState</code> = if <code>unprocessed</code> n’a pas été sélectionnée par le workflow.</td>
    <td>Attendez que la ressource soit récupérée par le workflow.</td>
   </tr>
   <tr>
-   <td>Les images ou les visionneuses n’affichent pas l’URL de la visionneuse ou le code intégré</td>
+   <td>Les images ou les ensembles n’affichent pas l’URL de la visionneuse ni le code intégré.</td>
    <td>Vérifiez si le paramètre prédéfini de visionneuse a été publié.</td>
    <td><p>Accédez à <strong>Outils</strong> &gt; <strong>Ressources</strong> &gt; <strong>Paramètres prédéfinis de la visionneuse</strong> et publiez le paramètre prédéfini de la visionneuse.</p> </td>
   </tr>
@@ -152,12 +152,12 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
    <td>
     <ul>
      <li>Vérifiez que le dossier est associé à un profil vidéo (dans le cas d’un format de fichier non pris en charge). Si elle n’est pas prise en charge, seule une image s’affiche.</li>
-     <li>Le profil vidéo doit contenir plusieurs paramètres prédéfinis de codage pour générer un ensemble AVS (les codages uniques sont traités comme du contenu vidéo pour les fichiers MP4 ; pour les fichiers non pris en charge, traités de la même manière que les fichiers non traités).</li>
+     <li>Le profil vidéo doit contenir plusieurs paramètres prédéfinis de codage pour générer un ensemble AVS (les codages uniques sont traités comme du contenu vidéo pour les fichiers MP4 ; pour les fichiers non pris en charge, ils sont traités de la même manière que les fichiers non traités).</li>
      <li>Vérifiez que le traitement de la vidéo est terminé en confirmant <code>dam:scene7FileAvs</code> de <code>dam:scene7File</code> dans les métadonnées.</li>
     </ul> </td>
    <td>
     <ol>
-     <li>Affectez un profil vidéo au dossier.</li>
+     <li>Attribuez un profil vidéo au dossier.</li>
      <li>Modifiez le profil vidéo pour inclure plusieurs paramètres prédéfinis de codage.</li>
      <li>Attendez que le traitement de la vidéo soit terminé.</li>
      <li>Avant de recharger la vidéo, assurez-vous que le workflow Vidéo de codage de média dynamique n’est pas en cours d’exécution.<br /> </li>
@@ -169,7 +169,7 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
    <td>
     <ul>
      <li>Vérifiez que le mode d’exécution est <code>dynamicmedia_scene7</code>.</li>
-     <li>Vérifiez si le service cloud Dynamic Media est configuré.</li>
+     <li>Vérifiez que le service cloud Dynamic Media est configuré.</li>
      <li>Vérifiez qu’un profil vidéo est associé au dossier de chargement.</li>
     </ul> </td>
    <td>
@@ -180,8 +180,8 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
     </ol> </td>
   </tr>
   <tr>
-   <td>Le traitement vidéo prend trop de temps</td>
-   <td><p>Pour déterminer si le codage vidéo est toujours en cours ou s’il est à l’état d’échec :</p>
+   <td>Le traitement vidéo prend trop de temps.</td>
+   <td><p>Pour déterminer si le codage vidéo est toujours en cours ou s’il est à l’état d’échec :</p>
     <ul>
      <li>Vérifiez l’état de la vidéo <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
      <li>Surveillez la vidéo via la console de workflow <code>https://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; onglets Instances, Archive, Échecs.</li>
@@ -190,14 +190,14 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
   </tr>
   <tr>
    <td>Rendu vidéo manquant</td>
-   <td><p>Lorsque la vidéo est téléchargée, mais qu’il n’y a aucun rendu codé :</p>
+   <td><p>Lorsque la vidéo est chargée, mais qu’il n’y a aucun rendu codé :</p>
     <ul>
      <li>Vérifiez qu’un profil vidéo est affecté au dossier.</li>
      <li>Vérifiez que le traitement de la vidéo est terminé en confirmant <code>dam:scene7FileAvs</code> dans les métadonnées.</li>
     </ul> </td>
    <td>
     <ol>
-     <li>Affectez un profil vidéo au dossier.</li>
+     <li>Attribuez un profil vidéo au dossier.</li>
      <li>Attendez que le traitement de la vidéo soit terminé.<br /> </li>
     </ol> </td>
   </tr>

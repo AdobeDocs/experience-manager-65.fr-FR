@@ -1,6 +1,6 @@
 ---
 title: Publication de ressources Dynamic Media
-description: Découvrez comment publier des ressources Dynamic Media, telles que des vidéos et des images, y compris la diffusion HTTP/2 de ces ressources.
+description: Découvrez comment publier des ressources Dynamic Media, telles que des vidéos et des images, y compris la diffusion HTTP/2 de ces ressources.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -11,13 +11,13 @@ feature: Publishing
 source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '478'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 # Publication de ressources Dynamic Media {#publishing-dynamic-media-assets}
 
-Vous publiez vos ressources Dynamic Media en sélectionnant celles que vous avez déjà chargées et en appuyant sur **[!UICONTROL Publier]** ou **[!UICONTROL Publication rapide]**. Une fois vos ressources Dynamic Media publiées, vous pouvez les inclure dans une page web au moyen d’une URL ou en incorporant le code sur la page web.
+Vous publiez vos ressources Dynamic Media en sélectionnant celles que vous avez déjà chargées et en appuyant sur **[!UICONTROL Publier]** ou **[!UICONTROL Publication rapide]**. Une fois vos ressources Dynamic Media publiées, vous pouvez les inclure dans une page web au moyen d’une URL ou d’une incorporation de code sur la page.
 
 Vous pouvez également publier immédiatement les ressources que vous chargez, sans intervention de l’utilisateur. Consultez la section [Configuration de Dynamic Media en mode Scene7](config-dms7.md).
 Vous pouvez également publier des ressources de manière sélective sur Dynamic Media exclusivement ou dans Adobe Experience Manager exclusivement, à l’aide d’une **[!UICONTROL Publication sélective]** au niveau des dossiers. Voir [Utilisation de la publication sélective dans Dynamic Media](/help/assets/selective-publishing.md).

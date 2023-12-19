@@ -1,6 +1,6 @@
 ---
 title: Afficher les statistiques relatives à Work Manager
-description: L’onglet Work Manager affiche des statistiques relatives aux éléments de Work Manager. Découvrez comment afficher et filtrer les tâches.
+description: L’onglet Work Manager affiche des statistiques relatives aux éléments de Work Manager. Découvrez comment afficher et filtrer les tâches.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
@@ -9,30 +9,30 @@ exl-id: ce8f7257-bb9a-428d-b816-27b1d1632ee1
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1215'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
 # Afficher les statistiques relatives à Work Manager {#view-statistics-related-to-work-manager}
 
-L’onglet Work Manager affiche des statistiques relatives aux éléments de Work Manager. Ces tâches se trouvent dans différents états en fonction de l’endroit où elles se trouvent dans leur processus. (Voir [État (pour les catégories Par défaut, Workflow ou Événements uniquement)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) Vous pouvez filtrer les informations afin de n’afficher qu’un sous-ensemble des éléments à l’aide des différentes options disponibles (par exemple, État ou Catégorie). Vous pouvez trier les tâches ou les tâches qui en résultent (par ordre croissant ou décroissant) en cliquant sur l’un des en-têtes de colonne. Vous pouvez également gérer les tâches à l’aide des outils d’opération affichés au-dessus de la liste des tâches.
+L’onglet Work Manager affiche des statistiques relatives aux éléments de Work Manager. Ces tâches se trouvent dans différents états, en fonction de l’endroit où elles se trouvent dans leur processus. (Voir [Statut (pour les catégories Par défaut, Workflow ou Événements uniquement)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) Vous pouvez filtrer les informations afin de n’afficher qu’un sous-ensemble des éléments à l’aide des différentes options disponibles (par exemple, Statut ou Catégorie). Vous pouvez trier les tâches ou travaux qui en résultent (par ordre croissant ou décroissant) en cliquant sur l’un des en-têtes de colonne. Vous pouvez également gérer les tâches à l’aide des outils d’opération affichés au-dessus de la liste des tâches.
 
-## Filtrage des éléments de travail {#filter-the-work-items}
+## Filtrage des tâches {#filter-the-work-items}
 
-1. Cliquez sur l’onglet Work Manager.
-1. Sélectionnez les critères d’un ou de plusieurs des filtres décrits ci-dessous, puis cliquez sur Aller.
+1. Cliquez sur l’onglet Work Manager.
+1. Choisissez des critères pour un ou plusieurs des filtres suivants, tels que décrits ci-dessous, puis cliquez sur Atteindre.
 
 ### Catégorie {#category}
 
 **Par défaut :** toutes les tâches auxquelles le client n’a pas affecté de catégorie lors de leur envoi. Ces tâches étant gérées par Work Manager, les états lui appartiennent.
 
-**Gestionnaire de tâches :** toutes les tâches appartenant au gestionnaire de tâches. Job Manager gère ses propres tâches et dispose de ses propres états de tâches. Reportez-vous aux états spécifiques des tâches décrits ci-dessous.
+**Gestionnaire de tâches :** toutes les tâches appartenant au gestionnaire de tâches. Job Manager gère ses propres tâches et dispose de ses propres statuts de tâches. Reportez-vous aux statuts spécifiques des tâches décrits ci-dessous.
 
 **Workflow :** toutes les tâches appartenant à l’exécution de workflow. Workflow ne gère pas ses propres tâches, mais s’appuie sur Work Manager ; les états appartiennent donc à ce dernier.
 
-**Événements :** toutes les tâches appartenant à Gestion des événements. La gestion des événements ne gère pas ses propres tâches, mais s’appuie sur Work Manager. Par conséquent, les états appartiennent à Work Manager.
+**Événements :** toutes les tâches appartenant à Gestion des événements. La Gestion des événements ne gère pas ses propres tâches, mais s’appuie sur Work Manager. Les statuts appartiennent donc à ce dernier.
 
-### État (pour les catégories Par défaut, Workflow ou Événements uniquement) {#status-for-default-workflow-or-events-categories-only}
+### Statut (pour les catégories Par défaut, Workflow ou Événements uniquement) {#status-for-default-workflow-or-events-categories-only}
 
 **Tout afficher :** affiche toutes les tâches actuelles.
 
@@ -42,9 +42,9 @@ L’onglet Work Manager affiche des statistiques relatives aux éléments de Wor
 
 **En cours :** affiche toutes les tâches que le Work Manager du serveur d’applications a sélectionnées et qui seront menées à bien ou échoueront. Vous ne pouvez pas utiliser d’opérations sur ces tâches.
 
-**Terminé :** affiche toutes les tâches exécutées avec succès. Les tâches persistantes restent dans cet état et les tâches non persistantes sont supprimées une fois les rappels vers les gestionnaires de rappel terminés. Vous pouvez supprimer ces éléments à l’aide de l’opération Supprimer les éléments . (voir Gestion des tâches). 
+**Terminé :** affiche toutes les tâches exécutées avec succès. Les tâches persistantes restent dans cet état et les tâches non persistantes sont supprimées une fois les rappels vers les gestionnaires de rappel terminés. Vous pouvez supprimer ces éléments à l’aide de l’opération Supprimer les éléments. (voir Gestion des tâches). 
 
-**Échec :** affiche toutes les tâches n’ayant pas été exécutées avec succès en raison d’une erreur. Ces tâches peuvent être relancées à plusieurs reprises en utilisant l’opération Essayer de relancer les éléments (voir Gestion des tâches). Un lien Echec dans la colonne Etat permet d&#39;accéder aux détails de l&#39;échec.
+**Échec :** affiche toutes les tâches n’ayant pas été exécutées avec succès en raison d’une erreur. Ces tâches peuvent être relancées à plusieurs reprises en utilisant l’opération Essayer de relancer les éléments (voir Gestion des tâches). Un lien Échec dans la colonne Statut vous permet d’accéder à des informations détaillées relatives à l’échec.
 
 **Inconnu :** affiche toutes les tâches dont l’état est inconnu.
 
@@ -56,7 +56,7 @@ L’onglet Work Manager affiche des statistiques relatives aux éléments de Wor
 
 **Échec de la demande :** affiche les tâches pour lesquelles une demande d’échec a été effectuée.
 
-**Échec :** affiche les tâches n’ayant pas été exécutées avec succès en raison d’une erreur. Un lien Echec dans la colonne Etat permet d&#39;accéder aux détails de l&#39;échec.
+**Échec :** affiche les tâches n’ayant pas été exécutées avec succès en raison d’une erreur. Un lien Échec dans la colonne Statut vous permet d’accéder à des informations détaillées relatives à l’échec.
 
 **Interruption demandée :** affiche les tâches pour lesquelles une demande d’interruption a été effectuée.
 
@@ -74,27 +74,27 @@ L’onglet Work Manager affiche des statistiques relatives aux éléments de Wor
 
 ### Nom du serveur {#server-name}
 
-Pour les serveurs en grappe uniquement, sélectionnez le nom du noeud pour afficher les tâches ou les tâches qui ont été créées sur ce serveur uniquement. Si l’option Tout afficher est sélectionnée, toutes les tâches de tous les noeuds d’une grappe sont affichées.
+Pour les serveurs organisés en grappes uniquement, sélectionnez le nom du nœud pour afficher les tâches ayant été créées sur ce serveur uniquement. Si Tout afficher est sélectionné, toutes les tâches de tous les nœuds d’un cluster sont affichées.
 
 ### Heure de création {#create-time}
 
-Sélectionnez une option dans ce filtre pour n’afficher que les tâches qui ont été créées pendant la période sélectionnée. Par exemple, si vous sélectionnez 1 jour , toutes les tâches qui ont été créées dans les 24 heures précédant l’heure définie dans le filtre Avant.
+Choisissez une option de ce filtre pour afficher uniquement les tâches ayant été créées dans la période sélectionnée. Par exemple, sélectionner 1 jour permet d’afficher toutes les tâches ayant été créées dans les 24 heures précédant l’heure définie dans le champ Avant.
 
 ### Avant {#prior-to}
 
-Définit la date et l’heure utilisées par le filtre Heure de création comme date de fin. Conservez l’option Utiliser la date et l’heure actuelles sélectionnée pour filtrer à partir de la date et de l’heure actuelles, ou désélectionnez l’option et saisissez les valeurs appropriées. Cliquez sur les icônes de calendrier ou d’horloge pour sélectionner des valeurs à l’aide de ces outils.
+Définit la date et l’heure utilisées par le filtre Heure de création en tant que date de fin. Conservez l’option Utiliser la date et l’heure actuelles sélectionnée pour filtrer à partir de la date et de l’heure actuelles, ou désélectionnez-la et entrez les valeurs appropriées. Cliquez sur les icônes de calendrier ou celles d’horloge pour sélectionner les valeurs en utilisant ces outils.
 
-Par exemple, la sélection de l’option Heure de création = 1 jour et Avant = Utiliser la date et l’heure actuelles renvoie toutes les tâches créées au cours des dernières 24 heures.
+Par exemple, sélectionner Heure de création = 1 jour et Avant = Utiliser la date et l’heure actuelles renvoie toutes les tâches ayant été créées au cours des dernières 24 heures.
 
 >[!NOTE]
 >
->Sur les déploiements de base de données Oracle, les filtres de période (c’est-à-dire les paramètres Heure de création et Avant) ne fonctionnent pas correctement. Utilisez un autre filtre pour récupérer les tâches.
+>sur les déploiements de bases de données Oracle, les filtres de période (à savoir les paramètres Heures de création et Avant) ne sont pas précis. Utilisez un autre filtre pour récupérer les tâches.
 
-## A propos de l’interface de l’onglet Work Manager {#about-the-work-manager-tab-interface}
+## À propos de l’interface à onglets de Work Manager {#about-the-work-manager-tab-interface}
 
-Lorsque vous exécutez une requête Work Manager ou effectuez une opération sur une tâche, un message s’affiche au-dessus de la liste. Ce message fournit des commentaires sur l’action que vous avez lancée et, dans certains cas, un lien Plus d’informations pour fournir des détails. Par exemple, si l’opération que vous avez lancée a échoué, le message indique autant et fournit un lien pour obtenir des détails sur l’erreur.
+Lorsque vous exécutez une requête Work Manager ou effectuez une opération sur une tâche, un message s’affiche au-dessus de la liste. Ce message fournit des commentaires sur l’action que vous avez lancée et, parfois, un lien Plus d’infos qui fournit des informations détaillées. Par exemple, si l’opération que vous avez lancée échoue, le message l’indique et fournit un lien vous permettant d’obtenir des informations détaillées sur l’erreur.
 
-Lorsque vous cliquez sur Plus d’informations, la boîte de dialogue Détails de l’opération affiche la liste des tâches qui ont été sélectionnées au cours de l’opération. Vous pouvez cliquer sur chaque élément de la liste pour afficher les détails de l’erreur au bas de la boîte de dialogue.
+Lorsque vous cliquez sur Plus d’infos, la boîte de dialogue Détails de l’opération affiche une liste des tâches ayant été sélectionnées au cours de l’opération. Vous pouvez cliquer sur chaque élément de la liste pour afficher les Détails de l’erreur en bas de la boîte de dialogue.
 
 ### Gestion des tâches {#manage-the-work-items-or-jobs}
 
@@ -102,9 +102,9 @@ Lorsque vous cliquez sur Plus d’informations, la boîte de dialogue Détails d
 
    >[!NOTE]
    >
-   >Les opérations sont disponibles en fonction de l’état de l’élément.
+   >Les opérations disponibles dépendent du statut de l’élément.
 
-   **Supprimer des éléments :** Supprime la tâche sélectionnée.
+   **Supprimer les éléments :** supprime la tâche sélectionnée.
 
    **Interrompre les éléments :** interrompt la tâche sélectionnée.
 
@@ -112,14 +112,14 @@ Lorsque vous cliquez sur Plus d’informations, la boîte de dialogue Détails d
 
    **Essayer de relancer les éléments :** essaie de relancer la tâche sélectionnée depuis son état actuel.
 
-   Vous pouvez vérifier si une opération a réussi en cliquant sur Plus d’informations au-dessus de la liste. Une boîte de dialogue contenant les tâches sélectionnées et leur état s’affiche.
+   Vous pouvez vérifier la bonne réussite d’une opération en cliquant sur Plus d’infos au-dessus de la liste. Une boîte de dialogue contenant les tâches sélectionnées ainsi que leur statut s’affiche.
 
-## Informations supplémentaires sur les états des éléments de travail {#additional-information-about-work-item-statuses}
+## Informations supplémentaires sur les statuts des tâches {#additional-information-about-work-item-statuses}
 
-Une transition d’état standard pour une tâche est Nouveau > Planifié > En cours > Terminé ou Échec.
+Une transition d’état typique pour une tâche se présente comme suit : Nouveau > Programmé > En cours > Terminé ou Échec.
 
-L’état En pause interrompt ce flux normal. L’application cliente ou l’administrateur système peuvent lancer cette interruption (par exemple, pour la maintenance ou la mise à niveau). Vous pouvez inverser cette action en utilisant l’opération Reprendre pour remettre l’élément de travail à l’état Planifié.
+Le statut En pause interrompt ce flux normal. L’application cliente ou l’administrateur ou l’administratrice système peut initier cette interruption (par exemple, à des fins de maintenance ou de mise à niveau). Vous pouvez annuler cette action en utilisant l’opération Relancer pour que la tâche retourne à un état Programmé.
 
-Un élément de travail à l’état Planifié est mis en file d’attente pour exécution qui n’a pas encore commencé. Ces éléments peuvent être suspendus ou supprimés, ou passeront à l’état En cours lorsque Work Manager les sortira de la file d’attente. Les éléments de travail en cours ne peuvent pas être modifiés. Ils seront terminés ou échoueront.
+Une tâche à l’état Programmé est mise en file d’attente pour être exécutée, l’exécution n’ayant pas encore commencé. Ces éléments peuvent être mis en pause ou supprimés, ou passeront à l’état En cours lorsque Work Manager les récupérera de la file d’attente. Les tâches en cours ne peuvent pas être modifiées. Elles se terminent ou échouent.
 
-L’état Échec se produit à la suite d’une condition d’erreur qui se produit lors de l’exécution de l’élément de travail. Si vous pensez que les erreurs sont circonstancielles (en raison du contexte au moment de l’exécution), vous pouvez relancer l’exécution, remettant l’élément de travail dans la file d’attente. Seul un nombre limité de reprises est autorisé.
+L’état Échec se produit à la suite d’une condition d’erreur qui survient au cours de l’exécution de la tâche. Si vous pensez que les erreurs sont circonstanciées (qu’elles dépendent du contexte au moment de l’exécution), vous pouvez relancer l’exécution et ainsi remettre la tâche en file d’attente. Seul un nombre limité de relances est autorisé.

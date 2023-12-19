@@ -10,7 +10,7 @@ exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 81%
+ht-degree: 84%
 
 ---
 
@@ -48,7 +48,7 @@ Par exemple, si vous comparez des versions, la version actuelle est affichée à
 
 La source des deux pages s’affiche clairement dans la barre d’en-tête située en haut de la fenêtre du navigateur.
 
-![Source affichée en-tête](assets/chlimage_1-109.png)
+![Source affichée dans l&#39;en-tête](assets/chlimage_1-109.png)
 
 L’outil de comparaison détecte les modifications effectuées sur les composants et le code HTML. Les éléments qui ont été modifiés sont mis en surbrillance avec des couleurs différentes.
 

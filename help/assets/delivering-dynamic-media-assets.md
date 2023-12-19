@@ -12,7 +12,7 @@ feature: Asset Management,Renditions
 source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '323'
-ht-degree: 80%
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ Avec Dynamic Media, vous disposez de plusieurs options :
 * Si votre site web est hébergé sur Adobe Experience Manager, vous souhaiterez ajouter les ressources Dynamic Media directement à votre page.
 * Si votre site web n’est pas hébergé par Experience Manager, les possibilités suivantes s’offrent à vous :
 
-   * Incorporation de votre vidéo ou image sur votre site web.
+   * Incorporation de votre vidéo ou image sur votre site Web.
    * Liez des URL à votre application web. Utilisez la liaison lorsque vous souhaitez présenter un lecteur vidéo dans une fenêtre pop-up ou modale.
    * Si votre site est réactif, vous pouvez [diffuser des images optimisées](/help/assets/responsive-site.md).
 

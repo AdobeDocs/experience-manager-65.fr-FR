@@ -7,7 +7,7 @@ exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '824'
-ht-degree: 80%
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ Lorsque le proxy est une instance distincte d’[!DNL Experience Manager], il co
 
 ## Proxy (Accès HTTP) {#proxy-http-access}
 
-Un proxy est disponible via le servlet HTTP lorsqu’il est configuré pour accepter des tâches de traitement à l’adresse : `/libs/dam/cloud/proxy`. Ce servlet crée une tâche sling à partir des paramètres publiés. Il est ensuite ajouté à la file d’attente des tâches de proxy et connecté au worker de proxy approprié.
+Un proxy est disponible via le servlet HTTP lorsqu’il est configuré pour accepter des tâches de traitement à l’adresse : `/libs/dam/cloud/proxy`. Ce servlet crée une tâche sling à partir des paramètres publiés. Il est ensuite ajouté à la file d’attente des tâches de proxy et connecté au secondaire de proxy approprié.
 
 ### Opérations prises en charge {#supported-operations}
 
@@ -75,9 +75,9 @@ Un programme de travail par proxy est un processeur chargé de gérer une tâche
 
 >[!NOTE]
 >
->Le programme de travail doit implémenter [sling JobProcessor](https://sling.apache.org/site/eventing-and-jobs.html) à être reconnu en tant que worker de proxy.
+>Le secondaire doit implémenter [sling JobProcessor](https://sling.apache.org/site/eventing-and-jobs.html) pour être reconnu en tant que secondaire de proxy.
 
-### API client {#client-api}
+### API cliente {#client-api}
 
 [`JobService`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) est disponible en tant que service OSGi qui prévoit des méthodes pour créer des tâches, supprimer des tâches et obtenir des résultats de ces tâches. La mise en œuvre par défaut de ce service (`JobServiceImpl`) utilise le client HTTP pour communiquer avec le servlet de proxy à distance.
 
@@ -142,17 +142,17 @@ Pour configurer votre propre programme de travail de proxy personnalisé, vous d
 
 * Configurer et mettre en œuvre (à l’aide des événements Sling) :
 
-   * une rubrique de tâche personnalisée ;
-   * un gestionnaire d’événement de tâche personnalisé
+   * une rubrique de tâche personnalisée ;
+   * un gestionnaire d’événements personnalisé
 
-* Utilisez ensuite l’API JobService pour :
+* Utilisez ensuite l’API JobService pour :
 
    * distribuer votre tâche personnalisée au proxy ;
    * gérer votre tâche
 
-* Si vous souhaitez utiliser le proxy d’un workflow, vous devez mettre en oeuvre une étape externe personnalisée à l’aide de l’API WorkflowExternalProcess et de l’API JobService.
+* Si vous souhaitez utiliser le proxy d’un workflow, vous devez mettre en œuvre une étape externe personnalisée à l’aide de l’API WorkflowExternalProcess et de l’API JobService.
 
-Le diagramme et les étapes suivants décrivent la marche à suivre :
+Le diagramme et les étapes suivants décrivent la marche à suivre :
 
 ![chlimage_1-249](assets/chlimage_1-249.png)
 
@@ -174,7 +174,7 @@ Le diagramme et les étapes suivants décrivent la marche à suivre :
 
    Par exemple, consultez `IDSJobProcessor.java` pour le programme de travail de proxy IDS.
 
-1. Utilisez `ProxyUtil.java` dans dam-commons. Vous pouvez ainsi distribuer des tâches aux programmes de travail à l’aide du proxy dam.
+1. Utilisez `ProxyUtil.java` dans dam-commons. Cela vous permet de distribuer des tâches à des programmes de travail à l’aide du proxy de gestion des ressources numériques.
 
 >[!NOTE]
 >
@@ -184,6 +184,6 @@ Le diagramme et les étapes suivants décrivent la marche à suivre :
 
 >[!NOTE]
 >
->Synchronisation des résultats :
+>Synchronisation des résultats :
 >
->Avec n instances utilisant le même proxy, le résultat du traitement reste avec le proxy. Il revient au client (auteur Experience Manager) de demander le résultat à l’aide du même identifiant de tâche unique qui lui a été donné lors de la création de la tâche. Le proxy fait son travail et conserve le résultat disponible sur demande.
+>Avec n instances utilisant le même proxy, le résultat du traitement reste avec le proxy. Il revient au client (auteur Experience Manager) de demander le résultat à l’aide du même identifiant de tâche unique qui lui a été donné lors de la création de la tâche. Le proxy fait son travail et conserve le résultat disponible sur demande.

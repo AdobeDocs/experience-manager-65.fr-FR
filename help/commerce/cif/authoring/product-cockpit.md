@@ -1,11 +1,11 @@
 ---
 title: Console du produit
-description: Utiliser le cockpit de produits qui offre une vue d’ensemble unifiée des catalogues de produits liés et du contenu associé.
+description: Utilisation de Product Cockpit qui offre une vue d’ensemble unifiée des catalogues de produits liés et du contenu associé.
 exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -33,7 +33,7 @@ L’activation des fonctionnalités de catalogue intermédiaire nécessite une a
 
 ## Ouvrir le cockpit de produits {#opening-product-cockpit}
 
-Le moyen le plus simple d’accéder au Cockpit de produit est d’utiliser le menu &quot;Commerce&quot; dans AEM menu principal. Il est également possible d’utiliser l’omni-recherche (pour rechercher Commerce) ou d’ouvrir `https://<yourAEMInstance>/commerce.html`.
+Le moyen le plus simple d’accéder au cockpit de produits est via le menu « Commerce » dans le menu principal d’AEM. Il est également possible d’utiliser l’omni-recherche (pour rechercher Commerce) ou d’ouvrir `https://<yourAEMInstance>/commerce.html`.
 
 ![Menu AEM](/help/commerce/cif/assets/aem-menu.png)
 

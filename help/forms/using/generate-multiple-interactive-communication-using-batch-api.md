@@ -10,7 +10,7 @@ exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
 source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '2136'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -171,7 +171,7 @@ Vous combinez des données (enregistrements) enregistrées dans une source de do
 
 ## Appeler l’API par lot à l’aide de requêtes REST
 
-Vous pouvez appeler [l’API par lot](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/index.html) par le biais de requêtes REST (Representational State Transfer). Il vous permet de fournir un point de terminaison REST à d’autres utilisateurs pour accéder à l’API et configurer vos propres méthodes de traitement, de stockage et de personnalisation de la communication interactive. Vous pouvez développer votre propre servlet Java personnalisé pour déployer l’API sur votre instance AEM.
+Vous pouvez appeler [l’API par lot](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/index.html) par le biais de requêtes REST (Representational State Transfer). Cela vous permet de fournir un point d’entrée REST aux autres utilisateurs et utilisatrices pour accéder à l’API et de configurer vos propres méthodes de traitement, de stockage et de personnalisation de la communication interactive. Vous pouvez développer votre propre servlet Java personnalisé pour déployer l’API sur votre instance AEM.
 
 Avant de déployer le servlet Java, vérifiez que vous disposez d’une communication interactive et que les fichiers de données correspondants sont prêts. Effectuez les étapes suivantes pour créer et déployer le servlet Java :
 

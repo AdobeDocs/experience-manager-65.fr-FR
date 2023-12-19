@@ -9,7 +9,7 @@ exl-id: 6debb1a7-7889-4fdd-87c7-ecb87cc0b1f5
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 75%
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 75%
 
 Vous pouvez personnaliser les mouvements de l’application AEM Forms pour interagir différemment avec l’application. Par exemple, vous pouvez ajouter de nouveaux mouvements pour ouvrir/fermer une tâche ou un point de départ.
 
-## Personnalisation des mouvements dans l’application AEM Forms {#to-customize-gestures-in-aem-forms-app}
+## Pour personnaliser les mouvements dans l’application AEM Forms {#to-customize-gestures-in-aem-forms-app}
 
 Dans l’application AEM Forms, un glissement vers la gauche permet d’ouvrir une nouvelle tâche ou un nouveau point de départ, tandis qu’un glissement vers la droite n’active aucune commande. L’exemple suivant indique la procédure d’ouverture d’une nouvelle tâche ou d’un nouveau point de départ via un glissement vers la droite dans l’application AEM Forms.
 
@@ -43,7 +43,7 @@ Dans l’application AEM Forms, un glissement vers la gauche permet d’ouvrir u
 
    `"EventName Selector": "Function"`
 
-   Lorsque vous déclenchez un événement JavaScript nommé `EventName`sur un élément de HTML spécifié par `Selector`, la variable `Function`est appelée.
+   Lorsque vous déclenchez un événement Javascript appelé `EventName` sur un élément HTML spécifié par `Selector`, la fonction `Function` est appelée.
 
 1. Rechercher
 
@@ -66,6 +66,6 @@ Dans l’application AEM Forms, un glissement vers la gauche permet d’ouvrir u
      &quot;swipe .last_empty_div&quot; : &quot;onTaskClick&quot;,
 
 1. Enregistrez et fermez le fichier `task.js`.
-1. Créez et exécutez l’application AEM Forms. Vous pouvez désormais ouvrir un à l’aide d’un glissement vers la gauche et vers la droite.
+1. Créez et exécutez l’application AEM Forms. Vous pouvez désormais ouvrir une tâche en faisant glisser votre doigt vers la gauche et la droite.
 
 De même, vous pouvez apporter des modifications dans les autres vues pour différentes combinaisons de mouvements, d’éléments HTML et de fonctions.

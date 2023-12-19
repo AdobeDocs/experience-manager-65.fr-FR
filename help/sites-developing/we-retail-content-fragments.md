@@ -8,16 +8,16 @@ topic-tags: best-practices
 exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
 source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 67%
+source-wordcount: '400'
+ht-degree: 96%
 
 ---
 
 # Test des fragments de contenu dans We.Retail{#trying-out-content-fragments-in-we-retail}
 
-Les fragments de contenu vous permettent de créer du contenu neutre pour les canaux, ainsi que des variantes (éventuellement spécifiques aux canaux). **We.Retail** (comme disponible dans une instance prête à l’emploi de Adobe Experience Manager) fournit le fragment **Le surf arctique à Lofoten** comme exemple de base. Cela illustre que :
+Les fragments de contenu vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). **We.Retail** (disponible en tant qu’instance prête à l’emploi d’Adobe Experience Manager) fournit le fragment **Arctic Surfing in Lofoten** comme exemple de base. Il illustre que :
 
-* Les fragments de contenu Adobe Experience Manager (AEM) sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments/content-fragments.md). Ils vous permettent de créer du contenu neutre pour les canaux, ainsi que des variantes (éventuellement spécifiques aux canaux).
+* Les fragments de contenu Adobe Experience Manager (AEM) sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments/content-fragments.md). Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux).
 
    * Consultez la section [Emplacement des ressources de Fragment de contenu dans We.Retail](#where-to-find-content-fragments-in-we-retail).
 
@@ -25,7 +25,7 @@ Les fragments de contenu vous permettent de créer du contenu neutre pour les ca
 
    * Consultez la section [Où les fragments de contenu sont-ils utilisés dans We.Retail](#where-content-fragments-are-used-in-we-retail).
 
-Pour obtenir la documentation complète sur la création, la gestion, l’utilisation et le développement de fragments de contenu :
+Pour consulter la documentation complète traitant de la création, de la gestion, de l’utilisation et du développement de fragments de contenu :
 
 * Consultez la section [Informations supplémentaires](#further-information).
 
@@ -33,7 +33,7 @@ Pour obtenir la documentation complète sur la création, la gestion, l’utilis
 >
 >Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-authoring/experience-fragments.md)** représentent deux fonctions distinctes d’AEM :
 >
->* **Fragments de contenu** sont du contenu éditorial, principalement du texte et des images associées. Il s’agit de contenu pur, sans conception ni mise en page.
+>* Les **fragments de contenu** représentent du contenu éditorial, principalement du texte et des images associées. Il s’agit de contenu pur, sans conception ni mise en page.
 >* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
 >
 >Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
@@ -44,7 +44,7 @@ We.Retail comprend plusieurs échantillons de fragments de contenu ; accédez �
 
 Vous y trouverez notamment **Arctic Surfing in Lofoten**, un fragment avec des ressources visuelles associées :
 
-* Navigation par le biais de **Ressources**, **Fichiers**, **We.Retail**, **Anglais**, **Expériences**, **Le surf arctique à Lofoten**:
+* Naviguez par le biais de **Ressources**, **Fichiers**, **We.Retail**, **Anglais**, **Expériences**, **Arctic Surfing in Lofoten** :
 
    * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
 
@@ -54,7 +54,7 @@ Vous pouvez sélectionner et modifier le fragment **Arctic Surfing in Lofoten**�
 
 * [http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
 
-Ici, vous pouvez [modification et gestion](/help/assets/content-fragments/content-fragments.md) votre fragment à l’aide des onglets (panneau de gauche) :
+Ici, vous pouvez [modifier et gérer](/help/assets/content-fragments/content-fragments.md) votre fragment à l’aide des onglets (panneau de gauche) :
 
 <!--![cf-45-aa](do-not-localize/cf-45-aa.png) ![cf-45-a](do-not-localize/cf-45-a.png) ASSET does not exist-->
 
@@ -64,9 +64,9 @@ Ici, vous pouvez [modification et gestion](/help/assets/content-fragments/conten
 
 ![cf-46](assets/cf-46.png)
 
-## Emplacement d’utilisation des fragments de contenu dans We.Retail {#where-content-fragments-are-used-in-we-retail}
+## Où les fragments de contenu sont utilisés dans We.Retail {#where-content-fragments-are-used-in-we-retail}
 
-Illustration [création de page avec un fragment de contenu](/help/sites-authoring/content-fragments.md) plusieurs exemples de pages sont proposés sous, par exemple :
+Pour illustrer la [création de page avec un fragment de contenu](/help/sites-authoring/content-fragments.md), plusieurs exemples de pages sont proposés, par exemple :
 
 * [http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience](http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience)
 
@@ -80,11 +80,11 @@ Le fragment de contenu **Arctic Surfing in Lofoten**, par exemple, est référen
 
 ## Informations supplémentaires {#further-information}
 
-Pour plus d’informations, voir :
+Pour plus d’informations, consultez :
 
 * [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md)
 
-   * Découvrez comment créer, modifier et gérer vos ressources de fragment de contenu.
+   * Découvrez comment créer, modifier et gérer vos ressources Fragment de contenu.
 
 * [Création de page à partir de fragments de contenu](/help/sites-authoring/content-fragments.md)
 

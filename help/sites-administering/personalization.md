@@ -8,20 +8,20 @@ content-type: reference
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
 source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 60%
+source-wordcount: '1697'
+ht-degree: 92%
 
 ---
 
 # Personnalisation {#personalization}
 
-## Qu’est-ce que la personnalisation ? {#what-is-personalization}
+## Qu’est-ce que la personnalisation ? {#what-is-personalization}
 
 Le volume de contenu disponible sur Internet, sur les sites extranet ou sur les sites intranet ne cesse d’augmenter.
 
-La personnalisation consiste à fournir à l’utilisateur un environnement sur mesure affichant du contenu dynamique sélectionné selon ses besoins spécifiques, que ce soit sur la base de profils prédéfinis, de la sélection d’utilisateurs ou du comportement interactif de l’utilisateur.
+La personnalisation consiste à fournir à l’utilisateur ou l’utilisatrice un environnement sur mesure affichant du contenu dynamique sélectionné selon ses besoins spécifiques, que ce soit sur la base de profils prédéfinis, de la sélection d’utilisateurs et d’utilisatrices ou du comportement interactif de l’utilisateur ou l’utilisatrice.
 
-La personnalisation comporte trois éléments principaux :
+La personnalisation comporte trois éléments principaux :
 
 ### Utilisateurs {#users}
 
@@ -48,9 +48,9 @@ La personnalisation peut être soit :
 
 #### Implicite {#implicit}
 
-* Règles basées sur : les chefs d’entreprise définissent des règles spécifiques pour les actions en fonction de profils et/ou de comportements spécifiques.
-* Filtrage simple : les sélections se font sur la base de profils prédéfinis au niveau de l&#39;utilisateur et/ou du groupe.
-* Filtrage collaboratif ou sur recommandation : le comportement de l’utilisateur est enregistré selon des règles prédéfinies. Ces règles sont basées sur le comportement observé chez des personnes ayant des centres d’intérêt similaires. Les informations collectées sont utilisées pour personnaliser les informations affichées pour l&#39;utilisateur, notamment sous la forme de recommandations.
+* Basée sur les règles : les responsables d’entreprise définissent des règles spécifiques pour les actions en fonction de profils et/ou de comportements spécifiques.
+* Filtrage simple : les sélections se font sur la base de profils prédéfinis au niveau de l’utilisateur ou l’utilisatrice et/ou du groupe.
+* Filtrage collaboratif ou sur recommandation : le comportement de l’utilisateur est enregistré selon des règles prédéfinies. Ces règles sont basées sur le comportement observé chez des personnes ayant des centres d’intérêt similaires. Les informations collectées sont utilisées pour personnaliser les informations affichées pour l’utilisateur ou l’utilisatrice, notamment sous la forme de recommandations.
 
 ## Comment et quand la personnalisation peut-elle être utilisée ? {#how-and-when-can-personalization-be-used}
 
@@ -64,8 +64,8 @@ La personnalisation peut être utilisée dans de nombreuses situations :
 ### Des groupes d’utilisateurs spécifiques, restreints et ciblés - En extranet {#extranets}
 
 * Les utilisateurs ont besoin d’une connexion pour l’autorisation. Celle-ci est liée à un profil qui fournit les informations nécessaires à la personnalisation ; des détails tels que leur emplacement, leur relation avec le produit, l’historique d’utilisation, les responsabilités budgétaires, etc.
-* Ces instances peuvent s’étendre sur plusieurs sites, tels que :
-* Des entreprises qui fournissent des sites web à une partie hautement spécialisée de leur marché, par exemple, une société pharmaceutique qui fournit un site web spécialisé pour les médecins.
+* Ces instances peuvent s’étendre sur plusieurs sites, tels que :
+* Des entreprises qui fournissent des sites web à une partie hautement spécialisée de leur marché, par exemple, une entreprise pharmaceutique qui fournit un site web spécialisé pour les médecins.
 * Les entreprises qui fournissent des sites web permettant à leurs clients de consulter les informations de compte et de facturation actuelles ; par exemple, les opérateurs téléphoniques.
 
 ### Sur des sites web de vente et de distribution {#sales-site}
@@ -80,13 +80,13 @@ La personnalisation peut être utilisée dans de nombreuses situations :
 
 Voici quelques raisons de recourir à la personnalisation :
 
-* Un utilisateur peut découvrir un site web confortable et ciblé.
+* Un utilisateur ou une utilisatrice peut découvrir un site web agréable et ciblé.
 * La personnalisation peut être utilisée pour propager automatiquement l’accès à la dernière version du contenu.
-* Les fonctions de collaboration sociale permettent aux utilisateurs de communiquer entre eux, car elles peuvent être identifiées par leurs profils.
-* L’utilisateur reçoit le contenu dont il a besoin pour accomplir une tâche spécifique. Sur l’intranet de l’entreprise, cela peut fournir un outil précieux pour la diffusion de l’information.
-* Un utilisateur peut recevoir le contenu dont il a besoin, ce qui réduit le temps nécessaire pour effectuer des opérations de recherche.
-* Le fournisseur de contenu peut diriger le contenu à afficher selon des catégories spécifiques d’utilisateurs.
-* Des règles peuvent être définies pour fournir le contenu en fonction de combinaisons associant à la fois les caractéristiques et le comportement de l’utilisateur. Cela fournit un mécanisme sophistiqué pour personnaliser leur expérience web.
+* Les fonctionnalités de Social Collaboration permettent aux utilisateurs et utilisatrices de communiquer entre eux, car elles peuvent être identifiées par leurs profils.
+* L’utilisateur reçoit le contenu dont il a besoin pour accomplir une tâche spécifique. Dans le cadre de l’intranet d’une entreprise,il peut s’agir d’un outil précieux de diffusion de l’information.
+* L’utilisateur ou l’utilisatrice peut recevoir le contenu dont il ou elle a besoin, ce qui réduit le temps nécessaire pour effectuer des opérations de recherche.
+* Le fournisseur de contenu peut diriger le contenu à afficher selon des catégories spécifiques d’utilisateurs et utilisatrices.
+* Des règles peuvent être définies pour fournir le contenu en fonction de combinaisons associant à la fois les caractéristiques et le comportement de l’utilisateur. Cela fournit un mécanisme sophistiqué pour personnaliser leur expérience sur le web.
 
 Lorsque vous utilisez la personnalisation, tenez compte des aspects suivants :
 
@@ -109,30 +109,30 @@ Lorsque vous utilisez la personnalisation, tenez compte des aspects suivants :
 
 #### La précision des règles {#accuracy}
 
-* La personnalisation réalisée en suivant le comportement de l’utilisateur ou en définissant des règles basées sur le profil de l’utilisateur doit être précise et logique.
-* Il n’y a rien de plus frustrant pour l’utilisateur que de se voir imposer ou refuser du contenu en raison de la logique inexacte d’une règle.
+* La personnalisation réalisée en suivant le comportement de l’utilisateur ou l’utilisatrice, ou en définissant des règles basées sur le profil de l’utilisateur ou l’utilisatrice doit être précise et logique.
+* Il n’y a rien de plus frustrant pour l’utilisateur ou l’utilisatrice que de se voir imposer ou refuser du contenu en raison de la logique inexacte d’une règle.
 * Par conséquent, les règles doivent être pensées avec soin, en ayant d’abord à l’esprit les besoins de l’utilisateur. Cela peut nécessiter beaucoup d’efforts et ne doit pas être sous-estimé ; la définition des règles de fonctionnement l’emporte souvent sur l’effort technique lors de la mise en oeuvre de la personnalisation.
 
 #### Le moment où l’utiliser {#when-to-use}
 
-* Comme un grand nombre de fonctionnalités sur le web, la personnalisation doit être utilisée avec prudence. Son utilisation profitera-t-elle vraiment à l’utilisateur ? Cette question doit toujours être la première question posée. Mais on peut aussi se demander si l’objectif recherché peut être atteint à moindre effort par une autre méthode. La personnalisation peut courir le risque d’être une fonctionnalité que les utilisateurs ne configurent qu’une seule fois (pour voir comment elle fonctionne), dans la mesure où elle ne leur offre aucun avantage réel.
+* Comme un grand nombre de fonctionnalités sur le web, la personnalisation doit être utilisée avec prudence. Son utilisation profitera-t-elle vraiment à l’utilisateur ou l’utilisatrice ? Cette question doit toujours être la première question posée. Mais on peut aussi se demander si l’objectif recherché peut être atteint à moindre effort par une autre méthode. La personnalisation peut courir le risque d’être une fonctionnalité que les utilisateurs ne configurent qu’une seule fois (pour voir comment elle fonctionne), dans la mesure où elle ne leur offre aucun avantage réel.
 * La personnalisation n’a de sens que si le contenu affiché est dynamique et dépend d’une certaine manière de l’utilisateur. Si tous les utilisateurs voient le même contenu, la personnalisation est redondante.
 
 #### La confidentialité {#confidentiality}
 
-* De nombreux utilisateurs sont soucieux de la protection et de la sécurité des données, En particulier concernant les données récupérées lors du tracking de leur comportement lors de la navigation sur la toile.
+* De nombreux utilisateurs sont soucieux de la protection et de la sécurité des données, En particulier concernant les données récupérées lors du suivi de leur comportement lors de la navigation sur le web.
 
 ## Personnalisation et accès {#personalization-and-access}
 
-La personnalisation doit être prise en compte séparément du contrôle d’accès, mais elle est liée.
+La personnalisation doit être considérée séparément du contrôle d&#39;accès, mais ils sont interdépendants.
 
-La personnalisation ne crée en elle-même aucune forme de contrôle d’accès. Il s’agit simplement d’une méthode permettant de piloter ce que l’utilisateur voit ; elle ne limite pas l’accès de l’utilisateur à un autre contenu et, comme pour tout contenu, les contrôles d’accès appropriés doivent être déjà attribués.
+La personnalisation ne crée en elle-même aucune forme de contrôle d’accès. Il s’agit simplement d’une méthode permettant de piloter ce que l’utilisateur ou l’utilsatrice voit. Elle ne limite pas l’accès de l’utilisateur ou l’utilisatrice à un autre contenu et, comme pour tout contenu, les contrôles d’accès appropriés doivent être déjà attribués.
 
-Toutefois, le contrôle d’accès peut être utilisé pour créer une forme de personnalisation. Si vous autorisez ou refusez à un utilisateur l’accès au contenu, cela affecte inévitablement le choix du contenu qu’il a disponible, personnalisant ainsi son expérience web.
+Toutefois, le contrôle d’accès peut être utilisé pour créer une forme de personnalisation. Si vous autorisez ou refusez à un utilisateur ou une utilisatrice l’accès au contenu, cela affecte inévitablement le choix du contenu dont il ou elle dispose, personnalisant ainsi son expérience web.
 
 ## Composants disponibles pour la personnalisation {#components-available-for-personalization}
 
-Divers composants sont fournis avec AEM en vue de la personnalisation. Certains permettent aux utilisateurs de se connecter et de modifier leurs profils, d’autres (comme Mes gadgets) permettent aux utilisateurs de configurer une page spécifique :
+Divers composants sont fournis avec AEM en vue de la personnalisation. Certains permettent aux utilisateurs et utilisatrices de se connecter et de modifier leurs profils, d’autres (comme Mes gadgets) leur permettent de configurer une page spécifique :
 
 | Titre dans le sidekick | Objectif |
 |---|---|
@@ -141,17 +141,17 @@ Divers composants sont fournis avec AEM en vue de la personnalisation. Certains 
 | Champ d’adresse de formulaire | Un champ complexe permettant la saisie d’une adresse internationale. |
 | Début de formulaire | Commence une définition de formulaire. |
 | Captcha de formulaire | Champ constitué d’un mot alphanumérique qui s’actualise automatiquement. Le composant captcha protège les sites web contre les robots. |
-| Groupe de cases à cocher de formulaire | Plusieurs éléments organisés en une liste et précédés de cases à cocher. Les utilisateurs peuvent cocher plusieurs cases. |
+| Groupe de cases à cocher de formulaire | Plusieurs éléments organisés en une liste et précédés de cases à cocher. Les utilisateurs et utilisatrices peuvent cocher plusieurs cases. |
 | Liste déroulante de formulaire | Plusieurs éléments organisés dans une liste déroulante. Le commutateur Plusieurs sélections possibles spécifie si plusieurs éléments peuvent être sélectionnés depuis la liste. |
 | Fin de formulaire | Termine la définition du formulaire. |
 | Chargement du fichier de formulaire | Un élément de chargement qui permet à l’utilisateur de charger un fichier sur le serveur. |
-| Champ masqué de formulaire | Ce champ ne s’affiche pas pour l’utilisateur. Il peut être utilisé pour transférer une valeur vers le client et revenir au serveur. Ce champ ne doit pas avoir de contraintes. |
+| Champ masqué de formulaire | Ce champ ne s’affiche pas pour l’utilisateur ou l’utilisatrice. Il peut être utilisé pour transférer une valeur vers le client et revenir au serveur. Ce champ ne doit pas avoir de contraintes. |
 | Bouton Image de formulaire | Un bouton d’envoi supplémentaire pour le formulaire qui est rendu en une image. |
 | Champ de mot de passe de formulaire | Similaire au champ de texte mais seule une ligne est autorisée et la saisie de texte par l’utilisateur n’est pas visible dans le champ. |
-| Groupe de cases d’option de formulaire | Plusieurs éléments organisés en une liste précédés d’un bouton radio. Les utilisateurs ne doivent sélectionner qu’un seul bouton radio. |
+| Groupe de cases d’option de formulaire | Plusieurs éléments organisés en une liste précédés d’un bouton radio. Les utilisateurs et utilisatrices ne doivent sélectionner qu’un seul bouton radio. |
 | Bouton Envoyer de formulaire | Un bouton d’envoi supplémentaire pour le formulaire avec le titre affiché comme texte sur le bouton. |
 | Champ de texte de formulaire | Champ de texte qui permet aux utilisateurs de saisir des informations. |
-| Mes gadgets | Vous permet d’inclure l’une des sélections de gadgets disponibles. |
+| Mes gadgets | Permet d’inclure l’une des sélections de gadgets disponibles. |
 | Photo de l’avatar du profil | Permet le chargement d’une photo d’avatar. |
 | Nom détaillé du profil | Saisie des détails du nom, y compris des éléments tels que le titre, le deuxième nom et le suffixe si nécessaire. |
 | Nom d’affichage du profil | Nom à afficher. |
@@ -160,7 +160,7 @@ Divers composants sont fournis avec AEM en vue de la personnalisation. Certains 
 | Numéro de téléphone principal du profil | Permet la saisie d’un numéro de téléphone. |
 | Principale URL du profil | Permet la saisie d’une URL. |
 | Propriété du texte général du profil | Propriétés du profil. |
-| Connexion | Vous permet d’envoyer un nom d’utilisateur et un mot de passe lors de la connexion. |
+| Connexion | Permet d’envoyer un nom d’utilisateur et un mot de passe lors de la connexion. |
 | Déconnexion | Indique l’utilisateur est actuellement connecté et fournit un lien pour se déconnecter. |
 | Nuage de balises | Un nuage de balises pour représenter graphiquement une sélection de balises dans votre site web. |
 | Teaser | Un élément de contenu (habituellement une image) affiché sur une page principale pour « inciter » les utilisateurs à accéder au contenu sous-jacent. |

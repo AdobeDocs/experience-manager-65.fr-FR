@@ -7,8 +7,8 @@ content-type: reference
 exl-id: bdfeaf85-e832-40c1-8769-7d027cdb021e
 source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 66%
+source-wordcount: '704'
+ht-degree: 68%
 
 ---
 
@@ -153,7 +153,7 @@ En utilisant cet onglet vous pouvez :
 
 ## Composants {#components}
 
-La variable **Composants** vous permet d’activer et/ou de désactiver les différents composants. Il est accessible par les éléments suivants :
+L’onglet **Composants** vous permet d’activer et de désactiver divers composants. Il est accessible par les éléments suivants :
 
 * Le menu déroulant :
 

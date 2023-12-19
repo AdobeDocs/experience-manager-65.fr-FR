@@ -9,15 +9,15 @@ exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '467'
-ht-degree: 23%
+ht-degree: 82%
 
 ---
 
 # Test des modèles modifiables dans We.Retail{#trying-out-editable-templates-in-we-retail}
 
-Avec les modèles modifiables, la création et la gestion des modèles ne sont plus une tâche réservée aux développeurs. Un type d’utilisateur avancé, appelé auteur de modèles, peut désormais créer des modèles. L’équipe de développement doit encore configurer l’environnement, créer des bibliothèques clientes et créer les composants à utiliser. Cependant, une fois ces bases en place, l’auteur de modèles peut créer et configurer des modèles sans projet de développement.
+Grâce aux modèles modifiables, la création et la maintenance de modèles ne sont plus des tâches réservées à l’équipe de développement. Un type d’utilisateur ou d’utilisatrice avancé, appelé auteur ou autrice de modèles, peut également créer des modèles. L’équipe de développement doit encore configurer l’environnement, créer des bibliothèques clientes et créer les composants à utiliser. Cependant, une fois ces bases en place, l’auteur de modèles peut créer et configurer des modèles sans projet de développement.
 
-Toutes les pages de We.Retail sont basées sur des modèles modifiables, ce qui permet aux non-développeurs d’adapter et de personnaliser les modèles.
+Toutes les pages de We.Retail sont basées sur des modèles modifiables, ce qui permet aux personnes non développeuses d’adapter et de personnaliser les modèles.
 
 ## Essayer de le faire {#trying-it-out}
 
@@ -25,7 +25,7 @@ Toutes les pages de We.Retail sont basées sur des modèles modifiables, ce qui 
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
-1. Le sélecteur de mode ne propose plus de mode Conception. Toutes les pages de We.Retail sont basées sur des modèles modifiables et pour modifier la conception de modèles modifiables, elles doivent être modifiées dans l’éditeur de modèles.
+1. Le sélecteur de mode ne propose plus de mode Conception. Toutes les pages de We.Retail sont basées sur des modèles modifiables et la conception de modèles modifiables doit être modifiée dans l’éditeur de modèles.
 1. Dans le menu **Informations sur la page**, sélectionnez **Éditer le modèle**.
 1. Vous êtes en train de modifier le modèle Page principale.
 
@@ -33,39 +33,39 @@ Toutes les pages de We.Retail sont basées sur des modèles modifiables, ce qui 
 
    ![chlimage_1-138](assets/chlimage_1-138.png)
 
-1. Configurez les stratégies du conteneur de mises en page pour définir les composants autorisés dans le conteneur.
+1. Configurez les politiques du conteneur de dispositions pour définir les composants autorisés dans le conteneur.
 
-   Les stratégies sont l’équivalent des configurations de conception.
+   Les politiques sont l’équivalent des configurations de conception.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 
-1. Dans la boîte de dialogue de conception du conteneur de mises en page, vous pouvez :
+1. Dans la boîte de dialogue de conception du conteneur de dispositions, vous pouvez :
 
    * Sélectionner une stratégie existante ou créer une stratégie pour le conteneur
    * Sélectionner les composants autorisés dans le conteneur
-   * Définition des composants par défaut à placer lorsqu’une ressource est glissée sur le conteneur
+   * Définir les composants par défaut à placer lorsque vous faites glisser une ressource dans le conteneur
 
    ![chlimage_1-140](assets/chlimage_1-140.png)
 
-1. De retour dans l’éditeur de modèles, vous pouvez modifier la stratégie du composant de texte dans le conteneur de mises en page.
+1. De retour dans l’éditeur de modèles, vous pouvez modifier la politique du composant de texte dans le conteneur de dispositions.
 
-   Vous pouvez ainsi :
+   Vous pouvez ainsi :
 
    * Sélectionner une stratégie existante ou créer une stratégie pour le conteneur
-   * Définissez les fonctionnalités disponibles pour l’auteur de page lors de l’utilisation de ce composant, telles que
+   * Définir les fonctionnalités disponibles pour l’auteur ou l’autrice de la page lors de l’utilisation de ce composant, telles que :
 
       * Sources de collage autorisées
       * Options de mise en forme
       * Styles de paragraphe autorisés
       * Caractères spéciaux autorisés
 
-   De nombreux composants basés sur les composants principaux permettent de configurer des options au niveau du composant par le biais de modèles modifiables, ce qui évite aux développeurs de devoir les personnaliser.
+   De nombreux composants basés sur les composants principaux permettent de configurer des options au niveau du composant par le biais de modèles modifiables, ce qui évite aux développeurs et développeuses de devoir les personnaliser.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. De retour dans l’éditeur de modèles, vous pouvez utiliser le sélecteur de mode pour passer à **Contenu initial** pour définir le contenu requis sur la page.
+1. De retour dans l’éditeur de modèles, vous pouvez utiliser le sélecteur de modes pour passer en mode **Contenu initial** et définir le contenu requis sur la page.
 
-   **Disposition** Le mode peut être utilisé tel quel sur une page normale pour définir la mise en page du modèle.
+   Le mode **Disposition** peut être utilisé tel quel sur une page normale pour définir la disposition du modèle.
 
 ## Informations supplémentaires {#more-information}
 

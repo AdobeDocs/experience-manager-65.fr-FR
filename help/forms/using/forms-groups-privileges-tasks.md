@@ -10,8 +10,8 @@ role: Admin
 exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
 source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 33%
+source-wordcount: '289'
+ht-degree: 56%
 
 ---
 
@@ -36,9 +36,9 @@ Après avoir installé la variable [Package de module complémentaire AEM Forms]
    <td>forms-users <sup>[1]</sup></td> 
    <td>
     <ul> 
-     <li>Créer, prévisualiser, publier et envoyer des formulaires adaptatifs</li> 
+     <li>Créer, prévisualiser, publier et soumettre des formulaires adaptatifs</li> 
      <li>Créer, prévisualiser et publier des communications interactives et des fragments de document</li> 
-     <li>Chargement de ressources vers une instance AEM</li> 
+     <li>Charger les ressources vers une instance AEM</li> 
      <li>Créer des thèmes</li> 
     </ul> </td> 
   </tr>
@@ -46,10 +46,10 @@ Après avoir installé la variable [Package de module complémentaire AEM Forms]
    <td>forms-power-users</td> 
    <td>
     <ul> 
-     <li>Créer, prévisualiser, publier et envoyer des formulaires adaptatifs</li> 
+     <li>Créer, prévisualiser, publier et soumettre des formulaires adaptatifs</li> 
      <li>Créer, prévisualiser et publier des communications interactives et des fragments de document</li> 
      <li>Création de scripts pour les formulaires adaptatifs à l’aide d’un éditeur de code</li> 
-     <li>Chargement de ressources, y compris de scripts</li> 
+     <li>Charger des ressources, y compris des scripts</li> 
      <li>Créer des thèmes</li> 
      <li>Importer des packages contenant des données XDP</li> 
     </ul> </td> 
@@ -58,7 +58,7 @@ Après avoir installé la variable [Package de module complémentaire AEM Forms]
    <td>forms-submission-reviewers</td> 
    <td>
     <ul> 
-     <li>Vérifier les envois</li> 
+     <li>Examiner les envois</li> 
      <li>Approuver ou refuser des envois</li> 
     </ul> </td> 
   </tr>
@@ -80,14 +80,14 @@ Après avoir installé la variable [Package de module complémentaire AEM Forms]
    <td>cm-agent-users</td> 
    <td>
     <ul> 
-     <li>Accès aux lettres ou aux communications interactives de Correspondence Management à l’aide de l’interface utilisateur de l’agent</li> 
+     <li>Accéder aux lettres ou aux communications interactives de Correspondence Management à l’aide de l’interface utilisateur de l’agent</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td><p>workflow-editors</p> </td> 
    <td>
     <ul> 
-     <li>Création d’une application de boîte de réception</li> 
+     <li>Créer une application de boîte de réception</li> 
      <li>Créer un modèle de processus</li> 
     </ul> </td> 
   </tr>
@@ -96,7 +96,7 @@ Après avoir installé la variable [Package de module complémentaire AEM Forms]
    <td>
     <ul> 
      <li>Utilisation des applications de boîte de réception AEM<br /> <strong>Remarque : </strong>Pour accéder à l’interface utilisateur de l’agent de communication interactive dans AEM boîte de réception, vous devez disposer de cm-agent-users et d’affectations de groupe workflow-users .</li> 
-     <li>Gestion des instances de workflow</li> 
+     <li>Gérer les instances de workflow</li> 
     </ul> </td> 
   </tr>
   <tr>

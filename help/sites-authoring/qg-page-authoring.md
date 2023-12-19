@@ -10,7 +10,7 @@ exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1540'
-ht-degree: 72%
+ht-degree: 83%
 
 ---
 
@@ -36,17 +36,17 @@ Avant de vous donner un aperçu des détails, voici quelques conseils et astuces
 
 * **Créer**
 
-   * Ce bouton est disponible dans de nombreuses consoles. Les options présentées sont contextuelles et peuvent varier en fonction du scénario.
+   * Ce bouton est disponible sur de nombreuses consoles ; les options présentées sont contextuelles et peuvent varier en fonction du scénario.
 
 * Réorganisation des pages dans un dossier
 
-   * Cette action s’effectue dans l’[Affichage en liste](/help/sites-authoring/basic-handling.md#list-view). Les modifications sont appliquées et visibles dans d’autres vues.
+   * Vous pouvez le faire dans [Affichage en liste](/help/sites-authoring/basic-handling.md#list-view). Les modifications sont appliquées et visibles dans d’autres affichages.
 
 #### Création de pages {#page-authoring}
 
 * Liens de navigation
 
-   * ***Les liens ne sont pas disponibles pour la navigation*** lorsque vous êtes en mode d’**édition**. Pour naviguer avec des liens, vous devez [prévisualiser la page ;](/help/sites-authoring/editing-content.md#previewing-pages) à l’aide de :
+   * ***Les liens ne sont pas disponibles pour la navigation*** lorsque vous êtes en mode d’**édition**. Pour naviguer avec des liens, vous devez [prévisualiser la page](/help/sites-authoring/editing-content.md#previewing-pages) en utilisant soit :
 
       * [Mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode)
       * [Afficher comme publié(e)](/help/sites-authoring/editing-content.md#view-as-published)
@@ -55,7 +55,7 @@ Avant de vous donner un aperçu des détails, voici quelques conseils et astuces
 
 >[!NOTE]
 >
->Plusieurs raccourcis clavier peuvent faciliter la création.
+>Il existe plusieurs raccourcis clavier qui peuvent faciliter l’expérience de création.
 >
 >* [Raccourcis clavier lors de la modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
@@ -71,7 +71,7 @@ Il existe plusieurs moyens de rechercher une page. Vous pouvez soit naviguer, so
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
-1. Remontez dans l’arborescence à l’aide de [chemin de navigation dans l’en-tête](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs), qui permet de revenir à l’emplacement sélectionné :
+1. Remontez dans l’arborescence à l’aide du [chemin de navigation de l’en-tête](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs) pour revenir à l’emplacement sélectionné :
 
    ![qgtap-01](assets/qgtap-01.png)
 
@@ -81,14 +81,14 @@ Il existe plusieurs moyens de rechercher une page. Vous pouvez soit naviguer, so
 
 ### Création d’une page {#creating-a-new-page}
 
-À [création d’une page](/help/sites-authoring/managing-pages.md#creating-a-new-page):
+Pour [créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page) :
 
-1. [Accédez à l’emplacement](#finding-your-page) où vous souhaitez créer la page.
+1. [Accédez à l’emplacement](#finding-your-page) où créer la page.
 1. Utilisez l’icône **Créer** puis sélectionnez **Page** dans la liste :
 
    ![qgtap-02](assets/qgtap-02.png)
 
-1. L’assistant s’ouvre, qui vous guidera tout au long de la collecte des informations nécessaires lorsque [création d’une page](/help/sites-authoring/managing-pages.md#creating-a-new-page). Suivez les instructions affichées à l’écran.
+1. Un assistant s’ouvre, qui vous aidera à collecter les informations nécessaires pour la [création de votre nouvelle page](/help/sites-authoring/managing-pages.md#creating-a-new-page). Suivez les instructions à l’écran.
 
 ### Sélection de la page pour d’autres actions {#selecting-your-page-for-further-action}
 
@@ -140,7 +140,7 @@ Les [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions) son
    * [Actions rapides (mode Carte/Bureau uniquement)](#quick-actions-card-view-desktop-only) pour la ressource appropriée.
    * La barre d’outils [une fois la page sélectionnée](#selectiingyourpageforfurtheraction).
 
-1. Lorsque l’éditeur s’ouvre, vous pouvez :
+1. Lorsque l’éditeur s’ouvre, vous pouvez :
 
    * [Ajouter un nouveau composant à votre page](/help/sites-authoring/editing-content.md#inserting-a-component) en procédant comme suit :
 
@@ -195,7 +195,7 @@ Les [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions) son
 
    >[!NOTE]
    >
-   >Pour naviguer à l’aide de liens dans le contenu, vous devez utiliser [Mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode).
+   >Pour naviguer en suivant les liens figurant dans le contenu, vous devez utiliser le [mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode).
 
 ### Modification des propriétés de page {#editing-the-page-properties}
 
@@ -263,11 +263,11 @@ Ces actions peuvent toutes être déclenchées en suivant ces étapes :
 
    * Copier :
 
-      * Accédez au nouvel emplacement et collez-le.
+      * Accédez au nouvel emplacement, puis collez.
 
    * Déplacer :
 
-      * L’assistant s’ouvre pour collecter les informations nécessaires au déplacement de la page. Suivez les instructions affichées à l’écran.
+      * L’assistant s’ouvre pour collecter les informations nécessaires au déplacement de la page. Suivez les instructions s’affichant à l’écran.
 
    * Supprimer :
 
@@ -291,7 +291,7 @@ Par exemple, l’icône de verrouillage se présente comme suit :
 
 ### Accès aux références de page {#accessing-page-references}
 
-[Accès rapide aux références](/help/sites-authoring/author-environment-tools.md#references) sur une page ou à partir d’une page sont disponibles dans le rail de références.
+Un [accès rapide aux références](/help/sites-authoring/author-environment-tools.md#references) depuis et vers une page est possible dans le rail de références.
 
 1. Sélectionnez les **Références** à l’aide de l’icône de la barre d’outils (avant ou après la [sélection d’une page](#selecting-your-page-for-further-action)) :
 

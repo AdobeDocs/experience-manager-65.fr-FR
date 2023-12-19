@@ -1,6 +1,6 @@
 ---
 title: Utilisation de bibliothèques côté client
-description: AEM fournit des dossiers de bibliothèque côté client, grâce auxquels vous pouvez stocker votre code côté client dans le référentiel, l’organiser en catégories et définir quand et comment chaque catégorie de code doit être diffusée au client.
+description: AEM fournit des dossiers de bibliothèques côté client qui vous permettent de stocker le code côté client dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
 source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2853'
-ht-degree: 85%
+source-wordcount: '2791'
+ht-degree: 97%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 85%
 
 Les sites web modernes reposent largement sur un traitement côté client piloté par un code JavaScript et CSS complexe. Organiser et optimiser la diffusion de ce code est une opération qui peut se révéler complexe.
 
-Pour résoudre ce problème, AEM fournit **Dossiers de bibliothèques côté client**, qui vous permet de stocker votre code côté client dans le référentiel, de l’organiser en catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page Web finale pour charger le code correct.
+Pour résoudre ce problème, AEM fournit des **dossiers de bibliothèques côté client** qui permettent de stocker le code côté client dans le référentiel, de le classer par catégorie et de définir quand et comment chaque catégorie de code doit être diffusée au client. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page Web finale pour charger le code correct.
 
-## Fonctionnement des bibliothèques côté client dans AEM {#how-client-side-libraries-work-in-aem}
+## Fonctionnement des bibliothèques côté client dans AEM {#how-client-side-libraries-work-in-aem}
 
 La méthode d’insertion standard d’une bibliothèque côté client (c’est-à-dire, un fichier JS ou CSS) dans le code HTML consiste simplement à inclure une balise `<script>` ou `<link>` dans le JSP de cette page, qui contient le chemin d’accès au fichier en question. Par exemple,
 
@@ -34,7 +34,7 @@ La méthode d’insertion standard d’une bibliothèque côté client (c’est-
 ...
 ```
 
-Bien que cette approche fonctionne en AEM, elle peut entraîner des problèmes lorsque les pages et leurs composants constitutifs deviennent complexes. Dans ce cas, il existe le risque que plusieurs copies de la même bibliothèque JS soient incluses dans la sortie finale du HTML. Pour éviter cela et permettre une organisation logique des bibliothèques côté client AEM les utilisateurs **dossiers de bibliothèques côté client**.
+Bien que cette approche fonctionne dans AEM, elle peut entraîner des problèmes lorsque les pages et leurs composants constitutifs deviennent complexes. Dans ce cas, il existe le risque que plusieurs copies de la même bibliothèque JS soient incluses dans la sortie finale du HTML. Pour éviter cela et permettre une organisation logique des bibliothèques côté client, AEM utilise des **dossiers de bibliothèques côté client**.
 
 Un dossier de bibliothèques côté client est un nœud de référentiel de type `cq:ClientLibraryFolder`. Sa définition au [format CND](https://jackrabbit.apache.org/node-type-notation.html) est :
 
@@ -59,7 +59,7 @@ Chaque dossier `cq:ClientLibraryFolder` est rempli avec un jeu de fichiers JS et
 
 ## Référencement des bibliothèques côté client {#referencing-client-side-libraries}
 
-Comme HTL est la technologie privilégiée pour le développement de sites AEM, HTL doit être utilisé pour inclure des bibliothèques côté client dans AEM. Cependant, il est également possible de le faire à l’aide de JSP.
+Comme HTL est la technologie privilégiée pour le développement de sites AEM, elle doit être utilisée pour inclure des bibliothèques côté client dans AEM. Cependant, il est également possible de le faire à l’aide de JSP.
 
 ### Utilisation de HTL {#using-htl}
 
@@ -82,23 +82,23 @@ Ajoutez une balise `ui:includeClientLib` à votre code JSP pour ajouter un lien 
 <ui:includeClientLib categories="<%= categories %>" />
 ```
 
-Par exemple, le nœud `/etc/clientlibs/foundation/jquery` est de type `cq:ClientLibraryFolder` avec une propriété Catégories dont la valeur est `cq.jquery`. Le code suivant d’un fichier JSP fait référence aux bibliothèques :
+Par exemple, le nœud `/etc/clientlibs/foundation/jquery` est de type `cq:ClientLibraryFolder` avec une propriété Catégories dont la valeur est `cq.jquery`. Le code suivant d’un fichier JSP fait référence aux bibliothèques :
 
 ```xml
 <ui:includeClientLib categories="cq.jquery"/>
 ```
 
-La page de HTML générée contient le code suivant :
+La page HTML générée contient le code suivant :
 
 ```xml
 <script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
 ```
 
-Pour obtenir des informations complètes, y compris des attributs pour le filtrage des bibliothèques JS, CSS ou de thème, voir [ui:includeClientLib](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
+Pour obtenir des informations complètes, y compris des attributs pour le filtrage des bibliothèques JS, CSS ou de thème, voir [ui:includeClientLib](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`, qui auparavant était généralement utilisé pour inclure des bibliothèques clientes, est obsolète depuis AEM 5.6. [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib)  doit être utilisé à la place comme décrit ci-dessus.
+>`<cq:includeClientLib>`, qui auparavant était généralement utilisé pour inclure des bibliothèques clientes, est obsolète depuis AEM 5.6. [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) doit être utilisé à la place comme décrit ci-dessus.
 
 ## Création de dossiers de bibliothèques clientes {#creating-client-library-folders}
 
@@ -108,7 +108,7 @@ Le nœud contient un ou plusieurs fichiers sources qui, à l’exécution, sont 
 
 Les dossiers de bibliothèques clientes contiennent les éléments suivants :
 
-* Les fichiers sources JS et/ou CSS  à fusionner
+* Fichiers source JS et/ou CSS à fusionner.
 * Les ressources qui prennent en charge les styles CSS, tels que les fichiers images.
 
   **Remarque** : vous pouvez utiliser des sous-dossiers pour organiser les fichiers sources.
@@ -120,7 +120,7 @@ Pour plus d’informations sur les exigences spécifiques aux bibliothèques cli
 
 Le client Web doit être autorisé à accéder au nœud `cq:ClientLibraryFolder`. Vous pouvez également exposer les bibliothèques à partir de zones sécurisées du référentiel (voir la section « Incorporation de code d’autres bibliothèques » ci-dessous).
 
-### Remplacement des bibliothèques dans /lib {#overriding-libraries-in-lib}
+### Ignorer les bibliothèques dans /lib {#overriding-libraries-in-lib}
 
 Dossiers de bibliothèques clientes situés sous `/apps` ont la priorité sur les dossiers portant le même nom qui sont similaires dans `/libs`. Par exemple : `/apps/cq/ui/widgets` a priorité sur `/libs/cq/ui/widgets`. Lorsque ces bibliothèques appartiennent à la même catégorie, la bibliothèque située sous `/apps` est utilisée.
 
@@ -165,12 +165,12 @@ Vous pouvez définir la propriété `allowProxy` sur `foo` sur true.
 1. Attribuez un nom au fichier de bibliothèque, puis sélectionnez `cq:ClientLibraryFolder` dans la liste Type. Cliquez sur **OK**, puis sur **Enregistrer tout**.
 1. Pour spécifier la ou les catégories auxquelles appartient la bibliothèque, sélectionnez le nœud `cq:ClientLibraryFolder`, ajoutez la propriété suivante, puis cliquez sur **Enregistrer tout** :
 
-   * Nom : categories
+   * Nom : categories
    * Type : chaîne
    * Valeur : nom de la catégorie
    * Multi : sélection
 
-1. Ajoutez des fichiers source au dossier de bibliothèque par tous les moyens. Par exemple, utilisez un client WebDav pour copier des fichiers ou créez un fichier et créez le contenu manuellement.
+1. Ajoutez des fichiers sources au dossier de bibliothèque par n’importe quel moyen. Par exemple, utilisez un client WebDav pour copier des fichiers ou créez un fichier et le contenu manuellement.
 
    **Remarque** : si vous le souhaitez, vous pouvez organiser les fichiers sources dans des sous-dossiers.
 
@@ -205,7 +205,7 @@ Les dépendances doivent être un autre nœud `cq:ClientLibraryFolder`. Pour ide
 * **Type :** chaîne[]
 * **Valeurs :** valeur de la propriété categories du nœud cq:ClientLibraryFolder dont dépend le dossier de bibliothèques en cours.
 
-Par exemple, `etc/clientlibs/myclientlibs/publicmain` comporte une dépendance sur la bibliothèque `cq.jquery`. Le JSP qui référence la bibliothèque cliente principale génère un HTML qui comprend le code suivant :
+Par exemple, `etc/clientlibs/myclientlibs/publicmain` comporte une dépendance sur la bibliothèque `cq.jquery`. Le JSP qui fait référence à la bibliothèque cliente principale génère un fichier HTML qui comprend le code suivant :
 
 ```xml
 <script src="/etc/clientlibs/foundation/cq.jquery.js" type="text/javascript">
@@ -214,9 +214,9 @@ Par exemple, `etc/clientlibs/myclientlibs/publicmain` comporte une dépendance s
 
 ### Incorporation de code d’autres bibliothèques {#embedding-code-from-other-libraries}
 
-Vous pouvez incorporer du code d’une bibliothèque cliente dans une autre bibliothèque cliente. Au moment de l’exécution, les fichiers JS et CSS générés de la bibliothèque d’intégration incluent le code de la bibliothèque incorporée.
+Vous pouvez incorporer du code d’une bibliothèque cliente dans une autre bibliothèque cliente. Au moment de l’exécution, les fichiers JS et CSS générés de la bibliothèque d’intégration incluent le code de la bibliothèque incorporée.
 
-L’incorporation de code est utile pour permettre l’accès aux bibliothèques stockées dans des zones sécurisées du référentiel.
+L’incorporation de code se révèle utile pour permettre l’accès aux bibliothèques stockées dans des zones sécurisées du référentiel.
 
 #### Dossiers de bibliothèques clientes spécifiques à une application {#app-specific-client-library-folders}
 
@@ -243,7 +243,7 @@ Dans certains cas, vous constaterez peut-être que le code HTML final généré 
 
 Dans ce cas, il peut être utile de combiner tout le code de bibliothèque cliente requis dans un seul fichier afin de réduire le nombre de requêtes aller-retour lors du chargement de la page. Pour ce faire, vous pouvez incorporer (`embed`) les bibliothèques requises dans la bibliothèque cliente spécifique à l’application à l’aide de la propriété du nœud `cq:ClientLibraryFolder`.
 
-Les catégories de bibliothèque cliente suivantes sont incluses avec AEM. Vous devez incorporer uniquement celles qui sont requises pour le fonctionnement de votre site spécifique. Cependant, **vous devez conserver l’ordre indiqué ici.**:
+Les catégories de bibliothèque cliente ci-après sont incluses avec AEM. Vous devez incorporer uniquement celles qui sont requises pour le fonctionnement de votre site spécifique. Cependant, **vous devez conserver l’ordre indiqué ici** :
 
 1. `browsermap.standard`
 1. `browsermap`
@@ -319,22 +319,22 @@ Par exemple, le tableau suivant répertorie la valeur de la propriété `channel
 
 ## Utilisation de préprocesseurs {#using-preprocessors}
 
-AEM autorise les préprocesseurs enfichables et prend en charge [YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) pour CSS et JavaScript, ainsi que [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/) pour JavaScript avec YUI défini comme préprocesseur par défaut d’AEM.
+AEM autorise les préprocesseurs enfichables et prend en charge [YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) pour CSS et JavaScript, ainsi que [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler?hl=fr) pour JavaScript avec YUI défini comme préprocesseur par défaut d’AEM.
 
 Les préprocesseurs enfichables permettent une utilisation flexible, notamment :
 
-* La définition de ScriptProcessors peut traiter des sources de script
-* Les processeurs peuvent être configurés avec des options
-* Les processeurs peuvent être utilisés pour la minification, mais également pour les cas non minimisés
-* La bibliothèque cliente peut définir le processeur à utiliser
+* La définition de ScriptProcessors peut traiter des sources de script.
+* Les processeurs peuvent être configurés avec des options.
+* Les processeurs peuvent être utilisés pour la minification, mais également pour les cas non minimisés.
+* La bibliothèque cliente peut définir le processeur à utiliser.
 
 >[!NOTE]
 >
->Par défaut, AEM utilise YUI Compressor. Pour connaître la liste des problèmes connus, consultez la [documentation GitHub de YUI Compressor](https://github.com/yui/yuicompressor/issues). Le passage au compresseur GCC pour des bibliothèques clientes spécifiques peut résoudre certains problèmes observés lors de l’utilisation de YUI.
+>Par défaut, AEM utilise YUI Compressor. Pour connaître la liste des problèmes connus, consultez la [documentation GitHub de YUI Compressor](https://github.com/yui/yuicompressor/issues). Le passage au compresseur GCC pour des clientlibs spécifiques peut résoudre certains problèmes observés lors de l’utilisation de YUI.
 
 >[!CAUTION]
 >
->Ne placez pas de bibliothèque minimisée dans une bibliothèque cliente. Fournissez plutôt la bibliothèque brute et, si une minimisation est requise, utilisez les options des préprocesseurs.
+>Ne placez pas de bibliothèque minimisée dans une bibliothèque cliente. Fournissez plutôt la bibliothèque brute et, si une minification est requise, utilisez les options des préprocesseurs.
 
 ### Utilisation {#usage}
 
@@ -388,7 +388,7 @@ Pour plus d’informations sur les options GCC, consultez la [documentation de G
 
 ### Définition de l’outil de minification par défaut du système {#set-system-default-minifier}
 
-YUI est défini comme minifisateur par défaut dans AEM. Pour modifier ce paramètre en GCC, procédez comme suit.
+YUI est défini comme minificateur par défaut dans AEM. Pour modifier ce paramètre en GCC, procédez comme suit.
 
 1. Accédez à Apache Felix Config Manager à l’adresse [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Recherchez et modifiez le **Gestionnaire de bibliothèques HTML Adobe Granite**.
@@ -451,10 +451,10 @@ Le composant `dumplibs` comprend un sélecteur de test qui affiche le code sourc
 
 ## Configuration du traitement de la bibliothèque pour le développement et la production {#configuring-library-handling-for-development-and-production}
 
-Le service Gestionnaire de bibliothèques HTML traite les balises `cq:ClientLibraryFolder` et génère les bibliothèques au moment de l’exécution. Le type d’environnement, de développement ou de production détermine comment configurer le service :
+Le service Gestionnaire de bibliothèques HTML traite les balises `cq:ClientLibraryFolder` et génère les bibliothèques au moment de l’exécution. Le type d’environnement, de développement ou de production détermine comment configurer le service :
 
-* Sécurité renforcée : désactivation du débogage
-* Amélioration des performances : supprimez les espaces blancs et compressez les bibliothèques.
-* Amélioration de la lisibilité : incluez des espaces blancs et ne compressez pas.
+* Sécurité renforcée : désactivez le débogage.
+* Amélioration des performances : supprimez les espaces blancs et compressez les bibliothèques.
+* Amélioration de la lisibilité : incluez des espaces blancs et ne compressez pas.
 
-Pour plus d’informations sur la configuration du service, voir [Gestionnaire de bibliothèques de HTMLS AEM](/help/sites-deploying/osgi-configuration-settings.md#aemhtmllibrarymanager).
+Pour plus d’informations sur la configuration du service, voir [Gestionnaire de bibliothèques HTML AEM](/help/sites-deploying/osgi-configuration-settings.md#aemhtmllibrarymanager).

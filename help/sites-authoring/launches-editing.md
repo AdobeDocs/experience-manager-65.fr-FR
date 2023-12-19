@@ -10,8 +10,8 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
 source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 91%
+source-wordcount: '523'
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ Une Live Copy est utilisée pour synchroniser le contenu *depuis* la branche sou
 
 Vous pouvez apporter des modifications de la même manière que vous pouvez modifier une Live Copy standard, par exemple :
 
-* Cliquer sur un cadenas fermé interrompt cette synchronisation et vous permet d’apporter de nouvelles mises à jour au contenu de votre lancement. Une fois déverrouillées (cadenas ouvert), vos modifications ne seront pas remplacées par d’autres modifications effectuées au même endroit dans la branche source.
+* En cliquant sur un cadenas fermé, vous interrompez cette synchronisation et vous pouvez procéder à de nouvelles mises à jour du contenu de votre lancement. Une fois déverrouillées (cadenas ouvert), vos modifications ne seront pas remplacées par d’autres modifications effectuées au même endroit dans la branche source.
 * **Suspendre** (et **Reprendre**) l’héritage pour une page spécifique.
 
 Pour plus d’informations, voir [Modification du contenu d’une Live Copy](/help/sites-administering/msm-livecopy.md#changing-live-copy-content).

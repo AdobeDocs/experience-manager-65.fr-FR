@@ -5,7 +5,7 @@ exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
 source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '1601'
-ht-degree: 90%
+ht-degree: 92%
 
 ---
 
@@ -76,7 +76,7 @@ Ce découplage signifie que chaque service consommateur (frontal) peut créer so
 
 ## Les fondements technologiques {#technology}
 
-Une approche sans interface vous permet de créer une pile de technologies qui peut s’adapter facilement et rapidement aux futurs besoins d’expérience numérique.
+Une approche découplée permet de créer une pile technologique qui peut s’adapter facilement et rapidement aux besoins futurs en matière d’expérience digitale.
 
 Dans le passé, les API pour CMS étaient généralement basées sur REST. L’architecture REST (Representational state transfer) fournit des ressources sous la forme de texte sans état. Ce qui permet de lire et de modifier les ressources moyennant un ensemble d’opérations prédéfini. L’architecture REST a permis une grande interopérabilité entre les services sur le web en assurant une représentation sans état du contenu.
 
@@ -126,6 +126,6 @@ Appuyez-vous sur ces connaissances et continuez votre parcours découplé AEM en
 
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement découplé en examinant le document [Prise en main d’AEM découplé](getting-started.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre le parcours découplé.
 
-* Un [Présentation d’AEM en tant que CMS sans affichage](/help/sites-developing/headless/introduction.md)
-* La variable [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
-* [Tutoriels sur AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) – Ces tutoriels pratiques vous permettront de découvrir comment utiliser, avec AEM, les différentes options de diffusion de contenu vers des points d’entrée en mode découplé et choisir ce qui vous convient.
+* Une [présentation d’AEM en tant que CMS découplé](/help/sites-developing/headless/introduction.md)
+* Le [Portail de développement AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* [Tutoriels sur AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) – Ces tutoriels pratiques vous permettront de découvrir comment utiliser, avec AEM, les différentes options de diffusion de contenu vers des points d’entrée en mode découplé et choisir ce qui vous convient.

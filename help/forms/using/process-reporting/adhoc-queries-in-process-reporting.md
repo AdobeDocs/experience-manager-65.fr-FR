@@ -8,8 +8,8 @@ docset: aem65
 exl-id: a096eea0-b2fb-4d86-b729-ca47611135b2
 source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1672'
-ht-degree: 96%
+source-wordcount: '1635'
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 ## Requêtes ad hoc dans Process Reporting {#ad-hoc-queries-in-process-reporting-1}
 
-Les requêtes ad hoc dans les rapports de processus vous permettent de créer des requêtes personnalisées que vous pouvez utiliser pour rechercher les détails de processus et de tâches des instances de processus AEM Forms définies dans votre environnement AEM Forms.
+Grâce aux requêtes ad hoc dans Process Reporting, vous pouvez créer des requêtes personnalisées que vous pouvez utiliser pour rechercher les détails des processus et des tâches des instances de processus AEM Forms définies dans votre environnement AEM Forms.
 
 En outre, les requêtes ad hoc peuvent être définies à l’aide de filtres de propriétés de processus et de tâches. Ces filtres peuvent ensuite être enregistrés et utilisés pour exécuter les rapports ultérieurement.
 

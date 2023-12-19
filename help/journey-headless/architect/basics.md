@@ -5,7 +5,7 @@ exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 87%
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ Le contenu renvoyé peut alors être utilisé par vos applications.
 
 ## Création de la structure à l’aide de modèles de fragment de contenu {#create-structure-content-fragment-models}
 
-Les modèles de fragment de contenu fournissent divers mécanismes qui vous permettent de définir la structure de votre contenu.
+Les modèles de fragment de contenu offrent divers mécanismes qui vous permettent de définir la structure de votre contenu.
 
 Un modèle de fragment de contenu décrit une entité.
 
@@ -64,10 +64,10 @@ Un modèle de fragment de contenu décrit une entité.
 
 Dans un modèle :
 
-1. **Types de données** vous permet de définir les attributs individuels.
+1. Les **types de données** vous permettent de définir les attributs individuels.
 Par exemple, définissez le champ portant le nom d’un enseignant comme **Texte** et ses années de service comme **Nombre**.
-1. Types de données **Référence de contenu** et **Référence de fragment** vous permet de créer des relations avec d’autres contenus dans AEM.
-1. La variable **Référence de fragment** Le type de données vous permet de réaliser plusieurs niveaux de structure en imbriquant vos fragments de contenu (en fonction du type de modèle). Ceci est essentiel pour la modélisation de contenu.
+1. Les types de données **Référence de contenu** et **Référence du fragment** permettent de créer des relations avec d’autres contenus dans AEM.
+1. Le type de données **Référence de fragment** vous permet de réaliser plusieurs niveaux de structure en imbriquant vos fragments de contenu (en fonction du type de modèle). Cela est essentiel pour la modélisation de contenu.
 
 Par exemple :
 
@@ -113,7 +113,7 @@ Le type de données peut être configuré pour permettre aux auteurs de fragment
 
 ## Niveaux de structure (fragments imbriqués) {#levels-of-structure-nested-fragments}
 
-Pour la modélisation de contenu, le **Référence de fragment** type de données permet de créer plusieurs niveaux de structure et de relations.
+Pour la modélisation de contenu, le type de données **Référence de fragment** vous permet de créer plusieurs niveaux de structure et de relations.
 
 Ce référencement vous permet de *connecter* divers modèles de fragment de contenu pour représenter les interrelations. Il permet à l’application découplée de suivre les connexions et d’accéder au contenu si nécessaire.
 
@@ -121,7 +121,7 @@ Ce référencement vous permet de *connecter* divers modèles de fragment de con
 >
 >Cette méthode doit être utilisée avec précaution. Il est recommandé de définir *autant d’imbrication que nécessaire, mais pas plus*.
 
-C’est exactement ce que font les Références de fragment : elles vous permettent de référencer un autre fragment.
+C’est à ça que servent les références de fragment : elles vous permettent de faire référence à un autre fragment.
 
 Par exemple, les modèles de fragment de contenu suivants peuvent être définis :
 

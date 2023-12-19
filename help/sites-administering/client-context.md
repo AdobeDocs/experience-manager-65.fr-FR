@@ -10,7 +10,7 @@ exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '1961'
-ht-degree: 49%
+ht-degree: 85%
 
 ---
 
@@ -19,21 +19,21 @@ ht-degree: 49%
 
 >[!NOTE]
 >
->ClientContext a été remplacé par ContextHub. Pour plus d’informations, voir [configuration](/help/sites-developing/ch-configuring.md) et [développeur](/help/sites-developing/contexthub.md) la documentation.
+>ClientContext a été remplacé par ContextHub. Pour plus de détails, consultez la documentation associée concernant la [configuration](/help/sites-developing/ch-configuring.md) et la [documentation de développement](/help/sites-developing/contexthub.md).
 
 Le contexte client. est un mécanisme qui fournit certaines informations sur la page et le visiteur actifs. Il peut être ouvert via **Ctrl-Alt-C** (Windows) ou **Ctrl-Option-C** (Mac) :
 
-![Exemple de la fenêtre ClientContext](assets/clientcontext_alisonparker.png)
+![Un exemple de la fenêtre ClientContext](assets/clientcontext_alisonparker.png)
 
-Dans l’environnement de publication et de création, il affiche des informations sur :
+Dans l’environnement de publication et de création, il affiche des informations sur :
 
-* Le visiteur ; selon votre instance, certaines informations sont demandées ou dérivées.
-* Les balises de page et le nombre d’accès à ces balises par le visiteur actuel (ceci s’affiche lorsque vous placez la souris sur une balise spécifique).
+* Le visiteur ou la visiteuse ; selon votre instance, certaines informations sont demandées ou déduites.
+* Les balises de page et le nombre d’accès à ces balises par le visiteur ou la visiteuse actuelle (ces informations s’affichent lorsque vous placez la souris sur une balise spécifique).
 * Informations sur la page.
-* Informations sur l’environnement technique, telles que l’adresse IP, le navigateur et la résolution d’écran.
+* Informations sur l’environnement technique, telles que l’adresse IP, le navigateur et la résolution d’écran.
 * Tout segment actuellement résolu.
 
-Les icônes (disponibles uniquement dans l’environnement de création) vous permettent de configurer les détails du contexte client :
+Les icônes (disponibles uniquement dans l’environnement de création) vous permettent de configurer les détails du contexte client :
 
 ![Icônes Modifier, Charger et Réinitialiser de la fenêtre ClientContext](do-not-localize/clientcontext_icons.png)
 
@@ -48,7 +48,7 @@ Vous pouvez [réinitialiser le profil](#resetting-the-profile-to-the-current-use
 
 ## Composants ClientContext disponibles {#available-client-context-components}
 
-ClientContext peut afficher les propriétés suivantes ([selon ce qui a été sélectionné à l’aide de l’option Modifier](#adding-a-property-component)) :
+ClientContext peut afficher les propriétés suivantes ([selon ce qui a été sélectionné à l’aide de l’option Modifier](#adding-a-property-component)) :
 
 **Informations sur l’utilisateur**
 Affiche les informations côté client suivantes :
@@ -71,21 +71,21 @@ La résolution de campagne est normalement basée sur la propriété de priorit�
 
 Le magasin de sessions de panier informe également le serveur des modifications de promotion résolues (en fonction des modifications de segmentation) à l’aide de ClientContextCartServlet.
 
-**Boutique générique** Composant générique qui affiche le contenu d’une boutique. Il s’agit d’une version de niveau inférieur du composant Propriétés du magasin générique .
+**Boutique générique** Composant générique qui affiche le contenu d’une boutique. Il s’agit d’une version de niveau inférieur du composant Propriétés du magasin générique.
 
-Le magasin générique doit être configuré avec un moteur de rendu JS qui affichera les données de manière personnalisée.
+Le magasin générique doit être configuré avec un moteur de rendu JS qui affichera les données de manière personnalisée.
 
-**Propriétés de la boutique générique** Composant générique qui affiche le contenu d’une boutique. Il s’agit d’une version de niveau supérieur du composant Boutique générique.
+**Propriétés de la boutique générique** Composant générique qui affiche le contenu d’une boutique. Il s’agit d’une version de niveau supérieur du composant Magasin générique.
 
-Le composant Propriétés de la boutique générique comprend un moteur de rendu par défaut qui répertorie les propriétés configurées (ainsi qu’une miniature).
+Le composant Propriétés du magasin générique comprend un moteur de rendu par défaut qui répertorie les propriétés configurées (ainsi qu’une miniature).
 
 **Géolocalisation** Affiche la latitude et la longitude du client. Elle utilise l’API de géolocalisation HTML5 pour demander la position actuelle au navigateur. Il en résulte l’affichage d’une fenêtre dans laquelle le navigateur demande à l’utilisateur s’il accepte que son emplacement soit partagé.
 
-Lorsqu’il est affiché dans le cloud contextuel, le composant utilise une API Google pour afficher une carte sous forme de vignette. Le composant est soumis à l’API Google [limites d’utilisation](https://developers.google.com/maps/documentation/staticmaps/intro#Limits).
+Lorsqu’il est affiché dans le cloud contextuel, le composant utilise une API Google pour afficher une carte sous forme de vignette. Le composant est soumis aux [limites d’utilisation](https://developers.google.com/maps/documentation/staticmaps/intro#Limits) de l’API Google.
 
 >[!NOTE]
 >
->Dans AEM 6.1, la boutique Géolocalisation ne fournit plus la fonction de géocodage inversé. Par conséquent, elle ne récupère plus de détails concernant l’emplacement actuel, tels que le nom de ville ou le code pays. Les segments qui utilisent ces données de boutique ne fonctionneront pas correctement. Le magasin Géolocalisation contient uniquement la latitude et la longitude d’un emplacement.
+>Dans AEM 6.1, la boutique Géolocalisation ne fournit plus la fonction de géocodage inversé. Par conséquent, elle ne récupère plus de détails concernant l’emplacement actuel, tels que le nom de ville ou le code pays. Les segments qui utilisent ces données de boutique ne fonctionneront pas correctement. Le magasin de géolocalisation contient uniquement la latitude et la longitude d’un emplacement.
 
 **Magasin JSONP** Un composant qui affiche le contenu qui dépend de votre installation.
 
@@ -131,21 +131,21 @@ Pour plus d’informations, consultez [Contexte client en détail](/help/sites-d
 
 ## Modification du profil ClientContext {#changing-the-client-context-profile}
 
-ClientContext vous permet de modifier les détails de manière interactive :
+ClientContext vous permet de modifier les détails de manière interactive :
 
-* La modification du profil utilisé dans ClientContext vous permet de voir les différentes expériences que les différents utilisateurs verront pour la page en cours.
+* La modification du profil utilisé dans ClientContext vous permet de voir les différentes expériences que les différentes personnes verront pour la page en cours.
 * En plus de modifier le profil utilisateur, vous pouvez modifier certains détails du profil pour voir comment le contenu de la page diffère selon différentes conditions.
 
 ### Chargement d’un nouveau profil utilisateur {#loading-a-new-user-profile}
 
-Vous pouvez modifier le profil en effectuant l’une des opérations suivantes :
+Vous pouvez modifier le profil en effectuant l’une des opérations suivantes :
 
 * [À l’aide de l’icône de chargement](#loading-a-new-visitor-profile-with-the-load-profile-icon)
 * [À l’aide du curseur de sélection](#loadinganewvisitorprofilewiththeselectionslider)
 
-Lorsque vous avez terminé, vous pouvez [réinitialisation du profil](#resetting-the-profile-to-the-current-user).
+Lorsque vous avez terminé, vous pouvez [réinitialiser le profil](#resetting-the-profile-to-the-current-user).
 
-#### Chargement d’un nouveau profil de visiteur à l’aide de l’icône Charger le profil {#loading-a-new-visitor-profile-with-the-load-profile-icon}
+#### Chargement d’un nouveau profil visiteur à l’aide de l’icône Charger le profil {#loading-a-new-visitor-profile-with-the-load-profile-icon}
 
 1. Cliquez sur l’icône de chargement de profil :
 
@@ -163,7 +163,7 @@ Vous pouvez également sélectionner un profil avec le curseur de sélection :
 
 1. Double-cliquez sur l’icône représentant l’utilisateur actuel. Le sélecteur s’ouvre. Utilisez les flèches pour parcourir les profils disponibles :
 
-   ![Sélecteur d’utilisateurs](assets/clientcontext_profileselector.png)
+   ![Sélecteur d’utilisateurs et d’utilisatrices](assets/clientcontext_profileselector.png)
 
 1. Cliquez sur le profil à charger. Lorsque les informations sont chargées, cliquez en dehors du sélecteur pour le fermer.
 
@@ -195,7 +195,7 @@ Vous pouvez également sélectionner un profil avec le curseur de sélection :
 
    ![Boîte de dialogue Nuage de balises](assets/clientcontext_tagselection.png)
 
-1. Cliquez sur OK pour charger dans ClientContext.
+1. Cliquez sur OK pour charger dans ClientContext.
 
 ## Modification de ClientContext {#editing-the-client-context}
 
@@ -203,7 +203,7 @@ La modification d’un contexte client peut être utilisée pour définir (ou r�
 
 ### Modification des détails d’une propriété {#editing-property-details}
 
-La modification du contexte client peut être utilisée pour définir (ou réinitialiser) les valeurs de certaines propriétés. Vous pouvez ainsi tester des scénarios spécifiques (particulièrement utiles pour [segmentation](/help/sites-administering/campaign-segmentation.md) et [campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
+La modification du contexte client peut être utilisée pour définir (ou réinitialiser) les valeurs de certaines propriétés. Cela vous permet de tester certains scénarios spécifiques (ce qui est particulièrement utile pour la [segmentation](/help/sites-administering/campaign-segmentation.md) et les [campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
 
 ![Modification de ClientContext](assets/clientcontext_alisonparker_edit.png)
 
@@ -213,19 +213,19 @@ Après avoir ouvert la **Page de conception de ClientContext**, vous pouvez éga
 
 ![Ajout d’une propriété à la fenêtre ClientContext](assets/clientcontext_alisonparker_new.png)
 
-### Suppression d’un composant Propriété {#removing-a-property-component}
+### Suppression d’un composant de propriété {#removing-a-property-component}
 
-Après avoir ouvert la **page de conception de ClientContext**, vous pouvez également **Supprimer** une propriété si elle n’est plus utile. Cela inclut les propriétés fournies d’usine ; **Réinitialiser** les rétablissent s’ils ont été supprimés.
+Après avoir ouvert la **page de conception de ClientContext**, vous pouvez également **Supprimer** une propriété si elle n’est plus utile. Cela inclut les propriétés fournies comme étant prêtes à l’emploi ; **Réinitialiser** permet de les rétablir si elles ont été supprimées.
 
-## Stockage des données dans ClientContext via JSONP {#storing-data-in-client-context-via-jsonp}
+## Stockage des données dans ClientContext via JSONP {#storing-data-in-client-context-via-jsonp}
 
-Suivez cet exemple pour utiliser le composant de boutique contextuel Boutique JSONP afin d’ajouter des données externes à ClientContext. Ensuite, créez un segment basé sur les informations issues de ces données. Cet exemple utilise le service JSONP que WIPmania.com fournit. Le service renvoie des informations de géolocalisation en fonction de l’adresse IP du client web.
+Suivez cet exemple pour utiliser le composant de boutique contextuel Boutique JSONP afin d’ajouter des données externes à ClientContext. Ensuite, créez un segment basé sur les informations issues de ces données. Cet exemple utilise le service JSONP que WIPmania.com fournit. Le service renvoie des informations de géolocalisation en fonction de l’adresse IP du client web.
 
 Cet exemple utilise l’exemple de site web Geometrixx Outdoors pour accéder à ClientContext et tester le segment créé. Vous pouvez utiliser un autre site web tant que la page a activé ClientContext. (Voir [Ajout de ClientContext à une page](/help/sites-developing/client-context.md#adding-client-context-to-a-page).)
 
-### Ajout du composant Boutique JSONP {#add-the-jsonp-store-component}
+### Ajouter le composant Magasin JSONP {#add-the-jsonp-store-component}
 
-Ajoutez le composant Boutique JSONP à ClientContext et utilisez-le pour récupérer et stocker les informations de géolocalisation du client web.
+Ajoutez le composant Magasin JSONP à ClientContext et utilisez-le pour récupérer et stocker les informations de géolocalisation du client web.
 
 1. Ouvrez la page d’accueil en anglais du site Geometrixx Outdoors sur l’instance de création AEM. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Pour ouvrir le contexte client, appuyez sur Ctrl+Alt+C (Windows) ou Ctrl+Option+C (Mac).
@@ -233,9 +233,9 @@ Ajoutez le composant Boutique JSONP à ClientContext et utilisez-le pour récup�
 
    ![Icône Lien](do-not-localize/chlimage_1.png)
 
-1. Faites glisser le composant Boutique JSONP vers ClientContext.
+1. Faites glisser le composant Magasin JSONP vers ClientContext.
 
-   ![Glisser-déposer du composant Boutique JSONP dans le contexte client](assets/chlimage_1-4.jpeg)
+   ![Glisser-déposer le composant Magasin JSONP dans ClientContext](assets/chlimage_1-4.jpeg)
 
 1. Double-cliquez sur le composant pour ouvrir la boîte de dialogue de modification.
 1. Dans la zone URL du service JSONP, saisissez l’URL suivante, puis cliquez sur Récupérer la boutique :
@@ -247,24 +247,24 @@ Ajoutez le composant Boutique JSONP à ClientContext et utilisez-le pour récup�
    ![Propriétés du service JSONP](assets/chlimage_1-40.png)
 
 1. Cliquez sur OK.
-1. Revenez à la page d’accueil Geometrixx Outdoors et actualisez-la. ClientContext inclut désormais les informations du composant Boutique JSONP.
+1. Revenez à la page d’accueil Geometrixx Outdoors et actualisez-la. ClientContext inclut désormais les informations du composant Magasin JSONP.
 
    ![Exemple de composant JSONP rempli de données](assets/chlimage_1-41.png)
 
-### Création du segment {#create-the-segment}
+### Créer le segment {#create-the-segment}
 
-Utilisez les données de la boutique de session que vous avez créée à l’aide du composant Boutique JSONP. Le segment utilise la latitude du magasin de sessions et la date courante pour déterminer s’il s’agit de l’heure d’hiver sur le site du client.
+Utilisez les données de la boutique de session que vous avez créée à l’aide du composant Boutique JSONP. Le segment utilise la latitude du magasin de sessions et la date actuelle pour déterminer s’il s’agit de l’heure d’hiver sur le site de la cliente ou du client.
 
 1. Ouvrez la console Outils dans votre navigateur Web (`https://localhost:4502/miscadmin#/etc`).
-1. Dans l’arborescence, cliquez sur le dossier Outils/Segmentation, puis sur Nouveau > Nouveau dossier. Spécifiez les valeurs de propriété suivantes, puis cliquez sur Créer :
+1. Dans l’arborescence, cliquez sur le dossier Outils/Segmentation, puis sur Nouveau > Nouveau dossier. Spécifiez les valeurs de propriété suivantes, puis cliquez sur Créer :
 
-   * Nom : mysegments
-   * Titre : Mes segments
+   * Nom : mysegments
+   * Titre : Mes segments
 
-1. Sélectionnez le dossier Mes segments et cliquez sur Nouveau > Nouvelle page :
+1. Sélectionnez le dossier Mes segments et cliquez sur Nouveau > Nouvelle page :
 
    1. Pour le champ Titre, saisissez Hiver.
-   1. Sélectionnez le modèle Segment .
+   1. Sélectionnez le modèle Segment.
    1. Cliquez sur Créer.
 
 1. Cliquez avec le bouton droit sur le segment Hiver, puis cliquez sur Ouvrir.
@@ -272,13 +272,13 @@ Utilisez les données de la boutique de session que vous avez créée à l’aid
 
    ![Ajout d’un composant à l’éditeur de segments](assets/chlimage_1-5.jpeg)
 
-1. Double-cliquez sur le composant pour ouvrir la boîte de dialogue de modification, spécifiez les valeurs de propriété suivantes, puis cliquez sur OK :
+1. Double-cliquez sur le composant pour ouvrir la boîte de dialogue de modification, spécifiez les valeurs de propriété suivantes, puis cliquez sur OK :
 
-   * Magasin : wipmania
-   * Nom de la propriété : latitude
-   * Opérateur : est supérieur à
-   * Valeur de la propriété : 30
+   * Magasin : wipmania
+   * Nom de la propriété : latitude
+   * Opérateur : est supérieur à
+   * Valeur de propriété : 30
 
-1. Faites glisser le composant Script vers le même conteneur ET, puis ouvrez sa boîte de dialogue de modification. Ajoutez le script suivant, puis cliquez sur OK :
+1. Faites glisser le composant Script vers le même conteneur ET, puis ouvrez sa boîte de dialogue de modification. Ajoutez le script suivant, puis cliquez sur OK :
 
    `3 < new Date().getMonth() < 12`

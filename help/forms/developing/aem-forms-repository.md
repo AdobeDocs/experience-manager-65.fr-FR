@@ -10,7 +10,7 @@ exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '9036'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -474,10 +474,10 @@ Vous pouvez récupérer des ressources à partir d’un emplacement donné dans 
 
 Le référentiel dispose des quatre types d’autorisations suivants :
 
-* **traverse**: permet de répertorier les ressources, c’est-à-dire de lire les métadonnées des ressources, mais pas le contenu des ressources.
-* **read**: permet de lire le contenu d&#39;une ressource
-* **write**: permet d’écrire du contenu de ressource
-* **gestion des listes de contrôle d’accès (ACL)**: permet de manipuler les listes de contrôle d’accès sur les ressources.
+* **parcours** : permet de répertorier les ressources, c’est-à-dire de lire les métadonnées de la ressource, mais pas leur contenu.
+* **lecture** : permet de lire le contenu d’une ressource.
+* **écriture** : permet d’écrire du contenu de ressource.
+* **gestion des listes de contrôle d’accès (ACL)** : permet de manipuler les ACL sur les ressources.
 
 Les utilisateurs ne peuvent exécuter des processus que si lʼautorisation leur en a été accordée. Les utilisateurs d’un IDE doivent disposer d’autorisations de parcours et de lecture pour se synchroniser avec le référentiel. Les listes de contrôle d’accès ne s’appliquent quʼau moment de la conception, car l’exécution se produit dans le contexte du système.
 

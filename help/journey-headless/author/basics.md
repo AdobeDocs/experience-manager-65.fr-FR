@@ -5,7 +5,7 @@ exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
 source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '1691'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -47,7 +47,7 @@ Comme pour la plupart des systèmes, vous devez vous connecter. En tant qu’aut
 * Mot de passe
 * Lien d’accès à l’écran de connexion
 
-Votre compte a été configuré avec les privilèges dont vous avez besoin. Si vous rencontrez des problèmes, Adobe vous recommande de contacter votre équipe d’assistance pour les projets interne.
+Votre compte a été configuré avec les privilèges dont vous avez besoin. Si vous rencontrez des problèmes, Adobe recommande de contacter l’équipe interne d’assistance projet.
 
 ### Navigation {#navigation}
 
@@ -168,7 +168,7 @@ Par exemple :
 
   ![Éditeur de fragment de contenu – Mon fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
-* Un fragment permettant d’écrire une longue section de texte. Il existe ici d’autres options pour gérer et mettre en forme le texte. Vous pouvez même ouvrir les champs de texte individuels dans un éditeur plein écran (à l’aide de la petite icône d’écran située à droite).
+* Un fragment qui vous permet d’écrire une longue section de texte. Il existe ici d’autres options pour gérer et mettre en forme le texte. Vous pouvez même ouvrir les champs de texte individuels dans un éditeur plein écran (à l’aide de la petite icône d’écran située à droite).
 
   ![Éditeur de fragment de contenu – Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 

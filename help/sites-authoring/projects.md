@@ -5,14 +5,14 @@ exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1359'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
 
 # Projets {#projects}
 
-Les projets vous permettent de regrouper des ressources dans une seule entité. Un environnement commun et partagé facilite la gestion de vos projets. Les types de ressources que vous pouvez associer à un projet sont appelés mosaïques dans AEM. Les mosaïques peuvent inclure des informations de projet et d’équipe, des ressources numériques, des workflows et d’autres types d’informations, comme le précise en détail la section [Mosaïques de projet](#project-tiles).
+Les projets vous permettent de regrouper des ressources dans une seule entité. Un environnement commun et partagé facilite la gestion de vos projets. Les types de ressources que vous pouvez associer à un projet sont appelés volets dans AEM. Les mosaïques peuvent inclure des informations de projet et d’équipe, des ressources numériques, des workflows et d’autres types d’informations, comme le précise en détail la section [Mosaïques de projet](#project-tiles).
 
 En tant qu’utilisateur, vous pouvez effectuer les actions suivantes :
 
@@ -163,11 +163,11 @@ Ce workflow est décrit dans le document [Création d’un workflow de page de d
 
 ### E-mails {#emails}
 
-La variable **Emails** vous aide à gérer les requêtes de courrier électronique. Elle lance le workflow de **demande d’e-mail**.
+Le volet **E-mails** permet de gérer les demandes pour les e-mails. Elle lance le workflow de **demande d’e-mail**.
 
 ![Mosaïque E-mail](assets/project-tile-email.png)
 
-Pour plus d’informations, voir la section [Workflow de demande d’e-mail.](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
+Pour plus d’informations, voir la section [Workflow de demande d’e-mails](/help/sites-authoring/projects-with-workflows.md#request-email-workflow).
 
 ### Workflows {#workflows}
 

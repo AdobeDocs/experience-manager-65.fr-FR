@@ -11,7 +11,7 @@ exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1447'
-ht-degree: 71%
+ht-degree: 77%
 
 ---
 
@@ -100,7 +100,7 @@ Pour restituer un formulaire dont les droits sont activés à l’aide de l’AP
 
    * Créez un objet `ReaderExtensionSpec` en utilisant son constructeur.
    * Spécifiez l’alias des informations d’identification en appelant la fonction `ReaderExtensionSpec` de `setReCredentialAlias` et indiquez une valeur string qui représente la valeur d’alias.
-   * Définissez chaque droit dʼutilisation en appelant la méthode correspondante qui appartient à lʼobjet `ReaderExtensionSpec`. Cependant, vous ne pouvez définir un droit d’utilisation que si les informations d’identification auxquelles vous faites référence vous permettent de le faire. En d’autres termes, vous ne pouvez pas définir un droit d’utilisation si les informations d’identification ne vous permettent pas de le définir. Par exemple. pour définir le droit d’utilisation qui permet à l’utilisateur de remplir des champs de formulaire et d’enregistrer le formulaire, appelez la méthode `ReaderExtensionSpec` de `setReFillIn` méthode et transmission `true`.
+   * Définissez chaque droit dʼutilisation en appelant la méthode correspondante qui appartient à lʼobjet `ReaderExtensionSpec`. Cependant, vous ne pouvez définir un droit d’utilisation que si les informations d’identification que vous référencez vous le permettent. En d’autres termes, vous ne pouvez pas définir un droit d’utilisation si les informations d’identification ne vous le permettent pas. Par exemple. pour définir le droit d’utilisation qui permet à l’utilisateur de remplir des champs de formulaire et d’enregistrer le formulaire, appelez la méthode `ReaderExtensionSpec` de `setReFillIn` méthode et transmission `true`.
 
    >[!NOTE]
    >
@@ -108,7 +108,7 @@ Pour restituer un formulaire dont les droits sont activés à l’aide de l’AP
 
 1. Générer un formulaire défini avec des droits
 
-   Appeler la variable `FormsServiceClient` de `renderPDFFormWithUsageRights` et transmettez les valeurs suivantes :
+   Appelez la méthode `renderPDFFormWithUsageRights` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
    * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire qui fait partie d’une application Forms, veillez à spécifier le chemin dʼaccès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner les données, transmettez un objet `com.adobe.idp.Document` vide.
@@ -124,7 +124,7 @@ Pour restituer un formulaire dont les droits sont activés à l’aide de l’AP
    * Accédez au type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
    * Définissez la variable `javax.servlet.http.HttpServletResponse` type de contenu de l’objet en appelant ses `setContentType` et transmettre le type de contenu de la méthode `com.adobe.idp.Document` .
    * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données de formulaire dans le navigateur Web client en appelant la fonction `javax.servlet.http.HttpServletResponse` de `getOutputStream` .
-   * Créez un `java.io.InputStream` en appelant la méthode `com.adobe.idp.Document` de `getInputStream` .
+   * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
    * Créez un tableau d’octets pour le remplir avec le flux de données de formulaire en appelant la fonction `InputStream` de `read` et transmission du tableau d’octets en tant qu’argument.
    * Appeler la variable `javax.servlet.ServletOutputStream` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
@@ -153,11 +153,11 @@ Pour générer un formulaire défini avec des droits à l’aide de l’API Form
 
    * Créez un objet `ReaderExtensionSpec` en utilisant son constructeur.
    * Spécifiez l’alias des informations d’identification en appelant la fonction `ReaderExtensionSpec` de `setReCredentialAlias` et indiquez une valeur string qui représente la valeur d’alias.
-   * Définissez chaque droit dʼutilisation en appelant la méthode correspondante qui appartient à lʼobjet `ReaderExtensionSpec`. Cependant, vous ne pouvez définir un droit d’utilisation que si les informations d’identification auxquelles vous faites référence vous permettent de le faire. En d’autres termes, vous ne pouvez pas définir un droit d’utilisation si les informations d’identification ne vous permettent pas de le définir. Pour définir le droit d’utilisation qui permet à l’utilisateur de remplir des champs de formulaire et d’enregistrer le formulaire, appelez la méthode `ReaderExtensionSpec` de `setReFillIn` méthode et transmission `true`.
+   * Définissez chaque droit dʼutilisation en appelant la méthode correspondante qui appartient à lʼobjet `ReaderExtensionSpec`. Cependant, vous ne pouvez définir un droit d’utilisation que si les informations d’identification que vous référencez vous le permettent. En d’autres termes, vous ne pouvez pas définir un droit d’utilisation si les informations d’identification ne vous le permettent pas. Pour définir le droit d’utilisation qui permet à l’utilisateur de remplir des champs de formulaire et d’enregistrer le formulaire, appelez la méthode `ReaderExtensionSpec` de `setReFillIn` méthode et transmission `true`.
 
 1. Générer un formulaire défini avec des droits
 
-   Appeler la variable `FormsService` de `renderPDFFormWithUsageRights` et transmettez les valeurs suivantes :
+   Appelez la méthode `renderPDFFormWithUsageRights` de l’objet `FormsService` et transmettez les valeurs suivantes :
 
    * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire qui fait partie d’une application Forms, veillez à spécifier le chemin dʼaccès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Un objet `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner de données avec le formulaire, vous devez transmettre un objet `BLOB` basé sur une source de données XML vide. Vous ne pouvez pas transmettre un objet `BLOB` nul ; dans le cas contraire, une exception est générée.

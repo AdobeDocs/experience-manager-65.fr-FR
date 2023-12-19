@@ -4,14 +4,14 @@ description: La structure d’intégration vous permet d’extraire des données
 exl-id: da63c576-34cd-40ce-81de-d7391a331364
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 86%
+source-wordcount: '144'
+ht-degree: 87%
 
 ---
 
 # eCommerce{#ecommerce}
 
-La structure d’intégration comprend une couche d’intégration avec une API. Vous pouvez ainsi :
+La structure d’intégration comprend une couche d’intégration avec une API. Vous pouvez ainsi :
 
 * connecter un système e-commerce et extraire des données de produit dans AEM ;
 * créer des composants AEM pour les fonctionnalités de commerce indépendamment du moteur d’e-commerce spécifique.

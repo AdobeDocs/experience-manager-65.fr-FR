@@ -7,32 +7,32 @@ role: Admin
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
 source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 44%
+source-wordcount: '923'
+ht-degree: 70%
 
 ---
 
 # Document Security | Gestion des données utilisateur {#document-security-handling-user-data}
 
-AEM Forms Document Security vous permet de créer, de stocker et d’appliquer des paramètres de protection prédéfinis à vos documents. Cela garantit que seuls les utilisateurs autorisés peuvent utiliser les documents. Vous pouvez protéger les documents à l’aide de politiques. Une stratégie est un ensemble d’informations qui inclut des paramètres de sécurité et une liste d’utilisateurs autorisés. Vous pouvez appliquer une stratégie à un ou plusieurs documents et autoriser les utilisateurs ajoutés à la gestion des utilisateurs d’AEM Forms JEE.
+AEM Forms Document Security vous permet de créer, de stocker et d’appliquer facilement des paramètres de sécurité prédéfinis à vos documents. Cela garantit que seuls les utilisateurs et utilisatrices autorisés peuvent utiliser les documents. Vous pouvez protéger les documents à l’aide de politiques. Une politique recense des informations telles que les paramètres de confidentialité et la liste des personnes autorisées. Vous pouvez appliquer une politique à un ou plusieurs documents et autoriser les utilisateurs et utilisatrices ajoutés dans le composant User Management d’AEM Forms JEE.
 
 <!-- Fix broken link For more information about how document security works, see AEM Forms JEE administration help. -->
 
 ## Données utilisateur et stockage de données {#user-data-and-data-stores}
 
-Document Security stocke les stratégies et les données relatives aux documents protégés, y compris les données utilisateur dans une base de données, comme MySQL, Oracle, MS® SQL Server et IBM® DB2®. En outre, les données pour les utilisateurs autorisés dans une stratégie stockée dans la gestion des utilisateurs. Pour plus d’informations sur les données stockées dans User Management, consultez la section [Forms User Management : gérer les données utilisateur](/help/forms/using/user-management-handling-user-data.md).
+Document Security stocke les stratégies et les données relatives aux documents protégés, y compris les données utilisateur dans une base de données, comme MySQL, Oracle, MS® SQL Server et IBM® DB2®. En outre, les données relatives aux utilisateurs et aux utilisatrices autorisés dans une politique sont stockées dans le composant User Management. Pour plus d’informations sur les données stockées dans User Management, consultez la section [Forms User Management : gérer les données utilisateur](/help/forms/using/user-management-handling-user-data.md).
 
-Le tableau suivant indique comment Document Security organise les données dans les tables de base de données.
+Le tableau suivant indique comment Document Security organise les données dans les tables de base de données.
 
 <table>
  <tbody>
   <tr>
-   <td>Table de base de données</td>
+   <td>Tableau de base de données</td>
    <td>Description</td>
   </tr>
   <tr>
    <td><code>EdcPrincipalKeyEntity</code></td>
-   <td>Stocke des informations sur les clés principales des utilisateurs. Les clés sont utilisées dans les processus Document Security hors ligne.</td>
+   <td>Stocke des informations sur les clés principales des utilisateurs et utilisatrices. Les clés sont utilisées dans les workflows Document Security hors ligne.</td>
   </tr>
   <tr>
    <td><code>EdcAuditEntity</code></td>
@@ -56,7 +56,7 @@ Le tableau suivant indique comment Document Security organise les données dans 
   </tr>
   <tr>
    <td><code>EdcPolicyEntity</code></td>
-   <td>Stocke des informations sur les stratégies. Chaque stratégie correspond à une ligne du tableau.</td>
+   <td>Stocke des informations sur les politiques. Chaque stratégie correspond à une ligne dans le tableau ci-dessous.</td>
   </tr>
   <tr>
    <td><code>EdcPolicyXmlEntity</code></td>
@@ -72,7 +72,7 @@ Le tableau suivant indique comment Document Security organise les données dans 
   </tr>
   <tr>
    <td><code>EdcInvitedUserEntity</code></td>
-   <td>Stocke des informations sur l’utilisateur invité.</td>
+   <td>Stocke des informations sur la personne invitée.</td>
   </tr>
  </tbody>
 </table>
@@ -89,9 +89,9 @@ Dans la commande `select`, remplacez `<user_login_id>` par l’ID de connexion d
 select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_id>
 ```
 
-Une fois que vous connaissez l’ID principal, vous pouvez exporter ou supprimer les données utilisateur.
+Une fois que vous connaissez l’identifiant principal, vous pouvez exporter ou supprimer les données utilisateur.
 
-### Exportation des données utilisateur {#export-user-data}
+### Exporter les données utilisateur {#export-user-data}
 
 Exécutez les commandes de base de données suivantes afin de pouvoir exporter les données utilisateur d’un ID principal à partir des tables de base de données. Dans la commande `select`, remplacez `<principal_id>` par l’ID principal de l’utilisateur dont vous souhaitez exporter les données.
 
@@ -129,7 +129,7 @@ Pour obtenir des informations complètes sur un utilisateur du système, vous de
 
 ### Suppression de données utilisateur {#delete-user-data}
 
-Procédez comme suit pour supprimer les données Document Security d’un ID principal des tables de base de données.
+Procédez comme suit pour supprimer les données Document Security d’un identifiant principal des tables de la base de données.
 
 1. Arrêtez le serveur AEM Forms.
 1. Exécutez les commandes de base de données suivantes afin de pouvoir supprimer les données de l’ID principal des tables de base de données pour Document Security. Dans la commande `Delete`, remplacez `<principal_id>` par l’ID principal de l’utilisateur dont vous souhaitez supprimer les données.
@@ -154,7 +154,7 @@ Procédez comme suit pour supprimer les données Document Security d’un ID pri
 
    1. Ouvrez l’objet Blob XML de chaque ligne dans le tableau `EdcPolicyXMLEntity` ou `EdcPolicyArchiveEntity` et extrayez le fichier XML. Le fichier XML ressemble à l’un des fichiers ci-dessous.
    1. Modifiez le fichier XML afin de pouvoir supprimer l’objet Blob de l’ID principal.
-   1. Répétez les étapes 1 et 2 pour l’autre fichier.
+   1. Répétez les étapes 1 et 2 pour l’autre fichier.
 
    >[!NOTE]
    >
@@ -193,11 +193,11 @@ Procédez comme suit pour supprimer les données Document Security d’un ID pri
 
    1. En tant qu’administrateur, connectez-vous à la console d’administration de Forms JEE à l’adresse https://[*server*]:[*port*]/adminui.
    1. Accédez à **[!UICONTROL Services > Document Security > Jeux de politique]**.
-   1. Ouvrez un jeu de stratégies et supprimez l’utilisateur de la stratégie.
+   1. Ouvrez un jeu de politiques et supprimez l’utilisateur ou l’utilisatrice de la politique.
 
-   **Utilisation de la page Web de Document Security**
+   **Utiliser la page web Document Security**
 
-   Les utilisateurs de Document Security autorisés à créer des stratégies personnelles peuvent supprimer des données utilisateur de leurs stratégies. Pour ce faire :
+   Les utilisateurs et utilisatrices de Document Security autorisés à créer des politiques personnelles peuvent supprimer des données utilisateur de leurs politiques. Pour ce faire :
 
    1. Les utilisateurs qui disposent de stratégies personnelles se connectent à leur page Web Document Security à l’adresse https://[*server*]:[*port*]/edc.
    1. Accédez à **[!UICONTROL Services > Document Security > Mes politiques]**.

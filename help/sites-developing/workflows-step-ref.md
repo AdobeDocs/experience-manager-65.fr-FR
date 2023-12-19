@@ -10,7 +10,7 @@ exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '3229'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ Les modèles de workflow se composent d’une série d’étapes de différents 
 
 ## Propriétés des étapes {#step-properties}
 
-Chaque composant d’étape comporte une **Propriétés de l’étape** qui vous permet de définir et de modifier les propriétés requises.
+Chaque composant d’étape comporte une boîte de dialogue **Propriétés de l’étape** qui vous permet de définir et de modifier les propriétés requises.
 
 ### Propriétés des étapes - Onglet courant {#step-properties-common-tab}
 
@@ -113,7 +113,7 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 
 ## Etape Atteindre {#goto-step}
 
-La variable **Atteindre l’étape** permet de spécifier l’étape suivante à exécuter dans le modèle de workflow. Vous pouvez spécifier une définition de règle, un script externe ou un script ECMA comme expression de routage pour évaluer l’étape suivante du modèle de workflow.
+L’**Étape Goto** vous permet de spécifier l’étape suivante à exécuter dans le modèle de workflow. Vous pouvez spécifier une définition de règle, un script externe ou un script ECMA comme expression de routage pour évaluer l’étape suivante du modèle de workflow.
 
 * Si la condition que vous spécifiez est vraie, l’**Étape Goto** se termine et le moteur de workflow exécute l’étape spécifiée.
 * Si la condition que vous spécifiez ne contient pas la valeur true, l’**Étape Goto** se termine et la logique de routage normale détermine l’étape suivante à exécuter.
@@ -586,7 +586,7 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 
 ## Définition d’une variable {#set-variable}
 
-L’étape Définir la variable permet de définir la valeur d’une variable et de définir l’ordre dans lequel les valeurs sont définies. La variable est définie dans l’ordre dans lequel les mappages de variables sont répertoriés à l’étape Définir une variable.
+Vous pouvez utiliser l’étape « Définir une variable » pour définir la valeur d’une variable et l’ordre de définition des valeurs. La variable est définie dans l’ordre dans lequel les mappages de variables sont répertoriés à l’étape Définir une variable.
 
 ![Ajout d’un mappage pour définir une variable](assets/set_variable_addmappingnew.png)
 

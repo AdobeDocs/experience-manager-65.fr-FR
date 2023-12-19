@@ -4,8 +4,8 @@ description: Découvrez comment les puissantes fonctionnalités d’AEM 6.5, te
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 91%
+source-wordcount: '507'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ L’implémentation découplée renonce à la gestion des pages et des composant
 
 ## Comparaison entre couplage et découplage {#headful-headless}
 
-Ce document se concentre sur le modèle de mise en œuvre entièrement découplée d’AEM. Cependant, l’affichage tête contre tête n’a pas besoin d’être un choix binaire dans AEM. Vous pouvez utiliser des fonctions découplées afin de gérer et diffuser votre contenu pour différents points d’entrée tout en permettant aux auteurs de contenu de modifier des applications sur une seule page. Le tout dans AEM.
+Ce document se concentre sur le modèle de mise en œuvre entièrement découplée d’AEM. Pour autant, le choix entre couplage et découplage n’est pas nécessairement binaire dans AEM. Vous pouvez utiliser des fonctions découplées afin de gérer et diffuser votre contenu pour différents points d’entrée tout en permettant aux auteurs de contenu de modifier des applications sur une seule page. Le tout dans AEM.
 
 >[!TIP]
 >
@@ -55,4 +55,4 @@ Vous disposez de plusieurs ressources pour commencer à utiliser AEM fonctionnal
 | [Parcours de développement découplé](/help/journey-headless/developer/overview.md) | **En tant qu’utilisateurs peu familiers avec AEM et avec les technologies découplées**, faites vos premiers pas avec cette présentation complète d’AEM et de ses fonctionnalités découplées, des bases du découplage à la mise en ligne de votre premier projet découplé. | Guide | Développeurs **débutants avec AEM et le découplage** | 1 heure |
 | [Guide de prise en main du mode découplé](/help/sites-developing/headless/getting-started/introduction.md) | **Pour les utilisateurs AEM expérimentés** qui ont besoin d’un bref résumé des principales fonctionnalités d’AEM découplé, consultez cet aperçu de démarrage rapide. | Démarrage rapide | Développeurs, Administrateurs **avec une expérience d’AEM** | 20 minutes |
 | [Prise en main avec le tutoriel pratique d’AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=fr) | **Si vous préférez une approche pratique et êtes déjà familier avec AEM**, ce tutoriel aborde directement la création d’un projet simple en mode découplé. | Tutoriel | Développeurs | 2 heures |
-| [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr) | Cette collection de ressources est fournie pour les deux **new** et **expérience** développeurs. | Collecte de ressources | Développeurs | |
+| [Portail de développement d’AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr) | Cette collection de ressources est fournie pour les développeurs et développeuses de niveau **débutant** et **expérimenté**. | Collection de ressources | Développeurs et développeuses | |

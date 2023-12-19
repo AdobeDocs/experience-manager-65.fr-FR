@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 13%
+source-wordcount: '1083'
+ht-degree: 94%
 
 ---
 
@@ -17,32 +17,32 @@ ht-degree: 13%
 
 ## Consignes relatives à l’utilisation des modèles et des composants {#guidelines-for-using-templates-and-components}
 
-Les composants et les modèles Adobe Experience Manager (AEM) se composent d’une boîte à outils puissante. Ils peuvent être utilisés par les développeurs pour offrir aux utilisateurs, éditeurs et administrateurs de sites web la possibilité d’adapter leurs sites web aux besoins changeants de l’entreprise (agilité du contenu). Tout cela tout en conservant la disposition uniforme des sites (protection de la marque).
+Les composants et les modèles Adobe Experience Manager (AEM) se composent d’une boîte à outils puissante. Ils peuvent être utilisés par les développeurs et développeuses pour offrir aux utilisateurs et utilisatrices, aux éditeurs et éditrices, ainsi qu’aux administrateurs et administratrices de sites web la possibilité d’adapter leurs sites web aux besoins changeants de l’entreprise (agilité du contenu). Ils permettent en outre de conserver la disposition uniforme des sites (protection de la marque).
 
 Un défi classique pour une personne responsable d’un site web, ou d’un ensemble de sites web (par exemple, dans une succursale d’une entreprise globale), est d’introduire un nouveau type de présentation de contenu sur leurs sites web.
 
-Supposons qu’il soit nécessaire d’ajouter une page de liste de discussion aux sites web, qui répertorie des extraits d’autres articles déjà publiés. La page doit avoir la même conception et la même structure que le reste du site web.
+Supposons qu’il soit nécessaire d’ajouter aux sites web une page de liste d’actualités, qui répertorie des extraits d’autres articles déjà publiés. La page doit avoir la même conception et la même structure que le reste du site web.
 
-La méthode recommandée pour résoudre un tel problème serait la suivante :
+La méthode recommandée dans ces cas est la suivante :
 
-* Réutiliser un modèle existant pour créer un type de page. Le modèle définit en gros la structure de la page (éléments de navigation, panneaux, etc.), qui est affinée par sa conception (CSS, graphiques).
+* Réutiliser un modèle existant pour créer un type de page. Le modèle définit grossièrement la structure de la page (éléments de navigation, panneaux, etc.), qui est affinée par sa conception (CSS, graphiques).
 * Utilisez le système de paragraphes (parsys/iparsys) sur les nouvelles pages.
-* Définissez le droit d’accès au mode Conception des systèmes de paragraphes, de sorte que seules les personnes autorisées (généralement l’administrateur) puissent les modifier.
-* Définissez les composants autorisés dans le système de paragraphes donné afin que les éditeurs puissent ensuite placer les composants requis sur la page. Dans ce cas, il peut s’agir d’un composant de liste, qui peut parcourir une sous-arborescence de pages et extraire les informations en fonction de règles prédéfinies.
-* Les éditeurs ajoutent et configurent les composants autorisés sur les pages dont ils sont responsables, afin de fournir les fonctionnalités (informations) demandées à l’entreprise.
+* Définissez le droit d’accès au mode Conception des systèmes de paragraphes, de sorte que seules les personnes autorisées (généralement l’administrateur ou l’administratrice) puissent les modifier.
+* Définissez les composants autorisés dans le système de paragraphes donné afin que les éditeurs et éditrices puissent ensuite placer les composants requis sur la page. Dans ce cas, il peut s’agir d’un composant de liste, qui peut parcourir une sous-arborescence de pages et extraire les informations en fonction de règles prédéfinies.
+* Les éditeurs et éditrices ajoutent et configurent les composants autorisés sur les pages dont ils ou elles sont responsables, afin de fournir les fonctionnalités (informations) demandées à l’entreprise.
 
-Cela illustre la manière dont cette approche permet aux utilisateurs et aux administrateurs du site web de répondre rapidement aux besoins de l’entreprise, sans avoir à faire appel aux équipes de développement. Les autres méthodes, comme la création d’un modèle, sont généralement un exercice coûteux qui nécessite un processus de gestion du changement et la participation de l’équipe de développement. Cela rend le processus entier plus long et coûteux.
+Cette méthode illustre la manière dont cette approche permet aux utilisateurs et utilisatrices, ainsi qu’aux administrateurs et administratrices du site web de répondre rapidement aux besoins de l’entreprise, sans avoir à faire appel aux équipes de développement. Les autres méthodes, comme la création d’un modèle, sont généralement un exercice coûteux qui nécessite un processus de gestion du changement et la participation de l’équipe de développement. Dans ce cas, le processus entier est plus long et coûteux.
 
-Les développeurs de systèmes basés sur AEM doivent donc utiliser :
+Les développeurs et développeuses de systèmes basés sur AEM doivent donc utiliser :
 
-* modèles et contrôle d’accès à la conception de système de paragraphes pour l’uniformité et la protection de la marque
-* système de paragraphes, y compris ses options de configuration pour plus de flexibilité.
+* des modèles et contrôle d’accès à la conception de système de paragraphes pour l’uniformité et la protection de la marque ;
+* un système de paragraphes, y compris ses options de configuration, pour plus de flexibilité.
 
-Dans la plupart des projets courants, les règles générales suivantes s’appliquent aux développeurs :
+Dans la plupart des projets courants, les règles générales suivantes s’appliquent aux développeurs et développeuses :
 
-* Maintenez le nombre de modèles bas, aussi bas que le nombre de structures de pages fondamentalement différentes sur les sites web.
+* Optez pour un nombre de modèles peu élevé, aussi peu élevé que le nombre de structures de pages fondamentalement différentes sur les sites web.
 * Fournissez la flexibilité et les fonctionnalités de configuration nécessaires à vos composants personnalisés.
-* Optimisez l’utilisation de la puissance et de la flexibilité du système de paragraphes AEM : les composants parsys et iparsys.
+* Optimisez l’utilisation de la puissance et de la flexibilité du système de paragraphes AEM grâce aux composants parsys et iparsys.
 
 ### Personnalisation des composants et autres éléments {#customizing-components-and-other-elements}
 
@@ -52,7 +52,7 @@ Cela peut être effectué en copiant et en remplaçant la définition existante.
 
 >[!NOTE]
 >
->Voir [Utilisation des recouvrements](/help/sites-developing/overlays.md) pour plus d’informations.
+>Voir [Utilisation des incrustations](/help/sites-developing/overlays.md) pour plus d’informations.
 
 Par exemple :
 
@@ -60,7 +60,7 @@ Par exemple :
 
   Cette procédure suppose de superposer une définition de composant :
 
-   * Création d’un dossier de composants dans `/apps/<website-name>/components/<MyComponent>` en copiant un composant existant :
+   * Créez un dossier de composants dans `/apps/<website-name>/components/<MyComponent>` en copiant un composant existant :
 
       * Par exemple, pour personnaliser le composant Texte, copiez :
 
@@ -71,16 +71,16 @@ Par exemple :
 
   Ce cas implique le recouvrement d’un servlet :
 
-   * Dans le référentiel, copiez un ou plusieurs scripts par défaut :
+   * Dans le référentiel, copiez un ou plusieurs scripts par défaut :
 
       * de `/libs/sling/servlet/errorhandler/`
       * vers `/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
 >
->**** Vous ne devez rien modifier dans le chemin `/libs`. 
+>**Ne modifiez rien** dans le chemin d’accès `/libs`.
 >
->La raison en est que le contenu de `/libs` est remplacé la prochaine fois que vous mettez à niveau votre instance (et peut être remplacé lorsque vous appliquez un correctif ou un Feature Pack).
+>Cela est dû au fait que le contenu du `/libs` sera remplacé lors de la prochaine mise à niveau de votre instance (et peut être remplacé lorsque vous appliquez un correctif ou un pack de fonctionnalités).
 >
 >Pour la configuration et les autres modifications :
 >
@@ -89,77 +89,77 @@ Par exemple :
 
 ## Quand utiliser les requêtes JCR et quand ne pas les utiliser {#when-to-use-jcr-queries-and-when-not-to-use-them}
 
-Lorsqu’elles sont utilisées correctement, les requêtes JCR sont un puissant outil. Elles sont adaptées aux éléments suivants :
+Lorsqu’elles sont utilisées correctement, les requêtes JCR sont un puissant outil. Elles sont adaptées pour :
 
-* requêtes réelles de l’utilisateur final, telles que les recherches de texte intégral sur le contenu.
-* les cas où du contenu structuré doit être trouvé dans l’ensemble du référentiel.
+* les requêtes réelles de l’utilisateur final ou de l’utilisatrice finale, telles que les recherches de texte intégral sur le contenu ;
+* les cas où du contenu structuré est recherché dans l’ensemble du référentiel.
 
   Dans ce cas, assurez-vous que les requêtes ne s’exécutent que si nécessaire. Par exemple, lors de l’activation des composants ou de l’invalidation du cache (par opposition, par exemple, aux étapes des workflows, aux gestionnaires d’événements qui se déclenchent lors des modifications de contenu et aux filtres).
 
-N’utilisez jamais de requêtes JCR pour les requêtes de rendu pures. Par exemple, les requêtes JCR ne sont pas appropriées pour les éléments suivants :
+N’utilisez jamais de requêtes JCR pour les requêtes de rendu pures. Par exemple, les requêtes JCR ne sont pas adaptées pour :
 
-* navigation du rendu
-* création d’une présentation des &quot;10 derniers éléments d’actualité les plus récents&quot;
+* le rendu de navigation ;
+* la création d’une présentation des « 10 derniers éléments d’actualité les plus récents » ;
 * l’affichage des nombres d’éléments de contenu.
 
 Pour le rendu du contenu, utilisez l’accès de navigation à l’arborescence de contenu au lieu d’effectuer une requête JCR.
 
 >[!NOTE]
 >
->Si vous utilisez la variable [Query Builder](/help/sites-developing/querybuilder-api.md), vous utilisez des requêtes JCR, car Query Builder génère des requêtes JCR en arrière-plan.
+>Si vous utilisez le [Query Builder](/help/sites-developing/querybuilder-api.md), vous utilisez des requêtes JCR, car le Query Builder génère des requêtes JCR en arrière-plan.
 >
 
-## Remarques relatives à la sécurité {#security-considerations}
+## Considérations relatives à la sécurité {#security-considerations}
 
 >[!NOTE]
 >
 >Il est également recommandé de se reporter à la [liste de contrôle de sécurité](/help/sites-administering/security-checklist.md).
 
-### Sessions JCR (Repository) {#jcr-repository-sessions}
+### Sessions JCR (référentiel) {#jcr-repository-sessions}
 
-Utilisez la session utilisateur, et non la session d’administration. Cela signifie que vous devez utiliser :
+Utilisez la session utilisateur, et non la session d’administration. Cela signifie que vous devez utiliser :
 
 ```java
 slingRequest.getResourceResolver().adaptTo(Session.class);
 ```
 
-### Protect contre les scripts intersites (XSS) {#protect-against-cross-site-scripting-xss}
+### la fonctionnalité Protection contre les failles cross-site scripting (XSS) {#protect-against-cross-site-scripting-xss}
 
-Les scripts de site à site (XSS) permettent aux pirates d’injecter du code dans des pages web consultées par d’autres utilisateurs. Cette vulnérabilité de sécurité peut être exploitée par des utilisateurs web malveillants pour contourner les contrôles d’accès.
+Les scripts de site à site (XSS) permettent aux pirates d’injecter du code dans des pages web consultées par d’autres utilisateurs. Cette vulnérabilité de sécurité peut être exploitée par des utilisateurs et utilisatrices web malveillants pour contourner les contrôles d’accès.
 
-AEM applique le principe de filtrage de tout le contenu fourni par l’utilisateur en sortie. La prévention de XSS se voit accorder la priorité la plus élevée lors des phases de développement et de test.
+AEM applique le principe de filtrage de tout le contenu fourni par l’utilisateur ou l’utilisatrice en sortie. La prévention contre les failles XSS se voit accorder la priorité la plus élevée lors des phases de développement et de test.
 
-En outre, un pare-feu d’application web, tel que [mod_security pour Apache](https://modsecurity.org), peut fournir un contrôle central et fiable sur la sécurité de l’environnement de déploiement et se protéger contre les attaques de script intersite qui n’avaient pas été détectées auparavant.
+En outre, un pare-feu d’application web, tel que le [mod_security pour Apache](https://modsecurity.org), peut fournir un contrôle centralisé fiable sur la sécurité de l’environnement de déploiement, ainsi qu’une protection contre les attaques XSS qui n’étaient pas détectées précédemment.
 
 >[!CAUTION]
 >
->L’exemple de code fourni avec AEM peut ne pas être protégé contre de telles attaques et repose généralement sur le filtrage des requêtes par un pare-feu d’application web.
+>L’exemple de code fourni avec AEM peut ne pas protéger contre de telles attaques et repose généralement sur le filtrage des requêtes par un pare-feu d’application web.
 
-La fiche de contrôle de l’API XSS contient des informations que vous devez connaître pour utiliser l’API XSS et rendre une application AEM plus sécurisée. Vous pouvez le télécharger ici :
+L’aide-mémoire de l’API XSS contient les informations que vous devez connaître pour utiliser l’API XSS et renforcer la sécurité d’une application AEM. Vous pouvez la télécharger ici :
 
-Aide-mémoire de XSSAPI.
+Aide-mémoire de l’API XSS.
 
 [Obtenir le fichier](assets/xss_cheat_sheet_2016.pdf)
 
 ### Sécurisation de la communication pour des informations confidentielles {#securing-communication-for-confidential-information}
 
-Pour toute application Internet, assurez-vous que lors du transport d’informations confidentielles
+Pour toute application Internet, assurez-vous que lors de la transmission d’informations confidentielles :
 
-* le trafic est sécurisé via SSL
-* POST HTTP, le cas échéant
+* le trafic est sécurisé via SSL ;
+* HTTP POST est utilisé, le cas échéant.
 
-Cela s’applique aux informations confidentielles sur le système (telles que la configuration ou l’accès administratif) et confidentielles sur ses utilisateurs (comme leurs informations personnelles).
+Cela s’applique aux informations confidentielles sur le système (telles que la configuration ou l’accès administratif) et aux informations confidentielles pour ses utilisateurs et utilisatrices (comme leurs informations personnelles).
 
 ## Tâches de développement distinctes {#distinct-development-tasks}
 
 ### Personnalisation des pages d’erreur {#customizing-error-pages}
 
-Les pages d’erreur peuvent être personnalisées pour AEM. Ceci est recommandé afin que l’instance ne révèle pas de traces sling sur les erreurs du serveur interne.
+Les pages d’erreur peuvent être personnalisées pour AEM. La personnalisation est recommandée afin que l’instance ne révèle pas de traces sling sur les erreurs du serveur interne.
 
-Voir [Personnalisation des pages d’erreur affichées par le gestionnaire d’erreurs](/help/sites-developing/customizing-errorhandler-pages.md) pour plus d’informations.
+Pour plus d’informations, consultez [Personnalisation des pages d’erreur affichées par le gestionnaire d’erreurs](/help/sites-developing/customizing-errorhandler-pages.md).
 
 ### Ouvrir les fichiers dans le processus Java™ {#open-files-in-the-java-process}
 
-Comme AEM peut accéder à de nombreux fichiers, il est recommandé que la variable [Ouvrir des fichiers pour un processus Java™](/help/sites-deploying/configuring.md#open-files-in-the-java-process) être explicitement configuré pour AEM.
+Étant donné qu’AEM peut accéder à de nombreux fichiers, il est recommandé que le nombre de [fichiers ouverts pour un processus Java™](/help/sites-deploying/configuring.md#open-files-in-the-java-process) soit configuré explicitement pour AEM.
 
-Pour minimiser ce problème, le développement doit s’assurer que tout fichier ouvert est correctement fermé lorsque (de manière significative) possible.
+Pour minimiser ce problème, vous devriez vous assurer lors du développement que tout fichier ouvert est correctement fermé dès que possible (de manière raisonnable).

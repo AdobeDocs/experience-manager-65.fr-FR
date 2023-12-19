@@ -10,7 +10,7 @@ exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '831'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 91%
 
 Les lancements vous permettent de développer efficacement du contenu en vue d’une publication ultérieure.
 
-Un lancement est créé pour vous permettre de préparer les modifications pour une publication ultérieure (tout en conservant vos pages actives). Après avoir modifié et mis à jour vos pages de lancement, vous devez les promouvoir de nouveau dans la source, puis activer les pages source (de niveau supérieur). Le fait de promouvoir les pages duplique le contenu du lancement sur les pages source. Cette action peut être effectuée manuellement ou automatiquement (en fonction des champs définis lors de la création et de la modification du lancement).
+Un lancement est créé afin de vous permettre d’activer des modifications pour une publication ultérieure (tout en conservant vos pages actives). Après avoir modifié et mis à jour vos pages de lancement, vous devez les promouvoir de nouveau dans la source, puis activer les pages source (de niveau supérieur). Le fait de promouvoir les pages duplique le contenu du lancement sur les pages source. Cette action peut être effectuée manuellement ou automatiquement (en fonction des champs définis lors de la création et de la modification du lancement).
 
 Par exemple, les pages de produits saisonniers de votre boutique en ligne sont mises à jour chaque trimestre, afin que les produits présentés correspondent à la saison en cours. Pour préparer la prochaine mise à jour trimestrielle, vous pouvez créer un lancement des pages web appropriées. Tout au long du trimestre, les modifications suivantes sont cumulées dans la copie de lancement :
 
@@ -42,7 +42,7 @@ Cette section explique comment créer, modifier et promouvoir (et, le cas éché
 
 Les lancements vous permettent de développer efficacement du contenu pour une prochaine publication d’une ou de plusieurs pages web activées.
 
-Les lancements permettent d’effectuer les opérations suivantes :
+Les lancements permettent d’effectuer les opérations suivantes :
 
 * Créez une copie de vos pages source :
 
@@ -107,11 +107,11 @@ Les lancements permettent d’effectuer les opérations suivantes :
 
 ### Console Lancements {#the-launches-console}
 
-La console Lancements présente un aperçu de vos lancements et vous permet d’agir sur les lancements répertoriés. Vous pouvez accéder à la console via :
+La console de lancements fournit une vue d’ensemble de vos lancements et permet d’appliquer des actions sur les lancements répertoriés. Vous pouvez accéder à la console via :
 
 * La console **Outils** : **Outils**, **Sites**, **Lancements**.
 
-* Ou directement avec [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
+* Ou directement avec [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html?lang=fr)
 
 ## Lancements dans les références (console Sites) {#launches-in-references-sites-console}
 

@@ -1,17 +1,17 @@
 ---
 title: Console des composants
-description: La console Composants vous permet de parcourir tous les composants définis pour votre instance et d’afficher les informations clés de chaque composant.
+description: La console des composants vous permet de parcourir tous les composants définis pour votre instance et d’afficher les informations clés pour chacun d’eux.
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 55%
+ht-degree: 93%
 
 ---
 
 # Console des composants{#components-console}
 
-La console Composants vous permet de parcourir tous les composants définis pour votre instance et d’afficher les informations clés de chaque composant.
+La console des composants vous permet de parcourir tous les composants définis pour votre instance et d’afficher les informations clés pour chacun d’eux.
 
 Il est accessible à partir de **Outils >** **Général >** **Composants**. Dans la console, les vues Carte et Liste sont disponibles. Comme il n’existe pas de structure d’arborescence pour les composants, le mode Colonnes n’est pas disponible.
 
@@ -38,13 +38,13 @@ Pour afficher des détails sur un composant spécifique, cliquez sur la ressourc
   L’onglet Propriétés vous permet d’effectuer les opérations suivantes :
 
    * Afficher les propriétés générales du composant.
-   * Afficher le mode de [l’icône ou l’abréviation a été définie.](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) pour le composant.
+   * Observez comment l’[icône ou l’abréviation a été définie](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) pour le composant.
 
       * Cliquez sur la source de l’icône pour accéder à ce composant.
 
-   * Afficher la variable **Type de ressource** et **Resource Super Type** (s’il est défini) pour le composant.
+   * Affichez le **type de ressource** et le **super type de ressource** (si défini) pour le composant.
 
-      * Cliquez sur le type de super-ressource pour accéder à ce composant.
+      * Cliquez sur le super type de ressource pour accéder à ce composant.
 
   >[!NOTE]
   >
@@ -64,6 +64,6 @@ Pour afficher des détails sur un composant spécifique, cliquez sur la ressourc
 
 * **Documentation**
 
-  Si le développeur a fourni [documentation du composant](/help/sites-developing/developing-components.md#documenting-your-component), il apparaîtra sur le **Documentation** . Si aucune documentation n’est disponible, l’onglet **Documentation** n’est pas affiché.
+  Si le développeur ou la développeuse a fourni la [documentation du composant](/help/sites-developing/developing-components.md#documenting-your-component), elle apparaîtra dans l’onglet **Documentation**. Si aucune documentation n’est disponible, l’onglet **Documentation** n’est pas affiché.
 
   ![Documentation](assets/chlimage_1-171.png)

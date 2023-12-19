@@ -9,7 +9,7 @@ exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '2072'
-ht-degree: 73%
+ht-degree: 77%
 
 ---
 
@@ -397,7 +397,7 @@ Si cette case est cochée, les options sont présentées sous forme de cases à 
 
 ### Création et ouverture d’une configuration personnalisée {#creating-opening-a-customized-configuration}
 
-1. Accédez à **Outils** &quot;  **Général** &quot; **Rechercher dans Forms**.
+1. Accédez à **Outils** >> **Général** >> **Formulaires de recherche**.
 
 1. Sélectionnez la configuration à personnaliser.
 1. Cliquez sur l’icône **Modifier** pour ouvrir la configuration à mettre à jour.
@@ -418,7 +418,7 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 1. [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
 1. Si vous souhaitez ajouter un champ, ouvrez le **Sélectionner un prédicat** et faites glisser le prédicat requis vers l’emplacement requis. Par exemple, le **prédicat de période** :
 
-   ![Modification d’un formulaire de recherche](assets/chlimage_1-375.png)
+   ![Modifier un formulaire de recherche](assets/chlimage_1-375.png)
 
 1. Selon que :
 
@@ -432,7 +432,7 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 
    Par exemple, les paramètres du **prédicat de période** :
 
-   ![Propriétés du prédicat de plage de dates](assets/chlimage_1-376.png)
+   ![Propriétés du prédicat de la période](assets/chlimage_1-376.png)
 
 1. Apportez les modifications nécessaires et confirmez-les en cliquant sur **Terminé**.
 
@@ -440,11 +440,11 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 
 1. Sélectionnez l’icône Aperçu :
 
-   ![Aperçu des formulaires de recherche](do-not-localize/chlimage_1-31.png)
+   ![Prévisualiser les formulaires de recherche](do-not-localize/chlimage_1-31.png)
 
 1. Les formulaires de recherche s’affichent tels qu’ils sont affichés (entièrement développés) dans la colonne Rechercher de la console appropriée.
 
-   ![Aperçu du formulaire de recherche](assets/chlimage_1-377.png)
+   ![Prévisualiser le formulaire de recherche](assets/chlimage_1-377.png)
 
 1. **Fermer** l’aperçu afin que vous puissiez renvoyer et terminer la configuration.
 
@@ -453,7 +453,7 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 1. [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
 1. Sélectionnez le champ de prédicat (à droite), ouvrez l’onglet **Paramètres**, puis sélectionnez l’icône **Supprimer** (en bas à gauche).
 
-   ![Icône Supprimer](do-not-localize/chlimage_1-32.png)
+   ![Icône de suppression](do-not-localize/chlimage_1-32.png)
 
 1. Une boîte de dialogue demande la confirmation de l’action de suppression.
 
@@ -465,19 +465,19 @@ Une fois que vous avez personnalisé une configuration, celle-ci remplace les va
 
 >[!NOTE]
 >
->Vous ne pouvez supprimer aucune des configurations par défaut.
+>Vous ne pouvez supprimer aucune configuration par défaut.
 
 Les configurations personnalisées doivent être supprimées à partir de la console :
 
 1. Sélectionnez une configuration (par exemple, **Éditeur de page (Recherche de paragraphes)**), puis cliquez sur l’icône **Supprimer** de la barre d’outils :
 
-   ![Suppression d’un formulaire](assets/chlimage_1-378.png)
+   ![Supprimer un formulaire](assets/chlimage_1-378.png)
 
 1. La configuration personnalisée est supprimée et la valeur par défaut est rétablie (le symbole de cadenas réapparaît dans la console).
 
 ### Ajouter des prédicats d’options {#adding-options-predicates}
 
-Les prédicats d’options (options, propriété d’options) vous permettent de configurer un élément à rechercher. Ils sont utilisés pour rechercher quelque chose directement sous la page ; par exemple, une propriété sur le noeud de page.
+Les prédicats d’options (options, propriété d’options) permettent de configurer un élément à rechercher. Ils sont utilisés pour rechercher quelque chose directement sous la page ; par exemple, une propriété sur le noeud de page.
 
 L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle utilisé pour créer une page) illustre la procédure :
 
@@ -490,7 +490,7 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
    * `jcr:title` : libellé de champ à afficher dans le champ de recherche
    * `value` : valeur de la propriété à rechercher
 
-   ![Ajout d’options dans CRXDE](assets/chlimage_1-379.png)
+   ![Ajouter des options dans CRXDE](assets/chlimage_1-379.png)
 
    >[!NOTE]
    >
@@ -523,12 +523,12 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
 
      `/apps/cq/gui/content/common/options/predicates/templatetype`
 
-   ![Ajout d’un chemin de propriété](assets/chlimage_1-380.png)
+   ![Ajouter un chemin de propriété](assets/chlimage_1-380.png)
 
 1. Sélectionnez **Terminé** pour enregistrer la configuration.
 1. Accédez à la console appropriée (dans cet exemple, **Sites**) et ouvrez le rail **Rechercher**. Les formulaires de recherche qui viennent d’être définis, ainsi que les différentes options, sont visibles. Sélectionnez l’option requise pour afficher les résultats de la recherche :
 
-   ![Les résultats finaux](assets/chlimage_1-381.png)
+   ![Résultats finaux](assets/chlimage_1-381.png)
 
 ## Autorisations d’utilisateur {#user-permissions}
 

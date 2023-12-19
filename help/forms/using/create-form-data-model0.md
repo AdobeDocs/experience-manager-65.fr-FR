@@ -9,7 +9,7 @@ exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '2684'
-ht-degree: 82%
+ht-degree: 84%
 
 ---
 
@@ -21,7 +21,7 @@ Ce tutoriel fait partie de la série [Création de votre première communication
 
 ## À propos du tutoriel {#about-the-tutorial}
 
-Le module d’intégration des données AEM Forms permet de créer un modèle de données de formulaire à partir de sources de données principales disparates, telles que les profils utilisateur AEM, les services web RESTful, les services web SOAP, les services OData et les bases de données relationnelles. Vous pouvez configurer des objets et des services de modèle de données dans un modèle de données de formulaire et les associer à un formulaire adaptatif. Les champs de formulaire adaptatif sont liés aux propriétés de l’objet de modèle de données. Les services vous permettent de préremplir le formulaire adaptatif et d’écrire les données de formulaire soumises dans l’objet de modèle de données.
+Le module d’intégration de données AEM Forms vous permet de créer un modèle de données de formulaire à partir de sources de données tierces telles que le profil utilisateur AEM, les services web RESTful, les services web basés sur SOAP, les services OData et les bases de données relationnelles. Vous pouvez configurer des objets et des services de modèle de données dans un modèle de données de formulaire et les associer à un formulaire adaptatif. Les champs de formulaire adaptatif sont liés aux propriétés de l’objet de modèle de données. Les services vous permettent de préremplir le formulaire adaptatif et d’écrire les données de formulaire soumises dans l’objet de modèle de données.
 
 Pour plus d’informations sur l’intégration des données de formulaire et sur le modèle de données du formulaire, voir [Intégration de données AEM Forms](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/data-integration.html).
 
@@ -238,7 +238,7 @@ Exécutez les étapes suivantes pour créer des propriétés enfant calculées p
 
    ![Règle des frais d’utilisation](assets/usage_charges_rule_all_new.png)
 
-1. Sélectionner **Terminé**. La règle est créée dans l’éditeur de règles.
+1. Sélectionnez **Terminé**. La règle est créée dans l’éditeur de règles.
 1. Sélectionner **Fermer** pour fermer la fenêtre de l’éditeur de règles.
 
 ### Ajouter des associations entre les objets de modèle de données {#add-associations-between-data-model-objects}
@@ -393,7 +393,7 @@ Procédez comme suit pour effectuer le test :
 
 ### Modifier et enregistrer des données d’exemple {#edit-and-save-sample-data}
 
-L’éditeur de modèle de données de formulaire vous permet de générer des données d’exemple pour toutes les propriétés d’objet de modèle de données, y compris les propriétés calculées, dans un modèle de données de formulaire. Il s’agit d’un ensemble de valeurs aléatoires conformes au type de données configuré pour chaque propriété. Vous pouvez également modifier et enregistrer des données qui sont conservées même si vous régénérez les données d’exemple.
+L’éditeur de modèle de données de formulaire vous permet de générer des exemples de données pour toutes les propriétés d’objet de modèle de données, y compris les propriétés calculées, dans un modèle de données de formulaire. Il s’agit d’un ensemble de valeurs aléatoires conformes au type de données configuré pour chaque propriété. Vous pouvez également modifier et enregistrer des données qui sont conservées même si vous régénérez les données d’exemple.
 
 Procédez comme suit pour générer, modifier et enregistrer des données d’exemple :
 

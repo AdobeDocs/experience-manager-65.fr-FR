@@ -8,7 +8,7 @@ exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1349'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -139,7 +139,7 @@ Pour autoriser le package, procédez comme suit sur toutes les instances dʼaute
 
 La communication interactive est l’approche par défaut et recommandée pour créer des communications client dans AEM 6.5 Forms. Si vous avez mis à niveau ou migré depuis une version précédente et envisagez de continuer à utiliser des lettres (gestion des correspondances), installez le [package de compatibilité AEMFD](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=fr).
 
-Le package de compatibilité AEMFD vous permet d’utiliser les ressources suivantes d’AEM 6.4 Forms, AEM 6.3 Forms et d’Forms 6.2 d’6.5 Forms :
+Le package de compatibilité AEMFD vous permet d’utiliser les ressources suivantes d’AEM 6.4 Forms, d’AEM 6.3 Forms et d’AEM 6.2 Forms sur AEM 6.5 Forms :
 
 * Fragments de document
 * Lettres

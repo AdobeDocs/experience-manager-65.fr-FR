@@ -9,8 +9,8 @@ thumbnail: 39476.jpg
 exl-id: 48479725-8b52-4ff2-a599-d20958b26ee6
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 95%
+source-wordcount: '797'
+ht-degree: 97%
 
 ---
 
@@ -57,7 +57,7 @@ Le module complémentaire CIF peut être téléchargé à partir du [portail de 
 
 Pour le développement de projet CIF local à l’aide d’AEM et du module complémentaire CIF, procédez comme suit :
 
-1. Procurez-vous la version AEM 6.5 et installez le pack de services AEM 6.5. AEM 6.5 Service Pack 7 est requis, mais Adobe recommande d’installer le dernier Service Pack disponible.
+1. Procurez-vous la version AEM 6.5 et installez le pack de services AEM 6.5. Le Pack de services 7 d’AEM 6.5 est requis, mais Adobe recommande d’installer le dernier Pack de services disponible.
 
 1. Décompressez le fichier AEM .jar pour créer le dossier `crx-quickstart` et exécutez :
 

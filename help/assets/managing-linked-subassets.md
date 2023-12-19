@@ -7,8 +7,8 @@ feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 96%
+source-wordcount: '1382'
+ht-degree: 97%
 
 ---
 
@@ -71,14 +71,14 @@ Cette procédure est similaire à l’[ajout de ressources en tant que référen
 
 ## [!DNL Adobe Photoshop] : ajout de ressources numériques en tant que références {#refps}
 
-1. Utilisez l’application de bureau [!DNL Experience Manager] pour accéder à [!DNL Experience Manager Assets]. Téléchargez et affichez les ressources sur le système de fichiers local. Utilisez la variable [!UICONTROL Placer les liens] fonctionnalité dans [!DNL Adobe Photoshop]. Consultez la section [Placement de ressources dans l’appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#place-assets-in-native-documents).
+1. Utilisez l’application de bureau [!DNL Experience Manager] pour accéder à [!DNL Experience Manager Assets]. Téléchargez et affichez les ressources sur le système de fichiers local. Utilisez la fonctionnalité [!UICONTROL Placer les liens] dans [!DNL Adobe Photoshop]. Consultez la section [Placement de ressources dans l’appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#place-assets-in-native-documents).
 
 1. Enregistrez le fichier [!DNL Photoshop] sur le lecteur monté ou [chargez-le](/help/assets/manage-assets.md#uploading-assets) vers le référentiel [!DNL Experience Manager].
 1. Une fois le workflow terminé, les références aux ressources existantes dans [!DNL Experience Manager] sont répertoriées dans la page des détails de la ressource.
 
    Pour afficher les ressources référencées, fermez le [rail](/help/sites-authoring/basic-handling.md#rail-selector) dans la page des détails de la ressource.
 
-1. Les ressources référencées contiennent également la liste des ressources à partir desquelles elles sont référencées. Pour afficher la liste des ressources référencées, accédez à la page des détails de la ressource et fermez le [rail](/help/sites-authoring/basic-handling.md#rail-selector).
+1. Les ressources référencées contiennent également la liste des ressources à partir desquelles elles sont référencées. Pour afficher la liste des ressources référencées, accédez à la page des détails de la ressource et fermez le [Rail](/help/sites-authoring/basic-handling.md#rail-selector).
 
 >[!NOTE]
 >
@@ -128,7 +128,7 @@ Les options suivantes sont disponibles dans la barre d’outils, dans le rail de
 
 * **[!UICONTROL Propriétés]** ouvre l’option [!UICONTROL Propriétés] de la sous-ressource spécifique.
 
-* **[!UICONTROL Annoter]** permet d’annoter la sous-ressource spécifique. Les annotations que vous utilisez sur des sous-ressources distinctes sont collectées et affichées ensemble lorsque la ressource parent est ouverte en affichage.
+* L’option **[!UICONTROL Annoter]** vous permet d’annoter la sous-ressource spécifique. Les annotations que vous utilisez sur des sous-ressources distinctes sont collectées et affichées ensemble lorsque la ressource parent est ouverte en affichage.
 
 * **[!UICONTROL Aperçu de la page]** affiche toutes les sous-ressources simultanément.
 
@@ -136,7 +136,7 @@ Les options suivantes sont disponibles dans la barre d’outils, dans le rail de
 
 ## Bonnes pratiques et restrictions {#best-practice-limitation-tips}
 
-* La génération de sous-ressources peut être très gourmande en ressources, quel que soit le déploiement d’[!DNL Experience Manager]. Si vous générez des sous-ressources lors du chargement de ressources complexes, ajoutez l’étape dans le workflow Ressource de mise à jour de gestion des ressources numériques. Si vous générez des sous-ressources à la demande, créez un workflow distinct pour générer des sous-ressources. Un workflow dédié vous permet d’ignorer les autres étapes du workflow Ressources de mise à jour de gestion des actifs numériques et d’enregistrer les ressources de calcul.
+* La génération de sous-ressources peut être très gourmande en ressources, quel que soit le déploiement d’[!DNL Experience Manager]. Si vous générez des sous-ressources lors du chargement de ressources complexes, ajoutez l’étape dans le workflow Ressource de mise à jour de gestion des ressources numériques. Si vous générez des sous-ressources à la demande, créez un workflow distinct pour générer des sous-ressources. Un workflow dédié vous permet d’ignorer les autres étapes du workflow Ressource de mise à jour de gestion des ressources numériques et d’économiser en capacités de calcul.
 
 >[!MORELIKETHIS]
 >

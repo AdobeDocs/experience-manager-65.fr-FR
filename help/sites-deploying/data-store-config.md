@@ -8,7 +8,7 @@ feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3549'
+source-wordcount: '3476'
 ht-degree: 99%
 
 ---
@@ -141,7 +141,7 @@ AEM peut être configuré pour stocker des donnés dans le service Simple Stora
 
 >[!NOTE]
 >
->AEM 6.5 prend en charge le stockage de données dans Amazon S3, mais la prise en charge n’est pas étendue au stockage de données dans d’autres plateformes, dont les fournisseurs peuvent avoir leurs propres implémentations des API Amazon S3.
+>AEM 6.5 prend en charge le stockage de données dans Amazon S3, mais la prise en charge n’est pas étendue au stockage de données dans d’autres plateformes, dont les fournisseurs peuvent avoir leurs propres implémentations des API Amazon S3.
 
 Pour activer la fonctionnalité du magasin de données S3, un pack de fonctionnalités contenant le connecteur du magasin de données S3 doit être téléchargé et installé. Accédez au [référentiel Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/), puis téléchargez la dernière version des versions 1.10.x du pack de fonctionnalités (par exemple, com.adobe.granite.oak.s3connector-1.10.0.zip). En outre, vous devez également télécharger et installer le dernier pack de services AEM, comme indiqué à la page [Notes de mise à jour d’AEM 6.5](/help/release-notes/release-notes.md).
 
@@ -455,7 +455,7 @@ Vous pouvez utiliser le fichier de configuration avec les options suivantes :
 
 En plus des paramètres ci-dessus, les paramètres suivants peuvent également être configurés :
 
-* path : chemin d’accès du magasin de données. La valeur par défaut est `<aem-install>/repository/datastore.`.
+* path : chemin d’accès de l’entrepôt de données. La valeur par défaut est de `<aem-install>/repository/datastore.`.
 * RecordLength : taille minimale d’un objet devant être enregistré dans le magasin de données. La valeur par défaut est de 16 Ko.
 * maxCachedBinarySize : les fichiers binaires dont la taille est inférieure ou égale à cette taille sont stockés dans le cache mémoire. La taille est en octets. La valeur par défaut est de 17 408 (17 Ko).
 * cacheSize : taille du cache. La valeur est exprimée en octets. La valeur par défaut est 64 Go.
@@ -481,7 +481,7 @@ Le processus de nettoyage de la mémoire du magasin de données est utilisé pou
 Vous pouvez exécuter le nettoyage de la mémoire du magasin de données en :
 
 1. En accédant à la console JMX qui se trouve à l’adresse *https://&lt;serveraddress:port>/system/console/jmx*
-1. Recherchant **RepositoryManagement.** Une fois que vous aurez trouvé le gestionnaire de référentiel MBean, cliquez dessus pour afficher les options disponibles.
+1. Recherche de **RepositoryManagement.** Une fois que vous avez trouvé le gestionnaire de référentiel MBean, cliquez dessus pour afficher les options disponibles.
 1. Faites défiler la page jusqu’à la fin, puis cliquez sur le lien **startDataStoreGC(boolean markOnly)**.
 1. Dans la boîte de dialogue suivante, saisissez `false` pour le paramètre `markOnly`, puis cliquez sur **Invoquer** :
 

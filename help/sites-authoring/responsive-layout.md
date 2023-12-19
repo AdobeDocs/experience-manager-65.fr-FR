@@ -9,15 +9,15 @@ exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1798'
-ht-degree: 82%
+ht-degree: 91%
 
 ---
 
 # Disposition réactive{#responsive-layout}
 
-AEM permet d’avoir une mise en page réactive pour vos pages à l’aide de la fonction **Conteneur de mises en page** composant.
+AEM vous propose une disposition réactive des pages à l’aide du composant **Conteneur de disposition**.
 
-Vous disposez ainsi d’un système de paragraphes qui vous permet de positionner les composants dans une grille réactive. Cette grille peut réorganiser la mise en page en fonction de l’appareil/de la taille de fenêtre et du format. Le composant est utilisé conjointement avec la fonction [**Disposition** mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), qui vous permet de créer et de modifier votre mise en page réactive en fonction de l’appareil.
+Il fournit un système de paragraphes qui permet de positionner des composants sur une grille réactive. Cette grille peut réorganiser la disposition en fonction de la taille et du format de la fenêtre/l’appareil. Le composant est utilisé avec le [**mode Disposition**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), ce qui permet de créer et de modifier votre disposition réactive en fonction de l’appareil.
 
 Le conteneur de mise en page :
 
@@ -38,14 +38,14 @@ AEM effectue une mise en page réactive de vos pages en combinant plusieurs méc
 
 * Composant [**Conteneur de mise en page**](#adding-a-layout-container-and-its-content-edit-mode)
 
-  Ce composant est disponible dans la [explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser) et fournit un système grid-paragraph qui permet d’ajouter et de positionner des composants dans une grille réactive. Il peut également être défini comme le système de paragraphes par défaut de votre page.
+  Ce composant, qui est disponible dans l’[explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser), fournit un système de paragraphes/grille qui permet d’ajouter et de positionner des composants dans une grille réactive. Il peut également être défini comme le système de paragraphes par défaut de votre page.
 
 * [**Mode Mise en page**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
-  Une fois que le conteneur de mises en page est positionné sur la page, vous pouvez utiliser le mode **Mise en page** pour placer le contenu dans la grille réactive.
+  Une fois que le conteneur de disposition est positionné sur la page, vous pouvez utiliser le mode **Disposition** pour placer le contenu dans la grille réactive.
 
 * [**Émulateur**](#selecting-a-device-to-emulate)
-Vous pouvez ainsi créer et modifier des sites web réactifs qui réorganisent la mise en page en fonction de la taille de l’appareil ou de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur peut alors voir comment le contenu sera rendu à l’aide de l’émulateur.
+Vous pouvez ainsi créer et modifier des sites web réactifs qui réorganisent la disposition en fonction de la taille de l’appareil ou de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur ou l’utilisatrice peut alors voir comment le contenu est rendu à l’aide de l’émulateur.
 
 Grâce à ces mécanismes de grille réactive, vous pouvez :
 
@@ -69,7 +69,7 @@ En fonction de votre projet, le conteneur de mise en page peut être utilisé en
 
 Lorsque vous créez le contenu de votre site web, vous voulez être certain que celui-ci sera affiché correctement sur l’appareil utilisé pour le consulter :
 
-AEM permet de définir des mises en page en fonction de la largeur de l’appareil :
+Dans AEM, vous pouvez définir des dispositions qui dépendent de la largeur de l’appareil :
 
 * L’émulateur vous permet d’émuler ces mises en page sur divers appareils. Tout comme le type d’appareil, l’orientation, qui est sélectionnée à l’aide de l’option **Rotation du périphérique**, peut avoir une incidence sur le point d’arrêt sélectionné lors du changement de largeur.
 * Les points d’arrêt sont des points qui séparent les définitions de mise en page.
@@ -107,7 +107,7 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
 
    La barre d’outils de l’émulateur affiche des options de mise en page supplémentaires :
 
-   * **Rotation du périphérique** - Permet de faire pivoter un appareil de l’orientation verticale (portrait) à l’orientation horizontale (paysage), et inversement.
+   * **Rotation de l’appareil** : permet de faire pivoter un appareil de l’orientation verticale (portrait) à l’orientation horizontale (paysage), et inversement.
 
      ![Rotation de l’appareil](do-not-localize/screen_shot_2018-03-23at084612.png) ![Rotation de l’appareil](do-not-localize/screen_shot_2018-03-23at084637.png)
 
@@ -218,7 +218,7 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
    * **Parent**
 
-     Permet de sélectionner l’intégralité du composant Conteneur de mises en page pour effectuer une action.
+     Permet de sélectionner l’intégralité du composant Conteneur de disposition pour effectuer une opération.
 
    * **Flotter sur une nouvelle ligne**
 

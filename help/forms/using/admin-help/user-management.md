@@ -1,6 +1,6 @@
 ---
-title: User Management
-description: User Management vous permet d’activer l’authentification unique entre les modules d’AEM forms et les applications protégées par Netegrity SiteMinder à l’aide de SAML. Ce document fournit des informations supplémentaires sur User Management.
+title: Gestion des utilisateurs et utilisatrices
+description: La gestion des utilisateurs et utilisatrices vous permet d’activer l’authentification unique (SSO) entre les modules d’AEM Forms et les applications protégées par Netegrity SiteMinder à l’aide du langage SAML. Ce document fournit des informations supplémentaires à propos de la gestion des utilisateurs et utilisatrices.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
@@ -9,45 +9,45 @@ exl-id: 1da1f6de-ac0d-4e0d-b8bb-956420e42699
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '472'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
 # Gestion des utilisateurs {#user-management}
 
-User Management vous permet d’activer l’authentification unique (SSO) entre les modules d’AEM forms et les applications protégées par Netegrity SiteMinder à l’aide du langage SAML (Security Assertion Markup Language). Lorsque la fonction SSO est implémentée, les pages d’ouverture de session utilisateur d’AEM forms ne sont plus obligatoires et ne s’affichent pas si l’utilisateur est déjà authentifié via le portail d’entreprise.
+La gestion des utilisateurs et utilisatrices vous permet d’activer l’authentification unique (SSO) entre les modules d’AEM Forms et les applications protégées par Netegrity SiteMinder à l’aide du langage SAML. Lorsque la fonction SSO est implémentée, les pages d’ouverture de session utilisateur d’AEM forms ne sont plus obligatoires et ne s’affichent pas si l’utilisateur est déjà authentifié via le portail d’entreprise.
 
-Pour plus d’informations sur l’amélioration des performances de synchronisation de base de données et d’annuaire pour DB2, voir [Base de données IBM DB2 : exécution de commandes pour une maintenance régulière](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
+Pour plus d’informations sur l’amélioration des performances de synchronisation de base de données et d’annuaire pour DB2, voir [Base de données IBM DB2 : exécution de commandes pour une maintenance régulière](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
 
-## Configuration de User Management pour un serveur LDAP compatible SSL {#configuring-user-management-for-an-ssl-enabled-ldap-server}
+## Configuration de la gestion des utilisateurs et utilisatrices pour un serveur LDAP compatible SSL {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 
-Si vous disposez d’un serveur LDAP compatible SSL, configurez User Management pour l’utiliser. (Voir [Configuration de User Management pour un serveur LDAP compatible SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)
+Si vous disposez d’un serveur LDAP compatible SSL, configurez la gestion des utilisateurs et utilisatrices pour l’utiliser. (Voir [Configuration de la gestion des utilisateurs et utilisatrices pour un serveur LDAP compatible SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)
 
-## Définition des privilèges d’utilisateur à utiliser avec Document Security {#setting-user-privileges-for-use-with-document-security}
+## Définition des privilèges utilisateur à utiliser avec Document Security {#setting-user-privileges-for-use-with-document-security}
 
-Créez un utilisateur administrateur disposant des privilèges appropriés pour créer des utilisateurs et des groupes. Si votre environnement d’AEM forms comprend Document Security, accordez le droit de gérer les utilisateurs invités et locaux à un utilisateur qui sera l’administrateur de ces utilisateurs. Attribuez également le rôle Utilisateur d’Administration Console pour permettre à l’utilisateur d’accéder à Administration Console. (Voir [Création et configuration des rôles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
+Créez une personne administratrice disposant des privilèges appropriés pour la création d’utilisateurs, d’utilisatrices et de groupes. Si votre environnement d’AEM Forms comprend Document Security, accordez le droit de gérer les personnes invitées et locales à une personne qui sera l’administratrice de ces utilisateurs et utilisatrices. Attribuez également le rôle Utilisateur ou utilisatrice de la console d’administration pour permettre à la personne d’accéder à la console d’administration. (Voir [Création et configuration de rôles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
 
-Pour afficher les utilisateurs et les groupes dans les domaines sélectionnés lors des recherches d’utilisateurs de stratégies, un super-administrateur ou un administrateur de jeux de stratégies doit sélectionner et ajouter des domaines (créés dans User Management) à la liste des utilisateurs et des groupes visibles pour chaque jeu de stratégies créé.
+Pour afficher les utilisateurs, les utilisatrices et les groupes dans les domaines sélectionnés lors des recherches d’utilisateurs ou utilisatrices de politiques, une personne super-administratrice ou un administrateur ou administratrice de jeux de politiques doit sélectionner et ajouter des domaines (créés dans la gestion des utilisateurs et utilisatrices) à la liste des utilisateurs, des utilisatrices et des groupes visibles pour chaque jeu de politiques créé.
 
-La liste des utilisateurs et des groupes visibles est visible par le coordinateur de jeux de stratégies. Elle permet de restreindre les domaines que l’utilisateur final peut parcourir lorsqu’il choisit des utilisateurs ou des groupes à ajouter aux stratégies. Si cette tâche n’est pas effectuée, le coordinateur de jeux de stratégies ne trouvera aucun utilisateur ou groupe à ajouter à la stratégie. Il peut y avoir plusieurs coordinateurs de jeux de stratégies pour un jeu donné.
+La liste des utilisateurs, des utilisatrices et des groupes est visible par la personne coordinatrice de jeux de politiques. Elle permet de restreindre les domaines que l’utilisateur ou l’utilisatrice peut parcourir lorsqu’il ou elle choisit des utilisateurs, des utilisatrices ou des groupes à ajouter aux politiques. Si cette tâche n’est pas effectuée, la personne coordinatrice de jeux de politiques ne trouvera aucun utilisateur, utilisatrice ou groupe à ajouter à la politique. Un jeu de politiques peut avoir plusieurs personnes coordinatrices.
 
 >[!NOTE]
 >
->La création de domaines doit être effectuée avant la création de stratégies.
+>Vous devez créer les domaines avant de pouvoir créer des politiques.
 
-### Définition des utilisateurs et groupes visibles {#set-visible-users-and-groups}
+### Définition des utilisateurs, utilisatrices et groupes visibles {#set-visible-users-and-groups}
 
-Après avoir installé et configuré votre environnement d’AEM forms avec Document Security, configurez tous les domaines appropriés dans User Management.
+Après avoir installé et configuré votre environnement d’AEM Forms avec Document Security, configurez tous les domaines appropriés dans la gestion des utilisateurs et utilisatrices.
 
-1. Dans Administration Console, cliquez sur Services > Document Security > Stratégies, puis sur l’onglet Jeux de stratégies.
-1. Sélectionnez Jeu de stratégies global, puis cliquez sur l’onglet Utilisateurs et groupes visibles.
-1. Cliquez sur Ajouter un(s) domaine(s) et ajoutez des domaines existants selon les besoins.
-1. Accédez à Services > Document Security > Configuration > Mes stratégies, puis cliquez sur l’onglet Utilisateurs et groupes visibles .
-1. Cliquez sur Ajouter un(s) domaine(s) et ajoutez des domaines existants selon les besoins.
+1. Dans la console d’administration, cliquez sur Services > Document Security > Politiques, puis sur l’onglet Jeux de politiques.
+1. Sélectionnez Jeu de politiques global, puis cliquez sur l’onglet Utilisateurs, utilisatrices et groupes visibles.
+1. Cliquez sur Ajouter un ou des domaine(s) et ajoutez des domaines existants selon les besoins.
+1. Accédez à Services > Document Security > Configuration > Mes politiques, puis cliquez sur l’onglet Utilisateurs, utilisatrices et groupes visibles.
+1. Cliquez sur Ajouter un ou des domaine(s) et ajoutez des domaines existants selon les besoins.
 
-## Restrictions utilisateur de l’administrateur {#administrator-user-restrictions}
+## Restrictions de la personne administratrice {#administrator-user-restrictions}
 
-Pour des raisons de sécurité, les utilisateurs disposant de certains types de privilèges d’administrateur ne peuvent pas accéder aux pages Web des utilisateurs finaux de Workspace. Étant donné que ces pages web peuvent se trouver en dehors d’un pare-feu, autoriser des tâches au niveau de l’administration peut présenter un risque de sécurité. Seuls les utilisateurs disposant des privilèges d’administrateur ou d’utilisateur de Workspace peuvent accéder aux pages Web des utilisateurs finaux.
+Pour des raisons de sécurité, les personnes disposant de certains types de privilèges administrateur ne peuvent pas accéder aux pages web des utilisateurs et utilisatrices finaux de Workspace. Étant donné que ces pages web peuvent exister en dehors d’un pare-feu, autoriser des tâches au niveau de l’administration peut présenter un risque de sécurité. Seules les personnes disposant des privilèges administrateur ou utilisateur de Workspace peuvent accéder aux pages web des utilisateurs et utilisatrices finaux.
 
 >[!NOTE]
 >

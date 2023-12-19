@@ -4,8 +4,8 @@ description: Découvrez comment corriger l’erreur lorsque vous ne parvenez pas
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
 source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 64%
+source-wordcount: '236'
+ht-degree: 82%
 
 ---
 
@@ -23,11 +23,11 @@ L’utilisateur ou l’utilisatrice ne peut pas effectuer d’opérations telles
 
 1. Téléchargez le fichier JAR en tant que [java.mail-1.0.jar](/help/forms/using/java.mail-1.0.jar) et décompressez le fichier JAR téléchargé pour obtenir le fichier manifeste.
 
-1. Utiliser le fichier manifeste de `java.mail-1.0.jar` récupéré à l’étape 1 pour créer un fichier JAR personnalisé, comme indiqué par `java.mail-1.5.jar`.
+1. Utilisez le fichier manifeste de `java.mail-1.0.jar` récupéré à l’étape 1 pour créer un fichier JAR personnalisé, comme `java.mail-1.5.jar`.
 
 1. Ouvrez le fichier manifeste et remplacez toutes les occurrences de `1.5.0` par `1.5.6` et `Bundle-Version: 1.0` par `Bundle-Version:1.5`.
 
-1. Création d’un fichier jar personnalisé (`java.mail-1.5.jar`) à l’aide de la commande suivante dans `C:\Adobe\Adobe_Experience_Manager_Forms\java\jdk\bin` comme suit :
+1. Créez un fichier JAR personnalisé (`java.mail-1.5.jar`) à l’aide de la commande suivante dans le dossier `C:\Adobe\Adobe_Experience_Manager_Forms\java\jdk\bin` comme suit :
    `jar -cfm java.mail-1.5.jar manifest.mf`
 
    Dans la commande ci-dessus, *manifest.mf* est le nom du fichier manifeste et *java.mail-1.5.jar* est le nom du fichier qui sera créé après l’exécution de la commande ci-dessus.
@@ -43,7 +43,7 @@ L’utilisateur ou l’utilisatrice ne peut pas effectuer d’opérations telles
 
 1. Installez le fichier `javax.mail-1.5.6.redhat-1.jar` téléchargé à l’étape 5.
 
-1. Arrêter **JBoss ®** de la **Console des services** et ajoutez les propriétés suivantes à **Sling.properties** fichier :
+1. Arrêtez **JBoss®** à partir de la **console de services** et ajoutez les propriétés suivantes au fichier **Sling.properties** :
    * `org.osgi.framework.system.packages.extra=javax.activation; version\=1.2.0`
    * `sling.bootdelegation.activation=javax.activation.*`
 

@@ -9,7 +9,7 @@ exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '2122'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -58,7 +58,7 @@ Les valeurs de propriété suivantes sont utilisées dans la configuration cloud
 
 La structure de Target mise en service créée par l’assistant de souscription est configurée pour envoyer des données contextuelles à partir du magasin de données de profil. Les éléments de données du magasin relatifs à l’âge et au sexe sont envoyés à Target par défaut. Votre solution nécessite probablement l’envoi de paramètres supplémentaires.
 
-![Structure Target configurée](assets/chlimage_1-158.png)
+![Cadre cible configuré](assets/chlimage_1-158.png)
 
 Vous pouvez configurer le framework pour envoyer des informations contextuelles supplémentaires à Target, comme décrit dans la section [Ajout d’un framework Target](/help/sites-administering/target-configuring.md#adding-a-target-framework).
 
@@ -189,11 +189,11 @@ Vous pouvez créer des structures multiples pour une même configuration Target.
 1. Sur la page de configuration Target, cliquez sur le signe **+** en regard de Frameworks disponibles.
 1. Dans la boîte de dialogue Créer un framework, spécifiez un **titre**, sélectionnez le **Framework Adobe Target** et cliquez sur **Créer**.
 
-   ![Boîte de dialogue Créer un framework](assets/chlimage_1-161.png)
+   ![Boîte de dialogue Créer un cadre](assets/chlimage_1-161.png)
 
    La page de framework s’ouvre. Le sidekick fournit des composants qui représentent les informations de [ClientContext](/help/sites-administering/client-context.md) ou [ContextHub](/help/sites-developing/ch-configuring.md) que vous pouvez mettre en correspondance.
 
-   ![Composants de la structure](assets/chlimage_1-162.png)
+   ![Composants pour le cadre](assets/chlimage_1-162.png)
 
 1. Faites glisser le composant ClientContext représentant les données que vous souhaitez utiliser pour mapper avec la cible de dépôt. Vous pouvez également faire glisser le composant **Boutique ContextHub** vers le framework.
 
@@ -203,7 +203,7 @@ Vous pouvez créer des structures multiples pour une même configuration Target.
 
    Par exemple, pour utiliser les **données de profil** des visiteurs ou visiteuses de votre site afin de contrôler votre campagne Target, faites glisser le composant **Données de profil** vers la page. Les variables de données de profil qui sont disponibles pour la mise en correspondance des paramètres Target s’affichent.
 
-   ![données de profil](assets/chlimage_1-163.png)
+   ![Données du profil](assets/chlimage_1-163.png)
 
 1. Sélectionnez les variables que vous souhaitez rendre visibles pour le système Adobe Target en cochant la case **Partager** dans les colonnes appropriées.
 
@@ -242,7 +242,7 @@ Lorsque vous associez une page au framework, les pages enfants héritent de l’
 1. Cliquez sur **Modifier**.
 1. Cliquez sur **Ajouter une configuration** under **Configurations de Cloud Service** et sélectionnez **Adobe Target**.
 
-   ![Ajouter une configuration](assets/chlimage_1-165.png)
+   ![Ajouter la configuration](assets/chlimage_1-165.png)
 
 1. Sélectionnez le cadre que vous souhaitez sous **Référence de configuration**.
 
@@ -255,7 +255,7 @@ Lorsque vous associez une page au framework, les pages enfants héritent de l’
 
    >[!NOTE]
    >
-   Si la structure que vous avez jointe à la page n’a pas encore été activée, un assistant s’ouvre, vous permettant de la publier également.
+   Si le cadre que vous avez joint à la page n’a pas encore été activé, un assistant s’ouvre, vous permettant également de le publier.
 
 ## Résolution des problèmes de connexion à Target {#troubleshooting-target-connection-problems}
 

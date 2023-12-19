@@ -4,8 +4,8 @@ description: Apprenez les concepts du découplage, en quoi ils s’appliquent à
 exl-id: cb2e2d89-e2d2-462f-8fff-b201847d0641
 source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 92%
+source-wordcount: '747'
+ht-degree: 93%
 
 ---
 
@@ -78,6 +78,6 @@ Appuyez-vous sur ces connaissances et poursuivez votre parcours de traduction d�
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de traduction découplée en examinant le document [Prise en main de la traduction découplée AEM](getting-started.md), vous trouverez ci-dessous quelques ressources supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, sans être obligatoires pour poursuivre ce parcours découplé.
 
 * [MSM et traduction](/help/sites-administering/msm-and-translation.md) – Informations sur AEM Multi-Site Manager et sur le fonctionnement de ses outils de traduction
-* Un [Présentation d’AEM en tant que CMS sans affichage](/help/sites-developing/headless/introduction.md)
-* La variable [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* Une [Présentation d’AEM en tant que CMS découplé](/help/sites-developing/headless/introduction.md)
+* Le [Portail de développement AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
 * [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)

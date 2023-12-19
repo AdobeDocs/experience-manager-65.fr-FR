@@ -7,8 +7,8 @@ feature: Asset Insights,Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
 source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 91%
+source-wordcount: '631'
+ht-degree: 95%
 
 ---
 
@@ -110,7 +110,7 @@ Effectuez ces étapes pour activer Assets Insights grâce à la gestion dynamiq
    * Le code appelle `assetAnalytics.dispatcher.init()` après s’être assuré que `_satellite.getToolsByType('sc')[0].getS()` est initialisé et que `assetAnalytics,dispatcher.init` est disponible. Par conséquent, vous pouvez ignorer son ajout à l’étape 11.
    * Comme indiqué dans les commentaires dans le code du dispositif de suivi de la page d’informations (**[!UICONTROL Outils > Ressources > Dispositif de suivi de la page d’informations]**), lorsque le dispositif de suivi de la page ne crée pas d’objet `AppMeasurement`, les trois premiers arguments (RSID, Serveur de suivi et Espace de noms du visiteur) ne sont pas pertinents. Des chaînes vides sont transmises à la place pour mettre ceci en évidence.\
      Les arguments restants correspondent à ce qui est configuré sur la page Configuration d’Insights (**[!UICONTROL Outils > Ressources > Configuration d’Insights]**).
-   * L’objet AppMeasurement est récupéré en interrogeant `satelliteLib` pour tous les moteurs SiteCatalyst disponibles. Si plusieurs balises sont configurées, modifiez l’index du sélecteur de tableau de manière appropriée. Les entrées du tableau sont classées selon les outils par SiteCatalyst disponibles dans l’interface de DTM.
+   * L’objet AppMeasurement est récupéré en interrogeant `satelliteLib` pour tous les moteurs SiteCatalyst disponibles. Si plusieurs balises sont configurées, modifiez l’index du sélecteur de tableau de manière appropriée. Les entrées du tableau sont classées selon les outils SiteCatalyst disponibles dans l’interface de DTM.
 
 1. Enregistrez et fermez la fenêtre Éditeur de code, puis enregistrez les modifications dans la configuration Outil.
 1. Dans l’onglet **[!UICONTROL Approbations]**, validez les deux approbations en attente. La balise DTM est prête à être insérée sur votre page web.

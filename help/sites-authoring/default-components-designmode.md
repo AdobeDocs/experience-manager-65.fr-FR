@@ -5,7 +5,7 @@ exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 81%
+ht-degree: 86%
 
 ---
 
@@ -129,15 +129,15 @@ Pour activer ou désactiver un composant :
 
    **Propriétés**
 
-   La variable **Propriétés** vous permet de configurer les paramètres de conception importants du composant. Par exemple, pour un composant d’image, vous pouvez définir la taille maximale et minimale de l’image autorisée.
+   L’onglet **Propriétés** vous vous permet de configurer les paramètres de conception importants du composant. Par exemple, pour un composant d’image, vous pouvez définir la taille maximale et minimale de l’image autorisée.
 
    **Fonctionnalités**
 
-   La variable **Fonctionnalités** vous permet d’activer ou de désactiver des fonctionnalités supplémentaires du composant. Par exemple, pour un composant d’image, vous pouvez définir l’orientation de l’image, les options de recadrage disponibles et si une image peut être téléchargée.
+   L’onglet **Fonctions** vous permet d’activer ou de désactiver des fonctionnalités supplémentaires du composant. Par exemple, pour un composant d’image, vous pouvez définir l’orientation de l’image, les options de recadrage disponibles et si une image peut être téléchargée.
 
    **Styles**
 
-   La variable **Styles** vous permet de définir les styles et classes CSS à utiliser avec le composant.
+   L’onglet **Styles** vous permet de définir les classes et les styles CSS à utiliser avec le composant.
 
    ![screen_shot_2018-03-22at103741](assets/screen_shot_2018-03-22at103741.png)
 

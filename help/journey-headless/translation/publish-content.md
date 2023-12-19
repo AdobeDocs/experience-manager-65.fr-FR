@@ -5,7 +5,7 @@ exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '1336'
-ht-degree: 79%
+ht-degree: 88%
 
 ---
 
@@ -18,7 +18,7 @@ Découvrez comment publier votre contenu traduit et mettre à jour les traductio
 Dans le document précédent du parcours de traduction AEM, [Traduction du contenu](configure-connector.md), vous avez appris à utiliser les projets de traduction AEM pour traduire votre contenu découplé. Vous devez maintenant :
 
 * comprendre ce qu’est un projet de traduction ;
-* Vous pouvez créer des projets de traduction.
+* être capable de créer des projets de traduction ;
 * savoir comment utiliser des projets de traduction pour traduire votre contenu découplé.
 
 Maintenant que votre traduction initiale est terminée, cet article vous guide tout au long de l’étape suivante de la publication de ce contenu et de ce que vous devez faire pour mettre à jour vos traductions en tant que contenu sous-jacent dans les modifications racine de la langue.
@@ -47,7 +47,7 @@ Une fois le contenu créé sur l’instance d’auteur, il doit être transfér�
 
 ## Publication de votre contenu traduit {#publishing}
 
-Une fois que vous êtes satisfait de l’état de votre contenu traduit, il doit être publié pour que les services découplés puissent l’utiliser. Cette tâche n&#39;est pas de la responsabilité du spécialiste de traduction, mais est documentée ici pour illustrer l&#39;ensemble du workflow.
+Une fois que vous êtes satisfait de l’état de votre contenu traduit, il doit être publié pour que les services découplés puissent l’utiliser. Cette tâche n’est pas de la responsabilité du spécialiste de traduction, mais elle est documentée ici pour illustrer l’ensemble du workflow.
 
 >[!NOTE]
 >
@@ -80,20 +80,20 @@ Votre contenu découplé traduit est maintenant publié ! Il peut désormais ê
 >
 >Vous pouvez sélectionner plusieurs éléments (c’est-à-dire plusieurs dossiers de langues) lors de la publication afin de publier plusieurs traductions à la fois.
 
-D’autres options s’offrent à vous lors de la publication de votre contenu, telles que la planification d’une heure de publication, mais elles dépassent la portée de ce parcours. Consultez la section [Ressources supplémentaires](#additional-resources) à la fin du document pour obtenir plus d’informations.
+D’autres options s’offrent à vous lors de la publication de votre contenu, telles que la planification d’une heure de publication, mais elles dépassent la portée de ce parcours. Pour plus d’informations, consultez la section [Ressources supplémentaires](#additional-resources) à la fin du document.
 
 ## Mise à jour de votre contenu traduit {#updating-translations}
 
 La traduction est rarement un exercice ponctuel. En règle générale, vos auteurs continuent à ajouter et à modifier votre contenu dans la racine de langue une fois la traduction initiale terminée. Cela signifie que vous devez également mettre à jour votre contenu traduit.
 
-Les exigences spécifiques au projet définissent la fréquence à laquelle vous devez mettre à jour vos traductions et le processus de décision suivi avant d’effectuer une mise à jour. Une fois que vous avez décidé de mettre à jour vos traductions, le processus en AEM est simple. De la même façon que pour la traduction initiale, toutes les mises à jour sont basées sur un projet de traduction.
+Les exigences spécifiques de projet définissent la fréquence à laquelle vous devez mettre à jour vos traductions et le processus de décision à suivre avant d’effectuer une mise à jour. Une fois que vous avez décidé de mettre à jour vos traductions, le processus à suivre dans AEM est simple. De la même façon que pour la traduction initiale, toutes les mises à jour sont basées sur un projet de traduction.
 
 Cependant, comme auparavant, le processus est légèrement différent si vous avez choisi de créer automatiquement votre projet de traduction ou de le créer manuellement.
 
 ### Mise à jour d’un projet de traduction créé automatiquement {#updating-automatic-project}
 
 1. Accédez à **Navigation** > **Ressources** > **Fichiers**. N’oubliez pas que le contenu découplé dans AEM est stocké en tant que ressources appelées fragments de contenu.
-1. Sélectionnez la racine de langue de votre projet. Dans ce cas, `/content/dam/wknd/en` est sélectionnée.
+1. Sélectionnez la racine de langue de votre projet. Dans ce cas, `/content/dam/wknd/en`.
 1. Cliquez sur le sélecteur de rail et affichez le **Références** du panneau.
 1. Cliquez sur **Copies de langue**.
 1. Cochez l’option **Copies de langue**.
@@ -118,7 +118,7 @@ You see that a new job card was added to the project. In this example, another S
 ![Additional translation job added](assets/additional-translation-job.png)
 -->
 
-Vous remarquerez peut-être que les statistiques répertoriées sur la nouvelle carte (nombre de ressources et de fragments de contenu) sont différentes. En effet, AEM reconnaît ce qui a changé depuis la dernière traduction et inclut uniquement le contenu qui doit être traduit. Cela inclut la retraduction du contenu mis à jour ainsi que la première traduction du nouveau contenu.
+Vous remarquerez peut-être que les statistiques répertoriées sur la nouvelle carte (nombre de ressources et de fragments de contenu) sont différentes. En effet, AEM reconnaît ce qui a changé depuis la dernière traduction et n’inclut que le contenu qui doit être traduit. Cela inclut la retraduction du contenu mis à jour ainsi que la première traduction du nouveau contenu.
 
 À partir de là, vous pouvez [démarrer et gérer votre tâche de traduction comme vous l’avez fait pour la traduction originale.](translate-content.md#using-translation-project)
 

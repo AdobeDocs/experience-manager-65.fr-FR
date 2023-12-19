@@ -4,8 +4,8 @@ description: Cette section présente les fonctionnalités puissantes, flexibles 
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
 source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 89%
+source-wordcount: '720'
+ht-degree: 90%
 
 ---
 
@@ -81,6 +81,6 @@ Maintenant que vous avez appris les concepts et la terminologie, l’étape suiv
 * Parcours du développeur AEM Headless
    * [En savoir plus sur le développement CMS découplé](/help/journey-headless/developer/learn-about.md)
    * [Découvrez comment modéliser votre contenu](/help/journey-headless/developer/model-your-content.md)
-* [Présentation d’AEM en tant que CMS sans affichage](/help/sites-developing/headless/introduction.md)
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* [Présentation d’AEM en tant que CMS découplé](/help/sites-developing/headless/introduction.md)
+* [Portail de développement d’AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
 * [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)

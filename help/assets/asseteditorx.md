@@ -7,8 +7,8 @@ feature: Developer Tools
 exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 81%
+source-wordcount: '653'
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Les exemples de composants de page nécessitent que tous les sélecteurs commenc
 
 ### FormChooser : réglages pour les ressources chargées par la suite. {#formchooser-adjustments-for-eventually-loaded-resources}
 
-L’éditeur de ressources utilise le sélecteur de formulaire, qui permet de modifier des ressources (dans ce cas des ressources) sur la même page de formulaire en ajoutant simplement un sélecteur de formulaire et le chemin d’accès du formulaire à l’URL de la ressource.
+L’éditeur de ressources utilise le sélecteur de formulaire, qui permet de modifier des ressources sur la même page de formulaire en ajoutant simplement un sélecteur de formulaire et le chemin d’accès du formulaire à l’URL de la ressource.
 
 Par exemple :
 

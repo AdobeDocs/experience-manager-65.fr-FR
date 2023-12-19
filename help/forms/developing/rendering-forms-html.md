@@ -11,7 +11,7 @@ exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '4102'
-ht-degree: 79%
+ht-degree: 80%
 
 ---
 
@@ -216,7 +216,7 @@ Vous définissez les options d’exécution HTML lors de la génération d’un 
 * `Upload` : fournit une interface utilisateur pour sélectionner les fichiers à joindre au formulaire actif.
 * `Download` : fournit une interface utilisateur pour afficher les fichiers joints.
 
-Lorsqu’une barre d’outils de HTML s’affiche sur un formulaire de HTML, l’utilisateur peut sélectionner un maximum de dix fichiers à envoyer avec les données de formulaire. Une fois les fichiers envoyés, le service Forms peut les récupérer.
+Lorsqu’une barre d’outils HTML s’affiche sur un formulaire HTML, l’utilisateur ou l’utilisatrice peut sélectionner un maximum de dix fichiers à envoyer avec les données de formulaire. Une fois les fichiers envoyés, le service Forms peut les récupérer.
 
 Lors du rendu d’un formulaire en tant que HTML, vous pouvez spécifier une valeur agent-utilisateur. Une valeur agent-utilisateur fournit des informations sur le navigateur et le système. Il s’agit d’une valeur facultative que vous pouvez transmettre à une valeur de chaîne vide. Le rendu d’un formulaire au format HTML à l’aide du démarrage rapide de l’API Java indique comment obtenir une valeur d’agent utilisateur et s’en servir pour générer un formulaire au format HTML.
 
@@ -284,7 +284,7 @@ Renvoyez un formulaire au format HTML à l’aide de l’API Forms (Java) :
 
 1. Effectuer le rendu d’un formulaire HTML
 
-   Appeler la variable `FormsServiceClient` de `(Deprecated) renderHTMLForm` et transmettez les valeurs suivantes :
+   Appelez la méthode `(Deprecated) renderHTMLForm` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
    * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Une valeur d’énumération `TransformTo` spécifiant le type de préférence HTML. Par exemple, pour effectuer le rendu d’un formulaire HTML compatible avec le HTML dynamique pour Internet Explorer 5.0 ou version ultérieure, spécifiez `TransformTo.MSDHTML`.
@@ -302,7 +302,7 @@ Renvoyez un formulaire au format HTML à l’aide de l’API Forms (Java) :
    * Accédez au type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
    * Définissez la variable `javax.servlet.http.HttpServletResponse` type de contenu de l’objet en appelant ses `setContentType` et transmettre le type de contenu de la méthode `com.adobe.idp.Document` .
    * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données de formulaire dans le navigateur Web client en appelant la fonction `javax.servlet.http.HttpServletResponse` de `getOutputStream` .
-   * Créez un `java.io.InputStream` en appelant la méthode `com.adobe.idp.Document` de `getInputStream` .
+   * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
    * Créez un tableau d’octets et renseignez-le avec le flux de données de formulaire en appelant la fonction `InputStream` de `read` et transmission du tableau d’octets en tant qu’argument.
    * Appeler la variable `javax.servlet.ServletOutputStream` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
@@ -342,7 +342,7 @@ Générez un formulaire HTML à l’aide de l’API Forms (Web Service) :
 
 1. Effectuer le rendu d’un formulaire HTML
 
-   Appeler la variable `FormsService` de `(Deprecated) renderHTMLForm` et transmettez les valeurs suivantes :
+   Appelez la méthode `(Deprecated) renderHTMLForm` de l’objet `FormsService` et transmettez les valeurs suivantes :
 
    * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Une valeur d’énumération `TransformTo` spécifiant le type de préférence HTML. Par exemple, pour effectuer le rendu d’un formulaire HTML compatible avec le HTML dynamique pour Internet Explorer 5.0 ou version ultérieure, spécifiez `TransformTo.MSDHTML`.

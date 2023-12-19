@@ -1,6 +1,6 @@
 ---
 title: Activation des composants du portail Formulaires
-description: Les composants Forms Portal prêts à l’emploi sont désactivés. Activez les groupes Services de document et Prédicats de services de document pour activer les composants du portail Forms.
+description: Les composants du portail Formulaires prêts à l’emploi sont désactivés par défaut. Activez les groupes Services de document et Prédicats de services de document pour activer les composants du portail Formulaires.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
@@ -9,7 +9,7 @@ exl-id: 572194b7-063b-4c38-af43-aba78e9c51c6
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '332'
-ht-degree: 53%
+ht-degree: 73%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 53%
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
-Les composants Forms Portal prêts à l’emploi ne sont pas disponibles. Pour que les composants apparaissent dans la liste des composants disponibles dans AEM sidekick, procédez comme suit :
+Les composants du portail Formulaires prêts à l’emploi ne sont pas disponibles. Pour que les composants apparaissent dans la liste des composants disponibles dans AEM sidekick, procédez comme suit :
 
 1. Connectez-vous à l’instance d’auteur de votre site web et ouvrez une page AEM Sites.
 
@@ -38,7 +38,7 @@ Les composants Forms Portal prêts à l’emploi ne sont pas disponibles. Pour q
 
 >[!NOTE]
 >
->Vous pouvez également activer des composants spécifiques de ces catégories en les sélectionnant. Pour plus d’informations sur les composants et leur utilisation, voir [Création d’une page de portail de formulaires](/help/forms/using/creating-form-portal-page.md) et [Incorporation du composant Link dans une page](/help/forms/using/embedding-link-component-page.md).
+>Vous pouvez également activer des composants spécifiques de ces catégories en les sélectionnant. Pour plus d’informations sur les composants et leur utilisation, voir [Créer une page de portail de formulaires](/help/forms/using/creating-form-portal-page.md) et [Incorporer le composant Link dans une page](/help/forms/using/embedding-link-component-page.md).
 
 Désormais, les catégories de composant Services de document et Prédicats de services de document sont disponibles dans l’explorateur de composants. Les composants sont activés pour toutes les pages qui utilisent le même modèle.
 

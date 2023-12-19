@@ -5,7 +5,7 @@ exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '783'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -20,14 +20,14 @@ Une mise en œuvre de l’IDE [GraphiQL](https://graphql.org/learn/serving-over-
 >Dans les versions précédentes, un package était nécessaire pour installer l’IDE GraphiQL. Si vous l’avez installé, il peut désormais être supprimé.
 
 >[!NOTE]
->Vous devez avoir [configuré vos points d’entrée](/help/sites-developing/headless/graphql-api/graphql-endpoint.md) dans le [navigateur de configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md) avant d’utiliser l’IDE GraphiQL.
+>Vous devez avoir [configuré vos points d’entrée](/help/sites-developing/headless/graphql-api/graphql-endpoint.md) dans l’[explorateur de configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md) avant d’utiliser l’IDE GraphiQL.
 
-La variable **GraphiQL** vous permet de tester et de déboguer vos requêtes GraphQL en vous permettant :
+L’outil **GraphiQL** permet de tester et de déboguer vos requêtes GraphQL en vous permettant de :
 
 * sélectionner le **Point d’entrée** approprié pour la configuration Sites que vous souhaitez utiliser pour vos requêtes ;
 * saisir directement de nouvelles requêtes ;
 * créer et accéder aux **[Requêtes persistantes](/help/sites-developing/headless/graphql-api/persisted-queries.md)** ;
-* Exécutez vos requêtes pour afficher immédiatement les résultats.
+* exécuter vos requêtes pour afficher immédiatement les résultats ;
 * gérer les **Variables de requête** ;
 * enregistrer et gérer les **Requêtes persistantes** ;
 * publier ou dépublier des **Requêtes persistantes** (par exemple : vers et à partir de `dev-publish`) ;
@@ -89,7 +89,7 @@ Dans les deux cas, la requête affichée dans le panneau de l’éditeur est la 
 
 <!-- more details needed here? -->
 
-L’IDE GraphiQL vous permet également de gérer votre [Variables de requête](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-variables).
+L’IDE GraphiQL vous permet également de gérer vos [variables de requête](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-variables).
 
 Par exemple :
 
@@ -140,7 +140,7 @@ Une fois que vous avez sélectionné votre [requête persistante](/help/sites-de
 
 ## Copie de l’URL pour accéder directement à la requête {#copy-url}
 
-La variable **Copier l’URL** permet de simuler une requête, en copiant l&#39;URL utilisée pour accéder directement à la requête conservée et visualiser les résultats. Elle peut ensuite être utilisée à des fins de test ; par exemple, en y accédant par le biais d’un navigateur :
+L’option **Copier l’URL** vous permet de simuler une requête en copiant l’URL utilisée pour accéder directement à la requête persistante et consulter les résultats. Elle peut ensuite être utilisée à des fins de test ; par exemple, en y accédant par le biais d’un navigateur :
 
 <!--
   >[!NOTE]

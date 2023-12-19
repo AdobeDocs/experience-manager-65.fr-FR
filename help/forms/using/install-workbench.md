@@ -7,8 +7,8 @@ role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2242'
-ht-degree: 88%
+source-wordcount: '2184'
+ht-degree: 87%
 
 ---
 
@@ -87,7 +87,7 @@ Espace disque pour l’installation :
 
 * Configuration matérielle requise : processeur Intel® Pentium® 4 ou AMD® équivalent, cadencé à 1 GHz.
 * Mise à jour Java™ Runtime Environment (JRE) 7.0 51 ou mises à jour ultérieures vers 7.0.
-* Résolution d’affichage de 1024 X 768 pixels au minimum, écran couleur de 16 bits minimum.
+* Résolution d’écran minimale de 1 024 X 768 pixels ou plus avec une couleur de 16 bits ou plus.
 * Connexion réseau via le protocole TCP/IPv4 ou TCP/IPv6 au serveur AEM Forms.
 * Installez les packages d’exécution redistribuables Visual C++ 2012 32 bits.
 * Installez les packages d’exécution redistribuables Visual C++ 2013 32 bits.
@@ -120,7 +120,7 @@ Différentes versions de Designer peuvent coexister sur le même système, par e
   </tr>
   <tr>
    <td><p>Designer (autonome)</p> </td>
-   <td><p>Aucune. <br />La version de Designer incluse avec Workbench est en anglais uniquement. <br />Le programme d’installation de Workbench ne réinstalle pas de nouvelle version de Designer. Au lieu de cela, une version mise à jour, fournie avec le programme d’installation de Workbench, est corrigée. Vous pouvez ainsi utiliser votre version localisée de Designer dans Workbench.<br /> </p> </td>
+   <td><p>Aucune. <br />La version de Designer incluse avec Workbench est en anglais uniquement. <br />Le programme d’installation de Workbench ne réinstalle pas de nouvelle version de Designer. Au lieu de cela, une version mise à jour, fournie avec le programme d’installation de Workbench, est corrigée. Cela vous permet également d’utiliser votre version traduite de Designer dans Workbench.<br /> </p> </td>
   </tr>
  </tbody>
 </table>

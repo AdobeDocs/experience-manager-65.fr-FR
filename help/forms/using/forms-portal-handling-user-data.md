@@ -9,7 +9,7 @@ exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
 source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
 source-wordcount: '867'
-ht-degree: 42%
+ht-degree: 73%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 42%
 
 [!DNL AEM Forms] Portal fournit des composants que vous pouvez utiliser pour répertorier les formulaires adaptatifs, les formulaires HTML5 et d’autres ressources Forms sur la [!DNL AEM Sites] page. Vous pouvez également le configurer pour qu’il affiche les formulaires adaptatifs sous forme de brouillons et envoyés ainsi que les formulaires HTML5 d’un utilisateur connecté. Pour plus d’informations sur Forms Portal, voir [Présentation de la publication de formulaires sur un portail](/help/forms/using/introduction-publishing-forms.md).
 
-Lorsqu’un utilisateur connecté enregistre un formulaire adaptatif en tant que brouillon ou l’envoie, il s’affiche dans les onglets Brouillons et envois du portail Forms. Les données des formulaires envoyés ou en version préliminaire sont stockées dans l’entrepôt de données configuré pour le déploiement AEM. Les brouillons et les envois des utilisateurs anonymes ne s’affichent pas sur la page du portail Forms. Toutefois, les données sont stockées dans l’entrepôt de données configuré. Voir [Configuration des services de stockage pour les brouillons et les envois](/help/forms/using/configuring-draft-submission-storage.md).
+Lorsqu’un utilisateur connecté enregistre un formulaire adaptatif en tant que brouillon ou l’envoie, il s’affiche dans les onglets Brouillons et envois du portail Forms. Les données des formulaires sous forme de brouillons ou envoyés sont stockées dans le magasin de données configuré pour le déploiement AEM. Les brouillons et les envois des utilisateurs anonymes ne s’affichent pas sur la page du portail Forms. Toutefois, les données sont stockées dans l’entrepôt de données configuré. Consultez [Configuration des services de stockage pour les brouillons et les envois](/help/forms/using/configuring-draft-submission-storage.md).
 
-## Données utilisateur et stockage de données {#user-data-and-data-stores}
+## Données utilisateur et magasins de données {#user-data-and-data-stores}
 
 Forms Portal stocke les données des formulaires sous forme de brouillons et envoyés dans les scénarios suivants :
 
@@ -28,11 +28,11 @@ Forms Portal stocke les données des formulaires sous forme de brouillons et env
 
 Pour chaque brouillon et formulaire envoyé pour les utilisateurs connectés et anonymes, le portail Forms stocke les données suivantes :
 
-* Métadonnées de formulaire telles que le nom du formulaire, le chemin du formulaire, l’ID de brouillon ou d’envoi, le chemin des pièces jointes et l’ID de données utilisateur
-* Pièce jointe du formulaire en tant qu’octets de données
+* Métadonnées de formulaire telles que le nom du formulaire, le chemin d’accès au formulaire, l’ID de brouillon ou d’envoi, le chemin d’accès aux pièces jointes et l’ID des données utilisateur
+* Pièce jointe au formulaire en tant qu’octets de données
 * Données de formulaire sous forme d’octets de données
 
-Selon la persistance de l’entrepôt de données configuré, les données de formulaires envoyés et de brouillons sont stockées aux emplacements suivants.
+Selon la persistance du magasin de données configuré, les données de formulaires sous forme de brouillons et envoyés sont stockées aux emplacements suivants.
 
 <table>
  <tbody>
@@ -61,11 +61,11 @@ Selon la persistance de l’entrepôt de données configuré, les données de fo
 
 ## Accès et suppression des données utilisateur {#access-and-delete-user-data}
 
-Vous pouvez accéder aux données de formulaires sous forme de brouillons et envoyés pour les utilisateurs connectés et anonymes dans les entrepôts de données configurés, puis, si nécessaire, les supprimer.
+Vous pouvez accéder aux données de formulaires envoyés et sous forme de brouillons pour des utilisateurs et utilisatrices connectés et anonymes dans les magasins de données configurés et, si nécessaire, les supprimer.
 
-### AEM instances {#aem-instances}
+### Instances AEM {#aem-instances}
 
-Toutes les données des formulaires envoyés et sous forme de brouillons enregistrées dans des instances AEM (d’auteur, de publication ou distante) pour les utilisateurs connectés et anonymes sont stockées dans le nœud `/content/forms/fp/` du référentiel AEM applicable. Chaque fois qu’un utilisateur connecté ou anonyme enregistre un brouillon ou envoie un formulaire, une `draft ID` ou `submission ID`, un `user data ID`, et une valeur aléatoire `ID` pour chaque pièce jointe (le cas échéant) est générée. Il est associé au brouillon ou à l’envoi correspondant.
+Toutes les données des formulaires envoyés et sous forme de brouillons enregistrées dans des instances AEM (d’auteur, de publication ou distante) pour les utilisateurs connectés et anonymes sont stockées dans le nœud `/content/forms/fp/` du référentiel AEM applicable. Chaque fois qu’un utilisateur ou une utilisatrice connectée ou anonyme enregistre un formulaire en tant que brouillon ou l’envoie, un `draft ID` ou un `submission ID`, un `user data ID`, et un `ID` aléatoire pour chaque pièce jointe (le cas échéant) sont générés. Il est associé au brouillon ou à l’envoi correspondant.
 
 #### Accès aux données utilisateur {#access-user-data}
 
@@ -83,7 +83,7 @@ Le tableau ci-dessous explique comment les données de tous les brouillons de `s
 |---|---|
 | `/content/forms/fp/srose/drafts` | Données de nœud de conteneur pour tous les brouillons de l’utilisateur |
 | `/content/forms/fp/srose/drafts/attachments/` | Range toutes les pièces jointes de l’utilisateur en fonction de l’ID du brouillon |
-| `/content/forms/fp/srose/drafts/attachments/<ID>` | Contient une pièce jointe pour l’ID sélectionné au format binaire |
+| `/content/forms/fp/srose/drafts/attachments/<ID>` | Contient la pièce jointe de l’ID sélectionné au format binaire |
 | `/content/forms/fp/srose/drafts/metadata/` | Range les métadonnées de formulaire de l’utilisateur en fonction de l’ID du brouillon |
 | `/content/forms/fp/srose/drafts/metadata/<draft ID>` | Contient les métadonnées de formulaire de l’ID de brouillon sélectionné |
 | `/content/forms/fp/srose/drafts/data/` | Range les données de formulaire de l’utilisateur en fonction de l’ID de données utilisateur |
@@ -93,7 +93,7 @@ Le tableau ci-dessous explique comment les données de tous les brouillons de `s
 
 Pour supprimer définitivement des données utilisateur des brouillons et des envois dans les systèmes AEM pour un utilisateur connecté, vous devez supprimer le nœud `user ID` pour un utilisateur spécifique à partir du nœud d’auteur. Supprimez manuellement les données de toutes les instances AEM applicables.
 
-Les données de brouillon et d’envoi de tous les utilisateurs anonymes sont stockées dans les nœuds communs `drafts` et `submit` sous `/content/forms/fp/anonymous`. Il n’existe aucune méthode permettant de rechercher les données relatives à un utilisateur anonyme spécifique, sauf si certaines informations d’identification sont connues. Dans ce cas, vous pouvez rechercher des informations qui identifient l’utilisateur anonyme dans le référentiel AEM et supprimer manuellement le noeud qui le contient de toutes les instances AEM applicables pour supprimer les données du système AEM. Toutefois, pour supprimer les données de brouillons et d’envois de tous les utilisateurs anonymes, vous pouvez supprimer le nœud `anonymous`.
+Les données de brouillon et d’envoi de tous les utilisateurs anonymes sont stockées dans les nœuds communs `drafts` et `submit` sous `/content/forms/fp/anonymous`. Il n’existe aucune méthode permettant de rechercher les données relatives à un utilisateur anonyme spécifique, sauf si certaines informations d’identification sont connues. Dans ce cas, vous pouvez rechercher les informations qui identifient l’utilisateur ou l’utilisatrice anonyme dans le référentiel AEM et supprimer manuellement le nœud qui les contient dans toutes les instances AEM applicables afin de supprimer les données du système AEM. Toutefois, pour supprimer les données de brouillons et d’envois de tous les utilisateurs anonymes, vous pouvez supprimer le nœud `anonymous`.
 
 ### Base de données {#database}
 
@@ -105,7 +105,7 @@ Lorsque AEM est configuré pour stocker des données dans une base de données, 
 
 #### Accès aux données utilisateur {#access-user-data-1}
 
-Pour accéder aux données de brouillons et d’envois d’un utilisateur connecté et anonyme dans les tables de base de données, exécutez la commande de base de données suivante. Dans la requête, remplacez `logged-in user` par l’ID de l’utilisateur des données auxquelles vous souhaitez accéder ou par `anonymous` pour les utilisateurs anonymes.
+Pour accéder aux données de brouillons et d’envois d’un utilisateur ou d’une utilisatrice connectée et anonyme dans les tables de base de données, exécutez la commande de base de données suivante. Dans la requête, remplacez `logged-in user` par l’ID de l’utilisateur des données auxquelles vous souhaitez accéder ou par `anonymous` pour les utilisateurs anonymes.
 
 ```sql
 select * from metadata, data, additionalmetadatatable where metadata.owner = 'logged-in user' and metadata.id = additionalmetadatatable.id and metadata.userdataID = data.id
@@ -113,7 +113,7 @@ select * from metadata, data, additionalmetadatatable where metadata.owner = 'lo
 
 #### Suppression de données utilisateur {#delete-user-data-1}
 
-Pour supprimer les données de brouillons et d’envois d’un utilisateur connecté des tables de base de données, exécutez la commande de base de données suivante. Dans la requête, remplacez `logged-in user` par l’ID de l’utilisateur des données que vous souhaitez supprimer ou par `anonymous` pour les utilisateurs anonymes. Pour supprimer de la base de données les données d&#39;un utilisateur anonyme particulier, vous devez les retrouver à l&#39;aide d&#39;informations d&#39;identification et les supprimer des tables de la base de données contenant les informations.
+Pour supprimer les données de brouillons et d’envois d’un utilisateur ou d&#39;une utilisatrice connectée des tables de base de données, exécutez la commande de base de données suivante. Dans la requête, remplacez `logged-in user` par l’ID de l’utilisateur des données que vous souhaitez supprimer ou par `anonymous` pour les utilisateurs anonymes. Pour supprimer les données d’un utilisateur ou d’une utilisatrice anonyme spécifique dans la base de données, vous devez le ou la trouver à l’aide d’informations d’identification et le ou la supprimer des tables de base de données contenant ces informations.
 
 ```sql
 DELETE FROM metadata, data, additionalmetadatatable USING metadata INNER JOIN data ON metadata.userdataID = data.id INNER JOIN additionalmetadatatable ON metadata.id = additionalmetadatatable.id WHERE metadata.owner = 'logged-in user'

@@ -8,8 +8,8 @@ role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '7662'
-ht-degree: 92%
+source-wordcount: '7574'
+ht-degree: 93%
 
 ---
 
@@ -679,7 +679,7 @@ AEM Forms on JEE utilise la fonctionnalité de filtrage des référents pour blo
 
 Le processus de filtrage des référents peut être décrit comme suit :
 
-1. Le serveur Forms vérifie la méthode HTTP utilisée pour l’appel :
+1. Le serveur Forms vérifie la méthode HTTP utilisée pour l’appel :
 
    1. S’il est POST, le serveur Forms vérifie l’en-tête du référent.
    1. S’il est GET, le serveur Forms ignore la vérification du référent, sauf si *CSRF_CHECK_GETS* est définie sur true, auquel cas elle vérifie l’en-tête du référent. La variable *CSRF_CHECK_GETS* est spécifiée dans le fichier *web.xml* pour votre application.
@@ -701,7 +701,7 @@ Le processus de filtrage des référents peut être décrit comme suit :
 
 ### Gérer le filtrage des référents {#managing-referer-filtering}
 
-AEM Forms on JEE effectue un filtrage des référents afin de spécifier les référents qui sont autorisés à accéder aux ressources du serveur. Par défaut, le filtre Référent ne filtre pas les requêtes qui utilisent une méthode HTTP sécurisée, par exemple, GET, sauf si *CSRF_CHECK_GETS* est définie sur true. Si le numéro de port pour un référent autorisé est défini sur 0, AEM Forms on JEE autorisera toutes les requêtes des référents provenant de cet hôte quel que soit le numéro de port. Si aucun numéro de port n’est spécifié, seules les requêtes provenant du port par défaut 80 (HTTP) ou du port 443 (HTTPS) sont autorisées. Le filtrage des référents est désactivé si toutes les entrées de la liste de référents autorisés sont supprimées.
+AEM Forms on JEE effectue un filtrage des référents afin de spécifier les référents qui sont autorisés à accéder aux ressources du serveur. Par défaut, le filtrage des référents ne filtre pas les requêtes qui utilisent une méthode HTTP sécurisée, par exemple GET, sauf si *CSRF_CHECK_GETS* est défini sur true. Si le numéro de port pour un référent autorisé est défini sur 0, AEM Forms on JEE autorisera toutes les requêtes des référents provenant de cet hôte quel que soit le numéro de port. Si aucun numéro de port n’est spécifié, seules les requêtes provenant du port par défaut 80 (HTTP) ou du port 443 (HTTPS) sont autorisées. Le filtrage des référents est désactivé si toutes les entrées de la liste de référents autorisés sont supprimées.
 
 Lorsque vous installez Document Services pour la première fois, la liste de référents autorisés est mise à jour avec l’adresse du serveur sur lequel Document Services est installé. Les entrées pour le serveur comprennent le nom du serveur, l’adresse IPv4, l’adresse IPv6 si le protocole IPv6 est activé, l’adresse de bouclage et une entrée localhost. Les noms ajoutés à la liste de référents autorisés sont renvoyés par le système d’exploitation hôte. Par exemple, un serveur dont l’adresse IP est 10.40.54.187 contiendra les entrées suivantes : `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Pour chaque nom non qualifié renvoyé par le système d’exploitation hôte (les noms sans adresse IPv4, IPv6 ou sans nom de domaine qualifié) la liste autorisée n’est pas mise à jour. Modifiez la liste de référents autorisés en fonction de votre environnement de travail. Ne déployez pas le serveur Forms dans l’environnement de production avec la liste de référents autorisés par défaut. Après avoir modifié l’un des référents autorisés, l’une des exceptions aux référents ou l’un des URI, assurez-vous de redémarrer le serveur pour que les modifications prennent effet.
 
@@ -724,7 +724,7 @@ AEM Forms on JEE fournit des API pour gérer la liste des exceptions aux référ
 
 Pour plus d’informations sur les API, reportez-vous à la référence API d’AEM Forms on JEE.
 
-Utilisez la variable ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** Liste des exceptions aux référents autorisés au niveau global, c’est-à-dire pour définir les exceptions applicables à toutes les applications. Cette liste contient uniquement des URI avec un chemin absolu (par exemple, `/index.html`) ou un chemin relatif (par exemple, `/sample/`). Vous pouvez également ajouter une expression régulière à la fin d’un URI relatif, par exemple : `/sample/(.)*`.
+Utilisez la variable ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** Liste des exceptions aux référents autorisés au niveau global, c’est-à-dire pour définir les exceptions applicables à toutes les applications. Cette liste contient uniquement des URI ayant soit un chemin absolu (par exemple `/index.html`), soit un chemin relatif (par exemple `/sample/`). Vous pouvez également ajouter une expression régulière à la fin d’un URI relatif, par ex, `/sample/(.)*`.
 
 L’ID de liste ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** est définie comme une constante dans la classe `UMConstants` de l’espace de noms `com.adobe.idp.um.api`, figurant dans `adobe-usermanager-client.jar`. Vous pouvez utiliser les API AEM Forms pour créer, modifier ou éditer cette liste. Par exemple, pour créer la liste globale des exceptions aux référents autorisés, utilisez :
 

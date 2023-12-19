@@ -10,8 +10,8 @@ feature: Upgrading
 exl-id: c432a014-2dab-4c49-a25b-e4f461d13f9b
 source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 15%
+source-wordcount: '485'
+ht-degree: 38%
 
 ---
 
@@ -29,7 +29,7 @@ En règle générale, les clients exécutant AEM 6.3 ne doivent pas avoir à mod
 
 Pour les exceptions où les fonctionnalités n’ont pas pu être maintenues rétrocompatibles, les problèmes d’incompatibilité ascendante pour les lots et le contenu peuvent être atténués. Pour ce faire, installez un package de compatibilité pour la version 6.4 (voir la procédure de configuration ci-dessous pour plus d’informations sur l’emplacement de téléchargement). Ce package de compatibilité aide à restaurer la compatibilité habituellement entre les applications conformes à AEM 6.4.
 
-Le package de compatibilité vous permet d’exécuter AEM en mode de compatibilité et de différer le développement personnalisé par rapport aux nouvelles fonctionnalités d’AEM :
+Le package de compatibilité vous permet d’exécuter AEM en mode de compatibilité et de différer le développement personnalisé conformément aux nouvelles fonctionnalités d’AEM :
 
 >[!NOTE]
 >
@@ -37,23 +37,23 @@ Le package de compatibilité vous permet d’exécuter AEM en mode de compatibil
 
 ![sase](assets/sase.png)
 
-Le module de compatibilité possède deux modes : **Routage activé** et **Routage désactivé**.
+Le package de compatibilité possède deux modes : **Routage activé** et **Routage désactivé**.
 
 AEM 6.5 peut ainsi s’exécuter en trois modes :
 
-**Mode natif :**
+**Mode natif :**
 
-Le mode natif est destiné aux clients qui souhaitent utiliser toutes les nouvelles fonctionnalités d’AEM 6.5 et qui sont prêts à effectuer un certain développement pour que leurs personnalisations fonctionnent avec toutes les nouvelles fonctionnalités.
+Le mode natif est destiné aux clientes et clients qui souhaitent utiliser toutes les nouvelles fonctionnalités d’AEM 6.5 et qui sont au point pour effectuer des développements pour que leurs personnalisations fonctionnent avec toutes les nouvelles fonctionnalités.
 
 Cela signifie que vous devez ajuster votre application immédiatement après la mise à niveau.
 
-**Mode de compatibilité : package de compatibilité installé avec le routage activé**
+**Mode de compatibilité : package de compatibilité installé avec le routage activé**
 
-Le mode de compatibilité est destiné aux clients qui disposent de personnalisations d’interfaces non rétrocompatibles. Cela permet à AEM de s’exécuter en mode de compatibilité et de différer le développement personnalisé requis par rapport aux nouvelles fonctionnalités AEM qui ne sont pas compatibles avec certaines de vos données de code personnalisé.
+Le mode de compatibilité est destiné aux clientes et clients qui disposent de personnalisations d’interfaces non rétrocompatibles. Cela permet à AEM de s’exécuter en mode de compatibilité et de différer le développement personnalisé requis par rapport aux nouvelles fonctionnalités AEM qui ne sont pas compatibles avec une partie de votre code personnalisé.
 
-**Mode hérité : module de compatibilité installé avec le mode Routage désactivé**
+**Mode hérité : package de compatibilité installé avec le mode Routage désactivé**
 
-Le mode hérité est destiné aux clients disposant d’interfaces personnalisées basées sur du code hérité ou obsolète d’AEM qui a été déplacé dans le package de compatibilité.
+Le mode hérité est destiné aux clientes et clients disposant d’interfaces personnalisées basées sur du code hérité ou obsolète d’AEM qui a été déplacé dans le package de compatibilité.
 
 ![sapte](assets/sapte.png)
 

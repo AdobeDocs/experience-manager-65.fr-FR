@@ -82,7 +82,7 @@ La connaissance du code source vous permet de décider quelle solution utiliser.
 
 Les liens suivants ouvrent les pages de téléchargement de certains produits de base de données populaires :
 
-* [Microsoft® SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+* [Microsoft® SQL Server](https://www.microsoft.com/fr-fr/sql-server/sql-server-downloads)
 * [Oracle](https://www.oracle.com/fr/database/technologies/appdev/c-downloads.html)
 * [IBM DB2®](https://www.ibm.com/support/pages/download-db2-fix-packs-version-db2-linux-unix-and-windows)
 

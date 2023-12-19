@@ -7,8 +7,8 @@ exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
 source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1961'
-ht-degree: 93%
+source-wordcount: '1902'
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,7 @@ Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets,
 
 L’[API REST Assets](/help/assets/mac-api-assets.md) permet aux développeurs d’Adobe Experience Manager d’accéder au contenu (stocké dans AEM) directement via l’API HTTP, via des opérations CRUD (création, lecture, mise à jour et suppression).
 
-L’API vous permet d’utiliser Adobe Experience Manager en tant que CMS (Content Management System) sans interface utilisateur en fournissant Content Services à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON.
+L’API permet d’utiliser Adobe Experience Manager en tant que système de gestion de contenu (CMS) découplé en fournissant des services de contenu à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON.
 
 Par exemple, les applications monopages, basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
 
@@ -83,7 +83,7 @@ La méthode HTTP détermine l’opération à exécuter :
 * **GET** : pour récupérer une représentation JSON d’une ressource ou d’un dossier
 * **POST** : pour créer des ressources ou des dossiers
 * **PUT** : pour mettre à jour les propriétés d’une ressource ou d’un dossier
-* **DELETE** : pour supprimer une ressource ou un dossier
+* **SUPPRIMER** - pour supprimer une ressource ou un dossier.
 
 >[!NOTE]
 >
@@ -326,9 +326,7 @@ Retourné lorsque :
 
    * création réussie d’un fragment de contenu via `POST`
 
-* **404** (Introuvable)
-
-Affiché dans le scénario suivant :
+* **404** (Introuvable) Renvoie lorsque :
 
    * le fragment de contenu demandé n’existe pas
 

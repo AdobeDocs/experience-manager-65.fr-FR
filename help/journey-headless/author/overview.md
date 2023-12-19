@@ -4,8 +4,8 @@ description: Faites vos premiers pas dans cette visite guidée pour découvrir l
 exl-id: b8cdbd0f-c034-4c9f-976f-5e39b1bd33bf
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 89%
+source-wordcount: '847'
+ht-degree: 95%
 
 ---
 
@@ -49,14 +49,14 @@ Les informations contenues dans ce parcours peuvent être utiles à d&#39;autres
 
 Vous découvrirez de nombreux sujets dans ce parcours. Les articles suivants vous donnent une connaissance fondamentale sur les projets découplés dans AEM et vous proposent des liens vers une documentation technique détaillée.
 
-Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si vous n’avez pas d’interface en AEM, Adobe vous recommande de commencer par le début et de progresser de manière séquentielle.
+Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si le concept de découplage dans AEM est nouveau pour vous, nous vous recommandons de commencer par le début et de progresser de manière chronologique.
 
 | Numéro | Article | Description |
 |---|---|---|
 | 0 | Parcours de création de contenu découplé AEM | Ce document |
 | 1 | [Création pour AEM découplé – Introduction](introduction.md) | Cette section présente les fonctionnalités découplées d’Adobe Experience Manager et explique comment créer du contenu pour votre projet. |
 | 2 | [Principes de base de la création découplée avec AEM](basics.md) | Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS Headless à l’aide de fragments de contenu. |
-| 3 | [En savoir plus sur l’utilisation de références dans les fragments de contenu](references.md) | Découvrez comment utiliser les références dans les fragments de contenu. Ils vous permettent également de créer et de gérer plusieurs niveaux de structure pour votre CMS sans affichage à l’aide de fragments imbriqués. |
+| 3 | [En savoir plus sur l’utilisation de références dans les fragments de contenu](references.md) | Découvrez comment utiliser les références dans les fragments de contenu. Elles vous permettent également de créer et de gérer plusieurs niveaux de structure pour votre CMS découplé à l’aide de fragments imbriqués. |
 | 4 | [En savoir plus sur la définition de métadonnées et sur le balisage pour les fragments de contenu](metadata-tagging.md) | Découvrez comment définir des métadonnées et des balises pour les fragments de contenu. |
 
 ## Prochaines étapes {#what-is-next}
@@ -82,6 +82,6 @@ Ainsi, les parcours sont conçus pour être autonomes. Cependant, plusieurs d’
 * [Parcours de développement découplé AEM](/help/journey-headless/developer/overview.md) : faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les utiliser dans votre premier projet de développement.
 * [Parcours d’architecture découplée](/help/journey-headless/architect/overview.md) – Faites vos premiers pas avec cette introduction sur les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager, et découvrez comment modéliser le contenu de votre projet.
 * [Documentation technique d’AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr) – Si vous connaissez déjà bien les technologies AEM et découplées, vous pouvez consulter directement notre documentation technique détaillée.
-   * Un [Présentation d’AEM en tant que CMS sans affichage](/help/sites-developing/headless/introduction.md)
+   * Une [Présentation d’AEM en tant que CMS découplé](/help/sites-developing/headless/introduction.md)
 * [Tutoriels pour AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) : si vous préférez apprendre par la pratique et préférez la technique à la théorie, suivez nos tutoriels pratiques organisés par API et par structure, qui explorent la création et l’utilisation d’applications reposant sur le découplage AEM.
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* [Portail de développement d’AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)

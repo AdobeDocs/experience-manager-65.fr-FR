@@ -5,7 +5,7 @@ exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 88%
+ht-degree: 95%
 
 ---
 
@@ -39,7 +39,7 @@ Certaines références comportent des types de données dédiés (par exemple, R
 
 ## Références du contenu {#content-references}
 
-C’est exactement ce que font les références de contenu : elles vous permettent de référencer tout autre contenu. Vous accédez alors à un navigateur qui vous permet de sélectionner l’élément de contenu.
+Leur nom est clair : les références de contenu vous permettent de faire référence à tout autre contenu. Vous accédez alors à un navigateur qui vous permet de sélectionner l’élément de contenu.
 
 ## Références de ressources/médias {#assets-media-references}
 
@@ -49,7 +49,7 @@ Les ressources (images ou médias, par exemple) peuvent être référencées dan
 
 ## Références à un fragment {#fragment-references}
 
-Encore une fois, les Références de fragment le font : elles vous permettent de référencer un autre fragment. La raison pour laquelle il est important d’insister sur ce fait nécessite un peu plus d’explications.
+Encore une fois, les références de fragment font exactement ce que leur nom suggère : elles vous permettent de faire référence à un autre fragment. La raison pour laquelle il est important d’insister sur ce fait nécessite un peu plus d’explications.
 
 Par exemple, les modèles de fragment de contenu suivants peuvent être définis :
 
@@ -75,7 +75,7 @@ En tant qu’auteur, vous n’êtes pas responsable de la définition de ces rel
 
 ### Création de fragments imbriqués {#author-nested-fragment}
 
-La création de références de fragments est assez simple (bien que le champ ne soit généralement pas étiqueté comme **Référence de fragment**). Vous pouvez saisir directement la référence ou (plus probablement) sélectionner l’icône de dossier pour ouvrir un navigateur qui vous permet de naviguer et de sélectionner le fragment dont vous avez besoin.
+La création de références de fragments est assez simple (bien que le champ ne soit généralement pas étiqueté comme **Référence de fragment**). Vous pouvez saisir directement la référence ou (plus couramment) sélectionner l’icône de dossier pour ouvrir un navigateur qui vous permet d’accéder au fragment dont vous avez besoin et de le sélectionner.
 
 ![Fragments de contenu – Références](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 

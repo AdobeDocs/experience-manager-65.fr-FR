@@ -7,8 +7,8 @@ feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
 source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1867'
-ht-degree: 94%
+source-wordcount: '1889'
+ht-degree: 96%
 
 ---
 
@@ -29,8 +29,8 @@ Pour créer une copie de langue, déclenchez l’un des workflows de copie de la
 
 Vous utilisez le workflow Créer et traduire afin de générer des copies de langue dans une langue spécifique pour la première fois. Le workflow offre les options suivantes :
 
-* Créer uniquement la structure 
-* Créer un projet de traduction.
+* Créez uniquement la structure.
+* Créez un projet de traduction.
 * Ajouter à un projet de traduction existant
 
 ### Création de la structure uniquement {#create-structure-only}
@@ -66,7 +66,7 @@ Si vous utilisez cette option, les ressources à traduire sont copiées dans la 
 
 1. Cliquez sur **[!UICONTROL Créer et traduire]** dans la partie inférieure.
 
-1. Dans la **[!UICONTROL Langues cibles]** sélectionnez les langues pour lesquelles vous souhaitez créer une structure de dossiers.
+1. Dans la liste **[!UICONTROL Langues cibles]**, choisissez les langues pour lesquelles vous souhaitez créer une structure de dossiers.
 
 1. Dans la liste **[!UICONTROL Projet]**, choisissez **[!UICONTROL Créer un projet de traduction]**.
 
@@ -117,7 +117,7 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
 1. Cliquez sur **[!UICONTROL Copies de langue]** sous **[!UICONTROL Copies]**. La liste des copies de traduction disponibles s’affiche.
 1. Cliquez sur **[!UICONTROL Créer et traduire]** dans la partie inférieure.
 
-1. Dans la **[!UICONTROL Langues cibles]** sélectionnez les langues pour lesquelles vous souhaitez créer une structure de dossiers.
+1. Dans la liste **[!UICONTROL Langues cibles]**, choisissez les langues pour lesquelles vous souhaitez créer une structure de dossiers.
 
 1. Dans la liste **[!UICONTROL Projet]**, sélectionnez **[!UICONTROL Ajouter à un projet de traduction existant]** afin d’exécuter le workflow de traduction sur le dossier.
 
@@ -234,7 +234,7 @@ Si vous utilisez cette option, l’ensemble de ressources est ajouté à un proj
 
 ## Création de copies de langue temporaires {#creating-temporary-language-copies}
 
-Lorsque vous exécutez un workflow de traduction pour mettre à jour une copie de langue avec les versions modifiées des ressources d’origine, la copie de langue existante est conservée jusqu’à ce que vous approuviez les ressources traduites. [!DNL Adobe Experience Manager Assets] stocke les ressources nouvellement traduites à un emplacement temporaire et met à jour la copie de langue existante une fois que vous avez explicitement approuvé les ressources. Si vous rejetez les ressources, la copie de langue reste inchangée.
+Lorsque vous exécutez un workflow de traduction pour mettre à jour une copie de langue avec les versions modifiées des ressources d’origine, la copie de langue existante est conservée jusqu’à ce que vous approuviez les ressources traduites. [!DNL Adobe Experience Manager Assets] stocke les ressources nouvellement traduites à un emplacement temporaire et met à jour la copie de langue existante une fois que vous avez explicitement approuvé les ressources. Si vous refusez les ressources, la copie de langue reste inchangée.
 
 1. Cliquez sur le dossier racine source sous **[!UICONTROL Copies de langue]** pour lequel vous avez déjà créé une copie de langue, puis cliquez sur **[!UICONTROL Afficher dans Assets]** afin d’ouvrir le dossier dans [!DNL Experience Manager Assets].
 

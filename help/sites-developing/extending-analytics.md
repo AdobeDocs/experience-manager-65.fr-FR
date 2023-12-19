@@ -1,6 +1,6 @@
 ---
 title: Extension du suivi des événements
-description: AEM Analytics vous permet de suivre les interactions utilisateur sur votre site web.
+description: AEM Analytics vous permet d’effectuer le suivi des interactions utilisateur sur votre site web.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -9,13 +9,13 @@ exl-id: a71d20e6-0321-4afb-95fe-6de8b7b37245
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 71%
+ht-degree: 98%
 
 ---
 
-# Extension du suivi des événements{#extending-event-tracking}
+# Optimisation du suivi des événements{#extending-event-tracking}
 
-AEM Analytics vous permet d’effectuer le suivi des interactions utilisateur sur votre site web. En tant que développeur, vous devrez peut-être :
+AEM Analytics vous permet d’effectuer le suivi des interactions utilisateur sur votre site web. En tant que développeur ou développeuse, vous aurez peut-être besoin :
 
 * de suivre la façon dont les visiteurs interagissent avec les composants (cela peut être effectué à l’aide d’[événements personnalisés](#custom-events)) ;
 * [d’accéder aux valeurs dans le contexte client](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub) ;
@@ -31,7 +31,7 @@ AEM Analytics vous permet d’effectuer le suivi des interactions utilisateur su
 
 Les événements personnalisés effectuent le suivi de tout ce qui dépend de la disponibilité d’un composant spécifique sur la page. Cela inclut également les événements spécifiques au modèle, dans la mesure où le composant de page est traité comme un autre composant.
 
-### Suivi des événements personnalisés au chargement de la page {#tracking-custom-events-on-page-load}
+### Suivi des événements personnalisés lors du chargement d’une page {#tracking-custom-events-on-page-load}
 
 Ce type d’opération peut être réalisé en utilisant le pseudo-attribut `data-tracking` (l’ancien attribut d’enregistrement est toujours pris en charge pour la compatibilité descendante). Vous pouvez l’ajouter à n’importe quelle balise HTML.
 
@@ -41,7 +41,7 @@ La syntaxe de `data-tracking` est :
 
 Vous pouvez transmettre n’importe quel nombre de paires clé-valeur comme second paramètre, appelé payload.
 
-Voici un exemple :
+Voici un exemple :
 
 ```xml
 <span data-tracking="{event:'blogEntryView',
@@ -108,6 +108,6 @@ Une boutique spécifique :
 
 Des rappels enregistrés avant et après à l’aide des fonctions `CQ_Analytics.registerBeforeCallback(callback,rank)` et `CQ_Analytics.registerAfterCallback(callback,rank)`.
 
-Les deux fonctions prennent une fonction comme premier argument et un rang comme deuxième argument, ce qui détermine l’ordre d’exécution des rappels.
+Les deux ont une fonction de premier argument et un rang de deuxième argument, ce qui détermine l’ordre d’exécution des rappels.
 
-Si votre rappel renvoie false, les rappels suivants dans la chaîne d’exécution ne seront pas exécutés.
+Si votre rappel renvoie false, les rappels suivants de la chaîne d’exécution ne seront pas exécutés.

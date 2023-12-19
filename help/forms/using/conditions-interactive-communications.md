@@ -1,6 +1,6 @@
 ---
 title: Conditions dans les communications interactives
-description: Création et modification de fragments de condition à utiliser dans les communications interactives - condition est l’un des quatre types de fragments de document utilisés pour créer des communications interactives. Les trois autres sont des fragments de texte, de liste et de mise en page.
+description: Création et modification de fragments de condition à utiliser dans les communications interactives - la condition est l’un des quatre types de fragments de document utilisés pour créer des communications interactives. Les trois autres sont les fragments de texte, de liste et de disposition.
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
@@ -9,22 +9,22 @@ exl-id: 0c0dc6a2-b889-4516-8e08-1e9d31be2cce
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1494'
-ht-degree: 48%
+ht-degree: 79%
 
 ---
 
 # Conditions dans les communications interactives{#conditions-in-interactive-communications}
 
-Création et modification de fragments de condition à utiliser dans les communications interactives - condition est l’un des quatre types de fragments de document utilisés pour créer des communications interactives. Les trois autres sont des fragments de texte, de liste et de mise en page.
+Création et modification de fragments de condition à utiliser dans les communications interactives - la condition est l’un des quatre types de fragments de document utilisés pour créer des communications interactives. Les trois autres sont les fragments de texte, de liste et de disposition.
 
 ## Présentation {#overview}
 
-La condition est un fragment de document que vous pouvez inclure dans une communication interactive. Les autres fragments de document sont : [text](../../forms/using/texts-interactive-communications.md), liste et fragment de mise en page. Les conditions vous permettent de définir une ou plusieurs ressources contextuelles incluses dans une communication interactive en fonction des données et des règles fournies.
+La condition est un fragment de document que vous pouvez inclure dans une communication interactive. Les autres fragments de document sont [texte](../../forms/using/texts-interactive-communications.md), liste et fragment de disposition. Les conditions vous permettent de définir une ou plusieurs ressources contextuelles incluses dans une communication interactive en fonction des données et des règles fournies.
 
 Exemples :
 
-* Dans un relevé de carte de crédit, affichez les frais annuels et l’image de carte de crédit de la carte de crédit en fonction du type de carte de crédit du client.
-* Dans un rappel de primes d’assurance, affichez les calculs de la taxe en fonction des taxes de l’état du client.
+* Dans un relevé de carte de crédit, affichez les frais annuels et l’image de la carte de crédit en fonction du type de carte de crédit du client ou de la cliente.
+* Dans un rappel relatif à une prime d’assurance, affichez les calculs de la taxe en fonction des impôts du client ou de la cliente.
 
 Les actifs des conditions rendues en fonction des règles appliquées et des valeurs transmises à la règle. Les règles des conditions peuvent vérifier les valeurs dans les types de données suivants :
 
@@ -35,16 +35,16 @@ Les actifs des conditions rendues en fonction des règles appliquées et des val
 * Expressions mathématiques
 * Dates
 
-## Création d’une condition {#createcondition}
+## Créer la condition {#createcondition}
 
 1. Sélectionnez **[!UICONTROL Formulaires]** > **[!UICONTROL Fragments de document]**.
 1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Condition]**.
 1. Saisissez les informations suivantes :
 
-   * **[!UICONTROL Titre]** (facultatif) : saisissez le titre de la condition. Les titres n’ont pas besoin d’être uniques et peuvent contenir des caractères spéciaux et des caractères non anglais. Les conditions sont référencées par leur titre (le cas échéant) comme dans les vignettes et les propriétés.
+   * **[!UICONTROL Titre]** (facultatif) : saisissez le titre de la condition. Les titres ne doivent pas nécessairement être uniques et peuvent contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les conditions sont référencées par leur titre (le cas échéant) comme dans les vignettes et les propriétés.
    * **[!UICONTROL Nom]** : nom unique de la condition dans un dossier. Aucun fragment de document (texte, condition ou liste), quel que soit son état, ne peut porter le même nom qu’un autre fragment de document dans un dossier. Dans le champ Nom, vous pouvez saisir uniquement des caractères, des chiffres et des tirets de langue anglaise. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
 
-   * **[!UICONTROL Description]**: saisissez une description du fragment de document.
+   * **[!UICONTROL Description]** : saisissez une description du fragment de document.
    * **[!UICONTROL Modèle de données de formulaire]** : éventuellement, sélectionnez le bouton radio Modèle de données de formulaire pour créer la condition en fonction d’un modèle de données de formulaire. Lorsque vous sélectionnez le bouton Modèle de données de formulaire, le champ **[!UICONTROL Modèle de données de formulaire]** s’affiche. Recherchez et sélectionnez un modèle de données de formulaire. Lors de la création de la condition d’une communication interactive, veillez à utiliser le même modèle de données que celui que vous avez l’intention d’utiliser dans la communication interactive. Pour plus d’informations sur le modèle de données de formulaire, consultez la section [Intégration de données](../../forms/using/data-integration.md).
 
    * **[!UICONTROL Balises]**: éventuellement, pour créer une balise personnalisée, saisissez la valeur dans le champ de texte et sélectionnez Entrée. Lorsque vous enregistrez cette condition, les balises nouvellement ajoutées sont créées.
@@ -65,7 +65,7 @@ Les actifs des conditions rendues en fonction des règles appliquées et des val
 
 1. Sélectionnez les ressources appropriées à sélectionner pour les inclure dans la condition, puis sélectionnez **[!UICONTROL Terminé]**.
 
-   La page Créer une condition s’affiche et répertorie les ressources ajoutées.
+   La page Créer une condition apparaît et répertorie les ressources ajoutées.
 
    ![createconditionassetsadd](assets/createconditionassetsadd.png)
 
@@ -75,17 +75,17 @@ Les actifs des conditions rendues en fonction des règles appliquées et des val
 
    **[A] Rejeter la modification.** Sélectionnez cette icône pour rejeter les modifications que vous avez apportées à l’actif et à la règle dans la condition.
    **[B] Accepter la modification.** Sélectionnez cette icône pour accepter les modifications que vous avez apportées à la ressource et à la règle dans la condition.
-   **[C] Dupliquer la ressource.** Sélectionnez cette icône pour créer une copie de la ressource avec la règle appliquée, le cas échéant, dans la condition. Vous pouvez ensuite modifier la règle et la ressource pour la ressource dupliquée. La duplication d’une ressource s’avère utile pour créer des règles similaires afin d’afficher d’autres ressources en fonction d’un contexte particulier.
+   **[C] Dupliquer la ressource.** Sélectionnez cette icône pour créer une copie de la ressource avec la règle appliquée, le cas échéant, dans la condition. Vous pouvez ensuite modifier la règle et la ressource pour la ressource dupliquée. La duplication d’une ressource est utile pour créer des règles similaires afin d’afficher des ressources alternatives basées sur un contexte particulier.
    **[D] Afficher l’aperçu.** Sélectionnez cette icône pour afficher un aperçu de la ressource dans la page Créer/Modifier la condition .
    **Réorganiser le « serveur ».** Sélectionnez cette icône et maintenez-la enfoncée pour faire glisser des ressources afin de les réorganiser dans une condition.
 
    Vous pouvez sélectionner les options suivantes pour spécifier le comportement de la condition au moment de l’exécution :
 
-   * **Évaluation de résultats multiples désactivée\Évaluation de résultats multiples activée**: lorsque cette option est activée (s’affiche comme &quot;Évaluation de résultats multiples activée&quot;), toutes les règles sont évaluées et le résultat est la somme de toutes les règles vraies. Si cette option est désactivée (« Évaluation des résultats multiples désactivée »), alors seule la première règle qui s’avère vraie est évaluée et devient la sortie de la condition.
+   * **Évaluation des résultats multiples désactivée/Évaluation des résultats multiples activée** : lorsque cette option est activée (s’affiche comme « Évaluation des résultats multiples activée »), toutes les règles sont évaluées et le résultat est la somme de toutes les règles réelles. Si cette option est désactivée (« Évaluation des résultats multiples désactivée »), alors seule la première règle qui s’avère vraie est évaluée et devient la sortie de la condition.
 
    * **Saut de page** : sélectionnez cette option (![saut](assets/break.png)) afin d’insérer un saut de page entre les ressources des conditions. Lorsque cette option n’est pas sélectionnée (![nobreak](assets/nobreak.png)), si une condition déborde sur la page suivante dans la version imprimée, la condition entière est décalée vers la page suivante au lieu de faire irruption dans la page entre les ressources de la condition.
 
-1. Sélectionner **[!UICONTROL Créer une règle]** pour ajouter des règles afin d’afficher ou de masquer les ressources, selon les besoins. Pour utiliser des variables dans les règles, voir [création de variables](#variables). Pour plus d’informations, consultez la section [Ajouter des règles à la condition](#ruleeditor).
+1. Sélectionner **[!UICONTROL Créer une règle]** pour ajouter des règles afin d’afficher ou de masquer les ressources, selon les besoins. Pour utiliser des variables dans les règles, consultez la section [Créer des variables](#variables). Pour plus d’informations, consultez la section [Ajouter des règles à la condition](#ruleeditor).
 
    Les règles créées apparaissent dans la colonne RULE de l’écran Créer une condition.
 
@@ -101,11 +101,11 @@ Les actifs des conditions rendues en fonction des règles appliquées et des val
 
    >[!NOTE]
    >
-   >Pour enregistrer une condition nouvelle ou modifiée, vous devez disposer d’au moins une règle pour chacun des actifs ajoutés à la condition.
+   >Pour enregistrer une condition nouvelle ou modifiée, vous devez disposer d’au moins une règle pour chacune des ressources ajoutées à la condition.
 
 ## Modifier une condition {#edit-a-condition}
 
-Vous pouvez modifier une condition en procédant comme suit. Vous pouvez également choisir de modifier une condition à partir d’une communication interactive en sélectionnant Modifier le fragment dans le menu contextuel.
+Vous pouvez modifier une condition en suivant les étapes suivantes. Vous pouvez également choisir de modifier une condition à partir d’une communication interactive en sélectionnant Modifier le fragment dans le menu contextuel.
 
 1. Sélectionnez **[!UICONTROL Formulaires]** > **[!UICONTROL Fragments de document]**.
 1. Accédez à la condition et sélectionnez-la.
@@ -113,25 +113,25 @@ Vous pouvez modifier une condition en procédant comme suit. Vous pouvez égalem
 1. Effectuez les modifications nécessaires dans la condition. Pour plus de détails sur les informations que vous pouvez modifier dans une condition, consultez la section [Créer une condition](#createcondition).
 1. Sélectionner **[!UICONTROL Enregistrer]** puis sélectionnez **[!UICONTROL Fermer]**.
 
-## Création de règles dans une condition {#ruleeditor}
+## Créer des règles dans une condition {#ruleeditor}
 
-À l’aide de l’éditeur de règles dans une condition, vous pouvez créer des règles pour afficher ou masquer des ressources en fonction de **conditions prédéfinies**. Ces conditions peuvent être construites sur la base des éléments suivants :
+À l’aide de l’éditeur de règles dans une condition, vous pouvez créer des règles pour l’affichage ou le masquage des ressources en fonction de **conditions prédéfinies**. Ces conditions peuvent être construites en fonction de :
 
 * Chaînes
 * Nombres
 * Expressions mathématiques
 * Dates
 * Propriétés du modèle de données de formulaire associé
-* Quelconque [variables](#variables) que vous avez créé
+* Toute [variable](#variables) que vous avez créée
 
 ### Créer une règle dans une condition {#create-rule-in-condition}
 
 1. Lors de la création ou de la modification d’une condition, sélectionnez ![ruleeditoricon](assets/ruleeditoricon.png) Icône (Éditeur de règles) de la ressource appropriée.
 
-   La boîte de dialogue Créer une règle s’affiche. Outre la chaîne, le nombre, l’expression mathématique et la date, les éléments suivants sont également disponibles dans l’éditeur de règles pour la création d’instructions des règles :
+   La boîte de dialogue Créer une règle s’affiche. En plus de la chaîne, du nombre, de l’expression mathématique et de la date, les éléments suivants sont également disponibles dans l’éditeur de règles pour la création d’instructions :
 
    * Propriétés du modèle de données de formulaire associé
-   * Quelconque [variables](#variables) que vous avez peut-être créé.
+   * Les [variables](#variables) que vous avez créées.
 
    ![createruledialog](assets/createruledialog.png)
 
@@ -148,7 +148,7 @@ Vous pouvez modifier une condition en procédant comme suit. Vous pouvez égalem
 
    Règle pour l’affichage d’un actif lorsque le type de politique est standard
 
-   * Lorsque vous créez ou modifiez une règle, vous pouvez également sélectionner ![icon_resize](assets/icon_resize.png) (Redimensionner) pour développer la boîte de dialogue Créer une règle/Modifier la règle . La boîte de dialogue développée, pleine fenêtre, vous permet de créer des [variables](#variables) pour créer des règles. Sélectionnez Redimensionner pour revenir à la boîte de dialogue Créer une règle standard.
+   * Lorsque vous créez ou modifiez une règle, vous pouvez également sélectionner ![icon_resize](assets/icon_resize.png) (Redimensionner) pour développer la boîte de dialogue Créer une règle/Modifier la règle . La boîte de dialogue développée, pleine fenêtre, vous permet de créer des [variables](#variables) pour construire des règles. Sélectionnez Redimensionner pour revenir à la boîte de dialogue Créer une règle standard.
 
    * Vous pouvez également créer plusieurs conditions dans une règle.
 
@@ -158,7 +158,7 @@ Vous pouvez modifier une condition en procédant comme suit. Vous pouvez égalem
 
 ## Création et utilisation de variables dans une condition {#variables}
 
-Lorsque vous créez ou modifiez une règle dans une condition, vous pouvez sélectionner ![icon_resize](assets/icon_resize.png) (Redimensionner) pour développer la boîte de dialogue Créer une règle\Modifier la règle . La boîte de dialogue développée, pleine fenêtre, vous permet d’effectuer les opérations suivantes :
+Lorsque vous créez ou modifiez une règle dans une condition, vous pouvez sélectionner ![icon_resize](assets/icon_resize.png) (Redimensionner) pour développer la boîte de dialogue Créer une règle\Modifier la règle . La boîte de dialogue développée, pleine fenêtre, vous permet de :
 
 * Créer et utiliser des variables dans la règle
 * Glisser-déposer les propriétés et les variables du modèle de données de formulaire dans la règle
@@ -181,7 +181,7 @@ Sélectionnez Redimensionner pour revenir à la boîte de dialogue Créer une r�
 
 1. Sélectionnez **[!UICONTROL Créer]**.
 
-   Le volet Créer des variables s’affiche.
+   Le volet Créer des variables apparaît.
 
 1. Saisissez les informations suivantes et sélectionnez **[!UICONTROL Créer]**:
 

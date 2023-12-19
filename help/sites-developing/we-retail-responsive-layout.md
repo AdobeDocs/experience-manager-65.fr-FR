@@ -8,18 +8,18 @@ topic-tags: best-practices
 exl-id: 6df5fb10-a7f1-4d5d-ac00-b4be3d5d3d18
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 50%
+source-wordcount: '247'
+ht-degree: 85%
 
 ---
 
 # Test d’une mise en page en responsive design dans We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-Toutes les pages We.Retail utilisent le composant conteneur de mise en page pour implémenter le responsive design. Le conteneur de mises en page fournit un système de paragraphes qui vous permet de positionner des composants dans une grille réactive. Cette grille peut réorganiser la mise en page en fonction de l’appareil/de la taille de fenêtre et du format. Le composant est utilisé conjointement avec la fonction **Disposition** dans l’éditeur de page, qui vous permet de créer et de modifier votre mise en page réactive en fonction de l’appareil.
+Toutes les pages We.Retail utilisent le composant conteneur de mise en page pour implémenter le responsive design. Le conteneur offre un système de paragraphe qui permet de positionner des composants sur une grille réactive. Cette grille peut réorganiser la disposition en fonction de la taille et du format de la fenêtre/l’appareil. Le composant est utilisé en mode **Disposition** de l’éditeur de page, ce qui permet de créer et de modifier une mise en page en mode responsive design, selon les caractéristiques de l’appareil.
 
 ## Essayer de le faire {#trying-it-out}
 
-1. Modifiez la page Arctic Surfing dans la section Expériences de la branche principale de langue.
+1. Modifiez la page Surf en Arctique dans la section Expériences de la branche principale de langue.
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html
 
@@ -31,7 +31,7 @@ Toutes les pages We.Retail utilisent le composant conteneur de mise en page pour
 
    ![chlimage_1-179](assets/chlimage_1-179.png)
 
-1. Passez en mode Mise en page. La barre d’outils de l’émulateur s’affiche automatiquement, ce qui vous permet de planifier votre mise en page par appareil ciblé.
+1. Passez en mode Mise en page. La barre d’outils de l’émulateur s’affiche automatiquement, ce qui vous permet de planifier votre disposition par appareil ciblé.
 
    La sélection d’un composant affiche des options de flottement et de masquage dans le menu d’édition, ainsi que des poignées de redimensionnement pour le composant.
 

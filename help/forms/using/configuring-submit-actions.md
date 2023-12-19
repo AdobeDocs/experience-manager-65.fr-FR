@@ -1,6 +1,6 @@
 ---
 title: Configurer l’action d’envoi
-description: Forms vous permet de configurer une action d’envoi afin de définir le mode de traitement d’un formulaire adaptatif après envoi. Vous pouvez utiliser des actions d’envoi intégrées ou créer les vôtres à partir de zéro.
+description: Forms vous permet de configurer une action d’envoi afin de définir le mode de traitement d’un formulaire adaptatif après l’envoi. Vous pouvez utiliser des actions d’envoi intégrées ou créer les vôtres intégralement.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
@@ -9,23 +9,23 @@ exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
 source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
 workflow-type: tm+mt
 source-wordcount: '2581'
-ht-degree: 73%
+ht-degree: 89%
 
 ---
 
 # Configurer l’action d’envoi {#configuring-the-submit-action}
 
-<span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/using/create-an-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
+<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 
 ## Présentation des actions d’envoi {#introduction-to-submit-actions}
 
-Une action d’envoi est déclenchée lorsqu’un utilisateur clique sur le bouton Envoyer d’un formulaire adaptatif. Vous pouvez configurer l’action d’envoi sur le formulaire adaptatif. Les formulaires adaptatifs fournissent quelques actions d’envoi prêtes à l’emploi. Vous pouvez copier et étendre les actions d’envoi par défaut afin de créer votre propre action. Cependant, en fonction des exigences, vous pouvez rédiger et enregistrer votre propre action d’envoi afin de traiter les données du formulaire envoyé. Une action d’envoi peut utiliser un [envoi synchrone ou asynchrone](../../forms/using/asynchronous-submissions-adaptive-forms.md).
+Une action d’envoi est déclenchée lorsqu’un utilisateur ou une utilisatrice clique sur le bouton Envoyer d’un formulaire adaptatif. Vous pouvez configurer l’action d’envoi sur le formulaire adaptatif. Les formulaires adaptatifs contiennent quelques actions d’envoi prêtes à l’emploi. Vous pouvez copier et étendre les actions d’envoi par défaut afin de créer votre propre action. Cependant, en fonction des exigences, vous pouvez rédiger et enregistrer votre propre action d’envoi afin de traiter les données du formulaire envoyé. Une action d’envoi peut utiliser un [envoi synchrone ou asynchrone](../../forms/using/asynchronous-submissions-adaptive-forms.md).
 
 Vous pouvez configurer une action d’envoi dans la section **Envoi** des propriétés du conteneur de formulaire adaptatif, dans la zone latérale.
 
@@ -33,16 +33,16 @@ Vous pouvez configurer une action d’envoi dans la section **Envoi** des propri
 
 Configuration de l’action d’envoi
 
-Les actions d’envoi par défaut disponibles avec les formulaires adaptatifs sont les suivantes :
+Les actions d’envoi par défaut disponibles avec les formulaires adaptatifs sont les suivantes :
 
 * Envoyer vers le point d’entrée REST
 * Envoyer un e-mail
-* Envoyer un PDF par courrier électronique
+* Envoyer un fichier PDF par e-mail
 * Appeler un workflow de formulaires
 * Envoyer à l’aide du modèle de données de formulaire
 * Action d’envoi du Forms Portal
 * Appeler un workflow AEM
-* Envoyer à Power Automate
+* Envoyer à Power Automate
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Vous pouvez écrire une action d’envoi personnalisée pour les formulaires ada
 
 ## Envoyer vers le point d’entrée REST {#submit-to-rest-endpoint}
 
-La variable **Envoyer vers le point de fin REST** l’option d’envoi transmet les données renseignées dans le formulaire à une page de confirmation configurée dans le cadre de la demande de GET HTTP. Vous pouvez ajouter le nom des champs à demander. Le format de la requête est :
+L’option d’envoi **Envoyer au point d’entrée REST** transmet les données renseignées dans le formulaire à une page de confirmation configurée dans le cadre de la requête HTTP GET. Vous pouvez ajouter le nom des champs à demander. Le format de la requête est :
 
 `{fieldName}={request parameter name}`
 
@@ -77,7 +77,7 @@ Configuration de l’action Envoyer vers le point d’entrée REST
 >
 Pour transmettre les champs en tant que paramètres dans une URL REST, tous les champs doivent avoir des noms d’éléments différents, même s’ils sont placés sur différents panneaux.
 
-### Publier les données envoyées vers une ressource ou un point de fin REST externe  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
+### Publier les données envoyées vers une ressource ou un point d’entrée REST externe {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
 Utilisez l’action **Envoyer vers le point d’entrée REST** pour transmettre les données envoyées à l’URL REST. L’URL peut être celle d’un serveur interne (le serveur sur lequel le formulaire est rendu) ou externe.
 
@@ -106,9 +106,9 @@ L’action d’envoi **Envoyer un e-mail** envoie un message électronique à un
 
 >[!NOTE]
 >
-Tous les champs de formulaire doivent avoir des noms d’éléments différents, même s’ils sont placés sur des panneaux différents), afin d’inclure des données de formulaire dans un email.
+Tous les champs de formulaire doivent avoir des noms d’éléments différents, même s’ils sont placés sur des panneaux différents, afin d’inclure des données de formulaire dans un e-mail.
 
-## Envoyer un PDF par courrier électronique {#send-pdf-via-email}
+## Envoyer un fichier PDF par e-mail {#send-pdf-via-email}
 
 L’action d’envoi **Envoyer le PDF par courrier électronique** envoie un message électronique avec un fichier PDF contenant des données de formulaire à un ou plusieurs destinataires lors d’un envoi réussi du formulaire.
 
@@ -124,9 +124,9 @@ Pour plus d’informations sur la configuration de l’action d’envoi Envoyer 
 
 ## Envoyer à l’aide du modèle de données de formulaire {#submit-using-form-data-model}
 
-L’action d’envoi **Envoyer à l’aide du modèle de données de formulaire** écrit les données de formulaire adaptatif envoyés pour l’objet de modèle de données spécifié dans un modèle de données de formulaire vers sa source de données. Lors de la configuration de l’action d’envoi, vous pouvez choisir un objet de modèle de données dont vous souhaitez écrire les données envoyées dans sa source de données.
+L’action d’envoi **Envoyer à l’aide du modèle de données de formulaire** écrit les données de formulaire adaptatif envoyés pour l’objet de modèle de données spécifié dans un modèle de données de formulaire vers sa source de données. Lors de la configuration de l’action d’envoi, vous pouvez sélectionner un objet de modèle de données dont vous souhaitez récrire les données envoyées dans sa source de données.
 
-En outre, vous pouvez envoyer une pièce jointe de formulaire à l’aide d’un modèle de données de formulaire et d’un document d’enregistrement à la source de données.
+En outre, vous pouvez envoyer un formulaire en pièce jointe à l’aide d’un modèle de données de formulaire et d’un document d’enregistrement (DoR) vers la source de données.
 
 Pour plus d’informations sur le modèle de données du formulaire, voir [Intégration de données AEM Forms](../../forms/using/data-integration.md).
 
@@ -134,7 +134,7 @@ Pour plus d’informations sur le modèle de données du formulaire, voir [Inté
 
 L’option **Action d’envoi du portail Forms** rend les données de formulaire disponibles à travers un portail AEM Forms.
 
-Pour plus d’informations sur le portail Forms et l’action d’envoi, voir [Composant Drafts &amp; Submissions](../../forms/using/draft-submission-component.md).
+Pour plus d’informations sur le Portail Formulaires et l’action d’envoi, voir [Composant Brouillons et envois](../../forms/using/draft-submission-component.md).
 
 ## Appeler un processus AEM {#invoke-an-aem-workflow}
 
@@ -154,7 +154,7 @@ Vous pouvez utiliser des variables que le modèle de workflow soit configuré po
 
 * **Document d’enregistrement** : il contient le document d’enregistrement généré pour le formulaire adaptatif. Vous pouvez utiliser l’option **[!UICONTROL Chemin du document d’enregistrement]** pour spécifier le nom du fichier de document d’enregistrement et le chemin d’accès du fichier par rapport à la charge utile. Par exemple, le chemin d’accès `/addresschange/DoR.pdf` crée un dossier nommé `addresschange` relatif à la charge utile et place `DoR.pdf` relatif à la charge utile. Vous pouvez également spécifier uniquement `DoR.pdf` pour n’enregistrer que le document d’enregistrement sans créer de hiérarchie de dossiers. Si le workflow est marqué pour le stockage de données externe, utilisez l’option variable et sélectionnez la variable dans la liste des variables disponibles pour le modèle de workflow.
 
-## Envoyer à Power Automate {#microsoft-power-automate}
+## Envoyer à Power Automate {#microsoft-power-automate}
 
 Vous pouvez configurer un formulaire adaptatif pour exécuter un flux cloud Power Automate lors de l’envoi. Le formulaire adaptatif configuré envoie les données capturées, les pièces jointes et le document d’enregistrement au flux Cloud Power Automate pour traitement. Il vous permet de créer une expérience de capture de données personnalisée tout en tirant parti de la puissance de Microsoft® Power Automate pour élaborer des logiques commerciales autour des données capturées et automatiser les workflows client. Voici quelques exemples de ce que vous pouvez faire après l’intégration d’un formulaire adaptatif à Microsoft® Power Automate :
 
@@ -163,9 +163,9 @@ Vous pouvez configurer un formulaire adaptatif pour exécuter un flux cloud Powe
 * Exécuter des calculs complexes sur les données capturées
 * Enregistrer des données de formulaires adaptatifs dans les systèmes de stockage selon un planning prédéfini
 
-L’éditeur de Forms adaptatif fournit la variable **Appeler un flux Microsoft® Power Automate** Action d’envoi pour envoyer des données de formulaires adaptatifs, des pièces jointes et un document d’enregistrement à Power Automate Cloud Flow. Pour utiliser l’action Envoyer pour envoyer les données capturées à Microsoft® Power Automate, [Connexion de votre instance AEM Forms à Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md)
+L’éditeur de formulaires adaptatifs fournit l’action d’envoi **Appeler un flux Microsoft® Power Automate** pour envoyer des données de formulaires adaptatifs, des pièces jointes et un document d’enregistrement au flux de cloud Power Automate. Pour utiliser l’action Envoyer afin d’envoyer les données capturées à Microsoft® Power Automate, [connectez votre instance AEM Forms à Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md).
 
-Après une configuration réussie, utilisez la méthode [Appeler un flux Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) Action d’envoi pour envoyer des données à un flux d’automatisation Power.
+Une fois la configuration réussie, utilisez l’action d’envoi [Appeler un flux Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) pour envoyer des données à un flux Power Automate.
 
 ## Envoyer à la liste SharePoint Microsoft®{#submit-to-sharedrive}
 
@@ -227,7 +227,7 @@ Pour définir les valeurs d’une configuration, [générez des configurations O
 
 En règle générale, dans n’importe quel système de capture de données en ligne, les développeurs placent des validations JavaScript côté client pour appliquer des règles métier. Mais dans les navigateurs modernes, les utilisateurs finaux peuvent contourner ces validations et effectuer les envois manuellement à l’aide de différentes méthodes, comme la console Web Browser DevTools. Ces méthodes sont également valables pour les formulaires adaptatifs. Un développeur de formulaires peut créer différentes logiques de validation, mais techniquement, les utilisateurs finaux peuvent contourner ces logiques de validation et soumettre des données non valides au serveur. Les données non valides enfreindraient les règles métier appliquées par un créateur ou une créatrice de formulaires.
 
-La fonction de revalidation côté serveur permet également d’exécuter les validations fournies par un auteur de formulaires adaptatifs lors de la conception d’un formulaire adaptatif sur le serveur. Elle empêche toute erreur lors des envois de données et toute violation des règles de fonctionnement représentées en termes de validations de formulaire.
+La fonction de revalidation côté serveur permet également d’exécuter les validations fournies par un auteur ou une autrice de formulaires adaptatifs lors de la conception d’un formulaire adaptatif sur le serveur. Elle empêche toute erreur lors des envois de données et toute violation des règles de fonctionnement représentées en termes de validations de formulaire.
 
 ### Quels éléments valider sur le serveur ?  {#what-to-validate-on-server-br}
 
@@ -249,7 +249,7 @@ Si l’utilisateur final ou l’utilisatrice finale contourne ces validations et
 
 >[!NOTE]
 >
-La validation côté serveur permet de valider le modèle de formulaire. Il est recommandé de créer une bibliothèque cliente distincte pour les validations et de ne pas la mélanger à d’autres éléments tels que le style de HTML et la manipulation DOM dans la même bibliothèque cliente.
+La validation côté serveur permet de valider le modèle de formulaire. Il est recommandé de créer une bibliothèque client séparée pour les validations et de ne pas la mélanger à d’autres éléments. Par exemple, ne placez pas le style HTML et la manipulation DOM dans la même bibliothèque client.
 
 ### Prise en charge des fonctions personnalisées dans les expressions de validation {#supporting-custom-functions-in-validation-expressions-br}
 
@@ -263,6 +263,6 @@ L’auteur peut configurer la bibliothèque personnalisée JavaScript pour chaqu
 
 ## Gestion d’erreurs sur l’action d’envoi {#error-handling-on-submit-action}
 
-Dans le cadre de la sécurité Experience Manager et des conseils de renforcement, configurez les pages d’erreur personnalisées telles que 404.jsp et 500.jsp. Ces gestionnaires sont appelés lorsque, lors de l’envoi d’un formulaire, des erreurs 404 ou 500 s’affichent. Les gestionnaires sont également appelés lorsque ces codes d’erreur sont déclenchés sur le nœud de publication.
+Dans le cadre de la sécurité Experience Manager et des conseils de renforcement, configurez les pages d’erreur personnalisées telles que 404.jsp et 500.jsp. Ces gestionnaires sont appelés lorsque les erreurs 404 ou 500 s’affichent au moment d’envoyer un formulaire. Les gestionnaires sont également appelés lorsque ces codes d’erreur sont déclenchés sur le nœud de publication.
 
 Pour plus d’informations, voir [Personnaliser les pages affichées par le gestionnaire d’erreurs](/help/sites-developing/customizing-errorhandler-pages.md).

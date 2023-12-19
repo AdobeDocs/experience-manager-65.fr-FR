@@ -1,6 +1,6 @@
 ---
 title: Prévisualiser des ressources
-description: Découvrez comment prévisualiser des ressources, telles que des vidéos et des images, dans Dynamic Media, en appliquant des paramètres d’image prédéfinis et des paramètres de visionneuse prédéfinis.
+description: Découvrez comment prévisualiser des ressources, telles que des vidéos et des images, dans Dynamic Media, en appliquant des paramètres d’image prédéfinis et des paramètres de visionneuse prédéfinis.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -12,7 +12,7 @@ exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
 source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '1381'
-ht-degree: 79%
+ht-degree: 89%
 
 ---
 
@@ -38,8 +38,8 @@ Pour activer ou désactiver les paramètres prédéfinis de visionneuse dans l�
 1. Dans **[!UICONTROL Adobe Experience Manager]**, sur la page **[!UICONTROL Navigation]**, sélectionnez **[!UICONTROL Ressources]**, puis **[!UICONTROL Fichiers]** pour accéder aux ressources.
 1. Dans le coin supérieur droit de la page, dans la liste déroulante **[!UICONTROL Afficher]**, sélectionnez **[!UICONTROL Vue Liste]**.
 1. (Facultatif) Utilisez la colonne **[!UICONTROL Type]** pour trier les ressources en fonction du type que vous souhaitez prévisualiser.
-1. Sous , **[!UICONTROL Titre]** , cliquez sur le nom du titre (et non sur l’image miniature) de la ressource à prévisualiser.
-1. Selon le type de ressource sur lequel vous avez cliqué, effectuez l’une des opérations suivantes :
+1. Sous la colonne **[!UICONTROL Titre]**, cliquez sur le nom du titre (et non l’image miniature) de la ressource à prévisualiser.
+1. Selon le type de ressource sur lequel vous avez cliqué, procédez de l’une des manières suivantes :
 
 
    <table>
@@ -63,7 +63,7 @@ Pour activer ou désactiver les paramètres prédéfinis de visionneuse dans l�
       <p><strong>Navigation dans la scène 3D</strong></p>
       <ul>
       <li><p><strong>Tournez votre appareil photo</strong> : faites tourner votre angle de vue autour de la scène et des objets 3D.</p> Souris : cliquez avec le bouton gauche et faites glisser </p> Écran tactile : appuyez et faites glisser</p></li>
-      <li><p><strong>Panoramique</strong> : basculez votre angle de vue vers la gauche, la droite, le haut et le bas.</p> Souris : cliquez avec le bouton droit et faites glisser </p> Écran tactile : appuyez avec deux doigts et faites glisser</p></li>
+      <li><p><strong>Panoramique</strong> : basculez votre angle de vue vers la gauche, la droite, le haut et le bas.</p> Souris : cliquez avec le bouton droit et faites glisser </p> Écran tactile : appuyez avec deux doigts et faites glisser</p></li>
       <li><p><strong>Zoom</strong> : permet de zoomer que vous puissiez déplacer l’appareil dans et hors des zones de la scène 3D.</p> Souris : effectuez un défilement à l’aide de la roulette </p> Écran tactile : effectuez un pincement du doigt</p></li>
       <li><p><strong>Recentrez votre appareil photo</strong> : faites tourner votre angle de vue autour de la scène et des objets 3D.</p> Souris : double-cliquez </p> Écran tactile : double-sélection</li></ul></td>
       </tr>
@@ -110,7 +110,7 @@ Pour activer ou désactiver les paramètres prédéfinis de visionneuse dans l�
       </ul> <p>Utilisez les icônes <strong>+</strong> et <strong>– </strong> pour augmenter ou réduire le zoom de l’image sélectionnée. Sélectionnez <strong>Réinitialiser</strong> si vous souhaitez rétablir l’image sur le zoom d’origine.<br /> Si vous utilisez un écran tactile, double-sélectionnez l’image à zoomer par étapes. Lorsque vous atteignez le zoom maximal, double-sélectionnez à nouveau l’image pour réinitialiser l’état du zoom. Faites glisser sur l’image pour effectuer un panoramique.</p> </td>
       </tr>
       <tr>
-      <td>Visionneuse de supports variés</td>
+      <td>Visionneuse de médias mixtes</td>
       <td>Non</td>
       <td>Oui</td>
       <td><p><strong>Pour prévisualiser une ressource dans une visionneuse particulière</strong></p>

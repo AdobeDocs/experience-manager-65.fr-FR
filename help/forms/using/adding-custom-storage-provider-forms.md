@@ -8,8 +8,8 @@ feature: Forms Portal
 exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
 source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 33%
+source-wordcount: '335'
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 33%
 
 ## Présentation {#overview}
 
-AEM Forms vous permet d’enregistrer un formulaire en tant que brouillon. La fonctionnalité de brouillon vous permet de gérer un formulaire de travail en cours, que vous pouvez compléter et envoyer ultérieurement à partir de n’importe quel périphérique.
+AEM Forms vous permet d’enregistrer un formulaire sous forme de brouillon. La fonctionnalité de brouillon vous permet de mettre à jour un formulaire de travail en cours, que vous pouvez remplir et envoyer ultérieurement sur n’importe quel appareil.
 
-Par défaut, AEM Forms stocke les données utilisateur associées au brouillon et à l’envoi d’un formulaire dans la variable `/content/forms/fp` sur l’instance de publication. En outre, les composants du portail AEM Forms fournissent des services de données, que vous pouvez utiliser pour personnaliser l’implémentation du stockage des données utilisateur pour les brouillons et les envois. Vous pouvez par exemple stocker des données utilisateur dans un entrepôt de données.
+Par défaut, AEM Forms stocke les données utilisateur associées au brouillon et à l’envoi d’un formulaire dans le nœud `/content/forms/fp` de l’instance de publication. En outre, les composants du portail AEM Forms fournissent des services de données, que vous pouvez utiliser pour personnaliser l’implémentation du stockage des données utilisateur pour les brouillons et les envois. Par exemple, vous pouvez stocker des données utilisateur dans un magasin de données.
 
 ## Conditions préalables requises  {#prerequisites}
 
@@ -30,7 +30,7 @@ Par défaut, AEM Forms stocke les données utilisateur associées au brouillon e
 
 ## Service de données de brouillon {#draft-data-service}
 
-Pour personnaliser le stockage des données utilisateur pour les brouillons, vous devez mettre en oeuvre toutes les méthodes de la méthode `DraftDataService` . L’exemple de code suivant décrit les méthodes et les arguments.
+Pour personnaliser le stockage des données utilisateur pour les brouillons, vous devez implémenter toutes les méthodes de l’interface `DraftDataService`. L’exemple de code suivant décrit les méthodes et les arguments.
 
 ```java
 /**
@@ -99,7 +99,7 @@ public interface DraftDataService {
 
 ## Service Submission Data  {#submission-data-service}
 
-Pour personnaliser le stockage des données utilisateur pour les envois, vous devez mettre en oeuvre toutes les méthodes de la variable `SubmitDataService` . L’exemple de code suivant décrit les méthodes et les arguments.
+Pour personnaliser le stockage des données utilisateur pour les envois, vous devez implémenter toutes les méthodes de l’interface `SubmitDataService`.  L’exemple de code suivant décrit les méthodes et les arguments.
 
 ```java
 /**
@@ -184,7 +184,7 @@ public interface SubmitDataService {
 }
 ```
 
-Forms Portal utilise le concept UUID (Universally Unique IDentifier) pour générer un identifiant unique pour chaque brouillon et formulaire envoyé. Vous pouvez également générer votre propre identifiant unique. Vous pouvez implémenter l’interface FPKeyGeneratorService, remplacer ses méthodes et développer une logique personnalisée pour générer un identifiant unique personnalisé pour chaque brouillon et formulaire envoyé. En outre, définissez le rang de service de l’implémentation de la génération d’identifiants personnalisée supérieur à 0. Cela garantit que l’implémentation personnalisée est utilisée à la place de l’implémentation par défaut.
+Le portail Formulaires utilise le concept d’identifiant universel unique (UUID) pour générer un ID unique pour chaque brouillon et formulaire envoyé. Vous pouvez également générer un ID unique de votre choix. Vous pouvez implémenter l’interface FPKeyGeneratorService, remplacer ses méthodes et développer une logique personnalisée pour générer un identifiant unique personnalisé pour chaque brouillon et formulaire envoyé. En outre, définissez le classement de service de l’implémentation de génération d’ID personnalisé sur une valeur supérieure à 0. Cela garantit que l’implémentation personnalisée est utilisée à la place de l’implémentation par défaut.
 
 ```java
 public interface FPKeyGeneratorService {
@@ -199,11 +199,11 @@ public interface FPKeyGeneratorService {
 }
 ```
 
-Vous pouvez utiliser l’annotation ci-dessous pour augmenter le classement du service pour l’ID personnalisé généré avec le code ci-dessus :
+Vous pouvez utiliser l’annotation ci-dessous pour augmenter le classement du service pour l’ID personnalisé généré avec le code ci-dessus :
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 
-Pour utiliser l’annotation ci-dessus, importez les éléments suivants dans votre projet :
+Pour utiliser l’annotation ci-dessus, importez les éléments suivants dans votre projet :
 
 ```java
 import org.apache.felix.scr.annotations.Properties;

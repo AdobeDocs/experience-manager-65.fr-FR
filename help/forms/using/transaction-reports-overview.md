@@ -8,7 +8,7 @@ exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '551'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 93%
 
 ## Présentation {#introduction}
 
-Les rapports de transaction dans AEM Forms vous permettent de conserver un décompte de toutes les transactions effectuées depuis une date spécifiée sur votre déploiement AEM Forms. L’objectif est de fournir des informations sur l’utilisation des produits et d’aider les parties prenantes à comprendre leurs volumes de traitement numérique. Voici quelques exemples d’une transaction :
+Les rapports de transaction dans AEM Forms vous permettent de tenir le compte de toutes les transactions effectuées depuis une date spécifiée sur votre déploiement AEM Forms. L’objectif est de fournir des informations sur l’utilisation des produits et d’aider les parties prenantes à comprendre leurs volumes de traitement numérique. Voici quelques exemples d’une transaction :
 
 * Envoi d’un formulaire adaptatif, d’un HTML5 ou d’un jeu de formulaires
 * Rendu d’une version imprimée ou d’une version web d’une communication interactive.

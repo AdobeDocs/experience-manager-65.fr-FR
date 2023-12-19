@@ -1,6 +1,6 @@
 ---
 title: Envoi d’un accusé de réception d’envoi de formulaire par e-mail
-description: AEM Forms vous permet de configurer l’action d’envoi par courrier électronique qui envoie un accusé de réception à un utilisateur lors de l’envoi du formulaire.
+description: AEM Forms permet de configurer l’action d’e-mail Envoyer qui envoie un accusé de réception à l’utilisateur ou à l’utilisatrice lors de l’envoi du formulaire.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
@@ -9,7 +9,7 @@ exl-id: bca4044a-18a9-4b97-92de-eff1e9a840f9
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 71%
+ht-degree: 97%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 71%
 
 ## Envoi de données de formulaire adaptatif {#adaptive-form-data-submission}
 
-Les formulaires adaptatifs fournissent plusieurs [actions d’envoi](../../forms/using/configuring-submit-actions.md) processus pour envoyer les données de formulaire à différents points de terminaison.
+Les formulaires adaptatifs fournissent plusieurs workflows d’[actions Envoyer](../../forms/using/configuring-submit-actions.md) prêts à l’emploi pour envoyer les données de formulaire à différents points d’entrée.
 
 Par exemple, l’action **[!UICONTROL Envoyer un e-mail]** envoie un e-mail lorsque l’envoi d’un formulaire adaptatif a été réussi. Elle peut également être configurée pour envoyer les données de formulaire et le fichier PDF dans l’e-mail.
 
-Cet article décrit les étapes à suivre pour activer l’action Courrier électronique sur un formulaire adaptatif et les différentes configurations fournies.
+Cet article décrit la procédure pour activer l’action E-mail dans un formulaire adaptatif et les différentes configurations fournies.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ L’action Envoyer un e-mail permet à un auteur d’envoyer automatiquement un 
 
    Indiquez l’objet et le corps du message dans les champs respectifs **[!UICONTROL Objet]** et **[!UICONTROL Modèle d’e-mail]**.
 
-   Vous pouvez également spécifier des espaces réservés aux variables dans les champs, auquel cas les valeurs des champs sont traitées lorsque le formulaire est envoyé avec succès par un utilisateur final. Pour plus d’informations, voir [Utilisation des noms de champ de formulaire adaptatif pour créer dynamiquement le contenu d’un email](../../forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p).
+   Vous pouvez également spécifier des espaces réservés aux variables dans les champs. Dans ce cas, les valeurs des champs sont traitées lorsque le formulaire est envoyé par un utilisateur ou une utilisatrice finale. Pour plus d’informations, consultez [Utilisation des noms de champ de formulaire adaptatif pour créer dynamiquement le contenu d’un e-mail](../../forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p).
 
    Cochez la case **[!UICONTROL Inclure les pièces jointes]** si le formulaire contient des pièces jointes que vous souhaitez joindre à l’e-mail.
 
@@ -59,9 +59,9 @@ L’action Envoyer un e-mail permet à un auteur d’envoyer automatiquement un 
 
 1. Cliquez sur ![Enregistrer](assets/save_icon.svg) pour enregistrer les modifications.
 
-### Utilisation des noms de champ de formulaire adaptatif pour créer dynamiquement le contenu d’un email {#using-adaptive-form-field-names-to-dynamically-create-email-content}
+### Utilisation des noms de champ de formulaire adaptatif pour créer dynamiquement le contenu d’un e-mail {#using-adaptive-form-field-names-to-dynamically-create-email-content}
 
-Les noms de champ d’un formulaire adaptatif sont appelés espaces réservés, remplacés par la valeur de ce champ après l’envoi du formulaire par un utilisateur.
+Dans un formulaire adaptatif, les noms de champ sont appelés espaces réservés. Ils sont remplacés par la valeur du champ après l’envoi du formulaire par un utilisateur ou une utilisatrice.
 
 Sous l’action **[!UICONTROL Envoyer un e-mail]**, vous pouvez utiliser des espaces réservés qui sont traités lorsque l’action est effectuée. Cela implique que les en-têtes de l’e-mail (tels que **[!UICONTROL À]**, **[!UICONTROL Cc]**, **[!UICONTROL Cci]**, **[!UICONTROL Objet]**) sont générés lorsque l’utilisateur envoie le formulaire.
 

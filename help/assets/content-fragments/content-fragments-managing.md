@@ -6,8 +6,8 @@ role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
 source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 94%
+source-wordcount: '1712'
+ht-degree: 96%
 
 ---
 
@@ -110,7 +110,7 @@ Sélectionnez le fragment pour afficher la barre d’outils avec les actions app
 
 * **Modifier**
 
-   * Permet : [ouvrir le fragment pour modifier le contenu ;](/help/assets/content-fragments/content-fragments-variations.md) ainsi que ses éléments, variations, contenu et métadonnées associés.
+   * Permet [d’ouvrir le fragment afin d’en modifier le contenu](/help/assets/content-fragments/content-fragments-variations.md) ainsi que ses variations, contenu, métadonnées et éléments associés.
 
 * **Gérer les balises**
 * **À la collection**
@@ -333,7 +333,7 @@ Ces dernières sont affichées dans des versions côte à côte dans lesquelles�
    * le texte inséré est en vert ;
    * le texte remplacé est en bleu.
 
-* L’icône plein écran vous permet d’ouvrir l’une des versions seule, puis de revenir à la vue parallèle.
+* L’icône Plein écran vous permet d’ouvrir l’une des versions seule puis de basculer à nouveau sur la vue parallèle.
 * Vous pouvez **rétablir** la version spécifique
 * **Terminé** vous ramène à la console.
 

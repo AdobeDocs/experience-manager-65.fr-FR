@@ -1,6 +1,6 @@
 ---
 title: Console Aperçu de Live Copy
-description: Découvrez les principes de base de la console Aperçu de la Live Copy.
+description: Découvrez les principes de base de la console Vue d’ensemble de Live Copy.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
@@ -10,19 +10,19 @@ exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '546'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
 # Console Aperçu de Live Copy{#live-copy-overview-console}
 
-La variable **Présentation de la Live Copy** permet d’effectuer les opérations suivantes :
+La **vue d’ensemble de Live Copy** vous permet :
 
-* Afficher/gérer l’héritage sur un site :
+* d’afficher ou de gérer l’héritage sur un site :
 
-   * Afficher l’arborescence du plan directeur et la structure de Live Copy correspondante, ainsi que leur état d’héritage
-   * Modifier l’état d’héritage ; par exemple, suspendre, reprendre
-   * Affichage des propriétés de plan directeur et de Live Copy
+   * d’afficher l’arborescence de plan directeur de la structure de Live Copy correspondante, ainsi que le statut d’héritage ;
+   * modifier le statut d’héritage ; par exemple, suspendre, reprendre ;
+   * d’afficher les propriétés de plan directeur et de Live Copy ;
 
 * d’exécuter des actions de déploiement
 
@@ -44,19 +44,19 @@ L’**aperçu de la Live Copy** peut être ouvert via le panneau latéral **Ré
 
    >[!NOTE]
    >
-   >Vous pouvez également ouvrir d’abord Références , puis sélectionner le plan directeur.
+   >Vous pouvez également ouvrir le panneau des références en premier, puis sélectionner le plan directeur.
 
-1. Sélectionner **Présentation de la Live Copy** pour afficher et utiliser l’aperçu de toutes les Live Copies liées au plan directeur sélectionné.
+1. Sélectionnez **Vue d’ensemble de Live Copy** pour afficher et utiliser la vue d’ensemble de toutes les Live Copies associées au plan directeur sélectionné.
 1. Utilisez **Fermer** pour fermer l’aperçu et retourner à la console **Sites**.
 
-### Ouverture de l’aperçu de la Live Copy - Propriétés d’une page de plan directeur {#opening-live-copy-overview-properties-of-a-blueprint-page}
+### Ouverture de la vue d’ensemble de la Live Copy - Propriétés d’une page de plan directeur {#opening-live-copy-overview-properties-of-a-blueprint-page}
 
-L’**Aperçu de Live Copy** peut être ouvert lors de l’affichage des propriétés d’une page de plan directeur :
+La **vue d’ensemble de Live Copy** peut être ouverte lors de l’affichage des propriétés d’une page de plan directeur :
 
 1. Ouvrez les **propriétés** pour la page de plan directeur appropriée.
 1. Ouvrez l’onglet **Plan directeur**, l’option **Aperçu de Live Copy** s’affiche dans la barre d’outils supérieure :
 
-   ![Onglet Plan directeur - Aperçu de la Live Copy](assets/chlimage_1-360.png)
+   ![Onglet Plan directeur - Vue d’ensemble de la Live Copy](assets/chlimage_1-360.png)
 
 1. Sélectionnez **Aperçu de la Live Copy** pour afficher et utiliser l’aperçu de toutes les Live Copies associées au plan directeur actuel.
 
@@ -68,16 +68,16 @@ L’**Aperçu de Live Copy** peut être ouvert lors de l’affichage des propri�
 
 ## Utilisation de l’aperçu de la Live Copy {#using-the-live-copy-overview}
 
-La variable **Présentation de la Live Copy** peut également être utilisé pour exécuter des actions sur la Live Copy :
+La **vue d’ensemble de Live Copy** peut également être utilisée pour effectuer des actions sur la Live Copy :
 
 1. Ouvrez l’**aperçu de la Live Copy**.
-1. Sélectionnez la page de plan directeur ou de Live Copy requise. La barre d’outils est mise à jour pour afficher les actions disponibles. La variable [actions](/help/sites-administering/msm.md#terms-used) disponible selon que vous sélectionnez une [plan directeur](#actions-for-a-blueprint-page) ou [Live Copy](#actions-for-a-live-copy-page) page :
+1. Sélectionnez la page de plan directeur ou de Live Copy requise. La barre d’outils est mise à jour pour afficher les actions disponibles. Les [actions](/help/sites-administering/msm.md#terms-used) disponibles varient selon que vous sélectionnez une page de [plan directeur](#actions-for-a-blueprint-page) ou de [Live Copy](#actions-for-a-live-copy-page) :
 
 ### Actions d’une page de plan directeur {#actions-for-a-blueprint-page}
 
 Lorsque vous sélectionnez une page de plan directeur, les actions suivantes sont disponibles :
 
-![Plan directeur sélectionné : actions disponibles](assets/chlimage_1-361.png)
+![Plan directeur sélectionné - Actions disponibles](assets/chlimage_1-361.png)
 
 * Modification
 
@@ -85,17 +85,17 @@ Lorsque vous sélectionnez une page de plan directeur, les actions suivantes son
 
 * [Déploiement](/help/sites-administering/msm.md#rollout-and-synchronize)
 
-   * Effectuez un déploiement pour transmettre les modifications de la source à la Live Copy.
+   * Effectuez un déploiement pour envoyer les modifications de la source vers la Live Copy.
 
 ### Actions pour une page de Live Copy {#actions-for-a-live-copy-page}
 
-Lorsque vous sélectionnez une page Live Copy, les actions suivantes sont disponibles :
+Lorsque vous sélectionnez une page de Live Copy, les actions suivantes sont disponibles :
 
-![Page Live Copy sélectionnée - actions disponibles](assets/chlimage_1-362.png)
+![Page de Live Copy sélectionnée - Actions disponibles](assets/chlimage_1-362.png)
 
 * Modifier
 
-   * Ouvrez la page Live Copy pour la modifier.
+   * Ouvrez la page de la Live Copy pour la modifier.
 
 * [Statut de la relation](#relationship-status)
 
@@ -115,7 +115,7 @@ Lorsque vous sélectionnez une page Live Copy, les actions suivantes sont dispon
 
 * [Reprise](/help/sites-administering/msm-livecopy.md#resuming-inheritance-for-a-page)
 
-   * Reprendre vous permet de rétablir une relation suspendue.
+   * La reprise vous permet de rétablir une relation suspendue.
 
 * [Désolidariser](/help/sites-administering/msm.md#detaching-a-live-copy)
 
@@ -130,12 +130,12 @@ La console **Statut de la relation** comporte deux onglets fournissant de nombre
 
 ### Informations sur le statut de la relation {#relationship-status-information}
 
-Cet onglet fournit des informations détaillées sur l’état de la relation entre le plan directeur et la Live Copy :
+Cet onglet fournit des informations détaillées sur le statut de la relation entre le plan directeur et la Live Copy :
 
-![Informations sur l’état de la relation](assets/chlimage_1-363.png)
+![Informations sur le statut de la relation](assets/chlimage_1-363.png)
 
 ### Informations sur la Live Copy {#live-copy-information}
 
-Cet onglet vous permet d’afficher et de modifier la configuration de la Live Copy :
+Cet onglet vous permet d’afficher et de modifier la configuration de la Live Copy :
 
-![Informations sur la Live Copy](assets/chlimage_1-364.png)
+![Informations sur la Live Copy](assets/chlimage_1-364.png)

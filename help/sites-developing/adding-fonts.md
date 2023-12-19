@@ -1,6 +1,6 @@
 ---
 title: Ajout de polices pour le rendu graphique
-description: AEM permet de générer des graphiques incorporant du texte extrait dynamiquement de votre contenu.
+description: AEM vous permet de générer des graphiques incorporant du texte extrait dynamiquement de votre contenu.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -9,13 +9,13 @@ exl-id: 725c81d0-0258-4118-8b01-29fd7bcaf9b3
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '171'
-ht-degree: 78%
+ht-degree: 92%
 
 ---
 
 # Ajout de polices pour le rendu graphique{#adding-fonts-for-graphic-rendering}
 
-AEM permet de générer des graphiques incorporant du texte extrait dynamiquement de votre contenu.
+AEM vous permet de générer des graphiques incorporant du texte extrait dynamiquement de votre contenu.
 
 Pour ce faire, vous pouvez également charger et utiliser vos propres polices.
 

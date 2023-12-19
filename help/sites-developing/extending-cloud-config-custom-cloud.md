@@ -1,6 +1,6 @@
 ---
 title: Créer un service cloud personnalisé
-description: Le jeu de Cloud Services par défaut peut être étendu avec les types de Cloud Service personnalisés.
+description: Le jeu de services cloud par défaut peut être étendu avec des types de services cloud personnalisés.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -9,29 +9,29 @@ exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 49%
+ht-degree: 93%
 
 ---
 
 # Créer un service cloud personnalisé{#creating-a-custom-cloud-service}
 
-Le jeu de Cloud Services par défaut peut être étendu avec des types de Cloud Service personnalisés. Vous pouvez ainsi injecter des balises personnalisées dans la page de manière structurée. Il s’agit principalement d’une utilisation pour les fournisseurs d’analyses tiers, par exemple les fournisseurs Google Analytics, Chartbeat, etc. Les pages enfants héritent des Services cloud des pages parents, avec la possibilité d’annuler l’héritage à n’importe quel niveau.
+Le jeu de services cloud par défaut peut être étendu avec des types de services cloud personnalisés. Vous pouvez ainsi insérer des balises personnalisées dans la page de manière structurée. Il s’agit principalement d’une utilisation pour les fournisseurs d’analyses tiers, par exemple les fournisseurs Google Analytics, Chartbeat, etc. Les pages enfants héritent des services cloud des pages parents, avec la possibilité d’annuler l’héritage à n’importe quel niveau.
 
 >[!NOTE]
 >
->Ce guide détaillé de création d’un Cloud Service est un exemple d’utilisation de Google Analytics. Tout peut ne pas s’appliquer à votre cas d’utilisation.
+>Ce guide détaillé de création d’un service cloud est un exemple qui utilise Google Analytics. Toutes les étapes peuvent ne pas s’appliquer à votre cas d’utilisation.
 
-1. Dans CRXDE Lite, créez un noeud sous `/apps`:
+1. Dans CRXDE Lite, créez un nœud sous `/apps` :
 
    * **Nom** : `acs`
    * **Type** : `nt:folder`
 
-1. Créez un noeud sous `/apps/acs`:
+1. Créez un nœud sous `/apps/acs` :
 
    * **Nom** : `analytics`
    * **Type** : `sling:Folder`
 
-1. Créez deux noeuds sous `/apps/acs/analytics`:
+1. Créez deux nœuds sous `/apps/acs/analytics` :
 
    * **Nom** : components
    * **Type** : `sling:Folder`
@@ -41,7 +41,7 @@ Le jeu de Cloud Services par défaut peut être étendu avec des types de Cloud 
    * **Nom** : templates
    * **Type** : `sling:Folder`
 
-1. Clic droit `/apps/acs/analytics/components`. Sélectionner **Créer...** suivie de **Créer un composant...** La boîte de dialogue qui s’ouvre vous permet d’indiquer les informations suivantes :
+1. Clic droit `/apps/acs/analytics/components`. Sélectionnez **Créer...**, puis **Créer un composant...**. La boîte de dialogue qui s’ouvre alors vous permet de spécifier ce qui suit :
 
    * **Libellé** : `googleanalyticspage`
    * **Titre** : `Google Analytics Page`
@@ -59,7 +59,7 @@ Le jeu de Cloud Services par défaut peut être étendu avec des types de Cloud 
    * **Nom :** `cq:defaultView`
    * **Valeur :** `html`
 
-1. Créez un fichier nommé `content.jsp` under `/apps/acs/analytics/components/googleanalyticspage`, avec le contenu suivant :
+1. Créez un fichier nommé `content.jsp` sous `/apps/acs/analytics/components/googleanalyticspage`, avec le contenu suivant :
 
    ```xml
    <%@page contentType="text/html"
@@ -74,7 +74,7 @@ Le jeu de Cloud Services par défaut peut être étendu avec des types de Cloud 
    </div>
    ```
 
-1. Créez un noeud sous `/apps/acs/analytics/components/googleanalyticspage/`:
+1. Créez un nœud sous `/apps/acs/analytics/components/googleanalyticspage/` :
 
    * **Nom** : `dialog`
    * **Type** : `cq:Dialog`
@@ -87,7 +87,7 @@ Le jeu de Cloud Services par défaut peut être étendu avec des types de Cloud 
       * **Type** : `String`
       * **Valeur** : `dialog`
 
-1. Créez un noeud sous `/apps/acs/analytics/components/googleanalyticspage/dialog`:
+1. Créez un nœud sous `/apps/acs/analytics/components/googleanalyticspage/dialog` :
 
    * **Nom** : `items`
    * **Type** : `cq:Widget`
@@ -97,12 +97,12 @@ Le jeu de Cloud Services par défaut peut être étendu avec des types de Cloud 
       * **Type** : `String`
       * **Valeur** : `tabpanel`
 
-1. Créez un noeud sous `/apps/acs/analytics/components/googleanalyticspage/dialog/items`:
+1. Créez un nœud sous `/apps/acs/analytics/components/googleanalyticspage/dialog/items` :
 
    * **Nom** : `items`
    * **Type** : `cq:WidgetCollection`
 
-1. Créez un noeud sous `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items`:
+1. Créez un nœud sous `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items` :
 
    * **Nom** : tab1
    * **Type** : `cq:Panel`
@@ -112,15 +112,15 @@ Le jeu de Cloud Services par défaut peut être étendu avec des types de Cloud 
       * **Type** : `String`
       * **Valeur** : `Config`
 
-1. Créez un noeud sous `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`:
+1. Créez un nœud sous `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1` :
 
    * **Nom** : items
    * **Type** : `nt:unstructured`
    * **Propriétés** :
 
       * **Nom** : `fieldLabel`
-      * **Type**: chaîne
-      * **Valeur**: ID de compte
+      * **Type** : chaîne
+      * **Valeur** : ID de compte
 
       * **Nom** : `fieldDescription`
       * **Type** : `String`
@@ -137,7 +137,7 @@ Le jeu de Cloud Services par défaut peut être étendu avec des types de Cloud 
       * **Valeur** : `textfield`
 
 1. Copiez `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` sur `/apps/acs/analytics/components/googleanalyticspage/body.jsp`, remplacez `libs` par `apps` à la ligne 34 et faites de la référence de script à la ligne 79 un chemin d’accès entièrement qualifié.
-1. Créez un modèle sous `/apps/acs/analytics/templates/`:
+1. Créez un modèle sous `/apps/acs/analytics/templates/` :
 
    * avec comme **Type de ressource** = `acs/analytics/components/googleanalyticspage` ;
    * avec comme **Libellé** = `googleanalytics` ;
@@ -147,7 +147,7 @@ Le jeu de Cloud Services par défaut peut être étendu avec des types de Cloud 
    * avec comme **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (sur le nœud template et non sur le nœud jcr:content) ;
    * avec comme **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (sur jcr:content).
 
-1. Créez un composant : `/apps/acs/analytics/components/googleanalytics`.
+1. Créez un composant : `/apps/acs/analytics/components/googleanalytics`.
 
    Ajoutez le contenu suivant à `googleanalytics.jsp` :
 
@@ -190,7 +190,7 @@ Le jeu de Cloud Services par défaut peut être étendu avec des types de Cloud 
 
    Cela devrait générer le balisage personnalisé sur la base des propriétés de configuration.
 
-1. Accédez à `http://localhost:4502/miscadmin#/etc/cloudservices` et créez une page :
+1. Accédez à `http://localhost:4502/miscadmin#/etc/cloudservices` et créez une page :
 
    * **Titre** : `Google Analytics`
    * **Nom** : `googleanalytics`
@@ -201,7 +201,7 @@ Le jeu de Cloud Services par défaut peut être étendu avec des types de Cloud 
    * **Type** : `String`
    * **Valeur** : `acs/analytics/components/googleanalytics`
 
-1. Accédez à la page Service nouvellement créée ( `http://localhost:4502/etc/cloudservices/googleanalytics.html`), puis cliquez sur le bouton **+** pour créer une configuration :
+1. Accédez à la page Service qui vient d’être créée (`http://localhost:4502/etc/cloudservices/googleanalytics.html`) et cliquez sur le signe **+** pour créer une configuration :
 
    * **Configuration du parent** : `/etc/cloudservices/googleanalytics`
    * **Titre :** `My First GA Config`
@@ -209,5 +209,5 @@ Le jeu de Cloud Services par défaut peut être étendu avec des types de Cloud 
    Sélectionnez **Google Analytics Configuration**, puis cliquez sur **Créer**.
 
 1. Saisissez un **Identifiant de compte**, par exemple : `AA-11111111-1`. Cliquez sur **OK**.
-1. Accédez à une page et ajoutez la configuration nouvellement créée dans les propriétés de page, sous la propriété **Cloud Service** .
+1. Accédez à une page et ajoutez la configuration nouvellement créée dans les propriétés de page, sous l’onglet **Services de cloud**.
 1. Les balises personnalisées sont ajoutées à la page.

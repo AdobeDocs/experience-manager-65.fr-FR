@@ -8,7 +8,7 @@ exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 56%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html) |
 | AEM 6.5 | Cet article |
 
 
@@ -24,22 +24,22 @@ ht-degree: 56%
 
 ## Présentation {#introduction}
 
-Vous recherchez un mobile-friendly **expérience de formulaires** qui permet de simplifier l&#39;enrôlement, d&#39;augmenter l&#39;engagement et de réduire le temps de disponibilité, **formulaires adaptatifs** est parfaite pour vous. Les formulaires adaptatifs offrent une expérience de formulaires adaptée aux analyses, à l’automatisation et aux appareils mobiles. Vous pouvez facilement créer des formulaires réactifs et interactifs, utiliser des processus automatisés pour réduire les tâches administratives et répétitives et utiliser l’analyse de données pour améliorer et personnaliser l’expérience des clients avec vos formulaires.
+Êtes-vous à la recherche d’une **expérience de création de formulaires** adaptée aux appareils mobiles qui simplifie l’inscription, renforce l’engagement et réduit la durée d’exécution ? Les **formulaires adaptatifs** vous conviendront parfaitement. Les formulaires adaptatifs offrent une expérience de création de formulaires mobile, automatisée et compatible avec Analytics. Vous pouvez facilement créer des formulaires réactifs et interactifs, utiliser des processus automatisés pour réduire les tâches administratives et répétitives et utiliser l’analyse de données pour améliorer et personnaliser l’expérience des clients avec vos formulaires.
 
-Ce tutoriel fournit une structure de bout en bout pour créer un formulaire adaptatif. Le tutoriel consiste en un cas d’utilisation et plusieurs guides. Chaque guide vous aide à apprendre et à ajouter de nouvelles fonctionnalités au formulaire adaptatif créé dans ce tutoriel. Vous disposez d’un formulaire adaptatif fonctionnel après chaque guide. Le guide de création d’un formulaire adaptatif est disponible. Les guides suivants seront bientôt disponibles. À la fin de ce didacticiel, vous serez capable de :
+Ce tutoriel fournit un cadre de bout en bout pour la création d’un formulaire adaptatif. Le tutoriel consiste en un cas d’utilisation et plusieurs guides. Chaque guide vous aide à découvrir et à ajouter de nouvelles fonctionnalités au formulaire adaptatif créé dans ce tutoriel. Vous obtenez un formulaire adaptatif opérationnel à la fin de chaque guide. Le guide de création d’un formulaire adaptatif est disponible. Les guides suivants seront bientôt disponibles. À la fin de ce didacticiel, vous serez capable de :
 
-* Créez un formulaire adaptatif et un modèle de données de formulaire.
-* Mettez en forme votre formulaire adaptatif.
-* Utilisez l’éditeur de règles de formulaire adaptatif pour créer des règles de fonctionnement.
-* Tester et publier un formulaire adaptatif.
+* créer un formulaire adaptatif et un modèle de données de formulaire ;
+* appliquer un style à votre formulaire adaptatif ;
+* utiliser l’éditeur de règles de formulaire adaptatif pour créer des règles métier ;
+* tester et publier un formulaire adaptatif.
 
 ![création-d’un-workflow-de-formulaire-adaptif](assets/create-daptive-form-workflow.png)
 
-Le parcours commence par l’apprentissage du cas pratique :
+Commençons par aborder un cas d’utilisation :
 
-Un site web propose une gamme de produits pour différents clients. Les clients parcourent le portail, sélectionnent et commandent les produits. Chaque client crée un compte et fournit des adresses de livraison et de facturation. Une cliente, Sara Rose, cherche à ajouter son adresse de livraison sur le site web. Le site Web fournit un formulaire en ligne pour ajouter et mettre à jour les adresses de livraison.
+Un site web propose une gamme de produits pour une clientèle diverse. La clientèle parcourt le portail, sélectionne et commande les produits. Chaque personne crée un compte et fournit des adresses de livraison et de facturation. Une cliente existante, Sara Rose, cherche à ajouter son adresse de livraison sur le site web. Le site Web fournit un formulaire en ligne pour ajouter et mettre à jour les adresses de livraison.
 
-Le site Web fonctionne sous Adobe Experience Manager (AEM) et utilise AEM [!DNL Forms] pour la capture et le traitement des données. Le formulaire d’ajout et de mise à jour d’adresse est un formulaire adaptatif. Le site web stocke les détails du client dans une base de données. Il utilise le formulaire d’ajout et de mise à jour d’adresse pour récupérer et afficher les adresses disponibles. Ils utilisent également le formulaire adaptatif pour accepter les adresses mises à jour et nouvelles.
+Le site Web fonctionne sous Adobe Experience Manager (AEM) et utilise AEM [!DNL Forms] pour la capture et le traitement des données. Le formulaire d’ajout et de mise à jour d’adresse est un formulaire adaptatif. Le site web stocke les détails du client ou de la cliente dans une base de données. Il utilise le formulaire d’ajout et de mise à jour d’adresse pour récupérer et afficher les adresses disponibles. Il utilise également le formulaire adaptatif pour accepter les adresses mises à jour et les nouvelles adresses.
 
 ### Prérequis {#prerequisite}
 
@@ -70,7 +70,7 @@ Objectifs:
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-Un modèle de données de formulaire permet de connecter un formulaire adaptatif à des sources de données disparates. Par exemple, AEM profil utilisateur, services Web RESTful, services Web SOAP, services OData et bases de données relationnelles. Un modèle de données de formulaire est un schéma de représentation de données unifié des entités commerciales et des services disponibles dans les sources de données connectées. Vous pouvez utiliser le modèle de données de formulaire avec un formulaire adaptatif pour récupérer, mettre à jour, supprimer et ajouter des données aux sources de données connectées.
+Un modèle de données de formulaire permet de connecter un formulaire adaptatif à des sources de données disparates. Par exemple, un profil utilisateur AEM, des services web RESTful, des services web SOAP, des services OData et des bases de données relationnelles. Un modèle de données de formulaire est un schéma de représentation de données unifié, fait d’entités et de services d’entreprise, disponibles dans des sources de données connectées. Vous pouvez utiliser le modèle de données de formulaire avec un formulaire adaptatif pour récupérer, mettre à jour, supprimer et ajouter des données aux sources de données connectées.
 
 Objectifs:
 
@@ -97,14 +97,14 @@ Objectifs:
 
 ## Étape 4 : appliquer un style à votre formulaire adaptatif {#step-style-your-adaptive-form}
 
-![adaptative-form-style](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
+![adaptative-form-styling](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
 
-Les formulaires adaptatifs comportent des thèmes et un [éditeur](../../forms/using/themes.md) permettant de créer des thèmes pour les formulaires adaptatifs. Un thème contient des détails de style pour les composants et les panneaux, et vous pouvez réutiliser un thème dans différents formulaires. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez le thème à votre formulaire, le style spécifié se reflète sur les composants correspondants de votre formulaire. Les formulaires adaptatifs prennent également en charge le style en ligne pour les styles spécifiques à un formulaire.
+Les formulaires adaptatifs comportent des thèmes et un [éditeur](../../forms/using/themes.md) permettant de créer des thèmes pour les formulaires adaptatifs. Un thème contient des détails de style pour les composants et les panneaux. Il peut être réutilisé dans différents formulaires. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème à votre formulaire, le style spécifié se reflète sur des composants correspondants de votre formulaire. Les formulaires adaptatifs prennent également en charge le style en ligne pour les styles spécifiques à un formulaire.
 
 Objectifs:
 
 * Appliquer un thème prêt à l’emploi à un formulaire adaptatif
-* Création d’un thème pour le formulaire adaptatif à l’aide de l’éditeur de thème
+* Créer un thème pour le formulaire adaptatif à l’aide de l’éditeur de thème
 * Utiliser des polices web dans un thème personnalisé
 
 [![Voir le Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)

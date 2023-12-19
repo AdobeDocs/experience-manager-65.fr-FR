@@ -9,7 +9,7 @@ hide: true
 source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '2411'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -143,7 +143,7 @@ Le prédicat de propriété à plusieurs valeurs vous permet de rechercher plusi
 
 ## Ajout d’un prédicat de balises {#adding-a-tags-predicate}
 
-Le prédicat Balise vous permet d’effectuer des recherches de ressources basées sur des balises. Par défaut, [!DNL Assets] recherche une ou plusieurs correspondances de balise dans les ressources en fonction des balises que vous avez spécifiées. En d’autres termes, la requête de recherche effectue une opération OU à l’aide des balises spécifiées. Cependant, vous pouvez utiliser l’option Correspondre à toutes les balises pour rechercher des ressources qui incluent toutes les balises que vous spécifiez.
+Le prédicat de balise vous permet de rechercher des ressources sur la base des balises. Par défaut, [!DNL Assets] recherche une ou plusieurs correspondances de balise dans les ressources en fonction des balises que vous avez spécifiées. En d’autres termes, la requête de recherche effectue une opération OU à l’aide des balises spécifiées. Cependant, vous pouvez utiliser l’option Correspondre à toutes les balises pour rechercher des ressources qui incluent toutes les balises que vous spécifiez.
 
 1. Cliquez sur le logo d’[!DNL Experience Manager], puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Formulaires de recherche]**.
 1. Sur la page Formulaires de recherche, sélectionnez **[!UICONTROL Rail de recherche d’administrateurs de ressources]**, puis appuyez sur **[!UICONTROL Modifier]** ![icône modifier](assets/do-not-localize/aemassets_edit.png).

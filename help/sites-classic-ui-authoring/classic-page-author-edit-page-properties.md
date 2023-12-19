@@ -9,7 +9,7 @@ exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '760'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Les propriétés sont réparties sur plusieurs onglets :
 
 * **URL de redirection**
 
-  Permet de saisir une URL Vanity pour cette page. Cela vous permet d’avoir une URL plus courte et plus explicite.
+  Permet de saisir une URL de redirection pour cette page. Cela vous permet d’avoir une URL plus courte et plus expressive.
 
   Par exemple, si l’URL de redirection est définie sur w`elcome` sur la page identifiée par le chemin / `v1.0/startpage` pour le site Web h`ttp://example.com,`, `ttp://example.com/welcome` devient alors l’URL de redirection de `ttp://example.com/content/v1.0/startpage`.
 
@@ -166,15 +166,15 @@ Les propriétés sont réparties sur plusieurs onglets :
 
   Définissez des propriétés pour une page de plan directeur dans la [gestion multi-sites](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront diffusées à la Live Copy.
 
-### Live Copy  {#live-copy}
+### Live Copy {#live-copy}
 
 * **Live Copy**
 
   Définissez des propriétés pour une page Live Copy dans la [gestion multi-sites](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront propagées à partir du plan directeur.
 
-### Structure du site  {#site-structure}
+### Structure du site {#site-structure}
 
-* Fournir des liens vers des pages qui fournissent des fonctionnalités à l’échelle du site, telles que **Page d’inscription**, **Page hors ligne**, entre autres.
+* Diffusez des liens d’accès aux pages qui fournissent les fonctionnalités à l’échelle du site, comme la **page d’inscription** et la **page hors ligne**, entre autres.
 
 ## Modification des propriétés de page {#editing-page-properties-2}
 

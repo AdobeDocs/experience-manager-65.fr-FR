@@ -9,8 +9,8 @@ feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
 source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 85%
+source-wordcount: '746'
+ht-degree: 90%
 
 ---
 
@@ -81,7 +81,7 @@ Le mode d’exécution nosamplecontent est conçu pour les installations de prod
 
 Une collection de valeurs pour les propriétés de configuration, utilisée pour un mode d’exécution spécifique, peut être enregistrée dans le référentiel.
 
-Le mode d’exécution est indiqué par un suffixe sur le nom du dossier. Vous pouvez ainsi stocker toutes les configurations dans un seul référentiel sous la forme . Par exemple :
+Le mode d’exécution est indiqué par un suffixe sur le nom du dossier. Vous pouvez ainsi stocker toutes les configurations dans un seul référentiel. Par exemple :
 
 * `config`
 
@@ -103,7 +103,7 @@ Voir [Configuration d’OSGi dans le référentiel](/help/sites-deploying/config
 
 >[!NOTE]
 >
->Pour [Modes d’exécution d’installation](#installation-run-modes) (par exemple, author) le mode d’exécution ne peut pas être modifié après l’installation. Toutefois, les modifications apportées aux propriétés de configuration individuelles prennent effet au redémarrage.
+>Pour les [Modes d’exécution d’installation](#installation-run-modes) (instance de création, par exemple), le mode d’exécution ne peut pas être modifié après l’installation. Toutefois, les modifications apportées aux propriétés de configuration individuelles prennent effet au redémarrage.
 
 ## Définir des lots supplémentaires à installer pour un mode d’exécution {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 

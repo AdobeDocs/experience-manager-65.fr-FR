@@ -10,7 +10,7 @@ exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 77%
+ht-degree: 81%
 
 ---
 
@@ -26,7 +26,7 @@ L’option **Créer une exportation CSV** vous permet d’exporter les informati
 >
 >La fonction de téléchargement et la destination par défaut du navigateur sont utilisées.
 
-La variable **Créer une exportation CSV** vous permet de sélectionner :
+L’assistant **Créer un export CSV** vous permet de sélectionner les éléments suivants :
 
 * Propriétés à exporter
    * Métadonnées
@@ -62,5 +62,5 @@ Pour créer une exportation CSV :
 
    ![etc-03](assets/etc-03.png)
 
-1. Sélectionnez les propriétés à exporter.
+1. Sélectionnez les propriétés requises à exporter.
 1. Sélectionnez **Créer**.

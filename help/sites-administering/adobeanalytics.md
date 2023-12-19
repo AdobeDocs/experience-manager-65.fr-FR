@@ -10,7 +10,7 @@ exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 86%
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 86%
 | AEM 6.5 | Cet article |
 
 
-L’intégration d’Adobe Analytics et d’AEM vous permet de suivre l’activité de votre page web :
+L’intégration d’Adobe Analytics et d’AEM vous permet de suivre votre activité de pages Web :
 
 * Une configuration Adobe Analytics permet à AEM de s’authentifier avec Adobe Analytics.
 * Une structure identifie les données envoyées à votre suite de rapports Adobe Analytics.
@@ -46,7 +46,7 @@ Vous pouvez également utiliser l’[assistant de souscription](/help/sites-admi
 
 >[!NOTE]
 >
->Voir aussi l’article pratique : [Intégration d’AEM à Adobe Target et Adobe Analytics à l’aide de DTM](https://helpx.adobe.com/fr/experience-manager/using/integrate-digital-marketing-solutions.html).
+>Consultez également la procédure : [Intégration d’AEM à Adobe Target et Adobe Analytics à l’aide de DTM](https://helpx.adobe.com/fr/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 ## Informations supplémentaires {#further-information}
 

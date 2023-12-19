@@ -4,8 +4,8 @@ description: Il est possible de mettre en œuvre des projets AEM sur des modèle
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 90%
+source-wordcount: '1023'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ AEM offre de puissants outils pour gérer à la fois la création de contenus et
 
 Il est également possible d’utiliser AEM simplement pour gérer le contenu, ce qui permet de traiter la présentation et la diffusion du contenu à l’aide d’une autre plateforme. Il s’agit du modèle traditionnel de gestion de contenu « découplé », où les auteurs et les développeurs de contenu travaillent sur différentes plateformes pour mettre les expériences à la disposition des consommateurs de contenu.
 
-Mais cela n&#39;a pas besoin d&#39;être un choix binaire. AEM offre une flexibilité sans précédent, ce qui vous permet d’exploiter les avantages des deux modèles pour votre projet.
+Il ne s’agit pas nécessairement d’un choix binaire. AEM offre une flexibilité sans précédent, ce qui vous permet d’exploiter les avantages des deux modèles pour votre projet.
 
 ![Modèles d’implémentation AEM](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
@@ -27,7 +27,7 @@ Dans un modèle plein ou en tête, le contenu est géré dans le référentiel A
 
 Dans un modèle découplé, le contenu est géré dans le référentiel AEM, mais diffusé à l’aide d’API telles que REST et GraphQL vers un autre système afin de générer le contenu pour l’expérience utilisateur. Dans ce modèle, le contenu est créé dans AEM, mais il est mis en forme, présenté et diffusé sur une autre plateforme.
 
-Les applications monopages sont souvent destinataires du contenu diffusé par AEM à l’aide du modèle découplé. Toutefois, ces SPA ne doivent pas nécessairement être entièrement externes à AEM. AEM vous permet de décider dans quelle mesure vos SPA sont intégrées à l’. Prenons un exemple.
+Les applications monopages sont souvent destinataires du contenu diffusé par AEM à l’aide du modèle découplé. Cependant, ces SPA ne doivent pas nécessairement être entièrement externes à AEM. AEM vous donne la possibilité de décider jusqu’où votre SPA est intégrée à AEM. Prenons un exemple.
 
 ## Exemple d’une boutique web {#web-shop-example}
 

@@ -9,7 +9,7 @@ exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '6904'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -43,7 +43,7 @@ La solution Correspondence Management prend en charge deux types d’éléments
 1. Sélectionner **Créer** > **Texte** Vous pouvez également sélectionner une ressource de texte et sélectionner **Modifier**.
 1. Spécifiez les informations suivantes pour le texte :
 
-   * **Titre : (facultatif)** saisissez le titre de la ressource texte. Les titres n’ont pas besoin d’être uniques et peuvent contenir des caractères spéciaux et des caractères non anglais. Les textes sont référencés par leur titre (le cas échéant) comme dans les vignettes et les propriétés de l’actif.
+   * **Titre : (facultatif)** saisissez le titre de la ressource texte. Les titres ne doivent pas nécessairement être uniques et peuvent contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les textes sont référencés par leur titre (le cas échéant) comme dans les vignettes et les propriétés de l’actif.
    * **Nom :** Saisissez un nom unique pour l’actif de texte. Deux ressources (texte, condition ou liste) ne peuvent porter le même nom, peu importe leur état. Dans le champ Nom, vous pouvez saisir uniquement des caractères, des chiffres et des tirets de langue anglaise. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
    * **Description** : saisissez une description de la ressource.
    * **Dictionnaire de données** : Si vous le souhaitez, sélectionnez le dictionnaire de données auquel mapper l’actif. Cet attribut vous permet d’ajouter des références aux éléments du dictionnaire de données dans la ressource texte.
@@ -150,7 +150,7 @@ Pour créer un lien hypertexte dans une ressource de texte, procédez comme suit
 
 Lorsque vous travaillez avec des éléments de texte contenant un grand corps de texte, vous pouvez avoir besoin de rechercher une chaîne de caractères précise. Voire de remplacer une chaîne de caractères précise par une autre chaîne.
 
-La fonction Rechercher et remplacer permet de rechercher (et de remplacer) n’importe quelle chaîne de texte dans un élément de texte. La fonction comprend également une recherche d’expression régulière puissante.
+La fonction Rechercher et remplacer vous permet de rechercher (et de remplacer) n’importe quelle chaîne de caractères dans un élément de texte. La fonction comprend également une recherche d’expression régulière puissante.
 
 #### Pour rechercher du texte dans un module de texte {#to-search-text-in-a-text-module}
 
@@ -235,7 +235,7 @@ Une liste est un groupe de contenu associé qui peut être utilisé dans un mod�
 
 1. Spécifiez les informations suivantes pour la liste :
 
-   * **Titre (facultatif) : saisissez** le titre de la liste. Le titre n’a pas besoin d’être unique et peut contenir des caractères spéciaux et des caractères non anglais. Les listes sont référencées par leur titre (le cas échéant) comme dans les vignettes et les propriétés de la ressource.
+   * **Titre (facultatif) : saisissez** le titre de la liste. Les titres ne doivent pas nécessairement être uniques et peuvent contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les listes sont référencées par leur titre (le cas échéant) comme dans les vignettes et les propriétés de la ressource.
    * **Nom :** il s’agit du nom unique de la liste. Deux ressources (texte, condition ou liste) ne peuvent porter le même nom, peu importe leur état. Dans le champ Nom, vous pouvez saisir uniquement des caractères, des chiffres et des tirets de langue anglaise. Le champ nom est automatiquement renseigné par la valeur dans le champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
    * **Description (facultatif)** : entrez une description de la ressource.
    * **Élément de données (facultatif)** : sélectionnez le dictionnaire de données auquel se connecter. Seules les ressources qui utilisent le même dictionnaire de données que la liste ou celles auxquelles aucun dictionnaire de données n’est affecté peuvent être ajoutées à la liste. L’affectation d’un dictionnaire de données à une liste permet à la personne qui crée un modèle de lettre de trouver plus facilement la liste appropriée.
@@ -307,7 +307,7 @@ L’éditeur de conditions vous permet de spécifier une condition par défaut. 
 1. Sélectionnez **Créer > Condition**.
 1. Spécifiez les informations suivantes pour la liste :
 
-   * **Titre (facultatif) :** saisissez le titre de la condition. Le titre n’a pas besoin d’être unique et peut contenir des caractères spéciaux et des caractères non anglais. Les conditions sont référencées par leur titre (le cas échéant), comme dans les vignettes et les propriétés de la ressource.
+   * **Titre (facultatif) :** saisissez le titre de la condition. Les titres ne doivent pas nécessairement être uniques et peuvent contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les conditions sont référencées par leur titre (le cas échéant), comme dans les vignettes et les propriétés de la ressource.
    * **Nom :** nom unique de la condition. Deux ressources (texte, condition ou liste) ne peuvent porter le même nom, peu importe leur état. Dans le champ Nom, vous pouvez saisir uniquement des caractères, des chiffres et des tirets de langue anglaise. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
    * **Description (facultatif) :** saisissez une description de la condition.
    * **Dictionnaire de données (facultatif)** : sélectionnez le dictionnaire de données auquel se connecter. Seules les ressources qui utilisent le même dictionnaire de données que la condition ou celles auxquelles aucun dictionnaire de données n’a été attribué peuvent être ajoutées à la liste. L’attribution d’un dictionnaire de données à une liste permet à la personne créant un modèle de lettre de trouver plus facilement la condition appropriée.
@@ -347,13 +347,13 @@ L’éditeur de conditions vous permet de spécifier une condition par défaut. 
 
 Un fragment de disposition est basé sur des fichiers XDP créés dans Designer. Pour créer des fragments de disposition vous devez créer les fichiers XDP et les [télécharger vers AEM Forms](/help/forms/using/import-export-forms-templates.md).
 
-Un ou plusieurs fragments de disposition peuvent former des parties d’une lettre et définir la mise en page graphique de ces parties. Un fragment de disposition peut contenir des champs de formulaire standard, tels que l’adresse et le numéro de référence, et des sous-formulaires vides indiquant les zones cible. En outre, les fragments de mise en page permettent de créer des tableaux et de les insérer dans des lettres.
+Un ou plusieurs fragments de disposition peuvent former des parties d’une lettre et définir la mise en page graphique de ces parties. Un fragment de disposition peut contenir des champs de formulaire standard, tels que l’adresse et le numéro de référence, et des sous-formulaires vides indiquant les zones cible. En outre, les fragments de mise en page vous permettent de créer des tableaux et de les insérer dans les lettres.
 
 Prenez le cas d’utilisation courant suivant : localisez les modèles de disposition réutilisables dans les lettres, puis créez des fragments de disposition pour eux. Par exemple, les formules de politesse, l’adresse et l’objet de la lettre sont souvent agencés de manière uniforme dans plusieurs lettres. Un autre exemple peut être un nombre de lignes similaire et des colonnes du tableau utilisés dans plusieurs lettres.
 
 Vous pouvez créer un fragment de disposition basé sur un fichier XDP existant. Un fragment de disposition peut être constitué de champs et de zones cible ou d’un ou plusieurs tableaux. Les tableaux d’une disposition peuvent être statiques ou dynamiques. Un fichier XDP est créé dans Designer et [téléchargé sur AEM Forms](/help/forms/using/import-export-forms-templates.md). Un fichier XDP peut former la structure d’un fragment de disposition ou d’une lettre. Plus d’informations sur la [conception de la disposition](/help/forms/using/layout-design-details.md).
 
-L’utilisation de fragments liés à des zones cible permet de modifier la lettre au moment de la création. Des fragments de disposition de différentes dimensions peuvent être créés et le fragment approprié peut être lié à la zone cible. Les fragments de mise en page permettent également de personnaliser certaines des propriétés du tableau :
+L’utilisation de fragments liés à des zones cible permet de modifier la lettre au moment de la création. Des fragments de disposition de différentes dimensions peuvent être créés et le fragment approprié peut être lié à la zone cible. Les fragments de mise en page permettent également de personnaliser un certain nombre de propriétés de tableau :
 
 1. Vous pouvez augmenter le nombre de lignes et de colonnes.
 1. Vous pouvez spécifier le texte de l’en-tête et du pied de page pour d’autres lignes et colonnes.
@@ -396,7 +396,7 @@ Pour un exemple détaillé de l’utilisation de tableaux statiques et dynamique
 1. Correspondence Management affiche les fichiers XDP disponibles. Sélectionnez le fichier XDP sur lequel vous souhaitez baser votre fragment de mise en page et sélectionnez **Suivant**.
 1. Spécifiez les informations suivantes pour la mise en page :
 
-   * **Titre (facultatif) :** Entrez le titre du fragment de mise en page. Le titre n’a pas besoin d’être unique et peut contenir des caractères spéciaux et des caractères non anglais. Les fragments de disposition sont référencés par leur titre (le cas échéant), comme dans les vignettes et les propriétés de la ressource.
+   * **Titre (facultatif) :** Entrez le titre du fragment de mise en page. Les titres ne doivent pas nécessairement être uniques et peuvent contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les fragments de disposition sont référencés par leur titre (le cas échéant), comme dans les vignettes et les propriétés de la ressource.
    * **Nom :** nom unique du fragment de disposition. Deux ressources (texte, condition ou liste) ne peuvent porter le même nom, peu importe leur état. Dans le champ Nom, vous pouvez saisir uniquement des caractères, des chiffres et des tirets de langue anglaise. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier. Ce nom apparaît dans la liste de l’interface utilisateur de gestion des ressources.
    * **Description (facultatif)** : la description qui apparaît dans la liste de l’interface utilisateur de gestion des ressources.
    * **Balises (facultatif)** : si vous le souhaitez, sélectionnez les balises à appliquer à la condition. Vous pouvez également taper un nouveau nom de balise pour créer une balise.
@@ -525,7 +525,7 @@ Pour plus d’informations sur la conception de mises en pages, voir [Aide de De
 1. Créez un fragment de disposition basé sur le fichier XDP statique. L’onglet Tableau des propriétés affiche que le tableau est statique (champ Configuration pour). Le nombre de lignes (1) et de colonnes (3) provient du fichier XDP/fragment de disposition.
 
    Vous pouvez modifier le nombre de colonnes et de lignes ici. Selon ce que vous choisissez sur cet écran, le nombre de lignes et de colonnes d’un tableau statique reste fixe dans la lettre créée avec cette mise en page.
-   [![Créez un écran de fragment de disposition](assets/statictableproperties.png)](assets/statictableproperties-1.png)
+   [![Créer un écran de fragment de disposition](assets/statictableproperties.png)](assets/statictableproperties-1.png)
 
 1. Créez une lettre à l’aide des deux fragments de disposition qu’elle contient. Lorsque vous insérez le fichier XDP dynamique dans la lettre, définissez la liaison de ses champs aux éléments de collection du dictionnaire de données.
 

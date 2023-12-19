@@ -8,7 +8,7 @@ exl-id: 72cd0594-8b5e-4d14-bc6f-bca26bae50f2
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '840'
-ht-degree: 74%
+ht-degree: 76%
 
 ---
 
@@ -24,7 +24,7 @@ L’utilisateur connecté doit être membre du groupe `workflow-users`. Il peut 
 
 ## Partage d’un ou de tous les éléments de votre boîte de réception avec un autre utilisateur
 
-AEM Boîte de réception vous permet de partager un seul ou tous les éléments de votre boîte de réception avec un autre utilisateur.
+La boîte de réception AEM vous permet de partager un ou tous les éléments avec un autre utilisateur ou une autre utilisatrice.
 
 ### Partage de tous les éléments de la boîte de réception
 

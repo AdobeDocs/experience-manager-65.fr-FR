@@ -9,7 +9,7 @@ exl-id: b20bb719-5686-466e-8dde-279b8471bfe3
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '976'
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Découvrez comment créer votre première communication interactive.
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
 
-Les communications interactives centralisent et gèrent la création, l’assemblage et la livraison de correspondances sécurisées, personnalisées et interactives telles que la correspondance commerciale, les documents, les déclarations, les courriers marketing, les factures et les kits de bienvenue. Les communications interactives peuvent être fournies par deux canaux : impression et web. Le canal d’impression est utilisé pour créer des communications PDF et papier, tandis que le canal web est utilisé pour diffuser des expériences en ligne.
+Les communications interactives centralisent et gèrent la création, l’assemblage et la livraison de correspondances sécurisées, personnalisées et interactives telles que la correspondance commerciale, les documents, les déclarations, les courriers marketing, les factures et les kits de bienvenue. Les communications interactives peuvent être fournies par deux canaux : impression et web. Le canal d’impression est utilisé pour créer des documents PDF et des communications papier, tandis que le canal web est utilisé pour fournir des expériences en ligne.
 
 Ce didacticiel fournit un cadre de bout en bout pour la création d’une communication interactive. Le tutoriel consiste en un cas d’utilisation et plusieurs guides. Chaque guide vous aide à créer des fonctionnalités utilisées comme blocs de création pour créer une communication interactive.
 
@@ -35,13 +35,13 @@ L’image suivante illustre les blocs de création nécessaires à la création 
 
 ## Cas d’utilisation {#use-case}
 
-Le parcours commence par l’apprentissage du cas pratique :
+Commençons par aborder un cas d’utilisation :
 
-Un opérateur de télécommunications envoie des factures mensuelles aux clients par courrier électronique. Le projet de loi est une communication interactive. Le courrier électronique comprend :
+Un opérateur de télécommunications envoie des factures mensuelles aux clientes et au clients par e-mail. La facture est une communication interactive. L’e-mail comprend :
 
-* PDF protégé par mot de passe, appelé canal d’impression dans ce tutoriel. Il comprend les détails du client, les détails de la facture, un résumé des frais, les modes de paiement pratiques de la facture et les détails d’utilisation.
-* Lien vers la version web de la facture, appelée canal web dans ce tutoriel. La version web de la facture, en plus des informations détaillées dans la version PDF, fournit une représentation graphique des informations d’utilisation et des offres personnalisées basées sur Adobe Target. La version web contient également un formulaire de paiement en ligne. Cela permet d’effectuer des paiements en ligne sans quitter l’IC.
-* Lien vers des services à valeur ajoutée, tels que le stockage en ligne, les abonnements musicaux et les abonnements vidéo à la demande.
+* Un fichier PDF protégé par mot de passe, appelé Canal d’impression dans ce tutoriel. Il comprend les informations sur le client ou la cliente, sur la facture, le récapitulatif des frais, les modes de paiement possibles de la facture et les informations d’utilisation.
+* Un lien vers la version web de la facture, appelée canal web dans ce tutoriel. La version web de la facture, en plus des informations détaillées dans la version PDF, fournit une représentation graphique des informations d’utilisation et des offres personnalisées basées sur Adobe Target. La version web contient également un formulaire de paiement en ligne. Cela permet d’effectuer des paiements en ligne sans quitter l’IC.
+* Un lien vers des services à valeur ajoutée, tels que le stockage en ligne, les abonnements de musique et les abonnements de vidéos à la demande.
 
 ## Prérequis {#prerequisites}
 
@@ -54,7 +54,7 @@ Un opérateur de télécommunications envoie des factures mensuelles aux clients
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-La première étape de la planification d’une communication interactive consiste à finaliser le contenu de la communication interactive. Une fois le contenu finalisé, vous devez l’analyser afin d’identifier les différents types de ressources requis pour créer la communication interactive.
+La première étape de la planification d’une communication interactive consiste à finaliser le contenu de cette dernière. Une fois le contenu finalisé, vous devez l’analyser pour identifier les différents types de ressources requis pour créer la communication interactive.
 
 **Objectifs:**
 
@@ -72,16 +72,16 @@ Pour créer une structure pour la communication interactive avec les modes de sa
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Un modèle de données de formulaire vous permet de connecter une communication interactive à des sources de données disparates. Par exemple, AEM profil utilisateur, services Web RESTful, services Web SOAP, services OData et bases de données relationnelles. Un modèle de données de formulaire est un schéma de représentation de données unifié des entités et services d’entreprise disponibles dans des sources de données connectées. Vous pouvez utiliser le modèle de données de formulaire avec une communication interactive pour récupérer les données des sources de données connectées. Pour plus d’informations sur le modèle de données de formulaire, consultez la section [Intégration de données AEM Forms](/help/forms/using/data-integration.md).
+Un modèle de données de formulaire vous permet de connecter une communication interactive à des sources de données disparates. Par exemple, un profil utilisateur AEM, des services web RESTful, des services web SOAP, des services OData et des bases de données relationnelles. Un modèle de données de formulaire est un schéma de représentation de données unifié des entités et services d’entreprise disponibles dans des sources de données connectées. Vous pouvez utiliser le modèle de données de formulaire avec une communication interactive pour extraire des données de sources de données connectées. Pour plus d’informations sur le modèle de données de formulaire, consultez la section [Intégration de données AEM Forms](/help/forms/using/data-integration.md).
 
 **Objectifs:**
 
 * Configurer l’instance de base de données (base de données MySQL) en tant que source de données
-* Créer un modèle de données de formulaire à l’aide de la base de données MySQL comme source de données
+* Créer le modèle de données de formulaire à l’aide de la base de données MySQL en tant que source de données
 * Ajouter des objets de modèle de données pour former un modèle de données
 * Configurer les services de lecture et d’écriture pour le modèle de données de formulaire
 * Créer des associations entre les objets de modèle de données
-* Affichage d’exemples de données générés automatiquement
+* Afficher des données d’exemple générées automatiquement
 * Modifier les exemples de données
 * Tester le modèle de données de formulaire et les services configurés avec des données de test
 
@@ -91,7 +91,7 @@ Un modèle de données de formulaire vous permet de connecter une communication 
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-Les fragments de document sont des composants réutilisables d’une correspondance qui sont utilisés pour composer une communication interactive. Les fragments de document sont de types : Texte, Liste et Condition.
+Les fragments de document sont des composants réutilisables d’une correspondance qui sont utilisés pour composer une communication interactive. Les fragments de document sont de types : Texte, Liste et Condition.
 
 **Objectifs:**
 
@@ -105,16 +105,16 @@ Les fragments de document sont des composants réutilisables d’une corresponda
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-Pour créer une communication interactive, vous devez disposer de modèles disponibles sur le serveur d’AEM pour les canaux d’impression et web.
+Pour créer une communication interactive, vous devez disposer de modèles disponibles sur le serveur AEM pour les canaux d’impression et web.
 
-Les modèles pour le canal d’impression sont créés dans Adobe Forms Designer et téléchargés sur le serveur AEM. Ces modèles peuvent ensuite être utilisés lors de la création d’une communication interactive.
+Les modèles pour le canal d’impression sont créés dans Adobe Forms Designer et chargés sur le serveur AEM. Ces modèles sont ensuite disponibles pour être utilisés lors de la création d’une communication interactive.
 
-Les modèles pour le canal web sont créés dans AEM. Les auteurs et les administrateurs de modèles peuvent créer, modifier et activer des modèles web. Une fois créés et activés, ces modèles peuvent être utilisés lors de la création d’une communication interactive.
+Les modèles pour le canal web sont créés dans AEM. Les auteurs et les administrateurs de modèles peuvent créer, modifier et activer des modèles web. Une fois créés et activés, ces modèles sont disponibles pour être utilisés lors de la création d’une communication interactive.
 
 **Objectifs:**
 
-* Création de modèles XDP pour le canal d’impression à l’aide d’Adobe Forms Designer
-* Téléchargement des modèles XDP vers le serveur AEM Forms
+* Créer des modèles XDP pour le canal d’impression à l’aide d’Adobe Forms Designer
+* Charger les modèles XDP sur le serveur AEM Forms
 * Créer et activer des modèles pour le canal web
 
 [](/help/forms/using/create-templates-print-web.md)
@@ -131,9 +131,9 @@ Les communications interactives peuvent être fournies par deux canaux : impres
 
 * Créer une communication interactive pour le canal d’impression
 * Créer une communication interactive pour le canal web
-* Créer des communications interactives d’impression et web avec l’impression comme Principal
+* Créer des communications interactives d’impression et web avec l’impression en tant qu’option principale
 * Créer un tableau dynamique dans la version web de la communication interactive
-* Créer un graphique dans la version web de la communication interactive
+* Créer un graphique de la version web de la communication interactive
 * Créer des hyperliens dans la version web de la communication interactive
 
 [](/help/forms/using/create-interactive-communication0.md)
@@ -146,6 +146,6 @@ Une fois que vous avez créé et testé des communications interactives à l’a
 
 **Objectifs:**
 
-* Intégration des communications interactives à un client de messagerie pour pouvoir envoyer une communication aux clients
-* Inclure un document de PDF en tant que pièce jointe (communication interactive créée dans le canal d’impression)
+* Intégrer des communications interactives à un client de messagerie pour pouvoir envoyer une communication aux clientes et clients
+* Inclure un document PDF en tant que pièce jointe (communication interactive créée dans le canal d’impression)
 * Inclure un lien vers la version web de la communication interactive

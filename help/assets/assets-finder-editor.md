@@ -7,8 +7,8 @@ feature: Developer Tools,Asset Management
 exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2110'
-ht-degree: 56%
+source-wordcount: '2088'
+ht-degree: 98%
 
 ---
 
@@ -16,23 +16,23 @@ ht-degree: 56%
 
 Ce document répond aux questions suivantes :
 
-* Pourquoi créer des pages Éditeur de ressources personnalisées ?
+* Pourquoi créer des pages Éditeur de ressources personnalisées ?
 * Comment créer et personnaliser des pages Éditeur de ressources, qui sont des pages de gestion de contenu web qui vous permettent d’afficher et de modifier des métadonnées et d’effectuer des actions sur la ressource.
-* Comment modifier plusieurs ressources simultanément.
+* Comment modifier plusieurs ressources simultanément ?
 
 <!-- TBD: Add UICONTROL tags. Need PM review. Flatten the structure a bit. Re-write to remove Geometrixx mentions and to adhere to 6.5 default samples. -->
 
 >[!NOTE]
 >
->Le partage de ressources est disponible en tant qu’implémentation de référence Open Source. Voir [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/). Il n’est pas officiellement pris en charge.
+>Le partage de ressources est disponible en tant qu’implémentation de référence Open Source. Voir [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/). Il n’est pas officiellement pris en charge.
 
 ## Pourquoi créer et configurer des pages Éditeur de ressources ? {#why-create-and-configure-asset-editor-pages}
 
-La gestion des ressources numériques est utilisée dans d’autres scénarios. Lorsque vous passez d’une solution à petite échelle pour un petit groupe d’utilisateurs formés de manière professionnelle (par exemple, des photographes ou des taxonomistes) à des groupes d’utilisateurs plus vastes et plus diversifiés (par exemple, des utilisateurs professionnels, des auteurs de gestion de contenu web et des journalistes), la puissante interface utilisateur de [!DNL Adobe Experience Manager Assets] peut fournir trop d’informations. Les parties prenantes commencent à demander des interfaces utilisateur ou des applications spécifiques pour accéder aux ressources numériques qui les intéressent.
+La gestion des ressources numériques est utilisée dans un nombre toujours plus grand de scénarios. Lorsque vous passez d’une solution à petite échelle pour un petit groupe de personnes formées de manière professionnelle (par exemple, des photographes ou des taxonomistes) à des groupes de personnes plus vastes et plus diversifiées (par exemple, des personnes professionnelles, des auteurs ou autrices de gestion de contenu web et des journalistes), la puissante interface utilisateur de [!DNL Adobe Experience Manager Assets] peut fournir trop d’informations. Les parties prenantes commencent à demander des interfaces utilisateur ou des applications spécifiques pour accéder aux ressources numériques qui les intéressent.
 
 Ces applications axées sur les ressources peuvent être de simples galeries de photos dans un intranet où les employés peuvent charger des photos de visite d’un salon ou d’un centre de presse sur un site Web public. Les applications axées sur les ressources peuvent également s’étendre à des solutions complètes, telles que les paniers d’achat, le passage en caisse et les processus de vérification.
 
-La création d’une application axée sur les ressources devient un processus de configuration qui ne nécessite pas de codage, qui ne nécessite que la connaissance des groupes d’utilisateurs, de leurs besoins et de leurs connaissances des métadonnées utilisées. Les applications axées sur les ressources créées avec [!DNL Assets] sont extensibles : avec un effort de codage minimal, il est possible de créer des composants réutilisables pour la recherche, l’affichage et la modification des ressources.
+La création d’une application axée sur les ressources devient un processus de configuration qui ne nécessite pas de codage. Elle ne requiert que la connaissance des groupes d’utilisateurs ou d’utilisatrices, de leurs besoins et de leurs connaissances des métadonnées utilisées. Les applications axées sur les ressources créées avec [!DNL Assets] sont extensibles : avec un effort de codage minimal, il est possible de créer des composants réutilisables pour la recherche, l’affichage et la modification des ressources.
 
 Dans [!DNL Experience Manager], une application axée sur les ressources consiste en une page Éditeur de ressources pouvant être utilisée pour obtenir une vue détaillée d’une ressource spécifique. Une page Éditeur de ressources permet également de modifier les métadonnées, à condition que l’utilisateur accédant à la ressource dispose des autorisations nécessaires.
 
@@ -192,19 +192,19 @@ For more information, see the [predicate Javadocs](https://helpx.adobe.com/exper
 
 ## Création et configuration d’une page Éditeur de ressources {#creating-and-configuring-an-asset-editor-page}
 
-Vous pouvez personnaliser l’Éditeur de ressources pour déterminer comment les utilisateurs peuvent afficher et modifier les ressources numériques. Pour ce faire, vous créez une page Éditeur de ressources, puis vous personnalisez les vues et les actions que les utilisateurs peuvent effectuer sur cette page.
+Vous pouvez personnaliser l’Éditeur de ressources pour déterminer la façon dont les utilisateurs ou utilisatrices peuvent afficher et modifier les ressources numériques. Pour ce faire, vous créez une page Éditeur de ressources, puis vous personnalisez les vues et les actions que les utilisateurs ou utilisatrices peuvent effectuer sur cette page.
 
 >[!NOTE]
 >
->Si vous souhaitez ajouter des champs personnalisés à l’Éditeur de ressources de gestion des actifs numériques, ajoutez de nouvelles `cq:Widget` noeud à `/apps/dam/content/asseteditors.`
+>Si vous souhaitez ajouter des champs personnalisés à l’Éditeur de ressources du gestionnaire des ressources numériques, ajoutez les nouveaux nœuds `cq:Widget` à `/apps/dam/content/asseteditors.`.
 
 ### Créer une page Éditeur de ressources {#creating-the-asset-editor-page}
 
-Lors de la création de la page Éditeur de ressources, il est recommandé de créer la page directement sous la page Partage de ressources.
+Il est recommandé de créer la page Éditeur de ressources directement sous la page Partage de ressources.
 
-Pour créer une page Éditeur de ressources :
+Pour créer une page Éditeur de ressources :
 
-1. Dans le **[!UICONTROL Sites web]** , accédez à l’emplacement où vous souhaitez créer une page Éditeur de ressources, puis cliquez sur **Nouveau**.
+1. Dans l’onglet **[!UICONTROL Sites web]**, accédez à l’emplacement où vous souhaitez créer une page Éditeur de ressources, puis cliquez sur **Nouveau**.
 1. Sélectionnez **Éditeur de ressources Geometrixx**, puis cliquez sur **Créer**. La nouvelle page est créée et elle est répertoriée dans l’onglet **Sites web**.
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
@@ -219,9 +219,9 @@ Pour personnaliser votre page Éditeur de ressources, utilisez les éléments du
 
 #### Définir un Éditeur de ressources à ouvrir à partir d’une page Partage de ressources {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
-Après avoir créé la page Éditeur de ressources personnalisée, assurez-vous que lorsque vous double-cliquez sur les ressources que le partage de ressources personnalisé que vous avez créées ouvre les ressources dans la page Éditeur personnalisé.
+Une fois créée la page Éditeur de ressources personnalisée, assurez-vous que, lorsque vous double-cliquez sur les ressources, le partage de ressources personnalisé que vous avez créé ouvre les ressources dans la page Éditeur personnalisée.
 
-Pour définir la page Éditeur de ressources :
+Pour définir la page Éditeur de ressources :
 
 1. Dans la page Partage de ressources, cliquez sur **Modifier** en regard de Query Builder.
 
@@ -229,7 +229,7 @@ Pour définir la page Éditeur de ressources :
 
 1. Cliquez sur l’onglet **Général** s’il n’est pas déjà sélectionné.
 
-1. Dans le **Chemin d’accès à l’Éditeur de ressources** , saisissez le chemin d’accès à l’Éditeur de ressources dans lequel vous souhaitez que la page Partage de ressources ouvre les ressources, puis cliquez sur **OK**.
+1. Dans le champ **Chemin d’accès à l’Éditeur de ressources**, saisissez le chemin d’accès à l’Éditeur de ressources dans lequel vous souhaitez que la page Partage de ressources ouvre les ressources, puis cliquez sur **OK**.
 
 ![screen_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
 
@@ -237,35 +237,35 @@ Pour définir la page Éditeur de ressources :
 
 Vous déterminez les fonctionnalités d’un Éditeur de ressources en ajoutant des composants à la page.
 
-Pour ajouter des composants Éditeur de ressources :
+Pour ajouter des composants de l’Éditeur de ressources :
 
-1. Dans la page Éditeur de ressources que vous souhaitez personnaliser, cliquez sur **Éditeur de ressources** dans le sidekick. Tous les composants Éditeur de ressources disponibles s’affichent.
+1. Dans la page Éditeur de ressources que vous souhaitez personnaliser, cliquez sur **Éditeur de ressources** dans le sidekick. Tous les composants disponibles de l’Éditeur de ressources s’affichent.
 
 >[!NOTE]
 >
 >Ce que vous pouvez personnaliser dépend des composants disponibles. Pour activer les composants, accédez au mode Conception et sélectionnez les composants qui doivent être activés.
 
-1. Faites glisser les composants du sidekick vers l’Éditeur de ressources et apportez toute modification dans les boîtes de dialogue du composant. Les composants sont décrits dans le tableau suivant et décrits dans les instructions détaillées qui suivent.
+1. Faites glisser les composants depuis le sidekick vers l’Éditeur de ressources et apportez les modifications nécessaires dans les boîtes de dialogue des composants. Les composants sont présentés dans le tableau ci-après et décrits dans les instructions détaillées qui suivent.
 
 >[!NOTE]
 >
->Lors de la conception de la page Éditeur de ressources, vous créez des composants qui sont en lecture seule ou modifiables. Les utilisateurs savent qu’un champ peut être modifié si une image de crayon apparaît dans ce composant. Par défaut, la plupart des composants sont configurés en lecture seule.
+>Lors de la conception de la page Éditeur de ressources, vous créez des composants qui sont en lecture seule ou modifiables. Les utilisateurs et les utilisatrices savent qu’un champ peut être modifié si une image de crayon apparaît dans ce composant. Par défaut, la plupart des composants sont configurés en lecture seule.
 
 | Composant | Description |
 |---|---|
 | **[!UICONTROL Formulaire de métadonnées] et [!UICONTROL Champ de texte de métadonnées]** | Permet d’ajouter des métadonnées supplémentaires à une ressource et d’effectuer une action sur cette ressource, telle que l’envoi. |
 | **[!UICONTROL Sous-ressources]** | Permet de personnaliser les sous-ressources. |
 | **Balises** | Permet aux utilisateurs de sélectionner et d’ajouter des balises à une ressource. |
-| **[!UICONTROL Miniature]** | Affiche une miniature de la ressource, son nom de fichier et vous permet d’ajouter un texte de remplacement. Vous pouvez également ajouter des actions Éditeur de ressources ici. |
+| **[!UICONTROL Miniature]** | Affiche une miniature de la ressource, son nom de fichier et vous permet d’ajouter un texte de remplacement. Vous pouvez également ajouter des actions de l’Éditeur de ressources dans ce composant. |
 | **[!UICONTROL Titre]** | Affiche le titre de la ressource, qui peut être personnalisé. |
 
 ![screen_shot_2012-04-23at22743pm](assets/screen_shot_2012-04-23at22743pm.png)
 
-#### Formulaire de métadonnées et champ de texte - Configuration du composant Afficher les métadonnées {#metadata-form-and-text-field-configuring-the-view-metadata-component}
+#### Formulaire de métadonnées et champ de texte : configuration du composant Afficher les métadonnées {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
-Le Formulaire de métadonnées est un formulaire incluant une action de début et de fin. Entre les deux, vous saisissez **Texte** des champs. Voir [Forms](/help/sites-authoring/default-components-foundation.md#form-component) pour plus d’informations sur l’utilisation des formulaires.
+Le Formulaire de métadonnées est un formulaire incluant une action de début et de fin. Entre les deux, saisissez les champs **Texte**. Voir [Formulaires](/help/sites-authoring/default-components-foundation.md#form-component) pour plus d’informations sur l’utilisation des formulaires.
 
-1. Créez une action de début en cliquant sur **Modifier** dans la zone de Début du formulaire. Si vous le souhaitez, vous pouvez saisir un titre de boîte. Par défaut, le titre de la boîte est **Métadonnées**. Cochez la case Validation du client si vous souhaitez que le code client JavaScript pour la validation soit généré.
+1. Créez une action de début en cliquant sur **Modifier** dans la zone de Début du formulaire. Si vous le souhaitez, vous pouvez saisir un titre pour la zone. Par défaut, le titre de la zone est **Métadonnées**. Cochez la case Validation du client si vous souhaitez que le code client JavaScript pour la validation soit généré.
 
 ![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
@@ -275,7 +275,7 @@ Le Formulaire de métadonnées est un formulaire incluant une action de début e
 
 1. Entre le **Début du formulaire** et la **Fin de formulaire**, faites glisser les champs de texte des métadonnées vers le formulaire. Les utilisateurs renseignent les métadonnées dans ces champs de texte, qu’ils peuvent envoyer, ou bien ils peuvent effectuer une autre action.
 
-1. Double-cliquez sur le nom du champ, par exemple **Titre**, pour ouvrir le champ de métadonnées et apporter des modifications. Dans le **Général** de la **Modifier le composant** , vous définissez l’espace de noms, le libellé du champ et le type, par exemple : `dc:title`.
+1. Double-cliquez sur le nom du champ, par exemple **Titre**, pour ouvrir le champ de métadonnées et apporter des modifications. Dans l’onglet **Général** de la fenêtre **Modifier le composant**, vous définissez l’espace de noms et le libellé du champ, ainsi que le type, par exemple `dc:title`.
 
 ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
@@ -285,7 +285,7 @@ Consultez [Personnalisation et extension d’Assets](/help/assets/extending-asse
 
 ![screen_shot_2012-04-23at23435pm](assets/screen_shot_2012-04-23at23435pm.png)
 
-1. Cliquez sur l’onglet **Affichage**. Vous pouvez saisir ici une nouvelle largeur et un nouveau nombre de lignes pour le champ de métadonnées. Sélectionnez la variable **Le champ est en lecture seule** pour permettre aux utilisateurs de modifier les métadonnées.
+1. Cliquez sur l’onglet **Affichage**. Vous pouvez saisir ici une nouvelle largeur et un nouveau nombre de lignes pour le champ de métadonnées. Cochez la case **Le champ est en lecture seule** pour permettre aux utilisateurs et aux utilisatrices de modifier les métadonnées.
 
 ![screen_shot_2012-04-23at23446pm](assets/screen_shot_2012-04-23at23446pm.png)
 
@@ -297,9 +297,9 @@ Sur la page Éditeur de ressources, les utilisateurs peuvent ensuite saisir des 
 
 #### Sous-ressources {#sub-assets}
 
-Le composant Sous-ressources vous permet d’afficher et de sélectionner des sous-ressources. Vous pouvez déterminer les noms qui apparaissent sous la variable [ressource principale](/help/assets/assets.md#what-are-digital-assets) et les sous-ressources.
+Le composant Sous-ressources vous permet d’afficher et de sélectionner des sous-ressources. Vous pouvez choisir les noms qui apparaissent sous la [ressource principale](/help/assets/assets.md#what-are-digital-assets) et les sous-ressources.
 
-Double-cliquez sur le composant Sous-ressources pour ouvrir la boîte de dialogue Sous-ressources dans laquelle vous pouvez modifier les titres de la ressource principale et de toutes les sous-ressources. Les valeurs par défaut apparaissent sous le champ correspondant.
+Double-cliquez sur le composant Sous-ressources pour ouvrir la boîte de dialogue des sous-ressources dans laquelle vous pouvez modifier les titres de la ressource principale et de toutes les sous-ressources. Les valeurs par défaut apparaissent sous le champ correspondant.
 
 ![screen_shot_2012-04-23at23907pm](assets/screen_shot_2012-04-23at23907pm.png)
 
@@ -313,11 +313,11 @@ Par exemple, si vous sélectionnez une sous-ressource, remarquez comment le comp
 
 #### Balises {#tags}
 
-Le composant Balises est un composant dans lequel les utilisateurs peuvent affecter des balises existantes à une ressource, ce qui les aidera ultérieurement dans l’organisation et la récupération. Vous pouvez rendre ce composant en lecture seule, de sorte que les utilisateurs ne puissent pas ajouter de balises, mais seulement les afficher.
+Le composant Balises permet aux utilisateurs et aux utilisatrices d’affecter des balises existantes à une ressource, ce qui les aidera ultérieurement pour les opérations d&#39;’organisation et de récupération. Vous pouvez définir ce composant en lecture seule, de sorte que les utilisateurs ou les utilisatrices ne puissent pas ajouter de balises, mais seulement les afficher.
 
 ![screen_shot_2012-04-23at25031pm](assets/screen_shot_2012-04-23at25031pm.png)
 
-Double-cliquez sur le composant Balises pour ouvrir la boîte de dialogue des balises dans laquelle vous pouvez modifier le titre à partir de Balises, le cas échéant, et où vous pouvez sélectionner les espaces de noms alloués. Pour rendre ce champ modifiable, décochez la case **[!UICONTROL Masquer le bouton d’édition]**. Par défaut, les balises sont modifiables.
+Double-cliquez sur le composant Balises pour ouvrir la boîte de dialogue des balises dans laquelle vous pouvez modifier le titre des balises, si vous le souhaitez, et sélectionner les espaces de noms attribués. Pour rendre ce champ modifiable, décochez la case **[!UICONTROL Masquer le bouton d’édition]**. Par défaut, les balises sont modifiables.
 
 ![screen_shot_2012-04-23at24731pm](assets/screen_shot_2012-04-23at24731pm.png)
 
@@ -335,7 +335,7 @@ Le composant Miniature est l’emplacement où la ressource affiche la miniature
 
 ![screen_shot_2012-04-23at25452pm](assets/screen_shot_2012-04-23at25452pm.png)
 
-Double-cliquez sur le composant de miniature pour ouvrir la boîte de dialogue de miniature dans laquelle vous pouvez modifier le texte de remplacement. Par défaut, le texte de remplacement de la miniature est la ressource **Cliquer pour télécharger.**
+Double-cliquez sur le composant Miniature pour ouvrir la boîte de dialogue des miniatures dans laquelle vous pouvez modifier le texte de remplacement. Par défaut, le texte de remplacement de la miniature est la ressource **Cliquer pour télécharger.**
 
 ![screen_shot_2012-04-23at25604pm](assets/screen_shot_2012-04-23at25604pm.png)
 
@@ -351,7 +351,7 @@ Par défaut, il est en mode lecture seule. Les utilisateurs ne peuvent donc pas 
 
 ![screen_shot_2012-04-23at35100pm](assets/screen_shot_2012-04-23at35100pm.png)
 
-Si vous pouvez modifier le titre, vous pouvez ajouter un titre et une description en cliquant sur le crayon pour ouvrir le champ **Propriétés de la ressource** fenêtre. En outre, vous pouvez activer et désactiver la ressource en sélectionnant la date et l’heure.
+Si le titre peut être modifié, vous pouvez ajouter un titre et une description en cliquant sur le crayon pour ouvrir la fenêtre **Propriétés de la ressource**. En outre, vous pouvez activer et désactiver la ressource en sélectionnant la date et l’heure.
 
 Lors de la modification du [!UICONTROL Titre], les utilisateurs peuvent modifier le **Titre**, la **Description**, puis saisir l’**Heure d’activation** et l’**Heure de désactivation** pour activer et désactiver la ressource.
 
@@ -375,9 +375,9 @@ Les actions disponibles sont les suivantes :
 
 | Action | Description |
 |---|---|
-| [!UICONTROL Télécharger] | Permet aux utilisateurs de télécharger les ressources sélectionnées sur leurs ordinateurs. |
-| [!UICONTROL Editeurs] | Permet aux utilisateurs de modifier une image (édition interactive) |
-| [!UICONTROL Lightbox] | Enregistre les ressources dans une « Lightbox » où vous pouvez effectuer d’autres actions. La lightbox est pratique lorsque vous travaillez avec des ressources sur plusieurs pages. |
+| [!UICONTROL Télécharger] | Permet aux utilisateurs ou aux utilisatrices de télécharger les ressources sélectionnées sur leurs ordinateurs. |
+| [!UICONTROL Éditeurs] | Permet aux utilisateurs ou aux utilisatrices de modifier une image (modification interactive) |
+| [!UICONTROL Lightbox] | Enregistre les ressources dans une « lightbox » où vous pouvez effectuer d’autres actions. La lightbox est pratique lorsque vous travaillez avec des ressources sur plusieurs pages. |
 | [!UICONTROL Verrouillage] | Permet aux utilisateurs de verrouiller une ressource. Cette fonctionnalité n’est pas activée par défaut et doit être activée dans la liste des composants. |
 | [!UICONTROL Références] | Cliquez sur cette option pour afficher les pages sur lesquelles la ressource est utilisée. |
 | [!UICONTROL Contrôle de version] | Permet de créer et de restaurer des versions d’une ressource. |
@@ -405,21 +405,21 @@ Pour modifier simultanément plusieurs ressources à l’aide de la page Éditeu
 1. Cliquez sur **Éditer les métadonnées** dans le champ **Actions** (partie gauche de la page).
 1. La page **Éditeur de ressources du centre de presse** de Geometrixx s’ouvre dans un nouvel onglet. Les métadonnées des ressources s’affichent de la façon suivante :
 
-   * Une balise (qui ne s’applique pas à toutes les ressources mais uniquement à quelques-unes) s’affiche en italique.
+   * Les balises qui ne s’appliquent pas à toutes les ressources, mais seulement à quelques-unes, s’affichent en italique.
    * Les balises qui s’appliquent à toutes les ressources s’affichent avec une police normale.
    * Métadonnées autres que les balises : la valeur du champ ne s’affiche que si elle est identique pour toutes les ressources sélectionnées.
 
 1. Cliquez sur **Télécharger** pour télécharger un fichier .zip contenant les rendus d’origine des ressources.
 1. Cliquez sur l’option Modifier les balises située en regard du champ **Balises**.
 
-   * Une balise qui ne s’applique pas à toutes les ressources, mais uniquement à quelques-unes d’entre elles est d’arrière-plan gris.
+   * Les balises qui ne s’appliquent pas à toutes les ressources, mais seulement à quelques-unes, s’affichent avec un arrière-plan gris.
    * Les balises qui s’appliquent à toutes les ressources s’affichent avec un arrière-plan blanc.
 
    Vous pouvez :
 
    * cliquer sur `x` pour supprimer la balise de toutes les ressources ;
    * cliquer sur `+` pour ajouter la balise à toutes les ressources ;
-   * Cliquez sur le bouton **flèche** et sélectionnez une balise pour ajouter une nouvelle balise à toutes les ressources.
+   * Cliquez sur la **flèche** et sélectionnez une balise pour ajouter une nouvelle balise à toutes les ressources.
 
    Cliquez sur **OK** pour écrire les modifications dans le formulaire. La case en regard du champ **Balises** est automatiquement activée.
 

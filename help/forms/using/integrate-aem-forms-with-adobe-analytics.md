@@ -6,13 +6,13 @@ exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
 source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '1762'
-ht-degree: 77%
+ht-degree: 78%
 
 ---
 
 # Analytics avec [!DNL Adobe Launch]. {#analyticsusingadobelaunch}
 
-AEM Forms s’intègre à [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=fr) pour vous permettre de capturer et de suivre les mesures de performances des formulaires publiés. L’analyse de ces mesures a pour objectif de permettre aux utilisateurs professionnels d’obtenir des informations sur le comportement des utilisateurs finaux et d’optimiser l’expérience de capture des données. Vous pouvez capturer et suivre le comportement des utilisateurs connectés et non connectés (anonymes) à l’aide d’Adobe Analytics pour formulaires adaptatifs.
+AEM Forms s’intègre à [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=fr), ce qui permet la capture et le suivi des mesures de performances des formulaires que vous avez publiés. L’analyse de ces mesures a pour objectif de permettre aux utilisateurs professionnels d’obtenir des informations sur le comportement des utilisateurs finaux et d’optimiser l’expérience de capture des données. Vous pouvez capturer et suivre le comportement des utilisateurs connectés et non connectés (anonymes) à l’aide d’Adobe Analytics pour formulaires adaptatifs.
 
 Vous pouvez également effectuer des analyses à l’aide de Cloud Service Framework. Pour plus d’informations sur l’intégration d’AEM Forms à Cloud Service Framework, voir [Analytics à l’aide de Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md). L’avantage principal de l’utilisation d’Adobe Launch par rapport à Analytics avec Cloud Service Framework est que vous pouvez également définir des événements personnalisés, en plus de ces événements prêts à l’emploi. Les événements personnalisés sont définis à l’aide de l’éditeur de règles ou de bibliothèques clientes et sont mappés aux événements dans [!DNL Adobe Analytics].
 

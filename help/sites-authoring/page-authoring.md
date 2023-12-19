@@ -5,7 +5,7 @@ exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 71%
+ht-degree: 76%
 
 ---
 
@@ -43,8 +43,8 @@ Sur le côté gauche d’une page modifiable, un navigateur coulissant peut êtr
 * **Barre d’outils de composant**
 Un double-clic lent ou unique affiche la barre d’outils appropriée (une seule pour la barre d’outils d’édition statique, puis deux lents pour la barre d’outils complète).
 
-* **[Mise en page réactive](/help/sites-authoring/responsive-layout.md)**
-Vous disposez ainsi d’un système de paragraphes qui vous permet de positionner les composants dans une grille réactive.
+* **[Disposition réactive](/help/sites-authoring/responsive-layout.md)**
+Cette fonction fournit un système de paragraphes qui permet de positionner des composants sur une grille réactive.
 
 * **Recherche en cours de frappe**
 Dans certains cas (par exemple, lors de la sélection d’un chemin d’accès dans les boîtes de dialogue de modification), la recherche de contenu dans l’interface d’AEM présente des correspondances dynamiques en cours de saisie de la requête.

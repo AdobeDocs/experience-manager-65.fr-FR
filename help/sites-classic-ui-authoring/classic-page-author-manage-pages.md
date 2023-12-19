@@ -8,7 +8,7 @@ content-type: reference
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
 source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1895'
 ht-degree: 86%
 
 ---
@@ -165,7 +165,7 @@ Avant de pouvoir commencer à créer du contenu, vous devez créer une page, à 
 
    Cliquer sur **Nouveau...** agit également comme un raccourci vers la fonction **Nouvelle page...**.
 
-1. La variable **Créer une page** vous permet d’effectuer les opérations suivantes :
+1. La boîte de dialogue **Créer une page** vous permet d’effectuer les opérations suivantes :
 
    * Fournissez un **Titre**, celui-ci est affiché pour l’utilisateur ou l’utilisatrice.
    * Fournissez un **Nom**, celui-ci est utilisé pour générer l’URI. S’il n’est pas spécifié, le nom est dérivé du titre.
@@ -295,7 +295,7 @@ Pour déplacer ou renommer une page :
    >
    >Si la page a déjà été activée, le fait de la déplacer la désactivera automatiquement. Par défaut, elle sera réactivée une fois le déplacement terminé. Vous pouvez toutefois changer ce comportement en désélectionnant l’option **Republier** pour la page dans la fenêtre **Déplacer**.
 
-1. Cliquez sur **Déplacer**, puis sur **OK** pour confirmer l’opération.
+1. Cliquez sur **Déplacer**. Une confirmation sera requise. Cliquez sur **OK** pour confirmer.
 
    >[!NOTE]
    >

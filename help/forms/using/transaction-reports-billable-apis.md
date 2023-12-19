@@ -8,7 +8,7 @@ exl-id: 1bc99f3b-3f28-4e74-b259-6ebddc11ffc5
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1719'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
 
 * **Formulaires envoyés :** les données envoyées à partir de n’importe quel type de formulaire créé avec AEM Forms et les données envoyées à nʼimporte quel référentiel de stockage de données ou base de données sont considérées comme un envoi de formulaire. Par exemple, l’envoi d’un formulaire adaptatif, d’un HTML5, de formulaires PDF et d’un jeu de formulaires est comptabilisé comme un formulaire envoyé. Chaque formulaire d’un jeu de formulaires est considéré comme un envoi. Par exemple, si un jeu de formulaires comporte 5 formulaires, le service de rapport sur les transactions compte 5 envois lorsque le jeu de formulaires est envoyé.
 
-* **Documents rendus :** La génération d’un document en combinant un modèle et des données, la signature ou la certification numérique d’un document, l’utilisation d’une API Document Services facturable pour les services de document ou la conversion d’un document d’un format à un autre sont comptabilisées comme des documents rendus.
+* **Documents rendus :** la génération d’un document en combinant un modèle et des données, la signature ou la certification numérique d’un document, l’utilisation dʼune API Document Services facturable pour les services de documents ou la conversion d’un document d’un format à un autre sont comptabilisés comme des documents rendus.
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-" target="_blank">secureDocument</a><br /> </td>
-   <td>Cette API vous permet de protéger votre document. Vous pouvez utiliser l’API pour signer, certifier, Reader étendre ou chiffrer un document de PDF.</td>
+   <td>Cette API vous permet de protéger votre document. Vous pouvez utiliser l’API pour signer, certifier, étendre Reader ou chiffrer un document PDF.</td>
    <td>Documents traités</td>
    <td>Seule l’opération de signature et de certification du secureDocument est facturée.</td>
   </tr>
@@ -321,7 +321,7 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
  </tbody>
 </table>
 
-L’utilisation de l’API invoke est comptabilisée en tant que transaction lorsque vous effectuez une ou plusieurs des opérations suivantes :
+L’utilisation de l’API d’appel est comptabilisée comme une transaction lorsque vous effectuez une ou plusieurs des opérations suivantes :
 1. Conversion de formats non PDF en formats PDF. Par exemple, la conversion du format XDP au format PDF, qui prend en charge les formes de communication interactives et non interactives, et la conversion de Word au format PDF.
 1. Conversion du format PDF au format PDF/A.
 1. Conversion du format PDF aux formats non PDF. Les exemples incluent la transformation du format PDF au format Image ou la conversion du format PDF au format Texte.
@@ -343,7 +343,7 @@ L’utilisation de l’API invoke est comptabilisée en tant que transaction lor
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/pdfutility/services/PDFUtilityService.html#convertPDFtoXDP-com.adobe.aemfd.docmanager.Document-" target="_blank">convertPDFtoXDP</a></td>
-   <td>Convertit un document PDF en fichier XDP. Pour qu’un document de PDF soit converti en fichier XDP, le document de PDF doit contenir un flux XFA dans le dictionnaire AcroForm.</td>
+   <td>Convertit un document PDF en fichier XDP. Pour réussir la conversion d’un document PDF en fichier XDP, le document PDF doit contenir un flux XFA dans le dictionnaire AcroForm.</td>
    <td>Documents traités</td>
    <td> </td>
   </tr>

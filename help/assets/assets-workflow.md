@@ -7,14 +7,14 @@ role: User, Admin
 exl-id: e7c84385-efb3-4997-83ff-7a7f31582469
 source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 93%
+source-wordcount: '962'
+ht-degree: 97%
 
 ---
 
 # Traitement des ressources numériques {#process-assets}
 
-[!DNL Adobe Experience Manager Assets] vous permet de travailler sur vos ressources numériques de différentes manières pour un traitement des ressources robuste. Vous pouvez utiliser les méthodes de traitement par défaut ou personnalisées pour garantir la fin des processus d’entreprise de bout en bout, les audits et la conformité, la découverte et la distribution, ainsi que l’intégrité de base de vos ressources numériques. Vous pouvez effectuer les tâches de gestion des ressources tout en respectant l’échelle et la personnalisation requises.
+[!DNL Adobe Experience Manager Assets] vous permet de travailler sur vos ressources numériques de différentes manières pour permettre un traitement des ressources robuste. Vous pouvez utiliser les méthodes de traitement par défaut ou personnalisées pour garantir la fin des processus d’entreprise de bout en bout, les audits et la conformité, la découverte et la distribution, ainsi que l’intégrité de base de vos ressources numériques. Vous pouvez effectuer les tâches de gestion des ressources tout en respectant l’échelle et la personnalisation requises.
 
 ## Présentation des workflows {#understand-workflows}
 

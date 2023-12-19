@@ -8,15 +8,15 @@ exl-id: 6ef5bd8c-7e7b-4501-a1be-d34fc0dbde84
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 20%
+ht-degree: 100%
 
 ---
 
 # Mots-clés de formulaires adaptatifs {#adaptive-forms-keywords}
 
-<span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/using/create-an-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
+<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
-Les mots-clés de formulaires adaptatifs sont prédéfinis, les identifiants réservés ayant une signification spéciale pour les formulaires adaptatifs. Vous ne pouvez pas utiliser ces mots-clés comme identifiants dans vos formulaires adaptatifs. Le tableau suivant répertorie tous les mots-clés qui sont des identifiants réservés pour les formulaires adaptatifs.
+Les mots-clés des formulaires adaptatifs sont des identifiants prédéfinis réservés ayant une signification spéciale pour les formulaires adaptatifs. Vous ne pouvez pas les utiliser comme identifiants dans vos formulaires adaptatifs. Le tableau ci-dessous répertorie tous les mots-clés qui utilisent les identifiants réservés pour les formulaires adaptatifs.
 
 <table>
  <tbody>
@@ -48,7 +48,7 @@ Les mots-clés de formulaires adaptatifs sont prédéfinis, les identifiants ré
   <tr>
    <td><p>resetData</p> </td>
    <td><p>runPendingExpressions</p> </td>
-   <td><p>répétable</p> </td>
+   <td><p>repeatable</p> </td>
   </tr>
   <tr>
    <td><p>calcExp</p> </td>
@@ -63,7 +63,7 @@ Les mots-clés de formulaires adaptatifs sont prédéfinis, les identifiants ré
   <tr>
    <td><p>valueCommitScript</p> </td>
    <td><p>autoSaveStart</p> </td>
-   <td><p>visite</p> </td>
+   <td><p>visit</p> </td>
   </tr>
   <tr>
    <td><p>validateExp</p> </td>
@@ -201,7 +201,7 @@ Les mots-clés de formulaires adaptatifs sont prédéfinis, les identifiants ré
    <td><p>isLastPart</p> </td>
   </tr>
   <tr>
-   <td><p>instanceManager</p> </td>
+   <td><p>InstanceManager</p> </td>
    <td><p>completionAfterMessage</p> </td>
    <td><p>isFirstPart</p> </td>
   </tr>

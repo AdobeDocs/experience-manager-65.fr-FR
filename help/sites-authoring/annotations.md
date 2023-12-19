@@ -9,13 +9,13 @@ exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 65%
+ht-degree: 77%
 
 ---
 
 # Annotations lors de la modification d’une page{#annotations-when-editing-a-page}
 
-L’ajout de contenu aux pages de votre site web est souvent l’objet de discussions avant la publication réelle. Pour faciliter cette opération, de nombreux composants directement liés au contenu (par opposition, à la mise en page, par exemple) vous permettent d’ajouter une annotation.
+L’ajout de contenu aux pages de votre site web est souvent l’objet de discussions avant la publication réelle. Pour vous aider dans cette tâche, de nombreux composants directement liés au contenu (par opposition à la disposition, par exemple) vous permettent d’ajouter une annotation.
 
 Une annotation place une note autocollante colorée sur la page. L’annotation vous permet (ainsi qu’aux autres utilisateurs) de laisser des commentaires ou des questions à l’intention d’autres auteurs ou réviseurs.
 
@@ -29,7 +29,7 @@ Une annotation place une note autocollante colorée sur la page. L’annotation 
 
 >[!CAUTION]
 >
->La suppression d’une ressource (par exemple, d’un paragraphe) supprime toutes les annotations et tous les schémas associés à cette ressource, quelle que soit leur position sur la page dans son ensemble.
+>Si vous supprimez une ressource (un paragraphe, par exemple), toutes les annotations et tous les schémas associés sont également supprimés, quelle que soit leur position sur la page dans son ensemble.
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Un [mode](/help/sites-authoring/author-environment-tools.md#page-modes) spécial
 
 ### Annotation d’un composant {#annotating-a-component}
 
-Le mode Annotation permet de créer, modifier, déplacer ou supprimer des annotations sur votre contenu :
+Le mode Annotation vous permet de créer, modifier, déplacer ou supprimer des annotations sur votre contenu :
 
 1. Pour activer le mode Annotation, cliquez sur l’icône dans la barre d’outils (en haut à droite) lorsque vous modifiez une page :
 
@@ -112,7 +112,7 @@ Le mode Annotation permet de créer, modifier, déplacer ou supprimer des annota
 
 >[!NOTE]
 >
->Les annotations ne peuvent pas être ajoutées à une page verrouillée par un autre utilisateur.
+>Les annotations ne peuvent pas être ajoutées à une page verrouillée par un autre utilisateur ou une autre utilisatrice.
 
 ### Indicateur d’annotations {#annotation-indicator}
 

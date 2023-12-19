@@ -1,6 +1,6 @@
 ---
 title: Package de compatibilité
-description: L’installation du package de compatibilité sur AEM Forms 6.5 vous permet d’utiliser les actifs Correspondence Management des versions 6.4 et antérieures d’AEM Forms, ainsi que les modèles et pages de formulaires adaptatifs obsolètes.
+description: L’installation du package de compatibilité sur AEM Forms 6.5 vous permet d’utiliser les ressources de Correspondence Management d’AEM Forms 6.4 et versions antérieures, ainsi que les modèles et pages de formulaires adaptatifs obsolètes.
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management, installing
@@ -11,7 +11,7 @@ exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 57%
 
 La communication interactive est l’approche par défaut et recommandée pour créer des communications client dans AEM Forms 6.5. Pour continuer à utiliser les lettres dans AEM Forms 6.5, vous devez installer le [package de compatibilité AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) le plus récent.
 
-Le package de compatibilité AEMFD permet également de [utilisez les ressources suivantes d’AEM Forms 6.4, 6.3 et 6.2 sur AEM Forms 6.5 :](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
+Le package de compatibilité AEMFD vous permet également d’[utiliser les ressources suivantes d’AEM Forms 6.4, 6.3 et 6.2 sur AEM Forms 6.5 :](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
 * Fragments de document
 * Lettres
@@ -38,7 +38,7 @@ Assurez-vous que le [package de compatibilité AEM](https://experienceleague.ado
 
 1. Installez le dernier [package de compatibilité](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) 6.5.
 
-   Pour plus d’informations sur le téléchargement et l’installation du package, voir [Utilisation des packages](/help/sites-administering/package-manager.md).
+   Pour plus d’informations sur le chargement et l’installation du package, consultez [Utilisation de packages](/help/sites-administering/package-manager.md).
 
 1. Une fois les journaux stabilisés, redémarrez le serveur.
 1. Utilisez l’utilitaire de migration pour rendre vos actifs compatibles avec la version 6.5.
@@ -67,7 +67,7 @@ En installant le package de compatibilité, vous pouvez rendre les ressources et
    * /libs/fd/afaddon/templates/advancedEnrollmentTemplate
    * /libs/fd/afaddon/templates/advancedEnrollmentTemplate2
 
-* Pages obsolètes de formulaires adaptatifs :
+* Pages obsolètes de formulaires adaptatifs :
 
    * /libs/fd/af/components/page/survey
    * /libs/fd/af/components/page/tabbedenrollment

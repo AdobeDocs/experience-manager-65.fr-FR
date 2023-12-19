@@ -4,8 +4,8 @@ description: Dans cette partie du Parcours de développement AEM découplé, app
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
 source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1874'
-ht-degree: 97%
+source-wordcount: '1803'
+ht-degree: 98%
 
 ---
 
@@ -226,6 +226,6 @@ Si vous recherchez cette flexibilité pour votre projet, consultez la section fa
 
    * Configuration du [CDN Rewriter](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=fr) (*recherchez « CDN Rewriter »*)
 
-* [Présentation d’AEM en tant que CMS sans affichage](/help/sites-developing/headless/introduction.md)
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* [Présentation d’AEM en tant que CMS découplé](/help/sites-developing/headless/introduction.md)
+* [Portail de développement d’AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
 * [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)

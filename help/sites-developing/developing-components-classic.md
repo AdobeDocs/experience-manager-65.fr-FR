@@ -1,6 +1,6 @@
 ---
-title: Développement de composants Adobe Experience Manager (IU classique)
-description: L’IU classique utilise ExtJS pour créer des widgets qui donnent l’aspect des composants. HTL n’est pas le langage de script recommandé pour Adobe Experience Manager (AEM).
+title: Développer des composants Adobe Experience Manager (IU classique)
+description: L’IU classique utilise ExtJS pour créer des widgets qui donnent l’aspect des composants. HTL n’est pas le langage de script recommandé pour Adobe Experience Manager (AEM).
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
@@ -9,14 +9,14 @@ legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2384'
-ht-degree: 77%
+source-wordcount: '2340'
+ht-degree: 98%
 
 ---
 
-# Développement de composants Adobe Experience Manager (AEM) (IU classique){#developing-aem-components-classic-ui}
+# Développer des composants Adobe Experience Manager (AEM) (IU classique){#developing-aem-components-classic-ui}
 
-L’IU classique utilise ExtJS pour créer des widgets qui donnent l’aspect des composants. En raison de la nature de ces widgets, il existe des différences entre la manière dont les composants interagissent avec l’IU classique et la [IU tactile](/help/sites-developing/developing-components.md).
+L’IU classique utilise ExtJS pour créer des widgets qui donnent l’aspect des composants. En raison de la nature de ces widgets, il existe des différences entre la manière dont les composants interagissent avec l’IU classique et l’[IU tactile](/help/sites-developing/developing-components.md).
 
 >[!NOTE]
 >
@@ -30,17 +30,17 @@ L’IU classique utilise ExtJS pour créer des widgets qui donnent l’aspect de
 
 ## Structure {#structure}
 
-La structure de base d’un composant est traitée à la page [Principes de base des composants AEM](/help/sites-developing/components-basics.md#structure) qui s’applique aux interfaces utilisateur classique et tactile. Même si vous n’avez pas besoin d’utiliser les paramètres de l’interface utilisateur tactile dans votre nouveau composant, vous pouvez en tenir compte lorsque vous héritez de composants existants.
+La structure de base d’un composant est traitée à la page [Principes de base des composants AEM](/help/sites-developing/components-basics.md#structure) qui s’applique aux interfaces utilisateur classique et tactile. Même si vous n’avez pas besoin d’utiliser les paramètres de l’IU tactile de votre nouveau composant, il peut être utile d’en prendre connaissance lors de l’héritage de composants existants.
 
 ## Scripts JSP {#jsp-scripts}
 
-Les servlets ou scripts JSP peuvent être utilisés pour effectuer le rendu des composants. Selon les règles de traitement des requêtes de Sling, le nom du script par défaut est :
+Les servlets ou scripts JSP peuvent être utilisés pour effectuer le rendu des composants. Selon les règles de traitement des requêtes de Sling, le nom du script par défaut est :
 
 `<*componentname*>.jsp`
 
 ## global.jsp {#global-jsp}
 
-Le fichier de script JSP `global.jsp` est utilisé pour fournir un accès rapide à des objets spécifiques (c’est-à-dire pour accéder au contenu) à n’importe quel fichier de script JSP utilisé pour effectuer le rendu d’un composant.
+Le fichier de script JSP `global.jsp` est utilisé pour fournir un accès rapide à des objets spécifiques (accès au contenu) à n’importe quel fichier de script JSP utilisé pour le rendu d’un composant.
 
 Par conséquent, `global.jsp` doit être inclus dans chaque script JSP de rendu de composant dans lequel un ou plusieurs des objets fournis dans `global.jsp` sont utilisés.
 
@@ -70,8 +70,8 @@ Résumé :
    * `properties` – Propriétés de la ressource gérée (`resource.adaptTo(ValueMap.class);`)
    * `pageProperties` – Propriétés de la page de la ressource gérée
    * `pageManager` – Gestionnaire de pages permettant d’accéder aux pages de contenu AEM (`resourceResolver.adaptTo(PageManager.class);`)
-   * `component` - Objet de composant du composant AEM actif.
-   * `designer` - Objet Designer permettant de récupérer les informations de conception ( `resourceResolver.adaptTo(Designer.class);`).
+   * `component` : objet du composant AEM en cours
+   * `designer` : objet Designer permettant de récupérer des informations de conception (`resourceResolver.adaptTo(Designer.class);`)
    * `currentDesign` – Conception de la ressource gérée
    * `currentStyle` – Style de la ressource gérée
 
@@ -109,13 +109,13 @@ Pour plus d’informations, consultez le document [Bibliothèques de balises](/h
 
 Les sites web modernes reposent largement sur un traitement côté client piloté par un code JavaScript et CSS complexe. Organiser et optimiser la diffusion de ce code est une opération qui peut se révéler complexe.
 
-Pour résoudre ce problème, AEM fournit **Dossiers de bibliothèques côté client**, qui vous permet de stocker votre code côté client dans le référentiel, de l’organiser en catégories et de définir quand et comment chaque catégorie de code doit être diffusée au client. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page Web finale pour charger le code correct.
+Pour résoudre ce problème, AEM fournit des **dossiers de bibliothèques côté client** qui permettent de stocker le code côté client dans le référentiel, de le classer par catégorie et de définir quand et comment chaque catégorie de code doit être diffusée au client ou à la cliente. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page Web finale pour charger le code correct.
 
 Pour plus d’informations, consultez le document [Utilisation de bibliothèques HTML côté client](/help/sites-developing/clientlibs.md).
 
 ## Boîte de dialogue {#dialog}
 
-Votre composant a besoin d’une boîte de dialogue pour que les auteurs puissent ajouter et configurer le contenu.
+Votre composant a besoin d’une boîte de dialogue pour que les auteurs et les autrices puissent ajouter du contenu et le configurer.
 
 Pour plus d’informations, consultez [Composants AEM – Principes de base](/help/sites-developing/components-basics.md#dialogs).
 
@@ -143,9 +143,9 @@ Vous trouverez un exemple détaillé de développement d’un composant dans la 
 
 ### Développement d’un nouveau composant (adaptation d’un composant existant) {#develop-a-new-component-adapt-existing-component}
 
-Pour développer de nouveaux composants pour AEM en fonction du composant existant, vous pouvez copier le composant, créer un fichier JavaScript pour le nouveau composant et le stocker dans un emplacement accessible à AEM (voir également [Personnalisation des composants et autres éléments](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)) :
+Pour développer de nouveaux composants pour AEM à partir d’un composant existant, vous pouvez copier le composant, créer un fichier JavaScript pour le nouveau composant et le stocker dans un emplacement accessible à AEM (voir également [Personnalisation des composants et autres éléments](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)) :
 
-1. À l’aide de CRXDE Lite, créez un dossier de composants dans :
+1. À l’aide de CRXDE Lite, créez un dossier de composants dans :
 
    / `apps/<myProject>/components/<myComponent>`
 
@@ -167,7 +167,7 @@ Pour développer de nouveaux composants pour AEM en fonction du composant exista
    * Remplacer le fichier `.jsp` (lui donner le nom du nouveau composant) ou
    * Retravailler complètement le composant, si vous le souhaitez
 
-   Par exemple, si vous prenez une copie du composant Texte standard, vous pouvez ajouter un champ supplémentaire à la boîte de dialogue, puis mettre à jour la variable `.jsp` pour traiter l’entrée qui y est effectuée.
+   Par exemple, si vous prenez une copie du composant Texte standard, vous pouvez ajouter un champ supplémentaire à la boîte de dialogue, puis mettre à jour le fichier `.jsp` pour traiter l’entrée qui y est effectuée.
 
    >[!NOTE]
    >
@@ -178,17 +178,17 @@ Pour développer de nouveaux composants pour AEM en fonction du composant exista
 
    >[!NOTE]
    >
-   >Une boîte de dialogue définie pour l’IU classique fonctionne dans l’IU tactile.
+   >Une boîte de dialogue définie pour l’interface utilisateur classique fonctionnera dans l’interface utilisateur optimisée pour les écrans tactiles.
    >
-   >Une boîte de dialogue définie pour l’interface utilisateur tactile ne fonctionnera pas dans l’interface utilisateur classique.
+   >Une boîte de dialogue définie pour l’interface utilisateur optimisée pour les écrans tactiles ne fonctionnera pas dans l’interface utilisateur classique.
    >
-   >Selon votre instance et votre environnement de création, vous pouvez définir les deux types de boîte de dialogue pour votre composant.
+   >En fonction de l’instance et de l’environnement de création, vous pouvez définir les deux types de boîte de dialogue pour votre composant.
 
 1. L’un des nœuds suivants doit être présent et correctement initialisé pour que le nouveau composant puisse s’afficher :
 
    * `cq:dialog` : boîte de dialogue pour l’interface utilisateur tactile
    * `dialog` : boîte de dialogue pour l’interface utilisateur classique
-   * `cq:editConfig` : comportement des composants dans l’environnement de modification (par exemple, glisser-déposer)
+   * `cq:editConfig` : comportement des composants dans l’environnement de modification (glisser-déposer, par exemple)
    * `design_dialog` : boîte de dialogue pour le mode Création (interface utilisateur classique uniquement)
 
 1. Activez le nouveau composant dans votre système de paragraphes en effectuant l’une des opérations suivantes :
@@ -227,7 +227,7 @@ Une fois le composant développé, vous l’ajoutez au système de paragraphes, 
 
 ### Extension du composant Texte et image – Exemple {#extending-the-text-and-image-component-an-example}
 
-Cette section fournit un exemple d’extension du composant standard de texte et d’image largement utilisé avec une fonctionnalité de placement d’image configurable.
+Cette section fournit un exemple d’extension du composant standard Texte et Image, couramment utilisé, avec une fonctionnalité de placement d’image configurable.
 
 L’extension du composant Texte et image permet aux éditeurs et éditrices d’utiliser toutes les fonctionnalités existantes du composant et d’avoir une option supplémentaire permettant de spécifier le placement de l’image :
 
@@ -252,7 +252,7 @@ Les techniques suivantes sont décrites dans cet exercice :
 
 #### Extension du composant textimage existant {#extending-the-existing-textimage-component}
 
-Pour créer le composant, vous utilisez le composant textimage standard comme base et vous le modifiez. Vous stockez le nouveau composant dans l’exemple d’application de gestion de contenu web Geometrixx AEM.
+Pour créer le composant, nous utilisons le composant textimage standard que nous allons modifier. Nous allons stocker le nouveau composant dans l’exemple d’application de gestion de contenu web Geometrixx AEM.
 
 1. Copiez le composant textimage standard depuis `/libs/foundation/components/textimage` dans le dossier de composants Geometrixx, `/apps/geometrixx/components`, en utilisant textimage comme nom de nœud cible. (Pour copier le composant, accédez à son emplacement, cliquez avec le bouton droit de la souris, sélectionnez Copier, puis accédez au répertoire cible.)
 
@@ -266,7 +266,7 @@ Pour créer le composant, vous utilisez le composant textimage standard comme ba
 
    >[!NOTE]
    >
-   >La définition de la boîte de dialogue dépend de l’interface utilisateur :
+   >La définition de la boîte de dialogue dépend de l’interface utilisateur :
    >
    >* Interface utilisateur optimisée pour les écrans tactiles : `textimage/cq:dialog`
    >* Interface utilisateur classique : `textimage/dialog`
@@ -294,7 +294,7 @@ Pour créer le composant, vous utilisez le composant textimage standard comme ba
 
    De cette manière, lorsqu’une image est déposée sur le composant de la page, la propriété `sling:resourceType` du composant textimage étendu est définie sur `geometrixx/components/textimage.`.
 
-1. Modifiez la boîte de dialogue du composant pour inclure la nouvelle option. Le nouveau composant hérite des parties de la boîte de dialogue qui sont identiques à celles de l’original. Le seul ajout que vous effectuez consiste à étendre la variable **Avancé** , ajout d’un **Position de l’image** liste déroulante, avec options **Left** et **Right**:
+1. Modifiez la boîte de dialogue du composant pour inclure la nouvelle option. Le nouveau composant hérite des parties de la boîte de dialogue qui sont identiques à celles de l’original. Le seul ajout consiste à étendre l’onglet **Avancé**, en ajoutant une liste déroulante **Position de l’image**, avec les options **Gauche** et **Droite** :
 
    * Laissez les propriétés `textimage/dialog` telles quelles.
 
@@ -309,7 +309,7 @@ Pour créer le composant, vous utilisez le composant textimage standard comme ba
    * Pour tab3 :
 
       * Ne modifiez pas les propriétés et les sous-nœuds.
-      * Ajouter une définition de champ à `tab3/items`, position du noeud de type `cq:Widget`
+      * Ajoutez une définition de champ à `tab3/items`, la position du nœud de type `cq:Widget`.
       * Définissez les propriétés suivantes (du type String) pour le nouveau nœud `tab3/items/position` :
 
          * `name`: `./imagePosition`
@@ -336,7 +336,7 @@ Pour créer le composant, vous utilisez le composant textimage standard comme ba
         image.loadStyleData(currentStyle);
    ```
 
-   Vous allez remplacer le fragment de code mis en évidence. *%>&lt;div class=&quot;image&quot;>&lt;%* avec le nouveau code générant un style personnalisé pour cette balise.
+   Nous allons remplacer le fragment de code mis en valeur, *%>&lt;div class=&quot;image&quot;>&lt;%*, par un nouveau code qui génère un style personnalisé pour cette balise.
 
    ```xml
    // todo: add new CSS class for the 'right image' instead of using
@@ -367,7 +367,7 @@ Le composant stocke son contenu dans un paragraphe sur la page Entreprises.
 
 ### Désactivation de la fonctionnalité de chargement du composant Image {#disable-upload-capability-of-the-image-component}
 
-Pour désactiver cette fonctionnalité, vous utilisez le composant d’image standard comme base et vous le modifiez. Vous stockez le nouveau composant dans l’exemple d’application de Geometrixx.
+Pour désactiver cette fonctionnalité, vous devez utiliser le composant image standard et le modifier. Vous allez stocker le nouveau composant dans l’exemple d’application Geometrixx.
 
 1. Copiez le composant image standard depuis `/libs/foundation/components/image` dans le dossier de composants Geometrixx, `/apps/geometrixx/components`, en utilisant « image » comme nom de nœud cible.
 
@@ -378,7 +378,7 @@ Pour désactiver cette fonctionnalité, vous utilisez le composant d’image sta
    * Définissez **jcr:title** sur `Image (Extended)`.
 
 1. Accédez à `/apps/geometrixx/components/image/dialog/items/image`.
-1. Ajouter une propriété:
+1. Ajoutez une propriété :
 
    * **Nom** : `allowUpload`
    * **Type** : `String`
@@ -389,7 +389,7 @@ Pour désactiver cette fonctionnalité, vous utilisez le composant d’image sta
 1. Cliquez sur **Enregistrer tout**. Le composant est prêt à être testé.
 1. Ouvrez une page dans Geometrixx, par exemple Anglais/Entreprise.
 1. Passez en mode de conception et activez Image (étendu).
-1. Revenez au mode d’édition et ajoutez-le au système de paragraphes. Sur les images suivantes, vous pouvez voir les différences entre le composant d’image d’origine et celui que vous avez créé.
+1. Revenez au mode d’édition et ajoutez-le au système de paragraphes. Sur les images suivantes, vous pouvez voir les différences entre le composant Image d’origine et celui que vous venez de créer.
 
    Composant Image d’origine :
 

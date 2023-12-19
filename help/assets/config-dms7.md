@@ -13,7 +13,7 @@ feature: Configuration,Scene7 Mode
 source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '6508'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 90%
 
 Si vous utilisez Adobe Experience Manager pour différents environnements, tels que le développement, l’évaluation et la production en direct, configurez les services cloud Dynamic Media pour chacun de ces environnements.
 
-## Schéma de l’architecture de Dynamic Media - mode Scene7 {#architecture-diagram-of-dynamic-media-scene-mode}
+## Diagramme de l’architecture de Dynamic Media : mode Scene7 {#architecture-diagram-of-dynamic-media-scene-mode}
 
-Le diagramme d’architecture suivant décrit le fonctionnement du mode Dynamic Media - Scene7.
+Le diagramme d’architecture suivant décrit le fonctionnement de Dynamic Media : mode Scene7.
 
 Avec la nouvelle architecture, Experience Manager est responsable des ressources issues de sources originales et des synchronisations avec Dynamic Media pour le traitement et la publication des ressources :
 
@@ -236,7 +236,7 @@ Lorsque vous exécutez Dynamic Media en mode Scene7 sur AEM, il transfère actue
 
 1. Sur la page **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name**, cochez la case correspondant aux deux paramètres suivants :
 
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - Lorsque cette option est activée, ce paramètre met en cache les résultats des autorisations pendant 120 secondes (deux minutes) (par défaut) à enregistrer.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - Lorsqu’il est activé, ce paramètre met en cache les résultats des autorisations pendant 120 secondes (deux minutes) (par défaut) à enregistrer.
    * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` - Lorsqu’il est activé, ce paramètre valide l’accès d’un utilisateur lorsqu’il prévisualise des ressources au moyen du serveur d’images Dynamic Media.
 
    ![Activation des paramètres de liste de contrôle d’accès en mode Dynamic Media - Scene7](/help/assets/assets-dm/acl.png)
@@ -312,7 +312,7 @@ Vous pouvez saisir une valeur allant jusqu’à 15 Go (`2013265920` octets). D
 
    * Copiez et collez le chemin d’accès ci-dessus dans le champ URL de votre navigateur. Veillez à remplacer `localhost:4502` avec votre propre instance d’Experience Manager.
 
-1. Dans le **[!UICONTROL Adobe Granite Workflow External Process Job Handler]** dans la boîte de dialogue **[!UICONTROL Délai d’expiration maximal]** , définissez la valeur sur `18000` secondes (cinq heures). La valeur par défaut est de 10 800 secondes (trois heures).
+1. Dans la boîte de dialogue **[!UICONTROL Gestionnaire de traitement de processus externe de workflow Adobe Granite]**, dans le champ **[!UICONTROL Délai d’expiration maximal]**, définissez la valeur sur `18000` secondes (cinq heures). La valeur par défaut est de 10 800 secondes (trois heures).
 
    ![Valeur de délai d’expiration maximale](/help/assets/assets-dm/uploadassets15gb_d.png)
 
@@ -325,7 +325,7 @@ Vous pouvez saisir une valeur allant jusqu’à 15 Go (`2013265920` octets). D
 1. Dans la page Modèles de workflow, sélectionnez **[!UICONTROL Vidéo de codage de Dynamic Media]**.
 1. Dans la barre d’outils, sélectionnez **[!UICONTROL Modifier]**.
 1. Dans la page du workflow, double-cliquez sur l’étape du processus **[!UICONTROL Chargement de binaires directs Scene7]**.
-1. Dans le **[!UICONTROL Propriétés de l’étape]** sous la boîte de dialogue **[!UICONTROL Courant]** sous l’onglet **[!UICONTROL Paramètres avancés]** en-tête, dans la **[!UICONTROL Timeout]** , saisissez la valeur `18000` secondes (cinq heures). La valeur par défaut est `3600` secondes (une heure).
+1. Dans la boîte de dialogue **[!UICONTROL Propriétés de l’étape]**, dans l’onglet **[!UICONTROL Courant]**, sous le titre **[!UICONTROL Paramètres avancés]**, dans le champ **[!UICONTROL Délai d’expiration]**, saisissez la valeur `18000` secondes (cinq heures). La valeur par défaut est `3600` secondes (une heure).
 1. **[!UICONTROL Cliquez sur OK]**.
 1. Sélectionnez **[!UICONTROL Synchronisation]**.
 1. Répétez les étapes 14 à 21 pour le modèle de workflow **[!UICONTROL Ressource de mise à jour de la gestion des ressources numériques]** et **[!UICONTROL Retraitement Dynamic Media]**.
@@ -368,7 +368,7 @@ Par défaut, le système affiche 15 rendus lorsque vous sélectionnez **[!UICON
 Vous pouvez définir les types de ressources traités par Dynamic Media et personnaliser les paramètres de traitement des ressources avancé. Vous pouvez, par exemple, spécifier les paramètres de traitement des ressources de façon à ce qu’ils effectuent les opérations suivantes :
 
 * Conversion d’un Adobe PDF en ressource de catalogue électronique.
-* Convertissez un document Adobe Photoshop (.PSD) en ressource de modèle de bannière pour la personnalisation.
+* Convertissez un document Adobe Photoshop (.PSD) en ressource de modèle de bannière pour la personnalisation.
 * Pixellisation d’un fichier Adobe Illustrator (.ai) ou d’un fichier PostScript® encapsulé Adobe Photoshop (.eps).
 * Des [profils vidéo](/help/assets/video-profiles.md) et des [profils d’images](/help/assets/image-profiles.md) peuvent être utilisés pour définir le traitement des vidéos et des images.
 
@@ -459,13 +459,13 @@ Lorsque vous chargez des fichiers, Dynamic Media crée automatiquement une visi
 
 ##### Configuration de l’affectation de nom par défaut
 
-Créez une convention de nommage par défaut qui est utilisée dans n’importe quelle recette de paramètre prédéfini d’ensemble par lot. La convention de nommage par défaut sélectionnée dans la définition de paramètre prédéfini d’ensemble par lot est probablement tout ce dont votre entreprise a besoin pour générer des ensembles par lot. Un paramètre prédéfini d’ensemble par lot est créé pour utiliser la convention d’affectation de nom par défaut que vous définissez. Vous pouvez créer autant de paramètres prédéfinis d’ensemble par lot qu’avec d’autres conventions d’affectation de nom personnalisées nécessaires pour un ensemble particulier de contenu lorsqu’il existe une exception à l’attribution de nom par défaut définie par l’entreprise.
+Créez une convention de nommage par défaut qui est utilisée dans n’importe quelle recette de paramètre prédéfini d’ensemble par lot. La convention de nommage par défaut sélectionnée dans la définition de paramètre prédéfini d’ensemble par lot est probablement tout ce dont votre entreprise a besoin pour générer des ensembles par lot. Un paramètre prédéfini d’ensemble par lot est créé pour utiliser la convention de nommage par défaut que vous définissez. Vous pouvez créer autant de paramètres prédéfinis d’ensemble par lot qu’avec d’autres conventions de nommage personnalisées nécessaires pour un ensemble particulier de contenu lorsqu’il existe une exception au nommage par défaut défini par l’entreprise.
 
 Bien que la spécification d’une convention de nommage par défaut ne soit pas nécessaire pour utiliser la fonctionnalité de paramètre prédéfini d’ensemble par lot, il est recommandé d’appliquer une telle convention. Cette pratique permet de définir autant d’éléments de convention de nommage que vous souhaitez, regroupés pour simplifier la création d’ensembles par lot.
 
 Vous pouvez également utiliser **[!UICONTROL Afficher le code]** sans champ de formulaire. Cet affichage vous permet de définir vos conventions de nommage en utilisant uniquement des expressions régulières.
 
-Deux éléments sont disponibles pour la définition : Correspondance et Nom de base. Ces champs vous permettent de définir tous les éléments d’une convention d’affectation de nom et d’identifier la partie de la convention utilisée pour nommer l’ensemble dans lequel ils se trouvent. La convention de dénomination individuelle d’une entreprise utilise souvent une ou plusieurs lignes de définition pour chacun de ces éléments. Vous pouvez utiliser autant de lignes que vous le souhaitez pour votre définition unique et les regrouper dans des éléments distincts, par exemple, pour l’image principale, les éléments Couleur, Affichage secondaire et Échantillon.
+Deux éléments sont disponibles pour la définition : Correspondance et Nom de base. Ces champs vous permettent de définir une convention de nommage de tous les éléments et d’identifier la partie de la convention utilisée pour nommer l’ensemble dans lequel ils se trouvent. La convention de nommage individuelle d’une entreprise utilise une ou plusieurs lignes de définition pour chacun de ces éléments. Vous pouvez utiliser autant de lignes que vous le souhaitez pour votre définition unique et les regrouper dans des éléments distincts, par exemple, pour l’image principale, les éléments Couleur, Affichage secondaire et Échantillon.
 
 **Pour configurer l’affectation de nom par défaut :**
 
@@ -476,14 +476,14 @@ Deux éléments sont disponibles pour la définition : Correspondance et Nom de 
 1. Sur la barre de navigation située en haut de la page, accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres prédéfinis d’ensemble par lot]** > **[!UICONTROL Affectation de nom par défaut]**.
 1. Sélectionnez **[!UICONTROL Afficher le formulaire]** ou **[!UICONTROL Afficher le code]** pour indiquer le mode de visualisation et de saisie des informations sur chaque élément.
 
-   Vous pouvez cocher la case **[!UICONTROL Afficher le code]** pour afficher la valeur d’expression régulière qui se crée à côté de vos sélections dans le formulaire. Vous pouvez saisir ou modifier ces valeurs pour définir les éléments de la convention d’affectation des noms, si l’affichage du formulaire vous limite pour une raison quelconque. Si vos valeurs ne peuvent pas être analysées dans la vue de formulaire, les champs de formulaire deviennent inactifs.
+   Vous pouvez cocher la case **[!UICONTROL Afficher le code]** pour afficher la valeur d’expression régulière qui se crée à côté de vos sélections dans le formulaire. Vous pouvez saisir ou modifier ces valeurs pour définir les éléments de la convention de nommage, si l’affichage du formulaire vous limite pour une raison quelconque. Si vos valeurs ne peuvent pas être analysées dans la vue de formulaire, les champs de formulaire deviennent inactifs.
 
    >[!NOTE]
    >
    Les champs de formulaire désactivés n’exécutent aucune validation indiquant que vos expressions régulières sont correctes. Vous verrez les résultats de l’expression régulière que vous créez pour chaque élément après la ligne de résultat. L’expression régulière complète est visible au bas de la page.
 
-1. Développez chaque élément selon vos besoins et saisissez les conventions d’affectation de nom à utiliser.
-1. Si nécessaire, effectuez l’une des opérations suivantes :
+1. Développez chaque élément selon vos besoins et saisissez les conventions de nommage à utiliser.
+1. Si nécessaire, effectuez l’une des opérations suivantes :
 
    * Sélectionnez **[!UICONTROL Ajouter]** afin d’ajouter une autre convention de nommage pour un élément.
    * Sélectionnez **[!UICONTROL Supprimer]** afin de supprimer une convention de nommage pour un élément.
@@ -495,7 +495,7 @@ Deux éléments sont disponibles pour la définition : Correspondance et Nom de 
 
 ##### Créer un paramètre prédéfini d’ensemble par lot
 
-Dynamic Media utilise des paramètres prédéfinis d’ensemble par lot pour organiser les ressources en ensembles d’images (images de remplacement, options de couleur, 360 rotation) à afficher dans les visionneuses. Les paramètres prédéfinis d’ensemble par lot s’exécutent automatiquement avec les processus de chargement de ressources dans Dynamic Media.
+Dynamic Media utilise des paramètres prédéfinis d’ensemble par lot pour organiser les ressources en ensembles d’images (images de remplacement, options de couleur, rotation à 360 degrés) à afficher dans les visionneuses. Les paramètres prédéfinis d’ensemble par lot s’exécutent automatiquement avec les processus de chargement de ressources dans Dynamic Media.
 
 Vous pouvez créer, modifier et gérer vos paramètres prédéfinis d’ensemble par lot. Il existe deux formulaires de définitions de paramètres prédéfinis d’ensemble par lot : un pour une convention de nommage par défaut que vous pouvez configurer, et un autre pour les conventions de nommage personnalisées que vous créez en cas de besoin.
 
@@ -537,7 +537,7 @@ Vous pouvez utiliser la méthode de champ de formulaire pour définir un paramè
 
 Vous pouvez utiliser le type d’ensemble par lot **[!UICONTROL Visionneuse à 360° multi-axe]** pour créer une recette qui automatise la génération des visionneuses à 360° en 2D. Le regroupement d’images utilise des expressions régulières de ligne et de colonne afin que les ressources d’image soient correctement alignées à l’emplacement correspondant dans le tableau multidimensionnel. Il n’existe pas de nombre maximal ou minimal de lignes ou de colonnes que vous devez avoir dans une visionneuse à 360° multi-axe.
 
-Par exemple, supposons que vous souhaitiez créer une visionneuse à 360° multi-axe nommée `spin-2dspin`. Vous disposez d’un ensemble d’images de visionneuse à 360° qui contiennent trois lignes, avec 12 images par ligne. Les images sont nommées comme suit :
+Par exemple, supposons que vous souhaitiez créer une visionneuse à 360° multi-axe nommée `spin-2dspin`. Vous disposez d’un ensemble d’images de visionneuse à 360° qui contiennent trois lignes, avec 12 images par ligne. Les images sont nommées comme suit :
 
 ```xml {.line-numbers}
 spin-01-01
@@ -570,7 +570,7 @@ Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le 
 1. Dans le panneau Liste des paramètres prédéfinis, sélectionnez **[!UICONTROL Ajouter]** pour activer les champs de définition dans le panneau Détails situé sur la droite de l’écran.
 1. Dans le panneau Détails, nommez le paramètre prédéfini dans le champ Nom du paramètre prédéfini.
 1. Dans le menu déroulant Type d’ensemble par lot, sélectionnez **[!UICONTROL Visionneuse de ressources]**.
-1. Dans la liste déroulante Sous-type , sélectionnez **[!UICONTROL Visionneuse à 360° multi-axe]**.
+1. Dans la liste déroulante Sous-type, sélectionnez **[!UICONTROL Visionneuse à 360° multi-axe]**.
 1. Développez les **[!UICONTROL Conventions de nommage de ressource]**, puis, dans la liste déroulante Nommage de fichier, cliquez sur **[!UICONTROL Personnalisé]**.
 1. Utilisez les attributs **[!UICONTROL Correspondance]** et, éventuellement, **[!UICONTROL Nom de base]** pour définir une expression régulière pour nommer les fichiers d’image qui constituent le regroupement.
 
@@ -703,7 +703,7 @@ Le paramètre de connexion de chargement vers Scene7 synchronise les ressources 
 
    Le paramètre **[!UICONTROL Nombre de connexions]** contrôle le nombre maximal de connexions HTTP autorisées pour le chargement d’Experience Manager vers Dynamic Media. En règle générale, la valeur prédéfinie de dix connexions est suffisante.
 
-   Le paramètre **[!UICONTROL Active job timeout]** détermine le temps d’attente avant que les ressources Dynamic Media chargées ne soient publiées sur le serveur de diffusion. Cette valeur est de 2 100 secondes (35 minutes) par défaut.
+   Le paramètre **[!UICONTROL Délai d’expiration du traitement actif]** détermine le temps d’attente avant que les ressources Dynamic Media chargées ne soient publiées sur le serveur de diffusion. Cette valeur est de 2 100 secondes (35 minutes), par défaut.
 
    Dans la plupart des cas d’utilisation, le paramètre de 2 100 est suffisant.
 

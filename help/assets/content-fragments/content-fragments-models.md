@@ -7,7 +7,7 @@ exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '2310'
-ht-degree: 70%
+ht-degree: 99%
 
 ---
 
@@ -15,28 +15,28 @@ ht-degree: 70%
 
 Les modèles de fragment de contenu d’AEM définissent la structure du contenu de vos [fragments de contenu](/help/assets/content-fragments/content-fragments.md) et servent de base à votre contenu découplé.
 
-Pour utiliser des modèles de fragment de contenu, vous pouvez :
+Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 
-1. [Activation de la fonctionnalité Modèle de fragment de contenu pour votre instance](/help/assets/content-fragments/content-fragments-configuration-browser.md).
-1. [Créer](#creating-a-content-fragment-model), et [configure](#defining-your-content-fragment-model), vos modèles de fragment de contenu.
-1. [Activation des modèles de fragment de contenu](#enabling-disabling-a-content-fragment-model) à utiliser lors de la création de fragments de contenu.
+1. [Activez la fonctionnalité Modèle de fragment de contenu pour votre instance](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+1. [Créez](#creating-a-content-fragment-model) et [configurez](#defining-your-content-fragment-model) vos modèles de fragments de contenu.
+1. [Activez vos modèles de fragment de contenu](#enabling-disabling-a-content-fragment-model) à utiliser lors de la création de fragments de contenu.
 1. [Autorisez vos modèles de fragments de contenu sur les dossiers de ressources requis](#allowing-content-fragment-models-assets-folder) en configurant des **politiques**.
 
 ## Création d’un modèle de fragment de contenu {#creating-a-content-fragment-model}
 
 1. Accédez à **Outils**, **Ressources**, puis ouvrez les **modèles de fragment de contenu**.
-1. Accédez au dossier approprié à votre [configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+1. Accédez au dossier adapté à votre [configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. Utilisez **Créer** pour ouvrir l’assistant.
 
    >[!CAUTION]
    >
-   >Si la variable [l’utilisation des modèles de fragment de contenu n’a pas été activée.](/help/assets/content-fragments/content-fragments-configuration-browser.md), la variable **Créer** n’est pas disponible.
+   >Si l’[utilisation des modèles de contenu du fragment n’a pas été activée](/help/assets/content-fragments/content-fragments-configuration-browser.md), l’option **Créer** n’est pas disponible.
 
-1. Spécifiez le **Titre du modèle**. Vous pouvez également ajouter **Balises**, un **Description**, puis sélectionnez **Activer le modèle** to [activer le modèle ;](#enabling-disabling-a-content-fragment-model) si nécessaire.
+1. Spécifiez le **Titre du modèle**. Vous pouvez également ajouter des **balises**, une **description** et sélectionner **Activer le modèle** pour [activer le modèle](#enabling-disabling-a-content-fragment-model), si nécessaire.
 
    ![titre et description](assets/cfm-models-02.png)
 
-1. Utilisez **Créer** pour enregistrer le modèle vide. Un message indique le succès de l’action. Vous pouvez sélectionner **Ouvrir** pour modifier immédiatement le modèle ; ou **Terminé** pour revenir à la console.
+1. Utilisez **Créer** pour enregistrer le modèle vide. Un message indique le succès de l’action. Vous pouvez sélectionner **Ouvrir** pour modifier immédiatement le modèle ou **Terminé** pour revenir à la console.
 
 ## Définition de votre modèle de fragment de contenu {#defining-your-content-fragment-model}
 
@@ -69,14 +69,14 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
 
      ![type de données dans le champ](assets/cfm-models-04.png)
 
-   * Une fois qu’un champ a été ajouté au modèle, le panneau de droite affiche la variable **Propriétés** qui peuvent être définis pour ce type de données spécifique. Vous pouvez définir ce qui est obligatoire pour ce champ.
+   * Une fois qu’un champ a été ajouté au modèle, le panneau de droite affiche les **propriétés** qui peuvent être définies pour ce type de données spécifique. Vous pouvez définir ce qui est obligatoire pour ce champ.
 
       * De nombreuses propriétés s’expliquent d’elles-mêmes. Pour plus d’informations, voir [Propriétés](#properties).
-      * Saisissez un **Libellé du champ** effectue automatiquement l’événement **Nom de la propriété**  - s’il est vide et qu’il peut être mis à jour manuellement par la suite.
+      * Si vous entrez un **libellé de champ**, le **nom de propriété** est automatiquement renseigné. S’il est vide, il peut être mis à jour manuellement par la suite.
 
         >[!CAUTION]
         >
-        >Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, les noms ne doivent contenir que les caractères A-Z, a-z, 0-9 et le trait de soulignement &quot;_&quot; comme caractère spécial.
+        >Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, les noms ne doivent contenir que des caractères A-Z, a-z, 0-9 et le trait de soulignement « _ » comme caractère spécial.
         >
         >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
@@ -90,7 +90,7 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
 
    ![supprimer](assets/cfm-models-06.png)
 
-1. Ajoutez tous les champs requis et définissez les propriétés associées, le cas échéant. Par exemple :
+1. Ajoutez tous les champs obligatoires et définissez les propriétés connexes, le cas échéant. Par exemple :
 
    ![save](assets/cfm-models-07.png)
 
@@ -103,7 +103,7 @@ Une sélection de types de données est disponible pour la définition de votre 
 * **Une seule ligne de texte**
    * Ajoutez un ou plusieurs champs d’une seule ligne de texte ; il est possible de définir la longueur maximale.
 * **Plusieurs lignes de texte**
-   * Zone de texte pouvant être de type texte enrichi, texte brut ou Markdown
+   * Zone de texte pouvant contenir du texte enrichi, du texte brut ou du texte Markdown.
 * **Nombre**
    * Ajoutez un ou plusieurs champs numériques
 * **Booléen**
@@ -124,9 +124,9 @@ Une sélection de types de données est disponible pour la définition de votre 
       * Créer un fragment de contenu, en fonction du modèle approprié
 * **Objet JSON**
    * Permet à l’auteur du fragment de contenu de saisir la syntaxe JSON dans les éléments correspondants d’un fragment.
-      * Pour permettre à AEM de stocker le fichier JSON direct copié et collé à partir d’un autre service.
+      * Permettre à AEM de stocker directement JSON que vous avez copié/collé à partir d’un autre service
       * Le fichier JSON est transmis et généré sous la forme JSON dans GraphQL.
-      * Inclut le surlignage de la syntaxe JSON, la saisie automatique et le surlignage des erreurs dans l’éditeur de fragment de contenu.
+      * Inclut la mise en surbrillance de la syntaxe JSON, la saisie semi-automatique et la mise en surbrillance des erreurs dans l’éditeur de fragments de contenu.
 * **Espace réservé pour tabulation**
    * Permet l’introduction d’onglets à utiliser lors de la modification du contenu du fragment de contenu.
 Il s’affiche sous forme de séparateur dans l’éditeur de modèles et permet de séparer les sections de la liste des types de données de contenu. Chaque instance représente le début d’un nouvel onglet.
@@ -143,7 +143,7 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
 
 * **Nom de la propriété**
 
-  Lors de la mise à jour manuelle de cette propriété pour un type de données, les noms **must** contain *only* A-Z, a-z, 0-9 et le trait de soulignement &quot;_&quot; comme caractère spécial.
+  Lors de la mise à jour manuelle de cette propriété pour un type de données, les noms **doivent** contenir *uniquement* les caractères A-Z, a-z, 0-9 et le trait de soulignement « _ » comme caractère spécial.
 
   >[!CAUTION]
   >
@@ -152,8 +152,8 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
 * **Rendu comme**
 Les différentes options permettant de réaliser/rendre le champ dans un fragment. Il est ainsi souvent possible de définir si la personne chargée de la création de contenu verra une seule instance du champ ou si elle sera autorisée à créer plusieurs instances.
 
-* **Libellé du champ**
-Saisie d’un **Libellé du champ** autogénère une **Nom de la propriété**, qui peut ensuite être mis à jour manuellement, si nécessaire.
+* **Libellé de champ** 
+La saisie d’un **libellé de champ** génère automatiquement un **nom de propriété**, qui peut ensuite être mis à jour manuellement si nécessaire.
 
 * **Validation**
 La validation de base est disponible par le biais de mécanismes tels que la propriété **Requis**. Certains types de données comportent des champs de validation supplémentaires. Voir [Validation](#validation) pour plus de détails.
@@ -166,7 +166,7 @@ La validation de base est disponible par le biais de mécanismes tels que la pro
 
   Si elle n’est pas spécifiée, la valeur par défaut **Texte enrichi** est utilisée pour ce champ.
 
-  Changement de la variable **Type par défaut** dans un modèle de fragment de contenu ne prend effet que sur un fragment de contenu existant associé une fois ce fragment ouvert dans l’éditeur et enregistré.
+  La modification du **type par défaut** dans un modèle de fragment de contenu prend effet uniquement sur un fragment de contenu existant et lié après l’ouverture et l’enregistrement du fragment dans l’éditeur.
 
 * **Unique**
 Le contenu (du champ spécifique) doit être unique dans tous les fragments de contenu créés à l’aide du modèle actuel.
@@ -216,16 +216,16 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 
 * **[Référence de contenu](#content-reference)**
    * Fournit une référence simple à un autre contenu, quel que soit son type.
-   * Il peut être configuré pour une ou plusieurs références (dans le fragment résultant).
+   * Peut être configurée pour une ou plusieurs références (dans le fragment résultant).
 
 * **[Référence du fragment](#fragment-reference-nested-fragments)** (fragments imbriqués)
    * Fait référence à d’autres fragments, en fonction des modèles spécifiques spécifiés.
-   * Vous permet d’inclure/de récupérer des données structurées.
+   * Permet d’intégrer ou de récupérer des données structurées.
 
      >[!NOTE]
      >
-     >Cette méthode présente un intérêt particulier pour la méthode [Diffusion de contenu sans affichage à l’aide de fragments de contenu avec GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
-   * Il peut être configuré pour une ou plusieurs références (dans le fragment résultant).
+     >Cette méthode présente un intérêt particulier avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+   * Peut être configurée pour une ou plusieurs références (dans le fragment résultant).
 
 >[!NOTE]
 >
@@ -235,11 +235,11 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 >  Cela empêche l’utilisateur d’ajouter une référence au fragment actif. Cette approche peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
 >
 >* Références de fragment dans GraphQL
->  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie null à la première occurrence.
+>  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
 
 ### Référence de contenu {#content-reference}
 
-La référence de contenu vous permet d’effectuer le rendu du contenu à partir d’une autre source, par exemple une image ou un fragment de contenu.
+La référence de contenu permet de générer du contenu à partir d’une autre source, par exemple, une image ou un fragment de contenu.
 
 Outre les propriétés standard, vous pouvez spécifier les éléments suivants :
 
@@ -254,7 +254,7 @@ Outre les propriétés standard, vous pouvez spécifier les éléments suivants�
 
 ### Référence du fragment (fragments imbriqués) {#fragment-reference-nested-fragments}
 
-La référence du fragment fait référence à un ou plusieurs fragments de contenu. Cette fonctionnalité est particulièrement intéressante lors de la récupération de contenu à utiliser dans votre application, car elle vous permet de récupérer des données structurées avec plusieurs calques.
+La référence du fragment fait référence à un ou plusieurs fragments de contenu. Cette fonctionnalité présente un intérêt particulier lors de la récupération de contenu pour une utilisation dans votre application, car elle permet de récupérer des données structurées comportant plusieurs couches.
 
 Par exemple :
 
@@ -277,7 +277,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->Cela présente un intérêt particulier pour les [Diffusion de contenu sans affichage à l’aide de fragments de contenu avec GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+>Cette méthode présente un intérêt particulier avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 Outre les propriétés standard, vous pouvez définir les éléments suivants :
 
@@ -288,14 +288,14 @@ Outre les propriétés standard, vous pouvez définir les éléments suivants :
    * **fragmentreference** : permet à l’auteur du fragment de sélectionner une référence unique à un fragment.
 
 * **Type de modèle**
-Il est possible de sélectionner plusieurs modèles. Lors de la création du fragment de contenu, tout fragment référencé doit avoir été créé à l’aide de ces modèles.
+Il est possible de sélectionner plusieurs modèles. Lors de la création du fragment de contenu, tous les fragments référencés doivent avoir été créés à l’aide de ces modèles.
 
 * **Chemin racine**
 Indique un chemin racine pour tout fragment référencé.
 
 * **Autoriser la création de fragments**
 
-  Cela permet à l’auteur du fragment de créer un fragment en fonction du modèle approprié.
+  Cette propriété permet à la personne chargée de la création du fragment de créer un fragment en fonction du modèle approprié.
 
    * **fragmentreferencecomposite** : permet à l’auteur du fragment de créer un composite en sélectionnant plusieurs fragments.
 
@@ -305,26 +305,26 @@ Indique un chemin racine pour tout fragment référencé.
 >
 >Un mécanisme de protection contre les répétitions est en place. Il interdit à l’utilisateur de sélectionner le fragment de contenu actif dans la référence au fragment. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
 >
->Il existe également une protection contre les répétitions pour les références de fragments dans GraphQL. Si vous créez une requête profonde sur deux fragments de contenu qui se font référence, elle renvoie null.
+>Il existe également une protection contre les répétitions pour les références de fragments dans GraphQL. Si vous créez une requête profonde entre deux fragments de contenu qui se référencent mutuellement, elle renvoie la valeur « null ».
 
 ## Activation ou désactivation d’un modèle de fragment de contenu {#enabling-disabling-a-content-fragment-model}
 
-Pour un contrôle total sur l’utilisation de vos modèles de fragment de contenu, ils ont un état que vous pouvez définir.
+Pour un contrôle total de l’utilisation de vos modèles de fragments de contenu, ils contiennent un statut que vous pouvez définir.
 
 ### Activation d’un modèle de fragment de contenu {#enabling-a-content-fragment-model}
 
-Une fois un modèle créé, il doit être activé afin que :
+Une fois un modèle créé, il doit être activé pour :
 
-* Il peut être sélectionné lors de la création d’un fragment de contenu.
-* Il peut être référencé dans un modèle de fragment de contenu.
-* Il est disponible pour GraphQL ; le schéma est donc généré.
+* Être disponible afin d’être sélectionné lors de la création d’un fragment de contenu
+* Pouvoir être référencé à partir d’un modèle de fragment de contenu
+* Être disponible pour GraphQL ; le schéma est ensuite généré.
 
 Pour activer un modèle marqué comme :
 
 * **Brouillon** : nouveau (jamais activé).
-* **Désactivé** : a été désactivé.
+* **Désactivé** : a été désactivé.
 
-Vous pouvez utiliser la variable **Activer** à partir de l’une des options suivantes :
+Vous utilisez l’option **Activer** de l’une des manières suivantes :
 
 * La barre d’outils supérieure, lorsque le modèle concerné est sélectionné.
 * L’action rapide correspondante (placez le pointeur de la souris sur le modèle concerné).
@@ -337,11 +337,11 @@ Un modèle peut également être désactivé afin que :
 
 * Le modèle ne soit plus disponible comme base pour la création de *nouveaux* fragments de contenu.
 * Toutefois :
-   * Le schéma GraphQL continue à être généré et peut toujours faire l’objet d’une requête (afin d’éviter d’affecter l’API JSON).
+   * Le schéma GraphQL continue à être généré et peut toujours être interrogé (pour éviter tout impact sur l’API JSON).
    * Tout fragment de contenu basé sur le modèle peut toujours être interrogé et renvoyé à partir du point d’entrée GraphQL.
 * Le modèle ne peut plus être référencé, mais les références existantes sont conservées intactes et peuvent toujours être interrogées et renvoyées à partir du point d’entrée GraphQL.
 
-Pour désactiver un modèle marqué comme **Activé**, vous utilisez le **Désactiver** à partir de l’une des options suivantes :
+Pour désactiver un modèle marqué comme **Activé**, utilisez l’option **Désactiver** de l’une des deux manières suivantes :
 
 * La barre d’outils supérieure, lorsque le modèle concerné est sélectionné.
 * L’action rapide correspondante (placez le pointeur de la souris sur le modèle concerné).
@@ -350,7 +350,7 @@ Pour désactiver un modèle marqué comme **Activé**, vous utilisez le **Désac
 
 ## Autorisation de modèles de fragments de contenu dans votre dossier de ressources {#allowing-content-fragment-models-assets-folder}
 
-Pour mettre en oeuvre la gouvernance du contenu, vous pouvez configurer les **Stratégies** sur un dossier de ressources afin de contrôler quels modèles de fragment de contenu sont autorisés pour la création de fragments dans ce dossier.
+Pour mettre en œuvre une gouvernance du contenu, vous pouvez configurer des **Politiques** sur le dossier de ressources pour contrôler les modèles de fragment de contenu autorisés pour la création de fragments dans ce dossier.
 
 >[!NOTE]
 >
@@ -364,7 +364,7 @@ Pour configurer les **politiques** des **modèles de fragments de contenu autori
 
    * **Hérité de`<folder>`**
 
-     Les stratégies sont automatiquement héritées lors de la création de dossiers enfants ; la stratégie peut être reconfigurée (et l’héritage rompu) si les sous-dossiers doivent autoriser des modèles différents du dossier parent.
+     Les politiques sont automatiquement héritées lors de la création de dossiers enfants ; il peut se produire une reconfiguration de la politique (et une rupture de l’héritage) si des sous-dossiers doivent autoriser des modèles différents du dossier parent.
 
    * **Modèles de fragments de contenu autorisés par chemin**
 
@@ -404,7 +404,7 @@ Pour supprimer un modèle de fragment de contenu :
 
 ## Publication d’un modèle de fragment de contenu {#publishing-a-content-fragment-model}
 
-Les modèles de fragment de contenu doivent être publiés lorsque/avant tout fragment de contenu dépendant est publié.
+Les modèles de fragment de contenu doivent être publiés avant ou pendant la publication des fragments de contenu dépendants.
 
 Pour publier un modèle de fragment de contenu :
 
@@ -412,7 +412,7 @@ Pour publier un modèle de fragment de contenu :
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
 1. Sélectionnez votre modèle, puis l’option de **publication** dans la barre d’outils.
-L’état publié est indiqué dans la console.
+Le statut publié est indiqué dans la console.
 
    >[!NOTE]
    >
@@ -428,7 +428,7 @@ Pour dépublier un modèle de fragment de contenu :
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
 1. Sélectionnez votre modèle, puis l’option **Dépublier** dans la barre d’outils.
-L’état publié est indiqué dans la console.
+Le statut publié est indiqué dans la console.
 
 ## Modèle de fragment de contenu – Propriétés {#content-fragment-model-properties}
 

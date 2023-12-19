@@ -1,6 +1,6 @@
 ---
 title: Prise en main des SPA dans AEM avec Angular
-description: Cet article présente un exemple d’application SPA, explique comment elle est structurée et vous permet de prendre en main votre propre SPA rapidement à l’aide de la structure d’Angular.
+description: Cet article présente un exemple de SPA, explique comment cette application est structurée et vous permet de prendre rapidement en main votre propre SPA à l’aide du framework Angular.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
@@ -9,7 +9,7 @@ exl-id: 9528d92b-0989-4e2d-83be-ba6c07c845e2
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '999'
-ht-degree: 84%
+ht-degree: 89%
 
 ---
 
@@ -251,7 +251,7 @@ export class ImageComponent {
 MapTo('my-angular-app/components/image')(ImageComponent, ImageEditConfig);
 ```
 
-L’idée centrale de SPA dans AEM est de mapper les composants de la version de la version de la version de la version de la version de la version de la version de la version de la version de la version de la version d’SPA aux composants de la version d’ et de mettre à jour le composant lorsque le contenu est modifié (et inversement). Consultez le document [Aperçu de l’éditeur de SPA](/help/sites-developing/spa-overview.md), qui résume ce modèle de communication.
+Les SPA dans AEM ont comme principale finalité de mapper les composants SPA aux composants AEM et de mettre à jour le composant lorsque le contenu est modifié (et inversement). Consultez le document [Aperçu de l’éditeur de SPA](/help/sites-developing/spa-overview.md), qui résume ce modèle de communication.
 
 `MapTo('my-angular-app/components/image')(Image, ImageEditConfig);`
 

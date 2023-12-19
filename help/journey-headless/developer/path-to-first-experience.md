@@ -4,7 +4,7 @@ description: Dans cette partie du parcours de développement découplé AEM, vou
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
 source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1990'
+source-wordcount: '1950'
 ht-degree: 93%
 
 ---
@@ -151,4 +151,4 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de dé
 * [Créer des modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) : documentation technique sur les modèles de fragment de contenu.
 * [Créer des fragments de contenu](/help/assets/content-fragments/content-fragments.md) : documentation technique sur les fragments de contenu.
 * [Demander du contenu avec GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) : documentation technique sur l’API GraphQL.
-* La variable [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* Le [Portail de développement AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)

@@ -10,7 +10,7 @@ exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 88%
+ht-degree: 95%
 
 ---
 
@@ -57,7 +57,7 @@ Exécutez la recherche en cliquant sur **Rechercher** au bas du volet. Cliquez s
 
 ## Rechercher et remplacer {#find-and-replace}
 
-Dans le **Sites web** console **Rechercher et remplacer** l’option de menu vous permet de rechercher et de remplacer plusieurs instances d’une chaîne dans une section du site web.
+Dans la console **Sites web**, l’option de menu **Rechercher et remplacer** vous permet de rechercher et de remplacer plusieurs instances d’une chaîne dans une section du site web.
 
 1. Sélectionnez la page racine, ou le dossier, dans laquelle ou lequel vous souhaitez que l’action de recherche et de remplacement soit effectuée.
 1. Sélectionnez **Outils**, puis **Rechercher et remplacer** :

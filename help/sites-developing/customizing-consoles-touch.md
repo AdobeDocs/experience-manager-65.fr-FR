@@ -1,6 +1,6 @@
 ---
 title: Personnaliser les consoles
-description: AEM fournit divers mécanismes pour vous permettre de personnaliser les consoles de votre instance de création
+description: AEM fournit divers mécanismes pour vous permettre de personnaliser les consoles de votre instance de création.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -10,7 +10,7 @@ exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '646'
-ht-degree: 40%
+ht-degree: 90%
 
 ---
 
@@ -18,22 +18,24 @@ ht-degree: 40%
 
 >[!CAUTION]
 >
->Ce document décrit comment personnaliser des consoles dans l’IU tactile moderne et ne s’applique pas à l’IU classique.
+>Ce document explique comment personnaliser la création de pages dans l’IU tactile moderne et ne s’applique pas à l’IU classique.
 
-AEM fournit divers mécanismes pour vous permettre de personnaliser les consoles (et les [fonctionnalité de création de pages](/help/sites-developing/customizing-page-authoring-touch.md)) de votre instance de création.
+AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les consoles et la [fonctionnalité de création de pages](/help/sites-developing/customizing-page-authoring-touch.md) de votre instance de création.
 
-* Clientlibs Clientlibs vous permet d’étendre l’implémentation par défaut pour créer de nouvelles fonctionnalités, tout en réutilisant les fonctions, objets et méthodes standard. Lors de la personnalisation, vous pouvez créer votre propre bibliothèque cliente sous `/apps.` Par exemple, il peut contenir le code requis pour votre composant personnalisé.
+* Clientlibs
+Les bibliothèques clientes (clientlibs) vous permettent d’étendre l’implémentation par défaut afin d’obtenir la nouvelle fonctionnalité, tout en réutilisant les fonctions, objets et méthodes standard. Lors de la personnalisation, vous pouvez créer votre propre bibliothèque cliente sous `/apps.` Par exemple, il peut contenir le code requis pour votre composant personnalisé.
 
-* Recouvrements Les superpositions reposent sur des définitions de noeud et vous permettent de superposer la fonctionnalité standard (dans `/libs`) avec vos propres fonctionnalités personnalisées (dans `/apps`). Lors de la création d’une incrustation, une copie 1:1 de l’original n’est pas nécessaire, car Sling Resource Merger permet l’héritage.
+* Recouvrements
+Les recouvrements sont basés sur les définitions de nœuds et vous permettent de recouvrir les fonctionnalités standard (dans `/libs` ) avec vos propres fonctionnalités personnalisées (dans `/apps`). Lors de la création d’un recouvrement, il n’est pas nécessaire de disposer d’une copie 1:1 de l’original, car Sling Resource Merger autorise l’héritage.
 
-Elles peuvent être utilisées de différentes manières pour étendre vos consoles AEM. Une petite sélection est abordée ci-dessous (à un niveau élevé).
+Ils peuvent être utilisés de différentes manières pour étendre vos consoles AEM. Une petite sélection est abordée ci-dessous (à un niveau élevé).
 
 >[!NOTE]
 >
 >Pour plus d’informations, voir :
 >
->* Utilisation et création [clientlibs](/help/sites-developing/clientlibs.md).
->* Utilisation et création [superpositions](/help/sites-developing/overlays.md).
+>* Utiliser et créer des [clientlibs](/help/sites-developing/clientlibs.md).
+>* Utiliser et créer des [recouvrements](/help/sites-developing/overlays.md).
 >* [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 >
 
@@ -46,7 +48,7 @@ Elles peuvent être utilisées de différentes manières pour étendre vos conso
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recréez l’élément requis (c’est-à-dire, tel qu’il existe dans `/libs`) sous `/apps`
+>1. Recréez l’élément requis (tel qu’il existe dans `/libs`) sous `/apps`.
 >
 >1. Apportez les modifications désirées dans `/apps`.
 >
@@ -61,11 +63,11 @@ Par exemple, les emplacements suivants dans la structure `/libs` risquent d’ê
 >
 >Consultez l’article de la base de connaissances [Résolution des problèmes liés à l’IU tactile d’AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html) pour découvrir d’autres conseils et outils.
 
-## Personnalisation de l’affichage par défaut d’une console {#customizing-the-default-view-for-a-console}
+## Personnaliser l’affichage par défaut d’une console {#customizing-the-default-view-for-a-console}
 
-Vous pouvez personnaliser la vue par défaut (colonne, carte, liste) d’une console :
+Vous pouvez personnaliser l’affichage par défaut (colonne, carte, liste) d’une console :
 
-1. Vous pouvez réorganiser les vues en recouvrant l’entrée requise depuis l’emplacement suivant :
+1. Vous pouvez réorganiser les vues en recouvrant l’entrée requise depuis l’emplacement suivant :
 
    `/libs/wcm/core/content/sites/jcr:content/views`
 
@@ -89,7 +91,7 @@ Vous pouvez personnaliser la vue par défaut (colonne, carte, liste) d’une con
 
 ### Ajouter une nouvelle action à la barre d’outils {#add-new-action-to-the-toolbar}
 
-1. Vous pouvez créer vos propres composants et inclure les bibliothèques clientes correspondantes pour les actions personnalisées. Par exemple, un **Promouvoir le Twitter** Action à l’adresse :
+1. Vous pouvez créer vos propres composants et inclure les bibliothèques clientes correspondantes pour les actions personnalisées. Par exemple, une action **Promouvoir sur Twitter** à :
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -101,11 +103,11 @@ Vous pouvez personnaliser la vue par défaut (colonne, carte, liste) d’une con
 
    `content/jcr:content/body/content/header/items/selection/items/twitter`
 
-### Limitation d’une action de barre d’outils à un groupe spécifique {#restrict-a-toolbar-action-to-a-specific-group}
+### Limiter une action de la barre d’outils à un groupe spécifique {#restrict-a-toolbar-action-to-a-specific-group}
 
 1. Vous pouvez utiliser une condition de rendu personnalisée pour superposer l’action standard et imposer des conditions spécifiques qui doivent être remplies avant son rendu.
 
-   Par exemple, créez un composant pour contrôler les conditions de rendu en fonction du groupe :
+   Par exemple, créez un composant pour contrôler les conditions de rendu en fonction du groupe :
 
    `/apps/myapp/components/renderconditions/group`
 
@@ -129,7 +131,7 @@ Vous pouvez personnaliser la vue par défaut (colonne, carte, liste) d’une con
 >
 >Cette fonction est optimisée pour les champs de colonnes de texte ; pour les autres types de données, il est possible de remplacer `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` dans `/apps`.
 
-Pour personnaliser les colonnes en mode Liste :
+Pour personnaliser les colonnes dans la vue Liste :
 
 1. Recouvrez la liste des colonnes disponibles.
 
@@ -150,10 +152,10 @@ Pour personnaliser les colonnes en mode Liste :
 
    Par exemple, consultez la classe/le lot joint (à partir de GitHub) ci-dessous.
 
-1. Vous pouvez désormais sélectionner la colonne dans le paramétrateur de colonnes du mode Liste.
+1. Vous pouvez maintenant sélectionner la colonne dans le configurateur de colonnes de la vue Liste.
 
-### Filtrage des ressources {#filtering-resources}
+### Filtrer les ressources {#filtering-resources}
 
 Lors de l’utilisation d’une console, un cas d’utilisation courant se présente lorsque l’utilisateur doit effectuer une sélection dans des ressources (par exemple, pages, composants, ressources, etc.). Cela peut prendre la forme d’une liste, par exemple, à partir de laquelle l’auteur doit choisir un élément.
 
-Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en oeuvre sous la forme d’un prédicat personnalisé. Voir [cet article](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) pour plus d’informations.
+Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en œuvre sous la forme d’un prédicat personnalisé. Voir [cet article](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) pour plus d’informations.

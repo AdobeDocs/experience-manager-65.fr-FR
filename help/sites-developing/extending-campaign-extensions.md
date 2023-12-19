@@ -9,7 +9,7 @@ exl-id: 0702858e-5e46-451f-9ac3-40a4fec68ca0
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '499'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Dans cet exemple, nous créons un fichier JSSP personnalisé et l’appelons du 
    * La connexion entre AEM et Campaign fonctionne.
    * Le service cloud de Campaign est configuré sur **/content/geometrixx-outdoors**.
 
-   L’objet le plus important de cet exemple est le **GenericCampaignConnector**, qui vous permet d’appeler (get et post) des fichiers jssp du côté Adobe Campaign.
+   L’objet le plus important de cet exemple est **GenericCampaignConnector**. Il permet d’appeler des fichiers jssp (get et post) du côté Adobe Campaign.
 
    Voici un petit extrait de code :
 

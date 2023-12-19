@@ -10,7 +10,7 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '2963'
-ht-degree: 57%
+ht-degree: 60%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 57%
 >
 >* Cette page est conçue pour donner un aperçu des opérations de gestion de base lors de l’utilisation de l’environnement de création Adobe Experience Manager (AEM). Il utilise la console **Sites** comme base.
 >
->* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles et d’autres peuvent être disponibles dans certaines consoles uniquement. Des informations spécifiques sur les consoles individuelles et leurs fonctionnalités associées sont traitées plus en détail sur d’autres pages.
+>* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles et d’autres peuvent être disponibles dans certaines consoles uniquement. Vous trouverez des informations spécifiques et plus détaillées sur les consoles individuelles et leurs fonctionnalités associées sur d’autres pages.
 >* Des raccourcis clavier sont disponibles dans toute AEM. En particulier lorsque [utilisation des consoles](/help/sites-authoring/keyboard-shortcuts.md) et [modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
@@ -91,11 +91,11 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
   </tr>
   <tr>
    <td>Ressources<br /> </td>
-   <td>Ces consoles vous permettent d’importer et de <a href="/help/assets/home.md">gestion des ressources numériques</a> tels que des images, des vidéos, des documents et des fichiers audio. Ces ressources peuvent ensuite être utilisées par n’importe quel site web s’exécutant sur la même instance AEM. </td>
+   <td>Ces consoles permettent d’importer et de <a href="/help/assets/home.md">gérer des ressources numériques</a>, telles que des images, des vidéos, des documents et des fichiers audio. Utilisez ces ressources dans n’importe quel site web exécuté sur la même instance d’AEM. </td>
   </tr>
   <tr>
    <td>Communities</td>
-   <td>Cette console vous permet de créer et de gérer des <a href="/help/communities/sites-console.md">sites communautaires</a> pour <a href="/help/communities/overview.md#engagement-community">engagement</a> et <a href="/help/communities/overview.md#enablement-community">activation</a>.</td>
+   <td>Cette console vous permet de créer et de gérer des <a href="/help/communities/sites-console.md">sites de la communauté</a>, à des fins d’<a href="/help/communities/overview.md#engagement-community">engagement</a> et d’<a href="/help/communities/overview.md#enablement-community">activation</a>.</td>
   </tr>
   <tr>
    <td>Commerce</td>
@@ -107,7 +107,7 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
   </tr>
   <tr>
    <td>Forms</td>
-   <td>Cette console vous permet de créer, gérer et traiter vos <a href="/help/forms/home.md">formulaires et documents</a>.</td>
+   <td>Cette console vous permet de créer, de gérer et de traiter vos <a href="/help/forms/home.md">formulaires et documents</a>.</td>
   </tr>
   <tr>
    <td>Personnalisation</td>
@@ -176,7 +176,7 @@ L’en-tête est toujours présent en haut de l’écran. Bien que la plupart de
 
 * [Sélecteur de rail](/help/sites-authoring/basic-handling.md#rail-selector)
 
-  ![Liste du sélecteur de rail affichée sur le côté gauche de l’écran Adobe Experience Manager.](do-not-localize/screen_shot_2018-03-23at103943.png)
+  ![Liste du sélecteur de rail affichée sur le côté gauche de l’écran Adobe Experience Manager.](do-not-localize/screen_shot_2018-03-23at103943.png)
 
   Les options présentées dépendent de la console active. Par exemple, dans la console **Sites**, vous ne pouvez sélectionner que le contenu (valeur par défaut), la chronologie, les références ou le panneau latéral de filtrage.
 
@@ -399,7 +399,7 @@ Quel que soit le mode, vous pouvez désélectionner tous les éléments en appuy
 
 ![Vue Colonnes](assets/bh-16.png)
 
-Le mode Colonnes permet de naviguer visuellement dans une arborescence de contenu à travers une série de colonnes en cascade. Ce mode vous permet de visualiser et de parcourir l’arborescence de votre site web.
+Le mode Colonnes permet de naviguer visuellement dans une arborescence de contenu à travers une série de colonnes en cascade. Cette vue vous permet de visualiser et de parcourir l’arborescence de votre site web.
 
 La sélection d’une ressource dans la colonne la plus à gauche affiche les ressources enfants dans une colonne située à droite. La sélection d’une ressource dans la colonne de droite affiche les ressources enfants dans une autre colonne à droite, etc.
 
@@ -535,7 +535,7 @@ L’arborescence de contenu peut être utilisée pour parcourir rapidement la hi
 
 La chronologie peut être utilisée pour afficher et/ou lancer des événements qui se sont produits sur la ressource sélectionnée. Pour ouvrir la colonne Chronologie, utilisez le sélecteur de rail :
 
-La colonne Chronologie permet d’effectuer les opérations suivantes :
+La colonne Chronologie permet d’effectuer les opérations suivantes :
 
 * [Afficher divers événements liés à un élément sélectionné.](#timelineviewevents)
 

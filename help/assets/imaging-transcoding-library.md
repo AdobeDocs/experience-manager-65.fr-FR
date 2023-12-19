@@ -1,20 +1,20 @@
 ---
 title: Bibliothèque de transcodage d’imagerie
-description: Découvrez comment configurer et utiliser la bibliothèque ITL (Imaging Transcoding Library) d’Adobe, une solution de traitement des images qui peut exécuter des fonctions essentielles de gestion des images, notamment le codage, le transcodage, le rééchantillonnage d’images et le redimensionnement d’images.
+description: Découvrez comment configurer et utiliser la Bibliothèque de transcodage d’imagerie d’Adobe, une solution de traitement des images qui peut exécuter des fonctions essentielles de gestion des images, notamment le codage, le transcodage, le rééchantillonnage et le redimensionnement d’images.
 contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 75%
+source-wordcount: '975'
+ht-degree: 98%
 
 ---
 
 # Bibliothèque de transcodage d’imagerie {#imaging-transcoding-library}
 
-La bibliothèque de transcodage d’imagerie d’Adobe est une solution de traitement d’images propriétaire qui peut exécuter des fonctions de gestion des images essentielles, notamment :
+La Bibliothèque de transcodage d’imagerie d’Adobe est une solution de traitement d’images propriétaire qui peut exécuter des fonctions essentielles de gestion des images, notamment :
 
 * Codage
 * Transcodage (conversion des formats pris en charge)
@@ -27,8 +27,8 @@ La bibliothèque de transcodage d’imagerie (ITL) fournit une prise en charge d
 
 En plus de prendre en charge un large éventail de formats de fichiers et de profils, la bibliothèque ITL présente des avantages significatifs par rapport à d’autres solutions tierces en termes de performances, d’évolutivité et de qualité. Voici certains des principaux bénéfices de l’utilisation de la bibliothèque de transcodage d’imagerie (ITL) :
 
-* **Mise à l’échelle avec augmentation de la taille ou de la résolution du fichier**: l’évolutivité est principalement réalisée grâce à la capacité brevetée de la bibliothèque de transcodage d’imagerie à redimensionner les fichiers lors du décodage. Cette fonctionnalité garantit que l’utilisation de la mémoire d’exécution est toujours optimale et n’est pas une fonction quadratique d’augmentation de la taille des fichiers ou des mégapixels de résolution. La bibliothèque ITL peut traiter des fichiers plus volumineux et haute résolution (contenant des mégapixels supérieurs). Les outils tiers, tels qu’ImageMagick, ne peuvent pas gérer les fichiers volumineux et les blocages lors du traitement de ces fichiers.
-* **Algorithmes de compression et de redimensionnement de la qualité Photoshop**: cohérence avec les normes du secteur en termes de qualité du sous-échantillonnage (lisse, net et automatique bicubique) et de qualité de compression. En outre, la bibliothèque de transcodage d’imagerie évalue le facteur de qualité de l’image d’entrée et utilise intelligemment les tables optimales et les paramètres de qualité pour l’image de sortie. Cela permet de produire des fichiers de taille optimale sans compromettre la qualité visuelle.
+* **Mise à l’échelle avec augmentation de la taille ou de la résolution du fichier** : la mise à l’échelle est principalement due à la capacité brevetée de la Bibliothèque de transcodage d’imagerie à redimensionner les fichiers lors du décodage. Cette fonctionnalité garantit que l’utilisation de la mémoire d’exécution est toujours optimale et n’est pas une fonction quadratique d’augmentation de la taille des fichiers ou des mégapixels de résolution. La Bibliothèque de transcodage d’imagerie peut traiter des fichiers plus volumineux et haute résolution (contenant des mégapixels supérieurs). Les outils tiers, tels qu’ImageMagick, ne peuvent pas gérer les fichiers volumineux et les blocages lors du traitement de ces fichiers.
+* **Algorithmes de compression et de redimensionnement de la qualité Photoshop** : cohérence avec les normes du secteur en termes de qualité du sous-échantillonnage (lisse, net et automatique bicubique) et de qualité de compression. En outre, la bibliothèque de transcodage d’imagerie évalue le facteur de qualité de l’image d’entrée et utilise intelligemment les tables optimales et les paramètres de qualité pour l’image de sortie. Cela permet de produire des fichiers de taille optimale sans compromettre la qualité visuelle.
 * **Débit élevé :** le délai de réponse est inférieur et le débit est systématiquement supérieur à celui d’ImageMagick. Par conséquent, la bibliothèque de transcodage d’imagerie est supposé réduire le temps d’attente des utilisateurs et le coût d’hébergement.
 * **Amélioration de la mise à l’échelle en cas de chargements simultanés :** la bibliothèque de transcodage d’imagerie fonctionne de manière optimale dans des conditions de chargements simultanés. La bibliothèque offre un débit élevé avec une performance du processeur et une utilisation de la mémoire optimaux, et un temps de réponse faible, ce qui permet de réduire le coût de l’hébergement.
 
@@ -38,11 +38,11 @@ La bibliothèque de transcodage d’imagerie est disponible uniquement pour les 
 
 >[!NOTE]
 >
->Mac OS et les autres distributions *nix (par exemple, Debian et Ubuntu) ne sont pas prises en charge.
+>Mac OS et les autres distributions *nix (par exemple, Debian et Ubuntu) ne sont pas pris en charge.
 
 ## Utilisation {#usage}
 
-Les arguments de ligne de commande de la bibliothèque ITL peuvent inclure les éléments suivants :
+Les arguments de la ligne de commande pour la Bibliothèque de transcodage d’imagerie peuvent être les suivants :
 
 ```shell
  -destMime PNG/JPEG: Mime type of output rendition
@@ -138,7 +138,7 @@ Par exemple, si vous souhaitez créer des miniatures pour une image TIFF à l’
 
 1. Synchronisez le modèle de workflow [!UICONTROL Ressource de mise à jour de gestion des ressources numériques]. Enregistrez le workflow.
 
-Pour vérifier la configuration, téléchargez une image de TIFF et surveillez le fichier error.log. Vous remarquerez des messages `INFO` qui mentionnent `SwitchEngineHandlingProcess execute: executing command line`. Les journaux mentionnent les rendus générés. Une fois le workflow terminé, vous pouvez afficher les nouveaux rendus dans [!DNL Experience Manager].
+Pour vérifier la configuration, chargez une image TIFF et surveillez le fichier error.log. Vous remarquerez des messages `INFO` qui mentionnent `SwitchEngineHandlingProcess execute: executing command line`. Les journaux mentionnent les rendus générés. Une fois le workflow terminé, vous pouvez afficher les nouveaux rendus dans [!DNL Experience Manager].
 
 >[!MORELIKETHIS]
 >

@@ -1,10 +1,10 @@
 ---
 title: Fragments d’expérience
-description: Fragments d’expérience  dans la création Adobe Experience Manager Sites.
+description: Fragments d’expérience dans la création Adobe Experience Manager Sites.
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1440'
+source-wordcount: '1441'
 ht-degree: 95%
 
 ---
@@ -69,7 +69,7 @@ Nous vous encourageons à :
 
 * [configurer les modèles autorisés sur ces dossiers](#configure-allowed-templates-folder).
 
-La création de dossiers permet :
+La création de dossiers permet :
 
 * Créer une structure significative pour vos fragments d’expérience ; en fonction de la classification, par exemple
 
@@ -219,7 +219,7 @@ Vous pouvez créer des variantes de votre fragment d’expérience en fonction d
 
    ![xf-authoring-06](assets/xf-authoring-06.png)
 
-1. **Créer** permet de créer :
+1. **Créer** permet de créer :
 
    * **Variation**
    * **Variation en tant que [Live Copy](/help/sites-administering/msm.md#live-copies)**.
@@ -348,7 +348,7 @@ Les détails de votre fragment sont visibles :
 
    * **État des réseaux sociaux**
 
-      * Détails des variations des réseaux sociaux.
+      * Détails des variations des médias sociaux.
 
 ## Rendu HTML brut {#the-plain-html-rendition}
 

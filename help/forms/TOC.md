@@ -12,7 +12,7 @@ feature: Forms Service
 source-git-commit: 287717e39ff58396de6d63a89e2b3d8fef4e6888
 workflow-type: tm+mt
 source-wordcount: '3774'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -132,11 +132,11 @@ ht-degree: 97%
    + [Création d’un modèle de données de formulaire](using/create-form-data-models.md)
    + [Utilisation d’un modèle de données de formulaire](using/work-with-form-data-model.md)
    + [Utilisation d’un modèle de données de formulaire](using/using-form-data-model.md)
-+ Forms adaptatif - Composants principaux {#adaptive-forms-core-components}
++ Formulaires adaptatifs : composants principaux {#adaptive-forms-core-components}
    + [Activation des composants principaux pour votre environnement](/help/forms/using/enable-adaptive-forms-core-components.md)
    + [Création d’un formulaire adaptatif basé sur des composants principaux](/help/forms/using/create-an-adaptive-form-core-components.md)
-   + [Création de thèmes pour le Forms adaptatif basé sur les composants principaux](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
-   + [Création et utilisation d’un gestionnaire d’erreurs personnalisé pour le Forms adaptatif basé sur les composants principaux](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
+   + [Création de thèmes pour formulaires adaptatifs basés sur les composants principaux](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
+   + [Création et utilisation d’un gestionnaire d’erreurs personnalisé pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
 + Formulaires adaptatifs - Création de base {#adaptive-forms-basic-authoring}
    + [Meilleures pratiques pour travailler avec les formulaires adaptatifs](using/adaptive-forms-best-practices.md)
    + [Création d’un formulaire adaptatif](using/creating-adaptive-form.md)
@@ -164,7 +164,7 @@ ht-degree: 97%
    + [Association de réviseurs d’envoi à un formulaire](using/adding-reviewers-form.md)
    + [Création d’une aide contextuelle pour les champs de formulaire](using/authoring-in-field-help.md)
    + [Utilisation du mode Mise en page pour redimensionner les composants](/help/forms/using/resize-using-layout-mode.md)
-   + [Connexion et envoi de données de formulaire adaptatif à Microsoft](/help/forms/using/forms-microsoft-power-automate-integration.md)
+   + [Connexion et envoi des données de formulaire adaptatif à Microsoft](/help/forms/using/forms-microsoft-power-automate-integration.md)
 + Formulaires adaptatifs - Création avancée {#adaptive-forms-advanced-authoring}
    + [Création de formulaires adaptatifs à l’aide d’un schéma JSON](using/adaptive-form-json-schema-form-model.md)
    + [Création de formulaires adaptatifs à l’aide d’un schéma XML](using/adaptive-form-xml-schema-form-model.md)
@@ -189,7 +189,7 @@ ht-degree: 97%
    + [Incorporation d’Adobe Sign à AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
    + [Création et gestion de révisions des actifs d’un formulaire](using/create-reviews-forms.md)
    + [Incorporer un formulaire adaptatif ou une communication interactive dans une application dʼune seule page AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
-   + [Créer et utiliser un gestionnaire d’erreurs personnalisé pour Adaptive Forms](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
+   + [Création et utilisation d’un gestionnaire d’erreurs personnalisé pour les formulaires adaptatifs](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
 + Communications interactives {#interactive-communications}
    + [Introduction à l’interface utilisateur de création d’une communication interactive](using/introduction-interactive-communication-authoring.md)
    + [Créer une communication interactive](using/create-interactive-communication.md)
