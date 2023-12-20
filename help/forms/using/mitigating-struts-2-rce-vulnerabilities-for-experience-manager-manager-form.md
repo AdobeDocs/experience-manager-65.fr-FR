@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
-source-git-commit: e42d01f1e5e44b12b755c20f826331ddbad8ab58
+source-git-commit: f928256920499ab4744b5d8173b449c8fa7f3b8d
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '593'
 ht-degree: 1%
 
 ---
@@ -38,72 +38,76 @@ Le tableau suivant répertorie la résolution pour toutes les versions affectée
 
 Vous pouvez utiliser les étapes de limitation manuelle pour résoudre le problème sur AEM 6.5 Form Server exécutant le Service Pack 13 vers AEM 6.5 Form Server exécutant le Service Pack 18 (6.5.13.0 - 6.5.18.0) :
 
-1. Arrêtez toutes les instances de serveur et tous les localisateurs.
-1. Téléchargez la [struts-core 2.5.33 jar](https://repo1.maven.org/maven2/org/apache/struts/struts2-core/2.5.33/struts2-core-2.5.33.jar).
+1. Téléchargez la [struts-core 2.5.33 jar](https://repo1.maven.org/maven2/org/apache/struts/struts2-core/2.5.33/struts2-core-2.5.33.jar) à un dossier local. Par exemple, C:\Users\labuser\Desktop\struts2-core-2.5.33.jar.
 1. Téléchargez l’outil de correction manuelle d’AEM Forms on JEE depuis [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/patch_utility/archive-patcher-1.0.0.zip).
-1. Décompressez l’archive manuelle de l’outil de correction. Il extrait les fichiers suivants :
+1. Décompressez l’archive manuelle de l’outil de correction. Par exemple, extrayez vers la fonction `/Users/labuser/Desktop/archive-patcher-1.0.0 folder`. Les fichiers suivants sont extraits :
    * archive-patcher-1.0.0.jar
    * patch-archive.bat
    * patch-archive.sh
-1. Ouvrez la fenêtre du terminal et accédez au dossier contenant les fichiers extraits.
-1. Utilisez l’outil de correction manuelle pour rechercher, répertorier et remplacer tous les fichiers JAR de struts2. L’outil nécessite une connexion Internet, car il télécharge les dépendances au moment de l’exécution. Donc, avant d&#39;exécuter l&#39;outil, vérifiez que vous êtes connecté à Internet.
-
-Pour rechercher et remplacer la variable `struts2-core-2.5.30.jar` et `struts2-core.jar` files :
-
-
 
 >[!BEGINTABS]
 
 >[!TAB Windows]
 
-1. Exécutez la commande suivante pour répertorier tous les fichiers jar struts2. Avant d’exécuter la commande, remplacez le chemin d’accès de la commande par le chemin d’accès de votre serveur AEM Forms :
+1. Arrêtez toutes les instances de serveur et tous les localisateurs.
+
+1. Ouvrez la fenêtre du terminal et accédez au dossier contenant l’outil de traitement manuel des correctifs d’AEM Forms on JEE (fichiers extraits).
+
+1. Exécutez la commande suivante pour rechercher tous les fichiers comportant des bibliothèques struts2 plus anciennes. Avant d’exécuter la commande, remplacez le chemin d’accès de la commande par le chemin d’accès de votre serveur AEM Forms :
 
 
    ```
-   patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
+   patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\configurationManager\export -pattern=.*struts2-core.*jar$
    ```
+
+   >[!NOTE]
+   >
+   >
+   >L’outil nécessite une connexion Internet, car il télécharge les dépendances au moment de l’exécution. Donc, avant d&#39;exécuter l&#39;outil, vérifiez que vous êtes connecté à Internet.
 
 1. Exécutez les commandes suivantes dans l’ordre indiqué pour le remplacement récursif statique. Avant d’exécuter la commande, remplacez le chemin d’accès de la commande par le chemin d’accès de votre serveur AEM Forms et de la variable `struts2-core-2.5.33.jar` fichier .
 
 
 
    ```
-   patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace C:\temp\struts2-core-2.5.33.jar
-   
-   
-   patch-archive.bat -root=C:\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace C:\Users\labuser\Desktop\struts2-core.jar        
+   patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\configurationManager\export -pattern=.*struts2-core.*jar$ -action=replace C:\Users\labuser\Desktop\struts2-core-2.5.33.jar
    ```
 
-   Les étapes ci-dessus corrigent les fichiers EAR contenant les `struts2-core-2.5.30.jar` et `struts2-core.jar` fichiers .
+   Les étapes ci-dessus corrigent tous les fichiers ear avec des bibliothèques struts2 plus anciennes.
 
-1. Annulez le déploiement de l’ancien fichier EAR et déployez le fichier EAR sur votre serveur d’applications.
-
+1. Annulez le déploiement de l’ancien fichier EAR et déployez le fichier EAR sur votre serveur d’applications, disponible dans le dossier d’exportation.
 
 1. Démarrez votre serveur AEM Forms.
 
-
 >[!TAB Linux]
 
-1. Exécutez la commande suivante pour répertorier tous les fichiers jar struts2. Avant d’exécuter la commande, remplacez le chemin d’accès de la commande par le chemin d’accès de votre serveur AEM Forms :
+1. Arrêtez toutes les instances de serveur et tous les localisateurs.
+
+1. Ouvrez la fenêtre du terminal et accédez au dossier contenant l’outil de traitement manuel des correctifs d’AEM Forms on JEE (fichiers extraits).
+
+1. Exécutez la commande suivante pour rechercher tous les fichiers comportant des bibliothèques struts2 plus anciennes. Avant d’exécuter la commande, remplacez le chemin d’accès de la commande par le chemin d’accès de votre serveur AEM Forms :
 
 
    ```
-   patch-archive.sh -root=/Users/labuser/Adobe.Adobe_Experience_Manager_Forms/.../export -pattern=.*struts2-core-2.5.30.jar$
+   ./patch-archive.sh -root=/opt/Adobe/Adobe_Experience_Manager_Forms/configurationManager/export/ -pattern=.*struts2-core.*jar$
    ```
+
+   >[!NOTE]
+   >
+   >
+   >L’outil nécessite une connexion Internet, car il télécharge les dépendances au moment de l’exécution. Donc, avant d&#39;exécuter l&#39;outil, vérifiez que vous êtes connecté à Internet.
 
 1. Exécutez les commandes suivantes dans l’ordre indiqué pour le remplacement récursif statique. Avant d’exécuter la commande, remplacez le chemin d’accès de la commande par le chemin d’accès de votre serveur AEM Forms et de la variable `struts2-core-2.5.33.jar` fichier .
 
 
+
    ```
-   patch-archive.sh -root=/Users/labuser/Adobe/Adobe_Experience_Manager_Forms/.../export -pattern=.*struts2-core-2.5.30.jar$ -action=replace /temp/struts2-core-2.5.33.jar
-   
-   
-   patch-archive.sh -root=/Users/labuser/Desktop/check -pattern=.*struts2-core.jar$ -action=replace /Users/labuser/Desktop/struts2-core.jar
+   ./patch-archive.sh -root=/opt/Adobe/Adobe_Experience_Manager_Forms/configurationManager/export/ -pattern=.*struts2-core.*jar$ -action=replace /opt/struts2-core-2.5.33.jar
    ```
 
-   Les étapes ci-dessus corrigent les fichiers EAR contenant les `struts2-core-2.5.30.jar` et `struts2-core.jar` fichiers .
+   Les étapes ci-dessus corrigent tous les fichiers ear avec des bibliothèques struts2 plus anciennes.
 
-1. Annulez le déploiement de l’ancien fichier EAR et déployez le fichier EAR sur votre serveur d’applications.
+1. Annulez le déploiement de l’ancien fichier EAR et déployez le fichier EAR sur votre serveur d’applications, disponible dans le dossier d’exportation.
 
 1. Démarrez votre serveur AEM Forms.
 
