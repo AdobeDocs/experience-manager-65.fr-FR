@@ -6,7 +6,7 @@ exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
 source-git-commit: 8fc35ac465240cafdce5346f2f7e9ba15c8d1fef
 workflow-type: tm+mt
 source-wordcount: '4333'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -50,7 +50,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 * **Nouveaux composants principaux de formulaires adaptatifs** : des onglets verticaux, des conditions générales et une case à cocher sont ajoutés pour améliorer l’évolutivité des formulaires.
    * **[Composant de case à cocher](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html?lang=fr)** : les formulaires adaptatifs basés sur les composants principaux peuvent désormais inclure un composant de case à cocher. Il permet aux utilisateurs et utilisatrices de faire des choix binaires, en sélectionnant ou en désélectionnant une option particulière. Il s’affiche généralement sous la forme d’une petite case sur laquelle vous pouvez cliquer ou appuyer pour basculer entre deux états : cochée et décochée. La case à cocher est un élément de formulaire courant, utilisé pour présenter un choix oui/non ou vrai/faux.
 
-   * **[Composant Conditions générales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=fr)** : les formulaires adaptatifs basés sur les composants principaux peuvent désormais inclure un composant Conditions générales. Il permet aux auteurs Forms d’introduire une section spécifique dans le formulaire, dans laquelle les utilisateurs sont présentés avec les conditions, conditions ou accords juridiques associés à l’utilisation d’un service, d’un produit ou d’une plateforme. Ce composant est conçu pour informer les utilisateurs et utilisatrices des règles, des réglementations et des obligations qu’ils acceptent en envoyant le formulaire.
+   * **[Composant Conditions générales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=fr)** : les formulaires adaptatifs basés sur les composants principaux peuvent désormais inclure un composant Conditions générales. Il permet aux personnes créant les formulaires d’introduire une section spécifique dans le formulaire, dans laquelle les utilisateurs et utilisatrices peuvent consulter les conditions générales ou les accords juridiques associés à l’utilisation d’un service, d’un produit ou d’une plateforme. Ce composant est conçu pour informer les utilisateurs et utilisatrices des règles, des réglementations et des obligations qu’ils acceptent en envoyant le formulaire.
 
      ![Composants Onglets verticaux, Conditions générales et Case à cocher.](/help/forms/using/assets/forms-components.png)
 
@@ -58,11 +58,11 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 * **[Version 64 bits d’AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)** : la version 64 bits d’AEM Forms Designer offre des performances, une évolutivité et une gestion de la mémoire améliorées pour optimiser votre expérience de création de formulaires. Grâce à l’architecture 64 bits, vous pouvez aborder facilement des projets plus volumineux et plus complexes, assurant ainsi des workflows de conception transparents et une efficacité optimisée. Améliorez encore vos capacités de conception de formulaire et accueillez l’avenir d’AEM Forms Designer avec cette version de pointe.
 
-* **[Connexion d’une Forms adaptative à une liste Microsoft® SharePoint](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms fournit une intégration prête à l’emploi pour envoyer directement les données de formulaire à la liste SharePoint, ce qui vous permet d’utiliser les fonctionnalités de listes de  SharePoint . Vous pouvez configurer une liste Microsoft® SharePoint comme source de données pour un modèle de données de formulaire et utiliser l’action Envoyer à l’aide du modèle de données de formulaire pour connecter un formulaire adaptatif à la liste SharePoint.
+* **[Connexion de formulaires adaptatifs à une liste Microsoft® SharePoint](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)** : AEM Forms assure une intégration prête à l’emploi pour envoyer les données de formulaire directement à la liste SharePoint, ce qui vous permet d’utiliser les fonctionnalités des listes SharePoint. Vous pouvez configurer une liste Microsoft® SharePoint comme source de données pour un modèle de données de formulaire et utiliser l’action Envoyer à l’aide du modèle de données de formulaire pour connecter un formulaire adaptatif à la liste SharePoint.
 
 * **[Prise en charge de la configuration des propriétés de document d’enregistrement pour les fragments de formulaire adaptatif](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)** : vous pouvez désormais personnaliser facilement vos fragments de formulaire adaptatif et ses champs dans l’éditeur de formulaire adaptatif.
 
-* **XMLFM 64 bits** : l’itération 64 bits de XMLFM améliore les performances, l’évolutivité et la gestion de la mémoire. Il s’agit du premier service natif 64 bits déployé côté serveur. En exploitant sa capacité inhérente à accéder à des ressources de mémoire plus importantes par rapport à sa contrepartie 32 bits, XMLFM 64 bits permet une gestion transparente des charges de travail de rendu plus importantes. Ce jalon représente non seulement un bond en avant en termes de performances, mais il introduit également des améliorations clés de la structure de service native dans le serveur AEM Forms. Cette mise à jour permet au serveur AEM Forms de prendre en charge en toute transparence tout service natif 64 bits.
+* **XMLFM 64 bits** : l’itération 64 bits de XMLFM améliore les performances, l’évolutivité et la gestion de la mémoire. Il s’agit du premier service natif 64 bits déployé côté serveur. En exploitant sa capacité intrinsèque à accéder à des ressources de mémoire plus importantes par rapport à son équivalent 32 bits, XMLFM 64 bits permet une gestion transparente des charges de travail de rendu plus lourdes. Ce jalon représente non seulement un bond en avant en termes de performances, mais il introduit également des améliorations clés du framework de service natif dans le serveur AEM Forms. Cette mise à jour permet au serveur AEM Forms de prendre en charge n’importe quel service natif 64 bits en toute transparence.
 
 **Fonctionnalité obsolète**
 
@@ -145,7 +145,7 @@ vers
 * La sélection de plusieurs types de fichiers de document sur le filtre de type de ressource ne fonctionne pas sur la console de page. Aucun résultat n’est trouvé même si les résultats d’un type de fichier particulier sont disponibles. Par conséquent, les auteurs et les autrices ne peuvent pas filtrer plusieurs documents. Ils ou elles doivent utiliser plusieurs types de documents et les filtrer un par un. (SITES-14047)
 * Après la mise à niveau d’une instance à partir d’AEM 6.5.17 et d’AEM 6.5.18, depuis l’éditeur de page, si vous sélectionnez **[!UICONTROL Publier la page]**, vous accédez à une URL qui n’existe pas. La personne doit être redirigée vers l’assistant de publication. (SITES-15856)
 * Copie redondante du Presse-papiers d’AEM lors d’un collage à partir du Presse-papiers du système d’exploitation. (SITES-15704)
-* Dans Assets, en sélectionnant **[!UICONTROL Documents]**, puis sous **[!UICONTROL Filtertype]**, sélection **[!UICONTROL Microsoft®® Word]** ou **[!UICONTROL Microsoft®® Excel]** n’affiche aucun résultat, même si des fichiers des deux types existent. (SITES-14837)
+* Dans Ressources, la sélection de **[!UICONTROL Documents]** puis, sous **[!UICONTROL Filtertype]**, la sélection de **[!UICONTROL Microsoft® Word]** ou **[!UICONTROL Microsoft® Excel]** n’affichent aucun résultat, même si des fichiers des deux types existent. (SITES-14837)
 
 ### [!DNL Assets]{#assets-6519}
 
@@ -190,17 +190,17 @@ vers
 
 * Lorsqu’un utilisateur ou une utilisatrice ajoute une barre d’outils au formulaire adaptatif, le libellé du conteneur de formulaires affiche un comportement imprévisible, car il n’adopte pas la langue préférée sélectionnée par la personne pour Forms. (FORMS-11371)
 * Dans l’espace de travail AEM Forms, le champ déroulant sélectionne la première option par défaut sur l’interface utilisateur. (FORMS-11346)
-* La configuration linguistique dans AEM n’est pas affectée si vous utilisez des paramètres régionaux à cinq caractères et que le séparateur décimal n’est pas correctement rendu dans la lettre. (FORMS-11344)
+* La configuration de la langue dans AEM n’est pas modifiée si vous utilisez des paramètres régionaux à cinq caractères et que le séparateur décimal n’est pas correctement rendu dans la lettre. (FORMS-11344)
 * Lorsqu’un utilisateur ou une utilisatrice génère la sortie XML à l’aide du processus Workbench, l’opération échoue pour certains fichiers. (FORMS-11314)
 * Lorsqu’un utilisateur ou une utilisatrice génère un aperçu du document d’enregistrement (DOR) dans des langues autres que l’anglais, cela ne fonctionne pas. (FORMS-11106)
-* Lorsqu’un utilisateur convertit certains fichiers image avec PDFG sur une instance OSGI basée sur Linux® avec JDK11, il ne convertit pas. (FORMS-11105)
+* Lorsqu’un utilisateur ou une utilisatrice convertit certains fichiers image avec PDFG sur une instance OSGI basée sur Linux® avec JDK11, la conversion n’a pas lieu. (FORMS-11105)
 * Lorsqu’un utilisateur ou une utilisatrice installe le module complémentaire AEM Forms, cela dégrade le panneau de l’arborescence de contenu dans AEM Sites. (FORMS-10912)
 * Lorsqu’un utilisateur ou une utilisatrice copie des dates à l’aide d’un lecteur d’écran NVDA à partir du composant de sélecteur de date, la lecture n’est pas correcte. (FORMS-10805)
 * Dans l’éditeur de règles des formulaires, l’utilisateur ou l’utilisatrice ne peut pas définir la valeur du bouton radio/de la case à cocher lorsque le type de valeur de données est Booléen. (FORMS-10713)
 * Lorsqu’un utilisateur ou une utilisatrice ajoute des éléments dans un formulaire adaptatif, l’ajout se fait dans l’ordre inverse à celui d’une liste déroulante. (FORMS-10456)
 * Lorsqu’une liste déroulante est effacée à l’aide de l’éditeur de règles, la première valeur fournie s’affiche toujours, même si la valeur a été effacée. (FORMS-9963) 
 * Les utilisateurs et utilisatrices ne peuvent pas accéder au titre du formulaire à l’aide de lecteurs d’écran tels que NVDA. (FORMS-8815) 
-* Les utilisateurs ne peuvent pas accéder à `Sub Title` dans un formulaire à l’aide de lecteurs d’écran tels que NVDA. (FORMS-8814) 
+* Les utilisateurs et utilisatrices ne peuvent pas accéder au `Sub Title` d’un formulaire à l’aide de lecteurs d’écran tels que NVDA. (FORMS-8814) 
 * Dans la page source du formulaire HTML, l’attribut de clé d’accès est vide et ne fonctionne pas. (FORMS-5753) 
 * Dans la boîte de dialogue À propos de Workspace, la mention « Adobe Experience Manager – Forms » est présentée sous forme de texte. (FORMS-5748)
 
@@ -365,7 +365,7 @@ Pour utiliser UberJar dans un projet Maven, consultez la section [Utilisation d�
 
 ## Fonctionnalités obsolètes et supprimées{#removed-deprecated-features}
 
-Consultez les [Fonctionnalités obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md/).
+Consultez les [fonctionnalités obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md/).
 
 ## Problèmes connus{#known-issues}
 
@@ -520,8 +520,8 @@ Pour résoudre le problème, recherchez le fichier `<AEM_Forms_Installation_dir>
 * Lorsqu’un utilisateur ou une utilisatrice choisit de configurer un champ pour la première fois dans un formulaire adaptatif, l’option permettant d’enregistrer une configuration ne s’affiche pas dans l’explorateur de propriétés. Sélectionner un autre champ du formulaire adaptatif à configurer dans le même éditeur pour résoudre le problème.
 * Lorsque des utilisateurs ou des utilisatrices exécutent l’action d’envoi, l’envoi échoue avec une erreur :
   `javax.servlet.ServletException: java.lang.NoSuchMethodError`
-Pour résoudre le problème, [recompilez les scripts Sling tels que JSP, Java™ et Sightly.](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution?lang=fr). (FORMS-8542)
-* Après avoir installé AEM Service Pack 6.5.14.0 et versions ultérieures, les utilisateurs ne peuvent pas sélectionner de police dans l’interface utilisateur d’administration de JEE pour les documents du PDF lorsqu’ils accèdent à `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, car la liste des polices apparaît vide. (FORMS-12095)
+Pour résoudre le problème, [recompilez les scripts Sling tels que JSP, Java™ et Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution?lang=fr). (FORMS-8542)
+* Après avoir installé le Pack de services AEM 6.5.14.0 et versions ultérieures, les utilisateurs et utilisatrices ne peuvent pas sélectionner de police dans l’interface utilisateur d’administration de JEE pour les documents PDF lorsqu’ils accèdent à `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, car la liste des polices s’affiche vide. (FORMS-12095)
 
 ####  d’AEM Forms sur JEE
 
