@@ -7,9 +7,9 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
-source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
+source-git-commit: 1f1deb4f5d2033420aa1cece95666894b2f56aad
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '1423'
 ht-degree: 2%
 
 ---
@@ -56,7 +56,7 @@ Il est également recommandé de configurer JVM pour optimiser l’utilisation d
 ### Exemple de configuration JVM {#jvm-configuration-example}
 
 ```shell
-JVM_OPTS="-server -Xmx2048m -XX:MaxPermSize=768M -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xloggc:../logs/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Djava.awt.headless=true"
+JVM_OPTS="-server -Xmx2048m -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xloggc:../logs/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Djava.awt.headless=true"
 ```
 
 ### Commandes de configuration de SolrCloud {#solrcloud-setup-commands}
@@ -80,8 +80,7 @@ Utilisation : sh ./scripts/cloud-scripts/zkcli.sh \
 Référence :
 [https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create](https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create)
 
-Utilisation:
-./bin/solr create \
+Utilisation : ./bin/solr create \
 -c *mycollection-name*\
 -d *config-dir* \
 -n *myconfig-name* \
@@ -126,7 +125,7 @@ Au total, les 33 langues suivantes sont prises en charge dans Advanced MLS.
 | Arabe | Allemand | Norvégien |
 |---|---|---|
 | Bulgare | Grec | Polonais |
-| Chinois (simplifié) | Créole haïtien | brésilien |
+| Chinois (simplifié) | Créole haïtien | Portugais |
 | Chinois (traditionnel) | Hébreu | Roumain |
 | Tchèque | Hongrois | Russe |
 | Danois | Indonésien | Slovaque |
