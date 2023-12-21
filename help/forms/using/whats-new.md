@@ -5,8 +5,8 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
-workflow-type: ht
+source-git-commit: ea11ecff5be51a19ab901a588200519a70cf9efc
+workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 100%
 

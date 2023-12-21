@@ -4,11 +4,11 @@ description: Découvrez comment incorporer un formulaire adaptatif dans une page
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
-workflow-type: ht
-source-wordcount: '1039'
+source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
+workflow-type: tm+mt
+source-wordcount: '1028'
 ht-degree: 100%
 
 ---

@@ -4,9 +4,9 @@ description: AEM Forms fournit des gestionnaires de réussite et d’erreur prê
 keywords: Ajouter un gestionnaire d’erreurs personnalisé, ajouter un gestionnaire d’erreurs par défaut, ajouter un gestionnaire d’erreurs dans le formulaire, utiliser le service d’appel de l’éditeur de règles pour ajouter un gestionnaire d’erreurs personnalisé, configurer l’éditeur de règles pour ajouter un gestionnaire d’erreurs personnalisé, ajouter un gestionnaire d’erreurs personnalisé à l’aide de l’éditeur de règles
 contentOwner: Ruchita Srivastav
 content-type: reference
-feature: Adaptive Forms
+feature: Adaptive Forms, Core Components
 exl-id: 2118d77f-1314-48f1-88e3-e27dd8e9f17b
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '2278'
 ht-degree: 98%

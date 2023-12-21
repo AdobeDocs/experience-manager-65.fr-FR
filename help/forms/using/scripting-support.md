@@ -5,11 +5,11 @@ contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-feature: Mobile Forms
+feature: HTML5 Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
 workflow-type: tm+mt
-source-wordcount: '3896'
+source-wordcount: '3916'
 ht-degree: 21%
 
 ---
@@ -476,14 +476,14 @@ Les propriétés JavaScript, FormCalc et les méthodes prises en charge dans les
    <td>Aucune</td>
   </tr>
   <tr>
-   <td>instanceManager</td>
+   <td>InstanceManager</td>
    <td>L’objet instanceManager gère la création, la suppression et le déplacement de l’instance des objets de modèle de formulaire.<br /> </td>
    <td>Aucune</td>
   </tr>
  </tbody>
 </table>
 
-### envoyer {#submit}
+### submit {#submit}
 
 | Propriété | Description |
 |---|---|
@@ -544,7 +544,7 @@ Les propriétés JavaScript, FormCalc et les méthodes prises en charge dans les
 
 | Propriété | Description | Exception |
 |---|---|---|
-| instanceManager | L’objet instanceManager gère la création, la suppression et le déplacement de l’instance des objets de modèle de formulaire. | Aucune |
+| InstanceManager | L’objet instanceManager gère la création, la suppression et le déplacement de l’instance des objets de modèle de formulaire. | Aucune |
 
 ## content {#content}
 
@@ -579,7 +579,7 @@ Les propriétés JavaScript, FormCalc et les méthodes prises en charge dans les
  </tbody>
 </table>
 
-## fill {#fill}
+## Remplissage {#fill}
 
 <table>
  <tbody>
@@ -1175,14 +1175,14 @@ FormCalc est un langage spécifique à XFA qui permet de créer une logique cent
 
    1. Abs()
    1. Avg()
-   1. Plafond()
+   1. Ceil()
    1. Décompte()
-   1. Arrondi à l’inférieur()
+   1. Floor()
    1. Max()
    1. Min()
    1. Mod()
-   1. Arrondi()
-   1. Somme()
+   1. Round()
+   1. Sum()
 
 1. **Fonctions scientifiques**
 
@@ -1192,9 +1192,9 @@ FormCalc est un langage spécifique à XFA qui permet de créer une logique cent
    1. Atan2()
    1. Cos()
    1. Sin()
-   1. Brun()
+   1. Tan()
    1. Exp()
-   1. Journal()
+   1. Log()
    1. Pow()
    1. Sqrt()
    1. Deg2Rad()
@@ -1203,7 +1203,7 @@ FormCalc est un langage spécifique à XFA qui permet de créer une logique cent
 
 1. **Fonctions financières**
 
-   1. Avr()
+   1. Apr()
    1. Cterm()
    1. Fv()
    1. Ipmt()
@@ -1219,20 +1219,20 @@ FormCalc est un langage spécifique à XFA qui permet de créer une logique cent
    1. Choose()
    1. If()
    1. Oneof()
-   1. Dans()
+   1. Within()
 
 1. **Fonctions de chaîne**
 
-   1. dans/le()
+   1. At()
    1. Concat()
-   1. Gauche()
+   1. Left()
    1. Len()
    1. Lower()
    1. Ltrim()
    1. Remplacer()
-   1. Droite()
+   1. Right()
    1. Rtrim()
-   1. Espace()
+   1. Space()
    1. Stuff()
    1. Substr()
    1. Upper()

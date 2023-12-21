@@ -2,8 +2,9 @@
 title: Comment connecter et envoyer des données de formulaire adaptatif à Microsoft&reg; Power Automate ?
 description: Guide détaillé pour la connexion et l’envoi de données de formulaire adaptatif à Microsoft&reg; Power Automate.
 keywords: Formulaires adaptatifs Microsoft Power Automate, envoi de données et de formulaires adaptatifs à Microsoft Power Automate
+feature: Adaptive Forms, Foundation Components
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 90%
