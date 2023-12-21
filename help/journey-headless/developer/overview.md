@@ -2,7 +2,7 @@
 title: Parcours du développeur AEM Headless
 description: Documentation CMS d’AEM Headless. Commencez ici pour un parcours guidé à travers les fonctionnalités puissantes et flexibles d’AEM, leurs capacités et comment les utiliser dans votre premier projet de développement.
 exl-id: f24fb308-daa7-426f-ba45-37a236b5a500
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 487136be68e04fd74affe43790587b37d4c3d3ef
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 91%
@@ -29,7 +29,7 @@ Un [Parcours de documentation](/help/journey-documentation/home.md) relie de nom
 
 Les parcours de documentation sont conçus autour des principes de bonne pratique, reposent sur les dernières recherches d’Adobe, sur l’expérience éprouvée de mise en œuvre des consultants Adobe, ainsi que sur les retours de projets clients.
 
-Si vous souhaitez savoir comment Adobe recommande de résoudre des cas d’utilisation découplés avec AEM, les [Parcours découplés AEM](/help/journey-headless/home.md) sont un bon endroit pour commencer.
+Si vous souhaitez savoir comment Adobe recommande de résoudre des cas d’utilisation découplés avec AEM, les [Parcours découplés AEM](/help/journey-headless/overview.md) sont un bon endroit pour commencer.
 
 >[!TIP]
 >

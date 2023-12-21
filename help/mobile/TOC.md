@@ -7,9 +7,10 @@ breadcrumb-title: Guide mobile
 user-guide-description: Créez et gérez du contenu pour les applications mobiles.
 feature: Mobile
 role: User
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+hide: true
+source-git-commit: 829eadb61062f20be74e36b52175627f1f377c50
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '322'
 ht-degree: 13%
 
 ---
@@ -83,7 +84,6 @@ ht-degree: 13%
    + [Modèles de page pour les applications mobiles](phonegap-apps-arch-page-templates.md)
    + [Configuration du Cloud Service Adobe Target](aem-mobile-configuring-cloud-service.md)
    + [Applications sur une seule page](phonegap-single-page-applications.md)
-   + [Modèles dans le référentiel](https://experienceleague.adobe.com/docs/experience-manager-65/mobile/administering/administer-mobile-apps.html)
    + [Démarrage AEM PhoneGap](starting-aem-phonegap-app.md)
    + [Test des applications mobiles](develop-mobile-apps-testing.md)
    + [Structure d’une application](phonegap-structure-an-app.md)

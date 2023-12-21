@@ -2,10 +2,10 @@
 title: Guide de prise en main du mode découplé
 description: Grâce à ce guide de démarrage rapide, découvrez les fonctionnalités essentielles des puissantes fonctionnalités sans interface de Adobe Experience Manager (AEM) 6.5, telles que les modèles de contenu, les fragments de contenu et l’API GraphQL.
 exl-id: 55ebd893-b3cc-47c5-ad84-46df984197fb
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 487136be68e04fd74affe43790587b37d4c3d3ef
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 49%
+ht-degree: 60%
 
 ---
 
@@ -23,17 +23,17 @@ Les Guides de prise en main sans tête présentent un chemin simple pour la cré
 >
 >Ce guide de prise en main s’appuie sur des connaissances préalables concernant AEM et les technologies découplées.
 >
->Si vous découvrez AEM ou sans tête, reportez-vous à la section [Parcours de documentation sans affichage](/help/journey-headless/home.md) pour une introduction de bout en bout sur les headless et la façon dont AEM les prend en charge.
+>Si vous découvrez AEM ou sans tête, reportez-vous à la section [Parcours de documentation sans affichage](/help/journey-headless/overview.md) pour une introduction de bout en bout sur les headless et la façon dont AEM les prend en charge.
 
 ## Public {#audience}
 
-Les tâches décrites dans les Guides de prise en main du découplage sont nécessaires pour une démonstration de base de bout en bout des capacités de découplage d’AEM. Toute personne disposant d’un accès administrateur à une instance AEM de test peut suivre ces guides pour comprendre la diffusion découplée dans AEM, même si une personne avec une expérience de développeur est idéale.
+Les tâches décrites dans les Guides de prise en main du découplage sont nécessaires pour une démonstration de base de bout en bout des capacités de découplage d’AEM. Toute personne disposant d’un accès d’administration à une instance AEM de test peut suivre ces guides pour comprendre la diffusion découplée dans AEM, même si une personne avec une expérience de développement est idéale.
 
 Cependant, dans une situation de production, les tâches sont généralement exécutées par des personnes différentes un nombre variable de fois. Par exemple :
 
-* **Administrateurs** doit configurer la configuration initiale et la structure de dossiers pour le contenu normalement une seule fois ou de manière sporadique.
+* Les **personnes administratrices** ne doivent normalement définir la configuration initiale et la structure des dossiers pour le contenu qu’une seule fois ou de manière sporadique.
 * **Architectes d&#39;information** ajouter de nouveaux modèles au fur et à mesure que les besoins de l’organisation évoluent.
-* **Auteurs de contenu** créer continuellement du contenu en tant que fragments de contenu en fonction des modèles définis par les architectes.
+* Les **auteurs et autrices de contenu** créent continuellement des contenus en tant que fragments de contenu sur la base des modèles définis par les architectes.
 
 Les guides de prise en main du découplage indiquent qui effectuerait généralement les tâches décrites et à quelle fréquence.
 

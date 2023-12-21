@@ -5,9 +5,9 @@ user-guide-title: Guide d’Assets
 feature: Asset Management
 role: User, Architect, Admin
 exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: ht
-source-wordcount: '325'
+source-git-commit: 7c691e275208287250f3540158a5e9948097b277
+workflow-type: tm+mt
+source-wordcount: '250'
 ht-degree: 100%
 
 ---
@@ -28,17 +28,14 @@ Créez, gérez, traitez et distribuez des ressources numériques dans Experience
 |--- |---|
 | [Notes de mise à jour](/help/release-notes/home.md) | Elles comportent des informations importantes sur la dernière version, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et celles qui ont été supprimées, et les problèmes connus. |
 | [Guide de l’utilisateur de Forms](/help/forms/home.md) | Ce guide explique comment créer, gérer, publier et mettre à jour des formulaires numériques. |
-| [Guide de l’utilisateur de Communities](/help/communities/home.md) | Créez des expériences en ligne telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales. |
 | [Guide d’administration](/help/sites-administering/home.md) | Découvrez comment administrer Adobe Experience Manager. |
 | [Guide de création](/help/sites-authoring/home.md) | Ce guide explique les concepts de création dans Experience Manager. |
 | [Guide de création dans l’interface utilisateur classique](/help/sites-classic-ui-authoring/home.md) | Ce guide explique les concepts de création dans Experience Manager dans l’interface utilisateur classique. |
-| [Guide de l’utilisateur de Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=fr) | Découvrez la solution de signalétique numérique pour pouvoir publier des expériences numériques dynamiques et interactives. |
+| [Guide de l’utilisateur de Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=fr) | Découvrez la solution de signalétique numérique pour pouvoir publier des expériences digitales dynamiques et interactives. |
 | [Guide de l’utilisateur du déploiement](/help/sites-deploying/home.md) | Ce guide vous présente les principes de base d’Experience Manager. |
 | [Guide de l’utilisateur pour le développement](/help/sites-developing/home.md) | Découvrez comment créer votre déploiement d’Experience Manager. |
 | [Guide de l’utilisateur pour la gestion](/help/managing/home.md) | Ce guide décrit comment gérer un projet Experience Manager avec succès. |
 | [Guide de l’utilisateur de Commerce](/help/commerce/home.md) | Découvrez Commerce Integration Framework dans Experience Manager. |
-| [Guide de l’utilisateur Mobile](/help/mobile/home.md) | Ce guide explique comment créer et gérer du contenu pour les applications mobiles. |
-
 
 ## Ressources essentielles pour [!DNL Experience Manager]
 

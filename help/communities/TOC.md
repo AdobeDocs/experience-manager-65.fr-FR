@@ -7,9 +7,10 @@ breadcrumb-title: Guide de Communities
 user-guide-description: Créez des expériences en ligne telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales.
 feature: Communities
 role: User
-source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
+hide: true
+source-git-commit: e0db340b4fd4e4f7fe7ed623fb2ee9f1b789e39e
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '423'
 ht-degree: 13%
 
 ---
@@ -21,7 +22,6 @@ ht-degree: 13%
 + Présentation d’AEM Communities {#introduction}
    + [Sites de communautés](administer-landing.md)
    + [Présentation d’AEM Communities](overview.md)
-   + [Notes de mise à jour d’AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/communities-release-notes.html)
    + [Prise en main d’AEM Communities](getting-started.md)
    + [Configuration initiale](setup.md)
    + [Création d’un site de communauté](create-site.md)
@@ -34,7 +34,6 @@ ht-degree: 13%
    + [Configuration de Dispatcher pour Communities](dispatcher.md)
 + Administration {#administer}
    + [Service de gestion des utilisateurs et du contenu créé par l’utilisateur dans AEM Communities](user-ugc-management-service.md)
-   + [Sites de communautés](https://experienceleague.adobe.com/docs/experience-manager-65/communities/introduction/administer-landing.html)
    + [Consoles Communities](consoles.md)
    + [Configuration d’Analytics pour les fonctionnalités des communautés](analytics.md)
    + [Configuration de la messagerie](messaging.md)
@@ -74,7 +73,7 @@ ht-degree: 13%
 + Développement {#develop}
    + [Développement de communautés](communities.md)
    + [Structure des composants sociaux](scf.md)
-   + [Guide de composants de communauté](components-guide.md)
+   + [Guide des composants de communauté](components-guide.md)
    + [Notions fondamentales sur les composants, les fonctions et les fonctionnalités](essentials.md)
    + [Tutoriels](tutorials.md)
    + [Résolution des problèmes](troubleshooting.md)
@@ -153,4 +152,3 @@ ht-degree: 13%
    + [Tendances des activités](trends.md)
    + [Utilisation de Social Tag Cloud](tagcloud.md)
    + [Utilisation du vote](voting.md)
-   + [Création d’un exemple de page](https://experienceleague.adobe.com/docs/experience-manager-65/communities/develop/create-sample-page.html)
