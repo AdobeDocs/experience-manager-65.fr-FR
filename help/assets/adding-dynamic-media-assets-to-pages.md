@@ -9,10 +9,10 @@ docset: aem65
 role: User, Admin
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Components,Publishing
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+source-git-commit: 75ac5b860e8456e6113de22677926e75d84f8715
 workflow-type: tm+mt
 source-wordcount: '3219'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -243,7 +243,7 @@ Modifiez les paramètres Dynamic Media ci-après en sélectionnant **[!UICONTRO
 
   Vous pouvez modifier les paramètres avancés ci-après en sélectionnant **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Activer la correspondance du rapport d’aspect]** : sélectionnez cette option pour laisser Dynamic Media sélectionner un rendu de recadrage intelligent avec le rapport d’aspect correspondant le mieux à celui de l’image d’origine.
+* **[!UICONTROL Activer la correspondance du rapport d’aspect]** - Pour permettre à Dynamic Media de sélectionner un rendu de recadrage intelligent avec un format correspondant le mieux aux proportions de l’image d’origine, sélectionnez cette option.
 
 * **[!UICONTROL Optimiser pour les appareils à résolution plus élevée]** : sélectionnez (par défaut) la case pour autoriser l’optimisation du rapport DPR (Device Pixel Ratio).
 
