@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation de Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: 097bded5ed2d1db6426dcb9ac4fa9582cdc213bf
+source-git-commit: 4a4f464d4140cbb3882b57786b9003a89b7a9a43
 workflow-type: tm+mt
-source-wordcount: '7327'
+source-wordcount: '7328'
 ht-degree: 97%
 
 ---
@@ -154,7 +154,7 @@ ht-degree: 97%
    + Administration {#administering}
       + [Aperçu du guide de l’utilisateur d’administration](/help/sites-administering/home.md)
       + Fonctionnalités des sites {#introduction}
-         + [Administration de sites web](/help/sites-administering/msm-and-translation.md)
+         + [MSM et traduction](/help/sites-administering/msm-and-translation.md)
          + [Tâches asynchrones](/help/sites-administering/asynchronous-jobs.md)
          + [Réutilisation de contenu : Multi-Site Manager et Live Copy](/help/sites-administering/msm.md)
          + [Console Aperçu de Live Copy](/help/sites-administering/msm-livecopy-overview.md)
