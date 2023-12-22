@@ -3,7 +3,7 @@ title: Notes de mise à jour d’Adobe Experience Manager 6.5
 description: Les notes de mise à jour d’AEM comportent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et celles qui ont été supprimées, et les problèmes connus.
 exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
 source-git-commit: 7c691e275208287250f3540158a5e9948097b277
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '257'
 ht-degree: 100%
 
