@@ -1,12 +1,12 @@
 ---
 title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager]
-description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
+description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
 source-git-commit: 8fc35ac465240cafdce5346f2f7e9ba15c8d1fef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4333'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -213,7 +213,7 @@ vers
 * Les niveaux d’en-tête correctement attribués dans le concepteur de formulaires sont changés aléatoirement en balise `<P>` dans Adobe Acrobat. (LC-3921305) 
 * Dans un tableau, l’identifiant d’un objet quelconque ne peut pas être modifié une fois qu’il a été attribué. (LC-3921134) 
 * Si des cellules fusionnées se trouvent dans le tableau, aucune interface utilisateur graphique n’est disponible pour définir la plage (ligne et colonne) et la portée dans un tableau complexe du concepteur de formulaires AEM. (LC-3919532)
-* Lorsqu’un utilisateur tente de générer des documents de PDF après l’installation du module complémentaire Forms sur AEM Forms Service Pack 6.5.15.0, il échoue par intermittence et affiche l’erreur :
+* Lorsqu’un utilisateur ou une utilisatrice tente de générer des documents PDF après avoir installé le package de modules complémentaires Forms sur le pack de services AEM Forms 6.5.15.0, la procédure échoue de manière intermittente et affiche l’erreur :
    * `OutputServiceException AEM_OUT_001_003:Unexpected Exception: 0 Out of Memory Caused by: org.omg.CORBA.COMM_FAILURE: null` (LC-3921530)
 
 ### Foundation{#foundation-6519}
@@ -523,9 +523,9 @@ Pour résoudre le problème, recherchez le fichier `<AEM_Forms_Installation_dir>
 Pour résoudre le problème, [recompilez les scripts Sling tels que JSP, Java™ et Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution?lang=fr). (FORMS-8542)
 * Après avoir installé le Pack de services AEM 6.5.14.0 et versions ultérieures, les utilisateurs et utilisatrices ne peuvent pas sélectionner de police dans l’interface utilisateur d’administration de JEE pour les documents PDF lorsqu’ils accèdent à `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, car la liste des polices s’affiche vide. (FORMS-12095)
 
-####  d’AEM Forms sur JEE
+#### d’AEM Forms on JEE
 
-* Des vulnérabilités de sécurité critiques ont été signalées pour Struts 2 RCE, un framework d’applications web populaire et open source pour le développement d’applications web Java EE. Adobe a été publié [AEM 6.5 Service Pack 19.1 (6.5.19.1)](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md) pour résoudre la vulnérabilité dans AEM Forms on JEE.
+* Des vulnérabilités de sécurité critiques ont été signalées pour Struts 2 RCE, un framework d’applications web populaire et open source pour le développement d’applications web Java EE. Adobe a publié le [pack de services 19.1 (6.5.19.1) pour AEM 6.5 ](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md) afin de résoudre la vulnérabilité dans AEM Forms on JEE.
 
 
 <!--The font enumeration fails due to the missing Ps2Pdf service file.-->
