@@ -5,9 +5,10 @@ contentOwner: vishgupt
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-source-git-commit: 4a4a75018e960733908f40c631a24203290be55c
-workflow-type: ht
-source-wordcount: '655'
+feature: Document Services
+source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+workflow-type: tm+mt
+source-wordcount: '650'
 ht-degree: 100%
 
 ---
@@ -24,7 +25,7 @@ Adobe Experience Manager Forms peut utiliser les informations d&#39;identificati
 
 ## Avant de configurer les modules HSM ou etoken avec AEM Forms  {#configurehsmetoken}
 
-* Installez le [module complémentaire AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
+* Installez le [module complémentaire AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
 * Installez et configurez le logiciel client de HSM ou etoken sur le même ordinateur que le serveur AEM. Le logiciel client est nécessaire pour communiquer avec les modules HSM et e-token.
 
 ## Activer le service DocAssurance {#configuredocassurance}

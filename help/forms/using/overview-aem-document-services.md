@@ -5,11 +5,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 docset: aem65
+feature: Document Services
 exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
 workflow-type: tm+mt
 source-wordcount: '1413'
-ht-degree: 58%
+ht-degree: 63%
 
 ---
 
@@ -101,11 +102,11 @@ Le service Doc Assurance se compose en fait de trois services : Signature, Enc
 
 ### Service Signature {#signature-service}
 
-Le service Signature vous permet d’utiliser des signatures et des documents numériques sur le serveur AEM. Par exemple, le service Signature est généralement utilisé dans les situations suivantes :
+Le service Signature vous permet d’utiliser des signatures et des documents numériques sur le serveur AEM. Par exemple, le service Signature est généralement utilisé dans les situations suivantes :
 
-* Le serveur AEM certifie un formulaire avant qu’il ne soit envoyé à un utilisateur pour qu’il s’ouvre à l’aide d’Acrobat ou d’Adobe Reader.
-* Le serveur d’AEM valide la signature qui a été ajoutée à un formulaire à l’aide d’Acrobat ou d’Adobe Reader.
-* Le serveur AEM signe un formulaire au nom d&#39;un notaire.
+* Le serveur AEM certifie un formulaire avant que ce dernier ne soit envoyé à un utilisateur ou une utilisatrice et ouvert avec Acrobat ou Adobe Reader.
+* Le serveur AEM valide la signature apposée sur un formulaire via Acrobat ou Adobe Reader.
+* Le serveur AEM signe un formulaire au nom d’un notaire.
 
 Le service Signature accède aux certificats et aux informations d’identification stockées dans le trust store.
 

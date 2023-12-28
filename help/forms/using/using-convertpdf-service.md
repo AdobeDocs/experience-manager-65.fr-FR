@@ -4,11 +4,11 @@ description: Utilisez le service Adobe Experience Manager Forms ConvertPDF pour 
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-exl-id: 575bab27-d973-47fa-a0da-fa889cec6f27
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+feature: Document Services
+source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 44%
+source-wordcount: '382'
+ht-degree: 54%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 44%
 
 ## Présentation {#overview}
 
-Le service Convert PDF convertit des documents PDF en fichiers PostScript ou en images (aux formats JPEG, JPEG 2000, PNG et TIFF). La conversion d’un document de PDF en PostScript est utile pour l’impression sans assistance basée sur le serveur sur n’importe quelle imprimante PostScript. La conversion d’un document de PDF en fichier de TIFF multi-pages est pratique lors de l’archivage de documents dans des systèmes de gestion de contenu qui ne prennent pas en charge les documents de PDF.
+Le service Convert PDF convertit des documents PDF en fichiers PostScript ou en images (aux formats JPEG, JPEG 2000, PNG et TIFF). La conversion d’un document PDF en PostScript est utile pour les impressions sans assistance reposant sur un serveur exécutées sur n’importe quelle imprimante PostScript. La conversion d’un document de PDF en fichier de TIFF multi-pages est pratique lors de l’archivage de documents dans des systèmes de gestion de contenu qui ne prennent pas en charge les documents de PDF.
 
 Vous pouvez exécuter les tâches ci-dessous à l’aide du service ConvertPDF :
 
-* Convertir des documents PDF en PostScript. Lors de la conversion au format PostScript, vous pouvez utiliser l’opération de conversion pour spécifier le document source et indiquer si vous souhaitez effectuer une conversion au format PostScript 2 ou 3. Le document du PDF que vous convertissez en fichier PostScript doit être non interactif.
+* Convertir des documents PDF en PostScript. Lors de la conversion au format PostScript, vous pouvez utiliser l’opération de conversion pour spécifier le document source et indiquer si vous souhaitez effectuer une conversion en PostScript de niveau 2 ou 3. Le document PDF que vous convertissez en fichier PostScript doit être non interactif.
 * Convertir des documents PDF aux formats d’image JPEG, JPEG 2000, PNG et TIFF. Lors de cette conversion, vous pouvez préciser le document source et fournir une spécification portant sur les options d’image. La spécification contient différentes préférences, telles que le format de conversion d’image, la résolution d’image et la conversion des couleurs.
 
 ## Configurer les propriétés du service   {#properties}
