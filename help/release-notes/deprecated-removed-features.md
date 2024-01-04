@@ -2,10 +2,10 @@
 title: Fonctionnalités obsolètes et supprimées de la version 6.5 d’Adobe Experience Manager.
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans Adobe Experience Manager 6.5
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: bbd18486a77d7b46454aacff23147b38860bd895
-workflow-type: ht
-source-wordcount: '1741'
-ht-degree: 100%
+source-git-commit: b0ba4e0c91d3c40acf5bf7336ba2af0c8c01cd32
+workflow-type: tm+mt
+source-wordcount: '1720'
+ht-degree: 91%
 
 ---
 
@@ -47,16 +47,15 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 | Composants (AEM Sites) | Les composants de l’importateur de conception `/libs/wcm/designimporter/components` ont été marqués comme obsolètes depuis la version 6.5. Adobe ne prévoit pas d’apporter d’autres améliorations à cette implémentation de l’importateur de conception. | Adobe prévoit de fournir une alternative d’implémentation pour ce cas d’utilisation dans les prochaines versions. |  |
 | Foundation | Framework de déchargement Granite. Adobe n’envisage pas d’apporter d’autres améliorations au framework de déchargement ajouté à la version CQ 5.6.1 pour externaliser le traitement des ressources. | Adobe travaille sur un framework de déchargement natif pour le cloud de nouvelle génération. |  |
 | Développeurs | `Hobbes.js`. Adobe ne prévoit pas apporter d’autres améliorations au framework de test de l’interface utilisateur `hobbes.js`. | Adobe recommande aux clients d’utiliser l’automatisation Selenium. |  |
-| Développeurs | Bibliothèque cliente de l’interface utilisateur jQuery. Adobe ne prévoit pas de gérer ni de mettre à jour la bibliothèque cliente de l’interface utilisateur qui est fournie dans le cadre de la distribution (Quickstart). | Adobe recommande aux clients qui ont encore besoin de l’interface utilisateur jQuery pour leur code de l’ajouter à leur base de code de projet. |  |
-| Développeurs | Bibliothèque cliente jQuery Animation (`granite.jquery.animation`). Adobe ne prévoit pas de gérer ni de mettre à jour la bibliothèque cliente jQuery Animation fournie avec la distribution (Quickstart). | Adobe recommande aux clients qui ont toujours besoin d’animations jQuery pour leur code de l’ajouter à leur base de code de projet. |  |
-| Développeurs | Bibliothèque cliente Handlebars. Adobe ne prévoit pas de gérer ni de mettre à jour la bibliothèque cliente Handlebar fournie avec la distribution (Quickstart). | Adobe recommande aux clientes et clients qui ont toujours besoin de `Handlebars` pour leur code de l’ajouter à leur base de code de projet. |  |
-| Développeurs | Bibliothèque cliente Lawnchair. Adobe ne prévoit pas de gérer ni de mettre à jour la bibliothèque cliente Lawnchair fournie avec la distribution (Quickstart). | Adobe recommande aux clients qui ont toujours besoin de Lawnchair pour leur code de l’ajouter à leur base de code de projet. |  |
-| Développeurs | `Granite.Sling.js`Bibliothèque cliente. Adobe ne prévoit pas d’améliorer la bibliothèque cliente Granite.Sling.js fournie avec la distribution (Quickstart).. | Adobe recommande aux clients qui dépendent de la capacité de la bibliothèque de restructurer leur code de ne plus l’utiliser. |  |
+| Développeurs | Bibliothèque cliente de l’interface utilisateur jQuery. Adobe ne prévoit pas de gérer ni de mettre à jour la bibliothèque cliente de l’interface utilisateur jQuery fournie dans le cadre de la distribution (Quickstart). | Adobe recommande aux clients qui ont encore besoin de l’interface utilisateur jQuery pour leur code de l’ajouter à leur base de code de projet. |  |
+| Développeurs | Bibliothèque cliente jQuery Animation (`granite.jquery.animation`). Adobe ne prévoit pas de gérer ni de mettre à jour la bibliothèque cliente jQuery Animation fournie dans le cadre de la distribution (Quickstart). | Adobe recommande aux clients qui ont toujours besoin d’animations jQuery pour leur code de l’ajouter à leur base de code de projet. |  |
+| Développeurs | Bibliothèque cliente Handlebars. Adobe ne prévoit pas de gérer ni de mettre à jour la bibliothèque cliente Handlebar fournie dans le cadre de la distribution (Quickstart). | Adobe recommande aux clientes et clients qui ont toujours besoin de `Handlebars` pour leur code de l’ajouter à leur base de code de projet. |  |
+| Développeurs | Bibliothèque cliente Lawnchair. Adobe ne prévoit pas de gérer ni de mettre à jour la bibliothèque cliente Lawnchair fournie dans le cadre de la distribution (Quickstart). | Adobe recommande aux clients qui ont toujours besoin de Lawnchair pour leur code de l’ajouter à leur base de code de projet. |  |
+| Développeurs | `Granite.Sling.js`Bibliothèque cliente. Adobe ne prévoit pas d’améliorer davantage la bibliothèque cliente Granite.Sling.js fournie dans le cadre de la distribution (Quickstart). | Adobe recommande aux clients qui dépendent de la capacité de la bibliothèque de restructurer leur code de ne plus l’utiliser. |  |
 | Développeurs | Utilisation de YUI pour compresser/réduire les bibliothèques clientes JavaScript. Adobe ne prévoit pas de mettre à jour la bibliothèque YUI. Jusqu’à la version AEM 6.4, YUI était l’option par défaut pour réduire les bibliothèques JavaScript avec l’option permettant de basculer vers Google Closure Compiler (GCC). À partir d’AEM 6.5, GCC est l’option par défaut. | Adobe recommande aux clients qui effectuent une mise à niveau vers AEM 6.5 de passer à GCC pour leur implémentation. |  |
 | Développeurs | Éditeur de boîte de dialogue pour l’interface utilisateur classique dans CRXDE Lite. Adobe ne prévoit pas d’améliorer l’éditeur de boîte de dialogue pour l’interface utilisateur classique fourni avec la distribution (Quickstart) | Aucun remplacement n’est disponible. |  |
 | Forms | L’intégration d’AEM Forms à AEM Mobile est obsolète. | Aucun remplacement n’est disponible. |  | Développeurs | Éditeur de boîte de dialogue pour l’interface utilisateur classique dans CRXDE Lite. Adobe ne prévoit pas d’améliorer l’éditeur de boîte de dialogue pour l’interface utilisateur classique fourni avec la distribution (Quickstart) | Aucun remplacement n’est disponible. |  |
-| Développeurs | Bibliothèque cliente Lodash / Underscore. Adobe ne prévoit pas de gérer ni de mettre à jour la bibliothèque cliente Lodash/Underscore avec la distribution (Quickstart). | Adobe recommande aux clientes et clients qui ont toujours besoin de Lodash/Underscore pour leur code de l’ajouter à leur base de code de projet. |  |
-| Screens | Adobe ne prévoit pas de continuer à gérer et à mettre à jour le lot com.adobe.cq.screens.mq.activemq et les configurations associées utilisées pour la configuration de 2Publishers. | Adobe recommande que les clientes et clients qui nécessitent encore la configuration de 2Publishers utilisent l’approche load-balancer. |  |
+| Développeurs | Bibliothèque cliente Lodash / Underscore. Adobe ne prévoit pas de gérer ni de mettre à jour la bibliothèque cliente Lodash/underscore fournie dans le cadre de la distribution (Quickstart). | Adobe recommande aux clients qui ont toujours besoin de Lodash/Underscore pour leur code de l’ajouter à leur base de code de projet. |  |
 
 ## Fonctionnalités supprimées {#removed-features}
 
@@ -77,6 +76,7 @@ Cette section répertorie les fonctionnalités qui ont été supprimées d’AEM
 | Développeurs | Supprimez la prise en charge de `customJavaScriptPath` dans le gestionnaire de bibliothèque client HTML. | Aucun remplacement |  |
 | [!DNL Assets] | La fonction de déchargement des ressources est supprimée dans [!DNL Adobe Experience Manager] 6.5. | Aucun remplacement n’est disponible. |  |
 | Cache | `system/console/slingjsp` a été supprimé et n’est plus disponible dans AEM 6.5. | Les classes et le cache Slightly sont stockés sous le lot Apache Sling Commons FileSystem ClassLoader. Vous pouvez vérifier le numéro de lot dans la console Web d’AEM et supprimer le dossier de cache directement du système de fichiers (`crx-quickstart/launchpad/felix/bundle<ID>`). |  |
+| Screens | Adobe ne prévoit pas de gérer ni de mettre à jour le lot com.adobe.cq.screens.mq.activemq et les configurations associées. | Aucun remplacement n’est disponible. |  |
 
 <!-- ## Pre-announcement for next release {#pre-announcement-for-next-release}
 
