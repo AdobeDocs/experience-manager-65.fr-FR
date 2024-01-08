@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 3adf2b03ac4e227af2b33099c24ec177b8ea7e1b
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 100%
+source-wordcount: '1227'
+ht-degree: 90%
 
 ---
 
@@ -73,13 +73,26 @@ Utilisez les options de commande Java™ pour définir les paramètres de mémoi
 
 Définissez le paramètre d’allocation de mémoire lors du démarrage de la gestion de contenu web d’AEM à partir de la ligne de commande. Les scripts start/stop de la gestion de contenu web d’AEM ou les scripts personnalisés pour gérer la gestion de contenu web d’AEM peuvent également être modifiés pour définir les paramètres de mémoire requis.
 
-Si vous avez déjà défini les segments de mémoire sur 512 Mo, vous souhaiterez peut-être continuer à analyser l’erreur de mémoire en créant une image mémoire des segments de mémoire :
+Si vous avez déjà défini la taille de votre tas sur 512 Mo, vous souhaiterez peut-être analyser davantage le problème de mémoire en créant un vidage de tas.
 
 Pour créer automatiquement un vidage de segments de mémoire lorsque la mémoire est insuffisante, utilisez la commande suivante :
 
 java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
-Cette méthode génère un fichier d’image mémoire des segments de mémoire (**java_...hprof**) chaque fois que le processus manque de mémoire. Le processus peut continuer à s’exécuter une fois l’image mémoire des segments de mémoire générée. En règle générale, un fichier d’image mémoire des segments de mémoire suffit à éclaircir le problème.
+Cette méthode génère un fichier d’image mémoire des segments de mémoire (**java_...hprof**) chaque fois que le processus manque de mémoire. Le processus peut continuer à s’exécuter une fois le vidage de tas généré.
+
+Souvent, trois fichiers de vidage de tas, collectés sur une période donnée, sont nécessaires pour analyser le problème :
+
+* Avant qu’un échec ne se produise
+* Lors de l’échec 1
+* Lors de l’échec 2
+* *Idéalement, il serait également préférable de collecter des informations une fois l’événement résolu.*
+
+Ils peuvent être comparés pour voir les modifications et la façon dont les objets utilisent la mémoire.
+
+>[!NOTE]
+>
+>Si vous collectez régulièrement de telles informations, ou si vous êtes habitué à lire des vidages de tas, un seul fichier de vidage de tas peut suffire à analyser le problème.
 
 ### Après avoir double-cliqué sur AEM Quickstart, l’écran d’accueil d’AEM ne s’affiche pas dans le navigateur. {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
