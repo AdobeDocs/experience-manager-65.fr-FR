@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '6469'
 ht-degree: 99%
@@ -22,7 +22,7 @@ ht-degree: 99%
 >
 >Pour plus d’informations sur le dépannage et la résolution des problèmes de performances, voir également l’[arborescence de la performance](/help/sites-deploying/performance-tree.md).
 >
->De plus, vous pouvez lire un article de la base de connaissances pour obtenir des [Conseils pour le réglage des performances](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=fr).
+>De plus, vous pouvez lire un article de la base de connaissances pour obtenir des [Conseils pour le réglage des performances](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
 
 L’un des problèmes majeurs est le temps que met votre site web pour répondre aux requêtes des visiteurs et visiteuses. Bien que cette valeur varie pour chaque requête, une valeur cible moyenne peut être définie. Une fois que cette valeur se révèle à la fois réalisable et gérable, elle peut être utilisée pour surveiller les performances du site web et indiquer le développement de problèmes potentiels.
 
@@ -39,7 +39,7 @@ Cet environnement intègre le contenu que vous mettez à la disposition de vos u
 >[!NOTE]
 >
 >* Une fois l’optimisation des performances configurée, suivez les procédures dans [Tough Day](/help/sites-developing/tough-day.md) pour tester l’environnement en le soumettant à une charge importante.
->* Consultez également la section [Conseils pour le réglage des performances.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=fr)
+>* Consultez également la section [Conseils pour le réglage des performances.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
 
 ## Méthodologie d’optimisation des performances {#performance-optimization-methodology}
 
@@ -201,7 +201,7 @@ Certains aspects d’AEM (et/ou du référentiel sous-jacent) peuvent être conf
 
 >[!NOTE]
 >
->Voir [Optimisation des performances](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=fr).
+>Voir [Optimisation des performances](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
 
 ### Indexation de recherche {#search-indexing}
 
@@ -492,7 +492,7 @@ Le Dispatcher propose un certain nombre de mécanismes intégrés que vous pouve
 >
 >En général, de nombreuses stratégies de mise en cache impliquent de sélectionner les URL appropriées et de ne pas s’en tenir à ces données supplémentaires.
 >
->Avec la version 4.1.11 du Dispatcher, vous pouvez également mettre en cache les en-têtes de réponse, consultez [Mise en cache des en-têtes de réponse HTTP](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring-the-dispatcher-cache-cache).
+>Avec la version 4.1.11 du Dispatcher, vous pouvez également mettre en cache les en-têtes de réponse, consultez [Mise en cache des en-têtes de réponse HTTP](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
 >
 
 ### Calcul du ratio de cache du Dispatcher {#calculating-the-dispatcher-cache-ratio}
@@ -528,7 +528,7 @@ Avec le Dispatcher version 4.1.11, vous pouvez mettre en cache les en-têtes de
 
 #### Contournement des paramètres d’URL {#avoid-url-parameters}
 
-Si possible, évitez les paramètres d’URL des pages que vous souhaitez mettre en cache. Par exemple, si vous disposez d’une galerie d’images, l’URL suivante n’est jamais mise en cache (sauf si le Dispatcher est [configuré en conséquence](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring-the-dispatcher-cache-cache)) :
+Si possible, évitez les paramètres d’URL des pages que vous souhaitez mettre en cache. Par exemple, si vous disposez d’une galerie d’images, l’URL suivante n’est jamais mise en cache (sauf si le Dispatcher est [configuré en conséquence](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)) :
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -616,7 +616,7 @@ En ce qui concerne le mélange de contenu public et restreint sur une page, envi
 
 #### Connexions persistantes {#sticky-connections}
 
-Les [connexions persistantes](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr#the-benefits-of-load-balancing) garantissent que les documents d’un utilisateur ou d’une utilisatrice sont tous composés sur le même serveur. Si un utilisateur ou une utilisatrice quitte ce dossier et y revient ultérieurement, la connexion reste établie. Pour contenir tous les documents qui nécessitent des connexions persistantes sur le site web, définissez un dossier. Essayez de ne pas y avoir d’autres documents. Ce scénario a un impact sur l’équilibrage de la charge si vous utilisez des pages personnalisées et des données de session.
+Les [connexions persistantes](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) garantissent que les documents d’un utilisateur ou d’une utilisatrice sont tous composés sur le même serveur. Si un utilisateur ou une utilisatrice quitte ce dossier et y revient ultérieurement, la connexion reste établie. Pour contenir tous les documents qui nécessitent des connexions persistantes sur le site web, définissez un dossier. Essayez de ne pas y avoir d’autres documents. Ce scénario a un impact sur l’équilibrage de la charge si vous utilisez des pages personnalisées et des données de session.
 
 #### Types MIME {#mime-types}
 

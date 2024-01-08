@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3246'
-ht-degree: 90%
+ht-degree: 92%
 
 ---
 
@@ -77,7 +77,7 @@ Votre composant est rendu dans le langage [HTML](https://www.w3schools.com/htmL/
 
 ### Utiliser le langage de modèle HTML {#using-the-html-template-language}
 
-Le [langage de modèle HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) a été introduit avec AEM 6.0 et remplace JSP (JavaServer Pages) en tant que système de modèle côté serveur privilégié et recommandé pour HTML. Pour les développeurs et développeuses web qui souhaitent créer des sites eb d’entreprise robustes, le langage HTL permet d’améliorer la sécurité et l’efficacité du développement.
+Le [langage de modèle HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=fr) a été introduit avec AEM 6.0 et remplace JSP (JavaServer Pages) en tant que système de modèle côté serveur privilégié et recommandé pour HTML. Pour les développeurs et développeuses web qui souhaitent créer des sites eb d’entreprise robustes, le langage HTL permet d’améliorer la sécurité et l’efficacité du développement.
 
 >[!NOTE]
 >
@@ -95,13 +95,13 @@ Le mécanisme permettant de séparer la logique de l’aspect aide à définir c
 
 ### Utiliser JavaScript {#using-javascript}
 
-[L’Use-API JavaScript HTL permet à un fichier HTL d’accéder au code d’assistance écrit en JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=fr). Vous pouvez ainsi utiliser du code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
+[L’Use-API JavaScript HTL permet à un fichier HTL d’accéder au code d’assistance écrit en JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=fr). Cela vous permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
 
 ### Utiliser les bibliothèques HTML côté client {#using-client-side-html-libraries}
 
 Les sites web modernes reposent largement sur un traitement côté client piloté par un code JavaScript et CSS complexe. Organiser et optimiser la diffusion de ce code est une opération qui peut se révéler complexe.
 
-Pour résoudre ce problème, AEM fournit **Dossiers de bibliothèques côté client**, qui vous permet de stocker votre code côté client dans le référentiel, de l’organiser en catégories et de définir quand et comment chaque catégorie de code doit être diffusée au client. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page Web finale pour charger le code correct.
+Pour résoudre ce problème, AEM fournit des **dossiers de bibliothèques côté client** qui permettent de stocker le code côté client dans le référentiel, de le classer par catégorie et de définir quand et comment chaque catégorie de code doit être diffusée au client ou à la cliente. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page Web finale pour charger le code correct.
 
 Consultez [Utilisation de bibliothèques HTML côté client](/help/sites-developing/clientlibs.md) pour plus d’informations.
 
@@ -194,7 +194,7 @@ Pour consulter des exemples, voir :
 >
 >Voir :
 >
->* la session AEM Gems sur [Personnalisation des champs de boîte de dialogue](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=fr).
+>* la session AEM Gems sur [Personnalisation des champs de boîte de dialogue](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 >* l’exemple de code correspondant traité dans [Exemple de code - Comment personnaliser les champs de boîte de dialogue](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
@@ -451,7 +451,7 @@ Lors de la migration d’un composant de l’IU classique vers un composant pouv
 
 * Les composants :
 
-   * Migrer [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) code qui utilise des fonctions spécifiques à l’IU classique
+   * migrent le code [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) qui utilise des fonctions spécifiques à l’IU classique ;
    * Plugin RTE. Pour plus d’informations, consultez [Configuration de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md) ;
    * [migrent le code `cq:listener`](#migrating-cq-listener-code) qui utilise des fonctions spécifiques à l’IU classique.
 
@@ -460,9 +460,9 @@ Lors de la migration d’un composant de l’IU classique vers un composant pouv
    * Créez une boîte de dialogue à utiliser dans l’interface utilisateur tactile. Pour des raisons de compatibilité, l’IU tactile peut utiliser la définition d’une boîte de dialogue d’IU classique, si aucune boîte de dialogue n’a été définie pour l’IU tactile.
    * Les [Outils de modernisation d’AEM](/help/sites-developing/modernization-tools.md) sont fournis pour vous aider à étendre les composants existants.
    * Le [mappage d’ExtJS aux composants de l’IU Granite](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) fournit une présentation pratique des xtypes ExtJS et des types de nœud avec les types de ressources équivalents dans l’IU Granite.
-   * Personnalisation des champs ; pour plus d’informations, consultez la session AEM Gems sur la [Personnalisation des champs de boîte de dialogue](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=fr).
+   * Personnalisation des champs ; pour plus d’informations, consultez la session AEM Gems sur la [Personnalisation des champs de boîte de dialogue](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
    * Migration des types vers la [Validation de l’interface utilisateur Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * Utilisation des listeners JS ; pour plus d’informations, voir [Gestion des événements de champ](#handling-field-events) et la session AEM Gems sur la [Personnalisation des champs de boîte de dialogue](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=fr).
+   * Utilisation des listeners JS ; pour plus d’informations, voir [Gestion des événements de champ](#handling-field-events) et la session AEM Gems sur la [Personnalisation des champs de boîte de dialogue](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 
 ### Migration du code cq:listener {#migrating-cq-listener-code}
 

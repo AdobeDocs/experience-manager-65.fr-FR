@@ -8,10 +8,10 @@ topic-tags: configuring
 docset: aem65
 feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '3389'
-ht-degree: 28%
+source-wordcount: '3363'
+ht-degree: 25%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 28%
 Les agents de réplication sont au coeur de Adobe Experience Manager (AEM) comme mécanisme utilisé pour :
 
 * [Publier (activer)](/help/sites-authoring/publishing-pages.md#activatingcontent) contenu d’un environnement de création vers un environnement de publication.
-* Purge explicite du contenu du cache de Dispatcher.
+* purger explicitement du contenu du cache de Dispatcher ;
 * Renvoyer les entrées utilisateur (par exemple, les entrées de formulaire) de l’environnement de publication vers l’environnement de création (sous le contrôle de l’environnement de création).
 
 Les requêtes [en file d&#39;attente](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjobeventhandler) à l’agent approprié pour le traitement.
@@ -106,7 +106,7 @@ Les agents suivants sont disponibles dans une installation AEM standard :
 Utilisé pour la réplication de l’auteur à la publication.
 
 * Le Dispatcher Flush
-Utilisé pour gérer le cache du Dispatcher. Consultez la section [Invalidation du cache du Dispatcher depuis l’environnement de création](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=fr#invalidating-dispatcher-cache-from-the-authoring-environment) et [Invalidation du cache du Dispatcher depuis l’instance de publication](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=fr#invalidating-dispatcher-cache-from-a-publishing-instance) pour plus d’informations.
+Utilisé pour gérer le cache du Dispatcher. Consultez la section [Invalidation du cache du Dispatcher depuis l’environnement de création](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) et [Invalidation du cache du Dispatcher depuis l’instance de publication](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=fr#invalidating-dispatcher-cache-from-a-publishing-instance) pour plus d’informations.
 
 * [Réplication inverse](#reverse-replication-publish-to-author)
 Utilisé pour la réplication de la publication vers l’auteur. La réplication inverse n’est pas utilisée pour les fonctionnalités de communautés, telles que les forums, les blogs et les commentaires. Elle est désactivée, puisque la boîte d’envoi n’est pas activée. L’utilisation de la réplication inverse nécessite une configuration personnalisée.
@@ -147,13 +147,13 @@ Lors de la configuration d’un agent de réplication à partir de la console Ou
    * **Par défaut**: défini si l’agent doit être automatiquement sélectionné.
    * **Purge du Dispatcher**: sélectionnez cette option si l’agent doit être utilisé pour vider le cache de Dispatcher.
 
-* **Intervalle entre deux tentatives**
+* **Délai de reprise**
 
   Délai (délai d’attente en millisecondes) entre deux reprises en cas de problème.
 
   Valeur par défaut : `60000`
 
-* **ID utilisateur de l’agent**
+* **Agent User Id**
 
   Selon l’environnement, l’agent utilise ce compte utilisateur pour :
 
@@ -184,11 +184,11 @@ Lors de la configuration d’un agent de réplication à partir de la console Ou
 
   Valeur par défaut : `Info`
 
-* **Utiliser pour une réplication inverse**
+* **Utilisation pour la réplication inverse**
 
   Indique si cet agent est utilisé pour la réplication inverse ; renvoie l’entrée utilisateur de l’environnement Publier sur l’auteur .
 
-* **Mise à jour de l’alias**
+* **Mise à jour des alias**
 
   La sélection de cette option active les demandes d’invalidation de chemin d’alias ou de redirection vers un microsite à Dispatcher. En outre, consultez la section [Configuration d’un agent Dispatcher Flush](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent).
 
@@ -223,11 +223,11 @@ Lors de la configuration d’un agent de réplication à partir de la console Ou
 
   Hôte pour l’authentification NTLM.
 
-* **Activer Relaxed SSL**
+* **Activer le protocole SSL décontracté**
 
   Activez cette option si vous souhaitez que les certificats SSL auto-certifiés soient acceptés.
 
-* **Autoriser les certificats ayant expiré**
+* **Autoriser les certificats expirés**
 
   Activez cette option si vous souhaitez que les certificats SSL expirés soient acceptés.
 
@@ -300,7 +300,7 @@ Les paramètres suivants ne sont nécessaires que si un proxy est nécessaire :
 
   Activez cette option afin que vous puissiez fermer la connexion après chaque requête.
 
-* **Dépassement du délai de connexion**
+* **Délai de connexion**
 
   Timeout (en millisecondes) à appliquer lors de la tentative d’établissement d’une connexion.
 
@@ -324,7 +324,7 @@ Ces paramètres permettent de définir des déclencheurs pour la réplication au
 
   Ici, une réplication par cet agent est automatiquement déclenchée lorsqu’une page est modifiée. Utilisé pour les agents de purge de Dispatcher, mais également pour la réplication inverse.
 
-* **En cas de distribution**
+* **À la distribution**
 
   Si cette case est cochée, l’agent réplique automatiquement tout contenu marqué pour distribution lors de sa modification.
 
@@ -332,15 +332,15 @@ Ces paramètres permettent de définir des déclencheurs pour la réplication au
 
   Cela déclenche la réplication automatique (pour activer ou désactiver une page selon le cas) lorsque les heures d’activation ou de désactivation définies pour une page se produisent. Il est principalement utilisé pour les agents de purge de Dispatcher.
 
-* **A réception**
+* **À réception**
 
   Si cette case est cochée, les chaînes d’agent se répliquent lors de la réception d’événements de réplication.
 
-* **Aucune mise à jour d&#39;état**
+* **Aucune mise à jour d’état**
 
   Lorsque cette case est cochée, l’agent ne force pas la mise à jour de l’état de réplication.
 
-* **Aucune création de versions différentes**
+* **Aucun contrôle de version**
 
   Lorsque cette case est cochée, l’agent ne force pas le contrôle de version des pages activées.
 
@@ -530,7 +530,7 @@ Pour surveiller un agent de réplication :
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-   Vous pouvez effectuer les opérations suivantes :
+   Vous pouvez y effectuer les opérations suivantes :
 
    * Vérifiez si l’agent est activé.
    * Regardez la cible de toutes les réplications.

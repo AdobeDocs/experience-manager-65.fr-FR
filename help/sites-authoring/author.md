@@ -2,10 +2,10 @@
 title: Création
 description: Concepts de création et de publication dans Adobe Experience Manager 6.5.
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 51%
+source-wordcount: '547'
+ht-degree: 45%
 
 ---
 
@@ -31,7 +31,7 @@ Dans l’environnement de création, la fonctionnalité d’AEM est disponible d
 
 ### Environnement de création {#author-environment}
 
-L’auteur travaille dans ce qu’on appelle l’**environnement de création**. Il s’agit d’une interface facile à utiliser (interface utilisateur graphique) pour créer le contenu. Il se trouve derrière le pare-feu d’une entreprise qui fournit une protection complète et requiert que l’auteur se connecte à l’aide d’un compte auquel les droits d’accès appropriés ont été attribués.
+L’auteur ou l’autrice travaille dans l’**environnement de création**. Vous bénéficiez ainsi d’une interface conviviale (interface utilisateur graphique) pour créer le contenu. Il se trouve derrière le pare-feu d’une entreprise qui fournit une protection complète et requiert que l’auteur se connecte à l’aide d’un compte auquel les droits d’accès appropriés ont été attribués.
 
 >[!NOTE]
 >
@@ -81,4 +81,4 @@ Lorsque le site AEM est un [site communautaire](/help/communities/overview.md), 
 
 #### Dispatcher {#dispatcher}
 
-Afin que les visiteurs et visiteuses de votre site web bénéficient de performances optimales, le **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) met en œuvre des mécanismes de mise en cache et d’équilibrage de la charge.**
+Pour optimiser les performances des visiteurs de votre site Web, la variable **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr)** met en oeuvre l’équilibrage de charge et la mise en cache.

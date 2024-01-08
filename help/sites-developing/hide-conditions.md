@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 44%
+source-wordcount: '582'
+ht-degree: 71%
 
 ---
 
@@ -19,9 +19,9 @@ Vous pouvez utiliser des conditions de masquage pour déterminer si une ressourc
 
 ## Vue d’ensemble {#overview}
 
-Les boîtes de dialogue peuvent devenir complexes avec de nombreuses options pour l’utilisateur, qui ne peut utiliser qu’une fraction des options à sa disposition. Cela peut entraîner une surcharge des expériences de l’interface utilisateur pour les utilisateurs.
+Les boîtes de dialogue peuvent devenir complexes avec de nombreuses options pour l’utilisateur, qui ne peut utiliser qu’une fraction des options à sa disposition. Cela peut entraîner une surcharge des expériences de l’interface utilisateur pour les utilisateurs et utilisatrices.
 
-En utilisant les conditions de masquage, les administrateurs, les développeurs et les super-utilisateurs ont un moyen de masquer les ressources en fonction d’un ensemble de règles. Cette fonction leur permet de décider quelles ressources afficher lorsqu’un auteur modifie le contenu.
+En utilisant les conditions de masquage, les administrateurs et administratrices, les développeurs et développeuses, et les super-utilisateurs et super-utilisatrices disposent d’un moyen de masquer les ressources en fonction d’un ensemble de règles. Cette fonction leur permet de décider quelles ressources afficher lorsqu’un créateur ou une créatrice modifie le contenu.
 
 >[!NOTE]
 >
@@ -53,13 +53,13 @@ Lors de la définition de votre expression de masquage, tenez compte des points 
 
 ## Exemple {#example}
 
-Vous trouverez des exemples de conditions de masquage dans AEM et dans les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) en particulier. Par exemple, la variable [composant principal de liste](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=fr).
+Vous trouverez des exemples de conditions de masquage dans AEM et dans les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) en particulier. Par exemple, envisagez la variable [composant principal de liste](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=fr).
 
 [En utilisant l’éditeur de modèles](/help/sites-authoring/templates.md), l’auteur de modèles peut définir, dans la boîte de dialogue de conception, les options du composant de liste mises à la disposition de l’auteur de pages. Des options telles que l’autorisation d’une liste statique, d’une liste de pages enfants, d’une liste de pages balisées, etc., peuvent être activées ou désactivées.
 
-Si un auteur de modèles choisit de désactiver l’option des pages enfants, une propriété de conception est définie et une condition de masquage est évaluée par rapport à celle-ci, ce qui entraîne l’absence de rendu de l’option pour l’auteur de pages.
+Si un créateur ou une créatrice de modèles choisit de désactiver l’option des pages enfants, une propriété de conception est définie et une condition de masquage est évaluée par rapport à cette propriété, ce qui fait que l’option ne s’affiche pas pour le créateur ou la créatrice de la page.
 
-1. Par défaut, l’auteur de la page peut utiliser le composant principal Liste pour créer une liste à l’aide de pages enfants en sélectionnant l’option . **Pages enfants**.
+1. Par défaut, le créateur ou la créatrice de la page peut utiliser le composant principal Liste pour créer une liste à l’aide de pages enfants en sélectionnant l’option **Pages enfants**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 

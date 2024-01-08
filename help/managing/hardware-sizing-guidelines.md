@@ -7,9 +7,9 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '2798'
+source-wordcount: '2846'
 ht-degree: 38%
 
 ---
@@ -90,7 +90,7 @@ L’espace disque requis dépend largement du volume et du type de votre applica
 * le volume de rendus de ressources DAM qui seront générés ;
 * la croissance globale du contenu au fil du temps ;
 
-L’espace disque est surveillé en permanence pendant le nettoyage des révisions en ligne et hors ligne. Si l’espace disque disponible tombe en dessous d’une valeur critique, le processus est annulé. La valeur critique est de 25 % de l’empreinte disque actuelle du référentiel et elle n’est pas configurable. Adobe recommande de dimensionner le disque au moins deux ou trois fois plus grand que la taille du référentiel, y compris la croissance estimée.
+L’espace disque est surveillé en permanence pendant le nettoyage des révisions en ligne et hors ligne. Si l’espace disque disponible tombe en dessous d’une valeur critique, le processus est annulé. La valeur critique est de 25 % de l’empreinte disque actuelle du référentiel et elle n’est pas configurable. Adobe recommande de dimensionner le disque au moins deux ou trois fois plus grand que la taille du référentiel, y compris la croissance estimée.
 
 Envisagez une configuration de tableaux redondants de disques indépendants (RAID, par exemple, RAID10) pour la redondance des données.
 

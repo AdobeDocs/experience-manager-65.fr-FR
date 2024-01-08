@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: deploying
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '5811'
-ht-degree: 68%
+source-wordcount: '5752'
+ht-degree: 67%
 
 ---
 
@@ -22,7 +22,7 @@ Chaque mise à jour du référentiel crée une révision du contenu. Par conséq
 
 Une version en ligne de cette fonctionnalité, appelée Nettoyage des révisions en ligne, a été introduite dans AEM 6.3 et les versions ultérieures. Par rapport au nettoyage des révisions hors ligne où l’instance AEM doit être arrêtée, le nettoyage des révisions en ligne peut être exécuté pendant que l’instance AEM est en ligne. Le nettoyage des révisions en ligne est activé par défaut. Il s’agit de la méthode recommandée pour effectuer un nettoyage des révisions.
 
-**Remarque** : [Regardez la vidéo](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=en) pour découvrir comment utiliser le nettoyage des révisions en ligne.
+**Remarque** : [Regardez la vidéo](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) pour découvrir comment utiliser le nettoyage des révisions en ligne.
 
 Le processus de nettoyage des révisions se compose de trois phases : **estimation**, **compaction**, et **nettoyage**. L’estimation détermine si la phase suivante (compression) doit être exécutée ou non en fonction de la quantité d’espace mémoire pouvant être récupérée. Lors de la phase de compression, les segments et les fichiers tar sont réécrits sans aucun contenu inutilisé. La phase de nettoyage supprime ensuite les anciens segments, y compris les déchets qu’ils peuvent contenir. Le mode hors ligne peut généralement libérer de l’espace, car le mode en ligne doit tenir compte de AEM jeu de travail qui empêche la collecte de segments supplémentaires.
 
@@ -382,7 +382,7 @@ Parfois, l’alternance entre les modes de compression de la queue et complet re
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td><strong>Où trouver les statistiques des dernières exécutions de nettoyage des révisions en ligne ?</strong></td>
+   <td><strong>Où trouver les statistiques des dernières exécutions de nettoyage des révisions en ligne ?</strong></td>
    <td><p>L’état, la progression et les statistiques sont présentés via JMX (<code>SegmentRevisionGarbageCollection</code> MBean). Pour plus d’informations sur le MBean <code>SegmentRevisionGarbageCollection</code>, lisez le <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">paragraphe suivant</a>.</p> <p>Les progrès peuvent être suivis à partir de l’attribut <code>EstimatedRevisionGCCompletion</code> de  <code>SegmentRevisionGarbageCollection MBean.</code></p> <p>Vous pouvez obtenir une référence du MBean à l’aide de la variable <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>.</p> <p>Les statistiques ne sont disponibles que depuis le dernier démarrage du système. Des outils de surveillance externes peuvent être utilisés pour conserver les données au-delà du temps de disponibilité AEM. Consultez la <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">documentation AEM pour joindre les vérifications d’intégrité à Nagios en tant qu’exemple d’outil de surveillance externe</a>.</p> </td>
    <td> </td>
   </tr>
@@ -523,7 +523,7 @@ Le fichier error.log est détaillé en cas d’incident au cours du processus de
   </tr>  
   <tr>
     <td>Estimation</td>
-    <td>TarMK GC #2 : estimation ignorée car la compression est suspendue.</td>
+    <td>TarMK GC #2 : estimation ignorée car la compression est en pause.</td>
     <td>La phase d’estimation est ignorée lorsque la compression est désactivée par configuration sur le système.</td>
     <td>Activation du nettoyage des révisions en ligne.</td>
   </td>
@@ -537,7 +537,7 @@ Le fichier error.log est détaillé en cas d’incident au cours du processus de
   </tr>
   <tr>
     <td>Compression</td>
-    <td>TarMK GC #2 : compression en pause.</td>
+    <td>TarMK GC #2 : compression suspendue.</td>
     <td>Tant que la phase de compression est mise en pause par la configuration, ni la phase d’estimation, ni la phase de compression ne sont exécutées.</td>
     <td>Activation du nettoyage des révisions en ligne.</td>
   </td>
@@ -558,7 +558,7 @@ Le fichier error.log est détaillé en cas d’incident au cours du processus de
   </tr>
   <tr>
     <td>Nettoyage</td>
-    <td>TarMK GC #2 : nettoyage interrompu.</td>
+    <td>TarMK GC #2 : le nettoyage interrompu.</td>
     <td>Le nettoyage a été annulé en arrêtant le référentiel. Aucun impact sur la cohérence n’est attendu. En outre, l’espace disque ne sera probablement pas récupéré dans sa totalité. Il sera récupéré lors du prochain cycle de nettoyage des révisions.</td>
     <td>Découvrez pourquoi le référentiel s’est arrêté et essayez d’éviter de l’éteindre pendant les périodes de maintenance.</td>
   </td>

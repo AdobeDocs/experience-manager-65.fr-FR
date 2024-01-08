@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 62%
@@ -182,7 +182,7 @@ Pour exporter un fragment d’expérience d’AEM vers Target (après avoir spé
 
 ## Utilisation de vos fragments d’expérience dans Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-Après avoir effectué les tâches précédentes, le fragment d’expérience s’affiche sur la page Offres dans Adobe Target. Consultez la [documentation spécifique de Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=fr) pour en savoir plus sur ce que vous pouvez y réaliser.
+Après avoir effectué les tâches précédentes, le fragment d’expérience s’affiche sur la page Offres dans Adobe Target. Consultez la [documentation spécifique de Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html) pour en savoir plus sur ce que vous pouvez y réaliser.
 
 >[!NOTE]
 >

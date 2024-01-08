@@ -7,7 +7,7 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3229'
 ht-degree: 99%
@@ -185,7 +185,7 @@ La **Division OU** crée une division dans le workflow, après laquelle une seul
 
 >[!NOTE]
 >
->Voir [Étape de la division OU](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html?lang=fr#use-a-variable)
+>Voir [Étape de la division OU](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)
 
 ![Branchement à l’aide de la division OU](assets/variables_orsplit_new.png)
 

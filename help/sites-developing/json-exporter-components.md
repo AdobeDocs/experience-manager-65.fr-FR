@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 6d127e14-767e-46ad-aaeb-0ce9dd14d553
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 68%
+source-wordcount: '471'
+ht-degree: 69%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 68%
 
 Les composants peuvent être adaptés pour générer l’exportation JSON de leur contenu en fonction d’un framework de modeleur.
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 L’exportation JSON est basée sur des [modèles Sling](https://sling.apache.org/documentation/bundles/models.html) et sur le framework d’[exportation des modèles Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) (lequel s’appuie lui-même sur des [annotations Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)).
 
@@ -32,7 +32,7 @@ Il faut d’abord définir un modèle Sling pour le composant.
 
 >[!NOTE]
 >
->Pour obtenir un exemple d’utilisation des modèles Sling, reportez-vous à la section [Développement d’exportateurs de modèles Sling dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=fr).
+>Pour obtenir un exemple d’utilisation des modèles Sling, voir [Développement d’exportateurs de modèles Sling dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=fr).
 
 La classe de mise en œuvre des modèles Sling doit être annotée comme suit :
 
@@ -48,7 +48,7 @@ En outre, cela indique que la classe de modèles Sling peut être adaptée dans 
 
 >[!NOTE]
 >
->Les annotations Jackson ne sont pas spécifiées au niveau de la classe de modèle Sling, mais plutôt au niveau de l’interface de modèle. Cela permet de s’assurer que l’exportation JSON est considérée comme faisant partie de l’API du composant.
+>Les annotations Jackson ne sont pas spécifiées au niveau de la classe de modèle Sling, mais plutôt au niveau de l’interface de modèle. Cela permet de s’assurer que l’exportation du code JSON est considéré comme faisant partie de l’API du composant.
 
 >[!NOTE]
 >
@@ -87,7 +87,7 @@ Vous pouvez trouver le code de cette page sur GitHub.
 
 ## Documentation connexe {#related-documentation}
 
-Pour plus d’informations, voir :
+Pour plus d’informations, voir :
 
 * la [rubrique Fragments de contenu du guide de l’utilisateur Assets](https://helpx.adobe.com/fr/erience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js).
 

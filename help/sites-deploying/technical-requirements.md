@@ -3,10 +3,10 @@ title: Exigences techniques
 description: Liste des plateformes clientes et serveur prises en charge pour Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3624'
-ht-degree: 86%
+ht-degree: 94%
 
 ---
 
@@ -97,7 +97,7 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
 | Azul Zulu OpenJDK 11 - 64 bits | A : pris en charge de `[3]` | |
 | Azul Zulu OpenJDK 8 - 64 bits | A : prise en charge de `[3]` | |
 
-1. Oracle est passé à un modèle de « support à long terme » (LTS) pour les produits Oracle Java™ SE. Java™ 9, Java™ 10 et Java™ 12 sont des versions non-LTS fournies par Oracle (consultez la [feuille de route de la prise en charge d’Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement de production, Adobe ne prend en charge que les versions LTS de Java™. La prise en charge et la distribution du JDK Oracle Java™ SE, y compris toutes les mises à jour de maintenance des versions LTS après la fin des mises à niveau publiques, sont directement prises en charge par Adobe pour tous les clients et clientes AEM utilisant la technologie Oracle Java™ SE. Consultez la [Politique de prise en charge Java™ pour Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
+1. Oracle est passé à un modèle de « support à long terme » (LTS) pour les produits Oracle Java™ SE. Java™ 9, Java™ 10 et Java™ 12 sont des versions non-LTS fournies par Oracle (consultez la [feuille de route de la prise en charge d’Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement de production, Adobe assure uniquement la prise en charge des versions LTS de Java™. La prise en charge et la distribution du JDK Oracle Java™ SE, y compris toutes les mises à jour de maintenance des versions LTS après la fin des mises à niveau publiques, sont directement prises en charge par Adobe pour tous les clients et clientes AEM utilisant la technologie Oracle Java™ SE. Consultez la [Politique de prise en charge Java™ pour Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
    **Important : Oracle Java™ 11 est pris en charge au moins jusqu’en septembre 2026. La prise en charge d’Oracle Java™ 17 est en cours de préparation.**
 
 1. IBM® JRE est pris en charge uniquement avec le serveur d’applications WebSphere®.
@@ -128,7 +128,7 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 | Apache Solr | Service de recherche | A : pris en charge |
 
 1. Le système de fichiers comprend le stockage de bloc compatible avec POSIX. Cela inclut la technologie de stockage réseau. Gardez à l’esprit que les performances du système de fichiers peuvent varier et avoir une incidence sur les performances globales. Chargez la version test d’AEM avec le système de fichiers réseau/distant.
-1. MongoDB Enterprise versions 4.2 et 4.4 nécessitent AEM 6.5 SP9 au minimum.
+1. MongoDB Enterprise versions 4.2 et 4.4 nécessitent AEM 6.5 SP9 au minimum.
 1. La fragmentation MongoDB n’est pas prise en charge dans AEM.
 1. Seul le moteur de stockage WiredTiger de MongoDB est pris en charge.
 1. Pris en charge pour les clients et clientes de mise à niveau d’AEM Forms. Non pris en charge pour les nouvelles installations.
@@ -142,7 +142,7 @@ Consultez la section [Déploiement de Communities](/help/communities/deploy-comm
 
 >[!NOTE]
 >
-MongoDB est un logiciel tiers qui n’est pas inclus dans le package de licences d’AEM. Pour plus d’informations, consultez la page [Politique de licence de MongoDB](https://www.mongodb.com/licensing/server-side-public-license/faq).
+MongoDB est un logiciel tiers non inclus dans le package de licence d’AEM. Pour plus d’informations, consultez la page [Politique de licence de MongoDB](https://www.mongodb.com/licensing/server-side-public-license/faq).
 >
 Pour tirer pleinement parti de votre déploiement AEM avec MongoDB, Adobe conseille d’utiliser la version MongoDB Enterprise sous licence afin de bénéficier d’une assistance professionnelle. Consultez la section [Déploiements recommandées](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) pour plus d’informations.
 >
@@ -164,9 +164,9 @@ Pour exécuter AEM 6.5 avec une base de données relationnelle prise en charge,
 
 ### Moteurs de servlet/serveurs d’applications {#servlet-engines-application-servers}
 
-Adobe Experience Manager peut s’exécuter en tant que serveur autonome (fichier JAR de démarrage rapide) ou en tant qu’application web au sein d’un serveur d’applications tiers (fichier WAR).
+Adobe Experience Manager peut s’exécuter en tant que serveur autonome (fichier JAR de démarrage rapide) ou en tant qu’application web dans un serveur d’applications tiers (fichier WAR).
 
-La version minimale requise de l’API Servlet est 3.1.
+La version minimale requise de l’API servlet est Servlet 3.1.
 
 | Plateforme | Niveau de prise en charge |
 |---|---|
@@ -190,7 +190,7 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 
 | **Plateforme** | **Niveau de prise en charge** |
 |---|---|
-| **Linux®, basé sur la distribution Red Hat®** | A : prise en charge de : `[1]` `[3]` |
+| **Linux®, basé sur la distribution Red Hat®** | A : prise en charge de : `[1]` `[3]` |
 | Linux, en fonction de la distribution Debian, incluse Ubuntu  | A : prise en charge de : `[1]` `[2]` |
 | Linux, en fonction de la distribution SUSE® | A : prise en charge de `[1]` |
 | Microsoft® Windows Server 2019 `[4]` | R : prise en charge restreinte des nouveaux contrats `[5]` |
@@ -251,7 +251,7 @@ Les serveurs web suivants sont pris en charge pour une utilisation avec Dispatch
 | Microsoft® IIS 10 (Internet Information Server) | A : pris en charge |
 | Microsoft® IIS 8.5 (Internet Information Server) | Z : non pris en charge |
 
-1. Les serveurs Web créés à partir du code source Apache httpd prennent autant en charge que la version de httpd sur laquelle ils sont basés. En cas de doute, demandez à Adobe de confirmer le niveau de prise en charge relatif au produit serveur correspondant. Les cas suivants :
+1. Les serveurs web créés à partir du code source Apache httpd prennent autant en charge que la version de httpd sur laquelle ils sont basés. En cas de doute, demandez à Adobe de confirmer le niveau de prise en charge relatif au produit serveur correspondant. Les cas suivants :
 
    1. Le serveur HTTP a été créé en utilisant uniquement les distributions source Apache officielles, ou
    1. Le serveur HTTP a été livré dans le cadre du système d’exploitation sur lequel il est exécuté. Exemples : serveur IBM® HTTP, serveur Oracle HTTP.
@@ -332,13 +332,13 @@ Mozilla Firefox, Google Chrome et Microsoft® Edge publient des mises à jour
 
 ### Navigateurs pris en charge pour les sites web {#supported-browsers-for-websites}
 
-En règle générale, la prise en charge des navigateurs pour les sites web rendus par AEM Sites dépend de l’implémentation des modèles de page d’AEM, de la conception et de la sortie des composants, et est donc du contrôle de la partie qui met en oeuvre ces parties.
+En règle générale, la prise en charge des navigateurs pour les sites web rendus par AEM Sites dépend de l’implémentation des modèles de page d’AEM, de la conception et de la sortie des composants, et relève donc de celui ou celle qui met en œuvre ces parties.
 
 ### Clients et clientes WebDAV {#webdav-clients}
 
 **Microsoft® Windows 7 et versions ultérieures**
 
-Lors de la connexion à Microsoft® Windows 7+ à une instance AEM non sécurisée avec SSL, l’authentification de base sur un réseau non sécurisé doit être activée sous Windows. Cela nécessite une modification du registre Windows du WebClient :
+Lors de la connexion avec Microsoft® Windows 7 et les versions ultérieures à une instance AEM non sécurisée avec SSL, l’authentification de base sur un réseau non sécurisé doit être activée sous Windows. Cela nécessite une modification du registre Windows du WebClient :
 
 1. Recherchez la sous-clé de registre :
 
@@ -358,11 +358,11 @@ Tout fonctionne sans problème, dans la mesure où aucune configuration particul
 
 Lorsqu’une adresse IP doit être spécifiée, vous pouvez effectuer une sélection (au besoin) parmi les options suivantes :
 
-* Adresse IPv6. Par exemple, `https://[ab12::34c5:6d7:8e90:1234]:4502`
+* Adresse IPv6. Par exemple, `https://[ab12::34c5:6d7:8e90:1234]:4502`.
 
-* Adresse IPv4. Par exemple, `https://123.1.1.4:4502`
+* Adresse IPv4. Par exemple, `https://123.1.1.4:4502`.
 
-* Nom du serveur. Par exemple, `https://www.yourserver.com:4502`
+* Nom du serveur. Par exemple, `https://www.yourserver.com:4502`.
 
 * le scénario par défaut de `localhost` est interprété pour les installations réseau IPv4 et IPv6. Par exemple, `https://localhost:4502`.
 
@@ -396,7 +396,7 @@ Si vous utilisez Dynamic Media sous Linux®, les conditions préalables ci-dess
 
 >[!NOTE]
 >
-Si les paramètres régionaux sont définis de sorte que LC_CTYPE n’est pas égal à `en_US.UTF-8`, cela empêchera Dynamic Media de fonctionner. Pour voir quelle est sa valeur, saisissez « locale » à l’invite de commande. S’il n’est pas correctement défini, définissez la variable d’environnement LC_CTYPE sur la chaîne vide en saisissant &quot;export LC_CTYPE=&quot; avant d’exécuter AEM.
+Si les paramètres régionaux sont définis de sorte que LC_CTYPE n’est pas égal à `en_US.UTF-8`, cela empêchera Dynamic Media de fonctionner. Pour voir quelle est sa valeur, saisissez « locale » à l’invite de commande. Si elle n’est pas définie correctement, définissez la variable d’environnement LC_CTYPE sur la chaîne vide en saisissant « export LC_CTYPE= » avant d’exécuter AEM.
 
 >[!NOTE]
 >
@@ -505,10 +505,10 @@ PDF Generator ne prend en charge que les versions allemande, anglaise, françai
 >
 En outre :
 >
-* PDF Generator requiert une version 32 bits de [Acrobat 2020 Classic track version 20.004.30006](https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html) ou Acrobat 2017 version 17.011.30078 pour effectuer la conversion.
+* PDF Generator requiert la version 32 bits d’[Acrobat 2020 (suivi Classic) version 20.004.30006](https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html) ou d’Acrobat 2017 version 17.011.30078 pour effectuer la conversion.
 * Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux®.
-* PDF Generator ne prend en charge que la version commerciale 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion sur le système d’exploitation Windows.
-* PDF Generator prend en charge les versions 32 bits et 64 bits d’OpenOffice sur le système d’exploitation Linux®.
+* PDF Generator prend uniquement en charge la version commerciale 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion sur le système d’exploitation Windows.
+* PDF Generator prend en charge les versions 32 et 64 bits d’OpenOffice sous le système d’exploitation Linux®.
 * PDF Generator ne prend pas en charge Microsoft® Office 365.
 * Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont uniquement prises en charge sous Windows.
 * Une version d’Acrobat est fournie avec AEM Forms pour activer la fonctionnalité PDF Generator. Accédez à la version groupée uniquement par programmation avec AEM Forms, pendant la durée de la licence AEM Forms et pour une utilisation avec AEM Forms PDF Generator. Pour plus d’informations, consultez la description du produit AEM Forms correspondant à votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)).

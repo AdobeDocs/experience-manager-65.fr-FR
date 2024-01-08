@@ -2,10 +2,10 @@
 title: Optimisation des requêtes GraphQL.
 description: Découvrez comment optimiser vos requêtes GraphQL lors du filtrage, de la pagination et du tri de vos fragments de contenu dans Adobe Experience Manager as a Cloud Service pour une diffusion de contenu sans interface.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1965'
-ht-degree: 61%
+source-wordcount: '1949'
+ht-degree: 60%
 
 ---
 
@@ -42,7 +42,7 @@ Voir :
 
 **Recommandation**
 
-Clients utilisant GraphQL *must* installez le fragment de contenu Experience Manager avec le package d’index GraphQL. Vous pouvez ainsi ajouter la définition d’index requise selon les fonctionnalités que vous utilisez réellement. L’échec de l’installation de ce package peut entraîner des requêtes GraphQL lentes ou en échec.
+Clients utilisant GraphQL *must* installez le fragment de contenu Experience Manager avec le package d’index GraphQL. Cela vous permet d’ajouter la définition d’index requise en fonction des fonctionnalités qu’ils utilisent réellement. L’échec de l’installation de ce package peut entraîner des requêtes GraphQL lentes ou en échec.
 
 Consultez les Notes de mise à jour pour connaître la version appropriée à votre Service Pack. Par exemple, pour le dernier Service Pack, voir [Installation du package d’index GraphQL pour les fragments de contenu Experience Manager](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) .
 
@@ -81,7 +81,7 @@ Les requêtes GraphQL et leurs réponses JSON peuvent être mises en cache si el
 
 Voir :
 
-* [Utilisation du réseau de diffusion de contenu dans AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr#using-dispatcher-with-a-cdn)
+* [Utilisation du réseau de diffusion de contenu dans AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
 
 #### Définition des en-têtes de contrôle du cache HTTP {#set-http-cache-control-headers}
 

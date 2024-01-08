@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 12%
+source-wordcount: '601'
+ht-degree: 5%
 
 ---
 
@@ -39,10 +39,10 @@ Lorsqu’elle est configurée pour prendre en charge la mise en cache de Dispatc
 
 ### Conditions requises {#requirements}
 
-* Dispatcher version 4.1.2 ou ultérieure (voir [Installation de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en) pour la dernière version)
+* Dispatcher version 4.1.2 ou ultérieure (voir [Installation de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=fr) pour la dernière version)
 * [Package ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
-   * Version 3.3.2 ou ultérieure
+   * Version 3.3.2 ou ultérieure
    * `ACS AEM Commons - Dispatcher Cache Control Header - Max Age` Configuration OSGi
 
 ### Configuration {#configuration}
@@ -76,7 +76,7 @@ Les exemples suivants utilisent des noms de propriété qui doivent probablement
 
 Voir également :
 
-* [Liste de contrôle de sécurité de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=fr)
+* [Liste de contrôle de sécurité de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)
 
 >[!NOTE]
 >

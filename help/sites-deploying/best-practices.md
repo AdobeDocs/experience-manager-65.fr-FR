@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 78%
+source-wordcount: '439'
+ht-degree: 74%
 
 ---
 
@@ -91,11 +91,11 @@ Les bonnes pratiques relatives aux performances sont répertoriées ici :
   <tr>
    <td>Bonnes pratiques pour l’assurance qualité</td>
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Bonnes pratiques pour l’assurance qualité</a></td>
-   <td>Un aperçu normalisé des problèmes liés à la définition d’un concept de test, en particulier pour les tests de performance sur votre environnement de <em>publication</em>. Cette s’adresse principalement aux ingénieures et ingénieurs en assurance qualité, aux cheffes et chefs de projet et aux administrateurs et administratrices système.</td>
+   <td>Un aperçu normalisé des problèmes liés à la définition d’un concept de test, en particulier pour les tests de performance sur votre environnement de <em>publication</em>. Cela intéresse principalement les ingénieurs d’assurance qualité, les chefs de projet et les administrateurs système.</td>
   </tr>
   <tr>
    <td>Utilisation de Dispatcher avec un CDN</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr#using-dispatcher-with-a-cdn">Utilisation de Dispatcher avec un CDN</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Utilisation de Dispatcher avec un CDN</a></td>
    <td>Un réseau de distribution de contenu (CDN), par exemple Akamai Edge Delivery ou Amazon Cloud Front, distribue du contenu à partir d’un emplacement proche de l’utilisateur final.</td>
   </tr>
   <tr>

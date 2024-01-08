@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 99%
@@ -72,7 +72,7 @@ La documentation sur la [surveillance des performances](/help/sites-deploying/mo
 
 **Mode Développeur de l’IU tactile**
 
-L’une des nouvelles fonctionnalités de l’interface utilisateur tactile d’AEM 6 est le mode Développeur. De la même manière que les auteurs et autrices peuvent passer du mode de modification au mode d’aperçu, les développeurs et développeuses peuvent passer en mode Développeur dans l’interface utilisateur de création. Cela vous permet d’afficher le temps de rendu de chacun des composants sur la page et d’afficher les traces de pile des erreurs. Pour plus d’informations sur le mode Développeur, reportez-vous à cette [présentation Gems de CQ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=fr).
+L’une des nouvelles fonctionnalités de l’interface utilisateur tactile d’AEM 6 est le mode Développeur. De la même manière que les auteurs et autrices peuvent passer du mode de modification au mode d’aperçu, les développeurs et développeuses peuvent passer en mode Développeur dans l’interface utilisateur de création. Cela vous permet d’afficher le temps de rendu de chacun des composants sur la page et d’afficher les traces de pile des erreurs. Pour plus d’informations sur le mode Développeur, reportez-vous à cette [présentation Gems de CQ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
 **Utilisation de rlog.jar pour lire les journaux de requêtes**
 
@@ -117,7 +117,7 @@ La section **ObservationQueueMaxLength** indique le nombre d’événements dans
 1. Placez-le sous le dossier /crx-­‐quickstart/install.
 
 >[!NOTE]
->Voir [AEM 6.x | Conseils d’optimisation de la performance](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=fr)
+>Voir [AEM 6.x | Conseils d’optimisation de la performance](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
 
 Le paramètre par défaut est 10 000, mais la plupart des déploiements doivent l’augmenter jusqu’à 20 000 ou 50 000.
 
@@ -145,7 +145,7 @@ Après l’exécution des tests de performance sur l’instance de création, to
 * Recherchez des erreurs ou des avertissements dans le journal des erreurs. Pour plus d’informations, consultez la section [Journalisation](/help/sites-deploying/configure-logging.md).
 * Surveillez les ressources matérielles du système telles que l’utilisation de la mémoire et de l’UC, les E/S de disque ou les E/S réseau. Ces ressources sont souvent à l’origine de goulots d’étranglement au niveau des performances.
 * Optimisez l’architecture des pages et la manière dont elles sont traitées afin de minimiser l’utilisation des paramètres d’URL pour permettre une mise en cache aussi complète que possible.
-* Consultez la documentation sur l’[Optimisation des performances](/help/sites-deploying/configuring-performance.md) et les [Conseils sur l’optimisation des performances](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=fr).
+* Consultez la documentation sur l’[Optimisation des performances](/help/sites-deploying/configuring-performance.md) et les [Conseils sur l’optimisation des performances](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
 
 * Si des problèmes surviennent lors de la modification de certaines pages ou certains composants sur les instances de création, utilisez le mode Développeur de l’IU tactile pour inspecter la page en question. Vous obtenez ainsi une répartition de chaque zone de contenu de la page et leur temps de chargement.
 * Minimisez tous les JS et CSS sur le site. Voir cet [article de blog](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).

@@ -7,10 +7,10 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3186'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -46,7 +46,7 @@ Dans ce document, nous partons du principe que vous êtes déjà rompu à la cr�
 >[!NOTE]
 >
 >Le tutoriel suivant peut également s’avérer intéressant pour configurer un modèle de page modifiable dans un nouveau projet :
->[Prise en main d’AEM Sites Partie 2 - Création d’une page et d’un modèle de base](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=fr)
+>[Prise en main d’AEM Sites Partie 2 - Création d’une page et d’un modèle de base](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html)
 
 ## Création d’un modèle {#creating-a-new-template}
 
@@ -73,9 +73,9 @@ Lors de la création d’un modèle modifiable :
       * Si vous créez un modèle dans un dossier personnalisé en dehors de l’`We.Retail`exemple de contenu, vous pouvez choisir des composants de base ou utiliser des [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=fr).
 
    * Si vous souhaitez que les personnes créant les pages puissent ajouter et supprimer des composants, ajoutez un système de paragraphes au modèle.
-   * Les composants peuvent être déverrouillés et reverrouillés pour vous permettre de définir le contenu initial.
+   * Les composants peuvent être déverrouillés (et reverrouillés) pour que vous puissiez définir le contenu initial.
 
-   Pour plus d’informations sur la façon dont un créateur de modèles définit la structure, voir [Création de modèles de page](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
+   Pour plus d’informations sur la façon dont une personne créant des modèles définit la structure, voir [Création de modèles de page](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
    Pour connaître les détails techniques de la structure, consultez la section [Structure](/help/sites-developing/page-templates-editable.md#structure) de ce document.
 
@@ -374,7 +374,7 @@ Lors de la création d’un modèle, indiquez un type de modèle :
    * Le type de modèle est copié pour créer le modèle.
    * Une fois la copie effectuée, la seule connexion entre le modèle et le type de modèle est une référence statique à des fins d’information.
 
-* Les types de modèle permettent de définir :
+* Les types de modèle permettent de définir :
 
    * Le type de ressource du composant de page.
    * La politique du nœud racine qui définit les composants autorisés dans l’éditeur de modèles.
@@ -565,7 +565,7 @@ Fournit une référence relative à la politique de contenu pour le système de 
 
 ### Politiques de page {#page-policies}
 
-Les stratégies de page vous permettent de définir [stratégie de contenu](#content-policies) pour la page (parsys principal), dans le modèle ou les pages créées.
+Les politiques de page vous permettent de définir la [politique de contenu](#content-policies) de la page (système de paragraphes principal), soit dans le modèle soit dans les pages créées.
 
 ### Activation et autorisation d’un modèle à utiliser {#enabling-and-allowing-a-template-for-use}
 

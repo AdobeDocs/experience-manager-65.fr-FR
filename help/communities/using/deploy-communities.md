@@ -3,10 +3,10 @@ title: Déploiement de Communities
 description: Comment déployer AEM Communities
 content-type: reference
 topic-tags: deploying
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 4%
+source-wordcount: '1705'
+ht-degree: 2%
 
 ---
 
@@ -102,7 +102,7 @@ Les étapes nécessaires sont les suivantes :
 
    * La version doit être >= 5.1.38
 
-1. Extraire `mysql-connector-java-&lt;version&gt;-bin.jar (bundle) from the archive`
+1. Extract `mysql-connector-java-&lt;version&gt;-bin.jar (bundle) from the archive`
 1. Utilisez la console web pour installer et démarrer le lot :
 
    * Par exemple, https://localhost:4502/system/console/bundles
@@ -266,7 +266,7 @@ Pour copier le matériel clé de l’auteur vers toutes les autres instances, il
 
 * Accédez à l’instance AEM (généralement une instance d’auteur) qui contient le matériel clé à copier.
 
-   * Localisez le lot `com.adobe.granite.crypto.file` dans le système de fichiers local
+   * Recherchez la variable `com.adobe.granite.crypto.file` lot dans le système de fichiers local
 
      Par exemple,
 
@@ -357,7 +357,7 @@ En particulier, veillez à utiliser le nom de serveur correct, et non `localhost
 Si vous utilisez un Dispatcher, voir :
 
 * AEM [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) documentation
-* [Installation du Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en)
+* [Installation du Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=fr)
 * [Configuration de Dispatcher pour Communities](/help/communities/dispatcher.md)
 * [Problèmes connus](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

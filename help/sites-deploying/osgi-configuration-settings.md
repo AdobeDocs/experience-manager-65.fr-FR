@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3360'
 ht-degree: 98%
@@ -35,7 +35,7 @@ Les paramètres de configuration OSGi suivants (répertoriés en fonction de l�
 
 >[!NOTE]
 >
->L’outil de comparaison des configurations OSGi, faisant partie des [Outils AEM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=fr), peut être utilisé pour répertorier les configurations OSGi par défaut.
+>L’outil de comparaison des configurations OSGi, faisant partie des [Outils AEM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html), peut être utilisé pour répertorier les configurations OSGi par défaut.
 
 >[!NOTE]
 >
@@ -179,7 +179,7 @@ Le **Service de type MIME Apache Sling** configure :
 
 **Filtre de référent Apache Sling** : pour résoudre les problèmes de sécurité connus avec Cross-Site Request Forgery (CSRF) dans CRX WebDAV et Apache Sling, vous devez configurer le filtre de référent.
 
-Le service de filtrage des référents est un service OSGi qui vous permet de configurer les éléments suivants :
+Le service de filtrage des référents est un service OSGi qui vous permet de configurer :
 
 * les méthodes HTTP à filtrer ;
 * si un en-tête de référent vide est permis ;
@@ -271,7 +271,7 @@ L’**Antispam Day CQ** configure le service anti-spam (Akismet) utilisé. Pour
 
 >[!CAUTION]
 >
->Lorsque vous changez le paramètre sur **Minifier** ou **Gzip**, vous devez également supprimer le contenu du cache clientlibs. Consultez l’[article de la base de connaissances](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=fr) pour plus de détails.
+>Lorsque vous changez le paramètre sur **Minifier** ou **Gzip**, vous devez également supprimer le contenu du cache clientlibs. Consultez l’[article de la base de connaissances](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html) pour plus de détails.
 
 >[!NOTE]
 >

@@ -1,15 +1,15 @@
 ---
 title: Exemples de code
-description: L’équipe des services de conseil en Adobe a généré une série d’exemples de code Adobe Experience Manager.
+description: L’équipe des services de conseil d’Adobe a généré une série d’exemples de code Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: d77e9e39-6117-4d09-b34b-a97ab347397e
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 29%
+source-wordcount: '140'
+ht-degree: 22%
 
 ---
 

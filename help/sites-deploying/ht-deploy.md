@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: e9ea9df4-a355-41fc-a102-01a5d7ca2629
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '68'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -21,6 +21,6 @@ Les rubriques suivantes décrivent comment réaliser des tâches de déploiement
 * [Utilisation du programme de visualisation du journal](https://helpx.adobe.com/fr/experience-manager/kb/logsviewer.html)
 * [Purger les workflows et le journal d’audit](https://helpx.adobe.com/fr/experience-manager/kb/howtopurgewf.html)
 
-* [Conseils de réglage de la performance](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=fr)
+* [Conseils de réglage de la performance](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
 * [Comment supprimer des fonctions de l’écran de bienvenue](/help/sites-developing/customizing-the-welcome-console.md)
 * [Comment désactiver la fonction de suivi de l’emplacement](https://helpx.adobe.com/fr/experience-manager/kb/turn-off-geolocation.html)

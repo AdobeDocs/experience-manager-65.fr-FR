@@ -1,22 +1,22 @@
 ---
 title: Connexion unique
-description: Découvrez comment configurer l’authentification unique (SSO) pour une instance d’Adobe Experience Manager (AEM).
+description: Découvrez comment configurer l’authentification unique (SSO) pour une instance de Adobe Experience Manager (AEM).
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring, Security
 content-type: reference
 feature: Configuring
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 32%
+source-wordcount: '723'
+ht-degree: 40%
 
 ---
 
 # Connexion unique {#single-sign-on}
 
-L’authentification unique (SSO) permet à un utilisateur d’accéder à plusieurs systèmes après avoir fourni une seule fois des informations d’identification d’authentification (telles qu’un nom d’utilisateur et un mot de passe). Un système distinct (appelé authentificateur approuvé) effectue l’authentification et fournit au Experience Manager les informations d’identification de l’utilisateur. Experience Manager vérifie et applique les autorisations d’accès pour l’utilisateur (c’est-à-dire, détermine les ressources auxquelles l’utilisateur est autorisé à accéder).
+L’authentification unique (SSO) permet à une personne d’accéder à plusieurs systèmes après avoir fourni une seule fois des informations d’identification d’authentification (telles qu’un nom d’utilisateur ou d’utilisatrice et un mot de passe). Un système distinct (appelé authentificateur approuvé) effectue l’authentification et fournit à Experience Manager les informations d’identification de l’utilisateur ou utilisatrice. Experience Manager vérifie les autorisations d’accès et les applique pour l’utilisateur ou l’utilisatrice (c’est-à-dire, détermine les ressources auxquelles l’utilisateur ou l’utilisatrice est autorisé à accéder).
 
 Le service de gestion de l’authentification SSO (`com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) traite les résultats de l’authentification fournis par l’authentificateur de confiance. Le gestionnaire d’authentification SSO recherche un identificateur SSO (SSID) comme valeur d’un attribut spécial aux emplacements suivants dans cet ordre :
 
@@ -83,8 +83,7 @@ Pour configurer l’authentification unique pour une instance AEM, vous devez co
 * `disp_iis.ini`
 * IIS
 >
-Dans `disp_iis.ini`, définissez les éléments suivants :
-(voir [installation de Dispatcher avec Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en#microsoft-internet-information-server) pour plus de détails)
+Dans `disp_iis.ini` set : (voir [installation de Dispatcher avec Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) pour plus de détails)
 >
 * `servervariables=1` (transmet des variables de serveur IIS comme en-têtes de requête à une instance distante)
 * `replaceauthorization=1` (remplace n’importe quel en-tête appelé « Authorization » autre que l’en-tête « De base » par son « De base » équivalent)
@@ -96,7 +95,7 @@ Dans IIS :
 * enable **Authentification Windows intégrée**
 >
 
-Vous pouvez voir quel gestionnaire d’authentification est appliqué à n’importe quelle section de l’arborescence de contenu à l’aide de la variable **Authentificateur** de la console Felix ; par exemple :
+Vous pouvez voir quel gestionnaire d’authentification est appliqué à n’importe quelle section de l’arborescence de contenu à l’aide de la variable **Authentificateur** de la console Felix, par exemple :
 
 `http://localhost:4502/system/console/slingauth`
 
@@ -152,7 +151,7 @@ Vous pouvez également utiliser la commande curl suivante pour envoyer l’en-t�
 
 >[!NOTE]
 >
-Lors de l’utilisation du paramètre de requête dans un navigateur, une partie du HTML s’affiche uniquement, sans CSS. Cela est dû au fait que toutes les requêtes du HTML sont effectuées sans le paramètre de requête .
+Lors de l’utilisation du paramètre de requête dans un navigateur, vous ne voyez qu’une partie du HTML, sans CSS. Cela est dû au fait que toutes les requêtes du HTML sont effectuées sans le paramètre de requête .
 
 ## Suppression de liens AEM de déconnexion {#removing-aem-sign-out-links}
 

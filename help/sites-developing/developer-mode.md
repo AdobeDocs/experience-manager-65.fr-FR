@@ -1,16 +1,16 @@
 ---
 title: Mode Développeur
-description: Le mode Développeur ouvre un panneau latéral avec plusieurs onglets qui procurent au développeur des informations sur la page en cours..
+description: Le mode Développeur ouvre un panneau latéral avec plusieurs onglets qui fournissent aux développeurs des informations sur la page active.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 docset: aem65
 exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 72%
+source-wordcount: '683'
+ht-degree: 71%
 
 ---
 
@@ -54,7 +54,7 @@ Ils aident les développeurs à :
 >Voir :
 >
 >* l’article de la base de connaissances [Résolution des problèmes liés à l’IU tactile d’AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html) pour découvrir d’autres conseils et outils.
->* Session AEM Gems concernant le [mode Développeur d’AEM 6.0](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=en).
+>* Session AEM Gems concernant le [mode Développeur d’AEM 6.0](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
 >
 
 ## Ouvrir le mode Développeur {#opening-developer-mode}
@@ -80,7 +80,7 @@ Il présente une arborescence de composants qui :
 * Permet de développer l’arborescence et de sélectionner des composants spécifiques dans l’arborescence. La sélection permet d’accéder aux détails du composant, par exemple :
 
    * le chemin du référentiel ;
-   * les liens vers les scripts (accessibles dans CRXDE Lite).
+   * les liens vers les scripts (accessibles dans CRXDE Lite)
 
 * Les composants sélectionnés (dans le flux de contenu, indiqués par une bordure bleue) sont mis en surbrillance dans l’arborescence de contenu (et inversement).
 
@@ -114,7 +114,7 @@ Chaque entrée de composant peut afficher (par exemple) :
 
 >[!CAUTION]
 >
->Certains liens pointent sur des scripts sous `/libs`. Toutefois, ils servent uniquement de référence, vous **ne devez rien** modifier sous `/libs`, car toutes les modifications que vous apportez risquent d’être perdues. Cela est dû au fait que cette branche peut être modifiée chaque fois que vous mettez à niveau ou appliquez un correctif ou un Feature Pack. Apportez les modifications dont vous avez besoin sous `/apps`. Voir [Recouvrements et remplacements](/help/sites-developing/overlays.md).
+>Certains liens pointent sur des scripts sous `/libs`. Toutefois, ils servent uniquement de référence, vous **ne devez rien** modifier sous `/libs`, car toutes les modifications que vous apportez risquent d’être perdues. Cela est dû au fait que cette branche peut être modifiée chaque fois que vous mettez à niveau ou appliquez un correctif ou un Feature Pack. Apportez les modifications requises sous `/apps`. Voir [Recouvrements et remplacements](/help/sites-developing/overlays.md).
 
 ### Erreurs {#errors}
 

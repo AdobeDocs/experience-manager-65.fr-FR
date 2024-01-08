@@ -7,10 +7,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1954'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -52,9 +52,9 @@ L’une ou l’autre des méthodes peut être utilisée bien qu’il existe des 
 Quelle que soit la méthode utilisée, toutes ces méthodes de configuration :
 
 * garantissent que la copie ou la réplication du contenu du référentiel recrée des configurations identiques ;
-* Permet d’extraire des configurations vers FileVault ou Subversion, soit pour des raisons de sécurité, soit pour d’autres mises à jour.
+* vous permettent d’extraire des configurations vers FileVault ou Subversion, soit pour des raisons de sécurité, soit pour d’autres mises à jour ;
 * peuvent être enregistrées dans des packages à utiliser lors de la configuration d’autres instances ;
-* Vous permet d’effectuer des déploiements de configuration à l’aide de scripts pour propager les détails de configuration.
+* vous permettent d’effectuer des déploiements de configuration à l’aide de scripts pour propager les détails de configuration.
 
 >[!NOTE]
 >
@@ -121,9 +121,9 @@ Ces fichiers peuvent être inclus dans des packages de contenu et réutilisés d
 
 >[!NOTE]
 >
->Le format des fichiers de configuration est spécifique. Reportez-vous à la documentation Apache Sling pour :
->* détails complets de [le modèle d’approvisionnement Apache Sling et Apache SlingStart ;](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
->* tutoriels et exemples [Obtention de ressources et de propriétés dans Sling](https://sling.apache.org/documentation/tutorials-how-tos/getting-resources-and-properties-in-sling.html).
+>Le format des fichiers de configuration est très spécifique. Consultez la documentation de Sling Apache pour :
+>* des détails complets du [modèle d’approvisionnement Apache Sling et Apache SlingStart](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
+>* des tutoriels et des exemples d’[obtention de ressources et de propriétés dans Sling](https://sling.apache.org/documentation/tutorials-how-tos/getting-resources-and-properties-in-sling.html).
 >
 >Pour cette raison, il est recommandé de créer et de gérer le fichier de configuration en apportant des modifications réelles dans la console web.
 
@@ -172,7 +172,7 @@ Comme le même paramètre de configuration peut être situé à plusieurs endroi
 
 >[!NOTE]
 >
->Lisez également [comment définir une configuration basée sur un référentiel pour une instance spécifique uniquement](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=fr).
+>Lisez également [comment définir une configuration basée sur un référentiel pour une instance spécifique uniquement](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html).
 
 ### Ajouter une nouvelle configuration au référentiel {#adding-a-new-configuration-to-the-repository}
 
