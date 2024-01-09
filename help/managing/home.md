@@ -2,55 +2,21 @@
 title: Guide de l’utilisateur pour la gestion d’AEM 6.5
 description: Découvrez comment gérer un projet AEM avec succès, avec la prise en charge de ressources clés et une collection complète de guides d’utilisation d’AEM 6.5.
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-source-git-commit: 5a7729e1792bc5849682800781e31f41c6bb6e4a
+source-git-commit: 5ee9bc34128738967124855652c7b38c65d8779d
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 98%
+source-wordcount: '84'
+ht-degree: 77%
 
 ---
 
 # Guide de l’utilisateur pour la gestion d’AEM 6.5
 
-Découvrez comment gérer un projet AEM avec succès, avec la prise en charge de ressources clés et une collection complète de guides d’utilisation d’AEM 6.5.
+Découvrez comment gérer un projet AEM avec succès, avec la prise en charge de ressources clés, ainsi que des bonnes pratiques et des directives.
 
-## Principaux articles relatifs à la gestion
+## Articles essentiels
 
 * [Gestion des projets : liste de contrôle des bonnes pratiques](/help/managing/best-practices.md)
 * [Consignes de dimensionnement du matériel](/help/managing/hardware-sizing-guidelines.md)
 * [Bonnes pratiques de SEO et de gestion des URL](/help/managing/seo-and-url-management.md)
 * [Instructions relatives à AEM et à l’accessibilité Web](/help/managing/web-accessibility.md)
 * [Préparation d’Adobe Experience Manager pour les règlements sur la protection et la confidentialité des données](/help/managing/data-protection-and-privacy.md)
-
-## Articles AEM clés
-
-* [Prise en main d’AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr)
-* [Notes de mise à jour d’AEM 6.5](/help/release-notes/home.md)
-* [Mises à jour récentes de la documentation](https://helpx.adobe.com/fr/experience-manager/documentation-updates.html)
-* [Liste de contrôle de la sécurité AEM](/help/sites-administering/security-checklist.md)
-
-## Guides de l’utilisateur d’AEM 6.5
-
-| Guide de l’utilisateur | Description |
-|--- |---|
-| [Notes de mise à jour](/help/release-notes/home.md) | Elles comportent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et celles qui ont été supprimées, et les problèmes connus. |
-| [Guide de l’utilisateur d’Assets](/help/assets/home.md) | Découvrez comment créer, gérer, diffuser et optimiser des ressources numériques. |
-| [Guide de l’utilisateur de Forms](/help/forms/home.md) | Ce guide explique comment créer, gérer, publier et mettre à jour des formulaires numériques. |
-| [Guide d’administration](/help/sites-administering/home.md) | Problèmes courants et solutions liés à l’installation |
-| [Guide de création](/help/sites-authoring/home.md) | Ce guide explique les concepts de création dans AEM. |
-| [Guide de création dans l’interface utilisateur classique](/help/sites-classic-ui-authoring/home.md) | Ce guide explique les concepts de création dans AEM dans l’interface utilisateur classique. |
-| [Guide de l’utilisateur de Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=fr) | Découvrez la solution de signalétique numérique pour publier des expériences digitales dynamiques et interactives. |
-| [Guide de l’utilisateur du déploiement](/help/sites-deploying/home.md) | Ce guide vous présente les principes de base d’AEM. |
-| [Guide de l’utilisateur pour le développement](/help/sites-developing/home.md) | Découvrez comment créer l’instance AEM. |
-| [Guide de l’utilisateur pour la gestion](/help/managing/home.md) | Ce guide décrit comment gérer un projet AEM avec succès. |
-| [Guide de l’utilisateur de Commerce](/help/commerce/home.md) | Découvrez Commerce Integration Framework dans AEM. |
-
-## Ressources AEM clés
-
-* [Tutoriels d’AEM](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-4-videos.html)
-* [Guide de l’utilisateur de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr)
-* [Guide de l’utilisateur HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
-* [Guide de l’utilisateur des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=fr)
-* [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=fr#home)
-* [Forum de la communauté AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=fr)
