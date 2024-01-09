@@ -2,10 +2,10 @@
 title: Guide de l’utilisateur pour la gestion d’AEM 6.5
 description: Découvrez comment gérer un projet AEM avec succès, avec la prise en charge de ressources clés et une collection complète de guides d’utilisation d’AEM 6.5.
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-source-git-commit: 5ee9bc34128738967124855652c7b38c65d8779d
+source-git-commit: 02dd950111a45908f0a65deb9e5c28b4b119269f
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 77%
+source-wordcount: '90'
+ht-degree: 72%
 
 ---
 
@@ -14,6 +14,8 @@ ht-degree: 77%
 Découvrez comment gérer un projet AEM avec succès, avec la prise en charge de ressources clés, ainsi que des bonnes pratiques et des directives.
 
 ## Articles essentiels
+
+Les articles clés de ce guide sont les suivants :
 
 * [Gestion des projets : liste de contrôle des bonnes pratiques](/help/managing/best-practices.md)
 * [Consignes de dimensionnement du matériel](/help/managing/hardware-sizing-guidelines.md)
