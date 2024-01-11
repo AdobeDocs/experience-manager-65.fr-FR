@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 4b5b3ac41034bd4cc0f359b35cac0515b76ca64e
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 38%
+source-wordcount: '727'
+ht-degree: 35%
 
 ---
 
@@ -30,7 +30,7 @@ En tant qu’implémentation de référence standard AEM, We.Retail présente ce
 | **Fonctionnalité** | **Description** | **Intéressé ?** |
 |---|---|---|
 | [Structure de site globalisée](/help/sites-administering/tc-bp.md) | We.Retail comprend des gabarits de langue qui sont copiés en direct dans des sites spécifiques à un pays. | [Faites un essai !](/help/sites-developing/we-retail-globalized-site-structure.md) |
-| [Disposition réactive](/help/sites-authoring/responsive-layout.md) | Toutes les pages disposent d’une mise en page réactive qui s’adapte dynamiquement à la taille de l’écran et de l’appareil. | [Faites un essai !](/help/sites-developing/we-retail-responsive-layout.md) |
+| [Mise en page réactive](/help/sites-authoring/responsive-layout.md) | Toutes les pages disposent d’une mise en page réactive qui s’adapte dynamiquement à la taille de l’écran et de l’appareil. | [Faites un essai !](/help/sites-developing/we-retail-responsive-layout.md) |
 | [Modèles modifiables](/help/sites-developing/page-templates-editable.md) | Toutes les pages sont basées sur des modèles modifiables, ce qui permet aux non-développeurs d’adapter et de personnaliser les modèles. | [Faites un essai !](/help/sites-developing/we-retail-editable-templates.md) |
 | [HTML Template Language](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) | Tous les composants sont basés sur HTL |  |
 | [Fonctionnalités de commerce électronique](/help/commerce/cif-classic/developing/ecommerce.md) | Fonctionne un catalogue de produits |  |
@@ -49,7 +49,7 @@ We.Retail est diffusé sous la forme d’un exemple AEM contenu. Pour utiliser, 
 
 >[!CAUTION]
 >
->We.Retail repose sur la technologie AEM la plus récente et ne prend donc pas en charge la [création dans l’IU classique](/help/sites-classic-ui-authoring/home.md).
+>We.Retail repose sur la technologie AEM la plus récente et ne prend donc pas en charge la [création dans l’IU classique](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md).
 
 ### Dernière version {#latest-version}
 
@@ -102,7 +102,7 @@ We.Retail a été publié en tant que projet Open Source et la dernière version
 
 CODE SUR GITHUB
 
-Vous pouvez trouver le code de cette page sur GitHub..
+Vous trouverez le code de cette page sur GitHub.
 
 * [Ouvrez le projet aem-sample-we-retail sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail).
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/zip/refs/heads/master).

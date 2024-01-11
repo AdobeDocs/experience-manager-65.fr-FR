@@ -1,14 +1,15 @@
 ---
 title: Présentation et aperçu
-description: Présentation et aperçu de Content and Commerce. Experience Manager Commerce Integration Framework (CIF) est le modèle recommandé par Adobe pour intégrer et étendre les services commerciaux disponibles à partir d’Adobe Commerce et d’autres solutions de commerce tierces avec Experience Cloud.
+description: Découvrez comment utiliser et administrer AEM Content and Commerce, avec des articles utiles sur les intégrations et comment commencer à utiliser AEM Storefront.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 98%
+source-wordcount: '838'
+ht-degree: 95%
 
 ---
+
 
 # Content and Commerce {#content-commerce}
 

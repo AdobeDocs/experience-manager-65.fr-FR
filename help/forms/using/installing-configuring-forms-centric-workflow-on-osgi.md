@@ -5,10 +5,10 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '1590'
-ht-degree: 89%
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,7 @@ AEM Forms est une plateforme d’entreprise performante. Le workflow basé sur 
 >
 >Avec le processus basé sur l’utilisation de Forms sur OSGi, vous pouvez rapidement créer et déployer des processus pour différentes tâches sur la pile OSGi, sans avoir à installer la fonctionnalité Process Management complète sur la pile JEE. Regardez une [comparaison](capabilities-osgi-jee-workflows.md) des workflows AEM basés sur lʼutilisation de Forms sur OSGi et la gestion des processus sur JEE pour découvrir les différences et les similitudes entre les fonctionnalités.
 >
->Après la comparaison, si vous choisissez d’installer la fonctionnalité de gestion des processus sur la pile JEE, consultez la section [Installation ou mise à niveau d’AEM Forms sur JEE](/help/forms/home.md) pour obtenir des informations détaillées sur l’installation et la configuration de la pile JEE et des fonctionnalités de gestion des processus.
+>Après la comparaison, si vous choisissez d’installer la fonctionnalité de gestion des processus sur la pile JEE, consultez la section [Installation ou mise à niveau d’AEM Forms sur JEE](/help/forms/using/introduction-aem-forms.md) pour obtenir des informations détaillées sur l’installation et la configuration de la pile JEE et des fonctionnalités de gestion des processus.
 
 ## Topologie de déploiement {#deployment-topology}
 
@@ -60,7 +60,7 @@ Avant dʼinstaller et de configurer le workflow basé sur lʼutilisation de Form
 
 * Les exigences de mémoire sont respectées. Le package complémentaire AEM Forms nécessite :
 
-   * 15 Go d’espace temporaire pour les installations basées sur Microsoft Windows.
+   * 15 Go d’espace temporaire pour les installations Microsoft Windows.
    * 6 Go d’espace temporaire pour les installations Unix.
 
 * Configuration requise supplémentaire pour les systèmes UNIX : si vous utilisez un système d’exploitation UNIX, installez les packages suivants à partir du support d’installation du système d’exploitation correspondant.
@@ -163,12 +163,12 @@ Dispatcher est un outil de mise en cache et d’équilibrage de charge pour AEM.
 
    Connectez-vous au gestionnaire de configuration Apache Felix en tant qu’administrateur ou administratrice. L’URL par défaut du gestionnaire de configuration est https://&#39;server&#39;:[port_number]/system/console/configMgr. Dans le menu **Configurations**, sélectionnez l’option **Apache Sling Referrer Filter.** Dans le champ Allow Hosts, saisissez le nom d’hôte du répartiteur afin de l’activer comme référent et cliquez sur **Enregistrer**. Le format de l’entrée est `https://'[server]:[port]'`.
 
-#### Configuration du cache {#configure-cache}
+#### Configurer le cache {#configure-cache}
 
-La mise en cache est un mécanisme qui permet de raccourcir les temps d’accès aux données, de réduire la latence et d’améliorer les vitesses d’entrée/sortie (E/S). Le cache de formulaires adaptatifs stocke uniquement le contenu de HTML et la structure JSON d’un formulaire adaptatif sans enregistrer de données préremplies. Cela permet de réduire le temps nécessaire au rendu d’un formulaire adaptatif.
+Le cache est un mécanisme qui permet de raccourcir les temps d’accès aux données, réduire le temps de réponse et améliorer les vitesses d’entrée/sortie (E/S). Le cache de formulaires adaptatifs stocke uniquement le contenu HTML et la structure JSON d’un formulaire adaptatif sans enregistrer les données pré-renseignées. Cela permet de réduire le temps nécessaire pour effectuer le rendu d’un formulaire adaptatif.
 
-* Lors de l’utilisation du cache de formulaires adaptatifs, utilisez la variable [AEM Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html) pour mettre en cache les bibliothèques clientes (CSS et JavaScript) d’un formulaire adaptatif.
-* Lors du développement de composants personnalisés, gardez le cache de formulaires adaptatifs désactivé sur le serveur utilisé pour le développement.
+* Lorsque vous utilisez le cache de formulaires adaptatifs, utilisez le [répartiteur AEM](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html) pour mettre en cache les bibliothèques client (CSS et Javascript) d’un formulaire adaptatif.
+* Lors du développement des composants personnalisés, sur le serveur utilisé pour le développement, gardez le cache de formulaires adaptatifs désactivé.
 
 Pour configurer la mise en cache des formulaires adaptatifs, procédez comme suit :
 
@@ -179,13 +179,13 @@ Pour configurer la mise en cache des formulaires adaptatifs, procédez comme sui
    >
    >Pour désactiver le cache, définissez la valeur du champ Nombre de formulaires adaptatifs sur **0**. Le cache est réinitialisé, et tous les formulaires et documents sont supprimés du cache lorsque vous désactivez ou modifiez la configuration du cache.
 
-#### Configuration d’Adobe Sign {#configure-adobe-sign}
+#### Configurer Adobe Sign {#configure-adobe-sign}
 
-Adobe Sign active les processus de signature électronique pour les formulaires adaptatifs. Les signatures électroniques améliorent les processus de traitement des documents pour les services juridiques, commercial, des ressources humaines, et bien d’autres domaines.
+Adobe Sign autorise les workflows de signature électronique pour les formulaires adaptatifs. Les signatures électroniques améliorent les processus de traitement des documents pour les services juridiques, commercial, des ressources humaines, et bien d’autres domaines.
 
 Dans un scénario typique de workflow centré sur l’utilisation d’Adobe Sign et de Forms sur OSGi, un utilisateur remplit un formulaire adaptatif pour **demander un service**. Par exemple, un formulaire de demande de carte de paiement et d’allocation. Lorsqu’un utilisateur remplit, envoie et signe le formulaire de demande, un workflow d’approbation / de rejet est lancé. Le fournisseur examine la demande dans la boîte de réception AEM et utilise Adobe Sign pour la signer électroniquement. Pour activer les processus de signature électronique similaires, vous pouvez intégrer Adobe Sign à AEM Forms.
 
-Pour utiliser Adobe Sign avec AEM Forms, [Intégration d’Adobe Sign à AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
+Pour utiliser Adobe Sign avec AEM Forms, [intégrez Adobe Sign à AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
 ## Étapes suivantes {#next-steps}
 

@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1792'
 ht-degree: 57%
 
 ---
@@ -73,7 +73,7 @@ Sur cette base, AEM propose également plusieurs fonctionnalités au niveau de l
 * **Sites Web**
 * **Applications mobiles**
 * **Publications numériques**
-* **Formulaires et documents**
+* **Forms et documents**
 * **Ressources numériques**
 * **Communities**
 * **Commerce en ligne**
@@ -84,7 +84,7 @@ Le serveur AEM est **basé sur Java** et s’exécute sous la plupart des systè
 
 >[!NOTE]
 >
->La fonctionnalité Forms adaptatif, disponible dans AEM 6.5 QuickStart, est conçue à des fins d’exploration et d’évaluation uniquement. Pour une utilisation en production, il est essentiel d’obtenir une licence valide pour AEM Forms, car les fonctionnalités d’Adaptive Forms nécessitent des licences appropriées.
+>La fonctionnalité Forms adaptatif, disponible dans AEM 6.5 QuickStart, est conçue à des fins d’exploration et d’évaluation uniquement. Pour une utilisation à des fins de production, il est essentiel d’obtenir une licence valide pour AEM Forms, car la fonctionnalité de formulaires adaptatifs nécessite une licence appropriée.
 
 ### Scénarios de déploiement standard {#typical-deployment-scenarios}
 
@@ -287,9 +287,9 @@ AEM démarre et redirige automatiquement le navigateur web vers la page adéquat
 
 Une fois connecté, vous avez accès à AEM. Pour plus d’informations, en fonction de votre rôle, voir :
 
-* [Création](/help/sites-authoring/home.md)
+* [Création](/help/sites-authoring/first-steps.md)
 * [Administration](/help/sites-administering/home.md)
-* [Développement](/help/sites-developing/home.md)
+* [Développement](/help/sites-developing/getting-started.md)
 * [Gestion](/help/managing/best-practices.md)
 
 ## Déploiement avancé {#advanced-deployment}

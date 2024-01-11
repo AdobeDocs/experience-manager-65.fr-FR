@@ -1,16 +1,16 @@
 ---
 title: Présentation d’AEM Forms
-description: Avec Adobe Experience Manager Forms, les utilisateurs professionnels peuvent intégrer des formulaires adaptatifs, réactifs et attrayants à des sites web et mobiles, ce qui simplifie le processus d’inscription numérique et augmente les taux de conversion des clients.
+description: Utilisez ce guide d’AEM 6.5 pour créer, gérer, publier et mettre à jour des formulaires numériques. Trouvez de l’aide sur l’installation, la mise à niveau et la configuration, et découvrez comment créer des formulaires adaptatifs.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 28%
+source-wordcount: '950'
+ht-degree: 31%
 
 ---
 

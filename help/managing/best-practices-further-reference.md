@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '3699'
 ht-degree: 100%
@@ -34,7 +34,7 @@ Tenez compte des fonctions d’AEM que vous utiliserez et de l’impact sur votr
 * [Assets](/help/assets/assets.md)
 * [Balises](/help/sites-administering/tags.md)
 * [Gestion de sites multiples et traduction](/help/sites-administering/msm-and-translation.md)
-* [Forms](/help/forms/home.md)
+* [Forms](/help/forms/using/introduction-aem-forms.md)
 * [Communities](/help/communities/deploy-communities.md)
 
 Vérifiez également les [Notes de mise à jour](/help/release-notes/release-notes.md) des différentes versions d’AEM, pour savoir quand de nouvelles fonctionnalités ont été ajoutées.

@@ -7,7 +7,7 @@ role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '3595'
 ht-degree: 96%
@@ -55,7 +55,7 @@ Pour afficher la liste des formulaires ou des modèles, dans l’interface [!DNL
 | | <ul><li>[!UICONTROL vidéo]</li></ul> | Formulaire de schéma pour les ressources vidéo dotées d’un type MIME telles que `video/avi` et `video/mp4` |
 | [!UICONTROL collection] | | Formulaire de schéma pour les collections |
 | [!UICONTROL contentfragment] | | [Formulaire de schéma pour les fragments de contenu](/help/sites-developing/customizing-content-fragments.md) |
-| [!UICONTROL formulaires] | | Ce formulaire de schéma est associé aux [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL formulaires] | | Ce formulaire de schéma est associé aux [Adobe Experience Manager Forms](/help/forms/using/introduction-aem-forms.md). |
 | [!UICONTROL ugc_contentfragment] | | Formulaire de schéma pour les éléments de contenu et les ressources générés par l’utilisateur intégrés dans Experience Manager à partir des médias sociaux. |
 
 >[!NOTE]
