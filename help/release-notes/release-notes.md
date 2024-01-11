@@ -6,7 +6,7 @@ exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
 source-git-commit: 2c5791e972deef5fe81768d10ad53acaf946332a
 workflow-type: tm+mt
 source-wordcount: '4308'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
    * **[Composant Conditions générales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=fr)** : les formulaires adaptatifs basés sur les composants principaux peuvent désormais inclure un composant Conditions générales. Il permet aux personnes créant les formulaires d’introduire une section spécifique dans le formulaire, dans laquelle les utilisateurs et utilisatrices peuvent consulter les conditions générales ou les accords juridiques associés à l’utilisation d’un service, d’un produit ou d’une plateforme. Ce composant est conçu pour informer les utilisateurs et utilisatrices des règles, des réglementations et des obligations qu’ils acceptent en envoyant le formulaire.
 
-     ![Composants Onglets verticaux, Conditions générales et Case à cocher.](/help/forms/using/assets/forms-components.png)
+     ![Composants Onglets verticaux, Conditions générales et Case à cocher](/help/forms/using/assets/forms-components.png)
 
    * **[Composant Onglets verticaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html?lang=fr)** : les formulaires adaptatifs basés sur les composants principaux peuvent désormais organiser le contenu des formulaires en une liste verticale d’onglets, ce qui assure une disposition structurée et navigable. L’utilisation d’onglets verticaux dans un formulaire peut améliorer l’expérience globale de l’utilisateur ou de l’utilisatrice en simplifiant la navigation et en améliorant l’organisation du contenu du formulaire, en particulier lorsqu’un formulaire contient plusieurs sections ou des informations complexes.
 
@@ -517,12 +517,12 @@ Pour résoudre le problème, recherchez le fichier `<AEM_Forms_Installation_dir>
 * Lorsqu’un utilisateur ou une utilisatrice choisit de configurer un champ pour la première fois dans un formulaire adaptatif, l’option permettant d’enregistrer une configuration ne s’affiche pas dans l’explorateur de propriétés. Sélectionner un autre champ du formulaire adaptatif à configurer dans le même éditeur pour résoudre le problème.
 * Lorsque des utilisateurs ou des utilisatrices exécutent l’action d’envoi, l’envoi échoue avec une erreur :
   `javax.servlet.ServletException: java.lang.NoSuchMethodError`
-Pour résoudre le problème, [recompilez les scripts Sling tels que JSP, Java™ et Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html#resolution). (FORMS-8542)
+Pour résoudre le problème, [recompilez les scripts Sling tels que JSP, Java™ et Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=fr#resolution). (FORMS-8542)
 * Après avoir installé le Pack de services AEM 6.5.14.0 et versions ultérieures, les utilisateurs et utilisatrices ne peuvent pas sélectionner de police dans l’interface utilisateur d’administration de JEE pour les documents PDF lorsqu’ils accèdent à `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, car la liste des polices s’affiche vide. (FORMS-12095)
 
 #### d’AEM Forms on JEE
 
-* Des vulnérabilités de sécurité critiques ont été signalées pour Struts 2 RCE, un framework d’applications web populaire et open source pour le développement d’applications web Java EE. Adobe a publié le [pack de services 19.1 (6.5.19.1) pour AEM 6.5 ](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md) afin de résoudre la vulnérabilité dans AEM Forms on JEE.
+* Des vulnérabilités de sécurité critiques ont été signalées pour Struts 2 RCE, un framework d’applications web populaire et open source pour le développement d’applications web Java EE. Adobe a publié le [pack de services 19.1 (6.5.19.1) pour AEM 6.5](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md) afin de résoudre la vulnérabilité dans AEM Forms on JEE.
 
 
 <!--The font enumeration fails due to the missing Ps2Pdf service file.-->
