@@ -3,9 +3,9 @@ title: Fonctionnalités obsolètes et supprimées de la version 6.5 d’Adobe 
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans Adobe Experience Manager 6.5
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1689'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
