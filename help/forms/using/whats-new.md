@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
 source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '637'
 ht-degree: 100%
 
