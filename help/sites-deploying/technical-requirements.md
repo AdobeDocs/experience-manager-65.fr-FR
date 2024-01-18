@@ -3,9 +3,9 @@ title: Exigences techniques
 description: Liste des plateformes clientes et serveur prises en charge pour Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: fbf056b6b7dcbfcaa27744672c45a87316c5f761
 workflow-type: tm+mt
-source-wordcount: '3624'
+source-wordcount: '3642'
 ht-degree: 94%
 
 ---
@@ -116,8 +116,10 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 | Stockage de binaires dans des fichiers TAR sur le système de fichiers `[1]` | Binaires | Z : Non pris en charge pour la production |
 | Amazon S3 | Binaires | A : pris en charge |
 | Stockage d’objets blob Microsoft® Azure. | Binaires | A : pris en charge |
-| MongoDB Enterprise 4.4 | Référentiel | A : pris en charge `[2, 3, 4]` |
-| MongoDB Enterprise 4.2  | Référentiel | A : pris en charge `[2, 3, 4]` |
+| MongoDB Enterprise 6.0 | Référentiel | A : pris en charge `[3, 4]` |
+| MongoDB Enterprise 5.0 | Référentiel | A : pris en charge `[3, 4]` |
+| MongoDB Enterprise 4.4 | Référentiel | A : pris en charge `[2, 3, 4, 7]` |
+| MongoDB Enterprise 4.2  | Référentiel | A : pris en charge `[2, 3, 4, 7]` |
 | MongoDB Enterprise 4.0 | Référentiel | Z : non pris en charge |
 | MongoDB Enterprise 3.6 | Référentiel | Z : non pris en charge |
 | MongoDB Enterprise 3.4 | Référentiel | Z : non pris en charge |
@@ -132,9 +134,10 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 1. La fragmentation MongoDB n’est pas prise en charge dans AEM.
 1. Seul le moteur de stockage WiredTiger de MongoDB est pris en charge.
 1. Pris en charge pour les clients et clientes de mise à niveau d’AEM Forms. Non pris en charge pour les nouvelles installations.
-1. AEM Forms applicable uniquement :
+1. Applicable à AEM Forms uniquement :
    * Suppression de la prise en charge d’Oracle Database 12c et ajout de la prise en charge d’Oracle Database 19c.
    * Suppression de la prise en charge de Microsoft® SQL Server 2016 et ajout de celle de Microsoft® SQL Server 2019.
+1. Non pris en charge pour AEM Forms.
 
 >[!NOTE]
 >
