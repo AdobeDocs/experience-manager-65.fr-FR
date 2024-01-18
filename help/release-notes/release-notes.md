@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 2c5791e972deef5fe81768d10ad53acaf946332a
-workflow-type: ht
-source-wordcount: '4308'
-ht-degree: 100%
+source-git-commit: 5da11d1f1a8568c12cb9f6ccea9d71e61c1310c3
+workflow-type: tm+mt
+source-wordcount: '4376'
+ht-degree: 98%
 
 ---
 
@@ -444,6 +444,39 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
       "visualSimilaritySearch"
     ]
   "refresh": true
+  ```
+
+* Lors de l’exécution d’une requête GraphQL avec des variables facultatives, si une valeur spécifique est **not** fourni pour la variable facultative, la valeur de cette variable sera considérée comme implicite. `null`. Cela signifie que le filtre correspondra uniquement `null` pour la propriété correspondante.
+
+  Par exemple, dans la requête ci-dessous, où aucune valeur n’est spécifiée pour la propriété `lastName`:
+
+  ```graphql
+  query getAuthorsFilteredByLastName($authorLastName: String) {
+  authorList(filter:
+    {
+      lastName: {_expressions: {value: $authorLastName}
+      }}) {
+    items {
+      lastName
+      }
+    }
+  }
+  ```
+
+  Uniquement les auteurs avec la variable `lastName` La propriété définie sur null est renvoyée :
+
+  ```graphql
+  {
+  "data": {
+    "authorList": {
+      "items": [
+        {
+          "lastName": null
+        }
+      ]
+    }
+  }
+  }
   ```
 
 * Si vous mettez à niveau votre instance [!DNL Experience Manager] de 6.5.0 à 6.5.4, jusqu’au dernier Service Pack sur Java™ 11, les exceptions `RRD4JReporter` s’affichent dans le fichier `error.log`. Pour arrêter les exceptions, redémarrez votre instance d’[!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
