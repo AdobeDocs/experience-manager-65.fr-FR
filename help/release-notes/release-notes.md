@@ -4,9 +4,9 @@ description: Consultez les informations sur la mise à jour, y compris les nouve
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
 source-git-commit: 5da11d1f1a8568c12cb9f6ccea9d71e61c1310c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4376'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -446,9 +446,9 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
   "refresh": true
   ```
 
-* Lors de l’exécution d’une requête GraphQL avec des variables facultatives, si une valeur spécifique est **not** fourni pour la variable facultative, la valeur de cette variable sera considérée comme implicite. `null`. Cela signifie que le filtre correspondra uniquement `null` pour la propriété correspondante.
+* Lors de l’exécution d’une requête GraphQL avec des variables facultatives, si une valeur spécifique n’est **pas** fournie pour la variable facultative, la valeur de cette dernière sera considérée comme une valeur `null` implicite. Cela signifie que le filtre correspondra uniquement aux valeurs `null` pour la propriété correspondante.
 
-  Par exemple, dans la requête ci-dessous, où aucune valeur n’est spécifiée pour la propriété `lastName`:
+  Par exemple, dans la requête ci-dessous, où aucune valeur n’est spécifiée pour la propriété `lastName` :
 
   ```graphql
   query getAuthorsFilteredByLastName($authorLastName: String) {
@@ -463,7 +463,7 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
   }
   ```
 
-  Uniquement les auteurs avec la variable `lastName` La propriété définie sur null est renvoyée :
+  Uniquement les auteurs et autrices dont la propriété `lastName` est définie sur null seront renvoyés :
 
   ```graphql
   {
