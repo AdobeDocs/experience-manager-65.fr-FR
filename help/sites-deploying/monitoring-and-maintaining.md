@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 783824ece92c12476505d695b961d782d7d70cb9
 workflow-type: tm+mt
-source-wordcount: '5793'
+source-wordcount: '5792'
 ht-degree: 98%
 
 ---
@@ -203,7 +203,7 @@ AEM WCM enregistre des journaux détaillés. Une fois que vous avez décompress�
 
 La rotation de fichiers journaux fait référence au processus qui limite la croissance du fichier par la création périodique d’un nouveau fichier. Dans AEM, la rotation d’un fichier journal appelé `error.log` est activée une fois par jour, selon les règles en place :
 
-* Le fichier `error.log` est renommé selon le modèle {original_filename} `.yyyy-MM-dd`. Par exemple, le 11 juillet 2010, le fichier journal actuel est renommé `error.log-2010-07-10`, puis un nouveau fichier `error.og` est créé.
+* La variable `error.log` est renommé en fonction du modèle. `{original_filename}.yyyy-MM-dd`. Par exemple, le 11 juillet 2010, le fichier journal actuel est renommé `error.log-2010-07-10`, puis un nouveau fichier `error.log` est créé.
 
 * Les fichiers journaux précédents ne sont pas supprimés. Il est de votre responsabilité de nettoyer régulièrement les anciens fichiers journaux pour limiter l’utilisation du disque.
 

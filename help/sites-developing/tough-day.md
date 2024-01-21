@@ -4,10 +4,10 @@ description: Le test Tough Day simule la charge quotidienne d’environ 1 000 a
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 61c7955c5370b5341d097dc36d08b2b92b89517b
 workflow-type: tm+mt
-source-wordcount: '1824'
-ht-degree: 97%
+source-wordcount: '1826'
+ht-degree: 96%
 
 ---
 
@@ -400,7 +400,7 @@ Tough Day 2 crée un dossier .logs dans le répertoire où vous avez exécuté
 * **toughday.log** : contient les messages liés à l’état de l’application, les informations de débogage et les messages globaux.
 * **toughday_&lt;testname>.log** : messages liés au test spécifié.
 
-Les journaux ne sont pas remplacés, les exécutions subséquentes ajoutent des messages aux journaux existants. Les journaux ont plusieurs niveaux. Pour plus d’informations, consultez la section ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
+Les journaux ne sont pas remplacés, les exécutions subséquentes ajoutent des messages aux journaux existants. Les journaux comportent plusieurs niveaux. Pour plus d’informations, voir la section [paramètre loglevel.](#global-parameters).
 
 <!--
 #### Example Usage {#example-usage}
