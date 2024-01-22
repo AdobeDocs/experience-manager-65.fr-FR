@@ -4,7 +4,7 @@ description: Consultez les informations sur la mise à jour, y compris les nouve
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
 source-git-commit: 5da11d1f1a8568c12cb9f6ccea9d71e61c1310c3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '4376'
 ht-degree: 100%
 
