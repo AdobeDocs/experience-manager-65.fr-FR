@@ -7,10 +7,10 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 0924ae98f03f09d5e8784bbd5e7af131b1edd544
 workflow-type: tm+mt
-source-wordcount: '2359'
-ht-degree: 86%
+source-wordcount: '2380'
+ht-degree: 84%
 
 ---
 
@@ -26,6 +26,10 @@ ht-degree: 86%
 Bien que chaque formulaire soit conçu pour un rôle spécifique, certains segments sont communs à la plupart des formulaires, comme les informations personnels tels que le nom et l’adresse, les informations relatives à la famille et aux revenus, etc. Les développeurs et développeuses de formulaires doivent créer ces segments communs chaque fois qu’un nouveau formulaire est créé.
 
 Les formulaires adaptatifs offrent un mécanisme pratique pour créer un segment de formulaire tel qu’un panneau ou un groupe de champs une seule fois et le réutiliser dans les formulaires adaptatifs. Ces segments réutilisables et autonomes s’appellent des fragments de formulaire adaptatif.
+
+>[!NOTE]
+>
+> Vous pouvez facilement personnaliser votre expérience de fragment pour les utilisateurs qui utilisent le [Boîte de dialogue de configuration et boîte de dialogue de conception du composant Fragment de formulaire](https://experienceleague.corp.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html).
 
 ## Création d’un fragment {#create-a-fragment}
 

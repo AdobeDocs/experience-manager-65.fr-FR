@@ -8,10 +8,10 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
-source-git-commit: 4a8155f754d1f71354717f5eb22511baab110916
+source-git-commit: 6cec9874bff54dea63562f7a880429d54e83ba79
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 84%
+source-wordcount: '969'
+ht-degree: 82%
 
 ---
 
@@ -105,12 +105,11 @@ Pour créer un projet d’archétype AEM 41 ou [version ultérieure](https://gi
 1. Mettez à jour le projet pour inclure la dernière version des composants principaux des formulaires :
 
    1. Ouvrez le [Dossier du projet d’archétype AEM]/pom.xml pour modification.
-   1. Définir la version de `core.forms.components.version` et `core.forms.components.af.version` to [derniers composants principaux Forms](https://github.com/adobe/aem-core-forms-components/tree/release/650#system-requirements) et assurez-vous que les deux ont la même version que **Composants principaux de Forms** mentionné dans le tableau et définissez la version de `core.wcm.components.version` comme indiqué dans **Composants principaux WCM**.
+   1. Définir la version de `core.forms.components.version` et `core.forms.components.af.version` à la fonction [derniers composants principaux Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history) et assurez-vous que les deux ont la même version que **Composants principaux de Forms** mentionné dans le tableau et définissez la version de `core.wcm.components.version` comme indiqué dans [Composants principaux WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html).
 
       >[!WARNING]
       >
-      >* Lors de la création d’un projet Archetype avec `version 45`, la variable [AEM archetype Project Folder]/pom.xml définit initialement la version des composants principaux de formulaires sur `1.1.28`. Avant de créer ou de déployer le projet Archetype, mettez à jour la version des composants principaux de formulaires en `1.1.26`.
-
+      >* Lors de la création d’un projet Archetype avec la version 45, la variable `[AEM Archetype Project Folder]/pom.xml` définit initialement la version des composants principaux de formulaires sur 1.1.28. Avant de créer ou de déployer le projet Archetype, mettez à jour la version des composants principaux de formulaires vers la version 1.1.26. Vous trouverez la dernière version dans la section [Historique des versions d’AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history).
 
       >[!NOTE]
       >
