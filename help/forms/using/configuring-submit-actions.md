@@ -6,9 +6,9 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 23dd80f0555ddec1ca422b13fbf0d45acf5ab6a8
+source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
 workflow-type: tm+mt
-source-wordcount: '2580'
+source-wordcount: '2597'
 ht-degree: 88%
 
 ---
@@ -168,6 +168,10 @@ L’éditeur de formulaires adaptatifs fournit l’action d’envoi **Appeler un
 Une fois la configuration réussie, utilisez l’action d’envoi [Appeler un flux Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) pour envoyer des données à un flux Power Automate.
 
 ## Envoyer à la liste SharePoint Microsoft®{#submit-to-sharedrive}
+
+>[!NOTE]
+>
+La fonction Envoyer à Microsoft® SharePoint List a été introduite avec AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 
 La variable **[!UICONTROL Envoyer à SharePoint]** l’action d’envoi connecte un formulaire adaptatif à un stockage SharePoint Microsoft®. Vous pouvez envoyer le fichier de données de formulaire, les pièces jointes ou le document d’enregistrement au stockage Microsoft® SharePoint connecté.
 
