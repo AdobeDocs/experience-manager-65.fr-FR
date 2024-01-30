@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
-source-git-commit: 152b6078d6a19f8220564188d4d5d5a7bdee4146
+source-git-commit: ff9d054d0b08f5f98f5edb63975a0dbc8370d42f
 workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 28%
+ht-degree: 24%
 
 ---
 
@@ -65,7 +65,7 @@ Utilisez une `Session` pour créer une instance `javax.jcr.Node` instance. A `No
 Node root = session.getRootNode();
 ```
 
-Une fois une instance `Node` créée, vous pouvez effectuer des tâches, comme créer un autre nœud et y ajouter une valeur. Par exemple, le code suivant crée deux noeuds et ajoute une valeur au deuxième noeud.
+Une fois que vous avez créé une `Node` vous pouvez exécuter des tâches telles que la création d’un autre noeud et l’ajout d’une valeur. Par exemple, le code suivant crée deux noeuds et ajoute une valeur au deuxième noeud.
 
 ```java
 // Store content
