@@ -3,10 +3,10 @@ title: API AEM GraphQL pour l’utilisation des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 3d1c3ac74c9303a88d028d957e3da6aa418e71ba
 workflow-type: tm+mt
-source-wordcount: '4781'
-ht-degree: 95%
+source-wordcount: '4697'
+ht-degree: 96%
 
 ---
 
@@ -705,40 +705,28 @@ La mise en cache des requêtes persistantes n’est pas activée par défaut dan
 
 ### Activer la mise en cache des requêtes persistantes {#enable-caching-persisted-queries}
 
-Pour activer la mise en cache des requêtes persistantes, définissez la variable du Dispatcher `CACHE_GRAPHQL_PERSISTED_QUERIES` :
+Pour activer la mise en cache des requêtes persistantes, les mises à jour suivantes des fichiers de configuration de Dispatcher sont requises :
 
-1. Ajoutez la variable au fichier du Dispatcher `global.vars` :
+* `<conf.d/rewrites/base_rewrite.rules>`
 
-   ```xml
-   Define CACHE_GRAPHQL_PERSISTED_QUERIES
-   ```
+  ```xml
+  # Allow the dispatcher to be able to cache persisted queries - they need an extension for the cache file
+  RewriteCond %{REQUEST_URI} ^/graphql/execute.json
+  RewriteRule ^/(.*)$ /$1;.json [PT] 
+  ```
 
->[!NOTE]
->
->Lorsque la mise en cache de Dispatcher est activée pour les requêtes persistantes à l’aide de `Define CACHE_GRAPHQL_PERSISTED_QUERIES` an `ETag` L’en-tête est ajouté à la réponse par Dispatcher.
->
->Par défaut, la variable `ETag` header est configuré avec la directive suivante :
->
->```
->FileETag MTime Size 
->```
->
->Cependant, ce paramètre peut entraîner des problèmes lorsqu’il est utilisé pour les réponses de requête persistantes, car il ne tient pas compte des petites modifications apportées à la réponse.
->
->Pour atteindre un individu `ETag` calculs sur *each* réponse unique : `FileETag Digest` doit être utilisé dans la configuration du dispatcher :
->
->```xml
-><Directory />    
->   ...    
->   FileETag Digest
-></Directory> 
->```
+  >[!NOTE]
+  >
+  >Dispatcher ajoute le suffixe `.json` à toutes les URL de requête conservées, de sorte que le résultat puisse être mis en cache.
+  >
+  >Cela permet de s’assurer que la requête est conforme aux exigences de Dispatcher pour les documents qui peuvent être mis en cache.
 
->[!NOTE]
->
->Pour que la variable [Exigences de Dispatcher pour les documents pouvant être mis en cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=fr#how-does-the-dispatcher-return-documents%3F), Dispatcher ajoute le suffixe `.json` à toutes les URL de requête persistantes, de sorte que le résultat puisse être mis en cache.
->
->Ce suffixe est ajouté par une règle de réécriture, une fois la mise en cache des requêtes persistantes activée.
+* `<conf.dispatcher.d/filters/ams_publish_filters.any>`
+
+  ```xml
+  # Allow GraphQL Persisted Queries & preflight requests
+  /0110 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
+  ```
 
 ### Configuration CORS dans Dispatcher {#cors-configuration-in-dispatcher}
 
