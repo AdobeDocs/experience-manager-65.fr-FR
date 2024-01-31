@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation de Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: 07d44d8dea5bf27b831abd02bd42e53dd860133a
+source-git-commit: ac4d8a45478fbe48b1e3d43affeee935d7b7ca90
 workflow-type: tm+mt
-source-wordcount: '7322'
+source-wordcount: '7334'
 ht-degree: 97%
 
 ---
@@ -1181,6 +1181,7 @@ ht-degree: 97%
       + [Traitement des documents même si le serveur AEM Forms n’est pas entièrement opérationnel](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [Impossible d’utiliser le service Output, Forms ou Document d’enregistrement (DoR)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Réduction des vulnérabilités de Struts 2 RCE pour Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
+      + [La génération de PDF ne parvient pas à imprimer un grand nombre de PDF sur WorkBench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [Échec de la sauvegarde de la base de données lors de la mise à niveau vers le Service Pack AEM Forms. 6.5.12.0](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6.5.12.0.md)
    + Documentation héritée {#legacy-documentation}
       + [Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML](/help/forms/developing/building-xml.md)
