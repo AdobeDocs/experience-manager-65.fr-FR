@@ -3,9 +3,9 @@ title: API AEM GraphQL pour l’utilisation des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 3d1c3ac74c9303a88d028d957e3da6aa418e71ba
+source-git-commit: 312e2477bb6a7cccab74cd4637d6a402f61052d7
 workflow-type: tm+mt
-source-wordcount: '4697'
+source-wordcount: '4708'
 ht-degree: 96%
 
 ---
@@ -719,7 +719,7 @@ Pour activer la mise en cache des requêtes persistantes, les mises à jour suiv
   >
   >Dispatcher ajoute le suffixe `.json` à toutes les URL de requête conservées, de sorte que le résultat puisse être mis en cache.
   >
-  >Cela permet de s’assurer que la requête est conforme aux exigences de Dispatcher pour les documents qui peuvent être mis en cache.
+  >Cela permet de s’assurer que la requête est conforme aux exigences de Dispatcher pour les documents qui peuvent être mis en cache. Pour plus d’informations, voir [Comment Dispatcher renvoie-t-il des documents ?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=fr#how-does-the-dispatcher-return-documents%3F)
 
 * `<conf.dispatcher.d/filters/ams_publish_filters.any>`
 
