@@ -7,10 +7,11 @@ feature-set: Experience Manager Assets,Experience Manager,Experience Manager Sit
 version: 6.5
 type: Documentation
 index: y
-source-git-commit: ee6e408668a523464632e53a01ba11eddec103f6
-workflow-type: ht
-source-wordcount: '134'
-ht-degree: 100%
+recommendations: noDisplay
+source-git-commit: fc76dd7af48aa67380b0635589acf9322bff86fb
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 88%
 
 ---
 
@@ -21,9 +22,9 @@ Le fichier metadata.md comprend des métadonnées de niveau référentiel qui tr
 
 | metadata | effets |
 |--- |--- |
-| solution-title | Utilisé dans l’en-tête de l’article en tant que lien.. |
+| solution-title | Utilisé dans l’en-tête de l’article comme lien. |
 | solution-hub-url | Ouvre la page hub Formation et assistance. |
-| solution-icon | Affiche l’icône de solution en regard du titre de la solution. Pas encore implémenté.. |
+| solution-icon | Affiche l’icône de solution en regard du titre de la solution. Pas encore mis en oeuvre. |
 | getting-started-url | Lien vers la page de prise en main. |
 | tutorials-url | Lien vers des tutoriels vidéo. |
 | mini-toc-levels | Détermine le nombre de niveaux d’en-tête qui apparaissent dans le rail droit. La valeur par défaut est 2. |
@@ -33,5 +34,5 @@ Dans le fichier TOC.md
 
 | metadata | effets |
 |--- |--- |
-| user-guide-title | Utilisé dans l’en-tête de l’article en tant que lien.. |
+| user-guide-title | Utilisé dans l’en-tête de l’article comme lien. |
 | user-guide-url | Ouvre la page hub Formation et assistance. |
