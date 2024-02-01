@@ -1,14 +1,14 @@
 ---
 title: Échec de la sauvegarde de la base de données lors de la mise à niveau vers la version 6.5.12.0 pour MySQL.
 description: Lorsqu’un utilisateur effectue une mise à niveau vers Experience Manager 6.5.12.0 et clique sur "Mettre à niveau MySQL", le gestionnaire de configuration ne parvient pas à sauvegarder la base de données Experience Manager Forms précédente.
-source-git-commit: bf974331157e21b28c0daa5b878ac927ce5a2304
+source-git-commit: a6b1e97fd694f0fa1396697c42d84daaa9a6ac68
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '105'
 ht-degree: 6%
 
 ---
 
-# Échec de la sauvegarde de la base de données lors de la mise à niveau vers la version 6.5.12.0 pour MySQL (#issue)
+# Échec de la sauvegarde de la base de données lors de la mise à niveau vers la version 6.5.12.0 pour MySQL {#issue}
 
 Lorsqu’un utilisateur effectue une mise à niveau vers Experience Manager 6.5.12.0 et clique sur &quot;Mettre à niveau MySQL&quot;, le gestionnaire de configuration ne parvient pas à sauvegarder la base de données Experience Manager Forms précédente. L’erreur s’affiche :
 
