@@ -4,9 +4,9 @@ description: Utilisez des graphiques dans un formulaire adaptatif pour rendre vo
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 5c117d25a381b2cb85c2bf0715866dd5ad93572c
+source-git-commit: 53a6914792bb15773c8f91a2bb6295ab69b3b1bf
 workflow-type: tm+mt
-source-wordcount: '2001'
+source-wordcount: '2005'
 ht-degree: 6%
 
 ---
@@ -15,8 +15,8 @@ ht-degree: 6%
 
 ![Hero_Image](assets/charts_hero_image.jpg)
 
-Un diagramme ou un graphique est une représentation visuelle des données. Il vous permet de condenser de grandes quantités d’informations dans un format visuel et facile à comprendre, ce qui vous permet de mieux visualiser, interpréter et analyser des données complexes.
-Le module complémentaire AEM Forms fournit un composant de graphique d’usine. Vous pouvez utiliser dans vos formulaires et documents adaptatifs pour la représentation visuelle de données bidimensionnelles dans des panneaux et des tableaux répétables. Le composant Graphique vous permet d’ajouter et de configurer les types de graphiques suivants :
+Un diagramme ou un graphique est une représentation visuelle des données. Il vous permet de condenser de grandes quantités d’informations dans un format visuel facile à comprendre, ce qui vous permet de mieux visualiser, interpréter et analyser des données complexes.
+Le module complémentaire AEM Forms fournit un composant de graphique d’usine. Vous pouvez utiliser dans vos formulaires et documents adaptatifs pour une représentation visuelle des données bidimensionnelles dans **panneaux répétables** et **tables**. Le composant Graphique vous permet d’ajouter et de configurer les types de graphiques suivants :
 
 1. Diagramme circulaire
 1. Colonnes
@@ -41,7 +41,7 @@ Par défaut, le composant Graphique est disponible dans AEM barre latérale. Vou
 > 
 > Avant de configurer le graphique, assurez-vous que la ligne du panneau ou du tableau pour lequel vous configurez le graphique est définie sur répétable. Vous pouvez spécifier les valeurs minimale et maximale pour la ligne de panneau ou de tableau répétable dans l’onglet Paramètres de répétition de la boîte de dialogue Modifier le composant.
 
-Pour configurer le graphique, cliquez avec le bouton droit sur le composant Graphique et cliquez sur Modifier pour ouvrir la boîte de dialogue Modifier le graphique . La boîte de dialogue comprend les onglets Titre et texte, Configuration, Options avancées et Style qui vous permettent de configurer le graphique.
+Pour configurer le graphique, cliquez sur le composant Graphique, puis sur ![Paramètres](cmppr1.png) pour ouvrir la boîte de dialogue Modifier le graphique . La boîte de dialogue comprend les onglets Titre et texte, Configuration, Options avancées et Style qui vous permettent de configurer le graphique.
 
 ### Éléments de base {#basic}
 
@@ -51,7 +51,7 @@ Dans l’onglet De base , vous pouvez configurer les propriétés suivantes :
 
 * **Nom de l’élément**: identifiant de l’élément de graphique dans la structure de contenu JCR. Elle n’est pas visible sur le graphique, mais elle s’avère utile lorsque vous faites référence à l’élément à partir d’autres composants, scripts et expressions SOM.
 * **Type de graphique**: indique le type de graphique à générer. Les options disponibles sont Circulaire, Anneau, Barre, Colonne, Ligne, Ligne et Point, Point et Aire. Dans cet exemple, le type de graphique est Colonne.
-* **Répétition du nom de la ligne pour la source de données**: spécifie le nom de l’élément de la ligne du tableau ou du panneau répétable à partir duquel les données seront issues. Dans cet exemple, statementDetails est le nom de l’élément de la ligne répétable dans le tableau Statement Details.
+* **Répétition du nom de la ligne ou du nom du panneau pour la source de données**: spécifie le nom de l’élément de la ligne du tableau ou du panneau répétable à partir duquel les données seront issues. Dans cet exemple, statementDetails est le nom de l’élément de la ligne répétable dans le tableau Statement Details.
 * **Axe X > Titre**: spécifie le titre de l’axe X. Dans l’exemple, le titre de l’axe X est Catégorie.
 * **Axe X > Champ**: spécifie le nom de l’élément du champ (ou d’une cellule d’un tableau) à tracer sur l’axe X. Dans cet exemple, les catégories sont paramétrées sur l&#39;axe X. Le nom d’élément de la cellule de tableau dans la colonne Catégorie de l’exemple de tableau est category.
 * **Axe X > Utiliser la fonction**: spécifie la fonction statistique à utiliser pour calculer les valeurs sur l’axe X. Dans l’exemple, l’option sélectionnée est Aucun. Pour plus d’informations sur les fonctions, voir Utilisation des fonctions dans le graphique.
@@ -78,7 +78,7 @@ Pour ce faire, vous devez tracer les catégories sur l’axe X et, sur l’axe Y
 
 ![Détails des instructions](assets/statement-details.png)
 
-Le relevé de carte de crédit utilisé dans cet exemple est un document adaptatif et la section des détails du relevé est un tableau, qui se présente comme suit en mode création.
+Le relevé de carte de crédit utilisé dans cet exemple est un document de formulaire adaptatif et la section des détails du relevé est un tableau, qui se présente comme suit en mode création.
 
 ![Création de détails d’un document](assets/statement-details-authoring.png)
 
@@ -87,7 +87,7 @@ Examinons les conditions et exigences suivantes pour générer le graphique :
 * Le graphique affiche les dépenses totales dans chaque catégorie dans le tableau Détails du relevé .
 * Le type de graphique est Colonne, mais vous pouvez choisir n’importe quel autre type de graphique, le cas échéant.
 * La ligne Tableau du tableau Détails du relevé peut être répétée. Vous pouvez le configurer dans le champ Paramètres de répétition des propriétés de ligne du tableau.
-* Le nom d’élément de la ligne est statementDetails. Vous pouvez le configurer dans les propriétés Ligne du tableau .
+* Le nom d’élément de la ligne est Statement Details. Vous pouvez le configurer dans les propriétés Ligne du tableau .
 * Le nom d’élément de la cellule de tableau dans la colonne Catégorie est Catégorie. Vous pouvez le spécifier en ligne. Sélectionnez la cellule et appuyez sur le bouton Modifier.
 * Le nom de l’élément de la cellule du tableau dans la colonne Montant est Montant. En outre, la cellule de tableau de la colonne Montant est une zone numérique.
 * Avec la configuration spécifiée, le graphique à colonnes de l&#39;exemple apparaîtra comme suit. Chaque couleur représente une catégorie et des éléments de ligne individuels ou des quantités pour une catégorie sont ajoutés dans le graphique.
@@ -108,7 +108,7 @@ Pour passer en mode Style, dans la barre d’outils de la page, **appuyez > Styl
 
 ## Utiliser des fonctions dans le graphique {#use-functions}
 
-Vous pouvez configurer un graphique pour qu’il utilise des fonctions statistiques afin de calculer des valeurs à partir des données source destinées au tracé sur le graphique. Bien que le composant Graphique soit fourni avec certaines fonctions intégrées, vous pouvez créer vos propres fonctions et les rendre disponibles pour une utilisation dans la configuration du graphique.
+Vous pouvez configurer un graphique pour qu’il utilise des fonctions statistiques afin de calculer des valeurs à partir des données source destinées au tracé sur le graphique. Bien que le composant Graphique dispose de certaines fonctions intégrées, vous pouvez créer vos propres fonctions et les rendre disponibles pour une utilisation dans la configuration du graphique.
 
 >[!NOTE]
 >
@@ -129,7 +129,7 @@ Les fonctions suivantes sont disponibles par défaut avec le composant de graphi
 
 ### Fonctions personnalisées {#custom-functions}
 
-En plus d’utiliser les fonctions par défaut dans les graphiques, vous pouvez écrire des fonctions personnalisées en JavaScript et les rendre disponibles dans la liste des fonctions du composant de graphique.
+En plus d’utiliser les fonctions par défaut dans les graphiques, vous pouvez écrire. [fonctions personnalisées](/help/forms/using/rule-editor.md#custom-functions-in-rule-editor-custom-functions) en JavaScript et rendez-les disponibles dans la liste des fonctions du composant de graphique.
 
 Une fonction prend un tableau ou des valeurs et un nom de catégorie comme entrées et renvoie une valeur. Par exemple :
 
