@@ -2,9 +2,9 @@
 title: Correctifs pour AEM Forms
 description: Fournit des informations sur la manière de télécharger et d’installer un correctif pour AEM Forms.
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
-source-git-commit: 4685a4babbec07dc09fe19c9264b4141b9989fbb
+source-git-commit: 5ab1fd033af0d6d5595fe41de003455ab9ba28a6
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '322'
 ht-degree: 9%
 
 ---
@@ -35,7 +35,7 @@ Cet article répertorie les correctifs critiques mis en oeuvre pour résoudre le
      </td>
     <td>
     <ul>
-    <li>Sur AEM Forms sur le serveur JEE, le rendu de HTML5 Forms qui utilisent le chemin d’accès au contexte échoue. (FORMS-12485).</li>
+    <li>Sur AEM Forms sur le serveur JEE, le rendu de HTML5 Forms qui utilisent le chemin d’accès au contexte échoue. (FORMS-12485, FORMS-12691).</li>
     </ul>
     </td>    
   </tr>

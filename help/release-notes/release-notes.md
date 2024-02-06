@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 040170454345df352ed259806193c41c23bf953d
-workflow-type: ht
-source-wordcount: '4415'
-ht-degree: 100%
+source-git-commit: 5ab1fd033af0d6d5595fe41de003455ab9ba28a6
+workflow-type: tm+mt
+source-wordcount: '4417'
+ht-degree: 99%
 
 ---
 
@@ -553,7 +553,7 @@ Pour résoudre le problème, recherchez le fichier `<AEM_Forms_Installation_dir>
 Pour résoudre le problème, [recompilez les scripts Sling tels que JSP, Java™ et Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=fr#resolution). (FORMS-8542)
 * Après avoir installé le Pack de services AEM 6.5.14.0 et versions ultérieures, les utilisateurs et utilisatrices ne peuvent pas sélectionner de police dans l’interface utilisateur d’administration de JEE pour les documents PDF lorsqu’ils accèdent à `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, car la liste des polices s’affiche vide. (FORMS-12095)
 <!-- When a form is signed using the OOTB Scribble Signature component, it appears in the image dialogue but does not preview and appears blank when you click on it. (FORMS-12073). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md) -->
-* Dans AEM Forms on JEE, le rendu des formulaires HTML5 qui utilisent le chemin d’accès au contexte échoue. (FORMS-12485). Un correctif est disponible pour ce problème. Pour télécharger et installer le correctif, voir [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md).
+* Dans AEM Forms on JEE, le rendu des formulaires HTML5 qui utilisent le chemin d’accès au contexte échoue. (FORMS-12485, FORMS-12691). Un correctif est disponible pour ce problème. Pour télécharger et installer le correctif, voir [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md).
 
 #### d’AEM Forms on JEE
 
