@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation de Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: 220e060de43758ce07e82bedcee8d26fb46a9a6f
+source-git-commit: a9d59e00efe8f0c2cbfca51901c441a2d65b70f2
 workflow-type: tm+mt
 source-wordcount: '7333'
 ht-degree: 97%
@@ -19,24 +19,24 @@ ht-degree: 97%
 + Notes de mise à jour {#release-notes}
    + [Notes de mise à jour](/help/release-notes/release-notes.md)
    + Notes de mise à jour précédentes {#service-pack}
-      + [6.5.18](/help/release-notes/previous/6.5.18.md)
-      + [6.5.17](/help/release-notes/previous/6.5.17.md)
-      + [6.5.16](/help/release-notes/previous/6.5.16.md)
-      + [6.5.15](/help/release-notes/previous/6.5.15.md)
-      + [6.5.14](/help/release-notes/previous/6.5.14.md)
-      + [6.5.13](/help/release-notes/previous/6.5.13.md)
-      + [6.5.12](/help/release-notes/previous/6.5.12.md)
-      + [6.5.11](/help/release-notes/previous/6.5.11.md)
-      + [6.5.10](/help/release-notes/previous/6.5.10.md)
-      + [6.5.9](/help/release-notes/previous/6.5.9.md)
-      + [6.5.8](/help/release-notes/previous/6.5.8.md)
-      + [6.5.7](/help/release-notes/previous/6.5.7.md)
-      + [6.5.6](/help/release-notes/previous/6.5.6.md)
-      + [6.5.5](/help/release-notes/previous/6.5.5.md)
-      + [6.5.4](/help/release-notes/previous/6.5.4.md)
-      + [6.5.3](/help/release-notes/previous/6.5.3.md)
-      + [6.5.2](/help/release-notes/previous/6.5.2.md)
-      + [6.5.1](/help/release-notes/previous/6.5.1.md)
+      + [6.5.18](/help/release-notes/previous/6-5-18.md)
+      + [6.5.17](/help/release-notes/previous/6-5-17.md)
+      + [6.5.16](/help/release-notes/previous/6-5-16.md)
+      + [6.5.15](/help/release-notes/previous/6-5-15.md)
+      + [6.5.14](/help/release-notes/previous/6-5-14.md)
+      + [6.5.13](/help/release-notes/previous/6-5-13.md)
+      + [6.5.12](/help/release-notes/previous/6-5-12.md)
+      + [6.5.11](/help/release-notes/previous/6-5-11.md)
+      + [6.5.10](/help/release-notes/previous/6-5-10.md)
+      + [6.5.9](/help/release-notes/previous/6-5-9.md)
+      + [6.5.8](/help/release-notes/previous/6-5-8.md)
+      + [6.5.7](/help/release-notes/previous/6-5-7.md)
+      + [6.5.6](/help/release-notes/previous/6-5-6.md)
+      + [6.5.5](/help/release-notes/previous/6-5-5.md)
+      + [6.5.4](/help/release-notes/previous/6-5-4.md)
+      + [6.5.3](/help/release-notes/previous/6-5-3.md)
+      + [6.5.2](/help/release-notes/previous/6-5-2.md)
+      + [6.5.1](/help/release-notes/previous/6-5-1.md)
       + [6.5.0](/help/release-notes/previous/ga.md)
    + [Instructions d’installation pour le pack de services AEM Forms](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md)
    + [Programme d’installation du correctif AEM Forms JEE](/help/release-notes/jee-patch-installer-65.md)
@@ -1182,7 +1182,7 @@ ht-degree: 97%
       + [Traitement des documents même si le serveur AEM Forms n’est pas entièrement opérationnel](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [Impossible d’utiliser le service Output, Forms ou Document d’enregistrement (DoR)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Réduction des vulnérabilités de Struts 2 RCE pour Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
-      + [Échec de la sauvegarde de la base de données lors de la mise à niveau vers la version 6.5.12.0 pour MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6.5.12.0.md)
+      + [Échec de la sauvegarde de la base de données lors de la mise à niveau vers la version 6.5.12.0 pour MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [La génération de PDF ne parvient pas à imprimer un grand nombre de PDF sur WorkBench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
    + Documentation héritée {#legacy-documentation}
       + [Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML](/help/forms/developing/building-xml.md)

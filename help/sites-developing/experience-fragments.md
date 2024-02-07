@@ -7,7 +7,7 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: a9d59e00efe8f0c2cbfca51901c441a2d65b70f2
 workflow-type: tm+mt
 source-wordcount: '1781'
 ht-degree: 97%
@@ -182,7 +182,7 @@ Pour ces cas d’utilisation, AEM propose l’interface du fournisseur de rééc
 
 >[!NOTE]
 >
->Cette interface a été introduite dans le [SP1 AEM 6.5 (6.5.1.0)](/help/release-notes/previous/6.5.1.md).
+>Cette interface a été introduite dans le [SP1 AEM 6.5 (6.5.1.0)](/help/release-notes/previous/6-5-1.md).
 
 Pour les cas plus complexes, non couverts par le [paramètre par défaut](#default-link-rewriting), AEM propose l’interface du fournisseur de réécriture de liens. Il s’agit d’une interface `ConsumerType` que vous pouvez implémenter dans vos bundles sous la forme d’un service. Elle ignore les modifications qu’AEM effectue sur les liens internes d’une offre HTML telle qu’elle est générée à partir d’un fragment d’expérience. Cette interface vous permet de personnaliser le processus de réécriture des liens HTML internes afin de l’adapter aux besoins de votre entreprise.
 
