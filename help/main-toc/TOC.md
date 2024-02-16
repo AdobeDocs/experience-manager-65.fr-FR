@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation de Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: f41cb88406db23c2af8988f7ee584db95184c6c4
+source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
 workflow-type: tm+mt
 source-wordcount: '7335'
 ht-degree: 97%
@@ -560,7 +560,7 @@ ht-degree: 97%
       + Configuration d’AEM Forms {#configure-aem-forms}
          + [Réglage des performances du serveur AEM Forms](/help/forms/using/performance-tuning-aem-forms.md)
          + [Configurer le cache de formulaires adaptatifs](/help/forms/using/configure-adaptive-forms-cache.md)
-         + [Configuration des paramètres AEM DS](/help/forms/using/configuring-the-processing-server-url-.md)
+         + [Configuration des paramètres AEM DS](/help/forms/using/configuring-the-processing-server-url.md)
          + [Configuration du planificateur de synchronisation](/help/forms/using/configure-synchronization-scheduler.md)
          + [Configuration de Connector for Microsoft SharePoint](https://help.adobe.com/fr/AEMForms/6.1/SharePointConfig/index.html)
          + [Connexion d’AEM Forms à Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md)
@@ -636,7 +636,7 @@ ht-degree: 97%
       + [Styles intégrés des composants de formulaire adaptatif](/help/forms/using/inline-style-adaptive-forms.md)
       + [Présentation de la séquence de formulaires à plusieurs étapes](/help/forms/using/introduction-form-sequence.md)
       + [Fonctionnalités de disposition des formulaires adaptatifs](/help/forms/using/layout-capabilities-adaptive-forms.md)
-      + [Texte d’espace réservé dans AEM Forms](/help/forms/using/placeholder-text-in-aem-forms-.md)
+      + [Texte d’espace réservé dans AEM Forms](/help/forms/using/placeholder-text-in-aem-forms.md)
       + [Prévisualisation d’un formulaire](/help/forms/using/previewing-forms.md)
       + [Réutilisation de formulaires adaptatifs](/help/forms/using/reusing-adaptive-forms.md)
       + [Composant Separator dans les formulaires adaptatifs](/help/forms/using/separator-component-in-adaptive-forms.md)

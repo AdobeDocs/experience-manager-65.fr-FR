@@ -7,10 +7,10 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 91ee4422-99c1-4907-a507-5968c6984f28
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 69%
+ht-degree: 73%
 
 ---
 
@@ -68,11 +68,11 @@ Pour associer les post-traitements aux lettres et communications interactives, v
 
 1. Se connecter à `https://localhost:publishport/aem/forms`.
 1. Accédez à **[!UICONTROL Lettres]** pour afficher la lettre publiée disponible sur l’instance de publication.
-1. Configurez les paramètres AEM DS. Voir [Configuration des paramètres d’AEM DS](../../forms/using/configuring-the-processing-server-url-.md).
+1. Configurez les paramètres AEM DS. Voir [Configuration des paramètres d’AEM DS](../../forms/using/configuring-the-processing-server-url.md).
 
 >[!NOTE]
 >
->Lors de l’utilisation de processus Forms ou AEM, avant d’envoyer un envoi depuis le serveur de publication, il est nécessaire de configurer le service de paramètres du répertoire de stockage global de documents. Sinon, l’envoi du formulaire échouera.
+>Lors de l’utilisation de workflows Forms ou AEM, avant de soumettre un envoi à partir du serveur de publication, il est nécessaire de configurer le service de paramètres DS. Sinon, l’envoi du formulaire échouera.
 
 ## Récupération des instances de lettre {#letter-instances-retrieval}
 
