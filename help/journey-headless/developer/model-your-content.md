@@ -2,10 +2,10 @@
 title: Comment modéliser votre contenu
 description: Dans cette partie du parcours de développement découplé AEM, apprenez à modéliser votre contenu pour une diffusion AEM découplée à l’aide de la modélisation de contenu avec des modèles de fragment de contenu et des fragments de contenu.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
 source-wordcount: '1795'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -45,7 +45,7 @@ Cet article s’appuie sur ces principes de base pour que vous compreniez commen
 
 *Le monde extérieur est vaste et malveillant*.
 
-Peut-être que non, mais c&#39;est certainement un gros problème. ***compliqué*** le monde dehors. La modélisation des données est utilisée pour définir une représentation simplifiée d’une très (très) petite sous-section, à l’aide des informations spécifiques nécessaires à un certain usage.
+Peut-être, mais peut-être pas. C&#39;est certainement un gros ***compliqué*** le monde dehors. La modélisation des données est utilisée pour définir une représentation simplifiée d’une très (très) petite sous-section, à l’aide des informations spécifiques nécessaires à un certain usage.
 
 >[!NOTE]
 >
@@ -169,7 +169,7 @@ Dans un modèle :
 1. Les **types de données** vous permettent de définir les attributs individuels.
 Par exemple, définissez le champ portant le nom d’un enseignant comme **Texte** et ses années de service comme **Nombre**.
 1. Les types de données **Référence de contenu** et **Référence du fragment** permettent de créer des relations avec d’autres contenus dans AEM.
-1. Le type de données **Référence de fragment** vous permet de réaliser plusieurs niveaux de structure en imbriquant vos fragments de contenu (en fonction du type de modèle). Cela est essentiel pour la modélisation de contenu.
+1. Le type de données **Référence de fragment** vous permet de réaliser plusieurs niveaux de structure en imbriquant vos fragments de contenu (en fonction du type de modèle). Ceci est essentiel pour la modélisation de contenu.
 
 Par exemple :
 ![Modélisation de contenu avec des fragments de contenu](assets/headless-modeling-01.png "Modélisation de contenu avec des fragments de contenu")
@@ -228,7 +228,7 @@ Les fragments de contenu sont toujours basés sur un modèle de fragment de cont
 
 ### Sélection du modèle approprié {#select-model}
 
-La première étape pour créer réellement votre contenu consiste à créer un fragment de contenu. Pour ce faire, utilisez Créer > Fragment de contenu dans le dossier requis sous Ressources > Fichiers . L’assistant vous guide tout au long des étapes.
+La première étape pour créer réellement votre contenu consiste à créer un fragment de contenu. Pour ce faire, utilisez Créer > Fragment de contenu dans le dossier requis sous Ressources > Fichiers. L’assistant vous guide tout au long des étapes.
 
 Un fragment de contenu est basé sur un modèle de fragment de contenu spécifique que vous sélectionnez comme première étape du processus de création.
 

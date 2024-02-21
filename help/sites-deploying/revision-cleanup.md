@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: deploying
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
 workflow-type: tm+mt
 source-wordcount: '5752'
 ht-degree: 67%
@@ -552,7 +552,7 @@ Le fichier error.log est détaillé en cas d’incident au cours du processus de
   <tr>
     <td>S/O</td>
     <td>TarMK GC #2 : la compression a échoué à la minute 32,902 (1 974 140 ms), après 5 cycles.</td>
-    <td>Ce message ne signifie pas qu’il y a eu une erreur irrécupérable, mais seulement que la compression a été arrêtée après quelques tentatives. Lisez également le <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">paragraphe suivant.</a></td>
+    <td>Ce message ne signifie pas qu’il y a eu une erreur irrécupérable, mais seulement que la compression a été arrêtée après certaines tentatives. Lisez également le <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">paragraphe suivant.</a></td>
     <td>Lisez la <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">Documentation Oak</a> suivante et la dernière question sur l’Exécution du nettoyage des révisions en ligne.</a></td>
   </td>
   </tr>

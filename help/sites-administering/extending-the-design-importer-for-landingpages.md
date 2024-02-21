@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '3443'
-ht-degree: 92%
+source-wordcount: '3442'
+ht-degree: 91%
 
 ---
 
@@ -563,7 +563,7 @@ Une fois la page de destination importée, les fichiers (images, css, js, etc.) 
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
-Supposons que la page de destination soit créée sous la campagne We.Retail et que son nom soit **myBlankLandingPage**. L’emplacement de stockage des fichiers ZIP est le suivant :
+Supposons que la landing page soit créée sous la campagne `We.Retail` et le nom de la landing page est **myBlankLandingPage** alors l’emplacement où les fichiers zip sont stockés est le suivant :
 
 `/etc/designs/default/canvas/content/campaigns/geometrixx/myBlankLandingPage`
 

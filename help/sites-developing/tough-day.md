@@ -4,9 +4,9 @@ description: Le test Tough Day simule la charge quotidienne d’environ 1 000 a
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 61c7955c5370b5341d097dc36d08b2b92b89517b
+source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
 workflow-type: tm+mt
-source-wordcount: '1826'
+source-wordcount: '1825'
 ht-degree: 96%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 96%
 
 ## Qu’est-ce que Tough Day 2 ? {#what-is-tough-day}
 
-« Tough Day 2 » est une application qui vous permet de tester les limites de votre instance AEM. Prête à l’emploi, elle peut être exécutée avec la suite de tests par défaut ou configurée pour répondre à vos impératifs de test. Vous pouvez regarder [cet enregistrement](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=fr) pour une présentation de l’application.
+&quot;Tough Day 2&quot; est une application qui vous permet de tester les limites de votre instance AEM. Prête à l’emploi, elle peut être exécutée avec la suite de tests par défaut ou configurée pour répondre à vos impératifs de test. Vous pouvez regarder [cet enregistrement](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=fr) pour une présentation de l’application.
 
 >[!CAUTION]
 >
@@ -49,7 +49,7 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 
 >[!NOTE]
 >
-Tough Day 2 n’a pas d’étape de nettoyage. Par conséquent, il est recommandé d’exécuter Tough Day 2 sur une instance de transfert clonée et non sur l’instance de production principale. L’instance d’évaluation doit être supprimée après les tests.
+>Tough Day 2 n’a pas d’étape de nettoyage. Par conséquent, il est recommandé d’exécuter Tough Day 2 sur une instance de transfert clonée et non sur l’instance de production principale. L’instance d’évaluation doit être supprimée après les tests.
 >
 
 ### Obtention d’aide {#getting-help}
@@ -330,7 +330,7 @@ ou
 
 >[!NOTE]
 >
-En raison d’exécutions parallèles, le nombre réel d’exécutions de test ne correspond pas exactement à celui configuré dans le paramètre `count`. Attendez-vous à un écart proportionnel au nombre de threads simultanément en cours d’exécution (contrôlé par le `concurrency parameter`).
+>En raison d’exécutions parallèles, le nombre réel d’exécutions de test ne correspond pas exactement à celui configuré dans le paramètre `count`. Attendez-vous à un écart proportionnel au nombre de threads simultanément en cours d’exécution (contrôlé par le `concurrency parameter`).
 
 ### Test à blanc {#dry-run}
 

@@ -7,10 +7,10 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
 workflow-type: tm+mt
-source-wordcount: '2846'
-ht-degree: 38%
+source-wordcount: '2835'
+ht-degree: 37%
 
 ---
 
@@ -137,7 +137,7 @@ Le débit maximal d’un tel scénario mélangeant des opérations est de 3 252
 >
 >Le débit ne fait pas la distinction entre les types de transaction dans un profil de charge. L’approche utilisée pour mesurer le débit permet de s’assurer qu’une proportion fixe de chaque type de transaction est incluse dans la charge de travail.
 
-Les deux tests ci-dessus montrent clairement que le débit varie en fonction du type d&#39;opération. Utilisez les activités de votre environnement comme base pour dimensionner votre système. Vous obtiendrez un meilleur débit avec des actions moins intensives telles que la modification (qui est également plus courante).
+Les deux tests ci-dessus montrent clairement que le débit varie en fonction du type d&#39;opération. Utilisez les activités de votre environnement comme base pour dimensionner votre système. Vous obtenez un meilleur débit avec des actions moins intensives telles que la modification (qui est également plus courante).
 
 ### Mise en cache {#caching}
 
@@ -147,13 +147,13 @@ Dans l’environnement de création, l’efficacité de la mise en cache est en 
 
 Dans l’environnement de création, le nombre d’auteurs qui travaillent en parallèle et la charge que leurs interactions ajoutent au système constituent les principaux facteurs de limitation. Par conséquent, Adobe vous recommande de mettre votre système à l’échelle en fonction du débit partagé des données.
 
-Pour de tels scénarios, Adobe exécute des tests de référence sur un cluster à deux noeuds sans partage d’instances d’auteur.
+Pour de tels scénarios, Adobe a effectué des tests de référence sur un cluster à deux noeuds sans partage d’instances d’auteur.
 
 * **Test d’évaluation des performances 1a**
 Avec un cluster sans partage actif-actif de deux instances de création, calcule le débit maximal avec un profil de charge où les utilisateurs exécutent un exercice simple de création de page sur une charge de base de 300 pages existantes, toutes de nature similaire.
 
    * **Résultat**
-Le débit maximal d’un simple exercice de création de page comme plus haut (considéré comme une transaction) est de 2 016 transactions/heure. Il s’agit d’une augmentation d’environ 16 % par rapport à une instance de création autonome pour la même évaluation des performances.
+Le débit maximal d’un simple exercice de création de page, tel que considéré ci-dessus comme une transaction, est de 2 016 transactions/heure. Il s’agit d’une augmentation d’environ 16 % par rapport à une instance de création autonome pour la même évaluation des performances.
 
 * **Test d’évaluation des performances 2b**
 Avec un cluster sans partage actif-actif de deux instances de création, calcule le débit maximal lorsque le profil de charge comprend la création d’une page (10 %), la modification de pages existantes (80 %), ainsi que la création et la modification d’une page successivement (10 %). La complexité de la page reste la même que dans le profil du test de référence 1. La modification de base de la page s’effectue en ajoutant une image et en modifiant le contenu texte. Encore une fois, l’exercice a été effectué sur une charge de base de 300 pages de complexité identique à celle définie dans le test de référence 1.
@@ -179,7 +179,7 @@ Voir aussi [Mise en parallèle](/help/managing/hardware-sizing-guidelines.md#par
 
 ### Recommendations matériel {#hardware-recommendations}
 
-En règle générale, vous pouvez utiliser le même matériel pour votre environnement de création que celui recommandé pour votre environnement de publication. En règle générale, le trafic sur le site web est beaucoup plus faible sur les systèmes de création, mais l’efficacité du cache est également plus faible. Cependant, le facteur fondamental ici est le nombre d’auteurs travaillant en parallèle, ainsi que le type d’actions effectuées sur le système. En règle générale, la mise en grappe AEM (de l’environnement de création) est plus efficace pour dimensionner les opérations de lecture ; en d’autres termes, une grappe AEM se met à l’échelle avec les auteurs qui effectuent des opérations de modification de base.
+En règle générale, vous pouvez utiliser le même matériel pour votre environnement de création que celui recommandé pour votre environnement de publication. En règle générale, le trafic sur le site web est plus faible sur les systèmes de création, mais l’efficacité du cache est également plus faible. Cependant, le facteur fondamental ici est le nombre d’auteurs travaillant en parallèle, ainsi que le type d’actions effectuées sur le système. En règle générale, la mise en grappe AEM (de l’environnement de création) est plus efficace pour dimensionner les opérations de lecture ; en d’autres termes, une grappe AEM se met à l’échelle avec les auteurs qui effectuent des opérations de modification de base.
 
 Les tests comparatifs à Adobe ont été réalisés à l’aide du système d’exploitation Red Hat® 5.5, exécuté sur une plateforme matérielle Hewlett-Packard ProLiant DL380 G5 avec la configuration suivante :
 
@@ -215,7 +215,7 @@ Le ratio de cache est le pourcentage de pages que Dispatcher peut renvoyer sans 
 
 ### Complexité des modèles et des applications {#complexity-of-templates-and-applications}
 
-Si vous utilisez des modèles complexes, AEM plus de temps sera nécessaire pour effectuer le rendu d’une page. Les pages extraites du cache ne sont pas affectées par cette situation, mais la taille de la page reste pertinente en ce qui concerne le temps de réponse global. Le rendu d’une page complexe peut facilement prendre dix fois plus de temps que le rendu d’une page simple.
+Si vous utilisez des modèles complexes, AEM a besoin de plus de temps pour effectuer le rendu d’une page. Les pages extraites du cache ne sont pas affectées par cette situation, mais la taille de la page reste pertinente en ce qui concerne le temps de réponse global. Le rendu d’une page complexe peut facilement prendre dix fois plus de temps que le rendu d’une page simple.
 
 ### Formule {#formula}
 
@@ -281,7 +281,7 @@ Si vous possédez un site web plus complexe, vous avez également besoin de serv
 
 ## Autres calculs spécifiques à un cas d’utilisation {#additional-use-case-specific-calculations}
 
-Outre le calcul d’une application web par défaut, vous devrez peut-être prendre en compte des facteurs spécifiques pour les cas d’utilisation suivants. Les valeurs calculées doivent être ajoutées au calcul par défaut.
+Outre le calcul d’une application web par défaut, tenez compte de facteurs spécifiques pour les cas d’utilisation suivants. Les valeurs calculées doivent être ajoutées au calcul par défaut.
 
 ### Considérations spécifiques aux ressources {#assets-specific-considerations}
 
@@ -291,13 +291,13 @@ Allouez au moins 16 Go de segment de mémoire et configurez le workflow [!UICON
 
 >[!NOTE]
 >
->Un débit d’images plus élevé signifie que les ressources informatiques doivent pouvoir suivre le rythme des E/S système et inversement. Par exemple, si les workflows sont lancés par l&#39;import d&#39;images, le téléchargement de nombreuses images via WebDAV peut entraîner un retard de workflows.
+Un débit d’images plus élevé signifie que les ressources informatiques doivent pouvoir suivre le rythme des E/S système et inversement. Par exemple, si les workflows sont lancés par l&#39;import d&#39;images, le téléchargement de nombreuses images via WebDAV peut entraîner un retard de workflows.
 >
->L’utilisation de disques distincts pour TarPM, le magasin de données et l’index de recherche peut aider à optimiser le comportement d’E/S du système (cependant, il est généralement logique de conserver l’index de recherche localement).
+L’utilisation de disques distincts pour TarPM, le magasin de données et l’index de recherche peut aider à optimiser le comportement d’E/S du système (cependant, il est généralement logique de conserver l’index de recherche localement).
 
 >[!NOTE]
 >
->Voir aussi [Guide des performances des ressources](/help/sites-deploying/assets-performance-sizing.md).
+Voir aussi [Guide des performances des ressources](/help/sites-deploying/assets-performance-sizing.md).
 
 ### Multi-site Manager {#multi-site-manager}
 
