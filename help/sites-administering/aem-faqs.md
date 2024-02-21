@@ -2,10 +2,10 @@
 title: FAQ sur AEM
 description: Utilisez ces FAQ pour comprendre, configurer et résoudre les problèmes ou workflows courants dans AEM.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 1a7805f063daf6f3dd07a2ff2d182e58fe7e63b8
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 40%
+source-wordcount: '936'
+ht-degree: 41%
 
 ---
 
@@ -25,12 +25,6 @@ Lorsque le mode sans fichier binaire est activé, les modules de contenu distrib
 
 Pour activer la distribution sans fichier binaire, déployez un entrepôt de grands objets binaires partagé.
 Vérifiez la propriété `useBinaryReferences` dans la configuration OSGI avec le PID d’usine (`org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* utilisé par votre agent.
-
-#### Comment personnaliser les messages d’erreur lors de la navigation dans la hiérarchie des pages dans AEM console Sites ? {#how-can-i-customize-the-error-messages-while-navigating-page-hierarchy-in-aem-sites-console}
-
-Vérifiez le panneau Réseau (du navigateur Chrome) dans lequel une configuration personnelle (JS n’a pas été réduite).
-
-Pour déterminer l’initiateur d’une demande, consultez la colonne `Initiator`. Il fournit les fichiers et les numéros de ligne à partir desquels les appels d’AJAX sont effectués. Vous pouvez ensuite suivre la fonction de gestion des erreurs et modifier le message d’erreur selon vos besoins.
 
 #### Comment activer les autorisations lors de la création d’une copie de langue pour les auteurs de contenu dans AEM ? {#how-to-enable-permissions-while-creating-language-copy-for-content-authors-in-aem}
 
