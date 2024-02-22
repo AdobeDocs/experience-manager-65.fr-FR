@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager]
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 19fe527ce44d8ec5be50ebd32b46f13df96c52cc
+source-git-commit: 2ffb77762af1969f3c93e7dd33cb3de9349375f8
 workflow-type: tm+mt
-source-wordcount: '2928'
+source-wordcount: '2889'
 ht-degree: 57%
 
 ---
@@ -59,7 +59,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 #### Interface utilisateur d’administration{#sites-adminui-6520}
 
-* La variable `Workflow Title` est marqué par `*` selon les besoins, mais il n’y a aucune validation. (SITES-16491) NORMAL
+* La variable `Workflow Title` est marqué par `*` selon les besoins, mais il n’y a aucune validation. (SITES-16491)
 
 <!--#### Classic UI{#sites-classicui-6520}
 
@@ -68,12 +68,12 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
 * Les dossiers de configuration imbriqués n’étaient plus pris en charge et les dossiers de modèles de fragments de contenu n’étaient plus visibles après la mise à niveau vers AEM 6.5.18 ou vers AEM 6.5.19. (SITES-18110) MAJEUR
-* Certains sous-dossiers ne peuvent pas effectuer de sélection à partir des modèles de fragment de contenu hérités. Il doit prendre en charge les dossiers sans avoir à `jcr:content` , même si les dossiers DAM créés par le biais de l’interface utilisateur en possèdent un. (SITES-17943) NORMAL
+* Certains sous-dossiers ne peuvent pas effectuer de sélection à partir des modèles de fragment de contenu hérités. Il doit prendre en charge les dossiers sans avoir à `jcr:content` , même si les dossiers DAM créés par le biais de l’interface utilisateur en possèdent un. (SITES-17943)
 
 #### [!DNL Content Fragments] - API GRAPHQL {#sites-graphql-api-6520}
 
 <!-- REMOVED AS PER EMAIL FROM SAMEER DHAWAN FEBRUARY 19, 2024 * When upgrading AEM from 6.5.19.0 to 6.5.20.0, the path `/libs/cq/graphql/sites/graphiql` was getting deleted. (SITES-19530) CRITICAL -->
-* Lors de l’exécution d’une requête GraphQL vers [résultats de filtre](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#filtering) utilisation de variables facultatives, si une valeur spécifique est **not** fourni pour la variable facultative, la variable est alors ignorée dans l’évaluation du filtre. (SITES-17051) NORMAL
+* Lors de l’exécution d’une requête GraphQL vers [résultats de filtre](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#filtering) utilisation de variables facultatives, si une valeur spécifique est **not** fourni pour la variable facultative, la variable est alors ignorée dans l’évaluation du filtre. (SITES-17051)
 
 <!--#### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6520}
 
@@ -81,24 +81,24 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 #### [!DNL Content Fragments] - API REST{#sites-restapi-6520}
 
-* Avec la mise à niveau de la `org.json` , il y a eu un changement dans la désérialisation des nombres décimaux. Avant d’être convertis &quot;par défaut&quot; en Doublons, puis en BigDecimals. Au lieu de cela, les valeurs de propriété de métadonnées, stockées par le biais de l’API REST, doivent être converties en Double à partir de BigDecimal. (SITES-16857) NORMAL
+* Avec la mise à niveau de la `org.json` , il y a eu un changement dans la désérialisation des nombres décimaux. Avant d’être convertis &quot;par défaut&quot; en Doublons, puis en BigDecimals. Au lieu de cela, les valeurs de propriété de métadonnées, stockées par le biais de l’API REST, doivent être converties en Double à partir de BigDecimal. (SITES-16857)
 
 #### Back-end principal{#sites-core-backend-6520}
 
-* Lorsque la publication rapide d’un fragment de contenu est utilisée, le chargement se poursuit et n’est pas publié. En d’autres termes, la publication rapide ne fonctionne pas pour les fragments de contenu après une mise à niveau du Service Pack d’AEM 6.5.7 vers AEM 6.5.17. Lorsque l’utilisateur a essayé la publication gérée, cela a fonctionné. Cependant, lorsqu’ils tentaient la publication rapide, elle n’était pas publiée. Plus précisément : `com.day.cq.wcm.core.impl.reference.ActivationReferenceSearchBuilder` le système était à la corbeille. (SITES-17311) MAJEUR
-* Les fragments de contenu ne peuvent pas être sérialisés avec l’exportateur Jackson : le chargement de la page se déclenche lorsqu’un fragment de contenu est référencé dans une page (utilise le code de l’exportateur Jackson) et que toute balise est ajoutée à un fragment de contenu. (SITES-18096) NORMAL
+* Lorsque la publication rapide d’un fragment de contenu est utilisée, le chargement se poursuit et n’est pas publié. En d’autres termes, la publication rapide ne fonctionne pas pour les fragments de contenu après une mise à niveau du Service Pack d’AEM 6.5.7 vers AEM 6.5.17. Lorsque l’utilisateur a essayé la publication gérée, cela a fonctionné. Cependant, lorsqu’ils tentaient la publication rapide, elle n’était pas publiée. Plus précisément : `com.day.cq.wcm.core.impl.reference.ActivationReferenceSearchBuilder` le système était à la corbeille. (SITES-17311)
+* Les fragments de contenu ne peuvent pas être sérialisés avec l’exportateur Jackson : le chargement de la page se déclenche lorsqu’un fragment de contenu est référencé dans une page (utilise le code de l’exportateur Jackson) et que toute balise est ajoutée à un fragment de contenu. (SITES-18096)
 
 #### Composants principaux{#sites-core-components-6520}
 
-* Installation CIF package des composants principaux sur AEM causes `:type` valeur des composants existants à modifier. La modification signifie qu’ils ne sont plus rendus sur les pages auxquelles ils ont été ajoutés. (SITES-17601) MAJEUR
+* Installation CIF package des composants principaux sur AEM causes `:type` valeur des composants existants à modifier. La modification signifie qu’ils ne sont plus rendus sur les pages auxquelles ils ont été ajoutés. (SITES-17601)
 
 #### Intégration de campagne{#sites-campaign-integration-6520}
 
-* AEM utilisait une liste autorisée également appelée `whitelist`-en raison d’un rapport de vulnérabilité. La liste autorisée empêchait les clients d’utiliser les fonctionnalités nécessaires. (SITES-16822) CRITIQUE
+* AEM utilisait une liste autorisée également appelée `whitelist`-en raison d’un rapport de vulnérabilité. La liste autorisée empêchait les clients d’utiliser les fonctionnalités nécessaires. (SITES-16822)
 
 #### Fragments d’expérience{#sites-experiencefragments-6520}
 
-* MSM pour les fragments d’expérience prend désormais en charge le déploiement en masse vers les structures de contenu des fragments d’expérience, y compris les dossiers et les sous-dossiers. (SITES-16004) MAJEUR
+* MSM pour les fragments d’expérience prend désormais en charge le déploiement en masse vers les structures de contenu des fragments d’expérience, y compris les dossiers et les sous-dossiers. (SITES-16004)
 
 <!--#### Foundation Components (Legacy){#sites-foundation-components-legacy-6520}
 
@@ -110,31 +110,31 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 #### MSM - Live Copies{#sites-msm-live-copies-6520}
 
-* Un &quot;`Is not modifiable`&quot; exception est générée lors du déploiement du composant. Plus précisément, un `org.apache.sling.servlets.post.impl.operations.ModifyOperation` exception survient lors du traitement de la réponse. (SITES-18809) MAJEUR
-* Impossible de déployer les modifications sur des Live Copies spécifiques des fragments d’expérience. (SITES-17930) MAJEUR
-* Lorsqu’un utilisateur ajoute une annotation à un composant sur une page de plan directeur, puis la déploie, le nombre d’annotations sur Live Copy s’affiche incorrectement. (SITES-17099) MAJEUR
-* Le bouton Déployer MSM d’une page parente à l’autre de la page enfant est rompu dans l’interface utilisateur graphique tactile. Lorsque cette option est sélectionnée, l’erreur suivante s’affiche : `Uncaught TypeError: _g.shared is undefined`. (SITES-16991) MAJEUR
+* Un &quot;`Is not modifiable`&quot; exception est générée lors du déploiement du composant. Plus précisément, un `org.apache.sling.servlets.post.impl.operations.ModifyOperation` exception survient lors du traitement de la réponse. (SITES-18809)
+* Impossible de déployer les modifications sur des Live Copies spécifiques des fragments d’expérience. (SITES-17930)
+* Lorsqu’un utilisateur ajoute une annotation à un composant sur une page de plan directeur, puis la déploie, le nombre d’annotations sur Live Copy s’affiche incorrectement. (SITES-17099)
+* Le bouton Déployer MSM d’une page parente à l’autre de la page enfant est rompu dans l’interface utilisateur graphique tactile. Lorsque cette option est sélectionnée, l’erreur suivante s’affiche : `Uncaught TypeError: _g.shared is undefined`. (SITES-16991)
 
 #### Éditeur de page{#sites-pageeditor-6520}
 
-* L’aperçu de l’éditeur de thème Forms est interrompu. Lorsque l’option Aperçu est sélectionnée, seule une icône de chargement est visible. (SITES-17164) BLOQUEUR
+* L’aperçu de l’éditeur de thème Forms est interrompu. Lorsque l’option Aperçu est sélectionnée, seule une icône de chargement est visible. (SITES-17164)
 
 ### [!DNL Assets]{#assets-6520}
 
-* Impossible de valider les champs basés sur des règles dans l’assistant de l’éditeur de métadonnées et affiche un message d’erreur &quot;Champs obligatoires manquants&quot;. (ASSETS-31396) MAJEUR
-* Une fois qu’un PDF est déplacé vers un autre emplacement, la variable **[!UICONTROL Afficher la page]** disparaît. (ASSETS-30538) MAJEUR
-* Impossible de sélectionner une image avec des autorisations de lecture. (ASSETS-32199) NORMAL
-* Impossible de modifier la taille de la carte dans les paramètres d’affichage. (ASSETS-31667) NORMAL
-* Le téléchargement échoue lors du téléchargement du type de fichier .oft. (ASSETS-30109) NORMAL
-* Lorsque vous essayez d’ajouter un champ de métadonnées personnalisé en tant que colonne supplémentaire au rapport, les cases à cocher ne sont pas sélectionnées. (ASSETS-31671) MINEUR
-* L’opération de déplacement de ressources ne fonctionne pas correctement dans le Service Pack 16 de Experience Manager. (ASSETS-30598) MINEUR
+* Impossible de valider les champs basés sur des règles dans l’assistant de l’éditeur de métadonnées et affiche un message d’erreur &quot;Champs obligatoires manquants&quot;. (ASSETS-31396)
+* Une fois qu’un PDF est déplacé vers un autre emplacement, la variable **[!UICONTROL Afficher la page]** disparaît. (ASSETS-30538)
+* Impossible de sélectionner une image avec des autorisations de lecture. (ASSETS-32199)
+* Impossible de modifier la taille de la carte dans les paramètres d’affichage. (ASSETS-31667)
+* Le téléchargement échoue lors du téléchargement du type de fichier .oft. (ASSETS-30109)
+* Lorsque vous essayez d’ajouter un champ de métadonnées personnalisé en tant que colonne supplémentaire au rapport, les cases à cocher ne sont pas sélectionnées. (ASSETS-31671)
+* L’opération de déplacement de ressources ne fonctionne pas correctement dans le Service Pack 16 de Experience Manager. (ASSETS-30598)
 
 #### [!DNL Dynamic Media]{#assets-dm-6520}
 
-* Lorsqu’une ressource est chargée dans AEM, la variable `Update_asset` le workflow est déclenché. Cependant, le workflow ne se termine jamais. Le workflow se termine uniquement jusqu’à l’étape de chargement du produit. L’étape suivante est le chargement par lots Scene7, mais ce processus n’est pas extrait dans AEM. (ASSETS-30443) CRITIQUE
-* Vous avez besoin d’un meilleur moyen de gérer les vidéos non-Dynamic Media avec élégance dans le composant Dynamic Media. Ce problème donnait une exception qui instanciait `dynamicmedia_sly.js`. (ASSETS-31301) MAJEUR
-* L’aperçu fonctionne pour toutes les ressources, les visionneuses de vidéos adaptatives et les vidéos. Cependant, il renvoie une erreur 403 pour `.m3u8` les fichiers (qui, soit dit en passant, fonctionnent toujours par des liens publics). (ASSETS-31882) MAJEUR
-* La variable `scene7SmartCropProcessingStatus` correction de l’état. Recadrage intelligent des métadonnées vidéo utilisées pour afficher l’échec même en cas de réussite. (ASSETS-31255) MINEUR
+* Lorsqu’une ressource est chargée dans AEM, la variable `Update_asset` le workflow est déclenché. Cependant, le workflow ne se termine jamais. Le workflow se termine uniquement jusqu’à l’étape de chargement du produit. L’étape suivante est le chargement par lots Scene7, mais ce processus n’est pas extrait dans AEM. (ASSETS-30443)
+* Vous avez besoin d’un meilleur moyen de gérer les vidéos non-Dynamic Media avec élégance dans le composant Dynamic Media. Ce problème donnait une exception qui instanciait `dynamicmedia_sly.js`. (ASSETS-31301)
+* L’aperçu fonctionne pour toutes les ressources, les visionneuses de vidéos adaptatives et les vidéos. Cependant, il renvoie une erreur 403 pour `.m3u8` les fichiers (qui, soit dit en passant, fonctionnent toujours par des liens publics). (ASSETS-31882)
+* La variable `scene7SmartCropProcessingStatus` correction de l’état. Recadrage intelligent des métadonnées vidéo utilisées pour afficher l’échec même en cas de réussite. (ASSETS-31255)
 
 ### [!DNL Forms]{#forms-6520}
 
@@ -166,7 +166,7 @@ Les correctifs dans [!DNL Experience Manager] Forms sont fournis par le biais d
 
 #### Communities {#communities-6520}
 
-* Les diagnostics de synchronisation des utilisateurs échouent après la configuration de la synchronisation des utilisateurs. (NPR-41693) NORMAL
+* Les diagnostics de synchronisation des utilisateurs échouent après la configuration de la synchronisation des utilisateurs. (NPR-41693)
 
 <!-- #### Content distribution{#foundation-content-distribution-6520}
 
@@ -174,12 +174,12 @@ Les correctifs dans [!DNL Experience Manager] Forms sont fournis par le biais d
 
 #### Intégrations{#integrations-6520}
 
-* Supprimez tout le code et les dépendances d’Adobe Search &amp; Promote d’AEM 6.5. (NPR-40856) NORMAL
+* Supprimez tout le code et les dépendances d’Adobe Search &amp; Promote d’AEM 6.5. (NPR-40856)
 
 #### Localisation{#localization-6520}
 
-* Le libellé Aria &quot;close&quot; n’est pas localisé dans **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**, sélectionnez un dossier, puis, sur la barre d’outils, sélectionnez **[!UICONTROL Propriétés]** > **[!UICONTROL Autorisations]** onglet > nom du membre. (NPR-41705) MAJEUR
-* Il existe une info-bulle tronquée pour la variable **[!UICONTROL Mot de passe du Key Store]** sur la page Configuration SSL pour les paramètres régionaux ENG, FRA, KOR, DEU et PTB. (NPR-41367) NORMAL
+* Le libellé Aria &quot;close&quot; n’est pas localisé dans **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**, sélectionnez un dossier, puis, sur la barre d’outils, sélectionnez **[!UICONTROL Propriétés]** > **[!UICONTROL Autorisations]** onglet > nom du membre. (NPR-41705)
+* Il existe une info-bulle tronquée pour la variable **[!UICONTROL Mot de passe du Key Store]** sur la page Configuration SSL pour les paramètres régionaux ENG, FRA, KOR, DEU et PTB. (NPR-41367)
 
 <!-- #### Oak{#oak-6520}
 
@@ -187,7 +187,7 @@ Les correctifs dans [!DNL Experience Manager] Forms sont fournis par le biais d
 
 #### Plateforme{#foundation-platform-6520}
 
-* Problème lors de l’intégration de Campaign avec AEM provoquée par le servlet /api ne renvoyant pas le schéma correct dans le href json. La raison en était que AEM ne recevait pas l’en-tête X-Forward-Proto, ce qui forçait la demande à répondre avec un modèle HTTP au lieu de HTTPS. Par conséquent, la possibilité d’activer/désactiver la sélection de schéma en fonction d’une configuration OSGI doit être ajoutée. (GRANITE-48454) MAJOR
+* Problème lors de l’intégration de Campaign avec AEM provoquée par le servlet /api ne renvoyant pas le schéma correct dans le href json. La raison en était que AEM ne recevait pas l’en-tête X-Forward-Proto, ce qui forçait la demande à répondre avec un modèle HTTP au lieu de HTTPS. Par conséquent, la possibilité d’activer/désactiver la sélection de schéma en fonction d’une configuration OSGI doit être ajoutée. (GRANITE-48454)
 
 <!-- #### Replication{#foundation-replication-6520}
 
@@ -195,21 +195,21 @@ Les correctifs dans [!DNL Experience Manager] Forms sont fournis par le biais d
 
 #### Sling{#foundation-sling-6520}
 
-* La variable `org.apache.sling.resourceMerger` Le lot 1.4.2 renvoie une exception à partir d’AEM 6.5, Service Pack 17 et versions ultérieures. La fusion des ressources Sling 1.4.4 doit être incluse dans le Service Pack 20. (NPR-41630) NORMAL
+* La variable `org.apache.sling.resourceMerger` Le lot 1.4.2 renvoie une exception à partir d’AEM 6.5, Service Pack 17 et versions ultérieures. La fusion des ressources Sling 1.4.4 doit être incluse dans le Service Pack 20. (NPR-41630)
 
 #### Traduction{#foundation-translation-6520}
 
-* Suite au déploiement d’AEM 6.5 Service Pack 18, un problème s’est produit avec l’onglet Filtres de l’éditeur de règles de traduction. Lorsqu’un contexte est sélectionné, en cliquant sur Modifier > Enregistrer, un guillemet double apparaît comme caractère de HTML la prochaine fois que vous ouvrirez le même contexte. Essentiellement, les règles de traduction n’étaient pas correctement enregistrées. (NPR-41624) MAJEUR
-* Problèmes liés aux traductions de fragments de contenu, où les chaînes traduites sont renvoyées du fournisseur de traduction vers AEM, mais sont bloquées au niveau de la fonction `/content/projects` et ne pas mettre à jour les fragments de contenu. (NPR-41516) MAJEUR
-* Un message d’erreur s’affiche lors de la création d’une copie de langue. Elle se produit sur une page dont un fragment de contenu est référencé dans une propriété de page, à l’aide de modèles de fragment de contenu. (NPR-41441) MAJEUR
-* Les liens dans les fragments d’expérience ne sont pas ajustés à la langue correcte lors de la copie de la langue. Le fragment d’expérience pointe plutôt vers le paramètre régional principal. (NPR-41343) NORMAL
+* Suite au déploiement d’AEM 6.5 Service Pack 18, un problème s’est produit avec l’onglet Filtres de l’éditeur de règles de traduction. Lorsqu’un contexte est sélectionné, en cliquant sur Modifier > Enregistrer, un guillemet double apparaît comme caractère de HTML la prochaine fois que vous ouvrirez le même contexte. Essentiellement, les règles de traduction n’étaient pas correctement enregistrées. (NPR-41624)
+* Problèmes liés aux traductions de fragments de contenu, où les chaînes traduites sont renvoyées du fournisseur de traduction vers AEM, mais sont bloquées au niveau de la fonction `/content/projects` et ne pas mettre à jour les fragments de contenu. (NPR-41516)
+* Un message d’erreur s’affiche lors de la création d’une copie de langue. Elle se produit sur une page dont un fragment de contenu est référencé dans une propriété de page, à l’aide de modèles de fragment de contenu. (NPR-41441)
+* Les liens dans les fragments d’expérience ne sont pas ajustés à la langue correcte lors de la copie de la langue. Le fragment d’expérience pointe plutôt vers le paramètre régional principal. (NPR-41343)
 
 #### Interface utilisateur{#foundation-ui-6520}
 
-* Une erreur de console se produit après une mise à niveau vers AEM 6.5, Service Pack 18. L’erreur se trouve dans la variable `coralUI3.js` et cela se produit lorsque vous sélectionnez une liste déroulante dans AEM. Plus précisément, cela se produit avec une `onOverlayToggle` . L&#39;erreur `Uncaught TypeError: Cannot read properties of null (reading 'innerText')` s’affiche. (NPR-41467) MAJEUR
-* Dans AEM, **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Balisage]** > **[!UICONTROL Créer]** > **[!UICONTROL Créer une balise]**, saisie de caractères non latins dans la variable **Titre** entraîne la création du champ **Nom** champ à remplir uniquement avec le trait d’union ( `-` ). (NPR-41623) NORMAL
-* L’année du copyright est incorrecte dans la variable `About Adobe Experience Manager` de la boîte de dialogue (NPR-41526) NORMAL
-* Il n’y a pas de traduction **[!UICONTROL Propriétés du profil]** chaînes lors de la modification des paramètres utilisateur. Se produit dans tous les paramètres régionaux. (NPR-41365) NORMAL
+* Une erreur de console se produit après une mise à niveau vers AEM 6.5, Service Pack 18. L’erreur se trouve dans la variable `coralUI3.js` et cela se produit lorsque vous sélectionnez une liste déroulante dans AEM. Plus précisément, cela se produit avec une `onOverlayToggle` . L&#39;erreur `Uncaught TypeError: Cannot read properties of null (reading 'innerText')` s’affiche. (NPR-41467)
+* Dans AEM, **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Balisage]** > **[!UICONTROL Créer]** > **[!UICONTROL Créer une balise]**, saisie de caractères non latins dans la variable **Titre** entraîne la création du champ **Nom** champ à remplir uniquement avec le trait d’union ( `-` ). (NPR-41623)
+* L’année du copyright est incorrecte dans la variable `About Adobe Experience Manager` de la boîte de dialogue (NPR-41526)
+* Il n’y a pas de traduction **[!UICONTROL Propriétés du profil]** chaînes lors de la modification des paramètres utilisateur. Se produit dans tous les paramètres régionaux. (NPR-41365)
 
 <!-- #### WCM{#wcm-6520}
 
