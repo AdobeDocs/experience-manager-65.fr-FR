@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager]
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 2ffb77762af1969f3c93e7dd33cb3de9349375f8
+source-git-commit: f48e77068f286ff107bb2511660bf540fea32474
 workflow-type: tm+mt
-source-wordcount: '2889'
+source-wordcount: '2888'
 ht-degree: 57%
 
 ---
@@ -67,7 +67,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
-* Les dossiers de configuration imbriqués n’étaient plus pris en charge et les dossiers de modèles de fragments de contenu n’étaient plus visibles après la mise à niveau vers AEM 6.5.18 ou vers AEM 6.5.19. (SITES-18110) MAJEUR
+* Les dossiers de configuration imbriqués n’étaient plus pris en charge et les dossiers de modèles de fragments de contenu n’étaient plus visibles après la mise à niveau vers AEM 6.5.18 ou vers AEM 6.5.19. (SITES-18110)
 * Certains sous-dossiers ne peuvent pas effectuer de sélection à partir des modèles de fragment de contenu hérités. Il doit prendre en charge les dossiers sans avoir à `jcr:content` , même si les dossiers DAM créés par le biais de l’interface utilisateur en possèdent un. (SITES-17943)
 
 #### [!DNL Content Fragments] - API GRAPHQL {#sites-graphql-api-6520}
@@ -156,13 +156,7 @@ Les correctifs dans [!DNL Experience Manager] Forms sont fournis par le biais d
 
 * text -->
 
-#### [!DNL Forms Designer]{#forms-designer-6520}
-
-* texte
-
-<!-- ### Foundation{#foundation-6520}
-
-* text -->
+### Foundation {#foundation-6520}
 
 #### Communities {#communities-6520}
 
@@ -181,17 +175,9 @@ Les correctifs dans [!DNL Experience Manager] Forms sont fournis par le biais d
 * Le libellé Aria &quot;close&quot; n’est pas localisé dans **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**, sélectionnez un dossier, puis, sur la barre d’outils, sélectionnez **[!UICONTROL Propriétés]** > **[!UICONTROL Autorisations]** onglet > nom du membre. (NPR-41705)
 * Il existe une info-bulle tronquée pour la variable **[!UICONTROL Mot de passe du Key Store]** sur la page Configuration SSL pour les paramètres régionaux ENG, FRA, KOR, DEU et PTB. (NPR-41367)
 
-<!-- #### Oak{#oak-6520}
-
-* text -->
-
 #### Plateforme{#foundation-platform-6520}
 
 * Problème lors de l’intégration de Campaign avec AEM provoquée par le servlet /api ne renvoyant pas le schéma correct dans le href json. La raison en était que AEM ne recevait pas l’en-tête X-Forward-Proto, ce qui forçait la demande à répondre avec un modèle HTTP au lieu de HTTPS. Par conséquent, la possibilité d’activer/désactiver la sélection de schéma en fonction d’une configuration OSGI doit être ajoutée. (GRANITE-48454)
-
-<!-- #### Replication{#foundation-replication-6520}
-
-* text -->
 
 #### Sling{#foundation-sling-6520}
 
