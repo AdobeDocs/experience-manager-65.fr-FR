@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
+source-git-commit: 22235790b2bfefaa1a3bf71f888f8eb343d9e1b7
 workflow-type: tm+mt
-source-wordcount: '3608'
+source-wordcount: '4257'
 ht-degree: 91%
 
 ---
@@ -459,3 +459,57 @@ Gardez à l’esprit les points et restrictions suivants lorsque vous utilisez u
 * Les fragments de document contenus dans un formulaire adaptatif n’apparaissent pas dans le document d’enregistrement. Les fragments de formulaire adaptatif sont toutefois pris en charge.
 * La liaison de contenu dans le document de l’enregistrement généré pour le formulaire adaptatif de schéma XML n’est pas prise en charge.
 * La version localisée du document d’enregistrement est créée sur demande pour un paramètre régional lorsque l’utilisateur ou l’utilisatrice demande le rendu du document d’enregistrement. La localisation du document d’enregistrement est effectuée en même temps que la localisation du formulaire adaptatif. Pour plus d’informations sur la localisation du document d’enregistrement et des formulaires adaptatifs, voir [Utilisation de processus de traduction AEM pour la localisation des formulaires adaptatifs et du document d’enregistrement](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
+
+## Utiliser un fichier XCI personnalisé
+
+Un fichier XCI permet de définir différentes propriétés d’un document. <!-- Forms as a Cloud Service has a master XCI file.--> Vous pouvez utiliser un fichier XCI personnalisé pour remplacer une ou plusieurs propriétés par défaut spécifiées dans votre fichier XCI existant. Par exemple, vous pouvez choisir d’incorporer une police dans un document ou d’activer la propriété balisée pour tous les documents. Le tableau suivant indique les options XCI :
+
+| Option XCI | Description |
+|--- |--- |
+| config/present/pdf/creator | Identifie le créateur du document à l’aide de l’entrée Créateur du dictionnaire d’informations sur le document. Pour plus d’informations sur ce dictionnaire, consultez le [guide de référence PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/pdf/producer | Identifie le producteur du document à l’aide de l’entrée Producteur du dictionnaire d’informations sur le document. Pour plus d’informations sur ce dictionnaire, consultez le [guide de référence PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/layout | Contrôle si la sortie est un panneau unique ou si elle est paginée. |
+| config/present/pdf/compression/level | Indique le degré de compression à utiliser lors de la génération d’un document PDF. |
+| config/present/pdf/fontInfo/embed | Contrôle l’incorporation des polices dans le document de sortie. |
+| config/present/pdf/scriptModel | Contrôle si des informations spécifiques à XFA sont incluses dans le document PDF de sortie. |
+| config/present/common/data/adjustData | Contrôle si l’application XFA ajuste les données après la fusion. |
+| config/present/pdf/renderPolicy | Contrôle si la génération du contenu de la page est effectuée sur le serveur ou différée au client. |
+| config/present/common/locale | Spécifie le paramètre régional par défaut utilisé dans le document de sortie. |
+| config/present/destination | Lorsque contenu par un élément présent, indique le format de sortie. Lorsqu’il est contenu par un élément openAction, spécifie l’action à effectuer lors de l’ouverture du document dans un client interactif. |
+| config/present/output/type | Spécifie le type de compression à appliquer à un fichier ou le type de sortie à produire. |
+| config/present/common/temp/uri | Spécifie l’URI du formulaire. |
+| config/present/common/template/base | Fournit un emplacement de base pour les URI dans le design de formulaire. Lorsque cet élément est absent ou vide, l’emplacement du design de formulaire est utilisé comme base. |
+| config/present/common/log/to | Contrôle l’emplacement dans lequel les données du journal ou les données de sortie sont écrites. |
+| config/present/output/to | Contrôle l’emplacement dans lequel les données du journal ou les données de sortie sont écrites. |
+| config/present/script/currentPage | Indique la page initiale à l’ouverture du document. |
+| config/present/script/exclude | Informe Forms as a Cloud Service des événements à ignorer. |
+| config/present/pdf/linearized | Contrôle si le document PDF de sortie est linéarisé. |
+| config/present/script/runScripts | Contrôle l’ensemble de scripts que Forms as a Cloud Service exécute. |
+| config/present/pdf/tagged | Contrôle l’inclusion de balises dans le document PDF de sortie. Les balises, dans le contexte d’un PDF, sont des informations supplémentaires incluses dans un document afin d’exposer la structure logique du document. Les balises aident à l’accessibilité et au reformatage. Par exemple, un numéro de page peut être balisé en tant qu’artefact afin qu’un lecteur d’écran ne l’indique pas au milieu du texte. Bien que les balises rendent un document plus utile, elles augmentent également sa taille et le temps de traitement pour le créer. |
+| config/present/pdf/fontInfo/alwaysEmbed | Spécifie une police incorporée dans le document de sortie. |
+| config/present/pdf/fontInfo/neverEmbed | Spécifie une police qui ne doit jamais être incorporée dans le document de sortie. |
+| config/present/pdf/pdfa/part | Spécifie le numéro de version de la spécification PDF/A à laquelle le document est conforme. |
+| config/present/pdf/pdfa/amd | Spécifie le niveau de modification de la spécification PDF/A. |
+| config/present/pdf/pdfa/conformance | Spécifie le niveau de conformité avec la spécification PDF/A. |
+| config/present/pdf/version | Spécifie la version du document PDF à générer |
+| config/present/pdf/version/map | Spécifie les polices de secours pour le document. |
+
+
+<!--
+
+### Use a custom XCI file in your AEM Forms environment
+
+  1. Add the custom XCI file to your development project.
+  1. Specify the following inline property:(/help/implementing/deploying/configuring-osgi.md)
+  1. Deploy the project to your AEM Forms environment. <!--Cloud Service environment
+  
+-->
+
+### Utiliser un fichier XCI personnalisé dans votre environnement de développement Forms local
+
+1. Chargez le fichier XCI dans votre environnement de développement local.
+1. Ouvrir <!--Cloud Service SDK--> configuration manager. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+1. Recherchez et ouvrez la configuration **[!UICONTROL du canal web pour la communication interactive et les formulaires adaptatifs]**.
+1. Spécifiez le chemin d’accès du fichier XCI et cliquez sur **[!UICONTROL Enregistrer]**.
+
+
