@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
-workflow-type: ht
-source-wordcount: '2642'
-ht-degree: 100%
+source-git-commit: fd30e16274b6d5f971120f4e360fc9d65ae21bec
+workflow-type: tm+mt
+source-wordcount: '2665'
+ht-degree: 99%
 
 ---
 
@@ -151,6 +151,10 @@ MSM est directement accessible dans l’interface utilisateur à l’aide de dif
 
 >[!NOTE]
 >
+>MSM peut être utilisé avec les deux pages et [Fragments d’expérience](/help/sites-authoring/experience-fragments.md) car ces fragments font partie d’une expérience (page).
+
+>[!NOTE]
+>
 >Les aspects de la fonctionnalité MSM sont utilisés dans plusieurs autres fonctionnalités d’Adobe Experience Manager (AEM) (par exemple, Lancements, Catalogue) ; dans ce cas, la Live Copy est gérée par cette fonctionnalité.
 
 ### Termes utilisés {#terms-used}
@@ -191,7 +195,7 @@ En guise d’introduction, le tableau suivant offre un aperçu des principaux te
   </tr>
   <tr>
    <td><strong>Configuration du plan directeur</strong></td>
-   <td>Configuration prédéfinie spécifiant un chemin d’accès source.</td>
+   <td>Configuration prédéfinie spécifiant un chemin source.</td>
    <td>Lorsqu’une page de plan directeur est référencée dans une configuration de plan directeur, la commande Déployer devient disponible.</td>
   </tr>
   <tr>

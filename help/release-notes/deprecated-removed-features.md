@@ -2,7 +2,7 @@
 title: Fonctionnalités obsolètes et supprimées de la version 6.5 d’Adobe Experience Manager.
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans Adobe Experience Manager 6.5
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 3443d331815ffb462890282a49e658693f157af0
+source-git-commit: a9b8980a5e6f0488f10c408cd18b83f3ff225058
 workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 99%
@@ -55,7 +55,8 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 | Développeurs | `Granite.Sling.js`Bibliothèque cliente. Adobe ne prévoit pas de continuer à améliorer la bibliothèque client Granite.Sling.js fournie avec la distribution (Quickstart). | Adobe recommande aux clients qui dépendent de la capacité de la bibliothèque de restructurer leur code de ne plus l’utiliser. |  |
 | Développeurs | Utilisation de YUI pour compresser/réduire les bibliothèques clientes JavaScript. Adobe ne prévoit pas de mettre à jour la bibliothèque YUI. Jusqu’à la version AEM 6.4, YUI était l’option par défaut pour réduire les bibliothèques JavaScript avec l’option permettant de basculer vers Google Closure Compiler (GCC). À partir d’AEM 6.5, GCC est l’option par défaut. | Adobe recommande aux clients qui effectuent une mise à niveau vers AEM 6.5 de passer à GCC pour leur implémentation. |  |
 | Développeurs | Éditeur de boîte de dialogue pour l’interface utilisateur classique dans CRXDE Lite. Adobe ne prévoit pas d’améliorer l’éditeur de boîte de dialogue pour l’interface utilisateur classique fourni avec la distribution (Quickstart) | Aucun remplacement n’est disponible. |  |
-| Forms | L’intégration d’AEM Forms à AEM Mobile est obsolète. | Aucun remplacement n’est disponible. |  | Développeurs | Éditeur de boîte de dialogue pour l’interface utilisateur classique dans CRXDE Lite. Adobe ne prévoit pas d’améliorer l’éditeur de boîte de dialogue pour l’interface utilisateur classique fourni avec la distribution (Quickstart) | Aucun remplacement n’est disponible. |  |
+| Forms | L’intégration d’AEM Forms à AEM Mobile est obsolète. | Aucun remplacement n’est disponible. |
+| Développeurs | Éditeur de boîte de dialogue pour l’interface utilisateur classique dans CRXDE Lite. Adobe ne prévoit pas d’améliorer l’éditeur de boîte de dialogue pour l’interface utilisateur classique fourni avec la distribution (Quickstart) | Aucun remplacement n’est disponible. |  |
 | Développeurs | Bibliothèque cliente Lodash / Underscore. Adobe ne prévoit pas de continuer à gérer ni de mettre à jour la bibliothèque client Lodash/Underscore fournie avec la distribution (Quickstart). | Adobe recommande aux clients qui ont toujours besoin de Lodash/Underscore pour leur code de l’ajouter à leur base de code de projet. |  |
 
 ## Fonctionnalités supprimées {#removed-features}

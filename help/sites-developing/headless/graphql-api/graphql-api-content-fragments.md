@@ -3,10 +3,10 @@ title: API AEM GraphQL pour l’utilisation des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 312e2477bb6a7cccab74cd4637d6a402f61052d7
+source-git-commit: 452813cf50110b515c181dba1ecbde4527808cfb
 workflow-type: tm+mt
-source-wordcount: '4708'
-ht-degree: 96%
+source-wordcount: '4796'
+ht-degree: 95%
 
 ---
 
@@ -523,6 +523,53 @@ L’exemple suivant illustre une requête complète qui filtre toutes les person
     items {
       lastName
       firstName
+    }
+  }
+}
+```
+
+Lors de l’exécution d’une requête GraphQL avec des variables facultatives, si une valeur spécifique est **not** fourni pour la variable facultative, la variable sera ignorée dans l’évaluation du filtre. Cela signifie que les résultats de la requête contiendront toutes les valeurs, les deux `null` et non `null`, pour la propriété associée à la variable de filtre.
+
+>[!NOTE]
+>
+>Si une `null` la valeur est *explicitement* spécifié pour une telle variable, le filtre ne correspondra qu’à `null` pour la propriété correspondante.
+
+Par exemple, dans la requête ci-dessous, où aucune valeur n’est spécifiée pour la propriété `lastName` :
+
+```graphql
+query getAuthorsFilteredByLastName($authorLastName: String) {
+  authorList(filter:
+    {
+      lastName: {_expressions: {value: $authorLastName}
+      }}) {
+    items {
+      lastName
+    }
+  }
+}
+```
+
+Tous les auteurs seront renvoyés :
+
+```graphql
+{
+  "data": {
+    "authorList": {
+      "items": [
+        {
+          "lastName": "Hammer"
+        },
+        {
+          "lastName": "Provo"
+        },
+        {
+          "lastName": "Wester"
+        },
+        {
+          "lastName": null
+        },
+         ...
+      ]
     }
   }
 }
