@@ -3,10 +3,10 @@ title: Créer un gestionnaire d’invitation d’utilisateurs externes
 description: Découvrez comment créer un gestionnaire d’invitation d’utilisateurs externes. Il permet au service de Rights Management d’inviter des utilisateurs externes à devenir des utilisateurs Rights Management.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1126'
-ht-degree: 83%
+source-wordcount: '1160'
+ht-degree: 81%
 
 ---
 
@@ -233,6 +233,11 @@ Pour ajouter des utilisateurs externes à l’invitation à l’aide de la conso
 
 1. Déployez le fichier JAR du gestionnaire d’invitation d’utilisateurs externes à l’aide de Workbench.
 1. Redémarrez le serveur d’applications.
+
+   >[!NOTE]
+   >
+   > Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+
 1. Connectez-vous à Administration Console.
 1. Cliquez sur **[!UICONTROL Services]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Configuration]** > Invité **[!UICONTROL Enregistrement d’utilisateur]**.
 1. Activez l’enregistrement des utilisateurs invités en cochant la case **[!UICONTROL Activer l’enregistrement des utilisateurs invités]**. Sous **[!UICONTROL Utiliser le système d’enregistrement intégré]**, cliquez sur **[!UICONTROL Non]**. Enregistrez vos paramètres.

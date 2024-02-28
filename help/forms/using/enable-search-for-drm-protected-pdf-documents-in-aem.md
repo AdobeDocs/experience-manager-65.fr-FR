@@ -8,10 +8,10 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 docset: aem65
 feature: Document Security
 exl-id: 7cf17fb6-021a-473e-bc3b-27c317953002
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 59%
+source-wordcount: '718'
+ht-degree: 56%
 
 ---
 
@@ -84,3 +84,7 @@ Vous pouvez utiliser l’une des méthodes suivantes pour établir la connexion 
 1. Créez un dossier dans AEM Digital Asset Manager et téléchargez les documents de PDF protégés par une stratégie vers le dossier nouvellement créé.
 
    Vous pouvez désormais effectuer des recherches dans les documents protégés par une stratégie à l’aide de la recherche AEM.
+
+   >[!NOTE]
+   >
+   > Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.

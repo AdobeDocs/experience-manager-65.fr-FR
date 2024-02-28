@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '4570'
-ht-degree: 97%
+source-wordcount: '4604'
+ht-degree: 96%
 
 ---
 
@@ -619,7 +619,9 @@ Vous pouvez utiliser la console d’administration pour définir si les document
 
 >[!NOTE]
 >
-Pour configurer AEM Forms de sorte qu’il accepte les documents non sécurisés, sélectionnez l’option Autoriser le chargement de documents non sécurisés à partir des applications Flex. Redémarrez ensuite une application ou un service pour vous assurer que le paramètre a pris effet.
+* Pour configurer AEM Forms de sorte qu’il accepte les documents non sécurisés, sélectionnez l’option Autoriser le chargement de documents non sécurisés à partir des applications Flex. Redémarrez ensuite une application ou un service pour vous assurer que le paramètre a pris effet.
+* Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+
 
 ### Démarrage rapide : appeler un processus de courte durée en transmettant un document sécurisé à l’aide de Remoting {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
 

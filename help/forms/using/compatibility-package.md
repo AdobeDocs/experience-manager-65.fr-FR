@@ -8,10 +8,10 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 100%
+source-wordcount: '355'
+ht-degree: 90%
 
 ---
 
@@ -42,6 +42,10 @@ Assurez-vous que le [package de compatibilité AEM](https://experienceleague.ado
 
 1. Une fois les journaux stabilisés, redémarrez le serveur.
 1. Utilisez l’utilitaire de migration pour rendre vos actifs compatibles avec la version 6.5.
+
+   >[!NOTE]
+   >
+   > Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
    Pour plus d’informations, consultez la section [Utilitaire de migration](../../forms/using/migration-utility.md).
 

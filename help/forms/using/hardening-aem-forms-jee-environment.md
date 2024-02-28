@@ -6,10 +6,10 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '7574'
-ht-degree: 93%
+source-wordcount: '7608'
+ht-degree: 92%
 
 ---
 
@@ -465,6 +465,10 @@ Vous pouvez permettre à un utilisateur non administrateur ou une utilisatrice n
 1. Définissez la valeur de la variable à TRUE.
 
 1. Redémarrez l’instance AEM Forms.
+
+>[!NOTE]
+>
+> Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 ## Configuration d’AEM Forms on JEE pour un accès au-delà de l’entreprise {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 

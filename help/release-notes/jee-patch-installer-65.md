@@ -3,10 +3,10 @@ title: Programme d’installation du correctif JEE AEM Forms
 description: Découvrez comment utiliser le programme d’installation du correctif JEE AEM Forms pour résoudre les problèmes liés aux composants AEM Forms 6.5.
 content-type: reference
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
-workflow-type: ht
-source-wordcount: '528'
-ht-degree: 100%
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 93%
 
 ---
 
@@ -81,6 +81,10 @@ Si l’authentification SAML est configurée et que vous rencontrez des problèm
    `um.saml.enable.large.xml=true`
 1. Redémarrez le serveur.
 1. Supprimez les fournisseurs d’authentification SAML existants et ajoutez-les à nouveau pour les domaines existants, comme décrit dans les paramètres SAML.
+
+>[!NOTE]
+>
+> Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 ## Modules touchés {#impacted-modules}
 

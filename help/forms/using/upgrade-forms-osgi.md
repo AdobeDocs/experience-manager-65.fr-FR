@@ -7,10 +7,10 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 97%
+source-wordcount: '980'
+ht-degree: 93%
 
 ---
 
@@ -57,6 +57,10 @@ Effectuez les étapes suivantes pour mettre à niveau AEM 6.3 Forms ou AEM 6.
       >Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **N’arrêtez pas le serveur immédiatement.** Avant d’arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED cessent d’apparaître dans le fichier &lt;crx-repository>/error.log et que le journal soit stable. Notez également que quelques packages peuvent rester à l’état installé. Vous pouvez ignorer sans risque l’état de ces packages.
 
 1. Redémarrez l’instance AEM.
+
+   >[!NOTE]
+   >
+   Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 1. Exécutez les activités postérieures à l’installation.
 

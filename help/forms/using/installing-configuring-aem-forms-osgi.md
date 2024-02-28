@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1848'
-ht-degree: 98%
+source-wordcount: '1882'
+ht-degree: 96%
 
 ---
 
@@ -118,6 +118,11 @@ Le module complémentaire AEM Forms est une application déployée sur AEM. Le p
 
    Vous pouvez également télécharger le package via le lien direct répertorié dans l’article [Version d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
 1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant de quitter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED cessent d’apparaître dans le fichier `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` et que le journal soit stable.
+
+   >[!NOTE]
+   >
+   > Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+
 1. Répétez les étapes 1 à 7 sur toutes les instances de création et de publication.
 
 ### (Windows uniquement) Installation automatique des redistribuables Visual Studio {#automatic-installation-visual-studio-redistributables}

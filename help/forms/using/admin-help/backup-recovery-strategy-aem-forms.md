@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 24%
+source-wordcount: '1518'
+ht-degree: 23%
 
 ---
 
@@ -87,6 +87,10 @@ Avant de redémarrer le serveur Forms après une récupération, procédez comme
 1. Assurez-vous qu’aucun processus n’est lancé à partir de sources internes ou externes, telles que les initiateurs de processus Web, SOAP ou EJB, jusqu’à ce que le fonctionnement normal du système soit validé.
 
 Si la base de données d’AEM principale est déplacée ou modifiée, consultez les guides d’installation correspondant à votre serveur d’applications pour plus d’informations sur la mise à jour des informations de connexion à la base de données pour AEM sources de données IDP_DS et EDC_DS.
+
+>[!NOTE]
+> 
+> Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 ### Modification du nom d’hôte ou de l’adresse IP d’AEM forms {#changing-the-aem-forms-hostname-or-ip-address}
 

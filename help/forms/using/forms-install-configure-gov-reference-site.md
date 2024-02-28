@@ -4,10 +4,10 @@ description: Installez, configurez et personnalisez un package de démonstration
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '4501'
-ht-degree: 95%
+source-wordcount: '4535'
+ht-degree: 94%
 
 ---
 
@@ -313,6 +313,10 @@ Une fois la configuration du cloud terminée, vous pouvez tester le modèle de d
    >[!NOTE]
    >
    Un redémarrage du serveur AEM est nécessaire pour que la source de données soit correctement liée à FDM.
+
+   >[!NOTE]
+   >
+   Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 #### Tester le modèle de données de formulaire (Derby) {#test-fdm-derby}
 

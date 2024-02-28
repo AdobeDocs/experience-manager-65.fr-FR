@@ -5,10 +5,10 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1349'
-ht-degree: 98%
+source-wordcount: '1383'
+ht-degree: 95%
 
 ---
 
@@ -98,6 +98,11 @@ Le module complémentaire AEM Forms est une application déployée sur AEM. Le p
    Vous pouvez également télécharger le package via le lien direct répertorié dans l’article [Version d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
 
 1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d’arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED and ServiceEvent UNREGISTERED cessent d’apparaître dans le fichier [AEM-Installation-Directory]/crx-quickstart/logs/error.log et que le journal soit stable.
+
+   >[!NOTE]
+   >
+   > Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+
 1. Répétez les étapes 1 à 7 sur toutes les instances de création et de publication.
 
 ## Configurations post-installation {#post-installation-configurations}

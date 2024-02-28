@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation de Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: a4ece4c2e9128e61982fb45d90ee3c63352f8349
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '7342'
+source-wordcount: '7348'
 ht-degree: 97%
 
 ---
@@ -1186,6 +1186,7 @@ ht-degree: 97%
       + [Réduction des vulnérabilités de Struts 2 RCE pour Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
       + [Échec de la sauvegarde de la base de données lors de la mise à niveau vers la version 6.5.12.0 pour MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [La génération de PDF ne parvient pas à imprimer un grand nombre de PDF sur WorkBench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
+      + [Redémarrage correct AEM SDK](/help/forms/using/restart-aem-sdk.md)
    + Documentation héritée {#legacy-documentation}
       + [Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML](/help/forms/developing/building-xml.md)
       + [Compresser et décompresser des fichiers à l’aide d’un DSC personnalisé AEM Forms sur JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)

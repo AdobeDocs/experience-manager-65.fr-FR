@@ -6,10 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: a054b60a-5e89-4c98-87bc-35669988d160
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 100%
+source-wordcount: '738'
+ht-degree: 95%
 
 ---
 
@@ -31,6 +31,10 @@ Lors de l’installation du package, si vous rencontrez une erreur `javax.jcr.no
 1. Accédez au gestionnaire de packages. L’URL par défaut est `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
 1. Recherchez et installez le package `adobe-lc-workspace-pkg-[version].zip`.
 1. Redémarrez le serveur d’applications.
+
+>[!NOTE]
+>
+> Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 ## Journalisation de l’espace de travail AEM Forms {#aem-forms-workspace-nbsp-logging}
 

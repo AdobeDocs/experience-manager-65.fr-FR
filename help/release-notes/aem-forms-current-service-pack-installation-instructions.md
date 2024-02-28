@@ -2,10 +2,10 @@
 title: Instructions d’installation du correctif AEM Forms pour AEM Forms
 description: Instructions d’installation du Pack de services AEM Forms pour l’environnement OSGi et JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 531eed9bb6d7792a6da0104b533a505738a64786
-workflow-type: ht
-source-wordcount: '1714'
-ht-degree: 100%
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+workflow-type: tm+mt
+source-wordcount: '1748'
+ht-degree: 98%
 
 ---
 
@@ -128,7 +128,8 @@ Accédez au répertoire approprié puis, à partir du shell, saisissez `./aem65_
 
 >[!NOTE]
 >
-> Après avoir installé le pack de services AEM Forms on JEE, vous devez supprimer le module complémentaire Forms du dossier `crx-repository\install` avant de redémarrer le serveur d’applications. Téléchargez le dernier pack de module complémentaire de Forms à partir du [Portail de distribution logicielle](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
+>* Après avoir installé le pack de services AEM Forms on JEE, vous devez supprimer le module complémentaire Forms du dossier `crx-repository\install` avant de redémarrer le serveur d’applications. Téléchargez le dernier pack de module complémentaire de Forms à partir du [Portail de distribution logicielle](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
+>* Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 +++
 
@@ -205,7 +206,7 @@ Le package est automatiquement installé.
 
 >[!NOTE]
 >
->Si vous installez le pack de services AEM Forms pour la base de données relationnelle, il est obligatoire de sauvegarder DB_schema.
+> Si vous installez le pack de services AEM Forms pour la base de données relationnelle, il est obligatoire de sauvegarder DB_schema.
 
 +++
 
@@ -223,7 +224,7 @@ Le package est automatiquement installé.
 >[!NOTE]
 >
 >
->Assurez-vous d’installer la version redistribuable, même si une version précédente est installée, afin de garantir la disponibilité de la dernière version.
+> Assurez-vous d’installer la version redistribuable, même si une version précédente est installée, afin de garantir la disponibilité de la dernière version.
 
 +++
 

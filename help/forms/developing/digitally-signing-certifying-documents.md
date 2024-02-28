@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '16882'
-ht-degree: 83%
+source-wordcount: '16917'
+ht-degree: 87%
 
 ---
 
@@ -169,7 +169,7 @@ Pour ajouter un champ de signature à l’aide de l’API Signature (service web
    * Créez un objet `SignatureServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `SignatureServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/SignatureService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `SignatureServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -181,8 +181,8 @@ Pour ajouter un champ de signature à l’aide de l’API Signature (service web
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le document PDF qui contiendra un champ de signature.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement de fichier du document PDF et le mode d’ouverture du fichier
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à ses propriétés `MTOM` le contenu du tableau d’octets.
 
 1. Ajouter un champ de signature
@@ -201,9 +201,9 @@ Pour ajouter un champ de signature à l’aide de l’API Signature (service web
 1. Enregistrer le document PDF en tant que fichier PDF
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur string qui représente l’emplacement du fichier du document PDF qui contiendra le champ de signature et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` qui a été renvoyé par la méthode `addSignatureField`. Renseignez le tableau d’octets en obtenant la valeur de la variable `BLOB` de `binaryData` membre de données.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` qui a été renvoyé par la méthode `addSignatureField`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `binaryData` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Ecrivez le contenu du tableau d’octets dans un fichier de PDF en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
+   * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**
 
@@ -316,7 +316,7 @@ Récupérez les noms des champs de signature à l’aide de l’API de signature
    * Créez un objet `SignatureServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `SignatureServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/SignatureService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `SignatureServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -328,8 +328,8 @@ Récupérez les noms des champs de signature à l’aide de l’API de signature
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le document PDF qui contient les champs de signature.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier PDF et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en affectant le contenu du tableau d’octets à son champ `MTOM`.
 
 1. Récupérer des noms de champs de signature
@@ -479,7 +479,7 @@ Modifiez un champ de signature à l’aide de l’API Signature (Java) :
 1. Enregistrer le document PDF en tant que fichier PDF
 
    * Créez un objet `java.io.File` et assurez-vous que l’extension du nom du fichier est .pdf.
-   * Appeler la variable `com.adobe.idp.Document` de `copyToFile` pour copier le contenu de la méthode `com.adobe.idp.Document` vers le fichier . Veillez à utiliser l’objet `com.adobe.idp.Document` renvoyé par la méthode `modifySignatureField`.
+   * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour copier le contenu de l’objet `com.adobe.idp.Document` dans le fichier. Veillez à utiliser l’objet `com.adobe.idp.Document` renvoyé par la méthode `modifySignatureField`.
 
 ### Modifier des champs de signature à l’aide de l’API Web Service {#modify-signature-fields-using-the-web-service-api}
 
@@ -498,7 +498,7 @@ Modifiez un champ de signature à l’aide de l’API Signature (Web Service) :
    * Créez un objet `SignatureServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `SignatureServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/SignatureService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `SignatureServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -510,8 +510,8 @@ Modifiez un champ de signature à l’aide de l’API Signature (Web Service) :
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le document PDF contenant le champ de signature à modifier.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à sa propriété `MTOM` le contenu du tableau d’octets.
 
 1. Définir des valeurs du dictionnaire
@@ -541,9 +541,9 @@ Modifiez un champ de signature à l’aide de l’API Signature (Web Service) :
 1. Enregistrer le document PDF en tant que fichier PDF
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF qui contiendra le champ de signature et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` renvoyé par la méthode `addSignatureField`. Renseignez le tableau d’octets en obtenant la valeur de la variable `BLOB` de `MTOM` membre de données.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` renvoyé par la méthode `addSignatureField`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Ecrivez le contenu du tableau d’octets dans un fichier de PDF en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
+   * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**
 
@@ -594,6 +594,10 @@ Vous pouvez ajouter la valeur de configuration suivante dans le fichier cknfastr
 ```
 
 Après avoir ajouté cette valeur de configuration au fichier cknfastrc, les nouvelles informations d’identification peuvent être utilisées sans redémarrer le serveur d’applications J2EE.
+
+    >[!REMARQUE]
+    >
+    > Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 **Signature non approuvée**
 
@@ -761,7 +765,7 @@ Pour signer numériquement un document PDF à l’aide de l’API Signature (ser
    * Créez un objet `SignatureServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `SignatureServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/SignatureService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `SignatureServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -773,8 +777,8 @@ Pour signer numériquement un document PDF à l’aide de l’API Signature (ser
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF signé.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement de fichier du document PDF à signer et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à sa propriété `MTOM` le contenu du tableau d’octets.
 
 1. Signer un document PDF
@@ -800,9 +804,9 @@ Pour signer numériquement un document PDF à l’aide de l’API Signature (ser
 1. Enregistrer le document PDF signé
 
    * Créez un objet `System.IO.FileStream` en utilisant son constructeur. Transmettez une valeur de chaîne représentant l’emplacement du fichier du document PDF signé et son mode d’ouverture.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` qui a été renvoyé par la méthode `sign`. Renseignez le tableau d’octets en obtenant la valeur de la variable `BLOB` de `MTOM` membre de données.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` qui a été renvoyé par la méthode `sign`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Ecrivez le contenu du tableau d’octets dans un fichier de PDF en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
+   * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**
 
@@ -919,7 +923,7 @@ Signez numériquement un formulaire interactif à l’aide de l’API Forms et S
    * Créez un objet `java.io.FileInputStream` représentant le document XML contenant les données de formulaire à transmettre au service Forms en utilisant son constructeur. Transmettez une valeur de chaîne qui spécifie l’emplacement du fichier XML.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
    * Créez un objet `PDFFormRenderSpec` utilisé pour définir les options d’exécution. Appeler la variable `PDFFormRenderSpec` de `setGenerateServerAppearance` méthode et transmission `true`.
-   * Appeler la variable `FormsServiceClient` de `renderPDFForm2` et transmettez les valeurs suivantes :
+   * Appelez la méthode `renderPDFForm2` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
       * Un objet `com.adobe.idp.Document` contenant le formulaire PDF à afficher.
       * Un objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire.
@@ -985,7 +989,7 @@ Signez numériquement un formulaire interactif à l’aide de l’API Forms et S
    * Créez un objet `SignatureServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `SignatureServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/SignatureService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `SignatureServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -1002,16 +1006,16 @@ Signez numériquement un formulaire interactif à l’aide de l’API Forms et S
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF signé.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement de fichier du document PDF à signer et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Remplissez l’objet `BLOB` en attribuant à sa propriété `MTOM` le contenu du tableau d’octets.
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` est utilisé pour stocker des données de formulaire.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier XML contenant les données de formulaire, ainsi que le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à sa propriété `MTOM` le contenu du tableau d’octets.
    * Créez un objet `PDFFormRenderSpec` utilisé pour définir les options d’exécution. Attribuer la valeur `true` à la fonction `PDFFormRenderSpec` de `generateServerAppearance` champ .
-   * Appeler la variable `FormsServiceClient` de `renderPDFForm2` et transmettez les valeurs suivantes :
+   * Appelez la méthode `renderPDFForm2` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
       * Un objet `BLOB` contenant le formulaire PDF à afficher.
       * Un objet `BLOB` contenant les données à fusionner avec le formulaire.
@@ -1047,9 +1051,9 @@ Signez numériquement un formulaire interactif à l’aide de l’API Forms et S
 1. Enregistrer le document PDF signé
 
    * Créez un objet `System.IO.FileStream` en utilisant son constructeur. Transmettez une valeur de chaîne représentant l’emplacement du fichier du document PDF signé et son mode d’ouverture.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` qui a été renvoyé par la méthode `sign`. Renseignez le tableau d’octets en obtenant la valeur de la variable `BLOB` de `MTOM` membre de données.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` qui a été renvoyé par la méthode `sign`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Ecrivez le contenu du tableau d’octets dans un fichier de PDF en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
+   * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**
 
@@ -1225,7 +1229,7 @@ Certifiez un document PDF à l’aide de l’API Signature (service web) :
    * Créez un objet `SignatureServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `SignatureServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/SignatureService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `SignatureServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -1237,8 +1241,8 @@ Certifiez un document PDF à l’aide de l’API Signature (service web) :
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF certifié.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement fichier du document PDF à certifier et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à som membre de données `MTOM` le contenu du tableau d’octets.
 
 1. Certifier le document PDF
@@ -1269,9 +1273,9 @@ Certifiez un document PDF à l’aide de l’API Signature (service web) :
 1. Enregistrer le document PDF certifié en tant que fichier PDF
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF qui contiendra le document PDF certifié et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` qui a été renvoyé par la méthode `certify`. Renseignez le tableau d’octets en obtenant la valeur de la variable `BLOB` de `binaryData` membre de données.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` qui a été renvoyé par la méthode `certify`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `binaryData` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Ecrivez le contenu du tableau d’octets dans un fichier de PDF en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
+   * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**
 
@@ -1462,7 +1466,7 @@ Vérifiez une signature numérique en utilisant l’API du service Signature (We
    * Créez un objet `SignatureServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `SignatureServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/SignatureService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `SignatureServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -1474,8 +1478,8 @@ Vérifiez une signature numérique en utilisant l’API du service Signature (We
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF qui contient une signature numérique ou certifiée à vérifier.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur de chaîne représentant l’emplacement du fichier du document PDF signé et son mode d’ouverture.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` . Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à sa propriété `MTOM` le contenu du tableau d’octets.
 
 1. Définir les options d’exécution PKI
@@ -1635,7 +1639,7 @@ Vérifiez plusieurs signatures numériques à l’aide de l’API du service Sig
 
 1. Récupérer toutes les signatures numériques
 
-   Appeler la variable `SignatureServiceClient` de `verifyPDFDocument` et transmettez les valeurs suivantes :
+   Appelez la méthode `verifyPDFDocument` de l’objet `SignatureServiceClient` et transmettez les valeurs suivantes :
 
    * Objet `com.adobe.idp.Document` contenant un document PDF contenant plusieurs signatures numériques.
    * Objet `PKIOptions` contenant des options d’exécution PKI.
@@ -1677,7 +1681,7 @@ Vérifiez plusieurs signatures numériques à l’aide de l’API du service de 
    * Créez un objet `SignatureServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `SignatureServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/SignatureService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `SignatureServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -1689,8 +1693,8 @@ Vérifiez plusieurs signatures numériques à l’aide de l’API du service de 
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` stocke un document PDF qui contient plusieurs signatures numériques à vérifier.
    * Créez un objet `System.IO.FileStream` en utilisant son constructeur. Transmettez une valeur de chaîne qui représente l’emplacement du fichier du document PDF et son mode d’ouverture.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` . Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à sa propriété `MTOM` le contenu du tableau d’octets.
 
 1. Définir des options d’exécution PKI
@@ -1701,7 +1705,7 @@ Vérifiez plusieurs signatures numériques à l’aide de l’API du service de 
 
 1. Récupérer toutes les signatures numériques
 
-   Appeler la variable `SignatureServiceClient` de `verifyPDFDocument` et transmettez les valeurs suivantes :
+   Appelez la méthode `verifyPDFDocument` de l’objet `SignatureServiceClient` et transmettez les valeurs suivantes :
 
    * Objet `BLOB` contenant un document PDF contenant plusieurs signatures numériques.
    * Objet `PKIOptions` contenant des options d’exécution PKI.
@@ -1812,7 +1816,7 @@ Supprimez une signature numérique à l’aide de l’API de signature (Java) :
 1. Enregistrer le document PDF en tant que fichier PDF
 
    * Créez un objet `java.io.File` et assurez-vous que l’extension du fichier est .pdf.
-   * Appeler la variable `com.adobe.idp.Document` de `copyToFile` . Transmettez l’objet `java.io.File` pour copier le contenu de l’objet `com.adobe.idp.Document` dans le fichier. Assurez-vous d’utiliser l’objet `Document` qui a été retourné par la méthode `clearSignatureField`.
+   * Appelez la méthode `copyToFile` de lʼobjet `com.adobe.idp.Document`. Transmettez l’objet `java.io.File` pour copier le contenu de l’objet `com.adobe.idp.Document` dans le fichier. Assurez-vous d’utiliser l’objet `Document` qui a été retourné par la méthode `clearSignatureField`.
 
 **Voir également**
 
@@ -1841,7 +1845,7 @@ Supprimez une signature numérique en utilisant l’API de signature (service We
    * Créez un objet `SignatureServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `SignatureServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/SignatureService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `SignatureServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -1853,8 +1857,8 @@ Supprimez une signature numérique en utilisant l’API de signature (service We
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF qui contient une signature numérique à supprimer.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier PDF signé et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` . Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant le contenu du tableau d’octets à sa propriété `MTOM`.
 
 1. Supprimer la signature numérique du champ de signature
@@ -1869,9 +1873,9 @@ Supprimez une signature numérique en utilisant l’API de signature (service We
 1. Enregistrer le document PDF en tant que fichier PDF
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier PDF contenant un champ de signature vide et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` qui a été renvoyé par la méthode de `sign`. Renseignez le tableau d’octets en obtenant la valeur de la variable `BLOB` de `MTOM` membre de données.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` qui a été renvoyé par la méthode de `sign`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Ecrivez le contenu du tableau d’octets dans le fichier du PDF en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
+   * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**
 

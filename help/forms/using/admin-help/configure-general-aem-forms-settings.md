@@ -6,16 +6,20 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: e1519477-b5a8-4947-8597-26b945a3b819
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1728'
-ht-degree: 74%
+source-wordcount: '1762'
+ht-degree: 73%
 
 ---
 
 # Paramètres généraux d’AEM Forms {#general-aem-forms-settings}
 
 La page Configurations de base dans la console d’administration fournit des paramètres qui peuvent améliorer les performances du système. Une fois que vous avez configuré ou mis à jour ces paramètres, redémarrez votre serveur d’applications.
+
+>[!NOTE]
+>
+> Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 Pour plus d’informations sur l’activation du mode de sauvegarde sécurisé, voir [Activation et désactivation du mode de sauvegarde sécurisé](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md#enabling-and-disabling-safe-backup-mode).
 
