@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 4289c68feb51842b5649f7cff73c5c4bc38add6c
 workflow-type: tm+mt
-source-wordcount: '2230'
-ht-degree: 97%
+source-wordcount: '2236'
+ht-degree: 93%
 
 ---
 
@@ -35,7 +35,7 @@ Les deux premières classifications de requêtes (sans index et insuffisamment r
 
 L’inspection de chaque résultat potentiel est ce qu’on appelle le parcours.
 
-Puisque chaque résultat potentiel doit être inspecté, le coût de détermination de l’ensemble actuel de résultats augmente de façon linéaire avec le nombre de résultats potentiels.
+Puisque chaque résultat potentiel doit être inspecté, le coût de détermination du jeu de résultats réel augmente de façon linéaire avec le nombre de résultats potentiels.
 
 En ajoutant des restrictions à la requête et en affinant les index, les données d&#39;index peuvent être stockées dans un format optimisé pour permettre une récupération rapide des résultats et réduire ou éliminer la nécessité d&#39;inspecter linéairement les ensembles de résultats potentiels.
 
@@ -119,7 +119,7 @@ Plus de restrictions de requête réduisent les ensembles de résultats éligibl
 
 De même, en l’absence de règle d’index supplémentaire pour la propriété `cq:tags`, même une requête en texte intégral avec une restriction définie sur `cq:tags` s’avérerait peu performante, dans la mesure où les résultats de l’index renverraient toutes les correspondances en texte intégral. La restriction définie sur cq:tags serait filtrée par la suite.
 
-Une autre cause de filtrage post-index est le manque de prise en compte des listes de contrôle d’accès pendant le développement. Veillez à ce que la requête ne renvoie pas des chemins susceptibles d’être inaccessibles à l’utilisateur ou l’utilisatrice. Pour ce faire, vous pouvez améliorer la structure du contenu et fournir une restriction de chemin d’accès appropriée sur la requête.
+Une autre cause de filtrage post-index est le manque de prise en compte des listes de contrôle d’accès pendant le développement. Veillez à ce que la requête ne renvoie pas des chemins susceptibles d’être inaccessibles à l’utilisateur ou l’utilisatrice. Pour ce faire, vous pouvez améliorer la structure du contenu et fournir des restrictions de chemin d’accès appropriées à la requête.
 
 Une méthode utile pour identifier si l’index Lucene renvoie de nombreux résultats pour retourner un petit sous-ensemble en tant que résultat de la requête consiste à activer les journaux DEBUG pour `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex`. Cela vous permet de voir combien de documents sont en train d&#39;être chargés à partir de l’index. Le nombre de résultats finaux par rapport au nombre de documents chargés ne devrait pas être disproportionné. Pour plus d’informations, consultez la section [Journalisation](/help/sites-deploying/configure-logging.md).
 
@@ -176,7 +176,7 @@ AEM prend en charge les langages de requête suivants :
 * JCR-SQL2
 * XPath
 
-L’exemple suivant utilise Query Builder comme langage de requête le plus courant utilisé par les développeurs AEM, mais les mêmes principes s’appliquent à JCR-SQL2 et XPath.
+L’exemple suivant utilise Query Builder, car il s’agit du langage de requête le plus courant utilisé par les développeurs AEM. Toutefois, les mêmes principes s’appliquent à JCR-SQL2 et XPath.
 
 1. Ajoutez une restriction de type de nœud afin que la requête soit résolue sur un index de propriété Lucene existant.
 
@@ -466,7 +466,7 @@ Assurez-vous donc que les index répondent aux requêtes, sauf si la combinaison
 
    * Générez l’index de propriété Lucene optimal à partir d’instructions de requête XPath ou JCR-SQL2.
 
-* **[Module externe AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=fr-FR)**
+* **_Module externe Chrome AEM_** <!-- For whatever reason, the URL to this extension was causing too many redirects when doing the request so it was removed entirely to get rid of the error; users can easily look up the extension in Google instead. DO NOT ADD THE URL AGAIN!-->
 
-   * Extension de navigateur web Google Chrome qui expose des données de journal par demande, y compris les requêtes exécutées et leurs plans de requête, dans la console des outils de développement du navigateur.
-   * [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) doit être installé et activé sur AEM.
+   * La variable _Module externe Chrome AEM_ est une extension de navigateur web Google Chrome qui expose les données de journal par requête, y compris les requêtes d’exécution et leurs plans de requête, dans la console des outils de développement du navigateur.
+   * Nécessite l’installation et l’activation de [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) sur AEM.

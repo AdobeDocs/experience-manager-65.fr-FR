@@ -1,14 +1,14 @@
 ---
 title: Configurer les paramètres du fournisseur de services SAML
-description: Vous pouvez configurer les paramètres du fournisseur de services SAML pour permettre aux utilisateurs de se connecter et de s’authentifier auprès d’AEM forms via un fournisseur d’identité tiers (IDP) spécifié.
+description: Vous pouvez configurer les paramètres du fournisseur de services SAML pour permettre aux utilisateurs de se connecter et de s’authentifier auprès d’AEM forms via un fournisseur d’identité tiers spécifié.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 4289c68feb51842b5649f7cff73c5c4bc38add6c
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '595'
 ht-degree: 6%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 Le langage SAML (Security Assertion Markup Language) est l’une des options que vous pouvez sélectionner lors de la configuration de l’autorisation d’un domaine d’entreprise ou hybride. SAML est principalement utilisé pour la prise en charge de l’authentification unique sur plusieurs domaines. Lorsque SAML est configuré en tant que fournisseur d’authentification, les utilisateurs se connectent et s’authentifient à AEM forms via un fournisseur d’identité tiers spécifié.
 
-Pour obtenir une explication de SAML, voir [Présentation technique du langage SAML (Security Assertion Markup Language) V2.0](https://www.oasis-open.org/committees/download.php/20645/sstc-saml-tech-overview-2%200-draft-10.pdf).
+Pour obtenir une explication de SAML, voir [Présentation technique du langage SAML (Security Assertion Markup Language) V2.0](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 1. Dans Administration Console, cliquez sur Paramètres > User Management > Configuration > Paramètres du fournisseur de services SAML.
 1. Dans la zone ID d’entité du fournisseur de services, saisissez un identifiant unique à utiliser comme identifiant pour l’implémentation du fournisseur de services AEM forms. Vous pouvez également définir cet ID unique lors de la configuration du fournisseur d’identité (par exemple, `um.lc.com`). Vous pouvez également utiliser l’URL d’accès à AEM forms (par exemple, `https://AEMformsserver`).
@@ -34,12 +34,12 @@ Pour obtenir une explication de SAML, voir [Présentation technique du langage S
    >
    >Les formats de nom ne sont pas sensibles à la casse.
 
-1. (Facultatif) Sélectionnez Activer l’invite d’authentification pour les utilisateurs locaux. Lorsque cette option est sélectionnée, les utilisateurs voient apparaître deux liens :
+1. (Facultatif) Sélectionnez Activer l’invite d’authentification pour les utilisateurs locaux. Lorsque cette option est sélectionnée, les utilisateurs voient deux liens :
 
    * lien vers la page de connexion du fournisseur d’identité SAML tiers, dans laquelle les utilisateurs appartenant à un domaine d’entreprise peuvent s’authentifier.
    * lien vers la page de connexion d’AEM forms, sur laquelle les utilisateurs appartenant à un domaine local peuvent s’authentifier.
 
-   Lorsque cette option n’est pas sélectionnée, les utilisateurs sont directement redirigés vers la page de connexion du fournisseur d’identité SAML tiers, dans laquelle les utilisateurs appartenant à un domaine d’entreprise peuvent s’authentifier.
+   Lorsque cette option n’est pas sélectionnée, les utilisateurs sont directement amenés à la page de connexion du fournisseur d’identité SAML tiers, où les utilisateurs appartenant à un domaine d’entreprise peuvent s’authentifier.
 
 1. (Facultatif) Sélectionnez Activer la liaison d’artefact pour activer la prise en charge de la liaison d’artefact. Par défaut, la liaison de POST est utilisée avec SAML. Mais si vous avez configuré la liaison d’artefact, sélectionnez cette option. Lorsque cette option est sélectionnée, l’assertion de l’utilisateur n’est pas transmise par le biais de la requête Navigateur. Au lieu de cela, un pointeur vers l’assertion est passé et l’assertion est récupérée à l’aide d’un appel de service Web principal.
 1. (Facultatif) Sélectionnez Activer la liaison de redirection pour prendre en charge les liaisons SAML qui utilisent les redirections.
@@ -53,7 +53,7 @@ Pour obtenir une explication de SAML, voir [Présentation technique du langage S
 
      `saml.sp.use.relaystate=true`
 
-   * Ajoutez la propriété personnalisée suivante pour configurer l’URL du JSP (Java Server Pages) personnalisé, qui est utilisé pour effectuer le rendu de la liste enregistrée des fournisseurs d’identité. Si vous n’avez pas déployé d’application web personnalisée, la page User Management par défaut sera utilisée pour effectuer le rendu de la liste.
+   * Ajoutez la propriété personnalisée suivante afin de pouvoir configurer l’URL pour les pages JSP (Java™ Server Pages) personnalisées, qui est utilisée pour effectuer le rendu de la liste enregistrée des fournisseurs d’identité. Si vous n’avez pas déployé d’application web personnalisée, elle utilise la page User Management par défaut pour effectuer le rendu de la liste.
 
    `saml.sp.discovery.url=/custom/custom.jsp`
 
