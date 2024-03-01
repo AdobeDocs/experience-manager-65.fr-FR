@@ -7,10 +7,10 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 8ffe992e4b243d2a3548d214e8ac44fb5df6483c
+source-git-commit: 3fe9b3d4cf6ddf7d64dbece7d62d7f18dfa183f2
 workflow-type: tm+mt
-source-wordcount: '4052'
-ht-degree: 87%
+source-wordcount: '4054'
+ht-degree: 86%
 
 ---
 
@@ -578,7 +578,7 @@ Pour des conditions requises supplémentaires, voir :
 
 ### Designer {#designer}
 
-- Microsoft® Windows® 2016 Server , Microsoft® Windows® 2019 Server ou Microsoft Windows 10
+- Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 ou Windows® 11
 - Processeur de 1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
 - Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
 - Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
