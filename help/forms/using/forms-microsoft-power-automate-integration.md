@@ -3,8 +3,7 @@ title: Comment connecter et envoyer des données de formulaire adaptatif à Micr
 description: Guide détaillé pour la connexion et l’envoi de données de formulaire adaptatif à Microsoft&reg; Power Automate.
 keywords: Formulaires adaptatifs Microsoft Power Automate, envoi de données et de formulaires adaptatifs à Microsoft Power Automate
 feature: Adaptive Forms, Foundation Components
-exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 27eb8a53a198efd2cb059a2884b3b5ed60730806
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 90%
@@ -85,7 +84,7 @@ Effectuez les actions suivantes pour connecter votre instance de création AEM 
 
    >[!NOTE]
    >
-   Lorsque vous créez un formulaire adaptatif, indiquez le nom du conteneur dans le champ **[!UICONTROL Conteneur de configurations]**.
+   >Lorsque vous créez un formulaire adaptatif, indiquez le nom du conteneur dans le champ **[!UICONTROL Conteneur de configurations]**.
 
 1. Sur la page de configuration, sélectionnez **[!UICONTROL Créer]** pour créer [!DNL Microsoft®® Power Automate Flow Service] dans AEM Forms.
 1. Sur la page **[!UICONTROL Configurer le service Dataverse pour Microsoft® Power Automate]**, indiquez l’**[!UICONTROL ID client]** (également appelé ID de l’application), le **[!UICONTROL Secret client]**, l’**[!UICONTROL URL OAuth]** et l’**[!UICONTROL URL de l’environnement Dynamics]**. Utilisez l’ID client, le secret client, l’URL OAuth et l’URL de l’environnement Dynamics de [l’application Microsoft® Azure Active Directory](#ms-power-automate-application) que vous avez créée dans la section précédente. Utilisez l’option Points d’entrée de l’interface utilisateur de l’application Microsoft® Azure Active Directory pour trouver l’URL OAuth.
@@ -100,7 +99,7 @@ Effectuez les actions suivantes pour connecter votre instance de création AEM 
 
    >[!NOTE]
    >
-   Lorsque vous créez un formulaire adaptatif, indiquez le nom du conteneur dans le champ **[!UICONTROL Conteneur de configurations]**.
+   >Lorsque vous créez un formulaire adaptatif, indiquez le nom du conteneur dans le champ **[!UICONTROL Conteneur de configurations]**.
 1. Sur la page de configuration, sélectionnez **[!UICONTROL Créer]** pour créer [!DNL Microsoft®® Power Automate Flow Service] dans AEM Forms.
 1. Sur la page **[!UICONTROL Configurer le Dataverse pour Microsoft® Power Automate]**, indiquez l’**[!UICONTROL ID client]** (également appelé ID de l’application), le **[!UICONTROL Secret client]**, l’**[!UICONTROL URL OAuth]** et l’**[!UICONTROL URL de l’environnement Dynamics]**. Utilisez l’ID client, le secret client, l’URL OAuth et l’ID d’environnement Dynamics. Utilisez l’option Points d’entrée dans l’interface utilisateur de l’application Microsoft® Azure Active Directory pour trouver l’URL OAuth. Ouvrez le [Mes flux](https://powerautomate.microsoft.com/fr-fr/) et sélectionnez Mes flux utilisez l’identifiant répertorié dans l’URL en tant qu’identifiant de l’environnement Dynamics.
 1. Sélectionner **[!UICONTROL Connexion]**. Si vous y êtes invité, connectez-vous à votre compte Microsoft® Azure. Sélectionnez **[!UICONTROL Enregistrer]**.
@@ -126,7 +125,7 @@ Après la [connexion de votre instance de création AEM Forms à Microsoft® Po
 
 >[!NOTE]
 >
-Avant d’envoyer le formulaire adaptatif, assurez-vous que le déclencheur `When an HTTP Request is received` avec le schéma JSON en-dessous est ajouté à votre flux Power Automate.
+> Avant d’envoyer le formulaire adaptatif, assurez-vous que le déclencheur `When an HTTP Request is received` avec le schéma JSON en-dessous est ajouté à votre flux Power Automate.
 
 ```
         {
