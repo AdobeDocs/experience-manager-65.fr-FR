@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager]
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 348b82f0bd0d99eeb771aa4ed2719ee10d8cee68
+source-git-commit: 53bfd33a8bbb10d0ed82968a115ed316f63efecb
 workflow-type: tm+mt
-source-wordcount: '3464'
+source-wordcount: '3466'
 ht-degree: 69%
 
 ---
@@ -464,9 +464,10 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 
 * Après la mise à jour d’AEM 6.5 Forms Service Pack 18 (6.5.18.0) ou AEM 6.5 Forms Service Pack 19 (6.5.19.0) vers la version 6.5 Forms Service Pack 20 (6.5.20.0), les utilisateurs rencontrent une erreur de compilation JSP. Ils ne peuvent pas ouvrir ni créer de formulaires adaptatifs et ils rencontrent des erreurs avec d’autres interfaces d’AEM telles que l’éditeur de page, l’interface utilisateur d’AEM Forms et l’éditeur de processus d’AEM. Le message d’erreur similaire au suivant est ressenti :
 
-`Unable to compile class for JSP: An error occurred at line: 162 in the jsp file: /libs/granite/ui/components/coral/foundation/anchorbutton/anchorbutton.jsp The method transformLinkInUriIfExternal(String) is undefined for the type ComponentHelper`
+  `Unable to compile class for JSP: An error occurred at line: 162 in the jsp file: /libs/granite/ui/components/coral/foundation/anchorbutton/anchorbutton.jsp The method transformLinkInUriIfExternal(String) is undefined for the type ComponentHelper`
 
-Vous pouvez contacter le support Adobe pour la résolution du problème.
+  Vous pouvez contacter l’assistance Adobe pour obtenir de l’aide afin de résoudre le problème.
+
 
 * Le service de préremplissage échoue avec une exception de pointeur nulle dans les communications interactives. (CQDOC-21355)
 
