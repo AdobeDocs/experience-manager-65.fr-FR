@@ -4,10 +4,10 @@ description: Apprenez à créer un thème personnalisé, à appliquer un style �
 topic-tags: introduction
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: a361c194c238f0f2c999abfd77ca85e7697cb7bf
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 84%
+source-wordcount: '2038'
+ht-degree: 73%
 
 ---
 
@@ -442,16 +442,77 @@ Certains styles s’appliquent uniquement à un composant spécifique. Un style 
 Vous pouvez utiliser différentes polices pour concevoir un formulaire adaptatif. Tous les appareils sur lesquels le formulaire adaptatif est affiché ne disposent peut-être pas des polices utilisées pour concevoir le formulaire adaptatif. Vous pouvez utiliser un service de polices web pour fournir les polices requises à l’appareil cible.
 
 [!DNL Adobe Fonts] est un service de polices web. Vous pouvez configurer et utiliser le service avec les formulaires adaptatifs. Pour utiliser [!DNL Adobe Fonts] dans un formulaire adaptatif, procédez comme suit :
+1. Parcourez les [bibliothèque des polices d’Adobe](https://fonts.adobe.com/) et choisissez la police à appliquer au formulaire.
+<!--
+>[!NOTE]
+>
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).-->
 
 >[!NOTE]
 >
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] s’appelle désormais Adobe Fonts et est inclus dans Creative Cloud et dʼautres abonnements. [En savoir plus](https://fonts.adobe.com/).
+> Vous pouvez ajouter des balises ou des filtres pour affiner la liste des polices.
 
-1. Créez un compte [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) ainsi quʼun kit, ajoutez la police Myriad Pro à ce dernier, puis publiez le kit et obtenez l’ID de kit. Il est nécessaire d’utiliser [!DNL Adobe Fonts] (polices web) dans un formulaire adaptatif.
-1. Dans le serveur AEM [!DNL Forms], accédez à ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Outils]** ![marteau](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Ouvrez maintenant un dossier de configuration. Si une configuration est déjà disponible, cliquez sur le bouton **[!UICONTROL Créer]** pour créer une instance.
+1. Cliquez sur le bouton &lt;/> pour ajouter la famille à un projet web, au cas où vous trouveriez une police de votre choix.
 
-   Dans la boîte de dialogue Créer une configuration, donnez un **titre** à la configuration, puis cliquez sur **[!UICONTROL Créer]**. Vous êtes redirigé sur la page de configuration. Dans la boîte de dialogue [!UICONTROL Modifier le composant] qui s’affiche, indiquez votre **ID de kit**, puis cliquez sur **[!UICONTROL OK]**.
+   ![select-font-from-font-libary](assets/select-font-from-font-library.png)
 
-1. Configurez un thème de sorte qu’il utilise la configuration [!DNL Adobe Fonts]. Dans l’instance d’auteur, ouvrez un **[!UICONTROL thème global]** dans l’éditeur de thèmes. Dans l’éditeur de thèmes, cliquez sur **[!UICONTROL Options du thème]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configurer]**. Dans le champ **[!UICONTROL Configuration d’Adobe Fonts]**, sélectionnez le kit, puis cliquez sur **[!UICONTROL Enregistrer]**.
+   L’écran de la boîte de dialogue Ajouter des polices à un projet web s’affiche.
 
-   Les polices ajoutées à **[!UICONTROL Adobe Fonts]** sont disponibles pour la sélection dans l’accordéon **[!UICONTROL Texte]** de tous les composants.
+   >[!NOTE]
+   >
+   > Vous ne pouvez ajouter des polices à votre projet web que si le bouton &lt;/> est disponible.
+
+2. Nommez votre projet web.
+3. Cochez les cases pour sélectionner les poids et les styles de police à inclure.
+
+   ![ajouter une bibliothèque de polices](assets/add-a-font-window.png)
+
+4. Sélectionner **Cliquez sur** pour créer le projet.
+5. Copiez le code incorporé et l’URL de l’écran.
+   ![code incorporé et URL](assets/font-add-url.png)
+
+6. Cliquez sur **Terminé** pour fermer la fenêtre du projet web.
+7. Connectez-vous à votre instance AEM et accédez à l’URL `http://server:port/crx/de/index.jsp#`
+8. Créez une structure de dossiers dans CRXDE, par exemple `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`.
+9. Accédez au `clientlibs` et ajoutez le dossier `allowProxy` et `categories` propriétés.
+10. Accédez à `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` et créez un dossier css.
+11. Accédez au dossier CSS créé et créez un fichier . Par exemple, créez un fichier sous la forme `fonts.css` et collez le code incorporé avec l’URL.
+   ![Structure du dossier](/help/forms/using/assets/fonts-add-in-crxde.png)
+12. Enregistrez les modifications.
+
+>[!NOTE]
+>
+> Pour utiliser les polices personnalisées ajoutées dans un formulaire adaptatif, assurez-vous que le nom de la bibliothèque cliente dans la variable **[!UICONTROL Catégorie de bibliothèque cliente]** s’aligne sur le nom spécifié dans l’option categories du dossier clientlib.
+
+Les polices incluses sont désormais accessibles au formulaire adaptatif par le biais de la bibliothèque cliente de polices personnalisée suivante.
+
+
+<!--
+Create Adobe Fonts Configuration
+
+1. To create a API Token, go to **login** > **API Token** > **Make me a new API token**.
+
+   ![API token](/help/forms/using/assets/fonts-api-token.png)
+
+2. Once, you click **Make me a new API token**, a new token is generated. 
+3. Copy the generated token for future use.
+4. Now login to your AEM  author instance. On the author instance, go to **[!UICONTROL Tools]**>**[!UICONTROL Cloud Services]**> **[!UICONTROL Adobe Fonts]**.
+5. Select the configuration container and click **Create**. **[UICONTROL Create Adobe Fonts Configuration]** screen appears.
+    ![API token](/help/forms/using/adobe-font-configuration-screen.png)
+
+6. Spceify the name and paste the API token in the **[!UICONTROL Kit ID]** textbox.
+7. Click **Create**.
+
+
+
+The fonts added to the **[!UICONTROL Adobe Fonts]** are available for selection in the **[!UICONTROL Text]** accordion of all the components.
+1. In the theme editor, navigate to **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configure]**. 
+2. In the **[!UICONTROL Adobe Fonts Configuration]** field, select the kit, and click **[!UICONTROL Save]**.
+
+
+1. Create an [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) account, create a kit, add font Myriad Pro to the kit, publish the kit, and obtain the Kit ID. It is required to use [!DNL Adobe Fonts] (Web Fonts) in an adaptive form. 
+1. In the AEM [!DNL Forms] Server, navigate to ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Now, open a configuration folder. If a configuration is already available, click the **[!UICONTROL Create]** button to create an instance.
+
+   On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. You are redirected to the configuration page. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**. -->
+
+
