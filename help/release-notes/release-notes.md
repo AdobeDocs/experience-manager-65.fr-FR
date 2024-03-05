@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager]
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 5f95281130f0f2cac6d115b59b828946c2f70d33
+source-git-commit: 015c36cad1e7da98888609622cf2150842d40c66
 workflow-type: tm+mt
-source-wordcount: '3462'
+source-wordcount: '3485'
 ht-degree: 69%
 
 ---
@@ -51,7 +51,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
    * Courbe elliptique ECDSA P384 avec algorithme de condensé SHA384
    * Courbe elliptique ECDSA P512 avec algorithme de condensé SHA512
 * **Compatibilité transparente avec Windows 11 pour Forms Designer**: AEM Forms Designer prend désormais en charge Windows 11, ce qui facilite l’installation et le fonctionnement. Les utilisateurs peuvent effectuer une mise à niveau en toute confiance vers Windows 11 sans avoir à réinstaller Forms Designer ou se soucier des problèmes de compatibilité, ce qui garantit un workflow ininterrompu.
-* **Amélioration de l’accessibilité avec le rôle &quot;légende&quot; personnalisé dans AEM Forms Designer**: AEM Forms Designer inclut désormais un rôle d’accessibilité personnalisé appelé &quot;Légende&quot; pour créer des fichiers XDP avec des éléments de sous-titrage personnalisés. Cette fonctionnalité améliore l’accessibilité en permettant aux utilisateurs d’intégrer des sous-titres personnalisés dans leurs conceptions de document afin d’améliorer l’inclusion et l’expérience utilisateur.
+* **Amélioration de l’accessibilité avec le rôle &quot;légende&quot; personnalisé dans AEM Forms Designer**: AEM Forms Designer inclut désormais un rôle d’accessibilité personnalisé appelé &quot;Légende&quot;, qui permet aux utilisateurs de créer des fichiers XDP avec des éléments de sous-titrage personnalisés. Cette fonctionnalité améliore l’accessibilité en permettant aux utilisateurs d’intégrer des sous-titres personnalisés dans leurs conceptions de document afin qu’ils puissent améliorer l’inclusion et l’expérience utilisateur.
 
 <!-- ### [!DNL Forms]
 
@@ -466,8 +466,15 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 
   `Unable to compile class for JSP: An error occurred at line: 162 in the jsp file: /libs/granite/ui/components/coral/foundation/anchorbutton/anchorbutton.jsp The method transformLinkInUriIfExternal(String) is undefined for the type ComponentHelper`
 
-  Vous pouvez contacter l’assistance Adobe pour obtenir de l’aide afin de résoudre le problème.
+  Pour résoudre le problème :
 
+   1. Téléchargez le correctif correspondant à votre système d’exploitation :
+
+   * [Correctif pour Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip)
+   * [Correctif pour Linux](/help/release-notes/assets/Hotfix-Linux.zip)
+   * [Correctif pour Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
+
+   1. Chargez et installez le package (.zip) via le gestionnaire de packages.
 
 * Le service de préremplissage échoue avec une exception de pointeur nulle dans les communications interactives. (CQDOC-21355)
 
