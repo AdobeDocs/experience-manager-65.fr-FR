@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager]
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 015c36cad1e7da98888609622cf2150842d40c66
+source-git-commit: 7b920927fe400c05f6c7a744d4cb7366db0cae86
 workflow-type: tm+mt
-source-wordcount: '3485'
-ht-degree: 69%
+source-wordcount: '3486'
+ht-degree: 68%
 
 ---
 
@@ -470,11 +470,11 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 
    1. Téléchargez le correctif correspondant à votre système d’exploitation :
 
-   * [Correctif pour Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip)
-   * [Correctif pour Linux](/help/release-notes/assets/Hotfix-Linux.zip)
-   * [Correctif pour Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
+      * [Correctif pour Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip)
+      * [Correctif pour Linux](/help/release-notes/assets/Hotfix-Linux.zip)
+      * [Correctif pour Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
 
-   1. Chargez et installez le package (.zip) via le gestionnaire de packages.
+   1. Téléchargez et installez le package (.zip) via le [Gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing).
 
 * Le service de préremplissage échoue avec une exception de pointeur nulle dans les communications interactives. (CQDOC-21355)
 
