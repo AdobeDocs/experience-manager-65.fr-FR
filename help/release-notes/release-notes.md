@@ -2,7 +2,7 @@
 title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager]
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 7b920927fe400c05f6c7a744d4cb7366db0cae86
+source-git-commit: 70f52515fc877ad5f20e14c2a26a934d3dcdfe01
 workflow-type: tm+mt
 source-wordcount: '3486'
 ht-degree: 68%
@@ -381,7 +381,6 @@ Consultez les [fonctionnalités obsolètes et supprimées](/help/release-notes/d
   * Paste the correct URL directly into the browser.
 
        `http://localhost:4504/editor.html/libs/wcm/core/content/sites/publishpagewizard.html?item=/content/we-retail/language-masters/en/about-us.html` -->
-
 
 
 * **Lié à Oak**
