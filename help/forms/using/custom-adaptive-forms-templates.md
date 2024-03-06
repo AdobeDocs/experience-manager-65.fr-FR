@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 35b50573-0be8-469d-a1ac-f51b9aaa5fef
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '1267'
-ht-degree: 66%
+ht-degree: 67%
 
 ---
 
@@ -121,7 +121,7 @@ Le modèle personnalisé présente le même style que le modèle par défaut, ca
 
 1. Renommez le composant copié en `enrollmentpage`.
 
-1. **(Uniquement si vous disposez déjà d’une contentpage)** Exécutez les étapes suivantes (a-d), si vous disposez d’un composant `contentpage` existant pour le site web. Si vous ne disposez pas d’un composant `contentpage` existant pour le site web, vous pouvez laisser la propriété `resourceSuperType` pour qu’elle indique la page de base d’OOTB.
+1. **(Uniquement si vous disposez déjà d’une contentpage)** Exécutez les étapes suivantes (a-d), si vous disposez d’un composant `contentpage` existant pour le site web. Si vous ne disposez pas d’une `contentpage`pour votre site web, vous pouvez laisser la variable `resourceSuperType`pour pointer vers la page de base prête à l’emploi.
 
    1. Pour le nœud `enrollmentpage`, définissez la valeur de la propriété `sling:resourceSuperType` sur mycompany/components/page/contentpage. Le composant `contentpage` est le composant de page base de votre site. D’autres composants de page peuvent l’étendre. Supprimez les fichiers de script sous `enrollmentpage`, à l’exception de `head.jsp`, `content.jsp` et `library.jsp`. Le composant `sling:resourceSuperType`, qui correspond à `contentpage` dans le cas présent, comprend tous ces scripts. Les en-têtes, dont la barre de navigation et le pied de page, sont hérités du composant `contentpage`
 

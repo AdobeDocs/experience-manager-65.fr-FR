@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4941'
+source-wordcount: '4920'
 ht-degree: 88%
 
 ---
@@ -968,7 +968,7 @@ public class img_GET extends AbstractImageServlet {
 
     protected Layer createLayer(ImageContext c)
             throws RepositoryException, IOException {
-        /* don't create the layer yet. handle everything later */
+        /* do not create the layer yet. handle everything later */
         return null;
     }
 

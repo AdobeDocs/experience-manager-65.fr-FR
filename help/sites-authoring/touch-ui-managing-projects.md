@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 80%
+source-wordcount: '965'
+ht-degree: 79%
 
 ---
 
@@ -24,7 +24,7 @@ Dans cette console, vous pouvez créer un projet, lui associer des ressources et
 
 ## Conditions d’accès {#access-requirements}
 
-Les projets sont une fonction d’AEM standard et ne nécessitent aucune configuration supplémentaire.
+Envoie une fonction d’AEM standard sans nécessiter de configuration supplémentaire.
 
 Cependant, pour que les utilisateurs participant à des projets puissent voir d’autres utilisateurs/groupes lorsqu’ils se servent des fonctionnalités de la console Projets, telles que créer des projets, créer des tâches/workflows ou afficher et gérer l’équipe, ils doivent disposer d’un accès en lecture à `/home/users` et à `/home/groups`.
 

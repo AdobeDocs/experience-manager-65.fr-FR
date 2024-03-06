@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: abd3fbb5abb339d5b019fd2d7cf325404fb079e8
 workflow-type: tm+mt
-source-wordcount: '2717'
-ht-degree: 90%
+source-wordcount: '2665'
+ht-degree: 87%
 
 ---
 
@@ -86,7 +86,7 @@ Les balises ID3 sont conçues pour le format de fichier MP3. Informations suppl�
 
 ### Exif {#exif}
 
-Le format de fichier d’image échangeable (Exif) est le plus utilisé dans la photographie numérique pour les métadonnées. Il permet d’incorporer un vocabulaire fixe de propriétés de métadonnées dans de nombreux formats de fichiers, tels que JPEG, TIFF, RIFF et WAV. Le format Exif stocke chaque métadonnée sous la forme d’une paire constituée du nom et de la valeur de la métadonnée. Ces paires de nom et de valeur de métadonnées sont également appelées des balises, que l’on ne doit pas confondre avec le balisage dans [!DNL Experience Manager]. Les caméras numériques modernes créent des métadonnées Exif que les logiciels graphiques modernes savent prendre en charge. Le format Exif est le plus petit dénominateur commun pour la gestion des métadonnées, en particulier concernant les images.
+Le format de fichier d’image échangeable (Exif) est le plus utilisé dans la photographie numérique pour les métadonnées. Il permet d’incorporer un vocabulaire fixe de propriétés de métadonnées dans de nombreux formats de fichiers, tels que JPEG, TIFF, RIFF et WAV. Exif stocke les métadonnées sous la forme de paires d’un nom de métadonnées et d’une valeur de métadonnées. Ces paires nom-valeur-métadonnées sont également appelées balises, à ne pas confondre avec le balisage dans [!DNL Experience Manager]. Les caméras numériques modernes créent des métadonnées Exif que les logiciels graphiques modernes savent prendre en charge. Le format Exif est le plus petit dénominateur commun pour la gestion des métadonnées, en particulier concernant les images.
 
 Le fait que ce format ne soit pas pris en charge par quelques formats de fichiers image très appréciés comme BMP, GIF ou PNG constitue une limite majeure.
 
@@ -134,7 +134,7 @@ Les métadonnées spécifiques à l’application englobent des métadonnées te
 * CC – [!DNL Creative Commons].
 * [!DNL XMPRights].
 * PLUS – [Picture Licensing Universal System](https://www.useplus.com).
-* PRISM – [Exigences de publication pour les métadonnées standard du secteur (Publishing Requirements for Industry Standard Metadata)](https://www.idealliance.org/prism-metadata).
+* PRISM – [Exigences de publication pour les métadonnées standard du secteur (Publishing Requirements for Industry Standard Metadata)](https://www.w3.org/submissions/2020/SUBM-prism-20200910/Image_Guide.pdf).
 * PRL – PRISM Rights Language.
 * PUR – PRISM Usage Rights.
 * `xmpPlus` – Intégration de PLUS avec XMP.
@@ -149,7 +149,7 @@ Les métadonnées spécifiques à l’application englobent des métadonnées te
 ### Métadonnées spécifiques à l’impression {#print-specific-metadata}
 
 * PDF et PDF/X – Adobe PDF et applications tierces.
-* PRISM – [Exigences de publication pour les métadonnées standard du secteur (Publishing Requirements for Industry Standard Metadata)](https://www.idealliance.org/prism-metadata).
+* PRISM – [Exigences de publication pour les métadonnées standard du secteur (Publishing Requirements for Industry Standard Metadata)](https://www.w3.org/submissions/2020/SUBM-prism-20200910/Image_Guide.pdf).
 * XMP – [!DNL Extensible Metadata Platform].
 * `xmpPG` – Métadonnées XMP pour le texte paginé.
 
@@ -168,7 +168,7 @@ La métadonnée Dublin Core fournit un ensemble de conventions normalisé pour d
 
 Le DCMES (Dublin Core Metadata Element Set) contient 15 éléments de métadonnées qui sont répertoriés dans le tableau ci-après. Chaque élément Dublin Core est facultatif et peut être utilisé plusieurs fois. Vous pouvez ajouter ou supprimer des informations de métadonnées Dublin Core comme vous le feriez pour les métadonnées spécifiques au type de média.
 
-Outre le DCMES, il existe d’autres éléments de métadonnées créés par le Dublin Core Initiative. Pour plus d’informations, consultez [Dublin Core Initiative](https://dublincore.org/).
+Outre le DCMES, il existe d’autres éléments de métadonnées créés par le Dublin Core Initiative. Voir [Dublin Core initiative](https://dublincore.org/) pour plus d’informations.
 
 | Propriété | Description |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------ |
@@ -225,7 +225,7 @@ une entité spécifique appelée ressource ; c’est-à-dire qu’elles portent
 
 ### Écosystème XMP {#xmp-ecosystem}
 
-XMP définit un modèle de [métadonnées](https://fr.wikipedia.org/wiki/Métadonnée) exploitable avec n’importe quel ensemble défini d’éléments de métadonnées. XMP définit également des [schémas](https://en.wikipedia.org/wiki/XML_schema) spécifiques pour des propriétés de base utiles pour consigner l’historique d’une ressource lorsqu’elle passe par diverses étapes de traitement, de la photographie, en passant par la [numérisation](https://fr.wikipedia.org/wiki/Scanner_(informatique)) ou la création en tant que texte, à travers des étapes de retouche photo (comme le [recadrage](https://fr.wikipedia.org/wiki/Recadrage_(image)) ou l’ajustement de couleur), pour former une image finale. XMP permet à chaque programme ou appareil d’ajouter ses propres informations à une ressource numérique. Ces informations peuvent être ensuite conservées dans le fichier numérique final.
+XMP définit un modèle de [métadonnées](https://fr.wikipedia.org/wiki/Métadonnée) qui peut être utilisé avec n’importe quel ensemble défini d’éléments de métadonnées. XMP définit également des [schémas](https://en.wikipedia.org/wiki/XML_schema) particuliers pour les propriétés de base utiles pour enregistrer l’historique d’une ressource lorsqu’elle passe par plusieurs étapes de traitement, depuis la photographie, la [numérisation](https://fr.wikipedia.org/wiki/Scanner_(informatique)) ou la création au format texte, en passant par les étapes de retouche photo ([recadrage](https://fr.wikipedia.org/wiki/Recadrage_(image)) ou réglage des couleurs, par exemple), pour l’assembler dans une image finale. XMP permet à chaque programme logiciel ou appareil d’ajouter en cours de route ses propres informations à une ressource numérique, qui peut ensuite être conservée dans le fichier numérique final.
 
 XMP est le plus souvent sérialisé et stocké à l’aide d’un sous-ensemble du [W3C](https://fr.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://fr.wikipedia.org/wiki/Resource_Description_Framework) (RDF), exprimé à son tour en format [XML](https://fr.wikipedia.org/wiki/Extensible_Markup_Language).
 
@@ -242,7 +242,7 @@ La norme XMP a été conçue pour être extensible, ce qui vous permet d’ajout
 
 >[!NOTE]
 >
->En règle générale, XMP ne permet pas l’incorporation des types de données binaires. Pour gérer des données binaires dans XMP, comme des images miniatures, celles-ci doivent être codées dans un format XML tel que `Base64`.
+>XMP ne permet généralement pas l’incorporation des types de données binaires. Pour transporter des données binaires dans XMP, par exemple des images miniatures, elles doivent être codées dans un format XML tel que `Base64`.
 
 ### Concepts de XMP {#xmp-core-concepts}
 
@@ -258,7 +258,7 @@ Par exemple, la propriété `Creator` dans deux schémas conçus indépendamment
 
 XMP peut inclure des propriétés de l’un ou de plusieurs des schémas. Par exemple, un sous-ensemble classique utilisé par de nombreuses applications Adobe peut comprendre les éléments suivants :
 
-* Schéma Dublin Core : `dc:title`, `dc:creator`, `dc:subject`, `dc:format`, `dc:rights`.
+* Schéma Dublin core : `dc:title`, `dc:creator`, `dc:subject`, `dc:format`, `dc:rights`.
 * Schéma de base XMP : `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`
 * Schéma de gestion des droits XMP : `xmpRights:WebStatement`, `xmpRights:Marked`
 * Schéma de gestion des médias XMP : `xmpMM:DocumentID`

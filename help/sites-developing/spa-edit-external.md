@@ -2,10 +2,10 @@
 title: Modification d’un SPA externe dans Adobe Experience Manager
 description: Ce document décrit les étapes recommandées pour charger un SPA autonome vers une instance Adobe Experience Manager, ajouter des sections de contenu modifiables et activer la création.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 87%
+source-wordcount: '2391'
+ht-degree: 86%
 
 ---
 
@@ -49,7 +49,7 @@ Pour tirer parti des fonctionnalités de SPA AEM, vous pouvez utiliser les dépe
 * [`@adobe/aem-spa-component-mapping`](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [`@adobe/aem-spa-page-model-manager`](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
 
-Le `@adobe/aem-spa-page-model-manager` fournit l’API permettant d’initialiser un gestionnaire de modèle et de récupérer le modèle à partir de l’instance AEM. Ce modèle peut ensuite être utilisé pour effectuer le rendu des composants AEM à l’aide d’API provenant de `@adobe/aem-react-editable-components` et `@adobe/aem-spa-component-mapping`.
+La variable `@adobe/aem-spa-page-model-manager` fournit l’API pour initialiser un gestionnaire de modèles et récupérer le modèle à partir de l’instance AEM. Ce modèle peut ensuite être utilisé pour effectuer le rendu des composants AEM à l’aide d’API provenant de `@adobe/aem-react-editable-components` et `@adobe/aem-spa-component-mapping`.
 
 #### Installation {#installation}
 
@@ -205,7 +205,7 @@ Le composant `AEMText` est désormais modifiable sur AEM.
    >
    >Dans cet exemple, le composant de texte React non encapsulé est utilisé à la place de l’élément encapsulé. `AEMText` créé précédemment. En effet, lorsque le composant fait partie d’une page ou d’un conteneur et n’est pas autonome, le conteneur s’occupe de mapper le composant de manière récursive et d’activer les fonctionnalités de création ; le Wrapper supplémentaire n’est donc pas nécessaire pour chaque enfant.
 
-1. Pour ajouter une page autorisée dans la SPA, suivez les mêmes étapes de la section [Ajout de composants modifiables à la page](#add-authorable-component-to-page).  Ici, nous pouvons cependant passer l’étape de la propriété `itemPath`.
+1. Pour ajouter une page autorisée dans la SPA, suivez les mêmes étapes de la section [Ajout de composants modifiables à la page](#add-authorable-component-to-page). Ici, vous pouvez ignorer la variable `itemPath` , toutefois.
 
 #### Vérifier le contenu de la page sur AEM {#verify-page-content}
 

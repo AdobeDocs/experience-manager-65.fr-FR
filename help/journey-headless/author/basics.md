@@ -2,10 +2,10 @@
 title: Découvrez les bases de la création
 description: Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS Headless à l’aide de fragments de contenu.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 95%
+source-wordcount: '1694'
+ht-degree: 94%
 
 ---
 
@@ -47,7 +47,7 @@ Comme pour la plupart des systèmes, vous devez vous connecter. En tant qu’aut
 * Mot de passe
 * Lien d’accès à l’écran de connexion
 
-Votre compte a été configuré avec les privilèges dont vous avez besoin. Si vous rencontrez des problèmes, Adobe recommande de contacter l’équipe interne d’assistance projet.
+Votre compte a été configuré avec les privilèges dont vous avez besoin. Si vous rencontrez des problèmes, nous vous recommandons de contacter votre équipe interne d’assistance projet.
 
 ### Navigation {#navigation}
 
@@ -102,7 +102,7 @@ Pour ce faire, créez une série de dossiers dans la section **Fichiers** de la 
 
 ![Option Créer un dossier](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Une boîte de dialogue s’ouvre, dans laquelle vous pouvez saisir les détails, puis confirmer avec **Créer**:
+Une boîte de dialogue s’ouvre dans laquelle vous pouvez saisir les informations ; confirmez ensuite en sélectionnant **Créer** :
 
 ![Boîte de dialogue Créer un dossier](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -126,7 +126,7 @@ Vous pouvez ensuite parcourir ces dossiers pour créer et modifier vos fragments
 
 Juste au cas où...
 
-Vous recevrez probablement un dossier initial dans lequel vous pourrez créer vos dossiers. En effet, certains détails de configuration doivent être appliqués (généralement par un développeur ou un administrateur système) au dossier racine. Cela ne vous intéressera probablement pas mais vous pouvez, au besoin, vérifier la **Configuration** dans les **Services cloud** du dossier **Propriétés** :
+Vous recevrez probablement un dossier initial dans lequel vous pourrez créer vos dossiers. En effet, certains détails de configuration doivent être appliqués (généralement par un développeur ou un administrateur système) au dossier racine. Cela ne vous intéresse probablement pas, mais vous pouvez, au besoin, vérifier la variable **Configuration** dans le **Cloud Service** du dossier **Propriétés**:
 
 ![Création de propriétés de dossier – Configuration](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 
@@ -184,7 +184,7 @@ Confirmez vos mises à jour en effectuant l’une des opérations suivantes : *
 >
 >Pour plus d’informations, vous pouvez lire Variations – Création de fragments de contenu.
 
-#### Ce dont vous n’avez (probablement) pas besoin de vous inquiéter {#what-you-probably-do-not-need-to-worry-about}
+#### Ce dont vous ne devez (probablement) pas vous inquiéter {#what-you-probably-do-not-need-to-worry-about}
 
 Cette section peut sembler un peu étrange mais une fois que vous avez ouvert l’éditeur de fragments de contenu et que vous commencez à l’explorer, vous verrez diverses options qui ne s’appliquent (probablement) pas à votre parcours découplé en tant qu’auteur de contenu. Il s’agit simplement d’une rapide mise en garde sur ce que vous devriez pouvoir ignorer dans un contexte découplé :
 

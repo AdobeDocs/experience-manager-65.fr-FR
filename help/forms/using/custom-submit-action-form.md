@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 99%
+source-wordcount: '1543'
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 99%
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
-Les formulaires adaptatifs requièrent des actions Envoyer pour traiter les données spécifiées par lʼutilisateur. Une action Envoyer détermine la tâche effectuée sur les données envoyées à lʼaide dʼun formulaire adaptatif. Adobe Experience Manager (AEM) contient des [actions Envoyer prêtes à l’emploi](../../forms/using/configuring-submit-actions.md) qui montrent les tâches personnalisées que vous pouvez effectuer à l’aide des données envoyées par l’utilisateur. Vous pouvez par exemple effectuer des tâches comme envoyer un courrier électronique ou stocker les données.
+Les formulaires adaptatifs requièrent des actions Envoyer pour traiter les données spécifiées par lʼutilisateur. Une action Envoyer détermine la tâche effectuée sur les données envoyées à lʼaide dʼun formulaire adaptatif. Adobe Experience Manager (AEM) inclut [Actions Envoyer prêtes à l’emploi](../../forms/using/configuring-submit-actions.md) qui montrent les tâches personnalisées que vous pouvez effectuer à l’aide des données envoyées par l’utilisateur. Vous pouvez par exemple effectuer des tâches comme envoyer un courrier électronique ou stocker les données.
 
 ## Processus d’une action Envoyer {#workflow-for-a-submit-action}
 
@@ -84,7 +84,7 @@ Si l’action ne fournit pas de chemin de transfert, la servlet Submit redirige 
 
 >[!NOTE]
 >
->Un auteur ou une autrice fournit l’URL de redirection (à l’aide de la configuration de la page de remerciement). Les [actions Envoyer prêtes à l’emploi](../../forms/using/configuring-submit-actions.md) utilisent l’URL de redirection pour rediriger le navigateur à partir de la ressource référencée par le chemin de transfert.
+>Un auteur ou une autrice fournit l’URL de redirection (à l’aide de la configuration de la page de remerciement). [Actions d’envoi prêtes à l’emploi](../../forms/using/configuring-submit-actions.md) utilisez l’URL de redirection pour rediriger le navigateur à partir de la ressource référencée par le chemin de transfert.
 >
 >Vous pouvez écrire une action Envoyer personnalisée qui transfère une demande vers une ressource ou une servlet. Adobe recommande que le script qui effectue la gestion des ressources pour le chemin de transfert redirige la requête vers l’URL de redirection au terme du traitement.
 
@@ -99,11 +99,11 @@ Une action Envoyer est un sling:Folder qui contient les éléments suivants :
    * **guideComponentType** de type chaîne et valeur **fd/af/components/guidesubmittype**
    * **guideDataModel** de type chaîne qui spécifie le type de formulaire adaptatif auquel l’action Envoyer est applicable. **xfa** est pris en charge pour les formulaires adaptatifs basés sur XFA, alors que **xsd** l’est pour les formulaires adaptatifs basés sur XSD. **basic** est pris en charge pour les formulaires adaptatifs qui n’utilisent ni XDP ni XSD. Pour afficher l’action sur plusieurs types de formulaire adaptatif, ajoutez les chaînes correspondantes. Séparez chaque chaîne par une virgule. Par exemple, pour rendre une action visible sur les formulaires adaptatifs basés sur XFA et XSD, spécifiez respectivement les valeurs **xfa** et **xsd**.
 
-   * **jcr:description** de type chaîne. La valeur de cette propriété est affichée dans la liste des actions Envoyer située sous l’onglet Actions Envoyer de la boîte de dialogue Modifier le formulaire adaptatif. Les actions prêtes à l’emploi figurent dans le référentiel CRX, à l’emplacement **/libs/fd/af/components/guidesubmittype**.
+   * **jcr:description** de type chaîne. La valeur de cette propriété s’affiche dans la liste des actions Envoyer sous l’onglet Actions Envoyer de la boîte de dialogue Modifier le formulaire adaptatif. Les actions d’usine sont présentes dans le référentiel CRX à l’emplacement **/libs/fd/af/components/guidesubmittype**.
 
 ## Création d’une action Envoyer personnalisée {#creating-a-custom-submit-action}
 
-Procédez comme suit pour créer une action Envoyer personnalisée qui enregistre les données dans le référentiel CRX et envoie ensuite un e-mail. Le formulaire adaptatif contient l’action Envoyer Stocker le contenu (obsolète) prête à l’emploi qui permet d’enregistrer les données dans le référentiel CRX. En outre, CQ fournit une API de [messagerie](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) qui peut être utilisée pour envoyer des e-mails. Avant d’utiliser l’API de messagerie, vous devez [configurer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&amp;wcmmode=disabled) le service Day CQ Mail via la console système. Vous pouvez réutiliser l’action Stocker le contenu (obsolète) pour stocker les données dans le référentiel. L’action Stocker le contenu (obsolète) se trouve à l’emplacement /libs/fd/af/components/guidesubmittype/store dans le référentiel CRX.
+Procédez comme suit pour créer une action Envoyer personnalisée qui enregistre les données dans le référentiel CRX et envoie ensuite un e-mail. Le formulaire adaptatif contient l’action Envoyer Stocker le contenu (obsolète) prête à l’emploi qui enregistre les données dans le référentiel CRX. En outre, CQ fournit une API de [messagerie](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) qui peut être utilisée pour envoyer des e-mails. Avant d’utiliser l’API de messagerie, vous devez [configurer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&amp;wcmmode=disabled) le service Day CQ Mail via la console système. Vous pouvez réutiliser l’action Stocker le contenu (obsolète) pour stocker les données dans le référentiel. L’action Stocker le contenu (obsolète) se trouve à l’emplacement /libs/fd/af/components/guidesubmittype/store dans le référentiel CRX.
 
 1. Connectez-vous à CRXDE Lite en accédant à https://&lt;server>:&lt;port>/crx/de/index.jsp. Créez un nœud avec la propriété sling:Folder et le nom store_and_mail dans le dossier /apps/custom_submit_action. Créez le dossier custom_submit_action, le cas échéant.
 
@@ -139,7 +139,7 @@ Procédez comme suit pour créer une action Envoyer personnalisée qui enregistr
 
    Ajoutez le script post.POST.jsp à votre action. (/apps/custom_submit_action/store_and_mail/).
 
-   Exécutez l’action Stocker prête à l’emploi (script post.POST.jsp). Utilisez l’API [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) que le CQ fournit dans votre code pour exécuter l’action Stocker. Ajoutez le code suivant à votre fichier JSP :
+   Exécutez l’action Boutique prête à l’emploi (script post.POST.jsp). Utilisez l’API [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) que le CQ fournit dans votre code pour exécuter l’action Stocker. Ajoutez le code suivant à votre fichier JSP :
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 

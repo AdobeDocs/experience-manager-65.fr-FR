@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2935'
-ht-degree: 98%
+source-wordcount: '2939'
+ht-degree: 97%
 
 ---
 
@@ -347,10 +347,10 @@ Développez pour AEM et optimisez les **performances et l’évolutivité**. Vou
 
 **Mauvaises pratiques**
 
-* N’utilisez pas directement les API JCR, si possible.
-* Ne modifiez pas les répertoires /libs, mais utilisez plutôt des recouvrements.
-* N’utilisez pas de requêtes dans la mesure du possible.
-* N’utilisez pas de liaisons Sling pour obtenir des services OSGi dans le code Java™, mais utilisez plutôt :
+* N’utilisez pas directement les API JCR, si vous le pouvez
+* Ne modifiez pas /libs, mais utilisez plutôt des superpositions.
+* N’utilisez pas de requêtes dans la mesure du possible
+* N’utilisez pas de liaisons Sling pour obtenir des services OSGi dans du code Java™, mais utilisez plutôt :
 
    * @Reference dans un composant DS ;
    * @Inject dans un modèle Sling ;

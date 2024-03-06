@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 65b2029e-03c9-4df4-8579-2b15dbee1035
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '617'
 ht-degree: 48%
 
 ---
@@ -64,4 +64,4 @@ Les boy-scouts ont une règle : « Laissons (ce monde) dans un meilleur état 
 
 ### Éviter la mise en œuvre de fonctionnalités YAGNI {#avoid-implementing-yagni-features}
 
-Les fonctionnalités de YAGNI (Vous n&#39;en aurez pas besoin) sont des choses qui sont mises en oeuvre quand nous nous attendons à ce que nous ayons besoin de quelque chose à l&#39;avenir, même si nous n&#39;en avons pas besoin maintenant. Idéalement, il convient d’implémenter l’élément le plus simple qui fonctionnera aujourd’hui et procéder à un réusinage de code (refactoring) continu pour s’assurer que l’architecture du système évolue avec les exigences au fil du temps. Cela nous permet de nous concentrer sur ce qui importe et d’éviter le tassement du code et la perte de fonctionnalités.
+Les fonctionnalités de YAGNI (Vous n&#39;en aurez pas besoin) sont des choses qui sont mises en oeuvre lorsque nous nous attendons à ce que nous ayons besoin de quelque chose à l&#39;avenir, même si nous n&#39;en avons pas besoin maintenant. Idéalement, il convient d’implémenter l’élément le plus simple qui fonctionnera aujourd’hui et procéder à un réusinage de code (refactoring) continu pour s’assurer que l’architecture du système évolue avec les exigences au fil du temps. Cela nous permet de nous concentrer sur ce qui importe et d’éviter le tassement du code et la perte de fonctionnalités.

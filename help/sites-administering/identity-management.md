@@ -7,10 +7,10 @@ topic-tags: Security
 content-type: reference
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 84%
+source-wordcount: '1249'
+ht-degree: 83%
 
 ---
 
@@ -147,7 +147,7 @@ Cela implique de définir une propriété appropriée dans le profil utilisateur
 
 * être visible et accessible pour l’utilisateur ou l’utilisatrice
 * définir deux états pour chaque propriété
-* permettre de basculer entre les deux états définis
+* vous permet de basculer entre les deux états définis.
 
 Pour ce faire, procédez comme suit :
 

@@ -8,7 +8,7 @@ content-type: reference
 pagetitle: Configuring Email
 role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 3%
@@ -41,7 +41,7 @@ Le service de messagerie par défaut est requis pour les notifications et les ab
 
 Reposez-vous sur la documentation de [Configuration des notifications par e-mail](../../help/sites-administering/notification.md), mais avec une différence dans ce champ `"From" address` is *not* obligatoire et doit être laissé vide.
 
-Par exemple, (renseigné avec des valeurs à des fins d’illustration uniquement) :
+Par exemple (renseigné avec des valeurs à des fins d’illustration uniquement) :
 
 ![email-config](assets/email-config.png)
 

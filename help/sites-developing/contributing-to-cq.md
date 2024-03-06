@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2669'
-ht-degree: 46%
+source-wordcount: '2635'
+ht-degree: 43%
 
 ---
 
@@ -85,17 +85,17 @@ Réutilisation du code : notre architecture de produit basée sur OSGi et notre 
 
 Couplage lâche : nous privilégions les interactions à couplage faible à des dépendances étroites et des échanges trop serrés non souhaités. Le couplage faible permet également une réutilisation du code.
 
-### Ne pas casser la démonstration {#don-t-break-the-demo}
+### Ne pas interrompre la démonstration {#don-t-break-the-demo}
 
 Familiarisez-vous avec les scripts de démonstration et les fonctionnalités des produits qui sont le plus souvent présentés dans les démos. Comprenez que rien de ce que vous ne faites ne devrait jamais rompre une fonction &quot;script de démonstration&quot;. Le produit principal doit toujours être prêt pour la démonstration, même pendant le développement.
 
 ### Conception pour la fiabilité {#design-for-reliability}
 
-Nous nous efforçons de concevoir et de coder les fonctionnalités sans qu’un bogue n’ai de lourdes répercussions. Par exemple, il faut éviter qu’un problème lié à un seul élément DOM empêche le rendu de toute une page. En d’autres termes : laisser ce qui doit être fatal l’être. Tout le reste doit être viable. Faites &quot;pardonner&quot; le produit.
+Nous nous efforçons de concevoir et de coder des fonctionnalités de manière réactive, de sorte (par exemple) qu’un problème avec un seul élément DOM n’entraîne pas le rendu d’une page entière. En d’autres termes : laisser ce qui doit être fatal l’être. Tout le reste doit être viable. Faites &quot;pardonner&quot; le produit.
 
 ### La nouvelle normalité est anormale {#abnormal-is-the-new-normal}
 
-Ne dépendez pas des shutdown hooks, nettoyez au démarrage. Un arrêt anormal est un arrêt normal.
+Ne dépendez pas des points d&#39;arrêt, assurez-vous de procéder au nettoyage au démarrage. Un arrêt anormal est un arrêt normal.
 
 `shutdown == kill -9 == power outage`
 
@@ -175,6 +175,6 @@ java -jar <quickstartfilename>.jar -help
 
 **Stockage Tar (TarMK)** - TarMK est le système de persistance par défaut dans AEM. Bien qu’AEM puisse être configuré pour utiliser un système de persistance différent (tel que MongoDB), TarMK présente certains avantages dans la mesure où il est optimisé en termes de performances pour les cas d’utilisation JCR standard (par conséquent, est rapide), utilise un format de données standard et peut être sauvegardé rapidement et facilement.
 
-**Modèle** - Dans AEM, un modèle spécifie un type de page spécialisé. Il définit la structure d’une page (tout en spécifiant généralement une image miniature et diverses propriétés). Par exemple, vous pouvez avoir des modèles distincts pour les pages de produits, les plans de site et les coordonnées.
+**Modèle** - Dans AEM, un modèle spécifie un type de page spécialisé. Il définit la structure d’une page (tout en spécifiant généralement une image miniature et diverses propriétés). Par exemple, vous pouvez avoir des modèles distincts pour les pages de produits, les plans de site et les informations de contact.
 
 **Workflow** - Le système de Workflow AEM permet la création de processus automatisés associés à des pages ou des ressources.

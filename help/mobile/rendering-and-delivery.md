@@ -5,9 +5,9 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '574'
 ht-degree: 7%
 
 ---
@@ -97,14 +97,14 @@ Le tableau suivant affiche les propriétés des configurations d’exportation :
    <td>excludeProperties</td>
    <td>Chaîne[]</td>
    <td>exclure rien</td>
-   <td>Noms de propriété</td>
+   <td>Noms des propriétés</td>
    <td>exclure des propriétés spécifiées de l’exportation JSON</td>
   </tr>
   <tr>
    <td>includeProperties</td>
    <td>Chaîne[]</td>
    <td>inclure tout</td>
-   <td>Noms de propriété</td>
+   <td>Noms des propriétés</td>
    <td><p>if excludePropertyPrefixes set<br /> cela inclut les propriétés spécifiées même si le préfixe correspondant a été exclu,</p> <p>else (exclure les propriétés ignorées) n’incluent que ces propriétés</p> </td>
   </tr>
   <tr>
@@ -116,14 +116,14 @@ Le tableau suivant affiche les propriétés des configurations d’exportation :
   </tr>
   <tr>
    <td>excludeChildren</td>
-   <td>Chaîne[]<br /> <br /> </td>
+   <td>String[]<br /> <br /> </td>
    <td>exclure rien</td>
    <td>noms enfants</td>
    <td>inclure uniquement des enfants spécifiés de l’exportation JSON ; exclure d’autres</td>
   </tr>
   <tr>
    <td>renameProperties</td>
-   <td>Chaîne[]<br /> <br /> </td>
+   <td>String[]<br /> <br /> </td>
    <td>renommer rien</td>
    <td>&lt;actual_property_name&gt;,&lt;replacement_property_name&gt;</td>
    <td>renommer les propriétés à l’aide de remplacements</td>

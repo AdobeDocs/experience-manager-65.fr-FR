@@ -3,9 +3,9 @@ title: '« Didacticiel : créer un formulaire adaptatif »'
 description: Apprenez à créer, à mettre en page et à prévisualiser un formulaire adaptatif. Découvrez également comment configurer les actions d’envoi.
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1314'
 ht-degree: 85%
 
 ---

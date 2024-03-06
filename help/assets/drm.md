@@ -6,10 +6,10 @@ role: User, Admin
 feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: ht
-source-wordcount: '1421'
-ht-degree: 100%
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+workflow-type: tm+mt
+source-wordcount: '1425'
+ht-degree: 98%
 
 ---
 
@@ -91,7 +91,7 @@ Pour que la console [!DNL Assets] affiche les ressources composites référencé
 La console [!DNL Assets] peut afficher différents états des ressources. En fonction de l’état actuel d’une ressource donnée, le mode Carte affiche un libellé décrivant son état (par exemple, expiré, modifié, approuvé, rejeté, etc.).
 
 1. Dans l’interface utilisateur [!DNL Assets], sélectionnez une ressource.
-1. Cliquez sur **[!UICONTROL Publier]** dans la barre d’outils. Si vous ne voyez pas l’option **Publier** dans la barre d’outils, cliquez sur **[!UICONTROL Plus]** dans la barre d’outils et recherchez l’option **[!UICONTROL Publier]** ![option Publier](assets/do-not-localize/publish-globe.png).
+1. Cliquez sur **[!UICONTROL Publier]** dans la barre d’outils. Si vous ne voyez pas **Publier** dans la barre d’outils, cliquez sur **[!UICONTROL Plus]** dans la barre d’outils et recherchez **[!UICONTROL Publier]** ![option de publication](assets/do-not-localize/publish-globe.png) .
 1. Sélectionnez **[!UICONTROL Publier]** dans le menu, puis fermez la boîte de dialogue de confirmation.
 1. Quittez le mode de sélection. Le statut de publication de la ressource s’affiche dans la partie inférieure de sa miniature en mode Carte. Dans la vue Liste, la colonne Publié indique le moment auquel la ressource a été publiée.
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
-source-git-commit: 4289c68feb51842b5649f7cff73c5c4bc38add6c
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2236'
+source-wordcount: '2237'
 ht-degree: 93%
 
 ---
@@ -121,7 +121,7 @@ De même, en l’absence de règle d’index supplémentaire pour la propriété
 
 Une autre cause de filtrage post-index est le manque de prise en compte des listes de contrôle d’accès pendant le développement. Veillez à ce que la requête ne renvoie pas des chemins susceptibles d’être inaccessibles à l’utilisateur ou l’utilisatrice. Pour ce faire, vous pouvez améliorer la structure du contenu et fournir des restrictions de chemin d’accès appropriées à la requête.
 
-Une méthode utile pour identifier si l’index Lucene renvoie de nombreux résultats pour retourner un petit sous-ensemble en tant que résultat de la requête consiste à activer les journaux DEBUG pour `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex`. Cela vous permet de voir combien de documents sont en train d&#39;être chargés à partir de l’index. Le nombre de résultats finaux par rapport au nombre de documents chargés ne devrait pas être disproportionné. Pour plus d’informations, consultez la section [Journalisation](/help/sites-deploying/configure-logging.md).
+Une méthode utile pour identifier si l’index Lucene renvoie de nombreux résultats pour retourner un petit sous-ensemble en tant que résultat de la requête consiste à activer les journaux DEBUG pour `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex`. Cela vous permet de voir combien de documents sont en train d&#39;être chargés à partir de l’index. Le nombre de résultats éventuels par rapport au nombre de documents chargés ne doit pas être disproportionné. Pour plus d’informations, consultez la section [Journalisation](/help/sites-deploying/configure-logging.md).
 
 #### Après le déploiement {#post-deployment-1}
 

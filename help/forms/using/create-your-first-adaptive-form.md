@@ -5,10 +5,10 @@ topic-tags: introduction
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 100%
+source-wordcount: '913'
+ht-degree: 72%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 100%
 
 ## Présentation {#introduction}
 
-Êtes-vous à la recherche d’une **expérience de création de formulaires** adaptée aux appareils mobiles qui simplifie l’inscription, renforce l’engagement et réduit la durée d’exécution ? Les **formulaires adaptatifs** vous conviendront parfaitement. Les formulaires adaptatifs offrent une expérience de création de formulaires mobile, automatisée et compatible avec Analytics. Vous pouvez facilement créer des formulaires réactifs et interactifs, utiliser des processus automatisés pour réduire les tâches administratives et répétitives et utiliser l’analyse de données pour améliorer et personnaliser l’expérience des clients avec vos formulaires.
+Vous recherchez un mobile-friendly **expérience de formulaires** qui simplifie l’inscription, augmente l’engagement et réduit le temps de rotation, **formulaires adaptatifs** est parfaite pour vous. Les formulaires adaptatifs offrent une expérience de création de formulaires mobile, automatisée et compatible avec Analytics. Vous pouvez facilement créer des formulaires réactifs et interactifs, utiliser des processus automatisés pour réduire les tâches administratives et répétitives et utiliser l’analyse de données pour améliorer et personnaliser l’expérience des clients avec vos formulaires.
 
-Ce tutoriel fournit un cadre de bout en bout pour la création d’un formulaire adaptatif. Le tutoriel consiste en un cas d’utilisation et plusieurs guides. Chaque guide vous aide à découvrir et à ajouter de nouvelles fonctionnalités au formulaire adaptatif créé dans ce tutoriel. Vous obtenez un formulaire adaptatif opérationnel à la fin de chaque guide. Le guide de création d’un formulaire adaptatif est disponible. Les guides suivants seront bientôt disponibles. À la fin de ce didacticiel, vous serez capable de :
+Ce tutoriel fournit un cadre de bout en bout pour la création d’un formulaire adaptatif. Le tutoriel consiste en un cas d’utilisation et plusieurs guides. Chaque guide vous aide à découvrir et à ajouter de nouvelles fonctionnalités au formulaire adaptatif créé dans ce tutoriel. Vous obtenez un formulaire adaptatif opérationnel à la fin de chaque guide. Le guide de création d’un formulaire adaptatif est disponible. Les guides suivants seront bientôt disponibles. À la fin de ce tutoriel, vous devriez pouvoir effectuer les opérations suivantes :
 
 * créer un formulaire adaptatif et un modèle de données de formulaire ;
 * appliquer un style à votre formulaire adaptatif ;
@@ -43,7 +43,7 @@ Le site Web fonctionne sous Adobe Experience Manager (AEM) et utilise AEM [!DNL 
 
 ### Prérequis {#prerequisite}
 
-* Configurez une [instance de création AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=fr#author-and-publish-installs).
+* Configurez une [AEM instance d’auteur](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * Installez le [module complémentaire AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) sur une instance de création.
 * Obtenez le pilote de base de données JDBC (fichier JAR) auprès du fournisseur de base de données. Les exemples du tutoriel sont basés sur la base de données [!DNL MySQL] et utilisent le [pilote de base de données MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html) d’[!DNL Oracle's].
 
@@ -59,10 +59,10 @@ Les formulaires adaptatifs sont de nouvelle génération, attrayants, réactifs,
 
 Objectifs:
 
-* Créer un formulaire adaptatif permettant à un(e) client(e) d’ajouter une adresse de livraison
-* Mettre en forme les champs d’un formulaire adaptatif pour afficher et accepter les informations d’un(e) client(e)
-* Créer une action d’envoi pour envoyer un courrier électronique contenant du contenu de formulaire
-* Prévisualiser et envoyer un formulaire adaptatif
+* Créez un formulaire adaptatif qui permet à un client d’ajouter une adresse de livraison.
+* Mettre en page les champs d’un formulaire adaptatif pour afficher et accepter les informations d’un client.
+* Créez une action d’envoi pour envoyer un courrier électronique contenant le contenu du formulaire.
+* Prévisualiser et envoyer un formulaire adaptatif.
 
 [![Voir le Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-adaptive-form.md)
 
@@ -70,15 +70,15 @@ Objectifs:
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-Un modèle de données de formulaire permet de connecter un formulaire adaptatif à des sources de données disparates. Par exemple, un profil utilisateur AEM, des services web RESTful, des services web SOAP, des services OData et des bases de données relationnelles. Un modèle de données de formulaire est un schéma de représentation de données unifié, fait d’entités et de services d’entreprise, disponibles dans des sources de données connectées. Vous pouvez utiliser le modèle de données de formulaire avec un formulaire adaptatif pour récupérer, mettre à jour, supprimer et ajouter des données aux sources de données connectées.
+Un modèle de données de formulaire vous permet de connecter un formulaire adaptatif à des sources de données disparates. Par exemple, un profil utilisateur AEM, des services web RESTful, des services web SOAP, des services OData et des bases de données relationnelles. Un modèle de données de formulaire est un schéma de représentation de données unifié, fait d’entités et de services d’entreprise, disponibles dans des sources de données connectées. Vous pouvez utiliser le modèle de données de formulaire avec un formulaire adaptatif pour récupérer, mettre à jour, supprimer et ajouter des données aux sources de données connectées.
 
 Objectifs:
 
-* Configurer l’instance de base de données du site web (base de données [!DNL MySQL]) en tant que source de données
-* Créer le modèle de données de formulaire à l’aide de la base de données [!DNL MySQL] en tant que source de données
-* Ajouter des objets de modèle de données pour former un modèle de données
-* Configurer les services de lecture et d’écriture pour le modèle de données de formulaire
-* Tester le modèle de données de formulaire et les services configurés avec des données de test
+* Configuration de l’instance de base de données du site web ([!DNL MySQL] (base de données) comme source de données.
+* Créez le modèle de données de formulaire à l’aide de [!DNL MySQL] base de données comme source de données.
+* Ajoutez des objets de modèle de données afin de former le modèle de données.
+* Configurez les services de lecture et d’écriture pour le modèle de données de formulaire.
+* Testez le modèle de données de formulaire et les services configurés avec des données de test.
 
 [![Voir le Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
 
@@ -86,12 +86,12 @@ Objectifs:
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-Les formulaires adaptatifs fournissent un éditeur pour l’écriture de règles sur des objets de formulaire adaptatifs. Ces règles déterminent les actions à déclencher sur des objets de formulaire en fonction des conditions prédéfinies, des entrées de l’utilisateur et des actions de l’utilisateur sur le formulaire. Cela permet d’assurer la précision et accélère le remplissage des formulaires.
+Les formulaires adaptatifs fournissent un éditeur pour l’écriture de règles sur des objets de formulaire adaptatifs. Ces règles déterminent les actions à déclencher sur des objets de formulaire en fonction des conditions prédéfinies, des entrées de l’utilisateur et des actions de l’utilisateur sur le formulaire. Cela permet d’assurer la précision et d’accélérer le remplissage du formulaire.
 
-Objectifs:
+Objectifs :
 
-* Créer et appliquer des règles aux champs de formulaire adaptatif
-* Utiliser des règles pour déclencher des services de modèle de données de formulaire pour mettre à jour les données dans la base de données
+* Créez et appliquez des règles aux champs de formulaire adaptatif.
+* Utilisez des règles pour déclencher des services de modèle de données de formulaire pour mettre à jour les données vers la base de données.
 
 [![Voir le Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
@@ -103,9 +103,9 @@ Les formulaires adaptatifs comportent des thèmes et un [éditeur](../../forms/u
 
 Objectifs:
 
-* Appliquer un thème prêt à l’emploi à un formulaire adaptatif
-* Créer un thème pour le formulaire adaptatif à l’aide de l’éditeur de thème
-* Utiliser des polices web dans un thème personnalisé
+* Appliquez un thème prêt à l’emploi à un formulaire adaptatif.
+* Créez un thème pour le formulaire adaptatif à l’aide de l’éditeur de thème.
+* Utilisez des Webs Fonts dans un thème personnalisé.
 
 [![Voir le Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
@@ -117,8 +117,8 @@ Vous pouvez publier des formulaires adaptatifs sous forme de formulaire autonome
 
 Objectifs:
 
-* Publiez le formulaire adaptatif en tant que page AEM
-* Incorporer le formulaire adaptatif dans une page AEM [!DNL Sites]
-* Incorporez le formulaire adaptatif dans une page web externe (une page web extérieure à AEM, hébergée en dehors d’AEM)
+* Publiez le formulaire adaptatif en tant que page AEM.
+* Incorporation du formulaire adaptatif dans une AEM [!DNL Sites] Page.
+* Incorporez le formulaire adaptatif dans une page web externe (une page web non AEM hébergée en dehors d’AEM).
 
 [![Voir le Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)

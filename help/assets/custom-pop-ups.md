@@ -1,6 +1,6 @@
 ---
 title: Création de pop-ups personnalisés à l’aide de l’aperçu rapide
-description: L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec les informations sur les produits pour générer un achat. Vous pouvez déclencher le contenu personnalisé pour l’afficher dans les pop-ups.
+description: L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique par lesquelles une fenêtre contextuelle s’affiche avec les informations sur les produits pour générer un achat. Vous pouvez déclencher le contenu personnalisé pour l’afficher dans les pop-ups.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -8,16 +8,16 @@ content-type: reference
 feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '932'
 ht-degree: 83%
 
 ---
 
 # Création de pop-ups personnalisés à l’aide de l’aperçu rapide {#using-quickviews-to-create-custom-pop-ups}
 
-L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec les informations sur les produits pour générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les pop-ups. Selon la visionneuse, cette fonctionnalité permet aux utilisateurs de sélectionner sur une zone réactive, une image miniature ou une zone cliquable pour afficher des informations ou du contenu connexe.
+L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique par lesquelles une fenêtre contextuelle s’affiche avec les informations sur les produits pour générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les pop-ups. Selon la visionneuse, cette fonctionnalité permet aux utilisateurs de sélectionner sur une zone réactive, une image miniature ou une zone cliquable pour afficher des informations ou du contenu connexe.
 
 L’aperçu rapide est pris en charge par les visionneuses suivantes dans Dynamic Media :
 
@@ -161,7 +161,7 @@ Supposons que vous utilisiez le code d’intégration suivant dans votre page We
      Avec les variables mappées à partir de l’aperçu rapide et l’appel de fonction défini, la console du navigateur affiche la valeur de la variable à l’aide de l’exemple de fonction fourni.
 
 1. Vous pouvez désormais utiliser la fonction pour appeler un pop-up simple dans l’aperçu rapide. L’exemple suivant utilise une balise `DIV` pour une fenêtre contextuelle.
-1. Mettez en forme la balise `DIV` du pop-up comme suit. Ajoutez votre propre style supplémentaire comme vous le souhaitez.
+1. Mettez en forme la balise `DIV` du pop-up comme suit. Ajoutez vos propres styles supplémentaires, le cas échéant.
 
    ```xml
    <style type="text/css">

@@ -5,10 +5,10 @@ content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '790'
-ht-degree: 91%
+ht-degree: 90%
 
 ---
 
@@ -107,7 +107,7 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Vou
 
    **Fichiers mixin less :** Vous pouvez définir les fonctions qui acceptent les variables comme arguments. Les styles résultants constituent la sortie de ces fonctions. Utilisez ces mixins dans différents styles afin d’éviter la répétition de styles CSS.
 
-   Les formulaires adaptatifs offrent également des mixins prêts à l’emploi définis dans :
+   Les formulaires adaptatifs fournissent des mixins prêts à l’emploi définis dans :
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/adaptiveforms-mixins.less`
 

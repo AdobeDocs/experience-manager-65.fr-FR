@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2963'
+source-wordcount: '2964'
 ht-degree: 60%
 
 ---
@@ -106,7 +106,7 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
    <td>Un <a href="/help/sites-authoring/experience-fragments.md">Fragment d’expérience</a> est une expérience autonome qui peut être réutilisée sur plusieurs canaux et qui comporte des variantes, ce qui vous évite de devoir copier et coller à plusieurs reprises des expériences ou des parties d’expériences.</td>
   </tr>
   <tr>
-   <td>Forms</td>
+   <td>Formulaires</td>
    <td>Cette console vous permet de créer, de gérer et de traiter vos <a href="/help/forms/using/introduction-aem-forms.md">formulaires et documents</a>.</td>
   </tr>
   <tr>

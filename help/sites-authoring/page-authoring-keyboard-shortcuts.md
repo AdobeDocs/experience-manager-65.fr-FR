@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 71%
@@ -30,7 +30,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 |  | `Ctrl-y` | [Rétablir la dernière modification](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Sélectionner plusieurs paragraphes |
 |  | `Ctrl-c` | Copier les paragraphes sélectionnés |
-|  | `Ctrl-x` | Couper les paragraphes sélectionnés (les paragraphes coupés ne disparaîtront pas de l’interface utilisateur tant qu’ils ne seront pas collés). |
+|  | `Ctrl-x` | Couper les paragraphes sélectionnés (les paragraphes coupés ne disparaissent pas dans l’interface utilisateur tant qu’ils ne sont pas collés). |
 |  | `Ctrl-v` | Coller les paragraphes précédemment coupés ou copiés |
 |  | `Ctrl-Backspace` | Supprimer les paragraphes sélectionnés |
 | Mode d’**édition** – Éditeur de texte enrichi | `Ctrl-b` | Gras |
@@ -45,7 +45,7 @@ Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs d
 
 >[!NOTE]
 >
->Les raccourcis clavier de l’éditeur sont toujours actifs, même si les [raccourcis de la console ont été désactivés](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+Les raccourcis clavier de l’éditeur sont toujours actifs, même si les [raccourcis de la console ont été désactivés](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 ## Touches de modification spécifiques aux systèmes d’exploitation {#os-specific-modifier-keys}
 

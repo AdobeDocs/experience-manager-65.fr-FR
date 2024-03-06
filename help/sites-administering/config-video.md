@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 9c97f99e-d6ef-4817-8b2a-201ab22f2b38
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 81%
+source-wordcount: '479'
+ht-degree: 64%
 
 ---
 
 # Configurer le composant vidéo {#configure-the-video-component}
 
-Le [composant vidéo](/help/sites-authoring/default-components-foundation.md#video) vous permet de placer sur votre page une ressource vidéo prédéfinie et prête à l’emploi.
+La variable [Composant vidéo](/help/sites-authoring/default-components-foundation.md#video) vous permet de placer une ressource vidéo prédéfinie prête à l’emploi sur votre page.
 
 Pour qu’un transcodage correct se produise, un administrateur installe FFmpeg séparément. Consultez [Installation de FFmpeg et configuration d’AEM](#install-ffmpeg). De même, les administrateurs [configurent vos profils vidéo](#configure-video-profiles) pour les utiliser avec les éléments HTML5.
 
@@ -81,4 +81,4 @@ Pour **configurer AEM**, procédez comme suit :
 
 >[!NOTE]
 >
->Les modifications apportées aux modèles de workflows prêts à l’emploi ne sont pas conservées lorsque vous mettez à niveau votre instance AEM. Adobe recommande de copier les modèles de workflow modifiés avant de les modifier. Par exemple, copiez le modèle de [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques] prêt à l’emploi avant de modifier l’étape de transcodage FFmpeg dans le modèle de [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques] afin de choisir des noms de vidéo-profil qui existaient avant la mise à niveau. Ensuite, vous pouvez remplacer le nœud `/apps` pour permettre à AEM de récupérer les modifications personnalisées apportées au modèle prêt à l’emploi.
+>Les modifications apportées aux modèles de workflow d’usine par défaut ne sont pas conservées lors de la mise à niveau de votre instance AEM. Adobe recommande de copier les modèles de workflow modifiés avant de les modifier. Par exemple, copiez le fichier d’usine [!UICONTROL Ressource de mise à jour de gestion des actifs numériques] avant de modifier l’étape Transcodage FFmpeg dans le [!UICONTROL Ressource de mise à jour de gestion des actifs numériques] pour sélectionner les noms de profil vidéo qui existaient avant la mise à niveau. Vous pouvez ensuite superposer la variable `/apps` pour permettre AEM récupérer les modifications personnalisées dans le modèle d’usine.

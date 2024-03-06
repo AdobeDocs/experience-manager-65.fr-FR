@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Renditions
 exl-id: 7652663a-11ba-4a78-9a9f-221d514fe992
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: ht
-source-wordcount: '249'
-ht-degree: 100%
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 72%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Lightbox est un type spécial de collection fournissant un accès facile aux ressources. Vous pouvez accéder rapidement à Lightbox pour ajouter ou supprimer des ressources. Il sert de galerie d’images personnelle.
 
-Si vous êtes utilisateur d’[!DNL Adobe Experience Manager Assets], Lightbox est créé automatiquement la première fois que vous vous connectez à l’application. Il est exclusif à votre connexion. Les autres utilisateurs ne peuvent pas accéder à votre Lightbox.
+Si vous êtes utilisateur d’[!DNL Adobe Experience Manager Assets], Lightbox est créé automatiquement la première fois que vous vous connectez à l’application. Il est exclusif à votre connexion. D’autres utilisateurs ne peuvent pas accéder à votre Lightbox.
 
 ## Ajout de ressources à Lightbox {#adding-assets-to-lightbox}
 
@@ -31,7 +31,7 @@ Si vous êtes utilisateur d’[!DNL Adobe Experience Manager Assets], Lightbox e
 
    >[!NOTE]
    >
-   >Bien que Lightbox ressemble à une collection, vous ne pouvez pas effectuer les actions que vous effectuez normalement sur les collections. Par exemple, vous ne pouvez pas supprimer, partager ou afficher des paramètres pour une Lightbox. Vous ne pouvez pas non plus l’ajouter à d’autres collections. Néanmoins, vous pouvez modifier les ressources d’une Lightbox.
+   >Bien que Lightbox ressemble à une collection, vous ne pouvez pas effectuer toutes les actions que vous effectuez normalement sur les collections. Par exemple, vous ne pouvez pas supprimer, partager ou afficher les paramètres d’une Lightbox. En outre, vous ne pouvez pas l’ajouter à d’autres collections. Vous pouvez toutefois modifier les ressources dans une Lightbox.
 
 ## Suppression de ressources de Lightbox {#removing-assets-from-lightbox}
 

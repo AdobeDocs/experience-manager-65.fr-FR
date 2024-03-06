@@ -1,19 +1,19 @@
 ---
 title: Problème d’installation de l’AEM Forms JEE 6.5.15.0 Service Pack dans l’environnement JBoss® Linux®
 description: L’AEM Forms JEE 6.5.15.0 Service Pack n’est pas installé correctement dans l’environnement JBoss® Linux®. Aucune modification de correctif n’est appliquée au serveur d’applications. Ajoutez le fichier RUP_BOM.xml au répertoire XML.
-source-git-commit: 76a3a87408ceb13023737379c20fb44ce5fb180a
-workflow-type: ht
-source-wordcount: '205'
+exl-id: 96ecbe58-a859-4432-a2d8-3d5dc0eaf989
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+workflow-type: tm+mt
+source-wordcount: '204'
 ht-degree: 100%
 
 ---
-
 
 # Problème d’installation de l’AEM Forms 6.5.15.0 JEE Service Pack sur l’environnement JBoss® {#aem-forms-installation-issue-environment}
 
 ## Problème {#issue}
 
-L’AEM Forms JEE 6.5.15.0 Service Pack n’est pas installé correctement dans l’environnement JBoss® Linux®. Dans le fichier `PatchInstallerProcessing[1-9*].log`, l’entrée du journal, `[AEM_Forms_JEE_DIR]/patch/AEMForms-6.5.0-0057/xml/RUP_BOM.xml not found! Assuming this component isn't in the installation. Skipping Processing`, est consignée. Cette entrée indique que l’installation de l’AEM Forms JEE 6.5.15.0 Service Pack échoue.
+L’AEM Forms JEE 6.5.15.0 Service Pack n’est pas installé correctement dans l’environnement JBoss® Linux®. Dans le fichier `PatchInstallerProcessing[1-9*].log`, l’entrée du journal, `[AEM_Forms_JEE_DIR]/patch/AEMForms-6.5.0-0057/xml/RUP_BOM.xml not found! Assuming this component is not in the installation. Skipping Processing`, est consignée. Cette entrée indique que l’installation de l’AEM Forms JEE 6.5.15.0 Service Pack échoue.
 
 ## Application {#applies-to}
 

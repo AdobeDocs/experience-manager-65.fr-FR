@@ -7,10 +7,10 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 7%
+source-wordcount: '343'
+ht-degree: 4%
 
 ---
 
@@ -63,7 +63,7 @@ Sous , **Commentaires** , indiquez si et comment les commentaires des fichiers c
 
   La valeur par défaut est `Members`.
 
-* **Titre affiché**
+* **Titre d’affichage**
 
   Titre descriptif à afficher au-dessus des données, tel que `Trending Content`.
 La valeur par défaut n’est pas le titre.
@@ -92,12 +92,12 @@ La valeur par défaut est 10.
    * `Last 7 days`
    * `Last 30 days`
    * `Last 90 days`
-   * `This year (since Jan 1st)`
+   * `This year (since Jan 1)`
    * `Total`
 
   La valeur par défaut est `Total`.
 
-* **Chemin d’accès au contexte**
+* **Chemin du contexte**
 
   Vous pouvez ainsi répartir l’activité sur un sous-ensemble du site, tel qu’un Blog spécifique.
 La valeur par défaut est l’ensemble du site de la communauté.

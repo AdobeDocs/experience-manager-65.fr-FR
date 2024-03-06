@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1775'
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
@@ -71,7 +71,7 @@ Personnellement, je préfère d&#39;abord les conventions de hiérarchie au syst
 >
 >La structure d’un référentiel de contenu peut également avoir un impact sur les performances. Pour de meilleures performances, le nombre de noeuds enfants associés à des noeuds individuels dans un référentiel de contenu ne doit pas dépasser 1 000.
 >
->Pour plus d’informations, reportez-vous à la section [Quelle quantité de données CRX peut-il traiter ?](https://helpx.adobe.com/fr/experience-manager/kb/CrxLimitation.html)
+>Voir [Quelle quantité de données CRX peut-il gérer ?](https://helpx.adobe.com/fr/experience-manager/kb/CrxLimitation.html)
 
 #### Exemple {#example-2}
 
@@ -89,7 +89,7 @@ Je modéliserais un simple système de blogs comme suit. Au départ, je ne me so
 
 Je pense que l&#39;une des choses qui devient visible est que la structure du contenu est comprise en se basant sur l&#39;exemple sans aucune explication supplémentaire.
 
-Ce qui peut être inattendu dans un premier temps, c&#39;est pourquoi je ne stockerais pas les &quot;commentaires&quot; avec le &quot;post&quot;, ce qui est dû au contrôle d&#39;accès que je voudrais appliquer d&#39;une manière raisonnablement hiérarchique.
+Ce qui est peut-être inattendu au départ, c&#39;est pourquoi je ne stockerais pas les &quot;commentaires&quot; avec le &quot;post&quot;, ce qui est dû au contrôle d&#39;accès que je voudrais appliquer d&#39;une manière raisonnablement hiérarchique.
 
 En utilisant le modèle de contenu ci-dessus, je peux facilement permettre à l’utilisateur &quot;anonyme&quot; de &quot;créer&quot; des commentaires, mais de garder l’utilisateur anonyme en lecture seule pour le reste de l’espace de travail.
 
@@ -97,7 +97,7 @@ En utilisant le modèle de contenu ci-dessus, je peux facilement permettre à l�
 
 #### Explication {#explanation-3}
 
-Si vous n’utilisez pas de méthode `clone()`, `merge()` ou `update()` dans votre application, l’espace de travail unique est probablement la voie à suivre.
+Si vous n’utilisez pas `clone()`, `merge()` ou `update()` dans votre application, un seul espace de travail est probablement la solution.
 
 &quot;Noeuds correspondants&quot; est un concept défini dans la spécification JCR. Essentiellement, il se résume à des noeuds qui représentent le même contenu, dans différents soi-disant espaces de travail.
 
@@ -143,7 +143,7 @@ Utilisez
 /content/myblog/posts/iphone_shipping
 ```
 
-À la place
+Au lieu de
 
 ```xml
 /content/blog[1]/post[1]
@@ -220,7 +220,7 @@ Utilisez :
 /content/myblog/posts/iphone_shipping/attachments/front.jpg
 ```
 
-À la place:
+Au lieu de :
 
 ```xml
 [Blog]

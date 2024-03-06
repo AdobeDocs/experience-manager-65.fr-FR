@@ -1,5 +1,5 @@
 ---
-title: Personnalisation de modèles pour les composants Forms Portal
+title: Personnaliser des modèles pour les composants du portail Formulaires
 description: Découvrez comment l’interface utilisateur d’AEM Forms permet aux utilisateurs d’ajouter des métadonnées aux formulaires. Les métadonnées personnalisées améliorent l’expérience utilisateur dans la liste et la recherche de formulaires.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -7,14 +7,14 @@ topic-tags: customization
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 48%
+source-wordcount: '1246'
+ht-degree: 45%
 
 ---
 
-# Personnalisation de modèles pour les composants Forms Portal{#customizing-templates-for-forms-portal-components}
+# Personnaliser des modèles pour les composants du portail Formulaires{#customizing-templates-for-forms-portal-components}
 
 ## Prérequis {#prerequisites}
 
@@ -88,13 +88,13 @@ Pour inclure une entrée répétable, configurez l’attribut **data-repeatable*
 
 *Dans l’exemple présenté, deux éléments Div se trouvent en haut du modèle personnalisé. La première, avec la classe CSS &quot;__FP_boxes-container&quot;, fonctionne comme un élément conteneur pour les formulaires répertoriés. Le second, avec la classe CSS &quot;__FP_boxes&quot;, est un modèle pour les entités de base, dans ce cas un formulaire. L’attribut **data-repeatable**qui figure dans l’élément Div a la valeur **true**.*
 
-Chaque espace réservé possède un jeu de métadonnées prêtes à l’emploi exclusif. Pour afficher des métadonnées personnalisées à un emplacement spécifique du formulaire, ajoutez la **propriété ${metadata_prop}** à cet emplacement.
+Chaque espace réservé dispose d’un jeu de métadonnées prêt à l’emploi exclusif. Pour afficher des métadonnées personnalisées à un emplacement spécifique du formulaire, ajoutez la **propriété ${metadata_prop}** à cet emplacement.
 
 *Dans cet exemple, la propriété de métadonnées est utilisée sur plusieurs instances. Elle est utilisée par exemple de façon adéquate dans **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**et **path**.*
 
 ## Métadonnées prêtes à l’emploi {#out-of-the-box-metadata}
 
-Plusieurs composants de Forms Portal fournissent des ensembles exclusifs de métadonnées prêtes à l’emploi que vous pouvez utiliser pour les listes.
+Plusieurs composants de Forms Portal fournissent des jeux exclusifs de métadonnées prêtes à l’emploi que vous pouvez utiliser pour les listes.
 
 ### Composant Search &amp; Lister {#search-amp-lister-component}
 
@@ -103,7 +103,7 @@ Plusieurs composants de Forms Portal fournissent des ensembles exclusifs de mét
 * **description**: description du formulaire
 * **formUrl** : URL permettant d’effectuer le rendu du formulaire au format HTML.
 * **pdfUrl** : URL permettant d’effectuer le rendu du formulaire au format PDF.
-* **assetType** : type de la ressource. Les valeurs valides sont les suivantes : **Formulaire**,**Formulaire PDF**, **Imprimer le formulaire** et **Formulaire adaptatif**.
+* **assetType** : type de la ressource. Les valeurs valides incluent : **Formulaire**, **Formulaire de PDF**, **Formulaire d’impression**, et **Formulaire adaptatif**
 
 * **htmlStyle** et **pdfStyle** : style d’affichage des icônes HTML et PDF utilisées pour le rendu. Les valeurs valides sont les suivantes : « **__FP_display_none** » ou vide.
 
@@ -115,7 +115,7 @@ Plusieurs composants de Forms Portal fournissent des ensembles exclusifs de mét
 
 Prise en charge de la localisation et du tri et utilisation des propriétés de configuration de l’interface utilisateur (Recherche et énumérateur uniquement) :
 
-1. **Prise en charge de la localisation** : pour localiser du texte statique, utilisez l’attribut `${localize-YOUR_TEXT}` et rendez la valeur localisée disponible, si elle ne l’est déjà.
+1. **Aide à la localisation**: pour localiser du texte statique, utilisez l’attribut . `${localize-YOUR_TEXT}` et rendre la valeur localisée disponible, le cas échéant.
    *Dans l’exemple présenté, les attributs `${localize-Apply}` et `${localize-Download}` sont utilisés pour localiser les termes Apply et Download.*
 
 1. **Prise en charge du tri**: cliquez sur l’élément HTML pour trier les résultats de la recherche. Pour mettre en oeuvre le tri dans une mise en page de tableau, ajoutez l’attribut &quot;data-sortKey&quot; sur l’en-tête particulier du tableau. Ajoutez en outre sa valeur en tant que métadonnées pour lesquelles vous souhaitez effectuer un tri.
@@ -169,17 +169,17 @@ Par exemple, pour l’en-tête &quot;Title&quot; dans la vue Grille, la valeur d
 ## Conseils, astuces et problèmes connus {#tips-tricks-and-known-issues}
 
 1. N’utilisez pas de guillemet simple (’) dans un modèle personnalisé.
-1. Pour les métadonnées personnalisées, stockez cette propriété uniquement sur le nœud **jcr:content/metadata**. Si vous l’enregistrez à un autre emplacement, le portail Formulaires ne peut pas afficher les métadonnées.
+1. Pour les métadonnées personnalisées, stockez cette propriété uniquement sur le nœud **jcr:content/metadata**. Si vous le stockez à un autre emplacement, Forms Portal ne peut pas afficher les métadonnées.
 1. Vérifiez que le nom d’une métadonnée personnalisée ou existante ne contient pas de signe deux-points ( : ). S’il en contient un, vous ne pouvez pas l’afficher dans l’interface utilisateur.
 1. L’attribut **data-repeatable** n’a aucune importance pour un composant **Link**. Adobe recommande d’éviter l’utilisation de cette propriété dans le modèle d’un composant Lien.
 
 ## Articles connexes
 
-* [Activer des composants Portail Formulaires](/help/forms/using/enabling-forms-portal-components.md)
-* [Page Créer un portail Forms](/help/forms/using/creating-form-portal-page.md)
+* [Activer des composants du portail Formulaires](/help/forms/using/enabling-forms-portal-components.md)
+* [Créer une page du portail Formulaires](/help/forms/using/creating-form-portal-page.md)
 * [Affichage de la liste des formulaires sur une page Web à l’aide d’API](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Utiliser le composant Brouillons et Envois](/help/forms/using/draft-submission-component.md)
 * [Personnaliser le stockage des brouillons de formulaires et des formulaires envoyés](/help/forms/using/draft-submission-component.md)
 * [Exemple d’intégration du composant brouillons et envois à la base de données](/help/forms/using/integrate-draft-submission-database.md)
-* [Personnalisation de modèles pour les composants Forms Portal](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [Personnaliser des modèles pour les composants du portail Formulaires](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Présentation de la publication de formulaires sur un portail](/help/forms/using/introduction-publishing-forms.md)

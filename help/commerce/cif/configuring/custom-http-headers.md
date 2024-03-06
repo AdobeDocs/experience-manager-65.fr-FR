@@ -2,10 +2,10 @@
 title: En-têtes HTTP personnalisés
 description: Découvrez comment configurer des en-têtes HTTP personnalisés dans Adobe Experience Manager Commerce.
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 82%
+source-wordcount: '267'
+ht-degree: 74%
 
 ---
 
@@ -34,7 +34,7 @@ Les composants qui utilisent la configuration de service cloud ci-dessus envoien
 
 ## Restrictions {#restrictions}
 
-Bien que le service permette de définir des noms d’en-tête, y compris les noms standard, ils ne sont pas disponibles pour configuration. En d’autres termes, vous ne pouvez pas remplacer les en-têtes HTTP standard à l’aide de cette fonctionnalité. Vous trouverez une liste de noms d’en-tête restreints [ici](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/Headers). En outre, deux en-têtes supplémentaires ne peuvent pas être utilisés :
+Bien que le service permette de définir des noms d’en-tête, y compris les noms standard, ils ne sont pas disponibles pour la configuration. En d’autres termes, vous ne pouvez pas remplacer les en-têtes HTTP standard à l’aide de cette fonctionnalité. Vous trouverez une liste de noms d’en-tête restreints [ici](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/Headers). En outre, deux en-têtes supplémentaires ne peuvent pas être utilisés :
 
 * « Store » : utilisé par CIF pour identifier la boutique Adobe Commerce.
 * « Preview-Version » : utilisé par CIF pour récupérer les produits intermédiaires.

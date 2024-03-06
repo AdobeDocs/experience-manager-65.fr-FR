@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4102'
-ht-degree: 80%
+source-wordcount: '4104'
+ht-degree: 79%
 
 ---
 
@@ -97,9 +97,9 @@ Vous pouvez appeler des scripts personnalisés avant d’envoyer un formulaire. 
 
 Commencez par définir une fonction de rappel appelée avant d’envoyer le formulaire, où le nom de la fonction est `_user_onsubmit`. On suppose que la fonction ne renvoie aucune exception ou que, dans ce cas, l’exception est ignorée. Il est recommandé de placer la fonction JavaScript dans la section HEAD du fichier HTML. Vous pouvez toutefois la déclarer n’importe où avant la fin des balises de script qui incluent `xfasubset.js`.
 
-Lorsque le serveur de formulaires effectue le rendu d’un fichier XDP contenant une liste déroulante, il crée deux champs de texte masqués en plus de créer la liste déroulante. Ces champs de texte stockent les données de la liste déroulante (l’un stocke le nom d’affichage des options et l’autre stocke la valeur des options). Par conséquent, chaque fois qu’un utilisateur envoie le formulaire, toutes les données de la liste déroulante sont envoyées. Supposons que vous ne souhaitiez pas envoyer autant de données à chaque fois. Vous pouvez alors écrire un script personnalisé permettant de désactiver cela. Par exemple : le nom de la liste déroulante est `drpOrderedByStateProv` et est placé sous l’en-tête de sous-formulaire. Le nom de l’élément d’entrée HTML est `header[0].drpOrderedByStateProv[0]`. Les noms des champs masqués qui stockent et envoient les données de la liste déroulante sont les suivants : `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`.
+Lorsque le serveur de formulaires effectue le rendu d’un fichier XDP contenant une liste déroulante, il crée deux champs de texte masqués en plus de créer la liste déroulante. Ces champs de texte stockent les données de la liste déroulante (l’un stocke le nom d’affichage des options et l’autre stocke la valeur des options). Par conséquent, chaque fois qu’un utilisateur envoie le formulaire, toutes les données de la liste déroulante sont envoyées. En supposant que vous ne souhaitiez pas envoyer autant de données à chaque fois, vous pouvez écrire un script personnalisé pour le désactiver. Par exemple : le nom de la liste déroulante est `drpOrderedByStateProv` et est placé sous l’en-tête de sous-formulaire. Le nom de l’élément d’entrée HTML est `header[0].drpOrderedByStateProv[0]`. Les noms des champs masqués qui stockent et envoient les données de la liste déroulante sont les suivants : `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`.
 
-Vous pouvez suivre la procédure suivante pour désactiver ces éléments d’entrée si vous ne souhaitez pas publier les données. `var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature function _user_onsubmit() { var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]"); elems[0].disabled = true; elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]"); elems[0].disabled = true; }`
+Vous pouvez désactiver ces éléments d’entrée de la manière suivante si vous ne souhaitez pas publier les données. `var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature function _user_onsubmit() { var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]"); elems[0].disabled = true; elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]"); elems[0].disabled = true; }`
 
 ```java
 header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]

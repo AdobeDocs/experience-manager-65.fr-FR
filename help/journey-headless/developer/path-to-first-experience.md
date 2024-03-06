@@ -2,10 +2,10 @@
 title: Premiers pas vers votre première expérience d’utilisation d’AEM découplé
 description: Dans cette partie du parcours de développement découplé AEM, vous découvrirez les étapes de mise en œuvre de votre première expérience découplée dans AEM, notamment des considérations concernant sa planification, et découvrirez également les bonnes pratiques pour rendre votre parcours aussi fluide que possible.
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 93%
+source-wordcount: '1951'
+ht-degree: 98%
 
 ---
 
@@ -68,9 +68,9 @@ Au cours de l’étape de développement, il est recommandé de travailler avec 
 
 ### Coopération entre équipe de développement et auteurs de contenu {#cooperation}
 
-L’équipe de développement a besoin d’un environnement de développement AEM configuré avec les modèles de contenu renseignés. Le développeur développe le client qui consommera du contenu découplé AEM, car les auteurs du contenu continuent à créer du contenu. C’est pourquoi les définitions d’API sont très importantes. En utilisant le SDK AEM, le développeur peut créer un point d’extension de test afin de pouvoir créer des tests client et unitaires pour s’assurer que le client est en mesure de générer correctement le contenu.
+L’équipe de développement a besoin d’un environnement de développement AEM configuré avec les modèles de contenu renseignés. Le développeur développe le client qui consommera du contenu découplé AEM, car les auteurs du contenu continuent à créer du contenu. C’est pourquoi les définitions d’API sont très importantes. En utilisant le SDK AEM, le développeur peut créer un hook de test afin de pouvoir créer des tests client et unitaires pour s’assurer que le client est en mesure d’effectuer correctement le rendu du contenu.
 
-Les auteurs de contenu créent du contenu en fonction des modèles de contenu définis dans l’environnement d’évaluation. À l’aide de l’outil de création de fragments de contenu, l’auteur crée un fragment de contenu ou modifie un fragment de contenu existant. Avant de le publier, l’auteur peut prévisualiser l’aspect qu’il aura dans le client en travaillant avec le développeur pour pousser le modèle de contenu en développement ou configurer un environnement de développement uniquement pour que les auteurs puissent prévisualiser l’aspect que le fragment de contenu aura dans le client.
+Les personnes chargées de la création de contenu créent du contenu en fonction des modèles de contenu définis dans l’environnement d’évaluation. À l’aide de l’outil de création de fragments de contenu, l’auteur crée un fragment de contenu ou en modifie un déjà existant. Avant de le publier, l’auteur peut prévisualiser l’aspect qu’il aura dans le client en travaillant avec le développeur pour pousser le modèle de contenu en développement ou configurer un environnement de développement uniquement pour que les auteurs puissent prévisualiser l’aspect que le fragment de contenu aura dans le client.
 
 ## Configuration {#setup}
 
@@ -94,7 +94,7 @@ Voici un aperçu de ce qui est nécessaire pour mettre en œuvre votre première
 
 ## Bonnes pratiques {#best-practices}
 
-Un projet découplé doit son succès non seulement à la technologie mise en œuvre, mais aussi à sa bonne planification et à sa bonne gouvernance. Vous trouverez ci-dessous plusieurs bonnes pratiques que les auteurs et les développeurs de contenu doivent retenir lors de la planification de votre projet.
+Un projet découplé doit son succès non seulement à la technologie mise en œuvre, mais aussi à sa bonne planification et à sa bonne gouvernance. Vous trouverez ci-dessous un certain nombre de bonnes pratiques que les auteurs de contenu et l’équipe de développement doivent garder à l’esprit au fur et à mesure que vous planifiez votre projet.
 
 ### Organisation de votre contenu {#organizing-content}
 
@@ -106,7 +106,7 @@ Un projet découplé doit son succès non seulement à la technologie mise en œ
 * Regroupez les contenus similaires dans un dossier.
    * Il est plus probable qu’un auteur de contenu copie et colle du contenu existant pour créer du contenu. C’est pourquoi il sera plus efficace de le faire dans le même dossier.
    * AEM permet de définir des modèles autorisés par dossier afin que le bouton **Créer** n’affiche que les modèles pris en charge à cet emplacement.
-* La création de fragments de contenu en ligne par l’éditeur de fragments de contenu peut être simplifiée si le dossier racine est défini dans le modèle. Le praticien n’a alors pas à choisir un emplacement, mais doit simplement fournir un nom et peut commencer à modifier la nouvelle référence.
+* La création de fragments de contenu en ligne par l’éditeur de fragments de contenu peut être simplifiée si le dossier racine est défini dans le modèle. Le professionnel ou la professionnelle n’a alors pas à choisir un emplacement, mais doit simplement fournir un nom et peut commencer à modifier la nouvelle référence.
 
 ### Création de contenu {#authoring}
 

@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: f37f239f-065b-44f8-acb1-93485b713b49
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Les composants de page autorisés, qui souhaitent utiliser AngularJS, ont un éq
 
 Dans les bibliothèques clientes, le développeur dispose de quelques options permettant de les placer dans le référentiel. Le modèle suivant est proposé à titre indicatif, mais ce n&#39;est pas une exigence difficile.
 
-Si votre code côté client peut être autonome et ne correspond pas à un composant spécifique de votre application (ce qui signifie qu’il peut être réutilisé dans d’autres applications), Adobe recommande de le stocker dans /etc/clientlibs/&lt;brand name=&quot;&quot;>/&lt;lib name=&quot;&quot;>. D’un autre côté, si la bibliothèque cliente est spécifique à une seule application, vous pouvez l’imbriquer en tant qu’enfant du noeud de conception de votre application ; /etc/designs/phonegap/&lt;brand name=&quot;&quot;>/&lt;app name=&quot;&quot;>/clientlibs. N’utilisez pas la catégorie de cette bibliothèque cliente avec d’autres bibliothèques, mais incorporez d’autres bibliothèques si nécessaire. En suivant ce modèle, le développeur n’a plus à ajouter de nouvelles configurations de synchronisation de contenu chaque fois qu’une bibliothèque cliente est ajoutée à l’application, mais se contente de mettre à jour la propriété &quot;embeds&quot; de la bibliothèque cliente de conception de l’application. Par exemple, observez le noeud de configuration de synchronisation de contenu clientlibs-all à l’adresse /content/phonegap/geometrixx-outdoors/en/jcr:content/page-app/app-config/clientlibs-all.
+Si votre code côté client peut être autonome et ne correspond pas à un composant spécifique de votre application (c’est-à-dire qu’il peut être réutilisé dans d’autres applications), Adobe recommande de le stocker dans /etc/clientlibs/.&lt;brand name=&quot;&quot;>/&lt;lib name=&quot;&quot;>. D’un autre côté, si la bibliothèque cliente est spécifique à une seule application, vous pouvez l’imbriquer en tant qu’enfant du noeud de conception de votre application ; /etc/designs/phonegap/&lt;brand name=&quot;&quot;>/&lt;app name=&quot;&quot;>/clientlibs. N’utilisez pas la catégorie de cette bibliothèque cliente avec d’autres bibliothèques, mais incorporez d’autres bibliothèques si nécessaire. En suivant ce modèle, le développeur n’a plus à ajouter de nouvelles configurations de synchronisation de contenu chaque fois qu’une bibliothèque cliente est ajoutée à l’application, mais se contente de mettre à jour la propriété &quot;embeds&quot; de la bibliothèque cliente de conception de l’application. Par exemple, observez le noeud de configuration de synchronisation de contenu clientlibs-all à l’adresse /content/phonegap/geometrixx-outdoors/en/jcr:content/page-app/app-config/clientlibs-all.
 
 Si votre code côté client est étroitement lié à un composant spécifique, placez ce code dans une bibliothèque cliente imbriquée sous l’emplacement du composant dans /apps/ et incorporez sa catégorie dans la bibliothèque cliente &quot;design&quot; de votre application.
 

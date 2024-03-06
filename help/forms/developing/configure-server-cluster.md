@@ -2,10 +2,10 @@
 title: Comment configurer un cluster de serveurs AEM Forms on JEE et résoudre les problèmes associés ?
 description: Découvrez comment configurer un cluster de serveurs d’Adobe Experience Manager (AEM) Forms on JEE et résoudre les problèmes associés.
 exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
-workflow-type: ht
-source-wordcount: '3959'
-ht-degree: 100%
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+workflow-type: tm+mt
+source-wordcount: '3945'
+ht-degree: 98%
 
 ---
 
@@ -147,7 +147,7 @@ Sur l’autre nœud, AP-HP7 :
 [info 2011/08/05 09:28:10.128 EDT GemfireCacheAdapter <server.startup : 0> tid=0x64] DistributionManager ap-hp7(2821)<v1>:19498/59136 started on 239.192.81.1[33456]. There were 1 other DMs. others: [ap-hp8(4268)<v0>:18763/56449]
 ```
 
-**Et si GemFire trouve des nœuds qu’il ne devrait pas ?**
+**Que faire si GemFire trouve des noeuds qu’il ne devrait pas ?**
 
 Chaque cluster distinct qui partage un réseau d’entreprise doit utiliser un ensemble distinct de services de localisation TCP, si certains sont utilisés, ou un numéro de port UDP distinct si une configuration UDP à diffusion multiple est utilisée. Comme la découverte automatique UDP est la configuration par défaut d’AEM Forms on JEE et que le même port par défaut 33456 est utilisé par plusieurs clusters, il est possible que les clusters qui ne doivent pas essayer de communiquer le fassent de manière inattendue. Par exemple, les clusters de production et d’assurance qualité doivent rester distincts, mais peuvent se connecter l’un à l’autre par le biais de la multidiffusion UDP.
 
@@ -209,7 +209,7 @@ Sur les systèmes UNIX®, les configurations NFS choisissent souvent par défaut
 Pour assurer le bon fonctionnement dʼun cluster, la même base de données doit être partagée par tous les membres du cluster. Les risques dʼerreur sont les suivants :
 
 * définir accidentellement les IDP_DS, EDC_DS, AdobeDefaultSA_DS ou dʼautres sources de données requises de manière différente sur des nœuds de cluster distincts, de sorte que les nœuds pointent vers des bases de données différentes
-* configurer accidentellement plusieurs nœuds distincts pour partager une base de données alors qu’ils ne le devraient pas
+* définition accidentelle de plusieurs noeuds distincts pour partager une base de données alors qu’ils ne le devraient pas.
 
 En fonction de votre serveur d’applications, il peut être naturel que la connexion JDBC soit définie à lʼéchelle du cluster, de sorte que des définitions différentes ne sont pas possibles sur des nœuds différents. Sur JBoss®, cependant, il est tout à fait possible de configurer les éléments de sorte qu’une source de données, telle que IDP_DS, désigne une base de données sur le nœud 1, mais désigne autre chose sur le nœud 2.
 
@@ -244,7 +244,7 @@ and ones like:
 
 ### Planificateur Quartz {#quartz-scheduler}
 
-Généralement, l’utilisation par AEM Forms on JEE du planificateur interne Quartz dans un cluster permet de suivre automatiquement la configuration globale du cluster d’AEM Forms on JEE. Toutefois, en raison dʼun bug (#2794033), la configuration automatique de Quartz en cluster échoue si les localisateurs TCP sont utilisés pour Gemfire au lieu de la découverte automatique à diffusion multiple. Dans ce cas, Quartz s’exécute mal en mode non cluster. Cette situation crée des blocages et une corruption des données dans les tableaux Quartz. Les effets secondaires sont pires dans la version 8.2.x que dans la 9.0, car Quartz nʼest pas autant utilisé, mais il est toujours présent.
+Généralement, l’utilisation par AEM Forms on JEE du planificateur interne Quartz dans un cluster permet de suivre automatiquement la configuration globale du cluster d’AEM Forms on JEE. Toutefois, en raison dʼun bug (#2794033), la configuration automatique de Quartz en cluster échoue si les localisateurs TCP sont utilisés pour Gemfire au lieu de la découverte automatique à diffusion multiple. Dans ce cas, Quartz s’exécute mal en mode non cluster. Cette situation crée des blocages et une corruption des données dans les tableaux Quartz. Les effets secondaires sont pires dans la version 8.2.x que 9.0, car Quartz n’est pas autant utilisé, mais est toujours là.
 
 Les correctifs sont disponibles comme suit pour ce problème : 8.2.1.2 QF2.143 et 9.0.0.2 QF2.44.
 
@@ -274,7 +274,7 @@ Si Quartz est configuré pour s’exécuter en tant que nœud unique, mais qu’
 
 ```xml
 [1/20/11 10:40:57:584 EST] 00000035 ErrorLogger   E org.quartz.core.ErrorLogger schedulerError An error occured while marking executed job complete. job= 'Asynchronous.TaskFormDataSaved:12955380518320.5650479324757354'
- org.quartz.JobPersistenceException: Couldn't remove trigger: ORA-00060: deadlock detected while waiting for resource  [See nested exception: java.sql.SQLException: ORA-00060: deadlock detected while waiting for resource ]
+ org.quartz.JobPersistenceException: Could not remove trigger: ORA-00060: deadlock detected while waiting for resource  [See nested exception: java.sql.SQLException: ORA-00060: deadlock detected while waiting for resource ]
         at org.quartz.impl.jdbcjobstore.JobStoreSupport.removeTrigger(JobStoreSupport.java:1405)
         at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggeredJobComplete(JobStoreSupport.java:2888)
         at org.quartz.impl.jdbcjobstore.JobStoreSupport$38.execute(JobStoreSupport.java:2872)

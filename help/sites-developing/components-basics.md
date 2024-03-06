@@ -7,10 +7,10 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4907'
-ht-degree: 66%
+source-wordcount: '4843'
+ht-degree: 65%
 
 ---
 
@@ -114,7 +114,7 @@ Utilisez les outils suivants pour déplacer vos composants vers l’instance de 
    * Le système de paragraphe est un composeur majeur d’un site Web car il gère une liste de paragraphes. Il est utilisé pour contenir et structurer les composants individuels qui contiennent le contenu réel.
    * Vous pouvez créer, déplacer, copier et supprimer des paragraphes dans le système de paragraphes.
    * Vous pouvez également sélectionner les composants à utiliser dans un système de paragraphes spécifique.
-   * Il existe différents systèmes de paragraphes disponibles dans une instance standard (par exemple, `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`).
+   * Plusieurs systèmes de paragraphes sont disponibles dans une instance standard (par exemple, `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`).
 
 ## Structure {#structure}
 
@@ -544,13 +544,13 @@ Les composants d’AEM sont soumis à trois hiérarchies différentes :
 
 ## Comportement de modification {#edit-behavior}
 
-Cette section explique comment configurer le comportement de modification d’un composant. Cela inclut des attributs tels que les actions disponibles pour le composant, les caractéristiques de l’éditeur statique et les écouteurs associés aux événements sur le composant.
+Cette section explique comment configurer le comportement de modification d’un composant. Cela inclut les attributs tels que les actions disponibles pour le composant, les caractéristiques de l’éditeur statique et les écouteurs liés aux événements sur le composant.
 
 La configuration est commune aux interfaces utilisateur tactile et classique, avec toutefois certaines différences spécifiques.
 
 Le comportement de modification d’un composant est configuré en ajoutant un nœud `cq:editConfig` de type `cq:EditConfig` en dessous du nœud de composant (de type `cq:Component`) et en ajoutant des propriétés spécifiques et des nœuds enfants. Les propriétés et les nœuds enfants suivants sont disponibles :
 
-* Propriétés du nœud [`cq:editConfig`](#configuring-with-cq-editconfig-properties) :
+* [`cq:editConfig` propriétés du noeud](#configuring-with-cq-editconfig-properties):
 
    * `cq:actions` (`String array`) : définit les actions pouvant être effectuées sur le composant.
    * `cq:layout` ( `String`) : définit la manière dont le composant est modifié dans l’IU classique.
@@ -602,7 +602,7 @@ Il existe de nombreuses configurations dans le référentiel. Vous pouvez facile
 
 ### Espaces réservés de composant {#component-placeholders}
 
-Les composants doivent toujours générer du code HTML visible par l’auteur, même si le composant ne comporte aucun contenu, Sinon, il risque de disparaître visuellement de l’interface de l’éditeur, ce qui le rend techniquement présent mais invisible sur la page et dans l’éditeur. Dans ce cas, les auteurs ne pourront pas sélectionner et interagir avec le composant vide.
+Les composants doivent toujours générer du code HTML visible par l’auteur, même si le composant ne comporte aucun contenu, Sinon, il risque de disparaître visuellement de l’interface de l’éditeur, ce qui le rend techniquement présent mais invisible sur la page et dans l’éditeur. Dans ce cas, les auteurs ne peuvent pas sélectionner et interagir avec le composant vide.
 
 Pour cette raison, les composants doivent générer un espace réservé tant qu’ils n’affichent pas de sortie visible lorsque la page est rendue dans l’éditeur de page (lorsque le WCM est en mode `edit` ou `preview`).
 L’annotation HTML type d’un espace réservé est la suivante :

@@ -2,7 +2,7 @@
 title: Comment mettre en ligne votre application découplée
 description: Dans cette partie du Parcours de développement AEM découplé, apprenez à déployer une application découplée.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 98%
@@ -149,7 +149,7 @@ Si vous êtes un client ou une cliente AMS utilisant Cloud Manager, une fois qu
 
 Une fois les mises à jour transférées vers Cloud Manager, elles peuvent être déployées vers AEM à l’aide du [pipeline CI/CD de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=fr).
 
-<!-- Can't find a parallel link -->
+<!-- Cannot find a parallel link -->
 <!--
 You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
 -->
@@ -167,7 +167,7 @@ Pour que les utilisateurs disposent de la meilleure expérience possible lorsqu�
       * la vérification du nombre d’utilisateurs et d’utilisatrices, de requêtes et de chargements
 * l’accès aux rapports de performances spécifiques à l’application et à la surface.
    * Une fois le serveur ouvert, vérifiez si les mesures générales apparaissent en vert/orange/rouge, puis identifiez les problèmes spécifiques à l’application.
-   * Ouvrir les mêmes rapports ci-dessus filtrés dans l’application ou l’espace (par exemple, bureau Photoshop, paywall)
+   * Ouvrez les rapports ci-dessus filtrés par application ou par espace (par exemple, la version bureau de Photoshop, un paywall).
    * Utilisez des API de journal Splunk pour accéder aux performances du service et de l’application.
    * Contactez le service clientèle si d’autres problèmes se produisent.
 
@@ -227,5 +227,5 @@ Si vous recherchez cette flexibilité pour votre projet, consultez la section fa
    * Configuration du [CDN Rewriter](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=fr) (*recherchez « CDN Rewriter »*)
 
 * [Présentation d’AEM en tant que CMS découplé](/help/sites-developing/headless/introduction.md)
-* [Portail de développement d’AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
-* [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
+* [Portail de développement d’AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* [Tutoriels pour le découplage dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)

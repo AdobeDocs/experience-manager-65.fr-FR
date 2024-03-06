@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 970e0a97d531d4cbae76119960972e54ef65dda0
 workflow-type: tm+mt
-source-wordcount: '6076'
+source-wordcount: '6074'
 ht-degree: 93%
 
 ---
@@ -612,7 +612,7 @@ En mettant en œuvre ce service, veillez à définir la propriété **service.ra
 | **Nom** | **Description** | **Comportement par défaut** |
 |---|---|---|
 | Authenticator | Fournit les informations d’authentification à AEM | Utilise un utilisateur technique configurable pour la création et la publication. SSO peut également être utilisé. |
-| HTMLRewriter | Réécrit des liens, des images, etc. | Réécrit les liens AEM vers des liens de portail, peut être étendu par un UrlMapper et un TextMapper. |
+| HTMLRewriter | Réécrit les liens et les images | Réécrit les liens AEM vers des liens de portail, peut être étendu par un UrlMapper et un TextMapper. |
 | HttpClientService | Gère toutes les connexions http | Mise en œuvre standard |
 | LocaleHandler | Gère les informations sur les paramètres régionaux | Réécrit un lien vers le contenu par rapport aux paramètres régionaux. |
 | LocaleDetector | Détecte les paramètres régionaux de l’utilisateur ou de l’utilisatrice. | Utilise les paramètres régionaux fournis par le portail. |

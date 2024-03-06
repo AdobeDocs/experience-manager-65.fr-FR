@@ -7,10 +7,10 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 7%
+source-wordcount: '690'
+ht-degree: 0%
 
 ---
 
@@ -26,8 +26,8 @@ La variable `categories` La valeur de propriété donnée à cette bibliothèque
 
 1. Clic droit `an-scf-sandbox` et sélectionnez `Create Node`
 
-   * Nom : `clientlibs`
-   * Type : `cq:ClientLibraryFolder`
+   * Nom : `clientlibs`
+   * Type : `cq:ClientLibraryFolder`
 
 1. Cliquez sur **OK**
 
@@ -36,14 +36,14 @@ La variable `categories` La valeur de propriété donnée à cette bibliothèque
 Dans le **Propriétés** pour le nouvel onglet `clientlibs` , saisissez le **categories** property:
 
 * Nom : **categories**
-* Type :**chaîne**
+* Type : **Chaîne**
 * Valeur : **apps.an-scf-sandbox**
 * Cliquez sur **Ajouter**
 * Cliquez sur **Enregistrer tout**
 
 Remarque : la préface de la valeur categories est &quot;apps&quot;. est une convention permettant d’identifier &quot;l’application propriétaire&quot; comme se trouvant dans le dossier /apps, et non /libs. IMPORTANT : Ajouter un espace réservé `js.tx`t et **`css.txt`** fichiers . (Il ne s’agit pas officiellement d’un cq:ClientLibraryFolder sans ces éléments.)
 
-1. Faites un clic-droit **`/etc/designs/an-scf-sandbox/clientlibs`**
+1. Clic droit **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Sélectionner **Créer un fichier...**
 1. Entrée **Nom :** `css.txt`
 1. Sélectionner **Créer un fichier...**
@@ -81,8 +81,8 @@ Si vous utilisez une seule fonction sur une page, vous pouvez inclure la bibliot
 
 Dans ce cas, incluez-les toutes et ainsi, les clientlibs SCF les plus basiques qui sont les clientlibs de création sont préférées :
 
-* Nom : **`embed`**
-* Type : **`String`**
+* Nom : **`embed`**
+* Type : **`String`**
 * Cliquez sur **`Multi`**
 * Valeur : **`cq.social.scf`**
 
@@ -151,12 +151,12 @@ Chargez votre site web dans le navigateur et vérifiez si l’arrière-plan n’
 
 À ce stade, il existe un environnement de test minimaliste. Il peut être utile d’enregistrer en tant que package afin que, lors de la lecture, si votre référentiel est corrompu et que vous souhaitez recommencer, vous puissiez désactiver votre serveur. Renommez ou supprimez ensuite le dossier crx-quickstart/, activez votre serveur, téléchargez et installez ce package enregistré, sans avoir à répéter ces étapes les plus élémentaires.
 
-Ce module existe sur la variable [Création d’un exemple de page](/help/communities/create-sample-page.md) tutoriel pour ceux qui ne peuvent pas attendre d’entrer et de commencer à jouer !...
+Ce module existe sur la variable [Création d’un exemple de page](/help/communities/create-sample-page.md) tutoriel à l’intention des personnes qui ne peuvent pas attendre d’accéder à et de commencer à lire.
 
 Pour créer un package :
 
 * Dans CRXDE Lite, cliquez sur le [Icône Package](https://localhost:4502/crx/packmgr/)
-* Cliquez sur **Créer un package**
+* Cliquez sur **Créer un module**
 
    * Nom du module : an-scf-sandbox-minimal-pkg
    * Version : 0.1
@@ -179,6 +179,6 @@ Pour créer un package :
 
    * Cliquez sur **Enregistrer**
 
-* Cliquez sur **Concevoir**
+* Cliquez sur **Build**
 
 Maintenant, vous pouvez sélectionner **Télécharger** pour l’enregistrer sur le disque et **Télécharger le module** ailleurs, puis sélectionnez **Plus > Répliquer** pour envoyer l’environnement de test vers une instance de publication localhost afin de développer le domaine de votre environnement de test.

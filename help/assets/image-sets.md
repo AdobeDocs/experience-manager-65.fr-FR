@@ -9,10 +9,10 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+source-git-commit: 886edbf0e98f5cdee176aaa0a7dffcf18b1a7cc2
 workflow-type: tm+mt
-source-wordcount: '2196'
-ht-degree: 85%
+source-wordcount: '2274'
+ht-degree: 82%
 
 ---
 
@@ -40,6 +40,8 @@ Lorsque vous créez une visionneuse d’images, Adobe recommande les bonnes prat
 | --- | --- | --- |
 | Nombre de ressources en double par ensemble | Aucun doublon | 20 |
 | Nombre maximal d’images par ensemble | 5 à 10 images par ensemble | 1000 |
+
+‡ La bonne pratique consiste à ne pas avoir de ressources en double dans un ensemble. La limite est de 20 doublons pour une seule ressource. Si vous ajoutez un autre doublon pour cette ressource (dans cet ensemble), la requête renvoie une erreur ou ignore le doublon.
 
 Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
 
@@ -143,6 +145,8 @@ Lorsque vous créez une visionneuse d’images, Adobe recommande les bonnes prat
 | --- | --- | --- |
 | Nombre de ressources en double par ensemble | Aucun doublon | 20 |
 | Nombre maximal d’images par ensemble | 5 à 10 images par ensemble | 1000 |
+
+‡ La bonne pratique consiste à ne pas avoir de ressources en double dans un ensemble. La limite est de 20 doublons pour une seule ressource. Si vous ajoutez un autre doublon pour cette ressource (dans cet ensemble), la requête renvoie une erreur ou ignore le doublon.
 
 Consultez également la section [Limites de Dynamic Media](/help/assets/limitations.md).
 

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 61%
+source-wordcount: '913'
+ht-degree: 52%
 
 ---
 
@@ -73,7 +73,7 @@ Dans le menu **Fichier** de Brackets, choisissez **Ouvrir le dossier...** et cho
 
 >[!NOTE]
 >
->Si votre projet n’a pas de package de contenu, vous pouvez essayer d’appliquer l’[exemple HTL TodoMVC](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). Sur GitHub, cliquez sur **Télécharger le fichier ZIP**, extrayez les fichiers localement et, comme indiqué ci-dessus, ouvrez le dossier `jcr_root` dans Brackets. Suivez ensuite les étapes ci-dessous pour configurer les **paramètres du projet** et enfin téléchargez le package entier vers votre instance de développement AEM en **exportant le package de contenu** comme indiqué plus bas dans la section Synchronisation complète des packages de contenu du projet.
+>Si vous n’avez pas de votre propre projet avec un module de contenu, vous pouvez essayer la méthode [Exemple HTL TodoMVC](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). Sur GitHub, cliquez sur **Télécharger le fichier ZIP**, extrayez les fichiers localement et, comme indiqué ci-dessus, ouvrez le dossier `jcr_root` dans Brackets. Suivez ensuite les étapes ci-dessous pour configurer les **paramètres du projet** et enfin téléchargez le package entier vers votre instance de développement AEM en **exportant le package de contenu** comme indiqué plus bas dans la section Synchronisation complète des packages de contenu du projet.
 >
 >Après ces étapes, vous devriez être en mesure d’accéder à l’URL `/content/todo.html` sur votre instance de développement AEM, d’apporter des modifications au code dans Brackets et de voir comment, après une actualisation dans le navigateur Web, les modifications ont été immédiatement synchronisées avec le serveur AEM.
 
@@ -83,10 +83,10 @@ Pour synchroniser votre contenu avec et depuis une instance de développement AE
 
 ![chlimage_1-55](assets/chlimage_1-55a.png)
 
-Les paramètres du projet permettent de définir :
+Les paramètres du projet vous permettent de définir les éléments suivants :
 
 1. L’URL du serveur (par exemple, `http://localhost:4502`)
-1. s’il faut accepter les serveurs sans certificat HTTPS valide (ne pas cocher, sauf si nécessaire) ;
+1. Permet de tolérer les serveurs qui ne possèdent pas de certificat HTTPS valide (ne cochez pas, sauf si nécessaire).
 1. Nom d’utilisateur utilisé pour synchroniser le contenu (par exemple : `admin`)
 1. Le mot de passe de l’utilisateur (par exemple : `admin`)
 
@@ -110,7 +110,7 @@ Dans l’Explorateur de projet, ouvrez le menu contextuel en cliquant avec le bo
 
 ### Synchronisation complète des packages de contenu {#full-content-package-synchronization}
 
-Dans le menu **AEM**, les options **Exporter le package de contenu** ou **Importer le package de contenu** permettent de synchroniser l’ensemble du projet avec le serveur.
+Dans le **AEM** , **Exporter le package de contenu** ou **Importer un module de contenu** Les options vous permettent de synchroniser l’ensemble du projet avec le serveur.
 
 ![chlimage_1-57](assets/chlimage_1-57a.png)
 

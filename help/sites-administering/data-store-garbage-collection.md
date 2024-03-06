@@ -7,10 +7,10 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1890'
-ht-degree: 94%
+source-wordcount: '1891'
+ht-degree: 92%
 
 ---
 
@@ -161,7 +161,7 @@ La période de maintenance hebdomadaire intégrée, disponible via le [tableau d
 >
 >La raison pour laquelle vous pouvez ne pas l’exécuter simultanément est que les anciens fichiers (et inutilisés) du magasin de données sont également sauvegardés, de sorte que s’il est nécessaire de restaurer une ancienne révision, les fichiers binaires figurent encore dans la sauvegarde.
 
-Si vous ne souhaitez pas exécuter le nettoyage de la mémoire du magasin de données avec la période de maintenance hebdomadaire dans le tableau de bord des opérations, vous pouvez également l’automatiser à l’aide des clients HTTP wget ou curl. Voici un exemple illustrant comment automatiser la sauvegarde à l’aide de la commande curl :
+Si vous ne souhaitez pas exécuter le nettoyage de la mémoire d’entrepôt de données avec la fenêtre de maintenance hebdomadaire dans le tableau de bord des opérations, il peut également être automatisé à l’aide des clients HTTP wget ou curl. Voici un exemple illustrant comment automatiser la sauvegarde à l’aide de la commande curl :
 
 >[!CAUTION]
 >

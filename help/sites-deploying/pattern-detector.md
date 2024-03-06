@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 97%
+source-wordcount: '500'
+ht-degree: 96%
 
 ---
 
@@ -210,7 +210,7 @@ Avec la sortie :
 
 ## Périmètre de détection {#scope}
 
-Actuellement, l’outil de détection des modèles permet de vérifier :
+Actuellement, l’outil de détection des motifs vous permet de vérifier les éléments suivants :
 
 * la discordance des exports et des imports des lots OSGi ;
 * les usages exessifs des types de ressources Sling et super-types (avec superpositions de contenu de chemin de recherche) ;

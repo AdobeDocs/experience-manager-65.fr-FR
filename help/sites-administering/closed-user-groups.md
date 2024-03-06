@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6808'
-ht-degree: 54%
+source-wordcount: '6650'
+ht-degree: 36%
 
 ---
 
@@ -25,11 +25,11 @@ Depuis AEM 6.3, une nouvelle mise en oeuvre de groupe d’utilisateurs fermé es
 >
 >Par souci de simplicité, l’abréviation CUG est utilisée dans toute cette documentation.
 
-Cette nouvelle mise en œuvre a pour objectif de couvrir les fonctionnalités existantes en fonction des besoins, tout en résolvant les problèmes d’adressage et les limites de conception des versions antérieures. Le résultat est une nouvelle conception de CUG avec les caractéristiques suivantes :
+L’objectif de la nouvelle mise en oeuvre est de couvrir les fonctionnalités existantes lorsque cela est nécessaire tout en résolvant les problèmes et les limites de conception des anciennes versions. Le résultat est une nouvelle conception de CUG avec les caractéristiques suivantes :
 
 * Séparation claire des éléments d’authentification et d’autorisation, qui peuvent être utilisés individuellement ou en combinaison ;
 * modèle d’autorisation dédié pour refléter l’accès en lecture restreint aux arborescences de CUG configurées sans interférer avec d’autres exigences de configuration et d’autorisation de contrôle d’accès ;
-* Séparation entre la configuration de contrôle de l’accès en lecture restreint, qui est nécessaire généralement sur les instances de création, et l’évaluation des permissions qui n’est généralement souhaitée que sur l’instance de publication
+* Séparation entre la configuration du contrôle d’accès de l’accès en lecture restreint, qui est nécessaire pour les instances de création, et l’évaluation des permissions qui n’est souhaitée que lors de la publication ;
 * Modification d’un accès en lecture restreint sans transmission de privilèges ;
 * Extension de type de noeud dédiée pour marquer l’exigence d’authentification ;
 * Chemin de connexion facultatif associé à l’exigence d’authentification.
@@ -38,8 +38,8 @@ Cette nouvelle mise en œuvre a pour objectif de couvrir les fonctionnalités ex
 
 Un groupe d’utilisateurs fermé tel qu’il est connu dans le contexte d’AEM comprend les étapes suivantes :
 
-* Restreindre l’accès en lecture sur l’arborescence qui doit être protégée et uniquement autoriser la lecture pour les principaux qui sont soit répertoriés avec une instance de données CUG spécifique, soit exclus de l’évaluation des CUG. Cela s’appelle la variable **authorization** élément .
-* Renforcez l’authentification sur une arborescence donnée et spécifiez éventuellement une page de connexion dédiée pour cette arborescence qui est ensuite exclue. Cela s’appelle la variable **authentication** élément .
+* Restreindre l’accès en lecture sur l’arborescence qui doit être protégée et n’autoriser la lecture que pour les entités répertoriées avec une instance de CUG donnée ou exclues de l’évaluation des CUG. Cela s’appelle la variable **authorization** élément .
+* Imposer l’authentification sur une arborescence donnée et éventuellement spécifier une page de connexion dédiée pour cette arborescence qui est alors exclue. Cela s’appelle la variable **authentication** élément .
 
 La nouvelle mise en œuvre a été conçue pour distinguer les éléments d’authentification des éléments d’autorisation. Depuis AEM 6.3, il est possible de restreindre l’accès en lecture sans ajouter explicitement une exigence d’authentification. Par exemple, si une instance donnée nécessite une authentification complète ou si une arborescence donnée réside déjà dans une sous-arborescence qui nécessite déjà une authentification.
 
@@ -57,7 +57,7 @@ Ce nouveau type de stratégie présente les caractéristiques suivantes :
 
 * Politique de contrôle d’accès de org.apache.jackrabbit.api.security.authorization.PrincipalSetPolicy (définie par l’API Apache Jackrabbit)
 * PrincipalSetPolicy accorde des privilèges à un ensemble modifiable d’entités de sécurité
-* Les privilèges accordés et le domaine de la politique constituent des détails de la mise en œuvre.
+* Les privilèges accordés et la portée de la stratégie sont un détail de mise en oeuvre.
 
 La mise en œuvre de PrincipalSetPolicy utilisée pour représenter les CUG définit en outre les points suivants :
 
@@ -68,56 +68,56 @@ La mise en œuvre de PrincipalSetPolicy utilisée pour représenter les CUG déf
 
 Ces politiques de CUG sont déployées sur les instances AEM par l’intermédiaire d’un module d’autorisation distinct appelé oak-authorization-cug. Ce module est fourni avec ses propres fonctions d’évaluation des permissions et de gestion du contrôle d’accès. En d’autres termes, la configuration par défaut d’AEM est livrée avec une configuration de référentiel de contenu Oak qui combine plusieurs mécanismes d’autorisation. Pour plus d’informations, consultez [cette page sur la documentation Apache Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html).
 
-Dans cette configuration composite, un nouveau CUG ne remplace pas le contenu de contrôle d’accès existant associé au nœud cible. Au contraire, il est conçu pour être un supplément qui peut également être supprimé ultérieurement sans affecter le contrôle d’accès d’origine (qui dans AEM serait par défaut une liste de contrôle d’accès).
+Dans cette configuration composite, un nouveau CUG ne remplace pas le contenu de contrôle d’accès existant associé au noeud cible. Il s’agit plutôt d’un supplément qui peut également être supprimé ultérieurement sans affecter le contrôle d’accès d’origine, qui par défaut dans AEM serait une liste de contrôle d’accès.
 
-Contrairement à la mise en œuvre précédente, les nouvelles politiques de CUG sont systématiquement reconnues et traitées comme contenu de contrôle d’accès. Cela signifie qu’elles sont créées et modifiées à l’aide de l’API de gestion du contrôle d’accès JCR. Pour plus d’informations, consultez [Gestion des politiques de CUG](#managing-cug-policies).
+Contrairement à l’ancienne mise en oeuvre, les nouvelles stratégies de CUG sont toujours reconnues et traitées comme du contenu de contrôle d’accès. Cela signifie qu’elles sont créées et modifiées à l’aide de l’API de gestion du contrôle d’accès JCR. Pour plus d’informations, consultez [Gestion des politiques de CUG](#managing-cug-policies).
 
 #### Évaluation des autorisations des stratégies de CUG {#permission-evaluation-of-cug-policies}
 
-Outre une gestion dédiée du contrôle d’accès pour les CUG, le nouveau modèle d’autorisation vous permet d’activer de manière conditionnelle l’évaluation des permissions pour ses stratégies. Cela vous permet de configurer des stratégies de CUG dans un environnement d’évaluation et de n’activer l’évaluation des autorisations efficaces qu’une fois répliquées dans l’environnement de production.
+Outre une gestion dédiée du contrôle d’accès pour les CUG, le nouveau modèle d’autorisation vous permet d’activer de manière conditionnelle l’évaluation des permissions pour ses stratégies. Vous pouvez ainsi configurer des stratégies de CUG dans un environnement d’évaluation et uniquement activer l’évaluation des autorisations efficaces une fois répliquées dans l’environnement de production.
 
-L’évaluation des permissions pour les politiques de CUG et l’interaction avec le modèle d’autorisation par défaut ou tout modèle supplémentaire suit le modèle destiné aux mécanismes d’autorisation multiples dans Apache Jackrabbit Oak : un jeu de permissions donné est accordé si et uniquement si tous les modèles accordent l’accès. Consultez [cette page](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html) pour plus de détails.
+L’évaluation des autorisations pour les stratégies de CUG et l’interaction avec le modèle d’autorisation par défaut ou tout autre modèle d’autorisation suivent le modèle conçu pour plusieurs mécanismes d’autorisation dans Apache Jackrabbit Oak. En d’autres termes, un ensemble donné d’autorisations est accordé si et uniquement si tous les modèles accordent l’accès. Consultez [cette page](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html) pour plus de détails.
 
 Les caractéristiques suivantes s’appliquent à l’évaluation des autorisations associées au modèle d’autorisation conçu pour gérer et évaluer les stratégies de CUG :
 
 * Il ne gère que les autorisations de lecture pour les noeuds et propriétés standard, mais pas le contenu de contrôle d’accès.
-* Il ne prend pas en charge les autorisations d’écriture ni aucun type d’autorisation requis pour la modification du contenu JCR protégé (contrôle d’accès, informations de type de noeud, contrôle de version, verrouillage ou gestion utilisateur, entre autres). Ces autorisations ne sont pas affectées par une stratégie de CUG et ne seront pas évaluées par le modèle d’autorisation associé. Ces permissions sont accordées en fonction des autres modèles configurés dans la configuration de sécurité.
+* Il ne prend pas en charge les autorisations d’écriture ni aucun type d’autorisation requis pour la modification du contenu JCR protégé (contrôle d’accès, informations de type de noeud, contrôle de version, verrouillage ou gestion des utilisateurs, entre autres). Ces autorisations ne sont pas affectées par une stratégie de CUG et ne seront pas évaluées par le modèle d’autorisation associé. L’octroi de ces autorisations dépend des autres modèles configurés dans la configuration de la sécurité.
 
 L’effet d’une politique de CUG unique sur l’évaluation des permissions peut être résumé comme suit :
 
 * L’accès en lecture est refusé pour tous, à l’exception des sujets contenant des entités de sécurité exclues ou des entités de sécurité répertoriées dans la stratégie.
 * La stratégie prend effet sur le noeud contrôlé par l’accès qui contient la stratégie et ses propriétés.
-* L’effet est en outre hérité vers le bas de la hiérarchie, c’est-à-dire l’arborescence d’éléments définie par le noeud contrôlé par l’accès ;
+* L’effet est également hérité vers le bas de la hiérarchie, c’est-à-dire l’arborescence d’éléments définie par le noeud contrôlé par l’accès ;
 * Toutefois, elle n’affecte ni les frères ni les ancêtres du noeud contrôlé par l’accès.
 * L’héritage d’un CUG donné s’arrête à un CUG imbriqué.
 
 #### Bonnes pratiques {#best-practices}
 
-Les bonnes pratiques suivantes doivent être prises en compte pour définir un accès en lecture restreint par le biais de CUG :
+Les bonnes pratiques suivantes doivent tenir compte de la définition d’un accès en lecture restreint par le biais de CUG :
 
-* Déterminez si le CUG dont vous avez besoin est destiné à limiter l’accès en lecture ou s’il correspond à une exigence d’authentification. Si ce dernier, ou s’il y a un besoin des deux, consultez la section sur les bonnes pratiques pour plus de détails sur l’exigence d’authentification.
-* Créez un modèle de menace pour les données ou le contenu qui doivent être protégés afin d’identifier les limites de la menace et d’obtenir une vue d’ensemble claire de la sensibilité des données et des rôles associés à l’accès autorisé.
+* Déterminez si le CUG dont vous avez besoin est destiné à limiter l’accès en lecture ou s’il correspond à une exigence d’authentification. Si ce dernier cas, ou s’il y a un besoin des deux, consultez la section sur les bonnes pratiques pour plus de détails sur l’exigence d’authentification.
+* Créer un modèle de menace pour les données ou le contenu qui doivent être protégés afin d’identifier les limites de la menace et d’obtenir une image claire de la sensibilité des données et des rôles associés à l’accès autorisé
 * Modérez le contenu du référentiel et les CUG en gardant à l’esprit les aspects généraux liés aux autorisations et les bonnes pratiques :
 
-   * N’oubliez pas que l’autorisation de lecture ne sera accordée que si un CUG donné et l’évaluation des autres modules déployés dans l’aide à la configuration permettent à un sujet donné de lire un élément de référentiel donné.
+   * N’oubliez pas que l’autorisation de lecture n’est accordée que si un CUG donné et l’évaluation des autres modules déployés dans l’aide à la configuration permettent à un sujet donné de lire un élément de référentiel donné.
    * Évitez de créer des CUG redondants dans lesquels l’accès en lecture est déjà limité par d’autres modules d’autorisation.
    * Un besoin excessif de CUG imbriqués peut mettre en évidence des problèmes dans la conception de contenu.
-   * Un besoin très excessif de CUG (par exemple, sur chaque page) peut indiquer la nécessité d’un modèle d’autorisation personnalisé potentiellement mieux adapté aux besoins de sécurité spécifiques de l’application et du contenu en question.
+   * Un besoin excessif de CUG (par exemple, sur chaque page) peut indiquer la nécessité d’un modèle d’autorisation personnalisé potentiellement mieux adapté aux besoins de sécurité spécifiques de l’application et du contenu en question.
 
 * Limitez les chemins pris en charge pour les politiques de CUG à un petit nombre d’arborescences dans le référentiel afin d’optimiser les performances. Par exemple, autorisez uniquement les CUG sous le noeud /content , tel qu’il est fourni comme valeur par défaut depuis AEM 6.3.
 * Les politiques de CUG sont conçues pour autoriser l’accès en lecture à un petit ensemble d’entités de sécurité. La nécessité d’un grand nombre d’entités de sécurité peut mettre en évidence des problèmes dans la conception du contenu ou de l’application et doit être reconsidérée.
 
 ### Authentification : définition de l’exigence d’authentification {#authentication-defining-the-auth-requirement}
 
-Les parties liées à l’authentification de la fonction CUG vous permettent de marquer les arborescences qui nécessitent une authentification et éventuellement de spécifier une page de connexion dédiée. Conformément à la version précédente, la nouvelle mise en oeuvre vous permet de marquer les arborescences qui nécessitent une authentification dans le référentiel de contenu et d’activer de manière conditionnelle la synchronisation avec l’ `Sling org.apache.sling.api.auth.Authenticator`responsable de l’application finale de l’exigence et de la redirection vers une ressource de connexion.
+Les parties liées à l’authentification de la fonction CUG vous permettent de marquer les arborescences qui nécessitent une authentification et éventuellement de spécifier une page de connexion dédiée. Conformément à la version précédente, la nouvelle mise en oeuvre vous permet de marquer les arborescences nécessitant une authentification dans le référentiel de contenu. Elle active également de manière conditionnelle la synchronisation avec l’événement `Sling org.apache.sling.api.auth.Authenticator`responsable de l’application finale de l’exigence et de la redirection vers une ressource de connexion.
 
-Ces exigences sont enregistrées auprès de l’authentificateur au moyen d’un service OSGi qui fournit la propriété d’enregistrement `sling.auth.requirements`. Ces propriétés sont ensuite utilisées pour étendre les exigences d’authentification de façon dynamique. Pour plus d’informations, consultez la [Documentation Sling](https://sling.apache.org/apidocs/sling7/org/apache/sling/auth/core/AuthConstants.html#AUTH_REQUIREMENTS).
+Ces exigences sont enregistrées auprès de l’authentificateur par un service OSGi qui fournit la variable `sling.auth.requirements` propriété d’enregistrement. Ces propriétés sont ensuite utilisées pour étendre les exigences d’authentification de façon dynamique. Pour plus d’informations, consultez la [Documentation Sling](https://sling.apache.org/apidocs/sling7/org/apache/sling/auth/core/AuthConstants.html#AUTH_REQUIREMENTS).
 
 #### Définition de l’exigence d’authentification avec un type de mixin dédié {#defining-the-authentication-requirement-with-a-dedicated-mixin-type}
 
-Pour des raisons de sécurité, la nouvelle mise en œuvre remplace l’utilisation d’une propriété JCR résiduelle par un type de mixin dédié appelé `granite:AuthenticationRequired`, qui définit une propriété facultative unique de type CHAÎNE pour le chemin de connexion `granite:loginPath`. Seules les modifications du contenu liées à ce type de mixin entraînent la mise à jour des exigences enregistrées auprès de l’authentificateur Apache Sling. Les modifications sont suivies lors de la persistance de toute modification provisoire et nécessitent donc un appel `javax.jcr.Session.save()` pour prendre effet.
+Pour des raisons de sécurité, la nouvelle mise en oeuvre remplace l’utilisation d’une propriété JCR résiduelle par un type de mixin dédié appelé `granite:AuthenticationRequired`, qui définit une propriété facultative unique de type STRING pour le chemin de connexion. `granite:loginPath`. Seules les modifications de contenu liées à ce type de mixin entraînent la mise à jour des exigences enregistrées auprès de l’authentificateur Apache Sling. Les modifications sont suivies lors de la persistance de toute modification provisoire et nécessitent donc un appel `javax.jcr.Session.save()` pour prendre effet.
 
-Il en va de même pour la propriété `granite:loginPath`. Elle n’est respectée que si elle est définie par le type de mixin lié à l’exigence d’authentification. L’ajout d’une propriété résiduelle du même nom au niveau d’un nœud JCR non structuré ne produit pas l’effet souhaité, et la propriété est ignorée par le gestionnaire responsable de la mise à jour de l’enregistrement OSGi.
+Il en va de même pour la propriété `granite:loginPath`. Elle n’est respectée que si elle est définie par le type de mixin associé à l’exigence d’authentification. L’ajout d’une propriété résiduelle portant ce même nom sur un noeud JCR non structuré n’indique pas l’effet souhaité et la propriété est ignorée par le gestionnaire responsable de la mise à jour de l’enregistrement OSGi.
 
 >[!NOTE]
 >
@@ -125,21 +125,21 @@ Il en va de même pour la propriété `granite:loginPath`. Elle n’est respect�
 
 #### Enregistrement de l’exigence d’authentification et du chemin de connexion avec l’authentificateur Sling {#registering-the-authentication-requirement-and-login-path-with-the-sling-authenticator}
 
-Puisqu’il est prévu que ce type d’exigence d’authentification soit limité à certains modes d’exécution et à un petit sous-ensemble d’arborescences dans le référentiel de contenu, le suivi du type de mixin de l’exigence et des propriétés de chemin de connexion est conditionnel et associé à une configuration correspondante qui définit les chemins pris en charge (voir la section Options de configuration ci-dessous). Par conséquent, seules les modifications dans la portée de ces chemins pris en charge déclenchent une mise à jour de l’enregistrement OSGi ; dans les autres cas, le type de mixin et la propriété sont tous deux ignorés.
+Comme ce type d’exigence d’authentification doit être limité à certains modes d’exécution et à un petit sous-ensemble d’arborescences dans le référentiel de contenu, le suivi du type de mixin d’exigence et des propriétés du chemin de connexion est conditionnel. De plus, il est lié à une configuration correspondante qui définit les chemins pris en charge (voir Options de configuration ci-dessous). Par conséquent, seules les modifications dans la portée de ces chemins pris en charge déclenchent une mise à jour de l’enregistrement OSGi. Dans d’autres cas, le type de mixin et la propriété sont ignorés.
 
 Par défaut, AEM utilise désormais cette configuration en permettant de placer le mixin en mode d’exécution de création, mais en ne le faisant prendre effet que lors de la réplication vers l’instance de publication. Consultez [cette page](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) pour plus d’informations sur la façon dont Sling impose l’exigence d’authentification.
 
-Ajouter le `granite:AuthenticationRequired` le type de mixin dans les chemins pris en charge configurés entraîne la mise à jour de l’enregistrement OSGi du gestionnaire responsable, contenant une nouvelle entrée supplémentaire avec la propriété `sling.auth.requirements` . Si une exigence d’authentification donnée spécifie l’option `granite:loginPath` , la valeur est également enregistrée auprès de l’authentificateur avec un préfixe &quot;-&quot; à exclure de l’exigence d’authentification.
+Ajouter le `granite:AuthenticationRequired` type de mixin dans les chemins d’accès pris en charge configurés, l’enregistrement OSGi du gestionnaire responsable est mis à jour. Il contient une nouvelle entrée supplémentaire avec la propriété `sling.auth.requirements` . Si une exigence d’authentification donnée spécifie l’option `granite:loginPath` , la valeur est également enregistrée auprès de l’authentificateur avec un préfixe &quot;-&quot; à exclure de l’exigence d’authentification.
 
 #### Évaluation et héritage de l’exigence d’authentification {#evaluation-and-inheritance-of-the-authentication-requirement}
 
-Il est attendu que les exigences d’authentification d’Apache Sling soient héritées dans la hiérarchie de page ou de nœud. Les détails de l’héritage et l’évaluation des exigences d’authentification, tels que l’ordre et la priorité, sont considérés comme un détail de mise en oeuvre et ne seront pas documentés dans cet article.
+Les exigences d’authentification Apache Sling sont héritées par le biais de la hiérarchie de pages ou de noeuds. Les détails de l’héritage et l’évaluation des exigences d’authentification, tels que l’ordre et la priorité, sont considérés comme un détail de mise en oeuvre et ne seront pas documentés dans cet article.
 
 #### Évaluation du chemin de connexion {#evaluation-of-login-path}
 
-L’évaluation du chemin de connexion et de la redirection vers la ressource correspondante lors de l’authentification est actuellement un détail de mise en œuvre du gestionnaire d’authentification du sélecteur de connexion Adobe Granite (`com.day.cq.auth.impl.LoginSelectorHandler`), qui est un gestionnaire d’authentification Apache Sling configuré avec AEM par défaut.
+L’évaluation du chemin de connexion et la redirection vers la ressource correspondante lors de l’authentification est un détail d’implémentation du gestionnaire d’authentification du sélecteur de connexion Granite Adobe ( `com.day.cq.auth.impl.LoginSelectorHandler`), qui est un gestionnaire d’authentification Apache Sling configuré avec AEM par défaut.
 
-En appelant `AuthenticationHandler.requestCredentials`, ce gestionnaire tente de déterminer la page de connexion de mise en correspondance vers laquelle l’utilisateur est redirigé. Les étapes sont les suivantes :
+Lors de l’appel `AuthenticationHandler.requestCredentials` ce gestionnaire tente de déterminer la page de connexion de mappage vers laquelle l’utilisateur est redirigé. Les étapes sont les suivantes :
 
 * faire la distinction entre le mot de passe expiré et la nécessité d’une connexion régulière comme motif de redirection ;
 * Lors d’une connexion normale, vérifie si un chemin de connexion peut être obtenu dans l’ordre suivant :
@@ -149,7 +149,7 @@ En appelant `AuthenticationHandler.requestCredentials`, ce gestionnaire tente de
    * À partir des mises en correspondance de page de connexion, telles que définies avec `LoginSelectorHandler`
    * et enfin, revenez à la page de connexion par défaut, telle que définie avec la variable `LoginSelectorHandler`.
 
-* Dès qu’un chemin de connexion valide est obtenu par les appels répertoriés ci-dessus, la requête de l’utilisateur est redirigée vers cette page.
+* Lorsqu’un chemin de connexion valide a été obtenu via les appels répertoriés ci-dessus, la requête de l’utilisateur est redirigée vers cette page.
 
 Cette documentation traite de l’évaluation du chemin de connexion tel qu’il est exposé par l’interface `LoginPathProvider` interne. L’implémentation fournie depuis AEM 6.3 se comporte comme suit :
 
@@ -161,9 +161,9 @@ Cette documentation traite de l’évaluation du chemin de connexion tel qu’il
    * À partir des mises en correspondance de page de connexion, telles que définies avec `LoginSelectorHandler`
    * et enfin retournez à la page de connexion par défaut telle que définie avec la variable `LoginSelectorHandler`.
 
-* Dès qu’un chemin de connexion valide est obtenu par les appels répertoriés ci-dessus, la requête de l’utilisateur est redirigée vers cette page.
+* Lorsqu’un chemin de connexion valide a été obtenu via les appels répertoriés ci-dessus, la requête de l’utilisateur est redirigée vers cette page.
 
-Le `LoginPathProvider`, tel qu’il est mis en œuvre par la nouvelle prise en charge d’exigence d’authentification dans Granite, expose les chemins de connexion Granite tels que définis par les propriétés `granite:loginPath`, qui à leur tour sont définis par le type de mixin comme décrit ci-dessus. Le mappage du chemin de ressource contenant le chemin de connexion et la valeur de propriété elle-même est conservé en mémoire et sera évalué afin de trouver un chemin de connexion approprié pour les autres noeuds de la hiérarchie.
+Le `LoginPathProvider`, tel qu’il est mis en œuvre par la nouvelle prise en charge d’exigence d’authentification dans Granite, expose les chemins de connexion Granite tels que définis par les propriétés `granite:loginPath`, qui à leur tour sont définis par le type de mixin comme décrit ci-dessus. Le mappage du chemin de ressource contenant le chemin de connexion et la valeur de propriété elle-même est conservé en mémoire et est évalué afin de trouver un chemin de connexion approprié pour les autres noeuds de la hiérarchie.
 
 >[!NOTE]
 >
@@ -173,12 +173,12 @@ Le `LoginPathProvider`, tel qu’il est mis en œuvre par la nouvelle prise en c
 
 Les bonnes pratiques suivantes doivent être prises en compte lors de la définition des exigences d’authentification :
 
-* Il est préférable de ne pas imbriquer les exigences d’authentification : le fait de placer un marqueur d’exigence d’authentification unique au début d’une arborescence devrait suffire et est hérité par toute la sous-arborescence définie par le nœud cible. Tout exigence supplémentaire d’authentification dans cette arborescence doit être considérée comme redondante et peut entraîner des problèmes de performances lors de l’évaluation de l’exigence d’authentification dans Apache Sling. Avec la séparation des zones CUG liées aux autorisations et à l’authentification, il est possible de restreindre l’accès en lecture au moyen de CUG ou d’autres types de stratégies tout en appliquant l’authentification pour l’ensemble de l’arborescence.
+* Évitez d’imbriquer les exigences d’authentification : placer un marqueur d’exigence d’authentification unique au début d’une arborescence doit être suffisant et hérité à la sous-arborescence entière définie par le noeud cible. Tout exigence supplémentaire d’authentification dans cette arborescence doit être considérée comme redondante et peut entraîner des problèmes de performances lors de l’évaluation de l’exigence d’authentification dans Apache Sling. Avec la séparation des zones CUG liées à l’autorisation et à l’authentification, il est possible de restreindre l’accès en lecture par CUG ou d’autres types de stratégies tout en appliquant l’authentification pour l’ensemble de l’arborescence.
 * Le contenu du référentiel de modèle de sorte que les exigences d’authentification s’appliquent à l’ensemble de l’arborescence sans avoir à exclure à nouveau les sous-arborescences imbriquées de l’exigence.
-* Pour éviter de spécifier et d’enregistrer ensuite des chemins de connexion redondants :
+* Pour éviter de spécifier, puis d’enregistrer des chemins de connexion redondants :
 
    * Utilisez l’héritage et évitez de définir des chemins de connexion imbriqués.
-   * Ne définissez pas le chemin de connexion facultatif sur une valeur qui correspond à la valeur par défaut ou à la valeur héritée.
+   * ne pas définir le chemin de connexion facultatif sur une valeur correspondant à la valeur par défaut ou à une valeur héritée,
    * Les développeurs d’applications doivent identifier les mises en correspondance de connexion qui doivent être configurées dans les fonctions de chemin de connexion globales (par défaut et mise en correspondance) associées à `LoginSelectorHandler`.
 
 ## Représentation dans le référentiel {#representation-in-the-repository}
@@ -191,7 +191,7 @@ La documentation Oak couvre la façon dont les nouvelles politiques de CUG sont 
 
 Le besoin d’une exigence d’authentification distincte est reflété dans le contenu du référentiel avec un type de nœud mixin dédié placé au niveau du nœud cible. Le type de mixin définit une propriété facultative afin de spécifier une page de connexion dédiée pour l’arborescence définie par le noeud cible.
 
-La page associée au chemin de connexion peut être placée à l’intérieur ou à l’extérieur de cette arborescence. Il sera exclu de l’exigence d’authentification.
+La page associée au chemin de connexion peut être placée à l’intérieur ou à l’extérieur de cette arborescence. Elle est exclue de l’exigence d’authentification.
 
 ```java
 [granite:AuthenticationRequired]
@@ -203,11 +203,11 @@ La page associée au chemin de connexion peut être placée à l’intérieur ou
 
 ### Gestion des stratégies de CUG {#managing-cug-policies}
 
-Le nouveau type de politiques de contrôle d’accès destiné à limiter l’accès en lecture pour un CUG est géré à l’aide de l’API de gestion du contrôle d’accès JCR et suit les mécanismes décrits par la [Spécification JCR 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
+Le nouveau type de politiques de contrôle d’accès destiné à limiter l’accès en lecture pour un CUG est géré à l’aide de l’API de gestion du contrôle d’accès JCR et suit les mécanismes décrits par la [Spécification JCR 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
 
 #### Définition d’une nouvelle stratégie de CUG {#set-a-new-cug-policy}
 
-Code pour appliquer une nouvelle politique de CUG à un nœud qui n’avait pas de CUG. Notez que `getApplicablePolicies` renvoie uniquement les nouvelles stratégies qui n’ont pas été définies auparavant. À la fin, la stratégie doit être réécrite et les modifications doivent être conservées.
+Code pour appliquer une nouvelle stratégie de CUG à un noeud qui n’avait pas défini de CUG auparavant. Notez que `getApplicablePolicies` renvoie uniquement les nouvelles stratégies qui n’ont pas été définies auparavant. À la fin, la politique doit être réécrite et les modifications doivent être conservées.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -277,7 +277,7 @@ if (cugPolicy.addPrincipals(toAdd1, toAdd2) || cugPolicy.removePrincipals(toRemo
 
 ### Récupération des stratégies de CUG efficaces {#retrieve-effective-cug-policies}
 
-La gestion du contrôle d’accès JCR définit une méthode du meilleur effort pour récupérer les politiques qui prennent effet à un chemin donné. L’évaluation des stratégies de CUG étant conditionnelle et dépendant de la configuration correspondante à activer, l’appel de la méthode `getEffectivePolicies` est un moyen pratique de vérifier si une stratégie de CUG donnée prend effet dans une installation donnée.
+La gestion du contrôle d’accès JCR définit une méthode optimisée pour récupérer les stratégies qui prennent effet à un chemin donné. L’évaluation des stratégies de CUG étant conditionnelle et dépendant de la configuration correspondante à activer, l’appel de la méthode `getEffectivePolicies` est un moyen pratique de vérifier si une stratégie de CUG donnée prend effet dans une installation donnée.
 
 >[!NOTE]
 >
@@ -349,7 +349,7 @@ session.save();
 
 #### Ajout d’une nouvelle exigence d’authentification avec le chemin de connexion {#add-a-new-auth-requirement-with-login-path}
 
-Procédure de création d’une exigence d’authentification comprenant un chemin de connexion. Notez que cette exigence et l’exclusion du chemin de connexion ne sont enregistrées auprès de l’authentificateur Apache Sling que si `RequirementHandler` a été configuré pour l’arborescence contenant le nœud cible.
+Procédure de création d’une exigence d’authentification comprenant un chemin de connexion. L’exigence et l’exclusion du chemin de connexion ne sont enregistrées auprès de l’authentificateur Apache Sling que si la variable `RequirementHandler` a été configuré pour l’arborescence contenant le noeud cible.
 
 ```java
 Node targetNode = [...]
@@ -364,7 +364,7 @@ session.save();
 
 #### Modification d’un chemin de connexion existant {#modify-an-existing-login-path}
 
-Les étapes à suivre pour modifier un chemin de connexion existant sont détaillées ci-dessous. La modification n’est enregistrée auprès de l’authentificateur Apache Sling que si `RequirementHandler` a été configuré pour l’arborescence contenant le nœud cible. La valeur précédente de chemin de connexion est supprimée de l’enregistrement. L’exigence d’authentification associée au noeud cible n’est pas affectée par cette modification.
+Les étapes à suivre pour modifier un chemin de connexion existant sont détaillées ci-dessous. La modification n’est enregistrée auprès de l’authentificateur Apache Sling que si la variable `RequirementHandler` a été configuré pour l’arborescence contenant le noeud cible. La valeur du chemin de connexion précédent est supprimée de l’enregistrement. L’exigence d’authentification associée au noeud cible n’est pas affectée par cette modification.
 
 ```java
 Node targetNode = [...]
@@ -432,7 +432,7 @@ L’image suivante illustre les exigences d’authentification d’une instance 
 
 #### Récupération du chemin de connexion effectif {#retrieve-the-effective-login-path}
 
-Il n’existe actuellement aucune API publique pour récupérer le chemin de connexion qui prend effet lors d’un accès anonyme à une ressource nécessitant une authentification. Voir la section Évaluation du chemin de connexion pour plus d’informations sur la mise en oeuvre de la récupération du chemin de connexion.
+Il n’existe actuellement aucune API publique pour récupérer le chemin de connexion qui prend effet lors de l’accès anonyme à une ressource qui nécessite une authentification. Voir la section Évaluation du chemin de connexion pour plus d’informations sur la mise en oeuvre de la récupération du chemin de connexion.
 
 Notez toutefois qu’en plus des chemins de connexion définis avec cette fonctionnalité, il existe d’autres façons de spécifier la redirection vers la connexion, qui doivent être prises en compte lors de la conception du modèle de contenu et des exigences d’authentification d’une installation AEM donnée.
 
@@ -468,15 +468,15 @@ Le tableau suivant répertorie les combinaisons valides de stratégies de CUG et
 
 | **Exigence d’authentification** | **Chemin de connexion** | **Accès en lecture limité** | **Effet attendu** |
 |---|---|---|---|
-| Oui | Oui | Oui | Un utilisateur donné ne pourra afficher la sous-arborescence marquée par la politique de CUG que si l’évaluation des permissions effective accorde l’accès. Les utilisateurs non authentifiés sont redirigés vers la page de connexion spécifiée. |
-| Oui | Non | Oui | Un utilisateur donné ne pourra afficher la sous-arborescence marquée par la politique de CUG que si l’évaluation des permissions effective accorde l’accès. Les utilisateurs non authentifiés sont redirigés vers la page de connexion par défaut héritée. |
-| Oui | Oui | Non | Les utilisateurs non authentifiés sont redirigés vers la page de connexion spécifiée. L’autorisation d’affichage de l’arborescence marquée par l’exigence d’authentification dépend des autorisations en vigueur des éléments individuels contenus dans cette sous-arborescence. Aucun CUG dédié restreignant l’accès en lecture en place. |
-| Oui | Non | Non | Les utilisateurs non authentifiés sont redirigés vers la page de connexion par défaut héritée. L’autorisation d’affichage de l’arborescence marquée par l’exigence d’authentification dépend des autorisations en vigueur des éléments individuels contenus dans cette sous-arborescence. Aucun CUG dédié restreignant l’accès en lecture en place. |
-| Non | Non | Oui | Un utilisateur donné, qu’il soit authentifié ou non, ne pourra afficher la sous-arborescence marquée par la politique de CUG que si l’évaluation des permissions effective accorde l’accès. Un utilisateur non authentifié sera traité de manière égale et ne sera pas redirigé vers la connexion. |
+| Oui | Oui | Oui | Un utilisateur donné ne pourra afficher la sous-arborescence marquée par la politique de CUG que si l’évaluation des permissions effective accorde l’accès. Un utilisateur non authentifié est redirigé vers la page de connexion spécifiée. |
+| Oui | Non | Oui | Un utilisateur donné ne pourra afficher la sous-arborescence marquée par la politique de CUG que si l’évaluation des permissions effective accorde l’accès. Un utilisateur non authentifié est redirigé vers une page de connexion par défaut héritée. |
+| Oui | Oui | Non | Un utilisateur non authentifié est redirigé vers la page de connexion spécifiée. Le fait qu’il soit autorisé à afficher l’arborescence marquée avec l’exigence d’authentification dépend des autorisations en vigueur des éléments individuels contenus dans cette sous-arborescence. Aucun CUG dédié restreignant l’accès en lecture en place. |
+| Oui | Non | Non | Un utilisateur non authentifié est redirigé vers une page de connexion par défaut héritée. Le fait qu’il soit autorisé à afficher l’arborescence marquée avec l’exigence d’authentification dépend des autorisations en vigueur des éléments individuels contenus dans cette sous-arborescence. Aucun CUG dédié restreignant l’accès en lecture en place. |
+| Non | Non | Oui | Un utilisateur donné authentifié ou non authentifié ne peut afficher que la sous-arborescence marquée avec la stratégie de CUG si l’évaluation des autorisations effective accorde l’accès. Un utilisateur non authentifié est traité de manière égale et n’est pas redirigé pour se connecter. |
 
 >[!NOTE]
 >
->La combinaison Exigence d’authentification = oui et Chemin de connexion = oui ne figure pas ci-dessus, car le chemin de connexion est un attribut facultatif associé à une exigence d’authentification. La spécification d’une propriété JCR avec ce nom, sans ajouter le type de mixin de définition n’a aucun effet et est ignorée par le gestionnaire correspondant.
+>La combinaison Exigence d’authentification = oui et Chemin de connexion = oui ne figure pas ci-dessus, car le chemin de connexion est un attribut facultatif associé à une exigence d’authentification. La spécification d’une propriété JCR avec ce nom sans ajouter le type de mixin de définition n’a aucun effet et est ignorée par le gestionnaire correspondant.
 
 ## Composants et configuration OSGi {#osgi-components-and-configuration}
 
@@ -494,7 +494,7 @@ L’installation de l’autorisation de CUG est décrite en détail dans la [doc
 
 #### Configuration du filtre de référent {#configuring-the-referrer-filter}
 
-Vous devez également configurer le [filtre de référent Sling](/help/sites-administering/security-checklist.md#the-sling-referrer-filter) avec tous les noms d’hôtes pouvant être utilisés pour accéder à AEM ; par exemple, par l’intermédiaire du réseau de diffusion de contenu, de l’équilibreur de charge et de n’importe quel autre.
+Vous devez également configurer la variable [Filtre de référent Sling](/help/sites-administering/security-checklist.md#the-sling-referrer-filter) avec tous les noms d’hôtes pouvant être utilisés pour accéder à AEM ; par exemple, via CDN, équilibreur de charge, etc.
 
 Si le filtre de référent n’est pas configuré, des erreurs, semblables à ce qui suit, s’affichent lorsqu’un utilisateur tente de se connecter à un site de CUG :
 
@@ -582,7 +582,7 @@ Les options de configuration disponibles associées au module d’autorisation d
 
 #### Exclusion des entités de sécurité de l’évaluation des CUG {#excluding-principals-from-cug-evaluation}
 
-L’exemption de principaux de l’évaluation de CUG a été adoptée à partir de l’ancienne mise en œuvre. La nouvelle autorisation de CUG couvre cette fonction avec une interface dédiée nommée CugExclude. Apache Jackrabbit Oak 1.4 est fourni avec une implémentation par défaut qui exclut un ensemble fixe d’entités de sécurité et une implémentation étendue qui permet de configurer des noms de principal individuels. Ce dernier est configuré dans AEM instances de publication.
+L’exemption de principaux de l’évaluation de CUG a été adoptée à partir de l’ancienne mise en œuvre. La nouvelle autorisation de CUG couvre cette fonction avec une interface dédiée nommée CugExclude. Apache Jackrabbit Oak 1.4 est fourni avec une mise en oeuvre par défaut qui exclut un ensemble fixe d’entités de sécurité et une mise en oeuvre étendue qui vous permet de configurer des noms principaux individuels. Ce dernier est configuré dans AEM instances de publication.
 
 La valeur par défaut depuis AEM 6.3 empêche les entités de sécurité suivantes d’être affectées par les stratégies de CUG :
 
@@ -706,7 +706,7 @@ Les nouvelles installations d’AEM utiliseront par défaut les nouvelles mises 
 
 | **« Gestionnaire d’exigence d’authentification et de chemin de connexion Adobe Granite »** | **Explication** |
 |---|---|
-| Chemins pris en charge `/content` | Exigences d’authentification telles que définies dans le référentiel au moyen du type de mixin `granite:AuthenticationRequired` prend effet ci-dessous `/content` sous `Session.save()`. L’authentificateur Sling est mis à jour. L’ajout du type de mixin en dehors des chemins pris en charge est ignoré. |
+| Chemins pris en charge `/content` | Exigences d’authentification telles que définies dans le référentiel par la variable `granite:AuthenticationRequired` le type de mixin prend effet sous `/content` at `Session.save()`. L’authentificateur Sling est mis à jour. L’ajout du type de mixin en dehors des chemins pris en charge est ignoré. |
 
 ## Désactivation de l’autorisation de CUG et de l’exigence d’authentification {#disabling-cug-authorization-and-authentication-requirement}
 
@@ -718,7 +718,7 @@ Consultez la [Plug-ins CUG](https://jackrabbit.apache.org/oak/docs/security/auth
 
 ### Désactivation de l’exigence d’authentification {#disable-the-authentication-requirement}
 
-Pour désactiver la prise en charge de l’exigence d’authentification fournie par le `granite.auth.authhandler` module , il suffit de supprimer la configuration associée à **Gestionnaire d’exigence d’authentification et de chemin de connexion Adobe Granite**.
+Pour désactiver la prise en charge de l’exigence d’authentification fournie par le `granite.auth.authhandler` , il suffit de supprimer la configuration associée à **Gestionnaire d’exigence d’authentification et de chemin de connexion Adobe Granite**.
 
 >[!NOTE]
 >
@@ -761,7 +761,7 @@ Ceci a été adapté afin d’effectuer la référence à `CugSupport` facultati
 
 ### AEM LiveCopy {#aem-livecopy}
 
-La configuration des CUG en accord avec LiveCopy est représentée dans le référentiel par l’ajout d’un nœud et d’une propriété supplémentaires comme suit :
+La configuration des CUG avec LiveCopy est représentée dans le référentiel par l’ajout d’un noeud supplémentaire et d’une propriété supplémentaire, comme suit :
 
 * `/content/we-retail/us/en/blueprint/rep:cugPolicy`
 * `/content/we-retail/us/en/LiveCopy@granite:loginPath`
@@ -790,7 +790,7 @@ Les principales différences du point de vue des autorisations sont résumées d
 
 Dans l’ancienne mise en œuvre, le modèle d’autorisation par défaut était utilisé pour manipuler les politiques de liste de contrôle d’accès sur l’instance de publication, remplaçant tous les ACE existants par la configuration requise par le CUG. Cela a été déclenché en écrivant des propriétés JCR résiduelles régulières qui ont été interprétées lors de la publication.
 
-Avec la nouvelle mise en oeuvre, la configuration du contrôle d’accès du modèle d’autorisation par défaut n’est pas affectée par les CUG créés, modifiés ou supprimés. À la place, un nouveau type de politique nommé `PrincipalSetPolicy` est appliqué en tant que contenu de contrôle d’accès supplémentaire sur le nœud cible. Cette politique supplémentaire est placée en tant qu’enfant du nœud cible et doit être une sœur du nœud de politique par défaut (s’il existe).
+Avec la nouvelle mise en oeuvre, la configuration du contrôle d’accès du modèle d’autorisation par défaut n’est pas affectée par les CUG créés, modifiés ou supprimés. À la place, un nouveau type de politique nommé `PrincipalSetPolicy` est appliqué en tant que contenu de contrôle d’accès supplémentaire sur le nœud cible. Cette stratégie supplémentaire est située en tant qu’enfant du noeud cible et serait un frère du noeud de stratégie par défaut, le cas échéant.
 
 **Modification des stratégies de CUG dans la gestion du contrôle d’accès**
 
@@ -798,24 +798,24 @@ Cette transition des propriétés JCR résiduelles vers une politique de contrô
 
 **Noeud cible défini par la stratégie**
 
-Créez des stratégies de CUG au niveau du noeud JCR définissant la sous-arborescence à soumettre à un accès en lecture limité. Il est probable qu’il s’agisse d’une page AEM au cas où le CUG affecterait l’ensemble de l’arborescence.
+Créez des stratégies de CUG au niveau du noeud JCR définissant la sous-arborescence à soumettre à un accès en lecture limité. Il s’agit probablement d’une page AEM au cas où le CUG devrait affecter l’ensemble de l’arborescence.
 
-Notez que le fait de placer la politique de CUG uniquement au nœud jcr:content situé sous une page donnée limite l’accès au contenu s.str d’une page donnée, mais n’aura aucun effet sur les pages enfants ou frères. Il peut s’agir d’un cas d’utilisation valide. Il est possible d’y parvenir avec un éditeur de référentiel qui permet d’appliquer un contenu d’accès affiné. Cependant, elle contraste avec l’ancienne mise en oeuvre où le placement d’une propriété cq:cugEnabled sur le noeud jcr:content a été mappé en interne au noeud de page. Ce mappage n’est plus effectué.
+Le fait de placer la stratégie de CUG uniquement au niveau du noeud jcr:content situé sous une page donnée limite uniquement l’accès au contenu s.str d’une page donnée, mais ne prend effet sur aucune page frère ou enfant. Il peut s’agir d’un cas d’utilisation valide et il est possible d’utiliser un éditeur de référentiel qui vous permet d’appliquer un contenu d’accès affiné. Cependant, elle contraste avec l’ancienne mise en oeuvre où le placement d’une propriété cq:cugEnabled sur le noeud jcr:content a été mappé en interne au noeud de page. Ce mappage n’est plus effectué.
 
 **Évaluation des autorisations avec des stratégies de CUG**
 
-Le passage de l’ancienne prise en charge des CUG à un modèle d’autorisation supplémentaire, modifie la façon dont les permissions de lecture en vigueur sont évaluées. Comme indiqué dans la [documentation relative à Jackrabbit](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html), un principal spécifique autorisé à afficher `CUGcontent` n’obtient l’accès en lecture que si l’évaluation des autorisations de tous les modèles configurés dans le référentiel Oak lui accorde l’accès en lecture.
+Le passage de l’ancienne prise en charge des CUG à un modèle d’autorisation supplémentaire, modifie la façon dont les permissions de lecture en vigueur sont évaluées. Comme décrit dans la section [Documentation Jackrabbit](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html), une entité de sécurité donnée autorisée à afficher la variable `CUGcontent` ne sera accordé un accès en lecture que si l’évaluation des permissions de tous les modèles configurés dans le référentiel Oak accorde un accès en lecture.
 
-En d’autres termes, pour l’évaluation des permissions en vigueur, à la fois `CUGPolicy` et les entrées de contrôle d’accès par défaut sont pris en compte, et l’accès en lecture sur le contenu CUG est uniquement autorisé s’il est accordé par les deux types de politiques. Dans une installation de publication AEM par défaut où l’accès en lecture à l’arborescence `/content` complète est accordé à tout le monde, l’effet des politiques de CUG est le même que celui de l’ancienne mise en œuvre.
+En d’autres termes, pour l’évaluation des autorisations en vigueur, la variable `CUGPolicy` et les entrées de contrôle d’accès par défaut sont prises en compte et l’accès en lecture sur le contenu CUG n’est accordé que s’il est accordé par les deux types de stratégies. Dans une installation de publication par défaut AEM où l’accès en lecture à l’ensemble des `/content` est attribuée à tous les utilisateurs, l’effet des stratégies de CUG est identique à celui de l’ancienne mise en oeuvre.
 
 **Évaluation à la demande**
 
-Le modèle d’autorisation des CUG permet d’activer individuellement la gestion du contrôle d’accès et l’évaluation des autorisations :
+Le modèle d’autorisation des CUG permet d’activer individuellement la gestion du contrôle d’accès et l’évaluation des permissions :
 
 * la gestion du contrôle d’accès est activée si le module comporte un ou plusieurs chemins pris en charge où des CUG peuvent être créés.
 * l’évaluation des autorisations n’est activée que si l’option **Évaluation des CUG activée** est également cochée.
 
-Dans l’évaluation des politiques de CUG de la nouvelle configuration par défaut d’AEM, elle est activée uniquement avec le mode d’exécution de publication. Consultez les informations relatives à la [configuration par défaut depuis AEM 6.3](#default-configuration-since-aem) pour en savoir plus. Cela peut être vérifié en comparant les politiques en vigueur pour un chemin donné vers les politiques stockées dans le contenu. Les politiques en vigueur sont affichées uniquement dans le cas où l’évaluation des permissions est activée pour les CUG.
+Dans la nouvelle évaluation de configuration par défaut des stratégies de CUG d’AEM, elle est uniquement activée avec le mode d’exécution &quot;publication&quot;. Consultez les informations relatives à la [configuration par défaut depuis AEM 6.3](#default-configuration-since-aem) pour en savoir plus. Cela peut être vérifié en comparant les politiques en vigueur pour un chemin donné vers les politiques stockées dans le contenu. Les politiques en vigueur sont affichées uniquement dans le cas où l’évaluation des permissions est activée pour les CUG.
 
 Comme expliqué plus haut, les politiques de contrôle d’accès de CUG sont désormais toujours stockées dans le contenu, mais l’évaluation des permissions en vigueur découlant de ces politiques ne sera imposée que si l’**évaluation des CUG activée** est sélectionnée dans la console système au niveau de la configuration des CUG Apache Jackrabbit Oak **.** Par défaut, elle est uniquement activée avec le mode d’exécution de publication.
 
@@ -825,11 +825,11 @@ Les différences concernant l’authentification sont décrites ci-dessous.
 
 #### Type de mixin dédié pour l’exigence d’authentification {#dedicated-mixin-type-for-authentication-requirement}
 
-Dans l’ancienne mise en œuvre, les aspects d’autorisation et d’authentification d’un CUG étaient tous deux déclenchés par une seule propriété JCR (`cq:cugEnabled`). En ce qui concerne l’authentification, il en résultait une liste mise à jour des exigences d’authentification telles que stockées avec la mise en œuvre de l’authentificateur Apache Sling. Avec la nouvelle mise en œuvre, le même résultat est obtenu en marquant le nœud cible avec un type spécial de mixin (`granite:AuthenticationRequired`).
+Dans l’ancienne mise en œuvre, les aspects d’autorisation et d’authentification d’un CUG étaient tous deux déclenchés par une seule propriété JCR (`cq:cugEnabled`). En ce qui concerne l’authentification, il en résultait une liste mise à jour des exigences d’authentification telles que stockées avec la mise en œuvre de l’authentificateur Apache Sling. Avec la nouvelle mise en oeuvre, le même résultat est obtenu en marquant le noeud cible avec un type de mixin dédié ( `granite:AuthenticationRequired`).
 
 #### Propriété d’exclusion d’un chemin de connexion {#property-for-excluding-login-path}
 
-Le type de mixin définit une propriété unique et facultative appelée `granite:loginPath`, qui correspond essentiellement à la propriété `cq:cugLoginPage`. Contrairement à la mise en œuvre précédente, la propriété de chemin de connexion n’est respectée que si son type de nœud d’instruction est le mixin indiqué. L’ajout d’une propriété portant ce nom sans définir le type de mixin n’aura aucun effet et ni une nouvelle exigence ni une exclusion pour le chemin de connexion ne seront signalées à l’authentificateur.
+Le type de mixin définit une propriété unique et facultative appelée `granite:loginPath`, qui correspond essentiellement à la propriété `cq:cugLoginPage`. Contrairement à la mise en oeuvre précédente, la propriété de chemin de connexion n’est respectée que si son type de noeud de déclaration est le mixin mentionné. L’ajout d’une propriété portant ce nom sans définir le type de mixin n’a aucun effet et ni une nouvelle exigence ni une exclusion pour le chemin de connexion ne sont signalées à l’authentificateur.
 
 #### Privilège Pour L’Exigence D’Authentification {#privilege-for-authentication-requirement}
 
@@ -839,11 +839,11 @@ En ce qui concerne `granite:loginPath` est concerné le même privilège est req
 
 #### Noeud cible défini par le type de mixin {#target-node-defined-by-mixin-type}
 
-Créez des exigences d’authentification au niveau du noeud JCR définissant la sous-arborescence à laquelle s’appliquer la connexion. Il est probable qu’il s’agisse d’une page AEM au cas où le CUG devrait affecter l’ensemble de l’arborescence et que l’interface utilisateur de la nouvelle mise en oeuvre ajoutera par conséquent le type de mixin auth-required sur le noeud de page.
+Créez des exigences d’authentification au niveau du noeud JCR définissant la sous-arborescence à laquelle s’appliquer la connexion. Il est probable qu’il s’agisse d’une page AEM au cas où le CUG devrait affecter l’arborescence entière et que l’interface utilisateur de la nouvelle mise en oeuvre ajoute donc le type de mixin auth-required sur le noeud de page.
 
-Le fait de placer la stratégie de CUG uniquement au niveau du noeud jcr:content situé sous une page donnée limite uniquement l’accès au contenu, mais n’aura aucune incidence sur le noeud de page lui-même ni sur les pages enfants.
+Le fait de placer la stratégie de CUG uniquement au niveau du noeud jcr:content situé sous une page donnée limite uniquement l’accès au contenu. Toutefois, cela n’a aucune incidence sur le noeud de page lui-même ni sur les pages enfants.
 
-Il peut s’agir d’un scénario valide et possible avec un éditeur de référentiel qui permet de placer le mixin au niveau de n’importe quel nœud. Toutefois, le comportement contraste avec l’ancienne mise en œuvre où le placement d’une propriété cq:cugEnabled ou cq:cugLoginPage sur le nœud jcr:content était remis en correspondance en interne sur le nœud de page. Ce mappage n’est plus effectué.
+Il peut s’agir d’un scénario valide et cela est possible avec un éditeur de référentiel qui vous permet de placer le mixin sur n’importe quel noeud. Toutefois, le comportement contraste avec l’ancienne mise en œuvre où le placement d’une propriété cq:cugEnabled ou cq:cugLoginPage sur le nœud jcr:content était remis en correspondance en interne sur le nœud de page. Ce mappage n’est plus effectué.
 
 #### Chemins pris en charge configurés {#configured-supported-paths}
 
@@ -865,7 +865,7 @@ L’ancienne mise en œuvre de prise en charge des CUG a été abandonnée et se
 
 Pour les installations AEM mises à niveau, il est important de s’assurer qu’une seule mise en œuvre CUG est activée. La combinaison de la nouvelle prise en charge des CUG et de l’ancienne prise en charge des CUG obsolètes n’est pas testée et risque de provoquer un comportement indésirable :
 
-* collisions dans l’authentificateur Sling en ce qui concerne les exigences d’authentification
+* collisions dans l’authentificateur Sling concernant les exigences d’authentification
 * refusé l’accès en lecture lorsque la configuration ACL associée à l’ancien CUG entre en conflit avec une nouvelle stratégie de CUG.
 
 ### Migration d’un contenu de CGU existant {#migrating-existing-cug-content}
@@ -873,7 +873,7 @@ Pour les installations AEM mises à niveau, il est important de s’assurer qu�
 Adobe fournit un outil pour la migration vers la nouvelle mise en oeuvre de CUG. Pour l’utiliser, procédez comme suit :
 
 1. Accédez à `https://<serveraddress>:<serverport>/system/console/cug-migration` pour accéder à l’outil.
-1. Saisissez le chemin racine pour lequel vous souhaitez vérifier les CUG, puis appuyez sur la touche **Exécution à sec** bouton . Cela permet de rechercher les CUG pouvant être convertis à l’emplacement sélectionné.
+1. Saisissez le chemin racine pour lequel vous souhaitez vérifier les CUG, puis appuyez sur la touche **Exécution à sec** bouton . Cela permet d’analyser les groupes d’utilisateurs fermés pouvant être convertis à l’emplacement sélectionné.
 1. Une fois que vous avez consulté les résultats, appuyez sur le bouton **Effectuer la migration** pour migrer vers la nouvelle mise en œuvre.
 
 >[!NOTE]

@@ -6,10 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 exl-id: 9f814204-8cd4-4ba9-9e25-3ff1b25c1955
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 1%
+source-wordcount: '614'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ Ce chapitre décrit les rôles utilisateur et comment configurer vos utilisateur
 
 ## Utilisateurs des applications AEM Mobile et administration des groupes {#aem-mobile-application-users-and-group-administration}
 
-Pour organiser et gérer le modèle d’autorisation pour les applications AEM, les deux groupes suivants sont disponibles :
+Pour vous aider à organiser et à gérer le modèle d’autorisation pour les applications AEM, les deux groupes suivants sont disponibles :
 
 * app-admins pour les administrateurs d’applications
 * app-authors pour les auteurs d’applications
@@ -67,7 +67,7 @@ Les membres du groupe app-author sont chargés de la création AEM contenu de l�
 Les membres du groupe app-admins peuvent créer du contenu d’application avec les mêmes autorisations que celles incluses avec app-authors. **ET** en outre, il est également chargé des tâches suivantes :
 
 * Configuration des services cloud PhoneGap Build et Adobe Mobile Services dans AEM
-* Mises à jour OTA de synchronisation de contenu d’application intermédiaire, de publication et d’effacement
+* Mise à jour OTA de synchronisation de contenu d’application intermédiaire, publication et effacement
 
 >[!NOTE]
 >
@@ -101,7 +101,7 @@ Les membres du groupe app-admins peuvent créer du contenu d’application avec 
 
    >[!CAUTION]
    >
-   >L’accès /var/contentsync est refusé en standard.
+   >/var/contentsync est refusé d’usine.
    >
    >Si vous omettez l’autorisation READ , les modules de mise à jour vides peuvent être créés et répliqués.
 

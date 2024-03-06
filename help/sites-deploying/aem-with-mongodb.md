@@ -7,9 +7,9 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6184'
+source-wordcount: '6185'
 ht-degree: 98%
 
 ---
@@ -355,7 +355,7 @@ Pour ajuster la taille du cache interne de WiredTiger, voir [storage.wiredTiger.
 
 Le NUMA (Non Uniform Memory Access) permet à un noyau de gérer la façon dont la mémoire est mappée aux cœurs du processeur. Bien que l’accès à la mémoire puisse être potentiellement plus rapide pour les cœurs grâce à un accès aux données requises, le NUMA interfère avec MMAP en introduisant une latence supplémentaire, car les lectures ne peuvent pas être prédites. Par conséquent, le NUMA doit être désactivé pour le processus `mongod` sur tous les systèmes d’exploitation performants.
 
-Essentiellement, dans une architecture NUMA, la mémoire est connectée aux processeurs et les processeurs sont connectés à un bus. Dans une architecture SMP ou UMA, la mémoire est connectée au bus et partagée par les processeurs. Lorsqu’un thread alloue de la mémoire sur un processeur NUMA, il l’alloue selon une politique. Par défaut, la mémoire est allouée au processeur local du thread, sauf s’il n’y a pas de processeur libre. Dans ce cas, il utilise la mémoire d’un processeur libre à un coût plus élevé. Une fois allouée, la mémoire ne passe pas d’un processeur à l’autre. L’allocation est effectuée par une politique héritée du thread parent, c’est-à-dire le thread qui a démarré le processus.
+Essentiellement, dans une architecture NUMA, la mémoire est connectée aux processeurs et les processeurs sont connectés à un bus. Dans une architecture SMP ou UMA, la mémoire est connectée au bus et partagée par les processeurs. Lorsqu’un thread alloue de la mémoire sur un processeur NUMA, il l’alloue selon une politique. Par défaut, la mémoire est allouée au processeur local du thread, sauf s’il n’y a pas de processeur libre. Dans ce cas, il utilise la mémoire d’un processeur libre à un coût plus élevé. Une fois allouée, la mémoire ne se déplace pas entre les processeurs. L’allocation est effectuée par une politique héritée du thread parent, c’est-à-dire le thread qui a démarré le processus.
 
 Dans de nombreuses bases de données qui considèrent l’ordinateur comme une architecture de mémoire multi-cœurs uniforme, ce scénario entraîne d’abord le remplissage du processeur initial et ensuite le remplissage du processeur secondaire. C’est particulièrement vrai si un thread central est responsable de l’allocation des tampons mémoire. La solution consiste à modifier la politique NUMA du thread principal utilisé pour lancer le processus `mongod` en exécutant la commande suivante :
 
@@ -543,7 +543,7 @@ La sortie du second test devrait être considérablement plus élevée que la pr
 
 >[!NOTE]
 >
-Lorsque vous effectuez les tests, vérifiez les statistiques d’utilisation des E/S pour les machines virtuelles en question dans votre système de surveillance du système d’exploitation. Si elles indiquent des valeurs inférieures à 100 % pour les lectures d’E/S, il se peut qu’il y ait un problème avec votre machine virtuelle.
+>Lorsque vous effectuez les tests, vérifiez les statistiques d’utilisation des E/S pour les machines virtuelles en question dans votre système de surveillance du système d’exploitation. Si elles indiquent des valeurs inférieures à 100 % pour les lectures d’E/S, il se peut qu’il y ait un problème avec votre machine virtuelle.
 
 **Tester les performances d’écriture de l’instance MongoDB principale**
 
@@ -654,7 +654,7 @@ La CSP permet d’affiner les politiques. Toutefois, dans une application comple
 
 >[!NOTE]
 >
-Pour plus d’informations sur son fonctionnement, voir [Page OWASP sur la politique de sécurité du contenu](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
+>Pour plus d’informations sur son fonctionnement, voir [Page OWASP sur la politique de sécurité du contenu](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### Dimensionnement {#sizing}
 
@@ -678,4 +678,4 @@ Si AEM est exécuté sur un déploiement de gestionnaire de persistance MongoMK[
 
 >[!NOTE]
 >
-Consultez la [documentation de MongoDB](https://docs.mongodb.com/manual/reference/limits/) pour vous familiariser avec les limites et les seuils connus de MongoDB.
+>Consultez la [documentation de MongoDB](https://docs.mongodb.com/manual/reference/limits/) pour vous familiariser avec les limites et les seuils connus de MongoDB.

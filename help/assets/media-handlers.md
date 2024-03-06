@@ -6,10 +6,10 @@ contentOwner: AG
 role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2156'
-ht-degree: 86%
+source-wordcount: '2136'
+ht-degree: 85%
 
 ---
 
@@ -29,7 +29,7 @@ Les gestionnaires de médias sont des services d’[!DNL Assets] qui effectuent 
 
 Les gestionnaires de médias suivants sont disponibles dans [!DNL Assets] et gèrent les types MIME les plus courants :
 
-<!-- TBD: Java versions shouldn't be set to 1.5. Must be updated.
+<!-- TBD: Java versions should not be set to 1.5. Must be updated.
 -->
 
 | Nom du gestionnaire | Nom du service (dans la console système) | Types MIME pris en charge |
@@ -37,7 +37,7 @@ Les gestionnaires de médias suivants sont disponibles dans [!DNL Assets] et gè
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>application/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Important</b> - Lorsque vous téléchargez un fichier MP3, il est [traité à l’aide d’une bibliothèque tierce](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). La bibliothèque calcule une longueur approximative non précise si le MP3 a un débit variable (VBR). |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Important</b> - Lorsque vous téléchargez un fichier MP3, il s’agit de [traité à l’aide d’une bibliothèque tierce](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). La bibliothèque calcule une longueur approximative non précise si le MP3 a un débit variable (VBR). |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>application/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -412,7 +412,7 @@ Lorsque vous téléchargez un fichier TXT dans [!DNL Experience Manager], après
      * * @return the number of words in the string
      * */
     private long wordCount(String text) {
-     // We need to keep track of the last character, if we have two whitespaces in a row we don't want to double count.
+     // We need to keep track of the last character, if we have two whitespaces in a row we do not want to double count.
      // The starting of the document is always a whitespace.
      boolean prevWhiteSpace = true;
      boolean currentWhiteSpace = true;
@@ -494,7 +494,7 @@ Installez d’abord [!DNL ImageMagick] sur le disque hébergeant le serveur [!DN
 Pour tester le workflow modifié, ajoutez une ressource à `/content/dam`.
 
 1. Dans le système de fichiers, sélectionnez une image TIFF de votre choix. Renommez-le en `myImage.tiff` et copiez-le dans `/content/dam`, par exemple, en utilisant WebDAV.
-1. Accédez à la console **[!UICONTROL CQ5 DAM]**, par exemple, `https://localhost:4502/libs/wcm/core/content/damadmin.html`.
+1. Accédez au **[!UICONTROL Gestion des actifs numériques CQ5]** console, par exemple : `https://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Ouvrez la ressource **[!UICONTROL myImage.tiff]** et vérifiez que l’image inversée et les trois miniatures ont bien été créées.
 
 #### Configuration de l’étape du processus CommandLineProcess {#configuring-the-commandlineprocess-process-step}

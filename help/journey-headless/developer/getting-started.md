@@ -2,10 +2,10 @@
 title: Prise en main d’AEM Headless
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2998'
-ht-degree: 96%
+source-wordcount: '2999'
+ht-degree: 98%
 
 ---
 
@@ -113,13 +113,13 @@ Ce niveau d’intégration repose sur le niveau 2 en permettant de modifier l�
 
 ### Vous n’avez pas encore de consommateur externe de contenu découplé, par exemple les applications monopages. {#do-not-have-a-spa}
 
-Si votre objectif est de créer un SPA qui consomme du contenu en toute sécurité à partir d’AEM, vous pouvez utiliser des fonctionnalités telles que les fragments de contenu pour gérer votre contenu sans affichage et créer également un  avec la structure de l’éditeur d’.
+Si votre objectif est de créer une SPA qui consomme du contenu en toute sécurité depuis AEM, vous pouvez utiliser des fonctionnalités telles que les fragments de contenu pour gérer votre contenu découplé et créer également une SPA avec le framework de l’éditeur de SPA d’AEM.
 
-Avec cet éditeur, la SPA consomme non seulement des contenus issus d’AEM, mais elle est en outre entièrement modifiable dans AEM par les auteurs de contenu, ce qui vous donne à la fois la flexibilité d’une diffusion découplée et de la modification replacée dans son contexte au sein d’AEM.
+Avec cet éditeur, la SPA consomme non seulement des contenus issus d’AEM, mais elle est en outre entièrement modifiable dans AEM par les personnes chargées de la création de contenu, ce qui vous donne à la fois la flexibilité d’une diffusion découplée et de la modification replacée dans son contexte au sein d’AEM.
 
 ## Exigences et conditions préalables {#requirements-prerequisites}
 
-Plusieurs conditions sont requises avant de commencer votre projet AEM sans interface utilisateur.
+Un certain nombre d’exigences s’imposent avant de vous engager dans votre projet AEM découplé.
 
 ### Connaissances {#knowledge}
 
@@ -162,9 +162,9 @@ L’administrateur doit être l’utilisateur qui a installé AEM et préparé l
 
 #### Auteur de contenu {#content-author}
 
-Les auteurs de contenu créent et gèrent le contenu diffusé de manière découplée par AEM. Pour gérer leurs contenus, les auteurs utilisent les fonctionnalités d’AEM, notamment les fragments de contenu et la console Assets.
+Les personnes chargées de la création de contenu créent et gèrent le contenu diffusé de manière découplée par AEM. Pour gérer leurs contenus, les auteurs utilisent les fonctionnalités d’AEM, notamment les fragments de contenu et la console Assets.
 
-Ils doivent garder à l’esprit les bonnes pratiques suivantes.
+Elles doivent garder à l’esprit les bonnes pratiques suivantes.
 
 #### Planification de la traduction {#translation}
 
@@ -206,7 +206,7 @@ Les noms des fragments de contenu doivent être explicites pour les auteurs de c
 
 Voir la section [Ressources supplémentaires](#additional-resources) pour accéder à d’autres documentations à propos des conventions d’affectation de noms de pages dans AEM.
 
-##### Ne pas étendre excessivement l’imbrication de contenu {#content-nesting}
+##### Ne pas étendre exagérément l’imbrication de contenu {#content-nesting}
 
 Les [fragments de contenu](#content-fragments) sont utilisés dans AEM pour créer des contenus en mode découplé. AEM prend en charge jusqu’à dix niveaux d’imbrication pour les fragments de contenu. Toutefois, il faut garder à l’esprit qu’AEM devra résoudre de manière itérative chaque référence définie dans le fragment de contenu parent, puis vérifier s’il existe des références enfants dans tous les frères. Ces opérations peuvent rapidement se cumuler et poser des problèmes de performances.
 
@@ -255,12 +255,12 @@ Pour comprendre le trafic et les schémas de trafic, commencez par recueillir de
 
 #### Fréquence de mise à jour {#update-frequency}
 
-Souvent, les différentes sections d’expériences ont des fréquences de mises à jour de contenu variables. Il est important de comprendre cela pour pouvoir affiner les configurations du réseau CDN et du cache. Il s’agit également d’une entrée importante pour les [Architectes de contenu](#content-architects), car ils conçoivent des modèles pour représenter votre contenu. Prenez en compte les éléments suivants :
+Souvent, les différentes sections d’expériences ont des fréquences de mises à jour de contenu variables. Il est important de comprendre cela pour pouvoir affiner les configurations du réseau de diffusion de contenu (CDN) et du cache. Il s’agit également d’une entrée importante pour les [Architectes de contenu](#content-architects), car ils conçoivent des modèles pour représenter votre contenu. Prenez en compte les éléments suivants :
 
 * Certains types de contenu doivent-ils expirer au-delà d’une certaine période ?
-* Certains éléments sont-ils spécifiques à l’utilisateur, donc sans pouvoir être mis en cache ?
+* Certains éléments sont-ils spécifiques à l’utilisateur et ne peuvent donc pas être mis en cache ?
 
-## Et après ? {#what-is-next}
+## Prochaines étapes {#what-is-next}
 
 Maintenant que vous avez terminé cette partie du parcours de développement découplé AEM, vous devriez pouvoir :
 

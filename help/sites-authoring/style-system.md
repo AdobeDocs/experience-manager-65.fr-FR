@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1293'
-ht-degree: 83%
+source-wordcount: '1297'
+ht-degree: 84%
 
 ---
 
@@ -29,9 +29,9 @@ Le système de style constitue une solution unifiée pour répondre à la fois a
 * Les créateurs et créatrices de modèles peuvent définir des classes de style dans la stratégie de contenu des composants.
 * Les auteurs de contenu peuvent ensuite sélectionner ces classes dans une liste déroulante lors de la modification du composant sur une page pour appliquer les styles correspondants.
 
-La classe de style est ensuite insérée sur l’élément wrapper du composant, de sorte que le développeur de composants n’ait pas à gérer les styles au-delà de la fourniture de leurs règles CSS.
+La classe de style est ensuite insérée sur l’élément wrapper du composant, de sorte que le développeur ou la développeuse de composants n’ait pas à gérer les styles au-delà de la fourniture de leurs règles CSS.
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 L’utilisation du système de style se passe généralement comme suit.
 
@@ -122,7 +122,7 @@ Pour qu’un composant fonctionne avec le système de style d’AEM et affiche l
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
-Une fois le composant configuré, les styles configurés par les auteurs de pages seront automatiquement insérés par AEM sur l’élément décoratif qui AEM automatiquement encapsulé autour de chaque composant modifiable. Le composant lui-même n’a besoin d’effectuer aucune autre action pour que cela se produise.
+Une fois le composant configuré, les styles configurés par les auteurs de pages seront automatiquement insérés par AEM sur l’élément décoratif qui AEM automatiquement encapsulé autour de chaque composant modifiable. Le composant lui-même n’a rien à faire d’autre pour que cela se produise.
 
 ### Activer l’onglet Styles dans la boîte de dialogue Modifier {#enable-styles-tab-edit}
 

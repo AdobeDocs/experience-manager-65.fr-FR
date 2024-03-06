@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3227'
 ht-degree: 99%
 
 ---
@@ -65,7 +65,7 @@ Les propriétés suivantes sont disponibles pour de nombreux composants d’éta
 
 * **Avertir l’utilisateur ou l’utilisatrice par e-mail**
 
-   * Vous pouvez notifier les participants et les participantes en leur envoyant un e-mail lorsque le workflow atteint l’étape.
+   * Avertissez les participants en leur envoyant un email lorsque le workflow atteint l’étape.
    * Si cette option est activée, un e-mail est envoyé à l’utilisateur ouà l’utilisatrice défini par la propriété **Utilisateur/Groupe**, ou à chaque membre du groupe si un groupe est défini.
 
 * **Utilisateur/Groupe**

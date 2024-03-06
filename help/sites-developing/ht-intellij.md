@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 91%
+source-wordcount: '640'
+ht-degree: 88%
 
 ---
 
@@ -106,7 +106,7 @@ IntelliJ IDEA doit comprendre où trouver les JSP pour le débogage. Étant don
 1. Appuyez sur **+** et sélectionnez **JSR45 à distance**.
 1. Dans la boîte de configuration, sélectionnez **Configurer** en face de **Serveur d’applications** et configurez un serveur Générique.
 1. Définissez la page de démarrage sur une URL appropriée si vous souhaitez ouvrir un navigateur lorsque vous commencez le débogage.
-1. Supprimez toutes les tâches **Avant le lancement** si vous utilisez vlt autosync ou configurez les tâches Maven appropriées dans le cas contraire.
+1. Tout supprimer **Avant le lancement** tâches si vous utilisez vlt autosync ou configurez les tâches Maven appropriées si vous ne le faites pas
 1. Dans le volet **Démarrage/Connexion**, modifiez le port, le cas échéant.
 1. Copiez les arguments de ligne de commande proposés par IntelliJ IDEA.
 

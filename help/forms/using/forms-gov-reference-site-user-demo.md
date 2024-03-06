@@ -4,10 +4,10 @@ description: Utilisez des utilisateurs et des groupes fictifs pour exécuter des
 contentOwner: anujkapo
 docset: aem65
 exl-id: 288d5459-bc69-4328-b6c9-4b4960bf4977
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2477'
-ht-degree: 99%
+source-wordcount: '2478'
+ht-degree: 98%
 
 ---
 
@@ -194,7 +194,7 @@ Aya répond à quelques questions pour confirmer son éligibilité en remplissan
 
    >[!NOTE]
    >
-   >Si l’utilisateur ou l’utilisatrice gagne plus de 200 000 $ par an, il ou elle n’est pas éligible.
+   >Si l’utilisateur gagne plus de 200 000 $ par an, il n’est pas éligible.
 
 1. Cliquez sur « **Suis-je éligible ?** ».
 1. Cliquez sur le bouton **Déposer une candidature maintenant** pour continuer.

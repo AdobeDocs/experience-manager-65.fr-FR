@@ -3,10 +3,10 @@ title: Configurez l’éditeur de texte enrichi pour créer du contenu dans Adob
 description: Découvrez comment configurer l’éditeur de texte enrichi Adobe Experience Manager pour créer du contenu dans Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '2883'
-ht-degree: 98%
+source-wordcount: '2887'
+ht-degree: 97%
 
 ---
 
@@ -195,7 +195,7 @@ Pour obtenir des configurations détaillées des plug-ins d’éditeur de texte 
 
 ## Configuration de la barre d’outils de l’éditeur de texte enrichi {#dialogfullscreen}
 
-AEM vous permet de configurer différemment l’interface de l’éditeur de texte enrichi pour les différents modes de modification. Les paramètres par défaut sont fournis ci-dessous. Vous pouvez remplacer ces paramètres par défaut en fonction de vos besoins. Vous personnalisez uniquement les fonctionnalités de la barre d’outils que vous souhaitez fournir à vos auteurs. Vous n’avez pas besoin de définir toutes les configurations de barre d’outils.
+AEM vous permet de configurer différemment l’interface de l’éditeur de texte enrichi pour les différents modes de modification. Les paramètres par défaut sont fournis ci-dessous. Vous pouvez remplacer ces paramètres par défaut en fonction de vos besoins. Vous personnalisez uniquement les fonctionnalités de la barre d’outils que vous souhaitez fournir à vos auteurs. Il n’est pas nécessaire de spécifier toutes les configurations de barre d’outils.
 
 Pour configurer la barre d’outils pour `dialogFullScreen`, utilisez l’exemple de configuration suivant.
 
@@ -318,7 +318,7 @@ Sur une page, vous pouvez inclure la bibliothèque client (clientlib) d’édite
 
 >[!NOTE]
 >
->L’éditeur de texte enrichi CoralUI 2 utilise des modèles Handlebars pour les boîtes de dialogue des plug-ins. Par conséquent, la bibliothèque cliente d’éditeur de texte enrichi CoralUI 2 dépendait de la bibliothèque cliente Handlebars. L’éditeur de texte enrichi CoralUI 3 n’utilise pas de modèles Handlebars et n’a aucune dépendance associée. Si vos plug-ins personnalisés utilisent des modèles Handlebars, incluez la bibliothèque client Handlebars dans votre page web.
+>L’éditeur de texte enrichi CoralUI 2 utilise des modèles Handlebars pour les boîtes de dialogue des plug-ins. Par conséquent, la bibliothèque cliente d’éditeur de texte enrichi CoralUI 2 dépendait de la bibliothèque cliente Handlebars. L’éditeur de texte enrichi CoralUI 3 n’utilise pas de modèles Handlebars et n’a aucune dépendance associée. Si vos plug-ins personnalisés utilisent des modèles Handlebars, incluez la bibliothèque client Handlebars dans votre page web.
 
 ## Informations supplémentaires {#further-information}
 

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 70%
+source-wordcount: '1769'
+ht-degree: 69%
 
 ---
 
@@ -76,7 +76,7 @@ Pour accéder à la console Balisage :
 
 Pour créer un espace de noms, sélectionnez le **`Create Namespace`** Icône
 
-L’espace de noms est lui-même une balise et ne comporte pas forcément de balise secondaire. Cependant, pour poursuivre la création d’une taxonomie, [créez des balises secondaires](#creating-tags), qui peuvent être des balises terminales ou conteneurs.
+L’espace de noms est lui-même une balise et ne doit pas contenir de sous-balises. Cependant, pour poursuivre la création d’une taxonomie, [créez des balises secondaires](#creating-tags), qui peuvent être des balises terminales ou conteneurs.
 
 ![chlimage_1-183](assets/chlimage_1-183a.png) ![creating_tags_andnamespaces](assets/creating_tags_andnamespacesa.png)
 
@@ -196,8 +196,8 @@ Lorsqu’un espace de noms ou une autre balise est sélectionné, le fait de sé
 * **Déplacer vers**
 Accédez au nouveau chemin d’accès où déplacer la balise.
 
-* **Renommer**
-Affiche d’abord le `name` actuel de la balise. Vous pouvez saisir un nouveau `name`.
+* **Renommer en**
+Affiche d’abord la `name`de la balise . Vous pouvez saisir un nouveau `name`.
 
 * Sélectionnez **Enregistrer**.
 
@@ -250,7 +250,7 @@ Les autorisations de balises sont [« sécurisées (par défaut) »](/help/sit
 * sur l’instance d’auteur
 
    * connexion avec droits d’administrateur
-   * accédez à la [console de sécurité](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
+   * accéder au [Console de sécurité](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
 
       * par exemple, accédez à http://localhost:4502/useradmin
 

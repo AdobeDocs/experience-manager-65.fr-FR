@@ -8,10 +8,10 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
-source-git-commit: 6cec9874bff54dea63562f7a880429d54e83ba79
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 82%
+source-wordcount: '968'
+ht-degree: 80%
 
 ---
 
@@ -139,7 +139,7 @@ Pour créer un projet d’archétype AEM 41 ou [version ultérieure](https://gi
 >
 >
 >
-> * Si vous rencontrez des difficultés pour accéder à la boîte de dialogue de connexion sur une instance de publication, essayez d’installer le module via le gestionnaire de modules à l’aide de l’URL `http://[Publish Server URL]:[PORT]/system/console` pour vous connecter. Cela vous permet d’accéder à la page de connexion de l’instance de publication et de poursuivre le processus d’installation.
+> * Si vous rencontrez des difficultés pour accéder à la boîte de dialogue de connexion sur une instance de publication, essayez d’installer le module via le gestionnaire de modules à l’aide de l’URL `http://[Publish Server URL]:[PORT]/system/console` pour vous connecter. Vous pouvez ainsi accéder à la page de connexion d’une instance de publication, ce qui vous permet de poursuivre le processus d’installation.
 > * Ne supprimez pas le projet d’archétype après son déploiement dans votre environnement. Le projet d’archétype est nécessaire pour ajouter des thèmes de composants principaux de formulaires adaptatifs nouveaux ou personnalisés à votre environnement.
 
 Les composants principaux sont activés pour votre environnement. Un modèle vierge de formulaire adaptatif basé sur des composants principaux et un thème Canvas 3.0 sont déployés sur votre environnement. Vous pouvez maintenant [créer un formulaire adaptatif basé sur les composants principaux](create-an-adaptive-form-core-components.md).

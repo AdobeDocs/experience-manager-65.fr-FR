@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2973'
+source-wordcount: '2971'
 ht-degree: 1%
 
 ---
@@ -38,12 +38,12 @@ Voici quelques-unes des instructions pour le développement des gestionnaires de
 
 * Les gestionnaires doivent implémenter *com.day.cq.contentsync.handler.ContentUpdateHandler* (directement ou en étendant une classe qui le fait)
 * Les gestionnaires peuvent étendre *com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler*
-* Le gestionnaire ne doit signaler la valeur true que s’il met à jour le cache ContentSync. La création de rapports erronés sur la valeur true a AEM créé une mise à jour lorsqu’aucune mise à jour n’a eu lieu.
+* Le gestionnaire ne doit signaler la valeur true que s’il met à jour le cache ContentSync. La création d’un rapport erroné sur la valeur true a AEM créé une mise à jour lorsqu’une mise à jour n’a pas eu lieu.
 * Le gestionnaire ne doit mettre à jour le cache que si le contenu a changé. N’écrivez pas dans le cache si un blanc n’est pas nécessaire. Cela entraîne la création d’une mise à jour inutile.
 
 >[!NOTE]
 >
->Activer *Journalisation du débogage ContentSync* via les configurations de journalisation OSGI d’un module ; *com.day.cq.contentsync*. Cela permet de suivre les gestionnaires exécutés et s’ils ont mis à jour le cache et signalé la mise à jour du cache.
+>Activer *Journalisation du débogage ContentSync* via les configurations de journalisation OSGI d’un module ; *com.day.cq.contentsync*. Vous pouvez ainsi effectuer le suivi des gestionnaires exécutés et s’ils ont mis à jour le cache et signalé la mise à jour du cache.
 
 ## Configuration du contenu de synchronisation du contenu {#configuring-the-content-sync-content}
 

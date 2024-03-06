@@ -5,10 +5,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 exl-id: fdc91054-3f7e-4cbf-bdfa-7d7a621747f1
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 65%
+source-wordcount: '840'
+ht-degree: 64%
 
 ---
 
@@ -51,7 +51,7 @@ Votre identité visuelle est désormais répertoriée dans la page Activités.
 
    >[!NOTE]
    >
-   >Vous pouvez ignorer l’erreur « Votre activité a été enregistrée mais elle n’a pas été synchronisée avec Target. Motif : l’expérience suivante ne comporte aucune offre », si elle survient lors de l’enregistrement de l’activité.
+   >Vous pouvez ignorer l’erreur &quot;Votre activité a été enregistrée mais elle n’a pas été synchronisée avec Target. Motif : l’expérience suivante ne comporte aucune offre », si elle survient lors de l’enregistrement de l’activité.
 
 1. Pour activer la cible, modifiez le fichier .jsp et incluez des bibliothèques client que votre modèle de formulaires adaptatifs utilise.
 

@@ -7,10 +7,10 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 1%
+source-wordcount: '796'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +56,7 @@ Pour plus d’informations sur les groupes d’utilisateurs de la communauté, c
 
    * Entrez le texte du corps
 
-     Je n&#39;ai pas eu beaucoup de succès quand j&#39;accroche une mangeoire aux colibris chaque année. Il semble qu&#39;ils viennent un jour ou deux alors c&#39;est tout. Je le change une fois par semaine est-ce trop long ? Dois-je le changer plus tôt ?
+     Je n&#39;ai pas eu beaucoup de succès quand je raccroche une mangeoire aux colibris chaque année. Il semble qu&#39;ils viennent un jour ou deux alors c&#39;est tout. Je le change une fois par semaine est-ce trop long ? Dois-je le changer plus tôt ?
 
    * Sélectionner une publication
    * Sélectionner Déconnexion
@@ -97,7 +97,7 @@ Sur l’auteur, connectez-vous en tant qu’administrateur et ajoutez Boyd Larse
 
 Lors de la publication, connectez-vous en tant que Boyd Larsen et accédez au thread en sélectionnant `Forum`, puis `Read more` pour le billet colibri.
 
-Avis:
+Remarque :
 
 * Boyd n&#39;a pas participé au forum.
 * Boyd ne peut rien supprimer.
@@ -113,7 +113,7 @@ Déconnexion
 
 Connectez-vous en tant qu’administrateur (admin) et accédez au fil en sélectionnant Forum, puis Lire plus pour une publication.
 
-Avis:
+Remarque :
 
 * L’administrateur peut marquer, supprimer, modifier, refuser, couper, fermer, épingler, fonction.
 * L’administrateur peut sélectionner Administration pour accéder à la console de modération.
@@ -126,7 +126,7 @@ Notez que, pour un administrateur, tout le contenu modérable est visible, et pa
 
 Le filtre de recherche est un panneau latéral qui bascule entre ouverture et fermeture.
 
-Déconnexion.
+Déconnectez-vous.
 
 ![modération-console-publication](assets/moderation-console-publish.png)
 
@@ -134,7 +134,7 @@ Déconnexion.
 
 Connectez-vous en tant qu’Aaron McDonald (`aaron.mcdonal@mailinator.com`), un modérateur de la communauté et accédez au fil en sélectionnant Forum, puis En savoir plus pour la publication colibri.
 
-Avis:
+Remarque :
 
 * Aaron peut répondre, supprimer, modifier ou refuser sa propre publication.
 * Aaron peut également Marquer/Autoriser, Répondre, Supprimer, Modifier, Refuser tout autre contenu.
@@ -149,7 +149,7 @@ Notez que, pour un modérateur de communauté, seul le contenu modérable du sit
 
 Notez que le modérateur de la communauté dispose des mêmes options que l’administrateur (l’image est avec la barre latérale de recherche activée), mais aucun accès aux autres consoles d’AEM.
 
-Déconnexion.
+Déconnectez-vous.
 
 ![modérateur-accès](assets/moderator-access.png)
 
@@ -157,7 +157,7 @@ Déconnexion.
 
 Se connecter en tant que Rebekah Larsen (`rebekah.larsen@mailinator.com`), un membre de la communauté qui a lancé le fil, et accédez au fil en sélectionnant Forum, puis En savoir plus pour la publication colibri.
 
-Avis:
+Remarque :
 
 * Rebekah peut supprimer ou modifier sa propre publication.
 * Rebekah peut également répondre ou marquer d’autres contenus.

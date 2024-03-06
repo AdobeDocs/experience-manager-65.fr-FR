@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing
 content-type: reference
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
-source-git-commit: 2c0e3052e32e32f794faa69177d5fdad95bec72f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '975'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Lors du développement d’une application mobile, il existe de nombreuses nouve
 
 * Fonctionnel : toutes les exigences sont-elles respectées par votre application ?
 * Fonctionnalité : l’application est-elle facile à utiliser et à comprendre par votre client ?
-* Performances : que se passe-t-il lors d’un pic d’utilisation ? Les éléments de l’application, tels que les glissières et les carrousels, sont-ils rapides et ne détournent pas l’expérience de l’expérience ?
+* Performances : que se passe-t-il lors d’un pic d’utilisation ? Les éléments de l’application, tels que les glissement et les carrousels, sont-ils rapides et ne détournent pas l’expérience de leur fonctionnement ?
 * Échec ou interruption - Que se passe-t-il en cas d’appel ou de notification entrant pendant l’exécution de votre application ? Que se passe-t-il en cas de panne de réseau ou de panne de courant ?
 * Installation et mises à jour - Comment se passe l’installation ? Comment les mises à jour sont-elles publiées ?
 * Technique - Votre application consomme-t-elle trop d’énergie d’un appareil ?

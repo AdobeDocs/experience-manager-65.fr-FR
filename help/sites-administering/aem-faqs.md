@@ -2,10 +2,10 @@
 title: FAQ sur AEM
 description: Utilisez ces FAQ pour comprendre, configurer et résoudre les problèmes ou workflows courants dans AEM.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 1a7805f063daf6f3dd07a2ff2d182e58fe7e63b8
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '936'
-ht-degree: 41%
+ht-degree: 39%
 
 ---
 
@@ -81,7 +81,7 @@ Voir [Comprendre les raisons de la mise à niveau AEM](https://helpx.adobe.com/e
 
 Si l’utilisateur, le téléchargement des fichiers de film ne dispose pas des autorisations de suppression sous le noeud de ressource, la suppression des noeuds de bloc échoue et le chargement redémarre.
 
-#### Quels sont les paramètres par défaut pour les configurations prêtes à l’emploi lors de la création d’une copie de langue ? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
+#### Quels sont les paramètres par défaut des configurations prêtes à l’emploi lors de la création d’une copie de langue ? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
 Lorsque vous créez une copie de langue via l’interface utilisateur tactile (**Références** > **Mettre à jour la copie de la langue**), un nouveau dossier DAM est créé sous la nouvelle langue et les ressources y sont référencées.
 

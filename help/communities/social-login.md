@@ -7,10 +7,10 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2773'
-ht-degree: 2%
+source-wordcount: '2672'
+ht-degree: 1%
 
 ---
 
@@ -65,7 +65,7 @@ La connexion sociale et l’exemple de Facebook we-retail ont été développés
 
 >[!NOTE]
 >
->Pour les versions AEM plus anciennes, si vous rencontrez une exception dans les journaux **Impossible d’extraire un jeton à partir de là**, effectuez une mise à niveau vers le dernier CFP pour cette version AEM.
+>Pour les versions AEM plus anciennes, si vous rencontrez une exception dans les journaux **Impossible d’extraire un jeton à partir de celui-ci**, effectuez une mise à niveau vers le dernier CFP pour cette version AEM.
 
 Pour obtenir des informations sur la version de l’API Facebook Graph, voir la section [Journal des modifications de l’API facebook](https://developers.facebook.com/docs/apps/changelog).
 
@@ -122,10 +122,10 @@ La variable [Adobe Application et fournisseur OAuth Granite](#adobe-granite-oaut
 
    >[!NOTE]
    >
-   >Les groupes peuvent être ajoutés ou supprimés à tout moment. Mais les appartenances des utilisateurs existants ne seront pas affectées. L’adhésion automatique s’applique uniquement aux nouveaux utilisateurs créés après la mise à jour de ce champ. Pour les sites où les utilisateurs anonymes sont désactivés, choisissez d’ajouter des utilisateurs au groupe de membres de communauté correspondant destiné à ce site de communauté fermé.
+   >Les groupes peuvent être ajoutés ou supprimés à tout moment. Mais les appartenances des utilisateurs existants ne sont pas affectées. L’adhésion automatique s’applique uniquement aux nouveaux utilisateurs créés après la mise à jour de ce champ. Pour les sites où les utilisateurs anonymes sont désactivés, choisissez d’ajouter des utilisateurs au groupe de membres de communauté correspondant destiné à ce site de communauté fermé.
 
    * Sélectionner **[!UICONTROL ENREGISTRER]**.
-   * **[!UICONTROL Publication]**.
+   * **[!UICONTROL Publier]**.
 
 Le résultat est un [Adobe Application et fournisseur OAuth Granite](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) qui ne nécessite aucune modification supplémentaire, sauf si vous ajoutez une portée supplémentaire (autorisations). La portée par défaut est les autorisations standard pour la connexion à Facebook. Si une portée supplémentaire est souhaitée, il est nécessaire de modifier directement la configuration OSGI. Si des modifications sont effectuées directement via le système/la console, évitez de modifier vos configurations de service cloud à partir de l’interface utilisateur tactile afin d’éviter tout écrasement.
 
@@ -181,7 +181,7 @@ Si des modifications sont nécessaires, sur chaque instance de publication AEM :
       * name
       * first_name
       * last_name
-      * link
+      * Lien
       * paramètres régionaux
       * picture
       * timezone
@@ -210,7 +210,7 @@ Une application de Twitter configurée est requise pour activer la connexion soc
 
 Suivez les dernières instructions pour créer une application de Twitter à l’adresse [https://apps.twitter.com](https://apps.twitter.com/).
 
-En général :
+En général :
 
 1. Saisissez un *Nom* qui identifiera votre application de Twitter aux utilisateurs de votre site web.
 1. Saisissez un *Description*.
@@ -265,19 +265,19 @@ La variable [Adobe Application et fournisseur OAuth Granite](#adobe-granite-oaut
 
      (*Obligatoire*) Saisissez un titre d’affichage qui identifie l’application de Twitter. Utilisez le même nom que celui saisi lors de la *Nom d’affichage* pour l’application de Twitter.
 
-   * **[!UICONTROL Clé du client]**
+   * **[!UICONTROL Clé client]**
 
      (*Obligatoire*) Saisissez la variable **Clé du client (API)** pour l’application de Twitter. Cela identifie la variable [Adobe Application et fournisseur OAuth Granite](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) de la boîte de dialogue.
 
-   * **[!UICONTROL Secret de consommateur]**
+   * **[!UICONTROL Secret du client]**
 
      (*Obligatoire*) Saisissez la variable ***Secret du client (API)*** pour l’application de Twitter.
 
-   * **[!UICONTROL Créer des utilisateurs]**
+   * **[!UICONTROL Création d’utilisateurs]**
 
      Si cette case est cochée, la connexion à l’aide d’un compte de Twitter crée une entrée d’utilisateur AEM et l’ajoute en tant que membre au ou aux groupes d’utilisateurs sélectionnés. La valeur par défaut est cochée (vivement recommandé).
 
-   * **[!UICONTROL Masquer les identifiants utilisateur]**
+   * **[!UICONTROL Masquage des ID utilisateur]**
 
      Laissez-le désélectionné.
 
@@ -287,7 +287,7 @@ La variable [Adobe Application et fournisseur OAuth Granite](#adobe-granite-oaut
 
    >[!NOTE]
    >
-   >Les groupes peuvent être ajoutés ou supprimés à tout moment. Mais les appartenances des utilisateurs existants ne seront pas affectées. L’adhésion automatique s’applique uniquement aux nouveaux utilisateurs créés après la mise à jour de ce champ. Pour les sites où les utilisateurs anonymes sont désactivés, ajoutez des utilisateurs au groupe de membres de communauté correspondant destiné à ce site de communauté fermé.
+   >Les groupes peuvent être ajoutés ou supprimés à tout moment. Mais les appartenances des utilisateurs existants ne sont pas affectées. L’adhésion automatique s’applique uniquement aux nouveaux utilisateurs créés après la mise à jour de ce champ. Pour les sites où les utilisateurs anonymes sont désactivés, ajoutez des utilisateurs au groupe de membres de communauté correspondant destiné à ce site de communauté fermé.
    >
 
 1. Sélectionner **[!UICONTROL ENREGISTRER]** et **[!UICONTROL Publier]**.
@@ -435,7 +435,7 @@ Pour localiser l’instance créée pour une application Facebook ou Twitter :
 
      (*Recommandé*) Un ou plusieurs groupes de membres auxquels sont ajoutés les utilisateurs créés. Pour AEM Communities, il est recommandé de répertorier le groupe de membres pour le site de la communauté.
 
-   * **[!UICONTROL URL de rappel]**
+   * **[!UICONTROL URL de callback]**
 
      (*Facultatif*) URL configurée avec les fournisseurs OAuth pour rediriger le client. Utilisez une URL relative pour utiliser l’hôte de la requête d’origine. Laissez vide pour utiliser l’URL demandée d’origine à la place. Le suffixe &quot;/callback/j_security_check&quot; est automatiquement ajouté à cette URL .
 
@@ -463,7 +463,7 @@ Sur une instance d’auteur, connectez-vous avec les privilèges d’administrat
 
    * Sous le noeud `/oak:index`
    * Sélectionner un noeud `ntBaseLucene`
-   * Sélectionnez **[!UICONTROL Copie]**
+   * Sélectionner **[!UICONTROL Copier]**
    * Sélectionnez `/oak:index`.
    * Sélectionner **[!UICONTROL Coller]**
    * Renommez Copie de ntBaseLucene en `ntBaseLucene-oauth`

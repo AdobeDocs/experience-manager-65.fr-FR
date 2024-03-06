@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2887'
-ht-degree: 50%
+source-wordcount: '2888'
+ht-degree: 49%
 
 ---
 
@@ -145,7 +145,7 @@ Suivez la même procédure pour configurer les tâches dans le **workflow Séanc
 Cette section décrit comment intégrer la gestion des informations produit (PIM) à votre projet de création.
 
 1. Accédez à un projet de séance photo de produit, puis cliquez sur le bouton **Ajouter un travail** sur l’icône **Workflows** carte.
-1. Sélectionnez le workflow **Séance photo de produit (intégration de Commerce)** pour démarrer le workflow **Séance photo de produit (intégration de Commerce)**. Si les informations produit ne sont pas disponibles sous `/etc/commerce`, sélectionnez le workflow **Séance photo de produit** et lancez le workflow **Séance photo de produit**.
+1. Sélectionnez le workflow **Séance photo de produit (intégration de Commerce)** pour démarrer le workflow **Séance photo de produit (intégration de Commerce)**. Si les informations sur le produit ne sont pas disponibles sous `/etc/commerce`, sélectionnez la variable **Séance photo du produit** et démarrez le **Séance photo du produit** workflow.
 
    ![Assistant Workflow](assets/chlimage_1-140a.png)
 

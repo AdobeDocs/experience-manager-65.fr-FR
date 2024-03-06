@@ -6,10 +6,10 @@ feature: Smart Tags, Search
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: ht
-source-wordcount: '1567'
-ht-degree: 100%
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+workflow-type: tm+mt
+source-wordcount: '1559'
+ht-degree: 96%
 
 ---
 
@@ -80,7 +80,7 @@ Le service applique des balises intelligentes aux rendus de ressources des types
 
 ## Intégration {#onboarding}
 
-Le service de contenu dynamique est disponible à l’achat sous forme de module complémentaire pour [!DNL Experience Manager]. Une fois que vous l’avez acheté, un e-mail est envoyé à l’administrateur de votre entreprise avec un lien vers [!DNL Adobe I/O].
+Le service de contenu dynamique est disponible à l’achat sous la forme d’un module complémentaire pour [!DNL Experience Manager]. Une fois l’achat effectué, un courrier électronique est envoyé à l’administrateur de votre entreprise avec un lien vers [!DNL Adobe I/O].
 
 L’administrateur peut suivre le lien pour intégrer le service de contenu dynamique à [!DNL Experience Manager]. Pour intégrer le service à [!DNL Experience Manager Assets], consultez [Configuration des balises intelligentes](config-smart-tagging.md).
 
@@ -182,7 +182,7 @@ Vous pouvez également attribuer un rang supérieur à une balise afin d’accro
 1. Dans la zone de recherche, recherchez des ressources à l’aide d’une balise comme mot-clé.
 1. Pour identifier une image que vous ne trouvez pas pertinente pour votre recherche, examinez les résultats de la recherche.
 1. Sélectionnez l’image, puis cliquez sur **[!UICONTROL Gérer les balises]** dans la barre d’outils.
-1. Examinez les balises sur la page **[!UICONTROL Gérer les balises]**. Si vous ne souhaitez pas que l’image puisse être recherchée sur la base d’une balise spécifique, sélectionnez la balise, puis cliquez sur **[!UICONTROL Supprimer]** dans la barre d’outils. Vous pouvez également cliquer sur le symbole `x` qui s’affiche à côté d’une balise.
+1. Examinez les balises sur la page **[!UICONTROL Gérer les balises]**. Si vous ne souhaitez pas que l’image soit recherchée sur la base d’une balise spécifique, sélectionnez la balise, puis cliquez sur **[!UICONTROL Supprimer]** dans la barre d’outils. Vous pouvez également cliquer sur le symbole `x` qui s’affiche à côté d’une balise.
 1. Pour attribuer un rang supérieur à une balise, vous pouvez aussi la sélectionner et cliquer sur **[!UICONTROL Promouvoir]** dans la barre d’outils. La balise objet d’une conversion est déplacée dans la section **[!UICONTROL Balises]**.
 1. Cliquez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL OK]**.
 1. Accédez à la page **[!UICONTROL Propriétés]** de l’image. Remarquez que la balise que vous avez convertie se voit attribuer une pertinence plus élevée et apparaît plus tôt dans les résultats de la recherche.

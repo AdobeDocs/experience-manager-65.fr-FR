@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '857'
 ht-degree: 59%
 
 ---
@@ -33,7 +33,7 @@ Dans la base de code AEM, les conventions suivantes sont utilisées :
 * Une implémentation unique d’une interface est nommée `<Interface>Impl`, à savoir : `ReaderImpl`.
 * Plusieurs implémentations d’une interface sont nommées `<Variant><Interface>`, à savoir : `JcrReader` et `FileSystemReader`.
 * Les classes de base abstraites sont nommées `Abstract<Interface>` ou `Abstract<Variant><Interface>`.
-* Les modules sont nommés `com.adobe.product.module`. Chaque artefact Maven ou bundle OSGi doit avoir son propre package.
+* Les packages sont nommés `com.adobe.product.module`. Chaque artefact Maven ou bundle OSGi doit avoir son propre package.
 * Les implémentations Java™ sont placées dans un package impl sous leur API.
 
 

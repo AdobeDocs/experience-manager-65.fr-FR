@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4431'
-ht-degree: 97%
+source-wordcount: '4433'
+ht-degree: 95%
 
 ---
 
@@ -516,7 +516,7 @@ Procédez comme suit pour ajouter une propriété à un type de ressource :
 
 ### Affichage des propriétés personnalisées sur la page de création des ressources {#display-custom-properties-on-the-asset-creation-page}
 
-Par défaut, les propriétés personnalisées ajoutées à de nouveaux onglets sont visibles uniquement dans la page de propriétés et non sur la page de création des ressources, car cette dernière ne dispose pas de la disposition sous forme d’onglets. Pour afficher les propriétés personnalisées sur la page de création des ressources avec d’autres propriétés, vous devez effectuer les opérations suivantes :
+Par défaut, les propriétés personnalisées ajoutées aux nouveaux onglets sont visibles uniquement sur la page Propriétés et non sur la page de création de la ressource, car la page de création de la ressource ne comporte pas de mise en page avec onglet. Pour afficher les propriétés personnalisées sur la page de création des ressources avec d’autres propriétés, vous devez effectuer les opérations suivantes :
 
 1. Faites un clic droit sur le dossier des éléments à l’emplacement suivant, puis sélectionnez **Nœud de recouvrement** :
 
@@ -757,7 +757,7 @@ Lorsque vous ajoutez la propriété sling:orderBefore pour spécifier l’emplac
 
 ## Activation de la recherche des propriétés personnalisées {#enable-search-for-custom-properties}
 
-Par défaut, la recherche de texte intégral n’inclut pas les propriétés personnalisées que vous ajoutez à l’interface utilisateur au moyen de CRX/DE.
+Par défaut, la recherche de texte intégral n’inclut pas les propriétés personnalisées que vous ajoutez à l’interface utilisateur à l’aide de CRX/DE.
 
 Pour inclure les propriétés personnalisées dans la recherche, vous devez autoriser l’indexation des propriétés personnalisées.
 

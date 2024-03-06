@@ -2,10 +2,10 @@
 title: Projets
 description: Les projets vous permettent de regrouper des ressources dans une seule entité dont l’environnement commun et partagé facilite la gestion de vos projets.
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 98%
+source-wordcount: '1360'
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ En tant qu’utilisateur, vous pouvez effectuer les actions suivantes :
 
 ## Conditions d’accès {#access-requirements}
 
-Les projets sont une fonction d’AEM standard et ne nécessitent aucune configuration supplémentaire.
+Envoie une fonction d’AEM standard sans nécessiter de configuration supplémentaire.
 
 Cependant, pour que les utilisateurs participant à des projets puissent voir d’autres utilisateurs/groupes lorsqu’ils se servent des fonctionnalités de la console Projets, telles que créer des projets, créer des tâches/workflows ou afficher et gérer l’équipe, ils doivent disposer d’un accès en lecture à `/home/users` et à `/home/groups`.
 

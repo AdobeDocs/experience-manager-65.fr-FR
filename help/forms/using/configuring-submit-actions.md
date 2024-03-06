@@ -6,10 +6,10 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '2597'
-ht-degree: 88%
+source-wordcount: '2593'
+ht-degree: 87%
 
 ---
 
@@ -235,7 +235,7 @@ La fonction de revalidation côté serveur permet également d’exécuter les v
 
 ### Quels éléments valider sur le serveur ?  {#what-to-validate-on-server-br}
 
-Toutes les validations de champ prêtes à l’emploi (OOTB) d’un formulaire adaptatif qui sont réexécutées sur le serveur sont les suivantes :
+Toutes les validations de champ d’usine d’un formulaire adaptatif qui sont réexécutées sur le serveur sont les suivantes :
 
 * Requis
 * Clause d’image de validation

@@ -7,10 +7,10 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '6940'
-ht-degree: 93%
+source-wordcount: '6944'
+ht-degree: 92%
 
 ---
 
@@ -79,7 +79,7 @@ Même si vous pouvez obtenir la plupart des cas d’utilisation avec n’importe
 * Pour déclencher une action selon plusieurs conditions, il est recommandé d’utiliser le concept d’action-condition. Par exemple, pour afficher et masquer le champ A en évaluant les conditions des champs B, C et D, utilisez le type de règle Afficher ou Masquer sur le champ A.
 * Utilisez le concept de condition-action ou d’action-condition si la règle contient une action pour une condition.
 * Si une règle vérifie une condition et exécute immédiatement une action en fournissant une valeur dans un champ ou en quittant un champ, il est recommandé de créer une règle avec le concept de condition-action ou le type de règle Lorsque sur le champ sur lequel la condition est évaluée.
-* La condition dans la règle Lorsque est évaluée lorsqu’un utilisateur modifie la valeur de l’objet pour lequel la règle Lorsque est appliquée. Cependant, si vous souhaitez déclencher l’action lorsque la valeur change du côté serveur, comme lorsque vous préremplissez la valeur, il est recommandé de créer une règle Lorsque qui déclenche l’action lors de l’initialisation du champ.
+* La condition dans la règle Lorsque est évaluée lorsqu’un utilisateur modifie la valeur de l’objet pour lequel la règle Lorsque est appliquée. Cependant, si vous souhaitez que l’action se déclenche lorsque la valeur change côté serveur, comme pour le préremplissage de la valeur, il est recommandé d’écrire une règle Lorsque qui déclenche l’action lorsque le champ est initialisé.
 * Lorsque vous créez des règles pour les menus déroulants, les boutons radio ou les cases à cocher, les options ou les valeurs de ces objets de formulaire sont préremplies dans l’éditeur de règles.
 
 ## Types d’opérateur et événements disponibles dans l’éditeur de règles {#available-operator-types-and-events-in-rule-editor}
@@ -121,7 +121,7 @@ Action 3 sur Objet C ;
 
 _
 
-Lorsque vous avez un composant à valeurs multiples, comme des boutons radio ou une liste, les options sont récupérées automatiquement et mises à disposition du créateur de la règle lorsque vous créez une règle pour ce composant. Vous n’avez pas besoin de saisir à nouveau les valeurs de l’option.
+Lorsque vous avez un composant à valeurs multiples, comme des boutons radio ou une liste, les options sont récupérées automatiquement et mises à disposition du créateur de la règle lorsque vous créez une règle pour ce composant. Il n’est pas nécessaire de saisir à nouveau les valeurs de l’option.
 
 Prenons l’exemple d’une liste comportant quatre options : rouge, bleu, vert et jaune. Lors de la création de la règle, les options (boutons radio) sont automatiquement récupérées et mises à la disposition de la personne chargée de la création de la règle comme suit :
 
@@ -308,9 +308,9 @@ Une règle Désactiver standard est structurée comme suit :
 
 ### Valider {#validate}
 
-Le type de règle **Valider** valide la valeur d’un champ à l’aide d’une expression. Par exemple, vous pouvez écrire une expression pour vérifier que la zone de texte permettant de spécifier le nom ne contient ni caractères spéciaux ni nombres.
+Le type de règle **Valider** valide la valeur d’un champ à l’aide d’une expression. Par exemple, vous pouvez créer une expression pour vérifier que le champ de texte qui indique un nom ne contient pas de caractères spéciaux ni de nombres.
 
-Une règle standard Valider est structurée comme suit :
+Une règle Valider standard est structurée comme suit :
 
 `Validate Object A;`
 
@@ -320,7 +320,7 @@ Une règle standard Valider est structurée comme suit :
 
 >[!NOTE]
 >
->Si la valeur spécifiée n’est pas conforme à la règle Valider, vous pouvez afficher un message de validation à l’intention de l’utilisateur. Vous pouvez spécifier le message dans le champ **[!UICONTROL Message de validation du script]** dans les propriétés de composant dans la barre latérale.
+>Si la valeur spécifiée n’est pas conforme à la règle Valider, vous pouvez afficher un message de validation à l’utilisateur ou utilisatrice. Vous pouvez spécifier le message dans le champ **[!UICONTROL Message de validation du script]** dans les propriétés de composant dans la barre latérale.
 
 ![script-validation](assets/script-validation.png)
 
@@ -408,7 +408,7 @@ AEM Forms suit le mode Éditeur de règles que vous avez utilisé en dernier po
 
 ### F. Boutons Terminé et Annuler {#f-done-and-cancel-buttons}
 
-Le bouton **[!UICONTROL Terminé]** permet d’enregistrer une règle. Vous pouvez enregistrer une règle incomplète. Toutefois, les règles incomplètes ne sont pas valides et ne s&#39;exécutent pas. Les règles enregistrées sur un objet de formulaire sont répertoriées lorsque vous lancez l’éditeur de règles la prochaine fois à partir du même objet de formulaire. Vous pouvez gérer des règles existantes dans cette vue. Pour plus d’informations, consultez la section [Gérer les règles](#manage-rules).
+Le bouton **[!UICONTROL Terminé]** permet d’enregistrer une règle. Vous pouvez enregistrer une règle incomplète. Toutefois, les règles incomplètes ne sont pas valides et ne s’exécutent pas. Les règles enregistrées sur un objet de formulaire sont répertoriées lorsque vous lancez l’éditeur de règles la prochaine fois à partir du même objet de formulaire. Vous pouvez gérer des règles existantes dans cette vue. Pour plus d’informations, consultez la section [Gérer les règles](#manage-rules).
 
 Le bouton **[!UICONTROL Annuler]** annule tous les changements apportés à une règle et ferme l’éditeur de règles.
 
@@ -739,7 +739,7 @@ Vous pouvez effectuer les actions suivantes sur les règles :
 
 * **Développer/Réduire** : la colonne Contenu dans la liste des règles affiche le contenu des règles. Si l’intégralité du contenu de la règle n’est pas visible dans la vue par défaut, sélectionnez ![expand-rule-content](assets/expand-rule-content.png) pour l’étendre.
 
-* **Réorganiser** : toute nouvelle règle que vous créez est empilée au bas de la liste des règles. Les règles sont exécutées de haut en bas. La règle en haut s’exécute en premier, suivie des autres règles du même type. Par exemple, si vous avez les règles Lorsque, Afficher, Activer et Lorsque en première, deuxième, troisième et quatrième position depuis le haut respectivement, la règle Lorsque du haut est exécutée en premier suivie de la règle Lorsque à la quatrième position. Ensuite, les règles Afficher et Activer seront exécutées.
+* **Réorganiser** : toute nouvelle règle que vous créez est empilée au bas de la liste des règles. Les règles sont exécutées de haut en bas. La règle de haut s’exécute en premier, suivie d’autres règles du même type. Par exemple, si vous disposez de règles Lorsque, Afficher, Activer et Lorsque à la première, la deuxième, la troisième et la quatrième position depuis le haut, respectivement, la règle Lorsque en haut est exécutée en premier, suivie de la règle Lorsque à la quatrième position. Ensuite, les règles Afficher et Activer seront exécutées.
 Vous pouvez modifier l’ordre d’une règle en appuyant sur ![sort-rules](assets/sort-rules.png) en regard ou la faire glisser et la déposer dans l’ordre souhaité dans la liste.
 
 * **Modifier** : pour modifier une règle, cochez la case située en regard du titre de la règle. D’autres options de modification et de suppression de la règle s’affichent. Sélectionner **Modifier** pour ouvrir la règle sélectionnée dans l’éditeur de règles en mode visuel ou éditeur de code selon le mode utilisé pour créer la règle.

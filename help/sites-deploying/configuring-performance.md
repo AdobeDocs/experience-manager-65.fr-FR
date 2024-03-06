@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6469'
+source-wordcount: '6470'
 ht-degree: 99%
 
 ---
@@ -509,7 +509,7 @@ Formule de calcul du ratio :
 
 Par exemple, si le nombre total de requêtes est de 129 491 et que le nombre de requêtes servies par l’instance de publication est de 58 959, le ratio de cache est : **(129 491 - 58 959)/129 491= 54,5 %**.
 
-Si vous ne disposez pas d’une association un-à-un éditeur/dispatcher, ajoutez les requêtes de tous les dispatchers et éditeurs ensemble pour obtenir une mesure précise. Voir aussi [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md).
+Si vous ne disposez pas d’une association d’éditeur/dispatcher un à un, ajoutez les requêtes de tous les dispatchers et éditeurs ensemble pour obtenir une mesure précise. Voir aussi [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md).
 
 >[!NOTE]
 >

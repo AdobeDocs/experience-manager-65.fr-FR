@@ -10,10 +10,10 @@ docset: aem65
 feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '6664'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -65,7 +65,7 @@ Dans Experience Platform Tags, les concepts d’*éléments de données* et de *
 
 Un élément de données dans Experience Platform Tags est une propriété nommée dont la valeur est définie de manière statique ou calculée de manière dynamique en fonction du statut d’une page web ou des données des visionneuses Dynamic Media.
 
-Les options disponibles pour une définition d’élément de données dépendent de la liste des extensions installées dans la propriété Experience Platform Tags. L’extension Core est préinstallée et prête à l’emploi dans n’importe quelle configuration. Cette extension Core permet de définir un élément de données dont la valeur provient d’un cookie, de code JavaScript, d’une chaîne de requête, ainsi que de nombreuses autres sources.
+Les options disponibles pour une définition d’élément de données dépendent de la liste des extensions installées dans la propriété Experience Platform Tags. L’extension Core est préinstallée et prête à l’emploi dans n’importe quelle configuration. Cette extension Core permet de définir un élément de données dont la valeur provient d’un cookie, d’un code JavaScript, d’une chaîne de requête et de nombreuses autres sources.
 
 Pour le suivi d’Adobe Analytics, d’autres extensions doivent être installées, tel que décrit dans la section [Installation et configuration des extensions](#installing-and-setup-of-extensions). L’extension Visionneuses Dynamic Media permet de définir un élément de données qui est une valeur d’argument de l’événement Visionneuse dynamique. Par exemple, il est possible de faire référence au type de visionneuse ou au nom de ressource indiqué par la visionneuse lors du chargement, au niveau de zoom indiqué lorsque l’utilisateur effectue un zoom, etc.
 

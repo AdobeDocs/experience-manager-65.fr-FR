@@ -4,10 +4,10 @@ description: Découvrez comment résoudre les problèmes les plus courants liés
 feature: Multi Site Manager
 role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
-workflow-type: ht
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+workflow-type: tm+mt
 source-wordcount: '761'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 

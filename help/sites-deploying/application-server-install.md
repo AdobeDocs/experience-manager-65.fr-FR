@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '1168'
-ht-degree: 40%
+ht-degree: 41%
 
 ---
 
@@ -247,6 +247,6 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
 
 ## Résolution des problèmes {#troubleshooting}
 
-Pour plus d’informations sur les problèmes qui peuvent survenir lors de l’installation, voir :
+Pour plus d’informations sur les problèmes qui peuvent se produire lors de l’installation, voir :
 
 * [Résolution des problèmes](/help/sites-deploying/troubleshooting.md)

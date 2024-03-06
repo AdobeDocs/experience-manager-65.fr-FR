@@ -3,7 +3,7 @@ title: Configuration des modules externes d’éditeur de texte enrichi
 description: Apprenez à configurer les modules externes d’éditeur de texte enrichi d’Adobe Experience Manager afin d’activer différentes fonctionnalités.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '4391'
 ht-degree: 65%
@@ -327,7 +327,7 @@ Tout texte saisi dans l’éditeur de texte enrichi est placé dans une balise b
 
 >[!NOTE]
 >
->Si une balise block, par exemple, une &lt;hr> balise, ne peut pas être affectée à un paragraphe, ce n’est pas un cas d’utilisation valide pour un module externe paraformat.
+>Si une balise block, par exemple, une &lt;hr> , ne peut pas être affectée à un paragraphe, il ne s’agit pas d’un cas d’utilisation valide pour un module externe paraformat.
 
 Lorsque le module externe Formats de paragraphe est activé pour la première fois, aucun format de paragraphe par défaut n’est disponible. La liste contextuelle est vide. Pour fournir aux auteurs des formats de paragraphe, procédez comme suit :
 

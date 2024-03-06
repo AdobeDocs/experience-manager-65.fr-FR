@@ -7,10 +7,10 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 3fe9b3d4cf6ddf7d64dbece7d62d7f18dfa183f2
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4054'
-ht-degree: 86%
+source-wordcount: '4057'
+ht-degree: 85%
 
 ---
 
@@ -41,7 +41,7 @@ Ce document répertorie les plateformes client et serveur prises en charge pour 
 
 #### Programme complet
 
-- **Prise en charge de la mise à niveau pour les programmes d’installation complets**: un programme d’installation complet est publié avec chaque 6e version du Service Pack d’AEM. Par exemple, un programme d’installation complet a été publié avec les versions 6.5.12.0 et 6.5.18.0 SP. AEM Forms permet des mises à niveau directes exclusivement à partir des deux derniers programmes d’installation complets. Par exemple, AEM Forms facilite les mises à niveau directes vers la version 6.5.18.0 uniquement à partir des deux derniers programmes d’installation complets, à savoir 6.5.12.0 et 6.5.6.0. Si vous devez effectuer une mise à niveau à partir d’une mise à niveau antérieure, vous pouvez utiliser une mise à niveau en plusieurs étapes pour accéder d’abord à une version complète du programme d’installation prise en charge, puis à la dernière version.
+- **Prise en charge de la mise à niveau pour les programmes d’installation complets**: un programme d’installation complet est lancé avec chaque sixième version AEM Service Pack. Par exemple, un programme d’installation complet a été publié avec les versions 6.5.12.0 et 6.5.18.0 SP. AEM Forms permet des mises à niveau directes exclusivement à partir des deux derniers programmes d’installation complets. Par exemple, AEM Forms facilite les mises à niveau directes vers la version 6.5.18.0 uniquement à partir des deux derniers programmes d’installation complets, à savoir 6.5.12.0 et 6.5.6.0. Si vous devez effectuer une mise à niveau à partir d’une mise à niveau antérieure, vous pouvez utiliser une mise à niveau en plusieurs étapes pour accéder d’abord à une version complète du programme d’installation prise en charge, puis à la dernière version.
 
 - **Obsolescence et suppression**: la prise en charge de la plateforme est mise à jour à chaque version complète du programme d’installation. Tout logiciel marqué comme obsolète dans la matrice des plates-formes lors d’une version complète du programme d’installation peut être supprimé de la matrice des plates-formes prises en charge dans une version ultérieure complète du programme d’installation, indiquant la fin de la prise en charge du logiciel.
 
@@ -354,8 +354,8 @@ Tenez compte des exceptions suivantes lorsque vous choisissez la plateforme de c
 
 1. AEM Forms on JEE ne prend pas en charge IBM® WebSphere® avec MySQL.
 1. AEM Forms on JEE ne prend pas en charge JBoss® sur SUSE® Linux® Enterprise Server 12. Seul IBM® WebSphere® est pris en charge sur SUSE® Linux® Enterprise Server 12.
-1. AEM Forms on JEE ne prend en charge aucun autre JDK avec JBoss® qu’Oracle Java™ SE.
-1. AEM Forms on JEE ne prend en charge aucun autre JDK avec IBM® WebSphere® que le JDK IBM®.
+1. AEM Forms on JEE ne prend en charge aucun JDK avec JBoss® autre que Oracle Java™ SE.
+1. AEM Forms on JEE ne prend en charge aucun autre JDK avec IBM® WebSphere® qu’IBM® JDK.
 1. Le référentiel CRX prend en charge la persistance de type TarMK, MongoDB et les bases de données relationnelles (RDBMK). Vous ne pouvez pas avoir deux systèmes de bases de données différents entre le serveur d’applications et le référentiel CRX. Cependant, dans un environnement AEM Forms on JEE, vous pouvez utiliser MongoMK avec le référentiel CRX et une base de données relationnelle prise en charge avec le serveur d’applications.
 1. AEM Forms on JEE ne prend pas en charge le serveur d’applications WebSphere® sur CentOS.
 1. AEM Forms on JEE ne prend pas en charge le contrôle d’accès basé sur les rôles (RBAC) JBoss®.
@@ -375,7 +375,7 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
 - AEM Forms on JEE prend en charge des plateformes en fonction de la prise en charge offerte par les fournisseurs tiers. Certaines combinaisons peuvent ne pas être autorisées par les fournisseurs tiers. Par exemple, de nombreux fournisseurs n’ont pas certifié leurs serveurs d’applications avec Oracle. Par conséquent, AEM Forms on JEE ne prend pas non plus en charge ces combinaisons. Pour vous assurer de choisir les versions prises en charge des logiciels, vérifiez également le tableau de prise en charge des fournisseurs tiers.
 - AEM Forms on JEE ne prend pas en charge TarMK Cold Standby.
 - AEM Forms on JEE ne prend pas en charge la mise en cluster verticale.
-- AEM Forms on JEE ne prend pas en charge la base de données MySQL sur un environnement organisé en clusters.
+- AEM Forms on JEE ne prend pas en charge la base de données MySQL dans un environnement organisé en grappe.
 - Pour obtenir la liste des plateformes supprimées ou mises à jour, voir le document [Résumé des nouvelles fonctionnalités d’AEM 6.5 Forms](../../forms/using/whats-new.md).
 
 ### Serveurs LDAP (facultatifs) {#ldap-servers-optional}

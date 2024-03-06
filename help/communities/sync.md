@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '2471'
-ht-degree: 9%
+source-wordcount: '2403'
+ht-degree: 6%
 
 ---
 
@@ -75,7 +75,7 @@ Dans le cadre du processus, les nouvelles pages du site sont répliquées vers t
 
 Par conception, les données utilisateur créées dans l’environnement de publication n’apparaissent pas dans l’environnement de création et inversement.
 
-Lorsque la variable [Administration et sécurité des utilisateurs](/help/sites-administering/security.md) est utilisée pour ajouter de nouveaux utilisateurs dans l’environnement de publication. La synchronisation des utilisateurs synchronise les nouveaux utilisateurs et leur appartenance à un groupe avec d’autres instances de publication, si nécessaire. La synchronisation des utilisateurs synchronise également les groupes d’utilisateurs créés via la console de sécurité.
+Lorsque la variable [Administration et sécurité des utilisateurs](/help/sites-administering/security.md) est utilisée pour ajouter de nouveaux utilisateurs dans l’environnement de publication. La synchronisation des utilisateurs synchronise les nouveaux utilisateurs et leur appartenance à un groupe avec d’autres instances de publication, si nécessaire. La synchronisation des utilisateurs et des utilisatrices synchronise également les groupes d’utilisateurs et d’utilisatrices créés via la console de sécurité.
 
 ### L’utilisateur publie du contenu lors de la publication {#user-posts-content-on-publish}
 
@@ -83,9 +83,9 @@ Pour le contenu généré par l’utilisateur, les données saisies sur une inst
 
 ## Bonnes pratiques {#bestpractices}
 
-Par défaut, la synchronisation des utilisateurs est **disabled**. L’activation de la synchronisation des utilisateurs et utilisatrices implique de modifier les configurations OSGi *existantes.* Aucune nouvelle configuration ne doit être ajoutée suite à l’activation de la synchronisation des utilisateurs et utilisatrices.
+Par défaut, la synchronisation des utilisateurs est **disabled**. L’activation de la synchronisation des utilisateurs implique de modifier *existant* Configurations OSGi. Aucune nouvelle configuration ne doit être ajoutée suite à l’activation de la synchronisation des utilisateurs et utilisatrices.
 
-La synchronisation des utilisateurs repose sur l’environnement de création pour gérer les distributions de données utilisateur, même si les données utilisateur ne sont pas créées en mode de création.
+La synchronisation des utilisateurs s’appuie sur l’environnement de création pour gérer les distributions de données utilisateur, même si les données utilisateur ne sont pas créées sur l’instance de création.
 
 **Conditions préalables**
 
@@ -100,7 +100,7 @@ La synchronisation des utilisateurs repose sur l’environnement de création po
 
 Les paramétrages suivants sont nécessaires pour permettre la synchronisation des utilisateurs sur AEM Communities. Assurez-vous que ces configurations sont correctes pour empêcher l’échec de la distribution de contenu sling.
 
-### Agent de distribution Apache Sling - Fabrique d’agents de synchronisation {#apache-sling-distribution-agent-sync-agents-factory}
+### Agent de distribution Apache Sling - Fabrique d’agents de synchronisation {#apache-sling-distribution-agent-sync-agents-factory}
 
 Cette configuration récupère le contenu à synchroniser dans les éditeurs. La configuration se trouve sur l’instance d’auteur . L’auteur doit effectuer le suivi de tous les éditeurs qui sont là et où synchroniser toutes les informations.
 
@@ -128,7 +128,7 @@ Pour configurer la configuration des agents de synchronisation Apache Sling :
 
    ![sync-agent-fact](assets/sync-agent-fact.png)
 
-### Distribution Granite d’Adobe - Prestataire secret de transport de mot de passe chiffré {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
+### Distribution Granite des Adobes - Fournisseur secret de transport de mot de passe chiffré {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
 Il permet à l’auteur d’identifier l’utilisateur autorisé, comme ayant l’autorisation de synchroniser les données utilisateur de l’auteur à la publication.
 
@@ -153,7 +153,7 @@ Pour connecter l’auteur aux éditeurs à l’aide d’un utilisateur autorisé
 
 ![granite-pasword-trans](assets/granite-paswrd-trans.png)
 
-### Agent de distribution Apache Sling - Fabrique d’agents de file d’attente {#apache-sling-distribution-agent-queue-agents-factory}
+### Agent de distribution Apache Sling - Fabrique d’agents de file d’attente {#apache-sling-distribution-agent-queue-agents-factory}
 
 Cette configuration est utilisée pour configurer les données que vous souhaitez synchroniser entre les éditeurs. Lorsque des données sont créées/mises à jour dans les chemins spécifiés dans **Racines autorisées**, &quot;var/community/distribution/diff&quot; est activé et le réplicateur créé récupère les données d’un éditeur et les installe sur d’autres éditeurs.
 
@@ -217,7 +217,7 @@ Pour modifier l’intervalle d’interrogation :
 
    ![scheduled-trigger](assets/scheduled-trigger.png)
 
-### Écouteur de synchronisation des utilisateurs et utilisatrices d’AEM Communities {#aem-communities-user-sync-listener}
+### Écouteur de synchronisation des utilisateurs AEM Communities {#aem-communities-user-sync-listener}
 
 Pour les problèmes de distribution Sling où il y a une incohérence dans les abonnements et les suivants, vérifiez si les propriétés suivantes dans **Écouteur de synchronisation des utilisateurs AEM Communities** les configurations sont définies :
 
@@ -267,7 +267,7 @@ Sur chaque instance de publication AEM :
 
    `system`
 
-   `rep:cache` (puisque nous utilisons des sessions persistantes, nous n’avons pas besoin de synchroniser ce noeud avec différents éditeurs).
+   `rep:cache` (comme les sessions persistantes sont utilisées, il n’est pas nécessaire de synchroniser ce noeud avec différents éditeurs).
 
    ![user-sync-listner](assets/user-sync-listner.png)
 
@@ -284,7 +284,7 @@ Pour garantir un identifiant Sling unique des éditeurs dans la ferme de publica
 
    ![slingid](assets/slingid.png)
 
-   Si l’identifiant Sling d’une instance de publication correspond à l’identifiant Sling de toute autre instance de publication, alors :
+   Si l’identifiant Sling d’une instance de publication correspond à l’identifiant Sling d’une autre instance de publication, alors :
 
 1. Arrêtez l’une des instances de publication ayant un identifiant Sling correspondant.
 1. Dans le `crx-quickstart/launchpad/felix` répertoire, rechercher et supprimer le fichier nommé *sling.id.fi.*
@@ -302,7 +302,7 @@ Pour garantir un identifiant Sling unique des éditeurs dans la ferme de publica
 
 Répétez ces étapes jusqu’à ce que toutes les instances de publication aient un identifiant Sling unique.
 
-### Fabrique de générateur de module vault {#vault-package-builder-factory}
+### Fabrique de générateur de package vault {#vault-package-builder-factory}
 
 Pour que les mises à jour soient correctement synchronisées, il est nécessaire de modifier le créateur de modules Vault pour la synchronisation des utilisateurs.
 Dans `/home/users`, un `*/rep:cache` est créé. Il s’agit d’un cache qui permet de trouver que si nous effectuons une requête sur le nom principal d’un noeud, ce cache peut être utilisé directement.

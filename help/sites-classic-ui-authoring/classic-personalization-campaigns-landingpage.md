@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '3360'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -451,7 +451,7 @@ Pour ajouter des composants sur la page de destination, faites-les glisser et d�
 
 La suppression d’une page de destination fonctionne comme la suppression d’une page AEM normale.
 
-La seule exception est que lorsque vous supprimez une page de destination pour postes de travail, elle supprime également la page de destination pour mobiles correspondante (si elle existe), mais pas l’inverse.
+La seule exception est que lorsque vous supprimez une landing page pour ordinateur de bureau, elle supprime également la landing page mobile correspondante (si elle est présente), mais pas de manière inversée.
 
 ### Publier une page de destination {#publishing-a-landing-page}
 

@@ -6,10 +6,10 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '3842'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -85,7 +85,7 @@ Utilisez l’Éditeur du dictionnaire de données pour créer un dictionnaire de
    * Seul le type composite est autorisé en tant que DDE de niveau supérieur dans un dictionnaire de données.
    * Le nom, le nom de référence et le type d’élément sont des champs obligatoires pour un dictionnaire de données et des DDE.
    * Le nom de référence doit être unique.
-   * Un DDE parent (composite) ne peut pas avoir deux enfants portant le même nom.
+   * Un DDE parent (composite) ne peut pas avoir deux enfants portant le même nom.
    * Les énumérations contiennent uniquement des types de chaînes primitifs.
 
    Pour plus d’informations sur les éléments composites, de collection ou primitifs et l’utilisation d’éléments de dictionnaire de données, consultez la section [Mapper des éléments du dictionnaire de données avec le schéma XML](#mappingddetoschema).

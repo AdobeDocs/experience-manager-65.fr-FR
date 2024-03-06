@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '2672'
-ht-degree: 70%
+ht-degree: 69%
 
 ---
 
@@ -60,7 +60,7 @@ Le tableau ci-dessous répertorie les configurations de déploiement installées
   </tr>
   <tr>
    <td>Configuration de déploiement standard</td>
-   <td>Configuration du déploiement standard qui permet de démarrer le processus de déploiement à partir d’un déclencheur de déploiement et d’actions d’exécutions : créer, mettre à jour, supprimer le contenu et trier les nœuds enfants.</td>
+   <td>Configuration de déploiement standard qui permet de lancer le processus de déploiement sur le déclencheur de déploiement et exécute des actions : créer, mettre à jour, supprimer du contenu et classer les noeuds enfants.</td>
    <td>En cas de déploiement</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referenceUpdate<br /> productUpdate<br /> orderChildren</td>
   </tr>

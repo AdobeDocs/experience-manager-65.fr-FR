@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 74%
+source-wordcount: '631'
+ht-degree: 70%
 
 ---
 
@@ -96,7 +96,7 @@ Lors de la migration, tenez compte des principales différences suivantes entre 
  </tbody>
 </table>
 
-En d’autres termes, la migration d’une section de votre interface utilisateur de l’IU classique vers l’IU tactile correspond au portage d’un *Widget ExtJS* en *Composant Sling*. Pour plus de facilité, l’interface utilisateur tactile est basée sur le framework de l’interface utilisateur Granite, qui fournit déjà certains composants Sling pour l’interface utilisateur (appelés composants de l’interface utilisateur Granite).
+En d’autres termes, la migration d’une section de votre interface utilisateur de l’IU classique vers l’IU tactile signifie qu’une *Widget ExtJS* à *Composant Sling*. Pour plus de facilité, l’interface utilisateur tactile est basée sur le framework de l’interface utilisateur Granite, qui fournit déjà certains composants Sling pour l’interface utilisateur (appelés composants de l’interface utilisateur Granite).
 
 Avant de commencer, vérifiez le statut et les recommandations associées :
 

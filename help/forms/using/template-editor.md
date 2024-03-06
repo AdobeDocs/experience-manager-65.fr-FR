@@ -7,10 +7,10 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2029'
-ht-degree: 76%
+source-wordcount: '2030'
+ht-degree: 77%
 
 ---
 
@@ -103,7 +103,7 @@ En-tête et pied de page ajoutés dans le calque de structure
 
 Lorsque vous modifiez le modèle avec le calque de structure sélectionné, vous pouvez déverrouiller l’en-tête et le pied de page du modèle. Si un composant est déverrouillé dans le modèle, les auteurs de formulaires peuvent le modifier dans le formulaire adaptatif qui l’utilise. Le verrouillage d’un composant empêche les auteurs de formulaires de le modifier dans le formulaire adaptatif. L’option de verrouillage est disponible dans la barre d’outils des composants.
 
-Par exemple, vous pouvez ajouter le composant d’en-tête dans le modèle. Lorsque vous sélectionnez le composant, vous pouvez voir une option de verrouillage dans la barre d’outils de composant. En règle générale, l’en-tête comprend le nom et le logo de la société, et vous ne souhaitez pas que les auteurs de formulaires modifient le logo et l’en-tête d’un modèle. Dans un formulaire adaptatif créé à l’aide du modèle avec le composant d’en-tête verrouillé, les auteurs de formulaires ne peuvent pas modifier le logo et le nom de la société.
+Par exemple, vous pouvez ajouter le composant d’en-tête dans le modèle. Lorsque vous sélectionnez le composant, vous pouvez voir une option de verrouillage dans la barre d’outils de composant. En règle générale, l’en-tête comprend le nom et le logo de la société, et vous ne souhaitez pas que les auteurs et autrices du formulaire modifient ces informations dans un modèle. Dans un formulaire adaptatif créé à l’aide du modèle avec le composant d’en-tête verrouillé, les auteurs de formulaires ne peuvent pas modifier le logo et le nom de la société.
 
 >[!NOTE]
 >

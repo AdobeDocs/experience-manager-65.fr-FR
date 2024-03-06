@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3089'
-ht-degree: 4%
+source-wordcount: '3084'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ Voir [Prise en main d’AEM Communities](/help/communities/getting-started.md) o
 >
 >Les menus principaux des communautés pour la création de [sites communautaires](/help/communities/sites-console.md), [modèles de site de communauté](/help/communities/sites.md), [modèles de groupe de communautés](/help/communities/tools-groups.md), et [fonctions de communauté](/help/communities/functions.md) sont utilisables uniquement dans l’environnement de création.
 
-## Conditions préalables requises {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Avant de créer un site de communauté, il s’agit de *required* à :
 
@@ -59,7 +59,7 @@ Pour créer un site de communauté, sélectionnez la variable **Créer** Icône
 
 Pour accéder à un site communautaire existant en vue de créer, modifier, publier, exporter ou ajouter un groupe imbriqué, sélectionnez l’icône de dossier du site.
 
-## Création de site {#site-creation}
+## Création du site {#site-creation}
 
 La console de création de site fournit une approche détaillée pour assembler les fonctionnalités du site en fonction d’une [modèle de site communautaire](/help/communities/sites.md) et .
 
@@ -75,7 +75,7 @@ Le processus de création est une série d’étapes présentées sous la forme 
 
 Dans le panneau Modèle de site, le titre, la description, la racine du site, la langue de base, le nom et le modèle de site sont spécifiés :
 
-* **Titre du site de la communauté**
+* **Titre du site communautaire**
 
   Titre affiché du site.
 
@@ -93,7 +93,7 @@ Dans le panneau Modèle de site, le titre, la description, la racine du site, la
 
   La racine par défaut est `/content/sites`, mais la racine peut être déplacée vers n’importe quel emplacement du site web.
 
-* **Langue de base du site de la communauté**
+* **Langue de base du site communautaire**
 
   (Laissez intacte pour une seule langue : anglais) Utilisez le menu déroulant pour en choisir une. *ou plus* des langues de base disponibles (allemand, italien, français, japonais, espagnol, portugais (Brésil), chinois (traditionnel) et chinois (simplifié). Un site de communauté est créé pour chaque langue ajoutée et existe dans le même dossier de site en suivant les bonnes pratiques décrites dans la section [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md). La page racine de chaque site contient une page enfant nommée par le code de langue de l’une des langues sélectionnées, comme &quot;en&quot; pour l’anglais ou &quot;fr&quot; pour le français.
 
@@ -174,31 +174,31 @@ Le panneau Paramètres contient plusieurs sous-panneaux présentant les fonction
 
 ![createsitesettings](assets/createsitesettings.png)
 
-* **Autoriser l&#39;enregistrement d&#39;utilisateur**
+* **Autoriser l’enregistrement des utilisateurs**
 
   Si cette case est cochée, les visiteurs du site peuvent devenir membres de la communauté en s’inscrivant automatiquement.
 Si cette option est désactivée, le site de la communauté est *Restriction* et les visiteurs du site doivent être affectés au groupe des membres du site de la communauté, faire une demande ou recevoir une invitation par courrier électronique. Si cette option n’est pas cochée, l’accès anonyme ne doit pas être autorisé.
 Décochez une *private* site de la communauté. La valeur par défaut est cochée.
 
-* **Autoriser l&#39;accès anonyme**
+* **Autoriser l’accès anonyme**
 
   Si cette case est cochée, le site de la communauté est *open* et tout visiteur du site peut y accéder.
 Si cette option n’est pas cochée, seuls les membres connectés peuvent accéder au site.
 Décochez une *private* site de la communauté. La valeur par défaut est cochée.
 
-* **Autoriser les messages**
+* **Autoriser la messagerie**
 
   Si cette case est cochée, les membres peuvent envoyer des messages les uns aux autres et au groupe sur le site de la communauté.
 Si cette option n’est pas cochée, la messagerie n’est pas configurée pour la communauté.
 La case par défaut est décochée.
 
-* **Autoriser les connexions sociales : Facebook**
+* **Autoriser les connexions aux réseaux sociaux : Facebook**
 
   Si cette case est cochée, les visiteurs du site peuvent se connecter à l’aide des informations d’identification de leur compte Facebook. La sélection [Configuration du cloud facebook](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) doit être configuré pour ajouter des utilisateurs au groupe de membres du site de la communauté une fois le site de la communauté créé.
 Si cette option n’est pas cochée, aucune connexion Facebook n’est présentée.
 Laissez la case décochée pour un événement *private* site de la communauté. La case par défaut est décochée.
 
-* **Autoriser les connexions sociales : Twitter**
+* **Autoriser les connexions aux réseaux sociaux : Twitter**
 
   Si cette case est cochée, les visiteurs du site peuvent se connecter à l’aide des informations d’identification de leur compte de Twitter. La sélection [Configuration du cloud de twitter](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) doit être configuré pour ajouter des utilisateurs au groupe de membres du site de la communauté une fois le site de la communauté créé.
 Si cette option n’est pas cochée, aucun identifiant de Twitter n’est présenté.
@@ -228,7 +228,7 @@ La variable [rôles des membres de la communauté](/help/communities/users.md) s
 
 Il est facile de trouver des membres de la communauté à l’aide d’une recherche anticipée.
 
-* **Gestionnaires de la communauté**
+* **Chefs de communauté**
 
   Commencez à taper pour sélectionner un ou plusieurs membres de la communauté ou groupes de membres pouvant gérer les membres de la communauté et les groupes de membres.
 
@@ -250,11 +250,11 @@ Il est facile de trouver des membres de la communauté à l’aide d’une reche
 
 Le paramètre global de modération du contenu généré par l’utilisateur est contrôlé par ces paramètres. Les composants individuels disposent de paramètres supplémentaires pour contrôler la modération.
 
-* **Le contenu est prémodéré**
+* **Contenu prémodéré**
 
   Si cette case est cochée, le contenu de la communauté publié n’apparaît pas tant qu’il n’a pas été approuvé par un modérateur. La case par défaut est décochée. Pour plus d’informations, voir [Modération de contenu de la communauté](/help/communities/moderate-ugc.md#premoderation).
 
-* **Seuil de marquage avant que le contenu ne soit masqué**
+* **Seuil de marquage avant le masquage du contenu**
 
   Si la valeur est supérieure à 0, le nombre de fois où une rubrique ou une publication doit être marquée avant d’être masquée dans la vue publique. S’il est défini sur -1, le sujet ou la publication marqué n’est jamais masqué à la vue du public. La valeur par défaut est 5.
 
@@ -262,14 +262,14 @@ Le paramètre global de modération du contenu généré par l’utilisateur est
 
 ![site-analytics](assets/site-analytics.png)
 
-* **Enable Analytics (Activer Adobe Analytics)**
+* **Activation d’Analytics**
 
   Disponible uniquement lorsque Adobe Analytics a été [configuré](/help/communities/analytics.md) pour les fonctionnalités de Communities.
 La case par défaut est décochée. Lorsque cette case est cochée, un menu de sélection supplémentaire s’affiche :
 
 ![site-analytics-enable](assets/site-analytics-enable.png)
 
-* **Référence de la structure de configuration du cloud**
+* **Référence du framework de configuration cloud**
 
   Dans le menu déroulant, sélectionnez la structure de service Analytics Cloud configurée pour ce site de la communauté.
   `Communities` est l’exemple de structure à partir de [Configuration d’Analytics pour les fonctionnalités des communautés](/help/communities/analytics.md#aem-analytics-framework-configuration) la documentation.
@@ -278,7 +278,7 @@ La case par défaut est décochée. Lorsque cette case est cochée, un menu de s
 
 ![site-translation](assets/site-translation.png)
 
-* **Activer la traduction automatique**
+* **Autoriser la traduction automatique**
 
   Lorsque cette option est cochée (la valeur par défaut est décochée), la traduction automatique est activée pour le contenu généré par l’utilisateur dans le site. Cela n’affecte aucun autre contenu, tel que le contenu de la page, même si le site est configuré en tant que site multilingue. Voir [Traduction de contenu généré par l’utilisateur](/help/communities/translate-ugc.md) pour plus d’informations sur la configuration d’un service de traduction sous licence pour AEM Communities. Voir [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md) pour obtenir une vue d’ensemble complète.
 
@@ -296,13 +296,13 @@ La case par défaut est décochée. Lorsque cette case est cochée, un menu de s
 
   Pour un site web comportant plusieurs copies de langue, un magasin partagé global fournit un fil de conversation unique, visible à partir de chaque copie de langue. Pour ce faire, sélectionnez l’une des langues incluses comme copie de langue. La valeur par défaut est *Aucun magasin partagé global*.
 
-* **Sélectionner la configuration du fournisseur de traduction**
+* **Choisir la configuration du fournisseur de traduction**
 
   Choisissez une [structure d’intégration de traduction](/help/sites-administering/tc-tic.md) créé pour le fournisseur de traduction sous licence.
 
-* **Sélectionner les options de traduction pour votre site de la communauté**
+* **Sélectionner les options de traduction du site de votre communauté**
 
-   * **Traduire la page entière**
+   * **Traduire toute la page**
 
      Si cette option est sélectionnée, tout le contenu généré par l’utilisateur d’une page est traduit dans la langue de base de la page.
 
@@ -313,7 +313,7 @@ La case par défaut est décochée. Lorsque cette case est cochée, un menu de s
      Si cette option est sélectionnée, une option de traduction s’affiche en regard de chaque publication, ce qui permet de traduire des publications individuelles dans la langue de base de la page.
 Par défaut : *selected*.
 
-* **Sélectionner les options de rémanence**
+* **Sélectionner les options de persistance**
 
    * **Traduire les contributions sur demande de l’utilisateur et les conserver ultérieurement**
 Si cette option est sélectionnée, le contenu n’est pas traduit tant qu’une requête n’a pas été effectuée. Une fois traduite, la traduction est stockée dans le référentiel.
@@ -452,7 +452,7 @@ Le panneau CONCEPTION permet d’appliquer un nouveau thème :
 
 Le panneau PARAMÈTRES permet d’accéder à la plupart des paramètres sous les sous-panneaux de l’ Étape 3 de la création d’un site de communauté :
 
-* [User Management](#user-management)
+* [Gestion des utilisateurs et utilisatrices](#user-management)
 * [Balises](#tagging)
 * [Modération](#moderation)
 * [Rôles des membres](#roles)

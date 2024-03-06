@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: 15b9ae98-059f-4bf7-bfdd-9cfeb8eb30a4
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 46%
+source-wordcount: '690'
+ht-degree: 44%
 
 ---
 
@@ -41,7 +41,7 @@ HTML Workspace fournit des contrôles spécifiques aux formulaires adaptatifs en
 
 1. Pour envoyer un formulaire adaptatif, utilisez le bouton **Envoyer** ou les actions d’itinéraire disponibles, comme dans Mobile Forms. Le bouton Tout type d’envoi du formulaire adaptatif est masqué.
 
-1. **Visibilité de la barre d’outils globale de formulaire adaptatif**: si Process Designer masque la barre d’outils globale/de niveau supérieur, la barre d’outils et les boutons n’apparaissent pas sur les formulaires adaptatifs.
+1. **Visibilité de la barre d’outils globale de formulaire adaptatif**: si Process Designer masque la barre d’outils globale/supérieure, la barre d’outils et les boutons n’apparaissent pas sur les formulaires adaptatifs.
 
 1. **Contrôles de navigation de l’espace de travail pour les formulaires adaptatifs** : les boutons Suivant/Précédent sont disponibles ainsi que les boutons Enregistrer, Envoyer et Acheminer l’action pour un formulaire adaptatif dans l’espace de travail HTML. Cliquez sur les boutons Suivant/Précédent pour parcourir les panneaux des formulaires adaptatifs dans HTML Workspace. Les boutons Suivant/Précédent offrent une navigation approfondie et sont similaires aux commandes de navigation de la vue mobile des formulaires adaptatifs.
 

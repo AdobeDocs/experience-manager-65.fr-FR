@@ -6,10 +6,10 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 97%
+source-wordcount: '1228'
+ht-degree: 91%
 
 ---
 
@@ -114,7 +114,7 @@ Il n’est pas nécessaire de cliquer sur le lien du message d’erreur pour met
 
 ### Champs supprimés du fichier XDP {#deleted-fields-in-xdp-file}
 
-Si un champ qui a été copié dans un formulaire adaptatif est supprimé d’un fichier XDP, un message d’erreur s’affiche en mode création indiquant que le champ n’existe pas dans le fichier XDP. Dans ce cas, supprimez manuellement le champ du formulaire adaptatif ou effacez la propriété `bindRef` dans la boîte de dialogue Composant.
+Si un champ qui a été copié antérieurement dans un formulaire adaptatif est supprimé d’un fichier XDP, un message d’erreur s’affiche en mode création pour indiquer que le champ n’existe pas dans le fichier XDP. Dans ce cas, supprimez manuellement le champ du formulaire adaptatif ou effacez la propriété `bindRef` dans la boîte de dialogue Composant.
 
 Les étapes suivantes illustrent ce flux d’utilisation des ressources dans l’exemple utilisé dans cet article :
 
@@ -132,7 +132,7 @@ Le champ qui a été supprimé est également signalé par une icône pour indiq
 
 >[!NOTE]
 >
->Les champs du formulaire adaptatif ayant une liaison incorrecte (une valeur `bindRef` incorrecte dans la boîte de dialogue Modifier) sont également considérés comme des champs supprimés. Si l’auteur ou l’autrice ne corrige pas ces erreurs et publie le formulaire adaptatif, le champ est traité comme un champ de formulaire adaptatif non lié normal et est inclus dans la section unbinded du fichier XML de sortie.
+>Les champs du formulaire adaptatif ayant une liaison incorrecte (une valeur `bindRef` incorrecte dans la boîte de dialogue Modifier) sont également considérés comme des champs supprimés. Si l’auteur ne corrige pas ces erreurs et publie le formulaire adaptatif, le champ est traité comme un champ de formulaire adaptatif non lié normal et est inclus dans la section unbinded du fichier XML de sortie.
 
 ## Téléchargements {#downloads}
 

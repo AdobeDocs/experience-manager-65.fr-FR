@@ -4,10 +4,10 @@ description: Découvrez comment effectuer une mise à niveau statique pour AEM 6
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -129,7 +129,7 @@ Lorsque `FileDataStore` est la nouvelle valeur par défaut pour des installation
 
 Ignorez cette section si vous effectuez une mise à niveau depuis la version 6.3. Bien que les profils crx2oak fournis répondent aux besoins de la plupart des clients, des paramètres supplémentaires sont parfois nécessaires. Si vous rencontrez une erreur lors de la migration, il est possible que certains aspects de votre environnement nécessitent des options de configuration supplémentaires. Si tel est le cas, l’erreur suivante se produira probablement :
 
-**Les points de contrôle ne seront pas copiés, car aucun magasin de données externe n’a été spécifié. Cela entraînera la réindexation complète du référentiel au premier démarrage. Utilisez --skip-checkpoints pour forcer la migration ou consultez https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration pour en savoir plus.**
+**Les points de contrôle ne sont pas copiés, car aucun entrepôt de données externe n’a été spécifié. Cela entraînera la réindexation complète du référentiel au premier démarrage. Utilisez --skip-checkpoints pour forcer la migration ou consultez https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration pour en savoir plus.**
 
 Pour une raison quelconque, le processus de migration doit accéder aux fichiers binaires dans le magasin de données et ne peut pas les trouver. Pour spécifier la configuration de votre banque de données, incluez les indicateurs suivants dans la variable `<<ADDITIONAL_FLAGS>>` partie de la commande de migration :
 

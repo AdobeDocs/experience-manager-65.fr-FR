@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 970e0a97d531d4cbae76119960972e54ef65dda0
 workflow-type: tm+mt
 source-wordcount: '2313'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -574,7 +574,7 @@ Ne prend pas en charge l’extraction de facettes.
 
 * **all**
 
-  (booléen) Recherche le texte intégral d’une balise, c’est-à-dire tous les titres, la description, etc. (est prioritaire sur « `ang` »).
+  (bool) Recherchez le texte intégral d’une balise, c’est-à-dire tous les titres, la description, etc. Prévaut sur &quot;l&quot; `ang`&quot;.
 
 ### type {#type}
 

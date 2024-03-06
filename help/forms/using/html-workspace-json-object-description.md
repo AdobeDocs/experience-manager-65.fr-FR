@@ -5,10 +5,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: f837a2b3-4650-4261-84c6-291bb2a46dc7
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 970e0a97d531d4cbae76119960972e54ef65dda0
 workflow-type: tm+mt
-source-wordcount: '2115'
-ht-degree: 25%
+source-wordcount: '2144'
+ht-degree: 28%
 
 ---
 
@@ -29,22 +29,22 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   </tr>
   <tr>
    <td>name</td>
-   <td>F</td>
+   <td>V</td>
    <td>Nom de catégorie</td>
   </tr>
   <tr>
    <td>id</td>
-   <td>F</td>
+   <td>V</td>
    <td>ID de catégorie<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>description<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Description de la catégorie<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>parentOid<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Contient l’ID de la catégorie parente<br type="_moz" /> </td>
   </tr>
   <tr>
@@ -70,12 +70,12 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
 
    | **Propriété** | **Client uniquement** | **Commentaires** |
    |---|---|---|
-   | categoryId | F | Il contient l’identifiant de la catégorie à laquelle appartient le point de départ. |
-   | description | F | Contient la description d’un point de départ. |
-   | name | F | Contient le nom du point de départ. |
-   | serializedImageTicket | F | Contient le ticket de l’image correspondant au point de départ. Le ticket de cette image est utilisé dans le champ imageUrl du point de départ, pour obtenir l’image pour le point de départ à partir du serveur. |
-   | serviceName | F | Contient le nom du service pour le point de départ. |
-   | startpointId | F | Contient l’identifiant du point de départ. |
+   | categoryId | V | Il contient l’identifiant de la catégorie à laquelle appartient le point de départ. |
+   | description | V | Contient la description d’un point de départ. |
+   | name | V | Contient le nom du point de départ. |
+   | serializedImageTicket | V | Contient le ticket de l’image correspondant au point de départ. Le ticket de cette image est utilisé dans le champ imageUrl du point de départ, pour obtenir l’image pour le point de départ à partir du serveur. |
+   | serviceName | V | Contient le nom du service pour le point de départ. |
+   | startpointId | V | Contient l’identifiant du point de départ. |
    | isFavorite | T | Indique si le point de départ est un favori ou non. True si le point de départ est favori, sinon false. |
    | isDefaultImage | T | Indique s’il existe une image spécifiée pour le processus ou non. True si aucune image n’est associée au processus, sinon false. |
    | tâche | T | Contient la tâche créée lorsque le point de départ est appelé. |
@@ -94,172 +94,172 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   </tr>
   <tr>
    <td>classOfTask</td>
-   <td>F</td>
-   <td>La classe de tâche est « LC8 » lorsque la tâche est lc8 else « standard ».<br /> </td>
+   <td>V</td>
+   <td>La classe de tâche est "LC8" lorsque la tâche est lc8 ou "Standard".<br /> </td>
   </tr>
   <tr>
    <td>completeTime<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Contient l’horodatage de fin de la tâche.<br /> </td>
   </tr>
   <tr>
    <td>consultGroupId<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Contient l’ID d’un groupe dont la tâche peut être consultée. Il est défini lors de la conception du processus.<br /> </td>
   </tr>
   <tr>
    <td>createTime<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Contient l’horodatage de création de la tâche.<br /> </td>
   </tr>
   <tr>
    <td>createdId<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Il contient l’identifiant de l’utilisateur qui a créé la tâche.<br /> </td>
   </tr>
   <tr>
    <td>currentAssignment<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Il contient des détails sur l’affectation actuelle de la tâche.<br /> </td>
   </tr>
   <tr>
    <td>échéance<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Il contient l’horodatage qui indique quand une tâche atteindra son délai d’expiration.<br /> </td>
   </tr>
   <tr>
    <td>description<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Contient la description de la tâche.<br /> </td>
   </tr>
   <tr>
    <td>displayName<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Contient le nom d’affichage de la tâche.<br /> </td>
   </tr>
   <tr>
    <td>forwardGroupId<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Contient l’ID d’un groupe auquel la tâche peut être transmise. Il est défini lors de la conception du processus.<br /> </td>
   </tr>
   <tr>
    <td>instructions<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Il contient des instructions pour une tâche.<br /> </td>
   </tr>
   <tr>
    <td>isLocked<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>True si la tâche est verrouillée.<br /> </td>
   </tr>
   <tr>
    <td>isMustOpenToComplete<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>True si le formulaire de tâche doit être ouvert pour terminer la tâche.<br /> </td>
   </tr>
   <tr>
    <td>isOpenFullScreen<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Si la valeur est true, lors de l’ouverture de la tâche, le formulaire s’exécute à l’écran la première fois.<br /> </td>
   </tr>
   <tr>
    <td>isRouteSelectionRequired<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Si la valeur est true, l’itinéraire doit être sélectionné pour terminer la tâche.<br /> </td>
   </tr>
   <tr>
    <td>isShowAttachments<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Les pièces jointes s’affichent si la valeur est true.<br /> </td>
   </tr>
   <tr>
    <td>isStartTask<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Si la valeur est true, la tâche est créée à partir du point de départ.<br /> </td>
   </tr>
   <tr>
    <td>isVisible<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>True si la tâche est visible dans l’espace de travail.<br /> </td>
   </tr>
   <tr>
    <td>nextReminder<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Horodatage du prochain rappel.<br /> </td>
   </tr>
   <tr>
-   <td>priorité<br /> </td>
-   <td>F</td>
+   <td>priority<br /> </td>
+   <td>V</td>
    <td>Contient la priorité de la tâche.<br /> 1 = Priorité la plus élevée<br /> 2 = Priorité élevée<br /> 3 = Priorité normale<br /> 4 = Priorité faible<br /> 5 = Priorité la plus faible<br /> </td>
   </tr>
   <tr>
    <td>processInstanceId</td>
-   <td>F</td>
+   <td>V</td>
    <td>Identifiant de l’instance de processus dont la tâche fait partie.<br /> </td>
   </tr>
   <tr>
    <td>processInstanceStatus<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>État de l’instance de processus de la tâche.<br /> </td>
   </tr>
   <tr>
    <td>rappderCount<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Contient le nombre de rappels pour la tâche.<br /> </td>
   </tr>
   <tr>
    <td>routeList<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Contient la liste des itinéraires associée à la tâche. L’utilisateur peut terminer la tâche en sélectionnant l’un des itinéraires de la liste.<br /> </td>
   </tr>
   <tr>
    <td>selectedRoute<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Contient le nom de l’itinéraire sélectionné lorsque la tâche a été terminée.<br /> </td>
   </tr>
   <tr>
    <td>serializedImageTicket<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Contient le ticket de l’image correspondant à la tâche. Ce ticket d’image est utilisé dans le champ imageUrl de la tâche, pour obtenir l’image de la tâche à partir du serveur.<br /> <br /> </td>
   </tr>
   <tr>
    <td>serviceName<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Contient le nom du service pour la tâche.<br /> </td>
   </tr>
   <tr>
    <td>serviceTitle<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Contient le titre du service pour la tâche.<br /> </td>
   </tr>
   <tr>
    <td>status<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>1 = Créée (la tâche est créée à partir du point de départ.)<br /> 2 = Créée et enregistrée (la tâche est créée à partir du point de départ et enregistrée.)<br /> 3 = Affectée (la tâche est affectée à l’utilisateur une fois le processus démarré.)<br /> 4 = Affectée et enregistrée (la tâche est affectée et enregistrée.)<br /> 100 = Terminée (la tâche est terminée.)<br /> 101 = Arrivée à échéance (la tâche a atteint la date limite.)<br /> 102 = Interrompu<br /> </td>
   </tr>
   <tr>
    <td>stepName<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Contient le nom du jeu de tâches lors de la conception du processus.<br /> </td>
   </tr>
   <tr>
    <td>summaryUrl<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Contient l’URL de résumé de la tâche.<br /> </td>
   </tr>
   <tr>
    <td>taskACL<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Il s’agit de la liste de contrôle d’accès d’une tâche.<br /> </td>
   </tr>
   <tr>
    <td>taskId<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Identifiant d’une tâche.<br /> </td>
   </tr>
   <tr>
    <td>updateTime<br /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Horodatage de la dernière mise à jour de la tâche.<br /> </td>
   </tr>
   <tr>
@@ -330,7 +330,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   <tr>
    <td>availableCommands.otherCommands<br /> </td>
    <td>T</td>
-   <td>Il contient des commandes telles que verrouiller, déverrouiller, abandonner, revenir, demander, etc., si possible.<br /> </td>
+   <td>Il contient des commandes telles que verrouiller, déverrouiller, abandonner, revenir, demander, etc., selon les cas.<br /> </td>
   </tr>
   <tr>
    <td>processInstanceInfo<br /> </td>
@@ -373,7 +373,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
    <td>Liste des pièces jointes pour une tâche.<br /> </td>
   </tr>
   <tr>
-   <td>affectations<br /> </td>
+   <td>assignations<br /> </td>
    <td>T</td>
    <td>Liste des affectations d’une tâche.<br /> </td>
   </tr>
@@ -393,26 +393,26 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   </tr>
   <tr>
    <td>isDefault <br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>True si la file d’attente est la file d’attente par défaut de l’utilisateur connecté, sinon false.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>name<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Nom du propriétaire de la file d’attente.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>qid</td>
-   <td>F</td>
+   <td>V</td>
    <td>Identifiant de la file d’attente.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>type</td>
-   <td>F</td>
+   <td>V</td>
    <td>Contient le type de la file d’attente.<br /> 0 - File d’attente de l’utilisateur.<br /> 1. File d’attente partagée.<br /> 2. File d’attente du groupe.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>query</td>
+   <td>requête</td>
    <td>T</td>
    <td>Contient la requête associée à un filtre. Cette requête est utilisée pour rechercher des tâches à partir d’une liste de tâches complète.<br type="_moz" /> </td>
   </tr>
@@ -437,27 +437,27 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   </tr>
   <tr>
    <td>dateRanges<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Contient des objets de tableau des plannings d’absences du bureau d’un utilisateur. Dans chaque objet de planning, le champ startDate contient la date de début du planning et le champ endDate contient la date de fin du planning. Si endDate est null dans le planning, cela implique que l’utilisateur n’a pas planifié la date de fin du planning d’absences du bureau.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>isNoPrimaryDesignate<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>True s’il n’existe aucune désignation principale en cas d’absence du bureau de l’utilisateur.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>isOutOfOffice<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>True si l’utilisateur est absent du bureau.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>outOfOfficeDesignate<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Contient les détails de l’utilisateur désigné comme principal par l’utilisateur.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processSpecificDesignates<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Contient un tableau d’objets pour la désignation d’absence du bureau propre à un processus. Dans chaque objet de désignation propre à un processus, processName contient le nom du processus, isNotDesignated est défini sur true si aucun utilisateur n’est affecté au processus correspondant, et userDesignated est défini sur null si aucun utilisateur n’a affecté de détails else de l’utilisateur affecté au processus correspondant.<br type="_moz" /> </td>
   </tr>
   <tr>
@@ -496,47 +496,47 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   </tr>
   <tr>
    <td>description<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Description de l’instance de processus<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>initiateur</td>
-   <td>F</td>
+   <td>V</td>
    <td>Nom de l’initiateur d’une instance de processus.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>initiatorId</td>
-   <td>F</td>
+   <td>V</td>
    <td>ID de l’initiateur de l’instance de processus.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processCompleteTime<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Horodatage à la fin du processus.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processInstanceId<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>ID de l’instance de processus.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processInstanceStatus<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>0 = Lancé<br /> 1 = En cours<br /> 2 = Terminé<br /> 3 = Fin<br /> 4 = Interrompu<br /> 5 = Interruption<br /> 6 = Suspendu<br /> 7 = Suspendre<br /> 8 = Sans suspension<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processName<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Nom du processus.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processStartTime<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Horodatage au début du processus.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processVariables<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Tableau d’objets de variables de processus. Chaque objet de variable de processus contient les paramètres Nom (nom de la variable de processus), Valeur (valeur de variable de processus) et Type (type de variable de processus).<br type="_moz" /> </td>
   </tr>
   <tr>
@@ -558,22 +558,22 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   </tr>
   <tr>
    <td>processMajorVersion<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Version majeure d’un processus.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processMinorVersion<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Version mineure d’un processus.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processName<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Nom du processus.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processTitle<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Titre du processus.<br type="_moz" /> </td>
   </tr>
   <tr>
@@ -597,32 +597,32 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   </tr>
   <tr>
    <td>assignmentCreateTime<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Horodatage de création de cette affectation de tâche.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>assignmentType<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>0 = Attribution initiale<br /> 1 = Transférer (la tâche a été transférée au propriétaire actuel de la tâche.)<br /> 2 = Renvoyée (la tâche a été renvoyée au propriétaire actuel de la tâche par le propriétaire précédent de la tâche.)<br /> 3 = Demandée (la tâche a été demandée par le propriétaire actuel de la tâche.)<br /> 4 = Réaffectation (la tâche a été affectée au propriétaire actuel de la tâche après la réaffectation.)<br /> 5 = Administrateur affecté (la tâche a été affectée par l’administrateur au propriétaire actuel de la tâche.)<br /> 6 = Consultée (la tâche a été consultée pour le propriétaire actuel de la tâche.)<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>assignmentUpdateTime<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Horodatage de mise à jour de cette affectation de tâche.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>queueId<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>ID de la file d’attente du propriétaire actuel de la tâche.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>queueOwner<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Nom du propriétaire actuel de la tâche.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>queueOwnerId<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Identifiant du propriétaire actuel de la tâche.<br type="_moz" /> </td>
   </tr>
  </tbody>
@@ -641,32 +641,32 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   </tr>
   <tr>
    <td>canAddAttachments<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Si la valeur est true, des pièces jointes peuvent être ajoutées à la tâche.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>canAddNotes<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Si la valeur est true, des notes peuvent être ajoutées à la tâche.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>canClaim<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Si la valeur est true, la tâche peut être demandée.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>canConsult<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Si la valeur est true, la tâche peut être consultée.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>canForward<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Si la valeur est true, la tâche peut être transférée.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>canShare<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Si la valeur est true, la tâche peut être partagée.<br type="_moz" /> </td>
   </tr>
  </tbody>
@@ -685,62 +685,62 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   </tr>
   <tr>
    <td>createdDate<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Horodatage de création de la pièce jointe.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>creatorId<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>ID de l’utilisateur qui a ajouté la pièce jointe.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>creatorName<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Nom de l’utilisateur qui a ajouté la pièce jointe.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>description<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Description de la pièce jointe.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>fileName<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Nom de la pièce jointe.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>id<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Identifiant de la pièce jointe.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>lastModifiedDate<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Horodatage de la dernière modification de la pièce jointe.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>noteExtended<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Si la valeur est true, la note est une note étendue (longue).<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>autorisations ;<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Autorisations associées à une pièce jointe. Le champ allowRead représente l’autorisation de lire, allowWrite l’autorisation d’écrire et allowDelete l’autorisation de supprimer.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>size<br type="_moz" /> ; </td>
-   <td>F</td>
+   <td>V</td>
    <td>Taille de la pièce jointe en octets.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>taskId<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Identifiant de la tâche à laquelle la pièce jointe est ajoutée.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>type<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Le type est « attachment » pour les fichiers et « note » pour les notes.<br type="_moz" /> </td>
   </tr>
   <tr>
@@ -773,78 +773,78 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
    <td><strong>Commentaires</strong></td>
   </tr>
   <tr>
-   <td>adresse<br type="_moz" /> </td>
-   <td>F</td>
+   <td>address<br type="_moz" /> </td>
+   <td>V</td>
    <td>Adresse de l’utilisateur.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>commonName<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Nom commun de l’utilisateur.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>description<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Description de l’utilisateur.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>directGroupMemberships<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Liste du groupe de l’utilisateur.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>displayName<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Nom de l’utilisateur.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>email<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>ID de courrier électronique de l’utilisateur.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>isOutOfOffice<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>True si l’utilisateur est absent du bureau.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>lastName<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Nom de l’utilisateur.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>firstName<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Prénom de l’utilisateur.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>oid<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>ID de l’utilisateur.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>org<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Nom de l’organisation de l’utilisateur.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>postalAddress<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Adresse postale de l’utilisateur.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>téléphone<br type="_moz" /> </td>
-   <td>F</td>
+   <td>telephone<br type="_moz" /> </td>
+   <td>V</td>
    <td>Numéro de contact de l’utilisateur.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>telephoneNumber<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Numéro de contact de l’utilisateur.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>userid<br type="_moz" /> </td>
-   <td>F</td>
+   <td>V</td>
    <td>Identifiant de connexion de l’utilisateur.<br type="_moz" /> </td>
   </tr>
  </tbody>

@@ -7,9 +7,9 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2038'
 ht-degree: 73%
 
 ---
@@ -156,7 +156,7 @@ Vous trouverez ci-dessous un aperçu des étapes que doit suivre un développeur
 
    Lorsque `ModelRouter` est activé, l’appel des fonctions `pushState` et `replaceState` déclenche une requête au `PageModelManager` pour récupérer un fragment absent du modèle.
 
-   La version actuelle de la variable `ModelRouter` ne prend en charge que l’utilisation d’URL pointant vers le chemin de ressource réel des points d’entrée du modèle Sling. Elle ne prend pas en charge l’utilisation de vanity URL ni d’alias.
+   La version actuelle de la variable `ModelRouter` ne prend en charge que l’utilisation d’URL pointant vers le chemin de ressource réel des points d’entrée du modèle Sling. Elle ne prend pas en charge l’utilisation d’URL de redirection ni d’alias.
 
    Le `ModelRouter` peut être désactivé ou configuré pour ignorer une liste d’expressions régulières.
 

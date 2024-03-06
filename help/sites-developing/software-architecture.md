@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: cd4f3b4c-5488-4ca7-9c1e-b4c819fda8e8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 98%
+source-wordcount: '614'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 98%
 
 ## Conception pour les mises à niveau {#design-for-upgrades}
 
-Lors de l’extension de comportements prêts à l’emploi, il convient de garder à l’esprit les mises à niveau. Appliquez toujours des personnalisations dans le répertoire /apps et superposez-les au-dessus des nœuds correspondants dans le répertoire /libs ou utilisez sling:resourceSuperType pour étendre le comportement standard. Bien que quelques modifications puissent s’avérer nécessaires pour la prise en charge d’une nouvelle version d’AEM, cette dernière ne devrait normalement pas écraser vos personnalisations si cette pratique est suivie.
+Lors de l’extension des comportements d’usine, il est important de garder à l’esprit les mises à niveau. Appliquez toujours des personnalisations dans le répertoire /apps et superposez-les au-dessus des nœuds correspondants dans le répertoire /libs ou utilisez sling:resourceSuperType pour étendre le comportement standard. Bien que quelques modifications puissent s’avérer nécessaires pour la prise en charge d’une nouvelle version d’AEM, cette dernière ne devrait normalement pas écraser vos personnalisations si cette pratique est suivie.
 
 ### Réutilisez les modèles et les composants dans la mesure du possible. {#reuse-template-and-components-when-possible}
 
@@ -51,11 +51,11 @@ Le principe de robustesse stipule qu’il faut faire preuve de tolérance dans c
 
 ### Implémenter des pics dans leurs propres modules {#implement-spikes-in-their-own-modules}
 
-Les pics et le code de test font partie de toute implémentation de logiciel agile. Cependant, vous devriez vous assurer qu’ils n’entrent pas dans la base de code de production sans le niveau de surveillance approprié. Par conséquent, il est recommandé de créer des pics dans leur propre module.
+Les pics et le code de test font partie de toute implémentation de logiciel agile. Cependant, vous souhaitez vous assurer qu’ils ne se retrouvent pas dans la base de code de production sans le niveau de surveillance approprié. Par conséquent, il est recommandé de créer des pics dans leur propre module.
 
 ### Implémenter des scripts de migration de données dans leur propre module {#implement-data-migration-scripts-in-their-own-module}
 
-Les scripts de migration de données, bien qu’il s’agisse de code de production, ne sont exécutés qu’une seule fois lors du lancement initial d’un site. Par conséquent, lorsque le site est mis en production, les scripts deviennent du code mort. Pour vous assurer de ne pas créer du code d’implémentation qui dépend des scripts de migration, ceux-ci doivent être implémentés dans leur propre module. Cela permet de supprimer et de mettre hors service ce code juste après le lancement, et d’éliminer ainsi le code mort du système.
+Les scripts de migration de données, bien qu’il s’agisse de code de production, ne sont exécutés qu’une seule fois lors du lancement initial d’un site. Par conséquent, lorsque le site est mis en production, les scripts deviennent du code mort. Pour vous assurer que vous ne créez pas de code d’implémentation qui dépend des scripts de migration, ils doivent être implémentés dans leur propre module. Cela permet de supprimer et de mettre hors service ce code juste après le lancement, et d’éliminer ainsi le code mort du système.
 
 ### Respect des conventions Maven publiées dans les fichiers POM {#follow-published-maven-conventions-in-pom-files}
 

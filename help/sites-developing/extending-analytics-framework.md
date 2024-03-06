@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 47%
@@ -59,7 +59,7 @@ Lorsque vous utilisez du code JavaScript personnalisé pour personnaliser la str
 
 ## Configuration des propriétés Adobe Analytics {#configuring-adobe-analytics-properties}
 
-Il existe plusieurs variables prédéfinies dans Adobe Analytics qui peuvent être configurées sur une structure. Les variables **charset**, **cookieLifetime**, **currencyCode** et **trackInlineStats** font, par défaut, partie de la liste des **Paramètres généraux d’Analytics**.
+Il existe plusieurs variables prédéfinies dans Adobe Analytics qui peuvent être configurées sur une structure. La variable **charset**, **cookieLifetime**, **currencyCode**, et **trackInlineStats** sont incluses dans la variable **Paramètres généraux d’Analytics** liste par défaut.
 
 ![aa-22](assets/aa-22.png)
 
@@ -105,7 +105,7 @@ Utilisez la procédure suivante pour ajouter des variables à la liste :
 
 >[!CAUTION]
 >
->Certaines des variables de cette liste sont **mandatory** pour que les appels Adobe Analytics fonctionnent correctement (par exemple, **currencyCode**, **charSet**)
+>Certaines des variables de cette liste sont **mandatory** pour que les appels Adobe Analytics fonctionnent correctement (par exemple, **currencyCode**, **charSet**).
 >
 >Ainsi, même si elles sont supprimées du framework lui-même, elles restent associées à une valeur par défaut lors de l’appel Adobe Analytics.
 
@@ -274,7 +274,7 @@ Suivez la procédure ci-après pour créer le dossier de bibliothèque cliente d
 
 1. Sélectionnez le dossier de bibliothèques clientes que vous avez créé et utilisez la barre de propriétés située en bas à droite pour ajouter la propriété suivante :
 
-   * Nom : categories
+   * Nom : categories
    * Type : chaîne
    * Valeur : sitecatalyst.plugins
    * Multi : sélectionné
