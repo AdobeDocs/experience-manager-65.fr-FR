@@ -1,10 +1,10 @@
 ---
 title: Obsolescence des informations d’identification JWT dans Adobe Developer Console
 description: Découvrez l’impact de l’obsolescence des informations d’identification JWT dans Adobe Developer Console sur AEM.
-source-git-commit: 18bee77ab6fcb2d635d389f929c1dd8e2bc25de5
+source-git-commit: 72974d27fecbd9c242f66e203b02463c22b93108
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 82%
+source-wordcount: '456'
+ht-degree: 80%
 
 ---
 
@@ -21,11 +21,6 @@ Cet article fournit un contexte supplémentaire sur la manière dont AEM clients
 À ce stade, la principale leçon à retenir est que les fonctionnalités AEM ne prennent pas encore en charge les nouvelles informations d’identification OAuth serveur à serveur. La prise en charge sera assurée prochainement : d’ici la mi-avril 2024 via un package de compatibilité spécial à installer pour AEM 6.5, si vous exécutez le dernier Service Pack 20 ou version antérieure (Service Pack 21 et version ultérieure l’inclura automatiquement). Vous avez peut-être reçu un e-mail contenant des instructions pour migrer vos informations d’identification JWT, mais vous pouvez et devriez attendre la migration des informations d’identification jusqu’à ce qu’AEM prenne en charge le nouveau type d’informations d’identification OAuth serveur à serveur.
 
 Les sections ci-dessous répertorient les scénarios où les clientes et clients doivent (ou dans certains cas ne doivent pas) remplacer leurs informations d’identification de compte de service (JWT) par des informations d’identification OAuth serveur à serveur, une fois qu’AEM les prend en charge à la mi-avril. [Lisez comment](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) remplacer les informations d’identification ultérieurement.
-
->[!NOTE]
->
->[**AEM** Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#crxde-lite-and-developer-console) (notez la mention **AEM** dans le nom, qui permet une distinction avec **Adobe** Developer Console) fournit un utilitaire pour générer des [jetons JWT](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=fr) utilisés pour les API serveur à serveur. Ces informations d’identification ne sont pas obsolètes et peuvent continuer à être utilisées.
-
 
 ## Intégrer AEM à d’autres solutions Adobe {#integrating-aem-with-other-adobe-solutions}
 
