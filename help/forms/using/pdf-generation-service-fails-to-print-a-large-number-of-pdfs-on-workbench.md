@@ -1,7 +1,7 @@
 ---
 title: La génération de PDF ne parvient pas à imprimer un grand nombre de PDF avec WorkBench
 description: Lorsqu’un client génère un grand nombre de PDF via des services implémentés via WorkBench, le service d’impression échoue.
-source-git-commit: 9cdf22918f08fe505c3efd0ce43235e3442165d5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Le facteur le plus important affectant l’utilisation de la mémoire est la qua
 Autres facteurs à prendre en compte lors de la conception d’un modèle de formulaire pour améliorer l’utilisation de la mémoire :
 
 1. Évitez d’utiliser du texte statique pour libeller un champ. Utilisez plutôt des légendes dans le champ de texte.
-2. N’utilisez pas abusivement les rectangles, les lignes, les objets et les tableaux.
+2. N’utilisez pas de balises Rectangles, Lignes, Objets et Tableaux de manière excessive.
 3. Si possible, évitez d’utiliser des sous-formulaires RichText et Choice .
 4. Évitez l’utilisation excessive de sous-formulaires et de sous-formulaires imbriqués.
 
@@ -50,7 +50,7 @@ Autres facteurs à prendre en compte lors de la conception d’un modèle de for
 
 Comme nous sommes limités par la mémoire de processus maximale et que la mémoire consommée par le processus ne dépend pas seulement de la taille du fichier de données. Il est très étroitement lié à la conception de formulaire et, dans une certaine mesure, à la quantité réelle de données fusionnées dans le formulaire.
 
-Si le formulaire comporte de nombreux petits noeuds avec de petites données, le processus consomme plus de mémoire (et donc une insuffisance de mémoire plus rapide), qu’un formulaire qui n’a pas moins de noeuds (même) avec de grandes données.
+Si le formulaire contient de nombreux petits noeuds avec de petites données, le processus consomme plus de mémoire (et donc une insuffisance de mémoire plus rapide), qu’un formulaire comportant moins de noeuds (même) avec des données volumineuses.
 
 Lisez la section [Annexe suivante](#appendix) pour plus d’informations, où les résultats du test sont basés sur le formulaire d’impression (PDF non balisé). L’utilisation de la mémoire de processus de PDF balisée augmente. Cela dépend également du nombre de champs dans le formulaire. En gros, la mémoire de processus serait un peu plus de 1,5 fois supérieure à celle du PDF non balisé.
 

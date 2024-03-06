@@ -5,10 +5,10 @@ content-type: reference
 docset: aem65
 feature: Release Information
 role: User, Admin
-source-git-commit: 4fab3f80e01c2b7c3e4ebdc4bffdedb6f5f39d11
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '2334'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
 
@@ -37,7 +37,7 @@ Voir aussi [Notes de mise à jour du Service Pack Adobe Experience Manager 6.5](
 
 * **[Version 64 bits d’AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)** : la version 64 bits d’AEM Forms Designer offre des performances, une évolutivité et une gestion de la mémoire améliorées pour optimiser votre expérience de création de formulaires. Grâce à l’architecture 64 bits, vous pouvez aborder facilement des projets plus volumineux et plus complexes, assurant ainsi des workflows de conception transparents et une efficacité optimisée. Améliorez encore vos capacités de conception de formulaire et accueillez l’avenir d’AEM Forms Designer avec cette version de pointe.
 
-* **[Connexion de formulaires adaptatifs à une liste Microsoft® SharePoint](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)** : AEM Forms assure une intégration prête à l’emploi pour envoyer les données de formulaire directement à la liste SharePoint, ce qui vous permet d’utiliser les fonctionnalités des listes SharePoint. Vous pouvez configurer une liste Microsoft® SharePoint comme source de données pour un modèle de données de formulaire et utiliser l’action Envoyer à l’aide du modèle de données de formulaire pour connecter un formulaire adaptatif à la liste SharePoint.
+* **[Connexion d’une Forms adaptative à une liste Microsoft® SharePoint](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms fournit une intégration prête à l’emploi pour envoyer les données de formulaire directement vers la liste SharePoint, ce qui vous permet d’utiliser les fonctionnalités de listes SharePoint. Vous pouvez configurer une liste Microsoft® SharePoint comme source de données pour un modèle de données de formulaire et utiliser l’action Envoyer à l’aide du modèle de données de formulaire pour connecter un formulaire adaptatif à la liste SharePoint.
 
 * **[Prise en charge de la configuration des propriétés de document d’enregistrement pour les fragments de formulaire adaptatif](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)** : vous pouvez désormais personnaliser facilement vos fragments de formulaire adaptatif et ses champs dans l’éditeur de formulaire adaptatif.
 

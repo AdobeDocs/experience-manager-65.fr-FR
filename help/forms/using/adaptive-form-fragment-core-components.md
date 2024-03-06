@@ -4,9 +4,9 @@ description: Les formulaires adaptatifs fournissent un mécanisme permettant de 
 topic-tags: author
 keywords: Ajouter des fragments de formulaire adaptatif, des fragments de formulaire adaptatif, Créer un fragment de formulaire, Ajouter un fragment à un formulaire adaptatif, Gérer des fragments
 feature: Adaptive Forms, Core Components
-source-git-commit: 304b1bf2e19942fb728944330512a83a9006cb2a
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '1844'
+source-wordcount: '1840'
 ht-degree: 35%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 35%
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
 | AEM 6.5 | Cet article |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=fr) |
 
 Bien que chaque formulaire soit conçu à des fins spécifiques, certains segments sont communs à la plupart des formulaires, comme pour fournir des détails personnels tels que le nom et l’adresse, les détails de famille et les informations sur les revenus. Les personnes qui developpent des formulaire doivent créer ces segments communs à chaque fois qu’un formulaire est créé.
 
@@ -180,7 +180,7 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire adap
 ## Points essentiels à respecter lorsque vous utilisez des fragments {#key-points-to-remember-when-working-with-fragments}
 
 * Assurez-vous que le nom du fragment est unique. La création du fragment échoue si un fragment portant le même nom existe déjà.
-* Dans un formulaire adaptatif basé sur XDP, si vous enregistrez un panneau en tant que fragment contenant une autre partie du fragment XDP, le fragment obtenu sera automatiquement lié au fragment XDP enfant. Dans le cas d’un formulaire adaptatif basé sur un schéma XSD, le fragment obtenu sera associé à la racine de schéma.
+* Dans un formulaire adaptatif basé sur XDP, si vous enregistrez un panneau en tant que fragment contenant une autre partie du fragment XDP, le fragment obtenu est automatiquement lié au fragment XDP enfant. Si un formulaire adaptatif basé sur un schéma XSD, le fragment obtenu est lié à la racine du schéma.
 * Lorsque vous créez un fragment de formulaire adaptatif, un noeud de fragment est créé, similaire au noeud guideContainer pour un formulaire adaptatif, dans CRXDE Lite.
 * Un fragment d’un formulaire adaptatif qui utilise un modèle de données de formulaire différent n’est pas pris en charge. Par exemple, un fragment basé sur XDP n’est pas pris en charge dans un formulaire adaptatif basé sur XSD et inversement.
 * Les fragments de formulaire adaptatif peuvent être utilisés via l’onglet Fragments de formulaire adaptatif de l’outil de recherche de contenu d’AEM.

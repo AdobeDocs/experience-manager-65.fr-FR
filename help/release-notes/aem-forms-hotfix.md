@@ -2,7 +2,7 @@
 title: Correctifs pour AEM Forms
 description: Fournit des informations sur la manière de télécharger et d’installer un correctif pour AEM Forms.
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
-source-git-commit: 5ab1fd033af0d6d5595fe41de003455ab9ba28a6
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 9%
