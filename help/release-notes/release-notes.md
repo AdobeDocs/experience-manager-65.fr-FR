@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager]
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 70f52515fc877ad5f20e14c2a26a934d3dcdfe01
+source-git-commit: f00d2c88ba6727f8f8597fefeb467b612b23dea3
 workflow-type: tm+mt
-source-wordcount: '3486'
+source-wordcount: '3524'
 ht-degree: 68%
 
 ---
@@ -474,6 +474,8 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
       * [Correctif pour Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
 
    1. Téléchargez et installez le package (.zip) via le [Gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing).
+
+   1. Redémarrez le serveur AEM et vérifiez l’état d’activation de tous les lots une fois le processus de redémarrage terminé. Vous pouvez surveiller le statut des lots en accédant à : `https://server:host/system/console/bundles`. Assurez-vous que tous les lots sont actifs avant de poursuivre les tâches.
 
 * Le service de préremplissage échoue avec une exception de pointeur nulle dans les communications interactives. (CQDOC-21355)
 
