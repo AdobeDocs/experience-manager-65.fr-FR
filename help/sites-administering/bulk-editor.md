@@ -7,10 +7,10 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 80%
+source-wordcount: '1160'
+ht-degree: 79%
 
 ---
 
@@ -119,7 +119,8 @@ Pour l’exemple ci-dessus, toutes les pages qui correspondent aux critères de 
 * **path :** effectue une recherche uniquement sur les nœuds sous ce chemin d’accès. Si vous spécifiez plusieurs termes avec un préfixe de chemin d’accès, seul le dernier terme est pris en compte.
 * **type :** renvoie uniquement les noeuds du type de noeud donné. Cela inclut les types principal et mixin. Vous pouvez spécifier plusieurs types de nœuds séparés par des virgules. GQL renvoie les nœuds de l’un des types spécifiés.
 * **order :** organise le résultat en fonction des propriétés données. Vous pouvez spécifier plusieurs noms de propriétés séparés par des virgules. Pour contrôler le résultat dans l’ordre descendant, ajoutez simplement le préfixe « - » (moins) au nom de la propriété. Par exemple, order:-name. Si vous utilisez un signe « + » (plus), le résultat est renvoyé dans l’ordre ascendant, qui est également l’ordre par défaut.
-* **limit :** limite le nombre de résultats à l’aide d’un intervalle. Par exemple, limit:10.20 L’intervalle est de base zéro, le début est inclusif et la fin est exclusive. Vous pouvez également spécifier un intervalle ouvert :limit:10.. ou limit:..20 Si les points sont omis et qu’une seule valeur est spécifiée, GQL renvoie au plus ce nombre de résultats. Par exemple, limit:10 (renvoie les dix premiers résultats).
+* **limit :** limite le nombre de résultats à l’aide d’un intervalle. Par exemple, limit:10.20 L’intervalle est de base zéro, le début est inclusif et la fin est exclusive. Vous pouvez également spécifier une ouverture `interval:limit:10..` ou `limit:..20`
+Si les points sont omis et qu’une seule valeur est spécifiée, GQL renvoie au plus ce nombre de résultats. Par exemple : `limit:10` (renvoie les dix premiers résultats).
 
 ### Export de contenu {#exporting-content}
 

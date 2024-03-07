@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1613'
-ht-degree: 99%
+source-wordcount: '1609'
+ht-degree: 97%
 
 ---
 
@@ -221,7 +221,7 @@ Les options de configuration suivantes sont disponibles :
 
 >[!NOTE]
 >
-Si vous envisagez plusieurs configurations LDAP avec votre instance d’AEM, vous devez créer des fournisseurs d’identité et des gestionnaires de synchronisation distincts pour chaque configuration.
+>Si vous envisagez plusieurs configurations LDAP avec votre instance d’AEM, vous devez créer des fournisseurs d’identité et des gestionnaires de synchronisation distincts pour chaque configuration.
 
 ## Configurer LDAP sur SSL {#configure-ldap-over-ssl}
 
@@ -277,12 +277,12 @@ Pour activer la journalisation du débogage, procédez comme suit :
 
 * Niveau de journal : débogage
 * Fichier journal logs/ldap.log
-* Motif de message : {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Modèle de message : {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Journal : org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Niveau de journal : débogage
 * Fichier journal : logs/external.log
-* Motif de message : {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Modèle de message : {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Journal : org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Une remarque sur l’appartenance à un groupe {#a-word-on-group-affiliation}

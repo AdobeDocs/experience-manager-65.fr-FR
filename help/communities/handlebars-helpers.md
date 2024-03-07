@@ -4,10 +4,10 @@ description: Méthodes Handlebars Helper pour faciliter le travail avec SCF
 topic-tags: developing
 content-type: reference
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: 787e5a87f13498006e2ce897e85ee12704b58f09
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1453'
-ht-degree: 3%
+source-wordcount: '1445'
+ht-degree: 4%
 
 ---
 
@@ -135,7 +135,7 @@ Une aide permettant de renvoyer une chaîne de date formatée.
 
 * **format**: chaîne
 
-  (Facultatif) Format de date à appliquer. La valeur par défaut est &quot;AAAA-MM-JJTHH&quot;:mm:s.sssZ&quot; et le résultat apparaît sous la forme &quot;2015-03-18T18:17:13-07:00&quot;
+  (Facultatif) Format de date à appliquer. La valeur par défaut est &quot;`YYYY-MM-DDTHH:mm:ss.sssZ`&quot; et le résultat apparaît comme &quot;`2015-03-18T18:17:13-07:00`&quot;
 
 ### Exemples {#examples-1}
 

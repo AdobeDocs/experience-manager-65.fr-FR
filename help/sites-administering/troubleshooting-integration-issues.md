@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 11b0023e-34bd-4dfe-8173-5466db9fbe34
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 60%
+source-wordcount: '1078'
+ht-degree: 58%
 
 ---
 
@@ -98,10 +98,10 @@ Pour résoudre ce problème, vous pouvez essayer les méthodes suivantes :
 * Vérifiez les listes de contrôle d’accès sur `/etc/cloudservices`. Les listes ACL doivent être :
 
    * allow; jcr:read; webservice-support-service-servicelibfinder
-   * allow; jcr:read; everyone; rep:glob:&amp;ast;/defaults/&amp;ast;
-   * allow; jcr:read; everyone; rep:glob:&amp;ast;/defaults
-   * allow; jcr:read; everyone; rep:glob:&amp;ast;/public/&amp;ast;
-   * allow; jcr:read; everyone; rep:glob:&amp;ast;/public
+   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/defaults/`&amp;ast;
+   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/defaults`
+   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/public/`&amp;ast;
+   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/public`
 
 Pour plus d’informations sur la gestion des listes de contrôle d’accès, consultez la section [Administration et sécurité des utilisateurs](/help/sites-administering/security.md#permissions-in-aem) page.
 

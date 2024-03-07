@@ -1,15 +1,15 @@
 ---
 title: Responsive Design pour les pages web
-description: Le Responsive Design permet d’afficher efficacement les mêmes pages sur plusieurs appareils dans différentes orientations..
+description: Avec une conception réactive, les mêmes pages peuvent être affichées efficacement sur plusieurs appareils avec plusieurs orientations.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: mobile-web
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '5375'
+source-wordcount: '5293'
 ht-degree: 98%
 
 ---
@@ -200,7 +200,7 @@ Par exemple, pour créer un nœud ` [sling:OsgiConfig](/help/sites-deploying/con
 
   Le suffixe - `*alias*` est requis, car MobileEmulatorProvider est un service de fabrique. Utilisez un alias unique pour cette fabrique.
 
-* jcr:primaryType: `sling:OsgiConfig`
+* `jcr:primaryType`: `sling:OsgiConfig`
 
 Ajoutez la propriété de nœud suivante :
 

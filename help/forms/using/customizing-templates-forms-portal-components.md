@@ -7,10 +7,10 @@ topic-tags: customization
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1246'
-ht-degree: 45%
+source-wordcount: '1242'
+ht-degree: 43%
 
 ---
 
@@ -143,8 +143,8 @@ Par exemple, pour l’en-tête &quot;Title&quot; dans la vue Grille, la valeur d
 * **diffTime**: différence entre l’heure actuelle et la dernière action d’enregistrement du brouillon. Vous pouvez également définir la différence entre l’heure actuelle et la dernière action envoyée pour l’envoi.
 * **iconClass**: classe CSS utilisée pour afficher la première lettre du brouillon/envoi. Forms Portal comprend les classes suivantes, qui fournissent divers arrière-plans colorés.
 * **propriétaire**: utilisateur ayant créé le brouillon/envoi.
-* **Today** : date de création du brouillon ou de l’envoi au format JJ:MM:AAAA.
-* **TimeNow** : heure de création du brouillon ou de l’envoi au format HH:MM:SS (format de 24 heures).
+* **Aujourd&#39;hui**: date de création du brouillon ou de l’envoi dans `DD:MM:YYYY` format.
+* **TimeNow**: date de création du brouillon ou de l’envoi dans `HH:MM:SS` Format 24 heures
 
 *Remarque :*
 
