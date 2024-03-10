@@ -7,10 +7,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '2092'
-ht-degree: 97%
+source-wordcount: '2093'
+ht-degree: 96%
 
 ---
 
@@ -188,7 +188,7 @@ Grâce à AEM Doc Services et AEM Doc Security, nous pouvons désormais appe
 
 Le [déchargement](/help/sites-deploying/offloading.md) permet de répartir les tâches de traitement entre les instances d’Experience Manager dans une topologie. Avec le déchargement, vous pouvez utiliser des instances particulières d’Experience Manager pour exécuter des types de traitement spécifiques. Un traitement spécialisé vous permet d’optimiser l’utilisation des ressources serveur disponibles.
 
-Les topologies sont des clusters Experience Manager légèrement interconnectées qui participent au déchargement. Un cluster se compose d’une ou de plusieurs instances de serveur Experience Manager (une seule instance est considérée comme un cluster).
+Les topologies sont des grappes de Experience Manager à couplage faible qui participent au déchargement. Un cluster se compose d’une ou de plusieurs instances de serveur Experience Manager (une seule instance est considérée comme un cluster).
 
 Pour plus d’informations sur l’affichage ou la modification de l’appartenance à une topologie, consultez la section [Administrer des topologies](/help/sites-deploying/offloading.md#administering-topologies).
 

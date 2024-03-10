@@ -6,10 +6,10 @@ role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 97%
+source-wordcount: '1026'
+ht-degree: 95%
 
 ---
 
@@ -58,7 +58,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 
 1. Pour permettre aux utilisateurs de télécharger la ressource d’origine, sélectionnez **[!UICONTROL Autoriser le téléchargement du fichier d’origine]**. Pour permettre aux utilisateurs de télécharger uniquement les rendus des ressources partagées, sélectionnez **[!UICONTROL Autorise le téléchargement des rendus du fichier]**.
 
-1. Cliquez sur **[!UICONTROL Partager]**. Un message confirme le partage du lien avec le ou les personnes par e-mail.
+1. Cliquez sur **[!UICONTROL Partager]**. Un message confirme le partage du lien avec les utilisateurs au moyen d’un email.
 
 1. Pour afficher la ressource partagée, cliquez sur le lien dans l’e-mail envoyé. Pour générer un aperçu de la ressource, cliquez sur la ressource partagée. Pour fermer l’aperçu, cliquez sur **[!UICONTROL Précédent]**. Si vous avez partagé un dossier, cliquez sur **[!UICONTROL Dossier parent]** pour revenir au dossier parent.
 

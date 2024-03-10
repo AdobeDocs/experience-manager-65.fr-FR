@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '4433'
+source-wordcount: '4434'
 ht-degree: 95%
 
 ---
@@ -147,7 +147,7 @@ Créez un nœud pour chacune des propriétés (champs) pour lesquelles vous souh
 
 1. Sous le nœud de propriété (ici : geographicallocation), ajoutez un nouveau nœud portant le nom `items`. Sous le nœud des éléments, ajoutez un nœud pour chaque valeur de la liste déroulante. Il est recommandé d’ajouter le premier nœud en le laissant vide, comme valeur par défaut de la liste déroulante, puis de ne spécifier aucune valeur pour le champ. Pour ajouter plusieurs options/valeurs de liste déroulante, répétez les étapes suivantes :
 
-   1. Cliquez avec le bouton droit sur le nœud de propriété (ici geographicallocation) et sélectionnez **Créer** > **Créer un nœud**.
+   1. Cliquez avec le bouton droit sur le noeud de propriété (ici geographicallocation) et sélectionnez **Créer** > **Créer un noeud**.
    1. Entrez comme nom de champ `item1,`, conservez le type nt:unstructured, puis cliquez sur **OK**.
    1. Ajoutez les propriétés suivantes au nœud que vous venez de créer (ici, item1), puis cliquez sur **Enregistrer tout** :
 
@@ -386,7 +386,7 @@ Ce scénario vous indique comment ajouter à toutes les ressources de texte une 
 * Dictionnaire de données
 * Lettre
 
-Par exemple, vous souhaitez ajouter une propriété, Emplacement des destinataires, uniquement aux ressources de texte, pour identifier la zone géographique à laquelle une ressource correspond.  ![Propriété personnalisée ajoutée à une ressource](assets/newtabui.png)
+Par exemple, pour les ressources de texte uniquement, vous souhaitez ajouter une propriété, Emplacement des destinataires, afin d’identifier la zone géographique à laquelle une ressource est pertinente.  ![Propriété personnalisée ajoutée à une ressource](assets/newtabui.png)
 
 Procédez comme suit pour ajouter une propriété à un type de ressource :
 

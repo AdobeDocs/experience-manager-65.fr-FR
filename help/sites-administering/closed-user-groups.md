@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '6650'
-ht-degree: 36%
+ht-degree: 35%
 
 ---
 
@@ -322,7 +322,7 @@ while (isSupportedPath(path)) {
 
 #### Gestion des stratégies de CUG par principal {#managing-cug-policies-by-pincipal}
 
-Les extensions définies par `JackrabbitAccessControlManager` qui permettent la modification des politiques de contrôle d’accès par une entité de sécurité ne sont pas mises en œuvre avec la gestion de contrôle d’accès CUG, comme par définition une politique de CUG affecte toujours toutes les entités de sécurité : celles répertoriées avec `PrincipalSetPolicy` se voient attribuer une autorisation d’accès en lecture, alors que toutes les autres entités de sécurité ne peuvent pas lire le contenu dans l’arborescence définie par le nœud cible.
+Les extensions définies par `JackrabbitAccessControlManager` qui vous permettent de modifier les stratégies de contrôle d’accès par entité ne sont pas implémentées avec la gestion du contrôle d’accès des groupes d’utilisateurs fermés, car, par définition, une stratégie de groupe d’utilisateurs fermé affecte toujours toutes les entités : celles répertoriées avec la variable `PrincipalSetPolicy` se voient accorder un accès en lecture alors que toutes les autres entités ne pourront pas lire le contenu dans l’arborescence définie par le noeud cible.
 
 Les méthodes correspondantes renvoient toujours un tableau de stratégie vide, mais ne renvoient pas d’exceptions.
 

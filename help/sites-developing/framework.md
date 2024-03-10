@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 63%
+source-wordcount: '1638'
+ht-degree: 47%
 
 ---
 
@@ -27,16 +27,16 @@ Cet article se concentre sur le cadre sous-jacent qui prend en charge le balisag
 
 ## Présentation {#introduction}
 
-Pour baliser le contenu et utiliser le framework de balisage AEM, procédez comme suit :
+Pour baliser le contenu et utiliser l’infrastructure de balisage AEM :
 
 * La balise doit exister en tant que nœud du type `[cq:Tag](#tags-cq-tag-node-type)` sous le [nœud racine de taxonomie.](#taxonomy-root-node)
 
 * Le `NodeType` du nœud de contenu balisé doit inclure le mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin).
-* Le [`TagID`](#tagid) est ajouté à la propriété [`cq:tags`](#tagged-content-cq-tags-property) du nœud de contenu et est résolu sur un nœud de type ` [cq:Tag](#tags-cq-tag-node-type)`.
+* La variable [`TagID`](#tagid) est ajouté au noeud de contenu [`cq:tags`](#tagged-content-cq-tags-property) et correspond à un noeud de type ` [cq:Tag](#tags-cq-tag-node-type)`.
 
 ## Balises : type de nœud cq:Tag  {#tags-cq-tag-node-type}
 
-La déclaration d’une balise est capturée dans le référentiel dans un nœud de type `cq:Tag`..
+La déclaration d’une balise est capturée dans le référentiel dans un noeud de type `cq:Tag`.
 
 Une balise peut être un mot simple (par exemple, `sky`) ou représentent une taxonomie hiérarchique (par exemple, `fruit/apple`, c’est-à-dire que le `fruit` et plus spécifique `apple`).
 
@@ -62,23 +62,23 @@ Les balises étant simplement des noeuds JCR, les noms de noeud doivent respecte
 
 Un ID de balise identifie un chemin d’accès qui est résolu sur un nœud de balise dans le référentiel.
 
-En règle générale, l’ID de balise est un identifiant abrégé commençant par l’espace de noms ; il peut également s’agir d’un ID de balise absolu commençant au niveau du [nœud racine de taxonomie.](#taxonomy-root-node)
+En règle générale, l’ID de balise est un abrégé ID commençant par l’espace de noms ou il peut s’agir d’un ID de balise absolu commençant par [noeud racine de taxonomie.](#taxonomy-root-node)
 
-Lorsque le contenu est balisé, la propriété `[cq:tags](#tagged-content-cq-tags-property)` est ajoutée, si elle n’existe pas déjà, au nœud de contenu et l’ID de balise est ajouté à la valeur de tableau de la propriété.`String`
+Lorsque le contenu est balisé, s’il n’existe pas encore, la variable `[cq:tags](#tagged-content-cq-tags-property)` est ajoutée au noeud de contenu et l’ID de balise est ajouté au `String` valeur du tableau .
 
 L’ID de balise se compose d’un [espace de noms](#tag-namespace), suivi de l’ID de balise local. Les [balises conteneurs](#container-tags) contiennent des sous-balises qui représentent un ordre hiérarchique dans la taxonomie. Les sous-balises peuvent être utilisées pour référencer des balises comme n’importe quel ID de balise local. Par exemple, baliser du contenu avec `fruit` est autorisé, même s’il s’agit d’une balise conteneur avec des sous-balises, comme `fruit/apple` et `fruit/banana`.
 
 ### Nœud racine de taxonomie {#taxonomy-root-node}
 
-Le nœud racine de taxonomie est le chemin d’accès de base pour toutes les balises du référentiel. Le nœud racine de taxonomie ne peut pas être un nœud de type `cq:Tag`.
+Le nœud racine de taxonomie est le chemin d’accès de base pour toutes les balises du référentiel. Le noeud racine de taxonomie ne doit pas être un noeud de type `cq:Tag`.
 
 Dans AEM, le chemin d’accès de base est `/content/cq:tags` et le nœud racine est de type `cq:Folder`.
 
 ### Espace de noms des balises {#tag-namespace}
 
-Les espaces de noms vous permettent de regrouper des éléments. Le cas d’utilisation le plus courant est un espace de noms par site (par exemple, public, interne et portail) ou par application plus grande (par exemple, WCM, Assets, Communities). Mais les espaces de noms peuvent être utilisés pour d’autres besoins. Les espaces de noms sont utilisés dans l’interface utilisateur pour afficher uniquement le sous-ensemble de balises (c’est-à-dire les balises d’un certain espace de noms) qui s’applique au contenu actuel.
+Les espaces de noms vous permettent de regrouper des éléments. Le cas d’utilisation le plus courant est un espace de noms par site (par exemple, public, interne et portail) ou par application plus grande (par exemple, WCM, Assets, Communities). Mais les espaces de noms peuvent être utilisés pour d’autres besoins. Les espaces de noms sont utilisés dans l’interface utilisateur pour afficher uniquement le sous-ensemble de balises (c’est-à-dire les balises d’un certain espace de noms) applicable au contenu actuel.
 
-L’espace de noms de la balise est le premier niveau de la sous-arborescence de taxonomie, à savoir le nœud situé juste en dessous du [nœud racine de taxonomie](#taxonomy-root-node). Un espace de noms est un nœud de type `cq:Tag` dont le parent n’est pas de type `cq:Tag`.
+L’espace de noms de la balise est le premier niveau de la sous-arborescence de taxonomie, à savoir le nœud situé juste en dessous du [nœud racine de taxonomie](#taxonomy-root-node). Un espace de noms est un noeud de type `cq:Tag` dont le parent n’est pas un `cq:Tag` type de noeud.
 
 Toutes les balises possèdent un espace de noms. Si aucun espace de noms n’est spécifié, la balise est affectée à l’espace de noms par défaut, qui est TagID. `default` avec le titre `Standard Tags`, à savoir : `/content/cq:tags/default`.
 
@@ -117,7 +117,7 @@ Pour plus d’informations, voir les documents suivants :
 
 ### Contrôle d’accès {#access-control}
 
-Les balises existent sous la forme de nœud dans le répertoire sous le [nœud racine de taxonomie](#taxonomy-root-node). Il est possible d’accorder ou de refuser aux auteurs et aux visiteurs du site le droit de créer des balises dans un espace de noms donné en définissant des listes de contrôle d’accès (ACL) appropriées dans le référentiel.
+Les balises existent sous la forme de nœud dans le répertoire sous le [nœud racine de taxonomie](#taxonomy-root-node). Il est possible d’autoriser ou de refuser aux auteurs et aux visiteurs du site de créer des balises dans un espace de noms donné en définissant des listes de contrôle d’accès appropriées dans le référentiel.
 
 En outre, le refus d’autorisations de lecture pour certaines balises ou espaces de noms contrôle la possibilité d’appliquer des balises à un contenu spécifique.
 
@@ -181,7 +181,7 @@ Voici une description des effets dans le référentiel lors du déplacement ou d
 
 * `cq:movedTo` pointe vers la balise B.
 
-   * Cette propriété signifie que la balise A a été déplacée ou fusionnée dans la balise B. Le déplacement de la balise B met à jour cette propriété en conséquence. La balise A est donc masquée et elle n’est conservée dans le référentiel que pour résoudre les ID de balise situés dans les nœuds de contenu pointant vers la balise A. Le nettoyeur de mémoire de balise supprime des balises telles que la balise A dès que plus aucun nœud de contenu ne pointe vers elles.
+   * Cette propriété signifie que la balise A a été déplacée ou fusionnée dans la balise B. Le déplacement de la balise B met à jour cette propriété en conséquence. La balise A est donc masquée et conservée uniquement dans le référentiel pour résoudre les ID de balise dans les noeuds de contenu pointant vers la balise A. Le nettoyeur de mémoire de balise supprime les balises telles que la balise A une fois qu’aucun noeud de contenu ne les pointe vers elles.
 
    * Une valeur spéciale pour la variable `cq:movedTo` est `nirvana`. Elle est appliquée lorsque la balise est supprimée mais ne peut pas être supprimée du référentiel, car il existe des sous-balises avec une balise `cq:movedTo` qui doit être préservée.
 
@@ -192,7 +192,7 @@ Voici une description des effets dans le référentiel lors du déplacement ou d
   >1. La balise est utilisée dans le contenu (ce qui signifie qu’elle comporte une référence) ou
   >1. La balise comporte des enfants qui ont déjà été déplacés.
 
-* `cq:backlinks` conserve les références dans l’autre direction. En d’autres termes, il conserve une liste de toutes les balises qui ont été déplacées ou fusionnées avec la balise B. Cela est surtout nécessaire pour conserver les propriétés `cq:movedTo` à jour lorsque la balise B est également déplacée/fusionnée/supprimée ou que la balise B est activée, auquel cas toutes ses balises de liens retours doivent également être activées.
+* `cq:backlinks` conserve les références dans l’autre direction. En d’autres termes, il conserve une liste de toutes les balises qui ont été déplacées ou fusionnées avec la balise B. Cela est principalement nécessaire pour conserver `cq:movedTo` propriétés mises à jour lorsque la balise B est également déplacée/fusionnée/supprimée ou lorsque la balise B est activée, auquel cas toutes ses balises de lien arrière doivent être activées.
 
   >[!NOTE]
   >

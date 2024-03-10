@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, development-tools
 role: Developer
 exl-id: 1d4062ef-fb24-4527-b899-896ce757beda
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '532'
 ht-degree: 32%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 32%
 
 Le démarrage rapide de l’API Adobe AEM Forms peut vous aider à accélérer vos efforts de développement de programmes qui interagissent avec les services AEM Forms. Les *démarrages rapides* sont des programmes complets que vous pouvez copier et coller dans vos propres projets et qui vous servent de point de départ. Vous pouvez exécuter un démarrage rapide pour ce quʼil accomplit et le modifier en fonction de vos besoins.
 
-Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée dʼAEM Forms et le mode de connexion doit être défini sur SOAP.
 
-Le didacticiel de mise en route de l’API Java™, très typé, fournit une liste des fichiers JAR requis pour exécuter l’application Java™. La plupart des didacticiels Java™ Quick Starts sont des applications de console qui s’exécutent dans `main`. Toutefois, le démarrage rapide de l’API Java™ Forms est mis en oeuvre sous la forme d’un servlet Java™ qui s’exécute dans une application web.
+Le didacticiel de mise en route de l’API Java™, très typé, fournit une liste des fichiers JAR requis pour exécuter l’application Java™. La plupart des didacticiels Java™ Quick Starts sont des applications de console qui s’exécutent dans `main`. Toutefois, le démarrage rapide de l’API Java™ Forms, très typé, est mis en oeuvre sous la forme d’une servlet Java™ qui s’exécute dans une application web.
 
 La liste des fichiers JAR figure dans une section de commentaire au début du didacticiel de mise en route. Par exemple, le commentaire suivant se trouve dans un démarrage rapide de Output et est une liste standard de fichiers JAR que l’on trouve dans chaque démarrage rapide de Java™.
 
@@ -85,4 +85,4 @@ Démarrages les plus rapides dans *Programmation avec AEM Forms on JEE* appeler 
 
 >[!NOTE]
 >
-La plupart des didacticiels de mise en route des services Web sont écrits en C# et utilisent le framework .NET. Cependant, vous pouvez créer une logique d’application cliente capable d’appeler les services AEM Forms dans n’importe quel environnement de développement prenant en charge les normes SOAP. (Consultez la section [Appeler AEM Forms à lʼaide de services web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)).
+>La plupart des didacticiels de mise en route des services Web sont écrits en C# et utilisent le framework .NET. Cependant, vous pouvez créer une logique d’application cliente capable d’appeler les services AEM Forms dans n’importe quel environnement de développement prenant en charge les normes SOAP. (Consultez la section [Appeler AEM Forms à lʼaide de services web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)).

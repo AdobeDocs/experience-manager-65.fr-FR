@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: bee0eebb-c21d-472c-bbdf-28d8c3a5ed4a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1248'
 ht-degree: 98%
 
 ---
@@ -100,12 +100,12 @@ Les didacticiels de démarrage rapide suivants sont disponibles pour appeler par
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking_custom_component_services_using_remoting">Appeler des services de composants personnalisés à l’aide de Remoting</a></p></td>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-the-customer-custom-service-using-remoting">Démarrage rapide : appel du service personnalisé client à l’aide d’AEM Forms Remoting (obsolète pour AEM forms)</a></p></td>
    <td><p>N/A</p></td>
-   <td><p>N/A</p></td>
+   <td><p>S/O</p></td>
   </tr>
  </tbody>
 </table>
 
-Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée dʼAEM Forms et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >

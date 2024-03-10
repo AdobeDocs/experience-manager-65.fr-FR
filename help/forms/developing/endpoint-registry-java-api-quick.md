@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '553'
 ht-degree: 26%
 
 ---
@@ -36,7 +36,7 @@ L’API Java™ Quick Start (SOAP) est disponible pour le registre des points de
 
 [QuickStart : récupération des informations du connecteur de point d’entrée à l’aide de Java](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
-Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée dʼAEM Forms et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API forte
 
 >[!NOTE]
 >
-Vous ne pouvez pas utiliser de points d’entrée à l’aide d’un service web.
+>Vous ne pouvez pas utiliser de points d’entrée à l’aide d’un service web.
 
 ## QuickStart : ajout d’un point d’entrée EJB à l’aide de l’API Java™ {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
 
@@ -251,7 +251,7 @@ L’exemple de code Java™ suivant ajoute un point de fin Watched Folder à un 
 
 >[!NOTE]
 >
-Incluez le fichier WatchedFolderEndpointConfigConstants.java dans votre projet afin de compiler et d’exécuter le démarrage rapide suivant. (Voir [Fichier constant des valeurs de configuration du dossier de contrôle](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
+>Incluez le fichier WatchedFolderEndpointConfigConstants.java dans votre projet afin de compiler et d’exécuter le démarrage rapide suivant. (Voir [Fichier constant des valeurs de configuration du dossier de contrôle](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
 
 ```java
  /*
@@ -386,7 +386,7 @@ L’exemple de code Java™ suivant ajoute un point de fin de courrier électron
 
 >[!NOTE]
 >
-Incluez le fichier EmailEndpointConfigConstants.java dans votre projet afin de compiler et d’exécuter le démarrage rapide suivant. (Voir [Fichier constant de valeurs de configuration du canal e-mail](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
+>Incluez le fichier EmailEndpointConfigConstants.java dans votre projet afin de compiler et d’exécuter le démarrage rapide suivant. (Voir [Fichier constant de valeurs de configuration du canal e-mail](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
 
 ```java
  /*

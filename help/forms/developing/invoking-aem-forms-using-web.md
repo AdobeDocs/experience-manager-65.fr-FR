@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '9812'
+source-wordcount: '9814'
 ht-degree: 96%
 
 ---
@@ -1518,7 +1518,7 @@ La liste suivante spécifie les types de données qui ne peuvent pas être parta
 * `Roles`
 * `BLOB`
 
-Pour éviter ce problème, il est recommandé que vous soyez complètement admissible pour les types de données. Prenons l’exemple d’une application .NET qui fait référence à la fois au service Forms et au service Signature à l’aide d’une référence de service. Les deux références de service contiennent une classe `BLOB`. Pour utiliser une instance `BLOB`, vous devez être complètement admissible pour lʼobjet `BLOB` lorsque vous le déclarez. Cette approche est illustrée dans l’exemple de code suivant. Pour plus d’informations sur cet exemple de code, consultez la section [Signer numériquement un formulaire interactif](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms).
+Pour éviter ce problème, il est recommandé de qualifier complètement les types de données. Prenons l’exemple d’une application .NET qui fait référence à la fois au service Forms et au service Signature à l’aide d’une référence de service. Les deux références de service contiennent une classe `BLOB`. Pour utiliser une `BLOB` , remplissez les conditions requises pour la variable `BLOB` lorsque vous la déclarez. Cette approche est illustrée dans l’exemple de code suivant. Pour plus d’informations sur cet exemple de code, consultez la section [Signer numériquement un formulaire interactif](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms).
 
 L’exemple de code C# suivant illustre comment signer un formulaire interactif rendu par le service Forms. L’application client contient deux références de service. Lʼinstance `BLOB` associée au service Forms appartient à lʼespace de nommage `SignInteractiveForm.ServiceReference2`. De même, lʼinstance `BLOB` associée au service Signature appartient à lʼespace de nommage `SignInteractiveForm.ServiceReference1`. Le formulaire interactif signé est enregistré en tant que fichier PDF, nommé *LoanXFASigned.pdf*.
 
@@ -1553,7 +1553,7 @@ L’exemple de code C# suivant illustre comment signer un formulaire interactif 
                 try
                 {
                     //Because BLOB objects are used in both service references
-                    //it is necessary to fully-qualify the BLOB objects
+                    //it is necessary to fully qualify the BLOB objects
  
                     //Retrieve the form -- invoke the Forms service
                     SignInteractiveForm.ServiceReference2.BLOB formData = GetForm();

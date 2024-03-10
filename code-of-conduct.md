@@ -1,8 +1,8 @@
 ---
-source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 95%
+source-wordcount: '424'
+ht-degree: 87%
 
 ---
 # Code de conduite d’Adobe
@@ -37,7 +37,7 @@ Les responsables du projet ont le droit et la responsabilité de supprimer, de m
 
 ## Portée
 
-Ce code de conduite s’applique à la fois à l’espace du projet et aux environnements publics lorsqu’une personne représente le projet ou sa communauté. Parmi les exemples de représentations d’un projet ou d’une communauté, citons l’utilisation d’une adresse électronique officielle de projet, la publication par le biais d’un compte de média social officiel ou l’intervention, en tant que représentant désigné, à l’occasion d’un événement en ligne ou hors ligne. La représentation d’un projet peut être définie plus précisément et clarifiée par les responsables du projet.
+Ce code de conduite s’applique à la fois à l’espace du projet et aux environnements publics lorsqu’une personne représente le projet ou sa communauté. Parmi les exemples de représentation d’un projet ou d’une communauté, citons l’utilisation d’une adresse électronique officielle du projet, la publication par le biais d’un compte de médias sociaux officiel ou le fait d’agir en tant que représentant désigné lors d’un événement en ligne ou hors ligne. La représentation d’un projet peut être définie plus précisément et clarifiée par les responsables du projet.
 
 ## Application
 

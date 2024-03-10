@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1007'
 ht-degree: 85%
 
 ---
@@ -40,7 +40,7 @@ Le démarrage rapide (SOAP) de l’API Java est disponible pour le service Assem
 
 [Démarrage rapide (mode SOAP) : assembler plusieurs fragments XDP à l’aide de l’API Java.](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
-Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée dʼAEM Forms et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
@@ -1687,7 +1687,7 @@ L’exemple de code suivant supprime un document PDF à l’aide de la fonction 
 
 >[!NOTE]
 >
-La variable `PDFUtility` ne peuvent supprimer que les PDF marqués pour modification à l’aide d’Acrobat.
+>La variable `PDFUtility` ne peuvent supprimer que les PDF marqués pour modification à l’aide d’Acrobat.
 
 ```java
 /*

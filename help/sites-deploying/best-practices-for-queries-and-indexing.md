@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '4518'
-ht-degree: 95%
+source-wordcount: '4520'
+ht-degree: 94%
 
 ---
 
@@ -403,7 +403,7 @@ Problèmes possibles et solutions :
 
 ### Pré-extraction de texte des fichiers binaires {#text-pre-extraction-of-binaries}
 
-La pré-extraction de texte est le processus d’extraction et de traitement de texte à partir de fichiers binaires, directement à partir du magasin de données par le biais d’un processus isolé, et d’exposition directe du texte extrait aux indexations/réindexations ultérieures des index Oak.
+La pré-extraction de texte est le processus d’extraction et de traitement de texte à partir de binaires, directement à partir de l’entrepôt de données par le biais d’un processus isolé, et d’exposition directe du texte extrait aux réindexations/réindexation ultérieures des index Oak.
 
 * La pré-extraction de texte Oak est recommandée pour l’indexation ou la réindexation des index Lucene sur les référentiels contenant de grands volumes de fichiers (binaires) qui comportent du texte extractible (par exemple, des PDF, des documents Word, des PPT, TXT, etc.) pouvant faire l’objet d’une recherche en texte intégral via des index Oak déployés ; par exemple, `/oak:index/damAssetLucene`.
 * La pré-extraction de texte ne bénéficie qu’à l’indexation/la réindexation des index Lucene et NON PAS aux index de propriété Oak, étant donné que les index de propriété n’extraient pas de texte à partir de fichiers binaires.

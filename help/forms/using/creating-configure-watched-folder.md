@@ -5,10 +5,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '1829'
-ht-degree: 52%
+ht-degree: 65%
 
 ---
 
@@ -42,13 +42,13 @@ Effectuez les étapes suivantes pour créer un dossier de contrôle :
    * **Traiter les fichiers avec** : te type de processus à démarrer. Vous pouvez spécifier le workflow, le script, ou le service.
    * **Nom du service/Chemin du script/Chemin du workflow** : le comportement du champ est basé sur la valeur spécifiée pour le champ **Traiter les fichiers avec**. Vous pouvez spécifier les valeurs suivantes :
 
-      * Pour Workflow, spécifiez le modèle de workflow à exécuter. Par exemple, /etc/workflow/models/&lt;workflow_name>/jcr:content/model
+      * Pour Workflow, spécifiez le modèle de workflow à exécuter. Par exemple, /etc/workflow/models/&lt;nom_workflow>/jcr:content/model.
       * Pour Script, spécifiez le chemin JCR du script à exécuter. Par exemple, /etc/watchfolder/test/testScript.ecma
       * Pour le service, spécifiez le filtre utilisé pour localiser un service OSGi. Le service est enregistré comme une implémentation de l’interface de com.adobe.aemfd.watchfolder.service.api.ContentProcessor. Par exemple, le code suivant est une implémentation personnalisée de l’interface ContentProcessor avec une propriété personnalisée (foo=bar).
 
    >[!NOTE]
    >
-   >Si vous avez sélectionné **Service** pour le **Traiter les fichiers à l’aide de** , la valeur du champ Nom du service (inputProcessorType) doit être mise entre parenthèses. Par exemple, (foo=bar).
+   >Si vous avez sélectionné **Service** pour le **Traiter les fichiers à l’aide de** , la valeur du champ Nom du service (inputProcessorType) doit être mise entre parenthèses. Par exemple (foo=bar).
 
    ```java
    @Component(metatype = true, immediate = true, label = "WF Test Service", description = "WF Test Service")
@@ -61,10 +61,10 @@ Effectuez les étapes suivantes pour créer un dossier de contrôle :
 
 1. Sélectionner **Avancé**. L’onglet Avancé contient d’autres champs. La plupart de ces champs contiennent une valeur par défaut.
 
-   * **Filtre de mappeur de charge :** Lorsque vous créez un dossier de contrôle, il crée une structure de dossiers dans le dossier contrôlé. La structure de dossiers comporte des dossiers stage, result, preserve, input et failure. La structure de dossiers peut servir de charge utile d’entrée au workflow et accepter la sortie d’un workflow. Il peut également répertorier les points d’échec, le cas échéant. La structure d’une payload est différente de celle d’un dossier de contrôle. Vous pouvez écrire des scripts personnalisés pour mapper la structure d’un dossier de contrôle à la charge utile. Un tel script est appelé filtre du mappeur de charge utile. Deux mises en oeuvre de mappeur de charge prêt à l’emploi sont disponibles. Si vous n’avez pas [une implémentation personnalisée](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), utilisez une implémentation prête à l’emploi :
+   * **Filtre de mappeur de charge :** Lorsque vous créez un dossier de contrôle, il crée une structure de dossiers dans le dossier contrôlé. La structure de dossiers est constituée de dossiers d’étapes, de résultats, de conservations, d’entrées et d’échecs. La structure de dossiers peut servir de charge utile d’entrée au workflow et accepte la sortie d’un workflow. Il peut également répertorier les points d’échec, le cas échéant. La structure d’une payload est différente de celle d’un dossier de contrôle. Vous pouvez écrire des scripts personnalisés pour mapper la structure d’un dossier de contrôle à la charge utile. Un tel script est appelé le filtre mappeur de charge utile. Deux implémentations de mappeur de charge prêtes à l’emploi sont disponibles. Si vous ne disposez pas d’[une implémentation personnalisée](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), utilisez l’une des implémentations prêtes à l’emploi :
 
       * **Mappeur par défaut :** utilisez le mappeur de charge par défaut pour conserver les contenus d’entrée et de sortie des dossiers de contrôle dans des dossiers d’entrée et de sortie distincts dans la charge utile.
-      * **Mappeur de charge basé sur des fichiers simples :** utilisez le mappeur de charge basé sur des fichiers simples pour conserver les contenus d’entrée et de sortie directement dans le dossier de charge utile. Il ne crée aucune hiérarchie supplémentaire, comme le mappeur par défaut.
+      * **Mappeur de charge basé sur des fichiers simples :** utilisez le mappeur de charge basé sur des fichiers simples pour conserver les contenus d’entrée et de sortie directement dans le dossier de charge utile. Tout comme pour le mappeur par défaut, aucune hiérarchie supplémentaire n’est créée.
 
    * **Mode d’exécution** : spécifiez la liste séparée par des virgules de modes d’exécution autorisés pour l’exécution du workflow.
    * **Expiration des fichiers de scène toutes les** : indiquez le nombre de secondes à attendre pour qu’un fichier/dossier d’entrée ayant déjà été collecté pour traitement soit traité comme ayant expiré et défini comme étant un échec. Le mécanisme de délai d’expiration s’active uniquement lorsque la valeur de cette propriété est un nombre positif.
@@ -76,7 +76,7 @@ Effectuez les étapes suivantes pour créer un dossier de contrôle :
 
      Ce paramètre assure la copie intégrale d’un fichier ou d’un dossier dans le dossier d’entrée. Par exemple, si vous devez traiter un fichier volumineux dont le téléchargement dure dix minutes, définissez une durée d’attente de 10&amp;ast;60 &amp;ast;1000 millisecondes. Cet intervalle évite que le dossier de contrôle analyse le fichier tant que ce dernier a une existence inférieure à dix minutes.
 
-   * **Supprimer les résultats antérieurs à :** indiquez l’heure, en fonction du nombre de jours, à attendre avant de supprimer les fichiers et dossiers antérieurs à la valeur spécifiée. Ce paramètre s’avère utile pour s’assurer que le dossier de résultats n’est pas plein. Une valeur de -1 jour indique de ne jamais supprimer le dossier de résultats. La valeur par défaut est -1.
+   * **Supprimer les résultats antérieurs à :** indiquez l’heure, en fonction du nombre de jours, à attendre avant de supprimer les fichiers et dossiers antérieurs à la valeur spécifiée. Grâce à ce paramètre, le dossier obtenu n’est jamais plein. La valeur -1 jour indique de ne jamais supprimer le dossier de résultats. La valeur par défaut est -1.
    * **Nom du dossier de résultat :** spécifiez le nom du dossier dans lequel enregistrer les résultats. Si les résultats ne s’affichent pas dans ce dossier, vérifiez le dossier des échecs. Les fichiers en lecture seule ne sont pas traités ; ils sont enregistrés dans le dossier des échecs. Vous pouvez utiliser un chemin d’accès absolu ou relatif avec les modèles de fichiers suivants :
 
       * %F = préfixe du nom du fichier
@@ -86,24 +86,24 @@ Effectuez les étapes suivantes pour créer un dossier de contrôle :
       * %M = mois
       * %D = jour du mois
       * %d = jour de l’année
-      * %H = heure (horloge 24 heures)
-      * %h = heure (horloge 12 heures)
+      * %H = heure (horloge 24 heures)
+      * %h = heure (horloge 12 heures)
       * %m = minute
       * %s = seconde
       * %l = milliseconde
       * %R = nombre aléatoire (entre 0 et 9)
       * %P = ID de processus ou de tâche
       * Par exemple, s’il est 20 h, que nous sommes le 17 juillet 2009 et que vous indiquez C:/Test/WF0/failure/%Y/%M/%D/%H/, le dossier de résultats est C:/Test/WF0/failure/2009/07/17/20.
-      * Si le chemin d’accès n’est pas absolu mais relatif, le dossier est créé dans le dossier de contrôle. La valeur par défaut est result/%Y/%M/%D/, qui correspond au dossier Result dans le dossier de contrôle. Pour plus d’informations sur les modèles de fichiers, voir [À propos des modèles de fichier](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+      * Si le chemin d’accès n’est pas absolu, mais relatif, le dossier est créé dans le dossier de contrôle. La valeur par défaut est result/%Y/%M/%D/, qui correspond au dossier Result dans le dossier de contrôle. Pour plus d’informations sur les modèles de fichiers, voir [À propos des modèles de fichier](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
    * **Nom du dossier Échecs :** spécifiez le dossier dans lequel les fichiers en situation d’échec sont enregistrés. Cet emplacement dépend toujours du dossier de contrôle. Vous pouvez utiliser des modèles de fichiers, comme indiqué pour le dossier result.
    * **Conserver le nom de dossier :** indiquez le dossier dans lequel les fichiers sont stockés après avoir été analysés et sélectionnés. Le chemin d’accès peut être absolu, relatif ou vide. Vous pouvez utiliser des modèles de fichiers, comme indiqué pour le dossier result. La valeur par défaut est preserve/%Y/%M/%D/.
    * **Taille du lot :** indiquez le nombre de fichiers ou de dossiers à sélectionner par analyse. Cela permet d’éviter une surcharge du système ; l’analyse simultanée d’un trop grand nombre de fichiers peut entraîner un blocage. La valeur par défaut est 2.
 
-     Si l’intervalle d’analyse est court, les threads analysent souvent le dossier input. Si des fichiers sont déposés fréquemment dans le dossier de contrôle, vous devez limiter l’intervalle d’analyse. Si les fichiers sont déposés peu fréquemment, utilisez un intervalle d’analyse plus long afin que les autres services puissent utiliser les threads.
+     Si l’intervalle d’analyse est court, les threads analysent souvent le dossier Entrée. Si des fichiers sont déposés fréquemment dans le dossier de contrôle, vous devez limiter l’intervalle d’analyse. Si les fichiers sont rarement déposés, choisissez un intervalle d’analyse plus long afin que les autres services puissent utiliser les threads.
 
    * **Ralentir sur :** lorsque cette option est sélectionnée, elle permet de limiter le nombre de tâches du dossier de contrôle qu’AEM Forms peut traiter en une seule fois. La valeur Taille du lot détermine le nombre maximal de tâches. Pour plus d’informations, voir [ralentissement](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-throttling)
-   * **Écraser les fichiers existants portant le même nom :** lorsque ce paramètre est défini sur true, les fichiers du dossier obtenu et du dossier conservé sont remplacés. Lorsque la valeur est False, les fichiers et les dossiers comportant un suffixe d’index numérique sont utilisés pour le nom. La valeur par défaut est False.
+   * **Écraser les fichiers existants portant le même nom :** lorsque ce paramètre est défini sur true, les fichiers du dossier obtenu et du dossier conservé sont remplacés. Lorsqu’il est défini sur False, les fichiers et les dossiers avec un suffixe d’index numérique sont utilisés pour le nom. La valeur par défaut est False.
    * **Conserver les fichiers en cas d’échec :** Lorsqu’il est défini sur True, les fichiers d’entrée sont conservés en cas d’échec. La valeur par défaut est true.
    * **Inclure les fichiers avec modèle :** spécifiez une liste délimitée par des points-virgules (;) des modèles utilisés par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Ainsi, si le paramètre Inclure le modèle de fichier a pour valeur Entrée, tous les fichiers et les dossiers correspondant à Entrée sont sélectionnés. Pour plus d’informations, voir [Aide à l’administration](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md) 
    * **Appeler un dossier de contrôle de manière asynchrone :** identifie le type d’appel comme étant asynchrone ou synchrone. La valeur par défaut est asynchrone. Le mode asynchrone est recommandé pour les processus de longue durée, tandis que le mode synchrone est recommandé pour les processus transitoires ou de courte durée.

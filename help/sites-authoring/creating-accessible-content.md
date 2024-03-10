@@ -2,10 +2,10 @@
 title: Création de contenu accessible pour Adobe Experience Manager (conformité au WCAG 2.1)
 description: Utilisez AEM pour rendre le contenu Web accessible et utilisable par les personnes en situation de handicap
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '13636'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -693,8 +693,13 @@ Appliquez les règles indiquées dans la section [Comment remplir le critère de
 * Critère de réussite 2.2.2
 * Niveau A
 * Mettre en pause, arrêter, masquer : pour toute information en mouvement, clignotante, défilante ou mise à jour automatiquement, tous les points suivants sont vrais :
-   * Déplacement, clignotement, défilement : pour toute information en mouvement, clignotante ou défilante qui (a), démarre automatiquement, (b), dure plus de cinq secondes et (c), est présentée en parallèle à d’autres contenus, il existe un mécanisme permettant à l’utilisateur ou à l’utilisatrice de la suspendre, de l’arrêter ou de la masquer, sauf si le mouvement, le clignotement ou le défilement fait partie intégrante de l’activité.
-   * Mise à jour automatique : pour toute information mise à jour automatiquement qui (a), démarre automatiquement et (b), est présentée en parallèle à d’autres contenus, il existe un mécanisme permettant à l’utilisateur ou à l’utilisatrice de la suspendre, de l’arrêter ou de la masquer, ou de contrôler la fréquence de la mise à jour, sauf si la mise à jour automatique fait partie intégrante de l’activité.
+   * Déplacement, clignotement, défilement : pour toute information en mouvement, clignotante ou défilante qui
+      * (a) démarre automatiquement,
+      * (b) dure plus de cinq secondes, et
+      * (C) est présenté en parallèle avec d’autres contenus, il existe un mécanisme permettant à l’utilisateur de le mettre en pause, de l’arrêter ou de le masquer, sauf si le mouvement, le clignotement ou le défilement font partie d’une activité où il est essentiel ;
+   * Mise à jour automatique : pour toutes les informations de mise à jour automatique qui
+      * (a) démarre automatiquement, et
+      * (b) est présenté en parallèle avec d’autres contenus, il existe un mécanisme permettant à l’utilisateur de le mettre en pause, de l’arrêter ou de le masquer, ou de contrôler la fréquence de mise à jour, sauf si la mise à jour automatique fait partie d’une activité où elle est essentielle.
 
 Remarques :
 

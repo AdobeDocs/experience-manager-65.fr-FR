@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d72a3977-1423-49e0-899b-234bb76be378
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1578'
-ht-degree: 41%
+source-wordcount: '1580'
+ht-degree: 44%
 
 ---
 
@@ -24,7 +24,7 @@ Si vous activez la fonction SSO à l’aide de SPNEGO, ajoutez un fournisseur d�
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur un domaine existant dans la liste. Si vous ajoutez une authentification pour un nouveau domaine, voir [Ajout d’un domaine d’entreprise](/help/forms/using/admin-help/adding-domains.md#add-an-enterprise-domain) ou [Ajout d’un domaine hybride](/help/forms/using/admin-help/adding-domains.md#add-a-hybrid-domain).
 1. Cliquez sur Ajouter une authentification et, dans la liste Fournisseur d’authentification , sélectionnez un fournisseur, en fonction du mécanisme d’authentification utilisé par votre organisation.
-1. Fournissez toutes les informations supplémentaires requises sur la page. (Voir [Paramètres d’authentification](configuring-authentication-providers.md#authentication-settings).)
+1. Fournissez toutes les autres informations requises dans la page. (Voir [Paramètres d’authentification](configuring-authentication-providers.md#authentication-settings).)
 1. (Facultatif) Cliquez sur Tester pour tester la configuration.
 1. Cliquez sur OK, puis de nouveau sur OK.
 
@@ -32,7 +32,7 @@ Si vous activez la fonction SSO à l’aide de SPNEGO, ajoutez un fournisseur d�
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur le domaine approprié dans la liste.
-1. Sur la page qui s’affiche, sélectionnez le fournisseur d’authentification approprié dans la liste et apportez les modifications nécessaires. (Voir [Paramètres d’authentification](configuring-authentication-providers.md#authentication-settings).)
+1. Sur la page qui s’affiche, sélectionnez le fournisseur d’authentification approprié dans la liste et apportez les modifications nécessaires. (Voir [Paramètres d’authentification](configuring-authentication-providers.md#authentication-settings)).
 1. Cliquez sur OK.
 
 ## Suppression d’un fournisseur d’authentification {#delete-an-authentication-provider}
@@ -48,7 +48,7 @@ Les paramètres suivants sont disponibles, selon le type de domaine et d’authe
 
 ### Paramètres LDAP {#ldap-settings}
 
-Si vous configurez l&#39;authentification pour un domaine d&#39;entreprise ou hybride et sélectionnez l&#39;authentification LDAP, vous pouvez choisir d&#39;utiliser le serveur LDAP spécifié dans la configuration de l&#39;annuaire ou choisir un autre serveur LDAP à utiliser pour l&#39;authentification. Si vous choisissez un autre serveur, vos utilisateurs doivent exister sur les deux serveurs LDAP.
+Si vous configurez l&#39;authentification pour un domaine d&#39;entreprise ou hybride et sélectionnez l&#39;authentification LDAP, vous pouvez choisir d&#39;utiliser le serveur LDAP spécifié dans la configuration de l&#39;annuaire ou choisir un autre serveur LDAP à utiliser pour l&#39;authentification. Si vous choisissez un serveur différent, les utilisateurs doivent exister sur les deux serveurs LDAP.
 
 Pour utiliser le serveur LDAP spécifié dans la configuration de votre annuaire, sélectionnez LDAP comme fournisseur d&#39;authentification et cliquez sur OK.
 
@@ -120,7 +120,7 @@ Si vous configurez l’authentification pour un domaine d’entreprise ou hybrid
 
 ## Approvisionnement juste à temps des utilisateurs {#just-in-time-provisioning-of-users}
 
-La mise en service juste à temps crée automatiquement un utilisateur dans la base de données User Management une fois que l’utilisateur est authentifié via un fournisseur d’authentification. Les rôles et groupes pertinents sont également affectés dynamiquement au nouvel utilisateur. Vous pouvez activer l’approvisionnement juste à temps pour les domaines d’entreprise et hybrides.
+La mise en service juste à temps crée automatiquement un utilisateur dans la base de données User Management une fois qu’il a été authentifié par le biais d’un fournisseur d’authentification. Les rôles et groupes pertinents sont également affectés dynamiquement au nouvel utilisateur. Vous pouvez activer l’approvisionnement juste à temps pour les domaines d’entreprise et hybrides.
 
 Cette procédure décrit le fonctionnement général de l’authentification dans AEM Forms :
 
@@ -143,7 +143,7 @@ Sans approvisionnement juste à temps, lorsqu’un utilisateur est authentifié 
 
 ### Activation de l’approvisionnement juste à temps pour un domaine {#enable-just-in-time-provisioning-for-a-domain}
 
-1. Ecrivez un conteneur de services qui implémente les interfaces Créateur d’identité (IdentityCreator) et Fournisseur d’affectation (AssignmentProvider). (Voir [Programmation avec les AEM forms](https://www.adobe.com/go/learn_aemforms_programming_63_fr).)
+1. Ecrivez un conteneur de services qui implémente les interfaces Créateur d’identité (IdentityCreator) et Fournisseur d’affectation (AssignmentProvider). (Voir [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_fr).)
 1. Déployez le conteneur de services sur le serveur Forms.
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 

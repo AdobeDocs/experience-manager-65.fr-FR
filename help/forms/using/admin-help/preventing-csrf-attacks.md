@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: e17fc114-eba5-4e1b-8e70-ad6af7008018
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 98%
+source-wordcount: '955'
+ht-degree: 95%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 98%
 
 ## Fonctionnement des attaques CSRF {#how-csrf-attacks-work}
 
-Une attaque multisite par usurpation de requête ou CRSF (Cross-site request forgery) consiste à utiliser le navigateur d’un utilisateur ou d’une utilisatrice valide pour envoyer une requête malveillante via un élément iframe, par exemple. Le navigateur envoyant les cookies sur la base de domaines, si l’utilisateur ou l’utilisatrice est connectée à une application, ses données peuvent être corrompues.
+La falsification de requête intersite (CSRF, Cross-site request forgery) est une vulnérabilité de site web dans laquelle le navigateur d’un utilisateur valide est utilisé pour envoyer une requête malveillante, éventuellement par le biais d’un iFrame. Le navigateur envoyant les cookies sur la base de domaines, si l’utilisateur ou l’utilisatrice est connectée à une application, ses données peuvent être corrompues.
 
 Imaginons, par exemple, un scénario où vous êtes connecté(e) à la console d’administration dans un navigateur. Vous recevez un e-mail contenant un lien. Vous cliquez sur le lien qui vient ouvrir un nouvel onglet dans votre navigateur. La page que vous avez ouverte contient un iFrame masqué qui envoie une requête malveillante au serveur Forms à l’aide du cookie de votre session AEM Forms authentifiée. Comme User Management reçoit un cookie valide, il transmet la requête.
 

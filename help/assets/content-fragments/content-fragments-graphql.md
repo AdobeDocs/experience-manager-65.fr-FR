@@ -4,10 +4,10 @@ description: Découvrez comment utiliser des fragments de contenu AEM avec Graph
 feature: Content Fragments
 role: User
 exl-id: 2debd678-2d73-41f2-b33c-c29d661f6a6b
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: ht
-source-wordcount: '684'
-ht-degree: 100%
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
+workflow-type: tm+mt
+source-wordcount: '669'
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ Avec Adobe Experience Manager (AEM), vous pouvez utiliser des fragments de con
 
 Un système de gestion de contenu (CMS) découplé est :
 
-* « *Un système de gestion de contenu découplé, ou CMS découplé, est un système de gestion de contenu (CMS) back-end uniquement créé dès le départ comme un référentiel de contenu qui rend le contenu accessible via une API pour l’afficher sur n’importe quel appareil.* »
+* &quot;*Un système de gestion de contenu sans interface, ou CMS sans interface, est un système de gestion de contenu (CMS) en arrière-plan uniquement, conçu de toutes pièces comme un référentiel de contenu qui rend le contenu accessible par le biais d’une API pour affichage sur n’importe quel appareil.*
 
   Voir [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system?lang=fr).
 

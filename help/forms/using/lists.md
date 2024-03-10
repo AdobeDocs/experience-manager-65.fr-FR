@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '6904'
+source-wordcount: '6905'
 ht-degree: 92%
 
 ---
@@ -207,7 +207,7 @@ La fonction Rechercher et remplacer vous permet de rechercher (et de remplacer) 
 
 ## Liste {#list}
 
-Une liste est un groupe de fragments du document, notamment du texte, des listes (différentes), des conditions et des images. L’ordre des éléments de la liste peut être fixe ou modifiable. Lors de la création d’une lettre, vous pouvez utiliser certains ou tous les éléments de liste pour répliquer un modèle d’éléments réutilisable. Les listes se comportent fondamentalement comme des cibles qui peuvent être imbriquées dans d’autres cibles.
+Une liste est un groupe de fragments de document, y compris le texte, ou (d’autres) listes, conditions et images. L’ordre des éléments de la liste peut être fixe ou modifiable. Lors de la création d’une lettre, vous pouvez utiliser certains ou tous les éléments de liste pour répliquer un modèle d’éléments réutilisable. Les listes se comportent fondamentalement comme des cibles qui peuvent être imbriquées dans d’autres cibles.
 
 ### Implémenter des listes {#implementing-lists}
 

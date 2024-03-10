@@ -7,7 +7,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '2167'
 ht-degree: 22%
@@ -94,7 +94,7 @@ Lorsque vous révoquez ou rétablissez des privilèges d’accès aux documents,
 
 * Si le document est en ligne et fermé, la modification prend effet la prochaine fois que le destinataire se synchronise avec Document Security en ouvrant un document protégé par une stratégie.
 * Si le document est en ligne et ouvert, la modification prend effet lorsque le destinataire ferme le document.
-* Si le document est hors ligne (utilisé sans connexion Internet, par exemple sur un ordinateur portable), la modification prend effet lors de la prochaine synchronisation du destinataire avec Document Security.
+* Si le document est hors ligne (c’est-à-dire utilisé sans connexion Internet, par exemple sur un ordinateur portable), la modification prend effet lors de la prochaine synchronisation du destinataire avec Document Security.
 
 **Révocation de l’accès à un document protégé par une stratégie**
 

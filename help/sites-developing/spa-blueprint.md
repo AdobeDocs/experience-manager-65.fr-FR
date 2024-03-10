@@ -6,10 +6,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '2043'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -232,7 +232,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 Les composants de projet doivent générer au minimum les attributs de données suivants pour permettre à l’éditeur d’interagir avec eux.
 
-* `data-cq-data-path`: chemin d’accès relatif du composant, tel qu’il est fourni par la fonction `PageModel` (par exemple, `"root/responsivegrid/image"`). Cet attribut ne doit pas être ajouté aux pages.
+* `data-cq-data-path` : chemin d’accès relatif du composant, tel qu’il est fourni par le `PageModel` (`"root/responsivegrid/image"`, par exemple). Cet attribut ne doit pas être ajouté aux pages.
 
 En résumé, pour pouvoir être identifié comme modifiable par l’éditeur de page, un composant de projet doit respecter le contrat suivant :
 

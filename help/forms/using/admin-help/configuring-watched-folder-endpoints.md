@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '7173'
-ht-degree: 25%
+source-wordcount: '7192'
+ht-degree: 41%
 
 ---
 
@@ -133,17 +133,17 @@ Utilisez les paramètres suivants pour configurer un point de fin Watched Folder
 
 **Nom de domaine :** (obligatoire) domaine de l’utilisateur. La valeur par défaut est DefaultDom.
 
-**Taille du lot :** le nombre de fichiers ou de dossiers à sélectionner par analyse. Utilisez pour éviter une surcharge du système ; l’analyse simultanée d’un trop grand nombre de fichiers peut entraîner un blocage. La valeur par défaut est 2.
+**Taille du lot :** le nombre de fichiers ou de dossiers à sélectionner par analyse. Ce paramètre permet d’éviter une surcharge du système, car l’analyse simultanée d’un trop grand nombre de fichiers peut provoquer une panne. La valeur par défaut est 2.
 
-Les paramètres Intervalle de répétition et Taille du lot déterminent le nombre de fichiers sélectionnés par Watched Folder à chaque analyse. Watched Folder utilise un pool de threads Quartz pour analyser le dossier input. Le pool de threads est partagé avec d’autres services. Si l’intervalle d’analyse est court, les threads analysent souvent le dossier input. Si des fichiers sont déposés fréquemment dans le dossier de contrôle, vous devez limiter l’intervalle d’analyse. Si les fichiers sont déposés peu fréquemment, utilisez un intervalle d’analyse plus long afin que les autres services puissent utiliser les threads.
+Les paramètres Intervalle de répétition et Taille du lot permettent de déterminer le nombre de fichiers sélectionnés par le service Dossir de contrôle pour chaque analyse. Le service Dossier de contrôle utilise un pool de threads Quartz pour analyser le dossier input. Le pool de threads est partagé avec d’autres services. Si l’intervalle d’analyse est court, les threads analysent souvent le dossier input. Si des fichiers sont déposés fréquemment dans le dossier de contrôle, vous devez limiter l’intervalle d’analyse. Si les fichiers sont rarement déposés, choisissez un intervalle d’analyse plus long afin que les autres services puissent utiliser les threads.
 
-Si un volume important de fichiers est déposé, définissez une grande taille de lot. Par exemple, si le service appelé par le point de fin Watched Folder peut traiter 700 fichiers par minute et que les utilisateurs déposent les fichiers dans le dossier input au même rythme, la définition de la taille du lot sur 350 et de l’intervalle de répétition sur 30 secondes permettra d’améliorer les performances de Watched Folder sans avoir à analyser trop souvent le dossier de contrôle.
+Si un volume important de fichiers est déposé, définissez une grande taille de lot. Par exemple, si le service appelé par le point d’entrée du dossier de contrôle peut traiter 700 fichiers par minute et que les utilisateurs et les utilisatrices déposent des fichiers dans le dossier Entrée à la même fréquence, la définition de la Taille du lot sur 350 et de l’Intervalle de répétition sur 30 secondes permet de maintenir les performances du dossier de contrôle sans avoir à subir les conséquences d’une analyse trop fréquente du dossier de contrôle.
 
-Lorsque des fichiers sont déposés dans le dossier de contrôle, il les répertorie dans l’entrée, ce qui peut réduire les performances si l’analyse est effectuée toutes les secondes. L’allongement de l’intervalle d’analyse permet d’améliorer les performances. Si le volume de fichiers déposés est faible, ajustez la taille du lot et l’intervalle de répétition en conséquence. Par exemple, si 10 fichiers sont déposés toutes les secondes, essayez de définir l’intervalle de répétition sur 1 seconde et la taille du lot sur 10.
+Lorsque des fichiers sont déposés dans le dossier de contrôle, ce dernier les répertorie dans le dossier Entrée, ce qui réduit parfois les performances si l’analyse s’effectue toutes les secondes. L’allongement de l’intervalle d’analyse permet d’améliorer les performances. Si le volume des fichiers déposés est réduit, ajustez la Taille du lot et l’Intervalle de répétition en conséquence. Par exemple, si 10 fichiers sont déposés toutes les secondes, essayez de définir l’Intervalle de répétition sur 1 seconde et la Taille du lot sur 10.
 
 **Durée d’attente :** durée d’attente (en millisecondes) entre la création d’un dossier ou d’un fichier et son analyse. Par exemple, si la durée d’attente est de 3 600 000 millisecondes (une heure) et que le fichier a été créé il y a une minute, ce dernier sera sélectionné à l’issue d’un laps de temps de 59 minutes ou plus. La valeur par défaut est 0.
 
-Ce paramètre est utile pour garantir qu’un fichier ou un dossier est entièrement copié dans le dossier input. Par exemple, si vous devez traiter un fichier volumineux dont le téléchargement dure dix minutes, définissez une durée d’attente de 10&amp;ast;60 &amp;ast;1000 millisecondes. ce qui évite que le dossier de contrôle analyse le fichier tant que ce dernier a une existence inférieure à dix minutes.
+Ce paramètre assure la copie intégrale d’un fichier ou d’un dossier dans le dossier d’entrée. Par exemple, si vous devez traiter un fichier volumineux dont le téléchargement dure dix minutes, définissez une durée d’attente de 10&amp;ast;60 &amp;ast;1000 millisecondes. ce qui évite que le dossier de contrôle analyse le fichier tant que ce dernier a une existence inférieure à dix minutes.
 
 **Exclure le modèle de fichier :** liste délimitée par des points-virgules **;** des modèles utilisés par un dossier de contrôle pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Aucun fichier ou dossier avec ce modèle ne sera analysé en vue du traitement.
 
@@ -178,7 +178,7 @@ Vous pouvez utiliser des modèles de fichiers pour inclure les types de fichiers
 Pour plus d’informations sur les modèles de fichiers, voir [A propos des modèles de fichier](configuring-watched-folder-endpoints.md#about-file-patterns).
 
 
-**Dossier result :** dossier dans lequel les résultats enregistrés sont stockés. Si les résultats ne s’affichent pas dans ce dossier, vérifiez le dossier des échecs. Les fichiers en lecture seule ne sont pas traités et ils sont enregistrés dans le dossier des échecs. Cette valeur peut être un chemin d’accès absolu ou relatif avec les modèles de fichiers suivants :
+**Dossier result :** dossier dans lequel les résultats enregistrés sont stockés. Si les résultats ne s’affichent pas dans ce dossier, vérifiez le dossier des échecs. Les fichiers en lecture seule ne sont pas traités et ils sont enregistrés dans le dossier des échecs. Il peut s’agir d’un chemin d’accès relatif ou absolu avec les modèles de fichiers suivants :
 
 * %F = préfixe du nom du fichier
 * %E = extension du nom du fichier
@@ -187,8 +187,8 @@ Pour plus d’informations sur les modèles de fichiers, voir [A propos des mod�
 * %M = mois
 * %D = jour du mois
 * %d = jour de l’année
-* %H = heure (horloge 24 heures)
-* %h = heure (horloge 12 heures)
+* %H = heure (horloge 24 heures)
+* %h = heure (horloge 12 heures)
 * %m = minute
 * %s = seconde
 * %l = milliseconde
@@ -201,9 +201,9 @@ Si le chemin d’accès n’est pas absolu mais relatif, le dossier est créé d
 
 >[!NOTE]
 >
->Plus les dossiers de résultats sont petits, plus les performances de Watched Folder augmentent. Par exemple, si la charge estimée pour le dossier de contrôle est de 1 000 fichiers par heure, utilisez un modèle de type `result/%Y%M%D%H`, afin qu’un nouveau sous-dossier soit créé toutes les heures. Si la charge est moindre (par exemple, 1 000 fichiers par jour), vous pouvez utiliser un modèle de type `result/%Y%M%D`.
+>Plus les dossiers de résultats sont petits, plus les performances du service Dossier de contrôle augmentent. Par exemple, si la charge estimée pour le dossier de contrôle est de 1 000 fichiers par heure, utilisez un modèle de type `result/%Y%M%D%H`, afin qu’un nouveau sous-dossier soit créé toutes les heures. Si la charge est moindre (par exemple, 1 000 fichiers par jour), vous pouvez utiliser un modèle de type `result/%Y%M%D`.
 
-**Dossier preserve :** dossier dans lequel les fichiers sont stockés après avoir été analysés et sélectionnés. Le chemin d’accès peut être absolu, relatif ou nul. Vous pouvez utiliser des modèles de fichiers, comme indiqué pour le dossier result. La valeur par défaut est preserve/%Y/%M/%D/.
+**Dossier preserve :** dossier dans lequel les fichiers sont stockés après avoir été analysés et sélectionnés. Le chemin d’accès de répertoire peut être absolu, relatif ou null. Vous pouvez utiliser des modèles de fichiers, comme indiqué pour le dossier result. La valeur par défaut est preserve/%Y/%M/%D/.
 
 **Dossier failure :** dossier dans lequel les fichiers en échec sont enregistrés. Cet emplacement dépend toujours du dossier de contrôle. Vous pouvez utiliser des modèles de fichiers, comme indiqué pour le dossier Résultat.
 
@@ -213,11 +213,11 @@ La valeur par défaut est failure/%Y/%M/%D/.
 
 **Conserver en cas d’échec :** Conserver les fichiers d’entrée en cas d’échec de l’exécution de l’opération sur un service. La valeur par défaut est true.
 
-**Remplacer les noms de fichier en double :** lorsque cet attribut est défini sur « true », les fichiers du dossier obtenu et du dossier conservé sont remplacés. Lorsque la valeur est False, les fichiers et les dossiers comportant un suffixe d’index numérique sont utilisés pour le nom. La valeur par défaut est False.
+**Remplacer les noms de fichier en double :** lorsque cet attribut est défini sur « true », les fichiers du dossier obtenu et du dossier conservé sont remplacés. Lorsqu’il est défini sur False, les fichiers et les dossiers avec un suffixe d’index numérique sont utilisés pour le nom. La valeur par défaut est False.
 
 **Durée de la purge :** (obligatoire) les fichiers et les sous-dossiers du dossier result sont vidés lorsqu’ils sont plus anciens que cette valeur. Cette valeur est mesurée en jours. Ce paramètre s’avère utile pour s’assurer que le dossier de résultats n’est pas plein.
 
-Une valeur de -1 jour indique de ne jamais supprimer le dossier de résultats. La valeur par défaut est -1.
+La valeur -1 jour indique de ne jamais supprimer le dossier de résultats. La valeur par défaut est -1.
 
 **Nom de l’opération :** (obligatoire) liste des opérations pouvant être attribuées au point d’entrée Watched Folder.
 
@@ -237,32 +237,32 @@ La sortie Watched Folder peut être un document unique, une liste de documents o
 
 ## A propos des modèles de fichier {#about-file-patterns}
 
-Les administrateurs peuvent indiquer le type du fichier servant à appeler un service. Plusieurs modèles de fichiers peuvent être définis pour chaque dossier de contrôle. Un modèle de fichier peut être l’une des propriétés de fichier suivantes :
+Les administrateurs peuvent indiquer le type du fichier servant à appeler un service. Plusieurs modèles de fichiers peuvent être définis pour chaque dossier de contrôle. Un modèle de fichier peut être du type suivant :
 
-* Fichiers dotés d’extensions de nom de fichier spécifiques ; par exemple, &amp;ast;.dat, &amp;ast;.xml et &amp;ast;.pdf,;
-* Fichiers portant des noms spécifiques, par exemple data.&amp;ast;
+* Fichiers dotés d’extensions de nom de fichier spécifiques. Par exemple, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf
+* Fichiers portant des noms spécifiques. Par exemple, les données.&amp;ast;
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
    * Données[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
    * &amp;ast;.[dD][Aa]&#39;port&#39;
    * &amp;ast;.[Xx][Mm][Ll]
 
-L’administrateur peut définir le modèle de fichier du dossier de sortie dans lequel stocker les résultats. Pour les dossiers de sortie (result, preserve et failure), l’administrateur peut spécifier l’un de ces modèles de fichiers :
+L’administrateur ou l’administratrice peut définir le modèle de fichier du dossier de sortie dans lequel enregistrer les résultats. Concernant les dossiers de sortie (résultats, conservation et échecs), il ou elle peut indiquer l’un des modèles de fichier suivants :
 
 * %Y = année (complète)
 * %y = année (deux derniers chiffres)
-* %M = mois,
-* %D = jour du mois,
-* %d = jour de l’année,
-* %h = heure,
-* %m = minute,
-* %s = seconde,
-* %R = nombre aléatoire entre 0 et 9
+* %M = mois
+* %D = jour du mois
+* %d = jour de l’année
+* %h = heure
+* %m = minute
+* %s = seconde
+* %R = nombre aléatoire entre 0 et 9
 * %J = nom de la tâche
 
 Par exemple, le chemin d’accès au dossier de résultats peut être `C:\Adobe\Adobe_Experience_Manager_forms\BarcodedForms\%y\%m\%d`.
 
-Les mappages des paramètres de sortie peuvent également spécifier des modèles supplémentaires, tels que :
+Les mappages des paramètres de sortie peuvent également spécifier des modèles supplémentaires, tels que :
 
 * %F = nom du fichier source
 * %E = extension du nom du fichier source
@@ -271,19 +271,19 @@ Si le modèle de mappage des paramètres de sortie se termine par &quot;File.sep
 
 ## A propos du ralentissement {#about-throttling}
 
-Lorsque le ralentissement est activé pour un point de fin de dossier de contrôle, il limite le nombre de tâches du dossier de contrôle pouvant être traitées à un moment donné. Le nombre maximal de tâches est déterminé par la valeur Taille du lot, également configurable dans le point de fin Watched Folder. Les documents entrants dans le répertoire d’entrée du dossier de contrôle ne seront pas interrogés lorsque la limite de ralentissement aura été atteinte. Les documents resteront également dans le répertoire des entrées jusqu’à ce que d’autres tâches du dossier de contrôle soient terminées et qu’une autre tentative d’interrogation soit effectuée. En cas de traitement synchrone, toutes les tâches traitées dans une interrogation tiendront compte de la limite de ralentissement, même si les tâches sont traitées consécutivement dans un seul thread.
+Lorsque le ralentissement est activé pour un point de fin de dossier de contrôle, il limite le nombre de tâches du dossier de contrôle pouvant être traitées à un moment donné. La valeur Taille du lot détermine le nombre maximal de tâches, le tout pouvant être configuré dans le point d’entrée du dossier de contrôle. Les documents entrants dans le répertoire d’entrée du dossier de contrôle ne seront pas interrogés lorsque la limite de ralentissement aura été atteinte. Les documents resteront également dans le répertoire des entrées jusqu’à ce que d’autres tâches du dossier de contrôle soient terminées et qu’une autre tentative d’interrogation soit effectuée. En cas de traitement synchrone, toutes les tâches traitées dans une interrogation tiendront compte de la limite de ralentissement, même si les tâches sont traitées consécutivement dans un seul thread.
 
 >[!NOTE]
 >
->Le ralentissement ne se met pas à l’échelle avec une grappe. Lorsque le ralentissement est activé, la grappe dans son ensemble ne traite pas plus de tâches que le nombre spécifié dans la taille du lot à un moment donné. Cette limite s’applique à l’ensemble de la grappe et n’est pas spécifique à chaque noeud de la grappe. Par exemple, avec une taille de lot de 2, la limite de ralentissement peut être atteinte avec un seul noeud qui traite deux tâches, et aucun autre noeud n’interroge le répertoire d’entrée tant que l’une des tâches n’est pas terminée.
+>Aucune mise à l’échelle du ralentissement n’est effectuée dans un cluster. Lorsque l’option de ralentissement est activée, le cluster dans son ensemble ne traite pas plus de tâches que le nombre indiqué dans l’attribut Taille du lot. Cette limite est fixée par le cluster et n’est pas spécifique à chacun de ses nœuds. Par exemple, si l’attribut Taille du lot a pour valeur 2, la limite du ralentissement peut être atteinte avec le traitement de deux tâches sur un seul nœud et aucun autre nœud n’interrogera alors le répertoire des entrées tant que l’une des tâches ne sera pas terminée.
 
 ### Fonctionnement du ralentissement {#how-throttling-works}
 
 Watched Folder analyse le dossier input à chaque intervalle de répétition, sélectionne le nombre de fichiers spécifié dans la taille du lot et appelle le service cible pour chacun de ces fichiers. Par exemple, si la taille du lot est de quatre, Watched Folder sélectionnera quatre fichiers à chaque analyse, créera quatre demandes d’appel et appellera le service cible. Avant que ces requêtes ne soient terminées, si Watched Folder est appelé, il démarrera à nouveau quatre tâches, que les quatre tâches précédentes soient terminées ou non.
 
-L’option de ralentissement empêche le dossier de contrôle d’appeler de nouvelles tâches avant que les tâches précédentes ne soient terminées. Watched Folder détectera les tâches en cours et traitera les nouvelles tâches en fonction de la taille du lot moins les tâches en cours. Par exemple, dans le second appel, si le nombre de tâches terminées est de trois seulement et qu’une tâche est toujours en cours, Watched Folder appelle uniquement trois autres tâches.
+L’option de ralentissement empêche le dossier de contrôle d’appeler de nouvelles tâches avant que les tâches précédentes ne soient terminées. Watched Folder détectera les tâches en cours et traitera les nouvelles tâches en fonction de la taille du lot moins les tâches en cours. Par exemple, dans le second appel, si le nombre de tâches terminées est de trois seulement et qu’une tâche est toujours en cours, le dossier de contrôle appelle uniquement trois autres tâches.
 
-* Watched Folder s’appuie sur le nombre de fichiers présents dans le dossier stage pour déterminer le nombre de tâches en cours. Si les fichiers restent non traités dans le dossier stage, Watched Folder n’appelle plus aucune tâche. Par exemple, si la taille du lot est de quatre et que trois tâches sont bloquées, Watched Folder appellera une seule tâche dans les appels suivants. Il existe plusieurs scénarios qui peuvent empêcher le traitement des fichiers dans le dossier stage. Si les tâches sont bloquées, l’administrateur peut mettre un terme au traitement dans la page d’administration du processus des formulaires et Watched Folder sortira alors les fichiers du dossier d’étape.
+* Le dossier de contrôle se base sur le nombre de fichiers présents dans le dossier stage pour connaître le nombre de tâches en cours. Si les fichiers restent non traités dans le dossier stage, Watched Folder n’appelle plus aucune tâche. Par exemple, si la taille du lot est de quatre et que trois tâches sont bloquées, Watched Folder appellera une seule tâche dans les appels suivants. Il existe plusieurs scénarios qui peuvent empêcher le traitement des fichiers dans le dossier stage. Si les tâches sont bloquées, l’administrateur peut mettre un terme au traitement dans la page d’administration du processus des formulaires et Watched Folder sortira alors les fichiers du dossier d’étape.
 * Si le serveur Forms tombe en panne avant que Watched Folder ne puisse appeler les tâches, l’administrateur peut sortir les fichiers du dossier stage. Pour plus d’informations, voir [Points d’échec et récupération](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 * Si le serveur Forms est en cours d’exécution mais que Watched Folder ne s’exécute pas lorsque le service Job Manager rappelle, ce qui se produit lorsque les services ne démarrent pas dans l’ordre, l’administrateur peut sortir les fichiers du dossier stage. Pour plus d’informations, voir [Points d’échec et récupération](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
@@ -328,37 +328,37 @@ Pour les appels asynchrones, lorsqu’un noeud échoue, le planificateur Quartz 
 
 ## Points d’échec et récupération {#failure-points-and-recovery}
 
-À chaque événement d’interrogation, Watched Folder verrouille le dossier input, déplace dans le dossier stage les fichiers correspondant au modèle de fichier d’inclusion, puis déverrouille le dossier input. Le verrouillage est nécessaire afin que deux threads ne sélectionnent pas le même ensemble de fichiers et ne les traitent pas deux fois. Les chances que cela se produise augmentent avec un petit intervalle de répétition et une grande taille de lot. Une fois les fichiers déplacés dans le dossier stage, le dossier input est déverrouillé afin que d’autres threads puissent analyser le dossier. Cette étape permet d’obtenir un débit élevé, car d’autres threads peuvent analyser pendant qu’un thread traite les fichiers.
+À chaque événement d’interrogation, le dossier de contrôle verrouille le dossier d’entrée, déplace dans le dossier stage les fichiers correspondant au modèle de fichiers inclus, puis déverrouille le dossier d’entrée. Le verrouillage est nécessaire afin que deux threads ne sélectionnent pas le même ensemble de fichiers et ne les traitent pas deux fois. Les chances que cela se produise augmentent avec un petit intervalle de répétition et une grande taille de lot. Une fois les fichiers déplacés dans le dossier stage, le dossier input est déverrouillé de sorte que d’autres threads puissent analyser le dossier. Cette étape offre un débit élevé du fait que d’autres threads peuvent effectuer une analyse pendant que l’un d’entre eux traite les fichiers.
 
-Une fois les fichiers déplacés dans le dossier stage, les demandes d’appel sont créées pour chaque fichier et le service cible est appelé. Dans certains cas, Watched Folder ne peut pas récupérer les fichiers du dossier stage :
+Une fois les fichiers déplacés dans le dossier stage, les demandes d’appel sont créées pour chaque fichier et le service cible est appelé. Cependant, il arrive parfois que le dossier de contrôle ne puisse pas récupérer les fichiers dans le dossier stage :
 
-* Si le serveur tombe en panne avant que Watched Folder ne puisse créer la demande d’appel, les fichiers du dossier stage restent dans ce dossier et ne sont pas récupérés.
-* Si Watched Folder a réussi à créer la demande d’appel pour chacun des fichiers du dossier stage et que le serveur se bloque, deux comportements sont possibles en fonction du type d’appel :
+* Si une panne du serveur survient avant que le dossier de contrôle n’ait eu le temps de créer la demande d’appel, les fichiers situés dans le dossier stage restent dans ce dossier et ne sont pas récupérés.
+* Si le dossier de contrôle a réussi à créer la demande d’appel pour chacun des fichiers du dossier stage et qu’une panne du serveur survient, deux comportements sont à noter, en fonction du type d’appel :
 
 **Synchrone :** Si Watched Folder est configuré pour appeler le service de manière synchrone, tous les fichiers du dossier stage restent dans ce dossier et ne subissent aucun traitement.
 
-**Asynchrone :** Dans ce cas, Watched Folder s’appuie sur le service Job Manager. Si le service Job Manager rappelle Watched Folder, les fichiers du dossier stage sont déplacés vers le dossier preserve ou le dossier failure en fonction des résultats de l’appel. Si le service Job Manager ne rappelle pas Watched Folder, les fichiers ne seront pas traités dans le dossier stage. Cette situation se produit lorsque Watched Folder ne s’exécute pas lorsque Job Manager rappelle.
+**Asynchrone :** Dans ce cas, Watched Folder s’appuie sur le service Job Manager. Si le service Job Manager rappelle le dossier de contrôle, les fichiers du dossier stage sont déplacés vers le dossier de conservation ou d’échecs, en fonction des résultats de l’appel. Si le service Job Manager ne rappelle pas le dossier de contrôle, les fichiers restent dans le dossier stage et ne subissent aucun traitement. Cette situation survient lorsque le dossier de contrôle n’est pas exécuté alors que Job Manager rappelle.
 
 ### Récupération des fichiers source non traités dans le dossier stage {#recovering-unprocessed-source-files-in-the-stage-folder}
 
-Lorsque Watched Folder ne peut pas traiter les fichiers source dans le dossier stage, vous pouvez récupérer les fichiers non traités.
+Lorsque le dossier de contrôle ne peut pas traiter les fichiers source dans le dossier stage, vous avez la possibilité de récupérer les fichiers n’ayant fait l’objet d’aucun traitement.
 
-1. Redémarrez le serveur d’applications ou le noeud.
-1. (Facultatif) Arrêtez Watched Folder de traiter les nouveaux fichiers d’entrée. Si vous ignorez cette étape, il sera beaucoup plus difficile de déterminer les fichiers qui ne sont pas traités dans le dossier stage. Pour empêcher Watched Folder de traiter de nouveaux fichiers d’entrée, effectuez l’une des tâches suivantes :
+1. Redémarrez le serveur d’applications ou le nœud.
+1. (Facultatif) Arrêtez Watched Folder de traiter les nouveaux fichiers d’entrée. Si vous ignorez cette étape, il vous sera plus difficile de déterminer les fichiers non traités dans le dossier stage. Pour empêcher que le dossier de contrôle ne traite de nouveaux fichiers d’entrée, procédez comme suit :
 
    * Dans Applications et services, modifiez le paramètre Inclure le modèle de fichier pour le point d’entrée du dossier de contrôle et donnez-lui une valeur qui ne correspond à aucun nouveau fichier d’entrée (par exemple, saisissez `NOMATCH`).
-   * Suspendre le processus de création de nouveaux fichiers d’entrée.
+   * Mettez un terme au processus de création de nouveaux fichiers d’entrée.
 
-   Patientez jusqu’à ce que AEM forms récupère et traite tous les fichiers. La majorité des fichiers doit être récupérée et tous les nouveaux fichiers d’entrée traités correctement. La durée d’attente de la récupération et du traitement des fichiers par Watched Folder dépend de la durée de l’opération à appeler et du nombre de fichiers à récupérer.
+   Patientez jusqu’à ce que AEM forms récupère et traite tous les fichiers. La majorité des fichiers devra être récupérée et tous les nouveaux fichiers d’entrée correctement traités. Le temps nécessaire au dossier de contrôle pour récupérer et traiter les fichiers dépendra de la durée de l’opération pour l’appel, ainsi que du nombre de fichiers à récupérer.
 
-1. Déterminez les fichiers qui ne peuvent pas être traités. Si vous avez attendu un certain temps et que vous avez terminé l’étape précédente et que des fichiers non traités sont toujours présents dans le dossier stage, passez à l’étape suivante.
+1. Déterminez les fichiers ne pouvant pas être traités. Si vous avez suffisamment attendu, que vous avez terminé l’étape précédente et qu’il reste encore des fichiers non traités dans le dossier stage, passez à l’étape suivante.
 
    >[!NOTE]
    >
-   >Vous pouvez consulter la date et l’horodatage des fichiers dans le répertoire des fichiers traités. Selon le nombre de fichiers et le temps de traitement normal, vous pouvez déterminer les fichiers suffisamment anciens pour être considérés comme bloqués.
+   >Vous pouvez consulter la date et l’horodatage des fichiers dans le répertoire stage. En fonction du nombre de fichiers et du temps normal de traitement, vous pouvez déterminer les fichiers considérés comme étant bloqués.
 
-1. Copiez les fichiers non traités du répertoire des fichiers traités dans le répertoire des entrées.
-1. Si vous avez empêché Watched Folder de traiter de nouveaux fichiers d’entrée à l’étape 2, remplacez le paramètre Inclure le modèle de fichier par sa valeur précédente ou réactivez le processus que vous avez désactivé.
+1. Copiez les fichiers non traités du répertoire stage dans le répertoire des entrées.
+1. Si vous avez empêché le dossier de contrôle de traiter de nouveaux fichiers d’entrée à l’étape 2, redonnez au paramètre Inclure le modèle de fichier son ancienne valeur ou réactivez le processus préalablement désactivé.
 
 ## Considérations relatives à la sécurité des dossiers de contrôle {#security-considerations-for-watched-folders}
 

@@ -6,10 +6,10 @@ role: User, Admin
 feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 92%
+source-wordcount: '798'
+ht-degree: 87%
 
 ---
 
@@ -87,7 +87,7 @@ Le filtrage par liste autorisée des métadonnées XMP résout le problème en v
 
 1. Pour ouvrir Configuration Manager, accédez à `https://[aem_server]:[port]/system/console/configMgr`.
 1. Ouvrez la configuration **[!UICONTROL Filtre XMP de gestion des actifs numériques Adobe CQ]**.
-1. Pour appliquer un filtrage par liste autorisée, sélectionnez **[!UICONTROL Appliquer la liste autorisée aux propriétés XMP]**, puis spécifiez les propriétés à importer dans l’encadré **[!UICONTROL Noms XML autorisés pour le filtrage XMP]**.
+1. Pour appliquer un filtrage par liste autorisée, sélectionnez **[!UICONTROL Appliquer la Liste autorisée aux propriétés XMP]**, puis spécifiez les propriétés à importer dans le **[!UICONTROL Noms XML autorisés pour le filtrage XMP]** de la boîte.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 

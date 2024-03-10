@@ -7,10 +7,10 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '2835'
-ht-degree: 37%
+source-wordcount: '2833'
+ht-degree: 36%
 
 ---
 
@@ -125,7 +125,7 @@ L’estimation du nombre de noeuds de grappe nécessaires repose sur les exigenc
 Calcule le débit d’un profil de charge lorsque les utilisateurs exécutent un simple exercice de création de pages sur une charge de base de 300 pages existantes, toutes de nature similaire. Les étapes impliquées étaient la connexion au site, la création d’une page contenant un SWF et une image ou du texte, l’ajout d’un nuage de balises, puis l’activation de la page.
 
    * **Résultat**
-Le débit maximal d’un simple exercice de création de pages comme décrit plus haut (considéré comme une transaction) est de 1 730 transactions/heure.
+Le débit maximal d’un simple exercice de création de page comme ci-dessus (considéré comme une transaction) est de 1 730 transactions par heure.
 
 * **Test d’évaluation des performances 2**
 Calcule le débit maximal lorsque le profil de charge comprend la création d’une page (10 %), la modification d’une page existante (80 %), ainsi que la création, puis la modification d’une page successivement (10 %). La complexité des pages reste la même que dans le profil du test de référence 1. La modification de base de la page s’effectue en ajoutant une image et en modifiant le contenu texte. Là encore, l’exercice a été effectué sur une charge de base de 300 pages de la même complexité que celle définie dans le test de référence 1.
@@ -153,7 +153,7 @@ Pour de tels scénarios, Adobe a effectué des tests de référence sur un clust
 Avec un cluster sans partage actif-actif de deux instances de création, calcule le débit maximal avec un profil de charge où les utilisateurs exécutent un exercice simple de création de page sur une charge de base de 300 pages existantes, toutes de nature similaire.
 
    * **Résultat**
-Le débit maximal d’un simple exercice de création de page, tel que considéré ci-dessus comme une transaction, est de 2 016 transactions/heure. Il s’agit d’une augmentation d’environ 16 % par rapport à une instance de création autonome pour la même évaluation des performances.
+Le débit maximal d’un simple exercice de création de page, tel que ci-dessus (considéré comme une transaction), est de 2 016 transactions/heure. Il s’agit d’une augmentation d’environ 16 % par rapport à une instance de création autonome pour la même évaluation des performances.
 
 * **Test d’évaluation des performances 2b**
 Avec un cluster sans partage actif-actif de deux instances de création, calcule le débit maximal lorsque le profil de charge comprend la création d’une page (10 %), la modification de pages existantes (80 %), ainsi que la création et la modification d’une page successivement (10 %). La complexité de la page reste la même que dans le profil du test de référence 1. La modification de base de la page s’effectue en ajoutant une image et en modifiant le contenu texte. Encore une fois, l’exercice a été effectué sur une charge de base de 300 pages de complexité identique à celle définie dans le test de référence 1.

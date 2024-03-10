@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 exl-id: eaef65ec-2e4d-490f-8158-d48d738e3409
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '488'
-ht-degree: 86%
+ht-degree: 93%
 
 ---
 
@@ -59,7 +59,7 @@ Par défaut, ce comportement est activé automatiquement. Pour le désactiver, l
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-Notez que chaque itinéraire du SPA doit correspondre à une ressource accessible dans AEM (par exemple, &quot; `/content/mysite/mypage"`) depuis le `PageModelManager` essaiera automatiquement de charger le modèle de page correspondant une fois l’itinéraire sélectionné. Cependant, la SPA peut, si nécessaire, définir une « liste bloquée » d’itinéraires que `PageModelManager` doit ignorer :
+Notez que chaque route de la SPA doit correspondre à une ressource accessible dans AEM (par exemple, &quot;`/content/mysite/mypage"`), étant donné que le `PageModelManager` essaiera automatiquement de charger le modèle de page correspondant une fois la route sélectionnée. Cependant, la SPA peut, si nécessaire, définir une « liste bloquée » d’itinéraires que `PageModelManager` doit ignorer :
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

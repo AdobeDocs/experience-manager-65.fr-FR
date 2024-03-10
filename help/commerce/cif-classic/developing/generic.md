@@ -3,9 +3,9 @@ title: Développement (générique)
 description: La structure d’intégration comprend une couche d’intégration avec une API, ce qui vous permet de créer AEM composants pour les fonctionnalités d’e-commerce.
 contentOwner: Guillaume Carlino
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1853'
+source-wordcount: '1856'
 ht-degree: 98%
 
 ---
@@ -471,7 +471,7 @@ Le point d’entrée de l’API de recherche est la méthode `CommerceService#se
 
    * Le ClientContext `SegmentMgr` résout les segments. Le ClientContext `CartMgr` résout les promotions. Chaque promotion qui est soumise à au moins un segment résolu est déclenchée.
 
-      * Les promotions déclenchées sont renvoyées au serveur via un appel AJAX pour recalculer le panier.
+      * Les promotions déclenchées sont renvoyées au serveur au moyen d’un appel AJAX pour recalculer le panier.
       * Les promotions déclenchées (et les bons ajoutés) s’affichent également dans le panneau ClientContext.
 
 L’ajout ou la suppression d’un bon d’un panier est réalisé via l’API `CommerceSession` :

@@ -3,16 +3,16 @@ title: Intégration d’AEM et de solutions de commerce tierces à l’aide de C
 description: Les entreprises peuvent avoir besoin de solutions commerciales tierces supplémentaires pour alimenter leur storefront. Commerce Integration Framework (CIF) peut être utilisé dans de tels scénarios d’intégration pour connecter une solution commerciale tierce à Adobe Experience Manager à l’aide de l’environnement I/O Runtime.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: e99899a4-df86-4108-991a-8b30d303a279
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
-workflow-type: ht
-source-wordcount: '507'
-ht-degree: 100%
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
+workflow-type: tm+mt
+source-wordcount: '489'
+ht-degree: 96%
 
 ---
 
 # Intégration d’AEM et de solutions de commerce tierces à l’aide de Commerce Integration Framework {#aem-third-party}
 
-L’intégration d’une solution de commerce autre qu’Adobe est un scénario courant pour l’environnement CIF. Les solutions tierces avec différentes API et différents schémas sont connectées par le biais d’une couche d’intégration.
+L’intégration d’une solution de commerce autre qu’Adobe est un scénario courant pour l’environnement CIF. Les solutions tierces avec différentes API et différents schémas sont connectées par le biais d’une couche d’intégration.
 
 ## Architecture {#architecture}
 

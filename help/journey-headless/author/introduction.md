@@ -2,10 +2,10 @@
 title: Créer en découplage avec Adobe Experience Manager
 description: Cette section présente les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager et explique comment créer du contenu pour votre projet.
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
-workflow-type: ht
-source-wordcount: '659'
-ht-degree: 100%
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
+workflow-type: tm+mt
+source-wordcount: '649'
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ Le découplage est un terme utilisé pour décrire les systèmes qui dissocient 
 
 Traditionnellement, vous gérez le contenu dans un CMS qui est responsable du rendu de ce contenu sur vos pages web.
 
-Ainsi, le découplage signifie que votre jeu de contenu peut être géré dans le CMS, puis accessible par le biais d’une ou de plusieurs applications (indépendantes).
+Désormais, sans interface utilisateur graphique, votre jeu de contenu peut être géré dans le CMS, puis accessible par une ou plusieurs applications (indépendantes).
 
 Cela signifie que votre contenu peut être diffusé sur n’importe quel appareil, dans de nombreux formats. Cela rend l’ensemble du processus beaucoup plus flexible et signifie également que vous n’avez pas à vous soucier de la mise en page et de la mise en forme.
 
@@ -84,6 +84,6 @@ Maintenant que vous avez découvert les concepts et la terminologie, l’étape 
 
 * [Présentation d’AEM en tant que CMS découplé](/help/sites-developing/headless/introduction.md)
 
-* [Portail de développement d’AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* [Portail de développement d’AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
 
-* [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
+* [Tutoriels pour le découplage dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)

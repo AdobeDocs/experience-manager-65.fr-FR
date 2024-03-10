@@ -7,10 +7,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '1954'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -247,7 +247,7 @@ Pour ajouter réellement la nouvelle configuration au référentiel :
    * Type : selon les cas.
    * Valeur : selon les besoins.
 
-   Vous ne devez créer des propriétés que pour les paramètres que vous souhaitez configurer, les autres paramètres conservant les valeurs par défaut définies par AEM.
+   Vous ne devez créer des propriétés que pour les paramètres que vous souhaitez configurer, d’autres utilisent toujours les valeurs par défaut telles qu’elles sont définies par AEM.
 
 1. Enregistrez toutes les modifications.
 

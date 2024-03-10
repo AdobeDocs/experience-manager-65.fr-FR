@@ -7,10 +7,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '2316'
-ht-degree: 41%
+source-wordcount: '2317'
+ht-degree: 43%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 41%
 
 ## Présentation {#introduction}
 
-Le déchargement permet de répartir le traitement des tâches entre les instances d’Experience Manager dans une topologie. Avec le déchargement, vous pouvez utiliser des instances de Experience Manager spécifiques pour exécuter des types de traitement spécifiques. Un traitement spécialisé vous permet de maximiser l’utilisation des ressources de serveur disponibles.
+Le déchargement permet de répartir le traitement des tâches entre les instances d’Experience Manager dans une topologie. Avec le déchargement, vous pouvez utiliser des instances particulières d’Experience Manager pour exécuter des types de traitement spécifiques. Un traitement spécialisé vous permet d’optimiser l’utilisation des ressources serveur disponibles.
 
 Le déchargement est basé sur les fonctionnalités [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) et Sling JobManager. Pour utiliser le déchargement, ajoutez des clusters Experience Manager à une topologie, puis identifiez les rubriques de tâche devant être traitées par le cluster. Les grappes sont composées d’une ou de plusieurs instances de Experience Manager, de sorte qu’une seule instance est considérée comme un cluster.
 
@@ -50,7 +50,7 @@ Lors de la création d’une tâche, il est garanti que la charge utile se trouv
 
 ## Administration des topologies {#administering-topologies}
 
-Les topologies sont des clusters Experience Manager légèrement interconnectées qui participent au déchargement. Une grappe se compose d’une ou de plusieurs instances de serveur Experience Manager (une seule instance est considérée comme une grappe).
+Les topologies sont des grappes de Experience Manager à couplage faible qui participent au déchargement. Un cluster se compose d’une ou de plusieurs instances de serveur Experience Manager (une seule instance est considérée comme un cluster).
 
 Chaque instance de Experience Manager exécute les services liés au déchargement suivants :
 

@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '9100'
-ht-degree: 94%
+source-wordcount: '9070'
+ht-degree: 93%
 
 ---
 
@@ -94,11 +94,11 @@ Par défaut, AEM ajoute un **texte de remplacement** à vos images. Dans l’int
 
 * Fichier :
 
-Une image est téléchargée à partir du disque dur de l’utilisateur ou de l’utilisatrice. Si vous ajoutez un composant d’image à une page, puis choisissez une image sur votre disque dur ou une autre source, la valeur par défaut pour le **Texte de remplacement** est `file`. Cette valeur doit être modifiée dans l’onglet des propriétés d’image **avancées**. Cette valeur n’est pas affichée dans le champ **Texte de remplacement** mais lorsque la valeur est modifiée, la nouvelle valeur s’affiche dans le champ.
+  Une image est téléchargée à partir du disque dur de l’utilisateur ou de l’utilisatrice. Si vous ajoutez un composant d’image à une page, puis choisissez une image sur votre disque dur ou une autre source, la valeur par défaut pour le **Texte de remplacement** est `file`. Cette valeur doit être modifiée dans l’onglet des propriétés d’image **avancées**. Cette valeur n’est pas affichée dans le champ **Texte de remplacement** mais lorsque la valeur est modifiée, la nouvelle valeur s’affiche dans le champ.
 
 * Asset :
 
-une image est ajoutée à partir du référentiel de ressources numériques. Si vous faites glisser une image du référentiel des ressources numériques vers une page web, les valeurs **Titre** et **Texte de remplacement** pour cette image sont récupérées dans ses métadonnées.
+  une image est ajoutée à partir du référentiel de ressources numériques. Si vous faites glisser une image du référentiel des ressources numériques vers une page web, les valeurs **Titre** et **Texte de remplacement** pour cette image sont récupérées dans ses métadonnées.
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ une image est ajoutée à partir du référentiel de ressources numériques. Si 
 Il existe diverses formes de contenus non textuels. Par conséquent, la valeur de l’équivalent textuel dépend du rôle du graphique dans la page web. Voici quelques règles générales :
 
 * Les textes secondaires doivent être succincts, tout en communiquant clairement l’information essentielle du contenu non textuel.
-* Il est préférable d’éviter les descriptions trop longues (plus de 100 caractères). Si un texte secondaire doit être plus détaillé :
+* Les descriptions longues (plus de 100 caractères) doivent être évitées. Si un texte secondaire nécessite plus de détails :
 
    * donnez une brève description dans le texte secondaire ;
    * proposez une description plus longue, ailleurs sur la même page ou dans une page web distincte. Créez un lien vers cette description distincte en faisant de l’image un lien ou en plaçant un lien textuel en regard de l’image.
@@ -129,55 +129,55 @@ Voici quelques-uns des types spécifiques de contenu non textuel auquel un texte
 
 * Photos d’illustration :
 
-Il s’agit de photos de personnes, d’objets ou de lieux. Pensez au rôle de la photo sur la page ; un texte approprié sera probablement *Photo de l’[objet]*, mais cela peut dépendre du texte environnant.
+  Il s’agit de photos de personnes, d’objets ou de lieux. Pensez au rôle de la photo sur la page ; un texte approprié sera probablement *Photo de l’[objet]*, mais cela peut dépendre du texte environnant.
 
 * Icônes :
 
-Petits pictogrammes (graphiques) véhiculant des informations spécifiques. Ils doivent être utilisés de manière cohérente sur une page et un site. Toutes les instances de l’icône sur une page ou un site doivent avoir le même équivalent textuel court et succinct, sauf si cela entraîne une duplication inutile du texte adjacent.
+  Petits pictogrammes (graphiques) véhiculant des informations spécifiques. Ils doivent être utilisés de manière cohérente sur une page et un site. Toutes les instances de l’icône sur une page ou un site doivent avoir le même équivalent textuel court et succinct, sauf si cela entraîne une duplication inutile du texte adjacent.
 
 * Tableaux et graphiques :
 
-ces éléments présentent généralement des données numériques. Il est également possible de fournir un texte alternatif en fournissant un bref résumé des principales tendances affichées dans le diagramme ou le graphique. Si nécessaire, fournissez également une description plus détaillée dans le texte à l’aide du champ **Description** dans l’onglet **Propriétés d’image avancées**. En outre, vous pouvez fournir les données sources sous forme tabulaire ailleurs dans la page ou le site.
+  ces éléments présentent généralement des données numériques. Il est également possible de fournir un texte alternatif en fournissant un bref résumé des principales tendances affichées dans le diagramme ou le graphique. Si nécessaire, fournissez également une description plus détaillée dans le texte à l’aide du champ **Description** dans l’onglet **Propriétés d’image avancées**. En outre, vous pouvez fournir les données sources sous forme tabulaire ailleurs dans la page ou le site.
 
-![Exemple de graphique. Voici la meilleure approche pour fournir une alternative.](assets/chlimage_1-2a.jpeg)
+  ![Exemple de graphique. Voici la meilleure approche pour fournir une alternative.](assets/chlimage_1-2a.jpeg)
 
-Pour spécifier un équivalent textuel pour cet exemple de graphique, ajoutez un texte `alt` concis à l’image, puis un équivalent textuel complet juste après l’image.
+  Pour spécifier un équivalent textuel pour cet exemple de graphique, ajoutez un texte `alt` concis à l’image, puis un équivalent textuel complet juste après l’image.
 
-```xml
-<p><img src="figure1.gif" alt="Figure 1" ></p>
-<p> Figure 1. Distribution of Articles by Journal Category.
-Pie chart: Language=68%, Education=14% and Science=18%.</p>
-```
+  ```xml
+  <p><img src="figure1.gif" alt="Figure 1" ></p>
+  <p> Figure 1. Distribution of Articles by Journal Category.
+  Pie chart: Language=68%, Education=14% and Science=18%.</p>
+  ```
 
->[!NOTE]
->
->Le fragment de code ci-dessus n’est utilisé qu’à titre d’exemple pour la commande. Utilisez le composant **Image** plutôt que la référence `img src` utilisée ci-dessus.
+  >[!NOTE]
+  >
+  >Le fragment de code ci-dessus n’est utilisé qu’à titre d’exemple pour la commande. Utilisez le composant **Image** plutôt que la référence `img src` utilisée ci-dessus.
 
-Dans AEM, ce résultat peut être obtenu à l’aide d’une combinaison des champs **Texte de remplacement** et **Description** dans la boîte de dialogue de configuration de l’image. Voir [Comment procéder - Contenu non textuel (1.1.1)](#how-to-meet-non-text-content).
+  Dans AEM, ce résultat peut être obtenu à l’aide d’une combinaison des champs **Texte de remplacement** et **Description** dans la boîte de dialogue de configuration de l’image. Voir [Comment procéder - Contenu non textuel (1.1.1)](#how-to-meet-non-text-content).
 
 * Cartes, diagrammes, organigrammes :
 
-pour les diagrammes fournissant des données spatiales (par exemple, pour prendre en charge la description des relations entre des objets ou un processus), assurez-vous que le message clé est fourni au format texte. Dans le cas des cartes, il est probable que l’utilisation d’un équivalent en texte intégral ne soit pas adaptée. Toutefois, si la carte est fournie pour aider les gens à trouver leur chemin vers un emplacement donné, alors le texte de remplacement de l’image de la carte peut indiquer brièvement *Carte de X*, puis donner des indications vers cet emplacement en texte à un autre endroit, dans la page ou dans le champ **Description** de l’onglet **Avancé** du composant **Image**.
+  pour les diagrammes fournissant des données spatiales (par exemple, pour prendre en charge la description des relations entre des objets ou un processus), assurez-vous que le message clé est fourni au format texte. Dans le cas des cartes, il est probable que l’utilisation d’un équivalent en texte intégral ne soit pas adaptée. Toutefois, si la carte est fournie pour aider les gens à trouver leur chemin vers un emplacement donné, alors le texte de remplacement de l’image de la carte peut indiquer brièvement *Carte de X*, puis donner des indications vers cet emplacement en texte à un autre endroit, dans la page ou dans le champ **Description** de l’onglet **Avancé** du composant **Image**.
 
 * CAPTCHAs :
 
-un CAPTCHA signifie *Completely Automated Public Turing test to tell Computers and Humans Apart* (Test de Turing public complètement automatisé pour faire la différence entre les ordinateurs et les humains). Il s’agit d’un contrôle de sécurité utilisé sur les pages web pour distinguer les humains des logiciels malveillants, mais qui peut causer des problèmes en matière d’accessibilité. Le CAPTCHA, sous forme d’images, nécessite que les utilisateurs et utilisatrices décrivent ce qu’ils voient pour réussir le test de sécurité. Il n’est évidemment pas possible de fournir un texte de remplacement pour l’image. Vous devrez donc envisager d’autres solutions non graphiques.
+  un CAPTCHA signifie *Completely Automated Public Turing test to tell Computers and Humans Apart* (Test de Turing public complètement automatisé pour faire la différence entre les ordinateurs et les humains). Il s’agit d’un contrôle de sécurité utilisé sur les pages web pour distinguer les humains des logiciels malveillants, mais qui peut causer des problèmes en matière d’accessibilité. Le CAPTCHA, sous forme d’images, nécessite que les utilisateurs et utilisatrices décrivent ce qu’ils voient pour réussir le test de sécurité. Il n’est évidemment pas possible de fournir un texte de remplacement pour l’image. Vous devrez donc envisager d’autres solutions non graphiques.
 
-Le W3C propose plusieurs suggestions, telles que les suivantes : Chacune de ces approches a ses avantages et ses inconvénients.
+  Le W3C propose plusieurs suggestions, telles que les suivantes : Chacune de ces approches a ses avantages et ses inconvénients.
 
-    * Puzzles logiques
-    * Utilisation de la sortie son au lieu des images
-    * Comptes d’utilisation limités et filtres de spam.
+   * Tests de logique
+   * Utilisation de la sortie son au lieu des images
+   * Comptes d’utilisateur limités et filtres de courrier indésirable
 
 * Images d’arrière-plan :
 
-Pour ce faire, utilisez des feuilles de style en cascade (CSS) plutôt qu’en HTML. Cela signifie qu’il n’est pas possible de spécifier de texte de remplacement. Par conséquent, les images d’arrière-plan ne doivent pas fournir d’informations textuelles importantes. Si c’est toutefois le cas, ces dernières doivent également être fournies dans le texte de la page.
+  Pour ce faire, utilisez des feuilles de style en cascade (CSS) plutôt qu’en HTML. Cela signifie qu’il n’est pas possible de spécifier de texte de remplacement. Par conséquent, les images d’arrière-plan ne doivent pas fournir d’informations textuelles importantes. Si c’est toutefois le cas, ces dernières doivent également être fournies dans le texte de la page.
 
-Cependant, il est important qu’un arrière-plan alternatif s’affiche lorsque l’image ne peut pas être affichée.
+  Cependant, il est important qu’un arrière-plan alternatif s’affiche lorsque l’image ne peut pas être affichée.
 
->[!NOTE]
->
->Il doit y avoir un niveau de contraste approprié entre l’arrière-plan et le texte de premier plan. Ce contraste est abordé plus en détail dans la section [Contraste (minimum) (1.4.3)](#contrast-minimum).
+  >[!NOTE]
+  >
+  >Il doit y avoir un niveau de contraste approprié entre l’arrière-plan et le texte de premier plan. Ce contraste est abordé plus en détail dans la section [Contraste (minimum) (1.4.3)](#contrast-minimum).
 
 #### En savoir plus – Contenu non textuel (1.1.1) {#more-information-non-text-content}
 
@@ -219,7 +219,7 @@ Fournir ces informations dans un format différent, tel que du texte (ou de l’
 
    * fournissez un lien juste avant ou après le contenu vers une transcription textuelle du contenu audio ;
 
-  La transcription doit être une page de HTML avec un équivalent textuel de tout le contenu non parlé important et parlé. Elle doit également indiquer qui parle, une description du décor, des expressions vocales et une description de tout autre son significatif.
+     La transcription doit être une page de HTML avec un équivalent textuel de tout le contenu non parlé important et parlé. Elle doit également indiquer qui parle, une description du décor, des expressions vocales et une description de tout autre son significatif.
 
 * Si le contenu est une animation ou une vidéo préenregistrée sans son :
 
@@ -388,122 +388,122 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
 
 * **Utilisation de titres :**
 
-Quand les fonctionnalités d’accessibilité de l’éditeur de texte enrichi sont activées, (voir [AEM et accessibilité](/help/sites-administering/rte-accessible-content.md)), AEM offre trois niveaux d’en-tête de page. Vous pouvez les utiliser pour identifier les sections et sous-sections de contenu. En-tête 1 est le plus haut niveau d’en-tête, En-tête 3 le plus bas. L’administrateur système peut configurer le système pour autoriser l’utilisation d’un plus grand nombre de niveaux d’en-tête.
+  Quand les fonctionnalités d’accessibilité de l’éditeur de texte enrichi sont activées, (voir [AEM et accessibilité](/help/sites-administering/rte-accessible-content.md)), AEM offre trois niveaux d’en-tête de page. Vous pouvez les utiliser pour identifier les sections et sous-sections de contenu. En-tête 1 est le plus haut niveau d’en-tête, En-tête 3 le plus bas. L’administrateur système peut configurer le système pour autoriser l’utilisation d’un plus grand nombre de niveaux d’en-tête.
 
-L’image suivante illustre un exemple des différents types de titres.
+  L’image suivante illustre un exemple des différents types de titres.
 
-![Titres H1 à H3 affichés dans le sélecteur déroulant (IU classique).](assets/chlimage_1-19a.png)
+  ![Titres H1 à H3 affichés dans le sélecteur déroulant (IU classique).](assets/chlimage_1-19a.png)
 
 * **Texte mis en évidence** :
 
-Mettez le texte en évidence à l’aide des éléments &lt;strong> ou &lt;em>. N’utilisez pas de titres au sein des paragraphes.
+  Mettez le texte en évidence à l’aide des éléments &lt;strong> ou &lt;em>. N’utilisez pas de titres au sein des paragraphes.
 
-    * Mettez en surbrillance le texte à mettre en évidence.
-    * Cliquez sur l’icône **B** (pour &lt;strong>) ou sur l’icône **I** (pour &lt;em>) affichées dans le panneau **Propriétés** (assurez-vous que HTML est sélectionné).
+   * Surlignez le texte à mettre en évidence.
+   * Cliquez sur l’icône **B** (pour &lt;strong>) ou **I** (pour &lt;em>) du panneau **Propriétés** (HTML doit être sélectionné).
 
->[!NOTE]
->
->Dans une installation AEM standard, l’éditeur de texte enrichi est configuré pour utiliser :
->
->* &lt;b> pour &lt;strong> ;
-* &lt;i> pour &lt;em>.
->
-Ces balises sont identiques dans la pratique, mais &lt;strong> et &lt;em> sont préférables, car il s’agit de code HTML correct sémantiquement. Votre équipe de développement peut configurer l’éditeur de texte enrichi pour qu’il utilise &lt;strong> et &lt;em> (au lieu de &lt;b> et &lt;i>) lors du développement de votre instance de projet.
+  >[!NOTE]
+  >
+  >Dans une installation AEM standard, l’éditeur de texte enrichi est configuré pour utiliser :
+  >
+  >* &lt;b> pour &lt;strong> ;
+  * &lt;i> pour &lt;em>.
+  >
+  Ces balises sont identiques dans la pratique, mais &lt;strong> et &lt;em> sont préférables, car il s’agit de code HTML correct sémantiquement. Votre équipe de développement peut configurer l’éditeur de texte enrichi pour qu’il utilise &lt;strong> et &lt;em> (au lieu de &lt;b> et &lt;i>) lors du développement de votre instance de projet.
 
 * **Utiliser les listes** : vous pouvez spécifier trois différents types de listes en HTML :
 
    * L’élément `<ul>` est utilisé pour les listes *non triées* (à puces). Les éléments de liste individuels sont identifiés à l’aide de l’élément `<li>`.
 
-  Dans l’éditeur de texte enrichi, cliquez sur l’icône **Liste à puces**.
+     Dans l’éditeur de texte enrichi, cliquez sur l’icône **Liste à puces**.
 
    * L’élément `<ol>` est utilisé pour les listes *numérotées*. Les éléments de liste individuels sont identifiés à l’aide de l’élément `<li>`.
 
-  Dans l’éditeur de texte enrichi, cliquez sur l’icône **Liste numérotée**.
+     Dans l’éditeur de texte enrichi, cliquez sur l’icône **Liste numérotée**.
 
-Pour modifier le contenu existant d’un type de liste particulier, surlignez le texte concerné puis sélectionnez le type de liste approprié. Comme dans l’exemple précédent illustrant comment est entré le texte du paragraphe, les éléments de liste appropriés sont automatiquement ajoutés au fichier HTML, mais vous pouvez l’afficher en mode d’édition de la source.
+  Pour modifier le contenu existant d’un type de liste particulier, surlignez le texte concerné puis sélectionnez le type de liste approprié. Comme dans l’exemple précédent illustrant comment est entré le texte du paragraphe, les éléments de liste appropriés sont automatiquement ajoutés au fichier HTML, mais vous pouvez l’afficher en mode d’édition de la source.
 
->[!NOTE]
->
-L’élément `<dl>` n’est pas pris en charge par l’éditeur de texte enrichi.
+  >[!NOTE]
+  >
+  L’élément `<dl>` n’est pas pris en charge par l’éditeur de texte enrichi.
 
 * **Utiliser des tableaux** :
 
-Les tableaux de données doivent être identifiés à l’aide des éléments de tableau HTML :
+  Les tableaux de données doivent être identifiés à l’aide des éléments de tableau HTML :
 
-    * un élément « &lt;table> »
-    * un élément « &lt;tr> » pour chaque ligne du tableau
-    * un élément « &lt;th> » pour chaque en-tête de ligne et de colonne
-    * un élément « &lt;td> » pour chaque cellule de données
+   * un élément `<table>` ;
+   * un élément `<tr>` pour chaque ligne du tableau ;
+   * un élément `<th>` pour chaque en-tête de ligne et de colonne ;
+   * un élément `<td>` pour chaque cellule de données.
 
->[!NOTE]
->
-Les tableaux doivent être créés avec le composant **Tableau**. Bien qu’il soit possible de les créer dans le composant Texte, cela n’est pas recommandé.
+  >[!NOTE]
+  >
+  Les tableaux doivent être créés avec le composant **Tableau**. Bien qu’il soit possible de les créer dans le composant Texte, cela n’est pas recommandé.
 
-En outre, les tableaux accessibles utilisent les éléments et attributs suivants :
+  En outre, les tableaux accessibles utilisent les éléments et attributs suivants :
 
-    * L’élément « &lt;caption> » sert à fournir une légende visible pour le tableau. Les légendes apparaissent par défaut centrées au-dessus du tableau, mais peuvent être positionnées de manière appropriée à l’aide de CSS. La légende est associée au tableau par programmation, ce qui en fait une méthode utile pour fournir une introduction au contenu.
-    * L’élément « &lt;h3 class=&quot;summary&quot;> » aide les personnes non voyantes à comprendre plus facilement les informations présentées dans un tableau, en fournissant une synthèse de ce qu’une personne voyante peut voir. Cela s’avère particulièrement utile lorsque des mises en page de tableau complexes ou non conventionnelles sont utilisées (cet attribut n’est pas affiché dans le navigateur, il est uniquement lu pour les technologies d’assistance).
-    * L’attribut « portée » de l’élément « &lt;th> » sert à indiquer si une cellule représente un en-tête pour une ligne ou une colonne particulière. Une approche similaire consiste à utiliser les attributs d’en-tête et d’identifiant dans des tableaux complexes, où les cellules de données peuvent être associées à un ou plusieurs en-têtes.
+   * L’élément `<caption>` sert à fournir un sous-titre visible pour le tableau. Les légendes apparaissent par défaut centrées au-dessus du tableau, mais peuvent être positionnées de manière appropriée à l’aide de CSS. La légende est associée au tableau par programmation, ce qui en fait une méthode utile pour fournir une introduction au contenu.
+   * L’élément `<h3 class="summary">` aide les utilisateurs non voyants à comprendre plus facilement les informations présentées dans un tableau, en fournissant une synthèse de ce qu’un utilisateur voyant peut voir. Cela s’avère particulièrement utile lorsque des mises en page de tableau complexes ou non conventionnelles sont utilisées (cet attribut n’est pas affiché dans le navigateur, il est uniquement lu pour les technologies d’assistance).
+   * L’attribut `scope` de l’élément `<th>` sert à indiquer si une cellule représente un en-tête pour une ligne ou une colonne particulière. Une approche similaire consiste à utiliser les attributs header et id dans des tableaux complexes, où les cellules de données peuvent être associées à un ou plusieurs en-têtes.
 
->[!NOTE]
->
-Par défaut, ces éléments et attributs ne sont pas directement disponibles, mais l’administration du système peut ajouter la prise en charge de ces valeurs dans la boîte de dialogue **Propriétés du tableau** (voir [Ajout de la prise en charge des éléments et attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+  >[!NOTE]
+  >
+  Par défaut, ces éléments et attributs ne sont pas directement disponibles, mais l’administration du système peut ajouter la prise en charge de ces valeurs dans la boîte de dialogue **Propriétés du tableau** (voir [Ajout de la prise en charge des éléments et attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
-En ajoutant un **Tableau**, vous pouvez configurer les **Propriétés du tableau** à l’aide de la boîte de dialogue.
+  En ajoutant un **Tableau**, vous pouvez configurer les **Propriétés du tableau** à l’aide de la boîte de dialogue.
 
-    * une **Légende** appropriée.
-    * Idéalement, supprimez toutes les valeurs par défaut pour **Largeur**, **Hauteur**, **Bordure**, **Marge intérieure des cellules** et **Espacement des cellules**. En effet, ces propriétés peuvent être définies dans une feuille de style globale.
+   * un **Légende**.
+   * Idéalement, supprimez toutes les valeurs par défaut pour **Largeur**, **Hauteur**, **Bordure**, **Marge intérieure des cellules** et **Espacement des cellules**. En effet, ces propriétés peuvent être définies dans une feuille de style globale.
 
-![Boîte de dialogue Propriétés du tableau.](assets/chlimage_1-20a.png)
+  ![Boîte de dialogue Propriétés du tableau.](assets/chlimage_1-20a.png)
 
-Utilisez les **Propriétés de la cellule** pour déterminer si la cellule est une cellule de données ou d’en-tête et, dans le deuxième cas, si elle renvoie à une ligne, à une colonne ou aux deux :
+  Utilisez les **Propriétés de la cellule** pour déterminer si la cellule est une cellule de données ou d’en-tête et, dans le deuxième cas, si elle renvoie à une ligne, à une colonne ou aux deux :
 
-![Boîte de dialogue Propriétés de la cellule ; définition d’une ligne (généralement la première) comme ligne d’en-tête.](assets/chlimage_1-21a.png)
+  ![Boîte de dialogue Propriétés de la cellule ; définition d’une ligne (généralement la première) comme ligne d’en-tête.](assets/chlimage_1-21a.png)
 
 * **Tableaux de données complexes :** 
 
-Dans certains cas, lorsqu’il existe des tableaux complexes comportant deux niveaux ou plus d’en-têtes, les propriétés de base du tableau peuvent ne pas suffire à fournir toutes les informations structurelles nécessaires. Pour ce type de tableaux complexes, il est nécessaire de créer des relations directes entre les en-têtes et leurs cellules associées à l’aide des attributs d’**en-tête** et d’**identifiant**. Par exemple, dans le tableau ci-dessous, les attributs header et id correspondent pour créer une association de programmation pour les utilisateurs de technologies d’assistance.
+  Dans certains cas, lorsqu’il existe des tableaux complexes comportant deux niveaux ou plus d’en-têtes, les propriétés de base du tableau peuvent ne pas suffire à fournir toutes les informations structurelles nécessaires. Pour ce type de tableaux complexes, il est nécessaire de créer des relations directes entre les en-têtes et leurs cellules associées à l’aide des attributs d’**en-tête** et d’**identifiant**. Par exemple, dans le tableau ci-dessous, les attributs header et id correspondent pour créer une association de programmation pour les utilisateurs de technologies d’assistance.
 
->[!NOTE]
->
-L’attribut id n’est pas disponible dans une installation prête à l’emploi. Il peut être activé en configurant les règles HTML et le sérialiseur dans l’éditeur de texte enrichi.
+  >[!NOTE]
+  >
+  L’attribut id n’est pas disponible dans une installation prête à l’emploi. Il peut être activé en configurant les règles HTML et le sérialiseur dans l’éditeur de texte enrichi.
 
->[!NOTE]
->
-Les tableaux doivent être créés avec le composant **Tableau**. Bien qu’il soit possible de les créer dans le composant Texte, cela n’est pas recommandé.
+  >[!NOTE]
+  >
+  Les tableaux doivent être créés avec le composant **Tableau**. Bien qu’il soit possible de les créer dans le composant Texte, cela n’est pas recommandé.
 
-```xml
-<table>
-   <tr>
-     <th rowspan="2" id="h">Homework</th>
-     <th colspan="3" id="e">Exams</th>
-     <th colspan="3" id="p">Projects</th>
-   </tr>
-   <tr>
-     <th id="e1" headers="e">1</th>
-     <th id="e2" headers="e">2</th>
-     <th id="ef" headers="e">Final</th>
-     <th id="p1" headers="p">1</th>
-     <th id="p2" headers="p">2</th>
-     <th id="pf" headers="p">Final</th>
-   </tr>
-   <tr>
-    <td headers="h">15%</td>
-    <td headers="e e1">15%</td>
-    <td headers="e e2">15%</td>
-    <td headers="e ef">20%</td>
-    <td headers="p p1">10%</td>
-    <td headers="p p2">10%</td>
-    <td headers="p pf">15%</td>
-   </tr>
-  </table>
-```
+  ```xml
+  <table>
+     <tr>
+       <th rowspan="2" id="h">Homework</th>
+       <th colspan="3" id="e">Exams</th>
+       <th colspan="3" id="p">Projects</th>
+     </tr>
+     <tr>
+       <th id="e1" headers="e">1</th>
+       <th id="e2" headers="e">2</th>
+       <th id="ef" headers="e">Final</th>
+       <th id="p1" headers="p">1</th>
+       <th id="p2" headers="p">2</th>
+       <th id="pf" headers="p">Final</th>
+     </tr>
+     <tr>
+      <td headers="h">15%</td>
+      <td headers="e e1">15%</td>
+      <td headers="e e2">15%</td>
+      <td headers="e ef">20%</td>
+      <td headers="p p1">10%</td>
+      <td headers="p p2">10%</td>
+      <td headers="p pf">15%</td>
+     </tr>
+    </table>
+  ```
 
-Pour ce faire dans AEM, vous devez ajouter le balisage directement à l’aide du mode d’édition de la source.
+  Pour ce faire dans AEM, vous devez ajouter le balisage directement à l’aide du mode d’édition de la source.
 
->[!NOTE]
->
-Cette fonctionnalité n’est pas disponible immédiatement dans une installation standard. Elle nécessite la configuration de l’éditeur de texte enrichi, des règles HTML et du sérialiseur.
+  >[!NOTE]
+  >
+  Cette fonctionnalité n’est pas disponible immédiatement dans une installation standard. Elle nécessite la configuration de l’éditeur de texte enrichi, des règles HTML et du sérialiseur.
 
 #### En savoir plus – Informations et relations (1.3.1) {#more-information-info-and-relationships}
 
@@ -675,8 +675,13 @@ Si des images de texte doivent être utilisées, utilisez le CSS pour remplacer 
 * Niveau A
 * Mettre en pause, arrêter, masquer : pour toute information en mouvement, clignotante, défilante ou mise à jour automatiquement, tous les points suivants sont vrais :
 
-   * Déplacement, clignotement, défilement : pour toute information en mouvement, clignotante ou défilante qui (a), démarre automatiquement, (b), dure plus de cinq secondes et (c), est présentée en parallèle à d’autres contenus, il existe un mécanisme permettant à l’utilisateur ou à l’utilisatrice de la suspendre, de l’arrêter ou de la masquer, sauf si le mouvement, le clignotement ou le défilement fait partie intégrante de l’activité.
-   * Mise à jour automatique : pour toute information mise à jour automatiquement qui (a), démarre automatiquement et (b), est présentée en parallèle à d’autres contenus, il existe un mécanisme permettant à l’utilisateur ou à l’utilisatrice de la suspendre, de l’arrêter ou de la masquer, ou de contrôler la fréquence de la mise à jour, sauf si la mise à jour automatique fait partie intégrante de l’activité.
+   * Déplacement, clignotement, défilement : pour toute information en mouvement, clignotante ou défilante qui
+      * (a) démarre automatiquement,
+      * (b) dure plus de cinq secondes, et
+      * (c) est présenté en parallèle avec d’autres contenus, il existe un mécanisme permettant à l’utilisateur de le mettre en pause, de l’arrêter ou de le masquer, sauf si le mouvement, le clignotement ou le défilement font partie d’une activité où il est essentiel ;
+   * Mise à jour automatique : pour toutes les informations de mise à jour automatique qui
+      * (a) démarre automatiquement, et
+      * (b) est présenté en parallèle avec d’autres contenus, il existe un mécanisme permettant à l’utilisateur de le mettre en pause, de l’arrêter ou de le masquer, ou de contrôler la fréquence de mise à jour, sauf si la mise à jour automatique fait partie d’une activité où elle est essentielle.
 
 Remarques :
 
@@ -846,11 +851,11 @@ Pour que ce critère de réussite soit satisfait, la langue par défaut d’une 
 
 * Si une page est écrite en anglais (Royaume-Uni), l’élément `<html>` doit être :
 
-`<html lang = "en-gb">`
+  `<html lang = "en-gb">`
 
 * En revanche, une page à restituer en anglais (États-Unis), doit suivre la norme suivante :
 
-`<html lang = "en-us">`
+  `<html lang = "en-us">`
 
 Dans AEM, la langue par défaut de la page est définie lors de sa création, mais peut également être modifiée lors de son édition, en sélectionnant : **Sidekick** - onglet **Page** - **Propriétés de la page…** - onglet **Avancé**.
 
@@ -955,11 +960,11 @@ Le positionnement des libellés est également important, car ils permettent de 
 
 * Cases à cocher ou boutons radio :
 
-Les libellés sont positionnés immédiatement à droite du champ.
+  Les libellés sont positionnés immédiatement à droite du champ.
 
 * Tous les autres composants de formulaire (par exemple, zones de texte, zones de liste) :
 
-les libellés sont positionnés immédiatement au-dessus ou à gauche du champ.
+  les libellés sont positionnés immédiatement au-dessus ou à gauche du champ.
 
 Dans les formulaires simples avec des fonctionnalités limitées, étiquetez correctement une `Submit` peut agir comme libellé pour le champ adjacent (par exemple : `Search`). Cela s’avère utile dans les cas où il peut être difficile de trouver de l’espace pour le texte du libellé.
 

@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '1482'
-ht-degree: 61%
+ht-degree: 60%
 
 ---
 
@@ -203,7 +203,7 @@ Allez à : [http://localhost:4502/system/console/bundles](http://localhost:4502
 1. Cliquez sur OSGI > Configuration .
 1. Recherchez « Day JCR Connector for Microsoft SharePoint ».
 1. Cliquez sur « Modifier les valeurs de configuration ».
-1. Définissez la valeur de « Fabrique de connexions SharePoint » sur « com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory ».
+1. Définissez la valeur de &quot;SharePoint Connection Factory&quot; sur &quot;com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory&quot;.
 1. Cliquez sur **Enregistrer**.
 
 **Configuration de l’authentification de base (Windows)**
@@ -234,8 +234,8 @@ Pour créer un utilisateur dans AEM, procédez comme suit :
 Pour ajouter l’utilisateur au groupe d’administrateurs :
 
 1. Accédez à Administration des groupes.
-1. Cliquez sur le nœud « a ».
-1. Cliquez sur « Administrateurs ».
+1. Cliquez sur le noeud &quot;a&quot;.
+1. Cliquez sur &quot;administrateurs&quot;.
 1. Saisissez l’ID utilisateur créé plus haut dans la zone de texte en face du bouton **Parcourir**. 
 1. Cliquez sur la coche verte pour ajouter l’utilisateur au groupe administrateur.
 

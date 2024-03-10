@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 role: Developer
 exl-id: fe1198b5-4145-4dcd-ab8a-4015daaf89b7
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '428'
 ht-degree: 25%
 
 ---
@@ -32,7 +32,7 @@ Java™ API Quick Start (SOAP) est disponible pour les composants et services.
 [Démarrage rapide (mode SOAP) : suppression des composants à l’aide de Java](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
 
 
-Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée dʼAEM Forms et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API forte
 
 >[!NOTE]
 >
-Si vous disposez d’un composant personnalisé et que vous utilisez des protocoles SOAP ou EJB pour appeler des DSC sur le même serveur local, et que ces appels cessent de fonctionner après une mise à niveau, utilisez la stratégie d’appel interne à la machine virtuelle. Utilisez la stratégie d’appel interne à la machine virtuelle avec ServiceClientFactory par défaut et ne construisez pas ServiceClientFactory à l’aide des protocoles SOAP ou EJB.
+>Si vous disposez d’un composant personnalisé et que vous utilisez des protocoles SOAP ou EJB pour appeler des DSC sur le même serveur local, et que ces appels cessent de fonctionner après une mise à niveau, utilisez la stratégie d’appel interne à la machine virtuelle. Utilisez la stratégie d’appel interne à la machine virtuelle avec ServiceClientFactory par défaut et ne construisez pas ServiceClientFactory à l’aide des protocoles SOAP ou EJB.
 
 ## Démarrage rapide (mode SOAP) : déploiement d’un composant à l’aide de l’API Java™ {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 

@@ -4,7 +4,7 @@ description: Installez, configurez et personnalisez un package de démonstration
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '4535'
 ht-degree: 94%
@@ -155,8 +155,8 @@ Cette section contient des informations détaillées et des instructions sur la 
 
 1. Configurez le service pour qu’il se connecte au serveur SMTP de votre choix :
 
-   1. **Nom d’hôte du serveur SMTP** : par exemple, (smtp.gmail.com)
-   1. **Port du serveur** : par exemple (465) pour gmail utilisant SSL
+   1. **SMTP Server hostname**: par exemple (smtp.gmail.com)
+   1. **Port du serveur**: par exemple (465) pour gmail utilisant SSL
    1. **Utilisateur SMTP** : demo@ &lt;nom_entreprise> .com
    1. **Adresse « De »** : aemformsdemo@adobe.com
 

@@ -2,10 +2,10 @@
 title: Guide de prise en main pour l’accès et la diffusion de fragments de contenu découplés
 description: Découvrez comment utiliser l’API HTTP Assets d’AEM pour gérer les fragments de contenu et l’API GraphQL dans la diffusion de contenu de fragments de contenu en mode découplé.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: ht
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
+workflow-type: tm+mt
 source-wordcount: '555'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ Le reste de ce guide porte sur l’accès à GraphQL et la diffusion de fragmen
 
 ## Comment diffuser un fragment de contenu avec GraphQL {#how-to-deliver-a-content-fragment}
 
-Les architectes d’informations doivent concevoir des requêtes pour leurs points d’entrée de canal afin de diffuser du contenu. Ces requêtes ne doivent être prises en compte qu’une seule fois par point d’entrée et par modèle. Pour les besoins de ce guide de prise en main, il suffit d’en créer un exemplaire.
+Les architectes d’informations doivent concevoir des requêtes pour leurs points d’entrée de canal afin de diffuser du contenu. Ces requêtes ne doivent être prises en compte qu’une seule fois par point de terminaison et par modèle. Pour les besoins de ce guide de prise en main, vous ne devez en créer qu’un seul.
 
 1. Connectez-vous à AEM et accédez à l’[interface GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md) :
    * Par exemple : `http://<host>:<port>/aem/graphiql.html`.

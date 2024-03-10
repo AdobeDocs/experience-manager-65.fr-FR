@@ -7,9 +7,9 @@ content-strategy: max-2018
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
+source-git-commit: 7c83cdf779fc2b72b73e29064b2feec594e2e4b8
 workflow-type: tm+mt
-source-wordcount: '6084'
+source-wordcount: '6086'
 ht-degree: 82%
 
 ---
@@ -281,9 +281,9 @@ Utilisez des points d’arrêt de l’éditeur de thèmes pour définir une autr
 
 Lorsque vous sélectionnez un composant dans Zone de travail, ses propriétés de mise en forme sont répertoriées dans la barre latérale. Sélectionnez le type d&#39;objet et son état, puis indiquez sa mise en forme.
 
-### Styles récemment utilisés dans l’éditeur de thème {#recently-used-styles-in-theme-editor}
+### Styles récemment utilisés dans l’éditeur de thèmes {#recently-used-styles-in-theme-editor}
 
-L’éditeur de thème met en cache jusqu’à 10 styles appliqués à un composant. Vous pouvez utiliser les styles mis en cache avec d’autres composants d’un thème. Les styles récemment utilisés sont disponibles juste en dessous du composant sélectionné dans la barre latérale sous la forme d’une zone de liste. Au départ, la liste des styles récemment utilisés est vide.
+L’éditeur de thème met en cache jusqu’à 10 styles appliqués à un composant. Vous pouvez utiliser les styles mis en cache avec d’autres composants d’un thème. Les styles récemment utilisés sont disponibles juste en dessous du composant sélectionné dans la barre latérale sous forme de liste. Au départ, la liste des styles récemment utilisés est vide.
 
 ![Bibliothèque de ressources](assets/asset-library.png)
 
