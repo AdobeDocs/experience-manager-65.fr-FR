@@ -6,24 +6,24 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
 exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 98%
+source-wordcount: '476'
+ht-degree: 89%
 
 ---
 
-# Présentation des rapports de transaction{#transaction-reports-overview}
+# Rapports de transaction pour AEM Forms sur OSGi {#transaction-reports-overview}
 
-## Présentation {#introduction}
+<!--## Introduction {#introduction}
 
-Les rapports de transaction dans AEM Forms vous permettent de tenir le compte de toutes les transactions effectuées depuis une date spécifiée sur votre déploiement AEM Forms. L’objectif est de fournir des informations sur l’utilisation des produits et d’aider les parties prenantes à comprendre leurs volumes de traitement numérique. Voici quelques exemples d’une transaction :
+Transaction reports in AEM Forms let you keep a count of all transactions taken place since a specified date on your AEM Forms deployment. The objective is to provide information about product usage and help business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
-* Envoi d’un formulaire adaptatif, d’un HTML5 ou d’un jeu de formulaires
-* Rendu d’une version imprimée ou d’une version web d’une communication interactive.
-* Conversion d’un document d’un format de fichier à un autre.
+* Submission of an adaptive form, an HTML5 Form, or a form set
+* Rendition of a print or a web version of an interactive communication
+* Conversion of a document from one file format to another
 
-Pour plus d’informations sur ce qui est considéré comme une transaction, voir [API facturables](../../forms/using/transaction-reports-billable-apis.md).
+For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis.md).-->
 
 L’enregistrement des transactions est désactivé par défaut. Vous pouvez [activer l’enregistrement des transactions](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) à partir de la console web d’AEM. Vous pouvez afficher les rapports de transaction sur les instances de création, de traitement ou de publication. Affichez les rapports de transaction sur les instances de création ou de traitement pour obtenir un total combiné de toutes les transactions. Affichez les rapports de transaction sur les instances de publication pour connaître le nombre de toutes les transactions qui ont lieu uniquement sur cette instance de publication à partir de laquelle le rapport est exécuté.
 
@@ -57,6 +57,6 @@ Le nombre de transactions est répliqué par inverse des instances de publicatio
 
 ## Articles connexes {#related-articles}
 
-* [Afficher et comprendre des rapports de transaction](../../forms/using/viewing-and-understanding-transaction-reports.md)
-* [API de rapports de transactions facturables](../../forms/using/transaction-reports-billable-apis.md)
-* [Enregistrer une transaction pour les implémentations personnalisées](/help/forms/using/record-transaction-custom-implementation.md)
+* [Affichage et compréhension d’un rapport de transaction pour AEM Forms sur OSGi](../../forms/using/viewing-and-understanding-transaction-reports.md)
+* [API facturables pour les rapports de transaction pour AEM Forms sur OSGi](../../forms/using/transaction-reports-billable-apis.md)
+* [Enregistrement d’une transaction pour les implémentations personnalisées pour AEM Forms sur OSGi](/help/forms/using/record-transaction-custom-implementation.md)
