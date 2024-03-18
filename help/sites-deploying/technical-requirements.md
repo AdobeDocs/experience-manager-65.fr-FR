@@ -3,9 +3,9 @@ title: Exigences techniques
 description: Liste des plateformes clientes et serveur prises en charge pour Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 52969d5ab0975871c872195ab13649fb815cead8
+source-git-commit: b9a5b6f8f990a9dd0fcf77ea3972ad0c6f401831
 workflow-type: tm+mt
-source-wordcount: '3650'
+source-wordcount: '3652'
 ht-degree: 93%
 
 ---
@@ -202,7 +202,7 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 | Oracle Solaris™ 11 | Z : non pris en charge |
 | IBM® AIX® 7.2 | Z : non pris en charge |
 
-1. Noyau Linux® 2.6.3. x, 4. x, et 5. x contient des dérivés de la distribution Red Hat®, y compris Red Hat® Enterprise Linux, CentOS, Oracle Linux® et Amazon Linux®. Les fonctions de module complémentaire AEM Forms sont uniquement prises en charge sur CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 et Red Hat® Enterprise Linux® 9.
+1. Noyau Linux® 2.6.3. x, 4. x, 5. x et 6. x contient des dérivés de la distribution Red Hat®, y compris Red Hat® Enterprise Linux, CentOS, Oracle Linux® et Amazon Linux®. Les fonctions de module complémentaire AEM Forms sont uniquement prises en charge sur CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 et Red Hat® Enterprise Linux® 9.
 1. AEM Forms est pris en charge sur Ubuntu 20.04 LTS.
 1. Distribution Linux® prise en charge par Adobe Managed Services.
 
