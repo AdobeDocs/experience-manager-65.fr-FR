@@ -6,10 +6,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: b7461d5c-95d1-4da2-9d2a-f54c410a87f9
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 10%
+ht-degree: 13%
 
 ---
 
@@ -24,7 +25,7 @@ Les points de fin peuvent uniquement être ajoutés aux services. Un point de te
 >Il est recommandé d’utiliser des noms uniques lors de l’ajout de points de fin.
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des services.
-1. Sur la page Gestion des services, cliquez sur le service à configurer.
+1. Dans la page Gestion des services, sélectionnez le service à configurer.
 1. Dans la liste de l’onglet Points de fin , sélectionnez le type de point de fin à ajouter, puis cliquez sur Ajouter.
 1. Selon le type de point de fin, configurez des paramètres de point de fin supplémentaires.
 

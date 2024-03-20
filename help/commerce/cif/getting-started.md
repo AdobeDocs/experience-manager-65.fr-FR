@@ -4,9 +4,10 @@ description: Découvrez comment déployer un projet Content and Commerce AEM.
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '685'
 ht-degree: 98%
 
 ---

@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 20a19ee5-7113-4aca-934a-a42c415a8d93
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '552'
 ht-degree: 46%
 
 ---
@@ -28,7 +29,7 @@ Les principes utilisés dans le développement des configurations ont été bas�
 * Référencé à partir des noeuds d’analyse par chemin d’accès.
 * Facilement extensible.
 * Permet de répondre à des configurations plus complexes, telles [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Prise en charge des dépendances (par exemple, [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) les modules externes nécessitent un [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) ).
+* Prise en charge des dépendances (par exemple, [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) les modules externes ont besoin d’une [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) ).
 
 ## Structure {#structure}
 
@@ -40,7 +41,7 @@ Pour chaque type de configuration, un modèle et un composant sont fournis. Cela
 
 Pour fournir une configuration pour les nouveaux services, procédez comme suit :
 
-* Création d’une page de service dans
+* Créez une page de service dans
 
   `/etc/cloudservices`
 
@@ -139,7 +140,7 @@ Pour consulter la documentation de référence sur l’API, voir [com.day.cq.wcm
 
 Les services disponibles sont répertoriés dans l’onglet **Services cloud** de la boîte de dialogue **Propriétés de la page** (de toute page héritant de `foundation/components/page` ou `wcm/mobile/components/page`).
 
-L’onglet fournit également :
+Cet onglet contient également les informations suivantes :
 
 * lien vers l’emplacement où vous pouvez activer le service.
 * choisir une configuration (sous-noeud du service) à partir d’un champ de chemin d’accès ;
@@ -148,7 +149,7 @@ L’onglet fournit également :
 
 Lors du stockage des informations d’identification d’utilisateur pour le service, tous les mots de passe doivent être chiffrés.
 
-Pour cela, il faut ajouter un champ de formulaire masqué. Ce champ doit avoir l’annotation `@Encrypted` dans le nom de la propriété ; c’est-à-dire, pour la fonction `password` champ le nom serait écrit comme suit :
+Pour cela, il faut ajouter un champ de formulaire masqué. Ce champ doit avoir l’annotation `@Encrypted` dans le nom de la propriété ; c’est-à-dire, pour la propriété `password` champ le nom serait écrit comme suit :
 
 `password@Encrypted`
 

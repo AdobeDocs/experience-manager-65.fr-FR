@@ -7,16 +7,17 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 31%
+ht-degree: 38%
 
 ---
 
 # Expiration des objets statiques{#expiration-of-static-objects}
 
-Les objets statiques (par exemple, les icônes) ne changent pas. Par conséquent, le système doit être configuré de sorte qu’il n’expire pas (pendant une période raisonnable) et ainsi réduire le trafic inutile.
+Les objets statiques (par exemple, les icônes) ne changent pas. Par conséquent, le système doit être configuré de manière à ce qu’ils n’expirent pas (pendant une période raisonnable) et ainsi réduire le trafic inutile.
 
 Cela a l’impact suivant :
 

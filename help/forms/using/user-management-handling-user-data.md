@@ -5,10 +5,11 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 30%
+ht-degree: 32%
 
 ---
 
@@ -43,7 +44,7 @@ User Management stocke les données utilisateur dans les tables de base de donn�
 <table>
  <tbody>
   <tr>
-   <td>Table de base de données</td>
+   <td>Tableau de base de données</td>
    <td>Description</td>
   </tr>
   <tr>
@@ -101,9 +102,9 @@ Dans la commande `select`, remplacez l’ID de connexion `<user_login_id>` par l
 select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_id>
 ```
 
-Une fois que vous connaissez l’ID principal, vous pouvez exporter ou supprimer les données utilisateur.
+Une fois que vous connaissez l’identifiant principal, vous pouvez exporter ou supprimer les données utilisateur.
 
-#### Exportation des données utilisateur {#export-user-data}
+#### Exporter les données utilisateur {#export-user-data}
 
 Exécutez les commandes de base de données suivantes afin de pouvoir exporter les données de gestion des utilisateurs pour un ID principal à partir des tables de base de données. Dans la commande `select`, remplacez `<principal_id>` par l’ID principal de l’utilisateur dont vous souhaitez exporter les données.
 
@@ -111,13 +112,13 @@ Exécutez les commandes de base de données suivantes afin de pouvoir exporter l
 >
 >Les commandes suivantes utilisent des noms de table de base de données dans les bases de données My SQL et IBM® DB2®. Lors de l&#39;exécution de ces commandes sur les bases de données Oracle et MS® SQL, remplacez les noms de table suivants dans les commandes :
 >
-* Remplacez `EdcPrincipalLocalAccountEntity` par `EdcPrincipalLocalAccount`
+>* Remplacez `EdcPrincipalLocalAccountEntity` par `EdcPrincipalLocalAccount`
 >
-* Remplacez `EdcPrincipalEmailAliasEntity` par `EdcPrincipalEmailAliasEn`
+>* Remplacez `EdcPrincipalEmailAliasEntity` par `EdcPrincipalEmailAliasEn`
 >
-* Remplacez `EdcPrincipalMappingEntity` par `EdcPrincipalMappingEntit`
+>* Remplacez `EdcPrincipalMappingEntity` par `EdcPrincipalMappingEntit`
 >
-* Remplacez `EdcPrincipalGrpCtmntEntity` par `EdcPrincipalGrpCtmntEnti`
+>* Remplacez `EdcPrincipalGrpCtmntEntity` par `EdcPrincipalGrpCtmntEnti`
 >
 
 ```sql

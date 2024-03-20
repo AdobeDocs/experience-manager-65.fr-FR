@@ -6,9 +6,10 @@ role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: ht
-source-wordcount: '779'
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '771'
 ht-degree: 100%
 
 ---
@@ -74,7 +75,7 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
 Vous pouvez afficher les scores de toutes les ressources d’un dossier simultanément à l’aide du **[!UICONTROL mode Informations]**.
 
 1. Dans l’interface utilisateur d’[!DNL Assets], accédez au dossier contenant les ressources dont vous souhaitez consulter les informations.
-1. Cliquez sur Mise en page dans la barre d’outils, puis sélectionnez **[!UICONTROL Mode Informations]**.
+1. Cliquez sur Mise en page dans la barre d’outils, puis sélectionnez **[!UICONTROL Mode Insights]**.
 1. La page affiche les scores d’utilisation des ressources. Comparez les évaluations des différentes ressources et tirez-en des enseignements.
 
 ## Planification d’une tâche en arrière-plan {#scheduling-background-job}

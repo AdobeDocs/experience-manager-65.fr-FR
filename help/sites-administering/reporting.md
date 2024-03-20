@@ -7,7 +7,8 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2782'
 ht-degree: 98%

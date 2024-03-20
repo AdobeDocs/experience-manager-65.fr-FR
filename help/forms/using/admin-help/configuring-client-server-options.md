@@ -7,10 +7,11 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '10266'
-ht-degree: 23%
+ht-degree: 24%
 
 ---
 
@@ -72,13 +73,13 @@ Hauteur : minimum = 450 ; maximum = 800
 
 Votre environnement d’AEM forms contient un ou plusieurs utilisateurs administrateurs disposant des privilèges appropriés pour créer des utilisateurs et des groupes. Si votre entreprise utilise Document Security, au moins un administrateur doit également disposer du droit de gestion des utilisateurs invités et locaux.
 
-Les administrateurs doivent également disposer du rôle Utilisateur dans la console d’administration pour accéder à la console d’administration. (Voir [Création et configuration des rôles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
+Les administrateurs doivent également disposer du rôle Utilisateur dans la console d’administration pour accéder à la console d’administration. (Voir [Création et configuration de rôles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
 
 ### Configuration des utilisateurs et des groupes visibles {#configuring-visible-users-and-groups}
 
 Pour afficher les utilisateurs et les groupes dans les domaines sélectionnés lors des recherches d’utilisateurs de stratégies, un super-administrateur ou un administrateur de jeux de stratégies doit sélectionner et ajouter des domaines (créés dans User Management) à la liste des utilisateurs et des groupes visibles pour chaque jeu de stratégies.
 
-La liste des utilisateurs et des groupes visibles est visible par le coordinateur de jeux de stratégies. Elle permet de restreindre les domaines que l’utilisateur final peut parcourir lorsqu’il choisit des utilisateurs ou des groupes à ajouter aux stratégies. Si cette tâche n’est pas effectuée, le coordinateur de jeux de stratégies ne trouvera aucun utilisateur ou groupe à ajouter à la stratégie. Il peut y avoir plusieurs coordinateurs de jeux de stratégies pour un jeu donné.
+La liste des utilisateurs, des utilisatrices et des groupes est visible par la personne coordinatrice de jeux de politiques. Elle permet de restreindre les domaines que l’utilisateur ou l’utilisatrice peut parcourir lorsqu’il ou elle choisit des utilisateurs, des utilisatrices ou des groupes à ajouter aux politiques. Si cette tâche n’est pas effectuée, la personne coordinatrice de jeux de politiques ne trouvera aucun utilisateur, utilisatrice ou groupe à ajouter à la politique. Un jeu de politiques peut avoir plusieurs personnes coordinatrices.
 
 1. Après avoir installé et configuré votre environnement d’AEM forms avec Document Security, configurez tous les domaines appropriés dans User Management. <!-- Fix broken link (See Setting up and managing domains) -->
 
@@ -86,9 +87,9 @@ La liste des utilisateurs et des groupes visibles est visible par le coordinateu
 
 1. Dans Administration Console, cliquez sur Services > Gestion des documents > Stratégies, puis sur l’onglet Jeux de stratégies.
 1. Sélectionnez Jeu de stratégies global, puis cliquez sur l’onglet Utilisateurs et groupes visibles.
-1. Cliquez sur Ajouter un(s) domaine(s) et ajoutez des domaines existants selon les besoins.
+1. Cliquez sur Ajouter un ou des domaine(s) et ajoutez des domaines existants selon les besoins.
 1. Accédez à Services > Document Security > Configuration > Mes stratégies, puis cliquez sur l’onglet Utilisateurs et groupes visibles.
-1. Cliquez sur Ajouter un(s) domaine(s) et ajoutez des domaines existants selon les besoins.
+1. Cliquez sur Ajouter un ou des domaine(s) et ajoutez des domaines existants selon les besoins.
 
 ## Ajout du fournisseur d’authentification étendue {#add-the-extended-authentication-provider}
 

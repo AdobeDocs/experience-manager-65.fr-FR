@@ -3,9 +3,10 @@ title: Configurez l’éditeur de texte enrichi pour plusieurs éditeurs statiqu
 description: Créez plusieurs éditeurs statiques dans Adobe Experience Manager en configurant l’éditeur de texte enrichi.
 contentOwner: AG
 exl-id: 03030317-8b7d-408a-bdfd-619824d7260c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '445'
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '437'
 ht-degree: 100%
 
 ---
@@ -119,4 +120,3 @@ Pour obtenir des informations d’ordre général sur l’ajout d’un éditeur 
 >[!MORELIKETHIS]
 >
 >* [Configuration de l’éditeur de texte enrichi dans Experience Manager](/help/sites-administering/rich-text-editor.md)
-

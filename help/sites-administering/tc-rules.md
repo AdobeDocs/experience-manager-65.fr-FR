@@ -4,7 +4,8 @@ description: Découvrez comment identifier le contenu à traduire dans Adobe Exp
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 94%

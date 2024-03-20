@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 role: Admin
 exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '386'
-ht-degree: 49%
+ht-degree: 62%
 
 ---
 
@@ -38,7 +39,7 @@ Vous pouvez créer un dossier dans AEM Forms de l’une des manières suivantes 
 
    >[!NOTE]
    >
-   >par défaut, la valeur du champ Nom est automatiquement renseignée à partir du titre. Le nom ne peut contenir que des caractères alphanumériques ou des tirets (-) et des traits de soulignement (_). Tous les autres caractères spéciaux saisis dans le titre sont automatiquement remplacés par un trait d’union. Vous êtes invité à confirmer le nouveau nom. Vous pouvez continuer avec le nom proposé ou le modifier davantage.
+   >par défaut, la valeur du champ Nom est automatiquement renseignée à partir du titre. Le nom ne peut contenir que des caractères alphanumériques ou des tirets (-) et des traits de soulignement (_). Tous les autres caractères spéciaux saisis dans le titre sont automatiquement remplacés par un trait d’union. Il vous est demandé de confirmer le nouveau nom. Vous pouvez choisir de conserver le nom proposé ou de le modifier.
 
 1. Cliquez sur **[!UICONTROL Envoyer].**
 

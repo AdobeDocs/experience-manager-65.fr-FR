@@ -7,7 +7,8 @@ topic-tags: configuring, Security
 content-type: reference
 feature: Configuring
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 40%
@@ -80,19 +81,20 @@ Pour configurer l’authentification unique pour une instance AEM, vous devez co
 >
 >Si vous utilisez également la variable [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) avec Microsoft® Internet Information Server (IIS), une configuration supplémentaire est requise dans :
 >
-* `disp_iis.ini`
-* IIS
+>* `disp_iis.ini`
+>* IIS
 >
-Dans `disp_iis.ini` set : (voir [installation de Dispatcher avec Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) pour plus de détails)
+>Dans `disp_iis.ini`, définissez les éléments suivants :
+>(voir [installation de Dispatcher avec Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) pour plus de détails)
 >
-* `servervariables=1` (transmet des variables de serveur IIS comme en-têtes de requête à une instance distante)
-* `replaceauthorization=1` (remplace n’importe quel en-tête appelé « Authorization » autre que l’en-tête « De base » par son « De base » équivalent)
+>* `servervariables=1` (transmet des variables de serveur IIS comme en-têtes de requête à une instance distante)
+>* `replaceauthorization=1` (remplace n’importe quel en-tête appelé « Authorization » autre que l’en-tête « De base » par son « De base » équivalent)
 >
-Dans IIS :
+>Dans IIS :
 >
-* Désactivez **l’accès anonyme**.
+>* Désactivez **l’accès anonyme**.
 >
-* enable **Authentification Windows intégrée**
+>* enable **Authentification Windows intégrée**
 >
 
 Vous pouvez voir quel gestionnaire d’authentification est appliqué à n’importe quelle section de l’arborescence de contenu à l’aide de la variable **Authentificateur** de la console Felix, par exemple :
@@ -151,7 +153,7 @@ Vous pouvez également utiliser la commande curl suivante pour envoyer l’en-t�
 
 >[!NOTE]
 >
-Lors de l’utilisation du paramètre de requête dans un navigateur, vous ne voyez qu’une partie du HTML, sans CSS. Cela est dû au fait que toutes les requêtes du HTML sont effectuées sans le paramètre de requête .
+>Lors de l’utilisation du paramètre de requête dans un navigateur, vous ne voyez qu’une partie du HTML, sans CSS. Cela est dû au fait que toutes les requêtes du HTML sont effectuées sans le paramètre de requête .
 
 ## Suppression de liens AEM de déconnexion {#removing-aem-sign-out-links}
 

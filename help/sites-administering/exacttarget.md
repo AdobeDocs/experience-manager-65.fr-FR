@@ -7,16 +7,17 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 4183fe78-5055-4b77-8a54-55666e86a04e
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '460'
 ht-degree: 72%
 
 ---
 
 # Intégrer à ExactTarget{#integrating-with-exacttarget}
 
-L’intégration d’Adobe Experience Manager (AEM) à ExactTarget vous permet de gérer et d’envoyer des emails créés dans AEM par le biais d’ExactTarget. Il vous permet également d’utiliser les fonctionnalités de gestion des pistes d’ExactTarget au moyen d’AEM de formulaires sur les pages AEM.
+L’intégration de Adobe Experience Manager (AEM) à ExactTarget vous permet de gérer et d’envoyer des emails créés dans AEM par le biais d’ExactTarget. Il vous permet également d’utiliser les fonctionnalités de gestion des pistes d’ExactTarget au moyen d’AEM de formulaires sur les pages AEM.
 
 L’intégration offre les fonctionnalités suivantes :
 

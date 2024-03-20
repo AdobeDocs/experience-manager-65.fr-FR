@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '10791'
-ht-degree: 84%
+source-wordcount: '10800'
+ht-degree: 85%
 
 ---
 
@@ -75,7 +76,7 @@ Pour ajouter un point d’entrée EJB à un service, effectuez les tâches suiva
 
 **Inclure les fichiers de projet**
 
-Incluez les fichiers nécessaires dans votre projet de développement. Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
+Incluez les fichiers nécessaires dans votre projet de développement. Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -180,7 +181,7 @@ Pour ajouter un point d’entrée SOAP à un service, effectuez les tâches suiv
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -290,7 +291,7 @@ Pour ajouter un point d’entrée Watched Folder à un service, effectuez les t�
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -322,7 +323,7 @@ La liste suivante spécifie les valeurs de configuration définies lors de l’a
 * **URL** : indique l’emplacement du dossier surveillé. Dans un environnement organisé en grappe, ce paramètre doit pointer vers un dossier réseau partagé accessible à tous les ordinateurs de la grappe.
 * **Asynchrone** : identifie le type d’invocation comme étant asynchrone ou synchrone. Les processus provisoires et synchrones peuvent être appelés uniquement de façon synchrone. La valeur par défaut est true. Asynchrone est recommandé.
 * **cronExpression** : utilisé par quartz pour planifier l’interrogation du répertoire d’entrée.
-* **purgeDuration** : il s’agit d’un attribut obligatoire. Les fichiers et les sous-dossiers du dossier Résultats sont vidés lorsqu’ils sont plus anciens que cette valeur. Cette valeur est mesurée en jours. Grâce à ce paramètre, le dossier obtenu n’est jamais plein. Une valeur de -1 jour indique de ne jamais supprimer le dossier de résultats. La valeur par défaut est -1.
+* **purgeDuration** : il s’agit d’un attribut obligatoire. Les fichiers et les sous-dossiers du dossier Résultats sont vidés lorsqu’ils sont plus anciens que cette valeur. Cette valeur est mesurée en jours. Grâce à ce paramètre, le dossier obtenu n’est jamais plein. La valeur -1 jour indique de ne jamais supprimer le dossier de résultats. La valeur par défaut est -1.
 * **repeatInterval** : intervalle (en secondes) entre les analyses du dossier de contrôle d’entrée. A moins que le paramètre Ralentissement ne soit activé, cette valeur doit être supérieure à la durée du traitement d’une tâche moyenne, faute de quoi le système risque d’être surchargé. La valeur par défaut est 5.
 * **repeatCount** : nombre d’analyses du dossier ou du répertoire par un dossier de contrôle. La valeur -1 indique une analyse indéfinie. La valeur par défaut est -1.
 * **throttleOn** : limite le nombre de tâches du dossier de contrôle pouvant être traitées à un moment donné. La valeur batchSize (taille du lot) détermine le nombre maximal de tâches.
@@ -523,7 +524,7 @@ Pour ajouter un point d’entrée de courrier électronique à un service, effec
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -778,7 +779,7 @@ Pour supprimer un point d’entrée d’un service, effectuez les tâches suivan
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -880,7 +881,7 @@ Pour ajouter un point d’entrée TaskManager à un service, procédez comme sui
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -1001,7 +1002,7 @@ Pour modifier un point dʼentée, procédez comme suit :
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -1068,7 +1069,7 @@ Pour modifier un point dʼentrée à l’aide de l’API Java, procédez comme s
       * Valeur de chaîne spécifiant le nom de la nouvelle conception de formulaire. Par exemple, pour définir la valeur de configuration `url`, spécifiez `url`.
       * Valeur string qui spécifie la valeur de la valeur de configuration. Pour définir une valeur pour la valeur de configuration `url`, spécifiez l’emplacement du dossier de contrôle.
 
-   * Appelez la méthode `modifyEndpoint` de l’objet `EndpointRegistryClient` et transmettez l’objet `ModifyEndpointInfo`. 
+   * Appelez la méthode `modifyEndpoint` de l’objet `EndpointRegistryClient` et transmettez l’objet `ModifyEndpointInfo`.
 
 **Voir également**
 
@@ -1103,7 +1104,7 @@ Pour supprimer un point d’entrée d’un service, effectuez les tâches suivan
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -1195,7 +1196,7 @@ Pour récupérer les informations du connecteur de point d’entrée, procédez 
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar

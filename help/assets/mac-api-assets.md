@@ -3,12 +3,13 @@ title: « API HTTP [!DNL Assets]. »
 description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Developer
-feature: APIs,Assets HTTP API,Developer Tools
+feature: Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1775'
 ht-degree: 98%
 
 ---
@@ -66,7 +67,7 @@ Les dossiers sont comparables aux répertoires des systèmes de fichiers traditi
 
 Les dossiers **Liens** présentent trois liens :
 
-* `self` : lien vers lui-même.
+* `self`: lien vers lui-même.
 * `parent` : lien vers le dossier parent.
 * `thumbnail` : (facultatif) lien vers une miniature de dossier.
 

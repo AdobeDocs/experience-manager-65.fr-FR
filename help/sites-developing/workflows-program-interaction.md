@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2007'
-ht-degree: 66%
+source-wordcount: '1857'
+ht-degree: 63%
 
 ---
 
@@ -806,7 +807,7 @@ wfSession.complete(workItem, routes.get(0));
 
 ### Écoute des événements de workflow {#listening-for-workflow-events}
 
-Utilisez le framework d’événement OSGi pour écouter les événements définis par la classe [`com.adobe.granite.workflow.event.WorkflowEvent`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html). Cette classe propose également plusieurs méthodes utiles pour obtenir des informations sur le sujet de l’événement. La méthode `getWorkItem`, par exemple, renvoie l’objet `WorkItem` de l’élément de travail qui est impliqué dans l’événement.
+Utilisez la structure d’événements OSGi pour écouter les événements qui [`com.adobe.granite.workflow.event.WorkflowEvent`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html) définit la classe. Cette classe propose également plusieurs méthodes utiles pour obtenir des informations sur le sujet de l’événement. La méthode `getWorkItem`, par exemple, renvoie l’objet `WorkItem` de l’élément de travail qui est impliqué dans l’événement.
 
 L’exemple de code suivant définit un service qui écoute les événements de workflow et exécute les tâches selon le type d’événement.
 

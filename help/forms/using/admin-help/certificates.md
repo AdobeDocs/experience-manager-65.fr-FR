@@ -6,16 +6,17 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 1fe0e7b4-6109-4f7a-8858-8237a1c5c93b
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '634'
-ht-degree: 57%
+ht-degree: 65%
 
 ---
 
 # Gérer des certificats {#managing-certificates}
 
-Trust Store Management vous permet d’importer, de modifier et de supprimer des certificats de confiance sur le serveur pour la validation des signatures numériques et l’authentification de certificats. Vous pouvez importer et exporter un nombre illimité de certificats. Une fois un certificat importé, vous pouvez modifier les paramètres d’approbation et le type de Trust Store. Tenez compte des options suivantes lorsque vous combinez des types de Trust Store :
+Trust Store Management vous permet d’importer, de modifier et de supprimer des certificats de confiance sur le serveur pour valider des signatures numériques et l’authentification de certificats. Vous pouvez en importer et en exporter autant que vous le souhaitez. Une fois qu’un certificat a été importé, vous pouvez modifier les paramètres d’approbation et le type de Trust Store. Tenez compte des options suivantes lorsque vous combinez des types de Trust Store :
 
 * **Approbation de l’authentification de certificats avec l’autorité de certification :** pour la validation de CRL, sélectionnez également Approbation d’identité.
 * **Approbation de l’authentification de certificats avec l’ICA :** sélectionnez uniquement Approbation d’identité.. Un ICA ne doit pas être approuvé pour l’authentification de certificats. Si vous faites confiance à l’ICA pour l’authentification de certificats, l’ICA devient une autorité de certification pour la création de chemins. Si l’ICA est approuvé pour l’authentification de certificats et l’identité, le certificat du fournisseur de l’autorité de certification est ignoré car l’ICA devient l’autorité de certification.

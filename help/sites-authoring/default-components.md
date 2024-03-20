@@ -2,9 +2,10 @@
 title: Composants par défaut
 description: Adobe Experience Manager est fourni avec divers composants prêts à l’emploi qui fournissent des fonctionnalités complètes aux auteurs de sites web.
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '420'
 ht-degree: 71%
 
 ---

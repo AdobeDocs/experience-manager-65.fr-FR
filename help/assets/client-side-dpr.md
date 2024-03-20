@@ -3,18 +3,20 @@ title: Utilisation de l’imagerie dynamique avec rapport des pixels côté clie
 description: Découvrez comment utiliser le rapport de pixels d’appareil côté client avec l’imagerie dynamique dans Adobe Experience Manager as a Cloud Service avec Dynamic Media.
 role: Admin,User
 exl-id: e38f522a-242a-4ea9-a866-d8d129950831
-source-git-commit: c8682118f15132063073df5cdc2b576b6e62a0c8
-workflow-type: ht
-source-wordcount: '323'
+solution: Experience Manager, Experience Manager Assets
+feature: Smart Imaging
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '324'
 ht-degree: 100%
 
 ---
 
-# À propos de l’imagerie dynamique avec rapport des pixels de périphérique côté client (RPD) {#client-side-dpr}
+# À propos de l’imagerie dynamique avec rapport des pixels d’appareil côté client (RPD) {#client-side-dpr}
 
 La solution d’imagerie dynamique actuelle utilise des chaînes d’agent utilisateur pour déterminer le type d’appareil utilisé (ordinateur de bureau, tablette, mobile, etc.).
 
-Les fonctionnalités de détection de périphérique (RGPD basées sur des chaînes d’agent utilisateur) sont souvent inexactes, en particulier pour les périphériques Apple. En outre, chaque fois qu’un nouvel appareil est lancé, il doit être validé.
+Les fonctionnalités de détection d’appareil (RGPD basées sur des chaînes d’agent utilisateur) sont souvent inexactes, en particulier pour les appareils Apple. En outre, chaque fois qu’un nouvel appareil est lancé, il doit être validé.
 
 Le RGPD côté client vous donne des valeurs et fonctionne entièrement exacts pour n’importe quel appareil, qu’il s’agisse d’Apple ou de tout autre nouvel appareil qui a été lancé.
 
@@ -70,4 +72,3 @@ Les fichiers JavaScript suivants sont fournis à titre de référence uniquement
 >[!MORELIKETHIS]
 >
 >* [Imagerie dynamique](/help/assets/imaging-faq.md)
-

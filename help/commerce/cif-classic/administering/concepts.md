@@ -3,7 +3,8 @@ title: Concepts
 description: Découvrez les concepts généraux d’eCommerce avec Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '4439'
 ht-degree: 99%

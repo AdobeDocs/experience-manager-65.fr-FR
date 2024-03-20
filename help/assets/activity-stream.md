@@ -5,9 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: User, Admin
 exl-id: 28dc0aa5-f2be-4e27-b7d8-415569b7ecd4
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: ht
-source-wordcount: '215'
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '204'
 ht-degree: 100%
 
 ---
@@ -20,11 +21,11 @@ Les opérations suivantes sont consignées dans le flux d’activités :
 
 * Créer
 * Supprimer
-* Téléchargement (rendus compris)
+* Télécharger (y compris les rendus)
 * Publication
-* Annuler la publication
+* Dépublier
 * Approuver
-* Refuser
+* Rejeter
 * Déplacer
 
 Les journaux d’activité à afficher dans la chronologie sont récupérés à partir de l’emplacement `/var/audit/com.day.cq.dam/content/dam` dans CRX, où les fichiers journaux sont stockés. De plus, l’activité de la chronologie est consignée lorsque de nouvelles ressources sont chargées ou que des ressources existantes sont modifiées et archivées dans [!DNL Experience Manager] via [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) ou [l’application de bureau Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=fr).
@@ -43,4 +44,4 @@ La chronologie affiche le flux d’activités des opérations que vous effectuez
 
 >[!NOTE]
 >
->L’emplacement de stockage par défaut pour les tâches **[!UICONTROL Publier]** et **[!UICONTROL Annuler la publication]** est `/var/audit/com.day.cq.replication/content`. Pour les tâches **[!UICONTROL Déplacer]**, l’emplacement par défaut est `/var/audit/com.day.cq.wcm.core.page`.
+>L’emplacement de stockage par défaut pour les tâches **[!UICONTROL Publier]** et **[!UICONTROL Dépublier]** est `/var/audit/com.day.cq.replication/content`. Pour les tâches **[!UICONTROL Déplacer]**, l’emplacement par défaut est `/var/audit/com.day.cq.wcm.core.page`.

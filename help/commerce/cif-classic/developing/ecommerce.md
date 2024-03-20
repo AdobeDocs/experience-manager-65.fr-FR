@@ -2,7 +2,8 @@
 title: Couche d’intégration e-commerce avec une API
 description: La structure d’intégration vous permet d’extraire des données de produit dans AEM et de créer des composants AEM pour les fonctionnalités commerciales.
 exl-id: da63c576-34cd-40ce-81de-d7391a331364
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 87%

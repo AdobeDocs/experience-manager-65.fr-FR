@@ -1,19 +1,20 @@
 ---
 title: Fragments de contenu – considérations sur la suppression
-description: Examinez ces points importants avant de définir vos stratégies de suppression de fragments de contenu dans AEM. Les fragments de contenu forment un puissant outil de diffusion de contenu découplé. Les implications de leur suppression doivent être soigneusement examinées.
+description: Examinez ces points importants avant de définir vos politiques de suppression de fragments de contenu dans AEM. Les fragments de contenu forment un puissant outil de diffusion de contenu découplé. Les implications de leur suppression doivent être soigneusement examinées.
 feature: Content Fragments
 role: User
 exl-id: 6212457e-a171-4c33-8d19-54c26516e981
-source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
-workflow-type: ht
-source-wordcount: '509'
-ht-degree: 100%
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '510'
+ht-degree: 86%
 
 ---
 
 # Fragments de contenu – considérations sur la suppression {#content-fragments-delete-considerations}
 
-Examinez ces points importants avant de définir vos stratégies de suppression de fragments de contenu dans AEM. Les fragments de contenu forment un puissant outil de diffusion de contenu découplé. Les implications de leur suppression doivent être soigneusement examinées.
+Examinez ces points importants avant de définir vos politiques de suppression de fragments de contenu dans AEM. Les fragments de contenu forment un puissant outil de diffusion de contenu découplé. Les implications de leur suppression doivent être soigneusement examinées.
 
 ## Autorisations – Supprimer ou ne pas supprimer {#permissions-delete-or-not-delete}
 
@@ -26,7 +27,7 @@ En ce qui concerne les autorisations de suppression, les fragments de contenu do
    * **Cas d’utilisation** : un utilisateur qui a besoin de modifier/mettre à jour un fragment de contenu **et de supprimer un fragment entier**.
    * **Autorisations** : l’autorisation [Supprimer](/help/sites-administering/security.md#actions) peut être [attribuée à l’aide de la gestion des utilisateurs et des groupes](/help/sites-administering/security.md#managing-permissions).
 
-2. **Les multiples sous-entités qui constituent un fragment de contenu ; par exemple, les variantes, les sous-nœuds.**
+2. **Les multiples sous-entités qui constituent un fragment de contenu ; par exemple, les variations, les sous-nœuds.**
 
    Le fonctionnement de base de l’éditeur de fragment de contenu nécessite que ces sous-éléments transitoires puissent être supprimés. Par exemple, lors de la manipulation des variantes, mais également lors de la modification de métadonnées ou de la gestion du contenu associé.
 
@@ -35,11 +36,11 @@ En ce qui concerne les autorisations de suppression, les fragments de contenu do
 
 >[!NOTE]
 >
->Lorsqu’un utilisateur ne dispose d’aucune autorisation [Supprimer](/help/sites-administering/security.md#actions), l’éditeur de fragment de contenu fonctionne en mode *lecture seule*.
+>Lorsqu’un utilisateur n’a pas de [Supprimer](/help/sites-administering/security.md#actions) autorisations, l’éditeur de fragment de contenu fonctionne dans *lecture seule* mode .
 
 >[!NOTE]
 >
->Voir également [Contrôle des opérations de gestion des utilisateurs dans AEM](/help/sites-administering/audit-user-management-operations.md).
+>Voir aussi [Contrôle des opérations de gestion des utilisateurs dans AEM](/help/sites-administering/audit-user-management-operations.md).
 
 ## Autorisations requises pour la fonctionnalité d’éditeur uniquement {#permissions-required-for-editor-functionality-only}
 
@@ -49,11 +50,11 @@ Par exemple, lors de la manipulation des variantes, mais également lors de la m
 
 >[!NOTE]
 >
->Les autorisations de suppression, requises pour modifier/mettre à jour un fragment de contenu, sont incluses dans l’autorisation [Supprimer](/help/sites-administering/security.md#managing-permissions) affectée via la gestion des utilisateurs et/ou des groupes.
+>Les autorisations de suppression, requises pour modifier/mettre à jour un fragment de contenu, sont incluses dans l’autorisation Supprimer [affectée via la gestion des utilisateurs et/ou des groupes](/help/sites-administering/security.md#managing-permissions).
 
-Les autorisations nécessaires à la modification/mise à jour d’un fragment doivent être appliquées au nœud contenant le fragment de contenu ou à un nœud parent approprié (à n’importe quel niveau sous `/content/dam`/). Lorsqu’elles sont affectées à un tel nœud parent, les autorisations sont appliquées à tous les nœuds figurant dans cette branche.
+Les autorisations nécessaires à la modification/mise à jour d’un fragment doivent être appliquées au nœud contenant le fragment de contenu ou à un nœud parent approprié (à n’importe quel niveau sous `/content/dam`/). Lorsqu’elles sont affectées à ce noeud parent, les autorisations sont appliquées à tous les noeuds de cette branche.
 
-Par exemple, un dossier allant contenir tous les fragments de contenu, tels que :
+Par exemple, un dossier qui contiendra tous les fragments de contenu, comme :
 
 * `/content/dam/contentfragments`
 
@@ -61,13 +62,13 @@ Par exemple, un dossier allant contenir tous les fragments de contenu, tels que�
 >
 >La définition des autorisations sur `/content/dam` est également possible, car tous les fragments de contenu y sont stockés.
 >
->Toutefois, cette action applique les mêmes autorisations de suppression à *tous* les autres types de ressources également.
+>Toutefois, cette action applique les mêmes autorisations de suppression à *tous* les autres types de ressources.
 
-Les conditions requises pour autoriser un utilisateur et/ou un groupe spécifique à modifier/mettre à jour un fragment de contenu sont les suivantes :
+Les autorisations nécessaires pour permettre à une personne utilisatrice et/ou à un groupe spécifique de modifier/mettre à jour un fragment de contenu sont les suivantes :
 
 >[!NOTE]
 >
->Cette liste répertorie tous les privilèges requis et non simplement les privilèges de suppression.
+>Cette liste répertorie tous les privilèges requis, pas uniquement les privilèges de suppression.
 
 * Pour les nœuds ou dossiers de fragments de contenu :
 

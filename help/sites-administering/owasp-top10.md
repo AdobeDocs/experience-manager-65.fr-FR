@@ -7,23 +7,24 @@ topic-tags: Security
 content-type: reference
 exl-id: 8b2a2f1d-8286-4ba5-8fe2-627509c72a45
 feature: Security
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 44%
+source-wordcount: '481'
+ht-degree: 45%
 
 ---
 
 # Les 10 plus grands risques d’OWASP{#owasp-top}
 
-Le [Ouvrir le projet Web Application Security](https://owasp.org/) (OWASP) conserve une liste de ce qu’ils considèrent comme la variable [Les dix premiers risques de sécurité des applications web](https://owasp.org/www-project-top-ten/).
+La variable [Ouvrir le projet Web Application Security](https://owasp.org/) (OWASP) conserve une liste de ce qu’ils considèrent comme la variable [Les dix premiers risques de sécurité des applications web](https://owasp.org/www-project-top-ten/).
 
 Ils sont répertoriés ci-dessous, ainsi qu’une explication de la façon dont CRX les traite.
 
 ## 1. Injection {#injection}
 
 * SQL -Empêché par défaut : La configuration de référentiel par défaut ne comprend ni ne requiert de base de données traditionnelle et toutes les données sont stockées dans le référentiel de contenu. Tous les accès sont limités aux utilisateurs authentifiés et ne peuvent avoir lieu que via l’API JCR. SQL est pris en charge pour les requêtes de recherche uniquement (SELECT). En outre, SQL offre une prise en charge de la liaison de valeurs.
-* LDAP : l’injection LDAP n’est pas possible, car le module d’authentification filtre l’entrée et effectue l’importation de l’utilisateur à l’aide de la méthode bind.
+* LDAP : l’injection LDAP n’est pas possible, car le module d’authentification filtre l’entrée et effectue l’importation de l’utilisateur à l’aide de la méthode de liaison.
 * Système d’exploitation : aucune exécution de shell n’est effectuée dans l’application.
 
 ## 2. Script intersite (XSS) {#cross-site-scripting-xss}

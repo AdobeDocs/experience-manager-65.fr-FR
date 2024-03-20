@@ -7,7 +7,8 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2939'
 ht-degree: 97%
@@ -427,7 +428,7 @@ Vous trouverez, dans l’exemple ci-dessous, les recommandations sur l’archite
 
 ### Paramètres TarMK recommandés {#tarmk-settings-guideline}
 
-Pour obtenir de bonnes performances, il est recommandé de définir les paramètres comme suit. Pour obtenir des instructions sur la modification des paramètres, [reportez-vous à cette page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+Pour obtenir de bonnes performances, il est recommandé de définir les paramètres comme suit. Pour obtenir des instructions sur la modification des paramètres, [reportez-vous à cette page](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-performance.html?lang=fr).
 
 <table>
  <tbody>
@@ -537,7 +538,7 @@ Pour tirer le meilleur parti des performances de MongoMK, commencez par l’artc
 
 ### Paramètres MongoMK recommandés {#mongomk-settings-guidelines}
 
-Pour obtenir de bonnes performances, il est recommandé de définir les paramètres comme suit. Pour obtenir des instructions sur la modification des paramètres, [reportez-vous à cette page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+Pour obtenir de bonnes performances, il est recommandé de définir les paramètres comme suit. Pour obtenir des instructions sur la modification des paramètres, [reportez-vous à cette page](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-performance.html?lang=fr).
 
 <table>
  <tbody>

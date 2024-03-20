@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: cd7dbdac-dc76-4a1f-b850-0a9f47ae08de
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '696'
-ht-degree: 44%
+ht-degree: 45%
 
 ---
 
@@ -76,7 +77,7 @@ Pour créer un modèle de canal web, effectuez les étapes suivantes : 
    1. Sélectionner **[!UICONTROL Outils]** ![outils](assets/tools.png) > **[!UICONTROL Modèles]**.
    1. Accédez au modèle approprié, sélectionnez-le, puis sélectionnez **[!UICONTROL Activer]** et dans le message d’alerte, sélectionnez **[!UICONTROL Activer]**.
 
-      Le modèle est activé et son état s’affiche comme Activé. Vous pouvez maintenant créer une communication interactive dans laquelle vous pouvez utiliser le modèle de canal web nouvellement créé.
+      Le modèle est activé et son statut s’affiche comme Activé. Vous pouvez maintenant créer une communication interactive dans laquelle vous pouvez utiliser le modèle de canal web nouvellement créé.
 
 ### Canal d’impression comme gabarit pour canal web {#print-channel-as-master-for-web-channel}
 

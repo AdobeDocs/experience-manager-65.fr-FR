@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2478'
-ht-degree: 78%
+source-wordcount: '2455'
+ht-degree: 79%
 
 ---
 
@@ -211,7 +212,7 @@ Pour générer un formulaire PDF interactif à l’aide de l’API Forms (Java),
 
 1. Effectuer le rendu d’un formulaire PDF interactif
 
-   Appeler la variable `FormsServiceClient` de `renderPDFForm` et transmettez les valeurs suivantes :
+   Appelez la méthode `renderPDFForm` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
    * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire qui fait partie d’une application Forms, veillez à spécifier le chemin dʼaccès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un objet `com.adobe.idp.Document`.
@@ -227,7 +228,7 @@ Pour générer un formulaire PDF interactif à l’aide de l’API Forms (Java),
    * Accédez au type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
    * Définissez la variable `javax.servlet.http.HttpServletResponse` type de contenu de l’objet en appelant ses `setContentType` et transmettre le type de contenu de la méthode `com.adobe.idp.Document` .
    * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données de formulaire dans le navigateur Web client en appelant la fonction `javax.servlet.http.HttpServletResponse` de `getOutputStream` .
-   * Créez un `java.io.InputStream` en appelant la méthode `com.adobe.idp.Document` de `getInputStream` .
+   * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
    * Créez un tableau d’octets et renseignez-le avec le flux de données de formulaire en appelant la fonction `InputStream` de `read` et transmission du tableau d’octets en tant qu’argument.
    * Appeler la variable `javax.servlet.ServletOutputStream` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
@@ -266,7 +267,7 @@ Pour générer un formulaire PDF interactif à l’aide de l’API Forms (servic
 
 1. Effectuer le rendu d’un formulaire PDF interactif
 
-   Appeler la variable `FormsService` de `renderPDFForm` et transmettez les valeurs suivantes :
+   Appelez la méthode `renderPDFForm` de l’objet `FormsService` et transmettez les valeurs suivantes :
 
    * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire qui fait partie d’une application Forms, veillez à spécifier le chemin dʼaccès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Un objet `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez `null`.

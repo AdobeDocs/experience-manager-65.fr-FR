@@ -8,32 +8,33 @@ content-type: reference
 role: User, Admin,Developer
 exl-id: b0ac587b-8592-4d37-9ce0-98a0859c367f
 feature: Configuration,Rulesets
-source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '714'
+ht-degree: 97%
 
 ---
 
 # Utilisation d’ensembles de règles pour transformer des URL {#using-rulesets-to-transform-urls}
 
-Vous pouvez déployer des ensembles de règles dans Dynamic Media pour transformer les URL. Les ensembles de règles sont des ensembles d’instructions écrites dans un langage de scripts (comme JavaScript) qui évaluent des données XML et déclenchent certaines actions si ces données remplissent des conditions spécifiques. Chaque règle définit au moins une condition et une action. Une règle évalue si les données XML remplissent les conditions et, si tel est le cas, déclenche les actions appropriées. Les exemples d’ensembles de règles comprennent les éléments suivants :
+Vous pouvez déployer des ensembles de règles dans Dynamic Media pour transformer les URL. Les ensembles de règles sont des ensembles d’instructions écrites dans un langage de scripts (comme JavaScript) qui évaluent des données XML et déclenchent certaines actions si ces données remplissent des conditions spécifiques. Chaque règle définit au moins une condition et une action. Une règle évalue si les données XML remplissent les conditions et, si tel est le cas, déclenche les actions appropriées. Voici quelques exemples d’ensembles de règles :
 
 * Ajout d’un suffixe de type MIME. De nombreux services et sites web ont besoin de suffixes d’image, comme l’ajout de `.jpg` à une URL.
 * Création d’un chemin de dossier vers l’URL pour le SEO (Search Engine Optimization, ou optimisation du moteur de recherche).
 
-   Consultez la section [Comment Adobe Dynamic Media Classic prend en charge le SEO](/help/assets/assets/s7_seo.pdf).
+  Consultez la section [Comment Adobe Dynamic Media Classic prend en charge le SEO](/help/assets/assets/s7_seo.pdf).
 
 * Ajout de métadonnées vers l’URL pour le SEO (Search Engine Optimization ou optimisation du moteur de recherche)
 
-   Consultez la section [Comment Adobe Dynamic Media Classic prend en charge le SEO](/help/assets/assets/s7_seo.pdf).
+  Consultez la section [Comment Adobe Dynamic Media Classic prend en charge le SEO](/help/assets/assets/s7_seo.pdf).
 
-* Définition de la mise en page du contenu pour déclencher le téléchargement.
+* Définition de la disposition du contenu pour déclencher un téléchargement.
 * Simplifiez le service d’images pour la création de modèles d’URL pour la personnalisation. Par exemple, transformez `rgb{XX,YY,ZZ}` en `\redXX\greenYY\blueZZ` qui est conforme RTF.
 
 * Effectuez la demande de certains caractères à coder tels que `$`, `{` et `}`, et certains caractères à décoder vers ImageServer. Par exemple, Facebook ne fonctionne pas bien avec les URL contenant des caractères spéciaux.
 
-   Voir [Suppression des caractères spéciaux des URL](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
+  Voir [Suppression des caractères spéciaux des URL](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
 Dans le cadre de Dynamic Media, les sites web qui utilisent un système XML pour gérer les informations de ressources peuvent charger des fichiers XML sur Dynamic Media. Vous pouvez désigner l’un de ces fichiers comme fichier d’ensemble de règles de prétraitement pour le service des ressources Dynamic Media. Ce fichier restructure le format du protocole URL standard pour répondre à la logique métier des systèmes intégrés avec Dynamic Media. Vous spécifiez un fichier XML pour servir de chemin d’accès au fichier des définitions d’ensembles de règles.
 
@@ -79,7 +80,7 @@ Consultez également la section [Utilisation d’une image « ressource » au 
 1. Sur la page du **[!UICONTROL Publication du serveur d’images]**, sous le groupe **[!UICONTROL Gestion de catalogue]**, localisez le **[!UICONTROL Chemin de fichier de définitions de règles]**, puis sélectionnez **[!UICONTROL Sélectionner]**.
 1. Sur la page **[!UICONTROL Sélectionner le fichier de définitions de règles (XML)]**, accédez à votre fichier d’ensemble de règles, puis dans le coin inférieur droit de la page, sélectionnez **[!UICONTROL Sélectionner]**.
 1. Dans l’angle inférieur droit de la page Configuration, sélectionnez **[!UICONTROL Fermer]**.
-1. Exécutez une tâche de Publication de serveur d’images.
+1. Exécutez une tâche de publication Image Server.
 
    Les conditions d’ensemble de règles sont appliquées aux demandes aux serveurs d’images Dynamic Media en ligne.
 

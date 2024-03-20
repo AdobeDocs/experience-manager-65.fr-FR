@@ -6,10 +6,11 @@ content-type: reference
 topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: d555422e-dc97-4d45-9525-4299d22315e2
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 43%
+source-wordcount: '519'
+ht-degree: 44%
 
 ---
 
@@ -93,7 +94,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
 | **Emplacement précédent** | `/etc/cloudservices/echosign` |
 |---|---|
 | **Nouvel emplacement** | `/conf/<tenant>/settings/cloudconfigs/echosign` |
-| **Conseils de restructuration** | Le [Migration différée du contenu](/help/sites-deploying/lazy-content-migration.md) à déclencher à partir de l’interface utilisateur de migration de Forms. |
+| **Conseils de restructuration** | La variable [Migration différée du contenu](/help/sites-deploying/lazy-content-migration.md) à déclencher à partir de l’interface utilisateur de migration de Forms. |
 | **Remarques** | S/O |
 
 ### Configurations du service cloud Recaptcha {#recaptcha-cloud-service-configurations}
@@ -101,7 +102,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
 | **Emplacement précédent** | `/etc/cloudservices/recaptcha` |
 |---|---|
 | **Nouvel emplacement** | `/conf/<tenant>/settings/cloudconfigs/recaptcha` |
-| **Conseils de restructuration** | Le [Migration différée du contenu](/help/sites-deploying/lazy-content-migration.md) à déclencher à partir de l’interface utilisateur de migration de Forms. |
+| **Conseils de restructuration** | La variable [Migration différée du contenu](/help/sites-deploying/lazy-content-migration.md) à déclencher à partir de l’interface utilisateur de migration de Forms. |
 | **Remarques** | S/O |
 
 ### Configurations du service cloud Typekit {#typekit-cloud-service-configurations}
@@ -109,7 +110,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
 | **Emplacement précédent** | `/etc/cloudservices/typekit` |
 |---|---|
 | **Nouvel emplacement** | `/conf/<tenant>/settings/cloudconfigs/typekit` |
-| **Conseils de restructuration** | Le [Migration différée du contenu](/help/sites-deploying/lazy-content-migration.md) à déclencher à partir de l’interface utilisateur de migration de Forms. |
+| **Conseils de restructuration** | La variable [Migration différée du contenu](/help/sites-deploying/lazy-content-migration.md) à déclencher à partir de l’interface utilisateur de migration de Forms. |
 | **Remarques** | S/O |
 
 ### Divers {#misc-1}
@@ -117,7 +118,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
 | **Emplacement précédent** | `/etc/cloudservices/fdm` |
 |---|---|
 | **Nouvel emplacement** | `/conf/<tenant>/settings/cloudconfigs/fdm` |
-| **Conseils de restructuration** | Le [Migration différée du contenu](/help/sites-deploying/lazy-content-migration.md) à déclencher à partir de l’interface utilisateur de migration de Forms. |
+| **Conseils de restructuration** | La variable [Migration différée du contenu](/help/sites-deploying/lazy-content-migration.md) à déclencher à partir de l’interface utilisateur de migration de Forms. |
 | **Remarques** | S/O |
 
 | **Emplacement précédent** | `/etc/designs/fd/fp` |

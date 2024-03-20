@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '15462'
-ht-degree: 82%
+source-wordcount: '15394'
+ht-degree: 85%
 
 ---
 
@@ -243,7 +244,7 @@ Créez une politique à l’aide de l’API Document Security (Java) :
 
 1. Enregistrez la politique.
 
-   * Créez un `PolicyManager` en appelant la méthode `DocumentSecurityClient` de `getPolicyManager` .
+   * Créez un objet `PolicyManager` en appelant la méthode `getPolicyManager` de l’objet `DocumentSecurityClient`.
    * Enregistrez la stratégie en appelant la méthode `PolicyManager` de `registerPolicy` et transmission des valeurs suivantes :
 
       * Objet `Policy` représentant la politique à enregistrer.
@@ -279,7 +280,7 @@ Créez une politique à l’aide de l’API Document Security (Web Service) :
    * Créez un objet `DocumentSecurityServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `DocumentSecurityServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `RightsManagementServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
@@ -384,7 +385,7 @@ Modifiez une politique existante à l’aide de l’API Document Security (Java)
 
 1. Récupérez une politique existante.
 
-   * Créez un `PolicyManager` en appelant la méthode `RightsManagementClient` de `getPolicyManager` .
+   * Créez un objet `PolicyManager` en appelant la méthode `getPolicyManager` de l’objet `RightsManagementClient`.
    * Créez un `Policy` qui représente la stratégie à mettre à jour en appelant la fonction `PolicyManager` de `getPolicy` et transmission des valeurs suivantes&quot;
 
       * Valeur de chaîne représentant le nom du jeu de politiques auquel appartient la politique. Vous pouvez indiquer `null`, ce qui entraîne l’utilisation du jeu de politiques `MyPolicies`.
@@ -419,7 +420,7 @@ Modifiez une politique existante à l’aide de l’API Document Security (Web S
    * Créez un objet `RightsManagementServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `RightsManagementServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `RightsManagementServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
@@ -493,7 +494,7 @@ Supprimez une politique à l’aide de l’API Document Security (Java) :
 
 1. Supprimez la politique.
 
-   * Créez un `PolicyManager` en appelant la méthode `RightsManagementClient` de `getPolicyManager` .
+   * Créez un objet `PolicyManager` en appelant la méthode `getPolicyManager` de l’objet `RightsManagementClient`.
    * Supprimez la stratégie en appelant la méthode `PolicyManager` de `deletePolicy` et transmission des valeurs suivantes :
 
       * Une valeur de chaîne qui spécifie le nom du jeu de politiques auquel appartient la politique. Vous pouvez indiquer `null` qui entraîne le jeu de politiques `MyPolicies` utilisé.
@@ -522,7 +523,7 @@ Supprimez une politique à l’aide de l’API Document Security (service web) 
    * Créez un objet `RightsManagementServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `RightsManagementServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `RightsManagementServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
@@ -615,7 +616,7 @@ Appliquez une politique à un document PDF à l’aide de l’API Document Secu
 
 1. Appliquez une politique existante au document PDF.
 
-   * Créez un `DocumentManager` en appelant la méthode `RightsManagementClient` de `getDocumentManager` .
+   * Créez un objet `DocumentManager` en appelant la méthode `getDocumentManager` de l’objet `RightsManagementClient`.
    * Appliquez une stratégie au document du PDF en appelant la méthode `DocumentManager` de `protectDocument` et transmission des valeurs suivantes :
 
       * L’objet `com.adobe.idp.Document` contenant le document PDF auquel la politique est appliquée.
@@ -664,7 +665,7 @@ Pour appliquer une politique à un document PDF à l’aide de l’API Document�
    * Créez un objet `RightsManagementServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `RightsManagementServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne indiquant le WSDL au service Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `RightsManagementServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
@@ -678,7 +679,7 @@ Pour appliquer une politique à un document PDF à l’aide de l’API Document�
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF auquel une politique est appliquée.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF et son mode d’ouverture.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Déterminez la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` . Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Appliquez une politique existante au document PDF.
@@ -701,9 +702,9 @@ Pour appliquer une politique à un document PDF à l’aide de l’API Document�
 1. Enregistrez le formulaire PDF.
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF protégé par une politique.
-   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` renvoyé par la méthode `protectDocument`. Renseignez le tableau d’octets en obtenant la valeur de la variable `BLOB` de `MTOM` membre de données.
+   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` renvoyé par la méthode `protectDocument`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Ecrivez le contenu du tableau d’octets dans un fichier de PDF en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
+   * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Exemples de code**
 
@@ -778,7 +779,7 @@ Pour supprimer une politique d’un document PDF protégé par une politique à 
 
 1. Supprimez la politique du document PDF.
 
-   * Créez un `DocumentManager` en appelant la méthode `DocumentSecurityClient` de `getDocumentManager` .
+   * Créez un objet `DocumentManager` en appelant la méthode `getDocumentManager` de l’objet `DocumentSecurityClient`.
    * Supprimez une stratégie du document du PDF en appelant la méthode `DocumentManager` de `removeSecurity` et transmission de la méthode `com.adobe.idp.Document` contenant le document de PDF protégé par une stratégie. Cette méthode renvoie un objet `com.adobe.idp.Document` contenant un document PDF non sécurisé.
 
 1. Enregistrez le document PDF non sécurisé.
@@ -809,7 +810,7 @@ Pour supprimer une politique d’un document PDF protégé par une politique à 
    * Créez un objet `DocumentSecurityServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `DocumentSecurityServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `DocumentSecurityServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
@@ -822,8 +823,8 @@ Pour supprimer une politique d’un document PDF protégé par une politique à 
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le document PDF protégé par une politique à partir duquel la politique est supprimée.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Supprimez la politique du document PDF.
@@ -833,7 +834,7 @@ Pour supprimer une politique d’un document PDF protégé par une politique à 
 1. Enregistrez le document PDF non sécurisé.
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF non sécurisé.
-   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` renvoyé par la méthode `removePolicySecurity`. Renseignez le tableau d’octets en obtenant la valeur de la variable `BLOB` de `MTOM` champ .
+   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` renvoyé par la méthode `removePolicySecurity`. Renseignez le tableau d’octets en obtenant la valeur du champ `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
 
 **Exemples de code**
@@ -920,9 +921,9 @@ Révoquez l’accès à un document PDF protégé par une politique à l’aide 
 
 1. Révoquer le document protégé par une politique
 
-   * Créez un `DocumentManager` en appelant la méthode `DocumentSecurityClient` de `getDocumentManager` .
+   * Créez un objet `DocumentManager` en appelant la méthode `getDocumentManager` de l’objet `DocumentSecurityClient`.
    * Récupérez la valeur de l’identifiant de licence du document protégé par une stratégie en appelant la fonction `DocumentManager` de `getLicenseId` . Transmettez l’objet `com.adobe.idp.Document` représentant le document protégé par une politique. Cette méthode renvoie une valeur string qui représente la valeur de l’identifiant de licence.
-   * Créez un `LicenseManager` en appelant la méthode `DocumentSecurityClient` de `getLicenseManager` .
+   * Créez un objet `LicenseManager` en appelant la méthode `getLicenseManager` de l’objet `DocumentSecurityClient`.
    * Révoquez le document protégé par une stratégie en appelant la fonction `LicenseManager` de `revokeLicense` et transmission des valeurs suivantes :
 
       * Une valeur string qui spécifie la valeur d’identifiant de licence du document protégé par une stratégie (spécifiez la valeur renvoyée par la propriété `DocumentManager` de `getLicenseId` ).
@@ -952,7 +953,7 @@ Révoquez l’accès à un document PDF protégé par une politique à l’aide 
    * Créez un objet `DocumentSecurityServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `DocumentSecurityServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `DocumentSecurityServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
@@ -965,8 +966,8 @@ Révoquez l’accès à un document PDF protégé par une politique à l’aide 
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF protégé par une politique révoqué.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF protégé par une politique à révoquer et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Révoquer le document protégé par une politique
@@ -1053,12 +1054,12 @@ Rétablissez l’accès à un document révoqué à l’aide de l’API Document
 
    * Créez un objet `java.io.FileInputStream` qui représente le document PDF révoqué en utilisant son constructeur et en transmettant une valeur string spécifiant l’emplacement du document PDF.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
-   * Créez un `DocumentManager` en appelant la méthode `DocumentSecurityClient` de `getDocumentManager` .
+   * Créez un objet `DocumentManager` en appelant la méthode `getDocumentManager` de l’objet `DocumentSecurityClient`.
    * Récupérez la valeur de l’identifiant de licence du document révoqué en appelant la fonction `DocumentManager` de `getLicenseId` et transmission de la méthode `com.adobe.idp.Document` qui représente le document révoqué. Cette méthode renvoie une valeur string qui représente l’identifiant de licence.
 
 1. Rétablissez l’accès au document PDF révoqué.
 
-   * Créez un `LicenseManager` en appelant la méthode `DocumentSecurityClient` de `getLicenseManager` .
+   * Créez un objet `LicenseManager` en appelant la méthode `getLicenseManager` de l’objet `DocumentSecurityClient`.
    * Rétablissez l’accès au document du PDF révoqué en appelant la méthode `LicenseManager` de `unrevokeLicense` et transmission de la valeur d’identifiant de licence du document révoqué.
 
 **Exemples de code**
@@ -1084,7 +1085,7 @@ Rétablissez l’accès à un document révoqué à l’aide de l’API Document
    * Créez un objet `DocumentSecurityServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `DocumentSecurityServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `DocumentSecurityServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
@@ -1097,8 +1098,8 @@ Rétablissez l’accès à un document révoqué à l’aide de l’API Document
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF révoqué auquel l’accès est rétabli.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur string qui représente l’emplacement du document PDF révoqué et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Rétablissez l’accès au document PDF révoqué.
@@ -1188,7 +1189,7 @@ Pour inspecter un document PDF protégé par une politique à l’aide de l’AP
 
 1. Inspectez le document.
 
-   * Créez un `DocumentManager` en appelant la méthode `RightsManagementClient` de `getDocumentManager` .
+   * Créez un objet `DocumentManager` en appelant la méthode `getDocumentManager` de l’objet `RightsManagementClient`.
    * Inspect du document protégé par une stratégie en appelant la méthode `LicenseManager` de `inspectDocument` . Transmettez l’objet `com.adobe.idp.Document` contenant le document PDF protégé par une politique. Cette méthode renvoie un objet `RMInspectResult` contenant des informations sur le document protégé par une politique.
 
 1. Obtenez des informations sur le document protégé par une politique.
@@ -1218,7 +1219,7 @@ Pour inspecter un document PDF protégé par une politique à l’aide de l’AP
    * Créez un objet `RightsManagementServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `RightsManagementServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `RightsManagementServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
@@ -1231,8 +1232,8 @@ Pour inspecter un document PDF protégé par une politique à l’aide de l’AP
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF à inspecter.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur de chaîne qui représente l’emplacement du document PDF et son mode d’ouverture.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` . Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Inspectez le document.
@@ -1438,7 +1439,7 @@ Créez un filigrane à l’aide de l’API Document Security (service Web) :
    * Créez un objet `RightsManagementServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `RightsManagementServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `RightsManagementServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
@@ -1585,7 +1586,7 @@ Modifiez un filigrane à l’aide de l’API de Document Security (Web Service)�
    * Créez un objet `DocumentSecurityServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `RightsManagementServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `DocumentSecurityServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
@@ -1713,7 +1714,7 @@ Pour rechercher des événements à l’aide de l’API Rights Management (servi
    * Créez un objet `DocumentSecurityServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `DocumentSecurityServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `DocumentSecurityServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
@@ -2015,7 +2016,7 @@ Appliquez une politique à un document Word à l’aide de l’API Document Secu
 
 1. Appliquez une politique existante au document Word.
 
-   * Créez un `DocumentManager` en appelant la méthode `DocumentSecurityClient` de `getDocumentManager` .
+   * Créez un objet `DocumentManager` en appelant la méthode `getDocumentManager` de l’objet `DocumentSecurityClient`.
    * Appliquez une stratégie au document Word en appelant la méthode `DocumentManager` de `protectDocument` et transmission des valeurs suivantes :
 
       * Objet `com.adobe.idp.Document` contenant le document Word auquel s’applique la politique.
@@ -2057,7 +2058,7 @@ Appliquez une politique à un document Word à l’aide de l’API Document Secu
    * Créez un objet `DocumentSecurityServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `DocumentSecurityServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `DocumentSecurityServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
@@ -2071,7 +2072,7 @@ Appliquez une politique à un document Word à l’aide de l’API Document Secu
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document Word auquel une politique est appliquée.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document Word et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Déterminez la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` . Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Appliquez une politique existante au document Word.
@@ -2094,7 +2095,7 @@ Appliquez une politique à un document Word à l’aide de l’API Document Secu
 1. Enregistrez le document Word.
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document Word protégé par une politique.
-   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` renvoyé par la méthode `protectDocument`. Renseignez le tableau d’octets en obtenant la valeur de la variable `BLOB` de `MTOM` membre de données.
+   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` renvoyé par la méthode `protectDocument`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
    * Ecrivez le contenu du tableau d’octets dans un fichier Word en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
 
@@ -2170,7 +2171,7 @@ Pour supprimer une politique d’un document Word protégé par une politique à
 
 1. Supprimer la politique du document Word
 
-   * Créez un `DocumentManager` en appelant la méthode `RightsManagementClient` de `getDocumentManager` .
+   * Créez un objet `DocumentManager` en appelant la méthode `getDocumentManager` de l’objet `RightsManagementClient`.
    * Supprimez une stratégie du document Word en appelant la méthode `DocumentManager` de `removeSecurity` et transmission de la méthode `com.adobe.idp.Document` contenant le document Word protégé par une stratégie. Cette méthode renvoie un objet `com.adobe.idp.Document` qui contient un document Word non sécurisé.
 
 1. Enregistrer le document Word non sécurisé
@@ -2201,7 +2202,7 @@ Pour supprimer une politique d’un document Word protégé par une politique en
    * Créez un objet `RightsManagementServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `RightsManagementServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `RightsManagementServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
@@ -2214,8 +2215,8 @@ Pour supprimer une politique d’un document Word protégé par une politique en
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` est utilisé pour enregistrer le document Word protégé par une politique et dont la politique est supprimée.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du fichier Word et son mode d’ouverture.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant le contenu du tableau d’octets à son champ `MTOM`.
 
 1. Supprimer la politique du document Word
@@ -2225,7 +2226,7 @@ Pour supprimer une politique d’un document Word protégé par une politique en
 1. Enregistrer le document Word non sécurisé
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier Word non protégé.
-   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` renvoyé par la méthode `removePolicySecurity`. Renseignez le tableau d’octets en obtenant la valeur de la variable `BLOB` de `MTOM` champ .
+   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` renvoyé par la méthode `removePolicySecurity`. Renseignez le tableau d’octets en obtenant la valeur du champ `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
 
 **Exemples de code**

@@ -2,7 +2,8 @@
 title: Modification d’un SPA externe dans Adobe Experience Manager
 description: Ce document décrit les étapes recommandées pour charger un SPA autonome vers une instance Adobe Experience Manager, ajouter des sections de contenu modifiables et activer la création.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2391'
 ht-degree: 86%

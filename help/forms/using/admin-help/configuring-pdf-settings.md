@@ -7,10 +7,11 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '7403'
-ht-degree: 34%
+ht-degree: 36%
 
 ---
 
@@ -230,7 +231,7 @@ Déterminez également si les utilisateurs doivent agrandir une page. Par exempl
 
 >[!NOTE]
 >
->Le rééchantillonnage d’images monochromes peut avoir des résultats inattendus, comme l’affichage d’aucune image. Si ce problème se produit, désactivez le rééchantillonnage et convertissez à nouveau le fichier. Ce problème est plus susceptible de se produire avec un sous-échantillonnage et moins susceptible de se produire avec un sous-échantillonnage bicubique.
+>Le rééchantillonnage d’images monochromes peut avoir des effets inattendus, comme l’affichage d’aucune image. Si ce problème se produit, désactivez le rééchantillonnage et convertissez à nouveau le fichier. Ce problème est plus susceptible de se produire avec un sous-échantillonnage et moins susceptible de se produire avec un sous-échantillonnage bicubique.
 
 Ce tableau présente les types d’imprimantes et leur résolution mesurée en ppp, leur trame par défaut mesurée en lignes par pouce (lpi) et une résolution de rééchantillonnage des images mesurées en pixels par pouce (ppp). Par exemple, pour imprimer sur une imprimante laser de 600 dpi, saisissez 170 pour que la résolution rééchantillonne les images à l’adresse .
 
@@ -238,27 +239,27 @@ Ce tableau présente les types d’imprimantes et leur résolution mesurée en p
  <tbody>
   <tr>
    <th><p>Résolution de l’imprimante</p> </th>
-   <th><p>Écran de ligne par défaut</p> </th>
-   <th><p>Résolution de l’image</p> </th>
+   <th><p>Lignage de trame par défaut</p> </th>
+   <th><p>Résolution d’image</p> </th>
   </tr>
   <tr>
-   <td><p>300 dpi (imprimante laser)</p> </td>
-   <td><p>60 lpi</p> </td>
+   <td><p>300 dpi (imprimante laser)</p> </td>
+   <td><p>60 lpi</p> </td>
    <td><p>120 ppp</p> </td>
   </tr>
   <tr>
-   <td><p>600 dpi (imprimante laser)</p> </td>
-   <td><p>85 lpi</p> </td>
+   <td><p>600 dpi (imprimante laser)</p> </td>
+   <td><p>85 lpi</p> </td>
    <td><p>170 ppp</p> </td>
   </tr>
   <tr>
-   <td><p>1 200 dpi (imageuse d’images)</p> </td>
-   <td><p>120 lpi</p> </td>
+   <td><p>1 200 dpi (imageuse film)</p> </td>
+   <td><p>120 lpi</p> </td>
    <td><p>240 ppp</p> </td>
   </tr>
   <tr>
-   <td><p>2 400 dpi (imageuse d’images)</p> </td>
-   <td><p>150 lpi</p> </td>
+   <td><p>2 400 dpi (imageuse film)</p> </td>
+   <td><p>150 lpi</p> </td>
    <td><p>300 ppp</p> </td>
   </tr>
  </tbody>

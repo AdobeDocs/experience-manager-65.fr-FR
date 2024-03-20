@@ -8,10 +8,11 @@ topic-tags: content
 content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3565'
-ht-degree: 91%
+ht-degree: 94%
 
 ---
 
@@ -30,7 +31,7 @@ Un package contient également les méta-informations du coffre, notamment les d
 
 >[!NOTE]
 >
->Les packages représentent la version actuelle du contenu au moment où le package est créé. Elles n’incluent aucune version précédente du contenu qu’AEM conserve dans le référentiel.
+>Les packages représentent la version actuelle du contenu au moment où le package est créé. Ils n’incluent aucune version précédente du contenu que AEM conserve dans le référentiel.
 
 ## Gestionnaire de packages {#package-manager}
 
@@ -61,7 +62,7 @@ Vous pouvez accéder au gestionnaire de packages de trois façons :
 
 Le gestionnaire de packages est divisé en quatre zones fonctionnelles principales :
 
-* **Panneau de navigation gauche** - Ce panneau vous permet de filtrer et de trier la liste des packages.
+* **Panneau de navigation de gauche** - Ce panneau vous permet de filtrer et de trier la liste des packages.
 * **Liste de packages** - Il s’agit de la liste des packages de votre instance, filtrée et triée selon les sélections effectuées dans le panneau de navigation de gauche.
 * **Journal d’activité** - Ce panneau est d’abord réduit et se développe pour détailler l’activité du gestionnaire de packages, comme lorsqu’un package est créé ou installé. L’onglet Journal d’activité comporte des boutons supplémentaires pour :
    * **Effacer le journal**
@@ -352,7 +353,7 @@ Les packages pouvant modifier le contenu existant, il est souvent utile de valid
 
 Le gestionnaire de packages peut effectuer les validations suivantes :
 
-* [Importations de packages OSGi](#osgi-package-imports)
+* [Imports de packages OSGi](#osgi-package-imports)
 * [Recouvrements](#overlays)
 * [ACL](#acls)
 
@@ -402,7 +403,7 @@ Pour résoudre ce problème, le responsable du fichier de recouvrement dans `/ap
 
 **Éléments cochés**
 
-Cette validation vérifie quelles autorisations sont ajoutées, comment elles seront gérées (fusion/remplacement) et si les autorisations actuelles seront affectées.
+Cette validation vérifie quelles autorisations sont ajoutées, comment elles sont gérées (fusion/remplacement) et si les autorisations actuelles sont affectées.
 
 **Comment il est signalé**
 
@@ -410,7 +411,7 @@ Les autorisations sont décrites dans le Journal d’activités du Gestionnaire 
 
 **États d’erreur**
 
-Aucune erreur explicite ne peut être fournie. La validation indique simplement si de nouvelles autorisations ACL seront ajoutées ou affectées lors de l’installation du package.
+Aucune erreur explicite ne peut être fournie. La validation indique simplement si de nouvelles autorisations ACL sont ajoutées ou affectées par l’installation du package.
 
 **Résolution d’erreurs**
 
@@ -489,13 +490,13 @@ Avant l’installation de votre package, le Gestionnaire de packages crée autom
 
 >[!CAUTION]
 >
->* Si vous installez des ressources numériques, vous devez :
+>* Si vous installez des ressources numériques, vous devez :
 >  Tout d’abord, désactivez WorkflowLauncher.
 >  Utilisez l’option du menu Composants de la console OSGi pour le désactiver.
 >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
 >* Ensuite, une fois l’installation terminée, réactivez WorkflowLauncher.
 >
->La désactivation de WorkflowLauncher garantit que la structure de l’importateur de ressources ne manipule pas (involontairement) les ressources lors de l’installation.
+>La désactivation de WorkflowLauncher garantit que le framework de l’importateur de ressources ne manipule pas (involontairement) les ressources lors de l’installation.
 
 1. [Accédez au Gestionnaire de packages.](#accessing)
 

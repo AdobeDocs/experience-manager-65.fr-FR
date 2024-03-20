@@ -6,10 +6,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 620c69d6-4fe1-46d6-b5d4-3b562142e547
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 56%
+ht-degree: 58%
 
 ---
 
@@ -31,7 +32,7 @@ La valeur par défaut est une chaîne vide.
 
 La valeur par défaut est `com/adobe/formServer/PA/pa_output.xci`.
 
-**Emplacement du cache :** détermine l’emplacement du cache disque d’Output. Lorsque vous modifiez ce paramètre, toutes les informations de cache existantes de l’emplacement actuel sont réinitialisées et un nouveau cache est créé au nouvel emplacement. Sélectionnez l’une des options suivantes :
+**Emplacement du cache :** détermine l’emplacement du cache disque d’Output. Lorsque vous modifiez ce paramètre, toutes les informations de cache existantes de l’emplacement actuel sont réinitialisées et un nouveau cache est créé au nouvel emplacement. Sélectionnez l’une des options suivantes :
 
 **Emplacement par défaut :** il s’agit de la sélection par défaut. Lorsque cette option est sélectionnée, le cache est créé à un emplacement différent selon le serveur d’applications utilisé :
 

@@ -7,7 +7,8 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '6470'
 ht-degree: 99%
@@ -22,7 +23,7 @@ ht-degree: 99%
 >
 >Pour plus d’informations sur le dépannage et la résolution des problèmes de performances, voir également l’[arborescence de la performance](/help/sites-deploying/performance-tree.md).
 >
->De plus, vous pouvez lire un article de la base de connaissances pour obtenir des [Conseils pour le réglage des performances](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+>De plus, vous pouvez lire un article de la base de connaissances pour obtenir des [Conseils pour le réglage des performances](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-performance.html?lang=fr).
 
 L’un des problèmes majeurs est le temps que met votre site web pour répondre aux requêtes des visiteurs et visiteuses. Bien que cette valeur varie pour chaque requête, une valeur cible moyenne peut être définie. Une fois que cette valeur se révèle à la fois réalisable et gérable, elle peut être utilisée pour surveiller les performances du site web et indiquer le développement de problèmes potentiels.
 
@@ -39,7 +40,7 @@ Cet environnement intègre le contenu que vous mettez à la disposition de vos u
 >[!NOTE]
 >
 >* Une fois l’optimisation des performances configurée, suivez les procédures dans [Tough Day](/help/sites-developing/tough-day.md) pour tester l’environnement en le soumettant à une charge importante.
->* Consultez également la section [Conseils pour le réglage des performances.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
+>* Consultez également la section [Conseils pour le réglage des performances.](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-performance.html?lang=fr)
 
 ## Méthodologie d’optimisation des performances {#performance-optimization-methodology}
 
@@ -201,7 +202,7 @@ Certains aspects d’AEM (et/ou du référentiel sous-jacent) peuvent être conf
 
 >[!NOTE]
 >
->Voir [Optimisation des performances](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+>Voir [Optimisation des performances](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-performance.html?lang=fr).
 
 ### Indexation de recherche {#search-indexing}
 

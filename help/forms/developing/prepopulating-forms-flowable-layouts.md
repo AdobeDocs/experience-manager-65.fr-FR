@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff087084-fb1c-43a4-ae54-cc77eb862493
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3478'
-ht-degree: 70%
+ht-degree: 74%
 
 ---
 
@@ -244,9 +245,9 @@ Pour préremplir un formulaire avec une disposition souple à l’aide de l’AP
 
 1. Créer une source de données XML en mémoire
 
-   * Création d’un Java `DocumentBuilderFactory` en appelant la fonction `DocumentBuilderFactory` class&#39; `newInstance` .
-   * Création d’un Java `DocumentBuilder` en appelant la fonction `DocumentBuilderFactory` de `newDocumentBuilder` .
-   * Appelez le `DocumentBuilder` de `newDocument` pour instancier une `org.w3c.dom.Document` .
+   * Créez un objet `DocumentBuilderFactory` Java en appelant la méthode `newInstance` de la classe `DocumentBuilderFactory`.
+   * Créez un objet `DocumentBuilder` Java en appelant la méthode `newDocumentBuilder` de l’objet `DocumentBuilderFactory`.
+   * Appelez la méthode `newDocument` de l’objet `DocumentBuilder` pour instancier un objet `org.w3c.dom.Document`.
    * Créez l’élément racine de la source de données XML en appelant la méthode `org.w3c.dom.Document` de `createElement` . Cela crée un objet `Element` qui représente l’élément racine. Transmettez une valeur de chaîne représentant le nom de l’élément à la méthode `createElement`. Convertissez la valeur de retour en `Element`. Ensuite, ajoutez l’élément racine au document en appelant la fonction `Document` de `appendChild` et transmettez l’objet d’élément racine en tant qu’argument. Les lignes de code suivantes illustrent cette logique dʼapplication :
 
      ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
@@ -274,19 +275,19 @@ Pour préremplir un formulaire avec une disposition souple à l’aide de l’AP
 
 1. Convertir la source de données XML
 
-   * Créez un `javax.xml.transform.Transformer` en appelant la méthode `javax.xml.transform.Transformer` statique de l’objet `newInstance` .
-   * Créez un `Transformer` en appelant la méthode `TransformerFactory` de `newTransformer` .
+   * Créez un objet `javax.xml.transform.Transformer` en appelant la méthode statique `newInstance` de lʼobjet `javax.xml.transform.Transformer`.
+   * Créez un objet `Transformer` en appelant la méthode `newTransformer` de l’objet `TransformerFactory`.
    * Créez un objet `ByteArrayOutputStream` en utilisant son constructeur.
    * Créez un objet `javax.xml.transform.dom.DOMSource` en utilisant son constructeur et en transmettant l’objet `org.w3c.dom.Document` qui a été créé à l’étape 1.
    * Créez un objet `javax.xml.transform.dom.DOMSource` en utilisant son constructeur et en transmettant l’objet `ByteArrayOutputStream`. 
    * Renseignement du code Java `ByteArrayOutputStream` en appelant la méthode `javax.xml.transform.Transformer` de `transform` et transmission de la méthode `javax.xml.transform.dom.DOMSource` et la variable `javax.xml.transform.stream.StreamResult` objets.
    * Créez un tableau d’octets et affectez la taille de l’objet `ByteArrayOutputStream` au tableau d’octets.
-   * Renseignez le tableau d’octets en appelant la variable `ByteArrayOutputStream` de `toByteArray` .
+   * Renseignez le tableau dʼoctets en appelant la méthode `toByteArray` de lʼobjet `ByteArrayOutputStream`.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant le tableau d’octets.
 
 1. Effectuer le rendu d’un formulaire prérempli
 
-   Appeler la variable `FormsServiceClient` de `renderPDFForm` et transmettez les valeurs suivantes :
+   Appelez la méthode `renderPDFForm` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
    * Une valeur de chaîne qui spécifie le nom de la conception de formulaire, y compris l’extension du nom de fichier.
    * Un objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Veillez à utiliser l’objet `com.adobe.idp.Document` créé aux étapes 1 et 2.
@@ -298,7 +299,7 @@ Pour préremplir un formulaire avec une disposition souple à l’aide de l’AP
 
    * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour envoyer un flux de données de formulaire au navigateur web client.
    * Créez un `com.adobe.idp.Document` en appelant la méthode `FormsResult` object’s `getOutputContent` .
-   * Créez un `java.io.InputStream` en appelant la méthode `com.adobe.idp.Document` de `getInputStream` .
+   * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
    * Créez un tableau d’octets pour le remplir avec le flux de données de formulaire en appelant la fonction `InputStream` de `read` et transmission du tableau d’octets en tant qu’argument.
    * Appeler la variable `javax.servlet.ServletOutputStream` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
@@ -321,9 +322,9 @@ Pour préremplir un formulaire avec une disposition fluide à l’aide de l’AP
 
 1. Créer une source de données XML en mémoire
 
-   * Création d’un Java `DocumentBuilderFactory` en appelant la fonction `DocumentBuilderFactory` class&#39; `newInstance` .
-   * Création d’un Java `DocumentBuilder` en appelant la fonction `DocumentBuilderFactory` de `newDocumentBuilder` .
-   * Appelez le `DocumentBuilder` de `newDocument` pour instancier une `org.w3c.dom.Document` .
+   * Créez un objet `DocumentBuilderFactory` Java en appelant la méthode `newInstance` de la classe `DocumentBuilderFactory`.
+   * Créez un objet `DocumentBuilder` Java en appelant la méthode `newDocumentBuilder` de l’objet `DocumentBuilderFactory`.
+   * Appelez la méthode `newDocument` de l’objet `DocumentBuilder` pour instancier un objet `org.w3c.dom.Document`.
    * Créez l’élément racine de la source de données XML en appelant la méthode `org.w3c.dom.Document` de `createElement` . Cela crée un objet `Element` qui représente l’élément racine. Transmettez une valeur de chaîne représentant le nom de l’élément à la méthode `createElement`. Convertissez la valeur de retour en `Element`. Ensuite, ajoutez l’élément racine au document en appelant la fonction `Document` de `appendChild` et transmettez l’objet d’élément racine en tant qu’argument. Les lignes de code suivantes illustrent cette logique dʼapplication :
 
      ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
@@ -350,19 +351,19 @@ Pour préremplir un formulaire avec une disposition fluide à l’aide de l’AP
 
 1. Convertir la source de données XML
 
-   * Créez un `javax.xml.transform.Transformer` en appelant la méthode `javax.xml.transform.Transformer` statique de l’objet `newInstance` .
-   * Créez un `Transformer` en appelant la méthode `TransformerFactory` de `newTransformer` .
+   * Créez un objet `javax.xml.transform.Transformer` en appelant la méthode statique `newInstance` de lʼobjet `javax.xml.transform.Transformer`.
+   * Créez un objet `Transformer` en appelant la méthode `newTransformer` de l’objet `TransformerFactory`.
    * Créez un objet `ByteArrayOutputStream` en utilisant son constructeur.
    * Créez un objet `javax.xml.transform.dom.DOMSource` en utilisant son constructeur et en transmettant l’objet `org.w3c.dom.Document` qui a été créé à l’étape 1.
    * Créez un objet `javax.xml.transform.dom.DOMSource` en utilisant son constructeur et en transmettant l’objet `ByteArrayOutputStream`. 
    * Renseignement du code Java `ByteArrayOutputStream` en appelant la méthode `javax.xml.transform.Transformer` de `transform` et transmission de la méthode `javax.xml.transform.dom.DOMSource` et la variable `javax.xml.transform.stream.StreamResult` objets.
    * Créez un tableau d’octets et affectez la taille de l’objet `ByteArrayOutputStream` au tableau d’octets.
-   * Renseignez le tableau d’octets en appelant la variable `ByteArrayOutputStream` de `toByteArray` .
+   * Renseignez le tableau dʼoctets en appelant la méthode `toByteArray` de lʼobjet `ByteArrayOutputStream`.
    * Créez un objet `BLOB` en utilisant son constructeur, appelez sa méthode `setBinaryData`, puis transmettez le tableau dʼoctets.
 
 1. Effectuer le rendu d’un formulaire prérempli
 
-   Appeler la variable `FormsService` de `renderPDFForm` et transmettez les valeurs suivantes :
+   Appelez la méthode `renderPDFForm` de l’objet `FormsService` et transmettez les valeurs suivantes :
 
    * Une valeur de chaîne qui spécifie le nom de la conception de formulaire, y compris l’extension du nom de fichier.
    * Un objet `BLOB` qui contient des données à fusionner avec le formulaire. Veillez à utiliser lʼobjet `BLOB` créé aux étapes 1 et 2.

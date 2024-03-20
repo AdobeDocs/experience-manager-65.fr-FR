@@ -5,10 +5,11 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Interactive Communication
 exl-id: ea0c8971-56f4-4094-87e4-1b222b73951f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '652'
-ht-degree: 26%
+ht-degree: 50%
 
 ---
 
@@ -20,7 +21,7 @@ Planifier la structure de votre communication interactive
 
 Ce tutoriel fait partie de la série [Création de votre première communication interactive](/help/forms/using/create-your-first-interactive-communication.md). Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et accomplir le cas d’utilisation complet du tutoriel.
 
-La première étape de la planification d’une communication interactive consiste à finaliser le contenu de la communication interactive. Des experts spécialisés de services tels que le droit, les finances, le soutien ou le marketing peuvent vous aider à finaliser le contenu. Une fois le contenu finalisé, vous devez l’analyser afin d’identifier les différents types de ressources requis pour créer la communication interactive.
+La première étape de la planification d’une communication interactive consiste à finaliser le contenu de cette dernière. Des experts spécialisés de services tels que le droit, les finances, le soutien ou le marketing peuvent vous aider à finaliser le contenu. Une fois le contenu finalisé, vous devez l’analyser pour identifier les différents types de ressources requis pour créer la communication interactive.
 
 ## Observations relatives à la planification {#planning-considerations}
 
@@ -63,38 +64,38 @@ Le tableau suivant illustre la source de données pour chaque champ de l’anato
   </tr>
   <tr>
    <td>Informations de facturation</td>
-   <td><p>Facture Non</p> <p>Date de facturation</p> <p>Période de facturation</p> <p>Votre plan</p> </td>
+   <td><p>N° de facture</p> <p>Date de facturation</p> <p>Période de facturation</p> <p>Votre plan</p> </td>
    <td><p>Valeur pour <strong>Votre plan </strong>field</p> <p>Table - customer</p> </td>
    <td><p>Valeurs des champs suivants :</p>
     <ul>
-     <li>Facture Non</li>
+     <li>N° de facture</li>
      <li>Date de facturation</li>
      <li>Période de facturation</li>
     </ul> <p> </p> </td>
    <td>--</td>
   </tr>
   <tr>
-   <td>Détails du client</td>
-   <td><p>Lieu de livraison</p> <p>Code d’état</p> <p>Numéro de mobile</p> <p>Autre numéro de contact</p> <p>Numéro de relation</p> <p>Nombre de connexions</p> </td>
+   <td>Informations sur le client ou la cliente</td>
+   <td><p>Lieu de livraison</p> <p>Code du pays</p> <p>Numéro de mobile</p> <p>Autre numéro de téléphone</p> <p>Nombre de relations</p> <p>Nombre de connexions</p> </td>
    <td><p>Valeurs des champs suivants :</p>
     <ul>
      <li>Nom</li>
      <li>Adresse</li>
      <li>Numéro de mobile</li>
-     <li>Autre numéro de contact</li>
-     <li>Numéro de relation</li>
+     <li>Autre numéro de téléphone</li>
+     <li>Nombre de relations</li>
     </ul> <p>Table - customer</p> </td>
    <td><p>Valeurs des champs suivants :</p>
     <ul>
      <li>Lieu de livraison</li>
-     <li>Code d’état</li>
+     <li>Code du pays</li>
      <li>Nombre de connexions</li>
     </ul> </td>
    <td>--</td>
   </tr>
   <tr>
    <td>Résumé de facturation</td>
-   <td><p>Solde précédent</p> <p>Paiements</p> <p>Ajustements</p> <p>Facturation de la période de facturation actuelle</p> <p>Montant dû</p> <p>Échéance</p> </td>
+   <td><p>Solde précédent</p> <p>Paiements</p> <p>Ajustements</p> <p>Facturation de la période en cours</p> <p>Montant dû</p> <p>Échéance</p> </td>
    <td><p>Valeur du champ <strong>Facturation de la période en cours</strong></p> <p>Tableau - bills</p> </td>
    <td><p>Valeurs des champs suivants :</p>
     <ul>
@@ -108,13 +109,13 @@ Le tableau suivant illustre la source de données pour chaque champ de l’anato
   </tr>
   <tr>
    <td>Récapitulatif des frais</td>
-   <td><p>Frais d’appel</p> <p>Frais de conférence téléphonique</p> <p>Frais de SMS </p> <p>Frais Internet mobiles</p> <p>Frais d’itinérance nationale</p> <p>Frais d’itinérance internationale</p> <p>Frais de services à valeur ajoutée</p> <p>Frais totaux</p> <p>TOTAL À PAYER</p> <p>Champ Condition sur les frais de services à valeur ajoutée</p> </td>
+   <td><p>Frais d’appel</p> <p>Frais de conférence téléphonique</p> <p>Frais de SMS </p> <p>Frais d’Internet mobile</p> <p>Frais d’itinérance nationale</p> <p>Frais d’itinérance internationale</p> <p>Frais de services à valeur ajoutée</p> <p>Frais totaux</p> <p>TOTAL À PAYER</p> <p>Champ Condition sur les frais de services à valeur ajoutée</p> </td>
    <td><p>Valeurs des champs suivants :</p>
     <ul>
      <li>Frais d’appel</li>
      <li>Frais de conférence téléphonique</li>
      <li>Frais de SMS </li>
-     <li>Frais Internet mobiles</li>
+     <li>Frais d’Internet mobile</li>
      <li>Frais d’itinérance nationale</li>
      <li>Frais d’itinérance internationale</li>
      <li>Frais de services à valeur ajoutée</li>

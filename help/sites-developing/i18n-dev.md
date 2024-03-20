@@ -1,14 +1,15 @@
 ---
 title: Internationaliser des chaînes d’interface utilisateur
-description: Java&trade; Les API JavaScript et vous permettent d’internationaliser des chaînes
+description: Les API Java&trade et JavaScript vous permettent d’internationaliser des chaînes.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1091'
 ht-degree: 32%
 
 ---
@@ -26,7 +27,7 @@ Pour un aperçu du processus d’internationalisation et de localisation, voir [
 
 ## Internationalisation de chaînes dans le code Java™ et JSP {#internationalizing-strings-in-java-and-jsp-code}
 
-Le `com.day.cq.i18n` Le package Java™ vous permet d’afficher les chaînes localisées dans votre interface utilisateur. Le `I18n` fournit la classe `get` qui récupère les chaînes localisées du dictionnaire Adobe Experience Manager (AEM). Le seul paramètre requis de la méthode `get` est le littéral de chaîne en langue anglaise. L’anglais est la langue par défaut de l’interface utilisateur. L’exemple suivant localise le mot `Search` :
+La variable `com.day.cq.i18n` Le package Java™ vous permet d’afficher les chaînes localisées dans votre interface utilisateur. La variable `I18n` fournit la classe `get` qui récupère les chaînes localisées du dictionnaire Adobe Experience Manager (AEM). Le seul paramètre requis de la méthode `get` est le littéral de chaîne en langue anglaise. L’anglais est la langue par défaut de l’interface utilisateur. L’exemple suivant localise le mot `Search` :
 
 `i18n.get("Search");`
 
@@ -48,7 +49,7 @@ La propriété language du compte utilisateur est la méthode préférée, car e
 
 La classe I18n fournit deux constructeurs. La manière dont vous déterminez la langue préférée de l’utilisateur détermine le constructeur à utiliser.
 
-Pour afficher la chaîne dans la langue spécifiée dans le compte utilisateur, utilisez le constructeur suivant (après avoir importé `com.day.cq.i18n.I18n)` :
+Pour afficher la chaîne dans la langue spécifiée dans le compte d’utilisateur, utilisez le constructeur suivant (après avoir importé `com.day.cq.i18n.I18n)` :
 
 ```java
 I18n i18n = new I18n(slingRequest);
@@ -72,7 +73,7 @@ Le premier argument de la méthode `get` doit respecter les règles suivantes :
 
 * La valeur doit être un littéral de chaîne. Une variable de type `String` n’est pas acceptable.
 * Le littéral de chaîne doit être exprimé sur une seule ligne.
-* La chaîne est sensible à la casse.
+* La chaîne respecte la casse.
 
 ```xml
 i18n.get("Enter a search keyword");
@@ -102,7 +103,7 @@ La chaîne internationalisée et l’indice de traduction doivent correspondre e
 
 #### Utilisation de méthode Get statique {#using-the-static-get-method}
 
-Le `I18N` définit une classe statique. `get` qui s’avère utile lorsque vous devez localiser quelques chaînes. Outre les paramètres de la méthode `get` d’un objet, la méthode statique nécessite l’objet `SlingHttpRequest` ou le `ResourceBundle` que vous utilisez, suivant la manière dont vous déterminez la langue par défaut de l’utilisateur :
+La variable `I18N` définit une classe statique. `get` qui s’avère utile lorsque vous devez localiser quelques chaînes. Outre les paramètres de la méthode `get` d’un objet, la méthode statique nécessite l’objet `SlingHttpRequest` ou le `ResourceBundle` que vous utilisez, suivant la manière dont vous déterminez la langue par défaut de l’utilisateur :
 
 * Utilisation de la préférence de langue de l’utilisateur : indiquez l’objet SlingHttpRequest comme premier paramètre.
 
@@ -115,9 +116,9 @@ Le `I18N` définit une classe statique. `get` qui s’avère utile lorsque vous 
 
 L’API JavaScript vous permet de localiser des chaînes sur le client. Comme avec [Java™ et JSP](#internationalizing-strings-in-java-and-jsp-code) , l’API JavaScript vous permet d’identifier les chaînes à localiser, de fournir des conseils de localisation et d’inclure des variables dans les chaînes localisées.
 
-Le `granite.utils` [dossier de bibliothèque cliente](/help/sites-developing/clientlibs.md) fournit l’API JavaScript. Pour utiliser l’API, vous devez inclure ce dossier sur votre page. Les fonctions de localisation utilisent l’espace de noms `Granite.I18n`.
+La variable `granite.utils` [dossier de bibliothèque cliente](/help/sites-developing/clientlibs.md) fournit l’API JavaScript. Pour utiliser l’API, vous devez inclure ce dossier sur votre page. Les fonctions de localisation utilisent l’espace de noms `Granite.I18n`.
 
-Avant de présenter des chaînes localisées, définissez les paramètres régionaux à l’aide de la variable `Granite.I18n.setLocale` fonction . Pour cette fonction, le code de langue du paramètre régional doit être défini comme argument :
+Avant de présenter des chaînes localisées, définissez les paramètres régionaux à l’aide de la variable `Granite.I18n.setLocale` de la fonction Pour cette fonction, le code de langue du paramètre régional doit être défini comme argument :
 
 ```
 Granite.I18n.setLocale("fr");

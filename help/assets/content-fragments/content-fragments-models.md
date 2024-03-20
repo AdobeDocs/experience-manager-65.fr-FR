@@ -4,10 +4,11 @@ description: Découvrez comment les modèles de fragment de contenu constituent 
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2310'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -76,9 +77,9 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
 
         >[!CAUTION]
         >
-        >Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, les noms ne doivent contenir que des caractères A-Z, a-z, 0-9 et le trait de soulignement « _ » comme caractère spécial.
+        Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, les noms ne doivent contenir que des caractères A-Z, a-z, 0-9 et le trait de soulignement « _ » comme caractère spécial.
         >
-        >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
+        Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
      Par exemple :
 
@@ -134,7 +135,7 @@ Dans l’éditeur de fragments, chaque instance s’affiche sous la forme d’un
 
      >[!NOTE]
      >
-     >Ce type de données est uniquement utilisé à des fins de mise en forme. Il est ignoré par le schéma GraphQL AEM.
+     Ce type de données est uniquement utilisé à des fins de mise en forme. Il est ignoré par le schéma GraphQL AEM.
 
 ## Propriétés {#properties}
 
@@ -147,7 +148,7 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
 
   >[!CAUTION]
   >
-  >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
+  Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
 * **Rendu comme**
 Les différentes options permettant de réaliser/rendre le champ dans un fragment. Il est ainsi souvent possible de définir si la personne chargée de la création de contenu verra une seule instance du champ ou si elle sera autorisée à créer plusieurs instances.
@@ -177,11 +178,11 @@ Le contenu (du champ spécifique) doit être unique dans tous les fragments de c
 
   >[!NOTE]
   >
-  >L’unicité est assurée par la racine de langue.
+  L’unicité est assurée par la racine de langue.
 
   >[!NOTE]
   >
-  >Les variations peuvent avoir la même valeur *unique* que les variations du même fragment, mais pas la même valeur que celle utilisée dans une variation d’autres fragments.
+  Les variations peuvent avoir la même valeur *unique* que les variations du même fragment, mais pas la même valeur que celle utilisée dans une variation d’autres fragments.
 
 * Consultez la section **[Référence de contenu](#content-reference)** pour plus d’informations sur ce type de données spécifique et ses propriétés.
 
@@ -224,18 +225,17 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 
      >[!NOTE]
      >
-     >Cette méthode présente un intérêt particulier avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+     Cette méthode présente un intérêt particulier avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
    * Peut être configurée pour une ou plusieurs références (dans le fragment résultant).
 
 >[!NOTE]
 >
->AEM dispose d’une protection récurrente pour :
+AEM dispose d’une protection récurrente pour :
 >
->* Références du contenu
->  Cela empêche l’utilisateur d’ajouter une référence au fragment actif. Cette approche peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
+* Références du contenu
+Cela empêche l’utilisateur d’ajouter une référence au fragment actif. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
 >
->* Références de fragment dans GraphQL
->  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
+* Références de fragment dans GraphQL Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur null à la première occurrence.
 
 ### Référence de contenu {#content-reference}
 
@@ -277,7 +277,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->Cette méthode présente un intérêt particulier avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+Cette méthode présente un intérêt particulier avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 Outre les propriétés standard, vous pouvez définir les éléments suivants :
 
@@ -303,9 +303,9 @@ Indique un chemin racine pour tout fragment référencé.
 
 >[!NOTE]
 >
->Un mécanisme de protection contre les répétitions est en place. Il interdit à l’utilisateur de sélectionner le fragment de contenu actif dans la référence au fragment. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
+Un mécanisme de protection contre les répétitions est en place. Il interdit à l’utilisateur de sélectionner le fragment de contenu actif dans la référence au fragment. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
 >
->Il existe également une protection contre les répétitions pour les références de fragments dans GraphQL. Si vous créez une requête profonde entre deux fragments de contenu qui se référencent mutuellement, elle renvoie la valeur « null ».
+Il existe également une protection contre les répétitions pour les références de fragments dans GraphQL. Si vous créez une requête profonde entre deux fragments de contenu qui se référencent mutuellement, elle renvoie la valeur « null ».
 
 ## Activation ou désactivation d’un modèle de fragment de contenu {#enabling-disabling-a-content-fragment-model}
 
@@ -354,7 +354,7 @@ Pour mettre en œuvre une gouvernance du contenu, vous pouvez configurer des **P
 
 >[!NOTE]
 >
->Le mécanisme est similaire à [l’autorisation de modèles de page](/help/sites-authoring/templates.md#allowing-a-template-author) pour une page et ses enfants, dans les propriétés avancées d’une page.
+Le mécanisme est similaire à [l’autorisation de modèles de page](/help/sites-authoring/templates.md#allowing-a-template-author) pour une page et ses enfants, dans les propriétés avancées d’une page.
 
 Pour configurer les **politiques** des **modèles de fragments de contenu autorisés** :
 
@@ -389,7 +389,7 @@ Les modèles de fragment de contenu autorisés pour un dossier sont résolus com
 
 >[!CAUTION]
 >
->La suppression d’un modèle de fragment de contenu peut avoir un impact sur les fragments dépendants.
+La suppression d’un modèle de fragment de contenu peut avoir un impact sur les fragments dépendants.
 
 Pour supprimer un modèle de fragment de contenu :
 
@@ -400,7 +400,7 @@ Pour supprimer un modèle de fragment de contenu :
 
    >[!NOTE]
    >
-   >Si le modèle est référencé, un avertissement s’affiche. Prenez les mesures appropriées.
+   Si le modèle est référencé, un avertissement s’affiche. Prenez les mesures appropriées.
 
 ## Publication d’un modèle de fragment de contenu {#publishing-a-content-fragment-model}
 
@@ -416,7 +416,7 @@ Le statut publié est indiqué dans la console.
 
    >[!NOTE]
    >
-   >Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique, ainsi que le fait que le modèle est publié avec le fragment.
+   Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique, ainsi que le fait que le modèle est publié avec le fragment.
 
 ## Dépublication d’un modèle de fragment de contenu {#unpublishing-a-content-fragment-model}
 

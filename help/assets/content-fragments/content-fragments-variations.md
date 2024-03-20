@@ -4,7 +4,8 @@ description: Découvrez comment les variations peuvent rendre votre contenu déc
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 98%
@@ -234,14 +235,14 @@ Le résumé de texte a été conçu pour permettre aux utilisateurs et utilisatr
 
 >[!CAUTION]
 >
-L’anglais est disponible par défaut.
+>L’anglais est disponible par défaut.
 >
-D’autres langues sont disponibles en tant que packages de modèle de langue à partir du partage de modules :
+>D’autres langues sont disponibles en tant que packages de modèle de langue à partir du partage de modules :
 >
-* [Français (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [Allemand (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [Italien (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [Espagnol (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Français (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Allemand (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italien (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Espagnol (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 1. Sélectionnez **Principal** ou la variation requise.
@@ -310,7 +311,7 @@ Les annotations :
 
   >[!NOTE]
   >
-  Un sélecteur en liste déroulante est fourni si plusieurs annotations ont été appliquées à une partie du texte.
+  >Un sélecteur en liste déroulante est fourni si plusieurs annotations ont été appliquées à une partie du texte.
 
 * Lorsque vous supprimez tout le texte auquel l’annotation a été appliquée, cette dernière est également supprimée.
 
@@ -328,13 +329,13 @@ Elles sont ajoutées à la séquence de paragraphes du fragment sans aucune mise
 
 >[!CAUTION]
 >
-Ces ressources ne peuvent pas être déplacées ni supprimées sur une page de référence ; ce type d’opération doit être effectué dans l’éditeur de fragment.
+>Ces ressources ne peuvent pas être déplacées ni supprimées sur une page de référence ; ce type d’opération doit être effectué dans l’éditeur de fragment.
 >
-Toutefois, la mise en forme de la ressource (par exemple, sa taille) doit être effectuée dans l’[éditeur de page](/help/sites-authoring/content-fragments.md). La représentation de la ressource dans l’éditeur de fragment est uniquement destinée à la création du flux de contenu.
+>Toutefois, la mise en forme de la ressource (par exemple, sa taille) doit être effectuée dans l’[éditeur de page](/help/sites-authoring/content-fragments.md). La représentation de la ressource dans l’éditeur de fragment est uniquement destinée à la création du flux de contenu.
 
 >[!NOTE]
 >
-Il existe différentes méthodes pour ajouter des [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
+>Il existe différentes méthodes pour ajouter des [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
 
 1. Positionnez le curseur à l’endroit où vous souhaitez ajouter l’image.
 1. Utilisez l’icône **Insérer une ressource** pour ouvrir la boîte de dialogue de recherche.
@@ -352,10 +353,10 @@ Il existe différentes méthodes pour ajouter des [images](/help/assets/content-
 
    >[!CAUTION]
    >
-   Si vous modifiez le format après l’ajout en tant que ressource à :
+   >Si vous modifiez le format après l’ajout en tant que ressource à :
    >
-   * **Texte brut** : la ressource est effacée du fragment.
-   * **Markdown** : la ressource n’est pas visible, mais elle est toujours présente lorsque vous revenez à **Texte enrichi**.
+   >* **Texte brut** : la ressource est effacée du fragment.
+   >* **Markdown** : la ressource n’est pas visible, mais elle est toujours présente lorsque vous revenez à **Texte enrichi**.
 
 ### Insertion d’un fragment de contenu dans votre fragment {#inserting-content-fragment-into-your-fragment}
 
@@ -365,17 +366,17 @@ Celui-ci est ajouté en tant que référence à l’emplacement actuel dans votr
 
 >[!NOTE]
 >
-Cette option est disponible lorsque l’option **Autoriser la référence de fragment** est activée pour votre champ **Plusieurs lignes de texte**.
+>Cette option est disponible lorsque l’option **Autoriser la référence de fragment** est activée pour votre champ **Plusieurs lignes de texte**.
 
 >[!CAUTION]
 >
-Ces ressources ne peuvent pas être déplacées ni supprimées sur une page de référence ; ce type d’opération doit être effectué dans l’éditeur de fragment.
+>Ces ressources ne peuvent pas être déplacées ni supprimées sur une page de référence ; ce type d’opération doit être effectué dans l’éditeur de fragment.
 >
-Toutefois, la mise en forme de la ressource (par exemple, sa taille) doit être effectuée dans l’[éditeur de page](/help/sites-authoring/content-fragments.md). La représentation de la ressource dans l’éditeur de fragment est uniquement destinée à la création du flux de contenu.
+>Toutefois, la mise en forme de la ressource (par exemple, sa taille) doit être effectuée dans l’[éditeur de page](/help/sites-authoring/content-fragments.md). La représentation de la ressource dans l’éditeur de fragment est uniquement destinée à la création du flux de contenu.
 
 >[!NOTE]
 >
-Il existe différentes méthodes pour ajouter des [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
+>Il existe différentes méthodes pour ajouter des [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
 
 1. Placez le curseur à l’endroit où vous souhaitez ajouter le fragment.
 1. Utilisez l’icône **Insérer un fragment de contenu** pour ouvrir la boîte de dialogue de recherche.
@@ -393,10 +394,10 @@ Il existe différentes méthodes pour ajouter des [images](/help/assets/content-
 
    >[!CAUTION]
    >
-   Si vous modifiez le format, après avoir ajouté une référence à un autre fragment, procédez comme suit :
+   >Si vous modifiez le format, après avoir ajouté une référence à un autre fragment, procédez comme suit :
    >
-   * **Texte brut** : la référence est effacée du fragment.
-   * **Markdown** : la référence reste.
+   >* **Texte brut** : la référence est effacée du fragment.
+   >* **Markdown** : la référence reste.
 
 ## Gestion des variations {#managing-variations}
 
@@ -414,11 +415,11 @@ Pour créer une variation :
 
    >[!NOTE]
    >
-   Lors de la création d’une variation, c’est toujours le contenu **principal** qui est copié et non pas la variation ouverte.
+   >Lors de la création d’une variation, c’est toujours le contenu **principal** qui est copié et non pas la variation ouverte.
 
    >[!NOTE]
    >
-   Lorsque vous créez une variation, toutes les **balises** actuellement affectées au contenu **principal** sont copiées dans la nouvelle variation.
+   >Lorsque vous créez une variation, toutes les **balises** actuellement affectées au contenu **principal** sont copiées dans la nouvelle variation.
 
 ### Modifier une variation {#editing-a-variation}
 
@@ -443,7 +444,7 @@ Pour renommer une variation existante :
 
 >[!NOTE]
 >
-Cela affecte uniquement la variation **Titre**.
+>Cela affecte uniquement la variation **Titre**.
 
 ### Suppression d’une variation {#deleting-a-variation}
 
@@ -457,7 +458,7 @@ Pour supprimer une variation existante :
 
 >[!NOTE]
 >
-Vous ne pouvez pas supprimer le **Maître**.
+>Vous ne pouvez pas supprimer le **Maître**.
 
 ### Synchronisation avec le maître {#synchronizing-with-master}
 
@@ -467,13 +468,13 @@ Lors de la modification d’une variation, vous avez accès à l’action de syn
 
 >[!CAUTION]
 >
-La synchronisation n’est disponible que pour copier les modifications *du **Maître**dans la variation*.
+>La synchronisation n’est disponible que pour copier les modifications *du **Maître**dans la variation*.
 >
-Seul l’élément actif de la variation est synchronisé.
+>Seul l’élément actif de la variation est synchronisé.
 >
-La synchronisation fonctionne uniquement avec le type de données **texte multiligne**.
+>La synchronisation fonctionne uniquement avec le type de données **texte multiligne**.
 >
-Le transfert des modifications n’est pas proposé *entre une variation et le **Maître***.
+>Le transfert des modifications n’est pas proposé *entre une variation et le **Maître***.
 
 <!-- needs new screenshot for synchronize effect -->
 

@@ -2,7 +2,8 @@
 title: Notes de mise à jour d’AEM Content and Commerce 2019
 description: Notes de mise à jour de Adobe Experience Manager Content and Commerce 2019.
 exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '946'
 ht-degree: 99%

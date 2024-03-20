@@ -5,16 +5,17 @@ contentOwner: AG
 role: Admin
 feature: Developer Tools
 exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '340'
+ht-degree: 91%
 
 ---
 
 # Traitement des images à l’aide d’[!DNL Adobe Camera Raw] {#camera-raw-support}
 
-Vous pouvez activer la prise en charge d’[!DNL Adobe Camera Raw] pour le traitement des formats de fichiers bruts, tels que CR2, NEF et RAF, et du rendu des images au format JPEG. Cette fonctionnalité est prise en charge dans [!DNL Adobe Experience Manager Assets] en utilisant le [module Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponible à partir dans la distribution logicielle.
+Vous pouvez activer la prise en charge d’[!DNL Adobe Camera Raw] pour le traitement des formats de fichiers bruts, tels que CR2, NEF et RAF, et du rendu des images au format JPEG. Cette fonctionnalité est prise en charge dans [!DNL Adobe Experience Manager Assets] en utilisant le [package Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponible à partir dans la distribution logicielle.
 
 >[!NOTE]
 >
@@ -22,7 +23,7 @@ Vous pouvez activer la prise en charge d’[!DNL Adobe Camera Raw] pour le trait
 
 Pour activer la prise en charge de [!DNL Camera Raw] dans [!DNL Experience Manager Assets], procédez comme suit :
 
-1. Téléchargez le module [[!DNL Camera Raw] ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-cameraraw-pkg-1.4.8.zip) à partir de la [!DNL Software Distribution].
+1. Téléchargez le package [[!DNL Camera Raw] ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-cameraraw-pkg-1.4.8.zip) à partir de la [!DNL Software Distribution].
 1. Accédez à l’adresse `https://[aem_server]:[port]/workflow`. Ouvrez le workflow **[!UICONTROL Ressource de mise à jour de la gestion des ressources numériques]**.
 1. Modifier l’étape **[!UICONTROL Miniatures des processus]**.
 1. Indiquez la configuration suivante dans l’onglet **[!UICONTROL Miniatures]** :
@@ -55,7 +56,7 @@ Pour activer la prise en charge de [!DNL Camera Raw] dans [!DNL Experience Manag
 >
 >Vérifiez que la configuration ci-dessus est identique à la configuration de l’**[!UICONTROL exemple de ressource de mise à jour de la gestion des ressources numériques avec l’étape de Camera RAW et DNG Handler]**.
 
-Vous pouvez désormais importer des fichiers Camera Raw dans Assets. Une fois que vous avez installé le module Camera Raw et configuré le workflow requis, l’option **[!UICONTROL Réglage de l’image]** apparaît dans la liste des volets latéraux.
+Vous pouvez désormais importer des fichiers Camera Raw dans Assets. Une fois que vous avez installé le package Camera Raw et configuré le workflow requis, l’option **[!UICONTROL Réglage de l’image]** apparaît dans la liste des volets latéraux.
 
 ![chlimage_1-131](assets/chlimage_1-337.png)
 
@@ -71,6 +72,6 @@ Après avoir enregistré les modifications apportées à une image [!DNL Camera 
 
 La fonctionnalité présente les limites suivantes :
 
-* La fonctionnalité ne prend en charge que les rendus JPEG. Elle est prise en charge sous Windows 64 bits, Mac OS et RHEL 7.x.
+* La fonctionnalité ne prend en charge que les rendus JPEG. Il est pris en charge sur Windows 64 bits, Mac OS et RHEL 7.x.
 * L’écriture différée des métadonnées n’est pas prise en charge pour les formats RAW et DNG.
 * La bibliothèque [!DNL Camera Raw] présente des limitations quant au nombre total de pixels qu’elle peut traiter à la fois. Actuellement, il peut traiter un fichier de maximum 65 000 pixels de long, ou de maximum 512 MP, quel que soit la limite rencontrée en premier.

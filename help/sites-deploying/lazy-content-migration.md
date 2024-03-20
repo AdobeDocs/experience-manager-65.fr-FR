@@ -1,6 +1,6 @@
 ---
 title: Migration différée du contenu
-description: Découvrez la migration différée de contenu dans Adobe Experience Manager 6.4.
+description: Découvrez la migration différée du contenu dans Adobe Experience Manager 6.4.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,9 +8,10 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: 946c7c2a-806b-4461-a38b-9c2e5ef1e958
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '693'
 ht-degree: 23%
 
 ---
@@ -33,13 +34,13 @@ Comme cela nécessite généralement d’ajuster l’application, cette activit�
 
 Vous trouverez, ci-dessous, la liste complète des `CodeUpgradeTasks` introduites dans la version 6.5 :
 
-| **Nom** | **Pertinent** **pour AEM versions antérieures** | **Migration** **Type** | **Détails** |
+| **Nom** | **Pertinent** **pour les versions AEM antérieures** | **Migration** **Type** | **Détails** |
 |---|---|---|---|
 | `Cq561ProjectContentUpgrade` | &lt; 5.6.1 | Immédiat |  |
 | `Cq60MSMContentUpgrade` | &lt; 6.0 | Immédiat | Détecte toutes les `LiveRelationShips` de `VersionStorage` qui ont été supprimées et ajoute une propriété d’exclusion au parent. |
 | `Cq61CloudServicesContentUpgrade` | &lt; 6.1 | Immédiat | Restructuration des services cloud pour une configuration sécurisée par défaut |
 | `Cq62ConfContentUpgrade` | &lt; 6.2 | Immédiat | Supprime la liaison basée sur la propriété de **/content** to **/conf** (remplacé par le mécanisme OSGi), génère la configuration OSGi correspondante. |
-| `Cq62FormsContentUpgrade` | &lt; 6.2 | Immédiat | En raison de la gestion de merge_preserve, la règle de refus sécurisée par défaut remplace les autorisations données, ce qui entraîne la nécessité de procéder à une réorganisation lors de la mise à niveau. |
+| `Cq62FormsContentUpgrade` | &lt; 6.2 | Immédiat | En raison de la gestion de merge_preserve, la règle de refus sécurisée par défaut remplace les autorisations données, ce qui entraîne la nécessité de réorganiser lors de la mise à niveau. |
 | `CQ62Html5SmartFileUpgrade` | &lt; 6.2 | Immédiat | Détecte les composants à l’aide du widget Html5SmartFile, recherche les utilisations du composant dans le contenu et restructure la persistance, déplaçant ainsi le binaire d’un niveau vers le bas et ne le stockant pas au niveau du composant. |
 | `Cq62ProjectsCodeUpgrade` | &lt; 6.2 | Immédiat | Déplace les anciens projets de style de **/etc/projects** to **/content/projects** |
 | `Cq62TargetCampaignsContentUpgrade` | &lt; 6.2 | Immédiat | Introduit un calque de conteneur dans la hiérarchie (Zones) et ajuste les références. |
@@ -47,7 +48,7 @@ Vous trouverez, ci-dessous, la liste complète des `CodeUpgradeTasks` introduite
 | `Cq62WorkflowContentUpgrade` | &lt; 6.2 | Immédiat | Transformation complexe des modèles de workflow antérieurs à la version 6.2 des structures, instances et notifications, puis fusion à partir de l’emplacement de sauvegarde depuis **/var/backup** |
 | `CQ63AssetsMetadataFormsUpdate` | &lt; 6.3 | Immédiat | Déplace des ressources, des schémas de métadonnées personnalisés et des profils de traitement depuis **/apps** to **/conf** et convertit les formulaires de profils de métadonnées et de schéma de métadonnées de coral2 à coral3. |
 | `CQ63AssetsSearchFacetsUpdate` | &lt; 6.3 | Immédiat | Déplace les ressources et les facettes de recherche personnalisées depuis **/apps** to **/conf** et convertit les formulaires de profils de métadonnées et de schéma de métadonnées de coral2 à coral3. |
-| `CQ63InboxItemsUpgrade` | &lt; 6.3 | Immédiat | Met à jour InboxItems pour l’ordre des éléments de boîte de réception (ajustement des métadonnées pour un tri efficace) |
+| `CQ63InboxItemsUpgrade` | &lt; 6.3 | Immédiat | Met à jour InboxItems pour l’ordre des éléments de la boîte de réception (ajustement des métadonnées pour un tri efficace) |
 | `CQ63MetadataSchemaConfigUpdate` | &lt; 6.3 | Immédiat | Ajuste la propriété metadataSchema sur le dossier en remplaçant les chemins relatifs par **/conf** à la place de **/apps** |
 | `CQ63MobileAppsNavUpgrade` | &lt; 6.3 | Immédiat | Ajustement de la structure de navigation |
 | `CQ63MonitoringDashboardsConfigUpdate` | &lt; 6.3 | Immédiat | Déplace les configurations personnalisées des tableaux de bord de surveillance depuis **/libs** et **/apps** |

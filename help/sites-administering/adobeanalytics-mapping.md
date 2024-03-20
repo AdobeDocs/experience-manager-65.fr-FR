@@ -7,10 +7,11 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 55%
+source-wordcount: '1449'
+ht-degree: 56%
 
 ---
 
@@ -197,9 +198,9 @@ En prenant comme exemple l’image ci-dessus, la variable **AEM vue** possède l
 >
 >Par exemple, à côté de `prop3`, vous pouvez ajouter :
 >     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
-pour envoyer la variable *title* d’une page concaténé avec sa variable *sitesection* à l’aide d’un *:* (deux-points) et précédé du préfixe *Adobe* en tant que `prop3`.
+>pour envoyer la variable *title* d’une page concaténé avec sa variable *sitesection* à l’aide d’un *:* (deux-points) et précédé du préfixe *Adobe* en tant que `prop3`.
 >
 
 >[!CAUTION]
 >
-Une seule variable CQ peut être mappée à une variable Adobe Analytics à un moment donné.
+>Une seule variable CQ peut être mappée à une variable Adobe Analytics à un moment donné.

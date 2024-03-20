@@ -7,9 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
-workflow-type: ht
-source-wordcount: '1132'
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '1138'
 ht-degree: 100%
 
 ---

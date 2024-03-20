@@ -5,7 +5,8 @@ contentOwner: gtalwar
 topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 59%
@@ -17,7 +18,7 @@ ht-degree: 59%
 
 Cet article comprend une présentation, des exemples de cas d’utilisation, un processus de création et les différences entre les communications interactives et les lettres.
 
-![hero-image](do-not-localize/correspondence-management.png)
+![image principale](do-not-localize/correspondence-management.png)
 
 Les communications interactives centralisent et gèrent la création, l’assemblage et la livraison de correspondances sécurisées, personnalisées et interactives telles que la correspondance commerciale, les documents, les déclarations, les prospectus de gestion de patrimoine, les e-mails marketing, les factures et les kits de bienvenue.
 
@@ -82,7 +83,7 @@ La communication interactive est l’approche par défaut et recommandée pour c
    <td>Impression</td>
   </tr>
   <tr>
-   <td>Schema</td>
+   <td>Schéma</td>
    <td>Modèle de données de formulaire </td>
    <td>Dictionnaire de données </td>
   </tr>

@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '591'
-ht-degree: 90%
+ht-degree: 87%
 
 ---
 
@@ -33,8 +34,8 @@ Correspondence Management expose les API pour récupérer des instances de lett
 
 >[!NOTE]
 >
->LetterInstanceService est un service OSGI et son instance peut être récupérée à l’aide de @Reference dans une classe Java™
-ou sling.getService (LetterInstanceService. ) dans JSP.
+>LetterInstanceService est un service OSGI et son instance peut être récupérée à l’aide de @Reference en Java™
+>ou sling.getService (LetterInstanceService. ) dans JSP.
 
 ### Utilisation de getAllLetterInstances {#using-nbsp-getallletterinstances}
 
@@ -146,7 +147,7 @@ L’interface utilisateur CCR prend en charge le paramètre cmLetterInstanceId, 
 
 >[!NOTE]
 >
-Il n’est pas nécessaire de préciser les valeurs cmLetterId ou cmLetterName/State/Version lorsque vous rechargez une correspondance, car les données envoyées contiennent déjà tous les détails sur la correspondance rechargée. RandomNo est employé pour éviter des problèmes de mémoire cache du navigateur. Vous pouvez utiliser la date et l’heure comme un nombre aléatoire.
+>Il n’est pas nécessaire de préciser les valeurs cmLetterId ou cmLetterName/State/Version lorsque vous rechargez une correspondance, car les données envoyées contiennent déjà tous les détails sur la correspondance rechargée. RandomNo est employé pour éviter des problèmes de mémoire cache du navigateur. Vous pouvez utiliser la date et l’heure comme un nombre aléatoire.
 
 ### Ouverture d’une instance de lettre envoyée {#opening-submitted-letter-instance}
 

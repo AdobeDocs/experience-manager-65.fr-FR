@@ -6,7 +6,8 @@ content-type: reference
 topic-tags: author, correspondence-management
 feature: Adaptive Forms, Foundation Components
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
-source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 100%
@@ -46,10 +47,10 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 
 >[!NOTE]
 >
->Sélection multiple sur un ordinateur de bureau :
+Sélection multiple sur un ordinateur de bureau :
 >
->* Windows : maintenez la touche Ctrl enfoncée tout en cliquant sur les composants requis.
->* macOS : Commande + clic sur les composants nécessaires.
+* Windows : maintenez la touche Ctrl enfoncée tout en cliquant sur les composants requis.
+* macOS : Commande + clic sur les composants nécessaires.
 >
 
 ## Éditeur de thème  {#themeeditor}
@@ -64,7 +65,7 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 
 >[!NOTE]
 >
->Les raccourcis marqués d’un « &amp;ast; » fonctionnent à la fois avec les touches Ctrl et Commande sous macOS.
+Les raccourcis marqués d’un « &amp;ast; » fonctionnent à la fois avec les touches Ctrl et Commande sous macOS.
 
 ## Explorateur de contenu  {#contentbrowser}
 

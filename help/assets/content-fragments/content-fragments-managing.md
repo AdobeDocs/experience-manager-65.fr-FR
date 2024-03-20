@@ -4,7 +4,8 @@ description: Découvrez comment utiliser la console Assets pour gérer vos fragm
 feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1712'
 ht-degree: 96%
@@ -299,16 +300,16 @@ Outre les options standard, la [Chronologie](/help/assets/manage-assets.md#timel
 
 >[!NOTE]
 >
-Les commentaires sont les suivants :
+>Les commentaires sont les suivants :
 >
-* Fonctionnalité standard de toutes les ressources
-* Créé dans le journal
-* Lié à la ressource de fragment
+>* Fonctionnalité standard de toutes les ressources
+>* Créé dans le journal
+>* Lié à la ressource de fragment
 >
-Les annotations (pour les fragments de contenu) sont les suivantes :
+>Les annotations (pour les fragments de contenu) sont les suivantes :
 >
-* Entré dans l’éditeur de fragments
-* Spécifique à un segment de texte sélectionné dans le fragment
+>* Entré dans l’éditeur de fragments
+>* Spécifique à un segment de texte sélectionné dans le fragment
 >
 
 Par exemple :
@@ -339,7 +340,7 @@ Ces dernières sont affichées dans des versions côte à côte dans lesquelles�
 
 >[!NOTE]
 >
-Vous ne pouvez pas modifier le contenu d’un fragment lors de la comparaison de fragments.
+>Vous ne pouvez pas modifier le contenu d’un fragment lors de la comparaison de fragments.
 
 ![comparaison](assets/cfm-managing-06.png)
 
@@ -357,9 +358,9 @@ Vous pouvez rétablir une version spécifique de votre fragment :
 
 >[!CAUTION]
 >
-Si votre fragment est basé sur un modèle, vous devez vous assurer que le [modèle a été publié](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+>Si votre fragment est basé sur un modèle, vous devez vous assurer que le [modèle a été publié](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
-Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
+>Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
 
 Les fragments de contenu doivent être publiés pour être utilisés dans l’environnement de publication. Ils peuvent être publiés :
 
@@ -369,7 +370,7 @@ Les fragments de contenu doivent être publiés pour être utilisés dans l’en
 
 >[!CAUTION]
 >
-Une fois qu’un fragment a été publié et/ou référencé, AEM affiche un avertissement lorsqu’un auteur ouvre à nouveau ce fragment en mode d’édition. Il s’agit de signaler que les modifications apportées au fragment seront également répercutées sur les pages référencées.
+>Une fois qu’un fragment a été publié et/ou référencé, AEM affiche un avertissement lorsqu’un auteur ouvre à nouveau ce fragment en mode d’édition. Il s’agit de signaler que les modifications apportées au fragment seront également répercutées sur les pages référencées.
 
 ## Suppression d’un fragment {#deleting-a-fragment}
 
@@ -380,11 +381,11 @@ Pour supprimer un fragment :
 
    >[!NOTE]
    >
-   L’action **Supprimer** n’est pas proposée comme action rapide.
+   >L’action **Supprimer** n’est pas proposée comme action rapide.
 
 3. Sélectionnez **Supprimer** dans la barre d’outils.
 4. Confirmez l’action **Supprimer**.
 
    >[!CAUTION]
    >
-   Si le fragment est déjà référencé dans une page, un message d’avertissement vous demande de confirmer que vous souhaitez poursuivre et **forcer la suppression**. Le fragment et son composant de fragment de contenu seront supprimés de toutes les pages de contenu.
+   >Si le fragment est déjà référencé dans une page, un message d’avertissement vous demande de confirmer que vous souhaitez poursuivre et **forcer la suppression**. Le fragment et son composant de fragment de contenu seront supprimés de toutes les pages de contenu.

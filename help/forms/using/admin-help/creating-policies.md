@@ -7,10 +7,11 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4713'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -106,7 +107,7 @@ Lorsque vous modifiez des stratégies, ces restrictions s’appliquent :
 
    >[!NOTE]
    >
-   Vous pouvez créer un nom de stratégie contenant des caractères étendus. Toutefois, lors d’une comparaison entre deux chaînes, les caractères accentués et non accentués tels que &quot;e&quot; et &quot;é&quot; sont considérés comme identiques. Lorsqu’une personne crée une stratégie, une comparaison est effectuée pour vérifier s’il existe une stratégie portant le même nom. La comparaison ne peut pas distinguer les noms identiques, à l’exception des caractères accentués. On suppose que la stratégie a déjà été ajoutée à la base de données et que la nouvelle stratégie n&#39;a pas été ajoutée.
+   >Vous pouvez créer un nom de stratégie contenant des caractères étendus. Toutefois, lors d’une comparaison entre deux chaînes, les caractères accentués et non accentués tels que &quot;e&quot; et &quot;é&quot; sont considérés comme identiques. Lorsqu’une personne crée une stratégie, une comparaison est effectuée pour vérifier s’il existe une stratégie portant le même nom. La comparaison ne peut pas distinguer les noms identiques, à l’exception des caractères accentués. On suppose que la stratégie a déjà été ajoutée à la base de données et que la nouvelle stratégie n&#39;a pas été ajoutée.
 
 1. Ajoutez des utilisateurs et des groupes à la stratégie et définissez les autorisations appropriées. (Voir [Utilisateurs et groupes](creating-policies.md#users-and-groups).)
 1. Sous Paramètres généraux, sélectionnez les options appropriées. (Voir [Paramètres généraux](creating-policies.md#general-settings).)
@@ -126,7 +127,7 @@ Dans la zone Utilisateurs et groupes , vous spécifiez les utilisateurs ayant ac
 
 >[!NOTE]
 >
-L’éditeur est l’utilisateur qui protège le document avec la stratégie. Cet utilisateur est toujours inclus par défaut dans une stratégie, avec des droits d’accès complets, notamment des fonctionnalités de révocation et de changement de stratégie. Toutefois, les administrateurs peuvent modifier les droits d’accès de l’éditeur pour les stratégies partagées. Par exemple, l’administrateur peut empêcher l’éditeur de révoquer l’accès au document ou de changer de stratégie.
+>L’éditeur est l’utilisateur qui protège le document avec la stratégie. Cet utilisateur est toujours inclus par défaut dans une stratégie, avec des droits d’accès complets, notamment des fonctionnalités de révocation et de changement de stratégie. Toutefois, les administrateurs peuvent modifier les droits d’accès de l’éditeur pour les stratégies partagées. Par exemple, l’administrateur peut empêcher l’éditeur de révoquer l’accès au document ou de changer de stratégie.
 
 **Ajouter un utilisateur ou un groupe :** Pour ajouter un utilisateur ou un groupe d’utilisateurs, cliquez sur Ajouter un utilisateur ou un groupe, puis sur Recherche avancée afin de trouver des utilisateurs ou des groupes. Les utilisateurs incluent les utilisateurs internes de votre entreprise et les utilisateurs invités qui se sont enregistrés auprès de Document Security. Lorsque vous sélectionnez cette option, la page Ajouter un utilisateur ou un groupe s’affiche :
 
@@ -138,7 +139,7 @@ L’éditeur est l’utilisateur qui protège le document avec la stratégie. Ce
 
 >[!NOTE]
 >
-Si vous saisissez un nom d’utilisateur invité ou une adresse électronique correcte et qu’aucun résultat n’est renvoyé, l’utilisateur n’est peut-être pas encore enregistré ou le compte peut être supprimé. Vous pouvez essayer d’ajouter l’utilisateur en tant qu’utilisateur invité ou contacter votre administrateur.
+>Si vous saisissez un nom d’utilisateur invité ou une adresse électronique correcte et qu’aucun résultat n’est renvoyé, l’utilisateur n’est peut-être pas encore enregistré ou le compte peut être supprimé. Vous pouvez essayer d’ajouter l’utilisateur en tant qu’utilisateur invité ou contacter votre administrateur.
 
 **Inviter un nouvel utilisateur :** Pour ajouter un utilisateur invité, cliquez sur Inviter un nouvel utilisateur, saisissez l’adresse électronique de l’utilisateur dans la zone qui s’affiche, puis cliquez sur Inviter. Cette option est disponible uniquement si l’administrateur l’a activée. Lorsque vous ajoutez de nouveaux utilisateurs invités à une stratégie, Document Security envoie un courrier électronique d’invitation à l’enregistrement si les utilisateurs ne sont pas déjà invités à s’enregistrer. Les utilisateurs doivent utiliser le lien contenu dans l’e-mail pour créer un compte, puis activer le compte.
 
@@ -148,7 +149,7 @@ Après enregistrement, les utilisateurs invités peuvent utiliser les documents 
 
 >[!NOTE]
 >
-Pour autoriser l’accès anonyme à un document protégé par une stratégie qui ne l’a pas actuellement, supprimez la stratégie existante, puis appliquez une stratégie qui autorise l’accès anonyme. Si vous changez de stratégie ou si vous la modifiez, les utilisateurs doivent toujours se connecter pour accéder au document.
+>Pour autoriser l’accès anonyme à un document protégé par une stratégie qui ne l’a pas actuellement, supprimez la stratégie existante, puis appliquez une stratégie qui autorise l’accès anonyme. Si vous changez de stratégie ou si vous la modifiez, les utilisateurs doivent toujours se connecter pour accéder au document.
 
 #### Spécification des autorisations de document pour les utilisateurs et les groupes {#specify-the-document-permissions-for-users-and-groups}
 
@@ -212,13 +213,13 @@ La zone Paramètres généraux contient les paramètres suivants :
 
 >[!NOTE]
 >
-les dates de validité reposent sur le fuseau horaire du système Document Security, et non sur celui de votre ordinateur local.
+>les dates de validité reposent sur le fuseau horaire du système Document Security, et non sur celui de votre ordinateur local.
 
 **Réaliser un audit :** permet d’activer ou de désactiver la réalisation d’un audit des événements associés à un document protégé par une politique. Par exemple, Document Security peut enregistrer des événements tels que des tentatives d’ouverture d’un document. Les événements contrôlés apparaissent dans la liste de la page Événements . Si vous ne sélectionnez pas cette option, Document Security n’enregistre pas les événements pour les documents associés à la stratégie.
 
 >[!NOTE]
 >
-L’administrateur doit également activer le contrôle du serveur sur la page de configuration des paramètres de contrôle et de confidentialité pour que la fonction de contrôle fonctionne.
+>L’administrateur doit également activer le contrôle du serveur sur la page de configuration des paramètres de contrôle et de confidentialité pour que la fonction de contrôle fonctionne.
 
 **Suivi des utilisations étendues :** activez ou désactivez le suivi des utilisations étendues. Document Security prend en charge le suivi des événements utilisateur associés à diverses opérations effectuées sur un fichier de PDF. Vous pouvez accéder à l’objet Document Security à l’aide d’un script Java. Un clic sur un bouton, un fichier multimédia en cours de lecture ou l’enregistrement d’un fichier sont quelques exemples d’événements déclenchés à partir d’un PDF protégé par une stratégie. À l’aide de l’objet Document Security, vous pouvez également récupérer des informations sur l’utilisateur. Le suivi des événements peut être activé à partir du serveur Document Security au niveau global ou au niveau des stratégies.
 
@@ -244,7 +245,7 @@ Si vous remplacez les paramètres d’authentification globale, vous pouvez choi
 
 >[!NOTE]
 >
-L’authentification étendue est prise en charge sur Apple Mac OS X avec Adobe Acrobat version 11.0.6 et ultérieure.
+>L’authentification étendue est prise en charge sur Apple Mac OS X avec Adobe Acrobat version 11.0.6 et ultérieure.
 
 ### Paramètres avancés {#advanced-settings}
 
@@ -258,7 +259,7 @@ Si vous modifiez une stratégie et que l’administrateur a supprimé un filigra
 
 >[!NOTE]
 >
-Dans le cas des stratégies qui autorisent l’accès anonyme d’un utilisateur, le nom d’utilisateur et l’identifiant d’un utilisateur anonyme ne s’affichent pas en filigrane, même si vous sélectionnez ce type de filigrane.
+>Dans le cas des stratégies qui autorisent l’accès anonyme d’un utilisateur, le nom d’utilisateur et l’identifiant d’un utilisateur anonyme ne s’affichent pas en filigrane, même si vous sélectionnez ce type de filigrane.
 
 **N’utiliser que des modules externes Acrobat certifiés pour PDF :** lorsque cette option est sélectionnée pour une politique, elle spécifie qu’Acrobat version 8.0 ou ultérieure doit s’exécuter en mode certifié lors de l’ouverture de documents sécurisés par cette politique. Lorsqu’Acrobat s’exécute en mode certifié, il ne charge aucun module externe tiers.
 
@@ -279,7 +280,7 @@ La zone Paramètres avancés non modifiables contient les paramètres suivants. 
 **Algorithme de chiffrement et longueur de la clé :** utilisé pour protéger vos documents. Vous pouvez choisir parmi les options suivantes :
 
 * AES 128 bits
-* AES 256 bits. Seuls Acrobat 9.0 et versions ultérieures prennent en charge cette option. Pour utiliser le chiffrement AES 256 pour les fichiers de PDF, récupérez et installez les fichiers Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy. Ces fichiers remplacent les fichiers local_policy.jar et US_export_policy.jar dans le dossier [JAVE_HOME]/lib/security. Par exemple, si vous utilisez Sun JDK 1.6, copiez les fichiers téléchargés dans le dossier [racine_déploiement]/Java/jdk1.6.0_26/lib/security. Vous pouvez télécharger ces fichiers à partir de [Téléchargements de Java SE](https://java.sun.com/javase/downloads/index.jsp).
+* AES 256 bits. Seuls Acrobat 9.0 et versions ultérieures prennent en charge cette option. Pour utiliser le chiffrement AES 256 pour les fichiers PDF, récupérez et installez les fichiers Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy. Ces fichiers remplacent les fichiers local_policy.jar et US_export_policy.jar dans le dossier [JAVE_HOME]/lib/security. Par exemple, si vous utilisez Sun JDK 1.6, copiez les fichiers téléchargés dans le dossier [racine_déploiement]/Java/jdk1.6.0_26/lib/security. Vous pouvez télécharger ces fichiers à partir de [Téléchargements de Java SE](https://java.sun.com/javase/downloads/index.jsp).
 * Aucun chiffrement. Acrobat 9.0 et versions ultérieures prennent actuellement en charge cette option. Si vous sélectionnez cette option, les options Restrictions du document sont désactivées. Cette option peut s’avérer utile si vous souhaitez utiliser Document Security pour le contrôle des versions ou le contrôle des documents, mais que vous ne souhaitez pas chiffrer le document.
 
 **Restrictions du document :** sélectionnez les composants du document PDF à chiffrer. D’autres applications clientes chiffrent le document entier, mais pas les fichiers liés ou incorporés. Vous pouvez choisir parmi les options suivantes :
@@ -296,7 +297,7 @@ Un X rouge apparaît en regard d’une stratégie désactivée.
 
 >[!NOTE]
 >
-Les administrateurs ne peuvent pas désactiver les stratégies personnelles, et les utilisateurs ne peuvent pas activer ni désactiver leurs propres stratégies.
+>Les administrateurs ne peuvent pas désactiver les stratégies personnelles, et les utilisateurs ne peuvent pas activer ni désactiver leurs propres stratégies.
 
 1. Dans la page Document Security, cliquez sur Stratégies, puis sur l’onglet Jeux de stratégies.
 1. Cliquez sur le nom du jeu de stratégies approprié, puis sur l’onglet Stratégies .
@@ -322,7 +323,7 @@ Vous pouvez afficher des informations plus détaillées sur une stratégie qui a
 
 >[!NOTE]
 >
-Les stratégies qu’Acrobat génère automatiquement pour les destinataires des documents joints aux emails dans Microsoft Outlook n’apparaissent pas dans la liste des stratégies. Vous ne pouvez afficher ces stratégies qu’en ouvrant la page Détails du document du document associé.
+>Les stratégies qu’Acrobat génère automatiquement pour les destinataires des documents joints aux emails dans Microsoft Outlook n’apparaissent pas dans la liste des stratégies. Vous ne pouvez afficher ces stratégies qu’en ouvrant la page Détails du document du document associé.
 
 1. Dans la page Document Security, cliquez sur Stratégies, puis sur l’onglet Mes stratégies.
 1. Renseignez les informations de recherche afin de pouvoir rechercher des stratégies personnelles.
@@ -375,7 +376,7 @@ Les utilisateurs externes ne peuvent copier des stratégies que si l’administr
 
    >[!NOTE]
    >
-   Vous pouvez créer un nom de stratégie contenant des caractères étendus. Toutefois, lors d’une comparaison entre deux chaînes, les caractères accentués et non accentués tels que &quot;e&quot; et &quot;é&quot; sont considérés comme identiques. Lorsqu’une personne crée une stratégie, une comparaison est effectuée pour vérifier s’il existe une stratégie portant le même nom. La comparaison ne peut pas distinguer les noms identiques, à l’exception des caractères accentués. On suppose que la stratégie a déjà été ajoutée à la base de données et que la nouvelle stratégie n&#39;a pas été ajoutée.
+   >Vous pouvez créer un nom de stratégie contenant des caractères étendus. Toutefois, lors d’une comparaison entre deux chaînes, les caractères accentués et non accentués tels que &quot;e&quot; et &quot;é&quot; sont considérés comme identiques. Lorsqu’une personne crée une stratégie, une comparaison est effectuée pour vérifier s’il existe une stratégie portant le même nom. La comparaison ne peut pas distinguer les noms identiques, à l’exception des caractères accentués. On suppose que la stratégie a déjà été ajoutée à la base de données et que la nouvelle stratégie n&#39;a pas été ajoutée.
 
 1. Cliquez sur OK.
 
@@ -392,7 +393,7 @@ Les utilisateurs invités ne peuvent supprimer des stratégies que si l’admini
 
 >[!NOTE]
 >
-Utilisez l’application cliente pour supprimer des stratégies de documents. (Voir l’aide d’Acrobat ou l’aide des extensions Acrobat Reader DC appropriée.)
+>Utilisez l’application cliente pour supprimer des stratégies de documents. (Voir l’aide d’Acrobat ou l’aide des extensions Acrobat Reader DC appropriée.)
 
 ## Tri de la liste des stratégies {#sort-the-policy-list}
 

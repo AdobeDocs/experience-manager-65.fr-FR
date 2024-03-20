@@ -7,9 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2503'
+source-wordcount: '2481'
 ht-degree: 82%
 
 ---
@@ -291,7 +292,7 @@ Vous pouvez appeler un processus de courte durée AEM Forms nommé *MyApplicatio
 
 Lorsque ce processus est appelé, il effectue les actions suivantes :
 
-1. Obtient le document de PDF non sécurisé transmis au processus. Cette action est basée sur l’opération `SetValue`. Le paramètre d’entrée pour ce processus est une variable de processus `document` désignée par `inDoc`.
+1. Obtention du document PDF non sécurisé transmis au processus. Cette action est basée sur l’opération `SetValue`. Le paramètre d’entrée pour ce processus est une variable de processus `document` désignée par `inDoc`.
 1. Chiffrement du document PDF avec un mot de passe. Cette action est basée sur l’opération `PasswordEncryptPDF`. Le document PDF chiffré avec un mot de passe est retourné dans une variable de processus nommée `outDoc`.
 
    Lorsque ce processus est appelé à l’aide d’une requête REST, le document de PDF chiffré s’affiche dans le navigateur web. Avant d’afficher le document PDF, vous devez spécifier le mot de passe (sauf si la protection est désactivée). Le code HTML suivant représente une demande d’appel REST au processus `MyApplication/EncryptDocument`.

@@ -6,10 +6,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 169f3d94-ac00-41c7-853e-ecf0dbee559f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
@@ -25,4 +26,4 @@ Pour plus d’informations sur le service Forms, voir [Référence des services]
 
 La page Forms d’Administration Console vous permet de configurer le comportement du service Forms. Ces paramètres s’appliquent à tous les appels du service. Tous les paramètres envoyés par l’intermédiaire du SDK d’AEM forms remplacent les paramètres définis dans la console d’administration ; toutefois, ils n’affectent que cet appel particulier.
 
-Après avoir modifié les paramètres Forms dans Administration Console, cliquez sur Enregistrer. Vous n’avez pas besoin de redémarrer le serveur pour que les modifications soient prises en compte. Cependant, vous devrez peut-être arrêter et redémarrer le service Forms lors de la configuration des paramètres du mode de mise en cache. (Voir [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
+Après avoir modifié les paramètres Forms dans Administration Console, cliquez sur Enregistrer. Vous n’avez pas besoin de redémarrer le serveur pour que les modifications soient prises en compte. Cependant, vous devrez peut-être arrêter et redémarrer le service Forms lors de la configuration des paramètres du mode de mise en cache. (voir [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services)).

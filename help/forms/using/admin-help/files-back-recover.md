@@ -6,10 +6,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2017'
-ht-degree: 13%
+ht-degree: 15%
 
 ---
 
@@ -88,7 +89,7 @@ Pour sauvegarder la base de données en temps réel, vous devez utiliser le mode
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs de concevoir, gérer, surveiller et optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) prend fin le 12/31/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/fr/support/products/enterprise/eol/eol_matrix.html).
+>Remarque : Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs et utilisatrices de concevoir, de gérer, de surveiller et d’optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/fr/support/products/enterprise/eol/eol_matrix.html).
 
 ### DB2 {#db2}
 
@@ -96,7 +97,7 @@ Configurez votre base de données DB2 pour qu’elle s’exécute en mode de con
 
 >[!NOTE]
 >
-Si votre environnement d’AEM forms a été mis à niveau à partir d’une version précédente d’AEM forms et utilise DB2, la sauvegarde en ligne n’est pas prise en charge. Dans ce cas, vous devez arrêter AEM forms et effectuer une sauvegarde hors ligne. Les futures versions d’AEM forms prendront en charge la sauvegarde en ligne pour les clients effectuant la mise à niveau.
+>Si votre environnement d’AEM forms a été mis à niveau à partir d’une version précédente d’AEM forms et utilise DB2, la sauvegarde en ligne n’est pas prise en charge. Dans ce cas, vous devez arrêter AEM forms et effectuer une sauvegarde hors ligne. Les futures versions d’AEM forms prendront en charge la sauvegarde en ligne pour les clients effectuant la mise à niveau.
 
 IBM dispose d’une suite d’outils et de systèmes d’aide pour aider les administrateurs de base de données à gérer leurs tâches de sauvegarde et de récupération :
 
@@ -132,7 +133,7 @@ Utilisez MySQLAdmin ou modifiez les fichiers INI dans Windows pour configurer vo
 
 >[!NOTE]
 >
-Le mode de connexion binaire par défaut pour MySQL est &quot;Statement&quot;, qui est incompatible avec les tables utilisées par Content Services (obsolète). L’utilisation de la connexion binaire dans ce mode par défaut entraîne l’échec de Content Services (obsolète). Si votre système inclut Content Services (obsolète), utilisez le mode de journalisation &quot;mixte&quot;. Pour activer la journalisation &quot;mixte&quot;, ajoutez l’argument suivant au fichier my.ini : `binlog_format=mixed log-bin=logname`
+>Le mode de connexion binaire par défaut pour MySQL est &quot;Statement&quot;, qui est incompatible avec les tables utilisées par Content Services (obsolète). L’utilisation de la connexion binaire dans ce mode par défaut entraîne l’échec de Content Services (obsolète). Si votre système inclut Content Services (obsolète), utilisez le mode de journalisation &quot;mixte&quot;. Pour activer la journalisation &quot;mixte&quot;, ajoutez l’argument suivant au fichier my.ini : `binlog_format=mixed log-bin=logname`
 
 Vous pouvez utiliser l’utilitaire mysqldump pour obtenir la sauvegarde complète de la base de données. Des sauvegardes complètes sont requises, mais elles ne sont pas toujours pratiques. Ils produisent des fichiers de sauvegarde volumineux et prennent du temps à générer. Pour exécuter une sauvegarde incrémentielle, veillez à démarrer le serveur avec l’option `log-bin`, comme décrit dans la section précédente. A chaque fois que le serveur MySQL redémarre, il cesse d’écrire dans le journal binaire courant, en crée un nouveau, qui devient dès lors le nouveau journal binaire courant. Vous pouvez forcer un basculement manuel avec la commande `FLUSH LOGS SQL`. Après la première sauvegarde intégrale, les sauvegardes incrémentielles suivantes sont effectuées en utilisant l’utilitaire mysqladmin avec la commande `flush-logs`, qui crée le fichier journal suivant.
 
@@ -193,6 +194,6 @@ Si vous avez installé des polices supplémentaires dans votre environnement de 
 
 >[!NOTE]
 >
-Par défaut, les polices Adobe installées avec AEM forms se trouvent dans la variable `[aem-forms root]/fonts` répertoire .
+>Par défaut, les polices Adobe installées avec AEM forms se trouvent dans la variable `[aem-forms root]/fonts` répertoire .
 
 Si vous réinitialisez le système d’exploitation sur l’ordinateur hôte et que vous souhaitez utiliser des polices du système d’exploitation précédent, le contenu du répertoire des polices système doit également être sauvegardé. (Pour obtenir des instructions spécifiques, consultez la documentation de votre système d’exploitation).

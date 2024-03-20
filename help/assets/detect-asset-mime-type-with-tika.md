@@ -5,9 +5,10 @@ contentOwner: AG
 role: Admin, Architect
 feature: Metadata,Developer Tools,Asset Management
 exl-id: a312466d-8d84-4c94-af85-1549afc61aed
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: ht
-source-wordcount: '165'
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '166'
 ht-degree: 100%
 
 ---
@@ -28,7 +29,7 @@ Cette fonction est désactivée par défaut. Pour activer la fonction, configure
 
 1. Dans la liste des services, localisez le **[!UICONTROL service de type MIME de gestion des ressources numériques Day CQ]** et cliquez sur **[!UICONTROL Modifier]**.
 
-1. Sélectionnez l’option **[!UICONTROL Détecter le type MIME à partir du contenu]** pour permettre à l’analyse des ressources transférées de déterminer leur type MIME, tout en ignorant les extensions de fichier. Par défaut, cette option n’est pas sélectionnée.
+1. Sélectionnez l’option **[!UICONTROL Détecter le type MIME à partir du contenu]** pour permettre à l’analyse des ressources chargées de déterminer leur type MIME, tout en ignorant les extensions de fichier. Par défaut, cette option n’est pas sélectionnée.
 
    ![chlimage_1-333](assets/chlimage_1-333.png)
 

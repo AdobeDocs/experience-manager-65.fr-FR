@@ -5,7 +5,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 exl-id: 3458471a-9815-463e-8044-68631073863c
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 31%
@@ -55,7 +56,7 @@ Vous trouverez ci-dessous les options globales définies. Ces options sont dispo
    <td>Position du champ dans la séquence de tabulation du formulaire. Remplacez tabIndex uniquement si vous souhaitez modifier l’ordre de tabulation par défaut du formulaire.</td>
   </tr>
   <tr>
-   <td>rôle</td>
+   <td>Rôle</td>
    <td>Rôle de l’élément, par exemple, En-tête ou Tableau.</td>
   </tr>
   <tr>

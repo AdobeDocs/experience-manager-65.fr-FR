@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2282'
+source-wordcount: '2314'
 ht-degree: 64%
 
 ---
@@ -212,7 +213,7 @@ La sauvegarde en ligne utilise l’algorithme suivant :
 
 1. Lors de la création d’un fichier ZIP, la première étape consiste à créer ou à chercher le répertoire cible.
 
-   * Si vous effectuez une sauvegarde dans un fichier ZIP, un répertoire temporaire est créé. Le nom du répertoire commence par `backup.` et se termine par `.temp` ; par exemple, `backup.f4d3.temp`.
+   * Si vous effectuez une sauvegarde dans un fichier ZIP, un répertoire temporaire est créé. Le nom du répertoire commence par `backup.` et se termine par `.temp`; par exemple, `backup.f4d3.temp`.
    * Si vous effectuez une sauvegarde dans un répertoire, le nom spécifié dans le chemin d’accès cible est utilisé. Un répertoire existant peut être utilisé, sinon un nouveau répertoire sera créé.
 
       Un fichier vide nommé « `backupInProgress.txt` » est créé dans le répertoire cible au début de la sauvegarde. Ce fichier est supprimé lorsque la sauvegarde est terminée.

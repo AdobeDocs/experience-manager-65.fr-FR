@@ -6,10 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 docset: aem65
 feature: Document Services
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+exl-id: 82b0293a-711f-4769-9b11-b4cff4fec021
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '511'
-ht-degree: 60%
+ht-degree: 62%
 
 ---
 
@@ -19,7 +21,7 @@ ht-degree: 60%
 
 Le service Output est un service OSGi qui fait partie d’AEM Document Services. Le service Output prend en charge divers formats de sortie et fonctions de conception de sortie d’AEM Forms Designer. Le service Output peut convertir des modèles XFA et des données XML pour générer des documents d’impression dans différents formats.
 
-Le service Output vous permet de créer des applications qui vous permettent :
+Le service de sortie permet de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
 
 * Générer des documents de formulaire définitifs en complétant des fichiers de modèle avec des données XML.
 * Générez des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs, PostScript, PCL et ZPL.

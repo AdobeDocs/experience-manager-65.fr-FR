@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 2428914c-5fb0-439e-a1ef-8ee30b890f58
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 92%
+source-wordcount: '773'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +22,7 @@ Adobe se réjouit d’annoncer la disponibilité de la diffusion de contenu HTTP
 
 Le HTTP/2 améliore la communication entre les navigateurs et les serveurs, en accélérant le transfert d’informations tout en réduisant la puissance de traitement nécessaire.
 
-Le site web suivant décrit HTTP/2 et ses avantages de manière simple et rapide :
+Le site web suivant décrit le HTTP/2 et ses avantages de manière simple et rapide :
 
 [Ce que vous devez savoir sur le HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)
 
@@ -78,7 +79,7 @@ Les demandes sont traitées dans l’ordre dans lequel l’assistance clientèle
 
 ## Quels risques présente la transition vers HTTP/2 ? {#what-are-the-risks-with-moving-to-http}
 
-La transition vers HTTP/2 efface votre cache sur le réseau CDN, car elle implique de passer à une nouvelle configuration du réseau CDN.
+La transition vers HTTP/2 efface votre cache sur le réseau CDN, car elle implique de passer à une nouvelle configuration de réseau CDN.
 
 Le contenu non mis en cache atteint directement les serveurs Adobe d’origine jusqu’à ce que le cache soit reconstruit. C’est pour cette raison qu’Adobe prévoit de ne gérer que quelques transitions à la fois afin d’offrir des performances acceptables lors de l’extraction des demandes du site d’origine d’Adobe.
 

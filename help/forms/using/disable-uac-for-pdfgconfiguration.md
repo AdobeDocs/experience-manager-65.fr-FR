@@ -2,10 +2,11 @@
 title: Désactiver l’UAC pour la configuration PDFG applicable à la fois à JEE et OSGI
 description: Découvrez les étapes à suivre pour désactiver la configuration UAC pour PDFG afin de corriger la conversion Word vers PDF.
 exl-id: 785b7bb4-7158-45ea-a1e5-eebf3dc3ebc3
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 58%
+source-wordcount: '265'
+ht-degree: 62%
 
 ---
 
@@ -31,9 +32,9 @@ Procédez comme suit :
    1. Microsoft® recommande de sauvegarder le registre avant de le modifier. Pour obtenir la procédure détaillée, voir [Comment sauvegarder et restaurer le registre dans Windows](https://support.microsoft.com/fr-fr/help/322756).
    1. Ouvrez l’éditeur de registre Microsoft® Windows. Pour ouvrir l’éditeur de registre, accédez à Démarrer > Exécuter, saisissez regedit, puis cliquez sur OK.
    1. Accédez à `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Vérifiez que la valeur de EnableLUA est définie sur 0 (zéro).
-   1. Assurez-vous que la valeur de **EnableLUA** est définie sur 0 (zéro). Si la valeur n’est pas 0, remplacez la valeur par 0. Fermez l’éditeur du registre.
+   1. Assurez-vous que la valeur de **EnableLUA** est définie sur 0 (zéro). Si la valeur n’est pas 0, remplacez-la par 0. Fermez l’éditeur du registre.
 
-1. Redémarrez votre ordinateur.
+1. Redémarrez l’ordinateur.
 
 ## Application {#appliesto}
 

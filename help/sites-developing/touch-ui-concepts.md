@@ -1,5 +1,5 @@
 ---
-title: Concepts de l’interface utilisateur tactile d’Adobe Experience Manager
+title: Concepts de l’interface utilisateur tactile de Adobe Experience Manager
 description: Avec Adobe Experience Manager 5.6, Adobe a introduit une nouvelle interface utilisateur optimisée pour les écrans tactiles avec une conception adaptée à l’environnement de création.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -7,16 +7,17 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2167'
-ht-degree: 26%
+source-wordcount: '2147'
+ht-degree: 25%
 
 ---
 
-# Concepts de l’interface utilisateur tactile d’Adobe Experience Manager{#concepts-of-the-aem-touch-enabled-ui}
+# Concepts de l’interface utilisateur tactile de Adobe Experience Manager{#concepts-of-the-aem-touch-enabled-ui}
 
-Adobe Experience Manager (AEM) offre une interface utilisateur tactile [responsive design](/help/sites-authoring/responsive-layout.md) pour l’environnement de création conçu pour fonctionner sur les périphériques tactiles et de bureau.
+Adobe Experience Manager (AEM) comprend une interface utilisateur tactile avec [responsive design](/help/sites-authoring/responsive-layout.md) pour l’environnement de création conçu pour fonctionner sur les périphériques tactiles et de bureau.
 
 >[!NOTE]
 >
@@ -27,7 +28,7 @@ L’interface utilisateur tactile se compose des éléments suivants :
 * L’en-tête de la suite qui :
    * affiche le logo,
    * fournit un lien vers la navigation globale,
-   * fournit un lien vers d’autres actions génériques ; tels que Rechercher, Aide, Solutions Experience Cloud, Notifications et Paramètres utilisateur.
+   * Fournit un lien vers d’autres actions génériques, telles que Rechercher, Aide, Solutions Experience Cloud, Notifications et Paramètres utilisateur.
 * Le rail de gauche (affiché lorsque cela s’avère nécessaire et pouvant être masqué) qui peut afficher les options suivantes :
    * Chronologie
    * Références
@@ -38,11 +39,11 @@ L’interface utilisateur tactile se compose des éléments suivants :
    * Chemin de navigation
    * Accès aux actions **Créer** appropriées
    * Affichage des sélections
-* Zone de contenu qui :
+* La zone de contenu qui :
    * Répertorie les éléments de contenu (qu’il s’agisse de pages, de ressources, de publications de forum, etc.)
    * Peut être formaté selon les besoins, par exemple, colonne, carte ou liste
    * utilise la technologie responsive design (l’affichage est redimensionné automatiquement en fonction de la taille de l’appareil et/ou de la fenêtre),
-   * Utilise le défilement infini (plus de pagination, tous les éléments sont répertoriés dans une seule fenêtre)
+   * Utilise le défilement infini (plus de pagination, tous les éléments sont répertoriés dans une seule fenêtre).
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -52,20 +53,20 @@ L’interface utilisateur tactile se compose des éléments suivants :
 
 L’interface utilisateur tactile a été conçue par Adobe pour assurer la cohérence de l’expérience utilisateur sur plusieurs produits. Elle est basée sur :
 
-* **IU Coral** (CUI) une mise en oeuvre du style visuel de l’Adobe pour l’interface utilisateur tactile. L’interface utilisateur Coral fournit tout ce dont votre produit, projet ou application web a besoin pour adopter le style visuel de l’interface utilisateur.
+* **IU Coral** (CUI) une mise en oeuvre du style visuel de l’Adobe pour l’interface utilisateur tactile. L’IU Coral fournit tout ce dont votre produit, projet ou application web a besoin pour adopter le style visuel de l’IU.
 * **IU Granite** Les composants sont créés avec l’interface utilisateur Coral.
 
 Les principes de base de l’interface utilisateur tactile sont les suivants :
 
-* Mobile d’abord (en gardant à l’esprit l’ordinateur de bureau)
+* Mobile d’abord (en gardant à l’esprit le bureau)
 * Responsive design
 * Affichage contextuel
 * Réutilisable
 * Inclure la documentation de référence incorporée
 * Inclure des tests incorporés
-* Une conception de bas en haut pour s’assurer que ces principes sont appliqués à chaque élément et composant
+* Une conception de bas en haut pour garantir que ces principes sont appliqués à chaque élément et composant
 
-Pour une présentation plus détaillée de la structure de l’interface utilisateur tactile, voir [Structure de l’interface utilisateur tactile d’AEM](/help/sites-developing/touch-ui-structure.md).
+Pour une présentation plus détaillée de la structure de l’interface utilisateur tactile, voir [Structure de l’IU tactile AEM](/help/sites-developing/touch-ui-structure.md).
 
 ## Pile technologique AEM {#aem-technology-stack}
 
@@ -79,7 +80,7 @@ Granite est la pile Open Web de l’Adobe, qui fournit divers composants, notamm
 
 * Lanceur d’applications
 * une structure OSGi dans laquelle tout est déployé ;
-* Plusieurs services de compendium OSGi pour la prise en charge de la création d’applications
+* Plusieurs services de compendium OSGi pour prendre en charge la création d’applications
 * Une structure de journalisation complète fournissant diverses API de journalisation
 * Implémentation du référentiel CRX de la spécification API JCR
 * Structure web Apache Sling
@@ -87,7 +88,7 @@ Granite est la pile Open Web de l’Adobe, qui fournit divers composants, notamm
 
 >[!NOTE]
 >
->Granite est exécuté en tant que projet de développement ouvert dans Adobe : les contributions au code, aux discussions et aux problèmes proviennent de l’ensemble de l’entreprise.
+>Granite est exécuté en tant que projet de développement ouvert au sein de l’Adobe : des contributions au code, aux discussions et aux problèmes sont apportées à l’ensemble de l’entreprise.
 >
 >Cependant, Granite est **not** un projet open source. Il est fortement basé sur plusieurs projets open source (Apache Sling, Felix, Jackrabbit, et Lucene en particulier), mais l&#39;Adobe trace une ligne claire entre ce qui est public et ce qui est interne.
 
@@ -117,7 +118,7 @@ L’IU Granite :
 * Fournit une interface utilisateur normalisée par défaut.
 * Extensible
 * Il est conçu pour les appareils mobiles et de bureau (respecte d’abord le mobile).
-* Peut être utilisé dans n’importe quel projet/plateforme/produit/projet basé sur Granite ; par exemple, AEM
+* Peut être utilisé dans n’importe quelle plateforme/produit/projet basé sur Granite ; par exemple, AEM
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
@@ -152,9 +153,9 @@ Elles sont distribuées dans le cadre du package de contenu :
 
 #### Côté serveur {#server-side}
 
-Il est formé par une collection de composants Sling qui permettent à l’auteur de *composer* une application web rapide. Le développeur développe des composants, l’auteur les assemble pour en faire une application web. Le rôle du côté serveur est de donner au client l’accès hypermédia (balisage).
+Il est formé par une collection de composants Sling qui permettent à l’auteur de *composer* une application web rapide. Le développeur développe des composants, l’auteur les assemble pour en faire une application web. Le rôle du côté serveur consiste à attribuer au client l’abordage hypermédia (balisage).
 
-Actuellement, les composants se trouvent dans le référentiel Granite à l’adresse :
+Actuellement, les composants se trouvent dans le référentiel Granite :
 
 `/libs/granite/ui/components/foundation`
 
@@ -197,7 +198,7 @@ Il est aussi intéressant d’examiner les différences entre l’IU Granite et 
 
 ### Composants de base de l’IU Granite {#granite-ui-foundation-components}
 
-Le [Composants de base de l’IU Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) fournissent les blocs de création de base nécessaires à la création d’une interface utilisateur. Ils incluent, entre autres :
+La variable [Composants de base de l’IU Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) fournissent les blocs de création de base nécessaires à la création de n’importe quelle interface utilisateur. Ils incluent, entre autres :
 
 * Bouton
 * Lien hypertexte
@@ -263,11 +264,11 @@ Les [composants d’administration de l’IU Granite](https://developer.adobe.c
 Objectif :
 
 * Apparence unifiée pour les applications d’administration
-* Rad pour les applications d’administration
+* RAD pour les applications d’administration
 
 Mise en œuvre :
 
-* Composants prédéfinis à l’aide des composants de base
+* Composants prédéfinis utilisant les composants de base
 * Les composants peuvent être personnalisés
 
 ## IU Coral {#coral-ui}
@@ -294,16 +295,16 @@ L’IU Coral (CUI) est une implémentation du style visuel de l’Adobe pour l�
 >
 >* Documents et autres éléments non liés à l’Adobe.
 >* Environnements de création de contenu (où les éléments précédents peuvent être générés par d’autres personnes).
->* Applications/composants/pages web qui ne sont pas clairement connectés à l’Adobe.
+>* Applications/composants/pages web qui ne sont pas clairement connectés à Adobe.
 >
 
 L’IU Coral est un ensemble de composantes de base destinées au développement d’applications web.
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
-Conçu pour être modulaire dès le départ, chaque module forme une couche distincte en fonction de son rôle Principal. Bien que les calques aient été conçus pour se soutenir les uns les autres, ils peuvent également être utilisés indépendamment si nécessaire. Cela permet de mettre en oeuvre l’expérience utilisateur de Coral dans n’importe quel environnement compatible avec les HTMLS.
+Conçu pour être modulaire dès le départ, chaque module forme une couche distincte en fonction de son rôle principal. Bien que les calques aient été conçus pour se soutenir les uns les autres, ils peuvent également être utilisés indépendamment si nécessaire. Cela permet de mettre en oeuvre l’expérience utilisateur de Coral dans n’importe quel environnement compatible avec les HTMLS.
 
-Avec l’interface utilisateur Coral, il n’est pas obligatoire d’utiliser un modèle de développement et/ou une plateforme spécifique. L’objectif Principal de Coral est de fournir un balisage HTML5 unifié et propre, indépendamment de la méthode utilisée pour émettre ce balisage. Il peut être utilisé pour le rendu côté client ou côté serveur, les modèles, JSP, PHP ou même les applications RIA Flash Adobe, pour n’en citer que quelques-unes.
+Avec l’interface utilisateur Coral, il n’est pas obligatoire d’utiliser un modèle de développement et/ou une plateforme spécifique. L’objectif principal de Coral est de fournir un balisage HTML5 unifié et propre, indépendamment de la méthode réelle utilisée pour émettre ce balisage. Il peut être utilisé pour le rendu côté client ou côté serveur, les modèles, JSP, PHP ou même les applications RIA Flash Adobe, pour n’en citer que quelques-unes.
 
 ### Éléments de HTML - Calque de balisage {#html-elements-the-markup-layer}
 
@@ -311,7 +312,7 @@ Les éléments de HTML offrent un aspect commun à tous les éléments de l’in
 
 Au niveau le plus élémentaire, un élément de HTML est une balise de HTML avec un nom de classe dédié. Les éléments plus complexes peuvent être composés de plusieurs balises, imbriquées les unes dans les autres (d’une manière spécifique).
 
-Le code CSS est utilisé pour définir l’apparence réelle. Pour permettre de personnaliser facilement l’apparence (par exemple, dans le cas d’une valorisation de marque), les valeurs de style réelles sont déclarées en tant que variables qui sont développées par la variable [MOINS](https://lesscss.org/) préprocesseur pendant l’exécution.
+Le code CSS est utilisé pour définir l’apparence réelle. Pour permettre de personnaliser facilement l’apparence (par exemple, dans le cas d’une valorisation de marque), les valeurs de style réelles sont déclarées en tant que variables qui sont développées par la variable [MOINS](https://lesscss.org/) pré-processeur pendant l’exécution.
 
 Objectif :
 
@@ -359,7 +360,7 @@ Les valeurs réelles sont définies dans un fichier de variables LESS (l’extra
 
 La plupart des éléments de HTML doivent présenter un comportement dynamique, tel que l’ouverture et la fermeture des menus contextuels. Il s’agit du rôle des modules externes d’élément, qui exécutent de telles tâches en manipulant le DOM à l’aide de JavaScript.
 
-Un module externe est :
+Un module externe est soit :
 
 * Conçu pour fonctionner sur un élément DOM spécifique. Par exemple, un module externe de boîte de dialogue s’attend à trouver `DIV class=dialog`.
 * Générique par nature. Par exemple, un gestionnaire de mises en page fournit la disposition pour toute liste d’éléments `DIV` ou `LI`.
@@ -371,8 +372,8 @@ Le comportement du module externe peut être personnalisé avec des paramètres,
 
 Bien que le développeur puisse choisir la méthode la mieux adaptée à chaque module externe, le principe de base consiste à utiliser les éléments suivants :
 
-* Des attributs `data-*` pour les options relatives à la mise en page HTML ; Par exemple, pour spécifier le nombre de colonnes
-* Options/classes d’API pour les fonctionnalités liées aux données. Par exemple, construire la liste des éléments à afficher
+* Des attributs `data-*` pour les options relatives à la mise en page HTML. Par exemple, pour spécifier le nombre de colonnes
+* Options/classes API pour les fonctionnalités liées aux données. Par exemple, construire la liste des éléments à afficher
 
 Le même concept est utilisé pour implémenter la validation de formulaire. Pour un élément qui doit être validé, vous devez spécifier le formulaire de saisie requis sous la forme d’un attribut `data-*` personnalisé. Cet attribut est ensuite utilisé comme option pour un module externe de validation.
 
@@ -422,11 +423,11 @@ Appel au module externe jQuery :
 $('.cards').cardlayout ();
 ```
 
-Cela se présente comme suit :
+Vous pouvez ainsi :
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
-Le `cardLayout` Le module externe met en forme l’objet `UL` en fonction de leurs hauteurs respectives et en tenant également compte de la largeur du parent.
+La variable `cardLayout` Le module externe met en forme l’objet `UL` en fonction de leurs hauteurs respectives et en tenant également compte de la largeur du parent.
 
 ### Widgets d’éléments de HTML {#html-elements-widgets}
 
@@ -473,11 +474,11 @@ Le module externe émet un balisage de HTML (ce balisage utilise des éléments 
        autocomplete="off">
 ```
 
-Cela se présente comme suit :
+Vous pouvez ainsi :
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 
-### Bibliothèque d’utilitaires {#utility-library}
+### Bibliothèque utilitaire {#utility-library}
 
 Cette bibliothèque est une collection de modules externes et/ou de fonctions d’assistance JavaScript qui sont les suivants :
 

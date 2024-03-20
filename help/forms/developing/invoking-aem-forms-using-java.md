@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '5393'
-ht-degree: 48%
+source-wordcount: '5333'
+ht-degree: 49%
 
 ---
 
@@ -860,7 +861,7 @@ La ligne suivante de code convertit un objet `com.adobe.idp.Document` à un obje
 De même, vous pouvez copier le contenu d’un fichier `com.adobe.idp.Document` dans un fichier local en effectuant les tâches suivantes :
 
 1. Créez un objet `java.io.File`.
-1. Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` et transmettez l’objet `java.io.File`. 
+1. Appeler la variable `com.adobe.idp.Document` de `copyToFile` et transmettez la méthode `java.io.File`.
 
 L’exemple de code suivant copie le contenu d’un objet `com.adobe.idp.Document` dans un fichier nommé *AnotherMap.pdf*.
 
@@ -1018,7 +1019,7 @@ La discussion ici porte sur l’utilisation de l’API d’appel pour appeler le
 
 Lorsque ce processus est appelé, il effectue les actions suivantes :
 
-1. Obtient le document de PDF non sécurisé transmis au processus. Cette action est basée sur l’opération `SetValue`. Le paramètre d’entrée pour ce processus est une variable de processus `document` désignée par `inDoc`.
+1. Obtention du document PDF non sécurisé transmis au processus. Cette action est basée sur l’opération `SetValue`. Le paramètre d’entrée pour ce processus est une variable de processus `document` désignée par `inDoc`.
 1. Chiffrement du document PDF avec un mot de passe. Cette action est basée sur l’opération `PasswordEncryptPDF`. Le document PDF chiffré avec un mot de passe est retourné dans une variable de processus nommée `outDoc`.
 
 ### Appelez le processus de courte durée MyApplication/EncryptDocument à l’aide de l’API d’appel Java {#invoke-the-myapplication-encryptdocument-short-lived-process-using-the-java-invocation-api}
@@ -1060,7 +1061,7 @@ Appelez le processus de courte durée `MyApplication/EncryptDocument` à l’aid
    ```
 
 1. Créez un objet `java.io.File` et assurez-vous que l’extension du fichier est .pdf.
-1. Appeler la variable `com.adobe.idp.Document` de `copyToFile` pour copier le contenu de la méthode `com.adobe.idp.Document` vers le fichier . Assurez-vous d’utiliser l’objet `com.adobe.idp.Document` qui a été retourné par la méthode `getOutputParameter`.
+1. Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour copier le contenu de l’objet `com.adobe.idp.Document` dans le fichier. Assurez-vous d’utiliser l’objet `com.adobe.idp.Document` qui a été retourné par la méthode `getOutputParameter`.
 
 **Voir également**
 

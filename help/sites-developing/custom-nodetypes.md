@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
-source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1866'
+source-wordcount: '1848'
 ht-degree: 76%
 
 ---
@@ -160,7 +161,7 @@ Définit le nœud par défaut du contenu de la page, avec les propriétés minim
 * `@prop jcr:title` - Titre de la page.
 * `@prop jcr:description` - Description de cette page.
 * `@prop cq:template` - Chemin d’accès au modèle utilisé pour créer la page.
-* `@prop cq:allowedTemplates` - Liste des expressions régulières utilisées pour déterminer les chemins d’accès au modèle autorisé.
+* `@prop cq:allowedTemplates` - Liste des expressions régulières utilisées pour déterminer les chemins vers le modèle autorisé.
 * `@prop pageTitle` - Titre affiché dans la fonction `<title>` balise .
 * `@prop navTitle` - Titre utilisé dans la navigation.
 * `@prop hideInNav` - Détermine si la page doit être masquée dans la navigation.
@@ -316,7 +317,7 @@ Définit la configuration de la barre d’édition.
 
 Configure une cible de dépôt d’un composant. Le nom de ce noeud est utilisé comme identifiant pour le glisser-déposer.
 
-* `@prop accept` - Liste des types MIME acceptés par cette cible de dépôt ; par exemple, `["image/*"]`
+* `@prop accept` - Liste des types MIME acceptés par cette cible de dépôt, par exemple : `["image/*"]`
 * `@prop groups` - Liste des groupes de déplacement qui acceptent une source
 * `@prop propertyName` - Nom de la propriété utilisée pour stocker la référence
 
@@ -444,7 +445,7 @@ Liste des conteneurs.
 
 **Description**
 
-Type de noeud `cq:attributes` est pour les balises de version ContentBus. Ce noeud possède uniquement une série de propriétés ; dont trois sont prédéfinis &quot;created&quot;, &quot;csd&quot; et &quot;timestamp&quot;.
+Type de noeud `cq:attributes` est pour les balises de version ContentBus. Ce noeud possède uniquement une série de propriétés, dont trois sont prédéfinies &quot;created&quot;, &quot;csd&quot; et &quot;timestamp&quot;.
 
 * `@prop created (long) mandatory copy` - Horodatage de création des informations de version. Il s’agit généralement de l’heure d’archivage de la version précédente ou de l’heure de création de la page.
 * `@prop csd (string) mandatory copy` - Attribut CSD standard, copie de la propriété cq:csd du nœud de la page.
@@ -580,7 +581,7 @@ Définit un mixin LiveSync (Synchronisation en direct). Si un nœud est impliqu�
 
 Définit un mixin LiveSyncCancelled (Dernière synchronisation annulée). Annuler le comportement LiveSync d’un noeud Live Copy (contrôlé) qui peut être impliqué dans une relation LiveSync en raison de l’un de ses parents.
 
-* `@prop cq:isCancelledForChildren` - Définit si une synchronisation en direct est annulée ; aussi pour les enfants.
+* `@prop cq:isCancelledForChildren` - Définit si une synchronisation en direct est annulée ; également pour les enfants.
 
 **Définition**
 
@@ -814,7 +815,7 @@ Tout site Web public/utilisateur peut baliser le contenu (style Web2.0), utilis
 
 **Description**
 
-Ajoute un sous-nœud `cq:userContent` pouvant être modifié par les utilisateurs. Chaque utilisateur possède son propre `cq:userContent/<userid>` sous-noeud, qui contient généralement le mixin `cq:UserTaggable`.
+Ajoute un sous-nœud `cq:userContent` pouvant être modifié par les utilisateurs. Chaque utilisateur possède sa propre propriété `cq:userContent/<userid>` sous-noeud, qui contient généralement le mixin `cq:UserTaggable`.
 
 **Définition**
 

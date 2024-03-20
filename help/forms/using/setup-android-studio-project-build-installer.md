@@ -5,7 +5,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 exl-id: 47d6af00-34d8-4e5d-8117-86fc1b6f58cb
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 58%
@@ -61,7 +62,7 @@ L’image suivante affiche la structure du répertoire du dossier `android` dans
 
    >[!NOTE]
    >
-   Il est recommandé de conserver le projet Android extrait dans le lecteur système avant d’importer le projet dans Android™ Studio.
+   >Il est recommandé de conserver le projet Android extrait dans le lecteur système avant d’importer le projet dans Android™ Studio.
 
 1. Lancez Android™ Studio.
 

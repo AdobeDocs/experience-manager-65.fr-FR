@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 40%
+source-wordcount: '235'
+ht-degree: 37%
 
 ---
 
@@ -41,4 +42,4 @@ Pour utiliser les jetons, vous devez répliquer le binaire HMAC sur toutes les i
 >
 >Si vous utilisez le cache de manifeste avec votre application web, veillez à ajouter &quot;**&amp;ast;**&quot; au manifeste pour s’assurer que le jeton ne prend pas l’appel de génération de jeton CSRF hors ligne. Pour plus d’informations, consultez ce [lien](https://www.w3.org/TR/offline-Webapps/).
 >
->Pour plus d’informations sur les attaques CSRF et les moyens de s’en protéger, consultez la page [Cross-Site Request Forgery OWASP](https://owasp.org/www-community/attacks/csrf).
+Pour plus d’informations sur les attaques CSRF et les moyens de s’en protéger, consultez la page [Cross-Site Request Forgery OWASP](https://owasp.org/www-community/attacks/csrf).

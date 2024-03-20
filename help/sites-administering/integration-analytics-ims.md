@@ -2,9 +2,10 @@
 title: Intégration à Adobe Analytics à l’aide d’IMS
 description: En savoir plus sur l’intégration d’AEM à Adobe Analytics à l’aide d’IMS
 exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
-workflow-type: ht
-source-wordcount: '1068'
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '1042'
 ht-degree: 100%
 
 ---

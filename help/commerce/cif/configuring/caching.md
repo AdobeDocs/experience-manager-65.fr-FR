@@ -2,7 +2,8 @@
 title: Mise en cache et performances
 description: Découvrez les différentes configurations disponibles pour activer GraphQL et la mise en cache de contenu afin d’optimiser les performances de votre implémentation commerciale.
 exl-id: ecce64bf-5960-4ddb-b6e3-dad401038c11
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 83%

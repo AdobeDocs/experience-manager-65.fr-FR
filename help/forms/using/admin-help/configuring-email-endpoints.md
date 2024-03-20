@@ -6,7 +6,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3796'
 ht-degree: 53%
@@ -72,7 +73,7 @@ Pour que le processus des formulaires reçoive et traite les courriers électron
 
 **Intervalle de répétitions :** nombre de répétitions de l’interrogation du répertoire d’entrée. L’intervalle de répétition par défaut est exprimé en secondes si cette valeur n’est pas spécifiée dans la configuration des points d’entrée. La valeur par défaut est 10. Cette valeur ne peut pas être inférieure à 10.
 
-**Nombre de répétitions :** nombre d’interrogations du répertoire d’entrée. Nombre de répétitions par défaut à utiliser si cette valeur n’est pas spécifiée dans la configuration du point de terminaison. La valeur -1 indique une analyse indéfinie du répertoire. La valeur par défaut est -1.
+**Nombre de répétitions :** nombre d’interrogations du répertoire d’entrée. Le nombre de répétitions par défaut à utiliser si cette valeur n’est pas spécifiée dans la configuration des points d’entrée. La valeur -1 indique une analyse indéfinie du répertoire. La valeur par défaut est -1.
 
 **Retard au début d’une tâche :** valeur par défaut (en secondes) du retard au début de l’analyse du point d’entrée. La valeur par défaut est 0.
 

@@ -3,7 +3,8 @@ title: Présentation et aperçu
 description: Découvrez comment utiliser et administrer AEM Content and Commerce, avec des articles utiles sur les intégrations et sur la prise en main d’AEM Storefront.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
-source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 97%

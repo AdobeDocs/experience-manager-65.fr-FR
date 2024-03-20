@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '18956'
-ht-degree: 78%
+source-wordcount: '18860'
+ht-degree: 82%
 
 ---
 
@@ -304,7 +305,7 @@ Créez un document PDF à l’aide de l’API Output (service web) :
    * Créez un objet `OutputServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `OutputServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service. Toutefois, spécifiez `?blob=mtom` pour utiliser MTOM.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `OutputServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `OutputServiceClient.ClientCredentials.UserName.UserName`.
@@ -316,8 +317,8 @@ Créez un document PDF à l’aide de l’API Output (service web) :
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker les données XML qui seront fusionnées avec le document PDF.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du fichier XML contenant les données de formulaire.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Définir les options d’exécution du PDF
@@ -419,7 +420,7 @@ Pour créer un document PDF/A, procédez comme suit :
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application personnalisée à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -562,7 +563,7 @@ Créez un document PDF/A à l’aide de l’API Output (Web Service) :
    * Créez un objet `OutputServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `OutputServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service. Toutefois, spécifiez `?blob=mtom` pour utiliser MTOM.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `OutputServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `OutputServiceClient.ClientCredentials.UserName.UserName`.
@@ -574,8 +575,8 @@ Créez un document PDF/A à l’aide de l’API Output (Web Service) :
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker les données qui seront fusionnées avec le document PDF/A.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur string qui représente l’emplacement du fichier du document PDF à chiffrer et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Définissez les options d’exécution du PDF/A.
@@ -614,7 +615,7 @@ Créez un document PDF/A à l’aide de l’API Output (Web Service) :
 1. Récupérer les résultats de l’opération.
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant un emplacement de fichier XML contenant les données de résultat. Assurez-vous que l’extension du nom du fichier est .xml.
-   * Créez un tableau d’octets qui stocke le contenu des données de la variable `BLOB` qui a été renseigné avec les données de résultat de l’objet `OutputServiceService` de `generatePDFOutput` (le huitième paramètre). Renseignez le tableau d’octets en obtenant la valeur de la variable `BLOB` de `MTOM` champ .
+   * Créez un tableau d’octets qui stocke le contenu des données de la variable `BLOB` qui a été renseigné avec les données de résultat de l’objet `OutputServiceService` de `generatePDFOutput` (le huitième paramètre). Renseignez le tableau d’octets en obtenant la valeur du champ `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
    * Ecrivez le contenu du tableau d’octets dans le fichier XML en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
 
@@ -702,7 +703,7 @@ Transmettez un document récupéré de Content Services (obsolète) à l’aide 
 
 1. Récupérez la conception de formulaire auprès de Content Services (obsolète).
 
-   Appeler la variable `DocumentManagementServiceClientImpl` de `retrieveContent` et transmettez les valeurs suivantes :
+   Appelez la méthode `retrieveContent` de l’objet `DocumentManagementServiceClientImpl` et transmettez les valeurs suivantes :
 
    * Valeur string qui spécifie le magasin où le contenu est ajouté. Le magasin par défaut est `SpacesStore`. Cette valeur est un paramètre obligatoire.
    * Valeur string qui spécifie le chemin d’accès complet du contenu à récupérer (par exemple `/Company Home/Form Designs/Loan.xdp`). Cette valeur est un paramètre obligatoire.
@@ -712,7 +713,7 @@ Transmettez un document récupéré de Content Services (obsolète) à l’aide 
 
 1. Générez le formulaire PDF non interactif.
 
-   Appeler la variable `OutputClient` de `generatePDFOutput2` et transmettez les valeurs suivantes :
+   Appelez la méthode `generatePDFOutput2` de l’objet `OutputClient` et transmettez les valeurs suivantes :
 
    * Valeur d’énumération `TransformationFormat`. Pour générer un document PDF, spécifiez le `TransformationFormat.PDF`.
    * Valeur string qui spécifie la racine de contenu où se trouvent les ressources supplémentaires telles que les images.
@@ -762,7 +763,7 @@ Transmettez un document récupéré de Content Services (obsolète) à l’aide 
    * Créez un objet `OutputServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `OutputServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `OutputServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `OutputServiceClient.ClientCredentials.UserName.UserName`.
@@ -789,7 +790,7 @@ Transmettez un document récupéré de Content Services (obsolète) à l’aide 
 
 1. Générez le formulaire PDF non interactif.
 
-   Appeler la variable `OutputServiceClient` de `generatePDFOutput2` et transmettez les valeurs suivantes :
+   Appelez la méthode `generatePDFOutput2` de l’objet `OutputServiceClient` et transmettez les valeurs suivantes :
 
    * Valeur d’énumération `TransformationFormat`. Pour générer un document PDF, spécifiez le `TransformationFormat.PDF`.
    * Valeur string qui spécifie la racine de contenu où se trouvent les ressources supplémentaires telles que les images.
@@ -805,9 +806,9 @@ Transmettez un document récupéré de Content Services (obsolète) à l’aide 
 1. Exécutez une action avec le flux de données de formulaire.
 
    * Créez un objet `System.IO.FileStream` en utilisant son constructeur. Transmettez une valeur string qui représente l’emplacement du fichier du document PDF interactif et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` récupéré à partir de la méthode `generatePDFOutput2`. Renseignez le tableau d’octets en obtenant la valeur de la variable `BLOB` de `MTOM` membre de données.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` récupéré à partir de la méthode `generatePDFOutput2`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Ecrivez le contenu du tableau d’octets dans un fichier de PDF en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
+   * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**
 
@@ -907,7 +908,7 @@ Transmettez un document récupéré du référentiel à l’aide de l’API Repo
 
 1. Générez le formulaire PDF non interactif.
 
-   Appeler la variable `OutputClient` de `generatePDFOutput2` et transmettez les valeurs suivantes :
+   Appelez la méthode `generatePDFOutput2` de l’objet `OutputClient` et transmettez les valeurs suivantes :
 
    * Valeur d’énumération `TransformationFormat`. Pour générer un document PDF, spécifiez `TransformationFormat.PDF`.
    * Valeur string qui spécifie la racine de contenu où se trouvent les ressources supplémentaires telles que les images. Par exemple, `repository:///Applications/FormsApplication/1.0/FormsFolder/`.
@@ -1014,7 +1015,7 @@ Créez un document PDF basé sur des fragments à l’aide de l’API Output Ser
 
 1. Utilisez le service Assembler pour générer la conception de formulaire.
 
-   Appeler la variable `AssemblerServiceClient` de `invokeDDX` et transmettez les valeurs requises suivantes :
+   Appelez la méthode `invokeDDX` de lʼobjet `AssemblerServiceClient` et transmettez les valeurs requises suivantes :
 
    * Objet `com.adobe.idp.Document` représentant le document DDX à utiliser.
    * Objet `java.util.Map` contenant les fichiers XDP d’entrée.
@@ -1022,13 +1023,13 @@ Créez un document PDF basé sur des fragments à l’aide de l’API Output Ser
 
    La méthode `invokeDDX` renvoie un objet `com.adobe.livecycle.assembler.client.AssemblerResult` contenant le document XDP assemblé. Pour récupérer le document XDP assemblé, effectuez les actions suivantes :
 
-   * Appeler la variable `AssemblerResult` de `getDocuments` . Cette méthode renvoie un objet `java.util.Map`.
+   * Appelez la méthode `getDocuments` de l’objet `AssemblerResult`. Cette méthode renvoie un objet `java.util.Map`.
    * Effectuez une itération à l’aide de l’objet `java.util.Map` jusqu’à ce que vous trouviez l’objet `com.adobe.idp.Document` résultant.
    * Appeler la variable `com.adobe.idp.Document` de `copyToFile` pour extraire le document XDP assemblé.
 
 1. Utilisez le service Output pour générer le document PDF.
 
-   Appeler la variable `OutputClient` de `generatePDFOutput2` et transmettez les valeurs suivantes :
+   Appelez la méthode `generatePDFOutput2` de l’objet `OutputClient` et transmettez les valeurs suivantes :
 
    * Valeur d’énumération `TransformationFormat`. Pour générer un document PDF, spécifiez `TransformationFormat.PDF`.
    * Valeur string qui spécifie la racine de contenu où se trouvent les ressources supplémentaires, telles que les images.
@@ -1043,7 +1044,7 @@ Créez un document PDF basé sur des fragments à l’aide de l’API Output Ser
 
    * Récupération d’une `com.adobe.idp.Document` qui représente le document du PDF en appelant la fonction `OutputResult` de `getGeneratedDoc` .
    * Créez un objet `java.io.File` contenant les résultats de l’opération. Assurez-vous que l’extension de nom de fichier est .pdf.
-   * Appeler la variable `com.adobe.idp.Document` de `copyToFile` pour copier le contenu de la méthode `com.adobe.idp.Document` vers le fichier . (Assurez-vous d’utiliser l’objet `com.adobe.idp.Document` renvoyé par la méthode `getGeneratedDoc`).
+   * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour copier le contenu de l’objet `com.adobe.idp.Document` dans le fichier. (Assurez-vous d’utiliser l’objet `com.adobe.idp.Document` renvoyé par la méthode `getGeneratedDoc`).
 
 **Voir également**
 
@@ -1086,7 +1087,7 @@ Créez un document PDF basé sur des fragments à l’aide de l’API Output Ser
    * Créez un objet `OutputServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `OutputServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service. Toutefois, spécifiez `?blob=mtom` pour utiliser MTOM.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `OutputServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Affectez le nom d’utilisateur AEM Forms au champ `OutputServiceClient.ClientCredentials.UserName.UserName`.
@@ -1101,7 +1102,7 @@ Créez un document PDF basé sur des fragments à l’aide de l’API Output Ser
 
 1. Utilisez le service Assembler pour générer la conception de formulaire.
 
-   Appeler la variable `AssemblerServiceClient` de `invokeDDX` et transmettez les valeurs suivantes :
+   Appelez la méthode `invokeDDX` de l’objet `AssemblerServiceClient` et transmettez les valeurs suivantes :
 
    * Objet `BLOB` représentant le document DDX.
    * Objet `MyMapOf_xsd_string_To_xsd_anyType` contenant les fichiers requis.
@@ -1114,7 +1115,7 @@ Créez un document PDF basé sur des fragments à l’aide de l’API Output Ser
 
 1. Utilisez le service Output pour générer le document PDF.
 
-   Appeler la variable `OutputServiceClient` de `generatePDFOutput2` et transmettez les valeurs suivantes :
+   Appelez la méthode `generatePDFOutput2` de l’objet `OutputServiceClient` et transmettez les valeurs suivantes :
 
    * Valeur d’énumération `TransformationFormat`. Pour générer un document PDF, spécifiez `TransformationFormat.PDF`.
    * Valeur string qui spécifie la racine de contenu où se trouvent les ressources supplémentaires, telles que les images.
@@ -1130,9 +1131,9 @@ Créez un document PDF basé sur des fragments à l’aide de l’API Output Ser
 1. Enregistrez le document PDF au format PDF.
 
    * Créez un objet `System.IO.FileStream` en utilisant son constructeur. Transmettez une valeur string qui représente l’emplacement du fichier du document PDF interactif et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` récupéré à partir de la méthode `generatePDFOutput2`. Renseignez le tableau d’octets en obtenant la valeur de la variable `BLOB` de `MTOM` membre de données.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` récupéré à partir de la méthode `generatePDFOutput2`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Ecrivez le contenu du tableau d’octets dans un fichier de PDF en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
+   * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**
 
@@ -1174,7 +1175,7 @@ Pour imprimer sur un fichier, procédez comme suit :
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -1294,7 +1295,7 @@ Imprimez dans un fichier à l’aide de l’API Output (Web Service) :
    * Créez un objet `OutputServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `OutputServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service. Toutefois, spécifiez `?blob=mtom` pour utiliser MTOM.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `OutputServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `OutputServiceClient.ClientCredentials.UserName.UserName`.
@@ -1306,8 +1307,8 @@ Imprimez dans un fichier à l’aide de l’API Output (Web Service) :
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` est utilisé pour stocker des données de formulaire.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur string qui spécifie l’emplacement du fichier XML contenant les données de formulaire.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à sa propriété `binaryData` le contenu du tableau d’octets.
 
 1. Définissez les options d’exécution d’impression requises pour l’impression dans un fichier.
@@ -1333,7 +1334,7 @@ Imprimez dans un fichier à l’aide de l’API Output (Web Service) :
 1. Récupérer les résultats de l’opération.
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente un emplacement de fichier XML contenant les données de résultat. Assurez-vous que l’extension de fichier est XML.
-   * Créez un tableau d’octets qui stocke le contenu des données de la variable `BLOB` qui a été renseigné avec les données de résultat de l’objet `OutputServiceService` de `generatePDFOutput` (le huitième paramètre). Renseignez le tableau d’octets en obtenant la valeur de la variable `BLOB` de `MTOM` membre de données.
+   * Créez un tableau d’octets qui stocke le contenu des données de la variable `BLOB` qui a été renseigné avec les données de résultat de l’objet `OutputServiceService` de `generatePDFOutput` (le huitième paramètre). Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
    * Ecrivez le contenu du tableau d’octets dans le fichier XML en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
 
@@ -1379,7 +1380,7 @@ Pour envoyer un flux d’impression à une imprimante réseau, procédez comme s
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -1580,7 +1581,7 @@ Envoyez un flux d’impression à une imprimante réseau à l’aide de l’API 
    * Créez un objet `OutputServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `OutputServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service. Toutefois, spécifiez `?blob=mtom` pour utiliser MTOM.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `OutputServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `OutputServiceClient.ClientCredentials.UserName.UserName`.
@@ -1593,7 +1594,7 @@ Envoyez un flux d’impression à une imprimante réseau à l’aide de l’API 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` est utilisé pour stocker des données de formulaire.
    * Créez un objet `System.IO.FileStream` en utilisant son constructeur. Transmettez une valeur de chaîne qui spécifie l’emplacement du fichier XML contenant les données de formulaire.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Déterminez la longueur du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant son champ `MTOM` au contenu du tableau d’octets.
 
 1. Définissez les options d’exécution de l’impression.
@@ -1719,7 +1720,7 @@ Pour créer plusieurs fichiers PDF basés sur une source de données XML, procé
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -1875,7 +1876,7 @@ Pour créer plusieurs fichiers PDF à l’aide de l’API Output (service web), 
    * Créez un objet `OutputServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `OutputServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service. Toutefois, spécifiez `?blob=mtom` pour utiliser MTOM.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `OutputServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `OutputServiceClient.ClientCredentials.UserName.UserName`.
@@ -1887,8 +1888,8 @@ Pour créer plusieurs fichiers PDF à l’aide de l’API Output (service web), 
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker des données de formulaire contenant plusieurs enregistrements.
    * Créez un objet `System.IO.FileStream` en utilisant son constructeur. Transmettez une valeur string qui représente l’emplacement du fichier XML qui contient plusieurs enregistrements.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Définissez les options d’exécution du PDF.
@@ -1921,7 +1922,7 @@ Pour créer plusieurs fichiers PDF à l’aide de l’API Output (service web), 
 1. Récupérer les résultats de l’opération
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur string qui représente un emplacement de fichier XML contenant les données de résultat. Assurez-vous que l’extension du nom du fichier est .xml.
-   * Créez un tableau d’octets qui stocke le contenu des données de la variable `BLOB` qui a été renseigné avec les données de résultat de l’objet `OutputServiceService` de `generatePDFOutput` (le huitième paramètre). Renseignez le tableau d’octets en obtenant la valeur de la variable `BLOB` de `binaryData` membre de données.
+   * Créez un tableau d’octets qui stocke le contenu des données de la variable `BLOB` qui a été renseigné avec les données de résultat de l’objet `OutputServiceService` de `generatePDFOutput` (le huitième paramètre). Renseignez le tableau d’octets en obtenant la valeur du membre de données `binaryData` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
    * Ecrivez le contenu du tableau d’octets dans le fichier XML en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
 
@@ -2107,7 +2108,7 @@ Créez des règles de recherche à l’aide de l’API Output (service web) :
    * Créez un objet `OutputServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `OutputServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service. Toutefois, spécifiez `?blob=mtom` pour utiliser MTOM.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `OutputServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `OutputServiceClient.ClientCredentials.UserName.UserName`.
@@ -2119,8 +2120,8 @@ Créez des règles de recherche à l’aide de l’API Output (service web) :
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker les données qui seront fusionnées avec le document PDF.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur string qui représente l’emplacement du fichier du document PDF à chiffrer et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Définissez des règles de recherche.
@@ -2178,7 +2179,7 @@ Créez des règles de recherche à l’aide de l’API Output (service web) :
 1. Récupérer les résultats de l’opération
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente un emplacement de fichier XML contenant les données de résultat. Assurez-vous que l’extension de fichier est XML.
-   * Créez un tableau d’octets qui stocke le contenu des données de la variable `BLOB` qui a été renseigné avec les données de résultat de l’objet `OutputServiceService` de `generatePDFOutput` (le huitième paramètre). Renseignez le tableau d’octets en obtenant la valeur de la variable `BLOB` de `MTOM` membre de données.
+   * Créez un tableau d’octets qui stocke le contenu des données de la variable `BLOB` qui a été renseigné avec les données de résultat de l’objet `OutputServiceService` de `generatePDFOutput` (le huitième paramètre). Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
    * Ecrivez le contenu du tableau d’octets dans le fichier XML en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
 
@@ -2219,7 +2220,7 @@ Pour aplatir un document PDF interactif en document PDF non interactif, procé
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
+Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -2321,7 +2322,7 @@ Aplatissez un document PDF interactif vers un document PDF non interactif à l�
    * Créez un objet `OutputServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `OutputServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service. Toutefois, spécifiez `?blob=mtom` pour utiliser MTOM.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `OutputServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `OutputServiceClient.ClientCredentials.UserName.UserName`.
@@ -2333,8 +2334,8 @@ Aplatissez un document PDF interactif vers un document PDF non interactif à l�
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` est utilisé pour stocker le document PDF interactif.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur string qui représente l’emplacement du fichier du document PDF interactif.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmettre le tableau byte, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à sa propriété `MTOM` le contenu du tableau d’octets.
 
 1. Transformez le document PDF.
@@ -2354,9 +2355,9 @@ Aplatissez un document PDF interactif vers un document PDF non interactif à l�
 1. Enregistrez le document PDF non interactif en tant que fichier PDF.
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur string qui représente l’emplacement du fichier du document PDF non interactif.
-   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` qui a été renvoyé par la méthode `transformPDF`. Renseignez le tableau d’octets en obtenant la valeur de la variable `BLOB` de `MTOM` membre de données.
+   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` qui a été renvoyé par la méthode `transformPDF`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Ecrivez le contenu du tableau d’octets dans un fichier de PDF en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
+   * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**
 

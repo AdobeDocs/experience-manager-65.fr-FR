@@ -6,10 +6,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: b2a6ba3a-0f4c-44b1-8f9a-c15c6fb8c305
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1334'
-ht-degree: 49%
+ht-degree: 51%
 
 ---
 
@@ -48,7 +49,7 @@ Lorsque vous sélectionnez un processus, les onglets Formulaires et Détails s�
 1. Remplissez le formulaire selon les instructions fournies. Si nécessaire, cliquez sur le bouton **Agrandir** pour augmenter la partie visible du formulaire.
 1. Si l’onglet Pièces jointes est disponible, ajoutez des pièces jointes selon les besoins.
 1. Si l’onglet Remarques est disponible, fournissez les éventuelles remarques.
-1. Effectuez l’une des étapes suivantes :
+1. Exécutez l’une des étapes suivantes :
 
    * Cliquez sur le bouton Envoyer du formulaire, si le formulaire comporte un bouton Envoyer.
    * Cliquez sur Terminer sous le formulaire si le formulaire ne comporte pas de bouton Envoyer.
@@ -73,7 +74,7 @@ Vous pouvez ajouter plusieurs notes, modifier les notes écrites, et les supprim
 * Lecture/modification/suppression
 * Lecture/Modification
 * Lecture/Suppression
-* Accès interdit
+* Pas d’accès
 
 1. Ouvrez une tâche et cliquez sur l’onglet **Notes**, si le processus vous le permet.
 1. Saisissez le titre de la note dans la zone **Titre** et saisissez le texte de la note dans la zone **Remarque** de la boîte.
@@ -88,11 +89,11 @@ Vous pouvez également ajouter vos commentaires sur la pièce jointe. Vous pouve
 * Lecture/modification/suppression
 * Lecture/Modification
 * Lecture/Suppression
-* Accès interdit
+* Pas d’accès
 
 1. Cliquez sur l’onglet **Pièces jointes** et sélectionnez **Pièce jointe**.
 1. Cliquez sur **Parcourir** pour sélectionner le fichier à joindre.
-1. Sélectionnez le niveau des **Autorisations** relatives à la pièce jointe pour les autres utilisateurs participant au processus. Si vous sélectionnez **Lecture**, d’autres utilisateurs peuvent enregistrer le fichier localement. Si vous sélectionnez l’une des autorisations de modification, d’autres utilisateurs peuvent également charger un nouveau fichier pour remplacer votre pièce jointe.
+1. Sélectionnez le niveau des **Autorisations** relatives à la pièce jointe pour les autres utilisateurs participant au processus. Si vous sélectionnez **Lecture**, d’autres utilisateurs peuvent enregistrer le fichier localement. Si vous sélectionnez l’une des autorisations de modification, d’autres personnes peuvent également charger un nouveau fichier pour remplacer votre pièce jointe.
 1. Cliquez sur **OK**. Le fichier est attaché au formulaire. Vous pouvez supprimer un fichier en cliquant sur le bouton **Supprimer** ![Image d’une corbeille](assets/icondelete.png) à côté de la pièce jointe.
 
 ## Enregistrement des brouillons de formulaires {#saving-draft-copies-of-forms}

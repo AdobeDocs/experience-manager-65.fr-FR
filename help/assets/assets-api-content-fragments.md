@@ -5,7 +5,8 @@ feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 94%

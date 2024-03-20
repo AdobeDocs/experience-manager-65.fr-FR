@@ -8,7 +8,8 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 783824ece92c12476505d695b961d782d7d70cb9
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5792'
 ht-degree: 98%
@@ -1094,12 +1095,12 @@ Voici une liste de suggestions des éléments à vérifier si vous commencez à 
 
 >[!NOTE]
 >
-Consultez les articles suivants pour plus d’informations :
+>Consultez les articles suivants pour plus d’informations :
 >
-* [Images mémoire de threads](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
-* [Analyse des problèmes de mémoire](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=fr)
-* [Analyse à l’aide du profileur intégré](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
-* [Analyse des processus lents et bloqués](https://helpx.adobe.com/fr/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+>* [Images mémoire de threads](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+>* [Analyse des problèmes de mémoire](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=fr)
+>* [Analyse à l’aide du profileur intégré](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
+>* [Analyse des processus lents et bloqués](https://helpx.adobe.com/fr/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
 ### Processeur à 100 % {#cpu-at}
@@ -1192,6 +1193,6 @@ Cela vous aidera à déterminer la quantité de mémoire utilisée, les algorith
 
 >[!NOTE]
 >
-Pour la machine virtuelle d’Oracle, des informations sont également disponibles à l’adresse suivante :
+>Pour la machine virtuelle d’Oracle, des informations sont également disponibles à l’adresse suivante :
 >
-[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)
+>[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)

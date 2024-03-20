@@ -7,10 +7,11 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 7d90fade-1ca4-41d8-bbf9-45490465784a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '336'
-ht-degree: 60%
+ht-degree: 68%
 
 ---
 
@@ -47,13 +48,13 @@ Pour personnaliser le texte et l’aspect du filigrane, procédez comme suit :
 
       >[!NOTE]
       >
-      >N’apportez aucune modification à la branche /libs. Toute modification que vous apportez peut être perdue, car cette branche est sujette à des modifications lorsque vous :
+      >N’apportez aucune modification à la branche /libs. Toute modification que vous apportez peut être perdue, car cette branche est sujette à des modifications lorsque vous :
       >
       >    
       >    
-      >    * Effectuez une mise à niveau sur votre instance
-      >    * Appliquer un correctif
-      >    * Installation d’un Feature Pack
+      >    * Effectuez une mise à niveau sur votre instance.
+      >    * Appliquez un correctif.
+      >    * Installez un pack de fonctionnalités.
       >    
       >
 

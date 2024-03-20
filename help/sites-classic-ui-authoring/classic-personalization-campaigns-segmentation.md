@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 9092977b-b558-42a3-8092-4615fbc0a08e
-source-git-commit: c67aaef1bbda80f355f8a6f23eac4d9e471fd510
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 80%
+source-wordcount: '553'
+ht-degree: 79%
 
 ---
 
@@ -46,9 +47,9 @@ Lors de la discussion de la segmentation, la terminologie suivante est utilisée
 **Caractéristiques comportementales** : les caractéristiques comportementales sont liées au comportement d’un visiteur sur le site web. Ces informations comprennent les éléments suivants :
 
 * L’intérêt au sein de votre site web ; notamment les pages visitées et les produits achetés.
-* les intérêts sur le site web de référence ; y compris les termes de recherche utilisés ou les publicités sur lesquelles l’utilisateur a cliqué.
+* L’intérêt sur le site web de référence, y compris les termes de recherche utilisés ou les publicités sur lesquelles l’utilisateur a cliqué.
 * L’intérêt sur d’autres sites, déterminé à l’aide d’outils tels que Spyjax.
-* La fidélité du visiteur ; la durée de la visite, la fréquence des visites.
+* Fidélité du visiteur ; durée de la visite, fréquence des visites.
 
 **Caractéristiques démographiques** : il s’agit de caractéristiques de population choisies, notamment :
 

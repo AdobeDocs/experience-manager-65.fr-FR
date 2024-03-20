@@ -4,7 +4,9 @@ description: Les formulaires adaptatifs fournissent un mécanisme permettant de 
 topic-tags: author
 keywords: Ajouter des fragments de formulaire adaptatif, des fragments de formulaire adaptatif, Créer un fragment de formulaire, Ajouter un fragment à un formulaire adaptatif, Gérer des fragments
 feature: Adaptive Forms, Core Components
-source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
+exl-id: 4a1ba259-8eb5-408f-8ee7-4868f98cca03
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1840'
 ht-degree: 35%

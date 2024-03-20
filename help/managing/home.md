@@ -2,7 +2,8 @@
 title: Guide de l’utilisateur pour la gestion d’AEM 6.5
 description: Découvrez comment gérer un projet AEM avec succès, avec la prise en charge de ressources clés et une collection complète de guides d’utilisation d’AEM 6.5.
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-source-git-commit: 02dd950111a45908f0a65deb9e5c28b4b119269f
+solution: Experience Manager, Experience Manager 6.5
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 72%

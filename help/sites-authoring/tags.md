@@ -7,7 +7,8 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
-source-git-commit: 27e5c7fea4e90873bf80f976e179b5af0088f550
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 93%

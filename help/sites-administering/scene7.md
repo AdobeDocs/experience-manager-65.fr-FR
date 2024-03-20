@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5425'
 ht-degree: 98%
@@ -377,7 +378,7 @@ Lorsqu’une ressource est ajoutée à Experience Manager Assets, elle est aut
 
 >[!NOTE]
 >
-La taille de fichier maximale pour le chargement automatique d’Experience Manager Assets vers Dynamic Media Classic est de 500 Mo.
+>La taille de fichier maximale pour le chargement automatique d’Experience Manager Assets vers Dynamic Media Classic est de 500 Mo.
 
 **Pour effectuer un chargement automatique à partir d’Experience Manager Assets :**
 
@@ -387,7 +388,7 @@ La taille de fichier maximale pour le chargement automatique d’Experience Man
 
    >[!NOTE]
    >
-   Consultez la section [Configuration du statut (publié/dépublié) des ressources transférées vers Dynamic Media Classic](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) pour obtenir des informations sur comment définir des ressources au statut dépublié.
+   >Consultez la section [Configuration du statut (publié/dépublié) des ressources transférées vers Dynamic Media Classic](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) pour obtenir des informations sur comment définir des ressources au statut dépublié.
 
    ![screen_shot_2018-03-15at52501pm](assets/screen_shot_2018-03-15at52501pm.jpg)
 
@@ -398,8 +399,8 @@ La taille de fichier maximale pour le chargement automatique d’Experience Man
 
    >[!NOTE]
    >
-   * Lors de l’ajout de ressources après l’automatisation, si elles ne sont pas placées dans le dossier cible CQ, elles ne sont pas téléchargées vers Dynamic Media Classic.
-   * Experience Manager incorpore toutes les métadonnées comme XMP avant de les charger vers Dynamic Media Classic, de sorte que toutes les propriétés du nœud de métadonnées soient disponibles dans Dynamic Media Classic sous la forme d’un XMP.
+   >* Lors de l’ajout de ressources après l’automatisation, si elles ne sont pas placées dans le dossier cible CQ, elles ne sont pas téléchargées vers Dynamic Media Classic.
+   >* Experience Manager incorpore toutes les métadonnées comme XMP avant de les charger vers Dynamic Media Classic, de sorte que toutes les propriétés du nœud de métadonnées soient disponibles dans Dynamic Media Classic sous la forme d’un XMP.
 
 ### Configuration du statut (publié/dépublié) des ressources poussées vers Dynamic Media Classic {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene}
 
@@ -424,7 +425,7 @@ Ces étapes sont les mêmes que pour créer une configuration de test sécurisé
 
 >[!NOTE]
 >
-Si votre environnement d’installation est un système d’exploitation Unix 64 bits, rendez-vous sur [https://helpx.adobe.com/fr/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/fr/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) pour connaître les autres options de configuration à définir.
+>Si votre environnement d’installation est un système d’exploitation Unix 64 bits, rendez-vous sur [https://helpx.adobe.com/fr/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/fr/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) pour connaître les autres options de configuration à définir.
 
 #### Limites connues pour pousser des ressources en conservant un statut dépublié  {#known-limitations-for-pushing-assets-in-unpublished-state}
 
@@ -435,13 +436,13 @@ Si vous utilisez cette fonction, tenez compte des restrictions suivantes :
 
 >[!NOTE]
 >
-Si vous souhaitez publier les ressources immédiatement, nous recommandons de conserver l’option **[!UICONTROL Activer l’aperçu sécurisé]** définie sur **[!UICONTROL Immédiatement]** et d’utiliser la fonction **[!UICONTROL Activer le chargement automatique.]**
+>Si vous souhaitez publier les ressources immédiatement, nous recommandons de conserver l’option **[!UICONTROL Activer l’aperçu sécurisé]** définie sur **[!UICONTROL Immédiatement]** et d’utiliser la fonction **[!UICONTROL Activer le chargement automatique.]**
 
 ### Définition du statut des ressources poussées vers Dynamic Media Classic comme dépubliées {#setting-the-state-of-assets-pushed-to-scene-as-unpublished}
 
 >[!NOTE]
 >
-Si vous publiez une ressource dans Experience Manager, vous activez automatiquement le statut d’exploitation et de mise en ligne de la ressource de S7 (le statut de la ressource n’est plus Dépublié et ne bénéficie plus d’un aperçu sécurisé).
+>Si vous publiez une ressource dans Experience Manager, vous activez automatiquement le statut d’exploitation et de mise en ligne de la ressource de S7 (le statut de la ressource n’est plus Dépublié et ne bénéficie plus d’un aperçu sécurisé).
 
 **Pour définir des ressources poussées vers Dynamic Media Classic sur le statut Dépublié, procédez comme suit :**
 
@@ -513,7 +514,7 @@ Une seule configuration Dynamic Media Classic à la fois peut être marquée c
 
    >[!NOTE]
    >
-   S’il n’existe qu’une seule configuration, le fait de cocher la case **[!UICONTROL Configuration par défaut]** est sans effet.
+   >S’il n’existe qu’une seule configuration, le fait de cocher la case **[!UICONTROL Configuration par défaut]** est sans effet.
 
 ### Configuration du dossier ad hoc {#configuring-the-ad-hoc-folder}
 
@@ -570,11 +571,11 @@ Plus précisément, vous configurez le format de fichier accepté par le type MI
 
    >[!NOTE]
    >
-   Si vous téléchargez des fichiers PSD et que vous souhaitez les traiter en tant que modèles avec des extractions de calque, saisissez ce qui suit dans le champ de valeur **[!UICONTROL jobParam]** :
+   >Si vous téléchargez des fichiers PSD et que vous souhaitez les traiter en tant que modèles avec des extractions de calque, saisissez ce qui suit dans le champ de valeur **[!UICONTROL jobParam]** :
    >
-   `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
+   >`process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
    >
-   Assurez-vous que votre fichier PSD contient des calques. S’il s’agit strictement d’une image ou d’une image avec un masque, elle est traitée en tant qu’image uniquement, car il n’y a aucun calque à traiter.
+   >Assurez-vous que votre fichier PSD contient des calques. S’il s’agit strictement d’une image ou d’une image avec un masque, elle est traitée en tant qu’image uniquement, car il n’y a aucun calque à traiter.
 
 1. Dans le coin supérieur gauche de la page CRXDE Lite, sélectionnez **[!UICONTROL Tout enregistrer]**.
 
@@ -616,6 +617,6 @@ Si vous rencontrez des problèmes pour intégrer Experience Manager à Dynamic�
 
 >[!CAUTION]
 >
-L’importation de ressources à partir d’un compte d’entreprise Dynamic Media Classic existant peut prendre un certain temps pour s’afficher dans Experience Manager. Veillez à désigner dans Dynamic Media Classic un dossier qui ne comporte pas trop de ressources. Par exemple, le dossier racine comporte souvent trop de ressources.
+>L’importation de ressources à partir d’un compte d’entreprise Dynamic Media Classic existant peut prendre un certain temps pour s’afficher dans Experience Manager. Veillez à désigner dans Dynamic Media Classic un dossier qui ne comporte pas trop de ressources. Par exemple, le dossier racine comporte souvent trop de ressources.
 >
-Si vous souhaitez tester l’intégration, vous pouvez faire pointer le dossier racine vers un sous-dossier uniquement, au lieu de la société entière.
+>Si vous souhaitez tester l’intégration, vous pouvez faire pointer le dossier racine vers un sous-dossier uniquement, au lieu de la société entière.

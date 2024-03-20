@@ -2,7 +2,8 @@
 title: Étapes supplémentaires pour obtenir des courriers électroniques avec des pièces jointes
 description: Découvrez comment corriger l’erreur lorsque vous ne parvenez pas à récupérer des courriers électroniques avec des pièces jointes pour les plateformes AEM Forms on JEE.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
-source-git-commit: 553aef43342a709dd8e645279999a71b9e0185f0
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 72%

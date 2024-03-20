@@ -4,7 +4,9 @@ description: Découvrez comment utiliser Adobe Experience Manager Assets pour g�
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+feature: Video
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 85%
@@ -41,4 +43,4 @@ Une fois que vous avez configuré le serveur proxy et créé les profils vidéo,
 >
 >La lecture audio ne fonctionne pas pour les fichiers OGG et WAV sur Microsoft® Internet Explorer 11. Une erreur `Invalid Source` apparaît sur la page des détails des ressources présentant l’extension OGG ou WAV.
 >
-Sous MS® Edge et iPad, les fichiers OGG ne s’exécutent pas et génèrent une erreur de format non pris en charge.
+>Sous MS® Edge et iPad, les fichiers OGG ne s’exécutent pas et génèrent une erreur de format non pris en charge.

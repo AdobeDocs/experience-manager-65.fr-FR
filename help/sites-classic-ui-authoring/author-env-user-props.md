@@ -7,10 +7,11 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 9abdaa6d-79ee-448e-a23f-d216433591f8
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 51%
+source-wordcount: '228'
+ht-degree: 39%
 
 ---
 
@@ -20,7 +21,7 @@ Adobe Experience Manager (AEM) vous permet de configurer votre compte et certain
 
 Les [paramètres du compte](#account-settings) et les [préférences utilisateur](#user-preferences) permettent de définir les options et préférences suivantes :
 
-* **Barre d’outils d’édition** Indiquez si vous souhaitez que la barre d’outils d’édition globale soit visible. Cette barre d’outils, qui s’affiche en haut de la fenêtre du navigateur, vous met à disposition les boutons **Copier**, **Couper**, **Coller**, **Supprimer** utilisables avec les composants de paragraphe sur cette page :
+* **Barre d’outils d’édition** Indiquez si vous souhaitez que la barre d’outils d’édition globale soit visible. Cette barre d’outils, qui s’affiche en haut de la fenêtre du navigateur, vous donne la possibilité de **Copier**, **Couper**, **Coller**, **Supprimer** des boutons utilisables avec les composants de paragraphe sur cette page :
 
    * Afficher lorsque cela s’avère nécessaire (paramètre par défaut)
    * Toujours afficher

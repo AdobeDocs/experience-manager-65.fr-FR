@@ -7,10 +7,11 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
-workflow-type: ht
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
 source-wordcount: '594'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -283,7 +284,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td> </td>
-   <td>Configuration de Dynamic Media<br /> </td>
+   <td>Configuration Dynamic Media<br /> </td>
   </tr>
   <tr>
    <td> </td>

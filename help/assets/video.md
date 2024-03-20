@@ -10,7 +10,8 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: c30630f0cd561256414a2883d29c9ee4be470ce1
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '11187'
 ht-degree: 95%
@@ -744,7 +745,7 @@ Cependant, tout fichier de piste audio chargé peut être défini comme l’audi
 >La lecture du contenu audio par défaut peut également dépendre de ce qui est défini dans les navigateurs suivants :
 >
 >* Chrome : le contenu audio par défaut défini dans la vidéo est lu.
-* Safari : si la langue par défaut est définie dans Safari, l’audio est lu avec la langue par défaut définie si elle est disponible avec le manifeste de la vidéo. Sinon, le contenu audio par défaut défini dans les propriétés d’une vidéo est lu.
+>* Safari : si la langue par défaut est définie dans Safari, l’audio est lu avec la langue par défaut définie si elle est disponible avec le manifeste de la vidéo. Sinon, le contenu audio par défaut défini dans les propriétés d’une vidéo est lu.
 
 **Pour définir l’audio par défaut d’une vidéo comportant plusieurs pistes audio :**
 
@@ -773,7 +774,7 @@ Voir [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-m
 
 >[!NOTE]
 >
-L’onglet Aperçu par défaut d’Experience Manager n’affiche pas plusieurs pistes audio et de sous-titre. Cela est dû au fait que ces pistes sont associées à Dynamic Media et ne peuvent être affichées qu’à l’aide de l’aperçu de la visionneuse Dynamic Media.
+>L’onglet Aperçu par défaut d’Experience Manager n’affiche pas plusieurs pistes audio et de sous-titre. Cela est dû au fait que ces pistes sont associées à Dynamic Media et ne peuvent être affichées qu’à l’aide de l’aperçu de la visionneuse Dynamic Media.
 
 **Pour prévisualiser une vidéo comportant plusieurs sous-titres et pistes audio :**
 
@@ -852,7 +853,7 @@ La piste audio d’origine extraite d’un fichier principal ne peut pas être t
 
 >[!IMPORTANT]
 >
-Adobe vous recommande d’[activer la fonctionnalité de plusieurs sous-titres et pistes audio](#enable-dash) sur votre compte Dynamic Media. Cela vous permet de tirer parti de la dernière architecture backend de Dynamic Media et d’un workflow simplifié pour ajouter des légendes, des sous-titres et des pistes audio à vos vidéos.
+>Adobe vous recommande d’[activer la fonctionnalité de plusieurs sous-titres et pistes audio](#enable-dash) sur votre compte Dynamic Media. Cela vous permet de tirer parti de la dernière architecture backend de Dynamic Media et d’un workflow simplifié pour ajouter des légendes, des sous-titres et des pistes audio à vos vidéos.
 
 Vous pouvez étendre la portée de vos vidéos aux marchés mondiaux en ajoutant des sous-titres aux vidéos uniques ou aux ensembles de vidéos adaptatives. En ajoutant des sous-titrages, vous évitez d’avoir à réenregistrer le son ou de recourir à des locuteurs natifs pour réenregistrer la partie audio dans les différentes langues. La lecture de la vidéo s’effectue dans la langue dans laquelle elle a été enregistrée. Les sous-titres en langues étrangères s’affichent afin que les personnes de différentes langues puissent toujours comprendre la partie audio.
 
@@ -860,7 +861,7 @@ Les légendes permettent également une plus grande accessibilité pour les pers
 
 >[!NOTE]
 >
-Le lecteur vidéo utilisé doit prendre en charge l’affichage des sous-titres.
+>Le lecteur vidéo utilisé doit prendre en charge l’affichage des sous-titres.
 
 Consultez également la section [Accessibilité dans Dynamic Media](/help/assets/accessibility-dm.md).
 
@@ -888,7 +889,7 @@ Pour plus d’informations sur l’utilisation de la fonction JSON dans une URL,
 
    >[!NOTE]
    >
-   Pour la bonne prise en charge internationale des sous-titres vidéo dans différentes langues, la norme WebVTT implique de créer des fichiers .vtt distincts et des appels pour chaque langue à prendre en charge.
+   >Pour la bonne prise en charge internationale des sous-titres vidéo dans différentes langues, la norme WebVTT implique de créer des fichiers .vtt distincts et des appels pour chaque langue à prendre en charge.
 
    En règle générale, vous devez attribuer au fichier de sous-titres VTT le même nom qu’au fichier vidéo et vous lui ajoutez l’indicateur de paramètres régionaux, comme -EN, -FR ou -DE. Ainsi, vous pouvez automatiser aisément la génération des URL de vidéo avec le système de gestion de contenu web existant.
 
@@ -919,7 +920,7 @@ Vous pouvez faciliter la lecture et la consultation de vos vidéos les plus long
 
 >[!NOTE]
 >
-Le lecteur vidéo utilisé doit prendre en charge l’utilisation des marqueurs de chapitre. Les lecteurs vidéo Dynamic Media prennent en charge les marqueurs de chapitre, mais l’utilisation de lecteurs vidéo tiers ne le permet pas.
+>Le lecteur vidéo utilisé doit prendre en charge l’utilisation des marqueurs de chapitre. Les lecteurs vidéo Dynamic Media prennent en charge les marqueurs de chapitre, mais l’utilisation de lecteurs vidéo tiers ne le permet pas.
 
 Si vous le souhaitez, vous pouvez créer votre propre visionneuse personnalisée et lui donner le nom de votre marque, en utilisant des chapitres au lieu d’utiliser le paramètre prédéfini de la visionneuse de vidéos. Pour obtenir des instructions sur la création de votre propre visionneuse HTML5 avec une navigation par chapitre, dans l’API de SDK de la visionneuse HTML5 d’Adobe, reportez-vous à la section « Personnalisation du comportement à l’aide de modificateurs » sous les classes `s7sdk.video.VideoPlayer` et `s7sdk.video.VideoScrubber`. Consultez la documentation [API du SDK de la visionneuse HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html).
 

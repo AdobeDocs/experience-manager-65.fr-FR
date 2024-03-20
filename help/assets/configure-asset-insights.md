@@ -5,10 +5,11 @@ contentOwner: AG
 role: Architect, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 67be0ae6-5939-40fe-bf8a-b8a2c2f68f15
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '251'
+ht-degree: 91%
 
 ---
 
@@ -24,8 +25,8 @@ ht-degree: 100%
 
    ![chlimage_1-72](assets/chlimage_1-210.png)
 
-1. Cliquez sur la carte **[!UICONTROL Configuration des statistiques]**.
-1. Dans l’assistant, sélectionnez un centre de données et fournissez vos informations d’identification, notamment le nom de votre société, votre nom d’utilisateur et votre secret partagé.
+1. Cliquez sur la carte **[!UICONTROL Configuration d’Insights]**.
+1. Dans l’assistant, sélectionnez un centre de données et fournissez vos informations d’identification, notamment le nom de votre organisation, le nom d’utilisateur et le secret partagé.
 
    ![Configuration d’Adobe Analytics pour les Statistiques sur les ressources dans Experience Manager](assets/insights_config2.png)
 
@@ -43,5 +44,5 @@ Une fois que vous avez configuré votre compte [!DNL Adobe Analytics], le code d
 
    ![chlimage_1-73](assets/chlimage_1-214.png)
 
-1. Sur la page **[!UICONTROL Navigation]**, cliquez sur la carte **[!UICONTROL Dispositif de suivi de la page de statistiques]**.
+1. Sur la page **[!UICONTROL Navigation]**, cliquez sur la carte **[!UICONTROL Dispositif de suivi de la page d’informations]**.
 1. Cliquez sur **[!UICONTROL Télécharger]** pour télécharger le code de suivi de page.

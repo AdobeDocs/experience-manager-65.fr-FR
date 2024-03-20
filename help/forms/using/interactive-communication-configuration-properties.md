@@ -8,10 +8,11 @@ topic-tags: interactive-communications
 docset: aem65
 feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '610'
-ht-degree: 44%
+ht-degree: 48%
 
 ---
 
@@ -58,19 +59,19 @@ Sélectionner **Configuration des fragments de document** sur le **Configuration
   <tr> 
    <td>Indentation</td> 
    <td>Largeur d’une seule unité de mise en retrait appliquée au texte dans les fragments de document de liste.</td> 
-   <td>12,7 mm</td> 
+   <td>12,7 mm</td> 
    <td>Nombre</td> 
   </tr> 
   <tr> 
-   <td>Roman Numbers Minimum Width</td> 
+   <td>Largeur minimale (chiffres romains)</td> 
    <td>Largeur minimale à appliquer à la puce ou au champ numérique lors de l’utilisation de chiffres romains dans des fragments de document de liste. </td> 
-   <td>12,7 mm</td> 
+   <td>12,7 mm</td> 
    <td>Nombre</td> 
   </tr> 
   <tr> 
-   <td>Number Minimum Width</td> 
+   <td>Largeur minimale (nombres)</td> 
    <td>Largeur minimale à appliquer à la puce ou au champ numérique lors de l’utilisation de listes numérotées à l’exception des chiffres romains dans des fragments de document de liste.</td> 
-   <td>8,0 mm</td> 
+   <td>8,0 mm</td> 
    <td>Nombre</td> 
   </tr> 
  </tbody> 
@@ -134,7 +135,7 @@ Sélectionner **Configuration du thème du canal web du formulaire adaptatif et 
   <tr> 
    <td>Nom de la liste des polices</td> 
    <td>Liste des polices disponibles lors de la création de Forms adaptatif et de communications interactives.</td> 
-   <td><p>Géorgie</p> <p>Book Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial black</p> <p>Impact</p> <p>Palatino Linotype</p> </td> 
+   <td><p>Georgia</p> <p>Book Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial black</p> <p>Impact</p> <p>Palatino Linotype</p> </td> 
    <td>Toutes les polices de serveur d’Adobe valides</td> 
   </tr> 
  </tbody> 

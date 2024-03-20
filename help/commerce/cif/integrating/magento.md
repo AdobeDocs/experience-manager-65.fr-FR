@@ -3,9 +3,10 @@ title: Intégration d’AEM et d’Adobe Commerce à l’aide de Commerce Inte
 description: AEM et Adobe Commerce sont intégrés de manière transparente à l’aide de Commerce Integration Framework (CIF). CIF permet à AEM d’accéder à une instance Adobe Commerce et de communiquer avec Adobe Commerce via GraphQL. Il permet également aux auteurs AEM d’utiliser les sélecteurs de produit et de catégorie, ainsi que la console de produits pour parcourir les données de produit et de catégorie récupérées à la demande à partir d’Adobe Commerce. En outre, CIF offre une vitrine prête à l’emploi qui peut accélérer les projets commerciaux.
 thumbnail: aem-magento-architecture.jpg
 exl-id: f843784c-5ff7-41d1-97c5-13facb8459b2
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '343'
 ht-degree: 100%
 
 ---

@@ -5,7 +5,8 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: ecbd0097-c407-4581-bab2-4729a71df4a3
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '712'
 ht-degree: 98%
@@ -45,7 +46,7 @@ L’extension Hybris d’eCommerce Integration Framework a été mise à jour 
 >
 >* Prend en charge les versions 18.11 et ultérieures.
 >* Pour exécuter le [serveur Hybris 5](https://www.sap.com/products/crm.html), vous devez disposer de Java™ 7.
-* Le module complémentaire de Hybris, l’[accélérateur Telco](https://www.sap.com/products/crm.html), n’est pas pris en charge par l’extension d’AEM.
+>* Le module complémentaire de Hybris, l’[accélérateur Telco](https://www.sap.com/products/crm.html), n’est pas pris en charge par l’extension d’AEM.
 >
 
 ### Packages nécessaires pour eCommerce avec Hybris {#packages-needed-for-ecommerce-with-hybris}
@@ -91,11 +92,11 @@ Pour installer une configuration complète (à l’aide du catalogue de démonst
 
 >[!CAUTION]
 >
-L’utilisation du serveur Hybris nécessite une licence Hybris distincte.
+>L’utilisation du serveur Hybris nécessite une licence Hybris distincte.
 
 >[!NOTE]
 >
-Pour l’équipe de développement, la [documentation de l’API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) est également disponible pour téléchargement.
+>Pour l’équipe de développement, la [documentation de l’API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) est également disponible pour téléchargement.
 
 ### Télécharger et créer votre serveur Hybris {#download-and-build-your-hybris-server}
 
@@ -103,17 +104,17 @@ Les étapes de cette procédure téléchargent et créent le serveur Hybris. Ell
 
 >[!CAUTION]
 >
-Les versions de Hybris antérieures à la version 5.5.1 ne sont pas prises en charge.
+>Les versions de Hybris antérieures à la version 5.5.1 ne sont pas prises en charge.
 
 >[!NOTE]
 >
-À cet effet, [Groovy](https://groovy-lang.org/) doit être installé sur votre système.
+>À cet effet, [Groovy](https://groovy-lang.org/) doit être installé sur votre système.
 
 1. Téléchargez la distribution **Hybris Commerce Suite** sur le site de téléchargement Hybris.
 
    >[!CAUTION]
    >
-   Pour y accéder, vous avez besoin d’un compte (Hybris).
+   >Pour y accéder, vous avez besoin d’un compte (Hybris).
 
 1. Décompressez le fichier de distribution à l’emplacement requis (appelé &lt;hybris-root-directory>).
 1. Dans la ligne de commande, exécutez la commande ci-dessous :
@@ -127,11 +128,11 @@ Les versions de Hybris antérieures à la version 5.5.1 ne sont pas prises en c
 
    >[!NOTE]
    >
-   Lors de l’exécution :
+   >Lors de l’exécution :
    >
-   `ant clean all`
+   >`ant clean all`
    >
-   Appuyez sur `Return` si nécessaire.
+   >Appuyez sur `Return` si nécessaire.
 
 1. Téléchargez les fichiers ci-dessous dans le dossier racine de la distribution Hybris extraite,
 
@@ -144,7 +145,7 @@ Les versions de Hybris antérieures à la version 5.5.1 ne sont pas prises en c
 
    >[!NOTE]
    >
-   Pour Hybris 5.6.0 et version ultérieure, utilisez le fichier setup.groovy suivant.
+   >Pour Hybris 5.6.0 et version ultérieure, utilisez le fichier setup.groovy suivant.
 
    5.6.0 et versions ultérieures
 
@@ -165,7 +166,7 @@ Les versions de Hybris antérieures à la version 5.5.1 ne sont pas prises en c
 
    >[!NOTE]
    >
-   En fonction de votre système, plusieurs de ces étapes peuvent prendre plusieurs minutes.
+   >En fonction de votre système, plusieurs de ces étapes peuvent prendre plusieurs minutes.
 
 1. Dans votre navigateur, accédez à la **console d’administration Hybris** à l’emplacement :
 
@@ -177,7 +178,7 @@ Les versions de Hybris antérieures à la version 5.5.1 ne sont pas prises en c
 
    >[!NOTE]
    >
-   En fonction de votre système, cette opération peut prendre plusieurs minutes.
+   >En fonction de votre système, cette opération peut prendre plusieurs minutes.
 
 ### Configurer la boutique Geometrixx Outdoors {#setup-the-geometrixx-outdoors-store}
 

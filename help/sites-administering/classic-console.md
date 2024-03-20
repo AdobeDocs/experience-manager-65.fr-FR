@@ -7,10 +7,11 @@ topic-tags: content
 content-type: reference
 docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 48%
+source-wordcount: '887'
+ht-degree: 46%
 
 ---
 
@@ -52,7 +53,7 @@ Pour accéder à la console Balisage de l’interface utilisateur classique :
      Si vous saisissez ces caractères, ils ne s’affichent pas.
 
    * **Nom**
-(*Obligatoire*) Nom du nœud pour la balise.
+(*Obligatoire*) Nom du noeud de la balise.
 
    * **Description**
 (*Facultatif*) Description de la balise.

@@ -5,7 +5,8 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 70%
@@ -123,7 +124,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
-Pour exporter des données à partir du tableau `EdcAuditEntity`, utilisez l’API [EventManager.exportEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) qui utilise [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) en tant que paramètre pour exporter les données de contrôle en fonction de `principalId`, `policyId` ou `licenseId`.
+>Pour exporter des données à partir du tableau `EdcAuditEntity`, utilisez l’API [EventManager.exportEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) qui utilise [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) en tant que paramètre pour exporter les données de contrôle en fonction de `principalId`, `policyId` ou `licenseId`.
 
 Pour obtenir des informations complètes sur un utilisateur du système, vous devez accéder et exporter les données de la base de données User Management. Pour plus d’informations, reportez-vous à la section [Forms UserManagement : gérer les données utilisateur](/help/forms/using/user-management-handling-user-data.md).
 
@@ -148,7 +149,7 @@ Procédez comme suit pour supprimer les données Document Security d’un ident
 
    >[!NOTE]
    >
-   Pour supprimer des données à partir du tableau `EdcAuditEntity`, utilisez l’API [EventManager.deleteEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) qui utilise [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) en tant que paramètre pour supprimer les données de contrôle en fonction de `principalId`, `policyId` ou `licenseId`.
+   >Pour supprimer des données à partir du tableau `EdcAuditEntity`, utilisez l’API [EventManager.deleteEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) qui utilise [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) en tant que paramètre pour supprimer les données de contrôle en fonction de `principalId`, `policyId` ou `licenseId`.
 
 1. Les fichiers XML de politique actifs et archivés sont stockés dans les tableaux de base de données `EdcPolicyXmlEntity` et `EdcPolicyArchiveEntity`, respectivement. Pour supprimer les données d’un utilisateur de ces tables, procédez comme suit :
 
@@ -158,7 +159,7 @@ Procédez comme suit pour supprimer les données Document Security d’un ident
 
    >[!NOTE]
    >
-   Supprimez l’objet Blob complet dans la fonction `Principal` La balise pour un ID principal ou le code XML de stratégie peut être corrompue ou inutilisable.
+   >Supprimez l’objet Blob complet dans la fonction `Principal` La balise pour un ID principal ou le code XML de stratégie peut être corrompue ou inutilisable.
 
    ```xml
    <ns2:Principal PrincipalNameType="USER">
@@ -205,7 +206,7 @@ Procédez comme suit pour supprimer les données Document Security d’un ident
 
    >[!NOTE]
    >
-   Les administrateurs peuvent rechercher des données utilisateur de politiques personnelles d’autres utilisateurs, y accéder et les supprimer dans **[!UICONTROL Services > Document Security > Mes politiques]** à l’aide de la console d’administration.
+   >Les administrateurs peuvent rechercher des données utilisateur de politiques personnelles d’autres utilisateurs, y accéder et les supprimer dans **[!UICONTROL Services > Document Security > Mes politiques]** à l’aide de la console d’administration.
 
 1. Supprimez les données de l’ID principal de la base de données User Management. Pour obtenir des instructions détaillées, reportez-vous à la section [Forms User Management : gérer les données utilisateur](/help/forms/using/user-management-handling-user-data.md).
 1. Démarrez le serveur AEM Forms.

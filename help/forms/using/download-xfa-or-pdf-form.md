@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 role: Admin
 exl-id: 5b7b9816-38c1-4780-b1fc-8184971f3772
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 40%
@@ -20,7 +21,7 @@ L’opération de téléchargement, comme son nom l’indique, vous permet d’e
 Dans AEM Forms, l’opération de téléchargement est prise en charge pour les types de ressources suivants :
 
 * Modèles de formulaire (XFA Forms)
-* Formulaires PDF
+* Formulaires PDF
 * Documents (fichiers de PDF plats)
 
 AEM Forms prend en charge le téléchargement de ces types de formulaires individuellement ou dans un dossier contenant un ou plusieurs formulaires pris en charge.

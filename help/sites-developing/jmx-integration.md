@@ -4,10 +4,11 @@ description: Exposez les attributs et les opérations de service pour permettre 
 topic-tags: extending-aem
 content-type: reference
 exl-id: fe727406-09cb-4516-8278-806fd78cfc12
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1659'
-ht-degree: 56%
+source-wordcount: '1621'
+ht-degree: 55%
 
 ---
 
@@ -422,7 +423,7 @@ public class WorkflowMBeanManagerImpl implements WorkflowMBeanManager {
 
 Par souci de commodité, nous proposons de copier et de coller le code XML suivant dans le fichier pom.xml de votre projet pour créer le bundle de composants. Le POM fait référence à plusieurs dépendances et modules externes requis.
 
-**Modules externes:**
+**Modules externes :**
 
 * Module externe Compilateur Apache Maven : compile les classes Java du code source.
 * Module externe Apache Felix Maven Bundle : crée le lot et le manifeste

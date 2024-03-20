@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2073'
 ht-degree: 81%
@@ -93,7 +94,7 @@ Vous pouvez configurer un profil utilisateur AEM à l’aide de la configuration
 
 >[!NOTE]
 >
->La configuration du dossier de services cloud est requise pour la configuration des services cloud pour les services RESTful, SOAP et OData.
+La configuration du dossier de services cloud est requise pour la configuration des services cloud pour les services RESTful, SOAP et OData.
 
 Toutes les configurations de service cloud dans AEM sont consolidées dans le dossier `/conf` du référentiel AEM. Par défaut, le dossier `conf` contient le dossier `global` dans lequel vous pouvez créer des configurations de service cloud. Toutefois, vous devez l’activer manuellement pour les configurations cloud. Vous pouvez également créer des dossiers supplémentaires dans `conf` pour créer et organiser des configurations de service cloud.
 
@@ -191,8 +192,8 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 
 >[!NOTE]
 >
->Le modèle de données de formulaire prend en charge [OData version 4](https://www.odata.org/documentation/).
->Pour obtenir un guide pas à pas sur la configuration de Microsoft Dynamics 365, en ligne ou sur site, voir [Configuration OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
+Le modèle de données de formulaire prend en charge [OData version 4](https://www.odata.org/documentation/).
+Pour obtenir un guide pas à pas sur la configuration de Microsoft Dynamics 365, en ligne ou sur site, voir [Configuration OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Accédez à **[!UICONTROL Outils > Cloud Services > Sources de données]**. Sélectionnez le dossier dans lequel vous souhaitez créer une configuration cloud.
 
@@ -206,7 +207,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 
    >[!NOTE]
    >
-   >Sélectionnez le type d’authentification OAuth 2.0 pour vous connecter aux services Microsoft Dynamics à l’aide du point de terminaison OData en tant que racine du service.
+   Sélectionnez le type d’authentification OAuth 2.0 pour vous connecter aux services Microsoft Dynamics à l’aide du point de terminaison OData en tant que racine du service.
 
 1. Sélectionner **Créer** pour créer la configuration cloud du service OData.
 

@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1858'
-ht-degree: 79%
+ht-degree: 81%
 
 ---
 
@@ -145,9 +146,9 @@ Calculer les données de formulaire à l’aide de l’API Forms (Java) :
 1. Récupération d’un formulaire contenant un script de calcul
 
    * Pour récupérer des données de formulaire contenant un script de calcul, créez une `com.adobe.idp.Document` en utilisant son constructeur et en appelant la propriété `javax.servlet.http.HttpServletResponse` de `getInputStream` à partir du constructeur.
-   * Appeler la variable `FormsServiceClient` de `processFormSubmission` et transmettez les valeurs suivantes :
+   * Appelez la méthode `processFormSubmission` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-      * Objet `com.adobe.idp.Document` contenant les données de formulaire.
+      * L’objet `com.adobe.idp.Document` qui contient les données du formulaire.
       * Une valeur de chaîne qui indique les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Indiquez le type de contenu à gérer en spécifiant une ou plusieurs valeurs pour la variable d’environnement `CONTENT_TYPE`. Par exemple, pour gérer les données XML et PDF, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
       * Une valeur de chaîne qui spécifie la valeur d’en-tête `HTTP_USER_AGENT`, par exemple, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Objet `RenderOptionsSpec` stockant les options d’exécution.
@@ -160,7 +161,7 @@ Calculer les données de formulaire à l’aide de l’API Forms (Java) :
 
    * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour envoyer un flux de données du formulaire au navigateur web du client.
    * Créez un `com.adobe.idp.Document` en appelant la méthode `FormsResult` object’s `getOutputContent` .
-   * Créez un `java.io.InputStream` en appelant la méthode `com.adobe.idp.Document` de `getInputStream` .
+   * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
    * Créez un tableau d’octets et renseignez-le avec le flux de données de formulaire en appelant la fonction `InputStream` de `read` et transmission du tableau d’octets en tant qu’argument.
    * Appeler la variable `javax.servlet.ServletOutputStream` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
@@ -192,7 +193,7 @@ Calculez les données du formulaire en utilisant l’API Forms (Web Service) :
    * Créez un tableau d’octets en appelant la méthode `java.io.ByteArrayOutputStream` de `toByteArray` .
    * Renseignez l’objet `BLOB` en appelant sa méthode `setBinaryData` et en transmettant le tableau d’octets comme argument.
    * Créez un objet `RenderOptionsSpec` en utilisant son constructeur. Définissez la valeur du paramètre régional en appelant la variable `RenderOptionsSpec` de `setLocale` et transmission d’une valeur string qui spécifie la valeur locale.
-   * Appeler la variable `FormsServiceClient` de `processFormSubmission` et transmettez les valeurs suivantes :
+   * Appelez la méthode `processFormSubmission` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
       * Objet `BLOB` contenant les données du formulaire.
       * Valeur de chaîne spécifiant les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Par exemple, vous pouvez spécifier la valeur de chaîne suivante : `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`.

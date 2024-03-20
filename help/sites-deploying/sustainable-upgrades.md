@@ -8,10 +8,11 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 18%
+source-wordcount: '860'
+ht-degree: 20%
 
 ---
 
@@ -59,7 +60,7 @@ Pour que les clients puissent comprendre plus facilement et plus en toute sécur
 
 >[!NOTE]
 >
-Ces stratégies ne sont appliquées que par rapport aux mécanismes basés sur des chemins de recherche Sling. D’autres zones de **/libs**, comme une bibliothèque côté client, peuvent se voir affecter la classification `Internal`. Cependant, elles peuvent toujours être utilisées avec l’inclusion clientlib standard. Il est important qu’un client continue à respecter la classification interne dans ces cas.
+>Ces stratégies ne sont appliquées que par rapport aux mécanismes basés sur des chemins de recherche Sling. D’autres zones de **/libs**, comme une bibliothèque côté client, peuvent se voir affecter la classification `Internal`. Cependant, elles peuvent toujours être utilisées avec l’inclusion clientlib standard. Il est important qu’un client continue à respecter la classification interne dans ces cas.
 
 #### Indicateurs de type de contenu CRXDE Lite {#crxde-lite-content-type-indicators}
 
@@ -81,9 +82,9 @@ Les mixins appliqués dans CRXDE Lite affichent les noeuds de contenu et les arb
 
 >[!NOTE]
 >
-Depuis la version 6.5 d’AEM, Adobe recommande d’utiliser l’Outil de détection des motifs pour détecter les violations d’accès au contenu. Les rapports du détecteur de motifs sont plus détaillés, détectent plus de problèmes et réduisent la probabilité de faux positifs.
+>Depuis la version 6.5 d’AEM, Adobe recommande d’utiliser l’Outil de détection des motifs pour détecter les violations d’accès au contenu. Les rapports du détecteur de motifs sont plus détaillés, détectent plus de problèmes et réduisent la probabilité de faux positifs.
 >
-Pour plus d’informations, consultez la section [Évaluation de la complexité de la mise à niveau à l’aide de l’Outil de détection des motifs](/help/sites-deploying/pattern-detector.md).
+>Pour plus d’informations, consultez la section [Évaluation de la complexité de la mise à niveau à l’aide de l’Outil de détection des motifs](/help/sites-deploying/pattern-detector.md).
 
 AEM version 6.5 est fournie avec un contrôle de l’intégrité afin d’alerter les clients si du contenu superposé ou référencé est utilisé de manière incohérente avec la classification de contenu.
 

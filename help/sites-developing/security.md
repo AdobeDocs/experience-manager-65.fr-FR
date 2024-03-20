@@ -2,10 +2,11 @@
 title: Sécurité
 description: La sécurité des applications commence pendant la phase de développement.
 exl-id: c4f7f45f-224b-4fc3-b4b0-f5b21b8a466f
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 28%
+source-wordcount: '392'
+ht-degree: 48%
 
 ---
 
@@ -17,11 +18,11 @@ La sécurité des applications commence pendant la phase de développement. Adob
 
 Selon le principe de moindre privilège, Adobe recommande d’effectuer chaque accès au référentiel en utilisant la session liée à la requête de l’utilisateur et au contrôle d’accès approprié.
 
-## Protect contre les scripts intersites (XSS) {#protect-against-cross-site-scripting-xss}
+## la fonctionnalité Protection contre les failles cross-site scripting (XSS) {#protect-against-cross-site-scripting-xss}
 
-Les scripts de site à site (XSS) permettent aux pirates d’injecter du code dans des pages web consultées par d’autres utilisateurs. Cette vulnérabilité de sécurité peut être exploitée par des utilisateurs web malveillants pour contourner les contrôles d’accès.
+Les scripts de site à site (XSS) permettent aux pirates d’injecter du code dans des pages web consultées par d’autres utilisateurs. Cette vulnérabilité de sécurité peut être exploitée par des utilisateurs et utilisatrices web malveillants pour contourner les contrôles d’accès.
 
-AEM applique le principe de filtrage de tout le contenu fourni par l’utilisateur en sortie. La prévention de XSS est prioritaire lors des phases de développement et de test.
+AEM applique le principe de filtrage de tout le contenu fourni par l’utilisateur ou l’utilisatrice en sortie. La prévention contre les failles XSS se voit accorder la priorité la plus élevée lors des phases de développement et de test.
 
 Le mécanisme de protection XSS fourni par AEM est basé sur le [Bibliothèque Java™ AntiSamy](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) fourni par [OWASP (The Open Web Application Security Project)](https://owasp.org/). La configuration par défaut d’AntiSamy se trouve à l’adresse
 
@@ -33,7 +34,7 @@ Il est important que vous adaptiez cette configuration à vos besoins en matièr
 >
 >Adobe vous recommande de toujours accéder à l’API de protection XSS à l’aide du [XSSAPI fourni par AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
-En outre, un pare-feu d’application web, tel que [mod_security pour Apache](https://www.modsecurity.org), peut fournir un contrôle central et fiable sur la sécurité de l’environnement de déploiement et se protéger contre les attaques de script intersite qui n’avaient pas été détectées auparavant.
+En outre, un pare-feu d’application web, tel que le [mod_security pour Apache](https://www.modsecurity.org), peut fournir un contrôle centralisé fiable sur la sécurité de l’environnement de déploiement, ainsi qu’une protection contre les attaques XSS qui n’étaient pas détectées précédemment.
 
 ## Accès aux informations du Cloud Service {#access-to-cloud-service-information}
 

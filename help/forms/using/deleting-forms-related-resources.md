@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 role: Admin
 exl-id: b31f9f56-dd33-4478-ad34-01ac7d5a1b40
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 29%
+ht-degree: 33%
 
 ---
 
@@ -40,7 +41,7 @@ Si vous supprimez une ressource de l’instance d’auteur, elle est également 
 
 ## Impact de la suppression d’un formulaire XFA référencé {#impact-of-deleting-a-referenced-xfa-form}
 
-Dans AEM Forms, un modèle de formulaire XFA peut être référencé par un formulaire adaptatif ou un autre modèle de formulaire XFA. Un modèle peut également faire référence à une ressource ou à un autre modèle XFA.
+Dans AEM Forms, un modèle de formulaire XFA peut être référencé par un formulaire adaptatif ou un autre modèle de formulaire XFA. Un modèle peut également faire référence à une ressource ou à un autre modèle XFA.
 
 Il n’est pas conseillé de supprimer un formulaire XFA qui est référencé par un formulaire adaptatif, car il peut corrompre le formulaire adaptatif. Lorsqu’un formulaire adaptatif fait référence à un formulaire XFA, ses champs sont liés. Après la suppression de XFA, le formulaire adaptatif ne peut pas synchroniser ses champs avec les champs XFA et affiche un message d’erreur pour ces champs. Pour plus d’informations sur l’impact de la suppression d’un formulaire XFA référencé et sur les formulaires adaptatifs erronés, reportez-vous à la section [Mise à jour des formulaires XFA référencés](/help/forms/using/get-xdp-pdf-documents-aem.md#p-updating-referenced-xfa-forms-p).
 

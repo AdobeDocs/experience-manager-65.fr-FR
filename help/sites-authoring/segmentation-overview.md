@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: 61a5875f-ad09-4971-a886-b0d88e0c9967
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 77%
+source-wordcount: '546'
+ht-degree: 75%
 
 ---
 
@@ -46,9 +47,9 @@ Lors de la discussion de la segmentation, la terminologie suivante est utilisée
 **Caractéristiques comportementales** : les caractéristiques comportementales sont liées au comportement d’un visiteur sur le site web. Ces informations comprennent les éléments suivants :
 
 * L’intérêt au sein de votre site web ; notamment les pages visitées et les produits achetés.
-* les intérêts sur le site web de référence ; y compris les termes de recherche utilisés ou les publicités sur lesquelles l’utilisateur a cliqué.
+* L’intérêt sur le site web de référence, y compris les termes de recherche utilisés ou les publicités sur lesquelles l’utilisateur a cliqué.
 * L’intérêt sur d’autres sites, déterminé à l’aide d’outils tels que Spyjax.
-* La fidélité du visiteur ; la durée de la visite, la fréquence des visites.
+* Fidélité du visiteur ; durée de la visite, fréquence des visites.
 
 **Caractéristiques démographiques** : il s’agit de caractéristiques de population choisies, notamment :
 
@@ -61,7 +62,7 @@ Lors de la discussion de la segmentation, la terminologie suivante est utilisée
 
 **Caractéristiques dérivées** : certaines caractéristiques démographiques sont difficiles à déterminer sans inscription, mais peuvent être extraites en combinant les caractéristiques comportementales et démographiques.
 
-Par exemple, la combinaison de l’URL de référence (en tant que caractéristique comportementale) avec des données démographiques (acquises à partir d’outils tels que [Google Ad Planner](https://www.google.com/adplanner/)) permettent aux propriétaires de site d’extraire les caractéristiques démographiques de leurs visiteurs.
+Par exemple, combiner l’URL de référence (en tant que caractéristique comportementale) à des données démographiques (acquises à partir d’outils tels que [Google Ad Planner](https://www.google.com/adplanner/)) permettent aux propriétaires de site d’extraire les caractéristiques démographiques de leurs visiteurs.
 
 **Sous-segment** : un segment peut être divisé en plusieurs sous-segments. Ceci s’effectue en définissant des caractéristiques supplémentaires.
 

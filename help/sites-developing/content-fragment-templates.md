@@ -7,10 +7,11 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 1b75721c-b223-41f0-88d9-bd855b529f31
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -52,7 +53,7 @@ L’ordre de priorité est (dans l’ordre décroissant) `/conf`, `/apps`, `/lib
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recréez l’élément requis (c’est-à-dire, tel qu’il existe dans `/libs`) sous `/apps`
+>1. Recréez l’élément requis (tel qu’il existe dans `/libs`) sous `/apps`.
 >
 >1. Apportez les modifications désirées dans `/apps`.
 >

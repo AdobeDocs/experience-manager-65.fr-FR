@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: 9e1b0067-c7dc-4bbb-a209-d674592be858
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2171'
-ht-degree: 47%
+ht-degree: 48%
 
 ---
 
@@ -88,7 +89,7 @@ Effectuez les étapes suivantes pour utiliser un sous-formulaire dans un modèle
 1. Sélectionnez **Fichier** > **Enregistrer sous** pour enregistrer le fichier sur le système de fichiers local :
 
    1. Accédez à l’emplacement où enregistrer le fichier et nommer le modèle XDP.
-   1. Sélectionner **.xdp** de la **Enregistrer en tant que type** liste déroulante.
+   1. Sélectionnez **.xdp** dans la liste déroulante **Type**.
 
    1. Sélectionnez **Enregistrer**.
 
@@ -139,7 +140,7 @@ Effectuez les opérations suivantes pour utiliser le composant Tableau dans le m
 1. Sélectionnez **Fichier** > **Enregistrer sous** pour enregistrer le fichier sur le système de fichiers local :
 
    1. Accédez à l’emplacement où enregistrer le fichier et spécifiez le nom du modèle XDP.
-   1. Sélectionner **.xdp** de la **Enregistrer en tant que type** liste déroulante.
+   1. Sélectionnez **.xdp** dans la liste déroulante **Type**.
 
    1. Sélectionnez **Enregistrer**.
 

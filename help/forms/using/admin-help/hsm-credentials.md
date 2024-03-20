@@ -6,10 +6,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 11%
+source-wordcount: '1322'
+ht-degree: 12%
 
 ---
 
@@ -52,14 +53,14 @@ AEM forms Digital Signatures peut utiliser les informations d’identification s
    * **Nom du jeton :** correspond à un nom de partition (par exemple, HSMPART1).
    * **ID d’emplacement :** nombre entier correspondant à l’emplacement, qui correspond à son tour à une partition. Par exemple, le client (Forms Server) s’est d’abord enregistré avec la partition HSMPART1. Cela mappe l’emplacement 1 à la partition HSMPART1 pour ce client. Etant donné que HSMPART1 est la première partition enregistrée, l’ID d’emplacement est 1 et vous définissez Informations d’emplacement sur 1.
 
-     L’identifiant d’emplacement est défini client par client. Si vous enregistrez une deuxième machine sur une partition différente (par exemple, HSMPART2 sur le même appareil HSM), l’emplacement 1 sera associé à la partition HSMPART2 pour ce client.
+     L’ID d’emplacement est défini pour les clients de façon individuelle. Si vous enregistrez une deuxième machine sur une partition différente (par exemple, HSMPART2 sur le même appareil HSM), l’emplacement 1 sera associé à la partition HSMPART2 pour ce client.
 
    * **Index d’emplacement :** si vous sélectionnez Index d’emplacement, définissez Informations d’emplacement sur un nombre entier correspondant à l’emplacement. Il s’agit d’un index de base 0, ce qui signifie que si le client est d’abord enregistré avec la partition HSMPART1, l’emplacement 1 est mappé à HSMPART1 pour ce client. Etant donné que HSMPART1 est la première partition enregistrée, l’index d’emplacement est 0.
 
 1. Sélectionnez l’une de ces options et indiquez le chemin d’accès :
 
    * **Certificat** : (non requis si vous utilisez SHA1) cliquez sur Parcourir et localisez le chemin d’accès à la clé publique correspondant aux informations d’identification utilisées.
-   * **Certificat SHA1 :** (Non requis si vous utilisez un certificat physique) Saisissez la valeur SHA1 (empreinte numérique) du fichier de clé publique (.cer) pour les informations d’identification que vous utilisez. Assurez-vous qu’aucun espace n’est utilisé dans la valeur SHA1.
+   * **Certificat SHA1 :** (Non requis si vous utilisez un certificat physique) Saisissez la valeur SHA1 (empreinte numérique) du fichier de clé publique (.cer) pour les informations d’identification que vous utilisez. Veillez à ce que la valeur SHA1 ne contienne aucun espace.
 
 1. Dans la zone Mot de passe, saisissez le mot de passe requis pour accéder à la clé HSM correspondant aux informations d’emplacement données, puis cliquez sur Enregistrer.
 

@@ -7,10 +7,11 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: PDF Generator
 exl-id: 0e2c12b5-24c8-4aca-8826-cb661051ce4f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1173'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -120,7 +121,7 @@ PDF Generator prend en charge la réduction de la taille des fichiers de PDF.
 
 >[!NOTE]
 >
->L’optimisation d’un document signé numériquement supprime et invalide les signatures numériques.
+>L’optimisation d’un document numériquement signé supprime et invalide les signatures numériques.
 
 1. Dans Administration Console, cliquez sur Services > PDF Generator > Optimize PDF.
 1. Cliquez sur Parcourir pour localiser le fichier de PDF à optimiser.

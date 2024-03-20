@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a3a6a06d-ec90-4147-a5f0-e776a086ee12
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1822'
-ht-degree: 82%
+ht-degree: 84%
 
 ---
 
@@ -117,7 +118,7 @@ Rendre un formulaire par valeur à l’aide de l’API Forms (Java) :
 
 1. Rendre un formulaire par valeur
 
-   Appeler la variable `FormsServiceClient` de `renderPDFForm` et transmettez les valeurs suivantes :
+   Appelez la méthode `renderPDFForm` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
    * Une valeur de chaîne vide. (Normalement, ce paramètre nécessite une valeur de chaîne qui indique le nom de la conception de formulaire.)
    * Un objet `com.adobe.idp.Document` contenant la conception de formulaire. Normalement, cette valeur de paramètre est réservée aux données fusionnées avec le formulaire.
@@ -133,7 +134,7 @@ Rendre un formulaire par valeur à l’aide de l’API Forms (Java) :
    * Accédez au type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
    * Définissez la variable `javax.servlet.http.HttpServletResponse` type de contenu de l’objet en appelant ses `setContentType` et transmettre le type de contenu de la méthode `com.adobe.idp.Document` .
    * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données de formulaire dans le navigateur Web client en appelant la fonction `javax.servlet.http.HttpServletResponse` de `getOutputStream` .
-   * Créez un `java.io.InputStream` en appelant la méthode `com.adobe.idp.Document` de `getInputStream` .
+   * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
    * Créez un tableau d’octets et affectez la taille de l’objet `InputStream`. Appeler la variable `InputStream` de `available` pour obtenir la taille de la variable `InputStream` .
    * Renseignez le tableau d’octets avec le flux de données de formulaire en appelant la variable `InputStream` de `read`et transmission du tableau d’octets en tant qu’argument.
    * Appeler la variable `javax.servlet.ServletOutputStream` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
@@ -171,7 +172,7 @@ Rendre un formulaire par valeur à l’aide de l’API Forms (service web) :
 
 1. Rendre un formulaire par valeur
 
-   Appeler la variable `FormsService` de `renderPDFForm` et transmettez les valeurs suivantes :
+   Appelez la méthode `renderPDFForm` de l’objet `FormsService` et transmettez les valeurs suivantes :
 
    * Une valeur de chaîne vide. (Normalement, ce paramètre nécessite une valeur de chaîne qui indique le nom de la conception de formulaire.)
    * Un objet `BLOB` contenant la conception de formulaire. Normalement, cette valeur de paramètre est réservée aux données fusionnées avec le formulaire.

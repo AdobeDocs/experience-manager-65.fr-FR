@@ -7,9 +7,10 @@ content-type: reference
 docset: aem65
 exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
-workflow-type: ht
-source-wordcount: '3101'
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '3073'
 ht-degree: 100%
 
 ---
@@ -27,7 +28,7 @@ Les éléments de base sont les suivants :
 
 **Comptes utilisateur** : CRX authentifie l’accès en identifiant et en vérifiant un utilisateur ou une utilisatrice (par l’intermédiaire de cette personne ou d’une autre application) en fonction des détails contenus dans le compte utilisateur.
 
-Dans CRX, chaque compte utilisateur est un nœud dans l’espace de travail. Un compte utilisateur CRX possède les propriétés suivantes :
+Dans CRX, chaque compte utilisateur est un nœud dans l’espace de travail. Un compte d’utilisateur CRX possède les propriétés suivantes :
 
 * Il représente un utilisateur ou une utilisatrice de CRX.
 * Il contient un nom d’utilisateur et un mot de passe.
@@ -79,7 +80,7 @@ CRX utilise deux concepts clés lors de l’évaluation des droits d’accès :
 
    * le principal de sécurité de l’utilisateur ;
 
-     Les droits affectés directement au compte utilisateur
+     Les droits affectés directement au compte d’utilisateur
 
    * tous les principaux de sécurité des groupes associés à cet utilisateur.
 
@@ -96,7 +97,7 @@ Dans CRX, le sujet dépend de :
 
 La liste des droits d’accès applicables au sujet est établie à partir :
 
-* des droits affectés directement au compte utilisateur ;
+* des droits affectés directement au compte d’utilisateur ;
 * et de tous les droits affectés aux groupes auxquels appartient l’utilisateur.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
@@ -245,13 +246,13 @@ Si vous cliquez sur un ID de groupe (le cas échéant), l’[Administration des 
 
 La fonction Emprunter l’identité permet à un utilisateur ou une utilisatrice de travailler sous le nom d’un(e) autre.
 
-Cela signifie qu’un compte utilisateur peut spécifier d’autres comptes (utilisateur ou groupe) compatibles avec son compte. En d’autres termes, si la personne B est autorisée à emprunter l’identité de la personne A, la personne B peut agir à l’aide des détails du compte utilisateur (dont l’ID, le nom et les droits d’accès) de la personne A.
+Cela signifie qu’un compte d’utilisateur peut spécifier d’autres comptes (utilisateur, utilisatrice ou groupe) compatibles avec son compte. En d’autres termes, si la personne B est autorisée à emprunter l’identité de la personne A, la personne B peut agir à l’aide des détails du compte utilisateur (dont l’ID, le nom et les droits d’accès) de la personne A.
 
 Cela permet aux comptes d’emprunteur d’identité d’effectuer des tâches comme s’ils utilisaient le compte qu’ils empruntaient. Par exemple, lors d’une absence ou pour partager une charge excessive à court terme.
 
 Si un compte emprunte l’identité d’un autre compte, il est très difficile de s’en rendre compte. Les fichiers journaux ne contiennent pas d’informations sur le fait que l’emprunt de l’identité s’est produit lors des événements. Ainsi, si la personne B emprunte l’identité de la personne A, tous les événements peuvent sembler avoir été effectués personnellement par la personne A.
 
-### Création d’un compte utilisateur {#creating-a-user-account}
+### Création d’un compte d’utilisateur {#creating-a-user-account}
 
 1. Ouvrez la boîte de dialogue **Administration des utilisateurs**.
 1. Cliquez sur **Créer un utilisateur**.
@@ -277,15 +278,15 @@ Si un compte emprunte l’identité d’un autre compte, il est très difficile 
 >* de groupes comportant de nombreux membres.
 >
 
-### Mise à jour d’un compte utilisateur {#updating-a-user-account}
+### Mise à jour d’un compte d’utilisateur {#updating-a-user-account}
 
 1. Avec la boîte de dialogue **Administration des utilisateurs**, ouvrez la vue Liste de tous les comptes.
 1. Parcourez la structure de l’arborescence.
 1. Cliquez sur le compte requis pour l’ouvrir et le modifier.
 1. Effectuez une modification, puis cliquez sur Enregistrer (symbole de coche verte) pour cette entrée.
-1. Cliquez sur **Fermer** pour terminer, ou sur **Liste...** pour revenir à la liste de tous les comptes utilisateurs.
+1. Cliquez sur **Fermer** pour terminer, ou sur **Liste...** pour revenir à la liste de tous les comptes d’utilisateurs.
 
-### Suppression d’un compte utilisateur {#removing-a-user-account}
+### Suppression d’un compte d’utilisateur {#removing-a-user-account}
 
 1. Avec la boîte de dialogue **Administration des utilisateurs**, ouvrez la vue Liste de tous les comptes.
 1. Parcourez la structure de l’arborescence.
@@ -315,7 +316,7 @@ Les propriétés existantes peuvent être supprimées avec le symbole de la corb
 
 Le **mot de passe** est une propriété spéciale qui peut être modifiée en cliquant sur le lien **Modifier le mot de passe**.
 
-Vous pouvez également modifier le mot de passe de votre propre compte utilisateur à partir du menu **Sécurité** dans l’Explorateur CRX.
+Vous pouvez également modifier le mot de passe de votre propre compte d’utilisateur à partir du menu **Sécurité** dans l’Explorateur CRX.
 
 ### Définition d’un emprunteur d’identité {#defining-an-impersonator}
 
@@ -485,7 +486,7 @@ Les politiques peuvent être sélectionnées pour les éléments suivants :
 >
 >Pour simplifier la gestion, Adobe vous recommande d’attribuer des droits d’accès aux comptes de groupe, et non à des comptes utilisateurs individuels.
 >
->Il est plus facile de gérer quelques groupes que de nombreux comptes utilisateurs.
+>Il est plus facile de gérer quelques groupes que de nombreux comptes d’utilisateurs.
 
 ### Autorisations {#privileges}
 

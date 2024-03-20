@@ -7,7 +7,8 @@ topic-tags: Security
 content-type: reference
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 8c0c2d89fca7a5ba1a834108ae54fed524b3cbab
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1604'
 ht-degree: 75%
@@ -120,7 +121,7 @@ Vous trouverez plus d’informations sur les nouvelles fonctionnalités du group
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’outil de synchronisation des utilisateurs, voir [page de documentation](https://adobe-apiplatform.github.io/user-sync.py/en/).
+>Pour plus d’informations sur l’outil de synchronisation des utilisateurs, voir [page de documentation](https://adobe-apiplatform.github.io/user-sync.py/fr/).
 >
 >
 >L’outil de synchronisation des utilisateurs doit s’enregistrer en tant qu’UMAPI client d’Adobe I/O en suivant la procédure décrite [ici](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).

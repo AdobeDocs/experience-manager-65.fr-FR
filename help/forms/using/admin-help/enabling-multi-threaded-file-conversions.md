@@ -7,7 +7,8 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: PDF Generator
 exl-id: 402c1fd4-c6c8-494e-b452-b56a91c4a397
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 99%
@@ -28,7 +29,7 @@ Par défaut, PDF Generator ne peut convertir qu’un document OpenOffice, Micro
 
 >[!NOTE]
 >
-La conversion multithread de fichiers n’est pas prise en charge avec Microsoft® Excel, Microsoft® Visio, Microsoft® Project et Microsoft® Publisher.
+>La conversion multithread de fichiers n’est pas prise en charge avec Microsoft® Excel, Microsoft® Visio, Microsoft® Project et Microsoft® Publisher.
 
 Chaque instance d’OpenOffice ou de PDFMaker est lancée avec un compte utilisateur séparé. Chaque compte utilisateur ajouté doit correspondre à un utilisateur ou une utilisatrice valide disposant de droits d’administration sur le serveur Forms. Dans un environnement en cluster, le même groupe d’utilisateurs et d’utilisatrices doit être valide sur tous les nœuds du cluster.
 
@@ -67,7 +68,7 @@ Si vous exécutez OpenOffice, Microsoft® Word ou Microsoft® PowerPoint sous Wi
 
    >[!NOTE]
    >
-   Vous devez avoir attribué les rôles d’utilisateur et utilisatrice système et d’utilisateur et utilisatrice PDFG à « user1 » et « user2 ». Pour attribuer un rôle PDFG à un utilisateur ou une utilisatrice, voir [Ajouter un compte utilisateur](enabling-multi-threaded-file-conversions.md#add-a-user-account).
+   >Vous devez avoir attribué les rôles d’utilisateur et utilisatrice système et d’utilisateur et utilisatrice PDFG à « user1 » et « user2 ». Pour attribuer un rôle PDFG à un utilisateur ou une utilisatrice, voir [Ajouter un compte utilisateur](enabling-multi-threaded-file-conversions.md#add-a-user-account).
 
 1. Toujours dans le fichier /etc/sudoers, recherchez cette ligne et modifiez-la en ajoutant un signe dièse (#) au début de la ligne :
 
@@ -88,7 +89,7 @@ Si vous exécutez OpenOffice, Microsoft® Word ou Microsoft® PowerPoint sous Wi
 
 >[!NOTE]
 >
-OpenOffice doit être installé dans un emplacement du répertoire auquel tous les utilisateurs et utilisatrices PDFG peuvent accéder. Vous pouvez vérifier en vous connectant en tant qu’utilisateur ou utilisatrice PDFG et en essayant de lancer OpenOffice.
+>OpenOffice doit être installé dans un emplacement du répertoire auquel tous les utilisateurs et utilisatrices PDFG peuvent accéder. Vous pouvez vérifier en vous connectant en tant qu’utilisateur ou utilisatrice PDFG et en essayant de lancer OpenOffice.
 
 ### Ajout d’un compte utilisateur {#add-a-user-account}
 
@@ -97,7 +98,7 @@ OpenOffice doit être installé dans un emplacement du répertoire auquel tous l
 
    >[!NOTE]
    >
-   Si vous configurez des utilisateurs ou des utilisatrices pour OpenOffice, le nombre d’instances d’OpenOffice ne peut pas être supérieur au nombre de comptes d’utilisateurs spécifié dans cette étape.
+   >Si vous configurez des utilisateurs ou des utilisatrices pour OpenOffice, le nombre d’instances d’OpenOffice ne peut pas être supérieur au nombre de comptes d’utilisateurs spécifié dans cette étape.
 
 1. Redémarrez le serveur Forms.
 

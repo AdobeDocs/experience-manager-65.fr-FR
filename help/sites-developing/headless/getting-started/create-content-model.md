@@ -2,7 +2,8 @@
 title: Guide de démarrage rapide sur la création de modèles de fragments de contenu découplés
 description: Définissez la structure du contenu que vous créez et diffusez à l’aide des fonctionnalités Adobe Experience Manager (AEM) sans interface utilisateur graphique à l’aide des modèles de fragment de contenu.
 exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 54%

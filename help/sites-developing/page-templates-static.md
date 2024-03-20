@@ -7,9 +7,10 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: b934ac41-78b9-497f-ba95-b05ef1e5660e
-source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1601'
 ht-degree: 53%
 
 ---
@@ -120,7 +121,7 @@ Différentes propriétés peuvent être définies, notamment :
 * **jcr:title** - titre du modèle ; s’affiche dans la boîte de dialogue lors de la création d’une page.
 * **jcr:description** - description du modèle ; s’affiche dans la boîte de dialogue lors de la création d’une page.
 
-Ce noeud contient un noeud jcr:content (cq:PageContent) qui est utilisé comme base du noeud de contenu des pages résultantes ; cette référence, à l’aide de sling:resourceType, le composant à utiliser pour le rendu du contenu réel d’une nouvelle page.
+Ce noeud contient un noeud jcr:content (cq:PageContent) qui est utilisé comme base du noeud de contenu des pages résultantes ; il référence, à l’aide de sling:resourceType, le composant à utiliser pour le rendu du contenu réel d’une nouvelle page.
 
 ![screen_shot_2012-02-13at64010pm](assets/screen_shot_2012-02-13at64010pm.png)
 
@@ -145,7 +146,7 @@ Par exemple, AEM est fourni avec plusieurs modèles, y compris une page de conte
 | **Titre** | **Composant** | **Emplacement** | **Objectif** |
 |---|---|---|---|
 | Page d’accueil | homepage | geometrixx | Modèle de page d’accueil de Geometrixx. |
-| Page du contenu | contentpage | geometrixx | Modèle de page de contenu Geometrixx. |
+| Page de contenu | contentpage | geometrixx | Le modèle de page de contenu Geometrixx. |
 
 #### Affichage des modèles par défaut {#displaying-default-templates}
 
@@ -297,10 +298,10 @@ Pour créer un modèle basé sur un modèle existant :
 
    >[!NOTE]
    >
-   >Modifications apportées au **/apps/&lt;website>/templates/&lt;template-name>** affecte l’instance du modèle (comme dans la liste de sélection).
+   >Modifications apportées à la variable **/apps/&lt;website>/templates/&lt;template-name>** affecte l’instance du modèle (comme dans la liste de sélection).
    >
    >
-   Modifications apportées au **/apps/&lt;website>/components/&lt;component-name>** affecte la page de contenu créée lors de l’utilisation du modèle.
+   Modifications apportées à la variable **/apps/&lt;website>/components/&lt;component-name>** affecte la page de contenu créée lors de l’utilisation du modèle.
 
    Vous pouvez maintenant créer une page de votre site web à l’aide du nouveau modèle.
 
@@ -312,7 +313,7 @@ La bibliothèque cliente de l’éditeur suppose la présence de la variable `cq
 >
 Pour plus d’informations, voir [Utilisation des bibliothèques côté client](/help/sites-developing/clientlibs.md).
 
-## Mise à disposition d’un modèle existant {#making-an-existing-template-available}
+## Mettre à disposition un modèle existant {#making-an-existing-template-available}
 
 Cet exemple illustre comment autoriser l’utilisation d’un modèle pour certains chemins de contenu. Les modèles disponibles pour l’auteur de pages lors de la création de pages sont déterminés par la logique définie dans [Disponibilité des modèles](/help/sites-developing/templates.md#template-availability).
 

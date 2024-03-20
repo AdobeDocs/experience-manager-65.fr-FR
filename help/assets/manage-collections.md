@@ -7,10 +7,11 @@ role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2204'
-ht-degree: 97%
+source-wordcount: '2183'
+ht-degree: 96%
 
 ---
 
@@ -196,7 +197,7 @@ Dans une collection, la recherche [!DNL Experience Manager] se limite aux ressou
 Vous pouvez modifier les paramètres d’une collection, tels que le titre et la description, ou ajouter des membres à une collection.
 
 1. Sélectionnez une collection et cliquez sur les **[!UICONTROL Paramètres]** dans la barre d’outils. Vous pouvez également utiliser l’action rapide **[!UICONTROL Paramètres]** à partir de la miniature de la collection.
-1. Modifiez les paramètres de collection sur la page **[!UICONTROL Paramètres de la collection]**. Par exemple, modifiez le titre, les descriptions, les membres et les autorisations de la collection comme décrit dans la section [Ajout de collections](#creating-a-collection).
+1. Modifiez les paramètres de la collection sur la page **[!UICONTROL Paramètres de la collection]**. Par exemple, modifiez le titre, les descriptions, les membres et les autorisations de la collection, comme décrit dans la section [Ajout de collections](#creating-a-collection).
 
 1. Pour enregistrer les modifications, cliquez sur **[!UICONTROL Enregistrer]**.
 

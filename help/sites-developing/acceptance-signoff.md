@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 exl-id: 30ac9a63-f9e6-4075-b67e-4524d11a0e29
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 10%
+ht-degree: 14%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 10%
 Comme mentionné ci-dessus : [Tests d’acceptation](/help/sites-developing/planning.md) sont une catégorie spéciale de test utilisée pour vérifier que :
 
 * le projet répond aux exigences du client ;
-* Le client accepte le projet.
+* le client ou la cliente accepte le projet.
 
 Elles doivent être définies par le client et le chef de projet. Elles ont une signification particulière car elles sont souvent liées à la facturation finale.
 

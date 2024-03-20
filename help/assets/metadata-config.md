@@ -6,10 +6,11 @@ role: User, Admin
 feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 99%
+source-wordcount: '1978'
+ht-degree: 97%
 
 ---
 
@@ -60,7 +61,7 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
 
    ![Modification d’un formulaire de métadonnées](assets/metadata-edit-form.png)
 
-1. Cliquez sur un composant, puis configurez ses propriétés dans l’onglet **[!UICONTROL Paramètres]**. Cliquez par exemple sur le composant **[!UICONTROL Description]** et modifiez ses propriétés.
+1. Cliquez sur un composant et configurez ses propriétés dans le **[!UICONTROL Paramètres]** . Par exemple, cliquez sur le bouton **[!UICONTROL Description]** et modifiez ses propriétés.
 
    ![Définition d’un composant dans le profil de métadonnées](assets/metadata-profile-component-setting.png)
 
@@ -93,7 +94,7 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
 | [!UICONTROL Date] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut |
 | [!UICONTROL Balises standard] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut, <br> Description |
 
-1. Cliquez sur **[!UICONTROL Terminé]**. Le profil de métadonnées est ajouté à la liste des profils de la page **[!UICONTROL Profils de métadonnées]**.<br>
+1. Cliquez sur **[!UICONTROL Terminé]**. Le profil de métadonnées est ajouté à la liste des profils dans la variable **[!UICONTROL Profils de métadonnées]** page.<br>
 
    ![Profil de métadonnées ajouté à la page Profils de métadonnées](assets/MetadataProfiles-page.png)
 
@@ -186,7 +187,7 @@ L’onglet **[!UICONTROL Créer le formulaire]** répertorie les éléments de f
 |---|---|
 | [!UICONTROL En-tête de section] | Permet d’ajouter un en-tête de section pour une liste de composants communs. |
 | [!UICONTROL Une seule ligne de texte] | Permet d’ajouter une propriété de texte d’une seule ligne. Elle est stockée sous la forme d’une chaîne. |
-| [!UICONTROL Texte à plusieurs valeurs] | Permet d’ajouter une propriété de texte à plusieurs valeurs. Il est stocké sous la forme d’une table de chaînes. |
+| [!UICONTROL Texte à plusieurs valeurs] | Permet d’ajouter une propriété de texte à plusieurs valeurs. Il est stocké sous forme de tableau de chaînes. |
 | [!UICONTROL Nombre] | Permet d’ajouter un composant de nombre. |
 | [!UICONTROL Date] | Permet d’ajouter un composant de date. |
 | [!UICONTROL Liste déroulante] | Permet d’ajouter une liste déroulante. |

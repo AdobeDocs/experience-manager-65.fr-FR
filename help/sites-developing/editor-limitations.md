@@ -6,16 +6,17 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
 exl-id: fd64f5dc-dfff-466b-8cdd-3c24ea1a15c8
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 51%
+source-wordcount: '308'
+ht-degree: 59%
 
 ---
 
 # Limites de l’éditeur{#editor-limitations}
 
-L’éditeur de l’interface utilisateur tactile utilise des superpositions pour interagir avec le contenu confiné dans un iframe. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs. Cette page résume ces limites et fournit des solutions ou des solutions lorsque cela s’avère possible.
+L’éditeur de l’interface utilisateur tactile utilise des superpositions pour interagir avec le contenu confiné dans un iframe. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs. Cette page résume ces limites et fournit des solutions ou des contournements lorsque cela s’avère possible.
 
 ## Limites fonctionnelles {#functional-limitations}
 
@@ -29,7 +30,7 @@ Lors de la [modification d’une page](/help/sites-authoring/editing-content.md)
 
 ### Pages de structure {#structure-pages}
 
-Les pages ne peuvent pas être nommées `structure`. Pages nommées `structure` ne sont pas modifiables dans l’éditeur de page.
+Impossible de nommer les pages `structure`. Pages nommées `structure` ne sont pas modifiables dans l’éditeur de page.
 
 ## Limitations de CSS {#css-limitations}
 
@@ -37,7 +38,7 @@ Un développeur peut être confronté aux limites suivantes concernant les inter
 
 ### Éléments à positionnement absolu {#absolutely-positioned-elements}
 
-Les éléments positionnés de manière absolue peuvent entraîner des problèmes de position de leur superposition.
+Les éléments positionnés de manière absolue peuvent entraîner des problèmes de position de leur recouvrement.
 
 * Si cela se produit, assurez-vous que les dimensions de l’élément à positionnement absolu sont correctes, car l’éditeur crée une superposition avec les mêmes dimensions.
 

@@ -2,7 +2,8 @@
 title: Optimisation des requêtes GraphQL.
 description: Découvrez comment optimiser vos requêtes GraphQL lors du filtrage, de la pagination et du tri de vos fragments de contenu dans Adobe Experience Manager as a Cloud Service pour une diffusion de contenu sans interface.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 60%
@@ -69,7 +70,7 @@ Plusieurs méthodes de mise en cache peuvent également être utilisées à des 
 
 Voir :
 
-* [Requêtes persistantes GraphQL - Activation de la mise en cache dans Dispatcher](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-persisted-queries-enabling-caching-dispatcher)
+* [Requêtes persistantes GraphQL – Activation de la mise en cache dans Dispatcher](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-persisted-queries-enabling-caching-dispatcher)
 
 #### Utilisation d’un réseau de diffusion de contenu (CDN) {#use-cdn}
 

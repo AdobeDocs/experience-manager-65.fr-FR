@@ -5,7 +5,8 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: 4158315c28412bb9498c7d49d21b3f4d72681fc6
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1533'
 ht-degree: 74%
@@ -219,9 +220,9 @@ Vous pouvez tester les objets et services de modèle de données pour vérifier 
 
 Procédez comme suit pour effectuer le test :
 
-1. Accédez à l’onglet Modèle ]**, sélectionnez l’objet de modèle de données customerdetails**, puis sélectionnez **[!UICONTROL Tester l’objet]****[!UICONTROL ** de modèle.
+1. Accédez à l’onglet **[!UICONTROL Modèle]**, sélectionnez l’objet de modèle de données customerdetails **, puis sélectionnez**[!UICONTROL  Tester l’objet **]** de modèle.
 1. Dans la fenêtre [!UICONTROL Tester le modèle/service], sélectionnez **[!UICONTROL Objet de modèle de lecture]** dans le menu déroulant **[!UICONTROL Sélectionner le modèle/service]**.
-1. Dans la section customerdetails **, spécifiez une valeur pour l’argument** id **qui existe dans la** base de données configurée [!DNL MySQL] et sélectionnez **[!UICONTROL Tester]**.
+1. Dans la **section customerdetails** , spécifiez une valeur pour l’argument **id** qui existe dans la base de données configurée [!DNL MySQL] et sélectionnez **[!UICONTROL Tester]**.
 
    Les détails du client associés à l’ID spécifié sont récupérés et affichés dans la section **[!UICONTROL Sortie]**, comme indiqué ci-dessous.
 
@@ -240,4 +241,4 @@ Procédez comme suit pour effectuer le test :
 
 >[!NOTE]
 >
-> Vous pouvez créer et utiliser la configuration de liste SharePoint à l’aide du modèle de données de formulaire dans un formulaire adaptatif pour enregistrer des données ou un document d’enregistrement généré dans une liste SharePoint. Reportez-vous à Connecter un formulaire adaptatif à [la liste Microsoft® SharePoint pour](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration) obtenir des instructions détaillées.
+> Vous pouvez créer et utiliser la configuration de liste SharePoint à l’aide du modèle de données de formulaire dans un formulaire adaptatif pour enregistrer des données ou un document d’enregistrement généré dans une liste SharePoint. Reportez-vous à [Connecter un formulaire adaptatif à la liste Microsoft® SharePoint pour](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration) obtenir des instructions détaillées.

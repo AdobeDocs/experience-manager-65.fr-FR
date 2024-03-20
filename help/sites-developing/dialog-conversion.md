@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: e255145e-9e86-41ea-b048-ff46fdbff205
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 43%
+source-wordcount: '95'
+ht-degree: 30%
 
 ---
 
@@ -17,4 +18,4 @@ ht-degree: 43%
 
 L’outil de conversion de boîte de dialogue est fourni pour aider à étendre les composants existants qui ont uniquement une boîte de dialogue définie pour l’IU classique (basée sur ExtJS) ou basée sur l’IU Granite et Coral 2. Cet outil utilise la boîte de dialogue d’origine pour créer une boîte de dialogue en double conçue pour l’interface utilisateur standard, sur la base de l’IU Granite et de Coral 3.
 
-L’outil de conversion de boîte de dialogue fait partie de la [Suite d’outils de modernisation d’Adobe](modernization-tools.md).
+L’outil de conversion de boîte de dialogue fait partie de la [Suite d’outils de modernisation des Adobes](modernization-tools.md).

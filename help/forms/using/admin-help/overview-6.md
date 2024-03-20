@@ -6,10 +6,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: fbe1487e-c830-4be8-9841-6022e6a98ae7
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 3%
+ht-degree: 14%
 
 ---
 
@@ -29,4 +30,4 @@ Les informations fournies s’appliquent aux installations clé en main, automat
 >
 >Lors de la création de certificats de sécurité et d’informations d’identification SSL, utilisez les mêmes privilèges de compte d’utilisateur que ceux utilisés pour exécuter le serveur d’applications. Si le serveur d’applications est exécuté à l’aide d’autres privilèges utilisateur, le rendu du formulaire pour les rendus PDFForm peut échouer lorsque ContentRootURI pointe vers https.
 
-Si vous disposez d’un serveur LDAP compatible SSL, configurez User Management pour l’utiliser. (Voir [Configuration de User Management pour un serveur LDAP compatible SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)
+Si vous disposez d’un serveur LDAP compatible SSL, configurez la gestion des utilisateurs et utilisatrices pour l’utiliser. (Voir [Configuration de la gestion des utilisateurs et utilisatrices pour un serveur LDAP compatible SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)

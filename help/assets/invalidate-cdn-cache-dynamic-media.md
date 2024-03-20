@@ -8,9 +8,10 @@ content-type: reference
 role: User, Admin
 feature: CDN Cache
 exl-id: 23d3c274-0736-49f7-8d44-a56a55cfd06d
-source-git-commit: b61157b0e9afa49ef72150ae0c1703a959d154be
-workflow-type: ht
-source-wordcount: '0'
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '1372'
 ht-degree: 100%
 
 ---
@@ -50,7 +51,6 @@ Les ressources Dynamic Media sont mises en cache par le réseau de diffusion de 
    >Le modèle d’invalidation du réseau CDN peut enregistrer du texte jusqu’à 2 500 caractères.
 
 1. Dans le coin supérieur droit de la page **[!UICONTROL Modèle d’invalidation du réseau CDN]**, sélectionnez **[!UICONTROL Enregistrer]**, puis **[!UICONTROL OK]**.<br>
-
    *Partie 2 de 2 : définition des options d’invalidation du réseau CDN*
    <br>
 
@@ -71,7 +71,7 @@ Les ressources Dynamic Media sont mises en cache par le réseau de diffusion de 
    | --- | --- |
    | **[!UICONTROL Invalider les paramètres d’image prédéfinis associés à la ressource dans le réseau de diffusion de contenu]** | (Facultatif) Lorsque vous cochez cette option, les ressources sélectionnées et toutes les URL de paramètres d’image prédéfinis associées sont automatiquement formées en vue de l’invalidation du cache.<br>Les ressources et leurs URL prédéfinies associées sont automatiquement formées en vue de l’invalidation. Cette option fonctionne uniquement pour les ressources d’image. |
    | **[!UICONTROL Invalidation en fonction d’un modèle]** | (Facultatif) Cochez cette option afin de n’utiliser que le modèle défini pour la formation d’URL. |
-   | **[!UICONTROL Ajouter des ressources]** | Utilisez le sélecteur de ressources pour sélectionner les ressources que vous souhaitez invalider. Vous pouvez sélectionner des ressources publiées ou non publiées.<br>La mise en cache sur le réseau CDN repose sur des URL et non sur des ressources. Il est donc nécessaire de connaître les URL complètes qui se trouvent sur votre site web. Après avoir déterminé ces URL, vous pouvez les ajouter au modèle. Vous pouvez ensuite sélectionner et ajouter ces ressources et invalider les URL en une seule étape. <br>Utilisez cette option avec les options **[!UICONTROL Invalider les paramètres d’image prédéfinis associés à la ressource dans le réseau de diffusion de contenu]** ou **[!UICONTROL Invalidation en fonction d’un modèle]**, ou les deux. |
+   | **[!UICONTROL Ajouter des ressources]** | Utilisez le sélecteur de ressources pour sélectionner les ressources que vous souhaitez invalider. Vous pouvez sélectionner des ressources publiées ou dépubliées.<br>La mise en cache sur le réseau CDN repose sur des URL et non sur des ressources. Il est donc nécessaire de connaître les URL complètes qui se trouvent sur votre site web. Après avoir déterminé ces URL, vous pouvez les ajouter au modèle. Vous pouvez ensuite sélectionner et ajouter ces ressources et invalider les URL en une seule étape. <br>Utilisez cette option avec les options **[!UICONTROL Invalider les paramètres d’image prédéfinis associés à la ressource dans le réseau de diffusion de contenu]** ou **[!UICONTROL Invalidation en fonction d’un modèle]**, ou les deux. |
    | **[!UICONTROL Ajouter une URL]** | Ajoutez ou collez manuellement des chemins d’URL complets aux ressources Dynamic Media dont vous souhaitez invalider le cache de réseau CDN. Utilisez cette option si vous n’avez pas créé de modèle d’invalidation du réseau CDN dans ***Partie 1 de 2 : création d’un modèle d’invalidation du réseau CDN*** et n’avez que quelques ressources à invalider.<br>**Important :** Chaque URL que vous ajoutez doit se trouver sur sa propre ligne.<br>Vous pouvez invalider jusqu’à 1 000 URL à la fois. Si le nombre d’URL indiqué dans le champ de texte URL **[!UICONTROL Ajouter une URL]** est supérieur à 1 000, vous ne pouvez pas sélectionner **[!UICONTROL Suivant]**. Dans ce cas, vous devez sélectionner **[!UICONTROL X]** à droite d’une ressource sélectionnée ou sur une URL ajoutée manuellement pour la supprimer de la liste d’invalidation.<br>Spécifiez des URL pour les recadrages intelligents d’images dans le modèle d’invalidation du réseau CDN ou dans ce champ de texte **[!UICONTROL Ajouter une URL]**. |
 
 1. Dans le coin supérieur droit de la page, sélectionnez **[!UICONTROL Suivant]**.

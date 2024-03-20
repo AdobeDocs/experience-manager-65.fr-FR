@@ -2,14 +2,15 @@
 title: Notes de mise à jour d’AEM Content and Commerce 2022
 description: Notes de mise à jour de Adobe Experience Manager Content and Commerce 2022.
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 99%
+source-wordcount: '648'
+ht-degree: 98%
 
 ---
 
-# Présentation de la version GitHub de Commerce Integration Framework
+# Vue d’ensemble de la version GitHub de Commerce Integration Framework
 
 ## Présentation de la configuration système requise
 

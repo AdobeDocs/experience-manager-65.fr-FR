@@ -7,10 +7,11 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '445'
-ht-degree: 32%
+ht-degree: 31%
 
 ---
 
@@ -67,7 +68,7 @@ Pour la configuration de base, suivez les étapes suivantes :
 1. Dans le volet de gauche, développez **Configurations de Cloud Service**.
 1. Double-cliquez **Fragment de code Analytics générique** pour ouvrir la page :
 
-   ![Extrait de code Analytics générique](assets/analytics_genericoverview.png)
+   ![Fragment de code Analytics générique](assets/analytics_genericoverview.png)
 
 1. Cliquez sur + pour ajouter une nouvelle configuration à l’aide de la boîte de dialogue. Attribuez au minimum un nom, par exemple Google Analytics :
 

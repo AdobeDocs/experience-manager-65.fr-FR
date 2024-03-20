@@ -1,13 +1,14 @@
 ---
 title: Mise à jour des fragments de contenu pour un filtrage GraphQL optimisé.
-description: Découvrez comment mettre à jour vos fragments de contenu pour le filtrage GraphQL optimisé dans Adobe Experience Manager pour une diffusion de contenu découplée.
-source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
+description: Découvrez comment mettre à jour vos fragments de contenu pour le filtrage GraphQL optimisé dans Adobe Experience Manager pour une diffusion de contenu sans interface.
+exl-id: d78ec052-c091-49ca-9f36-a3d24eb9edd5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 42%
+source-wordcount: '255'
+ht-degree: 37%
 
 ---
-
 
 # Mise à jour des fragments de contenu pour un filtrage GraphQL optimisé. {#updating-content-fragments-for-optimized-graphql-filtering}
 
@@ -17,7 +18,7 @@ Pour optimiser les performances de vos filtres GraphQL, exécutez une procédure
 >
 >Après avoir mis à jour vos fragments de contenu, vous pouvez suivre les recommandations relatives à la [Optimisation des requêtes GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimization.md).
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Assurez-vous que vous disposez au minimum de la version 6.5.17.0 d’AEM.
 
@@ -47,7 +48,7 @@ Pour exécuter la procédure, procédez comme suit :
 
 ## Limites {#limitations}
 
-Tenez compte des limites suivantes :
+Gardez à l’esprit les limites suivantes :
 
 * L’optimisation des performances des filtres GraphQL ne sera possible qu’après une mise à jour complète de tous vos fragments de contenu (indiquée par la présence de la propriété `cfGlobalVersion` pour le nœud JCR `/content/dam`).
 

@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: ht
-source-wordcount: '1166'
-ht-degree: 100%
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 93%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 100%
 >* Ce document donne une vue d’ensemble des opérations de gestion de base dans l’environnement de création d’Adobe Experience Manager (AEM). Il s’appuie sur la console **Sites**.
 >
 >* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles. En outre, des fonctionnalités supplémentaires sont disponibles dans certaines consoles. Vous trouverez des informations spécifiques et plus détaillées sur les consoles individuelles et leurs fonctionnalités associées sur d’autres pages.
->* Des raccourcis clavier sont disponibles dans toute l’application AEM, notamment lors de l’[utilisation des consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) et de la [modification de pages](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+>* Des raccourcis clavier sont disponibles dans toute AEM. En particulier lorsque [utilisation des consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) et [modification de pages](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
 
 ## L’écran de bienvenue {#the-welcome-screen}
@@ -67,11 +68,11 @@ Les principales consoles sont les suivantes :
   </tr>
   <tr>
    <td><strong>Utilisateurs et utilisatrices</strong></td>
-   <td>Ces consoles vous permettent de gérer les droits d’accès des utilisateurs, des utilisatrices et des groupes. Pour plus d’informations, voir <a href="/help/sites-administering/security.md">Administration des utilisateurs et utilisatrices et sécurité</a>.<br /> </td>
+   <td>Ces consoles vous permettent de gérer les droits d’accès des utilisateurs et des groupes. Pour plus d’informations, voir <a href="/help/sites-administering/security.md">Administration et sécurité des utilisateurs</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Sites web</strong></td>
-   <td>Les consoles Sites/Sites web permettent <a href="/help/sites-classic-ui-authoring/classic-page-author.md">de créer, d’afficher et de gérer des sites web</a> exécutés sur votre instance AEM. Grâce à ces consoles, vous pouvez créer, copier, déplacer et supprimer des pages de site web, lancer des workflows et activer (publier) des pages. Vous pouvez également ouvrir une page pour la modifier.<br /> </td>
+   <td>Les consoles Sites/Sites web vous permettent de <a href="/help/sites-classic-ui-authoring/classic-page-author.md">créer, afficher et gérer des sites web ;</a> s’exécutant sur votre instance AEM. Grâce à ces consoles, vous pouvez créer, copier, déplacer et supprimer des pages de site web, démarrer des workflows et activer (publier) des pages. Vous pouvez également ouvrir une page pour la modifier.<br /> </td>
   </tr>
   <tr>
    <td><strong>Workflows</strong></td>
@@ -196,7 +197,7 @@ Les informations suivantes sont disponibles ; un sous-ensemble de ces champs s�
   </tr>
   <tr>
    <td>Verrouillé par</td>
-   <td>Indique lorsqu’une page a été verrouillée et le compte utilisateur qui l’a verrouillée.</td>
+   <td>Indique lorsqu’une page a été verrouillée et le compte d’utilisateur qui l’a verrouillée.</td>
   </tr>
   <tr>
    <td>Live Copy</td>

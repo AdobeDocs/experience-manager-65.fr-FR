@@ -6,7 +6,8 @@ role: User
 feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
 hide: true
-source-git-commit: 0d30d42e606f1abcf20869c40ca87a78d496e2e7
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5466'
 ht-degree: 94%
@@ -488,7 +489,7 @@ Lorsque vous dépubliez une ressource vidéo dans Experience Manager, la vidéo 
 
 1. Accédez aux ressources vidéo que vous souhaitez dépublier de votre chaîne YouTube.
 1. Dans un mode de sélection de ressources, sélectionnez une ou plusieurs ressources vidéo publiées.
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Gérer la publication]**. Sélectionnez l’icône représentant trois points (. . .) dans la barre d’outils pour ouvrir **[!UICONTROL Gérer la publication]**.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Gérer la publication]**. Sélectionnez l’icône de trois points (. . .) dans la barre d’outils pour ouvrir **[!UICONTROL Gérer la publication]**.
 1. Sur la page Gérer la publication, sélectionnez **[!UICONTROL Dépublier]**.
 1. Dans le coin supérieur droit de la page, sélectionnez **[!UICONTROL Suivant]**.
 1. Dans le coin supérieur droit de la page, sélectionnez **[!UICONTROL Dépublier]**.

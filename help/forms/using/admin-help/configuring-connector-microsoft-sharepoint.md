@@ -6,16 +6,17 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: a8be58f1-1961-4bf5-aaad-feb4489fb389
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 60%
+ht-degree: 66%
 
 ---
 
 # Configuration de Connector for Microsoft SharePoint {#configuring-connector-for-microsoft-sharepoint}
 
-Connector for Microsoft SharePoint permet la communication entre AEM forms et Microsoft SharePoint. Pour plus d’informations, voir &quot;Connecteurs pour ECM&quot; dans [Référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+Connector for Microsoft SharePoint permet la communication entre AEM forms et Microsoft SharePoint. Pour plus d’informations, voir Connectors for ECM, dans le [Guide de référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 1. Dans Administration Console, cliquez sur Services > Connecteur pour Microsoft SharePoint.
 1. Définissez les paramètres suivants pour votre serveur SharePoint :

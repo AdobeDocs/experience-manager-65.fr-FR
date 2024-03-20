@@ -4,7 +4,9 @@ description: Utilisez des graphiques dans un formulaire adaptatif pour rendre vo
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 53a6914792bb15773c8f91a2bb6295ab69b3b1bf
+exl-id: 973d5ddb-cbcc-454d-859f-144442828a1a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2005'
 ht-degree: 6%
@@ -190,5 +192,3 @@ Supposons que vous ayez configuré un graphique à colonnes. Cependant, vous sou
 1. Cliquez sur Terminé pour enregistrer la règle.
 
 Vous pouvez maintenant sélectionner un type de graphique dans la liste déroulante et cliquer sur Actualiser pour redessiner le graphique.
-
-

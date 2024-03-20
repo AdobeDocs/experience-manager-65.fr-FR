@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 60%
+ht-degree: 62%
 
 ---
 
@@ -68,14 +69,14 @@ Par exemple, l’assistant [**Créer une page**](/help/sites-authoring/managing-
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
    >
-   Cependant, vous ne devez ***rien*** modifier dans le chemin `/libs`.
+   >Cependant, vous ne devez ***rien*** modifier dans le chemin `/libs`.
    >
-   En effet, le contenu de `/libs` est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
+   >En effet, le contenu de `/libs` est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
    >
-   La méthode recommandée pour la configuration et d’autres modifications est la suivante :
+   >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
    >
-   1. Recréez l’élément requis (c’est-à-dire, tel qu’il existe dans `/libs`) sous `/apps`
-   1. Apportez les modifications désirées dans `/apps`.
+   >1. Recréez l’élément requis (tel qu’il existe dans `/libs`) sous `/apps`.
+   >1. Apportez les modifications désirées dans `/apps`.
 
 1. Définissez la propriété `path` sur `basic` pour pointer vers le remplacement de l’onglet de base (voir également l’étape suivante). Par exemple :
 
@@ -99,7 +100,7 @@ Par exemple, l’assistant [**Créer une page**](/help/sites-authoring/managing-
 
 >[!NOTE]
 >
-Lors de la configuration des propriétés de page à utiliser avec des Live Copies, voir [Configuration des verrous MSM sur les propriétés de page](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) pour plus d’informations.
+>Lors de la configuration des propriétés de page à utiliser avec des Live Copies, voir [Configuration des verrous MSM sur les propriétés de page](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) pour plus d’informations.
 
 ## Exemple de configuration des propriétés de page {#sample-configuration-of-page-properties}
 

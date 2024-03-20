@@ -8,10 +8,11 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: 3eebdd38-da5b-4c38-868a-22c3c7a97b66
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: ht
-source-wordcount: '521'
-ht-degree: 100%
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '507'
+ht-degree: 96%
 
 ---
 
@@ -81,7 +82,7 @@ De nouvelles définitions de mappage sont créées dans le référentiel.
 
 >[!NOTE]
 >
->Il existe de nombreuses ressources disponibles qui permettent d’expliquer comment définir les expressions régulières ; par exemple, [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>De nombreuses ressources sont disponibles pour expliquer comment définir des expressions régulières. Par exemple : [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ### Création de définitions de mappage dans AEM {#creating-mapping-definitions-in-aem}
 

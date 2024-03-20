@@ -6,7 +6,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '10702'
 ht-degree: 95%
@@ -221,7 +222,7 @@ Les paramètres ci-dessous sont disponibles pour le service Encryption.
 
 >[!NOTE]
 >
-utilisez l’authentification simple (nom d’utilisateur et mot de passe) uniquement lorsque la connexion est protégée via SSL (utilisation de LDAPS).
+>utilisez l’authentification simple (nom d’utilisateur et mot de passe) uniquement lorsque la connexion est protégée via SSL (utilisation de LDAPS).
 
 **Mode de compatibilité :**
 
@@ -429,7 +430,7 @@ Les paramètres suivants sont disponibles pour le service de configuration Micro
 
 >[!NOTE]
 >
-Si la prise en charge hors ligne a été activée, puis que vous la désactivez, les profils d’approvisionnement des utilisateurs sont mis à jour immédiatement ou dès qu’ils sont en ligne. Si un utilisateur a travaillé hors connexion, toutes les tâches en attente sont renvoyées à leur liste des tâches et tous les éléments dans leur file d’attente, y compris les formulaires en attente, les tâches et les formulaires contenant des erreurs de validation sont supprimés de la file d’attente.
+>Si la prise en charge hors ligne a été activée, puis que vous la désactivez, les profils d’approvisionnement des utilisateurs sont mis à jour immédiatement ou dès qu’ils sont en ligne. Si un utilisateur a travaillé hors connexion, toutes les tâches en attente sont renvoyées à leur liste des tâches et tous les éléments dans leur file d’attente, y compris les formulaires en attente, les tâches et les formulaires contenant des erreurs de validation sont supprimés de la file d’attente.
 
 **Android :** autorise les appareils Android à se connecter au serveur.
 
@@ -735,7 +736,7 @@ Si le chemin d’accès n’est pas absolu, mais relatif, le dossier est créé 
 
 >[!NOTE]
 >
-Plus les dossiers de résultats sont petits, plus les performances du service Dossier de contrôle augmentent. Par exemple, si la charge estimée pour le dossier de contrôle est de 1 000 fichiers par heure, utilisez un modèle de type `result/%Y%M%D%H`, afin qu’un nouveau sous-dossier soit créé toutes les heures. Si la charge est moindre (par exemple, 1 000 fichiers par jour), vous pouvez utiliser un modèle de type `result/%Y%M%D`.
+>Plus les dossiers de résultats sont petits, plus les performances du service Dossier de contrôle augmentent. Par exemple, si la charge estimée pour le dossier de contrôle est de 1 000 fichiers par heure, utilisez un modèle de type `result/%Y%M%D%H`, afin qu’un nouveau sous-dossier soit créé toutes les heures. Si la charge est moindre (par exemple, 1 000 fichiers par jour), vous pouvez utiliser un modèle de type `result/%Y%M%D`.
 
 **Dossier des fichiers traités :** le nom par défaut du dossier des fichiers traités dans le dossier de contrôle.
 
@@ -817,7 +818,7 @@ Les profils de sécurité par défaut sont installés. Ils peuvent ensuite être
 
    >[!NOTE]
    >
-   Les services de rendu et d’envoi utilisés avec les variables xfaForm, Document Form et Form sont toujours exécutés à l’aide du compte utilisateur Système.
+   >Les services de rendu et d’envoi utilisés avec les variables xfaForm, Document Form et Form sont toujours exécutés à l’aide du compte utilisateur Système.
 
 1. Cliquez sur Ajouter une entité de sécurité pour indiquer les droits dont disposent les personnes et les groupes pour ce service.
 1. L’écran Sélectionner une entité de sécurité affiche les personnes et les groupes configurés dans User Management. Si la personne ou le groupe souhaité ne s’affiche pas, utilisez la fonction de recherche. Cliquez sur un nom de personne ou de groupe.

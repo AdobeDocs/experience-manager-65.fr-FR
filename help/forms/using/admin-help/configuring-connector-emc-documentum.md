@@ -6,16 +6,17 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: a31a496f-87b9-43c0-a98c-5f6ca5d11690
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 9%
+source-wordcount: '1020'
+ht-degree: 11%
 
 ---
 
 # Configurer le connecteur pour EMC Documentum {#configuring-connector-for-emc-documentum}
 
-Connector for EMC Documentum permet la communication entre AEM forms et EMC Documentum. Pour plus d’informations, voir &quot;Connecteurs pour ECM&quot; dans [Référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+Connector for EMC Documentum permet la communication entre AEM forms et EMC Documentum. Pour plus d’informations, voir Connectors for ECM, dans le [Guide de référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 La configuration de Connector for EMC Documentum implique de configurer la connexion au serveur et les informations d’identification du référentiel.
 

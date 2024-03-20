@@ -3,7 +3,8 @@ title: Création et synchronisation de Live Copies
 description: Découvrez comment créer et synchroniser des Live Copies dans Adobe Experience Manager.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4194'
 ht-degree: 66%
@@ -543,7 +544,7 @@ Pour activer l’héritage d’une propriété, cliquez sur le bouton **Rétabli
 
 ### Réinitialisation d’une page Live Copy {#resetting-a-live-copy-page}
 
-Réinitialisez une page Live Copy sur :
+Réinitialisez une page Live Copy pour :
 
 * supprimer toutes les annulations d’héritage ;
 * restaurer la page au même statut que la page source.

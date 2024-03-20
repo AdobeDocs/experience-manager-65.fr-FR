@@ -7,9 +7,10 @@ topic-tags: testing
 content-type: reference
 docset: aem65
 exl-id: c09cde0d-401c-437f-9ec8-a0530c1312d5
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '515'
 ht-degree: 33%
 
 ---
@@ -29,8 +30,8 @@ Vos cas de test doivent être basés sur les éléments suivants :
 
 Les tests doivent définir clairement :
 
-* les conditions préalables; il peut s’agir de systèmes, de configurations ou d’expériences de test spécifiques.
-* les étapes à suivre; à un niveau de détail approprié.
+* Conditions préalables ; elles peuvent couvrir des systèmes, configurations ou expériences de test spécifiques.
+* Étapes à suivre, à un niveau de détail approprié.
 * Résultats attendus.
 * Des critères clairs pour réussir ou échouer.
 
@@ -41,7 +42,7 @@ La perspective d’automatiser les cas de test est attrayante car elle élimine 
 L’automatisation des cas de test constitue toutefois un investissement important. Il convient donc de prendre en compte certains aspects :
 
 * La configuration et l’installation nécessitent du temps, des efforts et de l’expérience.
-* Si le navigateur est basé sur un navigateur, le risque de problèmes augmente lorsque les mises à jour du navigateur sont installées ; nécessite davantage de temps pour corriger.
+* Si le navigateur est basé sur , il existe un risque accru de problèmes lorsque les mises à jour du navigateur sont installées ; ce qui nécessite davantage de temps pour être corrigé.
 * Seulement pour les projets de grande envergure.
 * Ceci est utile lorsque plusieurs versions sont générées à des fins de test ou dans le plan de mise à jour à long terme.
 

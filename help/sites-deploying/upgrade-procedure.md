@@ -9,10 +9,11 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 5242600c-2281-46f9-a347-d985b4e319b3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 21%
+source-wordcount: '832'
+ht-degree: 8%
 
 ---
 
@@ -42,7 +43,7 @@ La topologie utilisée pour cette section consiste en un serveur d’auteur s’
 
 ![upgrade-preparation-author](assets/upgrade-preparation-author.png)
 
-1. Arrêtez la création de contenu..
+1. Arrêtez la création de contenu.
 
 1. Arrêtez l’instance de secours.
 
@@ -54,7 +55,7 @@ La topologie utilisée pour cette section consiste en un serveur d’auteur s’
 
 ![execute_upgrade](assets/execute_upgrade.jpg)
 
-1. Exécutez la [mise à niveau sur place](/help/sites-deploying/in-place-upgrade.md)..
+1. Exécutez la variable [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md).
 1. Mise à jour du module Dispatcher *si nécessaire*.
 
 1. Le contrôle qualité valide la mise à niveau.
@@ -75,7 +76,7 @@ La topologie utilisée pour cette section consiste en un serveur d’auteur s’
 
 ![restauration](assets/rollback.jpg)
 
-1. Démarrez l’instance Cold Standby en tant que nouvelle instance principale..
+1. Démarrez l’instance Cold Standby en tant que nouveau Principal.
 
 1. Recréez l’environnement de création depuis l’instance Cold Standby.
 
@@ -91,7 +92,7 @@ La topologie utilisée pour cette section est constituée d’un cluster d’aut
 
 ![mongo-upgrade_prep](assets/mongo-upgrade_prep.jpg)
 
-1. Arrêtez la création de contenu..
+1. Arrêtez la création de contenu.
 1. Cloner l’entrepôt de données pour la sauvegarde.
 1. Arrêtez toutes les instances d’auteur AEM, votre instance principale d’auteur.
 1. Supprimez tous les noeuds MongoDB de l’ensemble de réplication, votre instance Mongo principale, à l’exception d’un seul.
@@ -105,7 +106,7 @@ La topologie utilisée pour cette section est constituée d’un cluster d’aut
 
 ![mongo-execution](assets/mongo-execution.jpg)
 
-1. Exécutez une [mise à niveau sur place](/help/sites-deploying/in-place-upgrade.md) sur l’auteur principal..
+1. Exécutez une [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md) sur l’auteur principal.
 1. Mise à jour de Dispatcher ou du module web *si nécessaire*.
 1. Le contrôle qualité valide la mise à niveau.
 
@@ -113,7 +114,7 @@ La topologie utilisée pour cette section est constituée d’un cluster d’aut
 
 ![mongo-secondaries](assets/mongo-secondaries.jpg)
 
-1. Créez de nouvelles instances d’auteur 6.5, connectées à votre instance de mise à niveau Mongo..
+1. Créez de nouvelles instances d’auteur 6.5, connectées à l’instance Mongo mise à niveau.
 
 1. Recréez les noeuds MongoDB supprimés de la grappe.
 
@@ -127,13 +128,13 @@ La topologie utilisée pour cette section est constituée d’un cluster d’aut
 
 ![mongo-rollback](assets/mongo-rollback.jpg)
 
-1. Reconfigurez les instances d’auteur secondaires pour établir la connexion au magasin de données cloné..
+1. Reconfigurez les instances d’auteur secondaires pour vous connecter au magasin de données cloné.
 
 1. Arrêtez l’instance principale d’auteur mise à niveau.
 
 1. Désactivez l’instance principale Mongo mise à niveau.
 
-1. Démarrez les instances secondaires Mongo, l’une d’entre elles faisant office d’instance principale..
+1. Démarrez les instances Mongo secondaires avec l’une d’elles comme nouvelle instance principale.
 
 1. Configurez la variable `DocumentNodeStoreService.cfg` sur les instances d’auteur secondaires pour pointer vers l’ensemble de réplication des instances Mongo non encore mises à niveau.
 
@@ -153,7 +154,7 @@ La topologie supposée de cette section est composée de deux instances de publi
 
 ![upgrade-publish2](assets/upgrade-publish2.png)
 
-1. Arrêtez le trafic de l’instance de publication 2 à l’équilibreur de charge..
+1. Arrêtez le trafic vers l’instance de publication 2 à l’équilibreur de charge.
 1. Exécuter [maintenance avant upgrade](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) sur la publication 2.
 1. Exécutez une [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md) sur la publication 2.
 1. Mise à jour de Dispatcher ou du module web *si nécessaire*.
@@ -167,7 +168,7 @@ La topologie supposée de cette section est composée de deux instances de publi
 
 ![upgrade-publish1](assets/upgrade-publish1.png)
 
-1. Activez le trafic vers l’instance de publication 2..
+1. Activez le trafic vers la publication 2.
 1. Arrêtez le trafic vers la publication 1.
 1. Arrêtez l’instance de publication 1.
 1. Remplacez l’instance de publication 1 par une copie de la publication 2.
@@ -180,7 +181,7 @@ La topologie supposée de cette section est composée de deux instances de publi
 
 ![pub_rollback](assets/pub_rollback.jpg)
 
-1. Créez une copie de l’instance de publication 1..
+1. Créez une copie de la publication 1.
 1. Remplacez l’instance de publication 2 par une copie de la publication 1.
 1. Videz le cache de Dispatcher pour la publication 2.
 1. Démarrez la publication 2.
@@ -189,8 +190,8 @@ La topologie supposée de cette section est composée de deux instances de publi
 
 ## Dernières étapes de mise à niveau {#final-upgrade-steps}
 
-1. Activez le trafic vers l’instance de publication 1..
-1. Le contrôle qualité procède à la validation finale à partir d’une URL publique.
+1. Activez le trafic vers la publication 1.
+1. L’AQ effectue la validation finale à partir d’une URL publique.
 1. Activez les agents de réplication à partir de l’environnement de création.
 1. Reprenez la création de contenu.
 1. Effectuez les [vérifications d’après mise à niveau](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md).

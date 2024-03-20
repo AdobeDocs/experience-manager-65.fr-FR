@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: 31730c24-46c3-4111-9391-ccd4342740e9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2801'
-ht-degree: 86%
+source-wordcount: '2774'
+ht-degree: 89%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 86%
 
 **À propos du service Convert PDF**
 
-Le service Convert PDF convertit les documents du PDF en PostScript et en plusieurs formats d’image (JPEG, JPEG 2000, PNG et TIFF). La conversion d’un document de PDF en PostScript est utile pour l’impression sans assistance basée sur le serveur sur n’importe quelle imprimante PostScript. La conversion d’un document de PDF en fichier de TIFF multi-pages est pratique lors de l’archivage de documents dans des systèmes de gestion de contenu qui ne prennent pas en charge les documents de PDF.
+Le service Convert PDF convertit les documents du PDF en PostScript et en plusieurs formats d’image (JPEG, JPEG 2000, PNG et TIFF). La conversion d’un document PDF en PostScript est utile pour les impressions sans assistance reposant sur un serveur exécutées sur n’importe quelle imprimante PostScript. La conversion d’un document de PDF en fichier de TIFF multi-pages est pratique lors de l’archivage de documents dans des systèmes de gestion de contenu qui ne prennent pas en charge les documents de PDF.
 
 Le service Convert PDF vous permet dʼeffectuer les tâches suivantes :
 
@@ -160,7 +161,7 @@ Convertissez un document PDF en PostScript à l’aide de l’API Convert PDF Se
    * Créez un objet `ConvertPdfServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `ConvertPdfServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Toutefois, spécifiez `?blob=mtom`.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `ConvertPdfServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `ConvertPdfServiceClient.ClientCredentials.UserName.UserName`.
@@ -172,7 +173,7 @@ Convertissez un document PDF en PostScript à l’aide de l’API Convert PDF Se
 
    * Créez un objet `BLOB` en utilisant son constructeur. Lʼobjet `BLOB` sert à stocker un document PDF converti en fichier PostScript.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne, qui représente l’emplacement du fichier du document PDF à convertir et son mode d’ouverture.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmission du tableau d’octets, de la position de départ et de la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
 
@@ -183,7 +184,7 @@ Convertissez un document PDF en PostScript à l’aide de l’API Convert PDF Se
 
 1. Convertissez un document PDF en fichier PostScript.
 
-   Appeler la variable `GeneratePDFServiceService` de `toPS2` et transmettez les valeurs suivantes :
+   Appelez la méthode `toPS2` de l’objet `GeneratePDFServiceService` et transmettez les valeurs suivantes :
 
    * Objet `BLOB` représentant le document PDF à convertir en fichier PostScript.
    * Objet `ToPSOptionsSpec` spécifiant les options d’exécution.
@@ -193,7 +194,7 @@ Convertissez un document PDF en PostScript à l’aide de l’API Convert PDF Se
 1. Enregistrez le fichier PostScript.
 
    * Créez un objet `System.IO.FileStream` en utilisant son constructeur. Transmettez une valeur string qui représente l’emplacement du fichier PS.
-   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` qui a été renvoyé par la méthode `encryptPDFUsingPassword`. Renseignez le tableau d’octets en obtenant la valeur de la variable `BLOB` de `MTOM` champ .
+   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` qui a été renvoyé par la méthode `encryptPDFUsingPassword`. Renseignez le tableau d’octets en obtenant la valeur du champ `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
    * Ecrivez le contenu du tableau d’octets dans le fichier PostScript en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
 
@@ -289,7 +290,7 @@ Convertissez un document PDF en format d’image à l’aide de l’API Convert 
 
 1. Convertissez le PDF en image.
 
-   Appeler la variable `ConvertPdfServiceClient` de `toImage2` et transmettez les valeurs suivantes :
+   Appelez la méthode `toImage2` de l’objet `ConvertPdfServiceClient` et transmettez les valeurs suivantes :
 
    * Objet `com.adobe.idp.Document` représentant le fichier PDF à convertir.
    * Objet `com.adobe.livecycle.converpdfservice.client.ToImageOptionsSpec` contenant les différentes préférences concernant le format d’image cible.
@@ -321,7 +322,7 @@ Convertissez un document PDF en format d’image à l’aide de l’API Convert 
    * Créez un objet `ConvertPdfServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `ConvertPdfServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Toutefois, spécifiez `?blob=mtom`.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `ConvertPdfServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez la variable `System.ServiceModel.BasicHttpBinding` de `MessageEncoding` champ à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `ConvertPdfServiceClient.ClientCredentials.UserName.UserName`.
@@ -334,7 +335,7 @@ Convertissez un document PDF en format d’image à l’aide de l’API Convert 
    * Créez un objet `BLOB` en utilisant son constructeur. Cet objet `BLOB` sert à stocker le formulaire PDF.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur string qui spécifie l’emplacement du formulaire PDF et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Déterminez la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` . Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en affectant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Définissez les options d’exécution.
@@ -348,7 +349,7 @@ Convertissez un document PDF en format d’image à l’aide de l’API Convert 
 
 1. Convertissez le PDF en image.
 
-   Appeler la variable `ConvertPDFServiceService` de `toImage2` et transmettez les valeurs suivantes :
+   Appelez la méthode `toImage2` de l’objet `ConvertPDFServiceService` et transmettez les valeurs suivantes :
 
    * Un objet `BLOB` représentant le fichier à convertir
    * Un objet `ToImageOptionsSpec` contenant les différentes préférences en matière de format d’image cible

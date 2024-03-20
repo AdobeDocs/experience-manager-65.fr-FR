@@ -5,10 +5,11 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2010'
-ht-degree: 69%
+ht-degree: 70%
 
 ---
 
@@ -104,7 +105,7 @@ Dans l’onglet Contenu , gérez le contenu tel que les fragments de document et
 
    Si vous trouvez les aperçus satisfaisants, sélectionnez **[!UICONTROL Envoyer]** pour envoyer/envoyer la communication interactive à un post-traitement. Sinon, quittez l’aperçu pour revenir aux modifications.
 
-## Formatage de texte {#formattingtext}
+## Mise en forme du texte {#formattingtext}
 
 Lors de la modification d’un fragment de texte dans l’interface utilisateur de l’agent, la barre d’outils change en fonction du type de modifications que vous choisissez d’effectuer : Police, Paragraphe ou Liste :
 
@@ -120,7 +121,7 @@ Barre d’outils Paragraphe
 
 Barre d’outils de la liste
 
-### Mettre des parties de texte en surbrillance/mettre en surbrillance {#highlightemphasize}
+### Mettre en surbrillance/en évidence des parties de texte {#highlightemphasize}
 
 Pour mettre en surbrillance/mettre en évidence des parties de texte dans un fragment modifiable, sélectionnez le texte et choisissez Couleur de surbrillance.
 

@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: aaacee66-6bbe-498b-91b1-3a9545ff1aeb
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1884'
-ht-degree: 39%
+ht-degree: 41%
 
 ---
 
@@ -27,7 +28,7 @@ Ce tutoriel vous guide tout au long des étapes de création de communications i
 
 * Créer une communication interactive pour le canal d’impression
 * Créer une communication interactive pour le canal web
-* Créer des communications interactives d’impression et web avec l’impression comme Principal
+* Créer des communications interactives d’impression et web avec l’impression en tant qu’option principale
 
 ## Créer des communications interactives pour l’impression et le web sans synchronisation {#create-interactive-communications-for-print-and-web-with-no-synchronization}
 

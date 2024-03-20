@@ -6,20 +6,21 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 21041b55-240c-487d-9d79-c54c877f4e1e
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 40%
+source-wordcount: '352'
+ht-degree: 39%
 
 ---
 
 # Démarrer et arrêter AEM à partir de la ligne de commande{#command-line-start-and-stop}
 
-## Démarrage d’Adobe Experience Manager à partir de la ligne de commande {#starting-adobe-experience-manager-from-the-command-line}
+## Démarrage de Adobe Experience Manager à partir de la ligne de commande {#starting-adobe-experience-manager-from-the-command-line}
 
 Le script `start` est disponible dans le répertoire *&lt;cq-installation>/bin*. Les versions UNIX® et Windows sont fournies. Le script démarre l’instance installée dans *&lt;cq-installation>* répertoire .
 
-Ces deux versions prennent en charge une liste de variables d’environnement qui peuvent être utilisées pour démarrer et optimiser l’instance Adobe Experience Manager (AEM).
+Ces deux versions prennent en charge une liste de variables d’environnement qui peuvent être utilisées pour démarrer et ajuster l’instance Adobe Experience Manager (AEM).
 
 <table>
  <tbody>
@@ -64,7 +65,7 @@ Ces deux versions prennent en charge une liste de variables d’environnement qu
 
 >[!CAUTION]
 >
->Certains modes d’exécution, dont l’auteur et la publication, doivent être définis avant le premier AEM de démarrage et ne peuvent pas être modifiés par la suite. Avant de configurer une instance AEM utilisée en production, voir [documentation sur les modes d’exécution](/help/sites-deploying/configure-runmodes.md) pour plus d’informations.
+>Certains modes d’exécution, dont l’auteur et la publication, doivent être définis avant le premier AEM de démarrage et ne peuvent pas être modifiés par la suite. Avant de configurer une instance d’AEM utilisée en production, voir [documentation sur les modes d’exécution](/help/sites-deploying/configure-runmodes.md) pour plus d’informations.
 
 ### Exemple de script start.bat pour la plateforme Windows {#windows-platform-start-bat-script-example}
 
@@ -82,7 +83,7 @@ CQ_PORT=1234 ./start
 >
 >Le script start lance le déploiement Quickstart AEM installé dans le dossier *&lt;cq-installation>/app*.
 
-## Arrêt d’Adobe Experience Manager {#stopping-adobe-experience-manager}
+## Arrêt de Adobe Experience Manager {#stopping-adobe-experience-manager}
 
 Pour arrêter AEM, effectuez l’une des opérations suivantes :
 

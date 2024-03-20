@@ -7,7 +7,8 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 58%
@@ -27,7 +28,7 @@ Vous recevez ces notifications dans deux boîtes de réception, séparées par l
 
 Pour afficher vos notifications :
 
-1. Ouvrez la boîte de réception de notification : dans le **Sites web** , cliquez sur le bouton de l’utilisateur dans le coin supérieur droit, puis sélectionnez **Boîte de réception de notifications**.
+1. Ouvrez la boîte de réception de notifications : dans la **Sites web** , cliquez sur le bouton utilisateur dans le coin supérieur droit, puis sélectionnez **Boîte de réception de notifications**.
 
    ![screen_shot_2012-02-08at105226am](assets/screen_shot_2012-02-08at105226am.png)
 
@@ -49,7 +50,7 @@ Pour afficher vos notifications :
 
 Pour vous abonner aux notifications :
 
-1. Ouvrez la boîte de réception de notification : dans le **Sites web** , cliquez sur le bouton de l’utilisateur dans le coin supérieur droit, puis sélectionnez **Boîte de réception de notifications**.
+1. Ouvrez la boîte de réception de notifications : dans la **Sites web** , cliquez sur le bouton utilisateur dans le coin supérieur droit, puis sélectionnez **Boîte de réception de notifications**.
 
    ![screen_shot_2012-02-08at105226am-1](assets/screen_shot_2012-02-08at105226am-1.png)
 

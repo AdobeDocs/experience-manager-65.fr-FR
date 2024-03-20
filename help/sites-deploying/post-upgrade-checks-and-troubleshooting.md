@@ -8,9 +8,10 @@ content-type: reference
 docset: aem65
 feature: Upgrading
 exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1793'
 ht-degree: 15%
 
 ---
@@ -67,21 +68,21 @@ Voici un exemple de rapport affichant un lot n’ayant pas été installé lors 
 
 **error.log**
 
-Le fichier error.log doit être soigneusement examiné pendant et après le démarrage de l’AEM à l’aide du fichier jar de la version cible. Les avertissements ou erreurs doivent être examinés. En général, il est préférable de rechercher les problèmes au début du journal. Les erreurs qui se produisent plus tard dans le journal peuvent être des effets secondaires d’une cause racine appelée plus tôt dans le fichier. En cas d’erreurs répétées et d’avertissements, reportez-vous à la section ci-dessous pour [Analyse des problèmes liés à la mise à niveau](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade).
+Le fichier error.log doit être soigneusement examiné pendant et après le démarrage de l’AEM à l’aide du fichier jar de la version cible. Les avertissements ou erreurs doivent être examinés. En général, il est préférable de rechercher les problèmes au début du journal. Les erreurs qui se produisent plus tard dans le journal peuvent en fait être des effets secondaires d’une cause racine appelée plus tôt dans le fichier. En cas d’erreurs répétées et d’avertissements, reportez-vous à la section ci-dessous pour [Analyse des problèmes liés à la mise à niveau](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade).
 
 ### Vérification des lots OSGi {#verify-osgi-bundles}
 
-Accédez à la console OSGi `/system/console/bundles` et vérifiez si des lots n’ont pas démarré. Si des lots sont à l’état installé, consultez la section `error.log` pour déterminer le problème racine.
+Accédez à la console OSGi `/system/console/bundles` et vérifiez si des lots n’ont pas démarré. Si des lots sont à l’état installé, consultez la `error.log` pour déterminer le problème racine.
 
 ### Vérification de la version Oak {#verify-oak-version}
 
-Après la mise à niveau, vous devriez constater que la version d’Oak a été mise à jour vers **1.10.2**. Pour vérifier la version d’Oak, accédez à la console OSGi et observez la version associée aux lots Oak : Oak Core, Oak Commons, Oak Segment Tar.
+Après la mise à niveau, vous devriez constater que la version d’Oak a été mise à jour vers **1.10.2**. Pour vérifier la version Oak, accédez à la console OSGi et observez la version associée aux lots Oak : Oak Core, Oak Commons, Oak Segment Tar.
 
 ### Inspection du dossier PreUpgradeBackup {#inspect-preupgradebackup-folder}
 
 Pendant la mise à niveau, AEM tente de sauvegarder les personnalisations et de les stocker sous `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Pour afficher ce dossier dans CRXDE Lite, vous devrez peut-être [activation temporaire du CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
-Le dossier avec l’horodatage doit posséder une propriété nommée `mergeStatus` avec la valeur `COMPLETED`. Le **to-process** Le dossier doit être vide et la variable **écrasé** indique les noeuds qui ont été remplacés lors de la mise à niveau. Le contenu situé sous le noeud leftovers indique le contenu qui n’a pas pu être fusionné en toute sécurité pendant la mise à niveau. Si votre mise en oeuvre dépend de l’un des noeuds enfants (et non déjà installé par votre package de code mis à niveau), ils doivent être fusionnés manuellement.
+Le dossier avec l’horodatage doit posséder une propriété nommée `mergeStatus` avec la valeur `COMPLETED`. La variable **processus** Le dossier doit être vide et la variable **écrasé** indique les noeuds qui ont été remplacés lors de la mise à niveau. Le contenu situé sous le noeud leftovers indique le contenu qui n’a pas pu être fusionné en toute sécurité pendant la mise à niveau. Si votre mise en oeuvre dépend de l’un des noeuds enfants (et non déjà installé par votre package de code mis à niveau), ils doivent être fusionnés manuellement.
 
 Désactivez le CRXDE Lite suivant cet exercice dans un environnement d’évaluation ou de production.
 
@@ -131,29 +132,29 @@ Ces scénarios doivent vous aider à déterminer la cause principale des problè
 
 ### Échec de la migration du référentiel  {#repository-migration-failing-}
 
-La migration des données de CRX2 vers Oak doit être possible pour tout scénario commençant par les instances source basées sur CQ 5.4. Veillez à suivre exactement les instructions de mise à niveau de ce document qui incluent la préparation de la `repository.xml`, assurez-vous qu’aucun authentificateur personnalisé n’est démarré via JAAS et que l’instance a été vérifiée pour détecter des incohérences avant de démarrer la migration.
+La migration des données de CRX2 vers Oak doit être possible pour n’importe quel scénario commençant par les instances source basées sur CQ 5.4. Veillez à suivre exactement les instructions de mise à niveau de ce document qui incluent la préparation de la `repository.xml`, assurez-vous qu’aucun authentificateur personnalisé n’est démarré via JAAS et que l’instance a été vérifiée pour détecter des incohérences avant de démarrer la migration.
 
 Si la migration échoue toujours, vous pouvez déterminer la cause principale en examinant la variable `upgrade.log`. Si le problème n’est pas encore connu, signalez-le au service clientèle.
 
 ### La mise à niveau n’a pas été exécutée {#the-upgrade-did-not-run}
 
-Avant de commencer les étapes de préparation, veillez à exécuter la **source** d’abord en l’exécutant avec la commande Java™ -jar aem-quickstart.jar . Cela est nécessaire pour s’assurer que le fichier quickstart.properties est généré correctement. S’il est manquant, la mise à niveau ne fonctionnera pas. Vous pouvez également vérifier si le fichier est présent en regardant sous `crx-quickstart/conf` dans le dossier d’installation de l’instance source. En outre, lorsque vous lancez AEM mise à niveau, elle doit être exécutée avec la commande Java™ -jar aem-quickstart.jar . Le démarrage à partir d’un script de démarrage ne démarre pas AEM en mode de mise à niveau.
+Avant de commencer les étapes de préparation, veillez à exécuter la **source** d’abord en l’exécutant avec la commande Java™ -jar aem-quickstart.jar . Cela est nécessaire pour s’assurer que le fichier quickstart.properties est généré correctement. S’il est manquant, la mise à niveau ne fonctionnera pas. Vous pouvez également vérifier si le fichier est présent en regardant sous `crx-quickstart/conf` dans le dossier d’installation de l’instance source. En outre, lorsque vous lancez AEM mise à niveau, celle-ci doit être exécutée avec la commande Java™ -jar aem-quickstart.jar . Le démarrage à partir d’un script de démarrage ne démarre pas AEM en mode de mise à niveau.
 
 ### Échec de la mise à jour des packages et des lots  {#packages-and-bundles-fail-to-update-}
 
-Si l’installation des packages échoue pendant la mise à niveau, les lots qu’ils contiennent ne seront pas mis à jour non plus. Cette catégorie de problèmes est due à une mauvaise configuration de l’entrepôt de données. Elles apparaissent également comme **ERROR** et **WARN** messages dans le fichier error.log. Comme dans la plupart de ces cas, la connexion par défaut peut échouer, vous pouvez utiliser CRXDE directement pour examiner et trouver les problèmes de configuration.
+Si l’installation des packages échoue pendant la mise à niveau, les lots qu’ils contiennent ne seront pas mis à jour non plus. Cette catégorie de problèmes est due à une mauvaise configuration de l’entrepôt de données. Elles apparaissent également comme **ERROR** et **WARN** messages dans error.log. Comme dans la plupart de ces cas, la connexion par défaut peut échouer, vous pouvez utiliser CRXDE directement pour examiner et trouver les problèmes de configuration.
 
-### Certains lots AEM ne passent pas à l’état Principal {#some-aem-bundles-are-not-switching-to-the-active-state}
+### Certains lots AEM ne passent pas à l’état actif {#some-aem-bundles-are-not-switching-to-the-active-state}
 
 Si des lots ne démarrent pas, recherchez des dépendances insatisfaites.
 
 Si ce problème est présent, mais qu’il est basé sur une installation de package ayant échoué et qui a entraîné la non-mise à niveau des lots, ils seront considérés comme incompatibles pour la nouvelle version. Pour plus d’informations sur la manière de résoudre ce problème, voir **Échec de la mise à jour des packages et des lots** ci-dessus.
 
-Il est également recommandé de comparer la liste de lots d’une nouvelle instance d’AEM 6.5 avec celle mise à niveau pour détecter les lots qui n’ont pas été mis à niveau. Cela permettra de réduire le champ des recherches dans le fichier `error.log`.
+Il est également recommandé de comparer la liste de lots d’une nouvelle instance d’AEM 6.5 avec celle mise à niveau afin de détecter les lots qui n’ont pas été mis à niveau. Cela permettra de réduire le champ des recherches dans le fichier `error.log`.
 
-### Lots personnalisés sans basculement vers l’état Principal {#custom-bundles-not-switching-to-the-active-state}
+### Lots personnalisés sans basculement vers l’état actif {#custom-bundles-not-switching-to-the-active-state}
 
-Si vos lots personnalisés ne passent pas à l’état principal, il est probable qu’il y ait du code qui n’importe pas l’API de modification. Cela entraîne le plus souvent des dépendances insatisfaites.
+Si vos lots personnalisés ne passent pas à l’état actif, il est probable qu’il y ait du code qui n’importe pas l’API de modification. Cela entraîne le plus souvent des dépendances insatisfaites.
 
 Les API supprimées doivent être marquées comme obsolètes dans l’une des versions précédentes. Vous trouverez des instructions sur la migration directe de votre code dans cet avis d’obsolescence. Adobe vise le contrôle de version sémantique lorsque cela est possible afin que les versions puissent indiquer les modifications entraînant une rupture.
 
@@ -177,7 +178,7 @@ Pour gérer un code personnalisé erroné, vous devez d’abord effectuer des te
 
 Les `/apps` et `/libs` sont correctement gérés par la mise à niveau mais les modifications sous `/etc` peuvent nécessiter une restauration manuelle à partir de `/var/upgrade/PreUpgradeBackup` après la mise à niveau. Veillez à inspecter cet emplacement pour identifier tout contenu devant être fusionné manuellement.
 
-### Analyse des journaux error.log et upgrade.log  {#analyzing-the-error.log-and-upgrade.log}
+### Analyse de error.log et upgrade.log {#analyzing-the-error.log-and-upgrade.log}
 
 Dans la plupart des cas, les logs doivent être consultés pour détecter la cause d&#39;un problème. Toutefois, avec les mises à niveau, il est également nécessaire de surveiller les problèmes de dépendance, car les anciens lots peuvent ne pas être mis à niveau correctement.
 
@@ -195,7 +196,7 @@ ou
 
 * `grep -A` pour l’ajout de lignes après l’erreur.
 
-Dans certains cas, des erreurs peuvent également être trouvées dans les messages AVERTISSEMENT, car il peut y avoir des cas valides menant à cet état et l’application n’est pas toujours en mesure de décider s’il s’agit d’une erreur réelle. Veillez également à consulter ces messages.
+Dans certains cas, des erreurs peuvent également être trouvées dans les messages AVERTISSEMENT, car il peut y avoir des cas valides menant à cet état et l’application ne peut pas toujours décider s’il s’agit d’une erreur réelle. Veillez également à consulter ces messages.
 
 ### Contacter le support technique d’Adobe {#contacting-adobe-support}
 

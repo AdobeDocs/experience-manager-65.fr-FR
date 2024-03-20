@@ -6,16 +6,17 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: f4045df5-a35b-41d7-910e-971017148597
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '730'
-ht-degree: 17%
+ht-degree: 21%
 
 ---
 
 # Configuration de Connector for IBM FileNet {#configuring-connector-for-ibm-filenet}
 
-Connector for IBM FileNet permet la communication entre AEM forms et IBM FileNet. Pour plus d’informations, voir &quot;Connecteurs pour ECM&quot; dans [Référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+Connector for IBM FileNet permet la communication entre AEM forms et IBM FileNet. Pour plus d’informations, voir Connectors for ECM, dans le [Guide de référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 >[!NOTE]
 >
@@ -63,7 +64,7 @@ Connector for IBM FileNet contient le service Process Engine Connector for IBM F
 1. Dans la zone User Name, saisissez le nom d’utilisateur utilisé pour se connecter au moteur de processus.
 1. Dans la zone Password, saisissez le mot de passe utilisé pour se connecter au moteur de processus et cliquez sur Save.
 
-## Validation des paramètres du service {#validation-of-service-settings}
+## Validation des paramètres d’un service {#validation-of-service-settings}
 
 Si vous saisissez un nom d’utilisateur ou un mot de passe incorrect lors de la configuration de la connexion à Content Engine ou des paramètres du moteur de processus, vous obtiendrez les résultats suivants, selon que les services sont en cours d’exécution ou non :
 

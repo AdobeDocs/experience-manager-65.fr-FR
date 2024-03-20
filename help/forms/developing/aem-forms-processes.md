@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: development-tools, coding
 role: Developer
 exl-id: 434ac316-8a01-43a6-844b-1b792f60fa21
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 93%
+source-wordcount: '793'
+ht-degree: 91%
 
 ---
 
@@ -58,7 +59,7 @@ Lorsque ce processus est invoqué, il effectue les actions suivantes :
    >
    >En règle générale, un processus de courte durée comprend plus de trois actions. La création dʼun processus sʼeffectue à lʼaide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).)
 
-   La section *Programmation avec AEM Forms* décrit les différentes méthodes dʼappel par programmation de ce processus de courte durée, à savoir :
+   *Programmation avec les AEM forms* décrit les méthodes suivantes par lesquelles vous pouvez appeler ce processus de courte durée par programmation :
 
    * [Appeler un processus de courte durée en transmettant un document non protégé à lʼaide dʼAEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (au moyen une application Flex)
    * [Appel d’un processus de courte durée à l’aide de l’API d’appel](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (API d’appel Java™)

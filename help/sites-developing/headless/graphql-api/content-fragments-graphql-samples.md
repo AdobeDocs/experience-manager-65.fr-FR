@@ -3,10 +3,12 @@ title: Apprendre à utiliser GraphQL avec AEM - Exemples de contenu et de requê
 description: Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu en mode découplé en explorant des exemples de contenu et de requêtes.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
-workflow-type: ht
-source-wordcount: '1586'
-ht-degree: 100%
+solution: Experience Manager, Experience Manager Sites
+role: Developer
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+workflow-type: tm+mt
+source-wordcount: '1588'
+ht-degree: 99%
 
 ---
 
@@ -355,7 +357,7 @@ Si vous créez une variante, appelée « Centre de Berlin » (`berlin_centre`)
 }
 ```
 
-### Exemple de requête - Noms de toutes les villes Balisés en tant qu’Escapades en ville {#sample-names-all-cities-tagged-city-breaks}
+### Exemple de requête : noms de toutes les villes balisées en tant que coupures municipales {#sample-names-all-cities-tagged-city-breaks}
 
 Si vous :
 
@@ -1426,7 +1428,7 @@ La requête suivante renvoie toutes les références de contenu en utilisant `_r
 
 #### Exemple de requête pour plusieurs fragments de contenu avec pièces jointes {#sample-wknd-multiple-fragments-attachments}
 
-La requête suivante renvoie tous les `attachments`, un champ spécifique (sous-groupe) de type `content-reference` :
+La requête suivante renvoie toutes les `attachments`, un champ spécifique (sous-groupe) de type `content-reference` :
 
 >[!NOTE]
 >
@@ -1560,7 +1562,7 @@ Cette requête interroge :
 }
 ```
 
-### Exemple de requête pour plusieurs fragments de contenu et leurs variations dans un modèle donné. {#sample-wknd-multiple-fragment-variations-given-model}
+### Exemple de requête pour plusieurs fragments de contenu et leurs variations dans un modèle donné {#sample-wknd-multiple-fragment-variations-given-model}
 
 Cette requête interroge :
 
@@ -1665,7 +1667,7 @@ Les champs de base définissant l’entreprise sont les suivants :
 
 | Nom du champ | Type de données | Référence |
 |--- |--- |--- |
-| Nom de l’entreprise | Texte d’une seule ligne | |
+| Nom de l’entreprise | Texte monoligne | |
 | PDG | Référence du fragment (unique) | [Personne](#model-person) |
 | Employés | Référence du fragment (champ multiple) | [Personne](#model-person) |
 
@@ -1675,8 +1677,8 @@ Champs définissant une personne, qui peut également être un employé :
 
 | Nom du champ | Type de données | Référence |
 |--- |--- |--- |
-| Nom | Texte d’une seule ligne | |
-| Prénom | Texte d’une seule ligne | |
+| Nom | Texte monoligne | |
+| Prénom | Texte monoligne | |
 | Distinctions | Référence du fragment (champ multiple) | [Distinction](#model-award) |
 
 #### Distinction {#model-award}
@@ -1685,8 +1687,8 @@ Les champs définissant une distinction sont les suivants :
 
 | Nom du champ | Type de données | Référence |
 |--- |--- |--- |
-| Raccourci/ID | Texte d’une seule ligne | |
-| Titre | Texte d’une seule ligne | |
+| Raccourci/ID | Texte monoligne | |
+| Titre | Texte monoligne | |
 
 #### Ville {#model-city}
 
@@ -1694,8 +1696,8 @@ Les champs permettant de définir une ville sont les suivants :
 
 | Nom du champ | Type de données | Référence |
 |--- |--- |--- |
-| Nom | Texte d’une seule ligne | |
-| Pays | Texte d’une seule ligne | |
+| Nom | Texte monoligne | |
+| Pays | Texte monoligne | |
 | Population | Nombre | |
 | Catégories | Balises | |
 
