@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation de Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
+source-git-commit: 52aa367a8d7ebff2f2e1355274ffe357979cac85
 workflow-type: tm+mt
-source-wordcount: '7397'
+source-wordcount: '7406'
 ht-degree: 96%
 
 ---
@@ -619,6 +619,7 @@ ht-degree: 96%
       + [Création d’un formulaire adaptatif basé sur des composants principaux](/help/forms/using/create-an-adaptive-form-core-components.md)
       + [Création et utilisation de fragments de Forms adaptatifs dans un formulaire adaptatif](/help/forms/using/adaptive-form-fragment-core-components.md)
       + [Création de thèmes pour formulaires adaptatifs basés sur les composants principaux](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
+      + [Créer et utiliser une fonction personnalisée dans un formulaire adaptatif](/help/forms/using/create-and-use-custom-functions.md)
       + [Création et utilisation d’un gestionnaire d’erreurs personnalisé pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
    + Formulaires adaptatifs - Création de base {#adaptive-forms-basic-authoring}
       + [Meilleures pratiques pour travailler avec les formulaires adaptatifs](/help/forms/using/adaptive-forms-best-practices.md)
@@ -1201,7 +1202,7 @@ ht-degree: 96%
       + [Génération et utilisation de hachages dans les PDF forms dynamiques](/help/forms/developing/hashing-forms.md)
       + [Transmettre des informations d’identification à l’aide des en-têtes WS-Security](/help/forms/developing/passing-credentials.md)
 + Content and Commerce {#commerce}
-   + [Présentation et aperçu](/help/commerce/cif/introduction.md)
+   + [Présentation et vue d’ensemble](/help/commerce/cif/introduction.md)
    + [Modifications notables apportées à AEM Content and Commerce](/help/commerce/cif/changes.md)
    + Intégrations {#integrations}
       + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
