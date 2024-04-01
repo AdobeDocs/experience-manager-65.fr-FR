@@ -11,10 +11,10 @@ role: User
 exl-id: 76652a16-cad6-4e95-9e66-41efec452b03
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: cbf8a5ac22049b3372a8282b9c061d7abeacc5dc
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 100%
+source-wordcount: '415'
+ht-degree: 93%
 
 ---
 
@@ -78,3 +78,15 @@ Pour planifier la publication des ressources sur Brand Portal à une date ou un
 Désormais, connectez-vous à Brand Portal pour voir si les ressources publiées sont disponibles dans l’interface de Brand Portal.
 
 ![bp_landingpage](assets/bp_landingpage.png)
+
+## Afficher le fichier ou le dossier publié dans Brand Portal {#view-published-file-folder}
+
+1. Connectez-vous à l’interface Brand Portal pour afficher les ressources publiées (selon la date ou l’heure planifiée).
+
+   ![bp_landingpage](assets/bp_landingpage.png)
+
+1. Passer en mode Liste ![Mode Liste](assets/list-view.svg) pour afficher l’état de publication actuel de la ressource.
+
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+
+![état du rapport généré](assets/report-status.JPG)
