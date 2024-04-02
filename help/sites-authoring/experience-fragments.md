@@ -1,12 +1,12 @@
 ---
 title: Fragments d’expérience
-description: Fragments d’expérience dans la création Adobe Experience Manager Sites.
+description: Fragments d’expérience dans l’instance de création d’Adobe Experience Manager Sites.
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 5d37e4ec23bbbd838f4787622648aad7e1c1905b
 workflow-type: tm+mt
-source-wordcount: '1468'
-ht-degree: 93%
+source-wordcount: '1489'
+ht-degree: 96%
 
 ---
 
@@ -57,7 +57,7 @@ Les fragments d’expérience doivent être utilisés :
 * Si vous disposez d’une expérience avec des variations ou des rendus différents.
 
    * Variations spécifiques au canal ou au contexte
-   * Expériences à regrouper (par exemple, une campagne avec des expériences différentes selon les canaux)
+   * Expériences qu’il y a lieu de regrouper (par exemple, une campagne avec des expériences différentes sur les canaux).
 
 * Lorsque vous avez recours au commerce omnicanal.
 
@@ -226,6 +226,10 @@ Vous pouvez créer des variantes de votre fragment d’expérience en fonction d
    * **Variation**
    * **Variation en tant que [Live Copy](/help/sites-administering/msm.md#live-copies)**.
 
+     >[!NOTE]
+     >
+     >La création d’une variation initiale en tant que Live Copy héritera du titre en utilisant la source de Live Copy comme variation de Principal.
+
 1. Définissez les propriétés requises :
 
    * **Modèle**
@@ -236,7 +240,7 @@ Vous pouvez créer des variantes de votre fragment d’expérience en fonction d
 
    ![xf-06](assets/xf-06.png)
 
-1. Confirmer avec **Terminé** (icône de coche), la nouvelle variation s’affiche dans le panneau :
+1. Confirmez en cliquant sur **Terminé** (icône représentant une coche). La nouvelle variation est alors affichée dans le panneau :
 
    ![xf-07](assets/xf-07.png)
 
@@ -269,7 +273,7 @@ Vous pouvez sélectionner un ou plusieurs composants pour créer un bloc de cré
 
 ### Création d’un bloc de création {#creating-a-building-block}
 
-Pour créer un bloc de création :
+Pour créer un bloc de création :
 
 1. Dans l’éditeur de fragments d’expérience, sélectionnez les composants à réutiliser :
 
@@ -283,7 +287,7 @@ Pour créer un bloc de création :
 
    ![xf-11](assets/xf-11.png)
 
-1. La variable **Bloc de création** s’affiche dans l’onglet et peut être sélectionné dans le système de paragraphes :
+1. Le **bloc de création** s’affiche dans l’onglet et peut être sélectionné dans le système de paragraphes :
 
    ![xf-12](assets/xf-12.png)
 
@@ -348,9 +352,9 @@ Les détails de votre fragment sont visibles :
 
       * Liste de références.
 
-   * **État des réseaux sociaux**
+   * **Statut des réseaux sociaux**
 
-      * Détails des variations des médias sociaux.
+      * Détails des variations des réseaux sociaux.
 
 ## Rendu HTML brut {#the-plain-html-rendition}
 
