@@ -6,9 +6,9 @@ exl-id: 6b17472b-9226-4319-b305-4dba862d21af
 hide: true
 hidefromtoc: true
 source-git-commit: 947f45e043c2ce1b683212f70157d1e9a08e1941
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '562'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ Si l’authentification SAML est configurée et que vous rencontrez des problèm
 
 >[!NOTE]
 >
-> Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+> Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 ## Modules touchés {#impacted-modules}
 
