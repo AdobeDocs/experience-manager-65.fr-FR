@@ -10,10 +10,10 @@ feature: 360 VR Video
 role: User, Admin
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0915db99a2d3589994d6267119a5443d69f9f1f7
+source-git-commit: beef1f49b7563d824357043f4ed78fdaf70015cd
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 92%
 
 Les vidéos 360 enregistrent une vue dans chaque direction au même moment. Elles sont tournées à l’aide d’une caméra omnidirectionnelle ou d’un ensemble de caméras. Lors de la lecture sur un écran plat, l’utilisateur contrôle l’angle de vue ; la lecture sur les appareils mobiles utilise généralement les commandes gyroscopiques intégrées.
 
-Le mode Scene7 de Dynamic Media inclut une prise en charge native de la diffusion de ressources vidéo 360. Par défaut, aucune configuration supplémentaire n’est nécessaire pour l’affichage ou la lecture. Vous diffusez une vidéo 360 avec des extensions vidéo standard telles que .mp4, .mkv et .mov. Le codec le plus courant est H.264.
+Dynamic Media - Le mode Scene7 inclut une prise en charge native de la diffusion de ressources vidéo 360. Par défaut, aucune configuration supplémentaire n’est nécessaire pour l’affichage ou la lecture. Vous diffusez une vidéo 360 avec des extensions vidéo standard telles que .mp4, .mkv et .mov. Le codec le plus courant est H.264.
 
-Cette section décrit l’utilisation de la visionneuse de vidéos 360/VR pour effectuer le rendu d’une vidéo équirectangulaire pour une expérience de visionnage immersive d’une pièce, d’une propriété, d’un emplacement, d’un paysage, d’une procédure médicale, etc.
+Cette section décrit l’utilisation de la visionneuse de vidéos 360/VR afin d’effectuer le rendu d’une vidéo équirectangulaire pour une expérience de visionnage immersive d’une pièce, d’une propriété, d’un emplacement, d’un paysage, d’une procédure médicale, etc.
 
 L’audio spatial n’est actuellement pas pris en charge ; si l’audio est mixé en stéréo, la balance (G/D) ne change pas lorsque le client change l’angle de vue de la caméra.
 
@@ -86,7 +86,7 @@ Par défaut, Experience Manager détecte la vidéo comme étant « 360 » si 
    * **Type de propriété** - Double
    * **Valeur** - rapport d’aspect, 2.0 par défaut.
 
-Une fois cette propriété définie, elle prend effet immédiatement sur les vidéos existantes et les vidéos nouvellement chargées.
+Une fois cette propriété définie, elle prend effet immédiatement sur les vidéos qui existent déjà ainsi que sur celle qui viennent d’être chargées.
 
 Le rapport d’aspect s’applique aux ressources vidéo 360 pour la page des détails de la ressource et le [composant de gestion de contenu web média de vidéo 360](/help/assets/adding-dynamic-media-assets-to-pages.md#dynamic-media-components).
 
