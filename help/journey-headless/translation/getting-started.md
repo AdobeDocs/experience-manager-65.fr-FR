@@ -3,9 +3,9 @@ title: Prise en main de la traduction découplée dans AEM
 description: Découvrez comment organiser votre contenu découplé et comment fonctionnent les outils de traduction AEM.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1472'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Ce document vous aide à comprendre comment commencer à traduire le contenu dé
 
 ## Exigences et conditions préalables {#requirements-prerequisites}
 
-Avant de commencer à traduire votre contenu d’AEM sans interface utilisateur graphique, plusieurs exigences s’appliquent.
+Un certain nombre d’exigences s’imposent avant de vous engager dans la traduction de votre contenu AEM découplé.
 
 ### Connaissances {#knowledge}
 
@@ -44,7 +44,7 @@ Avant de commencer à traduire votre contenu d’AEM sans interface utilisateur 
 
 >[!TIP]
 >
->Si vous n’êtes pas familier avec l’utilisation d’un CMS à grande échelle tel qu’AEM, pensez à consulter la documentation intitulée [Manipulation de base](/help/sites-authoring/basic-handling.md) avant de continuer. La documentation Manipulation de base ne fait pas partie du parcours. Vous pouvez donc revenir à cette page une fois l’opération terminée.
+>Si vous n’êtes pas familier avec l’utilisation d’un CMS à grande échelle tel qu’AEM, pensez à consulter la documentation intitulée [Manipulation de base](/help/sites-authoring/basic-handling.md) avant de continuer. La documentation Gestion de base ne fait pas partie du parcours. Vous devez donc revenir sur cette page une fois l’opération terminée.
 
 ### Outils {#tools}
 
@@ -64,7 +64,7 @@ Le contenu AEM, qu’il s’agisse de pages web découplée ou traditionnelles, 
 
 ## Stockage du contenu découplé dans AEM {#headless-content-in-aem}
 
-En tant que spécialiste de la traduction, il n’est pas nécessaire de comprendre en profondeur la manière dont AEM gère le contenu découplé. Toutefois, il sera utile de connaître les concepts de base et la terminologie lorsque vous utiliserez les outils de traduction AEM. Plus important encore, vous devez comprendre votre propre contenu et la manière dont il est structuré pour le traduire efficacement.
+En tant que spécialiste de la traduction, il n’est pas nécessaire de comprendre en profondeur la manière dont AEM gère le contenu découplé. Toutefois, il sera utile de connaître les concepts de base et la terminologie lorsque vous utiliserez les outils de traduction AEM. Plus important encore, vous devez comprendre votre propre contenu et sa structure pour pouvoir le traduire efficacement.
 
 ### Modèles de contenu {#content-models}
 
@@ -78,8 +78,8 @@ L’architecte de contenu travaille à définir cette structure dès le début d
 
 Comme les modèles de contenu définissent la structure de votre contenu, vous devez savoir quels champs de vos modèles doivent être traduits. En règle générale, vous travaillez avec l’architecte de contenu pour définir ces éléments. Pour parcourir les champs de vos modèles de contenu, procédez comme suit.
 
-1. Accédez à **Outils** > **Ressources** > **Modèles de fragment de contenu**.
-1. Les modèles de fragment de contenu sont généralement stockés dans une structure de dossiers. Cliquez sur le dossier du projet.
+1. Accédez à **Outils**, **Ressources** -> **Modèles de fragment de contenu**.
+1. Les modèles de fragment de contenu sont généralement stockés dans une structure de dossiers. Cliquez sur le dossier de votre projet.
 1. Les modèles y sont répertoriés. Cliquez sur le modèle pour afficher les détails.
    ![Modèles de fragment de contenu](assets/content-fragment-models.png)
 1. L’**Éditeur de modèle de fragment de contenu** s’ouvre.
@@ -93,7 +93,7 @@ Notez le contenu du champ **Nom de la propriété** pour tous les champs qui doi
 
 >[!TIP]
 >
->En règle générale, l’architecte de contenu met à la disposition du spécialiste de traduction les éléments suivants : **Nom de la propriété** de tous les champs requis pour la traduction. Ces noms de champ sont nécessaires pour les étapes suivantes du parcours. Les étapes précédentes sont détaillées pour une meilleure compréhension du spécialiste de la traduction.
+>En règle générale, la personne chargée de l’architecture de contenu met à la disposition de la personne spécialisée dans la traduction les **Noms de la propriété** de tous les champs devant être traduits. Ces noms de champ sont nécessaires pour les étapes suivantes du parcours. Les étapes précédentes sont détaillées pour une meilleure compréhension du spécialiste de la traduction.
 
 ### Fragments de contenu {#content-fragments}
 
@@ -180,7 +180,7 @@ Maintenant que vous avez terminé cette partie du parcours de traduction découp
 * savoir comment AEM stocke du contenu découplé ;
 * être familiarisé avec les outils de traduction AEM.
 
-Tirez parti de ces connaissances et continuez votre parcours de traduction AEM sans interface utilisateur graphique en consultant le document. [Configuration de l’intégration de traduction](configure-connector.md) où vous apprendrez à connecter AEM à un service de traduction.|
+Tirez parti de ces connaissances et continuez de progresser sur votre parcours de traduction découplée AEM en consultant le document [Configuration de l’intégration de la traduction](configure-connector.md) dans lequel vous apprendrez à connecter AEM à un service de traduction.|
 
 ## Ressources supplémentaires {#additional-resources}
 

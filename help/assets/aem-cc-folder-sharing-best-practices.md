@@ -6,9 +6,9 @@ role: User, Admin
 feature: Collaboration
 exl-id: 130cec6d-1cdd-4304-94bb-65e6bb573e55
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '928'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -66,8 +66,8 @@ Les bonnes pratiques d’utilisation du partage de dossier entre [!DNL Experienc
 * **Considérations relatives au volume :** le partage de dossiers entre [!DNL Experience Manager] et [!DNL Creative Cloud] doit être utilisé pour partager un plus petit nombre de fichiers, par exemple pour une campagne ou une activité spécifique. Pour partager de plus grands ensembles de ressources, comme toutes les ressources approuvées dans l’organisation, utilisez d’autres méthodes de distribution (par exemple, [!DNL Assets Brand Portal]) ou l’application de bureau [!DNL Experience Manager].
 * **Évitez de partager des hiérarchies profondes :** le partage doit se produire de manière récurrente et ne permet pas l’annulation sélective du partage. En règle générale, seuls les dossiers sans sous-dossiers, ou ayant une hiérarchie simple, comme un niveau de sous-dossiers, doivent être considérés pour le partage.
 * **Partage unilatéral de dossiers séparés :** des dossiers séparés doivent être utilisés pour partager les ressources finales de [!DNL Assets] vers [!DNL Creative Cloud], et pour partager en retour les ressources dont les créations sont prêtes à l’emploi de [!DNL Creative Cloud] vers [!DNL Assets]. Cette pratique, associée à une bonne convention d’attribution des noms de dossiers, permet de créer un environnement de travail intuitif pour les utilisateurs d’[!DNL Assets] comme de [!DNL Creative Cloud].
-* **Évitez les travaux en cours dans le dossier partagé :** N’utilisez pas de dossier partagé pour le travail en cours : utilisez un dossier distinct dans les fichiers du Creative Cloud pour effectuer des tâches qui nécessitent des modifications fréquentes du fichier.
-* **Démarrez les nouvelles tâches en dehors du dossier partagé :** les nouvelles conceptions (fichiers créatifs) doivent être démarrées dans un dossier séparé de travail en cours dans Creative Cloud Files. Lorsqu’elles sont prêtes à être partagées avec les utilisateurs d’[!DNL Assets], elles doivent être déplacées ou enregistrées dans le dossier partagé.
+* **Évitez d’inclure du travail en cours dans le dossier partagé :** n’utilisez pas le dossier partagé pour le travail en cours. Utilisez un dossier séparé dans Creative Cloud Fichiers pour mener à bien les tâches qui nécessitent des modifications de fichier fréquentes.
+* **Démarrez les nouvelles tâches en dehors du dossier partagé :** les nouvelles conceptions (fichiers créatifs) doivent être démarrées dans un dossier séparé de travail en cours dans Creative Cloud Fichiers. Lorsqu’elles sont prêtes à être partagées avec les utilisateurs d’[!DNL Assets], elles doivent être déplacées ou enregistrées dans le dossier partagé.
 * **Simplifiez la structure de partage :** pour une configuration opérationnelle plus gérable, pensez à simplifier la structure de partage. Au lieu de partager les dossiers [!DNL Assets] avec tous les spécialistes de la création, ils doivent être partagés uniquement avec les représentants de l’équipe, tels qu’un directeur ou une directrice artistique ou un(e) responsable d’équipe. Le responsable artistique doit recevoir les ressources finales, déterminer l’attribution des tâches, puis permettre aux concepteurs de travailler sur les ressources de travail en cours sur leurs comptes Creative Cloud respectifs. Il peut utiliser les fonctions de collaboration Creative Cloud pour coordonner le travail et, finalement, sélectionner et replacer les ressources prêtes à être partagées dans [!DNL Assets], au sein du dossier partagé dédié aux créations.
 
 Le diagramme suivant illustre un exemple de configuration pour créer des conceptions basées sur les ressources finales existantes à partir d’[!DNL Assets].

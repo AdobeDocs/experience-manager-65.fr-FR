@@ -1,15 +1,15 @@
 ---
-title: Configuration de l’intégration de traduction
+title: Configuration de l’intégration de la traduction
 description: Découvrez comment connecter AEM à un service de traduction.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
 source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1143'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Configuration de l’intégration de traduction {#configure-integration}
+# Configuration de l’intégration de la traduction {#configure-integration}
 
 Découvrez comment connecter AEM à un service de traduction.
 
@@ -25,7 +25,7 @@ Cet article s’appuie sur ces principes de base afin que vous puissiez effectue
 
 ## Objectif {#objective}
 
-Ce document vous aide à comprendre comment configurer une intégration AEM au service de traduction de votre choix. Après avoir lu ce document, vous devriez :
+Ce document vous permet de comprendre comment configurer une intégration AEM pour le service de traduction de votre choix. Après avoir lu ce document, vous devriez :
 
 * comprendre les paramètres importants de la structure d’intégration de traduction dans AEM ;
 * savoir configurer votre propre connexion à votre service de traduction.
@@ -68,24 +68,24 @@ Une fois installé le package de connecteur correspondant au service de traducti
 * Si une traduction humaine ou automatique doit être réalisée
 * Si le contenu supplémentaire associé aux fragments de contenu tels que les balises doit être traduit
 
-Pour créer une configuration de traduction :
+Pour créer une configuration de traduction :
 
-1. Dans le menu de navigation globale, cliquez sur **Outils** > **Cloud Service** > **Cloud Service de traduction**.
+1. Dans le menu de navigation global, cliquez sur **Outils** > **Services cloud** > **Services cloud de traduction**.
 1. Accédez à l’emplacement où vous souhaitez créer la configuration dans votre structure de contenu. Cet emplacement est souvent basé sur un projet en particulier, mais peut également être global.
    * Par exemple, dans ce cas, une configuration peut être effectuée globalement pour s’appliquer à tout le contenu, ou uniquement au projet WKND.
 
    ![Emplacement de configuration de traduction](assets/translation-configuration-location.png)
 
-1. Indiquez les informations suivantes dans les champs, puis cliquez sur **Créer**.
+1. Fournissez les informations suivantes dans les champs requis, puis cliquez sur **Créer**.
    1. Sélectionnez **Type de configuration** dans la liste déroulante. Sélectionnez **Intégration de traduction** dans la liste.
    1. Indiquez un **Titre** pour votre configuration. Le **Titre** identifie la configuration dans la console **Services cloud**, ainsi que dans les listes déroulantes de propriétés de la page.
    1. Éventuellement, saisissez un **Nom** à utiliser pour le nœud du référentiel qui stocke la configuration.
 
    ![Créer une configuration de traduction](assets/create-translation-configuration.png)
 
-1. Cliquez sur **Créer** et la variable **Modifier la configuration** s’affiche, dans laquelle vous pouvez configurer les propriétés de configuration.
+1. Sélectionnez **Créer**. La fenêtre **Modifier la configuration** apparaît alors. Vous pouvez y configurer les propriétés de configuration.
 
-1. N’oubliez pas que les fragments de contenu sont stockés en tant que ressources dans AEM. Cliquez sur le bouton **Ressources** .
+1. N’oubliez pas que les fragments de contenu sont stockés en tant que ressources dans AEM. Cliquez sur l’onglet **Ressources**.
 
 ![Propriétés de Configuration de traduction](assets/translation-configuration.png)
 
@@ -114,9 +114,9 @@ Pour ce faire, accédez à la racine de langue de votre contenu. Dans notre exem
 /content/dam/<your-project>/en
 ```
 
-1. Accédez à la navigation globale et à **Navigation** > **Ressources** > **Fichiers**.
-1. Dans la console Ressources, sélectionnez la racine de langue à configurer, puis cliquez sur **Propriétés**.
-1. Cliquez sur le bouton **Cloud Service** .
+1. Accédez à la navigation globale, puis à **Navigation** > **Ressources** > **Fichiers**.
+1. Dans la console des ressources, sélectionnez la racine de langue à configurer et cliquez sur **Propriétés**.
+1. Cliquez sur l’onglet **Services cloud**
 1. Sous **Configurations des services cloud** dans la liste déroulante **Ajouter une configuration**, sélectionnez votre connecteur. Il doit s’afficher dans la liste déroulante lorsque vous avez installé son package comme [décrit précédemment.](#connect-translation-provider)
 1. Sous **Configurations des services cloud** dans la liste déroulante **Ajouter une configuration**, sélectionnez également votre configuration.
 1. Cliquez sur **Enregistrer et fermer**.

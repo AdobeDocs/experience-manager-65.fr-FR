@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1052'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Configurez ensuite WebLogic pour qu’il utilise les fichiers de stockage des cl
 
 ## Créer des informations d’identification SSL pour serveur WebLogic {#creating-an-ssl-credential-for-use-on-weblogic-server}
 
-La commande keytool se trouve généralement dans le répertoire Java jre/bin et doit inclure plusieurs options et valeurs d’option, qui sont répertoriées dans le tableau suivant.
+La commande keytool se situe généralement dans le répertoire jre/bin Java et doit comprendre plusieurs options et valeurs d’option, répertoriées dans le tableau suivant.
 
 <table>
  <thead>

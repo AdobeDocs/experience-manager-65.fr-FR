@@ -4,7 +4,7 @@ description: Cette page répertorie les lecteurs AEM Screens, ainsi que leurs v
 page-status-flag: never-activated
 contentOwner: jsyal
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '296'
 ht-degree: 100%
 

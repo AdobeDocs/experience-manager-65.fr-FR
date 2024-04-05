@@ -3,9 +3,9 @@ title: En savoir plus sur l’utilisation de références dans les fragments de 
 description: Découvrez comment utiliser des références dans des fragments de contenu pour du contenu, d’autres fragments et d’autres ressources (médias). Découvrez l’importance et le fonctionnement des fragments imbriqués pour la création CMS découplée.
 exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '722'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -39,11 +39,11 @@ Certaines références comportent des types de données dédiés (par exemple, R
 
 ## Références du contenu {#content-references}
 
-Leur nom est clair : les références de contenu vous permettent de faire référence à tout autre contenu. Vous accédez alors à un navigateur qui vous permet de sélectionner l’élément de contenu.
+Leur nom est clair : les références de contenu vous permettent de faire référence à tout autre contenu. Un navigateur s’ouvre, vous permettant de sélectionner l’élément de contenu.
 
 ## Références de ressources/médias {#assets-media-references}
 
-Les ressources (images ou médias, par exemple) peuvent être référencées dans un bloc de texte à l’aide de l’option **Insérer une ressource**. Un navigateur s’ouvre alors pour vous permettre de sélectionner la ressource.
+Les ressources (images ou médias, par exemple) peuvent être référencées dans un bloc de texte à l’aide de l’option **Insérer une ressource**. Un navigateur s’ouvre, vous permettant de sélectionner la ressource.
 
 ![Fragments de contenu – Insérer une ressource](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
@@ -58,7 +58,7 @@ Par exemple, les modèles de fragment de contenu suivants peuvent être définis
 * Personne
 * Distinctions
 
-Cela semble assez simple, mais une entreprise a à la fois un PDG et des employés....Et chaque élément d’entre eux est défini en tant que personne.
+Cela semble évident, mais une entreprise compte à la fois un ou une PDG et des employées et employés…Et chaque élément d’entre eux est défini en tant que personne.
 
 Et une personne peut recevoir une distinction (ou peut-être deux).
 

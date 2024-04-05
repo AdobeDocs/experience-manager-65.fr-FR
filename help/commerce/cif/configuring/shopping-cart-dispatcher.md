@@ -1,10 +1,10 @@
 ---
 title: Configuration du panier et du Dispatcher
-description: Découvrez le panier et la configuration de Adobe Experience Manager Dispatcher.
+description: Découvrez le panier et la configuration d’Adobe Experience Manager Dispatcher.
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
-workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 91%
+workflow-type: ht
+source-wordcount: '94'
+ht-degree: 100%
 
 ---
 

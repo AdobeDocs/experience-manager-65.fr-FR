@@ -3,9 +3,9 @@ title: En savoir plus sur la création de modèles de fragment de contenu dans A
 description: Découvrez les concepts et les mécanismes de la modélisation du contenu pour votre CMS découplé à l’aide de modèles de fragments de contenu.
 exl-id: b377e01f-e392-4ef5-a259-73ce9ff941d0
 source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '690'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Création de modèles de fragment de contenu {#creating-content-fragment-models}
 
-Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Vous pouvez le faire sous Outils > Ressources > Modèles de fragment de contenu.
+Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Ces actions peuvent être réalisées dans Outils > Ressources > Modèles de fragment de contenu.
 
 ![Modèles de fragment de contenu dans les outils](assets/cfm-tools.png)
 
